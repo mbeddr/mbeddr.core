@@ -39,7 +39,6 @@
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="fwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.textgen.trace(MPS.Core/)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
-    <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="lvdd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.cache(MPS.Core/)" />
@@ -3063,28 +3062,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="29FdrrdUL90" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="showInBreadcrumb" />
-      <ref role="13i0hy" to="u8e7:1pmorAautNF" resolve="showInBreadcrumb" />
-      <node concept="3Tm1VV" id="29FdrrdUL91" role="1B3o_S" />
-      <node concept="3clFbS" id="29FdrrdUL96" role="3clF47">
-        <node concept="3cpWs6" id="29FdrrdV2mw" role="3cqZAp">
-          <node concept="3fqX7Q" id="29FdrrdV2oR" role="3cqZAk">
-            <node concept="2OqwBi" id="29FdrrdUYDo" role="3fr31v">
-              <node concept="13iPFW" id="29FdrrdUYqu" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="29FdrrdUZK6" role="2OqNvi">
-                <node concept="chp4Y" id="29FdrrdUZN_" role="cj9EA">
-                  <ref role="cht4Q" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="29FdrrdURaX" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4rAJNZmWIkG" role="13h7CS">
       <property role="13i0iv" value="false" />

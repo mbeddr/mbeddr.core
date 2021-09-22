@@ -10,7 +10,6 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="u8e7" ref="r:4acb4e42-0ef5-487c-a21d-496738d115a6(com.mbeddr.mpsutil.breadcrumb.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
   </imports>
   <registry>
@@ -25,9 +24,6 @@
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
-      </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5">
-        <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
@@ -199,7 +195,7 @@
       <property role="TrG5h" value="renderReadable" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadabxle" />
+      <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />
       <node concept="3Tm1VV" id="4MVAbAXtwUj" role="1B3o_S" />
       <node concept="3clFbS" id="4MVAbAXtwUE" role="3clF47">
         <node concept="3cpWs6" id="4MVAbAXtx0d" role="3cqZAp">
@@ -666,26 +662,6 @@
           <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="4dLFELw$m7K" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="showInBreadcrumb" />
-      <ref role="13i0hy" to="u8e7:1pmorAautNF" resolve="showInBreadcrumb" />
-      <node concept="3Tm1VV" id="4dLFELw$m7L" role="1B3o_S" />
-      <node concept="3clFbS" id="4dLFELw$m7U" role="3clF47">
-        <node concept="3clFbF" id="4dLFELw$m7Z" role="3cqZAp">
-          <node concept="2OqwBi" id="4dLFELw$m7W" role="3clFbG">
-            <node concept="13iAh5" id="4dLFELw$m7X" role="2Oq$k0">
-              <ref role="3eA5LN" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-            </node>
-            <node concept="2qgKlT" id="4dLFELw$m7Y" role="2OqNvi">
-              <ref role="37wK5l" to="u8e7:1pmorAautNF" resolve="showInBreadcrumb" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="4dLFELw$m7V" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3NI0$JEbQMo">

@@ -130,6 +130,12 @@
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
+      </concept>
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
@@ -389,6 +395,31 @@
               <ref role="3bR37D" to="p6ld:HiHZpX4CZy" resolve="com.mbeddr.core.modules.gen#1758019824472882132" />
             </node>
           </node>
+          <node concept="1BupzO" id="4MgLceRg9oc" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9od" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9nZ" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9o0" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9o1" role="2Ry0An">
+                    <property role="2Ry0Am" value="blocks" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9o2" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9o3" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9oe" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6RmoJr9Awp8" role="3bR37C">
           <node concept="1Busua" id="6RmoJr9Awp9" role="1SiIV1">
@@ -411,9 +442,26 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4IfjsNglH0P" role="3bR37C">
-          <node concept="3bR9La" id="4IfjsNglH0Q" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
+        <node concept="1BupzO" id="4MgLceRg9nW" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9nX" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9nL" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9nM" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9nN" role="2Ry0An">
+                  <property role="2Ry0Am" value="blocks" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9nO" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9nY" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>
@@ -471,6 +519,31 @@
               <ref role="3bR37D" to="p6ld:HiHZpX4D2m" resolve="com.mbeddr.core.unittest#6275792049641599010" />
             </node>
           </node>
+          <node concept="1BupzO" id="4MgLceRg9oE" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9oF" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9ot" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9ou" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9ov" role="2Ry0An">
+                    <property role="2Ry0Am" value="heap" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9ow" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9ox" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9oG" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6RmoJr9Awpy" role="3bR37C">
           <node concept="3bR9La" id="6RmoJr9Awpz" role="1SiIV1">
@@ -495,6 +568,28 @@
                   <property role="2Ry0Am" value="heap" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9oq" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9or" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9of" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9og" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9oh" role="2Ry0An">
+                  <property role="2Ry0Am" value="heap" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9oi" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9os" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -543,6 +638,31 @@
               <ref role="3bR37D" to="p6ld:HiHZpX4CZy" resolve="com.mbeddr.core.modules.gen#1758019824472882132" />
             </node>
           </node>
+          <node concept="1BupzO" id="4MgLceRg9p8" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9p9" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9oV" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9oW" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9oX" role="2Ry0An">
+                    <property role="2Ry0Am" value="cimpl" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9oY" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9oZ" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9pa" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bPy" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bPz" role="3rtmxm">
@@ -560,9 +680,26 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4IfjsNglH0R" role="3bR37C">
-          <node concept="3bR9La" id="4IfjsNglH0S" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:61Pvu7KHtlo" resolve="com.mbeddr.mpsutil.breadcrumb" />
+        <node concept="1BupzO" id="4MgLceRg9oS" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9oT" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9oH" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9oI" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9oJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="cimpl" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9oK" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9oU" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>
@@ -608,6 +745,28 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="4MgLceRg9pm" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9pn" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9pb" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9pc" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9pd" role="2Ry0An">
+                  <property role="2Ry0Am" value="memory" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9pe" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9po" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="GKLijSCUTH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -628,6 +787,31 @@
         <node concept="1yeLz9" id="GKLijSCVYd" role="1TViLv">
           <property role="TrG5h" value="mbeddr.tutorial.extreqref#806361095879876987" />
           <property role="3LESm3" value="21c37609-af7b-42be-b233-a3cfdf5a20e3" />
+          <node concept="1BupzO" id="4MgLceRg9pO" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9pP" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9pB" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9pC" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9pD" role="2Ry0An">
+                    <property role="2Ry0Am" value="mbeddr.tutorial.extreqref" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9pE" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9pF" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9pQ" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="GKLijTifUE" role="3bR37C">
           <node concept="3bR9La" id="GKLijTifUF" role="1SiIV1">
@@ -657,6 +841,28 @@
                   <property role="2Ry0Am" value="mbeddr.tutorial.extreqref" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9p$" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9p_" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9pp" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9pq" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9pr" role="2Ry0An">
+                  <property role="2Ry0Am" value="mbeddr.tutorial.extreqref" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9ps" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9pA" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -695,6 +901,31 @@
         <node concept="1yeLz9" id="44QTgQqTwI$" role="1TViLv">
           <property role="TrG5h" value="mbeddr.tutorial.metadata#1373401575434711868" />
           <property role="3LESm3" value="d2a1d480-ae8b-4f62-a006-70cfebe511d6" />
+          <node concept="1BupzO" id="4MgLceRg9qi" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9qj" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9q5" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9q6" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9q7" role="2Ry0An">
+                    <property role="2Ry0Am" value="metadata" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9q8" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9q9" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9qk" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6RmoJr9AwqV" role="3bR37C">
           <node concept="1Busua" id="6RmoJr9AwqW" role="1SiIV1">
@@ -714,6 +945,28 @@
                   <property role="2Ry0Am" value="metadata" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9q2" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9q3" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9pR" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9pS" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9pT" role="2Ry0An">
+                  <property role="2Ry0Am" value="metadata" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9pU" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9q4" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -800,6 +1053,31 @@
               <ref role="3bR37D" to="p6ld:6y2eE4zZsnH" resolve="com.mbeddr.core.stdlib" />
             </node>
           </node>
+          <node concept="1BupzO" id="4MgLceRg9qK" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9qL" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9qz" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9q$" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9q_" role="2Ry0An">
+                    <property role="2Ry0Am" value="mbeddr.tutorial.shonan" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9qA" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9qB" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9qM" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bQC" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bQD" role="3rtmxm">
@@ -814,6 +1092,28 @@
                   <property role="2Ry0Am" value="mbeddr.tutorial.shonan" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9qw" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9qx" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9ql" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9qm" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9qn" role="2Ry0An">
+                  <property role="2Ry0Am" value="mbeddr.tutorial.shonan" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9qo" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9qy" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -892,6 +1192,28 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="4MgLceRg9qY" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9qZ" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9qN" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9qO" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4MgLceRg9qP" role="2Ry0An">
+                  <property role="2Ry0Am" value="mbeddr.tutorial.shonan.runtime" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9qQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9r0" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4IfjsNglHld" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -930,6 +1252,28 @@
             </node>
           </node>
         </node>
+        <node concept="1BupzO" id="4MgLceRg9rc" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9rd" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9r1" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9r2" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4MgLceRg9r3" role="2Ry0An">
+                  <property role="2Ry0Am" value="demo.expr.interpreter" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9r4" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9re" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1yRuzdJ_WVY" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -960,6 +1304,31 @@
         <node concept="1yeLz9" id="1yRuzdJ_Yuu" role="1TViLv">
           <property role="TrG5h" value="mbeddr.tutorial.layers#6255755692623247936" />
           <property role="3LESm3" value="4e7ff455-32e2-4980-9f07-d7007f01d4e5" />
+          <node concept="1BupzO" id="4MgLceRg9rE" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9rF" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9rt" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9ru" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9rv" role="2Ry0An">
+                    <property role="2Ry0Am" value="mbeddr.tutorial.layers" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9rw" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9rx" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9rG" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bPR" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bPS" role="3rtmxm">
@@ -974,6 +1343,28 @@
                   <property role="2Ry0Am" value="mbeddr.tutorial.layers" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9rq" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9rr" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9rf" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9rg" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9rh" role="2Ry0An">
+                  <property role="2Ry0Am" value="mbeddr.tutorial.layers" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9ri" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9rs" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -1012,6 +1403,28 @@
                   <property role="2Ry0Am" value="osconfig" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9rS" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9rT" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9rH" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9rI" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9rJ" role="2Ry0An">
+                  <property role="2Ry0Am" value="osconfig" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9rK" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9rU" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -1065,6 +1478,31 @@
               <ref role="3bR37D" to="p6ld:7eF9rfAu$po" resolve="com.mbeddr.ext.statemachines#8836799689252270723" />
             </node>
           </node>
+          <node concept="1BupzO" id="4MgLceRg9sm" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9sn" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9s9" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9sa" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9sb" role="2Ry0An">
+                    <property role="2Ry0Am" value="mbeddr.tutorial.smtrigger" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9sc" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9sd" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9so" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bQq" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bQr" role="3rtmxm">
@@ -1079,6 +1517,28 @@
                   <property role="2Ry0Am" value="mbeddr.tutorial.smtrigger" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9s6" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9s7" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9rV" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9rW" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9rX" role="2Ry0An">
+                  <property role="2Ry0Am" value="mbeddr.tutorial.smtrigger" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9rY" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9s8" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -1132,6 +1592,31 @@
               <ref role="3bR37D" to="p6ld:HiHZpX4CZ7" resolve="com.mbeddr.core.modules#1758019824472891829" />
             </node>
           </node>
+          <node concept="1BupzO" id="4MgLceRg9sO" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9sP" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9sB" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9sC" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9sD" role="2Ry0An">
+                    <property role="2Ry0Am" value="foreach" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9sE" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9sF" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9sQ" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bPD" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bPE" role="3rtmxm">
@@ -1146,6 +1631,28 @@
                   <property role="2Ry0Am" value="foreach" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9s$" role="3bR31x">
+          <property role="3ZfqAx" value="languageModels" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9s_" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9sp" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9sq" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9sr" role="2Ry0An">
+                  <property role="2Ry0Am" value="foreach" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9ss" role="2Ry0An">
+                    <property role="2Ry0Am" value="languageModels" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9sA" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -1169,6 +1676,31 @@
         <node concept="1yeLz9" id="360sibZuf$L" role="1TViLv">
           <property role="TrG5h" value="demo.expr#4065005624680061148" />
           <property role="3LESm3" value="b505bed8-d2af-4259-9f0d-c76aca8d5c96" />
+          <node concept="1BupzO" id="4MgLceRg9ti" role="3bR31x">
+            <property role="3ZfqAx" value="generator/template" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4MgLceRg9tj" role="1HemKq">
+              <node concept="398BVA" id="4MgLceRg9t5" role="3LXTmr">
+                <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+                <node concept="2Ry0Ak" id="4MgLceRg9t6" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9t7" role="2Ry0An">
+                    <property role="2Ry0Am" value="demo.expr" />
+                    <node concept="2Ry0Ak" id="4MgLceRg9t8" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4MgLceRg9t9" role="2Ry0An">
+                        <property role="2Ry0Am" value="template" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="4MgLceRg9tk" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="360sibZufTb" role="3bR37C">
           <node concept="3bR9La" id="360sibZufTc" role="1SiIV1">
@@ -1201,6 +1733,28 @@
             <ref role="3bR37D" node="4IfjsNglHld" resolve="demo.expr.interpreter" />
           </node>
         </node>
+        <node concept="1BupzO" id="4MgLceRg9t2" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9t3" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9sR" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9sS" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4MgLceRg9sT" role="2Ry0An">
+                  <property role="2Ry0Am" value="demo.expr" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9sU" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9t4" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="QIiPbLwamK" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1231,6 +1785,28 @@
                   <property role="2Ry0Am" value="demo.expr.sandbox" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4MgLceRg9tw" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4MgLceRg9tx" role="1HemKq">
+            <node concept="398BVA" id="4MgLceRg9tl" role="3LXTmr">
+              <ref role="398BVh" node="44QTgQqTwas" resolve="tutorial.dsls.extensions.home" />
+              <node concept="2Ry0Ak" id="4MgLceRg9tm" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4MgLceRg9tn" role="2Ry0An">
+                  <property role="2Ry0Am" value="demo.expr.sandbox" />
+                  <node concept="2Ry0Ak" id="4MgLceRg9to" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4MgLceRg9ty" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
