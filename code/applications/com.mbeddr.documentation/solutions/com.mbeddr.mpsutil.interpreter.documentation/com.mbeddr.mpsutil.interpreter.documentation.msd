@@ -47,7 +47,6 @@
     <language slang="l:d7145000-936a-47e8-95a5-71f220e623f9:com.mbeddr.doc.self" version="0" />
     <language slang="l:c61970b4-87fb-4429-8a3a-c87719f000a3:com.mbeddr.doc.terms" version="0" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
-    <language slang="l:a482b416-d0c9-473f-8f67-725ed642b3f3:com.mbeddr.mpsutil.breadcrumb" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
     <language slang="l:1c897ba5-9d43-4035-ac7f-0306495743ac:com.mbeddr.mpsutil.interpreter.test" version="0" />
@@ -96,7 +95,6 @@
     <module reference="c4707a9d-e0c7-4c73-a63d-5f38d8a4ebc9(com.mbeddr.core.util.interpreter)" version="0" />
     <module reference="520b2574-9e8e-494c-be1c-29230f93a13d(com.mbeddr.ext.math.interpreter)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
-    <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" version="0" />
     <module reference="443ce42a-2414-4193-a304-b4922e4d0b6c(com.mbeddr.mpsutil.interpreter.documentation)" version="0" />
