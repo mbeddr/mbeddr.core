@@ -609,7 +609,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="3Ymokd9HSJf" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/context_actions.gif" />
+      <property role="1iqoE4" value="${module}/icons/context_actions.png" />
     </node>
   </node>
   <node concept="2uRRBC" id="5lGdLibXpnp">
