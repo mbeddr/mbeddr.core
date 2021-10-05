@@ -115,7 +115,7 @@
     <node concept="3zOSV2" id="QRmqzIt6CL" role="3zO_yG">
       <node concept="3zO__7" id="QRmqzIt6DZ" role="3zO_yy">
         <property role="3zO_yR" value="margin-left" />
-        <property role="3zO_ya" value="1em" />
+        <property role="3zO_ya" value="2em" />
       </node>
       <node concept="3zO__Y" id="QRmqzIt6DW" role="3zO_yJ">
         <property role="3zO_yB" value=".tocSection" />
