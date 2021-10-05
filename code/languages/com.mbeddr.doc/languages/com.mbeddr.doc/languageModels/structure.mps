@@ -159,6 +159,9 @@
     <node concept="PrWs8" id="6jiGbW_JDXF" role="PzmwI">
       <ref role="PrY4T" node="6jiGbW_JBH_" resolve="IDocReferencable" />
     </node>
+    <node concept="PrWs8" id="3DLpMp_rLnZ" role="PzmwI">
+      <ref role="PrY4T" node="3DLpMp_rLlz" resolve="ITocEntry" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2TZO3Dbv6JT">
     <property role="TrG5h" value="IDocContentContainer" />
@@ -679,6 +682,9 @@
     </node>
     <node concept="PrWs8" id="5mf_X_Lbqjx" role="PzmwI">
       <ref role="PrY4T" node="2TZO3DbuxwP" resolve="IDocumentContent" />
+    </node>
+    <node concept="PrWs8" id="3DLpMp_rOzt" role="PzmwI">
+      <ref role="PrY4T" node="3DLpMp_rLlz" resolve="ITocEntry" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mf_X_LbOnj">
@@ -1816,6 +1822,11 @@
     <node concept="PrWs8" id="l3$K9zOTzu" role="PrDN$">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3DLpMp_rLlz">
+    <property role="EcuMT" value="4211260541176321379" />
+    <property role="TrG5h" value="ITocEntry" />
+    <property role="3GE5qa" value="structure" />
   </node>
 </model>
 
