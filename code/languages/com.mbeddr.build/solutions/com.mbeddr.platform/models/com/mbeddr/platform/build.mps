@@ -17063,35 +17063,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1yeLz9" id="Vtr7jyAXEK" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.filepicker#4067882553846359376" />
-          <property role="3LESm3" value="4b706ccc-acf2-4850-a93e-1884d0a0fb68" />
-          <node concept="1BupzO" id="4PRpvcZJNX$" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="4PRpvcZJNX_" role="1HemKq">
-              <node concept="398BVA" id="4PRpvcZJNXn" role="3LXTmr">
-                <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNXo" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNXp" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.mpsutil.filepicker" />
-                    <node concept="2Ry0Ak" id="4PRpvcZJNXq" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="4PRpvcZJNXr" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="4PRpvcZJNXA" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="5Fmx6J5w2Xa" role="3bR37C">
           <node concept="3bR9La" id="5Fmx6J5w2Xb" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
