@@ -69,7 +69,11 @@ task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
 tasks.getByPath(':build:com.mbeddr:install').dependsOn install_nativelibs_loader
 */
 
-task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
+task build_platform_without_mps_ex(type: BuildLanguages, dependsOn: copy_allScripts) {
+    script scriptFile('com.mbeddr.platform/build-platform.xml')
+}
+
+task build_platform(type: BuildLanguages, dependsOn: build_platform_without_mps_ex) {
     script scriptFile('com.mbeddr.platform/build.xml')
 }
 
@@ -101,6 +105,12 @@ task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     include "com.mbeddr.platform/**"
 }
 
+task publish_mbeddrPlatformSlim(type: Zip, dependsOn: test_mbeddr_platform) {
+    archiveName 'com.mbeddr.platform-slim.zip'
+    from artifactsDir
+    include "com.mbeddr.platform-slim/**"
+}
+
 task defaultWrapper(dependsOn: build_platform) {
     doFirst {
         println "####################################################################################"
@@ -127,7 +137,7 @@ publishing {
             artifact publish_mbeddrPlatform
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
                     def dependencyNode = dependenciesNode.appendNode('dependency')
                     dependencyNode.appendNode('groupId', it.moduleGroup)
                     dependencyNode.appendNode('artifactId', it.moduleName)
@@ -142,6 +152,30 @@ publishing {
                     dependencyNode.appendNode('version', it.moduleVersion)
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }*/
+            }
+        }
+        mbeddrPlatformSlim(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'platform-slim'
+            version mbeddrPlatformBuildNumber
+            artifact publish_mbeddrPlatformSlim
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+                configurations.mpsExtensions.resolvedConfiguration.firstLevelModuleDependencies.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
             }
         }
         mbeddrAllScripts(MavenPublication) {
@@ -168,12 +202,16 @@ publishing {
 //using the closure to delay evaluate from configuration to execution phase is important because the
 //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
 //if no closure is used the build script won't compile.
-if({project.mbeddrBuild}() == "master") {
+if ({ project.mbeddrBuild }() == "master") {
     /* this is pretty much a workaround so we don't need to change anything in Teamcity. Teamcity calls the  publishMbeddrPlatformPublicationToMavenRepository
        tasks but since we have a new publishing target we would need to change the teamcity config to also include publishMbeddrPlatformPublicationToGitHubPackagesRepository
        If we change the Teamcity configuration this would break older maintenance and feature branches and we would loose the ablilty to
        rebuild the exact same source code. There for this workaround is present that adds a dependency between the itemis maven repo
        and github packages when we are on master or a maintenance branch.
        */
-    tasks.findByName("publishMbeddrPlatformPublicationToMavenRepository").dependsOn("publishMbeddrPlatformPublicationToGitHubPackagesRepository")
+    tasks.findByName("publishMbeddrPlatformPublicationToMavenRepository")
+            .dependsOn(
+                    "publishMbeddrPlatformPublicationToGitHubPackagesRepository",
+                    "publishMbeddrPlatformSlimPublicationToGitHubPackagesRepository",
+                    "publishMbeddrPlatformSlimPublicationToMavenRepository")
 }
