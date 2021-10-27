@@ -8,7 +8,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="9" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="10" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
@@ -164,7 +164,8 @@
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
-        <property id="8774011376396215812" name="linker" index="18_EFo" />
+        <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
+        <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
@@ -794,7 +795,8 @@
           <property role="3r8Kxs" value="make" />
           <property role="3r8Kw1" value="gdb" />
           <property role="3I8uaA" value="" />
-          <property role="18_EFo" value="gcc" />
+          <property role="UXd52" value="g++" />
+          <property role="UXd4T" value="-std=c++11" />
           <node concept="29HgVG" id="4zqPC3awM9R" role="lGtFl">
             <node concept="3NFfHV" id="4zqPC3awM9S" role="3NFExx">
               <node concept="3clFbS" id="4zqPC3awM9T" role="2VODD2">
