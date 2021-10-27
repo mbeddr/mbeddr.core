@@ -459,7 +459,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="7T9V0lrqjTN" role="2OqNvi">
-                  <ref role="37wK5l" to="qd6m:7T9V0lrqeSE" resolve="conatinsMainFunction" />
+                  <ref role="37wK5l" to="qd6m:7T9V0lrqeSE" resolve="containsMainFunction" />
                 </node>
               </node>
               <node concept="2OqwBi" id="7T9V0lrqhRc" role="3uHU7B">
@@ -2976,7 +2976,7 @@
               <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
             </node>
             <node concept="3TrcHB" id="3s1LyzGu$73" role="2OqNvi">
-              <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
+              <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="cCompiler" />
             </node>
           </node>
           <node concept="17RlXB" id="3s1LyzGu_nE" role="2OqNvi" />
@@ -3043,7 +3043,7 @@
                 <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
               </node>
               <node concept="3TrcHB" id="56jrqO8IBB1" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
               </node>
             </node>
             <node concept="liA8E" id="56jrqO8IDvC" role="2OqNvi">
@@ -3125,7 +3125,7 @@
                 <ref role="1YBMHb" node="3s1LyzGuwaB" resolve="platform" />
               </node>
               <node concept="3TrcHB" id="56jrqO8KkSn" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
               </node>
             </node>
             <node concept="liA8E" id="56jrqO8KkSo" role="2OqNvi">
@@ -3240,7 +3240,7 @@
                     <ref role="QwW4h" node="3s1LyzGuQZu" resolve="platform" />
                   </node>
                   <node concept="3TrcHB" id="3s1LyzGuXCi" role="2OqNvi">
-                    <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
+                    <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="cCompiler" />
                   </node>
                 </node>
               </node>
@@ -3252,7 +3252,7 @@
                 <ref role="QwW4h" node="3s1LyzGuQZu" resolve="platform" />
               </node>
               <node concept="3TrcHB" id="3s1LyzGB5xe" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="cCompiler" />
               </node>
             </node>
             <node concept="17RlXB" id="3s1LyzGB5xf" role="2OqNvi" />
@@ -4406,7 +4406,7 @@
                       <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
                     </node>
                     <node concept="3TrcHB" id="56jrqO8IJQ0" role="2OqNvi">
-                      <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                      <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
                     </node>
                   </node>
                   <node concept="liA8E" id="56jrqO8IL8A" role="2OqNvi">
@@ -4426,7 +4426,7 @@
                     <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
                   </node>
                   <node concept="3TrcHB" id="56jrqO8JQsy" role="2OqNvi">
-                    <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                    <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
                   </node>
                 </node>
               </node>
@@ -4483,7 +4483,7 @@
                         <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
                       </node>
                       <node concept="3TrcHB" id="56jrqO8Kk_I" role="2OqNvi">
-                        <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                        <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
                       </node>
                     </node>
                     <node concept="liA8E" id="56jrqO8Kk_J" role="2OqNvi">
@@ -4503,7 +4503,7 @@
                       <ref role="QwW4h" node="56jrqO8IIft" resolve="platform" />
                     </node>
                     <node concept="3TrcHB" id="56jrqO8Kk_O" role="2OqNvi">
-                      <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                      <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
                     </node>
                   </node>
                 </node>
