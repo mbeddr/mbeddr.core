@@ -994,6 +994,7 @@
       <node concept="3G52F3" id="2Rx8UqeMqz4" role="1CrrWa">
         <property role="TrG5h" value="CC" />
         <property role="1F2ocN" value="true" />
+        <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
         <node concept="94E81" id="20BlhoiqgOb" role="17Kx8K">
           <node concept="3G69iQ" id="20BlhoiqgOc" role="17N5uS">
             <property role="3G69iL" value="gcc" />
@@ -1053,6 +1054,7 @@
       <node concept="3G52F3" id="15AovGFyEk$" role="1CrrWa">
         <property role="TrG5h" value="CXX" />
         <property role="1F2ocN" value="true" />
+        <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
         <node concept="94E81" id="15AovGFyEk_" role="17Kx8K">
           <node concept="3G69iQ" id="15AovGFyEkA" role="17N5uS">
             <property role="3G69iL" value="g++" />
@@ -1112,6 +1114,7 @@
       <node concept="3G52F3" id="5yBZnF4MzSi" role="1CrrWa">
         <property role="TrG5h" value="AR" />
         <property role="1F2ocN" value="true" />
+        <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
         <node concept="1W57fq" id="5yBZnF4MK9C" role="lGtFl">
           <node concept="3IZrLx" id="5yBZnF4MK9F" role="3IZSJc">
             <node concept="3clFbS" id="5yBZnF4MK9G" role="2VODD2">
@@ -1145,6 +1148,7 @@
       <node concept="3G52F3" id="5yBZnF4MD7$" role="1CrrWa">
         <property role="TrG5h" value="LD" />
         <property role="1F2ocN" value="true" />
+        <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
         <node concept="1W57fq" id="5yBZnF4MKCq" role="lGtFl">
           <node concept="3IZrLx" id="5yBZnF4MKCt" role="3IZSJc">
             <node concept="3clFbS" id="5yBZnF4MKCu" role="2VODD2">
@@ -1537,6 +1541,7 @@
     <node concept="12Nxi1" id="7bOZ$$ifu7l" role="12RR68" />
     <node concept="3G52F3" id="2Rx8UqeMqzt" role="12RR68">
       <property role="TrG5h" value="CFLAGS" />
+      <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
       <node concept="94E81" id="20BlhoiqgOD" role="17Kx8K">
         <node concept="3G69iQ" id="20BlhoiqgOE" role="17N5uS">
           <property role="3G69iL" value="compiler flags" />
@@ -1595,6 +1600,7 @@
     </node>
     <node concept="3G52F3" id="15AovGFz6bu" role="12RR68">
       <property role="TrG5h" value="CXXFLAGS" />
+      <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
       <node concept="94E81" id="15AovGFz6bv" role="17Kx8K">
         <node concept="3G69iQ" id="4UbnhBDGVNY" role="17N5uS">
           <property role="3G69iL" value="compiler flags" />
@@ -1656,6 +1662,7 @@
     </node>
     <node concept="3G52F3" id="1d4J0utAOB7" role="12RR68">
       <property role="TrG5h" value="ARFLAGS" />
+      <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
       <node concept="1W57fq" id="1d4J0utAQTk" role="lGtFl">
         <node concept="3IZrLx" id="1d4J0utAQTn" role="3IZSJc">
           <node concept="3clFbS" id="1d4J0utAQTo" role="2VODD2">
@@ -1688,6 +1695,7 @@
     </node>
     <node concept="3G52F3" id="2Rx8UqeMqzC" role="12RR68">
       <property role="TrG5h" value="LDFLAGS" />
+      <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
       <node concept="1W57fq" id="1d4J0utB8FD" role="lGtFl">
         <node concept="3IZrLx" id="1d4J0utB8FG" role="3IZSJc">
           <node concept="3clFbS" id="1d4J0utB8FH" role="2VODD2">
@@ -11153,6 +11161,7 @@
                   <node concept="3G52F3" id="4JZ_DSvMAKY" role="1CrrWa">
                     <property role="1F2ocN" value="true" />
                     <property role="TrG5h" value="CC" />
+                    <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
                     <node concept="94E81" id="4JZ_DSvMAKZ" role="17Kx8K">
                       <node concept="3G69iQ" id="4JZ_DSvMAL0" role="17N5uS">
                         <property role="3G69iL" value="$$($(2))/bin/$(3)" />
@@ -11162,13 +11171,14 @@
                   <node concept="3G52F3" id="4JZ_DSvMAL1" role="1CrrWa">
                     <property role="1F2ocN" value="true" />
                     <property role="TrG5h" value="LD" />
+                    <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
                     <node concept="94E81" id="3KgA2I2UoW0" role="17Kx8K">
                       <node concept="3G69iQ" id="3KgA2I2UoW1" role="17N5uS">
                         <property role="3G69iL" value="$$(if $$(filter-out $(3),$(4)),$$($(2))/bin/$(4)," />
                       </node>
                       <node concept="3G69iG" id="3KgA2I2UNLe" role="17N5uS">
                         <property role="1L4fZ7" value="true" />
-                        <ref role="3G69iJ" node="3KgA2I2Vpov" resolve="CC" />
+                        <ref role="3G69iJ" node="4JZ_DSvMAKY" resolve="CC" />
                       </node>
                       <node concept="3G69iQ" id="3KgA2I2UQa1" role="17N5uS">
                         <property role="3G69iL" value=")" />
@@ -11190,6 +11200,7 @@
                     <node concept="3G52F3" id="3KgA2I2Vpov" role="1CrrWa">
                       <property role="1F2ocN" value="true" />
                       <property role="TrG5h" value="CC" />
+                      <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
                       <node concept="94E81" id="3KgA2I2VsXt" role="17Kx8K">
                         <node concept="3G69iQ" id="3KgA2I2VsXu" role="17N5uS">
                           <property role="3G69iL" value="$(3)" />
@@ -11204,7 +11215,7 @@
                       </node>
                       <node concept="3G69iG" id="rfshK91DR3" role="Hmqgc">
                         <property role="1L4fZ7" value="true" />
-                        <ref role="3G69iJ" node="3KgA2I2Vpov" resolve="CC" />
+                        <ref role="3G69iJ" node="4JZ_DSvMAKY" resolve="CC" />
                       </node>
                       <node concept="3G69iQ" id="rfshK90$Ao" role="Hmqgm">
                         <property role="3G69iL" value="cc" />
@@ -11214,13 +11225,14 @@
                   <node concept="3G52F3" id="3KgA2I2VHGG" role="1Crq4S">
                     <property role="1F2ocN" value="true" />
                     <property role="TrG5h" value="LD" />
+                    <property role="12Lnk_" value="6_CUGSFFpYb/conditional" />
                     <node concept="94E81" id="3KgA2I2VMtY" role="17Kx8K">
                       <node concept="3G69iQ" id="3KgA2I2VMtZ" role="17N5uS">
                         <property role="3G69iL" value="$$(if $$(filter-out $(3),$(4)),$(4)," />
                       </node>
                       <node concept="3G69iG" id="3KgA2I2VMu0" role="17N5uS">
                         <property role="1L4fZ7" value="true" />
-                        <ref role="3G69iJ" node="3KgA2I2Vpov" resolve="CC" />
+                        <ref role="3G69iJ" node="4JZ_DSvMAKY" resolve="CC" />
                       </node>
                       <node concept="3G69iQ" id="3KgA2I2VMu1" role="17N5uS">
                         <property role="3G69iL" value=")" />
