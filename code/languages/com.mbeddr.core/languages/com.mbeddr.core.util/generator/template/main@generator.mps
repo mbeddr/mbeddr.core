@@ -26485,6 +26485,18 @@
               </node>
             </node>
           </node>
+          <node concept="3cpWs8" id="4LUDPiakDe5" role="3cqZAp">
+            <node concept="3cpWsn" id="4LUDPiakDe6" role="3cpWs9">
+              <property role="TrG5h" value="closureType" />
+              <node concept="3Tqbb2" id="4LUDPiaknCv" role="1tU5fm" />
+              <node concept="2OqwBi" id="4LUDPiakDe7" role="33vP2m">
+                <node concept="37vLTw" id="4LUDPiakDe8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1$YD8rkT2zE" resolve="closure" />
+                </node>
+                <node concept="3JvlWi" id="4LUDPiakDe9" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs6" id="7XRsj4rjZs9" role="3cqZAp">
             <node concept="1Wc70l" id="7XRsj4rjWUc" role="3cqZAk">
               <node concept="3clFbC" id="7XRsj4rjXlj" role="3uHU7w">
@@ -26501,11 +26513,8 @@
               <node concept="1eOMI4" id="7XRsj4rjY2t" role="3uHU7B">
                 <node concept="1Wc70l" id="7XRsj4rjPKa" role="1eOMHV">
                   <node concept="2OqwBi" id="7XRsj4rjOBI" role="3uHU7B">
-                    <node concept="2OqwBi" id="7XRsj4rjNJM" role="2Oq$k0">
-                      <node concept="37vLTw" id="7XRsj4rjNJN" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1$YD8rkT2zE" resolve="closure" />
-                      </node>
-                      <node concept="3JvlWi" id="7XRsj4rjNJO" role="2OqNvi" />
+                    <node concept="37vLTw" id="4LUDPiakDea" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4LUDPiakDe6" resolve="closureType" />
                     </node>
                     <node concept="1mIQ4w" id="7XRsj4rjP0V" role="2OqNvi">
                       <node concept="chp4Y" id="7XRsj4rjPlr" role="cj9EB">
@@ -26517,11 +26526,8 @@
                     <node concept="2OqwBi" id="7XRsj4rjTQb" role="3fr31v">
                       <node concept="2OqwBi" id="7XRsj4rjS4_" role="2Oq$k0">
                         <node concept="1PxgMI" id="7XRsj4rjRm8" role="2Oq$k0">
-                          <node concept="2OqwBi" id="7XRsj4rjQ4Y" role="1m5AlR">
-                            <node concept="37vLTw" id="7XRsj4rjQ4Z" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1$YD8rkT2zE" resolve="closure" />
-                            </node>
-                            <node concept="3JvlWi" id="7XRsj4rjQ50" role="2OqNvi" />
+                          <node concept="37vLTw" id="4LUDPiakDeb" role="1m5AlR">
+                            <ref role="3cqZAo" node="4LUDPiakDe6" resolve="closureType" />
                           </node>
                           <node concept="chp4Y" id="1SbcsM$FvRY" role="3oSUPX">
                             <ref role="cht4Q" to="x27k:7qHzltJ03ir" resolve="FunctionRefType" />
