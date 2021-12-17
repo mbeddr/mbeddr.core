@@ -38,7 +38,10 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/util.jar" />
+    <fileset dir="${artifacts.mps}/lib">
+      <include name="util.jar" />
+      <include name="3rd-party-rt.jar" />
+    </fileset>
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
@@ -62,6 +65,30 @@
         </extensions>
       </idea-plugin>
     </echoxml>
+    <mkdir dir="${build.layout}/mbeddr.allScripts/lib" />
+    <mkdir dir="${build.tmp}/default/mbeddr.allScripts.jar" />
+    <mkdir dir="${build.tmp}/default/mbeddr.allScripts.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/mbeddr.allScripts.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.mbeddr.allScripts</id>
+        <name>com.mbeddr.allScripts</name>
+        <version>${mbeddr.version}</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.build</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
+        <depends>jetbrains.mps.execution.api</depends>
+        <depends>jetbrains.mps.execution.languages</depends>
+        <depends>jetbrains.mps.execution.configurations</depends>
+        <depends>de.itemis.mps.extensions.build</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.layout}/mbeddr.allScripts/lib/mbeddr.allScripts.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/mbeddr.allScripts.jar" />
+    </jar>
     <mkdir dir="${build.layout}/mbeddr.allScripts/languages" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.tutorial.dev.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.tutorial.dev.build.jar/META-INF" />
@@ -769,6 +796,7 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editing.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editor.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editorlang.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
@@ -823,7 +851,6 @@
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.refactoring.runtime.jar" />
@@ -834,7 +861,6 @@
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.java.stub.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.kernel.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.makeup.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.persistence.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.project.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.refactoring.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.runtime.jar" />
