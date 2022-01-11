@@ -102,6 +102,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -513,6 +514,19 @@
                   <ref role="1PxDUh" to="qkt:~CommonDataKeys" resolve="CommonDataKeys" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2shpflFTAOJ" role="3cqZAp">
+          <node concept="3clFbS" id="2shpflFTAOL" role="3clFbx">
+            <node concept="3cpWs6" id="2shpflFTGd1" role="3cqZAp">
+              <node concept="3clFbT" id="2shpflFTHf8" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2shpflFTDwK" role="3clFbw">
+            <node concept="10Nm6u" id="2shpflFTEOo" role="3uHU7w" />
+            <node concept="37vLTw" id="2shpflFTCj$" role="3uHU7B">
+              <ref role="3cqZAo" node="3C$MSDk$eH5" resolve="project" />
             </node>
           </node>
         </node>
