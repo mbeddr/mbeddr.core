@@ -99,9 +99,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
-        <child id="1160998896846" name="condition" index="1gVkn0" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -134,6 +131,15 @@
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+      <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
+        <child id="1171981057159" name="condition" index="3vwVQn" />
+      </concept>
+      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
+        <child id="1172073511101" name="message" index="3_1BAH" />
+      </concept>
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
+        <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -458,13 +464,18 @@
         </node>
       </node>
       <node concept="3clFbH" id="72neNfy3WxD" role="3cqZAp" />
-      <node concept="1gVbGN" id="72neNfy3KSE" role="3cqZAp">
-        <node concept="3y3z36" id="72neNfy3KXl" role="1gVkn0">
+      <node concept="3vwNmj" id="1xlcIshbV04" role="3cqZAp">
+        <node concept="3y3z36" id="72neNfy3KXl" role="3vwVQn">
           <node concept="37vLTw" id="72neNfy3KXE" role="3uHU7w">
             <ref role="3cqZAo" node="72neNfy3XpG" resolve="selected2" />
           </node>
           <node concept="37vLTw" id="72neNfy3KWL" role="3uHU7B">
             <ref role="3cqZAo" node="72neNfy3KnB" resolve="selected1" />
+          </node>
+        </node>
+        <node concept="3_1$Yv" id="1xlcIshcjlW" role="3_9lra">
+          <node concept="Xl_RD" id="1xlcIshcjG6" role="3_1BAH">
+            <property role="Xl_RC" value="selection before and after input shall differ" />
           </node>
         </node>
       </node>
