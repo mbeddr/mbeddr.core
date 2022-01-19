@@ -2603,7 +2603,7 @@
             <node concept="2OqwBi" id="34x64NyRAM8" role="37vLTJ">
               <node concept="13iPFW" id="34x64NyRAM9" role="2Oq$k0" />
               <node concept="3TrcHB" id="34x64NyRAMa" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="compiler" />
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoK" resolve="cCompiler" />
               </node>
             </node>
           </node>
@@ -2616,7 +2616,7 @@
             <node concept="2OqwBi" id="34x64NyRAMe" role="37vLTJ">
               <node concept="13iPFW" id="34x64NyRAMf" role="2Oq$k0" />
               <node concept="3TrcHB" id="34x64NyRAMg" role="2OqNvi">
-                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+                <ref role="3TsBF5" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
               </node>
             </node>
           </node>

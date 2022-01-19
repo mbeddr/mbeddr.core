@@ -6510,7 +6510,7 @@
           </node>
         </node>
         <node concept="3F0A7n" id="4BxItZJ4Bpb" role="3EZMnx">
-          <ref role="1NtTu8" to="51wr:4BxItZJ4BoL" resolve="compilerOptions" />
+          <ref role="1NtTu8" to="51wr:4BxItZJ4BoL" resolve="cCompilerOptions" />
           <node concept="ljvvj" id="4BxItZJ4Bpc" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

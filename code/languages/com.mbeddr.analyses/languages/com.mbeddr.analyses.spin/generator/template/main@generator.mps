@@ -315,8 +315,8 @@
     <node concept="3G52F3" id="2bthWyzEzKE" role="12RR68">
       <property role="TrG5h" value="SPIN" />
       <node concept="94E81" id="20BlhoiiRwF" role="17Kx8K">
-        <node concept="GFvkN" id="20BlhoiiRwG" role="17N5uS">
-          <ref role="GFvkK" node="7itveDJMH$4" />
+        <node concept="3G69iQ" id="6hbeR3Me6aW" role="17N5uS">
+          <property role="3G69iL" value="spin" />
         </node>
       </node>
     </node>
@@ -393,7 +393,7 @@
     <node concept="3O_Fa1" id="2bthWyzEAyF" role="12RR68">
       <node concept="3O_FaX" id="2bthWyzEAyG" role="38Bv6S">
         <node concept="3G69iQ" id="2bthWyzEAyH" role="3G69ia">
-          <property role="3G69iL" value="rm *.proxy" />
+          <property role="3G69iL" value="@rm *.proxy" />
           <node concept="1WS0z7" id="2bthWyzEAyI" role="lGtFl">
             <node concept="3JmXsc" id="2bthWyzEAyJ" role="3Jn$fo">
               <node concept="3clFbS" id="2bthWyzEAyK" role="2VODD2">
@@ -482,7 +482,7 @@
     <node concept="3O_Fa1" id="2bthWyzEAz8" role="12RR68">
       <node concept="3O_FaX" id="2bthWyzEAz9" role="38Bv6S">
         <node concept="3G69iQ" id="2bthWyzEAza" role="3G69ia">
-          <property role="3G69iL" value="rm *.trail; rm -rf $(ODIR)" />
+          <property role="3G69iL" value="@rm -f *.trail; rm -rf $(ODIR)" />
         </node>
       </node>
       <node concept="ysyOp" id="7EZ1SprEAwJ" role="ypkCg">
@@ -509,8 +509,11 @@
           <node concept="3O_Fa1" id="7itveDJMH$4" role="12RR68">
             <node concept="raruj" id="7itveDJMIqj" role="lGtFl" />
             <node concept="3O_FaX" id="7itveDJMH$5" role="38Bv6S">
+              <node concept="3G69iQ" id="6hbeR3MevVK" role="3G69ia">
+                <property role="3G69iL" value="$(SPIN) -a " />
+              </node>
               <node concept="3G69iQ" id="7itveDJMH$6" role="3G69ia">
-                <property role="3G69iL" value="spin -a promela_file" />
+                <property role="3G69iL" value="promela_file" />
                 <node concept="17Uvod" id="GPYKKQmaog" role="lGtFl">
                   <property role="P4ACc" value="f93d1dbe-bfd1-42dd-932a-f375fa6f5373/3373914745211590947/3373914745211590948" />
                   <property role="2qtEX9" value="text" />
@@ -521,20 +524,15 @@
                           <node concept="Xl_RD" id="GPYKKQmbkk" role="3uHU7w">
                             <property role="Xl_RC" value=".pr" />
                           </node>
-                          <node concept="3cpWs3" id="GPYKKQmcB6" role="3uHU7B">
-                            <node concept="Xl_RD" id="GPYKKQmcUd" role="3uHU7B">
-                              <property role="Xl_RC" value="spin -a " />
+                          <node concept="2OqwBi" id="GPYKKQmbkl" role="3uHU7B">
+                            <node concept="2OqwBi" id="GPYKKQmbkm" role="2Oq$k0">
+                              <node concept="30H73N" id="GPYKKQmbkn" role="2Oq$k0" />
+                              <node concept="2qgKlT" id="GPYKKQmbko" role="2OqNvi">
+                                <ref role="37wK5l" to="3o3s:7Rf0$0HCPaz" resolve="getPromelaModel" />
+                              </node>
                             </node>
-                            <node concept="2OqwBi" id="GPYKKQmbkl" role="3uHU7w">
-                              <node concept="2OqwBi" id="GPYKKQmbkm" role="2Oq$k0">
-                                <node concept="30H73N" id="GPYKKQmbkn" role="2Oq$k0" />
-                                <node concept="2qgKlT" id="GPYKKQmbko" role="2OqNvi">
-                                  <ref role="37wK5l" to="3o3s:7Rf0$0HCPaz" resolve="getPromelaModel" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="GPYKKQmbkp" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
+                            <node concept="3TrcHB" id="GPYKKQmbkp" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
                           </node>
                         </node>

@@ -26,6 +26,8 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="i2y7" ref="r:098cbe90-1cfd-414a-b5e8-aca28752df17(com.mbeddr.core.make.structure)" implicit="true" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
+    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -172,6 +174,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -220,6 +223,7 @@
       <concept id="505095865854384109" name="jetbrains.mps.make.script.structure.JobDeclaration" flags="ng" index="2aLE7I">
         <child id="505095865854384110" name="job" index="2aLE7H" />
       </concept>
+      <concept id="7044091413522263180" name="jetbrains.mps.make.script.structure.GetMakeSessionExpression" flags="ng" index="2_BwXt" />
       <concept id="2360002718792625579" name="jetbrains.mps.make.script.structure.JobDefinition" flags="in" index="ElOhj" />
       <concept id="3668957831723333672" name="jetbrains.mps.make.script.structure.ReportFeedbackStatement" flags="nn" index="1daRAt">
         <property id="3668957831723333678" name="feedback" index="1daRAr" />
@@ -480,6 +484,17 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="2OqwBi" id="16gyj4BMjp0" role="ukAjM">
+                    <node concept="2OqwBi" id="16gyj4BMjp1" role="2Oq$k0">
+                      <node concept="2_BwXt" id="16gyj4BMjp2" role="2Oq$k0" />
+                      <node concept="liA8E" id="16gyj4BMjp3" role="2OqNvi">
+                        <ref role="37wK5l" to="hfuk:2BjwmTxTf34" resolve="getProject" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="16gyj4BMjp4" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="3clFbH" id="6KI2Y3YYGRM" role="3cqZAp" />
                 <node concept="3clFbJ" id="3s1LyzGgnRW" role="3cqZAp">
@@ -582,6 +597,17 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="2OqwBi" id="6hbeR3MbnuD" role="ukAjM">
+                        <node concept="2OqwBi" id="6hbeR3MbnuE" role="2Oq$k0">
+                          <node concept="2_BwXt" id="6hbeR3MbnuF" role="2Oq$k0" />
+                          <node concept="liA8E" id="6hbeR3MbnuG" role="2OqNvi">
+                            <ref role="37wK5l" to="hfuk:2BjwmTxTf34" resolve="getProject" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6hbeR3MbnuH" role="2OqNvi">
+                          <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                        </node>
+                      </node>
                     </node>
                     <node concept="3clFbH" id="6KI2Y3YYJ1C" role="3cqZAp" />
                     <node concept="3clFbJ" id="2rwJegRMTtW" role="3cqZAp">
@@ -601,6 +627,16 @@
                         <node concept="10Nm6u" id="2rwJegRMUKC" role="3uHU7w" />
                         <node concept="37vLTw" id="2rwJegRMUqH" role="3uHU7B">
                           <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1daRAt" id="6hbeR3MbrF8" role="3cqZAp">
+                      <node concept="3cpWs3" id="6hbeR3MbtAo" role="1daK9t">
+                        <node concept="37vLTw" id="6hbeR3MbtHK" role="3uHU7w">
+                          <ref role="3cqZAo" node="3s1LyzGriHV" resolve="path" />
+                        </node>
+                        <node concept="Xl_RD" id="6hbeR3Mbtfb" role="3uHU7B">
+                          <property role="Xl_RC" value="Running make in " />
                         </node>
                       </node>
                     </node>
@@ -733,6 +769,17 @@
                               </node>
                             </node>
                           </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6hbeR3MbnFc" role="ukAjM">
+                        <node concept="2OqwBi" id="6hbeR3MbnFd" role="2Oq$k0">
+                          <node concept="2_BwXt" id="6hbeR3MbnFe" role="2Oq$k0" />
+                          <node concept="liA8E" id="6hbeR3MbnFf" role="2OqNvi">
+                            <ref role="37wK5l" to="hfuk:2BjwmTxTf34" resolve="getProject" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6hbeR3MbnFg" role="2OqNvi">
+                          <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                         </node>
                       </node>
                     </node>

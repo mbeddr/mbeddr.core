@@ -1155,10 +1155,32 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="6OxpEKG0lNc" role="3clFbx">
-                  <node concept="3clFbF" id="6OxpEKG0lNQ" role="3cqZAp">
-                    <node concept="3uNrnE" id="6OxpEKG0lNS" role="3clFbG">
-                      <node concept="37vLTw" id="5HxjapweqnK" role="2$L3a6">
-                        <ref role="3cqZAo" node="6OxpEKG0lNL" resolve="count" />
+                  <node concept="3clFbJ" id="bnKRyxQb96" role="3cqZAp">
+                    <node concept="3clFbS" id="bnKRyxQb98" role="3clFbx">
+                      <node concept="3clFbF" id="6OxpEKG0lNQ" role="3cqZAp">
+                        <node concept="3uNrnE" id="6OxpEKG0lNS" role="3clFbG">
+                          <node concept="37vLTw" id="5HxjapweqnK" role="2$L3a6">
+                            <ref role="3cqZAo" node="6OxpEKG0lNL" resolve="count" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3fqX7Q" id="bnKRyxQe1l" role="3clFbw">
+                      <node concept="2OqwBi" id="bnKRyxQbR1" role="3fr31v">
+                        <node concept="1YBJjd" id="bnKRyxQbvh" role="2Oq$k0">
+                          <ref role="1YBMHb" node="6OxpEKG0kA5" resolve="mod" />
+                        </node>
+                        <node concept="2qgKlT" id="bnKRyxQcY2" role="2OqNvi">
+                          <ref role="37wK5l" to="qd6m:bnKRyxQ2fZ" resolve="isSameNameAdmissible" />
+                          <node concept="1PxgMI" id="bnKRyxQdKZ" role="37wK5m">
+                            <node concept="chp4Y" id="bnKRyxQdMW" role="3oSUPX">
+                              <ref role="cht4Q" to="x27k:5_l8w1EmTcX" resolve="Module" />
+                            </node>
+                            <node concept="2GrUjf" id="bnKRyxQdDM" role="1m5AlR">
+                              <ref role="2Gs0qQ" node="6OxpEKG0lN4" resolve="root" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

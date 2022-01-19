@@ -36,13 +36,13 @@ if (project.hasProperty('mpsExtensionsZip')) {
 }
 
 task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_mps_extensions]) {
-	doFirst {
-		if (ciBuild) {
-			// Coerce TeamCity build number to mbeddrPlatformBuildNumber
-			// (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
-			println "##teamcity[buildNumber '${mbeddrPlatformBuildNumber}']"
-		}
-	}
+    doFirst {
+        if (ciBuild) {
+            // Coerce TeamCity build number to mbeddrPlatformBuildNumber
+            // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
+            println "##teamcity[buildNumber '${mbeddrPlatformBuildNumber}']"
+        }
+    }
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')
 }
 

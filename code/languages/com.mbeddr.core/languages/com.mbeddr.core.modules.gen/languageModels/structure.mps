@@ -196,10 +196,10 @@
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="1TJgyj" id="3BLvzpMQtkP" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="headers" />
+      <property role="20kJfa" value="resources" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="4175257101869372725" />
-      <ref role="20lvS9" to="x27k:5jyom5fOqJw" resolve="HeaderDescriptor" />
+      <ref role="20lvS9" to="x27k:5jyom5fOqJe" resolve="ExternalResourceDescriptor" />
     </node>
     <node concept="1TJgyj" id="7RiewQ_kN5O" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -322,7 +322,7 @@
       </node>
     </node>
     <node concept="1TJgyi" id="7uVh7XGHfib" role="1TKVEl">
-      <property role="TrG5h" value="preffix" />
+      <property role="TrG5h" value="prefix" />
       <property role="IQ2nx" value="8627564825233650827" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
@@ -500,6 +500,18 @@
       <property role="IQ2nx" value="7959524747673776595" />
       <property role="TrG5h" value="licenseFileName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4UbnhBFlV6n">
+    <property role="EcuMT" value="5659719722625118615" />
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="SuppressExternCBlock" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="4UbnhBFlVvn" role="lGtFl">
+      <property role="Hh88m" value="suppressExternCBlock" />
+      <node concept="trNpa" id="4UbnhBFlVvq" role="EQaZv">
+        <ref role="trN6q" node="1x_Jrt9Mwpu" resolve="GenModuleH" />
+      </node>
     </node>
   </node>
 </model>
