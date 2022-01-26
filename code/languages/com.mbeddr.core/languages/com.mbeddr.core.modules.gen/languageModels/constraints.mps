@@ -3,14 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
-    <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -63,6 +66,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -233,6 +237,40 @@
             <node concept="nLn13" id="20agw21GWR9" role="2Oq$k0" />
             <node concept="2qgKlT" id="20agw21GXnb" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3m_MTzl7AF6">
+    <property role="3GE5qa" value="gen" />
+    <ref role="1M2myG" to="d0vh:3m_MTzl4w2W" resolve="DummyMangledNameFinalizer" />
+    <node concept="9S07l" id="3m_MTzl7AF7" role="9Vyp8">
+      <node concept="3clFbS" id="3m_MTzl7AF8" role="2VODD2">
+        <node concept="3clFbF" id="3m_MTzl7BNa" role="3cqZAp">
+          <node concept="22lmx$" id="fLfbJ8zd8g" role="3clFbG">
+            <node concept="2OqwBi" id="fLfbJ8zd8h" role="3uHU7B">
+              <node concept="nLn13" id="fLfbJ8zd8i" role="2Oq$k0" />
+              <node concept="2qgKlT" id="fLfbJ8zd8j" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
+              </node>
+            </node>
+            <node concept="2ZW3vV" id="fLfbJ8zd8k" role="3uHU7w">
+              <node concept="3uibUv" id="fLfbJ8zd8l" role="2ZW6by">
+                <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
+              </node>
+              <node concept="2OqwBi" id="fLfbJ8zd8m" role="2ZW6bz">
+                <node concept="2JrnkZ" id="fLfbJ8zd8n" role="2Oq$k0">
+                  <node concept="2OqwBi" id="fLfbJ8zd8o" role="2JrQYb">
+                    <node concept="nLn13" id="fLfbJ8zd8p" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="fLfbJ8zd8q" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="fLfbJ8zd8r" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
