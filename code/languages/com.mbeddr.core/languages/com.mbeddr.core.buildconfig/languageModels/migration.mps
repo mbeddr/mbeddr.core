@@ -2675,7 +2675,6 @@
     <node concept="2tJIrI" id="3S4xuxhQuf0" role="jymVt" />
     <node concept="3tYpMH" id="3S4xuxhQuf1" role="jymVt">
       <property role="TrG5h" value="isRerunnable" />
-      <property role="3tYpME" value="true" />
       <ref role="25KYV2" to="slm6:1JWcQ2VeWIs" resolve="isRerunnable" />
       <node concept="3Tm1VV" id="3S4xuxhQuf2" role="1B3o_S" />
       <node concept="10P_77" id="3S4xuxhQuf3" role="1tU5fm" />
