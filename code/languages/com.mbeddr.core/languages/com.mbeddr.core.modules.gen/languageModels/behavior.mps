@@ -238,6 +238,7 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -3491,6 +3492,34 @@
     </node>
     <node concept="13hLZK" id="6TPUpoI1Qjr" role="13h7CW">
       <node concept="3clFbS" id="6TPUpoI1Qjs" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3m_MTzl4yix">
+    <property role="3GE5qa" value="gen" />
+    <ref role="13h7C2" to="d0vh:3m_MTzl4w2W" resolve="DummyMangledNameFinalizer" />
+    <node concept="13i0hz" id="3m_MTzl4yiG" role="13h7CS">
+      <property role="TrG5h" value="finalizeMangledName" />
+      <ref role="13i0hy" to="qd6m:7oF65pen2ny" resolve="finalizeMangledName" />
+      <node concept="3clFbS" id="3m_MTzl4yiJ" role="3clF47">
+        <node concept="3clFbF" id="3m_MTzl4$f_" role="3cqZAp">
+          <node concept="37vLTw" id="3m_MTzl4$f$" role="3clFbG">
+            <ref role="3cqZAo" node="3m_MTzl4$bU" resolve="mangledName" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3m_MTzl4$bS" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="3m_MTzl4$bT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3m_MTzl4$bU" role="3clF46">
+        <property role="TrG5h" value="mangledName" />
+        <node concept="17QB3L" id="3m_MTzl4$bV" role="1tU5fm" />
+      </node>
+      <node concept="17QB3L" id="3m_MTzl4$bW" role="3clF45" />
+      <node concept="3Tm1VV" id="3m_MTzl4$bX" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="3m_MTzl4yiy" role="13h7CW">
+      <node concept="3clFbS" id="3m_MTzl4yiz" role="2VODD2" />
     </node>
   </node>
 </model>
