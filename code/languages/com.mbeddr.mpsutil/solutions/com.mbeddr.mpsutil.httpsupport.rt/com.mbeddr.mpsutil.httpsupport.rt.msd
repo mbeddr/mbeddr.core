@@ -6,9 +6,7 @@
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/javax.servlet-api-3.1.0.jar" />
-      <sourceRoot location="lib/jetty-all-9.4.8.v20171121-uber.jar" />
-      <sourceRoot location="lib/slf4j-api-1.7.10.jar" />
-      <sourceRoot location="lib/slf4j-log4j12-1.7.10.jar" />
+      <sourceRoot location="lib/jetty-all-9.4.20.v20190813-uber.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -18,7 +16,7 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/javax.servlet-api-3.1.0.jar" />
-    <stubModelEntry path="${module}/lib/jetty-all-9.4.8.v20171121-uber.jar" />
+    <stubModelEntry path="${module}/lib/jetty-all-9.4.20.v20190813-uber.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
