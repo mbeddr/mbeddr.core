@@ -62,6 +62,30 @@
         </extensions>
       </idea-plugin>
     </echoxml>
+    <mkdir dir="${build.layout}/mbeddr.allScripts/lib" />
+    <mkdir dir="${build.tmp}/default/mbeddr.allScripts.jar" />
+    <mkdir dir="${build.tmp}/default/mbeddr.allScripts.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/mbeddr.allScripts.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.mbeddr.allScripts</id>
+        <name>com.mbeddr.allScripts</name>
+        <version>${mbeddr.version}</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.build</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
+        <depends>jetbrains.mps.execution.api</depends>
+        <depends>jetbrains.mps.execution.languages</depends>
+        <depends>jetbrains.mps.execution.configurations</depends>
+        <depends>de.itemis.mps.extensions.build</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.layout}/mbeddr.allScripts/lib/mbeddr.allScripts.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/mbeddr.allScripts.jar" />
+    </jar>
     <mkdir dir="${build.layout}/mbeddr.allScripts/languages" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.tutorial.dev.build.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.tutorial.dev.build.jar/META-INF" />
