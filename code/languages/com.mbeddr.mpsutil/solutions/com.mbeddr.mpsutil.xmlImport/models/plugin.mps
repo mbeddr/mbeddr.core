@@ -384,7 +384,7 @@
   </node>
   <node concept="sE7Ow" id="24KZuFtD0Kd">
     <property role="TrG5h" value="pasteAsXmlContent" />
-    <property role="2uzpH1" value="Past as XML content" />
+    <property role="2uzpH1" value="Paste as XML Content" />
     <node concept="2S4$dB" id="24KZuFtDg$g" role="1NuT2Z">
       <property role="TrG5h" value="context" />
       <node concept="3Tm6S6" id="24KZuFtDg$h" role="1B3o_S" />
