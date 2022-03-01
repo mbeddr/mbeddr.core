@@ -1637,6 +1637,8 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.ecore.stubs" />
         <property role="3LESm3" value="822a7acd-f487-45f5-bbb9-1ce595a1705f" />
+        <property role="aoJFB" value="77WRb6jODAF/none" />
+        <property role="2GAjPV" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cMv" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cMw" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cMx" role="3LXTna">
