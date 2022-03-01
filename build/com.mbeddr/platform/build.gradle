@@ -126,7 +126,7 @@ task defaultWrapper(dependsOn: build_platform) {
 
 rootProject.defaultTasks 'defaultWrapper'
 
-task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal', 'publishMbeddrPlatformSlimPublicationToMavenLocal'])
 
 publishing {
     publications {
