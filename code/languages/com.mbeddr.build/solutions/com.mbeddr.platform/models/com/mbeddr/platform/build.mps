@@ -194,7 +194,9 @@
       <concept id="8971171305100238972" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyTargetLanguage" flags="ng" index="Rbm2T">
         <reference id="3189788309731922643" name="language" index="1E1Vl2" />
       </concept>
-      <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
+      <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6">
+        <property id="4571516170012626612" name="useMakeTask" index="1DZWs8" />
+      </concept>
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
@@ -20946,7 +20948,9 @@
       </node>
     </node>
     <node concept="10PD9b" id="3AVJcIMlF8n" role="10PD9s" />
-    <node concept="3b7kt6" id="3AVJcIMlF8o" role="10PD9s" />
+    <node concept="3b7kt6" id="3AVJcIMlF8o" role="10PD9s">
+      <property role="1DZWs8" value="true" />
+    </node>
     <node concept="398rNT" id="3AVJcIMlF8p" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
       <node concept="55IIr" id="3AVJcIMlF8q" role="398pKh">
