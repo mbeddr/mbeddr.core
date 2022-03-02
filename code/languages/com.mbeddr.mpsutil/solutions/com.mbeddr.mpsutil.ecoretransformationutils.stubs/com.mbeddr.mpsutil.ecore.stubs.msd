@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.ecore.stubs" uuid="822a7acd-f487-45f5-bbb9-1ce595a1705f" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/com.google.guava-15.0.0.v201403281430.jar" />
       <sourceRoot location="lib/com.google.inject-3.0.0.v201605172100.jar" />

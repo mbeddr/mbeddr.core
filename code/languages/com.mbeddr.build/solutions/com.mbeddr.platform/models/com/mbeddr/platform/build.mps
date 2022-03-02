@@ -1635,6 +1635,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.ecore.stubs" />
         <property role="3LESm3" value="822a7acd-f487-45f5-bbb9-1ce595a1705f" />
+        <property role="2GAjPV" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cMv" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cMw" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cMx" role="3LXTna">
@@ -2616,28 +2617,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1BupzO" id="4PRpvcZJN7E" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="4PRpvcZJN7F" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJN7v" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJN7w" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4PRpvcZJN7x" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJN7y" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4PRpvcZJN7G" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
