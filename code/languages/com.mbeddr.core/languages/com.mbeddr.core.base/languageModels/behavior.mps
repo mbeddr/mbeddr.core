@@ -5174,8 +5174,11 @@
                 <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
               </node>
             </node>
-            <node concept="BsUDl" id="U4SMQvnVYK" role="33vP2m">
-              <ref role="37wK5l" node="GGvIiBXZ9w" resolve="getAllImportedChunks" />
+            <node concept="BsUDl" id="1KUGD$rVX3s" role="33vP2m">
+              <ref role="37wK5l" node="1KUGD$rV2Pp" resolve="allImportedChunks" />
+              <node concept="3clFbT" id="1KUGD$rVX3t" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
             </node>
           </node>
         </node>
@@ -5235,47 +5238,113 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="GGvIiBXZ9w" role="13h7CS">
-      <property role="TrG5h" value="getAllImportedChunks" />
-      <node concept="3Tm6S6" id="GGvIiBY28H" role="1B3o_S" />
-      <node concept="A3Dl8" id="GGvIiBY2$g" role="3clF45">
-        <node concept="3Tqbb2" id="GGvIiBY2NN" role="A3Ik2">
+    <node concept="13i0hz" id="1KUGD$rV2Pp" role="13h7CS">
+      <property role="TrG5h" value="allImportedChunks" />
+      <node concept="37vLTG" id="1KUGD$rVshY" role="3clF46">
+        <property role="TrG5h" value="restrictToReexport" />
+        <node concept="10P_77" id="1KUGD$rVsm4" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="1KUGD$rV2Pq" role="1B3o_S" />
+      <node concept="A3Dl8" id="1KUGD$rVrYv" role="3clF45">
+        <node concept="3Tqbb2" id="1KUGD$rVsa1" role="A3Ik2">
           <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
         </node>
       </node>
-      <node concept="3clFbS" id="GGvIiBXZ9z" role="3clF47">
-        <node concept="3cpWs8" id="GGvIiBY2nz" role="3cqZAp">
-          <node concept="3cpWsn" id="GGvIiBY2nA" role="3cpWs9">
+      <node concept="3clFbS" id="1KUGD$rV2Ps" role="3clF47">
+        <node concept="3cpWs8" id="1KUGD$rVso6" role="3cqZAp">
+          <node concept="3cpWsn" id="1KUGD$rVso7" role="3cpWs9">
             <property role="TrG5h" value="result" />
-            <node concept="2hMVRd" id="GGvIiBY2nx" role="1tU5fm">
-              <node concept="3Tqbb2" id="GGvIiBY2o4" role="2hN53Y">
+            <node concept="2hMVRd" id="1KUGD$rVso8" role="1tU5fm">
+              <node concept="3Tqbb2" id="1KUGD$rVso9" role="2hN53Y">
                 <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
               </node>
             </node>
-            <node concept="2ShNRf" id="GGvIiBY2pR" role="33vP2m">
-              <node concept="2i4dXS" id="GGvIiBY2pM" role="2ShVmc">
-                <node concept="3Tqbb2" id="GGvIiBY2pN" role="HW$YZ">
+            <node concept="2ShNRf" id="1KUGD$rVsoa" role="33vP2m">
+              <node concept="2i4dXS" id="1KUGD$rVsob" role="2ShVmc">
+                <node concept="3Tqbb2" id="1KUGD$rVsoc" role="HW$YZ">
                   <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="GGvIiBY2rn" role="3cqZAp">
-          <node concept="BsUDl" id="GGvIiBY2rm" role="3clFbG">
-            <ref role="37wK5l" node="GGvIiBXDet" resolve="collectImportedChunks" />
-            <node concept="13iPFW" id="GGvIiBYfeu" role="37wK5m" />
-            <node concept="37vLTw" id="GGvIiBY2sG" role="37wK5m">
-              <ref role="3cqZAo" node="GGvIiBY2nA" resolve="result" />
+        <node concept="3cpWs8" id="1KUGD$rVBYi" role="3cqZAp">
+          <node concept="3cpWsn" id="1KUGD$rVBYj" role="3cpWs9">
+            <property role="TrG5h" value="chunksFromDeps" />
+            <node concept="A3Dl8" id="1KUGD$rVBJN" role="1tU5fm">
+              <node concept="3Tqbb2" id="1KUGD$rVBJQ" role="A3Ik2">
+                <ref role="ehGHo" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+              </node>
             </node>
-            <node concept="3clFbT" id="GGvIiBYkyV" role="37wK5m">
-              <property role="3clFbU" value="false" />
+            <node concept="2OqwBi" id="1KUGD$rVBYk" role="33vP2m">
+              <node concept="2OqwBi" id="1KUGD$rVBYl" role="2Oq$k0">
+                <node concept="13iPFW" id="1KUGD$rVBYm" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1KUGD$rVBYn" role="2OqNvi">
+                  <ref role="37wK5l" node="6clJcrJYPM5" resolve="dependencies" />
+                </node>
+              </node>
+              <node concept="3$u5V9" id="1KUGD$rVBYo" role="2OqNvi">
+                <node concept="1bVj0M" id="1KUGD$rVBYp" role="23t8la">
+                  <node concept="3clFbS" id="1KUGD$rVBYq" role="1bW5cS">
+                    <node concept="3clFbF" id="1KUGD$rVBYr" role="3cqZAp">
+                      <node concept="2OqwBi" id="1KUGD$rVBYs" role="3clFbG">
+                        <node concept="37vLTw" id="1KUGD$rVBYt" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1KUGD$rVBYv" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="1KUGD$rVBYu" role="2OqNvi">
+                          <ref role="37wK5l" node="6clJcrJZN1z" resolve="chunk" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="1KUGD$rVBYv" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="1KUGD$rVBYw" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="GGvIiBY2v4" role="3cqZAp">
-          <node concept="37vLTw" id="GGvIiBY2yb" role="3cqZAk">
-            <ref role="3cqZAo" node="GGvIiBY2nA" resolve="result" />
+        <node concept="3clFbF" id="1KUGD$rVDeY" role="3cqZAp">
+          <node concept="2OqwBi" id="1KUGD$rVEkY" role="3clFbG">
+            <node concept="37vLTw" id="1KUGD$rVDeW" role="2Oq$k0">
+              <ref role="3cqZAo" node="1KUGD$rVso7" resolve="result" />
+            </node>
+            <node concept="X8dFx" id="1KUGD$rVFc2" role="2OqNvi">
+              <node concept="37vLTw" id="1KUGD$rVFYr" role="25WWJ7">
+                <ref role="3cqZAo" node="1KUGD$rVBYj" resolve="chunksFromDeps" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="1KUGD$rVIvk" role="3cqZAp">
+          <node concept="2GrKxI" id="1KUGD$rVIvm" role="2Gsz3X">
+            <property role="TrG5h" value="chunk" />
+          </node>
+          <node concept="37vLTw" id="1KUGD$rVKZ5" role="2GsD0m">
+            <ref role="3cqZAo" node="1KUGD$rVBYj" resolve="chunksFromDeps" />
+          </node>
+          <node concept="3clFbS" id="1KUGD$rVIvq" role="2LFqv$">
+            <node concept="3clFbF" id="1KUGD$rVN0c" role="3cqZAp">
+              <node concept="BsUDl" id="1KUGD$rVN0b" role="3clFbG">
+                <ref role="37wK5l" node="GGvIiBXDet" resolve="collectImportedChunks" />
+                <node concept="2GrUjf" id="1KUGD$rVOmZ" role="37wK5m">
+                  <ref role="2Gs0qQ" node="1KUGD$rVIvm" resolve="chunk" />
+                </node>
+                <node concept="37vLTw" id="1KUGD$rVQ3P" role="37wK5m">
+                  <ref role="3cqZAo" node="1KUGD$rVso7" resolve="result" />
+                </node>
+                <node concept="37vLTw" id="1KUGD$rVTrB" role="37wK5m">
+                  <ref role="3cqZAo" node="1KUGD$rVshY" resolve="restrictToReexport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1KUGD$rVsoi" role="3cqZAp">
+          <node concept="37vLTw" id="1KUGD$rVsoj" role="3cqZAk">
+            <ref role="3cqZAo" node="1KUGD$rVso7" resolve="result" />
           </node>
         </node>
       </node>
@@ -5297,7 +5366,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="GGvIiBYgXb" role="3clF46">
-        <property role="TrG5h" value="reexportedOnly" />
+        <property role="TrG5h" value="restrictToReexport" />
         <node concept="10P_77" id="GGvIiBYhBL" role="1tU5fm" />
       </node>
       <node concept="3Tm6S6" id="GGvIiBXYIj" role="1B3o_S" />
@@ -5357,7 +5426,7 @@
             </node>
           </node>
           <node concept="37vLTw" id="dJX1uxeYvM" role="3clFbw">
-            <ref role="3cqZAo" node="GGvIiBYgXb" resolve="reexportedOnly" />
+            <ref role="3cqZAo" node="GGvIiBYgXb" resolve="restrictToReexport" />
           </node>
         </node>
         <node concept="2Gpval" id="GGvIiBXKRk" role="3cqZAp">
@@ -5413,8 +5482,8 @@
                     <node concept="37vLTw" id="GGvIiBXT8j" role="37wK5m">
                       <ref role="3cqZAo" node="GGvIiBXHas" resolve="accumulator" />
                     </node>
-                    <node concept="3clFbT" id="GGvIiBYk7_" role="37wK5m">
-                      <property role="3clFbU" value="true" />
+                    <node concept="37vLTw" id="1KUGD$rVLnG" role="37wK5m">
+                      <ref role="3cqZAo" node="GGvIiBYgXb" resolve="restrictToReexport" />
                     </node>
                   </node>
                 </node>
