@@ -1123,7 +1123,7 @@
     </node>
   </node>
   <node concept="312cEu" id="6xoAPBjQ1z2">
-    <property role="TrG5h" value="MakeVariableResolver" />
+    <property role="TrG5h" value="BuildVariableResolver" />
     <property role="1sVAO0" value="true" />
     <node concept="2tJIrI" id="6xoAPBjQ1zZ" role="jymVt" />
     <node concept="3clFb_" id="6xoAPBjQ3Dk" role="jymVt">
@@ -1144,9 +1144,9 @@
     <node concept="3Tm1VV" id="6xoAPBjQ1z3" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="6xoAPBjQ3U9">
-    <property role="TrG5h" value="MakeVariableResolvers" />
+    <property role="TrG5h" value="BuildVariableResolvers" />
     <node concept="3uibUv" id="6xoAPBjQ6Rb" role="luc8K">
-      <ref role="3uigEE" node="6xoAPBjQ1z2" resolve="MakeVariableResolver" />
+      <ref role="3uigEE" node="6xoAPBjQ1z2" resolve="BuildVariableResolver" />
     </node>
   </node>
   <node concept="1lYeZD" id="4zXqh6UmIPy">
