@@ -865,5 +865,12 @@
       <ref role="PrY4T" to="vs0r:3R$6B6bKw0C" resolve="IConfigurationItem" />
     </node>
   </node>
+  <node concept="1TIwiD" id="rfshK93exf">
+    <property role="EcuMT" value="490735249631537231" />
+    <property role="3GE5qa" value="platform.systems" />
+    <property role="TrG5h" value="Yocto" />
+    <property role="34LRSv" value="Yocto" />
+    <ref role="1TJDcQ" node="4JZ_DSuYrDY" resolve="Linux" />
+  </node>
 </model>
 

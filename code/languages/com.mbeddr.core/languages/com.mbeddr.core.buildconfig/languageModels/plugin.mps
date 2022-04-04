@@ -250,6 +250,9 @@
       <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
         <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
+      <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
+        <child id="8182547171709738803" name="nodes" index="36be1Z" />
+      </concept>
       <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
         <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
@@ -1399,6 +1402,77 @@
       <node concept="q3mfm" id="4zXqh6UmIPH" role="3clF45">
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="4zXqh6UmIPC" resolve="get" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lYeZD" id="rfshK94wwA">
+    <property role="TrG5h" value="YoctoToolchainProvider" />
+    <ref role="1lYe$Y" node="4JZ_DSvsu08" resolve="CrossCompilationToolchainProviders" />
+    <node concept="3Tm1VV" id="rfshK94wwB" role="1B3o_S" />
+    <node concept="2tJIrI" id="rfshK94wwC" role="jymVt" />
+    <node concept="3tTeZs" id="rfshK94wwD" role="jymVt">
+      <property role="3tTeZt" value="activate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
+    </node>
+    <node concept="3tTeZs" id="rfshK94wwE" role="jymVt">
+      <property role="3tTeZt" value="deactivate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+    </node>
+    <node concept="2tJIrI" id="rfshK94wwF" role="jymVt" />
+    <node concept="q3mfD" id="rfshK94wwG" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="rfshK94wwI" role="1B3o_S" />
+      <node concept="3clFbS" id="rfshK94wwK" role="3clF47">
+        <node concept="3clFbF" id="rfshK94KJY" role="3cqZAp">
+          <node concept="2ShNRf" id="4JZ_DSwjE40" role="3clFbG">
+            <node concept="YeOm9" id="4JZ_DSwjEeh" role="2ShVmc">
+              <node concept="1Y3b0j" id="4JZ_DSwjEek" role="YeSDq">
+                <property role="2bfB8j" value="true" />
+                <ref role="1Y3XeK" node="4JZ_DSwfP$7" resolve="CrossCompilationToolchainProvider" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                <node concept="3Tm1VV" id="4JZ_DSwjEel" role="1B3o_S" />
+                <node concept="3clFb_" id="4JZ_DSwjEeq" role="jymVt">
+                  <property role="TrG5h" value="getCrossCompilationToolchain" />
+                  <node concept="3Tm1VV" id="4JZ_DSwjEes" role="1B3o_S" />
+                  <node concept="3Tqbb2" id="4JZ_DSwjEet" role="3clF45">
+                    <ref role="ehGHo" to="51wr:4JZ_DSuWeoI" resolve="CrossCompilationToolchain" />
+                  </node>
+                  <node concept="3clFbS" id="4JZ_DSwjEeu" role="3clF47">
+                    <node concept="3clFbF" id="4JZ_DSvxQ_o" role="3cqZAp">
+                      <node concept="2pJPEk" id="4JZ_DSv0kPH" role="3clFbG">
+                        <node concept="2pJPED" id="4JZ_DSv0l6G" role="2pJPEn">
+                          <ref role="2pJxaS" to="51wr:4JZ_DSuWeoI" resolve="CrossCompilationToolchain" />
+                          <node concept="2pIpSj" id="4JZ_DSv0mbJ" role="2pJxcM">
+                            <ref role="2pIpSl" to="51wr:4JZ_DSuWeoL" resolve="supportedTargets" />
+                            <node concept="36be1Y" id="4JZ_DSv0mn0" role="28nt2d">
+                              <node concept="36biLy" id="4JZ_DSvshfY" role="36be1Z">
+                                <node concept="2ShNRf" id="4JZ_DSvshix" role="36biLW">
+                                  <node concept="3zrR0B" id="4JZ_DSvshsK" role="2ShVmc">
+                                    <node concept="3Tqbb2" id="4JZ_DSvshsM" role="3zrR0E">
+                                      <ref role="ehGHo" to="51wr:rfshK93exf" resolve="Yocto" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="4JZ_DSwjEew" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="rfshK94wwL" role="3clF45">
+        <ref role="1QQUv3" node="rfshK94wwG" resolve="get" />
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
       </node>
     </node>
   </node>

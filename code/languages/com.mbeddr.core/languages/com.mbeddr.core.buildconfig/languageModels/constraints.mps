@@ -18,6 +18,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -148,6 +149,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1761385620274348152" name="jetbrains.mps.lang.smodel.structure.SConceptTypeCastExpression" flags="nn" index="2CBFar" />
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -180,6 +182,12 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
@@ -592,6 +600,27 @@
     <ref role="1M2myG" to="51wr:1RDUcGWe7Tt" resolve="CrossCompilationConfigItem" />
     <node concept="9SLcT" id="6VpLvM92r39" role="9SGkU">
       <node concept="3clFbS" id="6VpLvM92r3a" role="2VODD2">
+        <node concept="3clFbJ" id="7yL8x8vitIu" role="3cqZAp">
+          <node concept="3clFbS" id="7yL8x8vitIw" role="3clFbx">
+            <node concept="3cpWs6" id="7yL8x8vizEB" role="3cqZAp">
+              <node concept="3clFbT" id="7yL8x8vizOg" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7yL8x8viyZp" role="3clFbw">
+            <node concept="2OqwBi" id="7yL8x8vixon" role="2Oq$k0">
+              <node concept="2OqwBi" id="7yL8x8viuee" role="2Oq$k0">
+                <node concept="2DD5aU" id="7yL8x8vitTf" role="2Oq$k0" />
+                <node concept="FGMqu" id="7yL8x8viwBh" role="2OqNvi" />
+              </node>
+              <node concept="3CFZ6_" id="7yL8x8vixVf" role="2OqNvi">
+                <node concept="3CFYIy" id="7yL8x8viyxe" role="3CFYIz">
+                  <ref role="3CFYIx" to="tpce:hOasaTk" resolve="DeprecatedNodeAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7yL8x8vizrB" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6VpLvM92L2G" role="3cqZAp">
           <node concept="2OqwBi" id="6VpLvM93aCF" role="3clFbG">
             <node concept="2OqwBi" id="6VpLvM92ZR7" role="2Oq$k0">
