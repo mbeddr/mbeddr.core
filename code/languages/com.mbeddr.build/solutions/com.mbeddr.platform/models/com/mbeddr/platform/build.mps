@@ -23578,6 +23578,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="6A$R1s1EkzR" role="3bR31x">
+          <node concept="3LXTmp" id="6A$R1s1EkzS" role="3rtmxm">
+            <node concept="3qWCbU" id="6A$R1s1EkzT" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6A$R1s1EkzU" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="6A$R1s1EkzV" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6A$R1s1EkzW" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.compare.testlang" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4_9e_MLhX80" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -23630,6 +23646,22 @@
         <node concept="1SiIV0" id="4_9e_MLi1yc" role="3bR37C">
           <node concept="3bR9La" id="4_9e_MLi1yd" role="1SiIV1">
             <ref role="3bR37D" node="4_9e_MLhXRZ" resolve="test.com.mbeddr.mpsutil.compare.testlang" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6A$R1s1EkzK" role="3bR31x">
+          <node concept="3LXTmp" id="6A$R1s1EkzL" role="3rtmxm">
+            <node concept="3qWCbU" id="6A$R1s1EkzM" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6A$R1s1EkzN" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="6A$R1s1EkzO" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6A$R1s1EkzP" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.compare" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
