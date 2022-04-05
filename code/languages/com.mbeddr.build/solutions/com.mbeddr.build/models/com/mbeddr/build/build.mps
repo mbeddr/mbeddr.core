@@ -1939,6 +1939,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXjg" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXjh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="VC7Rv4uQK2" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2225,6 +2230,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShpx" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXjC" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXjD" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
           </node>
         </node>
       </node>
@@ -2780,6 +2790,11 @@
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
           </node>
         </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXkQ" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXkR" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7uZw0yZ43L$" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3132,6 +3147,11 @@
         <node concept="1SiIV0" id="6xgYZv9wYD_" role="3bR37C">
           <node concept="3bR9La" id="6xgYZv9wYDA" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXlx" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXly" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
           </node>
         </node>
       </node>
@@ -3553,6 +3573,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXmB" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXmC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7uZw0yZ43L9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3844,6 +3869,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXn1" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXn2" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXn3" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXn4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6vuuYkaSA$p" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4048,6 +4083,11 @@
               <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
             </node>
           </node>
+          <node concept="1SiIV0" id="Tb1Z8IqXo0" role="3bR37C">
+            <node concept="3bR9La" id="Tb1Z8IqXo1" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="7uQ0U6uDrAH" role="3bR37C">
           <node concept="1Busua" id="7uQ0U6uDrAI" role="1SiIV1">
@@ -4142,6 +4182,11 @@
         <node concept="1SiIV0" id="6TPUpoJhtAG" role="3bR37C">
           <node concept="3bR9La" id="6TPUpoJhtAH" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXnN" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXnO" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
           </node>
         </node>
       </node>
@@ -4526,6 +4571,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShvP" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXoX" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXoY" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
           </node>
         </node>
       </node>
@@ -6310,6 +6360,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXsn" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXso" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="3tiuL$x4fx$" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -7064,6 +7119,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShAe" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXua" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXub" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
           </node>
         </node>
       </node>
@@ -13128,6 +13188,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShTg" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Tb1Z8IqXH8" role="3bR37C">
+          <node concept="3bR9La" id="Tb1Z8IqXH9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
           </node>
         </node>
       </node>
