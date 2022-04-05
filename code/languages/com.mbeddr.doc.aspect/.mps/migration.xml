@@ -16,11 +16,13 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v35.RemoveHistoryFiles" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v35.SetGenRequiredToEmptyAspects" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2019_3.DefaultFacetExplicitPersistence" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2021_2.SplitMPSCoreStub" value="executed" />
     <entry key="jetbrains.mps.javaVersionMigration_JDKDefault" value="executed" />
     <entry key="jetbrains.mps.name2id_gen_perroot" value="executed" />
     <entry key="jetbrains.mps.obsoletePropsCleanup" value="executed" />
     <entry key="jetbrains.mps.projectJavaVersionMigration" value="executed" />
     <entry key="jetbrains.mps.resaveModules" value="executed" />
     <entry key="jetbrains.mps.v8_elimination" value="executed" />
+    <entry key="project.migrated.version" value="212" />
   </component>
 </project>

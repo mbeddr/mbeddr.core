@@ -4365,7 +4365,7 @@
                 <ref role="3cqZAo" node="6lZZfFP0kur" resolve="attributes" />
               </node>
               <node concept="liA8E" id="6lZZfFP0j5n" role="2OqNvi">
-                <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String)" resolve="getValue" />
                 <node concept="Xl_RD" id="6lZZfFP0j5o" role="37wK5m">
                   <property role="Xl_RC" value="file" />
                 </node>
@@ -4382,7 +4382,7 @@
                     <ref role="3cqZAo" node="6lZZfFP0j5j" resolve="file" />
                   </node>
                   <node concept="liA8E" id="6lZZfFP0j5v" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.intern():java.lang.String" resolve="intern" />
+                    <ref role="37wK5l" to="wyt6:~String.intern()" resolve="intern" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6lZZfFP0j5w" role="37vLTJ">
@@ -4407,7 +4407,7 @@
                 <ref role="3cqZAo" node="6lZZfFP0kur" resolve="attributes" />
               </node>
               <node concept="liA8E" id="6lZZfFP0j5D" role="2OqNvi">
-                <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String)" resolve="getValue" />
                 <node concept="Xl_RD" id="6lZZfFP0j5E" role="37wK5m">
                   <property role="Xl_RC" value="function" />
                 </node>
@@ -4424,7 +4424,7 @@
                     <ref role="3cqZAo" node="6lZZfFP0j5_" resolve="function" />
                   </node>
                   <node concept="liA8E" id="6lZZfFP0j5L" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.intern():java.lang.String" resolve="intern" />
+                    <ref role="37wK5l" to="wyt6:~String.intern()" resolve="intern" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6lZZfFP0j5M" role="37vLTJ">
@@ -4449,7 +4449,7 @@
                 <ref role="3cqZAo" node="6lZZfFP0kur" resolve="attributes" />
               </node>
               <node concept="liA8E" id="6lZZfFP0j5V" role="2OqNvi">
-                <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String)" resolve="getValue" />
                 <node concept="Xl_RD" id="6lZZfFP0j5W" role="37wK5m">
                   <property role="Xl_RC" value="line" />
                 </node>
@@ -4566,7 +4566,7 @@
               <ref role="3cqZAo" node="4yi9mPskzp_" resolve="qName" />
             </node>
             <node concept="liA8E" id="6lZZfFOZtQK" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="6lZZfFOZtU_" role="37wK5m">
                 <property role="Xl_RC" value="fault-localization" />
               </node>
@@ -4587,7 +4587,7 @@
                         <ref role="3cqZAo" node="4yi9mPskzpB" resolve="attributes" />
                       </node>
                       <node concept="liA8E" id="6lZZfFP0dEV" role="2OqNvi">
-                        <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String):java.lang.String" resolve="getValue" />
+                        <ref role="37wK5l" to="kart:~Attributes.getValue(java.lang.String)" resolve="getValue" />
                         <node concept="Xl_RD" id="6lZZfFP0dEW" role="37wK5m">
                           <property role="Xl_RC" value="property" />
                         </node>
@@ -4601,7 +4601,7 @@
                   <ref role="3cqZAo" node="4yi9mPskzp_" resolve="qName" />
                 </node>
                 <node concept="liA8E" id="6lZZfFOZDlx" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="6lZZfFOZDly" role="37wK5m">
                     <property role="Xl_RC" value="diagnosis" />
                   </node>
@@ -4696,7 +4696,7 @@
                   <ref role="3cqZAo" node="4yi9mPskzp_" resolve="qName" />
                 </node>
                 <node concept="liA8E" id="6lZZfFP0upW" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="6lZZfFP0upX" role="37wK5m">
                     <property role="Xl_RC" value="location" />
                   </node>
@@ -6341,7 +6341,7 @@
               <ref role="3cqZAo" node="4yi9mPskztt" resolve="qName" />
             </node>
             <node concept="liA8E" id="6lZZfFOZzXy" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="6lZZfFOZzXz" role="37wK5m">
                 <property role="Xl_RC" value="fault-localization" />
               </node>

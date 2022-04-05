@@ -1127,7 +1127,7 @@
                           </node>
                           <node concept="2YIFZM" id="2rFgM0FVwua" role="33vP2m">
                             <ref role="1Pybhc" node="7Ynnt_OamsD" resolve="ModelHelper" />
-                            <ref role="37wK5l" node="sa5eTsu7F9" resolve="getMR" />
+                            <ref role="37wK5l" node="sa5eTsu7F9" resolve="getRoot4NewModels" />
                             <node concept="37vLTw" id="2rFgM0FVwub" role="37wK5m">
                               <ref role="3cqZAo" node="2rFgM0FVwv_" resolve="module" />
                             </node>
@@ -1606,7 +1606,7 @@
               </node>
               <node concept="2OqwBi" id="1sLDAUZ6dHN" role="3clFbw">
                 <node concept="37vLTw" id="1sLDAUZ6c4c" role="2Oq$k0">
-                  <ref role="3cqZAo" node="sa5eTsu7EX" resolve="dummy" />
+                  <ref role="3cqZAo" node="sa5eTsu7EX" resolve="mr" />
                 </node>
                 <node concept="liA8E" id="1sLDAUZ6frB" role="2OqNvi">
                   <ref role="37wK5l" to="dush:~ModelRoot.canCreateModels()" resolve="canCreateModels" />

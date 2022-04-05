@@ -396,6 +396,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -16765,11 +16766,14 @@
                 <node concept="Xl_RD" id="2JIP8c_ZXYj" role="3uHU7B">
                   <property role="Xl_RC" value="(" />
                 </node>
-                <node concept="2OqwBi" id="2JIP8c_ZXZ0" role="3uHU7w">
-                  <node concept="13iPFW" id="2JIP8c_ZXYF" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2JIP8c_ZXZ6" role="2OqNvi">
-                    <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHu" resolve="targetType" />
+                <node concept="2OqwBi" id="6tcu$9nteKS" role="3uHU7w">
+                  <node concept="2OqwBi" id="2JIP8c_ZXZ0" role="2Oq$k0">
+                    <node concept="13iPFW" id="2JIP8c_ZXYF" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2JIP8c_ZXZ6" role="2OqNvi">
+                      <ref role="3Tt5mk" to="mj1l:5IYyAOzBgHu" resolve="targetType" />
+                    </node>
                   </node>
+                  <node concept="2Iv5rx" id="6tcu$9nteKT" role="2OqNvi" />
                 </node>
               </node>
               <node concept="Xl_RD" id="2JIP8c_ZXZv" role="3uHU7w">

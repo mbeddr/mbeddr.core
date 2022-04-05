@@ -20,7 +20,7 @@
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
+    <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -242,6 +242,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -1917,8 +1918,11 @@
                       <node concept="Xl_RD" id="5aZFu$82vxX" role="3uHU7B">
                         <property role="Xl_RC" value="The type " />
                       </node>
-                      <node concept="2X3wrD" id="5aZFu$82vJD" role="3uHU7w">
-                        <ref role="2X3Bk0" node="7FkLcyyQK_2" resolve="initExpressionType" />
+                      <node concept="2OqwBi" id="6tcu$9ntiCh" role="3uHU7w">
+                        <node concept="2X3wrD" id="5aZFu$82vJD" role="2Oq$k0">
+                          <ref role="2X3Bk0" node="7FkLcyyQK_2" resolve="initExpressionType" />
+                        </node>
+                        <node concept="2Iv5rx" id="6tcu$9ntiCi" role="2OqNvi" />
                       </node>
                     </node>
                   </node>

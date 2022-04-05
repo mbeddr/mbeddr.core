@@ -7,7 +7,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
@@ -230,6 +230,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -447,8 +448,11 @@
               <node concept="RRSsy" id="42VTAcDfnOo" role="3cqZAp">
                 <property role="RRSoG" value="h1akgim/info" />
                 <node concept="3cpWs3" id="4a$qj9s4rVW" role="RRSoy">
-                  <node concept="37vLTw" id="4a$qj9s4s2z" role="3uHU7w">
-                    <ref role="3cqZAo" node="2bng37t0hfg" resolve="currentLanguage" />
+                  <node concept="2OqwBi" id="6tcu$9ntNFS" role="3uHU7w">
+                    <node concept="37vLTw" id="4a$qj9s4s2z" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2bng37t0hfg" resolve="currentLanguage" />
+                    </node>
+                    <node concept="2Iv5rx" id="6tcu$9ntNFT" role="2OqNvi" />
                   </node>
                   <node concept="Xl_RD" id="4a$qj9s4rLt" role="3uHU7B">
                     <property role="Xl_RC" value="setting current language to " />

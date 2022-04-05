@@ -3051,7 +3051,7 @@
               </node>
             </node>
             <node concept="liA8E" id="56jrqO8IDvC" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="10M0yZ" id="56jrqO8ISwL" role="37wK5m">
                 <ref role="3cqZAo" to="ahli:56jrqO8IRr4" resolve="COMPILER_OPTION_STD_C99" />
                 <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
@@ -3133,7 +3133,7 @@
               </node>
             </node>
             <node concept="liA8E" id="56jrqO8KkSo" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="10M0yZ" id="56jrqO8Klg3" role="37wK5m">
                 <ref role="3cqZAo" to="ahli:56jrqO8IRFM" resolve="COMPILER_OPTION_STD_C90" />
                 <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
@@ -4414,7 +4414,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="56jrqO8IL8A" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String):java.lang.String" resolve="replaceFirst" />
+                    <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String)" resolve="replaceFirst" />
                     <node concept="10M0yZ" id="56jrqO8ISZd" role="37wK5m">
                       <ref role="3cqZAo" to="ahli:56jrqO8IRr4" resolve="COMPILER_OPTION_STD_C99" />
                       <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />
@@ -4491,7 +4491,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="56jrqO8Kk_J" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String):java.lang.String" resolve="replaceFirst" />
+                      <ref role="37wK5l" to="wyt6:~String.replaceFirst(java.lang.String,java.lang.String)" resolve="replaceFirst" />
                       <node concept="10M0yZ" id="56jrqO8KOxN" role="37wK5m">
                         <ref role="3cqZAo" to="ahli:56jrqO8IRFM" resolve="COMPILER_OPTION_STD_C90" />
                         <ref role="1PxDUh" to="ahli:5Dpaey8tcmW" resolve="DesktopPlatformHelper" />

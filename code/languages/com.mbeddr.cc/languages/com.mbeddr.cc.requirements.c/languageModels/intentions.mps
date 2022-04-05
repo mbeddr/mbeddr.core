@@ -208,6 +208,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -1117,8 +1118,11 @@
                                         <node concept="Xl_RD" id="5TykNF$u_Az" role="3uHU7B">
                                           <property role="Xl_RC" value="registering debuggable " />
                                         </node>
-                                        <node concept="37vLTw" id="5TykNF$uABm" role="3uHU7w">
-                                          <ref role="3cqZAo" node="3$DH87aK9L_" resolve="debuggable" />
+                                        <node concept="2OqwBi" id="6tcu$9nt9wv" role="3uHU7w">
+                                          <node concept="37vLTw" id="5TykNF$uABm" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="3$DH87aK9L_" resolve="debuggable" />
+                                          </node>
+                                          <node concept="2Iv5rx" id="6tcu$9nt9ww" role="2OqNvi" />
                                         </node>
                                       </node>
                                       <node concept="Xl_RD" id="4rj4sdBt5aK" role="3uHU7w">

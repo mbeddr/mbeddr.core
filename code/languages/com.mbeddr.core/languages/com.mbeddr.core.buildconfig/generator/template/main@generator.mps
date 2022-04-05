@@ -10,7 +10,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="10" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -6278,7 +6278,7 @@
                           <node concept="3clFbF" id="7Aba6ByHl7h" role="3cqZAp">
                             <node concept="37vLTI" id="7Aba6ByHGU7" role="3clFbG">
                               <node concept="2YIFZM" id="1EH1Mz65aR2" role="37vLTx">
-                                <ref role="37wK5l" to="btm1:~StringUtils.capitalize(java.lang.String):java.lang.String" resolve="capitalize" />
+                                <ref role="37wK5l" to="btm1:~StringUtils.capitalize(java.lang.String)" resolve="capitalize" />
                                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                                 <node concept="2OqwBi" id="1EH1Mz65aR3" role="37wK5m">
                                   <node concept="Jnkvi" id="1EH1Mz65aR4" role="2Oq$k0">

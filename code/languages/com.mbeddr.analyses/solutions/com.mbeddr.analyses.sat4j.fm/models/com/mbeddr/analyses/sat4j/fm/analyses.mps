@@ -300,6 +300,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -3505,8 +3506,11 @@
                   </node>
                 </node>
                 <node concept="3cpWs3" id="tSjOfAiL8p" role="37wK5m">
-                  <node concept="2GrUjf" id="tSjOfAiT4u" role="3uHU7w">
-                    <ref role="2Gs0qQ" node="tSjOfAiJ0e" resolve="sf" />
+                  <node concept="2OqwBi" id="6tcu$9ntDl3" role="3uHU7w">
+                    <node concept="2GrUjf" id="tSjOfAiT4u" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="tSjOfAiJ0e" resolve="sf" />
+                    </node>
+                    <node concept="2Iv5rx" id="6tcu$9ntDl4" role="2OqNvi" />
                   </node>
                   <node concept="Xl_RD" id="tSjOfAiL8v" role="3uHU7B">
                     <property role="Xl_RC" value="Selected feature: " />
@@ -3623,8 +3627,11 @@
                   </node>
                 </node>
                 <node concept="3cpWs3" id="tSjOfAjPts" role="37wK5m">
-                  <node concept="2GrUjf" id="tSjOfAjPtt" role="3uHU7w">
-                    <ref role="2Gs0qQ" node="tSjOfAjPth" resolve="sf" />
+                  <node concept="2OqwBi" id="6tcu$9ntDpk" role="3uHU7w">
+                    <node concept="2GrUjf" id="tSjOfAjPtt" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="tSjOfAjPth" resolve="sf" />
+                    </node>
+                    <node concept="2Iv5rx" id="6tcu$9ntDpl" role="2OqNvi" />
                   </node>
                   <node concept="Xl_RD" id="tSjOfAjPtu" role="3uHU7B">
                     <property role="Xl_RC" value="Not selected feature: " />

@@ -76,6 +76,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -164,8 +165,11 @@
                 <node concept="Xl_RD" id="6W8yq39oSPX" role="3uHU7B">
                   <property role="Xl_RC" value="must be exported (because " />
                 </node>
-                <node concept="37vLTw" id="6W8yq39oSTQ" role="3uHU7w">
-                  <ref role="3cqZAo" node="6W8yq39oSO4" resolve="c" />
+                <node concept="2OqwBi" id="6tcu$9ntbap" role="3uHU7w">
+                  <node concept="37vLTw" id="6W8yq39oSTQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6W8yq39oSO4" resolve="c" />
+                  </node>
+                  <node concept="2Iv5rx" id="6tcu$9ntbaq" role="2OqNvi" />
                 </node>
               </node>
             </node>

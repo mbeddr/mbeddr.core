@@ -332,6 +332,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -830,8 +831,11 @@
               <node concept="3clFbS" id="$GrneEDSNp" role="9aQI4">
                 <node concept="2MkqsV" id="$GrneEDSvN" role="3cqZAp">
                   <node concept="3cpWs3" id="$GrneEDSvR" role="2MkJ7o">
-                    <node concept="2X3wrD" id="$GrneEDSvS" role="3uHU7w">
-                      <ref role="2X3Bk0" node="fwMInzpJm4" resolve="pt" />
+                    <node concept="2OqwBi" id="6tcu$9ntbto" role="3uHU7w">
+                      <node concept="2X3wrD" id="$GrneEDSvS" role="2Oq$k0">
+                        <ref role="2X3Bk0" node="fwMInzpJm4" resolve="pt" />
+                      </node>
+                      <node concept="2Iv5rx" id="6tcu$9ntbtp" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="$GrneEDSvT" role="3uHU7B">
                       <property role="Xl_RC" value="PT was not a PointerType or ArrayType" />

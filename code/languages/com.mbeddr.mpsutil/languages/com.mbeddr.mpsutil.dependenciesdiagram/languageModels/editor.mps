@@ -374,6 +374,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -1175,7 +1176,10 @@
                     <node concept="3clFbS" id="4AXwGoMwaoz" role="9aQI4">
                       <node concept="3cpWs6" id="4AXwGoMwaxd" role="3cqZAp">
                         <node concept="3cpWs3" id="4AXwGoMtJGM" role="3cqZAk">
-                          <node concept="37u81S" id="4AXwGoMtJKp" role="3uHU7w" />
+                          <node concept="2OqwBi" id="6tcu$9ntuwB" role="3uHU7w">
+                            <node concept="37u81S" id="4AXwGoMtJKp" role="2Oq$k0" />
+                            <node concept="2Iv5rx" id="6tcu$9ntuwC" role="2OqNvi" />
+                          </node>
                           <node concept="Xl_RD" id="4AXwGoMtJiF" role="3uHU7B">
                             <property role="Xl_RC" value="__unresolved__" />
                           </node>

@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports>
@@ -4410,15 +4410,15 @@
                                     <ref role="3cqZAo" node="667l08zIORg" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="667l08zIOR3" role="2OqNvi">
-                                    <ref role="37wK5l" to="1qo3:~Pair.getRight():java.lang.Object" resolve="getRight" />
+                                    <ref role="37wK5l" to="1qo3:~Pair.getRight()" resolve="getRight" />
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="667l08zIOR4" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="667l08zIOR5" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                               </node>
                             </node>
                           </node>
@@ -4430,7 +4430,7 @@
                                 <ref role="3cqZAo" node="667l08zIOQX" resolve="val" />
                               </node>
                               <node concept="liA8E" id="667l08zIORa" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                                 <node concept="Xl_RD" id="667l08zIORb" role="37wK5m">
                                   <property role="Xl_RC" value="infinity" />
                                 </node>
@@ -4441,7 +4441,7 @@
                                 <ref role="3cqZAo" node="667l08zIOQX" resolve="val" />
                               </node>
                               <node concept="liA8E" id="667l08zIORe" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                                 <node concept="Xl_RD" id="667l08zIORf" role="37wK5m">
                                   <property role="Xl_RC" value="nan" />
                                 </node>

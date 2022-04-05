@@ -14,7 +14,9 @@
         </modelRoot>
       </models>
       <facets>
-        <facet type="java" />
+        <facet type="java">
+          <classes generated="true" path="${module}/generator/classes_gen" />
+        </facet>
         <facet type="java" />
         <facet type="java" />
         <facet type="java" />

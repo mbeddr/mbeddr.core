@@ -5,7 +5,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -363,6 +363,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -4044,8 +4045,11 @@
               <property role="Xl_RC" value="ModelsGenerator.createReplacementNode" />
             </node>
             <node concept="3cpWs3" id="KiQtdg7mVg" role="37wK5m">
-              <node concept="37vLTw" id="KiQtdg7xdm" role="3uHU7w">
-                <ref role="3cqZAo" node="2ksdigwm$kk" resolve="crtSubconcept" />
+              <node concept="2OqwBi" id="6tcu$9ntNnW" role="3uHU7w">
+                <node concept="37vLTw" id="KiQtdg7xdm" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2ksdigwm$kk" resolve="crtSubconcept" />
+                </node>
+                <node concept="2Iv5rx" id="6tcu$9ntNnX" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="KiQtdg7lDi" role="3uHU7B">
                 <property role="Xl_RC" value="crt chosen subconcept=" />
