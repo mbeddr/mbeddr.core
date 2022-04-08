@@ -128,18 +128,18 @@
             </node>
             <node concept="2OqwBi" id="5pm8$Ze$wPC" role="33vP2m">
               <node concept="2YIFZM" id="5pm8$Ze$wPD" role="2Oq$k0">
-                <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...):java.nio.file.Path" resolve="get" />
+                <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                 <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
                 <node concept="Xl_RD" id="5pm8$Ze$wPE" role="37wK5m">
                   <property role="Xl_RC" value="/var/tmp/testGen" />
                 </node>
               </node>
               <node concept="liA8E" id="5pm8$Ze$wPF" role="2OqNvi">
-                <ref role="37wK5l" to="eoo2:~Path.resolve(java.nio.file.Path):java.nio.file.Path" resolve="resolve" />
+                <ref role="37wK5l" to="eoo2:~Path.resolve(java.nio.file.Path)" resolve="resolve" />
                 <node concept="2OqwBi" id="5pm8$Ze$wPG" role="37wK5m">
                   <node concept="2oa3cY" id="5pm8$Ze$wPH" role="2Oq$k0" />
                   <node concept="liA8E" id="5pm8$Ze$wPI" role="2OqNvi">
-                    <ref role="37wK5l" to="eoo2:~Path.getFileName():java.nio.file.Path" resolve="getFileName" />
+                    <ref role="37wK5l" to="eoo2:~Path.getFileName()" resolve="getFileName" />
                   </node>
                 </node>
               </node>

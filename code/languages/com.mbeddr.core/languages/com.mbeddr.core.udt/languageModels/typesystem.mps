@@ -251,6 +251,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -2945,8 +2946,11 @@
       </node>
       <node concept="2Mj0R9" id="11FSXkDF8Sb" role="3cqZAp">
         <node concept="3cpWs3" id="11FSXkDGqNa" role="2MkJ7o">
-          <node concept="37vLTw" id="11FSXkDIdtQ" role="3uHU7w">
-            <ref role="3cqZAo" node="11FSXkDIcDe" resolve="targetType" />
+          <node concept="2OqwBi" id="6tcu$9ntiRJ" role="3uHU7w">
+            <node concept="37vLTw" id="11FSXkDIdtQ" role="2Oq$k0">
+              <ref role="3cqZAo" node="11FSXkDIcDe" resolve="targetType" />
+            </node>
+            <node concept="2Iv5rx" id="6tcu$9ntiRK" role="2OqNvi" />
           </node>
           <node concept="Xl_RD" id="11FSXkDFioo" role="3uHU7B">
             <property role="Xl_RC" value="enum type expected but was " />

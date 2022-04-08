@@ -60,7 +60,7 @@
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1224573963862" name="jetbrains.mps.baseLanguage.structure.EnumValuesExpression" flags="nn" index="uiWXb">
         <reference id="1224573974191" name="enumClass" index="uiZuM" />
       </concept>
@@ -430,10 +430,10 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -8917,7 +8917,7 @@
                           </node>
                         </node>
                         <node concept="2pIpSj" id="31LBkEcTzid" role="2pJxcM">
-                          <ref role="2pIpSl" to="yq40:5sJgLFR$y$3" resolve="index" />
+                          <ref role="2pIpSl" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
                           <node concept="36biLy" id="31LBkEcTzie" role="28nt2d">
                             <node concept="37vLTw" id="31LBkEcTzif" role="36biLW">
                               <ref role="3cqZAo" node="31LBkEcTzh0" resolve="index" />
@@ -9289,7 +9289,7 @@
                         </node>
                       </node>
                       <node concept="2pIpSj" id="2ziHWxlhfUj" role="2pJxcM">
-                        <ref role="2pIpSl" to="yq40:5sJgLFR$y$3" resolve="index" />
+                        <ref role="2pIpSl" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
                         <node concept="36biLy" id="2ziHWxlhfUk" role="28nt2d">
                           <node concept="37vLTw" id="2ziHWxlhsOx" role="36biLW">
                             <ref role="3cqZAo" node="2ziHWxlhicm" resolve="index" />

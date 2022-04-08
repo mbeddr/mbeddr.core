@@ -103,12 +103,10 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
-        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -120,6 +118,12 @@
         <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
         <property id="4297162197621031140" name="inplace" index="1wOHq$" />
         <property id="6535001758416941941" name="createStaticRefs" index="3Ej$Sc" />
+      </concept>
+      <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
+        <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
+        <property id="8137134783396676838" name="extracted" index="1HemKv" />
+        <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
+        <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
@@ -181,7 +185,6 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="15647c29-db71-4cfd-8aee-149f84bd12f4" />
         <property role="TrG5h" value="test.ts.core.performance" />
-        <property role="2GAjPV" value="false" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="398BVA" id="7eF9rfAuutM" role="3LF7KH">
           <ref role="398BVh" node="2coa6XmoCi3" resolve="mbeddr.core" />
@@ -197,31 +200,26 @@
         </node>
         <node concept="1SiIV0" id="7F2vPZ4Ymqe" role="3bR37C">
           <node concept="3bR9La" id="7F2vPZ4Ymqf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
         <node concept="1SiIV0" id="2coa6XmoCHo" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmoCHp" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:2bBLuwR9Jux" resolve="com.mbeddr.core.cinterpreter" />
           </node>
         </node>
         <node concept="1SiIV0" id="6RmoJr9tem7" role="3bR37C">
           <node concept="3bR9La" id="6RmoJr9tem8" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
           </node>
         </node>
         <node concept="1SiIV0" id="4yevF$Uc7as" role="3bR37C">
           <node concept="3bR9La" id="4yevF$Uc7at" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="al5i:5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
         <node concept="1SiIV0" id="6i2LY81z1q3" role="3bR37C">
           <node concept="3bR9La" id="6i2LY81z1q4" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:7uZw0yZ43JW" resolve="com.mbeddr.core.util" />
           </node>
         </node>
@@ -243,20 +241,39 @@
         </node>
         <node concept="1SiIV0" id="44TucI3gCId" role="3bR37C">
           <node concept="3bR9La" id="44TucI3gCIe" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:6vuuYkaSA$9" resolve="com.mbeddr.core.statements.interpreter" />
           </node>
         </node>
         <node concept="1SiIV0" id="44TucI3gCIf" role="3bR37C">
           <node concept="3bR9La" id="44TucI3gCIg" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:6vuuYkaSA$h" resolve="com.mbeddr.core.util.interpreter" />
           </node>
         </node>
         <node concept="1SiIV0" id="44TucI3gCIh" role="3bR37C">
           <node concept="3bR9La" id="44TucI3gCIi" role="1SiIV1">
-            <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="p6ld:6vuuYkaSA$x" resolve="com.mbeddr.core.expressions.interpreter" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3rhtAy_G1F4" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3rhtAy_G1F5" role="1HemKq">
+            <node concept="398BVA" id="3rhtAy_G1EM" role="3LXTmr">
+              <ref role="398BVh" node="2coa6XmoCi3" resolve="mbeddr.core" />
+              <node concept="2Ry0Ak" id="3rhtAy_G1EN" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="3rhtAy_G1EO" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.ts.core.performance" />
+                  <node concept="2Ry0Ak" id="3rhtAy_G1EP" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3rhtAy_G1F6" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>

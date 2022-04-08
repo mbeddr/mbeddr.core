@@ -232,6 +232,7 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -548,7 +549,10 @@
                     <node concept="Xl_RD" id="1WO2x6Zt9KO" role="3uHU7w">
                       <property role="Xl_RC" value=" (test)" />
                     </node>
-                    <node concept="1NM5Ph" id="1WO2x6Zt9KQ" role="3uHU7B" />
+                    <node concept="2OqwBi" id="6tcu$9ntj8B" role="3uHU7B">
+                      <node concept="1NM5Ph" id="1WO2x6Zt9KQ" role="2Oq$k0" />
+                      <node concept="2Iv5rx" id="6tcu$9ntj8C" role="2OqNvi" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1301,7 +1305,10 @@
               <node concept="Xl_RD" id="3Q2hMLtQ6wc" role="3uHU7w">
                 <property role="Xl_RC" value=" (test)" />
               </node>
-              <node concept="1WAUZh" id="3Q2hMLtQ6we" role="3uHU7B" />
+              <node concept="2OqwBi" id="6tcu$9ntj8L" role="3uHU7B">
+                <node concept="1WAUZh" id="3Q2hMLtQ6we" role="2Oq$k0" />
+                <node concept="2Iv5rx" id="6tcu$9ntj8M" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>

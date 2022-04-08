@@ -621,7 +621,6 @@
         <child id="4717906927461726642" name="validEnd" index="3vNarC" />
         <child id="4717906927461726626" name="validStart" index="3vNarS" />
       </concept>
-      <concept id="2630243574828768918" name="de.itemis.mps.editor.diagram.structure.ShapeNodeExpression" flags="ng" index="1qV9Se" />
       <concept id="4717906927461703453" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_ValidStart" flags="ig" index="3vNc17" />
       <concept id="4717906927461703977" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_ValidEnd" flags="ig" index="3vNfTN" />
       <concept id="3454709602156468860" name="de.itemis.mps.editor.diagram.structure.ShapeParameterDeclaration" flags="ng" index="1xmO9C">
@@ -5018,7 +5017,7 @@
         <ref role="2xQOue" node="2HR3cafXJXP" resolve="ComponentInstanceShape" />
         <node concept="2OqwBi" id="4IDnpfceYH_" role="1xbcaF">
           <node concept="2OqwBi" id="4IDnpfceTHc" role="2Oq$k0">
-            <node concept="1qV9Se" id="4IDnpfceTBW" role="2Oq$k0" />
+            <node concept="1Pxb5l" id="4WN948eQHB4" role="2Oq$k0" />
             <node concept="2qgKlT" id="2IZ2bWs1a3J" role="2OqNvi">
               <ref role="37wK5l" to="eup9:7nJums3A_gz" resolve="getInputPorts" />
             </node>
@@ -5027,7 +5026,7 @@
         </node>
         <node concept="2OqwBi" id="4IDnpfceZwo" role="1xbcaF">
           <node concept="2OqwBi" id="4IDnpfceZwq" role="2Oq$k0">
-            <node concept="1qV9Se" id="4IDnpfceZwr" role="2Oq$k0" />
+            <node concept="1Pxb5l" id="4WN948eQJmW" role="2Oq$k0" />
             <node concept="2qgKlT" id="2IZ2bWs1aH6" role="2OqNvi">
               <ref role="37wK5l" to="eup9:7nJums3AVys" resolve="getOutputPorts" />
             </node>
@@ -5037,7 +5036,7 @@
         <node concept="3fqX7Q" id="3diMC1cUxxO" role="1xbcaF">
           <node concept="2OqwBi" id="3diMC1cUxxP" role="3fr31v">
             <node concept="2OqwBi" id="3diMC1cUxxQ" role="2Oq$k0">
-              <node concept="1qV9Se" id="3diMC1cUxxR" role="2Oq$k0" />
+              <node concept="1Pxb5l" id="4WN948eTz0i" role="2Oq$k0" />
               <node concept="3TrEf2" id="3diMC1cUxxS" role="2OqNvi">
                 <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
               </node>

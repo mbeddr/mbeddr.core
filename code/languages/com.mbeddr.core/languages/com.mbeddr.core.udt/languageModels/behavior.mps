@@ -281,6 +281,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -2406,8 +2407,11 @@
                       <node concept="2xdQw9" id="2Fugwv5Q_Ik" role="3cqZAp">
                         <property role="2xdLsb" value="gZ5fh_4/error" />
                         <node concept="3cpWs3" id="61lw97FuqDO" role="9lYJi">
-                          <node concept="2GrUjf" id="61lw97FuqDR" role="3uHU7w">
-                            <ref role="2Gs0qQ" node="61lw97FupE4" resolve="t" />
+                          <node concept="2OqwBi" id="6tcu$9ntiEL" role="3uHU7w">
+                            <node concept="2GrUjf" id="61lw97FuqDR" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="61lw97FupE4" resolve="t" />
+                            </node>
+                            <node concept="2Iv5rx" id="6tcu$9ntiEM" role="2OqNvi" />
                           </node>
                           <node concept="Xl_RD" id="61lw97FuqDv" role="3uHU7B">
                             <property role="Xl_RC" value="Could not calculate size for " />

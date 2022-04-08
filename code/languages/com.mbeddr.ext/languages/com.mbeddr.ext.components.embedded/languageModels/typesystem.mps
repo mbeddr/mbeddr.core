@@ -133,6 +133,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -272,13 +273,16 @@
                   <node concept="Xl_RD" id="3F9kUGaywfi" role="3uHU7B">
                     <property role="Xl_RC" value="cannot bind the interrupt vector " />
                   </node>
-                  <node concept="2OqwBi" id="3F9kUGayxYN" role="3uHU7w">
-                    <node concept="1YBJjd" id="3F9kUGayxHk" role="2Oq$k0">
-                      <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
+                  <node concept="2OqwBi" id="6tcu$9ntqo_" role="3uHU7w">
+                    <node concept="2OqwBi" id="3F9kUGayxYN" role="2Oq$k0">
+                      <node concept="1YBJjd" id="3F9kUGayxHk" role="2Oq$k0">
+                        <ref role="1YBMHb" node="16gyj4ArNdH" resolve="interruptRunnableMapping" />
+                      </node>
+                      <node concept="3TrEf2" id="3F9kUGayzfh" role="2OqNvi">
+                        <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="3F9kUGayzfh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="bs45:7X9xw2qH9LO" resolve="interrupt" />
-                    </node>
+                    <node concept="2Iv5rx" id="6tcu$9ntqoA" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="3F9kUGaywfk" role="3uHU7w">
@@ -768,8 +772,11 @@
                                       <node concept="Xl_RD" id="3ClwVOArcDX" role="3uHU7B">
                                         <property role="Xl_RC" value="cannot use this combination of implementation modules\nbecause they use instance configurations that bind the interrupt vector " />
                                       </node>
-                                      <node concept="37vLTw" id="3ClwVOArcDY" role="3uHU7w">
-                                        <ref role="3cqZAo" node="3F9kUGaw46k" resolve="interrupt" />
+                                      <node concept="2OqwBi" id="6tcu$9ntquj" role="3uHU7w">
+                                        <node concept="37vLTw" id="3ClwVOArcDY" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3F9kUGaw46k" resolve="interrupt" />
+                                        </node>
+                                        <node concept="2Iv5rx" id="6tcu$9ntquk" role="2OqNvi" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="3ClwVOArcDZ" role="3uHU7w">
@@ -947,8 +954,11 @@
                                       <node concept="Xl_RD" id="3ClwVOAo5Cd" role="3uHU7B">
                                         <property role="Xl_RC" value="cannot use this combination of instance configurations\nbecause they bind the interrupt vector " />
                                       </node>
-                                      <node concept="37vLTw" id="3ClwVOAo5Ce" role="3uHU7w">
-                                        <ref role="3cqZAo" node="3ClwVOAo5CC" resolve="interrupt" />
+                                      <node concept="2OqwBi" id="6tcu$9ntqzR" role="3uHU7w">
+                                        <node concept="37vLTw" id="3ClwVOAo5Ce" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3ClwVOAo5CC" resolve="interrupt" />
+                                        </node>
+                                        <node concept="2Iv5rx" id="6tcu$9ntqzS" role="2OqNvi" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="3ClwVOAr8Kl" role="3uHU7w">

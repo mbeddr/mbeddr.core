@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
   </languages>
@@ -1629,7 +1629,7 @@
                               <node concept="3clFbF" id="6lZZfFPj2in" role="3cqZAp">
                                 <node concept="2YIFZM" id="6lZZfFPj2io" role="3clFbG">
                                   <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
                                   <node concept="10Nm6u" id="6lZZfFPj2ip" role="37wK5m" />
                                   <node concept="Xl_RD" id="6lZZfFPj2iq" role="37wK5m">
                                     <property role="Xl_RC" value="Fault location information is not available." />
@@ -1686,7 +1686,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="6lZZfFPj2iI" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                            <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence)" resolve="contentEquals" />
                             <node concept="Xl_RD" id="6lZZfFPj2iJ" role="37wK5m">
                               <property role="Xl_RC" value="Localize error" />
                             </node>
@@ -3765,7 +3765,7 @@
                 <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
               </node>
               <node concept="liA8E" id="6lZZfFPeArP" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JTable.getSelectedRow():int" resolve="getSelectedRow" />
+                <ref role="37wK5l" to="dxuu:~JTable.getSelectedRow()" resolve="getSelectedRow" />
               </node>
             </node>
           </node>
@@ -3781,7 +3781,7 @@
                 <ref role="3cqZAo" to="vbi4:JsaLOcnA09" resolve="analysesResultsTable" />
               </node>
               <node concept="liA8E" id="6lZZfFPeArV" role="2OqNvi">
-                <ref role="37wK5l" to="v4mk:~JXTreeTable.getPathForRow(int):javax.swing.tree.TreePath" resolve="getPathForRow" />
+                <ref role="37wK5l" to="v4mk:~JXTreeTable.getPathForRow(int)" resolve="getPathForRow" />
                 <node concept="37vLTw" id="6lZZfFPeArW" role="37wK5m">
                   <ref role="3cqZAo" node="6lZZfFPeArL" resolve="selectedRow" />
                 </node>
@@ -5174,7 +5174,7 @@
               <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
             </node>
             <node concept="liA8E" id="RwRvu6Uinq" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
               <node concept="2ShNRf" id="RwRvu6Uinr" role="37wK5m">
                 <node concept="1pGfFk" id="RwRvu6Uins" role="2ShVmc">
                   <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
@@ -5192,7 +5192,7 @@
               <ref role="3cqZAo" node="7xDyb4Plki0" resolve="advancedPanel" />
             </node>
             <node concept="liA8E" id="RwRvu6Uinx" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
               <node concept="37vLTw" id="RwRvu6Utjq" role="37wK5m">
                 <ref role="3cqZAo" node="RwRvu6TWxd" resolve="objectBitsSpinner" />
               </node>
@@ -5205,7 +5205,7 @@
               <ref role="3cqZAo" node="RwRvu6TWxd" resolve="objectBitsSpinner" />
             </node>
             <node concept="liA8E" id="RwRvu6UinA" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String)" resolve="setToolTipText" />
               <node concept="Xl_RD" id="RwRvu6UinD" role="37wK5m">
                 <property role="Xl_RC" value="The --object-bits argument of CBMC. Number of bits used for object addresses." />
               </node>
@@ -6457,7 +6457,7 @@
               <ref role="3cqZAo" node="RwRvu6TWxd" resolve="objectBitsSpinner" />
             </node>
             <node concept="liA8E" id="RwRvu6VsAp" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JSpinner.updateUI():void" resolve="updateUI" />
+              <ref role="37wK5l" to="dxuu:~JSpinner.updateUI()" resolve="updateUI" />
             </node>
           </node>
         </node>
@@ -9704,7 +9704,7 @@
               <ref role="3cqZAo" node="RwRvu6SpnW" resolve="objectBitsModel" />
             </node>
             <node concept="liA8E" id="RwRvu6SvaV" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.setValue(java.lang.Object):void" resolve="setValue" />
+              <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.setValue(java.lang.Object)" resolve="setValue" />
               <node concept="37vLTw" id="RwRvu6SvaW" role="37wK5m">
                 <ref role="3cqZAo" node="RwRvu6SvaZ" resolve="objectBits" />
               </node>
@@ -9736,7 +9736,7 @@
                 <ref role="3cqZAo" node="RwRvu6SpnW" resolve="objectBitsModel" />
               </node>
               <node concept="liA8E" id="RwRvu6SvaM" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.getValue():java.lang.Object" resolve="getValue" />
+                <ref role="37wK5l" to="dxuu:~SpinnerNumberModel.getValue()" resolve="getValue" />
               </node>
             </node>
           </node>

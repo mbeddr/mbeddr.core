@@ -1865,7 +1865,7 @@
               <ref role="3cqZAo" node="64pi6e6bWOE" resolve="m" />
             </node>
             <node concept="liA8E" id="1zVqtvgsvFx" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -2566,7 +2566,6 @@
     <node concept="2tJIrI" id="7B3zdKLp6Ut" role="jymVt" />
     <node concept="3tYpMH" id="7B3zdKLp6Uu" role="jymVt">
       <property role="TrG5h" value="isRerunnable" />
-      <property role="3tYpME" value="true" />
       <ref role="25KYV2" to="slm6:1JWcQ2VeWIs" resolve="isRerunnable" />
       <node concept="3Tm1VV" id="7B3zdKLp6Uv" role="1B3o_S" />
       <node concept="10P_77" id="7B3zdKLp6Uw" role="1tU5fm" />

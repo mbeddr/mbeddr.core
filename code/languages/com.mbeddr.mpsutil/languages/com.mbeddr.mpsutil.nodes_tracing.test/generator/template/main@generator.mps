@@ -207,6 +207,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -554,8 +555,11 @@
                               <node concept="Xl_RD" id="7UNoqC67QFO" role="3uHU7B">
                                 <property role="Xl_RC" value="NODES TRACING DEBUG: node searched: '" />
                               </node>
-                              <node concept="2GrUjf" id="7UNoqC67UK_" role="3uHU7w">
-                                <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
+                              <node concept="2OqwBi" id="6tcu$9ntx8O" role="3uHU7w">
+                                <node concept="2GrUjf" id="7UNoqC67UK_" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="7HmzdkqUAiG" resolve="nwa" />
+                                </node>
+                                <node concept="2Iv5rx" id="6tcu$9ntx8P" role="2OqNvi" />
                               </node>
                             </node>
                           </node>

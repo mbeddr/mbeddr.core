@@ -214,7 +214,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.placeholderTextList.testlang/test.com.mbeddr.mpsutil.placeholderTextList.testlang.mpl" folder="staging.placeholderTextList" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.placeholderTextList/test.com.mbeddr.mpsutil.placeholderTextList.msd" folder="staging.placeholderTextList" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.smodule/test.com.mbeddr.mpsutil.smodule.msd" folder="staging.smodule" />
-      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.targetchooser/test.com.mbeddr.mpsutil.targetchooser.msd" folder="targetchooser" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope.negative/test.com.mbeddr.mpsutil.testScope.negative.msd" folder="stable.testScope" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.testScope/test.com.mbeddr.mpsutil.testScope.msd" folder="stable.testScope" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.xml.fix.support/test.com.mbeddr.mpsutil.xml.fix.support.mpl" folder="stable.xml.fix" />

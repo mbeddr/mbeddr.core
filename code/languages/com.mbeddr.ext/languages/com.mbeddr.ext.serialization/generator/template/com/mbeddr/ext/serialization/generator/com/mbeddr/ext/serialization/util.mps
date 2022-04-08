@@ -163,6 +163,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -380,8 +381,11 @@
                   <node concept="1pGfFk" id="1LleiTPYfum" role="2ShVmc">
                     <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="1LleiTPYfXI" role="37wK5m">
-                      <node concept="37vLTw" id="1LleiTPYfZ$" role="3uHU7w">
-                        <ref role="3cqZAo" node="1LleiTPYda0" resolve="msgType" />
+                      <node concept="2OqwBi" id="6tcu$9nttfQ" role="3uHU7w">
+                        <node concept="37vLTw" id="1LleiTPYfZ$" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1LleiTPYda0" resolve="msgType" />
+                        </node>
+                        <node concept="2Iv5rx" id="6tcu$9nttfR" role="2OqNvi" />
                       </node>
                       <node concept="Xl_RD" id="1LleiTPYfvj" role="3uHU7B">
                         <property role="Xl_RC" value="unexpected type: " />
@@ -1281,8 +1285,11 @@
                   <node concept="1pGfFk" id="7op4RkOV$6n" role="2ShVmc">
                     <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                     <node concept="3cpWs3" id="7op4RkOV$6o" role="37wK5m">
-                      <node concept="37vLTw" id="7op4RkOV$6p" role="3uHU7w">
-                        <ref role="3cqZAo" node="7op4RkOV$5H" resolve="msgType" />
+                      <node concept="2OqwBi" id="6tcu$9nttgd" role="3uHU7w">
+                        <node concept="37vLTw" id="7op4RkOV$6p" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7op4RkOV$5H" resolve="msgType" />
+                        </node>
+                        <node concept="2Iv5rx" id="6tcu$9nttge" role="2OqNvi" />
                       </node>
                       <node concept="Xl_RD" id="7op4RkOV$6q" role="3uHU7B">
                         <property role="Xl_RC" value="unexpected type: " />

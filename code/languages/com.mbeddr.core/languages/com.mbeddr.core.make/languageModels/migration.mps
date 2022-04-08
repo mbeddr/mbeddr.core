@@ -530,7 +530,7 @@
               <ref role="3cqZAo" node="1zVqtvglW1a" resolve="m" />
             </node>
             <node concept="liA8E" id="1zVqtvglWm7" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -846,7 +846,7 @@
               <ref role="3cqZAo" node="4QnOXkA8kBA" resolve="m" />
             </node>
             <node concept="liA8E" id="7BqFpRybuXk" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -1133,7 +1133,7 @@
               <ref role="3cqZAo" node="64pi6e6EVdm" resolve="m" />
             </node>
             <node concept="liA8E" id="64pi6e6EZmo" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -1691,7 +1691,7 @@
               <ref role="3cqZAo" node="7EZ1SpnTFxj" resolve="m" />
             </node>
             <node concept="liA8E" id="7EZ1SpnTHT3" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>
@@ -2484,7 +2484,7 @@
               <ref role="3cqZAo" node="1zVqtvgstdz" resolve="m" />
             </node>
             <node concept="liA8E" id="1zVqtvgsvFx" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>

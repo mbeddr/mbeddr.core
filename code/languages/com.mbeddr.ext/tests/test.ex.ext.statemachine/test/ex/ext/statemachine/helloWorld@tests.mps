@@ -55,8 +55,8 @@
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
-        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
-        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
@@ -172,7 +172,7 @@
       </concept>
       <concept id="1320626622328116695" name="com.mbeddr.ext.statemachines.structure.State2Int" flags="ng" index="2iAlGX" />
       <concept id="1320626622328433963" name="com.mbeddr.ext.statemachines.structure.Int2State" flags="ng" index="2iBaf1" />
-      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerSelfStatement" flags="ng" index="2tqLt1">
+      <concept id="1582169519237884298" name="com.mbeddr.ext.statemachines.structure.TriggerStatement" flags="ng" index="2tqLt1">
         <reference id="1582169519237884299" name="event" index="2tqLt0" />
       </concept>
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />

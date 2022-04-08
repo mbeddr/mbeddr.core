@@ -15,12 +15,14 @@ buildscript {
 ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
 ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 
-//MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2021.1.+"
+
 
 //MPS version
-ext.mpsMajor = "2021.1"
-ext.mpsBuild = "2021.1.4"
+ext.mpsMajor = "2021.2"
+ext.mpsBuild = "2021.2.5"
+
+//MPS-extensions version
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -119,6 +121,7 @@ subprojects {
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
+            ext.mbeddrBuild = "master"
         }
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform,

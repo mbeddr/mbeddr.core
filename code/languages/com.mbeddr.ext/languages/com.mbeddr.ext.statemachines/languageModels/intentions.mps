@@ -176,6 +176,7 @@
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -1700,7 +1701,10 @@
               <node concept="Xl_RD" id="5xmXWf3e7Y_" role="3uHU7w">
                 <property role="Xl_RC" value="_initial" />
               </node>
-              <node concept="2Sf5sV" id="5xmXWf3e7Yd" role="3uHU7B" />
+              <node concept="2OqwBi" id="6tcu$9nttHp" role="3uHU7B">
+                <node concept="2Sf5sV" id="5xmXWf3e7Yd" role="2Oq$k0" />
+                <node concept="2Iv5rx" id="6tcu$9nttHq" role="2OqNvi" />
+              </node>
             </node>
             <node concept="2OqwBi" id="5xmXWf3e7XJ" role="37vLTJ">
               <node concept="2Sf5sV" id="5xmXWf3e7Xq" role="2Oq$k0" />

@@ -3,7 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allInOne/allInOne.msd" folder="rcp" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allScripts/com.mbeddr.allScripts.msd" folder="build.scripts" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.allScripts/com.mbeddr.allScripts.msd" folder="allScripts" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.dev.build/build.msd" folder="analyses" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" folder="tutorial" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.build/com.mbeddr.build.msd" folder="mbeddr" />
@@ -18,7 +18,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.templates/com.mbeddr.build.templates.msd" folder="templates" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" folder="rcp" />
-      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.core.buildvalidation/test.com.mbeddr.mpsutil.build.msd" folder="build.test" />
     </projectModules>
   </component>
 </project>

@@ -105,8 +105,8 @@
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
-        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
-        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
@@ -119,7 +119,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -2738,10 +2738,10 @@
                     <node concept="2BOciq" id="6kBcLJ2m0wD" role="3Cp1j">
                       <node concept="2BOcij" id="6kBcLJ2mbrY" role="3TlMhJ">
                         <node concept="13Sk8F" id="6kBcLJ2me0d" role="3TlMhJ">
-                          <ref role="13Sk8E" node="6kBcLJ2lj7y" resolve="temp" />
+                          <ref role="13Sk8E" node="6kBcLJ2lj7y" />
                         </node>
                         <node concept="13Sk8F" id="6kBcLJ2m8Lz" role="3TlMhI">
-                          <ref role="13Sk8E" node="6kBcLJ2lj7y" resolve="temp" />
+                          <ref role="13Sk8E" node="6kBcLJ2lj7y" />
                         </node>
                       </node>
                       <node concept="cgjuI" id="6kBcLJ2m0wu" role="3TlMhI">

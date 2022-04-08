@@ -145,7 +145,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42">
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
@@ -263,11 +263,11 @@
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
-        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
-        <property id="1757699476691236116" name="linkRole" index="2qtEX8" />
+        <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1670,7 +1670,7 @@
                                           </node>
                                         </node>
                                         <node concept="1sne01" id="1BX3Y15RNBO" role="1sne05">
-                                          <ref role="1snh0D" to="yq40:5sJgLFR$y$3" resolve="index" />
+                                          <ref role="1snh0D" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
                                           <node concept="1sne01" id="1BX3Y15RTvd" role="1sne05">
                                             <ref role="1snh0D" to="mj1l:7FQByU3CrD0" resolve="left" />
                                             <node concept="1sh8R2" id="1BX3Y15RXF$" role="1sne05">
@@ -1906,7 +1906,7 @@
                                       </node>
                                     </node>
                                     <node concept="1sne01" id="3DixYWmUPw_" role="1sne05">
-                                      <ref role="1snh0D" to="yq40:5sJgLFR$y$3" resolve="index" />
+                                      <ref role="1snh0D" to="yq40:5sJgLFR$y$3" resolve="indexExpr" />
                                       <node concept="1sne01" id="3DixYWmUPwA" role="1sne05">
                                         <ref role="1snh0D" to="mj1l:7FQByU3CrD0" resolve="left" />
                                         <node concept="1sh8R2" id="3DixYWmUPwB" role="1sne05">

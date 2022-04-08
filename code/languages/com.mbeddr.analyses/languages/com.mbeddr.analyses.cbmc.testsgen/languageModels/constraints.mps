@@ -141,7 +141,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="5UQlnwu2CQ_" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
+                            <ref role="37wK5l" to="mhbf:~SModel.isReadOnly()" resolve="isReadOnly" />
                           </node>
                         </node>
                       </node>

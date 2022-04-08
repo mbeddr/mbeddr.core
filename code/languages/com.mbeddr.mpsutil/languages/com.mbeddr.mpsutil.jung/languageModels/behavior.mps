@@ -236,6 +236,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -340,8 +341,11 @@
                 <node concept="1pGfFk" id="1cocmT_z6Ku" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="1cocmT_z6Kv" role="37wK5m">
-                    <node concept="37vLTw" id="1cocmT_z6Kw" role="3uHU7w">
-                      <ref role="3cqZAo" node="5yCuRHcavn2" resolve="n" />
+                    <node concept="2OqwBi" id="6tcu$9ntwBx" role="3uHU7w">
+                      <node concept="37vLTw" id="1cocmT_z6Kw" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5yCuRHcavn2" resolve="n" />
+                      </node>
+                      <node concept="2Iv5rx" id="6tcu$9ntwBy" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="1cocmT_z6Kx" role="3uHU7B">
                       <property role="Xl_RC" value="to-name was null for edge " />
@@ -365,8 +369,11 @@
                 <node concept="1pGfFk" id="1cocmT_z8$X" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="1cocmT_z8$Y" role="37wK5m">
-                    <node concept="37vLTw" id="1cocmT_z8$Z" role="3uHU7w">
-                      <ref role="3cqZAo" node="5yCuRHcavn2" resolve="n" />
+                    <node concept="2OqwBi" id="6tcu$9ntwBF" role="3uHU7w">
+                      <node concept="37vLTw" id="1cocmT_z8$Z" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5yCuRHcavn2" resolve="n" />
+                      </node>
+                      <node concept="2Iv5rx" id="6tcu$9ntwBG" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="1cocmT_z8_0" role="3uHU7B">
                       <property role="Xl_RC" value="from-name was null for edge " />
@@ -900,8 +907,11 @@
                 <node concept="1pGfFk" id="1cocmT_z2nn" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="3cpWs3" id="1cocmT_z2C6" role="37wK5m">
-                    <node concept="37vLTw" id="1cocmT_z2Cp" role="3uHU7w">
-                      <ref role="3cqZAo" node="5yCuRHcavmD" resolve="n" />
+                    <node concept="2OqwBi" id="6tcu$9ntwCP" role="3uHU7w">
+                      <node concept="37vLTw" id="1cocmT_z2Cp" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5yCuRHcavmD" resolve="n" />
+                      </node>
+                      <node concept="2Iv5rx" id="6tcu$9ntwCQ" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="1cocmT_z2oz" role="3uHU7B">
                       <property role="Xl_RC" value="name was null for node" />

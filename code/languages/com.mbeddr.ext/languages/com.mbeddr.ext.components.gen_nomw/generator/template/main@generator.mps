@@ -12,7 +12,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="896334f3-82ce-427b-bb47-ccd3131864a9" name="com.mbeddr.mpsutil.mappingLabels" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -592,6 +592,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -19271,12 +19272,15 @@
                           <node concept="3clFbS" id="2KCwlldzC25" role="2VODD2">
                             <node concept="3clFbF" id="2KCwlldzIAv" role="3cqZAp">
                               <node concept="3cpWs3" id="2KCwlldzJx4" role="3clFbG">
-                                <node concept="3GCxxT" id="2KCwlldzP4N" role="3uHU7w">
-                                  <property role="3GCxxZ" value="instance" />
-                                  <node concept="30H73N" id="2KCwlldzPhx" role="3GCxxY" />
-                                  <node concept="chp4Y" id="2KCwlldzPHQ" role="cj9EA">
-                                    <ref role="cht4Q" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
+                                <node concept="2OqwBi" id="6tcu$9ntqMq" role="3uHU7w">
+                                  <node concept="3GCxxT" id="2KCwlldzP4N" role="2Oq$k0">
+                                    <property role="3GCxxZ" value="instance" />
+                                    <node concept="30H73N" id="2KCwlldzPhx" role="3GCxxY" />
+                                    <node concept="chp4Y" id="2KCwlldzPHQ" role="cj9EA">
+                                      <ref role="cht4Q" to="v7ag:3TmmsQkDdTQ" resolve="ComponentInstance" />
+                                    </node>
                                   </node>
+                                  <node concept="2Iv5rx" id="6tcu$9ntqMr" role="2OqNvi" />
                                 </node>
                                 <node concept="Xl_RD" id="2KCwlldzIAu" role="3uHU7B">
                                   <property role="Xl_RC" value="INSTANCE: " />
