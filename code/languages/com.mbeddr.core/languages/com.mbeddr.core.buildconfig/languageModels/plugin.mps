@@ -267,6 +267,10 @@
       <concept id="2360002718792622184" name="jetbrains.mps.make.script.structure.OutputResources" flags="nn" index="ElOAg">
         <child id="2360002718792622193" name="resource" index="ElOA9" />
       </concept>
+      <concept id="3668957831723333672" name="jetbrains.mps.make.script.structure.ReportFeedbackStatement" flags="nn" index="1daRAt">
+        <property id="3668957831723333678" name="feedback" index="1daRAr" />
+        <child id="3668957831723336680" name="message" index="1daK9t" />
+      </concept>
       <concept id="187226666892683650" name="jetbrains.mps.make.script.structure.BeginWorkStatement" flags="ng" index="1u1O0F">
         <property id="682890046602602769" name="workName" index="h7ZnK" />
         <child id="187226666892740071" name="ofTotal" index="1u1ALe" />
@@ -288,11 +292,6 @@
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
-        <property id="2034914114981261751" name="severity" index="RRSoG" />
-        <child id="2034914114981261755" name="throwable" index="RRSow" />
-        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -673,18 +672,15 @@
                                             </node>
                                           </node>
                                           <node concept="3clFbS" id="hZOnLD2vwV" role="1zc67A">
-                                            <node concept="RRSsy" id="2MF0N8t5ArR" role="3cqZAp">
-                                              <property role="RRSoG" value="gZ5fh_4/error" />
-                                              <node concept="2OqwBi" id="2MF0N8t5ArS" role="RRSoy">
-                                                <node concept="37vLTw" id="2MF0N8t5ArT" role="2Oq$k0">
+                                            <node concept="1daRAt" id="3$LBSIbf222" role="3cqZAp">
+                                              <property role="1daRAr" value="3bEKrlZKrwH/ERROR" />
+                                              <node concept="2OqwBi" id="3$LBSIbf2jn" role="1daK9t">
+                                                <node concept="37vLTw" id="3$LBSIbf2jo" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="hZOnLD2vwT" resolve="ex" />
                                                 </node>
-                                                <node concept="liA8E" id="2MF0N8t5ArU" role="2OqNvi">
+                                                <node concept="liA8E" id="3$LBSIbf2jp" role="2OqNvi">
                                                   <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                                                 </node>
-                                              </node>
-                                              <node concept="37vLTw" id="2MF0N8t5ArV" role="RRSow">
-                                                <ref role="3cqZAo" node="hZOnLD2vwT" resolve="ex" />
                                               </node>
                                             </node>
                                             <node concept="3clFbF" id="7UinkOsYB6x" role="3cqZAp">
