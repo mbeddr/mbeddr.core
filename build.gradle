@@ -18,8 +18,8 @@ ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/reposit
 
 
 //MPS version
-ext.mpsMajor = "2021.2"
-ext.mpsBuild = "2021.2.5"
+ext.mpsMajor = "2021.3"
+ext.mpsBuild = "2021.3.0"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
