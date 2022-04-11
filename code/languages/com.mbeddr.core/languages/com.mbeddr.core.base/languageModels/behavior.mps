@@ -71,6 +71,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -17472,7 +17473,7 @@
                       <ref role="1Pybhc" to="b9kz:~WindowManagerEx" resolve="WindowManagerEx" />
                     </node>
                     <node concept="liA8E" id="1k7U37Yw$0H" role="2OqNvi">
-                      <ref role="37wK5l" to="b9kz:~WindowManagerEx.getMostRecentFocusedWindow()" resolve="getMostRecentFocusedWindow" />
+                      <ref role="37wK5l" to="jkny:~WindowManager.getMostRecentFocusedWindow()" resolve="getMostRecentFocusedWindow" />
                     </node>
                   </node>
                 </node>
