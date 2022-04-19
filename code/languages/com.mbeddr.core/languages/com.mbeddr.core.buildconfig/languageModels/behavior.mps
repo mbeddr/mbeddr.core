@@ -8026,7 +8026,7 @@
                       <node concept="3cpWs3" id="3u0yL9n9bwB" role="3uHU7B">
                         <node concept="3cpWs3" id="3u0yL9n9bwC" role="3uHU7B">
                           <node concept="Xl_RD" id="3u0yL9n9bwD" role="3uHU7B">
-                            <property role="Xl_RC" value="cannot start process '" />
+                            <property role="Xl_RC" value="Failed to run '" />
                           </node>
                           <node concept="37vLTw" id="3u0yL9n9bwE" role="3uHU7w">
                             <ref role="3cqZAo" node="2obGnlS341D" resolve="cmdString" />
@@ -8270,21 +8270,26 @@
                   </node>
                 </node>
                 <node concept="3cpWs6" id="2obGnlS3433" role="3cqZAp">
-                  <node concept="3cpWs3" id="2obGnlS3434" role="3cqZAk">
-                    <node concept="37vLTw" id="2obGnlS3435" role="3uHU7w">
-                      <ref role="3cqZAo" node="2obGnlS342Y" resolve="resultCode" />
+                  <node concept="3cpWs3" id="5VUggFEWHTA" role="3cqZAk">
+                    <node concept="Xl_RD" id="5VUggFEWHTD" role="3uHU7w">
+                      <property role="Xl_RC" value=")" />
                     </node>
-                    <node concept="3cpWs3" id="2obGnlS3436" role="3uHU7B">
-                      <node concept="3cpWs3" id="2obGnlS3437" role="3uHU7B">
-                        <node concept="Xl_RD" id="2obGnlS3438" role="3uHU7B">
-                          <property role="Xl_RC" value="process '" />
+                    <node concept="3cpWs3" id="2obGnlS3434" role="3uHU7B">
+                      <node concept="3cpWs3" id="2obGnlS3436" role="3uHU7B">
+                        <node concept="3cpWs3" id="2obGnlS3437" role="3uHU7B">
+                          <node concept="Xl_RD" id="2obGnlS3438" role="3uHU7B">
+                            <property role="Xl_RC" value="'" />
+                          </node>
+                          <node concept="37vLTw" id="2obGnlS3439" role="3uHU7w">
+                            <ref role="3cqZAo" node="2obGnlS341D" resolve="cmdString" />
+                          </node>
                         </node>
-                        <node concept="37vLTw" id="2obGnlS3439" role="3uHU7w">
-                          <ref role="3cqZAo" node="2obGnlS341D" resolve="cmdString" />
+                        <node concept="Xl_RD" id="2obGnlS343a" role="3uHU7w">
+                          <property role="Xl_RC" value="' successfully completed (exit code: " />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="2obGnlS343a" role="3uHU7w">
-                        <property role="Xl_RC" value="' finished with exit code " />
+                      <node concept="37vLTw" id="2obGnlS3435" role="3uHU7w">
+                        <ref role="3cqZAo" node="2obGnlS342Y" resolve="resultCode" />
                       </node>
                     </node>
                   </node>
@@ -8302,14 +8307,14 @@
                     <node concept="3cpWs3" id="2obGnlS343h" role="3cqZAk">
                       <node concept="3cpWs3" id="2obGnlS343i" role="3uHU7B">
                         <node concept="Xl_RD" id="2obGnlS343j" role="3uHU7B">
-                          <property role="Xl_RC" value="process '" />
+                          <property role="Xl_RC" value="'" />
                         </node>
                         <node concept="37vLTw" id="2obGnlS343k" role="3uHU7w">
                           <ref role="3cqZAo" node="2obGnlS341D" resolve="cmdString" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="2obGnlS343l" role="3uHU7w">
-                        <property role="Xl_RC" value="' was started in a non-blocking way" />
+                        <property role="Xl_RC" value="' has been started in a non-blocking way" />
                       </node>
                     </node>
                   </node>
