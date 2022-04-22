@@ -721,9 +721,6 @@
       <node concept="m$_yC" id="6vp$_2v4Mc5" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
       </node>
-      <node concept="m$_yC" id="1WhulAWuNcb" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:6$BmuzArOtB" resolve="de.itemis.mps.tooltips" />
-      </node>
       <node concept="m$_yC" id="1x69Amk7j9w" role="m$_yJ">
         <ref role="m$_y1" to="90a9:7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
       </node>

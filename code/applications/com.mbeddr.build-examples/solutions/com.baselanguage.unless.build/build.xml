@@ -153,7 +153,6 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.editor.diagram" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.editor.layout" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.editor.widgets" />
-      <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.tooltips" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.slisson.mps.hacks" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/mbeddr.mpsutil" />
