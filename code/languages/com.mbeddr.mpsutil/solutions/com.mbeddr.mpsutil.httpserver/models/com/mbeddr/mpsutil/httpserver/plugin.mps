@@ -1476,31 +1476,16 @@
                   </node>
                 </node>
               </node>
-              <node concept="1Wc70l" id="3ZjlwXBFRbx" role="3clFbw">
-                <node concept="2OqwBi" id="3ZjlwXBFRmB" role="3uHU7w">
-                  <node concept="2OqwBi" id="7hHer08eeiq" role="2Oq$k0">
-                    <node concept="37vLTw" id="7hHer08eefF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7hHer08edti" resolve="wrapper" />
-                    </node>
-                    <node concept="liA8E" id="7hHer08eeI4" role="2OqNvi">
-                      <ref role="37wK5l" node="7hHer08e3Fx" resolve="getServer" />
-                    </node>
+              <node concept="3y3z36" id="3ZjlwXBFR4U" role="3clFbw">
+                <node concept="2OqwBi" id="7hHer08edSr" role="3uHU7B">
+                  <node concept="37vLTw" id="7hHer08edRo" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7hHer08edti" resolve="wrapper" />
                   </node>
-                  <node concept="liA8E" id="3ZjlwXBFSll" role="2OqNvi">
-                    <ref role="37wK5l" to="6sky:~AbstractLifeCycle.isRunning()" resolve="isRunning" />
+                  <node concept="liA8E" id="7hHer08ee9x" role="2OqNvi">
+                    <ref role="37wK5l" node="7hHer08e3Fx" resolve="getServer" />
                   </node>
                 </node>
-                <node concept="3y3z36" id="3ZjlwXBFR4U" role="3uHU7B">
-                  <node concept="2OqwBi" id="7hHer08edSr" role="3uHU7B">
-                    <node concept="37vLTw" id="7hHer08edRo" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7hHer08edti" resolve="wrapper" />
-                    </node>
-                    <node concept="liA8E" id="7hHer08ee9x" role="2OqNvi">
-                      <ref role="37wK5l" node="7hHer08e3Fx" resolve="getServer" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="3ZjlwXBFR8Y" role="3uHU7w" />
-                </node>
+                <node concept="10Nm6u" id="3ZjlwXBFR8Y" role="3uHU7w" />
               </node>
             </node>
           </node>
