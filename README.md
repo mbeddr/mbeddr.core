@@ -1,5 +1,6 @@
 Mbeddr core
 ===========
+![≤ JetBrains MPS 2021.2.5](https://img.shields.io/badge/JetBrains%20MPS-%E2%89%A42021.2.5-orange)
 
 To install: please, visit http://mbeddr.com for instructions!
 
