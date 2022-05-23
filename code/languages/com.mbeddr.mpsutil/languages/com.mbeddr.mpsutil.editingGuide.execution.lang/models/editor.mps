@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:04fd46a4-f2e2-48cb-903b-d47e841578ba(com.mbeddr.mpsutil.editingGuide.execution.lang.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
@@ -2759,9 +2760,6 @@
       <property role="TrG5h" value="editingGuide_taskDescriptionBackground" />
       <node concept="Veino" id="7FOIhAt3yNb" role="3F10Kt">
         <property role="Vb096" value="fLJRk5A/lightGray" />
-        <node concept="1iSF2X" id="7FOIhAt4joz" role="VblUZ">
-          <property role="1iTho6" value="DDDDDD" />
-        </node>
       </node>
     </node>
     <node concept="14StLt" id="icy2A0TX9M" role="V601i">
