@@ -1324,5 +1324,16 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="4swkQBc9Lnb">
+    <property role="3GE5qa" value="module" />
+    <ref role="1XX52x" to="d0vh:34XNuWnCCBZ" resolve="SkipContentSortingInGenModule" />
+    <node concept="3EZMnI" id="4swkQBc9Lng" role="2wV5jI">
+      <node concept="3F0ifn" id="4swkQBc9Lnm" role="3EZMnx">
+        <property role="3F0ifm" value="@skipContentSorting" />
+      </node>
+      <node concept="2iRkQZ" id="4swkQBc9Lnh" role="2iSdaV" />
+      <node concept="2SsqMj" id="4swkQBc9Lnd" role="3EZMnx" />
+    </node>
+  </node>
 </model>
 

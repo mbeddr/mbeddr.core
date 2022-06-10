@@ -524,5 +524,17 @@
       <ref role="PrY4T" to="x27k:7oF65pen3H4" resolve="IMangledNameFinalizer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="34XNuWnCCBZ">
+    <property role="EcuMT" value="3548218508215224831" />
+    <property role="3GE5qa" value="module" />
+    <property role="TrG5h" value="SkipContentSortingInGenModule" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="34XNuWnCCC0" role="lGtFl">
+      <property role="Hh88m" value="skipContentSorting" />
+      <node concept="trNpa" id="34XNuWnCCC2" role="EQaZv">
+        <ref role="trN6q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+      </node>
+    </node>
+  </node>
 </model>
 
