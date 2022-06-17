@@ -21,6 +21,7 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -105,10 +106,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -150,9 +147,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -559,23 +553,16 @@
         </node>
         <node concept="3clFbF" id="7vUP_qcxcA4" role="3cqZAp">
           <node concept="2OqwBi" id="7vUP_qcxdvH" role="3clFbG">
-            <node concept="1eOMI4" id="7vUP_qcxfPy" role="2Oq$k0">
-              <node concept="10QFUN" id="7vUP_qcxfPz" role="1eOMHV">
-                <node concept="2OqwBi" id="7vUP_qcxfPv" role="10QFUP">
-                  <node concept="37vLTw" id="7vUP_qcxfPw" role="2Oq$k0">
-                    <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
-                  </node>
-                  <node concept="liA8E" id="7vUP_qcxfPx" role="2OqNvi">
-                    <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
-                  </node>
-                </node>
-                <node concept="3uibUv" id="7vUP_qcxggA" role="10QFUM">
-                  <ref role="3uigEE" to="b9kz:~ToolWindowEx" resolve="ToolWindowEx" />
-                </node>
+            <node concept="2OqwBi" id="7vUP_qcxfPv" role="2Oq$k0">
+              <node concept="37vLTw" id="7vUP_qcxfPw" role="2Oq$k0">
+                <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
+              </node>
+              <node concept="liA8E" id="7vUP_qcxfPx" role="2OqNvi">
+                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
               </node>
             </node>
             <node concept="liA8E" id="7vUP_qcxi0V" role="2OqNvi">
-              <ref role="37wK5l" to="b9kz:~ToolWindowEx.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
+              <ref role="37wK5l" to="jkny:~ToolWindow.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
               <node concept="2OqwBi" id="7vUP_qcxoai" role="37wK5m">
                 <node concept="2WthIp" id="7vUP_qcxoal" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="7vUP_qcxoan" role="2OqNvi">
