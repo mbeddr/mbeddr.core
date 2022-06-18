@@ -388,6 +388,9 @@
       <node concept="m$_yC" id="4i9pOwKZppe" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="K3FXS9PKz3" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1JaUSFUm4G_" resolve="jetbrains.mps.editor.contextActions" />
+      </node>
       <node concept="m$_yC" id="20rWHx3xldu" role="m$_yJ">
         <ref role="m$_y1" node="7uZw0yZ43Jz" resolve="com.mbeddr.core" />
       </node>
@@ -723,6 +726,9 @@
       <node concept="m$_yC" id="$bJ0jg_Ety" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
+      <node concept="m$_yC" id="K3FXS9Pfkq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
+      </node>
       <node concept="3_J27D" id="5qO$P$PrHao" role="m_cZH">
         <node concept="3Mxwew" id="5qO$P$PrHap" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.req" />
@@ -731,9 +737,6 @@
       <node concept="2iUeEo" id="5qO$P$PrHaq" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
-      </node>
-      <node concept="m$_yC" id="K3FXS9Pfkq" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:hCVXosGNJH" resolve="com.mbeddr.mpsutil.modellisteners" />
       </node>
     </node>
     <node concept="m$_wf" id="2$$_2GRaiC7" role="3989C9">
