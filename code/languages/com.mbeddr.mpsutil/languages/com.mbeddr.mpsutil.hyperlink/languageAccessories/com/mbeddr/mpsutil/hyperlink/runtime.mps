@@ -48,6 +48,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -310,11 +311,19 @@
                   </node>
                 </node>
               </node>
-              <node concept="3y3z36" id="3DAECxFHCVI" role="3clFbw">
-                <node concept="37vLTw" id="3DAECxFHCVJ" role="3uHU7B">
-                  <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
+              <node concept="1Wc70l" id="1_bTRifhpRH" role="3clFbw">
+                <node concept="2OqwBi" id="1_bTRifhqrT" role="3uHU7w">
+                  <node concept="37vLTw" id="1_bTRifhq0J" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
+                  </node>
+                  <node concept="17RvpY" id="1_bTRifhqIT" role="2OqNvi" />
                 </node>
-                <node concept="10Nm6u" id="3DAECxFHCVK" role="3uHU7w" />
+                <node concept="3y3z36" id="3DAECxFHCVI" role="3uHU7B">
+                  <node concept="37vLTw" id="3DAECxFHCVJ" role="3uHU7B">
+                    <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
+                  </node>
+                  <node concept="10Nm6u" id="3DAECxFHCVK" role="3uHU7w" />
+                </node>
               </node>
             </node>
           </node>
