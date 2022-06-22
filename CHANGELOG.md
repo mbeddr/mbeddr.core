@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # November 2023
 
+## com.mbeddr.core
+
+### Added
+- Added functionality to enable hiding of an [IMBeddrIDERoot](http://127.0.0.1:63320/node?ref=r%3Afd2980c8-676c-4b19-b524-18c70e02f8b7%28com.mbeddr.core.base.behavior%29%2F2543117311512555603) node from the mbeddr context menu 
+  (default is visible, override to hide)
+
 ## com.mbeddr.doc
 
 ### Changed
