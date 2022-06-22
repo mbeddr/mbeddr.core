@@ -11,7 +11,6 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="m1yg" ref="f:diff_old#r:515ec77b-87d0-4871-9d0a-f5cfa3bbab14(com.mbeddr.mpsutil.asynccell.sandbox.behavior@old)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -241,24 +240,24 @@
                 </node>
                 <node concept="2OqwBi" id="2YOONxNSyL0" role="3uHU7w">
                   <node concept="37vLTw" id="2YOONxNSyo6" role="2Oq$k0">
-                    <ref role="3cqZAo" to="m1yg:2YOONxNStSE" resolve="exception" />
+                    <ref role="3cqZAo" node="2YOONxNStSE" resolve="exception" />
                   </node>
                   <node concept="liA8E" id="2YOONxNSz1I" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="YS8fn" id="2YOONxNSvvx" role="3cqZAp">
               <node concept="37vLTw" id="2YOONxNSvzI" role="YScLw">
-                <ref role="3cqZAo" to="m1yg:2YOONxNStSE" resolve="exception" />
+                <ref role="3cqZAo" node="2YOONxNStSE" resolve="exception" />
               </node>
             </node>
           </node>
           <node concept="3y3z36" id="2YOONxNSvlA" role="3clFbw">
             <node concept="10Nm6u" id="2YOONxNSvpC" role="3uHU7w" />
             <node concept="37vLTw" id="2YOONxNSuUr" role="3uHU7B">
-              <ref role="3cqZAo" to="m1yg:2YOONxNStSE" resolve="exception" />
+              <ref role="3cqZAo" node="2YOONxNStSE" resolve="exception" />
             </node>
           </node>
           <node concept="9aQIb" id="2YOONxNSxoE" role="9aQIa">
