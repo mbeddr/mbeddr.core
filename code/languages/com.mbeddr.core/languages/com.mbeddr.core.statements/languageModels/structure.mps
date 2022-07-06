@@ -115,6 +115,9 @@
     <node concept="PrWs8" id="hEaDaGor66" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
+    <node concept="PrWs8" id="6oukqTXJ1OU" role="PzmwI">
+      <ref role="PrY4T" node="xAR9nWuwcY" resolve="IHasPrefixes" />
+    </node>
     <node concept="PrWs8" id="3SnnFeu9Rmi" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
     </node>

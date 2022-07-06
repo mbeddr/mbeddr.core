@@ -1150,35 +1150,7 @@
   <node concept="1YbPZF" id="4_QpjDizvxa">
     <property role="TrG5h" value="typeof_AbstractTypeMapping" />
     <property role="3GE5qa" value="TypeMapping" />
-    <node concept="3clFbS" id="4_QpjDizvxb" role="18ibNy">
-      <node concept="1X3_iC" id="29L9c1qcaPi" role="lGtFl">
-        <property role="3V$3am" value="statement" />
-        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-        <node concept="1ZobV4" id="2bBLuwRer$i" role="8Wnug">
-          <property role="3wDh2S" value="true" />
-          <node concept="mw_s8" id="7JF0K7yxcTV" role="1ZfhKB">
-            <node concept="2OqwBi" id="7JF0K7yxd2I" role="mwGJk">
-              <node concept="3TUQnm" id="7JF0K7yxcTT" role="2Oq$k0">
-                <ref role="3TV0OU" to="tpck:hYa1RjM" resolve="IType" />
-              </node>
-              <node concept="LFhST" id="7JF0K7yxdfS" role="2OqNvi" />
-            </node>
-          </node>
-          <node concept="mw_s8" id="2bBLuwRer$l" role="1ZfhK$">
-            <node concept="1Z2H0r" id="2bBLuwReqMl" role="mwGJk">
-              <node concept="2OqwBi" id="2bBLuwReqSy" role="1Z2MuG">
-                <node concept="1YBJjd" id="2bBLuwReqOA" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4_QpjDizvxd" resolve="atm" />
-                </node>
-                <node concept="3TrEf2" id="2bBLuwRerfg" role="2OqNvi">
-                  <ref role="3Tt5mk" to="3673:4_QpjDinOtz" resolve="fromType" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
+    <node concept="3clFbS" id="4_QpjDizvxb" role="18ibNy" />
     <node concept="1YaCAy" id="4_QpjDizvxd" role="1YuTPh">
       <property role="TrG5h" value="atm" />
       <ref role="1YaFvo" to="3673:4_QpjDi1chc" resolve="AbstractTypeMapping" />

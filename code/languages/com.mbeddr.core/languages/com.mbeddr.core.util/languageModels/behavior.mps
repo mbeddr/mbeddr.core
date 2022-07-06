@@ -8750,16 +8750,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1EZSCJhU$hO" role="3cqZAp">
-          <node concept="d57v9" id="1EZSCJhU$wA" role="3clFbG">
-            <node concept="Xl_RD" id="1EZSCJhU$D8" role="37vLTx">
-              <property role="Xl_RC" value="\\n" />
-            </node>
-            <node concept="37vLTw" id="1EZSCJhU$hM" role="37vLTJ">
-              <ref role="3cqZAo" node="1EZSCJhUn$B" resolve="result" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="1EZSCJhUn$O" role="3cqZAp" />
         <node concept="3cpWs6" id="1EZSCJhUn$Z" role="3cqZAp">
           <node concept="37vLTw" id="1EZSCJhUn_b" role="3cqZAk">

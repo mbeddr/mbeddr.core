@@ -92,7 +92,7 @@
       <node concept="10P_77" id="4zXqh6VBfpH" role="3clF45" />
     </node>
     <node concept="3clFb_" id="4zXqh6Unq1M" role="jymVt">
-      <property role="TrG5h" value="customizeFormatSpecifier" />
+      <property role="TrG5h" value="getFormatSpecifier" />
       <node concept="37vLTG" id="4zXqh6VIp4E" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="H_c77" id="4zXqh6VIp4F" role="1tU5fm" />
@@ -106,6 +106,16 @@
       <node concept="3clFbS" id="4zXqh6Unq1P" role="3clF47" />
       <node concept="3Tm1VV" id="4zXqh6Unq1Q" role="1B3o_S" />
       <node concept="17QB3L" id="4zXqh6Unq19" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="1h$nB_AYGRn" role="jymVt">
+      <property role="TrG5h" value="getEndOfLineLiteral" />
+      <node concept="37vLTG" id="1h$nB_AYIeE" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="1h$nB_AYIeF" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="1h$nB_AYGRq" role="3clF47" />
+      <node concept="3Tm1VV" id="1h$nB_AYGRr" role="1B3o_S" />
+      <node concept="17QB3L" id="1h$nB_AYCWE" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="4zXqh6UnpTI" role="1B3o_S" />
   </node>
