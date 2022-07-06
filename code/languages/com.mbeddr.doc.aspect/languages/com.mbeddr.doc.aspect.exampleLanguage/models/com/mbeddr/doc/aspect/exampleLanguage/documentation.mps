@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="hauh" ref="r:489c719c-7616-403c-a112-c95a57d1fcd3(com.mbeddr.doc.aspect.exampleLanguage.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -19,6 +20,7 @@
       </concept>
       <concept id="7810506636291686467" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyItemAnnotation" flags="ng" index="fANS$" />
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
+        <property id="1881564090922902400" name="priority" index="17ySGi" />
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
     </language>
@@ -110,35 +112,64 @@
           </node>
         </node>
       </node>
-      <node concept="1_0VNX" id="4jXS_uRrcFF" role="1_0VJ0">
+      <node concept="1_0VNX" id="1CsE99tzurx" role="1_0VJ0">
         <property role="TrG5h" value="Node" />
         <property role="1_0VJr" value="Node" />
-        <node concept="3n9NSn" id="4jXS_uRrcGh" role="lGtFl">
+        <node concept="3n9NSn" id="1CsE99tzury" role="lGtFl">
           <ref role="3nadW_" to="hauh:4MORkbYxnx" resolve="Node" />
         </node>
-        <node concept="1_0LV8" id="4jXS_uRrfC6" role="1_0VJ0">
-          <node concept="19SGf9" id="4jXS_uRrfC7" role="1_0LWR">
-            <node concept="19SUe$" id="4jXS_uRrfC8" role="19SJt6">
+        <node concept="1_0LV8" id="1CsE99tzurz" role="1_0VJ0">
+          <node concept="19SGf9" id="1CsE99tzur$" role="1_0LWR">
+            <node concept="19SUe$" id="1CsE99tzur_" role="19SJt6">
               <property role="19SUeA" value="Represents an &quot;object&quot; in a graph." />
             </node>
           </node>
         </node>
-        <node concept="1_0LV8" id="4jXS_uRrfCd" role="1_0VJ0">
-          <node concept="19SGf9" id="4jXS_uRrfCe" role="1_0LWR">
-            <node concept="19SUe$" id="4jXS_uRrfCf" role="19SJt6">
+        <node concept="1_0LV8" id="1CsE99tzurA" role="1_0VJ0">
+          <node concept="19SGf9" id="1CsE99tzurB" role="1_0LWR">
+            <node concept="19SUe$" id="1CsE99tzurC" role="19SJt6">
               <property role="19SUeA" value="See also: " />
             </node>
-            <node concept="1_0GAv" id="4jXS_uRrfCm" role="19SJt6">
+            <node concept="1_0GAv" id="1CsE99tzurD" role="19SJt6">
               <ref role="1_0GAl" node="UK_oBpA4O5" resolve="Graph" />
             </node>
-            <node concept="19SUe$" id="4jXS_uRrfCn" role="19SJt6">
+            <node concept="19SUe$" id="1CsE99tzurE" role="19SJt6">
               <property role="19SUeA" value=", " />
             </node>
-            <node concept="1_0GAv" id="4jXS_uRrfCr" role="19SJt6">
+            <node concept="1_0GAv" id="1CsE99tzurF" role="19SJt6">
               <ref role="1_0GAl" node="UK_oBpCt_h" resolve="Edge" />
             </node>
-            <node concept="19SUe$" id="4jXS_uRrfCs" role="19SJt6" />
+            <node concept="19SUe$" id="1CsE99tzurG" role="19SJt6" />
           </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1CsE99tzuth" role="1_0VJ0">
+        <property role="TrG5h" value="IntLiteral" />
+        <property role="1_0VJr" value="intLiteral" />
+        <node concept="1_0LV8" id="1CsE99tz$39" role="1_0VJ0">
+          <node concept="19SGf9" id="1CsE99tz$3a" role="1_0LWR">
+            <node concept="19SUe$" id="1CsE99tz$3b" role="19SJt6">
+              <property role="19SUeA" value="Integer documentation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="1CsE99tzutP" role="lGtFl">
+          <ref role="3nadW_" to="tpee:fzcmrck" resolve="IntegerConstant" />
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1CsE99t_Glc" role="1_0VJ0">
+        <property role="TrG5h" value="ColorNode" />
+        <property role="1_0VJr" value="ColorNode" />
+        <node concept="1_0LV8" id="1CsE99t_GlR" role="1_0VJ0">
+          <node concept="19SGf9" id="1CsE99t_GlS" role="1_0LWR">
+            <node concept="19SUe$" id="1CsE99t_GlT" role="19SJt6">
+              <property role="19SUeA" value="Color node?" />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="1CsE99t_GlY" role="lGtFl">
+          <property role="17ySGi" value="30" />
+          <ref role="3nadW_" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />
         </node>
       </node>
       <node concept="1_0VNX" id="UK_oBpCt_h" role="1_0VJ0">
