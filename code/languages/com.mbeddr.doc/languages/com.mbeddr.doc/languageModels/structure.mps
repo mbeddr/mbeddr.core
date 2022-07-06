@@ -1037,7 +1037,7 @@
     <property role="3GE5qa" value="structure" />
     <property role="TrG5h" value="Invisble" />
     <property role="R4oN_" value="a concept useful in generators" />
-    <property role="34LRSv" value="invisble paragraph" />
+    <property role="34LRSv" value="invisible paragraph" />
     <property role="EcuMT" value="3126418051240156265" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="2HzhasNzlMy" role="1TKVEi">
