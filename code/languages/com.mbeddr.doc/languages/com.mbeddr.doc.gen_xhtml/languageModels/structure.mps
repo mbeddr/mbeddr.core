@@ -223,5 +223,22 @@
     <property role="34LRSv" value="HTMLRenderer" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
   </node>
+  <node concept="1TIwiD" id="6ec5ny8ewiz">
+    <property role="EcuMT" value="7173131913920119971" />
+    <property role="TrG5h" value="NestedItemListItem" />
+    <ref role="1TJDcQ" to="2c95:4E$PniRJOs$" resolve="Item" />
+    <node concept="1TJgyi" id="QRmqzKIeCg" role="1TKVEl">
+      <property role="TrG5h" value="ordered" />
+      <property role="IQ2nx" value="988357225359141392" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="4E$PniRK8Ap" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="IQ2ns" value="5378658552262986137" />
+      <ref role="20lvS9" to="2c95:4E$PniRJOs$" resolve="Item" />
+    </node>
+  </node>
 </model>
 
