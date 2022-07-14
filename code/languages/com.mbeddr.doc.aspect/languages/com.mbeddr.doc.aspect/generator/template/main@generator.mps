@@ -727,16 +727,16 @@
               <node concept="3cpWsn" id="agjuZpaUTG" role="3cpWs9">
                 <property role="TrG5h" value="foundDocs" />
                 <property role="3TUv4t" value="true" />
-                <node concept="2YIFZM" id="2NM$qy7XI97" role="33vP2m">
-                  <ref role="37wK5l" to="ttl0:2NM$qy7XAw_" resolve="findDocumentationElements" />
+                <node concept="2YIFZM" id="4UwRMW$Fau_" role="33vP2m">
+                  <ref role="37wK5l" to="ttl0:4UwRMW$EDwh" resolve="findAllDocumentationElementsWithPriorities" />
                   <ref role="1Pybhc" to="ttl0:qh7UMGioaa" resolve="DocumentationAspectHelper" />
-                  <node concept="37vLTw" id="4MX_x9xFpE" role="37wK5m">
+                  <node concept="37vLTw" id="4UwRMW$FauA" role="37wK5m">
                     <ref role="3cqZAo" node="agjuZpaUTs" resolve="model" />
                   </node>
-                  <node concept="37vLTw" id="eEuMfA9M03" role="37wK5m">
+                  <node concept="37vLTw" id="4UwRMW$FauB" role="37wK5m">
                     <ref role="3cqZAo" node="tBHOvWezmO" resolve="concept" />
                   </node>
-                  <node concept="37vLTw" id="1o6EjwiUjot" role="37wK5m">
+                  <node concept="37vLTw" id="4UwRMW$FauC" role="37wK5m">
                     <ref role="3cqZAo" node="1o6EjwiUhxl" resolve="property" />
                   </node>
                 </node>
