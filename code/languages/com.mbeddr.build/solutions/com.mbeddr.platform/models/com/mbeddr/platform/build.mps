@@ -311,7 +311,7 @@
         <ref role="m$_y1" node="DnqfiuSO_Q" resolve="com.mbeddr.mpsutil.compare" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtnaX" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -339,7 +339,7 @@
         <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtnuN" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -367,7 +367,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtnMD" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -398,7 +398,7 @@
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
       <node concept="2iUeEo" id="7yAshxDto6v" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -494,7 +494,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtoql" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -522,7 +522,7 @@
         <ref role="m$f5T" node="3quoVcnOFk5" resolve="group.suppresswarning" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtoIb" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -565,7 +565,7 @@
         <ref role="m$f5T" node="3quoVcnN1e0" resolve="group.interpreter" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtplR" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -593,7 +593,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtpDH" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -630,7 +630,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtpXz" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -1259,7 +1259,7 @@
         <ref role="m$f5T" node="4l0F8G1TB3o" resolve="group.parameterizedMenu" />
       </node>
       <node concept="2iUeEo" id="7yAshxDttDK" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -1295,7 +1295,7 @@
         <ref role="m$f5T" node="1A$OnV5ojbJ" resolve="group.waitfor" />
       </node>
       <node concept="2iUeEo" id="7yAshxDttXA" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -1331,7 +1331,7 @@
         <ref role="m$f5T" node="6xaPNaK8xt_" resolve="group.org.mockito" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtuhs" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -1364,7 +1364,7 @@
         <ref role="m$f5T" node="1A$OnV5ogN6" resolve="group.asynccell" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtu_i" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -3564,7 +3564,7 @@
         <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
       </node>
       <node concept="2iUeEo" id="7yAshxDt$n$" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -3697,7 +3697,7 @@
         </node>
       </node>
       <node concept="2iUeEo" id="4VgGsUqOKxH" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
       <node concept="m$_yC" id="4VgGsUqPgrj" role="m$_yJ">
@@ -4691,7 +4691,7 @@
         <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
       </node>
       <node concept="2iUeEo" id="7yAshxDt$Fq" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
       <node concept="m$_yC" id="3VIBP3dq_3y" role="m$_yJ">
@@ -5365,7 +5365,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="2iUeEo" id="2puCPkOW1v5" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -6721,7 +6721,7 @@
         <ref role="m$f5T" node="3quoVcnPZaE" resolve="group.editor-support" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtwKf" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -10374,7 +10374,7 @@
         <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtx45" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -19526,7 +19526,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtxnV" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
     </node>
@@ -20066,7 +20066,7 @@
         </node>
       </node>
       <node concept="2iUeEo" id="7yAshxDtuT8" role="2iVFfd">
-        <property role="2iUeEt" value="mbedrr" />
+        <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
       <node concept="m$f5U" id="7yAshxDtvwO" role="m$_yh">
