@@ -4674,8 +4674,8 @@
         </node>
       </node>
       <node concept="3_J27D" id="TGQG6khGGP" role="m$_w8">
-        <node concept="3Mxwew" id="TGQG6khOSB" role="3MwsjC">
-          <property role="3MwjfP" value="com.mbeddr.mpsutil.uisupport" />
+        <node concept="3Mxwey" id="16MJ1R8XdrP" role="3MwsjC">
+          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
         </node>
       </node>
       <node concept="m$f5U" id="TGQG6khQ0s" role="m$_yh">
