@@ -17,6 +17,7 @@
       </concept>
       <concept id="7810506636291686467" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyItemAnnotation" flags="ng" index="fANS$" />
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
+        <property id="1881564090922902400" name="priority" index="17ySGi" />
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
     </language>
@@ -110,6 +111,7 @@
         </node>
       </node>
       <node concept="3n9NSn" id="3TrpzyP_FtB" role="lGtFl">
+        <property role="17ySGi" value="10" />
         <ref role="3nadW_" to="hauh:1MEM7LwynlN" resolve="ColoredNode" />
       </node>
     </node>

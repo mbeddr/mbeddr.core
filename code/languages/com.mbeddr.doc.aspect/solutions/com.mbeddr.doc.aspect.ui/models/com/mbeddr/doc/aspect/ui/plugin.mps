@@ -1117,17 +1117,12 @@
               <node concept="2OqwBi" id="18EYPZeyOxl" role="3uHU7w">
                 <node concept="2WthIp" id="18EYPZeyOxo" role="2Oq$k0" />
                 <node concept="2XshWL" id="18EYPZeyOxq" role="2OqNvi">
-                  <ref role="2WH_rO" node="18EYPZeyuGP" resolve="hasDocAspect" />
-                  <node concept="2OqwBi" id="18EYPZeyPZO" role="2XxRq1">
-                    <node concept="2OqwBi" id="18EYPZeyPth" role="2Oq$k0">
-                      <node concept="37vLTw" id="18EYPZeyPmb" role="2Oq$k0">
-                        <ref role="3cqZAo" node="18EYPZeyMBy" resolve="selectedNode" />
-                      </node>
-                      <node concept="2yIwOk" id="18EYPZeyPEQ" role="2OqNvi" />
+                  <ref role="2WH_rO" node="1CsE99tCRef" resolve="hasDoc" />
+                  <node concept="2OqwBi" id="18EYPZeyPth" role="2XxRq1">
+                    <node concept="37vLTw" id="18EYPZeyPmb" role="2Oq$k0">
+                      <ref role="3cqZAo" node="18EYPZeyMBy" resolve="selectedNode" />
                     </node>
-                    <node concept="liA8E" id="18EYPZeyQko" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getLanguage()" resolve="getLanguage" />
-                    </node>
+                    <node concept="2yIwOk" id="18EYPZeyPEQ" role="2OqNvi" />
                   </node>
                   <node concept="2EnYce" id="2MiGV0HSqeg" role="2XxRq1">
                     <node concept="2OqwBi" id="18EYPZeyQX4" role="2Oq$k0">
@@ -2539,6 +2534,41 @@
       </node>
       <node concept="3Tm6S6" id="18EYPZeyKg2" role="1B3o_S" />
     </node>
+    <node concept="2XrIbr" id="1CsE99tCRef" role="2XNbBy">
+      <property role="TrG5h" value="hasDoc" />
+      <node concept="10P_77" id="1CsE99tCSgo" role="3clF45" />
+      <node concept="3clFbS" id="1CsE99tCReh" role="3clF47">
+        <node concept="3clFbF" id="1CsE99tCSkn" role="3cqZAp">
+          <node concept="3y3z36" id="1CsE99tCTcg" role="3clFbG">
+            <node concept="10Nm6u" id="1CsE99tCTjo" role="3uHU7w" />
+            <node concept="2YIFZM" id="1CsE99tCSmY" role="3uHU7B">
+              <ref role="37wK5l" to="ttl0:qh7UMGipbd" resolve="getDocumentation" />
+              <ref role="1Pybhc" to="ttl0:qh7UMGioaa" resolve="DocumentationAspectHelper" />
+              <node concept="37vLTw" id="1CsE99tCSZI" role="37wK5m">
+                <ref role="3cqZAo" node="1CsE99tCStE" resolve="repository" />
+              </node>
+              <node concept="37vLTw" id="1CsE99tCT2W" role="37wK5m">
+                <ref role="3cqZAo" node="1CsE99tCSE2" resolve="concept" />
+              </node>
+              <node concept="10Nm6u" id="1CsE99tCT5T" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="1CsE99tCScR" role="1B3o_S" />
+      <node concept="37vLTG" id="1CsE99tCSE2" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="1CsE99tCSQu" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1CsE99tCStE" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="1CsE99tCSA$" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+    </node>
     <node concept="2XrIbr" id="ggygV7PAGa" role="2XNbBy">
       <property role="TrG5h" value="showDocumentation" />
       <node concept="3cqZAl" id="ggygV7PCkg" role="3clF45" />
@@ -3430,8 +3460,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="Rnh3smAKSV" role="37vLTx">
-              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+              <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
               <node concept="2xqhHp" id="Rnh3smAKSW" role="37wK5m" />
             </node>
           </node>

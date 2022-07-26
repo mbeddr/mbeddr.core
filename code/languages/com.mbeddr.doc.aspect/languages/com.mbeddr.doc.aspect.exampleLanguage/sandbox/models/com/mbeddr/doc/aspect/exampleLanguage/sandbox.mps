@@ -4,14 +4,22 @@
   <languages>
     <use id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage" version="0" />
     <use id="1e00450a-fc72-4f66-9571-30e5e083c1fa" name="com.mbeddr.doc.aspect.exampleLanguage.extended" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports />
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+    </language>
     <language id="1e00450a-fc72-4f66-9571-30e5e083c1fa" name="com.mbeddr.doc.aspect.exampleLanguage.extended">
       <concept id="9004279853425732280" name="com.mbeddr.doc.aspect.exampleLanguage.extended.structure.UndirectedEdge" flags="ng" index="2lk0DD" />
     </language>
     <language id="3c21902d-b582-4557-b697-84a4dcddff3a" name="com.mbeddr.doc.aspect.exampleLanguage">
-      <concept id="86363842539034081" name="com.mbeddr.doc.aspect.exampleLanguage.structure.Node" flags="ng" index="aMcqk" />
+      <concept id="86363842539034081" name="com.mbeddr.doc.aspect.exampleLanguage.structure.Node" flags="ng" index="aMcqk">
+        <child id="1881564090922296934" name="expression" index="17$kVO" />
+      </concept>
       <concept id="2065683815623914867" name="com.mbeddr.doc.aspect.exampleLanguage.structure.ColoredNode" flags="ng" index="1W8VOf">
         <property id="2065683815623914868" name="color" index="1W8VO8" />
       </concept>
@@ -54,15 +62,27 @@
     </node>
     <node concept="aMcqk" id="1MEM7Lwynln" role="1WbyPO">
       <property role="TrG5h" value="N1" />
+      <node concept="3cmrfG" id="1CsE99t$v01" role="17$kVO">
+        <property role="3cmrfH" value="10" />
+      </node>
     </node>
     <node concept="aMcqk" id="1MEM7Lwynlp" role="1WbyPO">
       <property role="TrG5h" value="N2" />
+      <node concept="3cmrfG" id="1CsE99tKKEN" role="17$kVO">
+        <property role="3cmrfH" value="10" />
+      </node>
     </node>
     <node concept="aMcqk" id="1MEM7Lwynls" role="1WbyPO">
       <property role="TrG5h" value="N3" />
+      <node concept="3cmrfG" id="1CsE99tKKVo" role="17$kVO">
+        <property role="3cmrfH" value="10" />
+      </node>
     </node>
     <node concept="aMcqk" id="1MEM7Lwynlw" role="1WbyPO">
       <property role="TrG5h" value="N4" />
+      <node concept="3cmrfG" id="1CsE99tKLbV" role="17$kVO">
+        <property role="3cmrfH" value="10" />
+      </node>
     </node>
     <node concept="1W8VOf" id="1MEM7LwyyPS" role="1WbyPO">
       <property role="TrG5h" value="N5" />
