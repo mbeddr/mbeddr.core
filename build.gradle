@@ -3,6 +3,8 @@ import de.itemis.mps.gradle.GitBasedVersioning
 buildscript {
     repositories {
         mavenLocal()
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
+        // TODO: remove this old Nexus repo when it's finally shut down
         maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
         mavenCentral()
     }
@@ -12,8 +14,8 @@ buildscript {
     }
 }
 
-ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
-ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
+ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2020.2.+"

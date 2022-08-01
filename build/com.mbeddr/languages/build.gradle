@@ -217,4 +217,8 @@ publishing {
 task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
 ':build:com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
 
+
+// TODO: remove this old Nexus repo publication when the server's finally shut down
+tasks.findByName('publishMbeddrPublicationToMavenRepository').dependsOn('publishMbeddrPublicationToItemisOldNexusRepository')
+
 check.dependsOn test_mbeddr

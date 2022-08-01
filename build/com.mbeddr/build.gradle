@@ -108,6 +108,18 @@ private static void configureRepositories(Project project) {
         repositories {
             maven {
                 url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                    credentials {
+                        username project.getProperty('artifacts.itemis.cloud.user')
+                        password project.getProperty('artifacts.itemis.cloud.pw')
+                    }
+                }
+            }
+
+            // TODO: remove this old Nexus repo when it's finally shut down
+            maven {
+                name 'itemisOldNexus'
+                url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' : 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
                 if (project.hasProperty('nexusUsername')) {
                     credentials {
                         username project.nexusUsername
@@ -122,13 +134,18 @@ private static void configureRepositories(Project project) {
         for (repoUrl in (project.dependencyRepositories + [project.snapshotRepository, project.releaseRepository]).unique()) {
             maven {
                 url repoUrl
-                if (project.hasProperty('nexusUsername')) {
+                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
                     credentials {
-                        username project.nexusUsername
-                        password project.nexusPassword
+                        username project.getProperty('artifacts.itemis.cloud.user')
+                        password project.getProperty('artifacts.itemis.cloud.pw')
                     }
                 }
             }
+        }
+
+        // TODO: remove this old Nexus repo when it's finally shut down
+        maven {
+            url 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
         }
         mavenCentral()
     }
