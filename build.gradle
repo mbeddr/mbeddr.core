@@ -123,7 +123,8 @@ subprojects {
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
-            ext.mbeddrBuild = "master"
+            // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
+            //ext.mbeddrBuild = "master"
         }
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform,

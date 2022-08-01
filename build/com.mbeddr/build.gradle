@@ -118,6 +118,7 @@ private static void configureRepositories(Project project) {
 
             // TODO: remove this old Nexus repo when it's finally shut down
             maven {
+                name 'itemisOldNexus'
                 url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' : 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
                 if (project.hasProperty('nexusUsername')) {
                     credentials {

@@ -177,3 +177,8 @@ if({project.mbeddrBuild}() == "master") {
        */
     tasks.findByName("publishMbeddrPlatformPublicationToMavenRepository").dependsOn("publishMbeddrPlatformPublicationToGitHubPackagesRepository")
 }
+
+
+// TODO: remove these old Nexus repo publications when the server's finally shut down
+tasks.findByName('publishMbeddrPlatformPublicationToMavenRepository').dependsOn('publishMbeddrPlatformPublicationToItemisOldNexusRepository')
+tasks.findByName('publishMbeddrAllScriptsPublicationToMavenRepository').dependsOn('publishMbeddrAllScriptsPublicationToItemisOldNexusRepository')
