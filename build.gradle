@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.7.+'
     }
 }
 
@@ -20,8 +20,8 @@ ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-
 
 
 //MPS version
-ext.mpsMajor = "2021.2"
-ext.mpsBuild = "2021.2.5"
+ext.mpsMajor = "2022.2"
+ext.mpsBuild = "2022.2"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
@@ -32,17 +32,17 @@ ext.ciBuild = findNonEmptyProperty("forceCI") ?: !hasNonEmptyProperty('mpsHomeDi
 
 def jdk_home
 
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
+if (ext.has('java17_home')) {
+    jdk_home = ext.get('java17_home')
+} else if (System.getenv('JB_JAVA17_HOME') != null) {
+    jdk_home = System.getenv('JB_JAVA17_HOME')
 } else {
-    def expected = JavaVersion.VERSION_11
+    def expected = JavaVersion.VERSION_17
     if (JavaVersion.current() != expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-            + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-            + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-            + "  * Run Gradle using Java 11")
+        throw new GradleException("This build script requires Java 17 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
+            + "  * Use project property java17_home to point to the Java 17 JDK.\n"
+            + "  * Use environment variable JB_JAVA17_HOME to point to the Java 17 JDK\n"
+            + "  * Run Gradle using Java 17")
     }
     jdk_home = System.getProperty('java.home')
 }
