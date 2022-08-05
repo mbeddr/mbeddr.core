@@ -380,7 +380,7 @@
           </node>
           <node concept="3F1sOY" id="2jUI4_LR9vX" role="3EZMnx">
             <property role="1$x2rV" value="true" />
-            <ref role="1NtTu8" to="au0v:2jUI4_LR89f" resolve="activationCondition" />
+            <ref role="1NtTu8" to="au0v:2jUI4_LR89f" resolve="defaultActivationCondition" />
           </node>
         </node>
         <node concept="2iRfu4" id="2N0FrS4t_7Z" role="2iSdaV" />

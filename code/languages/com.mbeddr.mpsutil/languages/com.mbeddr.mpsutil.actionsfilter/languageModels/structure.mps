@@ -85,7 +85,7 @@
     <node concept="1TJgyj" id="2jUI4_LR89f" role="1TKVEi">
       <property role="IQ2ns" value="2664644755125469775" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="activationCondition" />
+      <property role="20kJfa" value="defaultActivationCondition" />
       <ref role="20lvS9" node="2jUI4_LQLA2" resolve="ActivationCondition" />
     </node>
     <node concept="PrWs8" id="5FJiYrlIp_E" role="PzmwI">
