@@ -14295,6 +14295,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="2jUI4_LVCQc" role="3bR37C">
+            <node concept="3bR9La" id="2jUI4_LVCQd" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="7YLbEQvgyh2" role="1E1XAP">
           <ref role="1E0d5P" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
@@ -14319,6 +14324,16 @@
             <node concept="3qWCbU" id="4PRpvcZJNNT" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2jUI4_LVCPX" role="3bR37C">
+          <node concept="3bR9La" id="2jUI4_LVCPY" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2jUI4_LVCQa" role="3bR37C">
+          <node concept="1Busua" id="2jUI4_LVCQb" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>

@@ -9960,12 +9960,26 @@
                     <node concept="1bVj0M" id="2y5$DYCdQkC" role="23t8la">
                       <node concept="3clFbS" id="2y5$DYCdQkD" role="1bW5cS">
                         <node concept="3clFbF" id="2y5$DYCdQkE" role="3cqZAp">
-                          <node concept="2OqwBi" id="2y5$DYCdQkF" role="3clFbG">
-                            <node concept="37vLTw" id="2y5$DYCdQkG" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2y5$DYCdQkI" resolve="it" />
+                          <node concept="1Wc70l" id="2jUI4_LSLeg" role="3clFbG">
+                            <node concept="2OqwBi" id="2jUI4_LSPT$" role="3uHU7w">
+                              <node concept="37vLTw" id="2jUI4_LSN$N" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2y5$DYCdQkI" resolve="it" />
+                              </node>
+                              <node concept="liA8E" id="2jUI4_LST6W" role="2OqNvi">
+                                <ref role="37wK5l" node="2jUI4_LRtLD" resolve="canBeActivated" />
+                                <node concept="2YIFZM" id="2jUI4_LSXhI" role="37wK5m">
+                                  <ref role="37wK5l" to="bd8o:~ApplicationInfo.getInstance()" resolve="getInstance" />
+                                  <ref role="1Pybhc" to="bd8o:~ApplicationInfo" resolve="ApplicationInfo" />
+                                </node>
+                              </node>
                             </node>
-                            <node concept="liA8E" id="2y5$DYCdQkH" role="2OqNvi">
-                              <ref role="37wK5l" node="2y5$DYCdEUj" resolve="getActiveByDefault" />
+                            <node concept="2OqwBi" id="2y5$DYCdQkF" role="3uHU7B">
+                              <node concept="37vLTw" id="2y5$DYCdQkG" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2y5$DYCdQkI" resolve="it" />
+                              </node>
+                              <node concept="liA8E" id="2y5$DYCdQkH" role="2OqNvi">
+                                <ref role="37wK5l" node="2y5$DYCdEUj" resolve="getActiveByDefault" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -11584,6 +11598,25 @@
       <node concept="37vLTG" id="2y5$DYCdK6G" role="3clF46">
         <property role="TrG5h" value="isActiveByDefault" />
         <node concept="10P_77" id="2y5$DYCdK6F" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2jUI4_LRcxE" role="jymVt" />
+    <node concept="3clFb_" id="2jUI4_LRtLD" role="jymVt">
+      <property role="TrG5h" value="canBeActivated" />
+      <node concept="3clFbS" id="2jUI4_LRtLG" role="3clF47">
+        <node concept="3clFbF" id="2jUI4_LRuB0" role="3cqZAp">
+          <node concept="3clFbT" id="2jUI4_LRuAZ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2jUI4_LRreT" role="1B3o_S" />
+      <node concept="10P_77" id="2jUI4_LRsiX" role="3clF45" />
+      <node concept="37vLTG" id="2jUI4_LRvD6" role="3clF46">
+        <property role="TrG5h" value="applicationInfo" />
+        <node concept="3uibUv" id="2jUI4_LRvD5" role="1tU5fm">
+          <ref role="3uigEE" to="bd8o:~ApplicationInfo" resolve="ApplicationInfo" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49MflvOP3v2" role="jymVt" />
