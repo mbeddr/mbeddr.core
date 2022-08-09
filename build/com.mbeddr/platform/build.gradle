@@ -127,13 +127,15 @@ publishing {
             artifact package_mbeddrPlatform
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                    dependencyNode.appendNode('scope', 'provided')
+                if (!project.skipresolve_mps) {
+                    configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                        def dependencyNode = dependenciesNode.appendNode('dependency')
+                        dependencyNode.appendNode('groupId', it.moduleGroup)
+                        dependencyNode.appendNode('artifactId', it.moduleName)
+                        dependencyNode.appendNode('version', it.moduleVersion)
+                        dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                        dependencyNode.appendNode('scope', 'provided')
+                    }
                 }
                 /*configurations.mpsExtensions.resolvedConfiguration.firstLevelModuleDependencies.each{
                     def dependencyNode = dependenciesNode.appendNode('dependency')
@@ -151,13 +153,15 @@ publishing {
             artifact package_allScripts
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
-                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                    dependencyNode.appendNode('scope', 'provided')
+                if (!project.skipresolve_mps) {
+                    configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
+                        def dependencyNode = dependenciesNode.appendNode('dependency')
+                        dependencyNode.appendNode('groupId', it.moduleGroup)
+                        dependencyNode.appendNode('artifactId', it.moduleName)
+                        dependencyNode.appendNode('version', it.moduleVersion)
+                        dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                        dependencyNode.appendNode('scope', 'provided')
+                    }
                 }
             }
         }
