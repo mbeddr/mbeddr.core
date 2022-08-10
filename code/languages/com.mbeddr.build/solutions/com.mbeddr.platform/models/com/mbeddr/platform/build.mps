@@ -271,7 +271,6 @@
       <property role="2_GNG2" value="2048" />
       <property role="TZNOO" value="9" />
       <property role="2_Ic$B" value="true" />
-      <property role="1Zh0CI" value="--add-opens=java.desktop/sun.font=ALL-UNNAMED" />
     </node>
     <node concept="1wNqPr" id="3AVJcIMlF8m" role="3989C9">
       <property role="1wNuhc" value="true" />
@@ -22119,6 +22118,7 @@
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
       <property role="2_Ic$B" value="true" />
+      <property role="1Zh0CI" value="--add-opens=java.desktop/sun.font=ALL-UNNAMED" />
     </node>
     <node concept="1wNqPr" id="2B1T7v1mPqn" role="3989C9">
       <property role="1wNuhc" value="true" />
