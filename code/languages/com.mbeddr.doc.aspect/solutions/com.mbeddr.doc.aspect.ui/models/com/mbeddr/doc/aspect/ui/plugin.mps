@@ -1312,6 +1312,30 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="2rQmnTBoOo1" role="3cqZAp">
+                  <node concept="2OqwBi" id="2rQmnTBoP4G" role="3clFbG">
+                    <node concept="37vLTw" id="2rQmnTBoOnZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="18EYPZeyhLK" resolve="contentManager" />
+                    </node>
+                    <node concept="liA8E" id="2rQmnTBoPYM" role="2OqNvi">
+                      <ref role="37wK5l" to="v7ux:~ContentManager.setSelectedContent(com.intellij.ui.content.Content)" resolve="setSelectedContent" />
+                      <node concept="2OqwBi" id="1xz_RDHWpNr" role="37wK5m">
+                        <node concept="37vLTw" id="1xz_RDHWl96" role="2Oq$k0">
+                          <ref role="3cqZAo" node="18EYPZeyhLK" resolve="contentManager" />
+                        </node>
+                        <node concept="liA8E" id="1xz_RDHWqtP" role="2OqNvi">
+                          <ref role="37wK5l" to="v7ux:~ContentManager.getContent(javax.swing.JComponent)" resolve="getContent" />
+                          <node concept="2OqwBi" id="1xz_RDHWrno" role="37wK5m">
+                            <node concept="2WthIp" id="1xz_RDHWqP1" role="2Oq$k0" />
+                            <node concept="2BZ7hE" id="1xz_RDHWrOj" role="2OqNvi">
+                              <ref role="2WH_rO" node="19PERUGMVUM" resolve="conceptDocPanel" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3clFbC" id="18EYPZeyjur" role="3clFbw">
                 <node concept="10Nm6u" id="18EYPZeyj$6" role="3uHU7w" />
@@ -1459,6 +1483,38 @@
           </node>
         </node>
         <node concept="3clFbH" id="18EYPZeDKx7" role="3cqZAp" />
+        <node concept="3clFbJ" id="2rQmnTBpm2j" role="3cqZAp">
+          <node concept="3clFbS" id="2rQmnTBpm2l" role="3clFbx">
+            <node concept="3clFbF" id="5nrF9ZyFjgp" role="3cqZAp">
+              <node concept="2OqwBi" id="5nrF9ZyFkoM" role="3clFbG">
+                <node concept="37vLTw" id="5nrF9ZyFjgn" role="2Oq$k0">
+                  <ref role="3cqZAo" node="18EYPZeyhLK" resolve="contentManager" />
+                </node>
+                <node concept="liA8E" id="5nrF9ZyFkYO" role="2OqNvi">
+                  <ref role="37wK5l" to="v7ux:~ContentManager.setSelectedContent(com.intellij.ui.content.Content)" resolve="setSelectedContent" />
+                  <node concept="2OqwBi" id="2rQmnTBpnpU" role="37wK5m">
+                    <node concept="37vLTw" id="2rQmnTBpnpV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="18EYPZeyhLK" resolve="contentManager" />
+                    </node>
+                    <node concept="liA8E" id="2rQmnTBpnpW" role="2OqNvi">
+                      <ref role="37wK5l" to="v7ux:~ContentManager.getContent(javax.swing.JComponent)" resolve="getContent" />
+                      <node concept="2OqwBi" id="2rQmnTBpnpX" role="37wK5m">
+                        <node concept="2WthIp" id="2rQmnTBpnpY" role="2Oq$k0" />
+                        <node concept="2BZ7hE" id="2rQmnTBpnpZ" role="2OqNvi">
+                          <ref role="2WH_rO" node="19PERUGMVUM" resolve="conceptDocPanel" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="2rQmnTBpmsD" role="3clFbw">
+            <ref role="3cqZAo" node="18EYPZeyS0h" resolve="showConceptContent" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2rQmnTBplxs" role="3cqZAp" />
         <node concept="3SKdUt" id="18EYPZeDKVY" role="3cqZAp">
           <node concept="1PaTwC" id="7YfMbbtnJ6o" role="1aUNEU">
             <node concept="3oM_SD" id="7YfMbbtnJ6q" role="1PaTwD">
