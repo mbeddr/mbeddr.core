@@ -120,7 +120,7 @@ publishing {
             groupId 'com.mbeddr'
             artifactId 'jre'
             version mbeddrBuildNumber
-            artifact(publish_JRE) {}
+            artifact(package_JRE) {}
         }
     }
 }
@@ -135,7 +135,7 @@ task download_JRE(type: Exec) {
     commandLine('ant', *args, 'get-jdk')
 }
 
-task publish_JRE(type: Zip, dependsOn: download_JRE) {
+task package_JRE(type: Zip, dependsOn: download_JRE) {
     from rootProject.projectDir.absolutePath + "/buildUtil"
     include "jdk.zip"
     include "jdk..tar.gz"
@@ -148,19 +148,19 @@ publishing {
             groupId cbmc_groupId
             artifactId cbmc_artifactId_mac
             version cbmc_version
-            artifact(publish_cbmcMac) {}
+            artifact(package_cbmcMac) {}
         }
         cbmcLinux(MavenPublication) {
             groupId cbmc_groupId
             artifactId cbmc_artifactId_linux
             version cbmc_version
-            artifact(publish_cbmcLinux) {}
+            artifact(package_cbmcLinux) {}
         }
         cbmcWin(MavenPublication) {
             groupId cbmc_groupId
             artifactId cbmc_artifactId_win
             version cbmc_version
-            artifact(publish_cbmcWin) {}
+            artifact(package_cbmcWin) {}
         }
     }
 }
@@ -188,15 +188,15 @@ task build_cbmcLinux(type: Exec) {
     commandLine(args)
 }
 
-task publish_cbmcWin(type: Zip) {
+task package_cbmcWin(type: Zip) {
     from file(cbmcHome.absolutePath + "/" + "cbmc-win.zip")
 }
 
-task publish_cbmcMac(type: Zip) {
+task package_cbmcMac(type: Zip) {
     from file(cbmcHome.absolutePath + "/" + "cbmc-mac.zip")
 }
 
-task publish_cbmcLinux(type: Zip) {
+task package_cbmcLinux(type: Zip) {
     from file(cbmcHome.absolutePath + "/" + "cbmc-linux.tar.gz")
 }
 

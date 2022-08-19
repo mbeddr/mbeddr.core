@@ -53,7 +53,7 @@ task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
     include "*/*.xml"
 }
 
-task publish_allScripts(type: Zip, dependsOn: build_allScripts) {
+task package_allScripts(type: Zip, dependsOn: build_allScripts) {
     archiveName 'com.mbeddr.allScripts.build.zip'
     from artifactsDir
     include "com.mbeddr.allScripts.build/**"
@@ -95,7 +95,7 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platfor
     outputs.dir("$rootDir/artifacts/com.mbeddr.platform.distribution")
 }
 
-task publish_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
+task package_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     archiveName 'com.mbeddr.platform.zip'
     from artifactsDir
     include "com.mbeddr.platform/**"
@@ -124,7 +124,7 @@ publishing {
             groupId 'com.mbeddr'
             artifactId 'platform'
             version mbeddrPlatformBuildNumber
-            artifact publish_mbeddrPlatform
+            artifact package_mbeddrPlatform
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
@@ -148,7 +148,7 @@ publishing {
             groupId 'com.mbeddr'
             artifactId 'allScripts'
             version mbeddrPlatformBuildNumber
-            artifact publish_allScripts
+            artifact package_allScripts
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {

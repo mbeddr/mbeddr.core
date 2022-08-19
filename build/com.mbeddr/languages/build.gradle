@@ -185,7 +185,7 @@ if (ciBuild) {
     pubDeb = build_mbeddr
 }
 
-task publish_mbeddr(type: Zip, dependsOn: pubDeb) {
+task package_mbeddr(type: Zip, dependsOn: pubDeb) {
     archiveName 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"
@@ -197,7 +197,7 @@ publishing {
             groupId 'com.mbeddr'
             artifactId 'mbeddr'
             version mbeddrBuildNumber
-            artifact(publish_mbeddr) {}
+            artifact(package_mbeddr) {}
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 configurations.mbeddrPlatform.resolvedConfiguration.firstLevelModuleDependencies.each{
