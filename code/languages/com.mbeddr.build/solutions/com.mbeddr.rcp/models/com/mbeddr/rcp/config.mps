@@ -311,26 +311,6 @@
     </node>
     <node concept="398rNT" id="AyMfzoGqLv" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="AyMfzoGqLw" role="398pKh">
-        <node concept="2Ry0Ak" id="AyMfzoGqLx" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="AyMfzoGqLy" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="AyMfzoGqLz" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="AyMfzoGqL$" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="AyMfzoGqL_" role="2Ry0An">
-                  <property role="2Ry0Am" value="mps-distrib" />
-                  <node concept="2Ry0Ak" id="AyMfzoGqLA" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 3.1" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="AyMfzoGqLB" role="1l3spd">
       <property role="TrG5h" value="artifacts.allInOne" />
