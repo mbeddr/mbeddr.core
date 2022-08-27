@@ -1044,6 +1044,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3T$s_3ZdQDe" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQDf" role="398pKh">
+        <ref role="398BVh" node="7Vt15sLW_n6" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="7Vt15sLW_nb" role="1l3spd">
       <property role="TrG5h" value="mbeddr.ext" />
       <node concept="398BVA" id="7Vt15sLW_nc" role="398pKh">

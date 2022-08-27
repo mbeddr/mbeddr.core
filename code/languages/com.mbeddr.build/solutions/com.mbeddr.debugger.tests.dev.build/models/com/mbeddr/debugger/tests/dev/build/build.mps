@@ -186,6 +186,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6F_Y3ntlESI" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="6F_Y3ntlHRr" role="398pKh">
+        <ref role="398BVh" node="7eF9rfAuv3K" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="6RmoJr95HKz" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts" />
       <node concept="398BVA" id="5ueaxoTp3Fe" role="398pKh">

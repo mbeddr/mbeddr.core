@@ -2286,6 +2286,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6F_Y3ntlESI" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="6F_Y3ntlHRr" role="398pKh">
+        <ref role="398BVh" node="1cfjnjdGZ8_" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="1cfjnjdGZ8I" role="1l3spd">
       <property role="TrG5h" value="tutorial.dsls.extensions.home" />
       <node concept="398BVA" id="1cfjnjdGZ8J" role="398pKh">

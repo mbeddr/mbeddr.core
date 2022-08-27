@@ -187,6 +187,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3T$s_3ZdQFI" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQFJ" role="398pKh">
+        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="2coa6Xmjrt6" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts" />
       <node concept="398BVA" id="5ueaxoTp3EY" role="398pKh">
@@ -482,6 +488,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3T$s_3ZdQDe" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQDf" role="398pKh">
+        <ref role="398BVh" node="62XMcUo5H0w" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="6RmoJr95I6P" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts" />
       <node concept="398BVA" id="5ueaxoTp3F0" role="398pKh">
@@ -771,6 +783,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3T$s_3ZdQFl" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQFm" role="398pKh">
+        <ref role="398BVh" node="62XMcUo5H0L" resolve="mbeddr.github.core.home" />
       </node>
     </node>
     <node concept="398rNT" id="6RmoJr95Igg" role="1l3spd">
@@ -1099,6 +1117,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6F_Y3ntlESI" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="6F_Y3ntlHRr" role="398pKh">
+        <ref role="398BVh" node="62XMcUo9Rmc" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="6RmoJr95Iab" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts" />
       <node concept="398BVA" id="5ueaxoTp3F4" role="398pKh">
@@ -1292,6 +1316,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3T$s_3ZdQEh" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQEi" role="398pKh">
+        <ref role="398BVh" node="7HfWMO9mkMx" resolve="mbeddr.github.core.home" />
       </node>
     </node>
     <node concept="398rNT" id="6RmoJr95I8w" role="1l3spd">
@@ -1574,6 +1604,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3T$s_3ZdQG2" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQG3" role="398pKh">
+        <ref role="398BVh" node="3OuI4NZK0uF" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="6RmoJr95IdE" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts" />
       <node concept="398BVA" id="5ueaxoTp3F8" role="398pKh">
@@ -1837,6 +1873,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3T$s_3ZdQF1" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQF2" role="398pKh">
+        <ref role="398BVh" node="6ey1bOhy9X0" resolve="mbeddr.github.core.home" />
       </node>
     </node>
     <node concept="398rNT" id="6RmoJr95IbX" role="1l3spd">
@@ -2120,6 +2162,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="3T$s_3ZdQEH" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQEI" role="398pKh">
+        <ref role="398BVh" node="3q6VMvxn393" resolve="mbeddr.github.core.home" />
       </node>
     </node>
     <node concept="398rNT" id="3q6VMvxn398" role="1l3spd">

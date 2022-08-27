@@ -179,6 +179,12 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3T$s_3ZdQ_Y" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="3T$s_3ZdQ_Z" role="398pKh">
+        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+      </node>
+    </node>
     <node concept="398rNT" id="6RmoJr95Has" role="1l3spd">
       <property role="TrG5h" value="mbeddr.artifacts" />
       <node concept="398BVA" id="5ueaxoTp3EM" role="398pKh">
@@ -559,6 +565,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6F_Y3ntlESI" role="1l3spd">
+      <property role="TrG5h" value="mps.macro.mbeddr.github.core.home" />
+      <node concept="398BVA" id="6F_Y3ntlHRr" role="398pKh">
+        <ref role="398BVh" node="7eF9rfAnzXX" resolve="mbeddr.github.core.home" />
       </node>
     </node>
     <node concept="398rNT" id="2coa6Xmjrt6" role="1l3spd">
