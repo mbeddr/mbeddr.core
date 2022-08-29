@@ -1,6 +1,0 @@
-# MPS installation
-mps.home=/Users/domenik/Programs/MPS3.0/
-# Folder where MPS stores it's cache
-mps.platform.caches=/Users/domenik/tmp/mps/
-# Points to the root folder of the mbeddr.core repository
-mbeddr.github.core.home=/Users/domenik/repositories/mbeddr.core/

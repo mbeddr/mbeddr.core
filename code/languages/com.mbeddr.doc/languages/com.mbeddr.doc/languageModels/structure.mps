@@ -4,6 +4,7 @@
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
@@ -14,6 +15,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -638,6 +640,11 @@
     </node>
     <node concept="PrWs8" id="2en8HnCwsSL" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
+    <node concept="1TJgyi" id="6ec5ny7UUCp" role="1TKVEl">
+      <property role="IQ2nx" value="7173131913914984985" />
+      <property role="TrG5h" value="indentLevel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mf_X_Larxx">
@@ -1827,6 +1834,32 @@
     <property role="EcuMT" value="4211260541176321379" />
     <property role="TrG5h" value="ITocEntry" />
     <property role="3GE5qa" value="structure" />
+  </node>
+  <node concept="1TIwiD" id="4pAedZZkdRB">
+    <property role="EcuMT" value="5072804564991794663" />
+    <property role="TrG5h" value="DocRoot" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4pAedZZkdSO" role="1TKVEi">
+      <property role="IQ2ns" value="5072804564991794740" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mpsText" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+    <node concept="1TJgyj" id="4pAedZZkdTc" role="1TKVEi">
+      <property role="IQ2ns" value="5072804564991794764" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="slissonText" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="1TJgyj" id="4pAedZZkdTG" role="1TKVEi">
+      <property role="IQ2ns" value="5072804564991794796" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mbeddrSection" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2TZO3Dbv6N7" resolve="Section" />
+    </node>
   </node>
 </model>
 

@@ -114,6 +114,7 @@
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
       <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <property id="7173131913914984985" name="indentLevel" index="3$pVXx" />
         <child id="5378658552262903589" name="text" index="3X6T9h" />
       </concept>
       <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
@@ -188,6 +189,26 @@
                 </node>
               </node>
             </node>
+            <node concept="3X6T9g" id="1sNMMH9j0mU" role="3Xp5NH">
+              <property role="3$pVXx" value="1" />
+              <node concept="OjmMv" id="1sNMMH9j0mV" role="3X6T9h">
+                <node concept="19SGf9" id="1sNMMH9j0mW" role="OjmMu">
+                  <node concept="19SUe$" id="1sNMMH9j0mX" role="19SJt6">
+                    <property role="19SUeA" value="Nested" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X6T9g" id="1sNMMH9j0np" role="3Xp5NH">
+              <property role="3$pVXx" value="2" />
+              <node concept="OjmMv" id="1sNMMH9j0nq" role="3X6T9h">
+                <node concept="19SGf9" id="1sNMMH9j0nr" role="OjmMu">
+                  <node concept="19SUe$" id="1sNMMH9j0ns" role="19SJt6">
+                    <property role="19SUeA" value="Nested" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3X6T9g" id="GfNMM3dDw8" role="3Xp5NH">
               <node concept="OjmMv" id="GfNMM3dDw9" role="3X6T9h">
                 <node concept="19SGf9" id="GfNMM3dDwa" role="OjmMu">
@@ -222,11 +243,51 @@
                 </node>
               </node>
             </node>
+            <node concept="3X6T9g" id="1sNMMH9j0nW" role="3Xp5NH">
+              <property role="3$pVXx" value="1" />
+              <node concept="OjmMv" id="1sNMMH9j0nX" role="3X6T9h">
+                <node concept="19SGf9" id="1sNMMH9j0nY" role="OjmMu">
+                  <node concept="19SUe$" id="1sNMMH9j0nZ" role="19SJt6">
+                    <property role="19SUeA" value="Orderd Item 2.1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X6T9g" id="1sNMMH9j0or" role="3Xp5NH">
+              <property role="3$pVXx" value="1" />
+              <node concept="OjmMv" id="1sNMMH9j0os" role="3X6T9h">
+                <node concept="19SGf9" id="1sNMMH9j0ot" role="OjmMu">
+                  <node concept="19SUe$" id="1sNMMH9j0ou" role="19SJt6">
+                    <property role="19SUeA" value="Order Item 2.2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X6T9g" id="1sNMMH9j0oY" role="3Xp5NH">
+              <property role="3$pVXx" value="2" />
+              <node concept="OjmMv" id="1sNMMH9j0oZ" role="3X6T9h">
+                <node concept="19SGf9" id="1sNMMH9j0p0" role="OjmMu">
+                  <node concept="19SUe$" id="1sNMMH9j0p1" role="19SJt6">
+                    <property role="19SUeA" value="Order Item 2.2.1" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3X6T9g" id="GfNMM3dDwy" role="3Xp5NH">
               <node concept="OjmMv" id="GfNMM3dDwz" role="3X6T9h">
                 <node concept="19SGf9" id="GfNMM3dDw$" role="OjmMu">
                   <node concept="19SUe$" id="GfNMM3dDw_" role="19SJt6">
                     <property role="19SUeA" value="Ordered Item 3" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3X6T9g" id="1sNMMH9j0p_" role="3Xp5NH">
+              <property role="3$pVXx" value="1" />
+              <node concept="OjmMv" id="1sNMMH9j0pA" role="3X6T9h">
+                <node concept="19SGf9" id="1sNMMH9j0pB" role="OjmMu">
+                  <node concept="19SUe$" id="1sNMMH9j0pC" role="19SJt6">
+                    <property role="19SUeA" value="Order Item 3.1" />
                   </node>
                 </node>
               </node>

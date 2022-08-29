@@ -190,35 +190,6 @@
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="23LEVbRX3hQ" role="398pKh">
-        <node concept="2Ry0Ak" id="4i9pOwKUDzk" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="4i9pOwKUExy" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4i9pOwKUFvK" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="4i9pOwKUGtY" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="4i9pOwKUIWD" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5Px1zmPleUZ" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="5Px1zmPlfV0" role="2Ry0An">
-                      <property role="2Ry0Am" value="Applications" />
-                      <node concept="2Ry0Ak" id="5Px1zmPlfV5" role="2Ry0An">
-                        <property role="2Ry0Am" value="MPS_3.3.app" />
-                        <node concept="2Ry0Ak" id="5Px1zmPlfVa" role="2Ry0An">
-                          <property role="2Ry0Am" value="Contents" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="7uZw0yZ2_Jf" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
@@ -236,15 +207,6 @@
     </node>
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
-    </node>
-    <node concept="398rNT" id="2Xjt3l5c8Xb" role="1l3spd">
-      <property role="TrG5h" value="sl-all.artifacts" />
-      <node concept="398BVA" id="4MR$$QmqyU$" role="398pKh">
-        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="4MR$$QmqzqB" role="iGT6I">
-          <property role="2Ry0Am" value="mps-sl-all" />
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="6RmoJr9qF5L" role="1l3spd">
       <property role="TrG5h" value="platform.artifacts" />
@@ -353,35 +315,6 @@
     </node>
     <node concept="398rNT" id="3$3J06WftG_" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
-      <node concept="55IIr" id="3$3J06WftGA" role="398pKh">
-        <node concept="2Ry0Ak" id="3$3J06WftGB" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3$3J06WftGC" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="3$3J06WftGD" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="3$3J06WftGE" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="3$3J06WftGF" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="3$3J06WftGG" role="2Ry0An">
-                    <property role="2Ry0Am" value=".." />
-                    <node concept="2Ry0Ak" id="3$3J06WftGH" role="2Ry0An">
-                      <property role="2Ry0Am" value="Applications" />
-                      <node concept="2Ry0Ak" id="3$3J06WftGI" role="2Ry0An">
-                        <property role="2Ry0Am" value="MPS_3.3.app" />
-                        <node concept="2Ry0Ak" id="3$3J06WftGJ" role="2Ry0An">
-                          <property role="2Ry0Am" value="Contents" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="3$3J06WftAg" role="1l3spd">
       <property role="TrG5h" value="mbeddr.github.core.home" />
@@ -409,15 +342,6 @@
         <ref role="398BVh" node="3$3J06WftFk" resolve="artifacts.root" />
         <node concept="2Ry0Ak" id="6RmoJr9fVf6" role="iGT6I">
           <property role="2Ry0Am" value="mbeddr" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="dYB2BxirvB" role="1l3spd">
-      <property role="TrG5h" value="sl-all.artifacts" />
-      <node concept="398BVA" id="3$3J06WftAk" role="398pKh">
-        <ref role="398BVh" node="3$3J06WftFk" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="3$3J06WftAl" role="iGT6I">
-          <property role="2Ry0Am" value="mps-sl-all" />
         </node>
       </node>
     </node>
