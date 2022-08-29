@@ -30,6 +30,7 @@
       <dependencies>
         <dependency reexport="false">2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</dependency>
         <dependency reexport="false">864be1b4-10fc-4e1f-9112-c5b47ae9adec(com.mbeddr.doc#4457500422381538528)</dependency>
+        <dependency reexport="false">22a8c356-ae1a-4079-96b0-d5e7c21ae7c4(com.mbeddr.doc.markdown)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:22a8c356-ae1a-4079-96b0-d5e7c21ae7c4:com.mbeddr.doc.markdown" version="0" />
@@ -67,6 +68,7 @@
         <module reference="864be1b4-10fc-4e1f-9112-c5b47ae9adec(com.mbeddr.doc#4457500422381538528)" version="0" />
         <module reference="8b0f9e01-1098-448b-a2c4-fe1c1896ef86(com.mbeddr.doc.gen_markdown)" version="0" />
         <module reference="a825e4df-7af9-48ad-a905-e8467255eb86(com.mbeddr.doc.gen_markdown.generator)" version="0" />
+        <module reference="22a8c356-ae1a-4079-96b0-d5e7c21ae7c4(com.mbeddr.doc.markdown)" version="0" />
         <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
         <module reference="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" version="0" />
         <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />

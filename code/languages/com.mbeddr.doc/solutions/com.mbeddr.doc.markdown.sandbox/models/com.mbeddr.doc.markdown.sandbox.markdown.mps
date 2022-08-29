@@ -40,6 +40,7 @@
         <child id="839091667655686360" name="items" index="rfBmP" />
       </concept>
       <concept id="839091667655686357" name="com.mbeddr.doc.markdown.structure.ListItem" flags="ng" index="rfBmS">
+        <property id="7173131913914984985" name="indentLevel" index="3$pVXx" />
         <child id="839091667655686358" name="content" index="rfBmV" />
       </concept>
     </language>
@@ -123,6 +124,7 @@
         </node>
       </node>
       <node concept="rfBmS" id="I_3mOgBzoJ" role="rfBmP">
+        <property role="3$pVXx" value="1" />
         <node concept="8x1KH" id="I_3mOgBzoO" role="rfBmV">
           <node concept="8x9iX" id="I_3mOgBzoQ" role="8x9i_">
             <property role="8xcQL" value="Ordered Item 2" />
@@ -130,6 +132,7 @@
         </node>
       </node>
       <node concept="rfBmS" id="I_3mOgBzoS" role="rfBmP">
+        <property role="3$pVXx" value="0" />
         <node concept="8x1KH" id="I_3mOgBzp0" role="rfBmV">
           <node concept="8x9iX" id="I_3mOgBzp2" role="8x9i_">
             <property role="8xcQL" value="Ordered Item 3" />
