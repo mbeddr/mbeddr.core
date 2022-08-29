@@ -8,6 +8,7 @@
   <imports>
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -80,6 +81,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="toolBar" />
       <ref role="20lvS9" node="6nrtUqYelxU" resolve="ToolBar" />
+    </node>
+    <node concept="1TJgyj" id="2jUI4_LR89f" role="1TKVEi">
+      <property role="IQ2ns" value="2664644755125469775" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultActivationCondition" />
+      <ref role="20lvS9" node="2jUI4_LQLA2" resolve="ActivationCondition" />
     </node>
     <node concept="PrWs8" id="5FJiYrlIp_E" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -177,6 +184,18 @@
         <property role="t5JxN" value="path is always relative to mps_home" />
       </node>
     </node>
+  </node>
+  <node concept="1TIwiD" id="2jUI4_LQLA2">
+    <property role="EcuMT" value="2664644755125377410" />
+    <property role="TrG5h" value="ActivationCondition" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="2jUI4_LQRKG">
+    <property role="EcuMT" value="2664644755125402668" />
+    <property role="TrG5h" value="ConceptFunction_ApplicationInfo" />
+    <property role="34LRSv" value="applicationInfo" />
+    <property role="R4oN_" value="provides IDE version/help and vendor information" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
 </model>
 
