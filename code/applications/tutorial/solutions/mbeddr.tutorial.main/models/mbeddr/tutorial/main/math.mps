@@ -37,8 +37,10 @@
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
-        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
-        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
+        <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
+        <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
         <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
@@ -57,7 +59,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
@@ -696,6 +698,8 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <property role="UXd52" value="g++" />
+      <property role="UXd4T" value="-std=c++11" />
       <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="4r1mNB_vx4T" role="2Q9xDr">

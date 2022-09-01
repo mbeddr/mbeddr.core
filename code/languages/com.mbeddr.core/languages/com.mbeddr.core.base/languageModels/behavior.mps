@@ -345,7 +345,6 @@
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -20120,7 +20119,7 @@
         <node concept="3clFbJ" id="3ptpjvQq5We" role="3cqZAp">
           <node concept="3clFbS" id="3ptpjvQq5Wf" role="3clFbx">
             <node concept="3SKdUt" id="3ptpjvQq5Wg" role="3cqZAp">
-              <node concept="1PaTwC" id="3ptpjvQq5Wh" role="3ndbpf">
+              <node concept="1PaTwC" id="3ptpjvQq5Wh" role="1aUNEU">
                 <node concept="3oM_SD" id="3ptpjvQq5Wi" role="1PaTwD">
                   <property role="3oM_SC" value="Convert" />
                 </node>
@@ -20247,7 +20246,7 @@
         <node concept="3clFbJ" id="3ptpjvQpV$6" role="3cqZAp">
           <node concept="3clFbS" id="3ptpjvQpV$7" role="3clFbx">
             <node concept="3SKdUt" id="3ptpjvQpXV8" role="3cqZAp">
-              <node concept="1PaTwC" id="3ptpjvQpXV9" role="3ndbpf">
+              <node concept="1PaTwC" id="3ptpjvQpXV9" role="1aUNEU">
                 <node concept="3oM_SD" id="3ptpjvQpXVb" role="1PaTwD">
                   <property role="3oM_SC" value="Convert" />
                 </node>

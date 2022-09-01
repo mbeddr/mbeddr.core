@@ -2,7 +2,7 @@
 <model ref="r:0d2d1e96-2ec7-4797-ad03-f95f261d35d7(mbeddr.tutorial.main.analyses)">
   <persistence version="9" />
   <languages>
-    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="0" />
+    <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="1" />
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
     <use id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc" version="4" />
@@ -128,6 +128,7 @@
       <concept id="2671893947946158498" name="com.mbeddr.core.buildconfig.structure.Library" flags="ng" index="29Nb31" />
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
@@ -136,10 +137,11 @@
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
+      <concept id="1525129109275491768" name="com.mbeddr.core.buildconfig.structure.None" flags="ng" index="ZOQlw" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO">
@@ -400,6 +402,7 @@
       <concept id="8610007178384196427" name="com.mbeddr.core.unittest.structure.UnitTestConfigItem" flags="ng" index="12mU2y" />
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
         <reference id="6118219496725502924" name="event" index="$QhfV" />
         <child id="6118219496725502916" name="args" index="$QhfN" />
@@ -415,7 +418,7 @@
         <property id="4709703140582114945" name="triggerAsConst" index="3yF7Mc" />
       </concept>
       <concept id="5753290798453183908" name="com.mbeddr.ext.statemachines.structure.SmIsInStateTarget" flags="ng" index="3Ox9Vr">
-        <reference id="5753290798453184116" name="state" index="3Ox9Ob" />
+        <child id="1320626622351319641" name="state" index="2gvQMN" />
       </concept>
     </language>
     <language id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math">
@@ -737,6 +740,9 @@
       <node concept="2v9HqM" id="5jQxBp5wBS_" role="2eOfOg">
         <ref role="2v9HqP" to="e1tx:4I37X0YSE6M" resolve="RuntimeVariability" />
       </node>
+      <node concept="ZOQlw" id="tl4PXiqHRl" role="1kZvWc">
+        <property role="TrG5h" value="none" />
+      </node>
     </node>
     <node concept="2eOfOl" id="7zW9XauV1oF" role="2ePNbc">
       <property role="TrG5h" value="hamming" />
@@ -760,6 +766,9 @@
       </node>
       <node concept="2v9HqM" id="7zW9XauV1pz" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+      </node>
+      <node concept="ZOQlw" id="tl4PXiqHRm" role="1kZvWc">
+        <property role="TrG5h" value="none" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="16gulW_kO2D" role="2Q9xDr">
@@ -959,7 +968,7 @@
                 <property role="19ME4Y" value="before event 'P' occurs first time, condition 'Q' must be always true; &#10;if 'P' becomes true then 'Q' need not be true anymore" />
                 <node concept="2qmXGp" id="1Xa7X_jdiZM" role="xqp4n">
                   <node concept="3Ox9Vr" id="1Xa7X_jdiZL" role="1ESnxz">
-                    <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+                    <node concept="6sKY_" id="tl4PXi$QMa" role="2gvQMN" />
                   </node>
                   <node concept="3ZVu4v" id="2h3YlM50mSs" role="1_9fRO">
                     <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />
@@ -967,7 +976,7 @@
                 </node>
                 <node concept="2qmXGp" id="1Xa7X_jdj53" role="xqp4k">
                   <node concept="3Ox9Vr" id="1Xa7X_jdj52" role="1ESnxz">
-                    <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                    <node concept="6sKY_" id="tl4PXi$QMb" role="2gvQMN" />
                   </node>
                   <node concept="3ZVu4v" id="2h3YlM50mS8" role="1_9fRO">
                     <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />
@@ -979,7 +988,7 @@
                 <property role="19ME4Y" value="before event 'P' occurs first time, condition 'Q' must be always true; &#10;if 'P' becomes true then 'Q' need not be true anymore" />
                 <node concept="2qmXGp" id="1Xa7X_jdiYJ" role="xqp4n">
                   <node concept="3Ox9Vr" id="1Xa7X_jdiYI" role="1ESnxz">
-                    <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+                    <node concept="6sKY_" id="tl4PXi$QMc" role="2gvQMN" />
                   </node>
                   <node concept="3ZVu4v" id="2h3YlM50nHQ" role="1_9fRO">
                     <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />
@@ -1025,7 +1034,7 @@
                 </node>
                 <node concept="2qmXGp" id="1Xa7X_jdj0c" role="2L5iDm">
                   <node concept="3Ox9Vr" id="1Xa7X_jdj0b" role="1ESnxz">
-                    <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+                    <node concept="6sKY_" id="tl4PXi$QMd" role="2gvQMN" />
                   </node>
                   <node concept="3ZVu4v" id="3iuCLRa8i8D" role="1_9fRO">
                     <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />
@@ -1035,7 +1044,7 @@
                   <node concept="2EHzL4" id="7erX1gT1xgP" role="3TlMhI">
                     <node concept="2qmXGp" id="1Xa7X_jdio3" role="3TlMhJ">
                       <node concept="3Ox9Vr" id="1Xa7X_jdio2" role="1ESnxz">
-                        <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGfn" resolve="landing" />
+                        <node concept="6sKY_" id="tl4PXi$QMe" role="2gvQMN" />
                       </node>
                       <node concept="3ZVu4v" id="3iuCLRa88g4" role="1_9fRO">
                         <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />
@@ -1052,7 +1061,7 @@
                   </node>
                   <node concept="2qmXGp" id="1Xa7X_jdj4D" role="3TlMhJ">
                     <node concept="3Ox9Vr" id="1Xa7X_jdj4C" role="1ESnxz">
-                      <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGiH" resolve="crashed" />
+                      <node concept="6sKY_" id="tl4PXi$QMf" role="2gvQMN" />
                     </node>
                     <node concept="3ZVu4v" id="3iuCLRa8i9w" role="1_9fRO">
                       <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />
@@ -1065,7 +1074,7 @@
                 <property role="19ME4Y" value="strictly after event 'Q' occurs, until 'R' occurs, condition 'P' should be always true" />
                 <node concept="2qmXGp" id="1Xa7X_jdj0A" role="2L5iDo">
                   <node concept="3Ox9Vr" id="1Xa7X_jdj0_" role="1ESnxz">
-                    <ref role="3Ox9Ob" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                    <node concept="6sKY_" id="tl4PXi$QMg" role="2gvQMN" />
                   </node>
                   <node concept="3ZVu4v" id="7erX1gT1zMn" role="1_9fRO">
                     <ref role="3ZVs_2" node="3iuCLRa88fu" resolve="f" />

@@ -81,18 +81,20 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="target" index="2AWWZH" />
+        <child id="5323740605968447026" name="platform" index="2AWWZH" />
       </concept>
       <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
@@ -1072,6 +1074,9 @@
       <node concept="2v9HqM" id="1vS6pqCuese" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
       </node>
+      <node concept="1l1$C7" id="tl4PXiqHRB" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="DdG17bEorh" role="2ePNbc">
       <property role="TrG5h" value="pan__020_time_harness" />
@@ -1081,6 +1086,9 @@
       <node concept="2v9HqM" id="DdG17bEosf" role="2eOfOg">
         <ref role="2v9HqP" to="3y0n:137zkozyc$V" resolve="time" />
       </node>
+      <node concept="1l1$C7" id="tl4PXiqHRC" role="1kZvWc">
+        <property role="TrG5h" value="any" />
+      </node>
     </node>
     <node concept="1gr5cj" id="1vS6pqCuerf" role="2ePNbc">
       <property role="TrG5h" value="pan__030_master_slave_harness" />
@@ -1089,6 +1097,9 @@
       </node>
       <node concept="2v9HqM" id="1vS6pqCuerY" role="2eOfOg">
         <ref role="2v9HqP" node="1vS6pqCu1kX" resolve="_030_master_slave" />
+      </node>
+      <node concept="1l1$C7" id="tl4PXiqHRD" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2f$52y" id="DdG17bEHcK" role="lGtFl">
