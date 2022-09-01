@@ -141,8 +141,10 @@
         <reference id="7717755763392524108" name="module" index="2v9HqP" />
       </concept>
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
-        <property id="5323740605968447025" name="compilerOptions" index="2AWWZI" />
-        <property id="5323740605968447024" name="compiler" index="2AWWZJ" />
+        <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
+        <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
+        <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
+        <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
         <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
@@ -162,7 +164,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
-        <child id="6282313788306893059" name="index" index="2wJmCp" />
+        <child id="6282313788306893059" name="indexExpr" index="2wJmCp" />
       </concept>
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
       <concept id="279446265608352903" name="com.mbeddr.core.pointers.structure.SizeOfExpr" flags="ng" index="3wxvTy">
@@ -399,13 +401,6 @@
       </concept>
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="5571169721036828248" name="com.mbeddr.core.embedded.structure.StructuredRegister" flags="ng" index="10BMG0">
-        <property id="5571169721036836232" name="enableLowHighAccess" index="10wczg" />
-        <property id="5571169721036836227" name="highSuffix" index="10wczr" />
-        <property id="5571169721036836229" name="lowSuffix" index="10wczt" />
-        <child id="5571169721036836244" name="lowSetExpr" index="10wczc" />
-        <child id="5571169721036836246" name="highSetExpr" index="10wcze" />
-      </concept>
       <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
@@ -989,6 +984,8 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="3I8uaA" value="" />
+      <property role="UXd52" value="g++" />
+      <property role="UXd4T" value="-std=c++11" />
       <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="7VsgA5L655q" role="2Q9xDr">
@@ -1822,26 +1819,11 @@
     <node concept="3V4AM8" id="2wGmDEKl5Tb" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="r2" />
-      <property role="10wczt" value="_L" />
-      <property role="10wczr" value="_H" />
-      <property role="10wczg" value="true" />
       <node concept="2BOcij" id="2wGmDEKlED5" role="3V4yCe">
         <node concept="3TlMh9" id="2wGmDEKlED8" role="3TlMhJ">
           <property role="2hmy$m" value="1000" />
         </node>
         <node concept="3V4jtZ" id="2wGmDEKlD0g" role="3TlMhI" />
-      </node>
-      <node concept="2BOcij" id="2wGmDEKl8NJ" role="10wczc">
-        <node concept="3TlMh9" id="2wGmDEKl8NM" role="3TlMhJ">
-          <property role="2hmy$m" value="10" />
-        </node>
-        <node concept="3V4jtZ" id="2wGmDEKl8MX" role="3TlMhI" />
-      </node>
-      <node concept="2BOcij" id="2wGmDEKlaHe" role="10wcze">
-        <node concept="3TlMh9" id="2wGmDEKlaHh" role="3TlMhJ">
-          <property role="2hmy$m" value="10" />
-        </node>
-        <node concept="3V4jtZ" id="2wGmDEKl9Xw" role="3TlMhI" />
       </node>
     </node>
     <node concept="2NXPZ9" id="1haqAivlFTE" role="N3F5h">

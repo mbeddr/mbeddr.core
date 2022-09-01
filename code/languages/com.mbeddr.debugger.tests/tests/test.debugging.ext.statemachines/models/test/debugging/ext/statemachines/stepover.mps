@@ -39,6 +39,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
@@ -101,9 +102,7 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
-        <reference id="7699669108373698588" name="state" index="6sK1u" />
-      </concept>
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />
@@ -219,6 +218,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="12mU2y" id="22oVTLUfqGN" role="2Q9xDr" />
   </node>
@@ -292,9 +292,7 @@
         <node concept="1_9egQ" id="3_UUdaFlgPN" role="3XIRFZ">
           <node concept="2qmXGp" id="x1qBl$fVH" role="1_9egR">
             <node concept="3Ox9Vr" id="x1qBl$fVG" role="1ESnxz">
-              <node concept="6sKY_" id="4WcLiIgB1TZ" role="2gvQMN">
-                <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
-              </node>
+              <node concept="6sKY_" id="tl4PXi$VxO" role="2gvQMN" />
             </node>
             <node concept="1S7827" id="3_UUdaFlgPQ" role="1_9fRO">
               <ref role="1S7826" node="3_UUdaFlgPA" resolve="sm" />

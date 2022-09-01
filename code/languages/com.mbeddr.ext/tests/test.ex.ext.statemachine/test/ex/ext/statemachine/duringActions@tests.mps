@@ -45,6 +45,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
@@ -106,9 +107,7 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
-        <reference id="7699669108373698588" name="state" index="6sK1u" />
-      </concept>
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="1957198122968598264" name="com.mbeddr.ext.statemachines.structure.ActionList" flags="ng" index="2xGTIE" />
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
@@ -189,6 +188,7 @@
       <property role="3I8uaA" value="" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="7iNM$5cG7Zt" role="2Q9xDr">
       <node concept="2Q9FjX" id="7iNM$5cG7Zu" role="2Q9FjI" />
@@ -315,9 +315,7 @@
           <node concept="c0Tn9" id="5yVrpGYyZE5" role="3XIRFZ">
             <node concept="2qmXGp" id="5yVrpGYyZFn" role="c0Tn6">
               <node concept="3Ox9Vr" id="5yVrpGYyZFG" role="1ESnxz">
-                <node concept="6sKY_" id="5yVrpGYyZFV" role="2gvQMN">
-                  <ref role="6sK1u" node="7iNM$5cG7ZB" resolve="S1" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQw" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="5yVrpGYyZFd" role="1_9fRO">
                 <ref role="3ZVs_2" node="7iNM$5cGkt9" resolve="sm" />
@@ -345,9 +343,7 @@
           <node concept="c0Tn9" id="5yVrpGYyZH5" role="3XIRFZ">
             <node concept="2qmXGp" id="5yVrpGYyZH6" role="c0Tn6">
               <node concept="3Ox9Vr" id="5yVrpGYyZH7" role="1ESnxz">
-                <node concept="6sKY_" id="5yVrpGYyZH8" role="2gvQMN">
-                  <ref role="6sK1u" node="7iNM$5cG7ZB" resolve="S1" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQx" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="5yVrpGYyZH9" role="1_9fRO">
                 <ref role="3ZVs_2" node="7iNM$5cGkt9" resolve="sm" />
@@ -375,9 +371,7 @@
           <node concept="c0Tn9" id="5yVrpGYyZJx" role="3XIRFZ">
             <node concept="2qmXGp" id="5yVrpGYyZJy" role="c0Tn6">
               <node concept="3Ox9Vr" id="5yVrpGYyZJz" role="1ESnxz">
-                <node concept="6sKY_" id="5yVrpGYyZJ$" role="2gvQMN">
-                  <ref role="6sK1u" node="7iNM$5cG7ZB" resolve="S1" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQy" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="5yVrpGYyZJ_" role="1_9fRO">
                 <ref role="3ZVs_2" node="7iNM$5cGkt9" resolve="sm" />
@@ -406,9 +400,7 @@
           <node concept="c0Tn9" id="1_Q4fcr_2YB" role="3XIRFZ">
             <node concept="2qmXGp" id="6PCgYL5xRre" role="c0Tn6">
               <node concept="3Ox9Vr" id="6PCgYL5xRrd" role="1ESnxz">
-                <node concept="6sKY_" id="19jNIE2dWUs" role="2gvQMN">
-                  <ref role="6sK1u" node="1_Q4fcr$Wyd" resolve="S2" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQz" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="1_Q4fcr_2YL" role="1_9fRO">
                 <ref role="3ZVs_2" node="7iNM$5cGkt9" resolve="sm" />
@@ -445,9 +437,7 @@
           <node concept="c0Tn9" id="1_Q4fcr_2YV" role="3XIRFZ">
             <node concept="2qmXGp" id="6PCgYL5xRrj" role="c0Tn6">
               <node concept="3Ox9Vr" id="6PCgYL5xRri" role="1ESnxz">
-                <node concept="6sKY_" id="19jNIE2dWUt" role="2gvQMN">
-                  <ref role="6sK1u" node="7iNM$5cG7ZB" resolve="S1" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQ$" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="1_Q4fcr_2YX" role="1_9fRO">
                 <ref role="3ZVs_2" node="7iNM$5cGkt9" resolve="sm" />
@@ -569,9 +559,7 @@
           <node concept="c0Tn9" id="1_Q4fcr_y$d" role="3XIRFZ">
             <node concept="2qmXGp" id="6PCgYL5xRqS" role="c0Tn6">
               <node concept="3Ox9Vr" id="6PCgYL5xRqR" role="1ESnxz">
-                <node concept="6sKY_" id="19jNIE2dWUu" role="2gvQMN">
-                  <ref role="6sK1u" node="1_Q4fcr_y$j" resolve="I" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQ_" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="1_Q4fcr_y$h" role="1_9fRO">
                 <ref role="3ZVs_2" node="1_Q4fcr_yzC" resolve="csm" />
@@ -591,9 +579,7 @@
           <node concept="c0Tn9" id="1_Q4fcr_y$w" role="3XIRFZ">
             <node concept="2qmXGp" id="6PCgYL5xRqX" role="c0Tn6">
               <node concept="3Ox9Vr" id="6PCgYL5xRqW" role="1ESnxz">
-                <node concept="6sKY_" id="19jNIE2dWUv" role="2gvQMN">
-                  <ref role="6sK1u" node="1_Q4fcr_yzv" resolve="S1" />
-                </node>
+                <node concept="6sKY_" id="tl4PXi$WQA" role="2gvQMN" />
               </node>
               <node concept="3ZVu4v" id="1_Q4fcr_y$$" role="1_9fRO">
                 <ref role="3ZVs_2" node="1_Q4fcr_yzC" resolve="csm" />

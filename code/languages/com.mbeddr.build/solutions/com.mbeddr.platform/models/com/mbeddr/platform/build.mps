@@ -23448,6 +23448,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="tl4PXir6BC" role="3bR31x">
+          <node concept="3LXTmp" id="tl4PXir6BD" role="3rtmxm">
+            <node concept="3qWCbU" id="tl4PXir6BE" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="tl4PXir6BF" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="tl4PXir6BG" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="tl4PXir6BH" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.compare.testlang" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4_9e_MLhX80" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -23500,6 +23516,22 @@
         <node concept="1SiIV0" id="4_9e_MLi1yc" role="3bR37C">
           <node concept="3bR9La" id="4_9e_MLi1yd" role="1SiIV1">
             <ref role="3bR37D" node="4_9e_MLhXRZ" resolve="test.com.mbeddr.mpsutil.compare.testlang" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="tl4PXir6Bx" role="3bR31x">
+          <node concept="3LXTmp" id="tl4PXir6By" role="3rtmxm">
+            <node concept="3qWCbU" id="tl4PXir6Bz" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="tl4PXir6B$" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="tl4PXir6B_" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="tl4PXir6BA" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.compare" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -490,9 +490,7 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
-        <reference id="7699669108373698588" name="state" index="6sK1u" />
-      </concept>
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
         <reference id="6118219496725502924" name="event" index="$QhfV" />
@@ -1424,25 +1422,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="6sKY_" id="19jNIE2dWTR" role="2gvQMN">
-                          <ref role="6sK1u" node="41KMvfcjpW7" resolve="s1" />
-                          <node concept="1ZhdrF" id="4WcLiIg0qIw" role="lGtFl">
-                            <property role="2qtEX8" value="state" />
-                            <property role="P3scX" value="564e97d6-8fb7-41f5-bfc1-c7ed376efd62/7699669108373698535/7699669108373698588" />
-                            <node concept="3$xsQk" id="4WcLiIg0qIx" role="3$ytzL">
-                              <node concept="3clFbS" id="4WcLiIg0qIy" role="2VODD2">
-                                <node concept="3clFbF" id="4WcLiIg0qJN" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4WcLiIg0qUe" role="3clFbG">
-                                    <node concept="30H73N" id="4WcLiIg0qJM" role="2Oq$k0" />
-                                    <node concept="3TrEf2" id="4WcLiIg0rdZ" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="clqz:41KMvfcfVEu" resolve="resultingState" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
+                        <node concept="6sKY_" id="tl4PXi$G2T" role="2gvQMN" />
                       </node>
                       <node concept="1S7827" id="3sd798xehB8" role="1_9fRO">
                         <ref role="1S7826" node="41KMvfcgiX3" resolve="v" />

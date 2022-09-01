@@ -44,6 +44,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
@@ -97,9 +98,7 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
-        <reference id="7699669108373698588" name="state" index="6sK1u" />
-      </concept>
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
         <reference id="6118219496725502924" name="event" index="$QhfV" />
@@ -192,6 +191,7 @@
       <property role="3I8uaA" value="" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="4CnBdUFzn1Z" role="2Q9xDr">
       <node concept="2Q9FjX" id="4CnBdUFzn20" role="2Q9FjI" />
@@ -332,9 +332,7 @@
         <node concept="c0Tn9" id="4CnBdUFzRwt" role="3XIRFZ">
           <node concept="2qmXGp" id="6PCgYL5xRou" role="c0Tn6">
             <node concept="3Ox9Vr" id="6PCgYL5xRot" role="1ESnxz">
-              <node concept="6sKY_" id="19jNIE2dWUO" role="2gvQMN">
-                <ref role="6sK1u" node="4CnBdUFzn29" resolve="S1" />
-              </node>
+              <node concept="6sKY_" id="tl4PXi$WR6" role="2gvQMN" />
             </node>
             <node concept="3ZVu4v" id="4CnBdUFzRwx" role="1_9fRO">
               <ref role="3ZVs_2" node="4CnBdUFzRwm" resolve="sm" />
@@ -354,9 +352,7 @@
         <node concept="c0Tn9" id="4CnBdUFzRwI" role="3XIRFZ">
           <node concept="2qmXGp" id="6PCgYL5xRos" role="c0Tn6">
             <node concept="3Ox9Vr" id="6PCgYL5xRor" role="1ESnxz">
-              <node concept="6sKY_" id="19jNIE2dWUP" role="2gvQMN">
-                <ref role="6sK1u" node="4CnBdUFzn29" resolve="S1" />
-              </node>
+              <node concept="6sKY_" id="tl4PXi$WR7" role="2gvQMN" />
             </node>
             <node concept="3ZVu4v" id="4CnBdUFzRwK" role="1_9fRO">
               <ref role="3ZVs_2" node="4CnBdUFzRwm" resolve="sm" />
@@ -386,9 +382,7 @@
         <node concept="c0Tn9" id="4CnBdUFzRx7" role="3XIRFZ">
           <node concept="2qmXGp" id="6PCgYL5xRol" role="c0Tn6">
             <node concept="3Ox9Vr" id="6PCgYL5xRok" role="1ESnxz">
-              <node concept="6sKY_" id="19jNIE2dWUQ" role="2gvQMN">
-                <ref role="6sK1u" node="4CnBdUFzy9I" resolve="S2" />
-              </node>
+              <node concept="6sKY_" id="tl4PXi$WR8" role="2gvQMN" />
             </node>
             <node concept="3ZVu4v" id="4CnBdUFzRx9" role="1_9fRO">
               <ref role="3ZVs_2" node="4CnBdUFzRwm" resolve="sm" />
@@ -411,9 +405,7 @@
         <node concept="c0Tn9" id="4CnBdUFzRxq" role="3XIRFZ">
           <node concept="2qmXGp" id="6PCgYL5xRoq" role="c0Tn6">
             <node concept="3Ox9Vr" id="6PCgYL5xRop" role="1ESnxz">
-              <node concept="6sKY_" id="19jNIE2dWUR" role="2gvQMN">
-                <ref role="6sK1u" node="4CnBdUFzn29" resolve="S1" />
-              </node>
+              <node concept="6sKY_" id="tl4PXi$WR9" role="2gvQMN" />
             </node>
             <node concept="3ZVu4v" id="4CnBdUFzRxs" role="1_9fRO">
               <ref role="3ZVs_2" node="4CnBdUFzRwm" resolve="sm" />

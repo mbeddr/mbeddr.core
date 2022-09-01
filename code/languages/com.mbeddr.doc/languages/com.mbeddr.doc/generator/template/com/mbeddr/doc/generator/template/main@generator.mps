@@ -392,7 +392,6 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
@@ -2807,7 +2806,9 @@
                       <node concept="2OqwBi" id="8QSRajGkBJ" role="2Oq$k0">
                         <node concept="1Q6Npb" id="8QSRajGkBK" role="2Oq$k0" />
                         <node concept="2RRcyG" id="8QSRajGkBL" role="2OqNvi">
-                          <ref role="2RRcyH" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                          <node concept="chp4Y" id="tl4PXinBUW" role="3MHsoP">
+                            <ref role="cht4Q" to="2c95:2TZO3DbuxwK" resolve="Document" />
+                          </node>
                         </node>
                       </node>
                       <node concept="1z4cxt" id="8QSRajGkBM" role="2OqNvi">
@@ -2908,7 +2909,9 @@
                   <node concept="2OqwBi" id="8QSRajPi7k" role="2Oq$k0">
                     <node concept="1Q6Npb" id="8QSRajPi7l" role="2Oq$k0" />
                     <node concept="2RRcyG" id="8QSRajPi7m" role="2OqNvi">
-                      <ref role="2RRcyH" to="2c95:5gTlpaky5gD" resolve="AbstractExport" />
+                      <node concept="chp4Y" id="tl4PXinBUX" role="3MHsoP">
+                        <ref role="cht4Q" to="2c95:5gTlpaky5gD" resolve="AbstractExport" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2HwmR7" id="8QSRajPi7n" role="2OqNvi">
