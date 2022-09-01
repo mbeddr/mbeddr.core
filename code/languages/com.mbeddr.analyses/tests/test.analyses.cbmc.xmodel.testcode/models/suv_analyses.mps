@@ -146,7 +146,9 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="6118219496725500902" name="com.mbeddr.ext.statemachines.structure.SmTriggerTarget" flags="ng" index="$QhJh">
         <reference id="6118219496725502924" name="event" index="$QhfV" />
         <child id="6118219496725502916" name="args" index="$QhfN" />
@@ -481,7 +483,9 @@
                 <property role="19ME4Y" value="before event 'P' occurs first time, condition 'Q' must be true at least once" />
                 <node concept="2qmXGp" id="7bmaDMyb38E" role="xqp4n">
                   <node concept="3Ox9Vr" id="7bmaDMyb3ac" role="1ESnxz">
-                    <node concept="6sKY_" id="tl4PXi$S_E" role="2gvQMN" />
+                    <node concept="6sKY_" id="tl4PXi$S_E" role="2gvQMN">
+                      <ref role="6sK1u" to="s5fh:7bmaDMyb2bL" resolve="S2" />
+                    </node>
                   </node>
                   <node concept="3ZVu4v" id="7bmaDMyb37o" role="1_9fRO">
                     <ref role="3ZVs_2" node="7bmaDMyb2Jy" resolve="sm" />
@@ -489,7 +493,9 @@
                 </node>
                 <node concept="2qmXGp" id="7bmaDMyb35$" role="xqp4k">
                   <node concept="3Ox9Vr" id="7bmaDMyb36Z" role="1ESnxz">
-                    <node concept="6sKY_" id="tl4PXi$S_F" role="2gvQMN" />
+                    <node concept="6sKY_" id="tl4PXi$S_F" role="2gvQMN">
+                      <ref role="6sK1u" to="s5fh:7bmaDMyb2nm" resolve="S3" />
+                    </node>
                   </node>
                   <node concept="3ZVu4v" id="7bmaDMyb35j" role="1_9fRO">
                     <ref role="3ZVs_2" node="7bmaDMyb2Jy" resolve="sm" />
@@ -504,7 +510,9 @@
                 </node>
                 <node concept="2qmXGp" id="7bmaDMyb7Cc" role="xqp4k">
                   <node concept="3Ox9Vr" id="7bmaDMyb7Cd" role="1ESnxz">
-                    <node concept="6sKY_" id="tl4PXi$S_G" role="2gvQMN" />
+                    <node concept="6sKY_" id="tl4PXi$S_G" role="2gvQMN">
+                      <ref role="6sK1u" to="s5fh:7bmaDMyb2bL" resolve="S2" />
+                    </node>
                   </node>
                   <node concept="3ZVu4v" id="7bmaDMyb7Ce" role="1_9fRO">
                     <ref role="3ZVs_2" node="7bmaDMyb2Jy" resolve="sm" />
@@ -519,7 +527,9 @@
                 </node>
                 <node concept="2qmXGp" id="7bmaDMyb8QV" role="xqp4k">
                   <node concept="3Ox9Vr" id="7bmaDMyb8QW" role="1ESnxz">
-                    <node concept="6sKY_" id="tl4PXi$S_H" role="2gvQMN" />
+                    <node concept="6sKY_" id="tl4PXi$S_H" role="2gvQMN">
+                      <ref role="6sK1u" to="s5fh:7bmaDMyb2nm" resolve="S3" />
+                    </node>
                   </node>
                   <node concept="3ZVu4v" id="7bmaDMyb8QX" role="1_9fRO">
                     <ref role="3ZVs_2" node="7bmaDMyb2Jy" resolve="sm" />

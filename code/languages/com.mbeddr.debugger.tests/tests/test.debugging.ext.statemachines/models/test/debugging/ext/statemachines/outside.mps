@@ -103,7 +103,9 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="4643433264759945881" name="com.mbeddr.ext.statemachines.structure.StatemachineTestStatement" flags="ng" index="2cjRdE">
         <child id="4643433264759945883" name="statemachine" index="2cjRdC" />
@@ -335,7 +337,9 @@
               <ref role="1S7826" node="5OGOa7Kb9na" resolve="sm" />
             </node>
             <node concept="1rBQh5" id="x1qBl$bpZ" role="1ESnxz">
-              <node concept="6sKY_" id="tl4PXi$VxL" role="3O_q_j" />
+              <node concept="6sKY_" id="tl4PXi$VxL" role="3O_q_j">
+                <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
+              </node>
             </node>
           </node>
           <node concept="3cQ7KT" id="7ecc3KAqLJA" role="lGtFl">
@@ -345,7 +349,9 @@
         <node concept="c0Tn9" id="mPIr2B$dwi" role="3XIRFZ">
           <node concept="2qmXGp" id="x1qBl$br_" role="c0Tn6">
             <node concept="3Ox9Vr" id="x1qBl$br$" role="1ESnxz">
-              <node concept="6sKY_" id="tl4PXi$VxM" role="2gvQMN" />
+              <node concept="6sKY_" id="tl4PXi$VxM" role="2gvQMN">
+                <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
+              </node>
             </node>
             <node concept="1S7827" id="mPIr2B$dwl" role="1_9fRO">
               <ref role="1S7826" node="5OGOa7Kb9na" resolve="sm" />

@@ -110,7 +110,9 @@
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="4643433264760980254" name="com.mbeddr.ext.statemachines.structure.OutEvent" flags="ng" index="2cfOFH" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
@@ -619,7 +621,9 @@
         <node concept="c0Tn9" id="XSZx7Aii4M" role="3XIRFZ">
           <node concept="2qmXGp" id="XSZx7Aii4N" role="c0Tn6">
             <node concept="3Ox9Vr" id="XSZx7Aii4O" role="1ESnxz">
-              <node concept="6sKY_" id="tl4PXi$S2o" role="2gvQMN" />
+              <node concept="6sKY_" id="tl4PXi$S2o" role="2gvQMN">
+                <ref role="6sK1u" node="XSZx7Aii4x" resolve="SX" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="XSZx7Aii4P" role="1_9fRO">
               <ref role="3ZVs_2" node="XSZx7Aii4C" resolve="sm" />
@@ -1699,7 +1703,9 @@
         <node concept="1_9egQ" id="1BP2U101OIv" role="3XIRFZ">
           <node concept="2qmXGp" id="1BP2U101OIw" role="1_9egR">
             <node concept="3Ox9Vr" id="1BP2U101OIx" role="1ESnxz">
-              <node concept="6sKY_" id="tl4PXi$S2p" role="2gvQMN" />
+              <node concept="6sKY_" id="tl4PXi$S2p" role="2gvQMN">
+                <ref role="6sK1u" node="1BP2U101OIc" resolve="final" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="1BP2U101OIy" role="1_9fRO">
               <ref role="3ZVs_2" node="1BP2U101OIk" resolve="s" />
@@ -1719,7 +1725,9 @@
         <node concept="1_9egQ" id="1BP2U101OIB" role="3XIRFZ">
           <node concept="2qmXGp" id="1BP2U101OIC" role="1_9egR">
             <node concept="1rBQh5" id="1BP2U101OID" role="1ESnxz">
-              <node concept="6sKY_" id="tl4PXi$S2n" role="3O_q_k" />
+              <node concept="6sKY_" id="tl4PXi$S2n" role="3O_q_k">
+                <ref role="6sK1u" node="1BP2U101OIc" resolve="final" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="1BP2U101OIE" role="1_9fRO">
               <ref role="3ZVs_2" node="1BP2U101OIk" resolve="s" />

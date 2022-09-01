@@ -222,7 +222,9 @@
       <concept id="1246687699869804428" name="com.mbeddr.analyses.base.structure.ModelUsedForAnalysesTestsMarker" flags="ng" index="29QVxn" />
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
-      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_" />
+      <concept id="7699669108373698535" name="com.mbeddr.ext.statemachines.structure.StateRef" flags="ng" index="6sKY_">
+        <reference id="7699669108373698588" name="state" index="6sK1u" />
+      </concept>
       <concept id="4643433264760980254" name="com.mbeddr.ext.statemachines.structure.OutEvent" flags="ng" index="2cfOFH" />
       <concept id="4643433264760980253" name="com.mbeddr.ext.statemachines.structure.InEvent" flags="ng" index="2cfOFI" />
       <concept id="8927638623067326788" name="com.mbeddr.ext.statemachines.structure.EmptyStatemachineContent" flags="ng" index="2h6h52" />
@@ -1074,7 +1076,9 @@
         <node concept="Y9XUq" id="5psiJWP_m2R" role="3XIRFZ">
           <node concept="2qmXGp" id="5psiJWP_njc" role="Y9XUp">
             <node concept="3Ox9Vr" id="5psiJWP_nHK" role="1ESnxz">
-              <node concept="6sKY_" id="tl4PXi$SnV" role="2gvQMN" />
+              <node concept="6sKY_" id="tl4PXi$SnV" role="2gvQMN">
+                <ref role="6sK1u" node="5psiJWP$8SJ" resolve="Init" />
+              </node>
             </node>
             <node concept="3ZVu4v" id="5psiJWP_mTG" role="1_9fRO">
               <ref role="3ZVs_2" node="5psiJWP$e8H" resolve="ticker" />
