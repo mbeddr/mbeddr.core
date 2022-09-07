@@ -44,6 +44,11 @@ task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_mps
         }
     }
     script rootProject.file('build/com.mbeddr.allScripts/build.xml')
+    // Next is to tell gradle there's output under specified folder.
+    // Gradle looks into locations during 'configuration' phase, and can't guess the build.xml script (above)
+    // produces anything into artifacts/..., and from time to time considers package_allScripts Zip task
+    // as having NO-SOURCE, and ignores the task
+    outputs.dir(new File(artifactsDir, 'com.mbeddr.allScripts.build/'))
 }
 
 task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
@@ -71,6 +76,9 @@ tasks.getByPath(':build:com.mbeddr:install').dependsOn install_nativelibs_loader
 
 task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('com.mbeddr.platform/build.xml')
+    // see comment in build_allScripts, above, for reasons we need to explicitly state task output
+    // to address NO-SOURCE failure for package_mbeddrPlatform
+    outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
 }
 
 task install_actionsfilter(type: Copy, dependsOn: build_platform) {
