@@ -4,8 +4,6 @@ buildscript {
     repositories {
         mavenLocal()
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
-        // TODO: remove this old Nexus repo when it's finally shut down
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
         mavenCentral()
     }
 
@@ -86,7 +84,7 @@ subprojects {
             ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
         }
     } else {
-        ext.dependencyRepositories = [defaultSnapshotRepository, defaultReleaseRepository]
+        ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
     }
 
     if (project.hasProperty("mbeddrVersion")) {
