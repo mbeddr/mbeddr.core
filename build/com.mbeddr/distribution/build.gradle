@@ -6,10 +6,10 @@ configurations {
     jreWin
 }
 
-ext.jdkVersion = '8u112b408.4'
+ext.jdkVersion = '11_0_11-b1341.60'
 dependencies {
     mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
-    jreWin "com.jetbrains.jdk:jdk:${jdkVersion}:windows_x64@tgz"
+    jreWin "com.jetbrains.jdk:jbr_nomod:${jdkVersion}:windows-x64@tgz"
 }
 
 task resolve_mbeddr() {
@@ -93,7 +93,7 @@ task build_installer(type:Exec, dependsOn: [prepare_installer]) {
 task build_dmg(type: CreateDmg) {
     dependsOn build_mbeddrRCP
     rcpArtifact rootProject.file('artifacts/mpsDistribution/mbeddr-macos.zip')
-    jdkDependency "com.jetbrains.jdk:jdk:${jdkVersion}:osx_x64@tgz"
+    jdkDependency "com.jetbrains.jdk:jbr_nomod:${jdkVersion}:osx-x64@tgz"
     backgroundImage rootProject.file('rcp/icons/mbeddr-logo.png')
     dmgFile rootProject.file('buildUtil/mbeddr-macos.dmg')
 }
