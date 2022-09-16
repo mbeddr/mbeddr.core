@@ -4,13 +4,11 @@ buildscript {
     repositories {
         mavenLocal()
         maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
-        // TODO: remove this old Nexus repo when it's finally shut down
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
         mavenCentral()
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.177.46341c0'
     }
 }
 
@@ -24,11 +22,11 @@ ext.mpsMajor = "2021.2"
 ext.mpsBuild = "2021.2.5"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
+ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
-ext.ciBuild = findNonEmptyProperty("forceCI") ?: !hasNonEmptyProperty('mpsHomeDir') && project.hasProperty("teamcity")
+ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
 
 def jdk_home
 
@@ -54,17 +52,6 @@ if (!new File(jdk_home, "lib").exists()) {
 
 logger.info 'Using JDK at {}', jdk_home
 
-def hasNonEmptyProperty(property) {
-    return project.hasProperty(property) && !project.getProperty(property).empty
-}
-
-def findNonEmptyProperty(property) {
-    if (hasNonEmptyProperty(property)) {
-        return project.getProperty(property)
-    }
-    return null
-}
-
 subprojects {
     // required plugins
     apply plugin: "base"
@@ -74,19 +61,18 @@ subprojects {
 
     // switch to snapshot/release repositories passed with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
-    ext.snapshotRepository = findNonEmptyProperty('snapshotRepository') ?: defaultSnapshotRepository
-    ext.releaseRepository = findNonEmptyProperty('releaseRepository') ?: defaultReleaseRepository
+    ext.snapshotRepository = project.findProperty('snapshotRepository') ?: defaultSnapshotRepository
+    ext.releaseRepository = project.findProperty('releaseRepository') ?: defaultReleaseRepository
     ext.jdk_home = jdk_home
     ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
     // use depencency repositories passed as comma-separated list with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
-    if (project.hasNonEmptyProperty('dependencyRepositories')) {
-        if (project.getProperty('dependencyRepositories') instanceof String) {
-            ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
-        }
+    // TODO: String check is only required due to multiple executions of this block for each subproject - check if this can be refactored to a single global init
+    if (project.findProperty('dependencyRepositories') instanceof String) {
+        ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
     } else {
-        ext.dependencyRepositories = [defaultSnapshotRepository, defaultReleaseRepository]
+        ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
     }
 
     if (project.hasProperty("mbeddrVersion")) {
@@ -129,7 +115,7 @@ subprojects {
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform,
         // as well as mbeddr to be built against a specified existing mbeddr platform version
-        ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+        ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
             // Coerce TeamCity build number to mbeddrBuildNumber by default
