@@ -31,6 +31,7 @@
         <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:935bff03-e393-4547-a3a2-60335e0cad25:com.mbeddr.mpsutil.ccmenu" version="0" />
         <language slang="l:f92af8d7-1fae-4067-8109-17acf80f8e58:com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
