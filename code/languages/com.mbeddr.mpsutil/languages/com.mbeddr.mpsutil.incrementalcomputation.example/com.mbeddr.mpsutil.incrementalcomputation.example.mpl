@@ -47,8 +47,10 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="fca4b687-11d4-461f-9cd4-f00968145931(com.mbeddr.mpsutil.incrementalcomputation)" version="0" />
         <module reference="8ecfd3b5-385b-43fc-ace0-9babcff50bdb(com.mbeddr.mpsutil.incrementalcomputation.example)" version="0" />
         <module reference="8d448870-b829-49a6-b846-6909cfa77369(com.mbeddr.mpsutil.incrementalcomputation.example#3315277234172617647)" version="0" />
+        <module reference="0fdbe445-2f40-47cb-beff-b44f4f5ffde0(com.mbeddr.mpsutil.incrementalcomputation.runtime)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -56,7 +58,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">fca4b687-11d4-461f-9cd4-f00968145931(com.mbeddr.mpsutil.incrementalcomputation)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">8ecfd3b5-385b-43fc-ace0-9babcff50bdb(com.mbeddr.mpsutil.incrementalcomputation.example)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
@@ -117,6 +118,8 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>fca4b687-11d4-461f-9cd4-f00968145931(com.mbeddr.mpsutil.incrementalcomputation)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

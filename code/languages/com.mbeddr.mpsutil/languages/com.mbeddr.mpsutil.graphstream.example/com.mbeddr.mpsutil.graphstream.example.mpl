@@ -47,6 +47,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="5787a8ed-1486-4469-94b0-fa3fc6c8538d(com.mbeddr.mpsutil.graphstream)" version="0" />
         <module reference="72fa8b44-393c-4983-99aa-868cd899b005(com.mbeddr.mpsutil.graphstream.example)" version="0" />
         <module reference="e946f939-5789-4120-98cb-8b3a25a4a2b4(com.mbeddr.mpsutil.graphstream.example#5447190170712116664)" version="0" />
         <module reference="ab71436a-a7d1-4689-ac02-b5fde2ec681f(com.mbeddr.mpsutil.graphstream.runtime)" version="0" />
@@ -57,7 +58,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">5787a8ed-1486-4469-94b0-fa3fc6c8538d(com.mbeddr.mpsutil.graphstream)</dependency>
     <dependency reexport="true">ab71436a-a7d1-4689-ac02-b5fde2ec681f(com.mbeddr.mpsutil.graphstream.runtime)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>
@@ -117,6 +117,8 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>5787a8ed-1486-4469-94b0-fa3fc6c8538d(com.mbeddr.mpsutil.graphstream)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
