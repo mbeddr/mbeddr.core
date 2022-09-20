@@ -31,6 +31,9 @@
     <import index="grj5" ref="r:75af25f2-da3a-4dae-82b6-7c94d174bea9(com.mbeddr.mpsutil.lang.plugin.extensions.generator.model)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -57,6 +60,7 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -67,6 +71,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -76,6 +81,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -83,6 +89,7 @@
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
@@ -103,6 +110,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -132,6 +140,7 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -1409,6 +1418,73 @@
         <node concept="312cEu" id="3ItNAtJea0i" role="1Koe22">
           <property role="2bfB8j" value="true" />
           <property role="TrG5h" value="MyGeneratedTabbedTool" />
+          <node concept="3clFbW" id="2NwUY1vRpPp" role="jymVt">
+            <node concept="37vLTG" id="2NwUY1vlOlU" role="3clF46">
+              <property role="TrG5h" value="project" />
+              <node concept="3uibUv" id="2NwUY1vlOlT" role="1tU5fm">
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="2NwUY1vRq04" role="3clF46">
+              <property role="TrG5h" value="id" />
+              <node concept="3uibUv" id="2NwUY1vRq1S" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="2NwUY1vRq3a" role="3clF46">
+              <property role="TrG5h" value="shortcutsByKeymap" />
+              <node concept="3uibUv" id="2NwUY1vRq7k" role="1tU5fm">
+                <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                <node concept="3uibUv" id="2NwUY1vRqbg" role="11_B2D">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+                <node concept="3uibUv" id="2NwUY1vRqdq" role="11_B2D">
+                  <ref role="3uigEE" to="dxuu:~KeyStroke" resolve="KeyStroke" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTG" id="2NwUY1vRqeg" role="3clF46">
+              <property role="TrG5h" value="icon" />
+              <node concept="3uibUv" id="2NwUY1vRqgi" role="1tU5fm">
+                <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="2NwUY1vRqh3" role="3clF46">
+              <property role="TrG5h" value="anchor" />
+              <node concept="3uibUv" id="2NwUY1vRqk9" role="1tU5fm">
+                <ref role="3uigEE" to="jkny:~ToolWindowAnchor" resolve="ToolWindowAnchor" />
+              </node>
+            </node>
+            <node concept="37vLTG" id="2NwUY1vRqkE" role="3clF46">
+              <property role="TrG5h" value="canCloseContent" />
+              <node concept="10P_77" id="2NwUY1vRqmC" role="1tU5fm" />
+            </node>
+            <node concept="3cqZAl" id="2NwUY1vRpPq" role="3clF45" />
+            <node concept="3clFbS" id="2NwUY1vRpPs" role="3clF47">
+              <node concept="XkiVB" id="2NwUY1vRqqF" role="3cqZAp">
+                <ref role="37wK5l" to="71xd:~BaseTabbedProjectTool.&lt;init&gt;(com.intellij.openapi.project.Project,java.lang.String,java.util.Map,javax.swing.Icon,com.intellij.openapi.wm.ToolWindowAnchor,boolean)" resolve="BaseTabbedProjectTool" />
+                <node concept="37vLTw" id="2NwUY1vRqv5" role="37wK5m">
+                  <ref role="3cqZAo" node="2NwUY1vlOlU" resolve="project" />
+                </node>
+                <node concept="37vLTw" id="2NwUY1vRq_8" role="37wK5m">
+                  <ref role="3cqZAo" node="2NwUY1vRq04" resolve="id" />
+                </node>
+                <node concept="37vLTw" id="2NwUY1vRqFJ" role="37wK5m">
+                  <ref role="3cqZAo" node="2NwUY1vRq3a" resolve="shortcutsByKeymap" />
+                </node>
+                <node concept="37vLTw" id="2NwUY1vRqME" role="37wK5m">
+                  <ref role="3cqZAo" node="2NwUY1vRqeg" resolve="icon" />
+                </node>
+                <node concept="37vLTw" id="2NwUY1vRqTK" role="37wK5m">
+                  <ref role="3cqZAo" node="2NwUY1vRqh3" resolve="anchor" />
+                </node>
+                <node concept="37vLTw" id="2NwUY1vRr0W" role="37wK5m">
+                  <ref role="3cqZAo" node="2NwUY1vRqkE" resolve="canCloseContent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tm1VV" id="2NwUY1vRpPt" role="1B3o_S" />
+          </node>
           <node concept="3clFb_" id="3ItNAtJeab1" role="jymVt">
             <property role="1EzhhJ" value="false" />
             <property role="TrG5h" value="myPinTab" />
