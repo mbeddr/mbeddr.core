@@ -54,6 +54,7 @@
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1998,6 +1999,54 @@
                     <node concept="37vLTw" id="1KDc5EfHWHi" role="37wK5m">
                       <ref role="3cqZAo" node="1KDc5EfHWHw" resolve="docNode" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="oU9tb2IqPT" role="3cqZAp">
+                <node concept="3cpWsn" id="oU9tb2IqPU" role="3cpWs9">
+                  <property role="TrG5h" value="cell" />
+                  <node concept="3uibUv" id="oU9tb2IpvB" role="1tU5fm">
+                    <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                  </node>
+                  <node concept="2OqwBi" id="oU9tb2IqPV" role="33vP2m">
+                    <node concept="2OqwBi" id="oU9tb2IqPW" role="2Oq$k0">
+                      <node concept="2WthIp" id="oU9tb2IqPX" role="2Oq$k0" />
+                      <node concept="2BZ7hE" id="oU9tb2IqPY" role="2OqNvi">
+                        <ref role="2WH_rO" node="1KDc5EfHW8Z" resolve="conceptDocEditor" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="oU9tb2IqPZ" role="2OqNvi">
+                      <ref role="37wK5l" to="exr9:~EditorComponent.findNodeCell(org.jetbrains.mps.openapi.model.SNode)" resolve="findNodeCell" />
+                      <node concept="37vLTw" id="oU9tb2IqQ0" role="37wK5m">
+                        <ref role="3cqZAo" node="1KDc5EfHWHw" resolve="docNode" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="oU9tb2IsIn" role="3cqZAp">
+                <node concept="3clFbS" id="oU9tb2IsIp" role="3clFbx">
+                  <node concept="3clFbF" id="oU9tb2IiVA" role="3cqZAp">
+                    <node concept="2OqwBi" id="oU9tb2HT1M" role="3clFbG">
+                      <node concept="2OqwBi" id="oU9tb2HRG2" role="2Oq$k0">
+                        <node concept="2WthIp" id="oU9tb2HR6g" role="2Oq$k0" />
+                        <node concept="2BZ7hE" id="oU9tb2HSaW" role="2OqNvi">
+                          <ref role="2WH_rO" node="1KDc5EfHW8Z" resolve="conceptDocEditor" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="oU9tb2HVid" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorComponent.changeSelectionWRTFocusPolicy(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="changeSelectionWRTFocusPolicy" />
+                        <node concept="37vLTw" id="oU9tb2IqQ1" role="37wK5m">
+                          <ref role="3cqZAo" node="oU9tb2IqPU" resolve="cell" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="oU9tb2Itz_" role="3clFbw">
+                  <node concept="10Nm6u" id="oU9tb2IujT" role="3uHU7w" />
+                  <node concept="37vLTw" id="oU9tb2IsL1" role="3uHU7B">
+                    <ref role="3cqZAo" node="oU9tb2IqPU" resolve="cell" />
                   </node>
                 </node>
               </node>
