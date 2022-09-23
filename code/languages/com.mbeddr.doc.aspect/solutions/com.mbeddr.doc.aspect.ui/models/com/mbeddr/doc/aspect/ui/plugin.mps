@@ -1643,6 +1643,78 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="37C79oTgBuQ" role="3cqZAp" />
+        <node concept="3SKdUt" id="37C79oTgC1_" role="3cqZAp">
+          <node concept="1PaTwC" id="37C79oTgC1A" role="1aUNEU">
+            <node concept="3oM_SD" id="37C79oTgCc9" role="1PaTwD">
+              <property role="3oM_SC" value="Fhe" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCcc" role="1PaTwD">
+              <property role="3oM_SC" value="following" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCch" role="1PaTwD">
+              <property role="3oM_SC" value="call" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCdM" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCdV" role="1PaTwD">
+              <property role="3oM_SC" value="need" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCey" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCeJ" role="1PaTwD">
+              <property role="3oM_SC" value="emit" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCeY" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCff" role="1PaTwD">
+              <property role="3oM_SC" value="event" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCfy" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCge" role="1PaTwD">
+              <property role="3oM_SC" value="EditorComponentCreateListener.EDITOR_COMPONENT_CREATION." />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCg_" role="1PaTwD">
+              <property role="3oM_SC" value="It" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCgY" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCil" role="1PaTwD">
+              <property role="3oM_SC" value="need," />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCiM" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCjh" role="1PaTwD">
+              <property role="3oM_SC" value="example" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgClx" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCkU" role="1PaTwD">
+              <property role="3oM_SC" value="hyperlink" />
+            </node>
+            <node concept="3oM_SD" id="37C79oTgCm6" role="1PaTwD">
+              <property role="3oM_SC" value="references." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="37C79oTg3Td" role="3cqZAp">
+          <node concept="2OqwBi" id="37C79oTg4GH" role="3clFbG">
+            <node concept="37vLTw" id="37C79oTg3Tb" role="2Oq$k0">
+              <ref role="3cqZAo" node="7r8qu42xnk8" resolve="editorComponent" />
+            </node>
+            <node concept="1PvZjq" id="37C79oTg5Re" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorComponent.notifyCreation()" resolve="notifyCreation" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1KDc5EfHWee" role="3cqZAp">
           <node concept="2OqwBi" id="1KDc5EfHWef" role="3clFbG">
             <node concept="37vLTw" id="19PERUGNKHV" role="2Oq$k0">
