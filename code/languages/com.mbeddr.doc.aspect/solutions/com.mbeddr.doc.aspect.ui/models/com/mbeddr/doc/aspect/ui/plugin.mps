@@ -15,6 +15,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -3093,12 +3094,13 @@
                       </node>
                       <node concept="liA8E" id="11K_5nNfofI" role="2OqNvi">
                         <ref role="37wK5l" to="v7ux:~Content.setDisplayName(java.lang.String)" resolve="setDisplayName" />
-                        <node concept="2OqwBi" id="11K_5nNfofJ" role="37wK5m">
-                          <node concept="37vLTw" id="7NPCd7DFfqj" role="2Oq$k0">
-                            <ref role="3cqZAo" node="11K_5nNfofr" resolve="concept" />
-                          </node>
-                          <node concept="liA8E" id="11K_5nNfofN" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                        <node concept="2OqwBi" id="oU9tb2JOHK" role="37wK5m">
+                          <node concept="2WthIp" id="oU9tb2JOsf" role="2Oq$k0" />
+                          <node concept="2XshWL" id="oU9tb2JP2Q" role="2OqNvi">
+                            <ref role="2WH_rO" node="1pHrmYJMqHS" resolve="getPresentationSafe" />
+                            <node concept="37vLTw" id="oU9tb2JPCo" role="2XxRq1">
+                              <ref role="3cqZAo" node="11K_5nNfog0" resolve="conceptDoc" />
+                            </node>
                           </node>
                         </node>
                       </node>
