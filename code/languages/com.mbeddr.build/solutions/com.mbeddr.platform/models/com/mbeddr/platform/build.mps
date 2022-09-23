@@ -12747,11 +12747,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6SWF67vRYwg" role="3bR37C">
-          <node concept="3bR9La" id="6SWF67vRYwh" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:5cCcm$KATVz" resolve="jetbrains.mps.lang.migration.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6SWF67vRYwi" role="3bR37C">
           <node concept="3bR9La" id="6SWF67vRYwj" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:4NXyWdSDd9c" resolve="jetbrains.mps.project" />
