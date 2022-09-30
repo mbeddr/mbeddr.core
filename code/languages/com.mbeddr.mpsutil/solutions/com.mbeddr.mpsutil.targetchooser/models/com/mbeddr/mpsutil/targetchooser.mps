@@ -7687,8 +7687,17 @@
   </node>
   <node concept="312cEu" id="2Nt6prodkN2">
     <property role="TrG5h" value="TargetChooser_ProjectModulesPoolTreeNode" />
+    <node concept="312cEg" id="6c1XM7qL31H" role="jymVt">
+      <property role="TrG5h" value="myProject" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="6c1XM7qL03t" role="1B3o_S" />
+      <node concept="3uibUv" id="6c1XM7qL2RO" role="1tU5fm">
+        <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+      </node>
+    </node>
     <node concept="312cEg" id="2Nt6prodkN3" role="jymVt">
       <property role="TrG5h" value="mySubtreeFactory" />
+      <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="2Nt6prodkN4" role="1B3o_S" />
       <node concept="3uibUv" id="2Nt6prodkN5" role="1tU5fm">
         <ref role="3uigEE" node="2Nt6pro9jfY" resolve="TargetChooser_SModelsSubtree" />
@@ -7707,6 +7716,16 @@
           <ref role="37wK5l" to="kxvg:~ProjectModulesPoolTreeNode.&lt;init&gt;(jetbrains.mps.project.Project)" resolve="ProjectModulesPoolTreeNode" />
           <node concept="37vLTw" id="2Nt6prodlK9" role="37wK5m">
             <ref role="3cqZAo" node="2Nt6prodlK6" resolve="project" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6c1XM7qL7vv" role="3cqZAp">
+          <node concept="37vLTI" id="6c1XM7qL8f6" role="3clFbG">
+            <node concept="37vLTw" id="6c1XM7qLaih" role="37vLTx">
+              <ref role="3cqZAo" node="2Nt6prodlK6" resolve="project" />
+            </node>
+            <node concept="37vLTw" id="6c1XM7qL7vt" role="37vLTJ">
+              <ref role="3cqZAo" node="6c1XM7qL31H" resolve="myProject" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2Nt6prodlKc" role="3cqZAp">
@@ -7761,6 +7780,34 @@
             <ref role="37wK5l" node="2Nt6prodkNR" resolve="populate" />
           </node>
         </node>
+        <node concept="3SKdUt" id="6c1XM7qLe2r" role="3cqZAp">
+          <node concept="1PaTwC" id="6c1XM7qLe2s" role="1aUNEU">
+            <node concept="3oM_SD" id="6c1XM7qLe2G" role="1PaTwD">
+              <property role="3oM_SC" value="XXX" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLetx" role="1PaTwD">
+              <property role="3oM_SC" value="why" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLeuu" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLevA" role="1PaTwD">
+              <property role="3oM_SC" value="own" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLew5" role="1PaTwD">
+              <property role="3oM_SC" value="field" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLewZ" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLexw" role="1PaTwD">
+              <property role="3oM_SC" value="override" />
+            </node>
+            <node concept="3oM_SD" id="6c1XM7qLe$O" role="1PaTwD">
+              <property role="3oM_SC" value="isInitialized()?" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2Nt6prodkNH" role="3cqZAp">
           <node concept="37vLTI" id="2Nt6prodkNI" role="3clFbG">
             <node concept="3clFbT" id="2Nt6prodkNJ" role="37vLTx">
@@ -7802,7 +7849,15 @@
             <node concept="2OqwBi" id="2Nt6prodoHz" role="33vP2m">
               <node concept="2ShNRf" id="2Nt6prodyO2" role="2Oq$k0">
                 <node concept="1pGfFk" id="2Nt6prodyO3" role="2ShVmc">
-                  <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                  <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="FilteredGlobalScope" />
+                  <node concept="2OqwBi" id="6c1XM7qLbU2" role="37wK5m">
+                    <node concept="37vLTw" id="6c1XM7qLaO8" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6c1XM7qL31H" resolve="myProject" />
+                    </node>
+                    <node concept="liA8E" id="6c1XM7qLcyP" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="liA8E" id="2Nt6prodoH_" role="2OqNvi">
