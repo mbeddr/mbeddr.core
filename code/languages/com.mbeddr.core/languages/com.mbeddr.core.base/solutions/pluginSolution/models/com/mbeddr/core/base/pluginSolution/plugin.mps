@@ -10645,7 +10645,15 @@
             </node>
             <node concept="2ShNRf" id="2qDF1txJfv7" role="2GsD0m">
               <node concept="1pGfFk" id="2qDF1txJkLx" role="2ShVmc">
-                <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="FilteredGlobalScope" />
+                <node concept="2OqwBi" id="6c1XM7qMelY" role="37wK5m">
+                  <node concept="37vLTw" id="6c1XM7qMelZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2qDF1txGFKi" resolve="myProject" />
+                  </node>
+                  <node concept="liA8E" id="6c1XM7qMem0" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

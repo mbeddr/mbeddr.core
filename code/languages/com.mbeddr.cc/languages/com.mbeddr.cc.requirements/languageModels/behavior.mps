@@ -10,7 +10,6 @@
     <import index="75wo" ref="r:eaa205a4-f15c-47d3-99e2-e648881b5997(com.mbeddr.cc.requirements.structure)" />
     <import index="26ao" ref="r:7c15925b-a4a5-4da3-88aa-931a5a9ed982(com.mbeddr.cc.trace.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
-    <import index="yctd" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.findUsages(MPS.Core/)" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
@@ -30,7 +29,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
   </imports>
   <registry>
@@ -206,6 +204,10 @@
       <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
         <child id="1154542793668" name="componentType" index="3g7fb8" />
         <child id="1154542803372" name="initValue" index="3g7hyw" />
+      </concept>
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+        <child id="1160998916832" name="message" index="1gVpfI" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -5411,6 +5413,39 @@
           </node>
         </node>
         <node concept="3clFbH" id="5ajiCS7a7k7" role="3cqZAp" />
+        <node concept="3cpWs8" id="6c1XM7qN_qE" role="3cqZAp">
+          <node concept="3cpWsn" id="6c1XM7qN_qC" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="6c1XM7qNHaF" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="6c1XM7qOugw" role="33vP2m">
+              <node concept="2JrnkZ" id="6c1XM7qOn0t" role="2Oq$k0">
+                <node concept="2OqwBi" id="6c1XM7qOaxE" role="2JrQYb">
+                  <node concept="37vLTw" id="6c1XM7qO3UB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ajiCS7a7jA" resolve="r" />
+                  </node>
+                  <node concept="I4A8Y" id="6c1XM7qOitt" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6c1XM7qOAAn" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="6c1XM7qPf5M" role="3cqZAp">
+          <node concept="3y3z36" id="6c1XM7qPl5o" role="1gVkn0">
+            <node concept="10Nm6u" id="6c1XM7qPrwI" role="3uHU7w" />
+            <node concept="37vLTw" id="6c1XM7qPfhv" role="3uHU7B">
+              <ref role="3cqZAo" node="6c1XM7qN_qC" resolve="repo" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="6c1XM7qPCRN" role="1gVpfI">
+            <property role="Xl_RC" value="non-trivial logic for a detached node?" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="5ajiCS7a7k8" role="3cqZAp">
           <node concept="3cpWsn" id="5ajiCS7a7jr" role="3cpWs9">
             <property role="TrG5h" value="referencesToR" />
@@ -5428,7 +5463,10 @@
                 <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="findUsages" />
                 <node concept="2ShNRf" id="4oSz90kaQVz" role="37wK5m">
                   <node concept="1pGfFk" id="4oSz90kb6iy" role="2ShVmc">
-                    <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                    <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="FilteredGlobalScope" />
+                    <node concept="37vLTw" id="6c1XM7qOHoZ" role="37wK5m">
+                      <ref role="3cqZAo" node="6c1XM7qN_qC" resolve="repo" />
+                    </node>
                   </node>
                 </node>
                 <node concept="37vLTw" id="2AZbPfOK9Eb" role="37wK5m">
@@ -7861,6 +7899,37 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6c1XM7qN8Mn" role="3cqZAp">
+          <node concept="3cpWsn" id="6c1XM7qN8Mo" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6c1XM7qN8Gr" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="6c1XM7qN8Mp" role="33vP2m">
+              <node concept="2JrnkZ" id="6c1XM7qN8Mq" role="2Oq$k0">
+                <node concept="2OqwBi" id="6c1XM7qN8Mr" role="2JrQYb">
+                  <node concept="13iPFW" id="6c1XM7qN8Ms" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="6c1XM7qN8Mt" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6c1XM7qN8Mu" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="6c1XM7qNe53" role="3cqZAp">
+          <node concept="3y3z36" id="6c1XM7qNfaQ" role="1gVkn0">
+            <node concept="10Nm6u" id="6c1XM7qNfEj" role="3uHU7w" />
+            <node concept="37vLTw" id="6c1XM7qNe9d" role="3uHU7B">
+              <ref role="3cqZAo" node="6c1XM7qN8Mo" resolve="repo" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="6c1XM7qNgJW" role="1gVpfI">
+            <property role="Xl_RC" value="assume non-trivial behaviors are not invoked for detached nodes" />
+          </node>
+        </node>
         <node concept="2Gpval" id="26F1Swi6xYN" role="3cqZAp">
           <node concept="2GrKxI" id="26F1Swi6xYO" role="2Gsz3X">
             <property role="TrG5h" value="r" />
@@ -7908,7 +7977,10 @@
                     <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="findUsages" />
                     <node concept="2ShNRf" id="1lYqljQZRfb" role="37wK5m">
                       <node concept="1pGfFk" id="1lYqljQZRfc" role="2ShVmc">
-                        <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                        <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="FilteredGlobalScope" />
+                        <node concept="37vLTw" id="6c1XM7qNnfM" role="37wK5m">
+                          <ref role="3cqZAo" node="6c1XM7qN8Mo" resolve="repo" />
+                        </node>
                       </node>
                     </node>
                     <node concept="37vLTw" id="1lYqljQZRhp" role="37wK5m">
@@ -8741,6 +8813,37 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6c1XM7qNpxC" role="3cqZAp">
+          <node concept="3cpWsn" id="6c1XM7qNpxD" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="6c1XM7qNpxE" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="6c1XM7qNpxF" role="33vP2m">
+              <node concept="2JrnkZ" id="6c1XM7qNpxG" role="2Oq$k0">
+                <node concept="2OqwBi" id="6c1XM7qNpxH" role="2JrQYb">
+                  <node concept="13iPFW" id="6c1XM7qNpxI" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="6c1XM7qNpxJ" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6c1XM7qNpxK" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="6c1XM7qNpxL" role="3cqZAp">
+          <node concept="3y3z36" id="6c1XM7qNpxM" role="1gVkn0">
+            <node concept="10Nm6u" id="6c1XM7qNpxN" role="3uHU7w" />
+            <node concept="37vLTw" id="6c1XM7qNpxO" role="3uHU7B">
+              <ref role="3cqZAo" node="6c1XM7qNpxD" resolve="repo" />
+            </node>
+          </node>
+          <node concept="Xl_RD" id="6c1XM7qNpxP" role="1gVpfI">
+            <property role="Xl_RC" value="assume non-trivial behaviors are not invoked for detached nodes" />
+          </node>
+        </node>
         <node concept="2Gpval" id="4U_WvDhXSQk" role="3cqZAp">
           <node concept="2GrKxI" id="4U_WvDhXSQl" role="2Gsz3X">
             <property role="TrG5h" value="r" />
@@ -8788,7 +8891,10 @@
                     <ref role="37wK5l" to="lui2:~FindUsagesFacade.findUsages(org.jetbrains.mps.openapi.module.SearchScope,java.util.Set,org.jetbrains.mps.openapi.util.ProgressMonitor)" resolve="findUsages" />
                     <node concept="2ShNRf" id="1lYqljQZSic" role="37wK5m">
                       <node concept="1pGfFk" id="1lYqljQZSid" role="2ShVmc">
-                        <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                        <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="FilteredGlobalScope" />
+                        <node concept="37vLTw" id="6c1XM7qNr7K" role="37wK5m">
+                          <ref role="3cqZAo" node="6c1XM7qNpxD" resolve="repo" />
+                        </node>
                       </node>
                     </node>
                     <node concept="37vLTw" id="1lYqljQZSie" role="37wK5m">
