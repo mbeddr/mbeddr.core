@@ -68,6 +68,7 @@
     <import index="dp1x" ref="r:84719e1a-99f6-4297-90ba-8ad2a947fa4a(jetbrains.mps.ide.datatransfer)" />
     <import index="1i7y" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.datatransfer(MPS.Editor/)" />
     <import index="qxi4" ref="r:45c19b6d-dd9a-4f15-973f-0267c5e76303(de.itemis.mps.editor.celllayout.runtime)" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
   </imports>
@@ -2087,6 +2088,10 @@
         <node concept="3F1sOY" id="519ky_SprD6" role="3EZMnx">
           <ref role="1NtTu8" to="2c95:519ky_SprCS" resolve="defaultTempPath" />
         </node>
+        <node concept="3F0ifn" id="1$Slyv$x1vT" role="3EZMnx">
+          <property role="3F0ifm" value="default for: include visualized image" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+        </node>
       </node>
       <node concept="3EZMnI" id="1DVF61OYQF6" role="3EZMnx">
         <node concept="pVoyu" id="1DVF61OYQF7" role="3F10Kt">
@@ -2099,6 +2104,10 @@
         <node concept="3F1sOY" id="1DVF61OYQFa" role="3EZMnx">
           <ref role="1NtTu8" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
         </node>
+        <node concept="3F0ifn" id="1$Slyv$x1w3" role="3EZMnx">
+          <property role="3F0ifm" value="default for: embed model content as image" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+        </node>
       </node>
       <node concept="3EZMnI" id="519ky_SprCU" role="3EZMnx">
         <node concept="pVoyu" id="519ky_SprCV" role="3F10Kt">
@@ -2107,6 +2116,10 @@
         <node concept="l2Vlx" id="519ky_SprCX" role="2iSdaV" />
         <node concept="3F0ifn" id="519ky_SprCY" role="3EZMnx">
           <property role="3F0ifm" value="additional paths" />
+        </node>
+        <node concept="3F0ifn" id="1$Slyv$wPW8" role="3EZMnx">
+          <property role="3F0ifm" value="can be referenced as a resource or used instead of the default paths" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
         </node>
         <node concept="3F2HdR" id="519ky_SprCZ" role="3EZMnx">
           <ref role="1NtTu8" to="2c95:5yxqZJwzC3L" resolve="paths" />
@@ -2133,6 +2146,10 @@
         <node concept="3F0ifn" id="3RseghIejGL" role="3EZMnx">
           <property role="3F0ifm" value="size specifications" />
         </node>
+        <node concept="3F0ifn" id="1$Slyv$x42R" role="3EZMnx">
+          <property role="3F0ifm" value="used for figures such as images and visualizations" />
+          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+        </node>
         <node concept="3F2HdR" id="3RseghIejGM" role="3EZMnx">
           <ref role="1NtTu8" to="2c95:7uLL3Mf1pyA" resolve="sizeSpecs" />
           <node concept="2iRkQZ" id="3RseghIejGN" role="2czzBx" />
@@ -2157,6 +2174,10 @@
         <node concept="l2Vlx" id="7uLL3Mf1pyE" role="2iSdaV" />
         <node concept="3F0ifn" id="7uLL3Mf1pyF" role="3EZMnx">
           <property role="3F0ifm" value="shortcuts" />
+        </node>
+        <node concept="3F0ifn" id="1$Slyv$x9qv" role="3EZMnx">
+          <property role="3F0ifm" value="are like macros with arguments that can executed from text via @short. " />
+          <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
         </node>
         <node concept="3F2HdR" id="7uLL3Mf1pyG" role="3EZMnx">
           <ref role="1NtTu8" to="2c95:3RseghIejGG" resolve="shortcuts" />
@@ -2370,6 +2391,10 @@
       <node concept="3F1sOY" id="3RseghIejGF" role="3EZMnx">
         <ref role="1NtTu8" to="2c95:3RseghIejGx" resolve="text" />
       </node>
+    </node>
+    <node concept="3F0ifn" id="1$Slyv$x9qG" role="6VMZX">
+      <property role="3F0ifm" value="The arguments can be referenced via @arg on the right side." />
+      <ref role="1k5W1q" to="tpen:hshO_Yc" resolve="Comment" />
     </node>
   </node>
   <node concept="24kQdi" id="3RseghIemTv">
