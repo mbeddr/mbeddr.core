@@ -48,6 +48,7 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -917,13 +918,29 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6fGXG$6o9s_" role="3cqZAp">
-          <node concept="2YIFZM" id="6fGXG$6obBW" role="3clFbG">
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-            <node concept="10Nm6u" id="6fGXG$6ochS" role="37wK5m" />
-            <node concept="37vLTw" id="6fGXG$6ocql" role="37wK5m">
-              <ref role="3cqZAo" node="6fGXG$6ocqj" resolve="msg" />
+        <node concept="3clFbF" id="7N9Z2vLJkMZ" role="3cqZAp">
+          <node concept="2OqwBi" id="7N9Z2vLJl9l" role="3clFbG">
+            <node concept="2YIFZM" id="7N9Z2vLJkUp" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="7N9Z2vLJlPi" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="7N9Z2vLJlQk" role="37wK5m">
+                <node concept="3clFbS" id="7N9Z2vLJlQl" role="1bW5cS">
+                  <node concept="3clFbF" id="6fGXG$6o9s_" role="3cqZAp">
+                    <node concept="2YIFZM" id="6fGXG$6obBW" role="3clFbG">
+                      <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
+                      <node concept="10Nm6u" id="6fGXG$6ochS" role="37wK5m" />
+                      <node concept="37vLTw" id="6fGXG$6ocql" role="37wK5m">
+                        <ref role="3cqZAo" node="6fGXG$6ocqj" resolve="msg" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="7N9Z2vLJlR8" role="3cqZAp" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
