@@ -3626,7 +3626,7 @@
             <node concept="3cpWs6" id="4zXqh6Um4AP" role="3cqZAp">
               <node concept="2OqwBi" id="4zXqh6TyYep" role="3cqZAk">
                 <node concept="liA8E" id="4zXqh6TyYet" role="2OqNvi">
-                  <ref role="37wK5l" to="rcia:4zXqh6Unq1M" resolve="customizeFormatSpecifier" />
+                  <ref role="37wK5l" to="rcia:4zXqh6Unq1M" resolve="getFormatSpecifier" />
                   <node concept="37vLTw" id="4zXqh6VIql8" role="37wK5m">
                     <ref role="3cqZAo" node="4zXqh6UntSq" resolve="model" />
                   </node>

@@ -264,7 +264,7 @@
           <node concept="3cpWsn" id="58oUBCRuVQb" role="3cpWs9">
             <property role="TrG5h" value="defaults" />
             <node concept="3uibUv" id="58oUBCRuVQc" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
+              <ref role="3uigEE" to="ap4u:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
             </node>
             <node concept="1rXfSq" id="2_w5$M95pBq" role="33vP2m">
               <ref role="37wK5l" node="2_w5$M95lhA" resolve="defaultOptionsBuilder" />
