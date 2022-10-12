@@ -69,7 +69,7 @@
     <node concept="M6xJ_" id="UK_oBp_UIv" role="lGtFl">
       <property role="Hh88m" value="documentedConcept" />
       <node concept="tn0Fv" id="UK_oBpAlGk" role="HhnKV">
-        <property role="tnX3d" value="false" />
+        <property role="tnX3d" value="true" />
       </node>
       <node concept="trNpa" id="UK_oBpA4Tv" role="EQaZv">
         <ref role="trN6q" to="2c95:2TZO3Dbv6N7" resolve="Section" />

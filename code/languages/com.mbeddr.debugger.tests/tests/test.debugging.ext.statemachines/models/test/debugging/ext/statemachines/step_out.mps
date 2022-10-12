@@ -40,6 +40,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
@@ -205,6 +206,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="3_UUdaFlgP2" role="2Q9xDr">
       <node concept="2Q9FjX" id="3_UUdaFlgP3" role="2Q9FjI" />
@@ -299,7 +301,7 @@
         <node concept="1_9egQ" id="3_UUdaFlgPN" role="3XIRFZ">
           <node concept="2qmXGp" id="x1qBl$dBt" role="1_9egR">
             <node concept="3Ox9Vr" id="x1qBl$dBs" role="1ESnxz">
-              <node concept="6sKY_" id="4WcLiIgB1TY" role="2gvQMN">
+              <node concept="6sKY_" id="tl4PXi$VxN" role="2gvQMN">
                 <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
               </node>
             </node>

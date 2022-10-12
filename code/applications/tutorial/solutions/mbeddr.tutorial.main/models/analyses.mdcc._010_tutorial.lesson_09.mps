@@ -40,6 +40,7 @@
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
       <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
         <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+        <child id="5476261277775063442" name="target" index="1kZvWc" />
       </concept>
       <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
         <child id="5046689135694070731" name="binaries" index="2ePNbc" />
@@ -51,6 +52,7 @@
       <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
         <property id="5952395988556102274" name="supportsSharedLibraries" index="uKT8v" />
       </concept>
+      <concept id="5476261277774503065" name="com.mbeddr.core.buildconfig.structure.Any" flags="ng" index="1l1$C7" />
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6282313788306893057" name="com.mbeddr.core.pointers.structure.ArrayAccessExpr" flags="ng" index="2wJmCr">
@@ -242,6 +244,9 @@
       </node>
       <node concept="2v9HqM" id="2s6qLQkujH7" role="2eOfOg">
         <ref role="2v9HqP" node="2s6qLQkugtv" resolve="_000_system_with_internal_state" />
+      </node>
+      <node concept="1l1$C7" id="tl4PXiqHR_" role="1kZvWc">
+        <property role="TrG5h" value="any" />
       </node>
     </node>
   </node>

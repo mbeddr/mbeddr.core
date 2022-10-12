@@ -5017,29 +5017,29 @@
         <ref role="2xQOue" node="2HR3cafXJXP" resolve="ComponentInstanceShape" />
         <node concept="2OqwBi" id="4IDnpfceYH_" role="1xbcaF">
           <node concept="2OqwBi" id="4IDnpfceTHc" role="2Oq$k0">
-            <node concept="1Pxb5l" id="4WN948eQHB4" role="2Oq$k0" />
             <node concept="2qgKlT" id="2IZ2bWs1a3J" role="2OqNvi">
               <ref role="37wK5l" to="eup9:7nJums3A_gz" resolve="getInputPorts" />
             </node>
+            <node concept="1Pxb5l" id="4WN948eQHB4" role="2Oq$k0" />
           </node>
           <node concept="1v1jN8" id="4IDnpfceZoN" role="2OqNvi" />
         </node>
         <node concept="2OqwBi" id="4IDnpfceZwo" role="1xbcaF">
           <node concept="2OqwBi" id="4IDnpfceZwq" role="2Oq$k0">
-            <node concept="1Pxb5l" id="4WN948eQJmW" role="2Oq$k0" />
             <node concept="2qgKlT" id="2IZ2bWs1aH6" role="2OqNvi">
               <ref role="37wK5l" to="eup9:7nJums3AVys" resolve="getOutputPorts" />
             </node>
+            <node concept="1Pxb5l" id="4WN948eQJmW" role="2Oq$k0" />
           </node>
           <node concept="1v1jN8" id="4IDnpfceZwu" role="2OqNvi" />
         </node>
         <node concept="3fqX7Q" id="3diMC1cUxxO" role="1xbcaF">
           <node concept="2OqwBi" id="3diMC1cUxxP" role="3fr31v">
             <node concept="2OqwBi" id="3diMC1cUxxQ" role="2Oq$k0">
-              <node concept="1Pxb5l" id="4WN948eTz0i" role="2Oq$k0" />
               <node concept="3TrEf2" id="3diMC1cUxxS" role="2OqNvi">
                 <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
               </node>
+              <node concept="1Pxb5l" id="4WN948eTz0i" role="2Oq$k0" />
             </node>
             <node concept="1mIQ4w" id="3diMC1cUyIG" role="2OqNvi">
               <node concept="chp4Y" id="3diMC1cUyRl" role="cj9EA">

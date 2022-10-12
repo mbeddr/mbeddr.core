@@ -514,16 +514,6 @@
       </node>
     </node>
   </node>
-  <node concept="1TIwiD" id="3m_MTzl4w2W">
-    <property role="EcuMT" value="3865719712437633212" />
-    <property role="TrG5h" value="DummyMangledNameFinalizer" />
-    <property role="34LRSv" value="dummy mangled name finalizer" />
-    <property role="3GE5qa" value="gen" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3m_MTzl4w2X" role="PzmwI">
-      <ref role="PrY4T" to="x27k:7oF65pen3H4" resolve="IMangledNameFinalizer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="34XNuWnCCBZ">
     <property role="EcuMT" value="3548218508215224831" />
     <property role="3GE5qa" value="module" />
@@ -534,6 +524,16 @@
       <node concept="trNpa" id="34XNuWnCCC2" role="EQaZv">
         <ref role="trN6q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3m_MTzl4w2W">
+    <property role="EcuMT" value="3865719712437633212" />
+    <property role="TrG5h" value="DummyMangledNameFinalizer" />
+    <property role="34LRSv" value="dummy mangled name finalizer" />
+    <property role="3GE5qa" value="gen" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3m_MTzl4w2X" role="PzmwI">
+      <ref role="PrY4T" to="x27k:7oF65pen3H4" resolve="IMangledNameFinalizer" />
     </node>
   </node>
 </model>
