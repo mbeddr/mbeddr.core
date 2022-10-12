@@ -1188,8 +1188,8 @@
                         </node>
                         <node concept="2OqwBi" id="7EZ1Spof9qj" role="33vP2m">
                           <node concept="2YIFZM" id="7EZ1Spof9qk" role="2Oq$k0">
-                            <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
                             <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                            <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
                             <node concept="Xl_RD" id="7EZ1Spof9ql" role="37wK5m">
                               <property role="Xl_RC" value="^(else|endif|endef)" />
                             </node>

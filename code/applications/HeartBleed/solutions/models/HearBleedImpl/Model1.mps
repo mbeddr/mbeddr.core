@@ -60,6 +60,8 @@
       <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
         <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
+        <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
+        <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
         <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
@@ -1249,6 +1251,8 @@
       <property role="3r8Kxs" value="make" />
       <property role="3r8Kw1" value="gdb" />
       <property role="18_EFo" value="gcc" />
+      <property role="UXd52" value="g++" />
+      <property role="UXd4T" value="-std=c++11" />
     </node>
     <node concept="29Nb31" id="4yOgC5DNkxl" role="2ePNbc">
       <property role="TrG5h" value="SSLHeartBeat" />

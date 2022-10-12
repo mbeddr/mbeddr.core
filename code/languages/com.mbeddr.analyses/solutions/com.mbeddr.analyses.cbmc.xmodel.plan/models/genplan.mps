@@ -39,7 +39,6 @@
     <import index="8ztd" ref="r:359a1f2d-1387-40bb-b161-9ae44585a023(com.mbeddr.core.udt.generator.template.main@generator)" implicit="true" />
     <import index="55ds" ref="r:b96d3d41-0689-4c87-9cb2-c68348742fc5(com.mbeddr.ext.components.generator.main.dummy@generator)" implicit="true" />
     <import index="jao2" ref="5d4cc688-63a8-4f95-aa0c-9d6d1a58cf75/r:43c07e77-b032-4380-8e31-f6608c958255(com.mbeddr.mpsutil.review.annotation#8455208232410315500/com.mbeddr.mpsutil.review.annotation.generator.template.main@generator)" implicit="true" />
-    <import index="7e8p" ref="r:03892136-2eeb-485b-8f8a-60160e054ca2(de.slisson.mps.richtext.generator.template.main@generator)" implicit="true" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
@@ -427,12 +426,6 @@
       <node concept="2Pgd6e" id="3jTGQV$9V$u" role="1t_9vn" />
       <node concept="3Vl8EG" id="3jTGQV$9V$v" role="3VlUeB">
         <ref role="3Vl8EH" to="jao2:7lmVLrULBFH" resolve="main" />
-      </node>
-    </node>
-    <node concept="2Pg1uL" id="3jTGQV$9V$z" role="2VgMA7">
-      <node concept="2Pgd6e" id="3jTGQV$9V$$" role="1t_9vn" />
-      <node concept="3Vl8EG" id="3jTGQV$9V$_" role="3VlUeB">
-        <ref role="3Vl8EH" to="7e8p:7HEwqRqEoj3" resolve="main" />
       </node>
     </node>
   </node>

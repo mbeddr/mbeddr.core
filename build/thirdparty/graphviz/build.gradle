@@ -6,7 +6,7 @@ group 'org.graphviz'
 version '2.38'
 
 task getGraphvizWindows(type: Download) {
-    src "http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-${version}.zip"
+    src  "https://www2.graphviz.org/Archive/stable/windows/graphviz-${version}.zip"
     dest "$buildDir/graphviz-${version}-windows.zip"
     overwrite false
 }

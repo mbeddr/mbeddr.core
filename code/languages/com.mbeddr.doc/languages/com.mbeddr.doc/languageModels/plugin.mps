@@ -930,8 +930,8 @@
                       <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
                     </node>
                     <node concept="2YIFZM" id="5pm8$ZezCJs" role="33vP2m">
-                      <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                       <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                      <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                       <node concept="2YIFZM" id="49PUF$HTiTJ" role="37wK5m">
                         <ref role="1Pybhc" to="z1c3:~ProjectPathUtil" resolve="ProjectPathUtil" />
                         <ref role="37wK5l" to="z1c3:~ProjectPathUtil.getGeneratorOutputPath(jetbrains.mps.project.structure.modules.ModuleDescriptor)" resolve="getGeneratorOutputPath" />
@@ -1141,8 +1141,8 @@
                           <node concept="3clFbF" id="5FtAU1q7pmm" role="3cqZAp">
                             <node concept="37vLTI" id="5FtAU1q7pmn" role="3clFbG">
                               <node concept="2YIFZM" id="5FtAU1q7pmo" role="37vLTx">
-                                <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                                 <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                                <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
                                 <node concept="37vLTw" id="5FtAU1q7pmp" role="37wK5m">
                                   <ref role="3cqZAo" node="49PUF$HQmMF" resolve="location" />
                                 </node>

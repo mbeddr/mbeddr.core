@@ -1026,9 +1026,6 @@
       <node concept="m$_yC" id="5bCFa$D2ROT" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
-      <node concept="m$_yC" id="1xlcIshd7bT" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
-      </node>
       <node concept="3_J27D" id="5bCFa$D2ROX" role="m_cZH">
         <node concept="3Mxwew" id="5bCFa$D2ROY" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.dataflow" />
@@ -1042,6 +1039,9 @@
         <node concept="3Mxwew" id="5bCFa$D2RP1" role="3MwsjC">
           <property role="3MwjfP" value="MPS data-flow extensions" />
         </node>
+      </node>
+      <node concept="m$_yC" id="1xlcIshd7bT" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
       </node>
     </node>
     <node concept="m$_wf" id="5fGcQI94fMR" role="3989C9">
@@ -4091,11 +4091,6 @@
             <ref role="3bR37D" node="4sjR92JQmCy" resolve="com.mbeddr.mpsutil.dataflow.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4Cp$eaaJQy3" role="3bR37C">
-          <node concept="3bR9La" id="4Cp$eaaJQy4" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:5bqL32k0kuu" resolve="jetbrains.mps.lang.dataFlow.pluginSolution" />
-          </node>
-        </node>
         <node concept="1BupzO" id="4PRpvcZJNcr" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -4116,6 +4111,11 @@
             <node concept="3qWCbU" id="4PRpvcZJNct" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4Cp$eaaJQy3" role="3bR37C">
+          <node concept="3bR9La" id="4Cp$eaaJQy4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:5bqL32k0kuu" resolve="jetbrains.mps.lang.dataFlow.pluginSolution" />
           </node>
         </node>
       </node>
@@ -23513,16 +23513,16 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="6A$R1s1EkzR" role="3bR31x">
-          <node concept="3LXTmp" id="6A$R1s1EkzS" role="3rtmxm">
-            <node concept="3qWCbU" id="6A$R1s1EkzT" role="3LXTna">
+        <node concept="3rtmxn" id="tl4PXir6BC" role="3bR31x">
+          <node concept="3LXTmp" id="tl4PXir6BD" role="3rtmxm">
+            <node concept="3qWCbU" id="tl4PXir6BE" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
-            <node concept="398BVA" id="6A$R1s1EkzU" role="3LXTmr">
+            <node concept="398BVA" id="tl4PXir6BF" role="3LXTmr">
               <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-              <node concept="2Ry0Ak" id="6A$R1s1EkzV" role="iGT6I">
+              <node concept="2Ry0Ak" id="tl4PXir6BG" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="6A$R1s1EkzW" role="2Ry0An">
+                <node concept="2Ry0Ak" id="tl4PXir6BH" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.compare.testlang" />
                 </node>
               </node>
@@ -23583,16 +23583,16 @@
             <ref role="3bR37D" node="4_9e_MLhXRZ" resolve="test.com.mbeddr.mpsutil.compare.testlang" />
           </node>
         </node>
-        <node concept="3rtmxn" id="6A$R1s1EkzK" role="3bR31x">
-          <node concept="3LXTmp" id="6A$R1s1EkzL" role="3rtmxm">
-            <node concept="3qWCbU" id="6A$R1s1EkzM" role="3LXTna">
+        <node concept="3rtmxn" id="tl4PXir6Bx" role="3bR31x">
+          <node concept="3LXTmp" id="tl4PXir6By" role="3rtmxm">
+            <node concept="3qWCbU" id="tl4PXir6Bz" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
-            <node concept="398BVA" id="6A$R1s1EkzN" role="3LXTmr">
+            <node concept="398BVA" id="tl4PXir6B$" role="3LXTmr">
               <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-              <node concept="2Ry0Ak" id="6A$R1s1EkzO" role="iGT6I">
+              <node concept="2Ry0Ak" id="tl4PXir6B_" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="6A$R1s1EkzP" role="2Ry0An">
+                <node concept="2Ry0Ak" id="tl4PXir6BA" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.compare" />
                 </node>
               </node>
