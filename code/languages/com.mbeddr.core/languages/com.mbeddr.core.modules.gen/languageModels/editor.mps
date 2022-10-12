@@ -1317,13 +1317,6 @@
       <node concept="l2Vlx" id="4UbnhBFlWBJ" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3m_MTzl4yjn">
-    <property role="3GE5qa" value="gen" />
-    <ref role="1XX52x" to="d0vh:3m_MTzl4w2W" resolve="DummyMangledNameFinalizer" />
-    <node concept="PMmxH" id="3m_MTzl4yjp" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4swkQBc9Lnb">
     <property role="3GE5qa" value="module" />
     <ref role="1XX52x" to="d0vh:34XNuWnCCBZ" resolve="SkipContentSortingInGenModule" />
@@ -1333,6 +1326,13 @@
       </node>
       <node concept="2iRkQZ" id="4swkQBc9Lnh" role="2iSdaV" />
       <node concept="2SsqMj" id="4swkQBc9Lnd" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3m_MTzl4yjn">
+    <property role="3GE5qa" value="gen" />
+    <ref role="1XX52x" to="d0vh:3m_MTzl4w2W" resolve="DummyMangledNameFinalizer" />
+    <node concept="PMmxH" id="3m_MTzl4yjp" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
