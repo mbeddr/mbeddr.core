@@ -5969,6 +5969,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="pjHD4N8IWd" role="3bR37C">
+          <node concept="3bR9La" id="pjHD4N8IWe" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
         <node concept="1BupzO" id="4PRpvcZJNir" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
