@@ -10,10 +10,10 @@ subprojects {
     publishing {
         repositories {
             maven {
-                if (project.hasProperty('nexusUsername')) {
+                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
                     credentials {
-                        username project.getProperty('nexusUsername')
-                        password project.getProperty('nexusPassword')
+                        username project.getProperty('artifacts.itemis.cloud.user')
+                        password project.getProperty('artifacts.itemis.cloud.pw')
                     }
                 }
                 url project.releaseRepository

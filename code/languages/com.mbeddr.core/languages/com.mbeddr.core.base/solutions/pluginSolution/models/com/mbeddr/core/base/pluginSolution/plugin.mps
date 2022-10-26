@@ -2476,6 +2476,11 @@
     </node>
     <node concept="2ScWuX" id="DMIuLumKtp" role="tmbBb">
       <node concept="3clFbS" id="DMIuLumKtq" role="2VODD2">
+        <node concept="3clFbF" id="5pX5kNhIvr$" role="3cqZAp">
+          <node concept="3clFbT" id="5pX5kNhIvrz" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
         <node concept="1X3_iC" id="5pX5kNhI1Sj" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -2491,11 +2496,6 @@
                 <ref role="37wK5l" to="guwi:~File.exists()" resolve="exists" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5pX5kNhIvr$" role="3cqZAp">
-          <node concept="3clFbT" id="5pX5kNhIvrz" role="3clFbG">
-            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
@@ -22094,6 +22094,49 @@
             </node>
           </node>
         </node>
+        <node concept="2Gpval" id="4IAlZuu2Q$x" role="3cqZAp">
+          <node concept="2GrKxI" id="4IAlZuu2Q$z" role="2Gsz3X">
+            <property role="TrG5h" value="painter" />
+          </node>
+          <node concept="2OqwBi" id="4IAlZuu2WxD" role="2GsD0m">
+            <node concept="37vLTw" id="4IAlZuu2TZ$" role="2Oq$k0">
+              <ref role="3cqZAo" node="7SQqK0FdFYc" resolve="editorComp" />
+            </node>
+            <node concept="liA8E" id="4IAlZuu311p" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorComponent.getAdditionalPainters()" resolve="getAdditionalPainters" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4IAlZuu2Q$B" role="2LFqv$">
+            <node concept="3clFbJ" id="4IAlZuu31_e" role="3cqZAp">
+              <node concept="2OqwBi" id="4IAlZuu329V" role="3clFbw">
+                <node concept="2GrUjf" id="4IAlZuu31II" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="4IAlZuu2Q$z" resolve="painter" />
+                </node>
+                <node concept="liA8E" id="4IAlZuu399k" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~AdditionalPainter.paintsBackground()" resolve="paintsBackground" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="4IAlZuu31_g" role="3clFbx">
+                <node concept="3clFbF" id="4IAlZuu38wP" role="3cqZAp">
+                  <node concept="2OqwBi" id="4IAlZuu38wR" role="3clFbG">
+                    <node concept="2GrUjf" id="4IAlZuu38wS" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="4IAlZuu2Q$z" resolve="painter" />
+                    </node>
+                    <node concept="liA8E" id="4IAlZuu38wT" role="2OqNvi">
+                      <ref role="37wK5l" to="exr9:~AdditionalPainter.paintBackground(java.awt.Graphics,jetbrains.mps.nodeEditor.EditorComponent)" resolve="paintBackground" />
+                      <node concept="37vLTw" id="4IAlZuu38wU" role="37wK5m">
+                        <ref role="3cqZAo" node="7SQqK0Fdk2e" resolve="g" />
+                      </node>
+                      <node concept="37vLTw" id="4IAlZuu38wV" role="37wK5m">
+                        <ref role="3cqZAo" node="7SQqK0FdFYc" resolve="editorComp" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7SQqK0Fdk4i" role="3cqZAp">
           <node concept="2OqwBi" id="7SQqK0Fdk4j" role="3clFbG">
             <node concept="1eOMI4" id="7SQqK0Fdk4k" role="2Oq$k0">
@@ -22134,6 +22177,49 @@
               <ref role="37wK5l" to="g51k:~EditorCell.paintDecorations(java.awt.Graphics)" resolve="paintDecorations" />
               <node concept="37vLTw" id="7SQqK0Fdk4y" role="37wK5m">
                 <ref role="3cqZAo" node="7SQqK0Fdk2e" resolve="g" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="4IAlZuu3aTd" role="3cqZAp">
+          <node concept="2GrKxI" id="4IAlZuu3aTe" role="2Gsz3X">
+            <property role="TrG5h" value="painter" />
+          </node>
+          <node concept="2OqwBi" id="4IAlZuu3aTf" role="2GsD0m">
+            <node concept="37vLTw" id="4IAlZuu3aTg" role="2Oq$k0">
+              <ref role="3cqZAo" node="7SQqK0FdFYc" resolve="editorComp" />
+            </node>
+            <node concept="liA8E" id="4IAlZuu3aTh" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorComponent.getAdditionalPainters()" resolve="getAdditionalPainters" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4IAlZuu3aTi" role="2LFqv$">
+            <node concept="3clFbJ" id="4IAlZuu3aTj" role="3cqZAp">
+              <node concept="2OqwBi" id="4IAlZuu3aTk" role="3clFbw">
+                <node concept="2GrUjf" id="4IAlZuu3aTl" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="4IAlZuu3aTe" resolve="painter" />
+                </node>
+                <node concept="liA8E" id="4IAlZuu3aTm" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~AdditionalPainter.paintsAbove()" resolve="paintsAbove" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="4IAlZuu3aTn" role="3clFbx">
+                <node concept="3clFbF" id="4IAlZuu3aTo" role="3cqZAp">
+                  <node concept="2OqwBi" id="4IAlZuu3aTp" role="3clFbG">
+                    <node concept="2GrUjf" id="4IAlZuu3aTq" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="4IAlZuu3aTe" resolve="painter" />
+                    </node>
+                    <node concept="liA8E" id="4IAlZuu3aTr" role="2OqNvi">
+                      <ref role="37wK5l" to="exr9:~AdditionalPainter.paint(java.awt.Graphics,jetbrains.mps.nodeEditor.EditorComponent)" resolve="paint" />
+                      <node concept="37vLTw" id="4IAlZuu3aTs" role="37wK5m">
+                        <ref role="3cqZAo" node="7SQqK0Fdk2e" resolve="g" />
+                      </node>
+                      <node concept="37vLTw" id="4IAlZuu3aTt" role="37wK5m">
+                        <ref role="3cqZAo" node="7SQqK0FdFYc" resolve="editorComp" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

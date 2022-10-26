@@ -3,24 +3,24 @@ import de.itemis.mps.gradle.GitBasedVersioning
 buildscript {
     repositories {
         mavenLocal()
-        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
+        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
         mavenCentral()
     }
 
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.168.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.177.46341c0'
     }
 }
 
-ext.defaultSnapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
-ext.defaultReleaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
+ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
+ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "2020.3.+"
 
 //MPS version
 ext.mpsMajor = "2020.3"
-ext.mpsBuild = "2020.3.4"
+ext.mpsBuild = "2020.3.6"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -82,7 +82,7 @@ subprojects {
             ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
         }
     } else {
-        ext.dependencyRepositories = [defaultSnapshotRepository, defaultReleaseRepository]
+        ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
     }
 
     if (project.hasProperty("mbeddrVersion")) {
