@@ -17437,6 +17437,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="3KFSmItZDq_" role="3bR37C">
+            <node concept="3bR9La" id="3KFSmItZDqA" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7YI57w6Ksjs" resolve="jetbrains.mps.lang.test#1210261198005" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="2rKfGsWJCNl" role="3bR37C">
           <node concept="3bR9La" id="2rKfGsWJCNm" role="1SiIV1">
