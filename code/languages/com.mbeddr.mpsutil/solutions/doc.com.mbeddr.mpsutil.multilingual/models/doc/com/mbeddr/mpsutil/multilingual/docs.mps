@@ -254,6 +254,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -504,7 +505,7 @@
         <property role="TrG5h" value="settingsDialog" />
         <node concept="2Sb_l4" id="3TSnT3I_Qxu" role="2SbwM5">
           <property role="2Sb_kV" value="settingsDialog.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="3TSnT3I_QvH" role="2SaI5j">
           <node concept="19SGf9" id="3TSnT3I_QvI" role="OjmMu">
@@ -937,7 +938,7 @@
         <property role="TrG5h" value="conceptStructure" />
         <node concept="2Sb_l4" id="aiIotXwtVo" role="2SbwM5">
           <property role="2Sb_kV" value="multilingualConcept.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXwtV9" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXwtVa" role="OjmMu">
@@ -989,7 +990,7 @@
         <property role="TrG5h" value="conceptPlain" />
         <node concept="2Sb_l4" id="aiIotXF7qH" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExamplePlain.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF7om" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7on" role="OjmMu">
@@ -1027,7 +1028,7 @@
         <property role="TrG5h" value="conceptSimple" />
         <node concept="2Sb_l4" id="aiIotXF7qL" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExampleFlags.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF7qM" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7qN" role="OjmMu">
@@ -1075,7 +1076,7 @@
         <property role="TrG5h" value="conceptExpanded" />
         <node concept="2Sb_l4" id="aiIotXF7te" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExampleExpanded.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF7tf" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7tg" role="OjmMu">
@@ -1177,7 +1178,7 @@
         <property role="TrG5h" value="moduleCommonTab" />
         <node concept="2Sb_l4" id="aiIotXF5bB" role="2SbwM5">
           <property role="2Sb_kV" value="moduleCommonTab.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF4o7" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4o8" role="OjmMu">
@@ -1192,7 +1193,7 @@
         <property role="TrG5h" value="moduleJavaTab" />
         <node concept="2Sb_l4" id="aiIotXF5bE" role="2SbwM5">
           <property role="2Sb_kV" value="moduleJavaTab.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF4rc" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4rd" role="OjmMu">
@@ -1230,7 +1231,7 @@
         <property role="TrG5h" value="resourceStructure" />
         <node concept="2Sb_l4" id="aiIotXF5bH" role="2SbwM5">
           <property role="2Sb_kV" value="exampleDirStructure.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF4FF" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4FG" role="OjmMu">
@@ -1256,16 +1257,19 @@
   <node concept="2SbYGP" id="3TSnT3IxdLq">
     <property role="TrG5h" value="MultilingualDocConfig" />
     <node concept="2SbYGw" id="3TSnT3IxdLr" role="Cbewh">
-      <property role="TrG5h" value="images" />
+      <property role="TrG5h" value="tmp" />
       <node concept="9PVaO" id="5CkU_dHrqX4" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="temp" />
       </node>
     </node>
     <node concept="2SbYGw" id="6VIi5$IArfn" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="6VIi5$IArfo" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images" />
       </node>
     </node>
   </node>
