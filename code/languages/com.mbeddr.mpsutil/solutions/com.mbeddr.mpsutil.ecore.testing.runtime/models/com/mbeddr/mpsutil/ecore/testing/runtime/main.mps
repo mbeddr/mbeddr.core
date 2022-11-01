@@ -22,6 +22,8 @@
     <import index="hu10" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.eclipse.emf.common.util(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -33,6 +35,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -47,9 +52,13 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -137,6 +146,10 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -145,6 +158,10 @@
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -913,16 +930,6 @@
   <node concept="312cEu" id="4MUcKNHlNpD">
     <property role="TrG5h" value="ModelImporterExporterTestingUtil" />
     <property role="3GE5qa" value="modelImportExport" />
-    <node concept="2tJIrI" id="4MUcKNHlNqH" role="jymVt" />
-    <node concept="312cEg" id="4MUcKNHm4bB" role="jymVt">
-      <property role="TrG5h" value="TEMP_XML_FILE" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="4MUcKNHm4bC" role="1B3o_S" />
-      <node concept="17QB3L" id="6XBHSVMGkBC" role="1tU5fm" />
-      <node concept="Xl_RD" id="4MUcKNHm4nw" role="33vP2m">
-        <property role="Xl_RC" value="tempModelInstance.xml" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="4MUcKNHlR4x" role="jymVt" />
     <node concept="3clFb_" id="4MUcKNHlRku" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -960,6 +967,57 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2UFbgC3naH6" role="3cqZAp">
+          <node concept="3cpWsn" id="2UFbgC3naH7" role="3cpWs9">
+            <property role="TrG5h" value="tempFile" />
+            <node concept="3uibUv" id="2UFbgC3naH8" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="2UFbgC3njM9" role="3cqZAp">
+          <node concept="3clFbS" id="2UFbgC3njMa" role="1zxBo7">
+            <node concept="3clFbF" id="2UFbgC3noCJ" role="3cqZAp">
+              <node concept="37vLTI" id="2UFbgC3noCL" role="3clFbG">
+                <node concept="2YIFZM" id="2UFbgC3n0f5" role="37vLTx">
+                  <ref role="37wK5l" to="guwi:~File.createTempFile(java.lang.String,java.lang.String)" resolve="createTempFile" />
+                  <ref role="1Pybhc" to="guwi:~File" resolve="File" />
+                  <node concept="Xl_RD" id="2UFbgC3neGS" role="37wK5m">
+                    <property role="Xl_RC" value="tempModelInstance" />
+                  </node>
+                  <node concept="Xl_RD" id="2UFbgC3n8jP" role="37wK5m">
+                    <property role="Xl_RC" value=".xml" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2UFbgC3noCP" role="37vLTJ">
+                  <ref role="3cqZAo" node="2UFbgC3naH7" resolve="tempFile" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="2UFbgC3njMc" role="1zxBo5">
+            <node concept="3clFbS" id="2UFbgC3njMd" role="1zc67A">
+              <node concept="YS8fn" id="2UFbgC3nl8M" role="3cqZAp">
+                <node concept="2ShNRf" id="2UFbgC3nlJz" role="YScLw">
+                  <node concept="1pGfFk" id="2UFbgC3nmAr" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="37vLTw" id="2UFbgC3nnkq" role="37wK5m">
+                      <ref role="3cqZAo" node="2UFbgC3njMe" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="XOnhg" id="2UFbgC3njMe" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="2UFbgC3njMf" role="1tU5fm">
+                <node concept="3uibUv" id="2UFbgC3njMb" role="nSUat">
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6XBHSVMGRsE" role="3cqZAp">
           <node concept="3cpWsn" id="6XBHSVMGRsF" role="3cpWs9">
             <property role="TrG5h" value="instanceFileURI" />
@@ -969,8 +1027,13 @@
             <node concept="2YIFZM" id="6XBHSVMGRM4" role="33vP2m">
               <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
               <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String)" resolve="createFileURI" />
-              <node concept="37vLTw" id="4MUcKNHm4u9" role="37wK5m">
-                <ref role="3cqZAo" node="4MUcKNHm4bB" resolve="TEMP_XML_FILE" />
+              <node concept="2OqwBi" id="2UFbgC3nimk" role="37wK5m">
+                <node concept="37vLTw" id="4MUcKNHm4u9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2UFbgC3naH7" resolve="tempFile" />
+                </node>
+                <node concept="liA8E" id="2UFbgC3njes" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.toString()" resolve="toString" />
+                </node>
               </node>
             </node>
           </node>
@@ -1061,14 +1124,23 @@
             </node>
             <node concept="liA8E" id="6XBHSVMGJnZ" role="2OqNvi">
               <ref role="37wK5l" to="rpb:6TiIOkRA79C" resolve="importEcoreModel" />
-              <node concept="2OqwBi" id="3HHdT04oCha" role="37wK5m">
-                <node concept="2JrnkZ" id="3HHdT04oCeq" role="2Oq$k0">
-                  <node concept="37vLTw" id="3HHdT04oC6c" role="2JrQYb">
-                    <ref role="3cqZAo" node="4MUcKNHm4$K" resolve="importedModel" />
+              <node concept="2OqwBi" id="2UFbgC3rKcF" role="37wK5m">
+                <node concept="2YIFZM" id="2UFbgC3rFVK" role="2Oq$k0">
+                  <ref role="37wK5l" to="z1c3:~SModuleOperations.getProjectForModule(org.jetbrains.mps.openapi.module.SModule)" resolve="getProjectForModule" />
+                  <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                  <node concept="2OqwBi" id="2UFbgC3rHXR" role="37wK5m">
+                    <node concept="2JrnkZ" id="2UFbgC3rHds" role="2Oq$k0">
+                      <node concept="37vLTw" id="2UFbgC3rGz5" role="2JrQYb">
+                        <ref role="3cqZAo" node="4MUcKNHlRCa" resolve="mpsMetaModel" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="2UFbgC3rIDP" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="3HHdT04oClb" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                <node concept="liA8E" id="2UFbgC3rL3H" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                 </node>
               </node>
             </node>
@@ -1076,16 +1148,11 @@
         </node>
         <node concept="3clFbF" id="4MUcKNHolQU" role="3cqZAp">
           <node concept="2OqwBi" id="4MUcKNHonzI" role="3clFbG">
-            <node concept="2ShNRf" id="4MUcKNHolQQ" role="2Oq$k0">
-              <node concept="1pGfFk" id="4MUcKNHongJ" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="4MUcKNHonn2" role="37wK5m">
-                  <ref role="3cqZAo" node="4MUcKNHm4bB" resolve="TEMP_XML_FILE" />
-                </node>
-              </node>
-            </node>
             <node concept="liA8E" id="4MUcKNHop3S" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~File.delete()" resolve="delete" />
+            </node>
+            <node concept="37vLTw" id="2UFbgC3nsNu" role="2Oq$k0">
+              <ref role="3cqZAo" node="2UFbgC3naH7" resolve="tempFile" />
             </node>
           </node>
         </node>
@@ -1100,7 +1167,7 @@
                 <node concept="liA8E" id="1XBwKttfMNO" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                   <node concept="Xl_RD" id="1XBwKttfNXN" role="37wK5m">
-                    <property role="Xl_RC" value="Model sizes donot equal 1" />
+                    <property role="Xl_RC" value="Model sizes don't equal 1" />
                   </node>
                 </node>
               </node>
