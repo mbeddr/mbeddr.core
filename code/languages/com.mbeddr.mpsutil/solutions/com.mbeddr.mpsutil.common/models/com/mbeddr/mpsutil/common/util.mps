@@ -175,9 +175,7 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
-        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
-      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -188,7 +186,6 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -359,9 +356,6 @@
           <node concept="2ShNRf" id="2tyo97nOIAv" role="3cqZAk">
             <node concept="1pGfFk" id="2tyo97nOIAt" role="2ShVmc">
               <ref role="37wK5l" node="6UjzKD01FIw" resolve="SNodeIdentityWrapperT" />
-              <node concept="16syzq" id="2tyo97nOIAu" role="1pMfVU">
-                <ref role="16sUi3" node="2tyo97nOHRm" resolve="T" />
-              </node>
               <node concept="37vLTw" id="2tyo97nOIC9" role="37wK5m">
                 <ref role="3cqZAo" node="2tyo97nOI$P" resolve="toWrap" />
               </node>
@@ -372,9 +366,6 @@
       <node concept="3Tm1VV" id="2tyo97nOHCy" role="1B3o_S" />
       <node concept="3uibUv" id="2tyo97nOHCO" role="3clF45">
         <ref role="3uigEE" node="6UjzKD01FHy" resolve="SNodeIdentityWrapperT" />
-        <node concept="16syzq" id="2tyo97nOIzt" role="11_B2D">
-          <ref role="16sUi3" node="2tyo97nOHRm" resolve="T" />
-        </node>
       </node>
       <node concept="16euLQ" id="2tyo97nOHRm" role="16eVyc">
         <property role="TrG5h" value="T" />

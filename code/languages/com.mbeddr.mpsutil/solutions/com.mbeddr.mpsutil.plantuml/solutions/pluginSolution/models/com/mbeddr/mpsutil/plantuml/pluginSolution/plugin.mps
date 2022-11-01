@@ -94,10 +94,14 @@
       </concept>
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
       <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
-      <concept id="1227008846812" name="jetbrains.mps.lang.plugin.structure.ActionConstructionParameterDeclaration" flags="ig" index="2JriF1" />
+      <concept id="1227008846812" name="jetbrains.mps.lang.plugin.structure.ActionConstructionParameterDeclaration" flags="ig" index="2JriF1">
+        <child id="1227019158144" name="toStringFunction" index="2K2Cet" />
+      </concept>
       <concept id="1227013049127" name="jetbrains.mps.lang.plugin.structure.AddStatement" flags="nn" index="2JFkCU">
         <child id="1227013166210" name="item" index="2JFLmv" />
       </concept>
+      <concept id="1227019068586" name="jetbrains.mps.lang.plugin.structure.ToStringConceptFunction" flags="in" index="2K2imR" />
+      <concept id="1227019310584" name="jetbrains.mps.lang.plugin.structure.ToStringParameter" flags="nn" index="2K3dj_" />
       <concept id="1239975356883" name="jetbrains.mps.lang.plugin.structure.UpdateGroupBlock" flags="ng" index="2OiAzN">
         <child id="1239975488603" name="updateFunction" index="2Oj6PV" />
       </concept>
@@ -5906,6 +5910,13 @@
       <property role="TrG5h" value="cat" />
       <node concept="3Tm6S6" id="bhVSeGf4_A" role="1B3o_S" />
       <node concept="17QB3L" id="bhVSeGf4RI" role="1tU5fm" />
+      <node concept="2K2imR" id="apJ4OR275k" role="2K2Cet">
+        <node concept="3clFbS" id="apJ4OR275l" role="2VODD2">
+          <node concept="3clFbF" id="apJ4OR27oT" role="3cqZAp">
+            <node concept="2K3dj_" id="apJ4OR27oS" role="3clFbG" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1DS2jV" id="bhVSeGf3sc" role="1NuT2Z">
       <property role="TrG5h" value="project" />

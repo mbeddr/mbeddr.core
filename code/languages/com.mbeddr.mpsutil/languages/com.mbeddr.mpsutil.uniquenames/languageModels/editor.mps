@@ -61,7 +61,6 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -2576,9 +2575,6 @@
             <node concept="VPM3Z" id="hEU$P5i" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
-            <node concept="pj6Ft" id="4G1g3fHey1I" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
             <node concept="ljvvj" id="4G1g3fHey1K" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -2601,9 +2597,6 @@
           <node concept="3F2HdR" id="hd2D4Ww" role="3EZMnx">
             <ref role="1NtTu8" to="tpce:f_TKVDF" resolve="linkDeclaration" />
             <node concept="2EHx9g" id="1KBnK_bsqag" role="2czzBx" />
-            <node concept="pj6Ft" id="4G1g3fHey1N" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
             <node concept="ljvvj" id="4G1g3fHey1P" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -2751,9 +2744,6 @@
           <node concept="3F2HdR" id="hd2EUNy" role="3EZMnx">
             <ref role="1NtTu8" to="tpce:f_TKVDF" resolve="linkDeclaration" />
             <node concept="2EHx9g" id="1KBnK_bwIA2" role="2czzBx" />
-            <node concept="pj6Ft" id="4G1g3fHey1S" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
             <node concept="ljvvj" id="4G1g3fHey1U" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>

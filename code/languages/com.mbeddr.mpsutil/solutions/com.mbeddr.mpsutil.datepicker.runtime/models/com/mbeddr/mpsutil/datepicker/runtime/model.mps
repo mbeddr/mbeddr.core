@@ -2939,7 +2939,7 @@
                   <ref role="3cqZAo" node="CZjRlFEA2$" resolve="m" />
                 </node>
                 <node concept="liA8E" id="CZjRlFF46g" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean)" resolve="setAccessible" />
+                  <ref role="37wK5l" to="t6h5:~Method.setAccessible(boolean)" resolve="setAccessible" />
                   <node concept="3clFbT" id="CZjRlFF4J7" role="37wK5m">
                     <property role="3clFbU" value="true" />
                   </node>

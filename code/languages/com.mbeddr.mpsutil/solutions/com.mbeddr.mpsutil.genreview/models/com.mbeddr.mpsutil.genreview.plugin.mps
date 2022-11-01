@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:1cd5ce6b-eca0-465e-bb52-c96db6e20350(com.mbeddr.mpsutil.genreview.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
@@ -38,6 +39,7 @@
     <import index="9z78" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.border(JDK/)" />
     <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -4856,6 +4858,9 @@
                               <node concept="37vLTw" id="4eouYGyTRZV" role="37wK5m">
                                 <ref role="3cqZAo" node="4eouYGyTzMJ" resolve="line" />
                               </node>
+                              <node concept="37vLTw" id="3YJTqBz7CbV" role="37wK5m">
+                                <ref role="3cqZAo" node="335p1i8Mlgv" resolve="repository" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -5481,6 +5486,9 @@
               <node concept="37vLTw" id="3h_NS8zrL$S" role="37wK5m">
                 <ref role="3cqZAo" node="5z92V1owaY1" resolve="currentFile" />
               </node>
+              <node concept="37vLTw" id="3YJTqBz7R3d" role="37wK5m">
+                <ref role="3cqZAo" node="335p1i8Mlgv" resolve="repository" />
+              </node>
             </node>
           </node>
         </node>
@@ -5928,6 +5936,9 @@
                                 <node concept="37vLTw" id="5z92V1owlzp" role="3uHU7B">
                                   <ref role="3cqZAo" node="5z92V1oDUoK" resolve="clickedLineNumber" />
                                 </node>
+                              </node>
+                              <node concept="37vLTw" id="3YJTqBz864Y" role="37wK5m">
+                                <ref role="3cqZAo" node="335p1i8Mlgv" resolve="repository" />
                               </node>
                             </node>
                             <node concept="37vLTw" id="5z92V1o$sml" role="37vLTJ">
@@ -7040,12 +7051,6 @@
       <node concept="3Tm6S6" id="37J4MLLE6Ba" role="1B3o_S" />
       <node concept="1oajcY" id="37J4MLLE6Bb" role="1oa70y" />
       <node concept="3Tqbb2" id="37J4MLLE6oQ" role="1tU5fm" />
-    </node>
-    <node concept="2S4$dB" id="k2nxMinhy5" role="1NuT2Z">
-      <property role="TrG5h" value="m" />
-      <node concept="3Tm6S6" id="k2nxMinhy6" role="1B3o_S" />
-      <node concept="1oajcY" id="k2nxMinhy7" role="1oa70y" />
-      <node concept="H_c77" id="k2nxMinhjN" role="1tU5fm" />
     </node>
     <node concept="tnohg" id="2TQvFxbywib" role="tncku">
       <node concept="3clFbS" id="2TQvFxbywic" role="2VODD2">
@@ -8205,6 +8210,14 @@
                       <ref role="2WH_rO" node="2JSIhl0gz8Y" resolve="getFile" />
                     </node>
                   </node>
+                  <node concept="2OqwBi" id="3YJTqBz6imJ" role="37wK5m">
+                    <node concept="37vLTw" id="3YJTqBz6hz_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7zKW2MTni5J" resolve="proj" />
+                    </node>
+                    <node concept="liA8E" id="3YJTqBz6j9y" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -8325,6 +8338,14 @@
                   <node concept="37vLTw" id="7zKW2MTrPbY" role="37wK5m">
                     <ref role="3cqZAo" node="7zKW2MTni5f" resolve="n" />
                   </node>
+                  <node concept="2OqwBi" id="3YJTqBz6krr" role="37wK5m">
+                    <node concept="37vLTw" id="3YJTqBz6jFQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7zKW2MTni5J" resolve="proj" />
+                    </node>
+                    <node concept="liA8E" id="3YJTqBz6ldw" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -8383,13 +8404,28 @@
               </node>
               <node concept="9aQIb" id="7zKW2MTrOWl" role="9aQIa">
                 <node concept="3clFbS" id="7zKW2MTrOWm" role="9aQI4">
-                  <node concept="3clFbF" id="7zKW2MTrOWn" role="3cqZAp">
-                    <node concept="2YIFZM" id="7zKW2MTrOWo" role="3clFbG">
-                      <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                      <node concept="10Nm6u" id="7zKW2MTrOWp" role="37wK5m" />
-                      <node concept="Xl_RD" id="7zKW2MTrOWq" role="37wK5m">
-                        <property role="Xl_RC" value="No lines found for selected node! Please try to:\n    1) select another node,\n    2) select another directory where to look for, or\n    3) set the generated file manually." />
+                  <node concept="3clFbF" id="3YJTqBz2O_o" role="3cqZAp">
+                    <node concept="2OqwBi" id="3YJTqBz2PfX" role="3clFbG">
+                      <node concept="2YIFZM" id="3YJTqBz2OOj" role="2Oq$k0">
+                        <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                        <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                      </node>
+                      <node concept="liA8E" id="3YJTqBz2PK2" role="2OqNvi">
+                        <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                        <node concept="1bVj0M" id="3YJTqBz2Q6r" role="37wK5m">
+                          <node concept="3clFbS" id="3YJTqBz2Q6s" role="1bW5cS">
+                            <node concept="3clFbF" id="3YJTqBz2QNM" role="3cqZAp">
+                              <node concept="2YIFZM" id="7zKW2MTrOWo" role="3clFbG">
+                                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
+                                <node concept="10Nm6u" id="7zKW2MTrOWp" role="37wK5m" />
+                                <node concept="Xl_RD" id="7zKW2MTrOWq" role="37wK5m">
+                                  <property role="Xl_RC" value="No lines found for selected node! Please try to:\n    1) select another node,\n    2) select another directory where to look for, or\n    3) set the generated file manually." />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -8507,6 +8543,14 @@
               <node concept="37vLTw" id="7zKW2MTooNT" role="37wK5m">
                 <ref role="3cqZAo" node="7zKW2MTni5f" resolve="n" />
               </node>
+              <node concept="2OqwBi" id="3YJTqBz6mxo" role="37wK5m">
+                <node concept="37vLTw" id="3YJTqBz6lKp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7zKW2MTni5J" resolve="proj" />
+                </node>
+                <node concept="liA8E" id="3YJTqBz6ncl" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -8565,13 +8609,28 @@
           </node>
           <node concept="9aQIb" id="7zKW2MTr2zp" role="9aQIa">
             <node concept="3clFbS" id="7zKW2MTr2zq" role="9aQI4">
-              <node concept="3clFbF" id="7zKW2MTr2Yr" role="3cqZAp">
-                <node concept="2YIFZM" id="7zKW2MTr31c" role="3clFbG">
-                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                  <node concept="10Nm6u" id="7zKW2MTr39y" role="37wK5m" />
-                  <node concept="Xl_RD" id="7zKW2MTr3jQ" role="37wK5m">
-                    <property role="Xl_RC" value="No lines found for selected node! Please try to:\n\t 1) select another node, or\n\t 2) set the generated file manually." />
+              <node concept="3clFbF" id="3YJTqBz2LTf" role="3cqZAp">
+                <node concept="2OqwBi" id="3YJTqBz2MwD" role="3clFbG">
+                  <node concept="2YIFZM" id="3YJTqBz2M6Y" role="2Oq$k0">
+                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                  </node>
+                  <node concept="liA8E" id="3YJTqBz2NkN" role="2OqNvi">
+                    <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                    <node concept="1bVj0M" id="3YJTqBz2N_l" role="37wK5m">
+                      <node concept="3clFbS" id="3YJTqBz2N_m" role="1bW5cS">
+                        <node concept="3clFbF" id="7zKW2MTr2Yr" role="3cqZAp">
+                          <node concept="2YIFZM" id="7zKW2MTr31c" role="3clFbG">
+                            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
+                            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                            <node concept="10Nm6u" id="7zKW2MTr39y" role="37wK5m" />
+                            <node concept="Xl_RD" id="7zKW2MTr3jQ" role="37wK5m">
+                              <property role="Xl_RC" value="No lines found for selected node! Please try to:\n\t 1) select another node, or\n\t 2) set the generated file manually." />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

@@ -218,7 +218,7 @@
                 <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
                 <ref role="37wK5l" to="33ny:~Collections.singletonList(java.lang.Object)" resolve="singletonList" />
                 <node concept="37vLTw" id="$Kq8Mes$rO" role="37wK5m">
-                  <ref role="3cqZAo" node="$Kq8MeslEX" resolve="solution" />
+                  <ref role="3cqZAo" node="$Kq8Mes$LN" resolve="solution" />
                 </node>
                 <node concept="3uibUv" id="$Kq8Mes$C9" role="3PaCim">
                   <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />

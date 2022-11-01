@@ -1681,9 +1681,6 @@
       <node concept="tCFHf" id="2N1CSrzm3gO" role="ftvYc">
         <ref role="tCJdB" node="2N1CSrzm3gS" resolve="copyNodeInfoToClipboard" />
       </node>
-      <node concept="tCFHf" id="2N1CSrzm3gP" role="ftvYc">
-        <ref role="tCJdB" node="2N1CSrzm3j_" resolve="copyNodeURLToClipboard" />
-      </node>
       <node concept="10WQ6h" id="1WzkXggGER5" role="ftvYc">
         <property role="TrG5h" value="moreCopySpecial" />
       </node>
@@ -2151,83 +2148,6 @@
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="2N1CSrzE_xb" role="1oa70y" />
-    </node>
-  </node>
-  <node concept="sE7Ow" id="2N1CSrzm3j_">
-    <property role="TrG5h" value="copyNodeURLToClipboard" />
-    <property role="2uzpH1" value="Copy Node URL to Clipboard" />
-    <property role="3GE5qa" value="clipboard" />
-    <node concept="tnohg" id="2N1CSrzm3jA" role="tncku">
-      <node concept="3clFbS" id="2N1CSrzm3jB" role="2VODD2">
-        <node concept="3cpWs8" id="2N1CSrzm3jC" role="3cqZAp">
-          <node concept="3cpWsn" id="2N1CSrzm3jD" role="3cpWs9">
-            <property role="TrG5h" value="n" />
-            <node concept="3Tqbb2" id="2N1CSrzm3jE" role="1tU5fm" />
-            <node concept="2OqwBi" id="2N1CSrzm3jF" role="33vP2m">
-              <node concept="2WthIp" id="2N1CSrzm3jG" role="2Oq$k0" />
-              <node concept="3gHZIF" id="2N1CSrzm3jH" role="2OqNvi">
-                <ref role="2WH_rO" node="2N1CSrzm3k1" resolve="selectedNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2N1CSrzm3jI" role="3cqZAp">
-          <node concept="3cpWsn" id="2N1CSrzm3jJ" role="3cpWs9">
-            <property role="TrG5h" value="clip" />
-            <node concept="3uibUv" id="2N1CSrzm3jK" role="1tU5fm">
-              <ref role="3uigEE" to="kt01:~Clipboard" resolve="Clipboard" />
-            </node>
-            <node concept="2OqwBi" id="2N1CSrzm3jL" role="33vP2m">
-              <node concept="2YIFZM" id="2N1CSrzm3jM" role="2Oq$k0">
-                <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
-                <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit()" resolve="getDefaultToolkit" />
-              </node>
-              <node concept="liA8E" id="2N1CSrzm3jN" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Toolkit.getSystemClipboard()" resolve="getSystemClipboard" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2N1CSrzm3jO" role="3cqZAp">
-          <node concept="3cpWsn" id="2N1CSrzm3jP" role="3cpWs9">
-            <property role="TrG5h" value="sel" />
-            <node concept="3uibUv" id="2N1CSrzm3jQ" role="1tU5fm">
-              <ref role="3uigEE" to="kt01:~StringSelection" resolve="StringSelection" />
-            </node>
-            <node concept="2ShNRf" id="2N1CSrzm3jR" role="33vP2m">
-              <node concept="1pGfFk" id="2N1CSrzm3jS" role="2ShVmc">
-                <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
-                <node concept="2OqwBi" id="By9C2svNkc" role="37wK5m">
-                  <node concept="37vLTw" id="By9C2svNc2" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2N1CSrzm3jD" resolve="n" />
-                  </node>
-                  <node concept="2$mYbS" id="By9C2svNCb" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2N1CSrzm3jV" role="3cqZAp">
-          <node concept="2OqwBi" id="2N1CSrzm3jW" role="3clFbG">
-            <node concept="37vLTw" id="2N1CSrzm3jX" role="2Oq$k0">
-              <ref role="3cqZAo" node="2N1CSrzm3jJ" resolve="clip" />
-            </node>
-            <node concept="liA8E" id="2N1CSrzm3jY" role="2OqNvi">
-              <ref role="37wK5l" to="kt01:~Clipboard.setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)" resolve="setContents" />
-              <node concept="37vLTw" id="2N1CSrzm3jZ" role="37wK5m">
-                <ref role="3cqZAo" node="2N1CSrzm3jP" resolve="sel" />
-              </node>
-              <node concept="10Nm6u" id="2N1CSrzm3k0" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2S4$dB" id="2N1CSrzm3k1" role="1NuT2Z">
-      <property role="TrG5h" value="selectedNode" />
-      <node concept="3Tm6S6" id="2N1CSrzm3k2" role="1B3o_S" />
-      <node concept="1oajcY" id="2N1CSrzm3k3" role="1oa70y" />
-      <node concept="3Tqbb2" id="2N1CSrzm3k4" role="1tU5fm" />
     </node>
   </node>
   <node concept="sE7Ow" id="2N1CSrzm3k5">

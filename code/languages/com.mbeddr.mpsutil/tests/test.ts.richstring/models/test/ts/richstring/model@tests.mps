@@ -47,6 +47,9 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
+      </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -9032,8 +9035,8 @@
             </node>
             <node concept="liA8E" id="2F_EZZygrlx" role="2OqNvi">
               <ref role="37wK5l" node="2F_EZZyfYRV" resolve="floatFormat" />
-              <node concept="3b6qkQ" id="2F_EZZygSni" role="37wK5m">
-                <property role="$nhwW" value="10.2f" />
+              <node concept="2$xPTn" id="apJ4OQz53J" role="37wK5m">
+                <property role="2$xPTl" value="10.2f" />
               </node>
             </node>
           </node>

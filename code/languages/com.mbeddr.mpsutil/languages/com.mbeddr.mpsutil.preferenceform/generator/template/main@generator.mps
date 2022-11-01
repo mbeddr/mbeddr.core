@@ -1760,7 +1760,7 @@
                 <ref role="3cqZAo" node="fFi6Pf6SL" resolve="control" />
               </node>
               <node concept="liA8E" id="fFi6Pf6SU" role="2OqNvi">
-                <ref role="37wK5l" to="r791:~JTextComponent.setText(java.lang.String)" resolve="setText" />
+                <ref role="37wK5l" to="dxuu:~JPasswordField.setText(java.lang.String)" resolve="setText" />
                 <node concept="1eOMI4" id="fFi6Pf6SV" role="37wK5m">
                   <node concept="10QFUN" id="fFi6Pf6SW" role="1eOMHV">
                     <node concept="2OqwBi" id="fFi6Pf6SX" role="10QFUP">
