@@ -46,6 +46,7 @@
     <import index="iqmz" ref="r:6bc4612e-813e-4efa-8244-77b9a4da8b36(jetbrains.mps.internal.make.runtime.java)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
     <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
@@ -2949,24 +2950,56 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="3kcKtVhN26L" role="3cqZAp">
-                          <node concept="2OqwBi" id="3kcKtVhN2Ci" role="3clFbG">
-                            <node concept="2OqwBi" id="3kcKtVhN2wE" role="2Oq$k0">
-                              <node concept="37vLTw" id="3kcKtVhN26J" role="2Oq$k0">
-                                <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
-                              </node>
-                              <node concept="liA8E" id="3kcKtVhN2_I" role="2OqNvi">
-                                <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                        <node concept="3clFbH" id="5IFGh_MNH30" role="3cqZAp" />
+                        <node concept="3clFbJ" id="5IFGh_MNIpJ" role="3cqZAp">
+                          <node concept="3clFbS" id="5IFGh_MNIpL" role="3clFbx">
+                            <node concept="3clFbF" id="5IFGh_MNKvw" role="3cqZAp">
+                              <node concept="2OqwBi" id="5IFGh_MNL65" role="3clFbG">
+                                <node concept="2OqwBi" id="5IFGh_MNKOY" role="2Oq$k0">
+                                  <node concept="37vLTw" id="5IFGh_MNKvv" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
+                                  </node>
+                                  <node concept="liA8E" id="5IFGh_MNL02" role="2OqNvi">
+                                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="5IFGh_MNLfR" role="2OqNvi">
+                                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                                  <node concept="2GrUjf" id="5IFGh_MNLgT" role="37wK5m">
+                                    <ref role="2Gs0qQ" node="3kcKtVhLbkt" resolve="currentRunnable" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
-                            <node concept="liA8E" id="3kcKtVhN2Ge" role="2OqNvi">
-                              <ref role="37wK5l" to="lui2:~ModelAccess.runReadInEDT(java.lang.Runnable)" resolve="runReadInEDT" />
-                              <node concept="2GrUjf" id="1cBwqeL3E8b" role="37wK5m">
-                                <ref role="2Gs0qQ" node="3kcKtVhLbkt" resolve="currentRunnable" />
+                          </node>
+                          <node concept="2YIFZM" id="5IFGh_MNJv5" role="3clFbw">
+                            <ref role="37wK5l" to="3a50:~ThreadUtils.isInEDT()" resolve="isInEDT" />
+                            <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+                          </node>
+                          <node concept="9aQIb" id="5IFGh_MNK54" role="9aQIa">
+                            <node concept="3clFbS" id="5IFGh_MNK55" role="9aQI4">
+                              <node concept="3clFbF" id="3kcKtVhN26L" role="3cqZAp">
+                                <node concept="2OqwBi" id="3kcKtVhN2Ci" role="3clFbG">
+                                  <node concept="2OqwBi" id="3kcKtVhN2wE" role="2Oq$k0">
+                                    <node concept="37vLTw" id="3kcKtVhN26J" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
+                                    </node>
+                                    <node concept="liA8E" id="3kcKtVhN2_I" role="2OqNvi">
+                                      <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="3kcKtVhN2Ge" role="2OqNvi">
+                                    <ref role="37wK5l" to="lui2:~ModelAccess.runReadInEDT(java.lang.Runnable)" resolve="runReadInEDT" />
+                                    <node concept="2GrUjf" id="1cBwqeL3E8b" role="37wK5m">
+                                      <ref role="2Gs0qQ" node="3kcKtVhLbkt" resolve="currentRunnable" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="5IFGh_MNLl$" role="3cqZAp" />
                         <node concept="3clFbJ" id="3kcKtVhN4p0" role="3cqZAp">
                           <node concept="3clFbS" id="3kcKtVhN4p2" role="3clFbx">
                             <node concept="3cpWs8" id="3kcKtVhM989" role="3cqZAp">
