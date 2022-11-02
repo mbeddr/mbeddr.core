@@ -1043,9 +1043,6 @@
           <property role="3MwjfP" value="MPS data-flow extensions" />
         </node>
       </node>
-      <node concept="m$_yC" id="1xlcIshd7bT" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
-      </node>
     </node>
     <node concept="m$_wf" id="5fGcQI94fMR" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.common" />
@@ -4097,8 +4094,8 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4Cp$eaaJQy3" role="3bR37C">
-          <node concept="3bR9La" id="4Cp$eaaJQy4" role="1SiIV1">
+        <node concept="1SiIV0" id="68tok1dVgFZ" role="3bR37C">
+          <node concept="3bR9La" id="68tok1dVgG0" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:5bqL32k0kuu" resolve="jetbrains.mps.lang.dataFlow.pluginSolution" />
           </node>
         </node>
