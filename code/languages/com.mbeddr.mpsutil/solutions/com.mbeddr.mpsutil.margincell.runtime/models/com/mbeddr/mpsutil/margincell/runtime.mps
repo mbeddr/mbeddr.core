@@ -2634,7 +2634,7 @@
             </node>
             <node concept="3clFbS" id="61Pvu7KRMew" role="1zc67A">
               <node concept="RRSsy" id="42VTAcDfnNe" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
+                <property role="RRSoG" value="gZ5fksE/warn" />
                 <node concept="Xl_RD" id="61Pvu7KRNgx" role="RRSoy">
                   <property role="Xl_RC" value="error while drawing review annotations" />
                 </node>
@@ -3005,7 +3005,7 @@
             </node>
             <node concept="3clFbS" id="61Pvu7KROt5" role="1zc67A">
               <node concept="RRSsy" id="42VTAcDfnNm" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
+                <property role="RRSoG" value="gZ5fksE/warn" />
                 <node concept="Xl_RD" id="61Pvu7KRPpF" role="RRSoy">
                   <property role="Xl_RC" value="error while drawing review annotations" />
                 </node>
