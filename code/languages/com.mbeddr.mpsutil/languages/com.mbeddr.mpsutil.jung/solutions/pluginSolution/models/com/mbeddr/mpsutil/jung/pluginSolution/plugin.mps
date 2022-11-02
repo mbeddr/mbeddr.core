@@ -9716,6 +9716,9 @@
       <property role="1EXbeo" value="false" />
       <node concept="3uibUv" id="vBdzUQp4Wo" role="EKbjA">
         <ref role="3uigEE" to="dxuu:~ListCellRenderer" resolve="ListCellRenderer" />
+        <node concept="3uibUv" id="2NwUY1vRncV" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
       </node>
       <node concept="312cEg" id="vBdzUQp4Wp" role="jymVt">
         <property role="34CwA1" value="false" />

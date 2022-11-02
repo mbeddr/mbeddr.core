@@ -71,9 +71,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -1556,8 +1553,11 @@
                         <ref role="3cqZAo" node="XrrhtvD5$B" resolve="elementNode" />
                       </node>
                       <node concept="2ShNRf" id="XrrhtvD5yq" role="37wK5m">
-                        <node concept="HV5vD" id="XrrhtvD5yr" role="2ShVmc">
-                          <ref role="HV5vE" node="XrrhtvD5Hm" resolve="_context_.RangeSelectionFilter" />
+                        <node concept="1pGfFk" id="2NwUY1vS9SN" role="2ShVmc">
+                          <ref role="37wK5l" node="2NwUY1vS4PC" resolve="_context_.RangeSelectionFilter" />
+                          <node concept="1rXfSq" id="2NwUY1vSRBT" role="37wK5m">
+                            <ref role="37wK5l" to="nivk:~AbstractEditorBuilder.getEditorContext()" resolve="getEditorContext" />
+                          </node>
                         </node>
                       </node>
                       <node concept="Xl_RD" id="XrrhtvD5ys" role="37wK5m">
@@ -1715,8 +1715,11 @@
                         <ref role="3cqZAo" node="XrrhtvD5$B" resolve="elementNode" />
                       </node>
                       <node concept="2ShNRf" id="XrrhtvD5zz" role="37wK5m">
-                        <node concept="HV5vD" id="XrrhtvD5z$" role="2ShVmc">
-                          <ref role="HV5vE" node="XrrhtvD5Hm" resolve="_context_.RangeSelectionFilter" />
+                        <node concept="1pGfFk" id="2NwUY1vS9SP" role="2ShVmc">
+                          <ref role="37wK5l" node="2NwUY1vS4PC" resolve="_context_.RangeSelectionFilter" />
+                          <node concept="1rXfSq" id="2NwUY1vSVhG" role="37wK5m">
+                            <ref role="37wK5l" to="nivk:~AbstractEditorBuilder.getEditorContext()" resolve="getEditorContext" />
+                          </node>
                         </node>
                       </node>
                       <node concept="Xl_RD" id="XrrhtvD5z_" role="37wK5m">
@@ -3635,6 +3638,25 @@
         <property role="1EXbeo" value="false" />
         <property role="TrG5h" value="RangeSelectionFilter" />
         <node concept="2tJIrI" id="XrrhtvD5Hn" role="jymVt" />
+        <node concept="3clFbW" id="2NwUY1vS4PC" role="jymVt">
+          <node concept="37vLTG" id="2NwUY1vx7Ja" role="3clF46">
+            <property role="TrG5h" value="editorContext" />
+            <node concept="3uibUv" id="2NwUY1vx7J9" role="1tU5fm">
+              <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+            </node>
+          </node>
+          <node concept="3cqZAl" id="2NwUY1vS4PD" role="3clF45" />
+          <node concept="3clFbS" id="2NwUY1vS4PF" role="3clF47">
+            <node concept="XkiVB" id="2NwUY1vShnE" role="3cqZAp">
+              <ref role="37wK5l" to="b8lf:~NodeRangeSelection$RangeSelectionFilter.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="NodeRangeSelection.RangeSelectionFilter" />
+              <node concept="37vLTw" id="2NwUY1vSje$" role="37wK5m">
+                <ref role="3cqZAo" node="2NwUY1vx7Ja" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="2NwUY1vS4PG" role="1B3o_S" />
+        </node>
+        <node concept="2tJIrI" id="2NwUY1vS2d_" role="jymVt" />
         <node concept="3clFb_" id="XrrhtvD5Ho" role="jymVt">
           <property role="1EzhhJ" value="false" />
           <property role="TrG5h" value="accept" />

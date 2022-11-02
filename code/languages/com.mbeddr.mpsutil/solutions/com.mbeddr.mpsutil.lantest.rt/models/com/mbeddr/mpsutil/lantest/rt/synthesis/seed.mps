@@ -145,6 +145,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -342,8 +343,11 @@
                   <node concept="2Rf3mk" id="7K2NL56H31Y" role="2OqNvi">
                     <node concept="1xMEDy" id="7K2NL56H31Z" role="1xVPHs">
                       <node concept="25Kdxt" id="7K2NL56H320" role="ri$Ld">
-                        <node concept="37vLTw" id="7K2NL56HrR5" role="25KhWn">
-                          <ref role="3cqZAo" node="7K2NL56HoRJ" resolve="chosenConcept" />
+                        <node concept="2OqwBi" id="2NwUY1vROKa" role="25KhWn">
+                          <node concept="37vLTw" id="7K2NL56HrR5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7K2NL56HoRJ" resolve="chosenConcept" />
+                          </node>
+                          <node concept="1rGIog" id="2NwUY1vRQfy" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

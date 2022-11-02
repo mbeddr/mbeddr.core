@@ -2954,7 +2954,7 @@
                       <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
                     </node>
                     <node concept="liA8E" id="5U8d23PLOm_" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JTree.scrollPathToVisible(javax.swing.tree.TreePath)" resolve="scrollPathToVisible" />
+                      <ref role="37wK5l" to="2sud:~Tree.scrollPathToVisible(javax.swing.tree.TreePath)" resolve="scrollPathToVisible" />
                       <node concept="37vLTw" id="5U8d23PLQck" role="37wK5m">
                         <ref role="3cqZAo" node="5U8d23PLOJD" resolve="path" />
                       </node>
@@ -3988,7 +3988,7 @@
                       <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
                     </node>
                     <node concept="liA8E" id="HtjvCVnCpX" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JTree.scrollPathToVisible(javax.swing.tree.TreePath)" resolve="scrollPathToVisible" />
+                      <ref role="37wK5l" to="2sud:~Tree.scrollPathToVisible(javax.swing.tree.TreePath)" resolve="scrollPathToVisible" />
                       <node concept="37vLTw" id="HtjvCVnCpY" role="37wK5m">
                         <ref role="3cqZAo" node="HtjvCVnCpI" resolve="path" />
                       </node>

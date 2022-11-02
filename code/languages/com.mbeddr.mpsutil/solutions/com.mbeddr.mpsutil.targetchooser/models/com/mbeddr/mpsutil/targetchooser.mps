@@ -2865,7 +2865,7 @@
                 </node>
                 <node concept="3clFbF" id="2KYX2G1uVMi" role="3cqZAp">
                   <node concept="3nyPlj" id="2KYX2G1uVMj" role="3clFbG">
-                    <ref role="37wK5l" to="7e8u:~MPSTree.runRebuildAction(java.lang.Runnable,boolean)" resolve="runRebuildAction" />
+                    <ref role="37wK5l" to="paf:~ProjectTree.runRebuildAction(java.lang.Runnable,boolean)" resolve="runRebuildAction" />
                     <node concept="37vLTw" id="2KYX2G1uVMk" role="37wK5m">
                       <ref role="3cqZAo" node="2KYX2G1uJK1" resolve="rebuildAction" />
                     </node>
@@ -2898,7 +2898,7 @@
             <node concept="3clFbS" id="2KYX2G1uSum" role="9aQI4">
               <node concept="3clFbF" id="2KYX2G1uJKb" role="3cqZAp">
                 <node concept="3nyPlj" id="2KYX2G1uJKa" role="3clFbG">
-                  <ref role="37wK5l" to="7e8u:~MPSTree.runRebuildAction(java.lang.Runnable,boolean)" resolve="runRebuildAction" />
+                  <ref role="37wK5l" to="paf:~ProjectTree.runRebuildAction(java.lang.Runnable,boolean)" resolve="runRebuildAction" />
                   <node concept="37vLTw" id="2KYX2G1uJK8" role="37wK5m">
                     <ref role="3cqZAo" node="2KYX2G1uJK1" resolve="rebuildAction" />
                   </node>

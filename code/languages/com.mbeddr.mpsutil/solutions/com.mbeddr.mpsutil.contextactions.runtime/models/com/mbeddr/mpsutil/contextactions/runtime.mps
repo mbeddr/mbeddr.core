@@ -8942,7 +8942,7 @@
                       <ref role="3cqZAo" node="7G3a7fDgVjB" resolve="getRealIcon" />
                     </node>
                     <node concept="liA8E" id="7G3a7fDgX1k" role="2OqNvi">
-                      <ref role="37wK5l" to="t6h5:~AccessibleObject.setAccessible(boolean)" resolve="setAccessible" />
+                      <ref role="37wK5l" to="t6h5:~Method.setAccessible(boolean)" resolve="setAccessible" />
                       <node concept="3clFbT" id="7G3a7fDgX5C" role="37wK5m">
                         <property role="3clFbU" value="true" />
                       </node>
