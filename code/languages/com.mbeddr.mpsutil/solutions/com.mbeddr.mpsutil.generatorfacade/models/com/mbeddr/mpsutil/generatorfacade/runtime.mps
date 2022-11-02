@@ -20,8 +20,6 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tft2" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator.impl.plan(MPS.Generator/)" />
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
-    <import index="ap4u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" implicit="true" />
-    <import index="tft3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.plan(MPS.Core/)" implicit="true" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -210,7 +208,7 @@
             <node concept="1eOMI4" id="2_w5$M9gwEz" role="37wK5m">
               <node concept="10QFUN" id="2_w5$M9gwEw" role="1eOMHV">
                 <node concept="3uibUv" id="2_w5$M9gxbY" role="10QFUM">
-                  <ref role="3uigEE" to="ap4u:~GenerationParametersProvider" resolve="GenerationParametersProvider" />
+                  <ref role="3uigEE" to="ap4t:~GenerationParametersProvider" resolve="GenerationParametersProvider" />
                 </node>
                 <node concept="10Nm6u" id="58oUBCRwnVF" role="10QFUP" />
               </node>
@@ -220,7 +218,7 @@
       </node>
       <node concept="3Tm1VV" id="58oUBCRwmxV" role="1B3o_S" />
       <node concept="3uibUv" id="58oUBCRwmxW" role="3clF45">
-        <ref role="3uigEE" to="ap4u:~GenerationStatus" resolve="GenerationStatus" />
+        <ref role="3uigEE" to="ap4t:~GenerationStatus" resolve="GenerationStatus" />
       </node>
       <node concept="37vLTG" id="58oUBCRwmxX" role="3clF46">
         <property role="TrG5h" value="repo" />
@@ -264,7 +262,7 @@
           <node concept="3cpWsn" id="58oUBCRuVQb" role="3cpWs9">
             <property role="TrG5h" value="defaults" />
             <node concept="3uibUv" id="58oUBCRuVQc" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
+              <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
             </node>
             <node concept="1rXfSq" id="2_w5$M95pBq" role="33vP2m">
               <ref role="37wK5l" node="2_w5$M95lhA" resolve="defaultOptionsBuilder" />
@@ -300,7 +298,7 @@
       </node>
       <node concept="3Tm1VV" id="58oUBCRuVS1" role="1B3o_S" />
       <node concept="3uibUv" id="58oUBCRuVS2" role="3clF45">
-        <ref role="3uigEE" to="ap4u:~GenerationStatus" resolve="GenerationStatus" />
+        <ref role="3uigEE" to="ap4t:~GenerationStatus" resolve="GenerationStatus" />
       </node>
       <node concept="37vLTG" id="58oUBCRuVS3" role="3clF46">
         <property role="TrG5h" value="repo" />
@@ -333,7 +331,7 @@
       <node concept="37vLTG" id="58oUBCRwl1z" role="3clF46">
         <property role="TrG5h" value="paramsProvider" />
         <node concept="3uibUv" id="58oUBCRwlbS" role="1tU5fm">
-          <ref role="3uigEE" to="ap4u:~GenerationParametersProvider" resolve="GenerationParametersProvider" />
+          <ref role="3uigEE" to="ap4t:~GenerationParametersProvider" resolve="GenerationParametersProvider" />
         </node>
       </node>
     </node>
@@ -345,11 +343,11 @@
           <node concept="3cpWsn" id="2_w5$M95ngB" role="3cpWs9">
             <property role="TrG5h" value="defaults" />
             <node concept="3uibUv" id="2_w5$M95ngC" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
+              <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
             </node>
             <node concept="2YIFZM" id="2_w5$M95ngD" role="33vP2m">
-              <ref role="1Pybhc" to="ap4u:~GenerationOptions" resolve="GenerationOptions" />
-              <ref role="37wK5l" to="ap4u:~GenerationOptions.getDefaults()" resolve="getDefaults" />
+              <ref role="1Pybhc" to="ap4t:~GenerationOptions" resolve="GenerationOptions" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions.getDefaults()" resolve="getDefaults" />
             </node>
           </node>
         </node>
@@ -359,7 +357,7 @@
               <ref role="3cqZAo" node="2_w5$M95ngB" resolve="defaults" />
             </node>
             <node concept="liA8E" id="2_w5$M95ngH" role="2OqNvi">
-              <ref role="37wK5l" to="ap4u:~GenerationOptions$OptionsBuilder.saveTransientModels(boolean)" resolve="saveTransientModels" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.saveTransientModels(boolean)" resolve="saveTransientModels" />
               <node concept="3clFbT" id="2_w5$M95ngI" role="37wK5m" />
             </node>
           </node>
@@ -370,7 +368,7 @@
               <ref role="3cqZAo" node="2_w5$M95ngB" resolve="defaults" />
             </node>
             <node concept="liA8E" id="2_w5$M95ngM" role="2OqNvi">
-              <ref role="37wK5l" to="ap4u:~GenerationOptions$OptionsBuilder.generateInParallel(boolean,int)" resolve="generateInParallel" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.generateInParallel(boolean,int)" resolve="generateInParallel" />
               <node concept="3clFbT" id="2_w5$M95ngN" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -388,7 +386,7 @@
                   <ref role="3cqZAo" node="2_w5$M95ngB" resolve="defaults" />
                 </node>
                 <node concept="liA8E" id="58oUBCRvpZO" role="2OqNvi">
-                  <ref role="37wK5l" to="ap4u:~GenerationOptions$OptionsBuilder.parameters(jetbrains.mps.generator.GenerationParametersProvider)" resolve="parameters" />
+                  <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.parameters(jetbrains.mps.generator.GenerationParametersProvider)" resolve="parameters" />
                   <node concept="37vLTw" id="58oUBCRwmtK" role="37wK5m">
                     <ref role="3cqZAo" node="2_w5$M9gcFG" resolve="paramsProvider" />
                   </node>
@@ -411,12 +409,12 @@
       </node>
       <node concept="3Tm1VV" id="2_w5$M95jgT" role="1B3o_S" />
       <node concept="3uibUv" id="2_w5$M95l9k" role="3clF45">
-        <ref role="3uigEE" to="ap4u:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
+        <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
       </node>
       <node concept="37vLTG" id="2_w5$M9gcFG" role="3clF46">
         <property role="TrG5h" value="paramsProvider" />
         <node concept="3uibUv" id="2_w5$M9gcFF" role="1tU5fm">
-          <ref role="3uigEE" to="ap4u:~GenerationParametersProvider" resolve="GenerationParametersProvider" />
+          <ref role="3uigEE" to="ap4t:~GenerationParametersProvider" resolve="GenerationParametersProvider" />
         </node>
       </node>
     </node>
@@ -433,11 +431,11 @@
           <node concept="3cpWsn" id="2_w5$M94NDT" role="3cpWs9">
             <property role="TrG5h" value="planBuilder" />
             <node concept="3uibUv" id="2_w5$M94NDU" role="1tU5fm">
-              <ref role="3uigEE" to="tft3:~RigidPlanBuilder" resolve="RigidPlanBuilder" />
+              <ref role="3uigEE" to="tft2:~RigidPlanBuilder" resolve="RigidPlanBuilder" />
             </node>
             <node concept="2ShNRf" id="2_w5$M94NDV" role="33vP2m">
               <node concept="1pGfFk" id="2_w5$M94NDW" role="2ShVmc">
-                <ref role="37wK5l" to="tft3:~RigidPlanBuilder.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry)" resolve="RigidPlanBuilder" />
+                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry)" resolve="RigidPlanBuilder" />
                 <node concept="2YIFZM" id="2_w5$M94NDX" role="37wK5m">
                   <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
                   <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
@@ -482,14 +480,14 @@
           <node concept="3cpWsn" id="2_w5$M94NEb" role="3cpWs9">
             <property role="TrG5h" value="genPlan" />
             <node concept="3uibUv" id="2_w5$M94NEc" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~ModelGenerationPlan" resolve="ModelGenerationPlan" />
+              <ref role="3uigEE" to="ap4t:~ModelGenerationPlan" resolve="ModelGenerationPlan" />
             </node>
             <node concept="2OqwBi" id="2_w5$M94NEd" role="33vP2m">
               <node concept="37vLTw" id="2_w5$M94NEe" role="2Oq$k0">
                 <ref role="3cqZAo" node="2_w5$M94NDT" resolve="planBuilder" />
               </node>
               <node concept="liA8E" id="2_w5$M94NEf" role="2OqNvi">
-                <ref role="37wK5l" to="tft3:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity)" resolve="wrapUp" />
+                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity)" resolve="wrapUp" />
                 <node concept="2OqwBi" id="2_w5$M94NEg" role="37wK5m">
                   <node concept="37vLTw" id="2_w5$M94NEh" role="2Oq$k0">
                     <ref role="3cqZAo" node="2_w5$M94NE0" resolve="planTranslator" />
@@ -508,7 +506,7 @@
               <ref role="3cqZAo" node="2_w5$M94NFG" resolve="defaults" />
             </node>
             <node concept="liA8E" id="2_w5$M94NEr" role="2OqNvi">
-              <ref role="37wK5l" to="ap4u:~GenerationOptions$OptionsBuilder.customPlan(org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.generator.ModelGenerationPlan)" resolve="customPlan" />
+              <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.customPlan(org.jetbrains.mps.openapi.model.SModel,jetbrains.mps.generator.ModelGenerationPlan)" resolve="customPlan" />
               <node concept="37vLTw" id="2_w5$M94NEs" role="37wK5m">
                 <ref role="3cqZAo" node="2_w5$M94NFA" resolve="modelToGenerate" />
               </node>
@@ -523,14 +521,14 @@
           <node concept="3cpWsn" id="2_w5$M94NEP" role="3cpWs9">
             <property role="TrG5h" value="options" />
             <node concept="3uibUv" id="2_w5$M94NEQ" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationOptions" resolve="GenerationOptions" />
+              <ref role="3uigEE" to="ap4t:~GenerationOptions" resolve="GenerationOptions" />
             </node>
             <node concept="2OqwBi" id="2_w5$M94NER" role="33vP2m">
               <node concept="37vLTw" id="2_w5$M94NES" role="2Oq$k0">
                 <ref role="3cqZAo" node="2_w5$M94NFG" resolve="defaults" />
               </node>
               <node concept="liA8E" id="2_w5$M94NET" role="2OqNvi">
-                <ref role="37wK5l" to="ap4u:~GenerationOptions$OptionsBuilder.create()" resolve="create" />
+                <ref role="37wK5l" to="ap4t:~GenerationOptions$OptionsBuilder.create()" resolve="create" />
               </node>
             </node>
           </node>
@@ -539,13 +537,13 @@
           <node concept="3cpWsn" id="2_w5$M94NFg" role="3cpWs9">
             <property role="TrG5h" value="tmp" />
             <node concept="3uibUv" id="2_w5$M94NFh" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~TransientModelsProvider" resolve="TransientModelsProvider" />
+              <ref role="3uigEE" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
             </node>
             <node concept="2OqwBi" id="2_w5$M94NFi" role="33vP2m">
               <node concept="liA8E" id="2_w5$M94NFj" role="2OqNvi">
                 <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="2_w5$M94NFk" role="37wK5m">
-                  <ref role="3VsUkX" to="ap4u:~TransientModelsProvider" resolve="TransientModelsProvider" />
+                  <ref role="3VsUkX" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
                 </node>
               </node>
               <node concept="37vLTw" id="2_w5$M94NFl" role="2Oq$k0">
@@ -582,7 +580,7 @@
       </node>
       <node concept="3Tm1VV" id="2_w5$M94NFw" role="1B3o_S" />
       <node concept="3uibUv" id="2_w5$M94NFx" role="3clF45">
-        <ref role="3uigEE" to="ap4u:~GenerationStatus" resolve="GenerationStatus" />
+        <ref role="3uigEE" to="ap4t:~GenerationStatus" resolve="GenerationStatus" />
       </node>
       <node concept="37vLTG" id="2_w5$M94NFy" role="3clF46">
         <property role="TrG5h" value="repo" />
@@ -615,7 +613,7 @@
       <node concept="37vLTG" id="2_w5$M94NFG" role="3clF46">
         <property role="TrG5h" value="defaults" />
         <node concept="3uibUv" id="2_w5$M94NFH" role="1tU5fm">
-          <ref role="3uigEE" to="ap4u:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
+          <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
         </node>
         <node concept="2AHcQZ" id="2_w5$M9gELP" role="2AJF6D">
           <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
@@ -635,11 +633,11 @@
           <node concept="3cpWsn" id="58oUBCRuYw1" role="3cpWs9">
             <property role="TrG5h" value="genFacade" />
             <node concept="3uibUv" id="58oUBCRuYw2" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationFacade" resolve="GenerationFacade" />
+              <ref role="3uigEE" to="ap4t:~GenerationFacade" resolve="GenerationFacade" />
             </node>
             <node concept="2ShNRf" id="58oUBCRuYw3" role="33vP2m">
               <node concept="1pGfFk" id="58oUBCRuYw4" role="2ShVmc">
-                <ref role="37wK5l" to="ap4u:~GenerationFacade.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.generator.GenerationOptions)" resolve="GenerationFacade" />
+                <ref role="37wK5l" to="ap4t:~GenerationFacade.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository,jetbrains.mps.generator.GenerationOptions)" resolve="GenerationFacade" />
                 <node concept="37vLTw" id="58oUBCRuYw5" role="37wK5m">
                   <ref role="3cqZAo" node="58oUBCRuYwR" resolve="repo" />
                 </node>
@@ -656,7 +654,7 @@
               <ref role="3cqZAo" node="58oUBCRuYwX" resolve="tmp" />
             </node>
             <node concept="liA8E" id="58oUBCRuYwh" role="2OqNvi">
-              <ref role="37wK5l" to="ap4u:~TransientModelsProvider.removeAllTransient()" resolve="removeAllTransient" />
+              <ref role="37wK5l" to="ap4t:~TransientModelsProvider.removeAllTransient()" resolve="removeAllTransient" />
             </node>
           </node>
         </node>
@@ -665,16 +663,16 @@
           <node concept="3cpWsn" id="58oUBCRuYwl" role="3cpWs9">
             <property role="TrG5h" value="taskHandler" />
             <node concept="3uibUv" id="58oUBCRuYwm" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationTaskRecorder" resolve="GenerationTaskRecorder" />
+              <ref role="3uigEE" to="ap4t:~GenerationTaskRecorder" resolve="GenerationTaskRecorder" />
               <node concept="3uibUv" id="58oUBCRuYwn" role="11_B2D">
-                <ref role="3uigEE" to="ap4u:~GeneratorTask" resolve="GeneratorTask" />
+                <ref role="3uigEE" to="ap4t:~GeneratorTask" resolve="GeneratorTask" />
               </node>
             </node>
             <node concept="2ShNRf" id="58oUBCRuYwo" role="33vP2m">
               <node concept="1pGfFk" id="58oUBCRuYwp" role="2ShVmc">
-                <ref role="37wK5l" to="ap4u:~GenerationTaskRecorder.&lt;init&gt;(jetbrains.mps.generator.GeneratorTaskListener)" resolve="GenerationTaskRecorder" />
+                <ref role="37wK5l" to="ap4t:~GenerationTaskRecorder.&lt;init&gt;(jetbrains.mps.generator.GeneratorTaskListener)" resolve="GenerationTaskRecorder" />
                 <node concept="3uibUv" id="58oUBCRuYwq" role="1pMfVU">
-                  <ref role="3uigEE" to="ap4u:~GeneratorTask" resolve="GeneratorTask" />
+                  <ref role="3uigEE" to="ap4t:~GeneratorTask" resolve="GeneratorTask" />
                 </node>
                 <node concept="10Nm6u" id="58oUBCRuYwr" role="37wK5m" />
               </node>
@@ -689,21 +687,21 @@
                   <ref role="3cqZAo" node="58oUBCRuYw1" resolve="genFacade" />
                 </node>
                 <node concept="liA8E" id="58oUBCRuYwy" role="2OqNvi">
-                  <ref role="37wK5l" to="ap4u:~GenerationFacade.transients(jetbrains.mps.generator.TransientModelsProvider)" resolve="transients" />
+                  <ref role="37wK5l" to="ap4t:~GenerationFacade.transients(jetbrains.mps.generator.TransientModelsProvider)" resolve="transients" />
                   <node concept="37vLTw" id="58oUBCRuYwz" role="37wK5m">
                     <ref role="3cqZAo" node="58oUBCRuYwX" resolve="tmp" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="58oUBCRuYw$" role="2OqNvi">
-                <ref role="37wK5l" to="ap4u:~GenerationFacade.messages(jetbrains.mps.messages.IMessageHandler)" resolve="messages" />
+                <ref role="37wK5l" to="ap4t:~GenerationFacade.messages(jetbrains.mps.messages.IMessageHandler)" resolve="messages" />
                 <node concept="37vLTw" id="58oUBCRuYw_" role="37wK5m">
                   <ref role="3cqZAo" node="58oUBCRuYwZ" resolve="messageHandler" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="58oUBCRuYwA" role="2OqNvi">
-              <ref role="37wK5l" to="ap4u:~GenerationFacade.taskHandler(jetbrains.mps.generator.GeneratorTaskListener)" resolve="taskHandler" />
+              <ref role="37wK5l" to="ap4t:~GenerationFacade.taskHandler(jetbrains.mps.generator.GeneratorTaskListener)" resolve="taskHandler" />
               <node concept="37vLTw" id="58oUBCRuYwB" role="37wK5m">
                 <ref role="3cqZAo" node="58oUBCRuYwl" resolve="taskHandler" />
               </node>
@@ -714,14 +712,14 @@
           <node concept="3cpWsn" id="58oUBCRuYwE" role="3cpWs9">
             <property role="TrG5h" value="process" />
             <node concept="3uibUv" id="58oUBCRuYwF" role="1tU5fm">
-              <ref role="3uigEE" to="ap4u:~GenerationStatus" resolve="GenerationStatus" />
+              <ref role="3uigEE" to="ap4t:~GenerationStatus" resolve="GenerationStatus" />
             </node>
             <node concept="2OqwBi" id="58oUBCRuYwG" role="33vP2m">
               <node concept="37vLTw" id="58oUBCRuYwH" role="2Oq$k0">
                 <ref role="3cqZAo" node="58oUBCRuYw1" resolve="genFacade" />
               </node>
               <node concept="liA8E" id="58oUBCRuYwI" role="2OqNvi">
-                <ref role="37wK5l" to="ap4u:~GenerationFacade.process(org.jetbrains.mps.openapi.util.ProgressMonitor,org.jetbrains.mps.openapi.model.SModel)" resolve="process" />
+                <ref role="37wK5l" to="ap4t:~GenerationFacade.process(org.jetbrains.mps.openapi.util.ProgressMonitor,org.jetbrains.mps.openapi.model.SModel)" resolve="process" />
                 <node concept="37vLTw" id="58oUBCRv8a3" role="37wK5m">
                   <ref role="3cqZAo" node="58oUBCRv7nI" resolve="monitor" />
                 </node>
@@ -741,7 +739,7 @@
       </node>
       <node concept="3Tm1VV" id="58oUBCRuYwP" role="1B3o_S" />
       <node concept="3uibUv" id="58oUBCRuYwQ" role="3clF45">
-        <ref role="3uigEE" to="ap4u:~GenerationStatus" resolve="GenerationStatus" />
+        <ref role="3uigEE" to="ap4t:~GenerationStatus" resolve="GenerationStatus" />
       </node>
       <node concept="37vLTG" id="58oUBCRuYwR" role="3clF46">
         <property role="TrG5h" value="repo" />
@@ -752,7 +750,7 @@
       <node concept="37vLTG" id="58oUBCRuYwT" role="3clF46">
         <property role="TrG5h" value="options" />
         <node concept="3uibUv" id="58oUBCRv2xk" role="1tU5fm">
-          <ref role="3uigEE" to="ap4u:~GenerationOptions" resolve="GenerationOptions" />
+          <ref role="3uigEE" to="ap4t:~GenerationOptions" resolve="GenerationOptions" />
         </node>
       </node>
       <node concept="37vLTG" id="58oUBCRuYwV" role="3clF46">
@@ -762,7 +760,7 @@
       <node concept="37vLTG" id="58oUBCRuYwX" role="3clF46">
         <property role="TrG5h" value="tmp" />
         <node concept="3uibUv" id="58oUBCRv3Lj" role="1tU5fm">
-          <ref role="3uigEE" to="ap4u:~TransientModelsProvider" resolve="TransientModelsProvider" />
+          <ref role="3uigEE" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
         </node>
       </node>
       <node concept="37vLTG" id="58oUBCRuYwZ" role="3clF46">
