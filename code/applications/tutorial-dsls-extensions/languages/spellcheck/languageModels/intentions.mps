@@ -192,6 +192,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -519,8 +520,11 @@
                                                     <node concept="Xl_RD" id="2eNFjNPIulo" role="3uHU7B">
                                                       <property role="Xl_RC" value="Mistake \&quot;" />
                                                     </node>
-                                                    <node concept="2GrUjf" id="55YMheoaMd2" role="3uHU7w">
-                                                      <ref role="2Gs0qQ" node="2eNFjNPHM0s" resolve="mistake" />
+                                                    <node concept="2OqwBi" id="1J_mJ1WYViA" role="3uHU7w">
+                                                      <node concept="2GrUjf" id="55YMheoaMd2" role="2Oq$k0">
+                                                        <ref role="2Gs0qQ" node="2eNFjNPHM0s" resolve="mistake" />
+                                                      </node>
+                                                      <node concept="2Iv5rx" id="1J_mJ1WYViB" role="2OqNvi" />
                                                     </node>
                                                   </node>
                                                 </node>

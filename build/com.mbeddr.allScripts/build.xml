@@ -42,6 +42,10 @@
     </fileset>
   </path>
   
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
+  
+  <generator-settings id="m2m-0" strictMode="true" parallelThreads="4" inplaceTransform="true" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
+  
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
     <mkdir dir="${build.layout}/mbeddr.allScripts" />
     <mkdir dir="${build.layout}/mbeddr.allScripts/META-INF" />
@@ -575,42 +579,6 @@
     </jar>
     <mkdir dir="${build.layout}/mbeddr.allScripts/languages" />
     <mkdir dir="${build.layout}/mbeddr.allScripts/languages/mbeddr" />
-    <mkdir dir="${build.tmp}/default/jetbrains.mps.minimal.jar" />
-    <mkdir dir="${build.tmp}/default/jetbrains.mps.minimal.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/jetbrains.mps.minimal.jar/META-INF/module.xml">
-      <module namespace="jetbrains.mps.minimal" type="solution" uuid="ea27f6eb-9fc6-4dc6-b3c4-15795bea000c">
-        <dependencies>
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
-        </dependencies>
-        <uses>
-          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
-          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
-        </uses>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="jetbrains.mps.minimal-src.jar" descriptor="jetbrains.mps.minimal.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr/jetbrains.mps.minimal.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/jetbrains.mps.minimal" />
-      <fileset dir="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal" includes="icons/**, resources/**" />
-      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/jetbrains.mps.minimal.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.minimal-models">
-      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/models" includes="**/*.mps, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/mbeddr.allScripts/languages/mbeddr/jetbrains.mps.minimal-src.jar" duplicate="preserve">
-      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-jetbrains.mps.minimal-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/com.mbeddr.rcp.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.rcp.jar/META-INF" />
     <echoxml file="${build.tmp}/default/com.mbeddr.rcp.jar/META-INF/module.xml">
@@ -754,7 +722,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.jetbrains.mps.minimal, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
   
   <target name="processResources" />
   
@@ -766,7 +734,8 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.8" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" logLevel="${mps.ant.log}">
+    <generate fork="true" targetJavaVersion="1.8" logLevel="${mps.ant.log}">      
+      <settings refid="m2m-0" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
@@ -793,6 +762,7 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editing.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editor.runtime.jar" />
@@ -841,7 +811,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.smodel.resources.jar" />
       <library file="${artifacts.mps}/languages/mps-stubs.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
@@ -880,7 +849,6 @@
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.rcp/com.mbeddr.rcp.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.build.build/com.mbeddr.build.build.msd" />
         <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" />
-        <module file="${mbeddr.github.core.home}/code/languages/com.mbeddr.build/solutions/jetbrains.mps.minimal/jetbrains.mps.minimal.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -894,9 +862,7 @@
     </generate>
   </target>
   
-  <target name="declare-mps-tasks">
-    <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
-  </target>
+  <target name="declare-mps-tasks" />
   
   <target name="makeDependents" />
   
@@ -1133,23 +1099,6 @@
     </copy>
   </target>
   
-  <target name="java.compile.jetbrains.mps.minimal">
-    <mkdir dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/jetbrains.mps.minimal" />
-    <javac destdir="${build.tmp}/java/out/jetbrains.mps.minimal" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
-      </src>
-      <classpath />
-    </javac>
-    <copy todir="${build.tmp}/java/out/jetbrains.mps.minimal">
-      <fileset dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-    </copy>
-  </target>
-  
   <target name="java.compile.com.mbeddr.rcp" depends="java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.build, java.compile.com.mbeddr.platform">
     <mkdir dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.rcp" />
@@ -1227,6 +1176,5 @@
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.rcp/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.build.build/source_gen" />
     <delete dir="${mbeddr.build}/solutions/com.mbeddr.xmodel.build/source_gen" />
-    <delete dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
   </target>
 </project>
