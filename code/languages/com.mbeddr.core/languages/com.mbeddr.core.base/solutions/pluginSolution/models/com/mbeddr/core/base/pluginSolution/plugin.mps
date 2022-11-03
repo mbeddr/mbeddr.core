@@ -21390,25 +21390,51 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="2hPErkZAPEL" role="3cqZAp">
-                        <node concept="37vLTI" id="2hPErkZAQ7A" role="3clFbG">
-                          <node concept="1rXfSq" id="2hPErkZARfZ" role="37vLTx">
-                            <ref role="37wK5l" node="2hPErkZAuo1" resolve="takeScreenshotSynchronously" />
-                            <node concept="37vLTw" id="2hPErkZBrs_" role="37wK5m">
-                              <ref role="3cqZAo" node="2pIr2f0y3nx" resolve="repository" />
-                            </node>
-                            <node concept="37vLTw" id="2hPErkZASgg" role="37wK5m">
-                              <ref role="3cqZAo" node="1yFmGPnLcLw" resolve="n" />
-                            </node>
-                            <node concept="37vLTw" id="2hPErkZATwP" role="37wK5m">
-                              <ref role="3cqZAo" node="1yFmGPnLcLA" resolve="imageFileName" />
-                            </node>
-                            <node concept="37vLTw" id="2hPErkZAUsV" role="37wK5m">
-                              <ref role="3cqZAo" node="2hPErkZEtBL" resolve="options" />
+                      <node concept="3J1_TO" id="2hPErkZGo7X" role="3cqZAp">
+                        <node concept="3uVAMA" id="2hPErkZGpb$" role="1zxBo5">
+                          <node concept="XOnhg" id="2hPErkZGpb_" role="1zc67B">
+                            <property role="TrG5h" value="io" />
+                            <node concept="nSUau" id="2hPErkZGpbA" role="1tU5fm">
+                              <node concept="3uibUv" id="2hPErkZGpEf" role="nSUat">
+                                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="2hPErkZAPEJ" role="37vLTJ">
-                            <ref role="3cqZAo" node="2SZDzMDvon2" resolve="image" />
+                          <node concept="3clFbS" id="2hPErkZGpbB" role="1zc67A">
+                            <node concept="YS8fn" id="2hPErkZGqq7" role="3cqZAp">
+                              <node concept="2ShNRf" id="2hPErkZGqNW" role="YScLw">
+                                <node concept="1pGfFk" id="2hPErkZGteS" role="2ShVmc">
+                                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                                  <node concept="37vLTw" id="2hPErkZGtDo" role="37wK5m">
+                                    <ref role="3cqZAo" node="2hPErkZGpb_" resolve="io" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="2hPErkZGo7Z" role="1zxBo7">
+                          <node concept="3clFbF" id="2hPErkZAPEL" role="3cqZAp">
+                            <node concept="37vLTI" id="2hPErkZAQ7A" role="3clFbG">
+                              <node concept="1rXfSq" id="2hPErkZARfZ" role="37vLTx">
+                                <ref role="37wK5l" node="2hPErkZAuo1" resolve="takeScreenshotSynchronously" />
+                                <node concept="37vLTw" id="2hPErkZBrs_" role="37wK5m">
+                                  <ref role="3cqZAo" node="2pIr2f0y3nx" resolve="repository" />
+                                </node>
+                                <node concept="37vLTw" id="2hPErkZASgg" role="37wK5m">
+                                  <ref role="3cqZAo" node="1yFmGPnLcLw" resolve="n" />
+                                </node>
+                                <node concept="37vLTw" id="2hPErkZATwP" role="37wK5m">
+                                  <ref role="3cqZAo" node="1yFmGPnLcLA" resolve="imageFileName" />
+                                </node>
+                                <node concept="37vLTw" id="2hPErkZAUsV" role="37wK5m">
+                                  <ref role="3cqZAo" node="2hPErkZEtBL" resolve="options" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="2hPErkZAPEJ" role="37vLTJ">
+                                <ref role="3cqZAo" node="2SZDzMDvon2" resolve="image" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
