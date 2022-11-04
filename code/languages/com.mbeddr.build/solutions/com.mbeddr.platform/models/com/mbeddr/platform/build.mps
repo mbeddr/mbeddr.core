@@ -17550,6 +17550,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5XfUTkPrTH1" role="3bR37C">
+          <node concept="3bR9La" id="5XfUTkPrTH2" role="1SiIV1">
+            <ref role="3bR37D" node="7tNo_gxoK9l" resolve="com.mbeddr.doc.self" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -18039,19 +18044,9 @@
               <ref role="3bR37D" node="1YMM4SJ6o1" resolve="com.mbeddr.doc#4457500422381538528" />
             </node>
           </node>
-          <node concept="1SiIV0" id="ifzjJnxpuH" role="3bR37C">
-            <node concept="3bR9La" id="ifzjJnxpuI" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="gUS73Y1WrD" role="3bR37C">
             <node concept="3bR9La" id="gUS73Y1WrC" role="1SiIV1">
               <ref role="3bR37D" node="1YMM4SJ6o1" resolve="com.mbeddr.doc#4457500422381538528" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="54IV45UO1QJ" role="3bR37C">
-            <node concept="3bR9La" id="54IV45UO1QK" role="1SiIV1">
-              <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
             </node>
           </node>
           <node concept="1BupzO" id="4PRpvcZJO0v" role="3bR31x">
@@ -18077,6 +18072,11 @@
               <node concept="3qWCbU" id="4PRpvcZJO0x" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5XfUTkPrTIX" role="3bR37C">
+            <node concept="3bR9La" id="5XfUTkPrTIY" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
             </node>
           </node>
         </node>
@@ -18115,6 +18115,16 @@
             <node concept="3qWCbU" id="4PRpvcZJO0h" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5XfUTkPrTII" role="3bR37C">
+          <node concept="3bR9La" id="5XfUTkPrTIJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5XfUTkPrTIK" role="3bR37C">
+          <node concept="3bR9La" id="5XfUTkPrTIL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
