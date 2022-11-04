@@ -118,6 +118,7 @@
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
     <import index="pdwk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.aspects.constraints.rules.kinds(MPS.Core/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -21244,29 +21245,6 @@
       </node>
       <node concept="3clFbS" id="1yFmGPnLcLC" role="3clF47">
         <node concept="3J1_TO" id="1yFmGPnLcLD" role="3cqZAp">
-          <node concept="3uVAMA" id="1yFmGPnLcNH" role="1zxBo5">
-            <node concept="XOnhg" id="1yFmGPnLcNI" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="ex" />
-              <node concept="nSUau" id="frMdFi6rHYr" role="1tU5fm">
-                <node concept="3uibUv" id="1yFmGPnLcNJ" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="1yFmGPnLcNK" role="1zc67A">
-              <node concept="YS8fn" id="2SZDzMDvuCG" role="3cqZAp">
-                <node concept="2ShNRf" id="2SZDzMDvuMh" role="YScLw">
-                  <node concept="1pGfFk" id="2SZDzMDvE_0" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="2SZDzMDvEKe" role="37wK5m">
-                      <ref role="3cqZAo" node="1yFmGPnLcNI" resolve="ex" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="1yFmGPnLcLE" role="1zxBo7">
             <node concept="3cpWs8" id="2SZDzMDvon1" role="3cqZAp">
               <node concept="3cpWsn" id="2SZDzMDvon2" role="3cpWs9">
@@ -21277,65 +21255,6 @@
               </node>
             </node>
             <node concept="3J1_TO" id="2pIr2f0wUN5" role="3cqZAp">
-              <node concept="3uVAMA" id="5Pb2U$k6TPn" role="1zxBo5">
-                <node concept="XOnhg" id="5Pb2U$k6TPo" role="1zc67B">
-                  <property role="3TUv4t" value="false" />
-                  <property role="TrG5h" value="ex" />
-                  <node concept="nSUau" id="7OM_7K1O7NQ" role="1tU5fm">
-                    <node concept="3uibUv" id="2cjkfC8$V0a" role="nSUat">
-                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbS" id="5Pb2U$k6TPq" role="1zc67A">
-                  <node concept="3clFbF" id="5Pb2U$k6TPr" role="3cqZAp">
-                    <node concept="2OqwBi" id="5Pb2U$k6TPs" role="3clFbG">
-                      <node concept="37vLTw" id="5Pb2U$k6TPt" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5Pb2U$k6TPo" resolve="ex" />
-                      </node>
-                      <node concept="liA8E" id="5Pb2U$k6TPu" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs8" id="2cjkfC8$VF2" role="3cqZAp">
-                    <node concept="3cpWsn" id="2cjkfC8$VF3" role="3cpWs9">
-                      <property role="TrG5h" value="cause" />
-                      <node concept="3uibUv" id="2cjkfC8$VEY" role="1tU5fm">
-                        <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-                      </node>
-                      <node concept="2OqwBi" id="2cjkfC8$VF4" role="33vP2m">
-                        <node concept="37vLTw" id="2cjkfC8$VF5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5Pb2U$k6TPo" resolve="ex" />
-                        </node>
-                        <node concept="liA8E" id="2cjkfC8$VF6" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.getCause()" resolve="getCause" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="2cjkfC8$XxP" role="3cqZAp">
-                    <node concept="3clFbS" id="2cjkfC8$XxR" role="3clFbx">
-                      <node concept="3clFbF" id="5Pb2U$k6TPv" role="3cqZAp">
-                        <node concept="2OqwBi" id="5Pb2U$k6TPw" role="3clFbG">
-                          <node concept="37vLTw" id="2cjkfC8$VF7" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2cjkfC8$VF3" resolve="cause" />
-                          </node>
-                          <node concept="liA8E" id="5Pb2U$k6TP$" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3y3z36" id="2cjkfC8_02j" role="3clFbw">
-                      <node concept="10Nm6u" id="2cjkfC8_0oW" role="3uHU7w" />
-                      <node concept="37vLTw" id="2cjkfC8$YSz" role="3uHU7B">
-                        <ref role="3cqZAo" node="2cjkfC8$VF3" resolve="cause" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbS" id="2pIr2f0wUN7" role="1zxBo7">
                 <node concept="3cpWs8" id="2pIr2f0y3nw" role="3cqZAp">
                   <node concept="3cpWsn" id="2pIr2f0y3nx" role="3cpWs9">
@@ -21445,10 +21364,56 @@
                   </node>
                 </node>
               </node>
+              <node concept="3uVAMA" id="5Pb2U$k6TPn" role="1zxBo5">
+                <node concept="XOnhg" id="5Pb2U$k6TPo" role="1zc67B">
+                  <property role="3TUv4t" value="false" />
+                  <property role="TrG5h" value="ex" />
+                  <node concept="nSUau" id="7OM_7K1O7NQ" role="1tU5fm">
+                    <node concept="3uibUv" id="2cjkfC8$V0a" role="nSUat">
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="5Pb2U$k6TPq" role="1zc67A">
+                  <node concept="YS8fn" id="5XfUTkOcY9h" role="3cqZAp">
+                    <node concept="2ShNRf" id="5XfUTkOcYBp" role="YScLw">
+                      <node concept="1pGfFk" id="5XfUTkOd8hC" role="2ShVmc">
+                        <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                        <node concept="37vLTw" id="5XfUTkOd8QU" role="37wK5m">
+                          <ref role="3cqZAo" node="5Pb2U$k6TPo" resolve="ex" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="3cpWs6" id="2SZDzMDvF_u" role="3cqZAp">
               <node concept="37vLTw" id="2SZDzMDvGDY" role="3cqZAk">
                 <ref role="3cqZAo" node="2SZDzMDvon2" resolve="image" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="1yFmGPnLcNH" role="1zxBo5">
+            <node concept="XOnhg" id="1yFmGPnLcNI" role="1zc67B">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="ex" />
+              <node concept="nSUau" id="frMdFi6rHYr" role="1tU5fm">
+                <node concept="3uibUv" id="1yFmGPnLcNJ" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1yFmGPnLcNK" role="1zc67A">
+              <node concept="YS8fn" id="2SZDzMDvuCG" role="3cqZAp">
+                <node concept="2ShNRf" id="2SZDzMDvuMh" role="YScLw">
+                  <node concept="1pGfFk" id="2SZDzMDvE_0" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="37vLTw" id="2SZDzMDvEKe" role="37wK5m">
+                      <ref role="3cqZAo" node="1yFmGPnLcNI" resolve="ex" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -21774,25 +21739,24 @@
           </node>
           <node concept="1wplmZ" id="2hPErkZAv80" role="1zxBo6">
             <node concept="3clFbS" id="2hPErkZAv81" role="1wplMD">
-              <node concept="3clFbJ" id="2hPErkZAv82" role="3cqZAp">
-                <node concept="3clFbS" id="2hPErkZAv83" role="3clFbx">
-                  <node concept="3clFbF" id="2hPErkZAv84" role="3cqZAp">
-                    <node concept="2OqwBi" id="2hPErkZAv85" role="3clFbG">
-                      <node concept="37vLTw" id="2hPErkZAv86" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2hPErkZAv65" resolve="editorComp" />
-                      </node>
-                      <node concept="liA8E" id="2hPErkZAv87" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorComponent.dispose()" resolve="dispose" />
+              <node concept="3clFbF" id="5XfUTkObYFR" role="3cqZAp">
+                <node concept="2YIFZM" id="5XfUTkObZm2" role="3clFbG">
+                  <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
+                  <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
+                  <node concept="1bVj0M" id="5XfUTkObZZl" role="37wK5m">
+                    <node concept="3clFbS" id="5XfUTkObZZm" role="1bW5cS">
+                      <node concept="3clFbF" id="2hPErkZAv84" role="3cqZAp">
+                        <node concept="2OqwBi" id="2hPErkZAv85" role="3clFbG">
+                          <node concept="37vLTw" id="2hPErkZAv86" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2hPErkZAv65" resolve="editorComp" />
+                          </node>
+                          <node concept="liA8E" id="2hPErkZAv87" role="2OqNvi">
+                            <ref role="37wK5l" to="exr9:~EditorComponent.dispose()" resolve="dispose" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="3y3z36" id="2hPErkZAv88" role="3clFbw">
-                  <node concept="2YIFZM" id="2hPErkZAv89" role="3uHU7B">
-                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
-                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
-                  </node>
-                  <node concept="10Nm6u" id="2hPErkZAv8a" role="3uHU7w" />
                 </node>
               </node>
             </node>
