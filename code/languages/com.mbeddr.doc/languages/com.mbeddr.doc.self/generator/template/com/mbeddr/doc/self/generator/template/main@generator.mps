@@ -22,7 +22,6 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fou0" ref="r:c799c7d7-91c4-46e4-aabf-037159e8fc3a(com.mbeddr.doc.self.plugin)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -178,9 +177,6 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1229477454423" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalCopiedInputByOutput" flags="nn" index="12$id9">
-        <child id="1229477520175" name="outputNode" index="12$y8L" />
-      </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
@@ -553,46 +549,6 @@
                   </node>
                   <node concept="2qgKlT" id="1yFmGPo4kdy" role="2OqNvi">
                     <ref role="37wK5l" to="e225:7$DvC4gQTVR" resolve="uniqueName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="5XfUTkOO_Ko" role="3cqZAp">
-              <node concept="2OqwBi" id="5XfUTkOOAW_" role="3clFbG">
-                <node concept="2JrnkZ" id="5XfUTkOOAJj" role="2Oq$k0">
-                  <node concept="37vLTw" id="5XfUTkOO_Km" role="2JrQYb">
-                    <ref role="3cqZAo" node="5XfUTkOoS0B" resolve="copy" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5XfUTkOOB3S" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
-                  <node concept="Xl_RD" id="5XfUTkOOB4t" role="37wK5m">
-                    <property role="Xl_RC" value="originalObject" />
-                  </node>
-                  <node concept="2OqwBi" id="5XfUTkOUOib" role="37wK5m">
-                    <node concept="2OqwBi" id="5XfUTkOUNZo" role="2Oq$k0">
-                      <node concept="2JrnkZ" id="5XfUTkOUNK0" role="2Oq$k0">
-                        <node concept="2OqwBi" id="5XfUTkP92yR" role="2JrQYb">
-                          <node concept="1iwH7S" id="5XfUTkP92gi" role="2Oq$k0" />
-                          <node concept="12$id9" id="5XfUTkP92PB" role="2OqNvi">
-                            <node concept="2OqwBi" id="5XfUTkP93u$" role="12$y8L">
-                              <node concept="2GrUjf" id="5XfUTkP93h_" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="5$bT90ZdhP_" resolve="cc" />
-                              </node>
-                              <node concept="3TrEf2" id="5XfUTkP93F_" role="2OqNvi">
-                                <ref role="3Tt5mk" to="z5ox:7$DvC4gPSIs" resolve="section" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="5XfUTkOUOaI" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="5XfUTkOUOqH" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                    </node>
                   </node>
                 </node>
               </node>

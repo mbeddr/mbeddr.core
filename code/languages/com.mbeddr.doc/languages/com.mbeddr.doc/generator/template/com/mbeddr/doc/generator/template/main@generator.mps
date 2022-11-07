@@ -2002,46 +2002,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="5XfUTkOO_Ko" role="3cqZAp">
-                  <node concept="2OqwBi" id="5XfUTkOOAW_" role="3clFbG">
-                    <node concept="2JrnkZ" id="5XfUTkOOAJj" role="2Oq$k0">
-                      <node concept="37vLTw" id="5XfUTkOO_Km" role="2JrQYb">
-                        <ref role="3cqZAo" node="7PsrBz3kAXM" resolve="ccCopy" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="5XfUTkOOB3S" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object)" resolve="putUserObject" />
-                      <node concept="Xl_RD" id="5XfUTkOOB4t" role="37wK5m">
-                        <property role="Xl_RC" value="originalObject" />
-                      </node>
-                      <node concept="2OqwBi" id="5XfUTkOUOib" role="37wK5m">
-                        <node concept="2OqwBi" id="5XfUTkOUNZo" role="2Oq$k0">
-                          <node concept="2JrnkZ" id="5XfUTkOUNK0" role="2Oq$k0">
-                            <node concept="2OqwBi" id="5XfUTkP92yR" role="2JrQYb">
-                              <node concept="1iwH7S" id="5XfUTkP92gi" role="2Oq$k0" />
-                              <node concept="12$id9" id="5XfUTkP92PB" role="2OqNvi">
-                                <node concept="2OqwBi" id="5XfUTkP93u$" role="12$y8L">
-                                  <node concept="2GrUjf" id="5XfUTkP93h_" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="5$bT90ZdhP_" resolve="cc" />
-                                  </node>
-                                  <node concept="2qgKlT" id="5XfUTkP9dGq" role="2OqNvi">
-                                    <ref role="37wK5l" to="4gky:627_yy34GnC" resolve="targetNode" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="5XfUTkOUOaI" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="5XfUTkOUOqH" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbF" id="7PsrBz30WZ$" role="3cqZAp">
                   <node concept="2OqwBi" id="7PsrBz30X9G" role="3clFbG">
                     <node concept="1Q6Npb" id="7PsrBz30WZz" role="2Oq$k0" />
