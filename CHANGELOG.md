@@ -13,7 +13,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * To avoid deadlocks, screenshots are now rendered from a Make facet rather than from the generator.
 * Any screenshots that fail to render will cause the build to fail.
-* The concepts [SectionAsImageParagraph](http://127.0.0.1:63320/node?ref=r%3A48b6c04c-173b-45da-963f-54fbbdb59cfc%28com.mbeddr.doc.self.structure%29%2F6416473402306197330) and [Visualization](http://127.0.0.1:63320/node?ref=r%3A5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc%28com.mbeddr.doc.structure%29%2F2588579461812060090) now also use correct generation paths inside the `doc_gen` folder.
+* The concepts [SectionAsImageParagraph](http://127.0.0.1:63320/node?ref=r%3A48b6c04c-173b-45da-963f-54fbbdb59cfc%28com.mbeddr.doc.self.structure%29%2F6416473402306197330)
+  and [Visualization](http://127.0.0.1:63320/node?ref=r%3A5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc%28com.mbeddr.doc.structure%29%2F2588579461812060090)
+  now also use correct generation paths inside the `doc_gen` folder.
+
+### Fixed
+* Visualization of glossary term dependencies (com.mbeddr.doc.terms). 
 
 ## com.mbeddr.core
 
