@@ -135,8 +135,12 @@ private static void configureRepositories(Project project) {
         }
     }
     project.repositories {
-        // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
-        // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
+        if (!disableMavenLocal) {
+            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+            mavenLocal()
+        }
         for (repoUrl in project.dependencyRepositories) {
             maven {
                 url repoUrl
