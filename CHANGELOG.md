@@ -26,3 +26,5 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * `CellEditorScreenshooter#takeScreenshotSynchronously` method that renders screenshots synchronously in the caller's
   thread.
+
+* Documentation xhtml generator: links are now generated to referenced documents not only in the table of contents but also in the document itself.
