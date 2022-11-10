@@ -56,6 +56,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1644,10 +1645,25 @@
           </node>
         </node>
         <node concept="3clFbH" id="37C79oTgBuQ" role="3cqZAp" />
+        <node concept="3clFbF" id="3_vDOCvUJ_3" role="3cqZAp">
+          <node concept="2YIFZM" id="3_vDOCvUJOy" role="3clFbG">
+            <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,jetbrains.mps.project.IProject)" resolve="extendUsingProject" />
+            <ref role="1Pybhc" to="wvnl:~EditorExtensionUtil" resolve="EditorExtensionUtil" />
+            <node concept="37vLTw" id="3_vDOCvUK0p" role="37wK5m">
+              <ref role="3cqZAo" node="7r8qu42xnk8" resolve="editorComponent" />
+            </node>
+            <node concept="2OqwBi" id="3_vDOCvUNTn" role="37wK5m">
+              <node concept="2WthIp" id="3_vDOCvUNEx" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="3_vDOCvUOfA" role="2OqNvi">
+                <ref role="2WH_rO" node="1IUlN8Q4hs1" resolve="currentProject" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3SKdUt" id="37C79oTgC1_" role="3cqZAp">
           <node concept="1PaTwC" id="37C79oTgC1A" role="1aUNEU">
             <node concept="3oM_SD" id="37C79oTgCc9" role="1PaTwD">
-              <property role="3oM_SC" value="Fhe" />
+              <property role="3oM_SC" value="The" />
             </node>
             <node concept="3oM_SD" id="37C79oTgCcc" role="1PaTwD">
               <property role="3oM_SC" value="following" />
@@ -1715,6 +1731,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3_vDOCvSrMu" role="3cqZAp" />
         <node concept="3clFbF" id="1KDc5EfHWee" role="3cqZAp">
           <node concept="2OqwBi" id="1KDc5EfHWef" role="3clFbG">
             <node concept="37vLTw" id="19PERUGNKHV" role="2Oq$k0">

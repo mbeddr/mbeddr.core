@@ -19,6 +19,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Fixed
 * Visualization of glossary term dependencies (com.mbeddr.doc.terms). 
+* Doc aspect: Activate editor extensions for the tools' editor component (styles like margin and border from celllayout work now).
 
 ## com.mbeddr.core
 
