@@ -98,7 +98,7 @@ subprojects {
         } else {
             ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
         }
-        if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
+        if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
             ext.mbeddrBuild = "master"
         }
 
