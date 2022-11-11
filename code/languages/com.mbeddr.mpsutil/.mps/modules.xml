@@ -31,6 +31,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox/com.mbeddr.mpsutil.ecoretransofmation.sandbox.mpl" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide.execution.lang/com.mbeddr.mpsutil.editingGuide.execution.lang.mpl" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editingGuide/com.mbeddr.mpsutil.editingGuide.mpl" folder="staging.editingGuide" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.displayControl.sandbox/com.mbeddr.mpsutil.editor.displayControl.sandbox.mpl" folder="displayControl" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.displayControl.sandbox/sandbox/com.mbeddr.mpsutil.editor.displayControl.sandbox.sandbox.msd" folder="displayControl" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.displayControl/com.mbeddr.mpsutil.editor.displayControl.mpl" folder="displayControl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="move.projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/solutions/pluginSolution/com.mbeddr.mpsutil.favourites.plugin.msd" folder="move.projectview" />
