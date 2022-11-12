@@ -16791,6 +16791,16 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
+        <node concept="1SiIV0" id="70TtB784nGT" role="3bR37C">
+          <node concept="3bR9La" id="70TtB784nGU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="70TtB784nGV" role="3bR37C">
+          <node concept="3bR9La" id="70TtB784nGW" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4kGsAe0vxvm" role="3989C9">

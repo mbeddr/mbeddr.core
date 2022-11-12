@@ -16,10 +16,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 * The concepts [SectionAsImageParagraph](http://127.0.0.1:63320/node?ref=r%3A48b6c04c-173b-45da-963f-54fbbdb59cfc%28com.mbeddr.doc.self.structure%29%2F6416473402306197330)
   and [Visualization](http://127.0.0.1:63320/node?ref=r%3A5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc%28com.mbeddr.doc.structure%29%2F2588579461812060090)
   now also use correct generation paths inside the `doc_gen` folder.
+* mpsutil filepicker: the Intellij file chooser is used instead of the old Java file picker.
 
 ### Fixed
 * Visualization of glossary term dependencies (com.mbeddr.doc.terms). 
 * Doc aspect: Activate editor extensions for the tools' editor component (styles like margin and border from celllayout work now).
+* Mpsutil: The file chooser from com.mbeddr.mpsutil.filepicker is invoked on the correct thread and no longer freezes MPS.
 
 ## com.mbeddr.core
 
