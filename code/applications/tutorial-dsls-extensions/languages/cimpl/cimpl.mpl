@@ -22,8 +22,6 @@
         <facet type="java">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
-        <facet type="java" />
-        <facet type="java" />
       </facets>
       <external-templates>
         <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
