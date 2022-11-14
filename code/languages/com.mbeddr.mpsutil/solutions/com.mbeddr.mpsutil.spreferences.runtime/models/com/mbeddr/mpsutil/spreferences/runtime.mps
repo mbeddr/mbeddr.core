@@ -735,11 +735,18 @@
                 <node concept="3cpWs3" id="5Qe0B1KwgUm" role="3uHU7B">
                   <node concept="2OqwBi" id="5Qe0B1KwdsV" role="3uHU7B">
                     <node concept="2OqwBi" id="5Qe0B1KwbvQ" role="2Oq$k0">
-                      <node concept="37vLTw" id="5Qe0B1KwbfH" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4RGMQ_4kVR1" resolve="mpsProject" />
+                      <node concept="1eOMI4" id="1ZDQN7dtNtl" role="2Oq$k0">
+                        <node concept="10QFUN" id="1ZDQN7dtOuZ" role="1eOMHV">
+                          <node concept="3uibUv" id="1ZDQN7dtPPB" role="10QFUM">
+                            <ref role="3uigEE" to="z1c3:~FileBasedProject" resolve="FileBasedProject" />
+                          </node>
+                          <node concept="37vLTw" id="5Qe0B1KwbfH" role="10QFUP">
+                            <ref role="3cqZAo" node="4RGMQ_4kVR1" resolve="mpsProject" />
+                          </node>
+                        </node>
                       </node>
                       <node concept="liA8E" id="5Qe0B1KwdhJ" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getProjectFile()" resolve="getProjectFile" />
+                        <ref role="37wK5l" to="z1c3:~FileBasedProject.getProjectFile()" resolve="getProjectFile" />
                       </node>
                     </node>
                     <node concept="liA8E" id="5Qe0B1KwgMN" role="2OqNvi">
