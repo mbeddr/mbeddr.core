@@ -417,7 +417,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -2693,17 +2695,23 @@
                               <node concept="3cpWs8" id="5XfUTkOUJIA" role="3cqZAp">
                                 <node concept="3cpWsn" id="5XfUTkOUJIB" role="3cpWs9">
                                   <property role="TrG5h" value="node" />
-                                  <node concept="3uibUv" id="5XfUTkOUJIC" role="1tU5fm">
-                                    <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                                  <node concept="3Tqbb2" id="VbZzlLcwxV" role="1tU5fm">
+                                    <ref role="ehGHo" to="2c95:627_yy34G1b" resolve="ModelContentAsImageParagraph" />
                                   </node>
-                                  <node concept="2YIFZM" id="223OxQlxbgb" role="33vP2m">
-                                    <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                                    <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
-                                    <node concept="2GrUjf" id="223OxQlxc9B" role="37wK5m">
-                                      <ref role="2Gs0qQ" node="oUcJT$i_d0" resolve="modelContent" />
+                                  <node concept="1PxgMI" id="VbZzlLcyeB" role="33vP2m">
+                                    <property role="1BlNFB" value="true" />
+                                    <node concept="chp4Y" id="VbZzlLcz5G" role="3oSUPX">
+                                      <ref role="cht4Q" to="2c95:627_yy34G1b" resolve="ModelContentAsImageParagraph" />
                                     </node>
-                                    <node concept="37vLTw" id="223OxQlxdA4" role="37wK5m">
-                                      <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
+                                    <node concept="2YIFZM" id="223OxQlxbgb" role="1m5AlR">
+                                      <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                                      <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
+                                      <node concept="2GrUjf" id="223OxQlxc9B" role="37wK5m">
+                                        <ref role="2Gs0qQ" node="oUcJT$i_d0" resolve="modelContent" />
+                                      </node>
+                                      <node concept="37vLTw" id="223OxQlxdA4" role="37wK5m">
+                                        <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -2918,8 +2926,13 @@
                                       <node concept="2GrUjf" id="7PsrBz3fgyO" role="37wK5m">
                                         <ref role="2Gs0qQ" node="oUcJT$i_d0" resolve="modelContent" />
                                       </node>
-                                      <node concept="37vLTw" id="5XfUTkOSfki" role="37wK5m">
-                                        <ref role="3cqZAo" node="5XfUTkOUJIB" resolve="node" />
+                                      <node concept="2OqwBi" id="VbZzlLczTS" role="37wK5m">
+                                        <node concept="37vLTw" id="5XfUTkOSfki" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="5XfUTkOUJIB" resolve="node" />
+                                        </node>
+                                        <node concept="2qgKlT" id="VbZzlLc_nX" role="2OqNvi">
+                                          <ref role="37wK5l" to="4gky:627_yy34GnC" resolve="targetNode" />
+                                        </node>
                                       </node>
                                       <node concept="2OqwBi" id="7PsrBz3knIo" role="37wK5m">
                                         <node concept="2GrUjf" id="7PsrBz3kn5X" role="2Oq$k0">
@@ -2985,17 +2998,23 @@
                               <node concept="3cpWs8" id="223OxQl_y91" role="3cqZAp">
                                 <node concept="3cpWsn" id="223OxQl_y92" role="3cpWs9">
                                   <property role="TrG5h" value="node" />
-                                  <node concept="3uibUv" id="223OxQl_y93" role="1tU5fm">
-                                    <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                                  <node concept="3Tqbb2" id="VbZzlLcA74" role="1tU5fm">
+                                    <ref role="ehGHo" to="z5ox:5$bT90ZcZti" resolve="SectionAsImageParagraph" />
                                   </node>
-                                  <node concept="2YIFZM" id="223OxQl_y94" role="33vP2m">
-                                    <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
-                                    <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
-                                    <node concept="2GrUjf" id="223OxQl_y95" role="37wK5m">
-                                      <ref role="2Gs0qQ" node="5XfUTkOqstk" resolve="sectionAsImage" />
+                                  <node concept="1PxgMI" id="VbZzlLcBv6" role="33vP2m">
+                                    <property role="1BlNFB" value="true" />
+                                    <node concept="chp4Y" id="VbZzlLcCrK" role="3oSUPX">
+                                      <ref role="cht4Q" to="z5ox:5$bT90ZcZti" resolve="SectionAsImageParagraph" />
                                     </node>
-                                    <node concept="37vLTw" id="223OxQl_y96" role="37wK5m">
-                                      <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
+                                    <node concept="2YIFZM" id="223OxQl_y94" role="1m5AlR">
+                                      <ref role="1Pybhc" to="fwk:~TracingUtil" resolve="TracingUtil" />
+                                      <ref role="37wK5l" to="fwk:~TracingUtil.getInputNode(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.module.SRepository)" resolve="getInputNode" />
+                                      <node concept="2GrUjf" id="223OxQl_y95" role="37wK5m">
+                                        <ref role="2Gs0qQ" node="5XfUTkOqstk" resolve="sectionAsImage" />
+                                      </node>
+                                      <node concept="37vLTw" id="223OxQl_y96" role="37wK5m">
+                                        <ref role="3cqZAo" node="33dz4spRFpQ" resolve="repository" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -3012,8 +3031,13 @@
                                       <node concept="2GrUjf" id="5XfUTkOqsue" role="37wK5m">
                                         <ref role="2Gs0qQ" node="5XfUTkOqstk" resolve="sectionAsImage" />
                                       </node>
-                                      <node concept="37vLTw" id="5XfUTkOSkPU" role="37wK5m">
-                                        <ref role="3cqZAo" node="223OxQl_y92" resolve="node" />
+                                      <node concept="2OqwBi" id="VbZzlLcTUk" role="37wK5m">
+                                        <node concept="37vLTw" id="5XfUTkOSkPU" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="223OxQl_y92" resolve="node" />
+                                        </node>
+                                        <node concept="3TrEf2" id="VbZzlLcUYZ" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="z5ox:7$DvC4gPSIs" resolve="section" />
+                                        </node>
                                       </node>
                                       <node concept="2OqwBi" id="5XfUTkOqsui" role="37wK5m">
                                         <node concept="2GrUjf" id="5XfUTkOqsuj" role="2Oq$k0">
