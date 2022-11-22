@@ -20,7 +20,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -7446,6 +7446,17 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <node concept="3clFbS" id="1PMOMKdiL0g" role="3clF47">
+        <node concept="3clFbJ" id="6iEhgUYBbm9" role="3cqZAp">
+          <node concept="3clFbS" id="6iEhgUYBbmb" role="3clFbx">
+            <node concept="3cpWs6" id="6iEhgUYBl4$" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="6iEhgUYBgDE" role="3clFbw">
+            <node concept="10Nm6u" id="6iEhgUYBilt" role="3uHU7w" />
+            <node concept="37vLTw" id="6iEhgUYBeLe" role="3uHU7B">
+              <ref role="3cqZAo" node="1PMOMKdiLEH" resolve="model" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2F0HZChwcTv" role="3cqZAp">
           <node concept="3cpWsn" id="2F0HZChwcTw" role="3cpWs9">
             <property role="TrG5h" value="modelDeps" />
@@ -10645,7 +10656,15 @@
             </node>
             <node concept="2ShNRf" id="2qDF1txJfv7" role="2GsD0m">
               <node concept="1pGfFk" id="2qDF1txJkLx" role="2ShVmc">
-                <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;()" resolve="FilteredGlobalScope" />
+                <ref role="37wK5l" to="fyhk:~FilteredGlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="FilteredGlobalScope" />
+                <node concept="2OqwBi" id="6c1XM7qMelY" role="37wK5m">
+                  <node concept="37vLTw" id="6c1XM7qMelZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2qDF1txGFKi" resolve="myProject" />
+                  </node>
+                  <node concept="liA8E" id="6c1XM7qMem0" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

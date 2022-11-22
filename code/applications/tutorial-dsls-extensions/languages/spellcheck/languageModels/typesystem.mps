@@ -62,6 +62,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -100,15 +101,18 @@
               <node concept="3clFbS" id="2eNFjNPHDT6" role="3clFbx">
                 <node concept="2MkqsV" id="2eNFjNPHGOD" role="3cqZAp">
                   <node concept="3cpWs3" id="2eNFjNPHGWU" role="2MkJ7o">
-                    <node concept="2OqwBi" id="2eNFjNPHH3Q" role="3uHU7w">
-                      <node concept="1YBJjd" id="2eNFjNPHGXn" role="2Oq$k0">
-                        <ref role="1YBMHb" node="2eNFjNPHAG$" resolve="iWord" />
-                      </node>
-                      <node concept="3CFZ6_" id="2eNFjNPHHeF" role="2OqNvi">
-                        <node concept="3CFYIy" id="2eNFjNPHHoD" role="3CFYIz">
-                          <ref role="3CFYIx" to="e6xd:2eNFjNPHAcn" resolve="SpellingMistakesAttribute" />
+                    <node concept="2OqwBi" id="1J_mJ1WYVlz" role="3uHU7w">
+                      <node concept="2OqwBi" id="2eNFjNPHH3Q" role="2Oq$k0">
+                        <node concept="1YBJjd" id="2eNFjNPHGXn" role="2Oq$k0">
+                          <ref role="1YBMHb" node="2eNFjNPHAG$" resolve="iWord" />
+                        </node>
+                        <node concept="3CFZ6_" id="2eNFjNPHHeF" role="2OqNvi">
+                          <node concept="3CFYIy" id="2eNFjNPHHoD" role="3CFYIz">
+                            <ref role="3CFYIx" to="e6xd:2eNFjNPHAcn" resolve="SpellingMistakesAttribute" />
+                          </node>
                         </node>
                       </node>
+                      <node concept="2Iv5rx" id="1J_mJ1WYVl$" role="2OqNvi" />
                     </node>
                     <node concept="Xl_RD" id="2eNFjNPHGOV" role="3uHU7B">
                       <property role="Xl_RC" value="Spelling mistake: " />

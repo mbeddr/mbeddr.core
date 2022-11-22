@@ -8,7 +8,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
@@ -2634,7 +2634,7 @@
             </node>
             <node concept="3clFbS" id="61Pvu7KRMew" role="1zc67A">
               <node concept="RRSsy" id="42VTAcDfnNe" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
+                <property role="RRSoG" value="gZ5fksE/warn" />
                 <node concept="Xl_RD" id="61Pvu7KRNgx" role="RRSoy">
                   <property role="Xl_RC" value="error while drawing review annotations" />
                 </node>
@@ -3005,7 +3005,7 @@
             </node>
             <node concept="3clFbS" id="61Pvu7KROt5" role="1zc67A">
               <node concept="RRSsy" id="42VTAcDfnNm" role="3cqZAp">
-                <property role="RRSoG" value="gZ5fh_4/error" />
+                <property role="RRSoG" value="gZ5fksE/warn" />
                 <node concept="Xl_RD" id="61Pvu7KRPpF" role="RRSoy">
                   <property role="Xl_RC" value="error while drawing review annotations" />
                 </node>

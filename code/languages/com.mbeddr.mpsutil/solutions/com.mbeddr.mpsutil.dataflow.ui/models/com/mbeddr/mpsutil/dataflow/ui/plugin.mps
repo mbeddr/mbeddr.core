@@ -7,7 +7,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
   </languages>
@@ -158,6 +158,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -2646,9 +2649,14 @@
             <node concept="2ShNRf" id="4f$ripAmADO" role="33vP2m">
               <node concept="1pGfFk" id="4f$ripAmADP" role="2ShVmc">
                 <ref role="37wK5l" to="35tq:~ConditionalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SearchScope,org.jetbrains.mps.util.Condition,org.jetbrains.mps.util.Condition)" resolve="ConditionalScope" />
-                <node concept="2YIFZM" id="4f$ripAn48J" role="37wK5m">
-                  <ref role="37wK5l" to="z1c4:~GlobalScope.getInstance()" resolve="getInstance" />
-                  <ref role="1Pybhc" to="z1c4:~GlobalScope" resolve="GlobalScope" />
+                <node concept="2ShNRf" id="6c1XM7qSk2R" role="37wK5m">
+                  <node concept="1pGfFk" id="6c1XM7qSr2T" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="z1c4:~GlobalScope.&lt;init&gt;(org.jetbrains.mps.openapi.module.SRepository)" resolve="GlobalScope" />
+                    <node concept="37vLTw" id="6c1XM7qSrm6" role="37wK5m">
+                      <ref role="3cqZAo" node="4KLDMqoOncw" resolve="repository" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="10Nm6u" id="4f$ripAn4fY" role="37wK5m" />
                 <node concept="37vLTw" id="4f$ripAn4km" role="37wK5m">
@@ -2667,23 +2675,29 @@
               <ref role="37wK5l" to="yha4:~ChooseByNameData.setScope(java.lang.Iterable,java.lang.Iterable)" resolve="setScope" />
               <node concept="2ShNRf" id="4f$ripAn6c$" role="37wK5m">
                 <node concept="1pGfFk" id="4f$ripAn6TT" role="2ShVmc">
-                  <ref role="37wK5l" to="yha4:~NavigationTargetScopeIterable.&lt;init&gt;(org.jetbrains.mps.openapi.module.SearchScope,org.jetbrains.mps.openapi.module.SRepository)" resolve="NavigationTargetScopeIterable" />
+                  <ref role="37wK5l" to="yha4:~NavigationTargetScopeIterable.&lt;init&gt;(org.jetbrains.mps.openapi.module.SearchScope,jetbrains.mps.project.MPSProject)" resolve="NavigationTargetScopeIterable" />
                   <node concept="37vLTw" id="4f$ripAn6YP" role="37wK5m">
                     <ref role="3cqZAo" node="4f$ripAm$VY" resolve="localScope" />
                   </node>
-                  <node concept="37vLTw" id="4f$ripAn7fZ" role="37wK5m">
-                    <ref role="3cqZAo" node="4KLDMqoOncw" resolve="repository" />
+                  <node concept="2OqwBi" id="6c1XM7qSszx" role="37wK5m">
+                    <node concept="2WthIp" id="6c1XM7qSsz$" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="6c1XM7qSszA" role="2OqNvi">
+                      <ref role="2WH_rO" node="4KLDMqoMqua" resolve="mpsProject" />
+                    </node>
                   </node>
                 </node>
               </node>
               <node concept="2ShNRf" id="4f$ripAn7N6" role="37wK5m">
                 <node concept="1pGfFk" id="4f$ripAn8Fs" role="2ShVmc">
-                  <ref role="37wK5l" to="yha4:~NavigationTargetScopeIterable.&lt;init&gt;(org.jetbrains.mps.openapi.module.SearchScope,org.jetbrains.mps.openapi.module.SRepository)" resolve="NavigationTargetScopeIterable" />
+                  <ref role="37wK5l" to="yha4:~NavigationTargetScopeIterable.&lt;init&gt;(org.jetbrains.mps.openapi.module.SearchScope,jetbrains.mps.project.MPSProject)" resolve="NavigationTargetScopeIterable" />
                   <node concept="37vLTw" id="4f$ripAn8ON" role="37wK5m">
                     <ref role="3cqZAo" node="4f$ripAmADM" resolve="globalScope" />
                   </node>
-                  <node concept="37vLTw" id="4f$ripAn99l" role="37wK5m">
-                    <ref role="3cqZAo" node="4KLDMqoOncw" resolve="repository" />
+                  <node concept="2OqwBi" id="6c1XM7qSsfF" role="37wK5m">
+                    <node concept="2WthIp" id="6c1XM7qSsfI" role="2Oq$k0" />
+                    <node concept="1DTwFV" id="6c1XM7qSsfK" role="2OqNvi">
+                      <ref role="2WH_rO" node="4KLDMqoMqua" resolve="mpsProject" />
+                    </node>
                   </node>
                 </node>
               </node>

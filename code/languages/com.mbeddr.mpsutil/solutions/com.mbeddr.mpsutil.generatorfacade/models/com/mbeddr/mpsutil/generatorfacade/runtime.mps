@@ -262,7 +262,7 @@
           <node concept="3cpWsn" id="58oUBCRuVQb" role="3cpWs9">
             <property role="TrG5h" value="defaults" />
             <node concept="3uibUv" id="58oUBCRuVQc" role="1tU5fm">
-              <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
+              <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
             </node>
             <node concept="1rXfSq" id="2_w5$M95pBq" role="33vP2m">
               <ref role="37wK5l" node="2_w5$M95lhA" resolve="defaultOptionsBuilder" />
@@ -343,7 +343,7 @@
           <node concept="3cpWsn" id="2_w5$M95ngB" role="3cpWs9">
             <property role="TrG5h" value="defaults" />
             <node concept="3uibUv" id="2_w5$M95ngC" role="1tU5fm">
-              <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
+              <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
             </node>
             <node concept="2YIFZM" id="2_w5$M95ngD" role="33vP2m">
               <ref role="1Pybhc" to="ap4t:~GenerationOptions" resolve="GenerationOptions" />
@@ -409,7 +409,7 @@
       </node>
       <node concept="3Tm1VV" id="2_w5$M95jgT" role="1B3o_S" />
       <node concept="3uibUv" id="2_w5$M95l9k" role="3clF45">
-        <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
+        <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
       </node>
       <node concept="37vLTG" id="2_w5$M9gcFG" role="3clF46">
         <property role="TrG5h" value="paramsProvider" />
@@ -613,7 +613,7 @@
       <node concept="37vLTG" id="2_w5$M94NFG" role="3clF46">
         <property role="TrG5h" value="defaults" />
         <node concept="3uibUv" id="2_w5$M94NFH" role="1tU5fm">
-          <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="OptionsBuilder" />
+          <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
         </node>
         <node concept="2AHcQZ" id="2_w5$M9gELP" role="2AJF6D">
           <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
