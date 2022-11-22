@@ -28,7 +28,7 @@ For more details please visit the [mbeddr landing page](https://github.com/mbedd
 
 ### Maven Dependencies
 
-To use mbeddr or the mbeddr platform in your own project, you one of the following dependencies in your maven or gradle build script. The latest support MPS version is 2021.3.1:
+To use mbeddr or the mbeddr platform in your own project, you one of the following dependencies in your maven or gradle build script. The latest support MPS version is 2021.3.2:
 
 [![mbeddr](https://img.shields.io/badge/Github%20pages-mbeddr-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.mbeddr)
 [![mbeddr platform](https://img.shields.io/badge/Github%20pages-mbeddr.platform-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.platform)
