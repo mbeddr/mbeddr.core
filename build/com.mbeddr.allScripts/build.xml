@@ -750,7 +750,7 @@
     <delete dir="${build.tmp}" />
     <delete dir="${build.layout}" />
   </target>
-  
+
   <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.debugger.testing.build.dev.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.debugger.tests.dev.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.analyses.tests.dev.build, java.compile.com.mbeddr.tutorial.dev.build, java.compile.com.mbeddr.allInOne, java.compile.com.mbeddr.platform, java.compile.jetbrains.mps.minimal, java.compile.com.mbeddr.rcp, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
   
   <target name="processResources" />
@@ -1129,7 +1129,7 @@
       </fileset>
     </copy>
   </target>
-  
+
   <target name="java.compile.jetbrains.mps.minimal">
     <mkdir dir="${mbeddr.build}/solutions/jetbrains.mps.minimal/source_gen" />
     <mkdir dir="${build.tmp}/java/out/jetbrains.mps.minimal" />
