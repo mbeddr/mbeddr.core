@@ -5808,7 +5808,7 @@
   </node>
   <node concept="sE7Ow" id="6IuaPRfaRij">
     <property role="TrG5h" value="CopySources" />
-    <property role="2uzpH1" value="Zoom In" />
+    <property role="2uzpH1" value="Copy sources to clipboard" />
     <property role="3GE5qa" value="toolbar" />
     <node concept="tnohg" id="6IuaPRfaRik" role="tncku">
       <node concept="3clFbS" id="6IuaPRfaRil" role="2VODD2">
