@@ -6,6 +6,11 @@ The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/e
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
 # November 2022
+## com.mbeddr.mpsutil
+
+### Changed
+* changed caption of [CopySource action](http://127.0.0.1:63320/node?ref=c0488c1e-322f-4f38-92d4-5520a7ce96c1%2Fr%3Ae053bdde%5B%E2%80%A6%5Dsutil.plantuml.pluginSolution.plugin%29%2F7754683290286257299%5D(http://127.0.0.1:63320/node?ref=c0488c1e-322f-4f38-92d4-5520a7ce96c1%2Fr%3Ae053bdde-b82f-4d5b-a735-e0af382d4ef2%28com.mbeddr.mpsutil.plantuml.pluginSolution%2Fcom.mbeddr.mpsutil.plantuml.pluginSolution.plugin%29%2F7754683290286257299 ) to 
+"Copy sources to clipboard".
 
 ## com.mbeddr.doc
 
