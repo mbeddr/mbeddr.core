@@ -29,3 +29,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
   thread.
 
 * Documentation xhtml generator: links are now generated to referenced documents not only in the table of contents but also in the document itself.
+
+### Fixed
+
+Actionsfilter: The profiles are now correctly saved in the [configuration directory](https://www.jetbrains.com/help/mps/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html#config-directory).
