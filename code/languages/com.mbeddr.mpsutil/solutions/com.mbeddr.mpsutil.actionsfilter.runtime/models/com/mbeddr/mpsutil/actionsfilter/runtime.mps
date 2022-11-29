@@ -12628,7 +12628,7 @@
             <node concept="2B6LJw" id="4_ta0wI18dZ" role="2B76xF">
               <ref role="2B6OnR" to="1m72:~Storage.file()" resolve="file" />
               <node concept="Xl_RD" id="4_ta0wI18g_" role="2B70Vg">
-                <property role="Xl_RC" value="$APP_CONFIG$/actionFilter.xml" />
+                <property role="Xl_RC" value="actionFilter.xml" />
               </node>
             </node>
           </node>
@@ -12855,7 +12855,7 @@
             <node concept="2B6LJw" id="5vQUrnx8Uew" role="2B76xF">
               <ref role="2B6OnR" to="1m72:~Storage.file()" resolve="file" />
               <node concept="Xl_RD" id="5vQUrnx8Uex" role="2B70Vg">
-                <property role="Xl_RC" value="$APP_CONFIG$/actionFilter.xml" />
+                <property role="Xl_RC" value="actionFilter.xml" />
               </node>
             </node>
           </node>
