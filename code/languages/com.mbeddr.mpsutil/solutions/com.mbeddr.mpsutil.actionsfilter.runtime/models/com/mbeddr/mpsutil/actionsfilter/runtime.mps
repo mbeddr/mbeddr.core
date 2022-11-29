@@ -12591,29 +12591,6 @@
         <ref role="3uigEE" to="hq8m:~Configurable" resolve="Configurable" />
       </node>
     </node>
-    <node concept="2AHcQZ" id="4_ta0wI16WM" role="2AJF6D">
-      <ref role="2AI5Lk" to="1m72:~State" resolve="State" />
-      <node concept="2B6LJw" id="4_ta0wI17yS" role="2B76xF">
-        <ref role="2B6OnR" to="1m72:~State.name()" resolve="name" />
-        <node concept="Xl_RD" id="4_ta0wI17$0" role="2B70Vg">
-          <property role="Xl_RC" value="ActionFilterSettings" />
-        </node>
-      </node>
-      <node concept="2B6LJw" id="4_ta0wI17Ay" role="2B76xF">
-        <ref role="2B6OnR" to="1m72:~State.storages()" resolve="storages" />
-        <node concept="2BsdOp" id="4_ta0wI17ED" role="2B70Vg">
-          <node concept="2AHcQZ" id="4_ta0wI17Ke" role="2BsfMF">
-            <ref role="2AI5Lk" to="1m72:~Storage" resolve="Storage" />
-            <node concept="2B6LJw" id="4_ta0wI18dZ" role="2B76xF">
-              <ref role="2B6OnR" to="1m72:~Storage.file()" resolve="file" />
-              <node concept="Xl_RD" id="4_ta0wI18g_" role="2B70Vg">
-                <property role="Xl_RC" value="actionFilter.xml" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="5vQUrnx8UbK">
     <property role="TrG5h" value="ActionsApplicationComponent" />
