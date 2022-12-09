@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.spin.documentation" uuid="1dcacc1a-8e53-470e-987d-f654ba2e645c" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.analyses.spin.documentation" uuid="1dcacc1a-8e53-470e-987d-f654ba2e645c" moduleVersion="0" compileInMPS="false">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
