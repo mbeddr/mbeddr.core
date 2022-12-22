@@ -1261,7 +1261,7 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="cc872c37-5126-4cea-bcc0-b45897eba581" />
         <property role="TrG5h" value="test.ts.ext.components.embedded" />
-        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="1SiIV0" id="3F9kUGaP0yE" role="3bR37C">
           <node concept="3bR9La" id="3F9kUGaP0yF" role="1SiIV1">
             <ref role="3bR37D" to="p6ld:7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />
