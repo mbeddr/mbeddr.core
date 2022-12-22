@@ -404,7 +404,7 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="3f1bb534-4961-4bf0-94b6-2b63276a46ca" />
         <property role="TrG5h" value="test.ex.ext.compositeComponents" />
-        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="7tgCHAyOv56" role="3LF7KH">
           <ref role="398BVh" node="5qO$P$PrILF" resolve="mbeddr.ext" />
           <node concept="2Ry0Ak" id="7tgCHAyOv57" role="iGT6I">
