@@ -22,7 +22,6 @@
         <facet type="java">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
-        <facet type="java" />
       </facets>
       <external-templates>
         <generator generatorUID="9b03dd0d-f0d2-42fc-8909-d7710e678ca3(jetbrains.mps.build.mps#3189788309732033979)" />

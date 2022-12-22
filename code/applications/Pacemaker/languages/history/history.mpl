@@ -17,13 +17,6 @@
         <facet type="java">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
-        <facet type="java" />
-        <facet type="java" />
-        <facet type="java" />
-        <facet type="java" />
-        <facet type="java" />
-        <facet type="java" />
-        <facet type="java" />
       </facets>
       <external-templates>
         <generator generatorUID="ea79507d-33bf-45ac-af32-13a874687ef0(com.mbeddr.ext.statemachines#8836799689252270723)" />
