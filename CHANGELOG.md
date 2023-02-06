@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# February 2023
+
+## com.mbeddr.mpsutil
+
+### Changed
+
+* `c.m.m.xml.fix`: in 2021.3.2 the `jetbrains.mps.core.xml` language escapes the generated XML automatically and
+  the escaping functionality of `xml.fix` is no longer necessary and is removed. However, the auto-escaping contains
+  a bug in 2021.3 (fixed in 2022.2) where `&quot;` is incorrectly escaped as `&amp;quot;` and a new workaround is
+  introduced for this bug.
+
 # November 2022
 
 ## com.mbeddr.mpsutil
