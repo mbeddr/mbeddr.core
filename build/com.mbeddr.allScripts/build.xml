@@ -43,9 +43,9 @@
   </path>
   
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
-
+  
   <generator-settings id="m2m-0" strictMode="true" parallelThreads="4" inplaceTransform="true" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
-
+  
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
     <mkdir dir="${build.layout}/mbeddr.allScripts" />
     <mkdir dir="${build.layout}/mbeddr.allScripts/META-INF" />
@@ -734,7 +734,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate fork="true" targetJavaVersion="1.8" logLevel="${mps.ant.log}">
+    <generate fork="true" targetJavaVersion="1.8" logLevel="${mps.ant.log}">      
       <settings refid="m2m-0" />
       <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
