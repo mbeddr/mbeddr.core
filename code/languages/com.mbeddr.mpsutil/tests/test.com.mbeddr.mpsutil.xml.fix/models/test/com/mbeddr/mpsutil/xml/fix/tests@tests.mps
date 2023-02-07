@@ -15,16 +15,11 @@
     <engage id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" />
   </languages>
   <imports>
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="o6ex" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.generator(MPS.Workbench/)" />
-    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -358,7 +353,7 @@
             <node concept="3clFbH" id="bGV79BurB9" role="3cqZAp" />
             <node concept="3vlDli" id="bGV79BurNv" role="3cqZAp">
               <node concept="Xl_RD" id="bGV79BurTN" role="3tpDZB">
-                <property role="Xl_RC" value="&lt;root attr=\&quot;text&amp;amp;&amp;lt;&amp;gt;Value\&quot;&gt;content&amp;lt;&amp;amp;&amp;gt;Value&lt;/root&gt;" />
+                <property role="Xl_RC" value="&lt;root attr=\&quot;text&amp;quot;&amp;amp;&amp;lt;&gt;Value\&quot;&gt;content\&quot;&amp;lt;&amp;amp;&gt;Value&lt;/root&gt;" />
               </node>
               <node concept="37vLTw" id="bGV79Busqj" role="3tpDZA">
                 <ref role="3cqZAo" node="bGV79Buq4o" resolve="content" />
