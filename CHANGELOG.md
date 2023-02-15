@@ -11,6 +11,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Fix exception `NullPointer: Cannot create configurable` in userstyles language.
 
+## com.mbeddr.core.base
+
+* Don try attaching the mbeddr root menu when the model or repository is null.
+
 # November 2022
 
 ## com.mbeddr.doc
