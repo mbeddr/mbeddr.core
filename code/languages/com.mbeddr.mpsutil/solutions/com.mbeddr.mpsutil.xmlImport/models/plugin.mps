@@ -41,6 +41,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -395,6 +396,7 @@
   <node concept="sE7Ow" id="24KZuFtD0Kd">
     <property role="TrG5h" value="pasteAsXmlContent" />
     <property role="2uzpH1" value="Paste as XML Content" />
+    <property role="1WHSii" value="Paste XML element from clipboard" />
     <node concept="2S4$dB" id="24KZuFtDg$g" role="1NuT2Z">
       <property role="TrG5h" value="context" />
       <node concept="3Tm6S6" id="24KZuFtDg$h" role="1B3o_S" />
@@ -538,7 +540,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="4mEgncq4BBr" role="3cqZAp" />
             </node>
           </node>
         </node>
