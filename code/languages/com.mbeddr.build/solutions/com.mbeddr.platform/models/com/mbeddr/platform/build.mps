@@ -20168,9 +20168,9 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1F5R5ewNdCa" role="3bR37C">
-          <node concept="3bR9La" id="1F5R5ewNdCb" role="1SiIV1">
-            <ref role="3bR37D" node="6o5cjw5gEyi" resolve="com.mbeddr.mpsutil.json" />
+        <node concept="1SiIV0" id="1Alud3KWJdb" role="3bR37C">
+          <node concept="3bR9La" id="1Alud3KWJdc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJO9z" role="3bR31x">
@@ -20193,6 +20193,26 @@
             <node concept="3qWCbU" id="4PRpvcZJO9_" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Alud3KWJdd" role="3bR37C">
+          <node concept="3bR9La" id="1Alud3KWJde" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Alud3KWJdf" role="3bR37C">
+          <node concept="3bR9La" id="1Alud3KWJdg" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="com.fasterxml.jackson" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Alud3KWJdh" role="3bR37C">
+          <node concept="3bR9La" id="1Alud3KWJdi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Alud3KWJdj" role="3bR37C">
+          <node concept="3bR9La" id="1Alud3KWJdk" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>

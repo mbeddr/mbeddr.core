@@ -19,8 +19,8 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(com.fasterxml.jackson/)" />
-    <import index="v3a9" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:com.google.common.io(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(com.fasterxml.jackson/)" />
+    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -792,14 +792,14 @@
                   <ref role="2pJxaS" to="21pk:3L4lRB2Gtfz" resolve="JsonFile" />
                   <node concept="2pJxcG" id="6Sh7xm2KwyO" role="2pJxcM">
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="2YIFZM" id="55Y4t6SQVOk" role="28ntcv">
-                      <ref role="1Pybhc" to="v3a9:~Files" resolve="Files" />
-                      <ref role="37wK5l" to="v3a9:~Files.getNameWithoutExtension(java.lang.String)" resolve="getNameWithoutExtension" />
-                      <node concept="2OqwBi" id="6pzXh8ftzlg" role="37wK5m">
-                        <node concept="37vLTw" id="6pzXh8ftyZM" role="2Oq$k0">
+                    <node concept="2YIFZM" id="1Alud3KWncz" role="28ntcv">
+                      <ref role="37wK5l" to="8oaq:~FilenameUtils.removeExtension(java.lang.String)" resolve="removeExtension" />
+                      <ref role="1Pybhc" to="8oaq:~FilenameUtils" resolve="FilenameUtils" />
+                      <node concept="2OqwBi" id="1Alud3KWnc$" role="37wK5m">
+                        <node concept="37vLTw" id="1Alud3KWnc_" role="2Oq$k0">
                           <ref role="3cqZAo" node="6Sh7xm2Kvx7" resolve="file" />
                         </node>
-                        <node concept="liA8E" id="55Y4t6SQHXu" role="2OqNvi">
+                        <node concept="liA8E" id="1Alud3KWncA" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                         </node>
                       </node>
