@@ -9,6 +9,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil
 
+* Documentation: replace ModuleIdentity with ModulePointer in ModuleRefWord. This was a deprecated concept.
+
 * Fix exception `NullPointer: Cannot create configurable` in userstyles language.
 
 ## com.mbeddr.core.base
