@@ -9,8 +9,9 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil
 
-* Traceexplorer: Fix exception that occured when the rerun button is pressed when there is no trace.
 
+* Trace explorer: don't try to highlight a node when there is no node in the tool.
+* Trace explorer: Fix exception that occured when the rerun button is pressed when there is no trace.
 * Fix exception `NullPointer: Cannot create configurable` in userstyles language.
 
 ## com.mbeddr.core.base
