@@ -12,6 +12,7 @@
   </facets>
   <sourcePath />
   <languageVersions>
+    <language slang="l:5fef253e-34b0-443d-8035-9a2928b716d3:com.mbeddr.mpsutil.editor.displayControl" version="0" />
     <language slang="l:c3a9b5df-25f0-466c-a31c-0da4314af7d1:com.mbeddr.mpsutil.editor.displayControl.sandbox" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
