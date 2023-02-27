@@ -229,6 +229,7 @@
       <modulePath path="$PROJECT_DIR$/tests/test.ts.propertydefault/test.ts.propertydefault.mpl" folder="stable.propertydefault" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.propertydefaulttest/test.ts.propertydefaulttest.msd" folder="stable.propertydefault" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.richstring/test.ts.richstring.msd" folder="rest.richstring" />
+      <modulePath path="$PROJECT_DIR$/tests/tests.com.mbeddr.mpsutil.json/tests.com.mbeddr.mpsutil.json.msd" folder="rest.json" />
     </projectModules>
   </component>
 </project>
