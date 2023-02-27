@@ -2182,7 +2182,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="T1v2oLoyAf" role="37wK5m">
-                          <property role="Xl_RC" value="json" />
+                          <property role="Xl_RC" value="xml" />
                         </node>
                         <node concept="2OqwBi" id="T1v2oLozkq" role="37wK5m">
                           <node concept="37vLTw" id="T1v2oLoySO" role="2Oq$k0">
@@ -2201,7 +2201,7 @@
             <node concept="liA8E" id="T1v2oLo$Aw" role="2OqNvi">
               <ref role="37wK5l" to="3fkn:~FileChooserDescriptor.withTitle(java.lang.String)" resolve="withTitle" />
               <node concept="Xl_RD" id="T1v2oLo$G6" role="37wK5m">
-                <property role="Xl_RC" value="json file" />
+                <property role="Xl_RC" value="xml file" />
               </node>
             </node>
           </node>
