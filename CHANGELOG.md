@@ -9,6 +9,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil
 
+* Datepicker: Fix entering dates in the datepicker field (#1359).
 * Documentation: replace ModuleIdentity with ModulePointer in ModuleRefWord. This was a deprecated concept.
 * Trace explorer: don't try to highlight a node when there is no node in the tool.
 * Trace explorer: Fix exception that occured when the rerun button is pressed when there is no trace.
