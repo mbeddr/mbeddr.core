@@ -1088,6 +1088,23 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5FbNLoBM15l" role="3cqZAp">
+          <node concept="2OqwBi" id="5FbNLoBM1Le" role="3clFbG">
+            <node concept="Xjq3P" id="5FbNLoBM15j" role="2Oq$k0" />
+            <node concept="liA8E" id="5FbNLoBM5qu" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="2OqwBi" id="5FbNLoBM8Uw" role="37wK5m">
+                <node concept="2YIFZM" id="5FbNLoBM8Ux" role="2Oq$k0">
+                  <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="5FbNLoBM8Uy" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4_pSipqULG6" role="3cqZAp">
           <node concept="3cpWsn" id="4_pSipqULG7" role="3cpWs9">
             <property role="TrG5h" value="colModel" />
@@ -4880,6 +4897,21 @@
           </node>
         </node>
         <node concept="3clFbH" id="2k2dPZHdk_K" role="3cqZAp" />
+        <node concept="3clFbF" id="5FbNLoBPdBQ" role="3cqZAp">
+          <node concept="1rXfSq" id="5FbNLoBPg3G" role="3clFbG">
+            <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+            <node concept="2OqwBi" id="5FbNLoBPipr" role="37wK5m">
+              <node concept="2YIFZM" id="5FbNLoBPi98" role="2Oq$k0">
+                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+              </node>
+              <node concept="liA8E" id="5FbNLoBPjlK" role="2OqNvi">
+                <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5FbNLoBPcou" role="3cqZAp" />
         <node concept="3cpWs8" id="4wNvmgrc4S6" role="3cqZAp">
           <node concept="3cpWsn" id="4wNvmgrc4S7" role="3cpWs9">
             <property role="TrG5h" value="colModel" />
@@ -5174,19 +5206,13 @@
       <node concept="NWlO9" id="2k2dPZH7yNa" role="lGtFl">
         <property role="NWlVz" value="Font used in different texts." />
       </node>
-      <node concept="2ShNRf" id="1GgrF83dsOg" role="33vP2m">
-        <node concept="1pGfFk" id="1GgrF83dsOh" role="2ShVmc">
-          <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
-          <node concept="Xl_RD" id="1GgrF83dsOi" role="37wK5m">
-            <property role="Xl_RC" value="Arial" />
-          </node>
-          <node concept="10M0yZ" id="1GgrF83dsOj" role="37wK5m">
-            <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-            <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
-          </node>
-          <node concept="3cmrfG" id="1GgrF83dsOk" role="37wK5m">
-            <property role="3cmrfH" value="11" />
-          </node>
+      <node concept="2OqwBi" id="5FbNLoBKcm5" role="33vP2m">
+        <node concept="2YIFZM" id="5FbNLoBKaHr" role="2Oq$k0">
+          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+        </node>
+        <node concept="liA8E" id="5FbNLoBKjWe" role="2OqNvi">
+          <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
         </node>
       </node>
     </node>
@@ -6855,6 +6881,25 @@
                 </node>
                 <node concept="3cmrfG" id="3DDJouLFjhh" role="37wK5m">
                   <property role="3cmrfH" value="580" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5FbNLoBRHkc" role="3cqZAp">
+          <node concept="2OqwBi" id="5FbNLoBRIZa" role="3clFbG">
+            <node concept="37vLTw" id="5FbNLoBRHka" role="2Oq$k0">
+              <ref role="3cqZAo" node="3DDJouLFiBM" resolve="textArea" />
+            </node>
+            <node concept="liA8E" id="5FbNLoBRJVY" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JTextArea.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="2OqwBi" id="5FbNLoBRhQa" role="37wK5m">
+                <node concept="2YIFZM" id="5FbNLoBRhzp" role="2Oq$k0">
+                  <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="5FbNLoBRi9H" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
                 </node>
               </node>
             </node>
