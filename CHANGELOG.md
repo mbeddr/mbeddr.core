@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
-# February 2022
+# March 2023
+
+## com.mbeddr.analyses
+
+* Fix exception + adjust fonts in analyses results tool
+
+# February 2023
 
 ## com.mbeddr.mpsutil
 
