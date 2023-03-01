@@ -22,6 +22,7 @@
     <import index="uipx" ref="r:e7b58802-36b0-4e17-a1f6-eb5c442b040c(com.mbeddr.analyses.utils.ui)" />
     <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1065,7 +1066,28 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7LklpYzSwHm" role="3cqZAp" />
+        <node concept="3clFbF" id="5FbNLoBGZ7Y" role="3cqZAp">
+          <node concept="2OqwBi" id="5FbNLoBH1l5" role="3clFbG">
+            <node concept="Xjq3P" id="5FbNLoBGZ7W" role="2Oq$k0" />
+            <node concept="liA8E" id="5FbNLoBH4Jt" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JTable.setEditingRow(int)" resolve="setEditingRow" />
+              <node concept="3cmrfG" id="5FbNLoBIqUW" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5FbNLoBIYDA" role="3cqZAp">
+          <node concept="2OqwBi" id="5FbNLoBIZkZ" role="3clFbG">
+            <node concept="Xjq3P" id="5FbNLoBIYD$" role="2Oq$k0" />
+            <node concept="liA8E" id="5FbNLoBJ2HM" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JTable.setEditingColumn(int)" resolve="setEditingColumn" />
+              <node concept="3cmrfG" id="5FbNLoBJ67g" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4_pSipqULG6" role="3cqZAp">
           <node concept="3cpWsn" id="4_pSipqULG7" role="3cpWs9">
             <property role="TrG5h" value="colModel" />
@@ -5149,6 +5171,9 @@
       <node concept="3uibUv" id="1GgrF83etCj" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Font" resolve="Font" />
       </node>
+      <node concept="NWlO9" id="2k2dPZH7yNa" role="lGtFl">
+        <property role="NWlVz" value="Font used in different texts." />
+      </node>
       <node concept="2ShNRf" id="1GgrF83dsOg" role="33vP2m">
         <node concept="1pGfFk" id="1GgrF83dsOh" role="2ShVmc">
           <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
@@ -5163,9 +5188,6 @@
             <property role="3cmrfH" value="11" />
           </node>
         </node>
-      </node>
-      <node concept="NWlO9" id="2k2dPZH7yNa" role="lGtFl">
-        <property role="NWlVz" value="Font used in different texts." />
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH7y$0" role="jymVt" />
