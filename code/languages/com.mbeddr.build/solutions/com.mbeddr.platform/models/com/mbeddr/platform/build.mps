@@ -20211,6 +20211,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="10EaF0SRU33" role="3bR37C">
+          <node concept="3bR9La" id="10EaF0SRU34" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="NMVW79y25x" role="3989C9">
@@ -20231,6 +20236,9 @@
       <node concept="m$_yC" id="NMVW79y25B" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="75qFqB425iF" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="de.itemis.mps.extensions.jackson" />
+      </node>
       <node concept="3_J27D" id="NMVW79y25C" role="m_cZH">
         <node concept="3Mxwew" id="NMVW79y25D" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.json" />
@@ -20239,9 +20247,6 @@
       <node concept="2iUeEo" id="NMVW79y25E" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
-      </node>
-      <node concept="m$_yC" id="75qFqB425iF" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="de.itemis.mps.extensions.jackson" />
       </node>
     </node>
     <node concept="2G$12M" id="48qh2gYg815" role="3989C9">
