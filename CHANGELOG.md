@@ -15,6 +15,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Fix exception + adjust fonts in analyses results tool
 
+## com.mbeddr.core.base
+
+* Fix layout issues caused by missing style in CRHelperCell
+
 # February 2023
 
 ## com.mbeddr.mpsutil
