@@ -30,7 +30,7 @@
         <dependency reexport="false" scope="design">985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)</dependency>
       </dependencies>
       <languageVersions>
-        <language slang="l:ccdc24b1-37a8-44ac-8a87-b53bd9c96407:com.mbeddr.mpsutil.lantest.assertions" version="-1" />
+        <language slang="l:ccdc24b1-37a8-44ac-8a87-b53bd9c96407:com.mbeddr.mpsutil.lantest.assertions" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
