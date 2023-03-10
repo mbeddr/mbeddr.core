@@ -5529,6 +5529,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="4GmOkxM58t$" role="3bR37C">
+            <node concept="3bR9La" id="4GmOkxM58tz" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7YI57w6K0vJ" resolve="jetbrains.mps.core.xml.sax#2264311582634171386" />
+            </node>
+          </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJNhv" role="3bR31x">
           <property role="3ZfqAx" value="languageModels" />
@@ -5550,6 +5555,11 @@
             <node concept="3qWCbU" id="4PRpvcZJNhx" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4GmOkxM58tk" role="3bR37C">
+          <node concept="1Busua" id="4GmOkxM58tl" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:1CmvFEFDh4$" resolve="jetbrains.mps.core.xml.sax" />
           </node>
         </node>
       </node>
