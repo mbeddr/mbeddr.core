@@ -1535,6 +1535,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="3k8awrKpFsY" role="3bR37C">
+            <node concept="3bR9La" id="3k8awrKpFsZ" role="1SiIV1">
+              <ref role="3bR37D" to="p6ld:7uZw0yZ43Lo" resolve="com.mbeddr.core.pointers" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="3xFG3bj5bPD" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5bPE" role="3rtmxm">

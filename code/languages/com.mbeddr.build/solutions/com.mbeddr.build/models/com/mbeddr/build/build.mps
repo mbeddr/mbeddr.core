@@ -3640,11 +3640,6 @@
               <ref role="3bR37D" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
             </node>
           </node>
-          <node concept="1SiIV0" id="gUS73Y1Uf0" role="3bR37C">
-            <node concept="3bR9La" id="gUS73Y1UeZ" role="1SiIV1">
-              <ref role="3bR37D" node="HiHZpX4CZy" resolve="com.mbeddr.core.modules.gen#1758019824472882132" />
-            </node>
-          </node>
           <node concept="1BupzO" id="7ZN_vIiShu0" role="3bR31x">
             <property role="3ZfqAx" value="generator/template" />
             <property role="1Hdu6h" value="true" />
@@ -11630,6 +11625,11 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="3k8awrKpFPb" role="3bR37C">
+            <node concept="3bR9La" id="3k8awrKpFPc" role="1SiIV1">
+              <ref role="3bR37D" node="7EbG8DE3al6" resolve="com.mbeddr.cc.requirements.scenarios" />
+            </node>
+          </node>
         </node>
         <node concept="1BupzO" id="7ZN_vIiShOZ" role="3bR31x">
           <property role="3ZfqAx" value="languageModels" />
@@ -13446,11 +13446,6 @@
         <node concept="1SiIV0" id="32kfzHm7ggZ" role="3bR37C">
           <node concept="3bR9La" id="32kfzHm7gh0" role="1SiIV1">
             <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="32kfzHm7gh1" role="3bR37C">
-          <node concept="3bR9La" id="32kfzHm7gh2" role="1SiIV1">
-            <ref role="3bR37D" node="7eF9rfAuFwr" resolve="com.mbeddr.analyses.cbmc" />
           </node>
         </node>
         <node concept="1SiIV0" id="32kfzHm7gh3" role="3bR37C">
@@ -15762,11 +15757,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2nfOfEg6Lbh" role="3bR37C">
-          <node concept="3bR9La" id="2nfOfEg6Lbi" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />
-          </node>
-        </node>
         <node concept="1BupzO" id="7ZN_vIiSi0l" role="3bR31x">
           <property role="3ZfqAx" value="languageModels" />
           <property role="1Hdu6h" value="true" />
@@ -16045,6 +16035,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3k8awrKpFYG" role="3bR37C">
+          <node concept="3bR9La" id="3k8awrKpFYH" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
           </node>
         </node>
       </node>

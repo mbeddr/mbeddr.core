@@ -26,6 +26,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">3beb2392-95b7-4957-8868-e0ba16753f82(com.mbeddr.cc.requirements.report#5785245534400478720)</dependency>
+        <dependency reexport="false">d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:e865cad2-7cc8-437a-951a-665bcbcb8b1a:com.mbeddr.cc.requirements" version="0" />
@@ -68,6 +69,7 @@
         <module reference="3beb2392-95b7-4957-8868-e0ba16753f82(com.mbeddr.cc.requirements.report#5785245534400478720)" version="0" />
         <module reference="b9f5080f-7f6a-4d86-b994-77d4c982153a(com.mbeddr.cc.requirements.scenario2doc)" version="0" />
         <module reference="68b152cd-852d-499c-ae8a-4acde1c7a2d1(com.mbeddr.cc.requirements.scenario2doc#5785245534401182239)" version="0" />
+        <module reference="d6714220-402d-48cb-a4a2-88223c6257f6(com.mbeddr.cc.requirements.scenarios)" version="0" />
         <module reference="53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)" version="0" />
         <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
         <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />
