@@ -41,6 +41,7 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -5382,15 +5383,30 @@
                           </node>
                           <node concept="9aQIb" id="5syY_AKGiX_" role="9aQIa">
                             <node concept="3clFbS" id="5syY_AKGiXA" role="9aQI4">
-                              <node concept="3clFbF" id="5syY_AKGlc9" role="3cqZAp">
-                                <node concept="2YIFZM" id="5syY_AKGlHX" role="3clFbG">
-                                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String)" resolve="showErrorDialog" />
-                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                  <node concept="37vLTw" id="5syY_AKGsnx" role="37wK5m">
-                                    <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
+                              <node concept="3clFbF" id="3k8awrIfg8E" role="3cqZAp">
+                                <node concept="2OqwBi" id="3k8awrIfA6S" role="3clFbG">
+                                  <node concept="2YIFZM" id="3k8awrIfxzn" role="2Oq$k0">
+                                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                   </node>
-                                  <node concept="Xl_RD" id="5syY_AKGoj6" role="37wK5m">
-                                    <property role="Xl_RC" value="Rerunner returned null; retaining original tree." />
+                                  <node concept="liA8E" id="3k8awrIfMqx" role="2OqNvi">
+                                    <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                                    <node concept="1bVj0M" id="3k8awrIfUSn" role="37wK5m">
+                                      <node concept="3clFbS" id="3k8awrIfUSo" role="1bW5cS">
+                                        <node concept="3clFbF" id="5syY_AKGlc9" role="3cqZAp">
+                                          <node concept="2YIFZM" id="5syY_AKGlHX" role="3clFbG">
+                                            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String)" resolve="showErrorDialog" />
+                                            <node concept="37vLTw" id="5syY_AKGsnx" role="37wK5m">
+                                              <ref role="3cqZAo" node="5IR_boHPfLL" resolve="tree" />
+                                            </node>
+                                            <node concept="Xl_RD" id="5syY_AKGoj6" role="37wK5m">
+                                              <property role="Xl_RC" value="Rerunner returned null; retaining original tree." />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>

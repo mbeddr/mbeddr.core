@@ -17,8 +17,9 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -370,25 +371,54 @@
         </node>
         <node concept="3clFbJ" id="2mAwexAtNL3" role="3cqZAp">
           <node concept="3clFbS" id="2mAwexAtNL4" role="3clFbx">
-            <node concept="3clFbF" id="6c8wWdNZ6UL" role="3cqZAp">
-              <node concept="2YIFZM" id="6c8wWdNZfsK" role="3clFbG">
-                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.lang.String,java.lang.String)" resolve="showInfoMessage" />
-                <node concept="3cpWs3" id="14uWAurihOV" role="37wK5m">
-                  <node concept="Xl_RD" id="14uWAurihOY" role="3uHU7w">
-                    <property role="Xl_RC" value=" not found" />
+            <node concept="3cpWs8" id="3k8awrIcyiG" role="3cqZAp">
+              <node concept="3cpWsn" id="3k8awrIcyiH" role="3cpWs9">
+                <property role="TrG5h" value="termAsText" />
+                <node concept="17QB3L" id="3k8awrIcyyH" role="1tU5fm" />
+                <node concept="2OqwBi" id="3k8awrIcyiI" role="33vP2m">
+                  <node concept="37vLTw" id="3k8awrIcyiJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2mAwexAtCmI" resolve="word" />
                   </node>
-                  <node concept="3cpWs3" id="14uWAurihOz" role="3uHU7B">
-                    <node concept="Xl_RD" id="2mAwexAtNMW" role="3uHU7B">
-                      <property role="Xl_RC" value="Term " />
-                    </node>
-                    <node concept="37vLTw" id="5Hxjapw9viz" role="3uHU7w">
-                      <ref role="3cqZAo" node="2mAwexAtCmI" resolve="word" />
-                    </node>
+                  <node concept="liA8E" id="3k8awrIcyiK" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="6c8wWdNZfsP" role="37wK5m">
-                  <property role="Xl_RC" value="No term found" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="3k8awrIcx9P" role="3cqZAp">
+              <node concept="2OqwBi" id="3k8awrIcxrZ" role="3clFbG">
+                <node concept="2YIFZM" id="3k8awrIcxaW" role="2Oq$k0">
+                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                </node>
+                <node concept="liA8E" id="3k8awrIcxH8" role="2OqNvi">
+                  <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                  <node concept="1bVj0M" id="3k8awrIcxHX" role="37wK5m">
+                    <node concept="3clFbS" id="3k8awrIcxHY" role="1bW5cS">
+                      <node concept="3clFbF" id="6c8wWdNZ6UL" role="3cqZAp">
+                        <node concept="2YIFZM" id="6c8wWdNZfsK" role="3clFbG">
+                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                          <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.lang.String,java.lang.String)" resolve="showInfoMessage" />
+                          <node concept="3cpWs3" id="14uWAurihOV" role="37wK5m">
+                            <node concept="Xl_RD" id="14uWAurihOY" role="3uHU7w">
+                              <property role="Xl_RC" value=" not found" />
+                            </node>
+                            <node concept="3cpWs3" id="14uWAurihOz" role="3uHU7B">
+                              <node concept="Xl_RD" id="2mAwexAtNMW" role="3uHU7B">
+                                <property role="Xl_RC" value="Term " />
+                              </node>
+                              <node concept="37vLTw" id="3k8awrIcyiL" role="3uHU7w">
+                                <ref role="3cqZAo" node="3k8awrIcyiH" resolve="termAsText" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="6c8wWdNZfsP" role="37wK5m">
+                            <property role="Xl_RC" value="No term found" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

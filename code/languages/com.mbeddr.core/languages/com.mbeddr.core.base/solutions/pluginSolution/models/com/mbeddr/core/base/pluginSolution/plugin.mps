@@ -2942,32 +2942,47 @@
         </node>
         <node concept="3clFbJ" id="6bZ9fUD38e2" role="3cqZAp">
           <node concept="3clFbS" id="6bZ9fUD38e3" role="3clFbx">
-            <node concept="3clFbF" id="6bZ9fUD38ez" role="3cqZAp">
-              <node concept="2YIFZM" id="6bZ9fUD38bh" role="3clFbG">
-                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                <node concept="37vLTw" id="6bZ9fUD38bi" role="37wK5m">
-                  <ref role="3cqZAo" node="7uLL3Mf2K6U" resolve="proj" />
+            <node concept="3clFbF" id="3k8awrIb5sF" role="3cqZAp">
+              <node concept="2OqwBi" id="3k8awrIb6n0" role="3clFbG">
+                <node concept="2YIFZM" id="3k8awrIb5PD" role="2Oq$k0">
+                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                 </node>
-                <node concept="3cpWs3" id="6bZ9fUD38bj" role="37wK5m">
-                  <node concept="Xl_RD" id="6bZ9fUD38bk" role="3uHU7w">
-                    <property role="Xl_RC" value="'" />
-                  </node>
-                  <node concept="3cpWs3" id="6bZ9fUD38bl" role="3uHU7B">
-                    <node concept="Xl_RD" id="6bZ9fUD38bm" role="3uHU7B">
-                      <property role="Xl_RC" value="Don't know how to open a terminal for operating system '" />
-                    </node>
-                    <node concept="2YIFZM" id="6bZ9fUD38bn" role="3uHU7w">
-                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
-                      <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                      <node concept="Xl_RD" id="6bZ9fUD38bo" role="37wK5m">
-                        <property role="Xl_RC" value="os.name" />
+                <node concept="liA8E" id="3k8awrIb6S$" role="2OqNvi">
+                  <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                  <node concept="1bVj0M" id="3k8awrIb7cm" role="37wK5m">
+                    <node concept="3clFbS" id="3k8awrIb7cn" role="1bW5cS">
+                      <node concept="3clFbF" id="6bZ9fUD38ez" role="3cqZAp">
+                        <node concept="2YIFZM" id="6bZ9fUD38bh" role="3clFbG">
+                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                          <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                          <node concept="37vLTw" id="6bZ9fUD38bi" role="37wK5m">
+                            <ref role="3cqZAo" node="7uLL3Mf2K6U" resolve="proj" />
+                          </node>
+                          <node concept="3cpWs3" id="6bZ9fUD38bj" role="37wK5m">
+                            <node concept="Xl_RD" id="6bZ9fUD38bk" role="3uHU7w">
+                              <property role="Xl_RC" value="'" />
+                            </node>
+                            <node concept="3cpWs3" id="6bZ9fUD38bl" role="3uHU7B">
+                              <node concept="Xl_RD" id="6bZ9fUD38bm" role="3uHU7B">
+                                <property role="Xl_RC" value="Don't know how to open a terminal for operating system '" />
+                              </node>
+                              <node concept="2YIFZM" id="6bZ9fUD38bn" role="3uHU7w">
+                                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                                <node concept="Xl_RD" id="6bZ9fUD38bo" role="37wK5m">
+                                  <property role="Xl_RC" value="os.name" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="6bZ9fUD38bp" role="37wK5m">
+                            <property role="Xl_RC" value="Error" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="Xl_RD" id="6bZ9fUD38bp" role="37wK5m">
-                  <property role="Xl_RC" value="Error" />
                 </node>
               </node>
             </node>
@@ -3024,18 +3039,34 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="6c8wWdNZ6UL" role="3cqZAp">
-                      <node concept="2YIFZM" id="7uLL3Mf2LSl" role="3clFbG">
-                        <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                        <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                        <node concept="37vLTw" id="7uLL3Mf2LSm" role="37wK5m">
-                          <ref role="3cqZAo" node="7uLL3Mf2K6U" resolve="proj" />
+                    <node concept="3clFbF" id="3k8awrIbG0n" role="3cqZAp">
+                      <node concept="2OqwBi" id="3k8awrIbGOF" role="3clFbG">
+                        <node concept="2YIFZM" id="3k8awrIbGlJ" role="2Oq$k0">
+                          <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                          <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                         </node>
-                        <node concept="37vLTw" id="7uLL3Mf2LSn" role="37wK5m">
-                          <ref role="3cqZAo" node="7uLL3Mf2K78" resolve="m" />
-                        </node>
-                        <node concept="Xl_RD" id="7uLL3Mf2LSo" role="37wK5m">
-                          <property role="Xl_RC" value="Error" />
+                        <node concept="liA8E" id="3k8awrIbHo2" role="2OqNvi">
+                          <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                          <node concept="1bVj0M" id="3k8awrIbHOo" role="37wK5m">
+                            <node concept="3clFbS" id="3k8awrIbHOp" role="1bW5cS">
+                              <node concept="3clFbF" id="6c8wWdNZ6UL" role="3cqZAp">
+                                <node concept="2YIFZM" id="7uLL3Mf2LSl" role="3clFbG">
+                                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                  <node concept="37vLTw" id="7uLL3Mf2LSm" role="37wK5m">
+                                    <ref role="3cqZAo" node="7uLL3Mf2K6U" resolve="proj" />
+                                  </node>
+                                  <node concept="37vLTw" id="7uLL3Mf2LSn" role="37wK5m">
+                                    <ref role="3cqZAo" node="7uLL3Mf2K78" resolve="m" />
+                                  </node>
+                                  <node concept="Xl_RD" id="7uLL3Mf2LSo" role="37wK5m">
+                                    <property role="Xl_RC" value="Error" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbH" id="3k8awrIbI69" role="3cqZAp" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3056,18 +3087,33 @@
                   </node>
                   <node concept="3clFbJ" id="4p1DAc3IuBA" role="3cqZAp">
                     <node concept="3clFbS" id="4p1DAc3IuBD" role="3clFbx">
-                      <node concept="3clFbF" id="4p1DAc3Iy$F" role="3cqZAp">
-                        <node concept="2YIFZM" id="4p1DAc3IFGC" role="3clFbG">
-                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                          <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showInfoMessage" />
-                          <node concept="37vLTw" id="4p1DAc3IFGD" role="37wK5m">
-                            <ref role="3cqZAo" node="7uLL3Mf2K6U" resolve="proj" />
+                      <node concept="3clFbF" id="3k8awrIbD7y" role="3cqZAp">
+                        <node concept="2OqwBi" id="3k8awrIbDOk" role="3clFbG">
+                          <node concept="2YIFZM" id="3k8awrIbDrN" role="2Oq$k0">
+                            <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                            <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                           </node>
-                          <node concept="Xl_RD" id="4p1DAc3IFGE" role="37wK5m">
-                            <property role="Xl_RC" value="Output folder does not exist, try building first" />
-                          </node>
-                          <node concept="Xl_RD" id="4p1DAc3IH14" role="37wK5m">
-                            <property role="Xl_RC" value="Info" />
+                          <node concept="liA8E" id="3k8awrIbEmF" role="2OqNvi">
+                            <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                            <node concept="1bVj0M" id="3k8awrIbEFg" role="37wK5m">
+                              <node concept="3clFbS" id="3k8awrIbEFh" role="1bW5cS">
+                                <node concept="3clFbF" id="4p1DAc3Iy$F" role="3cqZAp">
+                                  <node concept="2YIFZM" id="4p1DAc3IFGC" role="3clFbG">
+                                    <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                    <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showInfoMessage" />
+                                    <node concept="37vLTw" id="4p1DAc3IFGD" role="37wK5m">
+                                      <ref role="3cqZAo" node="7uLL3Mf2K6U" resolve="proj" />
+                                    </node>
+                                    <node concept="Xl_RD" id="4p1DAc3IFGE" role="37wK5m">
+                                      <property role="Xl_RC" value="Output folder does not exist, try building first" />
+                                    </node>
+                                    <node concept="Xl_RD" id="4p1DAc3IH14" role="37wK5m">
+                                      <property role="Xl_RC" value="Info" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -22692,31 +22738,46 @@
               </node>
             </node>
             <node concept="3clFbS" id="7SQqK0FfR4l" role="1zc67A">
-              <node concept="3clFbF" id="7SQqK0FfSOp" role="3cqZAp">
-                <node concept="2YIFZM" id="7SQqK0FfSPc" role="3clFbG">
-                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                  <node concept="2OqwBi" id="7SQqK0FfSQ6" role="37wK5m">
-                    <node concept="2WthIp" id="7SQqK0FfSQ9" role="2Oq$k0" />
-                    <node concept="1DTwFV" id="7SQqK0FfSQb" role="2OqNvi">
-                      <ref role="2WH_rO" node="7SQqK0FfdCY" resolve="project" />
-                    </node>
+              <node concept="3clFbF" id="3k8awrIbJUV" role="3cqZAp">
+                <node concept="2OqwBi" id="3k8awrIbKeI" role="3clFbG">
+                  <node concept="2YIFZM" id="3k8awrIbJX8" role="2Oq$k0">
+                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                   </node>
-                  <node concept="3cpWs3" id="7SQqK0FfTzX" role="37wK5m">
-                    <node concept="2OqwBi" id="7SQqK0FfTQT" role="3uHU7w">
-                      <node concept="37vLTw" id="7SQqK0FfT$_" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7SQqK0FfR4h" resolve="ex" />
-                      </node>
-                      <node concept="liA8E" id="7SQqK0FfUr1" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  <node concept="liA8E" id="3k8awrIbK$G" role="2OqNvi">
+                    <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                    <node concept="1bVj0M" id="3k8awrIbKAe" role="37wK5m">
+                      <node concept="3clFbS" id="3k8awrIbKAf" role="1bW5cS">
+                        <node concept="3clFbF" id="7SQqK0FfSOp" role="3cqZAp">
+                          <node concept="2YIFZM" id="7SQqK0FfSPc" role="3clFbG">
+                            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(com.intellij.openapi.project.Project,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                            <node concept="2OqwBi" id="7SQqK0FfSQ6" role="37wK5m">
+                              <node concept="2WthIp" id="7SQqK0FfSQ9" role="2Oq$k0" />
+                              <node concept="1DTwFV" id="7SQqK0FfSQb" role="2OqNvi">
+                                <ref role="2WH_rO" node="7SQqK0FfdCY" resolve="project" />
+                              </node>
+                            </node>
+                            <node concept="3cpWs3" id="7SQqK0FfTzX" role="37wK5m">
+                              <node concept="2OqwBi" id="7SQqK0FfTQT" role="3uHU7w">
+                                <node concept="37vLTw" id="7SQqK0FfT$_" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7SQqK0FfR4h" resolve="ex" />
+                                </node>
+                                <node concept="liA8E" id="7SQqK0FfUr1" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="7SQqK0FfSTG" role="3uHU7B">
+                                <property role="Xl_RC" value="Failed to safe image: " />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="7SQqK0FfTfp" role="37wK5m">
+                              <property role="Xl_RC" value="Failed to safe image" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="7SQqK0FfSTG" role="3uHU7B">
-                      <property role="Xl_RC" value="Failed to safe image: " />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="7SQqK0FfTfp" role="37wK5m">
-                    <property role="Xl_RC" value="Failed to safe image" />
                   </node>
                 </node>
               </node>
