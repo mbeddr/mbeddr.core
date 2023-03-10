@@ -14652,11 +14652,11 @@
           </node>
           <node concept="2OqwBi" id="3mNkkAibq6B" role="33vP2m">
             <node concept="2YIFZM" id="3mNkkAibq6C" role="2Oq$k0">
-              <ref role="37wK5l" to="u78q:~TypeChecker.getInstance():jetbrains.mps.typesystem.inference.TypeChecker" resolve="getInstance" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getInstance()" resolve="getInstance" />
               <ref role="1Pybhc" to="u78q:~TypeChecker" resolve="TypeChecker" />
             </node>
             <node concept="liA8E" id="3mNkkAibq6D" role="2OqNvi">
-              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager():jetbrains.mps.typesystem.inference.SubtypingManager" resolve="getSubtypingManager" />
+              <ref role="37wK5l" to="u78q:~TypeChecker.getSubtypingManager()" resolve="getSubtypingManager" />
             </node>
           </node>
         </node>
@@ -14681,7 +14681,7 @@
                 <ref role="3cqZAo" node="3mNkkAibq6_" resolve="subtypingManager" />
               </node>
               <node concept="liA8E" id="3mNkkAibq6O" role="2OqNvi">
-                <ref role="37wK5l" to="u78q:~SubtypingManager.isComparable(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean):boolean" resolve="isComparable" />
+                <ref role="37wK5l" to="u78q:~SubtypingManager.isComparable(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="isComparable" />
                 <node concept="2GrUjf" id="3mNkkAibq6P" role="37wK5m">
                   <ref role="2Gs0qQ" node="3mNkkAibq6G" resolve="superType" />
                 </node>

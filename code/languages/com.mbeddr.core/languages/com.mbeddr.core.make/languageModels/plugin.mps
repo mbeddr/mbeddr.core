@@ -2714,7 +2714,7 @@
                     <ref role="3cqZAo" node="4OhLxls9tYi" resolve="makeOutput" />
                   </node>
                   <node concept="liA8E" id="3NVVczxBKfU" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                    <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                     <node concept="Xl_RD" id="3NVVczxBKfV" role="37wK5m">
                       <property role="Xl_RC" value=":" />
                     </node>
@@ -3484,7 +3484,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4$Xvl0yANj0" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
               </node>
             </node>
           </node>
@@ -3497,7 +3497,7 @@
             </node>
             <node concept="2YIFZM" id="4$Xvl0yAJOq" role="33vP2m">
               <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-              <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository):jetbrains.mps.smodel.language.LanguageRegistry" resolve="getInstance" />
+              <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
               <node concept="37vLTw" id="4$Xvl0yAOYI" role="37wK5m">
                 <ref role="3cqZAo" node="4$Xvl0yANiW" resolve="repository" />
               </node>
@@ -3526,18 +3526,18 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4$Xvl0yARDr" role="2OqNvi">
-                        <ref role="37wK5l" to="w1kc:~ModelDependencyResolver.usedLanguages(org.jetbrains.mps.openapi.model.SModel):java.util.Collection" resolve="usedLanguages" />
+                        <ref role="37wK5l" to="w1kc:~ModelDependencyResolver.usedLanguages(org.jetbrains.mps.openapi.model.SModel)" resolve="usedLanguages" />
                         <node concept="37vLTw" id="4$Xvl0yARDs" role="37wK5m">
                           <ref role="3cqZAo" node="34wrZhDTzsd" resolve="model" />
                         </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="7EZ1Spsd2HJ" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~Collection.stream():java.util.stream.Stream" resolve="stream" />
+                      <ref role="37wK5l" to="33ny:~Collection.stream()" resolve="stream" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7EZ1Spsd4hX" role="2OqNvi">
-                    <ref role="37wK5l" to="1ctc:~Stream.map(java.util.function.Function):java.util.stream.Stream" resolve="map" />
+                    <ref role="37wK5l" to="1ctc:~Stream.map(java.util.function.Function)" resolve="map" />
                     <node concept="1bVj0M" id="7EZ1SpsdaWR" role="37wK5m">
                       <node concept="37vLTG" id="7EZ1Spsdc1B" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
@@ -3552,7 +3552,7 @@
                               <ref role="3cqZAo" node="7EZ1Spsdc1B" resolve="it" />
                             </node>
                             <node concept="liA8E" id="7EZ1Spsdi9d" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                              <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName()" resolve="getQualifiedName" />
                             </node>
                           </node>
                         </node>
@@ -3561,9 +3561,9 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="7EZ1Spsdyc9" role="2OqNvi">
-                  <ref role="37wK5l" to="1ctc:~Stream.collect(java.util.stream.Collector):java.lang.Object" resolve="collect" />
+                  <ref role="37wK5l" to="1ctc:~Stream.collect(java.util.stream.Collector)" resolve="collect" />
                   <node concept="2YIFZM" id="7EZ1SpsdI6H" role="37wK5m">
-                    <ref role="37wK5l" to="1ctc:~Collectors.toSet():java.util.stream.Collector" resolve="toSet" />
+                    <ref role="37wK5l" to="1ctc:~Collectors.toSet()" resolve="toSet" />
                     <ref role="1Pybhc" to="1ctc:~Collectors" resolve="Collectors" />
                     <node concept="17QB3L" id="7EZ1SpsdJHy" role="3PaCim" />
                   </node>

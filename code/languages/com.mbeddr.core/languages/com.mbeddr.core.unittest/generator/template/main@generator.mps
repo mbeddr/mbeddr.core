@@ -2206,7 +2206,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="X1k1LB0hYd" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                                     </node>
                                   </node>
                                   <node concept="3cpWs3" id="X1k1LAZRHo" role="3uHU7B">
@@ -2216,7 +2216,7 @@
                                       </node>
                                       <node concept="2OqwBi" id="4Ru$s7zwbMM" role="3uHU7w">
                                         <node concept="liA8E" id="4Ru$s7zwbMP" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                          <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                                         </node>
                                         <node concept="2OqwBi" id="5hcw$WGD6bk" role="2Oq$k0">
                                           <node concept="30H73N" id="5hcw$WGD5KF" role="2Oq$k0" />
@@ -2673,7 +2673,7 @@
                                       <node concept="2yIwOk" id="6GAl_xx5DFE" role="2OqNvi" />
                                     </node>
                                     <node concept="liA8E" id="6GAl_xx5DFF" role="2OqNvi">
-                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                                     </node>
                                   </node>
                                 </node>
@@ -2839,7 +2839,7 @@
                                       <node concept="2yIwOk" id="6GAl_xx5DGZ" role="2OqNvi" />
                                     </node>
                                     <node concept="liA8E" id="6GAl_xx5DH0" role="2OqNvi">
-                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                                     </node>
                                   </node>
                                 </node>
@@ -3214,7 +3214,7 @@
                                           <node concept="2yIwOk" id="5hcw$WG$p0L" role="2OqNvi" />
                                         </node>
                                         <node concept="liA8E" id="5hcw$WG$p0M" role="2OqNvi">
-                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                                         </node>
                                       </node>
                                     </node>
@@ -3335,7 +3335,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="X1k1LB0eUU" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                          <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                                         </node>
                                       </node>
                                       <node concept="3cpWs3" id="X1k1LB0cwf" role="3uHU7B">
@@ -3345,7 +3345,7 @@
                                           </node>
                                           <node concept="2OqwBi" id="X1k1LB0cwi" role="3uHU7w">
                                             <node concept="liA8E" id="X1k1LB0cwj" role="2OqNvi">
-                                              <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                              <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                                             </node>
                                             <node concept="2OqwBi" id="X1k1LB0cwk" role="2Oq$k0">
                                               <node concept="30H73N" id="X1k1LB0cwl" role="2Oq$k0" />
@@ -4190,7 +4190,7 @@
                                       <node concept="2yIwOk" id="shBE9Kl_ry" role="2OqNvi" />
                                     </node>
                                     <node concept="liA8E" id="shBE9Kl_rz" role="2OqNvi">
-                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                                     </node>
                                   </node>
                                 </node>
@@ -4356,7 +4356,7 @@
                                       <node concept="2yIwOk" id="shBE9Kl_sR" role="2OqNvi" />
                                     </node>
                                     <node concept="liA8E" id="shBE9Kl_sS" role="2OqNvi">
-                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias():java.lang.String" resolve="getConceptAlias" />
+                                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
                                     </node>
                                   </node>
                                 </node>
@@ -11124,7 +11124,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7guffqM0D2F" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="7guffqM0D2G" role="37wK5m">
                       <property role="Xl_RC" value="mkdir" />
                     </node>
@@ -11357,7 +11357,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="7guffqM0D42" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="Xl_RD" id="7guffqM0D43" role="37wK5m">
                       <property role="Xl_RC" value="gethostname" />
                     </node>

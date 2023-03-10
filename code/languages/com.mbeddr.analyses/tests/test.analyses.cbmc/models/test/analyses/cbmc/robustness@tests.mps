@@ -363,7 +363,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2NphfZ26sPu" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="Xl_RD" id="2NphfZ26sQ5" role="37wK5m">
                 <property role="Xl_RC" value="division by zero in" />
               </node>
@@ -2349,7 +2349,7 @@
               <ref role="3cqZAo" node="2mQeHrXgtPd" resolve="msg" />
             </node>
             <node concept="liA8E" id="DaB78DgIbA" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
               <node concept="37vLTw" id="DaB78DgId7" role="37wK5m">
                 <ref role="3cqZAo" node="DaB78DgGFu" resolve="error" />
               </node>
@@ -2907,7 +2907,7 @@
                         <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                       </node>
                       <node concept="liA8E" id="NfDeW0OrxU" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                         <node concept="3cpWs3" id="NfDeW0OtVi" role="37wK5m">
                           <node concept="2OqwBi" id="NfDeW0Ouv8" role="3uHU7w">
                             <node concept="37vLTw" id="NfDeW0OujS" role="2Oq$k0">
@@ -3194,7 +3194,7 @@
                     <ref role="3cqZAo" node="43x69gbETfg" resolve="cygwinMsg" />
                   </node>
                   <node concept="liA8E" id="43x69gbEXQ9" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbEYWo" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbEYU9" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIjMyn" resolve="res0" />
@@ -3210,7 +3210,7 @@
                     <ref role="3cqZAo" node="43x69gbETyO" resolve="linuxMsg" />
                   </node>
                   <node concept="liA8E" id="43x69gbF1tI" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF1TL" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbF1Kb" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIjMyn" resolve="res0" />
@@ -3450,7 +3450,7 @@
                     <ref role="3cqZAo" node="43x69gbF6b2" resolve="cygwinMsg0" />
                   </node>
                   <node concept="liA8E" id="43x69gbF6bs" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF6bt" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbF6bu" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIlkj5" resolve="res0" />
@@ -3466,7 +3466,7 @@
                     <ref role="3cqZAo" node="43x69gbF6b6" resolve="linuxMsg0" />
                   </node>
                   <node concept="liA8E" id="43x69gbF6by" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF6bz" role="37wK5m">
                       <node concept="37vLTw" id="43x69gbF6b$" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIlkj5" resolve="res0" />
@@ -3579,7 +3579,7 @@
                     <ref role="3cqZAo" node="43x69gbF8$b" resolve="cygwinMsg1" />
                   </node>
                   <node concept="liA8E" id="43x69gbF8$_" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF8$A" role="37wK5m">
                       <node concept="37vLTw" id="5kHkJcGKjOd" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIk1t4" resolve="res1" />
@@ -3595,7 +3595,7 @@
                     <ref role="3cqZAo" node="43x69gbF8$f" resolve="linuxMsg1" />
                   </node>
                   <node concept="liA8E" id="43x69gbF8$F" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                     <node concept="2OqwBi" id="43x69gbF8$G" role="37wK5m">
                       <node concept="37vLTw" id="5kHkJcGKjSD" role="2Oq$k0">
                         <ref role="3cqZAo" node="4tIZ4QIk1t4" resolve="res1" />

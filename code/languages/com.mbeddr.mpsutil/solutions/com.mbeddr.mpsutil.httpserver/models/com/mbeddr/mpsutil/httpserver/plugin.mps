@@ -407,7 +407,7 @@
                       </node>
                       <node concept="2YIFZM" id="_jqqJb0sNN" role="37vLTx">
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <node concept="Xl_RD" id="_jqqJb0sNO" role="37wK5m">
                           <property role="Xl_RC" value="mbeddr.test.http.port" />
                         </node>
@@ -602,7 +602,7 @@
                 <property role="TrG5h" value="enabledSetting" />
                 <node concept="17QB3L" id="7uvldrz5WRA" role="1tU5fm" />
                 <node concept="2YIFZM" id="7uvldrz5A0V" role="33vP2m">
-                  <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String):java.lang.String" resolve="getenv" />
+                  <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String)" resolve="getenv" />
                   <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                   <node concept="Xl_RD" id="7uvldrz5A0W" role="37wK5m">
                     <property role="Xl_RC" value="MBEDDR_TEST_HTTP_ENABLED" />
@@ -638,7 +638,7 @@
                         <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
                       </node>
                       <node concept="2YIFZM" id="7uvldrz5A1I" role="37vLTx">
-                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                        <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
                         <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
                         <node concept="Xl_RD" id="7uvldrz5A1J" role="37wK5m">
                           <property role="Xl_RC" value="mbeddr.test.http.enabled" />
@@ -677,7 +677,7 @@
                     <property role="TrG5h" value="enabled" />
                     <node concept="10P_77" id="7uvldrz5Fxe" role="1tU5fm" />
                     <node concept="2YIFZM" id="7uvldrz5EIm" role="33vP2m">
-                      <ref role="37wK5l" to="wyt6:~Boolean.parseBoolean(java.lang.String):boolean" resolve="parseBoolean" />
+                      <ref role="37wK5l" to="wyt6:~Boolean.parseBoolean(java.lang.String)" resolve="parseBoolean" />
                       <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
                       <node concept="37vLTw" id="7uvldrz5YK5" role="37wK5m">
                         <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
@@ -706,11 +706,11 @@
           </node>
           <node concept="2OqwBi" id="7uvldrz5_Sx" role="3clFbw">
             <node concept="2YIFZM" id="7uvldrz5_Sy" role="2Oq$k0">
-              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication():com.intellij.openapi.application.Application" resolve="getApplication" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
               <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
             <node concept="liA8E" id="7uvldrz5_Sz" role="2OqNvi">
-              <ref role="37wK5l" to="bd8o:~Application.isUnitTestMode():boolean" resolve="isUnitTestMode" />
+              <ref role="37wK5l" to="bd8o:~Application.isUnitTestMode()" resolve="isUnitTestMode" />
             </node>
           </node>
         </node>

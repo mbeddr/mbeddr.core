@@ -2196,7 +2196,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="g_VxxgQPY5" role="2OqNvi">
-                                      <ref role="37wK5l" to="xlxw:~BigInteger.intValue():int" resolve="intValue" />
+                                      <ref role="37wK5l" to="xlxw:~BigInteger.intValue()" resolve="intValue" />
                                     </node>
                                   </node>
                                   <node concept="37vLTw" id="g_VxxgRj_5" role="37vLTJ">

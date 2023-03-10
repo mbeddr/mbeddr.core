@@ -570,7 +570,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1y8E7lpJvZ" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="1y8E7lpK1P" role="37wK5m">
                                     <node concept="37vLTw" id="1y8E7lpJCA" role="2Oq$k0">
                                       <ref role="3cqZAo" node="6I2T_LF6yZx" resolve="harness" />
@@ -718,7 +718,7 @@
         <node concept="1pGfFk" id="5PJiK1q5LW7" role="2ShVmc">
           <ref role="37wK5l" to="33ny:~Random.&lt;init&gt;(long)" resolve="Random" />
           <node concept="2YIFZM" id="5PJiK1q5LX$" role="37wK5m">
-            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
             <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
           </node>
         </node>
@@ -738,7 +738,7 @@
               <ref role="3cqZAo" node="5PJiK1q5KLO" resolve="rnd" />
             </node>
             <node concept="liA8E" id="5PJiK1q5MoT" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
+              <ref role="37wK5l" to="33ny:~Random.nextInt(int)" resolve="nextInt" />
               <node concept="37vLTw" id="5PJiK1q5Mqz" role="37wK5m">
                 <ref role="3cqZAo" node="5PJiK1q5MpA" resolve="max" />
               </node>
@@ -783,7 +783,7 @@
                     </node>
                     <node concept="2YIFZM" id="1y8E7lpuIr" role="3uHU7w">
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                       <node concept="Xl_RD" id="1y8E7lpuIs" role="37wK5m">
                         <property role="Xl_RC" value="%03d" />
                       </node>
@@ -885,7 +885,7 @@
                   <ref role="3cqZAo" node="5PJiK1q5UEE" resolve="bles" />
                 </node>
                 <node concept="liA8E" id="5PJiK1q65K_" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                   <node concept="2YIFZM" id="5PJiK1q65KA" role="37wK5m">
                     <ref role="37wK5l" node="5PJiK1q5LZM" resolve="nextRandom" />
                     <ref role="1Pybhc" node="5PJiK1q5JXk" resolve="Utils" />
@@ -1934,7 +1934,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1y8E7loaDy" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+              <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
               <node concept="10M0yZ" id="1y8E7loaFd" role="37wK5m">
                 <ref role="1PxDUh" node="5PJiK1q5IXB" resolve="Mutater" />
                 <ref role="3cqZAo" node="1y8E7ln5rd" resolve="MUTATION_MARKER" />
