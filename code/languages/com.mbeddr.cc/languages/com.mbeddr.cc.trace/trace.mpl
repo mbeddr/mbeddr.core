@@ -25,9 +25,10 @@
         <facet type="java" />
         <facet type="java" />
       </facets>
-      <external-templates>
-        <generator generatorUID="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" />
-      </external-templates>
+      <external-templates />
+      <dependencies>
+        <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:53bab999-e9c3-428a-80be-fef5bed08f55:com.mbeddr.cc.trace" version="0" />
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />

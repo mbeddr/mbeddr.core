@@ -23,10 +23,11 @@
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
-      <external-templates>
-        <generator generatorUID="fe10a44b-439e-41f5-be93-710ac733b4b3(com.mbeddr.cc.requirements#5044281954033843801)" />
-        <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-      </external-templates>
+      <external-templates />
+      <dependencies>
+        <dependency reexport="false" scope="design">fe10a44b-439e-41f5-be93-710ac733b4b3(com.mbeddr.cc.requirements#5044281954033843801)</dependency>
+        <dependency reexport="false" scope="design">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
         <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
@@ -273,10 +274,8 @@
     <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>53bab999-e9c3-428a-80be-fef5bed08f55(com.mbeddr.cc.trace)</extendedLanguage>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
-    <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
     <extendedLanguage>e865cad2-7cc8-437a-951a-665bcbcb8b1a(com.mbeddr.cc.requirements)</extendedLanguage>
   </extendedLanguages>
 </language>

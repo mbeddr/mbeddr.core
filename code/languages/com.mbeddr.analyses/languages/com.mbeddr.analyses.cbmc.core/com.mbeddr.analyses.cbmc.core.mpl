@@ -24,8 +24,6 @@
         </facet>
       </facets>
       <external-templates>
-        <generator generatorUID="2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)" />
-        <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
         <generator generatorUID="f67f2765-82bd-410a-ae85-01e3e66beca4(com.mbeddr.core.util#4354378109086982934)" />
       </external-templates>
       <dependencies>
@@ -34,6 +32,8 @@
         <dependency reexport="false">0a02a8f9-14d0-4970-9bd2-ca35a097c80d(com.mbeddr.analyses.cbmc.core)</dependency>
         <dependency reexport="false">2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</dependency>
         <dependency reexport="false">4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)</dependency>
+        <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+        <dependency reexport="false" scope="design">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:5d09074f-babf-4f2b-b78b-e9929af0f3be:com.mbeddr.analyses.base" version="0" />

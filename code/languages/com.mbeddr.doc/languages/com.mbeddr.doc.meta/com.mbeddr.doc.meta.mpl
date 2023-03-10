@@ -23,11 +23,10 @@
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
-      <external-templates>
-        <generator generatorUID="864be1b4-10fc-4e1f-9112-c5b47ae9adec(com.mbeddr.doc#4457500422381538528)" />
-      </external-templates>
+      <external-templates />
       <dependencies>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false" scope="design">864be1b4-10fc-4e1f-9112-c5b47ae9adec(com.mbeddr.doc#4457500422381538528)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
