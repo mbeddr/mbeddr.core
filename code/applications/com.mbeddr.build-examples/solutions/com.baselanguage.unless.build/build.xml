@@ -35,12 +35,18 @@
   <property name="jdk.home" value="${env.JAVA_HOME}" />
   <property name="mps.generator.skipUnmodifiedModels" value="false" />
   <property name="mps.ant.log" value="warn" />
-
+  
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/jdom.jar" />
-    <pathelement location="${artifacts.mps}/lib/log4j.jar" />
+    <fileset dir="${artifacts.mps}/lib">
+      <include name="util.jar" />
+      <include name="3rd-party-rt.jar" />
+    </fileset>
   </path>
+  
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
+  
+  <generator-settings id="m2m-0" strictMode="true" parallelThreads="4" inplaceTransform="true" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
@@ -59,11 +65,29 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.zip/com.baselanguage.unless/languages" />
-    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.zip/com.baselanguage.unless/languages/com.baselanguage.unless" />
+    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.zip/com.baselanguage.unless/lib" />
     <mkdir dir="${build.tmp}/default/com.baselanguage.unless.jar" />
     <mkdir dir="${build.tmp}/default/com.baselanguage.unless.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.baselanguage.unless.jar/META-INF/module.xml">
+    <echoxml file="${build.tmp}/default/com.baselanguage.unless.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.baselanguage.unless</id>
+        <name>com.baselanguage.unless</name>
+        <version>1.0</version>
+        <depends>com.mbeddr.mpsutil</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.baselanguage.unless.zip/com.baselanguage.unless/lib/com.baselanguage.unless.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/com.baselanguage.unless.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.zip/com.baselanguage.unless/languages" />
+    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.zip/com.baselanguage.unless/languages/com.baselanguage.unless" />
+    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.jar1" />
+    <mkdir dir="${build.tmp}/default/com.baselanguage.unless.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/com.baselanguage.unless.jar1/META-INF/module.xml">
       <module namespace="com.baselanguage.unless" type="language" uuid="a6c9731c-e688-447f-8d50-3cf76b24e87d">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -123,7 +147,7 @@
       <fileset dir="${build.tmp}/java/out/com.baselanguage.unless" />
       <fileset dir="${unless.home}/languages/com.baselanguage.unless" includes="icons/**, resources/**" />
       <fileset dir="${unless.home}/languages/com.baselanguage.unless/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/com.baselanguage.unless.jar" />
+      <fileset dir="${build.tmp}/default/com.baselanguage.unless.jar1" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.baselanguage.unless-generator.jar" />
     <mkdir dir="${build.tmp}/default/com.baselanguage.unless-generator.jar/META-INF" />
@@ -221,7 +245,8 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" logLevel="${mps.ant.log}">
+    <generate fork="true" logLevel="${mps.ant.log}">      
+      <settings refid="m2m-0" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
       <plugin path="${artifacts.mps}/plugins/git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
@@ -261,6 +286,8 @@
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.celllayout" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.editor.diagram" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.editor.widgets" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.itemis.mps.utils" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.q60.mps.collections.libs" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.slisson.mps.conditionalEditor" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/de.slisson.mps.hacks" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/mbeddr.mpsutil" />
@@ -289,6 +316,7 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.aspect.constraints.rules.jar" />
@@ -352,7 +380,6 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.smodel.resources.jar" />
       <library file="${artifacts.mps}/languages/mps-stubs.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
@@ -361,9 +388,11 @@
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.constraints.rules.runtime.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.api.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rt.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rules.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.messages.api.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.refactoring.runtime.jar" />
@@ -391,9 +420,7 @@
     </generate>
   </target>
   
-  <target name="declare-mps-tasks">
-    <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
-  </target>
+  <target name="declare-mps-tasks" />
   
   <target name="makeDependents" />
   
@@ -412,7 +439,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -433,10 +462,10 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
+        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
@@ -463,7 +492,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -485,10 +516,10 @@
         <pathelement path="${build.tmp}/java/out/com.baselanguage.unless" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
+        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
