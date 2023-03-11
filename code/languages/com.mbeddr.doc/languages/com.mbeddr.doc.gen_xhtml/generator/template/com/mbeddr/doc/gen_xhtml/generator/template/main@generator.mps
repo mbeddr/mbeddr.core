@@ -27,8 +27,6 @@
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="3t5i" ref="r:717da79d-5632-4537-9680-813308745bcf(com.mbeddr.doc.gen_xhtml.defaults)" implicit="true" />
-    <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="tapt" ref="r:6dfc533c-9e3b-4d5e-b950-90f8ce29851b(com.mbeddr.doc.gen_xhtml.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1871,20 +1869,10 @@
                   <node concept="3cpWsn" id="5kTg4zghxrW" role="3cpWs9">
                     <property role="TrG5h" value="text" />
                     <node concept="17QB3L" id="5kTg4zghxrX" role="1tU5fm" />
-                    <node concept="2OqwBi" id="5kTg4zghzqV" role="33vP2m">
-                      <node concept="2OqwBi" id="5kTg4zghyKm" role="2Oq$k0">
-                        <node concept="2OqwBi" id="5kTg4zghxrY" role="2Oq$k0">
-                          <node concept="30H73N" id="5kTg4zghxrZ" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="5kTg4zghygO" role="2OqNvi">
-                            <ref role="3Tt5mk" to="2c95:66AQhBxN1Tt" resolve="identity" />
-                          </node>
-                        </node>
-                        <node concept="2qgKlT" id="5kTg4zghz5U" role="2OqNvi">
-                          <ref role="37wK5l" to="tpeu:nJmxU5cSSU" resolve="getModuleReference" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="5kTg4zghzKd" role="2OqNvi">
-                        <ref role="37wK5l" to="lui2:~SModuleReference.getModuleName()" resolve="getModuleName" />
+                    <node concept="2OqwBi" id="7mK357yr5lC" role="33vP2m">
+                      <node concept="30H73N" id="7mK357yr57i" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="7mK357yr5IT" role="2OqNvi">
+                        <ref role="37wK5l" to="4gky:7mK357yqbs1" resolve="getModuleName" />
                       </node>
                     </node>
                   </node>

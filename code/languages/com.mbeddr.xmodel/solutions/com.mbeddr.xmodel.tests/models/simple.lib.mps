@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c238b5b0-a2dd-47eb-918f-34a29c569541(com.mbeddr.xmodel.tests.simple.lib)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>

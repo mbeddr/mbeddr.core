@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# March 2023
+
+## com.mbeddr.doc
+
+* Fix generation of references in the text.
+
+## com.mbeddr.mpsutil.hyperlink
+
+* Fix issues with loading and unloading the language.
+
+## com.mbeddr.analyses
+
+* Fix exception + adjust fonts in analyses results tool
+
+## com.mbeddr.core.base
+
+* Fix layout issues caused by missing style in CRHelperCell
+
+# February 2023
+
+## com.mbeddr.mpsutil
+
+* Datepicker: Fix entering dates in the datepicker field (#1359).
+* Documentation: replace ModuleIdentity with ModulePointer in ModuleRefWord. This was a deprecated concept.
+* Trace explorer: don't try to highlight a node when there is no node in the tool.
+* Trace explorer: Fix exception that occured when the rerun button is pressed when there is no trace.
+* Fix exception `NullPointer: Cannot create configurable` in userstyles language.
+
+## com.mbeddr.core.base
+
+* Don try attaching the mbeddr root menu when the model or repository is null.
+
 # November 2022
 
 ## com.mbeddr.doc
@@ -29,3 +61,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
   thread.
 
 * Documentation xhtml generator: links are now generated to referenced documents not only in the table of contents but also in the document itself.
+
+### Fixed
+
+Actionsfilter: The profiles are now correctly saved in the [configuration directory](https://www.jetbrains.com/help/mps/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html#config-directory).

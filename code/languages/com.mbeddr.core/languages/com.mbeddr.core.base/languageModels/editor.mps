@@ -10750,6 +10750,22 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="68ugrSVhjyR" role="3cqZAp">
+            <node concept="2OqwBi" id="68ugrSVhjyS" role="3clFbG">
+              <node concept="1rXfSq" id="68ugrSVhjyT" role="2Oq$k0">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />
+              </node>
+              <node concept="liA8E" id="68ugrSVhjyU" role="2OqNvi">
+                <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                <node concept="1Z6Ecs" id="68ugrSVhjyV" role="37wK5m">
+                  <ref role="1Z6EpT" to="z0fb:7lS0O5066uD" resolve="_push-y" />
+                </node>
+                <node concept="3clFbT" id="68ugrSVhjyW" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="5hKIe0b4Kec" role="3cqZAp">
             <node concept="1rXfSq" id="5hKIe0b4Kea" role="3clFbG">
               <ref role="37wK5l" to="g51k:~EditorCell_Basic.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction)" resolve="setAction" />

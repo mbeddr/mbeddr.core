@@ -100,10 +100,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -1041,69 +1037,40 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3cpWs8" id="7Qm_JpKSS2B" role="3cqZAp">
+                                <node concept="3cpWsn" id="7Qm_JpKSS2C" role="3cpWs9">
+                                  <property role="TrG5h" value="calendar" />
+                                  <node concept="3uibUv" id="7Qm_JpKSS2D" role="1tU5fm">
+                                    <ref role="3uigEE" to="33ny:~GregorianCalendar" resolve="GregorianCalendar" />
+                                  </node>
+                                  <node concept="2ShNRf" id="7Qm_JpKSTOv" role="33vP2m">
+                                    <node concept="1pGfFk" id="7Qm_JpKSVze" role="2ShVmc">
+                                      <ref role="37wK5l" to="33ny:~GregorianCalendar.&lt;init&gt;()" resolve="GregorianCalendar" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="7Qm_JpKSWLl" role="3cqZAp">
+                                <node concept="2OqwBi" id="7Qm_JpKSYpY" role="3clFbG">
+                                  <node concept="37vLTw" id="7Qm_JpKSWLj" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="7Qm_JpKSS2C" resolve="calendar" />
+                                  </node>
+                                  <node concept="liA8E" id="7Qm_JpKSZSy" role="2OqNvi">
+                                    <ref role="37wK5l" to="33ny:~Calendar.setTime(java.util.Date)" resolve="setTime" />
+                                    <node concept="37vLTw" id="7Qm_JpKT0X6" role="37wK5m">
+                                      <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                               <node concept="3clFbF" id="35WzcHe1tUc" role="3cqZAp">
                                 <node concept="1rXfSq" id="35WzcHe1tUb" role="3clFbG">
                                   <ref role="37wK5l" node="35WzcHe1oCp" resolve="action" />
                                   <node concept="37vLTw" id="35WzcHe1ujD" role="37wK5m">
                                     <ref role="3cqZAo" node="2nIaZ7ixfFu" resolve="datePicker" />
                                   </node>
-                                  <node concept="2ShNRf" id="35WzcHe1uqf" role="37wK5m">
-                                    <node concept="1pGfFk" id="35WzcHe1CX$" role="2ShVmc">
-                                      <ref role="37wK5l" to="33ny:~GregorianCalendar.&lt;init&gt;(int,int,int,int,int,int)" resolve="GregorianCalendar" />
-                                      <node concept="3cpWs3" id="35WzcHe2Ac9" role="37wK5m">
-                                        <node concept="3cmrfG" id="35WzcHe2AcB" role="3uHU7w">
-                                          <property role="3cmrfH" value="1900" />
-                                        </node>
-                                        <node concept="2OqwBi" id="35WzcHe1H8s" role="3uHU7B">
-                                          <node concept="37vLTw" id="35WzcHe1H2z" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                          </node>
-                                          <node concept="liA8E" id="35WzcHe1JDW" role="2OqNvi">
-                                            <ref role="37wK5l" to="33ny:~Date.getYear()" resolve="getYear" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="2OqwBi" id="35WzcHe1KwM" role="37wK5m">
-                                        <node concept="37vLTw" id="35WzcHe1K8P" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                        </node>
-                                        <node concept="liA8E" id="35WzcHe1LtE" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~Date.getMonth()" resolve="getMonth" />
-                                        </node>
-                                      </node>
-                                      <node concept="2OqwBi" id="35WzcHe1LY7" role="37wK5m">
-                                        <node concept="37vLTw" id="35WzcHe1LPm" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                        </node>
-                                        <node concept="liA8E" id="35WzcHe1MQn" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~Date.getDate()" resolve="getDate" />
-                                        </node>
-                                      </node>
-                                      <node concept="2OqwBi" id="35WzcHe1N0L" role="37wK5m">
-                                        <node concept="37vLTw" id="35WzcHe1MU6" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                        </node>
-                                        <node concept="liA8E" id="35WzcHe1NTg" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~Date.getHours()" resolve="getHours" />
-                                        </node>
-                                      </node>
-                                      <node concept="2OqwBi" id="35WzcHe1O8h" role="37wK5m">
-                                        <node concept="37vLTw" id="35WzcHe1NZ0" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                        </node>
-                                        <node concept="liA8E" id="35WzcHe1P1d" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~Date.getMinutes()" resolve="getMinutes" />
-                                        </node>
-                                      </node>
-                                      <node concept="2OqwBi" id="35WzcHe1Phl" role="37wK5m">
-                                        <node concept="37vLTw" id="35WzcHe1P7N" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="35WzcHe1Gf8" resolve="date" />
-                                        </node>
-                                        <node concept="liA8E" id="35WzcHe1Qaw" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~Date.getSeconds()" resolve="getSeconds" />
-                                        </node>
-                                      </node>
-                                    </node>
+                                  <node concept="37vLTw" id="7Qm_JpKT3RA" role="37wK5m">
+                                    <ref role="3cqZAo" node="7Qm_JpKSS2C" resolve="calendar" />
                                   </node>
                                   <node concept="37vLTw" id="35WzcHe1umY" role="37wK5m">
                                     <ref role="3cqZAo" node="2nIaZ7ixfIp" resolve="node" />

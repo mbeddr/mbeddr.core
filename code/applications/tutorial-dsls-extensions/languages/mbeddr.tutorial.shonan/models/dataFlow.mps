@@ -2,6 +2,7 @@
 <model ref="r:fd1882f0-163e-4728-aac9-d84f4406d021(mbeddr.tutorial.shonan.dataFlow)">
   <persistence version="9" />
   <languages>
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-443879f56b80(jetbrains.mps.devkit.aspect.dataflow)" />
   </languages>
   <imports>
