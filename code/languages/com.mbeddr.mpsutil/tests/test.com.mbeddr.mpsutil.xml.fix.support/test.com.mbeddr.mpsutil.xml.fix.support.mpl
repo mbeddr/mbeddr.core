@@ -50,6 +50,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="113a221f-63fe-4c9f-adb2-19477df203c8(jetbrains.mps.core.xml.sax#2264311582634171386)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="a71fc24a-23c8-4871-87d3-e77b414b28d2(test.com.mbeddr.mpsutil.xml.fix.support)" version="0" />
         <module reference="12ea1291-43c2-495c-99bf-27bc9db95754(test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145)" version="0" />
