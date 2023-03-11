@@ -16,8 +16,6 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:5fef253e-34b0-443d-8035-9a2928b716d3:com.mbeddr.mpsutil.editor.displayControl" version="0" />
-    <language slang="l:c3a9b5df-25f0-466c-a31c-0da4314af7d1:com.mbeddr.mpsutil.editor.displayControl.sandbox" version="0" />
     <language slang="l:309e0004-4976-4416-b947-ec02ae4ecef2:com.mbeddr.mpsutil.modellisteners" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:e2f19e13-1ec7-4716-bf44-6be0cfa1426d(com.mbeddr.xmodel.tests.components.user)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
   </languages>

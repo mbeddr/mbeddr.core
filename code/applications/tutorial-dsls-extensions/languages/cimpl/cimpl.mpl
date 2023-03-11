@@ -25,9 +25,10 @@
         <facet type="java" />
         <facet type="java" />
       </facets>
-      <external-templates>
-        <generator generatorUID="be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)" />
-      </external-templates>
+      <external-templates />
+      <dependencies>
+        <dependency reexport="false" scope="design">be090156-a678-454c-bd8f-89ebd4a0e6af(com.mbeddr.core.modules.gen#1758019824472882132)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
         <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
@@ -115,7 +116,6 @@
         <module reference="5187f5c9-b8a8-4309-90b3-14f9919bd2d8(jetbrains.mps.refactoring)" version="0" />
         <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
         <module reference="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" version="0" />
-        <module reference="a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)" version="0" />
         <module reference="ce2335b7-fcfd-403e-8ace-08dd457fd818(mbeddr.tutorial.osconfig.cimpl)" version="0" />
         <module reference="c67ef9f8-e12a-4d38-afa6-6b505a82e782(mbeddr.tutorial.osconfig.cimpl#5485104033529951841)" version="0" />
       </dependencyVersions>
@@ -138,6 +138,9 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -223,7 +226,6 @@
   <extendedLanguages>
     <extendedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</extendedLanguage>
     <extendedLanguage>a9d69647-0840-491e-bf39-2eb0805d2011(com.mbeddr.core.statements)</extendedLanguage>
-    <extendedLanguage>a577a05d-67ad-41db-9547-6e5f0730b85d(mbeddr.tutorial.osconfig)</extendedLanguage>
     <extendedLanguage>6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)</extendedLanguage>
   </extendedLanguages>
 </language>
