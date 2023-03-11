@@ -19,7 +19,7 @@
     <dependency reexport="false">0280da2d-83c6-47d3-bddd-baff7e1a110f(com.mbeddr.mpsutil.parameterizedMenu.sandbox)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:3a48930f-3451-44fd-9b09-4e7ef448f2bb:com.mbeddr.mpsutil.parameterizedMenu" version="-1" />
+    <language slang="l:3a48930f-3451-44fd-9b09-4e7ef448f2bb:com.mbeddr.mpsutil.parameterizedMenu" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />

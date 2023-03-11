@@ -14,6 +14,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="3zbh" ref="r:9027fe04-52c3-4416-aa88-4c72e7a422ed(mbeddr.tutorial.extreqref.behavior)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -73,6 +74,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -172,6 +174,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
@@ -387,29 +390,29 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="2juwowPkUq1" role="3clF47">
+                            <node concept="3cpWs8" id="2juwowPkYdb" role="3cqZAp">
+                              <node concept="3cpWsn" id="2juwowPkYdc" role="3cpWs9">
+                                <property role="TrG5h" value="s" />
+                                <node concept="17QB3L" id="2juwowPkZeC" role="1tU5fm" />
+                                <node concept="2YIFZM" id="2juwowPkYdd" role="33vP2m">
+                                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object)" resolve="showInputDialog" />
+                                  <node concept="10Nm6u" id="2juwowPkYde" role="37wK5m" />
+                                  <node concept="Xl_RD" id="2juwowPkYdf" role="37wK5m">
+                                    <property role="Xl_RC" value="Enter City Name" />
+                                  </node>
+                                  <node concept="2OqwBi" id="2juwowPleRY" role="37wK5m">
+                                    <node concept="pncrf" id="2juwowPleMP" role="2Oq$k0" />
+                                    <node concept="3TrcHB" id="2juwowPlfn1" role="2OqNvi">
+                                      <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="1QHqEO" id="2juwowPl6Ma" role="3cqZAp">
                               <node concept="1QHqEC" id="2juwowPl6Mc" role="1QHqEI">
                                 <node concept="3clFbS" id="2juwowPl6Me" role="1bW5cS">
-                                  <node concept="3cpWs8" id="2juwowPkYdb" role="3cqZAp">
-                                    <node concept="3cpWsn" id="2juwowPkYdc" role="3cpWs9">
-                                      <property role="TrG5h" value="s" />
-                                      <node concept="17QB3L" id="2juwowPkZeC" role="1tU5fm" />
-                                      <node concept="2YIFZM" id="2juwowPkYdd" role="33vP2m">
-                                        <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                        <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object)" resolve="showInputDialog" />
-                                        <node concept="10Nm6u" id="2juwowPkYde" role="37wK5m" />
-                                        <node concept="Xl_RD" id="2juwowPkYdf" role="37wK5m">
-                                          <property role="Xl_RC" value="Enter City Name" />
-                                        </node>
-                                        <node concept="2OqwBi" id="2juwowPleRY" role="37wK5m">
-                                          <node concept="pncrf" id="2juwowPleMP" role="2Oq$k0" />
-                                          <node concept="3TrcHB" id="2juwowPlfn1" role="2OqNvi">
-                                            <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
                                   <node concept="3clFbJ" id="2juwowPldZC" role="3cqZAp">
                                     <node concept="3clFbS" id="2juwowPldZF" role="3clFbx">
                                       <node concept="3clFbF" id="2juwowPkYnZ" role="3cqZAp">
@@ -433,6 +436,12 @@
                                       </node>
                                     </node>
                                   </node>
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="3k8awrInaAy" role="ukAjM">
+                                <node concept="1Q80Hx" id="3k8awrInaa3" role="2Oq$k0" />
+                                <node concept="liA8E" id="3k8awrInaMC" role="2OqNvi">
+                                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                                 </node>
                               </node>
                             </node>
