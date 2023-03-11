@@ -5600,6 +5600,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3nhOQyZKibz" role="3bR37C">
+          <node concept="3bR9La" id="3nhOQyZKib$" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="1g7oDhK05EQ" role="3989C9">
