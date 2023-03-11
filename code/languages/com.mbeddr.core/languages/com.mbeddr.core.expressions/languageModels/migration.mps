@@ -850,7 +850,7 @@
               <ref role="3cqZAo" node="3mNkkAig_fD" resolve="m" />
             </node>
             <node concept="liA8E" id="3mNkkAigAyo" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+              <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
             </node>
           </node>
         </node>

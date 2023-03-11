@@ -1784,7 +1784,7 @@
             </node>
             <node concept="2OqwBi" id="1EH1Mz60LYP" role="2ZW6bz">
               <node concept="liA8E" id="1EH1Mz60MI3" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
               </node>
               <node concept="2JrnkZ" id="1EH1Mz60LYY" role="2Oq$k0">
                 <node concept="2OqwBi" id="1EH1Mz60A4U" role="2JrQYb">

@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # March 2023
 
+## com.mbeddr.doc
+
+* Fix generation of references in the text.
+
 ## com.mbeddr.mpsutil.hyperlink
 
 * Fix issues with loading and unloading the language.

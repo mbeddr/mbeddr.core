@@ -16,8 +16,8 @@
   </dependencies>
   <languageVersions>
     <language slang="l:5ef691b5-60ce-4ece-a04e-25e642dfa128:com.mbeddr.mpsutil.lantest" version="0" />
-    <language slang="l:0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f:com.mbeddr.mpsutil.lantest.baselang" version="-1" />
-    <language slang="l:11012074-e364-40c8-a31d-7433f6bf3d62:com.mbeddr.mpsutil.lantest.demolang" version="-1" />
+    <language slang="l:0617b2ed-f9cf-44b7-b91d-b3a8e60bae7f:com.mbeddr.mpsutil.lantest.baselang" version="0" />
+    <language slang="l:11012074-e364-40c8-a31d-7433f6bf3d62:com.mbeddr.mpsutil.lantest.demolang" version="0" />
     <language slang="l:d2a1d976-43a2-462f-ac3a-9b258ced839d:com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <language slang="l:23f985f2-965f-4af1-aee8-a32677429514:com.mbeddr.mpsutil.multilingual.common" version="0" />
     <language slang="l:442d3b7d-fe4a-4293-a7c1-6744d440ecaa:com.mbeddr.mpsutil.richstring" version="0" />

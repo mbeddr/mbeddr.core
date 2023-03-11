@@ -216,7 +216,7 @@
                 <node concept="2OqwBi" id="4QnOXkBb1LL" role="3cqZAk">
                   <node concept="1Wqviy" id="4QnOXkBb1LM" role="2Oq$k0" />
                   <node concept="liA8E" id="4QnOXkBb1LN" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                    <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                     <node concept="Xl_RD" id="4QnOXkBb1LO" role="37wK5m">
                       <property role="Xl_RC" value="[a-zA-Z[_]%$][a-zA-Z0-9[_][ ]%$]*" />
                     </node>

@@ -1124,14 +1124,14 @@
                 <ref role="3cqZAo" node="4_pSipqULG7" resolve="colModel" />
               </node>
               <node concept="liA8E" id="3N$7rvdv5tJ" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int):javax.swing.table.TableColumn" resolve="getColumn" />
+                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
                 <node concept="3cmrfG" id="3N$7rvdv5tK" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="3N$7rvdv6Ae" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int):void" resolve="setPreferredWidth" />
+              <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int)" resolve="setPreferredWidth" />
               <node concept="3cmrfG" id="3N$7rvdv7zG" role="37wK5m">
                 <property role="3cmrfH" value="50" />
               </node>
@@ -6638,11 +6638,11 @@
                               <ref role="3cqZAo" node="6lZZfFPi$QK" resolve="e" />
                             </node>
                             <node concept="liA8E" id="6lZZfFPi$QU" role="2OqNvi">
-                              <ref role="37wK5l" to="hyam:~ActionEvent.getActionCommand():java.lang.String" resolve="getActionCommand" />
+                              <ref role="37wK5l" to="hyam:~ActionEvent.getActionCommand()" resolve="getActionCommand" />
                             </node>
                           </node>
                           <node concept="liA8E" id="6lZZfFPi$QV" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                            <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence)" resolve="contentEquals" />
                             <node concept="Xl_RD" id="6lZZfFPi$QW" role="37wK5m">
                               <property role="Xl_RC" value="Clear" />
                             </node>

@@ -21,7 +21,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator namespace="com.mbeddr.spreadsheat#4354378109086982931" uuid="7986ede4-bb02-4e5d-8e13-03458d393ab7">
+    <generator alias="" namespace="com.mbeddr.spreadsheat#4354378109086982931" uuid="7986ede4-bb02-4e5d-8e13-03458d393ab7">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -36,7 +36,7 @@
       <dependencies>
         <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-        <dependency reexport="false">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+        <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />

@@ -6280,7 +6280,7 @@
                           <node concept="3clFbF" id="7Aba6ByHl7h" role="3cqZAp">
                             <node concept="37vLTI" id="7Aba6ByHGU7" role="3clFbG">
                               <node concept="2YIFZM" id="1EH1Mz65aR2" role="37vLTx">
-                                <ref role="37wK5l" to="btm1:~StringUtils.capitalize(java.lang.String):java.lang.String" resolve="capitalize" />
+                                <ref role="37wK5l" to="btm1:~StringUtils.capitalize(java.lang.String)" resolve="capitalize" />
                                 <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
                                 <node concept="2OqwBi" id="1EH1Mz65aR3" role="37wK5m">
                                   <node concept="Jnkvi" id="1EH1Mz65aR4" role="2Oq$k0">
