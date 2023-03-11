@@ -63,6 +63,8 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" version="0" />
+        <module reference="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" version="0" />
         <module reference="9ee3d5d2-5388-460b-b1dc-d98f27db499b(com.mbeddr.mpsutil.postprocessGeneratedFiles)" version="0" />
         <module reference="41d4ff83-30ec-4624-9e7c-33a3033c983e(com.mbeddr.mpsutil.postprocessGeneratedFiles#6221197661420504433)" version="0" />
         <module reference="2924833e-8f11-4109-ac0b-20d5a2f3291a(com.mbeddr.mpsutil.postprocessGeneratedFiles.runtime)" version="0" />
