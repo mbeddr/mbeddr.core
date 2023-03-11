@@ -2,7 +2,7 @@
 <model ref="r:85d231c9-a47f-4c86-994d-05f637d3b809(doc.com.mbeddr.mpsutil.multilingual.docs)">
   <persistence version="9" />
   <languages>
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="-1" />
@@ -30,7 +30,7 @@
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project">
       <concept id="1855399583446016268" name="jetbrains.mps.lang.project.structure.ModuleReference" flags="ng" index="A2Dkr">
@@ -1504,7 +1504,7 @@
       <property role="1jVoCx" value="article" />
       <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core.mps31/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
-    <node concept="1_07dB" id="2xZVCi_hXQ2" role="30Gjbi" />
+    <node concept="1TaS0h" id="3k8awrKr4rd" role="30Gjbi" />
   </node>
 </model>
 

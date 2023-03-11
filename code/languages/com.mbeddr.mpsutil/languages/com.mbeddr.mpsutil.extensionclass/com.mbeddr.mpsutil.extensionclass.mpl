@@ -25,8 +25,10 @@
       </facets>
       <external-templates>
         <generator generatorUID="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" />
-        <generator generatorUID="6a08004c-a528-4d33-89a4-9cd55361f38d(jetbrains.mps.baseLanguage.extensionMethods#6225815798156427146)" />
       </external-templates>
+      <dependencies>
+        <dependency reexport="false" scope="design">6a08004c-a528-4d33-89a4-9cd55361f38d(jetbrains.mps.baseLanguage.extensionMethods#6225815798156427146)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
         <language slang="l:f39336d3-1288-47ee-bbfe-ad2ea7e4504e:com.mbeddr.mpsutil.extensionclass" version="1" />
