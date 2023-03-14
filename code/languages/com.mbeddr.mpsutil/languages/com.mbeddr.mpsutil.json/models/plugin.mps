@@ -669,9 +669,7 @@
                                     </node>
                                     <node concept="liA8E" id="37mlDVLQ4Fm" role="2OqNvi">
                                       <ref role="37wK5l" to="jlff:~VirtualFile.refresh(boolean,boolean)" resolve="refresh" />
-                                      <node concept="3clFbT" id="37mlDVLQ4FZ" role="37wK5m">
-                                        <property role="3clFbU" value="true" />
-                                      </node>
+                                      <node concept="3clFbT" id="37mlDVLQ4FZ" role="37wK5m" />
                                       <node concept="3clFbT" id="mK9TSm2iGL" role="37wK5m" />
                                     </node>
                                   </node>
