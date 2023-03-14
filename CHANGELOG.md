@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # March 2023
 
+## com.mbeddr.mpsutil.logicalChild
+
+* Added two interfaces: ILogicalChild and ILogicalChildOwner to define child relation between nodes in different roots.
+
 ## com.mbeddr.doc
 
 * Fix generation of references in the text.

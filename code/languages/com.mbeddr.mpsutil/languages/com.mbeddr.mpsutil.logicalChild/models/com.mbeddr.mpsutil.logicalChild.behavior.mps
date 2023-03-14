@@ -5,6 +5,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -110,6 +111,22 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -136,6 +153,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -182,6 +202,34 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="P$JXv" id="3lcj7hzE4au" role="lGtFl">
+        <node concept="TZ5HA" id="3lcj7hzE4av" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzE4aw" role="1dT_Ay">
+            <property role="1dT_AB" value="ILogicalChild marks a class that contains a reference to a node in another root. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzE4hG" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzE4hH" role="1dT_Ay">
+            <property role="1dT_AB" value="This reference can be a root itself.This reference is stored in owner. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzE4md" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzE4me" role="1dT_Ay">
+            <property role="1dT_AB" value="Such reference creates a logical link between those nodes with the meaning logical child belongs to an owner." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzE4mE" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzE4mF" role="1dT_Ay">
+            <property role="1dT_AB" value="A logical child describes some aspect of the owner or adds information to it without forcing the persistence" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzE4oY" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzE4oZ" role="1dT_Ay">
+            <property role="1dT_AB" value="to be located in the same owner root. The method get owner provide a default implementation to retrive the owner of this child." />
+          </node>
+        </node>
+        <node concept="x79VA" id="3lcj7hzE4ax" role="3nqlJM" />
       </node>
     </node>
     <node concept="13hLZK" id="jksL7exwEW" role="13h7CW">
@@ -249,6 +297,36 @@
       </node>
       <node concept="2I9FWS" id="5zdrv$anynb" role="3clF45">
         <ref role="2I9WkF" to="xxir:jksL7exuXl" resolve="ILogicalChild" />
+      </node>
+      <node concept="P$JXv" id="3lcj7hzDUMb" role="lGtFl">
+        <node concept="TZ5HA" id="3lcj7hzDUMc" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzDUMd" role="1dT_Ay">
+            <property role="1dT_AB" value="ILogicalChild delegates additional information to its logical children" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzDV6e" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzDV6f" role="1dT_Ay">
+            <property role="1dT_AB" value="without forcing the persistence to be located in the same owner root. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzDX0B" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzDX0C" role="1dT_Ay">
+            <property role="1dT_AB" value="It does not know the existence of its logical children,thus a findLogicalChildren is provided " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzDYVh" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzDYVi" role="1dT_Ay">
+            <property role="1dT_AB" value="with a default implementation. The default implementation searches in the solution of the owner " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3lcj7hzE2tY" role="TZ5H$">
+          <node concept="1dT_AC" id="3lcj7hzE2tZ" role="1dT_Ay">
+            <property role="1dT_AB" value="inside existing models for ILogicalChild that contains references to the owner." />
+          </node>
+        </node>
+        <node concept="x79VA" id="3lcj7hzDUMe" role="3nqlJM">
+          <property role="x79VB" value="list containing ILogicalChild nodes or an empty list." />
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="5zdrv$9yRI_" role="13h7CS">

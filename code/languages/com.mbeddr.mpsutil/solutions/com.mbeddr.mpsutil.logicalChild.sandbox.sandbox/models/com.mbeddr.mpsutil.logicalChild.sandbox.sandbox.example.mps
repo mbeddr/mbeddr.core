@@ -35,10 +35,10 @@
   </registry>
   <node concept="3akSBg" id="3lcj7hzt589">
     <property role="TrG5h" value="SomeRoot" />
-    <property role="3amcrq" value="Nodes may have MPS' children nodes, here named physical children, that are persisted with the Root node. This extentions allows for appending children to any other node implementing ILogicalChildOwner. These children are not persisted with the Root node of their owner, thus creating a logical link between children from other models to thier owners." />
+    <property role="3amcrq" value="Nodes may have MPS' children nodes, here named physical children, that are persisted with the Root node. This extension allows for appending children to any other node implementing ILogicalChildOwner. These children are not persisted with the Root node of their owner, thus creating a logical link between children from other models to their owners." />
     <node concept="3akTzo" id="3lcj7hzt8fI" role="3akSBj">
       <property role="TrG5h" value="SomeChildInSomeRoot" />
-      <property role="1mecxR" value="In this example you can see the existing logical children in the Inspector of ILogicalChildOwner node." />
+      <property role="1mecxR" value="In this example, you can see the existing logical children in the Inspector of ILogicalChildOwner node." />
       <node concept="3ajAQ0" id="3lcj7hzt8fK" role="3akSxa">
         <property role="TrG5h" value="somePhysicalChild" />
       </node>
@@ -46,7 +46,7 @@
   </node>
   <node concept="3akSAJ" id="3lcj7hzxM9Q">
     <property role="TrG5h" value="SomeInformationAboutOwner" />
-    <property role="3agOhf" value="Logical children is part of owner. It is a refinament or additional information stored in another root." />
+    <property role="3agOhf" value="Logical children are part of the owner. It is a refinement or additional information stored in another root." />
     <ref role="3akBIU" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
     <node concept="3ajAQ0" id="3lcj7hzxMf$" role="3agInd">
       <property role="TrG5h" value="child01" />
@@ -57,7 +57,7 @@
   </node>
   <node concept="3akSAJ" id="3lcj7hzya17">
     <property role="TrG5h" value="AnotherInformationAboutOwner" />
-    <property role="3agOhf" value="Logical child owners may be referencied by multiple logical childrens." />
+    <property role="3agOhf" value="Logical child owners may be referenced by multiple logical children." />
     <ref role="3akBIU" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
     <node concept="3ajAQ0" id="3lcj7hzyack" role="3agInd">
       <property role="TrG5h" value="anotherChild01" />
