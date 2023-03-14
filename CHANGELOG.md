@@ -7,9 +7,13 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # March 2023
 
-## com.mbeddr.mpsutil.logicalChild
+## General
 
-* Added two interfaces: ILogicalChild and ILogicalChildOwner to define child relation between nodes in different roots.
+* Don't throw exceptions when the output path doesn't exist.
+
+## com.mbeddr.mpsutil.filepicker
+
+* Fix freeze when opening the filepicker.
 
 ## com.mbeddr.doc
 
@@ -26,6 +30,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## com.mbeddr.core.base
 
 * Fix layout issues caused by missing style in CRHelperCell
+
+## com.mbeddr.mpsutil.logicalChild
+
+* Added two interfaces: ILogicalChild and ILogicalChildOwner to define child relation between nodes in different roots.
 
 # February 2023
 
