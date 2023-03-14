@@ -229,7 +229,9 @@
             <property role="1dT_AB" value="to be located in the same owner root. The method get owner provide a default implementation to retrive the owner of this child." />
           </node>
         </node>
-        <node concept="x79VA" id="3lcj7hzE4ax" role="3nqlJM" />
+        <node concept="x79VA" id="3lcj7hzE4ax" role="3nqlJM">
+          <property role="x79VB" value="ILogicalChildOwner owner of this child." />
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="jksL7exwEW" role="13h7CW">
