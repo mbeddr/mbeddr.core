@@ -2257,6 +2257,20 @@
                 <property role="TrG5h" value="file" />
               </node>
               <node concept="3clFbS" id="7ZV2gfQAVXM" role="2LFqv$">
+                <node concept="3clFbF" id="10EaF0TuPHr" role="3cqZAp">
+                  <node concept="2OqwBi" id="10EaF0TuQ8p" role="3clFbG">
+                    <node concept="2GrUjf" id="10EaF0TuPHp" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="7ZV2gfQAVXI" resolve="file" />
+                    </node>
+                    <node concept="liA8E" id="10EaF0TuR42" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFile.refresh(boolean,boolean)" resolve="refresh" />
+                      <node concept="3clFbT" id="10EaF0TuRj4" role="37wK5m" />
+                      <node concept="3clFbT" id="10EaF0TuRQN" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="4mEgncq5YB3" role="3cqZAp">
                   <node concept="2OqwBi" id="4mEgncq5YWZ" role="3clFbG">
                     <node concept="2OqwBi" id="4mEgncq5YAX" role="2Oq$k0">
