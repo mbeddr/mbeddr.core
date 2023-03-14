@@ -7,6 +7,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # March 2023
 
+## General
+
+* Don't throw exceptions when the output path doesn't exist.
+
+## com.mbeddr.mpsutil.filepicker
+
+* Fix freeze when opening the filepicker.
+
 ## com.mbeddr.doc
 
 * Fix generation of references in the text.
