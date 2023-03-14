@@ -19,6 +19,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Fix generation of references in the text.
 
+## com.mbeddr.doc
+
+* Make the "documents" annotation deletable.
+
 ## com.mbeddr.mpsutil.hyperlink
 
 * Fix issues with loading and unloading the language.
