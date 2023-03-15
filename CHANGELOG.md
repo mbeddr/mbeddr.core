@@ -18,6 +18,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## com.mbeddr.doc
 
 * Fix generation of references in the text.
+* Support previewing gifs with image paragraphs.
 
 ## com.mbeddr.doc
 
