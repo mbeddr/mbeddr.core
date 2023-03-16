@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# March 2023
+
+## com.mbeddr.mpsutil
+
+### Changed
+
+* `c.m.m.xml.fix`: Go back to the old behavior of escaping all special characters in the text. There is an XMLExtension point which can be used to revert this change.
+
 # February 2023
 
 ## com.mbeddr.mpsutil
