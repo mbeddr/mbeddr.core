@@ -12,6 +12,30 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 * `c.m.m.xml.fix`: Go back to the old behavior of escaping all special characters in the text. There is an XMLExtension point which can be used to revert this change.
+=======
+## com.mbeddr.doc
+
+### Fixed
+
+* Fix generation of references in the text.
+
+## com.mbeddr.mpsutil.hyperlink
+
+### Fixed
+
+* Fix issues with loading and unloading the language.
+
+## com.mbeddr.analyses
+
+### Fixed
+
+* Fix exception + adjust fonts in analyses results tool
+
+## com.mbeddr.core.base
+
+### Fixed 
+
+* Fix layout issues caused by missing style in CRHelperCell
 
 # February 2023
 
@@ -23,6 +47,20 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
   the escaping functionality of `xml.fix` is no longer necessary and is removed. However, the auto-escaping contains
   a bug in 2021.3 (fixed in 2022.2) where `&quot;` is incorrectly escaped as `&amp;quot;` and a new workaround is
   introduced for this bug.
+* Documentation: replace ModuleIdentity with ModulePointer in ModuleRefWord. This was a deprecated concept.
+
+### Fixed
+
+* Datepicker: Fix entering dates in the datepicker field (#1359).
+* Trace explorer: don't try to highlight a node when there is no node in the tool.
+* Trace explorer: Fix exception that occured when the rerun button is pressed when there is no trace.
+* Fix exception `NullPointer: Cannot create configurable` in userstyles language.
+
+## com.mbeddr.core.base
+
+### Fixed
+
+* Don try attaching the mbeddr root menu when the model or repository is null.
 
 # November 2022
 

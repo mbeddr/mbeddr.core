@@ -16,6 +16,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1639,9 +1640,14 @@
     <node concept="1TJgyj" id="66AQhBxN1Tt" role="1TKVEi">
       <property role="IQ2ns" value="7036550172998639197" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="identity" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="identity_old" />
       <ref role="20lvS9" to="tp25:nJmxU5cSSu" resolve="ModuleIdentity" />
+    </node>
+    <node concept="1TJgyj" id="7mK357ypJVJ" role="1TKVEi">
+      <property role="IQ2ns" value="8480291644168929007" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="identity" />
+      <ref role="20lvS9" to="dvox:k2ZBl8Cedx" resolve="ModulePointer" />
     </node>
   </node>
   <node concept="1TIwiD" id="2CRkjeimvKE">
