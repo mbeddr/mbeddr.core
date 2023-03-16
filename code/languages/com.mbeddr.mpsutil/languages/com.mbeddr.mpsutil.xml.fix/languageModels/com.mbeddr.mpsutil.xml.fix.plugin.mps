@@ -590,7 +590,7 @@
             </node>
           </node>
           <node concept="1rXfSq" id="4$bUeQ5U700" role="3clFbw">
-            <ref role="37wK5l" node="4$bUeQ5U6IE" resolve="escapeElementContentFully" />
+            <ref role="37wK5l" node="4$bUeQ5U6IE" resolve="escapeTextFully" />
           </node>
         </node>
       </node>
@@ -821,7 +821,7 @@
                 <ref role="3cqZAo" node="4$bUeQ5U6II" resolve="configuration" />
               </node>
               <node concept="liA8E" id="4$bUeQ5U6IT" role="2OqNvi">
-                <ref role="37wK5l" node="4$bUeQ5TJEP" resolve="escapeElementContentFully" />
+                <ref role="37wK5l" node="4$bUeQ5TJEP" resolve="escapeTextFully" />
               </node>
             </node>
             <node concept="3clFbT" id="4$bUeQ5U6IU" role="3K4GZi">
