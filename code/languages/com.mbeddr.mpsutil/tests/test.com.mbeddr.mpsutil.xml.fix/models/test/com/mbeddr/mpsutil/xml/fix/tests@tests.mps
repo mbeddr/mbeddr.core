@@ -113,7 +113,9 @@
       </concept>
     </language>
     <language id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support">
-      <concept id="210803258685954773" name="test.com.mbeddr.mpsutil.xml.fix.support.structure.TestConcept" flags="ng" index="1__7qB" />
+      <concept id="210803258685954773" name="test.com.mbeddr.mpsutil.xml.fix.support.structure.TestConcept" flags="ng" index="1__7qB">
+        <property id="8943984687692225340" name="line" index="3msJ6j" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
@@ -353,7 +355,7 @@
             <node concept="3clFbH" id="bGV79BurB9" role="3cqZAp" />
             <node concept="3vlDli" id="bGV79BurNv" role="3cqZAp">
               <node concept="Xl_RD" id="bGV79BurTN" role="3tpDZB">
-                <property role="Xl_RC" value="&lt;root attr=\&quot;text&amp;quot;&amp;amp;&amp;lt;&gt;Value\&quot;&gt;content\&quot;&amp;lt;&amp;amp;&gt;Value&lt;/root&gt;" />
+                <property role="Xl_RC" value="&lt;root attr=\&quot;text&amp;quot;&amp;amp;&amp;lt;&gt;Value\&quot; attr2=\&quot;Hello &amp;quot;World!&amp;quot; &amp;lt; &gt; ' &amp;amp;\&quot;&gt;Hello &amp;quot;World!&amp;quot; &amp;lt; &amp;gt; &amp;apos; &amp;amp;&lt;/root&gt;" />
               </node>
               <node concept="37vLTw" id="bGV79Busqj" role="3tpDZA">
                 <ref role="3cqZAo" node="bGV79Buq4o" resolve="content" />
@@ -392,6 +394,8 @@
   <node concept="2XOHcx" id="bGV79BrqtZ">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </node>
-  <node concept="1__7qB" id="bGV79BudgQ" />
+  <node concept="1__7qB" id="bGV79BudgQ">
+    <property role="3msJ6j" value="Hello &quot;World!&quot; &lt; &gt; ' &amp;" />
+  </node>
 </model>
 
