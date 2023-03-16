@@ -186,7 +186,7 @@ if (ciBuild) {
 }
 
 task package_mbeddr(type: Zip, dependsOn: pubDeb) {
-    archiveName 'com.mbeddr.zip'
+    archiveFileName = 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"
 }

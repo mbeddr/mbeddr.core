@@ -54,7 +54,7 @@ task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
 }
 
 task package_allScripts(type: Zip, dependsOn: build_allScripts) {
-    archiveName 'com.mbeddr.allScripts.build.zip'
+    archiveFileName = 'com.mbeddr.allScripts.build.zip'
     from artifactsDir
     include "com.mbeddr.allScripts.build/**"
 }
@@ -96,7 +96,7 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platfor
 }
 
 task package_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
-    archiveName 'com.mbeddr.platform.zip'
+    archiveFileName = 'com.mbeddr.platform.zip'
     from artifactsDir
     include "com.mbeddr.platform/**"
 }

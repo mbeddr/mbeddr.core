@@ -1,16 +1,9 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
-buildscript {
-    repositories {
-        mavenLocal()
-        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.2.177.46341c0'
-    }
+plugins {
+    id 'de.itemis.mps.gradle.common' version '1.13.+'
 }
+
 
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
