@@ -11,6 +11,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Don't throw exceptions when the output path doesn't exist.
 
+## com.mbeddr.mpsutil.conceptdiagram
+
+* Run auto layout on init for the diagrams.
+
 ## com.mbeddr.mpsutil.filepicker
 
 * Fix freeze when opening the filepicker.
