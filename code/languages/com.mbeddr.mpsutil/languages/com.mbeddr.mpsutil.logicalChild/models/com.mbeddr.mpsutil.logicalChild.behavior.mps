@@ -206,17 +206,12 @@
       <node concept="P$JXv" id="3lcj7hzE4au" role="lGtFl">
         <node concept="TZ5HA" id="3lcj7hzE4av" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzE4aw" role="1dT_Ay">
-            <property role="1dT_AB" value="ILogicalChild marks a class that contains a reference to a node in another root. " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3lcj7hzE4hG" role="TZ5H$">
-          <node concept="1dT_AC" id="3lcj7hzE4hH" role="1dT_Ay">
-            <property role="1dT_AB" value="This reference can be a root itself.This reference is stored in owner. " />
+            <property role="1dT_AB" value="ILogicalChild marks a concept that contains a reference to a node in another root (or the root itself). " />
           </node>
         </node>
         <node concept="TZ5HA" id="3lcj7hzE4md" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzE4me" role="1dT_Ay">
-            <property role="1dT_AB" value="Such reference creates a logical link between those nodes with the meaning logical child belongs to an owner." />
+            <property role="1dT_AB" value="Such reference creates a logical link between those nodes, meaning the logical child &quot;belongs&quot; to an owner." />
           </node>
         </node>
         <node concept="TZ5HA" id="3lcj7hzE4mE" role="TZ5H$">
@@ -226,7 +221,12 @@
         </node>
         <node concept="TZ5HA" id="3lcj7hzE4oY" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzE4oZ" role="1dT_Ay">
-            <property role="1dT_AB" value="to be located in the same owner root. The method get owner provide a default implementation to retrive the owner of this child." />
+            <property role="1dT_AB" value="to be located in the owner's root node. The method getOwner() provides a default implementation to retrieve" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4qqF2_1OUXp" role="TZ5H$">
+          <node concept="1dT_AC" id="4qqF2_1OUXq" role="1dT_Ay">
+            <property role="1dT_AB" value="the owner of this logical child." />
           </node>
         </node>
         <node concept="x79VA" id="3lcj7hzE4ax" role="3nqlJM">
@@ -308,12 +308,12 @@
         </node>
         <node concept="TZ5HA" id="3lcj7hzDV6e" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzDV6f" role="1dT_Ay">
-            <property role="1dT_AB" value="without forcing the persistence to be located in the same owner root. " />
+            <property role="1dT_AB" value="without forcing the persistence to be located in the owner's root node. " />
           </node>
         </node>
         <node concept="TZ5HA" id="3lcj7hzDX0B" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzDX0C" role="1dT_Ay">
-            <property role="1dT_AB" value="It does not know the existence of its logical children,thus a findLogicalChildren is provided " />
+            <property role="1dT_AB" value="It does not know the existence of its logical children, thus a findLogicalChildren is provided " />
           </node>
         </node>
         <node concept="TZ5HA" id="3lcj7hzDYVh" role="TZ5H$">
@@ -323,11 +323,11 @@
         </node>
         <node concept="TZ5HA" id="3lcj7hzE2tY" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzE2tZ" role="1dT_Ay">
-            <property role="1dT_AB" value="inside existing models for ILogicalChild that contains references to the owner." />
+            <property role="1dT_AB" value="inside existing models for ILogicalChild nodes that contain references to the owner." />
           </node>
         </node>
         <node concept="x79VA" id="3lcj7hzDUMe" role="3nqlJM">
-          <property role="x79VB" value="list containing ILogicalChild nodes or an empty list." />
+          <property role="x79VB" value="list containing ILogicalChild nodes or an empty list" />
         </node>
       </node>
     </node>
