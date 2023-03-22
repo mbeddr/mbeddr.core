@@ -7291,7 +7291,7 @@
         </node>
         <node concept="1SiIV0" id="lse_ua9bli" role="3bR37C">
           <node concept="3bR9La" id="lse_ua9blj" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
           </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJNna" role="3bR31x">
