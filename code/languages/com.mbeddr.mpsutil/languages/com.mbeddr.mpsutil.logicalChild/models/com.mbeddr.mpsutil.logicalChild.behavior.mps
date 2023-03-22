@@ -148,9 +148,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule">
-      <concept id="8018258162245800709" name="com.mbeddr.mpsutil.smodule.structure.SolutionType" flags="ig" index="29jK1l" />
-    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -395,31 +392,6 @@
       <node concept="A3Dl8" id="5SdnHczi85Y" role="3clF45">
         <node concept="3Tqbb2" id="5SdnHczi9UY" role="A3Ik2">
           <ref role="ehGHo" to="xxir:jksL7exuXl" resolve="ILogicalChild" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="5zdrv$aB82r" role="13h7CS">
-      <property role="TrG5h" value="getSolution" />
-      <node concept="3Tm6S6" id="5zdrv$aB82s" role="1B3o_S" />
-      <node concept="29jK1l" id="5zdrv$aB82t" role="3clF45" />
-      <node concept="3clFbS" id="5zdrv$aB82f" role="3clF47">
-        <node concept="3cpWs6" id="5zdrv$aB82g" role="3cqZAp">
-          <node concept="1eOMI4" id="5zdrv$aB82h" role="3cqZAk">
-            <node concept="10QFUN" id="5zdrv$aB82i" role="1eOMHV">
-              <node concept="29jK1l" id="5zdrv$aB82j" role="10QFUM" />
-              <node concept="2OqwBi" id="5zdrv$aB82k" role="10QFUP">
-                <node concept="liA8E" id="5zdrv$aB82l" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
-                </node>
-                <node concept="2JrnkZ" id="5zdrv$aB82m" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5zdrv$aB82n" role="2JrQYb">
-                    <node concept="13iPFW" id="5zdrv$aB82o" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="5zdrv$aB82p" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
