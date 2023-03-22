@@ -270,9 +270,6 @@
           </node>
         </node>
       </node>
-      <node concept="2I9FWS" id="5zdrv$anynb" role="3clF45">
-        <ref role="2I9WkF" to="xxir:jksL7exuXl" resolve="ILogicalChild" />
-      </node>
       <node concept="P$JXv" id="3lcj7hzDUMb" role="lGtFl">
         <node concept="TZ5HA" id="3lcj7hzDUMc" role="TZ5H$">
           <node concept="1dT_AC" id="3lcj7hzDUMd" role="1dT_Ay">
@@ -301,6 +298,11 @@
         </node>
         <node concept="x79VA" id="3lcj7hzDUMe" role="3nqlJM">
           <property role="x79VB" value="list containing ILogicalChild nodes or an empty list" />
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5SdnHczwLVC" role="3clF45">
+        <node concept="3Tqbb2" id="5SdnHczwNry" role="A3Ik2">
+          <ref role="ehGHo" to="xxir:jksL7exuXl" resolve="ILogicalChild" />
         </node>
       </node>
     </node>
