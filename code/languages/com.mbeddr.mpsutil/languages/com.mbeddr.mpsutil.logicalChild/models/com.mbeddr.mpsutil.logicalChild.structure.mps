@@ -10,14 +10,8 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
-      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
-        <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="241647608299431140" name="linkId" index="IQ2ns" />
-        <reference id="1071599976176" name="target" index="20lvS9" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -28,11 +22,6 @@
   <node concept="PlHQZ" id="jksL7exuXl">
     <property role="EcuMT" value="348029591530893141" />
     <property role="TrG5h" value="ILogicalChild" />
-    <node concept="1TJgyj" id="jksL7exwyF" role="1TKVEi">
-      <property role="IQ2ns" value="348029591530899627" />
-      <property role="20kJfa" value="owner" />
-      <ref role="20lvS9" node="jksL7exwyH" resolve="ILogicalChildOwner" />
-    </node>
   </node>
   <node concept="PlHQZ" id="jksL7exwyH">
     <property role="EcuMT" value="348029591530899629" />

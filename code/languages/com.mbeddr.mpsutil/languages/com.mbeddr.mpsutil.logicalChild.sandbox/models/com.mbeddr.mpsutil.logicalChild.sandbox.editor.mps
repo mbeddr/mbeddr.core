@@ -54,6 +54,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -340,7 +341,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3lcj7hztcbH">
-    <ref role="1XX52x" to="legp:jksL7exZEY" resolve="RootNodeWithReferenceToParent" />
+    <ref role="1XX52x" to="legp:jksL7exZEY" resolve="RootNodeWithReferenceToLogicalOwner" />
     <node concept="3EZMnI" id="3lcj7hztcbJ" role="2wV5jI">
       <node concept="3EZMnI" id="3lcj7hztcbQ" role="3EZMnx">
         <node concept="VPM3Z" id="3lcj7hztcbS" role="3F10Kt" />
@@ -368,11 +369,12 @@
         <node concept="3F0ifn" id="3lcj7hztEKX" role="3EZMnx">
           <property role="3F0ifm" value="Owner: " />
         </node>
-        <node concept="1iCGBv" id="3lcj7hzy1Ns" role="3EZMnx">
-          <ref role="1NtTu8" to="xxir:jksL7exwyF" resolve="owner" />
-          <node concept="1sVBvm" id="3lcj7hzy1Nu" role="1sWHZn">
-            <node concept="PMmxH" id="3lcj7hzy1NA" role="2wV5jI">
-              <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="1iCGBv" id="5SdnHczh89e" role="3EZMnx">
+          <ref role="1NtTu8" to="legp:5SdnHczgLRK" resolve="owner" />
+          <node concept="1sVBvm" id="5SdnHczh89g" role="1sWHZn">
+            <node concept="3F0A7n" id="5SdnHczh89o" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>

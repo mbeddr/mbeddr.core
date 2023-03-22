@@ -70,7 +70,7 @@
   </node>
   <node concept="1TIwiD" id="jksL7exZEY">
     <property role="EcuMT" value="348029591531027134" />
-    <property role="TrG5h" value="RootNodeWithReferenceToParent" />
+    <property role="TrG5h" value="RootNodeWithReferenceToLogicalOwner" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Logical Child Root" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -91,6 +91,11 @@
       <property role="IQ2nx" value="348029591532025694" />
       <property role="TrG5h" value="comment" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5SdnHczgLRK" role="1TKVEi">
+      <property role="IQ2ns" value="6777177275185176048" />
+      <property role="20kJfa" value="owner" />
+      <ref role="20lvS9" node="jksL7exYJ9" resolve="NodeWithLogicalChildren" />
     </node>
   </node>
   <node concept="1TIwiD" id="jksL7exZF1">

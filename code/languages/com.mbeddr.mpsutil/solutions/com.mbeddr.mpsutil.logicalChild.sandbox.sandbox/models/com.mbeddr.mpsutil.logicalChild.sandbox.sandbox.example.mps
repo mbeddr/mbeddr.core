@@ -7,15 +7,11 @@
   </languages>
   <imports />
   <registry>
-    <language id="85a9bace-37a1-40af-956a-7bb1b081a77c" name="com.mbeddr.mpsutil.logicalChild">
-      <concept id="348029591530893141" name="com.mbeddr.mpsutil.logicalChild.structure.ILogicalChild" flags="ng" index="3akpL4">
-        <reference id="348029591530899627" name="owner" index="3akBIU" />
-      </concept>
-    </language>
     <language id="286e2375-00e3-4042-b083-84873dd623be" name="com.mbeddr.mpsutil.logicalChild.sandbox">
       <concept id="348029591532215953" name="com.mbeddr.mpsutil.logicalChild.sandbox.structure.PhysicalChild" flags="ng" index="3ajAQ0" />
-      <concept id="348029591531027134" name="com.mbeddr.mpsutil.logicalChild.sandbox.structure.RootNodeWithReferenceToParent" flags="ng" index="3akSAJ">
+      <concept id="348029591531027134" name="com.mbeddr.mpsutil.logicalChild.sandbox.structure.RootNodeWithReferenceToLogicalOwner" flags="ng" index="3akSAJ">
         <property id="348029591532025694" name="comment" index="3agOhf" />
+        <reference id="6777177275185176048" name="owner" index="1Xj$cz" />
         <child id="348029591531984604" name="children" index="3agInd" />
       </concept>
       <concept id="348029591531027137" name="com.mbeddr.mpsutil.logicalChild.sandbox.structure.RootConcept" flags="ng" index="3akSBg">
@@ -44,26 +40,26 @@
       </node>
     </node>
   </node>
-  <node concept="3akSAJ" id="3lcj7hzxM9Q">
+  <node concept="3akSAJ" id="5SdnHczhBVZ">
     <property role="TrG5h" value="SomeInformationAboutOwner" />
     <property role="3agOhf" value="Logical children are part of the owner. It is a refinement or additional information stored in another root." />
-    <ref role="3akBIU" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
-    <node concept="3ajAQ0" id="3lcj7hzxMf$" role="3agInd">
-      <property role="TrG5h" value="child01" />
+    <ref role="1Xj$cz" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
+    <node concept="3ajAQ0" id="5SdnHczhBW0" role="3agInd">
+      <property role="TrG5h" value="somePhysicalChild01" />
     </node>
-    <node concept="3ajAQ0" id="3lcj7hzxMfA" role="3agInd">
-      <property role="TrG5h" value="child02" />
+    <node concept="3ajAQ0" id="5SdnHczhBW2" role="3agInd">
+      <property role="TrG5h" value="somePhysicalChild02" />
     </node>
   </node>
-  <node concept="3akSAJ" id="3lcj7hzya17">
+  <node concept="3akSAJ" id="5SdnHczhBW5">
     <property role="TrG5h" value="AnotherInformationAboutOwner" />
     <property role="3agOhf" value="Logical child owners may be referenced by multiple logical children." />
-    <ref role="3akBIU" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
-    <node concept="3ajAQ0" id="3lcj7hzyack" role="3agInd">
-      <property role="TrG5h" value="anotherChild01" />
+    <ref role="1Xj$cz" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
+    <node concept="3ajAQ0" id="5SdnHczhBW6" role="3agInd">
+      <property role="TrG5h" value="anotherPhysicalChild01" />
     </node>
-    <node concept="3ajAQ0" id="3lcj7hzyacm" role="3agInd">
-      <property role="TrG5h" value="anotherChild02" />
+    <node concept="3ajAQ0" id="5SdnHczhBW8" role="3agInd">
+      <property role="TrG5h" value="anotherPhysicalChild02" />
     </node>
   </node>
 </model>
