@@ -309,6 +309,7 @@
     </node>
     <node concept="13i0hz" id="5zdrv$9yRI_" role="13h7CS">
       <property role="TrG5h" value="getModelsWithLogicalChildren" />
+      <property role="13i0it" value="true" />
       <node concept="3Tmbuc" id="3CtdVDT5L3o" role="1B3o_S" />
       <node concept="3clFbS" id="5zdrv$9yRIr" role="3clF47">
         <node concept="3clFbF" id="5SdnHczhRLl" role="3cqZAp">
