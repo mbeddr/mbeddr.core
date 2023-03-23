@@ -94,6 +94,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -235,7 +236,7 @@
         <node concept="3clFbF" id="5zdrv$9yRIE" role="3cqZAp">
           <node concept="2OqwBi" id="5zdrv$9z21o" role="3clFbG">
             <node concept="BsUDl" id="5zdrv$9yRID" role="2Oq$k0">
-              <ref role="37wK5l" node="5zdrv$9yRI_" resolve="getModelsFromOwnersModule" />
+              <ref role="37wK5l" node="5zdrv$9yRI_" resolve="getModelsWithLogicalChildren" />
             </node>
             <node concept="2es0OD" id="5zdrv$9z3Ih" role="2OqNvi">
               <node concept="1bVj0M" id="5zdrv$9z3Ij" role="23t8la">
@@ -307,8 +308,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="5zdrv$9yRI_" role="13h7CS">
-      <property role="TrG5h" value="getModelsFromOwnersModule" />
-      <node concept="3Tm6S6" id="5zdrv$9yRIA" role="1B3o_S" />
+      <property role="TrG5h" value="getModelsWithLogicalChildren" />
+      <node concept="3Tmbuc" id="3CtdVDT5L3o" role="1B3o_S" />
       <node concept="3clFbS" id="5zdrv$9yRIr" role="3clF47">
         <node concept="3clFbF" id="5SdnHczhRLl" role="3cqZAp">
           <node concept="2OqwBi" id="5SdnHczhYvK" role="3clFbG">
