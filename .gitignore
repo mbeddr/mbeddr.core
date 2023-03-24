@@ -194,3 +194,8 @@ code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmatio
 /config/
 /system/
 markdown-navigator**
+.mps-caches/
+
+# Ignore all build/ directories except the toplevel one
+build/
+!/build/
