@@ -21214,6 +21214,10 @@
         <ref role="m_rDy" node="3Ol24ijlxoL" resolve="com.mbeddr.mpsutil.editor.displayControl" />
         <node concept="pUk6x" id="3Ol24ijlBBb" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="3lcj7hzsDrW" role="39821P">
+        <ref role="m_rDy" node="3lcj7hzsuXf" resolve="com.mbeddr.mpsutil.logicalChild" />
+        <node concept="pUk6x" id="3lcj7hzsE8a" role="pUk7w" />
+      </node>
     </node>
     <node concept="m$_wf" id="64SK4bcO2rO" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.projectview.favourites" />
@@ -21481,35 +21485,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="3Ol24iiTq3Z" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.mpsutil.editor.displayControl.generator" />
-          <property role="3LESm3" value="7baca8d9-1e65-4b72-acc7-0b1a931f21a4" />
-          <node concept="1BupzO" id="3Ol24iiTq4d" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="3Ol24iiTq4e" role="1HemKq">
-              <node concept="398BVA" id="3Ol24iiTq40" role="3LXTmr">
-                <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-                <node concept="2Ry0Ak" id="3Ol24iiTq41" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="3Ol24iiTq42" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.mpsutil.editor.displayControl" />
-                    <node concept="2Ry0Ak" id="3Ol24iiTq43" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="3Ol24iiTq44" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="3Ol24iiTq4f" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="m$_wf" id="3Ol24ijlxoL" role="3989C9">
@@ -21538,6 +21513,86 @@
       </node>
       <node concept="m$f5U" id="3Ol24ijlCyH" role="m$_yh">
         <ref role="m$f5T" node="3uPnK4iDSn6" resolve="com.mbeddr.mpsutil.editor" />
+      </node>
+    </node>
+    <node concept="2G$12M" id="3lcj7hzsgVW" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.mpsutil.logicalChild" />
+      <node concept="1E1JtD" id="3lcj7hzsmpl" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.logicalChild" />
+        <property role="3LESm3" value="85a9bace-37a1-40af-956a-7bb1b081a77c" />
+        <node concept="398BVA" id="3lcj7hzspvz" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="3lcj7hzsqIT" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3lcj7hzsrEq" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.logicalChild" />
+              <node concept="2Ry0Ak" id="3lcj7hzssi7" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.logicalChild.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3lcj7hzsBNL" role="3bR37C">
+          <node concept="3bR9La" id="3lcj7hzsBNM" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3lcj7hzsBNN" role="3bR37C">
+          <node concept="3bR9La" id="3lcj7hzsBNO" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3lcj7hzsBO0" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3lcj7hzsBO1" role="1HemKq">
+            <node concept="398BVA" id="3lcj7hzsBNP" role="3LXTmr">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3lcj7hzsBNQ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3lcj7hzsBNR" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.logicalChild" />
+                  <node concept="2Ry0Ak" id="3lcj7hzsBNS" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3lcj7hzsBO2" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="3lcj7hzsuXf" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.logicalChild" />
+      <node concept="m$_yC" id="3lcj7hzsAhP" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="3_J27D" id="3lcj7hzsuXh" role="m$_yQ">
+        <node concept="3Mxwew" id="3lcj7hzszbz" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.logicalChild" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3lcj7hzsuXj" role="m_cZH">
+        <node concept="3Mxwew" id="3lcj7hzszb_" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.logicalChild" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3lcj7hzsuXl" role="m$_w8">
+        <node concept="3Mxwew" id="3lcj7hzszvr" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="3lcj7hzszNh" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com" />
+      </node>
+      <node concept="m$f5U" id="3lcj7hzs_XZ" role="m$_yh">
+        <ref role="m$f5T" node="3lcj7hzsgVW" resolve="com.mbeddr.mpsutil.logicalChild" />
       </node>
     </node>
   </node>
