@@ -1,0 +1,24 @@
+plugins {
+    id 'mbeddr-version'
+}
+
+ext.artifactsDir = new File(rootDir, 'artifacts')
+
+// path variables
+// If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
+// the root directory).
+ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
+ext.effectiveMpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+
+def antVariables = [
+        'mps.home': ext.effectiveMpsHomeDir.absolutePath,
+        'build.dir': rootDir.absolutePath,
+        'artifacts.root': ext.artifactsDir.absolutePath,
+        'mbeddr.github.core.home': rootDir.absolutePath,
+
+        'build': ext.mbeddrBuildNumber,
+        'major.version': ext.mbeddrMajor,
+        'minor.version': ext.mbeddrMinor,
+]
+
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = antVariables.collect { "-D${it.key}=${it.value}".toString() }

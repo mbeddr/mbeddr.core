@@ -1,0 +1,8 @@
+configurations {
+    ant_lib {
+        defaultDependencies { it.add(owner.project.dependencies.create("org.apache.ant:ant-junit:1.10.1")) }
+        canBeConsumed = false
+    }
+}
+
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib

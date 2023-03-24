@@ -1,0 +1,26 @@
+def jdk_home
+
+if (ext.has('java11_home')) {
+    jdk_home = ext.get('java11_home')
+} else if (System.getenv('JB_JAVA11_HOME') != null) {
+    jdk_home = System.getenv('JB_JAVA11_HOME')
+} else {
+    def expected = JavaVersion.VERSION_11
+    if (JavaVersion.current() != expected) {
+        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
+                + "  * Use project property java11_home to point to the Java 11 JDK.\n"
+                + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
+                + "  * Run Gradle using Java 11")
+    }
+    jdk_home = System.getProperty('java.home')
+}
+
+// Check JDK location
+if (!new File(jdk_home, "lib").exists()) {
+    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
+}
+
+logger.info 'Using JDK at {}', jdk_home
+
+ext.jdk_home = jdk_home
+ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')

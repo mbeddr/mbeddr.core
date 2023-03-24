@@ -14,7 +14,7 @@ if (project.skipresolve_mps) {
         from {
             configurations.mps.resolve().collect { zipTree(it) }
         }
-        into mpsHomeDir
+        into effectiveMpsHomeDir
     }
 }
 

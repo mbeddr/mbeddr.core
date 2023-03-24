@@ -1,0 +1,69 @@
+plugins {
+    id 'mbeddr-version'
+}
+
+ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
+ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
+ext.snapshotRepository = project.findProperty('snapshotRepository') ?: defaultSnapshotRepository
+ext.releaseRepository = project.findProperty('releaseRepository') ?: defaultReleaseRepository
+
+if (project.findProperty('dependencyRepositories') instanceof String) {
+    ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
+} else {
+    ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
+}
+
+configureRepositories(project)
+
+private static void configureRepositories(Project project) {
+    project.pluginManager.withPlugin('maven-publish') {
+        project.publishing.repositories {
+            maven {
+                url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                    credentials {
+                        username project.getProperty('artifacts.itemis.cloud.user')
+                        password project.getProperty('artifacts.itemis.cloud.pw')
+                    }
+                }
+            }
+
+            //mbeddr build is "master" also for maintenance branches
+            //using the closure to delay evaluate from configuration to execution phase is important because the
+            //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
+            //if no closure is used the build script won't compile.
+            if({project.mbeddrBuild}() == "master") {
+                maven {
+                    name = "GitHubPackages"
+                    url = "https://maven.pkg.github.com/mbeddr/mbeddr.core"
+                    if (project.hasProperty("gpr.token")) {
+                        credentials {
+                            username = project.findProperty("gpr.user")
+                            password = project.findProperty("gpr.token")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    project.repositories {
+        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
+        if (!disableMavenLocal) {
+            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+            mavenLocal()
+        }
+        for (repoUrl in project.dependencyRepositories) {
+            maven {
+                url repoUrl
+                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                    credentials {
+                        username project.getProperty('artifacts.itemis.cloud.user')
+                        password project.getProperty('artifacts.itemis.cloud.pw')
+                    }
+                }
+            }
+        }
+        mavenCentral()
+    }
+}

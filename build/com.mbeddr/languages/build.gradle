@@ -49,12 +49,12 @@ task build_spawner(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:
 
 task copy_spawner(type: Copy, dependsOn: build_spawner) {
     from "$rootDir/artifacts/spawner/"
-    into "$mpsHomeDir/plugins"
+    into "$effectiveMpsHomeDir/plugins"
 }
 
 task copy_logConfig(type: Copy, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
     from "$rootDir/debug"
-    into "$mpsHomeDir/bin"
+    into "$effectiveMpsHomeDir/bin"
 }
 
 task install_spawner(type: Copy, dependsOn: build_spawner) {

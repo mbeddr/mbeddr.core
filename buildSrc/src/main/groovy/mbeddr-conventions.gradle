@@ -1,0 +1,7 @@
+plugins {
+    id 'de.itemis.mps.gradle.common'
+    id 'mbeddr-repositories'
+    id 'mbeddr-jdk-home'
+    id 'mbeddr-ant-classpath'
+    id 'mbeddr-ant-variables'
+}

@@ -1,0 +1,67 @@
+import de.itemis.mps.gradle.GitBasedVersioning
+
+plugins {
+    id 'de.itemis.mps.gradle.common'
+}
+
+//MPS version
+ext.mpsMajor = "2021.3"
+ext.mpsBuild = "2021.3.2"
+//MPS-extensions version
+ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
+
+ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
+ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
+
+ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
+
+if (project.hasProperty("mbeddrVersion")) {
+    ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
+} else {
+    // setting mbeddrBuild
+    if (project.hasProperty('mbeddrBuild')) {
+        ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+    } else {
+        ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+    }
+    if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
+        ext.mbeddrBuild = "master"
+    }
+
+    // locally versions are SNAPSHOT
+    if (ciBuild) {
+        // setting mbeddrMajor
+        if (project.hasProperty('mbeddrMajor')) {
+            ext.mbeddrMajor = project.getProperty('mbeddrMajor')
+        }
+
+        // setting mbeddrMinor
+        if (project.hasProperty('mbeddrMinor')) {
+            ext.mbeddrMinor = project.getProperty('mbeddrMinor')
+        }
+
+        if (project.hasProperty("mbeddrBuildCounter")) {
+            ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
+        } else {
+            ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
+        }
+
+        ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
+    } else {
+        ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
+        // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
+        //ext.mbeddrBuild = "master"
+    }
+
+    // Enable mbeddr to be assigned a different version number than mbeddr platform,
+    // as well as mbeddr to be built against a specified existing mbeddr platform version
+    ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+
+    if (ciBuild) {
+        // Coerce TeamCity build number to mbeddrBuildNumber by default
+        // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
+        println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
+    } else {
+        println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
+    }
+}

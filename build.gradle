@@ -1,121 +1,13 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.13.+'
+    id 'de.itemis.mps.gradle.common'
 }
 
-
-ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
-ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
-
-
-
-//MPS version
-ext.mpsMajor = "2021.3"
-ext.mpsBuild = "2021.3.2"
-
-//MPS-extensions version
-ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
-
-ext.artifactsDir = new File(rootDir, 'artifacts')
-
-ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
-
-def jdk_home
-
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
-} else {
-    def expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() != expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-            + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-            + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-            + "  * Run Gradle using Java 11")
-    }
-    jdk_home = System.getProperty('java.home')
-}
-
-// Check JDK location
-if (!new File(jdk_home, "lib").exists()) {
-    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-}
-
-logger.info 'Using JDK at {}', jdk_home
 
 subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
-    ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
-    ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
-
-    // switch to snapshot/release repositories passed with -P option via command line, if any,
-    // or use default snapshot/release repositories otherwise
-    ext.snapshotRepository = project.findProperty('snapshotRepository') ?: defaultSnapshotRepository
-    ext.releaseRepository = project.findProperty('releaseRepository') ?: defaultReleaseRepository
-    ext.jdk_home = jdk_home
-    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
-
-    // use depencency repositories passed as comma-separated list with -P option via command line, if any,
-    // or use default snapshot/release repositories otherwise
-    // TODO: String check is only required due to multiple executions of this block for each subproject - check if this can be refactored to a single global init
-    if (project.findProperty('dependencyRepositories') instanceof String) {
-        ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
-    } else {
-        ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
-    }
-
-    if (project.hasProperty("mbeddrVersion")) {
-        ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
-    } else {
-        // setting mbeddrBuild
-        if (project.hasProperty('mbeddrBuild')) {
-            ext.mbeddrBuild = project.getProperty('mbeddrBuild')
-        } else {
-            ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
-        }
-        if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
-            ext.mbeddrBuild = "master"
-        }
-
-        // locally versions are SNAPSHOT
-        if (ciBuild) {
-            // setting mbeddrMajor
-            if (project.hasProperty('mbeddrMajor')) {
-                ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-            }
-
-            // setting mbeddrMinor
-            if (project.hasProperty('mbeddrMinor')) {
-                ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-            }
-
-            if (project.hasProperty("mbeddrBuildCounter")) {
-                ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
-            } else {
-                ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
-            }
-
-            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
-        } else {
-            ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
-            // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
-            //ext.mbeddrBuild = "master"
-        }
-
-        // Enable mbeddr to be assigned a different version number than mbeddr platform,
-        // as well as mbeddr to be built against a specified existing mbeddr platform version
-        ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
-
-        if (ciBuild) {
-            // Coerce TeamCity build number to mbeddrBuildNumber by default
-            // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
-            println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
-        } else {
-            println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
-        }
-    }
+    apply plugin: "mbeddr-conventions"
 }

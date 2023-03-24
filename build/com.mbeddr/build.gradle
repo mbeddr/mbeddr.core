@@ -2,7 +2,7 @@
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
 ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
-ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+ext.effectiveMpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
 
 def userHome = System.properties['user.home']
 def mpsPluginsDirPattern
@@ -37,7 +37,7 @@ task install() {
     }
 }
 
-logger.info "skipresolve_mps: {}, mpsHomeDir: {}", ext.skipresolve_mps, ext.mpsHomeDir
+logger.info "skipresolve_mps: {}, effectiveMpsHomeDir: {}", ext.skipresolve_mps, ext.effectiveMpsHomeDir
 
 // JDK_HOME required for adding tools.jar into classpath of the forked ant process
 if (!hasProperty("jdk_home")) {
@@ -51,24 +51,6 @@ if (!hasProperty("jdk_home")) {
 
 logger.info "jdk_home: $jdk_home"
 
-ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
-
-ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
-ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
-ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
-String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
-String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
-ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home, "-Dmps.generator.skipUnmodifiedModels=true"]
-
-// path locations
-ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
-ext.allScripts_buildFileLocation = file(mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts").getAbsolutePath()
-ext.slAll_buildFileLocation = file(ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all").getAbsolutePath()
-
 // ant script locations
 ext.scriptsBasePath = rootProject.file("scripts").absolutePath
 
@@ -79,81 +61,23 @@ ant.taskdef(name: "makeTests",
 
 // mbeddr properties
 subprojects {
-    // repository urls
-    configureRepositories(it)
+    apply plugin: 'mbeddr-conventions'
 
     // configs
     configurations {
         mps
         mpsExtensions
-        ant_lib
     }
 
     dependencies {
         mps "com.jetbrains:mps:$mpsBuild"
         mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
-        ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
-
-    ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
 }
 
 
 File scriptFile(String relativePath) {
     new File("$rootDir/scripts/$relativePath")
-}
-
-private static void configureRepositories(Project project) {
-    project.publishing {
-        repositories {
-            maven {
-                url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
-                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
-                    credentials {
-                        username project.getProperty('artifacts.itemis.cloud.user')
-                        password project.getProperty('artifacts.itemis.cloud.pw')
-                    }
-                }
-            }
-
-            //mbeddr build is "master" also for maintenance branches
-            //using the closure to delay evaluate from configuration to execution phase is important because the
-            //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
-            //if no closure is used the build script won't compile.
-            if({project.mbeddrBuild}() == "master") {
-                maven {
-                    name = "GitHubPackages"
-                    url = "https://maven.pkg.github.com/mbeddr/mbeddr.core"
-                    if (project.hasProperty("gpr.token")) {
-                        credentials {
-                            username = project.findProperty("gpr.user")
-                            password = project.findProperty("gpr.token")
-                        }
-                    }
-                }
-            }
-        }
-    }
-    project.repositories {
-        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
-        if (!disableMavenLocal) {
-            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
-            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
-            mavenLocal()
-        }
-        for (repoUrl in project.dependencyRepositories) {
-            maven {
-                url repoUrl
-                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
-                    credentials {
-                        username project.getProperty('artifacts.itemis.cloud.user')
-                        password project.getProperty('artifacts.itemis.cloud.pw')
-                    }
-                }
-            }
-        }
-        mavenCentral()
-    }
 }
 
 
