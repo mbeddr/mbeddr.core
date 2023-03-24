@@ -19,10 +19,11 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Fix generation of references in the text.
 * Support previewing gifs with image paragraphs.
-
-## com.mbeddr.doc
-
 * Make the "documents" annotation deletable.
+
+## com.mbeddr.doc.aspect
+
+* There is a new extensions point DocumentationAspectConfiguration with a method showReferenceConceptDocumentation. When the method is set to true, the documentation for the reference's concept is shown and not the referenced node (this is the old standard behavior).
 
 ## com.mbeddr.mpsutil.hyperlink
 
