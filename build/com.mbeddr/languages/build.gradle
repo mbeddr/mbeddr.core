@@ -80,6 +80,7 @@ if (ciBuild) {
 
 task build_mbeddr(type: BuildLanguages, dependsOn: mbeddrDependencies) {
     script script_build_mbeddr
+    outputs.dir("$artifactsDir/mbeddr")
 }
 
 def script_test_mbeddrTutorial = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")

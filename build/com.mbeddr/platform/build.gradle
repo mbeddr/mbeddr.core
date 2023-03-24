@@ -71,6 +71,8 @@ tasks.getByPath(':build:com.mbeddr:install').dependsOn install_nativelibs_loader
 
 task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
     script scriptFile('com.mbeddr.platform/build.xml')
+
+    outputs.dir("$artifactsDir/com.mbeddr.platform")
 }
 
 task install_actionsfilter(type: Copy, dependsOn: build_platform) {
