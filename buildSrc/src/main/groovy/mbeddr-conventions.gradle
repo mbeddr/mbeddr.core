@@ -9,7 +9,7 @@ plugins {
 // configs
 configurations {
     mps { canBeConsumed = false }
-    mpsExtensions { canBeResolved = false }
+    mpsExtensions { canBeConsumed = false }
 }
 
 dependencies {
