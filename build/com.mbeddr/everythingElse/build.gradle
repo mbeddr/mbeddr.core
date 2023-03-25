@@ -113,17 +113,6 @@ task unzip_cbmcWinZip(type: Copy, dependsOn: resolve_cbmcWin)  {
 
 
 
-// :build:com.mbeddr.rcp
-publishing {
-    publications {
-        mbeddrJre(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'jre'
-            version mbeddrBuildNumber
-            artifact(package_JRE) {}
-        }
-    }
-}
 
 def script_build_mbeddrJRE = new File(rootProject.projectDir.absolutePath + "/buildUtil/" + "build.xml")
 
@@ -141,29 +130,6 @@ task package_JRE(type: Zip, dependsOn: download_JRE) {
     include "jdk..tar.gz"
 }
 
-// :build:com.mbeddr.analyses.cbmc
-publishing {
-    publications {
-        cbmcMac(MavenPublication) {
-            groupId cbmc_groupId
-            artifactId cbmc_artifactId_mac
-            version cbmc_version
-            artifact(package_cbmcMac) {}
-        }
-        cbmcLinux(MavenPublication) {
-            groupId cbmc_groupId
-            artifactId cbmc_artifactId_linux
-            version cbmc_version
-            artifact(package_cbmcLinux) {}
-        }
-        cbmcWin(MavenPublication) {
-            groupId cbmc_groupId
-            artifactId cbmc_artifactId_win
-            version cbmc_version
-            artifact(package_cbmcWin) {}
-        }
-    }
-}
 def script_build_cbmcWin = new File(rootProject.projectDir.absolutePath + "/build" + "/com.mbeddr.analyses.cbmc/" + "build-cbmc-win.bat")
 def script_build_cbmcLinux = new File(rootProject.projectDir.absolutePath + "/build" + "/com.mbeddr.analyses.cbmc/" + "build-cbmc-linux.sh")
 def script_build_cbmcMac = new File(rootProject.projectDir.absolutePath + "/build" + "/com.mbeddr.analyses.cbmc/" + "build-cbmc-mac.sh")
@@ -228,4 +194,33 @@ Iterable<String> buildProcSpawnArgList(Iterable<String> args) {
     }
     newArguments.addAll(args.toList())
     return newArguments
+}
+
+publishing {
+    publications {
+        mbeddrJre(MavenPublication) {
+            groupId 'com.mbeddr'
+            artifactId 'jre'
+            version mbeddrBuildNumber
+            artifact(package_JRE) {}
+        }
+        cbmcMac(MavenPublication) {
+            groupId cbmc_groupId
+            artifactId cbmc_artifactId_mac
+            version cbmc_version
+            artifact(package_cbmcMac) {}
+        }
+        cbmcLinux(MavenPublication) {
+            groupId cbmc_groupId
+            artifactId cbmc_artifactId_linux
+            version cbmc_version
+            artifact(package_cbmcLinux) {}
+        }
+        cbmcWin(MavenPublication) {
+            groupId cbmc_groupId
+            artifactId cbmc_artifactId_win
+            version cbmc_version
+            artifact(package_cbmcWin) {}
+        }
+    }
 }

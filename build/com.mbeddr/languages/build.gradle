@@ -1,5 +1,9 @@
 import de.itemis.mps.gradle.*
 
+plugins {
+    id 'mbeddr-conventions'
+}
+
 // :build:com.mbeddr.build
 def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
 

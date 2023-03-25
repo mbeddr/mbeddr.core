@@ -1,5 +1,9 @@
 import de.itemis.mps.gradle.*
 
+plugins {
+    id 'mbeddr-conventions'
+}
+
 configurations {
     junitAnt
     mbeddr

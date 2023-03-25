@@ -6,6 +6,7 @@ pluginManagement {
 }
 
 include ":build:com.mbeddr",
+        ":build:com.mbeddr:everythingElse",
         ":build:com.mbeddr:platform",
         ":build:com.mbeddr:languages",
         ":build:com.mbeddr:distribution",

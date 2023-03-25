@@ -5,3 +5,16 @@ plugins {
     id 'mbeddr-ant-classpath'
     id 'mbeddr-ant-variables'
 }
+
+// configs
+configurations {
+    mps { canBeConsumed = false }
+    mpsExtensions { canBeResolved = false }
+}
+
+dependencies {
+    mps "com.jetbrains:mps:$mpsBuild"
+    mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
+}
+
+ext.scriptFile = { relativePath -> new File("$rootDir/scripts/$relativePath") }
