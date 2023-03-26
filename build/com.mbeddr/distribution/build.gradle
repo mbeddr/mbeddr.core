@@ -37,8 +37,8 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.m
 
 task package_tutorial(type: Zip) {
     from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
-    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
-    archiveName "com.mbeddr.tutorial.zip"
+    destinationDirectory = new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveFileName = "com.mbeddr.tutorial.zip"
 }
 
 task prepare_distribution(dependsOn: [build_all_in_one, build_platform_distribution, package_tutorial])
