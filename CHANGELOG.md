@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # March 2023
 
+## com.mbeddr.doc
+
+* Resource editor by default uses forward slashes instead of platform-specific forward and backward slashes
+
 ## General
 
 * Don't throw exceptions when the output path doesn't exist.
