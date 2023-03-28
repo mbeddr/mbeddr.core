@@ -40,29 +40,10 @@ task resolve_mbeddr_platform() {
     }
 }
 
-
-
-//move spawner into mbeddr script
-task build_spawner(type: BuildLanguages, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
-    script scriptFile('com.mbeddr.build/spawner.xml')
-}
-
-task copy_spawner(type: Copy, dependsOn: build_spawner) {
-    from "$rootDir/artifacts/spawner/"
-    into "$mpsHomeDir/plugins"
-}
-
 task copy_logConfig(type: Copy, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
     from "$rootDir/debug"
     into "$mpsHomeDir/bin"
 }
-
-task install_spawner(type: Copy, dependsOn: build_spawner) {
-    from "$rootDir/artifacts/spawner/"
-    include "mbeddr.spawner/"
-    into "$mpsPluginsDir"
-}
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_spawner
 
 ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
         classpath: configurations.junitAnt.asPath)
@@ -73,9 +54,9 @@ def mbeddrDependencies
 
 //on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
 if (ciBuild) {
-    mbeddrDependencies = [copy_spawner, resolve_mbeddr_platform]
+    mbeddrDependencies = [resolve_mbeddr_platform]
 } else {
-    mbeddrDependencies = [copy_spawner, ':build:com.mbeddr:platform:build_platform']
+    mbeddrDependencies = [':build:com.mbeddr:platform:build_platform']
 }
 
 task build_mbeddr(type: BuildLanguages, dependsOn: mbeddrDependencies) {
