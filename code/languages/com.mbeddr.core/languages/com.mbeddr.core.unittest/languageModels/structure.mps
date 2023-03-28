@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
@@ -126,9 +125,6 @@
     <node concept="PrWs8" id="2h5hmpsJeAI" role="PzmwI">
       <ref role="PrY4T" to="x27k:2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
     </node>
-    <node concept="PrWs8" id="7kTwNYeuwG7" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="PrWs8" id="6brBMefRP4K" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
@@ -175,9 +171,6 @@
     <property role="34LRSv" value="test" />
     <property role="EcuMT" value="186853311768094629" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
-    <node concept="PrWs8" id="UWuwz3o6s7" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:UWuwz3o4sj" resolve="IRealStackFrameContributor" />
-    </node>
     <node concept="PrWs8" id="5hYHEwYi0Li" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
@@ -289,9 +282,6 @@
     <property role="TrG5h" value="TestHelperFunctionAnnotation" />
     <property role="EcuMT" value="8230733038425966121" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="PrWs8" id="79iwimZ$5Se" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="PrWs8" id="5hYHEwYdDkD" role="PzmwI">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
     </node>
@@ -398,17 +388,8 @@
   <node concept="PlHQZ" id="2MbfxrZIHSm">
     <property role="TrG5h" value="ICanBeExecutedAsTest" />
     <property role="EcuMT" value="3209727427932249622" />
-    <node concept="PrWs8" id="EHWdlLDMX0" role="PrDN$">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
-    </node>
     <node concept="PrWs8" id="6m2KRl5qAg1" role="PrDN$">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
-    </node>
-    <node concept="PrWs8" id="6m2KRl5qAg9" role="PrDN$">
-      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
-    </node>
-    <node concept="PrWs8" id="6m2KRl5qAgm" role="PrDN$">
-      <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
     </node>
     <node concept="PrWs8" id="5hYHEwYiDUZ" role="PrDN$">
       <ref role="PrY4T" node="5hYHEwYdCJ2" resolve="IFailuresAware" />
@@ -442,9 +423,6 @@
     <property role="R4oN_" value="assert actual == expected" />
     <property role="EcuMT" value="7755897872837082045" />
     <ref role="1TJDcQ" node="6Iyv0noEbti" resolve="StructuredBinOpAssertStatement" />
-    <node concept="PrWs8" id="4kpZy5QDdGs" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6Iyv0noF3TR">
     <property role="3GE5qa" value="asserts" />
@@ -550,15 +528,6 @@
     </node>
     <node concept="PrWs8" id="6TAwvhVSitS" role="PzmwI">
       <ref role="PrY4T" to="x27k:2MbfxrZI9YU" resolve="IMayActAsMainFunction" />
-    </node>
-    <node concept="PrWs8" id="38aMGlg5WCT" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:UWuwz3o4sj" resolve="IRealStackFrameContributor" />
-    </node>
-    <node concept="PrWs8" id="38aMGlgjUHd" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="38aMGlgrPXM" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
     </node>
     <node concept="PrWs8" id="5gwPKZy5WZj" role="PzmwI">
       <ref role="PrY4T" node="6189YbXx_nM" resolve="ITestContext" />

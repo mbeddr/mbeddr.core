@@ -376,12 +376,6 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="6BHziVHZZ01" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
-      <node concept="398BVA" id="6BHziVHZZ00" role="2JcizS">
-        <ref role="398BVh" node="6BHziVHZYZZ" resolve="spawner.artifacts" />
-      </node>
-    </node>
   </node>
 </model>
 

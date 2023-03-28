@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
@@ -68,12 +67,6 @@
     <property role="R4oN_" value="component with expectations" />
     <property role="EcuMT" value="2151335435833216353" />
     <ref role="1TJDcQ" to="v7ag:3TmmsQkCzn9" resolve="Component" />
-    <node concept="PrWs8" id="7kTwNYev7tz" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
-    <node concept="PrWs8" id="14IluSjiHDq" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="1TJgyi" id="3Krj9ItkqCG" role="1TKVEl">
       <property role="TrG5h" value="reportMessages" />
       <property role="IQ2nx" value="4331139697889880620" />
@@ -163,29 +156,11 @@
     <property role="34LRSv" value="step" />
     <property role="EcuMT" value="4957503999940784581" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6BPqFthIipi" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-    </node>
     <node concept="PrWs8" id="6BPqFthJ0n8" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
     </node>
-    <node concept="PrWs8" id="6BPqFthJ4JX" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:UWuwz3o4sj" resolve="IRealStackFrameContributor" />
-    </node>
-    <node concept="PrWs8" id="39uR9NmOYTQ" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
-    <node concept="PrWs8" id="39uR9NmOYTO" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="PrWs8" id="3NJ7rfmYe3p" role="PzmwI">
       <ref role="PrY4T" to="v7ag:3NJ7rfmYe2W" resolve="ITriggeredByOperation" />
-    </node>
-    <node concept="PrWs8" id="WMIrWR4j95" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="39uR9NmOzTf" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
     </node>
     <node concept="PrWs8" id="2XRfpKWz6$1" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
@@ -238,9 +213,6 @@
     <node concept="PrWs8" id="39uR9NmOUG3" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
     </node>
-    <node concept="PrWs8" id="39uR9NmOUG5" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-    </node>
     <node concept="1TJgyj" id="4jc_TWT5CX7" role="1TKVEi">
       <property role="20kJfa" value="param" />
       <property role="20lbJX" value="fLJekj4/_1" />
@@ -255,9 +227,6 @@
     <property role="R5$K7" value="true" />
     <property role="EcuMT" value="4957503999941447512" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="WMIrWR4jaM" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
-    </node>
     <node concept="PrWs8" id="6towh06nLnx" role="PzmwI">
       <ref role="PrY4T" to="x27k:2lgwE2U4_F1" resolve="ICodeLocationAware" />
     </node>
@@ -363,9 +332,6 @@
     <property role="34LRSv" value="changephase" />
     <property role="EcuMT" value="2319970887606685453" />
     <ref role="1TJDcQ" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="PrWs8" id="1yKRj6BOjK6" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="1TJgyj" id="20McjG52P9b" role="1TKVEi">
       <property role="20kJfa" value="instance" />
       <property role="20lbJX" value="fLJekj4/_1" />
