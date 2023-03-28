@@ -9,8 +9,6 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="exl8" ref="r:9058158e-0926-42f8-8d00-d1d86f1ff722(com.mbeddr.core.debug.behavior)" />
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -117,12 +115,6 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
-      </concept>
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
-        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
-        <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -259,29 +251,6 @@
         </node>
       </node>
       <node concept="10P_77" id="GpUw9Sa0BS" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="GpUw9Sa0BV" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getSteppableContexts" />
-      <ref role="13i0hy" to="exl8:26BCBMXyK6D" resolve="getSteppableContexts" />
-      <node concept="3Tm1VV" id="GpUw9Sa0BW" role="1B3o_S" />
-      <node concept="3clFbS" id="GpUw9Sa0C0" role="3clF47">
-        <node concept="3clFbF" id="6cg_iZhX_8b" role="3cqZAp">
-          <node concept="2ShNRf" id="6cg_iZhX_8c" role="3clFbG">
-            <node concept="2T8Vx0" id="6cg_iZhX_8e" role="2ShVmc">
-              <node concept="2I9FWS" id="6cg_iZhX_8f" role="2T96Bj">
-                <ref role="2I9WkF" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="_YKpA" id="GpUw9Sa0C1" role="3clF45">
-        <node concept="3Tqbb2" id="GpUw9Sa0C2" role="_ZDj9">
-          <ref role="ehGHo" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-        </node>
-      </node>
     </node>
     <node concept="13i0hz" id="GpUw9SahPu" role="13h7CS">
       <property role="13i0iv" value="false" />

@@ -811,7 +811,7 @@
                       <ref role="2Gs0qQ" node="r$RbHcXyN8" resolve="literal" />
                     </node>
                     <node concept="2qgKlT" id="5uhLyQTkquo" role="2OqNvi">
-                      <ref role="37wK5l" node="5uhLyQTkol6" resolve="loadPropertyFromTraces" />
+                      <ref role="37wK5l" to="if8w:4pl5GY7LKmH" resolve="getTraceableProperty" />
                     </node>
                   </node>
                 </node>

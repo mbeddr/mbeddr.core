@@ -50,7 +50,6 @@
     <import index="vqh0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make(MPS.Core/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
-    <import index="mcvh" ref="r:4032b78d-911f-4395-b88c-ccb50cb24300(jetbrains.mps.debugger.java.api.settings)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
@@ -470,9 +469,7 @@
         <child id="6550182048787568298" name="parameter" index="yYnPO" />
         <child id="2454261876037700497" name="execute" index="1D3o6X" />
       </concept>
-      <concept id="7806358006983614956" name="jetbrains.mps.execution.configurations.structure.RunConfigurationExecutor" flags="ng" index="RBi3j">
-        <child id="6720907903633293832" name="debuggerConfiguration" index="1TqfgD" />
-      </concept>
+      <concept id="7806358006983614956" name="jetbrains.mps.execution.configurations.structure.RunConfigurationExecutor" flags="ng" index="RBi3j" />
       <concept id="7806358006983738927" name="jetbrains.mps.execution.configurations.structure.ConfigurationFromExecutorReference" flags="nn" index="RBKsg" />
       <concept id="3642991921658122718" name="jetbrains.mps.execution.configurations.structure.RunConfigurationCreator" flags="nn" index="30w_07">
         <reference id="3642991921658122719" name="configuration" index="30w_06" />
@@ -561,16 +558,6 @@
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
-    </language>
-    <language id="fbc14279-5e2a-4c87-a5d1-5f7061e6c456" name="jetbrains.mps.debugger.api.lang">
-      <concept id="1104094430779068753" name="jetbrains.mps.debugger.api.lang.structure.DebuggerReference" flags="nn" index="3Qg5_p">
-        <property id="1104094430779068757" name="debuggerName" index="3Qg5_t" />
-      </concept>
-      <concept id="6720907903633266421" name="jetbrains.mps.debugger.api.lang.structure.DebuggerConfiguration" flags="ng" index="1Tq63k">
-        <child id="6720907903633266913" name="getSettings" index="1Tq6V0" />
-        <child id="6720907903633266912" name="debugger" index="1Tq6V1" />
-      </concept>
-      <concept id="6720907903633266914" name="jetbrains.mps.debugger.api.lang.structure.GetDebuggerSettings_Function" flags="in" index="1Tq6V3" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1867,22 +1854,6 @@
     <property role="35f5FB" value="true" />
     <property role="3gLNDv" value="myRunConfiguration" />
     <ref role="yIonz" node="1ptFCtLqsqw" resolve="mbeddr executable configuration" />
-    <node concept="1Tq63k" id="1ptFCtLqsrP" role="1TqfgD">
-      <node concept="1Tq6V3" id="1ptFCtLqsrQ" role="1Tq6V0">
-        <node concept="3clFbS" id="1ptFCtLqsrR" role="2VODD2">
-          <node concept="3cpWs6" id="4USn8sy6N0R" role="3cqZAp">
-            <node concept="2YIFZM" id="4USn8sy6N$z" role="3cqZAk">
-              <ref role="37wK5l" node="4USn8sy6Eyu" resolve="getDebuggerSettings" />
-              <ref role="1Pybhc" node="38Yiz2tmZ8X" resolve="RunconfigurationHelper" />
-              <node concept="RBKsg" id="4USn8syanO4" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Qg5_p" id="1ptFCtLqssY" role="1Tq6V1">
-        <property role="3Qg5_t" value="Mbeddr" />
-      </node>
-    </node>
     <node concept="3CCWSg" id="1ptFCtLqssZ" role="35uJNn">
       <node concept="3clFbS" id="1ptFCtLqst0" role="2VODD2">
         <node concept="3SKdUt" id="1ptFCtLqst1" role="3cqZAp">
@@ -7867,25 +7838,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3clFb_" id="5yNeVI8LrwD" role="jymVt">
-      <property role="TrG5h" value="formClientCommandLine" />
-      <node concept="3clFbS" id="5yNeVI8LrwG" role="3clF47">
-        <node concept="3cpWs6" id="5yNeVI8LrwH" role="3cqZAp">
-          <node concept="2YIFZM" id="5yNeVI8LrwI" role="3cqZAk">
-            <ref role="37wK5l" to="mcvh:2Y$mRnIClFJ" resolve="getClientCommandLine" />
-            <ref role="1Pybhc" to="mcvh:2Y$mRnIClFo" resolve="RemoteConnectionSettings" />
-            <node concept="3clFbT" id="5yNeVI8LrwJ" role="37wK5m">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="37vLTw" id="2BHiRxeuktJ" role="37wK5m">
-              <ref role="3cqZAo" node="5yNeVI8Lru9" resolve="launchTimeout" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="5yNeVI8LrwF" role="3clF45" />
-      <node concept="3Tm6S6" id="5yNeVI8LrwE" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7udlxS$DZVS" role="jymVt" />
     <node concept="3clFb_" id="5yNeVI8LrwL" role="jymVt">
