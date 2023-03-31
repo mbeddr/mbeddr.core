@@ -67,7 +67,6 @@ task build_mbeddr(type: BuildLanguages, dependsOn: mbeddrDependencies) {
 def script_test_mbeddrTutorial = new File(scriptsBasePath + "/com.mbeddr.tutorial/" + "build-tests.xml")
 
 def script_test_mbeddrPerformance = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-performance-tests.xml")
-def script_test_mbeddrDebugger = new File(scriptsBasePath + "/com.mbeddr.debugger/" + "build-tests.xml")
 def script_test_mbeddrCoreEx = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ex-tests.xml")
 def script_test_mbeddrCoreExLibrary = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-aLibrary.xml")
 def script_test_mbeddrCoreTs = new File(scriptsBasePath + "/com.mbeddr.core/" + "build-ts-tests.xml")
@@ -100,10 +99,6 @@ task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
 }
 task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
-}
-
-task test_mbeddr_debugger(type: TestLanguages, dependsOn: build_mbeddr) {
-    script script_test_mbeddrDebugger
 }
 
 task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_logConfig]) {
