@@ -17305,15 +17305,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="6YaWssNY6MK" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6YaWssNY6ML" role="398pKh">
-        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6YaWssNY6MM" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
     <node concept="2kB4xC" id="7TN8EE6trcP" role="1l3spd">
       <property role="TrG5h" value="major.version" />
       <node concept="aVJcg" id="7TN8EE6trcQ" role="aVJcv">

@@ -367,15 +367,6 @@
       </node>
       <node concept="24cAiW" id="76N1O$Kj6vt" role="24cAkG" />
     </node>
-    <node concept="398rNT" id="6BHziVHZYZZ" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6BHziVHZYZY" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn618" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6BHziVHZYZX" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
