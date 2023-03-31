@@ -7,12 +7,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # March 2023
 
+* Breaking change: debugger and spawner were not maintained and were removed.
+
 ## com.mbeddr.mpsutil
 
 ### Changed
 
 * `c.m.m.xml.fix`: Go back to the old behavior of escaping all special characters in the text. There is an XMLExtension point which can be used to revert this change.
-=======
+
 ## com.mbeddr.doc
 
 ### Fixed
