@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" name="com.mbeddr.mpsutil.json" version="0" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
@@ -207,7 +207,7 @@
           </node>
           <node concept="2YIFZM" id="75qFqB42iU0" role="3tpDZA">
             <ref role="1Pybhc" to="zhzw:6Sh7xm2KsCp" resolve="JsonHelper" />
-            <ref role="37wK5l" to="zhzw:75qFqB42dRb" resolve="fileName" />
+            <ref role="37wK5l" to="zhzw:75qFqB42dRb" resolve="removeFileNameExtension" />
             <node concept="Xl_RD" id="75qFqB42iUj" role="37wK5m">
               <property role="Xl_RC" value="this is a great_foo.json" />
             </node>
