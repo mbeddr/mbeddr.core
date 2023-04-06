@@ -1049,7 +1049,7 @@
             <node concept="3uibUv" id="6pzXh8fujKm" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
               <node concept="3uibUv" id="6pzXh8fujKx" role="11_B2D">
-                <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Entry" />
+                <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Map.Entry" />
                 <node concept="3uibUv" id="6pzXh8fujKy" role="11_B2D">
                   <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                 </node>
@@ -1074,7 +1074,7 @@
               <node concept="3cpWsn" id="6pzXh8fur10" role="3cpWs9">
                 <property role="TrG5h" value="field" />
                 <node concept="3uibUv" id="6pzXh8fur0S" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Entry" />
+                  <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Map.Entry" />
                   <node concept="3uibUv" id="6pzXh8fur0Y" role="11_B2D">
                     <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                   </node>
