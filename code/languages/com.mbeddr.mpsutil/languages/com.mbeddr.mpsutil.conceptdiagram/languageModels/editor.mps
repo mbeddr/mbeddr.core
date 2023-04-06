@@ -309,6 +309,7 @@
       </concept>
       <concept id="6554619382999975769" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_OuterNode" flags="ng" index="23r2z0" />
       <concept id="1110129820007229393" name="de.itemis.mps.editor.diagram.structure.CellModel_Diagram" flags="ng" index="27vDVx">
+        <property id="4706276119306323403" name="runAutoLayoutOnInit" index="1ju4zT" />
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
         <child id="8637411062076630380" name="connectionTypes" index="1xLlFP" />
         <child id="1981294357059564524" name="paletteSources" index="1RuSHk" />
@@ -1754,6 +1755,7 @@
         </node>
       </node>
       <node concept="27vDVx" id="2igMYjpAqwr" role="3EZMnx">
+        <property role="1ju4zT" value="true" />
         <node concept="1xLmZY" id="2igMYjpAqwt" role="1xLlFP">
           <node concept="3clFbS" id="2igMYjpAqwv" role="2VODD2">
             <node concept="3clFbF" id="2igMYjpHZQt" role="3cqZAp">
