@@ -12,12 +12,49 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 * `c.m.m.xml.fix`: Go back to the old behavior of escaping all special characters in the text. There is an XMLExtension point which can be used to revert this change.
-=======
+
 ## com.mbeddr.doc
 
 ### Fixed
 
+* Resource editor by default uses forward slashes instead of platform-specific forward and backward slashes
+
+## General
+
+### Fixed
+
+* Don't throw exceptions when the output path doesn't exist.
+
+### Changed
+
+## com.mbeddr.mpsutil.conceptdiagram
+
+* Run auto layout on init for the diagrams.
+
+## com.mbeddr.mpsutil.filepicker
+
+### Fixed
+
+* Fix freeze when opening the filepicker.
+
+## com.mbeddr.doc
+
+### Fixed
+
+* Make the "documents" annotation deletable.
 * Fix generation of references in the text.
+
+### Added
+
+* Support previewing gifs with image paragraphs.
+
+## com.mbeddr.doc.aspect
+
+### Added
+
+* There is a new extensions point DocumentationAspectConfiguration with a method showReferenceConceptDocumentation. When the method is set to true, the documentation for the reference's concept is shown and not the referenced node (this is the old standard behavior).
+
+### Fixed
 
 ## com.mbeddr.mpsutil.hyperlink
 
@@ -27,15 +64,21 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.analyses
 
-### Fixed
-
 * Fix exception + adjust fonts in analyses results tool
+
+### Fixed
 
 ## com.mbeddr.core.base
 
 ### Fixed 
 
 * Fix layout issues caused by missing style in CRHelperCell
+
+## com.mbeddr.mpsutil.logicalChild
+
+### Added
+
+* Added two interfaces: ILogicalChild and ILogicalChildOwner to define child relation between nodes in different roots.
 
 # February 2023
 
@@ -55,6 +98,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 * Trace explorer: don't try to highlight a node when there is no node in the tool.
 * Trace explorer: Fix exception that occured when the rerun button is pressed when there is no trace.
 * Fix exception `NullPointer: Cannot create configurable` in userstyles language.
+* json: Added paste and import action for json snippets and files.
 
 ## com.mbeddr.core.base
 
