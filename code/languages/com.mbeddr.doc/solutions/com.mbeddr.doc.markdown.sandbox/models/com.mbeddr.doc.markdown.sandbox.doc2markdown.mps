@@ -45,6 +45,7 @@
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
+        <property id="4755612053022517119" name="border" index="41Bi8" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
         <child id="8624890525767908695" name="sizeSpec" index="3SHJ_F" />
@@ -420,16 +421,33 @@
       <node concept="1_0VNX" id="GfNMM3dGpf" role="1_0VJ0">
         <property role="TrG5h" value="Image" />
         <property role="1_0VJr" value="Image" />
-        <node concept="2SaynC" id="2BdmVJRqOeK" role="1_0VJ0">
+        <node concept="2SaynC" id="191H8GfGj$g" role="1_0VJ0">
           <property role="TrG5h" value="itemis" />
+          <property role="41Bi8" value="true" />
+          <node concept="2Sb_l4" id="191H8GfGj$h" role="2SbwM5">
+            <property role="2Sb_kV" value="itemis_image.png" />
+            <ref role="2Sb_kU" node="IdgZwhXP9T" resolve="images" />
+          </node>
+          <node concept="OjmMv" id="191H8GfGj$i" role="2SaI5j">
+            <node concept="19SGf9" id="191H8GfGj$j" role="OjmMu">
+              <node concept="19SUe$" id="191H8GfGj$k" role="19SJt6">
+                <property role="19SUeA" value="A beautifull image" />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="191H8GfGj$l" role="3SHJ_F" />
+        </node>
+        <node concept="2SaynC" id="2BdmVJRqOeK" role="1_0VJ0">
+          <property role="TrG5h" value="itemis_svg" />
+          <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="2BdmVJRqOha" role="2SbwM5">
-            <property role="2Sb_kV" value="itemis.jpg" />
+            <property role="2Sb_kV" value="animation.gif" />
             <ref role="2Sb_kU" node="IdgZwhXP9T" resolve="images" />
           </node>
           <node concept="OjmMv" id="2BdmVJRqOeO" role="2SaI5j">
             <node concept="19SGf9" id="2BdmVJRqOeP" role="OjmMu">
               <node concept="19SUe$" id="2BdmVJRqOeQ" role="19SJt6">
-                <property role="19SUeA" value="A beautifull logo" />
+                <property role="19SUeA" value="A beautifull animation" />
               </node>
             </node>
           </node>

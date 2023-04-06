@@ -9,7 +9,29 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.doc
 
+* Resource editor by default uses forward slashes instead of platform-specific forward and backward slashes
+
+## General
+
+* Don't throw exceptions when the output path doesn't exist.
+
+## com.mbeddr.mpsutil.conceptdiagram
+
+* Run auto layout on init for the diagrams.
+
+## com.mbeddr.mpsutil.filepicker
+
+* Fix freeze when opening the filepicker.
+
+## com.mbeddr.doc
+
 * Fix generation of references in the text.
+* Support previewing gifs with image paragraphs.
+* Make the "documents" annotation deletable.
+
+## com.mbeddr.doc.aspect
+
+* There is a new extensions point DocumentationAspectConfiguration with a method showReferenceConceptDocumentation. When the method is set to true, the documentation for the reference's concept is shown and not the referenced node (this is the old standard behavior).
 
 ## com.mbeddr.mpsutil.hyperlink
 
@@ -23,6 +45,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Fix layout issues caused by missing style in CRHelperCell
 
+## com.mbeddr.mpsutil.logicalChild
+
+* Added two interfaces: ILogicalChild and ILogicalChildOwner to define child relation between nodes in different roots.
+
 # February 2023
 
 ## com.mbeddr.mpsutil
@@ -32,6 +58,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 * Trace explorer: don't try to highlight a node when there is no node in the tool.
 * Trace explorer: Fix exception that occured when the rerun button is pressed when there is no trace.
 * Fix exception `NullPointer: Cannot create configurable` in userstyles language.
+* json: Added paste and import action for json snippets and files.
 
 ## com.mbeddr.core.base
 
