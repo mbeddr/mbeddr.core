@@ -13,6 +13,7 @@
     <import index="ao3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.text(MPS.Core/)" />
     <import index="zhzw" ref="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)" />
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" />
+    <import index="41ey" ref="r:f005c0ad-4467-4fc6-b611-c9d0774d1591(com.mbeddr.mpsutil.json.behavior)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -178,9 +179,9 @@
             <node concept="3Tqbb2" id="75qFqB41Ahm" role="1tU5fm">
               <ref role="ehGHo" to="21pk:3L4lRB2GdlQ" resolve="JSONObject" />
             </node>
-            <node concept="2YIFZM" id="75qFqB41Ah$" role="33vP2m">
-              <ref role="1Pybhc" to="zhzw:6Sh7xm2KsCp" resolve="JsonHelper" />
-              <ref role="37wK5l" to="zhzw:6V56CwaCfPi" resolve="importJsonObject" />
+            <node concept="2YIFZM" id="2O8p5MNbnva" role="33vP2m">
+              <ref role="37wK5l" to="41ey:6V56CwaCfPi" resolve="importJsonObject" />
+              <ref role="1Pybhc" to="41ey:6Sh7xm2KsCp" resolve="JsonHelper" />
               <node concept="37vLTw" id="75qFqB41Ah_" role="37wK5m">
                 <ref role="3cqZAo" node="75qFqB41vLU" resolve="expectedString" />
               </node>
@@ -205,9 +206,9 @@
           <node concept="Xl_RD" id="75qFqB42iXW" role="3tpDZB">
             <property role="Xl_RC" value="this is a great_foo" />
           </node>
-          <node concept="2YIFZM" id="75qFqB42iU0" role="3tpDZA">
-            <ref role="1Pybhc" to="zhzw:6Sh7xm2KsCp" resolve="JsonHelper" />
-            <ref role="37wK5l" to="zhzw:75qFqB42dRb" resolve="removeFileNameExtension" />
+          <node concept="2YIFZM" id="2O8p5MNbnvd" role="3tpDZA">
+            <ref role="37wK5l" to="41ey:75qFqB42dRb" resolve="removeFileNameExtension" />
+            <ref role="1Pybhc" to="41ey:6Sh7xm2KsCp" resolve="JsonHelper" />
             <node concept="Xl_RD" id="75qFqB42iUj" role="37wK5m">
               <property role="Xl_RC" value="this is a great_foo.json" />
             </node>
