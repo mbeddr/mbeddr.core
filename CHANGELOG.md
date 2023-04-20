@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# April 2023
+
+## com.mbeddr.doc
+
+* Add a new language `com.mbeddr.doc.autodoc`. The language allows automatic generation of documentation for MPS languages.
+
 # March 2023
 
 ## com.mbeddr.doc
