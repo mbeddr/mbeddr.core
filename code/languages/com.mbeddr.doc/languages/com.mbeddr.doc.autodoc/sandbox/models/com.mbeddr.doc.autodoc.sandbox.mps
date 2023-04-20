@@ -14,11 +14,7 @@
       <concept id="3379034291116644214" name="com.mbeddr.doc.autodoc.structure.DocumentationPlan" flags="ng" index="33eUEY">
         <child id="3379034291116644215" name="languages" index="33eUEZ" />
       </concept>
-      <concept id="808411482571307194" name="com.mbeddr.doc.autodoc.structure.ConceptFilter" flags="ng" index="3oeBlf">
-        <property id="2753135852992610677" name="includeUndocumented" index="2uclGd" />
-        <property id="2753135852992610666" name="includeAbstract" index="2uclGi" />
-        <property id="2753135852992610668" name="conceptRegexp" index="2uclGk" />
-      </concept>
+      <concept id="808411482571307194" name="com.mbeddr.doc.autodoc.structure.ConceptFilter" flags="ng" index="3oeBlf" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
@@ -33,11 +29,7 @@
         <property role="2V$B1T" value="b1eac3be-fdc6-4513-9dbb-ff0f487432a3" />
         <property role="2V$B1Q" value="com.mbeddr.doc.autodoc" />
       </node>
-      <node concept="3oeBlf" id="5v6kRgojJrL" role="3oeBl2">
-        <property role="2uclGd" value="true" />
-        <property role="2uclGi" value="true" />
-        <property role="2uclGk" value="&quot;&quot;" />
-      </node>
+      <node concept="3oeBlf" id="5v6kRgooUgE" role="3oeBl2" />
     </node>
   </node>
 </model>
