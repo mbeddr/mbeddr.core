@@ -5,6 +5,8 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.autodoc/com.mbeddr.doc.autodoc.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.autodoc/sandbox/com.mbeddr.doc.autodoc.sandbox.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_markdown/com.mbeddr.doc.gen_markdown.mpl" folder="lang" />
