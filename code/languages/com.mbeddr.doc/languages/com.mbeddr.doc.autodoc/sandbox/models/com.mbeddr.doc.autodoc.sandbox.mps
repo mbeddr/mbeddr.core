@@ -9,9 +9,15 @@
     <language id="b1eac3be-fdc6-4513-9dbb-ff0f487432a3" name="com.mbeddr.doc.autodoc">
       <concept id="3379034291117363218" name="com.mbeddr.doc.autodoc.structure.DocLangRef" flags="ng" index="333ERq">
         <child id="3379034291117363219" name="language" index="333ERr" />
+        <child id="808411482571307191" name="filter" index="3oeBl2" />
       </concept>
       <concept id="3379034291116644214" name="com.mbeddr.doc.autodoc.structure.DocumentationPlan" flags="ng" index="33eUEY">
         <child id="3379034291116644215" name="languages" index="33eUEZ" />
+      </concept>
+      <concept id="808411482571307194" name="com.mbeddr.doc.autodoc.structure.ConceptFilter" flags="ng" index="3oeBlf">
+        <property id="2753135852992610677" name="includeUndocumented" index="2uclGd" />
+        <property id="2753135852992610666" name="includeAbstract" index="2uclGi" />
+        <property id="2753135852992610668" name="conceptRegexp" index="2uclGk" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -22,16 +28,15 @@
     </language>
   </registry>
   <node concept="33eUEY" id="2V$JszHTwDG">
-    <node concept="333ERq" id="2V$JszHWbkm" role="33eUEZ">
-      <node concept="2V$Bhx" id="2V$JszHYrO5" role="333ERr">
+    <node concept="333ERq" id="GS3vnj0MPl" role="33eUEZ">
+      <node concept="2V$Bhx" id="GS3vnj0MPp" role="333ERr">
         <property role="2V$B1T" value="b1eac3be-fdc6-4513-9dbb-ff0f487432a3" />
         <property role="2V$B1Q" value="com.mbeddr.doc.autodoc" />
       </node>
-    </node>
-    <node concept="333ERq" id="2V$JszHYMOn" role="33eUEZ">
-      <node concept="2V$Bhx" id="2V$JszHYMOt" role="333ERr">
-        <property role="2V$B1T" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a" />
-        <property role="2V$B1Q" value="com.mbeddr.doc" />
+      <node concept="3oeBlf" id="5v6kRgojJrL" role="3oeBl2">
+        <property role="2uclGd" value="true" />
+        <property role="2uclGi" value="true" />
+        <property role="2uclGk" value="&quot;&quot;" />
       </node>
     </node>
   </node>
