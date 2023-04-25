@@ -563,6 +563,17 @@
           </node>
           <node concept="2iRfu4" id="2oP6ByS24MX" role="2iSdaV" />
         </node>
+        <node concept="3EZMnI" id="68Tqo3MIM$S" role="3EZMnx">
+          <node concept="VPM3Z" id="68Tqo3MIM$U" role="3F10Kt" />
+          <node concept="3F0ifn" id="68Tqo3MIM$W" role="3EZMnx">
+            <property role="3F0ifm" value="include inherited concepts" />
+          </node>
+          <node concept="2yq9I_" id="68Tqo3MIM_m" role="3EZMnx">
+            <ref role="225u1j" to="24cc:68Tqo3MIM$o" resolve="includeInherited" />
+            <node concept="jv8YD" id="68Tqo3MIM_s" role="1563LE" />
+          </node>
+          <node concept="2iRfu4" id="68Tqo3MIM$X" role="2iSdaV" />
+        </node>
         <node concept="3EZMnI" id="GS3vnj0pLI" role="3EZMnx">
           <node concept="VPM3Z" id="GS3vnj0pLK" role="3F10Kt" />
           <node concept="3F0ifn" id="GS3vnj0pLM" role="3EZMnx">
