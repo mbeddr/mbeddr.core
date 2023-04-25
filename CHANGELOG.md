@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# April 2023
+
+## com.mbeddr.doc
+
+### Fixed
+
+* @doc\[some document\] causes broken build unless a "some document" was also used in include.
+
+### Changed
+
 # March 2023
 
 ## com.mbeddr.mpsutil
