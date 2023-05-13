@@ -2,7 +2,7 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.13.+'
+    id 'de.itemis.mps.gradle.common' version '1.16.+'
     id 'download-jbr' version '1.16.+'
 }
 
