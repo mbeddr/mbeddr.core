@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
@@ -925,6 +925,36 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3zLCsSzpbzX" role="3cqZAp">
+          <node concept="3cpWsn" id="3zLCsSzpbzY" role="3cpWs9">
+            <property role="TrG5h" value="outputLocation" />
+            <node concept="17QB3L" id="3zLCsSzp9py" role="1tU5fm" />
+            <node concept="2OqwBi" id="3zLCsSzpbzZ" role="33vP2m">
+              <node concept="37vLTw" id="3zLCsSzpb$0" role="2Oq$k0">
+                <ref role="3cqZAo" node="5pX5kNhPUsh" resolve="outputLocationProvider" />
+              </node>
+              <node concept="2qgKlT" id="3zLCsSzpb$1" role="2OqNvi">
+                <ref role="37wK5l" node="7fn1GcIr3Ns" resolve="getOutputLocation" />
+                <node concept="37vLTw" id="3zLCsSzpb$2" role="37wK5m">
+                  <ref role="3cqZAo" node="47170bJjoeS" resolve="originalModel" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3zLCsSzpc7t" role="3cqZAp">
+          <node concept="3clFbS" id="3zLCsSzpc7v" role="3clFbx">
+            <node concept="3cpWs6" id="3zLCsSzpddu" role="3cqZAp">
+              <node concept="10Nm6u" id="3zLCsSzpdjr" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="3zLCsSzpcE$" role="3clFbw">
+            <node concept="10Nm6u" id="3zLCsSzpd7$" role="3uHU7w" />
+            <node concept="37vLTw" id="3zLCsSzpceX" role="3uHU7B">
+              <ref role="3cqZAo" node="3zLCsSzpbzY" resolve="outputLocation" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="47170bJhwOf" role="3cqZAp">
           <node concept="3cpWsn" id="47170bJhwOg" role="3cpWs9">
             <property role="TrG5h" value="outputPath" />
@@ -934,16 +964,8 @@
             <node concept="2YIFZM" id="47170bJhIa$" role="33vP2m">
               <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
               <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-              <node concept="2OqwBi" id="5pX5kNhPViK" role="37wK5m">
-                <node concept="37vLTw" id="5pX5kNhPV0K" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5pX5kNhPUsh" resolve="outputLocationProvider" />
-                </node>
-                <node concept="2qgKlT" id="5pX5kNhPVDo" role="2OqNvi">
-                  <ref role="37wK5l" node="7fn1GcIr3Ns" resolve="getOutputLocation" />
-                  <node concept="37vLTw" id="5pX5kNhPW2y" role="37wK5m">
-                    <ref role="3cqZAo" node="47170bJjoeS" resolve="originalModel" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="3zLCsSzpb$3" role="37wK5m">
+                <ref role="3cqZAo" node="3zLCsSzpbzY" resolve="outputLocation" />
               </node>
             </node>
           </node>
@@ -4817,37 +4839,8 @@
         </node>
         <node concept="3clFbJ" id="7fn1GcIrNU3" role="3cqZAp">
           <node concept="3clFbS" id="7fn1GcIrNU5" role="3clFbx">
-            <node concept="YS8fn" id="6M9sQRby0gW" role="3cqZAp">
-              <node concept="2ShNRf" id="6M9sQRby0gX" role="YScLw">
-                <node concept="1pGfFk" id="6M9sQRby0gY" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="3cpWs3" id="6M9sQRby0gZ" role="37wK5m">
-                    <node concept="Xl_RD" id="6M9sQRby0h0" role="3uHU7w">
-                      <property role="Xl_RC" value=" model not found" />
-                    </node>
-                    <node concept="3cpWs3" id="6M9sQRby0h1" role="3uHU7B">
-                      <node concept="Xl_RD" id="6M9sQRby0h2" role="3uHU7B">
-                        <property role="Xl_RC" value="Output location for " />
-                      </node>
-                      <node concept="2OqwBi" id="7fn1GcIrUpG" role="3uHU7w">
-                        <node concept="2OqwBi" id="7fn1GcIrSjV" role="2Oq$k0">
-                          <node concept="2JrnkZ" id="7fn1GcIrSk0" role="2Oq$k0">
-                            <node concept="37vLTw" id="6M9sQRby0h4" role="2JrQYb">
-                              <ref role="3cqZAo" node="7fn1GcIrqer" resolve="model" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="7fn1GcIrUa9" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="7fn1GcIrUU1" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModelName.getLongName()" resolve="getLongName" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="3cpWs6" id="3zLCsSzoeXD" role="3cqZAp">
+              <node concept="10Nm6u" id="3zLCsSzof2c" role="3cqZAk" />
             </node>
           </node>
           <node concept="3clFbC" id="7fn1GcIrOxM" role="3clFbw">

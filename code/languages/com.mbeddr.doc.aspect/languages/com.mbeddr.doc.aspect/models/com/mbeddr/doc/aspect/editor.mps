@@ -2,7 +2,7 @@
 <model ref="r:23ce84b3-7dc4-479d-a4ba-481817934114(com.mbeddr.doc.aspect.editor)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -207,9 +207,11 @@
     <ref role="1XX52x" to="748g:UK_oBp_UIu" resolve="DocumentedConceptAnnotation" />
     <node concept="3EZMnI" id="UK_oBpA4Fb" role="2wV5jI">
       <node concept="3EZMnI" id="UK_oBpA4H8" role="3EZMnx">
+        <ref role="1ERwB7" node="15xqebYwdYU" resolve="DocumentedConceptAnnotation_ActionMap" />
         <node concept="2iRfu4" id="UK_oBpA4H9" role="2iSdaV" />
         <node concept="3F0ifn" id="UK_oBpA4Fo" role="3EZMnx">
           <property role="3F0ifm" value="[Documents" />
+          <ref role="1ERwB7" node="15xqebYwdYU" resolve="DocumentedConceptAnnotation_ActionMap" />
           <node concept="Vb9p2" id="UK_oBpA4H3" role="3F10Kt">
             <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>
@@ -494,6 +496,35 @@
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
     <node concept="2SsqMj" id="1o6EjwiSKBu" role="2wV5jI" />
+  </node>
+  <node concept="1h_SRR" id="15xqebYwdYU">
+    <property role="TrG5h" value="DocumentedConceptAnnotation_ActionMap" />
+    <node concept="1hA7zw" id="15xqebYwdYV" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <node concept="1hAIg9" id="15xqebYwdYW" role="1hA7z_">
+        <node concept="3clFbS" id="15xqebYwdYX" role="2VODD2">
+          <node concept="3clFbF" id="15xqebYwdYY" role="3cqZAp">
+            <node concept="2OqwBi" id="15xqebYwdYZ" role="3clFbG">
+              <node concept="0IXxy" id="15xqebYwdZ0" role="2Oq$k0" />
+              <node concept="3YRAZt" id="15xqebYwdZ1" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="15xqebYwdZ2" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="15xqebYwdZ3" role="1hA7z_">
+        <node concept="3clFbS" id="15xqebYwdZ4" role="2VODD2">
+          <node concept="3clFbF" id="15xqebYwdZ5" role="3cqZAp">
+            <node concept="2OqwBi" id="15xqebYwdZ6" role="3clFbG">
+              <node concept="0IXxy" id="15xqebYwdZ7" role="2Oq$k0" />
+              <node concept="3YRAZt" id="15xqebYwdZ8" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

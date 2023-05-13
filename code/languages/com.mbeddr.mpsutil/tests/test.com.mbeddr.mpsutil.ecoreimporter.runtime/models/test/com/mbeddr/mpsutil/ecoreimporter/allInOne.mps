@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="-1" />
+    <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -18,16 +18,12 @@
       <concept id="2995083582054930500" name="com.mbeddr.mpsutil.ecore.structure.EChar" flags="ng" index="trrjy" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
-        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -63,18 +59,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="AxPO7" id="7FLq2$JzdL2">
-    <property role="TrG5h" value="enumTest1" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="7FLq2$JzdL3" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="val1" />
-    </node>
-    <node concept="M4N5e" id="7FLq2$JzdL4" role="M5hS2">
-      <property role="1uS6qv" value="1" />
-      <property role="1uS6qo" value="val2" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="7FLq2$JzdLd">
     <property role="TrG5h" value="i_superClass2" />
     <property role="EcuMT" value="8858976468115184717" />
@@ -129,6 +113,11 @@
         <node concept="trrjg" id="7FLq2$JzdKO" role="tqAd9" />
       </node>
     </node>
+    <node concept="1TJgyi" id="apJ4OR4szu" role="1TKVEl">
+      <property role="IQ2nx" value="187387899335002334" />
+      <property role="TrG5h" value="testEnumAttr" />
+      <ref role="AX2Wp" node="apJ4OR4rgP" resolve="enumTest1" />
+    </node>
     <node concept="1TJgyj" id="7FLq2$JzdL9" role="1TKVEi">
       <property role="IQ2ns" value="8858976468115184713" />
       <property role="20kJfa" value="testRef" />
@@ -142,17 +131,6 @@
     </node>
     <node concept="PrWs8" id="7FLq2$JzdLc" role="PzmwI">
       <ref role="PrY4T" node="7FLq2$JzdLd" resolve="i_superClass2" />
-    </node>
-    <node concept="1TJgyi" id="17qUVvSZm9u" role="1TKVEl">
-      <property role="TrG5h" value="testEnumAttr" />
-      <property role="IQ2nx" value="8858976468115184693" />
-      <node concept="3l_iC" id="17qUVvSZm9v" role="lGtFl">
-        <node concept="1TJgyi" id="7FLq2$JzdKP" role="3l_iP">
-          <property role="IQ2nx" value="8858976468115184693" />
-          <property role="TrG5h" value="testEnumAttr" />
-          <ref role="AX2Wp" node="7FLq2$JzdL2" resolve="enumTest1" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="7FLq2$JzdKQ">
@@ -187,6 +165,19 @@
       <node concept="tq6dS" id="7FLq2$JzdL7" role="lGtFl">
         <node concept="trrj2" id="7FLq2$JzdL8" role="tqAd9" />
       </node>
+    </node>
+  </node>
+  <node concept="25R3W" id="apJ4OR4rgP">
+    <property role="TrG5h" value="enumTest1" />
+    <node concept="25R33" id="apJ4OR4ror" role="25R1y">
+      <property role="3tVfz5" value="187387899334997531" />
+      <property role="TrG5h" value="val1" />
+      <property role="1L1pqM" value="0" />
+    </node>
+    <node concept="25R33" id="apJ4OR4rot" role="25R1y">
+      <property role="3tVfz5" value="187387899334997533" />
+      <property role="TrG5h" value="val2" />
+      <property role="1L1pqM" value="1" />
     </node>
   </node>
 </model>

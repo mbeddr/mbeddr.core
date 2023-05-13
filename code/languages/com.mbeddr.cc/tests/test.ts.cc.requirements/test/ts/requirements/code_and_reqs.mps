@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
     <use id="53bab999-e9c3-428a-80be-fef5bed08f55" name="com.mbeddr.cc.trace" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
@@ -54,6 +54,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
@@ -259,6 +260,7 @@
       <property role="3I8uaA" value="" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2Q9Fgs" id="3AFGfkfopPV" role="2Q9xDr">
       <node concept="2Q9FjX" id="3AFGfkfopPW" role="2Q9FjI" />

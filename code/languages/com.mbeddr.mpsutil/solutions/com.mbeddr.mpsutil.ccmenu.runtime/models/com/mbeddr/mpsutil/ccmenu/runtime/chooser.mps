@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -347,6 +347,7 @@
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
+        <property id="6328114375520539781" name="url" index="1X82VU" />
       </concept>
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
@@ -2497,6 +2498,7 @@
             </node>
             <node concept="3oM_SD" id="17qUVvSZl37" role="1PaTwD">
               <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
+              <property role="1X82VU" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
             </node>
           </node>
         </node>
@@ -3131,6 +3133,7 @@
             </node>
             <node concept="3oM_SD" id="17qUVvSZl3N" role="1PaTwD">
               <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
+              <property role="1X82VU" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
             </node>
           </node>
         </node>
@@ -3465,6 +3468,7 @@
             </node>
             <node concept="3oM_SD" id="17qUVvSZl4q" role="1PaTwD">
               <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
+              <property role="1X82VU" value="https://youtrack.jetbrains.com/issue/MPS-28047" />
             </node>
           </node>
         </node>

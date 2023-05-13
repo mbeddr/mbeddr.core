@@ -2,12 +2,12 @@
 <model ref="r:85d231c9-a47f-4c86-994d-05f637d3b809(doc.com.mbeddr.mpsutil.multilingual.docs)">
   <persistence version="9" />
   <languages>
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="-1" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="-1" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="-1" />
@@ -30,7 +30,7 @@
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project">
       <concept id="1855399583446016268" name="jetbrains.mps.lang.project.structure.ModuleReference" flags="ng" index="A2Dkr">
@@ -254,6 +254,7 @@
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
         <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
@@ -504,7 +505,7 @@
         <property role="TrG5h" value="settingsDialog" />
         <node concept="2Sb_l4" id="3TSnT3I_Qxu" role="2SbwM5">
           <property role="2Sb_kV" value="settingsDialog.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="3TSnT3I_QvH" role="2SaI5j">
           <node concept="19SGf9" id="3TSnT3I_QvI" role="OjmMu">
@@ -937,7 +938,7 @@
         <property role="TrG5h" value="conceptStructure" />
         <node concept="2Sb_l4" id="aiIotXwtVo" role="2SbwM5">
           <property role="2Sb_kV" value="multilingualConcept.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXwtV9" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXwtVa" role="OjmMu">
@@ -989,7 +990,7 @@
         <property role="TrG5h" value="conceptPlain" />
         <node concept="2Sb_l4" id="aiIotXF7qH" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExamplePlain.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF7om" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7on" role="OjmMu">
@@ -1027,7 +1028,7 @@
         <property role="TrG5h" value="conceptSimple" />
         <node concept="2Sb_l4" id="aiIotXF7qL" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExampleFlags.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF7qM" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7qN" role="OjmMu">
@@ -1075,7 +1076,7 @@
         <property role="TrG5h" value="conceptExpanded" />
         <node concept="2Sb_l4" id="aiIotXF7te" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExampleExpanded.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF7tf" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7tg" role="OjmMu">
@@ -1177,7 +1178,7 @@
         <property role="TrG5h" value="moduleCommonTab" />
         <node concept="2Sb_l4" id="aiIotXF5bB" role="2SbwM5">
           <property role="2Sb_kV" value="moduleCommonTab.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF4o7" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4o8" role="OjmMu">
@@ -1192,7 +1193,7 @@
         <property role="TrG5h" value="moduleJavaTab" />
         <node concept="2Sb_l4" id="aiIotXF5bE" role="2SbwM5">
           <property role="2Sb_kV" value="moduleJavaTab.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF4rc" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4rd" role="OjmMu">
@@ -1230,7 +1231,7 @@
         <property role="TrG5h" value="resourceStructure" />
         <node concept="2Sb_l4" id="aiIotXF5bH" role="2SbwM5">
           <property role="2Sb_kV" value="exampleDirStructure.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="images" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
         </node>
         <node concept="OjmMv" id="aiIotXF4FF" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4FG" role="OjmMu">
@@ -1256,16 +1257,19 @@
   <node concept="2SbYGP" id="3TSnT3IxdLq">
     <property role="TrG5h" value="MultilingualDocConfig" />
     <node concept="2SbYGw" id="3TSnT3IxdLr" role="Cbewh">
-      <property role="TrG5h" value="images" />
+      <property role="TrG5h" value="tmp" />
       <node concept="9PVaO" id="5CkU_dHrqX4" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="temp" />
       </node>
     </node>
     <node concept="2SbYGw" id="6VIi5$IArfn" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="6VIi5$IArfo" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="images" />
       </node>
     </node>
   </node>
@@ -1500,7 +1504,7 @@
       <property role="1jVoCx" value="article" />
       <property role="43dxY" value="/Users/nikostotz/git/mbeddr.core.mps31/code/languages/com.mbeddr.doc/latex-support/mbeddr-prolog.ltx" />
     </node>
-    <node concept="1_07dB" id="2xZVCi_hXQ2" role="30Gjbi" />
+    <node concept="1TaS0h" id="3k8awrKr4rd" role="30Gjbi" />
   </node>
 </model>
 

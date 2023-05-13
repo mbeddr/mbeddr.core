@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
@@ -31,9 +31,6 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
-      <concept id="7613853987897845671" name="jetbrains.mps.lang.behavior.structure.SuperConceptExpression" flags="ng" index="3pZB1V">
-        <reference id="7613853987897845672" name="superConcept" index="3pZB1O" />
-      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -186,12 +183,10 @@
               </node>
             </node>
             <node concept="2OqwBi" id="2D1PBM_bzvj" role="33vP2m">
-              <node concept="3pZB1V" id="5RIakkDJ1q3" role="2Oq$k0">
-                <ref role="3pZB1O" to="tpee:gyVMwX8" resolve="ConceptFunction" />
-              </node>
               <node concept="2qgKlT" id="2D1PBM_bzve" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
               </node>
+              <node concept="13iAh5" id="2NwUY1vRVol" role="2Oq$k0" />
             </node>
           </node>
         </node>

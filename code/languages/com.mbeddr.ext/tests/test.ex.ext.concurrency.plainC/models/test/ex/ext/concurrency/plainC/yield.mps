@@ -7,7 +7,7 @@
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
-    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="1" />
+    <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="10" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
@@ -63,6 +63,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
         <property id="1691534949151697076" name="linkerOptions" index="3I8uaA" />
@@ -212,6 +213,7 @@
       <property role="3I8uaA" value="" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="TrG5h" value="Yield" />

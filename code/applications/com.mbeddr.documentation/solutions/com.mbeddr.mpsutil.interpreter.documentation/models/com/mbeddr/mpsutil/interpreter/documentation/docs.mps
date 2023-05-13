@@ -8,10 +8,10 @@
     <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="0" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
@@ -665,28 +665,6 @@
           <node concept="19SGf9" id="1d83w5bFg$$" role="1_0LWR">
             <node concept="19SUe$" id="1d83w5bFg$_" role="19SJt6">
               <property role="19SUeA" value="An error is flagged if we define unsolvable dependency cycles between interpreters." />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_0VNX" id="1d83w5bFgCx" role="1_0VJ0">
-        <property role="TrG5h" value="applicableLanguages" />
-        <property role="1_0VJr" value="Applicable Languages" />
-        <node concept="1_0LV8" id="1d83w5bFgGC" role="1_0VJ0">
-          <node concept="19SGf9" id="1d83w5bFgGD" role="1_0LWR">
-            <node concept="19SUe$" id="1d83w5bFgGL" role="19SJt6" />
-            <node concept="3z_lpY" id="1d83w5bFgGJ" role="19SJt6">
-              <node concept="2NCZwO" id="1d83w5bFgGK" role="3z_lpZ">
-                <node concept="2NCMab" id="1d83w5bFgGR" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
-                </node>
-                <node concept="2NCMab" id="1d83w5bFgGW" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFgEm" resolve="applicableLanguages" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="1d83w5bFgGM" role="19SJt6">
-              <property role="19SUeA" value=" limit the types and concepts available in the Type Mappings and Evaluators to the languages defined here. This reduces possibility to mix concepts of different languages (e. g. BaseLanguage Statement and C Statement). Please note that we still need to add the languages to the dependencies of this model in order to use concepts contained within them." />
             </node>
           </node>
         </node>

@@ -9,13 +9,12 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -24,20 +23,22 @@
       </concept>
     </language>
   </registry>
-  <node concept="AxPO7" id="7FLq2$JzxpJ">
+  <node concept="25R3W" id="apJ4OR7VSA">
     <property role="TrG5h" value="simpleEnum" />
-    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-    <node concept="M4N5e" id="7FLq2$JzxpK" role="M5hS2">
-      <property role="1uS6qv" value="0" />
-      <property role="1uS6qo" value="val1" />
+    <node concept="25R33" id="apJ4OR7W91" role="25R1y">
+      <property role="3tVfz5" value="187387899335918145" />
+      <property role="TrG5h" value="val1" />
+      <property role="1L1pqM" value="0" />
     </node>
-    <node concept="M4N5e" id="7FLq2$JzxpL" role="M5hS2">
-      <property role="1uS6qv" value="1" />
-      <property role="1uS6qo" value="val2" />
+    <node concept="25R33" id="apJ4OR7W93" role="25R1y">
+      <property role="3tVfz5" value="187387899335918147" />
+      <property role="TrG5h" value="val2" />
+      <property role="1L1pqM" value="1" />
     </node>
-    <node concept="M4N5e" id="7FLq2$JzxpM" role="M5hS2">
-      <property role="1uS6qv" value="2" />
-      <property role="1uS6qo" value="val3" />
+    <node concept="25R33" id="apJ4OR7W96" role="25R1y">
+      <property role="3tVfz5" value="187387899335918150" />
+      <property role="TrG5h" value="val3" />
+      <property role="1L1pqM" value="2" />
     </node>
   </node>
 </model>

@@ -6,10 +6,10 @@ configurations {
     jreWin
 }
 
-ext.jdkVersion = '8u112b408.4'
+ext.jdkVersion = '11_0_12-b1504.28'
 dependencies {
     mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
-    jreWin "com.jetbrains.jdk:jdk:${jdkVersion}:windows_x64@tgz"
+    jreWin "com.jetbrains.jdk:jbr_nomod:${jdkVersion}:windows-x64@tgz"
 }
 
 task resolve_mbeddr() {
@@ -37,8 +37,8 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.m
 
 task package_tutorial(type: Zip) {
     from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
-    destinationDir  new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
-    archiveName "com.mbeddr.tutorial.zip"
+    destinationDirectory = new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveFileName = "com.mbeddr.tutorial.zip"
 }
 
 task prepare_distribution(dependsOn: [build_all_in_one, build_platform_distribution, package_tutorial])
@@ -93,7 +93,7 @@ task build_installer(type:Exec, dependsOn: [prepare_installer]) {
 task build_dmg(type: CreateDmg) {
     dependsOn build_mbeddrRCP
     rcpArtifact rootProject.file('artifacts/mpsDistribution/mbeddr-macos.zip')
-    jdkDependency "com.jetbrains.jdk:jdk:${jdkVersion}:osx_x64@tgz"
+    jdkDependency "com.jetbrains.jdk:jbr_nomod:${jdkVersion}:osx-x64@tgz"
     backgroundImage rootProject.file('rcp/icons/mbeddr-logo.png')
     dmgFile rootProject.file('buildUtil/mbeddr-macos.dmg')
 }

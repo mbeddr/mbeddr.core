@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -77,9 +77,6 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
-      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
-        <child id="1182160096073" name="cls" index="YeSDq" />
-      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -206,9 +203,6 @@
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
-        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
-      </concept>
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
       <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
@@ -245,6 +239,11 @@
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
         <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
+      </concept>
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -994,110 +993,95 @@
                 </node>
               </node>
               <node concept="3clFbS" id="7836$RyVWns" role="3clFbx">
-                <node concept="3clFbF" id="7836$RyVWnt" role="3cqZAp">
-                  <node concept="2YIFZM" id="7836$RyWbMe" role="3clFbG">
-                    <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
-                    <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
-                    <node concept="2ShNRf" id="7836$RyVWnv" role="37wK5m">
-                      <node concept="YeOm9" id="7836$RyVWnw" role="2ShVmc">
-                        <node concept="1Y3b0j" id="7836$RyVWnx" role="YeSDq">
-                          <property role="2bfB8j" value="true" />
-                          <property role="1sVAO0" value="false" />
-                          <property role="1EXbeo" value="false" />
-                          <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                          <node concept="3Tm1VV" id="7836$RyVWny" role="1B3o_S" />
-                          <node concept="3clFb_" id="7836$RyVWnz" role="jymVt">
-                            <property role="TrG5h" value="run" />
-                            <property role="DiZV1" value="false" />
-                            <property role="od$2w" value="false" />
-                            <node concept="2AHcQZ" id="7836$RyVWn$" role="2AJF6D">
-                              <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                <node concept="3clFbF" id="3k8awrIgJL5" role="3cqZAp">
+                  <node concept="2OqwBi" id="3k8awrIgLKI" role="3clFbG">
+                    <node concept="2YIFZM" id="3k8awrIgLeF" role="2Oq$k0">
+                      <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                      <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                    </node>
+                    <node concept="liA8E" id="3k8awrIgMJy" role="2OqNvi">
+                      <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                      <node concept="1bVj0M" id="3k8awrIgNIG" role="37wK5m">
+                        <node concept="3clFbS" id="3k8awrIgNIH" role="1bW5cS">
+                          <node concept="3cpWs8" id="7836$RyVWnB" role="3cqZAp">
+                            <node concept="3cpWsn" id="7836$RyVWnA" role="3cpWs9">
+                              <property role="3TUv4t" value="false" />
+                              <property role="TrG5h" value="answer" />
+                              <node concept="10Oyi0" id="7836$RyVWnC" role="1tU5fm" />
+                              <node concept="2YIFZM" id="7836$RyWBVt" role="33vP2m">
+                                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                <ref role="37wK5l" to="jkm4:~Messages.showYesNoDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showYesNoDialog" />
+                                <node concept="3cpWs3" id="7836$RyVWnE" role="37wK5m">
+                                  <node concept="3cpWs3" id="7836$RyVWnF" role="3uHU7B">
+                                    <node concept="3cpWs3" id="7836$RyVWnG" role="3uHU7B">
+                                      <node concept="3cpWs3" id="7836$RyVWnH" role="3uHU7B">
+                                        <node concept="Xl_RD" id="7836$RyVWnI" role="3uHU7B">
+                                          <property role="Xl_RC" value="Do you want to replace directory\n" />
+                                        </node>
+                                        <node concept="37vLTw" id="7836$RyVWnJ" role="3uHU7w">
+                                          <ref role="3cqZAo" node="7836$RyVWnk" resolve="samplesDir" />
+                                        </node>
+                                      </node>
+                                      <node concept="Xl_RD" id="7836$RyVWnK" role="3uHU7w">
+                                        <property role="Xl_RC" value="\n with version " />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="7836$RyVWnL" role="3uHU7w">
+                                      <node concept="2OqwBi" id="7836$RyVWqJ" role="2Oq$k0">
+                                        <node concept="37vLTw" id="7836$RyVWqI" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="7836$RyVWka" resolve="myApplicationInfo" />
+                                        </node>
+                                        <node concept="liA8E" id="7836$RyVWqK" role="2OqNvi">
+                                          <ref role="37wK5l" to="bd8o:~ApplicationInfo.getBuild()" resolve="getBuild" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="7836$RyVWnN" role="2OqNvi">
+                                        <ref role="37wK5l" to="zn9m:~BuildNumber.asString()" resolve="asString" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="7836$RyVWnO" role="3uHU7w">
+                                    <property role="Xl_RC" value=" (old directory contents will be deleted)?" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="7836$RyVWnP" role="37wK5m">
+                                  <property role="Xl_RC" value="Replace mbeddr Tutorial?" />
+                                </node>
+                                <node concept="2YIFZM" id="7836$RyWE$5" role="37wK5m">
+                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                  <ref role="37wK5l" to="jkm4:~Messages.getQuestionIcon()" resolve="getQuestionIcon" />
+                                </node>
+                              </node>
                             </node>
-                            <node concept="3clFbS" id="7836$RyVWn_" role="3clF47">
-                              <node concept="3cpWs8" id="7836$RyVWnB" role="3cqZAp">
-                                <node concept="3cpWsn" id="7836$RyVWnA" role="3cpWs9">
-                                  <property role="3TUv4t" value="false" />
-                                  <property role="TrG5h" value="answer" />
-                                  <node concept="10Oyi0" id="7836$RyVWnC" role="1tU5fm" />
-                                  <node concept="2YIFZM" id="7836$RyWBVt" role="33vP2m">
-                                    <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                    <ref role="37wK5l" to="jkm4:~Messages.showYesNoDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showYesNoDialog" />
-                                    <node concept="3cpWs3" id="7836$RyVWnE" role="37wK5m">
-                                      <node concept="3cpWs3" id="7836$RyVWnF" role="3uHU7B">
-                                        <node concept="3cpWs3" id="7836$RyVWnG" role="3uHU7B">
-                                          <node concept="3cpWs3" id="7836$RyVWnH" role="3uHU7B">
-                                            <node concept="Xl_RD" id="7836$RyVWnI" role="3uHU7B">
-                                              <property role="Xl_RC" value="Do you want to replace directory\n" />
-                                            </node>
-                                            <node concept="37vLTw" id="7836$RyVWnJ" role="3uHU7w">
-                                              <ref role="3cqZAo" node="7836$RyVWnk" resolve="samplesDir" />
-                                            </node>
-                                          </node>
-                                          <node concept="Xl_RD" id="7836$RyVWnK" role="3uHU7w">
-                                            <property role="Xl_RC" value="\n with version " />
-                                          </node>
-                                        </node>
-                                        <node concept="2OqwBi" id="7836$RyVWnL" role="3uHU7w">
-                                          <node concept="2OqwBi" id="7836$RyVWqJ" role="2Oq$k0">
-                                            <node concept="37vLTw" id="7836$RyVWqI" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="7836$RyVWka" resolve="myApplicationInfo" />
-                                            </node>
-                                            <node concept="liA8E" id="7836$RyVWqK" role="2OqNvi">
-                                              <ref role="37wK5l" to="bd8o:~ApplicationInfo.getBuild()" resolve="getBuild" />
-                                            </node>
-                                          </node>
-                                          <node concept="liA8E" id="7836$RyVWnN" role="2OqNvi">
-                                            <ref role="37wK5l" to="zn9m:~BuildNumber.asString()" resolve="asString" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="Xl_RD" id="7836$RyVWnO" role="3uHU7w">
-                                        <property role="Xl_RC" value=" (old directory contents will be deleted)?" />
-                                      </node>
-                                    </node>
-                                    <node concept="Xl_RD" id="7836$RyVWnP" role="37wK5m">
-                                      <property role="Xl_RC" value="Replace mbeddr Tutorial?" />
-                                    </node>
-                                    <node concept="2YIFZM" id="7836$RyWE$5" role="37wK5m">
-                                      <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                      <ref role="37wK5l" to="jkm4:~Messages.getQuestionIcon()" resolve="getQuestionIcon" />
-                                    </node>
+                          </node>
+                          <node concept="3clFbJ" id="7836$RyVWnR" role="3cqZAp">
+                            <node concept="3clFbC" id="7836$RyVWnS" role="3clFbw">
+                              <node concept="37vLTw" id="7836$RyVWnT" role="3uHU7B">
+                                <ref role="3cqZAo" node="7836$RyVWnA" resolve="answer" />
+                              </node>
+                              <node concept="3cmrfG" id="7836$RyVWnU" role="3uHU7w">
+                                <property role="3cmrfH" value="0" />
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="7836$RyVWnW" role="3clFbx">
+                              <node concept="3clFbF" id="7836$RyVWnX" role="3cqZAp">
+                                <node concept="2YIFZM" id="7836$RyWdvm" role="3clFbG">
+                                  <ref role="37wK5l" to="snbe:~FileUtil.delete(java.io.File)" resolve="delete" />
+                                  <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
+                                  <node concept="37vLTw" id="7836$RyVWnZ" role="37wK5m">
+                                    <ref role="3cqZAo" node="7836$RyVWnk" resolve="samplesDir" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3clFbJ" id="7836$RyVWnR" role="3cqZAp">
-                                <node concept="3clFbC" id="7836$RyVWnS" role="3clFbw">
-                                  <node concept="37vLTw" id="7836$RyVWnT" role="3uHU7B">
-                                    <ref role="3cqZAo" node="7836$RyVWnA" resolve="answer" />
-                                  </node>
-                                  <node concept="3cmrfG" id="7836$RyVWnU" role="3uHU7w">
-                                    <property role="3cmrfH" value="0" />
-                                  </node>
-                                </node>
-                                <node concept="3clFbS" id="7836$RyVWnW" role="3clFbx">
-                                  <node concept="3clFbF" id="7836$RyVWnX" role="3cqZAp">
-                                    <node concept="2YIFZM" id="7836$RyWdvm" role="3clFbG">
-                                      <ref role="1Pybhc" to="snbe:~FileUtil" resolve="FileUtil" />
-                                      <ref role="37wK5l" to="snbe:~FileUtil.delete(java.io.File)" resolve="delete" />
-                                      <node concept="37vLTw" id="7836$RyVWnZ" role="37wK5m">
-                                        <ref role="3cqZAo" node="7836$RyVWnk" resolve="samplesDir" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="3clFbF" id="7836$RyVWo0" role="3cqZAp">
-                                    <node concept="1rXfSq" id="7836$RyVWo1" role="3clFbG">
-                                      <ref role="37wK5l" node="7836$RyVWog" resolve="actuallyExtractSamples" />
-                                      <node concept="37vLTw" id="7836$RyVWo2" role="37wK5m">
-                                        <ref role="3cqZAo" node="7836$RyVWn7" resolve="samplesZipFile" />
-                                      </node>
-                                    </node>
+                              <node concept="3clFbF" id="7836$RyVWo0" role="3cqZAp">
+                                <node concept="1rXfSq" id="7836$RyVWo1" role="3clFbG">
+                                  <ref role="37wK5l" node="7836$RyVWog" resolve="actuallyExtractSamples" />
+                                  <node concept="37vLTw" id="7836$RyVWo2" role="37wK5m">
+                                    <ref role="3cqZAo" node="7836$RyVWn7" resolve="samplesZipFile" />
                                   </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="3Tm1VV" id="7836$RyVWo3" role="1B3o_S" />
-                            <node concept="3cqZAl" id="7836$RyVWo4" role="3clF45" />
                           </node>
                         </node>
                       </node>

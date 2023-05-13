@@ -45,6 +45,7 @@
         <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
         <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
         <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
+        <property id="8774011376396215812" name="linker" index="18_EFo" />
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
@@ -234,6 +235,7 @@
       <property role="1FkSt$" value="-g" />
       <property role="UXd52" value="g++" />
       <property role="UXd4T" value="-std=c++11" />
+      <property role="18_EFo" value="gcc" />
     </node>
     <node concept="12mU2y" id="22oVTLUfqGJ" role="2Q9xDr" />
   </node>
@@ -335,7 +337,7 @@
               <ref role="1S7826" node="5OGOa7Kb9na" resolve="sm" />
             </node>
             <node concept="1rBQh5" id="x1qBl$bpZ" role="1ESnxz">
-              <node concept="6sKY_" id="4WcLiIgB1TW" role="3O_q_j">
+              <node concept="6sKY_" id="tl4PXi$VxL" role="3O_q_j">
                 <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
               </node>
             </node>
@@ -347,7 +349,7 @@
         <node concept="c0Tn9" id="mPIr2B$dwi" role="3XIRFZ">
           <node concept="2qmXGp" id="x1qBl$br_" role="c0Tn6">
             <node concept="3Ox9Vr" id="x1qBl$br$" role="1ESnxz">
-              <node concept="6sKY_" id="4WcLiIgB1TX" role="2gvQMN">
+              <node concept="6sKY_" id="tl4PXi$VxM" role="2gvQMN">
                 <ref role="6sK1u" node="7kKaL9x5o5F" resolve="green" />
               </node>
             </node>

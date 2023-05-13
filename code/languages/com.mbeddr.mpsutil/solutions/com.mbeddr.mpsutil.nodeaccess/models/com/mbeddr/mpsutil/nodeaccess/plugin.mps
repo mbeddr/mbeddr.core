@@ -12,7 +12,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" name="com.mbeddr.mpsutil.httpsupport" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
@@ -36,6 +36,7 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
     <import index="opgt" ref="7f0984ac-9f5d-4001-9257-17f7d10f3fd5/java:javax.servlet(com.mbeddr.mpsutil.httpsupport.rt/)" implicit="true" />
@@ -603,35 +604,50 @@
               </node>
             </node>
             <node concept="3clFbS" id="M5_ycCyLP4" role="1zc67A">
-              <node concept="3clFbF" id="M5_ycCzgYj" role="3cqZAp">
-                <node concept="2YIFZM" id="M5_ycCziFI" role="3clFbG">
-                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                  <node concept="3cpWs3" id="5kA5NGPW7at" role="37wK5m">
-                    <node concept="2OqwBi" id="5kA5NGPW7Ei" role="3uHU7w">
-                      <node concept="37vLTw" id="5kA5NGPW7Ah" role="2Oq$k0">
-                        <ref role="3cqZAo" node="M5_ycCyLP0" resolve="ex" />
-                      </node>
-                      <node concept="liA8E" id="5kA5NGPW8my" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                      </node>
-                    </node>
-                    <node concept="3cpWs3" id="5kA5NGPW4QZ" role="3uHU7B">
-                      <node concept="3cpWs3" id="M5_ycCEj5X" role="3uHU7B">
-                        <node concept="Xl_RD" id="M5_ycCztzb" role="3uHU7B">
-                          <property role="Xl_RC" value="Cannot open node based on copied URL.\nURL: " />
-                        </node>
-                        <node concept="37vLTw" id="M5_ycCEkbZ" role="3uHU7w">
-                          <ref role="3cqZAo" node="27T0Q3SBuuU" resolve="url" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="5kA5NGPW5mt" role="3uHU7w">
-                        <property role="Xl_RC" value="\nReason: " />
-                      </node>
-                    </node>
+              <node concept="3clFbF" id="3k8awrIe0El" role="3cqZAp">
+                <node concept="2OqwBi" id="3k8awrIe1V8" role="3clFbG">
+                  <node concept="2YIFZM" id="3k8awrIe1sy" role="2Oq$k0">
+                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                   </node>
-                  <node concept="Xl_RD" id="M5_ycC$1pB" role="37wK5m">
-                    <property role="Xl_RC" value="Error" />
+                  <node concept="liA8E" id="3k8awrIe2xK" role="2OqNvi">
+                    <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                    <node concept="1bVj0M" id="3k8awrIe2Q5" role="37wK5m">
+                      <node concept="3clFbS" id="3k8awrIe2Q6" role="1bW5cS">
+                        <node concept="3clFbF" id="M5_ycCzgYj" role="3cqZAp">
+                          <node concept="2YIFZM" id="M5_ycCziFI" role="3clFbG">
+                            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                            <node concept="3cpWs3" id="5kA5NGPW7at" role="37wK5m">
+                              <node concept="2OqwBi" id="5kA5NGPW7Ei" role="3uHU7w">
+                                <node concept="37vLTw" id="5kA5NGPW7Ah" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="M5_ycCyLP0" resolve="ex" />
+                                </node>
+                                <node concept="liA8E" id="5kA5NGPW8my" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                </node>
+                              </node>
+                              <node concept="3cpWs3" id="5kA5NGPW4QZ" role="3uHU7B">
+                                <node concept="3cpWs3" id="M5_ycCEj5X" role="3uHU7B">
+                                  <node concept="Xl_RD" id="M5_ycCztzb" role="3uHU7B">
+                                    <property role="Xl_RC" value="Cannot open node based on copied URL.\nURL: " />
+                                  </node>
+                                  <node concept="37vLTw" id="M5_ycCEkbZ" role="3uHU7w">
+                                    <ref role="3cqZAo" node="27T0Q3SBuuU" resolve="url" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="5kA5NGPW5mt" role="3uHU7w">
+                                  <property role="Xl_RC" value="\nReason: " />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="M5_ycC$1pB" role="37wK5m">
+                              <property role="Xl_RC" value="Error" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1117,25 +1133,40 @@
                         </node>
                         <node concept="3clFbJ" id="23v1Xs_8Fa$" role="3cqZAp">
                           <node concept="3clFbS" id="23v1Xs_8FaB" role="3clFbx">
-                            <node concept="3clFbF" id="23v1Xs_8JKI" role="3cqZAp">
-                              <node concept="2YIFZM" id="23v1Xs_8JKJ" role="3clFbG">
-                                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                <node concept="3cpWs3" id="23v1Xs_8JKO" role="37wK5m">
-                                  <node concept="3cpWs3" id="23v1Xs_8JKP" role="3uHU7B">
-                                    <node concept="Xl_RD" id="23v1Xs_8JKQ" role="3uHU7B">
-                                      <property role="Xl_RC" value="Cannot find model with the ID " />
-                                    </node>
-                                    <node concept="37vLTw" id="23v1Xs_8LyU" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7CAL8BWh$a" resolve="modelID" />
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="23v1Xs_8JKS" role="3uHU7w">
-                                    <property role="Xl_RC" value="\nMaybe it is not part of the current project?" />
-                                  </node>
+                            <node concept="3clFbF" id="3k8awrIe5iG" role="3cqZAp">
+                              <node concept="2OqwBi" id="3k8awrIe7in" role="3clFbG">
+                                <node concept="2YIFZM" id="3k8awrIe6yF" role="2Oq$k0">
+                                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                 </node>
-                                <node concept="Xl_RD" id="23v1Xs_8JKT" role="37wK5m">
-                                  <property role="Xl_RC" value="Error" />
+                                <node concept="liA8E" id="3k8awrIe87I" role="2OqNvi">
+                                  <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                                  <node concept="1bVj0M" id="3k8awrIe8H5" role="37wK5m">
+                                    <node concept="3clFbS" id="3k8awrIe8H6" role="1bW5cS">
+                                      <node concept="3clFbF" id="23v1Xs_8JKI" role="3cqZAp">
+                                        <node concept="2YIFZM" id="23v1Xs_8JKJ" role="3clFbG">
+                                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                          <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                          <node concept="3cpWs3" id="23v1Xs_8JKO" role="37wK5m">
+                                            <node concept="3cpWs3" id="23v1Xs_8JKP" role="3uHU7B">
+                                              <node concept="Xl_RD" id="23v1Xs_8JKQ" role="3uHU7B">
+                                                <property role="Xl_RC" value="Cannot find model with the ID " />
+                                              </node>
+                                              <node concept="37vLTw" id="23v1Xs_8LyU" role="3uHU7w">
+                                                <ref role="3cqZAo" node="7CAL8BWh$a" resolve="modelID" />
+                                              </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="23v1Xs_8JKS" role="3uHU7w">
+                                              <property role="Xl_RC" value="\nMaybe it is not part of the current project?" />
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="23v1Xs_8JKT" role="37wK5m">
+                                            <property role="Xl_RC" value="Error" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1169,25 +1200,40 @@
                         <node concept="3clFbH" id="7CAL8BWoVX" role="3cqZAp" />
                         <node concept="3clFbJ" id="7CAL8BWpil" role="3cqZAp">
                           <node concept="3clFbS" id="7CAL8BWpio" role="3clFbx">
-                            <node concept="3clFbF" id="23v1Xs_8P$v" role="3cqZAp">
-                              <node concept="2YIFZM" id="23v1Xs_8P$w" role="3clFbG">
-                                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
-                                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
-                                <node concept="3cpWs3" id="23v1Xs_8P$x" role="37wK5m">
-                                  <node concept="3cpWs3" id="23v1Xs_8P$y" role="3uHU7B">
-                                    <node concept="Xl_RD" id="23v1Xs_8P$z" role="3uHU7B">
-                                      <property role="Xl_RC" value="Cannot find node with the ID " />
-                                    </node>
-                                    <node concept="37vLTw" id="23v1Xs_8Q4F" role="3uHU7w">
-                                      <ref role="3cqZAo" node="7CAL8BWh$f" resolve="nodeID" />
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="23v1Xs_8P$_" role="3uHU7w">
-                                    <property role="Xl_RC" value="\nMaybe it is was deleted from the model?" />
-                                  </node>
+                            <node concept="3clFbF" id="3k8awrIeaYs" role="3cqZAp">
+                              <node concept="2OqwBi" id="3k8awrIecIZ" role="3clFbG">
+                                <node concept="2YIFZM" id="3k8awrIecfv" role="2Oq$k0">
+                                  <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                                  <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                 </node>
-                                <node concept="Xl_RD" id="23v1Xs_8P$A" role="37wK5m">
-                                  <property role="Xl_RC" value="Error" />
+                                <node concept="liA8E" id="3k8awrIedQn" role="2OqNvi">
+                                  <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                                  <node concept="1bVj0M" id="3k8awrIeesM" role="37wK5m">
+                                    <node concept="3clFbS" id="3k8awrIeesN" role="1bW5cS">
+                                      <node concept="3clFbF" id="23v1Xs_8P$v" role="3cqZAp">
+                                        <node concept="2YIFZM" id="23v1Xs_8P$w" role="3clFbG">
+                                          <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                          <node concept="3cpWs3" id="23v1Xs_8P$x" role="37wK5m">
+                                            <node concept="3cpWs3" id="23v1Xs_8P$y" role="3uHU7B">
+                                              <node concept="Xl_RD" id="23v1Xs_8P$z" role="3uHU7B">
+                                                <property role="Xl_RC" value="Cannot find node with the ID " />
+                                              </node>
+                                              <node concept="37vLTw" id="23v1Xs_8Q4F" role="3uHU7w">
+                                                <ref role="3cqZAo" node="7CAL8BWh$f" resolve="nodeID" />
+                                              </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="23v1Xs_8P$_" role="3uHU7w">
+                                              <property role="Xl_RC" value="\nMaybe it is was deleted from the model?" />
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="23v1Xs_8P$A" role="37wK5m">
+                                            <property role="Xl_RC" value="Error" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -1682,9 +1728,6 @@
       <node concept="tCFHf" id="2N1CSrzm3gO" role="ftvYc">
         <ref role="tCJdB" node="2N1CSrzm3gS" resolve="copyNodeInfoToClipboard" />
       </node>
-      <node concept="tCFHf" id="2N1CSrzm3gP" role="ftvYc">
-        <ref role="tCJdB" node="2N1CSrzm3j_" resolve="copyNodeURLToClipboard" />
-      </node>
       <node concept="10WQ6h" id="1WzkXggGER5" role="ftvYc">
         <property role="TrG5h" value="moreCopySpecial" />
       </node>
@@ -2157,83 +2200,6 @@
       <node concept="1oajcY" id="2N1CSrzE_xb" role="1oa70y" />
     </node>
   </node>
-  <node concept="sE7Ow" id="2N1CSrzm3j_">
-    <property role="TrG5h" value="copyNodeURLToClipboard" />
-    <property role="2uzpH1" value="Copy Node URL to Clipboard" />
-    <property role="3GE5qa" value="clipboard" />
-    <node concept="tnohg" id="2N1CSrzm3jA" role="tncku">
-      <node concept="3clFbS" id="2N1CSrzm3jB" role="2VODD2">
-        <node concept="3cpWs8" id="2N1CSrzm3jC" role="3cqZAp">
-          <node concept="3cpWsn" id="2N1CSrzm3jD" role="3cpWs9">
-            <property role="TrG5h" value="n" />
-            <node concept="3Tqbb2" id="2N1CSrzm3jE" role="1tU5fm" />
-            <node concept="2OqwBi" id="2N1CSrzm3jF" role="33vP2m">
-              <node concept="2WthIp" id="2N1CSrzm3jG" role="2Oq$k0" />
-              <node concept="3gHZIF" id="2N1CSrzm3jH" role="2OqNvi">
-                <ref role="2WH_rO" node="2N1CSrzm3k1" resolve="selectedNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2N1CSrzm3jI" role="3cqZAp">
-          <node concept="3cpWsn" id="2N1CSrzm3jJ" role="3cpWs9">
-            <property role="TrG5h" value="clip" />
-            <node concept="3uibUv" id="2N1CSrzm3jK" role="1tU5fm">
-              <ref role="3uigEE" to="kt01:~Clipboard" resolve="Clipboard" />
-            </node>
-            <node concept="2OqwBi" id="2N1CSrzm3jL" role="33vP2m">
-              <node concept="2YIFZM" id="2N1CSrzm3jM" role="2Oq$k0">
-                <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
-                <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit()" resolve="getDefaultToolkit" />
-              </node>
-              <node concept="liA8E" id="2N1CSrzm3jN" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Toolkit.getSystemClipboard()" resolve="getSystemClipboard" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2N1CSrzm3jO" role="3cqZAp">
-          <node concept="3cpWsn" id="2N1CSrzm3jP" role="3cpWs9">
-            <property role="TrG5h" value="sel" />
-            <node concept="3uibUv" id="2N1CSrzm3jQ" role="1tU5fm">
-              <ref role="3uigEE" to="kt01:~StringSelection" resolve="StringSelection" />
-            </node>
-            <node concept="2ShNRf" id="2N1CSrzm3jR" role="33vP2m">
-              <node concept="1pGfFk" id="2N1CSrzm3jS" role="2ShVmc">
-                <ref role="37wK5l" to="kt01:~StringSelection.&lt;init&gt;(java.lang.String)" resolve="StringSelection" />
-                <node concept="2OqwBi" id="By9C2svNkc" role="37wK5m">
-                  <node concept="37vLTw" id="By9C2svNc2" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2N1CSrzm3jD" resolve="n" />
-                  </node>
-                  <node concept="2$mYbS" id="By9C2svNCb" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2N1CSrzm3jV" role="3cqZAp">
-          <node concept="2OqwBi" id="2N1CSrzm3jW" role="3clFbG">
-            <node concept="37vLTw" id="2N1CSrzm3jX" role="2Oq$k0">
-              <ref role="3cqZAo" node="2N1CSrzm3jJ" resolve="clip" />
-            </node>
-            <node concept="liA8E" id="2N1CSrzm3jY" role="2OqNvi">
-              <ref role="37wK5l" to="kt01:~Clipboard.setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)" resolve="setContents" />
-              <node concept="37vLTw" id="2N1CSrzm3jZ" role="37wK5m">
-                <ref role="3cqZAo" node="2N1CSrzm3jP" resolve="sel" />
-              </node>
-              <node concept="10Nm6u" id="2N1CSrzm3k0" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2S4$dB" id="2N1CSrzm3k1" role="1NuT2Z">
-      <property role="TrG5h" value="selectedNode" />
-      <node concept="3Tm6S6" id="2N1CSrzm3k2" role="1B3o_S" />
-      <node concept="1oajcY" id="2N1CSrzm3k3" role="1oa70y" />
-      <node concept="3Tqbb2" id="2N1CSrzm3k4" role="1tU5fm" />
-    </node>
-  </node>
   <node concept="sE7Ow" id="2N1CSrzm3k5">
     <property role="TrG5h" value="copyXMLNodeToClipboard" />
     <property role="2uzpH1" value="Copy Node as XML" />
@@ -2344,6 +2310,20 @@
               </node>
             </node>
             <node concept="3clFbS" id="2N1CSrzm3li" role="1zc67A">
+              <node concept="3clFbF" id="3k8awrIeii3" role="3cqZAp">
+                <node concept="2OqwBi" id="3k8awrIeiy5" role="3clFbG">
+                  <node concept="2YIFZM" id="3k8awrIeikf" role="2Oq$k0">
+                    <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                    <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+                  </node>
+                  <node concept="liA8E" id="3k8awrIeiRV" role="2OqNvi">
+                    <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                    <node concept="1bVj0M" id="3k8awrIeiTF" role="37wK5m">
+                      <node concept="3clFbS" id="3k8awrIeiTG" role="1bW5cS" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="2N1CSrzm3lj" role="3cqZAp">
                 <node concept="2YIFZM" id="2N1CSrzm3lk" role="3clFbG">
                   <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />

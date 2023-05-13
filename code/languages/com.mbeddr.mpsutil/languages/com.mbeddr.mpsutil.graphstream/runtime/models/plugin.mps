@@ -6,7 +6,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -94,10 +94,14 @@
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
       <concept id="1213888677711" name="jetbrains.mps.lang.plugin.structure.DisposeBlock" flags="in" index="2xpOpl" />
       <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
-      <concept id="1227008846812" name="jetbrains.mps.lang.plugin.structure.ActionConstructionParameterDeclaration" flags="ig" index="2JriF1" />
+      <concept id="1227008846812" name="jetbrains.mps.lang.plugin.structure.ActionConstructionParameterDeclaration" flags="ig" index="2JriF1">
+        <child id="1227019158144" name="toStringFunction" index="2K2Cet" />
+      </concept>
       <concept id="1227013049127" name="jetbrains.mps.lang.plugin.structure.AddStatement" flags="nn" index="2JFkCU">
         <child id="1227013166210" name="item" index="2JFLmv" />
       </concept>
+      <concept id="1227019068586" name="jetbrains.mps.lang.plugin.structure.ToStringConceptFunction" flags="in" index="2K2imR" />
+      <concept id="1227019310584" name="jetbrains.mps.lang.plugin.structure.ToStringParameter" flags="nn" index="2K3dj_" />
       <concept id="1239975356883" name="jetbrains.mps.lang.plugin.structure.UpdateGroupBlock" flags="ng" index="2OiAzN">
         <child id="1239975488603" name="updateFunction" index="2Oj6PV" />
       </concept>
@@ -1875,6 +1879,13 @@
       <property role="TrG5h" value="viewID" />
       <node concept="3Tm6S6" id="bhVSeGf4_A" role="1B3o_S" />
       <node concept="17QB3L" id="bhVSeGf4RI" role="1tU5fm" />
+      <node concept="2K2imR" id="apJ4OR27Cv" role="2K2Cet">
+        <node concept="3clFbS" id="apJ4OR27Cw" role="2VODD2">
+          <node concept="3clFbF" id="apJ4OR27SL" role="3cqZAp">
+            <node concept="2K3dj_" id="apJ4OR27SK" role="3clFbG" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1DS2jV" id="bhVSeGf3sc" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -1883,7 +1894,7 @@
     </node>
     <node concept="1DS2jV" id="1aZIu9YrLRX" role="1NuT2Z">
       <property role="TrG5h" value="editor" />
-      <ref role="1DUlNI" to="qkt:~PlatformDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
+      <ref role="1DUlNI" to="qkt:~PlatformCoreDataKeys.FILE_EDITOR" resolve="FILE_EDITOR" />
       <node concept="1oajcY" id="1aZIu9YrLRY" role="1oa70y" />
     </node>
     <node concept="2S4$dB" id="bhVSeGf3se" role="1NuT2Z">

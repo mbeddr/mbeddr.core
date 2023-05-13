@@ -5,7 +5,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -145,6 +145,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -342,8 +343,11 @@
                   <node concept="2Rf3mk" id="7K2NL56H31Y" role="2OqNvi">
                     <node concept="1xMEDy" id="7K2NL56H31Z" role="1xVPHs">
                       <node concept="25Kdxt" id="7K2NL56H320" role="ri$Ld">
-                        <node concept="37vLTw" id="7K2NL56HrR5" role="25KhWn">
-                          <ref role="3cqZAo" node="7K2NL56HoRJ" resolve="chosenConcept" />
+                        <node concept="2OqwBi" id="2NwUY1vROKa" role="25KhWn">
+                          <node concept="37vLTw" id="7K2NL56HrR5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7K2NL56HoRJ" resolve="chosenConcept" />
+                          </node>
+                          <node concept="1rGIog" id="2NwUY1vRQfy" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

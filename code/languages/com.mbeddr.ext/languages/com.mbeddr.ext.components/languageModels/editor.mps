@@ -5,12 +5,13 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="-1" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="-1" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -5017,29 +5018,29 @@
         <ref role="2xQOue" node="2HR3cafXJXP" resolve="ComponentInstanceShape" />
         <node concept="2OqwBi" id="4IDnpfceYH_" role="1xbcaF">
           <node concept="2OqwBi" id="4IDnpfceTHc" role="2Oq$k0">
-            <node concept="1Pxb5l" id="4WN948eQHB4" role="2Oq$k0" />
             <node concept="2qgKlT" id="2IZ2bWs1a3J" role="2OqNvi">
               <ref role="37wK5l" to="eup9:7nJums3A_gz" resolve="getInputPorts" />
             </node>
+            <node concept="1Pxb5l" id="4WN948eQHB4" role="2Oq$k0" />
           </node>
           <node concept="1v1jN8" id="4IDnpfceZoN" role="2OqNvi" />
         </node>
         <node concept="2OqwBi" id="4IDnpfceZwo" role="1xbcaF">
           <node concept="2OqwBi" id="4IDnpfceZwq" role="2Oq$k0">
-            <node concept="1Pxb5l" id="4WN948eQJmW" role="2Oq$k0" />
             <node concept="2qgKlT" id="2IZ2bWs1aH6" role="2OqNvi">
               <ref role="37wK5l" to="eup9:7nJums3AVys" resolve="getOutputPorts" />
             </node>
+            <node concept="1Pxb5l" id="4WN948eQJmW" role="2Oq$k0" />
           </node>
           <node concept="1v1jN8" id="4IDnpfceZwu" role="2OqNvi" />
         </node>
         <node concept="3fqX7Q" id="3diMC1cUxxO" role="1xbcaF">
           <node concept="2OqwBi" id="3diMC1cUxxP" role="3fr31v">
             <node concept="2OqwBi" id="3diMC1cUxxQ" role="2Oq$k0">
-              <node concept="1Pxb5l" id="4WN948eTz0i" role="2Oq$k0" />
               <node concept="3TrEf2" id="3diMC1cUxxS" role="2OqNvi">
                 <ref role="3Tt5mk" to="v7ag:3TmmsQkDdTR" resolve="component" />
               </node>
+              <node concept="1Pxb5l" id="4WN948eTz0i" role="2Oq$k0" />
             </node>
             <node concept="1mIQ4w" id="3diMC1cUyIG" role="2OqNvi">
               <node concept="chp4Y" id="3diMC1cUyRl" role="cj9EA">

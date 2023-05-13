@@ -5,7 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -335,6 +335,9 @@
         <ref role="3qa414" to="spci:6Go9U2y2EPU" resolve="IInlineFormatCategory" />
       </node>
       <node concept="3clFbS" id="6Go9U2z7T3_" role="3clF47" />
+      <node concept="2AHcQZ" id="38BeNG_3LYX" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+      </node>
       <node concept="P$JXv" id="38BeNG_3LYU" role="lGtFl">
         <node concept="TZ5HI" id="38BeNG_3LYV" role="3nqlJM">
           <node concept="TZ5HA" id="38BeNG_3LYW" role="3HnX3l">
@@ -355,9 +358,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="2AHcQZ" id="38BeNG_3LYX" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
       </node>
     </node>
     <node concept="13i0hz" id="38BeNG_3AFp" role="13h7CS">

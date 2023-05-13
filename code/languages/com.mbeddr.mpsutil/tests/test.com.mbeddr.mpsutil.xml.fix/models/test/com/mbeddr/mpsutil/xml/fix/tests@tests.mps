@@ -11,20 +11,15 @@
     <use id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <engage id="771359e3-76e1-4788-8a8b-4c991a9c4893" name="com.mbeddr.mpsutil.xml.fix" />
   </languages>
   <imports>
-    <import index="ap4t" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="o6ex" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.generator(MPS.Workbench/)" />
-    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -118,7 +113,9 @@
       </concept>
     </language>
     <language id="a71fc24a-23c8-4871-87d3-e77b414b28d2" name="test.com.mbeddr.mpsutil.xml.fix.support">
-      <concept id="210803258685954773" name="test.com.mbeddr.mpsutil.xml.fix.support.structure.TestConcept" flags="ng" index="1__7qB" />
+      <concept id="210803258685954773" name="test.com.mbeddr.mpsutil.xml.fix.support.structure.TestConcept" flags="ng" index="1__7qB">
+        <property id="8943984687692225340" name="line" index="3msJ6j" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
@@ -358,7 +355,7 @@
             <node concept="3clFbH" id="bGV79BurB9" role="3cqZAp" />
             <node concept="3vlDli" id="bGV79BurNv" role="3cqZAp">
               <node concept="Xl_RD" id="bGV79BurTN" role="3tpDZB">
-                <property role="Xl_RC" value="&lt;root attr=\&quot;text&amp;amp;&amp;lt;&amp;gt;Value\&quot;&gt;content&amp;lt;&amp;amp;&amp;gt;Value&lt;/root&gt;" />
+                <property role="Xl_RC" value="&lt;root attr=\&quot;text&amp;quot;&amp;amp;&amp;lt;&gt;Value\&quot; attr2=\&quot;Hello &amp;quot;World!&amp;quot; &amp;lt; &gt; ' &amp;amp;\&quot;&gt;Hello &amp;quot;World!&amp;quot; &amp;lt; &amp;gt; &amp;apos; &amp;amp;&lt;/root&gt;" />
               </node>
               <node concept="37vLTw" id="bGV79Busqj" role="3tpDZA">
                 <ref role="3cqZAo" node="bGV79Buq4o" resolve="content" />
@@ -397,6 +394,8 @@
   <node concept="2XOHcx" id="bGV79BrqtZ">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </node>
-  <node concept="1__7qB" id="bGV79BudgQ" />
+  <node concept="1__7qB" id="bGV79BudgQ">
+    <property role="3msJ6j" value="Hello &quot;World!&quot; &lt; &gt; ' &amp;" />
+  </node>
 </model>
 

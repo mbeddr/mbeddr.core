@@ -14,6 +14,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -57,6 +61,7 @@
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
+      <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
       </concept>
@@ -67,6 +72,11 @@
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -104,7 +114,7 @@
                 <node concept="3clFbS" id="bGV79Buajc" role="2VODD2">
                   <node concept="3clFbF" id="bGV79BualR" role="3cqZAp">
                     <node concept="Xl_RD" id="bGV79BualQ" role="3clFbG">
-                      <property role="Xl_RC" value="text&amp;&lt;&gt;Value" />
+                      <property role="Xl_RC" value="text\&quot;&amp;&lt;&gt;Value" />
                     </node>
                   </node>
                 </node>
@@ -119,9 +129,34 @@
             <property role="2qtEX9" value="value" />
             <node concept="3zFVjK" id="bGV79BuaCi" role="3zH0cK">
               <node concept="3clFbS" id="bGV79BuaCj" role="2VODD2">
-                <node concept="3clFbF" id="bGV79BuaEY" role="3cqZAp">
-                  <node concept="Xl_RD" id="bGV79BuaEX" role="3clFbG">
-                    <property role="Xl_RC" value="content&lt;&amp;&gt;Value" />
+                <node concept="3clFbF" id="7KvqEYErpR2" role="3cqZAp">
+                  <node concept="2OqwBi" id="7KvqEYErq3s" role="3clFbG">
+                    <node concept="30H73N" id="7KvqEYErpR1" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="7KvqEYErqiq" role="2OqNvi">
+                      <ref role="3TsBF5" to="oy8u:7KvqEYErpGW" resolve="line" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2pNUuL" id="J6YaKFnVmc" role="2pNNFR">
+          <property role="2pNUuO" value="attr2" />
+          <node concept="2pMdtt" id="J6YaKFnVmd" role="2pMdts">
+            <property role="2pMdty" value="content" />
+            <node concept="17Uvod" id="J6YaKFnVta" role="lGtFl">
+              <property role="2qtEX9" value="text" />
+              <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+              <node concept="3zFVjK" id="J6YaKFnVtb" role="3zH0cK">
+                <node concept="3clFbS" id="J6YaKFnVtc" role="2VODD2">
+                  <node concept="3clFbF" id="J6YaKFnVxR" role="3cqZAp">
+                    <node concept="2OqwBi" id="J6YaKFnVIh" role="3clFbG">
+                      <node concept="30H73N" id="J6YaKFnVxQ" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="J6YaKFnVVA" role="2OqNvi">
+                        <ref role="3TsBF5" to="oy8u:7KvqEYErpGW" resolve="line" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

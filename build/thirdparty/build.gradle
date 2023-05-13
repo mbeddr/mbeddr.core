@@ -1,5 +1,5 @@
 plugins {
-    id 'de.undercouch.download' version '3.1.1' apply false
+    id 'de.undercouch.download' version '5.4.0' apply false
 }
 
 subprojects {

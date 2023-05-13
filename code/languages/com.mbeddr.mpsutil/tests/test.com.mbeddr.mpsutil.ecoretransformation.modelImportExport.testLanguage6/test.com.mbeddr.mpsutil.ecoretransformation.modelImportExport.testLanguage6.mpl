@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" uuid="36dc6740-50ca-47a8-b44f-4cf0c584b822" languageVersion="0" moduleVersion="0">
+<language namespace="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" uuid="36dc6740-50ca-47a8-b44f-4cf0c584b822" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/source_gen" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot contentPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
+      <classes generated="true" path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/classes_gen" />
     </facet>
   </facets>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6#3289023490928248221" uuid="71471173-c4f8-43c0-ba56-98cefc88ba51">
+    <generator alias="main" namespace="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6#3289023490928248221" uuid="71471173-c4f8-43c0-ba56-98cefc88ba51" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/generator/source_gen">
       <models>
-        <modelRoot contentPath="${module}/generator/template" type="default">
+        <modelRoot contentPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/generator/template" type="default">
           <sourceRoot location="." />
         </modelRoot>
       </models>
       <facets>
         <facet type="java">
-          <classes generated="true" path="${module}/generator/classes_gen" />
+          <classes generated="true" path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/generator/classes_gen" />
         </facet>
       </facets>
       <external-templates />
       <languageVersions>
-        <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
+        <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
         <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
@@ -56,8 +56,8 @@
   </generators>
   <sourcePath />
   <languageVersions>
-    <language slang="l:77948de3-6ef9-452d-b392-d01403e4086f:com.mbeddr.mpsutil.ecore" version="-1" />
-    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
+    <language slang="l:77948de3-6ef9-452d-b392-d01403e4086f:com.mbeddr.mpsutil.ecore" version="0" />
+    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />

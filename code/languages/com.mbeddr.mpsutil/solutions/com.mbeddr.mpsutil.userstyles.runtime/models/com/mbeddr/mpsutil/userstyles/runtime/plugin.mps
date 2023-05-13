@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c44f10b2-7049-41f7-aa57-911d875908f6(com.mbeddr.mpsutil.userstyles.runtime.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -944,6 +945,64 @@
               </node>
               <node concept="2OwXpG" id="1gJuyfgAjxo" role="2OqNvi">
                 <ref role="2Oxat5" to="hq8m:~ConfigurableEP.instanceClass" resolve="instanceClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1w6s1yDlpkY" role="3cqZAp">
+          <node concept="3cpWsn" id="1w6s1yDlpkZ" role="3cpWs9">
+            <property role="TrG5h" value="moduleCL" />
+            <node concept="3uibUv" id="1w6s1yDlpl0" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
+            </node>
+            <node concept="2OqwBi" id="1w6s1yDlq6C" role="33vP2m">
+              <node concept="2OqwBi" id="1w6s1yDlpJa" role="2Oq$k0">
+                <node concept="2WthIp" id="1w6s1yDlpn0" role="2Oq$k0" />
+                <node concept="liA8E" id="1w6s1yDlpLF" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1w6s1yDlqBr" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1w6s1yDlrY6" role="3cqZAp">
+          <node concept="3cpWsn" id="1w6s1yDlrY7" role="3cpWs9">
+            <property role="TrG5h" value="customPluginDesc" />
+            <node concept="3uibUv" id="1w6s1yDlrY8" role="1tU5fm">
+              <ref role="3uigEE" to="9ti4:~DefaultPluginDescriptor" resolve="DefaultPluginDescriptor" />
+            </node>
+            <node concept="2ShNRf" id="1w6s1yDlrYt" role="33vP2m">
+              <node concept="1pGfFk" id="1w6s1yDltYS" role="2ShVmc">
+                <ref role="37wK5l" to="9ti4:~DefaultPluginDescriptor.&lt;init&gt;(com.intellij.openapi.extensions.PluginId,java.lang.ClassLoader)" resolve="DefaultPluginDescriptor" />
+                <node concept="2YIFZM" id="1w6s1yDm12q" role="37wK5m">
+                  <ref role="37wK5l" to="9ti4:~PluginId.getId(java.lang.String)" resolve="getId" />
+                  <ref role="1Pybhc" to="9ti4:~PluginId" resolve="PluginId" />
+                  <node concept="Xl_RD" id="1w6s1yDm12u" role="37wK5m">
+                    <property role="Xl_RC" value="com.mbeddr.mpsutil.userstyles.runtime" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1w6s1yDluAo" role="37wK5m">
+                  <ref role="3cqZAo" node="1w6s1yDlpkZ" resolve="moduleCL" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1w6s1yDkusB" role="3cqZAp">
+          <node concept="2OqwBi" id="1w6s1yDkvlj" role="3clFbG">
+            <node concept="2OqwBi" id="1w6s1yDkuUC" role="2Oq$k0">
+              <node concept="2WthIp" id="1w6s1yDkus_" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="1w6s1yDkv8Q" role="2OqNvi">
+                <ref role="2WH_rO" node="1gJuyfg_Kjt" resolve="myConfigurableEP" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1w6s1yDkvGb" role="2OqNvi">
+              <ref role="37wK5l" to="hq8m:~ConfigurableEP.setPluginDescriptor(com.intellij.openapi.extensions.PluginDescriptor)" resolve="setPluginDescriptor" />
+              <node concept="37vLTw" id="1w6s1yDlxBA" role="37wK5m">
+                <ref role="3cqZAo" node="1w6s1yDlrY7" resolve="customPluginDesc" />
               </node>
             </node>
           </node>

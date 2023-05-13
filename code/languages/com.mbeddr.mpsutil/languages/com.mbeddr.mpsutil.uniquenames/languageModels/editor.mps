@@ -8,7 +8,7 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -61,7 +61,6 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -2576,9 +2575,6 @@
             <node concept="VPM3Z" id="hEU$P5i" role="3F10Kt">
               <property role="VOm3f" value="false" />
             </node>
-            <node concept="pj6Ft" id="4G1g3fHey1I" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
             <node concept="ljvvj" id="4G1g3fHey1K" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -2601,9 +2597,6 @@
           <node concept="3F2HdR" id="hd2D4Ww" role="3EZMnx">
             <ref role="1NtTu8" to="tpce:f_TKVDF" resolve="linkDeclaration" />
             <node concept="2EHx9g" id="1KBnK_bsqag" role="2czzBx" />
-            <node concept="pj6Ft" id="4G1g3fHey1N" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
             <node concept="ljvvj" id="4G1g3fHey1P" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -2751,9 +2744,6 @@
           <node concept="3F2HdR" id="hd2EUNy" role="3EZMnx">
             <ref role="1NtTu8" to="tpce:f_TKVDF" resolve="linkDeclaration" />
             <node concept="2EHx9g" id="1KBnK_bwIA2" role="2czzBx" />
-            <node concept="pj6Ft" id="4G1g3fHey1S" role="3F10Kt">
-              <property role="VOm3f" value="true" />
-            </node>
             <node concept="ljvvj" id="4G1g3fHey1U" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>

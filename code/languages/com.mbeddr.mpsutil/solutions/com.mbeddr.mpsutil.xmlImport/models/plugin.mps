@@ -5,7 +5,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,6 +35,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -389,6 +390,7 @@
   <node concept="sE7Ow" id="24KZuFtD0Kd">
     <property role="TrG5h" value="pasteAsXmlContent" />
     <property role="2uzpH1" value="Paste as XML Content" />
+    <property role="1WHSii" value="Paste XML element from clipboard" />
     <node concept="2S4$dB" id="24KZuFtDg$g" role="1NuT2Z">
       <property role="TrG5h" value="context" />
       <node concept="3Tm6S6" id="24KZuFtDg$h" role="1B3o_S" />
@@ -532,7 +534,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="4mEgncq4BBr" role="3cqZAp" />
             </node>
           </node>
         </node>
@@ -2175,7 +2176,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="T1v2oLoyAf" role="37wK5m">
-                          <property role="Xl_RC" value="json" />
+                          <property role="Xl_RC" value="xml" />
                         </node>
                         <node concept="2OqwBi" id="T1v2oLozkq" role="37wK5m">
                           <node concept="37vLTw" id="T1v2oLoySO" role="2Oq$k0">
@@ -2194,7 +2195,7 @@
             <node concept="liA8E" id="T1v2oLo$Aw" role="2OqNvi">
               <ref role="37wK5l" to="3fkn:~FileChooserDescriptor.withTitle(java.lang.String)" resolve="withTitle" />
               <node concept="Xl_RD" id="T1v2oLo$G6" role="37wK5m">
-                <property role="Xl_RC" value="json file" />
+                <property role="Xl_RC" value="xml file" />
               </node>
             </node>
           </node>
@@ -2250,6 +2251,20 @@
                 <property role="TrG5h" value="file" />
               </node>
               <node concept="3clFbS" id="7ZV2gfQAVXM" role="2LFqv$">
+                <node concept="3clFbF" id="10EaF0TuPHr" role="3cqZAp">
+                  <node concept="2OqwBi" id="10EaF0TuQ8p" role="3clFbG">
+                    <node concept="2GrUjf" id="10EaF0TuPHp" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="7ZV2gfQAVXI" resolve="file" />
+                    </node>
+                    <node concept="liA8E" id="10EaF0TuR42" role="2OqNvi">
+                      <ref role="37wK5l" to="jlff:~VirtualFile.refresh(boolean,boolean)" resolve="refresh" />
+                      <node concept="3clFbT" id="10EaF0TuRj4" role="37wK5m" />
+                      <node concept="3clFbT" id="10EaF0TuRQN" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="4mEgncq5YB3" role="3cqZAp">
                   <node concept="2OqwBi" id="4mEgncq5YWZ" role="3clFbG">
                     <node concept="2OqwBi" id="4mEgncq5YAX" role="2Oq$k0">

@@ -84,7 +84,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="css" />
     <property role="EcuMT" value="6347396756633822235" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="iuxj:5M4a$b5ikxF" resolve="XmlContent" />
     <node concept="1TJgyj" id="QRmqzIpg44" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="rulesets" />

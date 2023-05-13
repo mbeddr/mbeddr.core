@@ -4,7 +4,7 @@
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
@@ -1317,13 +1317,6 @@
       <node concept="l2Vlx" id="4UbnhBFlWBJ" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3m_MTzl4yjn">
-    <property role="3GE5qa" value="gen" />
-    <ref role="1XX52x" to="d0vh:3m_MTzl4w2W" resolve="DummyMangledNameFinalizer" />
-    <node concept="PMmxH" id="3m_MTzl4yjp" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="24kQdi" id="4swkQBc9Lnb">
     <property role="3GE5qa" value="module" />
     <ref role="1XX52x" to="d0vh:34XNuWnCCBZ" resolve="SkipContentSortingInGenModule" />
@@ -1333,6 +1326,13 @@
       </node>
       <node concept="2iRkQZ" id="4swkQBc9Lnh" role="2iSdaV" />
       <node concept="2SsqMj" id="4swkQBc9Lnd" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3m_MTzl4yjn">
+    <property role="3GE5qa" value="gen" />
+    <ref role="1XX52x" to="d0vh:3m_MTzl4w2W" resolve="DummyMangledNameFinalizer" />
+    <node concept="PMmxH" id="3m_MTzl4yjp" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

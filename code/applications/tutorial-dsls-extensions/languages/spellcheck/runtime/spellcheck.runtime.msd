@@ -5,10 +5,13 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
-  <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
-  </languageVersions>
+  <languageVersions />
   <dependencyVersions>
     <module reference="2924ac23-1628-443a-a799-ad25f0611b97(spellcheck.runtime)" version="0" />
   </dependencyVersions>

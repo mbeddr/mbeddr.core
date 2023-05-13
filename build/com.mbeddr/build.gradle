@@ -2,7 +2,7 @@
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
 ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
-ext.mpsHomeDir = rootProject.file(findNonEmptyProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
 
 def userHome = System.properties['user.home']
 def mpsPluginsDirPattern
@@ -116,19 +116,7 @@ private static void configureRepositories(Project project) {
                 }
             }
 
-            // TODO: remove this old Nexus repo when it's finally shut down
-            maven {
-                name 'itemisOldNexus'
-                url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots' : 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
-                if (project.hasProperty('nexusUsername')) {
-                    credentials {
-                        username project.nexusUsername
-                        password project.nexusPassword
-                    }
-                }
-            }
-
-             //mbeddr build is "master" also for maintenance branches
+            //mbeddr build is "master" also for maintenance branches
             //using the closure to delay evaluate from configuration to execution phase is important because the
             //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
             //if no closure is used the build script won't compile.
@@ -147,8 +135,13 @@ private static void configureRepositories(Project project) {
         }
     }
     project.repositories {
-        mavenLocal()
-        for (repoUrl in (project.dependencyRepositories + [project.snapshotRepository, project.releaseRepository]).unique()) {
+        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
+        if (!disableMavenLocal) {
+            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+            mavenLocal()
+        }
+        for (repoUrl in project.dependencyRepositories) {
             maven {
                 url repoUrl
                 if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
@@ -158,11 +151,6 @@ private static void configureRepositories(Project project) {
                     }
                 }
             }
-        }
-
-        // TODO: remove this old Nexus repo when it's finally shut down
-        maven {
-            url 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
         }
         mavenCentral()
     }

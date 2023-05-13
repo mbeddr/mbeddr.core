@@ -110,7 +110,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -129,6 +128,9 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -204,11 +206,8 @@
               <ref role="3cqZAo" node="5Hxjapwguln" resolve="result" />
             </node>
             <node concept="TSZUe" id="5Hxjapwgulu" role="2OqNvi">
-              <node concept="2OqwBi" id="1kEmdwEYdZe" role="25WWJ7">
-                <node concept="35c_gC" id="1kEmdwEYdgv" role="2Oq$k0">
-                  <ref role="35c_gD" to="51wr:4o9sgv8QoKi" resolve="Executable" />
-                </node>
-                <node concept="FGMqu" id="1kEmdwEYepU" role="2OqNvi" />
+              <node concept="3B5_sB" id="1kEmdwEYdZe" role="25WWJ7">
+                <ref role="3B5MYn" to="51wr:4o9sgv8QoKi" resolve="Executable" />
               </node>
             </node>
           </node>

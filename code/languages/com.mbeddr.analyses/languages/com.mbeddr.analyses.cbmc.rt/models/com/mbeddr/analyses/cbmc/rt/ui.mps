@@ -6,7 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
   </languages>
   <imports>
@@ -38,6 +38,7 @@
     <import index="tprt" ref="r:00000000-0000-4000-0000-011c895904a5(jetbrains.mps.ide.common)" />
     <import index="vbi4" ref="r:101c6aaa-6376-4550-a0fa-eeca066047cc(com.mbeddr.analyses.utils.results_ui)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="v4mk" ref="4c16cb42-7fa3-47c7-89c7-1c479c287588/java:org.jdesktop.swingx(com.mbeddr.analyses.utils/)" implicit="true" />
   </imports>
   <registry>
@@ -12149,23 +12150,17 @@
       <node concept="3uibUv" id="4c9lfPlFkVN" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Font" resolve="Font" />
       </node>
-      <node concept="2ShNRf" id="4c9lfPlFkVO" role="33vP2m">
-        <node concept="1pGfFk" id="4c9lfPlFkVP" role="2ShVmc">
-          <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
-          <node concept="Xl_RD" id="4c9lfPlFkVQ" role="37wK5m">
-            <property role="Xl_RC" value="Arial" />
-          </node>
-          <node concept="10M0yZ" id="4c9lfPlFkVR" role="37wK5m">
-            <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
-            <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
-          </node>
-          <node concept="3cmrfG" id="4c9lfPlFkVS" role="37wK5m">
-            <property role="3cmrfH" value="12" />
-          </node>
-        </node>
-      </node>
       <node concept="NWlO9" id="4c9lfPlFkVT" role="lGtFl">
         <property role="NWlVz" value="Font used in different texts." />
+      </node>
+      <node concept="2OqwBi" id="5FbNLoBKcm5" role="33vP2m">
+        <node concept="2YIFZM" id="5FbNLoBKaHr" role="2Oq$k0">
+          <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+          <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+        </node>
+        <node concept="liA8E" id="5FbNLoBKjWe" role="2OqNvi">
+          <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4c9lfPlDAmK" role="jymVt" />
@@ -15263,7 +15258,20 @@
             <ref role="3cqZAo" node="1wweq9pREYj" resolve="model" />
           </node>
         </node>
-        <node concept="3clFbH" id="1N1oeOqJf5i" role="3cqZAp" />
+        <node concept="3clFbF" id="5FbNLoBRgJe" role="3cqZAp">
+          <node concept="1rXfSq" id="5FbNLoBRgJc" role="3clFbG">
+            <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+            <node concept="2OqwBi" id="5FbNLoBRhQa" role="37wK5m">
+              <node concept="2YIFZM" id="5FbNLoBRhzp" role="2Oq$k0">
+                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+              </node>
+              <node concept="liA8E" id="5FbNLoBRi9H" role="2OqNvi">
+                <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1N1oeOqJc_4" role="3cqZAp">
           <node concept="3cpWsn" id="1N1oeOqJc_5" role="3cpWs9">
             <property role="TrG5h" value="colModel" />
@@ -15819,6 +15827,20 @@
           <ref role="37wK5l" to="dxuu:~JTable.&lt;init&gt;(javax.swing.table.TableModel)" resolve="JTable" />
           <node concept="37vLTw" id="4LQJkpcJsCl" role="37wK5m">
             <ref role="3cqZAo" node="4LQJkpcJov$" resolve="model" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5FbNLoBR_ee" role="3cqZAp">
+          <node concept="1rXfSq" id="5FbNLoBR_ef" role="3clFbG">
+            <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+            <node concept="2OqwBi" id="5FbNLoBR_eg" role="37wK5m">
+              <node concept="2YIFZM" id="5FbNLoBR_eh" role="2Oq$k0">
+                <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="5FbNLoBR_ei" role="2OqNvi">
+                <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="4LQJkpcK_5v" role="3cqZAp">

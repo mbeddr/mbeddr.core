@@ -86,6 +86,7 @@
     </language>
   </registry>
   <node concept="37WguZ" id="KILMQGUQGU">
+    <property role="TrG5h" value="SPreferencesFactory" />
     <node concept="37WvkG" id="KILMQGUQGV" role="37WGs$">
       <ref role="37XkoT" to="lko4:KILMQGSUbW" resolve="SPreferencesContext" />
       <node concept="37Y9Zx" id="KILMQGUTLR" role="37ZfLb">
