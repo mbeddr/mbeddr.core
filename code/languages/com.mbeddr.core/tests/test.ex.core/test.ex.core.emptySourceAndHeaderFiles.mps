@@ -166,10 +166,10 @@
       </node>
     </node>
     <node concept="3GEVxB" id="6rD2$2r_kOZ" role="2OODSX">
-      <ref role="3GEb4d" node="6rD2$2qR_7c" resolve="NoSourceFileContent" />
+      <ref role="3GEb4d" node="6rD2$2qR_7c" />
     </node>
     <node concept="3GEVxB" id="6rD2$2r_kV1" role="2OODSX">
-      <ref role="3GEb4d" node="6rD2$2r_kSY" resolve="NoHeaderFileContent" />
+      <ref role="3GEb4d" node="6rD2$2r_kSY" />
     </node>
   </node>
   <node concept="2v9HqL" id="6rD2$2r_i0M">
@@ -180,30 +180,30 @@
     <node concept="2eOfOl" id="6rD2$2r_i0O" role="2ePNbc">
       <property role="TrG5h" value="NoEmptySourceOrHeaderFiles" />
       <node concept="2v9HqM" id="6rD2$2r_i0T" role="2eOfOg">
-        <ref role="2v9HqP" node="6rD2$2r_hYw" resolve="Main" />
+        <ref role="2v9HqP" node="6rD2$2r_hYw" />
       </node>
       <node concept="1l1$C7" id="6rD2$2r_i0U" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
       <node concept="2v9HqM" id="6rD2$2r_kWq" role="2eOfOg">
-        <ref role="2v9HqP" node="6rD2$2r_kSY" resolve="NoHeaderFileContent" />
+        <ref role="2v9HqP" node="6rD2$2r_kSY" />
       </node>
       <node concept="2v9HqM" id="6rD2$2r_kWr" role="2eOfOg">
-        <ref role="2v9HqP" node="6rD2$2qR_7c" resolve="NoSourceFileContent" />
+        <ref role="2v9HqP" node="6rD2$2qR_7c" />
       </node>
       <node concept="2v9HqM" id="6rD2$2ss36K" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
       </node>
       <node concept="2v9HqM" id="6rD2$2ss36L" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
       </node>
       <node concept="2v9HqM" id="6rD2$2tPl4a" role="2eOfOg">
-        <ref role="2v9HqP" node="6rD2$2tPdK3" resolve="ExternalAPI" />
+        <ref role="2v9HqP" node="6rD2$2tPdK3" />
       </node>
     </node>
     <node concept="MH4UO" id="6rD2$2r_i0Q" role="2Q9xDr" />
     <node concept="2xfidK" id="6rD2$2r_i0R" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
     </node>
   </node>
   <node concept="N3F5e" id="6rD2$2qR_7c">
@@ -225,7 +225,7 @@
       <property role="TrG5h" value="AN_ALIAS" />
       <property role="2OOxQR" value="true" />
       <node concept="pF0ck" id="6rD2$2ss4wf" role="2DQcEM">
-        <ref role="pF0ci" to="3y0n:2y8cGnjVxx$" resolve="fileno" />
+        <ref role="pF0ci" to="3y0n:2y8cGnjVxx$" />
       </node>
     </node>
     <node concept="BTY7A" id="6rD2$2ss30G" role="N3F5h">
@@ -236,7 +236,7 @@
         <node concept="26Vqpk" id="6rD2$2ss31m" role="2C2TGm" />
       </node>
       <node concept="3O_q_g" id="6rD2$2ss32h" role="2_0FLF">
-        <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
+        <ref role="3O_q_h" to="3y0n:137zkozycJV" />
         <node concept="PhEJO" id="6rD2$2ss3Qf" role="3O_q_j">
           <property role="PhEJT" value="fancy" />
         </node>
@@ -256,7 +256,7 @@
     </node>
     <node concept="3GEVxB" id="6rD2$2ss31N" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
     </node>
   </node>
   <node concept="N3F5e" id="6rD2$2r_kSY">
@@ -283,7 +283,7 @@
         <node concept="3XISUE" id="6rD2$2tUri9" role="3XIRFZ" />
       </node>
       <node concept="oneTI" id="6rD2$2tUkmq" role="lGtFl">
-        <ref role="on8v6" node="6rD2$2tPeJr" resolve="foo" />
+        <ref role="on8v6" node="6rD2$2tPeJr" />
       </node>
       <node concept="19Rifw" id="6rD2$2tVjqf" role="2C2TGm" />
     </node>
@@ -299,7 +299,7 @@
       <node concept="19Rifw" id="6rD2$2tPk2A" role="2C2TGm" />
     </node>
     <node concept="3GEVxB" id="6rD2$2tPjdx" role="2OODSX">
-      <ref role="3GEb4d" node="6rD2$2tPdK3" resolve="ExternalAPI" />
+      <ref role="3GEb4d" node="6rD2$2tPdK3" />
     </node>
   </node>
   <node concept="rcWEw" id="6rD2$2tPdK3">

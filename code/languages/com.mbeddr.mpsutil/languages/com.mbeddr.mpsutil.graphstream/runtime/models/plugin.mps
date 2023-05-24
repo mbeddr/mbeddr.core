@@ -41,6 +41,7 @@
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
+    <import index="lafm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.toolWindow(MPS.IDEA/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
     <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" implicit="true" />
@@ -2362,7 +2363,7 @@
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="2OqwBi" id="64_1OWe$$DW" role="37wK5m">
                     <node concept="3VsKOn" id="64_1OWe$i2L" role="2Oq$k0">
-                      <ref role="3VsUkX" to="tdww:~ToolWindowsPane" resolve="ToolWindowsPane" />
+                      <ref role="3VsUkX" to="lafm:~ToolWindowPane" resolve="ToolWindowPane" />
                     </node>
                     <node concept="liA8E" id="64_1OWe$_hD" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />

@@ -50,7 +50,7 @@
         <child id="2755237150521975437" name="value" index="aVJcq" />
       </concept>
       <concept id="244868996532550359" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithValueFromFile" flags="ng" index="hGsBp">
-        <property id="244868996532550362" name="propertyName" index="hGsBk" />
+        <property id="244868996532550362" name="unused" index="hGsBk" />
         <child id="244868996532550360" name="fileName" index="hGsBm" />
       </concept>
       <concept id="244868996532454372" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithDate" flags="ng" index="hHN3E">

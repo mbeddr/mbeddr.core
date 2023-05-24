@@ -39,7 +39,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -102,7 +102,7 @@
   <node concept="309jyn" id="5S3xvtaxo6">
     <property role="TrG5h" value="Flags" />
     <node concept="3qy1PH" id="3GPxRNRaMux" role="3qy1PE">
-      <ref role="30ajXG" to="kr6t:75iUP$Mbqly" resolve="FlagsTest" />
+      <ref role="30ajXG" to="kr6t:75iUP$Mbqly" />
     </node>
     <node concept="3sgmnF" id="4WY_RKGyjI6" role="1zJi$$" />
     <node concept="1vsUH6" id="4WY_RKGyjI9" role="1zJi$$">
@@ -134,7 +134,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lSe" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lSf" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lSg" role="3sdZbB">
-          <ref role="3sa5fj" to="kr6t:75iUP$MbqnE" resolve="1stMaskDeclaration" />
+          <ref role="3sa5fj" to="kr6t:75iUP$MbqnE" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lSh" role="3savwP">
@@ -146,15 +146,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lSk" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMvr" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnJ" resolve="1stHasMask" />
+            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnJ" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyjIe" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyjI9" resolve="inTestFlags" />
+          <ref role="1vtf2j" node="4WY_RKGyjI9" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyqlT" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyqlU" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyjIs" resolve="inTestFlags" />
+            <ref role="1vv99g" node="4WY_RKGyjIs" />
           </node>
         </node>
       </node>
@@ -165,7 +165,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lTc" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lTd" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lTe" role="3sdZbB">
-          <ref role="3sa5fj" to="kr6t:75iUP$MbqnE" resolve="1stMaskDeclaration" />
+          <ref role="3sa5fj" to="kr6t:75iUP$MbqnE" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lTf" role="3savwP">
@@ -177,15 +177,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lTi" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMvp" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnJ" resolve="1stHasMask" />
+            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnJ" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyjIf" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyjI9" resolve="inTestFlags" />
+          <ref role="1vtf2j" node="4WY_RKGyjI9" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyqlW" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyqlX" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyjIs" resolve="inTestFlags" />
+            <ref role="1vv99g" node="4WY_RKGyjIs" />
           </node>
         </node>
       </node>
@@ -196,7 +196,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lZo" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lZp" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lZq" role="3sdZbB">
-          <ref role="3sa5fj" to="kr6t:75iUP$Mbqo3" resolve="2ndSetMask" />
+          <ref role="3sa5fj" to="kr6t:75iUP$Mbqo3" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lZr" role="3savwP">
@@ -207,17 +207,17 @@
       <node concept="3F5Y_J" id="7Jr7T0w2lZt" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKGyqlY" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyqlZ" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyjIs" resolve="inTestFlags" />
+            <ref role="1vv99g" node="4WY_RKGyjIs" />
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2lZu" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMvn" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="kr6t:75iUP$Mbqo8" resolve="2ndHasMask" />
+            <ref role="3cQ7K8" to="kr6t:75iUP$Mbqo8" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyjIg" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyjI9" resolve="inTestFlags" />
+          <ref role="1vtf2j" node="4WY_RKGyjI9" />
         </node>
       </node>
     </node>
@@ -227,7 +227,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m0a" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m0b" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m0c" role="3sdZbB">
-          <ref role="3sa5fj" to="kr6t:75iUP$MbqnO" resolve="1stClearMask" />
+          <ref role="3sa5fj" to="kr6t:75iUP$MbqnO" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m0d" role="3savwP">
@@ -238,17 +238,17 @@
       <node concept="3F5Y_J" id="7Jr7T0w2m0f" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKGyqm0" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyqm1" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyjIs" resolve="inTestFlags" />
+            <ref role="1vv99g" node="4WY_RKGyjIs" />
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2m0g" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMvt" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnT" resolve="1stNotHasMask" />
+            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnT" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyjIh" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyjI9" resolve="inTestFlags" />
+          <ref role="1vtf2j" node="4WY_RKGyjI9" />
         </node>
       </node>
     </node>
@@ -258,7 +258,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m8n" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m8o" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m8p" role="3sdZbB">
-          <ref role="3sa5fj" to="kr6t:75iUP$Mbqo3" resolve="2ndSetMask" />
+          <ref role="3sa5fj" to="kr6t:75iUP$Mbqo3" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m8q" role="3savwP">
@@ -269,17 +269,17 @@
       <node concept="3F5Y_J" id="7Jr7T0w2m8s" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKGyqm2" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyqm3" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyjIs" resolve="inTestFlags" />
+            <ref role="1vv99g" node="4WY_RKGyjIs" />
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2m8t" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMvl" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="kr6t:75iUP$Mbqo8" resolve="2ndHasMask" />
+            <ref role="3cQ7K8" to="kr6t:75iUP$Mbqo8" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyjIi" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyjI9" resolve="inTestFlags" />
+          <ref role="1vtf2j" node="4WY_RKGyjI9" />
         </node>
       </node>
     </node>
@@ -289,7 +289,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mhS" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mhT" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mhU" role="3sdZbB">
-          <ref role="3sa5fj" to="kr6t:75iUP$MbqnO" resolve="1stClearMask" />
+          <ref role="3sa5fj" to="kr6t:75iUP$MbqnO" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mhV" role="3savwP">
@@ -300,17 +300,17 @@
       <node concept="3F5Y_J" id="7Jr7T0w2mhX" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKGyqm4" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyqm5" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyjIs" resolve="inTestFlags" />
+            <ref role="1vv99g" node="4WY_RKGyjIs" />
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2mhY" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMvv" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnT" resolve="1stNotHasMask" />
+            <ref role="3cQ7K8" to="kr6t:75iUP$MbqnT" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyjIj" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyjI9" resolve="inTestFlags" />
+          <ref role="1vtf2j" node="4WY_RKGyjI9" />
         </node>
       </node>
     </node>

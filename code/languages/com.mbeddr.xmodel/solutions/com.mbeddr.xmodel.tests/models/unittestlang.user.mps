@@ -103,21 +103,21 @@
       <property role="3HjyOP" value="true" />
       <property role="TrG5h" value="main" />
       <node concept="3cM6IN" id="3qyGNHcV6KK" role="lIfQt">
-        <ref role="3cM6IK" to="7hiw:3qyGNHcV6I_" resolve="myTest" />
+        <ref role="3cM6IK" to="7hiw:3qyGNHcV6I_" />
       </node>
     </node>
     <node concept="3GEVxB" id="3qyGNHcV6KG" role="2OODSX">
-      <ref role="3GEb4d" to="7hiw:3qyGNHcV6Iu" resolve="testLib" />
+      <ref role="3GEb4d" to="7hiw:3qyGNHcV6Iu" />
     </node>
   </node>
   <node concept="2v9HqL" id="2vBUIEiz2MM">
     <node concept="2eOfOl" id="2vBUIEiz2U_" role="2ePNbc">
       <property role="TrG5h" value="myExecutable" />
       <node concept="2v9HqM" id="3juJO4ZQjcz" role="2eOfOg">
-        <ref role="2v9HqP" to="7hiw:3qyGNHcV6Iu" resolve="testLib" />
+        <ref role="2v9HqP" to="7hiw:3qyGNHcV6Iu" />
       </node>
       <node concept="2v9HqM" id="3juJO4ZQjcF" role="2eOfOg">
-        <ref role="2v9HqP" node="3qyGNHcV6K_" resolve="testrunner" />
+        <ref role="2v9HqP" node="3qyGNHcV6K_" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxy42F" role="1kZvWc">
         <property role="TrG5h" value="any" />

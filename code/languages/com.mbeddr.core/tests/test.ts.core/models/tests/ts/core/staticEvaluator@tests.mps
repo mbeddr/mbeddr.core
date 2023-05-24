@@ -2,7 +2,7 @@
 <model ref="r:dd92a1d2-39db-497b-a85a-64d6072e01d6(tests.ts.core.staticEvaluator@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
@@ -20,6 +20,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -135,6 +136,7 @@
   </registry>
   <node concept="1lH9Xt" id="7OBQOW$7Zis">
     <property role="TrG5h" value="EnumStaticEvaluator" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7OBQOW$9Qrs" role="1SL9yI">
       <property role="TrG5h" value="checks" />
       <node concept="3cqZAl" id="7OBQOW$9Qrt" role="3clF45" />
@@ -334,7 +336,7 @@
           <node concept="3XIRFW" id="33$Pd7DV$YN" role="3XIRFX">
             <node concept="1_9egQ" id="33$Pd7DVTYp" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DVTYn" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Qy" resolve="EN1_FIRST" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Qy" />
                 <node concept="3xLA65" id="33$Pd7DVUty" role="lGtFl">
                   <property role="TrG5h" value="en1_first" />
                 </node>
@@ -342,7 +344,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DVTYI" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DVTZ6" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Rd" resolve="EN1_SECOND" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Rd" />
                 <node concept="3xLA65" id="33$Pd7DW0hD" role="lGtFl">
                   <property role="TrG5h" value="en1_second" />
                 </node>
@@ -350,7 +352,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DW0on" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW0ol" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$RU" resolve="EN1_THIRD" />
+                <ref role="1AkAhZ" node="33$Pd7DV$RU" />
                 <node concept="3xLA65" id="33$Pd7DW0xM" role="lGtFl">
                   <property role="TrG5h" value="en1_third" />
                 </node>
@@ -359,7 +361,7 @@
             <node concept="3XISUE" id="33$Pd7DW0oX" role="3XIRFZ" />
             <node concept="1_9egQ" id="33$Pd7DW1gx" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW1gy" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Tb" resolve="EN2_FIRST" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Tb" />
                 <node concept="3xLA65" id="33$Pd7DW1gz" role="lGtFl">
                   <property role="TrG5h" value="en2_first" />
                 </node>
@@ -367,7 +369,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DW1g$" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW1g_" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Tc" resolve="EN2_SECOND" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Tc" />
                 <node concept="3xLA65" id="33$Pd7DW1gA" role="lGtFl">
                   <property role="TrG5h" value="en2_second" />
                 </node>
@@ -375,7 +377,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DW1gB" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW1gC" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Td" resolve="EN2_THIRD" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Td" />
                 <node concept="3xLA65" id="33$Pd7DW1gD" role="lGtFl">
                   <property role="TrG5h" value="en2_third" />
                 </node>

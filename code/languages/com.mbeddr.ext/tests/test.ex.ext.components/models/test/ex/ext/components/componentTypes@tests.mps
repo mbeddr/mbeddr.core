@@ -234,13 +234,13 @@
       <node concept="3i3YCL" id="7XQHhkHf$su" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="7XQHhkHda6b" resolve="wiring" />
+        <ref role="35zhcq" node="7XQHhkHda6b" />
       </node>
     </node>
     <node concept="2eOfOl" id="7XQHhkHda5D" role="2ePNbc">
       <property role="TrG5h" value="ComponentTypes" />
       <node concept="2v9HqM" id="7XQHhkHda5E" role="2eOfOg">
-        <ref role="2v9HqP" node="7XQHhkHda4I" resolve="ComponentTypes" />
+        <ref role="2v9HqP" node="7XQHhkHda4I" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApa" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -255,7 +255,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcH" role="lIfQt">
-        <ref role="3cM6IK" node="7XQHhkHfxHu" resolve="testComponentTypes" />
+        <ref role="3cM6IK" node="7XQHhkHfxHu" />
       </node>
     </node>
     <node concept="2NXPZ9" id="7XQHhkHfxHs" role="N3F5h">
@@ -270,7 +270,7 @@
       </node>
       <node concept="3XIRFW" id="7XQHhkHfxHw" role="c0Qz3">
         <node concept="3t9XKO" id="7XQHhkHfxHx" role="3XIRFZ">
-          <ref role="3t9XKR" node="7XQHhkHda6b" resolve="wiring" />
+          <ref role="3t9XKR" node="7XQHhkHda6b" />
         </node>
         <node concept="c0Tn9" id="7XQHhkHfxHz" role="3XIRFZ">
           <node concept="3TlM44" id="7XQHhkHfxHC" role="c0Tn6">
@@ -278,9 +278,9 @@
               <property role="2hmy$m" value="42" />
             </node>
             <node concept="1AmG6P" id="7XQHhkHfxH_" role="3TlMhI">
-              <ref role="1XX6Gs" node="7XQHhkHf7fC" resolve="usingType" />
-              <ref role="1XX6Gv" node="7XQHhkHda6b" resolve="wiring" />
-              <ref role="2YB7zn" node="7XQHhkHda60" resolve="getValueOfCallable" />
+              <ref role="1XX6Gs" node="7XQHhkHf7fC" />
+              <ref role="1XX6Gv" node="7XQHhkHda6b" />
+              <ref role="2YB7zn" node="7XQHhkHda60" />
             </node>
           </node>
         </node>
@@ -290,7 +290,7 @@
               <property role="2hmy$m" value="42" />
             </node>
             <node concept="3O_q_g" id="2dxRIu5GvxI" role="3TlMhI">
-              <ref role="3O_q_h" node="2dxRIu5Guq5" resolve="functionUsingComponent" />
+              <ref role="3O_q_h" node="2dxRIu5Guq5" />
             </node>
           </node>
         </node>
@@ -316,7 +316,7 @@
       <node concept="g2oj1" id="2dxRIu5Gujq" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="g2oj0" node="7XQHhkHda5H" resolve="ComponentUsedAsType" />
+        <ref role="g2oj0" node="7XQHhkHda5H" />
       </node>
     </node>
     <node concept="2NXPZ9" id="2dxRIu5GugI" role="N3F5h">
@@ -332,10 +332,10 @@
         <node concept="2BFjQ_" id="2dxRIu5GvrR" role="3XIRFZ">
           <node concept="1igxio" id="2dxRIu5GutK" role="2BFjQA">
             <node concept="1igacp" id="2dxRIu5Guu5" role="1igach">
-              <ref role="1ig9eH" node="7XQHhkHda5L" resolve="callable" />
+              <ref role="1ig9eH" node="7XQHhkHda5L" />
             </node>
             <node concept="1S7827" id="2dxRIu5Gut_" role="1_9fRO">
-              <ref role="1S7826" node="2dxRIu5Gujs" resolve="componentUsedAsType" />
+              <ref role="1S7826" node="2dxRIu5Gujs" />
             </node>
           </node>
         </node>
@@ -348,15 +348,15 @@
       <property role="TrG5h" value="wiring" />
       <node concept="2EWCuV" id="7XQHhkHf7fA" role="5JtDH">
         <property role="TrG5h" value="usedAsType" />
-        <ref role="2EWCuU" node="7XQHhkHda5H" resolve="ComponentUsedAsType" />
+        <ref role="2EWCuU" node="7XQHhkHda5H" />
       </node>
       <node concept="2EWCuV" id="7XQHhkHf7fC" role="5JtDH">
         <property role="TrG5h" value="usingType" />
-        <ref role="2EWCuU" node="7XQHhkHda5T" resolve="ComponentUsingType" />
+        <ref role="2EWCuU" node="7XQHhkHda5T" />
         <node concept="3R_36c" id="7XQHhkHf7fD" role="3R_39I">
-          <ref role="3R_36f" node="7XQHhkHda5U" resolve="other" />
+          <ref role="3R_36f" node="7XQHhkHda5U" />
           <node concept="1iiGrY" id="7XQHhkHfxHq" role="3R_36e">
-            <ref role="1iiGrT" node="7XQHhkHf7fA" resolve="usedAsType" />
+            <ref role="1iiGrT" node="7XQHhkHf7fA" />
           </node>
         </node>
       </node>
@@ -373,7 +373,7 @@
         <node concept="g2oj1" id="7XQHhkHda5V" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="g2oj0" node="7XQHhkHda5H" resolve="ComponentUsedAsType" />
+          <ref role="g2oj0" node="7XQHhkHda5H" />
         </node>
       </node>
       <node concept="3Khz0B" id="2dxRIu5GuuD" role="2RW2fA" />
@@ -387,10 +387,10 @@
               </node>
               <node concept="1igxio" id="7XQHhkHeJYD" role="3TlMhI">
                 <node concept="EbZIE" id="7XQHhkHeJYA" role="1_9fRO">
-                  <ref role="EbZID" node="7XQHhkHda5U" resolve="other" />
+                  <ref role="EbZID" node="7XQHhkHda5U" />
                 </node>
                 <node concept="1ijC0e" id="7XQHhkHeJYG" role="1igach">
-                  <ref role="1ijC09" node="7XQHhkHdxnR" resolve="value" />
+                  <ref role="1ijC09" node="7XQHhkHdxnR" />
                 </node>
               </node>
             </node>
@@ -398,10 +398,10 @@
           <node concept="2BFjQ_" id="7XQHhkHdRHg" role="3XIRFZ">
             <node concept="1igxio" id="7XQHhkHe3kn" role="2BFjQA">
               <node concept="EbZIE" id="7XQHhkHe3kk" role="1_9fRO">
-                <ref role="EbZID" node="7XQHhkHda5U" resolve="other" />
+                <ref role="EbZID" node="7XQHhkHda5U" />
               </node>
               <node concept="1igacp" id="7XQHhkHe3kq" role="1igach">
-                <ref role="1ig9eH" node="7XQHhkHda5L" resolve="callable" />
+                <ref role="1ig9eH" node="7XQHhkHda5L" />
               </node>
             </node>
           </node>
@@ -426,7 +426,7 @@
             <node concept="3pqW6w" id="2dxRIu5Gvj5" role="1_9egR">
               <node concept="bUT2K" id="2dxRIu5Gvjk" role="3TlMhJ" />
               <node concept="1S7827" id="2dxRIu5GviT" role="3TlMhI">
-                <ref role="1S7826" node="2dxRIu5Gujs" resolve="componentUsedAsType" />
+                <ref role="1S7826" node="2dxRIu5Gujs" />
               </node>
             </node>
           </node>
@@ -451,7 +451,7 @@
         <node concept="3XIRFW" id="7XQHhkHda5M" role="2EWMhI">
           <node concept="2BFjQ_" id="7XQHhkHda5O" role="3XIRFZ">
             <node concept="EbZIE" id="7XQHhkHdxnT" role="2BFjQA">
-              <ref role="EbZID" node="7XQHhkHdxnR" resolve="value" />
+              <ref role="EbZID" node="7XQHhkHdxnR" />
             </node>
           </node>
         </node>

@@ -61,7 +61,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -394,7 +394,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKGyNfS" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtau7_" role="3qy1PE">
-      <ref role="30ajXG" to="jqak:Dp4TemBT5K" resolve="StructTests" />
+      <ref role="30ajXG" to="jqak:Dp4TemBT5K" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lSI" role="1zJi$$">
       <property role="TrG5h" value="stepOverNamedInit" />
@@ -402,7 +402,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lSK" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lSL" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lSM" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:CJowcz$X2p" resolve="namedInit" />
+          <ref role="3sa5fj" to="jqak:CJowcz$X2p" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lSN" role="3savwP">
@@ -414,16 +414,16 @@
         <node concept="30a7bf" id="7Jr7T0w2lSQ" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AIA" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:CJowcz$X2q" resolve="afterNamedInit" />
+            <ref role="3cQ7K8" to="jqak:CJowcz$X2q" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyNg6" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyNg7" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyNfO" resolve="inTestNamedInit" />
+            <ref role="1vv99g" node="4WY_RKGyNfO" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyNg9" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyNg0" resolve="inTestNamedInit" />
+          <ref role="1vtf2j" node="4WY_RKGyNg0" />
         </node>
       </node>
     </node>
@@ -433,7 +433,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lWE" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lWF" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lWG" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:CJowcz$X0H" resolve="firstStructAssignment" />
+          <ref role="3sa5fj" to="jqak:CJowcz$X0H" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lWH" role="3savwP">
@@ -445,16 +445,16 @@
         <node concept="30a7bf" id="7Jr7T0w2lWK" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AIE" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:CJowcz$X0Q" resolve="secondStructAssignment" />
+            <ref role="3cQ7K8" to="jqak:CJowcz$X0Q" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyNga" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyNgd" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyNfQ" resolve="inStructAccess" />
+            <ref role="1vv99g" node="4WY_RKGyNfQ" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyNgc" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyNfY" resolve="inStructAccess" />
+          <ref role="1vtf2j" node="4WY_RKGyNfY" />
         </node>
       </node>
     </node>
@@ -464,7 +464,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m00" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m01" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m02" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:CJowcz$X2p" resolve="namedInit" />
+          <ref role="3sa5fj" to="jqak:CJowcz$X2p" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m03" role="3savwP">
@@ -476,16 +476,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m06" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AIK" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:CJowcz$X2q" resolve="afterNamedInit" />
+            <ref role="3cQ7K8" to="jqak:CJowcz$X2q" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyNge" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyNgf" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyNfO" resolve="inTestNamedInit" />
+            <ref role="1vv99g" node="4WY_RKGyNfO" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyNgg" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyNg0" resolve="inTestNamedInit" />
+          <ref role="1vtf2j" node="4WY_RKGyNg0" />
         </node>
       </node>
     </node>
@@ -495,23 +495,23 @@
       <node concept="3clFbS" id="5Ke7sTrabjW" role="3clF47" />
       <node concept="3sdZbQ" id="5Ke7sTracBQ" role="3scror">
         <node concept="3sdZbA" id="5Ke7sTracBU" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:5Ke7sTracpm" resolve="pointerOnStructs" />
+          <ref role="3sa5fj" to="jqak:5Ke7sTracpm" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5Ke7sTracBY" role="3F5AM1">
         <node concept="30a7bf" id="5Ke7sTracCr" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AII" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:5Ke7sTracpm" resolve="pointerOnStructs" />
+            <ref role="3cQ7K8" to="jqak:5Ke7sTracpm" />
           </node>
         </node>
         <node concept="1l46Ie" id="5Ke7sTracCt" role="3F5Y$9">
           <node concept="1vv375" id="5rV3dCtJlRq" role="1vv36M">
-            <ref role="1vv99g" node="5Ke7sTradIC" resolve="inPointerOnStruct" />
+            <ref role="1vv99g" node="5Ke7sTradIC" />
           </node>
         </node>
         <node concept="1vtf2i" id="5Ke7sTracCv" role="3F5Y$9">
-          <ref role="1vtf2j" node="5rV3dCtJO9O" resolve="inPointerOnStruct" />
+          <ref role="1vtf2j" node="5rV3dCtJO9O" />
         </node>
       </node>
     </node>
@@ -521,7 +521,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m0V" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m0W" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m0X" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:CJowcz$Xn$" resolve="bitDeclaration" />
+          <ref role="3sa5fj" to="jqak:CJowcz$Xn$" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m0Y" role="3savwP" />
@@ -529,16 +529,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m10" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AIM" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:CJowcz$Xn_" resolve="assignmentAfterBitDeclaration" />
+            <ref role="3cQ7K8" to="jqak:CJowcz$Xn_" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyNgy" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyNg_" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyNgm" resolve="inTestBitFields" />
+            <ref role="1vv99g" node="4WY_RKGyNgm" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyNg$" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyNgi" resolve="inTestBitFields" />
+          <ref role="1vtf2j" node="4WY_RKGyNgi" />
         </node>
       </node>
     </node>
@@ -548,7 +548,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m1q" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m1r" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m1s" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:CJowcz$X2o" resolve="beforeNamedInit" />
+          <ref role="3sa5fj" to="jqak:CJowcz$X2o" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m1t" role="3savwP">
@@ -560,16 +560,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m1w" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AIG" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:CJowcz$X2p" resolve="namedInit" />
+            <ref role="3cQ7K8" to="jqak:CJowcz$X2p" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyNgu" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyNgx" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyNfO" resolve="inTestNamedInit" />
+            <ref role="1vv99g" node="4WY_RKGyNfO" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyNgw" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyNg0" resolve="inTestNamedInit" />
+          <ref role="1vtf2j" node="4WY_RKGyNg0" />
         </node>
       </node>
     </node>
@@ -579,7 +579,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m6p" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m6q" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m6r" role="3sdZbB">
-          <ref role="3sa5fj" to="jqak:CJowcz$X0H" resolve="firstStructAssignment" />
+          <ref role="3sa5fj" to="jqak:CJowcz$X0H" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m6s" role="3savwP">
@@ -591,16 +591,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m6v" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AIC" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="jqak:CJowcz$X0Q" resolve="secondStructAssignment" />
+            <ref role="3cQ7K8" to="jqak:CJowcz$X0Q" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyNgq" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyNgr" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyNfQ" resolve="inStructAccess" />
+            <ref role="1vv99g" node="4WY_RKGyNfQ" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyNgt" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyNfY" resolve="inStructAccess" />
+          <ref role="1vtf2j" node="4WY_RKGyNfY" />
         </node>
       </node>
     </node>

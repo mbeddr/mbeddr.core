@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
@@ -36,6 +36,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -322,6 +323,7 @@
   </node>
   <node concept="1lH9Xt" id="6cLnm66LHKC">
     <property role="TrG5h" value="TestMultilingualJavaString" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6cLnm66LIvk" role="1SL9yI">
       <property role="TrG5h" value="MultilingualJavaStringTestIT" />
       <node concept="3cqZAl" id="6cLnm66LIvl" role="3clF45" />
@@ -515,6 +517,7 @@
   </node>
   <node concept="1lH9Xt" id="7Ssz$kYmx5h">
     <property role="TrG5h" value="TestRichStringMessageKey" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7N9Z2vLOxEo" role="1SKRRt">
       <node concept="3MtHw5" id="7N9Z2vLOxGP" role="1qenE9">
         <property role="TrG5h" value="Test" />
@@ -822,6 +825,7 @@
   </node>
   <node concept="1lH9Xt" id="7Ssz$kYx9sn">
     <property role="TrG5h" value="TestMultilingualJavaRichString" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="2F_EZZy7gvC" role="1SL9yI">
       <property role="TrG5h" value="MultilingualJavaRichStringTest1IT" />
       <node concept="3cqZAl" id="2F_EZZy7gvD" role="3clF45" />

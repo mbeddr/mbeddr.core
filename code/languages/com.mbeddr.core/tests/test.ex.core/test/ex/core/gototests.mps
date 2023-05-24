@@ -119,7 +119,7 @@
           </node>
         </node>
         <node concept="3ITNCe" id="5HTuIUPCu1S" role="3XIRFZ">
-          <ref role="3ITNCf" node="5HTuIUPCu1R" resolve="ende" />
+          <ref role="3ITNCf" node="5HTuIUPCu1R" />
         </node>
         <node concept="2eY$_Z" id="5HTuIUPCup3" role="3XIRFZ" />
         <node concept="3ITNCd" id="5HTuIUPCu1R" role="3XIRFZ">
@@ -131,7 +131,7 @@
               <property role="2hmy$m" value="0" />
             </node>
             <node concept="3ZVu4v" id="5HTuIUPCup7" role="3TlMhI">
-              <ref role="3ZVs_2" node="5HTuIUPCu1L" resolve="x" />
+              <ref role="3ZVs_2" node="5HTuIUPCu1L" />
             </node>
           </node>
         </node>
@@ -142,7 +142,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhm" role="lIfQt">
-        <ref role="3cM6IK" node="5HTuIUPCu0G" resolve="gotoTest" />
+        <ref role="3cM6IK" node="5HTuIUPCu0G" />
       </node>
     </node>
   </node>
@@ -150,14 +150,14 @@
     <node concept="2eOfOl" id="5HTuIUPCu1I" role="2ePNbc">
       <property role="TrG5h" value="GotoTest" />
       <node concept="2v9HqM" id="5HTuIUPCu1J" role="2eOfOg">
-        <ref role="2v9HqP" node="5HTuIUPCu0F" resolve="GotoTest" />
+        <ref role="2v9HqP" node="5HTuIUPCu0F" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzg1" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2xfidK" id="1WKZBvBXE1j" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgvW" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgvX" role="2Q9FjI" />

@@ -76,7 +76,7 @@
   </registry>
   <node concept="33xvKG" id="4IRvlq8cIAW">
     <property role="TrG5h" value="HelloWorld" />
-    <ref role="G9hjw" node="4IRvlq8d489" resolve="wSlideConfig" />
+    <ref role="G9hjw" node="4IRvlq8d489" />
     <node concept="33xvKH" id="4IRvlq8cYvh" role="33xvKE">
       <property role="TrG5h" value="Cover" />
       <node concept="33wRiT" id="4IRvlq8d487" role="33xpHp">
@@ -84,7 +84,7 @@
         <property role="33wYje" value="Mbeddr Logo" />
         <node concept="2Sb_l4" id="4IRvlq8d48i" role="2SbwM5">
           <property role="2Sb_kV" value="mbeddr.png" />
-          <ref role="2Sb_kU" node="4IRvlq8d48c" resolve="images" />
+          <ref role="2Sb_kU" node="4IRvlq8d48c" />
         </node>
       </node>
       <node concept="33xopc" id="4IRvlq8cZcd" role="33xpHp">

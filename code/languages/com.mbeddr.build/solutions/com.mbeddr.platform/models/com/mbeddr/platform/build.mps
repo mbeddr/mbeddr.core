@@ -14956,11 +14956,6 @@
         <node concept="1E0d5M" id="79i$vAXZ$ES" role="1E1XAP">
           <ref role="1E0d5P" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
         </node>
-        <node concept="1SiIV0" id="6hvYmWkkGTA" role="3bR37C">
-          <node concept="1Busua" id="6hvYmWkkGTB" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6hvYmWkkGTC" role="3bR37C">
           <node concept="1Busua" id="6hvYmWkkGTD" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
@@ -14996,6 +14991,11 @@
             <node concept="3qWCbU" id="4PRpvcZJNQL" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="L1K7i3bJLn" role="3bR37C">
+          <node concept="Rbm2T" id="L1K7i3bJLo" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
@@ -20400,9 +20400,9 @@
     <node concept="2G$12M" id="6o5cjw5gxJq" role="3989C9">
       <property role="TrG5h" value="group.json" />
       <node concept="1E1JtD" id="6o5cjw5gEyi" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.json" />
         <property role="3LESm3" value="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" />
+        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cEZ" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cF0" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cF1" role="3LXTna">
@@ -20618,6 +20618,15 @@
     </node>
     <node concept="398rNT" id="3AVJcIMlF8u" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
+    </node>
+    <node concept="398rNT" id="L1K7i3raAc" role="1l3spd">
+      <property role="TrG5h" value="platform_lib" />
+      <node concept="398BVA" id="L1K7i3rctV" role="398pKh">
+        <ref role="398BVh" node="3AVJcIMlF8u" resolve="mps.home" />
+        <node concept="2Ry0Ak" id="L1K7i3rcLM" role="iGT6I">
+          <property role="2Ry0Am" value="lib" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />

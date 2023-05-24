@@ -122,7 +122,7 @@
       <node concept="3XIRFW" id="bKKma6GLCF" role="3XIRFX">
         <node concept="1_9egQ" id="bKKma6GLCG" role="3XIRFZ">
           <node concept="3O_q_g" id="bKKma6GLCH" role="1_9egR">
-            <ref role="3O_q_h" node="bKKma6GLCZ" resolve="doNothing" />
+            <ref role="3O_q_h" node="bKKma6GLCZ" />
           </node>
           <node concept="3cQ7KT" id="bKKma6GLCI" role="lGtFl">
             <property role="TrG5h" value="1stFuncCallInMain" />
@@ -130,7 +130,7 @@
         </node>
         <node concept="1_9egQ" id="bKKma6GLCJ" role="3XIRFZ">
           <node concept="3O_q_g" id="bKKma6GLCK" role="1_9egR">
-            <ref role="3O_q_h" node="bKKma6GLDe" resolve="functionWithoutReturn" />
+            <ref role="3O_q_h" node="bKKma6GLDe" />
           </node>
           <node concept="3cQ7KT" id="bKKma6GLCL" role="lGtFl">
             <property role="TrG5h" value="2ndFuncCallInMain" />
@@ -138,7 +138,7 @@
         </node>
         <node concept="1_9egQ" id="bKKma6GLCM" role="3XIRFZ">
           <node concept="3O_q_g" id="bKKma6GLCN" role="1_9egR">
-            <ref role="3O_q_h" node="bKKma6GLD7" resolve="functionWithReturn" />
+            <ref role="3O_q_h" node="bKKma6GLD7" />
           </node>
           <node concept="3cQ7KT" id="bKKma6GLCO" role="lGtFl">
             <property role="TrG5h" value="3rdFuncCallInMain" />
@@ -227,7 +227,7 @@
         <node concept="2BFjQ_" id="5C6ntc8n8Gp" role="3XIRFZ">
           <node concept="2BOciq" id="5C6ntc8n9Fb" role="2BFjQA">
             <node concept="3ZVu4v" id="5C6ntc8n9Fe" role="3TlMhJ">
-              <ref role="3ZVs_2" node="bKKma6GLDg" resolve="a" />
+              <ref role="3ZVs_2" node="bKKma6GLDg" />
             </node>
             <node concept="3TlMh9" id="5C6ntc8n90O" role="3TlMhI">
               <property role="2hmy$m" value="1" />
@@ -251,7 +251,7 @@
     <node concept="2eOfOl" id="bKKma6GLBq" role="2ePNbc">
       <property role="TrG5h" value="FunctionsTest" />
       <node concept="2v9HqM" id="bKKma6GLBr" role="2eOfOg">
-        <ref role="2v9HqP" node="bKKma6GLCD" resolve="HelloWorld" />
+        <ref role="2v9HqP" node="bKKma6GLCD" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTgH" role="1kZvWc">
         <property role="TrG5h" value="any" />

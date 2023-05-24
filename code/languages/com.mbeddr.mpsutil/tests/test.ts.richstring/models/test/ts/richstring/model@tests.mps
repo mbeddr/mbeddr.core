@@ -4,7 +4,7 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
@@ -32,6 +32,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -271,6 +272,7 @@
   </node>
   <node concept="1lH9Xt" id="6Go9U2yJA6X">
     <property role="TrG5h" value="RichstringValidatorGeneral" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6Go9U2yJA7l" role="1SKRRt">
       <node concept="312cEu" id="6Go9U2yJA7n" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -1308,6 +1310,7 @@
   </node>
   <node concept="1lH9Xt" id="5Bl4dfrLv82">
     <property role="TrG5h" value="RichstringValidatorCharacter" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5Bl4dfrLv83" role="1SKRRt">
       <node concept="312cEu" id="5Bl4dfrLv84" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -1830,6 +1833,7 @@
   </node>
   <node concept="1lH9Xt" id="5Bl4dfrLGPe">
     <property role="TrG5h" value="RichstringValidatorIntegral" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5Bl4dfrLGPf" role="1SKRRt">
       <node concept="312cEu" id="5Bl4dfrLGPg" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -3377,6 +3381,7 @@
   </node>
   <node concept="1lH9Xt" id="5Bl4dfrLTQF">
     <property role="TrG5h" value="RichstringValidatorFloatingPoint" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5Bl4dfrLTQG" role="1SKRRt">
       <node concept="312cEu" id="5Bl4dfrLTQH" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -4409,6 +4414,7 @@
   </node>
   <node concept="1lH9Xt" id="7hVsScElyd2">
     <property role="TrG5h" value="RichstringValidatorDateTime" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7hVsScElyd3" role="1SKRRt">
       <node concept="312cEu" id="7hVsScElyd4" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -5453,6 +5459,7 @@
   </node>
   <node concept="1lH9Xt" id="7hVsScEmZkN">
     <property role="TrG5h" value="PositiveTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7hVsScEmZVl" role="1SKRRt">
       <node concept="312cEu" id="7hVsScEmZVn" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -5858,6 +5865,7 @@
   </node>
   <node concept="1lH9Xt" id="7hVsScEvXkq">
     <property role="TrG5h" value="DuplicationTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7hVsScEvXXi" role="1SKRRt">
       <node concept="312cEu" id="7hVsScEvXXk" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -5942,6 +5950,7 @@
   </node>
   <node concept="1lH9Xt" id="7hVsScEx97u">
     <property role="TrG5h" value="WidthPrecisionTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7hVsScEx97v" role="1SKRRt">
       <node concept="312cEu" id="7hVsScEx97x" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -6183,6 +6192,7 @@
   </node>
   <node concept="1lH9Xt" id="7hVsScEyWs0">
     <property role="TrG5h" value="NitpickingTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7hVsScEyWs1" role="1SKRRt">
       <node concept="312cEu" id="7hVsScEyWs3" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -7657,6 +7667,7 @@
   </node>
   <node concept="1lH9Xt" id="7hVsScEMwJK">
     <property role="TrG5h" value="DateTimeTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7hVsScEMwJL" role="1SKRRt">
       <node concept="312cEu" id="7hVsScEMwJN" role="1qenE9">
         <property role="2bfB8j" value="true" />
@@ -8370,6 +8381,7 @@
   </node>
   <node concept="1lH9Xt" id="5qZNa$QQUmk">
     <property role="TrG5h" value="GeneratorTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5qZNa$QQW7u" role="1SL9yI">
       <property role="TrG5h" value="noSpecialContent" />
       <node concept="3cqZAl" id="5qZNa$QQW7v" role="3clF45" />
@@ -8971,6 +8983,7 @@
   </node>
   <node concept="1lH9Xt" id="2F_EZZygoT7">
     <property role="TrG5h" value="ExecuteTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="2F_EZZygoTh" role="1SL9yI">
       <property role="TrG5h" value="varReplacement" />
       <node concept="3cqZAl" id="2F_EZZygoTi" role="3clF45" />

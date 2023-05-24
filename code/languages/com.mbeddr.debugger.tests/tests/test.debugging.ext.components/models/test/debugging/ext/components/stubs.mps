@@ -260,7 +260,7 @@
     <node concept="2eOfOl" id="5u7uvg8qKD0" role="2ePNbc">
       <property role="TrG5h" value="StubTest" />
       <node concept="2v9HqM" id="5u7uvg8qKD1" role="2eOfOg">
-        <ref role="2v9HqP" node="5u7uvg8qwtY" resolve="StubTest" />
+        <ref role="2v9HqP" node="5u7uvg8qwtY" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxThd" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -273,7 +273,7 @@
       <node concept="3i3YCL" id="1OLGDVfgGBl" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="3AMi4NPx3UY" resolve="instances" />
+        <ref role="35zhcq" node="3AMi4NPx3UY" />
       </node>
     </node>
     <node concept="2AWWZL" id="3uHGTbhADXv" role="2AWWZH">
@@ -337,19 +337,19 @@
       <property role="TrG5h" value="DataManager" />
       <node concept="2EWHp_" id="7$_eEdIcGz8" role="2RW2fA">
         <property role="TrG5h" value="acq" />
-        <ref role="2EX0h9" node="7$_eEdIcGz3" resolve="DataAcquisition" />
+        <ref role="2EX0h9" node="7$_eEdIcGz3" />
       </node>
       <node concept="2EWHp$" id="7$_eEdIcGza" role="2RW2fA">
         <property role="TrG5h" value="sensor1" />
-        <ref role="2EX0h9" node="5u7uvg8qwtZ" resolve="Sensor1" />
+        <ref role="2EX0h9" node="5u7uvg8qwtZ" />
       </node>
       <node concept="2EWHp$" id="2xzojtq6kLW" role="2RW2fA">
         <property role="TrG5h" value="sensor2" />
-        <ref role="2EX0h9" node="2xzojtq6kLV" resolve="Sensor2" />
+        <ref role="2EX0h9" node="2xzojtq6kLV" />
       </node>
       <node concept="2EWHp$" id="4bUTzk4HEWx" role="2RW2fA">
         <property role="TrG5h" value="carData" />
-        <ref role="2EX0h9" node="RsLjUnNb$Z" resolve="CarData" />
+        <ref role="2EX0h9" node="RsLjUnNb$Z" />
       </node>
       <node concept="2EWDwb" id="7$_eEdIcGzb" role="2RW2fA">
         <property role="TrG5h" value="acq_measure" />
@@ -358,25 +358,25 @@
             <node concept="3XIRFW" id="7$_eEdIdcxM" role="c0U17">
               <node concept="1_9egQ" id="2xzojtq6nPt" role="3XIRFZ">
                 <node concept="30IBQI" id="2xzojtq6nPz" role="1_9egR">
-                  <ref role="2H6Oet" node="2xzojtq6nPq" resolve="nothing" />
+                  <ref role="2H6Oet" node="2xzojtq6nPq" />
                   <node concept="2H6loZ" id="2xzojtq6nPu" role="1_9fRO">
-                    <ref role="2H6loY" node="2xzojtq6kLW" resolve="sensor2" />
+                    <ref role="2H6loY" node="2xzojtq6kLW" />
                   </node>
                 </node>
               </node>
               <node concept="2BFjQ_" id="7$_eEdIde8i" role="3XIRFZ">
                 <node concept="30IBQI" id="7$_eEdIde8k" role="2BFjQA">
-                  <ref role="2H6Oet" node="5u7uvg8qwu0" resolve="getValue" />
+                  <ref role="2H6Oet" node="5u7uvg8qwu0" />
                   <node concept="2H6loZ" id="2xzojtq6kLX" role="1_9fRO">
-                    <ref role="2H6loY" node="2xzojtq6kLW" resolve="sensor2" />
+                    <ref role="2H6loY" node="2xzojtq6kLW" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="30IBQI" id="7$_eEdIdcxP" role="c0U16">
-              <ref role="2H6Oet" node="7$_eEdIcGzg" resolve="isReady" />
+              <ref role="2H6Oet" node="7$_eEdIcGzg" />
               <node concept="2H6loZ" id="7$_eEdIdcxO" role="1_9fRO">
-                <ref role="2H6loY" node="7$_eEdIcGza" resolve="sensor1" />
+                <ref role="2H6loY" node="7$_eEdIcGza" />
               </node>
             </node>
             <node concept="1ly_i6" id="6J1IxNWHjeM" role="ggAap">
@@ -391,8 +391,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="7$_eEdIcGze" role="2EWDeT">
-          <ref role="1ZwxE2" node="7$_eEdIcGz4" resolve="measure" />
-          <ref role="1ZwSu5" node="7$_eEdIcGz8" resolve="acq" />
+          <ref role="1ZwxE2" node="7$_eEdIcGz4" />
+          <ref role="1ZwSu5" node="7$_eEdIcGz8" />
         </node>
         <node concept="26Vqph" id="5o7ECf8kHAY" role="2C2TGm" />
       </node>
@@ -407,7 +407,7 @@
       <property role="TrG5h" value="SensorStub" />
       <node concept="2EWHp_" id="4bUTzk4HCcm" role="2RW2fA">
         <property role="TrG5h" value="carData" />
-        <ref role="2EX0h9" node="RsLjUnNb$Z" resolve="CarData" />
+        <ref role="2EX0h9" node="RsLjUnNb$Z" />
       </node>
       <node concept="_e4Bv" id="1yKRj6BNZ9c" role="_e4wZ">
         <property role="TrG5h" value="bla" />
@@ -417,11 +417,11 @@
       </node>
       <node concept="2EWHp_" id="5u7uvg8qwuO" role="2RW2fA">
         <property role="TrG5h" value="sensor1" />
-        <ref role="2EX0h9" node="5u7uvg8qwtZ" resolve="Sensor1" />
+        <ref role="2EX0h9" node="5u7uvg8qwtZ" />
       </node>
       <node concept="2EWHp_" id="2xzojtq6kLY" role="2RW2fA">
         <property role="TrG5h" value="sensor2" />
-        <ref role="2EX0h9" node="2xzojtq6kLV" resolve="Sensor2" />
+        <ref role="2EX0h9" node="2xzojtq6kLV" />
       </node>
       <node concept="EbCE0" id="2xzojtq5y4F" role="2RW2fA">
         <property role="TrG5h" value="bla" />
@@ -466,8 +466,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="2xzojtq4UUh" role="2EWDeT">
-          <ref role="1ZwSu5" node="2xzojtq6kLY" resolve="sensor2" />
-          <ref role="1ZwxE2" node="5u7uvg8qwu0" resolve="getValue" />
+          <ref role="1ZwSu5" node="2xzojtq6kLY" />
+          <ref role="1ZwxE2" node="5u7uvg8qwu0" />
         </node>
         <node concept="26Vqph" id="5o7ECf8kI3J" role="2C2TGm" />
         <node concept="1KB$IV" id="7moPk04QkBW" role="lGtFl" />
@@ -520,8 +520,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="2xzojtq4UUi" role="2EWDeT">
-          <ref role="1ZwSu5" node="5u7uvg8qwuO" resolve="sensor1" />
-          <ref role="1ZwxE2" node="7$_eEdIcGzg" resolve="isReady" />
+          <ref role="1ZwSu5" node="5u7uvg8qwuO" />
+          <ref role="1ZwxE2" node="7$_eEdIcGzg" />
         </node>
         <node concept="3TlMgk" id="5o7ECf8kHB0" role="2C2TGm" />
       </node>
@@ -540,8 +540,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="2xzojtq6nPB" role="2EWDeT">
-          <ref role="1ZwxE2" node="2xzojtq6nPq" resolve="nothing" />
-          <ref role="1ZwSu5" node="2xzojtq6kLY" resolve="sensor2" />
+          <ref role="1ZwxE2" node="2xzojtq6nPq" />
+          <ref role="1ZwSu5" node="2xzojtq6kLY" />
         </node>
         <node concept="19Rifw" id="2xzojtq6nPC" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -576,54 +576,54 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="3AMi4NPx3UZ" role="5JtDH">
         <property role="TrG5h" value="s" />
-        <ref role="2EWCuU" node="5u7uvg8qwuN" resolve="SensorStub" />
+        <ref role="2EWCuU" node="5u7uvg8qwuN" />
       </node>
       <node concept="2EWCuV" id="7$_eEdIdcxD" role="5JtDH">
         <property role="TrG5h" value="m" />
-        <ref role="2EWCuU" node="7$_eEdIcGz7" resolve="DataManager" />
+        <ref role="2EWCuU" node="7$_eEdIcGz7" />
       </node>
       <node concept="2EWCuP" id="4bUTzk4HEWz" role="5JtDH">
         <node concept="2EWCuO" id="4bUTzk4HEW$" role="2EWCuL">
-          <ref role="2EWCuR" node="7$_eEdIdcxD" resolve="m" />
-          <ref role="XcPQd" node="4bUTzk4HEWx" resolve="carData" />
+          <ref role="2EWCuR" node="7$_eEdIdcxD" />
+          <ref role="XcPQd" node="4bUTzk4HEWx" />
         </node>
         <node concept="2EWCuO" id="4bUTzk4HEW_" role="2EWCuK">
-          <ref role="XcPQd" node="4bUTzk4HCcm" resolve="carData" />
-          <ref role="2EWCuR" node="3AMi4NPx3UZ" resolve="s" />
+          <ref role="XcPQd" node="4bUTzk4HCcm" />
+          <ref role="2EWCuR" node="3AMi4NPx3UZ" />
         </node>
       </node>
       <node concept="2EWCuP" id="7$_eEdIdcxE" role="5JtDH">
         <node concept="2EWCuO" id="7$_eEdIdcxF" role="2EWCuL">
-          <ref role="2EWCuR" node="7$_eEdIdcxD" resolve="m" />
-          <ref role="XcPQd" node="7$_eEdIcGza" resolve="sensor1" />
+          <ref role="2EWCuR" node="7$_eEdIdcxD" />
+          <ref role="XcPQd" node="7$_eEdIcGza" />
         </node>
         <node concept="2EWCuO" id="7$_eEdIdcxG" role="2EWCuK">
-          <ref role="2EWCuR" node="3AMi4NPx3UZ" resolve="s" />
-          <ref role="XcPQd" node="5u7uvg8qwuO" resolve="sensor1" />
+          <ref role="2EWCuR" node="3AMi4NPx3UZ" />
+          <ref role="XcPQd" node="5u7uvg8qwuO" />
         </node>
       </node>
       <node concept="2EWCuP" id="2xzojtq6kM0" role="5JtDH">
         <node concept="2EWCuO" id="2xzojtq6kM1" role="2EWCuL">
-          <ref role="2EWCuR" node="7$_eEdIdcxD" resolve="m" />
-          <ref role="XcPQd" node="2xzojtq6kLW" resolve="sensor2" />
+          <ref role="2EWCuR" node="7$_eEdIdcxD" />
+          <ref role="XcPQd" node="2xzojtq6kLW" />
         </node>
         <node concept="2EWCuO" id="2xzojtq6kM2" role="2EWCuK">
-          <ref role="2EWCuR" node="3AMi4NPx3UZ" resolve="s" />
-          <ref role="XcPQd" node="2xzojtq6kLY" resolve="sensor2" />
+          <ref role="2EWCuR" node="3AMi4NPx3UZ" />
+          <ref role="XcPQd" node="2xzojtq6kLY" />
         </node>
       </node>
       <node concept="21gPQu" id="4Gyojwya0c$" role="5JtDH">
         <property role="TrG5h" value="sensor" />
         <node concept="219P8x" id="4Gyojwya0c_" role="21ad3a">
-          <ref role="219P8J" node="5u7uvg8qwuO" resolve="sensor1" />
-          <ref role="219P8w" node="3AMi4NPx3UZ" resolve="s" />
+          <ref role="219P8J" node="5u7uvg8qwuO" />
+          <ref role="219P8w" node="3AMi4NPx3UZ" />
         </node>
       </node>
       <node concept="21gPQu" id="4Gyojwya0cB" role="5JtDH">
         <property role="TrG5h" value="manager" />
         <node concept="219P8x" id="4Gyojwya0cC" role="21ad3a">
-          <ref role="219P8J" node="7$_eEdIcGz8" resolve="acq" />
-          <ref role="219P8w" node="7$_eEdIdcxD" resolve="m" />
+          <ref role="219P8J" node="7$_eEdIcGz8" />
+          <ref role="219P8w" node="7$_eEdIdcxD" />
         </node>
       </node>
     </node>
@@ -639,8 +639,8 @@
       <node concept="19Rifw" id="5u7uvg8qKDi" role="2C2TGm" />
       <node concept="3XIRFW" id="5u7uvg8qKDj" role="c0Qz3">
         <node concept="_enSQ" id="1yKRj6BO38F" role="3XIRFZ">
-          <ref role="_emdK" node="3AMi4NPx3UZ" resolve="s" />
-          <ref role="_enSE" node="1yKRj6BO0A7" resolve="blub" />
+          <ref role="_emdK" node="3AMi4NPx3UZ" />
+          <ref role="_enSE" node="1yKRj6BO0A7" />
           <node concept="3cQ7KT" id="1yKRj6BOjK_" role="lGtFl">
             <property role="TrG5h" value="beforePhaseChange" />
           </node>
@@ -651,9 +651,9 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdeSq" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdeSp" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -663,9 +663,9 @@
         </node>
         <node concept="1_9egQ" id="1yKRj6BPbpm" role="3XIRFZ">
           <node concept="1AmG6P" id="1yKRj6BPbpn" role="1_9egR">
-            <ref role="1XX6Gs" node="3AMi4NPx3UZ" resolve="s" />
-            <ref role="2YB7zn" node="5u7uvg8qRh6" resolve="sensor2_getValue" />
-            <ref role="1XX6Gv" node="3AMi4NPx3UY" resolve="instances" />
+            <ref role="1XX6Gs" node="3AMi4NPx3UZ" />
+            <ref role="2YB7zn" node="5u7uvg8qRh6" />
+            <ref role="1XX6Gv" node="3AMi4NPx3UY" />
           </node>
           <node concept="3cQ7KT" id="1yKRj6BPbps" role="lGtFl">
             <property role="TrG5h" value="callingStub" />
@@ -677,9 +677,9 @@
               <property role="2hmy$m" value="-1" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdeTe" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdeTf" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -690,9 +690,9 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdeTj" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdeTk" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -703,9 +703,9 @@
               <property role="2hmy$m" value="-1" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdeTu" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdeTv" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -716,9 +716,9 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdfg5" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdfg6" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -729,9 +729,9 @@
               <property role="2hmy$m" value="-1" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdfqQ" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdfqR" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -742,9 +742,9 @@
               <property role="2hmy$m" value="255" />
             </node>
             <node concept="30IJZa" id="7$_eEdIdfAg" role="3TlMhI">
-              <ref role="2H6Oet" node="7$_eEdIcGz4" resolve="measure" />
+              <ref role="2H6Oet" node="7$_eEdIcGz4" />
               <node concept="2H6Wec" id="7$_eEdIdfAh" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cB" resolve="manager" />
+                <ref role="2H6Wef" node="4Gyojwya0cB" />
               </node>
             </node>
           </node>
@@ -758,7 +758,7 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdVJh" role="lIfQt">
-        <ref role="3cM6IK" node="5u7uvg8qKDh" resolve="testStub" />
+        <ref role="3cM6IK" node="5u7uvg8qKDh" />
       </node>
     </node>
   </node>

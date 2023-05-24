@@ -133,7 +133,7 @@
           <node concept="5JiAF" id="K3KnZNINun" role="2RW2fA">
             <node concept="2EWCuV" id="K3KnZNINuo" role="5JtDH">
               <property role="TrG5h" value="compA" />
-              <ref role="2EWCuU" node="5Uve0OVQqn4" resolve="CompA" />
+              <ref role="2EWCuU" node="5Uve0OVQqn4" />
               <node concept="7CXmI" id="6niK5RciuSu" role="lGtFl">
                 <node concept="1TM$A" id="6niK5RciuSS" role="7EUXB">
                   <node concept="2PYRI3" id="6niK5RciuST" role="3lydEf">
@@ -153,15 +153,15 @@
           <node concept="2EWHp_" id="5Uve0OVQqo6" role="2RW2fA">
             <property role="TrG5h" value="mandatoryInterface" />
             <property role="PwG6B" value="true" />
-            <ref role="2EX0h9" node="5Uve0OVQqnn" resolve="IMandatoryInterface" />
+            <ref role="2EX0h9" node="5Uve0OVQqnn" />
           </node>
           <node concept="3Khz0B" id="5Uve0OVQqo8" role="2RW2fA" />
           <node concept="2EWDwb" id="5Uve0OVQqo9" role="2RW2fA">
             <property role="TrG5h" value="mandatoryInterface_testMandatory" />
             <node concept="3XIRFW" id="5Uve0OVQqoa" role="2EWMhI" />
             <node concept="2EWDw0" id="5Uve0OVQqoc" role="2EWDeT">
-              <ref role="1ZwSu5" node="5Uve0OVQqo6" resolve="mandatoryInterface" />
-              <ref role="1ZwxE2" node="5Uve0OVQqnw" resolve="testMandatory" />
+              <ref role="1ZwSu5" node="5Uve0OVQqo6" />
+              <ref role="1ZwxE2" node="5Uve0OVQqnw" />
             </node>
             <node concept="19Rifw" id="5Uve0OVQqod" role="2C2TGm">
               <property role="2caQfQ" value="false" />
@@ -174,7 +174,7 @@
           <property role="TrG5h" value="CompB" />
           <node concept="2EWHp$" id="5Uve0OVZImi" role="2RW2fA">
             <property role="TrG5h" value="mandatoryInterface" />
-            <ref role="2EX0h9" node="5Uve0OVQqnn" resolve="IMandatoryInterface" />
+            <ref role="2EX0h9" node="5Uve0OVQqnn" />
           </node>
         </node>
         <node concept="2NXPZ9" id="5Uve0OVXYBb" role="N3F5h">
@@ -184,7 +184,7 @@
           <property role="TrG5h" value="testMandatoryConfig" />
           <node concept="2EWCuV" id="5Uve0OVXYC4" role="5JtDH">
             <property role="TrG5h" value="compA" />
-            <ref role="2EWCuU" node="5Uve0OVQqn4" resolve="CompA" />
+            <ref role="2EWCuU" node="5Uve0OVQqn4" />
             <node concept="7CXmI" id="K3KnZNL5m5" role="lGtFl">
               <node concept="1TM$A" id="K3KnZNL5mr" role="7EUXB">
                 <node concept="2PYRI3" id="K3KnZNL5ms" role="3lydEf">
@@ -196,8 +196,8 @@
           <node concept="21gPQu" id="K3KnZNI7Ls" role="5JtDH">
             <property role="TrG5h" value="mandatoryPort" />
             <node concept="219P8x" id="K3KnZNI7Lt" role="21ad3a">
-              <ref role="219P8w" node="5Uve0OVXYC4" resolve="compA" />
-              <ref role="219P8J" node="5Uve0OVQqo6" resolve="mandatoryInterface" />
+              <ref role="219P8w" node="5Uve0OVXYC4" />
+              <ref role="219P8J" node="5Uve0OVQqo6" />
             </node>
             <node concept="7CXmI" id="6niK5Rcigw8" role="lGtFl">
               <node concept="1TM$A" id="6niK5Rcigwy" role="7EUXB">
@@ -216,7 +216,7 @@
           <property role="2OOxQR" value="false" />
           <node concept="3XIRFW" id="6niK5RcgKtX" role="3XIRFX">
             <node concept="3t9XKO" id="6niK5RcignO" role="3XIRFZ">
-              <ref role="3t9XKR" node="5Uve0OVXYBK" resolve="testMandatoryConfig" />
+              <ref role="3t9XKR" node="5Uve0OVXYBK" />
             </node>
           </node>
           <node concept="19Rifw" id="6niK5RcgKsT" role="2C2TGm">

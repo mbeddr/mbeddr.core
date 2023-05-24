@@ -39,7 +39,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -137,12 +137,12 @@
         <property role="TrG5h" value="b1" />
       </node>
       <node concept="1vv375" id="4WY_RKGzOvI" role="1zHble">
-        <ref role="1vv99g" node="4WY_RKGzOvm" resolve="inTopScopeLocalVariables" />
+        <ref role="1vv99g" node="4WY_RKGzOvm" />
       </node>
     </node>
     <node concept="3sgmnF" id="4WY_RKGzOvg" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtanp$" role="3qy1PE">
-      <ref role="30ajXG" to="eft7:5zpnk3lWkPZ" resolve="LocalVariablesTest" />
+      <ref role="30ajXG" to="eft7:5zpnk3lWkPZ" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lQH" role="1zJi$$">
       <property role="TrG5h" value="suspendOnVariableDeclaration" />
@@ -150,7 +150,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lQJ" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lQK" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lQL" role="3sdZbB">
-          <ref role="3sa5fj" to="eft7:4PM5ysqt_Lr" resolve="firstVarDeclarationWithInit" />
+          <ref role="3sa5fj" to="eft7:4PM5ysqt_Lr" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lQM" role="3savwP" />
@@ -158,15 +158,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lQO" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6yYk" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="eft7:4PM5ysqt_Lr" resolve="firstVarDeclarationWithInit" />
+            <ref role="3cQ7K8" to="eft7:4PM5ysqt_Lr" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGzOvs" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGzOvh" resolve="inLocalVariables" />
+          <ref role="1vtf2j" node="4WY_RKGzOvh" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGzOvu" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGzOvv" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGzOvm" resolve="inTopScopeLocalVariables" />
+            <ref role="1vv99g" node="4WY_RKGzOvm" />
           </node>
         </node>
       </node>
@@ -177,7 +177,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lTm" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lTn" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lTo" role="3sdZbB">
-          <ref role="3sa5fj" to="eft7:4PM5ysqt_Lr" resolve="firstVarDeclarationWithInit" />
+          <ref role="3sa5fj" to="eft7:4PM5ysqt_Lr" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lTp" role="3savwP">
@@ -189,15 +189,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lTs" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6yYi" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="eft7:4PM5ysqt_T$" resolve="secondVariableDeclarationWithInit" />
+            <ref role="3cQ7K8" to="eft7:4PM5ysqt_T$" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGzOvw" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGzOvh" resolve="inLocalVariables" />
+          <ref role="1vtf2j" node="4WY_RKGzOvh" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGzOvx" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGzOvy" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGzOvm" resolve="inTopScopeLocalVariables" />
+            <ref role="1vv99g" node="4WY_RKGzOvm" />
           </node>
         </node>
       </node>
@@ -208,7 +208,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lXN" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lXO" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lXP" role="3sdZbB">
-          <ref role="3sa5fj" to="eft7:4PM5ysqt_T$" resolve="secondVariableDeclarationWithInit" />
+          <ref role="3sa5fj" to="eft7:4PM5ysqt_T$" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lXQ" role="3savwP">
@@ -220,15 +220,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lXT" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6yYo" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="eft7:4PM5ysqt_Lv" resolve="fourthVaribleDeclarationInsideBlockWithInit" />
+            <ref role="3cQ7K8" to="eft7:4PM5ysqt_Lv" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGzOvz" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGzOvh" resolve="inLocalVariables" />
+          <ref role="1vtf2j" node="4WY_RKGzOvh" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGzOv$" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGzOvL" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGzOvH" resolve="in1stBlockExprLocalVariables" />
+            <ref role="1vv99g" node="4WY_RKGzOvH" />
           </node>
         </node>
       </node>
@@ -239,7 +239,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m2R" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m2S" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m2T" role="3sdZbB">
-          <ref role="3sa5fj" to="eft7:4PM5ysqt_Lr" resolve="firstVarDeclarationWithInit" />
+          <ref role="3sa5fj" to="eft7:4PM5ysqt_Lr" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m2U" role="3savwP">
@@ -251,15 +251,15 @@
         <node concept="30a7bf" id="7Jr7T0w2m2X" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6yYq" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="eft7:4PM5ysqt_T$" resolve="secondVariableDeclarationWithInit" />
+            <ref role="3cQ7K8" to="eft7:4PM5ysqt_T$" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGzOvC" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGzOvh" resolve="inLocalVariables" />
+          <ref role="1vtf2j" node="4WY_RKGzOvh" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGzOvD" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGzOvE" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGzOvm" resolve="inTopScopeLocalVariables" />
+            <ref role="1vv99g" node="4WY_RKGzOvm" />
           </node>
         </node>
       </node>
@@ -270,7 +270,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mfk" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mfl" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mfm" role="3sdZbB">
-          <ref role="3sa5fj" to="eft7:4PM5ysqt_T$" resolve="secondVariableDeclarationWithInit" />
+          <ref role="3sa5fj" to="eft7:4PM5ysqt_T$" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mfn" role="3savwP">
@@ -282,15 +282,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mfq" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6yYm" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="eft7:4PM5ysqt_Lv" resolve="fourthVaribleDeclarationInsideBlockWithInit" />
+            <ref role="3cQ7K8" to="eft7:4PM5ysqt_Lv" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGzOvM" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGzOvh" resolve="inLocalVariables" />
+          <ref role="1vtf2j" node="4WY_RKGzOvh" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGzOvN" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGzOvO" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGzOvH" resolve="in1stBlockExprLocalVariables" />
+            <ref role="1vv99g" node="4WY_RKGzOvH" />
           </node>
         </node>
       </node>

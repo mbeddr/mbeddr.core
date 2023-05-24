@@ -45,7 +45,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -208,7 +208,7 @@
       <node concept="3clFbS" id="5u1lOcHSPzu" role="3clF47" />
       <node concept="3sdZbQ" id="5u1lOcHSPzK" role="3scror">
         <node concept="3sdZbA" id="3NJ7rfn0eIW" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:3cUcim$fj7t" resolve="afterComponentInit" />
+          <ref role="3sa5fj" to="p843:3cUcim$fj7t" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5u1lOcHT2ka" role="3F5AM1">
@@ -362,7 +362,7 @@
       <node concept="3clFbS" id="2xksOhMDEuW" role="3clF47" />
       <node concept="3sdZbQ" id="2xksOhMDEuX" role="3scror">
         <node concept="3sdZbA" id="2xksOhMDEuY" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:WMIrWR4BiZ" resolve="calling1stStep" />
+          <ref role="3sa5fj" to="p843:WMIrWR4BiZ" />
         </node>
       </node>
       <node concept="3savIG" id="2xksOhMDEv0" role="3savwP">
@@ -374,7 +374,7 @@
         <node concept="30a7bf" id="2xksOhMDEv5" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFsy" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="p843:WMIrWR4Bj9" resolve="afterCalling1stStep" />
+            <ref role="3cQ7K8" to="p843:WMIrWR4Bj9" />
           </node>
         </node>
         <node concept="1l46Ie" id="2xksOhMDEv8" role="3F5Y$9">
@@ -391,7 +391,7 @@
             <property role="TrG5h" value="server1" />
           </node>
           <node concept="1vv375" id="2xksOhMDEv9" role="1vv36M">
-            <ref role="1vv99g" node="5u1lOcHSPzR" resolve="global" />
+            <ref role="1vv99g" node="5u1lOcHSPzR" />
           </node>
         </node>
       </node>
@@ -403,7 +403,7 @@
       <node concept="3clFbS" id="5u1lOcHSPzo" role="3clF47" />
       <node concept="3sdZbQ" id="5u1lOcHSPzN" role="3scror">
         <node concept="3sdZbA" id="5u1lOcHSPzO" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:5u1lOcHSPzx" resolve="insideComponent" />
+          <ref role="3sa5fj" to="p843:5u1lOcHSPzx" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5u1lOcHT2kd" role="3F5AM1">
@@ -421,7 +421,7 @@
             <property role="TrG5h" value="ready" />
           </node>
           <node concept="1vv375" id="3NJ7rfn0eLD" role="1vv36M">
-            <ref role="1vv99g" node="5u1lOcHSPzR" resolve="global" />
+            <ref role="1vv99g" node="5u1lOcHSPzR" />
           </node>
         </node>
       </node>
@@ -433,7 +433,7 @@
       <node concept="3clFbS" id="WMIrWR4f3P" role="3clF47" />
       <node concept="3sdZbQ" id="WMIrWR4f3R" role="3scror">
         <node concept="3sdZbA" id="WMIrWR4f3S" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:WMIrWR4f3Q" resolve="callingStepWithAsserts" />
+          <ref role="3sa5fj" to="p843:WMIrWR4f3Q" />
         </node>
       </node>
       <node concept="3savIG" id="WMIrWR4f3T" role="3savwP">
@@ -445,7 +445,7 @@
         <node concept="30a7bf" id="WMIrWR4gM6" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFsu" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="p843:WMIrWR4gM4" resolve="returningFromStepWithAsserts" />
+            <ref role="3cQ7K8" to="p843:WMIrWR4gM4" />
           </node>
         </node>
       </node>
@@ -457,7 +457,7 @@
       <node concept="3clFbS" id="3NJ7rfn0eIz" role="3clF47" />
       <node concept="3sdZbQ" id="2xksOhMDy3E" role="3scror">
         <node concept="3sdZbA" id="2xksOhMDy3F" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:5u1lOcHSPzx" resolve="insideComponent" />
+          <ref role="3sa5fj" to="p843:5u1lOcHSPzx" />
         </node>
       </node>
       <node concept="3savIG" id="2xksOhMDy3G" role="3savwP">
@@ -469,7 +469,7 @@
         <node concept="30a7bf" id="2xksOhMDy3J" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFso" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="p843:WMIrWR4BiZ" resolve="calling1stStep" />
+            <ref role="3cQ7K8" to="p843:WMIrWR4BiZ" />
           </node>
         </node>
         <node concept="1l46Ie" id="2xksOhMDy3M" role="3F5Y$9">
@@ -587,14 +587,14 @@
       <node concept="3clFbS" id="3NJ7rfn0eIA" role="3clF47" />
       <node concept="3sdZbQ" id="2xksOhMDCnh" role="3scror">
         <node concept="3sdZbA" id="2xksOhMDCni" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:2xksOhMDCng" resolve="failingAssertion" />
+          <ref role="3sa5fj" to="p843:2xksOhMDCng" />
         </node>
       </node>
       <node concept="3F5Y_J" id="2xksOhMDCnj" role="3F5AM1">
         <node concept="30a7bf" id="2xksOhMDCnk" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFss" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="p843:WMIrWR4gM4" resolve="returningFromStepWithAsserts" />
+            <ref role="3cQ7K8" to="p843:WMIrWR4gM4" />
           </node>
         </node>
         <node concept="1l46Ie" id="2xksOhMDPtd" role="3F5Y$9">
@@ -730,14 +730,14 @@
       <node concept="3clFbS" id="3NJ7rfn0eIK" role="3clF47" />
       <node concept="3sdZbQ" id="WMIrWR4Bj1" role="3scror">
         <node concept="3sdZbA" id="WMIrWR4Bj2" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:WMIrWR4BiZ" resolve="calling1stStep" />
+          <ref role="3sa5fj" to="p843:WMIrWR4BiZ" />
         </node>
       </node>
       <node concept="3F5Y_J" id="WMIrWR4Bj3" role="3F5AM1">
         <node concept="30a7bf" id="WMIrWR4Bj4" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFsw" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="p843:WMIrWR4Bj0" resolve="1stStep" />
+            <ref role="3cQ7K8" to="p843:WMIrWR4Bj0" />
           </node>
         </node>
         <node concept="1l6n2J" id="WMIrWR4Bjl" role="3F5Y$9">
@@ -771,7 +771,7 @@
             <property role="TrG5h" value="a" />
           </node>
           <node concept="1vv375" id="4UIScla$E9O" role="1vv36M">
-            <ref role="1vv99g" node="5u1lOcHSPzR" resolve="global" />
+            <ref role="1vv99g" node="5u1lOcHSPzR" />
           </node>
         </node>
       </node>
@@ -789,14 +789,14 @@
       <node concept="3clFbS" id="3NJ7rfn0eIP" role="3clF47" />
       <node concept="3sdZbQ" id="WMIrWR4Bj6" role="3scror">
         <node concept="3sdZbA" id="WMIrWR4Bj7" role="3sdZbB">
-          <ref role="3sa5fj" to="p843:WMIrWR4Bj0" resolve="1stStep" />
+          <ref role="3sa5fj" to="p843:WMIrWR4Bj0" />
         </node>
       </node>
       <node concept="3F5Y_J" id="WMIrWR4Bj8" role="3F5AM1">
         <node concept="30a7bf" id="WMIrWR4Bja" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFsq" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="p843:WMIrWR4Bj9" resolve="afterCalling1stStep" />
+            <ref role="3cQ7K8" to="p843:WMIrWR4Bj9" />
           </node>
         </node>
         <node concept="1l6n2J" id="WMIrWR4Bjq" role="3F5Y$9">
@@ -821,7 +821,7 @@
     <node concept="3sgmnF" id="5u1lOcHSPz$" role="1zJi$$" />
     <node concept="3sgmnF" id="5u1lOcHSPzk" role="1zJi$$" />
     <node concept="3qy1PH" id="5u1lOcHSPzi" role="3qy1PE">
-      <ref role="30ajXG" to="p843:5u1lOcHSy8B" resolve="SimpleMock" />
+      <ref role="30ajXG" to="p843:5u1lOcHSy8B" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRN1" role="29bA6Q" />
   </node>

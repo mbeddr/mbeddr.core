@@ -149,7 +149,7 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="HelloWorld" />
     <property role="3GE5qa" value="" />
-    <ref role="G9hjw" node="5xsBLDLCa4c" resolve="MarkdownConfig" />
+    <ref role="G9hjw" node="5xsBLDLCa4c" />
     <node concept="3xmJbL" id="xxE$BMCywD" role="1_0VJ0" />
     <node concept="1_0VNX" id="GfNMM3dDum" role="1_0VJ0">
       <property role="TrG5h" value="HelloWorld" />
@@ -378,7 +378,7 @@
         <property role="1_0VJr" value="Include" />
         <node concept="$CzcT" id="1Gd_uyNeHfK" role="1_0VJ0">
           <node concept="1_0j5j" id="1Gd_uyNeHgV" role="$CzcU">
-            <ref role="1_0j5g" node="1Gd_uyNeHer" resolve="SubDocument" />
+            <ref role="1_0j5g" node="1Gd_uyNeHer" />
           </node>
         </node>
       </node>
@@ -412,7 +412,7 @@
               <property role="19SUeA" value="You can reference images like this " />
             </node>
             <node concept="2Sbdz4" id="5xsBLDLEW26" role="19SJt6">
-              <ref role="2SbdyP" node="5xsBLDLBRVH" resolve="JavaCode" />
+              <ref role="2SbdyP" node="5xsBLDLBRVH" />
             </node>
             <node concept="19SUe$" id="5xsBLDLEW27" role="19SJt6" />
           </node>
@@ -426,7 +426,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="191H8GfGj$h" role="2SbwM5">
             <property role="2Sb_kV" value="itemis_image.png" />
-            <ref role="2Sb_kU" node="IdgZwhXP9T" resolve="images" />
+            <ref role="2Sb_kU" node="IdgZwhXP9T" />
           </node>
           <node concept="OjmMv" id="191H8GfGj$i" role="2SaI5j">
             <node concept="19SGf9" id="191H8GfGj$j" role="OjmMu">
@@ -442,7 +442,7 @@
           <property role="41Bi8" value="true" />
           <node concept="2Sb_l4" id="2BdmVJRqOha" role="2SbwM5">
             <property role="2Sb_kV" value="animation.gif" />
-            <ref role="2Sb_kU" node="IdgZwhXP9T" resolve="images" />
+            <ref role="2Sb_kU" node="IdgZwhXP9T" />
           </node>
           <node concept="OjmMv" id="2BdmVJRqOeO" role="2SaI5j">
             <node concept="19SGf9" id="2BdmVJRqOeP" role="OjmMu">
@@ -463,7 +463,7 @@
               <property role="19SUeA" value="Referencing a section also works like " />
             </node>
             <node concept="1_0GAv" id="xxE$BM_9oD" role="19SJt6">
-              <ref role="1_0GAl" node="GfNMM3dDum" resolve="HelloWorld" />
+              <ref role="1_0GAl" node="GfNMM3dDum" />
             </node>
             <node concept="19SUe$" id="xxE$BM_9oE" role="19SJt6" />
           </node>
@@ -511,29 +511,29 @@
       </node>
     </node>
     <node concept="1_0j5j" id="1Gd_uyNeHgT" role="1DXQ57">
-      <ref role="1_0j5g" node="1Gd_uyNeHer" resolve="SubDocument" />
+      <ref role="1_0j5g" node="1Gd_uyNeHer" />
     </node>
   </node>
   <node concept="1_08Dk" id="1Gd_uyNesUv">
     <property role="TrG5h" value="MarkdownExport" />
     <property role="WqcPg" value="MyMarkDownExport" />
     <node concept="1_0j5j" id="1Gd_uyNesUy" role="30Gjbj">
-      <ref role="1_0j5g" node="GfNMM3dDmB" resolve="HelloWorld" />
+      <ref role="1_0j5g" node="GfNMM3dDmB" />
     </node>
     <node concept="2SbEIf" id="5xsBLDLCduT" role="30Gjbg">
       <property role="2SbEId" value="doc_temp" />
-      <ref role="2SbEIe" node="5xsBLDLCdo7" resolve="temp" />
+      <ref role="2SbEIe" node="5xsBLDLCdo7" />
     </node>
     <node concept="2SbEIf" id="5xsBLDLCduI" role="30Gjbg">
       <property role="2SbEId" value="doc_images" />
-      <ref role="2SbEIe" node="IdgZwhXP9T" resolve="images" />
+      <ref role="2SbEIe" node="IdgZwhXP9T" />
     </node>
     <node concept="1_05Lf" id="7YublcAIHoY" role="30GjaH" />
   </node>
   <node concept="1_1swa" id="1Gd_uyNeHer">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="SubDocument" />
-    <ref role="G9hjw" node="5xsBLDLCa4c" resolve="MarkdownConfig" />
+    <ref role="G9hjw" node="5xsBLDLCa4c" />
     <node concept="1_0VNX" id="2khznRHyx6L" role="1_0VJ0">
       <property role="TrG5h" value="secondsection" />
       <property role="1_0VJr" value="The section" />

@@ -159,10 +159,10 @@
     <node concept="2eOfOl" id="7lNBHBNC4AP" role="2ePNbc">
       <property role="TrG5h" value="TypedefsAndTypes" />
       <node concept="2v9HqM" id="7lNBHBNC4AQ" role="2eOfOg">
-        <ref role="2v9HqP" node="7lNBHBNC4_$" resolve="TypeDefTest" />
+        <ref role="2v9HqP" node="7lNBHBNC4_$" />
       </node>
       <node concept="2v9HqM" id="7lNBHBNC4AS" role="2eOfOg">
-        <ref role="2v9HqP" node="7lNBHBNC4_M" resolve="TypeDefFromExternalModule" />
+        <ref role="2v9HqP" node="7lNBHBNC4_M" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTgW" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -194,7 +194,7 @@
       <property role="TrG5h" value="smallTTT" />
       <property role="2OOxQR" value="true" />
       <node concept="rcJHQ" id="6FLcSer$i9H" role="rcJHR">
-        <ref role="rcJHT" node="6FLcSer$i9w" resolve="smallT" />
+        <ref role="rcJHT" node="6FLcSer$i9w" />
       </node>
     </node>
     <node concept="4WHVk" id="6FLcSer$i9A" role="N3F5h">
@@ -230,7 +230,7 @@
         <node concept="3XIRlf" id="6FLcSer$hHv" role="3XIRFZ">
           <property role="TrG5h" value="var" />
           <node concept="rcJHQ" id="7Hpw6GdNGU2" role="2C2TGm">
-            <ref role="rcJHT" node="6FLcSer$i9E" resolve="smallTTT" />
+            <ref role="rcJHT" node="6FLcSer$i9E" />
           </node>
           <node concept="3TlMh9" id="6FLcSer$hHy" role="3XIe9u">
             <property role="2hmy$m" value="20" />
@@ -242,7 +242,7 @@
               <property role="2hmy$m" value="22" />
             </node>
             <node concept="4ZOvp" id="7Hpw6GdNH8h" role="3TlMhI">
-              <ref role="2DPCA0" node="6FLcSer$i9A" resolve="someInt" />
+              <ref role="2DPCA0" node="6FLcSer$i9A" />
             </node>
           </node>
         </node>
@@ -252,7 +252,7 @@
               <property role="2hmy$m" value="20" />
             </node>
             <node concept="3ZVu4v" id="6FLcSer$hH_" role="3TlMhI">
-              <ref role="3ZVs_2" node="6FLcSer$hHv" resolve="var" />
+              <ref role="3ZVs_2" node="6FLcSer$hHv" />
             </node>
           </node>
         </node>
@@ -262,7 +262,7 @@
   <node concept="N3F5e" id="7lNBHBNC4_$">
     <property role="TrG5h" value="TypeDefTest" />
     <node concept="3GEVxB" id="71i8Lmtt0bY" role="2OODSX">
-      <ref role="3GEb4d" node="7lNBHBNC4_M" resolve="TypeDefFromExternalModule" />
+      <ref role="3GEb4d" node="7lNBHBNC4_M" />
     </node>
     <node concept="2NXPZ9" id="4PM5ysqsSKv" role="N3F5h">
       <property role="TrG5h" value="empty_1358327850940_6" />
@@ -284,7 +284,7 @@
             <property role="2hmy$m" value="1" />
           </node>
           <node concept="rcJHQ" id="4qazcyJOfkd" role="2C2TGm">
-            <ref role="rcJHT" node="7lNBHBNC4_C" resolve="zahl" />
+            <ref role="rcJHT" node="7lNBHBNC4_C" />
           </node>
           <node concept="3cQ7KT" id="4PM5ysqsTMw" role="lGtFl">
             <property role="TrG5h" value="firstTypeDefVariableDeclaration" />
@@ -296,7 +296,7 @@
             <property role="2hmy$m" value="10" />
           </node>
           <node concept="rcJHQ" id="4qazcyJOfq4" role="2C2TGm">
-            <ref role="rcJHT" node="7lNBHBNC4_O" resolve="auchNeZahl" />
+            <ref role="rcJHT" node="7lNBHBNC4_O" />
           </node>
           <node concept="3cQ7KT" id="4PM5ysqsTMx" role="lGtFl">
             <property role="TrG5h" value="secondTypeDefVariableDeclaration" />
@@ -306,10 +306,10 @@
           <property role="TrG5h" value="res" />
           <node concept="2BOciq" id="7lNBHBNC4A4" role="3XIe9u">
             <node concept="3ZVu4v" id="7lNBHBNC4A7" role="3TlMhJ">
-              <ref role="3ZVs_2" node="7lNBHBNC4_G" resolve="z1" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_G" />
             </node>
             <node concept="3ZVu4v" id="7lNBHBNC4A3" role="3TlMhI">
-              <ref role="3ZVs_2" node="7lNBHBNC4_S" resolve="z2" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_S" />
             </node>
           </node>
           <node concept="26Vqqz" id="4qazcyJOfpD" role="2C2TGm" />
@@ -320,7 +320,7 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="3ZVu4v" id="7lNBHBNC4Ab" role="3TlMhI">
-              <ref role="3ZVs_2" node="7lNBHBNC4_G" resolve="z1" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_G" />
             </node>
           </node>
         </node>
@@ -331,10 +331,10 @@
             </node>
             <node concept="2BOcih" id="7lNBHBNC4Ak" role="3TlMhI">
               <node concept="3ZVu4v" id="7lNBHBNC4Aj" role="3TlMhI">
-                <ref role="3ZVs_2" node="7lNBHBNC4_S" resolve="z2" />
+                <ref role="3ZVs_2" node="7lNBHBNC4_S" />
               </node>
               <node concept="3ZVu4v" id="7lNBHBNC4An" role="3TlMhJ">
-                <ref role="3ZVs_2" node="7lNBHBNC4_S" resolve="z2" />
+                <ref role="3ZVs_2" node="7lNBHBNC4_S" />
               </node>
             </node>
           </node>
@@ -345,7 +345,7 @@
               <property role="2hmy$m" value="11" />
             </node>
             <node concept="3ZVu4v" id="7lNBHBNC4Ax" role="3TlMhI">
-              <ref role="3ZVs_2" node="7lNBHBNC4_X" resolve="res" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_X" />
             </node>
           </node>
         </node>
@@ -359,10 +359,10 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXFs" role="lIfQt">
-        <ref role="3cM6IK" node="7lNBHBNC4__" resolve="TypedefTest" />
+        <ref role="3cM6IK" node="7lNBHBNC4__" />
       </node>
       <node concept="3cM6IN" id="4Tiud0TdXFt" role="lIfQt">
-        <ref role="3cM6IK" node="6FLcSer$hHj" resolve="testTypeDefFromExternal" />
+        <ref role="3cM6IK" node="6FLcSer$hHj" />
       </node>
     </node>
   </node>

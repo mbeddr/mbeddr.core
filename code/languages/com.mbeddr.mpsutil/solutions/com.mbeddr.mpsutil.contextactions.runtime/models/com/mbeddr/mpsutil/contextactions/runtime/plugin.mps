@@ -22,6 +22,7 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -576,7 +577,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7vUP_qcxi0V" role="2OqNvi">
-              <ref role="37wK5l" to="b9kz:~ToolWindowEx.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
+              <ref role="37wK5l" to="jkny:~ToolWindow.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
               <node concept="2OqwBi" id="7vUP_qcxoai" role="37wK5m">
                 <node concept="2WthIp" id="7vUP_qcxoal" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="7vUP_qcxoan" role="2OqNvi">

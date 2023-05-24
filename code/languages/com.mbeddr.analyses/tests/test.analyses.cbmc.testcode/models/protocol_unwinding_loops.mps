@@ -238,8 +238,8 @@
     <node concept="2EX0iR" id="7UiQjZi_SfP" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="ATMInterface" />
-      <ref role="3Z3Pd3" node="7UiQjZi_SgU" resolve="Messages" />
-      <ref role="3Z3Pdc" node="7UiQjZi_SgV" resolve="protocolFails" />
+      <ref role="3Z3Pd3" node="7UiQjZi_SgU" />
+      <ref role="3Z3Pdc" node="7UiQjZi_SgV" />
       <node concept="2EX0iL" id="7UiQjZi_SfQ" role="2EX0iN">
         <property role="TrG5h" value="startOperation" />
         <node concept="19Rifw" id="7UiQjZi_SfR" role="2C2TGm">
@@ -261,7 +261,7 @@
         </node>
         <node concept="3Z21gw" id="7UiQjZi_SfX" role="3Z21jN">
           <node concept="3Z21g8" id="7UiQjZi_SfY" role="3Z21go">
-            <ref role="3Z21g9" node="7UiQjZi_SfU" resolve="Locked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfU" />
           </node>
           <node concept="3Z21gz" id="7UiQjZi_SfZ" role="3Z21gp">
             <property role="TrG5h" value="Unlocked" />
@@ -276,10 +276,10 @@
         </node>
         <node concept="3Z21gw" id="7UiQjZi_Sg2" role="3Z21jN">
           <node concept="3Z21g8" id="7UiQjZi_Sg3" role="3Z21go">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
           <node concept="3Z21g8" id="7UiQjZi_Sg4" role="3Z21gp">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
         </node>
       </node>
@@ -291,10 +291,10 @@
         </node>
         <node concept="3Z21gw" id="7UiQjZi_Sg7" role="3Z21jN">
           <node concept="3Z21g8" id="7UiQjZi_Sg8" role="3Z21go">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
           <node concept="3Z21g8" id="7UiQjZi_Sg9" role="3Z21gp">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
         </node>
       </node>
@@ -306,10 +306,10 @@
         </node>
         <node concept="3Z21gw" id="7UiQjZi_Sgc" role="3Z21jN">
           <node concept="3Z21g8" id="7UiQjZi_Sgd" role="3Z21go">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
           <node concept="3Z21g8" id="7UiQjZi_Sge" role="3Z21gp">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
         </node>
       </node>
@@ -321,13 +321,13 @@
         </node>
         <node concept="3Z21gw" id="7UiQjZi_Sgh" role="3Z21jN">
           <node concept="3Z21g8" id="7UiQjZi_Sgi" role="3Z21go">
-            <ref role="3Z21g9" node="7UiQjZi_SfZ" resolve="Unlocked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfZ" />
           </node>
           <node concept="3Z21gl" id="7UiQjZi_Sgj" role="3Z21gp" />
         </node>
         <node concept="3Z21gw" id="7UiQjZi_Sgk" role="3Z21jN">
           <node concept="3Z21g8" id="7UiQjZi_Sgl" role="3Z21go">
-            <ref role="3Z21g9" node="7UiQjZi_SfU" resolve="Locked" />
+            <ref role="3Z21g9" node="7UiQjZi_SfU" />
           </node>
           <node concept="3Z21gl" id="7UiQjZi_Sgm" role="3Z21gp" />
         </node>
@@ -341,15 +341,15 @@
       <property role="TrG5h" value="ATMPass_Component" />
       <node concept="2EWHp_" id="7UiQjZi_Sgp" role="2RW2fA">
         <property role="TrG5h" value="ATM" />
-        <ref role="2EX0h9" node="7UiQjZi_SfP" resolve="ATMInterface" />
+        <ref role="2EX0h9" node="7UiQjZi_SfP" />
       </node>
       <node concept="3Khz0B" id="7UiQjZi_Sgq" role="2RW2fA" />
       <node concept="2EWDwb" id="7UiQjZi_Sgr" role="2RW2fA">
         <property role="TrG5h" value="ATM_startOperation" />
         <node concept="3XIRFW" id="7UiQjZi_Sgs" role="2EWMhI" />
         <node concept="2EWDw0" id="7UiQjZi_Sgt" role="2EWDeT">
-          <ref role="1ZwSu5" node="7UiQjZi_Sgp" resolve="ATM" />
-          <ref role="1ZwxE2" node="7UiQjZi_SfQ" resolve="startOperation" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sgp" />
+          <ref role="1ZwxE2" node="7UiQjZi_SfQ" />
         </node>
         <node concept="19Rifw" id="3T2UJ1qv7YR" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -362,8 +362,8 @@
           <node concept="3XISUE" id="7UiQjZi_Sgx" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="7UiQjZi_Sgy" role="2EWDeT">
-          <ref role="1ZwSu5" node="7UiQjZi_Sgp" resolve="ATM" />
-          <ref role="1ZwxE2" node="7UiQjZi_SfV" resolve="insertPIN" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sgp" />
+          <ref role="1ZwxE2" node="7UiQjZi_SfV" />
         </node>
         <node concept="19Rifw" id="7UiQjZi_Sgz" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -374,8 +374,8 @@
         <property role="TrG5h" value="ATM_checkAmount" />
         <node concept="3XIRFW" id="7UiQjZi_Sg_" role="2EWMhI" />
         <node concept="2EWDw0" id="7UiQjZi_SgA" role="2EWDeT">
-          <ref role="1ZwSu5" node="7UiQjZi_Sgp" resolve="ATM" />
-          <ref role="1ZwxE2" node="7UiQjZi_Sg0" resolve="checkAmount" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sgp" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sg0" />
         </node>
         <node concept="19Rifw" id="7UiQjZi_SgB" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -387,13 +387,13 @@
         <node concept="3XIRFW" id="7UiQjZi_SgD" role="2EWMhI">
           <node concept="1_9egQ" id="7UiQjZi_SgE" role="3XIRFZ">
             <node concept="2$_UoH" id="7UiQjZi_SgF" role="1_9egR">
-              <ref role="2$_UoI" node="7UiQjZi_Sg$" resolve="ATM_checkAmount" />
+              <ref role="2$_UoI" node="7UiQjZi_Sg$" />
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="7UiQjZi_SgG" role="2EWDeT">
-          <ref role="1ZwSu5" node="7UiQjZi_Sgp" resolve="ATM" />
-          <ref role="1ZwxE2" node="7UiQjZi_Sg5" resolve="withdraw" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sgp" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sg5" />
         </node>
         <node concept="19Rifw" id="7UiQjZi_SgH" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -405,13 +405,13 @@
         <node concept="3XIRFW" id="7UiQjZi_SgJ" role="2EWMhI">
           <node concept="1_9egQ" id="7UiQjZi_SgK" role="3XIRFZ">
             <node concept="2$_UoH" id="7UiQjZi_SgL" role="1_9egR">
-              <ref role="2$_UoI" node="7UiQjZi_Sg$" resolve="ATM_checkAmount" />
+              <ref role="2$_UoI" node="7UiQjZi_Sg$" />
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="7UiQjZi_SgM" role="2EWDeT">
-          <ref role="1ZwSu5" node="7UiQjZi_Sgp" resolve="ATM" />
-          <ref role="1ZwxE2" node="7UiQjZi_Sga" resolve="deposit" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sgp" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sga" />
         </node>
         <node concept="19Rifw" id="7UiQjZi_SgN" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -424,8 +424,8 @@
           <node concept="3XISUE" id="7UiQjZi_SgQ" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="7UiQjZi_SgR" role="2EWDeT">
-          <ref role="1ZwSu5" node="7UiQjZi_Sgp" resolve="ATM" />
-          <ref role="1ZwxE2" node="7UiQjZi_Sgf" resolve="endOperation" />
+          <ref role="1ZwSu5" node="7UiQjZi_Sgp" />
+          <ref role="1ZwxE2" node="7UiQjZi_Sgf" />
         </node>
         <node concept="19Rifw" id="3T2UJ1qv81J" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -480,16 +480,16 @@
         <property role="35zhco" value="false" />
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="7UiQjZi_Shb" resolve="AllInstances" />
+        <ref role="35zhcq" node="7UiQjZi_Shb" />
       </node>
     </node>
     <node concept="2eOfOl" id="7UiQjZi_Sh6" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="7UiQjZi_Sh7" role="2eOfOg">
-        <ref role="2v9HqP" node="7UiQjZi_SfN" resolve="ATM" />
+        <ref role="2v9HqP" node="7UiQjZi_SfN" />
       </node>
       <node concept="2v9HqM" id="7UiQjZi_Sh8" role="2eOfOg">
-        <ref role="2v9HqP" node="7UiQjZi_Sh9" resolve="Main" />
+        <ref role="2v9HqP" node="7UiQjZi_Sh9" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyheF" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -506,13 +506,13 @@
       <property role="2OOxQR" value="false" />
       <node concept="2EWCuV" id="7UiQjZi_Shc" role="5JtDH">
         <property role="TrG5h" value="atmPassInst" />
-        <ref role="2EWCuU" node="7UiQjZi_Sgo" resolve="ATMPass_Component" />
+        <ref role="2EWCuU" node="7UiQjZi_Sgo" />
       </node>
       <node concept="21gPQu" id="7UiQjZi_Shd" role="5JtDH">
         <property role="TrG5h" value="atmPass" />
         <node concept="219P8x" id="7UiQjZi_She" role="21ad3a">
-          <ref role="219P8w" node="7UiQjZi_Shc" resolve="atmPassInst" />
-          <ref role="219P8J" node="7UiQjZi_Sgp" resolve="ATM" />
+          <ref role="219P8w" node="7UiQjZi_Shc" />
+          <ref role="219P8J" node="7UiQjZi_Sgp" />
         </node>
       </node>
     </node>
@@ -525,17 +525,17 @@
       <node concept="3XIRFW" id="7UiQjZi_Shh" role="3XIRFX">
         <node concept="1_9egQ" id="7UiQjZi_Shi" role="3XIRFZ">
           <node concept="30IJZa" id="7UiQjZi_Shj" role="1_9egR">
-            <ref role="2H6Oet" node="7UiQjZi_SfQ" resolve="startOperation" />
+            <ref role="2H6Oet" node="7UiQjZi_SfQ" />
             <node concept="2H6Wec" id="7UiQjZi_Shk" role="1_9fRO">
-              <ref role="2H6Wef" node="7UiQjZi_Shd" resolve="atmPass" />
+              <ref role="2H6Wef" node="7UiQjZi_Shd" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="7UiQjZi_Shl" role="3XIRFZ">
           <node concept="30IJZa" id="7UiQjZi_Shm" role="1_9egR">
-            <ref role="2H6Oet" node="7UiQjZi_SfV" resolve="insertPIN" />
+            <ref role="2H6Oet" node="7UiQjZi_SfV" />
             <node concept="2H6Wec" id="7UiQjZi_Shn" role="1_9fRO">
-              <ref role="2H6Wef" node="7UiQjZi_Shd" resolve="atmPass" />
+              <ref role="2H6Wef" node="7UiQjZi_Shd" />
             </node>
           </node>
         </node>
@@ -553,16 +553,16 @@
           <node concept="3XIRFW" id="7UiQjZi_Shs" role="1_amYn">
             <node concept="1_9egQ" id="7UiQjZi_Sht" role="3XIRFZ">
               <node concept="30IJZa" id="7UiQjZi_Shu" role="1_9egR">
-                <ref role="2H6Oet" node="7UiQjZi_Sga" resolve="deposit" />
+                <ref role="2H6Oet" node="7UiQjZi_Sga" />
                 <node concept="2H6Wec" id="7UiQjZi_Shv" role="1_9fRO">
-                  <ref role="2H6Wef" node="7UiQjZi_Shd" resolve="atmPass" />
+                  <ref role="2H6Wef" node="7UiQjZi_Shd" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3Tl9Jn" id="7UiQjZi_Shw" role="1_amZB">
             <node concept="3ZVu4v" id="7UiQjZi_Shx" role="3TlMhI">
-              <ref role="3ZVs_2" node="7UiQjZi_Shp" resolve="i" />
+              <ref role="3ZVs_2" node="7UiQjZi_Shp" />
             </node>
             <node concept="3TlMh9" id="7UiQjZi_Shy" role="3TlMhJ">
               <property role="2hmy$m" value="9" />
@@ -570,15 +570,15 @@
           </node>
           <node concept="3TM6Ey" id="7UiQjZi_Shz" role="1_amZy">
             <node concept="3ZVu4v" id="7UiQjZi_Sh$" role="1_9fRO">
-              <ref role="3ZVs_2" node="7UiQjZi_Shp" resolve="i" />
+              <ref role="3ZVs_2" node="7UiQjZi_Shp" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="7UiQjZi_Sh_" role="3XIRFZ">
           <node concept="30IJZa" id="7UiQjZi_ShA" role="1_9egR">
-            <ref role="2H6Oet" node="7UiQjZi_Sgf" resolve="endOperation" />
+            <ref role="2H6Oet" node="7UiQjZi_Sgf" />
             <node concept="2H6Wec" id="7UiQjZi_ShB" role="1_9fRO">
-              <ref role="2H6Wef" node="7UiQjZi_Shd" resolve="atmPass" />
+              <ref role="2H6Wef" node="7UiQjZi_Shd" />
             </node>
           </node>
         </node>
@@ -596,12 +596,12 @@
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="7UiQjZi_ShF" role="3XIRFX">
         <node concept="3t9XKO" id="7UiQjZi_ShG" role="3XIRFZ">
-          <ref role="3t9XKR" node="7UiQjZi_Shb" resolve="AllInstances" />
+          <ref role="3t9XKR" node="7UiQjZi_Shb" />
         </node>
         <node concept="3XISUE" id="7UiQjZi_ShH" role="3XIRFZ" />
         <node concept="1_9egQ" id="7UiQjZi_ShI" role="3XIRFZ">
           <node concept="3O_q_g" id="7UiQjZi_ShJ" role="1_9egR">
-            <ref role="3O_q_h" node="7UiQjZi_Shg" resolve="ATMLongLoop" />
+            <ref role="3O_q_h" node="7UiQjZi_Shg" />
           </node>
         </node>
         <node concept="3XISUE" id="7UiQjZi_ShK" role="3XIRFZ" />
@@ -636,7 +636,7 @@
     </node>
     <node concept="3GEVxB" id="19LfhoY0f2F" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="7UiQjZi_SfN" resolve="ATM" />
+      <ref role="3GEb4d" node="7UiQjZi_SfN" />
     </node>
   </node>
   <node concept="29QVxn" id="15d7XIoBIIO" />

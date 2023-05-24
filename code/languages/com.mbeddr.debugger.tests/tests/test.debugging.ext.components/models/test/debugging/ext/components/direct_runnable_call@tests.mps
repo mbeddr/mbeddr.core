@@ -45,7 +45,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -136,7 +136,7 @@
         <property role="TrG5h" value="count" />
       </node>
       <node concept="1vv375" id="4WY_RKG_ap0" role="1zHble">
-        <ref role="1vv99g" node="4WY_RKG_8QS" resolve="globals" />
+        <ref role="1vv99g" node="4WY_RKG_8QS" />
       </node>
     </node>
     <node concept="1vsUH6" id="4WY_RKG_8QO" role="1zJi$$">
@@ -155,7 +155,7 @@
       <node concept="3clFbS" id="4WY_RKG_15a" role="3clF47" />
       <node concept="3sdZbQ" id="4WY_RKG_15b" role="3scror">
         <node concept="3sdZbA" id="4WY_RKG_15c" role="3sdZbB">
-          <ref role="3sa5fj" to="8k34:4WY_RKGuhaz" resolve="calling1stRunnable" />
+          <ref role="3sa5fj" to="8k34:4WY_RKGuhaz" />
         </node>
       </node>
       <node concept="3savIG" id="4WY_RKG_15d" role="3savwP">
@@ -167,11 +167,11 @@
         <node concept="30a7bf" id="4WY_RKG_15p" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEpU" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="8k34:4WY_RKGuha$" resolve="calling2ndRunnable" />
+            <ref role="3cQ7K8" to="8k34:4WY_RKGuha$" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG_15s" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG_8QO" resolve="inTestCall" />
+          <ref role="1vtf2j" node="4WY_RKG_8QO" />
         </node>
       </node>
     </node>
@@ -182,7 +182,7 @@
       <node concept="3clFbS" id="4WY_RKG_8Qz" role="3clF47" />
       <node concept="3sdZbQ" id="4WY_RKG_8Q$" role="3scror">
         <node concept="3sdZbA" id="4WY_RKG_8QB" role="3sdZbB">
-          <ref role="3sa5fj" to="8k34:4WY_RKG_8QA" resolve="inside1stCalledRunnable" />
+          <ref role="3sa5fj" to="8k34:4WY_RKG_8QA" />
         </node>
       </node>
       <node concept="3savIG" id="4WY_RKG_8QC" role="3savwP">
@@ -194,15 +194,15 @@
         <node concept="30a7bf" id="4WY_RKG_8QF" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEpW" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="8k34:4WY_RKGuha$" resolve="calling2ndRunnable" />
+            <ref role="3cQ7K8" to="8k34:4WY_RKGuha$" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG_8QH" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG_8QO" resolve="inTestCall" />
+          <ref role="1vtf2j" node="4WY_RKG_8QO" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG_8QI" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG_8QT" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG_8QS" resolve="globals" />
+            <ref role="1vv99g" node="4WY_RKG_8QS" />
           </node>
         </node>
       </node>
@@ -214,7 +214,7 @@
       <node concept="3clFbS" id="4WY_RKG_8QY" role="3clF47" />
       <node concept="3sdZbQ" id="4WY_RKG_8QZ" role="3scror">
         <node concept="3sdZbA" id="4WY_RKG_8R0" role="3sdZbB">
-          <ref role="3sa5fj" to="8k34:4WY_RKGuha$" resolve="calling2ndRunnable" />
+          <ref role="3sa5fj" to="8k34:4WY_RKGuha$" />
         </node>
       </node>
       <node concept="3savIG" id="4WY_RKG_8R1" role="3savwP">
@@ -229,24 +229,24 @@
         <node concept="30a7bf" id="4WY_RKG_8R6" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEpY" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="8k34:4WY_RKGuha$" resolve="calling2ndRunnable" />
+            <ref role="3cQ7K8" to="8k34:4WY_RKGuha$" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG_8R9" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG_8QO" resolve="inTestCall" />
+          <ref role="1vtf2j" node="4WY_RKG_8QO" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG_8Ra" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG_8Rb" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG_8QS" resolve="globals" />
+            <ref role="1vv99g" node="4WY_RKG_8QS" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="4WY_RKGuhaC" role="3qy1PE">
-      <ref role="30ajXG" to="8k34:78Ts1skplM_" resolve="DirectRunnableCallTest" />
+      <ref role="30ajXG" to="8k34:78Ts1skplM_" />
     </node>
     <node concept="1rNadw" id="3lUAsMPdfGA" role="1zJi$_">
-      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" resolve="Main" />
+      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRN5" role="29bA6Q" />
   </node>

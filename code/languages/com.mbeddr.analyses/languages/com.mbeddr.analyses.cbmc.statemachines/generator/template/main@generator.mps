@@ -285,7 +285,7 @@
           </node>
           <node concept="1LFe83" id="55cMrg_8pWG" role="N3F5h">
             <property role="TrG5h" value="Statemachine" />
-            <ref role="1LFebw" node="55cMrg_8pWI" resolve="Init" />
+            <ref role="1LFebw" node="55cMrg_8pWI" />
             <node concept="2cfOFI" id="55cMrg_8pWL" role="1_Iowf">
               <property role="TrG5h" value="tick" />
             </node>
@@ -293,9 +293,9 @@
             <node concept="1LFebX" id="55cMrg_8pWI" role="1_Iowf">
               <property role="TrG5h" value="Init" />
               <node concept="1LFeb9" id="55cMrg_8pWM" role="1KoBSX">
-                <ref role="1zztin" node="55cMrg_8pWI" resolve="Init" />
+                <ref role="1zztin" node="55cMrg_8pWI" />
                 <node concept="349iI2" id="55cMrg_8pWO" role="2qxFSM">
-                  <ref role="1bNv6r" node="55cMrg_8pWL" resolve="tick" />
+                  <ref role="1bNv6r" node="55cMrg_8pWL" />
                   <node concept="29HgVG" id="55cMrg_8qvn" role="lGtFl">
                     <node concept="3NFfHV" id="55cMrg_8qvq" role="3NFExx">
                       <node concept="3clFbS" id="55cMrg_8qvr" role="2VODD2">
@@ -458,7 +458,7 @@
           </node>
           <node concept="1LFe83" id="qjOluQlPMS" role="N3F5h">
             <property role="TrG5h" value="Statemachine" />
-            <ref role="1LFebw" node="qjOluQlPMV" resolve="Init" />
+            <ref role="1LFebw" node="qjOluQlPMV" />
             <node concept="2cfOFI" id="qjOluQlPMT" role="1_Iowf">
               <property role="TrG5h" value="tick" />
             </node>
@@ -466,7 +466,7 @@
             <node concept="1LFebX" id="qjOluQlPMV" role="1_Iowf">
               <property role="TrG5h" value="Init" />
               <node concept="1zztty" id="qjOluQlS$H" role="1KoBSX">
-                <ref role="1zztin" node="qjOluQlPMV" resolve="Init" />
+                <ref role="1zztin" node="qjOluQlPMV" />
                 <node concept="3TlMhK" id="qjOluQlTfJ" role="1zz7me">
                   <node concept="29HgVG" id="qjOluQlTgG" role="lGtFl">
                     <node concept="3NFfHV" id="qjOluQlTgH" role="3NFExx">
@@ -613,7 +613,7 @@
           </node>
           <node concept="1LFe83" id="3oU9lB0JAQ8" role="N3F5h">
             <property role="TrG5h" value="Statemachine" />
-            <ref role="1LFebw" node="3oU9lB0JAQb" resolve="Init" />
+            <ref role="1LFebw" node="3oU9lB0JAQb" />
             <node concept="2cfOFI" id="3oU9lB0JAQ9" role="1_Iowf">
               <property role="TrG5h" value="tick" />
             </node>
@@ -728,9 +728,9 @@
                 </node>
               </node>
               <node concept="1LFeb9" id="6zmpM6BuHzQ" role="1KoBSX">
-                <ref role="1zztin" node="3oU9lB0JAQb" resolve="Init" />
+                <ref role="1zztin" node="3oU9lB0JAQb" />
                 <node concept="349iI2" id="6zmpM6BuHzS" role="2qxFSM">
-                  <ref role="1bNv6r" node="3oU9lB0JAQ9" resolve="tick" />
+                  <ref role="1bNv6r" node="3oU9lB0JAQ9" />
                 </node>
                 <node concept="2b32R4" id="6zmpM6BuHzU" role="lGtFl">
                   <node concept="3JmXsc" id="6zmpM6BuHzX" role="2P8S$">
@@ -848,7 +848,7 @@
           </node>
           <node concept="1LFe83" id="7Tdla9PNd7M" role="N3F5h">
             <property role="TrG5h" value="Statemachine" />
-            <ref role="1LFebw" node="7Tdla9PNin5" resolve="Junction" />
+            <ref role="1LFebw" node="7Tdla9PNin5" />
             <node concept="2cfOFI" id="7Tdla9PNd7N" role="1_Iowf">
               <property role="TrG5h" value="tick" />
             </node>
@@ -963,7 +963,7 @@
                 </node>
               </node>
               <node concept="1zztty" id="7Tdla9PNnMY" role="1KoBSX">
-                <ref role="1zztin" node="7Tdla9PNin5" resolve="Junction" />
+                <ref role="1zztin" node="7Tdla9PNin5" />
                 <node concept="2b32R4" id="7Tdla9PNp70" role="lGtFl">
                   <node concept="3JmXsc" id="7Tdla9PNp73" role="2P8S$">
                     <node concept="3clFbS" id="7Tdla9PNp74" role="2VODD2">
@@ -1080,7 +1080,7 @@
           </node>
           <node concept="1LFe83" id="Z9MVf4F$VU" role="N3F5h">
             <property role="TrG5h" value="Statemachine" />
-            <ref role="1LFebw" node="1fLSIrNfHe2" resolve="Init" />
+            <ref role="1LFebw" node="1fLSIrNfHe2" />
             <node concept="2cfOFI" id="1fLSIrNfBum" role="1_Iowf">
               <property role="TrG5h" value="event" />
             </node>
@@ -1089,7 +1089,7 @@
             </node>
             <node concept="1KoyTk" id="Z9MVf4FCW7" role="1_Iowf">
               <property role="TrG5h" value="Composite" />
-              <ref role="1KpzkS" node="Z9MVf4FEH9" resolve="A" />
+              <ref role="1KpzkS" node="Z9MVf4FEH9" />
               <node concept="OCJnL" id="Z9MVf4Ggrn" role="1KoBSX">
                 <node concept="2xGTIE" id="Z9MVf4Ggro" role="S7lxW">
                   <node concept="3ITNCd" id="Z9MVf4Ggrp" role="3XIRFZ">

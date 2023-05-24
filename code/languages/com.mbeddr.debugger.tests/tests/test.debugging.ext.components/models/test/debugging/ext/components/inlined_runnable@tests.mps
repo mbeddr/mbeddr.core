@@ -40,7 +40,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -85,7 +85,7 @@
     <property role="TrG5h" value="DirectRunnableCall" />
     <node concept="29bEnc" id="5t7wq7uZSoz" role="29bA6Q" />
     <node concept="3qy1PH" id="6_QWgLdjpC6" role="3qy1PE">
-      <ref role="30ajXG" to="vs6j:2VzPqUCq7E5" resolve="InlineTest" />
+      <ref role="30ajXG" to="vs6j:2VzPqUCq7E5" />
     </node>
     <node concept="3scrou" id="6_QWgLdjpC7" role="1zJi$$">
       <property role="3sdR9e" value="true" />
@@ -94,7 +94,7 @@
       <node concept="3clFbS" id="6_QWgLdjpC9" role="3clF47" />
       <node concept="3sdZbQ" id="6_QWgLdjpCa" role="3scror">
         <node concept="3sdZbA" id="6_QWgLdjpCb" role="3sdZbB">
-          <ref role="3sa5fj" to="vs6j:6_QWgLdjpC4" resolve="stepIntoInternalRunnableCall" />
+          <ref role="3sa5fj" to="vs6j:6_QWgLdjpC4" />
         </node>
       </node>
       <node concept="3savIG" id="6_QWgLdjpCc" role="3savwP">
@@ -106,7 +106,7 @@
         <node concept="30a7bf" id="6_QWgLdjpCf" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEZJ" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="vs6j:6_QWgLdjpC5" resolve="1stStmntInInternalRunnable" />
+            <ref role="3cQ7K8" to="vs6j:6_QWgLdjpC5" />
           </node>
         </node>
       </node>
@@ -121,13 +121,13 @@
         <node concept="30a7bf" id="uZ8WnxAKbv" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEZL" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="vs6j:6_QWgLdjpC4" resolve="stepIntoInternalRunnableCall" />
+            <ref role="3cQ7K8" to="vs6j:6_QWgLdjpC4" />
           </node>
         </node>
       </node>
       <node concept="3sdZbQ" id="uZ8WnxAKbt" role="3scror">
         <node concept="3sdZbA" id="uZ8WnxAKbu" role="3sdZbB">
-          <ref role="3sa5fj" to="vs6j:6_QWgLdjpC4" resolve="stepIntoInternalRunnableCall" />
+          <ref role="3sa5fj" to="vs6j:6_QWgLdjpC4" />
         </node>
       </node>
     </node>
@@ -141,13 +141,13 @@
         <node concept="30a7bf" id="7R8D1VYM5Uj" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEZN" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="vs6j:7R8D1VYM5Uo" resolve="afterRunnableCall" />
+            <ref role="3cQ7K8" to="vs6j:7R8D1VYM5Uo" />
           </node>
         </node>
       </node>
       <node concept="3sdZbQ" id="7R8D1VYM5Ul" role="3scror">
         <node concept="3sdZbA" id="7R8D1VYM5Up" role="3sdZbB">
-          <ref role="3sa5fj" to="vs6j:7R8D1VYM5Uo" resolve="afterRunnableCall" />
+          <ref role="3sa5fj" to="vs6j:7R8D1VYM5Uo" />
         </node>
       </node>
     </node>

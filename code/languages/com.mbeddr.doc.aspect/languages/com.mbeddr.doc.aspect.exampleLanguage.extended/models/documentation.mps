@@ -84,7 +84,7 @@
   <node concept="1_1swa" id="3TrpzyP_Ftq">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="AdditionalDocumentation" />
-    <ref role="G9hjw" node="5CkU_dHbJMe" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="5CkU_dHbJMe" />
     <node concept="1_0VNX" id="3TrpzyP_Ftu" role="1_0VJ0">
       <property role="TrG5h" value="ColoredNode" />
       <property role="1_0VJr" value="Colored Node" />

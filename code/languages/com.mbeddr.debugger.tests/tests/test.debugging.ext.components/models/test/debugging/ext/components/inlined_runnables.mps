@@ -210,13 +210,13 @@
         <property role="35zhco" value="true" />
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="2VzPqUCqgUp" resolve="instances" />
+        <ref role="35zhcq" node="2VzPqUCqgUp" />
       </node>
     </node>
     <node concept="2eOfOl" id="2VzPqUCq7E5" role="2ePNbc">
       <property role="TrG5h" value="InlineTest" />
       <node concept="2v9HqM" id="6_QWgLdjp5I" role="2eOfOg">
-        <ref role="2v9HqP" node="2VzPqUCqgUy" resolve="Main" />
+        <ref role="2v9HqP" node="2VzPqUCqgUy" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTh3" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -240,13 +240,13 @@
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="2VzPqUCqgU$" role="3XIRFX">
         <node concept="3t9XKO" id="6_QWgLdjnQs" role="3XIRFZ">
-          <ref role="3t9XKR" node="2VzPqUCqgUp" resolve="instances" />
+          <ref role="3t9XKR" node="2VzPqUCqgUp" />
         </node>
         <node concept="1_9egQ" id="6_QWgLdjp5C" role="3XIRFZ">
           <node concept="30IJZa" id="6_QWgLdjp5G" role="1_9egR">
-            <ref role="2H6Oet" node="6_QWgLdjp5q" resolve="doSomething" />
+            <ref role="2H6Oet" node="6_QWgLdjp5q" />
             <node concept="2H6Wec" id="6_QWgLdjp5D" role="1_9fRO">
-              <ref role="2H6Wef" node="6_QWgLdjp5x" resolve="a" />
+              <ref role="2H6Wef" node="6_QWgLdjp5x" />
             </node>
           </node>
         </node>
@@ -269,34 +269,34 @@
       <property role="2OOxQR" value="true" />
       <node concept="2EWCuV" id="2VzPqUCqgUq" role="5JtDH">
         <property role="TrG5h" value="l" />
-        <ref role="2EWCuU" node="6_QWgLdjomx" resolve="LoggerImpl" />
+        <ref role="2EWCuU" node="6_QWgLdjomx" />
       </node>
       <node concept="2EWCuV" id="2VzPqUCqgUs" role="5JtDH">
         <property role="TrG5h" value="app" />
-        <ref role="2EWCuU" node="6_QWgLdjomH" resolve="AppComponent" />
+        <ref role="2EWCuU" node="6_QWgLdjomH" />
       </node>
       <node concept="2EWCuP" id="2VzPqUCqgUt" role="5JtDH">
         <node concept="2EWCuO" id="2VzPqUCqgUu" role="2EWCuL">
-          <ref role="XcPQd" node="6_QWgLdjoAV" resolve="logger" />
-          <ref role="2EWCuR" node="2VzPqUCqgUs" resolve="app" />
+          <ref role="XcPQd" node="6_QWgLdjoAV" />
+          <ref role="2EWCuR" node="2VzPqUCqgUs" />
         </node>
         <node concept="2EWCuO" id="2VzPqUCqgUv" role="2EWCuK">
-          <ref role="2EWCuR" node="2VzPqUCqgUq" resolve="l" />
-          <ref role="XcPQd" node="6_QWgLdjomy" resolve="i" />
+          <ref role="2EWCuR" node="2VzPqUCqgUq" />
+          <ref role="XcPQd" node="6_QWgLdjomy" />
         </node>
       </node>
       <node concept="21gPQu" id="6_QWgLdjnQA" role="5JtDH">
         <property role="TrG5h" value="l2" />
         <node concept="219P8x" id="6_QWgLdjnQB" role="21ad3a">
-          <ref role="219P8J" node="6_QWgLdjomy" resolve="i" />
-          <ref role="219P8w" node="2VzPqUCqgUq" resolve="l" />
+          <ref role="219P8J" node="6_QWgLdjomy" />
+          <ref role="219P8w" node="2VzPqUCqgUq" />
         </node>
       </node>
       <node concept="21gPQu" id="6_QWgLdjp5x" role="5JtDH">
         <property role="TrG5h" value="a" />
         <node concept="219P8x" id="6_QWgLdjp5y" role="21ad3a">
-          <ref role="219P8J" node="6_QWgLdjp5m" resolve="useless" />
-          <ref role="219P8w" node="2VzPqUCqgUs" resolve="app" />
+          <ref role="219P8J" node="6_QWgLdjp5m" />
+          <ref role="219P8w" node="2VzPqUCqgUs" />
         </node>
       </node>
     </node>
@@ -346,7 +346,7 @@
       <property role="TrG5h" value="LoggerImpl" />
       <node concept="2EWHp_" id="6_QWgLdjomy" role="2RW2fA">
         <property role="TrG5h" value="i" />
-        <ref role="2EX0h9" node="6_QWgLdjomr" resolve="Logger" />
+        <ref role="2EX0h9" node="6_QWgLdjomr" />
       </node>
       <node concept="EbCE0" id="6_QWgLdjpwd" role="2RW2fA">
         <property role="TrG5h" value="bla" />
@@ -369,7 +369,7 @@
               <property role="2c7vTL" value="false" />
             </node>
             <node concept="3ZUYvv" id="7hPD5_a6GBw" role="3XIe9u">
-              <ref role="3ZUYvu" node="7hPD5_a6Fbg" resolve="value" />
+              <ref role="3ZUYvu" node="7hPD5_a6Fbg" />
             </node>
             <node concept="3cQ7KT" id="6_QWgLdjpC5" role="lGtFl">
               <property role="TrG5h" value="1stStmntInInternalRunnable" />
@@ -377,8 +377,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="6_QWgLdjomC" role="2EWDeT">
-          <ref role="1ZwxE2" node="6_QWgLdjoms" resolve="log" />
-          <ref role="1ZwSu5" node="6_QWgLdjomy" resolve="i" />
+          <ref role="1ZwxE2" node="6_QWgLdjoms" />
+          <ref role="1ZwSu5" node="6_QWgLdjomy" />
         </node>
         <node concept="19Rifw" id="7hPD5_a6Fbf" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -401,11 +401,11 @@
       <property role="TrG5h" value="AppComponent" />
       <node concept="2EWHp$" id="6_QWgLdjoAV" role="2RW2fA">
         <property role="TrG5h" value="logger" />
-        <ref role="2EX0h9" node="6_QWgLdjomr" resolve="Logger" />
+        <ref role="2EX0h9" node="6_QWgLdjomr" />
       </node>
       <node concept="2EWHp_" id="6_QWgLdjp5m" role="2RW2fA">
         <property role="TrG5h" value="useless" />
-        <ref role="2EX0h9" node="6_QWgLdjp5p" resolve="Useless" />
+        <ref role="2EX0h9" node="6_QWgLdjp5p" />
       </node>
       <node concept="2EWDwb" id="6_QWgLdjp01" role="2RW2fA">
         <property role="TrG5h" value="useless_doSomething" />
@@ -422,9 +422,9 @@
           </node>
           <node concept="1_9egQ" id="6_QWgLdjp06" role="3XIRFZ">
             <node concept="30IBQI" id="6_QWgLdjp0a" role="1_9egR">
-              <ref role="2H6Oet" node="6_QWgLdjoms" resolve="log" />
+              <ref role="2H6Oet" node="6_QWgLdjoms" />
               <node concept="2H6loZ" id="6_QWgLdjp07" role="1_9fRO">
-                <ref role="2H6loY" node="6_QWgLdjoAV" resolve="logger" />
+                <ref role="2H6loY" node="6_QWgLdjoAV" />
               </node>
               <node concept="3TlMh9" id="6_QWgLdjp0b" role="2H6KYo">
                 <property role="2hmy$m" value="2" />
@@ -440,7 +440,7 @@
                 <property role="2hmy$m" value="3" />
               </node>
               <node concept="3ZVu4v" id="7R8D1VYLPnN" role="3TlMhI">
-                <ref role="3ZVs_2" node="6_QWgLdjpgf" resolve="thisDoesNOthingSensible2" />
+                <ref role="3ZVs_2" node="6_QWgLdjpgf" />
               </node>
             </node>
             <node concept="3cQ7KT" id="7R8D1VYM5Uo" role="lGtFl">
@@ -449,8 +449,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="6_QWgLdjp5v" role="2EWDeT">
-          <ref role="1ZwSu5" node="6_QWgLdjp5m" resolve="useless" />
-          <ref role="1ZwxE2" node="6_QWgLdjp5q" resolve="doSomething" />
+          <ref role="1ZwSu5" node="6_QWgLdjp5m" />
+          <ref role="1ZwxE2" node="6_QWgLdjp5q" />
         </node>
         <node concept="19Rifw" id="7hPD5_a6C4z" role="2C2TGm">
           <property role="2caQfQ" value="false" />

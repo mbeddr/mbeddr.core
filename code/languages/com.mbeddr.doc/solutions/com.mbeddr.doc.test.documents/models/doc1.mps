@@ -114,7 +114,7 @@
   <node concept="1_1swa" id="4pIcGABsAb1">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="myDocument" />
-    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="IneedThisToo" />
+    <ref role="G9hjw" node="4pIcGABsMlJ" />
     <node concept="1_0VNX" id="4pIcGABsAb2" role="1_0VJ0">
       <property role="TrG5h" value="firstsection" />
       <property role="1_0VJr" value="This the first section" />
@@ -151,11 +151,11 @@
     <property role="TrG5h" value="AndIAlsoNeedThis" />
     <property role="WqcPg" value="My strange export config" />
     <node concept="1_0j5j" id="4pIcGABsMl2" role="30Gjbj">
-      <ref role="1_0j5g" node="4pIcGABsAb1" resolve="myDocument" />
+      <ref role="1_0j5g" node="4pIcGABsAb1" />
     </node>
     <node concept="2SbEIf" id="4pIcGABsMlM" role="30Gjbg">
       <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
-      <ref role="2SbEIe" node="4pIcGABsMlK" resolve="main" />
+      <ref role="2SbEIe" node="4pIcGABsMlK" />
     </node>
     <node concept="1TaS0h" id="1xGVIWdAy29" role="30GjaH" />
   </node>
@@ -181,7 +181,7 @@
   <node concept="1_1swa" id="VwEtPa9mmy">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="ImageParagraph" />
-    <ref role="G9hjw" node="4pIcGABsMlJ" resolve="IneedThisToo" />
+    <ref role="G9hjw" node="4pIcGABsMlJ" />
     <node concept="1_0LV8" id="VwEtPa9mmz" role="1_0VJ0">
       <node concept="19SGf9" id="VwEtPa9mm$" role="1_0LWR">
         <node concept="19SUe$" id="VwEtPa9mm_" role="19SJt6">
@@ -196,7 +196,7 @@
       <property role="TrG5h" value="img" />
       <node concept="2Sb_l4" id="VwEtPa9mn9" role="2SbwM5">
         <property role="2Sb_kV" value="config.png" />
-        <ref role="2Sb_kU" node="2B9KjOuvX9d" resolve="imgs" />
+        <ref role="2Sb_kU" node="2B9KjOuvX9d" />
       </node>
       <node concept="OjmMv" id="VwEtPa9mmT" role="2SaI5j">
         <node concept="19SGf9" id="VwEtPa9mmU" role="OjmMu">

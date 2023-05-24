@@ -241,7 +241,7 @@
     <node concept="2eOfOl" id="34d3$NxXg9p" role="2ePNbc">
       <property role="TrG5h" value="ReqCTest" />
       <node concept="2v9HqM" id="34d3$NxXg9q" role="2eOfOg">
-        <ref role="2v9HqP" node="34d3$NxWRf0" resolve="Code" />
+        <ref role="2v9HqP" node="34d3$NxWRf0" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxE9g" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -270,9 +270,9 @@
       <node concept="3XIRFW" id="34d3$NxWRfY" role="3XIRFX">
         <node concept="2BFjQ_" id="34d3$NxWRg2" role="3XIRFZ">
           <node concept="3gY9rg" id="34d3$NxXqI$" role="2BFjQA">
-            <ref role="3gY9ri" node="34d3$NxXj6j" resolve="rebatedPrice" />
+            <ref role="3gY9ri" node="34d3$NxXj6j" />
             <node concept="3ZUYvv" id="34d3$NxXs2D" role="3gY9rj">
-              <ref role="3ZUYvu" node="34d3$NxWRg0" resolve="factor" />
+              <ref role="3ZUYvu" node="34d3$NxWRg0" />
             </node>
           </node>
         </node>
@@ -319,7 +319,7 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3gZA9h" id="53uVI115iT" role="3TlMhI">
-              <ref role="3gZA9i" node="34d3$NxWRf6" resolve="PRICE" />
+              <ref role="3gZA9i" node="34d3$NxWRf6" />
             </node>
           </node>
         </node>
@@ -342,7 +342,7 @@
               <property role="2hmy$m" value="20" />
             </node>
             <node concept="3O_q_g" id="53uVI115ja" role="3TlMhI">
-              <ref role="3O_q_h" node="34d3$NxWRfW" resolve="rebate" />
+              <ref role="3O_q_h" node="34d3$NxWRfW" />
               <node concept="3TlMh9" id="53uVI115jb" role="3O_q_j">
                 <property role="2hmy$m" value="2" />
               </node>
@@ -359,19 +359,19 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zJESq" role="lIfQt">
-        <ref role="3cM6IK" node="53uVI115iO" resolve="testConstant" />
+        <ref role="3cM6IK" node="53uVI115iO" />
       </node>
       <node concept="3cM6IN" id="4Ru$s7zJESr" role="lIfQt">
-        <ref role="3cM6IK" node="53uVI115j2" resolve="testRebate" />
+        <ref role="3cM6IK" node="53uVI115j2" />
       </node>
     </node>
     <node concept="3GEVxB" id="1MB8zB9M_CR" role="2OODSX">
-      <ref role="3GEb4d" node="34d3$NxWRf1" resolve="Requirements" />
+      <ref role="3GEb4d" node="34d3$NxWRf1" />
     </node>
   </node>
   <node concept="3fbPIq" id="34d3$NxWRf1">
     <property role="TrG5h" value="Requirements" />
-    <ref role="G9hjw" node="1TS1BLOVkLg" resolve="DefaultDocConfig" />
+    <ref role="G9hjw" node="1TS1BLOVkLg" />
     <node concept="3fbQ3u" id="34d3$NxWRf2" role="3fbPIo">
       <property role="TrG5h" value="R1" />
       <property role="1ylvJX" value="Price is 10 EUR" />
@@ -404,10 +404,10 @@
         <property role="TrG5h" value="rebatedPrice" />
         <node concept="2BOcij" id="34d3$NxXj6s" role="3gY2Yk">
           <node concept="3gY2Kx" id="34d3$NxXj6p" role="3TlMhI">
-            <ref role="3gY2Ky" node="34d3$NxXj6l" resolve="rebate" />
+            <ref role="3gY2Ky" node="34d3$NxXj6l" />
           </node>
           <node concept="3gZA9h" id="34d3$NxXj6v" role="3TlMhJ">
-            <ref role="3gZA9i" node="34d3$NxWRf6" resolve="PRICE" />
+            <ref role="3gZA9i" node="34d3$NxWRf6" />
           </node>
         </node>
         <node concept="3gY2Y8" id="34d3$NxXj6l" role="3gY2Yq">
@@ -479,7 +479,7 @@
         <node concept="eGT6z" id="35Kh8LWt48N" role="3gY2Yk">
           <node concept="2BOcij" id="35Kh8LWt49z" role="eGTpt">
             <node concept="3gZA9h" id="35Kh8LWt49A" role="3TlMhJ">
-              <ref role="3gZA9i" node="35Kh8LWt48v" resolve="PER_MINUTE" />
+              <ref role="3gZA9i" node="35Kh8LWt48v" />
             </node>
             <node concept="3TlMh9" id="35Kh8LWt49w" role="3TlMhI">
               <property role="2hmy$m" value="100" />
@@ -495,7 +495,7 @@
                 <property role="2hmy$m" value="10" />
               </node>
               <node concept="3gY2Kx" id="35Kh8LWt48U" role="3TlMhI">
-                <ref role="3gY2Ky" node="35Kh8LWt48B" resolve="duration" />
+                <ref role="3gY2Ky" node="35Kh8LWt48B" />
               </node>
             </node>
             <node concept="3TlMh9" id="35Kh8LWt491" role="eGT6G">
@@ -505,10 +505,10 @@
           <node concept="eGT6y" id="35Kh8LWt492" role="eGTpe">
             <node concept="2BOcij" id="35Kh8LWt49s" role="eGT6G">
               <node concept="3gZA9h" id="35Kh8LWt49v" role="3TlMhJ">
-                <ref role="3gZA9i" node="35Kh8LWt48v" resolve="PER_MINUTE" />
+                <ref role="3gZA9i" node="35Kh8LWt48v" />
               </node>
               <node concept="3gY2Kx" id="35Kh8LWt49p" role="3TlMhI">
-                <ref role="3gY2Ky" node="35Kh8LWt48B" resolve="duration" />
+                <ref role="3gY2Ky" node="35Kh8LWt48B" />
               </node>
             </node>
             <node concept="2EHzL6" id="35Kh8LWt49e" role="eGT6H">
@@ -517,12 +517,12 @@
                   <property role="2hmy$m" value="100" />
                 </node>
                 <node concept="3gY2Kx" id="35Kh8LWt49h" role="3TlMhI">
-                  <ref role="3gY2Ky" node="35Kh8LWt48B" resolve="duration" />
+                  <ref role="3gY2Ky" node="35Kh8LWt48B" />
                 </node>
               </node>
               <node concept="3Tl9Jp" id="35Kh8LWt498" role="3TlMhI">
                 <node concept="3gY2Kx" id="35Kh8LWt495" role="3TlMhI">
-                  <ref role="3gY2Ky" node="35Kh8LWt48B" resolve="duration" />
+                  <ref role="3gY2Ky" node="35Kh8LWt48B" />
                 </node>
                 <node concept="3TlMh9" id="35Kh8LWt49b" role="3TlMhJ">
                   <property role="2hmy$m" value="10" />

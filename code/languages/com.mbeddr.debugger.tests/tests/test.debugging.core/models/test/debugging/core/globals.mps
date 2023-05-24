@@ -147,13 +147,13 @@
     <node concept="2eOfOl" id="5IYyAOzCBdJ" role="2ePNbc">
       <property role="TrG5h" value="GlobalVariablesTest" />
       <node concept="2v9HqM" id="5IYyAOzCBdK" role="2eOfOg">
-        <ref role="2v9HqP" node="5IYyAOzCAw1" resolve="Driver" />
+        <ref role="2v9HqP" node="5IYyAOzCAw1" />
       </node>
       <node concept="2v9HqM" id="5IYyAOzCBdM" role="2eOfOg">
-        <ref role="2v9HqP" node="5IYyAOzCvNg" resolve="GlobalModule1" />
+        <ref role="2v9HqP" node="5IYyAOzCvNg" />
       </node>
       <node concept="2v9HqM" id="5IYyAOzCBdO" role="2eOfOg">
-        <ref role="2v9HqP" node="5IYyAOzC_F8" resolve="GlobalModule2" />
+        <ref role="2v9HqP" node="5IYyAOzC_F8" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTgJ" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -183,7 +183,7 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXFj" role="lIfQt">
-        <ref role="3cM6IK" node="5IYyAOzCwFD" resolve="testglobalvar" />
+        <ref role="3cM6IK" node="5IYyAOzCwFD" />
         <node concept="3cQ7KT" id="3cUcim$fhos" role="lGtFl">
           <property role="TrG5h" value="mainFunction" />
         </node>
@@ -194,11 +194,11 @@
     </node>
     <node concept="3GEVxB" id="76ic3S1BffY" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="5IYyAOzCvNg" resolve="GlobalModule1" />
+      <ref role="3GEb4d" node="5IYyAOzCvNg" />
     </node>
     <node concept="3GEVxB" id="76ic3S1BffH" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="5IYyAOzC_F8" resolve="GlobalModule2" />
+      <ref role="3GEb4d" node="5IYyAOzC_F8" />
     </node>
   </node>
   <node concept="N3F5e" id="5IYyAOzCvNg">
@@ -225,7 +225,7 @@
       <node concept="3XIRFW" id="5IYyAOzCwFB" role="c0Qz3">
         <node concept="1_9egQ" id="N4aOVKwZ0a" role="3XIRFZ">
           <node concept="3O_q_g" id="N4aOVKwZ0b" role="1_9egR">
-            <ref role="3O_q_h" node="N4aOVKwneD" resolve="initGlobal" />
+            <ref role="3O_q_h" node="N4aOVKwneD" />
           </node>
           <node concept="3cQ7KT" id="bKKma6GwFM" role="lGtFl">
             <property role="TrG5h" value="mixingGlobalAndLocalVariables" />
@@ -234,7 +234,7 @@
         <node concept="1_9egQ" id="1exqRpao7u" role="3XIRFZ">
           <node concept="3pqW6w" id="1exqRpao7v" role="1_9egR">
             <node concept="1S7827" id="N4aOVKxhW_" role="3TlMhI">
-              <ref role="1S7826" node="5IYyAOzCvNh" resolve="x" />
+              <ref role="1S7826" node="5IYyAOzCvNh" />
             </node>
             <node concept="3TlMh9" id="N4aOVKxhWC" role="3TlMhJ">
               <property role="2hmy$m" value="10" />
@@ -244,21 +244,21 @@
         <node concept="3XIRlf" id="5IYyAOzCzTZ" role="3XIRFZ">
           <property role="TrG5h" value="l" />
           <node concept="1S7827" id="5IYyAOzC_fn" role="3XIe9u">
-            <ref role="1S7826" node="5IYyAOzCvNh" resolve="x" />
+            <ref role="1S7826" node="5IYyAOzCvNh" />
           </node>
           <node concept="26Vqqz" id="4qazcyJOfm4" role="2C2TGm" />
         </node>
         <node concept="3XIRlf" id="5IYyAOzCAv_" role="3XIRFZ">
           <property role="TrG5h" value="m" />
           <node concept="1S7827" id="5IYyAOzCAvC" role="3XIe9u">
-            <ref role="1S7826" node="5IYyAOzC_F9" resolve="global2" />
+            <ref role="1S7826" node="5IYyAOzC_F9" />
           </node>
           <node concept="26Vqqz" id="4qazcyJOfpm" role="2C2TGm" />
         </node>
         <node concept="c0Tn9" id="5IYyAOzCAvE" role="3XIRFZ">
           <node concept="3TlM44" id="5IYyAOzCAvH" role="c0Tn6">
             <node concept="3ZVu4v" id="5IYyAOzCAvG" role="3TlMhI">
-              <ref role="3ZVs_2" node="5IYyAOzCzTZ" resolve="l" />
+              <ref role="3ZVs_2" node="5IYyAOzCzTZ" />
               <node concept="3rBczg" id="3ilck8KpYUJ" role="lGtFl">
                 <property role="3rBc$l" value="l" />
               </node>
@@ -271,7 +271,7 @@
         <node concept="c0Tn9" id="5IYyAOzCAvK" role="3XIRFZ">
           <node concept="3TlM44" id="5IYyAOzCAvN" role="c0Tn6">
             <node concept="1S7827" id="5IYyAOzCAvM" role="3TlMhI">
-              <ref role="1S7826" node="5IYyAOzCvNh" resolve="x" />
+              <ref role="1S7826" node="5IYyAOzCvNh" />
             </node>
             <node concept="3TlMh9" id="5IYyAOzCAvO" role="3TlMhJ">
               <property role="2hmy$m" value="10" />
@@ -281,7 +281,7 @@
         <node concept="c0Tn9" id="5IYyAOzCAvQ" role="3XIRFZ">
           <node concept="3TlM44" id="5IYyAOzCAvT" role="c0Tn6">
             <node concept="3ZVu4v" id="5IYyAOzCAvS" role="3TlMhI">
-              <ref role="3ZVs_2" node="5IYyAOzCAv_" resolve="m" />
+              <ref role="3ZVs_2" node="5IYyAOzCAv_" />
             </node>
             <node concept="3TlMh9" id="5IYyAOzCAvU" role="3TlMhJ">
               <property role="2hmy$m" value="22" />
@@ -291,7 +291,7 @@
         <node concept="c0Tn9" id="5IYyAOzCAvW" role="3XIRFZ">
           <node concept="3TlM44" id="5IYyAOzCAvZ" role="c0Tn6">
             <node concept="1S7827" id="5IYyAOzCAvY" role="3TlMhI">
-              <ref role="1S7826" node="5IYyAOzC_F9" resolve="global2" />
+              <ref role="1S7826" node="5IYyAOzC_F9" />
             </node>
             <node concept="3TlMh9" id="5IYyAOzCAw0" role="3TlMhJ">
               <property role="2hmy$m" value="22" />
@@ -305,7 +305,7 @@
       <property role="TrG5h" value="empty_1326293459530_2" />
     </node>
     <node concept="3GEVxB" id="686MYtro0tp" role="2OODSX">
-      <ref role="3GEb4d" node="5IYyAOzC_F8" resolve="GlobalModule2" />
+      <ref role="3GEb4d" node="5IYyAOzC_F8" />
     </node>
   </node>
   <node concept="N3F5e" id="5IYyAOzC_F8">
@@ -337,7 +337,7 @@
         <node concept="1_9egQ" id="1exqRpao2m" role="3XIRFZ">
           <node concept="3pqW6w" id="1exqRpao2n" role="1_9egR">
             <node concept="1S7827" id="N4aOVKwneH" role="3TlMhI">
-              <ref role="1S7826" node="5IYyAOzC_F9" resolve="global2" />
+              <ref role="1S7826" node="5IYyAOzC_F9" />
             </node>
             <node concept="3TlMh9" id="N4aOVKwneJ" role="3TlMhJ">
               <property role="2hmy$m" value="22" />

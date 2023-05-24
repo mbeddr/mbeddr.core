@@ -79,7 +79,7 @@
   <node concept="1_1swa" id="3cgsogVwvcw">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="MainChapterDoc" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="3xmJbL" id="3cgsogVwvdz" role="1_0VJ0" />
     <node concept="1_1sxE" id="3cgsogVwvdM" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -100,13 +100,13 @@
     </node>
     <node concept="$CzcT" id="3cgsogVwvfk" role="1_0VJ0">
       <node concept="1_0j5j" id="3cgsogVwvf_" role="$CzcU">
-        <ref role="1_0j5g" node="3cgsogVwvek" resolve="Chapter2" />
+        <ref role="1_0j5g" node="3cgsogVwvek" />
       </node>
     </node>
     <node concept="$CzcT" id="3cgsogVwvfW" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="3cgsogVwvgl" role="$CzcU">
-        <ref role="1_0j5g" node="3cgsogVwvfR" resolve="Chapter3" />
+        <ref role="1_0j5g" node="3cgsogVwvfR" />
       </node>
     </node>
     <node concept="1_1sxE" id="3cgsogVwvcD" role="1_0VJ0">
@@ -124,10 +124,10 @@
       </node>
     </node>
     <node concept="1_0j5j" id="3cgsogVwveu" role="1DXQ57">
-      <ref role="1_0j5g" node="3cgsogVwvek" resolve="Chapter2" />
+      <ref role="1_0j5g" node="3cgsogVwvek" />
     </node>
     <node concept="1_0j5j" id="3cgsogVwvgh" role="1DXQ57">
-      <ref role="1_0j5g" node="3cgsogVwvfR" resolve="Chapter3" />
+      <ref role="1_0j5g" node="3cgsogVwvfR" />
     </node>
   </node>
   <node concept="2SbYGP" id="2khznRHyx6c">
@@ -154,14 +154,14 @@
     <property role="TrG5h" value="Export" />
     <property role="WqcPg" value="Export config for chapter-ref example" />
     <node concept="1_0j5j" id="3cgsogVwvcx" role="30Gjbj">
-      <ref role="1_0j5g" node="3cgsogVwvcw" resolve="MainChapterDoc" />
+      <ref role="1_0j5g" node="3cgsogVwvcw" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
   </node>
   <node concept="1_1swa" id="3cgsogVwvek">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="Chapter2" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1mvXsy" id="3cgsogVwvel" role="1_0VJ0">
       <property role="TrG5h" value="SecondChapter" />
       <property role="1_0VJr" value="Second chapter" />
@@ -177,7 +177,7 @@
   <node concept="1_1swa" id="3cgsogVwvfR">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="Chapter3" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1mvXsy" id="3cgsogVwvfS" role="1_0VJ0">
       <property role="TrG5h" value="ThirdChapter" />
       <property role="1_0VJr" value="Third chapter" />

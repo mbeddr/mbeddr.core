@@ -141,7 +141,7 @@
           <node concept="1_9egQ" id="1exqRpao2G" role="3XIRFZ">
             <node concept="3pqW6w" id="1exqRpao2H" role="1_9egR">
               <node concept="1S7827" id="5aaBiRowpBk" role="3TlMhI">
-                <ref role="1S7826" node="5aaBiRowpB0" resolve="x" />
+                <ref role="1S7826" node="5aaBiRowpB0" />
               </node>
               <node concept="3TlMh9" id="5aaBiRowpBn" role="3TlMhJ">
                 <property role="2hmy$m" value="10" />
@@ -154,9 +154,9 @@
                 <property role="2hmy$m" value="13" />
               </node>
               <node concept="3O_q_g" id="5aaBiRowsI5" role="3TlMhI">
-                <ref role="3O_q_h" node="5aaBiRowsHI" resolve="add" />
+                <ref role="3O_q_h" node="5aaBiRowsHI" />
                 <node concept="1S7827" id="5aaBiRowsI6" role="3O_q_j">
-                  <ref role="1S7826" node="5aaBiRowpB0" resolve="x" />
+                  <ref role="1S7826" node="5aaBiRowpB0" />
                 </node>
                 <node concept="3TlMh9" id="5aaBiRowsI8" role="3O_q_j">
                   <property role="2hmy$m" value="3" />
@@ -178,10 +178,10 @@
           <node concept="2BFjQ_" id="5aaBiRowsHR" role="3XIRFZ">
             <node concept="2BOciq" id="5aaBiRowsHT" role="2BFjQA">
               <node concept="3ZUYvv" id="5aaBiRowsHW" role="3TlMhJ">
-                <ref role="3ZUYvu" node="5aaBiRowsHP" resolve="y" />
+                <ref role="3ZUYvu" node="5aaBiRowsHP" />
               </node>
               <node concept="3ZUYvv" id="5aaBiRowsHS" role="3TlMhI">
-                <ref role="3ZUYvu" node="5aaBiRowsHM" resolve="x" />
+                <ref role="3ZUYvu" node="5aaBiRowsHM" />
               </node>
             </node>
           </node>
@@ -205,13 +205,13 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhk" role="lIfQt">
-        <ref role="3cM6IK" node="5aaBiRowpBf" resolve="TestAccessX" />
+        <ref role="3cM6IK" node="5aaBiRowpBf" />
       </node>
     </node>
   </node>
   <node concept="2v9HqL" id="5aaBiRowsIx">
     <node concept="2xfidK" id="1WKZBvBXE1o" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
     </node>
     <node concept="2Q9Fgs" id="5aaBiRowsIz" role="2Q9xDr">
       <node concept="2Q9FjX" id="5aaBiRowsI$" role="2Q9FjI" />
@@ -219,7 +219,7 @@
     <node concept="2eOfOl" id="5aaBiRowsI_" role="2ePNbc">
       <property role="TrG5h" value="SectionTest" />
       <node concept="2v9HqM" id="5aaBiRowsIA" role="2eOfOg">
-        <ref role="2v9HqP" node="5aaBiRowmD2" resolve="SectionsModule" />
+        <ref role="2v9HqP" node="5aaBiRowmD2" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgn" role="1kZvWc">
         <property role="TrG5h" value="any" />

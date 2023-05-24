@@ -103,17 +103,17 @@
     <property role="WqcPg" value="Testing sup script" />
     <node concept="2SbEIf" id="3aMV05sEezA" role="30Gjbg">
       <property role="2SbEId" value="/hello" />
-      <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
+      <ref role="2SbEIe" node="2khznRHyx6e" />
     </node>
     <node concept="1_0j5j" id="3aMV05sEeH4" role="30Gjbj">
-      <ref role="1_0j5g" node="3aMV05sEe$3" resolve="SupScriptTest" />
+      <ref role="1_0j5g" node="3aMV05sEe$3" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
   </node>
   <node concept="1_1swa" id="3aMV05sEe$3">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="SupScriptTest" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1_0VNX" id="3aMV05sEe$b" role="1_0VJ0">
       <property role="TrG5h" value="TestSupScript" />
       <property role="1_0VJr" value="TestingSupScript" />

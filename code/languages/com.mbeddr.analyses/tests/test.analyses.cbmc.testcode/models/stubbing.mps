@@ -132,20 +132,20 @@
     </node>
     <node concept="35oZfL" id="7DvJ5MZkzlh" role="2Q9xDr">
       <node concept="35oYyT" id="7DvJ5MZkzlp" role="35oYyH">
-        <ref role="35oYyU" node="7DvJ5MZkzjA" resolve="free" />
-        <ref role="35oYyQ" node="7DvJ5MZkHeV" resolve="free_stub" />
+        <ref role="35oYyU" node="7DvJ5MZkzjA" />
+        <ref role="35oYyQ" node="7DvJ5MZkHeV" />
       </node>
     </node>
     <node concept="29Nb31" id="7DvJ5MZkzi8" role="2ePNbc">
       <property role="TrG5h" value="lib" />
       <node concept="2v9HqM" id="7DvJ5MZkzkV" role="2eOfOg">
-        <ref role="2v9HqP" node="7DvJ5MZkzia" resolve="smoke_sut" />
+        <ref role="2v9HqP" node="7DvJ5MZkzia" />
       </node>
       <node concept="2v9HqM" id="7DvJ5MZkHKp" role="2eOfOg">
-        <ref role="2v9HqP" node="7DvJ5MZkHeU" resolve="stubs_defs" />
+        <ref role="2v9HqP" node="7DvJ5MZkHeU" />
       </node>
       <node concept="2v9HqM" id="7DvJ5MZkzl4" role="2eOfOg">
-        <ref role="2v9HqP" node="7DvJ5MZkziX" resolve="stdlib" />
+        <ref role="2v9HqP" node="7DvJ5MZkziX" />
       </node>
       <node concept="ZOQlw" id="59cfP9ua1ZO" role="1kZvWc">
         <property role="TrG5h" value="none" />
@@ -173,9 +173,9 @@
         <node concept="3XISUE" id="7DvJ5MZkGFF" role="3XIRFZ" />
         <node concept="1_9egQ" id="7DvJ5MZkGFq" role="3XIRFZ">
           <node concept="3O_q_g" id="7DvJ5MZkGFo" role="1_9egR">
-            <ref role="3O_q_h" node="7DvJ5MZkzjA" resolve="free" />
+            <ref role="3O_q_h" node="7DvJ5MZkzjA" />
             <node concept="3ZVu4v" id="7DvJ5MZkGHm" role="3O_q_j">
-              <ref role="3ZVs_2" node="7DvJ5MZkGFQ" resolve="mem" />
+              <ref role="3ZVs_2" node="7DvJ5MZkGFQ" />
             </node>
           </node>
         </node>
@@ -192,10 +192,10 @@
       <property role="TrG5h" value="empty_1430171061463_16" />
     </node>
     <node concept="3GEVxB" id="7DvJ5MZkGFl" role="2OODSX">
-      <ref role="3GEb4d" node="7DvJ5MZkziX" resolve="stdlib" />
+      <ref role="3GEb4d" node="7DvJ5MZkziX" />
     </node>
     <node concept="3GEVxB" id="7DvJ5MZx__2" role="2OODSX">
-      <ref role="3GEb4d" node="7DvJ5MZkHeU" resolve="stubs_defs" />
+      <ref role="3GEb4d" node="7DvJ5MZkHeU" />
     </node>
   </node>
   <node concept="29QVxn" id="7DvJ5MZkziw" />
@@ -264,7 +264,7 @@
       <property role="TrG5h" value="empty_1430171061463_16" />
     </node>
     <node concept="3GEVxB" id="7DvJ5MZkHf8" role="2OODSX">
-      <ref role="3GEb4d" node="7DvJ5MZkziX" resolve="stdlib" />
+      <ref role="3GEb4d" node="7DvJ5MZkziX" />
     </node>
   </node>
 </model>

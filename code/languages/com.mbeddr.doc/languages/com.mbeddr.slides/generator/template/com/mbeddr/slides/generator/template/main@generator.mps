@@ -558,7 +558,7 @@
     </node>
     <node concept="3lhOvk" id="4IRvlq8d4sD" role="3lj3bC">
       <ref role="30HIoZ" to="apd:4IRvlq8cC5U" resolve="SlideDeck" />
-      <ref role="3lhOvi" node="4IRvlq8d4ZX" resolve="map_SlideDeck" />
+      <ref role="3lhOvi" node="4IRvlq8d4ZX" />
     </node>
   </node>
   <node concept="1Xc25A" id="4IRvlq8d4ZX">

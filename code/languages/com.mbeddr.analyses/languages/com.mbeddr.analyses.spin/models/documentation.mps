@@ -17,7 +17,7 @@
     </language>
   </registry>
   <node concept="2F6ySF" id="4O5goBat6UF">
-    <ref role="2F6ySG" to="xx8a:4l47ydyjg11" resolve="_000_MDCC_Top" />
+    <ref role="2F6ySG" to="xx8a:4l47ydyjg11" />
   </node>
 </model>
 

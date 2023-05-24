@@ -192,12 +192,12 @@
       <node concept="5JiAF" id="7mgpfAOAD07" role="2RW2fA">
         <node concept="2EWCuV" id="7mgpfAOAD12" role="5JtDH">
           <property role="TrG5h" value="c1" />
-          <ref role="2EWCuU" node="7mgpfAOACVI" resolve="CompWithInterruptRunnable" />
+          <ref role="2EWCuU" node="7mgpfAOACVI" />
         </node>
         <node concept="3_ZhDN" id="7mgpfAOAD1G" role="5JtDH">
-          <ref role="3_ZhDO" node="7mgpfAOACXK" resolve="ISR1" />
-          <ref role="3_ZhDP" node="7mgpfAOAD12" resolve="c1" />
-          <ref role="3_ZhDQ" node="7mgpfAOACWA" resolve="isr" />
+          <ref role="3_ZhDO" node="7mgpfAOACXK" />
+          <ref role="3_ZhDP" node="7mgpfAOAD12" />
+          <ref role="3_ZhDQ" node="7mgpfAOACWA" />
         </node>
       </node>
       <node concept="3Khz0B" id="7mgpfAOAD2I" role="2RW2fA" />
@@ -220,12 +220,12 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="7mgpfAOAD8c" role="5JtDH">
         <property role="TrG5h" value="cc" />
-        <ref role="2EWCuU" node="7mgpfAOAD06" resolve="CompositeComp" />
+        <ref role="2EWCuU" node="7mgpfAOAD06" />
       </node>
       <node concept="3_ZhDN" id="7mgpfAOAD90" role="5JtDH">
-        <ref role="3_ZhDO" node="7mgpfAOACZi" resolve="ISR2" />
-        <ref role="3_ZhDP" node="7mgpfAOAD8c" resolve="cc" />
-        <ref role="3_ZhDQ" node="7mgpfAOAD4x" resolve="isr" />
+        <ref role="3_ZhDO" node="7mgpfAOACZi" />
+        <ref role="3_ZhDP" node="7mgpfAOAD8c" />
+        <ref role="3_ZhDQ" node="7mgpfAOAD4x" />
       </node>
     </node>
     <node concept="2NXPZ9" id="7mgpfAOAD9m" role="N3F5h">
@@ -240,7 +240,7 @@
       </node>
       <node concept="3XIRFW" id="7mgpfAOADb9" role="c0Qz3">
         <node concept="3t9XKO" id="7mgpfAOADeH" role="3XIRFZ">
-          <ref role="3t9XKR" node="7mgpfAOAD6P" resolve="instances" />
+          <ref role="3t9XKR" node="7mgpfAOAD6P" />
         </node>
       </node>
     </node>
@@ -252,7 +252,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKdy" role="lIfQt">
-        <ref role="3cM6IK" node="7mgpfAOADb6" resolve="generationTest" />
+        <ref role="3cM6IK" node="7mgpfAOADb6" />
       </node>
     </node>
   </node>
@@ -260,7 +260,7 @@
     <node concept="2eOfOl" id="7mgpfAOAPnR" role="2ePNbc">
       <property role="TrG5h" value="embedded" />
       <node concept="2v9HqM" id="7mgpfAOAPnV" role="2eOfOg">
-        <ref role="2v9HqP" node="7mgpfAOACSr" resolve="CompositeComponentWithInterruptBinding" />
+        <ref role="2v9HqP" node="7mgpfAOACSr" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApr" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -282,7 +282,7 @@
       <node concept="3i3YCL" id="7mgpfAOAPBI" role="3i30U9">
         <property role="35zhco" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="7mgpfAOAD6P" resolve="instances" />
+        <ref role="35zhcq" node="7mgpfAOAD6P" />
       </node>
     </node>
     <node concept="3_WZtN" id="7mgpfAOAPCk" role="2Q9xDr" />

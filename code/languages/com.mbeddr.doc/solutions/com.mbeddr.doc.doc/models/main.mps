@@ -245,7 +245,7 @@
   </registry>
   <node concept="1_1swa" id="1ZiHc0gKI6c">
     <property role="TrG5h" value="A_Introduction" />
-    <ref role="G9hjw" node="1ZiHc0gKI6e" resolve="Config" />
+    <ref role="G9hjw" node="1ZiHc0gKI6e" />
     <node concept="1_1sxE" id="1ZiHc0gKJBw" role="1_0VJ0">
       <property role="TrG5h" value="empty_1363185602732_1" />
     </node>
@@ -368,15 +368,15 @@
     <property role="WqcPg" value="The mbeddr Documentation Language" />
     <property role="3GE5qa" value="cfg" />
     <node concept="1_0j5j" id="7$DvC4gPSIe" role="30Gjbj">
-      <ref role="1_0j5g" node="7$DvC4gPSI3" resolve="Root" />
+      <ref role="1_0j5g" node="7$DvC4gPSI3" />
     </node>
     <node concept="2SbEIf" id="7$DvC4gR8ER" role="30Gjbg">
       <property role="2SbEId" value="figures/doc" />
-      <ref role="2SbEIe" node="7$DvC4gPWka" resolve="imgTemp" />
+      <ref role="2SbEIe" node="7$DvC4gPWka" />
     </node>
     <node concept="2SbEIf" id="7$DvC4gRmn4" role="30Gjbg">
       <property role="2SbEId" value="figures/doc" />
-      <ref role="2SbEIe" node="7$DvC4gRmn2" resolve="images" />
+      <ref role="2SbEIe" node="7$DvC4gRmn2" />
     </node>
     <node concept="OjmMv" id="7$DvC4gRvLP" role="WqcPc">
       <node concept="19SGf9" id="7$DvC4gRvLQ" role="OjmMu">
@@ -395,7 +395,7 @@
   </node>
   <node concept="1_1swa" id="7$DvC4gPSHs">
     <property role="TrG5h" value="B_SimpleDocuments" />
-    <ref role="G9hjw" node="1ZiHc0gKI6e" resolve="Config" />
+    <ref role="G9hjw" node="1ZiHc0gKI6e" />
     <node concept="1_0VNX" id="7$DvC4gPSHO" role="1_0VJ0">
       <property role="TrG5h" value="normalDocs" />
       <property role="1_0VJr" value="Writing Regular Documents" />
@@ -445,7 +445,7 @@
               <property role="19SUeA" value="). It has vertical brackets \non both sides to denote its boundary. Below in fig " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gR7Wy" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gPWk8" resolve="exSection" />
+              <ref role="2SbdyP" node="7$DvC4gPWk8" />
             </node>
             <node concept="19SUe$" id="7$DvC4gR7Wx" role="19SJt6">
               <property role="19SUeA" value=" is an \nexample, that also embeds this same paragraph as an image." />
@@ -454,8 +454,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gPWk8" role="1_0VJ0">
           <property role="TrG5h" value="exSection" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
-          <ref role="1DZJkt" node="4vQSg$ApPwv" resolve="simpleText" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
+          <ref role="1DZJkt" node="4vQSg$ApPwv" />
           <node concept="3SGHZ$" id="7$DvC4gPWkb" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -507,7 +507,7 @@
               <property role="19SUeA" value=" in the text paragraph to see which formatting options are \navailable. Formatting options all start with a backslash. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRlCS" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRlCM" resolve="formatting" />
+              <ref role="2SbdyP" node="7$DvC4gRlCM" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRlCR" role="19SJt6">
               <property role="19SUeA" value=" shows \nthe paragraph you're reading here as a screenshot so you can see the way to \nformat words. " />
@@ -516,8 +516,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gRlCM" role="1_0VJ0">
           <property role="TrG5h" value="formatting" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
-          <ref role="1DZJkt" node="4vQSg$ApPwo" resolve="formatting" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
+          <ref role="1DZJkt" node="4vQSg$ApPwo" />
           <node concept="3SGHZ$" id="7$DvC4gRlCW" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -539,13 +539,13 @@
               <property role="19SUeA" value="You can also embed images that are not rendered from within MPS, but are supplied\nexternally. Below, im " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRmnm" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRmnf" resolve="glider" />
+              <ref role="2SbdyP" node="7$DvC4gRmnf" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRmnn" role="19SJt6">
               <property role="19SUeA" value=", is an example. The code to embed an image is shown in " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRmTr" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRmnu" resolve="figures" />
+              <ref role="2SbdyP" node="7$DvC4gRmnu" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRmTs" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -557,7 +557,7 @@
           <property role="2Sbq$t" value="false" />
           <node concept="2Sb_l4" id="7$DvC4gRmnl" role="2SbwM5">
             <property role="2Sb_kV" value="ash26.png" />
-            <ref role="2Sb_kU" node="7$DvC4gRmn2" resolve="images" />
+            <ref role="2Sb_kU" node="7$DvC4gRmn2" />
           </node>
           <node concept="OjmMv" id="7$DvC4gRmnh" role="2SaI5j">
             <node concept="19SGf9" id="7$DvC4gRmni" role="OjmMu">
@@ -572,8 +572,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gRmnu" role="1_0VJ0">
           <property role="TrG5h" value="figures" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
-          <ref role="1DZJkt" node="4vQSg$ApPwt" resolve="figures" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
+          <ref role="1DZJkt" node="4vQSg$ApPwt" />
           <node concept="3SGHZ$" id="7$DvC4gRmCw" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -598,7 +598,7 @@
               <property role="19SUeA" value="The path definitions are made in the document configuration, and include a path\nthat is valid while the document is edited; MPS path variables can be used. When\nthe document is exported (see below), these are mapped to paths relative to the\nlocation at which the document is located. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRnzp" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRnzk" resolve="config" />
+              <ref role="2SbdyP" node="7$DvC4gRnzk" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRnzq" role="19SJt6">
               <property role="19SUeA" value=" shows the document config\nfor this document. Note that you can also define size specifications there that\ncan be referenced from images within the document (to reuse the size specs)." />
@@ -607,8 +607,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gRnzk" role="1_0VJ0">
           <property role="TrG5h" value="config" />
-          <ref role="1DZJkt" node="1ZiHc0gKI6e" resolve="Config" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
+          <ref role="1DZJkt" node="1ZiHc0gKI6e" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
           <node concept="3SGHZ$" id="7$DvC4gRtRb" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -651,7 +651,7 @@
               <property role="19SUeA" value="Exporting the document (as HTML, PDF, or possibly in other formats) involves two\nsteps. First, you likely wrote the overall text in several actual documents. To \ncreate a big, contiguous HTML or Latex document you probably want to join them.\nYou can do this by creating another document and including others. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRvM1" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRvLW" resolve="root" />
+              <ref role="2SbdyP" node="7$DvC4gRvLW" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRvM2" role="19SJt6">
               <property role="19SUeA" value=" shows\nan example how to do that. Note that you can only include documents for which you \nspecify a dependency in the document header." />
@@ -660,8 +660,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gRvLW" role="1_0VJ0">
           <property role="TrG5h" value="root" />
-          <ref role="1DZJkt" node="7$DvC4gPSI3" resolve="Root" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
+          <ref role="1DZJkt" node="7$DvC4gPSI3" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
           <node concept="OjmMv" id="7$DvC4gRvLY" role="1DWI4Y">
             <node concept="19SGf9" id="7$DvC4gRvLZ" role="OjmMu">
               <node concept="19SUe$" id="7$DvC4gRvM0" role="19SJt6">
@@ -670,7 +670,7 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7$DvC4gV3x$" role="3SH_4S">
-            <ref role="3SH5fe" node="7$DvC4gV3xo" resolve="smallCodeShot" />
+            <ref role="3SH5fe" node="7$DvC4gV3xo" />
           </node>
         </node>
         <node concept="1_0LV8" id="7$DvC4gRwzg" role="1_0VJ0">
@@ -679,13 +679,13 @@
               <property role="19SUeA" value="The second ingredient is the actual export configuration, as shown in " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRwzq" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRwzk" resolve="doc" />
+              <ref role="2SbdyP" node="7$DvC4gRwzk" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRwzp" role="19SJt6">
               <property role="19SUeA" value=".\nThere, you specify a document title, optionally an abstract, a root document, as \nwell as a renderer. You also specify path mappings: the path definitions from the\nconfiguration (" />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRwzs" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gRnzk" resolve="config" />
+              <ref role="2SbdyP" node="7$DvC4gRnzk" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRwzr" role="19SJt6">
               <property role="19SUeA" value=") now have to be mapped to paths relative to the output\nfolder of the generated document (most likely you have to manually create a script \nthat copies these resources into this directory). " />
@@ -694,8 +694,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gRwzk" role="1_0VJ0">
           <property role="TrG5h" value="doc" />
-          <ref role="1DZJkt" node="1ZiHc0gLrRv" resolve="DocumentationDocumentation" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
+          <ref role="1DZJkt" node="1ZiHc0gLrRv" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
           <node concept="3SGHZ$" id="7$DvC4gRwzl" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -744,7 +744,7 @@
               <property role="19SUeA" value="The documentation language is extensible. It can embed all kinds of other things.\nIn the previous section " />
             </node>
             <node concept="1_0GAv" id="7$DvC4gRxtS" role="19SJt6">
-              <ref role="1_0GAl" node="7$DvC4gPSHO" resolve="normalDocs" />
+              <ref role="1_0GAl" node="7$DvC4gPSHO" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRxtT" role="19SJt6">
               <property role="19SUeA" value=" we have already implictly seen how to \nembed screenshots of documentation artifacts. This is probably a bit weird and \nmeta, but it is useful for documenting the documentation language. It also shows\noff the flexibility of the approach itself." />
@@ -794,7 +794,7 @@
               <property role="19SUeA" value="\nreference. The code for tables is shown in " />
             </node>
             <node concept="2Sbdz4" id="519ky_SmA8E" role="19SJt6">
-              <ref role="2SbdyP" node="519ky_SmA8_" resolve="tables" />
+              <ref role="2SbdyP" node="519ky_SmA8_" />
             </node>
             <node concept="19SUe$" id="519ky_SmA8G" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -880,8 +880,8 @@
         </node>
         <node concept="1Ae1f2" id="519ky_SmA8_" role="1_0VJ0">
           <property role="TrG5h" value="tables" />
-          <ref role="1DZJkt" node="4vQSg$Ascei" resolve="tables" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
+          <ref role="1DZJkt" node="4vQSg$Ascei" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
           <node concept="3SGHZ$" id="519ky_SmA8A" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -903,19 +903,19 @@
               <property role="19SUeA" value="Documents can also use glossaries. One of these can be found in " />
             </node>
             <node concept="1_0GAv" id="7rXn3flJCiq" role="19SJt6">
-              <ref role="1_0GAl" node="7rXn3flJDQM" resolve="importantTerms" />
+              <ref role="1_0GAl" node="7rXn3flJDQM" />
             </node>
             <node concept="19SUe$" id="7rXn3flJCir" role="19SJt6">
               <property role="19SUeA" value=".\nIt contains a collection of terms such as " />
             </node>
             <node concept="2zg8ej" id="7rXn3flJCis" role="19SJt6">
-              <ref role="2zg8eq" node="7rXn3flJGna" resolve="Car" />
+              <ref role="2zg8eq" node="7rXn3flJGna" />
             </node>
             <node concept="19SUe$" id="7rXn3flJCit" role="19SJt6">
               <property role="19SUeA" value=" or " />
             </node>
             <node concept="2zg8ej" id="7rXn3flJCiu" role="19SJt6">
-              <ref role="2zg8eq" node="7rXn3flJGUi" resolve="Wheel" />
+              <ref role="2zg8eq" node="7rXn3flJGUi" />
             </node>
             <node concept="19SUe$" id="7rXn3flJCiv" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -938,64 +938,64 @@
       <property role="Wq1Bq" value="voelter@acm.org" />
     </node>
     <node concept="1_0j5j" id="7rXn3flJDQK" role="1DXQ57">
-      <ref role="1_0j5g" node="7rXn3flJCi4" resolve="Z_Glossary" />
+      <ref role="1_0j5g" node="7rXn3flJCi4" />
     </node>
   </node>
   <node concept="1_1swa" id="7$DvC4gPSI3">
     <property role="TrG5h" value="Root" />
     <property role="3GE5qa" value="cfg" />
-    <ref role="G9hjw" node="1ZiHc0gKI6e" resolve="Config" />
+    <ref role="G9hjw" node="1ZiHc0gKI6e" />
     <node concept="1_1sxE" id="7$DvC4gPSI4" role="1_0VJ0">
       <property role="TrG5h" value="empty_1363188921837_5" />
     </node>
     <node concept="$CzcT" id="7$DvC4gPSI7" role="1_0VJ0">
       <node concept="1_0j5j" id="7$DvC4gPSI9" role="$CzcU">
-        <ref role="1_0j5g" node="1ZiHc0gKI6c" resolve="A_Introduction" />
+        <ref role="1_0j5g" node="1ZiHc0gKI6c" />
       </node>
     </node>
     <node concept="$CzcT" id="7$DvC4gPSIb" role="1_0VJ0">
       <node concept="1_0j5j" id="7$DvC4gPSId" role="$CzcU">
-        <ref role="1_0j5g" node="7$DvC4gPSHs" resolve="B_SimpleDocuments" />
+        <ref role="1_0j5g" node="7$DvC4gPSHs" />
       </node>
     </node>
     <node concept="$CzcT" id="7$DvC4gRxXY" role="1_0VJ0">
       <node concept="1_0j5j" id="7$DvC4gRxY0" role="$CzcU">
-        <ref role="1_0j5g" node="7$DvC4gRxXV" resolve="C_EmbeddingMbeddr" />
+        <ref role="1_0j5g" node="7$DvC4gRxXV" />
       </node>
     </node>
     <node concept="$CzcT" id="4vQSg$Arkse" role="1_0VJ0">
       <node concept="1_0j5j" id="4vQSg$Arksg" role="$CzcU">
-        <ref role="1_0j5g" node="4vQSg$Arks5" resolve="D_Extending" />
+        <ref role="1_0j5g" node="4vQSg$Arks5" />
       </node>
     </node>
     <node concept="$CzcT" id="7rXn3flJD1A" role="1_0VJ0">
       <node concept="1_0j5j" id="7rXn3flJD1E" role="$CzcU">
-        <ref role="1_0j5g" node="7rXn3flJCi4" resolve="Z_Glossary" />
+        <ref role="1_0j5g" node="7rXn3flJCi4" />
       </node>
     </node>
     <node concept="1_1sxE" id="7$DvC4gPSI6" role="1_0VJ0">
       <property role="TrG5h" value="empty_1363188922445_7" />
     </node>
     <node concept="1_0j5j" id="7$DvC4gRI5_" role="1DXQ57">
-      <ref role="1_0j5g" node="1ZiHc0gKI6c" resolve="A_Introduction" />
+      <ref role="1_0j5g" node="1ZiHc0gKI6c" />
     </node>
     <node concept="1_0j5j" id="7$DvC4gRI5x" role="1DXQ57">
-      <ref role="1_0j5g" node="7$DvC4gPSHs" resolve="B_SimpleDocuments" />
+      <ref role="1_0j5g" node="7$DvC4gPSHs" />
     </node>
     <node concept="1_0j5j" id="7$DvC4gRI5z" role="1DXQ57">
-      <ref role="1_0j5g" node="7$DvC4gRxXV" resolve="C_EmbeddingMbeddr" />
+      <ref role="1_0j5g" node="7$DvC4gRxXV" />
     </node>
     <node concept="1_0j5j" id="4vQSg$Arksc" role="1DXQ57">
-      <ref role="1_0j5g" node="4vQSg$Arks5" resolve="D_Extending" />
+      <ref role="1_0j5g" node="4vQSg$Arks5" />
     </node>
     <node concept="1_0j5j" id="7rXn3flJD1D" role="1DXQ57">
-      <ref role="1_0j5g" node="7rXn3flJCi4" resolve="Z_Glossary" />
+      <ref role="1_0j5g" node="7rXn3flJCi4" />
     </node>
   </node>
   <node concept="1_1swa" id="7$DvC4gRxXV">
     <property role="TrG5h" value="C_EmbeddingMbeddr" />
     <property role="yApLE" value="1" />
-    <ref role="G9hjw" node="1ZiHc0gKI6e" resolve="Config" />
+    <ref role="G9hjw" node="1ZiHc0gKI6e" />
     <node concept="1_0VNX" id="7$DvC4gRxtV" role="1_0VJ0">
       <property role="TrG5h" value="workingWithMbeddr" />
       <property role="1_0VJr" value="Embedding mbeddr Artifacts" />
@@ -1005,7 +1005,7 @@
             <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, \nthe ability to tightly integrate with mebddr code was the reason for building\nthis documentation language, as we have said in " />
           </node>
           <node concept="1_0GAv" id="7$DvC4gRxY1" role="19SJt6">
-            <ref role="1_0GAl" node="1ZiHc0gKJBz" resolve="introduction" />
+            <ref role="1_0GAl" node="1ZiHc0gKJBz" />
           </node>
           <node concept="19SUe$" id="7$DvC4gRxY2" role="19SJt6">
             <property role="19SUeA" value=". In this\nsection we explain how it works." />
@@ -1068,7 +1068,7 @@
               <property role="19SUeA" value=" language\nin the respective mbeddr model to get the intention. For example, we can refer to\n. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSHKC" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gSHKy" resolve="calculator" />
+              <ref role="2SbdyP" node="7$DvC4gSHKy" />
             </node>
             <node concept="19SUe$" id="7$DvC4gSHKB" role="19SJt6">
               <property role="19SUeA" value=" shows how this looks in the code." />
@@ -1085,14 +1085,14 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7$DvC4gV4Zu" role="3z_lpT">
-            <ref role="3SH5fe" node="7$DvC4gV3xo" resolve="smallCodeShot" />
+            <ref role="3SH5fe" node="7$DvC4gV3xo" />
           </node>
           <node concept="2NCZwO" id="220QoZYqmxZ" role="3z_lpI">
             <node concept="2NCMab" id="220QoZYqmy0" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
             </node>
             <node concept="2NCMab" id="220QoZYqmy1" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" resolve="Calculator" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" />
             </node>
           </node>
         </node>
@@ -1117,7 +1117,7 @@
           <node concept="19SGf9" id="7$DvC4gSOov" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gSOoD" role="19SJt6" />
             <node concept="2Sbdz4" id="7$DvC4gSOoC" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gSOoy" resolve="refCode" />
+              <ref role="2SbdyP" node="7$DvC4gSOoy" />
             </node>
             <node concept="19SUe$" id="7$DvC4gSOoE" role="19SJt6">
               <property role="19SUeA" value=" shows the source for the referencing examples." />
@@ -1126,8 +1126,8 @@
         </node>
         <node concept="1Ae1f2" id="7$DvC4gSOoy" role="1_0VJ0">
           <property role="TrG5h" value="refCode" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
-          <ref role="1DZJkt" node="4vQSg$ApPwm" resolve="referencingCode" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
+          <ref role="1DZJkt" node="4vQSg$ApPwm" />
           <node concept="3SGHZ$" id="7$DvC4gSOoz" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -1149,19 +1149,19 @@
               <property role="19SUeA" value="You have already seen in the previous paragraph how to embed mbeddr code as an image\ninto the document. In that example, " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSPbx" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gSHKy" resolve="calculator" />
+              <ref role="2SbdyP" node="7$DvC4gSHKy" />
             </node>
             <node concept="19SUe$" id="7$DvC4gSPby" role="19SJt6">
               <property role="19SUeA" value=" embedded a complete top level\nconstruct, an interface in this case. But what if you wanted to embed only a smaller\nsection, such as a state in a state machine or a single operation in an interface?\n" />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSPbE" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gSPb$" resolve="addOp" />
+              <ref role="2SbdyP" node="7$DvC4gSPb$" />
             </node>
             <node concept="19SUe$" id="7$DvC4gSPbF" role="19SJt6">
               <property role="19SUeA" value=" shows an example of embedding only an operation. The code to do that is \nshown in " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSPKj" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gSPbI" resolve="embedding1" />
+              <ref role="2SbdyP" node="7$DvC4gSPbI" />
             </node>
             <node concept="19SUe$" id="7$DvC4gTF_b" role="19SJt6">
               <property role="19SUeA" value="; essentially you mention the " />
@@ -1201,17 +1201,17 @@
             </node>
           </node>
           <node concept="3SGC_w" id="7$DvC4gV4Zv" role="3z_lpT">
-            <ref role="3SH5fe" node="7$DvC4gV3xo" resolve="smallCodeShot" />
+            <ref role="3SH5fe" node="7$DvC4gV3xo" />
           </node>
           <node concept="2NCZwO" id="220QoZYqmFk" role="3z_lpI">
             <node concept="2NCMab" id="220QoZYqmFl" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
             </node>
             <node concept="2NCMab" id="220QoZYqmFm" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" resolve="Calculator" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" />
             </node>
             <node concept="2NCMab" id="220QoZYqmFn" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwe" resolve="add" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwe" />
             </node>
           </node>
         </node>
@@ -1259,17 +1259,17 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="220QoZYqmFv" role="3z_lpI">
             <node concept="2NCMab" id="220QoZYqmFw" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
             </node>
             <node concept="2NCMab" id="220QoZYqmFx" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" resolve="Calculator" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" />
             </node>
           </node>
         </node>
         <node concept="1Ae1f2" id="7$DvC4gSPbI" role="1_0VJ0">
           <property role="TrG5h" value="embedding1" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
-          <ref role="1DZJkt" node="4vQSg$ApPww" resolve="embddingCode" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
+          <ref role="1DZJkt" node="4vQSg$ApPww" />
           <node concept="3SGHZ$" id="7$DvC4gSPbJ" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -1321,7 +1321,7 @@
               <property role="19SUeA" value=" menu item from the context menu. Alternatively you can also\nembed such visualizations into a generated document; the visualization is rendered\non the fly (like the code screenshots discussed in " />
             </node>
             <node concept="1_0GAv" id="7$DvC4gTG_J" role="19SJt6">
-              <ref role="1_0GAl" node="4vQSg$ApPww" resolve="embddingCode" />
+              <ref role="1_0GAl" node="4vQSg$ApPww" />
             </node>
             <node concept="19SUe$" id="7$DvC4gTG_K" role="19SJt6">
               <property role="19SUeA" value=". " />
@@ -1334,7 +1334,7 @@
               <property role="19SUeA" value="An example for such a visualization is shown in " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gUdCb" role="19SJt6">
-              <ref role="2SbdyP" node="7$DvC4gTG_M" resolve="vis" />
+              <ref role="2SbdyP" node="7$DvC4gTG_M" />
             </node>
             <node concept="19SUe$" id="7$DvC4gUdCc" role="19SJt6">
               <property role="19SUeA" value=". As with other images,\nyou have to specify the size\/scaling, and the location of the temporary files. \nObviously, you have to reference the visualizable element, and you also have to\nselect which of its visualizations you want to render. You can select them via\ncode completion after the slash in the " />
@@ -1354,7 +1354,7 @@
         <node concept="tKojO" id="7$DvC4gTG_S" role="1_0VJ0">
           <property role="tKoif" value="statechart (2D)" />
           <property role="TrG5h" value="tl" />
-          <ref role="tKoie" node="7$DvC4gPWka" resolve="imgTemp" />
+          <ref role="tKoie" node="7$DvC4gPWka" />
           <node concept="OjmMv" id="7$DvC4gTG_T" role="tKoid">
             <node concept="19SGf9" id="7$DvC4gTG_U" role="OjmMu">
               <node concept="19SUe$" id="7$DvC4gTG_V" role="19SJt6">
@@ -1367,17 +1367,17 @@
           </node>
           <node concept="2NCZwO" id="8K5lDO6dgo" role="ZeNY6">
             <node concept="2NCMab" id="8K5lDO6gOn" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
             </node>
             <node concept="2NCMab" id="8K5lDO6h39" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gTGAe" resolve="TrafficLights" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gTGAe" />
             </node>
           </node>
         </node>
         <node concept="1Ae1f2" id="7$DvC4gTG_M" role="1_0VJ0">
           <property role="TrG5h" value="vis" />
-          <ref role="1Ae1fW" node="7$DvC4gPWka" resolve="imgTemp" />
-          <ref role="1DZJkt" node="4vQSg$ApPwp" resolve="visualizations" />
+          <ref role="1Ae1fW" node="7$DvC4gPWka" />
+          <ref role="1DZJkt" node="4vQSg$ApPwp" />
           <node concept="3SGHZ$" id="7$DvC4gTG_N" role="3SH_4S">
             <property role="3SGHZ_" value="100" />
           </node>
@@ -1454,12 +1454,12 @@
       <property role="Wq1Bq" value="voelter@acm.org" />
     </node>
     <node concept="1_0j5j" id="7$DvC4gRI5w" role="1DXQ57">
-      <ref role="1_0j5g" node="1ZiHc0gKI6c" resolve="A_Introduction" />
+      <ref role="1_0j5g" node="1ZiHc0gKI6c" />
     </node>
   </node>
   <node concept="1_1swa" id="4vQSg$Arks5">
     <property role="TrG5h" value="D_Extending" />
-    <ref role="G9hjw" node="1ZiHc0gKI6e" resolve="Config" />
+    <ref role="G9hjw" node="1ZiHc0gKI6e" />
     <node concept="1_0VNX" id="4vQSg$Arks7" role="1_0VJ0">
       <property role="TrG5h" value="extending" />
       <property role="1_0VJr" value="Extending the Documentation Language" />
@@ -1582,18 +1582,18 @@
             </node>
             <node concept="3XpXCz" id="6wvhQs7o1x7" role="19SJt6">
               <node concept="3XpXCp" id="6wvhQs7o1x8" role="3XpXCH">
-                <ref role="3XpXCq" node="6wvhQs7nZDo" resolve="N" />
+                <ref role="3XpXCq" node="6wvhQs7nZDo" />
               </node>
               <node concept="2BOcij" id="6wvhQs7o1x9" role="3XpXCG">
                 <node concept="3XpXCp" id="6wvhQs7o1xa" role="3TlMhJ">
-                  <ref role="3XpXCq" node="6wvhQs7nZDx" resolve="ne" />
+                  <ref role="3XpXCq" node="6wvhQs7nZDx" />
                 </node>
                 <node concept="2BOcij" id="6wvhQs7o1xb" role="3TlMhI">
                   <node concept="3XpXCp" id="6wvhQs7o1xc" role="3TlMhI">
-                    <ref role="3XpXCq" node="6wvhQs7nZDr" resolve="SF" />
+                    <ref role="3XpXCq" node="6wvhQs7nZDr" />
                   </node>
                   <node concept="3XpXCp" id="6wvhQs7o1xd" role="3TlMhJ">
-                    <ref role="3XpXCq" node="6wvhQs7nZDu" resolve="fp" />
+                    <ref role="3XpXCq" node="6wvhQs7nZDu" />
                   </node>
                 </node>
               </node>
@@ -1631,7 +1631,7 @@
   </node>
   <node concept="1_1swa" id="7rXn3flJCi4">
     <property role="TrG5h" value="Z_Glossary" />
-    <ref role="G9hjw" node="1ZiHc0gKI6e" resolve="Config" />
+    <ref role="G9hjw" node="1ZiHc0gKI6e" />
     <node concept="1_0VNX" id="7rXn3flJDQM" role="1_0VJ0">
       <property role="TrG5h" value="importantTerms" />
       <property role="1_0VJr" value="Important Terms" />
@@ -1641,7 +1641,7 @@
             <property role="19SUeA" value="Here are a number of important terms. Each of them is defined separately\nin the document. The definitions can contain explicit relationships to \nother terms. These can be shown as a diagram. An example is in " />
           </node>
           <node concept="2Sbdz4" id="2nGCZEu8PmP" role="19SJt6">
-            <ref role="2SbdyP" node="2nGCZEu8Nx$" resolve="termDeps" />
+            <ref role="2SbdyP" node="2nGCZEu8Nx$" />
           </node>
           <node concept="19SUe$" id="2nGCZEu8PmQ" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -1660,13 +1660,13 @@
             </node>
             <node concept="2zg8ej" id="7rXn3flJHh7" role="19SJt6">
               <property role="247S3x" value="Wheels" />
-              <ref role="2zg8eq" node="7rXn3flJGUi" resolve="Wheel" />
+              <ref role="2zg8eq" node="7rXn3flJGUi" />
             </node>
             <node concept="19SUe$" id="7rXn3flJHh8" role="19SJt6">
               <property role="19SUeA" value=". Cars also have an " />
             </node>
             <node concept="2zg8ej" id="3EwB7OlCLel" role="19SJt6">
-              <ref role="2zg8eq" node="3EwB7OlCLeg" resolve="Engine" />
+              <ref role="2zg8eq" node="3EwB7OlCLeg" />
             </node>
             <node concept="19SUe$" id="3EwB7OlCLek" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1685,13 +1685,13 @@
               <property role="19SUeA" value="A wheel is the thing a " />
             </node>
             <node concept="2zg8ej" id="7rXn3flJGUm" role="19SJt6">
-              <ref role="2zg8eq" node="7rXn3flJGna" resolve="Car" />
+              <ref role="2zg8eq" node="7rXn3flJGna" />
             </node>
             <node concept="19SUe$" id="7rXn3flJGUn" role="19SJt6">
               <property role="19SUeA" value=" has four of. I should write some more text here, because\nI need to check if line breaking works correclty. So this should be enough. Of course\nyou can also refer to other stuff, such as this " />
             </node>
             <node concept="2Sbdz4" id="7rXn3flJM4I" role="19SJt6">
-              <ref role="2SbdyP" node="7rXn3flJM4B" resolve="anImage" />
+              <ref role="2SbdyP" node="7rXn3flJM4B" />
             </node>
             <node concept="19SUe$" id="7rXn3flJM4J" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1715,7 +1715,7 @@
                   <property role="19SUeA" value="the generalization of " />
                 </node>
                 <node concept="2zg8ej" id="14uWAurimDh" role="19SJt6">
-                  <ref role="2zg8eq" node="7rXn3flJGna" resolve="Car" />
+                  <ref role="2zg8eq" node="7rXn3flJGna" />
                 </node>
                 <node concept="19SUe$" id="14uWAurimDg" role="19SJt6">
                   <property role="19SUeA" value="" />
@@ -1732,7 +1732,7 @@
         <property role="TrG5h" value="anImage" />
         <node concept="2Sb_l4" id="7rXn3flJM4H" role="2SbwM5">
           <property role="2Sb_kV" value="ash26.png" />
-          <ref role="2Sb_kU" node="7$DvC4gRmn2" resolve="images" />
+          <ref role="2Sb_kU" node="7$DvC4gRmn2" />
         </node>
         <node concept="OjmMv" id="7rXn3flJM4D" role="2SaI5j">
           <node concept="19SGf9" id="7rXn3flJM4E" role="OjmMu">
@@ -1751,13 +1751,13 @@
               <property role="19SUeA" value="An engine is the thing that drives the " />
             </node>
             <node concept="2zg8ej" id="3Dgh5aYjX34" role="19SJt6">
-              <ref role="2zg8eq" node="7rXn3flJGna" resolve="Car" />
+              <ref role="2zg8eq" node="7rXn3flJGna" />
             </node>
             <node concept="19SUe$" id="3Dgh5aYjX33" role="19SJt6">
               <property role="19SUeA" value=". Of course, there is also the " />
             </node>
             <node concept="2zg8ej" id="3EwB7OlCM0d" role="19SJt6">
-              <ref role="2zg8eq" node="3EwB7OlCM08" resolve="Driver" />
+              <ref role="2zg8eq" node="3EwB7OlCM08" />
             </node>
             <node concept="19SUe$" id="3EwB7OlCM0c" role="19SJt6">
               <property role="19SUeA" value=".\nSo, in fact " />
@@ -1768,7 +1768,7 @@
                   <property role="19SUeA" value="the " />
                 </node>
                 <node concept="2zg8ej" id="3EwB7OlCYQR" role="19SJt6">
-                  <ref role="2zg8eq" node="3EwB7OlCM08" resolve="Driver" />
+                  <ref role="2zg8eq" node="3EwB7OlCM08" />
                 </node>
                 <node concept="19SUe$" id="3EwB7OlCYQS" role="19SJt6">
                   <property role="19SUeA" value=" drives the car." />
@@ -1790,7 +1790,7 @@
               <property role="19SUeA" value="A driver is actually a " />
             </node>
             <node concept="2zg8ej" id="3EwB7OlCYQK" role="19SJt6">
-              <ref role="2zg8eq" node="3EwB7OlCYQE" resolve="Person" />
+              <ref role="2zg8eq" node="3EwB7OlCYQE" />
             </node>
             <node concept="19SUe$" id="3EwB7OlCYQJ" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1814,7 +1814,7 @@
                   <property role="19SUeA" value="may have a brother " />
                 </node>
                 <node concept="2zg8ej" id="3EwB7OlDi6c" role="19SJt6">
-                  <ref role="2zg8eq" node="3EwB7OlCYQE" resolve="Person" />
+                  <ref role="2zg8eq" node="3EwB7OlCYQE" />
                 </node>
                 <node concept="19SUe$" id="3EwB7OlDi6d" role="19SJt6" />
               </node>
@@ -1829,7 +1829,7 @@
       <node concept="tKojO" id="2nGCZEu8Nx$" role="1_0VJ0">
         <property role="tKoif" value="term dependencies" />
         <property role="TrG5h" value="termDeps" />
-        <ref role="tKoie" node="7$DvC4gPWka" resolve="imgTemp" />
+        <ref role="tKoie" node="7$DvC4gPWka" />
         <node concept="OjmMv" id="2nGCZEu8Nx_" role="tKoid">
           <node concept="19SGf9" id="2nGCZEu8NxA" role="OjmMu">
             <node concept="19SUe$" id="2nGCZEu8NxB" role="19SJt6">
@@ -1842,10 +1842,10 @@
         </node>
         <node concept="2NCZwO" id="8K5lDO6hcP" role="ZeNY6">
           <node concept="2NCMab" id="8K5lDO6hcT" role="2NCMaf">
-            <ref role="2NCMaa" node="7rXn3flJCi4" resolve="Z_Glossary" />
+            <ref role="2NCMaa" node="7rXn3flJCi4" />
           </node>
           <node concept="2NCMab" id="8K5lDO6hcZ" role="2NCMaf">
-            <ref role="2NCMaa" node="7rXn3flJGna" resolve="Car" />
+            <ref role="2NCMaa" node="7rXn3flJGna" />
           </node>
         </node>
       </node>

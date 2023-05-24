@@ -269,13 +269,13 @@
       <node concept="1Koe21" id="2nlzmLNtP3w" role="1lVwrX">
         <node concept="1_1swa" id="2nlzmLNtP3x" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="47ZkZt5YcTB" resolve="DummyCfg" />
+          <ref role="G9hjw" node="47ZkZt5YcTB" />
           <node concept="2SaynC" id="2nlzmLNtP3y" role="1_0VJ0">
             <property role="TrG5h" value="img" />
             <property role="41Bi8" value="true" />
             <node concept="2Sb_l4" id="2nlzmLNtP3z" role="2SbwM5">
               <property role="2Sb_kV" value="var" />
-              <ref role="2Sb_kU" node="47ZkZt5YcTD" resolve="p" />
+              <ref role="2Sb_kU" node="47ZkZt5YcTD" />
               <node concept="1ZhdrF" id="2nlzmLNtP3$" role="lGtFl">
                 <property role="2qtEX8" value="path" />
                 <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/6386504476136521407/6386504476136521409" />

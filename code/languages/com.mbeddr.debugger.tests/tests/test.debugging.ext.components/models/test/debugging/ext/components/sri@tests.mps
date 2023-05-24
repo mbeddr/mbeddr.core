@@ -42,7 +42,7 @@
     </language>
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -386,7 +386,7 @@
       <node concept="3clFbS" id="4bUTzk4Gp0C" role="3clF47" />
       <node concept="3sdZbQ" id="4bUTzk4Gp0Q" role="3scror">
         <node concept="3sdZbA" id="3uHGTbhAG9X" role="3sdZbB">
-          <ref role="3sa5fj" to="sy53:4bUTzk4Gp0O" resolve="insideRunnable" />
+          <ref role="3sa5fj" to="sy53:4bUTzk4Gp0O" />
         </node>
       </node>
       <node concept="3F5Y_J" id="4bUTzk4Gp0U" role="3F5AM1">
@@ -485,7 +485,7 @@
             </node>
           </node>
           <node concept="1vv375" id="4bUTzk4Gp11" role="1vv36M">
-            <ref role="1vv99g" node="4bUTzk4Gp10" resolve="globals" />
+            <ref role="1vv99g" node="4bUTzk4Gp10" />
           </node>
         </node>
       </node>
@@ -497,20 +497,20 @@
       <node concept="3clFbS" id="4bUTzk4Gp0H" role="3clF47" />
       <node concept="3sdZbQ" id="4bUTzk4Gp0S" role="3scror">
         <node concept="3sdZbA" id="3uHGTbhAG9Z" role="3sdZbB">
-          <ref role="3sa5fj" to="sy53:4bUTzk4Gzd1" resolve="outsideRunnable" />
+          <ref role="3sa5fj" to="sy53:4bUTzk4Gzd1" />
         </node>
       </node>
       <node concept="3F5Y_J" id="4bUTzk4Gp0W" role="3F5AM1">
         <node concept="1l46Ie" id="4bUTzk4Gp0X" role="3F5Y$9">
           <node concept="1vv375" id="4bUTzk4Gp12" role="1vv36M">
-            <ref role="1vv99g" node="4bUTzk4Gp10" resolve="globals" />
+            <ref role="1vv99g" node="4bUTzk4Gp10" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3sgmnF" id="4bUTzk4Gp0_" role="1zJi$$" />
     <node concept="3qy1PH" id="4bUTzk4GkVm" role="3qy1PE">
-      <ref role="30ajXG" to="sy53:RsLjUnMNv2" resolve="SenderReceiverTest" />
+      <ref role="30ajXG" to="sy53:RsLjUnMNv2" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRzY" role="29bA6Q" />
   </node>

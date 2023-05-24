@@ -270,13 +270,13 @@
                   <property role="2hmy$m" value="0" />
                 </node>
                 <node concept="3ZVu4v" id="tSj2rSlRCe" role="3TlMhI">
-                  <ref role="3ZVs_2" node="tSj2rSlRBt" resolve="var" />
+                  <ref role="3ZVs_2" node="tSj2rSlRBt" />
                 </node>
               </node>
               <node concept="2dvt44" id="tSj2rSlRKh" role="lGtFl">
                 <node concept="3o9_tv" id="tSj2rSlRKi" role="2dvt70">
                   <node concept="2qVrgw" id="tSj2rSlRNQ" role="3o9_ts">
-                    <ref role="2qVrgz" node="tSj2rSlRzr" resolve="firstTopFeature" />
+                    <ref role="2qVrgz" node="tSj2rSlRzr" />
                   </node>
                   <node concept="3xLA65" id="tSj2rSlRRC" role="lGtFl">
                     <property role="TrG5h" value="trivial_feature_condition" />
@@ -291,14 +291,14 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="3ZVu4v" id="tSj2rSo3JU" role="3TlMhI">
-                  <ref role="3ZVs_2" node="tSj2rSlRBt" resolve="var" />
+                  <ref role="3ZVs_2" node="tSj2rSlRBt" />
                 </node>
               </node>
               <node concept="2dvt44" id="tSj2rSo3JV" role="lGtFl">
                 <node concept="3o9_tv" id="tSj2rSo3JW" role="2dvt70">
                   <node concept="19$8ne" id="tSj2rSo3Tf" role="3o9_ts">
                     <node concept="2qVrgw" id="tSj2rSo3JX" role="1_9fRO">
-                      <ref role="2qVrgz" node="tSj2rSlRzr" resolve="firstTopFeature" />
+                      <ref role="2qVrgz" node="tSj2rSlRzr" />
                     </node>
                   </node>
                   <node concept="3xLA65" id="tSj2rSo3JY" role="lGtFl">
@@ -314,11 +314,11 @@
           </node>
         </node>
         <node concept="3GEVxB" id="tSj2rSlRAu" role="2OODSX">
-          <ref role="3GEb4d" node="tSj2rSlRy6" resolve="fm" />
+          <ref role="3GEb4d" node="tSj2rSlRy6" />
         </node>
         <node concept="2dvl_R" id="tSj2rSlRCP" role="lGtFl">
-          <ref role="2dvl_Q" node="tSj2rSlRzf" resolve="FeatureModel_1" />
-          <ref role="AiAcg" node="tSj2rSlR_m" resolve="ConfigurationModel_1" />
+          <ref role="2dvl_Q" node="tSj2rSlRzf" />
+          <ref role="AiAcg" node="tSj2rSlR_m" />
         </node>
       </node>
     </node>
@@ -349,16 +349,16 @@
     </node>
     <node concept="Id4hE" id="tSj2rSlR_m" role="Idr$j">
       <property role="TrG5h" value="ConfigurationModel_1" />
-      <ref role="Id4hC" node="tSj2rSlRzf" resolve="FeatureModel_1" />
+      <ref role="Id4hC" node="tSj2rSlRzf" />
       <node concept="Id4hG" id="tSj2rSlR_V" role="Id4hF">
-        <ref role="Id4hN" node="tSj2rSlRzg" resolve="FeatureModel_1_root" />
+        <ref role="Id4hN" node="tSj2rSlRzg" />
         <node concept="Id4hG" id="tSj2rSlR_Z" role="Id4hH">
-          <ref role="Id4hN" node="tSj2rSlRzr" resolve="firstTopFeature" />
+          <ref role="Id4hN" node="tSj2rSlRzr" />
         </node>
         <node concept="Id4hG" id="tSj2rSlRAa" role="Id4hH">
-          <ref role="Id4hN" node="tSj2rSlRzK" resolve="thirdTopFeature" />
+          <ref role="Id4hN" node="tSj2rSlRzK" />
           <node concept="Id4hG" id="tSj2rSlRAi" role="Id4hH">
-            <ref role="Id4hN" node="tSj2rSlRzY" resolve="thirdTopFeature_subFeature_1" />
+            <ref role="Id4hN" node="tSj2rSlRzY" />
           </node>
         </node>
       </node>

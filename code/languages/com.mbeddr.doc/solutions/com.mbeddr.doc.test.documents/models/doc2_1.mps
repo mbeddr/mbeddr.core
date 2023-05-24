@@ -75,7 +75,7 @@
   <node concept="1_1swa" id="2khznRHyx6K">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="sub_document_2" />
-    <ref role="G9hjw" to="gzw8:2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" to="gzw8:2khznRHyx6c" />
     <node concept="1_0VNX" id="2khznRHyx6L" role="1_0VJ0">
       <property role="TrG5h" value="secondsection" />
       <property role="1_0VJr" value="The second section" />
@@ -85,7 +85,7 @@
             <property role="19SUeA" value="text for the second section - " />
           </node>
           <node concept="1_0GAv" id="2khznRHyxyW" role="19SJt6">
-            <ref role="1_0GAl" node="2khznRHyxyK" resolve="thirdsection" />
+            <ref role="1_0GAl" node="2khznRHyxyK" />
           </node>
           <node concept="19SUe$" id="2khznRHyxyX" role="19SJt6" />
         </node>
@@ -93,17 +93,17 @@
     </node>
     <node concept="$CzcT" id="2khznRHyx$6" role="1_0VJ0">
       <node concept="1_0j5j" id="2khznRHyx$q" role="$CzcU">
-        <ref role="1_0j5g" node="2khznRHyxyJ" resolve="sub_document_3" />
+        <ref role="1_0j5g" node="2khznRHyxyJ" />
       </node>
     </node>
     <node concept="1_0j5j" id="2khznRHyxz4" role="1DXQ57">
-      <ref role="1_0j5g" node="2khznRHyxyJ" resolve="sub_document_3" />
+      <ref role="1_0j5g" node="2khznRHyxyJ" />
     </node>
   </node>
   <node concept="1_1swa" id="2khznRHyxyJ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="sub_document_3" />
-    <ref role="G9hjw" to="gzw8:2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" to="gzw8:2khznRHyx6c" />
     <node concept="1_0VNX" id="2khznRHyxyK" role="1_0VJ0">
       <property role="TrG5h" value="thirdsection" />
       <property role="1_0VJr" value="The third section" />
@@ -113,7 +113,7 @@
             <property role="19SUeA" value="text for the third section " />
           </node>
           <node concept="1_0GAv" id="4eRbT2iDalj" role="19SJt6">
-            <ref role="1_0GAl" node="2khznRHyx6L" resolve="secondsection" />
+            <ref role="1_0GAl" node="2khznRHyx6L" />
           </node>
           <node concept="19SUe$" id="4eRbT2iDalk" role="19SJt6" />
         </node>
@@ -139,7 +139,7 @@
       <property role="TrG5h" value="empty_-1" />
     </node>
     <node concept="1_0j5j" id="4eRbT2iDalh" role="1DXQ57">
-      <ref role="1_0j5g" node="2khznRHyx6K" resolve="sub_document_2" />
+      <ref role="1_0j5g" node="2khznRHyx6K" />
     </node>
   </node>
 </model>

@@ -215,16 +215,16 @@
         <property role="35zhco" value="true" />
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="4iljI7pa4D0" resolve="CarInstances" />
+        <ref role="35zhcq" node="4iljI7pa4D0" />
       </node>
     </node>
     <node concept="2eOfOl" id="5dzrqzlstaf" role="2ePNbc">
       <property role="TrG5h" value="dec_tab" />
       <node concept="2v9HqM" id="5dzrqzlstao" role="2eOfOg">
-        <ref role="2v9HqP" node="4BIEEuWf5bP" resolve="Car" />
+        <ref role="2v9HqP" node="4BIEEuWf5bP" />
       </node>
       <node concept="2v9HqM" id="5dzrqzlstap" role="2eOfOg">
-        <ref role="2v9HqP" node="3D_1CBq9Vuo" resolve="Main" />
+        <ref role="2v9HqP" node="3D_1CBq9Vuo" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyheU" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -239,8 +239,8 @@
     <node concept="2EX0iR" id="4BIEEuWf5bR" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="Car" />
-      <ref role="3Z3Pdc" node="4BIEEuWf5dn" resolve="protocolFails" />
-      <ref role="3Z3Pd3" node="4BIEEuWf5dm" resolve="Messages" />
+      <ref role="3Z3Pdc" node="4BIEEuWf5dn" />
+      <ref role="3Z3Pd3" node="4BIEEuWf5dm" />
       <node concept="2EX0iL" id="4BIEEuWf5bS" role="2EX0iN">
         <property role="TrG5h" value="engineOn" />
         <node concept="19Rifw" id="4BIEEuWf5bT" role="2C2TGm">
@@ -262,7 +262,7 @@
         </node>
         <node concept="3Z21gw" id="4BIEEuWf5bZ" role="3Z21jN">
           <node concept="3Z21g8" id="4BIEEuWf5c0" role="3Z21go">
-            <ref role="3Z21g9" node="4BIEEuWf5bW" resolve="Running" />
+            <ref role="3Z21g9" node="4BIEEuWf5bW" />
           </node>
           <node concept="3Z21gz" id="4BIEEuWf5c1" role="3Z21gp">
             <property role="TrG5h" value="Forward" />
@@ -277,18 +277,18 @@
         </node>
         <node concept="3Z21gw" id="4BIEEuWf5c4" role="3Z21jN">
           <node concept="3Z21g8" id="4BIEEuWf5c5" role="3Z21go">
-            <ref role="3Z21g9" node="4BIEEuWf5c1" resolve="Forward" />
+            <ref role="3Z21g9" node="4BIEEuWf5c1" />
           </node>
           <node concept="3Z21g8" id="4BIEEuWf5c6" role="3Z21gp">
-            <ref role="3Z21g9" node="4BIEEuWf5bW" resolve="Running" />
+            <ref role="3Z21g9" node="4BIEEuWf5bW" />
           </node>
         </node>
         <node concept="3Z21gw" id="4BIEEuWf5c7" role="3Z21jN">
           <node concept="3Z21g8" id="4BIEEuWf5c8" role="3Z21go">
-            <ref role="3Z21g9" node="4BIEEuWf5ce" resolve="Reverse" />
+            <ref role="3Z21g9" node="4BIEEuWf5ce" />
           </node>
           <node concept="3Z21g8" id="4BIEEuWf5c9" role="3Z21gp">
-            <ref role="3Z21g9" node="4BIEEuWf5bW" resolve="Running" />
+            <ref role="3Z21g9" node="4BIEEuWf5bW" />
           </node>
         </node>
       </node>
@@ -300,7 +300,7 @@
         </node>
         <node concept="3Z21gw" id="4BIEEuWf5cc" role="3Z21jN">
           <node concept="3Z21g8" id="4BIEEuWf5cd" role="3Z21go">
-            <ref role="3Z21g9" node="4BIEEuWf5bW" resolve="Running" />
+            <ref role="3Z21g9" node="4BIEEuWf5bW" />
           </node>
           <node concept="3Z21gz" id="4BIEEuWf5ce" role="3Z21gp">
             <property role="TrG5h" value="Reverse" />
@@ -315,7 +315,7 @@
         </node>
         <node concept="3Z21gw" id="4BIEEuWf5ch" role="3Z21jN">
           <node concept="3Z21g8" id="4BIEEuWf5ci" role="3Z21go">
-            <ref role="3Z21g9" node="4BIEEuWf5bW" resolve="Running" />
+            <ref role="3Z21g9" node="4BIEEuWf5bW" />
           </node>
           <node concept="3Z21gl" id="4BIEEuWf5cj" role="3Z21gp" />
         </node>
@@ -329,15 +329,15 @@
       <property role="TrG5h" value="CarImpl" />
       <node concept="2EWHp_" id="4BIEEuWf5cm" role="2RW2fA">
         <property role="TrG5h" value="automobile" />
-        <ref role="2EX0h9" node="4BIEEuWf5bR" resolve="Car" />
+        <ref role="2EX0h9" node="4BIEEuWf5bR" />
       </node>
       <node concept="3Khz0B" id="4BIEEuWf5cn" role="2RW2fA" />
       <node concept="2EWDwb" id="4BIEEuWf5co" role="2RW2fA">
         <property role="TrG5h" value="automobile_engineOn" />
         <node concept="3XIRFW" id="4BIEEuWf5cp" role="2EWMhI" />
         <node concept="2EWDw0" id="4BIEEuWf5cq" role="2EWDeT">
-          <ref role="1ZwxE2" node="4BIEEuWf5bS" resolve="engineOn" />
-          <ref role="1ZwSu5" node="4BIEEuWf5cm" resolve="automobile" />
+          <ref role="1ZwxE2" node="4BIEEuWf5bS" />
+          <ref role="1ZwSu5" node="4BIEEuWf5cm" />
         </node>
         <node concept="19Rifw" id="34TGZoa44n0" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -350,8 +350,8 @@
           <node concept="3XISUE" id="4BIEEuWf5cu" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="4BIEEuWf5cv" role="2EWDeT">
-          <ref role="1ZwSu5" node="4BIEEuWf5cm" resolve="automobile" />
-          <ref role="1ZwxE2" node="4BIEEuWf5bX" resolve="drive" />
+          <ref role="1ZwSu5" node="4BIEEuWf5cm" />
+          <ref role="1ZwxE2" node="4BIEEuWf5bX" />
         </node>
         <node concept="19Rifw" id="34TGZoa44nu" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -364,8 +364,8 @@
           <node concept="3XISUE" id="4BIEEuWf5cz" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="4BIEEuWf5c$" role="2EWDeT">
-          <ref role="1ZwSu5" node="4BIEEuWf5cm" resolve="automobile" />
-          <ref role="1ZwxE2" node="4BIEEuWf5c2" resolve="stop" />
+          <ref role="1ZwSu5" node="4BIEEuWf5cm" />
+          <ref role="1ZwxE2" node="4BIEEuWf5c2" />
         </node>
         <node concept="19Rifw" id="34TGZoa44nw" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -378,8 +378,8 @@
           <node concept="3XISUE" id="4BIEEuWf5cC" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="4BIEEuWf5cD" role="2EWDeT">
-          <ref role="1ZwSu5" node="4BIEEuWf5cm" resolve="automobile" />
-          <ref role="1ZwxE2" node="4BIEEuWf5ca" resolve="reverse" />
+          <ref role="1ZwSu5" node="4BIEEuWf5cm" />
+          <ref role="1ZwxE2" node="4BIEEuWf5ca" />
         </node>
         <node concept="19Rifw" id="34TGZoa44ny" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -392,8 +392,8 @@
           <node concept="3XISUE" id="4BIEEuWf5cH" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="4BIEEuWf5cI" role="2EWDeT">
-          <ref role="1ZwxE2" node="4BIEEuWf5cf" resolve="engineOff" />
-          <ref role="1ZwSu5" node="4BIEEuWf5cm" resolve="automobile" />
+          <ref role="1ZwxE2" node="4BIEEuWf5cf" />
+          <ref role="1ZwSu5" node="4BIEEuWf5cm" />
         </node>
         <node concept="19Rifw" id="34TGZoa44kw" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -438,13 +438,13 @@
       <property role="2OOxQR" value="false" />
       <node concept="2EWCuV" id="3D_1CBq9Xtq" role="5JtDH">
         <property role="TrG5h" value="carFail" />
-        <ref role="2EWCuU" node="4BIEEuWf5cl" resolve="CarImpl" />
+        <ref role="2EWCuU" node="4BIEEuWf5cl" />
       </node>
       <node concept="21gPQu" id="3D_1CBq9Xtr" role="5JtDH">
         <property role="TrG5h" value="car1" />
         <node concept="219P8x" id="3D_1CBq9Xts" role="21ad3a">
-          <ref role="219P8w" node="3D_1CBq9Xtq" resolve="carFail" />
-          <ref role="219P8J" node="4BIEEuWf5cm" resolve="automobile" />
+          <ref role="219P8w" node="3D_1CBq9Xtq" />
+          <ref role="219P8J" node="4BIEEuWf5cm" />
         </node>
       </node>
     </node>
@@ -459,46 +459,46 @@
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="3D_1CBq9Vv5" role="3XIRFX">
         <node concept="3t9XKO" id="3D_1CBq9Vv6" role="3XIRFZ">
-          <ref role="3t9XKR" node="4iljI7pa4D0" resolve="CarInstances" />
+          <ref role="3t9XKR" node="4iljI7pa4D0" />
         </node>
         <node concept="3XISUE" id="3D_1CBq9VvJ" role="3XIRFZ" />
         <node concept="1_9egQ" id="4BIEEuWf5cT" role="3XIRFZ">
           <node concept="30IJZa" id="4BIEEuWf5cU" role="1_9egR">
-            <ref role="2H6Oet" node="4BIEEuWf5bS" resolve="engineOn" />
+            <ref role="2H6Oet" node="4BIEEuWf5bS" />
             <node concept="2H6Wec" id="4BIEEuWf5cV" role="1_9fRO">
-              <ref role="2H6Wef" node="3D_1CBq9Xtr" resolve="car1" />
+              <ref role="2H6Wef" node="3D_1CBq9Xtr" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="4BIEEuWf5cW" role="3XIRFZ">
           <node concept="30IJZa" id="4BIEEuWf5cX" role="1_9egR">
-            <ref role="2H6Oet" node="4BIEEuWf5bX" resolve="drive" />
+            <ref role="2H6Oet" node="4BIEEuWf5bX" />
             <node concept="2H6Wec" id="4BIEEuWf5cY" role="1_9fRO">
-              <ref role="2H6Wef" node="3D_1CBq9Xtr" resolve="car1" />
+              <ref role="2H6Wef" node="3D_1CBq9Xtr" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="4BIEEuWf5d2" role="3XIRFZ">
           <node concept="30IJZa" id="4BIEEuWf5d3" role="1_9egR">
-            <ref role="2H6Oet" node="4BIEEuWf5ca" resolve="reverse" />
+            <ref role="2H6Oet" node="4BIEEuWf5ca" />
             <node concept="2H6Wec" id="4BIEEuWf5d4" role="1_9fRO">
-              <ref role="2H6Wef" node="3D_1CBq9Xtr" resolve="car1" />
+              <ref role="2H6Wef" node="3D_1CBq9Xtr" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="4BIEEuWf5d5" role="3XIRFZ">
           <node concept="30IJZa" id="4BIEEuWf5d6" role="1_9egR">
-            <ref role="2H6Oet" node="4BIEEuWf5c2" resolve="stop" />
+            <ref role="2H6Oet" node="4BIEEuWf5c2" />
             <node concept="2H6Wec" id="4BIEEuWf5d7" role="1_9fRO">
-              <ref role="2H6Wef" node="3D_1CBq9Xtr" resolve="car1" />
+              <ref role="2H6Wef" node="3D_1CBq9Xtr" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="4BIEEuWf5d8" role="3XIRFZ">
           <node concept="30IJZa" id="4BIEEuWf5d9" role="1_9egR">
-            <ref role="2H6Oet" node="4BIEEuWf5cf" resolve="engineOff" />
+            <ref role="2H6Oet" node="4BIEEuWf5cf" />
             <node concept="2H6Wec" id="4BIEEuWf5da" role="1_9fRO">
-              <ref role="2H6Wef" node="3D_1CBq9Xtr" resolve="car1" />
+              <ref role="2H6Wef" node="3D_1CBq9Xtr" />
             </node>
           </node>
         </node>
@@ -534,7 +534,7 @@
     </node>
     <node concept="3GEVxB" id="19LfhoY3iDp" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="4BIEEuWf5bP" resolve="Car" />
+      <ref role="3GEb4d" node="4BIEEuWf5bP" />
     </node>
   </node>
 </model>

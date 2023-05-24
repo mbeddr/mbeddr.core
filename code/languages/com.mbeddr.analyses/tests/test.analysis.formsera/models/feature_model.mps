@@ -175,7 +175,7 @@
           <node concept="Id4hK" id="2HCtBv$ARxx" role="Id4hQ">
             <property role="TrG5h" value="HeartBeat" />
             <node concept="1fCc5X" id="19O7J9e7vX" role="2FxFsO">
-              <ref role="1fCc5C" node="2HCtBv$ARx_" resolve="FlexRay" />
+              <ref role="1fCc5C" node="2HCtBv$ARx_" />
             </node>
           </node>
         </node>
@@ -190,7 +190,7 @@
           <node concept="Id4hK" id="2HCtBv$ARx_" role="Id4hQ">
             <property role="TrG5h" value="FlexRay" />
             <node concept="1fCc5X" id="nDjXlEZENs" role="2FxFsO">
-              <ref role="1fCc5C" node="2HCtBv$ARxv" resolve="Logging" />
+              <ref role="1fCc5C" node="2HCtBv$ARxv" />
             </node>
           </node>
           <node concept="Id4hK" id="2HCtBv$ARxA" role="Id4hQ">
@@ -202,28 +202,28 @@
     </node>
     <node concept="Id4hE" id="19O7J9e7af" role="Idr$j">
       <property role="TrG5h" value="Production" />
-      <ref role="Id4hC" node="2HCtBv$ARxm" resolve="IntelligentSensorFamily" />
+      <ref role="Id4hC" node="2HCtBv$ARxm" />
       <node concept="Id4hG" id="19O7J9e7ah" role="Id4hF">
-        <ref role="Id4hN" node="19LfhoY3D2C" resolve="IntelligentSensorFamily_root" />
+        <ref role="Id4hN" node="19LfhoY3D2C" />
         <node concept="Id4hG" id="19O7J9e7ai" role="Id4hH">
-          <ref role="Id4hN" node="2HCtBv$ARxq" resolve="Diagnosis" />
+          <ref role="Id4hN" node="2HCtBv$ARxq" />
           <node concept="Id4hG" id="19O7J9e7aj" role="Id4hH">
-            <ref role="Id4hN" node="2HCtBv$ARxx" resolve="HeartBeat" />
+            <ref role="Id4hN" node="2HCtBv$ARxx" />
           </node>
         </node>
         <node concept="Id4hG" id="19O7J9e7al" role="Id4hH">
-          <ref role="Id4hN" node="2HCtBv$ARxs" resolve="DataAquisition" />
+          <ref role="Id4hN" node="2HCtBv$ARxs" />
         </node>
         <node concept="Id4hG" id="19O7J9e7an" role="Id4hH">
-          <ref role="Id4hN" node="2HCtBv$ARxt" resolve="CommProtocol" />
+          <ref role="Id4hN" node="2HCtBv$ARxt" />
           <node concept="Id4hG" id="19O7J9e7h$" role="Id4hH">
-            <ref role="Id4hN" node="2HCtBv$ARxA" resolve="Serial" />
+            <ref role="Id4hN" node="2HCtBv$ARxA" />
           </node>
           <node concept="Id4hG" id="19O7J9eanH" role="Id4hH">
-            <ref role="Id4hN" node="2HCtBv$ARx_" resolve="FlexRay" />
+            <ref role="Id4hN" node="2HCtBv$ARx_" />
           </node>
           <node concept="Id4hG" id="19O7J9eanJ" role="Id4hH">
-            <ref role="Id4hN" node="2HCtBv$ARx$" resolve="CAN" />
+            <ref role="Id4hN" node="2HCtBv$ARx$" />
           </node>
         </node>
       </node>
@@ -246,7 +246,7 @@
       <node concept="2dvt44" id="nDjXlEZBQf" role="lGtFl">
         <node concept="3o9_tv" id="nDjXlEZBQg" role="2dvt70">
           <node concept="2qVrgw" id="nDjXlEZBQh" role="3o9_ts">
-            <ref role="2qVrgz" node="2HCtBv$ARx$" resolve="CAN" />
+            <ref role="2qVrgz" node="2HCtBv$ARx$" />
           </node>
         </node>
       </node>
@@ -291,11 +291,11 @@
       </node>
     </node>
     <node concept="2dvl_R" id="nDjXlEZBQ2" role="lGtFl">
-      <ref role="2dvl_Q" node="2HCtBv$ARxm" resolve="IntelligentSensorFamily" />
-      <ref role="AiAcg" node="19O7J9e7af" resolve="Production" />
+      <ref role="2dvl_Q" node="2HCtBv$ARxm" />
+      <ref role="AiAcg" node="19O7J9e7af" />
     </node>
     <node concept="3GEVxB" id="7aNtjNlY6Ib" role="2OODSX">
-      <ref role="3GEb4d" node="2HCtBv$ARxl" resolve="IntelligentSensors" />
+      <ref role="3GEb4d" node="2HCtBv$ARxl" />
     </node>
   </node>
   <node concept="2v9HqL" id="2HCtBv$ARyv">
@@ -315,14 +315,14 @@
     </node>
     <node concept="35TzUN" id="2V53qRfYPcw" role="2Q9xDr">
       <node concept="IjAfM" id="2V53qRfYPc_" role="19yoJo">
-        <ref role="IjAfK" node="2HCtBv$ARxm" resolve="IntelligentSensorFamily" />
-        <ref role="IjAfL" node="19O7J9e7af" resolve="Production" />
+        <ref role="IjAfK" node="2HCtBv$ARxm" />
+        <ref role="IjAfL" node="19O7J9e7af" />
       </node>
     </node>
     <node concept="2eOfOl" id="2HCtBv$ARyz" role="2ePNbc">
       <property role="TrG5h" value="Sensors" />
       <node concept="2v9HqM" id="2HCtBv$ARy$" role="2eOfOg">
-        <ref role="2v9HqP" node="2HCtBv$ARxC" resolve="Sensors" />
+        <ref role="2v9HqP" node="2HCtBv$ARxC" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyheT" role="1kZvWc">
         <property role="TrG5h" value="any" />

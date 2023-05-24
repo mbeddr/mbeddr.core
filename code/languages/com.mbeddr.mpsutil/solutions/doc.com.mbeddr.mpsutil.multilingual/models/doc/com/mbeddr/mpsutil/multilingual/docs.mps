@@ -288,7 +288,7 @@
   <node concept="1_1swa" id="3TSnT3IxdHI">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="UsingMultilingual" />
-    <ref role="G9hjw" node="3TSnT3IxdLq" resolve="MultilingualDocConfig" />
+    <ref role="G9hjw" node="3TSnT3IxdLq" />
     <node concept="1mvXsy" id="3TSnT3IxdMp" role="1_0VJ0">
       <property role="TrG5h" value="overview" />
       <property role="1_0VJr" value="Overview" />
@@ -494,7 +494,7 @@
             <property role="19SUeA" value="Multilingual adds its own Project Settings page to the MPS Settings dialog (" />
           </node>
           <node concept="2Sbdz4" id="3TSnT3I_Qxy" role="19SJt6">
-            <ref role="2SbdyP" node="3TSnT3I_QvD" resolve="settingsDialog" />
+            <ref role="2SbdyP" node="3TSnT3I_QvD" />
           </node>
           <node concept="19SUe$" id="3TSnT3I_Qxx" role="19SJt6">
             <property role="19SUeA" value="). It's on Project scope because the settings might be shared in a team." />
@@ -505,7 +505,7 @@
         <property role="TrG5h" value="settingsDialog" />
         <node concept="2Sb_l4" id="3TSnT3I_Qxu" role="2SbwM5">
           <property role="2Sb_kV" value="settingsDialog.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="3TSnT3I_QvH" role="2SaI5j">
           <node concept="19SGf9" id="3TSnT3I_QvI" role="OjmMu">
@@ -543,7 +543,7 @@
                 <property role="19SUeA" value="Enable \&quot;Show Translations\&quot; Intention: If the intention (see " />
               </node>
               <node concept="1_0GAv" id="3TSnT3I_QAZ" role="19SJt6">
-                <ref role="1_0GAl" node="3TSnT3IxdML" resolve="concept" />
+                <ref role="1_0GAl" node="3TSnT3IxdML" />
               </node>
               <node concept="19SUe$" id="3TSnT3I_QB0" role="19SJt6">
                 <property role="19SUeA" value=") should be available." />
@@ -577,13 +577,13 @@
             <property role="19SUeA" value="For both " />
           </node>
           <node concept="1_0GAv" id="3TSnT3I_S0I" role="19SJt6">
-            <ref role="1_0GAl" node="3TSnT3IxdMv" resolve="baseLanguage" />
+            <ref role="1_0GAl" node="3TSnT3IxdMv" />
           </node>
           <node concept="19SUe$" id="3TSnT3I_S0J" role="19SJt6">
             <property role="19SUeA" value=" and " />
           </node>
           <node concept="1_0GAv" id="3TSnT3I_S0N" role="19SJt6">
-            <ref role="1_0GAl" node="3TSnT3IxdMB" resolve="editor" />
+            <ref role="1_0GAl" node="3TSnT3IxdMB" />
           </node>
           <node concept="19SUe$" id="3TSnT3I_S0O" role="19SJt6">
             <property role="19SUeA" value=", the actually used string is looked up by the referenced . This happens only at runtime, i. e. when the BaseLanguage code is executed or the editor is displayed. At creation time, the " />
@@ -891,7 +891,7 @@
             <property role="19SUeA" value="MultilingualConstant looks up the  as described in " />
           </node>
           <node concept="1_0GAv" id="aiIotXwsDg" role="19SJt6">
-            <ref role="1_0GAl" node="3TSnT3I_RYn" resolve="lookup" />
+            <ref role="1_0GAl" node="3TSnT3I_RYn" />
           </node>
           <node concept="19SUe$" id="aiIotXwsDh" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -927,7 +927,7 @@
         <node concept="19SGf9" id="aiIotXwu38" role="1_0LWR">
           <node concept="19SUe$" id="aiIotXwu3n" role="19SJt6" />
           <node concept="2Sbdz4" id="aiIotXwu3m" role="19SJt6">
-            <ref role="2SbdyP" node="aiIotXwtV5" resolve="conceptStructure" />
+            <ref role="2SbdyP" node="aiIotXwtV5" />
           </node>
           <node concept="19SUe$" id="aiIotXwu3o" role="19SJt6">
             <property role="19SUeA" value=" shows the structure of multilingual concepts." />
@@ -938,7 +938,7 @@
         <property role="TrG5h" value="conceptStructure" />
         <node concept="2Sb_l4" id="aiIotXwtVo" role="2SbwM5">
           <property role="2Sb_kV" value="multilingualConcept.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXwtV9" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXwtVa" role="OjmMu">
@@ -979,7 +979,7 @@
             <property role="19SUeA" value="By default, the user can enter strings or texts into the multilingual concepts just as if they were their plain counterparts. They are considered the translation into the (" />
           </node>
           <node concept="2Sbdz4" id="aiIotXF7KD" role="19SJt6">
-            <ref role="2SbdyP" node="aiIotXF7oi" resolve="conceptPlain" />
+            <ref role="2SbdyP" node="aiIotXF7oi" />
           </node>
           <node concept="19SUe$" id="aiIotXF7KE" role="19SJt6">
             <property role="19SUeA" value=")." />
@@ -990,7 +990,7 @@
         <property role="TrG5h" value="conceptPlain" />
         <node concept="2Sb_l4" id="aiIotXF7qH" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExamplePlain.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXF7om" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7on" role="OjmMu">
@@ -1017,7 +1017,7 @@
             <property role="19SUeA" value=", a flag symbol is displayed at each instance of IMultilingualContent (" />
           </node>
           <node concept="2Sbdz4" id="aiIotXwyta" role="19SJt6">
-            <ref role="2SbdyP" node="aiIotXF7qK" resolve="conceptSimple" />
+            <ref role="2SbdyP" node="aiIotXF7qK" />
           </node>
           <node concept="19SUe$" id="aiIotXwyt9" role="19SJt6">
             <property role="19SUeA" value=")." />
@@ -1028,7 +1028,7 @@
         <property role="TrG5h" value="conceptSimple" />
         <node concept="2Sb_l4" id="aiIotXF7qL" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExampleFlags.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXF7qM" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7qN" role="OjmMu">
@@ -1065,7 +1065,7 @@
             <property role="19SUeA" value=" (" />
           </node>
           <node concept="2Sbdz4" id="aiIotXwy_Y" role="19SJt6">
-            <ref role="2SbdyP" node="aiIotXF7td" resolve="conceptExpanded" />
+            <ref role="2SbdyP" node="aiIotXF7td" />
           </node>
           <node concept="19SUe$" id="aiIotXwy_X" role="19SJt6">
             <property role="19SUeA" value=")." />
@@ -1076,7 +1076,7 @@
         <property role="TrG5h" value="conceptExpanded" />
         <node concept="2Sb_l4" id="aiIotXF7te" role="2SbwM5">
           <property role="2Sb_kV" value="conceptExampleExpanded.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXF7tf" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF7tg" role="OjmMu">
@@ -1135,7 +1135,7 @@
             <property role="19SUeA" value="Make sure to match the  of your resource bundle and the  of your key, as described in " />
           </node>
           <node concept="1_0GAv" id="aiIotXF4az" role="19SJt6">
-            <ref role="1_0GAl" node="3TSnT3I_RYn" resolve="lookup" />
+            <ref role="1_0GAl" node="3TSnT3I_RYn" />
           </node>
           <node concept="19SUe$" id="aiIotXF4a$" role="19SJt6">
             <property role="19SUeA" value=". Add the jar to both Module Properties" />
@@ -1150,7 +1150,7 @@
                 <property role="19SUeA" value="Common Tab, Java Classes Model Root (" />
               </node>
               <node concept="2Sbdz4" id="aiIotXF4sl" role="19SJt6">
-                <ref role="2SbdyP" node="aiIotXF4o3" resolve="moduleCommonTab" />
+                <ref role="2SbdyP" node="aiIotXF4o3" />
               </node>
               <node concept="19SUe$" id="aiIotXF4sm" role="19SJt6">
                 <property role="19SUeA" value=")" />
@@ -1165,7 +1165,7 @@
                 <property role="19SUeA" value="Java Tab, Libraries (" />
               </node>
               <node concept="2Sbdz4" id="aiIotXF4sr" role="19SJt6">
-                <ref role="2SbdyP" node="aiIotXF4r8" resolve="moduleJavaTab" />
+                <ref role="2SbdyP" node="aiIotXF4r8" />
               </node>
               <node concept="19SUe$" id="aiIotXF4ss" role="19SJt6">
                 <property role="19SUeA" value=")" />
@@ -1178,7 +1178,7 @@
         <property role="TrG5h" value="moduleCommonTab" />
         <node concept="2Sb_l4" id="aiIotXF5bB" role="2SbwM5">
           <property role="2Sb_kV" value="moduleCommonTab.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXF4o7" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4o8" role="OjmMu">
@@ -1193,7 +1193,7 @@
         <property role="TrG5h" value="moduleJavaTab" />
         <node concept="2Sb_l4" id="aiIotXF5bE" role="2SbwM5">
           <property role="2Sb_kV" value="moduleJavaTab.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXF4rc" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4rd" role="OjmMu">
@@ -1210,7 +1210,7 @@
             <property role="19SUeA" value="In the directory structure example shown in " />
           </node>
           <node concept="2Sbdz4" id="aiIotXF4HB" role="19SJt6">
-            <ref role="2SbdyP" node="aiIotXF4FB" resolve="resourceStructure" />
+            <ref role="2SbdyP" node="aiIotXF4FB" />
           </node>
           <node concept="19SUe$" id="aiIotXF4HC" role="19SJt6">
             <property role="19SUeA" value=", we use the baseName " />
@@ -1231,7 +1231,7 @@
         <property role="TrG5h" value="resourceStructure" />
         <node concept="2Sb_l4" id="aiIotXF5bH" role="2SbwM5">
           <property role="2Sb_kV" value="exampleDirStructure.png" />
-          <ref role="2Sb_kU" node="3TSnT3IxdLr" resolve="tmp" />
+          <ref role="2Sb_kU" node="3TSnT3IxdLr" />
         </node>
         <node concept="OjmMv" id="aiIotXF4FF" role="2SaI5j">
           <node concept="19SGf9" id="aiIotXF4FG" role="OjmMu">
@@ -1498,7 +1498,7 @@
     <property role="TrG5h" value="Multilingual" />
     <property role="WqcPg" value="Multilingual" />
     <node concept="1_0j5j" id="aiIotXFJil" role="30Gjbj">
-      <ref role="1_0j5g" node="3TSnT3IxdHI" resolve="UsingMultilingual" />
+      <ref role="1_0j5g" node="3TSnT3IxdHI" />
     </node>
     <node concept="1jVoCB" id="2xZVCi_hXQ1" role="30GjaH">
       <property role="1jVoCx" value="article" />

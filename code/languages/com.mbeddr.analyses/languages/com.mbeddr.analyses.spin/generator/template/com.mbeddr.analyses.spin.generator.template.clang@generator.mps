@@ -288,7 +288,7 @@
                             <ref role="2pIpSl" to="51wr:6GqYvBOf2Xc" resolve="module" />
                             <node concept="36biLy" id="5uY69zuWBxG" role="28nt2d">
                               <node concept="3B5_sB" id="5uY69zuWBqI" role="36biLW">
-                                <ref role="3B5MYn" to="rdyw:5uY69zuVGd8" resolve="clang_sanitizer_trap" />
+                                <ref role="3B5MYn" to="rdyw:5uY69zuVGd8" />
                               </node>
                             </node>
                           </node>

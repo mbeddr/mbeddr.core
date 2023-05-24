@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -19,6 +19,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -200,6 +201,7 @@
   </node>
   <node concept="1lH9Xt" id="Pu8Vy2cY16">
     <property role="TrG5h" value="TestMissingReference" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="Pu8Vy2dczN" role="1qtyYc">
       <property role="TrG5h" value="flattenDifferences" />
       <node concept="3clFbS" id="Pu8Vy2dczO" role="3clF47">
@@ -632,6 +634,7 @@
   </node>
   <node concept="1lH9Xt" id="4_9e_ML5KCF">
     <property role="TrG5h" value="CompareProperties" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="4_9e_ML5KCY" role="1SL9yI">
       <property role="TrG5h" value="unsetBooleanEqualsFalse" />
       <node concept="3cqZAl" id="4_9e_ML5KCZ" role="3clF45" />

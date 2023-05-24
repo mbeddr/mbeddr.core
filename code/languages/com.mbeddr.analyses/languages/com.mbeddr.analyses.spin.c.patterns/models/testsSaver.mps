@@ -133,7 +133,7 @@
         <node concept="rcJHQ" id="6AAaFOTAggG" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" to="3y0n:137zkozycEG" resolve="FILE" />
+          <ref role="rcJHT" to="3y0n:137zkozycEG" />
         </node>
       </node>
     </node>
@@ -146,7 +146,7 @@
         <node concept="c0U19" id="6AAaFOTAghz" role="3XIRFZ">
           <node concept="3TlM44" id="6AAaFOTAghA" role="c0U16">
             <node concept="1S7827" id="6AAaFOTAgy_" role="3TlMhI">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="Ea8Gl" id="6AAaFOTAghD" role="3TlMhJ" />
           </node>
@@ -154,12 +154,12 @@
             <node concept="1_9egQ" id="6AAaFOTAghF" role="3XIRFZ">
               <node concept="3pqW6w" id="6AAaFOTAghG" role="1_9egR">
                 <node concept="1S7827" id="6AAaFOTAgzh" role="3TlMhI">
-                  <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+                  <ref role="1S7826" node="6AAaFOTAg8N" />
                 </node>
                 <node concept="3O_q_g" id="6AAaFOTAghJ" role="3TlMhJ">
-                  <ref role="3O_q_h" to="3y0n:137zkozycFr" resolve="fopen" />
+                  <ref role="3O_q_h" to="3y0n:137zkozycFr" />
                   <node concept="3ZUYvv" id="6AAaFOTAghK" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6AAaFOTAgi6" resolve="fileName" />
+                    <ref role="3ZUYvu" node="6AAaFOTAgi6" />
                   </node>
                   <node concept="PhEJO" id="6AAaFOTAghM" role="3O_q_j">
                     <property role="PhEJT" value="a" />
@@ -178,9 +178,9 @@
             </node>
             <node concept="1_9egQ" id="6AAaFOTAghV" role="3XIRFZ">
               <node concept="3O_q_g" id="6AAaFOTAghW" role="1_9egR">
-                <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+                <ref role="3O_q_h" to="3y0n:137zkozycJM" />
                 <node concept="1S7827" id="6AAaFOTAgAe" role="3O_q_j">
-                  <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+                  <ref role="1S7826" node="6AAaFOTAg8N" />
                 </node>
                 <node concept="PhEJO" id="6AAaFOTAghZ" role="3O_q_j">
                   <property role="PhEJT" value="&lt;result&gt;\n" />
@@ -189,9 +189,9 @@
             </node>
             <node concept="1_9egQ" id="6AAaFOTAgi1" role="3XIRFZ">
               <node concept="3O_q_g" id="6AAaFOTAgi2" role="1_9egR">
-                <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+                <ref role="3O_q_h" to="3y0n:137zkozycFl" />
                 <node concept="1S7827" id="6AAaFOTAgBM" role="3O_q_j">
-                  <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+                  <ref role="1S7826" node="6AAaFOTAg8N" />
                 </node>
               </node>
             </node>
@@ -223,9 +223,9 @@
       <node concept="3XIRFW" id="6AAaFOTAhpR" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOTAhpS" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAhpT" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOTAhvR" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="3eV9cR" id="6AAaFOTAhpW" role="3O_q_j">
               <property role="PhEJT" value="&lt;vector&gt;\n" />
@@ -249,9 +249,9 @@
       <node concept="3XIRFW" id="6AAaFOTAhtM" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOTAhtN" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAhtO" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOTAhJn" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="PhEJO" id="6AAaFOTAhtR" role="3O_q_j">
               <property role="PhEJT" value="&lt;/val&gt;\n&lt;/vector&gt;\n" />
@@ -260,9 +260,9 @@
         </node>
         <node concept="1_9egQ" id="6AAaFOTAhtT" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAhtU" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" />
             <node concept="1S7827" id="6AAaFOTAhRj" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
           </node>
         </node>
@@ -283,15 +283,15 @@
       <node concept="3XIRFW" id="6AAaFOU5bw$" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOU5bw_" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOU5bwA" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOU5bwB" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="3eV9cR" id="6AAaFOU5bwC" role="3O_q_j">
               <property role="PhEJT" value="&lt;fun name=&quot;%s&quot;&gt;\n" />
             </node>
             <node concept="3ZUYvv" id="6AAaFOU5dC4" role="3O_q_j">
-              <ref role="3ZUYvu" node="6AAaFOU5dqT" resolve="fun_name" />
+              <ref role="3ZUYvu" node="6AAaFOU5dqT" />
             </node>
           </node>
         </node>
@@ -319,9 +319,9 @@
       <node concept="3XIRFW" id="6AAaFOU5f_w" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOU5f_x" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOU5f_y" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOU5f_z" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="3eV9cR" id="6AAaFOU5f_$" role="3O_q_j">
               <property role="PhEJT" value="&lt;/fun&gt;\n" />
@@ -345,31 +345,31 @@
       <node concept="3XIRFW" id="6AAaFOU5gfe" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOU5gff" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOU5gfg" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOU5gfh" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="3eV9cR" id="6AAaFOU5gfi" role="3O_q_j">
               <property role="PhEJT" value="&lt;arg name=&quot;%s&quot;&gt;\n" />
             </node>
             <node concept="3ZUYvv" id="6AAaFOU5gfj" role="3O_q_j">
-              <ref role="3ZUYvu" node="6AAaFOU5gfl" resolve="arg_name" />
+              <ref role="3ZUYvu" node="6AAaFOU5gfl" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6AAaFOU5i5b" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOU5i59" role="1_9egR">
-            <ref role="3O_q_h" node="6AAaFOTAi1h" resolve="log_int_value" />
+            <ref role="3O_q_h" node="6AAaFOTAi1h" />
             <node concept="3ZUYvv" id="6AAaFOU5i5P" role="3O_q_j">
-              <ref role="3ZUYvu" node="6AAaFOU5gxk" resolve="val" />
+              <ref role="3ZUYvu" node="6AAaFOU5gxk" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6AAaFOU5h5x" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOU5h5y" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOU5h5z" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="3eV9cR" id="6AAaFOU5h5$" role="3O_q_j">
               <property role="PhEJT" value="&lt;/arg&gt;" />
@@ -407,15 +407,15 @@
       <node concept="3XIRFW" id="6AAaFOTAi1l" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOTAi1m" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAi1n" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOTAi4q" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="3eV9cR" id="6AAaFOTAi1q" role="3O_q_j">
               <property role="PhEJT" value="&lt;integer&gt;%d&lt;/integer&gt;" />
             </node>
             <node concept="3ZUYvv" id="6AAaFOTAi1r" role="3O_q_j">
-              <ref role="3ZUYvu" node="6AAaFOTAi1u" resolve="val" />
+              <ref role="3ZUYvu" node="6AAaFOTAi1u" />
             </node>
           </node>
         </node>
@@ -445,9 +445,9 @@
       <node concept="3XIRFW" id="6AAaFOTAihv" role="3XIRFX">
         <node concept="1_9egQ" id="6AAaFOTAihw" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAihx" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJM" resolve="fprintf" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJM" />
             <node concept="1S7827" id="6AAaFOTAimm" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="PhEJO" id="6AAaFOTAih$" role="3O_q_j">
               <property role="PhEJT" value="&lt;/result&gt;\n" />
@@ -456,24 +456,24 @@
         </node>
         <node concept="1_9egQ" id="6AAaFOTAihA" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAihB" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycFl" resolve="fflush" />
+            <ref role="3O_q_h" to="3y0n:137zkozycFl" />
             <node concept="1S7827" id="6AAaFOTAivJ" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6AAaFOTAihF" role="3XIRFZ">
           <node concept="3O_q_g" id="6AAaFOTAihG" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycF3" resolve="fclose" />
+            <ref role="3O_q_h" to="3y0n:137zkozycF3" />
             <node concept="1S7827" id="6AAaFOTAiDe" role="3O_q_j">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6AAaFOTAihK" role="3XIRFZ">
           <node concept="3pqW6w" id="6AAaFOTAihL" role="1_9egR">
             <node concept="1S7827" id="6AAaFOTAiE3" role="3TlMhI">
-              <ref role="1S7826" node="6AAaFOTAg8N" resolve="test_vectors_fd" />
+              <ref role="1S7826" node="6AAaFOTAg8N" />
             </node>
             <node concept="Ea8Gl" id="6AAaFOTAihO" role="3TlMhJ" />
           </node>
@@ -485,10 +485,10 @@
       </node>
     </node>
     <node concept="3GEVxB" id="6AAaFOTAg9a" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
     </node>
     <node concept="3GEVxB" id="6AAaFOTAggC" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" />
     </node>
   </node>
 </model>

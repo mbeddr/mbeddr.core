@@ -166,7 +166,7 @@
     <node concept="29Nb31" id="115mCuL5T_V" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="115mCuL5TA0" role="2eOfOg">
-        <ref role="2v9HqP" node="5atDsHNhyoO" resolve="bug4" />
+        <ref role="2v9HqP" node="5atDsHNhyoO" />
       </node>
       <node concept="1l1LS3" id="4JZ_DSxyhem" role="1kZvWc">
         <property role="TrG5h" value="Win32" />
@@ -207,12 +207,12 @@
               <property role="2hmy$m" value="2" />
             </node>
             <node concept="3ZVu4v" id="5atDsHNhyp1" role="3TlMhI">
-              <ref role="3ZVs_2" node="5atDsHNhyoS" resolve="i" />
+              <ref role="3ZVs_2" node="5atDsHNhyoS" />
             </node>
           </node>
           <node concept="3TM6Ey" id="5atDsHNhyp2" role="1_amZy">
             <node concept="3ZVu4v" id="5atDsHNhyp3" role="1_9fRO">
-              <ref role="3ZVs_2" node="5atDsHNhyoS" resolve="i" />
+              <ref role="3ZVs_2" node="5atDsHNhyoS" />
             </node>
           </node>
         </node>
@@ -281,7 +281,7 @@
               <node concept="3ZVu4v" id="4m$eX95rMXz" role="3XIe9u">
                 <property role="OYnhT" value="0" />
                 <property role="3GE5qa" value="0" />
-                <ref role="3ZVs_2" node="4m$eX95rMX_" resolve="aName_1397921554532" />
+                <ref role="3ZVs_2" node="4m$eX95rMX_" />
               </node>
               <node concept="RvogQ" id="4m$eX95rMX$" role="2C2TGm">
                 <property role="2caQfQ" value="true" />
@@ -296,12 +296,12 @@
               <property role="2hmy$m" value="2" />
             </node>
             <node concept="3ZVu4v" id="4m$eX95rMXE" role="3TlMhI">
-              <ref role="3ZVs_2" node="4m$eX95rMXu" resolve="i" />
+              <ref role="3ZVs_2" node="4m$eX95rMXu" />
             </node>
           </node>
           <node concept="3TM6Ey" id="4m$eX95rMXF" role="1_amZy">
             <node concept="3ZVu4v" id="4m$eX95rMXG" role="1_9fRO">
-              <ref role="3ZVs_2" node="4m$eX95rMXu" resolve="i" />
+              <ref role="3ZVs_2" node="4m$eX95rMXu" />
             </node>
           </node>
         </node>

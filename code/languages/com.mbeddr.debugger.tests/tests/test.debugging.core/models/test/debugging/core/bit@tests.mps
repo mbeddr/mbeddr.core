@@ -33,7 +33,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -96,7 +96,7 @@
   <node concept="309jyn" id="5S3xvtau7u">
     <property role="TrG5h" value="BitTest" />
     <node concept="3qy1PH" id="3GPxRNRaKaw" role="3qy1PE">
-      <ref role="30ajXG" to="fvfz:4PM5ysqsGoP" resolve="BitTest" />
+      <ref role="30ajXG" to="fvfz:4PM5ysqsGoP" />
     </node>
     <node concept="1vsUH6" id="4WY_RKGyVcD" role="1zJi$$">
       <property role="TrG5h" value="inTestBitFields" />
@@ -121,7 +121,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m3l" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m3m" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m3n" role="3sdZbB">
-          <ref role="3sa5fj" to="fvfz:4PM5ysqsGoX" resolve="firstBitFieldAssignment" />
+          <ref role="3sa5fj" to="fvfz:4PM5ysqsGoX" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m3o" role="3savwP">
@@ -133,16 +133,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m3r" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKaY" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="fvfz:4PM5ysqsGoY" resolve="secondBitFieldAssignment" />
+            <ref role="3cQ7K8" to="fvfz:4PM5ysqsGoY" />
           </node>
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2m3t" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyVcK" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyVcI" resolve="inTestBitFields" />
+            <ref role="1vv99g" node="4WY_RKGyVcI" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyVcM" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyVcD" resolve="inTestBitFields" />
+          <ref role="1vtf2j" node="4WY_RKGyVcD" />
         </node>
       </node>
     </node>
@@ -152,7 +152,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m7t" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m7u" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m7v" role="3sdZbB">
-          <ref role="3sa5fj" to="fvfz:4PM5ysqsGoX" resolve="firstBitFieldAssignment" />
+          <ref role="3sa5fj" to="fvfz:4PM5ysqsGoX" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m7w" role="3savwP">
@@ -164,16 +164,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m7z" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKaW" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="fvfz:4PM5ysqsGoY" resolve="secondBitFieldAssignment" />
+            <ref role="3cQ7K8" to="fvfz:4PM5ysqsGoY" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyVcN" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyVcO" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyVcI" resolve="inTestBitFields" />
+            <ref role="1vv99g" node="4WY_RKGyVcI" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyVcP" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyVcD" resolve="inTestBitFields" />
+          <ref role="1vtf2j" node="4WY_RKGyVcD" />
         </node>
       </node>
     </node>
@@ -183,7 +183,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mgl" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mgm" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mgn" role="3sdZbB">
-          <ref role="3sa5fj" to="fvfz:4PM5ysqsGoW" resolve="bitFieldDeclaration" />
+          <ref role="3sa5fj" to="fvfz:4PM5ysqsGoW" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mgo" role="3savwP" />
@@ -191,16 +191,16 @@
         <node concept="30a7bf" id="7Jr7T0w2mgq" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKb0" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="fvfz:4PM5ysqsGoX" resolve="firstBitFieldAssignment" />
+            <ref role="3cQ7K8" to="fvfz:4PM5ysqsGoX" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyVcQ" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyVcR" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyVcI" resolve="inTestBitFields" />
+            <ref role="1vv99g" node="4WY_RKGyVcI" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyVcS" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyVcD" resolve="inTestBitFields" />
+          <ref role="1vtf2j" node="4WY_RKGyVcD" />
         </node>
       </node>
     </node>

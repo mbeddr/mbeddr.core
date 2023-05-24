@@ -711,7 +711,7 @@
             <node concept="3XISUE" id="2VCuTRcmIFh" role="3XIRFZ" />
             <node concept="1_9egQ" id="2VCuTRcmIGc" role="3XIRFZ">
               <node concept="3ZVu4v" id="2VCuTRcmIGa" role="1_9egR">
-                <ref role="3ZVs_2" node="2VCuTRcmIFq" resolve="__result" />
+                <ref role="3ZVs_2" node="2VCuTRcmIFq" />
                 <node concept="raruj" id="2VCuTRcmIGx" role="lGtFl" />
               </node>
             </node>
@@ -746,7 +746,7 @@
               <node concept="25Bbzn" id="1fdMHEcb_$m" role="1_9egR">
                 <node concept="Ea8Gl" id="1fdMHEcb__S" role="3TlMhJ" />
                 <node concept="3ZVu4v" id="1fdMHEcb_g$" role="3TlMhI">
-                  <ref role="3ZVs_2" node="1fdMHEcb_gv" resolve="pointer" />
+                  <ref role="3ZVs_2" node="1fdMHEcb_gv" />
                   <node concept="29HgVG" id="1fdMHEcbA8Z" role="lGtFl">
                     <node concept="3NFfHV" id="1fdMHEcbA90" role="3NFExx">
                       <node concept="3clFbS" id="1fdMHEcbA91" role="2VODD2">

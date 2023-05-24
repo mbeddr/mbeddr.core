@@ -273,7 +273,7 @@
         <node concept="2BFjQ_" id="12n15PArcWB" role="3XIRFZ">
           <node concept="2BOciq" id="12n15PArdAZ" role="2BFjQA">
             <node concept="3ZUYvv" id="12n15PArdB9" role="3TlMhJ">
-              <ref role="3ZUYvu" node="12n15PArdzr" resolve="p" />
+              <ref role="3ZUYvu" node="12n15PArdzr" />
             </node>
             <node concept="3TlMh9" id="12n15PArcWC" role="3TlMhI">
               <property role="2hmy$m" value="11" />
@@ -305,7 +305,7 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3ZVu4v" id="5B$wwdfk0K9" role="3TlMhI">
-              <ref role="3ZVs_2" node="5B$wwdfk0D$" resolve="res" />
+              <ref role="3ZVs_2" node="5B$wwdfk0D$" />
             </node>
           </node>
           <node concept="mF5w6" id="5B$wwdfk2Mr" role="lGtFl">
@@ -314,7 +314,7 @@
         </node>
         <node concept="2BFjQ_" id="5B$wwdfk1QU" role="3XIRFZ">
           <node concept="3ZVu4v" id="5B$wwdfk244" role="2BFjQA">
-            <ref role="3ZVs_2" node="5B$wwdfk0D$" resolve="res" />
+            <ref role="3ZVs_2" node="5B$wwdfk0D$" />
           </node>
         </node>
       </node>
@@ -346,7 +346,7 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3ZVu4v" id="5B$wwdfpKO3" role="3TlMhI">
-              <ref role="3ZVs_2" node="5B$wwdfpKNX" resolve="res" />
+              <ref role="3ZVs_2" node="5B$wwdfpKNX" />
             </node>
           </node>
           <node concept="mF5w6" id="5B$wwdfpKO4" role="lGtFl">
@@ -355,7 +355,7 @@
         </node>
         <node concept="2BFjQ_" id="5B$wwdfpKO5" role="3XIRFZ">
           <node concept="3ZVu4v" id="5B$wwdfpKO6" role="2BFjQA">
-            <ref role="3ZVs_2" node="5B$wwdfpKNX" resolve="res" />
+            <ref role="3ZVs_2" node="5B$wwdfpKNX" />
           </node>
         </node>
       </node>
@@ -380,7 +380,7 @@
             <property role="2hmy$m" value="100" />
           </node>
           <node concept="3O_q_g" id="3YyHFqO6jT1" role="2N2GHg">
-            <ref role="3O_q_h" node="3YyHFqO5m5L" resolve="aFunction" />
+            <ref role="3O_q_h" node="3YyHFqO5m5L" />
           </node>
         </node>
         <node concept="2N2KuS" id="5be2k4jWvA0" role="3XIRFZ">
@@ -388,7 +388,7 @@
             <property role="2hmy$m" value="10" />
           </node>
           <node concept="3O_q_g" id="5be2k4jWwVv" role="2N2GHg">
-            <ref role="3O_q_h" node="5be2k4jWuYh" resolve="bFunction" />
+            <ref role="3O_q_h" node="5be2k4jWuYh" />
           </node>
         </node>
         <node concept="2N2KuS" id="12n15PArdv2" role="3XIRFZ">
@@ -396,7 +396,7 @@
             <property role="2hmy$m" value="142" />
           </node>
           <node concept="3O_q_g" id="12n15PArdvU" role="2N2GHg">
-            <ref role="3O_q_h" node="12n15PArcW$" resolve="cFunction" />
+            <ref role="3O_q_h" node="12n15PArcW$" />
             <node concept="3TlMh9" id="12n15PArdV2" role="3O_q_j">
               <property role="2hmy$m" value="31" />
             </node>
@@ -407,7 +407,7 @@
             <property role="2hmy$m" value="10" />
           </node>
           <node concept="3O_q_g" id="5B$wwdfk2hv" role="2N2GHg">
-            <ref role="3O_q_h" node="5B$wwdfj9ic" resolve="aFunctionWithAHook" />
+            <ref role="3O_q_h" node="5B$wwdfj9ic" />
           </node>
         </node>
         <node concept="2N2KuS" id="5B$wwdfpL$9" role="3XIRFZ">
@@ -415,7 +415,7 @@
             <property role="2hmy$m" value="20" />
           </node>
           <node concept="3O_q_g" id="5B$wwdfpLIo" role="2N2GHg">
-            <ref role="3O_q_h" node="5B$wwdfpKNV" resolve="bFunctionWithAHook" />
+            <ref role="3O_q_h" node="5B$wwdfpKNV" />
           </node>
         </node>
       </node>
@@ -428,7 +428,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zJER1" role="lIfQt">
-        <ref role="3cM6IK" node="3YyHFqO2guu" resolve="testCase1" />
+        <ref role="3cM6IK" node="3YyHFqO2guu" />
       </node>
     </node>
     <node concept="2NXPZ9" id="3YyHFqO5lZB" role="N3F5h">
@@ -455,43 +455,43 @@
     </node>
     <node concept="2bCUPO" id="3YyHFqO2i9d" role="2Q9xDr">
       <node concept="2bCQJM" id="3YyHFqO2i9l" role="2bCqU6">
-        <ref role="2bCQz$" node="3YyHFqO2gwj" resolve="CompTest1" />
+        <ref role="2bCQz$" node="3YyHFqO2gwj" />
       </node>
       <node concept="2bD$Ir" id="3YyHFqO2i9s" role="2bDyxq">
-        <ref role="2bD$Io" node="3YyHFqO2i9o" resolve="ChangeFunction" />
+        <ref role="2bD$Io" node="3YyHFqO2i9o" />
       </node>
       <node concept="2bD$Ir" id="12n15PArv2I" role="2bDyxq">
-        <ref role="2bD$Io" node="12n15PArbV1" resolve="ChangeFunctionCall" />
+        <ref role="2bD$Io" node="12n15PArbV1" />
       </node>
       <node concept="2bD$Ir" id="5B$wwdfhoxK" role="2bDyxq">
-        <ref role="2bD$Io" node="5B$wwdfc26z" resolve="LoggingSpecific" />
+        <ref role="2bD$Io" node="5B$wwdfc26z" />
       </node>
       <node concept="2bD$Ir" id="5B$wwdfhr0q" role="2bDyxq">
-        <ref role="2bD$Io" node="5be2k4jZALX" resolve="LoggingGeneric" />
+        <ref role="2bD$Io" node="5be2k4jZALX" />
       </node>
       <node concept="2bD$Ir" id="5B$wwdfkcg7" role="2bDyxq">
-        <ref role="2bD$Io" node="5B$wwdfk39S" resolve="HookExample" />
+        <ref role="2bD$Io" node="5B$wwdfk39S" />
       </node>
     </node>
     <node concept="2eOfOl" id="3YyHFqO2gwj" role="2ePNbc">
       <property role="TrG5h" value="CompTest1" />
       <node concept="2v9HqM" id="3YyHFqO4Ucj" role="2eOfOg">
-        <ref role="2v9HqP" node="3YyHFqO2guG" resolve="SubjectModule" />
+        <ref role="2v9HqP" node="3YyHFqO2guG" />
       </node>
       <node concept="2v9HqM" id="3YyHFqO4Uco" role="2eOfOg">
-        <ref role="2v9HqP" node="3YyHFqO2i9o" resolve="ChangeFunction" />
+        <ref role="2v9HqP" node="3YyHFqO2i9o" />
       </node>
       <node concept="2v9HqM" id="12n15PAreU9" role="2eOfOg">
-        <ref role="2v9HqP" node="12n15PArbV1" resolve="ChangeFunctionCall" />
+        <ref role="2v9HqP" node="12n15PArbV1" />
       </node>
       <node concept="2v9HqM" id="5B$wwdfhoxN" role="2eOfOg">
-        <ref role="2v9HqP" node="5B$wwdfc26z" resolve="LoggingSpecific" />
+        <ref role="2v9HqP" node="5B$wwdfc26z" />
       </node>
       <node concept="2v9HqM" id="5B$wwdfhr8B" role="2eOfOg">
-        <ref role="2v9HqP" node="5be2k4jZALX" resolve="LoggingGeneric" />
+        <ref role="2v9HqP" node="5be2k4jZALX" />
       </node>
       <node concept="2v9HqM" id="5B$wwdfkcgu" role="2eOfOg">
-        <ref role="2v9HqP" node="5B$wwdfk39S" resolve="HookExample" />
+        <ref role="2v9HqP" node="5B$wwdfk39S" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxE9k" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -503,7 +503,7 @@
     <property role="TrG5h" value="ChangeFunction" />
     <node concept="2bDJ5o" id="3YyHFqO2i9p" role="lGtFl" />
     <node concept="3GEVxB" id="3YyHFqO5oQc" role="2OODSX">
-      <ref role="3GEb4d" node="3YyHFqO2guG" resolve="SubjectModule" />
+      <ref role="3GEb4d" node="3YyHFqO2guG" />
     </node>
     <node concept="N3Fnx" id="3YyHFqO5oRE" role="N3F5h">
       <property role="TrG5h" value="changeStuff" />
@@ -521,7 +521,7 @@
       </node>
       <node concept="2bHawX" id="3YyHFqO5K4I" role="lGtFl">
         <node concept="2bHe6k" id="3YyHFqO5K9A" role="2bHax8">
-          <ref role="2bHe6l" node="3YyHFqO5m5L" resolve="aFunction" />
+          <ref role="2bHe6l" node="3YyHFqO5m5L" />
         </node>
         <node concept="2bIanx" id="3YyHFqO6Hn9" role="2bIYci" />
       </node>
@@ -531,7 +531,7 @@
     <property role="TrG5h" value="LoggingGeneric" />
     <node concept="2bDJ5o" id="5be2k4jZALY" role="lGtFl" />
     <node concept="3GEVxB" id="5be2k4jZALZ" role="2OODSX">
-      <ref role="3GEb4d" node="3YyHFqO2guG" resolve="SubjectModule" />
+      <ref role="3GEb4d" node="3YyHFqO2guG" />
     </node>
     <node concept="N3Fnx" id="5be2k4jZAMe" role="N3F5h">
       <property role="TrG5h" value="logging" />
@@ -633,7 +633,7 @@
     <property role="TrG5h" value="ChangeFunctionCall" />
     <node concept="2bDJ5o" id="12n15PArbV2" role="lGtFl" />
     <node concept="3GEVxB" id="12n15PArbV3" role="2OODSX">
-      <ref role="3GEb4d" node="3YyHFqO2guG" resolve="SubjectModule" />
+      <ref role="3GEb4d" node="3YyHFqO2guG" />
     </node>
     <node concept="N3Fnx" id="12n15PArbV4" role="N3F5h">
       <property role="TrG5h" value="cFunctionCall_NEW" />
@@ -659,7 +659,7 @@
       <node concept="2bHawX" id="12n15PArbV9" role="lGtFl">
         <node concept="1QCOmc" id="12n15PAreFO" role="2bIYci" />
         <node concept="1QDJLI" id="12n15PArcb7" role="2bHax8">
-          <ref role="1QDJLD" node="12n15PArcW$" resolve="cFunction" />
+          <ref role="1QDJLD" node="12n15PArcW$" />
         </node>
       </node>
     </node>

@@ -34,7 +34,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -109,7 +109,7 @@
   <node concept="309jyn" id="5S3xvtanoo">
     <property role="TrG5h" value="Closure" />
     <node concept="3qy1PH" id="3GPxRNRaLYz" role="3qy1PE">
-      <ref role="30ajXG" to="9vx0:4Y0lNFa3ShG" resolve="ClosureTest" />
+      <ref role="30ajXG" to="9vx0:4Y0lNFa3ShG" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZS7q" role="29bA6Q" />
     <node concept="1vsUH6" id="4WY_RKG$PC9" role="1zJi$$">
@@ -179,7 +179,7 @@
         <property role="TrG5h" value="b" />
       </node>
       <node concept="1vv375" id="4WY_RKG$PCP" role="1zHble">
-        <ref role="1vv99g" node="4WY_RKG$PCM" resolve="globals" />
+        <ref role="1vv99g" node="4WY_RKG$PCM" />
       </node>
     </node>
     <node concept="1vuW9F" id="4WY_RKG$PCT" role="1zJi$$">
@@ -197,7 +197,7 @@
         <property role="TrG5h" value="p" />
       </node>
       <node concept="1vv375" id="4WY_RKG$PCU" role="1zHble">
-        <ref role="1vv99g" node="4WY_RKG$PCM" resolve="globals" />
+        <ref role="1vv99g" node="4WY_RKG$PCM" />
       </node>
     </node>
     <node concept="1vuW9F" id="4WY_RKG$PD1" role="1zJi$$">
@@ -206,7 +206,7 @@
         <property role="TrG5h" value="intarr" />
       </node>
       <node concept="1vv375" id="4WY_RKG$PD2" role="1zHble">
-        <ref role="1vv99g" node="4WY_RKG$PCM" resolve="globals" />
+        <ref role="1vv99g" node="4WY_RKG$PCM" />
       </node>
     </node>
     <node concept="1vuW9F" id="4WY_RKG$PD5" role="1zJi$$">
@@ -215,7 +215,7 @@
         <property role="TrG5h" value="fun" />
       </node>
       <node concept="1vv375" id="4WY_RKG$PD6" role="1zHble">
-        <ref role="1vv99g" node="4WY_RKG$PCM" resolve="globals" />
+        <ref role="1vv99g" node="4WY_RKG$PCM" />
       </node>
     </node>
     <node concept="3sgmnF" id="4WY_RKG$PC8" role="1zJi$$" />
@@ -225,7 +225,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lYn" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lYo" role="3scror">
         <node concept="3sdZbA" id="16$HA_jakjp" role="3sdZbB">
-          <ref role="3sa5fj" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+          <ref role="3sa5fj" to="9vx0:1KSABIutHoG" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lYq" role="3savwP">
@@ -237,17 +237,17 @@
         <node concept="16YvwY" id="7qzmU5U0yvS" role="3F5Y$9">
           <node concept="1l46Ie" id="4WY_RKG$PDy" role="16YnsZ">
             <node concept="1vv375" id="4WY_RKG$PD$" role="1vv36M">
-              <ref role="1vv99g" node="4WY_RKG$PD5" resolve="inAHof" />
+              <ref role="1vv99g" node="4WY_RKG$PD5" />
             </node>
           </node>
           <node concept="30a7bf" id="7Jr7T0w2lYt" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaM0b" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="9vx0:bKKma6IefA" resolve="closureCallInsideAHof" />
+              <ref role="3cQ7K8" to="9vx0:bKKma6IefA" />
             </node>
           </node>
           <node concept="1vtf2i" id="4WY_RKG$PCi" role="16YnsZ">
-            <ref role="1vtf2j" node="4WY_RKG$PC9" resolve="inAHof" />
+            <ref role="1vtf2j" node="4WY_RKG$PC9" />
           </node>
           <node concept="16XR13" id="7qzmU5U0Ad6" role="16XPZB">
             <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
@@ -255,32 +255,32 @@
               <property role="16EpFF" value="4TbX0$8Gx8R/win" />
               <node concept="1l46Ie" id="7cisAzZ8Jst" role="16XPZy">
                 <node concept="1vv375" id="7cisAzZ8Jsu" role="1vv36M">
-                  <ref role="1vv99g" node="4WY_RKG$PD1" resolve="inTestClosure" />
+                  <ref role="1vv99g" node="4WY_RKG$PD1" />
                 </node>
               </node>
               <node concept="30a7bf" id="7cisAzZ8Jsv" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaM0l" role="30a7be">
                   <property role="3sdDOw" value="marker" />
-                  <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+                  <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" />
                 </node>
               </node>
               <node concept="1vtf2i" id="7cisAzZ8Jsx" role="16XPZy">
-                <ref role="1vtf2j" node="4WY_RKG$PCb" resolve="inTestClosure" />
+                <ref role="1vtf2j" node="4WY_RKG$PCb" />
               </node>
             </node>
             <node concept="1l46Ie" id="4WY_RKG$PDu" role="16XPZy">
               <node concept="1vv375" id="4WY_RKG$PDw" role="1vv36M">
-                <ref role="1vv99g" node="4WY_RKG$PD1" resolve="inTestClosure" />
+                <ref role="1vv99g" node="4WY_RKG$PD1" />
               </node>
             </node>
             <node concept="30a7bf" id="1KSABIutHyn" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaM0p" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+                <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" />
               </node>
             </node>
             <node concept="1vtf2i" id="4WY_RKG$PCm" role="16XPZy">
-              <ref role="1vtf2j" node="4WY_RKG$PCb" resolve="inTestClosure" />
+              <ref role="1vtf2j" node="4WY_RKG$PCb" />
             </node>
           </node>
         </node>
@@ -293,7 +293,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m7f" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m7g" role="3scror">
         <node concept="3sdZbA" id="16$HA_jakje" role="3sdZbB">
-          <ref role="3sa5fj" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+          <ref role="3sa5fj" to="9vx0:1KSABIutHoG" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m7i" role="3savwP" />
@@ -301,16 +301,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m7k" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM0d" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+            <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKG$PDq" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$PDs" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$PCK" resolve="in1stClosure" />
+            <ref role="1vv99g" node="4WY_RKG$PCK" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$PCu" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$PCc" resolve="in1stClosure" />
+          <ref role="1vtf2j" node="4WY_RKG$PCc" />
         </node>
       </node>
     </node>
@@ -321,7 +321,7 @@
       <node concept="3clFbS" id="7Jr7T0w2ma6" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2ma7" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2ma8" role="3sdZbB">
-          <ref role="3sa5fj" to="9vx0:bKKma6IeS7" resolve="functionCallToInvoke2ndClosure" />
+          <ref role="3sa5fj" to="9vx0:bKKma6IeS7" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2ma9" role="3savwP">
@@ -335,17 +335,17 @@
       <node concept="3F5Y_J" id="7Jr7T0w2mac" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKG$PDn" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$PDp" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$PD1" resolve="inTestClosure" />
+            <ref role="1vv99g" node="4WY_RKG$PD1" />
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2mad" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM0f" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="9vx0:bKKma6Ify3" resolve="stmntAfterInvocationOf2ndClosureFunction" />
+            <ref role="3cQ7K8" to="9vx0:bKKma6Ify3" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$PCw" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$PCb" resolve="inTestClosure" />
+          <ref role="1vtf2j" node="4WY_RKG$PCb" />
         </node>
       </node>
     </node>
@@ -356,7 +356,7 @@
       <node concept="3clFbS" id="7Jr7T0w2maA" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2maB" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2maC" role="3sdZbB">
-          <ref role="3sa5fj" to="9vx0:bKKma6IefA" resolve="closureCallInsideAHof" />
+          <ref role="3sa5fj" to="9vx0:bKKma6IefA" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2maD" role="3savwP">
@@ -367,17 +367,17 @@
       <node concept="3F5Y_J" id="7Jr7T0w2maF" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKG$PDk" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$PDm" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$PCK" resolve="in1stClosure" />
+            <ref role="1vv99g" node="4WY_RKG$PCK" />
           </node>
         </node>
         <node concept="30a7bf" id="7Jr7T0w2maG" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM07" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+            <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$PCy" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$PCc" resolve="in1stClosure" />
+          <ref role="1vtf2j" node="4WY_RKG$PCc" />
         </node>
       </node>
     </node>
@@ -388,7 +388,7 @@
       <node concept="3clFbS" id="7Jr7T0w2meW" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meX" role="3scror">
         <node concept="3sdZbA" id="16$HA_jajQb" role="3sdZbB">
-          <ref role="3sa5fj" to="9vx0:bKKma6IeSg" resolve="invokationOf2ndClosure" />
+          <ref role="3sa5fj" to="9vx0:bKKma6IeSg" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2meZ" role="3savwP">
@@ -400,16 +400,16 @@
         <node concept="30a7bf" id="7Jr7T0w2mf2" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM09" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="9vx0:bKKma6IeSg" resolve="invokationOf2ndClosure" />
+            <ref role="3cQ7K8" to="9vx0:bKKma6IeSg" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKG$PDh" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$PDj" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$PCT" resolve="inModifyArray" />
+            <ref role="1vv99g" node="4WY_RKG$PCT" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$PCD" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$PC$" resolve="inModifyArray" />
+          <ref role="1vtf2j" node="4WY_RKG$PC$" />
         </node>
       </node>
     </node>
@@ -420,7 +420,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mhe" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mhf" role="3scror">
         <node concept="3sdZbA" id="16$HA_jakiH" role="3sdZbB">
-          <ref role="3sa5fj" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+          <ref role="3sa5fj" to="9vx0:1KSABIutHoG" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mhh" role="3savwP">
@@ -432,17 +432,17 @@
         <node concept="16YvwY" id="7qzmU5U0ysE" role="3F5Y$9">
           <node concept="1l46Ie" id="4WY_RKG$PDe" role="16YnsZ">
             <node concept="1vv375" id="4WY_RKG$PDg" role="1vv36M">
-              <ref role="1vv99g" node="4WY_RKG$PD5" resolve="inAHof" />
+              <ref role="1vv99g" node="4WY_RKG$PD5" />
             </node>
           </node>
           <node concept="30a7bf" id="7Jr7T0w2mhk" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaM0n" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="9vx0:bKKma6IefA" resolve="closureCallInsideAHof" />
+              <ref role="3cQ7K8" to="9vx0:bKKma6IefA" />
             </node>
           </node>
           <node concept="1vtf2i" id="4WY_RKG$PCF" role="16YnsZ">
-            <ref role="1vtf2j" node="4WY_RKG$PC9" resolve="inAHof" />
+            <ref role="1vtf2j" node="4WY_RKG$PC9" />
           </node>
           <node concept="16XR13" id="7qzmU5U0AdZ" role="16XPZB">
             <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
@@ -451,30 +451,30 @@
               <node concept="30a7bf" id="7cisAzZ8Ju9" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaM0j" role="30a7be">
                   <property role="3sdDOw" value="marker" />
-                  <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+                  <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" />
                 </node>
               </node>
               <node concept="1vtf2i" id="7cisAzZ8Jub" role="16XPZy">
-                <ref role="1vtf2j" node="4WY_RKG$PCb" resolve="inTestClosure" />
+                <ref role="1vtf2j" node="4WY_RKG$PCb" />
               </node>
               <node concept="1l46Ie" id="7cisAzZ8Juc" role="16XPZy">
                 <node concept="1vv375" id="7cisAzZ8Jud" role="1vv36M">
-                  <ref role="1vv99g" node="4WY_RKG$PD1" resolve="inTestClosure" />
+                  <ref role="1vv99g" node="4WY_RKG$PD1" />
                 </node>
               </node>
             </node>
             <node concept="30a7bf" id="1KSABIutI0c" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaM0h" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" resolve="assertWithClosure" />
+                <ref role="3cQ7K8" to="9vx0:1KSABIutHoG" />
               </node>
             </node>
             <node concept="1vtf2i" id="4WY_RKG$PCH" role="16XPZy">
-              <ref role="1vtf2j" node="4WY_RKG$PCb" resolve="inTestClosure" />
+              <ref role="1vtf2j" node="4WY_RKG$PCb" />
             </node>
             <node concept="1l46Ie" id="4WY_RKG$PD9" role="16XPZy">
               <node concept="1vv375" id="4WY_RKG$PDa" role="1vv36M">
-                <ref role="1vv99g" node="4WY_RKG$PD1" resolve="inTestClosure" />
+                <ref role="1vv99g" node="4WY_RKG$PD1" />
               </node>
             </node>
           </node>

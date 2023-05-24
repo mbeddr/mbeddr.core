@@ -40,7 +40,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -139,7 +139,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKGyTwm" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtau7x" role="3qy1PE">
-      <ref role="30ajXG" to="j775:CJowcz$Xpb" resolve="EnumTest" />
+      <ref role="30ajXG" to="j775:CJowcz$Xpb" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lSV" role="1zJi$$">
       <property role="TrG5h" value="stepOverEnumAssignment" />
@@ -147,7 +147,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lSX" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lSY" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lSZ" role="3sdZbB">
-          <ref role="3sa5fj" to="j775:CJowcz$Xpe" resolve="firstEnumAssignment" />
+          <ref role="3sa5fj" to="j775:CJowcz$Xpe" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lT0" role="3savwP">
@@ -159,15 +159,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lT3" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMfw" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="j775:CJowcz$Xpf" resolve="secondEnumAssignment" />
+            <ref role="3cQ7K8" to="j775:CJowcz$Xpf" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyTwx" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyTwt" resolve="inTestEnums" />
+          <ref role="1vtf2j" node="4WY_RKGyTwt" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyTwz" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyTw$" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyTwn" resolve="inTestEnums" />
+            <ref role="1vv99g" node="4WY_RKGyTwn" />
           </node>
         </node>
       </node>
@@ -178,7 +178,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lUw" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lUx" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lUy" role="3sdZbB">
-          <ref role="3sa5fj" to="j775:CJowcz$Xpe" resolve="firstEnumAssignment" />
+          <ref role="3sa5fj" to="j775:CJowcz$Xpe" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lUz" role="3savwP">
@@ -190,15 +190,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lUA" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMfy" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="j775:CJowcz$Xpf" resolve="secondEnumAssignment" />
+            <ref role="3cQ7K8" to="j775:CJowcz$Xpf" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyTw_" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyTwt" resolve="inTestEnums" />
+          <ref role="1vtf2j" node="4WY_RKGyTwt" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyTwA" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyTwB" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyTwn" resolve="inTestEnums" />
+            <ref role="1vv99g" node="4WY_RKGyTwn" />
           </node>
         </node>
       </node>
@@ -209,7 +209,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lYK" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lYL" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lYM" role="3sdZbB">
-          <ref role="3sa5fj" to="j775:CJowcz$Xpd" resolve="enumDeclaration" />
+          <ref role="3sa5fj" to="j775:CJowcz$Xpd" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lYN" role="3savwP" />
@@ -219,24 +219,24 @@
           <node concept="30a7bf" id="7Jr7T0w2lYP" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaMfA" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="j775:CJowcz$Xpd" resolve="enumDeclaration" />
+              <ref role="3cQ7K8" to="j775:CJowcz$Xpd" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0AtQ" role="16XPZB">
             <node concept="30a7bf" id="76ic3S1wSOT" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaMf$" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="j775:CJowcz$Xpd" resolve="enumDeclaration" />
+                <ref role="3cQ7K8" to="j775:CJowcz$Xpd" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyTwC" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyTwt" resolve="inTestEnums" />
+          <ref role="1vtf2j" node="4WY_RKGyTwt" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyTwD" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyTwE" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyTwn" resolve="inTestEnums" />
+            <ref role="1vv99g" node="4WY_RKGyTwn" />
           </node>
         </node>
       </node>

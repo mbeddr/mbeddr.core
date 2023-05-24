@@ -176,26 +176,26 @@
     <node concept="2eOfOl" id="7lNBHBNC4AP" role="2ePNbc">
       <property role="TrG5h" value="TypedefsAndTypes" />
       <node concept="2v9HqM" id="7lNBHBNC4AQ" role="2eOfOg">
-        <ref role="2v9HqP" node="7lNBHBNC4_$" resolve="TypeDefTest" />
+        <ref role="2v9HqP" node="7lNBHBNC4_$" />
       </node>
       <node concept="2v9HqM" id="1lV_BI7Turl" role="2eOfOg">
-        <ref role="2v9HqP" node="7lNBHBNC4E9" resolve="TypeTest" />
+        <ref role="2v9HqP" node="7lNBHBNC4E9" />
       </node>
       <node concept="2v9HqM" id="6FLcSer$hO5" role="2eOfOg">
-        <ref role="2v9HqP" node="6FLcSer$fDs" resolve="ExtModuleUsesTypeDef" />
+        <ref role="2v9HqP" node="6FLcSer$fDs" />
       </node>
       <node concept="2v9HqM" id="6FLcSer$hO8" role="2eOfOg">
-        <ref role="2v9HqP" node="6FLcSer$fDo" resolve="ExtModuleWithTypeDef3" />
+        <ref role="2v9HqP" node="6FLcSer$fDo" />
       </node>
       <node concept="2v9HqM" id="7lNBHBNC4AS" role="2eOfOg">
-        <ref role="2v9HqP" node="7lNBHBNC4_M" resolve="TypeDefFromExternalModule" />
+        <ref role="2v9HqP" node="7lNBHBNC4_M" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgJ" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2xfidK" id="1WKZBvBXE1r" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgvB" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgvC" role="2Q9FjI" />
@@ -217,7 +217,7 @@
       <node concept="1sgJKr" id="6IBKEH6mt_G" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="6IBKEH6mt3p" resolve="aStruct" />
+        <ref role="1sgJKq" node="6IBKEH6mt3p" />
       </node>
     </node>
     <node concept="1sgJKc" id="6IBKEH6mt3p" role="N3F5h">
@@ -244,7 +244,7 @@
             <property role="2hmy$m" value="1" />
           </node>
           <node concept="rcJHQ" id="4qazcyJOfkd" role="2C2TGm">
-            <ref role="rcJHT" node="7lNBHBNC4_C" resolve="zahl" />
+            <ref role="rcJHT" node="7lNBHBNC4_C" />
           </node>
         </node>
         <node concept="3XIRlf" id="7lNBHBNC4_S" role="3XIRFZ">
@@ -253,17 +253,17 @@
             <property role="2hmy$m" value="10" />
           </node>
           <node concept="rcJHQ" id="4qazcyJOfq4" role="2C2TGm">
-            <ref role="rcJHT" node="7lNBHBNC4_O" resolve="auchNeZahl" />
+            <ref role="rcJHT" node="7lNBHBNC4_O" />
           </node>
         </node>
         <node concept="3XIRlf" id="7lNBHBNC4_X" role="3XIRFZ">
           <property role="TrG5h" value="res" />
           <node concept="2BOciq" id="7lNBHBNC4A4" role="3XIe9u">
             <node concept="3ZVu4v" id="7lNBHBNC4A7" role="3TlMhJ">
-              <ref role="3ZVs_2" node="7lNBHBNC4_G" resolve="z1" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_G" />
             </node>
             <node concept="3ZVu4v" id="7lNBHBNC4A3" role="3TlMhI">
-              <ref role="3ZVs_2" node="7lNBHBNC4_S" resolve="z2" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_S" />
             </node>
           </node>
           <node concept="26Vqqz" id="4qazcyJOfpD" role="2C2TGm" />
@@ -274,7 +274,7 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="3ZVu4v" id="7lNBHBNC4Ab" role="3TlMhI">
-              <ref role="3ZVs_2" node="7lNBHBNC4_G" resolve="z1" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_G" />
             </node>
           </node>
         </node>
@@ -285,10 +285,10 @@
             </node>
             <node concept="2BOcih" id="7lNBHBNC4Ak" role="3TlMhI">
               <node concept="3ZVu4v" id="7lNBHBNC4Aj" role="3TlMhI">
-                <ref role="3ZVs_2" node="7lNBHBNC4_S" resolve="z2" />
+                <ref role="3ZVs_2" node="7lNBHBNC4_S" />
               </node>
               <node concept="3ZVu4v" id="7lNBHBNC4An" role="3TlMhJ">
-                <ref role="3ZVs_2" node="7lNBHBNC4_S" resolve="z2" />
+                <ref role="3ZVs_2" node="7lNBHBNC4_S" />
               </node>
             </node>
           </node>
@@ -299,7 +299,7 @@
               <property role="2hmy$m" value="11" />
             </node>
             <node concept="3ZVu4v" id="7lNBHBNC4Ax" role="3TlMhI">
-              <ref role="3ZVs_2" node="7lNBHBNC4_X" resolve="res" />
+              <ref role="3ZVs_2" node="7lNBHBNC4_X" />
             </node>
           </node>
         </node>
@@ -311,35 +311,35 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkid" role="lIfQt">
-        <ref role="3cM6IK" node="7lNBHBNC4__" resolve="TypedefTest" />
+        <ref role="3cM6IK" node="7lNBHBNC4__" />
       </node>
       <node concept="3cM6IN" id="6TAwvhVWkie" role="lIfQt">
-        <ref role="3cM6IK" node="7lNBHBNC4Ea" resolve="CKRTypes" />
+        <ref role="3cM6IK" node="7lNBHBNC4Ea" />
       </node>
       <node concept="3cM6IN" id="6TAwvhVWkif" role="lIfQt">
-        <ref role="3cM6IK" node="7lNBHBNC4Ee" resolve="C99Types" />
+        <ref role="3cM6IK" node="7lNBHBNC4Ee" />
       </node>
       <node concept="3cM6IN" id="6TAwvhVWkig" role="lIfQt">
-        <ref role="3cM6IK" node="5iVe9hyhcsk" resolve="FPTypes" />
+        <ref role="3cM6IK" node="5iVe9hyhcsk" />
       </node>
       <node concept="3cM6IN" id="6TAwvhVWkih" role="lIfQt">
-        <ref role="3cM6IK" node="6FLcSer$hHj" resolve="testTypeDefFromExternal" />
+        <ref role="3cM6IK" node="6FLcSer$hHj" />
       </node>
     </node>
     <node concept="3GEVxB" id="6PCgYL5qJ4n" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="7lNBHBNC4_M" resolve="TypeDefFromExternalModule" />
+      <ref role="3GEb4d" node="7lNBHBNC4_M" />
     </node>
     <node concept="3GEVxB" id="6PCgYL5qJ4g" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="7lNBHBNC4E9" resolve="TypeTest" />
+      <ref role="3GEb4d" node="7lNBHBNC4E9" />
     </node>
   </node>
   <node concept="N3F5e" id="7lNBHBNC4_M">
     <property role="TrG5h" value="TypeDefFromExternalModule" />
     <node concept="3GEVxB" id="6uc_WDS6k43" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="6FLcSer$fDs" resolve="ExtModuleUsesTypeDef" />
+      <ref role="3GEb4d" node="6FLcSer$fDs" />
     </node>
     <node concept="rcJHK" id="7lNBHBNC4_O" role="N3F5h">
       <property role="TrG5h" value="auchNeZahl" />
@@ -358,7 +358,7 @@
         <node concept="3XIRlf" id="6FLcSer$hHv" role="3XIRFZ">
           <property role="TrG5h" value="var" />
           <node concept="rcJHQ" id="3Wi_6mkkXcC" role="2C2TGm">
-            <ref role="rcJHT" node="6FLcSer$i9E" resolve="smallTTT" />
+            <ref role="rcJHT" node="6FLcSer$i9E" />
           </node>
           <node concept="3TlMh9" id="6FLcSer$hHy" role="3XIe9u">
             <property role="2hmy$m" value="20" />
@@ -380,7 +380,7 @@
               <property role="2hmy$m" value="22" />
             </node>
             <node concept="4ZOvp" id="6FLcSer$$dE" role="3TlMhI">
-              <ref role="2DPCA0" node="6FLcSer$i9A" resolve="someInt" />
+              <ref role="2DPCA0" node="6FLcSer$i9A" />
             </node>
           </node>
         </node>
@@ -390,7 +390,7 @@
               <property role="2hmy$m" value="20" />
             </node>
             <node concept="3ZVu4v" id="6FLcSer$hH_" role="3TlMhI">
-              <ref role="3ZVs_2" node="6FLcSer$hHv" resolve="var" />
+              <ref role="3ZVs_2" node="6FLcSer$hHv" />
             </node>
           </node>
         </node>
@@ -408,7 +408,7 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="4ZOvp" id="35JkqCBk_2n" role="3TlMhI">
-              <ref role="2DPCA0" node="6FLcSer$i9A" resolve="someInt" />
+              <ref role="2DPCA0" node="6FLcSer$i9A" />
             </node>
           </node>
         </node>
@@ -686,7 +686,7 @@
     </node>
     <node concept="3GEVxB" id="6PCgYL5qJ4o" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="7lNBHBNC4_M" resolve="TypeDefFromExternalModule" />
+      <ref role="3GEb4d" node="7lNBHBNC4_M" />
     </node>
   </node>
   <node concept="rcWEw" id="6FLcSer$fDo">
@@ -712,12 +712,12 @@
     <property role="TrG5h" value="ExtModuleUsesTypeDef" />
     <node concept="3GEVxB" id="6uc_WDS6kq$" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="6FLcSer$fDo" resolve="ExtModuleWithTypeDef3" />
+      <ref role="3GEb4d" node="6FLcSer$fDo" />
     </node>
     <node concept="rcJHK" id="6FLcSer$i9E" role="N3F5h">
       <property role="TrG5h" value="smallTTT" />
       <node concept="rcJHQ" id="6FLcSer$i9H" role="rcJHR">
-        <ref role="rcJHT" node="6FLcSer$i9w" resolve="smallT" />
+        <ref role="rcJHT" node="6FLcSer$i9w" />
       </node>
     </node>
     <node concept="rcWE1" id="6FLcSer$ieI" role="rcWEr">

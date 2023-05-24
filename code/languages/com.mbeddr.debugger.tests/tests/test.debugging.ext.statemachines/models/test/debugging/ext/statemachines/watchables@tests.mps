@@ -55,7 +55,7 @@
     </language>
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -169,7 +169,7 @@
         <property role="TrG5h" value="anoterVar" />
       </node>
       <node concept="1vv375" id="7SbCYlqMIzt" role="1zHble">
-        <ref role="1vv99g" node="7SbCYlqMIzl" resolve="globalSM" />
+        <ref role="1vv99g" node="7SbCYlqMIzl" />
       </node>
     </node>
     <node concept="1vuW9F" id="7SbCYlqMIzl" role="1zJi$$">
@@ -202,14 +202,14 @@
       <node concept="3clFbS" id="7SbCYlqMHOk" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqMHOO" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqMHOP" role="3sdZbB">
-          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcR2" resolve="inTransitionBodyWithCond" />
+          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcR2" />
         </node>
       </node>
       <node concept="3F5Y_J" id="7SbCYlqMHOQ" role="3F5AM1">
         <node concept="30a7bf" id="7SbCYlqMHOR" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzGa4" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcR2" resolve="inTransitionBodyWithCond" />
+            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcR2" />
           </node>
         </node>
         <node concept="1l46Ie" id="7SbCYlqMHPm" role="3F5Y$9">
@@ -217,13 +217,13 @@
             <property role="TrG5h" value="varInTransition" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIym" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyf" resolve="inRed" />
+            <ref role="1vv99g" node="7SbCYlqMIyf" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIyw" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyn" resolve="steichEvent" />
+            <ref role="1vv99g" node="7SbCYlqMIyn" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIyC" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyz" resolve="inSM" />
+            <ref role="1vv99g" node="7SbCYlqMIyz" />
           </node>
         </node>
       </node>
@@ -243,14 +243,14 @@
       <node concept="3clFbS" id="7SbCYlqMHOn" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqMHOT" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqMHOU" role="3sdZbB">
-          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcR1" resolve="onTransitionWithCond" />
+          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcR1" />
         </node>
       </node>
       <node concept="3F5Y_J" id="7SbCYlqMHOV" role="3F5AM1">
         <node concept="30a7bf" id="7SbCYlqMHOW" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzG9Y" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ikpv:1KO61ryuCYZ" resolve="breakingOnTrans" />
+            <ref role="3cQ7K8" to="ikpv:1KO61ryuCYZ" />
           </node>
         </node>
         <node concept="1l46Ie" id="7SbCYlqMIz3" role="3F5Y$9">
@@ -258,13 +258,13 @@
             <property role="TrG5h" value="varInTransition" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIz4" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyf" resolve="inRed" />
+            <ref role="1vv99g" node="7SbCYlqMIyf" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIz5" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyn" resolve="steichEvent" />
+            <ref role="1vv99g" node="7SbCYlqMIyn" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIz6" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyz" resolve="inSM" />
+            <ref role="1vv99g" node="7SbCYlqMIyz" />
           </node>
         </node>
       </node>
@@ -278,22 +278,22 @@
       <node concept="3clFbS" id="7SbCYlqMHOs" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqMHOZ" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqMHP0" role="3sdZbB">
-          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcRv" resolve="inExitAction" />
+          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcRv" />
         </node>
       </node>
       <node concept="3F5Y_J" id="7SbCYlqMHP1" role="3F5AM1">
         <node concept="30a7bf" id="7SbCYlqMHP2" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzGa6" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcRv" resolve="inExitAction" />
+            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcRv" />
           </node>
         </node>
         <node concept="1l46Ie" id="7SbCYlqMIz7" role="3F5Y$9">
           <node concept="1vv375" id="7SbCYlqMIz8" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyf" resolve="inRed" />
+            <ref role="1vv99g" node="7SbCYlqMIyf" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIza" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyz" resolve="inSM" />
+            <ref role="1vv99g" node="7SbCYlqMIyz" />
           </node>
         </node>
       </node>
@@ -306,14 +306,14 @@
       <node concept="3clFbS" id="7SbCYlqMHOw" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqMHP4" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqNVDn" role="3sdZbB">
-          <ref role="3sa5fj" to="ikpv:2Zy_zYsOho$" resolve="onEntryAction" />
+          <ref role="3sa5fj" to="ikpv:2Zy_zYsOho$" />
         </node>
       </node>
       <node concept="3F5Y_J" id="7SbCYlqMHP7" role="3F5AM1">
         <node concept="30a7bf" id="7SbCYlqMHP9" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzGa2" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcRu" resolve="inEntryAction" />
+            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcRu" />
           </node>
         </node>
         <node concept="1l46Ie" id="7SbCYlqMIzb" role="3F5Y$9">
@@ -321,10 +321,10 @@
             <property role="TrG5h" value="varInEntry" />
           </node>
           <node concept="1vv375" id="7SbCYlqOm0V" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqOm0Q" resolve="inGreen" />
+            <ref role="1vv99g" node="7SbCYlqOm0Q" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIzd" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyz" resolve="inSM" />
+            <ref role="1vv99g" node="7SbCYlqMIyz" />
           </node>
         </node>
       </node>
@@ -336,22 +336,22 @@
       <node concept="3clFbS" id="7SbCYlqMHOG" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqMHPb" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqMHPc" role="3sdZbB">
-          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcRF" resolve="inDoAction" />
+          <ref role="3sa5fj" to="ikpv:2Zy_zYsNcRF" />
         </node>
       </node>
       <node concept="3F5Y_J" id="7SbCYlqMHPd" role="3F5AM1">
         <node concept="30a7bf" id="7SbCYlqMHPe" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzG9W" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcRF" resolve="inDoAction" />
+            <ref role="3cQ7K8" to="ikpv:2Zy_zYsNcRF" />
           </node>
         </node>
         <node concept="1l46Ie" id="7SbCYlqMIze" role="3F5Y$9">
           <node concept="1vv375" id="7SbCYlqMIzf" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyf" resolve="inRed" />
+            <ref role="1vv99g" node="7SbCYlqMIyf" />
           </node>
           <node concept="1vv375" id="7SbCYlqMIzg" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIyz" resolve="inSM" />
+            <ref role="1vv99g" node="7SbCYlqMIyz" />
           </node>
         </node>
       </node>
@@ -364,25 +364,25 @@
       <node concept="3clFbS" id="7SbCYlqMHON" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqMHPg" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqMHPh" role="3sdZbB">
-          <ref role="3sa5fj" to="ikpv:7ecc3K_WQAA" resolve="triggerNothing" />
+          <ref role="3sa5fj" to="ikpv:7ecc3K_WQAA" />
         </node>
       </node>
       <node concept="3F5Y_J" id="7SbCYlqMHPi" role="3F5AM1">
         <node concept="30a7bf" id="7SbCYlqMHPj" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzGa0" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ikpv:7ecc3K_WQAA" resolve="triggerNothing" />
+            <ref role="3cQ7K8" to="ikpv:7ecc3K_WQAA" />
           </node>
         </node>
         <node concept="1l46Ie" id="7SbCYlqMIzh" role="3F5Y$9">
           <node concept="1vv375" id="7SbCYlqMIzu" role="1vv36M">
-            <ref role="1vv99g" node="7SbCYlqMIzl" resolve="globalSM" />
+            <ref role="1vv99g" node="7SbCYlqMIzl" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="2Zy_zYsNcRa" role="3qy1PE">
-      <ref role="30ajXG" to="ikpv:3_UUdaFlgP4" resolve="WatchablesSMTest" />
+      <ref role="30ajXG" to="ikpv:3_UUdaFlgP4" />
     </node>
   </node>
 </model>

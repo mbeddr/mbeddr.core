@@ -40,7 +40,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -108,7 +108,7 @@
   <node concept="309jyn" id="5S3xvtanou">
     <property role="TrG5h" value="Section" />
     <node concept="1rNadw" id="3lUAsMOmG0m" role="1zJi$_">
-      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" resolve="Main" />
+      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" />
     </node>
     <node concept="3sgmnF" id="18eLY4o1pd5" role="1zJi$$" />
     <node concept="1vsUH6" id="4WY_RKG$J3W" role="1zJi$$">
@@ -194,7 +194,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKG$$iQ" role="1zJi$$" />
     <node concept="3qy1PH" id="18eLY4o1pcs" role="3qy1PE">
-      <ref role="30ajXG" to="zfkn:5aaBiRowsI_" resolve="SectionsTest" />
+      <ref role="30ajXG" to="zfkn:5aaBiRowsI_" />
     </node>
     <node concept="3scrou" id="18eLY4o1pcx" role="1zJi$$">
       <property role="TrG5h" value="suspendInMain" />
@@ -202,13 +202,13 @@
       <node concept="3clFbS" id="18eLY4o1pcz" role="3clF47" />
       <node concept="3sdZbQ" id="18eLY4o1pc$" role="3scror">
         <node concept="3sdZbA" id="18eLY4o1pc_" role="3sdZbB">
-          <ref role="3sa5fj" to="zfkn:3cUcim$fhPu" resolve="insideMain" />
+          <ref role="3sa5fj" to="zfkn:3cUcim$fhPu" />
         </node>
       </node>
       <node concept="3F5Y_J" id="18eLY4o1pcA" role="3F5AM1">
         <node concept="1l46Ie" id="2vLpZ7wibK$" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$$iv" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
           <node concept="1IjokO" id="5YGS28LWmSf" role="1l4ezG">
             <property role="TrG5h" value="x" />
@@ -218,7 +218,7 @@
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$$ix" role="3F5Y$9">
-          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" resolve="inMain" />
+          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" />
         </node>
       </node>
     </node>
@@ -229,22 +229,22 @@
       <node concept="3clFbS" id="18eLY4o1pcH" role="3clF47" />
       <node concept="3sdZbQ" id="18eLY4o1pcI" role="3scror">
         <node concept="3sdZbA" id="18eLY4o1pcJ" role="3sdZbB">
-          <ref role="3sa5fj" to="zfkn:18eLY4o1pcu" resolve="1stStmntInsideCalledTest" />
+          <ref role="3sa5fj" to="zfkn:18eLY4o1pcu" />
         </node>
       </node>
       <node concept="3F5Y_J" id="18eLY4o1pcK" role="3F5AM1">
         <node concept="1l46Ie" id="18eLY4o1QFa" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$$j7" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$$iR" resolve="inTestAccessX" />
+            <ref role="1vv99g" node="4WY_RKG$$iR" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$$iK" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$$iz" resolve="inTestAccessX" />
+          <ref role="1vtf2j" node="4WY_RKG$$iz" />
         </node>
         <node concept="30a7bf" id="18eLY4o1pcP" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6A5C" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="zfkn:18eLY4o1pcu" resolve="1stStmntInsideCalledTest" />
+            <ref role="3cQ7K8" to="zfkn:18eLY4o1pcu" />
           </node>
         </node>
       </node>
@@ -256,7 +256,7 @@
       <node concept="3clFbS" id="18eLY4o1pcY" role="3clF47" />
       <node concept="3sdZbQ" id="18eLY4o1pcZ" role="3scror">
         <node concept="3sdZbA" id="18eLY4o1pd0" role="3sdZbB">
-          <ref role="3sa5fj" to="zfkn:18eLY4o1pcv" resolve="funcCall" />
+          <ref role="3sa5fj" to="zfkn:18eLY4o1pcv" />
         </node>
       </node>
       <node concept="3savIG" id="18eLY4o1pd1" role="3savwP">
@@ -267,11 +267,11 @@
       <node concept="3F5Y_J" id="18eLY4o1pd3" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKG$$j8" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$$ja" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$$iP" resolve="inAdd1" />
+            <ref role="1vv99g" node="4WY_RKG$$iP" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$$iG" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$J3W" resolve="inAddGeneral" />
+          <ref role="1vtf2j" node="4WY_RKG$J3W" />
         </node>
       </node>
     </node>
@@ -282,7 +282,7 @@
       <node concept="3clFbS" id="2vLpZ7wiaBJ" role="3clF47" />
       <node concept="3sdZbQ" id="2vLpZ7wiaBL" role="3scror">
         <node concept="3sdZbA" id="2vLpZ7wiaBM" role="3sdZbB">
-          <ref role="3sa5fj" to="zfkn:2vLpZ7wiaBD" resolve="callToImportedFunctionWithoutSection" />
+          <ref role="3sa5fj" to="zfkn:2vLpZ7wiaBD" />
         </node>
       </node>
       <node concept="3savIG" id="2vLpZ7wiaBN" role="3savwP">
@@ -293,11 +293,11 @@
       <node concept="3F5Y_J" id="2vLpZ7wiaBQ" role="3F5AM1">
         <node concept="1l46Ie" id="4WY_RKG$$jb" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$J48" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$J40" resolve="inAdd2" />
+            <ref role="1vv99g" node="4WY_RKG$J40" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$$iH" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$J3W" resolve="inAddGeneral" />
+          <ref role="1vtf2j" node="4WY_RKG$J3W" />
         </node>
       </node>
     </node>
@@ -307,7 +307,7 @@
       <node concept="3clFbS" id="2vLpZ7wiaBZ" role="3clF47" />
       <node concept="3sdZbQ" id="2vLpZ7wiaC0" role="3scror">
         <node concept="3sdZbA" id="2vLpZ7wiaCa" role="3sdZbB">
-          <ref role="3sa5fj" to="zfkn:2vLpZ7wiaBC" resolve="callToImportedFunctionThatIsInASection" />
+          <ref role="3sa5fj" to="zfkn:2vLpZ7wiaBC" />
         </node>
       </node>
       <node concept="3savIG" id="2vLpZ7wiaC2" role="3savwP">
@@ -317,11 +317,11 @@
       </node>
       <node concept="3F5Y_J" id="2vLpZ7wiaC4" role="3F5AM1">
         <node concept="1vtf2i" id="4WY_RKG$$iJ" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$$i_" resolve="inDiv" />
+          <ref role="1vtf2j" node="4WY_RKG$$i_" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$$jf" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$$jh" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$$iS" resolve="inDiv" />
+            <ref role="1vv99g" node="4WY_RKG$$iS" />
           </node>
         </node>
       </node>

@@ -41,7 +41,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -151,7 +151,7 @@
         <property role="TrG5h" value="anoterVar" />
       </node>
       <node concept="1vv375" id="5lunSHinBug" role="1zHble">
-        <ref role="1vv99g" node="5lunSHinBtc" resolve="outsideStateMachine" />
+        <ref role="1vv99g" node="5lunSHinBtc" />
       </node>
     </node>
     <node concept="1vsUH6" id="2rhGdxDm9Xl" role="1zJi$$">
@@ -197,19 +197,19 @@
       <node concept="3clFbS" id="2rhGdxDm6ft" role="3clF47" />
       <node concept="3sdZbQ" id="2rhGdxDm6fu" role="3scror">
         <node concept="3sdZbA" id="2rhGdxDm6fv" role="3sdZbB">
-          <ref role="3sa5fj" to="d073:7ecc3KApeJF" resolve="outsideSM" />
+          <ref role="3sa5fj" to="d073:7ecc3KApeJF" />
         </node>
       </node>
       <node concept="3F5Y_J" id="2rhGdxDm6fw" role="3F5AM1">
         <node concept="30a7bf" id="2rhGdxDm6fx" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEqO" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="d073:7ecc3KApeJF" resolve="outsideSM" />
+            <ref role="3cQ7K8" to="d073:7ecc3KApeJF" />
           </node>
         </node>
         <node concept="1l46Ie" id="2rhGdxDm6f$" role="3F5Y$9">
           <node concept="1vv375" id="2rhGdxDm6f_" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinBtc" resolve="outsideStateMachine" />
+            <ref role="1vv99g" node="5lunSHinBtc" />
           </node>
         </node>
       </node>
@@ -221,23 +221,23 @@
       <node concept="3clFbS" id="2rhGdxDm6f2" role="3clF47" />
       <node concept="3sdZbQ" id="2rhGdxDm6f3" role="3scror">
         <node concept="3sdZbA" id="2rhGdxDm6f4" role="3sdZbB">
-          <ref role="3sa5fj" to="d073:7ecc3KApg1l" resolve="inEntryOfNestedState" />
+          <ref role="3sa5fj" to="d073:7ecc3KApg1l" />
         </node>
       </node>
       <node concept="3F5Y_J" id="2rhGdxDm6f5" role="3F5AM1">
         <node concept="30a7bf" id="2rhGdxDm6f6" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEqS" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="d073:7ecc3KApg1l" resolve="inEntryOfNestedState" />
+            <ref role="3cQ7K8" to="d073:7ecc3KApg1l" />
           </node>
         </node>
         <node concept="1l46Ie" id="2rhGdxDm6f9" role="3F5Y$9">
           <node concept="1vv375" id="2rhGdxDm6fL" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinBtb" resolve="inStateMachine" />
+            <ref role="1vv99g" node="5lunSHinBtb" />
           </node>
         </node>
         <node concept="1vtf2i" id="2rhGdxDm9YJ" role="3F5Y$9">
-          <ref role="1vtf2j" node="36fFjS6Is6X" resolve="inEntryOf_2_1_1" />
+          <ref role="1vtf2j" node="36fFjS6Is6X" />
         </node>
       </node>
     </node>
@@ -248,23 +248,23 @@
       <node concept="3clFbS" id="2rhGdxDm6fe" role="3clF47" />
       <node concept="3sdZbQ" id="2rhGdxDm6ff" role="3scror">
         <node concept="3sdZbA" id="2rhGdxDm6fg" role="3sdZbB">
-          <ref role="3sa5fj" to="d073:7ecc3KApfHb" resolve="beforeTransTo_2_1_1" />
+          <ref role="3sa5fj" to="d073:7ecc3KApfHb" />
         </node>
       </node>
       <node concept="3F5Y_J" id="2rhGdxDm6fh" role="3F5AM1">
         <node concept="30a7bf" id="2rhGdxDm6fi" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEqU" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="d073:7ecc3KApgD6" resolve="inEntryAfterSeitchIn_2_1_1" />
+            <ref role="3cQ7K8" to="d073:7ecc3KApgD6" />
           </node>
         </node>
         <node concept="1l46Ie" id="2rhGdxDm6fn" role="3F5Y$9">
           <node concept="1vv375" id="2rhGdxDm6fM" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinBtb" resolve="inStateMachine" />
+            <ref role="1vv99g" node="5lunSHinBtb" />
           </node>
         </node>
         <node concept="1vtf2i" id="2rhGdxDm9YK" role="3F5Y$9">
-          <ref role="1vtf2j" node="2rhGdxDm9Xo" resolve="inEntryOf_2_2_1" />
+          <ref role="1vtf2j" node="2rhGdxDm9Xo" />
         </node>
       </node>
       <node concept="3savIG" id="2rhGdxDm6fk" role="3savwP">
@@ -280,7 +280,7 @@
       <node concept="3clFbS" id="2rhGdxDm9Xd" role="3clF47" />
       <node concept="3sdZbQ" id="2rhGdxDm9Xe" role="3scror">
         <node concept="3sdZbA" id="2rhGdxDm9Xf" role="3sdZbB">
-          <ref role="3sa5fj" to="d073:7ecc3KApeJF" resolve="outsideSM" />
+          <ref role="3sa5fj" to="d073:7ecc3KApeJF" />
         </node>
       </node>
       <node concept="3savIG" id="2rhGdxDm9Xg" role="3savwP">
@@ -292,16 +292,16 @@
         <node concept="30a7bf" id="2rhGdxDm9Xj" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEqQ" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="d073:7ecc3KApfHb" resolve="beforeTransTo_2_1_1" />
+            <ref role="3cQ7K8" to="d073:7ecc3KApfHb" />
           </node>
         </node>
         <node concept="1vtf2i" id="2rhGdxDm9YL" role="3F5Y$9">
-          <ref role="1vtf2j" node="2rhGdxDm9Xl" resolve="inTrans" />
+          <ref role="1vtf2j" node="2rhGdxDm9Xl" />
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="2rhGdxDm6eY" role="3qy1PE">
-      <ref role="30ajXG" to="d073:7iVTLWv2q2$" resolve="CompositeSM" />
+      <ref role="30ajXG" to="d073:7iVTLWv2q2$" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

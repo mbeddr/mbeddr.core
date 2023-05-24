@@ -94,7 +94,7 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="BaseDocumentation" />
     <property role="3GE5qa" value="document" />
-    <ref role="G9hjw" node="5CkU_dHcLvS" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="5CkU_dHcLvS" />
     <node concept="1mvXsy" id="UK_oBpA4O3" role="1_0VJ0">
       <property role="TrG5h" value="ConceptDocChapter" />
       <property role="1_0VJr" value="Concept documentation" />
@@ -131,13 +131,13 @@
               <property role="19SUeA" value="See also: " />
             </node>
             <node concept="1_0GAv" id="1CsE99tzurD" role="19SJt6">
-              <ref role="1_0GAl" node="UK_oBpA4O5" resolve="Graph" />
+              <ref role="1_0GAl" node="UK_oBpA4O5" />
             </node>
             <node concept="19SUe$" id="1CsE99tzurE" role="19SJt6">
               <property role="19SUeA" value=", " />
             </node>
             <node concept="1_0GAv" id="1CsE99tzurF" role="19SJt6">
-              <ref role="1_0GAl" node="UK_oBpCt_h" resolve="Edge" />
+              <ref role="1_0GAl" node="UK_oBpCt_h" />
             </node>
             <node concept="19SUe$" id="1CsE99tzurG" role="19SJt6" />
           </node>

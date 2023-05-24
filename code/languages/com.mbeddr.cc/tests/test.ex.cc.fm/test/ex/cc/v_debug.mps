@@ -71,13 +71,13 @@
     <node concept="2eOfOl" id="2h6lNbWokfH" role="2ePNbc">
       <property role="TrG5h" value="App" />
       <node concept="2v9HqM" id="2h6lNbWokfI" role="2eOfOg">
-        <ref role="2v9HqP" to="n76k:5JmNU9PApDE" resolve="ApplicationModule" />
+        <ref role="2v9HqP" to="n76k:5JmNU9PApDE" />
       </node>
       <node concept="2v9HqM" id="2h6lNbWokfK" role="2eOfOg">
-        <ref role="2v9HqP" to="n76k:5JmNU9PAoE6" resolve="SensorModule" />
+        <ref role="2v9HqP" to="n76k:5JmNU9PAoE6" />
       </node>
       <node concept="2v9HqM" id="5kSKC2jih9Z" role="2eOfOg">
-        <ref role="2v9HqP" to="n76k:5kSKC2jhz_K" resolve="TypesUsedInFM" />
+        <ref role="2v9HqP" to="n76k:5kSKC2jhz_K" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxE9d" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -99,8 +99,8 @@
     </node>
     <node concept="35TzUN" id="3x9macEmjd3" role="2Q9xDr">
       <node concept="IjAfM" id="3x9macEmjd6" role="19yoJo">
-        <ref role="IjAfK" to="n76k:5JmNU9PAoEM" resolve="DeploymentConfiguration" />
-        <ref role="IjAfL" to="n76k:5JmNU9PAoER" resolve="Debug" />
+        <ref role="IjAfK" to="n76k:5JmNU9PAoEM" />
+        <ref role="IjAfL" to="n76k:5JmNU9PAoER" />
       </node>
     </node>
     <node concept="12mU2y" id="3mKW6ZYgyjE" role="2Q9xDr" />

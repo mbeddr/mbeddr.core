@@ -182,10 +182,10 @@
     <property role="TrG5h" value="Sensor" />
     <node concept="3GEVxB" id="8HsTufmVHa" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="2BwFrTeA7kO" resolve="Driver" />
+      <ref role="3GEb4d" node="2BwFrTeA7kO" />
     </node>
     <node concept="3GEVxB" id="8HsTufn1lb" role="2OODSX">
-      <ref role="3GEb4d" node="2BwFrTeA7jC" resolve="VS" />
+      <ref role="3GEb4d" node="2BwFrTeA7jC" />
     </node>
     <node concept="rcJHK" id="2BwFrTeA7kn" role="N3F5h">
       <property role="TrG5h" value="dataType" />
@@ -193,7 +193,7 @@
         <node concept="3o6v7J" id="2BwFrTeA7kq" role="lGtFl">
           <node concept="3o9_tv" id="2BwFrTeA7kr" role="3o6v7j">
             <node concept="2qVrgw" id="2BwFrTeA7kt" role="3o9_ts">
-              <ref role="2qVrgz" node="2BwFrTeA7jK" resolve="highRes" />
+              <ref role="2qVrgz" node="2BwFrTeA7jK" />
             </node>
           </node>
           <node concept="2fgwQN" id="2BwFrTeA7ku" role="3o6v7i" />
@@ -210,10 +210,10 @@
       <property role="TrG5h" value="data" />
       <node concept="3J0A42" id="2BwFrTeA7jP" role="2C2TGm">
         <node concept="rcJHQ" id="2BwFrTeA7kv" role="2umbIo">
-          <ref role="rcJHT" node="2BwFrTeA7kn" resolve="dataType" />
+          <ref role="rcJHT" node="2BwFrTeA7kn" />
         </node>
         <node concept="4ZOvp" id="2BwFrTeA7jY" role="1YbSNA">
-          <ref role="2DPCA0" node="2BwFrTeA7jS" resolve="DATA_SIZE" />
+          <ref role="2DPCA0" node="2BwFrTeA7jS" />
         </node>
       </node>
     </node>
@@ -241,7 +241,7 @@
       <node concept="2dvt44" id="1ttI1pkyno4" role="lGtFl">
         <node concept="3o9_tv" id="1ttI1pkyno5" role="2dvt70">
           <node concept="2qVrgw" id="1ttI1pkyno6" role="3o9_ts">
-            <ref role="2qVrgz" node="2BwFrTeA7jI" resolve="logging" />
+            <ref role="2qVrgz" node="2BwFrTeA7jI" />
           </node>
         </node>
       </node>
@@ -254,13 +254,13 @@
       <node concept="3XIRFW" id="2BwFrTeA7ke" role="3XIRFX">
         <node concept="2vn4wP" id="1ttI1pkyno8" role="3XIRFZ">
           <node concept="2vn4wR" id="1ttI1pkyno9" role="2vn6$T">
-            <ref role="2vn4wS" node="1ttI1pkyno1" resolve="messages" />
-            <ref role="2vn4wT" node="1ttI1pkyno2" resolve="startingMeasurement" />
+            <ref role="2vn4wS" node="1ttI1pkyno1" />
+            <ref role="2vn4wT" node="1ttI1pkyno2" />
           </node>
           <node concept="2dvt44" id="1ttI1pkynoa" role="lGtFl">
             <node concept="3o9_tv" id="1ttI1pkynob" role="2dvt70">
               <node concept="2qVrgw" id="1ttI1pkynoc" role="3o9_ts">
-                <ref role="2qVrgz" node="2BwFrTeA7jI" resolve="logging" />
+                <ref role="2qVrgz" node="2BwFrTeA7jI" />
               </node>
             </node>
           </node>
@@ -268,7 +268,7 @@
         <node concept="3XIRlf" id="2BwFrTeA7m5" role="3XIRFZ">
           <property role="TrG5h" value="res" />
           <node concept="rcJHQ" id="2BwFrTeA7m6" role="2C2TGm">
-            <ref role="rcJHT" node="2BwFrTeA7kn" resolve="dataType" />
+            <ref role="rcJHT" node="2BwFrTeA7kn" />
           </node>
           <node concept="3TlMh9" id="2BwFrTeA7m8" role="3XIe9u">
             <property role="2hmy$m" value="0" />
@@ -277,20 +277,20 @@
         <node concept="1_9egQ" id="1ttI1pkynok" role="3XIRFZ">
           <node concept="3pqW6w" id="1ttI1pkynoo" role="1_9egR">
             <node concept="3O_q_g" id="1ttI1pkynor" role="3TlMhJ">
-              <ref role="3O_q_h" node="2BwFrTeA7kP" resolve="readPortInt" />
+              <ref role="3O_q_h" node="2BwFrTeA7kP" />
               <node concept="3TlMh9" id="1ttI1pkynos" role="3O_q_j">
                 <property role="2hmy$m" value="1" />
               </node>
             </node>
             <node concept="3ZVu4v" id="1ttI1pkynol" role="3TlMhI">
-              <ref role="3ZVs_2" node="2BwFrTeA7m5" resolve="res" />
+              <ref role="3ZVs_2" node="2BwFrTeA7m5" />
             </node>
           </node>
           <node concept="2dvt44" id="1ttI1pkynot" role="lGtFl">
             <node concept="3o9_tv" id="1ttI1pkynou" role="2dvt70">
               <node concept="19$8ne" id="1ttI1pkynox" role="3o9_ts">
                 <node concept="2qVrgw" id="1ttI1pkynov" role="1_9fRO">
-                  <ref role="2qVrgz" node="2BwFrTeA7jK" resolve="highRes" />
+                  <ref role="2qVrgz" node="2BwFrTeA7jK" />
                 </node>
               </node>
             </node>
@@ -299,32 +299,32 @@
         <node concept="1_9egQ" id="1ttI1pkyno$" role="3XIRFZ">
           <node concept="3pqW6w" id="1ttI1pkynoC" role="1_9egR">
             <node concept="3O_q_g" id="1ttI1pkynoF" role="3TlMhJ">
-              <ref role="3O_q_h" node="2BwFrTeA7kX" resolve="readPortDouble" />
+              <ref role="3O_q_h" node="2BwFrTeA7kX" />
               <node concept="3TlMh9" id="1ttI1pkynoG" role="3O_q_j">
                 <property role="2hmy$m" value="1" />
               </node>
             </node>
             <node concept="3ZVu4v" id="1ttI1pkyno_" role="3TlMhI">
-              <ref role="3ZVs_2" node="2BwFrTeA7m5" resolve="res" />
+              <ref role="3ZVs_2" node="2BwFrTeA7m5" />
             </node>
           </node>
           <node concept="2dvt44" id="1ttI1pkynoH" role="lGtFl">
             <node concept="3o9_tv" id="1ttI1pkynoI" role="2dvt70">
               <node concept="2qVrgw" id="1ttI1pkynoJ" role="3o9_ts">
-                <ref role="2qVrgz" node="2BwFrTeA7jK" resolve="highRes" />
+                <ref role="2qVrgz" node="2BwFrTeA7jK" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2vn4wP" id="1ttI1pkynoe" role="3XIRFZ">
           <node concept="2vn4wR" id="1ttI1pkynof" role="2vn6$T">
-            <ref role="2vn4wS" node="1ttI1pkyno1" resolve="messages" />
-            <ref role="2vn4wT" node="1ttI1pkyno3" resolve="finishingMeasurement" />
+            <ref role="2vn4wS" node="1ttI1pkyno1" />
+            <ref role="2vn4wT" node="1ttI1pkyno3" />
           </node>
           <node concept="2dvt44" id="1ttI1pkynog" role="lGtFl">
             <node concept="3o9_tv" id="1ttI1pkynoh" role="2dvt70">
               <node concept="2qVrgw" id="1ttI1pkynoi" role="3o9_ts">
-                <ref role="2qVrgz" node="2BwFrTeA7jI" resolve="logging" />
+                <ref role="2qVrgz" node="2BwFrTeA7jI" />
               </node>
             </node>
           </node>
@@ -333,39 +333,39 @@
           <node concept="3pqW6w" id="1exqRpao9_" role="1_9egR">
             <node concept="2wJmCr" id="2BwFrTeA7mD" role="3TlMhI">
               <node concept="1S7827" id="2BwFrTeA7mC" role="1_9fRO">
-                <ref role="1S7826" node="2BwFrTeA7jM" resolve="data" />
+                <ref role="1S7826" node="2BwFrTeA7jM" />
               </node>
               <node concept="1S7827" id="2BwFrTeA7mE" role="2wJmCp">
-                <ref role="1S7826" node="2BwFrTeA7kE" resolve="idx" />
+                <ref role="1S7826" node="2BwFrTeA7kE" />
               </node>
             </node>
             <node concept="3ZVu4v" id="2BwFrTeA7mH" role="3TlMhJ">
-              <ref role="3ZVs_2" node="2BwFrTeA7m5" resolve="res" />
+              <ref role="3ZVs_2" node="2BwFrTeA7m5" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="2BwFrTeA7mJ" role="3XIRFZ">
           <node concept="3TM6Ey" id="2BwFrTeA7mL" role="1_9egR">
             <node concept="1S7827" id="2BwFrTeA7mK" role="1_9fRO">
-              <ref role="1S7826" node="2BwFrTeA7kE" resolve="idx" />
+              <ref role="1S7826" node="2BwFrTeA7kE" />
             </node>
           </node>
         </node>
         <node concept="2BFjQ_" id="2BwFrTeA7mx" role="3XIRFZ">
           <node concept="3ZVu4v" id="2BwFrTeA7my" role="2BFjQA">
-            <ref role="3ZVs_2" node="2BwFrTeA7m5" resolve="res" />
+            <ref role="3ZVs_2" node="2BwFrTeA7m5" />
           </node>
         </node>
       </node>
       <node concept="rcJHQ" id="2BwFrTeA7kw" role="2C2TGm">
-        <ref role="rcJHT" node="2BwFrTeA7kn" resolve="dataType" />
+        <ref role="rcJHT" node="2BwFrTeA7kn" />
       </node>
     </node>
     <node concept="2NXPZ9" id="2BwFrTeA7kc" role="N3F5h">
       <property role="TrG5h" value="empty_1328440756889_5" />
     </node>
     <node concept="2dvl_R" id="2BwFrTeA7k1" role="lGtFl">
-      <ref role="2dvl_Q" node="2BwFrTeA7jD" resolve="Deployment" />
+      <ref role="2dvl_Q" node="2BwFrTeA7jD" />
     </node>
   </node>
   <node concept="N3F5e" id="2BwFrTeA7kO">

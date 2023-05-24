@@ -60,7 +60,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -141,7 +141,7 @@
   <node concept="309jyn" id="5S3xvtanoR">
     <property role="TrG5h" value="ArrayInit" />
     <node concept="3qy1PH" id="3GPxRNR1V_J" role="3qy1PE">
-      <ref role="30ajXG" to="mycg:4PM5ysqsU6r" resolve="ArrayInitTest" />
+      <ref role="30ajXG" to="mycg:4PM5ysqsU6r" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRT6" role="29bA6Q" />
     <node concept="1vsUH6" id="4WY_RKG$pk_" role="1zJi$$">
@@ -197,18 +197,18 @@
       <node concept="3clFbS" id="5rV3dCv5byL" role="3clF47" />
       <node concept="3sdZbQ" id="5rV3dCv5b$V" role="3scror">
         <node concept="3sdZbA" id="5rV3dCv5b$Y" role="3sdZbB">
-          <ref role="3sa5fj" to="mycg:5rV3dCv4Szc" resolve="inPointerOnArray" />
+          <ref role="3sa5fj" to="mycg:5rV3dCv4Szc" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5rV3dCv5b_1" role="3F5AM1">
         <node concept="30a7bf" id="5rV3dCv5b_4" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6TTp" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="mycg:5rV3dCv4Szc" resolve="inPointerOnArray" />
+            <ref role="3cQ7K8" to="mycg:5rV3dCv4Szc" />
           </node>
         </node>
         <node concept="1vtf2i" id="5rV3dCv5iyZ" role="3F5Y$9">
-          <ref role="1vtf2j" node="5rV3dCv5b_t" resolve="inPointerOnArray" />
+          <ref role="1vtf2j" node="5rV3dCv5b_t" />
         </node>
         <node concept="1l46Ie" id="5rV3dCv5izk" role="3F5Y$9">
           <node concept="1IjokT" id="5rV3dCv5r45" role="1l4ezG">
@@ -629,7 +629,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mek" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mel" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mem" role="3sdZbB">
-          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2men" role="3savwP" />
@@ -637,15 +637,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mep" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6TTv" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbe" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkO" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$pk_" resolve="inArrayTest" />
+          <ref role="1vtf2j" node="4WY_RKG$pk_" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$pkQ" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$pkR" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$pkI" resolve="inArrayTest" />
+            <ref role="1vv99g" node="4WY_RKG$pkI" />
           </node>
         </node>
       </node>
@@ -657,7 +657,7 @@
       <node concept="3clFbS" id="7Jr7T0w2met" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meu" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mev" role="3sdZbB">
-          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mew" role="3savwP">
@@ -669,15 +669,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mez" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6TTn" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbf" resolve="firstArrayVarAssignment" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbf" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkS" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$pk_" resolve="inArrayTest" />
+          <ref role="1vtf2j" node="4WY_RKG$pk_" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$pkT" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$reX" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$pkI" resolve="inArrayTest" />
+            <ref role="1vv99g" node="4WY_RKG$pkI" />
           </node>
         </node>
       </node>
@@ -689,7 +689,7 @@
       <node concept="3clFbS" id="7Jr7T0w2meD" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meE" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2meF" role="3sdZbB">
-          <ref role="3sa5fj" to="mycg:4PM5ysqsUbd" resolve="secondArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbd" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2meG" role="3savwP" />
@@ -697,15 +697,15 @@
         <node concept="30a7bf" id="7Jr7T0w2meI" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6TTr" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbc" resolve="functionWithArrayVarDeclaration" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbc" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkW" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$pkD" resolve="inArrayTest2" />
+          <ref role="1vtf2j" node="4WY_RKG$pkD" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$pkX" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$pkY" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$pkL" resolve="inArrayTest2" />
+            <ref role="1vv99g" node="4WY_RKG$pkL" />
           </node>
         </node>
       </node>
@@ -717,7 +717,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mf_" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mfA" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mfB" role="3sdZbB">
-          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" resolve="firstArrayVarDeclaration" />
+          <ref role="3sa5fj" to="mycg:4PM5ysqsUbe" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mfC" role="3savwP">
@@ -729,15 +729,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mfF" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6TTt" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbf" resolve="firstArrayVarAssignment" />
+            <ref role="3cQ7K8" to="mycg:4PM5ysqsUbf" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$pkZ" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$pk_" resolve="inArrayTest" />
+          <ref role="1vtf2j" node="4WY_RKG$pk_" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$pl0" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$pl2" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$pkI" resolve="inArrayTest" />
+            <ref role="1vv99g" node="4WY_RKG$pkI" />
           </node>
         </node>
       </node>

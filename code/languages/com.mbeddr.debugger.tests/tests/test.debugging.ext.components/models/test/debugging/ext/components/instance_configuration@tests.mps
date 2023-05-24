@@ -44,7 +44,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -262,7 +262,7 @@
       <node concept="3clFbS" id="62XMcUob$tY" role="3clF47" />
       <node concept="3sdZbQ" id="62XMcUob$ua" role="3scror">
         <node concept="3sdZbA" id="62XMcUob_dh" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:62XMcUob$u8" resolve="instanceConfInit" />
+          <ref role="3sa5fj" to="qc5z:62XMcUob$u8" />
         </node>
       </node>
       <node concept="3savIG" id="62XMcUob$uc" role="3savwP">
@@ -274,19 +274,19 @@
         <node concept="30a7bf" id="62XMcUob$uf" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4$" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3n" resolve="initEmptyInstanceConf" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3n" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDf$RIG" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDf_9cA" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
           <node concept="1vv375" id="13C5RDf_pvo" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfBpeV" role="3F5Y$9">
-          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" resolve="inMain" />
+          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" />
         </node>
       </node>
     </node>
@@ -297,7 +297,7 @@
       <node concept="3clFbS" id="13C5RDf$RIm" role="3clF47" />
       <node concept="3sdZbQ" id="13C5RDf$RIn" role="3scror">
         <node concept="3sdZbA" id="13C5RDf$RIo" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:62XMcUob$u8" resolve="instanceConfInit" />
+          <ref role="3sa5fj" to="qc5z:62XMcUob$u8" />
         </node>
       </node>
       <node concept="3savIG" id="13C5RDf$RIp" role="3savwP">
@@ -309,16 +309,16 @@
         <node concept="30a7bf" id="13C5RDf$RIs" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4A" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDf$HMb" resolve="firstInstance" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDf$HMb" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDf$RI_" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDf_pvg" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfBpf2" role="3F5Y$9">
-          <ref role="1vtf2j" node="13C5RDfBpeY" resolve="inInstanceConfiguration" />
+          <ref role="1vtf2j" node="13C5RDfBpeY" />
         </node>
       </node>
     </node>
@@ -331,21 +331,21 @@
         <node concept="30a7bf" id="13C5RDf$RJ6" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4w" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDf$HMb" resolve="firstInstance" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDf$HMb" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDf$RJ8" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDf_pvh" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfBpf3" role="3F5Y$9">
-          <ref role="1vtf2j" node="13C5RDfBpeY" resolve="inInstanceConfiguration" />
+          <ref role="1vtf2j" node="13C5RDfBpeY" />
         </node>
       </node>
       <node concept="3sdZbQ" id="13C5RDf$RJd" role="3scror">
         <node concept="3sdZbA" id="13C5RDf$RJe" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:13C5RDf$HMb" resolve="firstInstance" />
+          <ref role="3sa5fj" to="qc5z:13C5RDf$HMb" />
         </node>
       </node>
     </node>
@@ -356,23 +356,23 @@
       <node concept="3clFbS" id="13C5RDf$RIP" role="3clF47" />
       <node concept="3sdZbQ" id="13C5RDf$RIQ" role="3scror">
         <node concept="3sdZbA" id="13C5RDf$RIR" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:13C5RDf$HMb" resolve="firstInstance" />
+          <ref role="3sa5fj" to="qc5z:13C5RDf$HMb" />
         </node>
       </node>
       <node concept="3F5Y_J" id="13C5RDf$RIX" role="3F5AM1">
         <node concept="30a7bf" id="13C5RDf$RIY" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4I" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDf$HMc" resolve="secondInstance" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDf$HMc" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDf$RJ0" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDf_pvi" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfBpf4" role="3F5Y$9">
-          <ref role="1vtf2j" node="13C5RDfBpeY" resolve="inInstanceConfiguration" />
+          <ref role="1vtf2j" node="13C5RDfBpeY" />
         </node>
       </node>
       <node concept="3savIG" id="13C5RDf$RJg" role="3savwP">
@@ -388,7 +388,7 @@
       <node concept="3clFbS" id="13C5RDf$RJm" role="3clF47" />
       <node concept="3sdZbQ" id="13C5RDf$RJn" role="3scror">
         <node concept="3sdZbA" id="13C5RDf$RJo" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:13C5RDf$HMb" resolve="firstInstance" />
+          <ref role="3sa5fj" to="qc5z:13C5RDf$HMb" />
         </node>
       </node>
       <node concept="3savIG" id="13C5RDf$RJp" role="3savwP">
@@ -400,19 +400,19 @@
         <node concept="30a7bf" id="13C5RDf$RJs" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4E" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3n" resolve="initEmptyInstanceConf" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3n" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDf$RJu" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDf_hTU" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
           <node concept="1vv375" id="13C5RDf_pvq" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfBpf5" role="3F5Y$9">
-          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" resolve="inMain" />
+          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" />
         </node>
       </node>
     </node>
@@ -423,7 +423,7 @@
       <node concept="3clFbS" id="13C5RDf$RJA" role="3clF47" />
       <node concept="3sdZbQ" id="13C5RDf$RJB" role="3scror">
         <node concept="3sdZbA" id="13C5RDf$RJN" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:13C5RDf$HMc" resolve="secondInstance" />
+          <ref role="3sa5fj" to="qc5z:13C5RDf$HMc" />
         </node>
       </node>
       <node concept="3savIG" id="13C5RDf$RJD" role="3savwP">
@@ -435,19 +435,19 @@
         <node concept="30a7bf" id="13C5RDf$RJG" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4y" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3n" resolve="initEmptyInstanceConf" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3n" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDf$RJI" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDf_pvj" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
           <node concept="1vv375" id="13C5RDf_pvs" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfBpf6" role="3F5Y$9">
-          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" resolve="inMain" />
+          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" />
         </node>
       </node>
     </node>
@@ -458,7 +458,7 @@
       <node concept="3clFbS" id="13C5RDfCW3B" role="3clF47" />
       <node concept="3sdZbQ" id="13C5RDfCW3C" role="3scror">
         <node concept="3sdZbA" id="13C5RDfCW3D" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:13C5RDfCW3n" resolve="initEmptyInstanceConf" />
+          <ref role="3sa5fj" to="qc5z:13C5RDfCW3n" />
         </node>
       </node>
       <node concept="3savIG" id="13C5RDfCW3E" role="3savwP">
@@ -470,19 +470,19 @@
         <node concept="30a7bf" id="13C5RDfCW3H" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4G" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3o" resolve="initConnectedInstanceConf" />
+            <ref role="3cQ7K8" to="qc5z:13C5RDfCW3o" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDfCW3J" role="3F5Y$9">
           <node concept="1vv375" id="13C5RDfCW3K" role="1vv36M">
-            <ref role="1vv99g" node="13C5RDf_12x" resolve="globalVariable" />
+            <ref role="1vv99g" node="13C5RDf_12x" />
           </node>
           <node concept="1vv375" id="13C5RDfCW3L" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfCW3M" role="3F5Y$9">
-          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" resolve="inMain" />
+          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" />
         </node>
       </node>
     </node>
@@ -493,7 +493,7 @@
       <node concept="3clFbS" id="13C5RDfCW3S" role="3clF47" />
       <node concept="3sdZbQ" id="13C5RDfCW3T" role="3scror">
         <node concept="3sdZbA" id="13C5RDfCW3V" role="3sdZbB">
-          <ref role="3sa5fj" to="qc5z:13C5RDfCW3p" resolve="providingInstance" />
+          <ref role="3sa5fj" to="qc5z:13C5RDfCW3p" />
         </node>
       </node>
       <node concept="3savIG" id="13C5RDfCW3W" role="3savwP">
@@ -505,7 +505,7 @@
         <node concept="30a7bf" id="13C5RDfCW3Z" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAF4C" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qc5z:62XMcUob$u9" resolve="stmntAfterInstanceConfInit" />
+            <ref role="3cQ7K8" to="qc5z:62XMcUob$u9" />
           </node>
         </node>
         <node concept="1l46Ie" id="13C5RDfCW41" role="3F5Y$9">
@@ -640,19 +640,19 @@
             </node>
           </node>
           <node concept="1vv375" id="13C5RDfCW43" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
         </node>
         <node concept="1vtf2i" id="13C5RDfCW44" role="3F5Y$9">
-          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" resolve="inMain" />
+          <ref role="1vtf2j" to="dan2:4WY_RKGxD2I" />
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="62XMcUob$tU" role="3qy1PE">
-      <ref role="30ajXG" to="qc5z:62XMcUob$tE" resolve="InstanceConfiguration" />
+      <ref role="30ajXG" to="qc5z:62XMcUob$tE" />
     </node>
     <node concept="1rNadw" id="3lUAsMPdfb8" role="1zJi$_">
-      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" resolve="Main" />
+      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

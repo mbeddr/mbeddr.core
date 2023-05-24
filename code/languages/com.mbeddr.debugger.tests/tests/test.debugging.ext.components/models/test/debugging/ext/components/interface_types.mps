@@ -267,13 +267,13 @@
     <node concept="2eOfOl" id="3yeYUb95GEG" role="2ePNbc">
       <property role="TrG5h" value="InterfaceTypesTest" />
       <node concept="2v9HqM" id="ZfwZQEqRtN" role="2eOfOg">
-        <ref role="2v9HqP" node="ZfwZQEqRtt" resolve="TestDriver" />
+        <ref role="2v9HqP" node="ZfwZQEqRtt" />
       </node>
       <node concept="2v9HqM" id="3yeYUb95GEH" role="2eOfOg">
-        <ref role="2v9HqP" node="3yeYUb95GDI" resolve="InterfaceTypesPassing" />
+        <ref role="2v9HqP" node="3yeYUb95GDI" />
       </node>
       <node concept="2v9HqM" id="uZ8WnxB_Y7" role="2eOfOg">
-        <ref role="2v9HqP" node="uZ8WnxB_Xb" resolve="InterfaceTypesAsVar" />
+        <ref role="2v9HqP" node="uZ8WnxB_Xb" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTh5" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -301,7 +301,7 @@
       <node concept="2H6ZW9" id="ZfwZQEqPvw" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="2H6ZW8" node="uZ8WnxB_Xe" resolve="ISquare" />
+        <ref role="2H6ZW8" node="uZ8WnxB_Xe" />
       </node>
     </node>
     <node concept="2EX0iR" id="uZ8WnxB_Y1" role="N3F5h">
@@ -341,7 +341,7 @@
       <property role="TrG5h" value="Computer" />
       <node concept="2EWHp_" id="71i8Lmttj9E" role="2RW2fA">
         <property role="TrG5h" value="iSquare" />
-        <ref role="2EX0h9" node="uZ8WnxB_Xe" resolve="ISquare" />
+        <ref role="2EX0h9" node="uZ8WnxB_Xe" />
       </node>
       <node concept="EbCE0" id="uZ8WnxB_Xn" role="2RW2fA">
         <property role="TrG5h" value="errorValue" />
@@ -363,7 +363,7 @@
                 <property role="2hmy$m" value="3" />
               </node>
               <node concept="EbZIE" id="71i8LmttjYB" role="3TlMhI">
-                <ref role="EbZID" node="uZ8WnxB_Xn" resolve="errorValue" />
+                <ref role="EbZID" node="uZ8WnxB_Xn" />
               </node>
             </node>
             <node concept="3cQ7KT" id="uZ8WnxBAsM" role="lGtFl">
@@ -372,8 +372,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="uZ8WnxB_Xw" role="2EWDeT">
-          <ref role="1ZwSu5" node="71i8Lmttj9E" resolve="iSquare" />
-          <ref role="1ZwxE2" node="uZ8WnxB_Xf" resolve="square" />
+          <ref role="1ZwSu5" node="71i8Lmttj9E" />
+          <ref role="1ZwxE2" node="uZ8WnxB_Xf" />
         </node>
         <node concept="26VqpV" id="4jk7wJx5yF7" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -396,11 +396,11 @@
       <property role="TrG5h" value="GlobalInit" />
       <node concept="2EWHp$" id="uZ8WnxB_XA" role="2RW2fA">
         <property role="TrG5h" value="iSquare" />
-        <ref role="2EX0h9" node="uZ8WnxB_Xe" resolve="ISquare" />
+        <ref role="2EX0h9" node="uZ8WnxB_Xe" />
       </node>
       <node concept="2EWHp_" id="uZ8WnxB_Y4" role="2RW2fA">
         <property role="TrG5h" value="onInit" />
-        <ref role="2EX0h9" node="uZ8WnxB_Y1" resolve="onInit" />
+        <ref role="2EX0h9" node="uZ8WnxB_Y1" />
       </node>
       <node concept="2EWDwb" id="uZ8WnxB_XB" role="2RW2fA">
         <property role="TrG5h" value="onInit_init2" />
@@ -408,17 +408,17 @@
           <node concept="1_9egQ" id="ZfwZQEqRt8" role="3XIRFZ">
             <node concept="3pqW6w" id="ZfwZQEqRtc" role="1_9egR">
               <node concept="2H6loZ" id="ZfwZQEqRtf" role="3TlMhJ">
-                <ref role="2H6loY" node="uZ8WnxB_XA" resolve="iSquare" />
+                <ref role="2H6loY" node="uZ8WnxB_XA" />
               </node>
               <node concept="1S7827" id="ZfwZQEqRt9" role="3TlMhI">
-                <ref role="1S7826" node="ZfwZQEqPvv" resolve="square" />
+                <ref role="1S7826" node="ZfwZQEqPvv" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="uZ8WnxB_Y6" role="2EWDeT">
-          <ref role="1ZwxE2" node="uZ8WnxB_Y2" resolve="init2" />
-          <ref role="1ZwSu5" node="uZ8WnxB_Y4" resolve="onInit" />
+          <ref role="1ZwxE2" node="uZ8WnxB_Y2" />
+          <ref role="1ZwSu5" node="uZ8WnxB_Y4" />
         </node>
         <node concept="19Rifw" id="2AA9MeWTSQY" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -432,9 +432,9 @@
         <node concept="3XIRFW" id="uZ8WnxB_XG" role="2EWMhI">
           <node concept="1_9egQ" id="uZ8WnxB_XH" role="3XIRFZ">
             <node concept="30IBQI" id="uZ8WnxB_XI" role="1_9egR">
-              <ref role="2H6Oet" node="uZ8WnxB_Xf" resolve="square" />
+              <ref role="2H6Oet" node="uZ8WnxB_Xf" />
               <node concept="2H6loZ" id="uZ8WnxB_XJ" role="1_9fRO">
-                <ref role="2H6loY" node="uZ8WnxB_XA" resolve="iSquare" />
+                <ref role="2H6loY" node="uZ8WnxB_XA" />
               </node>
               <node concept="3TlMh9" id="uZ8WnxB_XK" role="2H6KYo">
                 <property role="2hmy$m" value="2" />
@@ -455,21 +455,21 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="uZ8WnxB_XO" role="5JtDH">
         <property role="TrG5h" value="computer" />
-        <ref role="2EWCuU" node="uZ8WnxB_Xk" resolve="Computer" />
+        <ref role="2EWCuU" node="uZ8WnxB_Xk" />
       </node>
       <node concept="JAGxh" id="uZ8WnxB_XP" role="5JtDH" />
       <node concept="2EWCuV" id="uZ8WnxB_XQ" role="5JtDH">
         <property role="TrG5h" value="global" />
-        <ref role="2EWCuU" node="uZ8WnxB_X_" resolve="GlobalInit" />
+        <ref role="2EWCuU" node="uZ8WnxB_X_" />
       </node>
       <node concept="2EWCuP" id="uZ8WnxB_XR" role="5JtDH">
         <node concept="2EWCuO" id="uZ8WnxB_XS" role="2EWCuL">
-          <ref role="XcPQd" node="uZ8WnxB_XA" resolve="iSquare" />
-          <ref role="2EWCuR" node="uZ8WnxB_XQ" resolve="global" />
+          <ref role="XcPQd" node="uZ8WnxB_XA" />
+          <ref role="2EWCuR" node="uZ8WnxB_XQ" />
         </node>
         <node concept="2EWCuO" id="uZ8WnxB_XT" role="2EWCuK">
-          <ref role="XcPQd" node="71i8Lmttj9E" resolve="iSquare" />
-          <ref role="2EWCuR" node="uZ8WnxB_XO" resolve="computer" />
+          <ref role="XcPQd" node="71i8Lmttj9E" />
+          <ref role="2EWCuR" node="uZ8WnxB_XO" />
         </node>
       </node>
     </node>
@@ -491,13 +491,13 @@
       </node>
       <node concept="3XIRFW" id="uZ8WnxB_XZ" role="c0Qz3">
         <node concept="3t9XKO" id="uZ8WnxB_Y0" role="3XIRFZ">
-          <ref role="3t9XKR" node="uZ8WnxB_XN" resolve="instances" />
+          <ref role="3t9XKR" node="uZ8WnxB_XN" />
         </node>
         <node concept="1_9egQ" id="uZ8WnxBAdi" role="3XIRFZ">
           <node concept="1AmG6P" id="uZ8WnxBAdj" role="1_9egR">
-            <ref role="1XX6Gv" node="uZ8WnxB_XN" resolve="instances" />
-            <ref role="1XX6Gs" node="uZ8WnxB_XQ" resolve="global" />
-            <ref role="2YB7zn" node="uZ8WnxB_XB" resolve="onInit_init2" />
+            <ref role="1XX6Gv" node="uZ8WnxB_XN" />
+            <ref role="1XX6Gs" node="uZ8WnxB_XQ" />
+            <ref role="2YB7zn" node="uZ8WnxB_XB" />
           </node>
         </node>
         <node concept="c0Tn9" id="ZfwZQEqPva" role="3XIRFZ">
@@ -506,9 +506,9 @@
               <property role="2hmy$m" value="4" />
             </node>
             <node concept="3LAlOK" id="ZfwZQEqRtp" role="3TlMhI">
-              <ref role="2H6Oet" node="uZ8WnxB_Xf" resolve="square" />
+              <ref role="2H6Oet" node="uZ8WnxB_Xf" />
               <node concept="1S7827" id="ZfwZQEqRtm" role="1_9fRO">
-                <ref role="1S7826" node="ZfwZQEqPvv" resolve="square" />
+                <ref role="1S7826" node="ZfwZQEqPvv" />
               </node>
               <node concept="3TlMh9" id="ZfwZQEqRts" role="2H6KYo">
                 <property role="2hmy$m" value="2" />
@@ -581,11 +581,11 @@
       <property role="TrG5h" value="Computer" />
       <node concept="2EWHp_" id="3yeYUb95GF8" role="2RW2fA">
         <property role="TrG5h" value="adder" />
-        <ref role="2EX0h9" node="3yeYUb95GER" resolve="Adder" />
+        <ref role="2EX0h9" node="3yeYUb95GER" />
       </node>
       <node concept="2EWHp_" id="4jk7wJwFImm" role="2RW2fA">
         <property role="TrG5h" value="tweaker" />
-        <ref role="2EX0h9" node="3yeYUb95Uoq" resolve="Tweaker" />
+        <ref role="2EX0h9" node="3yeYUb95Uoq" />
       </node>
       <node concept="3Khz0B" id="3yeYUb95GFB" role="2RW2fA" />
       <node concept="EbCE0" id="3yeYUb95GFJ" role="2RW2fA">
@@ -601,31 +601,31 @@
         <node concept="3XIRFW" id="3yeYUb95GFa" role="2EWMhI">
           <node concept="1_9egQ" id="3yeYUb95GG1" role="3XIRFZ">
             <node concept="3O_q_g" id="3yeYUb95GG2" role="1_9egR">
-              <ref role="3O_q_h" node="3yeYUb95GFv" resolve="anExternalFunction" />
+              <ref role="3O_q_h" node="3yeYUb95GFv" />
               <node concept="3LA32D" id="3yeYUb95PUs" role="3O_q_j">
-                <ref role="3LA33G" node="4jk7wJwFImm" resolve="tweaker" />
+                <ref role="3LA33G" node="4jk7wJwFImm" />
               </node>
             </node>
           </node>
           <node concept="2BFjQ_" id="3yeYUb95GFi" role="3XIRFZ">
             <node concept="2BOciq" id="3yeYUb95GG6" role="2BFjQA">
               <node concept="EbZIE" id="3yeYUb95GG9" role="3TlMhJ">
-                <ref role="EbZID" node="3yeYUb95GFJ" resolve="errorValue" />
+                <ref role="EbZID" node="3yeYUb95GFJ" />
               </node>
               <node concept="2BOciq" id="3yeYUb95GFn" role="3TlMhI">
                 <node concept="3ZUYvv" id="3yeYUb95GFk" role="3TlMhI">
-                  <ref role="3ZUYvu" node="4jk7wJwFDDh" resolve="x" />
+                  <ref role="3ZUYvu" node="4jk7wJwFDDh" />
                 </node>
                 <node concept="3ZUYvv" id="3yeYUb95GFq" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="4jk7wJwFDDj" resolve="y" />
+                  <ref role="3ZUYvu" node="4jk7wJwFDDj" />
                 </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="3yeYUb95GFc" role="2EWDeT">
-          <ref role="1ZwxE2" node="4jk7wJwFzCO" resolve="add" />
-          <ref role="1ZwSu5" node="3yeYUb95GF8" resolve="adder" />
+          <ref role="1ZwxE2" node="4jk7wJwFzCO" />
+          <ref role="1ZwSu5" node="3yeYUb95GF8" />
         </node>
         <node concept="26Vqqz" id="4jk7wJwFDDg" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -652,17 +652,17 @@
           <node concept="1_9egQ" id="3yeYUb95GFS" role="3XIRFZ">
             <node concept="3pqW6w" id="3yeYUb95GFW" role="1_9egR">
               <node concept="3ZUYvv" id="3yeYUb95GFZ" role="3TlMhJ">
-                <ref role="3ZUYvu" node="4jk7wJwF$QG" resolve="error" />
+                <ref role="3ZUYvu" node="4jk7wJwF$QG" />
               </node>
               <node concept="EbZIE" id="3yeYUb95GFT" role="3TlMhI">
-                <ref role="EbZID" node="3yeYUb95GFJ" resolve="errorValue" />
+                <ref role="EbZID" node="3yeYUb95GFJ" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="3yeYUb95Uot" role="2EWDeT">
-          <ref role="1ZwSu5" node="4jk7wJwFImm" resolve="tweaker" />
-          <ref role="1ZwxE2" node="4jk7wJwFxX9" resolve="setErrorValue" />
+          <ref role="1ZwSu5" node="4jk7wJwFImm" />
+          <ref role="1ZwxE2" node="4jk7wJwFxX9" />
         </node>
         <node concept="19Rifw" id="4jk7wJwF$QF" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -684,13 +684,13 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="3yeYUb95UoA" role="5JtDH">
         <property role="TrG5h" value="computer" />
-        <ref role="2EWCuU" node="3yeYUb95GF7" resolve="Computer" />
+        <ref role="2EWCuU" node="3yeYUb95GF7" />
       </node>
       <node concept="21gPQu" id="3yeYUb95UoE" role="5JtDH">
         <property role="TrG5h" value="comp" />
         <node concept="219P8x" id="3yeYUb95UoF" role="21ad3a">
-          <ref role="219P8w" node="3yeYUb95UoA" resolve="computer" />
-          <ref role="219P8J" node="3yeYUb95GF8" resolve="adder" />
+          <ref role="219P8w" node="3yeYUb95UoA" />
+          <ref role="219P8J" node="3yeYUb95GF8" />
         </node>
       </node>
     </node>
@@ -702,9 +702,9 @@
       <node concept="3XIRFW" id="3yeYUb95GFx" role="3XIRFX">
         <node concept="1_9egQ" id="3yeYUb97Rzs" role="3XIRFZ">
           <node concept="3LAlOK" id="3yeYUb97Rzw" role="1_9egR">
-            <ref role="2H6Oet" node="4jk7wJwFxX9" resolve="setErrorValue" />
+            <ref role="2H6Oet" node="4jk7wJwFxX9" />
             <node concept="3ZUYvv" id="3yeYUb97Rzt" role="1_9fRO">
-              <ref role="3ZUYvu" node="3yeYUb95GFz" resolve="twekaer" />
+              <ref role="3ZUYvu" node="3yeYUb95GFz" />
             </node>
             <node concept="3TlMh9" id="3yeYUb97Rz_" role="2H6KYo">
               <property role="2hmy$m" value="10" />
@@ -721,7 +721,7 @@
         <node concept="2H6ZW9" id="3yeYUb95GF$" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="2H6ZW8" node="3yeYUb95Uoq" resolve="Tweaker" />
+          <ref role="2H6ZW8" node="3yeYUb95Uoq" />
         </node>
       </node>
     </node>
@@ -740,7 +740,7 @@
       </node>
       <node concept="3XIRFW" id="3yeYUb95GDX" role="c0Qz3">
         <node concept="3t9XKO" id="3yeYUb95UoB" role="3XIRFZ">
-          <ref role="3t9XKR" node="3yeYUb95Uo_" resolve="instances" />
+          <ref role="3t9XKR" node="3yeYUb95Uo_" />
         </node>
         <node concept="3XIRlf" id="3yeYUb96bzz" role="3XIRFZ">
           <property role="TrG5h" value="res" />
@@ -749,9 +749,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="30IJZa" id="3yeYUb96bz_" role="3XIe9u">
-            <ref role="2H6Oet" node="4jk7wJwFzCO" resolve="add" />
+            <ref role="2H6Oet" node="4jk7wJwFzCO" />
             <node concept="2H6Wec" id="3yeYUb96bzA" role="1_9fRO">
-              <ref role="2H6Wef" node="3yeYUb95UoE" resolve="comp" />
+              <ref role="2H6Wef" node="3yeYUb95UoE" />
             </node>
             <node concept="3TlMh9" id="3yeYUb96bzB" role="2H6KYo">
               <property role="2hmy$m" value="10" />
@@ -767,7 +767,7 @@
               <property role="2hmy$m" value="30" />
             </node>
             <node concept="3ZVu4v" id="3yeYUb96bzH" role="3TlMhI">
-              <ref role="3ZVs_2" node="3yeYUb96bzz" resolve="res" />
+              <ref role="3ZVs_2" node="3yeYUb96bzz" />
             </node>
           </node>
         </node>
@@ -778,20 +778,20 @@
     <property role="TrG5h" value="TestDriver" />
     <node concept="3GEVxB" id="71i8LmttI3Z" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="uZ8WnxB_Xb" resolve="InterfaceTypesAsVar" />
+      <ref role="3GEb4d" node="uZ8WnxB_Xb" />
     </node>
     <node concept="3GEVxB" id="71i8LmttI46" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="3yeYUb95GDI" resolve="InterfaceTypesPassing" />
+      <ref role="3GEb4d" node="3yeYUb95GDI" />
     </node>
     <node concept="lIfQi" id="4Tiud0TdVJw" role="N3F5h">
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdVJu" role="lIfQt">
-        <ref role="3cM6IK" node="uZ8WnxB_XX" resolve="testVar" />
+        <ref role="3cM6IK" node="uZ8WnxB_XX" />
       </node>
       <node concept="3cM6IN" id="4Tiud0TdVJv" role="lIfQt">
-        <ref role="3cM6IK" node="3yeYUb95GDV" resolve="testPassing" />
+        <ref role="3cM6IK" node="3yeYUb95GDV" />
       </node>
     </node>
   </node>

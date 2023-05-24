@@ -40,7 +40,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -100,7 +100,7 @@
       <node concept="3clFbS" id="2cOIoslaqup" role="3clF47" />
       <node concept="3sdZbQ" id="2cOIoslaquq" role="3scror">
         <node concept="3sdZbA" id="2cOIoslaqur" role="3sdZbB">
-          <ref role="3sa5fj" to="agf0:7ecc3K_XriP" resolve="triggerAfterInit" />
+          <ref role="3sa5fj" to="agf0:7ecc3K_XriP" />
         </node>
       </node>
       <node concept="3savIG" id="2cOIoslaqus" role="3savwP">
@@ -112,7 +112,7 @@
         <node concept="30a7bf" id="2cOIoslaquv" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzHQX" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="agf0:2cOIoslaqug" resolve="inFirstlyFiredTrans" />
+            <ref role="3cQ7K8" to="agf0:2cOIoslaqug" />
           </node>
         </node>
       </node>
@@ -124,7 +124,7 @@
       <node concept="3clFbS" id="2cOIoslaqXF" role="3clF47" />
       <node concept="3sdZbQ" id="2cOIoslaqXG" role="3scror">
         <node concept="3sdZbA" id="2cOIoslaqXH" role="3sdZbB">
-          <ref role="3sa5fj" to="agf0:7ecc3K_XrNa" resolve="noTransTriggered" />
+          <ref role="3sa5fj" to="agf0:7ecc3K_XrNa" />
         </node>
       </node>
       <node concept="3savIG" id="2cOIoslaqXI" role="3savwP">
@@ -136,7 +136,7 @@
         <node concept="30a7bf" id="2cOIoslaqXL" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzHQL" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="agf0:7ecc3K_XrHT" resolve="triggering2ndTrans" />
+            <ref role="3cQ7K8" to="agf0:7ecc3K_XrHT" />
           </node>
         </node>
       </node>
@@ -153,14 +153,14 @@
       </node>
       <node concept="3sdZbQ" id="2cOIoslaqXW" role="3scror">
         <node concept="3sdZbA" id="2cOIoslaqXX" role="3sdZbB">
-          <ref role="3sa5fj" to="agf0:7ecc3K_XrHT" resolve="triggering2ndTrans" />
+          <ref role="3sa5fj" to="agf0:7ecc3K_XrHT" />
         </node>
       </node>
       <node concept="3F5Y_J" id="2cOIoslaqXY" role="3F5AM1">
         <node concept="30a7bf" id="2cOIoslaqXZ" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzHQR" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="agf0:2cOIoslf76U" resolve="inCalledFunc" />
+            <ref role="3cQ7K8" to="agf0:2cOIoslf76U" />
           </node>
         </node>
       </node>
@@ -172,7 +172,7 @@
       <node concept="3clFbS" id="2cOIoslbNAZ" role="3clF47" />
       <node concept="3sdZbQ" id="2cOIoslbNB0" role="3scror">
         <node concept="3sdZbA" id="2cOIoslbNB1" role="3sdZbB">
-          <ref role="3sa5fj" to="agf0:7ecc3K_XrHT" resolve="triggering2ndTrans" />
+          <ref role="3sa5fj" to="agf0:7ecc3K_XrHT" />
         </node>
       </node>
       <node concept="3savIG" id="2cOIoslbNB2" role="3savwP">
@@ -184,7 +184,7 @@
         <node concept="30a7bf" id="2cOIoslbNB5" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzHQT" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="agf0:2cOIoslaqXm" resolve="in2ndlyFiredTrans" />
+            <ref role="3cQ7K8" to="agf0:2cOIoslaqXm" />
           </node>
         </node>
       </node>
@@ -196,7 +196,7 @@
       <node concept="3clFbS" id="2cOIoslbO7i" role="3clF47" />
       <node concept="3sdZbQ" id="2cOIoslbO7j" role="3scror">
         <node concept="3sdZbA" id="2cOIoslbO7k" role="3sdZbB">
-          <ref role="3sa5fj" to="agf0:2cOIoslaqXm" resolve="in2ndlyFiredTrans" />
+          <ref role="3sa5fj" to="agf0:2cOIoslaqXm" />
         </node>
       </node>
       <node concept="3savIG" id="2cOIoslbO7l" role="3savwP">
@@ -209,7 +209,7 @@
           <node concept="30a7bf" id="hDImLjXbKF" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbhzHQP" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="agf0:7Hpw6GdNcBI" resolve="lastStmntInTestcase" />
+              <ref role="3cQ7K8" to="agf0:7Hpw6GdNcBI" />
             </node>
           </node>
           <node concept="16XR13" id="hDImLjXbKJ" role="16XPZB">
@@ -217,7 +217,7 @@
             <node concept="30a7bf" id="hDImLjXc6J" role="16XPZy">
               <node concept="3cQ7K9" id="3uHGTbhzHQN" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="agf0:7ecc3K_XrHT" resolve="triggering2ndTrans" />
+                <ref role="3cQ7K8" to="agf0:7ecc3K_XrHT" />
               </node>
             </node>
             <node concept="16XR13" id="hDImLjXbKL" role="16XKT6">
@@ -225,7 +225,7 @@
               <node concept="30a7bf" id="2cOIoslbO7o" role="16XPZy">
                 <node concept="3cQ7K9" id="3uHGTbhzHQV" role="30a7be">
                   <property role="3sdDOw" value="marker" />
-                  <ref role="3cQ7K8" to="agf0:7ecc3K_XrHT" resolve="triggering2ndTrans" />
+                  <ref role="3cQ7K8" to="agf0:7ecc3K_XrHT" />
                 </node>
               </node>
             </node>
@@ -235,7 +235,7 @@
     </node>
     <node concept="3sgmnF" id="2cOIoslbO7f" role="1zJi$$" />
     <node concept="3qy1PH" id="2cOIoslaquj" role="3qy1PE">
-      <ref role="30ajXG" to="agf0:2cOIoslaqtg" resolve="StepIntoSM" />
+      <ref role="30ajXG" to="agf0:2cOIoslaqtg" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZS1g" role="29bA6Q" />
   </node>

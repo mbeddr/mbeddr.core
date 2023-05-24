@@ -188,7 +188,7 @@
     <node concept="1gr5cj" id="2s6qLQkocef" role="2ePNbc">
       <property role="TrG5h" value="pan__000_test_whitness_logger_01" />
       <node concept="2v9HqM" id="2s6qLQkocez" role="2eOfOg">
-        <ref role="2v9HqP" node="2s6qLQkochl" resolve="_000_test_whitness_logger_01" />
+        <ref role="2v9HqP" node="2s6qLQkochl" />
       </node>
       <node concept="1l1$C7" id="59cfP9ua2oX" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -223,7 +223,7 @@
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="ac" />
     <node concept="apm28" id="2s6qLQkocf8" role="3V$2$K">
-      <ref role="apm5G" node="2s6qLQkochl" resolve="_000_test_whitness_logger_01" />
+      <ref role="apm5G" node="2s6qLQkochl" />
     </node>
   </node>
   <node concept="1HfMva" id="2s6qLQkochl">
@@ -263,7 +263,7 @@
       <node concept="3XIRFW" id="2s6qLQkocht" role="3XIRFX">
         <node concept="WlspI" id="2s6qLQkochw" role="3XIRFZ">
           <node concept="1S7827" id="2s6qLQkochC" role="Wlsuc">
-            <ref role="1S7826" node="2s6qLQkochr" resolve="my_arr" />
+            <ref role="1S7826" node="2s6qLQkochr" />
           </node>
           <node concept="1vV05I" id="2s6qLQkochD" role="2DF6ot">
             <property role="n43Ve" value="true" />
@@ -285,7 +285,7 @@
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="1S7827" id="2s6qLQkochP" role="1_9fRO">
-                <ref role="1S7826" node="2s6qLQkochr" resolve="my_arr" />
+                <ref role="1S7826" node="2s6qLQkochr" />
               </node>
             </node>
           </node>
@@ -297,14 +297,14 @@
         </node>
         <node concept="3rpoMU" id="2s6qLQkochz" role="3XIRFZ">
           <node concept="1S7827" id="2s6qLQkochG" role="3qA2Pq">
-            <ref role="1S7826" node="2s6qLQkochr" resolve="my_arr" />
+            <ref role="1S7826" node="2s6qLQkochr" />
           </node>
         </node>
         <node concept="Y9XUq" id="2s6qLQkoch$" role="3XIRFZ">
           <node concept="25Bbzn" id="2s6qLQkochH" role="Y9XUp">
             <node concept="2wJmCr" id="2s6qLQkochM" role="3TlMhI">
               <node concept="1S7827" id="2s6qLQkochQ" role="1_9fRO">
-                <ref role="1S7826" node="2s6qLQkochr" resolve="my_arr" />
+                <ref role="1S7826" node="2s6qLQkochr" />
               </node>
               <node concept="3TlMh9" id="2s6qLQkochR" role="2wJmCp">
                 <property role="2hmy$m" value="1" />

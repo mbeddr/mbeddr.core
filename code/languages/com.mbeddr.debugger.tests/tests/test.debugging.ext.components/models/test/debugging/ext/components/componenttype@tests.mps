@@ -43,7 +43,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -118,7 +118,7 @@
   <node concept="309jyn" id="4WY_RKGuhaB">
     <property role="TrG5h" value="DirectRunnableCall" />
     <node concept="3qy1PH" id="1u7QiMonmhP" role="3qy1PE">
-      <ref role="30ajXG" to="qhjy:7XQHhkHda5D" resolve="ComponentTypesTest" />
+      <ref role="30ajXG" to="qhjy:7XQHhkHda5D" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRWq" role="29bA6Q" />
     <node concept="1vuW9F" id="4SlXPQOfhQ5" role="1zJi$$">
@@ -261,7 +261,7 @@
       <node concept="3clFbS" id="4WY_RKG_q2m" role="3clF47" />
       <node concept="3sdZbQ" id="4WY_RKG_q2n" role="3scror">
         <node concept="3sdZbA" id="4WY_RKG_q2o" role="3sdZbB">
-          <ref role="3sa5fj" to="qhjy:C8RYlEyaVx" resolve="2ndComponentInstance" />
+          <ref role="3sa5fj" to="qhjy:C8RYlEyaVx" />
         </node>
       </node>
       <node concept="3savIG" id="4WY_RKG_q2p" role="3savwP">
@@ -273,7 +273,7 @@
         <node concept="30a7bf" id="4WY_RKG_q2s" role="3F5Y$9">
           <node concept="3cQ7K9" id="1u7QiMonmiq" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qhjy:C8RYlEyaVB" resolve="3rdComponentInstance" />
+            <ref role="3cQ7K8" to="qhjy:C8RYlEyaVB" />
           </node>
         </node>
       </node>
@@ -285,7 +285,7 @@
       <node concept="3clFbS" id="4WY_RKG_q1X" role="3clF47" />
       <node concept="3sdZbQ" id="4WY_RKG_q2w" role="3scror">
         <node concept="3sdZbA" id="4WY_RKG_q2x" role="3sdZbB">
-          <ref role="3sa5fj" to="qhjy:4WY_RKG_q2u" resolve="afterWiring" />
+          <ref role="3sa5fj" to="qhjy:4WY_RKG_q2u" />
         </node>
       </node>
       <node concept="3F5Y_J" id="4WY_RKG_q2y" role="3F5AM1">
@@ -294,7 +294,7 @@
             <property role="TrG5h" value="dummy" />
           </node>
           <node concept="1vv375" id="4SlXPQOfhQ6" role="1vv36M">
-            <ref role="1vv99g" node="4SlXPQOfhQ5" resolve="global" />
+            <ref role="1vv99g" node="4SlXPQOfhQ5" />
           </node>
         </node>
       </node>
@@ -306,7 +306,7 @@
       <node concept="3clFbS" id="4WY_RKG_q22" role="3clF47" />
       <node concept="3sdZbQ" id="4WY_RKG_q3g" role="3scror">
         <node concept="3sdZbA" id="4WY_RKG_q3h" role="3sdZbB">
-          <ref role="3sa5fj" to="qhjy:4WY_RKG_q2v" resolve="stmntWithinComponent" />
+          <ref role="3sa5fj" to="qhjy:4WY_RKG_q2v" />
         </node>
       </node>
       <node concept="3F5Y_J" id="4WY_RKG_q3j" role="3F5AM1">
@@ -345,7 +345,7 @@
             </node>
           </node>
           <node concept="1vv375" id="4SlXPQOfhQ7" role="1vv36M">
-            <ref role="1vv99g" node="4SlXPQOfhQ5" resolve="global" />
+            <ref role="1vv99g" node="4SlXPQOfhQ5" />
           </node>
         </node>
       </node>
@@ -357,7 +357,7 @@
       <node concept="3clFbS" id="4SlXPQOfIZJ" role="3clF47" />
       <node concept="3sdZbQ" id="4SlXPQOfIZK" role="3scror">
         <node concept="3sdZbA" id="4SlXPQOfIZL" role="3sdZbB">
-          <ref role="3sa5fj" to="qhjy:6zkl9Geb3zz" resolve="componentCall" />
+          <ref role="3sa5fj" to="qhjy:6zkl9Geb3zz" />
         </node>
       </node>
       <node concept="3savIG" id="4SlXPQOfIZM" role="3savwP">
@@ -383,7 +383,7 @@
         <node concept="30a7bf" id="4SlXPQOfIZR" role="3F5Y$9">
           <node concept="3cQ7K9" id="1u7QiMonmio" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qhjy:4CGLlLY9pRI" resolve="firstStmntInCalledComponent" />
+            <ref role="3cQ7K8" to="qhjy:4CGLlLY9pRI" />
           </node>
         </node>
       </node>

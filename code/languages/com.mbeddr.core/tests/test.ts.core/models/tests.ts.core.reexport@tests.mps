@@ -2,7 +2,7 @@
 <model ref="r:a8370fac-9692-406a-8e1a-951e2575d978(tests.ts.core.reexport@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="10" />
@@ -25,6 +25,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -144,6 +145,7 @@
   </registry>
   <node concept="1lH9Xt" id="44jZT9ph3d6">
     <property role="TrG5h" value="Reexport" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3BaKq1PwRQE" role="1SKRRt">
       <node concept="N3F5e" id="3BaKq1PwRQF" role="1qenE9">
         <property role="TrG5h" value="MissingReExport" />
@@ -153,7 +155,7 @@
           <node concept="rcJHQ" id="3BaKq1PwRQH" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="3BaKq1PkRE8" resolve="age_t" />
+            <ref role="rcJHT" node="3BaKq1PkRE8" />
           </node>
           <node concept="3XIRFW" id="3BaKq1PwRQI" role="3XIRFX">
             <node concept="3XIRlf" id="3BaKq1PwRQJ" role="3XIRFZ">
@@ -161,7 +163,7 @@
               <node concept="rcJHQ" id="3BaKq1PwRQK" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="rcJHT" node="3BaKq1PkRE8" resolve="age_t" />
+                <ref role="rcJHT" node="3BaKq1PkRE8" />
               </node>
               <node concept="3TlMh9" id="3BaKq1PwRQL" role="3XIe9u">
                 <property role="2hmy$m" value="42" />
@@ -169,14 +171,14 @@
             </node>
             <node concept="2BFjQ_" id="3BaKq1PwRQM" role="3XIRFZ">
               <node concept="3ZVu4v" id="3BaKq1PwRQN" role="2BFjQA">
-                <ref role="3ZVs_2" node="3BaKq1PwRQJ" resolve="age2" />
+                <ref role="3ZVs_2" node="3BaKq1PwRQJ" />
               </node>
             </node>
           </node>
         </node>
         <node concept="7CXmI" id="3BaKq1PwRQO" role="lGtFl" />
         <node concept="3GEVxB" id="3BaKq1PwRQP" role="2OODSX">
-          <ref role="3GEb4d" node="3BaKq1PkRE6" resolve="TypeDefModule" />
+          <ref role="3GEb4d" node="3BaKq1PkRE6" />
           <node concept="7CXmI" id="3BaKq1PwRQQ" role="lGtFl">
             <node concept="1TM$A" id="3BaKq1PwRQR" role="7EUXB" />
           </node>
@@ -194,13 +196,13 @@
             <node concept="rcJHQ" id="3BaKq1PwRyy" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="3BaKq1PkRE8" resolve="age_t" />
+              <ref role="rcJHT" node="3BaKq1PkRE8" />
             </node>
           </node>
         </node>
         <node concept="7CXmI" id="3BaKq1PwRyz" role="lGtFl" />
         <node concept="3GEVxB" id="3BaKq1PwRy$" role="2OODSX">
-          <ref role="3GEb4d" node="3BaKq1PkRE6" resolve="TypeDefModule" />
+          <ref role="3GEb4d" node="3BaKq1PkRE6" />
           <node concept="7CXmI" id="3BaKq1PwRy_" role="lGtFl">
             <node concept="1TM$A" id="3BaKq1PwRyA" role="7EUXB" />
           </node>
@@ -216,7 +218,7 @@
           <node concept="rcJHQ" id="7auURhIfDe_" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="3BaKq1PkRE8" resolve="age_t" />
+            <ref role="rcJHT" node="3BaKq1PkRE8" />
           </node>
           <node concept="3TlMh9" id="7auURhIfDeA" role="1cecVj">
             <property role="2hmy$m" value="42" />
@@ -224,7 +226,7 @@
         </node>
         <node concept="7CXmI" id="7auURhIfDeB" role="lGtFl" />
         <node concept="3GEVxB" id="7auURhIfDeC" role="2OODSX">
-          <ref role="3GEb4d" node="3BaKq1PkRE6" resolve="TypeDefModule" />
+          <ref role="3GEb4d" node="3BaKq1PkRE6" />
           <node concept="7CXmI" id="7auURhIfDeD" role="lGtFl">
             <node concept="1TM$A" id="7auURhIfDeE" role="7EUXB" />
           </node>
@@ -247,7 +249,7 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="4ZOvp" id="7auURhIfDlS" role="1YbSNA">
-                <ref role="2DPCA0" node="1tHnH2eLt49" resolve="MAX_ELEMENTS" />
+                <ref role="2DPCA0" node="1tHnH2eLt49" />
               </node>
             </node>
           </node>
@@ -261,7 +263,7 @@
         </node>
         <node concept="7CXmI" id="3BaKq1PwRGz" role="lGtFl" />
         <node concept="3GEVxB" id="3BaKq1PwRG$" role="2OODSX">
-          <ref role="3GEb4d" node="1tHnH2eLt47" resolve="Constant" />
+          <ref role="3GEb4d" node="1tHnH2eLt47" />
           <node concept="7CXmI" id="3BaKq1PwRG_" role="lGtFl">
             <node concept="1TM$A" id="3BaKq1PwRGA" role="7EUXB" />
           </node>
@@ -271,7 +273,7 @@
   </node>
   <node concept="2v9HqL" id="44jZT9pgTbF">
     <node concept="2xfidK" id="2nospmWkKpk" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
     </node>
     <node concept="2Q9Fgs" id="44jZT9pgTbH" role="2Q9xDr">
       <node concept="2Q9FjX" id="44jZT9pgTbI" role="2Q9FjI" />
@@ -309,13 +311,13 @@
           <node concept="rcJHQ" id="3BaKq1PCfuw" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="3BaKq1PkRE8" resolve="age_t" />
+            <ref role="rcJHT" node="3BaKq1PkRE8" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3GEVxB" id="3BaKq1PCftD" role="2OODSX">
-      <ref role="3GEb4d" node="3BaKq1PkRE6" resolve="TypeDefModule" />
+      <ref role="3GEb4d" node="3BaKq1PkRE6" />
     </node>
   </node>
   <node concept="N3F5e" id="1tHnH2eLt47">

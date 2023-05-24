@@ -43,7 +43,7 @@
   <node concept="3akSAJ" id="5SdnHczhBVZ">
     <property role="TrG5h" value="SomeInformationAboutOwner" />
     <property role="3agOhf" value="Logical children are part of the owner. It is a refinement or additional information stored in another root." />
-    <ref role="1Xj$cz" node="3lcj7hzt8fI" />
+    <ref role="1Xj$cz" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
     <node concept="3ajAQ0" id="5SdnHczhBW0" role="3agInd">
       <property role="TrG5h" value="somePhysicalChild01" />
     </node>
@@ -54,7 +54,7 @@
   <node concept="3akSAJ" id="5SdnHczhBW5">
     <property role="TrG5h" value="AnotherInformationAboutOwner" />
     <property role="3agOhf" value="Logical child owners may be referenced by multiple logical children." />
-    <ref role="1Xj$cz" node="3lcj7hzt8fI" />
+    <ref role="1Xj$cz" node="3lcj7hzt8fI" resolve="SomeChildInSomeRoot" />
     <node concept="3ajAQ0" id="5SdnHczhBW6" role="3agInd">
       <property role="TrG5h" value="anotherPhysicalChild01" />
     </node>

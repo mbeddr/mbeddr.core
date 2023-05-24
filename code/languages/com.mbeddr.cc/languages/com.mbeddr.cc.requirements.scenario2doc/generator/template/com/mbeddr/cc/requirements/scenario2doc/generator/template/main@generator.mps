@@ -285,7 +285,7 @@
       <node concept="1Koe21" id="519ky_Spzs1" role="1lVwrX">
         <node concept="1_1swa" id="519ky_Spzsa" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
+          <ref role="G9hjw" node="519ky_Spzuw" />
           <node concept="1_1sxE" id="7IezpGAfSDv" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -295,7 +295,7 @@
                 <property role="19SUeA" value="This requirement contains a scenario. It is illustrated in " />
               </node>
               <node concept="2Sbdz4" id="7IezpGAfSD_" role="19SJt6">
-                <ref role="2SbdyP" node="519ky_Spzsb" resolve="s" />
+                <ref role="2SbdyP" node="519ky_Spzsb" />
                 <node concept="1ZhdrF" id="7IezpGAfSDC" role="lGtFl">
                   <property role="2qtEX8" value="image" />
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/6386504476136420159/6386504476136420174" />
@@ -403,7 +403,7 @@
             </node>
             <node concept="2NCZwO" id="8K5lDOa_vV" role="ZeNY6">
               <node concept="2NCMab" id="8K5lDOa_RW" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsg" resolve="R" />
+                <ref role="2NCMaa" node="519ky_Spzsg" />
                 <node concept="1ZhdrF" id="8K5lDOaA2Z" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -426,7 +426,7 @@
                 </node>
               </node>
               <node concept="2NCMab" id="8K5lDOa_S2" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsp" resolve="s" />
+                <ref role="2NCMaa" node="519ky_Spzsp" />
                 <node concept="1ZhdrF" id="8K5lDOa_S6" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -449,7 +449,7 @@
       <node concept="1Koe21" id="2HzhasNymJP" role="1lVwrX">
         <node concept="1_1swa" id="2HzhasNymJQ" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
+          <ref role="G9hjw" node="519ky_Spzuw" />
           <node concept="1_1sxE" id="2HzhasNymJR" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -533,7 +533,7 @@
             </node>
             <node concept="2NCZwO" id="8K5lDOaCze" role="ZeNY6">
               <node concept="2NCMab" id="8K5lDOaCzf" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsg" resolve="R" />
+                <ref role="2NCMaa" node="519ky_Spzsg" />
                 <node concept="1ZhdrF" id="8K5lDOaCzg" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -556,7 +556,7 @@
                 </node>
               </node>
               <node concept="2NCMab" id="8K5lDOaCzp" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsp" resolve="s" />
+                <ref role="2NCMaa" node="519ky_Spzsp" />
                 <node concept="1ZhdrF" id="8K5lDOaCzq" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -580,7 +580,7 @@
       <node concept="1Koe21" id="7IezpGAfTTG" role="1lVwrX">
         <node concept="1_1swa" id="7IezpGAfTTH" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
+          <ref role="G9hjw" node="519ky_Spzuw" />
           <node concept="1_1sxE" id="7IezpGAfTTI" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -909,7 +909,7 @@
       <node concept="1Koe21" id="2HzhasNymLS" role="1lVwrX">
         <node concept="1_1swa" id="2HzhasNymLT" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
+          <ref role="G9hjw" node="519ky_Spzuw" />
           <node concept="1_1sxE" id="2HzhasNymLU" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -926,7 +926,7 @@
             </node>
             <node concept="2NCZwO" id="8K5lDOaNJN" role="ZeNY6">
               <node concept="2NCMab" id="8K5lDOaNJO" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsg" resolve="R" />
+                <ref role="2NCMaa" node="519ky_Spzsg" />
                 <node concept="1ZhdrF" id="8K5lDOaNJP" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -949,7 +949,7 @@
                 </node>
               </node>
               <node concept="2NCMab" id="8K5lDOaNJY" role="2NCMaf">
-                <ref role="2NCMaa" node="8K5lDOaNUz" resolve="UseCase" />
+                <ref role="2NCMaa" node="8K5lDOaNUz" />
                 <node concept="1ZhdrF" id="8K5lDOaNJZ" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -973,7 +973,7 @@
                 <property role="19SUeA" value="This use case is illustrated in its context in " />
               </node>
               <node concept="2Sbdz4" id="2HzhasNymOd" role="19SJt6">
-                <ref role="2SbdyP" node="2HzhasNymO3" resolve="dummy" />
+                <ref role="2SbdyP" node="2HzhasNymO3" />
                 <node concept="1ZhdrF" id="2HzhasNymOg" role="lGtFl">
                   <property role="2qtEX8" value="image" />
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/6386504476136420159/6386504476136420174" />

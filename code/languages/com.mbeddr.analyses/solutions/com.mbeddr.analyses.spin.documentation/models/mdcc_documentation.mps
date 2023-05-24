@@ -120,7 +120,7 @@
   <node concept="1_1swa" id="4l47ydyjg11">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_000_MDCC_Top" />
-    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <ref role="G9hjw" node="5HlC91LJJQk" />
     <node concept="Wq1Bs" id="5HlC91LJM1m" role="Wq1Bf">
       <property role="Wq1Bt" value="Daniel Ratiu" />
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
@@ -131,46 +131,46 @@
     </node>
     <node concept="$CzcT" id="7VkE0Bpsrjw" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0BpsrjY" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_MDCC_Ch1_Intro" />
+        <ref role="1_0j5g" node="7VkE0Bpq5Fn" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5D5" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5DV" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0xz" resolve="_020_MDCC_Ch2_AnalysisConfiguration" />
+        <ref role="1_0j5g" node="7VkE0Bpq0xz" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5E6" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5Ey" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0C5" resolve="_030_MDCC_Ch3_TopLevelHarnessContent" />
+        <ref role="1_0j5g" node="7VkE0Bpq0C5" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5Ei" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5EA" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
+        <ref role="1_0j5g" node="7VkE0Bpq0PW" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5EE" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5EY" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq5kU" resolve="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
+        <ref role="1_0j5g" node="7VkE0Bpq5kU" />
       </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq5DZ" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
     </node>
     <node concept="1_0j5j" id="7VkE0BpsriV" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_MDCC_Ch1_Intro" />
+      <ref role="1_0j5g" node="7VkE0Bpq5Fn" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Db" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0xz" resolve="_020_MDCC_Ch2_AnalysisConfiguration" />
+      <ref role="1_0j5g" node="7VkE0Bpq0xz" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Dj" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0C5" resolve="_030_MDCC_Ch3_TopLevelHarnessContent" />
+      <ref role="1_0j5g" node="7VkE0Bpq0C5" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Dw" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
+      <ref role="1_0j5g" node="7VkE0Bpq0PW" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5DL" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq5kU" resolve="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
+      <ref role="1_0j5g" node="7VkE0Bpq5kU" />
     </node>
   </node>
   <node concept="2SbYGP" id="5HlC91LJJQk">
@@ -193,7 +193,7 @@
   <node concept="1_1swa" id="7VkE0Bpq0xz">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="_020_MDCC_Ch2_AnalysisConfiguration" />
-    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <ref role="G9hjw" node="5HlC91LJJQk" />
     <node concept="1mvXsy" id="7VkE0Bpq0x$" role="1_0VJ0">
       <property role="TrG5h" value="SpinAnalysisConfigurations" />
       <property role="1_0VJr" value="Analysis Configuration" />
@@ -217,7 +217,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="7VkE0Bpq0xG" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpws9m" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0Bpu2gf" resolve="analyses_configurations_for_assertions" />
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu2gf" />
             </node>
           </node>
         </node>
@@ -253,7 +253,7 @@
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpq0xT" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpws9s" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0Bpu2gf" resolve="analyses_configurations_for_assertions" />
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu2gf" />
             </node>
           </node>
         </node>
@@ -289,7 +289,7 @@
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpq0y6" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq0y7" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:4l47ydyjFhL" resolve="BuildConfiguration (c.m.a.s.d.mdcc_documentation_examples)" />
+              <ref role="2NCMaa" to="dx12:4l47ydyjFhL" />
             </node>
           </node>
         </node>
@@ -310,7 +310,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="7VkE0BpwscU" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0BpwsdW" role="2NCMaf">
-              <ref role="2NCMaa" to="qs41:7VkE0Bpwm7f" resolve="analyses_configurations_for_robustness" />
+              <ref role="2NCMaa" to="qs41:7VkE0Bpwm7f" />
             </node>
           </node>
         </node>
@@ -330,7 +330,7 @@
   <node concept="1_1swa" id="7VkE0Bpq0C5">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="_030_MDCC_Ch3_TopLevelHarnessContent" />
-    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <ref role="G9hjw" node="5HlC91LJJQk" />
     <node concept="1mvXsy" id="7VkE0Bpq0CG" role="1_0VJ0">
       <property role="TrG5h" value="TopLevelHarness" />
       <property role="1_0VJr" value="Top Level Harness Content" />
@@ -441,7 +441,7 @@
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpq0Dp" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq0Dq" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:4l47ydyiFrv" resolve="_010_verification_harness" />
+              <ref role="2NCMaa" to="dx12:4l47ydyiFrv" />
             </node>
           </node>
         </node>
@@ -461,7 +461,7 @@
   <node concept="1_1swa" id="7VkE0Bpq0PW">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
-    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <ref role="G9hjw" node="5HlC91LJJQk" />
     <node concept="1mvXsy" id="7VkE0Bpq0Rk" role="1_0VJ0">
       <property role="TrG5h" value="HarnessDeclarations" />
       <property role="1_0VJr" value="Describing the Environment Variables" />
@@ -534,7 +534,7 @@
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpq0RL" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq0RM" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:5HlC91LF81N" resolve="_020_global_declarations" />
+              <ref role="2NCMaa" to="dx12:5HlC91LF81N" />
             </node>
           </node>
         </node>
@@ -580,7 +580,7 @@
           <property role="3z_lpV" value="Example for a typical harness module" />
           <node concept="2NCZwO" id="7VkE0Bpwu1A" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpwu89" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" />
             </node>
           </node>
         </node>
@@ -603,7 +603,7 @@
   <node concept="1_1swa" id="7VkE0Bpq5kU">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
-    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <ref role="G9hjw" node="5HlC91LJJQk" />
     <node concept="1mvXsy" id="7VkE0Bpq5lu" role="1_0VJ0">
       <property role="TrG5h" value="HarnessLogic" />
       <property role="1_0VJr" value="Describing the Harness Logic" />
@@ -794,7 +794,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="7VkE0Bpq5m4" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5m5" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:5HlC91LFkDJ" resolve="_040_harness_logic" />
+              <ref role="2NCMaa" to="dx12:5HlC91LFkDJ" />
             </node>
           </node>
         </node>
@@ -910,7 +910,7 @@
           <property role="3z_lpV" value="Example of different nondeterministic assignments." />
           <node concept="2NCZwO" id="7VkE0Bpq5mR" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5mS" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg0TIR4" resolve="_042_harness_logic_nondet_assign" />
+              <ref role="2NCMaa" to="dx12:3KP_mg0TIR4" />
             </node>
           </node>
         </node>
@@ -1009,7 +1009,7 @@
           <property role="3z_lpV" value="Example of different nondeterministic assignments." />
           <node concept="2NCZwO" id="7VkE0Bpq5ny" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5nz" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg11OAP" resolve="_043_harness_logic_random_assign" />
+              <ref role="2NCMaa" to="dx12:3KP_mg11OAP" />
             </node>
           </node>
         </node>
@@ -1095,7 +1095,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="7VkE0Bpq5o5" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpq5o6" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:3KP_mg11UL4" resolve="_044_harness_logic_nondet_choice" />
+              <ref role="2NCMaa" to="dx12:3KP_mg11UL4" />
             </node>
           </node>
         </node>
@@ -1122,7 +1122,7 @@
               <property role="19SUeA" value=" construct allows the verification of systems with internal state. Please be aware that in case of multi-step verification you need to track the internal state of the system under verification (Section " />
             </node>
             <node concept="1_0GAv" id="7VkE0BpwtMP" role="19SJt6">
-              <ref role="1_0GAl" node="7VkE0Bpwu1a" resolve="TrackingState" />
+              <ref role="1_0GAl" node="7VkE0Bpwu1a" />
             </node>
             <node concept="19SUe$" id="7VkE0BpwtMQ" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1137,7 +1137,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="7VkE0BpwshT" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0Bpwsiz" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" resolve="_045_harness_logic_multistep" />
+              <ref role="2NCMaa" to="dx12:7VkE0Bpu0$J" />
             </node>
           </node>
         </node>
@@ -1173,7 +1173,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="7VkE0BpwS9a" role="3z_lpI">
             <node concept="2NCMab" id="7VkE0BpwS9E" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:7VkE0BpwPxp" resolve="_046_harness_witness_logger" />
+              <ref role="2NCMaa" to="dx12:7VkE0BpwPxp" />
             </node>
           </node>
         </node>
@@ -1209,7 +1209,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="ZBFZM$Chml" role="3z_lpI">
             <node concept="2NCMab" id="ZBFZM$ChWx" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:ZBFZM$ChpG" resolve="_047_harness_message_logger" />
+              <ref role="2NCMaa" to="dx12:ZBFZM$ChpG" />
             </node>
           </node>
         </node>
@@ -1245,7 +1245,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="27Rmdm_vjja" role="3z_lpI">
             <node concept="2NCMab" id="27Rmdm_vpc0" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:27Rmdm_vjnn" resolve="_048_harness_foreach" />
+              <ref role="2NCMaa" to="dx12:27Rmdm_vjnn" />
             </node>
           </node>
         </node>
@@ -1278,7 +1278,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="63DPgoN62Vd" role="3z_lpI">
             <node concept="2NCMab" id="63DPgoN62Vo" role="2NCMaf">
-              <ref role="2NCMaa" to="dx12:63DPgoN4zwn" resolve="_049_harness_assume" />
+              <ref role="2NCMaa" to="dx12:63DPgoN4zwn" />
             </node>
           </node>
         </node>
@@ -1292,13 +1292,13 @@
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
     </node>
     <node concept="1_0j5j" id="7VkE0BpwynM" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
+      <ref role="1_0j5g" node="7VkE0Bpq0PW" />
     </node>
   </node>
   <node concept="1_1swa" id="7VkE0Bpq5Fn">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_010_MDCC_Ch1_Intro" />
-    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
+    <ref role="G9hjw" node="5HlC91LJJQk" />
     <node concept="1mvXsy" id="7VkE0Bpq5Fo" role="1_0VJ0">
       <property role="TrG5h" value="Introduction" />
       <property role="1_0VJr" value="Introduction" />

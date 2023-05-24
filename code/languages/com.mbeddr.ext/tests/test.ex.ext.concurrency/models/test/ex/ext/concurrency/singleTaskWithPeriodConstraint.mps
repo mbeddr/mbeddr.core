@@ -233,7 +233,7 @@
       <property role="TrG5h" value="cyclicSchedule" />
       <node concept="1NgRL0" id="6fK2cW$Yt6u" role="6qQK8">
         <property role="3_dPry" value="1" />
-        <ref role="6qQL_" node="6fK2cW$Yt67" resolve="cyclic" />
+        <ref role="6qQL_" node="6fK2cW$Yt67" />
         <node concept="6VUUj" id="6fK2cW$Yt6v" role="6EqoZ">
           <node concept="3TlMh9" id="6fK2cW$Yt6w" role="6VY68">
             <property role="2hmy$m" value="50" />
@@ -241,7 +241,7 @@
         </node>
       </node>
       <node concept="28Ko4b" id="6fK2cW$Yxqb" role="6qQK8">
-        <ref role="6qQL_" node="6fK2cW$Yt67" resolve="cyclic" />
+        <ref role="6qQL_" node="6fK2cW$Yt67" />
         <node concept="6VUUj" id="6fK2cW$Yxqc" role="28Ko48">
           <node concept="3TlMh9" id="6fK2cW$Yxqp" role="6VY68">
             <property role="2hmy$m" value="90" />
@@ -261,10 +261,10 @@
       <property role="TrG5h" value="blockableSchedule" />
       <node concept="3_amfM" id="6fK2cW_efpv" role="6qQK8">
         <property role="3_dPry" value="1" />
-        <ref role="6qQL_" node="6fK2cW_eeP0" resolve="blockable" />
+        <ref role="6qQL_" node="6fK2cW_eeP0" />
       </node>
       <node concept="28Ko4b" id="6fK2cW_efpO" role="6qQK8">
-        <ref role="6qQL_" node="6fK2cW_eeP0" resolve="blockable" />
+        <ref role="6qQL_" node="6fK2cW_eeP0" />
         <node concept="6VUUj" id="6fK2cW_efpP" role="28Ko48">
           <node concept="3TlMh9" id="6fK2cW_efq0" role="6VY68">
             <property role="2hmy$m" value="90" />
@@ -290,7 +290,7 @@
       <node concept="3XIRFW" id="6fK2cW$Yt6B" role="c0Qz3">
         <node concept="6qOI8" id="6fK2cW$Yt6C" role="3XIRFZ">
           <property role="1Onm7i" value="true" />
-          <ref role="6qOXx" node="6fK2cW$Yt6t" resolve="cyclicSchedule" />
+          <ref role="6qOXx" node="6fK2cW$Yt6t" />
         </node>
       </node>
     </node>
@@ -307,7 +307,7 @@
       <node concept="3XIRFW" id="6fK2cW_efAE" role="c0Qz3">
         <node concept="6qOI8" id="6fK2cW_efAF" role="3XIRFZ">
           <property role="1Onm7i" value="true" />
-          <ref role="6qOXx" node="6fK2cW_ef6U" resolve="blockableSchedule" />
+          <ref role="6qOXx" node="6fK2cW_ef6U" />
         </node>
       </node>
     </node>
@@ -319,10 +319,10 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAJgw" role="lIfQt">
-        <ref role="3cM6IK" node="6fK2cW$Yt6_" resolve="testCyclic" />
+        <ref role="3cM6IK" node="6fK2cW$Yt6_" />
       </node>
       <node concept="3cM6IN" id="4Ru$s7zAJgx" role="lIfQt">
-        <ref role="3cM6IK" node="6fK2cW_efAC" resolve="testBlockable" />
+        <ref role="3cM6IK" node="6fK2cW_efAC" />
       </node>
     </node>
   </node>
@@ -341,7 +341,7 @@
     <node concept="2eOfOl" id="6fK2cW$Yt6U" role="2ePNbc">
       <property role="TrG5h" value="SingleTaskWithWCET" />
       <node concept="2v9HqM" id="6fK2cW$Yxq0" role="2eOfOg">
-        <ref role="2v9HqP" node="6fK2cW$Yt55" resolve="SingleTaskWithPeriodConstraint" />
+        <ref role="2v9HqP" node="6fK2cW$Yt55" />
       </node>
       <node concept="1l1yNw" id="4JZ_DSvTApF" role="1kZvWc">
         <property role="TrG5h" value="Linux" />
@@ -356,7 +356,7 @@
         <property role="17fuiZ" value="true" />
       </node>
       <node concept="1OId_O" id="6fK2cW_8xT2" role="1OIqLV">
-        <ref role="1OIdAa" node="6fK2cW$Yt6t" resolve="cyclicSchedule" />
+        <ref role="1OIdAa" node="6fK2cW$Yt6t" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJCK" role="2Q9xDr" />

@@ -119,7 +119,7 @@
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
             <node concept="2Eb5v8" id="2ZsiEc0IF" role="2umbIo">
-              <ref role="2Eb5vb" node="2ZsiEc0IC" resolve="BLA" />
+              <ref role="2Eb5vb" node="2ZsiEc0IC" />
             </node>
           </node>
         </node>
@@ -136,14 +136,14 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkgL" role="lIfQt">
-        <ref role="3cM6IK" node="2ZsiEc0HK" resolve="testCase1" />
+        <ref role="3cM6IK" node="2ZsiEc0HK" />
       </node>
     </node>
   </node>
   <node concept="2v9HqL" id="2ZsiEc0It">
     <property role="TrG5h" value="dummy" />
     <node concept="2xfidK" id="1WKZBvBXE1g" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
     </node>
     <node concept="2Q9Fgs" id="2ZsiEc0Iv" role="2Q9xDr">
       <node concept="2Q9FjX" id="2ZsiEc0Iw" role="2Q9FjI" />
@@ -151,7 +151,7 @@
     <node concept="2eOfOl" id="2ZsiEc0Ix" role="2ePNbc">
       <property role="TrG5h" value="OpaqueTest" />
       <node concept="2v9HqM" id="2ZsiEc0Iy" role="2eOfOg">
-        <ref role="2v9HqP" node="2ZsiEc0Hz" resolve="OpaqueTest" />
+        <ref role="2v9HqP" node="2ZsiEc0Hz" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgb" role="1kZvWc">
         <property role="TrG5h" value="any" />

@@ -110,17 +110,17 @@
     <property role="WqcPg" value="My strange export config" />
     <node concept="2SbEIf" id="4eRbT2iEycg" role="30Gjbg">
       <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
-      <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
+      <ref role="2SbEIe" node="2khznRHyx6e" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
-      <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_including_other_docs" />
+      <ref role="1_0j5g" node="2khznRHyx5W" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
   </node>
   <node concept="1_1swa" id="2khznRHyx5W">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="main_document_including_other_docs" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1_0VNX" id="2khznRHyx5X" role="1_0VJ0">
       <property role="TrG5h" value="firstsection" />
       <property role="1_0VJr" value="This the first section" />
@@ -130,7 +130,7 @@
             <property role="19SUeA" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, purus non commodo efficitur, quam odio fermentum mi, ut tincidunt dolor neque non lacus. Vestibulum sit amet aliquam leo, mollis iaculis velit. Donec rhoncus, diam sed rutrum porttitor, mauris risus faucibus dui, at mattis nisi eros in ligula. Nunc mauris quam, aliquam quis mauris iaculis, luctus viverra leo. Sed pharetra sodales diam. Duis luctus velit in justo volutpat sagittis. Suspendisse et eleifend dolor.&#10;&#10;" />
           </node>
           <node concept="1_0GAv" id="2khznRHyCug" role="19SJt6">
-            <ref role="1_0GAl" node="2khznRHyCtE" resolve="second_section_from_first_document" />
+            <ref role="1_0GAl" node="2khznRHyCtE" />
           </node>
           <node concept="19SUe$" id="2khznRHyCuh" role="19SJt6">
             <property role="19SUeA" value="&#10;" />
@@ -151,26 +151,26 @@
     <node concept="$CzcT" id="5FHtHFpWRqT" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="5FHtHFpWRrp" role="$CzcU">
-        <ref role="1_0j5g" node="7VyEbceXaad" resolve="document_including_other" />
+        <ref role="1_0j5g" node="7VyEbceXaad" />
       </node>
     </node>
     <node concept="$CzcT" id="5FHtHFpWRrD" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="5FHtHFpWRrU" role="$CzcU">
-        <ref role="1_0j5g" node="7VyEbceXac_" resolve="including_document_that_includes" />
+        <ref role="1_0j5g" node="7VyEbceXac_" />
       </node>
     </node>
     <node concept="1_0j5j" id="5FHtHFpWRrd" role="1DXQ57">
-      <ref role="1_0j5g" node="7VyEbceXac_" resolve="including_document_that_includes" />
+      <ref role="1_0j5g" node="7VyEbceXac_" />
     </node>
     <node concept="1_0j5j" id="5FHtHFpWRrl" role="1DXQ57">
-      <ref role="1_0j5g" node="7VyEbceXaad" resolve="document_including_other" />
+      <ref role="1_0j5g" node="7VyEbceXaad" />
     </node>
   </node>
   <node concept="1_1swa" id="7VyEbceXaad">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="document_including_other" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1_0VNX" id="7VyEbceXaba" role="1_0VJ0">
       <property role="TrG5h" value="document_including_other_section" />
       <property role="1_0VJr" value="I do include" />
@@ -180,7 +180,7 @@
             <property role="19SUeA" value="I do be including stuff " />
           </node>
           <node concept="1_0GAv" id="7VyEbceXabo" role="19SJt6">
-            <ref role="1_0GAl" node="7VyEbceXaaG" resolve="leaf_section" />
+            <ref role="1_0GAl" node="7VyEbceXaaG" />
           </node>
           <node concept="19SUe$" id="7VyEbceXabp" role="19SJt6" />
         </node>
@@ -188,17 +188,17 @@
     </node>
     <node concept="$CzcT" id="7VyEbceXaaV" role="1_0VJ0">
       <node concept="1_0j5j" id="7VyEbceXab1" role="$CzcU">
-        <ref role="1_0j5g" node="7VyEbceXaau" resolve="leaf_document" />
+        <ref role="1_0j5g" node="7VyEbceXaau" />
       </node>
     </node>
     <node concept="1_0j5j" id="7VyEbceXaaZ" role="1DXQ57">
-      <ref role="1_0j5g" node="7VyEbceXaau" resolve="leaf_document" />
+      <ref role="1_0j5g" node="7VyEbceXaau" />
     </node>
   </node>
   <node concept="1_1swa" id="7VyEbceXaau">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="leaf_document" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1_0VNX" id="7VyEbceXaaG" role="1_0VJ0">
       <property role="TrG5h" value="leaf_section" />
       <property role="1_0VJr" value="Leaf" />
@@ -214,9 +214,9 @@
   <node concept="1_1swa" id="7VyEbceXabH">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="another_document_including_stuff" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1_0j5j" id="7VyEbceXabI" role="1DXQ57">
-      <ref role="1_0j5g" node="7VyEbceXaau" resolve="leaf_document" />
+      <ref role="1_0j5g" node="7VyEbceXaau" />
     </node>
     <node concept="1_0VNX" id="7VyEbceXabV" role="1_0VJ0">
       <property role="TrG5h" value="another_document_including_stuff_section" />
@@ -234,16 +234,16 @@
     </node>
     <node concept="$CzcT" id="7VyEbceXabK" role="1_0VJ0">
       <node concept="1_0j5j" id="7VyEbceXabO" role="$CzcU">
-        <ref role="1_0j5g" node="7VyEbceXaau" resolve="leaf_document" />
+        <ref role="1_0j5g" node="7VyEbceXaau" />
       </node>
     </node>
   </node>
   <node concept="1_1swa" id="7VyEbceXac_">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="including_document_that_includes" />
-    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
+    <ref role="G9hjw" node="2khznRHyx6c" />
     <node concept="1_0j5j" id="7VyEbceXacA" role="1DXQ57">
-      <ref role="1_0j5g" node="7VyEbceXabH" resolve="another_document_including_stuff" />
+      <ref role="1_0j5g" node="7VyEbceXabH" />
     </node>
     <node concept="1_0VNX" id="7VyEbceXacN" role="1_0VJ0">
       <property role="TrG5h" value="including_document_that_includes_section" />
@@ -254,7 +254,7 @@
             <property role="19SUeA" value="include and includer and ref stuff from included include: " />
           </node>
           <node concept="1_0GAv" id="7VyEbceXad3" role="19SJt6">
-            <ref role="1_0GAl" node="7VyEbceXaaG" resolve="leaf_section" />
+            <ref role="1_0GAl" node="7VyEbceXaaG" />
           </node>
           <node concept="19SUe$" id="7VyEbceXad4" role="19SJt6" />
         </node>
@@ -262,7 +262,7 @@
     </node>
     <node concept="$CzcT" id="7VyEbceXacC" role="1_0VJ0">
       <node concept="1_0j5j" id="7VyEbceXacG" role="$CzcU">
-        <ref role="1_0j5g" node="7VyEbceXabH" resolve="another_document_including_stuff" />
+        <ref role="1_0j5g" node="7VyEbceXabH" />
       </node>
     </node>
   </node>

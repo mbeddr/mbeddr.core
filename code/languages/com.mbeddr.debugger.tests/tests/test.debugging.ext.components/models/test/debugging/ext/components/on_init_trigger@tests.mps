@@ -42,7 +42,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -208,7 +208,7 @@
     </node>
     <node concept="3sgmnF" id="7HfWMO9hMMR" role="1zJi$$" />
     <node concept="3qy1PH" id="7HfWMO9hMMA" role="3qy1PE">
-      <ref role="30ajXG" to="4jlz:3yeYUb92Gng" resolve="OnInitTriggerTest" />
+      <ref role="30ajXG" to="4jlz:3yeYUb92Gng" />
     </node>
     <node concept="3scrou" id="7HfWMO9hMMB" role="1zJi$$">
       <property role="TrG5h" value="stepIntoInstanceConfigWith1stCompInstanceHasOnInitTrigger" />
@@ -216,7 +216,7 @@
       <node concept="3clFbS" id="7HfWMO9hMMD" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9hMME" role="3scror">
         <node concept="3sdZbA" id="7HfWMO9hMMG" role="3sdZbB">
-          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMs" resolve="instanceInit" />
+          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMs" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9hMMH" role="3savwP">
@@ -228,12 +228,12 @@
         <node concept="30a7bf" id="7HfWMO9hMMK" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFAm" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMt" resolve="1stComponentInstance" />
+            <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMt" />
           </node>
         </node>
         <node concept="1l46Ie" id="7HfWMO9hMNq" role="3F5Y$9">
           <node concept="1vv375" id="7HfWMO9hMNr" role="1vv36M">
-            <ref role="1vv99g" node="7HfWMO9hMMX" resolve="globals" />
+            <ref role="1vv99g" node="7HfWMO9hMMX" />
           </node>
         </node>
       </node>
@@ -245,7 +245,7 @@
       <node concept="3clFbS" id="7HfWMO9hMNw" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9hMNx" role="3scror">
         <node concept="3sdZbA" id="2IP1L8N3vWm" role="3sdZbB">
-          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMu" resolve="2ndComponentInstance" />
+          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMu" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9hMNz" role="3savwP">
@@ -258,7 +258,7 @@
           <node concept="30a7bf" id="ctKDnnFgkQ" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbhAFAi" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="4jlz:hDImLjSU98" resolve="onClientConstructor" />
+              <ref role="3cQ7K8" to="4jlz:hDImLjSU98" />
             </node>
           </node>
           <node concept="16XR13" id="ctKDnnFgkW" role="16XPZB">
@@ -266,7 +266,7 @@
             <node concept="30a7bf" id="7HfWMO9hMNA" role="16XPZy">
               <node concept="3cQ7K9" id="3uHGTbhAFAe" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMz" resolve="clientConstructor" />
+                <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMz" />
               </node>
             </node>
           </node>
@@ -283,11 +283,11 @@
             </node>
           </node>
           <node concept="1vv375" id="7HfWMO9hMNE" role="1vv36M">
-            <ref role="1vv99g" node="7HfWMO9hMMX" resolve="globals" />
+            <ref role="1vv99g" node="7HfWMO9hMMX" />
           </node>
         </node>
         <node concept="1vtf2i" id="7HfWMO9hMNP" role="3F5Y$9">
-          <ref role="1vtf2j" node="7HfWMO9hMNS" resolve="inClientsOnInitTrigger" />
+          <ref role="1vtf2j" node="7HfWMO9hMNS" />
         </node>
       </node>
     </node>
@@ -298,7 +298,7 @@
       <node concept="3clFbS" id="7HfWMO9hMNZ" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9hMO0" role="3scror">
         <node concept="3sdZbA" id="7HfWMO9hMO2" role="3sdZbB">
-          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMz" resolve="clientConstructor" />
+          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMz" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9hMO3" role="3savwP">
@@ -310,16 +310,16 @@
         <node concept="30a7bf" id="7HfWMO9hMO6" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFAk" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMu" resolve="2ndComponentInstance" />
+            <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMu" />
           </node>
         </node>
         <node concept="1l46Ie" id="7HfWMO9hMO8" role="3F5Y$9">
           <node concept="1vv375" id="7HfWMO9hMO9" role="1vv36M">
-            <ref role="1vv99g" node="7HfWMO9hMMX" resolve="globals" />
+            <ref role="1vv99g" node="7HfWMO9hMMX" />
           </node>
         </node>
         <node concept="1vtf2i" id="7HfWMO9hMOv" role="3F5Y$9">
-          <ref role="1vtf2j" node="7HfWMO9hMMS" resolve="inInstanceConfig" />
+          <ref role="1vtf2j" node="7HfWMO9hMMS" />
         </node>
       </node>
     </node>
@@ -331,7 +331,7 @@
       <node concept="3clFbS" id="vlkQkS3g4b" role="3clF47" />
       <node concept="3sdZbQ" id="vlkQkS3g4c" role="3scror">
         <node concept="3sdZbA" id="vlkQkS3g4d" role="3sdZbB">
-          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMu" resolve="2ndComponentInstance" />
+          <ref role="3sa5fj" to="4jlz:7HfWMO9hMMu" />
         </node>
       </node>
       <node concept="3savIG" id="vlkQkS3g4e" role="3savwP">
@@ -352,16 +352,16 @@
         <node concept="30a7bf" id="vlkQkS3ghK" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFAg" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMx" resolve="4thComponentInstance" />
+            <ref role="3cQ7K8" to="4jlz:7HfWMO9hMMx" />
           </node>
         </node>
         <node concept="1l46Ie" id="vlkQkS3g4i" role="3F5Y$9">
           <node concept="1vv375" id="vlkQkS3g4j" role="1vv36M">
-            <ref role="1vv99g" node="7HfWMO9hMMX" resolve="globals" />
+            <ref role="1vv99g" node="7HfWMO9hMMX" />
           </node>
         </node>
         <node concept="1vtf2i" id="vlkQkS3g4k" role="3F5Y$9">
-          <ref role="1vtf2j" node="7HfWMO9hMMS" resolve="inInstanceConfig" />
+          <ref role="1vtf2j" node="7HfWMO9hMMS" />
         </node>
       </node>
     </node>

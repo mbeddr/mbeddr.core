@@ -49,7 +49,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -458,7 +458,7 @@
     </node>
     <node concept="3sgmnF" id="6_QWgLdgE92" role="1zJi$$" />
     <node concept="3qy1PH" id="6_QWgLdgE7v" role="3qy1PE">
-      <ref role="30ajXG" to="a3uz:3PT6Z48KIb1" resolve="InheritanceTest" />
+      <ref role="30ajXG" to="a3uz:3PT6Z48KIb1" />
     </node>
     <node concept="3scrou" id="6_QWgLdgE7w" role="1zJi$$">
       <property role="TrG5h" value="inheritedFieldsInInstanceConfiguration" />
@@ -466,19 +466,19 @@
       <node concept="3clFbS" id="6_QWgLdgE7y" role="3clF47" />
       <node concept="3sdZbQ" id="6_QWgLdgE8W" role="3scror">
         <node concept="3sdZbA" id="1ntN9WFZKbc" role="3sdZbB">
-          <ref role="3sa5fj" to="a3uz:3cUcim$fiK4" resolve="beforeComponentInit" />
+          <ref role="3sa5fj" to="a3uz:3cUcim$fiK4" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6_QWgLdgE8Z" role="3F5AM1">
         <node concept="1l46Ie" id="6_QWgLdgE90" role="3F5Y$9">
           <node concept="1vv375" id="6_QWgLdittl" role="1vv36M">
-            <ref role="1vv99g" node="6_QWgLdittk" resolve="instancesAbstract" />
+            <ref role="1vv99g" node="6_QWgLdittk" />
           </node>
           <node concept="1vv375" id="6_QWgLditto" role="1vv36M">
-            <ref role="1vv99g" node="6_QWgLditti" resolve="instancesInheritance" />
+            <ref role="1vv99g" node="6_QWgLditti" />
           </node>
           <node concept="1vv375" id="3lUAsMPdflW" role="1vv36M">
-            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
+            <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
           </node>
         </node>
       </node>
@@ -490,7 +490,7 @@
       <node concept="3clFbS" id="6_QWgLdhOLc" role="3clF47" />
       <node concept="3sdZbQ" id="6_QWgLdhOLd" role="3scror">
         <node concept="3sdZbA" id="6_QWgLdhOLk" role="3sdZbB">
-          <ref role="3sa5fj" to="a3uz:6_QWgLdhOLj" resolve="insideComponentWithInheritedField" />
+          <ref role="3sa5fj" to="a3uz:6_QWgLdhOLj" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6_QWgLdhOLf" role="3F5AM1">
@@ -556,7 +556,7 @@
             </node>
           </node>
           <node concept="1vv375" id="6_QWgLdittp" role="1vv36M">
-            <ref role="1vv99g" node="6_QWgLditti" resolve="instancesInheritance" />
+            <ref role="1vv99g" node="6_QWgLditti" />
           </node>
         </node>
       </node>
@@ -568,7 +568,7 @@
       <node concept="3clFbS" id="6_QWgLdiBRQ" role="3clF47" />
       <node concept="3sdZbQ" id="6_QWgLdiBRR" role="3scror">
         <node concept="3sdZbA" id="6_QWgLdiBS4" role="3sdZbB">
-          <ref role="3sa5fj" to="a3uz:6_QWgLdiBRK" resolve="callingNotOverwrittenRunnable" />
+          <ref role="3sa5fj" to="a3uz:6_QWgLdiBRK" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6_QWgLdiBRT" role="3F5AM1">
@@ -586,7 +586,7 @@
         <node concept="30a7bf" id="6_QWgLdiBS8" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEWf" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="a3uz:6_QWgLdiBRJ" resolve="insideInheritedRunnable" />
+            <ref role="3cQ7K8" to="a3uz:6_QWgLdiBRJ" />
           </node>
         </node>
         <node concept="1l46Ie" id="6_QWgLdiBRU" role="3F5Y$9">
@@ -641,7 +641,7 @@
             </node>
           </node>
           <node concept="1vv375" id="6_QWgLdiBS3" role="1vv36M">
-            <ref role="1vv99g" node="6_QWgLditti" resolve="instancesInheritance" />
+            <ref role="1vv99g" node="6_QWgLditti" />
           </node>
         </node>
       </node>
@@ -658,7 +658,7 @@
       <node concept="3clFbS" id="6_QWgLdiBSh" role="3clF47" />
       <node concept="3sdZbQ" id="6_QWgLdiBSi" role="3scror">
         <node concept="3sdZbA" id="6_QWgLdiBSz" role="3sdZbB">
-          <ref role="3sa5fj" to="a3uz:6_QWgLdiBRL" resolve="callingOverwrittenRunnable" />
+          <ref role="3sa5fj" to="a3uz:6_QWgLdiBRL" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6_QWgLdiBSk" role="3F5AM1">
@@ -676,7 +676,7 @@
         <node concept="30a7bf" id="6_QWgLdiBSp" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEWb" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="a3uz:6_QWgLdhOLj" resolve="insideComponentWithInheritedField" />
+            <ref role="3cQ7K8" to="a3uz:6_QWgLdhOLj" />
           </node>
         </node>
         <node concept="1l46Ie" id="6_QWgLdiBSr" role="3F5Y$9">
@@ -741,7 +741,7 @@
             </node>
           </node>
           <node concept="1vv375" id="6_QWgLdiBSw" role="1vv36M">
-            <ref role="1vv99g" node="6_QWgLditti" resolve="instancesInheritance" />
+            <ref role="1vv99g" node="6_QWgLditti" />
           </node>
         </node>
       </node>
@@ -758,7 +758,7 @@
       <node concept="3clFbS" id="6_QWgLdiIlu" role="3clF47" />
       <node concept="3sdZbQ" id="6_QWgLdiIlv" role="3scror">
         <node concept="3sdZbA" id="6_QWgLdiIlw" role="3sdZbB">
-          <ref role="3sa5fj" to="a3uz:6_QWgLdiIln" resolve="callingRunnableOfExtendedAbstractComponent" />
+          <ref role="3sa5fj" to="a3uz:6_QWgLdiIln" />
         </node>
       </node>
       <node concept="3savIG" id="6_QWgLdiIlx" role="3savwP">
@@ -770,12 +770,12 @@
         <node concept="30a7bf" id="6_QWgLdiIl$" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEWh" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="a3uz:6_QWgLdiIlp" resolve="insideRunnableOfAbstractComponent" />
+            <ref role="3cQ7K8" to="a3uz:6_QWgLdiIlp" />
           </node>
         </node>
         <node concept="1l46Ie" id="6_QWgLdiIlA" role="3F5Y$9">
           <node concept="1vv375" id="6_QWgLdiNAE" role="1vv36M">
-            <ref role="1vv99g" node="6_QWgLdittk" resolve="instancesAbstract" />
+            <ref role="1vv99g" node="6_QWgLdittk" />
           </node>
         </node>
         <node concept="1l6n2J" id="6_QWgLdiIlK" role="3F5Y$9">
@@ -798,7 +798,7 @@
       <node concept="3clFbS" id="7HfWMO9lQQE" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9lQQF" role="3scror">
         <node concept="3sdZbA" id="7HfWMO9lQQG" role="3sdZbB">
-          <ref role="3sa5fj" to="a3uz:7HfWMO9lQQ_" resolve="callingComponentWithOnlyRequPort" />
+          <ref role="3sa5fj" to="a3uz:7HfWMO9lQQ_" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9lQQH" role="3savwP">
@@ -810,14 +810,14 @@
         <node concept="30a7bf" id="7HfWMO9lQQK" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEWd" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="a3uz:6_QWgLdiBRL" resolve="callingOverwrittenRunnable" />
+            <ref role="3cQ7K8" to="a3uz:6_QWgLdiBRL" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3sgmnF" id="6_QWgLdhOL9" role="1zJi$$" />
     <node concept="1rNadw" id="3lUAsMPdflU" role="1zJi$_">
-      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" resolve="Main" />
+      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRN7" role="29bA6Q" />
   </node>

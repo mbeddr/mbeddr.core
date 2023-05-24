@@ -290,13 +290,13 @@
       <node concept="3i3YCL" id="6JVEnxIjQka" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="3_MZZHrtJCB" resolve="wiring" />
+        <ref role="35zhcq" node="3_MZZHrtJCB" />
       </node>
     </node>
     <node concept="2eOfOl" id="6JVEnxIhjR1" role="2ePNbc">
       <property role="TrG5h" value="Main" />
       <node concept="2v9HqM" id="73SKUHF8Pyb" role="2eOfOg">
-        <ref role="2v9HqP" node="73SKUHF8COj" resolve="ComponentsTracingTest" />
+        <ref role="2v9HqP" node="73SKUHF8COj" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTAq6" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -321,7 +321,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="6JVEnxIhjQ5" role="3XIRFX">
         <node concept="3t9XKO" id="3_MZZHrtJCD" role="3XIRFZ">
-          <ref role="3t9XKR" node="3_MZZHrtJCB" resolve="wiring" />
+          <ref role="3t9XKR" node="3_MZZHrtJCB" />
         </node>
         <node concept="2BFjQ_" id="6JVEnxIhjQ8" role="3XIRFZ">
           <node concept="3TlMh9" id="6JVEnxIhjQ9" role="2BFjQA">
@@ -359,7 +359,7 @@
       <property role="TrG5h" value="wiring" />
       <node concept="2EWCuV" id="3_MZZHrurp2" role="5JtDH">
         <property role="TrG5h" value="logger" />
-        <ref role="2EWCuU" node="6JVEnxIj0gY" resolve="LoggerImpl" />
+        <ref role="2EWCuU" node="6JVEnxIj0gY" />
         <node concept="1xGALR" id="73SKUHFbe_I" role="lGtFl">
           <node concept="1xFd8N" id="73SKUHFbeAM" role="1xGcb7">
             <property role="1xFd8M" value="ComponentsTracingTest_wiring_logger_p_logger__ops.log = &amp;ComponentsTracingTest_LoggerImpl_p_logger_log;" />
@@ -368,9 +368,9 @@
       </node>
       <node concept="2EWCuV" id="3_MZZHrtJU6" role="5JtDH">
         <property role="TrG5h" value="car" />
-        <ref role="2EWCuU" node="6JVEnxIhTO7" resolve="Car" />
+        <ref role="2EWCuU" node="6JVEnxIhTO7" />
         <node concept="3R_36c" id="3_MZZHrtJU7" role="3R_39I">
-          <ref role="3R_36f" node="6JVEnxIj2nI" resolve="carInit" />
+          <ref role="3R_36f" node="6JVEnxIj2nI" />
           <node concept="3TlMh9" id="3_MZZHrtJU8" role="3R_36e">
             <property role="2hmy$m" value="15" />
           </node>
@@ -378,12 +378,12 @@
       </node>
       <node concept="2EWCuP" id="3_MZZHrurp3" role="5JtDH">
         <node concept="2EWCuO" id="3_MZZHrurp4" role="2EWCuL">
-          <ref role="XcPQd" node="3_MZZHruroY" resolve="r_logger" />
-          <ref role="2EWCuR" node="3_MZZHrtJU6" resolve="car" />
+          <ref role="XcPQd" node="3_MZZHruroY" />
+          <ref role="2EWCuR" node="3_MZZHrtJU6" />
         </node>
         <node concept="2EWCuO" id="3_MZZHrurp5" role="2EWCuK">
-          <ref role="XcPQd" node="6JVEnxIj0gZ" resolve="p_logger" />
-          <ref role="2EWCuR" node="3_MZZHrurp2" resolve="logger" />
+          <ref role="XcPQd" node="6JVEnxIj0gZ" />
+          <ref role="2EWCuR" node="3_MZZHrurp2" />
         </node>
       </node>
       <node concept="37mRI7" id="57B2v3DA3Jc" role="lGtFl">
@@ -520,20 +520,20 @@
         <property role="TrG5h" value="LifterImpl" />
         <node concept="2EWHp_" id="6JVEnxIhUsH" role="2RW2fA">
           <property role="TrG5h" value="p_lifter" />
-          <ref role="2EX0h9" node="6JVEnxIhRPU" resolve="WindowLifter" />
+          <ref role="2EX0h9" node="6JVEnxIhRPU" />
         </node>
         <node concept="2EWHp$" id="6JVEnxIhUsO" role="2RW2fA">
           <property role="TrG5h" value="r_motor" />
-          <ref role="2EX0h9" node="6JVEnxIhRPX" resolve="WindowLifterMotor" />
+          <ref role="2EX0h9" node="6JVEnxIhRPX" />
         </node>
         <node concept="2EWDwb" id="6JVEnxIhUsI" role="2RW2fA">
           <property role="TrG5h" value="p_lifter_liftUp" />
           <node concept="3XIRFW" id="6JVEnxIhUsJ" role="2EWMhI">
             <node concept="1_9egQ" id="6JVEnxIhUsP" role="3XIRFZ">
               <node concept="30IBQI" id="6JVEnxIhUsT" role="1_9egR">
-                <ref role="2H6Oet" node="6JVEnxIhUsD" resolve="move" />
+                <ref role="2H6Oet" node="6JVEnxIhUsD" />
                 <node concept="2H6loZ" id="6JVEnxIhUsQ" role="1_9fRO">
-                  <ref role="2H6loY" node="6JVEnxIhUsO" resolve="r_motor" />
+                  <ref role="2H6loY" node="6JVEnxIhUsO" />
                 </node>
                 <node concept="3TlMh9" id="6JVEnxIhUsU" role="2H6KYo">
                   <property role="2hmy$m" value="10" />
@@ -548,8 +548,8 @@
             </node>
           </node>
           <node concept="2EWDw0" id="6JVEnxIhUsL" role="2EWDeT">
-            <ref role="1ZwxE2" node="6JVEnxIhUs_" resolve="liftUp" />
-            <ref role="1ZwSu5" node="6JVEnxIhUsH" resolve="p_lifter" />
+            <ref role="1ZwxE2" node="6JVEnxIhUs_" />
+            <ref role="1ZwSu5" node="6JVEnxIhUsH" />
           </node>
           <node concept="19Rifw" id="734bZETuh69" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -565,27 +565,27 @@
         <property role="TrG5h" value="MotorImpl" />
         <node concept="2EWHp_" id="6JVEnxIhUsV" role="2RW2fA">
           <property role="TrG5h" value="p_motor" />
-          <ref role="2EX0h9" node="6JVEnxIhRPX" resolve="WindowLifterMotor" />
+          <ref role="2EX0h9" node="6JVEnxIhRPX" />
         </node>
         <node concept="2EWHp$" id="6JVEnxIiSnY" role="2RW2fA">
           <property role="TrG5h" value="r_logger" />
-          <ref role="2EX0h9" node="6JVEnxIiSnS" resolve="Logger" />
+          <ref role="2EX0h9" node="6JVEnxIiSnS" />
         </node>
         <node concept="2EWDwb" id="6JVEnxIhUsW" role="2RW2fA">
           <property role="TrG5h" value="p_motor_move" />
           <node concept="3XIRFW" id="6JVEnxIhUsX" role="2EWMhI">
             <node concept="1_9egQ" id="6JVEnxIiSnZ" role="3XIRFZ">
               <node concept="30IBQI" id="6JVEnxIiSo3" role="1_9egR">
-                <ref role="2H6Oet" node="6JVEnxIiSnT" resolve="log" />
+                <ref role="2H6Oet" node="6JVEnxIiSnT" />
                 <node concept="2H6loZ" id="6JVEnxIiSo0" role="1_9fRO">
-                  <ref role="2H6loY" node="6JVEnxIiSnY" resolve="r_logger" />
+                  <ref role="2H6loY" node="6JVEnxIiSnY" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2EWDw0" id="6JVEnxIhUsZ" role="2EWDeT">
-            <ref role="1ZwSu5" node="6JVEnxIhUsV" resolve="p_motor" />
-            <ref role="1ZwxE2" node="6JVEnxIhUsD" resolve="move" />
+            <ref role="1ZwSu5" node="6JVEnxIhUsV" />
+            <ref role="1ZwxE2" node="6JVEnxIhUsD" />
           </node>
           <node concept="19Rifw" id="734bZETuh2C" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -613,7 +613,7 @@
         <property role="TrG5h" value="LoggerImpl" />
         <node concept="2EWHp_" id="6JVEnxIj0gZ" role="2RW2fA">
           <property role="TrG5h" value="p_logger" />
-          <ref role="2EX0h9" node="6JVEnxIiSnS" resolve="Logger" />
+          <ref role="2EX0h9" node="6JVEnxIiSnS" />
         </node>
         <node concept="3Khz0B" id="3TJMuIHVpzF" role="2RW2fA" />
         <node concept="2EWDwb" id="3TJMuIHVpzG" role="2RW2fA">
@@ -622,8 +622,8 @@
             <node concept="3XISUE" id="3TJMuIHVpzI" role="3XIRFZ" />
           </node>
           <node concept="2EWDw0" id="3TJMuIHVpzJ" role="2EWDeT">
-            <ref role="1ZwSu5" node="6JVEnxIj0gZ" resolve="p_logger" />
-            <ref role="1ZwxE2" node="6JVEnxIiSnT" resolve="log" />
+            <ref role="1ZwSu5" node="6JVEnxIj0gZ" />
+            <ref role="1ZwxE2" node="6JVEnxIiSnT" />
           </node>
           <node concept="19Rifw" id="3TJMuIHVpzK" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -639,11 +639,11 @@
       <property role="TrG5h" value="Door" />
       <node concept="2EWHp$" id="6JVEnxIiSnW" role="2RW2fA">
         <property role="TrG5h" value="r_logger" />
-        <ref role="2EX0h9" node="6JVEnxIiSnS" resolve="Logger" />
+        <ref role="2EX0h9" node="6JVEnxIiSnS" />
       </node>
       <node concept="2EWHp_" id="6JVEnxIiitF" role="2RW2fA">
         <property role="TrG5h" value="p_lifter" />
-        <ref role="2EX0h9" node="6JVEnxIhRPU" resolve="WindowLifter" />
+        <ref role="2EX0h9" node="6JVEnxIhRPU" />
       </node>
       <node concept="3Khz0B" id="6JVEnxIj0hy" role="2RW2fA" />
       <node concept="EbCE0" id="6JVEnxIj0h$" role="2RW2fA">
@@ -658,31 +658,31 @@
       <node concept="5JiAF" id="6JVEnxIhUme" role="2RW2fA">
         <node concept="2EWCuV" id="6JVEnxIhUst" role="5JtDH">
           <property role="TrG5h" value="lifter" />
-          <ref role="2EWCuU" node="6JVEnxIhTNS" resolve="LifterImpl" />
+          <ref role="2EWCuU" node="6JVEnxIhTNS" />
         </node>
         <node concept="2EWCuP" id="6JVEnxIhWu$" role="5JtDH">
           <node concept="2EWCuO" id="6JVEnxIhWu_" role="2EWCuL">
-            <ref role="2EWCuR" node="6JVEnxIhUst" resolve="lifter" />
-            <ref role="XcPQd" node="6JVEnxIhUsO" resolve="r_motor" />
+            <ref role="2EWCuR" node="6JVEnxIhUst" />
+            <ref role="XcPQd" node="6JVEnxIhUsO" />
           </node>
           <node concept="2EWCuO" id="6JVEnxIhWuA" role="2EWCuK">
-            <ref role="2EWCuR" node="6JVEnxIhUsv" resolve="motor" />
-            <ref role="XcPQd" node="6JVEnxIhUsV" resolve="p_motor" />
+            <ref role="2EWCuR" node="6JVEnxIhUsv" />
+            <ref role="XcPQd" node="6JVEnxIhUsV" />
           </node>
         </node>
         <node concept="2EWCuV" id="6JVEnxIhUsv" role="5JtDH">
           <property role="TrG5h" value="motor" />
-          <ref role="2EWCuU" node="6JVEnxIhTNV" resolve="MotorImpl" />
+          <ref role="2EWCuU" node="6JVEnxIhTNV" />
         </node>
         <node concept="5GgzA" id="6JVEnxIiSo8" role="5JtDH">
-          <ref role="5GgyZ" node="6JVEnxIiSnW" resolve="r_logger" />
-          <ref role="5GdT6" node="6JVEnxIiSnY" resolve="r_logger" />
-          <ref role="5GdT5" node="6JVEnxIhUsv" resolve="motor" />
+          <ref role="5GgyZ" node="6JVEnxIiSnW" />
+          <ref role="5GdT6" node="6JVEnxIiSnY" />
+          <ref role="5GdT5" node="6JVEnxIhUsv" />
         </node>
         <node concept="5GgzA" id="6JVEnxIiS1C" role="5JtDH">
-          <ref role="5GdT5" node="6JVEnxIhUst" resolve="lifter" />
-          <ref role="5GgyZ" node="6JVEnxIiitF" resolve="p_lifter" />
-          <ref role="5GdT6" node="6JVEnxIhUsH" resolve="p_lifter" />
+          <ref role="5GdT5" node="6JVEnxIhUst" />
+          <ref role="5GgyZ" node="6JVEnxIiitF" />
+          <ref role="5GdT6" node="6JVEnxIhUsH" />
         </node>
         <node concept="37mRI7" id="2eQzkDL_9BT" role="lGtFl">
           <node concept="37mRIm" id="2eQzkDL_9BU" role="37mRID">
@@ -883,7 +883,7 @@
       <property role="TrG5h" value="Car" />
       <node concept="2EWHp$" id="3_MZZHruroY" role="2RW2fA">
         <property role="TrG5h" value="r_logger" />
-        <ref role="2EX0h9" node="6JVEnxIiSnS" resolve="Logger" />
+        <ref role="2EX0h9" node="6JVEnxIiSnS" />
       </node>
       <node concept="3Khz0B" id="3_MZZHruroW" role="2RW2fA" />
       <node concept="EbCE0" id="6JVEnxIj2nI" role="2RW2fA">
@@ -908,9 +908,9 @@
         <node concept="3XIRFW" id="6JVEnxIj0hk" role="2EWMhI">
           <node concept="1_9egQ" id="3_MZZHrurEc" role="3XIRFZ">
             <node concept="30IBQI" id="3_MZZHrurEg" role="1_9egR">
-              <ref role="2H6Oet" node="6JVEnxIiSnT" resolve="log" />
+              <ref role="2H6Oet" node="6JVEnxIiSnT" />
               <node concept="2H6loZ" id="3_MZZHrurEd" role="1_9fRO">
-                <ref role="2H6loY" node="3_MZZHruroY" resolve="r_logger" />
+                <ref role="2H6loY" node="3_MZZHruroY" />
               </node>
             </node>
           </node>
@@ -929,7 +929,7 @@
                   <property role="2hmy$m" value="10" />
                 </node>
                 <node concept="EbZIE" id="223R3D2guqt" role="3TlMhJ">
-                  <ref role="EbZID" node="6JVEnxIj2nI" resolve="carInit" />
+                  <ref role="EbZID" node="6JVEnxIj2nI" />
                 </node>
               </node>
             </node>
@@ -945,7 +945,7 @@
                 <property role="2hmy$m" value="10" />
               </node>
               <node concept="3ZVu4v" id="6JVEnxIje7l" role="3TlMhI">
-                <ref role="3ZVs_2" node="6JVEnxIj0ho" resolve="init" />
+                <ref role="3ZVs_2" node="6JVEnxIj0ho" />
               </node>
             </node>
           </node>
@@ -969,64 +969,64 @@
         </node>
         <node concept="2EWCuV" id="6JVEnxIj0h7" role="5JtDH">
           <property role="TrG5h" value="logger" />
-          <ref role="2EWCuU" node="6JVEnxIj0gY" resolve="LoggerImpl" />
+          <ref role="2EWCuU" node="6JVEnxIj0gY" />
         </node>
         <node concept="JAGxh" id="6JVEnxIjny0" role="5JtDH" />
         <node concept="2EWCuV" id="6JVEnxIhUsx" role="5JtDH">
           <property role="TrG5h" value="frontLeft" />
-          <ref role="2EWCuU" node="6JVEnxIhRPP" resolve="Door" />
+          <ref role="2EWCuU" node="6JVEnxIhRPP" />
           <node concept="3R_36c" id="6JVEnxIj2nC" role="3R_39I">
-            <ref role="3R_36f" node="6JVEnxIj0h$" resolve="init" />
+            <ref role="3R_36f" node="6JVEnxIj0h$" />
             <node concept="EbZIE" id="6JVEnxIj7sw" role="3R_36e">
-              <ref role="EbZID" node="6JVEnxIj2nI" resolve="carInit" />
+              <ref role="EbZID" node="6JVEnxIj2nI" />
             </node>
           </node>
         </node>
         <node concept="5GgzA" id="3_MZZHrurEs" role="5JtDH">
-          <ref role="5GdT5" node="6JVEnxIhUsx" resolve="frontLeft" />
-          <ref role="5GgyZ" node="3_MZZHruroY" resolve="r_logger" />
-          <ref role="5GdT6" node="6JVEnxIiSnW" resolve="r_logger" />
+          <ref role="5GdT5" node="6JVEnxIhUsx" />
+          <ref role="5GgyZ" node="3_MZZHruroY" />
+          <ref role="5GdT6" node="6JVEnxIiSnW" />
         </node>
         <node concept="JAGxh" id="6JVEnxIjnxY" role="5JtDH" />
         <node concept="2EWCuV" id="6JVEnxIhUsz" role="5JtDH">
           <property role="TrG5h" value="frontRight" />
-          <ref role="2EWCuU" node="6JVEnxIhRPP" resolve="Door" />
+          <ref role="2EWCuU" node="6JVEnxIhRPP" />
           <node concept="3R_36c" id="6JVEnxIj9uY" role="3R_39I">
-            <ref role="3R_36f" node="6JVEnxIj0h$" resolve="init" />
+            <ref role="3R_36f" node="6JVEnxIj0h$" />
             <node concept="5HKdq" id="6JVEnxIjbX9" role="3R_36e">
-              <ref role="5HKd1" node="6JVEnxIjaCv" resolve="initParam" />
+              <ref role="5HKd1" node="6JVEnxIjaCv" />
             </node>
           </node>
         </node>
         <node concept="2EWCuP" id="6JVEnxIj0hb" role="5JtDH">
           <node concept="2EWCuO" id="6JVEnxIj0hc" role="2EWCuL">
-            <ref role="2EWCuR" node="6JVEnxIhUsz" resolve="frontRight" />
-            <ref role="XcPQd" node="6JVEnxIiSnW" resolve="r_logger" />
+            <ref role="2EWCuR" node="6JVEnxIhUsz" />
+            <ref role="XcPQd" node="6JVEnxIiSnW" />
           </node>
           <node concept="2EWCuO" id="6JVEnxIj0hd" role="2EWCuK">
-            <ref role="XcPQd" node="6JVEnxIj0gZ" resolve="p_logger" />
-            <ref role="2EWCuR" node="6JVEnxIj0h7" resolve="logger" />
+            <ref role="XcPQd" node="6JVEnxIj0gZ" />
+            <ref role="2EWCuR" node="6JVEnxIj0h7" />
           </node>
         </node>
         <node concept="JAGxh" id="6JVEnxIjnxW" role="5JtDH" />
         <node concept="2EWCuV" id="6JVEnxIjnxS" role="5JtDH">
           <property role="TrG5h" value="rearRight" />
-          <ref role="2EWCuU" node="6JVEnxIhRPP" resolve="Door" />
+          <ref role="2EWCuU" node="6JVEnxIhRPP" />
           <node concept="3R_36c" id="6JVEnxIjnxT" role="3R_39I">
-            <ref role="3R_36f" node="6JVEnxIj0h$" resolve="init" />
+            <ref role="3R_36f" node="6JVEnxIj0h$" />
             <node concept="1S7827" id="6JVEnxIjny8" role="3R_36e">
-              <ref role="1S7826" node="6JVEnxIj2nM" resolve="abc" />
+              <ref role="1S7826" node="6JVEnxIj2nM" />
             </node>
           </node>
         </node>
         <node concept="2EWCuP" id="6JVEnxIjnxP" role="5JtDH">
           <node concept="2EWCuO" id="6JVEnxIjnxQ" role="2EWCuL">
-            <ref role="2EWCuR" node="6JVEnxIjnxS" resolve="rearRight" />
-            <ref role="XcPQd" node="6JVEnxIiSnW" resolve="r_logger" />
+            <ref role="2EWCuR" node="6JVEnxIjnxS" />
+            <ref role="XcPQd" node="6JVEnxIiSnW" />
           </node>
           <node concept="2EWCuO" id="6JVEnxIjnxR" role="2EWCuK">
-            <ref role="2EWCuR" node="6JVEnxIj0h7" resolve="logger" />
-            <ref role="XcPQd" node="6JVEnxIj0gZ" resolve="p_logger" />
+            <ref role="2EWCuR" node="6JVEnxIj0h7" />
+            <ref role="XcPQd" node="6JVEnxIj0gZ" />
           </node>
         </node>
         <node concept="37mRI7" id="2eQzkDL_9Ce" role="lGtFl">

@@ -6569,7 +6569,8 @@
                               <ref role="3cqZAo" node="2cNe_D14Awh" resolve="factory" />
                             </node>
                             <node concept="liA8E" id="2cNe_D14Axz" role="2OqNvi">
-                              <ref role="37wK5l" to="fpme:~ProjectFactory.activate()" resolve="activate" />
+                              <ref role="37wK5l" to="fpme:~ProjectFactory.activate(boolean)" resolve="activate" />
+                              <node concept="3clFbT" id="5svQgzSHGjf" role="37wK5m" />
                             </node>
                           </node>
                         </node>

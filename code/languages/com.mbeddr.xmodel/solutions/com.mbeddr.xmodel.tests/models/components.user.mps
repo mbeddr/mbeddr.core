@@ -166,9 +166,9 @@
       <property role="TrG5h" value="myInstances" />
       <node concept="2EWCuV" id="ybcgwyvE9Z" role="5JtDH">
         <property role="TrG5h" value="myServerComponent" />
-        <ref role="2EWCuU" to="en1q:ybcgwyvDqu" resolve="myServerComponent" />
+        <ref role="2EWCuU" to="en1q:ybcgwyvDqu" />
         <node concept="3R_36c" id="ybcgwyvEa6" role="3R_39I">
-          <ref role="3R_36f" to="en1q:ybcgwyvDxi" resolve="defaultAnswert" />
+          <ref role="3R_36f" to="en1q:ybcgwyvDxi" />
           <node concept="3TlMh9" id="ybcgwyvEan" role="3R_36e">
             <property role="2hmy$m" value="12" />
           </node>
@@ -177,8 +177,8 @@
       <node concept="21gPQu" id="ybcgwyvEbB" role="5JtDH">
         <property role="TrG5h" value="server" />
         <node concept="219P8x" id="ybcgwyvEbC" role="21ad3a">
-          <ref role="219P8w" node="ybcgwyvE9Z" resolve="myServerComponent" />
-          <ref role="219P8J" to="en1q:ybcgwyvDqP" resolve="theServer" />
+          <ref role="219P8w" node="ybcgwyvE9Z" />
+          <ref role="219P8J" to="en1q:ybcgwyvDqP" />
         </node>
       </node>
     </node>
@@ -194,7 +194,7 @@
       </node>
       <node concept="3XIRFW" id="ybcgwyvE9f" role="c0Qz3">
         <node concept="3t9XKO" id="ybcgwyvEEF" role="3XIRFZ">
-          <ref role="3t9XKR" node="ybcgwyvE9S" resolve="myInstances" />
+          <ref role="3t9XKR" node="ybcgwyvE9S" />
         </node>
         <node concept="c0Tn9" id="ybcgwyvEc6" role="3XIRFZ">
           <node concept="3TlM44" id="ybcgwyvEed" role="c0Tn6">
@@ -202,24 +202,24 @@
               <property role="2hmy$m" value="12" />
             </node>
             <node concept="30IJZa" id="ybcgwyvEdh" role="3TlMhI">
-              <ref role="2H6Oet" to="en1q:ybcgwyrYXy" resolve="answertToLife" />
+              <ref role="2H6Oet" to="en1q:ybcgwyrYXy" />
               <node concept="2H6Wec" id="ybcgwyvEcy" role="1_9fRO">
-                <ref role="2H6Wef" node="ybcgwyvEbB" resolve="server" />
+                <ref role="2H6Wef" node="ybcgwyvEbB" />
               </node>
               <node concept="1AkAhK" id="ybcgwyvEdy" role="2H6KYo">
-                <ref role="1AkAhZ" to="en1q:ybcgwyrYYO" resolve="A" />
+                <ref role="1AkAhZ" to="en1q:ybcgwyrYYO" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="ybcgwyvEkw" role="3XIRFZ">
           <node concept="30IJZa" id="ybcgwyvEkN" role="1_9egR">
-            <ref role="2H6Oet" to="en1q:ybcgwyrZ06" resolve="store" />
+            <ref role="2H6Oet" to="en1q:ybcgwyrZ06" />
             <node concept="2H6Wec" id="ybcgwyvEku" role="1_9fRO">
-              <ref role="2H6Wef" node="ybcgwyvEbB" resolve="server" />
+              <ref role="2H6Wef" node="ybcgwyvEbB" />
             </node>
             <node concept="1AkAhK" id="ybcgwyvEl9" role="2H6KYo">
-              <ref role="1AkAhZ" to="en1q:ybcgwyrYZ2" resolve="B" />
+              <ref role="1AkAhZ" to="en1q:ybcgwyrYZ2" />
             </node>
             <node concept="3TlMh9" id="ybcgwyvElT" role="2H6KYo">
               <property role="2hmy$m" value="23" />
@@ -232,12 +232,12 @@
               <property role="2hmy$m" value="23" />
             </node>
             <node concept="30IJZa" id="ybcgwyvEqs" role="3TlMhI">
-              <ref role="2H6Oet" to="en1q:ybcgwyrZ2_" resolve="get" />
+              <ref role="2H6Oet" to="en1q:ybcgwyrZ2_" />
               <node concept="2H6Wec" id="ybcgwyvEoJ" role="1_9fRO">
-                <ref role="2H6Wef" node="ybcgwyvEbB" resolve="server" />
+                <ref role="2H6Wef" node="ybcgwyvEbB" />
               </node>
               <node concept="1AkAhK" id="ybcgwyvEqK" role="2H6KYo">
-                <ref role="1AkAhZ" to="en1q:ybcgwyrYZ2" resolve="B" />
+                <ref role="1AkAhZ" to="en1q:ybcgwyrYZ2" />
               </node>
             </node>
           </node>
@@ -251,11 +251,11 @@
       <property role="3HjyOP" value="true" />
       <property role="TrG5h" value="allTests" />
       <node concept="3cM6IN" id="ybcgwyvK9s" role="lIfQt">
-        <ref role="3cM6IK" node="ybcgwyvE9c" resolve="componentTest" />
+        <ref role="3cM6IK" node="ybcgwyvE9c" />
       </node>
     </node>
     <node concept="3GEVxB" id="ybcgwyvEa4" role="2OODSX">
-      <ref role="3GEb4d" to="en1q:ybcgwyrYWZ" resolve="componentsLib" />
+      <ref role="3GEb4d" to="en1q:ybcgwyrYWZ" />
     </node>
   </node>
   <node concept="2v9HqL" id="ybcgwyvEEZ">
@@ -273,7 +273,7 @@
       <node concept="3i3YCL" id="ybcgwyvEFi" role="3i30U9">
         <property role="35zhco" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="ybcgwyvE9S" resolve="myInstances" />
+        <ref role="35zhcq" node="ybcgwyvE9S" />
       </node>
     </node>
     <node concept="12mU2y" id="ybcgwyvFaX" role="2Q9xDr" />
@@ -283,10 +283,10 @@
     <node concept="2eOfOl" id="ybcgwyvJNf" role="2ePNbc">
       <property role="TrG5h" value="testRunner" />
       <node concept="2v9HqM" id="ybcgwyvJNi" role="2eOfOg">
-        <ref role="2v9HqP" node="ybcgwyvE9a" resolve="ComponentsUser" />
+        <ref role="2v9HqP" node="ybcgwyvE9a" />
       </node>
       <node concept="2v9HqM" id="ybcgwyvJNn" role="2eOfOg">
-        <ref role="2v9HqP" to="en1q:ybcgwyrYWZ" resolve="componentsLib" />
+        <ref role="2v9HqP" to="en1q:ybcgwyrYWZ" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxy42D" role="1kZvWc">
         <property role="TrG5h" value="any" />
