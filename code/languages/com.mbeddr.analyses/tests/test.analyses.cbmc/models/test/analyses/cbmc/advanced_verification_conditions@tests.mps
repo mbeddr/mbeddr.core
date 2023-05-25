@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -22,6 +22,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -131,6 +132,7 @@
   <node concept="1lH9Xt" id="6qmmy9803D5">
     <property role="TrG5h" value="AfterThen_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6qmmy9803D6" role="1SL9yI">
       <property role="TrG5h" value="testAfterThenNegative" />
       <node concept="3cqZAl" id="6qmmy9803D7" role="3clF45" />
@@ -339,6 +341,7 @@
   <node concept="1lH9Xt" id="6qmmy9803DM">
     <property role="TrG5h" value="BeforeMust" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6qmmy9803DN" role="1SL9yI">
       <property role="TrG5h" value="testBeforeMustNegative" />
       <node concept="3cqZAl" id="6qmmy9803DO" role="3clF45" />
@@ -533,6 +536,7 @@
   <node concept="1lH9Xt" id="3d1ViLM6N_s">
     <property role="TrG5h" value="AfterUntilMust_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3d1ViLM6N_t" role="1SL9yI">
       <property role="TrG5h" value="testAfterUntilMustNegative" />
       <node concept="3cqZAl" id="3d1ViLM6N_u" role="3clF45" />
@@ -727,6 +731,7 @@
   <node concept="1lH9Xt" id="2gQe_W8Fg3l">
     <property role="TrG5h" value="AfterUntilExists_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2gQe_W8Fg3m" role="1SL9yI">
       <property role="TrG5h" value="testAfterUntilExistsNegative" />
       <node concept="3cqZAl" id="2gQe_W8Fg3n" role="3clF45" />
@@ -919,6 +924,7 @@
   <node concept="1lH9Xt" id="2gQe_W8Fg42">
     <property role="TrG5h" value="BeforeExists" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2gQe_W8Fg43" role="1SL9yI">
       <property role="TrG5h" value="testBeforeExistsNegative" />
       <node concept="3cqZAl" id="2gQe_W8Fg44" role="3clF45" />
@@ -1111,6 +1117,7 @@
   <node concept="1lH9Xt" id="2gQe_W8Fg4J">
     <property role="TrG5h" value="ImmediatelyPrecedes_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2gQe_W8Fg4K" role="1SL9yI">
       <property role="TrG5h" value="testPrecedesNegative" />
       <node concept="3cqZAl" id="2gQe_W8Fg4L" role="3clF45" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
@@ -30,6 +30,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -233,6 +234,7 @@
   <node concept="1lH9Xt" id="6HtDYEDCZSC">
     <property role="TrG5h" value="DivByZero" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6HtDYEDCZSE" role="1SL9yI">
       <property role="TrG5h" value="testSimple" />
       <node concept="3cqZAl" id="6HtDYEDCZSF" role="3clF45" />
@@ -543,6 +545,7 @@
   <node concept="1lH9Xt" id="72F6xZzGVYK">
     <property role="TrG5h" value="DivByZeroUninitializedVariable" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="72F6xZzGVYO" role="1SL9yI">
       <property role="TrG5h" value="testDivByZeroUnitializedVariable" />
       <node concept="3cqZAl" id="72F6xZzGVYP" role="3clF45" />
@@ -693,6 +696,7 @@
   <node concept="1lH9Xt" id="7oC3tFP2WsR">
     <property role="TrG5h" value="NanFloatVariable" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7oC3tFP2WsV" role="1SL9yI">
       <property role="TrG5h" value="testFloatApproximation" />
       <node concept="3cqZAl" id="7oC3tFP2WsW" role="3clF45" />
@@ -870,6 +874,7 @@
   <node concept="1lH9Xt" id="7oC3tFP2WFC">
     <property role="TrG5h" value="DivByZeroUserInput" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7oC3tFP2WFD" role="1SL9yI">
       <property role="TrG5h" value="testDivByZeroUserInput" />
       <node concept="3cqZAl" id="7oC3tFP2WFE" role="3clF45" />
@@ -1028,6 +1033,7 @@
   <node concept="1lH9Xt" id="7oC3tFP3bzO">
     <property role="TrG5h" value="DivByZeroUnreachable" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7oC3tFP3bzP" role="1SL9yI">
       <property role="TrG5h" value="testDivByZeroUnreachable" />
       <node concept="3cqZAl" id="7oC3tFP3bzQ" role="3clF45" />
@@ -1342,6 +1348,7 @@
   <node concept="1lH9Xt" id="5V$HkqNY93V">
     <property role="TrG5h" value="Pointer" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5V$HkqNY93W" role="1SL9yI">
       <property role="TrG5h" value="testSmokeNullPointerAccess" />
       <node concept="3cqZAl" id="5V$HkqNY93X" role="3clF45" />
@@ -1710,6 +1717,7 @@
   <node concept="1lH9Xt" id="5bSnXVJNQzp">
     <property role="TrG5h" value="DivByZeroFloatApproximation" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5bSnXVJNQzq" role="1SL9yI">
       <property role="TrG5h" value="testFloatApproximation" />
       <node concept="3cqZAl" id="5bSnXVJNQzr" role="3clF45" />
@@ -2191,6 +2199,7 @@
   <node concept="1lH9Xt" id="5bSnXVJRAHp">
     <property role="TrG5h" value="ModuleNotInBuild" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5bSnXVJRAHq" role="1SL9yI">
       <property role="TrG5h" value="testModuleNotInBuild" />
       <node concept="3cqZAl" id="5bSnXVJRAHr" role="3clF45" />
@@ -2380,6 +2389,7 @@
   <node concept="1lH9Xt" id="4tocua6J7vi">
     <property role="TrG5h" value="MemoryLeak" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="4tocua6J7vj" role="1SL9yI">
       <property role="TrG5h" value="testSmokeMemoryLeak" />
       <node concept="3cqZAl" id="4tocua6J7vk" role="3clF45" />
@@ -2803,6 +2813,7 @@
   <node concept="1lH9Xt" id="NfDeW0OmlD">
     <property role="TrG5h" value="FloatOverflow" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="NfDeW0OmlE" role="1SL9yI">
       <property role="TrG5h" value="testFloatOverflow" />
       <node concept="3cqZAl" id="NfDeW0OmlF" role="3clF45" />
@@ -2995,6 +3006,7 @@
   <node concept="1lH9Xt" id="4tIZ4QIjMxR">
     <property role="TrG5h" value="Conversion" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="4tIZ4QIjMxS" role="1SL9yI">
       <property role="TrG5h" value="testLibraryFunctionCall1" />
       <node concept="3cqZAl" id="4tIZ4QIjMxT" role="3clF45" />
