@@ -63,7 +63,7 @@
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="A_Efficiency" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
     <node concept="1_0VNX" id="2F6NgTee$3N" role="1_0VJ0">
       <property role="TrG5h" value="efficiency" />
       <property role="1_0VJr" value="Efficiency" />
@@ -124,7 +124,7 @@
     <property role="yApLE" value="1" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="B_Readability" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
     <node concept="1_0VNX" id="2F6NgTee$5Y" role="1_0VJ0">
       <property role="TrG5h" value="readability" />
       <property role="1_0VJr" value="Readability" />
@@ -200,26 +200,26 @@
   <node concept="1_1swa" id="1ig5EljjfWv">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_GeneratedCode" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
     <node concept="1mvXsy" id="1ig5Eljl80E" role="1_0VJ0">
       <property role="TrG5h" value="generatedCode" />
       <property role="1_0VJr" value="Generated Code" />
       <node concept="$CzcT" id="hZfTLMe3YS" role="1_0VJ0">
         <node concept="1_0j5j" id="hZfTLMe3Z6" role="$CzcU">
-          <ref role="1_0j5g" node="69uDFDbeVdk" resolve="A_Efficiency" />
+          <ref role="1_0j5g" node="69uDFDbeVdk" />
         </node>
       </node>
       <node concept="$CzcT" id="hZfTLMe3YY" role="1_0VJ0">
         <node concept="1_0j5j" id="hZfTLMe3Z9" role="$CzcU">
-          <ref role="1_0j5g" node="69uDFDbf8pu" resolve="B_Readability" />
+          <ref role="1_0j5g" node="69uDFDbf8pu" />
         </node>
       </node>
     </node>
     <node concept="1_0j5j" id="hZfTLMe3Y$" role="1DXQ57">
-      <ref role="1_0j5g" node="69uDFDbeVdk" resolve="A_Efficiency" />
+      <ref role="1_0j5g" node="69uDFDbeVdk" />
     </node>
     <node concept="1_0j5j" id="hZfTLMe3YG" role="1DXQ57">
-      <ref role="1_0j5g" node="69uDFDbf8pu" resolve="B_Readability" />
+      <ref role="1_0j5g" node="69uDFDbf8pu" />
     </node>
   </node>
 </model>

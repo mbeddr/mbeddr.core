@@ -172,7 +172,7 @@
   <node concept="1_1swa" id="FpE4o7e6Uq">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Pres_Ch1_Title" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="FpE4o7ejU9" role="1_0VJ0">
       <property role="TrG5h" value="Title" />
       <property role="1_0VJr" value="The future of programming: why you should watch your language" />
@@ -182,7 +182,7 @@
         <property role="2Sbq$t" value="true" />
         <node concept="2Sb_l4" id="FpE4o7ejUb" role="2SbwM5">
           <property role="2Sb_kV" value="img/binarycode.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
         <node concept="OjmMv" id="FpE4o7ejUc" role="2SaI5j">
           <node concept="19SGf9" id="FpE4o7ejUd" role="OjmMu">
@@ -203,11 +203,11 @@
       </node>
       <node concept="J09bk" id="gYOmwFhQR3" role="1_0VJ0">
         <property role="TrG5h" value="Next" />
-        <ref role="J03fB" node="FpE4o7ekUf" resolve="Pres_Ch2_Introduction" />
+        <ref role="J03fB" node="FpE4o7ekUf" />
       </node>
       <node concept="J09bk" id="66_5lNP9Kpc" role="1_0VJ0">
         <property role="TrG5h" value="End" />
-        <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+        <ref role="J03fB" node="6fRanKDT9p$" />
       </node>
       <node concept="1_1sxE" id="66_5lNP9KoW" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
@@ -229,7 +229,7 @@
   <node concept="1_1swa" id="FpE4o7ekUf">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="Pres_Ch2_Introduction" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="FpE4o7ekW3" role="1_0VJ0">
       <property role="TrG5h" value="Introduction" />
       <property role="1_0VJr" value="Introduction" />
@@ -268,15 +268,15 @@
     </node>
     <node concept="J09bk" id="gYOmwFibK5" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7e6Uq" resolve="Pres_Ch1_Title" />
+      <ref role="J03fB" node="FpE4o7e6Uq" />
     </node>
     <node concept="J09bk" id="gYOmwFibKC" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="FpE4o7ekYx" resolve="Pres_Ch3_RunningExample" />
+      <ref role="J03fB" node="FpE4o7ekYx" />
     </node>
     <node concept="J09bk" id="66_5lNP9KpL" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9Kpr" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -297,7 +297,7 @@
   <node concept="1_1swa" id="FpE4o7ekYx">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="Pres_Ch3_RunningExample" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="FpE4o7el4g" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Case: reducing a handwritten C program using DSLs" />
@@ -307,7 +307,7 @@
         <property role="2Sbq$t" value="true" />
         <node concept="2Sb_l4" id="FpE4o7el4i" role="2SbwM5">
           <property role="2Sb_kV" value="img/drone.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
         <node concept="OjmMv" id="FpE4o7el4j" role="2SaI5j">
           <node concept="19SGf9" id="FpE4o7el4k" role="OjmMu">
@@ -406,10 +406,10 @@
         </node>
         <node concept="2Sb_l4" id="2fb5Xw7II5E" role="2SbwM5">
           <property role="2Sb_kV" value="img\behavior.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
         <node concept="3SGC_w" id="2fb5Xw7II5R" role="3SHJ_F">
-          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+          <ref role="3SH5fe" node="3Mo_eVXuc60" />
         </node>
       </node>
       <node concept="1_0LV8" id="2fb5Xw7IItQ" role="1_0VJ0">
@@ -433,7 +433,7 @@
         <node concept="2bctqb" id="2fb5Xw7IIdQ" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7IIq5" role="2SbwM5">
           <property role="2Sb_kV" value="img\power.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
       <node concept="1_0LV8" id="2fb5Xw7IIJ8" role="1_0VJ0">
@@ -457,7 +457,7 @@
         <node concept="2bctqb" id="2fb5Xw7IIwZ" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7IIC3" role="2SbwM5">
           <property role="2Sb_kV" value="img\signal.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
       <node concept="1_0LV8" id="2fb5Xw7IIQi" role="1_0VJ0">
@@ -481,7 +481,7 @@
         <node concept="2bctqb" id="2fb5Xw7IIV_" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7IJ6r" role="2SbwM5">
           <property role="2Sb_kV" value="img\decisions.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
     </node>
@@ -495,15 +495,15 @@
     </node>
     <node concept="J09bk" id="gYOmwFiddK" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7ekUf" resolve="Pres_Ch2_Introduction" />
+      <ref role="J03fB" node="FpE4o7ekUf" />
     </node>
     <node concept="J09bk" id="gYOmwFidey" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="66_5lNP8OTB" resolve="Pres_Ch3a_RunningExample" />
+      <ref role="J03fB" node="66_5lNP8OTB" />
     </node>
     <node concept="J09bk" id="66_5lNP9KqM" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9Kq5" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -524,7 +524,7 @@
   <node concept="1_1swa" id="FpE4o7eCTM">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="Pres_Ch4_StateMachines" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="FpE4o7eCTN" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="State machine abstraction (1)" />
@@ -541,10 +541,10 @@
         </node>
         <node concept="2Sb_l4" id="2fb5Xw7KhBp" role="2SbwM5">
           <property role="2Sb_kV" value="img\behavior.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
         <node concept="3SGC_w" id="2fb5Xw7KhBq" role="3SHJ_F">
-          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+          <ref role="3SH5fe" node="3Mo_eVXuc60" />
         </node>
       </node>
       <node concept="3X6WG5" id="FpE4o7eCUr" role="1_0VJ0">
@@ -581,10 +581,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDUD4T" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDUD4X" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
           </node>
           <node concept="2NCMab" id="6fRanKDUD55" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV27v" resolve="controlProcess" />
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV27v" />
           </node>
         </node>
       </node>
@@ -610,10 +610,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9pZ7" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9pZ8" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
           </node>
           <node concept="2NCMab" id="66_5lNP9pZ9" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV7rI" resolve="handleStateDisconnected" />
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV7rI" />
           </node>
         </node>
       </node>
@@ -629,15 +629,15 @@
     </node>
     <node concept="J09bk" id="gYOmwFii4I" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7ekYx" resolve="Pres_Ch3_RunningExample" />
+      <ref role="J03fB" node="FpE4o7ekYx" />
     </node>
     <node concept="J09bk" id="gYOmwFii6h" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="66_5lNP9xk3" resolve="Pres_Ch4b_StateMachines" />
+      <ref role="J03fB" node="66_5lNP9xk3" />
     </node>
     <node concept="J09bk" id="66_5lNP9Kss" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="Wq1Bs" id="FpE4o7eCVb" role="Wq1Bf">
       <property role="Wq1Bt" value="Eugen Schindler" />
@@ -655,7 +655,7 @@
   <node concept="1_1swa" id="6fRanKDQ4Q6">
     <property role="yApLE" value="5" />
     <property role="TrG5h" value="Pres_Ch5_ActivationProfiles" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="6fRanKDQ4Q7" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Component activation/deactivation abstraction (1)" />
@@ -673,7 +673,7 @@
         <node concept="2bctqb" id="2fb5Xw7KhF6" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7KhF7" role="2SbwM5">
           <property role="2Sb_kV" value="img\power.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
       <node concept="1_1sxE" id="2fb5Xw7KhE_" role="1_0VJ0">
@@ -695,10 +695,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDQ4Qs" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDQ4Qt" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
           </node>
           <node concept="2NCMab" id="6fRanKDQ4Qu" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:6EVEFV$jCrI" resolve="standby" />
+            <ref role="2NCMaa" to="xvi0:6EVEFV$jCrI" />
           </node>
         </node>
       </node>
@@ -711,13 +711,13 @@
       <property role="3z_lpJ" value="true" />
       <node concept="2NCZwO" id="56xEliHxYyk" role="3z_lpI">
         <node concept="2NCMab" id="56xEliHxYyo" role="2NCMaf">
-          <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
+          <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
         </node>
         <node concept="2NCMab" id="56xEliHxYyu" role="2NCMaf">
-          <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" resolve="ApplicationController" />
+          <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" />
         </node>
         <node concept="2NCMab" id="56xEliHxYyA" role="2NCMaf">
-          <ref role="2NCMaa" to="xvi0:6EVEFV$jCui" resolve="ec_mode" />
+          <ref role="2NCMaa" to="xvi0:6EVEFV$jCui" />
         </node>
       </node>
     </node>
@@ -726,15 +726,15 @@
     </node>
     <node concept="J09bk" id="gYOmwFijZz" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7eCTM" resolve="Pres_Ch4_StateMachines" />
+      <ref role="J03fB" node="FpE4o7eCTM" />
     </node>
     <node concept="J09bk" id="gYOmwFik0s" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="66_5lNP9GWQ" resolve="Pres_Ch5a_ActivationProfiles" />
+      <ref role="J03fB" node="66_5lNP9GWQ" />
     </node>
     <node concept="J09bk" id="66_5lNP9Kvk" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9KuN" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -755,7 +755,7 @@
   <node concept="1_1swa" id="6fRanKDQ9in">
     <property role="yApLE" value="6" />
     <property role="TrG5h" value="Pres_Ch6_DecisionTables" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="6fRanKDQ9io" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Decision tables" />
@@ -773,7 +773,7 @@
         <node concept="2bctqb" id="2fb5Xw7KhGZ" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7KhH0" role="2SbwM5">
           <property role="2Sb_kV" value="img\decisions.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
       <node concept="1_1sxE" id="2fb5Xw7KhGt" role="1_0VJ0">
@@ -798,10 +798,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDQ9iM" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDQ9iN" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
           </node>
           <node concept="2NCMab" id="6fRanKDQ9iO" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV6WA" resolve="handleStateSwitchingToEcMode" />
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV6WA" />
           </node>
         </node>
       </node>
@@ -814,13 +814,13 @@
       <property role="3z_lpJ" value="true" />
       <node concept="2NCZwO" id="56xEliHy7U4" role="3z_lpI">
         <node concept="2NCMab" id="56xEliHy7U8" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
+          <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" />
         </node>
         <node concept="2NCMab" id="56xEliHy7Ue" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXjXI" resolve="ApplicationController" />
+          <ref role="2NCMaa" to="ooh3:7iLD7IPXjXI" />
         </node>
         <node concept="2NCMab" id="56xEliHy9Iw" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXk49" resolve="switching_to_ec_mode" />
+          <ref role="2NCMaa" to="ooh3:7iLD7IPXk49" />
         </node>
       </node>
     </node>
@@ -829,15 +829,15 @@
     </node>
     <node concept="J09bk" id="gYOmwFik1E" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="66_5lNP9GWQ" resolve="Pres_Ch5a_ActivationProfiles" />
+      <ref role="J03fB" node="66_5lNP9GWQ" />
     </node>
     <node concept="J09bk" id="gYOmwFik2t" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="6fRanKDQU0S" resolve="Pres_Ch7_Math" />
+      <ref role="J03fB" node="6fRanKDQU0S" />
     </node>
     <node concept="J09bk" id="66_5lNP9KxQ" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9Kxv" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -858,7 +858,7 @@
   <node concept="1_1swa" id="6fRanKDQU0S">
     <property role="yApLE" value="7" />
     <property role="TrG5h" value="Pres_Ch7_Math" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="2fb5Xw7KhJ0" role="1_0VJ0">
       <property role="TrG5h" value="Signals" />
       <property role="1_0VJr" value="Signal processing" />
@@ -876,7 +876,7 @@
         <node concept="2bctqb" id="2fb5Xw7KhIi" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7KhIj" role="2SbwM5">
           <property role="2Sb_kV" value="img\signal.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
       <node concept="1_1sxE" id="2fb5Xw7KhHG" role="1_0VJ0">
@@ -887,10 +887,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDSWAr" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDSWAv" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" />
           </node>
           <node concept="2NCMab" id="6fRanKDSWAC" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:3YoJoyKi5Qg" resolve="calculateSignalStrength" />
+            <ref role="2NCMaa" to="qdz5:3YoJoyKi5Qg" />
           </node>
         </node>
       </node>
@@ -902,10 +902,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDQU1i" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDQU1j" role="2NCMaf">
-            <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
+            <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" />
           </node>
           <node concept="2NCMab" id="6fRanKDQU1k" role="2NCMaf">
-            <ref role="2NCMaa" to="ooh3:7iLD7IPXk7Z" resolve="calculateSignalStrength" />
+            <ref role="2NCMaa" to="ooh3:7iLD7IPXk7Z" />
           </node>
         </node>
       </node>
@@ -915,15 +915,15 @@
     </node>
     <node concept="J09bk" id="gYOmwFislo" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="6fRanKDQ9in" resolve="Pres_Ch6_DecisionTables" />
+      <ref role="J03fB" node="6fRanKDQ9in" />
     </node>
     <node concept="J09bk" id="gYOmwFislL" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="6fRanKDQYum" resolve="Pres_Ch8_Conclusion" />
+      <ref role="J03fB" node="6fRanKDQYum" />
     </node>
     <node concept="J09bk" id="66_5lNP9KyY" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9KyH" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -944,7 +944,7 @@
   <node concept="1_1swa" id="6fRanKDQYum">
     <property role="yApLE" value="8" />
     <property role="TrG5h" value="Pres_Ch8_Conclusion" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="6fRanKDQYuw" role="1_0VJ0">
       <property role="TrG5h" value="Conclusion" />
       <property role="1_0VJr" value="Conclusion" />
@@ -1019,11 +1019,11 @@
     </node>
     <node concept="J09bk" id="gYOmwFisn1" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="6fRanKDQU0S" resolve="Pres_Ch7_Math" />
+      <ref role="J03fB" node="6fRanKDQU0S" />
     </node>
     <node concept="J09bk" id="gYOmwFisnz" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="Wq1Bs" id="6fRanKDQYuZ" role="Wq1Bf">
       <property role="Wq1Bt" value="Eugen Schindler" />
@@ -1041,9 +1041,9 @@
   <node concept="1_1swa" id="6fRanKDT9p$">
     <property role="yApLE" value="9" />
     <property role="TrG5h" value="Pres_Ch9_Questions" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1_0j5j" id="6fRanKDUSP4" role="1DXQ57">
-      <ref role="1_0j5g" node="FpE4o7e6Uq" resolve="Pres_Ch1_Title" />
+      <ref role="1_0j5g" node="FpE4o7e6Uq" />
     </node>
     <node concept="1mvXsy" id="6fRanKDT9r3" role="1_0VJ0">
       <property role="TrG5h" value="Questions" />
@@ -1054,7 +1054,7 @@
         <property role="2Sbq$t" value="true" />
         <node concept="2Sb_l4" id="6fRanKDT9r5" role="2SbwM5">
           <property role="2Sb_kV" value="img/questions.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
         <node concept="OjmMv" id="6fRanKDT9r6" role="2SaI5j">
           <node concept="19SGf9" id="6fRanKDT9r7" role="OjmMu">
@@ -1064,7 +1064,7 @@
           </node>
         </node>
         <node concept="3SGC_w" id="gYOmwFjnCN" role="3SHJ_F">
-          <ref role="3SH5fe" node="3Mo_eVXuc5Q" resolve="width100" />
+          <ref role="3SH5fe" node="3Mo_eVXuc5Q" />
         </node>
       </node>
     </node>
@@ -1073,46 +1073,46 @@
     </node>
     <node concept="J09bk" id="66_5lNP9LtY" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="6fRanKDQYum" resolve="Pres_Ch8_Conclusion" />
+      <ref role="J03fB" node="6fRanKDQYum" />
     </node>
     <node concept="J09bk" id="66_5lNP9LtZ" role="1_0VJ0">
       <property role="TrG5h" value="Restart" />
-      <ref role="J03fB" node="FpE4o7e6Uq" resolve="Pres_Ch1_Title" />
+      <ref role="J03fB" node="FpE4o7e6Uq" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9Ltz" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
     </node>
     <node concept="J09bk" id="66_5lNP9Lny" role="1_0VJ0">
       <property role="TrG5h" value="Ch1" />
-      <ref role="J03fB" node="FpE4o7e6Uq" resolve="Pres_Ch1_Title" />
+      <ref role="J03fB" node="FpE4o7e6Uq" />
     </node>
     <node concept="J09bk" id="66_5lNP9Lo4" role="1_0VJ0">
       <property role="TrG5h" value="CH2" />
-      <ref role="J03fB" node="FpE4o7ekUf" resolve="Pres_Ch2_Introduction" />
+      <ref role="J03fB" node="FpE4o7ekUf" />
     </node>
     <node concept="J09bk" id="66_5lNP9LoE" role="1_0VJ0">
       <property role="TrG5h" value="Ch3" />
-      <ref role="J03fB" node="FpE4o7ekYx" resolve="Pres_Ch3_RunningExample" />
+      <ref role="J03fB" node="FpE4o7ekYx" />
     </node>
     <node concept="J09bk" id="66_5lNP9Lpk" role="1_0VJ0">
       <property role="TrG5h" value="Ch4" />
-      <ref role="J03fB" node="FpE4o7eCTM" resolve="Pres_Ch4_StateMachines" />
+      <ref role="J03fB" node="FpE4o7eCTM" />
     </node>
     <node concept="J09bk" id="66_5lNP9Lq2" role="1_0VJ0">
       <property role="TrG5h" value="Ch5" />
-      <ref role="J03fB" node="6fRanKDQ4Q6" resolve="Pres_Ch5_ActivationProfiles" />
+      <ref role="J03fB" node="6fRanKDQ4Q6" />
     </node>
     <node concept="J09bk" id="66_5lNP9LqO" role="1_0VJ0">
       <property role="TrG5h" value="Ch6" />
-      <ref role="J03fB" node="6fRanKDQ9in" resolve="Pres_Ch6_DecisionTables" />
+      <ref role="J03fB" node="6fRanKDQ9in" />
     </node>
     <node concept="J09bk" id="66_5lNP9LrE" role="1_0VJ0">
       <property role="TrG5h" value="Ch7" />
-      <ref role="J03fB" node="6fRanKDQU0S" resolve="Pres_Ch7_Math" />
+      <ref role="J03fB" node="6fRanKDQU0S" />
     </node>
     <node concept="J09bk" id="66_5lNP9Ls$" role="1_0VJ0">
       <property role="TrG5h" value="Ch8" />
-      <ref role="J03fB" node="6fRanKDQYum" resolve="Pres_Ch8_Conclusion" />
+      <ref role="J03fB" node="6fRanKDQYum" />
     </node>
     <node concept="Wq1Bs" id="6fRanKDT9q4" role="Wq1Bf">
       <property role="Wq1Bt" value="Eugen Schindler" />
@@ -1130,7 +1130,7 @@
   <node concept="1_1swa" id="66_5lNP8OTB">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="Pres_Ch3a_RunningExample" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="66_5lNP9q2i" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Starting point: C program" />
@@ -1139,10 +1139,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="FpE4o7el4P" role="3z_lpI">
           <node concept="2NCMab" id="FpE4o7el4Q" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
           </node>
           <node concept="2NCMab" id="FpE4o7el4R" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:6lKxXE1G6dA" resolve="main" />
+            <ref role="2NCMaa" to="3i8q:6lKxXE1G6dA" />
           </node>
         </node>
       </node>
@@ -1154,10 +1154,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDV6BW" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDV6C0" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
           </node>
           <node concept="2NCMab" id="6fRanKDVfDs" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:5X2ZuWDS9ln" resolve="fill_input_with_default_values" />
+            <ref role="2NCMaa" to="3i8q:5X2ZuWDS9ln" />
           </node>
         </node>
       </node>
@@ -1170,15 +1170,15 @@
     </node>
     <node concept="J09bk" id="66_5lNP9hPs" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7ekYx" resolve="Pres_Ch3_RunningExample" />
+      <ref role="J03fB" node="FpE4o7ekYx" />
     </node>
     <node concept="J09bk" id="66_5lNP9hPt" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="FpE4o7eCTM" resolve="Pres_Ch4_StateMachines" />
+      <ref role="J03fB" node="FpE4o7eCTM" />
     </node>
     <node concept="J09bk" id="66_5lNP9KrK" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9Krt" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -1199,7 +1199,7 @@
   <node concept="1_1swa" id="66_5lNP9xk3">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="Pres_Ch4b_StateMachines" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="66_5lNP9xk4" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="State machine abstraction (3)" />
@@ -1216,10 +1216,10 @@
         </node>
         <node concept="2Sb_l4" id="2fb5Xw7KhDI" role="2SbwM5">
           <property role="2Sb_kV" value="img\behavior.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
         <node concept="3SGC_w" id="2fb5Xw7KhDJ" role="3SHJ_F">
-          <ref role="3SH5fe" node="3Mo_eVXuc60" resolve="width80" />
+          <ref role="3SH5fe" node="3Mo_eVXuc60" />
         </node>
       </node>
       <node concept="1_1sxE" id="2fb5Xw7KhD5" role="1_0VJ0">
@@ -1244,13 +1244,13 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9xks" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9xkt" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
           </node>
           <node concept="2NCMab" id="66_5lNP9xku" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" resolve="ApplicationController" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" />
           </node>
           <node concept="2NCMab" id="66_5lNP9xkv" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$z" resolve="input" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$z" />
           </node>
         </node>
       </node>
@@ -1262,10 +1262,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9xkn" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9xko" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
           </node>
           <node concept="2NCMab" id="ERk9oJ2wKE" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:6EVEFV$jCsu" resolve="disconnected" />
+            <ref role="2NCMaa" to="xvi0:6EVEFV$jCsu" />
           </node>
         </node>
       </node>
@@ -1275,15 +1275,15 @@
     </node>
     <node concept="J09bk" id="66_5lNP9xkx" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="FpE4o7eCTM" resolve="Pres_Ch4_StateMachines" />
+      <ref role="J03fB" node="FpE4o7eCTM" />
     </node>
     <node concept="J09bk" id="66_5lNP9xky" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="6fRanKDQ4Q6" resolve="Pres_Ch5_ActivationProfiles" />
+      <ref role="J03fB" node="6fRanKDQ4Q6" />
     </node>
     <node concept="J09bk" id="66_5lNP9Kur" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9Ku1" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
@@ -1304,7 +1304,7 @@
   <node concept="1_1swa" id="66_5lNP9GWQ">
     <property role="yApLE" value="5" />
     <property role="TrG5h" value="Pres_Ch5a_ActivationProfiles" />
-    <ref role="G9hjw" node="3Mo_eVXuc5l" resolve="PresentationConfig" />
+    <ref role="G9hjw" node="3Mo_eVXuc5l" />
     <node concept="1mvXsy" id="66_5lNP9GWR" role="1_0VJ0">
       <property role="TrG5h" value="Case" />
       <property role="1_0VJr" value="Component activation/deactivation abstraction (2)" />
@@ -1322,7 +1322,7 @@
         <node concept="2bctqb" id="2fb5Xw7KhFZ" role="3SHJ_F" />
         <node concept="2Sb_l4" id="2fb5Xw7KhG0" role="2SbwM5">
           <property role="2Sb_kV" value="img\power.png" />
-          <ref role="2Sb_kU" node="3Mo_eVXuc5G" resolve="img" />
+          <ref role="2Sb_kU" node="3Mo_eVXuc5G" />
         </node>
       </node>
       <node concept="1_1sxE" id="2fb5Xw7KhFo" role="1_0VJ0">
@@ -1344,10 +1344,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9GX7" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9GX8" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" />
           </node>
           <node concept="2NCMab" id="5zvNKVcR5rl" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:5zvNKVcPlj1" resolve="HardwareConfigTable" />
+            <ref role="2NCMaa" to="qdz5:5zvNKVcPlj1" />
           </node>
         </node>
       </node>
@@ -1359,10 +1359,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9GXc" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9GXd" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" />
           </node>
           <node concept="2NCMab" id="66_5lNP9GXe" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjYG" resolve="standby" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjYG" />
           </node>
         </node>
       </node>
@@ -1375,15 +1375,15 @@
     </node>
     <node concept="J09bk" id="66_5lNP9GXh" role="1_0VJ0">
       <property role="TrG5h" value="Prev" />
-      <ref role="J03fB" node="6fRanKDQ4Q6" resolve="Pres_Ch5_ActivationProfiles" />
+      <ref role="J03fB" node="6fRanKDQ4Q6" />
     </node>
     <node concept="J09bk" id="66_5lNP9GXi" role="1_0VJ0">
       <property role="TrG5h" value="Next" />
-      <ref role="J03fB" node="6fRanKDQ9in" resolve="Pres_Ch6_DecisionTables" />
+      <ref role="J03fB" node="6fRanKDQ9in" />
     </node>
     <node concept="J09bk" id="66_5lNP9Kx9" role="1_0VJ0">
       <property role="TrG5h" value="End" />
-      <ref role="J03fB" node="6fRanKDT9p$" resolve="Pres_Ch9_Questions" />
+      <ref role="J03fB" node="6fRanKDT9p$" />
     </node>
     <node concept="1_1sxE" id="66_5lNP9KwL" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />

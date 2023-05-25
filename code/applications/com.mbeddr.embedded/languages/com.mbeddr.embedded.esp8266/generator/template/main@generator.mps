@@ -482,7 +482,7 @@
     <property role="TrG5h" value="buildStuff" />
     <node concept="3lhOvk" id="6_CUGSFBmA3" role="3lj3bC">
       <ref role="30HIoZ" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-      <ref role="3lhOvi" node="6_CUGSFBmBp" resolve="Makefile" />
+      <ref role="3lhOvi" node="6_CUGSFBmBp" />
     </node>
     <node concept="avzCv" id="6_CUGSFAfSg" role="avys_">
       <node concept="3clFbS" id="6_CUGSFAfSh" role="2VODD2">
@@ -631,13 +631,13 @@
       <property role="1F2ocN" value="true" />
       <node concept="94E81" id="20Blhoik6yD" role="17Kx8K">
         <node concept="3G69iG" id="20Blhoik6yE" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCEPu" resolve="XTENSA_TOOLS_ROOT" />
+          <ref role="3G69iJ" node="6_CUGSFCEPu" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6yF" role="17N5uS">
           <property role="3G69iL" value=":" />
         </node>
         <node concept="3G69iG" id="20Blhoik6yG" role="17N5uS">
-          <ref role="3G69iJ" node="4nkJFdrSsdk" resolve="PATH" />
+          <ref role="3G69iJ" node="4nkJFdrSsdk" />
         </node>
       </node>
     </node>
@@ -949,7 +949,7 @@
       <property role="12Lnk_" value="6_CUGSFFpWI/expand" />
       <node concept="94E81" id="20Blhoik6$e" role="17Kx8K">
         <node concept="3G69iG" id="20Blhoik6$f" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCEPu" resolve="XTENSA_TOOLS_ROOT" />
+          <ref role="3G69iJ" node="6_CUGSFCEPu" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$g" role="17N5uS">
           <property role="3G69iL" value="/xtensa-lx106-elf-gcc" />
@@ -961,7 +961,7 @@
       <property role="12Lnk_" value="6_CUGSFFpWI/expand" />
       <node concept="94E81" id="20Blhoik6$h" role="17Kx8K">
         <node concept="3G69iG" id="20Blhoik6$i" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCEPu" resolve="XTENSA_TOOLS_ROOT" />
+          <ref role="3G69iJ" node="6_CUGSFCEPu" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$j" role="17N5uS">
           <property role="3G69iL" value="/xtensa-lx106-elf-ar" />
@@ -973,7 +973,7 @@
       <property role="12Lnk_" value="6_CUGSFFpWI/expand" />
       <node concept="94E81" id="20Blhoik6$k" role="17Kx8K">
         <node concept="3G69iG" id="20Blhoik6$l" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCEPu" resolve="XTENSA_TOOLS_ROOT" />
+          <ref role="3G69iJ" node="6_CUGSFCEPu" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$m" role="17N5uS">
           <property role="3G69iL" value="/xtensa-lx106-elf-gcc" />
@@ -995,7 +995,7 @@
       <property role="12Lnk_" value="6_CUGSFFpWI/expand" />
       <node concept="94E81" id="20Blhoik6$p" role="17Kx8K">
         <node concept="3G69iG" id="20Blhoik6$q" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCENS" resolve="BUILD_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCENS" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$r" role="17N5uS">
           <property role="3G69iL" value="/" />
@@ -1011,13 +1011,13 @@
           <property role="3G69iL" value="$(addprefix " />
         </node>
         <node concept="3G69iG" id="20Blhoik6$u" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCRGa" resolve="SDK_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCRGa" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$v" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$w" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFFk8S" resolve="SDK_LIBDIR" />
+          <ref role="3G69iJ" node="6_CUGSFFk8S" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$x" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1032,13 +1032,13 @@
           <property role="3G69iL" value="$(addprefix -I" />
         </node>
         <node concept="3G69iG" id="20Blhoik6$$" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCRGa" resolve="SDK_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCRGa" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$_" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$A" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFFkSa" resolve="SDK_INCDIR" />
+          <ref role="3G69iJ" node="6_CUGSFFkSa" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$B" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1063,13 +1063,13 @@
           <property role="3G69iL" value="$(patsubst %.c," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$G" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCENS" resolve="BUILD_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCENS" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$H" role="17N5uS">
           <property role="3G69iL" value="/%.o," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$I" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFHJIF" resolve="SRC" />
+          <ref role="3G69iJ" node="6_CUGSFHJIF" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$J" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1084,7 +1084,7 @@
           <property role="3G69iL" value="$(addprefix -l," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$M" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFF19m" resolve="LIBS" />
+          <ref role="3G69iJ" node="6_CUGSFF19m" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$N" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1099,13 +1099,13 @@
           <property role="3G69iL" value="$(addprefix " />
         </node>
         <node concept="3G69iG" id="20Blhoik6$Q" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCENS" resolve="BUILD_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCENS" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$R" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$S" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFEYBf" resolve="TARGET" />
+          <ref role="3G69iJ" node="6_CUGSFEYBf" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$T" role="17N5uS">
           <property role="3G69iL" value="_app.a)" />
@@ -1120,13 +1120,13 @@
           <property role="3G69iL" value="$(addprefix " />
         </node>
         <node concept="3G69iG" id="20Blhoik6$W" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCENS" resolve="BUILD_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCENS" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$X" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6$Y" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFEYBf" resolve="TARGET" />
+          <ref role="3G69iJ" node="6_CUGSFEYBf" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6$Z" role="17N5uS">
           <property role="3G69iL" value=".out)" />
@@ -1142,19 +1142,19 @@
           <property role="3G69iL" value="$(addprefix -T" />
         </node>
         <node concept="3G69iG" id="20Blhoik6_2" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCRGa" resolve="SDK_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCRGa" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_3" role="17N5uS">
           <property role="3G69iL" value="/" />
         </node>
         <node concept="3G69iG" id="20Blhoik6_4" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFFkyM" resolve="SDK_LDDIR" />
+          <ref role="3G69iJ" node="6_CUGSFFkyM" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_5" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6_6" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFFiHg" resolve="LD_SCRIPT" />
+          <ref role="3G69iJ" node="6_CUGSFFiHg" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_7" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1170,7 +1170,7 @@
           <property role="3G69iL" value="$(addprefix -I," />
         </node>
         <node concept="3G69iG" id="20Blhoik6_a" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFHDG6" resolve="SRC_DIR" />
+          <ref role="3G69iJ" node="6_CUGSFHDG6" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_b" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1185,7 +1185,7 @@
           <property role="3G69iL" value="$(addsuffix /include," />
         </node>
         <node concept="3G69iG" id="20Blhoik6_e" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFHPwj" resolve="INCDIR" />
+          <ref role="3G69iJ" node="6_CUGSFHPwj" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_f" role="17N5uS">
           <property role="3G69iL" value=")" />
@@ -1201,13 +1201,13 @@
           <property role="3G69iL" value="$(addprefix " />
         </node>
         <node concept="3G69iG" id="20Blhoik6_i" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_j" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6_k" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFFmWd" resolve="FW_FILE_1_ADDR" />
+          <ref role="3G69iJ" node="6_CUGSFFmWd" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_l" role="17N5uS">
           <property role="3G69iL" value=".bin)" />
@@ -1222,13 +1222,13 @@
           <property role="3G69iL" value="$(addprefix " />
         </node>
         <node concept="3G69iG" id="20Blhoik6_o" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_p" role="17N5uS">
           <property role="3G69iL" value="/," />
         </node>
         <node concept="3G69iG" id="20Blhoik6_q" role="17N5uS">
-          <ref role="3G69iJ" node="6_CUGSFFnk2" resolve="FW_FILE_2_ADDR" />
+          <ref role="3G69iJ" node="6_CUGSFFnk2" />
         </node>
         <node concept="3G69iQ" id="20Blhoik6_r" role="17N5uS">
           <property role="3G69iL" value=".bin)" />
@@ -1258,7 +1258,7 @@
     <node concept="3O_Fa1" id="6_CUGSFJuD$" role="12RR68">
       <node concept="ysyOp" id="7EZ1Sps4X5j" role="ypkCg">
         <node concept="3G69iG" id="7EZ1Sps4Zr8" role="ysyOA">
-          <ref role="3G69iJ" node="6_CUGSFCENS" resolve="BUILD_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCENS" />
         </node>
         <node concept="3G69iQ" id="7EZ1Sps4Zr9" role="ysyOA">
           <property role="3G69iL" value="/%.o" />
@@ -1271,7 +1271,7 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKb0W" role="38Bv6S">
         <node concept="3G69iG" id="6_CUGSFKb45" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJwjF" resolve="VECHO" />
+          <ref role="3G69iJ" node="6_CUGSFJwjF" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1TnK" role="3G69ia">
           <property role="3G69iL" value="&quot;CC " />
@@ -1283,37 +1283,37 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKbuG" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1V1a" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1V1b" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1V0o" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFoGW" resolve="CC" />
+          <ref role="3G69iJ" node="6_CUGSFFoGW" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1V0K" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1V0J" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFHPwj" resolve="INCDIR" />
+          <ref role="3G69iJ" node="6_CUGSFHPwj" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1V1B" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1V1A" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFHRFN" resolve="MODULE_INCDIR" />
+          <ref role="3G69iJ" node="6_CUGSFHRFN" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1V1C" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1V05" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFkSa" resolve="SDK_INCDIR" />
+          <ref role="3G69iJ" node="6_CUGSFFkSa" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1V07" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UZQ" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFf_d" resolve="CFLAGS" />
+          <ref role="3G69iJ" node="6_CUGSFFf_d" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UZS" role="3G69ia">
           <property role="3G69iL" value=" -c " />
@@ -1349,26 +1349,26 @@
           <property role="3G69iL" value="checkdirs " />
         </node>
         <node concept="3G69iG" id="7EZ1Sps4Zrc" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHNFP" resolve="TARGET_OUT" />
+          <ref role="3G69iJ" node="6_CUGSFHNFP" />
         </node>
         <node concept="3G69iQ" id="7EZ1Sps509T" role="ys$fl">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="7EZ1Sps509S" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHSvM" resolve="FW_FILE_1" />
+          <ref role="3G69iJ" node="6_CUGSFHSvM" />
         </node>
         <node concept="3G69iQ" id="7EZ1Sps50S$" role="ys$fl">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="7EZ1Sps50Sz" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHSMw" resolve="FW_FILE_2" />
+          <ref role="3G69iJ" node="6_CUGSFHSMw" />
         </node>
       </node>
     </node>
     <node concept="3O_Fa1" id="6_CUGSFKfYq" role="12RR68">
       <node concept="ysyOp" id="7EZ1Sps4X5v" role="ypkCg">
         <node concept="3G69iG" id="l3KBCk1UYx" role="ysyOA">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UYy" role="ysyOA">
           <property role="3G69iL" value="/%.bin" />
@@ -1376,24 +1376,24 @@
       </node>
       <node concept="ys$fk" id="7EZ1Sps4X5y" role="ypkCx">
         <node concept="3G69iG" id="l3KBCk1UZ7" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHNFP" resolve="TARGET_OUT" />
+          <ref role="3G69iJ" node="6_CUGSFHNFP" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UZ8" role="ys$fl">
           <property role="3G69iL" value=" | " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UY5" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
       </node>
       <node concept="3O_FaX" id="6_CUGSFKgug" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1UZo" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJwjF" resolve="VECHO" />
+          <ref role="3G69iJ" node="6_CUGSFJwjF" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UZp" role="3G69ia">
           <property role="3G69iL" value=" &quot;FW " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UZf" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UZh" role="3G69ia">
           <property role="3G69iL" value="/&quot;" />
@@ -1401,32 +1401,32 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKguv" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1UYR" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UYS" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UYk" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFDISi" resolve="ESPTOOL" />
+          <ref role="3G69iJ" node="6_CUGSFDISi" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UYm" role="3G69ia">
           <property role="3G69iL" value=" elf2image -o " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UYb" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UYE" role="3G69ia">
           <property role="3G69iL" value="/ " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UYD" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFHNFP" resolve="TARGET_OUT" />
+          <ref role="3G69iJ" node="6_CUGSFHNFP" />
         </node>
       </node>
     </node>
     <node concept="3O_Fa1" id="6_CUGSFKg_5" role="12RR68">
       <node concept="ysyOp" id="7EZ1Sps4X5z" role="ypkCg">
         <node concept="3G69iG" id="l3KBCk1Udr" role="ysyOA">
-          <ref role="3G69iJ" node="6_CUGSFHNFP" resolve="TARGET_OUT" />
+          <ref role="3G69iJ" node="6_CUGSFHNFP" />
         </node>
       </node>
       <node concept="ys$fk" id="7EZ1Sps4X5A" role="ypkCx">
@@ -1436,7 +1436,7 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKg_7" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1UZy" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJwjF" resolve="VECHO" />
+          <ref role="3G69iJ" node="6_CUGSFJwjF" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UZz" role="3G69ia">
           <property role="3G69iL" value=" &quot;LD " />
@@ -1448,43 +1448,43 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKg_9" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1UX_" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UXA" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UX6" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFpqr" resolve="LD" />
+          <ref role="3G69iJ" node="6_CUGSFFpqr" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UX8" role="3G69ia">
           <property role="3G69iL" value=" -L" />
         </node>
         <node concept="3G69iG" id="l3KBCk1UWF" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFk8S" resolve="SDK_LIBDIR" />
+          <ref role="3G69iJ" node="6_CUGSFFk8S" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UWH" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UWk" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFiHg" resolve="LD_SCRIPT" />
+          <ref role="3G69iJ" node="6_CUGSFFiHg" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UWm" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1Uej" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFhd$" resolve="LDFLAGS" />
+          <ref role="3G69iJ" node="6_CUGSFFhd$" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1Uel" role="3G69ia">
           <property role="3G69iL" value=" -Wl,--start-group " />
         </node>
         <node concept="3G69iG" id="l3KBCk1UdO" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFF19m" resolve="LIBS" />
+          <ref role="3G69iJ" node="6_CUGSFF19m" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1Uez" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk1Uey" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFHNg_" resolve="APP_AR" />
+          <ref role="3G69iJ" node="6_CUGSFHNg_" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1Ue$" role="3G69ia">
           <property role="3G69iL" value=" -Wl,--end-group -o " />
@@ -1495,17 +1495,17 @@
     <node concept="3O_Fa1" id="6_CUGSFKh8Y" role="12RR68">
       <node concept="ysyOp" id="7EZ1Sps4X5B" role="ypkCg">
         <node concept="3G69iG" id="l3KBCk1Udu" role="ysyOA">
-          <ref role="3G69iJ" node="6_CUGSFHNg_" resolve="APP_AR" />
+          <ref role="3G69iJ" node="6_CUGSFHNg_" />
         </node>
       </node>
       <node concept="ys$fk" id="7EZ1Sps4X5E" role="ypkCx">
         <node concept="3G69iG" id="l3KBCk1Udx" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHJYg" resolve="OBJ" />
+          <ref role="3G69iJ" node="6_CUGSFHJYg" />
         </node>
       </node>
       <node concept="3O_FaX" id="6_CUGSFKh90" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1UZG" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJwjF" resolve="VECHO" />
+          <ref role="3G69iJ" node="6_CUGSFJwjF" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1UZH" role="3G69ia">
           <property role="3G69iL" value=" &quot;AR " />
@@ -1517,13 +1517,13 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKh92" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk1Ud$" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1Ud_" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk19Vm" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFp4T" resolve="AR" />
+          <ref role="3G69iJ" node="6_CUGSFFp4T" />
         </node>
         <node concept="3G69iQ" id="l3KBCk1To4" role="3G69ia">
           <property role="3G69iL" value=" cru " />
@@ -1543,25 +1543,25 @@
       </node>
       <node concept="ys$fk" id="7EZ1Sps4X5I" role="ypkCx">
         <node concept="3G69iG" id="l3KBCk19Ve" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHEpL" resolve="BUILD_DIR" />
+          <ref role="3G69iJ" node="6_CUGSFHEpL" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19Vf" role="ys$fl">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk19V8" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
       </node>
     </node>
     <node concept="3O_Fa1" id="6_CUGSFKie$" role="12RR68">
       <node concept="ysyOp" id="7EZ1Sps4X5J" role="ypkCg">
         <node concept="3G69iG" id="l3KBCk19UR" role="ysyOA">
-          <ref role="3G69iJ" node="6_CUGSFHEpL" resolve="BUILD_DIR" />
+          <ref role="3G69iJ" node="6_CUGSFHEpL" />
         </node>
       </node>
       <node concept="3O_FaX" id="6_CUGSFKiJE" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk19UU" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19V1" role="3G69ia">
           <property role="3G69iL" value=" mkdir -p " />
@@ -1572,12 +1572,12 @@
     <node concept="3O_Fa1" id="6_CUGSFKiNi" role="12RR68">
       <node concept="ysyOp" id="7EZ1Sps4X5L" role="ypkCg">
         <node concept="3G69iG" id="l3KBCk19UA" role="ysyOA">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
       </node>
       <node concept="3O_FaX" id="6_CUGSFKiNj" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk19UD" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19UK" role="3G69ia">
           <property role="3G69iL" value=" mkdir -p " />
@@ -1593,48 +1593,48 @@
       </node>
       <node concept="ys$fk" id="7EZ1Sps4X5Q" role="ypkCx">
         <node concept="3G69iG" id="l3KBCk18tP" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHSvM" resolve="FW_FILE_1" />
+          <ref role="3G69iJ" node="6_CUGSFHSvM" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19bY" role="ys$fl">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk19bX" role="ys$fl">
-          <ref role="3G69iJ" node="6_CUGSFHSMw" resolve="FW_FILE_2" />
+          <ref role="3G69iJ" node="6_CUGSFHSMw" />
         </node>
       </node>
       <node concept="3O_FaX" id="6_CUGSFKk5E" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk18tV" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFDISi" resolve="ESPTOOL" />
+          <ref role="3G69iJ" node="6_CUGSFDISi" />
         </node>
         <node concept="3G69iQ" id="l3KBCk18u2" role="3G69ia">
           <property role="3G69iL" value=" --port " />
         </node>
         <node concept="3G69iG" id="l3KBCk18u1" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFEXbf" resolve="ESPPORT" />
+          <ref role="3G69iJ" node="6_CUGSFEXbf" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19bJ" role="3G69ia">
           <property role="3G69iL" value=" write_flash " />
         </node>
         <node concept="3G69iG" id="l3KBCk19bI" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFmWd" resolve="FW_FILE_1_ADDR" />
+          <ref role="3G69iJ" node="6_CUGSFFmWd" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19TS" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk19TR" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFHSvM" resolve="FW_FILE_1" />
+          <ref role="3G69iJ" node="6_CUGSFHSvM" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19TT" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk19c5" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFFnk2" resolve="FW_FILE_2_ADDR" />
+          <ref role="3G69iJ" node="6_CUGSFFnk2" />
         </node>
         <node concept="3G69iQ" id="l3KBCk19Uf" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk19Ue" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFHSMw" resolve="FW_FILE_2" />
+          <ref role="3G69iJ" node="6_CUGSFHSMw" />
         </node>
       </node>
     </node>
@@ -1646,19 +1646,19 @@
       </node>
       <node concept="3O_FaX" id="6_CUGSFKkUx" role="38Bv6S">
         <node concept="3G69iG" id="l3KBCk18tD" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFJvUA" resolve="Q" />
+          <ref role="3G69iJ" node="6_CUGSFJvUA" />
         </node>
         <node concept="3G69iQ" id="l3KBCk18tE" role="3G69ia">
           <property role="3G69iL" value=" rm -rf " />
         </node>
         <node concept="3G69iG" id="l3KBCk18tu" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFCEOU" resolve="FW_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCEOU" />
         </node>
         <node concept="3G69iQ" id="l3KBCk18tw" role="3G69ia">
           <property role="3G69iL" value=" " />
         </node>
         <node concept="3G69iG" id="l3KBCk18to" role="3G69ia">
-          <ref role="3G69iJ" node="6_CUGSFCENS" resolve="BUILD_BASE" />
+          <ref role="3G69iJ" node="6_CUGSFCENS" />
         </node>
       </node>
     </node>
@@ -1820,7 +1820,7 @@
                 <property role="2ccuoM" value="true" />
                 <node concept="1_9egQ" id="5usoWIJrRtP" role="3XIRFZ">
                   <node concept="3O_q_g" id="5usoWIJrRtN" role="1_9egR">
-                    <ref role="3O_q_h" node="5usoWIJrO3L" resolve="messageFunction" />
+                    <ref role="3O_q_h" node="5usoWIJrO3L" />
                     <node concept="3TlMh9" id="5usoWIJrTaE" role="3O_q_j">
                       <property role="2hmy$m" value="42" />
                       <node concept="2b32R4" id="5usoWIJs7_$" role="lGtFl">
@@ -1925,7 +1925,7 @@
                 <node concept="1_9egQ" id="5usoWIJ2LL9" role="3XIRFZ">
                   <node concept="3TM6Ey" id="5usoWIJ2LLa" role="1_9egR">
                     <node concept="1S7827" id="5usoWIJ2LLb" role="1_9fRO">
-                      <ref role="1S7826" node="5usoWIJ2LHR" resolve="messageCount" />
+                      <ref role="1S7826" node="5usoWIJ2LHR" />
                       <node concept="1ZhdrF" id="5usoWIJ2LLc" role="lGtFl">
                         <property role="2qtEX8" value="var" />
                         <property role="P3scX" value="6d11763d-483d-4b2b-8efc-09336c1b0001/6610873504380357354/6610873504380357355" />
@@ -2088,7 +2088,7 @@
                 <node concept="3XIRFW" id="5usoWIJ2LMa" role="c0U17">
                   <node concept="1_9egQ" id="5usoWIJsph8" role="3XIRFZ">
                     <node concept="3O_q_g" id="5usoWIJsph9" role="1_9egR">
-                      <ref role="3O_q_h" node="5usoWIJsn3L" resolve="messageFunction" />
+                      <ref role="3O_q_h" node="5usoWIJsn3L" />
                       <node concept="3TlMh9" id="5usoWIJspha" role="3O_q_j">
                         <property role="2hmy$m" value="42" />
                         <node concept="2b32R4" id="5usoWIJsphb" role="lGtFl">
@@ -2193,7 +2193,7 @@
                   <node concept="1_9egQ" id="5usoWIJsphv" role="3XIRFZ">
                     <node concept="3TM6Ey" id="5usoWIJsphw" role="1_9egR">
                       <node concept="1S7827" id="5usoWIJsphx" role="1_9fRO">
-                        <ref role="1S7826" node="5usoWIJ2LLU" resolve="messageCount" />
+                        <ref role="1S7826" node="5usoWIJ2LLU" />
                         <node concept="1ZhdrF" id="5usoWIJsphy" role="lGtFl">
                           <property role="2qtEX8" value="var" />
                           <property role="P3scX" value="6d11763d-483d-4b2b-8efc-09336c1b0001/6610873504380357354/6610873504380357355" />
@@ -2386,7 +2386,7 @@
                 <property role="2ccuoM" value="true" />
                 <node concept="1_9egQ" id="5usoWIJr_tr" role="3XIRFZ">
                   <node concept="3O_q_g" id="5usoWIJr_tp" role="1_9egR">
-                    <ref role="3O_q_h" node="5usoWIJrzHI" resolve="messageFunction" />
+                    <ref role="3O_q_h" node="5usoWIJrzHI" />
                     <node concept="3TlMh9" id="5usoWIJrBb0" role="3O_q_j">
                       <property role="2hmy$m" value="12" />
                       <node concept="29HgVG" id="5usoWIJrDnq" role="lGtFl">
@@ -2528,7 +2528,7 @@
                 <node concept="1_9egQ" id="5usoWIJ2LUq" role="3XIRFZ">
                   <node concept="3TM6Ey" id="5usoWIJ2LUr" role="1_9egR">
                     <node concept="1S7827" id="5usoWIJ2LUs" role="1_9fRO">
-                      <ref role="1S7826" node="5usoWIJ2LQx" resolve="messageCount" />
+                      <ref role="1S7826" node="5usoWIJ2LQx" />
                       <node concept="1ZhdrF" id="5usoWIJ2LUt" role="lGtFl">
                         <property role="2qtEX8" value="var" />
                         <property role="P3scX" value="6d11763d-483d-4b2b-8efc-09336c1b0001/6610873504380357354/6610873504380357355" />
@@ -2825,7 +2825,7 @@
                             </node>
                           </node>
                           <node concept="3ZUYvv" id="5usoWIJ5nck" role="1S8S4V">
-                            <ref role="3ZUYvu" node="5usoWIJ3K33" resolve="prop" />
+                            <ref role="3ZUYvu" node="5usoWIJ3K33" />
                             <node concept="1ZhdrF" id="5usoWIJ5o2A" role="lGtFl">
                               <property role="P3scX" value="6d11763d-483d-4b2b-8efc-09336c1b0001/2093108837558505658/2093108837558505659" />
                               <property role="2qtEX8" value="arg" />
@@ -2859,7 +2859,7 @@
                     </node>
                     <node concept="2sYeqF" id="5usoWIJ5OHi" role="19_wF2">
                       <node concept="3ZUYvv" id="5usoWIJ5TzC" role="2sYeqE">
-                        <ref role="3ZUYvu" node="5usoWIJ3OdE" resolve="loc" />
+                        <ref role="3ZUYvu" node="5usoWIJ3OdE" />
                       </node>
                     </node>
                     <node concept="19_wF0" id="5usoWIJoLvG" role="19_wF2">

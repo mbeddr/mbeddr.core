@@ -137,7 +137,7 @@
       <property role="2OOxQR" value="false" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zMAsN" role="lIfQt">
-        <ref role="3cM6IK" node="5dchr4Qk7Kx" resolve="test" />
+        <ref role="3cM6IK" node="5dchr4Qk7Kx" />
       </node>
     </node>
   </node>
@@ -156,7 +156,7 @@
     <node concept="2eOfOl" id="5dchr4Qkafz" role="2ePNbc">
       <property role="TrG5h" value="Main" />
       <node concept="2v9HqM" id="5dchr4Qkaf_" role="2eOfOg">
-        <ref role="2v9HqP" node="5dchr4Qk7m9" resolve="Main" />
+        <ref role="2v9HqP" node="5dchr4Qk7m9" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyj7l" role="1kZvWc">
         <property role="TrG5h" value="any" />

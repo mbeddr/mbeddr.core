@@ -284,7 +284,7 @@
         </node>
         <node concept="WlspI" id="L5b1s45ckq" role="3XIRFZ">
           <node concept="1S7827" id="L5b1s45ckU" role="Wlsuc">
-            <ref role="1S7826" node="L5b1s45c05" resolve="my_param1" />
+            <ref role="1S7826" node="L5b1s45c05" />
           </node>
           <node concept="1vV05I" id="L5b1s45mdn" role="2DF6ot">
             <property role="n43Ve" value="false" />
@@ -298,7 +298,7 @@
         </node>
         <node concept="WlspI" id="L5b1s45cpV" role="3XIRFZ">
           <node concept="1S7827" id="L5b1s45cqw" role="Wlsuc">
-            <ref role="1S7826" node="L5b1s45c0K" resolve="my_param2" />
+            <ref role="1S7826" node="L5b1s45c0K" />
           </node>
           <node concept="1vV05I" id="L5b1s45omK" role="2DF6ot">
             <property role="n43Ve" value="false" />
@@ -323,15 +323,15 @@
         <node concept="1_9egQ" id="L5b1s45cx2" role="3XIRFZ">
           <node concept="3pqW6w" id="L5b1s45cxH" role="1_9egR">
             <node concept="1S7827" id="L5b1s45cx0" role="3TlMhI">
-              <ref role="1S7826" node="L5b1s45cuE" resolve="my_return_value" />
+              <ref role="1S7826" node="L5b1s45cuE" />
             </node>
             <node concept="3O_q_g" id="L5b1s45crD" role="3TlMhJ">
-              <ref role="3O_q_h" node="L5b1s45ce_" resolve="sum" />
+              <ref role="3O_q_h" node="L5b1s45ce_" />
               <node concept="1S7827" id="L5b1s45csl" role="3O_q_j">
-                <ref role="1S7826" node="L5b1s45c05" resolve="my_param1" />
+                <ref role="1S7826" node="L5b1s45c05" />
               </node>
               <node concept="1S7827" id="L5b1s45ct0" role="3O_q_j">
-                <ref role="1S7826" node="L5b1s45c0K" resolve="my_param2" />
+                <ref role="1S7826" node="L5b1s45c0K" />
               </node>
             </node>
           </node>
@@ -349,7 +349,7 @@
         <node concept="Y9XUq" id="L5b1s45cTI" role="3XIRFZ">
           <node concept="25Bbzn" id="L5b1s45$ir" role="Y9XUp">
             <node concept="1S7827" id="L5b1s45cVo" role="3TlMhI">
-              <ref role="1S7826" node="L5b1s45cuE" resolve="my_return_value" />
+              <ref role="1S7826" node="L5b1s45cuE" />
             </node>
             <node concept="3TlMh9" id="L5b1s45cXe" role="3TlMhJ">
               <property role="2hmy$m" value="42" />
@@ -359,7 +359,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="L5b1s45cic" role="2OODSX">
-      <ref role="3GEb4d" node="L5b1s45cdn" resolve="_000_system_under_verification" />
+      <ref role="3GEb4d" node="L5b1s45cdn" />
     </node>
   </node>
   <node concept="2v9HqL" id="L5b1s45c6Y">
@@ -375,16 +375,16 @@
     <node concept="1gr5cj" id="L5b1s45cbg" role="2ePNbc">
       <property role="TrG5h" value="pan__010_first_harness" />
       <node concept="2v9HqM" id="L5b1s45cbh" role="2eOfOg">
-        <ref role="2v9HqP" node="L5b1s43YJv" resolve="_010_first_harness" />
+        <ref role="2v9HqP" node="L5b1s43YJv" />
       </node>
       <node concept="2v9HqM" id="L5b1s45dhy" role="2eOfOg">
-        <ref role="2v9HqP" node="L5b1s45cdn" resolve="_000_system_under_verification" />
+        <ref role="2v9HqP" node="L5b1s45cdn" />
       </node>
       <node concept="2v9HqM" id="L5b1s45dhz" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
       </node>
       <node concept="2v9HqM" id="L5b1s45dhx" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
       </node>
       <node concept="1l1$C7" id="tl4PXiqHRs" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -395,7 +395,7 @@
         <property role="3ajGZ3" value="31.10.2018 21:53:27" />
         <property role="19LeSh" value="property_name" />
         <property role="3ajGZW" value="Dan" />
-        <ref role="19LoX1" node="L5b1s45cbg" resolve="pan__010_first_harness" />
+        <ref role="19LoX1" node="L5b1s45cbg" />
         <node concept="19SGf9" id="L5b1s45DPb" role="3ajGZ5">
           <node concept="19SUe$" id="L5b1s45DPc" role="19SJt6">
             <property role="19SUeA" value="the name of thie spin executable should have the form&#10;&quot;pan_&quot; + name_of_harness_module" />
@@ -406,7 +406,7 @@
         <property role="3ajGZW" value="Dan" />
         <property role="3ajGZ3" value="31.10.2018 21:55:14" />
         <property role="19LeSh" value="Constant_kz4dps_d0" />
-        <ref role="19LoX1" node="L5b1s45cbg" resolve="pan__010_first_harness" />
+        <ref role="19LoX1" node="L5b1s45cbg" />
         <node concept="19SGf9" id="L5b1s45DPz" role="3ajGZ5">
           <node concept="19SUe$" id="L5b1s45DP$" role="19SJt6">
             <property role="19SUeA" value="the harness module and all referenced modules of the SUV (including the external modules representing headers) must be referenced by the spin-executable" />
@@ -419,7 +419,7 @@
     <property role="TrG5h" value="_000_analysis_configuration_container" />
     <node concept="apm28" id="L5b1s45cb8" role="3V$2$K">
       <property role="3SeVAx" value="true" />
-      <ref role="apm5G" node="L5b1s43YJv" resolve="_010_first_harness" />
+      <ref role="apm5G" node="L5b1s43YJv" />
     </node>
     <node concept="2f$52y" id="L5b1s45DQi" role="lGtFl">
       <node concept="3vAitl" id="L5b1s45DQj" role="2f$52z">
@@ -444,10 +444,10 @@
         <node concept="2BFjQ_" id="L5b1s45cGi" role="3XIRFZ">
           <node concept="2BOciq" id="L5b1s45w6F" role="2BFjQA">
             <node concept="3ZUYvv" id="L5b1s45w6J" role="3TlMhJ">
-              <ref role="3ZUYvu" node="L5b1s45cfG" resolve="param2" />
+              <ref role="3ZUYvu" node="L5b1s45cfG" />
             </node>
             <node concept="3ZUYvv" id="L5b1s45w64" role="3TlMhI">
-              <ref role="3ZUYvu" node="L5b1s45cf0" resolve="param1" />
+              <ref role="3ZUYvu" node="L5b1s45cf0" />
             </node>
           </node>
         </node>
@@ -472,7 +472,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="L5b1s45cdv" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
     </node>
   </node>
 </model>

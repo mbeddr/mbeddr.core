@@ -386,7 +386,7 @@
         <node concept="1AkAi2" id="6lKxXE1CLzX" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="6lKxXE1BOMF" resolve="MessageEvent" />
+          <ref role="1AkAi1" node="6lKxXE1BOMF" />
         </node>
       </node>
       <node concept="1dpRTG" id="3YoJoyKghHd" role="HszBJ">
@@ -407,7 +407,7 @@
         <node concept="1AkAi2" id="6EVEFV$jHmT" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="6EVEFV$jG0q" resolve="DroneState" />
+          <ref role="1AkAi1" node="6EVEFV$jG0q" />
         </node>
       </node>
       <node concept="1dpRTG" id="6EVEFV$jJIb" role="HszBJ">
@@ -418,7 +418,7 @@
           <node concept="1AkAi2" id="6EVEFV$jJI9" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1AkAi1" node="6EVEFV$jJji" resolve="EventWhileInactive" />
+            <ref role="1AkAi1" node="6EVEFV$jJji" />
           </node>
         </node>
       </node>
@@ -451,7 +451,7 @@
           <node concept="1sgJKr" id="6lKxXE1_gbl" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6lKxXE1_ev5" resolve="Message" />
+            <ref role="1sgJKq" node="6lKxXE1_ev5" />
           </node>
         </node>
       </node>
@@ -502,7 +502,7 @@
         <node concept="1AkAi2" id="6EVEFV$jDBt" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="6EVEFV$jCWZ" resolve="Controller" />
+          <ref role="1AkAi1" node="6EVEFV$jCWZ" />
         </node>
       </node>
     </node>
@@ -532,7 +532,7 @@
         <node concept="1AkAi2" id="6EVEFV$jDY0" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="6EVEFV$jCWZ" resolve="Controller" />
+          <ref role="1AkAi1" node="6EVEFV$jCWZ" />
         </node>
       </node>
     </node>
@@ -562,7 +562,7 @@
         <node concept="1AkAi2" id="6EVEFV$jEIy" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="6EVEFV$jEfU" resolve="Device" />
+          <ref role="1AkAi1" node="6EVEFV$jEfU" />
         </node>
       </node>
     </node>
@@ -592,7 +592,7 @@
         <node concept="1AkAi2" id="6EVEFV$jEZY" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="6EVEFV$jEfU" resolve="Device" />
+          <ref role="1AkAi1" node="6EVEFV$jEfU" />
         </node>
       </node>
     </node>
@@ -604,10 +604,10 @@
       <node concept="1AkAi2" id="31ZMwFtV2g9" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1AkAi1" node="31ZMwFtV2a9" resolve="RCState" />
+        <ref role="1AkAi1" node="31ZMwFtV2a9" />
       </node>
       <node concept="1AkAhK" id="31ZMwFtV2tL" role="1cecVj">
-        <ref role="1AkAhZ" node="31ZMwFtV2aa" resolve="uninitialized" />
+        <ref role="1AkAhZ" node="31ZMwFtV2aa" />
       </node>
     </node>
     <node concept="2NXPZ9" id="31ZMwFtV2f7" role="N3F5h">
@@ -628,33 +628,33 @@
         </node>
         <node concept="1_9egQ" id="6EVEFV$jFda" role="3XIRFZ">
           <node concept="3O_q_g" id="6EVEFV$jFd9" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jEEr" resolve="startDevice" />
+            <ref role="3O_q_h" node="6EVEFV$jEEr" />
             <node concept="1AkAhK" id="6EVEFV$jFdo" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jEfV" resolve="keyboard" />
+              <ref role="1AkAhZ" node="6EVEFV$jEfV" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6EVEFV$jFiB" role="3XIRFZ">
           <node concept="3O_q_g" id="6EVEFV$jFi_" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jEVK" resolve="stopDevice" />
+            <ref role="3O_q_h" node="6EVEFV$jEVK" />
             <node concept="1AkAhK" id="6EVEFV$jFmk" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jEfV" resolve="keyboard" />
+              <ref role="1AkAhZ" node="6EVEFV$jEfV" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6EVEFV$jFAX" role="3XIRFZ">
           <node concept="3O_q_g" id="6EVEFV$jFAV" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jEEr" resolve="startDevice" />
+            <ref role="3O_q_h" node="6EVEFV$jEEr" />
             <node concept="1AkAhK" id="6EVEFV$jFC4" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jEk9" resolve="accelerometer" />
+              <ref role="1AkAhZ" node="6EVEFV$jEk9" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6EVEFV$jFDW" role="3XIRFZ">
           <node concept="3O_q_g" id="6EVEFV$jFDU" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jEVK" resolve="stopDevice" />
+            <ref role="3O_q_h" node="6EVEFV$jEVK" />
             <node concept="1AkAhK" id="6EVEFV$jFFo" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jEk9" resolve="accelerometer" />
+              <ref role="1AkAhZ" node="6EVEFV$jEk9" />
             </node>
           </node>
         </node>
@@ -663,20 +663,20 @@
           <node concept="3XIRFW" id="6EVEFV$jFNB" role="c0U17">
             <node concept="1_9egQ" id="6EVEFV$jIfV" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1AFyW" role="1_9egR">
-                <ref role="3O_q_h" node="6lKxXE1ADq6" resolve="enterFromConnected2InitializingState" />
+                <ref role="3O_q_h" node="6lKxXE1ADq6" />
               </node>
             </node>
           </node>
           <node concept="3TlM44" id="6EVEFV$jId8" role="c0U16">
             <node concept="1AkAhK" id="6EVEFV$jIeD" role="3TlMhJ">
-              <ref role="1AkAhZ" node="6EVEFV$jG0r" resolve="connected" />
+              <ref role="1AkAhZ" node="6EVEFV$jG0r" />
             </node>
             <node concept="2qmXGp" id="6EVEFV$jI6N" role="3TlMhI">
               <node concept="1E4Tgc" id="6EVEFV$jI7A" role="1ESnxz">
-                <ref role="1E4Tge" node="6EVEFV$jG_s" resolve="droneState" />
+                <ref role="1E4Tge" node="6EVEFV$jG_s" />
               </node>
               <node concept="3ZUYvv" id="6EVEFV$jHY_" role="1_9fRO">
-                <ref role="3ZUYvu" node="6EVEFV$jHsn" resolve="inputData" />
+                <ref role="3ZUYvu" node="6EVEFV$jHsn" />
               </node>
             </node>
           </node>
@@ -684,9 +684,9 @@
             <node concept="3XIRFW" id="5_aHpB69pI4" role="1ly_ph">
               <node concept="1_9egQ" id="5_aHpB69qO2" role="3XIRFZ">
                 <node concept="3O_q_g" id="6EVEFV$jIsu" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtVjfe" resolve="enterConnectingState" />
+                  <ref role="3O_q_h" node="31ZMwFtVjfe" />
                   <node concept="3ZUYvv" id="6EVEFV$jIxp" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6EVEFV$jHVG" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6EVEFV$jHVG" />
                   </node>
                 </node>
               </node>
@@ -707,7 +707,7 @@
           <node concept="1sgJKr" id="6EVEFV$jHsm" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -719,7 +719,7 @@
           <node concept="1sgJKr" id="6EVEFV$jHVF" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -746,22 +746,22 @@
                 <node concept="2BPB98" id="6EVEFV$jKiV" role="3TlMhJ">
                   <node concept="3TlM44" id="6EVEFV$jKH8" role="1_9fRO">
                     <node concept="1AkAhK" id="6EVEFV$jKU5" role="3TlMhJ">
-                      <ref role="1AkAhZ" node="6EVEFV$jJjj" resolve="inactivity" />
+                      <ref role="1AkAhZ" node="6EVEFV$jJjj" />
                     </node>
                     <node concept="3wxyx2" id="6EVEFV$jKmH" role="3TlMhI">
                       <node concept="2qmXGp" id="6EVEFV$jKuM" role="1_9fRO">
                         <node concept="1E4Tgc" id="6EVEFV$jKEZ" role="1ESnxz">
-                          <ref role="1E4Tge" node="6EVEFV$jJIb" resolve="inactiveEvent" />
+                          <ref role="1E4Tge" node="6EVEFV$jJIb" />
                         </node>
                         <node concept="3ZUYvv" id="6EVEFV$jKqz" role="1_9fRO">
-                          <ref role="3ZUYvu" node="6EVEFV$jIZQ" resolve="inputData" />
+                          <ref role="3ZUYvu" node="6EVEFV$jIZQ" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="6EVEFV$jKc1" role="3TlMhI">
-                  <ref role="3ZVs_2" node="6EVEFV$jIOo" resolve="inactivity" />
+                  <ref role="3ZVs_2" node="6EVEFV$jIOo" />
                 </node>
               </node>
             </node>
@@ -770,10 +770,10 @@
             <node concept="Ea8Gl" id="6EVEFV$jK0W" role="3TlMhJ" />
             <node concept="2qmXGp" id="6EVEFV$jJU9" role="3TlMhI">
               <node concept="1E4Tgc" id="6EVEFV$jJWm" role="1ESnxz">
-                <ref role="1E4Tge" node="6EVEFV$jJIb" resolve="inactiveEvent" />
+                <ref role="1E4Tge" node="6EVEFV$jJIb" />
               </node>
               <node concept="3ZUYvv" id="6EVEFV$jJQY" role="1_9fRO">
-                <ref role="3ZUYvu" node="6EVEFV$jIZQ" resolve="inputData" />
+                <ref role="3ZUYvu" node="6EVEFV$jIZQ" />
               </node>
             </node>
           </node>
@@ -782,15 +782,15 @@
           <node concept="3XIRFW" id="6EVEFV$jLjx" role="c0U17">
             <node concept="1_9egQ" id="6EVEFV$jLzR" role="3XIRFZ">
               <node concept="3O_q_g" id="6EVEFV$jLzQ" role="1_9egR">
-                <ref role="3O_q_h" node="31ZMwFtVf4Z" resolve="enterStateStandby" />
+                <ref role="3O_q_h" node="31ZMwFtVf4Z" />
                 <node concept="3ZUYvv" id="6EVEFV$jM5N" role="3O_q_j">
-                  <ref role="3ZUYvu" node="6EVEFV$jLQ$" resolve="outputData" />
+                  <ref role="3ZUYvu" node="6EVEFV$jLQ$" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3ZVu4v" id="6EVEFV$jLwF" role="c0U16">
-            <ref role="3ZVs_2" node="6EVEFV$jIOo" resolve="inactivity" />
+            <ref role="3ZVs_2" node="6EVEFV$jIOo" />
           </node>
         </node>
       </node>
@@ -806,7 +806,7 @@
           <node concept="1sgJKr" id="6EVEFV$jIZP" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -818,7 +818,7 @@
           <node concept="1sgJKr" id="6EVEFV$jLQz" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -844,80 +844,80 @@
             <node concept="1_9egQ" id="6q20vztoM_b" role="3XIRFZ">
               <node concept="3pqW6w" id="6q20vztoML5" role="1_9egR">
                 <node concept="1AkAhK" id="6q20vztoMU8" role="3TlMhJ">
-                  <ref role="1AkAhZ" node="31ZMwFtV34u" resolve="connected" />
+                  <ref role="1AkAhZ" node="31ZMwFtV34u" />
                 </node>
                 <node concept="1S7827" id="6q20vztoM_9" role="3TlMhI">
-                  <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+                  <ref role="1S7826" node="31ZMwFtV2gb" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$Q4X" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$Q4V" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDzC" />
                 <node concept="1AkAhK" id="6lKxXE1$Q5E" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD0P" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$Q78" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$Q76" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDzC" />
                 <node concept="1AkAhK" id="6lKxXE1$Q8a" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD1g" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$Qds" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$Qdq" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDzC" />
                 <node concept="1AkAhK" id="6lKxXE1$Qf8" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD2r" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$Qh_" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$Qhz" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDzC" />
                 <node concept="1AkAhK" id="6lKxXE1$QjC" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD3b" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$Qmq" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$Qmo" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDzC" />
                 <node concept="1AkAhK" id="6lKxXE1$QoK" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD42" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$QxY" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$QxW" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDzC" />
                 <node concept="1AkAhK" id="6lKxXE1$Q$Y" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD5N" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="6lKxXE1$QSh" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$QSf" role="1_9egR">
-                <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+                <ref role="3O_q_h" node="6EVEFV$jDU4" />
                 <node concept="1AkAhK" id="6lKxXE1$QWg" role="3O_q_j">
-                  <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+                  <ref role="1AkAhZ" node="6EVEFV$jD9M" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3TlM44" id="6q20vztrnB5" role="c0U16">
             <node concept="1AkAhK" id="6q20vztruWG" role="3TlMhJ">
-              <ref role="1AkAhZ" node="6EVEFV$jG0r" resolve="connected" />
+              <ref role="1AkAhZ" node="6EVEFV$jG0r" />
             </node>
             <node concept="2qmXGp" id="6lKxXE1$PGG" role="3TlMhI">
               <node concept="1E4Tgc" id="6lKxXE1$POt" role="1ESnxz">
-                <ref role="1E4Tge" node="6EVEFV$jG_s" resolve="droneState" />
+                <ref role="1E4Tge" node="6EVEFV$jG_s" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1$PxO" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1$Pvf" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1$Pvf" />
               </node>
             </node>
           </node>
@@ -926,66 +926,66 @@
               <node concept="1_9egQ" id="6q20vztp2SE" role="3XIRFZ">
                 <node concept="3pqW6w" id="6q20vztp55g" role="1_9egR">
                   <node concept="1AkAhK" id="6q20vztp7ht" role="3TlMhJ">
-                    <ref role="1AkAhZ" node="31ZMwFtV399" resolve="disconnected" />
+                    <ref role="1AkAhZ" node="31ZMwFtV399" />
                   </node>
                   <node concept="1S7827" id="6q20vztp2SC" role="3TlMhI">
-                    <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+                    <ref role="1S7826" node="31ZMwFtV2gb" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$THF" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$THG" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDzC" />
                   <node concept="1AkAhK" id="6lKxXE1$THH" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD0P" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$THI" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$THJ" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDU4" />
                   <node concept="1AkAhK" id="6lKxXE1$THK" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD1g" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$THO" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$THP" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDzC" />
                   <node concept="1AkAhK" id="6lKxXE1$THQ" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD2r" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$THR" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$THS" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDzC" />
                   <node concept="1AkAhK" id="6lKxXE1$THT" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD3b" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$THU" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$THV" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDzC" />
                   <node concept="1AkAhK" id="6lKxXE1$THW" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD42" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$TI0" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$TI1" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDU4" />
                   <node concept="1AkAhK" id="6lKxXE1$TI2" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD5N" />
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="6lKxXE1$TI9" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1$TIa" role="1_9egR">
-                  <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+                  <ref role="3O_q_h" node="6EVEFV$jDU4" />
                   <node concept="1AkAhK" id="5_aHpB69Nj5" role="3O_q_j">
-                    <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+                    <ref role="1AkAhZ" node="6EVEFV$jD9M" />
                   </node>
                 </node>
               </node>
@@ -1005,7 +1005,7 @@
           <node concept="1sgJKr" id="6lKxXE1$Pve" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -1030,35 +1030,35 @@
           <node concept="3XIRFW" id="6lKxXE1$W_p" role="c0U17">
             <node concept="1_9egQ" id="6lKxXE1$X5h" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1$X5g" role="1_9egR">
-                <ref role="3O_q_h" node="31ZMwFtVfyb" resolve="enterStateSwitchingtoEcMode" />
+                <ref role="3O_q_h" node="31ZMwFtVfyb" />
               </node>
             </node>
           </node>
           <node concept="2qmXGp" id="6lKxXE1$WSw" role="c0U16">
             <node concept="1E4Tgc" id="6lKxXE1$WWD" role="1ESnxz">
-              <ref role="1E4Tge" node="6lKxXE1$W2v" resolve="ecStateIssued" />
+              <ref role="1E4Tge" node="6lKxXE1$W2v" />
             </node>
             <node concept="3ZUYvv" id="6lKxXE1$WIQ" role="1_9fRO">
-              <ref role="3ZUYvu" node="6lKxXE1$W_E" resolve="inputData" />
+              <ref role="3ZUYvu" node="6lKxXE1$W_E" />
             </node>
           </node>
           <node concept="gg_gk" id="6lKxXE1_1of" role="gg_kh">
             <node concept="3XIRFW" id="6lKxXE1_1og" role="gg_gl">
               <node concept="1_9egQ" id="6lKxXE1_1Ae" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1_1Ad" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtVjfe" resolve="enterConnectingState" />
+                  <ref role="3O_q_h" node="31ZMwFtVjfe" />
                   <node concept="3ZUYvv" id="6lKxXE1_1As" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1$Xpj" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1$Xpj" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="2qmXGp" id="6lKxXE1_1wB" role="gg_gt">
               <node concept="1E4Tgc" id="6lKxXE1_1_8" role="1ESnxz">
-                <ref role="1E4Tge" node="6lKxXE1$Zfe" resolve="connectIssued" />
+                <ref role="1E4Tge" node="6lKxXE1$Zfe" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1_1tF" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1$W_E" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1$W_E" />
               </node>
             </node>
           </node>
@@ -1066,23 +1066,23 @@
             <node concept="3XIRFW" id="6lKxXE1_1XS" role="gg_gl">
               <node concept="1_9egQ" id="6lKxXE1_39a" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1_399" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV9JJ" resolve="enterFromPreparingStandby2ConnectedState" />
+                  <ref role="3O_q_h" node="31ZMwFtV9JJ" />
                   <node concept="3ZUYvv" id="6lKxXE1_3ky" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1$Xpj" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1$Xpj" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3TlM44" id="6lKxXE1_2eR" role="gg_gt">
               <node concept="1AkAhK" id="6lKxXE1_30O" role="3TlMhJ">
-                <ref role="1AkAhZ" node="6EVEFV$jG6z" resolve="unconnected" />
+                <ref role="1AkAhZ" node="6EVEFV$jG6z" />
               </node>
               <node concept="2qmXGp" id="6lKxXE1_27R" role="3TlMhI">
                 <node concept="1E4Tgc" id="6lKxXE1_2de" role="1ESnxz">
-                  <ref role="1E4Tge" node="6EVEFV$jG_s" resolve="droneState" />
+                  <ref role="1E4Tge" node="6EVEFV$jG_s" />
                 </node>
                 <node concept="3ZUYvv" id="6lKxXE1_24V" role="1_9fRO">
-                  <ref role="3ZUYvu" node="6lKxXE1$W_E" resolve="inputData" />
+                  <ref role="3ZUYvu" node="6lKxXE1$W_E" />
                 </node>
               </node>
             </node>
@@ -1091,17 +1091,17 @@
             <node concept="3XIRFW" id="6lKxXE1_4d_" role="gg_gl">
               <node concept="1_9egQ" id="6lKxXE1_7rv" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1_7ru" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV9JJ" resolve="enterFromPreparingStandby2ConnectedState" />
+                  <ref role="3O_q_h" node="31ZMwFtV9JJ" />
                   <node concept="3ZUYvv" id="6lKxXE1_7rH" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1$Xpj" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1$Xpj" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3O_q_g" id="6lKxXE1_7hJ" role="gg_gt">
-              <ref role="3O_q_h" node="6lKxXE1_6vO" resolve="conditionsTransitionFromConnected2StandbyStateSatisfied" />
+              <ref role="3O_q_h" node="6lKxXE1_6vO" />
               <node concept="3ZUYvv" id="6lKxXE1_7hT" role="3O_q_j">
-                <ref role="3ZUYvu" node="6lKxXE1$W_E" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1$W_E" />
               </node>
             </node>
           </node>
@@ -1119,7 +1119,7 @@
           <node concept="1sgJKr" id="6lKxXE1$W_D" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -1131,7 +1131,7 @@
           <node concept="1sgJKr" id="6lKxXE1$Xpi" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -1156,35 +1156,35 @@
           <node concept="3XIRFW" id="6lKxXE1_7Mc" role="c0U17">
             <node concept="1_9egQ" id="6lKxXE1_7Su" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1_7St" role="1_9egR">
-                <ref role="3O_q_h" node="31ZMwFtVfyb" resolve="enterStateSwitchingtoEcMode" />
+                <ref role="3O_q_h" node="31ZMwFtVfyb" />
               </node>
             </node>
           </node>
           <node concept="2qmXGp" id="6lKxXE1_7Pp" role="c0U16">
             <node concept="1E4Tgc" id="6lKxXE1_7Ro" role="1ESnxz">
-              <ref role="1E4Tge" node="6lKxXE1$W2v" resolve="ecStateIssued" />
+              <ref role="1E4Tge" node="6lKxXE1$W2v" />
             </node>
             <node concept="3ZUYvv" id="6lKxXE1_7Ms" role="1_9fRO">
-              <ref role="3ZUYvu" node="6lKxXE1_7_k" resolve="inputData" />
+              <ref role="3ZUYvu" node="6lKxXE1_7_k" />
             </node>
           </node>
           <node concept="gg_gk" id="6lKxXE1_cdl" role="gg_kh">
             <node concept="3XIRFW" id="6lKxXE1_cdm" role="gg_gl">
               <node concept="1_9egQ" id="6lKxXE1_cPq" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1_cPp" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtVjfe" resolve="enterConnectingState" />
+                  <ref role="3O_q_h" node="31ZMwFtVjfe" />
                   <node concept="3ZUYvv" id="6lKxXE1_cPC" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1_7Bv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1_7Bv" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="2qmXGp" id="6lKxXE1_ctC" role="gg_gt">
               <node concept="1E4Tgc" id="6lKxXE1_cFf" role="1ESnxz">
-                <ref role="1E4Tge" node="6lKxXE1$Zfe" resolve="connectIssued" />
+                <ref role="1E4Tge" node="6lKxXE1$Zfe" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1_cqG" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1_7_k" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1_7_k" />
               </node>
             </node>
           </node>
@@ -1194,9 +1194,9 @@
                 <node concept="3XIRFW" id="6lKxXE1_hNs" role="c0U17">
                   <node concept="1_9egQ" id="6lKxXE1_jGb" role="3XIRFZ">
                     <node concept="3O_q_g" id="6lKxXE1_jGa" role="1_9egR">
-                      <ref role="3O_q_h" node="31ZMwFtVjfe" resolve="enterConnectingState" />
+                      <ref role="3O_q_h" node="31ZMwFtVjfe" />
                       <node concept="3ZUYvv" id="6lKxXE1_jGp" role="3O_q_j">
-                        <ref role="3ZUYvu" node="6lKxXE1_7Bv" resolve="outputData" />
+                        <ref role="3ZUYvu" node="6lKxXE1_7Bv" />
                       </node>
                     </node>
                   </node>
@@ -1207,14 +1207,14 @@
                   </node>
                   <node concept="2qmXGp" id="6lKxXE1_ifu" role="3TlMhI">
                     <node concept="1E4Tgc" id="6lKxXE1_i_x" role="1ESnxz">
-                      <ref role="1E4Tge" node="6lKxXE1_ffO" resolve="nrOfKeys" />
+                      <ref role="1E4Tge" node="6lKxXE1_ffO" />
                     </node>
                     <node concept="2qmXGp" id="6lKxXE1_hQ$" role="1_9fRO">
                       <node concept="1E4Tgc" id="6lKxXE1_iaV" role="1ESnxz">
-                        <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                        <ref role="1E4Tge" node="6lKxXE1_gbm" />
                       </node>
                       <node concept="3ZUYvv" id="6lKxXE1_hNB" role="1_9fRO">
-                        <ref role="3ZUYvu" node="6lKxXE1_7_k" resolve="inputData" />
+                        <ref role="3ZUYvu" node="6lKxXE1_7_k" />
                       </node>
                     </node>
                   </node>
@@ -1225,10 +1225,10 @@
               <node concept="Ea8Gl" id="6lKxXE1_h3A" role="3TlMhJ" />
               <node concept="2qmXGp" id="6lKxXE1_fyJ" role="3TlMhI">
                 <node concept="1E4Tgc" id="6lKxXE1_gMW" role="1ESnxz">
-                  <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                  <ref role="1E4Tge" node="6lKxXE1_gbm" />
                 </node>
                 <node concept="3ZUYvv" id="6lKxXE1_dek" role="1_9fRO">
-                  <ref role="3ZUYvu" node="6lKxXE1_7_k" resolve="inputData" />
+                  <ref role="3ZUYvu" node="6lKxXE1_7_k" />
                 </node>
               </node>
             </node>
@@ -1237,17 +1237,17 @@
             <node concept="3XIRFW" id="6lKxXE1_kGu" role="gg_gl">
               <node concept="1_9egQ" id="6lKxXE1_lmB" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1_lmA" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtVagL" resolve="enterFromPreparingStandby2UnconnectedState" />
+                  <ref role="3O_q_h" node="31ZMwFtVagL" />
                   <node concept="3ZUYvv" id="6lKxXE1_lwt" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1_7Bv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1_7Bv" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3O_q_g" id="6lKxXE1_lbY" role="gg_gt">
-              <ref role="3O_q_h" node="6lKxXE1_6vO" resolve="conditionsTransitionFromConnected2StandbyStateSatisfied" />
+              <ref role="3O_q_h" node="6lKxXE1_6vO" />
               <node concept="3ZUYvv" id="6lKxXE1_lc8" role="3O_q_j">
-                <ref role="3ZUYvu" node="6lKxXE1_7_k" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1_7_k" />
               </node>
             </node>
           </node>
@@ -1265,7 +1265,7 @@
           <node concept="1sgJKr" id="6lKxXE1_7_j" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -1277,7 +1277,7 @@
           <node concept="1sgJKr" id="6lKxXE1_7Bu" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -1302,33 +1302,33 @@
           <node concept="3XIRFW" id="6lKxXE1_sLK" role="c0U17">
             <node concept="1_9egQ" id="6lKxXE1_vD9" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1_vD8" role="1_9egR">
-                <ref role="3O_q_h" node="31ZMwFtVewr" resolve="enterFromPreparingStandby2ConnectingState" />
+                <ref role="3O_q_h" node="31ZMwFtVewr" />
                 <node concept="3ZUYvv" id="6lKxXE1_xGi" role="3O_q_j">
-                  <ref role="3ZUYvu" node="6lKxXE1_wK4" resolve="outputData" />
+                  <ref role="3ZUYvu" node="6lKxXE1_wK4" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3O_q_g" id="6lKxXE1_sM0" role="c0U16">
-            <ref role="3O_q_h" node="6lKxXE1_6vO" resolve="conditionsTransitionFromConnected2StandbyStateSatisfied" />
+            <ref role="3O_q_h" node="6lKxXE1_6vO" />
             <node concept="3ZUYvv" id="6lKxXE1_uK2" role="3O_q_j">
-              <ref role="3ZUYvu" node="6lKxXE1_tFm" resolve="inputData" />
+              <ref role="3ZUYvu" node="6lKxXE1_tFm" />
             </node>
           </node>
           <node concept="gg_gk" id="6lKxXE1_xRq" role="gg_kh">
             <node concept="3XIRFW" id="6lKxXE1_xRr" role="gg_gl">
               <node concept="1_9egQ" id="6lKxXE1_zKT" role="3XIRFZ">
                 <node concept="3O_q_g" id="6lKxXE1_zKS" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtVfyb" resolve="enterStateSwitchingtoEcMode" />
+                  <ref role="3O_q_h" node="31ZMwFtVfyb" />
                 </node>
               </node>
             </node>
             <node concept="2qmXGp" id="6lKxXE1_yOK" role="gg_gt">
               <node concept="1E4Tgc" id="6lKxXE1_zJN" role="1ESnxz">
-                <ref role="1E4Tge" node="6lKxXE1$W2v" resolve="ecStateIssued" />
+                <ref role="1E4Tge" node="6lKxXE1$W2v" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1_yLO" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1_tFm" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1_tFm" />
               </node>
             </node>
           </node>
@@ -1346,7 +1346,7 @@
           <node concept="1sgJKr" id="6lKxXE1_tFl" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -1358,7 +1358,7 @@
           <node concept="1sgJKr" id="6lKxXE1_wK3" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -1394,10 +1394,10 @@
                             </node>
                             <node concept="2qmXGp" id="5X2ZuWE1l0R" role="3TlMhI">
                               <node concept="1E4Tgc" id="5X2ZuWE1n8c" role="1ESnxz">
-                                <ref role="1E4Tge" node="5X2ZuWE4HNW" resolve="ledColor" />
+                                <ref role="1E4Tge" node="5X2ZuWE4HNW" />
                               </node>
                               <node concept="3ZUYvv" id="5X2ZuWE4nYX" role="1_9fRO">
-                                <ref role="3ZUYvu" node="5X2ZuWE44rq" resolve="outputData" />
+                                <ref role="3ZUYvu" node="5X2ZuWE44rq" />
                               </node>
                             </node>
                           </node>
@@ -1409,14 +1409,14 @@
                         </node>
                         <node concept="2qmXGp" id="5X2ZuWE0WMt" role="3TlMhI">
                           <node concept="1E4Tgc" id="5X2ZuWE0YJG" role="1ESnxz">
-                            <ref role="1E4Tge" node="3YoJoyKghHd" resolve="longestKeyPressLength" />
+                            <ref role="1E4Tge" node="3YoJoyKghHd" />
                           </node>
                           <node concept="2qmXGp" id="5X2ZuWE0UvX" role="1_9fRO">
                             <node concept="1E4Tgc" id="5X2ZuWE0Wrs" role="1ESnxz">
-                              <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                              <ref role="1E4Tge" node="6lKxXE1_gbm" />
                             </node>
                             <node concept="3ZUYvv" id="5X2ZuWE3k6t" role="1_9fRO">
-                              <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                              <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                             </node>
                           </node>
                         </node>
@@ -1430,10 +1430,10 @@
                               </node>
                               <node concept="2qmXGp" id="5X2ZuWE1tDM" role="3TlMhI">
                                 <node concept="1E4Tgc" id="5X2ZuWE1tDN" role="1ESnxz">
-                                  <ref role="1E4Tge" node="5X2ZuWE4HNW" resolve="ledColor" />
+                                  <ref role="1E4Tge" node="5X2ZuWE4HNW" />
                                 </node>
                                 <node concept="3ZUYvv" id="5X2ZuWE46DJ" role="1_9fRO">
-                                  <ref role="3ZUYvu" node="5X2ZuWE44rq" resolve="outputData" />
+                                  <ref role="3ZUYvu" node="5X2ZuWE44rq" />
                                 </node>
                               </node>
                             </node>
@@ -1445,14 +1445,14 @@
                           </node>
                           <node concept="2qmXGp" id="5X2ZuWE1e4o" role="3TlMhI">
                             <node concept="1E4Tgc" id="5X2ZuWE1g7b" role="1ESnxz">
-                              <ref role="1E4Tge" node="3YoJoyKghHd" resolve="longestKeyPressLength" />
+                              <ref role="1E4Tge" node="3YoJoyKghHd" />
                             </node>
                             <node concept="2qmXGp" id="5X2ZuWE1boU" role="1_9fRO">
                               <node concept="1E4Tgc" id="5X2ZuWE1dYD" role="1ESnxz">
-                                <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                                <ref role="1E4Tge" node="6lKxXE1_gbm" />
                               </node>
                               <node concept="3ZUYvv" id="5X2ZuWE3l8X" role="1_9fRO">
-                                <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                                <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                               </node>
                             </node>
                           </node>
@@ -1466,14 +1466,14 @@
                     </node>
                     <node concept="2qmXGp" id="5X2ZuWE0NwV" role="3TlMhI">
                       <node concept="1E4Tgc" id="5X2ZuWE0PYe" role="1ESnxz">
-                        <ref role="1E4Tge" node="6lKxXE1_ffO" resolve="nrOfKeys" />
+                        <ref role="1E4Tge" node="6lKxXE1_ffO" />
                       </node>
                       <node concept="2qmXGp" id="5X2ZuWE0Ljr" role="1_9fRO">
                         <node concept="1E4Tgc" id="5X2ZuWE0N9m" role="1ESnxz">
-                          <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                          <ref role="1E4Tge" node="6lKxXE1_gbm" />
                         </node>
                         <node concept="3ZUYvv" id="5X2ZuWE3j1F" role="1_9fRO">
-                          <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                          <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                         </node>
                       </node>
                     </node>
@@ -1489,10 +1489,10 @@
                               </node>
                               <node concept="2qmXGp" id="5X2ZuWE1Ah6" role="3TlMhI">
                                 <node concept="1E4Tgc" id="5X2ZuWE1Ah7" role="1ESnxz">
-                                  <ref role="1E4Tge" node="5X2ZuWE4HNW" resolve="ledColor" />
+                                  <ref role="1E4Tge" node="5X2ZuWE4HNW" />
                                 </node>
                                 <node concept="3ZUYvv" id="5X2ZuWE46LE" role="1_9fRO">
-                                  <ref role="3ZUYvu" node="5X2ZuWE44rq" resolve="outputData" />
+                                  <ref role="3ZUYvu" node="5X2ZuWE44rq" />
                                 </node>
                               </node>
                             </node>
@@ -1504,14 +1504,14 @@
                           </node>
                           <node concept="2qmXGp" id="5X2ZuWE1Ahb" role="3TlMhI">
                             <node concept="1E4Tgc" id="5X2ZuWE1Ahc" role="1ESnxz">
-                              <ref role="1E4Tge" node="3YoJoyKghHd" resolve="longestKeyPressLength" />
+                              <ref role="1E4Tge" node="3YoJoyKghHd" />
                             </node>
                             <node concept="2qmXGp" id="5X2ZuWE1Ahd" role="1_9fRO">
                               <node concept="1E4Tgc" id="5X2ZuWE1Ahe" role="1ESnxz">
-                                <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                                <ref role="1E4Tge" node="6lKxXE1_gbm" />
                               </node>
                               <node concept="3ZUYvv" id="5X2ZuWE3j2z" role="1_9fRO">
-                                <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                                <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                               </node>
                             </node>
                           </node>
@@ -1525,10 +1525,10 @@
                                 </node>
                                 <node concept="2qmXGp" id="5X2ZuWE1Ahl" role="3TlMhI">
                                   <node concept="1E4Tgc" id="5X2ZuWE1Ahm" role="1ESnxz">
-                                    <ref role="1E4Tge" node="5X2ZuWE4HNW" resolve="ledColor" />
+                                    <ref role="1E4Tge" node="5X2ZuWE4HNW" />
                                   </node>
                                   <node concept="3ZUYvv" id="5X2ZuWE46Qg" role="1_9fRO">
-                                    <ref role="3ZUYvu" node="5X2ZuWE44rq" resolve="outputData" />
+                                    <ref role="3ZUYvu" node="5X2ZuWE44rq" />
                                   </node>
                                 </node>
                               </node>
@@ -1540,14 +1540,14 @@
                             </node>
                             <node concept="2qmXGp" id="5X2ZuWE1Ahq" role="3TlMhI">
                               <node concept="1E4Tgc" id="5X2ZuWE1Ahr" role="1ESnxz">
-                                <ref role="1E4Tge" node="3YoJoyKghHd" resolve="longestKeyPressLength" />
+                                <ref role="1E4Tge" node="3YoJoyKghHd" />
                               </node>
                               <node concept="2qmXGp" id="5X2ZuWE1Ahs" role="1_9fRO">
                                 <node concept="1E4Tgc" id="5X2ZuWE1Aht" role="1ESnxz">
-                                  <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                                  <ref role="1E4Tge" node="6lKxXE1_gbm" />
                                 </node>
                                 <node concept="3ZUYvv" id="5X2ZuWE3j5G" role="1_9fRO">
-                                  <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                                  <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                                 </node>
                               </node>
                             </node>
@@ -1558,14 +1558,14 @@
                     <node concept="3Tl9Jr" id="5X2ZuWE1DBJ" role="gg_gt">
                       <node concept="2qmXGp" id="5X2ZuWE1DBM" role="3TlMhI">
                         <node concept="1E4Tgc" id="5X2ZuWE1DBN" role="1ESnxz">
-                          <ref role="1E4Tge" node="6lKxXE1_ffO" resolve="nrOfKeys" />
+                          <ref role="1E4Tge" node="6lKxXE1_ffO" />
                         </node>
                         <node concept="2qmXGp" id="5X2ZuWE1DBO" role="1_9fRO">
                           <node concept="1E4Tgc" id="5X2ZuWE1DBP" role="1ESnxz">
-                            <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                            <ref role="1E4Tge" node="6lKxXE1_gbm" />
                           </node>
                           <node concept="3ZUYvv" id="5X2ZuWE3j3n" role="1_9fRO">
-                            <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                            <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                           </node>
                         </node>
                       </node>
@@ -1583,10 +1583,10 @@
                           </node>
                           <node concept="2qmXGp" id="5X2ZuWE27fm" role="3TlMhI">
                             <node concept="1E4Tgc" id="5X2ZuWE29b9" role="1ESnxz">
-                              <ref role="1E4Tge" node="5X2ZuWE4HNW" resolve="ledColor" />
+                              <ref role="1E4Tge" node="5X2ZuWE4HNW" />
                             </node>
                             <node concept="3ZUYvv" id="5X2ZuWE46He" role="1_9fRO">
-                              <ref role="3ZUYvu" node="5X2ZuWE44rq" resolve="outputData" />
+                              <ref role="3ZUYvu" node="5X2ZuWE44rq" />
                             </node>
                           </node>
                         </node>
@@ -1599,10 +1599,10 @@
                 <node concept="Ea8Gl" id="3YoJoyKgf8Q" role="3TlMhJ" />
                 <node concept="2qmXGp" id="3YoJoyKgcvx" role="3TlMhI">
                   <node concept="1E4Tgc" id="3YoJoyKgdL0" role="1ESnxz">
-                    <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                    <ref role="1E4Tge" node="6lKxXE1_gbm" />
                   </node>
                   <node concept="3ZUYvv" id="5X2ZuWE3iWu" role="1_9fRO">
-                    <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1_CV2" />
                   </node>
                 </node>
               </node>
@@ -1610,14 +1610,14 @@
             <node concept="3XISUE" id="5X2ZuWE3cZu" role="3XIRFZ" />
             <node concept="1_9egQ" id="6lKxXE1_I4D" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1_I4C" role="1_9egR">
-                <ref role="3O_q_h" node="6lKxXE1_GA_" resolve="enterStateEcMode" />
+                <ref role="3O_q_h" node="6lKxXE1_GA_" />
               </node>
             </node>
           </node>
           <node concept="3O_q_g" id="6lKxXE1_CUQ" role="c0U16">
-            <ref role="3O_q_h" node="6lKxXE1_BtS" resolve="conditionsTransitionFromConnected2EcModeStateSatisfied" />
+            <ref role="3O_q_h" node="6lKxXE1_BtS" />
             <node concept="3ZUYvv" id="6lKxXE1_CYu" role="3O_q_j">
-              <ref role="3ZUYvu" node="6lKxXE1_CV2" resolve="inputData" />
+              <ref role="3ZUYvu" node="6lKxXE1_CV2" />
             </node>
           </node>
         </node>
@@ -1634,7 +1634,7 @@
           <node concept="1sgJKr" id="6lKxXE1_CV1" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -1646,7 +1646,7 @@
           <node concept="1sgJKr" id="5X2ZuWE4H4D" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -1660,67 +1660,67 @@
       <node concept="3XIRFW" id="6lKxXE1ADq8" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1AFPa" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPb" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1AFPc" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1AFPd" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPe" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1AFPf" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1AFPj" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPk" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1AFPl" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1AFPm" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPn" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1AFPo" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1AFPp" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPq" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1AFPr" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1AFPv" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPw" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1AFPx" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1AFPC" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1AFPD" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1AFPE" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FSI4" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FSLM" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FSQt" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV34u" resolve="connected" />
+              <ref role="1AkAhZ" node="31ZMwFtV34u" />
             </node>
             <node concept="1S7827" id="6lKxXE1FSI2" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -1739,67 +1739,67 @@
       <node concept="3XIRFW" id="31ZMwFtV9JL" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1_L0f" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0g" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_L0h" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_L0i" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0j" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_L0k" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_L0o" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0p" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_L0q" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_L0r" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0s" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_L0t" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_L0u" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0v" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_L0w" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_L0$" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0_" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_L0A" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_L0H" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_L0I" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_L0J" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FTgJ" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FTkt" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FTpA" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV2cY" resolve="preparing_standby" />
+              <ref role="1AkAhZ" node="31ZMwFtV2cY" />
             </node>
             <node concept="1S7827" id="6lKxXE1FTgH" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -1816,7 +1816,7 @@
           <node concept="1sgJKr" id="6lKxXE1_39s" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -1830,67 +1830,67 @@
       <node concept="3XIRFW" id="31ZMwFtVagN" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1_QP8" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QP9" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_QPa" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_QPb" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QPc" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_QPd" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_QPh" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QPi" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_QPj" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_QPk" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QPl" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_QPm" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_QPn" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QPo" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_QPp" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_QPt" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QPu" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_QPv" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_QPA" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_QPB" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_QPC" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FTOZ" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FTSH" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FUk0" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV2cY" resolve="preparing_standby" />
+              <ref role="1AkAhZ" node="31ZMwFtV2cY" />
             </node>
             <node concept="1S7827" id="6lKxXE1FTOX" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -1907,7 +1907,7 @@
           <node concept="1sgJKr" id="6lKxXE1_lEA" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -1921,67 +1921,67 @@
       <node concept="3XIRFW" id="31ZMwFtVewt" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1_Tsw" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Tsx" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_Tsy" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Tsz" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Ts$" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Ts_" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_TsD" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_TsE" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_TsF" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_TsG" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_TsH" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_TsI" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_TsJ" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_TsK" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_TsL" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_TsP" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_TsQ" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_TsR" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_TsY" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_TsZ" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Tt0" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FULq" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FUP8" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FVgN" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV2cY" resolve="preparing_standby" />
+              <ref role="1AkAhZ" node="31ZMwFtV2cY" />
             </node>
             <node concept="1S7827" id="6lKxXE1FULo" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -1998,7 +1998,7 @@
           <node concept="1sgJKr" id="6lKxXE1_vDr" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -2012,67 +2012,67 @@
       <node concept="3XIRFW" id="31ZMwFtVf51" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1_WqN" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_WqO" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_WqP" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_WqQ" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_WqR" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_WqS" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_WqW" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_WqX" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_WqY" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_WqZ" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Wr0" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Wr1" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Wr2" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Wr3" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Wr4" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Wr8" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Wr9" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Wra" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Wrh" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Wri" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Wrj" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FVnm" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FVr4" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FVR7" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV2dH" resolve="standby" />
+              <ref role="1AkAhZ" node="31ZMwFtV2dH" />
             </node>
             <node concept="1S7827" id="6lKxXE1FVnk" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -2089,7 +2089,7 @@
           <node concept="1sgJKr" id="6EVEFV$jLDD" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -2103,67 +2103,67 @@
       <node concept="3XIRFW" id="31ZMwFtVfyd" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1A4J$" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4J_" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1A4JA" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1A4JB" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4JC" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1A4JD" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1A4JH" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4JI" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1A4JJ" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1A4JK" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4JL" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1A4JM" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1A4JN" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4JO" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1A4JP" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1A4JT" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4JU" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1A4JV" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1A4K2" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1A4K3" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1A4K4" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FVXY" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FW1G" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FW$Y" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV3ia" resolve="switching_to_ec_mode" />
+              <ref role="1AkAhZ" node="31ZMwFtV3ia" />
             </node>
             <node concept="1S7827" id="6lKxXE1FVXW" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -2182,67 +2182,67 @@
       <node concept="3XIRFW" id="6lKxXE1_GAB" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1Ad$A" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad$B" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1Ad$C" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1Ad$D" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad$E" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1Ad$F" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1Ad$J" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad$K" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1Ad$L" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1Ad$M" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad$N" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1Ad$O" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1Ad$P" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad$Q" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1Ad$R" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1Ad$V" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad$W" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1Ad$X" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1Ad_4" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1Ad_5" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1Ad_6" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FWGt" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FWKb" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FWRw" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV3mR" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="31ZMwFtV3mR" />
             </node>
             <node concept="1S7827" id="6lKxXE1FWGr" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -2270,67 +2270,67 @@
       <node concept="3XIRFW" id="31ZMwFtVjfg" role="3XIRFX">
         <node concept="1_9egQ" id="6lKxXE1_JxV" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_JxW" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_JxX" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD0P" resolve="sensors" />
+              <ref role="1AkAhZ" node="6EVEFV$jD0P" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_JxY" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_JxZ" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_Jy0" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD1g" resolve="pointer" />
+              <ref role="1AkAhZ" node="6EVEFV$jD1g" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Jy4" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Jy5" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_Jy6" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD2r" resolve="power" />
+              <ref role="1AkAhZ" node="6EVEFV$jD2r" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Jy7" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Jy8" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_Jy9" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD3b" resolve="input" />
+              <ref role="1AkAhZ" node="6EVEFV$jD3b" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Jya" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Jyb" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_Jyc" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD42" resolve="orientation" />
+              <ref role="1AkAhZ" node="6EVEFV$jD42" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Jyg" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Jyh" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDzC" resolve="activateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDzC" />
             <node concept="1AkAhK" id="6lKxXE1_Jyi" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD5N" resolve="drone_interface" />
+              <ref role="1AkAhZ" node="6EVEFV$jD5N" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1_Jyp" role="3XIRFZ">
           <node concept="3O_q_g" id="6lKxXE1_Jyq" role="1_9egR">
-            <ref role="3O_q_h" node="6EVEFV$jDU4" resolve="deactivateController" />
+            <ref role="3O_q_h" node="6EVEFV$jDU4" />
             <node concept="1AkAhK" id="6lKxXE1_Jyr" role="3O_q_j">
-              <ref role="1AkAhZ" node="6EVEFV$jD9M" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="6EVEFV$jD9M" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="6lKxXE1FX$F" role="3XIRFZ">
           <node concept="3pqW6w" id="6lKxXE1FXCp" role="1_9egR">
             <node concept="1AkAhK" id="6lKxXE1FXKY" role="3TlMhJ">
-              <ref role="1AkAhZ" node="31ZMwFtV3b4" resolve="connecting" />
+              <ref role="1AkAhZ" node="31ZMwFtV3b4" />
             </node>
             <node concept="1S7827" id="6lKxXE1FX$D" role="3TlMhI">
-              <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+              <ref role="1S7826" node="31ZMwFtV2gb" />
             </node>
           </node>
         </node>
@@ -2347,7 +2347,7 @@
           <node concept="1sgJKr" id="6EVEFV$jIxR" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -2390,25 +2390,25 @@
                 <node concept="2BPB98" id="6lKxXE1CCqQ" role="3TlMhJ">
                   <node concept="3TlM44" id="6lKxXE1CLW0" role="1_9fRO">
                     <node concept="1AkAhK" id="6lKxXE1CNvn" role="3TlMhJ">
-                      <ref role="1AkAhZ" node="6lKxXE1BOMG" resolve="key_stuck" />
+                      <ref role="1AkAhZ" node="6lKxXE1BOMG" />
                     </node>
                     <node concept="2qmXGp" id="6lKxXE1CIur" role="3TlMhI">
                       <node concept="1E4Tgc" id="6lKxXE1CLTH" role="1ESnxz">
-                        <ref role="1E4Tge" node="6lKxXE1CK2H" resolve="event" />
+                        <ref role="1E4Tge" node="6lKxXE1CK2H" />
                       </node>
                       <node concept="2qmXGp" id="6lKxXE1CGVt" role="1_9fRO">
                         <node concept="1E4Tgc" id="6lKxXE1CIsi" role="1ESnxz">
-                          <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                          <ref role="1E4Tge" node="6lKxXE1_gbm" />
                         </node>
                         <node concept="3ZUYvv" id="6lKxXE1CFqY" role="1_9fRO">
-                          <ref role="3ZUYvu" node="6lKxXE1_76y" resolve="inputData" />
+                          <ref role="3ZUYvu" node="6lKxXE1_76y" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="6lKxXE1CARG" role="3TlMhI">
-                  <ref role="3ZVs_2" node="6lKxXE1BSvM" resolve="keyStuck" />
+                  <ref role="3ZVs_2" node="6lKxXE1BSvM" />
                 </node>
               </node>
             </node>
@@ -2417,10 +2417,10 @@
             <node concept="Ea8Gl" id="6lKxXE1C_rj" role="3TlMhJ" />
             <node concept="2qmXGp" id="6lKxXE1CytJ" role="3TlMhI">
               <node concept="1E4Tgc" id="6lKxXE1CzTy" role="1ESnxz">
-                <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                <ref role="1E4Tge" node="6lKxXE1_gbm" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1Cx8O" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1_76y" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1_76y" />
               </node>
             </node>
           </node>
@@ -2432,22 +2432,22 @@
                 <node concept="2BPB98" id="6lKxXE1Dvce" role="3TlMhJ">
                   <node concept="3TlM44" id="6lKxXE1D_Kj" role="1_9fRO">
                     <node concept="1AkAhK" id="6lKxXE1DBoU" role="3TlMhJ">
-                      <ref role="1AkAhZ" node="6EVEFV$jJjj" resolve="inactivity" />
+                      <ref role="1AkAhZ" node="6EVEFV$jJjj" />
                     </node>
                     <node concept="3wxyx2" id="6lKxXE1DD3V" role="3TlMhI">
                       <node concept="2qmXGp" id="6lKxXE1Dyt1" role="1_9fRO">
                         <node concept="1E4Tgc" id="6lKxXE1D$4I" role="1ESnxz">
-                          <ref role="1E4Tge" node="6EVEFV$jJIb" resolve="inactiveEvent" />
+                          <ref role="1E4Tge" node="6EVEFV$jJIb" />
                         </node>
                         <node concept="3ZUYvv" id="6lKxXE1DwNc" role="1_9fRO">
-                          <ref role="3ZUYvu" node="6lKxXE1_76y" resolve="inputData" />
+                          <ref role="3ZUYvu" node="6lKxXE1_76y" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="6lKxXE1Dty7" role="3TlMhI">
-                  <ref role="3ZVs_2" node="6lKxXE1C2SI" resolve="inactivity" />
+                  <ref role="3ZVs_2" node="6lKxXE1C2SI" />
                 </node>
               </node>
             </node>
@@ -2456,10 +2456,10 @@
             <node concept="Ea8Gl" id="6lKxXE1Dqrh" role="3TlMhJ" />
             <node concept="2qmXGp" id="6lKxXE1DlYl" role="3TlMhI">
               <node concept="1E4Tgc" id="6lKxXE1Dnlc" role="1ESnxz">
-                <ref role="1E4Tge" node="6EVEFV$jJIb" resolve="inactiveEvent" />
+                <ref role="1E4Tge" node="6EVEFV$jJIb" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1Dkp$" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1_76y" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1_76y" />
               </node>
             </node>
           </node>
@@ -2470,48 +2470,48 @@
               <node concept="3pqW6w" id="6lKxXE1DLoK" role="1_9egR">
                 <node concept="3TlM44" id="6lKxXE1DVNo" role="3TlMhJ">
                   <node concept="1AkAhK" id="6lKxXE1DXPi" role="3TlMhJ">
-                    <ref role="1AkAhZ" node="6lKxXE1BQxP" resolve="switch_standby" />
+                    <ref role="1AkAhZ" node="6lKxXE1BQxP" />
                   </node>
                   <node concept="2qmXGp" id="6lKxXE1DSka" role="3TlMhI">
                     <node concept="1E4Tgc" id="6lKxXE1DU3r" role="1ESnxz">
-                      <ref role="1E4Tge" node="6lKxXE1CK2H" resolve="event" />
+                      <ref role="1E4Tge" node="6lKxXE1CK2H" />
                     </node>
                     <node concept="2qmXGp" id="6lKxXE1DOPe" role="1_9fRO">
                       <node concept="1E4Tgc" id="6lKxXE1DQyN" role="1ESnxz">
-                        <ref role="1E4Tge" node="6lKxXE1_gbm" resolve="message" />
+                        <ref role="1E4Tge" node="6lKxXE1_gbm" />
                       </node>
                       <node concept="3ZUYvv" id="6lKxXE1DN5B" role="1_9fRO">
-                        <ref role="3ZUYvu" node="6lKxXE1_76y" resolve="inputData" />
+                        <ref role="3ZUYvu" node="6lKxXE1_76y" />
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="6lKxXE1DLl_" role="3TlMhI">
-                  <ref role="3ZVs_2" node="6lKxXE1CdF0" resolve="standbyRequested" />
+                  <ref role="3ZVs_2" node="6lKxXE1CdF0" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2qmXGp" id="6lKxXE1DJEH" role="c0U16">
             <node concept="1E4Tgc" id="6lKxXE1DLkw" role="1ESnxz">
-              <ref role="1E4Tge" node="6lKxXE1BI_E" resolve="switchRegistered" />
+              <ref role="1E4Tge" node="6lKxXE1BI_E" />
             </node>
             <node concept="3ZUYvv" id="6lKxXE1DHZo" role="1_9fRO">
-              <ref role="3ZUYvu" node="6lKxXE1_76y" resolve="inputData" />
+              <ref role="3ZUYvu" node="6lKxXE1_76y" />
             </node>
           </node>
         </node>
         <node concept="2BFjQ_" id="6lKxXE1BpXG" role="3XIRFZ">
           <node concept="2EHzL4" id="6lKxXE1E4Jy" role="2BFjQA">
             <node concept="3ZVu4v" id="6lKxXE1E6uz" role="3TlMhJ">
-              <ref role="3ZVs_2" node="6lKxXE1CdF0" resolve="standbyRequested" />
+              <ref role="3ZVs_2" node="6lKxXE1CdF0" />
             </node>
             <node concept="2EHzL4" id="6lKxXE1E1i8" role="3TlMhI">
               <node concept="3ZVu4v" id="6lKxXE1E30H" role="3TlMhJ">
-                <ref role="3ZVs_2" node="6lKxXE1C2SI" resolve="inactivity" />
+                <ref role="3ZVs_2" node="6lKxXE1C2SI" />
               </node>
               <node concept="3ZVu4v" id="6lKxXE1DZzF" role="3TlMhI">
-                <ref role="3ZVs_2" node="6lKxXE1BSvM" resolve="keyStuck" />
+                <ref role="3ZVs_2" node="6lKxXE1BSvM" />
               </node>
             </node>
           </node>
@@ -2529,7 +2529,7 @@
           <node concept="1sgJKr" id="6lKxXE1_76x" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -2556,22 +2556,22 @@
                 <node concept="2BPB98" id="6lKxXE1EfJq" role="3TlMhJ">
                   <node concept="3TlM44" id="6lKxXE1En33" role="1_9fRO">
                     <node concept="1AkAhK" id="6lKxXE1EoVG" role="3TlMhJ">
-                      <ref role="1AkAhZ" node="6EVEFV$jJjj" resolve="inactivity" />
+                      <ref role="1AkAhZ" node="6EVEFV$jJjj" />
                     </node>
                     <node concept="3wxyx2" id="6lKxXE1EhA7" role="3TlMhI">
                       <node concept="2qmXGp" id="6lKxXE1EljS" role="1_9fRO">
                         <node concept="1E4Tgc" id="6lKxXE1EmQx" role="1ESnxz">
-                          <ref role="1E4Tge" node="6EVEFV$jJIb" resolve="inactiveEvent" />
+                          <ref role="1E4Tge" node="6EVEFV$jJIb" />
                         </node>
                         <node concept="3ZUYvv" id="6lKxXE1EjsN" role="1_9fRO">
-                          <ref role="3ZUYvu" node="6lKxXE1_CzI" resolve="inputData" />
+                          <ref role="3ZUYvu" node="6lKxXE1_CzI" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="6lKxXE1EfGc" role="3TlMhI">
-                  <ref role="3ZVs_2" node="6lKxXE1Eb$k" resolve="inactivity" />
+                  <ref role="3ZVs_2" node="6lKxXE1Eb$k" />
                 </node>
               </node>
             </node>
@@ -2580,17 +2580,17 @@
             <node concept="Ea8Gl" id="6lKxXE1EdT5" role="3TlMhJ" />
             <node concept="2qmXGp" id="6lKxXE1EbXa" role="3TlMhI">
               <node concept="1E4Tgc" id="6lKxXE1Ec0B" role="1ESnxz">
-                <ref role="1E4Tge" node="6EVEFV$jJIb" resolve="inactiveEvent" />
+                <ref role="1E4Tge" node="6EVEFV$jJIb" />
               </node>
               <node concept="3ZUYvv" id="6lKxXE1EbRF" role="1_9fRO">
-                <ref role="3ZUYvu" node="6lKxXE1_CzI" resolve="inputData" />
+                <ref role="3ZUYvu" node="6lKxXE1_CzI" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2BFjQ_" id="6lKxXE1_CJn" role="3XIRFZ">
           <node concept="3ZVu4v" id="6lKxXE1EqNL" role="2BFjQA">
-            <ref role="3ZVs_2" node="6lKxXE1Eb$k" resolve="inactivity" />
+            <ref role="3ZVs_2" node="6lKxXE1Eb$k" />
           </node>
         </node>
       </node>
@@ -2606,7 +2606,7 @@
           <node concept="1sgJKr" id="6lKxXE1_CzH" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -2641,7 +2641,7 @@
         <node concept="1_9egQ" id="5V9QM6os9Er" role="3XIRFZ">
           <node concept="3pqW6w" id="5V9QM6os9Es" role="1_9egR">
             <node concept="3ZVu4v" id="5V9QM6os9Ep" role="3TlMhI">
-              <ref role="3ZVs_2" node="5X2ZuWDZLFN" resolve="k" />
+              <ref role="3ZVs_2" node="5X2ZuWDZLFN" />
             </node>
             <node concept="3TlMh9" id="5V9QM6os9Eq" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
@@ -2673,7 +2673,7 @@
             <node concept="1_9egQ" id="5V9QM6os9Ev" role="3XIRFZ">
               <node concept="3pqW6w" id="5V9QM6os9Ew" role="1_9egR">
                 <node concept="3ZVu4v" id="5V9QM6os9Et" role="3TlMhI">
-                  <ref role="3ZVs_2" node="5X2ZuWDZRsa" resolve="i" />
+                  <ref role="3ZVs_2" node="5X2ZuWDZRsa" />
                 </node>
                 <node concept="3TlMh9" id="5V9QM6os9Eu" role="3TlMhJ">
                   <property role="2hmy$m" value="0" />
@@ -2685,16 +2685,16 @@
                 <node concept="1_9egQ" id="5X2ZuWE0d25" role="3XIRFZ">
                   <node concept="3omEAZ" id="5X2ZuWE0d5j" role="1_9egR">
                     <node concept="3ZVu4v" id="5X2ZuWE0d23" role="3TlMhI">
-                      <ref role="3ZVs_2" node="5X2ZuWDZZb5" resolve="product_result" />
+                      <ref role="3ZVs_2" node="5X2ZuWDZZb5" />
                     </node>
                     <node concept="3O_q_g" id="66_5lNPeDIF" role="3TlMhJ">
-                      <ref role="3O_q_h" node="66_5lNPgCqK" resolve="log2" />
+                      <ref role="3O_q_h" node="66_5lNPgCqK" />
                       <node concept="2wJmCr" id="5X2ZuWDZTSf" role="3O_q_j">
                         <node concept="3ZUYvv" id="5X2ZuWDZTOS" role="1_9fRO">
-                          <ref role="3ZUYvu" node="3YoJoyKifjZ" resolve="arr" />
+                          <ref role="3ZUYvu" node="3YoJoyKifjZ" />
                         </node>
                         <node concept="3ZVu4v" id="5X2ZuWDZUCP" role="2wJmCp">
-                          <ref role="3ZVs_2" node="5X2ZuWDZRsa" resolve="i" />
+                          <ref role="3ZVs_2" node="5X2ZuWDZRsa" />
                         </node>
                       </node>
                     </node>
@@ -2703,15 +2703,15 @@
               </node>
               <node concept="3Tl9Jn" id="5X2ZuWDZSMr" role="1_amZB">
                 <node concept="3ZVu4v" id="5X2ZuWDZSMu" role="3TlMhJ">
-                  <ref role="3ZVs_2" node="5X2ZuWDZLFN" resolve="k" />
+                  <ref role="3ZVs_2" node="5X2ZuWDZLFN" />
                 </node>
                 <node concept="3ZVu4v" id="5X2ZuWDZSG9" role="3TlMhI">
-                  <ref role="3ZVs_2" node="5X2ZuWDZRsa" resolve="i" />
+                  <ref role="3ZVs_2" node="5X2ZuWDZRsa" />
                 </node>
               </node>
               <node concept="3TM6Ez" id="5X2ZuWDZT3z" role="1_amZy">
                 <node concept="3ZVu4v" id="5X2ZuWDZTsu" role="1_9fRO">
-                  <ref role="3ZVs_2" node="5X2ZuWDZRsa" resolve="i" />
+                  <ref role="3ZVs_2" node="5X2ZuWDZRsa" />
                 </node>
               </node>
             </node>
@@ -2722,32 +2722,32 @@
                     <property role="2hmy$m" value="2" />
                   </node>
                   <node concept="3ZVu4v" id="5X2ZuWE02T5" role="3TlMhI">
-                    <ref role="3ZVs_2" node="5X2ZuWDZZb5" resolve="product_result" />
+                    <ref role="3ZVs_2" node="5X2ZuWDZZb5" />
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="5X2ZuWE014g" role="3TlMhI">
-                  <ref role="3ZVs_2" node="5X2ZuWDZWd0" resolve="sum_result" />
+                  <ref role="3ZVs_2" node="5X2ZuWDZWd0" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3Tl9Jn" id="5X2ZuWDZPBf" role="1_amZB">
             <node concept="3ZUYvv" id="5X2ZuWDZQbG" role="3TlMhJ">
-              <ref role="3ZUYvu" node="3YoJoyKighw" resolve="size" />
+              <ref role="3ZUYvu" node="3YoJoyKighw" />
             </node>
             <node concept="3ZVu4v" id="5X2ZuWDZP5p" role="3TlMhI">
-              <ref role="3ZVs_2" node="5X2ZuWDZLFN" resolve="k" />
+              <ref role="3ZVs_2" node="5X2ZuWDZLFN" />
             </node>
           </node>
           <node concept="3TM6Ez" id="5X2ZuWDZQKl" role="1_amZy">
             <node concept="3ZVu4v" id="5X2ZuWDZRm2" role="1_9fRO">
-              <ref role="3ZVs_2" node="5X2ZuWDZLFN" resolve="k" />
+              <ref role="3ZVs_2" node="5X2ZuWDZLFN" />
             </node>
           </node>
         </node>
         <node concept="2BFjQ_" id="5X2ZuWE04w1" role="3XIRFZ">
           <node concept="3ZVu4v" id="5X2ZuWE05oz" role="2BFjQA">
-            <ref role="3ZVs_2" node="5X2ZuWDZWd0" resolve="sum_result" />
+            <ref role="3ZVs_2" node="5X2ZuWDZWd0" />
           </node>
         </node>
       </node>
@@ -2783,136 +2783,136 @@
       <node concept="3XIRFW" id="31ZMwFtV27x" role="3XIRFX">
         <node concept="ggJXe" id="31ZMwFtV28v" role="3XIRFZ">
           <node concept="1S7827" id="31ZMwFtV2xf" role="ggJXf">
-            <ref role="1S7826" node="31ZMwFtV2gb" resolve="state" />
+            <ref role="1S7826" node="31ZMwFtV2gb" />
           </node>
           <node concept="ggJMM" id="31ZMwFtV2$o" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV2$p" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV3_R" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV3_P" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV1HK" resolve="handleStateInitializing" />
+                  <ref role="3O_q_h" node="31ZMwFtV1HK" />
                   <node concept="3ZUYvv" id="6lKxXE1Et43" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                   <node concept="3ZUYvv" id="6lKxXE1Et7b" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsZv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsZv" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV2$r" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV3y5" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV2JL" resolve="initializing" />
+              <ref role="1AkAhZ" node="31ZMwFtV2JL" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV3Bh" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV3Bi" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV3P$" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV3Py" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV3KL" resolve="handleStatePreparingStandby" />
+                  <ref role="3O_q_h" node="31ZMwFtV3KL" />
                   <node concept="3ZUYvv" id="6lKxXE1Ez5V" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                   <node concept="3ZUYvv" id="6lKxXE1Ez76" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsZv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsZv" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV3Bk" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV3C0" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV2cY" resolve="preparing_standby" />
+              <ref role="1AkAhZ" node="31ZMwFtV2cY" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV3Rp" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV3Rq" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV79R" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV79P" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV5b3" resolve="handleStateStandby" />
+                  <ref role="3O_q_h" node="31ZMwFtV5b3" />
                   <node concept="3ZUYvv" id="6lKxXE1E_aO" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV3Rs" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV3So" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV2dH" resolve="standby" />
+              <ref role="1AkAhZ" node="31ZMwFtV2dH" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV3Y2" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV3Y3" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV7af" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV7ad" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV5tW" resolve="handleStateConnected" />
+                  <ref role="3O_q_h" node="31ZMwFtV5tW" />
                   <node concept="3ZUYvv" id="6lKxXE1EGVT" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                   <node concept="3ZUYvv" id="6lKxXE1EJRF" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsZv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsZv" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV3Y5" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV3Zf" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV34u" resolve="connected" />
+              <ref role="1AkAhZ" node="31ZMwFtV34u" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV44k" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV44l" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV7eD" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV7xY" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV7rI" resolve="handleStateDisconnected" />
+                  <ref role="3O_q_h" node="31ZMwFtV7rI" />
                   <node concept="3ZUYvv" id="6lKxXE1EM0h" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                   <node concept="3ZUYvv" id="6lKxXE1EOCT" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsZv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsZv" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV44n" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV45J" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV399" resolve="disconnected" />
+              <ref role="1AkAhZ" node="31ZMwFtV399" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV4b6" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV4b7" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV7yI" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV7yG" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV5Rp" resolve="handleStateConnecting" />
+                  <ref role="3O_q_h" node="31ZMwFtV5Rp" />
                   <node concept="3ZUYvv" id="6lKxXE1EQNa" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                   <node concept="3ZUYvv" id="6lKxXE1ETua" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsZv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsZv" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV4b9" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV4cJ" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV3b4" resolve="connecting" />
+              <ref role="1AkAhZ" node="31ZMwFtV3b4" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV4BF" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV4BG" role="ggJML">
               <node concept="1_9egQ" id="31ZMwFtV7_G" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV7_E" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV6WA" resolve="handleStateSwitchingToEcMode" />
+                  <ref role="3O_q_h" node="31ZMwFtV6WA" />
                   <node concept="3ZUYvv" id="6lKxXE1F2hm" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsX$" resolve="inputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsX$" />
                   </node>
                   <node concept="3ZUYvv" id="5X2ZuWE4Pwe" role="3O_q_j">
-                    <ref role="3ZUYvu" node="6lKxXE1EsZv" resolve="outputData" />
+                    <ref role="3ZUYvu" node="6lKxXE1EsZv" />
                   </node>
                 </node>
               </node>
               <node concept="27uf6b" id="31ZMwFtV4BI" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV4DY" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV3ia" resolve="switching_to_ec_mode" />
+              <ref role="1AkAhZ" node="31ZMwFtV3ia" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV4Kt" role="ggJMH">
@@ -2931,7 +2931,7 @@
               <node concept="27uf6b" id="31ZMwFtV4Kw" role="3XIRFZ" />
             </node>
             <node concept="1AkAhK" id="31ZMwFtV4MY" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV3mR" resolve="ec_mode" />
+              <ref role="1AkAhZ" node="31ZMwFtV3mR" />
             </node>
           </node>
           <node concept="ggJMM" id="31ZMwFtV7F_" role="ggJMH">
@@ -2947,14 +2947,14 @@
               </node>
             </node>
             <node concept="1AkAhK" id="31ZMwFtV7IE" role="ggJMN">
-              <ref role="1AkAhZ" node="31ZMwFtV2aa" resolve="uninitialized" />
+              <ref role="1AkAhZ" node="31ZMwFtV2aa" />
             </node>
           </node>
           <node concept="ggJMK" id="31ZMwFtV7Qn" role="ggJMH">
             <node concept="3XIRFW" id="31ZMwFtV7Qp" role="ggJMQ">
               <node concept="1_9egQ" id="31ZMwFtV8jM" role="3XIRFZ">
                 <node concept="3O_q_g" id="31ZMwFtV8jL" role="1_9egR">
-                  <ref role="3O_q_h" node="31ZMwFtV8dS" resolve="assert" />
+                  <ref role="3O_q_h" node="31ZMwFtV8dS" />
                   <node concept="3TlMhd" id="31ZMwFtV8k2" role="3O_q_j" />
                 </node>
               </node>
@@ -2983,7 +2983,7 @@
           <node concept="1sgJKr" id="6lKxXE1Et2g" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -2995,7 +2995,7 @@
           <node concept="1sgJKr" id="6lKxXE1EsZu" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
       </node>
@@ -3019,10 +3019,10 @@
                 <node concept="3TlMhK" id="5X2ZuWDWWOO" role="3TlMhJ" />
                 <node concept="2qmXGp" id="5X2ZuWDTihH" role="3TlMhI">
                   <node concept="1E4Tgc" id="5X2ZuWDTkwk" role="1ESnxz">
-                    <ref role="1E4Tge" node="6lKxXE1$W2v" resolve="ecStateIssued" />
+                    <ref role="1E4Tge" node="6lKxXE1$W2v" />
                   </node>
                   <node concept="3ZUYvv" id="5X2ZuWDSe8H" role="1_9fRO">
-                    <ref role="3ZUYvu" node="5X2ZuWDSbIM" resolve="inputData" />
+                    <ref role="3ZUYvu" node="5X2ZuWDSbIM" />
                   </node>
                 </node>
               </node>
@@ -3032,23 +3032,23 @@
             <node concept="3TlM44" id="5X2ZuWDWFF7" role="3TlMhI">
               <node concept="2qmXGp" id="5X2ZuWDWFF8" role="3TlMhI">
                 <node concept="1E4Tgc" id="5X2ZuWDWFF9" role="1ESnxz">
-                  <ref role="1E4Tge" node="6EVEFV$jG_s" resolve="droneState" />
+                  <ref role="1E4Tge" node="6EVEFV$jG_s" />
                 </node>
                 <node concept="3ZUYvv" id="5X2ZuWDWFFa" role="1_9fRO">
-                  <ref role="3ZUYvu" node="5X2ZuWDSbIM" resolve="inputData" />
+                  <ref role="3ZUYvu" node="5X2ZuWDSbIM" />
                 </node>
               </node>
               <node concept="1AkAhK" id="5X2ZuWDWFFb" role="3TlMhJ">
-                <ref role="1AkAhZ" node="6EVEFV$jG0r" resolve="connected" />
+                <ref role="1AkAhZ" node="6EVEFV$jG0r" />
               </node>
             </node>
             <node concept="3TlM44" id="5X2ZuWDWFFc" role="3TlMhJ">
               <node concept="2qmXGp" id="5X2ZuWDWFFd" role="3TlMhI">
                 <node concept="1E4Tgc" id="5X2ZuWDWFFe" role="1ESnxz">
-                  <ref role="1E4Tge" node="6lKxXE1$Zfe" resolve="connectIssued" />
+                  <ref role="1E4Tge" node="6lKxXE1$Zfe" />
                 </node>
                 <node concept="3ZUYvv" id="5X2ZuWDWFFf" role="1_9fRO">
-                  <ref role="3ZUYvu" node="5X2ZuWDSbIM" resolve="inputData" />
+                  <ref role="3ZUYvu" node="5X2ZuWDSbIM" />
                 </node>
               </node>
               <node concept="3TlMhd" id="5X2ZuWDWFFg" role="3TlMhJ" />
@@ -3061,10 +3061,10 @@
                   <node concept="3TlMhd" id="5X2ZuWDX110" role="3TlMhJ" />
                   <node concept="2qmXGp" id="5X2ZuWDX0H5" role="3TlMhI">
                     <node concept="1E4Tgc" id="5X2ZuWDX0H6" role="1ESnxz">
-                      <ref role="1E4Tge" node="6lKxXE1$W2v" resolve="ecStateIssued" />
+                      <ref role="1E4Tge" node="6lKxXE1$W2v" />
                     </node>
                     <node concept="3ZUYvv" id="5X2ZuWDX0H7" role="1_9fRO">
-                      <ref role="3ZUYvu" node="5X2ZuWDSbIM" resolve="inputData" />
+                      <ref role="3ZUYvu" node="5X2ZuWDSbIM" />
                     </node>
                   </node>
                 </node>
@@ -3077,10 +3077,10 @@
             <node concept="3TlMhd" id="5X2ZuWDTvYs" role="3TlMhJ" />
             <node concept="2qmXGp" id="5X2ZuWDTpOJ" role="3TlMhI">
               <node concept="1E4Tgc" id="5X2ZuWDTs3U" role="1ESnxz">
-                <ref role="1E4Tge" node="6lKxXE1BI_E" resolve="switchRegistered" />
+                <ref role="1E4Tge" node="6lKxXE1BI_E" />
               </node>
               <node concept="3ZUYvv" id="5X2ZuWDSe8T" role="1_9fRO">
-                <ref role="3ZUYvu" node="5X2ZuWDSbIM" resolve="inputData" />
+                <ref role="3ZUYvu" node="5X2ZuWDSbIM" />
               </node>
             </node>
           </node>
@@ -3094,7 +3094,7 @@
           <node concept="1sgJKr" id="5X2ZuWDSbIL" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
       </node>
@@ -3111,7 +3111,7 @@
           <node concept="1sgJKr" id="6lKxXE1G937" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jGvN" resolve="InputData" />
+            <ref role="1sgJKq" node="6EVEFV$jGvN" />
           </node>
         </node>
         <node concept="3XIRlf" id="6lKxXE1G9cT" role="3XIRFZ">
@@ -3119,22 +3119,22 @@
           <node concept="1sgJKr" id="6lKxXE1G9cS" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="6EVEFV$jHJu" resolve="OutputData" />
+            <ref role="1sgJKq" node="6EVEFV$jHJu" />
           </node>
         </node>
         <node concept="27v$Wf" id="6lKxXE1G92d" role="3XIRFZ">
           <node concept="3XIRFW" id="6lKxXE1G92e" role="27v$W9">
             <node concept="1_9egQ" id="6lKxXE1G92K" role="3XIRFZ">
               <node concept="3O_q_g" id="6lKxXE1G92J" role="1_9egR">
-                <ref role="3O_q_h" node="31ZMwFtV27v" resolve="controlProcess" />
+                <ref role="3O_q_h" node="31ZMwFtV27v" />
                 <node concept="YInwV" id="6lKxXE1GbY3" role="3O_q_j">
                   <node concept="3ZVu4v" id="6lKxXE1G9T0" role="1_9fRO">
-                    <ref role="3ZVs_2" node="6lKxXE1G938" resolve="inputData" />
+                    <ref role="3ZVs_2" node="6lKxXE1G938" />
                   </node>
                 </node>
                 <node concept="YInwV" id="6lKxXE1Ge01" role="3O_q_j">
                   <node concept="3ZVu4v" id="6lKxXE1G9XH" role="1_9fRO">
-                    <ref role="3ZVs_2" node="6lKxXE1G9cT" resolve="outputData" />
+                    <ref role="3ZVs_2" node="6lKxXE1G9cT" />
                   </node>
                 </node>
               </node>
@@ -3167,7 +3167,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="2fPtkzgMMit" role="2OODSX">
-      <ref role="3GEb4d" node="66_5lNPgA5w" resolve="math" />
+      <ref role="3GEb4d" node="66_5lNPgA5w" />
     </node>
   </node>
   <node concept="2v9HqL" id="6q20vztqlQU">
@@ -3188,10 +3188,10 @@
     <node concept="2eOfOl" id="6q20vztqmfr" role="2ePNbc">
       <property role="TrG5h" value="IntegratedCExample" />
       <node concept="2v9HqM" id="6q20vztqmfy" role="2eOfOg">
-        <ref role="2v9HqP" node="7RqC$9ByLBE" resolve="IntegratedCProgram" />
+        <ref role="2v9HqP" node="7RqC$9ByLBE" />
       </node>
       <node concept="2v9HqM" id="2fPtkzgMTt1" role="2eOfOg">
-        <ref role="2v9HqP" node="66_5lNPgA5w" resolve="math" />
+        <ref role="2v9HqP" node="66_5lNPgA5w" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyiBD" role="1kZvWc">
         <property role="TrG5h" value="any" />

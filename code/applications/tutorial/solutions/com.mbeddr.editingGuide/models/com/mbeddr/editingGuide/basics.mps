@@ -1223,7 +1223,7 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="3ZVu4v" id="1O$b9VLyTxx" role="3XIe9u">
-                <ref role="3ZVs_2" node="1O$b9VLyRzl" resolve="distance" />
+                <ref role="3ZVs_2" node="1O$b9VLyRzl" />
               </node>
             </node>
           </node>
@@ -1248,7 +1248,7 @@
           <property role="19SUeA" value="Put the cursor into the empty line in the " />
         </node>
         <node concept="JLv3r" id="2ZHlC00aguf" role="19SJt6">
-          <ref role="JLv3v" node="2ZHlC00aaoE" resolve="dummy" />
+          <ref role="JLv3v" node="2ZHlC00aaoE" />
         </node>
         <node concept="19SUe$" id="2ZHlC00ague" role="19SJt6">
           <property role="19SUeA" value=" function.&#10;Enter an " />
@@ -1307,7 +1307,7 @@
           <property role="19SUeA" value="Put the cursor into the empty line in the " />
         </node>
         <node concept="JLv3r" id="2ZHlC00a$_w" role="19SJt6">
-          <ref role="JLv3v" node="2ZHlC00a$_H" resolve="dummy" />
+          <ref role="JLv3v" node="2ZHlC00a$_H" />
         </node>
         <node concept="19SUe$" id="2ZHlC00a$_x" role="19SJt6">
           <property role="19SUeA" value=" function.&#10;Try to enter a " />
@@ -1380,7 +1380,7 @@
           <property role="19SUeA" value="Put the cursor into the empty line in the " />
         </node>
         <node concept="JLv3r" id="2ZHlC00aUcc" role="19SJt6">
-          <ref role="JLv3v" node="2ZHlC00aUtg" resolve="dummy" />
+          <ref role="JLv3v" node="2ZHlC00aUtg" />
         </node>
         <node concept="19SUe$" id="2ZHlC00aUcd" role="19SJt6">
           <property role="19SUeA" value=" function.&#10;Try to enter a " />
@@ -1465,7 +1465,7 @@
           <property role="19SUeA" value=" line in the " />
         </node>
         <node concept="JLv3r" id="2C54m44Rqtc" role="19SJt6">
-          <ref role="JLv3v" node="2C54m44RrYk" resolve="dummy" />
+          <ref role="JLv3v" node="2C54m44RrYk" />
         </node>
         <node concept="19SUe$" id="2C54m44Rqtd" role="19SJt6">
           <property role="19SUeA" value=" function.&#10;Change the expression to " />
@@ -1528,7 +1528,7 @@
             </node>
             <node concept="2BFjQ_" id="4x22hTwiw37" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwiw8o" role="2BFjQA">
-                <ref role="3ZVs_2" node="2C54m44Rs8H" resolve="x" />
+                <ref role="3ZVs_2" node="2C54m44Rs8H" />
               </node>
             </node>
           </node>
@@ -1565,7 +1565,7 @@
           <property role="19SUeA" value=" line in the " />
         </node>
         <node concept="JLv3r" id="2C54m44RC1K" role="19SJt6">
-          <ref role="JLv3v" node="2C54m44RC22" resolve="dummy" />
+          <ref role="JLv3v" node="2C54m44RC22" />
         </node>
         <node concept="19SUe$" id="2C54m44RC1L" role="19SJt6">
           <property role="19SUeA" value=" function.&#10;Change the expression to " />
@@ -1623,7 +1623,7 @@
             </node>
             <node concept="2BFjQ_" id="4x22hTwiwim" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwiwk_" role="2BFjQA">
-                <ref role="3ZVs_2" node="2C54m44RC25" resolve="x" />
+                <ref role="3ZVs_2" node="2C54m44RC25" />
               </node>
             </node>
           </node>
@@ -1648,7 +1648,7 @@
           <property role="19SUeA" value=" line in the " />
         </node>
         <node concept="JLv3r" id="2C54m44RJrD" role="19SJt6">
-          <ref role="JLv3v" node="2C54m44RJrT" resolve="dummy" />
+          <ref role="JLv3v" node="2C54m44RJrT" />
         </node>
         <node concept="19SUe$" id="2C54m44RJrE" role="19SJt6">
           <property role="19SUeA" value=" function.&#10;Change the expression to " />
@@ -1731,7 +1731,7 @@
             </node>
             <node concept="2BFjQ_" id="4x22hTwiwro" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwiwtB" role="2BFjQA">
-                <ref role="3ZVs_2" node="2C54m44RJrW" resolve="x" />
+                <ref role="3ZVs_2" node="2C54m44RJrW" />
               </node>
             </node>
           </node>
@@ -1836,7 +1836,7 @@
             </node>
             <node concept="2BFjQ_" id="4x22hTwiwAz" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwiwDI" role="2BFjQA">
-                <ref role="3ZVs_2" node="2C54m44S2FH" resolve="x" />
+                <ref role="3ZVs_2" node="2C54m44S2FH" />
               </node>
             </node>
           </node>
@@ -1918,7 +1918,7 @@
             </node>
             <node concept="2BFjQ_" id="4x22hTwiwLw" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwiwNX" role="2BFjQA">
-                <ref role="3ZVs_2" node="2C54m44RMBw" resolve="x" />
+                <ref role="3ZVs_2" node="2C54m44RMBw" />
               </node>
             </node>
           </node>
@@ -2048,7 +2048,7 @@
             </node>
             <node concept="2BFjQ_" id="4x22hTwix8s" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwixbH" role="2BFjQA">
-                <ref role="3ZVs_2" node="2C54m44SfPj" resolve="x" />
+                <ref role="3ZVs_2" node="2C54m44SfPj" />
               </node>
             </node>
           </node>
@@ -2073,7 +2073,7 @@
           <property role="19SUeA" value="Change the signature of the " />
         </node>
         <node concept="JLv3r" id="2C54m44SCCj" role="19SJt6">
-          <ref role="JLv3v" node="2C54m44Szo2" resolve="dummy" />
+          <ref role="JLv3v" node="2C54m44Szo2" />
         </node>
         <node concept="19SUe$" id="2C54m44SCCk" role="19SJt6">
           <property role="19SUeA" value=" function to have three int8 arguments named a, b and c.&#10;After the modification it should look like " />
@@ -2198,7 +2198,7 @@
           <property role="19SUeA" value=". Put the cursor&#10;onto " />
         </node>
         <node concept="JLv3r" id="3hyllbpXAw$" role="19SJt6">
-          <ref role="JLv3v" node="4x22hTwhr9m" resolve="a" />
+          <ref role="JLv3v" node="4x22hTwhr9m" />
         </node>
         <node concept="19SUe$" id="3hyllbpXAw_" role="19SJt6">
           <property role="19SUeA" value=", and insert a new variable " />
@@ -2497,7 +2497,7 @@
           <property role="19SUeA" value="You can rename anything that has a name by just changing its name.&#10;All occurences of the variable change automatically. Change the&#10;name of " />
         </node>
         <node concept="JLv3r" id="4x22hTwiayL" role="19SJt6">
-          <ref role="JLv3v" node="4x22hTwi8_p" resolve="arg" />
+          <ref role="JLv3v" node="4x22hTwi8_p" />
         </node>
         <node concept="19SUe$" id="4x22hTwiayM" role="19SJt6">
           <property role="19SUeA" value=" to " />
@@ -2541,7 +2541,7 @@
                   <property role="2hmy$m" value="10" />
                 </node>
                 <node concept="3ZUYvv" id="4x22hTwi8A6" role="3TlMhI">
-                  <ref role="3ZUYvu" node="4x22hTwi8_p" resolve="arg" />
+                  <ref role="3ZUYvu" node="4x22hTwi8_p" />
                 </node>
               </node>
             </node>
@@ -2552,7 +2552,7 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="3ZUYvv" id="4x22hTwi8F5" role="3XIe9u">
-                <ref role="3ZUYvu" node="4x22hTwi8_p" resolve="arg" />
+                <ref role="3ZUYvu" node="4x22hTwi8_p" />
               </node>
             </node>
           </node>
@@ -2826,12 +2826,12 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="3ZVu4v" id="4x22hTwiE50" role="3XIe9u">
-                <ref role="3ZVs_2" node="4x22hTwiE43" resolve="var" />
+                <ref role="3ZVs_2" node="4x22hTwiE43" />
               </node>
             </node>
             <node concept="2BFjQ_" id="4x22hTwiElu" role="3XIRFZ">
               <node concept="3ZVu4v" id="4x22hTwiEoi" role="2BFjQA">
-                <ref role="3ZVs_2" node="4x22hTwiCV8" resolve="temp" />
+                <ref role="3ZVs_2" node="4x22hTwiCV8" />
               </node>
             </node>
           </node>
@@ -2998,7 +2998,7 @@
               </node>
               <node concept="2BFjQ_" id="4x22hTwjEFB" role="3XIRFZ">
                 <node concept="3ZVu4v" id="4x22hTwjEGl" role="2BFjQA">
-                  <ref role="3ZVs_2" node="4x22hTwjq3T" resolve="a" />
+                  <ref role="3ZVs_2" node="4x22hTwjq3T" />
                 </node>
               </node>
             </node>
@@ -3022,7 +3022,7 @@
           <property role="19SUeA" value="If the underlying structure does not allow something to be pasted in some&#10;location, then special support must be provided. For example, you can take&#10;a local variable and paste it to be a global variable.&#10;- select the local variable declaration " />
         </node>
         <node concept="JLv3r" id="4x22hTwjVvg" role="19SJt6">
-          <ref role="JLv3v" node="4x22hTwjGlw" resolve="a" />
+          <ref role="JLv3v" node="4x22hTwjGlw" />
         </node>
         <node concept="19SUe$" id="4x22hTwjVvh" role="19SJt6">
           <property role="19SUeA" value=" in the function below&#10;- copy it&#10;- paste it above the function, to make it a global variable" />
@@ -3079,7 +3079,7 @@
               </node>
               <node concept="2BFjQ_" id="4x22hTwjGlB" role="3XIRFZ">
                 <node concept="3ZVu4v" id="4x22hTwjGlC" role="2BFjQA">
-                  <ref role="3ZVs_2" node="4x22hTwjGlw" resolve="a" />
+                  <ref role="3ZVs_2" node="4x22hTwjGlw" />
                 </node>
               </node>
             </node>
@@ -3692,13 +3692,13 @@
           <property role="19SUeA" value=". &#10;- Add a documentation comment to the global variable " />
         </node>
         <node concept="JLv3r" id="2QDtwSqCUtJ" role="19SJt6">
-          <ref role="JLv3v" node="2QDtwSqCUuI" resolve="global" />
+          <ref role="JLv3v" node="2QDtwSqCUuI" />
         </node>
         <node concept="19SUe$" id="2QDtwSqCUtK" role="19SJt6">
           <property role="19SUeA" value="&#10;- Add a documentation comment to the function " />
         </node>
         <node concept="JLv3r" id="2QDtwSqCUtL" role="19SJt6">
-          <ref role="JLv3v" node="2QDtwSqCUuM" resolve="func" />
+          <ref role="JLv3v" node="2QDtwSqCUuM" />
         </node>
         <node concept="19SUe$" id="2QDtwSqCUtM" role="19SJt6" />
       </node>
@@ -3968,7 +3968,7 @@
                       <property role="2hmy$m" value="20" />
                     </node>
                     <node concept="3ZVu4v" id="2QDtwSqCUvv" role="3TlMhI">
-                      <ref role="3ZVs_2" node="2QDtwSqCUvn" resolve="x" />
+                      <ref role="3ZVs_2" node="2QDtwSqCUvn" />
                     </node>
                   </node>
                 </node>
@@ -3978,13 +3978,13 @@
                   <property role="2hmy$m" value="0" />
                 </node>
                 <node concept="3ZUYvv" id="2QDtwSqCUvy" role="3TlMhI">
-                  <ref role="3ZUYvu" node="2QDtwSqCUvA" resolve="a" />
+                  <ref role="3ZUYvu" node="2QDtwSqCUvA" />
                 </node>
               </node>
             </node>
             <node concept="2BFjQ_" id="2QDtwSqCUvz" role="3XIRFZ">
               <node concept="3ZVu4v" id="2QDtwSqCUv$" role="2BFjQA">
-                <ref role="3ZVs_2" node="2QDtwSqCUvn" resolve="x" />
+                <ref role="3ZVs_2" node="2QDtwSqCUvn" />
               </node>
             </node>
           </node>
@@ -4090,7 +4090,7 @@
                         <property role="2hmy$m" value="20" />
                       </node>
                       <node concept="3ZVu4v" id="2QDtwSqCUwd" role="3TlMhI">
-                        <ref role="3ZVs_2" node="2QDtwSqCUw4" resolve="x" />
+                        <ref role="3ZVs_2" node="2QDtwSqCUw4" />
                       </node>
                     </node>
                   </node>
@@ -4100,14 +4100,14 @@
                     <property role="2hmy$m" value="0" />
                   </node>
                   <node concept="3ZUYvv" id="2QDtwSqCUwg" role="3TlMhI">
-                    <ref role="3ZUYvu" node="2QDtwSqCUwk" resolve="a" />
+                    <ref role="3ZUYvu" node="2QDtwSqCUwk" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="2BFjQ_" id="2QDtwSqCUwh" role="3XIRFZ">
               <node concept="3ZVu4v" id="2QDtwSqCUwi" role="2BFjQA">
-                <ref role="3ZVs_2" node="2QDtwSqCUw4" resolve="x" />
+                <ref role="3ZVs_2" node="2QDtwSqCUw4" />
               </node>
             </node>
           </node>

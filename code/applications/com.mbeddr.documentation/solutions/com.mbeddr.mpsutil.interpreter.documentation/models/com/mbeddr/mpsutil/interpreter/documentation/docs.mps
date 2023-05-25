@@ -164,7 +164,7 @@
   <node concept="1_1swa" id="3OU98G0uTdn">
     <property role="TrG5h" value="Interpreter" />
     <property role="yApLE" value="1" />
-    <ref role="G9hjw" node="3OU98G0uUxs" resolve="DocumentConfig" />
+    <ref role="G9hjw" node="3OU98G0uUxs" />
     <node concept="Wq1Bs" id="3OU98G0uVw7" role="Wq1Bf">
       <property role="Wq1Bt" value="Niko Stotz" />
       <property role="Wq1Bq" value="stotz@itemis.de" />
@@ -484,7 +484,7 @@
           <node concept="3z_lpY" id="1d83w5bFaq_" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bFaqA" role="3z_lpZ">
               <node concept="2NCMab" id="1d83w5bFaqK" role="2NCMaf">
-                <ref role="2NCMaa" node="3OU98G0uTdn" resolve="Interpreter" />
+                <ref role="2NCMaa" node="3OU98G0uTdn" />
               </node>
             </node>
           </node>
@@ -612,7 +612,7 @@
                   <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFgsj" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFgj$" resolve="relatedInterpreters" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFgj$" />
                 </node>
               </node>
             </node>
@@ -681,7 +681,7 @@
                   <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFiqb" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFhRG" resolve="typeMappings" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFhRG" />
                 </node>
               </node>
             </node>
@@ -756,7 +756,7 @@
                   <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFiYB" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:46pvM1xfJji" resolve="evaluators" />
+                  <ref role="2NCMaa" to="50zn:46pvM1xfJji" />
                 </node>
               </node>
             </node>
@@ -783,7 +783,7 @@
                   <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFk5x" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFjZi" resolve="simpleEvaluator" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFjZi" />
                 </node>
               </node>
             </node>
@@ -796,7 +796,7 @@
                   <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFkbM" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFjZs" resolve="complexEvaluator" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFjZs" />
                 </node>
               </node>
             </node>
@@ -824,7 +824,7 @@
                 <property role="19SUeA" value=" based on the order described in " />
               </node>
               <node concept="1_0GAv" id="1d83w5bFkm$" role="19SJt6">
-                <ref role="1_0GAl" node="1d83w5bFfPy" resolve="relatedInterpreters" />
+                <ref role="1_0GAl" node="1d83w5bFfPy" />
               </node>
               <node concept="19SUe$" id="1d83w5bFkmz" role="19SJt6">
                 <property role="19SUeA" value=" and the order of evaluators within the interpreter. However, most times the sensible order of evaluators can be deducted from the matching concepts and constraints. A warning was displayed If this sensible order is violated. The following rules define the sensible order:" />
@@ -943,7 +943,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFkIS" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:46pvM1xfJji" resolve="evaluators" />
+                        <ref role="2NCMaa" to="50zn:46pvM1xfJji" />
                       </node>
                     </node>
                   </node>
@@ -1068,7 +1068,7 @@
                     <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                   </node>
                   <node concept="2NCMab" id="1d83w5bFl32" role="2NCMaf">
-                    <ref role="2NCMaa" to="50zn:1d83w5bFjZi" resolve="simpleEvaluator" />
+                    <ref role="2NCMaa" to="50zn:1d83w5bFjZi" />
                   </node>
                 </node>
               </node>
@@ -1081,7 +1081,7 @@
                     <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                   </node>
                   <node concept="2NCMab" id="1d83w5bFl8K" role="2NCMaf">
-                    <ref role="2NCMaa" to="50zn:1d83w5bFjZs" resolve="complexEvaluator" />
+                    <ref role="2NCMaa" to="50zn:1d83w5bFjZs" />
                   </node>
                 </node>
               </node>
@@ -1111,7 +1111,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1Y3rEQ3p27c" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p1bx" resolve="interpretConstraintExpression" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p1bx" />
                       </node>
                     </node>
                   </node>
@@ -1129,7 +1129,7 @@
                     <property role="19SUeA" value=") invokes the interpreter on the selected child and returns the evaluation result. If the selected child was constrained to a type by the containing evaluator, the evaluation result is of BaseLanguage type mapped to this constrained type in " />
                   </node>
                   <node concept="1_0GAv" id="1Y3rEQ3p27J" role="19SJt6">
-                    <ref role="1_0GAl" node="1d83w5bFgPT" resolve="typeMappings" />
+                    <ref role="1_0GAl" node="1d83w5bFgPT" />
                   </node>
                   <node concept="19SUe$" id="1Y3rEQ3p27K" role="19SJt6">
                     <property role="19SUeA" value=" section. As an example, the type of " />
@@ -1217,7 +1217,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFlE9" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p0Kb" resolve="interpretExpression" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p0Kb" />
                       </node>
                     </node>
                   </node>
@@ -1277,7 +1277,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFm0L" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFlWg" resolve="operationCallExpression" />
+                        <ref role="2NCMaa" to="50zn:1d83w5bFlWg" />
                       </node>
                     </node>
                   </node>
@@ -1327,7 +1327,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFmwH" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFmrM" resolve="nodeExpression" />
+                        <ref role="2NCMaa" to="50zn:1d83w5bFmrM" />
                       </node>
                     </node>
                   </node>
@@ -1404,7 +1404,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFn7y" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFn4X" resolve="envExpression" />
+                        <ref role="2NCMaa" to="50zn:1d83w5bFn4X" />
                       </node>
                     </node>
                   </node>
@@ -1464,7 +1464,7 @@
                         <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1Y3rEQ3osAe" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1Y3rEQ3oswS" resolve="castUpExpression" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3oswS" />
                       </node>
                     </node>
                   </node>
@@ -1708,7 +1708,7 @@
                       <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
                     </node>
                     <node concept="2NCMab" id="1d83w5bFpkE" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1d83w5bFpfA" resolve="addToEnvironment" />
+                      <ref role="2NCMaa" to="50zn:1d83w5bFpfA" />
                     </node>
                   </node>
                 </node>
@@ -1748,7 +1748,7 @@
                       <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                     </node>
                     <node concept="2NCMab" id="1d83w5bFpFD" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1d83w5bFjZs" resolve="complexEvaluator" />
+                      <ref role="2NCMaa" to="50zn:1d83w5bFjZs" />
                     </node>
                   </node>
                 </node>
@@ -1872,7 +1872,7 @@
             <property role="19SUeA" value="If we just want to evaluate a node based on a category with reasonable defaults, we'd choose  " />
           </node>
           <node concept="1_0GAv" id="5$eeMt9pEJX" role="19SJt6">
-            <ref role="1_0GAl" node="5$eeMt9pEN5" resolve="interpreterEvaluationHelper" />
+            <ref role="1_0GAl" node="5$eeMt9pEN5" />
           </node>
           <node concept="19SUe$" id="5$eeMt9pEJY" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -2323,7 +2323,7 @@
                 <property role="19SUeA" value=" takes care of combining several Interpreters, possibly related (see " />
               </node>
               <node concept="1_0GAv" id="1Y3rEQ3jEJm" role="19SJt6">
-                <ref role="1_0GAl" node="1d83w5bFfPy" resolve="relatedInterpreters" />
+                <ref role="1_0GAl" node="1d83w5bFfPy" />
               </node>
               <node concept="19SUe$" id="1Y3rEQ3jEJn" role="19SJt6">
                 <property role="19SUeA" value=", to one single IInterpreter containing the union of all Evaluators. This allows us to distribute Interpreter definitions over several languages, possibly close to the definition of the interpreted concept itself." />
@@ -2418,7 +2418,7 @@
               <property role="19SUeA" value=" is suitable for most purposes. We may pass an IInterpreter as constructor parameter, which will be set as root interpreter (see " />
             </node>
             <node concept="1_0GAv" id="1Y3rEQ3jGnS" role="19SJt6">
-              <ref role="1_0GAl" node="1Y3rEQ3jGql" resolve="setRootInterpreter" />
+              <ref role="1_0GAl" node="1Y3rEQ3jGql" />
             </node>
             <node concept="19SUe$" id="1Y3rEQ3jGnT" role="19SJt6">
               <property role="19SUeA" value=")." />
@@ -2840,7 +2840,7 @@
               <property role="19SUeA" value=" operation can be implemented as single-line BaseLanguage expression or multi-line BaseLanguage statements. In addition to the expressions described in " />
             </node>
             <node concept="1_0GAv" id="1Y3rEQ3oYPH" role="19SJt6">
-              <ref role="1_0GAl" node="1d83w5bFkVv" resolve="implementation" />
+              <ref role="1_0GAl" node="1d83w5bFkVv" />
             </node>
             <node concept="19SUe$" id="1Y3rEQ3oYPI" role="19SJt6">
               <property role="19SUeA" value=", we can use the following expressions:" />
@@ -2868,7 +2868,7 @@
                       <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
                     </node>
                     <node concept="2NCMab" id="1Y3rEQ3oZcW" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oTVa" resolve="isEvaluableConstraintExpression" />
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oTVa" />
                     </node>
                   </node>
                 </node>
@@ -2910,7 +2910,7 @@
                       <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
                     </node>
                     <node concept="2NCMab" id="1Y3rEQ3p2$Q" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oVVa" resolve="isEvaluableExpression" />
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oVVa" />
                     </node>
                   </node>
                 </node>
@@ -3049,7 +3049,7 @@
               <property role="19SUeA" value="We aquire our Conditional Interpreter as described in " />
             </node>
             <node concept="1_0GAv" id="1Y3rEQ3p8u5" role="19SJt6">
-              <ref role="1_0GAl" node="1Y3rEQ3ju8j" resolve="aquireIInterpreter" />
+              <ref role="1_0GAl" node="1Y3rEQ3ju8j" />
             </node>
             <node concept="19SUe$" id="1Y3rEQ3p8u6" role="19SJt6">
               <property role="19SUeA" value=" and need to cast it to the " />
@@ -3321,11 +3321,11 @@
     <property role="TrG5h" value="InterpreterExport" />
     <property role="WqcPg" value="Interpreter Doc" />
     <node concept="1_0j5j" id="3OU98G0wufq" role="30Gjbj">
-      <ref role="1_0j5g" node="3OU98G0uTdn" resolve="Interpreter" />
+      <ref role="1_0j5g" node="3OU98G0uTdn" />
     </node>
     <node concept="2SbEIf" id="3OU98G0wufx" role="30Gjbg">
       <property role="2SbEId" value="tmp" />
-      <ref role="2SbEIe" node="3OU98G0uUxt" resolve="source_gen" />
+      <ref role="2SbEIe" node="3OU98G0uUxt" />
     </node>
     <node concept="1TaS0h" id="5V9QM6os7y8" role="30GjaH" />
   </node>
