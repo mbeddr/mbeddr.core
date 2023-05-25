@@ -4,11 +4,8 @@ plugins {
     id 'de.itemis.mps.gradle.common' version '1.13.+'
 }
 
-
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
-
-
 
 //MPS version
 ext.mpsMajor = "2022.2"
@@ -36,6 +33,17 @@ if (ext.has('java17_home')) {
             + "  * Run Gradle using Java 17")
     }
     jdk_home = System.getProperty('java.home')
+}
+
+def hasNonEmptyProperty(property) {
+    return project.hasProperty(property) && !project.getProperty(property).empty
+}
+
+def findNonEmptyProperty(property) {
+    if (hasNonEmptyProperty(property)) {
+        return project.getProperty(property)
+    }
+    return null
 }
 
 // Check JDK location
