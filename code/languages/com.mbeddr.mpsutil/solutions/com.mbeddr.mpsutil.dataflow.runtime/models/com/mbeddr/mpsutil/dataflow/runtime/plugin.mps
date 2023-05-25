@@ -5333,7 +5333,7 @@
       <property role="od$2w" value="false" />
       <node concept="3Tm1VV" id="5xyoMgvyQaD" role="1B3o_S" />
       <node concept="3uibUv" id="5xyoMgvyQaF" role="3clF45">
-        <ref role="3uigEE" to="8qxk:3yaa4ph8tze" resolve="TryFinallyInfo" />
+        <ref role="3uigEE" to="8qxk:3yaa4ph8tze" resolve="Program.TryFinallyInfo" />
       </node>
       <node concept="3clFbS" id="5xyoMgvyQaG" role="3clF47">
         <node concept="3clFbF" id="5xyoMgvyQaJ" role="3cqZAp">

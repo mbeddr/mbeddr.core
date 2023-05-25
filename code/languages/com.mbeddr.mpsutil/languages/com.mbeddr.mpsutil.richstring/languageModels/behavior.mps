@@ -336,7 +336,7 @@
       </node>
       <node concept="3clFbS" id="6Go9U2z7T3_" role="3clF47" />
       <node concept="2AHcQZ" id="38BeNG_3LYX" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
       <node concept="P$JXv" id="38BeNG_3LYU" role="lGtFl">
         <node concept="TZ5HI" id="38BeNG_3LYV" role="3nqlJM">
