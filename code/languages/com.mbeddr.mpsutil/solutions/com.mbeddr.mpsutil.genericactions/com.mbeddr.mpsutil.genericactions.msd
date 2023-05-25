@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" >
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -16,6 +16,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
+    <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -38,6 +39,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
     <module reference="35bf4931-c8a2-4f76-81bc-972096f7b19a(com.mbeddr.mpsutil.genericactions)" version="0" />
+    <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
   </dependencyVersions>
 </solution>

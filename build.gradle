@@ -15,7 +15,7 @@ ext.mpsMajor = "2022.2"
 ext.mpsBuild = "2022.2"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -77,7 +77,7 @@ subprojects {
         } else {
             ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
         }
-        if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
+        if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
             ext.mbeddrBuild = "master"
         }
 
@@ -108,7 +108,7 @@ subprojects {
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform,
         // as well as mbeddr to be built against a specified existing mbeddr platform version
-        ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+        ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
             // Coerce TeamCity build number to mbeddrBuildNumber by default

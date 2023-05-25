@@ -5,7 +5,7 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework(MPS.Core/)" />
+    <import index="8qxk" ref="r:3dddb2c7-b2ba-4381-896a-2e702ca1fb6e(jetbrains.mps.lang.dataFlow.framework)" />
     <import index="6qry" ref="r:6c3f8bb9-12d1-49ee-897b-55327d80646b(com.mbeddr.mpsutil.dataflow.structure)" implicit="true" />
   </imports>
   <registry>
@@ -61,7 +61,7 @@
         <node concept="mw_s8" id="1g9itazWEtF" role="1ZfhKB">
           <node concept="2c44tf" id="1g9itazWEtB" role="mwGJk">
             <node concept="3uibUv" id="1g9itazWEuN" role="2c44tc">
-              <ref role="3uigEE" to="1fjm:~IDataFlowModeId" resolve="IDataFlowModeId" />
+              <ref role="3uigEE" to="8qxk:3yaa4ph8tQx" resolve="IDataFlowModeId" />
             </node>
           </node>
         </node>

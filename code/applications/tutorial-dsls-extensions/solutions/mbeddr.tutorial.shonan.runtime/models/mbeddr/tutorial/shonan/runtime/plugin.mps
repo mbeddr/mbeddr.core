@@ -15,8 +15,6 @@
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="5l2n" ref="r:693b7f2c-c614-45fe-9adb-809539ce09a8(mbeddr.tutorial.shonan.structure)" />
-    <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
-    <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework(MPS.Core/)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="aplb" ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6/r:a1d8bbbf-d4f0-431f-8dcd-a6badc777315(jetbrains.mps.dataFlow.runtime/jetbrains.mps.lang.dataFlow)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -31,6 +29,8 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="vr4q" ref="r:0076b811-f030-41c7-b275-1527366228eb(mbeddr.tutorial.shonan.enumMigration)" />
+    <import index="9fia" ref="r:48cf50db-7ea3-4b1e-ab16-c3d84cbcf0df(jetbrains.mps.lang.dataFlow.framework.instructions)" />
+    <import index="8qxk" ref="r:3dddb2c7-b2ba-4381-896a-2e702ca1fb6e(jetbrains.mps.lang.dataFlow.framework)" />
     <import index="vtnj" ref="r:54afdbc3-5ab8-43b5-b09c-40cc96834e65(mbeddr.tutorial.shonan.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -1033,7 +1033,7 @@
               <node concept="3cpWsn" id="35eY$0840Aj" role="3cpWs9">
                 <property role="TrG5h" value="program" />
                 <node concept="3uibUv" id="35eY$0840Ak" role="1tU5fm">
-                  <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+                  <ref role="3uigEE" to="8qxk:3yaa4ph8tzc" resolve="Program" />
                 </node>
                 <node concept="2YIFZM" id="35eY$0840Al" role="33vP2m">
                   <ref role="1Pybhc" to="aplb:3HJD4JbIw9v" resolve="DataFlow" />
@@ -1049,7 +1049,7 @@
                 <property role="TrG5h" value="instructions" />
                 <node concept="2hMVRd" id="517Ozmf9_$g" role="1tU5fm">
                   <node concept="3uibUv" id="517Ozmf9_$j" role="2hN53Y">
-                    <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+                    <ref role="3uigEE" to="9fia:3yaa4ph8tQC" resolve="Instruction" />
                   </node>
                 </node>
                 <node concept="1rXfSq" id="517Ozmf9_A7" role="33vP2m">
@@ -1059,7 +1059,7 @@
                       <ref role="3cqZAo" node="35eY$0840Aj" resolve="program" />
                     </node>
                     <node concept="liA8E" id="517Ozmf9_Aa" role="2OqNvi">
-                      <ref role="37wK5l" to="1fjm:~Program.getEnd()" resolve="getEnd" />
+                      <ref role="37wK5l" to="8qxk:3yaa4ph8t_P" resolve="getEnd" />
                     </node>
                   </node>
                 </node>
@@ -1099,7 +1099,7 @@
                           <ref role="2Gs0qQ" node="35eY$0840NU" resolve="instruction" />
                         </node>
                         <node concept="liA8E" id="35eY$0840Vf" role="2OqNvi">
-                          <ref role="37wK5l" to="dau9:~Instruction.getSource()" resolve="getSource" />
+                          <ref role="37wK5l" to="9fia:3yaa4ph8tRD" resolve="getSource" />
                         </node>
                       </node>
                     </node>
@@ -1468,13 +1468,13 @@
             <property role="TrG5h" value="result" />
             <node concept="2hMVRd" id="517Ozmf9wF8" role="1tU5fm">
               <node concept="3uibUv" id="517Ozmf9wGT" role="2hN53Y">
-                <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+                <ref role="3uigEE" to="9fia:3yaa4ph8tQC" resolve="Instruction" />
               </node>
             </node>
             <node concept="2ShNRf" id="517Ozmf9wJx" role="33vP2m">
               <node concept="2i4dXS" id="517Ozmf9wIS" role="2ShVmc">
                 <node concept="3uibUv" id="517Ozmf9wIT" role="HW$YZ">
-                  <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+                  <ref role="3uigEE" to="9fia:3yaa4ph8tQC" resolve="Instruction" />
                 </node>
               </node>
             </node>
@@ -1506,7 +1506,7 @@
               <node concept="22lmx$" id="517Ozmf9xdG" role="3clFbw">
                 <node concept="2ZW3vV" id="517Ozmf9xyu" role="3uHU7w">
                   <node concept="3uibUv" id="517Ozmf9x_k" role="2ZW6by">
-                    <ref role="3uigEE" to="dau9:~IfJumpInstruction" resolve="IfJumpInstruction" />
+                    <ref role="3uigEE" to="9fia:3yaa4ph8uJT" resolve="IfJumpInstruction" />
                   </node>
                   <node concept="2GrUjf" id="517Ozmf9xhR" role="2ZW6bz">
                     <ref role="2Gs0qQ" node="517Ozmf9wLT" resolve="previous" />
@@ -1514,7 +1514,7 @@
                 </node>
                 <node concept="2ZW3vV" id="517Ozmf9x6c" role="3uHU7B">
                   <node concept="3uibUv" id="517Ozmf9x8M" role="2ZW6by">
-                    <ref role="3uigEE" to="dau9:~JumpInstruction" resolve="JumpInstruction" />
+                    <ref role="3uigEE" to="9fia:3yaa4ph8uPR" resolve="JumpInstruction" />
                   </node>
                   <node concept="2GrUjf" id="517Ozmf9wTi" role="2ZW6bz">
                     <ref role="2Gs0qQ" node="517Ozmf9wLT" resolve="previous" />
@@ -1544,7 +1544,7 @@
               <ref role="3cqZAo" node="517Ozmf9wqt" resolve="instruction" />
             </node>
             <node concept="liA8E" id="517Ozmf9wOE" role="2OqNvi">
-              <ref role="37wK5l" to="dau9:~Instruction.pred()" resolve="pred" />
+              <ref role="37wK5l" to="9fia:3yaa4ph8tTE" resolve="pred" />
             </node>
           </node>
         </node>
@@ -1557,13 +1557,13 @@
       <node concept="3Tm6S6" id="517Ozmf9vyX" role="1B3o_S" />
       <node concept="2hMVRd" id="517Ozmf9vXL" role="3clF45">
         <node concept="3uibUv" id="517Ozmf9vXX" role="2hN53Y">
-          <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+          <ref role="3uigEE" to="9fia:3yaa4ph8tQC" resolve="Instruction" />
         </node>
       </node>
       <node concept="37vLTG" id="517Ozmf9wqt" role="3clF46">
         <property role="TrG5h" value="instruction" />
         <node concept="3uibUv" id="517Ozmf9wqs" role="1tU5fm">
-          <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+          <ref role="3uigEE" to="9fia:3yaa4ph8tQC" resolve="Instruction" />
         </node>
       </node>
     </node>
