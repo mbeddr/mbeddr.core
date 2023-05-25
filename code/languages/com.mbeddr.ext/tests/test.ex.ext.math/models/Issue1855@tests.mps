@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
       </concept>
       <concept id="1215611834554" name="jetbrains.mps.lang.test.structure.CheckDataFlowOperation" flags="ng" index="8796x" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -109,6 +110,7 @@
   </registry>
   <node concept="1lH9Xt" id="3PT6Z48LO1C">
     <property role="TrG5h" value="Issue1855" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3PT6Z48LO1D" role="1SKRRt">
       <node concept="N3F5e" id="5UDKTeAvEtq" role="1qenE9">
         <property role="TrG5h" value="Issue1855Module" />
