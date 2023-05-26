@@ -5,6 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# May 2023
+
+## mbeddr.core
+
+Update mbeddr.core languages to MPS version 2022.2
+
+## build.gradle
+
+* add wrapper function to access non-empty properties
+* use jbr 17 instead of jbr 11
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+* Fix incorrect inclusion of jetbrains.mps.text@java.stub
+
+### Changed
+
+* Use aspect.structure devkit in structure aspects
+* Replace node<LinkDeclaration> with SReferenceLink in ActionHelper
+* Remove unnecessary IDontSubstituteByDefault in ActionHelper
+
+## com.mbeddr.cod
+
+### Fixed
+
+Replace pathToFile with alternateOutput in screenshot generator
+
+## com.mbeddr.analyses
+
+### Changed
+
+* Use aspect.structure devkit in cbmc testing
+
+
 # April 2023
 
 ## com.mbeddr.doc
