@@ -22274,6 +22274,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7$KYJ1LahXr" role="3bR37C">
+          <node concept="3bR9La" id="7$KYJ1LahXs" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7hVsScEQJs4" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -22950,11 +22955,6 @@
         <node concept="1yeLz9" id="1hnjAvpIo2f" role="1TViLv">
           <property role="TrG5h" value="test.com.mbeddr.mpsutil.xml.fix.support#210803258685952145" />
           <property role="3LESm3" value="12ea1291-43c2-495c-99bf-27bc9db95754" />
-          <node concept="1SiIV0" id="2wu1bNQpoex" role="3bR37C">
-            <node concept="3bR9La" id="2wu1bNQpoew" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7YI57w6K0vJ" resolve="jetbrains.mps.core.xml.sax#2264311582634171386" />
-            </node>
-          </node>
           <node concept="1BupzO" id="$Kq8MetF28" role="3bR31x">
             <property role="3ZfqAx" value="generator/template" />
             <property role="1Hdu6h" value="true" />
