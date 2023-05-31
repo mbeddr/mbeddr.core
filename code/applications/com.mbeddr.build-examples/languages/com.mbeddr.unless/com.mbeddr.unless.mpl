@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.unless" uuid="4d225407-053a-4f77-9e22-29bf404a46f2" languageVersion="0" moduleVersion="0">
+<language namespace="com.mbeddr.unless" uuid="4d225407-053a-4f77-9e22-29bf404a46f2" generatorOutputPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.mbeddr.unless/source_gen" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot contentPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.mbeddr.unless" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
+      <classes generated="true" path="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.mbeddr.unless/classes_gen" />
     </facet>
   </facets>
   <accessoryModels />
   <generators>
-    <generator namespace="com.mbeddr.unless#2633084349332346790" uuid="bb372490-cb1d-40be-85a5-670420d5ce79">
+    <generator namespace="com.mbeddr.unless#2633084349332346790" uuid="bb372490-cb1d-40be-85a5-670420d5ce79" generatorOutputPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.mbeddr.unless/generator/source_gen">
       <models>
-        <modelRoot contentPath="${module}" type="default">
+        <modelRoot contentPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.mbeddr.unless" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <facets>
         <facet type="java">
-          <classes generated="true" path="${module}/generator/classes_gen" />
+          <classes generated="true" path="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.mbeddr.unless/generator/classes_gen" />
         </facet>
       </facets>
       <external-templates />

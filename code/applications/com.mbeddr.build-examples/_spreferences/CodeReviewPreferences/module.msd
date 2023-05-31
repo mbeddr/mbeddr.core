@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.build-examples.__spreferences.CodeReviewPreferences" uuid="~_PreferencesModule#com.mbeddr.build-examples.__spreferences.CodeReviewPreferences" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.build-examples.__spreferences.CodeReviewPreferences" uuid="~_PreferencesModule#com.mbeddr.build-examples.__spreferences.CodeReviewPreferences" moduleVersion="0" compileInMPS="true" generatorOutputPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/_spreferences/CodeReviewPreferences/source_gen">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot contentPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/_spreferences/CodeReviewPreferences" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
+      <classes generated="true" path="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/_spreferences/CodeReviewPreferences/classes_gen" />
     </facet>
   </facets>
   <sourcePath />
