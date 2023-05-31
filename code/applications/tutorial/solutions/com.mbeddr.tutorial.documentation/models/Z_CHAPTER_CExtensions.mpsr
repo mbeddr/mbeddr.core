@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
+        <child id="6165313375056012515" name="ref" index="$CzcU" />
+      </concept>
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+        <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
+      </concept>
+      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
+        <reference id="3350625596580225386" name="doc" index="1_0j5g" />
+      </concept>
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
+      </concept>
+      <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
+        <property id="3350625596580064225" name="text" index="1_0VJr" />
+      </concept>
+      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
+        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1_1swa" id="1OEOMspkYrg">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="Z_CHAPTER_CExtensions" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1mvXsy" id="1OEOMsplmwh" role="1_0VJ0">
+      <property role="TrG5h" value="cextensions" />
+      <property role="1_0VJr" value="C Extensions" />
+      <node concept="$CzcT" id="2NmTaRWxfhw" role="1_0VJ0">
+        <node concept="1_0j5j" id="2NmTaRWxfig" role="$CzcU">
+          <ref role="1_0j5g" node="69uDFDaU6IU" resolve="A_StaticEvaluation" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="2NmTaRWxfip" role="1_0VJ0">
+        <node concept="1_0j5j" id="2NmTaRWxfiU" role="$CzcU">
+          <ref role="1_0j5g" node="yrKNEnw4lA" resolve="C_Units" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="2NmTaRWxfiF" role="1_0VJ0">
+        <node concept="1_0j5j" id="2NmTaRWxfj0" role="$CzcU">
+          <ref role="1_0j5g" node="300OR6GmKCv" resolve="E_StateMachines" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="2NmTaRWxfix" role="1_0VJ0">
+        <node concept="1_0j5j" id="2NmTaRWxfiX" role="$CzcU">
+          <ref role="1_0j5g" node="3D8Uf60N7kD" resolve="D_Components" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="2NmTaRWxfij" role="1_0VJ0">
+        <node concept="1_0j5j" id="2NmTaRWxfiR" role="$CzcU">
+          <ref role="1_0j5g" node="6UY8Kx5iuLF" resolve="B_DecisionTables" />
+        </node>
+      </node>
+    </node>
+    <node concept="1_0j5j" id="2NmTaRWxfhD" role="1DXQ57">
+      <ref role="1_0j5g" node="69uDFDaU6IU" resolve="A_StaticEvaluation" />
+    </node>
+    <node concept="1_0j5j" id="2NmTaRWxfi9" role="1DXQ57">
+      <ref role="1_0j5g" node="6UY8Kx5iuLF" resolve="B_DecisionTables" />
+    </node>
+    <node concept="1_0j5j" id="2NmTaRWxfh$" role="1DXQ57">
+      <ref role="1_0j5g" node="yrKNEnw4lA" resolve="C_Units" />
+    </node>
+    <node concept="1_0j5j" id="2NmTaRWxfhN" role="1DXQ57">
+      <ref role="1_0j5g" node="3D8Uf60N7kD" resolve="D_Components" />
+    </node>
+    <node concept="1_0j5j" id="2NmTaRWxfhX" role="1DXQ57">
+      <ref role="1_0j5g" node="300OR6GmKCv" resolve="E_StateMachines" />
+    </node>
+  </node>
+</model>
+

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:38897e08-83fd-42c7-91d3-65b102721940(com.mbeddr.tutorial.documentation.ug.cextensions)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="ntnz" ref="r:7f372397-146b-40d5-9f20-607974c4fed4(com.mbeddr.tutorial.documentation.ug._main)" implicit="true" />
+    <import index="zxcx" ref="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
+      <concept id="620304030119138923" name="com.mbeddr.doc.structure.BoldFormattedText" flags="ng" index="2vpllh" />
+      <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
+        <child id="6165313375055797477" name="text" index="$DsGW" />
+      </concept>
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
+        <reference id="2286331641395252233" name="node" index="2NCMaa" />
+      </concept>
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
+        <child id="2286331641395252236" name="elements" index="2NCMaf" />
+      </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
+      <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
+      <concept id="6386504476136420159" name="com.mbeddr.doc.structure.ImgRefWord" flags="ng" index="2Sbdz4">
+        <reference id="6386504476136420174" name="image" index="2SbdyP" />
+      </concept>
+      <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <child id="6955693250238922832" name="description" index="3z_lpS" />
+        <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
+      </concept>
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
+        <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
+      </concept>
+      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
+        <child id="3350625596580089613" name="text" index="1_0LWR" />
+      </concept>
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
+      </concept>
+      <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
+        <property id="3350625596580064225" name="text" index="1_0VJr" />
+      </concept>
+      <concept id="3350625596580064455" name="com.mbeddr.doc.structure.Section" flags="ng" index="1_0VNX" />
+      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
+        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
+      </concept>
+      <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <child id="5378658552262903589" name="text" index="3X6T9h" />
+      </concept>
+      <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <child id="5378658552262986137" name="items" index="3Xp5NH" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1_1swa" id="69uDFDaU6IU">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="A_StaticEvaluation" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <node concept="1_0VNX" id="3mn43GO8chN" role="1_0VJ0">
+      <property role="TrG5h" value="staticEvaluation" />
+      <property role="1_0VJr" value="Static Evaluation" />
+      <node concept="1_0LV8" id="69uDFDaUqtM" role="1_0VJ0">
+        <node concept="19SGf9" id="69uDFDaUqtN" role="1_0LWR">
+          <node concept="19SUe$" id="69uDFDaUqtO" role="19SJt6">
+            <property role="19SUeA" value="mbeddr can calculate the static value of an expression if all children of that expression are statically evaluable. This is the case if the leaf nodes of the expression tree consist of literals, references to " />
+          </node>
+          <node concept="1jUjqm" id="69uDFDaWCvO" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDaWCvP" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDaWCvQ" role="19SJt6">
+                <property role="19SUeA" value="#constant" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDaWCvN" role="19SJt6">
+            <property role="19SUeA" value=" or references to " />
+          </node>
+          <node concept="1jUjqm" id="69uDFDaWCvX" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDaWCvY" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDaWCvZ" role="19SJt6">
+                <property role="19SUeA" value="#macro" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDaWCvW" role="19SJt6">
+            <property role="19SUeA" value=" (function macro calls). Whether an expression is statically evaluatable, as well as its calculated static value, is shown in the inspector. " />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1CZbvxN9LAF" role="1_0VJ0">
+        <node concept="19SGf9" id="1CZbvxN9LAG" role="1_0LWR">
+          <node concept="19SUe$" id="1CZbvxN9LAH" role="19SJt6">
+            <property role="19SUeA" value="The interpreter, which calculates the static value, works with a precision of 100 decimal places. The 101st place is rounded half up. " />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1CZbvxN9LDa" role="1_0VJ0">
+        <node concept="19SGf9" id="1CZbvxN9LDb" role="1_0LWR">
+          <node concept="19SUe$" id="1CZbvxN9LDc" role="19SJt6">
+            <property role="19SUeA" value="By default the interpreter has no effect on the code generated by mbeddr. However, by using the " />
+          </node>
+          <node concept="1jUjqm" id="69uDFDb1ezD" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDb1ezE" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDb1ezF" role="19SJt6">
+                <property role="19SUeA" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDb1ezG" role="19SJt6">
+            <property role="19SUeA" value=" expression you can ask mbeddr's code generator to first use the interpreter to calculate the static value and use this value then in the generated code. This functionality was introduced so that your code readability does not need to be sacrificed for performance reasons (in traditional C code you would typically see &quot;magic numbers&quot; where " />
+          </node>
+          <node concept="1jUjqm" id="69uDFDb5kGk" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDb5kGl" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDb5kGm" role="19SJt6">
+                <property role="19SUeA" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDb5kHx" role="19SJt6">
+            <property role="19SUeA" value=" is used in mbeddr). The expression can be inserted into your code using the " />
+          </node>
+          <node concept="1jUjqm" id="1CZbvxN9Wn0" role="19SJt6">
+            <node concept="19SGf9" id="1CZbvxN9Wn1" role="$DsGW">
+              <node concept="19SUe$" id="1CZbvxN9Wn2" role="19SJt6">
+                <property role="19SUeA" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1CZbvxN9WmZ" role="19SJt6">
+            <property role="19SUeA" value=" alias or by using a surround-with intention on a statically evaluable expression (" />
+          </node>
+          <node concept="2OoWia" id="69uDFDb5kZP" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDb5kZQ" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDb5kZR" role="19SJt6">
+                <property role="19SUeA" value="Ctrl+Alt+T" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDb5kZO" role="19SJt6">
+            <property role="19SUeA" value="). " />
+          </node>
+        </node>
+      </node>
+      <node concept="3z_lpz" id="69uDFDb5ljx" role="1_0VJ0">
+        <property role="TrG5h" value="staticEval" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="OjmMv" id="69uDFDb5ljz" role="3z_lpS">
+          <node concept="19SGf9" id="69uDFDb5lj$" role="OjmMu">
+            <node concept="19SUe$" id="69uDFDb5lj_" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="2bctqb" id="69uDFDb5ljB" role="3z_lpT" />
+        <node concept="2NCZwO" id="69uDFDb5ljD" role="3z_lpI">
+          <node concept="2NCMab" id="69uDFDb5lli" role="2NCMaf">
+            <ref role="2NCMaa" to="zxcx:69uDFDaUqQ8" resolve="StaticEval" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="1CZbvxN9Wnt" role="1_0VJ0">
+        <node concept="19SGf9" id="1CZbvxN9Wnu" role="1_0LWR">
+          <node concept="19SUe$" id="1CZbvxN9Wnv" role="19SJt6">
+            <property role="19SUeA" value="In addition to the pure static value calculation, mbeddr can perform various rounding operations before the static value is inserted into your code (an example is shown in " />
+          </node>
+          <node concept="2Sbdz4" id="1CZbvxN9WGg" role="19SJt6">
+            <ref role="2SbdyP" node="69uDFDb5ljx" resolve="staticEval" />
+          </node>
+          <node concept="19SUe$" id="1CZbvxN9WGf" role="19SJt6">
+            <property role="19SUeA" value="). These rounding operations can be added via an intention on the " />
+          </node>
+          <node concept="1jUjqm" id="69uDFDb5kZo" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDb5kZp" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDb5kZq" role="19SJt6">
+                <property role="19SUeA" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDb5kZn" role="19SJt6">
+            <property role="19SUeA" value=" expression (" />
+          </node>
+          <node concept="2OlAs7" id="yaVrOuuI7i" role="19SJt6">
+            <node concept="19SGf9" id="yaVrOuuI7l" role="$DsGW">
+              <node concept="19SUe$" id="yaVrOuuI7m" role="19SJt6">
+                <property role="19SUeA" value="Add rounding operation" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1CZbvxN9WpT" role="19SJt6">
+            <property role="19SUeA" value=") or it can be selected in the inspector of the " />
+          </node>
+          <node concept="1jUjqm" id="69uDFDb5kYA" role="19SJt6">
+            <node concept="19SGf9" id="69uDFDb5kYB" role="$DsGW">
+              <node concept="19SUe$" id="69uDFDb5kYC" role="19SJt6">
+                <property role="19SUeA" value="staticValueOf" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="69uDFDb5kY_" role="19SJt6">
+            <property role="19SUeA" value=" expression. The following rounding operations are available:" />
+          </node>
+        </node>
+      </node>
+      <node concept="3X6WG5" id="69uDFDb53WH" role="1_0VJ0">
+        <node concept="3X6T9g" id="69uDFDb53X4" role="3Xp5NH">
+          <node concept="OjmMv" id="69uDFDb53X5" role="3X6T9h">
+            <node concept="19SGf9" id="69uDFDb53X6" role="OjmMu">
+              <node concept="19SUe$" id="69uDFDb5isl" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+              <node concept="2vpllh" id="1CZbvxN9Wry" role="19SJt6">
+                <node concept="19SGf9" id="1CZbvxN9Wrz" role="$DsGW">
+                  <node concept="19SUe$" id="1CZbvxN9Wr$" role="19SJt6">
+                    <property role="19SUeA" value="none:" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1CZbvxN9WrA" role="19SJt6">
+                <property role="19SUeA" value=" (default) no rounding operation will be performed. The resulting type might be a floating point type." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="69uDFDb570N" role="3Xp5NH">
+          <node concept="OjmMv" id="69uDFDb570O" role="3X6T9h">
+            <node concept="19SGf9" id="69uDFDb570P" role="OjmMu">
+              <node concept="19SUe$" id="69uDFDb570Q" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+              <node concept="2vpllh" id="1CZbvxN9WrH" role="19SJt6">
+                <node concept="19SGf9" id="1CZbvxN9WrI" role="$DsGW">
+                  <node concept="19SUe$" id="1CZbvxN9WrJ" role="19SJt6">
+                    <property role="19SUeA" value="ceil:" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1CZbvxN9WrL" role="19SJt6">
+                <property role="19SUeA" value=" rounds torwards positive infinity. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="69uDFDb5cm1" role="3Xp5NH">
+          <node concept="OjmMv" id="69uDFDb5cm2" role="3X6T9h">
+            <node concept="19SGf9" id="69uDFDb5cm3" role="OjmMu">
+              <node concept="19SUe$" id="69uDFDb5cm4" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+              <node concept="2vpllh" id="1CZbvxN9WrS" role="19SJt6">
+                <node concept="19SGf9" id="1CZbvxN9WrT" role="$DsGW">
+                  <node concept="19SUe$" id="1CZbvxN9WrU" role="19SJt6">
+                    <property role="19SUeA" value="floor:" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1CZbvxN9WrW" role="19SJt6">
+                <property role="19SUeA" value=" rounds torwards negative infinity. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="69uDFDb5743" role="3Xp5NH">
+          <node concept="OjmMv" id="69uDFDb5744" role="3X6T9h">
+            <node concept="19SGf9" id="69uDFDb5745" role="OjmMu">
+              <node concept="19SUe$" id="69uDFDb5746" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+              <node concept="2vpllh" id="1CZbvxN9Ws3" role="19SJt6">
+                <node concept="19SGf9" id="1CZbvxN9Ws4" role="$DsGW">
+                  <node concept="19SUe$" id="1CZbvxN9Ws5" role="19SJt6">
+                    <property role="19SUeA" value="round:" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1CZbvxN9Ws7" role="19SJt6">
+                <property role="19SUeA" value=" rounds towards &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case it rounds up. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3X6T9g" id="69uDFDb574F" role="3Xp5NH">
+          <node concept="OjmMv" id="69uDFDb574G" role="3X6T9h">
+            <node concept="19SGf9" id="69uDFDb574H" role="OjmMu">
+              <node concept="19SUe$" id="69uDFDb574I" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+              <node concept="2vpllh" id="1CZbvxN9Wse" role="19SJt6">
+                <node concept="19SGf9" id="1CZbvxN9Wsf" role="$DsGW">
+                  <node concept="19SUe$" id="1CZbvxN9Wsg" role="19SJt6">
+                    <property role="19SUeA" value="trunc:" />
+                  </node>
+                </node>
+              </node>
+              <node concept="19SUe$" id="1CZbvxN9Wsi" role="19SJt6">
+                <property role="19SUeA" value=" rounds torwards zero. The result is an integer." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
