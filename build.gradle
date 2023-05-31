@@ -37,27 +37,20 @@ afterEvaluate {
     if (ext.has('java17_home')) {
         jdk_home = ext.get('java17_home')
     } else if (System.getenv('JB_JAVA17_HOME') != null) {
+	println "USING JB_JAVA17_HOME "+ System.getenv('JB_JAVA17_HOME')
         jdk_home = System.getenv('JB_JAVA17_HOME')
+	println JavaVersion.current()
     }
 
     if(jdk_home != null) {
-        def expected = JavaVersion.VERSION_17
-        if (JavaVersion.current() != expected) {
-            throw new GradleException("This build script requires Java 17 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-                + "  * Use project property java17_home to point to the Java 17 JDK.\n"
-                + "  * Use environment variable JB_JAVA17_HOME to point to the Java 17 JDK\n"
-                + "  * Run Gradle using Java 17")
-        }
-
         // Check JDK location
         if (!new File(jdk_home, "lib").exists()) {
             throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-        }
-
-        jdk_home = System.getProperty('java.home')
-        ext.jdk_home = jdk_home
-        logger.info 'Using JDK at {}', jdk_home
-        ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+        } else {
+            ext.jdk_home = jdk_home
+            logger.info 'Using JDK at {}', jdk_home
+            ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+	}
     }
 }
 
