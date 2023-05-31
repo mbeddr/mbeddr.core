@@ -277,7 +277,7 @@
         </node>
         <node concept="2OqwBi" id="FniR$CbLj4" role="14a853">
           <node concept="14b0Wr" id="FniR$CbLj5" role="2Oq$k0">
-            <ref role="14b0Uw" node="FniR$CbLj0" resolve="elementWithoutCat" />
+            <ref role="14b0Uw" node="FniR$CbLj0" />
           </node>
           <node concept="2qgKlT" id="FniR$CbLj6" role="2OqNvi">
             <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -288,7 +288,7 @@
           <ref role="37wK5l" to="buwx:75_oBQVwQmH" resolve="getActionGroupId" />
           <ref role="1Pybhc" to="buwx:75_oBQVwQhb" resolve="ProjectViewUtil" />
           <node concept="14b0Wr" id="FniR$CbLjb" role="37wK5m">
-            <ref role="14b0Uw" node="FniR$CbLj0" resolve="elementWithoutCat" />
+            <ref role="14b0Uw" node="FniR$CbLj0" />
           </node>
         </node>
         <node concept="3clFbT" id="1D19qtQzrh3" role="19oFX3">
@@ -302,7 +302,7 @@
           <node concept="liA8E" id="4glh_DcgCnU" role="2OqNvi">
             <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
             <node concept="14b0Wr" id="4glh_Dchaub" role="37wK5m">
-              <ref role="14b0Uw" node="FniR$CbLj0" resolve="elementWithoutCat" />
+              <ref role="14b0Uw" node="FniR$CbLj0" />
             </node>
           </node>
         </node>
@@ -316,12 +316,12 @@
             <ref role="37wK5l" node="FniR$Cb2YA" resolve="getNodesInCategory" />
             <node concept="14a6R6" id="FniR$Cbky4" role="37wK5m" />
             <node concept="14b0Wr" id="FniR$CbkzU" role="37wK5m">
-              <ref role="14b0Uw" node="FniR$C7bS4" resolve="category" />
+              <ref role="14b0Uw" node="FniR$C7bS4" />
             </node>
           </node>
           <node concept="2OqwBi" id="FniR$CbkH$" role="14a853">
             <node concept="14b0Wr" id="FniR$Cbk$U" role="2Oq$k0">
-              <ref role="14b0Uw" node="FniR$Cbkuy" resolve="elementWithCat" />
+              <ref role="14b0Uw" node="FniR$Cbkuy" />
             </node>
             <node concept="2qgKlT" id="FniR$CbkRX" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -332,7 +332,7 @@
             <ref role="37wK5l" to="buwx:75_oBQVwQmH" resolve="getActionGroupId" />
             <ref role="1Pybhc" to="buwx:75_oBQVwQhb" resolve="ProjectViewUtil" />
             <node concept="14b0Wr" id="FniR$CbulL" role="37wK5m">
-              <ref role="14b0Uw" node="FniR$Cbkuy" resolve="elementWithCat" />
+              <ref role="14b0Uw" node="FniR$Cbkuy" />
             </node>
           </node>
           <node concept="2OqwBi" id="4glh_DchaBe" role="3actZa">
@@ -343,7 +343,7 @@
             <node concept="liA8E" id="4glh_DchaBg" role="2OqNvi">
               <ref role="37wK5l" to="xnls:~BaseIconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode)" resolve="getIconFor" />
               <node concept="14b0Wr" id="4glh_DchaJV" role="37wK5m">
-                <ref role="14b0Uw" node="FniR$Cbkuy" resolve="elementWithCat" />
+                <ref role="14b0Uw" node="FniR$Cbkuy" />
               </node>
             </node>
           </node>
@@ -355,7 +355,7 @@
           <node concept="14a6R6" id="FniR$C7s1v" role="37wK5m" />
         </node>
         <node concept="14b0Wr" id="FniR$C7o8Y" role="14a853">
-          <ref role="14b0Uw" node="FniR$C7bS4" resolve="category" />
+          <ref role="14b0Uw" node="FniR$C7bS4" />
         </node>
         <node concept="10M0yZ" id="FniR$CbB1Y" role="3actZa">
           <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
@@ -379,7 +379,7 @@
         </node>
         <node concept="2OqwBi" id="7diJr$RwyyV" role="3uHU7B">
           <node concept="14b0Wr" id="7diJr$RwytN" role="2Oq$k0">
-            <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
+            <ref role="14b0Uw" node="7diJr$RvF92" />
           </node>
           <node concept="liA8E" id="7diJr$RwzJ7" role="2OqNvi">
             <ref role="37wK5l" to="z1c3:~MPSProject.getName()" resolve="getName" />

@@ -127,7 +127,7 @@
       <concept id="7518061998923713762" name="com.mbeddr.mpsutil.refactoring.structure.NodeChooser" flags="ng" index="1loS_G">
         <child id="7518061998923713768" name="filter" index="1loS_A" />
       </concept>
-      <concept id="7518061998923713763" name="com.mbeddr.mpsutil.refactoring.structure.FilterClause" flags="ig" index="1loS_H" />
+      <concept id="7518061998923713763" name="com.mbeddr.mpsutil.refactoring.structure.FilterClause" flags="ng" index="1loS_H" />
       <concept id="7518061998923728716" name="com.mbeddr.mpsutil.refactoring.structure.FilterInputParam" flags="ng" index="1loWb2" />
       <concept id="7518061998923573140" name="com.mbeddr.mpsutil.refactoring.structure.RefactoringParameter" flags="ng" index="1lpA8q">
         <reference id="7518061998923573141" name="param" index="1lpA8r" />

@@ -401,7 +401,7 @@
         <child id="5022141054905293092" name="execute" index="geMea" />
         <child id="657036114244392528" name="originalContextActionID" index="1Ffpid" />
       </concept>
-      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ig" index="geMe5" />
+      <concept id="5022141054905293099" name="com.mbeddr.mpsutil.contextactions.structure.GenericActionSource_ExecuteFunction" flags="ng" index="geMe5" />
       <concept id="5022141054903714507" name="com.mbeddr.mpsutil.contextactions.structure.ContextExpression" flags="ng" index="gKNx_" />
       <concept id="5022141054903715575" name="com.mbeddr.mpsutil.contextactions.structure.AbstractActionSource" flags="ng" index="gKNLp">
         <child id="5022141054903715578" name="isApplicable" index="gKNLk" />
@@ -3691,7 +3691,7 @@
   <node concept="bUwia" id="7husA5Yim18">
     <property role="TrG5h" value="mc_intentionAnnotation" />
     <node concept="2VPoh5" id="7husA5Yim2g" role="2VS0gm">
-      <ref role="2VPoh2" node="7husA5Yim3p" resolve="ContextActionsFromAnnotatedIntentions" />
+      <ref role="2VPoh2" node="7husA5Yim3p" />
       <node concept="2VP$b9" id="7husA5YkvVE" role="2VPoh3">
         <node concept="3clFbS" id="7husA5YkvVF" role="2VODD2">
           <node concept="3clFbF" id="7husA5Ykw0E" role="3cqZAp">

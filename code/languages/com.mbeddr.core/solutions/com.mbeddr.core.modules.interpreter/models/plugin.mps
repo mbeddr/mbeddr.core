@@ -124,10 +124,10 @@
     <property role="TrG5h" value="CFunctionInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="3VM1o5wbzp0" role="1J4apk">
-      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" />
     </node>
     <node concept="1J7WVO" id="3VM1o5wbzp1" role="1J4apk">
-      <ref role="1J7WVQ" to="h40l:3VM1o5wbxvn" resolve="CStatementInterpreter" />
+      <ref role="1J7WVQ" to="h40l:3VM1o5wbxvn" />
     </node>
     <node concept="3SNpY9" id="3VM1o5wbzp2" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -214,10 +214,10 @@
     <property role="TrG5h" value="CModulesInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="3VM1o5wblfy" role="1J4apk">
-      <ref role="1J7WVQ" node="3VM1o5wbzoX" resolve="CFunctionInterpreter" />
+      <ref role="1J7WVQ" node="3VM1o5wbzoX" />
     </node>
     <node concept="1J7L1T" id="3VM1o5wblfz" role="1J4apk">
-      <ref role="1J7WVQ" to="h40l:3VM1o5wbxvn" resolve="CStatementInterpreter" />
+      <ref role="1J7WVQ" to="h40l:3VM1o5wbxvn" />
     </node>
     <node concept="3SNpY9" id="3VM1o5wblf$" role="qq9xR">
       <property role="2TnfIJ" value="true" />

@@ -220,10 +220,10 @@
     <property role="TrG5h" value="ReqirementsInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="61$ycjqFeoW" role="1J4apk">
-      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" />
     </node>
     <node concept="1J7L1T" id="61$ycjqFep7" role="1J4apk">
-      <ref role="1J7WVQ" to="dpzy:3VM1o5wb$BS" resolve="CExtInterpreter" />
+      <ref role="1J7WVQ" to="dpzy:3VM1o5wb$BS" />
     </node>
     <node concept="3SNpY9" id="61$ycjqFgKF" role="qq9xR">
       <property role="2TnfIJ" value="true" />

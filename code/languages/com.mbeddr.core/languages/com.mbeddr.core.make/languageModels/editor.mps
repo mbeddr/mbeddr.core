@@ -201,7 +201,7 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="ng" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
         <property id="8224407690718723337" name="doNotGenerateNodeSubstituteAction" index="ZpkCL" />
       </concept>

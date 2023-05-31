@@ -637,7 +637,7 @@
                   </node>
                   <node concept="2OqwBi" id="7Ssz$kY9I4R" role="33vP2m">
                     <node concept="3B5_sB" id="7Ssz$kY9I4S" role="2Oq$k0">
-                      <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
+                      <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
                     </node>
                     <node concept="3Tsc0h" id="7Ssz$kY9I4T" role="2OqNvi">
                       <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
@@ -820,7 +820,7 @@
             <node concept="2JrnkZ" id="3HHdT04n$AO" role="2Oq$k0">
               <node concept="2OqwBi" id="3HHdT04n$4k" role="2JrQYb">
                 <node concept="3B5_sB" id="3HHdT04nzUU" role="2Oq$k0">
-                  <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
+                  <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
                 </node>
                 <node concept="I4A8Y" id="3HHdT04n$lx" role="2OqNvi" />
               </node>
@@ -2189,7 +2189,7 @@
                 <node concept="2OqwBi" id="2bng37t0hjZ" role="37vLTx">
                   <node concept="2OqwBi" id="2bng37t0hk0" role="2Oq$k0">
                     <node concept="3B5_sB" id="2bng37t0hk1" role="2Oq$k0">
-                      <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
+                      <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
                     </node>
                     <node concept="3Tsc0h" id="2bng37t0oVR" role="2OqNvi">
                       <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />

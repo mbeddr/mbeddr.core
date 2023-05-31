@@ -58,7 +58,7 @@
     <node concept="2eOfOl" id="50GTeOTt2Nd" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="50GTeOTt2Nh" role="2eOfOg">
-        <ref role="2v9HqP" node="OI5Xv7j_22" resolve="HelloWorld" />
+        <ref role="2v9HqP" node="OI5Xv7j_22" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyj7k" role="1kZvWc">
         <property role="TrG5h" value="any" />

@@ -2074,7 +2074,7 @@
               <node concept="3z_lpY" id="3PCHQK6jBuJ" role="19SJt6">
                 <node concept="2NCZwO" id="3PCHQK6jBuK" role="3z_lpZ">
                   <node concept="2NCMab" id="3PCHQK6jBuR" role="2NCMaf">
-                    <ref role="2NCMaa" to="e1tx:3jNX2XuM5ZV" resolve="Visualizations" />
+                    <ref role="2NCMaa" to="e1tx:3jNX2XuM5ZV" />
                   </node>
                 </node>
               </node>
@@ -2101,7 +2101,7 @@
               <node concept="3z_lpY" id="3PCHQK6jFV1" role="19SJt6">
                 <node concept="2NCZwO" id="3PCHQK6jFV2" role="3z_lpZ">
                   <node concept="2NCMab" id="3PCHQK6m9Ky" role="2NCMaf">
-                    <ref role="2NCMaa" to="e1tx:26F1Swi93S$" resolve="Traces" />
+                    <ref role="2NCMaa" to="e1tx:26F1Swi93S$" />
                   </node>
                 </node>
               </node>
@@ -2128,10 +2128,10 @@
               <node concept="3z_lpY" id="3PCHQK6ma0G" role="19SJt6">
                 <node concept="2NCZwO" id="3PCHQK6ma0H" role="3z_lpZ">
                   <node concept="2NCMab" id="3PCHQK6ma0O" role="2NCMaf">
-                    <ref role="2NCMaa" to="iwll:3jNX2XuM62I" resolve="EffortsAndVisualizations" />
+                    <ref role="2NCMaa" to="iwll:3jNX2XuM62I" />
                   </node>
                   <node concept="2NCMab" id="3PCHQK6maef" role="2NCMaf">
-                    <ref role="2NCMaa" to="iwll:7A_Yc2WoUaU" resolve="EffortsOfWorkPackages" />
+                    <ref role="2NCMaa" to="iwll:7A_Yc2WoUaU" />
                   </node>
                 </node>
               </node>
@@ -3248,7 +3248,7 @@
             <node concept="3z_lpY" id="3PCHQK6jyA$" role="19SJt6">
               <node concept="2NCZwO" id="3PCHQK6jyA_" role="3z_lpZ">
                 <node concept="2NCMab" id="3PCHQK6jyAJ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:26F1Swi93S$" resolve="Traces" />
+                  <ref role="2NCMaa" to="e1tx:26F1Swi93S$" />
                 </node>
               </node>
             </node>
@@ -3618,10 +3618,10 @@
           <node concept="2bctqb" id="4IT6uo4dKJ" role="3z_lpT" />
           <node concept="2NCZwO" id="4IT6uo4dKK" role="3z_lpI">
             <node concept="2NCMab" id="4IT6uo4dKL" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7nkDZJXrhSk" resolve="CodeReview" />
+              <ref role="2NCMaa" to="e1tx:7nkDZJXrhSk" />
             </node>
             <node concept="2NCMab" id="4IT6uo4dKM" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7nkDZJXrkUi" resolve="ReviewOfComponentsStuff" />
+              <ref role="2NCMaa" to="e1tx:7nkDZJXrkUi" />
             </node>
           </node>
         </node>

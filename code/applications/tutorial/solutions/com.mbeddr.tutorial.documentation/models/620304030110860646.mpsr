@@ -98,7 +98,7 @@
   <node concept="1_1swa" id="yrKNEnw4lA">
     <property role="TrG5h" value="C_Units" />
     <property role="yApLE" value="5" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
     <node concept="1_0VNX" id="3mn43GO8cu5" role="1_0VJ0">
       <property role="TrG5h" value="units" />
       <property role="1_0VJr" value="Units" />
@@ -128,7 +128,7 @@
               <property role="19SUeA" value=" introduced in " />
             </node>
             <node concept="1_0GAv" id="4lzRQzvpYtx" role="19SJt6">
-              <ref role="1_0GAl" to="c4ys:4IT6uoQrns" resolve="functionPointers" />
+              <ref role="1_0GAl" to="c4ys:4IT6uoQrns" />
             </node>
             <node concept="19SUe$" id="4lzRQzvpYtw" role="19SJt6">
               <property role="19SUeA" value=" and make it more useful. Our application is supposed to work with tracking data (captured from a bike computer or a flight logger). For the examples so far we were not interested in the physical units. " />
@@ -173,7 +173,7 @@
             <node concept="3z_lpY" id="2B__QU6nrzH" role="19SJt6">
               <node concept="2NCZwO" id="2B__QU6nrAn" role="3z_lpZ">
                 <node concept="2NCMab" id="2B__QU6ox73" role="2NCMaf">
-                  <ref role="2NCMaa" to="cmgk:yGiRIF6Rhw" resolve="SIUnits" />
+                  <ref role="2NCMaa" to="cmgk:yGiRIF6Rhw" />
                 </node>
               </node>
             </node>
@@ -270,7 +270,7 @@
             <node concept="3z_lpY" id="39jEAIlB9uU" role="19SJt6">
               <node concept="2NCZwO" id="39jEAIlB9uV" role="3z_lpZ">
                 <node concept="2NCMab" id="39jEAIlB9vU" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:5L$_W51ZPe7" resolve="UnitDeclarations" />
+                  <ref role="2NCMaa" to="e1tx:5L$_W51ZPe7" />
                 </node>
               </node>
             </node>
@@ -322,10 +322,10 @@
           <property role="3z_lpV" value="                            &#10;exported struct Trackpoint {&#10;  int8 id;                  &#10;  int8/s/ time;             &#10;  int8/m/ x;                &#10;  int8/m/ y;                &#10;  int16/m/ alt;             &#10;  int16/mps/ speed;         &#10;};                          " />
           <node concept="2NCZwO" id="1VdI9nUzupY" role="3z_lpI">
             <node concept="2NCMab" id="1VdI9nUzuq4" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
             </node>
             <node concept="2NCMab" id="1VdI9nUzuqd" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" resolve="Trackpoint" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" />
             </node>
           </node>
         </node>
@@ -355,13 +355,13 @@
           <property role="3z_lpV" value="Trackpoint i1 = {&#10;  id = 1,        &#10;  time = 0 s,    &#10;  x = 0 m,       &#10;  y = 0 m,       &#10;  alt = 100 m    &#10;};               " />
           <node concept="2NCZwO" id="1YUFCeGolI6" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolI7" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolI8" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L65uE" resolve="testProcessing" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L65uE" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolI9" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L65v7" resolve="i1" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L65v7" />
             </node>
           </node>
         </node>
@@ -378,13 +378,13 @@
           <property role="3z_lpV" value="{                                         &#10;  processor = :process_doNothing;         &#10;  Trackpoint i2 = processor(i1);          &#10;  assert(0) i2.id == 1 &amp;&amp; i2.alt == 100 m;&#10;}                                         " />
           <node concept="2NCZwO" id="1YUFCeGolHO" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolHP" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolHQ" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L65uE" resolve="testProcessing" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L65uE" />
             </node>
             <node concept="2NCMab" id="4lzRQzvjmJL" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:2ncjLWk$qve" resolve="firstAssertion" />
+              <ref role="2NCMaa" to="e1tx:2ncjLWk$qve" />
             </node>
           </node>
         </node>
@@ -475,10 +475,10 @@
           <property role="3z_lpV" value="int8/mps/ speed1 = (i4.x - i3.x) / (i4.time - i3.time);" />
           <node concept="2NCZwO" id="1YUFCeGolFM" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolFN" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="1VdI9nU_yQI" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:73Ctzy_sFu4" resolve="speed1" />
+              <ref role="2NCMaa" to="e1tx:73Ctzy_sFu4" />
             </node>
           </node>
         </node>
@@ -490,10 +490,10 @@
             <node concept="3z_lpY" id="4lzRQzvu4az" role="19SJt6">
               <node concept="2NCZwO" id="4lzRQzvu4a$" role="3z_lpZ">
                 <node concept="2NCMab" id="4lzRQzvu4aI" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
                 </node>
                 <node concept="2NCMab" id="4lzRQzvu4aQ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:21ict8otauW" resolve="calcVerticalSpeed" />
+                  <ref role="2NCMaa" to="e1tx:21ict8otauW" />
                 </node>
               </node>
             </node>
@@ -508,10 +508,10 @@
           <property role="3z_lpV" value="void calcVerticalSpeed(TrackpointWithVertical* prev, TrackpointWithVertical* cur) {&#10;  /* cur.alt = 0 m; */                                                             &#10;  /* cur.speed = 0 mps; */                                                         &#10;  if (prev == null) {                                                              &#10;  cur.vSpeed = 0 mps;                                                              &#10;} else {                                                                           &#10;  int16/m/ dAlt = cur.alt - prev.alt;                                              &#10;  int8/s/ dTime = cur.time - prev.time;                                            &#10;  cur.vSpeed = dAlt / dTime;                                                       &#10;}                                                                                  &#10;} calcVerticalSpeed (function)                                                     " />
           <node concept="2NCZwO" id="4lzRQzvu6Ey" role="3z_lpI">
             <node concept="2NCMab" id="4lzRQzvu6Ka" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
             </node>
             <node concept="2NCMab" id="4lzRQzvu6Ki" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:21ict8otauW" resolve="calcVerticalSpeed" />
+              <ref role="2NCMaa" to="e1tx:21ict8otauW" />
             </node>
           </node>
         </node>
@@ -534,10 +534,10 @@
           <property role="3z_lpV" value="int8/mps/ speed2 = 2 m･s-1 + 3 s-1･m;" />
           <node concept="2NCZwO" id="1VdI9nU_uPE" role="3z_lpI">
             <node concept="2NCMab" id="1VdI9nU_uPF" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="1VdI9nU_yQt" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1VdI9nUzXhL" resolve="speed2" />
+              <ref role="2NCMaa" to="e1tx:1VdI9nUzXhL" />
             </node>
           </node>
         </node>
@@ -645,10 +645,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="627_yy3rO9w" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3rO9x" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5L$_W51ZPe7" resolve="UnitDeclarations" />
+              <ref role="2NCMaa" to="e1tx:5L$_W51ZPe7" />
             </node>
             <node concept="2NCMab" id="627_yy3rO9y" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:627_yy3rJpI" resolve="conversions" />
+              <ref role="2NCMaa" to="e1tx:627_yy3rJpI" />
             </node>
           </node>
         </node>
@@ -715,10 +715,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="627_yy3sLpe" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3sLpf" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
             </node>
             <node concept="2NCMab" id="627_yy3sLpg" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:627_yy3rXe_" resolve="somethingWithConversion" />
+              <ref role="2NCMaa" to="e1tx:627_yy3rXe_" />
             </node>
           </node>
         </node>
@@ -746,10 +746,10 @@
           <property role="3z_lpV" value="int8/U1/ sum(int8/U1/ a, int8/U1/ b) {&#10;  return a + b;                       &#10;} sum (function)                      " />
           <node concept="2NCZwO" id="2B__QU5WTNd" role="3z_lpI">
             <node concept="2NCMab" id="2B__QU5Xjnm" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="2B__QU5Xjny" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:2B__QU5RFsQ" resolve="sum" />
+              <ref role="2NCMaa" to="e1tx:2B__QU5RFsQ" />
             </node>
           </node>
         </node>
@@ -759,10 +759,10 @@
           <property role="3z_lpV" value="int8/U1･U2/ mul(int8/U1/ a, int8/U2/ b) {&#10;  return a * b;                          &#10;} mul (function)                         " />
           <node concept="2NCZwO" id="2B__QU5XmY1" role="3z_lpI">
             <node concept="2NCMab" id="2B__QU5XmY9" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="2B__QU5XmYl" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6CnXAkqZ9Sf" resolve="mul" />
+              <ref role="2NCMaa" to="e1tx:6CnXAkqZ9Sf" />
             </node>
           </node>
         </node>
@@ -772,10 +772,10 @@
           <property role="3z_lpV" value="Trackpoint process_generic(Trackpoint e) {&#10;  e.time = sum(10 s, 10 s);               &#10;  e.id = sum(1, 2);                       &#10;  e.x = sum(10 m, 10 m);                  &#10;  e.speed = mul(10 m, 10 s-1);            &#10;  return e;                               &#10;} process_generic (function)              " />
           <node concept="2NCZwO" id="2B__QU5XmZG" role="3z_lpI">
             <node concept="2NCMab" id="2B__QU5XmZO" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="2B__QU5Xn00" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6CnXAkqZ_lK" resolve="process_generic" />
+              <ref role="2NCMaa" to="e1tx:6CnXAkqZ_lK" />
             </node>
           </node>
         </node>
@@ -812,10 +812,10 @@
           <property role="3z_lpV" value="double/U112/ sqrt(double/U1/ a) {                         &#10;  double/U112/ res = 0 U112;                              &#10;  //here goes your sophisticated square root approximation&#10;  return res;                                             &#10;} sqrt (function)                                         " />
           <node concept="2NCZwO" id="1VdI9nUFuD1" role="3z_lpI">
             <node concept="2NCMab" id="1VdI9nUFuD7" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" resolve="FunctionPointers" />
+              <ref role="2NCMaa" to="e1tx:7VsgA5L655y" />
             </node>
             <node concept="2NCMab" id="1VdI9nUFuDg" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1VdI9nUEBp3" resolve="sqrt" />
+              <ref role="2NCMaa" to="e1tx:1VdI9nUEBp3" />
             </node>
           </node>
         </node>
@@ -858,10 +858,10 @@
             <node concept="3z_lpY" id="4lzRQzvxm0d" role="19SJt6">
               <node concept="2NCZwO" id="4lzRQzvxm0e" role="3z_lpZ">
                 <node concept="2NCMab" id="4lzRQzvxm0o" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
                 </node>
                 <node concept="2NCMab" id="4lzRQzvxm0w" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4lzRQzvufrW" resolve="anExistingFunction" />
+                  <ref role="2NCMaa" to="e1tx:4lzRQzvufrW" />
                 </node>
               </node>
             </node>
@@ -876,10 +876,10 @@
           <property role="3z_lpV" value="int16 anExistingFunction(int16 x) {&#10;  return x + 10;                   &#10;} anExistingFunction (function)    " />
           <node concept="2NCZwO" id="4lzRQzvy8ey" role="3z_lpI">
             <node concept="2NCMab" id="4lzRQzvy8ez" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
             </node>
             <node concept="2NCMab" id="4lzRQzvy8e$" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4lzRQzvufrW" resolve="anExistingFunction" />
+              <ref role="2NCMaa" to="e1tx:4lzRQzvufrW" />
             </node>
           </node>
         </node>
@@ -906,10 +906,10 @@
           <property role="3z_lpV" value="int16/m/ someFunction(Trackpoint* p1, Trackpoint* p2) {             &#10;  int16 newValueWithoutUnit = anExistingFunction(stripunit[p1.alt]);&#10;  return newValueWithoutUnit m;                                     &#10;} someFunction (function)                                           " />
           <node concept="2NCZwO" id="627_yy3qUjE" role="3z_lpI">
             <node concept="2NCMab" id="627_yy3qUjF" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
             </node>
             <node concept="2NCMab" id="627_yy3qUjG" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4lzRQzvu$Ae" resolve="someFunction" />
+              <ref role="2NCMaa" to="e1tx:4lzRQzvu$Ae" />
             </node>
           </node>
         </node>
@@ -936,7 +936,7 @@
       <property role="TrG5h" value="empty_1383658449039_29" />
     </node>
     <node concept="1_0j5j" id="4lzRQzvpYtK" role="1DXQ57">
-      <ref role="1_0j5g" to="c4ys:4rG3bBO0MpA" resolve="B_FunctionPointers" />
+      <ref role="1_0j5g" to="c4ys:4rG3bBO0MpA" />
     </node>
     <node concept="Wq1Bs" id="1VdI9nUB1TN" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />

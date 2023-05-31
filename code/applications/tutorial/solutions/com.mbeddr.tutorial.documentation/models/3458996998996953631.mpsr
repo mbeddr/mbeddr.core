@@ -116,7 +116,7 @@
   <node concept="1_1swa" id="300OR6GmKCv">
     <property role="TrG5h" value="E_StateMachines" />
     <property role="yApLE" value="9" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
     <node concept="Wq1Bs" id="5lWB_7x$8ez" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />
       <property role="Wq1Bq" value="tamas.szabo@itemis.de" />
@@ -172,7 +172,7 @@
             <node concept="3z_lpY" id="6lh$fzUNCi" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzUNCj" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzUNI4" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
               </node>
             </node>
@@ -266,13 +266,13 @@
             <node concept="3z_lpY" id="6lh$fzWbE9" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbEa" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbEK" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbEP" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbEX" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                 </node>
               </node>
             </node>
@@ -282,13 +282,13 @@
             <node concept="3z_lpY" id="6lh$fzWbGa" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbGb" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbGc" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbGd" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbH5" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfm" />
                 </node>
               </node>
             </node>
@@ -298,13 +298,13 @@
             <node concept="3z_lpY" id="6lh$fzWbHl" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbHm" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbHn" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbHo" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbI1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfn" resolve="landing" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfn" />
                 </node>
               </node>
             </node>
@@ -314,13 +314,13 @@
             <node concept="3z_lpY" id="6lh$fzWbIh" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbIi" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbIj" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbIk" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbIZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfo" resolve="landed" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfo" />
                 </node>
               </node>
             </node>
@@ -330,13 +330,13 @@
             <node concept="3z_lpY" id="6lh$fzWbJf" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbJg" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbJh" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbJi" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbJZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGiH" resolve="crashed" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGiH" />
                 </node>
               </node>
             </node>
@@ -346,13 +346,13 @@
             <node concept="3z_lpY" id="6lh$fzWbKf" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbKg" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbKh" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbKi" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbGe" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                 </node>
               </node>
             </node>
@@ -367,10 +367,10 @@
           <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  state beforeFlight {                                       &#10;} state beforeFlight                                         &#10;  state airborne {                                           &#10;} state airborne                                             &#10;  state landing {                                            &#10;} state landing                                              &#10;  state landed {                                             &#10;} state landed                                               &#10;  state crashed {                                            &#10;} state crashed                                              &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hiG1k" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hiG4e" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="_A$C2hjIR0" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
             </node>
           </node>
           <node concept="2Cuv_b" id="_A$C2hiHiN" role="3z_lpH">
@@ -397,13 +397,13 @@
             <node concept="3z_lpY" id="6lh$fzWbLc" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbLd" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbLe" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbLf" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbLD" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfq" resolve="next" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfq" />
                 </node>
               </node>
             </node>
@@ -413,10 +413,10 @@
             <node concept="3z_lpY" id="6lh$fzWbLT" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWbLU" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWbMr" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWbMx" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" resolve="Trackpoint" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" />
                 </node>
               </node>
             </node>
@@ -436,7 +436,7 @@
             <node concept="3z_lpY" id="6lh$fzWeYA" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWeYB" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWf7d" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
                 </node>
               </node>
             </node>
@@ -446,13 +446,13 @@
             <node concept="3z_lpY" id="6lh$fzWf7G" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWf7H" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWf7I" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWf7J" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWf8c" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGg1" resolve="reset" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGg1" />
                 </node>
               </node>
             </node>
@@ -467,10 +467,10 @@
           <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  in event next(Trackpoint* tp) &lt;no binding&gt;                 &#10;  in event reset() &lt;no binding&gt;                              &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hmXsn" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hmXyj" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="_A$C2hmXyr" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
             </node>
           </node>
           <node concept="2Cuv_b" id="_A$C2hmXBT" role="3z_lpH">
@@ -542,10 +542,10 @@
           <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  readable var int16 points = 0                              &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hn309" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hn36l" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="_A$C2hn36t" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
             </node>
           </node>
           <node concept="2Cuv_b" id="_A$C2hn36A" role="3z_lpH">
@@ -569,13 +569,13 @@
             <node concept="3z_lpY" id="6lh$fzWf8s" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWf8t" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWf8u" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWf8v" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWf8w" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                 </node>
               </node>
             </node>
@@ -585,13 +585,13 @@
             <node concept="3z_lpY" id="6lh$fzWf8S" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWf8T" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWf8U" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWf8V" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWf8W" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                 </node>
               </node>
             </node>
@@ -607,10 +607,10 @@
           <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  state beforeFlight {                                       &#10;  entry { points = 0; }                                      &#10;} state beforeFlight                                         &#10;}                                                            " />
           <node concept="2NCZwO" id="_A$C2hn3No" role="3z_lpI">
             <node concept="2NCMab" id="_A$C2hn3TM" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="_A$C2hn3TU" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
             </node>
           </node>
           <node concept="2Cuv_b" id="_A$C2hnkzO" role="3z_lpH">
@@ -626,16 +626,16 @@
             <ref role="2Cuq_M" to="clqz:47Sr75PmG8W" resolve="ExitAction" />
           </node>
           <node concept="3z_lpK" id="_A$C2hnp9s" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfm" />
           </node>
           <node concept="3z_lpK" id="_A$C2hnpnA" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfo" resolve="landed" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfo" />
           </node>
           <node concept="3z_lpK" id="_A$C2hnp_K" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGiH" resolve="crashed" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGiH" />
           </node>
           <node concept="3z_lpK" id="_A$C2hnpO0" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfn" resolve="landing" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfn" />
           </node>
           <node concept="2Cuv_b" id="6lh$fzUea4" role="3z_lpH">
             <ref role="2Cuq_M" to="clqz:1_07M0Q77df" resolve="JunctionState" />
@@ -658,10 +658,10 @@
                 <node concept="3z_lpY" id="6lh$fzWf9m" role="19SJt6">
                   <node concept="2NCZwO" id="6lh$fzWf9n" role="3z_lpZ">
                     <node concept="2NCMab" id="6lh$fzWf9o" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWf9q" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                     </node>
                   </node>
                 </node>
@@ -671,13 +671,13 @@
                 <node concept="3z_lpY" id="6lh$fzWfb8" role="19SJt6">
                   <node concept="2NCZwO" id="6lh$fzWfb9" role="3z_lpZ">
                     <node concept="2NCMab" id="6lh$fzWfba" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWfbb" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWfbB" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGg1" resolve="reset" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGg1" />
                     </node>
                   </node>
                 </node>
@@ -687,13 +687,13 @@
                 <node concept="3z_lpY" id="6lh$fzWfaw" role="19SJt6">
                   <node concept="2NCZwO" id="6lh$fzWfax" role="3z_lpZ">
                     <node concept="2NCMab" id="6lh$fzWfay" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWfaz" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWfa$" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                     </node>
                   </node>
                 </node>
@@ -703,13 +703,13 @@
                 <node concept="3z_lpY" id="6lh$fzWf9U" role="19SJt6">
                   <node concept="2NCZwO" id="6lh$fzWf9V" role="3z_lpZ">
                     <node concept="2NCMab" id="6lh$fzWf9W" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWf9X" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWf9Y" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                     </node>
                   </node>
                 </node>
@@ -728,10 +728,10 @@
                 <node concept="3z_lpY" id="6lh$fzWfbR" role="19SJt6">
                   <node concept="2NCZwO" id="6lh$fzWfbS" role="3z_lpZ">
                     <node concept="2NCMab" id="6lh$fzWfbT" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWqnr" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGgi" resolve="TAKEOFF" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGgi" />
                     </node>
                   </node>
                 </node>
@@ -749,7 +749,7 @@
                   <property role="19SUeA" value="). We also make use of the physical units extension (see " />
                 </node>
                 <node concept="1_0GAv" id="6lh$fzSTbT" role="19SJt6">
-                  <ref role="1_0GAl" node="3mn43GO8cu5" resolve="units" />
+                  <ref role="1_0GAl" node="3mn43GO8cu5" />
                 </node>
                 <node concept="19SUe$" id="6lh$fzSTbS" role="19SJt6">
                   <property role="19SUeA" value=") and annotate the speed and altitude with the appropriate unit." />
@@ -766,13 +766,13 @@
                 <node concept="3z_lpY" id="6lh$fzWATz" role="19SJt6">
                   <node concept="2NCZwO" id="6lh$fzWAT$" role="3z_lpZ">
                     <node concept="2NCMab" id="6lh$fzWAT_" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWATA" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                     </node>
                     <node concept="2NCMab" id="6lh$fzWATK" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+                      <ref role="2NCMaa" to="e1tx:6GXPbpLjGfm" />
                     </node>
                   </node>
                 </node>
@@ -796,10 +796,10 @@
           <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {                                             &#10;  state beforeFlight {                                                                                    &#10;  entry { points = 0; }                                                                                   &#10;  on next [tp.alt &gt; 0 m] -&gt; airborne                                                                      &#10;  exit { points += TAKEOFF; }                                                                             &#10;} state beforeFlight                                                                                      &#10;  state airborne {                                                                                        &#10;  on next [tp.alt == 0 m&amp;&amp; tp.speed == 0 mps] -&gt; crashed                                                  &#10;  on next [tp.alt == 0 m&amp;&amp; tp.speed &gt; 0 mps] -&gt; landing                                                   &#10;  on next [tp.speed &gt; 200 mps&amp;&amp; tp.alt == 0 m] -&gt; airborne { points += VERY_HIGH_SPEED; }                 &#10;  on next [tp.speed &gt; 100 mps&amp;&amp; tp.speed &lt;= 200 mps&amp;&amp; tp.alt == 0 m] -&gt; airborne { points += HIGH_SPEED; }&#10;  on reset [ ] -&gt; beforeFlight                                                                            &#10;} state airborne                                                                                          &#10;  state landing {                                                                                         &#10;  on next [tp.speed == 0 mps] -&gt; landed                                                                   &#10;  on next [tp.speed &gt; 0 mps] -&gt; landing { points--; }                                                     &#10;  on reset [ ] -&gt; beforeFlight                                                                            &#10;} state landing                                                                                           &#10;  state landed {                                                                                          &#10;  entry { points += LANDING; }                                                                            &#10;  on reset [ ] -&gt; beforeFlight                                                                            &#10;} state landed                                                                                            &#10;  state crashed {                                                                                         &#10;  entry { send crashNotification(); }                                                                     &#10;} state crashed                                                                                           &#10;}                                                                                                         " />
           <node concept="2NCZwO" id="6lh$fzSChf" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzSCkC" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$fzSCz1" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
             </node>
           </node>
           <node concept="2Cuv_b" id="6lh$fzSCCu" role="3z_lpH">
@@ -818,7 +818,7 @@
               <property role="19SUeA" value="Note that the transitions are checked in the order of their appearance in the state machine; if several of them are ready to fire (based on the received event and the evaluation of the guard conditions), the first one is picked. Actually this kind of nondeterminism is usually not wanted and mbeddr provides support for the verification of state machines, which you can read more about in " />
             </node>
             <node concept="1_0GAv" id="2XVA19iOlBD" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
+              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" />
             </node>
             <node concept="19SUe$" id="2XVA19iOlBC" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -848,10 +848,10 @@
           <property role="3z_lpV" value="exported statemachine FlightAnalyzer initial = beforeFlight {&#10;  junction NextRound {                                       &#10;  [points &gt; 100] -&gt; airborne                                 &#10;  [points &lt;= 100] -&gt; beforeFlight                            &#10;} junction NextRound                                         &#10;}                                                            " />
           <node concept="2NCZwO" id="6lh$fzUeJ3" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzUeS7" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$fzUf2b" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
             </node>
           </node>
           <node concept="2Cuv_b" id="6lh$fzUflX" role="3z_lpH">
@@ -883,13 +883,13 @@
             <node concept="3z_lpY" id="6lh$fzWAU0" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWAU1" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWAU2" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWAU3" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWAUh" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGiH" resolve="crashed" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGiH" />
                 </node>
               </node>
             </node>
@@ -904,7 +904,7 @@
               <property role="19SUeA" value="The first one is to simply invoke a C function from an entry or exit action. Another alternative, which is more suitable for formal analysis (as we will see below and in " />
             </node>
             <node concept="1_0GAv" id="1CZbvxNb_rf" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
+              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" />
             </node>
             <node concept="19SUe$" id="1CZbvxNb_re" role="19SJt6">
               <property role="19SUeA" value=") involves out events. From the entry action we " />
@@ -928,38 +928,38 @@
           <property role="3z_lpV" value="                                                                                                                     &#10; StateMachines                                                                                                       &#10;model   mbeddr.tutorial.main.defaultExtensions                                                                       &#10;package examples    constraints                                                                                      &#10;                                                                                                                     &#10;                                                                                                                     &#10;exported statemachine FlightAnalyzer initial = beforeFlight {                                                        &#10;  out event crashNotification() =&gt; raiseAlarm                                                                        &#10;  state crashed {                                                                                                    &#10;  entry { send crashNotification(); }                                                                                &#10;} state crashed                                                                                                      &#10;}                                                                                                                    &#10;void raiseAlarm() {                                                                                                  &#10;  //invoke some kind of real-world thingy                                                                            &#10;  //that reacts suitably to a detected crash                                                                         &#10;} raiseAlarm (function)                                                                                              &#10;                                                                                     imports     FlightJudgementRules&#10;                                                                                                 DataStructures      &#10;                                                                                                 stdlib_stub         &#10;                                                                                                 stdio_stub          &#10;                                                                                                 UnitDeclarations    &#10;                                                                                                 SIUnits             " />
           <node concept="2NCZwO" id="6lh$fzUsuw" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzUs$z" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$fzUsXe" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:7prHJyKFEw9" resolve="HierarchicalFlightAnalyzer" />
+            <ref role="3z_lpL" to="e1tx:7prHJyKFEw9" />
           </node>
           <node concept="3z_lpK" id="6lh$fzUtAd" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjHh$" resolve="makeTP" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjHh$" />
           </node>
           <node concept="2Cuv_b" id="6lh$fzUufc" role="3z_lpH">
             <ref role="2Cuq_M" to="x27k:3ilck8KpYYm" resolve="GlobalConstantDeclaration" />
           </node>
           <node concept="3z_lpK" id="6lh$fzUytE" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjseN" />
           </node>
           <node concept="2Cuv_b" id="6lh$fzUBKr" role="3z_lpH">
             <ref role="2Cuq_M" to="clqz:41KMvfcjSct" resolve="InEvent" />
           </node>
           <node concept="3z_lpK" id="6lh$fzUCpy" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfm" resolve="airborne" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfm" />
           </node>
           <node concept="3z_lpK" id="6lh$fzUD0j" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfo" resolve="landed" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfo" />
           </node>
           <node concept="3z_lpK" id="6lh$fzUDB2" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfn" resolve="landing" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfn" />
           </node>
           <node concept="2Cuv_b" id="6lh$fzUEh$" role="3z_lpH">
             <ref role="2Cuq_M" to="clqz:1_07M0Q77df" resolve="JunctionState" />
           </node>
           <node concept="3z_lpK" id="6lh$fzUETH" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjGfl" />
           </node>
           <node concept="2Cuv_b" id="6lh$fzUFwD" role="3z_lpH">
             <ref role="2Cuq_M" to="clqz:4SJV0WTeRxt" resolve="StatemachineVariableDeclaration" />
@@ -973,13 +973,13 @@
             <node concept="3z_lpY" id="6lh$fzWCS9" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWCSa" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWCSb" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWCSc" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWCS$" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGjn" resolve="crashNotification" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGjn" />
                 </node>
               </node>
             </node>
@@ -989,13 +989,13 @@
             <node concept="3z_lpY" id="6lh$fzUMYi" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzUMYj" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzUN46" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzUNeb" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzUNok" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGiH" resolve="crashed" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGiH" />
                 </node>
               </node>
             </node>
@@ -1005,10 +1005,10 @@
             <node concept="3z_lpY" id="6lh$fzWCTB" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWCTC" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWCTU" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWCUd" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGjh" resolve="raiseAlarm" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGjh" />
                 </node>
               </node>
             </node>
@@ -1018,10 +1018,10 @@
             <node concept="3z_lpY" id="6lh$fzWCUS" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWCUT" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWCUU" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWCUV" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGjh" resolve="raiseAlarm" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGjh" />
                 </node>
               </node>
             </node>
@@ -1029,7 +1029,7 @@
               <property role="19SUeA" value=" function, but on the state machine level we have abstracted the implementation from the intent. See " />
             </node>
             <node concept="1_0GAv" id="1CZbvxNeCTW" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
+              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" />
             </node>
             <node concept="19SUe$" id="1CZbvxNeCTV" role="19SJt6">
               <property role="19SUeA" value=" for a discussion of state machine verification. " />
@@ -1083,7 +1083,7 @@
           <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="6lh$fzWFMl" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzWG4j" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
             </node>
           </node>
         </node>
@@ -1095,10 +1095,10 @@
             <node concept="3z_lpY" id="6lh$fzWGt6" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzWGt7" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzWGyU" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzWGGZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" resolve="Trackpoint" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" />
                 </node>
               </node>
             </node>
@@ -1113,10 +1113,10 @@
           <property role="3z_lpV" value="exported Trackpoint* makeTP(int16 alt, int16 speed) {         &#10;  static int8 trackpointCounter = 0;                          &#10;  trackpointCounter++;                                        &#10;  Trackpoint* tp = ((Trackpoint*) malloc(sizeof[Trackpoint]));&#10;  tp.id = trackpointCounter;                                  &#10;  tp.time = trackpointCounter s;                              &#10;  tp.alt = alt m;                                             &#10;  tp.speed = speed mps;                                       &#10;  return tp;                                                  &#10;} makeTP (function)                                           " />
           <node concept="2NCZwO" id="1YUFCeGolE5" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolE6" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolE7" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjHh$" resolve="makeTP" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjHh$" />
             </node>
           </node>
         </node>
@@ -1143,35 +1143,35 @@
           <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  FlightAnalyzer f;                                    &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
           <node concept="2NCZwO" id="6lh$fzZ0UJ" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzZ2Wv" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$fzZ2Z3" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$fzZ32X" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3c3" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3iL" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3sj" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3$q" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3G_" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3Np" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3WD" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6GoRf5" role="1_0VJ0">
@@ -1182,13 +1182,13 @@
             <node concept="3z_lpY" id="6lh$f$4tJI" role="19SJt6">
               <node concept="2NCZwO" id="6lh$f$4tJJ" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$f$4tJO" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$f$4tJT" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" resolve="FlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjxtH" />
                 </node>
                 <node concept="2NCMab" id="6lh$f$4tK1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" resolve="beforeFlight" />
+                  <ref role="2NCMaa" to="e1tx:6GXPbpLjGfl" />
                 </node>
               </node>
             </node>
@@ -1203,38 +1203,38 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4tOB" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4tOC" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$f$4tOD" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOF" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOG" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOH" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOI" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOJ" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOK" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOL" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4u1Z" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" resolve="f" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4ub2" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6GoUr2" role="1_0VJ0">
@@ -1270,38 +1270,38 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4usg" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4ush" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$f$4usi" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4usj" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usk" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usl" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usm" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usn" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uso" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usp" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usq" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" resolve="f" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usr" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6GoZd5" role="1_0VJ0">
@@ -1337,35 +1337,35 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="6lh$f$4uU$" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4uU_" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$f$4uUA" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUB" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vhA" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUE" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUF" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUG" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUH" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUI" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" resolve="f" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUJ" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6Gp1Es" role="1_0VJ0">
@@ -1381,35 +1381,35 @@
           <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
           <node concept="2NCZwO" id="6lh$f$4vLY" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4vLZ" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$f$4vM0" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM1" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM2" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM3" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4w3P" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM6" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM7" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM8" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" resolve="f" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM9" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6Gp468" role="1_0VJ0">
@@ -1435,38 +1435,38 @@
           <property role="3z_lpV" value="exported testcase testFlightAnalyzer {                 &#10;  f.init;                                              &#10;  assert(0) f.isInState(beforeFlight);                 &#10;  assert(1) f.points == 0;                             &#10;  f.trigger(next|makeTP(0, 20));                       &#10;  assert(2) f.isInState(beforeFlight) &amp;&amp; f.points == 0;&#10;  f.trigger(next|makeTP(100, 100));                    &#10;  assert(3) f.isInState(airborne) &amp;&amp; f.points == 100;  &#10;  test statemachine f {                                &#10;  next(makeTP(200, 100)) ➔ airborne                    &#10;  next(makeTP(300, 150)) ➔ airborne                    &#10;  next(makeTP(0, 90)) ➔ landing                        &#10;  next(makeTP(0, 0)) ➔ landed                          &#10;}                                                      &#10;  assert-equals(4) f.points == 200;                    &#10;} testFlightAnalyzer(test case)                        " />
           <node concept="2NCZwO" id="6lh$f$4wqS" role="3z_lpI">
             <node concept="2NCMab" id="6lh$f$4wqT" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="6lh$f$4wqU" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" resolve="testFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:6GXPbpLjseN" />
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4wH6" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqV" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqW" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqX" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqY" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqZ" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wr1" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wr2" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" resolve="f" />
+            <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wr3" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6Gp87a" role="1_0VJ0">
@@ -1477,10 +1477,10 @@
             <node concept="3z_lpY" id="6lh$f$4x6I" role="19SJt6">
               <node concept="2NCZwO" id="6lh$f$4x6J" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$f$4xa_" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
                 </node>
                 <node concept="2NCMab" id="6lh$f$4xh3" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" resolve="Trackpoint" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" />
                 </node>
               </node>
             </node>
@@ -1511,13 +1511,13 @@
             <node concept="3z_lpY" id="6lh$fzXpKd" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzXpKe" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzXpQ1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXq0a" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" resolve="HierarchicalFlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXq8W" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFEwS" resolve="flying" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFEwS" />
                 </node>
               </node>
             </node>
@@ -1527,13 +1527,13 @@
             <node concept="3z_lpY" id="6lh$fzXqpc" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzXqpd" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzXqpe" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXqpf" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" resolve="HierarchicalFlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXq_t" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFExG" resolve="landing" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFExG" />
                 </node>
               </node>
             </node>
@@ -1543,13 +1543,13 @@
             <node concept="3z_lpY" id="6lh$fzXqvs" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzXqvt" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzXqvu" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXqvv" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" resolve="HierarchicalFlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXqF4" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFExZ" resolve="landed" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFExZ" />
                 </node>
               </node>
             </node>
@@ -1559,13 +1559,13 @@
             <node concept="3z_lpY" id="6lh$fzXqRJ" role="19SJt6">
               <node concept="2NCZwO" id="6lh$fzXqRK" role="3z_lpZ">
                 <node concept="2NCMab" id="6lh$fzXqRL" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+                  <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXqRM" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" resolve="HierarchicalFlightAnalyzer" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" />
                 </node>
                 <node concept="2NCMab" id="6lh$fzXqZ8" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7prHJyKFEvQ" resolve="airborne" />
+                  <ref role="2NCMaa" to="e1tx:7prHJyKFEvQ" />
                 </node>
               </node>
             </node>
@@ -1590,10 +1590,10 @@
           <property role="3z_lpV" value="exported statemachine HierarchicalFlightAnalyzer initial = beforeFlight {&#10;  macro stopped(next) = tp.speed == 0 mps                                &#10;  macro onTheGround(next) = tp.alt == 0 m                                &#10;  in event next(Trackpoint* tp) &lt;no binding&gt;                             &#10;  in event reset() &lt;no binding&gt;                                          &#10;  out event crashNotification() =&gt; raiseAlarm                            &#10;  readable var int16 points = 0                                          &#10;  state beforeFlight {                                                   &#10;  entry { points = 0; }                                                  &#10;  on next [tp.alt &gt; 0 m] -&gt; airborne                                     &#10;  exit { points += TAKEOFF; }                                            &#10;} state beforeFlight                                                     &#10;  composite state airborne initial = flying {                            &#10;  on reset [ ] -&gt; beforeFlight { points = 0; }                           &#10;  on next [onTheGround &amp;&amp; stopped] -&gt; crashed                            &#10;  state flying (airborne.flying) {                                       &#10;  on next [onTheGround &amp;&amp; tp.speed &gt; 0 mps] -&gt; landing                   &#10;  on next [tp.speed &gt; 200 mps] -&gt; flying { points += VERY_HIGH_SPEED; }  &#10;  on next [tp.speed &gt; 100 mps] -&gt; flying { points += HIGH_SPEED; }       &#10;} state flying                                                           &#10;  state landing (airborne.landing) {                                     &#10;  on next [stopped] -&gt; landed                                            &#10;  on next [ ] -&gt; landing { points--; }                                   &#10;} state landing                                                          &#10;  state landed (airborne.landed) {                                       &#10;  entry { points += LANDING; }                                           &#10;} state landed                                                           &#10;} state airborne                                                         &#10;  state crashed {                                                        &#10;  entry { send crashNotification(); }                                    &#10;} state crashed                                                          &#10;}                                                                        " />
           <node concept="2NCZwO" id="1YUFCeGolCg" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCh" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
             </node>
             <node concept="2NCMab" id="3_mefG85g7I" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" resolve="HierarchicalFlightAnalyzer" />
+              <ref role="2NCMaa" to="e1tx:7prHJyKFEw9" />
             </node>
           </node>
         </node>
@@ -1683,7 +1683,7 @@
               <property role="19SUeA" value="State machines can also be rendered and edited as a table: the events become the column headers, and the states become the row headers. " />
             </node>
             <node concept="2Sbdz4" id="4I$rsvbfgU7" role="19SJt6">
-              <ref role="2SbdyP" node="4I$rsvbfgE9" resolve="smtable" />
+              <ref role="2SbdyP" node="4I$rsvbfgE9" />
             </node>
             <node concept="19SUe$" id="4I$rsvbfgU8" role="19SJt6">
               <property role="19SUeA" value=" shows an example. You can switch projection modes the usual way via the " />
@@ -1705,7 +1705,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4I$rsvbfgEs" role="2SbwM5">
             <property role="2Sb_kV" value="smtable.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4F" resolve="smimages" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4F" />
           </node>
           <node concept="OjmMv" id="4I$rsvbfgEd" role="2SaI5j">
             <node concept="19SGf9" id="4I$rsvbfgEe" role="OjmMu">
@@ -1756,7 +1756,7 @@
               <property role="19SUeA" value=", the former one displays all information for the transitions while the latter one will only print the event's name which triggers the given transition.\n\n" />
             </node>
             <node concept="2Sbdz4" id="2XVA19iNVvs" role="19SJt6">
-              <ref role="2SbdyP" node="300OR6GqmqP" resolve="vsm" />
+              <ref role="2SbdyP" node="300OR6GqmqP" />
             </node>
             <node concept="19SUe$" id="2XVA19iNVvr" role="19SJt6">
               <property role="19SUeA" value=" shows an example visualization for the hierarchical state machine that was described in the previous section." />
@@ -1768,7 +1768,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="300OR6GqnZS" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_sm.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
           </node>
           <node concept="OjmMv" id="300OR6GqmqT" role="2SaI5j">
             <node concept="19SGf9" id="300OR6GqmqU" role="OjmMu">
@@ -1784,10 +1784,10 @@
       </node>
     </node>
     <node concept="1_0j5j" id="2XVA19iNIfu" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnw4lA" resolve="C_Units" />
+      <ref role="1_0j5g" node="yrKNEnw4lA" />
     </node>
     <node concept="1_0j5j" id="2XVA19iNIfA" role="1DXQ57">
-      <ref role="1_0j5g" node="6UY8Kx5iuLF" resolve="B_DecisionTables" />
+      <ref role="1_0j5g" node="6UY8Kx5iuLF" />
     </node>
   </node>
 </model>

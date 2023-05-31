@@ -605,7 +605,7 @@
     <property role="UYu25" value="java" />
     <property role="3GE5qa" value="basic" />
     <node concept="1J7L1T" id="M6L5Hu_oTg" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="qq9P1" id="M6L5HuC91_" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -694,10 +694,10 @@
     <property role="UYu25" value="java" />
     <property role="3GE5qa" value="basic" />
     <node concept="1J7L1T" id="M6L5HuChwX" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="1J7L1T" id="5rU7RIwzy7X" role="1J4apk">
-      <ref role="1J7WVQ" node="5AiVk6HAOKr" resolve="JavaInterpreterInt" />
+      <ref role="1J7WVQ" node="5AiVk6HAOKr" />
     </node>
     <node concept="qq9P1" id="M6L5HuEta8" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -1168,10 +1168,10 @@
       </node>
     </node>
     <node concept="1J7L1T" id="M6L5HuEXaX" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="1J7L1T" id="5rU7RIwzAmW" role="1J4apk">
-      <ref role="1J7WVQ" node="5AiVk6HE7h1" resolve="JavaInterpreterFloat" />
+      <ref role="1J7WVQ" node="5AiVk6HE7h1" />
     </node>
     <node concept="lHU7p" id="5Gh6GqGTuA6" role="qq9xR" />
     <node concept="qq9P1" id="M6L5HuF0z0" role="qq9xR">
@@ -1431,10 +1431,10 @@
     <property role="TrG5h" value="JavaInterpreterString" />
     <property role="UYu25" value="java" />
     <node concept="1J7L1T" id="M6L5HuG9nQ" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="1J7L1T" id="5rU7RIwzCj4" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5HuEXaW" resolve="JavaInterpreterDouble" />
+      <ref role="1J7WVQ" node="M6L5HuEXaW" />
     </node>
     <node concept="qq9P1" id="M6L5HuG9nS" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -1477,7 +1477,7 @@
     <property role="UYu25" value="java" />
     <property role="3GE5qa" value="structure" />
     <node concept="1J7L1T" id="5rU7RIw$Ln4" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="qq9P1" id="5rU7RIw$Ln6" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -1981,7 +1981,7 @@
       </node>
     </node>
     <node concept="1J7L1T" id="5rU7RIwAjdJ" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
   </node>
   <node concept="qq9qg" id="5rU7RIwApG8">
@@ -1989,7 +1989,7 @@
     <property role="UYu25" value="java" />
     <property role="3GE5qa" value="structure" />
     <node concept="1J7L1T" id="5rU7RIwApG9" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="qq9P1" id="5rU7RIwApGb" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -2272,10 +2272,10 @@
     <property role="UYu25" value="java" />
     <property role="3GE5qa" value="basic" />
     <node concept="1J7L1T" id="5AiVk6HAOKs" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="1J7L1T" id="5AiVk6HAOKt" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Hu$HQS" resolve="JavaInterpreterBoolean" />
+      <ref role="1J7WVQ" node="M6L5Hu$HQS" />
     </node>
     <node concept="qq9P1" id="5AiVk6HBzJv" role="qq9xR">
       <property role="2TnfIJ" value="true" />
@@ -2716,10 +2716,10 @@
     <property role="UYu25" value="java" />
     <property role="3GE5qa" value="basic" />
     <node concept="1J7L1T" id="5AiVk6HE7h2" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5Huv01K" resolve="JavaInterpreterBase" />
+      <ref role="1J7WVQ" node="M6L5Huv01K" />
     </node>
     <node concept="1J7L1T" id="5AiVk6HE7h3" role="1J4apk">
-      <ref role="1J7WVQ" node="M6L5HuChwW" resolve="JavaInterpreterLong" />
+      <ref role="1J7WVQ" node="M6L5HuChwW" />
     </node>
     <node concept="lHU7p" id="5Gh6GqGTrUF" role="qq9xR" />
     <node concept="qq9P1" id="kYNwvgqUVr" role="qq9xR">

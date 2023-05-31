@@ -129,7 +129,7 @@
   <node concept="1_1swa" id="3D8Uf60N7kD">
     <property role="TrG5h" value="D_Components" />
     <property role="yApLE" value="6" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
     <node concept="1_0VNX" id="3mn43GO8cLU" role="1_0VJ0">
       <property role="TrG5h" value="components" />
       <property role="1_0VJr" value="Components" />
@@ -156,10 +156,10 @@
         <property role="3z_lpV" value="                            &#10;exported struct Trackpoint {&#10;  int8 id;                  &#10;  int8/s/ time;             &#10;  int8/m/ x;                &#10;  int8/m/ y;                &#10;  int16/m/ alt;             &#10;  int16/mps/ speed;         &#10;};                          " />
         <node concept="2NCZwO" id="1YUFCeGolDS" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolDT" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" resolve="DataStructures" />
+            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMp" />
           </node>
           <node concept="2NCMab" id="1YUFCeGolDU" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" resolve="Trackpoint" />
+            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYMq" />
           </node>
         </node>
       </node>
@@ -194,7 +194,7 @@
             <node concept="3z_lpY" id="627_yy4ebvO" role="19SJt6">
               <node concept="2NCZwO" id="627_yy4ebvP" role="3z_lpZ">
                 <node concept="2NCMab" id="627_yy4ebwA" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
               </node>
             </node>
@@ -241,13 +241,13 @@
             <node concept="3z_lpY" id="627_yy4ggeG" role="19SJt6">
               <node concept="2NCZwO" id="627_yy4ggeH" role="3z_lpZ">
                 <node concept="2NCMab" id="627_yy4ggeY" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="627_yy4ggf6" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" resolve="TrackpointProcessor" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" />
                 </node>
                 <node concept="2NCMab" id="627_yy4ggfi" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPT" resolve="process" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPT" />
                 </node>
               </node>
             </node>
@@ -262,10 +262,10 @@
           <property role="3z_lpV" value="exported cs interface TrackpointProcessor {&#10;  Trackpoint* process(Trackpoint* p)       &#10;}                                          " />
           <node concept="2NCZwO" id="1YUFCeGolBQ" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBR" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolBS" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" resolve="TrackpointProcessor" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" />
             </node>
           </node>
           <node concept="2Cuv_b" id="1SYZy6Qn20Q" role="3z_lpH">
@@ -305,10 +305,10 @@
           <property role="3z_lpV" value="exported cs interface TrackpointProcessor {&#10;  Trackpoint* process(Trackpoint* p)       &#10;  pre(0) p != null                         &#10;  pre(1) p.id != 0                         &#10;  pre(2) p.time != 0 s                     &#10;  post(3) result.id != 0                   &#10;}                                          " />
           <node concept="2NCZwO" id="1SYZy6Qn1ZE" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6Qn1ZF" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1SYZy6Qn1ZG" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" resolve="TrackpointProcessor" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" />
             </node>
           </node>
         </node>
@@ -325,10 +325,10 @@
           <property role="3z_lpV" value="exported messagelist ContractMessages {                                                &#10;  message contractFailed(int8 opID, int8 constraintID) ERROR: contract failed  (active)&#10;}                                                                                      " />
           <node concept="2NCZwO" id="1YUFCeGolCt" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolCu" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolCv" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RHZF" resolve="ContractMessages" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RHZF" />
             </node>
           </node>
         </node>
@@ -345,7 +345,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3D8Uf611vxr" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/contractmessage.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
           </node>
           <node concept="OjmMv" id="3D8Uf611urq" role="2SaI5j">
             <node concept="19SGf9" id="3D8Uf611urr" role="OjmMu">
@@ -407,10 +407,10 @@
             <node concept="3z_lpY" id="1SYZy6PNlkj" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PNlkk" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PNmQ0" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PNmQ5" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" resolve="TrackpointProcessor" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" />
                 </node>
               </node>
             </node>
@@ -425,14 +425,14 @@
           <property role="3z_lpV" value="exported component Nuller extends nothing {&#10;  provides TrackpointProcessor processor   &#10;} component Nuller                         " />
           <node concept="2NCZwO" id="1YUFCeGolI_" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolIA" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolIB" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" resolve="Nuller" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" />
             </node>
           </node>
           <node concept="3z_lpK" id="1SYZy6PNATF" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:1w5Xuj1RIph" resolve="processor_process" />
+            <ref role="3z_lpL" to="e1tx:1w5Xuj1RIph" />
           </node>
         </node>
         <node concept="1_0LV8" id="3D8Uf612_jA" role="1_0VJ0">
@@ -448,10 +448,10 @@
           <property role="3z_lpV" value="exported component Nuller extends nothing {                             &#10;  provides TrackpointProcessor processor                                &#10;  Trackpoint* processor_process(Trackpoint* p) &lt;= op processor.process {&#10;  p.alt = 42 m;                                                         &#10;  return p;                                                             &#10;} runnable processor_process                                            &#10;} component Nuller                                                      " />
           <node concept="2NCZwO" id="1SYZy6PNmQQ" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6PNmQR" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1SYZy6PNmQS" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" resolve="Nuller" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" />
             </node>
           </node>
         </node>
@@ -463,13 +463,13 @@
             <node concept="3z_lpY" id="1SYZy6PQ7LN" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PQ7LO" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PQ7M5" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PQ7Ma" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" resolve="Nuller" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PQ7Mh" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RIph" resolve="processor_process" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RIph" />
                 </node>
               </node>
             </node>
@@ -479,13 +479,13 @@
             <node concept="3z_lpY" id="1SYZy6PWJCA" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PWJCB" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PWJCX" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PWJD2" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" resolve="TrackpointProcessor" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PWJD9" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPT" resolve="process" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPT" />
                 </node>
               </node>
             </node>
@@ -495,10 +495,10 @@
             <node concept="3z_lpY" id="1SYZy6PWJDx" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PWJDy" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PWJDU" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PWJDZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" resolve="TrackpointProcessor" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPS" />
                 </node>
               </node>
             </node>
@@ -508,10 +508,10 @@
             <node concept="3z_lpY" id="1SYZy6PWJEC" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PWJED" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PWJEZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PWJF4" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" resolve="Nuller" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RI6M" />
                 </node>
               </node>
             </node>
@@ -573,10 +573,10 @@
           <property role="3z_lpV" value="instances nullerInstancesFailing {&#10;  instance Nuller nuller          &#10;  adapt n -&gt; nuller.processor     &#10;}                                 " />
           <node concept="2NCZwO" id="1YUFCeGolAP" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolAQ" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolAR" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RIpU" resolve="nullerInstancesFailing" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RIpU" />
             </node>
           </node>
         </node>
@@ -693,10 +693,10 @@
           <property role="3z_lpV" value="                                       &#10;section testNullerFailing {            &#10;  instances nullerInstancesFailing {   &#10;  instance Nuller nuller               &#10;  adapt n -&gt; nuller.processor          &#10;}                                      &#10;                                       &#10;  exported testcase testNullerFailing {&#10;  initialize nullerInstancesFailing;   &#10;  Trackpoint tp = {                    &#10;  id = 0,                              &#10;  time = 0 s,                          &#10;  alt = 1000 m                         &#10;};                                     &#10;  n.process(&amp;tp);                      &#10;  assert(0) tp.alt == 0 m;             &#10;} testNullerFailing(test case)         &#10;} section testNullerFailing            " />
           <node concept="2NCZwO" id="1YUFCeGolA1" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolA2" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolA3" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfLZ" resolve="testNullerFailing" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfLZ" />
             </node>
           </node>
         </node>
@@ -733,10 +733,10 @@
           <property role="3z_lpV" value="                                       &#10;section testNullerFailing {            &#10;  instances nullerInstancesFailing {   &#10;  instance Nuller nuller               &#10;  adapt n -&gt; nuller.processor          &#10;}                                      &#10;                                       &#10;  exported testcase testNullerFailing {&#10;  initialize nullerInstancesFailing;   &#10;  Trackpoint tp = {                    &#10;  id = 0,                              &#10;  time = 0 s,                          &#10;  alt = 1000 m                         &#10;};                                     &#10;  n.process(&amp;tp);                      &#10;  assert(0) tp.alt == 0 m;             &#10;} testNullerFailing(test case)         &#10;} section testNullerFailing            " />
           <node concept="2NCZwO" id="1SYZy6PWRQX" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6PWRUa" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1SYZy6PWRUf" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfLZ" resolve="testNullerFailing" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfLZ" />
             </node>
           </node>
         </node>
@@ -758,7 +758,7 @@
             <node concept="3z_lpY" id="1SYZy6PWSN6" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PWSN7" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PWSNw" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7VsgA5L654u" resolve="Main" />
+                  <ref role="2NCMaa" to="e1tx:7VsgA5L654u" />
                 </node>
               </node>
             </node>
@@ -768,10 +768,10 @@
             <node concept="3z_lpY" id="1SYZy6PWSQe" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6PWSQf" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6PWSQF" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6PX0Xy" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1SfLZ" resolve="testNullerFailing" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1SfLZ" />
                 </node>
               </node>
             </node>
@@ -838,10 +838,10 @@
           <property role="3z_lpV" value="                                  &#10;section testNullerOK {            &#10;  instances nullerInstancesOK {   &#10;  instance Nuller nuller          &#10;  adapt n -&gt; nuller.processor     &#10;}                                 &#10;                                  &#10;  exported testcase testNullerOK {&#10;  initialize nullerInstancesOK;   &#10;  Trackpoint tp = {               &#10;  id = 10,                        &#10;  time = 10 s,                    &#10;  alt = 100 m                     &#10;};                                &#10;  n.process(&amp;tp);                 &#10;  assert(0) tp.alt == 0 m;        &#10;} testNullerOK(test case)         &#10;} section testNullerOK            " />
           <node concept="2NCZwO" id="1YUFCeGolGS" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolGT" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="6Fkja4cg7Bv" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6Fkja4ceTWX" resolve="testNullerOK" />
+              <ref role="2NCMaa" to="e1tx:6Fkja4ceTWX" />
             </node>
           </node>
         </node>
@@ -938,10 +938,10 @@
             <node concept="3z_lpY" id="1SYZy6Q6Jwm" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6Q6Jwn" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6Q6Jw$" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6Q6JwD" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPXU" resolve="TrackpointStore1" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPXU" />
                 </node>
               </node>
             </node>
@@ -966,10 +966,10 @@
           <property role="3z_lpV" value="exported cs interface TrackpointStore1 {&#10;  void store(Trackpoint* tp)            &#10;  Trackpoint* get()                     &#10;  Trackpoint* take()                    &#10;  query boolean isEmpty()               &#10;}                                       " />
           <node concept="2NCZwO" id="1SYZy6QE3ck" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6QE3cl" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1SYZy6QE3cm" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RPXU" resolve="TrackpointStore1" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RPXU" />
             </node>
           </node>
           <node concept="2Cuv_b" id="1SYZy6QIt3n" role="3z_lpH">
@@ -1007,10 +1007,10 @@
           <property role="3z_lpV" value="exported cs interface TrackpointStore1 {&#10;  void store(Trackpoint* tp)            &#10;  pre(0) isEmpty()                      &#10;  pre(1) tp != null                     &#10;  post(2) !isEmpty()                    &#10;  Trackpoint* get()                     &#10;  pre(0) !isEmpty()                     &#10;  Trackpoint* take()                    &#10;  pre(0) !isEmpty()                     &#10;  post(1) result != null                &#10;  post(2) isEmpty()                     &#10;  query boolean isEmpty()               &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGol_l" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol_m" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGol_n" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RPXU" resolve="TrackpointStore1" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RPXU" />
             </node>
           </node>
         </node>
@@ -1042,10 +1042,10 @@
             <node concept="3z_lpY" id="1SYZy6QOkGd" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6QOkGe" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6QOkGs" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6QOkGx" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZ9" resolve="TrackpointStore2" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZ9" />
                 </node>
               </node>
             </node>
@@ -1060,10 +1060,10 @@
           <property role="3z_lpV" value="exported cs interface TrackpointStore2 {&#10;                                        &#10;  void store(Trackpoint* tp)            &#10;  protocol init(0) -&gt; new full(1)       &#10;                                        &#10;  Trackpoint* get()                     &#10;  protocol full -&gt; full                 &#10;                                        &#10;  Trackpoint* take()                    &#10;  post(0) result != null                &#10;  protocol full -&gt; init(0)              &#10;                                        &#10;  query boolean isEmpty()               &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGol$s" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGol$t" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGol$u" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZ9" resolve="TrackpointStore2" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZ9" />
             </node>
           </node>
         </node>
@@ -1075,10 +1075,10 @@
             <node concept="3z_lpY" id="1i2OI5uzKui" role="19SJt6">
               <node concept="2NCZwO" id="1i2OI5uzKup" role="3z_lpZ">
                 <node concept="2NCMab" id="1i2OI5uzKuq" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1i2OI5uzUtg" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZa" resolve="store" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZa" />
                 </node>
               </node>
             </node>
@@ -1098,10 +1098,10 @@
             <node concept="3z_lpY" id="1i2OI5u$1$a" role="19SJt6">
               <node concept="2NCZwO" id="1i2OI5u$1$q" role="3z_lpZ">
                 <node concept="2NCMab" id="1i2OI5u$1$r" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1i2OI5u$1$x" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZq" resolve="full" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZq" />
                 </node>
               </node>
             </node>
@@ -1111,10 +1111,10 @@
             <node concept="3z_lpY" id="1i2OI5u$1$_" role="19SJt6">
               <node concept="2NCZwO" id="1i2OI5u$1$U" role="3z_lpZ">
                 <node concept="2NCMab" id="1i2OI5u$1$V" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1i2OI5u$1_1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZr" resolve="get" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZr" />
                 </node>
               </node>
             </node>
@@ -1124,10 +1124,10 @@
             <node concept="3z_lpY" id="1i2OI5u$4np" role="19SJt6">
               <node concept="2NCZwO" id="1i2OI5u$4nq" role="3z_lpZ">
                 <node concept="2NCMab" id="1i2OI5u$4nr" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1i2OI5u$4ns" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZq" resolve="full" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZq" />
                 </node>
               </node>
             </node>
@@ -1147,10 +1147,10 @@
             <node concept="3z_lpY" id="1i2OI5u$4os" role="19SJt6">
               <node concept="2NCZwO" id="1i2OI5u$4ot" role="3z_lpZ">
                 <node concept="2NCMab" id="1i2OI5u$4ou" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1i2OI5u$4p2" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZ$" resolve="take" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RPZ$" />
                 </node>
               </node>
             </node>
@@ -1174,10 +1174,10 @@
             <node concept="3z_lpY" id="1SYZy6QQevm" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6QQevn" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6QQevw" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6QQev_" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ09" resolve="InMemoryStorage" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ09" />
                 </node>
               </node>
             </node>
@@ -1202,13 +1202,13 @@
           <property role="3z_lpV" value="Trackpoint* storedTP;" />
           <node concept="2NCZwO" id="1SYZy6QQeyL" role="3z_lpI">
             <node concept="2NCMab" id="1SYZy6QQeyM" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1SYZy6QQeyN" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ09" resolve="InMemoryStorage" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ09" />
             </node>
             <node concept="2NCMab" id="1SYZy6QQeA3" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ0H" resolve="storedTP" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ0H" />
             </node>
           </node>
         </node>
@@ -1235,13 +1235,13 @@
           <property role="3z_lpV" value="void init() &lt;= on init {&#10;  storedTP = null;      &#10;  return;               &#10;} runnable init         " />
           <node concept="2NCZwO" id="1YUFCeGolF6" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolF7" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolF8" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ09" resolve="InMemoryStorage" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1RQ09" />
             </node>
             <node concept="2NCMab" id="1SYZy6QS89r" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1Saoj" resolve="init" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1Saoj" />
             </node>
           </node>
         </node>
@@ -1253,7 +1253,7 @@
             <node concept="3z_lpY" id="1SYZy6QS8cR" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6QS8cS" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6QS8d1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
               </node>
             </node>
@@ -1284,10 +1284,10 @@
             <node concept="3z_lpY" id="1SYZy6Reazc" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6ReazS" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6ReazT" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6Rea$3" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1S2ME" resolve="Interpolator" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1S2ME" />
                 </node>
               </node>
             </node>
@@ -1297,10 +1297,10 @@
             <node concept="3z_lpY" id="1SYZy6R9W0C" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6Re9Rd" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6Re9Re" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6Re9Ro" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPT" resolve="process" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPT" />
                 </node>
               </node>
             </node>
@@ -1345,10 +1345,10 @@
           <property role="3z_lpV" value="                                                          &#10;section testInterpolator {                                &#10;                                                          &#10;  instances interpolatorInstances {                       &#10;  instance InMemoryStorage store                          &#10;  instance Interpolator interpolator(divident = 10)       &#10;  connect interpolator.store to store.store               &#10;  adapt ip -&gt; interpolator.processor                      &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolator {                    &#10;  initialize interpolatorInstances;                       &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ip.process(&amp;p1);                                        &#10;  assert(0) p1.speed == 10 mps;                           &#10;  ip.process(&amp;p2);                                        &#10;  assert-equals(1) p2.speed == 3 mps;                     &#10;                                                          &#10;} testInterpolator(test case)                             &#10;                                                          &#10;                                                          &#10;                                                          &#10;  mock component StorageMock report messages: true {      &#10;  provides TrackpointStore1 store                         &#10;  Trackpoint* lastTP;                                     &#10;  total no. of calls is 5                                 &#10;  sequence {                                              &#10;  step 0: store.isEmpty return true;                      &#10;  step 1: store.store {                                   &#10;    assert 0: parameter tp: tp != null                    &#10;  }                                                       &#10;  do { lastTP = tp; }                                     &#10;  step 2: store.isEmpty return false;                     &#10;  step 3: store.take return lastTP;                       &#10;  step 4: store.store                                     &#10;}                                                         &#10;}                                                         &#10;                                                          &#10;  instances interpolatorInstancesWithMock {               &#10;  instance StorageMock storeMock                          &#10;  instance Interpolator ip(divident = 2)                  &#10;  connect ip.store to storeMock.store                     &#10;  adapt ipMock -&gt; ip.processor                            &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolatorWithMock {            &#10;  initialize interpolatorInstancesWithMock;               &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 2,                                                 &#10;  time = 2 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ipMock.process(&amp;p1);                                    &#10;  ipMock.process(&amp;p2);                                    &#10;  validatemock(0) interpolatorInstancesWithMock:storeMock;&#10;} testInterpolatorWithMock(test case)                     &#10;} section testInterpolator                                " />
           <node concept="2NCZwO" id="1YUFCeGolGu" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolGv" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolGw" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMd" resolve="testInterpolator" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMd" />
             </node>
           </node>
         </node>
@@ -1360,10 +1360,10 @@
             <node concept="3z_lpY" id="1SYZy6ReayL" role="19SJt6">
               <node concept="2NCZwO" id="1SYZy6ReayV" role="3z_lpZ">
                 <node concept="2NCMab" id="1SYZy6ReayW" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="1SYZy6Reaz6" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1S2ME" resolve="Interpolator" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1S2ME" />
                 </node>
               </node>
             </node>
@@ -1378,10 +1378,10 @@
           <property role="3z_lpV" value="exported component Interpolator extends nothing {                       &#10;  provides TrackpointProcessor processor                                &#10;  requires TrackpointStore1 store                                       &#10;  init int8 divident;                                                   &#10;                                                                        &#10;  Trackpoint* processor_process(Trackpoint* p) &lt;= op processor.process {&#10;  if (store.isEmpty()) {                                                &#10;  store.store(p);                                                       &#10;  return p;                                                             &#10;} else {                                                                &#10;  Trackpoint* old = store.take();                                       &#10;  p.speed = (p.speed + old.speed) / divident;                           &#10;  store.store(p);                                                       &#10;  return p;                                                             &#10;}                                                                       &#10;} runnable processor_process                                            &#10;} component Interpolator                                                " />
           <node concept="2NCZwO" id="1YUFCeGolC3" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolC4" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolC5" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1S2ME" resolve="Interpolator" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1S2ME" />
             </node>
           </node>
         </node>
@@ -1438,10 +1438,10 @@
           <property role="3z_lpV" value="instances interpolatorInstances {                  &#10;  instance InMemoryStorage store                   &#10;  instance Interpolator interpolator(divident = 10)&#10;  connect interpolator.store to store.store        &#10;  adapt ip -&gt; interpolator.processor               &#10;}                                                  " />
           <node concept="2NCZwO" id="1YUFCeGolBf" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBg" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolBh" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1S5I1" resolve="interpolatorInstances" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1S5I1" />
             </node>
           </node>
         </node>
@@ -1646,10 +1646,10 @@
           <property role="3z_lpV" value="                                                          &#10;section testInterpolator {                                &#10;                                                          &#10;  instances interpolatorInstances {                       &#10;  instance InMemoryStorage store                          &#10;  instance Interpolator interpolator(divident = 10)       &#10;  connect interpolator.store to store.store               &#10;  adapt ip -&gt; interpolator.processor                      &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolator {                    &#10;  initialize interpolatorInstances;                       &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ip.process(&amp;p1);                                        &#10;  assert(0) p1.speed == 10 mps;                           &#10;  ip.process(&amp;p2);                                        &#10;  assert-equals(1) p2.speed == 3 mps;                     &#10;                                                          &#10;} testInterpolator(test case)                             &#10;                                                          &#10;                                                          &#10;                                                          &#10;  mock component StorageMock report messages: true {      &#10;  provides TrackpointStore1 store                         &#10;  Trackpoint* lastTP;                                     &#10;  total no. of calls is 5                                 &#10;  sequence {                                              &#10;  step 0: store.isEmpty return true;                      &#10;  step 1: store.store {                                   &#10;    assert 0: parameter tp: tp != null                    &#10;  }                                                       &#10;  do { lastTP = tp; }                                     &#10;  step 2: store.isEmpty return false;                     &#10;  step 3: store.take return lastTP;                       &#10;  step 4: store.store                                     &#10;}                                                         &#10;}                                                         &#10;                                                          &#10;  instances interpolatorInstancesWithMock {               &#10;  instance StorageMock storeMock                          &#10;  instance Interpolator ip(divident = 2)                  &#10;  connect ip.store to storeMock.store                     &#10;  adapt ipMock -&gt; ip.processor                            &#10;}                                                         &#10;                                                          &#10;                                                          &#10;  exported testcase testInterpolatorWithMock {            &#10;  initialize interpolatorInstancesWithMock;               &#10;  Trackpoint p1 = {                                       &#10;  id = 1,                                                 &#10;  time = 1 s,                                             &#10;  speed = 10 mps                                          &#10;};                                                        &#10;  Trackpoint p2 = {                                       &#10;  id = 2,                                                 &#10;  time = 2 s,                                             &#10;  speed = 20 mps                                          &#10;};                                                        &#10;  ipMock.process(&amp;p1);                                    &#10;  ipMock.process(&amp;p2);                                    &#10;  validatemock(0) interpolatorInstancesWithMock:storeMock;&#10;} testInterpolatorWithMock(test case)                     &#10;} section testInterpolator                                " />
           <node concept="2NCZwO" id="5MdJlx$Jlhh" role="3z_lpI">
             <node concept="2NCMab" id="5MdJlx$Jlhi" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="5MdJlx$Jlhj" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMd" resolve="testInterpolator" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMd" />
             </node>
           </node>
         </node>
@@ -1773,10 +1773,10 @@
           <property role="3z_lpV" value="mock component StorageMock report messages: true {&#10;  provides TrackpointStore1 store                 &#10;  Trackpoint* lastTP;                             &#10;  total no. of calls is 5                         &#10;  sequence {                                      &#10;  step 0: store.isEmpty return true;              &#10;  step 1: store.store {                           &#10;    assert 0: parameter tp: tp != null            &#10;  }                                               &#10;  do { lastTP = tp; }                             &#10;  step 2: store.isEmpty return false;             &#10;  step 3: store.take return lastTP;               &#10;  step 4: store.store                             &#10;}                                                 &#10;}                                                 " />
           <node concept="2NCZwO" id="1YUFCeGolBs" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBt" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolBu" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNSKaC" resolve="StorageMock" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNSKaC" />
             </node>
           </node>
         </node>
@@ -1993,10 +1993,10 @@
           <property role="3z_lpV" value="exported testcase testInterpolatorWithMock {&#10;  initialize interpolatorInstancesWithMock; &#10;  Trackpoint p1 = {                         &#10;  id = 1,                                   &#10;  time = 1 s,                               &#10;  speed = 10 mps                            &#10;};                                          &#10;  Trackpoint p2 = {                         &#10;  id = 2,                                   &#10;  time = 2 s,                               &#10;  speed = 20 mps                            &#10;};                                          &#10;  ipMock.process(&amp;p1);                      &#10;  ipMock.process(&amp;p2);                      &#10;} testInterpolatorWithMock(test case)       " />
           <node concept="2NCZwO" id="5MdJlx$JKZb" role="3z_lpI">
             <node concept="2NCMab" id="5MdJlx$JKZc" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="5MdJlx$JKZd" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNSK9i" resolve="testInterpolatorWithMock" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNSK9i" />
             </node>
           </node>
           <node concept="2Cuv_b" id="5MdJlx$K17v" role="3z_lpH">
@@ -2019,10 +2019,10 @@
           <property role="3z_lpV" value="instances interpolatorInstancesWithMock {&#10;  instance StorageMock storeMock         &#10;  instance Interpolator ip(divident = 2) &#10;  connect ip.store to storeMock.store    &#10;  adapt ipMock -&gt; ip.processor           &#10;}                                        " />
           <node concept="2NCZwO" id="1YUFCeGolBD" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolBE" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolBF" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNSU2s" resolve="interpolatorInstancesWithMock" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNSU2s" />
             </node>
           </node>
         </node>
@@ -2049,13 +2049,13 @@
           <property role="3z_lpV" value="validatemock(0) interpolatorInstancesWithMock:storeMock;" />
           <node concept="2NCZwO" id="1YUFCeGolHq" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolHr" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolHs" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4usdeMNSK9i" resolve="testInterpolatorWithMock" />
+              <ref role="2NCMaa" to="e1tx:4usdeMNSK9i" />
             </node>
             <node concept="2NCMab" id="5MdJlx$Kiq0" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5MdJlx$K9gm" resolve="aValidateMock" />
+              <ref role="2NCMaa" to="e1tx:5MdJlx$K9gm" />
             </node>
           </node>
         </node>
@@ -2067,10 +2067,10 @@
             <node concept="3z_lpY" id="5MdJlx$Kizk" role="19SJt6">
               <node concept="2NCZwO" id="5MdJlx$Kizr" role="3z_lpZ">
                 <node concept="2NCMab" id="5MdJlx$Kizs" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
                 </node>
                 <node concept="2NCMab" id="5MdJlx$Kizy" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMd" resolve="testInterpolator" />
+                  <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMd" />
                 </node>
               </node>
             </node>
@@ -2114,7 +2114,7 @@
             <node concept="3z_lpY" id="1i2OI5u$4pi" role="19SJt6">
               <node concept="2NCZwO" id="1i2OI5u$4pz" role="3z_lpZ">
                 <node concept="2NCMab" id="1i2OI5u$4pB" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
+                  <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" />
                 </node>
               </node>
             </node>
@@ -2226,10 +2226,10 @@
           <property role="3z_lpV" value="exported sr interface PositionProvider {&#10;  int8/m/ x;                            &#10;  int8/m/ y;                            &#10;  int16/m/ alt;                         &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGolFj" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolFk" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolFl" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$g" resolve="PositionProvider" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$g" />
             </node>
           </node>
         </node>
@@ -2246,10 +2246,10 @@
           <property role="3z_lpV" value="exported component GPS extends nothing {&#10;  provides PositionProvider pos         &#10;  provides Timed timed                  &#10;  void init() &lt;= on init {              &#10;  pos.x = 0 m;                          &#10;  pos.y = 0 m;                          &#10;  pos.alt = 0 m;                        &#10;} runnable init                         &#10;  void timed_tick() &lt;= op timed.tick {  &#10;  pos.x++;                              &#10;  pos.y++;                              &#10;} runnable timed_tick                   &#10;} component GPS                         " />
           <node concept="2NCZwO" id="1YUFCeGolEv" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEw" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolEx" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$L" resolve="GPS" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$L" />
             </node>
           </node>
         </node>
@@ -2266,10 +2266,10 @@
           <property role="3z_lpV" value="exported component FlightRecorder extends nothing {&#10;  provides Timed timed                             &#10;  requires PositionProvider pp                     &#10;  requires SpeedProvider sp                        &#10;  Trackpoint[1000] recordedFlight;                 &#10;  uint16 count = 0;                                &#10;  void timed_tick() &lt;= op timed.tick {             &#10;                                                   &#10;  with (recordedFlight[count]) {                   &#10;  id = ((int8) count);                             &#10;  x = pp.x;                                        &#10;  y = pp.y;                                        &#10;  alt = pp.alt;                                    &#10;  speed = sp.speed;                                &#10;}                                                  &#10;  count++;                                         &#10;} runnable timed_tick                              &#10;  Trackpoint getFlightNo(uint16 no) &lt;= no trigger {&#10;  return recordedFlight[no];                       &#10;} runnable getFlightNo                             &#10;} component FlightRecorder                         " />
           <node concept="2NCZwO" id="1YUFCeGolH5" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolH6" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolH7" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xWBk" resolve="FlightRecorder" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xWBk" />
             </node>
           </node>
         </node>
@@ -2316,10 +2316,10 @@
           <property role="3z_lpV" value="instances instances {                   &#10;  instance GPS gps_comp                 &#10;  instance SpeedIndicator indicator     &#10;  instance FlightRecorder recorder      &#10;  connect recorder.sp to indicator.speed&#10;  connect recorder.pp to gps_comp.pos   &#10;  adapt gps -&gt; gps_comp.timed           &#10;  adapt si -&gt; indicator.timed           &#10;  adapt rec -&gt; recorder.timed           &#10;}                                       " />
           <node concept="2NCZwO" id="1YUFCeGolHB" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolHC" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" resolve="ComponentsSRI" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xW$c" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolHD" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5NYlgF0xXPm" resolve="instances" />
+              <ref role="2NCMaa" to="e1tx:5NYlgF0xXPm" />
             </node>
           </node>
         </node>
@@ -2352,10 +2352,10 @@
             <node concept="3z_lpY" id="4dKKrcE0B9l" role="19SJt6">
               <node concept="2NCZwO" id="4dKKrcE0B9B" role="3z_lpZ">
                 <node concept="2NCMab" id="4dKKrcE0B9H" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
+                  <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" />
                 </node>
                 <node concept="2NCMab" id="4dKKrcE0BYQ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:6xLvLBZODf2" resolve="CharParser" />
+                  <ref role="2NCMaa" to="e1tx:6xLvLBZODf2" />
                 </node>
               </node>
             </node>
@@ -2365,10 +2365,10 @@
             <node concept="3z_lpY" id="4dKKrcE0BYX" role="19SJt6">
               <node concept="2NCZwO" id="4dKKrcE0BZp" role="3z_lpZ">
                 <node concept="2NCMab" id="4dKKrcE0BZv" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
+                  <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" />
                 </node>
                 <node concept="2NCMab" id="4dKKrcE0BZC" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:1ye7yATSDv1" resolve="NmeaRmcEventProcessor" />
+                  <ref role="2NCMaa" to="e1tx:1ye7yATSDv1" />
                 </node>
               </node>
             </node>
@@ -2403,10 +2403,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4dKKrcE0Ekm" role="3z_lpI">
             <node concept="2NCMab" id="4dKKrcE0Eks" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
+              <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" />
             </node>
             <node concept="2NCMab" id="4dKKrcE0Ek_" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6xLvLC0cJ4Z" resolve="NmeaStack" />
+              <ref role="2NCMaa" to="e1tx:6xLvLC0cJ4Z" />
             </node>
           </node>
         </node>
@@ -2447,10 +2447,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4dKKrcE2aZo" role="3z_lpI">
             <node concept="2NCMab" id="4dKKrcE2aZw" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
+              <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" />
             </node>
             <node concept="2NCMab" id="4dKKrcE2aZG" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6xLvLC0aXJK" resolve="NmeaCommandHandler" />
+              <ref role="2NCMaa" to="e1tx:6xLvLC0aXJK" />
             </node>
           </node>
         </node>
@@ -2463,10 +2463,10 @@
           <property role="3z_lpV" value="void sentenceHandler_parseSentence(int8[MAX_NMEA_WORD_COUNT]* words, uint8 wordCount) &lt;= op sentenceHandler.parseSentence {&#10;  interface&lt;NmeaCommandHandler&gt; handlerToCall = null;                                                                      &#10;  for (i ++ in [0..MAX_NMEA_COMMAND_HANDLER_COUNT[) {                                                                      &#10;  if (commandHandlers[i] != null &amp;&amp; commandHandlers[i].canHandle(words[0])) {                                              &#10;  handlerToCall = commandHandlers[i];                                                                                      &#10;} if                                                                                                                       &#10;} for                                                                                                                      &#10;  handlerToCall.handle(words, wordCount);                                                                                  &#10;} runnable sentenceHandler_parseSentence                                                                                   " />
           <node concept="2NCZwO" id="4dKKrcE2b2i" role="3z_lpI">
             <node concept="2NCMab" id="4dKKrcE2b2q" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" resolve="CompositeComponents" />
+              <ref role="2NCMaa" to="e1tx:4dKKrcDT0iK" />
             </node>
             <node concept="2NCMab" id="4dKKrcE2cfj" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:6xLvLC0aSCr" resolve="sentenceHandler_parseSentence" />
+              <ref role="2NCMaa" to="e1tx:6xLvLC0aSCr" />
             </node>
           </node>
         </node>
@@ -2532,7 +2532,7 @@
               <property role="19SUeA" value="). " />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5eX1t" role="19SJt6">
-              <ref role="2SbdyP" node="1Pi5yleHyq7" resolve="vcomponents" />
+              <ref role="2SbdyP" node="1Pi5yleHyq7" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5eX1s" role="19SJt6">
               <property role="19SUeA" value=" shows the result. " />
@@ -2543,7 +2543,7 @@
           <property role="TrG5h" value="vcomponents" />
           <node concept="2Sb_l4" id="3DAECxFCKzg" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_components.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
           </node>
           <node concept="OjmMv" id="1Pi5yleHyqb" role="2SaI5j">
             <node concept="19SGf9" id="1Pi5yleHyqc" role="OjmMu">
@@ -2568,7 +2568,7 @@
               <property role="19SUeA" value=" You can also select an instance configuration and visualize it. You'll get a diagram that shows component instances and their connections (" />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5eX1k" role="19SJt6">
-              <ref role="2SbdyP" node="1Pi5yleHzNj" resolve="vinstances" />
+              <ref role="2SbdyP" node="1Pi5yleHzNj" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5eX1j" role="19SJt6">
               <property role="19SUeA" value=")." />
@@ -2579,7 +2579,7 @@
           <property role="TrG5h" value="vinstances" />
           <node concept="2Sb_l4" id="1Pi5yleHzO0" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_instances.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
           </node>
           <node concept="OjmMv" id="1Pi5yleHzNn" role="2SaI5j">
             <node concept="19SGf9" id="1Pi5yleHzNo" role="OjmMu">
@@ -2603,7 +2603,7 @@
               <property role="19SUeA" value="mbeddr comes with support for verifying contracts of components statically. This verification is based on C-level verification with CBMC (for a more detailed discussion about the formal verification with mbeddr, please look at " />
             </node>
             <node concept="1_0GAv" id="2JeiqU7f4YR" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:7OKLwZ_7lPw" resolve="functional_verification" />
+              <ref role="1_0GAl" to="us0v:7OKLwZ_7lPw" />
             </node>
             <node concept="19SUe$" id="2JeiqU7f4YQ" role="19SJt6">
               <property role="19SUeA" value=". Let's set up our tutorial to use verification.  Let us verify the " />
@@ -2667,10 +2667,10 @@
           <property role="3z_lpV" value="instances verificationInstances {                     &#10;  instance Interpolator interpol(divident = 2)        &#10;  connect interpol.store to store.store               &#10;  instance InMemoryStorage store                      &#10;  adapt verificationInterpolator -&gt; interpol.processor&#10;}                                                     " />
           <node concept="2NCZwO" id="1YUFCeGolDh" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolDi" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolDj" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1qK_mmzpCrP" resolve="verificationInstances" />
+              <ref role="2NCMaa" to="e1tx:1qK_mmzpCrP" />
             </node>
           </node>
         </node>
@@ -2680,10 +2680,10 @@
           <property role="3z_lpV" value="exported testcase verification {        &#10;  initialize verificationInstances;     &#10;  Trackpoint p1 = {                     &#10;  id = 1,                               &#10;  time = 1 s,                           &#10;  speed = 10 mps                        &#10;};                                      &#10;  Trackpoint p2 = {                     &#10;  id = 1,                               &#10;  time = 1 s,                           &#10;  speed = 20 mps                        &#10;};                                      &#10;  verificationInterpolator.process(&amp;p1);&#10;  verificationInterpolator.process(&amp;p2);&#10;} verification(test case)               " />
           <node concept="2NCZwO" id="1YUFCeGolEG" role="3z_lpI">
             <node concept="2NCMab" id="1YUFCeGolEH" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+              <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
             </node>
             <node concept="2NCMab" id="1YUFCeGolEI" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:1qK_mmzpCsh" resolve="verification" />
+              <ref role="2NCMaa" to="e1tx:1qK_mmzpCsh" />
             </node>
           </node>
         </node>
@@ -2713,7 +2713,7 @@
               <property role="19SUeA" value=" action. After a few seconds, you'll get a result table that reports everything as ok (see " />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5hyCt" role="19SJt6">
-              <ref role="2SbdyP" node="6UY8Kx5hnzL" resolve="verificationOK" />
+              <ref role="2SbdyP" node="6UY8Kx5hnzL" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5hyCs" role="19SJt6">
               <property role="19SUeA" value="): every precondition of every operation in every provided port has been proven to be correct." />
@@ -2725,7 +2725,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3DAECxFCKza" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/verificationOK.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
           </node>
           <node concept="OjmMv" id="6UY8Kx5hnzP" role="2SaI5j">
             <node concept="19SGf9" id="6UY8Kx5hnzQ" role="OjmMu">
@@ -2775,7 +2775,7 @@
               <property role="19SUeA" value="Let us rerun the verification. Now we get an error, as shown in " />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5hyCk" role="19SJt6">
-              <ref role="2SbdyP" node="6UY8Kx5hvRW" resolve="verificationNotOK" />
+              <ref role="2SbdyP" node="6UY8Kx5hvRW" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5hyCj" role="19SJt6">
               <property role="19SUeA" value=". Note how the lower part of the table now shows the execution trace that led to the contract violation. You should check the " />
@@ -2796,7 +2796,7 @@
           <property role="TrG5h" value="verificationNotOK" />
           <node concept="2Sb_l4" id="3DAECxFCKzd" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/verificationNotOK.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
           </node>
           <node concept="OjmMv" id="6UY8Kx5hvS0" role="2SaI5j">
             <node concept="19SGf9" id="6UY8Kx5hvS1" role="OjmMu">
@@ -2817,12 +2817,12 @@
     <node concept="2CRZSB" id="1SYZy6QWXKG" role="lGtFl">
       <node concept="2NCZwO" id="1SYZy6QWXKJ" role="2CRYsu">
         <node concept="2NCMab" id="1SYZy6QWXKP" role="2NCMaf">
-          <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
+          <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
         </node>
       </node>
     </node>
     <node concept="1_0j5j" id="3ZdGyCRQAT4" role="1DXQ57">
-      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
+      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" />
     </node>
   </node>
 </model>

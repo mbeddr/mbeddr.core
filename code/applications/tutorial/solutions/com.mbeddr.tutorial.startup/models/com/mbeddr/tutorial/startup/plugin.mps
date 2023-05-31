@@ -306,7 +306,7 @@
                                   <node concept="2OqwBi" id="3YjQI$j2pN2" role="33vP2m">
                                     <node concept="2tJFMh" id="3YjQI$j2n7n" role="2Oq$k0">
                                       <node concept="ZC_QK" id="3YjQI$j2oQb" role="2tJFKM">
-                                        <ref role="2aWVGs" to="guhl:2ZHlC00a9Ux" resolve="mbeddrEditingGuide" />
+                                        <ref role="2aWVGs" to="guhl:2ZHlC00a9Ux" />
                                       </node>
                                     </node>
                                     <node concept="Vyspw" id="3YjQI$j2qa6" role="2OqNvi">
@@ -669,7 +669,7 @@
               <ref role="ehGHo" to="k8go:3p1cdQ7_d_Y" resolve="Exercise" />
             </node>
             <node concept="3B5_sB" id="2QDtwSqDjub" role="33vP2m">
-              <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" resolve="mbeddrEditingGuide" />
+              <ref role="3B5MYn" to="guhl:2ZHlC00a9Ux" />
             </node>
           </node>
         </node>

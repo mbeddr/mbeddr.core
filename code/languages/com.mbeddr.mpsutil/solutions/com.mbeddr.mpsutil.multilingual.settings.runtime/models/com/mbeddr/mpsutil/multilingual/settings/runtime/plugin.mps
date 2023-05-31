@@ -216,8 +216,8 @@
         <child id="8201243288561544766" name="getEntriesFunction" index="3i_clJ" />
         <child id="8201243288561545816" name="defaultEntryFunction" index="3i_d$9" />
       </concept>
-      <concept id="8201243288561530773" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxEntriesFunction" flags="ig" index="3i_9N4" />
-      <concept id="8201243288561544883" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxDefaultEntryFunction" flags="ig" index="3i_cny" />
+      <concept id="8201243288561530773" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxEntriesFunction" flags="ng" index="3i_9N4" />
+      <concept id="8201243288561544883" name="com.mbeddr.mpsutil.preferenceform.structure.DynamicComboBoxDefaultEntryFunction" flags="ng" index="3i_cny" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <child id="1210676907584" name="afterReadBlockProject" index="3xXSXp" />
         <child id="1210676918600" name="beforeWriteBlockProject" index="3xXVxh" />
@@ -237,7 +237,7 @@
     <node concept="1DJMfN" id="1FptJtanBDD" role="1DEjpx">
       <property role="TrG5h" value="showTranslations" />
       <node concept="3ZQQOj" id="4bsUQfPNRL9" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h755mL" resolve="ShowTranslationsGlobally" />
+        <ref role="3ZOmrH" node="7Hbe8h755mL" />
       </node>
       <node concept="10P_77" id="1FptJtanBDE" role="1tU5fm" />
       <node concept="3clFbT" id="1FptJtanBDF" role="33vP2m" />
@@ -246,7 +246,7 @@
       <property role="TrG5h" value="showTranslationsIntentionEnabled" />
       <property role="1DJMfM" value="true" />
       <node concept="3ZQQOj" id="4bsUQfPNS7C" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h755_I" resolve="EnableShowTranslationsIntention" />
+        <ref role="3ZOmrH" node="7Hbe8h755_I" />
       </node>
       <node concept="10P_77" id="77gEP6zfKho" role="1tU5fm" />
       <node concept="3clFbT" id="77gEP6zfKkI" role="33vP2m">
@@ -256,7 +256,7 @@
     <node concept="3i_9Kd" id="77gEP6zkhUH" role="1DEjpx">
       <property role="TrG5h" value="currentLanguage" />
       <node concept="3ZQQOj" id="4bsUQfPNSJK" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h756ko" resolve="CurrentLanguage" />
+        <ref role="3ZOmrH" node="7Hbe8h756ko" />
       </node>
       <node concept="17QB3L" id="77gEP6zkhUI" role="1tU5fm" />
       <node concept="Xl_RD" id="77gEP6zkhUJ" role="33vP2m">
@@ -287,7 +287,7 @@
                   <node concept="2OqwBi" id="IoI2Md$$$n" role="2Oq$k0">
                     <node concept="2OqwBi" id="IoI2Md$$$o" role="2Oq$k0">
                       <node concept="3B5_sB" id="IoI2Md$$$p" role="2Oq$k0">
-                        <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
+                        <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
                       </node>
                       <node concept="3Tsc0h" id="IoI2Md$$$q" role="2OqNvi">
                         <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
@@ -506,7 +506,7 @@
               <node concept="2OqwBi" id="77gEP6zxIdu" role="37wK5m">
                 <node concept="2WthIp" id="77gEP6zxIca" role="2Oq$k0" />
                 <node concept="1DZHhv" id="1FptJtanCwI" role="2OqNvi">
-                  <ref role="2WH_rO" node="1FptJtanBDD" resolve="showTranslations" />
+                  <ref role="2WH_rO" node="1FptJtanBDD" />
                 </node>
               </node>
             </node>
@@ -522,7 +522,7 @@
               <node concept="2OqwBi" id="1FptJtanLDX" role="37wK5m">
                 <node concept="2WthIp" id="1FptJtanLDm" role="2Oq$k0" />
                 <node concept="1DZHhv" id="1FptJtanLQ9" role="2OqNvi">
-                  <ref role="2WH_rO" node="77gEP6zfKhn" resolve="showTranslationsIntentionEnabled" />
+                  <ref role="2WH_rO" node="77gEP6zfKhn" />
                 </node>
               </node>
             </node>
@@ -537,7 +537,7 @@
             <node concept="2OqwBi" id="77gEP6zxyQF" role="2Oq$k0">
               <node concept="2WthIp" id="77gEP6zxyPQ" role="2Oq$k0" />
               <node concept="1DZHhv" id="77gEP6zxyY2" role="2OqNvi">
-                <ref role="2WH_rO" node="77gEP6zkhUH" resolve="currentLanguage" />
+                <ref role="2WH_rO" node="77gEP6zkhUH" />
               </node>
             </node>
             <node concept="17RlXB" id="77gEP6zxCu$" role="2OqNvi" />
@@ -554,7 +554,7 @@
               <node concept="2OqwBi" id="77gEP6zxw5_" role="2Oq$k0">
                 <node concept="2WthIp" id="77gEP6zxw5A" role="2Oq$k0" />
                 <node concept="1DZHhv" id="77gEP6zxw5B" role="2OqNvi">
-                  <ref role="2WH_rO" node="77gEP6zkhUH" resolve="currentLanguage" />
+                  <ref role="2WH_rO" node="77gEP6zkhUH" />
                 </node>
               </node>
               <node concept="liA8E" id="77gEP6zxw5C" role="2OqNvi">
@@ -647,7 +647,7 @@
             <node concept="2OqwBi" id="77gEP6zxJrh" role="37vLTJ">
               <node concept="2WthIp" id="77gEP6zxJqQ" role="2Oq$k0" />
               <node concept="1DZHhv" id="1FptJtanMRJ" role="2OqNvi">
-                <ref role="2WH_rO" node="1FptJtanBDD" resolve="showTranslations" />
+                <ref role="2WH_rO" node="1FptJtanBDD" />
               </node>
             </node>
           </node>
@@ -664,7 +664,7 @@
             </node>
             <node concept="2OqwBi" id="1FptJtanMir" role="37vLTJ">
               <node concept="1DZHhv" id="3CcRIE6J_Kx" role="2OqNvi">
-                <ref role="2WH_rO" node="77gEP6zfKhn" resolve="showTranslationsIntentionEnabled" />
+                <ref role="2WH_rO" node="77gEP6zfKhn" />
               </node>
               <node concept="2WthIp" id="1FptJtanMgc" role="2Oq$k0" />
             </node>
@@ -787,7 +787,7 @@
                       <node concept="2OqwBi" id="77gEP6zxKDH" role="37vLTJ">
                         <node concept="2WthIp" id="77gEP6zxKyR" role="2Oq$k0" />
                         <node concept="1DZHhv" id="77gEP6zxKPl" role="2OqNvi">
-                          <ref role="2WH_rO" node="77gEP6zkhUH" resolve="currentLanguage" />
+                          <ref role="2WH_rO" node="77gEP6zkhUH" />
                         </node>
                       </node>
                     </node>

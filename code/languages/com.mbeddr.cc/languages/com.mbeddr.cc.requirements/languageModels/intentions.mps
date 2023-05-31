@@ -213,10 +213,10 @@
       </concept>
     </language>
     <language id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" name="de.itemis.mps.selection.intentions">
-      <concept id="6009478650970401999" name="de.itemis.mps.selection.intentions.structure.Description" flags="ig" index="71TwL" />
+      <concept id="6009478650970401999" name="de.itemis.mps.selection.intentions.structure.Description" flags="ng" index="71TwL" />
       <concept id="6009478650970402176" name="de.itemis.mps.selection.intentions.structure.Parameter_Selection" flags="ng" index="71T_Y" />
-      <concept id="6009478650970402162" name="de.itemis.mps.selection.intentions.structure.Execute" flags="ig" index="71TAc" />
-      <concept id="6009478650970402067" name="de.itemis.mps.selection.intentions.structure.IsApplicable" flags="ig" index="71TBH" />
+      <concept id="6009478650970402162" name="de.itemis.mps.selection.intentions.structure.Execute" flags="ng" index="71TAc" />
+      <concept id="6009478650970402067" name="de.itemis.mps.selection.intentions.structure.IsApplicable" flags="ng" index="71TBH" />
       <concept id="6009478650970401247" name="de.itemis.mps.selection.intentions.structure.SelectionIntention" flags="ng" index="71TOx">
         <child id="6009478650970402171" name="execute" index="71TA5" />
         <child id="6009478650970402167" name="isApplicable" index="71TA9" />

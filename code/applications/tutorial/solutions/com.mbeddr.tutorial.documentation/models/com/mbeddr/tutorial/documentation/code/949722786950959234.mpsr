@@ -112,8 +112,8 @@
       <node concept="3XIRFW" id="7qm3EBqxJz" role="3XIRFX">
         <node concept="2vn4wP" id="OI5Xv7jGfH" role="3XIRFZ">
           <node concept="2vn4wR" id="OI5Xv7jGfJ" role="2vn6$T">
-            <ref role="2vn4wS" node="7aNtjNm3gBt" resolve="log" />
-            <ref role="2vn4wT" node="7aNtjNm3gKJ" resolve="hello" />
+            <ref role="2vn4wS" node="7aNtjNm3gBt" />
+            <ref role="2vn4wT" node="7aNtjNm3gKJ" />
             <node concept="PhEJO" id="OI5Xv7jGi1" role="2qqZAa">
               <property role="PhEJT" value="World" />
             </node>

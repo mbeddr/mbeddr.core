@@ -198,7 +198,7 @@
     <property role="TrG5h" value="CMathInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="6KLCBzAUjHg" role="1J4apk">
-      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" />
     </node>
     <node concept="3SNpY9" id="5TH8iQlO7RS" role="qq9xR">
       <property role="2TnfIJ" value="true" />

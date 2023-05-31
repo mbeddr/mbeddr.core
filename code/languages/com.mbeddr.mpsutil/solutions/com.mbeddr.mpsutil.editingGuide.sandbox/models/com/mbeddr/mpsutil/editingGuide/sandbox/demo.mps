@@ -111,7 +111,7 @@
       <concept id="3453511597021550269" name="com.mbeddr.mpsutil.editingGuide.structure.CodeWord" flags="ng" index="JL00X">
         <property id="3453511597021550288" name="text" index="JL01g" />
       </concept>
-      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ig" index="2LPuA2" />
+      <concept id="3909459679554885983" name="com.mbeddr.mpsutil.editingGuide.structure.MonitorFunction" flags="ng" index="2LPuA2" />
       <concept id="3909459679554886014" name="com.mbeddr.mpsutil.editingGuide.structure.Exercise" flags="ng" index="2LPuAz">
         <child id="3909459679554886019" name="description" index="2LPu_u" />
         <child id="3909459679554886015" name="tasks" index="2LPuAy" />
@@ -430,7 +430,7 @@
           </node>
         </node>
         <node concept="m50Gj" id="44LrdWQfx8V" role="dx$wc">
-          <ref role="m50H4" node="3p1cdQ7_M8M" resolve="deletionFragment" />
+          <ref role="m50H4" node="3p1cdQ7_M8M" />
         </node>
       </node>
       <node concept="19SGf9" id="2ZHlC004kGI" role="JZmik">
@@ -562,7 +562,7 @@
         </node>
       </node>
       <node concept="16nEFB" id="44LrdWQg03i" role="2LPuAs">
-        <ref role="16nEX3" node="31xWCC4RBn" resolve="selectionFragment" />
+        <ref role="16nEX3" node="31xWCC4RBn" />
       </node>
       <node concept="19SGf9" id="44LrdWQfZSF" role="JZmik">
         <node concept="19SUe$" id="44LrdWQfZSG" role="19SJt6">

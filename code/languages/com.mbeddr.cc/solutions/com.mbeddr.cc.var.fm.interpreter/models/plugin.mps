@@ -47,7 +47,7 @@
     <property role="TrG5h" value="VarFmCInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="6KLCBzC$jMM" role="1J4apk">
-      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
+      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" />
     </node>
     <node concept="3SNpY9" id="6KLCBzC$rMs" role="qq9xR">
       <property role="2TnfIJ" value="true" />

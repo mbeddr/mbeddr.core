@@ -52,7 +52,7 @@
     <ref role="1XX52x" to="1zxe:4gGXGcMdKrM" resolve="TestMultilingualEditorConcept" />
     <node concept="3EZMnI" id="4gGXGcMdVX5" role="2wV5jI">
       <node concept="3ZRKB6" id="4gGXGcMdLMe" role="3EZMnx">
-        <ref role="3ZOmrH" node="4gGXGcMdLMd" resolve="MyConstant" />
+        <ref role="3ZOmrH" node="4gGXGcMdLMd" />
       </node>
       <node concept="3ZRKB4" id="4gGXGcMes04" role="3EZMnx" />
       <node concept="2iRfu4" id="4gGXGcMdVX6" role="2iSdaV" />

@@ -223,7 +223,7 @@
         <child id="9087294576176418090" name="expressions" index="10icdJ" />
       </concept>
       <concept id="2510545900188478754" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaString" flags="ng" index="3ZQQOj" />
-      <concept id="2510545900188478756" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaStringType" flags="ig" index="3ZQQOl" />
+      <concept id="2510545900188478756" name="com.mbeddr.mpsutil.multilingual.baseLanguage.structure.MultilingualJavaStringType" flags="ng" index="3ZQQOl" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -1294,7 +1294,7 @@
             <property role="TrG5h" value="myTranslatedString" />
             <node concept="3ZQQOl" id="3TSnT3I_WEd" role="1tU5fm" />
             <node concept="3ZQQOj" id="3TSnT3I_WFp" role="33vP2m">
-              <ref role="3ZOmrH" node="3TSnT3I_WLc" resolve="thisWillBeTranslated" />
+              <ref role="3ZOmrH" node="3TSnT3I_WLc" />
             </node>
           </node>
         </node>
@@ -1305,7 +1305,7 @@
             <node concept="17QB3L" id="3TSnT3I_WMk" role="1tU5fm" />
             <node concept="3cpWs3" id="3TSnT3I_XEU" role="33vP2m">
               <node concept="3ZQQOj" id="3TSnT3I_XLU" role="3uHU7w">
-                <ref role="3ZOmrH" node="3TSnT3I_XSF" resolve="isCool" />
+                <ref role="3ZOmrH" node="3TSnT3I_XSF" />
               </node>
               <node concept="3cpWs3" id="3TSnT3I_Xb8" role="3uHU7B">
                 <node concept="3cpWs3" id="3TSnT3I_WTy" role="3uHU7B">
@@ -1370,7 +1370,7 @@
             <property role="TrG5h" value="myTranslatedString" />
             <node concept="3ZQQOl" id="3TSnT3I_Yms" role="1tU5fm" />
             <node concept="10eMqx" id="3TSnT3I_YnI" role="33vP2m">
-              <ref role="3ZOmrH" node="3TSnT3I_Yoz" resolve="formattedKey" />
+              <ref role="3ZOmrH" node="3TSnT3I_Yoz" />
               <node concept="37vLTw" id="4ulp8Vf$ibg" role="10icdJ">
                 <ref role="3cqZAo" node="3TSnT3I_Yd0" resolve="myString" />
               </node>
@@ -1458,7 +1458,7 @@
     <node concept="3Y8sC2" id="aiIotXwxQM" role="1Z4P0_">
       <property role="s3kYd" value="false" />
       <node concept="3Y8sCD" id="aiIotXwxQN" role="s3kY8">
-        <ref role="s3l27" to="sv0f:3J1G4nNne39" resolve="English (United States)" />
+        <ref role="s3l27" to="sv0f:3J1G4nNne39" />
         <node concept="19SGf9" id="aiIotXwxQO" role="3Y8sCC">
           <node concept="19SUe$" id="aiIotXwxQP" role="19SJt6">
             <property role="19SUeA" value="This is an even more fancy description." />
@@ -1466,7 +1466,7 @@
         </node>
       </node>
       <node concept="3Y8sCD" id="aiIotXwy1f" role="s3kY8">
-        <ref role="s3l27" to="sv0f:3J1G4nNndWL" resolve="Deutsch (Deutschland)" />
+        <ref role="s3l27" to="sv0f:3J1G4nNndWL" />
         <node concept="19SGf9" id="aiIotXwy1g" role="3Y8sCC">
           <node concept="19SUe$" id="aiIotXwy1h" role="19SJt6">
             <property role="19SUeA" value="Das ist eine noch ausgefallenere Beschreibung." />
@@ -1474,7 +1474,7 @@
         </node>
       </node>
       <node concept="3Y8sCD" id="aiIotXwykV" role="s3kY8">
-        <ref role="s3l27" to="sv0f:2bng37sXcNe" resolve="français" />
+        <ref role="s3l27" to="sv0f:2bng37sXcNe" />
         <node concept="19SGf9" id="aiIotXwykW" role="3Y8sCC">
           <node concept="19SUe$" id="aiIotXwykX" role="19SJt6">
             <property role="19SUeA" value="Ce est une description encore plus de fantaisie." />
@@ -1486,11 +1486,11 @@
       <property role="s3kYd" value="false" />
       <node concept="3Y8sC$" id="aiIotXwxQR" role="s3kY8">
         <property role="3Y8sCA" value="Very new Example Node" />
-        <ref role="s3l27" to="sv0f:3J1G4nNne39" resolve="English (United States)" />
+        <ref role="s3l27" to="sv0f:3J1G4nNne39" />
       </node>
       <node concept="3Y8sC$" id="aiIotXwy1b" role="s3kY8">
         <property role="3Y8sCA" value="Sehr neuer Beispielknoten" />
-        <ref role="s3l27" to="sv0f:3J1G4nNndWL" resolve="Deutsch (Deutschland)" />
+        <ref role="s3l27" to="sv0f:3J1G4nNndWL" />
       </node>
     </node>
   </node>
