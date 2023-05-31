@@ -32,7 +32,7 @@ afterEvaluate {
 
     ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
 
-    def jdk_home
+    def jdk_home = null
 
     if (ext.has('java17_home')) {
         jdk_home = ext.get('java17_home')
@@ -143,5 +143,8 @@ subprojects {
         } else {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
+
+    tasks.configureEach( task -> {  task.dependsOn(':downloadJbr') })
+
     }
-}
+ }
