@@ -7,6 +7,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # May 2023
 
+## com.mbeddr.mpsutil
+
+### Fixed
+
+* `com.mbeddr.mpsutil.smodule.runtime.lib.ModelHelper#createModel()` method (used to implement the `addModel` operation
+  of language `com.mbeddr.mpsutil.smodule`) no longer deadlocks when run from EDT.
+
+# May 2023
+
 ## mbeddr.core
 
 Update mbeddr.core languages to MPS version 2022.2
@@ -22,8 +31,6 @@ Update mbeddr.core languages to MPS version 2022.2
 ### Fixed
 
 * @doc\[some document\] causes broken build unless a "some document" was also used in include.
-
-### Changed
 
 # March 2023
 
