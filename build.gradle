@@ -37,9 +37,7 @@ afterEvaluate {
     if (ext.has('java17_home')) {
         jdk_home = ext.get('java17_home')
     } else if (System.getenv('JB_JAVA17_HOME') != null) {
-	println "USING JB_JAVA17_HOME "+ System.getenv('JB_JAVA17_HOME')
         jdk_home = System.getenv('JB_JAVA17_HOME')
-	println JavaVersion.current()
     }
 
     if(jdk_home != null) {
