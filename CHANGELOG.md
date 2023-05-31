@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# May 2023
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+* `com.mbeddr.mpsutil.smodule.runtime.lib.ModelHelper#createModel()` method (used to implement the `addModel` operation
+  of language `com.mbeddr.mpsutil.smodule`) no longer deadlocks when run from EDT.
+
 # April 2023
 
 ## com.mbeddr.doc
@@ -12,8 +21,6 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Fixed
 
 * @doc\[some document\] causes broken build unless a "some document" was also used in include.
-
-### Changed
 
 # March 2023
 
