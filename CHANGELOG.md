@@ -7,15 +7,6 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # May 2023
 
-## com.mbeddr.mpsutil
-
-### Fixed
-
-* `com.mbeddr.mpsutil.smodule.runtime.lib.ModelHelper#createModel()` method (used to implement the `addModel` operation
-  of language `com.mbeddr.mpsutil.smodule`) no longer deadlocks when run from EDT.
-
-# May 2023
-
 ## mbeddr.core
 
 Update mbeddr.core languages to MPS version 2022.2
@@ -23,6 +14,14 @@ Update mbeddr.core languages to MPS version 2022.2
 ## build.gradle
 * use jbr 17 instead of jbr 11
 * download jbr with mps gradle plugin
+
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+* `com.mbeddr.mpsutil.smodule.runtime.lib.ModelHelper#createModel()` method (used to implement the `addModel` operation
+  of language `com.mbeddr.mpsutil.smodule`) no longer deadlocks when run from EDT.
 
 # April 2023
 
