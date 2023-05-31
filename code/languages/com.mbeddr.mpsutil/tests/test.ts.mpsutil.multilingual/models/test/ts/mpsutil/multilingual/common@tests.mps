@@ -830,7 +830,7 @@
           <node concept="2OqwBi" id="2GRHOLIM1Zp" role="3tpDZB">
             <node concept="2OqwBi" id="2GRHOLIM0Hx" role="2Oq$k0">
               <node concept="3B5_sB" id="2GRHOLIM0G1" role="2Oq$k0">
-                <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
+                <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
               </node>
               <node concept="3Tsc0h" id="2GRHOLIM1l9" role="2OqNvi">
                 <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
@@ -888,7 +888,7 @@
           <node concept="2OqwBi" id="2GRHOLIM4Sh" role="3tpDZB">
             <node concept="2OqwBi" id="2GRHOLIM4Si" role="2Oq$k0">
               <node concept="3B5_sB" id="2GRHOLIM4Sj" role="2Oq$k0">
-                <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
+                <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
               </node>
               <node concept="3Tsc0h" id="2GRHOLIM4Sk" role="2OqNvi">
                 <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
@@ -944,7 +944,7 @@
           <node concept="2OqwBi" id="2GRHOLIM5qS" role="3tpDZB">
             <node concept="2OqwBi" id="2GRHOLIM5qT" role="2Oq$k0">
               <node concept="3B5_sB" id="2GRHOLIM5qU" role="2Oq$k0">
-                <ref role="3B5MYn" to="sv0f:2bng37sXbGM" />
+                <ref role="3B5MYn" to="sv0f:2bng37sXbGM" resolve="GlobalLanguageContainer" />
               </node>
               <node concept="3Tsc0h" id="2GRHOLIM5qV" role="2OqNvi">
                 <ref role="3TtcxE" to="sxyo:vzhXZP_pYM" resolve="languages" />
@@ -1023,7 +1023,7 @@
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3TSnT3Il_yC" role="1SKRRt">
       <node concept="3ZQQOj" id="3TSnT3IlBKs" role="1qenE9">
-        <ref role="3ZOmrH" to="2oxe:3TSnT3Il$Be" />
+        <ref role="3ZOmrH" to="2oxe:3TSnT3Il$Be" resolve="keyInOtherModel" />
         <node concept="7CXmI" id="3TSnT3ImZje" role="lGtFl">
           <node concept="29bkU" id="3TSnT3ImZjf" role="7EUXB">
             <node concept="2PQEqo" id="3TSnT3Inb2f" role="3lydCh">

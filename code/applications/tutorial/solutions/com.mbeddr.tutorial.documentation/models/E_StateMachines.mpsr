@@ -116,7 +116,7 @@
   <node concept="1_1swa" id="300OR6GmKCv">
     <property role="TrG5h" value="E_StateMachines" />
     <property role="yApLE" value="9" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="Wq1Bs" id="5lWB_7x$8ez" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />
       <property role="Wq1Bq" value="tamas.szabo@itemis.de" />
@@ -749,7 +749,7 @@
                   <property role="19SUeA" value="). We also make use of the physical units extension (see " />
                 </node>
                 <node concept="1_0GAv" id="6lh$fzSTbT" role="19SJt6">
-                  <ref role="1_0GAl" node="3mn43GO8cu5" />
+                  <ref role="1_0GAl" node="3mn43GO8cu5" resolve="units" />
                 </node>
                 <node concept="19SUe$" id="6lh$fzSTbS" role="19SJt6">
                   <property role="19SUeA" value=") and annotate the speed and altitude with the appropriate unit." />
@@ -818,7 +818,7 @@
               <property role="19SUeA" value="Note that the transitions are checked in the order of their appearance in the state machine; if several of them are ready to fire (based on the received event and the evaluation of the guard conditions), the first one is picked. Actually this kind of nondeterminism is usually not wanted and mbeddr provides support for the verification of state machines, which you can read more about in " />
             </node>
             <node concept="1_0GAv" id="2XVA19iOlBD" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" />
+              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
             </node>
             <node concept="19SUe$" id="2XVA19iOlBC" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -904,7 +904,7 @@
               <property role="19SUeA" value="The first one is to simply invoke a C function from an entry or exit action. Another alternative, which is more suitable for formal analysis (as we will see below and in " />
             </node>
             <node concept="1_0GAv" id="1CZbvxNb_rf" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" />
+              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
             </node>
             <node concept="19SUe$" id="1CZbvxNb_re" role="19SJt6">
               <property role="19SUeA" value=") involves out events. From the entry action we " />
@@ -1029,7 +1029,7 @@
               <property role="19SUeA" value=" function, but on the state machine level we have abstracted the implementation from the intent. See " />
             </node>
             <node concept="1_0GAv" id="1CZbvxNeCTW" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" />
+              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
             </node>
             <node concept="19SUe$" id="1CZbvxNeCTV" role="19SJt6">
               <property role="19SUeA" value=" for a discussion of state machine verification. " />
@@ -1150,28 +1150,28 @@
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$fzZ32X" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3c3" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3iL" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3sj" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3$q" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3G_" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3Np" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
           </node>
           <node concept="3z_lpK" id="6lh$fzZ3WD" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6GoRf5" role="1_0VJ0">
@@ -1210,31 +1210,31 @@
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOF" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOG" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOH" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOI" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOJ" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOK" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4tOL" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4u1Z" role="3z_lpH">
             <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4ub2" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6GoUr2" role="1_0VJ0">
@@ -1277,31 +1277,31 @@
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4usj" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usk" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usl" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usm" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usn" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uso" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usp" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usq" role="3z_lpH">
             <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4usr" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6GoZd5" role="1_0VJ0">
@@ -1344,28 +1344,28 @@
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUB" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vhA" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUE" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUF" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUG" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUH" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUI" role="3z_lpH">
             <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4uUJ" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6Gp1Es" role="1_0VJ0">
@@ -1388,28 +1388,28 @@
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM1" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM2" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM3" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4w3P" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM6" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXGTb" resolve="sm_test_4a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM7" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM8" role="3z_lpH">
             <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4vM9" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6Gp468" role="1_0VJ0">
@@ -1442,31 +1442,31 @@
             </node>
           </node>
           <node concept="3z_lpK" id="6lh$f$4wH6" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXT$n" resolve="sm_test_1a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqV" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXUEw" resolve="sm_test_1b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqW" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXXi4" resolve="sm_test_2a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqX" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY1TL" resolve="sm_test_2b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqY" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY4xn" resolve="sm_test_3a" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wqZ" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzY9kk" resolve="sm_test_3b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wr1" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzYPn1" resolve="sm_test_4b" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wr2" role="3z_lpH">
             <ref role="3z_lpL" to="e1tx:6GXPbpLjHk6" />
           </node>
           <node concept="3z_lpK" id="6lh$f$4wr3" role="3z_lpH">
-            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" />
+            <ref role="3z_lpL" to="e1tx:6lh$fzXLji" resolve="sm_init" />
           </node>
         </node>
         <node concept="1_0LV8" id="300OR6Gp87a" role="1_0VJ0">
@@ -1683,7 +1683,7 @@
               <property role="19SUeA" value="State machines can also be rendered and edited as a table: the events become the column headers, and the states become the row headers. " />
             </node>
             <node concept="2Sbdz4" id="4I$rsvbfgU7" role="19SJt6">
-              <ref role="2SbdyP" node="4I$rsvbfgE9" />
+              <ref role="2SbdyP" node="4I$rsvbfgE9" resolve="smtable" />
             </node>
             <node concept="19SUe$" id="4I$rsvbfgU8" role="19SJt6">
               <property role="19SUeA" value=" shows an example. You can switch projection modes the usual way via the " />
@@ -1705,7 +1705,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4I$rsvbfgEs" role="2SbwM5">
             <property role="2Sb_kV" value="smtable.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4F" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4F" resolve="smimages" />
           </node>
           <node concept="OjmMv" id="4I$rsvbfgEd" role="2SaI5j">
             <node concept="19SGf9" id="4I$rsvbfgEe" role="OjmMu">
@@ -1756,7 +1756,7 @@
               <property role="19SUeA" value=", the former one displays all information for the transitions while the latter one will only print the event's name which triggers the given transition.\n\n" />
             </node>
             <node concept="2Sbdz4" id="2XVA19iNVvs" role="19SJt6">
-              <ref role="2SbdyP" node="300OR6GqmqP" />
+              <ref role="2SbdyP" node="300OR6GqmqP" resolve="vsm" />
             </node>
             <node concept="19SUe$" id="2XVA19iNVvr" role="19SJt6">
               <property role="19SUeA" value=" shows an example visualization for the hierarchical state machine that was described in the previous section." />
@@ -1768,7 +1768,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="300OR6GqnZS" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_sm.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="300OR6GqmqT" role="2SaI5j">
             <node concept="19SGf9" id="300OR6GqmqU" role="OjmMu">
@@ -1784,10 +1784,10 @@
       </node>
     </node>
     <node concept="1_0j5j" id="2XVA19iNIfu" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnw4lA" />
+      <ref role="1_0j5g" node="yrKNEnw4lA" resolve="C_Units" />
     </node>
     <node concept="1_0j5j" id="2XVA19iNIfA" role="1DXQ57">
-      <ref role="1_0j5g" node="6UY8Kx5iuLF" />
+      <ref role="1_0j5g" node="6UY8Kx5iuLF" resolve="B_DecisionTables" />
     </node>
   </node>
 </model>

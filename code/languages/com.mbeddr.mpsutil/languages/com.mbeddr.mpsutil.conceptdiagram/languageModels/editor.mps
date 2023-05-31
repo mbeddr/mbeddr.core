@@ -296,7 +296,7 @@
         <child id="6554619383005758751" name="positionY" index="2316E6" />
         <child id="6554619383005758750" name="positionX" index="2316E7" />
       </concept>
-      <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ng" index="238au4" />
+      <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm">
         <property id="7623784619795245948" name="direction" index="1NdBj4" />
       </concept>
@@ -320,7 +320,7 @@
         <child id="2863449916465291411" name="allowConnections" index="SH2gk" />
         <child id="5468226901223577682" name="ports" index="15ipcR" />
       </concept>
-      <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ng" index="2fs66k" />
+      <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
         <child id="7188630757225274921" name="navigationTargets" index="1i7NIZ" />
         <child id="5725606875425248008" name="delete" index="1ide8m" />
@@ -333,13 +333,13 @@
         <child id="3454709602156469310" name="parameters" index="1xmOgE" />
       </concept>
       <concept id="7464726264117281947" name="de.itemis.mps.editor.diagram.structure.Parameter_Bounds" flags="ng" index="2xDkLB" />
-      <concept id="7464726264117345981" name="de.itemis.mps.editor.diagram.structure.Function_DrawShape" flags="ng" index="2xDzp1" />
+      <concept id="7464726264117345981" name="de.itemis.mps.editor.diagram.structure.Function_DrawShape" flags="ig" index="2xDzp1" />
       <concept id="7464726264117388668" name="de.itemis.mps.editor.diagram.structure.Parameter_Graphics2D" flags="ng" index="2xDIQ0" />
       <concept id="7464726264117677937" name="de.itemis.mps.editor.diagram.structure.ShapeReference" flags="ng" index="2xQOud">
         <reference id="7464726264117677938" name="shape" index="2xQOue" />
         <child id="3454709602159778495" name="parameterValues" index="1xbcaF" />
       </concept>
-      <concept id="5490129062795541784" name="de.itemis.mps.editor.diagram.structure.PaletteSource_Query" flags="ng" index="yMipj" />
+      <concept id="5490129062795541784" name="de.itemis.mps.editor.diagram.structure.PaletteSource_Query" flags="ig" index="yMipj" />
       <concept id="5383048119156619323" name="de.itemis.mps.editor.diagram.structure.IDiagramElementsProvider" flags="ng" index="HB_m5">
         <child id="3155126767688717334" name="contentList" index="aCds2" />
       </concept>
@@ -352,7 +352,7 @@
       <concept id="7890587897031711745" name="de.itemis.mps.editor.diagram.structure.Content_GenericEdgeQuery" flags="ng" index="2M4Efz" />
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
       <concept id="5468226901223973329" name="de.itemis.mps.editor.diagram.structure.PortObject" flags="ng" index="15kUEO" />
-      <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ng" index="37q72E" />
+      <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
       <concept id="3454709602156468860" name="de.itemis.mps.editor.diagram.structure.ShapeParameterDeclaration" flags="ng" index="1xmO9C">
         <child id="3454709602156468949" name="type" index="1xmOb1" />
@@ -360,8 +360,8 @@
       <concept id="3454709602156593329" name="de.itemis.mps.editor.diagram.structure.ShapeParameterReference" flags="ng" index="1xnly_">
         <reference id="3454709602156593404" name="parameter" index="1xnlzC" />
       </concept>
-      <concept id="8637411062076624999" name="de.itemis.mps.editor.diagram.structure.Function_ConnectionTypes" flags="ng" index="1xLmZY" />
-      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="ng" index="3C0lA2">
+      <concept id="8637411062076624999" name="de.itemis.mps.editor.diagram.structure.Function_ConnectionTypes" flags="ig" index="1xLmZY" />
+      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
         <property id="6987730699889504313" name="value" index="3DY1wP" />
       </concept>
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
@@ -638,7 +638,7 @@
           <node concept="37u81S" id="5gQBemmlIqe" role="2M4AHK" />
           <node concept="1PNbMa" id="5gQBemmlxof" role="1PN8q7">
             <node concept="2xQOud" id="5gQBemmBfxX" role="1PNbKK">
-              <ref role="2xQOue" node="5gQBemmB7Vx" />
+              <ref role="2xQOue" node="5gQBemmB7Vx" resolve="Diamond" />
               <node concept="2OqwBi" id="5gQBemmA0e6" role="1xbcaF">
                 <node concept="2OqwBi" id="5gQBemm_WfF" role="2Oq$k0">
                   <node concept="37u81S" id="5gQBemm_Wd9" role="2Oq$k0" />
@@ -1243,7 +1243,7 @@
             <node concept="10P55v" id="7z30MUmeex5" role="1tU5fm" />
             <node concept="17qRlL" id="5gQBemmGpy4" role="33vP2m">
               <node concept="1xnly_" id="5gQBemmGpJ7" role="3uHU7w">
-                <ref role="1xnlzC" node="5gQBemmB8Pi" />
+                <ref role="1xnlzC" node="5gQBemmB8Pi" resolve="factor" />
               </node>
               <node concept="2OqwBi" id="7z30MUmeex6" role="3uHU7B">
                 <node concept="2xDkLB" id="7z30MUmeex7" role="2Oq$k0" />
@@ -1260,7 +1260,7 @@
             <node concept="10P55v" id="7z30MUmeexb" role="1tU5fm" />
             <node concept="17qRlL" id="5gQBemmGq3m" role="33vP2m">
               <node concept="1xnly_" id="5gQBemmGqgp" role="3uHU7w">
-                <ref role="1xnlzC" node="5gQBemmB8Pi" />
+                <ref role="1xnlzC" node="5gQBemmB8Pi" resolve="factor" />
               </node>
               <node concept="2OqwBi" id="7z30MUmeexc" role="3uHU7B">
                 <node concept="2xDkLB" id="7z30MUmeexd" role="2Oq$k0" />
@@ -1479,7 +1479,7 @@
             </node>
           </node>
           <node concept="1xnly_" id="3GatLR2TZLC" role="3clFbw">
-            <ref role="1xnlzC" node="5gQBemmB7Vy" />
+            <ref role="1xnlzC" node="5gQBemmB7Vy" resolve="filled" />
           </node>
           <node concept="9aQIb" id="3GatLR2U0dJ" role="9aQIa">
             <node concept="3clFbS" id="3GatLR2U0dK" role="9aQI4">
@@ -3245,7 +3245,7 @@
           </node>
           <node concept="1PNbMa" id="2igMYjpBzM9" role="1PN8qh">
             <node concept="2xQOud" id="2igMYjpBzMa" role="1PNbKK">
-              <ref role="2xQOue" node="7z30MUmeewT" />
+              <ref role="2xQOue" node="7z30MUmeewT" resolve="WhiteArrowHead" />
               <node concept="3b6qkQ" id="2igMYjpBzMb" role="1xbcaF">
                 <property role="$nhwW" value="1.0" />
               </node>
@@ -3551,7 +3551,7 @@
           <node concept="37u81S" id="2igMYjpBzJs" role="2M4AHK" />
           <node concept="1PNbMa" id="2igMYjpBzJt" role="1PN8q7">
             <node concept="2xQOud" id="2igMYjpBzJu" role="1PNbKK">
-              <ref role="2xQOue" node="5gQBemmB7Vx" />
+              <ref role="2xQOue" node="5gQBemmB7Vx" resolve="Diamond" />
               <node concept="2OqwBi" id="2igMYjpBzJv" role="1xbcaF">
                 <node concept="2OqwBi" id="2igMYjpBzJw" role="2Oq$k0">
                   <node concept="37u81S" id="2igMYjpBzJx" role="2Oq$k0" />
@@ -3753,7 +3753,7 @@
               </node>
             </node>
             <node concept="2xQOud" id="2igMYjpBzMT" role="1PNbKK">
-              <ref role="2xQOue" node="7z30MUmeewT" />
+              <ref role="2xQOue" node="7z30MUmeewT" resolve="WhiteArrowHead" />
               <node concept="3b6qkQ" id="2igMYjpBzMU" role="1xbcaF">
                 <property role="$nhwW" value="1.0" />
               </node>
@@ -3939,7 +3939,7 @@
                 </node>
                 <node concept="17qRlL" id="7z30MUmeGbr" role="3uHU7w">
                   <node concept="1xnly_" id="7z30MUmeGbs" role="3uHU7w">
-                    <ref role="1xnlzC" node="7z30MUmenMd" />
+                    <ref role="1xnlzC" node="7z30MUmenMd" resolve="relativeHeight" />
                   </node>
                   <node concept="37vLTw" id="7z30MUmeGbt" role="3uHU7B">
                     <ref role="3cqZAo" node="6vp$_2vipKG" resolve="height" />
@@ -3978,7 +3978,7 @@
               <node concept="3cpWs3" id="7z30MUmeEyh" role="37wK5m">
                 <node concept="17qRlL" id="7z30MUmeFqk" role="3uHU7w">
                   <node concept="1xnly_" id="7z30MUmeFMQ" role="3uHU7w">
-                    <ref role="1xnlzC" node="7z30MUmenMd" />
+                    <ref role="1xnlzC" node="7z30MUmenMd" resolve="relativeHeight" />
                   </node>
                   <node concept="37vLTw" id="7z30MUmeEUw" role="3uHU7B">
                     <ref role="3cqZAo" node="6vp$_2vipKG" resolve="height" />
@@ -4017,7 +4017,7 @@
             </node>
           </node>
           <node concept="1xnly_" id="6vp$_2vipLv" role="3clFbw">
-            <ref role="1xnlzC" node="3GatLR2TX7v" />
+            <ref role="1xnlzC" node="3GatLR2TX7v" resolve="filled" />
           </node>
           <node concept="9aQIb" id="6vp$_2vipLw" role="9aQIa">
             <node concept="3clFbS" id="6vp$_2vipLx" role="9aQI4">

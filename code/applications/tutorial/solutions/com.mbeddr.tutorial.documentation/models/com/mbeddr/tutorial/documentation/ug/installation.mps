@@ -112,7 +112,7 @@
   <node concept="1_1swa" id="1mCCOvys5p0">
     <property role="yApLE" value="5" />
     <property role="TrG5h" value="E_MPSAndJava" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="5zu8XJxPfM$" role="1_0VJ0">
       <property role="TrG5h" value="MPS" />
       <property role="1_0VJr" value="JetBrains MPS and Java" />
@@ -132,7 +132,7 @@
             <property role="19SUeA" value=". MPS is available for different platforms, like Windows, Mac and Linux. Please make sure you pick the right installer for your platform and the proper version (see " />
           </node>
           <node concept="1_0GAv" id="1LxA8cJZFv2" role="19SJt6">
-            <ref role="1_0GAl" node="1LxA8cJZySu" />
+            <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
           </node>
           <node concept="19SUe$" id="1LxA8cJZFv1" role="19SJt6">
             <property role="19SUeA" value="). When running the installer, please make sure you install MPS in a path that does not contain blanks in any of its directory or file names (not even in the " />
@@ -289,7 +289,7 @@
                 <property role="19SUeA" value=" Make sure you have installed Java on your machine (see " />
               </node>
               <node concept="1_0GAv" id="1LxA8cJZFvf" role="19SJt6">
-                <ref role="1_0GAl" node="1LxA8cJZySu" />
+                <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
               </node>
               <node concept="19SUe$" id="1LxA8cJZFve" role="19SJt6">
                 <property role="19SUeA" value=") Next, open the " />
@@ -427,13 +427,13 @@
       </node>
     </node>
     <node concept="1_0j5j" id="1LxA8cJZFuZ" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJZyH7" />
+      <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
   </node>
   <node concept="1_1swa" id="1mCCOvyiECJ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_GccMakeAndGdb" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="5zu8XJxPfMf" role="1_0VJ0">
       <property role="TrG5h" value="GccMakeAndGdb" />
       <property role="1_0VJr" value="Gcc, Make and Gdb" />
@@ -490,7 +490,7 @@
                 <property role="19SUeA" value=" We recommend installing MinGW (see " />
               </node>
               <node concept="1_0GAv" id="1LxA8cJZFwE" role="19SJt6">
-                <ref role="1_0GAl" node="1LxA8cJZySu" />
+                <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
               </node>
               <node concept="19SUe$" id="1LxA8cJZFwD" role="19SJt6">
                 <property role="19SUeA" value="), a port of the GNU tools to Windows.  When selecting the packages to be installed (only Class (" />
@@ -563,7 +563,7 @@
                 <property role="19SUeA" value=" These tools should be installed by default. Otherwise use your favourite package manager to install them (see " />
               </node>
               <node concept="1_0GAv" id="1LxA8cJZFx3" role="19SJt6">
-                <ref role="1_0GAl" node="1LxA8cJZySu" />
+                <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
               </node>
               <node concept="19SUe$" id="1LxA8cJZFx2" role="19SJt6">
                 <property role="19SUeA" value=")." />
@@ -606,7 +606,7 @@
                 <property role="19SUeA" value=" and the associated tools (see " />
               </node>
               <node concept="1_0GAv" id="1LxA8cJZFxc" role="19SJt6">
-                <ref role="1_0GAl" node="1LxA8cJZySu" />
+                <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
               </node>
               <node concept="19SUe$" id="1LxA8cJZFxb" role="19SJt6">
                 <property role="19SUeA" value="). XCode comes with " />
@@ -642,7 +642,7 @@
                 <property role="19SUeA" value=" (see " />
               </node>
               <node concept="1_0GAv" id="1LxA8cJZFxP" role="19SJt6">
-                <ref role="1_0GAl" node="1LxA8cJZySu" />
+                <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
               </node>
               <node concept="19SUe$" id="1LxA8cJZFxO" role="19SJt6">
                 <property role="19SUeA" value="). Use the following command for installing " />
@@ -697,7 +697,7 @@
             <property role="19SUeA" value="After the installation, please make sure the tools can be invoked from the command-line. If this is not possible, please add them to your system path, as described in " />
           </node>
           <node concept="1_0GAv" id="45z$aXlTdyF" role="19SJt6">
-            <ref role="1_0GAl" node="45z$aXlT6Js" />
+            <ref role="1_0GAl" node="45z$aXlT6Js" resolve="ChangingPath" />
           </node>
           <node concept="19SUe$" id="45z$aXlTdyE" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -706,16 +706,16 @@
       </node>
     </node>
     <node concept="1_0j5j" id="45z$aXlT8qz" role="1DXQ57">
-      <ref role="1_0j5g" node="45z$aXlT6vE" />
+      <ref role="1_0j5g" node="45z$aXlT6vE" resolve="F_ChangingPath" />
     </node>
     <node concept="1_0j5j" id="1LxA8cJZFw_" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJZyH7" />
+      <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
   </node>
   <node concept="1_1swa" id="1mCCOvyiIY_">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="B_Graphviz" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2en8HnCsqc1" role="1_0VJ0">
       <property role="TrG5h" value="Graphviz" />
       <property role="1_0VJr" value="Graphviz" />
@@ -735,7 +735,7 @@
             <property role="19SUeA" value="), directly embedded in MPS. To use it, you have to install graphviz. " />
           </node>
           <node concept="1_0GAv" id="1LxA8cJZF2K" role="19SJt6">
-            <ref role="1_0GAl" node="1LxA8cJZySu" />
+            <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
           </node>
           <node concept="19SUe$" id="1LxA8cJZF2J" role="19SJt6">
             <property role="19SUeA" value=" describes which version is required and where to get it from. After the installation, you have to put the " />
@@ -751,7 +751,7 @@
             <property role="19SUeA" value=" directory of graphviz into your system path (see " />
           </node>
           <node concept="1_0GAv" id="45z$aXlT8ex" role="19SJt6">
-            <ref role="1_0GAl" node="45z$aXlT6Js" />
+            <ref role="1_0GAl" node="45z$aXlT6Js" resolve="ChangingPath" />
           </node>
           <node concept="19SUe$" id="45z$aXlT8ew" role="19SJt6">
             <property role="19SUeA" value="). " />
@@ -790,16 +790,16 @@
       </node>
     </node>
     <node concept="1_0j5j" id="45z$aXlT81U" role="1DXQ57">
-      <ref role="1_0j5g" node="45z$aXlT6vE" />
+      <ref role="1_0j5g" node="45z$aXlT6vE" resolve="F_ChangingPath" />
     </node>
     <node concept="1_0j5j" id="1LxA8cJZF3h" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJZyH7" />
+      <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
   </node>
   <node concept="1_1swa" id="1mCCOvys4ZP">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="D_Mbeddr" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1mCCOvyhqb4" role="1_0VJ0">
       <property role="TrG5h" value="mbeddr" />
       <property role="1_0VJr" value="mbeddr" />
@@ -887,13 +887,13 @@
                   <property role="19SUeA" value="install a JDK (" />
                 </node>
                 <node concept="1_0GAv" id="1LxA8cJZFc_" role="19SJt6">
-                  <ref role="1_0GAl" node="1LxA8cJZySu" />
+                  <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
                 </node>
                 <node concept="19SUe$" id="1LxA8cJZFc$" role="19SJt6">
                   <property role="19SUeA" value=" lists which version is required for your platform) on your local machine and make sure it is available on the path (see " />
                 </node>
                 <node concept="1_0GAv" id="45z$aXlTvD_" role="19SJt6">
-                  <ref role="1_0GAl" node="45z$aXlT6Js" />
+                  <ref role="1_0GAl" node="45z$aXlT6Js" resolve="ChangingPath" />
                 </node>
                 <node concept="19SUe$" id="45z$aXlTvD$" role="19SJt6">
                   <property role="19SUeA" value=")." />
@@ -929,7 +929,7 @@
               <property role="19SUeA" value="In case you do not want to change mbeddr but still want to be able to extend it (so you'll need MPS' language engineering facilities), we recommend installing the distribution. This just requires downloading a ZIP file and copying a bunch of plugins into your existing MPS installation. If you do not have an existing MPS installation on your machine, please follow the steps described in " />
             </node>
             <node concept="1_0GAv" id="45z$aXlTlOm" role="19SJt6">
-              <ref role="1_0GAl" node="5zu8XJxPfM$" />
+              <ref role="1_0GAl" node="5zu8XJxPfM$" resolve="MPS" />
             </node>
             <node concept="19SUe$" id="45z$aXlTlMw" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1080,13 +1080,13 @@
                 <property role="19SUeA" value="There are two ways to get the mbeddr source installation. One of them is a completely manual installation as it is described below in " />
               </node>
               <node concept="1_0GAv" id="1eA6VO_tGz_" role="19SJt6">
-                <ref role="1_0GAl" node="1eA6VO_tF5q" />
+                <ref role="1_0GAl" node="1eA6VO_tF5q" resolve="manualSourceInstallation" />
               </node>
               <node concept="19SUe$" id="1eA6VO_tGz$" role="19SJt6">
                 <property role="19SUeA" value=". And the other one is an equivalent automated interactive process, an installer written in Python, described in " />
               </node>
               <node concept="1_0GAv" id="1eA6VO_tGzE" role="19SJt6">
-                <ref role="1_0GAl" node="1eA6VO_tEY8" />
+                <ref role="1_0GAl" node="1eA6VO_tEY8" resolve="pythonInstaller" />
               </node>
               <node concept="19SUe$" id="1eA6VO_tGzF" role="19SJt6" />
             </node>
@@ -1237,7 +1237,7 @@
                 <property role="19SUeA" value="The website with the installer provides additional information on how to run the installer, and what to do next, after it has finished.\n\nBasically the installer is an automation, which performs for you the steps, described below in " />
               </node>
               <node concept="1_0GAv" id="1eA6VO_tGBj" role="19SJt6">
-                <ref role="1_0GAl" node="1eA6VO_tF5q" />
+                <ref role="1_0GAl" node="1eA6VO_tF5q" resolve="manualSourceInstallation" />
               </node>
               <node concept="19SUe$" id="1eA6VO_tGBk" role="19SJt6">
                 <property role="19SUeA" value=". Thus, normally, you would never need to perform the steps as described below. However, we provide it for completeness and for troubleshooting purposes, in the rare case when the installer fails to work right." />
@@ -1264,7 +1264,7 @@
                     <property role="19SUeA" value="First, in order to clone the mbeddr repository, you will need to have a git client installed on your local machine (see " />
                   </node>
                   <node concept="1_0GAv" id="1LxA8cJZFdo" role="19SJt6">
-                    <ref role="1_0GAl" node="1LxA8cJZySu" />
+                    <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
                   </node>
                   <node concept="19SUe$" id="1LxA8cJZFdn" role="19SJt6">
                     <property role="19SUeA" value=")." />
@@ -1279,7 +1279,7 @@
                     <property role="19SUeA" value="Second, you will need an Apache ant installation (see " />
                   </node>
                   <node concept="1_0GAv" id="1LxA8cJZFdI" role="19SJt6">
-                    <ref role="1_0GAl" node="1LxA8cJZySu" />
+                    <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
                   </node>
                   <node concept="19SUe$" id="1LxA8cJZFdJ" role="19SJt6">
                     <property role="19SUeA" value="). After the installation, please make sure the " />
@@ -1295,7 +1295,7 @@
                     <property role="19SUeA" value=" binary is in your path (see " />
                   </node>
                   <node concept="1_0GAv" id="3qp4Egk8Oqh" role="19SJt6">
-                    <ref role="1_0GAl" node="45z$aXlT6Js" />
+                    <ref role="1_0GAl" node="45z$aXlT6Js" resolve="ChangingPath" />
                   </node>
                   <node concept="19SUe$" id="3qp4Egk8Oqi" role="19SJt6">
                     <property role="19SUeA" value=")." />
@@ -1310,7 +1310,7 @@
                     <property role="19SUeA" value="If you do not already have an MPS installation on your machine, please follow the installation guide in " />
                   </node>
                   <node concept="1_0GAv" id="3qp4Egk8Oqn" role="19SJt6">
-                    <ref role="1_0GAl" node="5zu8XJxPfM$" />
+                    <ref role="1_0GAl" node="5zu8XJxPfM$" resolve="MPS" />
                   </node>
                   <node concept="19SUe$" id="3qp4Egk8Oqo" role="19SJt6">
                     <property role="19SUeA" value="." />
@@ -1592,7 +1592,7 @@
                     <property role="19SUeA" value=" section in the IDE settings (see " />
                   </node>
                   <node concept="2Sbdz4" id="1LxA8cJwOt7" role="19SJt6">
-                    <ref role="2SbdyP" node="2en8HnCx1zM" />
+                    <ref role="2SbdyP" node="2en8HnCx1zM" resolve="globalLibraries" />
                   </node>
                   <node concept="19SUe$" id="1LxA8cJwOt8" role="19SJt6">
                     <property role="19SUeA" value="). Create a library named " />
@@ -1672,7 +1672,7 @@
             <property role="1DKIkx" value="true" />
             <node concept="2Sb_l4" id="3DAECxFCHcV" role="2SbwM5">
               <property role="2Sb_kV" value="core/SettingsGlobalLibraries.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
             </node>
             <node concept="OjmMv" id="2en8HnCx1zQ" role="2SaI5j">
               <node concept="19SGf9" id="2en8HnCx1zR" role="OjmMu">
@@ -1698,19 +1698,19 @@
       </node>
     </node>
     <node concept="1_0j5j" id="45z$aXlTlOV" role="1DXQ57">
-      <ref role="1_0j5g" node="1mCCOvys5p0" />
+      <ref role="1_0j5g" node="1mCCOvys5p0" resolve="E_MPSAndJava" />
     </node>
     <node concept="1_0j5j" id="45z$aXlTnih" role="1DXQ57">
-      <ref role="1_0j5g" node="45z$aXlT6vE" />
+      <ref role="1_0j5g" node="45z$aXlT6vE" resolve="F_ChangingPath" />
     </node>
     <node concept="1_0j5j" id="1LxA8cJZFcv" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJZyH7" />
+      <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
   </node>
   <node concept="1_1swa" id="1mCCOvys41P">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="C_VerificationTool" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2en8HnCx1H$" role="1_0VJ0">
       <property role="TrG5h" value="VerificationTools" />
       <property role="1_0VJr" value="Verification Tools" />
@@ -1730,7 +1730,7 @@
             <property role="19SUeA" value=", which is a C-level model-checker. " />
           </node>
           <node concept="1_0GAv" id="1LxA8cJZF3P" role="19SJt6">
-            <ref role="1_0GAl" node="1LxA8cJZySu" />
+            <ref role="1_0GAl" node="1LxA8cJZySu" resolve="ToolsAndVersions" />
           </node>
           <node concept="19SUe$" id="1LxA8cJZF3O" role="19SJt6">
             <property role="19SUeA" value=" describes which version is required and where to get it from. You can find installers for the various platforms at the bottom of the website. After the installation, please make sure " />
@@ -1746,7 +1746,7 @@
             <property role="19SUeA" value=" can be invoked from the command-line. If this is not possible, please add it to your system path, as described in " />
           </node>
           <node concept="1_0GAv" id="45z$aXlTdBG" role="19SJt6">
-            <ref role="1_0GAl" node="45z$aXlT6Js" />
+            <ref role="1_0GAl" node="45z$aXlT6Js" resolve="ChangingPath" />
           </node>
           <node concept="19SUe$" id="45z$aXlTdBF" role="19SJt6">
             <property role="19SUeA" value=". CBMC uses gcc for preprocessing the C files, so please make sure that you have gcc installed on your machine." />
@@ -1762,36 +1762,36 @@
       </node>
     </node>
     <node concept="1_0j5j" id="45z$aXlTdBC" role="1DXQ57">
-      <ref role="1_0j5g" node="45z$aXlT6vE" />
+      <ref role="1_0j5g" node="45z$aXlT6vE" resolve="F_ChangingPath" />
     </node>
     <node concept="1_0j5j" id="1LxA8cJZFcn" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJZyH7" />
+      <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
   </node>
   <node concept="1_1swa" id="1OEOMsplgM2">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Installation" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="45z$aXlRMDH" role="1DXQ57">
-      <ref role="1_0j5g" node="1mCCOvyiECJ" />
+      <ref role="1_0j5g" node="1mCCOvyiECJ" resolve="A_GccMakeAndGdb" />
     </node>
     <node concept="1_0j5j" id="45z$aXlRMDI" role="1DXQ57">
-      <ref role="1_0j5g" node="1mCCOvyiIY_" />
+      <ref role="1_0j5g" node="1mCCOvyiIY_" resolve="B_Graphviz" />
     </node>
     <node concept="1_0j5j" id="45z$aXlRMDJ" role="1DXQ57">
-      <ref role="1_0j5g" node="1mCCOvys41P" />
+      <ref role="1_0j5g" node="1mCCOvys41P" resolve="C_VerificationTool" />
     </node>
     <node concept="1_0j5j" id="45z$aXlRMDK" role="1DXQ57">
-      <ref role="1_0j5g" node="1mCCOvys4ZP" />
+      <ref role="1_0j5g" node="1mCCOvys4ZP" resolve="D_Mbeddr" />
     </node>
     <node concept="1_0j5j" id="45z$aXlRMDM" role="1DXQ57">
-      <ref role="1_0j5g" node="1mCCOvys5p0" />
+      <ref role="1_0j5g" node="1mCCOvys5p0" resolve="E_MPSAndJava" />
     </node>
     <node concept="1_0j5j" id="45z$aXlT6JA" role="1DXQ57">
-      <ref role="1_0j5g" node="45z$aXlT6vE" />
+      <ref role="1_0j5g" node="45z$aXlT6vE" resolve="F_ChangingPath" />
     </node>
     <node concept="1_0j5j" id="1LxA8cJZF2x" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJZyH7" />
+      <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
     <node concept="1mvXsy" id="45z$aXlRMof" role="1_0VJ0">
       <property role="TrG5h" value="InstallationAndSetup" />
@@ -1805,37 +1805,37 @@
       </node>
       <node concept="$CzcT" id="45z$aXlRMoj" role="1_0VJ0">
         <node concept="1_0j5j" id="45z$aXlRMok" role="$CzcU">
-          <ref role="1_0j5g" node="1mCCOvyiECJ" />
+          <ref role="1_0j5g" node="1mCCOvyiECJ" resolve="A_GccMakeAndGdb" />
         </node>
       </node>
       <node concept="$CzcT" id="45z$aXlRMol" role="1_0VJ0">
         <node concept="1_0j5j" id="45z$aXlRMom" role="$CzcU">
-          <ref role="1_0j5g" node="1mCCOvyiIY_" />
+          <ref role="1_0j5g" node="1mCCOvyiIY_" resolve="B_Graphviz" />
         </node>
       </node>
       <node concept="$CzcT" id="45z$aXlRMon" role="1_0VJ0">
         <node concept="1_0j5j" id="45z$aXlRMoo" role="$CzcU">
-          <ref role="1_0j5g" node="1mCCOvys41P" />
+          <ref role="1_0j5g" node="1mCCOvys41P" resolve="C_VerificationTool" />
         </node>
       </node>
       <node concept="$CzcT" id="45z$aXlRMop" role="1_0VJ0">
         <node concept="1_0j5j" id="45z$aXlRMoq" role="$CzcU">
-          <ref role="1_0j5g" node="1mCCOvys4ZP" />
+          <ref role="1_0j5g" node="1mCCOvys4ZP" resolve="D_Mbeddr" />
         </node>
       </node>
       <node concept="$CzcT" id="45z$aXlT6JR" role="1_0VJ0">
         <node concept="1_0j5j" id="45z$aXlT6JS" role="$CzcU">
-          <ref role="1_0j5g" node="1mCCOvys5p0" />
+          <ref role="1_0j5g" node="1mCCOvys5p0" resolve="E_MPSAndJava" />
         </node>
       </node>
       <node concept="$CzcT" id="45z$aXlT6Kp" role="1_0VJ0">
         <node concept="1_0j5j" id="45z$aXlT6KI" role="$CzcU">
-          <ref role="1_0j5g" node="45z$aXlT6vE" />
+          <ref role="1_0j5g" node="45z$aXlT6vE" resolve="F_ChangingPath" />
         </node>
       </node>
       <node concept="$CzcT" id="1LxA8cJZF24" role="1_0VJ0">
         <node concept="1_0j5j" id="1LxA8cJZF2E" role="$CzcU">
-          <ref role="1_0j5g" node="1LxA8cJZyH7" />
+          <ref role="1_0j5g" node="1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
         </node>
       </node>
     </node>
@@ -1843,7 +1843,7 @@
   <node concept="1_1swa" id="45z$aXlT6vE">
     <property role="yApLE" value="6" />
     <property role="TrG5h" value="F_ChangingPath" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="45z$aXlT6Js" role="1_0VJ0">
       <property role="TrG5h" value="ChangingPath" />
       <property role="1_0VJr" value="Adding Tools to the System Path" />
@@ -2145,7 +2145,7 @@
   <node concept="1_1swa" id="1LxA8cJZyH7">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="G_ToolsAndVersions" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1LxA8cJZySu" role="1_0VJ0">
       <property role="TrG5h" value="ToolsAndVersions" />
       <property role="1_0VJr" value="Required Tools and Versions" />

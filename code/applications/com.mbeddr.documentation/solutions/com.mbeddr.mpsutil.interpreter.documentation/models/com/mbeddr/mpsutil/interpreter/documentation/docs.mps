@@ -164,7 +164,7 @@
   <node concept="1_1swa" id="3OU98G0uTdn">
     <property role="TrG5h" value="Interpreter" />
     <property role="yApLE" value="1" />
-    <ref role="G9hjw" node="3OU98G0uUxs" />
+    <ref role="G9hjw" node="3OU98G0uUxs" resolve="DocumentConfig" />
     <node concept="Wq1Bs" id="3OU98G0uVw7" role="Wq1Bf">
       <property role="Wq1Bt" value="Niko Stotz" />
       <property role="Wq1Bq" value="stotz@itemis.de" />
@@ -203,7 +203,7 @@
             <node concept="3z_lpY" id="1Y3rEQ3omxp" role="19SJt6">
               <node concept="2NCZwO" id="1Y3rEQ3omxq" role="3z_lpZ">
                 <node concept="2NCMab" id="p34lOkR9kz" role="2NCMaf">
-                  <ref role="2NCMaa" to="xxlk:3VM1o5wbfkp" />
+                  <ref role="2NCMaa" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
                 </node>
               </node>
             </node>
@@ -213,7 +213,7 @@
             <node concept="3z_lpY" id="1Y3rEQ3omxy" role="19SJt6">
               <node concept="2NCZwO" id="1Y3rEQ3omxz" role="3z_lpZ">
                 <node concept="2NCMab" id="p34lOkR9mh" role="2NCMaf">
-                  <ref role="2NCMaa" to="9z65:3VM1o5wbzoX" />
+                  <ref role="2NCMaa" to="9z65:3VM1o5wbzoX" resolve="CFunctionInterpreter" />
                 </node>
               </node>
             </node>
@@ -223,7 +223,7 @@
             <node concept="3z_lpY" id="1Y3rEQ3omxJ" role="19SJt6">
               <node concept="2NCZwO" id="1Y3rEQ3omxK" role="3z_lpZ">
                 <node concept="2NCMab" id="p34lOkR9lp" role="2NCMaf">
-                  <ref role="2NCMaa" to="6pqm:6KLCBzAUjHf" />
+                  <ref role="2NCMaa" to="6pqm:6KLCBzAUjHf" resolve="CMathInterpreter" />
                 </node>
               </node>
             </node>
@@ -313,7 +313,7 @@
           <node concept="3z_lpY" id="1d83w5bBoe3" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBoe4" role="3z_lpZ">
               <node concept="2NCMab" id="ofotRr33hN" role="2NCMaf">
-                <ref role="2NCMaa" to="xxlk:3VM1o5wbfkp" />
+                <ref role="2NCMaa" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
               </node>
             </node>
           </node>
@@ -323,7 +323,7 @@
           <node concept="3z_lpY" id="1d83w5bBolx" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBoly" role="3z_lpZ">
               <node concept="2NCMab" id="p34lOkR9jJ" role="2NCMaf">
-                <ref role="2NCMaa" to="dpzy:3VM1o5wb$BS" />
+                <ref role="2NCMaa" to="dpzy:3VM1o5wb$BS" resolve="CExtInterpreter" />
               </node>
             </node>
           </node>
@@ -333,7 +333,7 @@
           <node concept="3z_lpY" id="ofotRr351T" role="19SJt6">
             <node concept="2NCZwO" id="ofotRr351U" role="3z_lpZ">
               <node concept="2NCMab" id="p34lOkR9o7" role="2NCMaf">
-                <ref role="2NCMaa" to="o1z9:3VM1o5wbz9l" />
+                <ref role="2NCMaa" to="o1z9:3VM1o5wbz9l" resolve="CPointerInterpreter" />
               </node>
             </node>
           </node>
@@ -343,7 +343,7 @@
           <node concept="3z_lpY" id="1d83w5bBolO" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBolP" role="3z_lpZ">
               <node concept="2NCMab" id="ofotRr34kr" role="2NCMaf">
-                <ref role="2NCMaa" to="9z65:3VM1o5wbzoX" />
+                <ref role="2NCMaa" to="9z65:3VM1o5wbzoX" resolve="CFunctionInterpreter" />
               </node>
             </node>
           </node>
@@ -353,7 +353,7 @@
           <node concept="3z_lpY" id="ofotRr351s" role="19SJt6">
             <node concept="2NCZwO" id="ofotRr351t" role="3z_lpZ">
               <node concept="2NCMab" id="ofotRr351Q" role="2NCMaf">
-                <ref role="2NCMaa" to="9z65:3VM1o5wblft" />
+                <ref role="2NCMaa" to="9z65:3VM1o5wblft" resolve="CModulesInterpreter" />
               </node>
             </node>
           </node>
@@ -363,7 +363,7 @@
           <node concept="3z_lpY" id="1d83w5bBomb" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBomc" role="3z_lpZ">
               <node concept="2NCMab" id="p34lOkR9p5" role="2NCMaf">
-                <ref role="2NCMaa" to="h40l:3VM1o5wbxvn" />
+                <ref role="2NCMaa" to="h40l:3VM1o5wbxvn" resolve="CStatementInterpreter" />
               </node>
             </node>
           </node>
@@ -373,7 +373,7 @@
           <node concept="3z_lpY" id="ofotRr35hn" role="19SJt6">
             <node concept="2NCZwO" id="ofotRr35ho" role="3z_lpZ">
               <node concept="2NCMab" id="ofotRr35hT" role="2NCMaf">
-                <ref role="2NCMaa" to="6pqm:6KLCBzAUjHf" />
+                <ref role="2NCMaa" to="6pqm:6KLCBzAUjHf" resolve="CMathInterpreter" />
               </node>
             </node>
           </node>
@@ -383,7 +383,7 @@
           <node concept="3z_lpY" id="1d83w5bBomT" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bBomU" role="3z_lpZ">
               <node concept="2NCMab" id="p34lOkR9nb" role="2NCMaf">
-                <ref role="2NCMaa" to="8uec:61$ycjqFdF9" />
+                <ref role="2NCMaa" to="8uec:61$ycjqFdF9" resolve="ReqirementsInterpreter" />
               </node>
             </node>
           </node>
@@ -396,7 +396,7 @@
         <property role="TrG5h" value="expressionInterpreter" />
         <node concept="2NCZwO" id="1d83w5bBot2" role="3z_lpI">
           <node concept="2NCMab" id="1d83w5bBotX" role="2NCMaf">
-            <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+            <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
           </node>
         </node>
         <node concept="2bctqb" id="1d83w5bBota" role="3z_lpT" />
@@ -410,7 +410,7 @@
         <property role="TrG5h" value="variableInterpreter" />
         <node concept="2NCZwO" id="1d83w5bBou4" role="3z_lpI">
           <node concept="2NCMab" id="1d83w5bBov3" role="2NCMaf">
-            <ref role="2NCMaa" to="50zn:1T7O9iX40xT" />
+            <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
           </node>
         </node>
         <node concept="2bctqb" id="1d83w5bBouc" role="3z_lpT" />
@@ -424,7 +424,7 @@
         <property role="TrG5h" value="functionCallInterpreter" />
         <node concept="2NCZwO" id="1d83w5bBovR" role="3z_lpI">
           <node concept="2NCMab" id="1d83w5bBowP" role="2NCMaf">
-            <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+            <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
           </node>
         </node>
         <node concept="2bctqb" id="1d83w5bBovV" role="3z_lpT" />
@@ -438,7 +438,7 @@
         <property role="TrG5h" value="conditionalInterpreterExample" />
         <node concept="2NCZwO" id="1Y3rEQ3rkJW" role="3z_lpI">
           <node concept="2NCMab" id="1Y3rEQ3rkL5" role="2NCMaf">
-            <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" />
+            <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
           </node>
         </node>
         <node concept="2bctqb" id="1Y3rEQ3rkK0" role="3z_lpT" />
@@ -484,7 +484,7 @@
           <node concept="3z_lpY" id="1d83w5bFaq_" role="19SJt6">
             <node concept="2NCZwO" id="1d83w5bFaqA" role="3z_lpZ">
               <node concept="2NCMab" id="1d83w5bFaqK" role="2NCMaf">
-                <ref role="2NCMaa" node="3OU98G0uTdn" />
+                <ref role="2NCMaa" node="3OU98G0uTdn" resolve="Interpreter" />
               </node>
             </node>
           </node>
@@ -609,10 +609,10 @@
             <node concept="3z_lpY" id="1d83w5bFgs6" role="19SJt6">
               <node concept="2NCZwO" id="1d83w5bFgs7" role="3z_lpZ">
                 <node concept="2NCMab" id="1d83w5bFgse" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1T7O9iX40xT" />
+                  <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFgsj" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFgj$" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFgj$" resolve="relatedInterpreters" />
                 </node>
               </node>
             </node>
@@ -678,10 +678,10 @@
             <node concept="3z_lpY" id="1d83w5bFipY" role="19SJt6">
               <node concept="2NCZwO" id="1d83w5bFipZ" role="3z_lpZ">
                 <node concept="2NCMab" id="1d83w5bFiq6" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                  <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFiqb" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFhRG" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFhRG" resolve="typeMappings" />
                 </node>
               </node>
             </node>
@@ -753,10 +753,10 @@
             <node concept="3z_lpY" id="1d83w5bFiYr" role="19SJt6">
               <node concept="2NCZwO" id="1d83w5bFiYs" role="3z_lpZ">
                 <node concept="2NCMab" id="1d83w5bFiYy" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                  <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFiYB" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:46pvM1xfJji" />
+                  <ref role="2NCMaa" to="50zn:46pvM1xfJji" resolve="evaluators" />
                 </node>
               </node>
             </node>
@@ -780,10 +780,10 @@
             <node concept="3z_lpY" id="1d83w5bFk5m" role="19SJt6">
               <node concept="2NCZwO" id="1d83w5bFk5n" role="3z_lpZ">
                 <node concept="2NCMab" id="1d83w5bFk5s" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+                  <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFk5x" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFjZi" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFjZi" resolve="simpleEvaluator" />
                 </node>
               </node>
             </node>
@@ -793,10 +793,10 @@
             <node concept="3z_lpY" id="1d83w5bFkbx" role="19SJt6">
               <node concept="2NCZwO" id="1d83w5bFkby" role="3z_lpZ">
                 <node concept="2NCMab" id="1d83w5bFkbH" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+                  <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                 </node>
                 <node concept="2NCMab" id="1d83w5bFkbM" role="2NCMaf">
-                  <ref role="2NCMaa" to="50zn:1d83w5bFjZs" />
+                  <ref role="2NCMaa" to="50zn:1d83w5bFjZs" resolve="complexEvaluator" />
                 </node>
               </node>
             </node>
@@ -824,7 +824,7 @@
                 <property role="19SUeA" value=" based on the order described in " />
               </node>
               <node concept="1_0GAv" id="1d83w5bFkm$" role="19SJt6">
-                <ref role="1_0GAl" node="1d83w5bFfPy" />
+                <ref role="1_0GAl" node="1d83w5bFfPy" resolve="relatedInterpreters" />
               </node>
               <node concept="19SUe$" id="1d83w5bFkmz" role="19SJt6">
                 <property role="19SUeA" value=" and the order of evaluators within the interpreter. However, most times the sensible order of evaluators can be deducted from the matching concepts and constraints. A warning was displayed If this sensible order is violated. The following rules define the sensible order:" />
@@ -940,10 +940,10 @@
                   <node concept="3z_lpY" id="1d83w5bFkIH" role="19SJt6">
                     <node concept="2NCZwO" id="1d83w5bFkII" role="3z_lpZ">
                       <node concept="2NCMab" id="1d83w5bFkIN" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFkIS" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:46pvM1xfJji" />
+                        <ref role="2NCMaa" to="50zn:46pvM1xfJji" resolve="evaluators" />
                       </node>
                     </node>
                   </node>
@@ -1065,10 +1065,10 @@
               <node concept="3z_lpY" id="1d83w5bFl2Q" role="19SJt6">
                 <node concept="2NCZwO" id="1d83w5bFl2R" role="3z_lpZ">
                   <node concept="2NCMab" id="1d83w5bFl2X" role="2NCMaf">
-                    <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+                    <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                   </node>
                   <node concept="2NCMab" id="1d83w5bFl32" role="2NCMaf">
-                    <ref role="2NCMaa" to="50zn:1d83w5bFjZi" />
+                    <ref role="2NCMaa" to="50zn:1d83w5bFjZi" resolve="simpleEvaluator" />
                   </node>
                 </node>
               </node>
@@ -1078,10 +1078,10 @@
               <node concept="3z_lpY" id="1d83w5bFl8v" role="19SJt6">
                 <node concept="2NCZwO" id="1d83w5bFl8w" role="3z_lpZ">
                   <node concept="2NCMab" id="1d83w5bFl8F" role="2NCMaf">
-                    <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+                    <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                   </node>
                   <node concept="2NCMab" id="1d83w5bFl8K" role="2NCMaf">
-                    <ref role="2NCMaa" to="50zn:1d83w5bFjZs" />
+                    <ref role="2NCMaa" to="50zn:1d83w5bFjZs" resolve="complexEvaluator" />
                   </node>
                 </node>
               </node>
@@ -1108,10 +1108,10 @@
                   <node concept="3z_lpY" id="1Y3rEQ3oZip" role="19SJt6">
                     <node concept="2NCZwO" id="1Y3rEQ3oZiq" role="3z_lpZ">
                       <node concept="2NCMab" id="1Y3rEQ3oZi$" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1Y3rEQ3p27c" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p1bx" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p1bx" resolve="interpretConstraintExpression" />
                       </node>
                     </node>
                   </node>
@@ -1129,7 +1129,7 @@
                     <property role="19SUeA" value=") invokes the interpreter on the selected child and returns the evaluation result. If the selected child was constrained to a type by the containing evaluator, the evaluation result is of BaseLanguage type mapped to this constrained type in " />
                   </node>
                   <node concept="1_0GAv" id="1Y3rEQ3p27J" role="19SJt6">
-                    <ref role="1_0GAl" node="1d83w5bFgPT" />
+                    <ref role="1_0GAl" node="1d83w5bFgPT" resolve="typeMappings" />
                   </node>
                   <node concept="19SUe$" id="1Y3rEQ3p27K" role="19SJt6">
                     <property role="19SUeA" value=" section. As an example, the type of " />
@@ -1214,10 +1214,10 @@
                   <node concept="3z_lpY" id="1d83w5bFlDT" role="19SJt6">
                     <node concept="2NCZwO" id="1d83w5bFlDU" role="3z_lpZ">
                       <node concept="2NCMab" id="1d83w5bFlE4" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFlE9" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p0Kb" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3p0Kb" resolve="interpretExpression" />
                       </node>
                     </node>
                   </node>
@@ -1274,10 +1274,10 @@
                   <node concept="3z_lpY" id="1d83w5bFlTD" role="19SJt6">
                     <node concept="2NCZwO" id="1d83w5bFlTE" role="3z_lpZ">
                       <node concept="2NCMab" id="1d83w5bFm0G" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFm0L" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFlWg" />
+                        <ref role="2NCMaa" to="50zn:1d83w5bFlWg" resolve="operationCallExpression" />
                       </node>
                     </node>
                   </node>
@@ -1324,10 +1324,10 @@
                   <node concept="3z_lpY" id="1d83w5bFmwt" role="19SJt6">
                     <node concept="2NCZwO" id="1d83w5bFmwu" role="3z_lpZ">
                       <node concept="2NCMab" id="1d83w5bFmwC" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFmwH" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFmrM" />
+                        <ref role="2NCMaa" to="50zn:1d83w5bFmrM" resolve="nodeExpression" />
                       </node>
                     </node>
                   </node>
@@ -1401,10 +1401,10 @@
                   <node concept="3z_lpY" id="1d83w5bFn7i" role="19SJt6">
                     <node concept="2NCZwO" id="1d83w5bFn7j" role="3z_lpZ">
                       <node concept="2NCMab" id="1d83w5bFn7t" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xT" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1d83w5bFn7y" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1d83w5bFn4X" />
+                        <ref role="2NCMaa" to="50zn:1d83w5bFn4X" resolve="envExpression" />
                       </node>
                     </node>
                   </node>
@@ -1461,10 +1461,10 @@
                   <node concept="3z_lpY" id="1Y3rEQ3oo7r" role="19SJt6">
                     <node concept="2NCZwO" id="1Y3rEQ3oo7s" role="3z_lpZ">
                       <node concept="2NCMab" id="1Y3rEQ3osA9" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" />
+                        <ref role="2NCMaa" to="50zn:1T7O9iX40xR" resolve="ExpressionInterpreter" />
                       </node>
                       <node concept="2NCMab" id="1Y3rEQ3osAe" role="2NCMaf">
-                        <ref role="2NCMaa" to="50zn:1Y3rEQ3oswS" />
+                        <ref role="2NCMaa" to="50zn:1Y3rEQ3oswS" resolve="castUpExpression" />
                       </node>
                     </node>
                   </node>
@@ -1705,10 +1705,10 @@
                 <node concept="3z_lpY" id="1d83w5bFpkm" role="19SJt6">
                   <node concept="2NCZwO" id="1d83w5bFpkn" role="3z_lpZ">
                     <node concept="2NCMab" id="1d83w5bFpk_" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1T7O9iX40xT" />
+                      <ref role="2NCMaa" to="50zn:1T7O9iX40xT" resolve="VariableInterpreter" />
                     </node>
                     <node concept="2NCMab" id="1d83w5bFpkE" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1d83w5bFpfA" />
+                      <ref role="2NCMaa" to="50zn:1d83w5bFpfA" resolve="addToEnvironment" />
                     </node>
                   </node>
                 </node>
@@ -1745,10 +1745,10 @@
                 <node concept="3z_lpY" id="1d83w5bFpFl" role="19SJt6">
                   <node concept="2NCZwO" id="1d83w5bFpFm" role="3z_lpZ">
                     <node concept="2NCMab" id="1d83w5bFpF$" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1T7O9iX40xS" />
+                      <ref role="2NCMaa" to="50zn:1T7O9iX40xS" resolve="FunctionCallInterpreter" />
                     </node>
                     <node concept="2NCMab" id="1d83w5bFpFD" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1d83w5bFjZs" />
+                      <ref role="2NCMaa" to="50zn:1d83w5bFjZs" resolve="complexEvaluator" />
                     </node>
                   </node>
                 </node>
@@ -1872,7 +1872,7 @@
             <property role="19SUeA" value="If we just want to evaluate a node based on a category with reasonable defaults, we'd choose  " />
           </node>
           <node concept="1_0GAv" id="5$eeMt9pEJX" role="19SJt6">
-            <ref role="1_0GAl" node="5$eeMt9pEN5" />
+            <ref role="1_0GAl" node="5$eeMt9pEN5" resolve="interpreterEvaluationHelper" />
           </node>
           <node concept="19SUe$" id="5$eeMt9pEJY" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -2323,7 +2323,7 @@
                 <property role="19SUeA" value=" takes care of combining several Interpreters, possibly related (see " />
               </node>
               <node concept="1_0GAv" id="1Y3rEQ3jEJm" role="19SJt6">
-                <ref role="1_0GAl" node="1d83w5bFfPy" />
+                <ref role="1_0GAl" node="1d83w5bFfPy" resolve="relatedInterpreters" />
               </node>
               <node concept="19SUe$" id="1Y3rEQ3jEJn" role="19SJt6">
                 <property role="19SUeA" value=", to one single IInterpreter containing the union of all Evaluators. This allows us to distribute Interpreter definitions over several languages, possibly close to the definition of the interpreted concept itself." />
@@ -2418,7 +2418,7 @@
               <property role="19SUeA" value=" is suitable for most purposes. We may pass an IInterpreter as constructor parameter, which will be set as root interpreter (see " />
             </node>
             <node concept="1_0GAv" id="1Y3rEQ3jGnS" role="19SJt6">
-              <ref role="1_0GAl" node="1Y3rEQ3jGql" />
+              <ref role="1_0GAl" node="1Y3rEQ3jGql" resolve="setRootInterpreter" />
             </node>
             <node concept="19SUe$" id="1Y3rEQ3jGnT" role="19SJt6">
               <property role="19SUeA" value=")." />
@@ -2840,7 +2840,7 @@
               <property role="19SUeA" value=" operation can be implemented as single-line BaseLanguage expression or multi-line BaseLanguage statements. In addition to the expressions described in " />
             </node>
             <node concept="1_0GAv" id="1Y3rEQ3oYPH" role="19SJt6">
-              <ref role="1_0GAl" node="1d83w5bFkVv" />
+              <ref role="1_0GAl" node="1d83w5bFkVv" resolve="implementation" />
             </node>
             <node concept="19SUe$" id="1Y3rEQ3oYPI" role="19SJt6">
               <property role="19SUeA" value=", we can use the following expressions:" />
@@ -2865,10 +2865,10 @@
                 <node concept="3z_lpY" id="1Y3rEQ3oZcG" role="19SJt6">
                   <node concept="2NCZwO" id="1Y3rEQ3oZcH" role="3z_lpZ">
                     <node concept="2NCMab" id="1Y3rEQ3oZcR" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" />
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
                     </node>
                     <node concept="2NCMab" id="1Y3rEQ3oZcW" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oTVa" />
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oTVa" resolve="isEvaluableConstraintExpression" />
                     </node>
                   </node>
                 </node>
@@ -2907,10 +2907,10 @@
                 <node concept="3z_lpY" id="1Y3rEQ3p2$r" role="19SJt6">
                   <node concept="2NCZwO" id="1Y3rEQ3p2$s" role="3z_lpZ">
                     <node concept="2NCMab" id="1Y3rEQ3p2$t" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" />
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3owp4" resolve="ConditionalInterpreterExample" />
                     </node>
                     <node concept="2NCMab" id="1Y3rEQ3p2$Q" role="2NCMaf">
-                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oVVa" />
+                      <ref role="2NCMaa" to="50zn:1Y3rEQ3oVVa" resolve="isEvaluableExpression" />
                     </node>
                   </node>
                 </node>
@@ -3049,7 +3049,7 @@
               <property role="19SUeA" value="We aquire our Conditional Interpreter as described in " />
             </node>
             <node concept="1_0GAv" id="1Y3rEQ3p8u5" role="19SJt6">
-              <ref role="1_0GAl" node="1Y3rEQ3ju8j" />
+              <ref role="1_0GAl" node="1Y3rEQ3ju8j" resolve="aquireIInterpreter" />
             </node>
             <node concept="19SUe$" id="1Y3rEQ3p8u6" role="19SJt6">
               <property role="19SUeA" value=" and need to cast it to the " />
@@ -3321,11 +3321,11 @@
     <property role="TrG5h" value="InterpreterExport" />
     <property role="WqcPg" value="Interpreter Doc" />
     <node concept="1_0j5j" id="3OU98G0wufq" role="30Gjbj">
-      <ref role="1_0j5g" node="3OU98G0uTdn" />
+      <ref role="1_0j5g" node="3OU98G0uTdn" resolve="Interpreter" />
     </node>
     <node concept="2SbEIf" id="3OU98G0wufx" role="30Gjbg">
       <property role="2SbEId" value="tmp" />
-      <ref role="2SbEIe" node="3OU98G0uUxt" />
+      <ref role="2SbEIe" node="3OU98G0uUxt" resolve="source_gen" />
     </node>
     <node concept="1TaS0h" id="5V9QM6os7y8" role="30GjaH" />
   </node>

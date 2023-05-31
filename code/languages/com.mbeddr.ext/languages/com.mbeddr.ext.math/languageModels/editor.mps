@@ -269,7 +269,7 @@
       <concept id="9120555111513574294" name="de.itemis.mps.editor.math.structure.PredefinedMathSymbolReference" flags="ng" index="1AGncr">
         <reference id="9120555111513576085" name="decl" index="1AGmCo" />
       </concept>
-      <concept id="8588142736408788287" name="de.itemis.mps.editor.math.structure.BooleanFunction" flags="ng" index="1GO0HI" />
+      <concept id="8588142736408788287" name="de.itemis.mps.editor.math.structure.BooleanFunction" flags="ig" index="1GO0HI" />
     </language>
     <language id="e359e0a2-368a-4c40-ae2a-e5a09f9cfd58" name="de.itemis.mps.editor.math.notations">
       <concept id="8658283006837849794" name="de.itemis.mps.editor.math.notations.structure.SqrtEditor" flags="ng" index="jtDx7">

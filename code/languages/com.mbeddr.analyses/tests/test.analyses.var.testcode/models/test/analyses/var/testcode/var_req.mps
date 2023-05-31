@@ -345,7 +345,7 @@
   </node>
   <node concept="3fbPIq" id="4IrqaYbzsoK">
     <property role="TrG5h" value="req1" />
-    <ref role="G9hjw" node="4IrqaYbzsoP" />
+    <ref role="G9hjw" node="4IrqaYbzsoP" resolve="DefaultDocConfig" />
     <node concept="OjmMv" id="4IrqaYbzsoL" role="tLAhV">
       <node concept="19SGf9" id="4IrqaYbzsoM" role="OjmMu">
         <node concept="19SUe$" id="4IrqaYbzsoN" role="19SJt6" />

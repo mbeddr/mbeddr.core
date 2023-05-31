@@ -134,11 +134,11 @@
       <property role="s3kYd" value="true" />
       <node concept="3Y8sC$" id="77gEP6zfbaT" role="s3kY8">
         <property role="3Y8sCA" value="MySpecialName" />
-        <ref role="s3l27" to="sv0f:2bng37sXcN5" />
+        <ref role="s3l27" to="sv0f:2bng37sXcN5" resolve="English" />
       </node>
       <node concept="3Y8sC$" id="77gEP6zytWp" role="s3kY8">
         <property role="3Y8sCA" value="MeinName" />
-        <ref role="s3l27" to="sv0f:2bng37sXcNa" />
+        <ref role="s3l27" to="sv0f:2bng37sXcNa" resolve="Deutsch" />
       </node>
     </node>
   </node>
@@ -148,11 +148,11 @@
         <property role="s3kYd" value="true" />
         <node concept="3Y8sC$" id="77gEP6zyDLz" role="s3kY8">
           <property role="3Y8sCA" value="MeinErsterName" />
-          <ref role="s3l27" to="sv0f:2bng37sXcNa" />
+          <ref role="s3l27" to="sv0f:2bng37sXcNa" resolve="Deutsch" />
         </node>
         <node concept="3Y8sC$" id="77gEP6zfbaX" role="s3kY8">
           <property role="3Y8sCA" value="MyFirstName" />
-          <ref role="s3l27" to="sv0f:2bng37sXcN5" />
+          <ref role="s3l27" to="sv0f:2bng37sXcN5" resolve="English" />
         </node>
       </node>
     </node>
@@ -161,15 +161,15 @@
         <property role="s3kYd" value="true" />
         <node concept="3Y8sC$" id="77gEP6zyDLC" role="s3kY8">
           <property role="3Y8sCA" value="MeinZweiterName" />
-          <ref role="s3l27" to="sv0f:2bng37sXcNa" />
+          <ref role="s3l27" to="sv0f:2bng37sXcNa" resolve="Deutsch" />
         </node>
         <node concept="3Y8sC$" id="77gEP6zfbbo" role="s3kY8">
           <property role="3Y8sCA" value="MySecondName" />
-          <ref role="s3l27" to="sv0f:2bng37sXcN5" />
+          <ref role="s3l27" to="sv0f:2bng37sXcN5" resolve="English" />
         </node>
         <node concept="3Y8sC$" id="77gEP6zyDMb" role="s3kY8">
           <property role="3Y8sCA" value="MonDeuxiemeNom" />
-          <ref role="s3l27" to="sv0f:2bng37sXcNe" />
+          <ref role="s3l27" to="sv0f:2bng37sXcNe" resolve="français" />
         </node>
       </node>
     </node>
@@ -178,18 +178,18 @@
         <property role="s3kYd" value="false" />
         <node concept="3Y8sC$" id="77gEP6zyDLu" role="s3kY8">
           <property role="3Y8sCA" value="MeinNeuerName" />
-          <ref role="s3l27" to="sv0f:2bng37sXcNa" />
+          <ref role="s3l27" to="sv0f:2bng37sXcNa" resolve="Deutsch" />
         </node>
         <node concept="3Y8sC$" id="77gEP6zfbb0" role="s3kY8">
           <property role="3Y8sCA" value="MyNewName" />
-          <ref role="s3l27" to="sv0f:2bng37sXcN5" />
+          <ref role="s3l27" to="sv0f:2bng37sXcN5" resolve="English" />
         </node>
       </node>
     </node>
   </node>
   <node concept="1Q5_ze" id="77gEP6zfbbR">
-    <ref role="1Q5_zd" node="77gEP6zfbaR" />
-    <ref role="1Q5_zp" node="77gEP6zfbaY" />
+    <ref role="1Q5_zd" node="77gEP6zfbaR" resolve="MySpecialName" />
+    <ref role="1Q5_zp" node="77gEP6zfbaY" resolve="MeinNeuerName" />
   </node>
   <node concept="1lH9Xt" id="7Ssz$kY9Bu8">
     <property role="TrG5h" value="TranslatedPresentation" />
@@ -302,15 +302,15 @@
           <property role="s3kYd" value="true" />
           <node concept="3Y8sC$" id="2GRHOLIMK8h" role="s3kY8">
             <property role="3Y8sCA" value="MenNaams" />
-            <ref role="s3l27" to="sv0f:3J1G4nNndWy" />
+            <ref role="s3l27" to="sv0f:3J1G4nNndWy" resolve="Dansk" />
           </node>
           <node concept="3Y8sC$" id="7Ssz$kY9BuW" role="s3kY8">
             <property role="3Y8sCA" value="MyName" />
-            <ref role="s3l27" to="sv0f:2bng37sXcN5" />
+            <ref role="s3l27" to="sv0f:2bng37sXcN5" resolve="English" />
           </node>
           <node concept="3Y8sC$" id="7Ssz$kY9Cmc" role="s3kY8">
             <property role="3Y8sCA" value="MeinName" />
-            <ref role="s3l27" to="sv0f:2bng37sXcNa" />
+            <ref role="s3l27" to="sv0f:2bng37sXcNa" resolve="Deutsch" />
           </node>
         </node>
         <node concept="3xLA65" id="7Ssz$kY9Cmi" role="lGtFl">

@@ -77,7 +77,7 @@
   <node concept="1_1swa" id="69uDFDaU6IU">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_StaticEvaluation" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO8chN" role="1_0VJ0">
       <property role="TrG5h" value="staticEvaluation" />
       <property role="1_0VJr" value="Static Evaluation" />
@@ -183,7 +183,7 @@
             <property role="19SUeA" value="In addition to the pure static value calculation, mbeddr can perform various rounding operations before the static value is inserted into your code (an example is shown in " />
           </node>
           <node concept="2Sbdz4" id="1CZbvxN9WGg" role="19SJt6">
-            <ref role="2SbdyP" node="69uDFDb5ljx" />
+            <ref role="2SbdyP" node="69uDFDb5ljx" resolve="staticEval" />
           </node>
           <node concept="19SUe$" id="1CZbvxN9WGf" role="19SJt6">
             <property role="19SUeA" value="). These rounding operations can be added via an intention on the " />

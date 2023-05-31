@@ -221,9 +221,9 @@
         <child id="1118639624532245959" name="canCreate" index="34ro$8" />
         <child id="7946551912909981380" name="substituteNode" index="3ot9go" />
       </concept>
-      <concept id="1397920687866927557" name="de.slisson.mps.tables.structure.TableCellQueryColumnCount" flags="ng" index="2r732K" />
-      <concept id="1397920687866927536" name="de.slisson.mps.tables.structure.TableCellQueryRowCount" flags="ng" index="2r7335" />
-      <concept id="1397920687866928166" name="de.slisson.mps.tables.structure.TableCellQueryGetCell" flags="ng" index="2r73lj">
+      <concept id="1397920687866927557" name="de.slisson.mps.tables.structure.TableCellQueryColumnCount" flags="ig" index="2r732K" />
+      <concept id="1397920687866927536" name="de.slisson.mps.tables.structure.TableCellQueryRowCount" flags="ig" index="2r7335" />
+      <concept id="1397920687866928166" name="de.slisson.mps.tables.structure.TableCellQueryGetCell" flags="ig" index="2r73lj">
         <property id="3785936898452719116" name="displayType" index="3iQXY0" />
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
@@ -231,10 +231,10 @@
       </concept>
       <concept id="1397920687867563604" name="de.slisson.mps.tables.structure.QueryParameter_RowIndex" flags="ng" index="2rSAsx" />
       <concept id="1397920687867564204" name="de.slisson.mps.tables.structure.QueryParameter_ColumnIndex" flags="ng" index="2rSBBp" />
-      <concept id="1795495746017145565" name="de.slisson.mps.tables.structure.TableCellQueryGetRowHeader" flags="ng" index="xYlc3" />
-      <concept id="1795495746017139323" name="de.slisson.mps.tables.structure.TableCellQueryGetColumnHeader" flags="ng" index="xYnI_" />
-      <concept id="1118639624532200049" name="de.slisson.mps.tables.structure.CanCreate_Query" flags="ng" index="34rjUY" />
-      <concept id="7946551912908713904" name="de.slisson.mps.tables.structure.SubstituteNodeFunction" flags="ng" index="3om3PG">
+      <concept id="1795495746017145565" name="de.slisson.mps.tables.structure.TableCellQueryGetRowHeader" flags="ig" index="xYlc3" />
+      <concept id="1795495746017139323" name="de.slisson.mps.tables.structure.TableCellQueryGetColumnHeader" flags="ig" index="xYnI_" />
+      <concept id="1118639624532200049" name="de.slisson.mps.tables.structure.CanCreate_Query" flags="ig" index="34rjUY" />
+      <concept id="7946551912908713904" name="de.slisson.mps.tables.structure.SubstituteNodeFunction" flags="ig" index="3om3PG">
         <reference id="8767719180164875849" name="cellRootConcept" index="1xHBhH" />
       </concept>
       <concept id="7946551912910240557" name="de.slisson.mps.tables.structure.SubstituteNodeFunction_NewValue" flags="ng" index="3oseBL" />

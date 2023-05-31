@@ -214,7 +214,7 @@
       <concept id="3354025285337528500" name="com.mbeddr.mpsutil.richstring.structure.InlineExpression" flags="ng" index="EGPMe">
         <child id="3354025285337528503" name="expression" index="EGPMd" />
       </concept>
-      <concept id="3354025285337211097" name="com.mbeddr.mpsutil.richstring.structure.RichStringType" flags="ng" index="EI0jz" />
+      <concept id="3354025285337211097" name="com.mbeddr.mpsutil.richstring.structure.RichStringType" flags="ig" index="EI0jz" />
       <concept id="3354025285337049262" name="com.mbeddr.mpsutil.richstring.structure.RichString" flags="ng" index="EICMk">
         <child id="3354025285337210729" name="text" index="EI3Hj" />
       </concept>

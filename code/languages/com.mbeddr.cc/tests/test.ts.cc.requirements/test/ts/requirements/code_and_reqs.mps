@@ -179,7 +179,7 @@
   </registry>
   <node concept="3fbPIq" id="3AFGfkfopOV">
     <property role="TrG5h" value="ReqsModule" />
-    <ref role="G9hjw" node="7AZhlVTpCUj" />
+    <ref role="G9hjw" node="7AZhlVTpCUj" resolve="DefaultDocConfig" />
     <node concept="3fbQ3u" id="3AFGfkfopOW" role="3fbPIo">
       <property role="TrG5h" value="simple_req" />
       <property role="1ylvJX" value="a simple requirement" />

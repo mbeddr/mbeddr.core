@@ -413,7 +413,7 @@
   </registry>
   <node concept="3fbPIq" id="1fAuj8TwdSV">
     <property role="TrG5h" value="FlightJudgementRules" />
-    <ref role="G9hjw" node="519ky_SmMST" />
+    <ref role="G9hjw" node="519ky_SmMST" resolve="Config" />
     <node concept="3fbQ3u" id="2Ts93hyB7mP" role="3fbPIo">
       <property role="TrG5h" value="InitialNoPoints" />
       <property role="1ylvJX" value="Initially you have no points." />
@@ -1108,7 +1108,7 @@
   </node>
   <node concept="3fbPIq" id="72IKZbjZLi7">
     <property role="TrG5h" value="ArchitecturalComponents" />
-    <ref role="G9hjw" node="519ky_SmMST" />
+    <ref role="G9hjw" node="519ky_SmMST" resolve="Config" />
     <node concept="3fbQ3u" id="72IKZbjZLxb" role="3fbPIo">
       <property role="TrG5h" value="FlightData" />
       <property role="1ylvJX" value="Provides flight data" />
@@ -1310,7 +1310,7 @@
   </node>
   <node concept="3fbPIq" id="5YVZL2kzViv">
     <property role="TrG5h" value="UseCases" />
-    <ref role="G9hjw" node="519ky_SmMST" />
+    <ref role="G9hjw" node="519ky_SmMST" resolve="Config" />
     <node concept="3fbQ3u" id="2HzhasNxRlR" role="3fbPIo">
       <property role="TrG5h" value="FlightJudgement" />
       <property role="1ylvJX" value="Describes the flight judgement rules" />
@@ -1696,7 +1696,7 @@
   <node concept="1_1swa" id="519ky_SmMSS">
     <property role="TrG5h" value="requirementsReport" />
     <property role="3GE5qa" value="report" />
-    <ref role="G9hjw" node="519ky_SmMST" />
+    <ref role="G9hjw" node="519ky_SmMST" resolve="Config" />
     <node concept="1_0VNX" id="519ky_SmMSZ" role="1_0VJ0">
       <property role="TrG5h" value="intro" />
       <property role="1_0VJr" value="Introduction" />
@@ -1771,11 +1771,11 @@
     <property role="WqcPg" value="Requirements for Flight Judgement" />
     <node concept="1TaS0h" id="36cijvu66Ty" role="30Gjbi" />
     <node concept="1_0j5j" id="519ky_SmMTb" role="30Gjbj">
-      <ref role="1_0j5g" node="519ky_SmMSS" />
+      <ref role="1_0j5g" node="519ky_SmMSS" resolve="requirementsReport" />
     </node>
     <node concept="2SbEIf" id="7IezpGAfN_l" role="30Gjbg">
       <property role="2SbEId" value="_vis" />
-      <ref role="2SbEIe" node="519ky_SpGLu" />
+      <ref role="2SbEIe" node="519ky_SpGLu" resolve="temp" />
     </node>
     <node concept="1jVoCB" id="5cV09KeG4gt" role="30GjaH">
       <property role="43dxY" value="mbeddr-prolog.ltx" />

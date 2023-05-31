@@ -122,7 +122,7 @@
   <node concept="1_1swa" id="4l47ydyjg11">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_000_CBMC_Top" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="Wq1Bs" id="5HlC91LJM1m" role="Wq1Bf">
       <property role="Wq1Bt" value="Daniel Ratiu" />
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
@@ -133,27 +133,27 @@
     </node>
     <node concept="$CzcT" id="7VkE0Bpsrjw" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0BpsrjY" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq5Fn" />
+        <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_CBMC_Ch1_Intro" />
       </node>
     </node>
     <node concept="$CzcT" id="7PyP3ULnjN4" role="1_0VJ0">
       <node concept="1_0j5j" id="7PyP3ULnjNw" role="$CzcU">
-        <ref role="1_0j5g" node="7PyP3ULmhob" />
+        <ref role="1_0j5g" node="7PyP3ULmhob" resolve="_020_CBMC_Ch2_AnalysesConfigurations" />
       </node>
     </node>
     <node concept="$CzcT" id="5TsycMJBdNE" role="1_0VJ0">
       <node concept="1_0j5j" id="5TsycMJBdOD" role="$CzcU">
-        <ref role="1_0j5g" node="5TsycMJAQHN" />
+        <ref role="1_0j5g" node="5TsycMJAQHN" resolve="_030_CBMC_Ch3_EnvironmentDefinition" />
       </node>
     </node>
     <node concept="1_0j5j" id="7VkE0BpsriV" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq5Fn" />
+      <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_CBMC_Ch1_Intro" />
     </node>
     <node concept="1_0j5j" id="7PyP3ULnjM_" role="1DXQ57">
-      <ref role="1_0j5g" node="7PyP3ULmhob" />
+      <ref role="1_0j5g" node="7PyP3ULmhob" resolve="_020_CBMC_Ch2_AnalysesConfigurations" />
     </node>
     <node concept="1_0j5j" id="5TsycMJBdOr" role="1DXQ57">
-      <ref role="1_0j5g" node="5TsycMJAQHN" />
+      <ref role="1_0j5g" node="5TsycMJAQHN" resolve="_030_CBMC_Ch3_EnvironmentDefinition" />
     </node>
   </node>
   <node concept="2SbYGP" id="5HlC91LJJQk">
@@ -179,7 +179,7 @@
   <node concept="1_1swa" id="7VkE0Bpq5Fn">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_010_CBMC_Ch1_Intro" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7VkE0Bpq5Fo" role="1_0VJ0">
       <property role="TrG5h" value="Introduction" />
       <property role="1_0VJr" value="Introduction" />
@@ -259,7 +259,7 @@
   <node concept="1_1swa" id="7PyP3ULmhob">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="_020_CBMC_Ch2_AnalysesConfigurations" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7PyP3ULmhoc" role="1_0VJ0">
       <property role="TrG5h" value="AnalysesConfigurations" />
       <property role="1_0VJr" value="Analyses Configurations" />
@@ -371,7 +371,7 @@
               <property role="19SUeA" value=" checks assertions which are reachable from the entry point.&#10;&#10;The assertions at C code level can originate from mbeddr assertions or can be generated from higher-level constructs (e.g. ACSL contracts). &#10;&#10;Options common to all CBMC-based analyses are described in " />
             </node>
             <node concept="1_0GAv" id="2uLpxJ0WLwz" role="19SJt6">
-              <ref role="1_0GAl" node="3U8qTcjPlsr" />
+              <ref role="1_0GAl" node="3U8qTcjPlsr" resolve="CommonOptions" />
             </node>
             <node concept="19SUe$" id="2uLpxJ0WLw$" role="19SJt6" />
           </node>
@@ -400,7 +400,7 @@
               <property role="19SUeA" value=" checks code robustness properties which are reachable from the entry point.&#10;&#10;Robustness problems with the C code can lead to security issues (e.g. buffer overflows), runtime errors (e.g. division by zero) or cases of unspecified behaviour (e.g. overflows). CBMC automatically instruments the code for checking the absence of robustness issues.&#10;&#10;Options common to all CBMC-based analyses are described in " />
             </node>
             <node concept="1_0GAv" id="5TsycMJAQHy" role="19SJt6">
-              <ref role="1_0GAl" node="3U8qTcjPlsr" />
+              <ref role="1_0GAl" node="3U8qTcjPlsr" resolve="CommonOptions" />
             </node>
             <node concept="19SUe$" id="5TsycMJAQHz" role="19SJt6">
               <property role="19SUeA" value="" />
@@ -417,7 +417,7 @@
               <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" />
             </node>
             <node concept="2NCMab" id="5TsycMJBdJz" role="2NCMaf">
-              <ref role="2NCMaa" to="93wt:5TsycMJBdJb" />
+              <ref role="2NCMaa" to="93wt:5TsycMJBdJb" resolve="aRobustnessAnalysis" />
             </node>
           </node>
         </node>
@@ -445,7 +445,7 @@
               <property role="19SUeA" value=" checks code completeness and consistency of a decision table with respect to a starting point.&#10;&#10;This analysis checks the situations in which not all possible combinations of values are covered (completeness),&#10;when two cells from the table can be active at the same time (consistency) and when cells of a table cannot be reached (activation). &#10;&#10;Options common to all CBMC-based analyses are described in " />
             </node>
             <node concept="1_0GAv" id="5TsycMJBdxd" role="19SJt6">
-              <ref role="1_0GAl" node="3U8qTcjPlsr" />
+              <ref role="1_0GAl" node="3U8qTcjPlsr" resolve="CommonOptions" />
             </node>
             <node concept="19SUe$" id="5TsycMJBdxe" role="19SJt6">
               <property role="19SUeA" value="" />
@@ -462,7 +462,7 @@
               <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" />
             </node>
             <node concept="2NCMab" id="5TsycMJBdM4" role="2NCMaf">
-              <ref role="2NCMaa" to="93wt:5TsycMJBdJ6" />
+              <ref role="2NCMaa" to="93wt:5TsycMJBdJ6" resolve="aDecTabAnalysis" />
             </node>
           </node>
         </node>
@@ -644,7 +644,7 @@
   <node concept="1_1swa" id="5TsycMJAQHN">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="_030_CBMC_Ch3_EnvironmentDefinition" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="5TsycMJAQHO" role="1_0VJ0">
       <property role="TrG5h" value="EnvironmentSpecification" />
       <property role="1_0VJr" value="Environment Definition" />

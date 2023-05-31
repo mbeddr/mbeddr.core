@@ -107,17 +107,17 @@
     <property role="WqcPg" value="My strange export config" />
     <node concept="2SbEIf" id="4eRbT2iEycg" role="30Gjbg">
       <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
-      <ref role="2SbEIe" node="2khznRHyx6e" />
+      <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
-      <ref role="1_0j5g" node="2khznRHyx5W" />
+      <ref role="1_0j5g" node="2khznRHyx5W" resolve="MainDoc" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
   </node>
   <node concept="1_1swa" id="2khznRHyx5W">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="MainDoc" />
-    <ref role="G9hjw" node="2khznRHyx6c" />
+    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
     <node concept="3xmJbL" id="8QSRajVL3G" role="1_0VJ0" />
     <node concept="1_0LV8" id="8QSRajVL4F" role="1_0VJ0">
       <node concept="19SGf9" id="8QSRajVL4G" role="1_0LWR">
@@ -129,7 +129,7 @@
     <node concept="$CzcT" id="8QSRajVLOi" role="1_0VJ0">
       <property role="1P4p2h" value="true" />
       <node concept="1_0j5j" id="8QSRajVLQl" role="$CzcU">
-        <ref role="1_0j5g" to="lluw:2khznRHyx6K" />
+        <ref role="1_0j5g" to="lluw:2khznRHyx6K" resolve="sub_document_2" />
       </node>
     </node>
     <node concept="1_0LV8" id="8QSRajVLRU" role="1_0VJ0">
@@ -139,7 +139,7 @@
         </node>
         <node concept="1thXK$" id="8QSRajVMcD" role="19SJt6">
           <property role="0yqFN" value="this" />
-          <ref role="1thXK_" to="lluw:2khznRHyxyJ" />
+          <ref role="1thXK_" to="lluw:2khznRHyxyJ" resolve="sub_document_3" />
         </node>
         <node concept="19SUe$" id="8QSRajVMcE" role="19SJt6">
           <property role="19SUeA" value="." />
@@ -147,10 +147,10 @@
       </node>
     </node>
     <node concept="1_0j5j" id="8QSRajVLPm" role="1DXQ57">
-      <ref role="1_0j5g" to="lluw:2khznRHyx6K" />
+      <ref role="1_0j5g" to="lluw:2khznRHyx6K" resolve="sub_document_2" />
     </node>
     <node concept="1_0j5j" id="8QSRajVLPQ" role="1DXQ57">
-      <ref role="1_0j5g" to="lluw:2khznRHyxyJ" />
+      <ref role="1_0j5g" to="lluw:2khznRHyxyJ" resolve="sub_document_3" />
     </node>
   </node>
 </model>

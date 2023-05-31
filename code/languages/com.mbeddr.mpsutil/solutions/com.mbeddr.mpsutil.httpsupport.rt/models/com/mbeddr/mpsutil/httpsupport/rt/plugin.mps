@@ -166,8 +166,8 @@
       <concept id="4728279602824475247" name="com.mbeddr.mpsutil.preferenceform.structure.IntegerFieldPreferenceFormProperty" flags="ng" index="czsHg">
         <property id="4728279602824496322" name="defaultValue" index="cyBRX" />
       </concept>
-      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="ng" index="3xWZ$M" />
-      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="ng" index="3xXM6Z" />
+      <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="in" index="3xWZ$M" />
+      <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="in" index="3xXM6Z" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
         <property id="1101080154068563577" name="scope" index="3NeIjD" />
         <child id="145956936283569518" name="properties" index="1DEjpx" />
@@ -364,7 +364,7 @@
       <property role="TrG5h" value="enabled" />
       <property role="1DJMfM" value="true" />
       <node concept="3ZQQOj" id="4bsUQfPNOuQ" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h753s1" />
+        <ref role="3ZOmrH" node="7Hbe8h753s1" resolve="Enabled" />
       </node>
       <node concept="10P_77" id="3vXSZsAPQk$" role="1tU5fm" />
       <node concept="3clFbT" id="3vXSZsAPQk_" role="33vP2m">
@@ -375,7 +375,7 @@
       <property role="TrG5h" value="port" />
       <property role="cyBRX" value="8080" />
       <node concept="3ZQQOj" id="4bsUQfPNP3X" role="XGeyX">
-        <ref role="3ZOmrH" node="7Hbe8h753K_" />
+        <ref role="3ZOmrH" node="7Hbe8h753K_" resolve="Port" />
       </node>
       <node concept="3cpWsb" id="3vXSZsAPQkB" role="1tU5fm" />
       <node concept="3cmrfG" id="3hck9gsGS1U" role="33vP2m">
@@ -399,7 +399,7 @@
                     <node concept="2OqwBi" id="24HfET2s2DI" role="10QFUP">
                       <node concept="2WthIp" id="24HfET2s2DJ" role="2Oq$k0" />
                       <node concept="1DZHhv" id="24HfET2s2DK" role="2OqNvi">
-                        <ref role="2WH_rO" node="3vXSZsAPQkA" />
+                        <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
                       </node>
                     </node>
                     <node concept="10Oyi0" id="24HfET2s2DL" role="10QFUM" />
@@ -408,7 +408,7 @@
                 <node concept="2OqwBi" id="24HfET2s2DM" role="37wK5m">
                   <node concept="2WthIp" id="24HfET2s2DN" role="2Oq$k0" />
                   <node concept="1DZHhv" id="24HfET2s2DO" role="2OqNvi">
-                    <ref role="2WH_rO" node="3vXSZsAPQkz" />
+                    <ref role="2WH_rO" node="3vXSZsAPQkz" resolve="enabled" />
                   </node>
                 </node>
               </node>
@@ -475,7 +475,7 @@
                     <node concept="2OqwBi" id="6eYr0J6qUx0" role="10QFUP">
                       <node concept="2WthIp" id="6eYr0J6qUx1" role="2Oq$k0" />
                       <node concept="1DZHhv" id="6eYr0J6qUx2" role="2OqNvi">
-                        <ref role="2WH_rO" node="3vXSZsAPQkA" />
+                        <ref role="2WH_rO" node="3vXSZsAPQkA" resolve="port" />
                       </node>
                     </node>
                     <node concept="10Oyi0" id="6eYr0J6qUx3" role="10QFUM" />
@@ -484,7 +484,7 @@
                 <node concept="2OqwBi" id="6eYr0J6qUx4" role="37wK5m">
                   <node concept="2WthIp" id="6eYr0J6qUx5" role="2Oq$k0" />
                   <node concept="1DZHhv" id="6eYr0J6qUx6" role="2OqNvi">
-                    <ref role="2WH_rO" node="3vXSZsAPQkz" />
+                    <ref role="2WH_rO" node="3vXSZsAPQkz" resolve="enabled" />
                   </node>
                 </node>
               </node>

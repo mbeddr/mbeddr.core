@@ -442,15 +442,15 @@
       </concept>
     </language>
     <language id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout">
-      <concept id="4682418030829244851" name="de.itemis.mps.editor.celllayout.structure.StringStyle" flags="ng" index="2TzlJg">
+      <concept id="4682418030829244851" name="de.itemis.mps.editor.celllayout.structure.StringStyle" flags="lg" index="2TzlJg">
         <property id="1238091709220" name="value" index="1413C5" />
         <child id="1236443321503" name="query" index="3xKXm0" />
       </concept>
-      <concept id="4682418030829299311" name="de.itemis.mps.editor.celllayout.structure.FontFamilyStyle" flags="ng" index="2TzqKc" />
-      <concept id="2728748097294736650" name="de.itemis.mps.editor.celllayout.structure.BorderColorStyle" flags="ng" index="3T6ez_" />
+      <concept id="4682418030829299311" name="de.itemis.mps.editor.celllayout.structure.FontFamilyStyle" flags="lg" index="2TzqKc" />
+      <concept id="2728748097294736650" name="de.itemis.mps.editor.celllayout.structure.BorderColorStyle" flags="lg" index="3T6ez_" />
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
-      <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ng" index="238au4" />
+      <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm">
         <property id="7623784619795245948" name="direction" index="1NdBj4" />
       </concept>
@@ -468,13 +468,13 @@
         <child id="6160055369550084122" name="allowScaling" index="3RIt6y" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
-      <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ng" index="2fs66k" />
+      <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
         <child id="2044706694575458564" name="labelCell" index="3kqczz" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
       </concept>
-      <concept id="7464726264122062011" name="de.itemis.mps.editor.diagram.structure.Function_DrawShadow" flags="ng" index="2x7zL7" />
+      <concept id="7464726264122062011" name="de.itemis.mps.editor.diagram.structure.Function_DrawShadow" flags="ig" index="2x7zL7" />
       <concept id="7464726264117247548" name="de.itemis.mps.editor.diagram.structure.ShapeDefinition" flags="ng" index="2xDbr0">
         <child id="7464726264122072730" name="drawShadow" index="2x7_pA" />
         <child id="7464726264118062179" name="draw" index="2xOiiv" />
@@ -482,7 +482,7 @@
         <child id="3454709602156469310" name="parameters" index="1xmOgE" />
       </concept>
       <concept id="7464726264117281947" name="de.itemis.mps.editor.diagram.structure.Parameter_Bounds" flags="ng" index="2xDkLB" />
-      <concept id="7464726264117345981" name="de.itemis.mps.editor.diagram.structure.Function_DrawShape" flags="ng" index="2xDzp1" />
+      <concept id="7464726264117345981" name="de.itemis.mps.editor.diagram.structure.Function_DrawShape" flags="ig" index="2xDzp1" />
       <concept id="7464726264117388668" name="de.itemis.mps.editor.diagram.structure.Parameter_Graphics2D" flags="ng" index="2xDIQ0" />
       <concept id="7464726264117677937" name="de.itemis.mps.editor.diagram.structure.ShapeReference" flags="ng" index="2xQOud">
         <reference id="7464726264117677938" name="shape" index="2xQOue" />
@@ -504,14 +504,14 @@
         <child id="6160055369549989399" name="allowScaling" index="3RJMYJ" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
-      <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ng" index="2ZMM4L" />
+      <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
-      <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ng" index="37q72E" />
+      <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
-      <concept id="5051221038171022699" name="de.itemis.mps.editor.diagram.structure.ShadeColor" flags="ng" index="38c6YI" />
+      <concept id="5051221038171022699" name="de.itemis.mps.editor.diagram.structure.ShadeColor" flags="lg" index="38c6YI" />
       <concept id="4277219764978107440" name="de.itemis.mps.editor.diagram.structure.SNodeConncetionType_toNode" flags="ng" index="3m_Ry6" />
       <concept id="4277219764978107398" name="de.itemis.mps.editor.diagram.structure.SNodeConncetionType_fromNode" flags="ng" index="3m_RyK" />
-      <concept id="4277219764977337773" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_Create" flags="ng" index="3mAF$r" />
+      <concept id="4277219764977337773" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_Create" flags="ig" index="3mAF$r" />
       <concept id="4277219764977337122" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType" flags="ng" index="3mAFYk">
         <property id="4277219764978104391" name="label" index="3m_KjL" />
         <reference id="4277219764978094454" name="toConcept" index="3m_MR0" />
@@ -525,11 +525,11 @@
         <reference id="3454709602156593404" name="parameter" index="1xnlzC" />
       </concept>
       <concept id="8637411062062623445" name="de.itemis.mps.editor.diagram.structure.Parameter_PaletteFolder_Concept" flags="ng" index="1yATlc" />
-      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="ng" index="3C0lA2">
+      <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
         <property id="6987730699889504313" name="value" index="3DY1wP" />
       </concept>
-      <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="ng" index="3C0NmK" />
-      <concept id="6987730699889040827" name="de.itemis.mps.editor.diagram.structure.LineWidth" flags="ng" index="3C0NmR">
+      <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="lg" index="3C0NmK" />
+      <concept id="6987730699889040827" name="de.itemis.mps.editor.diagram.structure.LineWidth" flags="lg" index="3C0NmR">
         <property id="6987730699889499559" name="value" index="3DY3mF" />
       </concept>
       <concept id="8587703283519920118" name="de.itemis.mps.editor.diagram.structure.ThisNodeExpression" flags="ng" index="1Pxb5l" />
@@ -538,8 +538,8 @@
         <child id="8587703283523590803" name="shape" index="1PNbKK" />
         <child id="8587703283523590801" name="setTarget" index="1PNbKM" />
       </concept>
-      <concept id="5712445629353393305" name="de.itemis.mps.editor.diagram.structure.Function_SetConnectionEndpoint" flags="ng" index="3R4teh" />
-      <concept id="1981294357061021217" name="de.itemis.mps.editor.diagram.structure.FilteringPaletteSource_FilterQuery" flags="ng" index="1Rplqp" />
+      <concept id="5712445629353393305" name="de.itemis.mps.editor.diagram.structure.Function_SetConnectionEndpoint" flags="ig" index="3R4teh" />
+      <concept id="1981294357061021217" name="de.itemis.mps.editor.diagram.structure.FilteringPaletteSource_FilterQuery" flags="ig" index="1Rplqp" />
       <concept id="1981294357061019414" name="de.itemis.mps.editor.diagram.structure.FilteringPaletteSource" flags="ng" index="1RplYI">
         <child id="1981294357061028835" name="filterQuery" index="1Rpjdr" />
         <child id="1981294357061021215" name="source" index="1RplqB" />
@@ -550,21 +550,21 @@
       <concept id="4254343767716913574" name="de.itemis.mps.editor.diagram.structure.CellModel_Compartment" flags="ng" index="3S8TqV" />
     </language>
     <language id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist">
-      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ng" index="s8sZD" />
+      <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
         <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
         <child id="6202678563380433923" name="query" index="sbcd9" />
         <child id="5820306262933755617" name="insertNewNode" index="AS3tk" />
       </concept>
-      <concept id="5820306262933110156" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_InsertNewNode" flags="ng" index="ARxKT" />
+      <concept id="5820306262933110156" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_InsertNewNode" flags="ig" index="ARxKT" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1397920687866011705" name="de.slisson.mps.tables.structure.QueryParameter_Node" flags="ng" index="2r2w_c" />
-      <concept id="1397920687865844319" name="de.slisson.mps.tables.structure.HeadQuery" flags="ng" index="2r3VGE">
+      <concept id="1397920687865844319" name="de.slisson.mps.tables.structure.HeadQuery" flags="ig" index="2r3VGE">
         <child id="4032373061957777955" name="insertNew" index="10bivc" />
         <child id="1515263624310665819" name="delete" index="3x7fTB" />
       </concept>
@@ -577,9 +577,9 @@
         <child id="1397920687866928141" name="columnCount" index="2r73lS" />
         <child id="7946551912909981380" name="substituteNode" index="3ot9go" />
       </concept>
-      <concept id="1397920687866927557" name="de.slisson.mps.tables.structure.TableCellQueryColumnCount" flags="ng" index="2r732K" />
-      <concept id="1397920687866927536" name="de.slisson.mps.tables.structure.TableCellQueryRowCount" flags="ng" index="2r7335" />
-      <concept id="1397920687866928166" name="de.slisson.mps.tables.structure.TableCellQueryGetCell" flags="ng" index="2r73lj" />
+      <concept id="1397920687866927557" name="de.slisson.mps.tables.structure.TableCellQueryColumnCount" flags="ig" index="2r732K" />
+      <concept id="1397920687866927536" name="de.slisson.mps.tables.structure.TableCellQueryRowCount" flags="ig" index="2r7335" />
+      <concept id="1397920687866928166" name="de.slisson.mps.tables.structure.TableCellQueryGetCell" flags="ig" index="2r73lj" />
       <concept id="1397920687864864270" name="de.slisson.mps.tables.structure.StaticHeader" flags="ng" index="2rfbtV">
         <property id="1397920687864864274" name="text" index="2rfbtB" />
       </concept>
@@ -590,14 +590,14 @@
       </concept>
       <concept id="1397920687867563604" name="de.slisson.mps.tables.structure.QueryParameter_RowIndex" flags="ng" index="2rSAsx" />
       <concept id="1397920687867564204" name="de.slisson.mps.tables.structure.QueryParameter_ColumnIndex" flags="ng" index="2rSBBp" />
-      <concept id="4384308856523593884" name="de.slisson.mps.tables.structure.HorizontalAlignmentStyleItem" flags="ng" index="Qq2$L">
+      <concept id="4384308856523593884" name="de.slisson.mps.tables.structure.HorizontalAlignmentStyleItem" flags="lg" index="Qq2$L">
         <property id="4384308856523593885" name="alignment" index="Qq2$K" />
       </concept>
-      <concept id="4384308856523540092" name="de.slisson.mps.tables.structure.VerticalAlignmentStyleItem" flags="ng" index="QtRvh">
+      <concept id="4384308856523540092" name="de.slisson.mps.tables.structure.VerticalAlignmentStyleItem" flags="lg" index="QtRvh">
         <property id="4384308856523581138" name="alignment" index="QtXtZ" />
       </concept>
       <concept id="4032373061957737357" name="de.slisson.mps.tables.structure.Parameter_Index" flags="ng" index="10bopy" />
-      <concept id="4032373061957735279" name="de.slisson.mps.tables.structure.HeaderQuery_InsertNew" flags="ng" index="10boU0" />
+      <concept id="4032373061957735279" name="de.slisson.mps.tables.structure.HeaderQuery_InsertNew" flags="ig" index="10boU0" />
       <concept id="8155811638124601791" name="de.slisson.mps.tables.structure.HeaderGroup" flags="ng" index="18hEb6">
         <child id="8155811638124638369" name="groupHeader" index="18hjfo" />
         <child id="8155811638124638371" name="childHeaders" index="18hjfq" />
@@ -608,27 +608,27 @@
       </concept>
       <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG" />
       <concept id="1106681690724963968" name="de.slisson.mps.tables.structure.QueryParameter_ListIndex" flags="ng" index="1gjaYy" />
-      <concept id="3785936898437629812" name="de.slisson.mps.tables.structure.BorderBottomWidthStyleItem" flags="ng" index="3hShVS" />
-      <concept id="3785936898437629674" name="de.slisson.mps.tables.structure.BorderRightWidthStyleItem" flags="ng" index="3hShXA" />
-      <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="ng" index="3hSBzd">
+      <concept id="3785936898437629812" name="de.slisson.mps.tables.structure.BorderBottomWidthStyleItem" flags="lg" index="3hShVS" />
+      <concept id="3785936898437629674" name="de.slisson.mps.tables.structure.BorderRightWidthStyleItem" flags="lg" index="3hShXA" />
+      <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="lg" index="3hSBzd">
         <property id="3785936898437424562" name="value" index="3hSBKY" />
       </concept>
-      <concept id="3785936898438628050" name="de.slisson.mps.tables.structure.BorderBottomColorItem" flags="ng" index="3hWdHu" />
-      <concept id="3785936898438628815" name="de.slisson.mps.tables.structure.BorderRightColorItem" flags="ng" index="3hWdL3" />
-      <concept id="3785936898438629036" name="de.slisson.mps.tables.structure.ShadeColor" flags="ng" index="3hWdWw" />
-      <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="ng" index="3hZEDM">
+      <concept id="3785936898438628050" name="de.slisson.mps.tables.structure.BorderBottomColorItem" flags="lg" index="3hWdHu" />
+      <concept id="3785936898438628815" name="de.slisson.mps.tables.structure.BorderRightColorItem" flags="lg" index="3hWdL3" />
+      <concept id="3785936898438629036" name="de.slisson.mps.tables.structure.ShadeColor" flags="lg" index="3hWdWw" />
+      <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="lg" index="3hZEDM">
         <property id="1186403713874" name="color" index="Vb097" />
         <child id="3785936898438271388" name="query" index="3hZOwg" />
       </concept>
       <concept id="3785936898438264232" name="de.slisson.mps.tables.structure.RGBAColorValue" flags="ng" index="3hZEK$">
         <property id="3785936898438264819" name="value" index="3hZETZ" />
       </concept>
-      <concept id="7946551912908713904" name="de.slisson.mps.tables.structure.SubstituteNodeFunction" flags="ng" index="3om3PG">
+      <concept id="7946551912908713904" name="de.slisson.mps.tables.structure.SubstituteNodeFunction" flags="ig" index="3om3PG">
         <reference id="8767719180164875849" name="cellRootConcept" index="1xHBhH" />
       </concept>
       <concept id="7946551912910240557" name="de.slisson.mps.tables.structure.SubstituteNodeFunction_NewValue" flags="ng" index="3oseBL" />
       <concept id="7946551912910120072" name="de.slisson.mps.tables.structure.SubstituteNodeFunction_CurrentNode" flags="ng" index="3osFpk" />
-      <concept id="1515263624310660132" name="de.slisson.mps.tables.structure.HeaderQuery_Delete" flags="ng" index="3x7d0o" />
+      <concept id="1515263624310660132" name="de.slisson.mps.tables.structure.HeaderQuery_Delete" flags="ig" index="3x7d0o" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
@@ -4209,7 +4209,7 @@
             <node concept="3cpWsd" id="2HR3cah2GsC" role="33vP2m">
               <node concept="17qRlL" id="4Te4zGtfwXL" role="3uHU7w">
                 <node concept="1xnly_" id="4Te4zGtfxlk" role="3uHU7w">
-                  <ref role="1xnlzC" node="4Te4zGtfrYV" />
+                  <ref role="1xnlzC" node="4Te4zGtfrYV" resolve="relativeWidth" />
                 </node>
                 <node concept="37vLTw" id="4Te4zGtfxmF" role="3uHU7B">
                   <ref role="3cqZAo" node="7z30MUmeex4" resolve="width" />
@@ -4282,7 +4282,7 @@
                 </node>
                 <node concept="17qRlL" id="7z30MUmeGbr" role="3uHU7w">
                   <node concept="1xnly_" id="7z30MUmeGbs" role="3uHU7w">
-                    <ref role="1xnlzC" node="7z30MUmenMd" />
+                    <ref role="1xnlzC" node="7z30MUmenMd" resolve="relativeHeight" />
                   </node>
                   <node concept="37vLTw" id="7z30MUmeGbt" role="3uHU7B">
                     <ref role="3cqZAo" node="7z30MUmeexa" resolve="height" />
@@ -4321,7 +4321,7 @@
               <node concept="3cpWs3" id="7z30MUmeEyh" role="37wK5m">
                 <node concept="17qRlL" id="7z30MUmeFqk" role="3uHU7w">
                   <node concept="1xnly_" id="7z30MUmeFMQ" role="3uHU7w">
-                    <ref role="1xnlzC" node="7z30MUmenMd" />
+                    <ref role="1xnlzC" node="7z30MUmenMd" resolve="relativeHeight" />
                   </node>
                   <node concept="37vLTw" id="7z30MUmeEUw" role="3uHU7B">
                     <ref role="3cqZAo" node="7z30MUmeexa" resolve="height" />
@@ -4348,7 +4348,7 @@
             </node>
           </node>
           <node concept="1xnly_" id="2HR3cah9FHx" role="3clFbw">
-            <ref role="1xnlzC" node="2HR3cah0ncY" />
+            <ref role="1xnlzC" node="2HR3cah0ncY" resolve="filled" />
           </node>
         </node>
         <node concept="3clFbH" id="3GatLR2TXFy" role="3cqZAp" />
@@ -4367,7 +4367,7 @@
             </node>
           </node>
           <node concept="1xnly_" id="2HR3cah0nfe" role="3clFbw">
-            <ref role="1xnlzC" node="2HR3cah0ncY" />
+            <ref role="1xnlzC" node="2HR3cah0ncY" resolve="filled" />
           </node>
           <node concept="9aQIb" id="3GatLR2U0dJ" role="9aQIa">
             <node concept="3clFbS" id="3GatLR2U0dK" role="9aQI4">
@@ -4740,7 +4740,7 @@
                   </node>
                 </node>
                 <node concept="2xQOud" id="3$Bjl9PR$68" role="3Uta5s">
-                  <ref role="2xQOue" node="4XPshStkKxh" />
+                  <ref role="2xQOue" node="4XPshStkKxh" resolve="StartState" />
                 </node>
               </node>
               <node concept="2M4Efz" id="3$Bjl9PR$69" role="aCds2">
@@ -4784,7 +4784,7 @@
                     </node>
                   </node>
                   <node concept="2xQOud" id="3$Bjl9PR$6o" role="1PNbKK">
-                    <ref role="2xQOue" node="7z30MUmeewT" />
+                    <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
                     <node concept="3b6qkQ" id="3$Bjl9PR$6p" role="1xbcaF">
                       <property role="$nhwW" value="0.5" />
                     </node>
@@ -4839,7 +4839,7 @@
         </node>
       </node>
       <node concept="2xQOud" id="4UHO8tvHAtD" role="2xQQDV">
-        <ref role="2xQOue" node="2HR3cafXJXP" />
+        <ref role="2xQOue" node="2HR3cafXJXP" resolve="StateShape" />
         <node concept="3clFbT" id="4UHO8tvHCAR" role="1xbcaF">
           <property role="3clFbU" value="false" />
         </node>
@@ -4953,7 +4953,7 @@
           </node>
         </node>
         <node concept="2xQOud" id="4UHO8tvHwrw" role="1PNbKK">
-          <ref role="2xQOue" node="7z30MUmeewT" />
+          <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
           <node concept="3b6qkQ" id="5moEJDFICW5" role="1xbcaF">
             <property role="$nhwW" value="0.5" />
           </node>
@@ -5298,7 +5298,7 @@
             </node>
           </node>
           <node concept="2xQOud" id="QramcdmRPH" role="3Uta5s">
-            <ref role="2xQOue" node="4XPshStkKxh" />
+            <ref role="2xQOue" node="4XPshStkKxh" resolve="StartState" />
           </node>
           <node concept="3clFbT" id="7hiaG7TPYi4" role="3RIt6y">
             <property role="3clFbU" value="false" />
@@ -5345,7 +5345,7 @@
               </node>
             </node>
             <node concept="2xQOud" id="QramcdvlxN" role="1PNbKK">
-              <ref role="2xQOue" node="7z30MUmeewT" />
+              <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
               <node concept="3b6qkQ" id="Qramcdvq1E" role="1xbcaF">
                 <property role="$nhwW" value="0.5" />
               </node>
@@ -5417,7 +5417,7 @@
       <ref role="1k5W1q" node="3kzGBV3tWes" resolve="State" />
       <node concept="38c6YI" id="7SCh_GMBkxM" role="3F10Kt" />
       <node concept="2xQOud" id="7$cwLzjYqAn" role="2xQQDV">
-        <ref role="2xQOue" node="2HR3cafXJXP" />
+        <ref role="2xQOue" node="2HR3cafXJXP" resolve="StateShape" />
         <node concept="3clFbT" id="7$cwLzjYt3c" role="1xbcaF">
           <property role="3clFbU" value="false" />
         </node>
@@ -5494,7 +5494,7 @@
               <ref role="37wK5l" to="z60i:~Graphics2D.setStroke(java.awt.Stroke)" resolve="setStroke" />
               <node concept="3K4zz7" id="2EnX6qvA1P5" role="37wK5m">
                 <node concept="1xnly_" id="2EnX6qvA1NJ" role="3K4Cdx">
-                  <ref role="1xnlzC" node="2EnX6qvA1LV" />
+                  <ref role="1xnlzC" node="2EnX6qvA1LV" resolve="isCompositeState" />
                 </node>
                 <node concept="2ShNRf" id="2HR3cafXRWB" role="3K4GZi">
                   <node concept="1pGfFk" id="2HR3cafY606" role="2ShVmc">
@@ -5717,7 +5717,7 @@
         <node concept="37jFXN" id="3diMC1cS6yR" role="3F10Kt" />
       </node>
       <node concept="2xQOud" id="4UHO8tvDgrt" role="2xQQDV">
-        <ref role="2xQOue" node="2HR3cafXJXP" />
+        <ref role="2xQOue" node="2HR3cafXJXP" resolve="StateShape" />
         <node concept="3clFbT" id="7$cwLzjYvrj" role="1xbcaF">
           <property role="3clFbU" value="true" />
         </node>
@@ -5859,7 +5859,7 @@
           </node>
         </node>
         <node concept="2xQOud" id="4UHO8tvH_Ww" role="1PNbKK">
-          <ref role="2xQOue" node="7z30MUmeewT" />
+          <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
           <node concept="3b6qkQ" id="5moEJDFVjuZ" role="1xbcaF">
             <property role="$nhwW" value="0.5" />
           </node>

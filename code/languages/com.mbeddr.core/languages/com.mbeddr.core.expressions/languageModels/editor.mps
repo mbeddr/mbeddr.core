@@ -386,8 +386,8 @@
         <child id="1716599163375643746" name="inner" index="drBAU" />
         <child id="1716599163375643751" name="right" index="drBAZ" />
       </concept>
-      <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ng" index="2ee1ZP" />
-      <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="ng" index="2lNzut">
+      <concept id="1984422498404534858" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_TransformationText" flags="ig" index="2ee1ZP" />
+      <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="sg" stub="3921456275302774831" index="2lNzut">
         <child id="3921456275305506525" name="tokenizer" index="2lD6_D" />
       </concept>
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
@@ -398,13 +398,13 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="ng" index="1kHk_G" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="1984422498404562223" name="rightTransformationText" index="2ee62g" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
-      <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ng" index="1Lj6DC" />
+      <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
       </concept>
@@ -436,9 +436,9 @@
       </concept>
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
-      <concept id="1925286362805506099" name="de.slisson.mps.tables.structure.RowShadeColor" flags="ng" index="bmIQc" />
-      <concept id="1925286362805485372" name="de.slisson.mps.tables.structure.RowBorderBottomWidthStyleItem" flags="ng" index="bmOa3" />
-      <concept id="1925286362805485371" name="de.slisson.mps.tables.structure.RowBorderBottomColorItem" flags="ng" index="bmOa4" />
+      <concept id="1925286362805506099" name="de.slisson.mps.tables.structure.RowShadeColor" flags="lg" index="bmIQc" />
+      <concept id="1925286362805485372" name="de.slisson.mps.tables.structure.RowBorderBottomWidthStyleItem" flags="lg" index="bmOa3" />
+      <concept id="1925286362805485371" name="de.slisson.mps.tables.structure.RowBorderBottomColorItem" flags="lg" index="bmOa4" />
       <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
         <child id="1397920687865593523" name="cells" index="2r0Tv6" />
       </concept>
@@ -460,10 +460,10 @@
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
         <child id="1397920687864864726" name="columnHeaders" index="2rfbqz" />
       </concept>
-      <concept id="4384308856523593884" name="de.slisson.mps.tables.structure.HorizontalAlignmentStyleItem" flags="ng" index="Qq2$L">
+      <concept id="4384308856523593884" name="de.slisson.mps.tables.structure.HorizontalAlignmentStyleItem" flags="lg" index="Qq2$L">
         <property id="4384308856523593885" name="alignment" index="Qq2$K" />
       </concept>
-      <concept id="4384308856523540092" name="de.slisson.mps.tables.structure.VerticalAlignmentStyleItem" flags="ng" index="QtRvh">
+      <concept id="4384308856523540092" name="de.slisson.mps.tables.structure.VerticalAlignmentStyleItem" flags="lg" index="QtRvh">
         <property id="4384308856523581138" name="alignment" index="QtXtZ" />
       </concept>
       <concept id="5662204344885760731" name="de.slisson.mps.tables.structure.IStylable" flags="ng" index="1g0I81">
@@ -472,10 +472,10 @@
       <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG">
         <child id="3785936898437886280" name="items" index="3hTmz4" />
       </concept>
-      <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="ng" index="3hSBzd">
+      <concept id="3785936898437423425" name="de.slisson.mps.tables.structure.IntegerTableStyleItem" flags="lg" index="3hSBzd">
         <property id="3785936898437424562" name="value" index="3hSBKY" />
       </concept>
-      <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="ng" index="3hZEDM">
+      <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="lg" index="3hZEDM">
         <property id="1186403713874" name="color" index="Vb097" />
       </concept>
     </language>

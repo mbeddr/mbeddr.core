@@ -17,7 +17,7 @@
     </language>
   </registry>
   <node concept="2F6ySF" id="7PyP3ULmfPv">
-    <ref role="2F6ySG" to="h0qv:4l47ydyjg11" />
+    <ref role="2F6ySG" to="h0qv:4l47ydyjg11" resolve="_000_CBMC_Top" />
   </node>
 </model>
 

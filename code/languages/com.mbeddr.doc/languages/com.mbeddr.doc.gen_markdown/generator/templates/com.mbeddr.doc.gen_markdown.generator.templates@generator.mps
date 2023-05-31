@@ -284,7 +284,7 @@
       <ref role="aOQi4" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
     </node>
     <node concept="3lhOvk" id="1Gd_uyNdwA1" role="3lj3bC">
-      <ref role="3lhOvi" node="GfNMM3dKs3" />
+      <ref role="3lhOvi" node="GfNMM3dKs3" resolve="markdownDocument" />
       <ref role="30HIoZ" to="2c95:2TZO3DbuxwK" resolve="Document" />
       <node concept="30G5F_" id="1Gd_uyNdy1g" role="30HLyM">
         <node concept="3clFbS" id="1Gd_uyNdy1h" role="2VODD2">

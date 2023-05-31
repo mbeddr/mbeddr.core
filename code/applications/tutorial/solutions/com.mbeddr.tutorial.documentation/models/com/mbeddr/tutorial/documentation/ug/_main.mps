@@ -127,36 +127,36 @@
   <node concept="1_1swa" id="hZfTLLg0H0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="mbeddrUserGuide" />
-    <ref role="G9hjw" node="2fBMM_3XZ4C" />
+    <ref role="G9hjw" node="2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="hZfTLLCm6$" role="1DXQ57">
-      <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" />
+      <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" resolve="Z_CHAPTER_Concepts" />
     </node>
     <node concept="1_0j5j" id="4v5hnzpb3d$" role="1DXQ57">
-      <ref role="1_0j5g" to="xojk:1OEOMsplgM2" />
+      <ref role="1_0j5g" to="xojk:1OEOMsplgM2" resolve="Z_CHAPTER_Installation" />
     </node>
     <node concept="1_0j5j" id="1OEOMsplkBA" role="1DXQ57">
-      <ref role="1_0j5g" to="c4ys:1OEOMspli$k" />
+      <ref role="1_0j5g" to="c4ys:1OEOMspli$k" resolve="Z_CHAPTER_mbeddrCvsC99" />
     </node>
     <node concept="1_0j5j" id="hZfTLLrEV4" role="1DXQ57">
-      <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" />
+      <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" resolve="Z_CHAPTER_Fundamentals" />
     </node>
     <node concept="1_0j5j" id="hZfTLMek8R" role="1DXQ57">
-      <ref role="1_0j5g" to="4v62:1ig5EljjfWv" />
+      <ref role="1_0j5g" to="4v62:1ig5EljjfWv" resolve="Z_CHAPTER_GeneratedCode" />
     </node>
     <node concept="1_0j5j" id="1OEOMsplgLz" role="1DXQ57">
-      <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" />
+      <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" resolve="Z_CHAPTER_CTooling" />
     </node>
     <node concept="1_0j5j" id="1OEOMspldiC" role="1DXQ57">
-      <ref role="1_0j5g" to="vaym:1OEOMspkYrg" />
+      <ref role="1_0j5g" to="vaym:1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
     </node>
     <node concept="1_0j5j" id="1OEOMsplmvo" role="1DXQ57">
-      <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" />
+      <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" resolve="Z_CHAPTER_ProcessSupport" />
     </node>
     <node concept="1_0j5j" id="hZfTLMezRU" role="1DXQ57">
-      <ref role="1_0j5g" to="us0v:1ig5EljjfWv" />
+      <ref role="1_0j5g" to="us0v:1ig5EljjfWv" resolve="Z_CHAPTER_Analyses" />
     </node>
     <node concept="1_0j5j" id="1OEOMsplf4L" role="1DXQ57">
-      <ref role="1_0j5g" to="t8u7:1OEOMspldJi" />
+      <ref role="1_0j5g" to="t8u7:1OEOMspldJi" resolve="Z_CHAPTER_ComplexProjects" />
     </node>
     <node concept="3wLtaw" id="QRmqzH$YQa" role="1_0VJ0">
       <property role="TrG5h" value="introAndTOC" />
@@ -190,7 +190,7 @@
             <property role="19SUeA" value=". When you report a problem, please make sure you include a Node Info for the problem (see " />
           </node>
           <node concept="1_0GAv" id="12l$qjdi4IA" role="19SJt6">
-            <ref role="1_0GAl" to="bmc6:12l$qjdi29y" />
+            <ref role="1_0GAl" to="bmc6:12l$qjdi29y" resolve="utiltites" />
           </node>
           <node concept="19SUe$" id="12l$qjdi4IB" role="19SJt6">
             <property role="19SUeA" value=" for details on what a Node Info is)." />
@@ -210,7 +210,7 @@
             <property role="19SUeA" value="You can use mbeddr's full text search utility provided by mbeddr: see " />
           </node>
           <node concept="1_0GAv" id="1eKX9CUoOat" role="19SJt6">
-            <ref role="1_0GAl" to="bmc6:1eKX9CUmhZD" />
+            <ref role="1_0GAl" to="bmc6:1eKX9CUmhZD" resolve="searching" />
           </node>
           <node concept="19SUe$" id="1eKX9CUoOau" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -258,47 +258,47 @@
     <node concept="3xmJbL" id="QRmqzHO4hm" role="1_0VJ0" />
     <node concept="$CzcT" id="hZfTLLCm6j" role="1_0VJ0">
       <node concept="1_0j5j" id="hZfTLLCm6D" role="$CzcU">
-        <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" />
+        <ref role="1_0j5g" to="9w7i:1ig5Eljjfz2" resolve="Z_CHAPTER_Concepts" />
       </node>
     </node>
     <node concept="$CzcT" id="hZfTLLvFnn" role="1_0VJ0">
       <node concept="1_0j5j" id="4v5hnzpb3dK" role="$CzcU">
-        <ref role="1_0j5g" to="xojk:1OEOMsplgM2" />
+        <ref role="1_0j5g" to="xojk:1OEOMsplgM2" resolve="Z_CHAPTER_Installation" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplizW" role="1_0VJ0">
       <node concept="1_0j5j" id="1OEOMsplizX" role="$CzcU">
-        <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" />
+        <ref role="1_0j5g" to="bmc6:1ig5EljjfWv" resolve="Z_CHAPTER_Fundamentals" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplkC6" role="1_0VJ0">
       <node concept="1_0j5j" id="1OEOMsplkCN" role="$CzcU">
-        <ref role="1_0j5g" to="c4ys:1OEOMspli$k" />
+        <ref role="1_0j5g" to="c4ys:1OEOMspli$k" resolve="Z_CHAPTER_mbeddrCvsC99" />
       </node>
     </node>
     <node concept="$CzcT" id="hZfTLMek95" role="1_0VJ0">
       <node concept="1_0j5j" id="hZfTLMek9i" role="$CzcU">
-        <ref role="1_0j5g" to="4v62:1ig5EljjfWv" />
+        <ref role="1_0j5g" to="4v62:1ig5EljjfWv" resolve="Z_CHAPTER_GeneratedCode" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplgLG" role="1_0VJ0">
       <node concept="1_0j5j" id="1OEOMsplgLZ" role="$CzcU">
-        <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" />
+        <ref role="1_0j5g" to="4kwm:1OEOMsplf5g" resolve="Z_CHAPTER_CTooling" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMspldIM" role="1_0VJ0">
       <node concept="1_0j5j" id="1OEOMspldJf" role="$CzcU">
-        <ref role="1_0j5g" to="vaym:1OEOMspkYrg" />
+        <ref role="1_0j5g" to="vaym:1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
       </node>
     </node>
     <node concept="$CzcT" id="hZfTLMezS0" role="1_0VJ0">
       <node concept="1_0j5j" id="1OEOMsplmvX" role="$CzcU">
-        <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" />
+        <ref role="1_0j5g" to="vi23:1OEOMsplkCQ" resolve="Z_CHAPTER_ProcessSupport" />
       </node>
     </node>
     <node concept="$CzcT" id="1OEOMsplmv$" role="1_0VJ0">
       <node concept="1_0j5j" id="1OEOMsplmv_" role="$CzcU">
-        <ref role="1_0j5g" to="us0v:1ig5EljjfWv" />
+        <ref role="1_0j5g" to="us0v:1ig5EljjfWv" resolve="Z_CHAPTER_Analyses" />
       </node>
     </node>
   </node>
@@ -307,34 +307,34 @@
     <property role="WqcPg" value="mbeddr User Guide" />
     <node concept="2SbEIf" id="Gd6QB8f5P3" role="30Gjbg">
       <property role="2SbEId" value="images/_vis" />
-      <ref role="2SbEIe" node="2fBMM_3XZ4R" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4R" resolve="vis" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8f5OX" role="30Gjbg">
       <property role="2SbEId" value="images" />
-      <ref role="2SbEIe" node="2fBMM_3XZ4D" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4D" resolve="images" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3vY" role="30Gjbg">
       <property role="2SbEId" value="images/concepts" />
-      <ref role="2SbEIe" node="2fBMM_3XZ4H" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4H" resolve="conceptImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wf" role="30Gjbg">
       <property role="2SbEId" value="images/fundamentals" />
-      <ref role="2SbEIe" node="2fBMM_3XZ4L" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4L" resolve="fundamentalImages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3w$" role="30Gjbg">
       <property role="2SbEId" value="images/ctooling/helloWolrd" />
-      <ref role="2SbEIe" node="2fBMM_3XZ4J" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4J" resolve="hwimages" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3wX" role="30Gjbg">
       <property role="2SbEId" value="images/processSupport" />
-      <ref role="2SbEIe" node="45LXldJZEw7" />
+      <ref role="2SbEIe" node="45LXldJZEw7" resolve="imagesProcessSupport" />
     </node>
     <node concept="2SbEIf" id="5pyBnOIk3xq" role="30Gjbg">
       <property role="2SbEId" value="images/cextensions/statemachines" />
-      <ref role="2SbEIe" node="2fBMM_3XZ4F" />
+      <ref role="2SbEIe" node="2fBMM_3XZ4F" resolve="smimages" />
     </node>
     <node concept="1_0j5j" id="Gd6QB8f5OP" role="30Gjbj">
-      <ref role="1_0j5g" node="hZfTLLg0H0" />
+      <ref role="1_0j5g" node="hZfTLLg0H0" resolve="mbeddrUserGuide" />
     </node>
     <node concept="1jVoCB" id="4pE1MOiXbRA" role="30Gjbi">
       <property role="1jVoCx" value="report" />

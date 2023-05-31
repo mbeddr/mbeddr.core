@@ -107,7 +107,7 @@
   <node concept="1_1swa" id="2khznRHyx5W">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="main_document_including_other_docs" />
-    <ref role="G9hjw" node="2khznRHyx6c" />
+    <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
     <node concept="1_0VNX" id="2khznRHyx5X" role="1_0VJ0">
       <property role="TrG5h" value="firstsection" />
       <property role="1_0VJr" value="This the first section" />
@@ -117,13 +117,13 @@
             <property role="19SUeA" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, purus non commodo efficitur, quam odio fermentum mi, ut tincidunt dolor neque non lacus. Vestibulum sit amet aliquam leo, mollis iaculis velit. Donec rhoncus, diam sed rutrum porttitor, mauris risus faucibus dui, at mattis nisi eros in ligula. Nunc mauris quam, aliquam quis mauris iaculis, luctus viverra leo. Sed pharetra sodales diam. Duis luctus velit in justo volutpat sagittis. Suspendisse et eleifend dolor.&#10;&#10;" />
           </node>
           <node concept="1_0GAv" id="2khznRHyCug" role="19SJt6">
-            <ref role="1_0GAl" node="2khznRHyCtE" />
+            <ref role="1_0GAl" node="2khznRHyCtE" resolve="second_section_from_first_document" />
           </node>
           <node concept="19SUe$" id="2khznRHyCuh" role="19SJt6">
             <property role="19SUeA" value="&#10;" />
           </node>
           <node concept="1_0GAv" id="2khznRHyxpp" role="19SJt6">
-            <ref role="1_0GAl" to="lluw:2khznRHyx6L" />
+            <ref role="1_0GAl" to="lluw:2khznRHyx6L" resolve="secondsection" />
           </node>
           <node concept="19SUe$" id="2khznRHyxpq" role="19SJt6" />
         </node>
@@ -157,11 +157,11 @@
     </node>
     <node concept="$CzcT" id="2khznRHyxfl" role="1_0VJ0">
       <node concept="1_0j5j" id="2khznRHyxfQ" role="$CzcU">
-        <ref role="1_0j5g" to="lluw:2khznRHyx6K" />
+        <ref role="1_0j5g" to="lluw:2khznRHyx6K" resolve="sub_document_2" />
       </node>
     </node>
     <node concept="1_0j5j" id="2khznRHyxfN" role="1DXQ57">
-      <ref role="1_0j5g" to="lluw:2khznRHyx6K" />
+      <ref role="1_0j5g" to="lluw:2khznRHyx6K" resolve="sub_document_2" />
     </node>
   </node>
   <node concept="1_08Dk" id="2khznRHyx68">
@@ -169,10 +169,10 @@
     <property role="WqcPg" value="My strange export config" />
     <node concept="2SbEIf" id="4eRbT2iEycg" role="30Gjbg">
       <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
-      <ref role="2SbEIe" node="2khznRHyx6e" />
+      <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
-      <ref role="1_0j5g" node="2khznRHyx5W" />
+      <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_including_other_docs" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
   </node>

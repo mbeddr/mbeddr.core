@@ -371,7 +371,7 @@
   </node>
   <node concept="3fbPIq" id="34d3$NxWRf1">
     <property role="TrG5h" value="Requirements" />
-    <ref role="G9hjw" node="1TS1BLOVkLg" />
+    <ref role="G9hjw" node="1TS1BLOVkLg" resolve="DefaultDocConfig" />
     <node concept="3fbQ3u" id="34d3$NxWRf2" role="3fbPIo">
       <property role="TrG5h" value="R1" />
       <property role="1ylvJX" value="Price is 10 EUR" />

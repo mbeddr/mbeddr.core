@@ -426,7 +426,7 @@
       <ref role="aOQi4" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
     </node>
     <node concept="3lhOvk" id="2TZO3DbvUtX" role="3lj3bC">
-      <ref role="3lhOvi" node="2TZO3DbvV1h" />
+      <ref role="3lhOvi" node="2TZO3DbvV1h" resolve="map_Document" />
       <ref role="30HIoZ" to="2c95:2TZO3DbuxwK" resolve="Document" />
       <node concept="30G5F_" id="3RseghIcrvP" role="30HLyM">
         <node concept="3clFbS" id="3RseghIcrvQ" role="2VODD2">
@@ -744,7 +744,7 @@
                         <node concept="37vLTI" id="QRmqzIqymQ" role="3clFbG">
                           <node concept="2OqwBi" id="QRmqzIqyyT" role="37vLTx">
                             <node concept="3B5_sB" id="QRmqzIqyqn" role="2Oq$k0">
-                              <ref role="3B5MYn" to="3t5i:QRmqzIr8VN" />
+                              <ref role="3B5MYn" to="3t5i:QRmqzIr8VN" resolve="DefaultCssStyle" />
                             </node>
                             <node concept="1$rogu" id="QRmqzIqyT8" role="2OqNvi" />
                           </node>

@@ -130,7 +130,7 @@
   <node concept="1_1swa" id="1ig5EljjfQO">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_MPSUI" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="71c9NxixwDH" role="lGtFl" />
     <node concept="1_0VNX" id="1ig5EljltTU" role="1_0VJ0">
       <property role="TrG5h" value="mpsUI" />
@@ -144,7 +144,7 @@
               <property role="19SUeA" value="Fundamentally, MPS looks and works like any modern IDE. " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljltZ8" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljltYM" />
+              <ref role="2SbdyP" node="1ig5EljltYM" resolve="markedUpUI" />
             </node>
             <node concept="19SUe$" id="1ig5EljltZ9" role="19SJt6">
               <property role="19SUeA" value=" shows an overview. We describe the various marked up parts below." />
@@ -155,7 +155,7 @@
           <property role="TrG5h" value="markedUpUI" />
           <node concept="2Sb_l4" id="2fBMM_3YhqB" role="2SbwM5">
             <property role="2Sb_kV" value="markedUpUI.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljltYQ" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljltYR" role="OjmMu">
@@ -202,7 +202,7 @@
               <property role="19SUeA" value="The Logical View contains the project structure. It is the primary means for navigating around mbeddr (and MPS in general). We describe the project structure separately below (" />
             </node>
             <node concept="1_0GAv" id="71c9Nxixzse" role="19SJt6">
-              <ref role="1_0GAl" node="1ig5EljlvzR" />
+              <ref role="1_0GAl" node="1ig5EljlvzR" resolve="projectStructure" />
             </node>
             <node concept="19SUe$" id="1ig5Eljluxh" role="19SJt6">
               <property role="19SUeA" value="). The Project Explorer is an example of a Tool (aka View in Eclipse). " />
@@ -215,7 +215,7 @@
               <property role="19SUeA" value="The main part of the MPS window is made up of the editor pane. The editor pane contains any number of editors, each with its own Tab. Each editor edits a so-called root (see " />
             </node>
             <node concept="1_0GAv" id="3mn43GOU67Y" role="19SJt6">
-              <ref role="1_0GAl" node="1ig5EljqufT" />
+              <ref role="1_0GAl" node="1ig5EljqufT" resolve="nodesAndConcepts" />
             </node>
             <node concept="19SUe$" id="3mn43GOU67X" role="19SJt6">
               <property role="19SUeA" value="). It is also possible to split the editor pane into several editors (arranged vertically and horizontally) through the " />
@@ -319,7 +319,7 @@
               <property role="19SUeA" value="As mentioned above, the Project Explorer (in its Logical View mode) contains the overall structure of the project. It is the primary means of navigating around your code. We'll describe it in more detail in " />
             </node>
             <node concept="1_0GAv" id="1ig5EljlvzK" role="19SJt6">
-              <ref role="1_0GAl" node="1ig5EljlvzR" />
+              <ref role="1_0GAl" node="1ig5EljlvzR" resolve="projectStructure" />
             </node>
             <node concept="19SUe$" id="1ig5EljlvzL" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -335,7 +335,7 @@
               <property role="19SUeA" value="The Changes view shows the files that have been changed since the last commit. This is part of MPS' version control support and is discussed in more detail in " />
             </node>
             <node concept="1_0GAv" id="1ig5Eljqu5u" role="19SJt6">
-              <ref role="1_0GAl" node="1ig5Eljqu2V" />
+              <ref role="1_0GAl" node="1ig5Eljqu2V" resolve="versionControl" />
             </node>
             <node concept="19SUe$" id="1ig5Eljqu5v" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -361,7 +361,7 @@
               <property role="19SUeA" value=" on a project, solution, language or model. It shows warnings and errors. Double-clicking on an element opens this element in the editor. There are various options for grouping and filtering the contents using the buttons on the left. You should play around with these options. " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqucJ" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5Eljqubu" />
+              <ref role="2SbdyP" node="1ig5Eljqubu" resolve="modelchecker" />
             </node>
             <node concept="19SUe$" id="1ig5EljqucK" role="19SJt6">
               <property role="19SUeA" value=" shows an example. Note that errors that result from a transformation (code generation) are not shown here. They are shown in the Messages view." />
@@ -375,7 +375,7 @@
           <property role="TrG5h" value="modelchecker" />
           <node concept="2Sb_l4" id="2fBMM_3YhqF" role="2SbwM5">
             <property role="2Sb_kV" value="modelchecker.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5Eljqubw" role="2SaI5j">
             <node concept="19SGf9" id="1ig5Eljqubx" role="OjmMu">
@@ -405,7 +405,7 @@
               <property role="19SUeA" value="A visualization is a read-only diagram of some program structures. It is layouted automatically. Users can double-click on nodes and labels to jump back into the code. " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqFBs" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqFvo" />
+              <ref role="2SbdyP" node="1ig5EljqFvo" resolve="vis" />
             </node>
             <node concept="19SUe$" id="1ig5EljqFBt" role="19SJt6">
               <property role="19SUeA" value=" shows an example. To open a visualization, users can press " />
@@ -429,7 +429,7 @@
           <property role="TrG5h" value="vis" />
           <node concept="2Sb_l4" id="2fBMM_3YhqJ" role="2SbwM5">
             <property role="2Sb_kV" value="vis.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljqFvq" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljqFvr" role="OjmMu">
@@ -469,7 +469,7 @@
           <property role="TrG5h" value="treeviews" />
           <node concept="2Sb_l4" id="2fBMM_3YhqN" role="2SbwM5">
             <property role="2Sb_kV" value="treeview.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljqFKD" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljqFKE" role="OjmMu">
@@ -518,7 +518,7 @@
               <property role="19SUeA" value=" from the context menu. " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqtVj" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljlvAR" />
+              <ref role="2SbdyP" node="1ig5EljlvAR" resolve="explorer" />
             </node>
             <node concept="19SUe$" id="1ig5EljqtVk" role="19SJt6">
               <property role="19SUeA" value=" shows an example." />
@@ -532,7 +532,7 @@
           <property role="TrG5h" value="explorer" />
           <node concept="2Sb_l4" id="2fBMM_3YhqR" role="2SbwM5">
             <property role="2Sb_kV" value="explorer.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljlvAV" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljlvAW" role="OjmMu">
@@ -546,16 +546,16 @@
       </node>
     </node>
     <node concept="1_0j5j" id="1ig5EljlvzP" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfTO" />
+      <ref role="1_0j5g" node="1ig5EljjfTO" resolve="B_ProjectStructure" />
     </node>
     <node concept="1_0j5j" id="1ig5Eljqu5A" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfVQ" />
+      <ref role="1_0j5g" node="1ig5EljjfVQ" resolve="F_VersionControl" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5EljjfTO">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_ProjectStructure" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljlvzR" role="1_0VJ0">
       <property role="TrG5h" value="projectStructure" />
       <property role="1_0VJr" value="Project Structure" />
@@ -568,13 +568,13 @@
               <property role="19SUeA" value="MPS programs are trees of nodes (this is the structure you can see in the Node Explorer). Each node can have several children, resulting in the tree structure. However, there can also be cross-references between nodes in a program tree. So this makes MPS programs a graph, but one with a primary containment hierarchy. And in fact, a complete MPS program consists of several such trees, we call each of theses trees a Root. Importantly, each Root gets its own editor tab in MPS. References can be across Root boundaries. " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqGSm" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqGRV" />
+              <ref role="2SbdyP" node="1ig5EljqGRV" resolve="nodesRoots" />
             </node>
             <node concept="19SUe$" id="1ig5EljqGSn" role="19SJt6">
               <property role="19SUeA" value=" shows the structure. In " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqH8L" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqH85" />
+              <ref role="2SbdyP" node="1ig5EljqH85" resolve="projectStructure" />
             </node>
             <node concept="19SUe$" id="1ig5EljqH8M" role="19SJt6">
               <property role="19SUeA" value=", all the implementation modules (blue I icon) such as " />
@@ -605,7 +605,7 @@
           <property role="TrG5h" value="nodesRoots" />
           <node concept="2Sb_l4" id="2fBMM_3YgFs" role="2SbwM5">
             <property role="2Sb_kV" value="nodesRoots.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljqGRX" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljqGRY" role="OjmMu">
@@ -625,7 +625,7 @@
               <property role="19SUeA" value="Each node is an instance of a language concept. The language concept defines all properties of its instance nodes, including its visual representation (notation, concrete syntax). Concepts are created as part of a language. " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqGCi" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqGBW" />
+              <ref role="2SbdyP" node="1ig5EljqGBW" resolve="nodesAndConcepts_png" />
             </node>
             <node concept="19SUe$" id="1ig5EljqGCj" role="19SJt6">
               <property role="19SUeA" value=" shows this relationship. " />
@@ -636,7 +636,7 @@
           <property role="TrG5h" value="nodesAndConcepts_png" />
           <node concept="2Sb_l4" id="2fBMM_3YgFw" role="2SbwM5">
             <property role="2Sb_kV" value="nodesAndConcepts.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljqGC0" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljqGC1" role="OjmMu">
@@ -657,7 +657,7 @@
               <property role="19SUeA" value="MPS has an elaborate project structure. We discuss the most important ingredients in this section. Each of the ingredients is used for configuring different aspects of the overall project. We describe this in " />
             </node>
             <node concept="1_0GAv" id="1ig5EljqHyd" role="19SJt6">
-              <ref role="1_0GAl" node="1ig5EljqGkY" />
+              <ref role="1_0GAl" node="1ig5EljqGkY" resolve="langAndDevkits" />
             </node>
             <node concept="19SUe$" id="1ig5EljqHye" role="19SJt6">
               <property role="19SUeA" value=". The basics on the various kinds of dependencies between these ingredients are discussed  below. The (vast load of) details are  discussed in " />
@@ -679,7 +679,7 @@
           <property role="2Sbq$t" value="false" />
           <node concept="2Sb_l4" id="2fBMM_3Yhqz" role="2SbwM5">
             <property role="2Sb_kV" value="projectStructure.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljqH89" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljqH8a" role="OjmMu">
@@ -696,7 +696,7 @@
               <property role="19SUeA" value="MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see " />
             </node>
             <node concept="1_0GAv" id="3mn43GOU697" role="19SJt6">
-              <ref role="1_0GAl" node="1ig5Eljqu2V" />
+              <ref role="1_0GAl" node="1ig5Eljqu2V" resolve="versionControl" />
             </node>
             <node concept="19SUe$" id="3mn43GOU696" role="19SJt6">
               <property role="19SUeA" value="). These files are called " />
@@ -712,7 +712,7 @@
               <property role="19SUeA" value=" in MPS. Each model contains a number of roots (which then have arbitrary substructure). In " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqHhC" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqH85" />
+              <ref role="2SbdyP" node="1ig5EljqH85" resolve="projectStructure" />
             </node>
             <node concept="19SUe$" id="1ig5EljqHhD" role="19SJt6">
               <property role="19SUeA" value=", the purple diamonds with the little M inside are models. Models als determine which languages are used for the programs/roots/nodes inside the model. Models can import each other in order to be able to establish cross-references. These dependencies are established in the " />
@@ -738,7 +738,7 @@
               <property role="19SUeA" value="Models are important because they represent the only real &quot;physical structure&quot; in MPS. Hence they are the granularity relevant to version control (since they are files, it is models that are seen by file-based tools such as git). Also, the MPS transformation and generation engine always processes complete models. So in order to keep (partial) generation times low, you should split your overall system into a reasonable number of (relatively small-sized) models. See " />
             </node>
             <node concept="1_0GAv" id="4IT6uo9QEU" role="19SJt6">
-              <ref role="1_0GAl" to="t8u7:1OEOMsplmw8" />
+              <ref role="1_0GAl" to="t8u7:1OEOMsplmw8" resolve="complexProjects" />
             </node>
             <node concept="19SUe$" id="4IT6uo9QET" role="19SJt6">
               <property role="19SUeA" value=" for details." />
@@ -751,7 +751,7 @@
               <property role="19SUeA" value="From a user's perspective, a solution is where application code lives (this is in contrast to Languges, which is where language definitions reside). Technically, a solution is a way to group models. A solution can contain any number of models and each model resides in exactly one solution. In " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqHup" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqH85" />
+              <ref role="2SbdyP" node="1ig5EljqH85" resolve="projectStructure" />
             </node>
             <node concept="19SUe$" id="1ig5EljqHuz" role="19SJt6">
               <property role="19SUeA" value=", the orange " />
@@ -791,7 +791,7 @@
               <property role="19SUeA" value="To be able to write code in a model, that model must specify which languages should be used to write the code. As shown in " />
             </node>
             <node concept="2Sbdz4" id="1ig5EljqHBU" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljqHB$" />
+              <ref role="2SbdyP" node="1ig5EljqHB$" resolve="usedLangs_png" />
             </node>
             <node concept="19SUe$" id="1ig5EljqHBV" role="19SJt6">
               <property role="19SUeA" value=", these languages are specified in the " />
@@ -812,7 +812,7 @@
           <property role="TrG5h" value="usedLangs_png" />
           <node concept="2Sb_l4" id="2fBMM_3Yhqv" role="2SbwM5">
             <property role="2Sb_kV" value="usedLangs.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljqHBC" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljqHBD" role="OjmMu">
@@ -932,22 +932,22 @@
     </node>
     <node concept="2f$52y" id="71c9NxixDZR" role="lGtFl" />
     <node concept="1_0j5j" id="4IT6uo9QER" role="1DXQ57">
-      <ref role="1_0j5g" to="t8u7:1OEOMspldJi" />
+      <ref role="1_0j5g" to="t8u7:1OEOMspldJi" resolve="Z_CHAPTER_ComplexProjects" />
     </node>
     <node concept="1_0j5j" id="3mn43GOU690" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfVQ" />
+      <ref role="1_0j5g" node="1ig5EljjfVQ" resolve="F_VersionControl" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5EljjfU0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Editor" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="5A_Zlt6hTG1" role="lGtFl" />
     <node concept="1_0j5j" id="hZfTLLfZqc" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfVj" />
+      <ref role="1_0j5g" node="1ig5EljjfVj" resolve="D_KeyboardShortcuts" />
     </node>
     <node concept="1_0j5j" id="hZfTLLfZqm" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfWu" />
+      <ref role="1_0j5g" node="1ig5EljjfWu" resolve="I_CheatSheet" />
     </node>
     <node concept="1_0VNX" id="1ig5EljjfU_" role="1_0VJ0">
       <property role="TrG5h" value="editor" />
@@ -976,13 +976,13 @@
               <property role="19SUeA" value="In addition, the section on " />
             </node>
             <node concept="1_0GAv" id="hZfTLLfZqe" role="19SJt6">
-              <ref role="1_0GAl" node="6VFmq3HIai$" />
+              <ref role="1_0GAl" node="6VFmq3HIai$" resolve="ImportantShortcuts" />
             </node>
             <node concept="19SUe$" id="hZfTLLfZqf" role="19SJt6">
               <property role="19SUeA" value=" has a lot of important keyboard shortcuts. Please take the time to read this section! The cheat sheet in " />
             </node>
             <node concept="1_0GAv" id="hZfTLLfZqq" role="19SJt6">
-              <ref role="1_0GAl" node="6VFmq3HMiJz" />
+              <ref role="1_0GAl" node="6VFmq3HMiJz" resolve="CheatSheet" />
             </node>
             <node concept="19SUe$" id="hZfTLLfZqr" role="19SJt6">
               <property role="19SUeA" value=" also summarizes them again." />
@@ -1016,7 +1016,7 @@
               <property role="19SUeA" value=". See also " />
             </node>
             <node concept="2Sbdz4" id="1OEOMsplzjs" role="19SJt6">
-              <ref role="2SbdyP" node="1OEOMsplziZ" />
+              <ref role="2SbdyP" node="1OEOMsplziZ" resolve="projectionModes" />
             </node>
             <node concept="19SUe$" id="1OEOMsplzjt" role="19SJt6">
               <property role="19SUeA" value=". The menu shows only those options that are valid for the languages used in the current model, and the selection is specific for any given editor/root. The specific entries are discussed in the context of their respective languages. " />
@@ -1027,7 +1027,7 @@
           <property role="TrG5h" value="projectionModes" />
           <node concept="2Sb_l4" id="2fBMM_3YgFo" role="2SbwM5">
             <property role="2Sb_kV" value="projectionModes.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1OEOMsplzj3" role="2SaI5j">
             <node concept="19SGf9" id="1OEOMsplzj4" role="OjmMu">
@@ -1044,7 +1044,7 @@
   <node concept="1_1swa" id="1ig5EljjfVj">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_KeyboardShortcuts" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="6VFmq3HIai$" role="1_0VJ0">
       <property role="TrG5h" value="ImportantShortcuts" />
       <property role="1_0VJr" value="Keyboard Shortcuts" />
@@ -1996,7 +1996,7 @@
         <property role="TrG5h" value="keymap" />
         <node concept="2Sb_l4" id="2fBMM_3YgFk" role="2SbwM5">
           <property role="2Sb_kV" value="keymapbuild.png" />
-          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
         </node>
         <node concept="OjmMv" id="6VFmq3HK7rx" role="2SaI5j">
           <node concept="19SGf9" id="6VFmq3HK7ry" role="OjmMu">
@@ -2012,7 +2012,7 @@
   <node concept="1_1swa" id="1ig5EljjfVQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="F_VersionControl" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Eljqu2V" role="1_0VJ0">
       <property role="TrG5h" value="versionControl" />
       <property role="1_0VJr" value="Version Control" />
@@ -2110,7 +2110,7 @@
               <property role="19SUeA" value=" is simply a root directory in which git (or other version control systems) store their meta data. You can configure the roots via the Preferences (see " />
             </node>
             <node concept="2Sbdz4" id="61X7WOB1z8N" role="19SJt6">
-              <ref role="2SbdyP" node="61X7WOB1z8i" />
+              <ref role="2SbdyP" node="61X7WOB1z8i" resolve="vcsSetup" />
             </node>
             <node concept="19SUe$" id="61X7WOB1z8O" role="19SJt6">
               <property role="19SUeA" value="). Note that MPS also detects directories that could/should be roots and brings up a popup." />
@@ -2121,7 +2121,7 @@
           <property role="TrG5h" value="vcsSetup" />
           <node concept="2Sb_l4" id="2fBMM_3YgEA" role="2SbwM5">
             <property role="2Sb_kV" value="vcssetup.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="61X7WOB1z8m" role="2SaI5j">
             <node concept="19SGf9" id="61X7WOB1z8n" role="OjmMu">
@@ -2142,13 +2142,13 @@
               <property role="19SUeA" value="As you edit code in the regular MPS editor, MPS keeps track of changes. In particular, it shows changes in the left gutter. " />
             </node>
             <node concept="2Sbdz4" id="61X7WOB4QF2" role="19SJt6">
-              <ref role="2SbdyP" node="61X7WOB4QEF" />
+              <ref role="2SbdyP" node="61X7WOB4QEF" resolve="vcsAdded" />
             </node>
             <node concept="19SUe$" id="61X7WOB4QF3" role="19SJt6">
               <property role="19SUeA" value=" shows how new nodes are highlighted. MPS also shows changes to existing nodes as shown in " />
             </node>
             <node concept="2Sbdz4" id="61X7WOB4QFv" role="19SJt6">
-              <ref role="2SbdyP" node="61X7WOB4QF7" />
+              <ref role="2SbdyP" node="61X7WOB4QF7" resolve="vcsChanged" />
             </node>
             <node concept="19SUe$" id="61X7WOB4QFw" role="19SJt6">
               <property role="19SUeA" value=". Clicking on the respective color bar in the gutter lets you revert that change, among other things. It also lets you show a detailed diff; we discuss the diff in the next paragraph." />
@@ -2162,7 +2162,7 @@
           <property role="TrG5h" value="vcsAdded" />
           <node concept="2Sb_l4" id="2fBMM_3YgEE" role="2SbwM5">
             <property role="2Sb_kV" value="vcsAdded.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="61X7WOB4QEJ" role="2SaI5j">
             <node concept="19SGf9" id="61X7WOB4QEK" role="OjmMu">
@@ -2177,7 +2177,7 @@
           <property role="TrG5h" value="vcsChanged" />
           <node concept="2Sb_l4" id="2fBMM_3YgEI" role="2SbwM5">
             <property role="2Sb_kV" value="vcsChanged.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="61X7WOB4QF9" role="2SaI5j">
             <node concept="19SGf9" id="61X7WOB4QFa" role="OjmMu">
@@ -2194,7 +2194,7 @@
               <property role="19SUeA" value="The Changes view keeps track of which files (i.e., models) have changed on your system compared to the latest in the version control system. " />
             </node>
             <node concept="2Sbdz4" id="61X7WOB6Zvy" role="19SJt6">
-              <ref role="2SbdyP" node="61X7WOB6ZuR" />
+              <ref role="2SbdyP" node="61X7WOB6ZuR" resolve="changesView" />
             </node>
             <node concept="19SUe$" id="61X7WOB6Zvz" role="19SJt6">
               <property role="19SUeA" value=" shows an example. The " />
@@ -2220,7 +2220,7 @@
               <property role="19SUeA" value=" from the context menu of the respective model in the changes view. The view which then opens (" />
             </node>
             <node concept="2Sbdz4" id="61X7WOB7cde" role="19SJt6">
-              <ref role="2SbdyP" node="61X7WOB7ccp" />
+              <ref role="2SbdyP" node="61X7WOB7ccp" resolve="diffView" />
             </node>
             <node concept="19SUe$" id="61X7WOB7cdd" role="19SJt6">
               <property role="19SUeA" value=") lets you choose from the changed roots (if several have changed) and then see a diff in the usual side-by-side style. Note that this works for arbitrary notations! You can also undo the changes with the usual operations." />
@@ -2234,7 +2234,7 @@
           <property role="TrG5h" value="changesView" />
           <node concept="2Sb_l4" id="2fBMM_3YgEM" role="2SbwM5">
             <property role="2Sb_kV" value="changesView.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="61X7WOB6ZuV" role="2SaI5j">
             <node concept="19SGf9" id="61X7WOB6ZuW" role="OjmMu">
@@ -2249,7 +2249,7 @@
           <property role="TrG5h" value="diffView" />
           <node concept="2Sb_l4" id="2fBMM_3YgEQ" role="2SbwM5">
             <property role="2Sb_kV" value="diffView.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="61X7WOB7ccr" role="2SaI5j">
             <node concept="19SGf9" id="61X7WOB7ccs" role="OjmMu">
@@ -2327,7 +2327,7 @@
                 <property role="19SUeA" value=". After the update, the Version Control view shows the set of changed files (" />
               </node>
               <node concept="2Sbdz4" id="61X7WOB8buO" role="19SJt6">
-                <ref role="2SbdyP" node="61X7WOB8buq" />
+                <ref role="2SbdyP" node="61X7WOB8buq" resolve="updateChangedFiles" />
               </node>
               <node concept="19SUe$" id="61X7WOB8buP" role="19SJt6">
                 <property role="19SUeA" value="). You can use the context menu to show a diff of the changes that came in. " />
@@ -2338,7 +2338,7 @@
             <property role="TrG5h" value="updateChangedFiles" />
             <node concept="2Sb_l4" id="2fBMM_3YgEU" role="2SbwM5">
               <property role="2Sb_kV" value="updateChangedFiles.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
             </node>
             <node concept="OjmMv" id="61X7WOB8buu" role="2SaI5j">
               <node concept="19SGf9" id="61X7WOB8buv" role="OjmMu">
@@ -2379,7 +2379,7 @@
                 <property role="19SUeA" value=" to bring up the commit dialog. This dialog, shown in " />
               </node>
               <node concept="2Sbdz4" id="61X7WOB9rQG" role="19SJt6">
-                <ref role="2SbdyP" node="61X7WOB9rQe" />
+                <ref role="2SbdyP" node="61X7WOB9rQe" resolve="commitView" />
               </node>
               <node concept="19SUe$" id="61X7WOB9rQH" role="19SJt6">
                 <property role="19SUeA" value=", lets you select the models you want to commit and specify a commit message. By using the context menu on models, you can also revert some of the changes. By pressing the little down-arrow on the " />
@@ -2400,7 +2400,7 @@
             <property role="TrG5h" value="commitView" />
             <node concept="2Sb_l4" id="2fBMM_3YgEY" role="2SbwM5">
               <property role="2Sb_kV" value="commitView.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
             </node>
             <node concept="OjmMv" id="61X7WOB9rQi" role="2SaI5j">
               <node concept="19SGf9" id="61X7WOB9rQj" role="OjmMu">
@@ -2421,7 +2421,7 @@
                 <property role="19SUeA" value="Conflicts happen if the same node(s) are changed independently by different parties. It can happen during an update/pull (if somebody else has changed the same nodes independently) or when merging a branch (in the case where the two branches have changes to the same model). In both cases, the Version Control view, when showing the incoming changes, will mark conflicting files as red, as shown in " />
               </node>
               <node concept="2Sbdz4" id="2NmTaRVRvBf" role="19SJt6">
-                <ref role="2SbdyP" node="61X7WOBcsEr" />
+                <ref role="2SbdyP" node="61X7WOBcsEr" resolve="changesViewConflict" />
               </node>
               <node concept="19SUe$" id="2NmTaRVRvBe" role="19SJt6">
                 <property role="19SUeA" value=". " />
@@ -2432,7 +2432,7 @@
             <property role="TrG5h" value="changesViewConflict" />
             <node concept="2Sb_l4" id="2fBMM_3YgF2" role="2SbwM5">
               <property role="2Sb_kV" value="changesViewConflict.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
             </node>
             <node concept="OjmMv" id="61X7WOBcsEt" role="2SaI5j">
               <node concept="19SGf9" id="61X7WOBcsEu" role="OjmMu">
@@ -2459,7 +2459,7 @@
                 <property role="19SUeA" value=" to open the Merge overview (" />
               </node>
               <node concept="2Sbdz4" id="2NmTaRVRDC0" role="19SJt6">
-                <ref role="2SbdyP" node="61X7WOBcvms" />
+                <ref role="2SbdyP" node="61X7WOBcvms" resolve="mergeView" />
               </node>
               <node concept="19SUe$" id="2NmTaRVRDC1" role="19SJt6">
                 <property role="19SUeA" value="). It shows the list of conflicing files, and for each of them you can select whether you want to accept your local changes (overwriting what comes in), accept the incoming changes (discarding your own changes) or merge manually." />
@@ -2470,7 +2470,7 @@
             <property role="TrG5h" value="mergeView" />
             <node concept="2Sb_l4" id="2fBMM_3YgFc" role="2SbwM5">
               <property role="2Sb_kV" value="mergeOverview.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
             </node>
             <node concept="OjmMv" id="61X7WOBcvmu" role="2SaI5j">
               <node concept="19SGf9" id="61X7WOBcvmv" role="OjmMu">
@@ -2497,7 +2497,7 @@
                 <property role="19SUeA" value=", you will get a three-way merge dialog as shown in " />
               </node>
               <node concept="2Sbdz4" id="2NmTaRVRDZy" role="19SJt6">
-                <ref role="2SbdyP" node="61X7WOBcvGq" />
+                <ref role="2SbdyP" node="61X7WOBcvGq" resolve="threeWayMerge" />
               </node>
               <node concept="19SUe$" id="2NmTaRVRDZz" role="19SJt6">
                 <property role="19SUeA" value=". There you pick and choose then changes you want to use. You can also edit, as well as copy/paste changes into the merge result." />
@@ -2508,7 +2508,7 @@
             <property role="TrG5h" value="threeWayMerge" />
             <node concept="2Sb_l4" id="2fBMM_3YgFg" role="2SbwM5">
               <property role="2Sb_kV" value="threeWayMerge.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
             </node>
             <node concept="OjmMv" id="61X7WOBcvGs" role="2SaI5j">
               <node concept="19SGf9" id="61X7WOBcvGt" role="OjmMu">
@@ -2526,7 +2526,7 @@
   <node concept="1_1swa" id="1ig5EljjfWu">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="I_CheatSheet" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="6VFmq3HMiJz" role="1_0VJ0">
       <property role="1_0VJr" value="Cheat Sheet" />
       <property role="TrG5h" value="CheatSheet" />
@@ -3590,64 +3590,64 @@
   <node concept="1_1swa" id="1ig5EljjfWv">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Fundamentals" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="1ig5Eljl80o" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfQO" />
+      <ref role="1_0j5g" node="1ig5EljjfQO" resolve="A_MPSUI" />
     </node>
     <node concept="1_0j5j" id="1ig5Eljl80p" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfTO" />
+      <ref role="1_0j5g" node="1ig5EljjfTO" resolve="B_ProjectStructure" />
     </node>
     <node concept="1_0j5j" id="1ig5Eljl80q" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfU0" />
+      <ref role="1_0j5g" node="1ig5EljjfU0" resolve="C_Editor" />
     </node>
     <node concept="1_0j5j" id="1ig5Eljl80r" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfVj" />
+      <ref role="1_0j5g" node="1ig5EljjfVj" resolve="D_KeyboardShortcuts" />
     </node>
     <node concept="1_0j5j" id="1ig5Eljl80t" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfVQ" />
+      <ref role="1_0j5g" node="1ig5EljjfVQ" resolve="F_VersionControl" />
     </node>
     <node concept="1_0j5j" id="12l$qjdi29M" role="1DXQ57">
-      <ref role="1_0j5g" node="12l$qjdi1M_" />
+      <ref role="1_0j5g" node="12l$qjdi1M_" resolve="G_Utilities" />
     </node>
     <node concept="1_0j5j" id="1ig5Eljl80w" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjfWu" />
+      <ref role="1_0j5g" node="1ig5EljjfWu" resolve="I_CheatSheet" />
     </node>
     <node concept="1mvXsy" id="1ig5Eljl80E" role="1_0VJ0">
       <property role="TrG5h" value="fundamentals" />
       <property role="1_0VJr" value="Fundamentals" />
       <node concept="$CzcT" id="1ig5Eljl80G" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5Eljl80K" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjfQO" />
+          <ref role="1_0j5g" node="1ig5EljjfQO" resolve="A_MPSUI" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5Eljl80N" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5Eljl827" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjfTO" />
+          <ref role="1_0j5g" node="1ig5EljjfTO" resolve="B_ProjectStructure" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5Eljl80T" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5Eljl82a" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjfU0" />
+          <ref role="1_0j5g" node="1ig5EljjfU0" resolve="C_Editor" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5Eljl811" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5Eljl82d" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjfVj" />
+          <ref role="1_0j5g" node="1ig5EljjfVj" resolve="D_KeyboardShortcuts" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5Eljl81n" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5Eljl82j" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjfVQ" />
+          <ref role="1_0j5g" node="1ig5EljjfVQ" resolve="F_VersionControl" />
         </node>
       </node>
       <node concept="$CzcT" id="12l$qjdi2al" role="1_0VJ0">
         <node concept="1_0j5j" id="12l$qjdi2aB" role="$CzcU">
-          <ref role="1_0j5g" node="12l$qjdi1M_" />
+          <ref role="1_0j5g" node="12l$qjdi1M_" resolve="G_Utilities" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5Eljl82s" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5Eljl82K" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjfWu" />
+          <ref role="1_0j5g" node="1ig5EljjfWu" resolve="I_CheatSheet" />
         </node>
       </node>
     </node>
@@ -3655,7 +3655,7 @@
   <node concept="1_1swa" id="12l$qjdi1M_">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="G_Utilities" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="12l$qjdi29y" role="1_0VJ0">
       <property role="TrG5h" value="utiltites" />
       <property role="1_0VJr" value="Utilitites" />
@@ -3668,7 +3668,7 @@
               <property role="19SUeA" value="There are various ways of interoperating with textual worlds. One of them is the import of textual, legacy C source. This is covered in " />
             </node>
             <node concept="1_0GAv" id="3mn43GOU6ad" role="19SJt6">
-              <ref role="1_0GAl" to="4kwm:3mn43GO6C$J" />
+              <ref role="1_0GAl" to="4kwm:3mn43GO6C$J" resolve="accessingLibraries" />
             </node>
             <node concept="19SUe$" id="12l$qjdi2aO" role="19SJt6">
               <property role="19SUeA" value=". In this section we discuss a few additional ways." />
@@ -3810,13 +3810,13 @@
               <property role="19SUeA" value="You can do a full-text search on soutions and models. The functionality is available via the context menu (shown in " />
             </node>
             <node concept="2Sbdz4" id="1eKX9CUoJMO" role="19SJt6">
-              <ref role="2SbdyP" node="1eKX9CUmmdg" />
+              <ref role="2SbdyP" node="1eKX9CUmmdg" resolve="searchTerminal" />
             </node>
             <node concept="19SUe$" id="1eKX9CUoJMP" role="19SJt6">
               <property role="19SUeA" value="). The resulting search window (" />
             </node>
             <node concept="2Sbdz4" id="1eKX9CUoJNZ" role="19SJt6">
-              <ref role="2SbdyP" node="1eKX9CUoJNx" />
+              <ref role="2SbdyP" node="1eKX9CUoJNx" resolve="search" />
             </node>
             <node concept="19SUe$" id="1eKX9CUoJO0" role="19SJt6">
               <property role="19SUeA" value=") reports all the model elements that contain your search string. Note that this can also be used to search this documentation itself." />
@@ -3827,7 +3827,7 @@
           <property role="TrG5h" value="search" />
           <node concept="2Sb_l4" id="2fBMM_3YgEu" role="2SbwM5">
             <property role="2Sb_kV" value="search.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
           </node>
           <node concept="OjmMv" id="1eKX9CUoJNz" role="2SaI5j">
             <node concept="19SGf9" id="1eKX9CUoJN$" role="OjmMu">
@@ -3848,7 +3848,7 @@
               <property role="19SUeA" value="It is often useful to open a terminal (console, command line) in solutions or models. The context menu for solutions or models has this option. For solutions, the terminal opens in the solution directory. For models, it opens in the model's output directory (where the model's code will be generated to). " />
             </node>
             <node concept="2Sbdz4" id="1eKX9CUmmqk" role="19SJt6">
-              <ref role="2SbdyP" node="1eKX9CUmmdg" />
+              <ref role="2SbdyP" node="1eKX9CUmmdg" resolve="searchTerminal" />
             </node>
             <node concept="19SUe$" id="1eKX9CUmmql" role="19SJt6">
               <property role="19SUeA" value=" shows the context menu for solutions." />
@@ -3860,7 +3860,7 @@
         <property role="TrG5h" value="searchTerminal" />
         <node concept="2Sb_l4" id="2fBMM_3YgEy" role="2SbwM5">
           <property role="2Sb_kV" value="terminalSearch.png" />
-          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" />
+          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4L" resolve="fundamentalImages" />
         </node>
         <node concept="OjmMv" id="1eKX9CUmmdk" role="2SaI5j">
           <node concept="19SGf9" id="1eKX9CUmmdl" role="OjmMu">
@@ -3891,7 +3891,7 @@
       </node>
     </node>
     <node concept="1_0j5j" id="3mn43GOU69y" role="1DXQ57">
-      <ref role="1_0j5g" to="4kwm:6UY8Kx5jzAQ" />
+      <ref role="1_0j5g" to="4kwm:6UY8Kx5jzAQ" resolve="F_LegacyCode" />
     </node>
   </node>
 </model>

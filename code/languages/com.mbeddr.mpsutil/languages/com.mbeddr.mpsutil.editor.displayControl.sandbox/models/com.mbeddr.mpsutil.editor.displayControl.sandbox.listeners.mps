@@ -44,7 +44,7 @@
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="5818559022137986141" name="listeners" index="j$A37" />
       </concept>
-      <concept id="6105788070833315443" name="com.mbeddr.mpsutil.modellisteners.structure.PropertyListener" flags="ng" index="3vq$el">
+      <concept id="6105788070833315443" name="com.mbeddr.mpsutil.modellisteners.structure.PropertyListener" flags="ig" index="3vq$el">
         <reference id="6105788070833315720" name="property" index="3vq$9I" />
       </concept>
     </language>

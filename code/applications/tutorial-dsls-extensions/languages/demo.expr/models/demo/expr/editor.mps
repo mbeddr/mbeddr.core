@@ -191,7 +191,7 @@
         <child id="1716599163375643746" name="inner" index="drBAU" />
         <child id="1716599163375643751" name="right" index="drBAZ" />
       </concept>
-      <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="ng" index="2lNzut">
+      <concept id="3921456275302774825" name="com.mbeddr.mpsutil.grammarcells.structure.SplittableCell" flags="sg" stub="3921456275302774831" index="2lNzut">
         <child id="3921456275305506525" name="tokenizer" index="2lD6_D" />
       </concept>
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
@@ -205,11 +205,11 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="ng" index="1kHk_G" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
-      <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ng" index="1Lj6DC" />
+      <concept id="2862331529394479412" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQuery" flags="ig" index="1Lj6DC" />
       <concept id="2862331529394479405" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarConstantQueryCell" flags="ng" index="1Lj6DL">
         <child id="2862331529394487726" name="query" index="1Lj8FM" />
       </concept>
@@ -485,7 +485,7 @@
                   <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                   <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                   <node concept="3B5_sB" id="2vdZgmcEWDu" role="37wK5m">
-                    <ref role="3B5MYn" to="fynj:3xDNhgd4DSK" />
+                    <ref role="3B5MYn" to="fynj:3xDNhgd4DSK" resolve="ExprInterpreter" />
                   </node>
                 </node>
               </node>

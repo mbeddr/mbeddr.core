@@ -32,7 +32,7 @@
   <node concept="1_1swa" id="1OEOMspldJi">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_ComplexProjects" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw8" role="1_0VJ0">
       <property role="TrG5h" value="complexProjects" />
       <property role="1_0VJr" value="Structuring Complex Projects" />

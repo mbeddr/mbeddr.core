@@ -216,35 +216,35 @@
                       <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                       <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                       <node concept="3B5_sB" id="M6L5HuGDcX" role="37wK5m">
-                        <ref role="3B5MYn" to="7k10:M6L5Huv01K" />
+                        <ref role="3B5MYn" to="7k10:M6L5Huv01K" resolve="JavaInterpreterBase" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="M6L5HuGDtZ" role="37wK5m">
                       <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                       <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                       <node concept="3B5_sB" id="M6L5HuGDu0" role="37wK5m">
-                        <ref role="3B5MYn" to="7k10:M6L5Hu$HQS" />
+                        <ref role="3B5MYn" to="7k10:M6L5Hu$HQS" resolve="JavaInterpreterBoolean" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="M6L5HuGDu5" role="37wK5m">
                       <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                       <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                       <node concept="3B5_sB" id="M6L5HuGDu6" role="37wK5m">
-                        <ref role="3B5MYn" to="7k10:M6L5HuChwW" />
+                        <ref role="3B5MYn" to="7k10:M6L5HuChwW" resolve="JavaInterpreterLong" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="M6L5HuGDxw" role="37wK5m">
                       <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                       <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                       <node concept="3B5_sB" id="M6L5HuGDxx" role="37wK5m">
-                        <ref role="3B5MYn" to="7k10:M6L5HuEXaW" />
+                        <ref role="3B5MYn" to="7k10:M6L5HuEXaW" resolve="JavaInterpreterDouble" />
                       </node>
                     </node>
                     <node concept="2YIFZM" id="M6L5HuGDxE" role="37wK5m">
                       <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
                       <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
                       <node concept="3B5_sB" id="M6L5HuGDxF" role="37wK5m">
-                        <ref role="3B5MYn" to="7k10:M6L5HuG9nP" />
+                        <ref role="3B5MYn" to="7k10:M6L5HuG9nP" resolve="JavaInterpreterString" />
                       </node>
                     </node>
                   </node>

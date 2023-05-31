@@ -137,8 +137,8 @@
         <child id="5662204344887343006" name="style" index="1geGt4" />
       </concept>
       <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG" />
-      <concept id="3785936898438629036" name="de.slisson.mps.tables.structure.ShadeColor" flags="ng" index="3hWdWw" />
-      <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="ng" index="3hZEDM">
+      <concept id="3785936898438629036" name="de.slisson.mps.tables.structure.ShadeColor" flags="lg" index="3hWdWw" />
+      <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="lg" index="3hZEDM">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
     </language>

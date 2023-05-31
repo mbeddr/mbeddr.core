@@ -36,50 +36,50 @@
   <node concept="1_1swa" id="1OEOMspkYrg">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_CExtensions" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmwh" role="1_0VJ0">
       <property role="TrG5h" value="cextensions" />
       <property role="1_0VJr" value="C Extensions" />
       <node concept="$CzcT" id="2NmTaRWxfhw" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWxfig" role="$CzcU">
-          <ref role="1_0j5g" node="69uDFDaU6IU" />
+          <ref role="1_0j5g" node="69uDFDaU6IU" resolve="A_StaticEvaluation" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWxfip" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWxfiU" role="$CzcU">
-          <ref role="1_0j5g" node="yrKNEnw4lA" />
+          <ref role="1_0j5g" node="yrKNEnw4lA" resolve="C_Units" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWxfiF" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWxfj0" role="$CzcU">
-          <ref role="1_0j5g" node="300OR6GmKCv" />
+          <ref role="1_0j5g" node="300OR6GmKCv" resolve="E_StateMachines" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWxfix" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWxfiX" role="$CzcU">
-          <ref role="1_0j5g" node="3D8Uf60N7kD" />
+          <ref role="1_0j5g" node="3D8Uf60N7kD" resolve="D_Components" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWxfij" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWxfiR" role="$CzcU">
-          <ref role="1_0j5g" node="6UY8Kx5iuLF" />
+          <ref role="1_0j5g" node="6UY8Kx5iuLF" resolve="B_DecisionTables" />
         </node>
       </node>
     </node>
     <node concept="1_0j5j" id="2NmTaRWxfhD" role="1DXQ57">
-      <ref role="1_0j5g" node="69uDFDaU6IU" />
+      <ref role="1_0j5g" node="69uDFDaU6IU" resolve="A_StaticEvaluation" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWxfi9" role="1DXQ57">
-      <ref role="1_0j5g" node="6UY8Kx5iuLF" />
+      <ref role="1_0j5g" node="6UY8Kx5iuLF" resolve="B_DecisionTables" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWxfh$" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnw4lA" />
+      <ref role="1_0j5g" node="yrKNEnw4lA" resolve="C_Units" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWxfhN" role="1DXQ57">
-      <ref role="1_0j5g" node="3D8Uf60N7kD" />
+      <ref role="1_0j5g" node="3D8Uf60N7kD" resolve="D_Components" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWxfhX" role="1DXQ57">
-      <ref role="1_0j5g" node="300OR6GmKCv" />
+      <ref role="1_0j5g" node="300OR6GmKCv" resolve="E_StateMachines" />
     </node>
   </node>
 </model>

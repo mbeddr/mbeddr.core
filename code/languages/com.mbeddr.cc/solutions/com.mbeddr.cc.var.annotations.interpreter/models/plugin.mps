@@ -55,7 +55,7 @@
     <property role="TrG5h" value="PleVarCInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="6KLCBzC$5Gg" role="1J4apk">
-      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" />
+      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
     </node>
     <node concept="3SNpY9" id="6KLCBzC$c7n" role="qq9xR">
       <property role="2TnfIJ" value="true" />

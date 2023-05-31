@@ -129,7 +129,7 @@
   <node concept="1_1swa" id="3D8Uf60N7kD">
     <property role="TrG5h" value="D_Components" />
     <property role="yApLE" value="6" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO8cLU" role="1_0VJ0">
       <property role="TrG5h" value="components" />
       <property role="1_0VJr" value="Components" />
@@ -345,7 +345,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3D8Uf611vxr" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/contractmessage.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3D8Uf611urq" role="2SaI5j">
             <node concept="19SGf9" id="3D8Uf611urr" role="OjmMu">
@@ -2055,7 +2055,7 @@
               <ref role="2NCMaa" to="e1tx:4usdeMNSK9i" />
             </node>
             <node concept="2NCMab" id="5MdJlx$Kiq0" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:5MdJlx$K9gm" />
+              <ref role="2NCMaa" to="e1tx:5MdJlx$K9gm" resolve="aValidateMock" />
             </node>
           </node>
         </node>
@@ -2532,7 +2532,7 @@
               <property role="19SUeA" value="). " />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5eX1t" role="19SJt6">
-              <ref role="2SbdyP" node="1Pi5yleHyq7" />
+              <ref role="2SbdyP" node="1Pi5yleHyq7" resolve="vcomponents" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5eX1s" role="19SJt6">
               <property role="19SUeA" value=" shows the result. " />
@@ -2543,7 +2543,7 @@
           <property role="TrG5h" value="vcomponents" />
           <node concept="2Sb_l4" id="3DAECxFCKzg" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_components.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="1Pi5yleHyqb" role="2SaI5j">
             <node concept="19SGf9" id="1Pi5yleHyqc" role="OjmMu">
@@ -2568,7 +2568,7 @@
               <property role="19SUeA" value=" You can also select an instance configuration and visualize it. You'll get a diagram that shows component instances and their connections (" />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5eX1k" role="19SJt6">
-              <ref role="2SbdyP" node="1Pi5yleHzNj" />
+              <ref role="2SbdyP" node="1Pi5yleHzNj" resolve="vinstances" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5eX1j" role="19SJt6">
               <property role="19SUeA" value=")." />
@@ -2579,7 +2579,7 @@
           <property role="TrG5h" value="vinstances" />
           <node concept="2Sb_l4" id="1Pi5yleHzO0" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/v_instances.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="1Pi5yleHzNn" role="2SaI5j">
             <node concept="19SGf9" id="1Pi5yleHzNo" role="OjmMu">
@@ -2603,7 +2603,7 @@
               <property role="19SUeA" value="mbeddr comes with support for verifying contracts of components statically. This verification is based on C-level verification with CBMC (for a more detailed discussion about the formal verification with mbeddr, please look at " />
             </node>
             <node concept="1_0GAv" id="2JeiqU7f4YR" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:7OKLwZ_7lPw" />
+              <ref role="1_0GAl" to="us0v:7OKLwZ_7lPw" resolve="functional_verification" />
             </node>
             <node concept="19SUe$" id="2JeiqU7f4YQ" role="19SJt6">
               <property role="19SUeA" value=". Let's set up our tutorial to use verification.  Let us verify the " />
@@ -2713,7 +2713,7 @@
               <property role="19SUeA" value=" action. After a few seconds, you'll get a result table that reports everything as ok (see " />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5hyCt" role="19SJt6">
-              <ref role="2SbdyP" node="6UY8Kx5hnzL" />
+              <ref role="2SbdyP" node="6UY8Kx5hnzL" resolve="verificationOK" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5hyCs" role="19SJt6">
               <property role="19SUeA" value="): every precondition of every operation in every provided port has been proven to be correct." />
@@ -2725,7 +2725,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3DAECxFCKza" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/verificationOK.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6UY8Kx5hnzP" role="2SaI5j">
             <node concept="19SGf9" id="6UY8Kx5hnzQ" role="OjmMu">
@@ -2775,7 +2775,7 @@
               <property role="19SUeA" value="Let us rerun the verification. Now we get an error, as shown in " />
             </node>
             <node concept="2Sbdz4" id="6UY8Kx5hyCk" role="19SJt6">
-              <ref role="2SbdyP" node="6UY8Kx5hvRW" />
+              <ref role="2SbdyP" node="6UY8Kx5hvRW" resolve="verificationNotOK" />
             </node>
             <node concept="19SUe$" id="6UY8Kx5hyCj" role="19SJt6">
               <property role="19SUeA" value=". Note how the lower part of the table now shows the execution trace that led to the contract violation. You should check the " />
@@ -2796,7 +2796,7 @@
           <property role="TrG5h" value="verificationNotOK" />
           <node concept="2Sb_l4" id="3DAECxFCKzd" role="2SbwM5">
             <property role="2Sb_kV" value="tutorial/verificationNotOK.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6UY8Kx5hvS0" role="2SaI5j">
             <node concept="19SGf9" id="6UY8Kx5hvS1" role="OjmMu">
@@ -2822,7 +2822,7 @@
       </node>
     </node>
     <node concept="1_0j5j" id="3ZdGyCRQAT4" role="1DXQ57">
-      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" />
+      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
   </node>
 </model>

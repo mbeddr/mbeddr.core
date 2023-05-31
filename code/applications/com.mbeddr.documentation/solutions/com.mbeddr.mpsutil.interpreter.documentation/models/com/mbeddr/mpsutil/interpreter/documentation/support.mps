@@ -568,14 +568,14 @@
       </node>
     </node>
     <node concept="1J7L1T" id="1T7O9iX8sdK" role="1J4apk">
-      <ref role="1J7WVQ" node="1T7O9iX40xR" />
+      <ref role="1J7WVQ" node="1T7O9iX40xR" resolve="ExpressionInterpreter" />
     </node>
   </node>
   <node concept="qq9qg" id="1T7O9iX40xT">
     <property role="TrG5h" value="VariableInterpreter" />
     <property role="UYu25" value="sample" />
     <node concept="1J7L1T" id="1T7O9iX8uBN" role="1J4apk">
-      <ref role="1J7WVQ" node="1T7O9iX40xR" />
+      <ref role="1J7WVQ" node="1T7O9iX40xR" resolve="ExpressionInterpreter" />
       <node concept="1h5QrK" id="1d83w5bFgj$" role="lGtFl">
         <property role="TrG5h" value="relatedInterpreters" />
       </node>
@@ -635,7 +635,7 @@
       </node>
     </node>
     <node concept="1J7WVO" id="1T7O9iX8srV" role="1J4apk">
-      <ref role="1J7WVQ" node="1T7O9iX40xS" />
+      <ref role="1J7WVQ" node="1T7O9iX40xS" resolve="FunctionCallInterpreter" />
     </node>
   </node>
   <node concept="3SNn0d" id="1Y3rEQ3owp4">

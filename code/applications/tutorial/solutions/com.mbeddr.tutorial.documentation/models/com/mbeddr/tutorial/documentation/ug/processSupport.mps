@@ -163,7 +163,7 @@
   <node concept="1_1swa" id="tMF5FXsCLB">
     <property role="yApLE" value="11" />
     <property role="TrG5h" value="F_ProductLineVariability" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO8h4S" role="1_0VJ0">
       <property role="TrG5h" value="productlinevariability" />
       <property role="1_0VJr" value="Product Line Variability" />
@@ -257,7 +257,7 @@
               <property role="19SUeA" value="Feature models map a configuration space. An example feature model is shown in " />
             </node>
             <node concept="2Sbdz4" id="4KbglN$OaT9" role="19SJt6">
-              <ref role="2SbdyP" node="4KbglN$OaJc" />
+              <ref role="2SbdyP" node="4KbglN$OaJc" resolve="featureModel" />
             </node>
             <node concept="19SUe$" id="4KbglN$OaTa" role="19SJt6">
               <property role="19SUeA" value=". A feature is simply a named entity. Features can have children (subfeatures). A feature specifies a constraint over the subfeatures that determine how they can be selected. The following four tree constraints exist:" />
@@ -502,7 +502,7 @@
               <property role="19SUeA" value=" feature. An example configuration is also shown in " />
             </node>
             <node concept="2Sbdz4" id="4IT6uofkVJ" role="19SJt6">
-              <ref role="2SbdyP" node="4IT6uofkTx" />
+              <ref role="2SbdyP" node="4IT6uofkTx" resolve="cfgNullifyMaxAt200" />
             </node>
             <node concept="19SUe$" id="4IT6uofkVK" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1319,38 +1319,38 @@
   <node concept="1_1swa" id="1OEOMsplkCQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_ProcessSupport" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw0" role="1_0VJ0">
       <property role="1_0VJr" value="Process Support" />
       <property role="TrG5h" value="processSupport" />
       <node concept="$CzcT" id="2NmTaRWzR_l" role="1_0VJ0">
         <node concept="1_0j5j" id="12l$qjdd9F6" role="$CzcU">
-          <ref role="1_0j5g" node="12l$qjdcYKY" />
+          <ref role="1_0j5g" node="12l$qjdcYKY" resolve="A_Requirements" />
         </node>
       </node>
       <node concept="$CzcT" id="2rKfGsVRhQ6" role="1_0VJ0">
         <node concept="1_0j5j" id="2rKfGsVRhQy" role="$CzcU">
-          <ref role="1_0j5g" node="2rKfGsVR7RQ" />
+          <ref role="1_0j5g" node="2rKfGsVR7RQ" resolve="B_Tracing" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWzR_K" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWzRA1" role="$CzcU">
-          <ref role="1_0j5g" node="2NmTaRWzR$P" />
+          <ref role="1_0j5g" node="2NmTaRWzR$P" resolve="C_Assessments" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWzR_B" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWzR_Y" role="$CzcU">
-          <ref role="1_0j5g" node="2NmTaRWzPSk" />
+          <ref role="1_0j5g" node="2NmTaRWzPSk" resolve="D_Documentation" />
         </node>
       </node>
       <node concept="$CzcT" id="3PCHQK6j_Bv" role="1_0VJ0">
         <node concept="1_0j5j" id="3PCHQK6j_BX" role="$CzcU">
-          <ref role="1_0j5g" node="3PCHQK6j_Bu" />
+          <ref role="1_0j5g" node="3PCHQK6j_Bu" resolve="E_CodeReview" />
         </node>
       </node>
       <node concept="$CzcT" id="2NmTaRWzR_w" role="1_0VJ0">
         <node concept="1_0j5j" id="2NmTaRWzR_V" role="$CzcU">
-          <ref role="1_0j5g" node="tMF5FXsCLB" />
+          <ref role="1_0j5g" node="tMF5FXsCLB" resolve="F_ProductLineVariability" />
         </node>
       </node>
       <node concept="1_1sxE" id="2NmTaRWzR_s" role="1_0VJ0">
@@ -1358,28 +1358,28 @@
       </node>
     </node>
     <node concept="1_0j5j" id="12l$qjdd9EM" role="1DXQ57">
-      <ref role="1_0j5g" node="12l$qjdcYKY" />
+      <ref role="1_0j5g" node="12l$qjdcYKY" resolve="A_Requirements" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWzR$X" role="1DXQ57">
-      <ref role="1_0j5g" node="tMF5FXsCLB" />
+      <ref role="1_0j5g" node="tMF5FXsCLB" resolve="F_ProductLineVariability" />
     </node>
     <node concept="1_0j5j" id="2rKfGsVRhQq" role="1DXQ57">
-      <ref role="1_0j5g" node="2rKfGsVR7RQ" />
+      <ref role="1_0j5g" node="2rKfGsVR7RQ" resolve="B_Tracing" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWzR_5" role="1DXQ57">
-      <ref role="1_0j5g" node="2NmTaRWzPSk" />
+      <ref role="1_0j5g" node="2NmTaRWzPSk" resolve="D_Documentation" />
     </node>
     <node concept="1_0j5j" id="3PCHQK6j_BP" role="1DXQ57">
-      <ref role="1_0j5g" node="3PCHQK6j_Bu" />
+      <ref role="1_0j5g" node="3PCHQK6j_Bu" resolve="E_CodeReview" />
     </node>
     <node concept="1_0j5j" id="2NmTaRWzR_f" role="1DXQ57">
-      <ref role="1_0j5g" node="2NmTaRWzR$P" />
+      <ref role="1_0j5g" node="2NmTaRWzR$P" resolve="C_Assessments" />
     </node>
   </node>
   <node concept="1_1swa" id="2NmTaRWzPSk">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_Documentation" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="2NmTaRWzPSl" role="1_0VJ0">
       <property role="TrG5h" value="doc" />
       <property role="1_0VJr" value="Documentation Language" />
@@ -1412,7 +1412,7 @@
               <property role="0yqFN" value="user guide" />
               <node concept="2NCZwO" id="3mn43GOVqkJ" role="3z_lpZ">
                 <node concept="2NCMab" id="3mn43GOVql0" role="2NCMaf">
-                  <ref role="2NCMaa" to="ntnz:hZfTLLg0H0" />
+                  <ref role="2NCMaa" to="ntnz:hZfTLLg0H0" resolve="mbeddrUserGuide" />
                 </node>
               </node>
             </node>
@@ -2054,7 +2054,7 @@
   <node concept="1_1swa" id="2NmTaRWzR$P">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Assessments" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="58xH_U77Be1" role="lGtFl" />
     <node concept="1_0VNX" id="2NmTaRWzR$Q" role="1_0VJ0">
       <property role="TrG5h" value="assess" />
@@ -2074,7 +2074,7 @@
               <node concept="3z_lpY" id="3PCHQK6jBuJ" role="19SJt6">
                 <node concept="2NCZwO" id="3PCHQK6jBuK" role="3z_lpZ">
                   <node concept="2NCMab" id="3PCHQK6jBuR" role="2NCMaf">
-                    <ref role="2NCMaa" to="e1tx:3jNX2XuM5ZV" />
+                    <ref role="2NCMaa" to="e1tx:3jNX2XuM5ZV" resolve="Visualizations" />
                   </node>
                 </node>
               </node>
@@ -2101,7 +2101,7 @@
               <node concept="3z_lpY" id="3PCHQK6jFV1" role="19SJt6">
                 <node concept="2NCZwO" id="3PCHQK6jFV2" role="3z_lpZ">
                   <node concept="2NCMab" id="3PCHQK6m9Ky" role="2NCMaf">
-                    <ref role="2NCMaa" to="e1tx:26F1Swi93S$" />
+                    <ref role="2NCMaa" to="e1tx:26F1Swi93S$" resolve="Traces" />
                   </node>
                 </node>
               </node>
@@ -2128,10 +2128,10 @@
               <node concept="3z_lpY" id="3PCHQK6ma0G" role="19SJt6">
                 <node concept="2NCZwO" id="3PCHQK6ma0H" role="3z_lpZ">
                   <node concept="2NCMab" id="3PCHQK6ma0O" role="2NCMaf">
-                    <ref role="2NCMaa" to="iwll:3jNX2XuM62I" />
+                    <ref role="2NCMaa" to="iwll:3jNX2XuM62I" resolve="EffortsAndVisualizations" />
                   </node>
                   <node concept="2NCMab" id="3PCHQK6maef" role="2NCMaf">
-                    <ref role="2NCMaa" to="iwll:7A_Yc2WoUaU" />
+                    <ref role="2NCMaa" to="iwll:7A_Yc2WoUaU" resolve="EffortsOfWorkPackages" />
                   </node>
                 </node>
               </node>
@@ -2307,9 +2307,9 @@
   <node concept="1_1swa" id="12l$qjdcYKY">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_Requirements" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uo9ZSC" role="1DXQ57">
-      <ref role="1_0j5g" to="bmc6:1ig5EljjfU0" />
+      <ref role="1_0j5g" to="bmc6:1ig5EljjfU0" resolve="C_Editor" />
     </node>
     <node concept="2f$52y" id="7bDJBXh2Y61" role="lGtFl" />
     <node concept="1_0VNX" id="12l$qjdd9EE" role="1_0VJ0">
@@ -2392,7 +2392,7 @@
               <property role="19SUeA" value="Each requirement is decribed with a number of characteristics; an example is shown in " />
             </node>
             <node concept="2Sbdz4" id="12l$qjdfzpA" role="19SJt6">
-              <ref role="2SbdyP" node="12l$qjdfx$P" />
+              <ref role="2SbdyP" node="12l$qjdfx$P" resolve="exampleRequirement" />
             </node>
             <node concept="19SUe$" id="12l$qjdfzpB" role="19SJt6">
               <property role="19SUeA" value=". Each requirement has a unique ID (" />
@@ -2584,7 +2584,7 @@
               <property role="19SUeA" value="An important aspect of requirements are their relationships: a requirement can establish relations to other requirements. The requirement shown in " />
             </node>
             <node concept="2Sbdz4" id="12l$qjdgc32" role="19SJt6">
-              <ref role="2SbdyP" node="12l$qjdgbNI" />
+              <ref role="2SbdyP" node="12l$qjdgbNI" resolve="depExample" />
             </node>
             <node concept="19SUe$" id="12l$qjdgc33" role="19SJt6">
               <property role="19SUeA" value=" shows both kinds of cross references. First, cross references can be added to the prose description using the " />
@@ -2723,7 +2723,7 @@
               <property role="19SUeA" value=" that projects buttons into a requirements module to add child requirements, data or change the nesting hierarchy (see " />
             </node>
             <node concept="1_0GAv" id="4IT6uoa0ep" role="19SJt6">
-              <ref role="1_0GAl" to="bmc6:1OEOMsplvIS" />
+              <ref role="1_0GAl" to="bmc6:1OEOMsplvIS" resolve="projectionModes" />
             </node>
             <node concept="19SUe$" id="4IT6uoa0eo" role="19SJt6">
               <property role="19SUeA" value=" on how to swich Projection Modes)." />
@@ -2740,13 +2740,13 @@
               <property role="19SUeA" value="The requirements visualization shows the upstream and downstream dependencies of a particular requirement. An example is shown in " />
             </node>
             <node concept="2Sbdz4" id="12l$qjdhM4E" role="19SJt6">
-              <ref role="2SbdyP" node="12l$qjdhAVq" />
+              <ref role="2SbdyP" node="12l$qjdhAVq" resolve="depVis" />
             </node>
             <node concept="19SUe$" id="12l$qjdhM4D" role="19SJt6">
               <property role="19SUeA" value=". In addition, several tree views are available that show the requirements hierarchy, the dependencies and also the up- and downstream dependencies of the requirements module (shown in " />
             </node>
             <node concept="2Sbdz4" id="12l$qjdhSuq" role="19SJt6">
-              <ref role="2SbdyP" node="12l$qjdhStU" />
+              <ref role="2SbdyP" node="12l$qjdhStU" resolve="reqtree" />
             </node>
             <node concept="19SUe$" id="12l$qjdhSur" role="19SJt6">
               <property role="19SUeA" value=")." />
@@ -2777,7 +2777,7 @@
           <property role="TrG5h" value="reqtree" />
           <node concept="2Sb_l4" id="2fBMM_3Y7tJ" role="2SbwM5">
             <property role="2Sb_kV" value="reqtree.png" />
-            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" />
+            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="12l$qjdhStY" role="2SaI5j">
             <node concept="19SGf9" id="12l$qjdhStZ" role="OjmMu">
@@ -2794,7 +2794,7 @@
   <node concept="1_1swa" id="2rKfGsVR7RQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_Tracing" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="Mty5N5B1iq" role="lGtFl" />
     <node concept="1_0VNX" id="2rKfGsVRhPV" role="1_0VJ0">
       <property role="TrG5h" value="tracing" />
@@ -2852,7 +2852,7 @@
             <property role="19SUeA" value=" module. It has traces attached to a number of C constants and to various parts of the state machine (make sure you select a projection mode that actually shows the traces); an example is also shown in " />
           </node>
           <node concept="2Sbdz4" id="4IT6uofhyp" role="19SJt6">
-            <ref role="2SbdyP" node="4IT6uofhsv" />
+            <ref role="2SbdyP" node="4IT6uofhsv" resolve="detailedTraces" />
           </node>
           <node concept="19SUe$" id="4IT6uofhyo" role="19SJt6">
             <property role="19SUeA" value=". Make sure you select a projection mode that lets you actually see the traces (see below)." />
@@ -2905,7 +2905,7 @@
             <property role="19SUeA" value="There are three different modes how traces can be shown (and they can be switched like all other projection modes, see " />
           </node>
           <node concept="1_0GAv" id="2rKfGsWkOiB" role="19SJt6">
-            <ref role="1_0GAl" to="bmc6:1OEOMsplvIS" />
+            <ref role="1_0GAl" to="bmc6:1OEOMsplvIS" resolve="projectionModes" />
           </node>
           <node concept="19SUe$" id="2rKfGsWkOiC" role="19SJt6">
             <property role="19SUeA" value="):" />
@@ -2931,7 +2931,7 @@
                 <property role="19SUeA" value=": The trace kind and the trace target(s) are shown on the right side of the traced node (see " />
               </node>
               <node concept="2Sbdz4" id="4IT6uofhvp" role="19SJt6">
-                <ref role="2SbdyP" node="4IT6uofhsv" />
+                <ref role="2SbdyP" node="4IT6uofhsv" resolve="detailedTraces" />
               </node>
               <node concept="19SUe$" id="4IT6uofhvq" role="19SJt6">
                 <property role="19SUeA" value=")." />
@@ -2964,7 +2964,7 @@
                 <property role="19SUeA" value=" is shown on the right side of the traced node (see " />
               </node>
               <node concept="2Sbdz4" id="4IT6uoa8IE" role="19SJt6">
-                <ref role="2SbdyP" node="4IT6uoa8FK" />
+                <ref role="2SbdyP" node="4IT6uoa8FK" resolve="littleTs" />
               </node>
               <node concept="19SUe$" id="4IT6uoa8ID" role="19SJt6">
                 <property role="19SUeA" value="). A tooltip shows the first of the traces elements and the trace kind. The kind and targets can be changed in the inspector of the " />
@@ -3004,7 +3004,7 @@
         <property role="TrG5h" value="detailedTraces" />
         <node concept="2Sb_l4" id="2fBMM_3Y7tN" role="2SbwM5">
           <property role="2Sb_kV" value="detailedTraces.png" />
-          <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" />
+          <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
         </node>
         <node concept="OjmMv" id="4IT6uofhsx" role="2SaI5j">
           <node concept="19SGf9" id="4IT6uofhsy" role="OjmMu">
@@ -3019,7 +3019,7 @@
         <property role="TrG5h" value="littleTs" />
         <node concept="2Sb_l4" id="2fBMM_3Y7tR" role="2SbwM5">
           <property role="2Sb_kV" value="littleTTraces.png" />
-          <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" />
+          <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
         </node>
         <node concept="OjmMv" id="4IT6uoa8FO" role="2SaI5j">
           <node concept="19SGf9" id="4IT6uoa8FP" role="OjmMu">
@@ -3154,19 +3154,19 @@
               <property role="19SUeA" value=" in the dialog (see " />
             </node>
             <node concept="2Sbdz4" id="3PCHQK6fb$A" role="19SJt6">
-              <ref role="2SbdyP" node="3PCHQK6fb$0" />
+              <ref role="2SbdyP" node="3PCHQK6fb$0" resolve="findUsagesDialog" />
             </node>
             <node concept="19SUe$" id="3PCHQK6fb$B" role="19SJt6">
               <property role="19SUeA" value="). In the result, you will get a separate section with only the traces to the respective requirement. " />
             </node>
             <node concept="2Sbdz4" id="3PCHQK6hD5_" role="19SJt6">
-              <ref role="2SbdyP" node="3PCHQK6jppY" />
+              <ref role="2SbdyP" node="3PCHQK6jppY" resolve="findUsagesResult" />
             </node>
             <node concept="19SUe$" id="3PCHQK6hD5A" role="19SJt6">
               <property role="19SUeA" value=" shows an example result. " />
             </node>
             <node concept="1_0GAv" id="3PCHQK6jqeS" role="19SJt6">
-              <ref role="1_0GAl" to="bmc6:3PCHQK6jpOZ" />
+              <ref role="1_0GAl" to="bmc6:3PCHQK6jpOZ" resolve="findUsages" />
             </node>
             <node concept="19SUe$" id="3PCHQK6jqeT" role="19SJt6">
               <property role="19SUeA" value=" explains the find usages facility in general." />
@@ -3177,7 +3177,7 @@
           <property role="TrG5h" value="findUsagesDialog" />
           <node concept="2Sb_l4" id="2fBMM_3Y7tV" role="2SbwM5">
             <property role="2Sb_kV" value="findUsagesDialog.png" />
-            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" />
+            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="3PCHQK6fb$4" role="2SaI5j">
             <node concept="19SGf9" id="3PCHQK6fb$5" role="OjmMu">
@@ -3192,7 +3192,7 @@
           <property role="TrG5h" value="findUsagesResult" />
           <node concept="2Sb_l4" id="2fBMM_3Y7tZ" role="2SbwM5">
             <property role="2Sb_kV" value="findUsagesResult.png" />
-            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" />
+            <ref role="2Sb_kU" to="ntnz:45LXldJZEw7" resolve="imagesProcessSupport" />
           </node>
           <node concept="OjmMv" id="3PCHQK6jpq0" role="2SaI5j">
             <node concept="19SGf9" id="3PCHQK6jpq1" role="OjmMu">
@@ -3223,7 +3223,7 @@
               <property role="19SUeA" value=" assessment. Assessments are reports that query the model and list the results; they are explained in more detail in " />
             </node>
             <node concept="1_0GAv" id="3PCHQK6jy_x" role="19SJt6">
-              <ref role="1_0GAl" node="2NmTaRWzR$Q" />
+              <ref role="1_0GAl" node="2NmTaRWzR$Q" resolve="assess" />
             </node>
             <node concept="19SUe$" id="3PCHQK6jy_y" role="19SJt6">
               <property role="19SUeA" value=". " />
@@ -3248,7 +3248,7 @@
             <node concept="3z_lpY" id="3PCHQK6jyA$" role="19SJt6">
               <node concept="2NCZwO" id="3PCHQK6jyA_" role="3z_lpZ">
                 <node concept="2NCMab" id="3PCHQK6jyAJ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:26F1Swi93S$" />
+                  <ref role="2NCMaa" to="e1tx:26F1Swi93S$" resolve="Traces" />
                 </node>
               </node>
             </node>
@@ -3260,22 +3260,22 @@
       </node>
     </node>
     <node concept="1_0j5j" id="2rKfGsWkOi$" role="1DXQ57">
-      <ref role="1_0j5g" to="bmc6:1ig5EljjfU0" />
+      <ref role="1_0j5g" to="bmc6:1ig5EljjfU0" resolve="C_Editor" />
     </node>
     <node concept="1_0j5j" id="3PCHQK6jqfk" role="1DXQ57">
-      <ref role="1_0j5g" to="bmc6:12l$qjdi1M_" />
+      <ref role="1_0j5g" to="bmc6:12l$qjdi1M_" resolve="G_Utilities" />
     </node>
     <node concept="1_0j5j" id="3PCHQK6jy_s" role="1DXQ57">
-      <ref role="1_0j5g" node="2NmTaRWzR$P" />
+      <ref role="1_0j5g" node="2NmTaRWzR$P" resolve="C_Assessments" />
     </node>
   </node>
   <node concept="1_1swa" id="3PCHQK6j_Bu">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_CodeReview" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="2f$52y" id="58xH_U7b$n0" role="lGtFl" />
     <node concept="1_0j5j" id="4IT6uo43go" role="1DXQ57">
-      <ref role="1_0j5g" node="2NmTaRWzR$P" />
+      <ref role="1_0j5g" node="2NmTaRWzR$P" resolve="C_Assessments" />
     </node>
     <node concept="1_0VNX" id="3PCHQK6j_C0" role="1_0VJ0">
       <property role="TrG5h" value="codereview" />
@@ -3577,7 +3577,7 @@
               <property role="19SUeA" value=" intention on the reviewed node. Alternatively you can also reevaluate all review states from one single location; this is discussed below in " />
             </node>
             <node concept="1_0GAv" id="4IT6uo9sZH" role="19SJt6">
-              <ref role="1_0GAl" node="4IT6unQBll" />
+              <ref role="1_0GAl" node="4IT6unQBll" resolve="assessment" />
             </node>
             <node concept="19SUe$" id="4IT6uo9sZI" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -3594,13 +3594,13 @@
               <property role="19SUeA" value="There is an assessment (see " />
             </node>
             <node concept="1_0GAv" id="4IT6uo43gq" role="19SJt6">
-              <ref role="1_0GAl" node="2NmTaRWzR$Q" />
+              <ref role="1_0GAl" node="2NmTaRWzR$Q" resolve="assess" />
             </node>
             <node concept="19SUe$" id="4IT6uo43gr" role="19SJt6">
               <property role="19SUeA" value=" for details about assessments) to show the global state of the code review. " />
             </node>
             <node concept="2Sbdz4" id="4IT6uo4dL1" role="19SJt6">
-              <ref role="2SbdyP" node="4IT6uo4dKC" />
+              <ref role="2SbdyP" node="4IT6uo4dKC" resolve="ReviewOfComponentsStuff" />
             </node>
             <node concept="19SUe$" id="4IT6uo4dL2" role="19SJt6">
               <property role="19SUeA" value=" shows an example. " />
@@ -3618,10 +3618,10 @@
           <node concept="2bctqb" id="4IT6uo4dKJ" role="3z_lpT" />
           <node concept="2NCZwO" id="4IT6uo4dKK" role="3z_lpI">
             <node concept="2NCMab" id="4IT6uo4dKL" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7nkDZJXrhSk" />
+              <ref role="2NCMaa" to="e1tx:7nkDZJXrhSk" resolve="CodeReview" />
             </node>
             <node concept="2NCMab" id="4IT6uo4dKM" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:7nkDZJXrkUi" />
+              <ref role="2NCMaa" to="e1tx:7nkDZJXrkUi" resolve="ReviewOfComponentsStuff" />
             </node>
           </node>
         </node>

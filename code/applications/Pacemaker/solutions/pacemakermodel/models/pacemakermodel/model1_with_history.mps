@@ -409,7 +409,7 @@
   </node>
   <node concept="3fbPIq" id="9zybxv$FYs">
     <property role="TrG5h" value="DDDRequirements" />
-    <ref role="G9hjw" node="9zybxv$FYp" />
+    <ref role="G9hjw" node="9zybxv$FYp" resolve="DocConf" />
     <node concept="3fbQ3u" id="9zybxv$FYt" role="3fbPIo">
       <property role="1ylvJX" value="Define LRI" />
       <property role="TrG5h" value="defineLRI" />

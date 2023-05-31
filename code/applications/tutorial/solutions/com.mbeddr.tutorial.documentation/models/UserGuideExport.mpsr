@@ -44,18 +44,18 @@
     <property role="WqcPg" value="export Test" />
     <node concept="2SbEIf" id="Gd6QB8m3nB" role="30Gjbg">
       <property role="2SbEId" value="_image" />
-      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4D" />
+      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4D" resolve="images" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8m3nF" role="30Gjbg">
       <property role="2SbEId" value="_vis" />
-      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4R" />
+      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4R" resolve="vis" />
     </node>
     <node concept="2SbEIf" id="Gd6QB8m3nN" role="30Gjbg">
       <property role="2SbEId" value="_smimages" />
-      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4F" />
+      <ref role="2SbEIe" to="ntnz:2fBMM_3XZ4F" resolve="smimages" />
     </node>
     <node concept="1_0j5j" id="5Z6oVUve9Ds" role="30Gjbj">
-      <ref role="1_0j5g" node="1OEOMspkYrg" />
+      <ref role="1_0j5g" node="1OEOMspkYrg" resolve="Z_CHAPTER_CExtensions" />
     </node>
     <node concept="1jVoCB" id="Gd6QB8irku" role="30Gjbi">
       <property role="1jVoCx" value="article" />

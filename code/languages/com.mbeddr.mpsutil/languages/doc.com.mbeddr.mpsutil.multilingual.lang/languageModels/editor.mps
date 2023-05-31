@@ -72,7 +72,7 @@
         <ref role="1NtTu8" to="ivdl:aiIotWrafK" resolve="id" />
       </node>
       <node concept="3ZRKB6" id="aiIotWq9kJ" role="3EZMnx">
-        <ref role="3ZOmrH" node="aiIotWqamg" />
+        <ref role="3ZOmrH" node="aiIotWqamg" resolve="ThisIsSomeTranslatedConstant" />
       </node>
       <node concept="2iRfu4" id="aiIotWq9k_" role="2iSdaV" />
     </node>

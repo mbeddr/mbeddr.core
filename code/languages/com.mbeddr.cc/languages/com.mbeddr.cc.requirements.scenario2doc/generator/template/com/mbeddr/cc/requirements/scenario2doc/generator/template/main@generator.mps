@@ -285,7 +285,7 @@
       <node concept="1Koe21" id="519ky_Spzs1" role="1lVwrX">
         <node concept="1_1swa" id="519ky_Spzsa" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" />
+          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
           <node concept="1_1sxE" id="7IezpGAfSDv" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -295,7 +295,7 @@
                 <property role="19SUeA" value="This requirement contains a scenario. It is illustrated in " />
               </node>
               <node concept="2Sbdz4" id="7IezpGAfSD_" role="19SJt6">
-                <ref role="2SbdyP" node="519ky_Spzsb" />
+                <ref role="2SbdyP" node="519ky_Spzsb" resolve="s" />
                 <node concept="1ZhdrF" id="7IezpGAfSDC" role="lGtFl">
                   <property role="2qtEX8" value="image" />
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/6386504476136420159/6386504476136420174" />
@@ -449,7 +449,7 @@
       <node concept="1Koe21" id="2HzhasNymJP" role="1lVwrX">
         <node concept="1_1swa" id="2HzhasNymJQ" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" />
+          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
           <node concept="1_1sxE" id="2HzhasNymJR" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -580,7 +580,7 @@
       <node concept="1Koe21" id="7IezpGAfTTG" role="1lVwrX">
         <node concept="1_1swa" id="7IezpGAfTTH" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" />
+          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
           <node concept="1_1sxE" id="7IezpGAfTTI" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -909,7 +909,7 @@
       <node concept="1Koe21" id="2HzhasNymLS" role="1lVwrX">
         <node concept="1_1swa" id="2HzhasNymLT" role="1Koe22">
           <property role="TrG5h" value="dummy" />
-          <ref role="G9hjw" node="519ky_Spzuw" />
+          <ref role="G9hjw" node="519ky_Spzuw" resolve="Config" />
           <node concept="1_1sxE" id="2HzhasNymLU" role="1_0VJ0">
             <property role="TrG5h" value="empty_1363378261277_1" />
           </node>
@@ -973,7 +973,7 @@
                 <property role="19SUeA" value="This use case is illustrated in its context in " />
               </node>
               <node concept="2Sbdz4" id="2HzhasNymOd" role="19SJt6">
-                <ref role="2SbdyP" node="2HzhasNymO3" />
+                <ref role="2SbdyP" node="2HzhasNymO3" resolve="dummy" />
                 <node concept="1ZhdrF" id="2HzhasNymOg" role="lGtFl">
                   <property role="2qtEX8" value="image" />
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/6386504476136420159/6386504476136420174" />

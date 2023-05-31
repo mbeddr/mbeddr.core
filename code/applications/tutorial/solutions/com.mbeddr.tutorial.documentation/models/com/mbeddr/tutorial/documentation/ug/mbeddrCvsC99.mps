@@ -146,7 +146,7 @@
   <node concept="1_1swa" id="4rG3bBO0MpA">
     <property role="TrG5h" value="B_FunctionPointers" />
     <property role="yApLE" value="3" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoQrns" role="1_0VJ0">
       <property role="TrG5h" value="functionPointers" />
       <property role="1_0VJr" value="Function Pointers" />
@@ -433,7 +433,7 @@
               <ref role="2NCMaa" to="e1tx:7VsgA5L65uE" />
             </node>
             <node concept="2NCMab" id="2ncjLWk$s0L" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:2ncjLWk$qve" />
+              <ref role="2NCMaa" to="e1tx:2ncjLWk$qve" resolve="firstAssertion" />
             </node>
           </node>
         </node>
@@ -591,27 +591,27 @@
       <property role="TrG5h" value="empty_1383658449039_29" />
     </node>
     <node concept="1_0j5j" id="2ncjLWkzFjH" role="1DXQ57">
-      <ref role="1_0j5g" node="6TOzdCDFUA5" />
+      <ref role="1_0j5g" node="6TOzdCDFUA5" resolve="A_c99VsMbeddr" />
     </node>
   </node>
   <node concept="1_1swa" id="6TOzdCDFUA5">
     <property role="TrG5h" value="A_c99VsMbeddr" />
     <property role="yApLE" value="2" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="48PTy$RupZW" role="1DXQ57">
-      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" />
+      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
     <node concept="1_0j5j" id="4IT6uoQuDY" role="1DXQ57">
-      <ref role="1_0j5g" to="bmc6:1ig5EljjfTO" />
+      <ref role="1_0j5g" to="bmc6:1ig5EljjfTO" resolve="B_ProjectStructure" />
     </node>
     <node concept="1_0j5j" id="4IT6uoQOTB" role="1DXQ57">
-      <ref role="1_0j5g" to="vi23:tMF5FXsCLB" />
+      <ref role="1_0j5g" to="vi23:tMF5FXsCLB" resolve="F_ProductLineVariability" />
     </node>
     <node concept="1_0j5j" id="_A$C2hiper" role="1DXQ57">
-      <ref role="1_0j5g" to="4kwm:4IT6uoYGEZ" />
+      <ref role="1_0j5g" to="4kwm:4IT6uoYGEZ" resolve="E_HelloWorld" />
     </node>
     <node concept="1_0j5j" id="_A$C2hiqke" role="1DXQ57">
-      <ref role="1_0j5g" to="4kwm:3MXxQvv3i_o" />
+      <ref role="1_0j5g" to="4kwm:3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
     <node concept="1_0VNX" id="2ncjLWkqGwE" role="1_0VJ0">
       <property role="TrG5h" value="ModuleSystem" />
@@ -709,7 +709,7 @@
             <property role="19SUeA" value=" (see " />
           </node>
           <node concept="1_0GAv" id="4IT6uoQuE3" role="19SJt6">
-            <ref role="1_0GAl" to="bmc6:1ig5EljlvzR" />
+            <ref role="1_0GAl" to="bmc6:1ig5EljlvzR" resolve="projectStructure" />
           </node>
           <node concept="19SUe$" id="4IT6uoQuE2" role="19SJt6">
             <property role="19SUeA" value="). A model is essentially a file that contains a set of nodes. The nodes directly beneath the model are called " />
@@ -1042,7 +1042,7 @@
               <ref role="2NCMaa" to="zxcx:R8SBebSjXE" />
             </node>
             <node concept="2NCMab" id="R8SBebSpYW" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:R8SBebSptr" />
+              <ref role="2NCMaa" to="zxcx:R8SBebSptr" resolve="aIfStatement" />
             </node>
           </node>
         </node>
@@ -1082,7 +1082,7 @@
               <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
             </node>
             <node concept="2NCMab" id="37qjepTtyxF" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:37qjepTtxWy" />
+              <ref role="2NCMaa" to="zxcx:37qjepTtxWy" resolve="aStatementList" />
             </node>
           </node>
         </node>
@@ -1288,7 +1288,7 @@
               <property role="19SUeA" value=" (see " />
             </node>
             <node concept="2Sbdz4" id="37qjepT$6tC" role="19SJt6">
-              <ref role="2SbdyP" node="37qjepT$2Pw" />
+              <ref role="2SbdyP" node="37qjepT$2Pw" resolve="tsc" />
             </node>
             <node concept="19SUe$" id="37qjepT$6tB" role="19SJt6">
               <property role="19SUeA" value="). It contains a mapping for each C99 type to an mbeddr type. The mapping for a given target may differ from the defaults that ship with mbeddr. These can be changes for each project. " />
@@ -1299,7 +1299,7 @@
           <property role="TrG5h" value="tsc" />
           <node concept="2Sb_l4" id="37qjepT$2Qs" role="2SbwM5">
             <property role="2Sb_kV" value="c99vsmbeddr/typesizeconfig.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="37qjepT$2P$" role="2SaI5j">
             <node concept="19SGf9" id="37qjepT$2P_" role="OjmMu">
@@ -1487,7 +1487,7 @@
                 <property role="19SUeA" value=" are supported via native support for product-line variability (see " />
               </node>
               <node concept="1_0GAv" id="4IT6uoQOTG" role="19SJt6">
-                <ref role="1_0GAl" to="vi23:tMF5FXvvMH" />
+                <ref role="1_0GAl" to="vi23:tMF5FXvvMH" resolve="staticVariability" />
               </node>
               <node concept="19SUe$" id="4IT6uoQOTH" role="19SJt6">
                 <property role="19SUeA" value=")" />
@@ -1607,10 +1607,10 @@
           </node>
         </node>
         <node concept="3z_lpK" id="2ncjLWki9Jt" role="3z_lpH">
-          <ref role="3z_lpL" to="e1tx:2ncjLWkag1f" />
+          <ref role="3z_lpL" to="e1tx:2ncjLWkag1f" resolve="assertEquals" />
         </node>
         <node concept="3z_lpK" id="2ncjLWki9Ju" role="3z_lpH">
-          <ref role="3z_lpL" to="e1tx:2ncjLWkhIGO" />
+          <ref role="3z_lpL" to="e1tx:2ncjLWkhIGO" resolve="helperFunctionCall" />
         </node>
       </node>
       <node concept="1_0LV8" id="2ncjLWki9Jv" role="1_0VJ0">
@@ -1629,7 +1629,7 @@
             <property role="19SUeA" value=" statements are available, as " />
           </node>
           <node concept="2Sbdz4" id="2ncjLWki9JA" role="19SJt6">
-            <ref role="2SbdyP" node="2ncjLWki9JH" />
+            <ref role="2SbdyP" node="2ncjLWki9JH" resolve="asserts" />
           </node>
           <node concept="19SUe$" id="2ncjLWki9JB" role="19SJt6">
             <property role="19SUeA" value=" shows. It should be self-explanatory what they mean. Using these assert statements, test cases can now be made meaningful." />
@@ -1656,7 +1656,7 @@
         <property role="TrG5h" value="asserts" />
         <node concept="2Sb_l4" id="2ncjLWki9JI" role="2SbwM5">
           <property role="2Sb_kV" value="tutorial/testing/asserts.png" />
-          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+          <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
         </node>
         <node concept="OjmMv" id="2ncjLWki9JJ" role="2SaI5j">
           <node concept="19SGf9" id="2ncjLWki9JK" role="OjmMu">
@@ -1676,7 +1676,7 @@
           </node>
         </node>
         <node concept="3SGC_w" id="2ncjLWksDqg" role="3SHJ_F">
-          <ref role="3SH5fe" to="ntnz:2fBMM_3XZ4P" />
+          <ref role="3SH5fe" to="ntnz:2fBMM_3XZ4P" resolve="width80" />
         </node>
       </node>
       <node concept="1_0LV8" id="2ncjLWki9JR" role="1_0VJ0">
@@ -1715,7 +1715,7 @@
             <property role="19SUeA" value=" function, and the result is returned to the OS; this way, the whole process fails if there are assertion failures. The test output will also be printed to the Console in MPS with links pointing to the individual test cases in the C code. You can read more about this in " />
           </node>
           <node concept="1_0GAv" id="_A$C2hiqjf" role="19SJt6">
-            <ref role="1_0GAl" to="4kwm:6OxdrRmCyFc" />
+            <ref role="1_0GAl" to="4kwm:6OxdrRmCyFc" resolve="LaunchConfiguration" />
           </node>
           <node concept="19SUe$" id="_A$C2hiqjg" role="19SJt6">
             <property role="19SUeA" value="." />
@@ -1754,7 +1754,7 @@
             <property role="19SUeA" value=" example in " />
           </node>
           <node concept="1_0GAv" id="_A$C2hipvV" role="19SJt6">
-            <ref role="1_0GAl" to="4kwm:4Rhu9QGMxXG" />
+            <ref role="1_0GAl" to="4kwm:4Rhu9QGMxXG" resolve="buildAndRun" />
           </node>
           <node concept="19SUe$" id="_A$C2hipvU" role="19SJt6">
             <property role="19SUeA" value=". Note that you can set the " />
@@ -1878,7 +1878,7 @@
             <property role="19SUeA" value="mbeddr has tight integration with formal verification tools which can be used to specify a verification harness for the testing function. This way similar functionality can be achieved as with the ordinary parameterized tests. Actually, testing your function (unit of the system) with harness and formal verification is much more powerful because unit tests usually cover only punctual cases, while the verification can prove the property (in this case assertions) for a whole wider set of values. You can read more about these features in " />
           </node>
           <node concept="1_0GAv" id="48PTy$Ruq00" role="19SJt6">
-            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" />
+            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" resolve="formal_verification" />
           </node>
           <node concept="19SUe$" id="48PTy$RupZZ" role="19SJt6">
             <property role="19SUeA" value=". " />
@@ -1903,7 +1903,7 @@
   <node concept="1_1swa" id="1OEOMspli$k">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_mbeddrCvsC99" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1OEOMsplmw2" role="1_0VJ0">
       <property role="TrG5h" value="mbeddrCVsC99" />
       <property role="1_0VJr" value="mbeddr C vs. C99" />
@@ -1916,34 +1916,34 @@
       </node>
       <node concept="$CzcT" id="4KbglN_kQ$K" role="1_0VJ0">
         <node concept="1_0j5j" id="4KbglN_kQ$V" role="$CzcU">
-          <ref role="1_0j5g" node="6TOzdCDFUA5" />
+          <ref role="1_0j5g" node="6TOzdCDFUA5" resolve="A_c99VsMbeddr" />
         </node>
       </node>
       <node concept="$CzcT" id="4KbglN_kQ_5" role="1_0VJ0">
         <node concept="1_0j5j" id="4KbglN_kQ_n" role="$CzcU">
-          <ref role="1_0j5g" node="4rG3bBO0MpA" />
+          <ref role="1_0j5g" node="4rG3bBO0MpA" resolve="B_FunctionPointers" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6unHXzA" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6unHXzL" role="$CzcU">
-          <ref role="1_0j5g" node="4IT6unrukQ" />
+          <ref role="1_0j5g" node="4IT6unrukQ" resolve="C_Commenting" />
         </node>
       </node>
     </node>
     <node concept="1_0j5j" id="4KbglN_kQ$T" role="1DXQ57">
-      <ref role="1_0j5g" node="6TOzdCDFUA5" />
+      <ref role="1_0j5g" node="6TOzdCDFUA5" resolve="A_c99VsMbeddr" />
     </node>
     <node concept="1_0j5j" id="4KbglN_kQ_j" role="1DXQ57">
-      <ref role="1_0j5g" node="4rG3bBO0MpA" />
+      <ref role="1_0j5g" node="4rG3bBO0MpA" resolve="B_FunctionPointers" />
     </node>
     <node concept="1_0j5j" id="4IT6unHXzx" role="1DXQ57">
-      <ref role="1_0j5g" node="4IT6unrukQ" />
+      <ref role="1_0j5g" node="4IT6unrukQ" resolve="C_Commenting" />
     </node>
   </node>
   <node concept="1_1swa" id="4IT6unrukQ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_Commenting" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6unrwrw" role="1_0VJ0">
       <property role="TrG5h" value="commenting" />
       <property role="1_0VJr" value="Commenting" />
@@ -2408,7 +2408,7 @@
   <node concept="1_1swa" id="3uikmEk5Pre">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_ArgumentAnnotations" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="Wq1Bs" id="3uikmEk5XtK" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />
       <property role="Wq1Bq" value="tamas.szabo@itemis.de" />

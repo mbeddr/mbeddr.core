@@ -98,7 +98,7 @@
   <node concept="1_1swa" id="yrKNEnw4lA">
     <property role="TrG5h" value="C_Units" />
     <property role="yApLE" value="5" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO8cu5" role="1_0VJ0">
       <property role="TrG5h" value="units" />
       <property role="1_0VJr" value="Units" />
@@ -128,7 +128,7 @@
               <property role="19SUeA" value=" introduced in " />
             </node>
             <node concept="1_0GAv" id="4lzRQzvpYtx" role="19SJt6">
-              <ref role="1_0GAl" to="c4ys:4IT6uoQrns" />
+              <ref role="1_0GAl" to="c4ys:4IT6uoQrns" resolve="functionPointers" />
             </node>
             <node concept="19SUe$" id="4lzRQzvpYtw" role="19SJt6">
               <property role="19SUeA" value=" and make it more useful. Our application is supposed to work with tracking data (captured from a bike computer or a flight logger). For the examples so far we were not interested in the physical units. " />
@@ -384,7 +384,7 @@
               <ref role="2NCMaa" to="e1tx:7VsgA5L65uE" />
             </node>
             <node concept="2NCMab" id="4lzRQzvjmJL" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:2ncjLWk$qve" />
+              <ref role="2NCMaa" to="e1tx:2ncjLWk$qve" resolve="firstAssertion" />
             </node>
           </node>
         </node>
@@ -936,7 +936,7 @@
       <property role="TrG5h" value="empty_1383658449039_29" />
     </node>
     <node concept="1_0j5j" id="4lzRQzvpYtK" role="1DXQ57">
-      <ref role="1_0j5g" to="c4ys:4rG3bBO0MpA" />
+      <ref role="1_0j5g" to="c4ys:4rG3bBO0MpA" resolve="B_FunctionPointers" />
     </node>
     <node concept="Wq1Bs" id="1VdI9nUB1TN" role="Wq1Bf">
       <property role="Wq1Bt" value="Tamas Szabo" />

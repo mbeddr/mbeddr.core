@@ -172,7 +172,7 @@
             <node concept="2OqwBi" id="7NPCd7DE8PD" role="33vP2m">
               <node concept="2tJFMh" id="7NPCd7DE8PE" role="2Oq$k0">
                 <node concept="ZC_QK" id="7NPCd7DE8PF" role="2tJFKM">
-                  <ref role="2aWVGs" to="cvws:3TrpzyP_Ftq" />
+                  <ref role="2aWVGs" to="cvws:3TrpzyP_Ftq" resolve="AdditionalDocumentation" />
                 </node>
               </node>
               <node concept="Vyspw" id="7NPCd7DE8PG" role="2OqNvi">

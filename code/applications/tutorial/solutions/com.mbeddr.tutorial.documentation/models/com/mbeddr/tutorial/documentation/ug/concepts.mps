@@ -95,7 +95,7 @@
   <node concept="1_1swa" id="1ig5Elj9K1M">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_MPS" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Elj9VE4" role="1_0VJ0">
       <property role="TrG5h" value="mps" />
       <property role="1_0VJr" value="JetBrains MPS" />
@@ -247,7 +247,7 @@
   <node concept="1_1swa" id="1ig5EljbCbt">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_mbeddr" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljbCc6" role="1_0VJ0">
       <property role="TrG5h" value="mbeddr" />
       <property role="1_0VJr" value="mbeddr" />
@@ -343,7 +343,7 @@
               <property role="19SUeA" value="mbeddr is structured into 5 layers and addresses three different concerns (see " />
             </node>
             <node concept="2Sbdz4" id="1ig5Eljevet" role="19SJt6">
-              <ref role="2SbdyP" node="1ig5EljeuEl" />
+              <ref role="2SbdyP" node="1ig5EljeuEl" resolve="mbeddrArchitecture" />
             </node>
             <node concept="19SUe$" id="1ig5Eljeves" role="19SJt6">
               <property role="19SUeA" value="). The platform layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core layer includes the base languages used in mbeddr; these are different for each of the three concerns. The default extensions layer consits of a set of predefined extensions of the core languages that can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to be filled by users. The backend layer consists of existing tools compilation and analysis tools which mbeddr uses." />
@@ -354,7 +354,7 @@
           <property role="TrG5h" value="mbeddrArchitecture" />
           <node concept="2Sb_l4" id="2fBMM_3YhqV" role="2SbwM5">
             <property role="2Sb_kV" value="architecture.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4H" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4H" resolve="conceptImages" />
           </node>
           <node concept="OjmMv" id="1ig5EljeuEn" role="2SaI5j">
             <node concept="19SGf9" id="1ig5EljeuEo" role="OjmMu">
@@ -401,7 +401,7 @@
   <node concept="1_1swa" id="1ig5EljhyTp">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="D_CBMC" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljhyWt" role="1_0VJ0">
       <property role="TrG5h" value="cbmc" />
       <property role="1_0VJr" value="CBMC" />
@@ -411,7 +411,7 @@
             <property role="19SUeA" value="CBMC is used for verification. It is discussed in detail in " />
           </node>
           <node concept="1_0GAv" id="3mn43GOU5Hh" role="19SJt6">
-            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" />
+            <ref role="1_0GAl" to="us0v:3mn43GO8lBo" resolve="formal_verification" />
           </node>
           <node concept="19SUe$" id="3mn43GOU5Hg" role="19SJt6">
             <property role="19SUeA" value=". To summarize, CBMC is a bounded model checker for C programs. This means that it can essentially simulate the execution of a C program regarding all its possible execution paths. CBMC is open source software and can be downloaded from " />
@@ -427,7 +427,7 @@
             <property role="19SUeA" value=". It has to be installed separately, as described in the Installation section " />
           </node>
           <node concept="1_0GAv" id="3mn43GOU5II" role="19SJt6">
-            <ref role="1_0GAl" to="xojk:2en8HnCx1H$" />
+            <ref role="1_0GAl" to="xojk:2en8HnCx1H$" resolve="VerificationTools" />
           </node>
           <node concept="19SUe$" id="3mn43GOU5IH" role="19SJt6">
             <property role="19SUeA" value=". For details on how mbeddr uses CBMC, please take a look at the following papers, as well as at " />
@@ -482,16 +482,16 @@
       </node>
     </node>
     <node concept="1_0j5j" id="3mn43GOU5Gn" role="1DXQ57">
-      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" />
+      <ref role="1_0j5g" to="us0v:7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
     <node concept="1_0j5j" id="3mn43GOU5HT" role="1DXQ57">
-      <ref role="1_0j5g" to="xojk:1mCCOvys41P" />
+      <ref role="1_0j5g" to="xojk:1mCCOvys41P" resolve="C_VerificationTool" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5Eljjea0">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_Graphviz" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljjecF" role="1_0VJ0">
       <property role="TrG5h" value="PlantUMLAndGraphviz" />
       <property role="1_0VJr" value="PlantUML and Graphviz" />
@@ -521,7 +521,7 @@
             <property role="19SUeA" value=") for layouting the diagrams. As a user, you will not interact with graphviz directly, but you have to install it manually (see " />
           </node>
           <node concept="1_0GAv" id="3mn43GOU5JN" role="19SJt6">
-            <ref role="1_0GAl" to="xojk:2en8HnCsqc1" />
+            <ref role="1_0GAl" to="xojk:2en8HnCsqc1" resolve="Graphviz" />
           </node>
           <node concept="19SUe$" id="3mn43GOU5JM" role="19SJt6">
             <property role="19SUeA" value="). PlantUML itself is packaged with mbeddr and does not have to be installed manually." />
@@ -530,13 +530,13 @@
       </node>
     </node>
     <node concept="1_0j5j" id="3mn43GOU5J9" role="1DXQ57">
-      <ref role="1_0j5g" to="xojk:1mCCOvyiIY_" />
+      <ref role="1_0j5g" to="xojk:1mCCOvyiIY_" resolve="B_Graphviz" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5Eljjeuk">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_GccMakeGdb" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5Eljjexg" role="1_0VJ0">
       <property role="TrG5h" value="gccMakeGdb" />
       <property role="1_0VJr" value="gcc, make and gdb" />
@@ -593,7 +593,7 @@
             <property role="19SUeA" value=" is used by the mbeddr debugger. Note that all of these tools are not visible to the mbeddr user. But they have to be available on your system (see  " />
           </node>
           <node concept="1_0GAv" id="3mn43GOU2QY" role="19SJt6">
-            <ref role="1_0GAl" to="xojk:5zu8XJxPfMf" />
+            <ref role="1_0GAl" to="xojk:5zu8XJxPfMf" resolve="GccMakeAndGdb" />
           </node>
           <node concept="19SUe$" id="3mn43GOU2QX" role="19SJt6">
             <property role="19SUeA" value=" for details). " />
@@ -609,13 +609,13 @@
       </node>
     </node>
     <node concept="1_0j5j" id="3mn43GOU5HK" role="1DXQ57">
-      <ref role="1_0j5g" to="xojk:1mCCOvyiECJ" />
+      <ref role="1_0j5g" to="xojk:1mCCOvyiECJ" resolve="A_GccMakeAndGdb" />
     </node>
   </node>
   <node concept="1_1swa" id="1ig5EljjePI">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="F_Java" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="1ig5EljjePJ" role="1_0VJ0">
       <property role="TrG5h" value="java" />
       <property role="1_0VJr" value="Java" />
@@ -638,58 +638,58 @@
   <node concept="1_1swa" id="1ig5Eljjfz2">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_Concepts" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1mvXsy" id="1ig5EljjfA_" role="1_0VJ0">
       <property role="TrG5h" value="concepts" />
       <property role="1_0VJr" value="mbeddr Concepts" />
       <node concept="$CzcT" id="1ig5EljjfAF" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5EljjfBC" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5Elj9K1M" />
+          <ref role="1_0j5g" node="1ig5Elj9K1M" resolve="A_MPS" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5EljjfBF" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5EljjfCt" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljbCbt" />
+          <ref role="1_0j5g" node="1ig5EljbCbt" resolve="B_mbeddr" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5EljjfBL" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5EljjfCw" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5Eljjeuk" />
+          <ref role="1_0j5g" node="1ig5Eljjeuk" resolve="C_GccMakeGdb" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5EljjfBT" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5EljjfCz" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljhyTp" />
+          <ref role="1_0j5g" node="1ig5EljhyTp" resolve="D_CBMC" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5EljjfC3" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5EljjfCA" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5Eljjea0" />
+          <ref role="1_0j5g" node="1ig5Eljjea0" resolve="E_Graphviz" />
         </node>
       </node>
       <node concept="$CzcT" id="1ig5EljjfCf" role="1_0VJ0">
         <node concept="1_0j5j" id="1ig5EljjfCD" role="$CzcU">
-          <ref role="1_0j5g" node="1ig5EljjePI" />
+          <ref role="1_0j5g" node="1ig5EljjePI" resolve="F_Java" />
         </node>
       </node>
     </node>
     <node concept="1_0j5j" id="1ig5EljjfAJ" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5Elj9K1M" />
+      <ref role="1_0j5g" node="1ig5Elj9K1M" resolve="A_MPS" />
     </node>
     <node concept="1_0j5j" id="1ig5EljjfAO" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljbCbt" />
+      <ref role="1_0j5g" node="1ig5EljbCbt" resolve="B_mbeddr" />
     </node>
     <node concept="1_0j5j" id="1ig5EljjfAW" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5Eljjeuk" />
+      <ref role="1_0j5g" node="1ig5Eljjeuk" resolve="C_GccMakeGdb" />
     </node>
     <node concept="1_0j5j" id="1ig5EljjfB6" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljhyTp" />
+      <ref role="1_0j5g" node="1ig5EljhyTp" resolve="D_CBMC" />
     </node>
     <node concept="1_0j5j" id="1ig5EljjfBi" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5Eljjea0" />
+      <ref role="1_0j5g" node="1ig5Eljjea0" resolve="E_Graphviz" />
     </node>
     <node concept="1_0j5j" id="1ig5EljjfBw" role="1DXQ57">
-      <ref role="1_0j5g" node="1ig5EljjePI" />
+      <ref role="1_0j5g" node="1ig5EljjePI" resolve="F_Java" />
     </node>
   </node>
 </model>

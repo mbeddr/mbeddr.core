@@ -148,7 +148,7 @@
   <node concept="1_1swa" id="yrKNEnvQ24">
     <property role="TrG5h" value="D_Debugging" />
     <property role="yApLE" value="4" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO6BBY" role="1_0VJ0">
       <property role="TrG5h" value="debugging" />
       <property role="1_0VJr" value="Debugging" />
@@ -256,7 +256,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRI5O" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger9.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRFKQ" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRFKR" role="OjmMu">
@@ -273,7 +273,7 @@
               <property role="19SUeA" value="Next, create a run configuration as explained in " />
             </node>
             <node concept="1_0GAv" id="7yEEdZqhRyB" role="19SJt6">
-              <ref role="1_0GAl" node="6OxdrRmCyFc" />
+              <ref role="1_0GAl" node="6OxdrRmCyFc" resolve="LaunchConfiguration" />
             </node>
             <node concept="19SUe$" id="7yEEdZqhRyA" role="19SJt6">
               <property role="19SUeA" value=" and run it in debug mode by pressing " />
@@ -289,7 +289,7 @@
               <property role="19SUeA" value=" or by clicking on the debug button in MPS' toolbar (see " />
             </node>
             <node concept="2Sbdz4" id="1IjqGpzdYlx" role="19SJt6">
-              <ref role="2SbdyP" node="6Kly4FTRP5g" />
+              <ref role="2SbdyP" node="6Kly4FTRP5g" resolve="RunDebugger" />
             </node>
             <node concept="19SUe$" id="1IjqGpzdYlw" role="19SJt6">
               <property role="19SUeA" value="). " />
@@ -301,7 +301,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRQhj" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger5.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRP5k" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRP5l" role="OjmMu">
@@ -325,7 +325,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRTNa" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger10.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRTKj" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRTKk" role="OjmMu">
@@ -432,7 +432,7 @@
               <property role="19SUeA" value=" in the watchables view (see " />
             </node>
             <node concept="2Sbdz4" id="2ZXYLt7WgbU" role="19SJt6">
-              <ref role="2SbdyP" node="6Kly4FTRW8I" />
+              <ref role="2SbdyP" node="6Kly4FTRW8I" resolve="SuspendedInMain" />
             </node>
             <node concept="19SUe$" id="2ZXYLt7WgbT" role="19SJt6">
               <property role="19SUeA" value=")." />
@@ -444,7 +444,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="6Kly4FTRW8J" role="2SbwM5">
             <property role="2Sb_kV" value="debugger/debugger11.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="6Kly4FTRW8K" role="2SaI5j">
             <node concept="19SGf9" id="6Kly4FTRW8L" role="OjmMu">
@@ -458,13 +458,13 @@
       </node>
     </node>
     <node concept="1_0j5j" id="7yEEdZqhRyJ" role="1DXQ57">
-      <ref role="1_0j5g" node="3MXxQvv3i_o" />
+      <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
   </node>
   <node concept="1_1swa" id="6UY8Kx5jzAQ">
     <property role="TrG5h" value="F_LegacyCode" />
     <property role="yApLE" value="8" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO6C$J" role="1_0VJ0">
       <property role="TrG5h" value="accessingLibraries" />
       <property role="1_0VJr" value="Accessing Libraries" />
@@ -813,56 +813,56 @@
   <node concept="1_1swa" id="1OEOMsplf5g">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_CTooling" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uoYGFh" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnvQ24" />
+      <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFi" role="1DXQ57">
-      <ref role="1_0j5g" node="6UY8Kx5jzAQ" />
+      <ref role="1_0j5g" node="6UY8Kx5jzAQ" resolve="F_LegacyCode" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFj" role="1DXQ57">
-      <ref role="1_0j5g" node="5dchr4QjR6$" />
+      <ref role="1_0j5g" node="5dchr4QjR6$" resolve="A_BuildingInTheIDE" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFk" role="1DXQ57">
-      <ref role="1_0j5g" node="1LxA8cJ$0Nw" />
+      <ref role="1_0j5g" node="1LxA8cJ$0Nw" resolve="B_CommandLineBuild" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFl" role="1DXQ57">
-      <ref role="1_0j5g" node="3MXxQvv3i_o" />
+      <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFm" role="1DXQ57">
-      <ref role="1_0j5g" node="4IT6uoYGEZ" />
+      <ref role="1_0j5g" node="4IT6uoYGEZ" resolve="E_HelloWorld" />
     </node>
     <node concept="1mvXsy" id="1OEOMsplmw6" role="1_0VJ0">
       <property role="TrG5h" value="ctooling" />
       <property role="1_0VJr" value="C Tooling" />
       <node concept="$CzcT" id="1LxA8cJ$2No" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGFt" role="$CzcU">
-          <ref role="1_0j5g" node="5dchr4QjR6$" />
+          <ref role="1_0j5g" node="5dchr4QjR6$" resolve="A_BuildingInTheIDE" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6uoYGFy" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGk" role="$CzcU">
-          <ref role="1_0j5g" node="1LxA8cJ$0Nw" />
+          <ref role="1_0j5g" node="1LxA8cJ$0Nw" resolve="B_CommandLineBuild" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6uoYGFC" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGn" role="$CzcU">
-          <ref role="1_0j5g" node="3MXxQvv3i_o" />
+          <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6uoYGFK" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGq" role="$CzcU">
-          <ref role="1_0j5g" node="yrKNEnvQ24" />
+          <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6uoYGFU" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGt" role="$CzcU">
-          <ref role="1_0j5g" node="4IT6uoYGEZ" />
+          <ref role="1_0j5g" node="4IT6uoYGEZ" resolve="E_HelloWorld" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6uoYGG6" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGw" role="$CzcU">
-          <ref role="1_0j5g" node="6UY8Kx5jzAQ" />
+          <ref role="1_0j5g" node="6UY8Kx5jzAQ" resolve="F_LegacyCode" />
         </node>
       </node>
     </node>
@@ -870,12 +870,12 @@
   <node concept="1_1swa" id="5dchr4QjR6$">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="A_BuildingInTheIDE" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="4IT6uoYRy9" role="1DXQ57">
-      <ref role="1_0j5g" node="3MXxQvv3i_o" />
+      <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
     <node concept="1_0j5j" id="7c6uq_OvAiW" role="1DXQ57">
-      <ref role="1_0j5g" to="bmc6:1ig5EljjfTO" />
+      <ref role="1_0j5g" to="bmc6:1ig5EljjfTO" resolve="B_ProjectStructure" />
     </node>
     <node concept="1_0VNX" id="4IT6uoYPkA" role="1_0VJ0">
       <property role="TrG5h" value="building" />
@@ -1002,7 +1002,7 @@
               <property role="19SUeA" value=" platform will use Make for building, GCC for compiling, GDB for debugging. Per default, mbeddr will expect these tools to be on your global PATH (see paths in build config above). However, you can specify their locations by providing an absolute path or using a path macro (see " />
             </node>
             <node concept="1_0GAv" id="7c6uq_OuYWN" role="19SJt6">
-              <ref role="1_0GAl" to="bmc6:1ig5EljqufL" />
+              <ref role="1_0GAl" to="bmc6:1ig5EljqufL" resolve="pathsAndLibs" />
             </node>
             <node concept="19SUe$" id="7c6uq_OuYWM" role="19SJt6">
               <property role="19SUeA" value="): e.g., specifying the location of make via ${make.home}/make. Latter makes sense if you are working in a team with people, each having these tools installed at different locations. The " />
@@ -1119,7 +1119,7 @@
               <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
             </node>
             <node concept="2NCMab" id="5dchr4QlnZd" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:1YUFCeFJNqs" />
+              <ref role="2NCMaa" to="zxcx:1YUFCeFJNqs" resolve="reporting" />
             </node>
           </node>
         </node>
@@ -1328,7 +1328,7 @@
               <property role="19SUeA" value="If you don't have any errors in your mbeddr code (see previous subsection), then the code generation and compilation should go without problems and you can run the binary (see " />
             </node>
             <node concept="1_0GAv" id="4IT6uoYRyc" role="19SJt6">
-              <ref role="1_0GAl" node="6OxdrRmCyFc" />
+              <ref role="1_0GAl" node="6OxdrRmCyFc" resolve="LaunchConfiguration" />
             </node>
             <node concept="19SUe$" id="4IT6uoYRyb" role="19SJt6">
               <property role="19SUeA" value="). If something goes wrong nontheless (during generation of compilation), then the errors are shown in the messages view. " />
@@ -1341,7 +1341,7 @@
   <node concept="1_1swa" id="1LxA8cJ$0Nw">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="B_CommandLineBuild" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="7yEEdZqjnHd" role="1_0VJ0">
       <property role="1_0VJr" value="Building Binaries from the Command-Line" />
       <property role="TrG5h" value="Building" />
@@ -1351,13 +1351,13 @@
             <property role="19SUeA" value="This section provides an overview of how build scripts for mbeddr-based applications are written and how you can integrate them into your continous integration environment. For trying out the shown examples, you will either need the mbeddr IDE (see " />
           </node>
           <node concept="1_0GAv" id="7yEEdZqjuCw" role="19SJt6">
-            <ref role="1_0GAl" to="xojk:1mCCOvyhqAR" />
+            <ref role="1_0GAl" to="xojk:1mCCOvyhqAR" resolve="mbeddrIDEInstallation" />
           </node>
           <node concept="19SUe$" id="7yEEdZqjuCx" role="19SJt6">
             <property role="19SUeA" value=") or mbeddr Distribution (see " />
           </node>
           <node concept="1_0GAv" id="7yEEdZqjuCy" role="19SJt6">
-            <ref role="1_0GAl" to="xojk:1mCCOvyhqBe" />
+            <ref role="1_0GAl" to="xojk:1mCCOvyhqBe" resolve="PluginDistributionInstallation" />
           </node>
           <node concept="19SUe$" id="7yEEdZqjuCz" role="19SJt6">
             <property role="19SUeA" value="). When building your mbeddr-based applications, we recommend using any of the two installation methods." />
@@ -1480,7 +1480,7 @@
               <property role="19SUeA" value=". You will now see a console appearing at the bottom of MPS with some messages in it (" />
             </node>
             <node concept="1_0GAv" id="7yEEdZqjnI7" role="19SJt6">
-              <ref role="1_0GAl" node="6OxdrRmCyFc" />
+              <ref role="1_0GAl" node="6OxdrRmCyFc" resolve="LaunchConfiguration" />
             </node>
             <node concept="19SUe$" id="7yEEdZqjnI8" role="19SJt6">
               <property role="19SUeA" value=" describes their meaning). The next sections will describe how to write a build script for this application and how to invoke it from the command-line." />
@@ -1826,7 +1826,7 @@
               <property role="19SUeA" value=" on your machine (see " />
             </node>
             <node concept="1_0GAv" id="7yEEdZqjnKo" role="19SJt6">
-              <ref role="1_0GAl" to="xojk:1LxA8cJZySu" />
+              <ref role="1_0GAl" to="xojk:1LxA8cJZySu" resolve="ToolsAndVersions" />
             </node>
             <node concept="19SUe$" id="7yEEdZqjnKp" role="19SJt6">
               <property role="19SUeA" value="). Next, store this script to your local file system as " />
@@ -1895,24 +1895,24 @@
       </node>
     </node>
     <node concept="1_0j5j" id="7yEEdZqjvaZ" role="1DXQ57">
-      <ref role="1_0j5g" to="xojk:1mCCOvys4ZP" />
+      <ref role="1_0j5g" to="xojk:1mCCOvys4ZP" resolve="D_Mbeddr" />
     </node>
     <node concept="1_0j5j" id="7yEEdZqjvb0" role="1DXQ57">
-      <ref role="1_0j5g" node="3MXxQvv3i_o" />
+      <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
     <node concept="1_0j5j" id="7yEEdZqjvb1" role="1DXQ57">
-      <ref role="1_0j5g" to="xojk:1LxA8cJZyH7" />
+      <ref role="1_0j5g" to="xojk:1LxA8cJZyH7" resolve="G_ToolsAndVersions" />
     </node>
     <node concept="1_0j5j" id="7yEEdZqjvpQ" role="1DXQ57">
-      <ref role="1_0j5g" node="3MXxQvv3i_o" />
+      <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
   </node>
   <node concept="1_1swa" id="3MXxQvv3i_o">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_LaunchConfiguration" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0j5j" id="3MXxQvvjQKz" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnvQ24" />
+      <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
     </node>
     <node concept="1_0VNX" id="6OxdrRmCyFc" role="1_0VJ0">
       <property role="1_0VJr" value="Running Applications from MPS/mbeddr" />
@@ -2112,7 +2112,7 @@
                   <property role="19SUeA" value=". This approach can be seen in " />
                 </node>
                 <node concept="2Sbdz4" id="3MXxQvvjKYe" role="19SJt6">
-                  <ref role="2SbdyP" node="3MXxQvvjKOD" />
+                  <ref role="2SbdyP" node="3MXxQvvjKOD" resolve="LaunchConfiguration_ContextMenu" />
                 </node>
                 <node concept="19SUe$" id="3MXxQvvjKYf" role="19SJt6">
                   <property role="19SUeA" value="." />
@@ -2137,7 +2137,7 @@
                   <property role="19SUeA" value=" of your application and run/debug the executable from the context menu of the executable definition. This approach can be seen in " />
                 </node>
                 <node concept="2Sbdz4" id="3MXxQvvjMZo" role="19SJt6">
-                  <ref role="2SbdyP" node="3MXxQvvjL3v" />
+                  <ref role="2SbdyP" node="3MXxQvvjL3v" resolve="LaunchConfiguration_Build" />
                 </node>
                 <node concept="19SUe$" id="3MXxQvvjMZp" role="19SJt6">
                   <property role="19SUeA" value="." />
@@ -2151,7 +2151,7 @@
           <property role="TrG5h" value="LaunchConfiguration_ContextMenu" />
           <node concept="2Sb_l4" id="3MXxQvvjKRV" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_context.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjKOH" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjKOI" role="OjmMu">
@@ -2167,7 +2167,7 @@
           <property role="TrG5h" value="LaunchConfiguration_Build" />
           <node concept="2Sb_l4" id="3MXxQvvjL3w" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_buildconfig.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjL3x" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjL3y" role="OjmMu">
@@ -2194,13 +2194,13 @@
               <property role="19SUeA" value=" menu of MPS. The launch configuration can also be created manually, or from the context menus of the entry point or executable definition; take a look at the previous two figures (" />
             </node>
             <node concept="2Sbdz4" id="3MXxQvvjNx4" role="19SJt6">
-              <ref role="2SbdyP" node="3MXxQvvjL3v" />
+              <ref role="2SbdyP" node="3MXxQvvjL3v" resolve="LaunchConfiguration_Build" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjNx3" role="19SJt6">
               <property role="19SUeA" value=" or " />
             </node>
             <node concept="2Sbdz4" id="3MXxQvvjNyq" role="19SJt6">
-              <ref role="2SbdyP" node="3MXxQvvjKOD" />
+              <ref role="2SbdyP" node="3MXxQvvjKOD" resolve="LaunchConfiguration_ContextMenu" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjNyp" role="19SJt6">
               <property role="19SUeA" value=") for the corresponding " />
@@ -2236,7 +2236,7 @@
               <property role="19SUeA" value="s. Simply click on the green run button to launch the executable as shown on " />
             </node>
             <node concept="2Sbdz4" id="3MXxQvvjNjE" role="19SJt6">
-              <ref role="2SbdyP" node="3MXxQvvjL3v" />
+              <ref role="2SbdyP" node="3MXxQvvjL3v" resolve="LaunchConfiguration_Build" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjNjF" role="19SJt6">
               <property role="19SUeA" value=". In order to debug the application, you need to click on the green bug icon next to the selected " />
@@ -2252,7 +2252,7 @@
               <property role="19SUeA" value=". You can read more about how you can debug your application in " />
             </node>
             <node concept="1_0GAv" id="3MXxQvvjQIH" role="19SJt6">
-              <ref role="1_0GAl" node="3mn43GO6BBY" />
+              <ref role="1_0GAl" node="3mn43GO6BBY" resolve="debugging" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjQII" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -2264,7 +2264,7 @@
           <property role="TrG5h" value="LaunchConfiguration_Menu" />
           <node concept="2Sb_l4" id="3MXxQvvjMTR" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_menu.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjMTS" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjMTT" role="OjmMu">
@@ -2303,7 +2303,7 @@
               <property role="19SUeA" value=" menu item. " />
             </node>
             <node concept="2Sbdz4" id="3MXxQvvjQb1" role="19SJt6">
-              <ref role="2SbdyP" node="3MXxQvvjQpA" />
+              <ref role="2SbdyP" node="3MXxQvvjQpA" resolve="LaunchConfiguration_Contents" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjQb2" role="19SJt6">
               <property role="19SUeA" value=" shows the contents of the " />
@@ -2335,7 +2335,7 @@
           <property role="1DKIkx" value="true" />
           <node concept="2Sb_l4" id="3MXxQvvjQrs" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_contents.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvjQpE" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvjQpF" role="OjmMu">
@@ -2488,7 +2488,7 @@
               <property role="19SUeA" value=". " />
             </node>
             <node concept="2Sbdz4" id="3MXxQvvkUBf" role="19SJt6">
-              <ref role="2SbdyP" node="3MXxQvvkUCQ" />
+              <ref role="2SbdyP" node="3MXxQvvkUCQ" resolve="LaunchConfiguration_Tests" />
             </node>
             <node concept="19SUe$" id="3MXxQvvkUBg" role="19SJt6">
               <property role="19SUeA" value=" shows the output of the test run for the " />
@@ -2511,7 +2511,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="3MXxQvvkUEc" role="2SbwM5">
             <property role="2Sb_kV" value="ctooling/launchconfig_tests.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
           </node>
           <node concept="OjmMv" id="3MXxQvvkUCU" role="2SaI5j">
             <node concept="19SGf9" id="3MXxQvvkUCV" role="OjmMu">
@@ -2532,7 +2532,7 @@
   <node concept="1_1swa" id="4IT6uoYGEZ">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="E_HelloWorld" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" />
+    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoYGF0" role="1_0VJ0">
       <property role="TrG5h" value="helloWorld" />
       <property role="1_0VJr" value="Hello, World" />
@@ -2562,7 +2562,7 @@
               <property role="19SUeA" value=". " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGKvo4" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGKvnx" />
+              <ref role="2SbdyP" node="4Rhu9QGKvnx" resolve="newProjectWizard" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGKvo5" role="19SJt6">
               <property role="19SUeA" value=" shows the Wizard that opens subsequently. We select a Solution Project " />
@@ -2573,7 +2573,7 @@
                   <property role="19SUeA" value="If you work with the mbeddr IDE, then the language project shown in " />
                 </node>
                 <node concept="2Sbdz4" id="4Rhu9QGKvBs" role="19SJt6">
-                  <ref role="2SbdyP" node="4Rhu9QGKvnx" />
+                  <ref role="2SbdyP" node="4Rhu9QGKvnx" resolve="newProjectWizard" />
                 </node>
                 <node concept="19SUe$" id="4Rhu9QGKvBt" role="19SJt6">
                   <property role="19SUeA" value=" is not available." />
@@ -2590,7 +2590,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGKvo1" role="2SbwM5">
             <property role="2Sb_kV" value="newProjWizard.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGKvn_" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGKvnA" role="OjmMu">
@@ -2628,7 +2628,7 @@
               <property role="19SUeA" value="Inside the solution you have to create a (or potentially several) new model (see " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGKyR2" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGKynz" />
+              <ref role="2SbdyP" node="4Rhu9QGKynz" resolve="newModel" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGKyR1" role="19SJt6">
               <property role="19SUeA" value="). Use the " />
@@ -2660,7 +2660,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGKyn$" role="2SbwM5">
             <property role="2Sb_kV" value="newModel.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGKyn_" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGKynA" role="OjmMu">
@@ -2727,7 +2727,7 @@
               <property role="19SUeA" value=")). " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGKzUa" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGKzTj" />
+              <ref role="2SbdyP" node="4Rhu9QGKzTj" resolve="modelprops" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGKzUb" role="19SJt6">
               <property role="19SUeA" value=" shows the result. " />
@@ -2739,7 +2739,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGKzTk" role="2SbwM5">
             <property role="2Sb_kV" value="modelprops.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGKzTl" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGKzTm" role="OjmMu">
@@ -2807,7 +2807,7 @@
               <property role="19SUeA" value=" for the module. The result looks as shown in " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGKC94" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGKB_a" />
+              <ref role="2SbdyP" node="4Rhu9QGKB_a" resolve="hw" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGKC95" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -2970,7 +2970,7 @@
               <property role="19SUeA" value=" model to create one. Initially it looks as shown in " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGMwrc" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGMwpw" />
+              <ref role="2SbdyP" node="4Rhu9QGMwpw" resolve="bc" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGMwrd" role="19SJt6" />
           </node>
@@ -3100,7 +3100,7 @@
               <property role="19SUeA" value="You're done. It should now look as shown in " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGMyq2" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGMynt" />
+              <ref role="2SbdyP" node="4Rhu9QGMynt" resolve="bcfull" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGMyq3" role="19SJt6" />
           </node>
@@ -3212,7 +3212,7 @@
               <property role="19SUeA" value=" tool, as shown in " />
             </node>
             <node concept="2Sbdz4" id="4Rhu9QGM_fu" role="19SJt6">
-              <ref role="2SbdyP" node="4Rhu9QGM$Vp" />
+              <ref role="2SbdyP" node="4Rhu9QGM$Vp" resolve="running" />
             </node>
             <node concept="19SUe$" id="4Rhu9QGM_fv" role="19SJt6">
               <property role="19SUeA" value=". Note how it contains clickable lines for the test(s) that have run as well as for the failed assertions." />
@@ -3224,7 +3224,7 @@
           <property role="2Sbq$t" value="true" />
           <node concept="2Sb_l4" id="4Rhu9QGM$W8" role="2SbwM5">
             <property role="2Sb_kV" value="running.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" />
+            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4J" resolve="hwimages" />
           </node>
           <node concept="OjmMv" id="4Rhu9QGM$Vt" role="2SaI5j">
             <node concept="19SGf9" id="4Rhu9QGM$Vu" role="OjmMu">

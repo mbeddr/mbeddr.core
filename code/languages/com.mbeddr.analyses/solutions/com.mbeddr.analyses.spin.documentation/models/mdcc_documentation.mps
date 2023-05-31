@@ -120,7 +120,7 @@
   <node concept="1_1swa" id="4l47ydyjg11">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_000_MDCC_Top" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="Wq1Bs" id="5HlC91LJM1m" role="Wq1Bf">
       <property role="Wq1Bt" value="Daniel Ratiu" />
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
@@ -131,46 +131,46 @@
     </node>
     <node concept="$CzcT" id="7VkE0Bpsrjw" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0BpsrjY" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq5Fn" />
+        <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_MDCC_Ch1_Intro" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5D5" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5DV" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0xz" />
+        <ref role="1_0j5g" node="7VkE0Bpq0xz" resolve="_020_MDCC_Ch2_AnalysisConfiguration" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5E6" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5Ey" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0C5" />
+        <ref role="1_0j5g" node="7VkE0Bpq0C5" resolve="_030_MDCC_Ch3_TopLevelHarnessContent" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5Ei" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5EA" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq0PW" />
+        <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
       </node>
     </node>
     <node concept="$CzcT" id="7VkE0Bpq5EE" role="1_0VJ0">
       <node concept="1_0j5j" id="7VkE0Bpq5EY" role="$CzcU">
-        <ref role="1_0j5g" node="7VkE0Bpq5kU" />
+        <ref role="1_0j5g" node="7VkE0Bpq5kU" resolve="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
       </node>
     </node>
     <node concept="1_1sxE" id="7VkE0Bpq5DZ" role="1_0VJ0">
       <property role="TrG5h" value="empty_-1" />
     </node>
     <node concept="1_0j5j" id="7VkE0BpsriV" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq5Fn" />
+      <ref role="1_0j5g" node="7VkE0Bpq5Fn" resolve="_010_MDCC_Ch1_Intro" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Db" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0xz" />
+      <ref role="1_0j5g" node="7VkE0Bpq0xz" resolve="_020_MDCC_Ch2_AnalysisConfiguration" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Dj" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0C5" />
+      <ref role="1_0j5g" node="7VkE0Bpq0C5" resolve="_030_MDCC_Ch3_TopLevelHarnessContent" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5Dw" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0PW" />
+      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
     </node>
     <node concept="1_0j5j" id="7VkE0Bpq5DL" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq5kU" />
+      <ref role="1_0j5g" node="7VkE0Bpq5kU" resolve="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
     </node>
   </node>
   <node concept="2SbYGP" id="5HlC91LJJQk">
@@ -193,7 +193,7 @@
   <node concept="1_1swa" id="7VkE0Bpq0xz">
     <property role="yApLE" value="2" />
     <property role="TrG5h" value="_020_MDCC_Ch2_AnalysisConfiguration" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7VkE0Bpq0x$" role="1_0VJ0">
       <property role="TrG5h" value="SpinAnalysisConfigurations" />
       <property role="1_0VJr" value="Analysis Configuration" />
@@ -330,7 +330,7 @@
   <node concept="1_1swa" id="7VkE0Bpq0C5">
     <property role="yApLE" value="3" />
     <property role="TrG5h" value="_030_MDCC_Ch3_TopLevelHarnessContent" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7VkE0Bpq0CG" role="1_0VJ0">
       <property role="TrG5h" value="TopLevelHarness" />
       <property role="1_0VJr" value="Top Level Harness Content" />
@@ -461,7 +461,7 @@
   <node concept="1_1swa" id="7VkE0Bpq0PW">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7VkE0Bpq0Rk" role="1_0VJ0">
       <property role="TrG5h" value="HarnessDeclarations" />
       <property role="1_0VJr" value="Describing the Environment Variables" />
@@ -603,7 +603,7 @@
   <node concept="1_1swa" id="7VkE0Bpq5kU">
     <property role="yApLE" value="4" />
     <property role="TrG5h" value="_050_MDCC_Ch5_HarnessLogicDescriptionSection" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7VkE0Bpq5lu" role="1_0VJ0">
       <property role="TrG5h" value="HarnessLogic" />
       <property role="1_0VJr" value="Describing the Harness Logic" />
@@ -1122,7 +1122,7 @@
               <property role="19SUeA" value=" construct allows the verification of systems with internal state. Please be aware that in case of multi-step verification you need to track the internal state of the system under verification (Section " />
             </node>
             <node concept="1_0GAv" id="7VkE0BpwtMP" role="19SJt6">
-              <ref role="1_0GAl" node="7VkE0Bpwu1a" />
+              <ref role="1_0GAl" node="7VkE0Bpwu1a" resolve="TrackingState" />
             </node>
             <node concept="19SUe$" id="7VkE0BpwtMQ" role="19SJt6">
               <property role="19SUeA" value="." />
@@ -1292,13 +1292,13 @@
       <property role="Wq1Bq" value="ratiud@googlemail.com" />
     </node>
     <node concept="1_0j5j" id="7VkE0BpwynM" role="1DXQ57">
-      <ref role="1_0j5g" node="7VkE0Bpq0PW" />
+      <ref role="1_0j5g" node="7VkE0Bpq0PW" resolve="_040_MDCC_Ch4_DeclarationsAndTrackingSection" />
     </node>
   </node>
   <node concept="1_1swa" id="7VkE0Bpq5Fn">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_010_MDCC_Ch1_Intro" />
-    <ref role="G9hjw" node="5HlC91LJJQk" />
+    <ref role="G9hjw" node="5HlC91LJJQk" resolve="cfg" />
     <node concept="1mvXsy" id="7VkE0Bpq5Fo" role="1_0VJ0">
       <property role="TrG5h" value="Introduction" />
       <property role="1_0VJr" value="Introduction" />

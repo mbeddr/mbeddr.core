@@ -198,7 +198,7 @@
       <node concept="1_1swa" id="hoMN8EUmb6" role="1qenE9">
         <property role="yApLE" value="1" />
         <property role="TrG5h" value="testDocu1" />
-        <ref role="G9hjw" node="6PAW89r1cTx" />
+        <ref role="G9hjw" node="6PAW89r1cTx" resolve="docConfig1" />
         <node concept="1_0LV8" id="hoMN8EUmb7" role="1_0VJ0">
           <node concept="19SGf9" id="hoMN8EUmb8" role="1_0LWR">
             <node concept="19SUe$" id="hoMN8EUmb9" role="19SJt6">

@@ -62,7 +62,7 @@
     <property role="TrG5h" value="CLegacyInterpreter" />
     <property role="UYu25" value="CInterpreter" />
     <node concept="1J7L1T" id="3VM1o5wb_KV" role="1J4apk">
-      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" />
+      <ref role="1J7WVQ" to="xxlk:3VM1o5wbfkp" resolve="CExpressionsInterpreter" />
     </node>
     <node concept="3SNpY9" id="3VM1o5wb_KW" role="qq9xR">
       <property role="2TnfIJ" value="true" />
