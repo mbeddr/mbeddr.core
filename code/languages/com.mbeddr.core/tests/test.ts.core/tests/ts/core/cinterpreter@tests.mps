@@ -4,7 +4,7 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="1c897ba5-9d43-4035-ac7f-0306495743ac" name="com.mbeddr.mpsutil.interpreter.test" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -38,6 +38,7 @@
         <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -185,6 +186,7 @@
   </registry>
   <node concept="1lH9Xt" id="65E6xpGUqOY">
     <property role="TrG5h" value="TestCInterpreter" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="65E6xpGUqQM" role="1SKRRt">
       <node concept="N3F5e" id="65E6xpGUqQP" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -769,6 +771,7 @@
   </node>
   <node concept="1lH9Xt" id="3ftRujA_Dmb">
     <property role="TrG5h" value="TestCStaticInterpreterTypes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3ftRujA_Nsq" role="1SKRRt">
       <node concept="N3F5e" id="3ftRujA_XyE" role="1qenE9">
         <property role="TrG5h" value="Test2" />
@@ -815,6 +818,7 @@
   </node>
   <node concept="1lH9Xt" id="5TH8iQlWc8w">
     <property role="TrG5h" value="TestCInterpreterDifferentTypes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5TH8iQlWcjw" role="1SKRRt">
       <node concept="N3F5e" id="5TH8iQlWcjz" role="1qenE9">
         <property role="TrG5h" value="dummy" />

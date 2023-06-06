@@ -1,54 +1,73 @@
 import de.itemis.mps.gradle.GitBasedVersioning
 
+
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.13.+'
+    id 'de.itemis.mps.gradle.common' version '1.16.+'
+    id 'download-jbr' version '1.16.+'
 }
 
+repositories {
+    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
+}
+
+downloadJbr {
+    jbrVersion = '17.0.3-b469.32'
+}
 
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
-
-
 //MPS version
-ext.mpsMajor = "2021.3"
-ext.mpsBuild = "2021.3.2"
+ext.mpsMajor = "2022.2"
+ext.mpsBuild = "2022.2"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = project.findProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
+ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
 
-def jdk_home
+afterEvaluate {
 
-if (ext.has('java11_home')) {
-    jdk_home = ext.get('java11_home')
-} else if (System.getenv('JB_JAVA11_HOME') != null) {
-    jdk_home = System.getenv('JB_JAVA11_HOME')
-} else {
-    def expected = JavaVersion.VERSION_11
-    if (JavaVersion.current() != expected) {
-        throw new GradleException("This build script requires Java 11 but you are currently using ${JavaVersion.current()}.\nWhat you can do:\n"
-            + "  * Use project property java11_home to point to the Java 11 JDK.\n"
-            + "  * Use environment variable JB_JAVA11_HOME to point to the Java 11 JDK\n"
-            + "  * Run Gradle using Java 11")
+    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
+
+    def jdk_home = null
+
+    if (ext.has('java17_home')) {
+        jdk_home = ext.get('java17_home')
+    } else if (System.getenv('JB_JAVA17_HOME') != null) {
+        jdk_home = System.getenv('JB_JAVA17_HOME')
     }
-    jdk_home = System.getProperty('java.home')
+
+    if(jdk_home != null) {
+        // Check JDK location
+        if (!new File(jdk_home, "lib").exists()) {
+            throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
+        } else {
+            ext.jdk_home = jdk_home
+            logger.info 'Using JDK at {}', jdk_home
+            ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
+	}
+    }
 }
 
-// Check JDK location
-if (!new File(jdk_home, "lib").exists()) {
-    throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
+def hasNonEmptyProperty(property) {
+    return project.hasProperty(property) && !project.getProperty(property).empty
 }
 
-logger.info 'Using JDK at {}', jdk_home
+def findNonEmptyProperty(property) {
+    if (hasNonEmptyProperty(property)) {
+        return project.getProperty(property)
+    }
+    return null
+}
 
 subprojects {
     // required plugins
     apply plugin: "base"
     apply plugin: "maven-publish"
+
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
 
@@ -56,8 +75,6 @@ subprojects {
     // or use default snapshot/release repositories otherwise
     ext.snapshotRepository = project.findProperty('snapshotRepository') ?: defaultSnapshotRepository
     ext.releaseRepository = project.findProperty('releaseRepository') ?: defaultReleaseRepository
-    ext.jdk_home = jdk_home
-    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
 
     // use depencency repositories passed as comma-separated list with -P option via command line, if any,
     // or use default snapshot/release repositories otherwise
@@ -77,7 +94,7 @@ subprojects {
         } else {
             ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
         }
-        if(mbeddrBuild == "stable" || mbeddrBuild.startsWith("maintenance-")) {
+        if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
             ext.mbeddrBuild = "master"
         }
 
@@ -108,7 +125,7 @@ subprojects {
 
         // Enable mbeddr to be assigned a different version number than mbeddr platform,
         // as well as mbeddr to be built against a specified existing mbeddr platform version
-        ext.mbeddrPlatformBuildNumber = project.findProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+        ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
         if (ciBuild) {
             // Coerce TeamCity build number to mbeddrBuildNumber by default
@@ -117,5 +134,8 @@ subprojects {
         } else {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
+
+    tasks.configureEach( task -> {  task.dependsOn(':downloadJbr') })
+
     }
-}
+ }

@@ -48,10 +48,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -123,6 +119,10 @@
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -135,9 +135,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
-        <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -297,31 +294,25 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="7Ssz$kYf4qy" role="13h7CS">
-      <property role="TrG5h" value="calculateCategory" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="xedy:6Go9U2z7T3y" resolve="calculateCategory" />
-      <node concept="3Tm1VV" id="7Ssz$kYf4qz" role="1B3o_S" />
-      <node concept="3clFbS" id="7Ssz$kYf4rn" role="3clF47">
-        <node concept="3clFbF" id="7Ssz$kYf4u_" role="3cqZAp">
-          <node concept="1eOMI4" id="7Ssz$kYf53a" role="3clFbG">
-            <node concept="10QFUN" id="7Ssz$kYf53b" role="1eOMHV">
-              <node concept="2OqwBi" id="7Ssz$kYf537" role="10QFUP">
-                <node concept="13iPFW" id="7Ssz$kYf538" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7Ssz$kYf539" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tnjx:7Ssz$kYeQ8p" resolve="argumentCategory" />
-                </node>
-              </node>
-              <node concept="3THzug" id="7Ssz$kYf55e" role="10QFUM">
-                <ref role="3qa414" to="spci:6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+    <node concept="13i0hz" id="38BeNG_3G4y" role="13h7CS">
+      <property role="TrG5h" value="calculateCategory2" />
+      <ref role="13i0hy" to="xedy:38BeNG_3AFp" resolve="calculateCategory2" />
+      <node concept="3Tm1VV" id="38BeNG_3G4z" role="1B3o_S" />
+      <node concept="3clFbS" id="38BeNG_3G5n" role="3clF47">
+        <node concept="3clFbF" id="38BeNG_3HyF" role="3cqZAp">
+          <node concept="2OqwBi" id="38BeNG_3Id8" role="3clFbG">
+            <node concept="2OqwBi" id="7Ssz$kYf537" role="2Oq$k0">
+              <node concept="13iPFW" id="7Ssz$kYf538" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7Ssz$kYf539" role="2OqNvi">
+                <ref role="3Tt5mk" to="tnjx:7Ssz$kYeQ8p" resolve="argumentCategory" />
               </node>
             </node>
+            <node concept="1rGIog" id="38BeNG_3I_o" role="2OqNvi" />
           </node>
         </node>
       </node>
-      <node concept="3THzug" id="7Ssz$kYf4ro" role="3clF45">
-        <ref role="3qa414" to="spci:6Go9U2y2EPU" resolve="IInlineFormatCategory" />
+      <node concept="3bZ5Sz" id="38BeNG_3G5o" role="3clF45">
+        <ref role="3bZ5Sy" to="spci:6Go9U2y2EPU" resolve="IInlineFormatCategory" />
       </node>
     </node>
     <node concept="13i0hz" id="7Ssz$kYjk1P" role="13h7CS">
@@ -337,7 +328,7 @@
               <node concept="2OqwBi" id="7Ssz$kYjk93" role="2Oq$k0">
                 <node concept="13iPFW" id="7Ssz$kYjk5P" role="2Oq$k0" />
                 <node concept="2qgKlT" id="7Ssz$kYjkMh" role="2OqNvi">
-                  <ref role="37wK5l" to="xedy:6Go9U2z7T3y" resolve="calculateCategory" />
+                  <ref role="37wK5l" to="xedy:38BeNG_3AFp" resolve="calculateCategory2" />
                 </node>
               </node>
               <node concept="2qgKlT" id="7Ssz$kYjl86" role="2OqNvi">

@@ -117,6 +117,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -136,6 +139,14 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -225,115 +236,163 @@
                 </node>
               </node>
               <node concept="3clFbS" id="7VeUlv8MlOM" role="3clF47">
-                <node concept="3clFbJ" id="7VeUlv92SzW" role="3cqZAp">
-                  <node concept="3clFbS" id="7VeUlv92SzY" role="3clFbx">
-                    <node concept="3clFbF" id="7VeUlv8MlON" role="3cqZAp">
-                      <node concept="37vLTI" id="7VeUlv8MlOO" role="3clFbG">
-                        <node concept="3clFbT" id="7VeUlv8MlOP" role="37vLTx">
-                          <property role="3clFbU" value="true" />
-                        </node>
-                        <node concept="37vLTw" id="7VeUlv8MlOQ" role="37vLTJ">
-                          <ref role="3cqZAo" node="7VeUlv8MkGN" resolve="errorOccurredDuringChecking" />
-                        </node>
-                      </node>
+                <node concept="3SKdUt" id="5svQgzSBck5" role="3cqZAp">
+                  <node concept="1PaTwC" id="5svQgzSBck6" role="1aUNEU">
+                    <node concept="3oM_SD" id="5svQgzSBcoF" role="1PaTwD">
+                      <property role="3oM_SC" value="commented" />
                     </node>
-                    <node concept="3clFbF" id="7VeUlv8MlOR" role="3cqZAp">
-                      <node concept="37vLTI" id="7VeUlv8MlOS" role="3clFbG">
-                        <node concept="37vLTw" id="7VeUlv8MlOT" role="37vLTJ">
-                          <ref role="3cqZAo" node="7VeUlv8Ml0D" resolve="errorMessage" />
-                        </node>
-                        <node concept="2OqwBi" id="7VeUlv8MlOU" role="37vLTx">
-                          <node concept="2OqwBi" id="7VeUlv8MlOV" role="2Oq$k0">
-                            <node concept="37vLTw" id="7VeUlv8MlOW" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
-                            </node>
-                            <node concept="liA8E" id="7VeUlv8MlOX" role="2OqNvi">
-                              <ref role="37wK5l" to="lx42:~LoggingEvent.getMessage()" resolve="getMessage" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="7VeUlv8MlOY" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="3oM_SD" id="5svQgzSBcoH" role="1PaTwD">
+                      <property role="3oM_SC" value="out" />
                     </node>
-                    <node concept="3clFbJ" id="2k2sHrVGoU4" role="3cqZAp">
-                      <node concept="3clFbS" id="2k2sHrVGoU6" role="3clFbx">
-                        <node concept="3clFbF" id="7VeUlv8MlOZ" role="3cqZAp">
-                          <node concept="37vLTI" id="7VeUlv8MlP0" role="3clFbG">
-                            <node concept="37vLTw" id="7VeUlv8MlP1" role="37vLTJ">
-                              <ref role="3cqZAo" node="7VeUlv8Mlq5" resolve="stackTrace" />
-                            </node>
-                            <node concept="2YIFZM" id="7VeUlv8MlP2" role="37vLTx">
-                              <ref role="37wK5l" to="fya2:~ExceptionUtils.getStackTrace(java.lang.Throwable)" resolve="getStackTrace" />
-                              <ref role="1Pybhc" to="fya2:~ExceptionUtils" resolve="ExceptionUtils" />
-                              <node concept="2OqwBi" id="7VeUlv8MlP3" role="37wK5m">
-                                <node concept="2OqwBi" id="7VeUlv8MlP4" role="2Oq$k0">
-                                  <node concept="37vLTw" id="7VeUlv8MlP5" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
-                                  </node>
-                                  <node concept="liA8E" id="7VeUlv8MlP6" role="2OqNvi">
-                                    <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="7VeUlv8MlP7" role="2OqNvi">
-                                  <ref role="37wK5l" to="lx42:~ThrowableInformation.getThrowable()" resolve="getThrowable" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3y3z36" id="2k2sHrVGpr8" role="3clFbw">
-                        <node concept="10Nm6u" id="2k2sHrVGpzc" role="3uHU7w" />
-                        <node concept="2OqwBi" id="2k2sHrVGpae" role="3uHU7B">
-                          <node concept="37vLTw" id="2k2sHrVGoZ8" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
-                          </node>
-                          <node concept="liA8E" id="2k2sHrVGpmj" role="2OqNvi">
-                            <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="9aQIb" id="2k2sHrVGpN7" role="9aQIa">
-                        <node concept="3clFbS" id="2k2sHrVGpN8" role="9aQI4">
-                          <node concept="3clFbF" id="2k2sHrVGpR9" role="3cqZAp">
-                            <node concept="37vLTI" id="2k2sHrVGpXe" role="3clFbG">
-                              <node concept="Xl_RD" id="2k2sHrVGpZh" role="37vLTx">
-                                <property role="Xl_RC" value="no information about the throwable is available" />
-                              </node>
-                              <node concept="37vLTw" id="2k2sHrVGpR8" role="37vLTJ">
-                                <ref role="3cqZAo" node="7VeUlv8Mlq5" resolve="stackTrace" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="3oM_SD" id="5svQgzSBcoK" role="1PaTwD">
+                      <property role="3oM_SC" value="because" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcoO" role="1PaTwD">
+                      <property role="3oM_SC" value="MPS" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcoT" role="1PaTwD">
+                      <property role="3oM_SC" value="2022.2" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcpe" role="1PaTwD">
+                      <property role="3oM_SC" value="removed" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcpl" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcpt" role="1PaTwD">
+                      <property role="3oM_SC" value="implements" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcpA" role="1PaTwD">
+                      <property role="3oM_SC" value="Serializable" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcqH" role="1PaTwD">
+                      <property role="3oM_SC" value="relation" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcpK" role="1PaTwD">
+                      <property role="3oM_SC" value="from" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcqk" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="5svQgzSBcqw" role="1PaTwD">
+                      <property role="3oM_SC" value="LoggingEvent" />
                     </node>
                   </node>
-                  <node concept="22lmx$" id="3mOqkJu85aL" role="3clFbw">
-                    <node concept="3clFbC" id="7VeUlv92S4p" role="3uHU7B">
-                      <node concept="2OqwBi" id="7VeUlv92Qtk" role="3uHU7B">
-                        <node concept="37vLTw" id="7VeUlv92QhB" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
-                        </node>
-                        <node concept="liA8E" id="7VeUlv92Rrg" role="2OqNvi">
-                          <ref role="37wK5l" to="lx42:~LoggingEvent.getLevel()" resolve="getLevel" />
+                </node>
+                <node concept="3cpWs6" id="5svQgzSBbXG" role="3cqZAp" />
+                <node concept="1X3_iC" id="5svQgzSBc9d" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="3clFbJ" id="7VeUlv92SzW" role="8Wnug">
+                    <node concept="3clFbS" id="7VeUlv92SzY" role="3clFbx">
+                      <node concept="3clFbF" id="7VeUlv8MlON" role="3cqZAp">
+                        <node concept="37vLTI" id="7VeUlv8MlOO" role="3clFbG">
+                          <node concept="3clFbT" id="7VeUlv8MlOP" role="37vLTx">
+                            <property role="3clFbU" value="true" />
+                          </node>
+                          <node concept="37vLTw" id="7VeUlv8MlOQ" role="37vLTJ">
+                            <ref role="3cqZAo" node="7VeUlv8MkGN" resolve="errorOccurredDuringChecking" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="10M0yZ" id="7VeUlv92SwU" role="3uHU7w">
-                        <ref role="3cqZAo" to="q7tw:~Level.ERROR" resolve="ERROR" />
-                        <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
+                      <node concept="3clFbF" id="7VeUlv8MlOR" role="3cqZAp">
+                        <node concept="37vLTI" id="7VeUlv8MlOS" role="3clFbG">
+                          <node concept="37vLTw" id="7VeUlv8MlOT" role="37vLTJ">
+                            <ref role="3cqZAo" node="7VeUlv8Ml0D" resolve="errorMessage" />
+                          </node>
+                          <node concept="2OqwBi" id="7VeUlv8MlOU" role="37vLTx">
+                            <node concept="2OqwBi" id="7VeUlv8MlOV" role="2Oq$k0">
+                              <node concept="37vLTw" id="7VeUlv8MlOW" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                              </node>
+                              <node concept="liA8E" id="7VeUlv8MlOX" role="2OqNvi">
+                                <ref role="37wK5l" to="lx42:~LoggingEvent.getMessage()" resolve="getMessage" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="7VeUlv8MlOY" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbJ" id="2k2sHrVGoU4" role="3cqZAp">
+                        <node concept="3clFbS" id="2k2sHrVGoU6" role="3clFbx">
+                          <node concept="3clFbF" id="7VeUlv8MlOZ" role="3cqZAp">
+                            <node concept="37vLTI" id="7VeUlv8MlP0" role="3clFbG">
+                              <node concept="37vLTw" id="7VeUlv8MlP1" role="37vLTJ">
+                                <ref role="3cqZAo" node="7VeUlv8Mlq5" resolve="stackTrace" />
+                              </node>
+                              <node concept="2YIFZM" id="7VeUlv8MlP2" role="37vLTx">
+                                <ref role="37wK5l" to="fya2:~ExceptionUtils.getStackTrace(java.lang.Throwable)" resolve="getStackTrace" />
+                                <ref role="1Pybhc" to="fya2:~ExceptionUtils" resolve="ExceptionUtils" />
+                                <node concept="2OqwBi" id="7VeUlv8MlP3" role="37wK5m">
+                                  <node concept="2OqwBi" id="7VeUlv8MlP4" role="2Oq$k0">
+                                    <node concept="37vLTw" id="7VeUlv8MlP5" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                                    </node>
+                                    <node concept="liA8E" id="7VeUlv8MlP6" role="2OqNvi">
+                                      <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="7VeUlv8MlP7" role="2OqNvi">
+                                    <ref role="37wK5l" to="lx42:~ThrowableInformation.getThrowable()" resolve="getThrowable" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3y3z36" id="2k2sHrVGpr8" role="3clFbw">
+                          <node concept="10Nm6u" id="2k2sHrVGpzc" role="3uHU7w" />
+                          <node concept="2OqwBi" id="2k2sHrVGpae" role="3uHU7B">
+                            <node concept="37vLTw" id="2k2sHrVGoZ8" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                            </node>
+                            <node concept="liA8E" id="2k2sHrVGpmj" role="2OqNvi">
+                              <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="9aQIb" id="2k2sHrVGpN7" role="9aQIa">
+                          <node concept="3clFbS" id="2k2sHrVGpN8" role="9aQI4">
+                            <node concept="3clFbF" id="2k2sHrVGpR9" role="3cqZAp">
+                              <node concept="37vLTI" id="2k2sHrVGpXe" role="3clFbG">
+                                <node concept="Xl_RD" id="2k2sHrVGpZh" role="37vLTx">
+                                  <property role="Xl_RC" value="no information about the throwable is available" />
+                                </node>
+                                <node concept="37vLTw" id="2k2sHrVGpR8" role="37vLTJ">
+                                  <ref role="3cqZAo" node="7VeUlv8Mlq5" resolve="stackTrace" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
-                    <node concept="3y3z36" id="3mOqkJu86My" role="3uHU7w">
-                      <node concept="10Nm6u" id="3mOqkJu86VI" role="3uHU7w" />
-                      <node concept="2OqwBi" id="3mOqkJu8606" role="3uHU7B">
-                        <node concept="37vLTw" id="3mOqkJu8607" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                    <node concept="22lmx$" id="3mOqkJu85aL" role="3clFbw">
+                      <node concept="3clFbC" id="7VeUlv92S4p" role="3uHU7B">
+                        <node concept="2OqwBi" id="7VeUlv92Qtk" role="3uHU7B">
+                          <node concept="37vLTw" id="7VeUlv92QhB" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                          </node>
+                          <node concept="liA8E" id="7VeUlv92Rrg" role="2OqNvi">
+                            <ref role="37wK5l" to="lx42:~LoggingEvent.getLevel()" resolve="getLevel" />
+                          </node>
                         </node>
-                        <node concept="liA8E" id="3mOqkJu8608" role="2OqNvi">
-                          <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
+                        <node concept="10M0yZ" id="7VeUlv92SwU" role="3uHU7w">
+                          <ref role="3cqZAo" to="q7tw:~Level.ERROR" resolve="ERROR" />
+                          <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="3mOqkJu86My" role="3uHU7w">
+                        <node concept="10Nm6u" id="3mOqkJu86VI" role="3uHU7w" />
+                        <node concept="2OqwBi" id="3mOqkJu8606" role="3uHU7B">
+                          <node concept="37vLTw" id="3mOqkJu8607" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7VeUlv8MlOK" resolve="event" />
+                          </node>
+                          <node concept="liA8E" id="3mOqkJu8608" role="2OqNvi">
+                            <ref role="37wK5l" to="lx42:~LoggingEvent.getThrowableInformation()" resolve="getThrowableInformation" />
+                          </node>
                         </node>
                       </node>
                     </node>

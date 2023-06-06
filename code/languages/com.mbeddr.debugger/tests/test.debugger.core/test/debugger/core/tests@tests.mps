@@ -9,7 +9,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
@@ -54,6 +54,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -400,6 +401,7 @@
   <node concept="1lH9Xt" id="5HSnKgHUn$v">
     <property role="TrG5h" value="DebuggerAPI" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbc$0" role="1SL9yI">
       <property role="TrG5h" value="createModule" />
       <node concept="3cqZAl" id="5XU7UUGbc$1" role="3clF45" />
@@ -1061,6 +1063,7 @@
   <node concept="1lH9Xt" id="2pJszzmZcNj">
     <property role="TrG5h" value="StateTransitions" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="2pJszzmZcNE" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="37vLTG" id="2pJszzmZcRP" role="3clF46">
@@ -4462,6 +4465,7 @@
   <node concept="1lH9Xt" id="6L3DaT6TVwZ">
     <property role="TrG5h" value="RequestTimeoutInterceptor" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6L3DaT6TVx7" role="1SL9yI">
       <property role="TrG5h" value="requestWithoutReply" />
       <node concept="3cqZAl" id="6L3DaT6TVx8" role="3clF45" />
@@ -6148,6 +6152,7 @@
   <node concept="1lH9Xt" id="1OGsPyH$U0s">
     <property role="TrG5h" value="Attach" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyH$U0t" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyH$U0u" role="3clF45">
@@ -7397,6 +7402,7 @@
   <node concept="1lH9Xt" id="1OGsPyH_20x">
     <property role="TrG5h" value="Attached" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyH_20y" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyH_20z" role="3clF45">
@@ -8581,6 +8587,7 @@
   <node concept="1lH9Xt" id="1OGsPyHA555">
     <property role="TrG5h" value="Detach" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyHA556" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyHA557" role="3clF45">
@@ -9526,6 +9533,7 @@
   <node concept="1lH9Xt" id="1OGsPyHA5jh">
     <property role="TrG5h" value="Detached" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyHA5ji" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyHA5jj" role="3clF45">
@@ -10187,6 +10195,7 @@
   <node concept="1lH9Xt" id="5HSnKgHUNsd">
     <property role="TrG5h" value="NotAttached" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5HSnKgHUNsq" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5HSnKgHUNst" role="3clF45">
@@ -11550,6 +11559,7 @@
   <node concept="1lH9Xt" id="1OGsPyH_$qi">
     <property role="TrG5h" value="Resume" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyH_$qj" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyH_$qk" role="3clF45">
@@ -12453,6 +12463,7 @@
   <node concept="1lH9Xt" id="1OGsPyH_$Zz">
     <property role="TrG5h" value="Running" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyH_$Z$" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyH_$Z_" role="3clF45">
@@ -14080,6 +14091,7 @@
   <node concept="1lH9Xt" id="1OGsPyHAo0B">
     <property role="TrG5h" value="Suspend" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyHAo0C" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyHAo0D" role="3clF45">
@@ -15006,6 +15018,7 @@
   <node concept="1lH9Xt" id="1OGsPyH_MM8">
     <property role="TrG5h" value="Suspended" />
     <property role="3GE5qa" value="api" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="1OGsPyH_MM9" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="1OGsPyH_MMa" role="3clF45">
@@ -15703,6 +15716,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbbnz">
     <property role="TrG5h" value="MapperModule" />
     <property role="3GE5qa" value="mapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbbn$" role="1SL9yI">
       <property role="TrG5h" value="createModule" />
       <node concept="3cqZAl" id="5XU7UUGbbn_" role="3clF45" />
@@ -17136,6 +17150,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbbsa">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="BreakpointMapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbbsb" role="1SL9yI">
       <property role="TrG5h" value="createlineLocation" />
       <node concept="3cqZAl" id="5XU7UUGbbsc" role="3clF45" />
@@ -18287,6 +18302,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbb$t">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="LocationMapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbb$u" role="1SL9yI">
       <property role="TrG5h" value="getNodeForValidPosition" />
       <node concept="3cqZAl" id="5XU7UUGbb$v" role="3clF45" />
@@ -18821,6 +18837,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbbBp">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MBreakpointManager" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbbDU" role="1SL9yI">
       <property role="TrG5h" value="addAndRemoveBreakpoint" />
       <node concept="3cqZAl" id="5XU7UUGbbDV" role="3clF45" />
@@ -22566,6 +22583,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbbWd">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="Mappings" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbbWe" role="1qtyYc">
       <property role="TrG5h" value="createCBreakpoints" />
       <node concept="3clFbS" id="5XU7UUGbbWf" role="3clF47">
@@ -23877,6 +23895,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbc4r">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MSession" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbc4s" role="1SL9yI">
       <property role="TrG5h" value="normalCallOfAllOperations" />
       <node concept="3cqZAl" id="5XU7UUGbc4t" role="3clF45" />
@@ -24701,6 +24720,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbccz">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MCategoryRegistry" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbcc$" role="1SL9yI">
       <property role="TrG5h" value="insertNewCategory" />
       <node concept="3cqZAl" id="5XU7UUGbcc_" role="3clF45" />
@@ -24822,6 +24842,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbcdi">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MFrameMapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbcdj" role="1qtyYc">
       <property role="TrG5h" value="createCStackFrames" />
       <node concept="3clFbS" id="5XU7UUGbcdk" role="3clF47">
@@ -26143,6 +26164,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbckj">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MProgramStateManager" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbckk" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5XU7UUGbckl" role="3clF45">
@@ -26415,6 +26437,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbclU">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MUnmappedVariable" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbclV" role="1SL9yI">
       <property role="TrG5h" value="fromUnusedToHidden" />
       <node concept="3cqZAl" id="5XU7UUGbclW" role="3clF45" />
@@ -27207,6 +27230,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbcqJ">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="UnusedVariablesWatchablesCreatorr" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbcqK" role="1SL9yI">
       <property role="TrG5h" value="mapCategory" />
       <node concept="3cqZAl" id="5XU7UUGbcqL" role="3clF45" />
@@ -27526,6 +27550,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbcsJ">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="WatchablesCreator" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbcsK" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5XU7UUGbcsL" role="3clF45">
@@ -28158,6 +28183,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbcxp">
     <property role="3GE5qa" value="mapper" />
     <property role="TrG5h" value="MStepper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbcxq" role="1SL9yI">
       <property role="TrG5h" value="stepOutWithNullArgument" />
       <node concept="3cqZAl" id="5XU7UUGbcxr" role="3clF45" />
@@ -28683,6 +28709,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbaMj">
     <property role="TrG5h" value="BreakpointsModule" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbaMk" role="1SL9yI">
       <property role="TrG5h" value="createModule" />
       <node concept="3cqZAl" id="5XU7UUGbaMl" role="3clF45" />
@@ -28710,6 +28737,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbaMt">
     <property role="TrG5h" value="SessionModule" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbaMu" role="1SL9yI">
       <property role="TrG5h" value="createModule" />
       <node concept="3cqZAl" id="5XU7UUGbaMv" role="3clF45" />
@@ -28953,6 +28981,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbaN2">
     <property role="TrG5h" value="MEBreakpointRegistry" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbaN3" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5XU7UUGbaN4" role="3clF45">
@@ -29828,6 +29857,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbaSz">
     <property role="TrG5h" value="MEDebugSession" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbaS$" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5XU7UUGbaS_" role="3clF45">
@@ -31525,6 +31555,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbb3j">
     <property role="TrG5h" value="MEDebugSessionStates" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbb3k" role="1SL9yI">
       <property role="TrG5h" value="fromWaitingAttachedToAttached" />
       <node concept="3cqZAl" id="5XU7UUGbb3l" role="3clF45" />
@@ -33878,6 +33909,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbb15">
     <property role="TrG5h" value="MEDebugSessionCreator" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbb16" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5XU7UUGbb17" role="3clF45">
@@ -34242,6 +34274,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbbfD">
     <property role="TrG5h" value="MEDebuggerSettings" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbbfE" role="1SL9yI">
       <property role="TrG5h" value="invalidParameters" />
       <node concept="3cqZAl" id="5XU7UUGbbfF" role="3clF45" />
@@ -34422,6 +34455,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbbgF">
     <property role="TrG5h" value="MEUiState" />
     <property role="3GE5qa" value="mpsext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGbbgG" role="1qtyYc">
       <property role="TrG5h" value="createStackFrameMock" />
       <node concept="3uibUv" id="5XU7UUGbbgH" role="3clF45">
@@ -38814,6 +38848,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbaF4">
     <property role="TrG5h" value="WrapperModule" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbaF5" role="1SL9yI">
       <property role="TrG5h" value="createModule" />
       <node concept="3cqZAl" id="5XU7UUGbaF6" role="3clF45" />
@@ -39098,6 +39133,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb8s8">
     <property role="TrG5h" value="BreakpointFactory" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGb8s9" role="1SL9yI">
       <property role="TrG5h" value="createLineBreakpoint" />
       <node concept="3cqZAl" id="5XU7UUGb8sa" role="3clF45" />
@@ -39489,6 +39525,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb8uA">
     <property role="TrG5h" value="BreakpointManager" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGb8uB" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="5XU7UUGb8uC" role="3clF45">
@@ -42287,6 +42324,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb8Je">
     <property role="TrG5h" value="Events" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGb8Jf" role="1qtyYc">
       <property role="TrG5h" value="verifyEventType" />
       <node concept="37vLTG" id="5XU7UUGb8Jg" role="3clF46">
@@ -43253,6 +43291,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb8Pb">
     <property role="TrG5h" value="SessionAccess" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGb8Pc" role="1SL9yI">
       <property role="TrG5h" value="accessBeforeCreation" />
       <node concept="3cqZAl" id="5XU7UUGb8Pd" role="3clF45" />
@@ -43780,6 +43819,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb8S$">
     <property role="TrG5h" value="SessionCreation" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGb8S_" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="37vLTG" id="4jk7wJvA7ij" role="3clF46">
@@ -44454,6 +44494,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb8XW">
     <property role="TrG5h" value="SessionStates" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5XU7UUGb8XX" role="1qtyYc">
       <property role="TrG5h" value="takeSessionIntoStateSuspended" />
       <node concept="3cqZAl" id="5XU7UUGb8XY" role="3clF45" />
@@ -47545,6 +47586,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb9mF">
     <property role="TrG5h" value="Stepper" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGb9mG" role="1SL9yI">
       <property role="TrG5h" value="stepOver" />
       <node concept="3cqZAl" id="5XU7UUGb9mH" role="3clF45" />
@@ -49009,6 +49051,7 @@
   <node concept="1lH9Xt" id="5XU7UUGb9vH">
     <property role="TrG5h" value="Variables" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGb9vI" role="1SL9yI">
       <property role="TrG5h" value="integralVariable" />
       <node concept="3cqZAl" id="5XU7UUGb9vJ" role="3clF45" />
@@ -52942,6 +52985,7 @@
   <node concept="1lH9Xt" id="5XU7UUGbayU">
     <property role="TrG5h" value="WaitingAttach" />
     <property role="3GE5qa" value="wrapper" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5XU7UUGbayV" role="1SL9yI">
       <property role="TrG5h" value="timerTaskReportsTimeout" />
       <node concept="3cqZAl" id="5XU7UUGbayW" role="3clF45" />

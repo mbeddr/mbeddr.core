@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -37,6 +37,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -224,6 +225,7 @@
   <node concept="1lH9Xt" id="1n2e7UO17sC">
     <property role="TrG5h" value="Smoke" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="1n2e7UO17sD" role="1SL9yI">
       <property role="TrG5h" value="testSmoke" />
       <node concept="3cqZAl" id="1n2e7UO17sE" role="3clF45" />
@@ -376,6 +378,7 @@
   <node concept="1lH9Xt" id="1Qmd1NUzUz">
     <property role="TrG5h" value="DecisionTable" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="_qCyBYk2Oo" role="1SL9yI">
       <property role="TrG5h" value="testDecisionTableInVariableInitializationLift" />
       <node concept="3cqZAl" id="_qCyBYk2Op" role="3clF45" />
@@ -1388,6 +1391,7 @@
   <node concept="1lH9Xt" id="5djBfpfe3Jp">
     <property role="TrG5h" value="Enums" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5djBfpfLhGF" role="1SL9yI">
       <property role="TrG5h" value="testEnumAssignment" />
       <node concept="3cqZAl" id="5djBfpfLhGG" role="3clF45" />
@@ -1810,6 +1814,7 @@
   <node concept="1lH9Xt" id="3kLBXRrq2uI">
     <property role="TrG5h" value="GlobalVars" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3kLBXRrq2uJ" role="1SL9yI">
       <property role="TrG5h" value="testGlobalVars1" />
       <node concept="3cqZAl" id="3kLBXRrq2uK" role="3clF45" />
@@ -2067,6 +2072,7 @@
   <node concept="1lH9Xt" id="7iLQIU2tAji">
     <property role="TrG5h" value="FunctionCalls" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7iLQIU2tAjj" role="1SL9yI">
       <property role="TrG5h" value="testFunctionCallActualParams" />
       <node concept="3cqZAl" id="7iLQIU2tAjk" role="3clF45" />
@@ -2206,6 +2212,7 @@
   <node concept="1lH9Xt" id="cukS_kjxzk">
     <property role="TrG5h" value="Complex_Datatypes" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="cukS_kjxzl" role="1SL9yI">
       <property role="TrG5h" value="testSimpleStructure" />
       <node concept="3cqZAl" id="cukS_kjxzm" role="3clF45" />
@@ -3228,6 +3235,7 @@
   <node concept="1lH9Xt" id="3HvJSbHA10R">
     <property role="TrG5h" value="StructuresFlattening" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3HvJSbHA10S" role="1SL9yI">
       <property role="TrG5h" value="testPoint" />
       <node concept="3cqZAl" id="3HvJSbHA10T" role="3clF45" />
@@ -3734,6 +3742,7 @@
   <node concept="1lH9Xt" id="7MMcIPlqfdC">
     <property role="TrG5h" value="Unions" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7MMcIPlqfdD" role="1SL9yI">
       <property role="TrG5h" value="testSimpleUnion" />
       <node concept="3cqZAl" id="7MMcIPlqfdE" role="3clF45" />
@@ -3907,6 +3916,7 @@
   <node concept="1lH9Xt" id="7MMcIPlrjm1">
     <property role="TrG5h" value="RecursiveDatatypes" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7MMcIPlrjm2" role="1SL9yI">
       <property role="TrG5h" value="testSimpleUnion" />
       <node concept="3cqZAl" id="7MMcIPlrjm3" role="3clF45" />
@@ -3996,6 +4006,7 @@
   <node concept="1lH9Xt" id="4kWu8AkCScH">
     <property role="TrG5h" value="Threads" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="4kWu8AkCScI" role="1SL9yI">
       <property role="TrG5h" value="testSimpleThreading" />
       <node concept="3cqZAl" id="4kWu8AkCScJ" role="3clF45" />
@@ -4143,6 +4154,7 @@
   <node concept="1lH9Xt" id="3Z5D5F2EYUa">
     <property role="TrG5h" value="SmokeSatAbs" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3Z5D5F2EYUb" role="1SL9yI">
       <property role="TrG5h" value="testSatAbsSmokeWith" />
       <node concept="3cqZAl" id="3Z5D5F2EYUc" role="3clF45" />
@@ -4371,6 +4383,7 @@
   <node concept="1lH9Xt" id="2V53qRfZKyX">
     <property role="TrG5h" value="Literals" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2V53qRfZKyY" role="1SL9yI">
       <property role="TrG5h" value="testSimpleLiterals" />
       <node concept="3cqZAl" id="2V53qRfZKyZ" role="3clF45" />
@@ -4551,6 +4564,7 @@
   <node concept="1lH9Xt" id="wSZHMckJdO">
     <property role="TrG5h" value="Closures" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="wSZHMckJdP" role="1SL9yI">
       <property role="TrG5h" value="testClosures1" />
       <node concept="3cqZAl" id="wSZHMckJdQ" role="3clF45" />
@@ -4896,6 +4910,7 @@
   <node concept="1lH9Xt" id="4FPrGu908MT">
     <property role="TrG5h" value="Loops" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="4FPrGu908MU" role="1SL9yI">
       <property role="TrG5h" value="testWhileLoop" />
       <node concept="3cqZAl" id="4FPrGu908MV" role="3clF45" />
@@ -5261,6 +5276,7 @@
   <node concept="1lH9Xt" id="7rAi6S1yC2I">
     <property role="TrG5h" value="Conditionals" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7rAi6S1yC2J" role="1SL9yI">
       <property role="TrG5h" value="testIf" />
       <node concept="3cqZAl" id="7rAi6S1yC2K" role="3clF45" />
@@ -5527,6 +5543,7 @@
   <node concept="1lH9Xt" id="PS2VOYQLrc">
     <property role="TrG5h" value="Gotos" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="PS2VOYQLrd" role="1SL9yI">
       <property role="TrG5h" value="testGoto" />
       <node concept="3cqZAl" id="PS2VOYQLre" role="3clF45" />
@@ -5609,6 +5626,7 @@
   <node concept="1lH9Xt" id="PS2VOYR_MN">
     <property role="TrG5h" value="GlobalConstants" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="PS2VOYR_MO" role="1SL9yI">
       <property role="TrG5h" value="testGlobalConstants" />
       <node concept="3cqZAl" id="PS2VOYR_MP" role="3clF45" />
@@ -5770,6 +5788,7 @@
   <node concept="1lH9Xt" id="6Xk4NhN96p8">
     <property role="TrG5h" value="Pointers" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6Xk4NhN96p9" role="1SL9yI">
       <property role="TrG5h" value="testSimplePointers" />
       <node concept="3cqZAl" id="6Xk4NhN96pa" role="3clF45" />
@@ -6099,6 +6118,7 @@
   <node concept="1lH9Xt" id="6Xk4NhNexUH">
     <property role="TrG5h" value="Bits" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="6Xk4NhNexUI" role="1SL9yI">
       <property role="TrG5h" value="testSimpleBits" />
       <node concept="3cqZAl" id="6Xk4NhNexUJ" role="3clF45" />
@@ -6224,6 +6244,7 @@
   <node concept="1lH9Xt" id="3kmIFBmen8G">
     <property role="TrG5h" value="Simple_Types" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3kmIFBmen8H" role="1SL9yI">
       <property role="TrG5h" value="testStringTypes" />
       <node concept="3cqZAl" id="3kmIFBmen8I" role="3clF45" />
@@ -6397,6 +6418,7 @@
   <node concept="1lH9Xt" id="lMaDrUr977">
     <property role="TrG5h" value="SimpleLifting" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="lMaDrUqKiu" role="1SL9yI">
       <property role="TrG5h" value="testLifting" />
       <node concept="3cqZAl" id="lMaDrUqKiv" role="3clF45" />
@@ -6550,6 +6572,7 @@
   <node concept="1lH9Xt" id="3CqL$IpJjT$">
     <property role="TrG5h" value="GSwitch" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="3CqL$IpJjT_" role="1SL9yI">
       <property role="TrG5h" value="testGSwitch1" />
       <node concept="3cqZAl" id="3CqL$IpJjTA" role="3clF45" />

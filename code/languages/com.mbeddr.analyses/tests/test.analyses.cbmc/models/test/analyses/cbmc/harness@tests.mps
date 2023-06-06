@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="7e09729e-68e4-4442-9bc8-024c5cdac3a2" name="com.mbeddr.analyses.cbmc.testing" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -28,6 +28,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -150,6 +151,7 @@
   <node concept="1lH9Xt" id="22PwwDNUMW">
     <property role="TrG5h" value="Range_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="22PwwDNUMX" role="1SL9yI">
       <property role="TrG5h" value="testRangePositive" />
       <node concept="3cqZAl" id="22PwwDNUMY" role="3clF45" />
@@ -298,6 +300,7 @@
   <node concept="1lH9Xt" id="22PwwDO91p">
     <property role="TrG5h" value="Sequencing_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="22PwwDO91q" role="1SL9yI">
       <property role="TrG5h" value="testSequencingPositive" />
       <node concept="3cqZAl" id="22PwwDO91r" role="3clF45" />
@@ -467,6 +470,7 @@
   <node concept="1lH9Xt" id="5psiJWP_ofC">
     <property role="TrG5h" value="StatemachinesHarness_Tests" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5psiJWP_ofD" role="1SL9yI">
       <property role="TrG5h" value="testStateMachinesHArness" />
       <node concept="3cqZAl" id="5psiJWP_ofE" role="3clF45" />
@@ -545,6 +549,7 @@
   <node concept="1lH9Xt" id="7MMcIPlsV_U">
     <property role="TrG5h" value="StructuresAndArrays" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="7MMcIPlsV_V" role="1SL9yI">
       <property role="TrG5h" value="testPointPositive" />
       <node concept="3cqZAl" id="7MMcIPlsV_W" role="3clF45" />
@@ -1262,6 +1267,7 @@
   <node concept="1lH9Xt" id="F6wzHuK7v$">
     <property role="TrG5h" value="ArraysAndMatrixes" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="F6wzHuK7v_" role="1SL9yI">
       <property role="TrG5h" value="testArrayHarness" />
       <node concept="3cqZAl" id="F6wzHuK7vA" role="3clF45" />
@@ -1579,6 +1585,7 @@
   <node concept="1lH9Xt" id="5E1$geGh$Jx">
     <property role="TrG5h" value="Boolean" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="5E1$geGh$Jy" role="1SL9yI">
       <property role="TrG5h" value="testAsserts" />
       <node concept="3cqZAl" id="5E1$geGh$Jz" role="3clF45" />
@@ -1759,6 +1766,7 @@
   <node concept="1lH9Xt" id="2hSqXWTuAoa">
     <property role="TrG5h" value="Interval" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="2hSqXWTuAob" role="1SL9yI">
       <property role="TrG5h" value="testIntervalUnsigned" />
       <node concept="3cqZAl" id="2hSqXWTuAoc" role="3clF45" />
@@ -2249,6 +2257,7 @@
   <node concept="1lH9Xt" id="615cGN$npkN">
     <property role="TrG5h" value="TypesWithPhysicalUnits" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="615cGN$npkO" role="1SL9yI">
       <property role="TrG5h" value="testPrimitiveTypesSimpleUnits" />
       <node concept="3cqZAl" id="615cGN$npkP" role="3clF45" />
@@ -2351,6 +2360,7 @@
   <node concept="1lH9Xt" id="awtkG0cHFv">
     <property role="TrG5h" value="Enumerations" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="awtkG0cHFw" role="1SL9yI">
       <property role="TrG5h" value="testEnumAssertsFail" />
       <node concept="3cqZAl" id="awtkG0cHFx" role="3clF45" />

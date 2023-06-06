@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -37,6 +37,7 @@
       </concept>
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -200,6 +201,7 @@
   </node>
   <node concept="1lH9Xt" id="1bZravpN0_m">
     <property role="TrG5h" value="KeyCreation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6cLnm66KiDZ" role="1SL9yI">
       <property role="TrG5h" value="CamelCaseKey" />
       <node concept="3cqZAl" id="6cLnm66KiE0" role="3clF45" />
@@ -819,6 +821,7 @@
   </node>
   <node concept="1lH9Xt" id="2GRHOLIM0Fy">
     <property role="TrG5h" value="LanguageSelection" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="2GRHOLIM0FD" role="1SL9yI">
       <property role="TrG5h" value="findSpecifiedLanguageCountry" />
       <node concept="3cqZAl" id="2GRHOLIM0FE" role="3clF45" />
@@ -1017,6 +1020,7 @@
   </node>
   <node concept="1lH9Xt" id="3TSnT3Il_h4">
     <property role="TrG5h" value="KeyReference" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3TSnT3Il_yC" role="1SKRRt">
       <node concept="3ZQQOj" id="3TSnT3IlBKs" role="1qenE9">
         <ref role="3ZOmrH" to="2oxe:3TSnT3Il$Be" resolve="keyInOtherModel" />
@@ -1032,6 +1036,7 @@
   </node>
   <node concept="1lH9Xt" id="7NARB4mNEyZ">
     <property role="TrG5h" value="LocaleSelection" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7NARB4mNEzi" role="1SL9yI">
       <property role="TrG5h" value="findLocaleExactMatch" />
       <node concept="3cqZAl" id="7NARB4mNEzj" role="3clF45" />

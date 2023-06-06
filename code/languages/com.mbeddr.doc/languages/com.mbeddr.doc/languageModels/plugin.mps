@@ -2609,16 +2609,11 @@
                                     <ref role="2bn25l" to="fy8e:taepSZ9rBr" resolve="make" />
                                   </node>
                                   <node concept="2sxana" id="4$J9NYoGVeO" role="2OqNvi">
-                                    <ref role="2sxfKC" to="fy8e:taepSZ9rBV" resolve="pathToFile" />
+                                    <ref role="2sxfKC" to="fy8e:5rVd6vTmgKP" resolve="alternateOutput" />
                                   </node>
                                 </node>
-                                <node concept="2OqwBi" id="7OtjhV3GWOZ" role="2SgHGx">
-                                  <node concept="37vLTw" id="7OtjhV3GUn0" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7OtjhV3GP5x" resolve="modelOutputLocation" />
-                                  </node>
-                                  <node concept="liA8E" id="7OtjhV3GXzH" role="2OqNvi">
-                                    <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
-                                  </node>
+                                <node concept="37vLTw" id="7OtjhV3GUn0" role="2SgHGx">
+                                  <ref role="3cqZAo" node="7OtjhV3GP5x" resolve="modelOutputLocation" />
                                 </node>
                               </node>
                             </node>

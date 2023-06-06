@@ -7,6 +7,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # May 2023
 
+## mbeddr.core
+
+Update mbeddr.core languages to MPS version 2022.2
+
+## build.gradle
+* use jbr 17 instead of jbr 11
+* download jbr with mps gradle plugin
+
+
 ## com.mbeddr.mpsutil
 
 ### Fixed

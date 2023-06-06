@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="b879012d-402b-40e0-8df7-e6fa93b9b711" name="com.mbeddr.ext.concurrency" version="-1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -38,6 +38,7 @@
         <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -292,6 +293,7 @@
   </registry>
   <node concept="1lH9Xt" id="73JrkgytTjN">
     <property role="TrG5h" value="ATasksAndContext" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="73JrkgytTjO" role="1SKRRt">
       <node concept="N3F5e" id="73JrkgytTjQ" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -424,6 +426,7 @@
   </node>
   <node concept="1lH9Xt" id="vg5qBCcHmZ">
     <property role="TrG5h" value="BBlockingTasks" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="vg5qBCcHn0" role="1SKRRt">
       <node concept="N3F5e" id="vg5qBCcHn1" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -477,6 +480,7 @@
   </node>
   <node concept="1lH9Xt" id="vg5qBCf4hr">
     <property role="TrG5h" value="CSharedAccess" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="vg5qBCf4hs" role="1SKRRt">
       <node concept="N3F5e" id="vg5qBCf4ht" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -876,6 +880,7 @@
   </node>
   <node concept="1lH9Xt" id="66UaKxBOU87">
     <property role="TrG5h" value="DSchedule" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="66UaKxBOU88" role="1SKRRt">
       <node concept="N3F5e" id="66UaKxBOU89" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -1009,6 +1014,7 @@
   </node>
   <node concept="1lH9Xt" id="2TPZctD8282">
     <property role="TrG5h" value="EQueues" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2TPZctD8283" role="1SKRRt">
       <node concept="N3F5e" id="2TPZctD8284" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -1387,6 +1393,7 @@
   </node>
   <node concept="1lH9Xt" id="6zcb4tIJXNR">
     <property role="TrG5h" value="FTaskVariables" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6zcb4tIJXNS" role="1SKRRt">
       <node concept="N3F5e" id="6zcb4tIJXNT" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -1442,6 +1449,7 @@
   </node>
   <node concept="1lH9Xt" id="6u_410TQ5hQ">
     <property role="TrG5h" value="GResources" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6u_410TQ5hR" role="1SKRRt">
       <node concept="N3F5e" id="6u_410TQ5hS" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -1539,6 +1547,7 @@
   </node>
   <node concept="1lH9Xt" id="7YbLqLwCw_w">
     <property role="TrG5h" value="HYield" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7YbLqLwCw_x" role="1SKRRt">
       <node concept="N3F5e" id="7YbLqLwCw_y" role="1qenE9">
         <property role="TrG5h" value="Dummy" />

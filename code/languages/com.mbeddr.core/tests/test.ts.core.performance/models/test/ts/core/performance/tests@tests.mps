@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules" version="5" />
     <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="10" />
@@ -39,6 +39,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -275,6 +276,7 @@
   </registry>
   <node concept="1lH9Xt" id="4QsoB8VJJuk">
     <property role="TrG5h" value="PerformanceTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="5kiZIBgBuTP" role="1qtyYc">
       <property role="TrG5h" value="getCInterpreter" />
       <node concept="3clFbS" id="5kiZIBgBuTQ" role="3clF47">
@@ -1193,6 +1195,7 @@
   </node>
   <node concept="1lH9Xt" id="7OBQOW$7Zis">
     <property role="TrG5h" value="StaticEvaluatorPerformanceTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7OBQOW$9Qrs" role="1SL9yI">
       <property role="TrG5h" value="simpleExpression" />
       <node concept="3cqZAl" id="7OBQOW$9Qrt" role="3clF45" />

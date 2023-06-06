@@ -44,6 +44,7 @@ code/languages/com.mbeddr.mpsutil/_spreferences
 # * build
 build/**/build
 build/allInOne
+build/jbrDownload
 
 # -----------------------------------------------------------
 # * diagrams

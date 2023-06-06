@@ -404,7 +404,7 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="3f1bb534-4961-4bf0-94b6-2b63276a46ca" />
         <property role="TrG5h" value="test.ex.ext.compositeComponents" />
-        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="398BVA" id="7tgCHAyOv56" role="3LF7KH">
           <ref role="398BVh" node="5qO$P$PrILF" resolve="mbeddr.ext" />
           <node concept="2Ry0Ak" id="7tgCHAyOv57" role="iGT6I">
@@ -1261,7 +1261,7 @@
         <property role="BnDLt" value="true" />
         <property role="3LESm3" value="cc872c37-5126-4cea-bcc0-b45897eba581" />
         <property role="TrG5h" value="test.ts.ext.components.embedded" />
-        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <property role="aoJFB" value="eYcmk9QOli/sources" />
         <node concept="1SiIV0" id="3F9kUGaP0yE" role="3bR37C">
           <node concept="3bR9La" id="3F9kUGaP0yF" role="1SiIV1">
             <ref role="3bR37D" to="p6ld:7eF9rfAuAO0" resolve="com.mbeddr.ext.components" />

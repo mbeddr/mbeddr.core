@@ -2,7 +2,7 @@
 <model ref="r:906d001d-0c5b-46c4-b2ac-d7aa146d16f8(test.analyses.spin.ts.harness_mdcc@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -25,6 +25,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -275,6 +276,7 @@
   </registry>
   <node concept="1lH9Xt" id="1GXRyrT8qzn">
     <property role="TrG5h" value="test_10_TopLevel_BasicMode" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1GXRyrT8qAs" role="1SL9yI">
       <property role="TrG5h" value="testAllowedTopElementsInBasicMode" />
       <node concept="3cqZAl" id="1GXRyrT8qAt" role="3clF45" />
@@ -458,6 +460,7 @@
   </node>
   <node concept="1lH9Xt" id="1GXRyrTazV$">
     <property role="TrG5h" value="test_10_TopLevel_ExpertMode" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1GXRyrTazV_" role="1SL9yI">
       <property role="TrG5h" value="testAllowedTopElementsInExpertMode" />
       <node concept="3cqZAl" id="1GXRyrTazVA" role="3clF45" />
@@ -597,6 +600,7 @@
   </node>
   <node concept="1lH9Xt" id="1GXRyrTb2ta">
     <property role="TrG5h" value="test_20_CDecls_BasicMode" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1GXRyrTb2vP" role="1SKRRt">
       <node concept="1HfMva" id="1GXRyrTb2vQ" role="1qenE9">
         <property role="TrG5h" value="cdecls_allowed_elements" />
@@ -794,6 +798,7 @@
   </node>
   <node concept="1lH9Xt" id="1GXRyrTcvhM">
     <property role="TrG5h" value="test_30_Harness_BasicMode" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1GXRyrTcvhN" role="1SKRRt">
       <node concept="1HfMva" id="1GXRyrTcvhO" role="1qenE9">
         <property role="TrG5h" value="harness_allowed_elements" />
