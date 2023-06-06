@@ -581,10 +581,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDUD4T" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDUD4X" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
           </node>
           <node concept="2NCMab" id="6fRanKDUD55" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV27v" />
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV27v" resolve="controlProcess" />
           </node>
         </node>
       </node>
@@ -610,10 +610,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9pZ7" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9pZ8" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
           </node>
           <node concept="2NCMab" id="66_5lNP9pZ9" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV7rI" />
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV7rI" resolve="handleStateDisconnected" />
           </node>
         </node>
       </node>
@@ -695,10 +695,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDQ4Qs" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDQ4Qt" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
           </node>
           <node concept="2NCMab" id="6fRanKDQ4Qu" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:6EVEFV$jCrI" />
+            <ref role="2NCMaa" to="xvi0:6EVEFV$jCrI" resolve="standby" />
           </node>
         </node>
       </node>
@@ -711,13 +711,13 @@
       <property role="3z_lpJ" value="true" />
       <node concept="2NCZwO" id="56xEliHxYyk" role="3z_lpI">
         <node concept="2NCMab" id="56xEliHxYyo" role="2NCMaf">
-          <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
+          <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
         </node>
         <node concept="2NCMab" id="56xEliHxYyu" role="2NCMaf">
-          <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" />
+          <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" resolve="ApplicationController" />
         </node>
         <node concept="2NCMab" id="56xEliHxYyA" role="2NCMaf">
-          <ref role="2NCMaa" to="xvi0:6EVEFV$jCui" />
+          <ref role="2NCMaa" to="xvi0:6EVEFV$jCui" resolve="ec_mode" />
         </node>
       </node>
     </node>
@@ -798,10 +798,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDQ9iM" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDQ9iN" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
           </node>
           <node concept="2NCMab" id="6fRanKDQ9iO" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:31ZMwFtV6WA" />
+            <ref role="2NCMaa" to="3i8q:31ZMwFtV6WA" resolve="handleStateSwitchingToEcMode" />
           </node>
         </node>
       </node>
@@ -814,13 +814,13 @@
       <property role="3z_lpJ" value="true" />
       <node concept="2NCZwO" id="56xEliHy7U4" role="3z_lpI">
         <node concept="2NCMab" id="56xEliHy7U8" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" />
+          <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
         </node>
         <node concept="2NCMab" id="56xEliHy7Ue" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXjXI" />
+          <ref role="2NCMaa" to="ooh3:7iLD7IPXjXI" resolve="ApplicationController" />
         </node>
         <node concept="2NCMab" id="56xEliHy9Iw" role="2NCMaf">
-          <ref role="2NCMaa" to="ooh3:7iLD7IPXk49" />
+          <ref role="2NCMaa" to="ooh3:7iLD7IPXk49" resolve="switching_to_ec_mode" />
         </node>
       </node>
     </node>
@@ -887,10 +887,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDSWAr" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDSWAv" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
           </node>
           <node concept="2NCMab" id="6fRanKDSWAC" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:3YoJoyKi5Qg" />
+            <ref role="2NCMaa" to="qdz5:3YoJoyKi5Qg" resolve="calculateSignalStrength" />
           </node>
         </node>
       </node>
@@ -902,10 +902,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDQU1i" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDQU1j" role="2NCMaf">
-            <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" />
+            <ref role="2NCMaa" to="ooh3:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAPDTM" />
           </node>
           <node concept="2NCMab" id="6fRanKDQU1k" role="2NCMaf">
-            <ref role="2NCMaa" to="ooh3:7iLD7IPXk7Z" />
+            <ref role="2NCMaa" to="ooh3:7iLD7IPXk7Z" resolve="calculateSignalStrength" />
           </node>
         </node>
       </node>
@@ -1139,10 +1139,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="FpE4o7el4P" role="3z_lpI">
           <node concept="2NCMab" id="FpE4o7el4Q" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
           </node>
           <node concept="2NCMab" id="FpE4o7el4R" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:6lKxXE1G6dA" />
+            <ref role="2NCMaa" to="3i8q:6lKxXE1G6dA" resolve="main" />
           </node>
         </node>
       </node>
@@ -1154,10 +1154,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="6fRanKDV6BW" role="3z_lpI">
           <node concept="2NCMab" id="6fRanKDV6C0" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" />
+            <ref role="2NCMaa" to="3i8q:7RqC$9ByLBE" resolve="IntegratedCProgram" />
           </node>
           <node concept="2NCMab" id="6fRanKDVfDs" role="2NCMaf">
-            <ref role="2NCMaa" to="3i8q:5X2ZuWDS9ln" />
+            <ref role="2NCMaa" to="3i8q:5X2ZuWDS9ln" resolve="fill_input_with_default_values" />
           </node>
         </node>
       </node>
@@ -1244,13 +1244,13 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9xks" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9xkt" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
           </node>
           <node concept="2NCMab" id="66_5lNP9xku" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$y" resolve="ApplicationController" />
           </node>
           <node concept="2NCMab" id="66_5lNP9xkv" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$z" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVq$z" resolve="input" />
           </node>
         </node>
       </node>
@@ -1262,10 +1262,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9xkn" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9xko" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" />
+            <ref role="2NCMaa" to="xvi0:31ZMwFtVkpP" resolve="IntegratedCProgramSM" />
           </node>
           <node concept="2NCMab" id="ERk9oJ2wKE" role="2NCMaf">
-            <ref role="2NCMaa" to="xvi0:6EVEFV$jCsu" />
+            <ref role="2NCMaa" to="xvi0:6EVEFV$jCsu" resolve="disconnected" />
           </node>
         </node>
       </node>
@@ -1344,10 +1344,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9GX7" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9GX8" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
           </node>
           <node concept="2NCMab" id="5zvNKVcR5rl" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:5zvNKVcPlj1" />
+            <ref role="2NCMaa" to="qdz5:5zvNKVcPlj1" resolve="HardwareConfigTable" />
           </node>
         </node>
       </node>
@@ -1359,10 +1359,10 @@
         <property role="3z_lpJ" value="true" />
         <node concept="2NCZwO" id="66_5lNP9GXc" role="3z_lpI">
           <node concept="2NCMab" id="66_5lNP9GXd" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
           </node>
           <node concept="2NCMab" id="66_5lNP9GXe" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:7iLD7IPXjYG" />
+            <ref role="2NCMaa" to="qdz5:7iLD7IPXjYG" resolve="standby" />
           </node>
         </node>
       </node>

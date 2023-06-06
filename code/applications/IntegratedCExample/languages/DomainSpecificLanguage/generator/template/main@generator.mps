@@ -229,7 +229,7 @@
             <node concept="19RgSI" id="Ll6J3cq_uK" role="1UOdpc">
               <property role="TrG5h" value="p" />
               <node concept="1AkAi2" id="Ll6J3cq_uJ" role="2C2TGm">
-                <ref role="1AkAi1" node="Ll6J3cq$GH" />
+                <ref role="1AkAi1" node="Ll6J3cq$GH" resolve="devices" />
               </node>
             </node>
             <node concept="19Rifw" id="Ll6J3cq_tD" role="2C2TGm">
@@ -245,9 +245,9 @@
           </node>
           <node concept="1KQ5M7" id="Ll6J3cq$LM" role="N3F5h">
             <property role="TrG5h" value="test" />
-            <ref role="1KRRCB" node="Ll6J3cq$GH" />
-            <ref role="32Irh3" node="Ll6J3cq_tC" />
-            <ref role="32IuEd" node="Ll6J3cq_tC" />
+            <ref role="1KRRCB" node="Ll6J3cq$GH" resolve="devices" />
+            <ref role="32Irh3" node="Ll6J3cq_tC" resolve="enable" />
+            <ref role="32IuEd" node="Ll6J3cq_tC" resolve="enable" />
             <node concept="310vbG" id="Ll6J3cq$LZ" role="3113uG">
               <property role="31nlfr" value="profileName" />
               <node concept="31sF6E" id="Ll6J3cq$M0" role="31tcF7" />
@@ -258,7 +258,7 @@
           </node>
           <node concept="1LFe83" id="Ll6J3cq$v1" role="N3F5h">
             <property role="TrG5h" value="StateMachineContext" />
-            <ref role="1LFebw" node="Ll6J3cq$v6" />
+            <ref role="1LFebw" node="Ll6J3cq$v6" resolve="baz" />
             <node concept="2cfOFI" id="Ll6J3cq$Mf" role="1_Iowf">
               <property role="TrG5h" value="skip" />
             </node>
@@ -268,9 +268,9 @@
                 <node concept="2xGTIE" id="Ll6J3cq$vl" role="S7lxW">
                   <node concept="1_9egQ" id="Ll6J3cu7wN" role="3XIRFZ">
                     <node concept="3O_q_g" id="Ll6J3cu7wO" role="1_9egR">
-                      <ref role="3O_q_h" node="7iLD7IQ3AGL" />
+                      <ref role="3O_q_h" node="7iLD7IQ3AGL" resolve="activate" />
                       <node concept="1AkAhK" id="Ll6J3cu7wP" role="3O_q_j">
-                        <ref role="1AkAhZ" node="Ll6J3cq$GI" />
+                        <ref role="1AkAhZ" node="Ll6J3cq$GI" resolve="a" />
                         <node concept="1ZhdrF" id="Ll6J3cu7wQ" role="lGtFl">
                           <property role="2qtEX8" value="literal" />
                           <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/8811614583515726007/8811614583515726008" />
@@ -418,7 +418,7 @@
             <node concept="19RgSI" id="7iLD7IQ3AIP" role="1UOdpc">
               <property role="TrG5h" value="b" />
               <node concept="1AkAi2" id="7iLD7IQ3AIO" role="2C2TGm">
-                <ref role="1AkAi1" node="7iLD7IQ3AHW" />
+                <ref role="1AkAi1" node="7iLD7IQ3AHW" resolve="devices" />
               </node>
             </node>
             <node concept="19Rifw" id="7iLD7IQ3AGM" role="2C2TGm">
@@ -436,9 +436,9 @@
             <node concept="3XIRFW" id="7iLD7IQ3B68" role="3XIRFX">
               <node concept="1_9egQ" id="7iLD7IQ3B74" role="3XIRFZ">
                 <node concept="3O_q_g" id="7iLD7IQ3B73" role="1_9egR">
-                  <ref role="3O_q_h" node="7iLD7IQ3AGL" />
+                  <ref role="3O_q_h" node="7iLD7IQ3AGL" resolve="activate" />
                   <node concept="1AkAhK" id="7iLD7IQ3B7k" role="3O_q_j">
-                    <ref role="1AkAhZ" node="7iLD7IQ3AHX" />
+                    <ref role="1AkAhZ" node="7iLD7IQ3AHX" resolve="a" />
                     <node concept="1ZhdrF" id="7iLD7IQ3UM8" role="lGtFl">
                       <property role="2qtEX8" value="literal" />
                       <property role="P3scX" value="efda956e-491e-4f00-ba14-36af2f213ecf/8811614583515726007/8811614583515726008" />
