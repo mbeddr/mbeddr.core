@@ -32,7 +32,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -99,7 +99,7 @@
   <node concept="309jyn" id="5S3xvtaxnZ">
     <property role="TrG5h" value="UtilTest" />
     <node concept="3qy1PH" id="3GPxRNRaK70" role="3qy1PE">
-      <ref role="30ajXG" to="6xul:75iUP$Mbqly" />
+      <ref role="30ajXG" to="6xul:75iUP$Mbqly" resolve="UtilsTest" />
     </node>
     <node concept="1vuW9F" id="4WY_RKGygno" role="1zJi$$">
       <property role="TrG5h" value="testFlagsInTopScope" />
@@ -130,7 +130,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lR7" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lR8" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lR9" role="3sdZbB">
-          <ref role="3sa5fj" to="6xul:75iUP$Mbqn$" />
+          <ref role="3sa5fj" to="6xul:75iUP$Mbqn$" resolve="m11" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lRa" role="3savwP">
@@ -142,15 +142,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lRd" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaK7m" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="6xul:75iUP$MbqnE" />
+            <ref role="3cQ7K8" to="6xul:75iUP$MbqnE" resolve="m5" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGygn$" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGygnw" />
+          <ref role="1vtf2j" node="4WY_RKGygnw" resolve="inTestFlags" />
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2lRh" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGygns" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGygno" />
+            <ref role="1vv99g" node="4WY_RKGygno" resolve="testFlagsInTopScope" />
           </node>
         </node>
       </node>
@@ -161,7 +161,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m86" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m87" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m88" role="3sdZbB">
-          <ref role="3sa5fj" to="6xul:75iUP$Mbqnp" />
+          <ref role="3sa5fj" to="6xul:75iUP$Mbqnp" resolve="m12" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m89" role="3savwP">
@@ -173,15 +173,15 @@
         <node concept="30a7bf" id="7Jr7T0w2m8c" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaK7k" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="6xul:75iUP$Mbqnv" />
+            <ref role="3cQ7K8" to="6xul:75iUP$Mbqnv" resolve="m13" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGygnA" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGygnw" />
+          <ref role="1vtf2j" node="4WY_RKGygnw" resolve="inTestFlags" />
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2m8g" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGygnt" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGygno" />
+            <ref role="1vv99g" node="4WY_RKGygno" resolve="testFlagsInTopScope" />
           </node>
           <node concept="1IjokO" id="5YGS28LWmSI" role="1l4ezG">
             <property role="TrG5h" value="a" />

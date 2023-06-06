@@ -343,7 +343,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="7PyP3ULMvTX" role="3z_lpI">
             <node concept="2NCMab" id="7PyP3ULMvVp" role="2NCMaf">
-              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" />
+              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" resolve="analyses_container_example" />
             </node>
           </node>
         </node>
@@ -414,7 +414,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="5TsycMJBdHy" role="3z_lpI">
             <node concept="2NCMab" id="5TsycMJBdJ1" role="2NCMaf">
-              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" />
+              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" resolve="analyses_container_example" />
             </node>
             <node concept="2NCMab" id="5TsycMJBdJz" role="2NCMaf">
               <ref role="2NCMaa" to="93wt:5TsycMJBdJb" resolve="aRobustnessAnalysis" />
@@ -459,7 +459,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="5TsycMJBdL4" role="3z_lpI">
             <node concept="2NCMab" id="5TsycMJBdLQ" role="2NCMaf">
-              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" />
+              <ref role="2NCMaa" to="93wt:7PyP3ULsHMK" resolve="analyses_container_example" />
             </node>
             <node concept="2NCMab" id="5TsycMJBdM4" role="2NCMaf">
               <ref role="2NCMaa" to="93wt:5TsycMJBdJ6" resolve="aDecTabAnalysis" />
@@ -712,7 +712,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="5TsycMJAQRe" role="3z_lpI">
             <node concept="2NCMab" id="5TsycMJAQRy" role="2NCMaf">
-              <ref role="2NCMaa" to="t4hs:7PyP3ULMymk" />
+              <ref role="2NCMaa" to="t4hs:7PyP3ULMymk" resolve="_010_suv1_harness" />
             </node>
           </node>
         </node>
@@ -761,7 +761,7 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="5TsycMJAQUt" role="3z_lpI">
             <node concept="2NCMab" id="5TsycMJAQUu" role="2NCMaf">
-              <ref role="2NCMaa" to="t4hs:7PyP3ULMymk" />
+              <ref role="2NCMaa" to="t4hs:7PyP3ULMymk" resolve="_010_suv1_harness" />
             </node>
           </node>
         </node>
@@ -810,10 +810,10 @@
           <property role="3z_lpJ" value="true" />
           <node concept="2NCZwO" id="5TsycMJAUvJ" role="3z_lpI">
             <node concept="2NCMab" id="5TsycMJAUy7" role="2NCMaf">
-              <ref role="2NCMaa" to="t4hs:5TsycMJARPG" />
+              <ref role="2NCMaa" to="t4hs:5TsycMJARPG" resolve="_020_nondet_choice" />
             </node>
             <node concept="2NCMab" id="5TsycMJAYDH" role="2NCMaf">
-              <ref role="2NCMaa" to="t4hs:5TsycMJARPH" />
+              <ref role="2NCMaa" to="t4hs:5TsycMJARPH" resolve="multi_step_verification_harness" />
             </node>
           </node>
         </node>

@@ -43,7 +43,7 @@
       <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
         <reference id="8867272038842351965" name="testCase" index="UZi6H" />
       </concept>
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -109,7 +109,7 @@
           <node concept="30a7bf" id="3wYrwRBNg0r" role="16YnsZ">
             <node concept="3cQ7K9" id="3uHGTbhzFHI" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="jz4c:7ecc3KAs2gc" />
+              <ref role="3cQ7K8" to="jz4c:7ecc3KAs2gc" resolve="transitionFromGreenToBlue" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0yx_" role="16XPZB">
@@ -117,7 +117,7 @@
             <node concept="30a7bf" id="7SbCYlqP0Gq" role="16XPZy">
               <node concept="3cQ7K9" id="3uHGTbhzFHG" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="jz4c:7ecc3KAs2gc" />
+                <ref role="3cQ7K8" to="jz4c:7ecc3KAs2gc" resolve="transitionFromGreenToBlue" />
               </node>
             </node>
           </node>
@@ -135,11 +135,11 @@
       <node concept="3cqZAl" id="41LNfYI81Wl" role="3clF45" />
       <node concept="3clFbS" id="41LNfYI81Wn" role="3clF47" />
       <node concept="UZuib" id="41LNfYI81Xb" role="UYYtp">
-        <ref role="UZi6H" node="7SbCYlqP0Gm" />
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       </node>
       <node concept="3sdZbQ" id="41LNfYI81Xf" role="3scror">
         <node concept="3sdZbA" id="41LNfYI81Xh" role="3sdZbB">
-          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcR2" />
+          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcR2" resolve="inTransitionBodyWithCond" />
         </node>
       </node>
     </node>
@@ -150,11 +150,11 @@
       <node concept="3clFbS" id="7SbCYlqP0G4" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqP0Gw" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqP0Gx" role="3sdZbB">
-          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcRv" />
+          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcRv" resolve="inExitAction" />
         </node>
       </node>
       <node concept="UZuib" id="7GeSf1268rg" role="UYYtp">
-        <ref role="UZi6H" node="7SbCYlqP0Gm" />
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0FZ" role="1zJi$$" />
@@ -164,11 +164,11 @@
       <node concept="3clFbS" id="7SbCYlqP0G7" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqP0Gv" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqP0Gy" role="3sdZbB">
-          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcRu" />
+          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcRu" resolve="inEntryAction" />
         </node>
       </node>
       <node concept="UZuib" id="7GeSf1268_A" role="UYYtp">
-        <ref role="UZi6H" node="7SbCYlqP0Gm" />
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0G0" role="1zJi$$" />
@@ -178,16 +178,16 @@
       <node concept="3clFbS" id="7SbCYlqP0Ga" role="3clF47" />
       <node concept="3sdZbQ" id="7SbCYlqP0Gb" role="3scror">
         <node concept="3sdZbA" id="7SbCYlqP0Gc" role="3sdZbB">
-          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcRF" />
+          <ref role="3sa5fj" to="jz4c:2Zy_zYsNcRF" resolve="inDoAction" />
         </node>
       </node>
       <node concept="UZuib" id="7GeSf1268yv" role="UYYtp">
-        <ref role="UZi6H" node="7SbCYlqP0Gm" />
+        <ref role="UZi6H" node="7SbCYlqP0Gm" resolve="stepOutOfSM" />
       </node>
     </node>
     <node concept="3sgmnF" id="7SbCYlqP0G1" role="1zJi$$" />
     <node concept="3qy1PH" id="2Zy_zYsNcRa" role="3qy1PE">
-      <ref role="30ajXG" to="jz4c:3_UUdaFlgP4" />
+      <ref role="30ajXG" to="jz4c:3_UUdaFlgP4" resolve="StepOutSMTest" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

@@ -370,7 +370,7 @@
             <node concept="1sgJKr" id="ogNGNPXMZ3" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="ogNGNPXMnq" />
+              <ref role="1sgJKq" node="ogNGNPXMnq" resolve="_AVLTreeNode" />
             </node>
           </node>
           <node concept="3TlMh9" id="ogNGNPXMnx" role="1YbSNA">
@@ -386,7 +386,7 @@
           <node concept="1sgJKr" id="ogNGNPXMZ4" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="ogNGNPXMnq" />
+            <ref role="1sgJKq" node="ogNGNPXMnq" resolve="_AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -395,7 +395,7 @@
         <node concept="rcJHQ" id="ogNGNPXMZ5" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnp" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="1dpRTG" id="ogNGNPXMnM" role="HszBJ">
@@ -429,7 +429,7 @@
       <node concept="1sgJKr" id="ogNGNPXMnP" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="ogNGNPXMnq" />
+        <ref role="1sgJKq" node="ogNGNPXMnq" resolve="_AVLTreeNode" />
       </node>
     </node>
     <node concept="1sgJKc" id="ogNGNPXMnZ" role="N3F5h">
@@ -443,7 +443,7 @@
           <node concept="rcJHQ" id="ogNGNPXMZ6" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -470,7 +470,7 @@
       <node concept="1sgJKr" id="ogNGNPXMob" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="ogNGNPXMnZ" />
+        <ref role="1sgJKq" node="ogNGNPXMnZ" resolve="_AVLTree" />
       </node>
     </node>
   </node>
@@ -580,44 +580,44 @@
             <node concept="rcJHQ" id="3RK4Y9HGgtr" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMok" />
+              <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
             </node>
           </node>
           <node concept="3O_q_g" id="3RK4Y9HGgts" role="3XIe9u">
-            <ref role="3O_q_h" node="ogNGNPXMrk" />
+            <ref role="3O_q_h" node="ogNGNPXMrk" resolve="avl_tree_new" />
           </node>
         </node>
         <node concept="3XISUE" id="3RK4Y9HGgtt" role="3XIRFZ" />
         <node concept="1_9egQ" id="3RK4Y9HGgt$" role="3XIRFZ">
           <node concept="3O_q_g" id="3RK4Y9HGgt_" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMGK" />
+            <ref role="3O_q_h" node="ogNGNPXMGK" resolve="avl_tree_insert" />
             <node concept="3ZVu4v" id="3RK4Y9HGgtA" role="3O_q_j">
-              <ref role="3ZVs_2" node="3RK4Y9HGgtp" />
+              <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
             </node>
             <node concept="1S7827" id="7Syd$1LZItZ" role="3O_q_j">
-              <ref role="1S7826" node="7Syd$1LZFlJ" />
+              <ref role="1S7826" node="7Syd$1LZFlJ" resolve="one" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="7Syd$1LZIV8" role="3XIRFZ">
           <node concept="3O_q_g" id="7Syd$1LZIV9" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMGK" />
+            <ref role="3O_q_h" node="ogNGNPXMGK" resolve="avl_tree_insert" />
             <node concept="3ZVu4v" id="7Syd$1LZIVa" role="3O_q_j">
-              <ref role="3ZVs_2" node="3RK4Y9HGgtp" />
+              <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
             </node>
             <node concept="1S7827" id="7Syd$1LZIXt" role="3O_q_j">
-              <ref role="1S7826" node="7Syd$1LZGxv" />
+              <ref role="1S7826" node="7Syd$1LZGxv" resolve="two" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="7Syd$1LZIWb" role="3XIRFZ">
           <node concept="3O_q_g" id="7Syd$1LZIWc" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMGK" />
+            <ref role="3O_q_h" node="ogNGNPXMGK" resolve="avl_tree_insert" />
             <node concept="3ZVu4v" id="7Syd$1LZIWd" role="3O_q_j">
-              <ref role="3ZVs_2" node="3RK4Y9HGgtp" />
+              <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
             </node>
             <node concept="1S7827" id="7Syd$1LZJsF" role="3O_q_j">
-              <ref role="1S7826" node="7Syd$1LZHIn" />
+              <ref role="1S7826" node="7Syd$1LZHIn" resolve="three" />
             </node>
           </node>
         </node>
@@ -629,10 +629,10 @@
             </node>
             <node concept="2qmXGp" id="3RK4Y9I7NPT" role="3TlMhI">
               <node concept="1E4Tgc" id="3RK4Y9I7NRe" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMo8" />
+                <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
               </node>
               <node concept="3ZVu4v" id="3RK4Y9I7NKw" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9HGgtp" />
+                <ref role="3ZVs_2" node="3RK4Y9HGgtp" resolve="myTree" />
               </node>
             </node>
           </node>
@@ -658,11 +658,11 @@
             <node concept="rcJHQ" id="3RK4Y9I9UFb" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMok" />
+              <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
             </node>
           </node>
           <node concept="3O_q_g" id="3RK4Y9I9UFc" role="3XIe9u">
-            <ref role="3O_q_h" node="ogNGNPXMrk" />
+            <ref role="3O_q_h" node="ogNGNPXMrk" resolve="avl_tree_new" />
           </node>
         </node>
         <node concept="3XIRlf" id="3RK4Y9I9V69" role="3XIRFZ">
@@ -673,18 +673,18 @@
             <node concept="rcJHQ" id="3RK4Y9I9V67" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
           <node concept="1S8S4T" id="3RK4Y9I9V8S" role="3XIe9u">
             <node concept="2BPB98" id="3RK4Y9I9V8T" role="1S8S4V">
               <node concept="3O_q_g" id="3RK4Y9I9VxW" role="1_9fRO">
-                <ref role="3O_q_h" to="3y0n:1fAuj8Twc5j" />
+                <ref role="3O_q_h" to="3y0n:1fAuj8Twc5j" resolve="malloc" />
                 <node concept="3wxvTy" id="3RK4Y9I9Vyi" role="3O_q_j">
                   <node concept="rcJHQ" id="3RK4Y9I9VzP" role="3wxvTG">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                    <ref role="rcJHT" node="ogNGNPXMnY" />
+                    <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
                   </node>
                 </node>
               </node>
@@ -695,7 +695,7 @@
               <node concept="rcJHQ" id="3RK4Y9I9V9y" role="2umbIo">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="rcJHT" node="ogNGNPXMnY" />
+                <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
               </node>
             </node>
           </node>
@@ -708,18 +708,18 @@
             <node concept="rcJHQ" id="3RK4Y9I9VAT" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
           <node concept="1S8S4T" id="3RK4Y9I9VAU" role="3XIe9u">
             <node concept="2BPB98" id="3RK4Y9I9VAV" role="1S8S4V">
               <node concept="3O_q_g" id="3RK4Y9I9VAW" role="1_9fRO">
-                <ref role="3O_q_h" to="3y0n:1fAuj8Twc5j" />
+                <ref role="3O_q_h" to="3y0n:1fAuj8Twc5j" resolve="malloc" />
                 <node concept="3wxvTy" id="3RK4Y9I9VAX" role="3O_q_j">
                   <node concept="rcJHQ" id="3RK4Y9I9VAY" role="3wxvTG">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                    <ref role="rcJHT" node="ogNGNPXMnY" />
+                    <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
                   </node>
                 </node>
               </node>
@@ -730,7 +730,7 @@
               <node concept="rcJHQ" id="3RK4Y9I9VB0" role="2umbIo">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="rcJHT" node="ogNGNPXMnY" />
+                <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
               </node>
             </node>
           </node>
@@ -743,18 +743,18 @@
             <node concept="rcJHQ" id="3RK4Y9I9VEs" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
           <node concept="1S8S4T" id="3RK4Y9I9VEt" role="3XIe9u">
             <node concept="2BPB98" id="3RK4Y9I9VEu" role="1S8S4V">
               <node concept="3O_q_g" id="3RK4Y9I9VEv" role="1_9fRO">
-                <ref role="3O_q_h" to="3y0n:1fAuj8Twc5j" />
+                <ref role="3O_q_h" to="3y0n:1fAuj8Twc5j" resolve="malloc" />
                 <node concept="3wxvTy" id="3RK4Y9I9VEw" role="3O_q_j">
                   <node concept="rcJHQ" id="3RK4Y9I9VEx" role="3wxvTG">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                    <ref role="rcJHT" node="ogNGNPXMnY" />
+                    <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
                   </node>
                 </node>
               </node>
@@ -765,7 +765,7 @@
               <node concept="rcJHQ" id="3RK4Y9I9VEz" role="2umbIo">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="rcJHT" node="ogNGNPXMnY" />
+                <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
               </node>
             </node>
           </node>
@@ -773,14 +773,14 @@
         <node concept="1_9egQ" id="7Syd$1M3tyw" role="3XIRFZ">
           <node concept="3pqW6w" id="7Syd$1M3tLk" role="1_9egR">
             <node concept="3ZVu4v" id="7Syd$1M3u86" role="3TlMhJ">
-              <ref role="3ZVs_2" node="3RK4Y9I9V69" />
+              <ref role="3ZVs_2" node="3RK4Y9I9V69" resolve="one" />
             </node>
             <node concept="2qmXGp" id="7Syd$1M3tCm" role="3TlMhI">
               <node concept="1E4Tgc" id="7Syd$1M3tH1" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMo2" />
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
               </node>
               <node concept="3ZVu4v" id="7Syd$1M3tyu" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9UF9" />
+                <ref role="3ZVs_2" node="3RK4Y9I9UF9" resolve="myTree" />
               </node>
             </node>
           </node>
@@ -792,10 +792,10 @@
             </node>
             <node concept="2qmXGp" id="3RK4Y9I9VUZ" role="3TlMhI">
               <node concept="1E4Tgc" id="3RK4Y9I9VW5" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnH" />
+                <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
               </node>
               <node concept="3ZVu4v" id="3RK4Y9I9VP7" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9V69" />
+                <ref role="3ZVs_2" node="3RK4Y9I9V69" resolve="one" />
               </node>
             </node>
           </node>
@@ -803,7 +803,7 @@
         <node concept="1_9egQ" id="3RK4Y9I9Wll" role="3XIRFZ">
           <node concept="3pqW6w" id="3RK4Y9I9XgW" role="1_9egR">
             <node concept="3ZVu4v" id="3RK4Y9I9XzU" role="3TlMhJ">
-              <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+              <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
             </node>
             <node concept="2wJmCr" id="3RK4Y9I9WES" role="3TlMhI">
               <node concept="3TlMh9" id="3RK4Y9I9WUY" role="2wJmCp">
@@ -811,10 +811,10 @@
               </node>
               <node concept="2qmXGp" id="3RK4Y9I9Wrl" role="1_9fRO">
                 <node concept="1E4Tgc" id="3RK4Y9I9WDa" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
                 <node concept="3ZVu4v" id="3RK4Y9I9Wlj" role="1_9fRO">
-                  <ref role="3ZVs_2" node="3RK4Y9I9V69" />
+                  <ref role="3ZVs_2" node="3RK4Y9I9V69" resolve="one" />
                 </node>
               </node>
             </node>
@@ -829,10 +829,10 @@
               </node>
               <node concept="2qmXGp" id="3RK4Y9Ia3bK" role="1_9fRO">
                 <node concept="1E4Tgc" id="3RK4Y9Ia3bL" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
                 <node concept="3ZVu4v" id="3RK4Y9Ia3lW" role="1_9fRO">
-                  <ref role="3ZVs_2" node="3RK4Y9I9V69" />
+                  <ref role="3ZVs_2" node="3RK4Y9I9V69" resolve="one" />
                 </node>
               </node>
             </node>
@@ -845,10 +845,10 @@
             </node>
             <node concept="2qmXGp" id="3RK4Y9I9XYV" role="3TlMhI">
               <node concept="1E4Tgc" id="3RK4Y9I9Yil" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnH" />
+                <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
               </node>
               <node concept="3ZVu4v" id="3RK4Y9I9XSD" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+                <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
               </node>
             </node>
           </node>
@@ -856,7 +856,7 @@
         <node concept="1_9egQ" id="3RK4Y9I9YUZ" role="3XIRFZ">
           <node concept="3pqW6w" id="3RK4Y9Ia05R" role="1_9egR">
             <node concept="3ZVu4v" id="3RK4Y9Ia0sA" role="3TlMhJ">
-              <ref role="3ZVs_2" node="3RK4Y9I9VEq" />
+              <ref role="3ZVs_2" node="3RK4Y9I9VEq" resolve="three" />
             </node>
             <node concept="2wJmCr" id="3RK4Y9I9Zmz" role="3TlMhI">
               <node concept="3TlMh9" id="3RK4Y9I9ZGg" role="2wJmCp">
@@ -864,10 +864,10 @@
               </node>
               <node concept="2qmXGp" id="3RK4Y9I9Z1p" role="1_9fRO">
                 <node concept="1E4Tgc" id="3RK4Y9I9Zlz" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
                 <node concept="3ZVu4v" id="3RK4Y9I9YUX" role="1_9fRO">
-                  <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+                  <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
                 </node>
               </node>
             </node>
@@ -882,10 +882,10 @@
               </node>
               <node concept="2qmXGp" id="3RK4Y9Ia3RO" role="1_9fRO">
                 <node concept="1E4Tgc" id="3RK4Y9Ia3RP" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
                 <node concept="3ZVu4v" id="3RK4Y9Ia45P" role="1_9fRO">
-                  <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+                  <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
                 </node>
               </node>
             </node>
@@ -894,14 +894,14 @@
         <node concept="1_9egQ" id="7Syd$1MdAgy" role="3XIRFZ">
           <node concept="3pqW6w" id="7Syd$1MdANB" role="1_9egR">
             <node concept="3ZVu4v" id="7Syd$1MdBd9" role="3TlMhJ">
-              <ref role="3ZVs_2" node="3RK4Y9I9V69" />
+              <ref role="3ZVs_2" node="3RK4Y9I9V69" resolve="one" />
             </node>
             <node concept="2qmXGp" id="7Syd$1MdAmz" role="3TlMhI">
               <node concept="1E4Tgc" id="7Syd$1MdAJ3" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnB" />
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
               </node>
               <node concept="3ZVu4v" id="7Syd$1MdAgw" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+                <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
               </node>
             </node>
           </node>
@@ -915,10 +915,10 @@
               </node>
               <node concept="2qmXGp" id="3RK4Y9Ia0YN" role="1_9fRO">
                 <node concept="1E4Tgc" id="3RK4Y9Ia1lQ" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
                 <node concept="3ZVu4v" id="3RK4Y9Ia0S5" role="1_9fRO">
-                  <ref role="3ZVs_2" node="3RK4Y9I9VEq" />
+                  <ref role="3ZVs_2" node="3RK4Y9I9VEq" resolve="three" />
                 </node>
               </node>
             </node>
@@ -933,10 +933,10 @@
               </node>
               <node concept="2qmXGp" id="3RK4Y9Ia2Y$" role="1_9fRO">
                 <node concept="1E4Tgc" id="3RK4Y9Ia2Y_" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
                 <node concept="3ZVu4v" id="3RK4Y9Ia2YA" role="1_9fRO">
-                  <ref role="3ZVs_2" node="3RK4Y9I9VEq" />
+                  <ref role="3ZVs_2" node="3RK4Y9I9VEq" resolve="three" />
                 </node>
               </node>
             </node>
@@ -945,14 +945,14 @@
         <node concept="1_9egQ" id="7Syd$1MdBCQ" role="3XIRFZ">
           <node concept="3pqW6w" id="7Syd$1MdCcP" role="1_9egR">
             <node concept="3ZVu4v" id="7Syd$1MdCBb" role="3TlMhJ">
-              <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+              <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
             </node>
             <node concept="2qmXGp" id="7Syd$1MdBIX" role="3TlMhI">
               <node concept="1E4Tgc" id="7Syd$1MdC8y" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnB" />
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
               </node>
               <node concept="3ZVu4v" id="7Syd$1MdBCO" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9VEq" />
+                <ref role="3ZVs_2" node="3RK4Y9I9VEq" resolve="three" />
               </node>
             </node>
           </node>
@@ -964,10 +964,10 @@
             </node>
             <node concept="2qmXGp" id="7Syd$1M6nbi" role="3TlMhI">
               <node concept="1E4Tgc" id="7Syd$1M6nzt" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnH" />
+                <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
               </node>
               <node concept="3ZVu4v" id="7Syd$1M6n58" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9VEq" />
+                <ref role="3ZVs_2" node="3RK4Y9I9VEq" resolve="three" />
               </node>
             </node>
           </node>
@@ -975,12 +975,12 @@
         <node concept="3XISUE" id="3RK4Y9Ia0Pc" role="3XIRFZ" />
         <node concept="1_9egQ" id="7Syd$1M8i_c" role="3XIRFZ">
           <node concept="3O_q_g" id="7Syd$1M8i_a" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMEM" />
+            <ref role="3O_q_h" node="ogNGNPXMEM" resolve="avl_tree_balance_to_root" />
             <node concept="3ZVu4v" id="7Syd$1M8iBF" role="3O_q_j">
-              <ref role="3ZVs_2" node="3RK4Y9I9UF9" />
+              <ref role="3ZVs_2" node="3RK4Y9I9UF9" resolve="myTree" />
             </node>
             <node concept="3ZVu4v" id="7Syd$1M8iCI" role="3O_q_j">
-              <ref role="3ZVs_2" node="3RK4Y9I9VAR" />
+              <ref role="3ZVs_2" node="3RK4Y9I9VAR" resolve="two" />
             </node>
           </node>
         </node>
@@ -993,14 +993,14 @@
           </node>
           <node concept="2qmXGp" id="7Syd$1M5qQw" role="3XIe9u">
             <node concept="1E4Tgc" id="7Syd$1M5qQx" role="1ESnxz">
-              <ref role="1E4Tge" node="ogNGNPXMnH" />
+              <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
             </node>
             <node concept="2qmXGp" id="7Syd$1M5qQy" role="1_9fRO">
               <node concept="3ZVu4v" id="7Syd$1M5qQz" role="1_9fRO">
-                <ref role="3ZVs_2" node="3RK4Y9I9UF9" />
+                <ref role="3ZVs_2" node="3RK4Y9I9UF9" resolve="myTree" />
               </node>
               <node concept="1E4Tgc" id="7Syd$1M5qQ$" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMo2" />
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
               </node>
             </node>
           </node>
@@ -1011,7 +1011,7 @@
               <property role="2hmy$m" value="3" />
             </node>
             <node concept="3ZVu4v" id="7Syd$1M5qQA" role="3TlMhI">
-              <ref role="3ZVs_2" node="7Syd$1M5qOj" />
+              <ref role="3ZVs_2" node="7Syd$1M5qOj" resolve="rootKey" />
             </node>
           </node>
         </node>
@@ -1025,28 +1025,28 @@
       <property role="TrG5h" value="empty_1478468724827_52" />
     </node>
     <node concept="3GEVxB" id="3RK4Y9HGguQ" role="2OODSX">
-      <ref role="3GEb4d" node="ogNGNPXMnh" />
+      <ref role="3GEb4d" node="ogNGNPXMnh" resolve="_080_avl_tree" />
     </node>
     <node concept="3GEVxB" id="3RK4Y9HGguR" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" resolve="math" />
     </node>
     <node concept="3GEVxB" id="3RK4Y9I9VmM" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
     </node>
   </node>
   <node concept="N3F5e" id="ogNGNPXMnh">
     <property role="TrG5h" value="_080_avl_tree" />
     <node concept="3GEVxB" id="ogNGNPXMYZ" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
     </node>
     <node concept="3GEVxB" id="3RK4Y9HHmGw" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="3RK4Y9HHmDd" />
+      <ref role="3GEb4d" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
     </node>
     <node concept="3GEVxB" id="3RK4Y9HHmwf" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="3RK4Y9HHl6T" />
+      <ref role="3GEb4d" node="3RK4Y9HHl6T" resolve="_080_malloc_stubs" />
     </node>
     <node concept="2DPCBB" id="ogNGNPXRkj" role="N3F5h">
       <property role="TrG5h" value="AVL_TREE_NULL" />
@@ -1097,14 +1097,14 @@
             <node concept="rcJHQ" id="ogNGNPXMZu" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMok" />
+              <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="ogNGNPXMr$" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMrJ" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXMZv" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMru" />
+              <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
             </node>
             <node concept="1S8S4T" id="ogNGNPXMrH" role="3TlMhJ">
               <node concept="3wxxNl" id="ogNGNPXMrB" role="1S8S4N">
@@ -1113,16 +1113,16 @@
                 <node concept="rcJHQ" id="ogNGNPXMZw" role="2umbIo">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
-                  <ref role="rcJHT" node="ogNGNPXMok" />
+                  <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
                 </node>
               </node>
               <node concept="3O_q_g" id="ogNGNPXMZy" role="1S8S4V">
-                <ref role="3O_q_h" node="3RK4Y9HHlax" />
+                <ref role="3O_q_h" node="3RK4Y9HHlax" resolve="malloc_tree" />
                 <node concept="3wxvTy" id="ogNGNPXN5$" role="3O_q_j">
                   <node concept="rcJHQ" id="ogNGNPXN5z" role="3wxvTG">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                    <ref role="rcJHT" node="ogNGNPXMok" />
+                    <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
                   </node>
                 </node>
               </node>
@@ -1133,7 +1133,7 @@
         <node concept="c0U19" id="ogNGNPXMrN" role="3XIRFZ">
           <node concept="3TlM44" id="ogNGNPXMrS" role="c0U16">
             <node concept="3ZVu4v" id="ogNGNPXMZz" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMru" />
+              <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
             </node>
             <node concept="Ea8Gl" id="ogNGNPXMZ$" role="3TlMhJ" />
           </node>
@@ -1148,10 +1148,10 @@
           <node concept="3pqW6w" id="ogNGNPXMs9" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXMs6" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXMZA" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMru" />
+                <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNdc" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMo2" />
+                <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
               </node>
             </node>
             <node concept="Ea8Gl" id="ogNGNPXMZB" role="3TlMhJ" />
@@ -1161,10 +1161,10 @@
           <node concept="3pqW6w" id="ogNGNPXMsi" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXMsf" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXMZC" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMru" />
+                <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNln" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMo8" />
+                <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
               </node>
             </node>
             <node concept="3TlMh9" id="ogNGNPXMsh" role="3TlMhJ">
@@ -1174,7 +1174,7 @@
         </node>
         <node concept="2BFjQ_" id="ogNGNPXMsl" role="3XIRFZ">
           <node concept="3ZVu4v" id="ogNGNPXMZD" role="2BFjQA">
-            <ref role="3ZVs_2" node="ogNGNPXMru" />
+            <ref role="3ZVs_2" node="ogNGNPXMru" resolve="new_tree" />
           </node>
         </node>
       </node>
@@ -1184,7 +1184,7 @@
         <node concept="rcJHQ" id="ogNGNPXMZE" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMok" />
+          <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
         </node>
       </node>
     </node>
@@ -1203,7 +1203,7 @@
           <node concept="rcJHQ" id="ogNGNPXN05" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1211,7 +1211,7 @@
         <node concept="c0U19" id="ogNGNPXMuz" role="3XIRFZ">
           <node concept="3TlM44" id="ogNGNPXMuC" role="c0U16">
             <node concept="3ZUYvv" id="ogNGNPXN06" role="3TlMhI">
-              <ref role="3ZUYvu" node="ogNGNPXMuv" />
+              <ref role="3ZUYvu" node="ogNGNPXMuv" resolve="node" />
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN07" role="3TlMhJ" />
           </node>
@@ -1227,10 +1227,10 @@
               <node concept="2BFjQ_" id="ogNGNPXMuN" role="3XIRFZ">
                 <node concept="2qmXGp" id="ogNGNPXMuP" role="2BFjQA">
                   <node concept="3ZUYvv" id="ogNGNPXN08" role="1_9fRO">
-                    <ref role="3ZUYvu" node="ogNGNPXMuv" />
+                    <ref role="3ZUYvu" node="ogNGNPXMuv" resolve="node" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNrf" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnM" />
+                    <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
                   </node>
                 </node>
               </node>
@@ -1258,7 +1258,7 @@
           <node concept="rcJHQ" id="ogNGNPXN09" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1271,7 +1271,7 @@
             <node concept="rcJHQ" id="ogNGNPXN0a" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -1283,7 +1283,7 @@
             <node concept="rcJHQ" id="ogNGNPXN0b" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -1305,19 +1305,19 @@
         <node concept="1_9egQ" id="ogNGNPXMvF" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMvM" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN0c" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMvg" />
+              <ref role="3ZVs_2" node="ogNGNPXMvg" resolve="left_subtree" />
             </node>
             <node concept="2wJmCr" id="ogNGNPXMvK" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXMvI" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN0d" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMv9" />
+                  <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNgl" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x5z" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
               </node>
             </node>
           </node>
@@ -1325,19 +1325,19 @@
         <node concept="1_9egQ" id="ogNGNPXMvQ" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMvX" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN0f" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMvp" />
+              <ref role="3ZVs_2" node="ogNGNPXMvp" resolve="right_subtree" />
             </node>
             <node concept="2wJmCr" id="ogNGNPXMvV" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXMvT" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN0g" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMv9" />
+                  <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNNk" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x5B" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
               </node>
             </node>
           </node>
@@ -1345,12 +1345,12 @@
         <node concept="1_9egQ" id="ogNGNPXMw0" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMw5" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN0i" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMvy" />
+              <ref role="3ZVs_2" node="ogNGNPXMvy" resolve="left_height" />
             </node>
             <node concept="3O_q_g" id="ogNGNPXN0k" role="3TlMhJ">
-              <ref role="3O_q_h" node="ogNGNPXMuq" />
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
               <node concept="3ZVu4v" id="ogNGNPXN5L" role="3O_q_j">
-                <ref role="3ZVs_2" node="ogNGNPXMvg" />
+                <ref role="3ZVs_2" node="ogNGNPXMvg" resolve="left_subtree" />
               </node>
             </node>
           </node>
@@ -1358,12 +1358,12 @@
         <node concept="1_9egQ" id="ogNGNPXMw8" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMwd" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN0l" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMvA" />
+              <ref role="3ZVs_2" node="ogNGNPXMvA" resolve="right_height" />
             </node>
             <node concept="3O_q_g" id="ogNGNPXN0n" role="3TlMhJ">
-              <ref role="3O_q_h" node="ogNGNPXMuq" />
+              <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
               <node concept="3ZVu4v" id="ogNGNPXN5M" role="3O_q_j">
-                <ref role="3ZVs_2" node="ogNGNPXMvp" />
+                <ref role="3ZVs_2" node="ogNGNPXMvp" resolve="right_subtree" />
               </node>
             </node>
           </node>
@@ -1372,10 +1372,10 @@
         <node concept="c0U19" id="ogNGNPXMwg" role="3XIRFZ">
           <node concept="3Tl9Jr" id="ogNGNPXMwl" role="c0U16">
             <node concept="3ZVu4v" id="ogNGNPXN0o" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMvy" />
+              <ref role="3ZVs_2" node="ogNGNPXMvy" resolve="left_height" />
             </node>
             <node concept="3ZVu4v" id="ogNGNPXN0p" role="3TlMhJ">
-              <ref role="3ZVs_2" node="ogNGNPXMvA" />
+              <ref role="3ZVs_2" node="ogNGNPXMvA" resolve="right_height" />
             </node>
           </node>
           <node concept="3XIRFW" id="ogNGNPXMwm" role="c0U17">
@@ -1383,15 +1383,15 @@
               <node concept="3pqW6w" id="ogNGNPXMwu" role="1_9egR">
                 <node concept="2qmXGp" id="ogNGNPXMwp" role="3TlMhI">
                   <node concept="3ZUYvv" id="ogNGNPXN0q" role="1_9fRO">
-                    <ref role="3ZUYvu" node="ogNGNPXMv9" />
+                    <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNMs" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnM" />
+                    <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
                   </node>
                 </node>
                 <node concept="2BOciq" id="ogNGNPXMwt" role="3TlMhJ">
                   <node concept="3ZVu4v" id="ogNGNPXN0r" role="3TlMhI">
-                    <ref role="3ZVs_2" node="ogNGNPXMvy" />
+                    <ref role="3ZVs_2" node="ogNGNPXMvy" resolve="left_height" />
                   </node>
                   <node concept="3TlMh9" id="ogNGNPXMws" role="3TlMhJ">
                     <property role="2hmy$m" value="1" />
@@ -1406,15 +1406,15 @@
                 <node concept="3pqW6w" id="ogNGNPXMwH" role="1_9egR">
                   <node concept="2qmXGp" id="ogNGNPXMwC" role="3TlMhI">
                     <node concept="3ZUYvv" id="ogNGNPXN0s" role="1_9fRO">
-                      <ref role="3ZUYvu" node="ogNGNPXMv9" />
+                      <ref role="3ZUYvu" node="ogNGNPXMv9" resolve="node" />
                     </node>
                     <node concept="1E4Tgc" id="ogNGNPXNJO" role="1ESnxz">
-                      <ref role="1E4Tge" node="ogNGNPXMnM" />
+                      <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
                     </node>
                   </node>
                   <node concept="2BOciq" id="ogNGNPXMwG" role="3TlMhJ">
                     <node concept="3ZVu4v" id="ogNGNPXN0t" role="3TlMhI">
-                      <ref role="3ZVs_2" node="ogNGNPXMvA" />
+                      <ref role="3ZVs_2" node="ogNGNPXMvA" resolve="right_height" />
                     </node>
                     <node concept="3TlMh9" id="ogNGNPXMwF" role="3TlMhJ">
                       <property role="2hmy$m" value="1" />
@@ -1446,7 +1446,7 @@
           <node concept="rcJHQ" id="ogNGNPXN0u" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1457,28 +1457,28 @@
               <node concept="2qmXGp" id="ogNGNPXMxe" role="1_9fRO">
                 <node concept="2qmXGp" id="ogNGNPXMxc" role="1_9fRO">
                   <node concept="3ZUYvv" id="ogNGNPXN0v" role="1_9fRO">
-                    <ref role="3ZUYvu" node="ogNGNPXMx4" />
+                    <ref role="3ZUYvu" node="ogNGNPXMx4" resolve="node" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNa6" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnB" />
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNfx" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x5F" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
               </node>
             </node>
             <node concept="3ZUYvv" id="ogNGNPXN0x" role="3TlMhJ">
-              <ref role="3ZUYvu" node="ogNGNPXMx4" />
+              <ref role="3ZUYvu" node="ogNGNPXMx4" resolve="node" />
             </node>
           </node>
           <node concept="3XIRFW" id="ogNGNPXMxk" role="c0U17">
             <node concept="2BFjQ_" id="ogNGNPXMxl" role="3XIRFZ">
               <node concept="4ZOvp" id="3RK4Y9I5x5J" role="2BFjQA">
-                <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
               </node>
             </node>
           </node>
@@ -1486,7 +1486,7 @@
             <node concept="3XIRFW" id="ogNGNPXMxt" role="1ly_ph">
               <node concept="2BFjQ_" id="ogNGNPXMxu" role="3XIRFZ">
                 <node concept="4ZOvp" id="3RK4Y9I5x5N" role="2BFjQA">
-                  <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                  <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
                 </node>
               </node>
             </node>
@@ -1513,7 +1513,7 @@
           <node concept="rcJHQ" id="ogNGNPXN0_" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMok" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -1525,7 +1525,7 @@
           <node concept="rcJHQ" id="ogNGNPXN0A" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1537,7 +1537,7 @@
           <node concept="rcJHQ" id="ogNGNPXN0B" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1552,7 +1552,7 @@
         <node concept="c0U19" id="ogNGNPXMy7" role="3XIRFZ">
           <node concept="25Bbzn" id="ogNGNPXMyc" role="c0U16">
             <node concept="3ZUYvv" id="ogNGNPXN0C" role="3TlMhI">
-              <ref role="3ZUYvu" node="ogNGNPXMxV" />
+              <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN0D" role="3TlMhJ" />
           </node>
@@ -1561,18 +1561,18 @@
               <node concept="3pqW6w" id="ogNGNPXMyl" role="1_9egR">
                 <node concept="2qmXGp" id="ogNGNPXMyg" role="3TlMhI">
                   <node concept="3ZUYvv" id="ogNGNPXN0E" role="1_9fRO">
-                    <ref role="3ZUYvu" node="ogNGNPXMxV" />
+                    <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNe4" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnB" />
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                   </node>
                 </node>
                 <node concept="2qmXGp" id="ogNGNPXMyj" role="3TlMhJ">
                   <node concept="3ZUYvv" id="ogNGNPXN0F" role="1_9fRO">
-                    <ref role="3ZUYvu" node="ogNGNPXMxS" />
+                    <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNxb" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnB" />
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                   </node>
                 </node>
               </node>
@@ -1584,10 +1584,10 @@
           <node concept="3TlM44" id="ogNGNPXMyC" role="c0U16">
             <node concept="2qmXGp" id="ogNGNPXMy_" role="3TlMhI">
               <node concept="3ZUYvv" id="ogNGNPXN0G" role="1_9fRO">
-                <ref role="3ZUYvu" node="ogNGNPXMxS" />
+                <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNwn" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnB" />
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
               </node>
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN0H" role="3TlMhJ" />
@@ -1597,14 +1597,14 @@
               <node concept="3pqW6w" id="ogNGNPXMyJ" role="1_9egR">
                 <node concept="2qmXGp" id="ogNGNPXMyG" role="3TlMhI">
                   <node concept="3ZUYvv" id="ogNGNPXN0I" role="1_9fRO">
-                    <ref role="3ZUYvu" node="ogNGNPXMxP" />
+                    <ref role="3ZUYvu" node="ogNGNPXMxP" resolve="tree" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNvz" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMo2" />
+                    <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
                   </node>
                 </node>
                 <node concept="3ZUYvv" id="ogNGNPXN0J" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="ogNGNPXMxV" />
+                  <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
                 </node>
               </node>
             </node>
@@ -1614,12 +1614,12 @@
               <node concept="1_9egQ" id="ogNGNPXMyR" role="3XIRFZ">
                 <node concept="3pqW6w" id="ogNGNPXMyW" role="1_9egR">
                   <node concept="3ZVu4v" id="ogNGNPXN0K" role="3TlMhI">
-                    <ref role="3ZVs_2" node="ogNGNPXMy2" />
+                    <ref role="3ZVs_2" node="ogNGNPXMy2" resolve="side" />
                   </node>
                   <node concept="3O_q_g" id="ogNGNPXN0M" role="3TlMhJ">
-                    <ref role="3O_q_h" node="ogNGNPXMwZ" />
+                    <ref role="3O_q_h" node="ogNGNPXMwZ" resolve="avl_tree_node_parent_side" />
                     <node concept="3ZUYvv" id="ogNGNPXN5N" role="3O_q_j">
-                      <ref role="3ZUYvu" node="ogNGNPXMxS" />
+                      <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
                     </node>
                   </node>
                 </node>
@@ -1630,35 +1630,35 @@
                     <node concept="2qmXGp" id="ogNGNPXMz3" role="1_9fRO">
                       <node concept="2qmXGp" id="ogNGNPXMz1" role="1_9fRO">
                         <node concept="3ZUYvv" id="ogNGNPXN0N" role="1_9fRO">
-                          <ref role="3ZUYvu" node="ogNGNPXMxS" />
+                          <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
                         </node>
                         <node concept="1E4Tgc" id="ogNGNPXNrD" role="1ESnxz">
-                          <ref role="1E4Tge" node="ogNGNPXMnB" />
+                          <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                         </node>
                       </node>
                       <node concept="1E4Tgc" id="ogNGNPXNSO" role="1ESnxz">
-                        <ref role="1E4Tge" node="ogNGNPXMnu" />
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                       </node>
                     </node>
                     <node concept="3ZVu4v" id="ogNGNPXN0O" role="2wJmCp">
-                      <ref role="3ZVs_2" node="ogNGNPXMy2" />
+                      <ref role="3ZVs_2" node="ogNGNPXMy2" resolve="side" />
                     </node>
                   </node>
                   <node concept="3ZUYvv" id="ogNGNPXN0P" role="3TlMhJ">
-                    <ref role="3ZUYvu" node="ogNGNPXMxV" />
+                    <ref role="3ZUYvu" node="ogNGNPXMxV" resolve="node2" />
                   </node>
                 </node>
               </node>
               <node concept="3XISUE" id="ogNGNPXRl0" role="3XIRFZ" />
               <node concept="1_9egQ" id="ogNGNPXMzb" role="3XIRFZ">
                 <node concept="3O_q_g" id="ogNGNPXN0R" role="1_9egR">
-                  <ref role="3O_q_h" node="ogNGNPXMv4" />
+                  <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
                   <node concept="2qmXGp" id="ogNGNPXMzf" role="3O_q_j">
                     <node concept="3ZUYvv" id="ogNGNPXN5O" role="1_9fRO">
-                      <ref role="3ZUYvu" node="ogNGNPXMxS" />
+                      <ref role="3ZUYvu" node="ogNGNPXMxS" resolve="node1" />
                     </node>
                     <node concept="1E4Tgc" id="ogNGNPXNfV" role="1ESnxz">
-                      <ref role="1E4Tge" node="ogNGNPXMnB" />
+                      <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                     </node>
                   </node>
                 </node>
@@ -1687,7 +1687,7 @@
           <node concept="rcJHQ" id="ogNGNPXN0S" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMok" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -1699,7 +1699,7 @@
           <node concept="rcJHQ" id="ogNGNPXN0T" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1719,22 +1719,22 @@
             <node concept="rcJHQ" id="ogNGNPXN0V" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="ogNGNPXM$0" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXM$9" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN0W" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMzU" />
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
             </node>
             <node concept="2wJmCr" id="ogNGNPXM$5" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXM$3" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN0X" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMzL" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNHc" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="2BOcil" id="ogNGNPXM$8" role="2wJmCp">
@@ -1742,7 +1742,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="3ZUYvv" id="ogNGNPXN0Y" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="ogNGNPXMzO" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
                 </node>
               </node>
             </node>
@@ -1751,15 +1751,15 @@
         <node concept="3XISUE" id="ogNGNPXRmM" role="3XIRFZ" />
         <node concept="1_9egQ" id="ogNGNPXM$g" role="3XIRFZ">
           <node concept="3O_q_g" id="ogNGNPXN10" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMxK" />
+            <ref role="3O_q_h" node="ogNGNPXMxK" resolve="avl_tree_node_replace" />
             <node concept="3ZUYvv" id="ogNGNPXN5P" role="3O_q_j">
-              <ref role="3ZUYvu" node="ogNGNPXMzI" />
+              <ref role="3ZUYvu" node="ogNGNPXMzI" resolve="tree" />
             </node>
             <node concept="3ZUYvv" id="ogNGNPXN5Q" role="3O_q_j">
-              <ref role="3ZUYvu" node="ogNGNPXMzL" />
+              <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
             </node>
             <node concept="3ZVu4v" id="ogNGNPXN5R" role="3O_q_j">
-              <ref role="3ZVs_2" node="ogNGNPXMzU" />
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
             </node>
           </node>
         </node>
@@ -1769,10 +1769,10 @@
             <node concept="2wJmCr" id="ogNGNPXM$w" role="3TlMhI">
               <node concept="2qmXGp" id="ogNGNPXM$u" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN11" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMzL" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNib" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="2BOcil" id="ogNGNPXM$z" role="2wJmCp">
@@ -1780,21 +1780,21 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="3ZUYvv" id="ogNGNPXN12" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="ogNGNPXMzO" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
                 </node>
               </node>
             </node>
             <node concept="2wJmCr" id="ogNGNPXM$B" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXM$_" role="1_9fRO">
                 <node concept="3ZVu4v" id="ogNGNPXN13" role="1_9fRO">
-                  <ref role="3ZVs_2" node="ogNGNPXMzU" />
+                  <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNa$" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="3ZUYvv" id="ogNGNPXN14" role="2wJmCp">
-                <ref role="3ZUYvu" node="ogNGNPXMzO" />
+                <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
               </node>
             </node>
           </node>
@@ -1804,18 +1804,18 @@
             <node concept="2wJmCr" id="ogNGNPXM$O" role="3TlMhI">
               <node concept="2qmXGp" id="ogNGNPXM$M" role="1_9fRO">
                 <node concept="3ZVu4v" id="ogNGNPXN15" role="1_9fRO">
-                  <ref role="3ZVs_2" node="ogNGNPXMzU" />
+                  <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNuF" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="3ZUYvv" id="ogNGNPXN16" role="2wJmCp">
-                <ref role="3ZUYvu" node="ogNGNPXMzO" />
+                <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
               </node>
             </node>
             <node concept="3ZUYvv" id="ogNGNPXN17" role="3TlMhJ">
-              <ref role="3ZUYvu" node="ogNGNPXMzL" />
+              <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
             </node>
           </node>
         </node>
@@ -1824,14 +1824,14 @@
           <node concept="3pqW6w" id="ogNGNPXM$Z" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXM$W" role="3TlMhI">
               <node concept="3ZUYvv" id="ogNGNPXN18" role="1_9fRO">
-                <ref role="3ZUYvu" node="ogNGNPXMzL" />
+                <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNwL" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnB" />
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
               </node>
             </node>
             <node concept="3ZVu4v" id="ogNGNPXN19" role="3TlMhJ">
-              <ref role="3ZVs_2" node="ogNGNPXMzU" />
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
             </node>
           </node>
         </node>
@@ -1841,10 +1841,10 @@
             <node concept="2wJmCr" id="ogNGNPXM_c" role="3TlMhI">
               <node concept="2qmXGp" id="ogNGNPXM_a" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN1a" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMzL" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNcI" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="2BOcil" id="ogNGNPXM_f" role="2wJmCp">
@@ -1852,7 +1852,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="3ZUYvv" id="ogNGNPXN1b" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="ogNGNPXMzO" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
                 </node>
               </node>
             </node>
@@ -1865,10 +1865,10 @@
                   <node concept="2wJmCr" id="ogNGNPXM_n" role="1_9fRO">
                     <node concept="2qmXGp" id="ogNGNPXM_l" role="1_9fRO">
                       <node concept="3ZUYvv" id="ogNGNPXN1d" role="1_9fRO">
-                        <ref role="3ZUYvu" node="ogNGNPXMzL" />
+                        <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
                       </node>
                       <node concept="1E4Tgc" id="ogNGNPXNbs" role="1ESnxz">
-                        <ref role="1E4Tge" node="ogNGNPXMnu" />
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                       </node>
                     </node>
                     <node concept="2BOcil" id="ogNGNPXM_q" role="2wJmCp">
@@ -1876,16 +1876,16 @@
                         <property role="2hmy$m" value="1" />
                       </node>
                       <node concept="3ZUYvv" id="ogNGNPXN1e" role="3TlMhJ">
-                        <ref role="3ZUYvu" node="ogNGNPXMzO" />
+                        <ref role="3ZUYvu" node="ogNGNPXMzO" resolve="direction" />
                       </node>
                     </node>
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNGk" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnB" />
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                   </node>
                 </node>
                 <node concept="3ZUYvv" id="ogNGNPXN1f" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="ogNGNPXMzL" />
+                  <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
                 </node>
               </node>
             </node>
@@ -1894,24 +1894,24 @@
         <node concept="3XISUE" id="ogNGNPXRoi" role="3XIRFZ" />
         <node concept="1_9egQ" id="ogNGNPXN1i" role="3XIRFZ">
           <node concept="3O_q_g" id="ogNGNPXN5T" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMv4" />
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
             <node concept="3ZVu4v" id="ogNGNPXN6U" role="3O_q_j">
-              <ref role="3ZVs_2" node="ogNGNPXMzU" />
+              <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="ogNGNPXN1r" role="3XIRFZ">
           <node concept="3O_q_g" id="ogNGNPXN5V" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMv4" />
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
             <node concept="3ZUYvv" id="ogNGNPXN6V" role="3O_q_j">
-              <ref role="3ZUYvu" node="ogNGNPXMzL" />
+              <ref role="3ZUYvu" node="ogNGNPXMzL" resolve="node" />
             </node>
           </node>
         </node>
         <node concept="3XISUE" id="ogNGNPXRoN" role="3XIRFZ" />
         <node concept="2BFjQ_" id="ogNGNPXMA4" role="3XIRFZ">
           <node concept="3ZVu4v" id="ogNGNPXN1u" role="2BFjQA">
-            <ref role="3ZVs_2" node="ogNGNPXMzU" />
+            <ref role="3ZVs_2" node="ogNGNPXMzU" resolve="new_root" />
           </node>
         </node>
       </node>
@@ -1921,7 +1921,7 @@
         <node concept="rcJHQ" id="ogNGNPXN1v" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnY" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -1940,7 +1940,7 @@
           <node concept="rcJHQ" id="ogNGNPXN1w" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMok" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -1952,7 +1952,7 @@
           <node concept="rcJHQ" id="ogNGNPXN1x" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -1965,7 +1965,7 @@
             <node concept="rcJHQ" id="ogNGNPXN1y" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -1977,7 +1977,7 @@
             <node concept="rcJHQ" id="ogNGNPXN1z" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -1989,7 +1989,7 @@
             <node concept="rcJHQ" id="ogNGNPXN1$" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -2004,19 +2004,19 @@
         <node concept="1_9egQ" id="ogNGNPXMB7" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMBe" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN1_" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMAB" />
+              <ref role="3ZVs_2" node="ogNGNPXMAB" resolve="left_subtree" />
             </node>
             <node concept="2wJmCr" id="ogNGNPXMBc" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXMBa" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN1A" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                  <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNtJ" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x5R" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
               </node>
             </node>
           </node>
@@ -2024,19 +2024,19 @@
         <node concept="1_9egQ" id="ogNGNPXMBi" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMBp" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN1C" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMAK" />
+              <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
             </node>
             <node concept="2wJmCr" id="ogNGNPXMBn" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXMBl" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN1D" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                  <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNI4" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x5V" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
               </node>
             </node>
           </node>
@@ -2045,19 +2045,19 @@
         <node concept="1_9egQ" id="ogNGNPXMBs" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMB_" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN1F" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMB2" />
+              <ref role="3ZVs_2" node="ogNGNPXMB2" resolve="diff" />
             </node>
             <node concept="2BOcil" id="ogNGNPXMB$" role="3TlMhJ">
               <node concept="3O_q_g" id="ogNGNPXN1H" role="3TlMhI">
-                <ref role="3O_q_h" node="ogNGNPXMuq" />
+                <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
                 <node concept="3ZVu4v" id="ogNGNPXN5W" role="3O_q_j">
-                  <ref role="3ZVs_2" node="ogNGNPXMAK" />
+                  <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
                 </node>
               </node>
               <node concept="3O_q_g" id="ogNGNPXN1J" role="3TlMhJ">
-                <ref role="3O_q_h" node="ogNGNPXMuq" />
+                <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
                 <node concept="3ZVu4v" id="ogNGNPXN5X" role="3O_q_j">
-                  <ref role="3ZVs_2" node="ogNGNPXMAB" />
+                  <ref role="3ZVs_2" node="ogNGNPXMAB" resolve="left_subtree" />
                 </node>
               </node>
             </node>
@@ -2067,7 +2067,7 @@
         <node concept="c0U19" id="ogNGNPXMBG" role="3XIRFZ">
           <node concept="3Tl9Jp" id="ogNGNPXMBL" role="c0U16">
             <node concept="3ZVu4v" id="ogNGNPXN1K" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMB2" />
+              <ref role="3ZVs_2" node="ogNGNPXMB2" resolve="diff" />
             </node>
             <node concept="3TlMh9" id="ogNGNPXMBK" role="3TlMhJ">
               <property role="2hmy$m" value="2" />
@@ -2077,10 +2077,10 @@
             <node concept="1_9egQ" id="ogNGNPXMBN" role="3XIRFZ">
               <node concept="3pqW6w" id="ogNGNPXMBQ" role="1_9egR">
                 <node concept="3ZVu4v" id="ogNGNPXN1L" role="3TlMhI">
-                  <ref role="3ZVs_2" node="ogNGNPXMAT" />
+                  <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
                 </node>
                 <node concept="3ZVu4v" id="ogNGNPXN1M" role="3TlMhJ">
-                  <ref role="3ZVs_2" node="ogNGNPXMAK" />
+                  <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
                 </node>
               </node>
             </node>
@@ -2088,34 +2088,34 @@
             <node concept="c0U19" id="ogNGNPXMBX" role="3XIRFZ">
               <node concept="3Tl9Jn" id="ogNGNPXMCe" role="c0U16">
                 <node concept="3O_q_g" id="ogNGNPXN1O" role="3TlMhI">
-                  <ref role="3O_q_h" node="ogNGNPXMuq" />
+                  <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
                   <node concept="2wJmCr" id="ogNGNPXMC5" role="3O_q_j">
                     <node concept="2qmXGp" id="ogNGNPXMC3" role="1_9fRO">
                       <node concept="3ZVu4v" id="ogNGNPXN5Y" role="1_9fRO">
-                        <ref role="3ZVs_2" node="ogNGNPXMAT" />
+                        <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
                       </node>
                       <node concept="1E4Tgc" id="ogNGNPXNqP" role="1ESnxz">
-                        <ref role="1E4Tge" node="ogNGNPXMnu" />
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                       </node>
                     </node>
                     <node concept="4ZOvp" id="3RK4Y9I5x5Z" role="2wJmCp">
-                      <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                      <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
                     </node>
                   </node>
                 </node>
                 <node concept="3O_q_g" id="ogNGNPXN1Q" role="3TlMhJ">
-                  <ref role="3O_q_h" node="ogNGNPXMuq" />
+                  <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
                   <node concept="2wJmCr" id="ogNGNPXMCc" role="3O_q_j">
                     <node concept="2qmXGp" id="ogNGNPXMCa" role="1_9fRO">
                       <node concept="3ZVu4v" id="ogNGNPXN60" role="1_9fRO">
-                        <ref role="3ZVs_2" node="ogNGNPXMAT" />
+                        <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
                       </node>
                       <node concept="1E4Tgc" id="ogNGNPXN8S" role="1ESnxz">
-                        <ref role="1E4Tge" node="ogNGNPXMnu" />
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                       </node>
                     </node>
                     <node concept="4ZOvp" id="3RK4Y9I5x63" role="2wJmCp">
-                      <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                      <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
                     </node>
                   </node>
                 </node>
@@ -2123,15 +2123,15 @@
               <node concept="3XIRFW" id="ogNGNPXMCf" role="c0U17">
                 <node concept="1_9egQ" id="ogNGNPXMCg" role="3XIRFZ">
                   <node concept="3O_q_g" id="ogNGNPXN1S" role="1_9egR">
-                    <ref role="3O_q_h" node="ogNGNPXMzC" />
+                    <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
                     <node concept="3ZUYvv" id="ogNGNPXN62" role="3O_q_j">
-                      <ref role="3ZUYvu" node="ogNGNPXMAt" />
+                      <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
                     </node>
                     <node concept="3ZVu4v" id="ogNGNPXN63" role="3O_q_j">
-                      <ref role="3ZVs_2" node="ogNGNPXMAK" />
+                      <ref role="3ZVs_2" node="ogNGNPXMAK" resolve="right_subtree" />
                     </node>
                     <node concept="4ZOvp" id="3RK4Y9I5x67" role="3O_q_j">
-                      <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                      <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
                     </node>
                   </node>
                 </node>
@@ -2141,18 +2141,18 @@
             <node concept="1_9egQ" id="ogNGNPXMCz" role="3XIRFZ">
               <node concept="3pqW6w" id="ogNGNPXMCE" role="1_9egR">
                 <node concept="3ZUYvv" id="ogNGNPXN1T" role="3TlMhI">
-                  <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                  <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                 </node>
                 <node concept="3O_q_g" id="ogNGNPXN1V" role="3TlMhJ">
-                  <ref role="3O_q_h" node="ogNGNPXMzC" />
+                  <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
                   <node concept="3ZUYvv" id="ogNGNPXN65" role="3O_q_j">
-                    <ref role="3ZUYvu" node="ogNGNPXMAt" />
+                    <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
                   </node>
                   <node concept="3ZUYvv" id="ogNGNPXN66" role="3O_q_j">
-                    <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                    <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                   </node>
                   <node concept="4ZOvp" id="3RK4Y9I5x6b" role="3O_q_j">
-                    <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                    <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
                   </node>
                 </node>
               </node>
@@ -2161,7 +2161,7 @@
           <node concept="gg_gk" id="ogNGNPXMCO" role="gg_kh">
             <node concept="3Tl9Jl" id="ogNGNPXMCT" role="gg_gt">
               <node concept="3ZVu4v" id="ogNGNPXN1W" role="3TlMhI">
-                <ref role="3ZVs_2" node="ogNGNPXMB2" />
+                <ref role="3ZVs_2" node="ogNGNPXMB2" resolve="diff" />
               </node>
               <node concept="1FllXc" id="ogNGNPXMCR" role="3TlMhJ">
                 <node concept="3TlMh9" id="ogNGNPXMCS" role="1_9fRO">
@@ -2173,19 +2173,19 @@
               <node concept="1_9egQ" id="ogNGNPXMCV" role="3XIRFZ">
                 <node concept="3pqW6w" id="ogNGNPXMD2" role="1_9egR">
                   <node concept="3ZVu4v" id="ogNGNPXN1X" role="3TlMhI">
-                    <ref role="3ZVs_2" node="ogNGNPXMAT" />
+                    <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
                   </node>
                   <node concept="2wJmCr" id="ogNGNPXMD0" role="3TlMhJ">
                     <node concept="2qmXGp" id="ogNGNPXMCY" role="1_9fRO">
                       <node concept="3ZUYvv" id="ogNGNPXN1Y" role="1_9fRO">
-                        <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                        <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                       </node>
                       <node concept="1E4Tgc" id="ogNGNPXNtl" role="1ESnxz">
-                        <ref role="1E4Tge" node="ogNGNPXMnu" />
+                        <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                       </node>
                     </node>
                     <node concept="4ZOvp" id="3RK4Y9I5x6f" role="2wJmCp">
-                      <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                      <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
                     </node>
                   </node>
                 </node>
@@ -2194,34 +2194,34 @@
               <node concept="c0U19" id="ogNGNPXMD9" role="3XIRFZ">
                 <node concept="3Tl9Jn" id="ogNGNPXMDq" role="c0U16">
                   <node concept="3O_q_g" id="ogNGNPXN21" role="3TlMhI">
-                    <ref role="3O_q_h" node="ogNGNPXMuq" />
+                    <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
                     <node concept="2wJmCr" id="ogNGNPXMDh" role="3O_q_j">
                       <node concept="2qmXGp" id="ogNGNPXMDf" role="1_9fRO">
                         <node concept="3ZVu4v" id="ogNGNPXN68" role="1_9fRO">
-                          <ref role="3ZVs_2" node="ogNGNPXMAT" />
+                          <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
                         </node>
                         <node concept="1E4Tgc" id="ogNGNPXNb2" role="1ESnxz">
-                          <ref role="1E4Tge" node="ogNGNPXMnu" />
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                         </node>
                       </node>
                       <node concept="4ZOvp" id="3RK4Y9I5x6j" role="2wJmCp">
-                        <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                        <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
                       </node>
                     </node>
                   </node>
                   <node concept="3O_q_g" id="ogNGNPXN23" role="3TlMhJ">
-                    <ref role="3O_q_h" node="ogNGNPXMuq" />
+                    <ref role="3O_q_h" node="ogNGNPXMuq" resolve="avl_tree_subtree_height" />
                     <node concept="2wJmCr" id="ogNGNPXMDo" role="3O_q_j">
                       <node concept="2qmXGp" id="ogNGNPXMDm" role="1_9fRO">
                         <node concept="3ZVu4v" id="ogNGNPXN6a" role="1_9fRO">
-                          <ref role="3ZVs_2" node="ogNGNPXMAT" />
+                          <ref role="3ZVs_2" node="ogNGNPXMAT" resolve="child" />
                         </node>
                         <node concept="1E4Tgc" id="ogNGNPXNiD" role="1ESnxz">
-                          <ref role="1E4Tge" node="ogNGNPXMnu" />
+                          <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                         </node>
                       </node>
                       <node concept="4ZOvp" id="3RK4Y9I5x6n" role="2wJmCp">
-                        <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                        <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
                       </node>
                     </node>
                   </node>
@@ -2229,15 +2229,15 @@
                 <node concept="3XIRFW" id="ogNGNPXMDr" role="c0U17">
                   <node concept="1_9egQ" id="ogNGNPXMDs" role="3XIRFZ">
                     <node concept="3O_q_g" id="ogNGNPXN25" role="1_9egR">
-                      <ref role="3O_q_h" node="ogNGNPXMzC" />
+                      <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
                       <node concept="3ZUYvv" id="ogNGNPXN6c" role="3O_q_j">
-                        <ref role="3ZUYvu" node="ogNGNPXMAt" />
+                        <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
                       </node>
                       <node concept="3ZVu4v" id="ogNGNPXN6d" role="3O_q_j">
-                        <ref role="3ZVs_2" node="ogNGNPXMAB" />
+                        <ref role="3ZVs_2" node="ogNGNPXMAB" resolve="left_subtree" />
                       </node>
                       <node concept="4ZOvp" id="3RK4Y9I5x6r" role="3O_q_j">
-                        <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                        <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
                       </node>
                     </node>
                   </node>
@@ -2247,18 +2247,18 @@
               <node concept="1_9egQ" id="ogNGNPXMDJ" role="3XIRFZ">
                 <node concept="3pqW6w" id="ogNGNPXMDQ" role="1_9egR">
                   <node concept="3ZUYvv" id="ogNGNPXN26" role="3TlMhI">
-                    <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                    <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                   </node>
                   <node concept="3O_q_g" id="ogNGNPXN28" role="3TlMhJ">
-                    <ref role="3O_q_h" node="ogNGNPXMzC" />
+                    <ref role="3O_q_h" node="ogNGNPXMzC" resolve="avl_tree_rotate" />
                     <node concept="3ZUYvv" id="ogNGNPXN6f" role="3O_q_j">
-                      <ref role="3ZUYvu" node="ogNGNPXMAt" />
+                      <ref role="3ZUYvu" node="ogNGNPXMAt" resolve="tree" />
                     </node>
                     <node concept="3ZUYvv" id="ogNGNPXN6g" role="3O_q_j">
-                      <ref role="3ZUYvu" node="ogNGNPXMAw" />
+                      <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
                     </node>
                     <node concept="4ZOvp" id="3RK4Y9I5x6v" role="3O_q_j">
-                      <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                      <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
                     </node>
                   </node>
                 </node>
@@ -2269,16 +2269,16 @@
         <node concept="3XISUE" id="ogNGNPXRoz" role="3XIRFZ" />
         <node concept="1_9egQ" id="ogNGNPXN2b" role="3XIRFZ">
           <node concept="3O_q_g" id="ogNGNPXN6j" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMv4" />
+            <ref role="3O_q_h" node="ogNGNPXMv4" resolve="avl_tree_update_height" />
             <node concept="3ZUYvv" id="ogNGNPXN6W" role="3O_q_j">
-              <ref role="3ZUYvu" node="ogNGNPXMAw" />
+              <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
             </node>
           </node>
         </node>
         <node concept="3XISUE" id="ogNGNPXRoM" role="3XIRFZ" />
         <node concept="2BFjQ_" id="ogNGNPXMEr" role="3XIRFZ">
           <node concept="3ZUYvv" id="ogNGNPXN2i" role="2BFjQA">
-            <ref role="3ZUYvu" node="ogNGNPXMAw" />
+            <ref role="3ZUYvu" node="ogNGNPXMAw" resolve="node" />
           </node>
         </node>
       </node>
@@ -2288,7 +2288,7 @@
         <node concept="rcJHQ" id="ogNGNPXN2j" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnY" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -2307,7 +2307,7 @@
           <node concept="rcJHQ" id="ogNGNPXN2k" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMok" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -2319,7 +2319,7 @@
           <node concept="rcJHQ" id="ogNGNPXN2l" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMnY" />
+            <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -2332,17 +2332,17 @@
             <node concept="rcJHQ" id="ogNGNPXN2m" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="ogNGNPXMF7" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMFa" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN2n" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMF1" />
+              <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
             </node>
             <node concept="3ZUYvv" id="ogNGNPXN2o" role="3TlMhJ">
-              <ref role="3ZUYvu" node="ogNGNPXMEU" />
+              <ref role="3ZUYvu" node="ogNGNPXMEU" resolve="node" />
             </node>
           </node>
         </node>
@@ -2350,7 +2350,7 @@
         <node concept="27v$Wf" id="ogNGNPXMFe" role="3XIRFZ">
           <node concept="25Bbzn" id="ogNGNPXMFj" role="27v$We">
             <node concept="3ZVu4v" id="ogNGNPXN2p" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMF1" />
+              <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN2q" role="3TlMhJ" />
           </node>
@@ -2358,15 +2358,15 @@
             <node concept="1_9egQ" id="ogNGNPXMFl" role="3XIRFZ">
               <node concept="3pqW6w" id="ogNGNPXMFr" role="1_9egR">
                 <node concept="3ZVu4v" id="ogNGNPXN2r" role="3TlMhI">
-                  <ref role="3ZVs_2" node="ogNGNPXMF1" />
+                  <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
                 </node>
                 <node concept="3O_q_g" id="ogNGNPXN2t" role="3TlMhJ">
-                  <ref role="3O_q_h" node="ogNGNPXMAn" />
+                  <ref role="3O_q_h" node="ogNGNPXMAn" resolve="avl_tree_node_balance" />
                   <node concept="3ZUYvv" id="ogNGNPXN6k" role="3O_q_j">
-                    <ref role="3ZUYvu" node="ogNGNPXMER" />
+                    <ref role="3ZUYvu" node="ogNGNPXMER" resolve="tree" />
                   </node>
                   <node concept="3ZVu4v" id="ogNGNPXN6l" role="3O_q_j">
-                    <ref role="3ZVs_2" node="ogNGNPXMF1" />
+                    <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
                   </node>
                 </node>
               </node>
@@ -2374,14 +2374,14 @@
             <node concept="1_9egQ" id="ogNGNPXMFy" role="3XIRFZ">
               <node concept="3pqW6w" id="ogNGNPXMFB" role="1_9egR">
                 <node concept="3ZVu4v" id="ogNGNPXN2u" role="3TlMhI">
-                  <ref role="3ZVs_2" node="ogNGNPXMF1" />
+                  <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
                 </node>
                 <node concept="2qmXGp" id="ogNGNPXMF_" role="3TlMhJ">
                   <node concept="3ZVu4v" id="ogNGNPXN2v" role="1_9fRO">
-                    <ref role="3ZVs_2" node="ogNGNPXMF1" />
+                    <ref role="3ZVs_2" node="ogNGNPXMF1" resolve="rover" />
                   </node>
                   <node concept="1E4Tgc" id="ogNGNPXNL$" role="1ESnxz">
-                    <ref role="1E4Tge" node="ogNGNPXMnB" />
+                    <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
                   </node>
                 </node>
               </node>
@@ -2406,7 +2406,7 @@
         <node concept="rcJHQ" id="ogNGNPXN2w" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnp" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="19RgSI" id="ogNGNPXMG8" role="1UOdpc">
@@ -2414,17 +2414,17 @@
         <node concept="rcJHQ" id="ogNGNPXN2x" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnp" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="3XIRFW" id="ogNGNPXMGa" role="3XIRFX">
         <node concept="c0U19" id="ogNGNPXMGb" role="3XIRFZ">
           <node concept="3TlM44" id="ogNGNPXMGg" role="c0U16">
             <node concept="3ZUYvv" id="ogNGNPXN2y" role="3TlMhI">
-              <ref role="3ZUYvu" node="ogNGNPXMG6" />
+              <ref role="3ZUYvu" node="ogNGNPXMG6" resolve="a" />
             </node>
             <node concept="3ZUYvv" id="ogNGNPXN2z" role="3TlMhJ">
-              <ref role="3ZUYvu" node="ogNGNPXMG8" />
+              <ref role="3ZUYvu" node="ogNGNPXMG8" resolve="b" />
             </node>
           </node>
           <node concept="3XIRFW" id="ogNGNPXMGh" role="c0U17">
@@ -2440,10 +2440,10 @@
             <node concept="2BPB98" id="ogNGNPXMGv" role="n5E$c">
               <node concept="3Tl9Jn" id="ogNGNPXMGy" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN2$" role="3TlMhI">
-                  <ref role="3ZUYvu" node="ogNGNPXMG6" />
+                  <ref role="3ZUYvu" node="ogNGNPXMG6" resolve="a" />
                 </node>
                 <node concept="3ZUYvv" id="ogNGNPXN2_" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="ogNGNPXMG8" />
+                  <ref role="3ZUYvu" node="ogNGNPXMG8" resolve="b" />
                 </node>
               </node>
             </node>
@@ -2482,7 +2482,7 @@
           <node concept="rcJHQ" id="ogNGNPXN2A" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPXMok" />
+            <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -2491,7 +2491,7 @@
         <node concept="rcJHQ" id="ogNGNPXN2B" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnp" />
+          <ref role="rcJHT" node="ogNGNPXMnp" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="3XIRFW" id="ogNGNPXMGV" role="3XIRFX">
@@ -2506,7 +2506,7 @@
               <node concept="rcJHQ" id="ogNGNPXN2C" role="2umbIo">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="rcJHT" node="ogNGNPXMnY" />
+                <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
               </node>
             </node>
           </node>
@@ -2519,7 +2519,7 @@
             <node concept="rcJHQ" id="ogNGNPXN2D" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -2531,7 +2531,7 @@
             <node concept="rcJHQ" id="ogNGNPXN2E" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPXMnY" />
+              <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
             </node>
           </node>
         </node>
@@ -2539,15 +2539,15 @@
         <node concept="1_9egQ" id="ogNGNPXMHo" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMHu" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN2F" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+              <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
             </node>
             <node concept="YInwV" id="ogNGNPXN2G" role="3TlMhJ">
               <node concept="2qmXGp" id="ogNGNPXMHs" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPXN6m" role="1_9fRO">
-                  <ref role="3ZUYvu" node="ogNGNPXMGQ" />
+                  <ref role="3ZUYvu" node="ogNGNPXMGQ" resolve="tree" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNeu" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMo2" />
+                  <ref role="1E4Tge" node="ogNGNPXMo2" resolve="root_node" />
                 </node>
               </node>
             </node>
@@ -2565,7 +2565,7 @@
         <node concept="1_9egQ" id="ogNGNPXMH_" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMHC" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN2H" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMHi" />
+              <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN2I" role="3TlMhJ" />
           </node>
@@ -2575,7 +2575,7 @@
           <node concept="25Bbzn" id="ogNGNPXMHL" role="27v$We">
             <node concept="3wxyx2" id="ogNGNPXMHI" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXN2J" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
               </node>
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN2K" role="3TlMhJ" />
@@ -2584,11 +2584,11 @@
             <node concept="1_9egQ" id="ogNGNPXMHN" role="3XIRFZ">
               <node concept="3pqW6w" id="ogNGNPXMHR" role="1_9egR">
                 <node concept="3ZVu4v" id="ogNGNPXN2L" role="3TlMhI">
-                  <ref role="3ZVs_2" node="ogNGNPXMHi" />
+                  <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
                 </node>
                 <node concept="3wxyx2" id="ogNGNPXMHP" role="3TlMhJ">
                   <node concept="3ZVu4v" id="ogNGNPXN2M" role="1_9fRO">
-                    <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                    <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
                   </node>
                 </node>
               </node>
@@ -2596,20 +2596,20 @@
             <node concept="c0U19" id="ogNGNPXMHU" role="3XIRFZ">
               <node concept="3Tl9Jn" id="ogNGNPXMI6" role="c0U16">
                 <node concept="3O_q_g" id="ogNGNPXN2O" role="3TlMhI">
-                  <ref role="3O_q_h" node="ogNGNPXMG1" />
+                  <ref role="3O_q_h" node="ogNGNPXMG1" resolve="compare_func" />
                   <node concept="3ZUYvv" id="ogNGNPXN6n" role="3O_q_j">
-                    <ref role="3ZUYvu" node="ogNGNPXMGT" />
+                    <ref role="3ZUYvu" node="ogNGNPXMGT" resolve="key" />
                   </node>
                   <node concept="2qmXGp" id="ogNGNPXMI3" role="3O_q_j">
                     <node concept="2BPB98" id="ogNGNPXMI0" role="1_9fRO">
                       <node concept="3wxyx2" id="ogNGNPXMI1" role="1_9fRO">
                         <node concept="3ZVu4v" id="ogNGNPXN6o" role="1_9fRO">
-                          <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                          <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
                         </node>
                       </node>
                     </node>
                     <node concept="1E4Tgc" id="ogNGNPXNhL" role="1ESnxz">
-                      <ref role="1E4Tge" node="ogNGNPXMnH" />
+                      <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
                     </node>
                   </node>
                 </node>
@@ -2621,7 +2621,7 @@
                 <node concept="1_9egQ" id="ogNGNPXMI8" role="3XIRFZ">
                   <node concept="3pqW6w" id="ogNGNPXMIj" role="1_9egR">
                     <node concept="3ZVu4v" id="ogNGNPXN2P" role="3TlMhI">
-                      <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                      <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
                     </node>
                     <node concept="YInwV" id="ogNGNPXN2Q" role="3TlMhJ">
                       <node concept="2BPB98" id="ogNGNPXMIb" role="1_9fRO">
@@ -2630,16 +2630,16 @@
                             <node concept="2BPB98" id="ogNGNPXMIc" role="1_9fRO">
                               <node concept="3wxyx2" id="ogNGNPXMId" role="1_9fRO">
                                 <node concept="3ZVu4v" id="ogNGNPXN6p" role="1_9fRO">
-                                  <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                                  <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
                                 </node>
                               </node>
                             </node>
                             <node concept="1E4Tgc" id="ogNGNPXNoF" role="1ESnxz">
-                              <ref role="1E4Tge" node="ogNGNPXMnu" />
+                              <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                             </node>
                           </node>
                           <node concept="4ZOvp" id="3RK4Y9I5x6z" role="2wJmCp">
-                            <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                            <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
                           </node>
                         </node>
                       </node>
@@ -2652,7 +2652,7 @@
                   <node concept="1_9egQ" id="ogNGNPXMIr" role="3XIRFZ">
                     <node concept="3pqW6w" id="ogNGNPXMIA" role="1_9egR">
                       <node concept="3ZVu4v" id="ogNGNPXN2R" role="3TlMhI">
-                        <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                        <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
                       </node>
                       <node concept="YInwV" id="ogNGNPXN2S" role="3TlMhJ">
                         <node concept="2BPB98" id="ogNGNPXMIu" role="1_9fRO">
@@ -2661,16 +2661,16 @@
                               <node concept="2BPB98" id="ogNGNPXMIv" role="1_9fRO">
                                 <node concept="3wxyx2" id="ogNGNPXMIw" role="1_9fRO">
                                   <node concept="3ZVu4v" id="ogNGNPXN6r" role="1_9fRO">
-                                    <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                                    <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
                                   </node>
                                 </node>
                               </node>
                               <node concept="1E4Tgc" id="ogNGNPXNk5" role="1ESnxz">
-                                <ref role="1E4Tge" node="ogNGNPXMnu" />
+                                <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                               </node>
                             </node>
                             <node concept="4ZOvp" id="3RK4Y9I5x6B" role="2wJmCp">
-                              <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                              <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
                             </node>
                           </node>
                         </node>
@@ -2687,7 +2687,7 @@
         <node concept="1_9egQ" id="ogNGNPXMIO" role="3XIRFZ">
           <node concept="3pqW6w" id="ogNGNPXMIZ" role="1_9egR">
             <node concept="3ZVu4v" id="ogNGNPXN2T" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMH9" />
+              <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
             </node>
             <node concept="1S8S4T" id="ogNGNPXMIX" role="3TlMhJ">
               <node concept="3wxxNl" id="ogNGNPXMIR" role="1S8S4N">
@@ -2696,16 +2696,16 @@
                 <node concept="rcJHQ" id="ogNGNPXN2U" role="2umbIo">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
-                  <ref role="rcJHT" node="ogNGNPXMnY" />
+                  <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
                 </node>
               </node>
               <node concept="3O_q_g" id="ogNGNPXN2W" role="1S8S4V">
-                <ref role="3O_q_h" node="3RK4Y9HHljd" />
+                <ref role="3O_q_h" node="3RK4Y9HHljd" resolve="malloc_node" />
                 <node concept="3wxvTy" id="ogNGNPXN6u" role="3O_q_j">
                   <node concept="rcJHQ" id="ogNGNPXN6t" role="3wxvTG">
                     <property role="2caQfQ" value="false" />
                     <property role="2c7vTL" value="false" />
-                    <ref role="rcJHT" node="ogNGNPXMnY" />
+                    <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
                   </node>
                 </node>
               </node>
@@ -2725,7 +2725,7 @@
         <node concept="c0U19" id="ogNGNPXMJ6" role="3XIRFZ">
           <node concept="3TlM44" id="ogNGNPXMJb" role="c0U16">
             <node concept="3ZVu4v" id="ogNGNPXN2X" role="3TlMhI">
-              <ref role="3ZVs_2" node="ogNGNPXMH9" />
+              <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN2Y" role="3TlMhJ" />
           </node>
@@ -2741,14 +2741,14 @@
             <node concept="2wJmCr" id="ogNGNPXMJr" role="3TlMhI">
               <node concept="2qmXGp" id="ogNGNPXMJp" role="1_9fRO">
                 <node concept="3ZVu4v" id="ogNGNPXN30" role="1_9fRO">
-                  <ref role="3ZVs_2" node="ogNGNPXMH9" />
+                  <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNv9" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x6F" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5dVu" />
+                <ref role="2DPCA0" node="3RK4Y9I5dVu" resolve="AVL_TREE_NODE_LEFT" />
               </node>
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN32" role="3TlMhJ" />
@@ -2759,14 +2759,14 @@
             <node concept="2wJmCr" id="ogNGNPXMJA" role="3TlMhI">
               <node concept="2qmXGp" id="ogNGNPXMJ$" role="1_9fRO">
                 <node concept="3ZVu4v" id="ogNGNPXN33" role="1_9fRO">
-                  <ref role="3ZVs_2" node="ogNGNPXMH9" />
+                  <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
                 </node>
                 <node concept="1E4Tgc" id="ogNGNPXNOA" role="1ESnxz">
-                  <ref role="1E4Tge" node="ogNGNPXMnu" />
+                  <ref role="1E4Tge" node="ogNGNPXMnu" resolve="children" />
                 </node>
               </node>
               <node concept="4ZOvp" id="3RK4Y9I5x6J" role="2wJmCp">
-                <ref role="2DPCA0" node="3RK4Y9I5itc" />
+                <ref role="2DPCA0" node="3RK4Y9I5itc" resolve="AVL_TREE_NODE_RIGHT" />
               </node>
             </node>
             <node concept="Ea8Gl" id="ogNGNPXN35" role="3TlMhJ" />
@@ -2776,14 +2776,14 @@
           <node concept="3pqW6w" id="ogNGNPXMJL" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXMJI" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXN36" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMH9" />
+                <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNJ0" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnB" />
+                <ref role="1E4Tge" node="ogNGNPXMnB" resolve="parent" />
               </node>
             </node>
             <node concept="3ZVu4v" id="ogNGNPXN37" role="3TlMhJ">
-              <ref role="3ZVs_2" node="ogNGNPXMHi" />
+              <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
             </node>
           </node>
         </node>
@@ -2791,14 +2791,14 @@
           <node concept="3pqW6w" id="ogNGNPXMJT" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXMJQ" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXN38" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMH9" />
+                <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNmL" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnH" />
+                <ref role="1E4Tge" node="ogNGNPXMnH" resolve="key" />
               </node>
             </node>
             <node concept="3ZUYvv" id="ogNGNPXN39" role="3TlMhJ">
-              <ref role="3ZUYvu" node="ogNGNPXMGT" />
+              <ref role="3ZUYvu" node="ogNGNPXMGT" resolve="key" />
             </node>
           </node>
         </node>
@@ -2806,10 +2806,10 @@
           <node concept="3pqW6w" id="ogNGNPXMK1" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXMJY" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXN3a" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMH9" />
+                <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNGM" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMnM" />
+                <ref role="1E4Tge" node="ogNGNPXMnM" resolve="height" />
               </node>
             </node>
             <node concept="3TlMh9" id="ogNGNPXMK0" role="3TlMhJ">
@@ -2822,11 +2822,11 @@
           <node concept="3pqW6w" id="ogNGNPXMK8" role="1_9egR">
             <node concept="3wxyx2" id="ogNGNPXMK5" role="3TlMhI">
               <node concept="3ZVu4v" id="ogNGNPXN3b" role="1_9fRO">
-                <ref role="3ZVs_2" node="ogNGNPXMGZ" />
+                <ref role="3ZVs_2" node="ogNGNPXMGZ" resolve="rover" />
               </node>
             </node>
             <node concept="3ZVu4v" id="ogNGNPXN3c" role="3TlMhJ">
-              <ref role="3ZVs_2" node="ogNGNPXMH9" />
+              <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
             </node>
           </node>
           <node concept="1z9TsT" id="ogNGNPXRoY" role="lGtFl">
@@ -2842,12 +2842,12 @@
         <node concept="3XISUE" id="ogNGNPXRpb" role="3XIRFZ" />
         <node concept="1_9egQ" id="3RK4Y9I13hR" role="3XIRFZ">
           <node concept="3O_q_g" id="3RK4Y9I13hP" role="1_9egR">
-            <ref role="3O_q_h" node="ogNGNPXMEM" />
+            <ref role="3O_q_h" node="ogNGNPXMEM" resolve="avl_tree_balance_to_root" />
             <node concept="3ZUYvv" id="3RK4Y9I13nb" role="3O_q_j">
-              <ref role="3ZUYvu" node="ogNGNPXMGQ" />
+              <ref role="3ZUYvu" node="ogNGNPXMGQ" resolve="tree" />
             </node>
             <node concept="3ZVu4v" id="3RK4Y9I13nU" role="3O_q_j">
-              <ref role="3ZVs_2" node="ogNGNPXMHi" />
+              <ref role="3ZVs_2" node="ogNGNPXMHi" resolve="previous_node" />
             </node>
           </node>
         </node>
@@ -2855,10 +2855,10 @@
           <node concept="3TM6Ez" id="ogNGNPXMKg" role="1_9egR">
             <node concept="2qmXGp" id="ogNGNPXMKi" role="1_9fRO">
               <node concept="3ZUYvv" id="ogNGNPXN3d" role="1_9fRO">
-                <ref role="3ZUYvu" node="ogNGNPXMGQ" />
+                <ref role="3ZUYvu" node="ogNGNPXMGQ" resolve="tree" />
               </node>
               <node concept="1E4Tgc" id="ogNGNPXNO8" role="1ESnxz">
-                <ref role="1E4Tge" node="ogNGNPXMo8" />
+                <ref role="1E4Tge" node="ogNGNPXMo8" resolve="num_nodes" />
               </node>
             </node>
           </node>
@@ -2875,7 +2875,7 @@
         <node concept="3XISUE" id="ogNGNPXRpt" role="3XIRFZ" />
         <node concept="2BFjQ_" id="ogNGNPXMKw" role="3XIRFZ">
           <node concept="3ZVu4v" id="ogNGNPXN3e" role="2BFjQA">
-            <ref role="3ZVs_2" node="ogNGNPXMH9" />
+            <ref role="3ZVs_2" node="ogNGNPXMH9" resolve="new_node" />
           </node>
         </node>
       </node>
@@ -2885,7 +2885,7 @@
         <node concept="rcJHQ" id="ogNGNPXN3f" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnY" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -2903,7 +2903,7 @@
       <node concept="rcJHQ" id="3RK4Y9HHl72" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="ogNGNPXMok" />
+        <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
       </node>
     </node>
     <node concept="2NXPZ9" id="3RK4Y9HHl7Y" role="N3F5h">
@@ -2916,7 +2916,7 @@
         <node concept="2BFjQ_" id="3RK4Y9HHlcN" role="3XIRFZ">
           <node concept="YInwV" id="3RK4Y9HHldx" role="2BFjQA">
             <node concept="1S7827" id="3RK4Y9HHlen" role="1_9fRO">
-              <ref role="1S7826" node="3RK4Y9HHl74" />
+              <ref role="1S7826" node="3RK4Y9HHl74" resolve="myTree" />
             </node>
           </node>
         </node>
@@ -2927,7 +2927,7 @@
         <node concept="rcJHQ" id="3RK4Y9HHl8l" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMok" />
+          <ref role="rcJHT" node="ogNGNPXMok" resolve="AVLTree" />
         </node>
       </node>
       <node concept="19RgSI" id="3RK4Y9HHlbf" role="1UOdpc">
@@ -2949,7 +2949,7 @@
         <node concept="rcJHQ" id="3RK4Y9HHl_y" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnY" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
         </node>
         <node concept="3TlMh9" id="3RK4Y9HHlER" role="1YbSNA">
           <property role="2hmy$m" value="10" />
@@ -2978,11 +2978,11 @@
             <node concept="2wJmCr" id="3RK4Y9HHmj2" role="1_9fRO">
               <node concept="3TM6Ey" id="3RK4Y9HHmrZ" role="2wJmCp">
                 <node concept="1S7827" id="3RK4Y9HHmme" role="1_9fRO">
-                  <ref role="1S7826" node="3RK4Y9HHlsK" />
+                  <ref role="1S7826" node="3RK4Y9HHlsK" resolve="cnt" />
                 </node>
               </node>
               <node concept="1S7827" id="3RK4Y9HHmaz" role="1_9fRO">
-                <ref role="1S7826" node="3RK4Y9HHl_$" />
+                <ref role="1S7826" node="3RK4Y9HHl_$" resolve="myNodes" />
               </node>
             </node>
           </node>
@@ -2994,7 +2994,7 @@
         <node concept="rcJHQ" id="3RK4Y9HHlmm" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPXMnY" />
+          <ref role="rcJHT" node="ogNGNPXMnY" resolve="AVLTreeNode" />
         </node>
       </node>
       <node concept="19RgSI" id="3RK4Y9HHljk" role="1UOdpc">
@@ -3010,7 +3010,7 @@
     </node>
     <node concept="3GEVxB" id="3RK4Y9HHl6Y" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="3RK4Y9HHmDd" />
+      <ref role="3GEb4d" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
     </node>
   </node>
   <node concept="N3F5e" id="ogNGNPpGEb">
@@ -3059,13 +3059,13 @@
             <node concept="rcJHQ" id="ogNGNPqDXq" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPqAip" />
+              <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
             </node>
           </node>
           <node concept="3O_q_g" id="ogNGNPqDZw" role="3XIe9u">
-            <ref role="3O_q_h" node="ogNGNPqAje" />
+            <ref role="3O_q_h" node="ogNGNPqAje" resolve="avl_tree_new" />
             <node concept="pF0ck" id="ogNGNPqFWA" role="3O_q_j">
-              <ref role="pF0ci" node="ogNGNPqE4y" />
+              <ref role="pF0ci" node="ogNGNPqE4y" resolve="compare" />
             </node>
           </node>
         </node>
@@ -3087,10 +3087,10 @@
                 <property role="2xg5V6" value="true" />
                 <node concept="2wJmCr" id="ogNGNPqQyV" role="2c3wGY">
                   <node concept="1f68ZN" id="ogNGNPqQGR" role="2wJmCp">
-                    <ref role="1f68ZM" node="ogNGNPqNrQ" />
+                    <ref role="1f68ZM" node="ogNGNPqNrQ" resolve="i" />
                   </node>
                   <node concept="1S7827" id="ogNGNPqQmZ" role="1_9fRO">
-                    <ref role="1S7826" node="ogNGNPqPUk" />
+                    <ref role="1S7826" node="ogNGNPqPUk" resolve="insertedKeys" />
                   </node>
                 </node>
                 <node concept="1vVjFF" id="ogNGNPqNEw" role="2c3wGU">
@@ -3105,30 +3105,30 @@
                   </node>
                   <node concept="2wJmCr" id="ogNGNPqQJA" role="3TlMhI">
                     <node concept="1f68ZN" id="ogNGNPqQJB" role="2wJmCp">
-                      <ref role="1f68ZM" node="ogNGNPqNrQ" />
+                      <ref role="1f68ZM" node="ogNGNPqNrQ" resolve="i" />
                     </node>
                     <node concept="1S7827" id="ogNGNPqQJC" role="1_9fRO">
-                      <ref role="1S7826" node="ogNGNPqPUk" />
+                      <ref role="1S7826" node="ogNGNPqPUk" resolve="insertedKeys" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="1_9egQ" id="ogNGNPqNw8" role="3XIRFZ">
                 <node concept="3O_q_g" id="ogNGNPqNw7" role="1_9egR">
-                  <ref role="3O_q_h" node="ogNGNPqAju" />
+                  <ref role="3O_q_h" node="ogNGNPqAju" resolve="avl_tree_insert" />
                   <node concept="3ZVu4v" id="ogNGNPqNwx" role="3O_q_j">
-                    <ref role="3ZVs_2" node="ogNGNPqDXs" />
+                    <ref role="3ZVs_2" node="ogNGNPqDXs" resolve="myTree" />
                   </node>
                   <node concept="2wJmCr" id="ogNGNPqQWz" role="3O_q_j">
                     <node concept="1f68ZN" id="ogNGNPqQW$" role="2wJmCp">
-                      <ref role="1f68ZM" node="ogNGNPqNrQ" />
+                      <ref role="1f68ZM" node="ogNGNPqNrQ" resolve="i" />
                     </node>
                     <node concept="1S7827" id="ogNGNPqQW_" role="1_9fRO">
-                      <ref role="1S7826" node="ogNGNPqPUk" />
+                      <ref role="1S7826" node="ogNGNPqPUk" resolve="insertedKeys" />
                     </node>
                   </node>
                   <node concept="1S7827" id="ogNGNP_yeT" role="3O_q_j">
-                    <ref role="1S7826" node="ogNGNP_xCv" />
+                    <ref role="1S7826" node="ogNGNP_xCv" resolve="insertedValues" />
                   </node>
                 </node>
               </node>
@@ -3147,9 +3147,9 @@
                   <node concept="3XIRlf" id="ogNGNPqRW9" role="3XIRFZ">
                     <property role="TrG5h" value="root" />
                     <node concept="3O_q_g" id="ogNGNPqS06" role="3XIe9u">
-                      <ref role="3O_q_h" node="ogNGNPqAkl" />
+                      <ref role="3O_q_h" node="ogNGNPqAkl" resolve="avl_tree_root_node" />
                       <node concept="3ZVu4v" id="ogNGNPqS07" role="3O_q_j">
-                        <ref role="3ZVs_2" node="ogNGNPqDXs" />
+                        <ref role="3ZVs_2" node="ogNGNPqDXs" resolve="myTree" />
                       </node>
                     </node>
                     <node concept="3wxxNl" id="ogNGNPqS04" role="2C2TGm">
@@ -3158,7 +3158,7 @@
                       <node concept="rcJHQ" id="ogNGNPvgPF" role="2umbIo">
                         <property role="2caQfQ" value="false" />
                         <property role="2c7vTL" value="false" />
-                        <ref role="rcJHT" node="ogNGNPqAiP" />
+                        <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
                       </node>
                     </node>
                   </node>
@@ -3170,7 +3170,7 @@
                       <node concept="rcJHQ" id="ogNGNPvgQy" role="2umbIo">
                         <property role="2caQfQ" value="false" />
                         <property role="2c7vTL" value="false" />
-                        <ref role="rcJHT" node="ogNGNPqAiP" />
+                        <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
                       </node>
                     </node>
                     <node concept="2wJmCr" id="ogNGNPu$JU" role="3XIe9u">
@@ -3179,10 +3179,10 @@
                       </node>
                       <node concept="2qmXGp" id="ogNGNPu$JW" role="1_9fRO">
                         <node concept="1E4Tgc" id="ogNGNPu$JX" role="1ESnxz">
-                          <ref role="1E4Tge" node="ogNGNPqDl$" />
+                          <ref role="1E4Tge" node="ogNGNPqDl$" resolve="children" />
                         </node>
                         <node concept="3ZVu4v" id="ogNGNPu$JY" role="1_9fRO">
-                          <ref role="3ZVs_2" node="ogNGNPqRW9" />
+                          <ref role="3ZVs_2" node="ogNGNPqRW9" resolve="root" />
                         </node>
                       </node>
                     </node>
@@ -3194,9 +3194,9 @@
                       <property role="2c7vTL" value="false" />
                     </node>
                     <node concept="3O_q_g" id="3RK4Y9I4o5E" role="3XIe9u">
-                      <ref role="3O_q_h" node="ogNGNPqAl2" />
+                      <ref role="3O_q_h" node="ogNGNPqAl2" resolve="avl_tree_subtree_height" />
                       <node concept="3ZVu4v" id="3RK4Y9I4o5I" role="3O_q_j">
-                        <ref role="3ZVs_2" node="ogNGNPu$AL" />
+                        <ref role="3ZVs_2" node="ogNGNPu$AL" resolve="leftSubTree" />
                       </node>
                     </node>
                   </node>
@@ -3208,7 +3208,7 @@
                       <node concept="rcJHQ" id="ogNGNPvgRp" role="2umbIo">
                         <property role="2caQfQ" value="false" />
                         <property role="2c7vTL" value="false" />
-                        <ref role="rcJHT" node="ogNGNPqAiP" />
+                        <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
                       </node>
                     </node>
                     <node concept="2wJmCr" id="ogNGNPu_6a" role="3XIe9u">
@@ -3217,10 +3217,10 @@
                       </node>
                       <node concept="2qmXGp" id="ogNGNPu_6c" role="1_9fRO">
                         <node concept="1E4Tgc" id="ogNGNPu_6d" role="1ESnxz">
-                          <ref role="1E4Tge" node="ogNGNPqDl$" />
+                          <ref role="1E4Tge" node="ogNGNPqDl$" resolve="children" />
                         </node>
                         <node concept="3ZVu4v" id="ogNGNPu_6e" role="1_9fRO">
-                          <ref role="3ZVs_2" node="ogNGNPqRW9" />
+                          <ref role="3ZVs_2" node="ogNGNPqRW9" resolve="root" />
                         </node>
                       </node>
                     </node>
@@ -3228,9 +3228,9 @@
                   <node concept="3XIRlf" id="ogNGNPqVnv" role="3XIRFZ">
                     <property role="TrG5h" value="rightHight" />
                     <node concept="3O_q_g" id="ogNGNPqVnx" role="3XIe9u">
-                      <ref role="3O_q_h" node="ogNGNPqAl2" />
+                      <ref role="3O_q_h" node="ogNGNPqAl2" resolve="avl_tree_subtree_height" />
                       <node concept="3ZVu4v" id="ogNGNPu_6g" role="3O_q_j">
-                        <ref role="3ZVs_2" node="ogNGNPu$X1" />
+                        <ref role="3ZVs_2" node="ogNGNPu$X1" resolve="rightSubTree" />
                       </node>
                     </node>
                     <node concept="26Vqph" id="ogNGNPqVnw" role="2C2TGm">
@@ -3246,10 +3246,10 @@
                       <node concept="2zI4tQ" id="ogNGNPr0XR" role="3TlMhI">
                         <node concept="2BOcil" id="ogNGNPqYMx" role="2zI4uq">
                           <node concept="3ZVu4v" id="ogNGNPqWra" role="3TlMhI">
-                            <ref role="3ZVs_2" node="3RK4Y9I4o5C" />
+                            <ref role="3ZVs_2" node="3RK4Y9I4o5C" resolve="leftHight" />
                           </node>
                           <node concept="3ZVu4v" id="ogNGNPqWSU" role="3TlMhJ">
-                            <ref role="3ZVs_2" node="ogNGNPqVnv" />
+                            <ref role="3ZVs_2" node="ogNGNPqVnv" resolve="rightHight" />
                           </node>
                         </node>
                       </node>
@@ -3261,7 +3261,7 @@
                     <property role="2hmy$m" value="3" />
                   </node>
                   <node concept="1f68ZN" id="ogNGNPqRzQ" role="3TlMhI">
-                    <ref role="1f68ZM" node="ogNGNPqNrQ" />
+                    <ref role="1f68ZM" node="ogNGNPqNrQ" resolve="i" />
                   </node>
                 </node>
               </node>
@@ -3293,7 +3293,7 @@
             <node concept="3wxyx2" id="ogNGNPL8I2" role="3TlMhI">
               <node concept="1S8S4T" id="ogNGNPL8Cl" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPIqhB" role="1S8S4V">
-                  <ref role="3ZUYvu" node="ogNGNPqE58" />
+                  <ref role="3ZUYvu" node="ogNGNPqE58" resolve="a" />
                 </node>
                 <node concept="3wxxNl" id="ogNGNPL8E7" role="1S8S4N">
                   <property role="2caQfQ" value="false" />
@@ -3308,7 +3308,7 @@
             <node concept="3wxyx2" id="ogNGNPL8Sy" role="3TlMhJ">
               <node concept="1S8S4T" id="ogNGNPL8Sz" role="1_9fRO">
                 <node concept="3ZUYvv" id="ogNGNPL8Up" role="1S8S4V">
-                  <ref role="3ZUYvu" node="ogNGNPqE5K" />
+                  <ref role="3ZUYvu" node="ogNGNPqE5K" resolve="b" />
                 </node>
                 <node concept="3wxxNl" id="ogNGNPL8S_" role="1S8S4N">
                   <property role="2caQfQ" value="false" />
@@ -3335,7 +3335,7 @@
                 <node concept="3wxyx2" id="ogNGNPL8W2" role="3TlMhJ">
                   <node concept="1S8S4T" id="ogNGNPL8W3" role="1_9fRO">
                     <node concept="3ZUYvv" id="ogNGNPL8Yk" role="1S8S4V">
-                      <ref role="3ZUYvu" node="ogNGNPqE5K" />
+                      <ref role="3ZUYvu" node="ogNGNPqE5K" resolve="b" />
                     </node>
                     <node concept="3wxxNl" id="ogNGNPL8W5" role="1S8S4N">
                       <property role="2caQfQ" value="false" />
@@ -3350,7 +3350,7 @@
                 <node concept="3wxyx2" id="ogNGNPL90r" role="3TlMhI">
                   <node concept="1S8S4T" id="ogNGNPL90s" role="1_9fRO">
                     <node concept="3ZUYvv" id="ogNGNPL90t" role="1S8S4V">
-                      <ref role="3ZUYvu" node="ogNGNPqE58" />
+                      <ref role="3ZUYvu" node="ogNGNPqE58" resolve="a" />
                     </node>
                     <node concept="3wxxNl" id="ogNGNPL90u" role="1S8S4N">
                       <property role="2caQfQ" value="false" />
@@ -3376,7 +3376,7 @@
         <node concept="rcJHQ" id="ogNGNP_wrE" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="19RgSI" id="ogNGNPqE5K" role="1UOdpc">
@@ -3384,15 +3384,15 @@
         <node concept="rcJHQ" id="ogNGNP_wse" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
     </node>
     <node concept="3GEVxB" id="ogNGNPqDXn" role="2OODSX">
-      <ref role="3GEb4d" node="ogNGNPpGFR" />
+      <ref role="3GEb4d" node="ogNGNPpGFR" resolve="_081_avl_tree" />
     </node>
     <node concept="3GEVxB" id="ogNGNPqZT3" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1bbwi" resolve="math" />
     </node>
   </node>
   <node concept="rcWEw" id="ogNGNPpGFR">
@@ -3406,7 +3406,7 @@
       <node concept="1sgJKr" id="ogNGNPqDTU" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="ogNGNPqDlW" />
+        <ref role="1sgJKq" node="ogNGNPqDlW" resolve="_AVLTree" />
       </node>
     </node>
     <node concept="rcJHK" id="ogNGNPqAiv" role="N3F5h">
@@ -3450,7 +3450,7 @@
       <node concept="1sgJKr" id="ogNGNPqDLu" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="ogNGNPqDlx" />
+        <ref role="1sgJKq" node="ogNGNPqDlx" resolve="_AVLTreeNode" />
       </node>
     </node>
     <node concept="2NXPZ9" id="ogNGNPqBxe" role="N3F5h">
@@ -3481,7 +3481,7 @@
       <node concept="1AkAi2" id="ogNGNPqAiV" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1AkAi1" node="ogNGNPqAiQ" />
+        <ref role="1AkAi1" node="ogNGNPqAiQ" resolve="a_AVLTreeNodeSide" />
       </node>
     </node>
     <node concept="2NXPZ9" id="ogNGNPqBNJ" role="N3F5h">
@@ -3500,12 +3500,12 @@
         <node concept="rcJHQ" id="ogNGNP_wkO" role="pFrBa">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
         <node concept="rcJHQ" id="ogNGNP_wof" role="pFrBa">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
     </node>
@@ -3521,7 +3521,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlr" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAjb" />
+          <ref role="rcJHT" node="ogNGNPqAjb" resolve="AVLTreeCompareFunc" />
         </node>
       </node>
       <node concept="3wxxNl" id="ogNGNPqAjf" role="2C2TGm">
@@ -3530,7 +3530,7 @@
         <node concept="rcJHQ" id="ogNGNPqAls" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAip" />
+          <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
         </node>
       </node>
     </node>
@@ -3546,7 +3546,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlt" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3567,7 +3567,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlu" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3576,7 +3576,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlv" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="19RgSI" id="ogNGNPqAj_" role="1UOdpc">
@@ -3584,7 +3584,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlw" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAi_" />
+          <ref role="rcJHT" node="ogNGNPqAi_" resolve="AVLTreeValue" />
         </node>
       </node>
       <node concept="3wxxNl" id="ogNGNPqAjv" role="2C2TGm">
@@ -3593,7 +3593,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlx" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiP" />
+          <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -3609,7 +3609,7 @@
           <node concept="rcJHQ" id="ogNGNPqAly" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3621,7 +3621,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlz" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -3642,7 +3642,7 @@
           <node concept="rcJHQ" id="ogNGNPqAl$" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3651,7 +3651,7 @@
         <node concept="rcJHQ" id="ogNGNPqAl_" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="26Vqph" id="ogNGNPqAjP" role="2C2TGm">
@@ -3671,7 +3671,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlA" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3680,7 +3680,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlB" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="3wxxNl" id="ogNGNPqAk1" role="2C2TGm">
@@ -3689,7 +3689,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlC" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiP" />
+          <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -3705,7 +3705,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlD" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3714,13 +3714,13 @@
         <node concept="rcJHQ" id="ogNGNPqAlE" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="rcJHQ" id="ogNGNPqAlF" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="ogNGNPqAi_" />
+        <ref role="rcJHT" node="ogNGNPqAi_" resolve="AVLTreeValue" />
       </node>
     </node>
     <node concept="N3Fnw" id="ogNGNPqAkl" role="N3F5h">
@@ -3735,7 +3735,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlG" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3745,7 +3745,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlH" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiP" />
+          <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -3761,14 +3761,14 @@
           <node concept="rcJHQ" id="ogNGNPqAlI" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
       <node concept="rcJHQ" id="ogNGNPqAlJ" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="ogNGNPqAiv" />
+        <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
       </node>
     </node>
     <node concept="N3Fnw" id="ogNGNPqAkA" role="N3F5h">
@@ -3783,14 +3783,14 @@
           <node concept="rcJHQ" id="ogNGNPqAlK" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
       <node concept="rcJHQ" id="ogNGNPqAlL" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="ogNGNPqAi_" />
+        <ref role="rcJHT" node="ogNGNPqAi_" resolve="AVLTreeValue" />
       </node>
     </node>
     <node concept="N3Fnw" id="ogNGNPqAkI" role="N3F5h">
@@ -3805,7 +3805,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlM" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -3814,7 +3814,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlN" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAj1" />
+          <ref role="rcJHT" node="ogNGNPqAj1" resolve="AVLTreeNodeSide" />
         </node>
       </node>
       <node concept="3wxxNl" id="ogNGNPqAkJ" role="2C2TGm">
@@ -3823,7 +3823,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlO" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiP" />
+          <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -3839,7 +3839,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlP" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -3849,7 +3849,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlQ" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiP" />
+          <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
         </node>
       </node>
     </node>
@@ -3865,7 +3865,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlR" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -3886,7 +3886,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlS" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3896,7 +3896,7 @@
         <node concept="rcJHQ" id="ogNGNPqAlT" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAi_" />
+          <ref role="rcJHT" node="ogNGNPqAi_" resolve="AVLTreeValue" />
         </node>
       </node>
     </node>
@@ -3912,7 +3912,7 @@
           <node concept="rcJHQ" id="ogNGNPqAlU" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAip" />
+            <ref role="rcJHT" node="ogNGNPqAip" resolve="AVLTree" />
           </node>
         </node>
       </node>
@@ -3937,7 +3937,7 @@
             <node concept="rcJHQ" id="ogNGNPqDmc" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="ogNGNPqAiP" />
+              <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
             </node>
           </node>
           <node concept="3TlMh9" id="ogNGNPqDlB" role="1YbSNA">
@@ -3953,7 +3953,7 @@
           <node concept="rcJHQ" id="ogNGNPqDmd" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -3962,7 +3962,7 @@
         <node concept="rcJHQ" id="ogNGNPqDme" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAiv" />
+          <ref role="rcJHT" node="ogNGNPqAiv" resolve="AVLTreeKey" />
         </node>
       </node>
       <node concept="1dpRTG" id="ogNGNPqDlO" role="HszBJ">
@@ -3970,7 +3970,7 @@
         <node concept="rcJHQ" id="ogNGNPqDmf" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAi_" />
+          <ref role="rcJHT" node="ogNGNPqAi_" resolve="AVLTreeValue" />
         </node>
       </node>
       <node concept="1dpRTG" id="ogNGNPqDlS" role="HszBJ">
@@ -3994,7 +3994,7 @@
           <node concept="rcJHQ" id="ogNGNPqDmg" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="ogNGNPqAiP" />
+            <ref role="rcJHT" node="ogNGNPqAiP" resolve="AVLTreeNode" />
           </node>
         </node>
       </node>
@@ -4003,7 +4003,7 @@
         <node concept="rcJHQ" id="ogNGNPqDmh" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="ogNGNPqAjb" />
+          <ref role="rcJHT" node="ogNGNPqAjb" resolve="AVLTreeCompareFunc" />
         </node>
       </node>
       <node concept="1dpRTG" id="ogNGNPqDm8" role="HszBJ">
@@ -4031,10 +4031,10 @@
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="ac" />
     <node concept="3GEVxB" id="3RK4Y9HGmm5" role="3W6d8T">
-      <ref role="3GEb4d" node="3RK4Y9HGgt7" />
+      <ref role="3GEb4d" node="3RK4Y9HGgt7" resolve="_080_avl_harness" />
     </node>
     <node concept="3GEVxB" id="ogNGNPr4oY" role="3W6d8T">
-      <ref role="3GEb4d" node="ogNGNPpGEb" />
+      <ref role="3GEb4d" node="ogNGNPpGEb" resolve="_081_avl_external_c_code_harness" />
     </node>
     <node concept="1nvAUJ" id="3RK4Y9HGmwr" role="3V$2$K">
       <property role="2lelRm" value="true" />
@@ -4049,7 +4049,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2lUHrg" value="5" />
-      <ref role="3V$Cn$" node="3RK4Y9HGgtn" />
+      <ref role="3V$Cn$" node="3RK4Y9HGgtn" resolve="_080_avlVerificationCase" />
     </node>
     <node concept="1nvAUJ" id="3RK4Y9IaXzL" role="3V$2$K">
       <property role="2lelRm" value="true" />
@@ -4065,7 +4065,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="true" />
-      <ref role="3V$Cn$" node="3RK4Y9I9UF7" />
+      <ref role="3V$Cn$" node="3RK4Y9I9UF7" resolve="_080_avlRotate" />
     </node>
     <node concept="1nvAUJ" id="7Syd$1MeYl$" role="3V$2$K">
       <property role="2lelRm" value="true" />
@@ -4081,7 +4081,7 @@
       <property role="2lUGbD" value="none" />
       <property role="2lUGcN" value="false" />
       <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="ogNGNPpGEU" />
+      <ref role="3V$Cn$" node="ogNGNPpGEU" resolve="_081_avlVerificationCase" />
       <node concept="3NXOOs" id="7zMit0CeQE7" role="1Byen_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
@@ -4107,28 +4107,28 @@
     <node concept="29Nb31" id="7Syd$1MeUlc" role="2ePNbc">
       <property role="TrG5h" value="lib" />
       <node concept="2v9HqM" id="ogNGNPr4pi" role="2eOfOg">
-        <ref role="2v9HqP" node="ogNGNPpGEb" />
+        <ref role="2v9HqP" node="ogNGNPpGEb" resolve="_081_avl_external_c_code_harness" />
       </node>
       <node concept="2v9HqM" id="ogNGNPr4q5" role="2eOfOg">
-        <ref role="2v9HqP" node="ogNGNPpGFR" />
+        <ref role="2v9HqP" node="ogNGNPpGFR" resolve="_081_avl_tree" />
       </node>
       <node concept="2v9HqM" id="3RK4Y9HGmqp" role="2eOfOg">
-        <ref role="2v9HqP" node="ogNGNPXMnh" />
+        <ref role="2v9HqP" node="ogNGNPXMnh" resolve="_080_avl_tree" />
       </node>
       <node concept="2v9HqM" id="3RK4Y9HGmm_" role="2eOfOg">
-        <ref role="2v9HqP" node="3RK4Y9HGgt7" />
+        <ref role="2v9HqP" node="3RK4Y9HGgt7" resolve="_080_avl_harness" />
       </node>
       <node concept="2v9HqM" id="3RK4Y9HHsJ1" role="2eOfOg">
-        <ref role="2v9HqP" node="3RK4Y9HHl6T" />
+        <ref role="2v9HqP" node="3RK4Y9HHl6T" resolve="_080_malloc_stubs" />
       </node>
       <node concept="2v9HqM" id="3RK4Y9HHsJ2" role="2eOfOg">
-        <ref role="2v9HqP" node="3RK4Y9HHmDd" />
+        <ref role="2v9HqP" node="3RK4Y9HHmDd" resolve="_080_avl_base" />
       </node>
       <node concept="2v9HqM" id="1SbcsMAp7uG" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1bbwi" resolve="math" />
       </node>
       <node concept="2v9HqM" id="1SbcsMAp7uH" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1b1j1" resolve="stdlib" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyheL" role="1kZvWc">
         <property role="TrG5h" value="any" />

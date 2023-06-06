@@ -44,7 +44,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -242,7 +242,7 @@
       <node concept="3clFbS" id="1icp8P5eKgu" role="3clF47" />
       <node concept="3sdZbQ" id="1icp8P5eKgv" role="3scror">
         <node concept="3sdZbA" id="1icp8P5eKhg" role="3sdZbB">
-          <ref role="3sa5fj" to="6ea2:1icp8P5eKgc" />
+          <ref role="3sa5fj" to="6ea2:1icp8P5eKgc" resolve="calling1stRunnable" />
         </node>
       </node>
       <node concept="3savIG" id="1icp8P5eKgx" role="3savwP">
@@ -254,7 +254,7 @@
         <node concept="30a7bf" id="1icp8P5eKhd" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAG6h" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="6ea2:1icp8P5eKgb" />
+            <ref role="3cQ7K8" to="6ea2:1icp8P5eKgb" resolve="1stCalledRunnable" />
           </node>
         </node>
         <node concept="1l46Ie" id="1icp8P5eKhi" role="3F5Y$9">
@@ -275,11 +275,11 @@
             <property role="TrG5h" value="helloWorldB" />
           </node>
           <node concept="1vv375" id="1icp8P5eKhj" role="1vv36M">
-            <ref role="1vv99g" node="1icp8P5eKgA" />
+            <ref role="1vv99g" node="1icp8P5eKgA" resolve="globalWatchables" />
           </node>
         </node>
         <node concept="1vtf2i" id="1icp8P5fjjo" role="3F5Y$9">
-          <ref role="1vtf2j" node="1icp8P5fjj9" />
+          <ref role="1vtf2j" node="1icp8P5fjj9" resolve="inside1stCalledRunnable" />
         </node>
       </node>
     </node>
@@ -290,7 +290,7 @@
       <node concept="3clFbS" id="1icp8P5eKhz" role="3clF47" />
       <node concept="3sdZbQ" id="1icp8P5eKh$" role="3scror">
         <node concept="3sdZbA" id="1icp8P5eKhA" role="3sdZbB">
-          <ref role="3sa5fj" to="6ea2:1icp8P5eKgb" />
+          <ref role="3sa5fj" to="6ea2:1icp8P5eKgb" resolve="1stCalledRunnable" />
         </node>
       </node>
       <node concept="3savIG" id="1icp8P5eKhB" role="3savwP">
@@ -302,18 +302,18 @@
         <node concept="30a7bf" id="1icp8P5eKhE" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAG6n" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="6ea2:1icp8P5eKga" />
+            <ref role="3cQ7K8" to="6ea2:1icp8P5eKga" resolve="calledRunnable" />
           </node>
         </node>
         <node concept="1vtf2i" id="1icp8P5fjjp" role="3F5Y$9">
-          <ref role="1vtf2j" node="1icp8P5fjj2" />
+          <ref role="1vtf2j" node="1icp8P5fjj2" resolve="inside2ndCalledRunnable" />
         </node>
         <node concept="1l46Ie" id="1icp8P5eKhL" role="3F5Y$9">
           <node concept="1IjokO" id="1icp8P5f9UO" role="1l4ezG">
             <property role="TrG5h" value="dummyVar" />
           </node>
           <node concept="1vv375" id="1icp8P5eKhQ" role="1vv36M">
-            <ref role="1vv99g" node="1icp8P5eKgA" />
+            <ref role="1vv99g" node="1icp8P5eKgA" resolve="globalWatchables" />
           </node>
         </node>
       </node>
@@ -325,7 +325,7 @@
       <node concept="3clFbS" id="1icp8P5fjiK" role="3clF47" />
       <node concept="3sdZbQ" id="1icp8P5fjiL" role="3scror">
         <node concept="3sdZbA" id="1icp8P5fjiM" role="3sdZbB">
-          <ref role="3sa5fj" to="6ea2:1icp8P5fhRc" />
+          <ref role="3sa5fj" to="6ea2:1icp8P5fhRc" resolve="2ndCalledRunnable" />
         </node>
       </node>
       <node concept="3savIG" id="1icp8P5fjiN" role="3savwP">
@@ -337,15 +337,15 @@
         <node concept="30a7bf" id="1icp8P5fjiQ" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAG6l" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="6ea2:1icp8P5eKgg" />
+            <ref role="3cQ7K8" to="6ea2:1icp8P5eKgg" resolve="stmntAfterRunnableCall" />
           </node>
         </node>
         <node concept="1vtf2i" id="1icp8P5fjjq" role="3F5Y$9">
-          <ref role="1vtf2j" node="1icp8P5fjjh" />
+          <ref role="1vtf2j" node="1icp8P5fjjh" resolve="insideTestcase" />
         </node>
         <node concept="1l46Ie" id="1icp8P5fjiX" role="3F5Y$9">
           <node concept="1vv375" id="1icp8P5fjiZ" role="1vv36M">
-            <ref role="1vv99g" node="1icp8P5eKgA" />
+            <ref role="1vv99g" node="1icp8P5eKgA" resolve="globalWatchables" />
           </node>
           <node concept="1IjokO" id="6ExsrkzFWho" role="1l4ezG">
             <property role="TrG5h" value="dummy" />
@@ -360,7 +360,7 @@
       <node concept="3clFbS" id="1icp8P5eQor" role="3clF47" />
       <node concept="3sdZbQ" id="1icp8P5eQos" role="3scror">
         <node concept="3sdZbA" id="1icp8P5fjjw" role="3sdZbB">
-          <ref role="3sa5fj" to="6ea2:1icp8P5eKgb" />
+          <ref role="3sa5fj" to="6ea2:1icp8P5eKgb" resolve="1stCalledRunnable" />
         </node>
       </node>
       <node concept="3savIG" id="1icp8P5eQou" role="3savwP">
@@ -372,27 +372,27 @@
         <node concept="30a7bf" id="1icp8P5eQox" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAG6j" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="6ea2:1icp8P5eKgg" />
+            <ref role="3cQ7K8" to="6ea2:1icp8P5eKgg" resolve="stmntAfterRunnableCall" />
           </node>
         </node>
         <node concept="1vtf2i" id="1icp8P5fjjm" role="3F5Y$9">
-          <ref role="1vtf2j" node="1icp8P5fjjh" />
+          <ref role="1vtf2j" node="1icp8P5fjjh" resolve="insideTestcase" />
         </node>
         <node concept="1l46Ie" id="1icp8P5eQoB" role="3F5Y$9">
           <node concept="1IjokO" id="1icp8P5eWSS" role="1l4ezG">
             <property role="TrG5h" value="dummy" />
           </node>
           <node concept="1vv375" id="1icp8P5eQoC" role="1vv36M">
-            <ref role="1vv99g" node="1icp8P5eKgA" />
+            <ref role="1vv99g" node="1icp8P5eKgA" resolve="globalWatchables" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="1icp8P5eKgr" role="3qy1PE">
-      <ref role="30ajXG" to="6ea2:3yeYUb92Gng" />
+      <ref role="30ajXG" to="6ea2:3yeYUb92Gng" resolve="AtomicComponentsTest" />
     </node>
     <node concept="1rNadw" id="3lUAsMPdeM0" role="1zJi$_">
-      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" />
+      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" resolve="Main" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

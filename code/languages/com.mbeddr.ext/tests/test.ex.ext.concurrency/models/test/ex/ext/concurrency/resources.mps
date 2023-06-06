@@ -213,7 +213,7 @@
             </node>
           </node>
           <node concept="1uQ2qR" id="6u_410TF83p" role="3JU$Ix">
-            <ref role="1uQ2qS" node="6u_410TF5TT" />
+            <ref role="1uQ2qS" node="6u_410TF5TT" resolve="SerialLine" />
           </node>
         </node>
         <node concept="c0U19" id="6u_410TJPKT" role="3XIRFZ">
@@ -240,7 +240,7 @@
       <property role="TrG5h" value="sched" />
       <node concept="1NgRL0" id="6u_410TF4i_" role="6qQK8">
         <property role="3_dPry" value="1" />
-        <ref role="6qQL_" node="6u_410TF4i2" />
+        <ref role="6qQL_" node="6u_410TF4i2" resolve="measure" />
         <node concept="6VUUj" id="6u_410TF4iA" role="6EqoZ">
           <node concept="3TlMh9" id="6u_410TF4iB" role="6VY68">
             <property role="2hmy$m" value="100" />
@@ -261,7 +261,7 @@
       <node concept="3XIRFW" id="6u_410TF4iF" role="c0Qz3">
         <node concept="6qOI8" id="6u_410TF4iG" role="3XIRFZ">
           <property role="1Onm7i" value="false" />
-          <ref role="6qOXx" node="6u_410TF4i$" />
+          <ref role="6qOXx" node="6u_410TF4i$" resolve="sched" />
         </node>
       </node>
     </node>
@@ -273,7 +273,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAJgc" role="lIfQt">
-        <ref role="3cM6IK" node="6u_410TF4iD" />
+        <ref role="3cM6IK" node="6u_410TF4iD" resolve="testResourceAccess" />
       </node>
     </node>
   </node>
@@ -292,7 +292,7 @@
     <node concept="2eOfOl" id="6u_410TF4jk" role="2ePNbc">
       <property role="TrG5h" value="SingleTask" />
       <node concept="2v9HqM" id="6u_410TF8FZ" role="2eOfOg">
-        <ref role="2v9HqP" node="6u_410TF4g1" />
+        <ref role="2v9HqP" node="6u_410TF4g1" resolve="ResourceAccess" />
       </node>
       <node concept="1l1yNw" id="4JZ_DSvTApD" role="1kZvWc">
         <property role="TrG5h" value="Linux" />
@@ -304,7 +304,7 @@
     <node concept="1NkVLJ" id="6u_410TF4jo" role="2Q9xDr">
       <node concept="1PVdNI" id="6u_410TF4jp" role="1NkNSE" />
       <node concept="1OId_O" id="6u_410TFcnM" role="1OIqLV">
-        <ref role="1OIdAa" node="6u_410TF4i$" />
+        <ref role="1OIdAa" node="6u_410TF4i$" resolve="sched" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJCs" role="2Q9xDr" />

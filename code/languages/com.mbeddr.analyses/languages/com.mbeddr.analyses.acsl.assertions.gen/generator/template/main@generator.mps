@@ -629,7 +629,7 @@
             <node concept="3XISUE" id="2VCuTRcmIFh" role="3XIRFZ" />
             <node concept="1_9egQ" id="2VCuTRcmIGc" role="3XIRFZ">
               <node concept="3ZVu4v" id="2VCuTRcmIGa" role="1_9egR">
-                <ref role="3ZVs_2" node="2VCuTRcmIFq" />
+                <ref role="3ZVs_2" node="2VCuTRcmIFq" resolve="__result" />
                 <node concept="raruj" id="2VCuTRcmIGx" role="lGtFl" />
               </node>
             </node>
@@ -664,7 +664,7 @@
               <node concept="25Bbzn" id="1fdMHEcb_$m" role="1_9egR">
                 <node concept="Ea8Gl" id="1fdMHEcb__S" role="3TlMhJ" />
                 <node concept="3ZVu4v" id="1fdMHEcb_g$" role="3TlMhI">
-                  <ref role="3ZVs_2" node="1fdMHEcb_gv" />
+                  <ref role="3ZVs_2" node="1fdMHEcb_gv" resolve="pointer" />
                   <node concept="29HgVG" id="1fdMHEcbA8Z" role="lGtFl">
                     <node concept="3NFfHV" id="1fdMHEcbA90" role="3NFExx">
                       <node concept="3clFbS" id="1fdMHEcbA91" role="2VODD2">
@@ -822,7 +822,7 @@
         <node concept="3XIRFW" id="2VCuTRcl4Uw" role="3XIRFX">
           <node concept="1_9egQ" id="2VCuTRcleMB" role="3XIRFZ">
             <node concept="3ZUYvv" id="2VCuTRcleMA" role="1_9egR">
-              <ref role="3ZUYvu" node="2VCuTRcle3Q" />
+              <ref role="3ZUYvu" node="2VCuTRcle3Q" resolve="p" />
             </node>
             <node concept="2b32R4" id="2VCuTRcleMO" role="lGtFl">
               <node concept="3JmXsc" id="2VCuTRcleMR" role="2P8S$">
@@ -1115,7 +1115,7 @@
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="5OLOS2sSaMz" role="3TlMhI">
-                  <ref role="3ZVs_2" node="5OLOS2sSaLG" />
+                  <ref role="3ZVs_2" node="5OLOS2sSaLG" resolve="assumeActive" />
                   <node concept="1ZhdrF" id="5OLOS2sSaM$" role="lGtFl">
                     <property role="P3scX" value="a9d69647-0840-491e-bf39-2eb0805d2011/2093108837558113914/2093108837558124071" />
                     <property role="2qtEX8" value="var" />
@@ -1142,9 +1142,9 @@
                 <property role="2c7vTL" value="false" />
               </node>
               <node concept="3O_q_g" id="5OLOS2sSaNb" role="3XIe9u">
-                <ref role="3O_q_h" node="5OLOS2sSaJX" />
+                <ref role="3O_q_h" node="5OLOS2sSaJX" resolve="__do_foo" />
                 <node concept="3ZUYvv" id="5OLOS2sSaNc" role="3O_q_j">
-                  <ref role="3ZUYvu" node="5OLOS2sSaQ1" />
+                  <ref role="3ZUYvu" node="5OLOS2sSaQ1" resolve="p" />
                   <node concept="3ejVUv" id="5OLOS2sSaNd" role="lGtFl">
                     <node concept="3JmXsc" id="5OLOS2sSaNe" role="3_Rtg">
                       <node concept="3clFbS" id="5OLOS2sSaNf" role="2VODD2">
@@ -1217,9 +1217,9 @@
             </node>
             <node concept="1_9egQ" id="5OLOS2sSaNG" role="3XIRFZ">
               <node concept="3O_q_g" id="5OLOS2sSaNH" role="1_9egR">
-                <ref role="3O_q_h" node="5OLOS2sSaJX" />
+                <ref role="3O_q_h" node="5OLOS2sSaJX" resolve="__do_foo" />
                 <node concept="3ZUYvv" id="5OLOS2sSaNI" role="3O_q_j">
-                  <ref role="3ZUYvu" node="5OLOS2sSaQ1" />
+                  <ref role="3ZUYvu" node="5OLOS2sSaQ1" resolve="p" />
                   <node concept="3ejVUv" id="5OLOS2sSaNJ" role="lGtFl">
                     <node concept="3JmXsc" id="5OLOS2sSaNK" role="3_Rtg">
                       <node concept="3clFbS" id="5OLOS2sSaNL" role="2VODD2">
@@ -1480,7 +1480,7 @@
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="5OLOS2sSaPd" role="3TlMhI">
-                  <ref role="3ZVs_2" node="5OLOS2sSaLG" />
+                  <ref role="3ZVs_2" node="5OLOS2sSaLG" resolve="assumeActive" />
                   <node concept="1ZhdrF" id="5OLOS2sSaPe" role="lGtFl">
                     <property role="P3scX" value="a9d69647-0840-491e-bf39-2eb0805d2011/2093108837558113914/2093108837558124071" />
                     <property role="2qtEX8" value="var" />
@@ -1502,7 +1502,7 @@
             <node concept="3XISUE" id="5OLOS2sSaPM" role="3XIRFZ" />
             <node concept="2BFjQ_" id="5OLOS2sSaPN" role="3XIRFZ">
               <node concept="3ZVu4v" id="5OLOS2sSaPO" role="2BFjQA">
-                <ref role="3ZVs_2" node="5OLOS2sSaN9" />
+                <ref role="3ZVs_2" node="5OLOS2sSaN9" resolve="__result" />
               </node>
               <node concept="1W57fq" id="5OLOS2sSaPP" role="lGtFl">
                 <node concept="3IZrLx" id="5OLOS2sSaPQ" role="3IZSJc">

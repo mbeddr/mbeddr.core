@@ -42,7 +42,7 @@
     </language>
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -96,7 +96,7 @@
       <node concept="3clFbS" id="6ey1bOhxVZq" role="3clF47" />
       <node concept="3sdZbQ" id="6ey1bOhxVZz" role="3scror">
         <node concept="3sdZbA" id="6ey1bOhxVZ$" role="3sdZbB">
-          <ref role="3sa5fj" to="1uhh:6ey1bOhxVPf" />
+          <ref role="3sa5fj" to="1uhh:6ey1bOhxVPf" resolve="uninitializedStructs" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6ey1bOhxVZ_" role="3F5AM1">
@@ -173,7 +173,7 @@
       <node concept="3clFbS" id="6ey1bOhxVZw" role="3clF47" />
       <node concept="3sdZbQ" id="6ey1bOhxVZx" role="3scror">
         <node concept="3sdZbA" id="6ey1bOhxVZy" role="3sdZbB">
-          <ref role="3sa5fj" to="1uhh:6ey1bOhxVZj" />
+          <ref role="3sa5fj" to="1uhh:6ey1bOhxVZj" resolve="afterStructInit" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6ey1bOhxVZC" role="3F5AM1">
@@ -344,7 +344,7 @@
     <node concept="3sgmnF" id="6ey1bOhxVZs" role="1zJi$$" />
     <node concept="3sgmnF" id="6ey1bOhxVZt" role="1zJi$$" />
     <node concept="3qy1PH" id="6ey1bOhxVZl" role="3qy1PE">
-      <ref role="30ajXG" to="1uhh:6ey1bOhxSEJ" />
+      <ref role="30ajXG" to="1uhh:6ey1bOhxSEJ" resolve="PhysicalUnitsSimple" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

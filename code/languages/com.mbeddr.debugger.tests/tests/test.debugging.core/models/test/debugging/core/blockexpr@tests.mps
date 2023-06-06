@@ -34,7 +34,7 @@
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876391" name="com.mbeddr.core.debug.test.structure.StepOutCommand" flags="ng" index="2$4FYd" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -108,7 +108,7 @@
   <node concept="309jyn" id="5S3xvtaxo2">
     <property role="TrG5h" value="BlockExpression" />
     <node concept="3qy1PH" id="3GPxRNRaKGr" role="3qy1PE">
-      <ref role="30ajXG" to="qmk1:75iUP$Mbqt3" />
+      <ref role="30ajXG" to="qmk1:75iUP$Mbqt3" resolve="BlockExpression" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZSoh" role="29bA6Q" />
     <node concept="1vsUH6" id="4WY_RKGyh54" role="1zJi$$">
@@ -150,7 +150,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lUJ" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lUK" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lUL" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$MbqsL" />
+          <ref role="3sa5fj" to="qmk1:75iUP$MbqsL" resolve="firstStmntInsideBlockExprWithReturn" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lUM" role="3savwP">
@@ -163,7 +163,7 @@
           <node concept="30a7bf" id="7Jr7T0w2lUP" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaKHF" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="qmk1:2s7Bv57Jqkc" />
+              <ref role="3cQ7K8" to="qmk1:2s7Bv57Jqkc" resolve="returnAfterFunctionCall" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0A7O" role="16XPZB">
@@ -173,20 +173,20 @@
               <node concept="30a7bf" id="7cisAzZ8JcZ" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaKHx" role="30a7be">
                   <property role="3sdDOw" value="marker" />
-                  <ref role="3cQ7K8" to="qmk1:2s7Bv57Jqkc" />
+                  <ref role="3cQ7K8" to="qmk1:2s7Bv57Jqkc" resolve="returnAfterFunctionCall" />
                 </node>
               </node>
             </node>
             <node concept="30a7bf" id="5n8CFM4hzb5" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaKH_" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="qmk1:2s7Bv57Jqkc" />
+                <ref role="3cQ7K8" to="qmk1:2s7Bv57Jqkc" resolve="returnAfterFunctionCall" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyh5d" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyh54" />
+          <ref role="1vtf2j" node="4WY_RKGyh54" resolve="inMain" />
         </node>
       </node>
     </node>
@@ -196,7 +196,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lVr" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lVs" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lVt" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsx" />
+          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsx" resolve="lastStmntInsideBlockExprWithoutReturn" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lVu" role="3savwP">
@@ -208,7 +208,7 @@
         <node concept="30a7bf" id="7Jr7T0w2lVx" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKHv" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsC" />
+            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsC" resolve="stmntBeforeSecondBlockExpr" />
           </node>
         </node>
       </node>
@@ -219,13 +219,13 @@
       <node concept="3clFbS" id="7Jr7T0w2m0y" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m0z" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m0$" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$MbqsL" />
+          <ref role="3sa5fj" to="qmk1:75iUP$MbqsL" resolve="firstStmntInsideBlockExprWithReturn" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m0_" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2m0A" role="3F5AM1">
         <node concept="1vtf2i" id="4WY_RKGyh5f" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyh59" />
+          <ref role="1vtf2j" node="4WY_RKGyh59" resolve="inHelperFunction" />
         </node>
       </node>
     </node>
@@ -235,7 +235,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m2n" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m2o" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m2p" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsx" />
+          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsx" resolve="lastStmntInsideBlockExprWithoutReturn" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m2q" role="3savwP">
@@ -247,7 +247,7 @@
         <node concept="30a7bf" id="7Jr7T0w2m2t" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKHz" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsC" />
+            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsC" resolve="stmntBeforeSecondBlockExpr" />
           </node>
         </node>
       </node>
@@ -258,7 +258,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m4u" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m4v" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m4w" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$MbqsX" />
+          <ref role="3sa5fj" to="qmk1:75iUP$MbqsX" resolve="secondBlockExprStmnt" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m4x" role="3savwP">
@@ -270,16 +270,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m4$" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKHH" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsL" />
+            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsL" resolve="firstStmntInsideBlockExprWithReturn" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyh5p" role="3F5Y$9">
           <node concept="1vv375" id="4VxYGcHE6Wl" role="1vv36M">
-            <ref role="1vv99g" node="4VxYGcHuj8z" />
+            <ref role="1vv99g" node="4VxYGcHuj8z" resolve="watchesInHelperFunctionsBlockExpr" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyh5h" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyh59" />
+          <ref role="1vtf2j" node="4WY_RKGyh59" resolve="inHelperFunction" />
         </node>
       </node>
     </node>
@@ -289,7 +289,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m6P" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m6Q" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m6R" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$MbqsX" />
+          <ref role="3sa5fj" to="qmk1:75iUP$MbqsX" resolve="secondBlockExprStmnt" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m6S" role="3savwP">
@@ -301,16 +301,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m6V" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKHD" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsL" />
+            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsL" resolve="firstStmntInsideBlockExprWithReturn" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyh5t" role="3F5Y$9">
           <node concept="1vv375" id="4VxYGcHE6Wq" role="1vv36M">
-            <ref role="1vv99g" node="4VxYGcHuj8z" />
+            <ref role="1vv99g" node="4VxYGcHuj8z" resolve="watchesInHelperFunctionsBlockExpr" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyh5i" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyh59" />
+          <ref role="1vtf2j" node="4WY_RKGyh59" resolve="inHelperFunction" />
         </node>
       </node>
     </node>
@@ -320,7 +320,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m93" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m94" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m95" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsz" />
+          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsz" resolve="firstBlockExprStmnt" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m96" role="3savwP">
@@ -332,16 +332,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m99" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKHB" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qmk1:75iUP$Mbqsm" />
+            <ref role="3cQ7K8" to="qmk1:75iUP$Mbqsm" resolve="firstStmtnInsideBlockExprWithoutReturn" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyh5v" role="3F5Y$9">
           <node concept="1vv375" id="4VxYGcHE6Wu" role="1vv36M">
-            <ref role="1vv99g" node="4VxYGcHuj8z" />
+            <ref role="1vv99g" node="4VxYGcHuj8z" resolve="watchesInHelperFunctionsBlockExpr" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyh5j" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyh59" />
+          <ref role="1vtf2j" node="4WY_RKGyh59" resolve="inHelperFunction" />
         </node>
       </node>
     </node>
@@ -351,7 +351,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mdt" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mdu" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mdv" role="3sdZbB">
-          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsz" />
+          <ref role="3sa5fj" to="qmk1:75iUP$Mbqsz" resolve="firstBlockExprStmnt" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mdw" role="3savwP">
@@ -363,16 +363,16 @@
         <node concept="30a7bf" id="7Jr7T0w2mdz" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaKHJ" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsC" />
+            <ref role="3cQ7K8" to="qmk1:75iUP$MbqsC" resolve="stmntBeforeSecondBlockExpr" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyh5x" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyh5y" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyh5n" />
+            <ref role="1vv99g" node="4WY_RKGyh5n" resolve="watchesInHelperFunction" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyh5k" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyh59" />
+          <ref role="1vtf2j" node="4WY_RKGyh59" resolve="inHelperFunction" />
         </node>
       </node>
     </node>

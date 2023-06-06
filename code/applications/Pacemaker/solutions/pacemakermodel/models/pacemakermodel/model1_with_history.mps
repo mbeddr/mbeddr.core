@@ -349,7 +349,7 @@
     <node concept="29Nb31" id="3fuiA4Lz_Tb" role="2ePNbc">
       <property role="TrG5h" value="bla" />
       <node concept="2v9HqM" id="3fuiA4Lz_To" role="2eOfOg">
-        <ref role="2v9HqP" node="9zybxv$G07" />
+        <ref role="2v9HqP" node="9zybxv$G07" resolve="DDDSystem" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyiR5" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -376,13 +376,13 @@
     <node concept="2eOfOl" id="3fuiA4LztHR" role="2ePNbc">
       <property role="TrG5h" value="test" />
       <node concept="2v9HqM" id="3fuiA4LztIb" role="2eOfOg">
-        <ref role="2v9HqP" node="4sYKtP1i6a8" />
+        <ref role="2v9HqP" node="4sYKtP1i6a8" resolve="TestAdapter" />
       </node>
       <node concept="2v9HqM" id="3fuiA4LztIg" role="2eOfOg">
-        <ref role="2v9HqP" node="4sYKtP1k9ie" />
+        <ref role="2v9HqP" node="4sYKtP1k9ie" resolve="DDDSystemExec" />
       </node>
       <node concept="2v9HqM" id="3fuiA4Lzve0" role="2eOfOg">
-        <ref role="2v9HqP" node="4sYKtP1iquS" />
+        <ref role="2v9HqP" node="4sYKtP1iquS" resolve="stdio" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyiR6" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -666,7 +666,7 @@
     <node concept="1LFe83" id="9zybxv$G09" role="N3F5h">
       <property role="TrG5h" value="DDD_Machine" />
       <property role="2OOxQR" value="true" />
-      <ref role="1LFebw" node="9zybxv$G0P" />
+      <ref role="1LFebw" node="9zybxv$G0P" resolve="Start" />
       <node concept="2cfOFI" id="9zybxv$G0c" role="1_Iowf">
         <property role="TrG5h" value="tick" />
         <node concept="1z9TsT" id="72i$66eKWH5" role="lGtFl">
@@ -987,58 +987,58 @@
       <node concept="1LFebX" id="9zybxv$G0P" role="1_Iowf">
         <property role="TrG5h" value="Start" />
         <node concept="1LFeb9" id="9zybxv$G0Q" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G0P" />
+          <ref role="1zztin" node="9zybxv$G0P" resolve="Start" />
           <node concept="349iI2" id="9zybxv$G0R" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0d" />
+            <ref role="1bNv6r" node="9zybxv$G0d" resolve="setParams" />
           </node>
           <node concept="3XIRFW" id="9zybxv$G0S" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G0T" role="3XIRFZ">
               <node concept="3pqW6w" id="9zybxv$G0U" role="1_9egR">
                 <node concept="3498Or" id="9zybxv$G0V" role="3TlMhJ">
-                  <ref role="3498Oq" node="9zybxv$G0e" />
+                  <ref role="3498Oq" node="9zybxv$G0e" resolve="LRI" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G0W" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0y" />
+                  <ref role="349IfP" node="9zybxv$G0y" resolve="mLRI" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G0X" role="3XIRFZ">
               <node concept="3pqW6w" id="9zybxv$G0Y" role="1_9egR">
                 <node concept="3498Or" id="9zybxv$G0Z" role="3TlMhJ">
-                  <ref role="3498Oq" node="9zybxv$G0g" />
+                  <ref role="3498Oq" node="9zybxv$G0g" resolve="URI" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G10" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0F" />
+                  <ref role="349IfP" node="9zybxv$G0F" resolve="mURI" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G11" role="3XIRFZ">
               <node concept="3pqW6w" id="9zybxv$G12" role="1_9egR">
                 <node concept="3498Or" id="9zybxv$G13" role="3TlMhJ">
-                  <ref role="3498Oq" node="9zybxv$G0i" />
+                  <ref role="3498Oq" node="9zybxv$G0i" resolve="AVI" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G14" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0C" />
+                  <ref role="349IfP" node="9zybxv$G0C" resolve="mAVI" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G15" role="3XIRFZ">
               <node concept="3pqW6w" id="9zybxv$G16" role="1_9egR">
                 <node concept="3498Or" id="9zybxv$G17" role="3TlMhJ">
-                  <ref role="3498Oq" node="9zybxv$G0m" />
+                  <ref role="3498Oq" node="9zybxv$G0m" resolve="PVARP" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G18" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0L" />
+                  <ref role="349IfP" node="9zybxv$G0L" resolve="mPVARP" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G19" role="3XIRFZ">
               <node concept="3pqW6w" id="9zybxv$G1a" role="1_9egR">
                 <node concept="3498Or" id="9zybxv$G1b" role="3TlMhJ">
-                  <ref role="3498Oq" node="9zybxv$G0k" />
+                  <ref role="3498Oq" node="9zybxv$G0k" resolve="VRP" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G1c" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0I" />
+                  <ref role="349IfP" node="9zybxv$G0I" resolve="mVRP" />
                 </node>
               </node>
             </node>
@@ -1047,10 +1047,10 @@
                 <node concept="2BOcil" id="4efBVmuzLiC" role="3TlMhJ">
                   <node concept="2BOcil" id="4efBVmuzLiF" role="3TlMhI">
                     <node concept="349IfM" id="9zybxv$G1j" role="3TlMhI">
-                      <ref role="349IfP" node="9zybxv$G0y" />
+                      <ref role="349IfP" node="9zybxv$G0y" resolve="mLRI" />
                     </node>
                     <node concept="349IfM" id="9zybxv$G1i" role="3TlMhJ">
-                      <ref role="349IfP" node="9zybxv$G0C" />
+                      <ref role="349IfP" node="9zybxv$G0C" resolve="mAVI" />
                     </node>
                   </node>
                   <node concept="3TlMh9" id="9zybxv$G1h" role="3TlMhJ">
@@ -1058,7 +1058,7 @@
                   </node>
                 </node>
                 <node concept="349IfM" id="9zybxv$G1k" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0_" />
+                  <ref role="349IfP" node="9zybxv$G0_" resolve="mAEI" />
                 </node>
               </node>
               <node concept="1z9TsT" id="72i$66eLyH1" role="lGtFl">
@@ -1083,9 +1083,9 @@
           </node>
         </node>
         <node concept="1LFeb9" id="9zybxv$G1l" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G1o" />
+          <ref role="1zztin" node="9zybxv$G1o" resolve="PaceVentricularInit" />
           <node concept="349iI2" id="9zybxv$G1m" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="1z9TsT" id="72i$66eLA03" role="lGtFl">
             <node concept="OjmMv" id="72i$66eLA04" role="1w35rA">
@@ -1113,14 +1113,14 @@
         <node concept="OCJnL" id="9zybxv$G1p" role="1KoBSX">
           <node concept="2xGTIE" id="9zybxv$G1q" role="S7lxW">
             <node concept="_lVzq" id="9zybxv$G1r" role="3XIRFZ">
-              <ref role="_lVy$" node="9zybxv$G0p" />
+              <ref role="_lVy$" node="9zybxv$G0p" resolve="VP" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="9zybxv$G1t" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G1u" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="3XIRFW" id="9zybxv$G1v" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G1w" role="3XIRFZ">
@@ -1129,7 +1129,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G1z" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -1160,21 +1160,21 @@
         <node concept="OCJnL" id="9zybxv$G1A" role="1KoBSX">
           <node concept="2xGTIE" id="9zybxv$G1B" role="S7lxW">
             <node concept="_lVzq" id="9zybxv$G1C" role="3XIRFZ">
-              <ref role="_lVy$" node="9zybxv$G0p" />
+              <ref role="_lVy$" node="9zybxv$G0p" resolve="VP" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="2DsI7g94Uci" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G1E" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G1F" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="3XIRFW" id="9zybxv$G1G" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G1H" role="3XIRFZ">
               <node concept="3TM6Ey" id="360XEbTl4ql" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G1J" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0s" />
+                  <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
@@ -1184,7 +1184,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G1N" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -1206,21 +1206,21 @@
         <node concept="OCJnL" id="9zybxv$G1Q" role="1KoBSX">
           <node concept="2xGTIE" id="9zybxv$G1R" role="S7lxW">
             <node concept="_lVzq" id="9zybxv$G1S" role="3XIRFZ">
-              <ref role="_lVy$" node="9zybxv$G0o" />
+              <ref role="_lVy$" node="9zybxv$G0o" resolve="AP" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="9zybxv$G1T" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G1U" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G39" />
+          <ref role="1zztin" node="9zybxv$G39" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="9zybxv$G1V" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="3XIRFW" id="9zybxv$G1W" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G21" role="3XIRFZ">
               <node concept="3TM6Ey" id="360XEbTlkj8" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G23" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -1230,7 +1230,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G20" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0s" />
+                  <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
@@ -1251,42 +1251,42 @@
       <node concept="1LFebX" id="9zybxv$G26" role="1_Iowf">
         <property role="TrG5h" value="WaitAfterVentricularEvent" />
         <node concept="1LFeb9" id="9zybxv$G27" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G28" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0a" />
+            <ref role="1bNv6r" node="9zybxv$G0a" resolve="AS" />
           </node>
           <node concept="3Tl9Jl" id="9zybxv$G29" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G2a" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0L" />
+              <ref role="349IfP" node="9zybxv$G0L" resolve="mPVARP" />
             </node>
             <node concept="349IfM" id="9zybxv$G2b" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0v" />
+              <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="3HmicQ" id="9zybxv$G2c" role="lGtFl">
             <node concept="3HmicZ" id="9zybxv$G2d" role="Fanlf" />
             <node concept="3HmcO9" id="72i$66eKBki" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZL" />
+              <ref role="3HmaCj" node="9zybxv$FZL" resolve="ignorePvarpSens" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="9zybxv$G2f" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G39" />
+          <ref role="1zztin" node="9zybxv$G39" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="9zybxv$G2g" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0a" />
+            <ref role="1bNv6r" node="9zybxv$G0a" resolve="AS" />
           </node>
           <node concept="3Tl9Jr" id="9zybxv$G2h" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G2i" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0L" />
+              <ref role="349IfP" node="9zybxv$G0L" resolve="mPVARP" />
             </node>
             <node concept="349IfM" id="9zybxv$G2j" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0v" />
+              <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="3HmicQ" id="9zybxv$G2k" role="lGtFl">
             <node concept="3HmicZ" id="9zybxv$G2l" role="Fanlf" />
             <node concept="3HmcO9" id="72i$66eKDS9" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FYV" />
+              <ref role="3HmaCj" node="9zybxv$FYV" resolve="inhibitAtrial" />
             </node>
           </node>
           <node concept="3XIRFW" id="9zybxv$G2n" role="1zz7TA">
@@ -1296,47 +1296,47 @@
                   <property role="2hmy$m" value="0" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G2r" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0s" />
+                  <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="_lVzq" id="9zybxv$G2s" role="3XIRFZ">
-              <ref role="_lVy$" node="9zybxv$G0q" />
+              <ref role="_lVy$" node="9zybxv$G0q" resolve="APN" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="9zybxv$G2t" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G2u" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G2v" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0b" />
+            <ref role="1bNv6r" node="9zybxv$G0b" resolve="VS" />
           </node>
           <node concept="3Tl9Jl" id="9zybxv$G2w" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G2x" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0I" />
+              <ref role="349IfP" node="9zybxv$G0I" resolve="mVRP" />
             </node>
             <node concept="349IfM" id="9zybxv$G2y" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0v" />
+              <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="3HmicQ" id="9zybxv$G2z" role="lGtFl">
             <node concept="3HmicZ" id="9zybxv$G2$" role="Fanlf" />
             <node concept="3HmcO9" id="72i$66eKGBz" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZ_" />
+              <ref role="3HmaCj" node="9zybxv$FZ_" resolve="ignoreVrpSens" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="9zybxv$G2A" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G2B" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0b" />
+            <ref role="1bNv6r" node="9zybxv$G0b" resolve="VS" />
           </node>
           <node concept="3Tl9Jr" id="9zybxv$G2C" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G2D" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0I" />
+              <ref role="349IfP" node="9zybxv$G0I" resolve="mVRP" />
             </node>
             <node concept="349IfM" id="9zybxv$G2E" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0v" />
+              <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="1z9TsT" id="9zybxv$G2F" role="lGtFl">
@@ -1350,37 +1350,37 @@
           </node>
           <node concept="3XIRFW" id="72i$66eM8e9" role="1zz7TA">
             <node concept="_lVzq" id="72i$66eMbEg" role="3XIRFZ">
-              <ref role="_lVy$" node="72i$66eLKFD" />
+              <ref role="_lVy$" node="72i$66eLKFD" resolve="SignalError" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="9zybxv$G2J" role="1KoBSX" />
         <node concept="ODFVE" id="9zybxv$G2K" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G2L" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G2M" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="3Tl9Jn" id="9zybxv$G2N" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G2O" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0v" />
+              <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
             </node>
             <node concept="349IfM" id="9zybxv$G2P" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0_" />
+              <ref role="349IfP" node="9zybxv$G0_" resolve="mAEI" />
             </node>
           </node>
           <node concept="3XIRFW" id="9zybxv$G2Q" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G2R" role="3XIRFZ">
               <node concept="3TM6Ez" id="9zybxv$G2S" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G2T" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0s" />
+                  <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G2U" role="3XIRFZ">
               <node concept="3TM6Ez" id="9zybxv$G2V" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G2W" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -1388,16 +1388,16 @@
         </node>
         <node concept="ODFVE" id="9zybxv$G2X" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G2Y" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G1P" />
+          <ref role="1zztin" node="9zybxv$G1P" resolve="PaceAtrial" />
           <node concept="349iI2" id="9zybxv$G2Z" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="3TlM44" id="9zybxv$G30" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G31" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0_" />
+              <ref role="349IfP" node="9zybxv$G0_" resolve="mAEI" />
             </node>
             <node concept="349IfM" id="9zybxv$G32" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0v" />
+              <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
             </node>
           </node>
         </node>
@@ -1406,9 +1406,9 @@
       <node concept="1LFebX" id="9zybxv$G39" role="1_Iowf">
         <property role="TrG5h" value="WaitAfterArtrialEvent" />
         <node concept="1LFeb9" id="9zybxv$G3a" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G39" />
+          <ref role="1zztin" node="9zybxv$G39" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="9zybxv$G3b" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0a" />
+            <ref role="1bNv6r" node="9zybxv$G0a" resolve="AS" />
           </node>
           <node concept="1z9TsT" id="9zybxv$G3c" role="lGtFl">
             <node concept="OjmMv" id="9zybxv$G3d" role="1w35rA">
@@ -1421,15 +1421,15 @@
           </node>
           <node concept="3XIRFW" id="72i$66eLXDU" role="1zz7TA">
             <node concept="_lVzq" id="72i$66eLXDY" role="3XIRFZ">
-              <ref role="_lVy$" node="72i$66eLKFD" />
+              <ref role="_lVy$" node="72i$66eLKFD" resolve="SignalError" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="9zybxv$G3g" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G3h" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G26" />
+          <ref role="1zztin" node="9zybxv$G26" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="9zybxv$G3i" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0b" />
+            <ref role="1bNv6r" node="9zybxv$G0b" resolve="VS" />
           </node>
           <node concept="3XIRFW" id="9zybxv$G3j" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G3k" role="3XIRFZ">
@@ -1438,47 +1438,47 @@
                   <property role="2hmy$m" value="2" />
                 </node>
                 <node concept="349IfM" id="9zybxv$G3n" role="3TlMhI">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
             <node concept="_lVzq" id="9zybxv$G3o" role="3XIRFZ">
-              <ref role="_lVy$" node="9zybxv$G0r" />
+              <ref role="_lVy$" node="9zybxv$G0r" resolve="VPN" />
             </node>
           </node>
           <node concept="3HmicQ" id="9zybxv$G3p" role="lGtFl">
             <node concept="3HmicZ" id="9zybxv$G3q" role="Fanlf" />
             <node concept="3HmcO9" id="72i$66eKLMX" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZv" />
+              <ref role="3HmaCj" node="9zybxv$FZv" resolve="inhibitVentricular" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="9zybxv$G3s" role="1KoBSX" />
         <node concept="1LFeb9" id="9zybxv$G3t" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G39" />
+          <ref role="1zztin" node="9zybxv$G39" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="9zybxv$G3u" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="3Tl9Jn" id="9zybxv$G3v" role="1zz7me">
             <node concept="349IfM" id="9zybxv$G3w" role="3TlMhJ">
-              <ref role="349IfP" node="9zybxv$G0C" />
+              <ref role="349IfP" node="9zybxv$G0C" resolve="mAVI" />
             </node>
             <node concept="349IfM" id="9zybxv$G3x" role="3TlMhI">
-              <ref role="349IfP" node="9zybxv$G0s" />
+              <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
             </node>
           </node>
           <node concept="3XIRFW" id="9zybxv$G3y" role="1zz7TA">
             <node concept="1_9egQ" id="9zybxv$G3z" role="3XIRFZ">
               <node concept="3TM6Ez" id="9zybxv$G3$" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G3_" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0s" />
+                  <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G3A" role="3XIRFZ">
               <node concept="3TM6Ez" id="9zybxv$G3B" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G3C" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -1486,30 +1486,30 @@
           <node concept="3HmicQ" id="9zybxv$G3D" role="lGtFl">
             <node concept="3HmicZ" id="9zybxv$G3E" role="Fanlf" />
             <node concept="3HmcO9" id="72i$66eKOgC" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZ1" />
+              <ref role="3HmaCj" node="9zybxv$FZ1" resolve="atrialToVentricular" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="9zybxv$G3G" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G39" />
+          <ref role="1zztin" node="9zybxv$G39" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="9zybxv$G3H" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="2EHzL6" id="9zybxv$G3I" role="1zz7me">
             <node concept="3Tl9Jn" id="9zybxv$G3J" role="3TlMhJ">
               <node concept="349IfM" id="9zybxv$G3K" role="3TlMhI">
-                <ref role="349IfP" node="9zybxv$G0v" />
+                <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
               </node>
               <node concept="349IfM" id="9zybxv$G3L" role="3TlMhJ">
-                <ref role="349IfP" node="9zybxv$G0F" />
+                <ref role="349IfP" node="9zybxv$G0F" resolve="mURI" />
               </node>
             </node>
             <node concept="3Tl9Jp" id="9zybxv$G3M" role="3TlMhI">
               <node concept="349IfM" id="9zybxv$G3N" role="3TlMhI">
-                <ref role="349IfP" node="9zybxv$G0s" />
+                <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
               </node>
               <node concept="349IfM" id="9zybxv$G3O" role="3TlMhJ">
-                <ref role="349IfP" node="9zybxv$G0C" />
+                <ref role="349IfP" node="9zybxv$G0C" resolve="mAVI" />
               </node>
             </node>
           </node>
@@ -1517,14 +1517,14 @@
             <node concept="1_9egQ" id="9zybxv$G3Q" role="3XIRFZ">
               <node concept="3TM6Ez" id="9zybxv$G3R" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G3S" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0s" />
+                  <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="9zybxv$G3T" role="3XIRFZ">
               <node concept="3TM6Ez" id="9zybxv$G3U" role="1_9egR">
                 <node concept="349IfM" id="9zybxv$G3V" role="1_9fRO">
-                  <ref role="349IfP" node="9zybxv$G0v" />
+                  <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -1532,30 +1532,30 @@
           <node concept="3HmicQ" id="9zybxv$G3W" role="lGtFl">
             <node concept="3HmicZ" id="9zybxv$G3X" role="Fanlf" />
             <node concept="3HmcO9" id="72i$66eKQVN" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZd" />
+              <ref role="3HmaCj" node="9zybxv$FZd" resolve="respectURI" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="9zybxv$G3Z" role="1KoBSX">
-          <ref role="1zztin" node="9zybxv$G1_" />
+          <ref role="1zztin" node="9zybxv$G1_" resolve="PaceVentricular" />
           <node concept="349iI2" id="9zybxv$G40" role="2qxFSM">
-            <ref role="1bNv6r" node="9zybxv$G0c" />
+            <ref role="1bNv6r" node="9zybxv$G0c" resolve="tick" />
           </node>
           <node concept="2EHzL6" id="9zybxv$G41" role="1zz7me">
             <node concept="3Tl9Jp" id="9zybxv$G42" role="3TlMhJ">
               <node concept="349IfM" id="9zybxv$G43" role="3TlMhI">
-                <ref role="349IfP" node="9zybxv$G0v" />
+                <ref role="349IfP" node="9zybxv$G0v" resolve="timeSinceVEvent" />
               </node>
               <node concept="349IfM" id="9zybxv$G44" role="3TlMhJ">
-                <ref role="349IfP" node="9zybxv$G0F" />
+                <ref role="349IfP" node="9zybxv$G0F" resolve="mURI" />
               </node>
             </node>
             <node concept="3Tl9Jp" id="9zybxv$G45" role="3TlMhI">
               <node concept="349IfM" id="9zybxv$G46" role="3TlMhI">
-                <ref role="349IfP" node="9zybxv$G0s" />
+                <ref role="349IfP" node="9zybxv$G0s" resolve="timeSinceAEvent" />
               </node>
               <node concept="349IfM" id="9zybxv$G47" role="3TlMhJ">
-                <ref role="349IfP" node="9zybxv$G0C" />
+                <ref role="349IfP" node="9zybxv$G0C" resolve="mAVI" />
               </node>
             </node>
           </node>
@@ -1620,20 +1620,20 @@
             <node concept="1_9egQ" id="4LGVqEE3oZD" role="3XIRFZ">
               <node concept="2qmXGp" id="4LGVqEE3oZC" role="1_9egR">
                 <node concept="3ZUYvv" id="9zybxv$G5j" role="1_9fRO">
-                  <ref role="3ZUYvu" node="9zybxv$G5z" />
+                  <ref role="3ZUYvu" node="9zybxv$G5z" resolve="machine" />
                 </node>
                 <node concept="$QhJh" id="4LGVqEE3oZB" role="1ESnxz">
-                  <ref role="$QhfV" node="9zybxv$G0a" />
+                  <ref role="$QhfV" node="9zybxv$G0a" resolve="AS" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2qmXGp" id="72i$66eMBs4" role="c0U16">
             <node concept="3ZUYvv" id="9zybxv$G5m" role="1_9fRO">
-              <ref role="3ZUYvu" node="9zybxv$G5x" />
+              <ref role="3ZUYvu" node="9zybxv$G5x" resolve="env" />
             </node>
             <node concept="1E4Tgc" id="72i$66eMBs5" role="1ESnxz">
-              <ref role="1E4Tge" node="9zybxv$G4n" />
+              <ref role="1E4Tge" node="9zybxv$G4n" resolve="AS_Detected" />
             </node>
           </node>
         </node>
@@ -1643,20 +1643,20 @@
             <node concept="1_9egQ" id="4LGVqEE3oYv" role="3XIRFZ">
               <node concept="2qmXGp" id="4LGVqEE3oYu" role="1_9egR">
                 <node concept="3ZUYvv" id="9zybxv$G5s" role="1_9fRO">
-                  <ref role="3ZUYvu" node="9zybxv$G5z" />
+                  <ref role="3ZUYvu" node="9zybxv$G5z" resolve="machine" />
                 </node>
                 <node concept="$QhJh" id="4LGVqEE3oYt" role="1ESnxz">
-                  <ref role="$QhfV" node="9zybxv$G0b" />
+                  <ref role="$QhfV" node="9zybxv$G0b" resolve="VS" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2qmXGp" id="72i$66eMBr9" role="c0U16">
             <node concept="3ZUYvv" id="9zybxv$G5v" role="1_9fRO">
-              <ref role="3ZUYvu" node="9zybxv$G5x" />
+              <ref role="3ZUYvu" node="9zybxv$G5x" resolve="env" />
             </node>
             <node concept="1E4Tgc" id="72i$66eMBra" role="1ESnxz">
-              <ref role="1E4Tge" node="9zybxv$G4p" />
+              <ref role="1E4Tge" node="9zybxv$G4p" resolve="VS_Detected" />
             </node>
           </node>
         </node>
@@ -1667,7 +1667,7 @@
         <node concept="1sgJKr" id="9zybxv$G5y" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="9zybxv$G4m" />
+          <ref role="1sgJKq" node="9zybxv$G4m" resolve="EnvironmentState" />
         </node>
       </node>
       <node concept="19RgSI" id="9zybxv$G5z" role="1UOdpc">
@@ -1675,7 +1675,7 @@
         <node concept="3lBjsv" id="6j9shswV3mS" role="2C2TGm">
           <property role="2c7vTL" value="false" />
           <property role="2caQfQ" value="false" />
-          <ref role="3lBjss" node="9zybxv$G09" />
+          <ref role="3lBjss" node="9zybxv$G09" resolve="DDD_Machine" />
         </node>
       </node>
       <node concept="1z9TsT" id="72i$66eMDCK" role="lGtFl">
@@ -1737,13 +1737,13 @@
           <node concept="2c3wGE" id="72i$66eNosb" role="3XIRFZ">
             <property role="2xg5V6" value="true" />
             <node concept="3ZVu4v" id="72i$66eNr5A" role="2c3wGY">
-              <ref role="3ZVs_2" node="9zybxv$G5J" />
+              <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
             </node>
             <node concept="2EHzL6" id="4efBVmuzN5V" role="2c3wGU">
               <node concept="2EHzL6" id="4efBVmuzN64" role="3TlMhI">
                 <node concept="3Tl9Jl" id="72i$66eNv_T" role="3TlMhI">
                   <node concept="3ZVu4v" id="72i$66eNvAG" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5J" />
+                    <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
                   </node>
                   <node concept="3TlMh9" id="72i$66eNvmk" role="3TlMhI">
                     <property role="2hmy$m" value="30" />
@@ -1754,7 +1754,7 @@
                     <property role="2hmy$m" value="50" />
                   </node>
                   <node concept="3ZVu4v" id="5EA63UsF66O" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G5J" />
+                    <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
                   </node>
                 </node>
               </node>
@@ -1767,7 +1767,7 @@
                     <property role="2hmy$m" value="5" />
                   </node>
                   <node concept="3ZVu4v" id="5EA63UsFXNx" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G5J" />
+                    <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
                   </node>
                 </node>
               </node>
@@ -1776,26 +1776,26 @@
           <node concept="2c3wGE" id="72i$66eO7qp" role="3XIRFZ">
             <property role="2xg5V6" value="true" />
             <node concept="3ZVu4v" id="72i$66eOczP" role="2c3wGY">
-              <ref role="3ZVs_2" node="9zybxv$G5M" />
+              <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
             </node>
             <node concept="2EHzL6" id="4efBVmuzOSC" role="2c3wGU">
               <node concept="2EHzL6" id="4efBVmuzOSJ" role="3TlMhI">
                 <node concept="3Tl9Jl" id="72i$66eOCrJ" role="3TlMhI">
                   <node concept="3ZVu4v" id="72i$66eOGE5" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5M" />
+                    <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
                   </node>
                   <node concept="2BOciq" id="72i$66eOfyx" role="3TlMhI">
                     <node concept="3TlMh9" id="72i$66eOfy$" role="3TlMhJ">
                       <property role="2hmy$m" value="40" />
                     </node>
                     <node concept="3ZVu4v" id="72i$66eOfyl" role="3TlMhI">
-                      <ref role="3ZVs_2" node="9zybxv$G5J" />
+                      <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
                     </node>
                   </node>
                 </node>
                 <node concept="3Tl9Jl" id="72i$66eOWKS" role="3TlMhJ">
                   <node concept="3ZVu4v" id="72i$66eP0YP" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5M" />
+                    <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
                   </node>
                   <node concept="3TlMh9" id="72i$66eOPHQ" role="3TlMhI">
                     <property role="2hmy$m" value="50" />
@@ -1807,7 +1807,7 @@
                   <property role="2hmy$m" value="175" />
                 </node>
                 <node concept="3ZVu4v" id="72i$66ePbdH" role="3TlMhI">
-                  <ref role="3ZVs_2" node="9zybxv$G5M" />
+                  <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
                 </node>
               </node>
             </node>
@@ -1860,7 +1860,7 @@
               </node>
             </node>
             <node concept="3ZVu4v" id="9zybxv$G61" role="3TlMhJ">
-              <ref role="3ZVs_2" node="9zybxv$G5T" />
+              <ref role="3ZVs_2" node="9zybxv$G5T" resolve="tickLengthMs" />
             </node>
           </node>
         </node>
@@ -1911,15 +1911,15 @@
         <node concept="1_9egQ" id="9zybxv$G76" role="3XIRFZ">
           <node concept="3pqW6w" id="9zybxv$G77" role="1_9egR">
             <node concept="3ZVu4v" id="9zybxv$G78" role="3TlMhI">
-              <ref role="3ZVs_2" node="9zybxv$G65" />
+              <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
             </node>
             <node concept="2BOcih" id="9zybxv$G79" role="3TlMhJ">
               <node concept="3ZVu4v" id="9zybxv$G7a" role="3TlMhJ">
-                <ref role="3ZVs_2" node="9zybxv$G5J" />
+                <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
               </node>
               <node concept="1S8S4T" id="9zybxv$G7b" role="3TlMhI">
                 <node concept="3ZVu4v" id="9zybxv$G7c" role="1S8S4V">
-                  <ref role="3ZVs_2" node="9zybxv$G5X" />
+                  <ref role="3ZVs_2" node="9zybxv$G5X" resolve="ticksInMin" />
                 </node>
                 <node concept="26Vqpq" id="9zybxv$G7d" role="1S8S4N">
                   <property role="2caQfQ" value="false" />
@@ -1941,16 +1941,16 @@
         <node concept="1_9egQ" id="9zybxv$G7e" role="3XIRFZ">
           <node concept="3pqW6w" id="9zybxv$G7f" role="1_9egR">
             <node concept="3ZVu4v" id="9zybxv$G7g" role="3TlMhI">
-              <ref role="3ZVs_2" node="9zybxv$G67" />
+              <ref role="3ZVs_2" node="9zybxv$G67" resolve="URI" />
             </node>
             <node concept="2BPB98" id="9zybxv$G7h" role="3TlMhJ">
               <node concept="1S8S4T" id="9zybxv$G7i" role="1_9fRO">
                 <node concept="2BOcih" id="9zybxv$G7j" role="1S8S4V">
                   <node concept="3ZVu4v" id="9zybxv$G7k" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5M" />
+                    <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
                   </node>
                   <node concept="3ZVu4v" id="9zybxv$G7l" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G5X" />
+                    <ref role="3ZVs_2" node="9zybxv$G5X" resolve="ticksInMin" />
                   </node>
                 </node>
                 <node concept="26Vqpq" id="9zybxv$G7m" role="1S8S4N">
@@ -1971,7 +1971,7 @@
                     <property role="2hmy$m" value="5.0" />
                   </node>
                   <node concept="3ZVu4v" id="9zybxv$G7u" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G65" />
+                    <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
                   </node>
                 </node>
                 <node concept="26Vqpq" id="9zybxv$G7v" role="1S8S4N">
@@ -1981,7 +1981,7 @@
               </node>
             </node>
             <node concept="3ZVu4v" id="9zybxv$G7w" role="3TlMhI">
-              <ref role="3ZVs_2" node="9zybxv$G69" />
+              <ref role="3ZVs_2" node="9zybxv$G69" resolve="AVI" />
             </node>
           </node>
           <node concept="1z9TsT" id="72i$66eNhLN" role="lGtFl">
@@ -1997,7 +1997,7 @@
         <node concept="1_9egQ" id="9zybxv$G7x" role="3XIRFZ">
           <node concept="3pqW6w" id="9zybxv$G7y" role="1_9egR">
             <node concept="3ZVu4v" id="9zybxv$G7z" role="3TlMhI">
-              <ref role="3ZVs_2" node="9zybxv$G6b" />
+              <ref role="3ZVs_2" node="9zybxv$G6b" resolve="VRP" />
             </node>
             <node concept="2BPB98" id="9zybxv$G7$" role="3TlMhJ">
               <node concept="1S8S4T" id="9zybxv$G7_" role="1_9fRO">
@@ -2006,7 +2006,7 @@
                     <property role="2hmy$m" value="3.0" />
                   </node>
                   <node concept="3ZVu4v" id="9zybxv$G7C" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G65" />
+                    <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
                   </node>
                 </node>
                 <node concept="26Vqpq" id="9zybxv$G7D" role="1S8S4N">
@@ -2020,7 +2020,7 @@
         <node concept="1_9egQ" id="9zybxv$G7E" role="3XIRFZ">
           <node concept="3pqW6w" id="9zybxv$G7F" role="1_9egR">
             <node concept="3ZVu4v" id="9zybxv$G7G" role="3TlMhI">
-              <ref role="3ZVs_2" node="9zybxv$G6d" />
+              <ref role="3ZVs_2" node="9zybxv$G6d" resolve="PVARP" />
             </node>
             <node concept="1S8S4T" id="9zybxv$G7H" role="3TlMhJ">
               <node concept="2BOcih" id="9zybxv$G7I" role="1S8S4V">
@@ -2028,7 +2028,7 @@
                   <property role="2hmy$m" value="3.5" />
                 </node>
                 <node concept="3ZVu4v" id="9zybxv$G7K" role="3TlMhI">
-                  <ref role="3ZVs_2" node="9zybxv$G65" />
+                  <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
                 </node>
               </node>
               <node concept="26Vqpq" id="9zybxv$G7L" role="1S8S4N">
@@ -2043,10 +2043,10 @@
             <node concept="2BOcil" id="4efBVmuzSoD" role="3TlMhJ">
               <node concept="2BOcil" id="4efBVmuzSoG" role="3TlMhI">
                 <node concept="3ZVu4v" id="9zybxv$G7S" role="3TlMhI">
-                  <ref role="3ZVs_2" node="9zybxv$G65" />
+                  <ref role="3ZVs_2" node="9zybxv$G65" resolve="LRI" />
                 </node>
                 <node concept="3ZVu4v" id="9zybxv$G7R" role="3TlMhJ">
-                  <ref role="3ZVs_2" node="9zybxv$G69" />
+                  <ref role="3ZVs_2" node="9zybxv$G69" resolve="AVI" />
                 </node>
               </node>
               <node concept="3TlMh9" id="9zybxv$G7Q" role="3TlMhJ">
@@ -2054,7 +2054,7 @@
               </node>
             </node>
             <node concept="3ZVu4v" id="9zybxv$G7T" role="3TlMhI">
-              <ref role="3ZVs_2" node="9zybxv$G6f" />
+              <ref role="3ZVs_2" node="9zybxv$G6f" resolve="AEI" />
             </node>
           </node>
         </node>
@@ -2063,7 +2063,7 @@
         <node concept="3XIRlf" id="9zybxv$G7V" role="3XIRFZ">
           <property role="TrG5h" value="ddd" />
           <node concept="3lBjsv" id="9zybxv$G7W" role="2C2TGm">
-            <ref role="3lBjss" node="9zybxv$G09" />
+            <ref role="3lBjss" node="9zybxv$G09" resolve="DDD_Machine" />
           </node>
         </node>
         <node concept="3XISUE" id="9zybxv$G7Y" role="3XIRFZ" />
@@ -2074,7 +2074,7 @@
           <node concept="1sgJKr" id="9zybxv$G87" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="9zybxv$G4m" />
+            <ref role="1sgJKq" node="9zybxv$G4m" resolve="EnvironmentState" />
           </node>
         </node>
         <node concept="3XISUE" id="2QeVwCcYJ1u" role="3XIRFZ" />
@@ -2109,7 +2109,7 @@
       <property role="TrG5h" value="empty_1381414033496_23" />
     </node>
     <node concept="3GEVxB" id="72i$66eKxGL" role="2OODSX">
-      <ref role="3GEb4d" node="9zybxv$FYs" />
+      <ref role="3GEb4d" node="9zybxv$FYs" resolve="DDDRequirements" />
     </node>
   </node>
   <node concept="rcWEw" id="4sYKtP1iquS">
@@ -2160,7 +2160,7 @@
         <node concept="3XIRlf" id="4sYKtP1ioCZ" role="3XIRFZ">
           <property role="TrG5h" value="ddd" />
           <node concept="3lBjsv" id="4sYKtP1nbjJ" role="2C2TGm">
-            <ref role="3lBjss" node="4sYKtP1k9ig" />
+            <ref role="3lBjss" node="4sYKtP1k9ig" resolve="DDD_Machine" />
           </node>
         </node>
         <node concept="3XISUE" id="4sYKtP1nboA" role="3XIRFZ" />
@@ -2168,7 +2168,7 @@
         <node concept="1_9egQ" id="4LGVqEE4Jk8" role="3XIRFZ">
           <node concept="2qmXGp" id="4LGVqEE4Jk7" role="1_9egR">
             <node concept="3ZVu4v" id="4sYKtP1jOIl" role="1_9fRO">
-              <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+              <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
             </node>
             <node concept="Vf_e3" id="4LGVqEE4Jk6" role="1ESnxz" />
           </node>
@@ -2177,10 +2177,10 @@
         <node concept="1_9egQ" id="4LGVqEE4JlC" role="3XIRFZ">
           <node concept="2qmXGp" id="4LGVqEE4JlB" role="1_9egR">
             <node concept="3ZVu4v" id="4sYKtP1nsFR" role="1_9fRO">
-              <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+              <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
             </node>
             <node concept="$QhJh" id="4LGVqEE4JlA" role="1ESnxz">
-              <ref role="$QhfV" node="4sYKtP1k9jc" />
+              <ref role="$QhfV" node="4sYKtP1k9jc" resolve="setParams" />
               <node concept="3TlMh9" id="4sYKtP1ntU2" role="$QhfN">
                 <property role="2hmy$m" value="10" />
               </node>
@@ -2223,37 +2223,37 @@
             <node concept="1_9egQ" id="4sYKtP1jOMa" role="3XIRFZ">
               <node concept="3pqW6w" id="4sYKtP1jOOR" role="1_9egR">
                 <node concept="3O_q_g" id="4sYKtP1jORY" role="3TlMhJ">
-                  <ref role="3O_q_h" node="4sYKtP1jyb9" />
+                  <ref role="3O_q_h" node="4sYKtP1jyb9" resolve="getchar" />
                 </node>
                 <node concept="3ZVu4v" id="4sYKtP1jOM9" role="3TlMhI">
-                  <ref role="3ZVs_2" node="4sYKtP1ipWT" />
+                  <ref role="3ZVs_2" node="4sYKtP1ipWT" resolve="c" />
                 </node>
               </node>
             </node>
             <node concept="3XISUE" id="4sYKtP1jOWq" role="3XIRFZ" />
             <node concept="ggJXe" id="4sYKtP1nqvI" role="3XIRFZ">
               <node concept="3ZVu4v" id="4sYKtP1nqz6" role="ggJXf">
-                <ref role="3ZVs_2" node="4sYKtP1ipWT" />
+                <ref role="3ZVs_2" node="4sYKtP1ipWT" resolve="c" />
               </node>
               <node concept="ggJMM" id="4sYKtP1nqAy" role="ggJMH">
                 <node concept="3XIRFW" id="4sYKtP1nqAz" role="ggJML">
                   <node concept="1_9egQ" id="4LGVqEE4JcY" role="3XIRFZ">
                     <node concept="2qmXGp" id="4LGVqEE4JcX" role="1_9egR">
                       <node concept="3ZVu4v" id="4sYKtP1nqK5" role="1_9fRO">
-                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
                       </node>
                       <node concept="$QhJh" id="4LGVqEE4JcW" role="1ESnxz">
-                        <ref role="$QhfV" node="4sYKtP1k9in" />
+                        <ref role="$QhfV" node="4sYKtP1k9in" resolve="AS" />
                       </node>
                     </node>
                   </node>
                   <node concept="1_9egQ" id="4LGVqEE4JnC" role="3XIRFZ">
                     <node concept="2qmXGp" id="4LGVqEE4JnB" role="1_9egR">
                       <node concept="3ZVu4v" id="4sYKtP1nqRD" role="1_9fRO">
-                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
                       </node>
                       <node concept="$QhJh" id="4LGVqEE4JnA" role="1ESnxz">
-                        <ref role="$QhfV" node="4sYKtP1k9ih" />
+                        <ref role="$QhfV" node="4sYKtP1k9ih" resolve="tick" />
                       </node>
                     </node>
                   </node>
@@ -2268,20 +2268,20 @@
                   <node concept="1_9egQ" id="4LGVqEE4Jna" role="3XIRFZ">
                     <node concept="2qmXGp" id="4LGVqEE4Jn9" role="1_9egR">
                       <node concept="3ZVu4v" id="4sYKtP1nr9M" role="1_9fRO">
-                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
                       </node>
                       <node concept="$QhJh" id="4LGVqEE4Jn8" role="1ESnxz">
-                        <ref role="$QhfV" node="4sYKtP1k9is" />
+                        <ref role="$QhfV" node="4sYKtP1k9is" resolve="VS" />
                       </node>
                     </node>
                   </node>
                   <node concept="1_9egQ" id="4LGVqEE4Jad" role="3XIRFZ">
                     <node concept="2qmXGp" id="4LGVqEE4Jac" role="1_9egR">
                       <node concept="3ZVu4v" id="4sYKtP1nrhK" role="1_9fRO">
-                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
                       </node>
                       <node concept="$QhJh" id="4LGVqEE4Jab" role="1ESnxz">
-                        <ref role="$QhfV" node="4sYKtP1k9ih" />
+                        <ref role="$QhfV" node="4sYKtP1k9ih" resolve="tick" />
                       </node>
                     </node>
                   </node>
@@ -2296,10 +2296,10 @@
                   <node concept="1_9egQ" id="4LGVqEE4JjI" role="3XIRFZ">
                     <node concept="2qmXGp" id="4LGVqEE4JjH" role="1_9egR">
                       <node concept="3ZVu4v" id="4sYKtP1nrL0" role="1_9fRO">
-                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" />
+                        <ref role="3ZVs_2" node="4sYKtP1ioCZ" resolve="ddd" />
                       </node>
                       <node concept="$QhJh" id="4LGVqEE4JjG" role="1ESnxz">
-                        <ref role="$QhfV" node="4sYKtP1k9ih" />
+                        <ref role="$QhfV" node="4sYKtP1k9ih" resolve="tick" />
                       </node>
                     </node>
                   </node>
@@ -2317,18 +2317,18 @@
                     <property role="biBdg" value="q" />
                   </node>
                   <node concept="3ZVu4v" id="4sYKtP1jPt3" role="3TlMhI">
-                    <ref role="3ZVs_2" node="4sYKtP1ipWT" />
+                    <ref role="3ZVs_2" node="4sYKtP1ipWT" resolve="c" />
                   </node>
                 </node>
                 <node concept="3ZVu4v" id="4sYKtP1jPpn" role="3TlMhI">
-                  <ref role="3ZVs_2" node="4sYKtP1ip8X" />
+                  <ref role="3ZVs_2" node="4sYKtP1ip8X" resolve="exit" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="19$8ne" id="4sYKtP1ipwj" role="27v$We">
             <node concept="3ZVu4v" id="4sYKtP1ip$8" role="1_9fRO">
-              <ref role="3ZVs_2" node="4sYKtP1ip8X" />
+              <ref role="3ZVs_2" node="4sYKtP1ip8X" resolve="exit" />
             </node>
           </node>
         </node>
@@ -2364,10 +2364,10 @@
       </node>
     </node>
     <node concept="3GEVxB" id="4sYKtP1iovo" role="2OODSX">
-      <ref role="3GEb4d" node="4sYKtP1k9ie" />
+      <ref role="3GEb4d" node="4sYKtP1k9ie" resolve="DDDSystemExec" />
     </node>
     <node concept="3GEVxB" id="4sYKtP1jCya" role="2OODSX">
-      <ref role="3GEb4d" node="4sYKtP1iquS" />
+      <ref role="3GEb4d" node="4sYKtP1iquS" resolve="stdio" />
     </node>
     <node concept="1CU$1Q" id="4sYKtP1iqrb" role="2OODSX" />
   </node>
@@ -2382,7 +2382,7 @@
       <node concept="3XIRFW" id="4sYKtP1nL_k" role="3XIRFX">
         <node concept="1_9egQ" id="4sYKtP1nMMC" role="3XIRFZ">
           <node concept="3O_q_g" id="4sYKtP1nMMB" role="1_9egR">
-            <ref role="3O_q_h" node="4sYKtP1jPfb" />
+            <ref role="3O_q_h" node="4sYKtP1jPfb" resolve="putchar" />
             <node concept="biBdh" id="4sYKtP1nNv4" role="3O_q_j">
               <property role="biBdg" value="\r" />
             </node>
@@ -2390,7 +2390,7 @@
         </node>
         <node concept="1_9egQ" id="4sYKtP1nNAL" role="3XIRFZ">
           <node concept="3O_q_g" id="4sYKtP1nNAM" role="1_9egR">
-            <ref role="3O_q_h" node="4sYKtP1jPfb" />
+            <ref role="3O_q_h" node="4sYKtP1jPfb" resolve="putchar" />
             <node concept="biBdh" id="4sYKtP1nNAN" role="3O_q_j">
               <property role="biBdg" value="\n" />
             </node>
@@ -2411,7 +2411,7 @@
       <node concept="3XIRFW" id="4sYKtP1nhPt" role="3XIRFX">
         <node concept="1_9egQ" id="4sYKtP1njYe" role="3XIRFZ">
           <node concept="3O_q_g" id="4sYKtP1njYd" role="1_9egR">
-            <ref role="3O_q_h" node="4sYKtP1jPfb" />
+            <ref role="3O_q_h" node="4sYKtP1jPfb" resolve="putchar" />
             <node concept="biBdh" id="4sYKtP1nkll" role="3O_q_j">
               <property role="biBdg" value="a" />
             </node>
@@ -2419,7 +2419,7 @@
         </node>
         <node concept="1_9egQ" id="4sYKtP1nNH7" role="3XIRFZ">
           <node concept="3O_q_g" id="4sYKtP1nNH6" role="1_9egR">
-            <ref role="3O_q_h" node="4sYKtP1nL_i" />
+            <ref role="3O_q_h" node="4sYKtP1nL_i" resolve="newline" />
           </node>
         </node>
       </node>
@@ -2437,7 +2437,7 @@
       <node concept="3XIRFW" id="4sYKtP1npvm" role="3XIRFX">
         <node concept="1_9egQ" id="4sYKtP1npvn" role="3XIRFZ">
           <node concept="3O_q_g" id="4sYKtP1npvo" role="1_9egR">
-            <ref role="3O_q_h" node="4sYKtP1jPfb" />
+            <ref role="3O_q_h" node="4sYKtP1jPfb" resolve="putchar" />
             <node concept="biBdh" id="4sYKtP1npvp" role="3O_q_j">
               <property role="biBdg" value="v" />
             </node>
@@ -2445,7 +2445,7 @@
         </node>
         <node concept="1_9egQ" id="4sYKtP1nNHP" role="3XIRFZ">
           <node concept="3O_q_g" id="4sYKtP1nNHO" role="1_9egR">
-            <ref role="3O_q_h" node="4sYKtP1nL_i" />
+            <ref role="3O_q_h" node="4sYKtP1nL_i" resolve="newline" />
           </node>
         </node>
       </node>
@@ -2469,7 +2469,7 @@
     <node concept="1LFe83" id="4sYKtP1k9ig" role="N3F5h">
       <property role="TrG5h" value="DDD_Machine" />
       <property role="2OOxQR" value="true" />
-      <ref role="1LFebw" node="4sYKtP1k9k6" />
+      <ref role="1LFebw" node="4sYKtP1k9k6" resolve="Start" />
       <node concept="2cfOFI" id="4sYKtP1k9ih" role="1_Iowf">
         <property role="TrG5h" value="tick" />
         <node concept="1z9TsT" id="4sYKtP1k9ii" role="lGtFl">
@@ -2520,7 +2520,7 @@
           </node>
         </node>
         <node concept="9KMqs" id="4sYKtP1nqja" role="2cfPX8">
-          <ref role="9KTiK" node="4sYKtP1nhPr" />
+          <ref role="9KTiK" node="4sYKtP1nhPr" resolve="paceA" />
         </node>
       </node>
       <node concept="2cfOFH" id="4sYKtP1k9iB" role="1_Iowf">
@@ -2535,7 +2535,7 @@
           </node>
         </node>
         <node concept="9KMqs" id="4sYKtP1nqji" role="2cfPX8">
-          <ref role="9KTiK" node="4sYKtP1npvl" />
+          <ref role="9KTiK" node="4sYKtP1npvl" resolve="paceV" />
         </node>
       </node>
       <node concept="2cfOFH" id="4sYKtP1k9iG" role="1_Iowf">
@@ -2796,58 +2796,58 @@
       <node concept="1LFebX" id="4sYKtP1k9k6" role="1_Iowf">
         <property role="TrG5h" value="Start" />
         <node concept="1LFeb9" id="4sYKtP1k9k7" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9k6" />
+          <ref role="1zztin" node="4sYKtP1k9k6" resolve="Start" />
           <node concept="349iI2" id="4sYKtP1k9k8" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9jc" />
+            <ref role="1bNv6r" node="4sYKtP1k9jc" resolve="setParams" />
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9k9" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9ka" role="3XIRFZ">
               <node concept="3pqW6w" id="4sYKtP1k9kb" role="1_9egR">
                 <node concept="3498Or" id="4sYKtP1k9kc" role="3TlMhJ">
-                  <ref role="3498Oq" node="4sYKtP1k9jd" />
+                  <ref role="3498Oq" node="4sYKtP1k9jd" resolve="LRI" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9kd" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9jr" />
+                  <ref role="349IfP" node="4sYKtP1k9jr" resolve="mLRI" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9ke" role="3XIRFZ">
               <node concept="3pqW6w" id="4sYKtP1k9kf" role="1_9egR">
                 <node concept="3498Or" id="4sYKtP1k9kg" role="3TlMhJ">
-                  <ref role="3498Oq" node="4sYKtP1k9jf" />
+                  <ref role="3498Oq" node="4sYKtP1k9jf" resolve="URI" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9kh" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9jK" />
+                  <ref role="349IfP" node="4sYKtP1k9jK" resolve="mURI" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9ki" role="3XIRFZ">
               <node concept="3pqW6w" id="4sYKtP1k9kj" role="1_9egR">
                 <node concept="3498Or" id="4sYKtP1k9kk" role="3TlMhJ">
-                  <ref role="3498Oq" node="4sYKtP1k9jh" />
+                  <ref role="3498Oq" node="4sYKtP1k9jh" resolve="AVI" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9kl" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9jD" />
+                  <ref role="349IfP" node="4sYKtP1k9jD" resolve="mAVI" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9km" role="3XIRFZ">
               <node concept="3pqW6w" id="4sYKtP1k9kn" role="1_9egR">
                 <node concept="3498Or" id="4sYKtP1k9ko" role="3TlMhJ">
-                  <ref role="3498Oq" node="4sYKtP1k9jl" />
+                  <ref role="3498Oq" node="4sYKtP1k9jl" resolve="PVARP" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9kp" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9jY" />
+                  <ref role="349IfP" node="4sYKtP1k9jY" resolve="mPVARP" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9kq" role="3XIRFZ">
               <node concept="3pqW6w" id="4sYKtP1k9kr" role="1_9egR">
                 <node concept="3498Or" id="4sYKtP1k9ks" role="3TlMhJ">
-                  <ref role="3498Oq" node="4sYKtP1k9jj" />
+                  <ref role="3498Oq" node="4sYKtP1k9jj" resolve="VRP" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9kt" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9jR" />
+                  <ref role="349IfP" node="4sYKtP1k9jR" resolve="mVRP" />
                 </node>
               </node>
             </node>
@@ -2856,10 +2856,10 @@
                 <node concept="2BOcil" id="7wfTaMjDhhM" role="3TlMhJ">
                   <node concept="2BOcil" id="7wfTaMjDhhP" role="3TlMhI">
                     <node concept="349IfM" id="4sYKtP1k9k$" role="3TlMhI">
-                      <ref role="349IfP" node="4sYKtP1k9jr" />
+                      <ref role="349IfP" node="4sYKtP1k9jr" resolve="mLRI" />
                     </node>
                     <node concept="349IfM" id="4sYKtP1k9kz" role="3TlMhJ">
-                      <ref role="349IfP" node="4sYKtP1k9jD" />
+                      <ref role="349IfP" node="4sYKtP1k9jD" resolve="mAVI" />
                     </node>
                   </node>
                   <node concept="3TlMh9" id="4sYKtP1k9ky" role="3TlMhJ">
@@ -2867,7 +2867,7 @@
                   </node>
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9k_" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9jy" />
+                  <ref role="349IfP" node="4sYKtP1k9jy" resolve="mAEI" />
                 </node>
               </node>
               <node concept="1z9TsT" id="4sYKtP1k9kA" role="lGtFl">
@@ -2892,9 +2892,9 @@
           </node>
         </node>
         <node concept="1LFeb9" id="4sYKtP1k9kI" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9kT" />
+          <ref role="1zztin" node="4sYKtP1k9kT" resolve="PaceVentricularInit" />
           <node concept="349iI2" id="4sYKtP1k9kJ" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="1z9TsT" id="4sYKtP1k9kK" role="lGtFl">
             <node concept="OjmMv" id="4sYKtP1k9kL" role="1w35rA">
@@ -2922,14 +2922,14 @@
         <node concept="OCJnL" id="4sYKtP1k9kU" role="1KoBSX">
           <node concept="2xGTIE" id="4sYKtP1k9kV" role="S7lxW">
             <node concept="_lVzq" id="4sYKtP1k9kW" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iB" />
+              <ref role="_lVy$" node="4sYKtP1k9iB" resolve="VP" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="4sYKtP1k9kX" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9kY" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9kZ" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9l0" role="3XIRFZ">
@@ -2938,7 +2938,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9l3" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -2969,21 +2969,21 @@
         <node concept="OCJnL" id="4sYKtP1k9le" role="1KoBSX">
           <node concept="2xGTIE" id="4sYKtP1k9lf" role="S7lxW">
             <node concept="_lVzq" id="4sYKtP1k9lg" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iB" />
+              <ref role="_lVy$" node="4sYKtP1k9iB" resolve="VP" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="4sYKtP1k9lh" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9li" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9lj" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9lk" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9ll" role="3XIRFZ">
               <node concept="3TM6Ey" id="4sYKtP1k9lm" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9ln" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9iX" />
+                  <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
@@ -2993,7 +2993,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9lr" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -3015,21 +3015,21 @@
         <node concept="OCJnL" id="4sYKtP1k9ly" role="1KoBSX">
           <node concept="2xGTIE" id="4sYKtP1k9lz" role="S7lxW">
             <node concept="_lVzq" id="4sYKtP1k9l$" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iy" />
+              <ref role="_lVy$" node="4sYKtP1k9iy" resolve="AP" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="4sYKtP1k9l_" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9lA" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9mQ" />
+          <ref role="1zztin" node="4sYKtP1k9mQ" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="4sYKtP1k9lB" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9lC" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9lD" role="3XIRFZ">
               <node concept="3TM6Ey" id="4sYKtP1k9lE" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9lF" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -3039,7 +3039,7 @@
                   <property role="2hmy$m" value="1" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9lJ" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9iX" />
+                  <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
@@ -3060,42 +3060,42 @@
       <node concept="1LFebX" id="4sYKtP1k9lQ" role="1_Iowf">
         <property role="TrG5h" value="WaitAfterVentricularEvent" />
         <node concept="1LFeb9" id="4sYKtP1k9lR" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9lS" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9in" />
+            <ref role="1bNv6r" node="4sYKtP1k9in" resolve="AS" />
           </node>
           <node concept="3Tl9Jl" id="4sYKtP1k9lT" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9lU" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jY" />
+              <ref role="349IfP" node="4sYKtP1k9jY" resolve="mPVARP" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9lV" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9j4" />
+              <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="3HmicQ" id="4sYKtP1k9lW" role="lGtFl">
             <node concept="3HmicZ" id="4sYKtP1k9lX" role="Fanlf" />
             <node concept="3HmcO9" id="4sYKtP1k9lY" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZL" />
+              <ref role="3HmaCj" node="9zybxv$FZL" resolve="ignorePvarpSens" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="4sYKtP1k9lZ" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9mQ" />
+          <ref role="1zztin" node="4sYKtP1k9mQ" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="4sYKtP1k9m0" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9in" />
+            <ref role="1bNv6r" node="4sYKtP1k9in" resolve="AS" />
           </node>
           <node concept="3Tl9Jr" id="4sYKtP1k9m1" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9m2" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jY" />
+              <ref role="349IfP" node="4sYKtP1k9jY" resolve="mPVARP" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9m3" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9j4" />
+              <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="3HmicQ" id="4sYKtP1k9m4" role="lGtFl">
             <node concept="3HmicZ" id="4sYKtP1k9m5" role="Fanlf" />
             <node concept="3HmcO9" id="4sYKtP1k9m6" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FYV" />
+              <ref role="3HmaCj" node="9zybxv$FYV" resolve="inhibitAtrial" />
             </node>
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9m7" role="1zz7TA">
@@ -3105,47 +3105,47 @@
                   <property role="2hmy$m" value="0" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9mb" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9iX" />
+                  <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="_lVzq" id="4sYKtP1k9mc" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iG" />
+              <ref role="_lVy$" node="4sYKtP1k9iG" resolve="APN" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="4sYKtP1k9md" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9me" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9mf" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9is" />
+            <ref role="1bNv6r" node="4sYKtP1k9is" resolve="VS" />
           </node>
           <node concept="3Tl9Jl" id="4sYKtP1k9mg" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9mh" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jR" />
+              <ref role="349IfP" node="4sYKtP1k9jR" resolve="mVRP" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9mi" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9j4" />
+              <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="3HmicQ" id="4sYKtP1k9mj" role="lGtFl">
             <node concept="3HmicZ" id="4sYKtP1k9mk" role="Fanlf" />
             <node concept="3HmcO9" id="4sYKtP1k9ml" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZ_" />
+              <ref role="3HmaCj" node="9zybxv$FZ_" resolve="ignoreVrpSens" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="4sYKtP1k9mm" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9mn" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9is" />
+            <ref role="1bNv6r" node="4sYKtP1k9is" resolve="VS" />
           </node>
           <node concept="3Tl9Jr" id="4sYKtP1k9mo" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9mp" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jR" />
+              <ref role="349IfP" node="4sYKtP1k9jR" resolve="mVRP" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9mq" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9j4" />
+              <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
             </node>
           </node>
           <node concept="1z9TsT" id="4sYKtP1k9mr" role="lGtFl">
@@ -3159,37 +3159,37 @@
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9mv" role="1zz7TA">
             <node concept="_lVzq" id="4sYKtP1k9mw" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iR" />
+              <ref role="_lVy$" node="4sYKtP1k9iR" resolve="SignalError" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="4sYKtP1k9mx" role="1KoBSX" />
         <node concept="ODFVE" id="4sYKtP1k9my" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9mz" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9m$" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="3Tl9Jn" id="4sYKtP1k9m_" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9mA" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9j4" />
+              <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9mB" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jy" />
+              <ref role="349IfP" node="4sYKtP1k9jy" resolve="mAEI" />
             </node>
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9mC" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9mD" role="3XIRFZ">
               <node concept="3TM6Ez" id="4sYKtP1k9mE" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9mF" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9iX" />
+                  <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9mG" role="3XIRFZ">
               <node concept="3TM6Ez" id="4sYKtP1k9mH" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9mI" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -3197,16 +3197,16 @@
         </node>
         <node concept="ODFVE" id="4sYKtP1k9mJ" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9mK" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lx" />
+          <ref role="1zztin" node="4sYKtP1k9lx" resolve="PaceArtrial" />
           <node concept="349iI2" id="4sYKtP1k9mL" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="3TlM44" id="4sYKtP1k9mM" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9mN" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jy" />
+              <ref role="349IfP" node="4sYKtP1k9jy" resolve="mAEI" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9mO" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9j4" />
+              <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
             </node>
           </node>
         </node>
@@ -3215,9 +3215,9 @@
       <node concept="1LFebX" id="4sYKtP1k9mQ" role="1_Iowf">
         <property role="TrG5h" value="WaitAfterArtrialEvent" />
         <node concept="1LFeb9" id="4sYKtP1k9mR" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9mQ" />
+          <ref role="1zztin" node="4sYKtP1k9mQ" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="4sYKtP1k9mS" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9in" />
+            <ref role="1bNv6r" node="4sYKtP1k9in" resolve="AS" />
           </node>
           <node concept="1z9TsT" id="4sYKtP1k9mT" role="lGtFl">
             <node concept="OjmMv" id="4sYKtP1k9mU" role="1w35rA">
@@ -3230,15 +3230,15 @@
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9mX" role="1zz7TA">
             <node concept="_lVzq" id="4sYKtP1k9mY" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iR" />
+              <ref role="_lVy$" node="4sYKtP1k9iR" resolve="SignalError" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="4sYKtP1k9mZ" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9n0" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9lQ" />
+          <ref role="1zztin" node="4sYKtP1k9lQ" resolve="WaitAfterVentricularEvent" />
           <node concept="349iI2" id="4sYKtP1k9n1" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9is" />
+            <ref role="1bNv6r" node="4sYKtP1k9is" resolve="VS" />
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9n2" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9n3" role="3XIRFZ">
@@ -3247,47 +3247,47 @@
                   <property role="2hmy$m" value="2" />
                 </node>
                 <node concept="349IfM" id="4sYKtP1k9n6" role="3TlMhI">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
             <node concept="_lVzq" id="4sYKtP1k9n7" role="3XIRFZ">
-              <ref role="_lVy$" node="4sYKtP1k9iL" />
+              <ref role="_lVy$" node="4sYKtP1k9iL" resolve="VPN" />
             </node>
           </node>
           <node concept="3HmicQ" id="4sYKtP1k9n8" role="lGtFl">
             <node concept="3HmicZ" id="4sYKtP1k9n9" role="Fanlf" />
             <node concept="3HmcO9" id="4sYKtP1k9na" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZv" />
+              <ref role="3HmaCj" node="9zybxv$FZv" resolve="inhibitVentricular" />
             </node>
           </node>
         </node>
         <node concept="ODFVE" id="4sYKtP1k9nb" role="1KoBSX" />
         <node concept="1LFeb9" id="4sYKtP1k9nc" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9mQ" />
+          <ref role="1zztin" node="4sYKtP1k9mQ" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="4sYKtP1k9nd" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="3Tl9Jn" id="4sYKtP1k9ne" role="1zz7me">
             <node concept="349IfM" id="4sYKtP1k9nf" role="3TlMhJ">
-              <ref role="349IfP" node="4sYKtP1k9jD" />
+              <ref role="349IfP" node="4sYKtP1k9jD" resolve="mAVI" />
             </node>
             <node concept="349IfM" id="4sYKtP1k9ng" role="3TlMhI">
-              <ref role="349IfP" node="4sYKtP1k9iX" />
+              <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
             </node>
           </node>
           <node concept="3XIRFW" id="4sYKtP1k9nh" role="1zz7TA">
             <node concept="1_9egQ" id="4sYKtP1k9ni" role="3XIRFZ">
               <node concept="3TM6Ez" id="4sYKtP1k9nj" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9nk" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9iX" />
+                  <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9nl" role="3XIRFZ">
               <node concept="3TM6Ez" id="4sYKtP1k9nm" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9nn" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -3295,30 +3295,30 @@
           <node concept="3HmicQ" id="4sYKtP1k9no" role="lGtFl">
             <node concept="3HmicZ" id="4sYKtP1k9np" role="Fanlf" />
             <node concept="3HmcO9" id="4sYKtP1k9nq" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZ1" />
+              <ref role="3HmaCj" node="9zybxv$FZ1" resolve="atrialToVentricular" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="4sYKtP1k9nr" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9mQ" />
+          <ref role="1zztin" node="4sYKtP1k9mQ" resolve="WaitAfterArtrialEvent" />
           <node concept="349iI2" id="4sYKtP1k9ns" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="2EHzL6" id="4sYKtP1k9nt" role="1zz7me">
             <node concept="3Tl9Jn" id="4sYKtP1k9nu" role="3TlMhJ">
               <node concept="349IfM" id="4sYKtP1k9nv" role="3TlMhI">
-                <ref role="349IfP" node="4sYKtP1k9j4" />
+                <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
               </node>
               <node concept="349IfM" id="4sYKtP1k9nw" role="3TlMhJ">
-                <ref role="349IfP" node="4sYKtP1k9jK" />
+                <ref role="349IfP" node="4sYKtP1k9jK" resolve="mURI" />
               </node>
             </node>
             <node concept="3Tl9Jp" id="4sYKtP1k9nx" role="3TlMhI">
               <node concept="349IfM" id="4sYKtP1k9ny" role="3TlMhI">
-                <ref role="349IfP" node="4sYKtP1k9iX" />
+                <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
               </node>
               <node concept="349IfM" id="4sYKtP1k9nz" role="3TlMhJ">
-                <ref role="349IfP" node="4sYKtP1k9jD" />
+                <ref role="349IfP" node="4sYKtP1k9jD" resolve="mAVI" />
               </node>
             </node>
           </node>
@@ -3326,14 +3326,14 @@
             <node concept="1_9egQ" id="4sYKtP1k9n_" role="3XIRFZ">
               <node concept="3TM6Ez" id="4sYKtP1k9nA" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9nB" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9iX" />
+                  <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
                 </node>
               </node>
             </node>
             <node concept="1_9egQ" id="4sYKtP1k9nC" role="3XIRFZ">
               <node concept="3TM6Ez" id="4sYKtP1k9nD" role="1_9egR">
                 <node concept="349IfM" id="4sYKtP1k9nE" role="1_9fRO">
-                  <ref role="349IfP" node="4sYKtP1k9j4" />
+                  <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
                 </node>
               </node>
             </node>
@@ -3341,30 +3341,30 @@
           <node concept="3HmicQ" id="4sYKtP1k9nF" role="lGtFl">
             <node concept="3HmicZ" id="4sYKtP1k9nG" role="Fanlf" />
             <node concept="3HmcO9" id="4sYKtP1k9nH" role="Fanle">
-              <ref role="3HmaCj" node="9zybxv$FZd" />
+              <ref role="3HmaCj" node="9zybxv$FZd" resolve="respectURI" />
             </node>
           </node>
         </node>
         <node concept="1LFeb9" id="4sYKtP1k9nI" role="1KoBSX">
-          <ref role="1zztin" node="4sYKtP1k9ld" />
+          <ref role="1zztin" node="4sYKtP1k9ld" resolve="PaceVentricular" />
           <node concept="349iI2" id="4sYKtP1k9nJ" role="2qxFSM">
-            <ref role="1bNv6r" node="4sYKtP1k9ih" />
+            <ref role="1bNv6r" node="4sYKtP1k9ih" resolve="tick" />
           </node>
           <node concept="2EHzL6" id="4sYKtP1k9nK" role="1zz7me">
             <node concept="3Tl9Jp" id="4sYKtP1k9nL" role="3TlMhJ">
               <node concept="349IfM" id="4sYKtP1k9nM" role="3TlMhI">
-                <ref role="349IfP" node="4sYKtP1k9j4" />
+                <ref role="349IfP" node="4sYKtP1k9j4" resolve="timeSinceVEvent" />
               </node>
               <node concept="349IfM" id="4sYKtP1k9nN" role="3TlMhJ">
-                <ref role="349IfP" node="4sYKtP1k9jK" />
+                <ref role="349IfP" node="4sYKtP1k9jK" resolve="mURI" />
               </node>
             </node>
             <node concept="3Tl9Jp" id="4sYKtP1k9nO" role="3TlMhI">
               <node concept="349IfM" id="4sYKtP1k9nP" role="3TlMhI">
-                <ref role="349IfP" node="4sYKtP1k9iX" />
+                <ref role="349IfP" node="4sYKtP1k9iX" resolve="timeSinceAEvent" />
               </node>
               <node concept="349IfM" id="4sYKtP1k9nQ" role="3TlMhJ">
-                <ref role="349IfP" node="4sYKtP1k9jD" />
+                <ref role="349IfP" node="4sYKtP1k9jD" resolve="mAVI" />
               </node>
             </node>
           </node>
@@ -3386,10 +3386,10 @@
       <property role="TrG5h" value="empty_1381414235189_30" />
     </node>
     <node concept="3GEVxB" id="4sYKtP1k9vl" role="2OODSX">
-      <ref role="3GEb4d" node="9zybxv$FYs" />
+      <ref role="3GEb4d" node="9zybxv$FYs" resolve="DDDRequirements" />
     </node>
     <node concept="3GEVxB" id="4sYKtP1njjB" role="2OODSX">
-      <ref role="3GEb4d" node="4sYKtP1iquS" />
+      <ref role="3GEb4d" node="4sYKtP1iquS" resolve="stdio" />
     </node>
   </node>
 </model>

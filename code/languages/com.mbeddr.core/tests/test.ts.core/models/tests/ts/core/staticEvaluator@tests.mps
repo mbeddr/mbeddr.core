@@ -336,7 +336,7 @@
           <node concept="3XIRFW" id="33$Pd7DV$YN" role="3XIRFX">
             <node concept="1_9egQ" id="33$Pd7DVTYp" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DVTYn" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Qy" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Qy" resolve="EN1_FIRST" />
                 <node concept="3xLA65" id="33$Pd7DVUty" role="lGtFl">
                   <property role="TrG5h" value="en1_first" />
                 </node>
@@ -344,7 +344,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DVTYI" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DVTZ6" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Rd" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Rd" resolve="EN1_SECOND" />
                 <node concept="3xLA65" id="33$Pd7DW0hD" role="lGtFl">
                   <property role="TrG5h" value="en1_second" />
                 </node>
@@ -352,7 +352,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DW0on" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW0ol" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$RU" />
+                <ref role="1AkAhZ" node="33$Pd7DV$RU" resolve="EN1_THIRD" />
                 <node concept="3xLA65" id="33$Pd7DW0xM" role="lGtFl">
                   <property role="TrG5h" value="en1_third" />
                 </node>
@@ -361,7 +361,7 @@
             <node concept="3XISUE" id="33$Pd7DW0oX" role="3XIRFZ" />
             <node concept="1_9egQ" id="33$Pd7DW1gx" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW1gy" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Tb" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Tb" resolve="EN2_FIRST" />
                 <node concept="3xLA65" id="33$Pd7DW1gz" role="lGtFl">
                   <property role="TrG5h" value="en2_first" />
                 </node>
@@ -369,7 +369,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DW1g$" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW1g_" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Tc" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Tc" resolve="EN2_SECOND" />
                 <node concept="3xLA65" id="33$Pd7DW1gA" role="lGtFl">
                   <property role="TrG5h" value="en2_second" />
                 </node>
@@ -377,7 +377,7 @@
             </node>
             <node concept="1_9egQ" id="33$Pd7DW1gB" role="3XIRFZ">
               <node concept="1AkAhK" id="33$Pd7DW1gC" role="1_9egR">
-                <ref role="1AkAhZ" node="33$Pd7DV$Td" />
+                <ref role="1AkAhZ" node="33$Pd7DV$Td" resolve="EN2_THIRD" />
                 <node concept="3xLA65" id="33$Pd7DW1gD" role="lGtFl">
                   <property role="TrG5h" value="en2_third" />
                 </node>

@@ -41,7 +41,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -128,7 +128,7 @@
     <property role="TrG5h" value="FunctionPointer" />
     <node concept="29bEnc" id="5t7wq7uZRZb" role="29bA6Q" />
     <node concept="3qy1PH" id="5S3xvtacP$" role="3qy1PE">
-      <ref role="30ajXG" to="xtfr:4Y0lNFa3ShG" />
+      <ref role="30ajXG" to="xtfr:4Y0lNFa3ShG" resolve="FunctionPointersTest" />
     </node>
     <node concept="3sgmnF" id="36fFjS6KkBI" role="1zJi$$" />
     <node concept="1vuW9F" id="36fFjS6KkBL" role="1zJi$$">
@@ -182,7 +182,7 @@
         </node>
       </node>
       <node concept="1vv375" id="6peY0n8y42Y" role="1zHble">
-        <ref role="1vv99g" node="36fFjS6KkBL" />
+        <ref role="1vv99g" node="36fFjS6KkBL" resolve="globalVar" />
       </node>
     </node>
     <node concept="3sgmnF" id="36fFjS6KkBJ" role="1zJi$$" />
@@ -192,7 +192,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lVX" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lVY" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lVZ" role="3sdZbB">
-          <ref role="3sa5fj" to="xtfr:bKKma6H326" />
+          <ref role="3sa5fj" to="xtfr:bKKma6H326" resolve="callTo1stReferencedFunction" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lW0" role="3savwP">
@@ -212,7 +212,7 @@
         <node concept="30a7bf" id="7Jr7T0w2lW6" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM$H" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="xtfr:bKKma6H33w" />
+            <ref role="3cQ7K8" to="xtfr:bKKma6H33w" resolve="stmntAfterCallTo1stReferencedFunction" />
           </node>
         </node>
       </node>
@@ -224,7 +224,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m5I" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m5J" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m5K" role="3sdZbB">
-          <ref role="3sa5fj" to="xtfr:bKKma6H32t" />
+          <ref role="3sa5fj" to="xtfr:bKKma6H32t" resolve="callingReferencedFunctionInsideFunction" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m5L" role="3savwP">
@@ -236,7 +236,7 @@
         <node concept="30a7bf" id="7Jr7T0w2m5O" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM$B" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="xtfr:bKKma6H32P" />
+            <ref role="3cQ7K8" to="xtfr:bKKma6H32P" resolve="firstStmntInsideAddFunc" />
           </node>
         </node>
         <node concept="1l6n2J" id="C8RYlEwfnC" role="3F5Y$9">
@@ -262,7 +262,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mgC" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mgD" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mgE" role="3sdZbB">
-          <ref role="3sa5fj" to="xtfr:bKKma6H326" />
+          <ref role="3sa5fj" to="xtfr:bKKma6H326" resolve="callTo1stReferencedFunction" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mgF" role="3savwP">
@@ -285,7 +285,7 @@
         <node concept="30a7bf" id="7Jr7T0w2mgM" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM$_" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="xtfr:bKKma6H32P" />
+            <ref role="3cQ7K8" to="xtfr:bKKma6H32P" resolve="firstStmntInsideAddFunc" />
           </node>
         </node>
       </node>
@@ -297,7 +297,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mh0" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mh1" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mh2" role="3sdZbB">
-          <ref role="3sa5fj" to="xtfr:bKKma6H32m" />
+          <ref role="3sa5fj" to="xtfr:bKKma6H32m" resolve="callingFunctionWithFunctionPointerArgument" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mh3" role="3savwP">
@@ -320,7 +320,7 @@
         <node concept="30a7bf" id="7Jr7T0w2mha" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM$J" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="xtfr:bKKma6H32t" />
+            <ref role="3cQ7K8" to="xtfr:bKKma6H32t" resolve="callingReferencedFunctionInsideFunction" />
           </node>
         </node>
       </node>
@@ -332,20 +332,20 @@
       <node concept="3clFbS" id="36fFjS6JXd1" role="3clF47" />
       <node concept="3sdZbQ" id="36fFjS6JXd2" role="3scror">
         <node concept="3sdZbA" id="36fFjS6JXd3" role="3sdZbB">
-          <ref role="3sa5fj" to="xtfr:36fFjS6JXcT" />
+          <ref role="3sa5fj" to="xtfr:36fFjS6JXcT" resolve="functionPointerIsNull" />
         </node>
       </node>
       <node concept="3F5Y_J" id="36fFjS6JXd4" role="3F5AM1">
         <node concept="30a7bf" id="36fFjS6JXd5" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM$F" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="xtfr:36fFjS6JXcT" />
+            <ref role="3cQ7K8" to="xtfr:36fFjS6JXcT" resolve="functionPointerIsNull" />
           </node>
         </node>
         <node concept="16YvwY" id="7qzmU5U0yw$" role="3F5Y$9">
           <node concept="1l46Ie" id="6peY0n8y4QU" role="16YnsZ">
             <node concept="1vv375" id="6peY0n8y4QV" role="1vv36M">
-              <ref role="1vv99g" node="6peY0n8y3qO" />
+              <ref role="1vv99g" node="6peY0n8y3qO" resolve="optimizedWatchablesOnMac" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0Aws" role="16XPZB">
@@ -412,7 +412,7 @@
                 </node>
               </node>
               <node concept="1vv375" id="36fFjS6KkBM" role="1vv36M">
-                <ref role="1vv99g" node="36fFjS6KkBL" />
+                <ref role="1vv99g" node="36fFjS6KkBL" resolve="globalVar" />
               </node>
             </node>
           </node>
@@ -426,20 +426,20 @@
       <node concept="3clFbS" id="36fFjS6KkBz" role="3clF47" />
       <node concept="3sdZbQ" id="36fFjS6KkBB" role="3scror">
         <node concept="3sdZbA" id="36fFjS6KkBC" role="3sdZbB">
-          <ref role="3sa5fj" to="xtfr:36fFjS6KkB$" />
+          <ref role="3sa5fj" to="xtfr:36fFjS6KkB$" resolve="functionPointersNotNull" />
         </node>
       </node>
       <node concept="3F5Y_J" id="36fFjS6KkBD" role="3F5AM1">
         <node concept="30a7bf" id="36fFjS6KkBE" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaM$D" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="xtfr:36fFjS6KkB$" />
+            <ref role="3cQ7K8" to="xtfr:36fFjS6KkB$" resolve="functionPointersNotNull" />
           </node>
         </node>
         <node concept="16YvwY" id="7qzmU5U0yu$" role="3F5Y$9">
           <node concept="1l46Ie" id="6peY0n8y2Vd" role="16YnsZ">
             <node concept="1vv375" id="6peY0n8y4Jw" role="1vv36M">
-              <ref role="1vv99g" node="6peY0n8y3qO" />
+              <ref role="1vv99g" node="6peY0n8y3qO" resolve="optimizedWatchablesOnMac" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0A$G" role="16XPZB">
@@ -506,7 +506,7 @@
                 </node>
               </node>
               <node concept="1vv375" id="36fFjS6KkC0" role="1vv36M">
-                <ref role="1vv99g" node="36fFjS6KkBL" />
+                <ref role="1vv99g" node="36fFjS6KkBL" resolve="globalVar" />
               </node>
             </node>
           </node>

@@ -170,7 +170,7 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3ZVu4v" id="3jCcpnp1H9S" role="3TlMhI">
-              <ref role="3ZVs_2" node="3jCcpnp1H9G" />
+              <ref role="3ZVs_2" node="3jCcpnp1H9G" resolve="x" />
             </node>
           </node>
           <node concept="3cQ7KT" id="4PM5ysqt3Ia" role="lGtFl">
@@ -259,7 +259,7 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3ZVu4v" id="4PM5ysqt5ac" role="3TlMhI">
-              <ref role="3ZVs_2" node="4PM5ysqt5a3" />
+              <ref role="3ZVs_2" node="4PM5ysqt5a3" resolve="x" />
             </node>
           </node>
           <node concept="3cQ7KT" id="4PM5ysqt5ad" role="lGtFl">
@@ -294,13 +294,13 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXFx" role="lIfQt">
-        <ref role="3cM6IK" node="3jCcpnp1H9B" />
+        <ref role="3cM6IK" node="3jCcpnp1H9B" resolve="testSingleLineCommenting" />
       </node>
       <node concept="3cM6IN" id="4Tiud0TdXFy" role="lIfQt">
-        <ref role="3cM6IK" node="4PM5ysqt5a0" />
+        <ref role="3cM6IK" node="4PM5ysqt5a0" resolve="testMultiLineCommenting" />
       </node>
       <node concept="3cM6IN" id="4Tiud0TdXFz" role="lIfQt">
-        <ref role="3cM6IK" node="4PM5ysqt3HI" />
+        <ref role="3cM6IK" node="4PM5ysqt3HI" resolve="testWithSingleLineCommentStatement" />
       </node>
     </node>
   </node>
@@ -308,7 +308,7 @@
     <node concept="2eOfOl" id="3jCcpnp1H9p" role="2ePNbc">
       <property role="TrG5h" value="CommentTest" />
       <node concept="2v9HqM" id="3jCcpnp1H9q" role="2eOfOg">
-        <ref role="2v9HqP" node="3jCcpnp1H8B" />
+        <ref role="2v9HqP" node="3jCcpnp1H8B" resolve="CommentsTest" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTgB" role="1kZvWc">
         <property role="TrG5h" value="any" />

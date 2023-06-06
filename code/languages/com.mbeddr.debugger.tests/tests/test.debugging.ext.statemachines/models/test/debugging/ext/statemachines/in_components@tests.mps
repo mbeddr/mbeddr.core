@@ -45,7 +45,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -190,7 +190,7 @@
         </node>
       </node>
       <node concept="1vv375" id="5lunSHinBug" role="1zHble">
-        <ref role="1vv99g" node="5lunSHinBtc" />
+        <ref role="1vv99g" node="5lunSHinBtc" resolve="outsideStateMachine" />
       </node>
     </node>
     <node concept="1vuW9F" id="5lunSHinXxz" role="1zJi$$">
@@ -199,7 +199,7 @@
         <property role="TrG5h" value="seitch" />
       </node>
       <node concept="1vv375" id="5lunSHinXx$" role="1zHble">
-        <ref role="1vv99g" node="5lunSHinBtb" />
+        <ref role="1vv99g" node="5lunSHinBtb" resolve="inStateMachine" />
       </node>
     </node>
     <node concept="1vuW9F" id="5lunSHinSAD" role="1zJi$$">
@@ -227,7 +227,7 @@
         </node>
       </node>
       <node concept="1vv375" id="5lunSHinSAE" role="1zHble">
-        <ref role="1vv99g" node="5lunSHinBtc" />
+        <ref role="1vv99g" node="5lunSHinBtc" resolve="outsideStateMachine" />
       </node>
     </node>
     <node concept="3sgmnF" id="5lunSHinBta" role="1zJi$$" />
@@ -237,7 +237,7 @@
       <node concept="3clFbS" id="5lunSHinBt0" role="3clF47" />
       <node concept="3sdZbQ" id="5lunSHinBt2" role="3scror">
         <node concept="3sdZbA" id="5lunSHinBt3" role="3sdZbB">
-          <ref role="3sa5fj" to="ne0g:2Zy_zYsNcRv" />
+          <ref role="3sa5fj" to="ne0g:2Zy_zYsNcRv" resolve="inExitAction" />
         </node>
       </node>
       <node concept="3savIG" id="5lunSHinBt4" role="3savwP">
@@ -249,12 +249,12 @@
         <node concept="30a7bf" id="5lunSHinBt7" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEXk" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ne0g:2Zy_zYsNcR2" />
+            <ref role="3cQ7K8" to="ne0g:2Zy_zYsNcR2" resolve="inTransitionBodyWithCond" />
           </node>
         </node>
         <node concept="1l46Ie" id="5lunSHinBte" role="3F5Y$9">
           <node concept="1vv375" id="5lunSHinXxA" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinXxz" />
+            <ref role="1vv99g" node="5lunSHinXxz" resolve="inStateMachineTransition" />
           </node>
         </node>
       </node>
@@ -266,7 +266,7 @@
       <node concept="3clFbS" id="5lunSHinBtm" role="3clF47" />
       <node concept="3sdZbQ" id="5lunSHinBto" role="3scror">
         <node concept="3sdZbA" id="5lunSHinBtp" role="3sdZbB">
-          <ref role="3sa5fj" to="ne0g:5lunSHinBtn" />
+          <ref role="3sa5fj" to="ne0g:5lunSHinBtn" resolve="lastStmntInDo" />
         </node>
       </node>
       <node concept="3savIG" id="5lunSHinBtq" role="3savwP">
@@ -278,12 +278,12 @@
         <node concept="30a7bf" id="5lunSHinBtt" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEXg" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ne0g:5lunSHim2rO" />
+            <ref role="3cQ7K8" to="ne0g:5lunSHim2rO" resolve="breakingOnTrans" />
           </node>
         </node>
         <node concept="1l46Ie" id="5lunSHinBtw" role="3F5Y$9">
           <node concept="1vv375" id="5lunSHinXxB" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinXxz" />
+            <ref role="1vv99g" node="5lunSHinXxz" resolve="inStateMachineTransition" />
           </node>
         </node>
       </node>
@@ -295,14 +295,14 @@
       <node concept="3clFbS" id="5lunSHinBt$" role="3clF47" />
       <node concept="3sdZbQ" id="5lunSHinBtF" role="3scror">
         <node concept="3sdZbA" id="5lunSHinBtK" role="3sdZbB">
-          <ref role="3sa5fj" to="ne0g:5lunSHinBt_" />
+          <ref role="3sa5fj" to="ne0g:5lunSHinBt_" resolve="lastStmntInTrans" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5lunSHinBtH" role="3F5AM1">
         <node concept="30a7bf" id="5lunSHinBtI" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEXc" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ne0g:5lunSHinFwO" />
+            <ref role="3cQ7K8" to="ne0g:5lunSHinFwO" resolve="inEntry" />
           </node>
         </node>
       </node>
@@ -319,25 +319,25 @@
       <node concept="3clFbS" id="5lunSHinSAf" role="3clF47" />
       <node concept="3sdZbQ" id="5lunSHinSAx" role="3scror">
         <node concept="3sdZbA" id="2eaTN_oFahO" role="3sdZbB">
-          <ref role="3sa5fj" to="ne0g:2eaTN_oFahw" />
+          <ref role="3sa5fj" to="ne0g:2eaTN_oFahw" resolve="triggeringRunnable" />
         </node>
       </node>
       <node concept="3F5Y_J" id="5lunSHinSAz" role="3F5AM1">
         <node concept="30a7bf" id="5lunSHinSA$" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEXi" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ne0g:2eaTN_oEjn3" />
+            <ref role="3cQ7K8" to="ne0g:2eaTN_oEjn3" resolve="inRunnable" />
           </node>
         </node>
         <node concept="1l46Ie" id="5lunSHinSAB" role="3F5Y$9">
           <node concept="1vv375" id="5lunSHinSAN" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinSAD" />
+            <ref role="1vv99g" node="5lunSHinSAD" resolve="inRunnable" />
           </node>
         </node>
         <node concept="30a7bf" id="2eaTN_oGUxm" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEXm" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ne0g:2eaTN_oEjn3" />
+            <ref role="3cQ7K8" to="ne0g:2eaTN_oEjn3" resolve="inRunnable" />
           </node>
         </node>
       </node>
@@ -354,7 +354,7 @@
       <node concept="3clFbS" id="5lunSHinSAk" role="3clF47" />
       <node concept="3sdZbQ" id="5lunSHinSAl" role="3scror">
         <node concept="3sdZbA" id="5lunSHinSAm" role="3sdZbB">
-          <ref role="3sa5fj" to="ne0g:2eaTN_oEjn3" />
+          <ref role="3sa5fj" to="ne0g:2eaTN_oEjn3" resolve="inRunnable" />
         </node>
       </node>
       <node concept="3savIG" id="5lunSHinSAn" role="3savwP">
@@ -369,18 +369,18 @@
         <node concept="30a7bf" id="5lunSHinSAq" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhzEXe" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="ne0g:5lunSHinSAr" />
+            <ref role="3cQ7K8" to="ne0g:5lunSHinSAr" resolve="inDo" />
           </node>
         </node>
         <node concept="1l46Ie" id="5lunSHinSAv" role="3F5Y$9">
           <node concept="1vv375" id="5lunSHinSAw" role="1vv36M">
-            <ref role="1vv99g" node="5lunSHinBtb" />
+            <ref role="1vv99g" node="5lunSHinBtb" resolve="inStateMachine" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="2Zy_zYsNcRa" role="3qy1PE">
-      <ref role="30ajXG" to="ne0g:3_UUdaFlgP4" />
+      <ref role="30ajXG" to="ne0g:3_UUdaFlgP4" resolve="SMInComponent" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

@@ -281,10 +281,10 @@
                 <node concept="1AkAi2" id="72mSD5RA2z8" role="2C2TGm">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
-                  <ref role="1AkAi1" node="72mSD5R_Zg5" />
+                  <ref role="1AkAi1" node="72mSD5R_Zg5" resolve="anEnumeration" />
                 </node>
                 <node concept="1AkAhK" id="72mSD5RA2HB" role="3XIe9u">
-                  <ref role="1AkAhZ" node="72mSD5R_ZjL" />
+                  <ref role="1AkAhZ" node="72mSD5R_ZjL" resolve="e1" />
                 </node>
               </node>
               <node concept="3XISUE" id="72mSD5R_Z7A" role="3XIRFZ" />
@@ -292,18 +292,18 @@
                 <node concept="2EHzL4" id="72mSD5RA2_Z" role="1_9egR">
                   <node concept="3TlM44" id="72mSD5RA2ER" role="3TlMhJ">
                     <node concept="1AkAhK" id="72mSD5RA2G3" role="3TlMhJ">
-                      <ref role="1AkAhZ" node="72mSD5R_ZjV" />
+                      <ref role="1AkAhZ" node="72mSD5R_ZjV" resolve="e2" />
                     </node>
                     <node concept="3ZVu4v" id="72mSD5RA2AO" role="3TlMhI">
-                      <ref role="3ZVs_2" node="72mSD5R_Z7y" />
+                      <ref role="3ZVs_2" node="72mSD5R_Z7y" resolve="enumVar" />
                     </node>
                   </node>
                   <node concept="3TlM44" id="72mSD5RA2$Z" role="3TlMhI">
                     <node concept="1AkAhK" id="72mSD5RA2_w" role="3TlMhJ">
-                      <ref role="1AkAhZ" node="72mSD5R_ZjL" />
+                      <ref role="1AkAhZ" node="72mSD5R_ZjL" resolve="e1" />
                     </node>
                     <node concept="3ZVu4v" id="72mSD5RA2$J" role="3TlMhI">
-                      <ref role="3ZVs_2" node="72mSD5R_Z7y" />
+                      <ref role="3ZVs_2" node="72mSD5R_Z7y" resolve="enumVar" />
                     </node>
                   </node>
                   <node concept="raruj" id="72mSD5RA2Iy" role="lGtFl" />

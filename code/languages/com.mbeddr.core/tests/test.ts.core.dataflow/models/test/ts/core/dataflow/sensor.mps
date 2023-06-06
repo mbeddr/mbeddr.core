@@ -143,10 +143,10 @@
           <node concept="3XIRFW" id="7BrayaYPdOc" role="c0U17">
             <node concept="1_9egQ" id="6X3ybixPqAz" role="3XIRFZ">
               <node concept="3O_q_g" id="6X3ybixPqAx" role="1_9egR">
-                <ref role="3O_q_h" node="6X3ybixPnIE" />
+                <ref role="3O_q_h" node="6X3ybixPnIE" resolve="readSensor" />
                 <node concept="YInwV" id="6X3ybixPqBd" role="3O_q_j">
                   <node concept="3ZVu4v" id="6X3ybixPqBC" role="1_9fRO">
-                    <ref role="3ZVs_2" node="6X3ybixPqkz" />
+                    <ref role="3ZVs_2" node="6X3ybixPqkz" resolve="temp" />
                   </node>
                 </node>
               </node>
@@ -154,17 +154,17 @@
           </node>
           <node concept="2qmXGp" id="7BrayaYPdRr" role="c0U16">
             <node concept="1E4Tgc" id="7BrayaYPe5Q" role="1ESnxz">
-              <ref role="1E4Tge" node="7BrayaYPdYV" />
+              <ref role="1E4Tge" node="7BrayaYPdYV" resolve="active" />
             </node>
             <node concept="3ZUYvv" id="7BrayaYPdRh" role="1_9fRO">
-              <ref role="3ZUYvu" node="6X3ybixPF9f" />
+              <ref role="3ZUYvu" node="6X3ybixPF9f" resolve="env" />
             </node>
           </node>
           <node concept="1ly_i6" id="7BrayaYPeqA" role="ggAap">
             <node concept="3XIRFW" id="7BrayaYPeqB" role="1ly_ph">
               <node concept="1_9egQ" id="6X3ybixPrbg" role="3XIRFZ">
                 <node concept="3O_q_g" id="6X3ybixPrbf" role="1_9egR">
-                  <ref role="3O_q_h" node="6X3ybixPr5z" />
+                  <ref role="3O_q_h" node="6X3ybixPr5z" resolve="error" />
                   <node concept="PhEJO" id="6X3ybixPrc1" role="3O_q_j">
                     <property role="PhEJT" value="Inactive system init!" />
                   </node>
@@ -175,12 +175,12 @@
         </node>
         <node concept="1_9egQ" id="6X3ybixPsjo" role="3XIRFZ">
           <node concept="3O_q_g" id="6X3ybixPsjn" role="1_9egR">
-            <ref role="3O_q_h" node="6X3ybixPscY" />
+            <ref role="3O_q_h" node="6X3ybixPscY" resolve="calibrateEnv" />
             <node concept="3ZUYvv" id="6X3ybixPFds" role="3O_q_j">
-              <ref role="3ZUYvu" node="6X3ybixPF9f" />
+              <ref role="3ZUYvu" node="6X3ybixPF9f" resolve="env" />
             </node>
             <node concept="3ZVu4v" id="6X3ybixPslF" role="3O_q_j">
-              <ref role="3ZVs_2" node="6X3ybixPqkz" />
+              <ref role="3ZVs_2" node="6X3ybixPqkz" resolve="temp" />
             </node>
           </node>
         </node>
@@ -194,7 +194,7 @@
         <node concept="1sgJKr" id="6X3ybixPF9e" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="6X3ybixPF6p" />
+          <ref role="1sgJKq" node="6X3ybixPF6p" resolve="Environment" />
         </node>
       </node>
     </node>
@@ -205,10 +205,10 @@
       <property role="TrG5h" value="empty_1460808288127_6" />
     </node>
     <node concept="3GEVxB" id="6X3ybixPnhL" role="2OODSX">
-      <ref role="3GEb4d" to="b609:41BTkV3WhIs" />
+      <ref role="3GEb4d" to="b609:41BTkV3WhIs" resolve="pthread" />
     </node>
     <node concept="3GEVxB" id="6X3ybixPnGf" role="2OODSX">
-      <ref role="3GEb4d" node="6X3ybixPnED" />
+      <ref role="3GEb4d" node="6X3ybixPnED" resolve="SensorUtil" />
     </node>
   </node>
   <node concept="N3F5e" id="6X3ybixPnED">
@@ -242,7 +242,7 @@
           <node concept="3pqW6w" id="6X3ybixPqwb" role="1_9egR">
             <node concept="3wxyx2" id="6X3ybixPqwc" role="3TlMhI">
               <node concept="3ZUYvv" id="6X3ybixPqvD" role="1_9fRO">
-                <ref role="3ZUYvu" node="6X3ybixPqo6" />
+                <ref role="3ZUYvu" node="6X3ybixPqo6" resolve="p" />
               </node>
             </node>
             <node concept="3TlMh9" id="6X3ybixPqwf" role="3TlMhJ">
@@ -322,7 +322,7 @@
         <node concept="1sgJKr" id="6X3ybixPFz0" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="6X3ybixPF6p" />
+          <ref role="1sgJKq" node="6X3ybixPF6p" resolve="Environment" />
         </node>
       </node>
       <node concept="19RgSI" id="6X3ybixPsfP" role="1UOdpc">

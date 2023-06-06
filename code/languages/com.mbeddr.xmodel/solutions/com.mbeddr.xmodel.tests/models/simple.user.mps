@@ -138,10 +138,10 @@
     <node concept="2eOfOl" id="2vBUIEiz2U_" role="2ePNbc">
       <property role="TrG5h" value="myExecutable" />
       <node concept="2v9HqM" id="2vBUIEiz2UF" role="2eOfOg">
-        <ref role="2v9HqP" node="2vBUIEiz2N5" />
+        <ref role="2v9HqP" node="2vBUIEiz2N5" resolve="MyImpl" />
       </node>
       <node concept="2v9HqM" id="2vBUIEiz2UQ" role="2eOfOg">
-        <ref role="2v9HqP" to="4hbs:2vBUIEiz2CE" />
+        <ref role="2v9HqP" to="4hbs:2vBUIEiz2CE" resolve="MyLib" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxy42E" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -181,7 +181,7 @@
       <node concept="3XIRFW" id="2vBUIEiz2Nd" role="3XIRFX">
         <node concept="1_9egQ" id="2vBUIEiz2PN" role="3XIRFZ">
           <node concept="3O_q_g" id="2vBUIEiz2PL" role="1_9egR">
-            <ref role="3O_q_h" to="4hbs:2vBUIEiz2D3" />
+            <ref role="3O_q_h" to="4hbs:2vBUIEiz2D3" resolve="function" />
             <node concept="3TlMh9" id="2vBUIEiz2Rs" role="3O_q_j">
               <property role="2hmy$m" value="32" />
             </node>
@@ -217,7 +217,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="2vBUIEiz2N7" role="2OODSX">
-      <ref role="3GEb4d" to="4hbs:2vBUIEiz2CE" />
+      <ref role="3GEb4d" to="4hbs:2vBUIEiz2CE" resolve="MyLib" />
     </node>
   </node>
 </model>

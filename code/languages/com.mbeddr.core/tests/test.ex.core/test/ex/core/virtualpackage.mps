@@ -108,7 +108,7 @@
       <node concept="3XIRFW" id="6CpO2H4KiHM" role="3XIRFX">
         <node concept="2BFjQ_" id="6CpO2H4KHS3" role="3XIRFZ">
           <node concept="3O_q_g" id="6CpO2H4KHSm" role="2BFjQA">
-            <ref role="3O_q_h" node="6CpO2H4KiR2" />
+            <ref role="3O_q_h" node="6CpO2H4KiR2" resolve="aFunction" />
           </node>
         </node>
       </node>
@@ -137,12 +137,12 @@
     </node>
     <node concept="3GEVxB" id="6PCgYL5qJ43" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="6CpO2H4KiOH" />
+      <ref role="3GEb4d" node="6CpO2H4KiOH" resolve="AnotherModule" />
     </node>
   </node>
   <node concept="2v9HqL" id="6CpO2H4KiJl">
     <node concept="2xfidK" id="1WKZBvBXE1c" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="6CpO2H4KiJn" role="2Q9xDr">
       <node concept="2Q9FjX" id="6CpO2H4KiJo" role="2Q9FjI" />
@@ -150,10 +150,10 @@
     <node concept="2eOfOl" id="6CpO2H4KiJp" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="6CpO2H4KiJq" role="2eOfOg">
-        <ref role="2v9HqP" node="6CpO2H4KiHW" />
+        <ref role="2v9HqP" node="6CpO2H4KiHW" resolve="VirtualPackages" />
       </node>
       <node concept="2v9HqM" id="6CpO2H4KIOf" role="2eOfOg">
-        <ref role="2v9HqP" node="6CpO2H4KiOH" />
+        <ref role="2v9HqP" node="6CpO2H4KiOH" resolve="AnotherModule" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgR" role="1kZvWc">
         <property role="TrG5h" value="any" />

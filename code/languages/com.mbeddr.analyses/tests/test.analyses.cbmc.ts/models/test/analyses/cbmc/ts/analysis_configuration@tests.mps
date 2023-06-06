@@ -159,7 +159,7 @@
           <property role="2lUGbD" value="none" />
           <property role="2lUGcN" value="false" />
           <property role="2l50Mm" value="false" />
-          <ref role="3V$Cn$" node="7VJQUau7qlm" />
+          <ref role="3V$Cn$" node="7VJQUau7qlm" resolve="foo" />
           <node concept="7CXmI" id="7VJQUau7v08" role="lGtFl">
             <node concept="1TM$A" id="7VJQUau7v09" role="7EUXB">
               <node concept="2PYRI3" id="7VJQUau7v0I" role="3lydEf">
@@ -169,7 +169,7 @@
           </node>
         </node>
         <node concept="3GEVxB" id="7VJQUau7qmz" role="3W6d8T">
-          <ref role="3GEb4d" node="7VJQUau7qkS" />
+          <ref role="3GEb4d" node="7VJQUau7qkS" resolve="dummy" />
           <node concept="7CXmI" id="7VJQUau7qm_" role="lGtFl">
             <node concept="1TM$A" id="7VJQUau7qmE" role="7EUXB" />
           </node>

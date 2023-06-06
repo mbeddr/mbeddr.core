@@ -207,7 +207,7 @@
     <node concept="2eOfOl" id="62XMcUob$tE" role="2ePNbc">
       <property role="TrG5h" value="InstanceConfiguration" />
       <node concept="2v9HqM" id="62XMcUob$tF" role="2eOfOg">
-        <ref role="2v9HqP" node="62XMcUob$tz" />
+        <ref role="2v9HqP" node="62XMcUob$tz" resolve="InstanceConfiguration" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTh4" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -267,10 +267,10 @@
         <node concept="2BFjQ_" id="15saLbNvhN_" role="3XIRFZ">
           <node concept="2BOcil" id="15saLbNvhNI" role="2BFjQA">
             <node concept="3ZUYvv" id="15saLbNvhNJ" role="3TlMhI">
-              <ref role="3ZUYvu" node="15saLbNvhNE" />
+              <ref role="3ZUYvu" node="15saLbNvhNE" resolve="a" />
             </node>
             <node concept="3ZUYvv" id="15saLbNvhNK" role="3TlMhJ">
-              <ref role="3ZUYvu" node="15saLbNvhNG" />
+              <ref role="3ZUYvu" node="15saLbNvhNG" resolve="b" />
             </node>
           </node>
         </node>
@@ -319,16 +319,16 @@
       <property role="TrG5h" value="A" />
       <node concept="2EWHp_" id="13C5RDfC76X" role="2RW2fA">
         <property role="TrG5h" value="dummy" />
-        <ref role="2EX0h9" node="13C5RDfC76U" />
+        <ref role="2EX0h9" node="13C5RDfC76U" resolve="Dummy" />
       </node>
       <node concept="EbCE0" id="1mLkhC6229C" role="2RW2fA">
         <property role="TrG5h" value="adder" />
         <property role="3R_39t" value="false" />
         <node concept="rcJHQ" id="1mLkhC6229E" role="2C2TGm">
-          <ref role="rcJHT" node="1mLkhC6229w" />
+          <ref role="rcJHT" node="1mLkhC6229w" resolve="adderFun" />
         </node>
         <node concept="pF0ck" id="6_QWgLdiX4t" role="EbCE5">
-          <ref role="pF0ci" node="15saLbNvhNz" />
+          <ref role="pF0ci" node="15saLbNvhNz" resolve="badAdder" />
         </node>
       </node>
       <node concept="EbCE0" id="13C5RDfDpOy" role="2RW2fA">
@@ -345,8 +345,8 @@
         <property role="TrG5h" value="dummy_doSomething" />
         <node concept="3XIRFW" id="13C5RDfC76Z" role="2EWMhI" />
         <node concept="2EWDw0" id="13C5RDfC771" role="2EWDeT">
-          <ref role="1ZwSu5" node="13C5RDfC76X" />
-          <ref role="1ZwxE2" node="13C5RDfC76V" />
+          <ref role="1ZwSu5" node="13C5RDfC76X" resolve="dummy" />
+          <ref role="1ZwxE2" node="13C5RDfC76V" resolve="doSomething" />
         </node>
         <node concept="19Rifw" id="13C5RDfC772" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -362,7 +362,7 @@
       <property role="TrG5h" value="B" />
       <node concept="2EWHp$" id="13C5RDfCTbd" role="2RW2fA">
         <property role="TrG5h" value="dummy" />
-        <ref role="2EX0h9" node="13C5RDfC76U" />
+        <ref role="2EX0h9" node="13C5RDfC76U" resolve="Dummy" />
       </node>
     </node>
     <node concept="2NXPZ9" id="62XMcUob$u2" role="N3F5h">
@@ -373,7 +373,7 @@
       <property role="2OOxQR" value="false" />
       <node concept="2EWCuV" id="62XMcUob$u4" role="5JtDH">
         <property role="TrG5h" value="first" />
-        <ref role="2EWCuU" node="62XMcUob$u3" />
+        <ref role="2EWCuU" node="62XMcUob$u3" resolve="A" />
         <node concept="3cQ7KT" id="13C5RDf$HMb" role="lGtFl">
           <property role="TrG5h" value="firstInstance" />
         </node>
@@ -381,8 +381,8 @@
       <node concept="21gPQu" id="13C5RDfC9VL" role="5JtDH">
         <property role="TrG5h" value="aAdapeter" />
         <node concept="219P8x" id="13C5RDfC9VM" role="21ad3a">
-          <ref role="219P8J" node="13C5RDfC76X" />
-          <ref role="219P8w" node="62XMcUob$u4" />
+          <ref role="219P8J" node="13C5RDfC76X" resolve="dummy" />
+          <ref role="219P8w" node="62XMcUob$u4" resolve="first" />
         </node>
         <node concept="3cQ7KT" id="13C5RDfC9VN" role="lGtFl">
           <property role="TrG5h" value="adapter" />
@@ -390,7 +390,7 @@
       </node>
       <node concept="2EWCuV" id="62XMcUob$u7" role="5JtDH">
         <property role="TrG5h" value="second" />
-        <ref role="2EWCuU" node="62XMcUob$u3" />
+        <ref role="2EWCuU" node="62XMcUob$u3" resolve="A" />
         <node concept="3cQ7KT" id="13C5RDf$HMc" role="lGtFl">
           <property role="TrG5h" value="secondInstance" />
         </node>
@@ -414,26 +414,26 @@
       <property role="TrG5h" value="connectedComponents" />
       <node concept="2EWCuV" id="13C5RDfCTb5" role="5JtDH">
         <property role="TrG5h" value="providingInstance" />
-        <ref role="2EWCuU" node="62XMcUob$u3" />
+        <ref role="2EWCuU" node="62XMcUob$u3" resolve="A" />
         <node concept="3cQ7KT" id="13C5RDfCW3p" role="lGtFl">
           <property role="TrG5h" value="providingInstance" />
         </node>
       </node>
       <node concept="2EWCuV" id="13C5RDfCTbf" role="5JtDH">
         <property role="TrG5h" value="requiringInstance" />
-        <ref role="2EWCuU" node="13C5RDfCTbc" />
+        <ref role="2EWCuU" node="13C5RDfCTbc" resolve="B" />
         <node concept="3cQ7KT" id="13C5RDfCW3q" role="lGtFl">
           <property role="TrG5h" value="requiringInstance" />
         </node>
       </node>
       <node concept="2EWCuP" id="13C5RDfCTb7" role="5JtDH">
         <node concept="2EWCuO" id="13C5RDfCTb8" role="2EWCuL">
-          <ref role="2EWCuR" node="13C5RDfCTbf" />
-          <ref role="XcPQd" node="13C5RDfCTbd" />
+          <ref role="2EWCuR" node="13C5RDfCTbf" resolve="requiringInstance" />
+          <ref role="XcPQd" node="13C5RDfCTbd" resolve="dummy" />
         </node>
         <node concept="2EWCuO" id="13C5RDfCTb9" role="2EWCuK">
-          <ref role="XcPQd" node="13C5RDfC76X" />
-          <ref role="2EWCuR" node="13C5RDfCTb5" />
+          <ref role="XcPQd" node="13C5RDfC76X" resolve="dummy" />
+          <ref role="2EWCuR" node="13C5RDfCTb5" resolve="providingInstance" />
         </node>
       </node>
     </node>
@@ -450,24 +450,24 @@
               <property role="2hmy$m" value="0" />
             </node>
             <node concept="1S7827" id="IFEsicipW5" role="3TlMhI">
-              <ref role="1S7826" node="13C5RDf$RIC" />
+              <ref role="1S7826" node="13C5RDf$RIC" resolve="someGlobalVar" />
             </node>
           </node>
         </node>
         <node concept="3t9XKO" id="62XMcUob$u5" role="3XIRFZ">
-          <ref role="3t9XKR" node="62XMcUob$u0" />
+          <ref role="3t9XKR" node="62XMcUob$u0" resolve="instanceConfiguration" />
           <node concept="3cQ7KT" id="62XMcUob$u8" role="lGtFl">
             <property role="TrG5h" value="instanceConfInit" />
           </node>
         </node>
         <node concept="3t9XKO" id="13C5RDfCNUi" role="3XIRFZ">
-          <ref role="3t9XKR" node="13C5RDfCNUg" />
+          <ref role="3t9XKR" node="13C5RDfCNUg" resolve="emptyInstanceConfiguration" />
           <node concept="3cQ7KT" id="13C5RDfCW3n" role="lGtFl">
             <property role="TrG5h" value="initEmptyInstanceConf" />
           </node>
         </node>
         <node concept="3t9XKO" id="13C5RDfCW3m" role="3XIRFZ">
-          <ref role="3t9XKR" node="13C5RDfCTb4" />
+          <ref role="3t9XKR" node="13C5RDfCTb4" resolve="connectedComponents" />
           <node concept="3cQ7KT" id="13C5RDfCW3o" role="lGtFl">
             <property role="TrG5h" value="initConnectedInstanceConf" />
           </node>
@@ -475,7 +475,7 @@
         <node concept="2BFjQ_" id="62XMcUob$tJ" role="3XIRFZ">
           <node concept="2BOciq" id="IFEsiciq5T" role="2BFjQA">
             <node concept="1S7827" id="IFEsiciq70" role="3TlMhJ">
-              <ref role="1S7826" node="13C5RDf$RIC" />
+              <ref role="1S7826" node="13C5RDf$RIC" resolve="someGlobalVar" />
             </node>
             <node concept="3TlMh9" id="62XMcUob$tK" role="3TlMhI">
               <property role="2hmy$m" value="0" />

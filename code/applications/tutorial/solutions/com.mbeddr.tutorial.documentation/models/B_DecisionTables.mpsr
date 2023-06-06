@@ -127,10 +127,10 @@
         <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolCE" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolCF" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
           </node>
           <node concept="2NCMab" id="1YUFCeGolCG" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMm" />
+            <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMm" resolve="FlightJudger" />
           </node>
         </node>
       </node>
@@ -250,10 +250,10 @@
         <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolG4" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolG5" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
           </node>
           <node concept="2NCMab" id="1YUFCeGolG6" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:4usdeMNSHXS" />
+            <ref role="2NCMaa" to="e1tx:4usdeMNSHXS" resolve="instancesJudging" />
           </node>
         </node>
       </node>
@@ -320,10 +320,10 @@
         <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="1YUFCeGolET" role="3z_lpI">
           <node concept="2NCMab" id="1YUFCeGolEU" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+            <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
           </node>
           <node concept="2NCMab" id="1YUFCeGolEV" role="2NCMaf">
-            <ref role="2NCMaa" to="e1tx:4usdeMNSGkI" />
+            <ref role="2NCMaa" to="e1tx:4usdeMNSGkI" resolve="testJudging" />
           </node>
         </node>
       </node>

@@ -41,7 +41,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -107,7 +107,7 @@
   <node concept="309jyn" id="5S3xvtau7D">
     <property role="TrG5h" value="Union" />
     <node concept="3qy1PH" id="3uHGTbh6GlO" role="3qy1PE">
-      <ref role="30ajXG" to="uspl:Ux_D7zzfbA" />
+      <ref role="30ajXG" to="uspl:Ux_D7zzfbA" resolve="UnionsTest" />
     </node>
     <node concept="1vuW9F" id="4WY_RKGyHpz" role="1zJi$$">
       <property role="TrG5h" value="inTestUnions" />
@@ -138,7 +138,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lSy" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lSz" role="3scror">
         <node concept="3sdZbA" id="3uHGTbh6GlW" role="3sdZbB">
-          <ref role="3sa5fj" to="uspl:CJowcz_pK$" />
+          <ref role="3sa5fj" to="uspl:CJowcz_pK$" resolve="firstUnionAssignment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lS_" role="3savwP">
@@ -150,16 +150,16 @@
         <node concept="30a7bf" id="7Jr7T0w2lSC" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6GlG" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" />
+            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" resolve="assertAfterUnionAssignment" />
           </node>
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2lSE" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyHpL" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyHpz" />
+            <ref role="1vv99g" node="4WY_RKGyHpz" resolve="inTestUnions" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyHpN" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyHpI" />
+          <ref role="1vtf2j" node="4WY_RKGyHpI" resolve="inTestUnions" />
         </node>
       </node>
     </node>
@@ -169,7 +169,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m1P" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m1Q" role="3scror">
         <node concept="3sdZbA" id="3uHGTbh6GlE" role="3sdZbB">
-          <ref role="3sa5fj" to="uspl:CJowcz_pKx" />
+          <ref role="3sa5fj" to="uspl:CJowcz_pKx" resolve="unionDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m1S" role="3savwP">
@@ -181,16 +181,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m1V" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6GlQ" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" />
+            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" resolve="assertAfterUnionAssignment" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyHpO" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyHpP" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyHpz" />
+            <ref role="1vv99g" node="4WY_RKGyHpz" resolve="inTestUnions" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyHpQ" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyHpI" />
+          <ref role="1vtf2j" node="4WY_RKGyHpI" resolve="inTestUnions" />
         </node>
       </node>
     </node>
@@ -200,7 +200,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m5W" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m5X" role="3scror">
         <node concept="3sdZbA" id="3uHGTbh6GlS" role="3sdZbB">
-          <ref role="3sa5fj" to="uspl:CJowcz_pKx" />
+          <ref role="3sa5fj" to="uspl:CJowcz_pKx" resolve="unionDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m5Z" role="3savwP">
@@ -212,16 +212,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m62" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6GlK" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" />
+            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" resolve="assertAfterUnionAssignment" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyHpR" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyHpS" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyHpz" />
+            <ref role="1vv99g" node="4WY_RKGyHpz" resolve="inTestUnions" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyHpT" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyHpI" />
+          <ref role="1vtf2j" node="4WY_RKGyHpI" resolve="inTestUnions" />
         </node>
       </node>
     </node>
@@ -231,7 +231,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m7N" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m7O" role="3scror">
         <node concept="3sdZbA" id="3uHGTbh6GlM" role="3sdZbB">
-          <ref role="3sa5fj" to="uspl:CJowcz_pKx" />
+          <ref role="3sa5fj" to="uspl:CJowcz_pKx" resolve="unionDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m7Q" role="3savwP" />
@@ -239,16 +239,16 @@
         <node concept="30a7bf" id="7Jr7T0w2m7S" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6GlU" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="uspl:CJowcz_pK$" />
+            <ref role="3cQ7K8" to="uspl:CJowcz_pK$" resolve="firstUnionAssignment" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyHpU" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyHpV" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyHpz" />
+            <ref role="1vv99g" node="4WY_RKGyHpz" resolve="inTestUnions" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyHpW" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyHpI" />
+          <ref role="1vtf2j" node="4WY_RKGyHpI" resolve="inTestUnions" />
         </node>
       </node>
     </node>
@@ -258,7 +258,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mfX" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mfY" role="3scror">
         <node concept="3sdZbA" id="3uHGTbh6GlI" role="3sdZbB">
-          <ref role="3sa5fj" to="uspl:CJowcz_pK$" />
+          <ref role="3sa5fj" to="uspl:CJowcz_pK$" resolve="firstUnionAssignment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mg0" role="3savwP">
@@ -270,16 +270,16 @@
         <node concept="30a7bf" id="7Jr7T0w2mg3" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6GlY" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" />
+            <ref role="3cQ7K8" to="uspl:CJowcz_pKB" resolve="assertAfterUnionAssignment" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKGyHpX" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyHpY" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyHpz" />
+            <ref role="1vv99g" node="4WY_RKGyHpz" resolve="inTestUnions" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyHpZ" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyHpI" />
+          <ref role="1vtf2j" node="4WY_RKGyHpI" resolve="inTestUnions" />
         </node>
       </node>
     </node>

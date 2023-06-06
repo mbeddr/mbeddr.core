@@ -165,13 +165,13 @@
       <node concept="3i3YCL" id="3yeYUb92Go7" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="3yeYUb92GnR" />
+        <ref role="35zhcq" node="3yeYUb92GnR" resolve="instances" />
       </node>
     </node>
     <node concept="2eOfOl" id="3yeYUb92Gng" role="2ePNbc">
       <property role="TrG5h" value="OnInitTriggerTest" />
       <node concept="2v9HqM" id="3yeYUb92Gnh" role="2eOfOg">
-        <ref role="2v9HqP" node="3yeYUb92Gml" />
+        <ref role="2v9HqP" node="3yeYUb92Gml" resolve="OnInitTrigger" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTh8" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -209,7 +209,7 @@
       </node>
       <node concept="2EWHp$" id="33OGTFgpIOF" role="2RW2fA">
         <property role="TrG5h" value="client" />
-        <ref role="2EX0h9" node="33OGTFgpIOG" />
+        <ref role="2EX0h9" node="33OGTFgpIOG" resolve="client" />
       </node>
       <node concept="2EWDwb" id="SH6Kd4oOJ5" role="2RW2fA">
         <property role="TrG5h" value="doNothing" />
@@ -217,7 +217,7 @@
           <node concept="1_9egQ" id="7HfWMO9hMGr" role="3XIRFZ">
             <node concept="3TM6Ey" id="7HfWMO9hMGv" role="1_9egR">
               <node concept="EbZIE" id="7HfWMO9hMGs" role="1_9fRO">
-                <ref role="EbZID" node="SH6Kd4oOJ2" />
+                <ref role="EbZID" node="SH6Kd4oOJ2" resolve="someVar" />
               </node>
             </node>
             <node concept="3cQ7KT" id="7HfWMO9hMM$" role="lGtFl">
@@ -250,7 +250,7 @@
       </node>
       <node concept="2EWHp_" id="33OGTFgpIOM" role="2RW2fA">
         <property role="TrG5h" value="client" />
-        <ref role="2EX0h9" node="33OGTFgpIOG" />
+        <ref role="2EX0h9" node="33OGTFgpIOG" resolve="client" />
       </node>
       <node concept="2EWDwb" id="SH6Kd4oOID" role="2RW2fA">
         <property role="TrG5h" value="doNothing" />
@@ -258,7 +258,7 @@
           <node concept="1_9egQ" id="7HfWMO9hMGj" role="3XIRFZ">
             <node concept="3TM6Ey" id="7HfWMO9hMGn" role="1_9egR">
               <node concept="EbZIE" id="hDImLjTRLr" role="1_9fRO">
-                <ref role="EbZID" node="SH6Kd4oOIJ" />
+                <ref role="EbZID" node="SH6Kd4oOIJ" resolve="someVar" />
               </node>
             </node>
             <node concept="3cQ7KT" id="7HfWMO9hMMz" role="lGtFl">
@@ -283,40 +283,40 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="3yeYUb92GnU" role="5JtDH">
         <property role="TrG5h" value="c1" />
-        <ref role="2EWCuU" node="3yeYUb92Gnz" />
+        <ref role="2EWCuU" node="3yeYUb92Gnz" resolve="Client" />
         <node concept="3cQ7KT" id="7HfWMO9hMMt" role="lGtFl">
           <property role="TrG5h" value="1stComponentInstance" />
         </node>
       </node>
       <node concept="2EWCuV" id="7HfWMO9hMGx" role="5JtDH">
         <property role="TrG5h" value="c2" />
-        <ref role="2EWCuU" node="3yeYUb92Gnz" />
+        <ref role="2EWCuU" node="3yeYUb92Gnz" resolve="Client" />
         <node concept="3cQ7KT" id="7HfWMO9hMMu" role="lGtFl">
           <property role="TrG5h" value="2ndComponentInstance" />
         </node>
       </node>
       <node concept="2EWCuV" id="7HfWMO9hMGy" role="5JtDH">
         <property role="TrG5h" value="c3" />
-        <ref role="2EWCuU" node="3yeYUb92Gnz" />
+        <ref role="2EWCuU" node="3yeYUb92Gnz" resolve="Client" />
         <node concept="3cQ7KT" id="7HfWMO9hMMv" role="lGtFl">
           <property role="TrG5h" value="3rdComponentInstance" />
         </node>
       </node>
       <node concept="2EWCuV" id="3yeYUb92GnS" role="5JtDH">
         <property role="TrG5h" value="s" />
-        <ref role="2EWCuU" node="3yeYUb92Gnm" />
+        <ref role="2EWCuU" node="3yeYUb92Gnm" resolve="Server" />
         <node concept="3cQ7KT" id="7HfWMO9hMMx" role="lGtFl">
           <property role="TrG5h" value="4thComponentInstance" />
         </node>
       </node>
       <node concept="2EWCuP" id="33OGTFgpIOI" role="5JtDH">
         <node concept="2EWCuO" id="33OGTFgpIOJ" role="2EWCuL">
-          <ref role="2EWCuR" node="3yeYUb92GnS" />
-          <ref role="XcPQd" node="33OGTFgpIOF" />
+          <ref role="2EWCuR" node="3yeYUb92GnS" resolve="s" />
+          <ref role="XcPQd" node="33OGTFgpIOF" resolve="client" />
         </node>
         <node concept="2EWCuO" id="33OGTFgpIOK" role="2EWCuK">
-          <ref role="2EWCuR" node="3yeYUb92GnU" />
-          <ref role="XcPQd" node="33OGTFgpIOM" />
+          <ref role="2EWCuR" node="3yeYUb92GnU" resolve="c1" />
+          <ref role="XcPQd" node="33OGTFgpIOM" resolve="client" />
         </node>
       </node>
     </node>
@@ -331,7 +331,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="3yeYUb92Gmn" role="3XIRFX">
         <node concept="3t9XKO" id="SH6Kd4oOJg" role="3XIRFZ">
-          <ref role="3t9XKR" node="3yeYUb92GnR" />
+          <ref role="3t9XKR" node="3yeYUb92GnR" resolve="instances" />
           <node concept="3cQ7KT" id="7HfWMO9hMMs" role="lGtFl">
             <property role="TrG5h" value="instanceInit" />
           </node>

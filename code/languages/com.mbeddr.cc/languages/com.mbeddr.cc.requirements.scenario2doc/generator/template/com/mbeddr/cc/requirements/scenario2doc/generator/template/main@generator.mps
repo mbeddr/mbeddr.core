@@ -403,7 +403,7 @@
             </node>
             <node concept="2NCZwO" id="8K5lDOa_vV" role="ZeNY6">
               <node concept="2NCMab" id="8K5lDOa_RW" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsg" />
+                <ref role="2NCMaa" node="519ky_Spzsg" resolve="R" />
                 <node concept="1ZhdrF" id="8K5lDOaA2Z" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -426,7 +426,7 @@
                 </node>
               </node>
               <node concept="2NCMab" id="8K5lDOa_S2" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsp" />
+                <ref role="2NCMaa" node="519ky_Spzsp" resolve="s" />
                 <node concept="1ZhdrF" id="8K5lDOa_S6" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -533,7 +533,7 @@
             </node>
             <node concept="2NCZwO" id="8K5lDOaCze" role="ZeNY6">
               <node concept="2NCMab" id="8K5lDOaCzf" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsg" />
+                <ref role="2NCMaa" node="519ky_Spzsg" resolve="R" />
                 <node concept="1ZhdrF" id="8K5lDOaCzg" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -556,7 +556,7 @@
                 </node>
               </node>
               <node concept="2NCMab" id="8K5lDOaCzp" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsp" />
+                <ref role="2NCMaa" node="519ky_Spzsp" resolve="s" />
                 <node concept="1ZhdrF" id="8K5lDOaCzq" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -926,7 +926,7 @@
             </node>
             <node concept="2NCZwO" id="8K5lDOaNJN" role="ZeNY6">
               <node concept="2NCMab" id="8K5lDOaNJO" role="2NCMaf">
-                <ref role="2NCMaa" node="519ky_Spzsg" />
+                <ref role="2NCMaa" node="519ky_Spzsg" resolve="R" />
                 <node concept="1ZhdrF" id="8K5lDOaNJP" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />
@@ -949,7 +949,7 @@
                 </node>
               </node>
               <node concept="2NCMab" id="8K5lDOaNJY" role="2NCMaf">
-                <ref role="2NCMaa" node="8K5lDOaNUz" />
+                <ref role="2NCMaa" node="8K5lDOaNUz" resolve="UseCase" />
                 <node concept="1ZhdrF" id="8K5lDOaNJZ" role="lGtFl">
                   <property role="P3scX" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a/2286331641395252232/2286331641395252233" />
                   <property role="2qtEX8" value="node" />

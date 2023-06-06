@@ -40,7 +40,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -147,7 +147,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKG$10A" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtanpw" role="3qy1PE">
-      <ref role="30ajXG" to="r77w:3jCcpnp1H9p" />
+      <ref role="30ajXG" to="r77w:3jCcpnp1H9p" resolve="CommentTest" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lU9" role="1zJi$$">
       <property role="TrG5h" value="suspendOnASingleLineComment" />
@@ -155,7 +155,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lUb" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lUc" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lUd" role="3sdZbB">
-          <ref role="3sa5fj" to="r77w:4PM5ysqt4N4" />
+          <ref role="3sa5fj" to="r77w:4PM5ysqt4N4" resolve="firstComment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lUe" role="3savwP" />
@@ -163,15 +163,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lUg" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh7_5p" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="r77w:4PM5ysqt3Ia" />
+            <ref role="3cQ7K8" to="r77w:4PM5ysqt3Ia" resolve="assertAfterFirstComment" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$10W" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$10F" />
+          <ref role="1vtf2j" node="4WY_RKG$10F" resolve="inTestSingleLineCommenting" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$10Y" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$10Z" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$10K" />
+            <ref role="1vv99g" node="4WY_RKG$10K" resolve="inTestSingleLineCommenting" />
           </node>
         </node>
       </node>
@@ -182,7 +182,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lV_" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lVA" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lVB" role="3sdZbB">
-          <ref role="3sa5fj" to="r77w:4PM5ysqt3Ib" />
+          <ref role="3sa5fj" to="r77w:4PM5ysqt3Ib" resolve="secondComment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lVC" role="3savwP" />
@@ -190,15 +190,15 @@
         <node concept="30a7bf" id="7Jr7T0w2lVE" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh7_5r" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="r77w:4PM5ysqt3Ic" />
+            <ref role="3cQ7K8" to="r77w:4PM5ysqt3Ic" resolve="testCaseWithSecondComment" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$110" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$10B" />
+          <ref role="1vtf2j" node="4WY_RKG$10B" resolve="inTestWithSingleLineCommentStatement" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$111" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$113" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$10N" />
+            <ref role="1vv99g" node="4WY_RKG$10N" resolve="inTestWithSingleLineCommentStatement" />
           </node>
         </node>
       </node>
@@ -209,7 +209,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m0I" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m0J" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m0K" role="3sdZbB">
-          <ref role="3sa5fj" to="r77w:4PM5ysqt3I6" />
+          <ref role="3sa5fj" to="r77w:4PM5ysqt3I6" resolve="statementBeforeFirstComment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m0L" role="3savwP">
@@ -221,15 +221,15 @@
         <node concept="30a7bf" id="7Jr7T0w2m0O" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh7_5t" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="r77w:4PM5ysqt3Ia" />
+            <ref role="3cQ7K8" to="r77w:4PM5ysqt3Ia" resolve="assertAfterFirstComment" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$114" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$10F" />
+          <ref role="1vtf2j" node="4WY_RKG$10F" resolve="inTestSingleLineCommenting" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$115" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$116" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$10K" />
+            <ref role="1vv99g" node="4WY_RKG$10K" resolve="inTestSingleLineCommenting" />
           </node>
         </node>
       </node>
@@ -240,7 +240,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mc4" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mc5" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mc6" role="3sdZbB">
-          <ref role="3sa5fj" to="r77w:4PM5ysqt5a6" />
+          <ref role="3sa5fj" to="r77w:4PM5ysqt5a6" resolve="statementBeforeThirdComment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mc7" role="3savwP">
@@ -252,15 +252,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mca" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh7_5v" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="r77w:4PM5ysqt5ad" />
+            <ref role="3cQ7K8" to="r77w:4PM5ysqt5ad" resolve="assertAfterThirdComment" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$117" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$10S" />
+          <ref role="1vtf2j" node="4WY_RKG$10S" resolve="inTestMultiLineCommenting" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$118" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$11a" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$10P" />
+            <ref role="1vv99g" node="4WY_RKG$10P" resolve="inTestMultiLineCommenting" />
           </node>
         </node>
       </node>

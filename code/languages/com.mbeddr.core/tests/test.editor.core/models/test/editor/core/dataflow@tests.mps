@@ -114,12 +114,12 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3ZVu4v" id="29vN1ZfYM8L" role="3TlMhI">
-              <ref role="3ZVs_2" node="29vN1ZfYLRj" />
+              <ref role="3ZVs_2" node="29vN1ZfYLRj" resolve="i" />
             </node>
           </node>
           <node concept="3TM6Ey" id="29vN1ZfYMHy" role="1_amZy">
             <node concept="3ZVu4v" id="29vN1ZfYM$k" role="1_9fRO">
-              <ref role="3ZVs_2" node="29vN1ZfYLRj" />
+              <ref role="3ZVs_2" node="29vN1ZfYLRj" resolve="i" />
             </node>
           </node>
         </node>

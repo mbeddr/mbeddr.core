@@ -247,13 +247,13 @@
       <node concept="3i3YCL" id="2ZUGF54klQq" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="2ZUGF54kk83" />
+        <ref role="35zhcq" node="2ZUGF54kk83" resolve="instances" />
       </node>
     </node>
     <node concept="2eOfOl" id="2ZUGF54kkxD" role="2ePNbc">
       <property role="TrG5h" value="MultiPort" />
       <node concept="2v9HqM" id="2ZUGF54kkxE" role="2eOfOg">
-        <ref role="2v9HqP" node="2ZUGF54kkwF" />
+        <ref role="2v9HqP" node="2ZUGF54kkwF" resolve="MultiPort" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApj" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -285,7 +285,7 @@
       <property role="TrG5h" value="Subject" />
       <node concept="2EWHp$" id="2ZUGF54kk7S" role="2RW2fA">
         <property role="TrG5h" value="observers" />
-        <ref role="2EX0h9" node="2ZUGF54k32G" />
+        <ref role="2EX0h9" node="2ZUGF54k32G" resolve="ObserverIf" />
         <node concept="1FEWAf" id="2ZUGF54kC8S" role="1FEWBW">
           <node concept="3TlMh9" id="2ofiXe_sYEB" role="23vghw">
             <property role="2hmy$m" value="3" />
@@ -301,9 +301,9 @@
         <node concept="3XIRFW" id="2ZUGF54kkyo" role="2EWMhI">
           <node concept="1_9egQ" id="5meTu9ort8T" role="3XIRFZ">
             <node concept="30IBQI" id="5meTu9ort8X" role="1_9egR">
-              <ref role="2H6Oet" node="2ZUGF54kk7T" />
+              <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
               <node concept="2H6loZ" id="5meTu9ort8U" role="1_9fRO">
-                <ref role="2H6loY" node="2ZUGF54kk7S" />
+                <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
               </node>
             </node>
           </node>
@@ -319,12 +319,12 @@
         <node concept="3XIRFW" id="Z4PF25qNmv" role="2EWMhI">
           <node concept="n$yC7" id="6C8IiUrtswL" role="3XIRFZ">
             <node concept="2H6loZ" id="6C8IiUrtsxt" role="3hQ35c">
-              <ref role="2H6loY" node="2ZUGF54kk7S" />
+              <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
             </node>
             <node concept="3XIRFW" id="6C8IiUrtswP" role="HyoFs">
               <node concept="1_9egQ" id="6wa9dmr6WVu" role="3XIRFZ">
                 <node concept="3LAlOK" id="6wa9dmr6WVJ" role="1_9egR">
-                  <ref role="2H6Oet" node="2ZUGF54kk7T" />
+                  <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
                   <node concept="1SaJN6" id="6wa9dmr6WVs" role="1_9fRO" />
                 </node>
               </node>
@@ -343,9 +343,9 @@
         <node concept="3XIRFW" id="3XxRpIb9y6m" role="2EWMhI">
           <node concept="1_9egQ" id="3XxRpIb9yjL" role="3XIRFZ">
             <node concept="30IBQI" id="3XxRpIb9Kka" role="1_9egR">
-              <ref role="2H6Oet" node="2ZUGF54kk7T" />
+              <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
               <node concept="2OhZ_J" id="3XxRpIb9Kk5" role="1_9fRO">
-                <ref role="2H6loY" node="2ZUGF54kk7S" />
+                <ref role="2H6loY" node="2ZUGF54kk7S" resolve="observers" />
                 <node concept="3TlMh9" id="3XxRpIb9Kk6" role="2OhZuM">
                   <property role="2hmy$m" value="1" />
                 </node>
@@ -364,9 +364,9 @@
         <node concept="3XIRFW" id="2ofiXe_rSbG" role="2EWMhI">
           <node concept="1_9egQ" id="2ofiXe_rSbS" role="3XIRFZ">
             <node concept="3LAlOK" id="2ofiXe_rSbW" role="1_9egR">
-              <ref role="2H6Oet" node="2ZUGF54kk7T" />
+              <ref role="2H6Oet" node="2ZUGF54kk7T" resolve="notify" />
               <node concept="3ZUYvv" id="2ofiXe_rSbT" role="1_9fRO">
-                <ref role="3ZUYvu" node="2ofiXe_rSbO" />
+                <ref role="3ZUYvu" node="2ofiXe_rSbO" resolve="i" />
               </node>
             </node>
           </node>
@@ -380,7 +380,7 @@
           <node concept="2H6ZW9" id="2ofiXe_rSbP" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="2H6ZW8" node="2ZUGF54k32G" />
+            <ref role="2H6ZW8" node="2ZUGF54k32G" resolve="ObserverIf" />
           </node>
         </node>
       </node>
@@ -393,7 +393,7 @@
       <property role="TrG5h" value="Observer" />
       <node concept="2EWHp_" id="2ZUGF54kk87" role="2RW2fA">
         <property role="TrG5h" value="notification" />
-        <ref role="2EX0h9" node="2ZUGF54k32G" />
+        <ref role="2EX0h9" node="2ZUGF54k32G" resolve="ObserverIf" />
       </node>
       <node concept="EbCE0" id="2ZUGF54kky0" role="2RW2fA">
         <property role="TrG5h" value="notificationCount" />
@@ -411,14 +411,14 @@
           <node concept="1_9egQ" id="2ZUGF54kky4" role="3XIRFZ">
             <node concept="3TM6Ey" id="2ZUGF54kky8" role="1_9egR">
               <node concept="EbZIE" id="2ZUGF54kky5" role="1_9fRO">
-                <ref role="EbZID" node="2ZUGF54kky0" />
+                <ref role="EbZID" node="2ZUGF54kky0" resolve="notificationCount" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="2ZUGF54kk8g" role="2EWDeT">
-          <ref role="1ZwSu5" node="2ZUGF54kk87" />
-          <ref role="1ZwxE2" node="2ZUGF54kk7T" />
+          <ref role="1ZwSu5" node="2ZUGF54kk87" resolve="notification" />
+          <ref role="1ZwxE2" node="2ZUGF54kk7T" resolve="notify" />
         </node>
         <node concept="19Rifw" id="2ZUGF54kk8h" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -430,7 +430,7 @@
         <node concept="3XIRFW" id="2ZUGF54kkye" role="2EWMhI">
           <node concept="2BFjQ_" id="2ZUGF54kkyg" role="3XIRFZ">
             <node concept="EbZIE" id="2ZUGF54kkyh" role="2BFjQA">
-              <ref role="EbZID" node="2ZUGF54kky0" />
+              <ref role="EbZID" node="2ZUGF54kky0" resolve="notificationCount" />
             </node>
           </node>
         </node>
@@ -448,34 +448,34 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="2ZUGF54kk8k" role="5JtDH">
         <property role="TrG5h" value="s" />
-        <ref role="2EWCuU" node="2ZUGF54kk7R" />
+        <ref role="2EWCuU" node="2ZUGF54kk7R" resolve="Subject" />
       </node>
       <node concept="2EWCuV" id="2ZUGF54kk8m" role="5JtDH">
         <property role="TrG5h" value="o1" />
-        <ref role="2EWCuU" node="2ZUGF54kk86" />
+        <ref role="2EWCuU" node="2ZUGF54kk86" resolve="Observer" />
       </node>
       <node concept="2EWCuV" id="2ZUGF54kk8u" role="5JtDH">
         <property role="TrG5h" value="o2" />
-        <ref role="2EWCuU" node="2ZUGF54kk86" />
+        <ref role="2EWCuU" node="2ZUGF54kk86" resolve="Observer" />
       </node>
       <node concept="2EWCuP" id="2ZUGF54kk8o" role="5JtDH">
         <node concept="2EWCuO" id="2ZUGF54kk8p" role="2EWCuL">
-          <ref role="2EWCuR" node="2ZUGF54kk8k" />
-          <ref role="XcPQd" node="2ZUGF54kk7S" />
+          <ref role="2EWCuR" node="2ZUGF54kk8k" resolve="s" />
+          <ref role="XcPQd" node="2ZUGF54kk7S" resolve="observers" />
         </node>
         <node concept="2EWCuO" id="2ZUGF54kk8q" role="2EWCuK">
-          <ref role="2EWCuR" node="2ZUGF54kk8m" />
-          <ref role="XcPQd" node="2ZUGF54kk87" />
+          <ref role="2EWCuR" node="2ZUGF54kk8m" resolve="o1" />
+          <ref role="XcPQd" node="2ZUGF54kk87" resolve="notification" />
         </node>
       </node>
       <node concept="2EWCuP" id="2ZUGF54kk8r" role="5JtDH">
         <node concept="2EWCuO" id="2ZUGF54kk8s" role="2EWCuL">
-          <ref role="2EWCuR" node="2ZUGF54kk8k" />
-          <ref role="XcPQd" node="2ZUGF54kk7S" />
+          <ref role="2EWCuR" node="2ZUGF54kk8k" resolve="s" />
+          <ref role="XcPQd" node="2ZUGF54kk7S" resolve="observers" />
         </node>
         <node concept="2EWCuO" id="2ZUGF54kk8t" role="2EWCuK">
-          <ref role="2EWCuR" node="2ZUGF54kk8u" />
-          <ref role="XcPQd" node="2ZUGF54kk87" />
+          <ref role="2EWCuR" node="2ZUGF54kk8u" resolve="o2" />
+          <ref role="XcPQd" node="2ZUGF54kk87" resolve="notification" />
         </node>
       </node>
     </node>
@@ -491,14 +491,14 @@
       </node>
       <node concept="3XIRFW" id="2ZUGF54kkwU" role="c0Qz3">
         <node concept="3t9XKO" id="2ZUGF54kkxT" role="3XIRFZ">
-          <ref role="3t9XKR" node="2ZUGF54kk83" />
+          <ref role="3t9XKR" node="2ZUGF54kk83" resolve="instances" />
         </node>
         <node concept="3XISUE" id="5meTu9orxXl" role="3XIRFZ" />
         <node concept="1_9egQ" id="2ZUGF54kkyv" role="3XIRFZ">
           <node concept="1AmG6P" id="2ZUGF54kkyw" role="1_9egR">
-            <ref role="1XX6Gs" node="2ZUGF54kk8k" />
-            <ref role="2YB7zn" node="2ZUGF54kkyn" />
-            <ref role="1XX6Gv" node="2ZUGF54kk83" />
+            <ref role="1XX6Gs" node="2ZUGF54kk8k" resolve="s" />
+            <ref role="2YB7zn" node="2ZUGF54kkyn" resolve="notifyAll" />
+            <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
           </node>
         </node>
         <node concept="c0Tn9" id="2ZUGF54kkyy" role="3XIRFZ">
@@ -507,9 +507,9 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="1AmG6P" id="2ZUGF54kkyA" role="3TlMhI">
-              <ref role="1XX6Gs" node="2ZUGF54kk8m" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8m" resolve="o1" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
             </node>
           </node>
         </node>
@@ -519,18 +519,18 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="1AmG6P" id="2ZUGF54kkyO" role="3TlMhI">
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8u" />
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8u" resolve="o2" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
             </node>
           </node>
         </node>
         <node concept="3XISUE" id="5meTu9orxXk" role="3XIRFZ" />
         <node concept="1_9egQ" id="5meTu9orxOo" role="3XIRFZ">
           <node concept="1AmG6P" id="5meTu9orxOp" role="1_9egR">
-            <ref role="2YB7zn" node="2ZUGF54kkyn" />
-            <ref role="1XX6Gv" node="2ZUGF54kk83" />
-            <ref role="1XX6Gs" node="2ZUGF54kk8k" />
+            <ref role="2YB7zn" node="2ZUGF54kkyn" resolve="notifyAll" />
+            <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+            <ref role="1XX6Gs" node="2ZUGF54kk8k" resolve="s" />
           </node>
         </node>
         <node concept="c0Tn9" id="5meTu9orxOk" role="3XIRFZ">
@@ -539,9 +539,9 @@
               <property role="2hmy$m" value="2" />
             </node>
             <node concept="1AmG6P" id="5meTu9orxOn" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8m" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8m" resolve="o1" />
             </node>
           </node>
         </node>
@@ -551,18 +551,18 @@
               <property role="2hmy$m" value="2" />
             </node>
             <node concept="1AmG6P" id="5meTu9orxOj" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8u" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8u" resolve="o2" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
             </node>
           </node>
         </node>
         <node concept="3XISUE" id="Z4PF25qOri" role="3XIRFZ" />
         <node concept="1_9egQ" id="Z4PF25qOrg" role="3XIRFZ">
           <node concept="1AmG6P" id="Z4PF25qOrh" role="1_9egR">
-            <ref role="1XX6Gv" node="2ZUGF54kk83" />
-            <ref role="1XX6Gs" node="2ZUGF54kk8k" />
-            <ref role="2YB7zn" node="Z4PF25qNmu" />
+            <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+            <ref role="1XX6Gs" node="2ZUGF54kk8k" resolve="s" />
+            <ref role="2YB7zn" node="Z4PF25qNmu" resolve="notifyAllUsingLoop" />
           </node>
         </node>
         <node concept="c0Tn9" id="Z4PF25qOrc" role="3XIRFZ">
@@ -571,9 +571,9 @@
               <property role="2hmy$m" value="3" />
             </node>
             <node concept="1AmG6P" id="Z4PF25qOrf" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8m" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8m" resolve="o1" />
             </node>
           </node>
         </node>
@@ -583,18 +583,18 @@
               <property role="2hmy$m" value="3" />
             </node>
             <node concept="1AmG6P" id="Z4PF25qOrb" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8u" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8u" resolve="o2" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
             </node>
           </node>
         </node>
         <node concept="3XISUE" id="Z4PF25qOQ5" role="3XIRFZ" />
         <node concept="1_9egQ" id="Z4PF25qOQ3" role="3XIRFZ">
           <node concept="1AmG6P" id="Z4PF25qOQ4" role="1_9egR">
-            <ref role="1XX6Gv" node="2ZUGF54kk83" />
-            <ref role="1XX6Gs" node="2ZUGF54kk8k" />
-            <ref role="2YB7zn" node="Z4PF25qNmu" />
+            <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+            <ref role="1XX6Gs" node="2ZUGF54kk8k" resolve="s" />
+            <ref role="2YB7zn" node="Z4PF25qNmu" resolve="notifyAllUsingLoop" />
           </node>
         </node>
         <node concept="c0Tn9" id="Z4PF25qOPZ" role="3XIRFZ">
@@ -603,9 +603,9 @@
               <property role="2hmy$m" value="4" />
             </node>
             <node concept="1AmG6P" id="Z4PF25qOQ2" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8m" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8m" resolve="o1" />
             </node>
           </node>
         </node>
@@ -615,9 +615,9 @@
               <property role="2hmy$m" value="4" />
             </node>
             <node concept="1AmG6P" id="Z4PF25qOPY" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8u" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8u" resolve="o2" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
             </node>
           </node>
         </node>
@@ -625,9 +625,9 @@
         <node concept="3XISUE" id="3XxRpIb9NCc" role="3XIRFZ" />
         <node concept="1_9egQ" id="3XxRpIb9NC9" role="3XIRFZ">
           <node concept="1AmG6P" id="3XxRpIb9NCa" role="1_9egR">
-            <ref role="2YB7zn" node="3XxRpIb9y6l" />
-            <ref role="1XX6Gv" node="2ZUGF54kk83" />
-            <ref role="1XX6Gs" node="2ZUGF54kk8k" />
+            <ref role="2YB7zn" node="3XxRpIb9y6l" resolve="notifyFirst" />
+            <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+            <ref role="1XX6Gs" node="2ZUGF54kk8k" resolve="s" />
           </node>
         </node>
         <node concept="c0Tn9" id="3XxRpIb9NC5" role="3XIRFZ">
@@ -636,9 +636,9 @@
               <property role="2hmy$m" value="4" />
             </node>
             <node concept="1AmG6P" id="3XxRpIb9NC8" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8m" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8m" resolve="o1" />
             </node>
           </node>
         </node>
@@ -648,9 +648,9 @@
               <property role="2hmy$m" value="5" />
             </node>
             <node concept="1AmG6P" id="3XxRpIb9NC4" role="3TlMhI">
-              <ref role="1XX6Gv" node="2ZUGF54kk83" />
-              <ref role="2YB7zn" node="2ZUGF54kkyd" />
-              <ref role="1XX6Gs" node="2ZUGF54kk8u" />
+              <ref role="1XX6Gv" node="2ZUGF54kk83" resolve="instances" />
+              <ref role="2YB7zn" node="2ZUGF54kkyd" resolve="getNotificationCount" />
+              <ref role="1XX6Gs" node="2ZUGF54kk8u" resolve="o2" />
             </node>
           </node>
         </node>
@@ -669,7 +669,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcB" role="lIfQt">
-        <ref role="3cM6IK" node="2ZUGF54kkwS" />
+        <ref role="3cM6IK" node="2ZUGF54kkwS" resolve="testCase1" />
       </node>
     </node>
   </node>

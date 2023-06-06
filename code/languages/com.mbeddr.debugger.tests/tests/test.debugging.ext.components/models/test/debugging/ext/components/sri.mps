@@ -238,13 +238,13 @@
       <node concept="3i3YCL" id="RsLjUnNRZg" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="1PvAkX2sqti" />
+        <ref role="35zhcq" node="1PvAkX2sqti" resolve="SrTestConfig" />
       </node>
     </node>
     <node concept="2eOfOl" id="RsLjUnMNv2" role="2ePNbc">
       <property role="TrG5h" value="SenderReceiverTest" />
       <node concept="2v9HqM" id="RsLjUnMNv3" role="2eOfOg">
-        <ref role="2v9HqP" node="RsLjUnMNu5" />
+        <ref role="2v9HqP" node="RsLjUnMNu5" resolve="SenderReceiver" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxThc" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -296,7 +296,7 @@
         <property role="TrG5h" value="position" />
         <property role="1vaOcW" value="false" />
         <node concept="1sgJKr" id="1PvAkX2sUyX" role="2C2TGm">
-          <ref role="1sgJKq" node="1PvAkX2sUyO" />
+          <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
         </node>
       </node>
     </node>
@@ -316,12 +316,12 @@
       <property role="TrG5h" value="Kombi" />
       <node concept="2EWHp$" id="RsLjUnOUPn" role="2RW2fA">
         <property role="TrG5h" value="carData" />
-        <ref role="2EX0h9" node="RsLjUnNb$Z" />
+        <ref role="2EX0h9" node="RsLjUnNb$Z" resolve="CarData" />
       </node>
       <node concept="2EWHp$" id="4bUTzk4GkMh" role="2RW2fA">
         <property role="TrG5h" value="bla2" />
         <property role="3jzXuR" value="true" />
-        <ref role="2EX0h9" node="4bUTzk4GkMj" />
+        <ref role="2EX0h9" node="4bUTzk4GkMj" resolve="bla" />
       </node>
       <node concept="EbCE0" id="4bUTzk4GkBD" role="2RW2fA">
         <property role="TrG5h" value="bla" />
@@ -344,10 +344,10 @@
             </node>
             <node concept="2qmXGp" id="3cUcim$fjHE" role="3XIe9u">
               <node concept="2H6loZ" id="3cUcim$fjHD" role="1_9fRO">
-                <ref role="2H6loY" node="RsLjUnOUPn" />
+                <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
               </node>
               <node concept="3VJJif" id="3cUcim$fjHF" role="1ESnxz">
-                <ref role="3VxgQD" node="RsLjUnNu$7" />
+                <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
               </node>
             </node>
             <node concept="3cQ7KT" id="4bUTzk4Gp0O" role="lGtFl">
@@ -356,7 +356,7 @@
           </node>
           <node concept="2BFjQ_" id="1PvAkX2sRo8" role="3XIRFZ">
             <node concept="3ZVu4v" id="1PvAkX2sRo9" role="2BFjQA">
-              <ref role="3ZVs_2" node="RsLjUnOUPw" />
+              <ref role="3ZVs_2" node="RsLjUnOUPw" resolve="aktDrehzahl" />
             </node>
           </node>
         </node>
@@ -372,7 +372,7 @@
       <property role="TrG5h" value="Motor" />
       <node concept="2EWHp_" id="RsLjUnNu$f" role="2RW2fA">
         <property role="TrG5h" value="carData" />
-        <ref role="2EX0h9" node="RsLjUnNb$Z" />
+        <ref role="2EX0h9" node="RsLjUnNb$Z" resolve="CarData" />
       </node>
       <node concept="2EWDwb" id="RsLjUnNu$k" role="2RW2fA">
         <property role="TrG5h" value="updateCarDataDrehzahl" />
@@ -380,7 +380,7 @@
           <node concept="1_9egQ" id="4bUTzk4GTqT" role="3XIRFZ">
             <node concept="3TM6Ey" id="4bUTzk4GTqX" role="1_9egR">
               <node concept="3ZUYvv" id="4bUTzk4GTqU" role="1_9fRO">
-                <ref role="3ZUYvu" node="1PvAkX2tdtk" />
+                <ref role="3ZUYvu" node="1PvAkX2tdtk" resolve="value" />
               </node>
             </node>
           </node>
@@ -403,34 +403,34 @@
       <property role="TrG5h" value="SrTestConfig" />
       <node concept="2EWCuV" id="1PvAkX2sqtj" role="5JtDH">
         <property role="TrG5h" value="kombi" />
-        <ref role="2EWCuU" node="RsLjUnOUPm" />
+        <ref role="2EWCuU" node="RsLjUnOUPm" resolve="Kombi" />
       </node>
       <node concept="2EWCuV" id="1PvAkX2sUqM" role="5JtDH">
         <property role="TrG5h" value="kombi2" />
-        <ref role="2EWCuU" node="RsLjUnOUPm" />
+        <ref role="2EWCuU" node="RsLjUnOUPm" resolve="Kombi" />
       </node>
       <node concept="2EWCuV" id="1PvAkX2sqtl" role="5JtDH">
         <property role="TrG5h" value="motor" />
-        <ref role="2EWCuU" node="RsLjUnNu$e" />
+        <ref role="2EWCuU" node="RsLjUnNu$e" resolve="Motor" />
       </node>
       <node concept="2EWCuP" id="1PvAkX2sqtn" role="5JtDH">
         <node concept="2EWCuO" id="1PvAkX2sqto" role="2EWCuL">
-          <ref role="2EWCuR" node="1PvAkX2sqtj" />
-          <ref role="XcPQd" node="RsLjUnOUPn" />
+          <ref role="2EWCuR" node="1PvAkX2sqtj" resolve="kombi" />
+          <ref role="XcPQd" node="RsLjUnOUPn" resolve="carData" />
         </node>
         <node concept="2EWCuO" id="1PvAkX2sqtp" role="2EWCuK">
-          <ref role="XcPQd" node="RsLjUnNu$f" />
-          <ref role="2EWCuR" node="1PvAkX2sqtl" />
+          <ref role="XcPQd" node="RsLjUnNu$f" resolve="carData" />
+          <ref role="2EWCuR" node="1PvAkX2sqtl" resolve="motor" />
         </node>
       </node>
       <node concept="2EWCuP" id="1PvAkX2sUqO" role="5JtDH">
         <node concept="2EWCuO" id="1PvAkX2sUqP" role="2EWCuL">
-          <ref role="2EWCuR" node="1PvAkX2sUqM" />
-          <ref role="XcPQd" node="RsLjUnOUPn" />
+          <ref role="2EWCuR" node="1PvAkX2sUqM" resolve="kombi2" />
+          <ref role="XcPQd" node="RsLjUnOUPn" resolve="carData" />
         </node>
         <node concept="2EWCuO" id="1PvAkX2sUqQ" role="2EWCuK">
-          <ref role="2EWCuR" node="1PvAkX2sqtl" />
-          <ref role="XcPQd" node="RsLjUnNu$f" />
+          <ref role="2EWCuR" node="1PvAkX2sqtl" resolve="motor" />
+          <ref role="XcPQd" node="RsLjUnNu$f" resolve="carData" />
         </node>
       </node>
     </node>
@@ -438,7 +438,7 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdVJd" role="lIfQt">
-        <ref role="3cM6IK" node="RsLjUnMNuh" />
+        <ref role="3cM6IK" node="RsLjUnMNuh" resolve="testCase1" />
       </node>
     </node>
     <node concept="c0Qz5" id="RsLjUnMNuh" role="N3F5h">
@@ -446,14 +446,14 @@
       <property role="TrG5h" value="testCase1" />
       <node concept="3XIRFW" id="RsLjUnMNuj" role="c0Qz3">
         <node concept="3t9XKO" id="1PvAkX2sFzp" role="3XIRFZ">
-          <ref role="3t9XKR" node="1PvAkX2sqti" />
+          <ref role="3t9XKR" node="1PvAkX2sqti" resolve="SrTestConfig" />
         </node>
         <node concept="3XISUE" id="1PvAkX2sRoa" role="3XIRFZ" />
         <node concept="1_9egQ" id="1PvAkX2sRoc" role="3XIRFZ">
           <node concept="1AmG6P" id="1PvAkX2sRod" role="1_9egR">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="2YB7zn" node="RsLjUnNu$k" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="2YB7zn" node="RsLjUnNu$k" resolve="updateCarDataDrehzahl" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
             <node concept="3TlMh9" id="1PvAkX2tdtF" role="1AmG6M">
               <property role="2hmy$m" value="10" />
             </node>
@@ -468,9 +468,9 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="1AmG6P" id="1PvAkX2sRoh" role="3TlMhI">
-              <ref role="2YB7zn" node="RsLjUnOUPs" />
-              <ref role="1XX6Gs" node="1PvAkX2sqtj" />
-              <ref role="1XX6Gv" node="1PvAkX2sqti" />
+              <ref role="2YB7zn" node="RsLjUnOUPs" resolve="update" />
+              <ref role="1XX6Gs" node="1PvAkX2sqtj" resolve="kombi" />
+              <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
             </node>
           </node>
         </node>
@@ -480,9 +480,9 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="1AmG6P" id="1PvAkX2sUqU" role="3TlMhI">
-              <ref role="1XX6Gs" node="1PvAkX2sUqM" />
-              <ref role="1XX6Gv" node="1PvAkX2sqti" />
-              <ref role="2YB7zn" node="RsLjUnOUPs" />
+              <ref role="1XX6Gs" node="1PvAkX2sUqM" resolve="kombi2" />
+              <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+              <ref role="2YB7zn" node="RsLjUnOUPs" resolve="update" />
             </node>
           </node>
         </node>

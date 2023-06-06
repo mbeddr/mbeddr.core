@@ -40,7 +40,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -109,7 +109,7 @@
     <property role="TrG5h" value="WithStatement" />
     <node concept="29bEnc" id="5t7wq7uZSox" role="29bA6Q" />
     <node concept="1rNadw" id="3lUAsMOmG0k" role="1zJi$_">
-      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" />
+      <ref role="1rNadx" to="dan2:4WY_RKGxzOx" resolve="Main" />
     </node>
     <node concept="1vsUH6" id="4WY_RKGyy8y" role="1zJi$$">
       <property role="TrG5h" value="inMain" />
@@ -127,12 +127,12 @@
         <property role="TrG5h" value="p" />
       </node>
       <node concept="1vv375" id="4WY_RKGyCTI" role="1zHble">
-        <ref role="1vv99g" to="dan2:4WY_RKGxD2E" />
+        <ref role="1vv99g" to="dan2:4WY_RKGxD2E" resolve="mainParameters" />
       </node>
     </node>
     <node concept="3sgmnF" id="4WY_RKGyy8x" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtaxog" role="3qy1PE">
-      <ref role="30ajXG" to="tukv:2s7Bv57J_5E" />
+      <ref role="30ajXG" to="tukv:2s7Bv57J_5E" resolve="WithStatementTest" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lUi" role="1zJi$$">
       <property role="TrG5h" value="stepOverToMemberAssignment" />
@@ -140,7 +140,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lUk" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lUl" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lUm" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:2s7Bv57J_aA" />
+          <ref role="3sa5fj" to="tukv:2s7Bv57J_aA" resolve="stmntBeforeMemberAssignment" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lUn" role="3savwP">
@@ -152,11 +152,11 @@
         <node concept="30a7bf" id="7Jr7T0w2lUq" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABl" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:4gHGq4Wv4ob" />
+            <ref role="3cQ7K8" to="tukv:4gHGq4Wv4ob" resolve="withStatement" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyy8_" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyy8y" />
+          <ref role="1vtf2j" node="4WY_RKGyy8y" resolve="inMain" />
         </node>
       </node>
     </node>
@@ -167,7 +167,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m2x" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m2y" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m2z" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:2s7Bv57JA9c" />
+          <ref role="3sa5fj" to="tukv:2s7Bv57JA9c" resolve="firstStmntInMain" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m2$" role="3savwP">
@@ -177,12 +177,12 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2m2A" role="3F5AM1">
         <node concept="1vtf2i" id="4WY_RKGyy8B" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyy8y" />
+          <ref role="1vtf2j" node="4WY_RKGyy8y" resolve="inMain" />
         </node>
         <node concept="30a7bf" id="7Jr7T0w2m2B" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABj" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:2s7Bv57JA9d" />
+            <ref role="3cQ7K8" to="tukv:2s7Bv57JA9d" resolve="structVarDeclaration" />
           </node>
         </node>
       </node>
@@ -194,7 +194,7 @@
       <node concept="3clFbS" id="7Jr7T0w2maq" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mar" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mas" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:2s7Bv57JA9c" />
+          <ref role="3sa5fj" to="tukv:2s7Bv57JA9c" resolve="firstStmntInMain" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mat" role="3savwP">
@@ -204,12 +204,12 @@
       </node>
       <node concept="3F5Y_J" id="7Jr7T0w2mav" role="3F5AM1">
         <node concept="1vtf2i" id="4WY_RKGyy8C" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyy8y" />
+          <ref role="1vtf2j" node="4WY_RKGyy8y" resolve="inMain" />
         </node>
         <node concept="30a7bf" id="7Jr7T0w2maw" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABh" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:2s7Bv57JA9d" />
+            <ref role="3cQ7K8" to="tukv:2s7Bv57JA9d" resolve="structVarDeclaration" />
           </node>
         </node>
       </node>
@@ -221,7 +221,7 @@
       <node concept="3clFbS" id="4gHGq4Wv4oi" role="3clF47" />
       <node concept="3sdZbQ" id="4gHGq4Wv4oF" role="3scror">
         <node concept="3sdZbA" id="4gHGq4Wv4oG" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:4gHGq4Wv4ob" />
+          <ref role="3sa5fj" to="tukv:4gHGq4Wv4ob" resolve="withStatement" />
         </node>
       </node>
       <node concept="3savIG" id="4gHGq4Wv4oH" role="3savwP">
@@ -233,7 +233,7 @@
         <node concept="30a7bf" id="4gHGq4Wv4oK" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABn" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:SDguXU3l5w" />
+            <ref role="3cQ7K8" to="tukv:SDguXU3l5w" resolve="stmntAfterAssignment" />
           </node>
         </node>
       </node>
@@ -245,7 +245,7 @@
       <node concept="3clFbS" id="4gHGq4Wv4om" role="3clF47" />
       <node concept="3sdZbQ" id="4gHGq4Wv4oy" role="3scror">
         <node concept="3sdZbA" id="4gHGq4Wv4oz" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:2s7Bv57J_aA" />
+          <ref role="3sa5fj" to="tukv:2s7Bv57J_aA" resolve="stmntBeforeMemberAssignment" />
         </node>
       </node>
       <node concept="3savIG" id="4gHGq4Wv4o$" role="3savwP">
@@ -257,7 +257,7 @@
         <node concept="30a7bf" id="4gHGq4Wv4oB" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABf" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:4gHGq4Wv4ob" />
+            <ref role="3cQ7K8" to="tukv:4gHGq4Wv4ob" resolve="withStatement" />
           </node>
         </node>
       </node>
@@ -269,7 +269,7 @@
       <node concept="3clFbS" id="4gHGq4Wv4oq" role="3clF47" />
       <node concept="3sdZbQ" id="4gHGq4Wv4or" role="3scror">
         <node concept="3sdZbA" id="4gHGq4Wv4os" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:4gHGq4Wv4ob" />
+          <ref role="3sa5fj" to="tukv:4gHGq4Wv4ob" resolve="withStatement" />
         </node>
       </node>
       <node concept="3savIG" id="4gHGq4Wv4ot" role="3savwP">
@@ -281,7 +281,7 @@
         <node concept="30a7bf" id="4gHGq4Wv4ow" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6AB9" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:SDguXU3l5w" />
+            <ref role="3cQ7K8" to="tukv:SDguXU3l5w" resolve="stmntAfterAssignment" />
           </node>
         </node>
       </node>
@@ -293,7 +293,7 @@
       <node concept="3clFbS" id="SDguXU4PR_" role="3clF47" />
       <node concept="3sdZbQ" id="SDguXU4PRA" role="3scror">
         <node concept="3sdZbA" id="SDguXU4PRB" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:SDguXU3l5w" />
+          <ref role="3sa5fj" to="tukv:SDguXU3l5w" resolve="stmntAfterAssignment" />
         </node>
       </node>
       <node concept="3savIG" id="SDguXU4PRC" role="3savwP">
@@ -305,7 +305,7 @@
         <node concept="30a7bf" id="SDguXU4PRF" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABd" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:SDguXU4UDB" />
+            <ref role="3cQ7K8" to="tukv:SDguXU4UDB" resolve="structInit" />
           </node>
         </node>
       </node>
@@ -317,7 +317,7 @@
       <node concept="3clFbS" id="SDguXU4PRL" role="3clF47" />
       <node concept="3sdZbQ" id="SDguXU4PRM" role="3scror">
         <node concept="3sdZbA" id="SDguXU4PRN" role="3sdZbB">
-          <ref role="3sa5fj" to="tukv:SDguXU3l5w" />
+          <ref role="3sa5fj" to="tukv:SDguXU3l5w" resolve="stmntAfterAssignment" />
         </node>
       </node>
       <node concept="3savIG" id="SDguXU4PRO" role="3savwP">
@@ -329,7 +329,7 @@
         <node concept="30a7bf" id="SDguXU4PRR" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6ABb" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="tukv:2s7Bv57J_9V" />
+            <ref role="3cQ7K8" to="tukv:2s7Bv57J_9V" resolve="lastStmnt" />
           </node>
         </node>
       </node>

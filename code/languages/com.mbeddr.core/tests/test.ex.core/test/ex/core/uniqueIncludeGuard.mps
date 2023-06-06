@@ -116,23 +116,23 @@
     <node concept="2eOfOl" id="7uVh7XGa1oQ" role="2ePNbc">
       <property role="TrG5h" value="main" />
       <node concept="2v9HqM" id="7uVh7XGa2rD" role="2eOfOg">
-        <ref role="2v9HqP" node="7uVh7XGa0CI" />
+        <ref role="2v9HqP" node="7uVh7XGa0CI" resolve="ModuleA" />
       </node>
       <node concept="2v9HqM" id="7uVh7XGa2rI" role="2eOfOg">
-        <ref role="2v9HqP" node="7uVh7XGa0Dv" />
+        <ref role="2v9HqP" node="7uVh7XGa0Dv" resolve="ModuleB" />
       </node>
       <node concept="2v9HqM" id="7uVh7XGa2rQ" role="2eOfOg">
-        <ref role="2v9HqP" node="7uVh7XGa0DH" />
+        <ref role="2v9HqP" node="7uVh7XGa0DH" resolve="ModuleC" />
       </node>
       <node concept="2v9HqM" id="7uVh7XGa2s0" role="2eOfOg">
-        <ref role="2v9HqP" node="7uVh7XGa0DZ" />
+        <ref role="2v9HqP" node="7uVh7XGa0DZ" resolve="ModuleD" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgN" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2xfidK" id="7uVh7XGEkjR" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
   </node>
   <node concept="N3F5e" id="7uVh7XGa0CI">
@@ -154,7 +154,7 @@
       <property role="TrG5h" value="empty_1469531386366_13" />
     </node>
     <node concept="3GEVxB" id="7uVh7XGa0DJ" role="2OODSX">
-      <ref role="3GEb4d" node="7uVh7XGa0CI" />
+      <ref role="3GEb4d" node="7uVh7XGa0CI" resolve="ModuleA" />
     </node>
   </node>
   <node concept="N3F5e" id="7uVh7XGa0DH">
@@ -163,7 +163,7 @@
       <property role="TrG5h" value="empty_1469531399164_16" />
     </node>
     <node concept="3GEVxB" id="7uVh7XGa0DL" role="2OODSX">
-      <ref role="3GEb4d" node="7uVh7XGa0CI" />
+      <ref role="3GEb4d" node="7uVh7XGa0CI" resolve="ModuleA" />
     </node>
   </node>
   <node concept="N3F5e" id="7uVh7XGa0DZ">
@@ -205,10 +205,10 @@
       <property role="TrG5h" value="empty_1469531424283_19" />
     </node>
     <node concept="3GEVxB" id="7uVh7XGa0E1" role="2OODSX">
-      <ref role="3GEb4d" node="7uVh7XGa0Dv" />
+      <ref role="3GEb4d" node="7uVh7XGa0Dv" resolve="ModuleB" />
     </node>
     <node concept="3GEVxB" id="7uVh7XGa0E6" role="2OODSX">
-      <ref role="3GEb4d" node="7uVh7XGa0DH" />
+      <ref role="3GEb4d" node="7uVh7XGa0DH" resolve="ModuleC" />
     </node>
   </node>
 </model>

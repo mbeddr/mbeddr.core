@@ -146,10 +146,10 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhK" role="lIfQt">
-        <ref role="3cM6IK" node="7Uz1bYM5MLa" />
+        <ref role="3cM6IK" node="7Uz1bYM5MLa" resolve="testCase1" />
       </node>
       <node concept="3cM6IN" id="6TAwvhVWkhL" role="lIfQt">
-        <ref role="3cM6IK" node="3JtoPqpAT2C" />
+        <ref role="3cM6IK" node="3JtoPqpAT2C" resolve="arrayTest" />
       </node>
     </node>
     <node concept="2NXPZ9" id="7Uz1bYM5MLX" role="N3F5h">
@@ -178,7 +178,7 @@
         </node>
         <node concept="1_9egQ" id="7Uz1bYM5MM9" role="3XIRFZ">
           <node concept="3O_q_g" id="7Uz1bYM5MMa" role="1_9egR">
-            <ref role="3O_q_h" node="7Uz1bYM5MM4" />
+            <ref role="3O_q_h" node="7Uz1bYM5MM4" resolve="f" />
           </node>
         </node>
       </node>
@@ -228,7 +228,7 @@
         <node concept="3XISUE" id="3JtoPqpAW8$" role="3XIRFZ" />
         <node concept="2N2KuS" id="3JtoPqpAWmO" role="3XIRFZ">
           <node concept="3ZVu4v" id="3JtoPqpAW$y" role="2N2GHg">
-            <ref role="3ZVs_2" node="3JtoPqpATT5" />
+            <ref role="3ZVs_2" node="3JtoPqpATT5" resolve="expct" />
           </node>
           <node concept="3o3WLD" id="5D$IuLxk0Un" role="2N2GHh">
             <node concept="3TlMh9" id="5D$IuLxk1k_" role="3o3WLE">
@@ -283,7 +283,7 @@
   <node concept="2v9HqL" id="7Uz1bYM5MLR">
     <property role="TrG5h" value="dummy" />
     <node concept="2xfidK" id="1WKZBvBXE1_" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="7Uz1bYM5MLT" role="2Q9xDr">
       <node concept="2Q9FjX" id="7Uz1bYM5MLU" role="2Q9FjI" />
@@ -291,7 +291,7 @@
     <node concept="2eOfOl" id="7Uz1bYM5MLV" role="2ePNbc">
       <property role="TrG5h" value="TestHelperTest" />
       <node concept="2v9HqM" id="7Uz1bYM5MLW" role="2eOfOg">
-        <ref role="2v9HqP" node="7Uz1bYM5MKX" />
+        <ref role="2v9HqP" node="7Uz1bYM5MKX" resolve="TestHelperTest" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgH" role="1kZvWc">
         <property role="TrG5h" value="any" />

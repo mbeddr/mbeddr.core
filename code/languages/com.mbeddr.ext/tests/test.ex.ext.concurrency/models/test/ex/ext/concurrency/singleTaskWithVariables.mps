@@ -222,7 +222,7 @@
               <node concept="3JYjuR" id="JlCmcDNzSo" role="1_9fRO" />
             </node>
             <node concept="yuV5p" id="JlCmcDNzPN" role="3TlMhI">
-              <ref role="yuZNL" node="JlCmcDNzNc" />
+              <ref role="yuZNL" node="JlCmcDNzNc" resolve="sum" />
             </node>
           </node>
         </node>
@@ -231,10 +231,10 @@
             <node concept="1_9egQ" id="JlCmcDN$WF" role="3XIRFZ">
               <node concept="3pqW6w" id="JlCmcDN$WG" role="1_9egR">
                 <node concept="yuV5p" id="JlCmcDN$WH" role="3TlMhJ">
-                  <ref role="yuZNL" node="JlCmcDNzNc" />
+                  <ref role="yuZNL" node="JlCmcDNzNc" resolve="sum" />
                 </node>
                 <node concept="1S7827" id="JlCmcDN$WI" role="3TlMhI">
-                  <ref role="1S7826" node="JlCmcDN$_W" />
+                  <ref role="1S7826" node="JlCmcDN$_W" resolve="finalSum" />
                 </node>
               </node>
             </node>
@@ -246,7 +246,7 @@
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="4ZOvp" id="JlCmcDT$5h" role="3TlMhI">
-                <ref role="2DPCA0" node="JlCmcDNyt5" />
+                <ref role="2DPCA0" node="JlCmcDNyt5" resolve="MAX_COUNT" />
               </node>
             </node>
             <node concept="2qmXGp" id="JlCmcDN$6F" role="3TlMhI">
@@ -277,7 +277,7 @@
       <property role="TrG5h" value="sched" />
       <node concept="1NgRL0" id="JlCmcDNytV" role="6qQK8">
         <property role="3_dPry" value="1" />
-        <ref role="6qQL_" node="JlCmcDNyto" />
+        <ref role="6qQL_" node="JlCmcDNyto" resolve="measure" />
         <node concept="6VUUj" id="JlCmcDNytW" role="6EqoZ">
           <node concept="3TlMh9" id="JlCmcDNytX" role="6VY68">
             <property role="2hmy$m" value="100" />
@@ -297,13 +297,13 @@
       </node>
       <node concept="3XIRFW" id="JlCmcDNyu1" role="c0Qz3">
         <node concept="6qOI8" id="JlCmcDNyu2" role="3XIRFZ">
-          <ref role="6qOXx" node="JlCmcDNytU" />
+          <ref role="6qOXx" node="JlCmcDNytU" resolve="sched" />
         </node>
         <node concept="1OFKyr" id="JlCmcDNyu3" role="3XIRFZ">
           <node concept="6VUUj" id="JlCmcDNyu4" role="1OFKyo">
             <node concept="2BOcij" id="JlCmcDT$nG" role="6VY68">
               <node concept="4ZOvp" id="JlCmcDT$oc" role="3TlMhJ">
-                <ref role="2DPCA0" node="JlCmcDNyt5" />
+                <ref role="2DPCA0" node="JlCmcDNyt5" resolve="MAX_COUNT" />
               </node>
               <node concept="3TlMh9" id="JlCmcDNyu5" role="3TlMhI">
                 <property role="2hmy$m" value="110" />
@@ -316,7 +316,7 @@
             <property role="2hmy$m" value="45" />
           </node>
           <node concept="1S7827" id="JlCmcDN_jf" role="2N2GHg">
-            <ref role="1S7826" node="JlCmcDN$_W" />
+            <ref role="1S7826" node="JlCmcDN$_W" resolve="finalSum" />
           </node>
         </node>
       </node>
@@ -329,7 +329,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAJgq" role="lIfQt">
-        <ref role="3cM6IK" node="JlCmcDNytZ" />
+        <ref role="3cM6IK" node="JlCmcDNytZ" resolve="taskTest1" />
       </node>
     </node>
   </node>
@@ -348,7 +348,7 @@
     <node concept="2eOfOl" id="JlCmcDNyuH" role="2ePNbc">
       <property role="TrG5h" value="SingleTask" />
       <node concept="2v9HqM" id="2kF1PD7He_p" role="2eOfOg">
-        <ref role="2v9HqP" node="JlCmcDNyrl" />
+        <ref role="2v9HqP" node="JlCmcDNyrl" resolve="SingleWithVariablesTask" />
       </node>
       <node concept="1l1yNw" id="4JZ_DSvTApG" role="1kZvWc">
         <property role="TrG5h" value="Linux" />
@@ -360,7 +360,7 @@
     <node concept="1NkVLJ" id="JlCmcDNyuL" role="2Q9xDr">
       <node concept="1PVdNI" id="JlCmcDNyuM" role="1NkNSE" />
       <node concept="1OId_O" id="6bs538mtCBg" role="1OIqLV">
-        <ref role="1OIdAa" node="JlCmcDNytU" />
+        <ref role="1OIdAa" node="JlCmcDNytU" resolve="sched" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJCE" role="2Q9xDr" />

@@ -42,7 +42,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -131,7 +131,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKGyIDs" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtau7C" role="3qy1PE">
-      <ref role="30ajXG" to="bljs:7lNBHBNC4AP" />
+      <ref role="30ajXG" to="bljs:7lNBHBNC4AP" resolve="TypedefsAndTypes" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2m3Z" role="1zJi$$">
       <property role="TrG5h" value="stepOverTypeDefDeclaration" />
@@ -139,7 +139,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m41" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m42" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m43" role="3sdZbB">
-          <ref role="3sa5fj" to="bljs:4PM5ysqsTMw" />
+          <ref role="3sa5fj" to="bljs:4PM5ysqsTMw" resolve="firstTypeDefVariableDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m44" role="3savwP">
@@ -151,15 +151,15 @@
         <node concept="30a7bf" id="7Jr7T0w2m47" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6G1R" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="bljs:4PM5ysqsTMx" />
+            <ref role="3cQ7K8" to="bljs:4PM5ysqsTMx" resolve="secondTypeDefVariableDeclaration" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyJT4" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyIDt" />
+          <ref role="1vtf2j" node="4WY_RKGyIDt" resolve="inTypedefTest" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyJT6" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyJT7" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyIDw" />
+            <ref role="1vv99g" node="4WY_RKGyIDw" resolve="inTypedefTest" />
           </node>
         </node>
       </node>
@@ -170,7 +170,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m4l" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m4m" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m4n" role="3sdZbB">
-          <ref role="3sa5fj" to="bljs:4PM5ysqsTMw" />
+          <ref role="3sa5fj" to="bljs:4PM5ysqsTMw" resolve="firstTypeDefVariableDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m4o" role="3savwP" />
@@ -178,15 +178,15 @@
         <node concept="30a7bf" id="7Jr7T0w2m4q" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6G1V" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="bljs:4PM5ysqsTMw" />
+            <ref role="3cQ7K8" to="bljs:4PM5ysqsTMw" resolve="firstTypeDefVariableDeclaration" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyJT8" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyIDt" />
+          <ref role="1vtf2j" node="4WY_RKGyIDt" resolve="inTypedefTest" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyJT9" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyJTa" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyIDw" />
+            <ref role="1vv99g" node="4WY_RKGyIDw" resolve="inTypedefTest" />
           </node>
         </node>
       </node>
@@ -197,7 +197,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mc_" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mcA" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mcB" role="3sdZbB">
-          <ref role="3sa5fj" to="bljs:4PM5ysqsTMw" />
+          <ref role="3sa5fj" to="bljs:4PM5ysqsTMw" resolve="firstTypeDefVariableDeclaration" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mcC" role="3savwP">
@@ -209,15 +209,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mcF" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6G1T" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="bljs:4PM5ysqsTMx" />
+            <ref role="3cQ7K8" to="bljs:4PM5ysqsTMx" resolve="secondTypeDefVariableDeclaration" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGyJTb" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGyIDt" />
+          <ref role="1vtf2j" node="4WY_RKGyIDt" resolve="inTypedefTest" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGyJTc" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGyJTd" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGyIDw" />
+            <ref role="1vv99g" node="4WY_RKGyIDw" resolve="inTypedefTest" />
           </node>
         </node>
       </node>

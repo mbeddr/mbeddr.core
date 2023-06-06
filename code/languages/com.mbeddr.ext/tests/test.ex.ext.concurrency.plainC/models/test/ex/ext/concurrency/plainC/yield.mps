@@ -218,19 +218,19 @@
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="TrG5h" value="Yield" />
       <node concept="2v9HqM" id="3xRFG9PQU8k" role="2eOfOg">
-        <ref role="2v9HqP" node="3xRFG9PQKhB" />
+        <ref role="2v9HqP" node="3xRFG9PQKhB" resolve="Yield" />
       </node>
       <node concept="2v9HqM" id="7tWSY$QdZt_" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
       <node concept="2v9HqM" id="7tWSY$QdZtA" role="2eOfOg">
-        <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" />
+        <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
       </node>
       <node concept="2v9HqM" id="7tWSY$QdZtB" role="2eOfOg">
-        <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" />
+        <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" resolve="timeb" />
       </node>
       <node concept="2v9HqM" id="7tWSY$QdZtC" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApC" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -241,10 +241,10 @@
     </node>
     <node concept="1NkVLJ" id="3xRFG9PQKjg" role="2Q9xDr">
       <node concept="1OId_O" id="6bs538mtCDq" role="1OIqLV">
-        <ref role="1OIdAa" node="3xRFG9PQKir" />
+        <ref role="1OIdAa" node="3xRFG9PQKir" resolve="sched" />
       </node>
       <node concept="1KpjJf" id="5gYn0x7VE0O" role="1NkNSE">
-        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" />
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJ$X" role="2Q9xDr" />
@@ -252,10 +252,10 @@
   <node concept="N3F5e" id="3xRFG9PQKhB">
     <property role="TrG5h" value="Yield" />
     <node concept="3GEVxB" id="5gYn0x823WN" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
     <node concept="3GEVxB" id="5gYn0x84YZA" role="2OODSX">
-      <ref role="3GEb4d" to="ke8p:5gYn0x84VoQ" />
+      <ref role="3GEb4d" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
     </node>
     <node concept="1S7NMz" id="7tWSY$QdXOK" role="N3F5h">
       <property role="TrG5h" value="fastTaskExecutionCount" />
@@ -285,7 +285,7 @@
           <node concept="3XIRFW" id="7tWSY$QdZjt" role="1_amYn">
             <node concept="1_9egQ" id="7tWSY$QqhTQ" role="3XIRFZ">
               <node concept="3O_q_g" id="7tWSY$QqhTR" role="1_9egR">
-                <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
                 <node concept="PhEJO" id="7tWSY$QqhTS" role="3O_q_j">
                   <property role="PhEJT" value="yield\n" />
                 </node>
@@ -308,18 +308,18 @@
               <property role="2hmy$m" value="10" />
             </node>
             <node concept="3ZVu4v" id="7tWSY$QdZkj" role="3TlMhI">
-              <ref role="3ZVs_2" node="7tWSY$QdZjC" />
+              <ref role="3ZVs_2" node="7tWSY$QdZjC" resolve="i" />
             </node>
           </node>
           <node concept="3TM6Ey" id="7tWSY$QdZnF" role="1_amZy">
             <node concept="3ZVu4v" id="7tWSY$QdZmt" role="1_9fRO">
-              <ref role="3ZVs_2" node="7tWSY$QdZjC" />
+              <ref role="3ZVs_2" node="7tWSY$QdZjC" resolve="i" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="7tWSY$QqB$D" role="3XIRFZ">
           <node concept="3O_q_g" id="7tWSY$QqB$E" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7tWSY$QqB$F" role="3O_q_j">
               <property role="PhEJT" value="task 'slow' terminated\n" />
             </node>
@@ -329,7 +329,7 @@
           <node concept="3pqW6w" id="7tWSY$Qe$of" role="1_9egR">
             <node concept="3TlMhK" id="7tWSY$Qe$oq" role="3TlMhJ" />
             <node concept="1S7827" id="7tWSY$Qe$mw" role="3TlMhI">
-              <ref role="1S7826" node="7tWSY$QdZ1C" />
+              <ref role="1S7826" node="7tWSY$QdZ1C" resolve="slowTaskTerminated" />
             </node>
           </node>
         </node>
@@ -347,7 +347,7 @@
       <node concept="3XIRFW" id="3xRFG9PQZx9" role="1iABvq">
         <node concept="1_9egQ" id="7tWSY$Qqh$U" role="3XIRFZ">
           <node concept="3O_q_g" id="7tWSY$Qqh$S" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7tWSY$Qqh_i" role="3O_q_j">
               <property role="PhEJT" value="task 'fast' executed\n" />
             </node>
@@ -356,7 +356,7 @@
         <node concept="1_9egQ" id="7tWSY$QdZh9" role="3XIRFZ">
           <node concept="3TM6Ey" id="7tWSY$QdZhu" role="1_9egR">
             <node concept="1S7827" id="7tWSY$QdZh7" role="1_9fRO">
-              <ref role="1S7826" node="7tWSY$QdXOK" />
+              <ref role="1S7826" node="7tWSY$QdXOK" resolve="fastTaskExecutionCount" />
             </node>
           </node>
         </node>
@@ -364,7 +364,7 @@
           <node concept="3XIRFW" id="7tWSY$QdZg$" role="c0U17">
             <node concept="1_9egQ" id="7tWSY$QqBJM" role="3XIRFZ">
               <node concept="3O_q_g" id="7tWSY$QqBJN" role="1_9egR">
-                <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+                <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
                 <node concept="PhEJO" id="7tWSY$QqBJO" role="3O_q_j">
                   <property role="PhEJT" value="task 'fast' terminated\n" />
                 </node>
@@ -373,7 +373,7 @@
             <node concept="1NmsR7" id="7tWSY$QdZgT" role="3XIRFZ" />
           </node>
           <node concept="1S7827" id="7tWSY$QdZgK" role="c0U16">
-            <ref role="1S7826" node="7tWSY$QdZ1C" />
+            <ref role="1S7826" node="7tWSY$QdZ1C" resolve="slowTaskTerminated" />
           </node>
         </node>
       </node>
@@ -386,13 +386,13 @@
       <node concept="3_amfM" id="7tWSY$QdZdL" role="6qQK8">
         <property role="3_dPry" value="1" />
         <node concept="1A7_vw" id="7tWSY$QdZe5" role="1A7$0i">
-          <ref role="1A7_v$" node="3xRFG9PQKhV" />
+          <ref role="1A7_v$" node="3xRFG9PQKhV" resolve="slow" />
         </node>
       </node>
       <node concept="3_amfM" id="7tWSY$QdZev" role="6qQK8">
         <property role="3_dPry" value="2" />
         <node concept="1A7_vw" id="7tWSY$QdZeR" role="1A7$0i">
-          <ref role="1A7_v$" node="3xRFG9PQZx6" />
+          <ref role="1A7_v$" node="3xRFG9PQZx6" resolve="fast" />
         </node>
       </node>
     </node>
@@ -409,17 +409,17 @@
       <node concept="3XIRFW" id="3xRFG9PQKix" role="c0Qz3">
         <node concept="6qOI8" id="3xRFG9PQKiy" role="3XIRFZ">
           <property role="1Onm7i" value="true" />
-          <ref role="6qOXx" node="3xRFG9PQKir" />
+          <ref role="6qOXx" node="3xRFG9PQKir" resolve="sched" />
         </node>
         <node concept="3XISUE" id="5gYn0x82EBP" role="3XIRFZ" />
         <node concept="1_9egQ" id="7tWSY$QpgWW" role="3XIRFZ">
           <node concept="3O_q_g" id="7tWSY$QpgWU" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7tWSY$QpgXg" role="3O_q_j">
               <property role="PhEJT" value="executions: %u\n" />
             </node>
             <node concept="1S7827" id="7tWSY$Qph80" role="3O_q_j">
-              <ref role="1S7826" node="7tWSY$QdXOK" />
+              <ref role="1S7826" node="7tWSY$QdXOK" resolve="fastTaskExecutionCount" />
             </node>
           </node>
         </node>
@@ -428,7 +428,7 @@
             <property role="2hmy$m" value="11" />
           </node>
           <node concept="1S7827" id="7tWSY$Qogtw" role="2N2GHg">
-            <ref role="1S7826" node="7tWSY$QdXOK" />
+            <ref role="1S7826" node="7tWSY$QdXOK" resolve="fastTaskExecutionCount" />
           </node>
         </node>
       </node>
@@ -441,7 +441,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKiC" role="lIfQt">
-        <ref role="3cM6IK" node="3xRFG9PQKiv" />
+        <ref role="3cM6IK" node="3xRFG9PQKiv" resolve="taskTest1" />
       </node>
     </node>
   </node>

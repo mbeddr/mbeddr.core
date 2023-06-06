@@ -159,7 +159,7 @@
                 </node>
                 <node concept="3TM6Ey" id="3f3CxMds3ZT" role="3TlMhI">
                   <node concept="3ZVu4v" id="3f3CxMds3ZU" role="1_9fRO">
-                    <ref role="3ZVs_2" node="3f3CxMds3ZL" />
+                    <ref role="3ZVs_2" node="3f3CxMds3ZL" resolve="p" />
                   </node>
                 </node>
                 <node concept="7CXmI" id="3f3CxMds3ZV" role="lGtFl">
@@ -176,7 +176,7 @@
                 </node>
                 <node concept="1FldXs" id="3f3CxMds3ZZ" role="3TlMhI">
                   <node concept="3ZVu4v" id="3f3CxMds400" role="1_9fRO">
-                    <ref role="3ZVs_2" node="3f3CxMds3ZN" />
+                    <ref role="3ZVs_2" node="3f3CxMds3ZN" resolve="q" />
                   </node>
                 </node>
                 <node concept="7CXmI" id="3f3CxMds401" role="lGtFl">
@@ -198,7 +198,7 @@
                 </node>
                 <node concept="1FldXu" id="5U$1m7lsfo8" role="3TlMhI">
                   <node concept="3ZVu4v" id="5U$1m7lsf8t" role="1_9fRO">
-                    <ref role="3ZVs_2" node="3f3CxMds3ZN" />
+                    <ref role="3ZVs_2" node="3f3CxMds3ZN" resolve="q" />
                   </node>
                 </node>
                 <node concept="7CXmI" id="5U$1m7lsgcD" role="lGtFl">
@@ -215,7 +215,7 @@
                 </node>
                 <node concept="3TM6Ey" id="5U$1m7lse3Q" role="3TlMhI">
                   <node concept="3ZVu4v" id="5U$1m7lse21" role="1_9fRO">
-                    <ref role="3ZVs_2" node="3f3CxMds3ZL" />
+                    <ref role="3ZVs_2" node="3f3CxMds3ZL" resolve="p" />
                   </node>
                 </node>
                 <node concept="7CXmI" id="5U$1m7lsgQJ" role="lGtFl">
@@ -232,7 +232,7 @@
                 </node>
                 <node concept="3TM6Ey" id="5U$1m7lsexU" role="3TlMhI">
                   <node concept="3ZVu4v" id="5U$1m7lses_" role="1_9fRO">
-                    <ref role="3ZVs_2" node="3f3CxMds3ZN" />
+                    <ref role="3ZVs_2" node="3f3CxMds3ZN" resolve="q" />
                   </node>
                 </node>
                 <node concept="7CXmI" id="5U$1m7lsgxG" role="lGtFl">
@@ -299,7 +299,7 @@
                 </node>
               </node>
               <node concept="3ZVu4v" id="1vdVyJtytmB" role="xqp4k">
-                <ref role="3ZVs_2" node="1vdVyJtytmi" />
+                <ref role="3ZVs_2" node="1vdVyJtytmi" resolve="q" />
                 <node concept="7CXmI" id="1vdVyJtytmC" role="lGtFl">
                   <node concept="2DdRWr" id="6qOUCDpMRBw" role="7EUXB" />
                 </node>
@@ -310,19 +310,19 @@
               <property role="1aBf3y" value="false" />
               <property role="19ME4Y" value="strictly after event 'q' occurs, until 'r' occurs, excluding the time of 'r', condition 'p' should be true at least once" />
               <node concept="3ZVu4v" id="5U$1m7lshMs" role="2L5iDo">
-                <ref role="3ZVs_2" node="1vdVyJtytmi" />
+                <ref role="3ZVs_2" node="1vdVyJtytmi" resolve="q" />
                 <node concept="7CXmI" id="5U$1m7lsi5e" role="lGtFl">
                   <node concept="2DdRWr" id="6qOUCDpMR7h" role="7EUXB" />
                 </node>
               </node>
               <node concept="3ZVu4v" id="5U$1m7lshGC" role="2L5iDm">
-                <ref role="3ZVs_2" node="1vdVyJtytmg" />
+                <ref role="3ZVs_2" node="1vdVyJtytmg" resolve="p" />
                 <node concept="7CXmI" id="5U$1m7lsiOW" role="lGtFl">
                   <node concept="2DdRWr" id="6qOUCDpMQiY" role="7EUXB" />
                 </node>
               </node>
               <node concept="3ZVu4v" id="5U$1m7lshIB" role="2L5iDk">
-                <ref role="3ZVs_2" node="1vdVyJtytmi" />
+                <ref role="3ZVs_2" node="1vdVyJtytmi" resolve="q" />
                 <node concept="7CXmI" id="5U$1m7lsis9" role="lGtFl">
                   <node concept="2DdRWr" id="6qOUCDpMQiZ" role="7EUXB" />
                 </node>

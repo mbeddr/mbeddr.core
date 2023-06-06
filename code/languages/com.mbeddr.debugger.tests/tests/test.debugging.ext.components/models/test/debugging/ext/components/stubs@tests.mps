@@ -52,7 +52,7 @@
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -277,7 +277,7 @@
     </node>
     <node concept="3sgmnF" id="1yKRj6BOjKK" role="1zJi$$" />
     <node concept="3qy1PH" id="2xzojtq5DCp" role="3qy1PE">
-      <ref role="30ajXG" to="4ozr:5u7uvg8qKD0" />
+      <ref role="30ajXG" to="4ozr:5u7uvg8qKD0" resolve="StubTest" />
     </node>
     <node concept="3scrou" id="2xzojtq5DCq" role="1zJi$$">
       <property role="TrG5h" value="componentAfterInit" />
@@ -285,7 +285,7 @@
       <node concept="3clFbS" id="2xzojtq5DCs" role="3clF47" />
       <node concept="3sdZbQ" id="2xzojtq5DCt" role="3scror">
         <node concept="3sdZbA" id="2xzojtq5DCv" role="3sdZbB">
-          <ref role="3sa5fj" to="4ozr:2xzojtq5DCu" />
+          <ref role="3sa5fj" to="4ozr:2xzojtq5DCu" resolve="afterComponentInit" />
         </node>
       </node>
       <node concept="3F5Y_J" id="2xzojtq5DCw" role="3F5AM1">
@@ -511,14 +511,14 @@
       <node concept="3clFbS" id="1yKRj6BOjK5" role="3clF47" />
       <node concept="3sdZbQ" id="1yKRj6BOjKz" role="3scror">
         <node concept="3sdZbA" id="1yKRj6BOoLI" role="3sdZbB">
-          <ref role="3sa5fj" to="4ozr:1yKRj6BOjK_" />
+          <ref role="3sa5fj" to="4ozr:1yKRj6BOjK_" resolve="beforePhaseChange" />
         </node>
       </node>
       <node concept="3F5Y_J" id="1yKRj6BOjKB" role="3F5AM1">
         <node concept="30a7bf" id="1yKRj6BOjKC" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAGbF" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="4ozr:2xzojtq5DCu" />
+            <ref role="3cQ7K8" to="4ozr:2xzojtq5DCu" resolve="afterComponentInit" />
           </node>
         </node>
         <node concept="1l46Ie" id="1yKRj6BOjKI" role="3F5Y$9">
@@ -755,14 +755,14 @@
       <node concept="3clFbS" id="1yKRj6BPbpj" role="3clF47" />
       <node concept="3sdZbQ" id="1yKRj6BPbpk" role="3scror">
         <node concept="3sdZbA" id="1yKRj6BPbpt" role="3sdZbB">
-          <ref role="3sa5fj" to="4ozr:1yKRj6BPbps" />
+          <ref role="3sa5fj" to="4ozr:1yKRj6BPbps" resolve="callingStub" />
         </node>
       </node>
       <node concept="3F5Y_J" id="1yKRj6BPbpp" role="3F5AM1">
         <node concept="30a7bf" id="1yKRj6BPbpq" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAGbH" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="4ozr:1yKRj6BPdat" />
+            <ref role="3cQ7K8" to="4ozr:1yKRj6BPdat" resolve="insideStub" />
           </node>
         </node>
         <node concept="1l6n2J" id="1yKRj6BPbpx" role="3F5Y$9">

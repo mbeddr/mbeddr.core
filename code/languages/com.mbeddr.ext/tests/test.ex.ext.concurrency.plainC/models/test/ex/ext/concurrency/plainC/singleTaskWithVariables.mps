@@ -206,13 +206,13 @@
     <node concept="2eOfOl" id="JlCmcDNyuH" role="2ePNbc">
       <property role="TrG5h" value="SingleTask" />
       <node concept="2v9HqM" id="JlCmcDNyuI" role="2eOfOg">
-        <ref role="2v9HqP" node="JlCmcDNyrl" />
+        <ref role="2v9HqP" node="JlCmcDNyrl" resolve="SingleTask" />
       </node>
       <node concept="2v9HqM" id="2ZMK30SnXnp" role="2eOfOg">
-        <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" />
+        <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
       </node>
       <node concept="2v9HqM" id="2ZMK30SnXnq" role="2eOfOg">
-        <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" />
+        <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" resolve="timeb" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApw" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -223,10 +223,10 @@
     </node>
     <node concept="1NkVLJ" id="JlCmcDNyuL" role="2Q9xDr">
       <node concept="1KpjJf" id="2ZMK30SnWw7" role="1NkNSE">
-        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" />
+        <ref role="12uRbP" to="ke8p:5gYn0x84VoR" resolve="currentTimeUS" />
       </node>
       <node concept="1OId_O" id="6bs538mtCBg" role="1OIqLV">
-        <ref role="1OIdAa" node="JlCmcDNytU" />
+        <ref role="1OIdAa" node="JlCmcDNytU" resolve="sched" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJ_b" role="2Q9xDr" />
@@ -265,7 +265,7 @@
               <node concept="3JYjuR" id="JlCmcDNzSo" role="1_9fRO" />
             </node>
             <node concept="yuV5p" id="JlCmcDNzPN" role="3TlMhI">
-              <ref role="yuZNL" node="JlCmcDNzNc" />
+              <ref role="yuZNL" node="JlCmcDNzNc" resolve="sum" />
             </node>
           </node>
         </node>
@@ -274,10 +274,10 @@
             <node concept="1_9egQ" id="JlCmcDN$WF" role="3XIRFZ">
               <node concept="3pqW6w" id="JlCmcDN$WG" role="1_9egR">
                 <node concept="yuV5p" id="JlCmcDN$WH" role="3TlMhJ">
-                  <ref role="yuZNL" node="JlCmcDNzNc" />
+                  <ref role="yuZNL" node="JlCmcDNzNc" resolve="sum" />
                 </node>
                 <node concept="1S7827" id="JlCmcDN$WI" role="3TlMhI">
-                  <ref role="1S7826" node="JlCmcDN$_W" />
+                  <ref role="1S7826" node="JlCmcDN$_W" resolve="finalSum" />
                 </node>
               </node>
             </node>
@@ -289,7 +289,7 @@
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="4ZOvp" id="JlCmcDT$5h" role="3TlMhI">
-                <ref role="2DPCA0" node="JlCmcDNyt5" />
+                <ref role="2DPCA0" node="JlCmcDNyt5" resolve="MAX_COUNT" />
               </node>
             </node>
             <node concept="2qmXGp" id="JlCmcDN$6F" role="3TlMhI">
@@ -320,7 +320,7 @@
       <property role="TrG5h" value="sched" />
       <node concept="1NgRL0" id="JlCmcDNytV" role="6qQK8">
         <property role="3_dPry" value="1" />
-        <ref role="6qQL_" node="JlCmcDNyto" />
+        <ref role="6qQL_" node="JlCmcDNyto" resolve="measure" />
         <node concept="6VUUj" id="JlCmcDNytW" role="6EqoZ">
           <node concept="3TlMh9" id="JlCmcDNytX" role="6VY68">
             <property role="2hmy$m" value="100" />
@@ -341,14 +341,14 @@
       <node concept="3XIRFW" id="JlCmcDNyu1" role="c0Qz3">
         <node concept="6qOI8" id="JlCmcDNyu2" role="3XIRFZ">
           <property role="1Onm7i" value="true" />
-          <ref role="6qOXx" node="JlCmcDNytU" />
+          <ref role="6qOXx" node="JlCmcDNytU" resolve="sched" />
         </node>
         <node concept="2N2KuS" id="JlCmcDN_jd" role="3XIRFZ">
           <node concept="3TlMh9" id="JlCmcDN_je" role="2N2GHh">
             <property role="2hmy$m" value="45" />
           </node>
           <node concept="1S7827" id="JlCmcDN_jf" role="2N2GHg">
-            <ref role="1S7826" node="JlCmcDN$_W" />
+            <ref role="1S7826" node="JlCmcDN$_W" resolve="finalSum" />
           </node>
         </node>
       </node>
@@ -361,11 +361,11 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKiQ" role="lIfQt">
-        <ref role="3cM6IK" node="JlCmcDNytZ" />
+        <ref role="3cM6IK" node="JlCmcDNytZ" resolve="taskTest1" />
       </node>
     </node>
     <node concept="3GEVxB" id="2ZMK30SnWRi" role="2OODSX">
-      <ref role="3GEb4d" to="ke8p:5gYn0x84VoQ" />
+      <ref role="3GEb4d" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
     </node>
   </node>
 </model>

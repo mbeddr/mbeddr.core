@@ -42,7 +42,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -155,7 +155,7 @@
       <node concept="3clFbS" id="7HfWMO9iKj4" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9iKj5" role="3scror">
         <node concept="3sdZbA" id="7HfWMO9iKj6" role="3sdZbB">
-          <ref role="3sa5fj" to="awd:7HfWMO9iKiS" />
+          <ref role="3sa5fj" to="awd:7HfWMO9iKiS" resolve="opCallBeforeReconnect" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9iKj7" role="3savwP">
@@ -167,11 +167,11 @@
         <node concept="30a7bf" id="7HfWMO9iKja" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEGY" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="awd:7HfWMO9iKiX" />
+            <ref role="3cQ7K8" to="awd:7HfWMO9iKiX" resolve="inConnectedOp" />
           </node>
         </node>
         <node concept="1vtf2i" id="7HfWMO9iKj_" role="3F5Y$9">
-          <ref role="1vtf2j" node="7HfWMO9iKjs" />
+          <ref role="1vtf2j" node="7HfWMO9iKjs" resolve="inConnectedOp" />
         </node>
       </node>
     </node>
@@ -182,7 +182,7 @@
       <node concept="3clFbS" id="7HfWMO9iKjg" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9iKjh" role="3scror">
         <node concept="3sdZbA" id="7HfWMO9iKjk" role="3sdZbB">
-          <ref role="3sa5fj" to="awd:7HfWMO9iKiT" />
+          <ref role="3sa5fj" to="awd:7HfWMO9iKiT" resolve="opCallAfterReconnect" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9iKjj" role="3savwP">
@@ -194,11 +194,11 @@
         <node concept="30a7bf" id="7HfWMO9iKjn" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEH0" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="awd:7HfWMO9iKiW" />
+            <ref role="3cQ7K8" to="awd:7HfWMO9iKiW" resolve="inReconnectedOp" />
           </node>
         </node>
         <node concept="1vtf2i" id="7HfWMO9iKj$" role="3F5Y$9">
-          <ref role="1vtf2j" node="7HfWMO9iKjw" />
+          <ref role="1vtf2j" node="7HfWMO9iKjw" resolve="inReconnectedOp" />
         </node>
       </node>
     </node>
@@ -209,7 +209,7 @@
       <node concept="3clFbS" id="7HfWMO9iLHP" role="3clF47" />
       <node concept="3sdZbQ" id="7HfWMO9iLHQ" role="3scror">
         <node concept="3sdZbA" id="7HfWMO9iMYZ" role="3sdZbB">
-          <ref role="3sa5fj" to="awd:7HfWMO9iLeD" />
+          <ref role="3sa5fj" to="awd:7HfWMO9iLeD" resolve="callingUsingComponent" />
         </node>
       </node>
       <node concept="3savIG" id="7HfWMO9iLHS" role="3savwP">
@@ -221,16 +221,16 @@
         <node concept="30a7bf" id="7HfWMO9iLHX" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAEH2" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="awd:3up2JmAhMGl" />
+            <ref role="3cQ7K8" to="awd:3up2JmAhMGl" resolve="inCallIOp" />
           </node>
         </node>
         <node concept="1vtf2i" id="7HfWMO9iLI2" role="3F5Y$9">
-          <ref role="1vtf2j" node="3up2JmAhN3h" />
+          <ref role="1vtf2j" node="3up2JmAhN3h" resolve="inCallI" />
         </node>
       </node>
     </node>
     <node concept="3qy1PH" id="7HfWMO9iKj0" role="3qy1PE">
-      <ref role="30ajXG" to="awd:1ijJyTDpE9E" />
+      <ref role="30ajXG" to="awd:1ijJyTDpE9E" resolve="DynamicWiringTest" />
     </node>
     <node concept="29bEnc" id="5t7wq7uZRZd" role="29bA6Q" />
   </node>

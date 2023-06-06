@@ -151,10 +151,10 @@
     <node concept="2eOfOl" id="Kk0nz9_Xpq" role="2ePNbc">
       <property role="TrG5h" value="ExportedSM" />
       <node concept="2v9HqM" id="Kk0nz9_Xpr" role="2eOfOg">
-        <ref role="2v9HqP" node="Kk0nz9_Xos" />
+        <ref role="2v9HqP" node="Kk0nz9_Xos" resolve="ExportedSM" />
       </node>
       <node concept="2v9HqM" id="Kk0nz9A6dE" role="2eOfOg">
-        <ref role="2v9HqP" node="Kk0nz9_Xps" />
+        <ref role="2v9HqP" node="Kk0nz9_Xps" resolve="Main" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApY" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -170,7 +170,7 @@
     <node concept="1LFe83" id="Kk0nz9_Xpw" role="N3F5h">
       <property role="TrG5h" value="SM" />
       <property role="2OOxQR" value="true" />
-      <ref role="1LFebw" node="Kk0nz9_Xpx" />
+      <ref role="1LFebw" node="Kk0nz9_Xpx" resolve="s1" />
       <node concept="2cfOFI" id="Kk0nz9_Xpz" role="1_Iowf">
         <property role="TrG5h" value="evt" />
       </node>
@@ -198,16 +198,16 @@
         <node concept="3XIRlf" id="Kk0nz9A5AJ" role="3XIRFZ">
           <property role="TrG5h" value="sm" />
           <node concept="3lBjsv" id="Kk0nz9A5AK" role="2C2TGm">
-            <ref role="3lBjss" node="Kk0nz9_Xpw" />
+            <ref role="3lBjss" node="Kk0nz9_Xpw" resolve="SM" />
           </node>
         </node>
         <node concept="1_9egQ" id="6PCgYL5xRoV" role="3XIRFZ">
           <node concept="2qmXGp" id="6PCgYL5xRoU" role="1_9egR">
             <node concept="3ZVu4v" id="Kk0nz9A5AO" role="1_9fRO">
-              <ref role="3ZVs_2" node="Kk0nz9A5AJ" />
+              <ref role="3ZVs_2" node="Kk0nz9A5AJ" resolve="sm" />
             </node>
             <node concept="$QhJh" id="6PCgYL5xRoT" role="1ESnxz">
-              <ref role="$QhfV" node="Kk0nz9_Xpz" />
+              <ref role="$QhfV" node="Kk0nz9_Xpz" resolve="evt" />
             </node>
           </node>
         </node>
@@ -221,12 +221,12 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKQU" role="lIfQt">
-        <ref role="3cM6IK" node="Kk0nz9_XoD" />
+        <ref role="3cM6IK" node="Kk0nz9_XoD" resolve="testCase1" />
       </node>
     </node>
     <node concept="3GEVxB" id="6PCgYL5xRp2" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="Kk0nz9_Xos" />
+      <ref role="3GEb4d" node="Kk0nz9_Xos" resolve="ExportedSM" />
     </node>
   </node>
 </model>

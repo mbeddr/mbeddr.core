@@ -104,13 +104,13 @@
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="TrG5h" value="TwoTasks" />
       <node concept="2v9HqM" id="3qlQk_ggWAG" role="2eOfOg">
-        <ref role="2v9HqP" to="boqp:3Xsb2sPPkKA" />
+        <ref role="2v9HqP" to="boqp:3Xsb2sPPkKA" resolve="twoTasks" />
       </node>
       <node concept="2v9HqM" id="5NTfFgKbyFJ" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="2v9HqM" id="5NTfFgKbyFK" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
       <node concept="1l1yNw" id="4JZ_DSvTAoU" role="1kZvWc">
         <property role="TrG5h" value="Linux" />
@@ -121,7 +121,7 @@
     </node>
     <node concept="1NkVLJ" id="3xRFG9PQKjg" role="2Q9xDr">
       <node concept="1OId_O" id="3qlQk_ggXt8" role="1OIqLV">
-        <ref role="1OIdAa" to="boqp:3qlQk_geR4B" />
+        <ref role="1OIdAa" to="boqp:3qlQk_geR4B" resolve="schedule1" />
       </node>
       <node concept="1PVdNI" id="7tWSY$QAAxK" role="1NkNSE" />
     </node>

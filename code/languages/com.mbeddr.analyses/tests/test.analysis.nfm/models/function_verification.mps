@@ -365,10 +365,10 @@
     <node concept="2EX0iR" id="4LZvqgKpjVO" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="SpeedComputer" />
-      <ref role="1P_JnW" node="4LZvqgKpjYG" />
-      <ref role="1P_JnZ" node="4LZvqgKpjYH" />
-      <ref role="3Z3Pd3" node="4LZvqgKpjYG" />
-      <ref role="3Z3Pdc" node="4LZvqgKpjYH" />
+      <ref role="1P_JnW" node="4LZvqgKpjYG" resolve="SPEED" />
+      <ref role="1P_JnZ" node="4LZvqgKpjYH" resolve="ILLEGAL_ARGUMENT_EXCEPTION" />
+      <ref role="3Z3Pd3" node="4LZvqgKpjYG" resolve="SPEED" />
+      <ref role="3Z3Pdc" node="4LZvqgKpjYH" resolve="ILLEGAL_ARGUMENT_EXCEPTION" />
       <node concept="2EX0iL" id="4LZvqgKpjVP" role="2EX0iN">
         <property role="TrG5h" value="activate" />
         <node concept="19Rifw" id="4LZvqgKpjVQ" role="2C2TGm">
@@ -391,7 +391,7 @@
         <node concept="3IV3Ep" id="4LZvqgKpjW0" role="3IV3Eo">
           <node concept="3Tl9Jr" id="4LZvqgKpjW1" role="3IV3Em">
             <node concept="3IV1Zc" id="4LZvqgKpjW2" role="3TlMhI">
-              <ref role="3IV1Zd" node="4LZvqgKpjVY" />
+              <ref role="3IV1Zd" node="4LZvqgKpjVY" resolve="time" />
             </node>
             <node concept="3TlMh9" id="4LZvqgKpjW3" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
@@ -401,7 +401,7 @@
         <node concept="3IV3Ep" id="4LZvqgKpjW4" role="3IV3Eo">
           <node concept="3Tl9Jr" id="4LZvqgKpjW5" role="3IV3Em">
             <node concept="3IV1Zc" id="4LZvqgKpjW6" role="3TlMhI">
-              <ref role="3IV1Zd" node="4LZvqgKpjVW" />
+              <ref role="3IV1Zd" node="4LZvqgKpjVW" resolve="distance" />
             </node>
             <node concept="3TlMh9" id="4LZvqgKpjW7" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
@@ -418,10 +418,10 @@
         </node>
         <node concept="3Z21gw" id="4LZvqgKpjWc" role="3Z21jN">
           <node concept="3Z21g8" id="4LZvqgKpjWd" role="3Z21go">
-            <ref role="3Z21g9" node="4LZvqgKpjVT" />
+            <ref role="3Z21g9" node="4LZvqgKpjVT" resolve="Active" />
           </node>
           <node concept="3Z21g8" id="4LZvqgKpjWe" role="3Z21gp">
-            <ref role="3Z21g9" node="4LZvqgKpjVT" />
+            <ref role="3Z21g9" node="4LZvqgKpjVT" resolve="Active" />
           </node>
         </node>
         <node concept="2EWNYT" id="4LZvqgKpjVW" role="1UOdpc">
@@ -447,7 +447,7 @@
         </node>
         <node concept="3Z21gw" id="4LZvqgKpjWh" role="3Z21jN">
           <node concept="3Z21g8" id="4LZvqgKpjWi" role="3Z21go">
-            <ref role="3Z21g9" node="4LZvqgKpjVT" />
+            <ref role="3Z21g9" node="4LZvqgKpjVT" resolve="Active" />
           </node>
           <node concept="3Z21gl" id="4LZvqgKpjWj" role="3Z21gp" />
         </node>
@@ -461,7 +461,7 @@
       <property role="TrG5h" value="PlauzibilizedSpeedComputer" />
       <node concept="2EWHp_" id="4LZvqgKpjWm" role="2RW2fA">
         <property role="TrG5h" value="speedComputer" />
-        <ref role="2EX0h9" node="4LZvqgKpjVO" />
+        <ref role="2EX0h9" node="4LZvqgKpjVO" resolve="SpeedComputer" />
       </node>
       <node concept="3Khz0B" id="4LZvqgKpjWn" role="2RW2fA" />
       <node concept="EbCE0" id="4LZvqgKpjWo" role="2RW2fA">
@@ -504,10 +504,10 @@
             </node>
             <node concept="2BOcih" id="4LZvqgKpjWA" role="3XIe9u">
               <node concept="3ZUYvv" id="4LZvqgKpjWB" role="3TlMhJ">
-                <ref role="3ZUYvu" node="4VnkUAUbNXp" />
+                <ref role="3ZUYvu" node="4VnkUAUbNXp" resolve="time" />
               </node>
               <node concept="3ZUYvv" id="4LZvqgKpjWC" role="3TlMhI">
-                <ref role="3ZUYvu" node="4VnkUAUbNXn" />
+                <ref role="3ZUYvu" node="4VnkUAUbNXn" resolve="distance" />
               </node>
             </node>
           </node>
@@ -520,10 +520,10 @@
             <node concept="n5E$d" id="4LZvqgKpjWF" role="3XIe9u">
               <node concept="2BOcil" id="4LZvqgKpjWG" role="n5E$j">
                 <node concept="EbZIE" id="4LZvqgKpjWH" role="3TlMhJ">
-                  <ref role="EbZID" node="4LZvqgKpjWo" />
+                  <ref role="EbZID" node="4LZvqgKpjWo" resolve="lastSpeed" />
                 </node>
                 <node concept="3ZVu4v" id="4LZvqgKpjWI" role="3TlMhI">
-                  <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                  <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                 </node>
               </node>
               <node concept="2BPB98" id="4LZvqgKpjWJ" role="n5E$c">
@@ -533,20 +533,20 @@
                   </node>
                   <node concept="2BOcil" id="4LZvqgKpjWM" role="3TlMhI">
                     <node concept="EbZIE" id="4LZvqgKpjWN" role="3TlMhI">
-                      <ref role="EbZID" node="4LZvqgKpjWo" />
+                      <ref role="EbZID" node="4LZvqgKpjWo" resolve="lastSpeed" />
                     </node>
                     <node concept="3ZVu4v" id="4LZvqgKpjWO" role="3TlMhJ">
-                      <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                      <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="2BOcil" id="4LZvqgKpjWP" role="n5E$i">
                 <node concept="3ZVu4v" id="4LZvqgKpjWQ" role="3TlMhJ">
-                  <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                  <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                 </node>
                 <node concept="EbZIE" id="4LZvqgKpjWR" role="3TlMhI">
-                  <ref role="EbZID" node="4LZvqgKpjWo" />
+                  <ref role="EbZID" node="4LZvqgKpjWo" resolve="lastSpeed" />
                 </node>
               </node>
             </node>
@@ -556,26 +556,26 @@
             <node concept="eGNQo" id="4LZvqgKpjWU" role="2BFjQA">
               <node concept="3Tl9Jn" id="4LZvqgKpjWV" role="eGNQr">
                 <node concept="3ZVu4v" id="4LZvqgKpjWW" role="3TlMhI">
-                  <ref role="3ZVs_2" node="4LZvqgKpjWD" />
+                  <ref role="3ZVs_2" node="4LZvqgKpjWD" resolve="delta" />
                 </node>
                 <node concept="EbZIE" id="4LZvqgKpjWX" role="3TlMhJ">
-                  <ref role="EbZID" node="4LZvqgKpjWu" />
+                  <ref role="EbZID" node="4LZvqgKpjWu" resolve="maxPlausibleDelta" />
                 </node>
               </node>
               <node concept="3Tl9Jr" id="4LZvqgKpjWY" role="eGNQr">
                 <node concept="3ZVu4v" id="4LZvqgKpjWZ" role="3TlMhI">
-                  <ref role="3ZVs_2" node="4LZvqgKpjWD" />
+                  <ref role="3ZVs_2" node="4LZvqgKpjWD" resolve="delta" />
                 </node>
                 <node concept="EbZIE" id="4LZvqgKpjX0" role="3TlMhJ">
-                  <ref role="EbZID" node="4LZvqgKpjWu" />
+                  <ref role="EbZID" node="4LZvqgKpjWu" resolve="maxPlausibleDelta" />
                 </node>
               </node>
               <node concept="EbZIE" id="4LZvqgKpjX1" role="eGNQq">
-                <ref role="EbZID" node="4LZvqgKpjWr" />
+                <ref role="EbZID" node="4LZvqgKpjWr" resolve="initialized" />
               </node>
               <node concept="19$8ne" id="4LZvqgKpjX2" role="eGNQq">
                 <node concept="EbZIE" id="4LZvqgKpjX3" role="1_9fRO">
-                  <ref role="EbZID" node="4LZvqgKpjWr" />
+                  <ref role="EbZID" node="4LZvqgKpjWr" resolve="initialized" />
                 </node>
               </node>
               <node concept="3cMQbe" id="4LZvqgKpjX4" role="eGNQ_">
@@ -583,22 +583,22 @@
                   <node concept="1_9egQ" id="4LZvqgKpjX6" role="3XIRFZ">
                     <node concept="3pqW6w" id="4LZvqgKpjX7" role="1_9egR">
                       <node concept="3ZVu4v" id="4LZvqgKpjX8" role="3TlMhJ">
-                        <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                        <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                       </node>
                       <node concept="EbZIE" id="4LZvqgKpjX9" role="3TlMhI">
-                        <ref role="EbZID" node="4LZvqgKpjWo" />
+                        <ref role="EbZID" node="4LZvqgKpjWo" resolve="lastSpeed" />
                       </node>
                     </node>
                   </node>
                   <node concept="3cM8qv" id="4LZvqgKpjXa" role="3XIRFZ">
                     <node concept="3ZVu4v" id="4LZvqgKpjXb" role="3cM8qs">
-                      <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                      <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="EbZIE" id="4LZvqgKpjXc" role="eGNQ_">
-                <ref role="EbZID" node="4LZvqgKpjWo" />
+                <ref role="EbZID" node="4LZvqgKpjWo" resolve="lastSpeed" />
               </node>
               <node concept="3cMQbe" id="4LZvqgKpjXd" role="eGNQ_">
                 <node concept="3XIRFW" id="4LZvqgKpjXe" role="3cMQbf">
@@ -606,13 +606,13 @@
                     <node concept="3pqW6w" id="4LZvqgKpjXg" role="1_9egR">
                       <node concept="3TlMhd" id="4LZvqgKpjXh" role="3TlMhJ" />
                       <node concept="EbZIE" id="4LZvqgKpjXi" role="3TlMhI">
-                        <ref role="EbZID" node="4LZvqgKpjWr" />
+                        <ref role="EbZID" node="4LZvqgKpjWr" resolve="initialized" />
                       </node>
                     </node>
                   </node>
                   <node concept="3cM8qv" id="4LZvqgKpjXj" role="3XIRFZ">
                     <node concept="3ZVu4v" id="4LZvqgKpjXk" role="3cM8qs">
-                      <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                      <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                     </node>
                   </node>
                 </node>
@@ -623,13 +623,13 @@
                     <node concept="3pqW6w" id="4LZvqgKpjXo" role="1_9egR">
                       <node concept="3TlMhK" id="4LZvqgKpjXp" role="3TlMhJ" />
                       <node concept="EbZIE" id="4LZvqgKpjXq" role="3TlMhI">
-                        <ref role="EbZID" node="4LZvqgKpjWr" />
+                        <ref role="EbZID" node="4LZvqgKpjWr" resolve="initialized" />
                       </node>
                     </node>
                   </node>
                   <node concept="3cM8qv" id="4LZvqgKpjXr" role="3XIRFZ">
                     <node concept="3ZVu4v" id="4LZvqgKpjXs" role="3cM8qs">
-                      <ref role="3ZVs_2" node="4LZvqgKpjW$" />
+                      <ref role="3ZVs_2" node="4LZvqgKpjW$" resolve="currentSpeed" />
                     </node>
                   </node>
                 </node>
@@ -648,8 +648,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="4LZvqgKpjXx" role="2EWDeT">
-          <ref role="1ZwSu5" node="4LZvqgKpjWm" />
-          <ref role="1ZwxE2" node="4LZvqgKpjVU" />
+          <ref role="1ZwSu5" node="4LZvqgKpjWm" resolve="speedComputer" />
+          <ref role="1ZwxE2" node="4LZvqgKpjVU" resolve="computeSpeed" />
         </node>
         <node concept="3AreGT" id="4VnkUAUbNXm" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -678,15 +678,15 @@
             <node concept="3pqW6w" id="4LZvqgKpjXF" role="1_9egR">
               <node concept="3TlMhK" id="4LZvqgKpjXG" role="3TlMhJ" />
               <node concept="EbZIE" id="4LZvqgKpjXH" role="3TlMhI">
-                <ref role="EbZID" node="4LZvqgKpjWr" />
+                <ref role="EbZID" node="4LZvqgKpjWr" resolve="initialized" />
               </node>
             </node>
           </node>
           <node concept="2BFjQ_" id="4LZvqgKpjXI" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="4LZvqgKpjXJ" role="2EWDeT">
-          <ref role="1ZwSu5" node="4LZvqgKpjWm" />
-          <ref role="1ZwxE2" node="4LZvqgKpjVP" />
+          <ref role="1ZwSu5" node="4LZvqgKpjWm" resolve="speedComputer" />
+          <ref role="1ZwxE2" node="4LZvqgKpjVP" resolve="activate" />
         </node>
         <node concept="19Rifw" id="4VnkUAUbPB6" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -701,15 +701,15 @@
             <node concept="3pqW6w" id="4LZvqgKpjXP" role="1_9egR">
               <node concept="3TlMhd" id="4LZvqgKpjXQ" role="3TlMhJ" />
               <node concept="EbZIE" id="4LZvqgKpjXR" role="3TlMhI">
-                <ref role="EbZID" node="4LZvqgKpjWr" />
+                <ref role="EbZID" node="4LZvqgKpjWr" resolve="initialized" />
               </node>
             </node>
           </node>
           <node concept="2BFjQ_" id="4LZvqgKpjXS" role="3XIRFZ" />
         </node>
         <node concept="2EWDw0" id="4LZvqgKpjXT" role="2EWDeT">
-          <ref role="1ZwSu5" node="4LZvqgKpjWm" />
-          <ref role="1ZwxE2" node="4LZvqgKpjWf" />
+          <ref role="1ZwSu5" node="4LZvqgKpjWm" resolve="speedComputer" />
+          <ref role="1ZwxE2" node="4LZvqgKpjWf" resolve="deactivate" />
         </node>
         <node concept="19Rifw" id="4VnkUAUbPB8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -718,7 +718,7 @@
       </node>
       <node concept="1cekJe" id="4LZvqgKpjXV" role="lGtFl">
         <property role="1cekJb" value="10" />
-        <ref role="1cekJ8" node="4LZvqgKpjY2" />
+        <ref role="1cekJ8" node="4LZvqgKpjY2" resolve="emitCurrentSpeed" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4LZvqgKpjXW" role="N3F5h">
@@ -728,13 +728,13 @@
       <property role="TrG5h" value="comp" />
       <node concept="2EWCuV" id="4LZvqgKpjXY" role="5JtDH">
         <property role="TrG5h" value="sp" />
-        <ref role="2EWCuU" node="4LZvqgKpjWl" />
+        <ref role="2EWCuU" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
       </node>
       <node concept="21gPQu" id="4LZvqgKpjXZ" role="5JtDH">
         <property role="TrG5h" value="comp" />
         <node concept="219P8x" id="4LZvqgKpjY0" role="21ad3a">
-          <ref role="219P8w" node="4LZvqgKpjXY" />
-          <ref role="219P8J" node="4LZvqgKpjWm" />
+          <ref role="219P8w" node="4LZvqgKpjXY" resolve="sp" />
+          <ref role="219P8J" node="4LZvqgKpjWm" resolve="speedComputer" />
         </node>
       </node>
     </node>
@@ -748,7 +748,7 @@
         <node concept="3XIRlf" id="4LZvqgKpjY4" role="3XIRFZ">
           <property role="TrG5h" value="time" />
           <node concept="3O_q_g" id="7QgqANUB_Yo" role="3XIe9u">
-            <ref role="3O_q_h" node="4LZvqgKpjZK" />
+            <ref role="3O_q_h" node="4LZvqgKpjZK" resolve="readTime" />
           </node>
           <node concept="26Vqpq" id="4LZvqgKpjY6" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -758,7 +758,7 @@
         <node concept="3XIRlf" id="4LZvqgKpjY7" role="3XIRFZ">
           <property role="TrG5h" value="dist" />
           <node concept="3O_q_g" id="7QgqANUB_Yp" role="3XIe9u">
-            <ref role="3O_q_h" node="4LZvqgKpjZI" />
+            <ref role="3O_q_h" node="4LZvqgKpjZI" resolve="readDistance" />
           </node>
           <node concept="26Vqpq" id="4LZvqgKpjY9" role="2C2TGm">
             <property role="2caQfQ" value="false" />
@@ -781,15 +781,15 @@
           <node concept="3XIRFW" id="4LZvqgKpjYb" role="c0U17">
             <node concept="2BFjQ_" id="4LZvqgKpjYc" role="3XIRFZ">
               <node concept="30IJZa" id="4LZvqgKpjYd" role="2BFjQA">
-                <ref role="2H6Oet" node="4LZvqgKpjVU" />
+                <ref role="2H6Oet" node="4LZvqgKpjVU" resolve="computeSpeed" />
                 <node concept="2H6Wec" id="4LZvqgKpjYe" role="1_9fRO">
-                  <ref role="2H6Wef" node="4LZvqgKpjXZ" />
+                  <ref role="2H6Wef" node="4LZvqgKpjXZ" resolve="comp" />
                 </node>
                 <node concept="3ZVu4v" id="4LZvqgKpjYf" role="2H6KYo">
-                  <ref role="3ZVs_2" node="4LZvqgKpjY7" />
+                  <ref role="3ZVs_2" node="4LZvqgKpjY7" resolve="dist" />
                 </node>
                 <node concept="3ZVu4v" id="4LZvqgKpjYg" role="2H6KYo">
-                  <ref role="3ZVs_2" node="4LZvqgKpjY4" />
+                  <ref role="3ZVs_2" node="4LZvqgKpjY4" resolve="time" />
                 </node>
               </node>
             </node>
@@ -797,7 +797,7 @@
           <node concept="2EHzL6" id="4LZvqgKpjYh" role="c0U16">
             <node concept="3Tl9Jr" id="2rrWrt5p0$b" role="3TlMhJ">
               <node concept="3ZVu4v" id="2rrWrt5p0$c" role="3TlMhI">
-                <ref role="3ZVs_2" node="4LZvqgKpjY4" />
+                <ref role="3ZVs_2" node="4LZvqgKpjY4" resolve="time" />
               </node>
               <node concept="3TlMh9" id="2rrWrt5p0$d" role="3TlMhJ">
                 <property role="2hmy$m" value="0" />
@@ -805,7 +805,7 @@
             </node>
             <node concept="3Tl9Jp" id="4LZvqgKpjYl" role="3TlMhI">
               <node concept="3ZVu4v" id="4LZvqgKpjYm" role="3TlMhI">
-                <ref role="3ZVs_2" node="4LZvqgKpjY7" />
+                <ref role="3ZVs_2" node="4LZvqgKpjY7" resolve="dist" />
               </node>
               <node concept="3TlMh9" id="4LZvqgKpjYn" role="3TlMhJ">
                 <property role="2hmy$m" value="1" />
@@ -832,11 +832,11 @@
       <property role="2OOxQR" value="true" />
       <node concept="3XIRFW" id="4LZvqgKpjYt" role="3XIRFX">
         <node concept="3t9XKO" id="4LZvqgKpjYu" role="3XIRFZ">
-          <ref role="3t9XKR" node="4LZvqgKpjXX" />
+          <ref role="3t9XKR" node="4LZvqgKpjXX" resolve="comp" />
         </node>
         <node concept="1_9egQ" id="4LZvqgKpjYv" role="3XIRFZ">
           <node concept="3O_q_g" id="4LZvqgKpjYw" role="1_9egR">
-            <ref role="3O_q_h" node="4LZvqgKpjY2" />
+            <ref role="3O_q_h" node="4LZvqgKpjY2" resolve="emitCurrentSpeed" />
           </node>
         </node>
         <node concept="2BFjQ_" id="4LZvqgKpjYx" role="3XIRFZ">
@@ -918,7 +918,7 @@
     </node>
     <node concept="3GEVxB" id="19LfhoY3iDt" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="4LZvqgKpjZH" />
+      <ref role="3GEb4d" node="4LZvqgKpjZH" resolve="hw_interface" />
     </node>
   </node>
   <node concept="2v9HqL" id="4LZvqgKpjZz">
@@ -941,19 +941,19 @@
         <property role="35zhco" value="true" />
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="4LZvqgKpjXX" />
+        <ref role="35zhcq" node="4LZvqgKpjXX" resolve="comp" />
       </node>
     </node>
     <node concept="2eOfOl" id="4LZvqgKpjZD" role="2ePNbc">
       <property role="TrG5h" value="main" />
       <node concept="2v9HqM" id="2SEaHiJY5sq" role="2eOfOg">
-        <ref role="2v9HqP" node="4LZvqgKpjVM" />
+        <ref role="2v9HqP" node="4LZvqgKpjVM" resolve="Contracts" />
       </node>
       <node concept="2v9HqM" id="4LZvqgKpjZF" role="2eOfOg">
-        <ref role="2v9HqP" node="4LZvqgKpjZQ" />
+        <ref role="2v9HqP" node="4LZvqgKpjZQ" resolve="AssertionsAndDivByZero" />
       </node>
       <node concept="2v9HqM" id="2SEaHiJY5su" role="2eOfOg">
-        <ref role="2v9HqP" node="4LZvqgKpjZH" />
+        <ref role="2v9HqP" node="4LZvqgKpjZH" resolve="hw_interface" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyheZ" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -1000,7 +1000,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="69_wPqjAvVz" role="3XIe9u">
-            <ref role="3O_q_h" node="4LZvqgKpjZI" />
+            <ref role="3O_q_h" node="4LZvqgKpjZI" resolve="readDistance" />
           </node>
         </node>
         <node concept="3XIRlf" id="4LZvqgKpjZY" role="3XIRFZ">
@@ -1010,7 +1010,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="69_wPqjAvV$" role="3XIe9u">
-            <ref role="3O_q_h" node="4LZvqgKpjZK" />
+            <ref role="3O_q_h" node="4LZvqgKpjZK" resolve="readTime" />
           </node>
         </node>
         <node concept="3XISUE" id="4LZvqgKpk01" role="3XIRFZ" />
@@ -1021,12 +1021,12 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="4LZvqgKpk04" role="3XIe9u">
-            <ref role="3O_q_h" node="4LZvqgKpk0b" />
+            <ref role="3O_q_h" node="4LZvqgKpk0b" resolve="computeSpeed" />
             <node concept="3ZVu4v" id="4LZvqgKpk05" role="3O_q_j">
-              <ref role="3ZVs_2" node="4LZvqgKpjZV" />
+              <ref role="3ZVs_2" node="4LZvqgKpjZV" resolve="distanceSensorValue" />
             </node>
             <node concept="3ZVu4v" id="4LZvqgKpk06" role="3O_q_j">
-              <ref role="3ZVs_2" node="4LZvqgKpjZY" />
+              <ref role="3ZVs_2" node="4LZvqgKpjZY" resolve="time" />
             </node>
           </node>
         </node>
@@ -1048,7 +1048,7 @@
         <node concept="Y9XUq" id="4LZvqgKpk0d" role="3XIRFZ">
           <node concept="3Tl9Jp" id="4LZvqgKpk0e" role="Y9XUp">
             <node concept="3ZUYvv" id="4LZvqgKpk0f" role="3TlMhI">
-              <ref role="3ZUYvu" node="4LZvqgKpk0o" />
+              <ref role="3ZUYvu" node="4LZvqgKpk0o" resolve="time" />
             </node>
             <node concept="3TlMh9" id="4LZvqgKpk0g" role="3TlMhJ">
               <property role="2hmy$m" value="0" />
@@ -1058,10 +1058,10 @@
         <node concept="2BFjQ_" id="4LZvqgKpk0h" role="3XIRFZ">
           <node concept="2BOcih" id="4LZvqgKpk0i" role="2BFjQA">
             <node concept="3ZUYvv" id="4LZvqgKpk0j" role="3TlMhJ">
-              <ref role="3ZUYvu" node="4LZvqgKpk0o" />
+              <ref role="3ZUYvu" node="4LZvqgKpk0o" resolve="time" />
             </node>
             <node concept="3ZUYvv" id="4LZvqgKpk0k" role="3TlMhI">
-              <ref role="3ZUYvu" node="4LZvqgKpk0m" />
+              <ref role="3ZUYvu" node="4LZvqgKpk0m" resolve="dist" />
             </node>
           </node>
         </node>
@@ -1093,7 +1093,7 @@
     </node>
     <node concept="3GEVxB" id="19LfhoY3iDu" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="4LZvqgKpjZH" />
+      <ref role="3GEb4d" node="4LZvqgKpjZH" resolve="hw_interface" />
     </node>
   </node>
   <node concept="3uEX16" id="YjU9tucQIF">
@@ -1110,10 +1110,10 @@
     <property role="2l50Mm" value="false" />
     <property role="TrG5h" value="DemoConfig" />
     <node concept="3GEVxB" id="1wtt6Vx9Ihv" role="3W6d8T">
-      <ref role="3GEb4d" node="4LZvqgKpjZQ" />
+      <ref role="3GEb4d" node="4LZvqgKpjZQ" resolve="AssertionsAndDivByZero" />
     </node>
     <node concept="3GEVxB" id="7ApeIpsWcWK" role="3W6d8T">
-      <ref role="3GEb4d" node="4LZvqgKpjVM" />
+      <ref role="3GEb4d" node="4LZvqgKpjVM" resolve="Contracts" />
     </node>
     <node concept="1nvAUJ" id="2dcV_8R54JL" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
@@ -1123,7 +1123,7 @@
       <property role="2l50Mm" value="false" />
       <property role="2l50Lc" value="false" />
       <property role="2l50Km" value="none" />
-      <ref role="3V$Cn$" node="4LZvqgKpjZT" />
+      <ref role="3V$Cn$" node="4LZvqgKpjZT" resolve="interruptHandler" />
     </node>
     <node concept="1nvAUE" id="51RbMlWiE6j" role="3V$2$K">
       <property role="2lUGeZ" value="false" />
@@ -1135,22 +1135,22 @@
       <property role="1nvAU$" value="true" />
       <property role="1nvAUA" value="true" />
       <property role="1nvAUB" value="true" />
-      <ref role="3V$Cn$" node="4LZvqgKpjZT" />
+      <ref role="3V$Cn$" node="4LZvqgKpjZT" resolve="interruptHandler" />
     </node>
     <node concept="gU3p5" id="4LZvqgKpjZO" role="3V$2$K">
       <property role="2lUHrg" value="25" />
       <property role="2lUGbD" value="200" />
       <property role="2l50Ka" value="60" />
-      <ref role="gU3p2" node="4LZvqgKpjWl" />
-      <ref role="3V$Cn$" node="4LZvqgKpjY2" />
+      <ref role="gU3p2" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
+      <ref role="3V$Cn$" node="4LZvqgKpjY2" resolve="emitCurrentSpeed" />
     </node>
     <node concept="gU3p5" id="4LZvqgKpjZP" role="3V$2$K">
       <property role="2lUGeZ" value="true" />
       <property role="2lUHrg" value="25" />
       <property role="2lUGbD" value="200" />
       <property role="2l50Ka" value="60" />
-      <ref role="gU3p2" node="4LZvqgKpjWl" />
-      <ref role="3V$Cn$" node="4LZvqgKpjYs" />
+      <ref role="gU3p2" node="4LZvqgKpjWl" resolve="PlauzibilizedSpeedComputer" />
+      <ref role="3V$Cn$" node="4LZvqgKpjYs" resolve="main" />
     </node>
   </node>
 </model>

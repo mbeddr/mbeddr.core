@@ -144,10 +144,10 @@
     <node concept="2eOfOl" id="2Gt5ABeTHdj" role="2ePNbc">
       <property role="TrG5h" value="tester" />
       <node concept="2v9HqM" id="$ZgyIbUUtr" role="2eOfOg">
-        <ref role="2v9HqP" node="2Gt5ABeTHaj" />
+        <ref role="2v9HqP" node="2Gt5ABeTHaj" resolve="ModuleinB" />
       </node>
       <node concept="2v9HqM" id="$ZgyIbUUtx" role="2eOfOg">
-        <ref role="2v9HqP" to="s010:2Gt5ABeTvPg" />
+        <ref role="2v9HqP" to="s010:2Gt5ABeTvPg" resolve="ModuleinA" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApP" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -157,7 +157,7 @@
   <node concept="N3F5e" id="2Gt5ABeTHaj">
     <property role="TrG5h" value="ModuleinB" />
     <node concept="3GEVxB" id="2Gt5ABeTHdn" role="2OODSX">
-      <ref role="3GEb4d" to="s010:2Gt5ABeTvPg" />
+      <ref role="3GEb4d" to="s010:2Gt5ABeTvPg" resolve="ModuleinA" />
     </node>
     <node concept="N3Fnx" id="$ZgyIbUUIk" role="N3F5h">
       <property role="TrG5h" value="main" />
@@ -165,7 +165,7 @@
       <node concept="3XIRFW" id="$ZgyIbUUIm" role="3XIRFX">
         <node concept="1_9egQ" id="$ZgyIbUV9t" role="3XIRFZ">
           <node concept="3O_q_g" id="$ZgyIbUV9r" role="1_9egR">
-            <ref role="3O_q_h" to="s010:$ZgyIbUSj4" />
+            <ref role="3O_q_h" to="s010:$ZgyIbUSj4" resolve="functionWithSum" />
           </node>
         </node>
         <node concept="2BFjQ_" id="$ZgyIbUUIu" role="3XIRFZ">

@@ -129,7 +129,7 @@
     <node concept="2eOfOl" id="7ejquUZlYx6" role="2ePNbc">
       <property role="TrG5h" value="tests" />
       <node concept="2v9HqM" id="7ejquUZlYxa" role="2eOfOg">
-        <ref role="2v9HqP" node="7ejquUZlUSX" />
+        <ref role="2v9HqP" node="7ejquUZlUSX" resolve="Test" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTvAf" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -157,7 +157,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkgX" role="lIfQt">
-        <ref role="3cM6IK" node="C7lj4lHOtp" />
+        <ref role="3cM6IK" node="C7lj4lHOtp" resolve="testStringArraySize" />
       </node>
     </node>
     <node concept="2NXPZ9" id="C7lj4lHNT3" role="N3F5h">
@@ -190,7 +190,7 @@
           </node>
           <node concept="Vihyy" id="C7lj4lHWI6" role="2N2GHg">
             <node concept="3ZVu4v" id="C7lj4lHX1V" role="1_9fRO">
-              <ref role="3ZVs_2" node="C7lj4lHyqk" />
+              <ref role="3ZVs_2" node="C7lj4lHyqk" resolve="stringArray1" />
             </node>
           </node>
         </node>
@@ -226,7 +226,7 @@
           </node>
           <node concept="Vihyy" id="C7lj4lHYzN" role="2N2GHg">
             <node concept="3ZVu4v" id="C7lj4lI2i6" role="1_9fRO">
-              <ref role="3ZVs_2" node="C7lj4lHYzP" />
+              <ref role="3ZVs_2" node="C7lj4lHYzP" resolve="stringArray2" />
             </node>
           </node>
         </node>
@@ -247,7 +247,7 @@
           </node>
           <node concept="Vihyy" id="C7lj4lI0L_" role="2N2GHg">
             <node concept="3ZVu4v" id="C7lj4lI4zb" role="1_9fRO">
-              <ref role="3ZVs_2" node="C7lj4lI0LB" />
+              <ref role="3ZVs_2" node="C7lj4lI0LB" resolve="stringArray3" />
             </node>
           </node>
         </node>
@@ -275,7 +275,7 @@
           </node>
           <node concept="Vihyy" id="C7lj4lI0Lo" role="2N2GHg">
             <node concept="3ZVu4v" id="C7lj4lI2Pa" role="1_9fRO">
-              <ref role="3ZVs_2" node="C7lj4lI0Lq" />
+              <ref role="3ZVs_2" node="C7lj4lI0Lq" resolve="stringArray4" />
             </node>
           </node>
         </node>

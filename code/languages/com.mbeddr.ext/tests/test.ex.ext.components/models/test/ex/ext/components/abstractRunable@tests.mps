@@ -230,7 +230,7 @@
     <node concept="2EWCuY" id="5nAEv9OSWBH" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="B" />
-      <ref role="2EWKI0" node="5nAEv9OSWBC" />
+      <ref role="2EWKI0" node="5nAEv9OSWBC" resolve="A" />
       <node concept="2EWDwb" id="5nAEv9OSWG7" role="2RW2fA">
         <property role="TrG5h" value="willNotWork" />
         <node concept="3XIRFW" id="5nAEv9OSWG8" role="2EWMhI">
@@ -245,17 +245,17 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="PJ_cn" id="5nAEv9OSWG6" role="PJ_c3">
-          <ref role="PJ_cm" node="5nAEv9OSWFu" />
+          <ref role="PJ_cm" node="5nAEv9OSWFu" resolve="willNotWork" />
         </node>
       </node>
     </node>
     <node concept="2EWCuY" id="5nAEv9OSWBP" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="C" />
-      <ref role="2EWKI0" node="5nAEv9OSWBH" />
+      <ref role="2EWKI0" node="5nAEv9OSWBH" resolve="B" />
       <node concept="2EWHp_" id="5nAEv9OSX_T" role="2RW2fA">
         <property role="TrG5h" value="myInterface" />
-        <ref role="2EX0h9" node="5nAEv9OSXv1" />
+        <ref role="2EX0h9" node="5nAEv9OSXv1" resolve="MyInterface" />
       </node>
       <node concept="2EWDwb" id="5nAEv9OSWCv" role="2RW2fA">
         <property role="TrG5h" value="willWork" />
@@ -271,7 +271,7 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="PJ_cn" id="5nAEv9OSWCu" role="PJ_c3">
-          <ref role="PJ_cm" node="5nAEv9OSWBU" />
+          <ref role="PJ_cm" node="5nAEv9OSWBU" resolve="willWork" />
         </node>
       </node>
       <node concept="2EWDwb" id="5nAEv9OSXES" role="2RW2fA">
@@ -279,13 +279,13 @@
         <node concept="3XIRFW" id="5nAEv9OSXET" role="2EWMhI">
           <node concept="2BFjQ_" id="5nAEv9OSXOL" role="3XIRFZ">
             <node concept="2$_UoH" id="5nAEv9P0HRp" role="2BFjQA">
-              <ref role="2$_UoI" node="5nAEv9OSWBU" />
+              <ref role="2$_UoI" node="5nAEv9OSWBU" resolve="willWork" />
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="5nAEv9OSXEV" role="2EWDeT">
-          <ref role="1ZwSu5" node="5nAEv9OSX_T" />
-          <ref role="1ZwxE2" node="5nAEv9OSXyC" />
+          <ref role="1ZwSu5" node="5nAEv9OSX_T" resolve="myInterface" />
+          <ref role="1ZwxE2" node="5nAEv9OSXyC" resolve="m_willWork" />
         </node>
         <node concept="26Vqph" id="5nAEv9OSXM7" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -297,13 +297,13 @@
         <node concept="3XIRFW" id="5nAEv9OSXF0" role="2EWMhI">
           <node concept="2BFjQ_" id="5nAEv9OSXF4" role="3XIRFZ">
             <node concept="2$_UoH" id="5nAEv9P0I5m" role="2BFjQA">
-              <ref role="2$_UoI" node="5nAEv9OSWFu" />
+              <ref role="2$_UoI" node="5nAEv9OSWFu" resolve="willNotWork" />
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="5nAEv9OSXF2" role="2EWDeT">
-          <ref role="1ZwSu5" node="5nAEv9OSX_T" />
-          <ref role="1ZwxE2" node="5nAEv9OSXz1" />
+          <ref role="1ZwSu5" node="5nAEv9OSX_T" resolve="myInterface" />
+          <ref role="1ZwxE2" node="5nAEv9OSXz1" resolve="m_willNotWork" />
         </node>
         <node concept="26Vqph" id="5nAEv9OSXNt" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -318,13 +318,13 @@
       <property role="TrG5h" value="Instances" />
       <node concept="2EWCuV" id="5nAEv9OSWN2" role="5JtDH">
         <property role="TrG5h" value="c" />
-        <ref role="2EWCuU" node="5nAEv9OSWBP" />
+        <ref role="2EWCuU" node="5nAEv9OSWBP" resolve="C" />
       </node>
       <node concept="21gPQu" id="5nAEv9OSXRX" role="5JtDH">
         <property role="TrG5h" value="instance" />
         <node concept="219P8x" id="5nAEv9OSXRY" role="21ad3a">
-          <ref role="219P8w" node="5nAEv9OSWN2" />
-          <ref role="219P8J" node="5nAEv9OSX_T" />
+          <ref role="219P8w" node="5nAEv9OSWN2" resolve="c" />
+          <ref role="219P8J" node="5nAEv9OSX_T" resolve="myInterface" />
         </node>
       </node>
     </node>
@@ -340,16 +340,16 @@
       </node>
       <node concept="3XIRFW" id="5nAEv9P0_JA" role="c0Qz3">
         <node concept="3t9XKO" id="5nAEv9OSWTH" role="3XIRFZ">
-          <ref role="3t9XKR" node="5nAEv9OSWKP" />
+          <ref role="3t9XKR" node="5nAEv9OSWKP" resolve="Instances" />
         </node>
         <node concept="2N2KuS" id="5nAEv9P0_TR" role="3XIRFZ">
           <node concept="3TlMh9" id="5nAEv9P0_ZO" role="2N2GHh">
             <property role="2hmy$m" value="42" />
           </node>
           <node concept="30IJZa" id="5nAEv9OSXUt" role="2N2GHg">
-            <ref role="2H6Oet" node="5nAEv9OSXyC" />
+            <ref role="2H6Oet" node="5nAEv9OSXyC" resolve="m_willWork" />
             <node concept="2H6Wec" id="5nAEv9OSXSC" role="1_9fRO">
-              <ref role="2H6Wef" node="5nAEv9OSXRX" />
+              <ref role="2H6Wef" node="5nAEv9OSXRX" resolve="instance" />
             </node>
           </node>
         </node>
@@ -358,9 +358,9 @@
             <property role="2hmy$m" value="23" />
           </node>
           <node concept="30IJZa" id="5nAEv9OSY1W" role="2N2GHg">
-            <ref role="2H6Oet" node="5nAEv9OSXz1" />
+            <ref role="2H6Oet" node="5nAEv9OSXz1" resolve="m_willNotWork" />
             <node concept="2H6Wec" id="5nAEv9OSY04" role="1_9fRO">
-              <ref role="2H6Wef" node="5nAEv9OSXRX" />
+              <ref role="2H6Wef" node="5nAEv9OSXRX" resolve="instance" />
             </node>
           </node>
         </node>
@@ -370,7 +370,7 @@
       <property role="3HjyOP" value="true" />
       <property role="TrG5h" value="main" />
       <node concept="3cM6IN" id="5nAEv9P0AId" role="lIfQt">
-        <ref role="3cM6IK" node="5nAEv9P0_Jz" />
+        <ref role="3cM6IK" node="5nAEv9P0_Jz" resolve="abstract_runable" />
       </node>
     </node>
   </node>
@@ -389,7 +389,7 @@
       <node concept="3i3YCL" id="5nAEv9OSY5B" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="5nAEv9OSWKP" />
+        <ref role="35zhcq" node="5nAEv9OSWKP" resolve="Instances" />
       </node>
     </node>
     <node concept="2Q9Fgs" id="5nAEv9OSY7d" role="2Q9xDr">
@@ -399,7 +399,7 @@
     <node concept="2eOfOl" id="5nAEv9OSY8O" role="2ePNbc">
       <property role="TrG5h" value="abtract" />
       <node concept="2v9HqM" id="5nAEv9OSY8Q" role="2eOfOg">
-        <ref role="2v9HqP" node="259JLDqrl9u" />
+        <ref role="2v9HqP" node="259JLDqrl9u" resolve="Main" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTAoW" role="1kZvWc">
         <property role="TrG5h" value="any" />

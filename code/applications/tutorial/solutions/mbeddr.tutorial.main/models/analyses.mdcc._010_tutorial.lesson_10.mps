@@ -202,16 +202,16 @@
     <node concept="1gr5cj" id="1rmOZicdj$c" role="2ePNbc">
       <property role="TrG5h" value="pan__100_harness_integration_with_Clang_sanitizers" />
       <node concept="2v9HqM" id="1rmOZicdj$e" role="2eOfOg">
-        <ref role="2v9HqP" node="1rmOZicdj$Y" />
+        <ref role="2v9HqP" node="1rmOZicdj$Y" resolve="_100_harness_integration_with_Clang_sanitizers" />
       </node>
       <node concept="2v9HqM" id="1rmOZicdpB1" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="2v9HqM" id="1rmOZicdpB2" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
       <node concept="2v9HqM" id="1rmOZicdpB3" role="2eOfOg">
-        <ref role="2v9HqP" node="1rmOZicdj$k" />
+        <ref role="2v9HqP" node="1rmOZicdj$k" resolve="_000_system_under_verification" />
       </node>
       <node concept="ZOQlw" id="tl4PXiqHRA" role="1kZvWc">
         <property role="TrG5h" value="none" />
@@ -222,7 +222,7 @@
     <property role="TrG5h" value="_000_analysis_configuration_container" />
     <node concept="2$dOA3" id="1rmOZicdlZh" role="3V$2$K">
       <property role="3SeVAx" value="true" />
-      <ref role="apm5G" node="1rmOZicdj$Y" />
+      <ref role="apm5G" node="1rmOZicdj$Y" resolve="_100_harness_integration_with_Clang_sanitizers" />
     </node>
   </node>
   <node concept="N3F5e" id="1rmOZicdj$k">
@@ -239,10 +239,10 @@
           </node>
           <node concept="2BOciq" id="57K12X7VXC4" role="3XIe9u">
             <node concept="3ZUYvv" id="57K12X7VXC5" role="3TlMhJ">
-              <ref role="3ZUYvu" node="57K12X7VWmy" />
+              <ref role="3ZUYvu" node="57K12X7VWmy" resolve="par2" />
             </node>
             <node concept="3ZUYvv" id="57K12X7VXC6" role="3TlMhI">
-              <ref role="3ZUYvu" node="1rmOZicdj$z" />
+              <ref role="3ZUYvu" node="1rmOZicdj$z" resolve="par1" />
             </node>
           </node>
         </node>
@@ -252,7 +252,7 @@
               <property role="2hmy$m" value="2" />
             </node>
             <node concept="3ZVu4v" id="57K12X7VXLQ" role="3TlMhJ">
-              <ref role="3ZVs_2" node="57K12X7VXAu" />
+              <ref role="3ZVs_2" node="57K12X7VXAu" resolve="sum" />
             </node>
           </node>
         </node>
@@ -280,7 +280,7 @@
       <property role="TrG5h" value="empty_1542093037682_10" />
     </node>
     <node concept="3GEVxB" id="1rmOZicdj$q" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
   </node>
   <node concept="1HfMva" id="1rmOZicdj$Y">
@@ -327,7 +327,7 @@
       <node concept="3XIRFW" id="1rmOZicdj_e" role="3XIRFX">
         <node concept="WlspI" id="1rmOZicdnBd" role="3XIRFZ">
           <node concept="1S7827" id="1rmOZicdnBR" role="Wlsuc">
-            <ref role="1S7826" node="1rmOZicdj_8" />
+            <ref role="1S7826" node="1rmOZicdj_8" resolve="my_par1" />
           </node>
           <node concept="1vV05I" id="1rmOZicdnC7" role="2DF6ot">
             <property role="n43Ve" value="true" />
@@ -341,7 +341,7 @@
         </node>
         <node concept="WlspI" id="57K12X7VVMT" role="3XIRFZ">
           <node concept="1S7827" id="57K12X7VVXI" role="Wlsuc">
-            <ref role="1S7826" node="57K12X7VVwX" />
+            <ref role="1S7826" node="57K12X7VVwX" resolve="my_par2" />
           </node>
           <node concept="1vV05I" id="57K12X7VVMV" role="2DF6ot">
             <property role="n43Ve" value="true" />
@@ -365,22 +365,22 @@
         </node>
         <node concept="1_9egQ" id="1rmOZicdpc8" role="3XIRFZ">
           <node concept="3O_q_g" id="1rmOZicdpc9" role="1_9egR">
-            <ref role="3O_q_h" node="1rmOZicdj$o" />
+            <ref role="3O_q_h" node="1rmOZicdj$o" resolve="calculate" />
             <node concept="1S7827" id="1rmOZicdpca" role="3O_q_j">
-              <ref role="1S7826" node="1rmOZicdj_8" />
+              <ref role="1S7826" node="1rmOZicdj_8" resolve="my_par1" />
             </node>
             <node concept="1S7827" id="57K12X7VVYB" role="3O_q_j">
-              <ref role="1S7826" node="57K12X7VVwX" />
+              <ref role="1S7826" node="57K12X7VVwX" resolve="my_par2" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="3GEVxB" id="1rmOZicdj_5" role="2OODSX">
-      <ref role="3GEb4d" node="1rmOZicdj$k" />
+      <ref role="3GEb4d" node="1rmOZicdj$k" resolve="_000_system_under_verification" />
     </node>
     <node concept="3GEVxB" id="1rmOZicdj_6" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
   </node>
 </model>

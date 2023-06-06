@@ -1326,7 +1326,7 @@
           <node concept="2bctqb" id="3JyX84yUg7Z" role="3z_lpT" />
           <node concept="2NCZwO" id="3JyX84yUg81" role="3z_lpI">
             <node concept="2NCMab" id="4AuO4fdzn$t" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" />
+              <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
             </node>
             <node concept="2NCMab" id="3JyX84yUga3" role="2NCMaf">
               <ref role="2NCMaa" to="1yl6:3JyX84yUg6b" resolve="aRobustnessCBMCAnalysis" />
@@ -1503,10 +1503,10 @@
             <property role="TrG5h" value="computeBreakingDistance" />
             <node concept="2NCZwO" id="yaVrOuyu4N" role="3z_lpI">
               <node concept="2NCMab" id="yaVrOuyu6H" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" />
+                <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
               </node>
               <node concept="2NCMab" id="yaVrOuyu6Q" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3uoNPXnjeUw" />
+                <ref role="2NCMaa" to="1yl6:3uoNPXnjeUw" resolve="computeBreakingDistance" />
               </node>
             </node>
             <node concept="2bctqb" id="yaVrOuyu4R" role="3z_lpT" />
@@ -1592,7 +1592,7 @@
             <node concept="2bctqb" id="3JyX84yUg2N" role="3z_lpT" />
             <node concept="2NCZwO" id="3JyX84yUg2P" role="3z_lpI">
               <node concept="2NCMab" id="4AuO4fdzn$p" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" />
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="3JyX84yUg4_" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84yUfVT" resolve="aDecTabCBMCAnalysis" />
@@ -1653,10 +1653,10 @@
             <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yUjHQ" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjHW" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" />
+                <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
               </node>
               <node concept="2NCMab" id="3JyX84yUjI4" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84ySf6B" />
+                <ref role="2NCMaa" to="1yl6:3JyX84ySf6B" resolve="Counter" />
               </node>
             </node>
           </node>
@@ -1682,7 +1682,7 @@
             <property role="3z_lpJ" value="false" />
             <node concept="2NCZwO" id="3JyX84yUjYE" role="3z_lpI">
               <node concept="2NCMab" id="3JyX84yUjYF" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" />
+                <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
               </node>
               <node concept="2NCMab" id="3JyX84yUp7b" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84yUp78" resolve="aStatemachineCheckAttribute" />
@@ -1718,7 +1718,7 @@
             <node concept="2bctqb" id="3JyX84yUjDt" role="3z_lpT" />
             <node concept="2NCZwO" id="3JyX84yUjDu" role="3z_lpI">
               <node concept="2NCMab" id="4AuO4fdzn$l" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" />
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="3JyX84yUk24" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:3JyX84yUg68" resolve="aStatemachineCBMCAnalysis" />
@@ -1783,10 +1783,10 @@
             <node concept="2bctqb" id="6_lULi3$OZv" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3$OZx" role="3z_lpI">
               <node concept="2NCMab" id="6_lULi3$OZT" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$M1J" />
+                <ref role="2NCMaa" to="1yl6:6_lULi3$M1J" resolve="Assertions" />
               </node>
               <node concept="2NCMab" id="6_lULi3$P01" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$NhY" />
+                <ref role="2NCMaa" to="1yl6:6_lULi3$NhY" resolve="speedComputer" />
               </node>
             </node>
           </node>
@@ -1813,10 +1813,10 @@
             <node concept="2bctqb" id="6nRVhifiydd" role="3z_lpT" />
             <node concept="2NCZwO" id="6nRVhifiydf" role="3z_lpI">
               <node concept="2NCMab" id="6nRVhifiRUW" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$M1J" />
+                <ref role="2NCMaa" to="1yl6:6_lULi3$M1J" resolve="Assertions" />
               </node>
               <node concept="2NCMab" id="6nRVhifiRV2" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6nRVhifiH8L" />
+                <ref role="2NCMaa" to="1yl6:6nRVhifiH8L" resolve="computeMaximalSpeed" />
               </node>
             </node>
           </node>
@@ -1856,7 +1856,7 @@
             <node concept="2bctqb" id="6_lULi3$WOC" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3$WOE" role="3z_lpI">
               <node concept="2NCMab" id="4AuO4fdzn$h" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" />
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="6_lULi3$WPG" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:6_lULi3$WOv" resolve="aAssertionsAnalysis" />
@@ -1899,10 +1899,10 @@
             <node concept="2bctqb" id="6_lULi3AVHm" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3AVHo" role="3z_lpI">
               <node concept="2NCMab" id="6_lULi3AVHK" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQb" />
+                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQb" resolve="ComponentsContracts" />
               </node>
               <node concept="2NCMab" id="6_lULi3AVHS" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQd" />
+                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQd" resolve="SpeedComputer" />
               </node>
             </node>
           </node>
@@ -1925,10 +1925,10 @@
             <node concept="2bctqb" id="6_lULi3AVJT" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3AVJU" role="3z_lpI">
               <node concept="2NCMab" id="6_lULi3AVJV" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQb" />
+                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQb" resolve="ComponentsContracts" />
               </node>
               <node concept="2NCMab" id="6_lULi3AVKM" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQy" />
+                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQy" resolve="PlauzibilizedSpeedComputer" />
               </node>
             </node>
           </node>
@@ -1951,10 +1951,10 @@
             <node concept="2bctqb" id="6_lULi3AVUw" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3AVUy" role="3z_lpI">
               <node concept="2NCMab" id="6_lULi3AWw5" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQb" />
+                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQb" resolve="ComponentsContracts" />
               </node>
               <node concept="2NCMab" id="6_lULi3AWwd" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQR" />
+                <ref role="2NCMaa" to="1yl6:1RY5dqNoqQR" resolve="emitCurrentSpeed" />
               </node>
             </node>
           </node>
@@ -1995,7 +1995,7 @@
             <node concept="2bctqb" id="6_lULi3I2Ib" role="3z_lpT" />
             <node concept="2NCZwO" id="6_lULi3I2Id" role="3z_lpI">
               <node concept="2NCMab" id="4AuO4fdznnf" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" />
+                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
               </node>
               <node concept="2NCMab" id="6_lULi3I2Kd" role="2NCMaf">
                 <ref role="2NCMaa" to="1yl6:6_lULi3I2Fy" resolve="aComponentsCBMCAnalysis" />
@@ -2061,10 +2061,10 @@
           <node concept="2bctqb" id="2aAK$SsCGAK" role="3z_lpT" />
           <node concept="2NCZwO" id="2aAK$SsCGAM" role="3z_lpI">
             <node concept="2NCMab" id="2aAK$SsCGBc" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" />
+              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" resolve="VerificationEnvironment" />
             </node>
             <node concept="2NCMab" id="2aAK$SsCGBk" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCGj2" />
+              <ref role="2NCMaa" to="1yl6:2aAK$SsCGj2" resolve="speedComputer" />
             </node>
           </node>
         </node>
@@ -2118,10 +2118,10 @@
           <node concept="2bctqb" id="2aAK$SsCJNe" role="3z_lpT" />
           <node concept="2NCZwO" id="2aAK$SsCJNg" role="3z_lpI">
             <node concept="2NCMab" id="2aAK$SsCJOg" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" />
+              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" resolve="VerificationEnvironment" />
             </node>
             <node concept="2NCMab" id="2aAK$SsCJOo" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCGK6" />
+              <ref role="2NCMaa" to="1yl6:2aAK$SsCGK6" resolve="computeSpeedEnvironment" />
             </node>
           </node>
         </node>
@@ -2175,10 +2175,10 @@
           <node concept="2bctqb" id="6nRVhifjPS_" role="3z_lpT" />
           <node concept="2NCZwO" id="6nRVhifjPSA" role="3z_lpI">
             <node concept="2NCMab" id="6nRVhifjPSB" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" />
+              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" resolve="VerificationEnvironment" />
             </node>
             <node concept="2NCMab" id="6nRVhifkC5y" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:6nRVhifjSae" />
+              <ref role="2NCMaa" to="1yl6:6nRVhifjSae" resolve="sequenceOfCalls" />
             </node>
           </node>
         </node>

@@ -114,12 +114,12 @@
   </registry>
   <node concept="2v9HqL" id="5aZFu$8s_M0">
     <node concept="2xfidK" id="2KPTuNu7mnS" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2eOfOl" id="2908qrFpW_Q" role="2ePNbc">
       <property role="TrG5h" value="main" />
       <node concept="2v9HqM" id="2908qrFpW_S" role="2eOfOg">
-        <ref role="2v9HqP" node="5aZFu$8s_T8" />
+        <ref role="2v9HqP" node="5aZFu$8s_T8" resolve="InitTests" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzg9" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -181,7 +181,7 @@
       <node concept="1sgJKr" id="2908qrFppHX" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="2908qrFpoWw" />
+        <ref role="1sgJKq" node="2908qrFpoWw" resolve="a" />
       </node>
       <node concept="3o3WLD" id="2908qrFppS1" role="1cecVj">
         <node concept="3TlMh9" id="2908qrFppSI" role="3o3WLE">
@@ -197,17 +197,17 @@
       <node concept="1sgJKr" id="2908qrFpqcB" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="2908qrFpoWw" />
+        <ref role="1sgJKq" node="2908qrFpoWw" resolve="a" />
       </node>
       <node concept="3o3WLD" id="2908qrFpqnX" role="1cecVj">
         <node concept="2xZu8t" id="2908qrFpqoQ" role="3o3WLE">
-          <ref role="2xZoc7" node="2908qrFpoXk" />
+          <ref role="2xZoc7" node="2908qrFpoXk" resolve="a" />
           <node concept="3TlMh9" id="2908qrFpqpG" role="2xZpY0">
             <property role="2hmy$m" value="3" />
           </node>
         </node>
         <node concept="2xZu8t" id="2908qrFpq$O" role="3o3WLE">
-          <ref role="2xZoc7" node="2908qrFpoXQ" />
+          <ref role="2xZoc7" node="2908qrFpoXQ" resolve="b" />
           <node concept="3TlMh9" id="2908qrFpqEw" role="2xZpY0">
             <property role="2hmy$m" value="4" />
           </node>

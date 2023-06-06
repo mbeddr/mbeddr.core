@@ -499,7 +499,7 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="7Rf0$0HGpd2" role="3lj3bC">
       <ref role="30HIoZ" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
-      <ref role="3lhOvi" node="7Rf0$0HGpbE" />
+      <ref role="3lhOvi" node="7Rf0$0HGpbE" resolve="Makefile" />
     </node>
     <node concept="3aamgX" id="7itveDJMHsw" role="3acgRq">
       <ref role="30HIoZ" to="v326:7Rf0$0HCP5j" resolve="SpinExecutable" />

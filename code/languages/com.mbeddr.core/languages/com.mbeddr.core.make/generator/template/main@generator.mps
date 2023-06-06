@@ -125,7 +125,7 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="bzEfeAYKWs" role="3lj3bC">
       <ref role="30HIoZ" to="i2y7:5ak6HMA0E3v" resolve="Makefile" />
-      <ref role="3lhOvi" node="bzEfeAYKWU" />
+      <ref role="3lhOvi" node="bzEfeAYKWU" resolve="Makefile" />
       <node concept="30G5F_" id="bzEfeAYKWt" role="30HLyM">
         <node concept="3clFbS" id="bzEfeAYKWu" role="2VODD2">
           <node concept="3clFbF" id="bzEfeAYKWv" role="3cqZAp">

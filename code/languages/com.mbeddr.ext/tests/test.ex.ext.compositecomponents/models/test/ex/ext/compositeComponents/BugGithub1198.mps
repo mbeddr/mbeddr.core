@@ -250,7 +250,7 @@
       <property role="TrG5h" value="StorrageImpl" />
       <node concept="2EWHp_" id="6AXziRbMwxg" role="2RW2fA">
         <property role="TrG5h" value="iStorrage" />
-        <ref role="2EX0h9" node="6AXziRbMvoN" />
+        <ref role="2EX0h9" node="6AXziRbMvoN" resolve="IStorrage" />
       </node>
       <node concept="3Khz0B" id="6AXziRbMxMm" role="2RW2fA" />
       <node concept="2EWDwb" id="6AXziRbMxNC" role="2RW2fA">
@@ -262,7 +262,7 @@
                 <property role="2hmy$m" value="0" />
               </node>
               <node concept="1S7827" id="6AXziRbMxO8" role="3TlMhI">
-                <ref role="1S7826" node="6AXziRbMwys" />
+                <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
               </node>
             </node>
           </node>
@@ -279,17 +279,17 @@
           <node concept="1_9egQ" id="6AXziRbMwH2" role="3XIRFZ">
             <node concept="3pqW6w" id="6AXziRbMxLI" role="1_9egR">
               <node concept="3ZUYvv" id="6AXziRbMxM3" role="3TlMhJ">
-                <ref role="3ZUYvu" node="6AXziRbMwxn" />
+                <ref role="3ZUYvu" node="6AXziRbMwxn" resolve="value" />
               </node>
               <node concept="1S7827" id="6AXziRbMwH0" role="3TlMhI">
-                <ref role="1S7826" node="6AXziRbMwys" />
+                <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="6AXziRbMwxl" role="2EWDeT">
-          <ref role="1ZwxE2" node="6AXziRbMvoV" />
-          <ref role="1ZwSu5" node="6AXziRbMwxg" />
+          <ref role="1ZwxE2" node="6AXziRbMvoV" resolve="store" />
+          <ref role="1ZwSu5" node="6AXziRbMwxg" resolve="iStorrage" />
         </node>
         <node concept="19Rifw" id="6AXziRbMwxm" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -312,17 +312,17 @@
       <property role="TrG5h" value="StorrageWrapper" />
       <node concept="2EWHp_" id="6AXziRbPktT" role="2RW2fA">
         <property role="TrG5h" value="iStorrage" />
-        <ref role="2EX0h9" node="6AXziRbMvoN" />
+        <ref role="2EX0h9" node="6AXziRbMvoN" resolve="IStorrage" />
       </node>
       <node concept="5JiAF" id="6AXziRbPkkP" role="2RW2fA">
         <node concept="2EWCuV" id="6AXziRbPktY" role="5JtDH">
           <property role="TrG5h" value="internalStorrage" />
-          <ref role="2EWCuU" node="6AXziRbMwx3" />
+          <ref role="2EWCuU" node="6AXziRbMwx3" resolve="StorrageImpl" />
         </node>
         <node concept="5GgzA" id="6AXziRbPkuu" role="5JtDH">
-          <ref role="5GgyZ" node="6AXziRbPktT" />
-          <ref role="5GdT5" node="6AXziRbPktY" />
-          <ref role="5GdT6" node="6AXziRbMwxg" />
+          <ref role="5GgyZ" node="6AXziRbPktT" resolve="iStorrage" />
+          <ref role="5GdT5" node="6AXziRbPktY" resolve="internalStorrage" />
+          <ref role="5GdT6" node="6AXziRbMwxg" resolve="iStorrage" />
         </node>
       </node>
     </node>
@@ -334,13 +334,13 @@
       <property role="TrG5h" value="Main" />
       <node concept="2EWHp_" id="6AXziRbMxT3" role="2RW2fA">
         <property role="TrG5h" value="iRunnable" />
-        <ref role="2EX0h9" node="6AXziRbMvol" />
+        <ref role="2EX0h9" node="6AXziRbMvol" resolve="IRunnable" />
       </node>
       <node concept="3Khz0B" id="6AXziRbMxSZ" role="2RW2fA" />
       <node concept="5JiAF" id="6AXziRbMxRr" role="2RW2fA">
         <node concept="2EWCuV" id="6AXziRbMxUj" role="5JtDH">
           <property role="TrG5h" value="storrage" />
-          <ref role="2EWCuU" node="6AXziRbPkkO" />
+          <ref role="2EWCuU" node="6AXziRbPkkO" resolve="StorrageWrapper" />
         </node>
       </node>
       <node concept="3Khz0B" id="6AXziRbMxT8" role="2RW2fA" />
@@ -350,10 +350,10 @@
         <node concept="3XIRFW" id="6AXziRbMxTE" role="2EWMhI">
           <node concept="1_9egQ" id="6AXziRbMxU_" role="3XIRFZ">
             <node concept="3LAlOK" id="6AXziRbMxUR" role="1_9egR">
-              <ref role="2H6Oet" node="6AXziRbMvoV" />
+              <ref role="2H6Oet" node="6AXziRbMvoV" resolve="store" />
               <node concept="1DnYEe" id="6AXziRbMxU$" role="1_9fRO">
-                <ref role="1DnYF2" node="6AXziRbMxUj" />
-                <ref role="1DcY7d" node="6AXziRbPktT" />
+                <ref role="1DnYF2" node="6AXziRbMxUj" resolve="storrage" />
+                <ref role="1DcY7d" node="6AXziRbPktT" resolve="iStorrage" />
               </node>
               <node concept="3TlMh9" id="6AXziRbMxVx" role="2H6KYo">
                 <property role="2hmy$m" value="15" />
@@ -362,8 +362,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="6AXziRbMxTU" role="2EWDeT">
-          <ref role="1ZwSu5" node="6AXziRbMxT3" />
-          <ref role="1ZwxE2" node="6AXziRbMvor" />
+          <ref role="1ZwSu5" node="6AXziRbMxT3" resolve="iRunnable" />
+          <ref role="1ZwxE2" node="6AXziRbMvor" resolve="run" />
         </node>
         <node concept="19Rifw" id="6AXziRbMxUb" role="2C2TGm">
           <property role="2caQfQ" value="false" />
@@ -378,13 +378,13 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="6AXziRbMyap" role="5JtDH">
         <property role="TrG5h" value="main" />
-        <ref role="2EWCuU" node="6AXziRbMxRq" />
+        <ref role="2EWCuU" node="6AXziRbMxRq" resolve="Main" />
       </node>
       <node concept="21gPQu" id="6AXziRbMya$" role="5JtDH">
         <property role="TrG5h" value="runner" />
         <node concept="219P8x" id="6AXziRbMya_" role="21ad3a">
-          <ref role="219P8w" node="6AXziRbMyap" />
-          <ref role="219P8J" node="6AXziRbMxT3" />
+          <ref role="219P8w" node="6AXziRbMyap" resolve="main" />
+          <ref role="219P8J" node="6AXziRbMxT3" resolve="iRunnable" />
         </node>
       </node>
     </node>
@@ -403,11 +403,11 @@
       </node>
       <node concept="3XIRFW" id="6AXziRbMy1w" role="c0Qz3">
         <node concept="3t9XKO" id="6AXziRbMyaE" role="3XIRFZ">
-          <ref role="3t9XKR" node="6AXziRbMy7I" />
+          <ref role="3t9XKR" node="6AXziRbMy7I" resolve="instances" />
         </node>
         <node concept="2N2KuS" id="6AXziRbMyi4" role="3XIRFZ">
           <node concept="1S7827" id="6AXziRbMyiB" role="2N2GHh">
-            <ref role="1S7826" node="6AXziRbMwys" />
+            <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
           </node>
           <node concept="3TlMh9" id="6AXziRbMyij" role="2N2GHg">
             <property role="2hmy$m" value="0" />
@@ -415,15 +415,15 @@
         </node>
         <node concept="1_9egQ" id="6AXziRbMyht" role="3XIRFZ">
           <node concept="30IJZa" id="6AXziRbMyhC" role="1_9egR">
-            <ref role="2H6Oet" node="6AXziRbMvor" />
+            <ref role="2H6Oet" node="6AXziRbMvor" resolve="run" />
             <node concept="2H6Wec" id="6AXziRbMyhr" role="1_9fRO">
-              <ref role="2H6Wef" node="6AXziRbMya$" />
+              <ref role="2H6Wef" node="6AXziRbMya$" resolve="runner" />
             </node>
           </node>
         </node>
         <node concept="2N2KuS" id="6AXziRbMymw" role="3XIRFZ">
           <node concept="1S7827" id="6AXziRbNBRo" role="2N2GHh">
-            <ref role="1S7826" node="6AXziRbMwys" />
+            <ref role="1S7826" node="6AXziRbMwys" resolve="store" />
           </node>
           <node concept="3TlMh9" id="6AXziRbMymy" role="2N2GHg">
             <property role="2hmy$m" value="15" />
@@ -439,7 +439,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAKd$" role="lIfQt">
-        <ref role="3cM6IK" node="6AXziRbMy1t" />
+        <ref role="3cM6IK" node="6AXziRbMy1t" resolve="testCallFromCompositeComponentToInnerComponent" />
       </node>
     </node>
   </node>
@@ -464,13 +464,13 @@
         <property role="3Ewwow" value="true" />
         <property role="35zhco" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="6AXziRbMy7I" />
+        <ref role="35zhcq" node="6AXziRbMy7I" resolve="instances" />
       </node>
     </node>
     <node concept="2eOfOl" id="6AXziRbP69$" role="2ePNbc">
       <property role="TrG5h" value="Bug1198" />
       <node concept="2v9HqM" id="6AXziRbP69A" role="2eOfOg">
-        <ref role="2v9HqP" node="6AXziRbMrgU" />
+        <ref role="2v9HqP" node="6AXziRbMrgU" resolve="BugGithub1198" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApp" role="1kZvWc">
         <property role="TrG5h" value="any" />

@@ -153,7 +153,7 @@
         </node>
       </node>
       <node concept="4ZOvp" id="1c9NWo4bR95" role="2DQcEM">
-        <ref role="2DPCA0" node="1c9NWo4bQYK" />
+        <ref role="2DPCA0" node="1c9NWo4bQYK" resolve="CPHA" />
       </node>
     </node>
     <node concept="4WHVk" id="1c9NWo49S4c" role="N3F5h">
@@ -169,7 +169,7 @@
         </node>
       </node>
       <node concept="4ZOvp" id="1c9NWo4bRba" role="2DQcEM">
-        <ref role="2DPCA0" node="1c9NWo4bQGa" />
+        <ref role="2DPCA0" node="1c9NWo4bQGa" resolve="CPOL" />
       </node>
     </node>
     <node concept="4WHVk" id="1c9NWo49S7S" role="N3F5h">
@@ -186,10 +186,10 @@
       </node>
       <node concept="SSPID" id="1c9NWo4bRdo" role="2DQcEM">
         <node concept="4ZOvp" id="1c9NWo4bRdK" role="3TlMhJ">
-          <ref role="2DPCA0" node="1c9NWo4bQGa" />
+          <ref role="2DPCA0" node="1c9NWo4bQGa" resolve="CPOL" />
         </node>
         <node concept="4ZOvp" id="1c9NWo4bRdf" role="3TlMhI">
-          <ref role="2DPCA0" node="1c9NWo4bQYK" />
+          <ref role="2DPCA0" node="1c9NWo4bQYK" resolve="CPHA" />
         </node>
       </node>
     </node>
@@ -292,7 +292,7 @@
         <node concept="rcJHQ" id="1c9NWo49Uae" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="1c9NWo49QOi" />
+          <ref role="rcJHT" node="1c9NWo49QOi" resolve="BYTE_ORDER" />
         </node>
       </node>
       <node concept="1dpRTG" id="1c9NWo49Ubq" role="HszBJ">
@@ -300,7 +300,7 @@
         <node concept="rcJHQ" id="1c9NWo49Ubo" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="1c9NWo49RWx" />
+          <ref role="rcJHT" node="1c9NWo49RWx" resolve="SPI_MODE" />
         </node>
       </node>
       <node concept="1dpRTG" id="1c9NWo49UbS" role="HszBJ">
@@ -308,7 +308,7 @@
         <node concept="rcJHQ" id="1c9NWo49UbQ" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="1c9NWo49SzP" />
+          <ref role="rcJHT" node="1c9NWo49SzP" resolve="SPI_CLOCK" />
         </node>
       </node>
     </node>
@@ -329,7 +329,7 @@
           <node concept="rcJHQ" id="1c9NWo49UcW" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="1c9NWo49SzP" />
+            <ref role="rcJHT" node="1c9NWo49SzP" resolve="SPI_CLOCK" />
           </node>
         </node>
       </node>
@@ -338,7 +338,7 @@
         <node concept="rcJHQ" id="1c9NWo49Ukk" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="1c9NWo49SzP" />
+          <ref role="rcJHT" node="1c9NWo49SzP" resolve="SPI_CLOCK" />
         </node>
       </node>
       <node concept="1DNgHv" id="1c9NWo49V7K" role="2EX0iN" />

@@ -137,7 +137,7 @@
     <node concept="2eOfOl" id="4m$eX95_Mk8" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="4m$eX95_Ov9" role="2eOfOg">
-        <ref role="2v9HqP" node="4m$eX95_Ml4" />
+        <ref role="2v9HqP" node="4m$eX95_Ml4" resolve="main" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyhen" role="1kZvWc">
         <property role="TrG5h" value="any" />

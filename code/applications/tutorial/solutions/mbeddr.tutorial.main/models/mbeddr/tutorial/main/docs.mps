@@ -241,18 +241,18 @@
           </node>
           <node concept="3XpXCz" id="6wvhQs7o1x7" role="19SJt6">
             <node concept="3XpXCp" id="6wvhQs7o1x8" role="3XpXCH">
-              <ref role="3XpXCq" node="6wvhQs7nZDo" />
+              <ref role="3XpXCq" node="6wvhQs7nZDo" resolve="N" />
             </node>
             <node concept="2BOcij" id="6wvhQs7o1x9" role="3XpXCG">
               <node concept="3XpXCp" id="6wvhQs7o1xa" role="3TlMhJ">
-                <ref role="3XpXCq" node="6wvhQs7nZDx" />
+                <ref role="3XpXCq" node="6wvhQs7nZDx" resolve="ne" />
               </node>
               <node concept="2BOcij" id="6wvhQs7o1xb" role="3TlMhI">
                 <node concept="3XpXCp" id="6wvhQs7o1xc" role="3TlMhI">
-                  <ref role="3XpXCq" node="6wvhQs7nZDr" />
+                  <ref role="3XpXCq" node="6wvhQs7nZDr" resolve="SF" />
                 </node>
                 <node concept="3XpXCp" id="6wvhQs7o1xd" role="3TlMhJ">
-                  <ref role="3XpXCq" node="6wvhQs7nZDu" />
+                  <ref role="3XpXCq" node="6wvhQs7nZDu" resolve="fp" />
                 </node>
               </node>
             </node>

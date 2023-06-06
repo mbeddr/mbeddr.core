@@ -38,7 +38,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -130,7 +130,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKGywnE" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtaxo9" role="3qy1PE">
-      <ref role="30ajXG" to="df0w:7$_eEdIdk_O" />
+      <ref role="30ajXG" to="df0w:7$_eEdIdk_O" resolve="Ranges" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lQV" role="1zJi$$">
       <property role="TrG5h" value="breakpointOnRangeExpression" />
@@ -138,7 +138,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lQX" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lQY" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lQZ" role="3sdZbB">
-          <ref role="3sa5fj" to="df0w:75iUP$Mc5Qy" />
+          <ref role="3sa5fj" to="df0w:75iUP$Mc5Qy" resolve="assertStmntWithRangeExpr1" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lR0" role="3savwP" />
@@ -146,11 +146,11 @@
         <node concept="30a7bf" id="7Jr7T0w2lR2" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6_N$" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="df0w:2s7Bv57Jc86" />
+            <ref role="3cQ7K8" to="df0w:2s7Bv57Jc86" resolve="optimizedFunction" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGywnS" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGywnO" />
+          <ref role="1vtf2j" node="4WY_RKGywnO" resolve="inSimpleRanges" />
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2lR4" role="3F5Y$9" />
       </node>
@@ -161,7 +161,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lWO" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lWP" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lWQ" role="3sdZbB">
-          <ref role="3sa5fj" to="df0w:75iUP$McbMD" />
+          <ref role="3sa5fj" to="df0w:75iUP$McbMD" resolve="stmntBeforeForRangeStmnt" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lWR" role="3savwP">
@@ -173,18 +173,18 @@
         <node concept="30a7bf" id="7Jr7T0w2lWU" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6_Nw" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="df0w:75iUP$McbMC" />
+            <ref role="3cQ7K8" to="df0w:75iUP$McbMC" resolve="forRangeStatement" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGywnZ" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGywnV" />
+          <ref role="1vtf2j" node="4WY_RKGywnV" resolve="inForRangeStatement" />
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2lWW" role="3F5Y$9">
           <node concept="1IjokO" id="4WY_RKGywnI" role="1l4ezG">
             <property role="TrG5h" value="counter" />
           </node>
           <node concept="1vv375" id="4WY_RKGywnH" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGywnD" />
+            <ref role="1vv99g" node="4WY_RKGywnD" resolve="inTopLevelForRangeStatement" />
           </node>
         </node>
       </node>
@@ -195,7 +195,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m1g" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m1h" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m1i" role="3sdZbB">
-          <ref role="3sa5fj" to="df0w:75iUP$McbMC" />
+          <ref role="3sa5fj" to="df0w:75iUP$McbMC" resolve="forRangeStatement" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m1j" role="3savwP">
@@ -207,15 +207,15 @@
         <node concept="30a7bf" id="7Jr7T0w2m1m" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbh6_Ny" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="df0w:75iUP$McbMX" />
+            <ref role="3cQ7K8" to="df0w:75iUP$McbMX" resolve="stmntAfterForRangeStmnt" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKGywo0" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGywnV" />
+          <ref role="1vtf2j" node="4WY_RKGywnV" resolve="inForRangeStatement" />
         </node>
         <node concept="1l46Ie" id="4WY_RKGywnK" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKGywnL" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKGywnD" />
+            <ref role="1vv99g" node="4WY_RKGywnD" resolve="inTopLevelForRangeStatement" />
           </node>
         </node>
       </node>

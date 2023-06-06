@@ -32,7 +32,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876381" name="com.mbeddr.core.debug.test.structure.StepOverCommand" flags="ng" index="2$4FYR" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -125,7 +125,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKG$if0" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtanoU" role="3qy1PE">
-      <ref role="30ajXG" to="fhx2:2I09F8VKR95" />
+      <ref role="30ajXG" to="fhx2:2I09F8VKR95" resolve="BreakAndContinueTests" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lTQ" role="1zJi$$">
       <property role="TrG5h" value="NestedForWithBreak" />
@@ -133,7 +133,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lTS" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lTT" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lTU" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:4PM5ysquu9P" />
+          <ref role="3sa5fj" to="fhx2:4PM5ysquu9P" resolve="assertAfterSecondBreak" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lTV" role="3savwP">
@@ -146,7 +146,7 @@
           <node concept="30a7bf" id="hDImLiCynB" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaLfl" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="fhx2:hDImLiCtDw" />
+              <ref role="3cQ7K8" to="fhx2:hDImLiCtDw" resolve="conditionAfter1stNestedFor" />
             </node>
           </node>
           <node concept="1l46Ie" id="hDImLjRokJ" role="16YnsZ">
@@ -154,14 +154,14 @@
               <property role="TrG5h" value="firstIndex" />
             </node>
             <node concept="1vv375" id="hDImLjRokM" role="1vv36M">
-              <ref role="1vv99g" node="4WY_RKG$if6" />
+              <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
             </node>
           </node>
           <node concept="16XR13" id="hDImLiCynF" role="16XPZB">
             <property role="16EpFF" value="4TbX0$8Gx8R/win" />
             <node concept="30a7bf" id="7Jr7T0w2lTY" role="16XPZy">
               <node concept="3cQ7K9" id="1pM_z_iNmNR" role="30a7be">
-                <ref role="3cQ7K8" to="fhx2:1pM_z_iNmNO" />
+                <ref role="3cQ7K8" to="fhx2:1pM_z_iNmNO" resolve="thirdBreak" />
               </node>
             </node>
             <node concept="1l46Ie" id="hDImLjRokp" role="16XPZy">
@@ -172,14 +172,14 @@
                 <property role="TrG5h" value="secondIndex" />
               </node>
               <node concept="1vv375" id="hDImLjRoks" role="1vv36M">
-                <ref role="1vv99g" node="4WY_RKG$if6" />
+                <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
               </node>
             </node>
             <node concept="16XR13" id="hDImLiC$pZ" role="16XKT6">
               <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
               <node concept="30a7bf" id="hDImLiC$q7" role="16XPZy">
                 <node concept="3cQ7K9" id="hDImLiC$q8" role="30a7be">
-                  <ref role="3cQ7K8" to="fhx2:1pM_z_iNmNO" />
+                  <ref role="3cQ7K8" to="fhx2:1pM_z_iNmNO" resolve="thirdBreak" />
                 </node>
               </node>
               <node concept="1l46Ie" id="4WY_RKG$ifc" role="16XPZy">
@@ -190,14 +190,14 @@
                   <property role="TrG5h" value="secondIndex" />
                 </node>
                 <node concept="1vv375" id="4WY_RKG$ifd" role="1vv36M">
-                  <ref role="1vv99g" node="4WY_RKG$if6" />
+                  <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
                 </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifa" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$if1" />
+          <ref role="1vtf2j" node="4WY_RKG$if1" resolve="inBreakTests" />
         </node>
       </node>
     </node>
@@ -207,7 +207,7 @@
       <node concept="3clFbS" id="7Jr7T0w2lX1" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lX2" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lX3" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:4PM5ysquu9N" />
+          <ref role="3sa5fj" to="fhx2:4PM5ysquu9N" resolve="ifCondBeforeSecondBreak" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lX4" role="3savwP">
@@ -220,7 +220,7 @@
           <node concept="30a7bf" id="hDImLiCC2u" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaLfn" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="fhx2:hDImLjRuk8" />
+              <ref role="3cQ7K8" to="fhx2:hDImLjRuk8" resolve="secondFor" />
             </node>
           </node>
           <node concept="16XR13" id="hDImLiCC2y" role="16XPZB">
@@ -228,17 +228,17 @@
             <node concept="30a7bf" id="hDImLiCC2$" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaLfh" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="fhx2:XO8DdD$tUZ" />
+                <ref role="3cQ7K8" to="fhx2:XO8DdD$tUZ" resolve="incrementBeforeIfCond" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifg" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$if1" />
+          <ref role="1vtf2j" node="4WY_RKG$if1" resolve="inBreakTests" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$ifh" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$ifk" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$if6" />
+            <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
           </node>
         </node>
       </node>
@@ -249,7 +249,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m23" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m24" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m25" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:22LqPR2mHDS" />
+          <ref role="3sa5fj" to="fhx2:22LqPR2mHDS" resolve="assertAfterthirdBreak" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m26" role="3savwP">
@@ -262,12 +262,12 @@
           <node concept="30a7bf" id="hDImLiCSIM" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaLff" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="fhx2:22LqPR2mHDX" />
+              <ref role="3cQ7K8" to="fhx2:22LqPR2mHDX" resolve="assertAfterFourthBreak" />
             </node>
           </node>
           <node concept="1l46Ie" id="hDImLjRkL5" role="16YnsZ">
             <node concept="1vv375" id="hDImLjRkL8" role="1vv36M">
-              <ref role="1vv99g" node="4WY_RKG$if6" />
+              <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
             </node>
           </node>
           <node concept="16XR13" id="hDImLiCSJ0" role="16XPZB">
@@ -275,7 +275,7 @@
             <node concept="30a7bf" id="7Jr7T0w2m29" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaLfp" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="fhx2:1pM_z_iNmTN" />
+                <ref role="3cQ7K8" to="fhx2:1pM_z_iNmTN" resolve="thirdBreakB" />
               </node>
             </node>
             <node concept="1l46Ie" id="4WY_RKG$ifm" role="16XPZy">
@@ -286,13 +286,13 @@
                 <property role="TrG5h" value="firstIndex" />
               </node>
               <node concept="1vv375" id="4WY_RKG$ifp" role="1vv36M">
-                <ref role="1vv99g" node="4WY_RKG$if6" />
+                <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifl" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$if1" />
+          <ref role="1vtf2j" node="4WY_RKG$if1" resolve="inBreakTests" />
         </node>
       </node>
     </node>
@@ -302,7 +302,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mgu" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mgv" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mgw" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:4PM5ysqutSi" />
+          <ref role="3sa5fj" to="fhx2:4PM5ysqutSi" resolve="ifArroundFirstBreak" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mgx" role="3savwP">
@@ -314,15 +314,15 @@
         <node concept="30a7bf" id="7Jr7T0w2mg$" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaLfj" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="fhx2:4PM5ysqutSj" />
+            <ref role="3cQ7K8" to="fhx2:4PM5ysqutSj" resolve="assertAfterFirstBreak" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifq" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$if1" />
+          <ref role="1vtf2j" node="4WY_RKG$if1" resolve="inBreakTests" />
         </node>
         <node concept="1l46Ie" id="4WY_RKG$ifr" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$ifu" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$if6" />
+            <ref role="1vv99g" node="4WY_RKG$if6" resolve="inTopScopeBreakTests" />
           </node>
         </node>
       </node>
@@ -351,7 +351,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKG$ifw" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtanpt" role="3qy1PE">
-      <ref role="30ajXG" to="fhx2:2I09F8VKR95" />
+      <ref role="30ajXG" to="fhx2:2I09F8VKR95" resolve="BreakAndContinueTests" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2m39" role="1zJi$$">
       <property role="TrG5h" value="suspendOnContinue" />
@@ -359,7 +359,7 @@
       <node concept="3clFbS" id="7Jr7T0w2m3b" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2m3c" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2m3d" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:4_YTmn7TkiH" />
+          <ref role="3sa5fj" to="fhx2:4_YTmn7TkiH" resolve="ifCondBeforeFirstCondtinue" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2m3e" role="3savwP">
@@ -372,7 +372,7 @@
           <node concept="30a7bf" id="hDImLiD2a4" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaLd5" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="fhx2:4PM5ysquhKk" />
+              <ref role="3cQ7K8" to="fhx2:4PM5ysquhKk" resolve="forArroundFirstContinue" />
             </node>
           </node>
           <node concept="16XR13" id="hDImLiD2a8" role="16XPZB">
@@ -380,7 +380,7 @@
             <node concept="30a7bf" id="7Jr7T0w2m3h" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaLd1" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="fhx2:4PM5ysquhKm" />
+                <ref role="3cQ7K8" to="fhx2:4PM5ysquhKm" resolve="firstContinue" />
               </node>
             </node>
           </node>
@@ -390,11 +390,11 @@
             <property role="TrG5h" value="j" />
           </node>
           <node concept="1vv375" id="4WY_RKG$if_" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$ifv" />
+            <ref role="1vv99g" node="4WY_RKG$ifv" resolve="inTopScopeContinueTests" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifB" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$ieX" />
+          <ref role="1vtf2j" node="4WY_RKG$ieX" resolve="inContinueTests" />
         </node>
       </node>
     </node>
@@ -405,7 +405,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mch" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mci" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mcj" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:4PM5ysquhKh" />
+          <ref role="3sa5fj" to="fhx2:4PM5ysquhKh" resolve="forArroundSecondContinue" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mck" role="3savwP">
@@ -419,18 +419,18 @@
             <property role="TrG5h" value="counter" />
           </node>
           <node concept="1vv375" id="4WY_RKG$ifK" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$ifv" />
+            <ref role="1vv99g" node="4WY_RKG$ifv" resolve="inTopScopeContinueTests" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifL" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$ieX" />
+          <ref role="1vtf2j" node="4WY_RKG$ieX" resolve="inContinueTests" />
         </node>
         <node concept="16YvwY" id="7qzmU5U0yuf" role="3F5Y$9">
           <property role="16EpFF" value="4TbX0$8Gx_m/nux" />
           <node concept="30a7bf" id="1KSABIutI0H" role="16YnsZ">
             <node concept="3cQ7K9" id="3GPxRNRaLd3" role="30a7be">
               <property role="3sdDOw" value="marker" />
-              <ref role="3cQ7K8" to="fhx2:4_YTmn7ToiF" />
+              <ref role="3cQ7K8" to="fhx2:4_YTmn7ToiF" resolve="conditionOfNearestIf" />
             </node>
           </node>
           <node concept="16XR13" id="7qzmU5U0Aaw" role="16XPZB">
@@ -439,14 +439,14 @@
               <node concept="30a7bf" id="7cisAzZ8Jl9" role="16XPZy">
                 <node concept="3cQ7K9" id="3GPxRNRaLd9" role="30a7be">
                   <property role="3sdDOw" value="marker" />
-                  <ref role="3cQ7K8" to="fhx2:4_YTmn7ToiF" />
+                  <ref role="3cQ7K8" to="fhx2:4_YTmn7ToiF" resolve="conditionOfNearestIf" />
                 </node>
               </node>
             </node>
             <node concept="30a7bf" id="7Jr7T0w2mcn" role="16XPZy">
               <node concept="3cQ7K9" id="3GPxRNRaLd7" role="30a7be">
                 <property role="3sdDOw" value="marker" />
-                <ref role="3cQ7K8" to="fhx2:hDImLjRxLs" />
+                <ref role="3cQ7K8" to="fhx2:hDImLjRxLs" resolve="1stIfIn2ndCont" />
               </node>
             </node>
           </node>
@@ -460,7 +460,7 @@
       <node concept="3clFbS" id="7Jr7T0w2meM" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2meN" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2meO" role="3sdZbB">
-          <ref role="3sa5fj" to="fhx2:4PM5ysquhKk" />
+          <ref role="3sa5fj" to="fhx2:4PM5ysquhKk" resolve="forArroundFirstContinue" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2meP" role="3savwP">
@@ -472,7 +472,7 @@
         <node concept="30a7bf" id="7Jr7T0w2meS" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaLcZ" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="fhx2:4_YTmn7TkiH" />
+            <ref role="3cQ7K8" to="fhx2:4_YTmn7TkiH" resolve="ifCondBeforeFirstCondtinue" />
           </node>
         </node>
         <node concept="1l46Ie" id="4WY_RKG$ifO" role="3F5Y$9">
@@ -480,11 +480,11 @@
             <property role="TrG5h" value="j" />
           </node>
           <node concept="1vv375" id="4WY_RKG$ifQ" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$ifv" />
+            <ref role="1vv99g" node="4WY_RKG$ifv" resolve="inTopScopeContinueTests" />
           </node>
         </node>
         <node concept="1vtf2i" id="4WY_RKG$ifR" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKG$ieX" />
+          <ref role="1vtf2j" node="4WY_RKG$ieX" resolve="inContinueTests" />
         </node>
       </node>
     </node>

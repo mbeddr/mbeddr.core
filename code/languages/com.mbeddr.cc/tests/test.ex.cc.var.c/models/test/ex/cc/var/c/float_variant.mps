@@ -96,13 +96,13 @@
     <node concept="2eOfOl" id="5aNdPeN4AtH" role="2ePNbc">
       <property role="TrG5h" value="FloatVariant" />
       <node concept="2v9HqM" id="5aNdPeN4AF$" role="2eOfOg">
-        <ref role="2v9HqP" node="5aNdPeN4AtR" />
+        <ref role="2v9HqP" node="5aNdPeN4AtR" resolve="Main" />
       </node>
       <node concept="2v9HqM" id="5aNdPeN4AtJ" role="2eOfOg">
-        <ref role="2v9HqP" to="lfqn:5aNdPeN4mOe" />
+        <ref role="2v9HqP" to="lfqn:5aNdPeN4mOe" resolve="Application" />
       </node>
       <node concept="2v9HqM" id="6hM2_xVROCG" role="2eOfOg">
-        <ref role="2v9HqP" to="lfqn:6hM2_xVRJX6" />
+        <ref role="2v9HqP" to="lfqn:6hM2_xVRJX6" resolve="Enums" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxE9i" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -124,12 +124,12 @@
     </node>
     <node concept="35TzUN" id="5aNdPeN4AtN" role="2Q9xDr">
       <node concept="IjAfM" id="16nA7ymBKGk" role="19yoJo">
-        <ref role="IjAfK" to="lfqn:5aNdPeN2d6h" />
-        <ref role="IjAfL" to="lfqn:5aNdPeN2d8E" />
+        <ref role="IjAfK" to="lfqn:5aNdPeN2d6h" resolve="FM" />
+        <ref role="IjAfL" to="lfqn:5aNdPeN2d8E" resolve="Float" />
       </node>
       <node concept="IjAfM" id="3biQRBA3Vm5" role="19yoJo">
-        <ref role="IjAfK" to="lfqn:3biQRBA3NsA" />
-        <ref role="IjAfL" to="lfqn:3biQRBA3NTz" />
+        <ref role="IjAfK" to="lfqn:3biQRBA3NsA" resolve="FM2" />
+        <ref role="IjAfL" to="lfqn:3biQRBA3NTz" resolve="FMConfig" />
       </node>
     </node>
     <node concept="3xCD7P" id="5aNdPeN4AtQ" role="2Q9xDr" />
@@ -145,7 +145,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zJEUG" role="lIfQt">
-        <ref role="3cM6IK" to="lfqn:5aNdPeN4mOu" />
+        <ref role="3cM6IK" to="lfqn:5aNdPeN4mOu" resolve="testConfig" />
       </node>
     </node>
     <node concept="2NXPZ9" id="5aNdPeN4Au4" role="N3F5h">
@@ -153,7 +153,7 @@
     </node>
     <node concept="3GEVxB" id="16nA7ymHINc" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" to="lfqn:5aNdPeN4mOe" />
+      <ref role="3GEb4d" to="lfqn:5aNdPeN4mOe" resolve="Application" />
     </node>
   </node>
 </model>

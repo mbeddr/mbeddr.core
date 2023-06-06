@@ -221,16 +221,16 @@
         <property role="TrG5h" value="MockCompOrder" />
         <node concept="2EWHp_" id="6towh06fItY" role="2RW2fA">
           <property role="TrG5h" value="interface" />
-          <ref role="2EX0h9" node="6towh06fIbO" />
+          <ref role="2EX0h9" node="6towh06fIbO" resolve="IFace" />
         </node>
         <node concept="1XKeps" id="6towh06fIu3" role="2RW2fA">
           <node concept="1XKepq" id="6towh06fIu7" role="1XKepp">
-            <ref role="1XK1uE" node="6towh06fItY" />
-            <ref role="1XK1uD" node="6towh06fItc" />
+            <ref role="1XK1uE" node="6towh06fItY" resolve="interface" />
+            <ref role="1XK1uD" node="6towh06fItc" resolve="op2" />
           </node>
           <node concept="1XKepq" id="6towh06fIu9" role="1XKepp">
-            <ref role="1XK1uE" node="6towh06fItY" />
-            <ref role="1XK1uD" node="6towh06fIsF" />
+            <ref role="1XK1uE" node="6towh06fItY" resolve="interface" />
+            <ref role="1XK1uD" node="6towh06fIsF" resolve="op1" />
           </node>
         </node>
       </node>
@@ -241,13 +241,13 @@
         <property role="TrG5h" value="iOrder" />
         <node concept="2EWCuV" id="6towh06fIuR" role="5JtDH">
           <property role="TrG5h" value="mc" />
-          <ref role="2EWCuU" node="6towh06fItP" />
+          <ref role="2EWCuU" node="6towh06fItP" resolve="MockCompOrder" />
         </node>
         <node concept="21gPQu" id="6towh06fJHX" role="5JtDH">
           <property role="TrG5h" value="mOrder" />
           <node concept="219P8x" id="6towh06fJHY" role="21ad3a">
-            <ref role="219P8w" node="6towh06fIuR" />
-            <ref role="219P8J" node="6towh06fItY" />
+            <ref role="219P8w" node="6towh06fIuR" resolve="mc" />
+            <ref role="219P8J" node="6towh06fItY" resolve="interface" />
           </node>
         </node>
       </node>
@@ -263,28 +263,28 @@
         </node>
         <node concept="3XIRFW" id="6towh06fIvO" role="c0Qz3">
           <node concept="3t9XKO" id="6towh06fJGQ" role="3XIRFZ">
-            <ref role="3t9XKR" node="6towh06fIuB" />
+            <ref role="3t9XKR" node="6towh06fIuB" resolve="iOrder" />
           </node>
           <node concept="1_9egQ" id="6towh06fJI8" role="3XIRFZ">
             <node concept="30IJZa" id="6towh06fJPV" role="1_9egR">
-              <ref role="2H6Oet" node="6towh06fIsF" />
+              <ref role="2H6Oet" node="6towh06fIsF" resolve="op1" />
               <node concept="2H6Wec" id="6towh06fJI6" role="1_9fRO">
-                <ref role="2H6Wef" node="6towh06fJHX" />
+                <ref role="2H6Wef" node="6towh06fJHX" resolve="mOrder" />
               </node>
               <node concept="3TlMhK" id="6towh06fTd8" role="2H6KYo" />
             </node>
           </node>
           <node concept="1_9egQ" id="6towh06fJQG" role="3XIRFZ">
             <node concept="30IJZa" id="6towh06fJQO" role="1_9egR">
-              <ref role="2H6Oet" node="6towh06fItc" />
+              <ref role="2H6Oet" node="6towh06fItc" resolve="op2" />
               <node concept="2H6Wec" id="6towh06fJQE" role="1_9fRO">
-                <ref role="2H6Wef" node="6towh06fJHX" />
+                <ref role="2H6Wef" node="6towh06fJHX" resolve="mOrder" />
               </node>
             </node>
           </node>
           <node concept="wiOnM" id="6towh06fTam" role="3XIRFZ">
-            <ref role="1XX6Gv" node="6towh06fIuB" />
-            <ref role="1XX6Gs" node="6towh06fIuR" />
+            <ref role="1XX6Gv" node="6towh06fIuB" resolve="iOrder" />
+            <ref role="1XX6Gs" node="6towh06fIuR" resolve="mc" />
           </node>
         </node>
       </node>
@@ -299,25 +299,25 @@
         <property role="TrG5h" value="MockCompAssert" />
         <node concept="2EWHp_" id="6towh06fUDo" role="2RW2fA">
           <property role="TrG5h" value="interface" />
-          <ref role="2EX0h9" node="6towh06fIbO" />
+          <ref role="2EX0h9" node="6towh06fIbO" resolve="IFace" />
         </node>
         <node concept="1XKeps" id="6towh06fUDp" role="2RW2fA">
           <node concept="1XKepq" id="6towh06fUDr" role="1XKepp">
-            <ref role="1XK1uE" node="6towh06fUDo" />
-            <ref role="1XK1uD" node="6towh06fIsF" />
+            <ref role="1XK1uE" node="6towh06fUDo" resolve="interface" />
+            <ref role="1XK1uD" node="6towh06fIsF" resolve="op1" />
             <node concept="1XQxzr" id="6towh06fVjQ" role="1XQxz5">
-              <ref role="1XQxzo" node="6towh06fTcr" />
+              <ref role="1XQxzo" node="6towh06fTcr" resolve="b" />
               <node concept="3TlM44" id="6towh06fVkn" role="2xlQcv">
                 <node concept="3TlMhd" id="6towh06fVm5" role="3TlMhJ" />
                 <node concept="2xkYqR" id="6towh06fVk8" role="3TlMhI">
-                  <ref role="2xkTZg" node="6towh06fTcr" />
+                  <ref role="2xkTZg" node="6towh06fTcr" resolve="b" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="1XKepq" id="6towh06fUDq" role="1XKepp">
-            <ref role="1XK1uE" node="6towh06fUDo" />
-            <ref role="1XK1uD" node="6towh06fItc" />
+            <ref role="1XK1uE" node="6towh06fUDo" resolve="interface" />
+            <ref role="1XK1uD" node="6towh06fItc" resolve="op2" />
           </node>
         </node>
       </node>
@@ -328,13 +328,13 @@
         <property role="TrG5h" value="iAssert" />
         <node concept="2EWCuV" id="6towh06g90j" role="5JtDH">
           <property role="TrG5h" value="mc" />
-          <ref role="2EWCuU" node="6towh06fUDn" />
+          <ref role="2EWCuU" node="6towh06fUDn" resolve="MockCompAssert" />
         </node>
         <node concept="21gPQu" id="6towh06g90k" role="5JtDH">
           <property role="TrG5h" value="mAssert" />
           <node concept="219P8x" id="6towh06g90l" role="21ad3a">
-            <ref role="219P8w" node="6towh06g90j" />
-            <ref role="219P8J" node="6towh06fUDo" />
+            <ref role="219P8w" node="6towh06g90j" resolve="mc" />
+            <ref role="219P8J" node="6towh06fUDo" resolve="interface" />
           </node>
         </node>
       </node>
@@ -353,28 +353,28 @@
         </node>
         <node concept="3XIRFW" id="6towh06fTdT" role="c0Qz3">
           <node concept="3t9XKO" id="6towh06fTdU" role="3XIRFZ">
-            <ref role="3t9XKR" node="6towh06g90i" />
+            <ref role="3t9XKR" node="6towh06g90i" resolve="iAssert" />
           </node>
           <node concept="1_9egQ" id="6towh06fTdV" role="3XIRFZ">
             <node concept="30IJZa" id="6towh06fTdW" role="1_9egR">
-              <ref role="2H6Oet" node="6towh06fIsF" />
+              <ref role="2H6Oet" node="6towh06fIsF" resolve="op1" />
               <node concept="2H6Wec" id="6towh06zqAJ" role="1_9fRO">
-                <ref role="2H6Wef" node="6towh06g90k" />
+                <ref role="2H6Wef" node="6towh06g90k" resolve="mAssert" />
               </node>
               <node concept="3TlMhK" id="6towh06h8Zp" role="2H6KYo" />
             </node>
           </node>
           <node concept="1_9egQ" id="6towh06fTdZ" role="3XIRFZ">
             <node concept="30IJZa" id="6towh06fTe0" role="1_9egR">
-              <ref role="2H6Oet" node="6towh06fItc" />
+              <ref role="2H6Oet" node="6towh06fItc" resolve="op2" />
               <node concept="2H6Wec" id="6towh06zqCy" role="1_9fRO">
-                <ref role="2H6Wef" node="6towh06g90k" />
+                <ref role="2H6Wef" node="6towh06g90k" resolve="mAssert" />
               </node>
             </node>
           </node>
           <node concept="wiOnM" id="6towh06fTe2" role="3XIRFZ">
-            <ref role="1XX6Gv" node="6towh06g90i" />
-            <ref role="1XX6Gs" node="6towh06g90j" />
+            <ref role="1XX6Gv" node="6towh06g90i" resolve="iAssert" />
+            <ref role="1XX6Gs" node="6towh06g90j" resolve="mc" />
           </node>
         </node>
       </node>
@@ -387,10 +387,10 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAL96" role="lIfQt">
-        <ref role="3cM6IK" node="6towh06fIvL" />
+        <ref role="3cM6IK" node="6towh06fIvL" resolve="testFailingWrongOrder" />
       </node>
       <node concept="3cM6IN" id="4Ru$s7zAL97" role="lIfQt">
-        <ref role="3cM6IK" node="6towh06fTdR" />
+        <ref role="3cM6IK" node="6towh06fTdR" resolve="testFailingWrongAssertion" />
       </node>
     </node>
     <node concept="2NXPZ9" id="6towh06fJGV" role="N3F5h">
@@ -423,7 +423,7 @@
     <node concept="2eOfOl" id="6towh06gbBX" role="2ePNbc">
       <property role="TrG5h" value="MockTests" />
       <node concept="2v9HqM" id="6towh06gbBZ" role="2eOfOg">
-        <ref role="2v9HqP" node="6towh06fH_G" />
+        <ref role="2v9HqP" node="6towh06fH_G" resolve="FailingMock" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTAoJ" role="1kZvWc">
         <property role="TrG5h" value="any" />

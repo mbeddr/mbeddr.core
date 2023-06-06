@@ -212,8 +212,8 @@
       <node concept="3XIRFW" id="3AFGfkfopP1" role="3XIRFX">
         <node concept="2vn4wP" id="3AFGfkfopOY" role="3XIRFZ">
           <node concept="2vn4wR" id="3AFGfkfopP2" role="2vn6$T">
-            <ref role="2vn4wS" node="3AFGfkfopPd" />
-            <ref role="2vn4wT" node="3AFGfkfopPe" />
+            <ref role="2vn4wS" node="3AFGfkfopPd" resolve="messages" />
+            <ref role="2vn4wT" node="3AFGfkfopPe" resolve="HelloWorld" />
           </node>
         </node>
         <node concept="3XISUE" id="3AFGfkfopP3" role="3XIRFZ" />
@@ -241,13 +241,13 @@
         <node concept="3HmicQ" id="7Vd878lVHmI" role="lGtFl">
           <node concept="3HmicZ" id="7Vd878lVHmJ" role="Fanlf" />
           <node concept="3HmcO9" id="1MB8zB8KLU$" role="Fanle">
-            <ref role="3HmaCj" node="3AFGfkfopOW" />
+            <ref role="3HmaCj" node="3AFGfkfopOW" resolve="simple_req" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3GEVxB" id="1MB8zB8KLPs" role="2OODSX">
-      <ref role="3GEb4d" node="3AFGfkfopOV" />
+      <ref role="3GEb4d" node="3AFGfkfopOV" resolve="ReqsModule" />
     </node>
   </node>
   <node concept="2v9HqL" id="3AFGfkfopPT">
@@ -269,7 +269,7 @@
     <node concept="2eOfOl" id="3AFGfkfopPX" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="3AFGfkfopPY" role="2eOfOg">
-        <ref role="2v9HqP" node="3AFGfkfopOZ" />
+        <ref role="2v9HqP" node="3AFGfkfopOZ" resolve="HelloWorld" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxE9m" role="1kZvWc">
         <property role="TrG5h" value="any" />

@@ -181,7 +181,7 @@
     </node>
     <node concept="3GEVxB" id="19LfhoY0f2s" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="2xigTGTE_HJ" />
+      <ref role="3GEb4d" node="2xigTGTE_HJ" resolve="nonExistingHeader" />
     </node>
   </node>
   <node concept="rcWEw" id="2xigTGTE_HJ">

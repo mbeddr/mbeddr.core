@@ -268,10 +268,10 @@
     <node concept="2eOfOl" id="pTHqv6KOa4" role="2ePNbc">
       <property role="TrG5h" value="CompTest" />
       <node concept="2v9HqM" id="pTHqv6KOa5" role="2eOfOg">
-        <ref role="2v9HqP" node="71UKpntmKgd" />
+        <ref role="2v9HqP" node="71UKpntmKgd" resolve="CompModule" />
       </node>
       <node concept="2v9HqM" id="pTHqv6KOaa" role="2eOfOg">
-        <ref role="2v9HqP" node="71UKpntoYBO" />
+        <ref role="2v9HqP" node="71UKpntoYBO" resolve="MainModule" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApc" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -284,7 +284,7 @@
       <node concept="3i3YCL" id="1OLGDVfgYkc" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="71UKpntoflC" />
+        <ref role="35zhcq" node="71UKpntoflC" resolve="defaultInstances" />
       </node>
     </node>
     <node concept="2AWWZL" id="3R$6B6bNxuU" role="2AWWZH">
@@ -336,7 +336,7 @@
         <node concept="2EWNYT" id="71UKpntmWnA" role="1UOdpc">
           <property role="TrG5h" value="cmd" />
           <node concept="1AkAi2" id="4WTYg$PH4jf" role="2C2TGm">
-            <ref role="1AkAi1" node="71UKpntmWnD" />
+            <ref role="1AkAi1" node="71UKpntmWnD" resolve="TLCommand" />
           </node>
         </node>
       </node>
@@ -394,7 +394,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="2EWHp_" id="7JjETeGcTKf" role="2RW2fA">
         <property role="TrG5h" value="ll" />
-        <ref role="2EX0h9" node="7JjETeGcTK7" />
+        <ref role="2EX0h9" node="7JjETeGcTK7" resolve="ILowLevel" />
       </node>
       <node concept="2EWDwb" id="7JjETeGcTKh" role="2RW2fA">
         <property role="TrG5h" value="ll_doSomeLowlevelStuff" />
@@ -406,8 +406,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="7JjETeGcTKk" role="2EWDeT">
-          <ref role="1ZwSu5" node="7JjETeGcTKf" />
-          <ref role="1ZwxE2" node="7JjETeGcTK8" />
+          <ref role="1ZwSu5" node="7JjETeGcTKf" resolve="ll" />
+          <ref role="1ZwxE2" node="7JjETeGcTK8" resolve="doSomeLowlevelStuff" />
         </node>
         <node concept="26Vqqz" id="4WTYg$PQmOD" role="2C2TGm" />
         <node concept="19RgSI" id="5iawPn1WnAR" role="1UOdpc">
@@ -421,7 +421,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="2EWHp_" id="71UKpntoZy5" role="2RW2fA">
         <property role="TrG5h" value="cmd" />
-        <ref role="2EX0h9" node="71UKpntoQaD" />
+        <ref role="2EX0h9" node="71UKpntoQaD" resolve="IDriver" />
       </node>
       <node concept="2EWDwb" id="71UKpntpFcD" role="2RW2fA">
         <property role="TrG5h" value="cmd_setDriverValue" />
@@ -433,8 +433,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="71UKpntpFcH" role="2EWDeT">
-          <ref role="1ZwxE2" node="71UKpntoQJH" />
-          <ref role="1ZwSu5" node="71UKpntoZy5" />
+          <ref role="1ZwxE2" node="71UKpntoQJH" resolve="setDriverValue" />
+          <ref role="1ZwSu5" node="71UKpntoZy5" resolve="cmd" />
         </node>
         <node concept="26Vqqz" id="4$RjoMNr_Jt" role="2C2TGm" />
         <node concept="19RgSI" id="4$RjoMNr_Ju" role="1UOdpc">
@@ -450,22 +450,22 @@
     <node concept="2EWCuY" id="7VIiBZiOn7D" role="N3F5h">
       <property role="TrG5h" value="AnotherDriver" />
       <property role="2OOxQR" value="true" />
-      <ref role="2EWKI0" node="71UKpntoZy4" />
+      <ref role="2EWKI0" node="71UKpntoZy4" resolve="Driver" />
       <node concept="2EWHp_" id="4AGl5dzx99w" role="2RW2fA">
         <property role="TrG5h" value="diag" />
-        <ref role="2EX0h9" node="4AGl5dzx99y" />
+        <ref role="2EX0h9" node="4AGl5dzx99y" resolve="IDiagnostic" />
       </node>
       <node concept="2EWHp$" id="4AGl5dzxq2A" role="2RW2fA">
         <property role="TrG5h" value="logger" />
         <property role="3jzXuR" value="true" />
-        <ref role="2EX0h9" node="4AGl5dzxq2y" />
+        <ref role="2EX0h9" node="4AGl5dzxq2y" resolve="ILogger" />
       </node>
       <node concept="2EWHp$" id="7JjETeGcTKb" role="2RW2fA">
         <property role="TrG5h" value="lowlevel" />
-        <ref role="2EX0h9" node="7JjETeGcTK7" />
+        <ref role="2EX0h9" node="7JjETeGcTK7" resolve="ILowLevel" />
         <node concept="3nZ20b" id="7JjETeGcTKc" role="3nSGOU">
-          <ref role="2jV6Ia" node="7JjETeGcTKf" />
-          <ref role="3nZ20a" node="7JjETeGcTKe" />
+          <ref role="2jV6Ia" node="7JjETeGcTKf" resolve="ll" />
+          <ref role="3nZ20a" node="7JjETeGcTKe" resolve="LowLevelCode" />
         </node>
       </node>
       <node concept="EbCE0" id="4AGl5dzwUZN" role="2RW2fA">
@@ -482,9 +482,9 @@
             <node concept="3XIRFW" id="jra7FnlBRt" role="EanFY">
               <node concept="1_9egQ" id="4AGl5dzxq2D" role="3XIRFZ">
                 <node concept="30IBQI" id="4AGl5dzxq2F" role="1_9egR">
-                  <ref role="2H6Oet" node="4AGl5dzxq2z" />
+                  <ref role="2H6Oet" node="4AGl5dzxq2z" resolve="log" />
                   <node concept="2H6loZ" id="4AGl5dzxq2E" role="1_9fRO">
-                    <ref role="2H6loY" node="4AGl5dzxq2A" />
+                    <ref role="2H6loY" node="4AGl5dzxq2A" resolve="logger" />
                   </node>
                   <node concept="PhEJO" id="4AGl5dzxq2G" role="2H6KYo">
                     <property role="PhEJT" value="SomeMessage" />
@@ -493,14 +493,14 @@
               </node>
             </node>
             <node concept="2H6loZ" id="Z4PF25mOWJ" role="2aTQa8">
-              <ref role="2H6loY" node="4AGl5dzxq2A" />
+              <ref role="2H6loY" node="4AGl5dzxq2A" resolve="logger" />
             </node>
           </node>
           <node concept="1_9egQ" id="7JjETeGcTKn" role="3XIRFZ">
             <node concept="30IBQI" id="7JjETeGcTKp" role="1_9egR">
-              <ref role="2H6Oet" node="7JjETeGcTK8" />
+              <ref role="2H6Oet" node="7JjETeGcTK8" resolve="doSomeLowlevelStuff" />
               <node concept="2H6loZ" id="7JjETeGcTKo" role="1_9fRO">
-                <ref role="2H6loY" node="7JjETeGcTKb" />
+                <ref role="2H6loY" node="7JjETeGcTKb" resolve="lowlevel" />
               </node>
               <node concept="3TlMh9" id="2WRRjDdqi7i" role="2H6KYo">
                 <property role="2hmy$m" value="10" />
@@ -510,7 +510,7 @@
           <node concept="1_9egQ" id="6AJWN7GdSya" role="3XIRFZ">
             <node concept="3TM6Ey" id="6AJWN7GdSyd" role="1_9egR">
               <node concept="EbZIE" id="6AJWN7GdSyc" role="1_9fRO">
-                <ref role="EbZID" node="4AGl5dzwUZN" />
+                <ref role="EbZID" node="4AGl5dzwUZN" resolve="count" />
               </node>
             </node>
           </node>
@@ -521,8 +521,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="7VIiBZiOn7J" role="2EWDeT">
-          <ref role="1ZwSu5" node="71UKpntoZy5" />
-          <ref role="1ZwxE2" node="71UKpntoQJH" />
+          <ref role="1ZwSu5" node="71UKpntoZy5" resolve="cmd" />
+          <ref role="1ZwxE2" node="71UKpntoQJH" resolve="setDriverValue" />
         </node>
         <node concept="26Vqqz" id="Z4PF25pP5Y" role="2C2TGm" />
         <node concept="19RgSI" id="Z4PF25pP5Z" role="1UOdpc">
@@ -539,13 +539,13 @@
         <node concept="3XIRFW" id="4robRdEbixi" role="2EWMhI">
           <node concept="2BFjQ_" id="4robRdEbixm" role="3XIRFZ">
             <node concept="EbZIE" id="4robRdEbixn" role="2BFjQA">
-              <ref role="EbZID" node="4AGl5dzwUZN" />
+              <ref role="EbZID" node="4AGl5dzwUZN" resolve="count" />
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="4robRdEbixk" role="2EWDeT">
-          <ref role="1ZwSu5" node="4AGl5dzx99w" />
-          <ref role="1ZwxE2" node="4AGl5dzx99_" />
+          <ref role="1ZwSu5" node="4AGl5dzx99w" resolve="diag" />
+          <ref role="1ZwxE2" node="4AGl5dzx99_" resolve="getCount" />
         </node>
         <node concept="26Vqqz" id="4WTYg$PQmOj" role="2C2TGm" />
       </node>
@@ -555,11 +555,11 @@
       <property role="2OOxQR" value="true" />
       <node concept="2EWHp_" id="71UKpntmKgf" role="2RW2fA">
         <property role="TrG5h" value="tl" />
-        <ref role="2EX0h9" node="71UKpntmKgh" />
+        <ref role="2EX0h9" node="71UKpntmKgh" resolve="ITrafficLights" />
       </node>
       <node concept="2EWHp$" id="71UKpntoTuC" role="2RW2fA">
         <property role="TrG5h" value="driver" />
-        <ref role="2EX0h9" node="71UKpntoQaD" />
+        <ref role="2EX0h9" node="71UKpntoQaD" resolve="IDriver" />
       </node>
       <node concept="2EWDwb" id="18l4N2QwFk2" role="2RW2fA">
         <property role="TrG5h" value="helper" />
@@ -585,14 +585,14 @@
           <node concept="1_9egQ" id="1exqRpao7E" role="3XIRFZ">
             <node concept="3pqW6w" id="1exqRpao7F" role="1_9egR">
               <node concept="3ZVu4v" id="18l4N2QwRAB" role="3TlMhI">
-                <ref role="3ZVs_2" node="18l4N2QwRAt" />
+                <ref role="3ZVs_2" node="18l4N2QwRAt" resolve="i" />
               </node>
               <node concept="2BOciq" id="18l4N2QwRAE" role="3TlMhJ">
                 <node concept="2$_UoH" id="18l4N2QwRAH" role="3TlMhJ">
-                  <ref role="2$_UoI" node="18l4N2QwFk2" />
+                  <ref role="2$_UoI" node="18l4N2QwFk2" resolve="helper" />
                 </node>
                 <node concept="3ZVu4v" id="18l4N2QwRAD" role="3TlMhI">
-                  <ref role="3ZVs_2" node="18l4N2QwRAt" />
+                  <ref role="3ZVs_2" node="18l4N2QwRAt" resolve="i" />
                 </node>
               </node>
             </node>
@@ -600,25 +600,25 @@
           <node concept="c0U19" id="71UKpntnhB2" role="3XIRFZ">
             <node concept="3TlM44" id="71UKpntnl7$" role="c0U16">
               <node concept="3ZUYvv" id="7kKaL9x58LM" role="3TlMhI">
-                <ref role="3ZUYvu" node="4$RjoMNr_JC" />
+                <ref role="3ZUYvu" node="4$RjoMNr_JC" resolve="cmd" />
               </node>
               <node concept="1AkAhK" id="71UKpntnl7B" role="3TlMhJ">
-                <ref role="1AkAhZ" node="71UKpntmWnF" />
+                <ref role="1AkAhZ" node="71UKpntmWnF" resolve="go" />
               </node>
             </node>
             <node concept="3XIRFW" id="71UKpntnhB4" role="c0U17">
               <node concept="2BFjQ_" id="LUz4xAqpyw" role="3XIRFZ">
                 <node concept="2BOciq" id="18l4N2QwRAI" role="2BFjQA">
                   <node concept="3ZVu4v" id="18l4N2QwRAL" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="18l4N2QwRAt" />
+                    <ref role="3ZVs_2" node="18l4N2QwRAt" resolve="i" />
                   </node>
                   <node concept="30IBQI" id="pTHqv6LfEy" role="3TlMhI">
-                    <ref role="2H6Oet" node="71UKpntoQJH" />
+                    <ref role="2H6Oet" node="71UKpntoQJH" resolve="setDriverValue" />
                     <node concept="2H6loZ" id="pTHqv6Lf$G" role="1_9fRO">
-                      <ref role="2H6loY" node="71UKpntoTuC" />
+                      <ref role="2H6loY" node="71UKpntoTuC" resolve="driver" />
                     </node>
                     <node concept="4ZOvp" id="pTHqv6LfEz" role="2H6KYo">
-                      <ref role="2DPCA0" node="71UKpntoQJW" />
+                      <ref role="2DPCA0" node="71UKpntoQJW" resolve="GREEN_ADDR" />
                     </node>
                     <node concept="3TlMh9" id="pTHqv6LfE_" role="2H6KYo">
                       <property role="2hmy$m" value="10" />
@@ -632,15 +632,15 @@
                 <node concept="2BFjQ_" id="LUz4xAqpyy" role="3XIRFZ">
                   <node concept="2BOciq" id="18l4N2QwRAM" role="2BFjQA">
                     <node concept="3ZVu4v" id="18l4N2QwRAP" role="3TlMhJ">
-                      <ref role="3ZVs_2" node="18l4N2QwRAt" />
+                      <ref role="3ZVs_2" node="18l4N2QwRAt" resolve="i" />
                     </node>
                     <node concept="30IBQI" id="pTHqv6LfED" role="3TlMhI">
-                      <ref role="2H6Oet" node="71UKpntoQJH" />
+                      <ref role="2H6Oet" node="71UKpntoQJH" resolve="setDriverValue" />
                       <node concept="2H6loZ" id="pTHqv6LfEC" role="1_9fRO">
-                        <ref role="2H6loY" node="71UKpntoTuC" />
+                        <ref role="2H6loY" node="71UKpntoTuC" resolve="driver" />
                       </node>
                       <node concept="4ZOvp" id="pTHqv6LfEE" role="2H6KYo">
-                        <ref role="2DPCA0" node="71UKpntoQJQ" />
+                        <ref role="2DPCA0" node="71UKpntoQJQ" resolve="RED_ADDR" />
                       </node>
                       <node concept="3TlMh9" id="pTHqv6LfEG" role="2H6KYo">
                         <property role="2hmy$m" value="10" />
@@ -653,14 +653,14 @@
           </node>
         </node>
         <node concept="2EWDw0" id="18l4N2Qwz_C" role="2EWDeT">
-          <ref role="1ZwxE2" node="71UKpntmWnz" />
-          <ref role="1ZwSu5" node="71UKpntmKgf" />
+          <ref role="1ZwxE2" node="71UKpntmWnz" resolve="setColor" />
+          <ref role="1ZwSu5" node="71UKpntmKgf" resolve="tl" />
         </node>
         <node concept="26Vqqz" id="4$RjoMNr_JB" role="2C2TGm" />
         <node concept="19RgSI" id="4$RjoMNr_JC" role="1UOdpc">
           <property role="TrG5h" value="cmd" />
           <node concept="1AkAi2" id="4$RjoMNr_JD" role="2C2TGm">
-            <ref role="1AkAi1" node="71UKpntmWnD" />
+            <ref role="1AkAi1" node="71UKpntmWnD" resolve="TLCommand" />
           </node>
         </node>
       </node>
@@ -670,7 +670,7 @@
       <property role="TrG5h" value="Logger" />
       <node concept="2EWHp_" id="6jjPLM8mPjn" role="2RW2fA">
         <property role="TrG5h" value="logger" />
-        <ref role="2EX0h9" node="4AGl5dzxq2y" />
+        <ref role="2EX0h9" node="4AGl5dzxq2y" resolve="ILogger" />
       </node>
       <node concept="2EWDwb" id="6jjPLM8mPjo" role="2RW2fA">
         <property role="TrG5h" value="logger_log" />
@@ -679,13 +679,13 @@
             <property role="TrG5h" value="theMessage" />
             <node concept="Pu267" id="6jjPLM8mPjz" role="2C2TGm" />
             <node concept="3ZUYvv" id="6jjPLM8mPj_" role="3XIe9u">
-              <ref role="3ZUYvu" node="5iawPn1WnAh" />
+              <ref role="3ZUYvu" node="5iawPn1WnAh" resolve="message" />
             </node>
           </node>
         </node>
         <node concept="2EWDw0" id="6jjPLM8mPjr" role="2EWDeT">
-          <ref role="1ZwxE2" node="4AGl5dzxq2z" />
-          <ref role="1ZwSu5" node="6jjPLM8mPjn" />
+          <ref role="1ZwxE2" node="4AGl5dzxq2z" resolve="log" />
+          <ref role="1ZwSu5" node="6jjPLM8mPjn" resolve="logger" />
         </node>
         <node concept="19Rifw" id="6jjPLM8mPjs" role="2C2TGm" />
         <node concept="19RgSI" id="5iawPn1WnAh" role="1UOdpc">
@@ -704,99 +704,99 @@
       <property role="TrG5h" value="defaultInstances" />
       <node concept="2EWCuV" id="7VIiBZiOn7P" role="5JtDH">
         <property role="TrG5h" value="lights" />
-        <ref role="2EWCuU" node="71UKpntmXZ7" />
+        <ref role="2EWCuU" node="71UKpntmXZ7" resolve="TrafficLights" />
       </node>
       <node concept="2EWCuV" id="wOd6nl5ilq" role="5JtDH">
         <property role="TrG5h" value="lights2" />
-        <ref role="2EWCuU" node="71UKpntmXZ7" />
+        <ref role="2EWCuU" node="71UKpntmXZ7" resolve="TrafficLights" />
       </node>
       <node concept="2EWCuV" id="7JjETeGcVN1" role="5JtDH">
         <property role="TrG5h" value="ll" />
-        <ref role="2EWCuU" node="7JjETeGcTKe" />
+        <ref role="2EWCuU" node="7JjETeGcTKe" resolve="LowLevelCode" />
       </node>
       <node concept="2EWCuV" id="71UKpntoZy2" role="5JtDH">
         <property role="TrG5h" value="driver" />
-        <ref role="2EWCuU" node="71UKpntoZy4" />
+        <ref role="2EWCuU" node="71UKpntoZy4" resolve="Driver" />
       </node>
       <node concept="2EWCuV" id="wOd6nl5ilp" role="5JtDH">
         <property role="TrG5h" value="driver2" />
-        <ref role="2EWCuU" node="7VIiBZiOn7D" />
+        <ref role="2EWCuU" node="7VIiBZiOn7D" resolve="AnotherDriver" />
       </node>
       <node concept="2EWCuV" id="6jjPLM8mPjA" role="5JtDH">
         <property role="TrG5h" value="logger" />
-        <ref role="2EWCuU" node="6jjPLM8mPjm" />
+        <ref role="2EWCuU" node="6jjPLM8mPjm" resolve="Logger" />
       </node>
       <node concept="JAGxh" id="3PT6Z48H9lY" role="5JtDH" />
       <node concept="2EWCuP" id="wOd6nl5dDC" role="5JtDH">
         <node concept="2EWCuO" id="wOd6nl5dDD" role="2EWCuL">
-          <ref role="2EWCuR" node="7VIiBZiOn7P" />
-          <ref role="XcPQd" node="71UKpntoTuC" />
+          <ref role="2EWCuR" node="7VIiBZiOn7P" resolve="lights" />
+          <ref role="XcPQd" node="71UKpntoTuC" resolve="driver" />
         </node>
         <node concept="2EWCuO" id="wOd6nl5dDE" role="2EWCuK">
-          <ref role="XcPQd" node="71UKpntoZy5" />
-          <ref role="2EWCuR" node="71UKpntoZy2" />
+          <ref role="XcPQd" node="71UKpntoZy5" resolve="cmd" />
+          <ref role="2EWCuR" node="71UKpntoZy2" resolve="driver" />
         </node>
       </node>
       <node concept="2EWCuP" id="wOd6nl5ilr" role="5JtDH">
         <node concept="2EWCuO" id="wOd6nl5ils" role="2EWCuL">
-          <ref role="2EWCuR" node="wOd6nl5ilq" />
-          <ref role="XcPQd" node="71UKpntoTuC" />
+          <ref role="2EWCuR" node="wOd6nl5ilq" resolve="lights2" />
+          <ref role="XcPQd" node="71UKpntoTuC" resolve="driver" />
         </node>
         <node concept="2EWCuO" id="wOd6nl5ilt" role="2EWCuK">
-          <ref role="XcPQd" node="71UKpntoZy5" />
-          <ref role="2EWCuR" node="wOd6nl5ilp" />
+          <ref role="XcPQd" node="71UKpntoZy5" resolve="cmd" />
+          <ref role="2EWCuR" node="wOd6nl5ilp" resolve="driver2" />
         </node>
       </node>
       <node concept="2EWCuP" id="7JjETeGcVMY" role="5JtDH">
         <node concept="2EWCuO" id="7JjETeGcVMZ" role="2EWCuL">
-          <ref role="2EWCuR" node="wOd6nl5ilp" />
-          <ref role="XcPQd" node="7JjETeGcTKb" />
+          <ref role="2EWCuR" node="wOd6nl5ilp" resolve="driver2" />
+          <ref role="XcPQd" node="7JjETeGcTKb" resolve="lowlevel" />
         </node>
         <node concept="2EWCuO" id="7JjETeGcVN0" role="2EWCuK">
-          <ref role="2EWCuR" node="7JjETeGcVN1" />
-          <ref role="XcPQd" node="7JjETeGcTKf" />
+          <ref role="2EWCuR" node="7JjETeGcVN1" resolve="ll" />
+          <ref role="XcPQd" node="7JjETeGcTKf" resolve="ll" />
         </node>
       </node>
       <node concept="2EWCuP" id="6jjPLM8mPjB" role="5JtDH">
         <node concept="2EWCuO" id="6jjPLM8mPjC" role="2EWCuL">
-          <ref role="XcPQd" node="4AGl5dzxq2A" />
-          <ref role="2EWCuR" node="wOd6nl5ilp" />
+          <ref role="XcPQd" node="4AGl5dzxq2A" resolve="logger" />
+          <ref role="2EWCuR" node="wOd6nl5ilp" resolve="driver2" />
         </node>
         <node concept="2EWCuO" id="6jjPLM8mPjD" role="2EWCuK">
-          <ref role="2EWCuR" node="6jjPLM8mPjA" />
-          <ref role="XcPQd" node="6jjPLM8mPjn" />
+          <ref role="2EWCuR" node="6jjPLM8mPjA" resolve="logger" />
+          <ref role="XcPQd" node="6jjPLM8mPjn" resolve="logger" />
         </node>
       </node>
       <node concept="2EWCuP" id="3PT6Z48IrCC" role="5JtDH">
         <node concept="2EWCuO" id="3PT6Z48IrCD" role="2EWCuL">
-          <ref role="XcPQd" node="4AGl5dzxq2A" />
-          <ref role="2EWCuR" node="wOd6nl5ilp" />
+          <ref role="XcPQd" node="4AGl5dzxq2A" resolve="logger" />
+          <ref role="2EWCuR" node="wOd6nl5ilp" resolve="driver2" />
         </node>
         <node concept="2EWCuO" id="3PT6Z48IrCE" role="2EWCuK">
-          <ref role="2EWCuR" node="6jjPLM8mPjA" />
-          <ref role="XcPQd" node="6jjPLM8mPjn" />
+          <ref role="2EWCuR" node="6jjPLM8mPjA" resolve="logger" />
+          <ref role="XcPQd" node="6jjPLM8mPjn" resolve="logger" />
         </node>
       </node>
       <node concept="JAGxh" id="4Gyojwya0cX" role="5JtDH" />
       <node concept="21gPQu" id="4Gyojwya0cZ" role="5JtDH">
         <property role="TrG5h" value="t1" />
         <node concept="219P8x" id="4Gyojwya0d0" role="21ad3a">
-          <ref role="219P8J" node="71UKpntmKgf" />
-          <ref role="219P8w" node="7VIiBZiOn7P" />
+          <ref role="219P8J" node="71UKpntmKgf" resolve="tl" />
+          <ref role="219P8w" node="7VIiBZiOn7P" resolve="lights" />
         </node>
       </node>
       <node concept="21gPQu" id="4Gyojwya0d2" role="5JtDH">
         <property role="TrG5h" value="t2" />
         <node concept="219P8x" id="4Gyojwya0d3" role="21ad3a">
-          <ref role="219P8J" node="71UKpntmKgf" />
-          <ref role="219P8w" node="wOd6nl5ilq" />
+          <ref role="219P8J" node="71UKpntmKgf" resolve="tl" />
+          <ref role="219P8w" node="wOd6nl5ilq" resolve="lights2" />
         </node>
       </node>
       <node concept="21gPQu" id="4Gyojwya0d5" role="5JtDH">
         <property role="TrG5h" value="diag" />
         <node concept="219P8x" id="4Gyojwya0d6" role="21ad3a">
-          <ref role="219P8w" node="wOd6nl5ilp" />
-          <ref role="219P8J" node="4AGl5dzx99w" />
+          <ref role="219P8w" node="wOd6nl5ilp" resolve="driver2" />
+          <ref role="219P8J" node="4AGl5dzx99w" resolve="diag" />
         </node>
       </node>
     </node>
@@ -822,12 +822,12 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="30IJZa" id="pTHqv6LfEK" role="3TlMhI">
-              <ref role="2H6Oet" node="71UKpntmWnz" />
+              <ref role="2H6Oet" node="71UKpntmWnz" resolve="setColor" />
               <node concept="2H6Wec" id="pTHqv6LfEJ" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0cZ" />
+                <ref role="2H6Wef" node="4Gyojwya0cZ" resolve="t1" />
               </node>
               <node concept="1AkAhK" id="pTHqv6LfEL" role="2H6KYo">
-                <ref role="1AkAhZ" node="71UKpntmWnF" />
+                <ref role="1AkAhZ" node="71UKpntmWnF" resolve="go" />
               </node>
             </node>
           </node>
@@ -838,12 +838,12 @@
               <property role="2hmy$m" value="2" />
             </node>
             <node concept="30IJZa" id="LUz4xAqpyH" role="3TlMhI">
-              <ref role="2H6Oet" node="71UKpntmWnz" />
+              <ref role="2H6Oet" node="71UKpntmWnz" resolve="setColor" />
               <node concept="2H6Wec" id="4Gyojwya0d9" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0d2" />
+                <ref role="2H6Wef" node="4Gyojwya0d2" resolve="t2" />
               </node>
               <node concept="1AkAhK" id="LUz4xAqpyJ" role="2H6KYo">
-                <ref role="1AkAhZ" node="71UKpntmWnF" />
+                <ref role="1AkAhZ" node="71UKpntmWnF" resolve="go" />
               </node>
             </node>
           </node>
@@ -854,9 +854,9 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="30IJZa" id="4AGl5dzx9fK" role="3TlMhI">
-              <ref role="2H6Oet" node="4AGl5dzx99_" />
+              <ref role="2H6Oet" node="4AGl5dzx99_" resolve="getCount" />
               <node concept="2H6Wec" id="4AGl5dzx9fJ" role="1_9fRO">
-                <ref role="2H6Wef" node="4Gyojwya0d5" />
+                <ref role="2H6Wef" node="4Gyojwya0d5" resolve="diag" />
               </node>
             </node>
           </node>
@@ -869,12 +869,12 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcx" role="lIfQt">
-        <ref role="3cM6IK" node="LUz4xAqpyn" />
+        <ref role="3cM6IK" node="LUz4xAqpyn" resolve="testSimpleComponentWiring" />
       </node>
     </node>
     <node concept="3GEVxB" id="6PCgYL5xRmQ" role="2OODSX">
       <property role="3GEa6x" value="false" />
-      <ref role="3GEb4d" node="71UKpntmKgd" />
+      <ref role="3GEb4d" node="71UKpntmKgd" resolve="CompModule" />
     </node>
   </node>
 </model>

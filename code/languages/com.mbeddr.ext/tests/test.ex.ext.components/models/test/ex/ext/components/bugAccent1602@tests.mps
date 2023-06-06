@@ -200,7 +200,7 @@
     <node concept="2EWCuY" id="5CurKCJ5QPP" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="AbstractIntermediateComponent" />
-      <ref role="2EWKI0" node="5CurKCJ0m5h" />
+      <ref role="2EWKI0" node="5CurKCJ0m5h" resolve="AbstractComponent" />
       <node concept="EbCE0" id="5CurKCJ6CCy" role="2RW2fA">
         <property role="TrG5h" value="field2" />
         <property role="3R_39t" value="true" />
@@ -216,7 +216,7 @@
     <node concept="2EWCuY" id="5CurKCJ0moA" role="N3F5h">
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="MyComponent" />
-      <ref role="2EWKI0" node="5CurKCJ5QPP" />
+      <ref role="2EWKI0" node="5CurKCJ5QPP" resolve="AbstractIntermediateComponent" />
       <node concept="3Khz0B" id="5CurKCJ0moN" role="2RW2fA" />
       <node concept="2EWDwb" id="5CurKCJ0mpt" role="2RW2fA">
         <property role="TrG5h" value="addFields" />
@@ -224,10 +224,10 @@
           <node concept="2BFjQ_" id="5CurKCJ0nrg" role="3XIRFZ">
             <node concept="2BOciq" id="5CurKCJ6CEj" role="2BFjQA">
               <node concept="EbZIE" id="5CurKCJ6CJk" role="3TlMhJ">
-                <ref role="EbZID" node="5CurKCJ6CCy" />
+                <ref role="EbZID" node="5CurKCJ6CCy" resolve="field2" />
               </node>
               <node concept="EbZIE" id="5CurKCJ0nrt" role="3TlMhI">
-                <ref role="EbZID" node="5CurKCJ0mnh" />
+                <ref role="EbZID" node="5CurKCJ0mnh" resolve="field1" />
               </node>
             </node>
           </node>
@@ -237,7 +237,7 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="PJ_cn" id="5CurKCJ12ty" role="PJ_c3">
-          <ref role="PJ_cm" node="5CurKCJ0ou$" />
+          <ref role="PJ_cm" node="5CurKCJ0ou$" resolve="addFields" />
         </node>
         <node concept="1KB$IV" id="5CurKCJ16qJ" role="lGtFl" />
       </node>
@@ -249,15 +249,15 @@
       <property role="TrG5h" value="myInstances" />
       <node concept="2EWCuV" id="5CurKCJ12$B" role="5JtDH">
         <property role="TrG5h" value="comp" />
-        <ref role="2EWCuU" node="5CurKCJ0moA" />
+        <ref role="2EWCuU" node="5CurKCJ0moA" resolve="MyComponent" />
         <node concept="3R_36c" id="5CurKCJ5F$O" role="3R_39I">
-          <ref role="3R_36f" node="5CurKCJ0mnh" />
+          <ref role="3R_36f" node="5CurKCJ0mnh" resolve="field1" />
           <node concept="3TlMh9" id="5CurKCJ5F$X" role="3R_36e">
             <property role="2hmy$m" value="10" />
           </node>
         </node>
         <node concept="3R_36c" id="5CurKCJ6CCO" role="3R_39I">
-          <ref role="3R_36f" node="5CurKCJ6CCy" />
+          <ref role="3R_36f" node="5CurKCJ6CCy" resolve="field2" />
           <node concept="3TlMh9" id="5CurKCJ6CD1" role="3R_36e">
             <property role="2hmy$m" value="20" />
           </node>
@@ -276,7 +276,7 @@
       </node>
       <node concept="3XIRFW" id="5CurKCJ12BG" role="c0Qz3">
         <node concept="3t9XKO" id="5CurKCJ12D$" role="3XIRFZ">
-          <ref role="3t9XKR" node="5CurKCJ12zc" />
+          <ref role="3t9XKR" node="5CurKCJ12zc" resolve="myInstances" />
         </node>
         <node concept="3XISUE" id="5CurKCJ12DA" role="3XIRFZ" />
         <node concept="2N2KuS" id="5CurKCJ12DH" role="3XIRFZ">
@@ -284,9 +284,9 @@
             <property role="2hmy$m" value="30" />
           </node>
           <node concept="1AmG6P" id="5CurKCJ157b" role="2N2GHg">
-            <ref role="1XX6Gv" node="5CurKCJ12zc" />
-            <ref role="1XX6Gs" node="5CurKCJ12$B" />
-            <ref role="2YB7zn" node="5CurKCJ0mpt" />
+            <ref role="1XX6Gv" node="5CurKCJ12zc" resolve="myInstances" />
+            <ref role="1XX6Gs" node="5CurKCJ12$B" resolve="comp" />
+            <ref role="2YB7zn" node="5CurKCJ0mpt" resolve="addFields" />
           </node>
         </node>
       </node>
@@ -302,7 +302,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcF" role="lIfQt">
-        <ref role="3cM6IK" node="5CurKCJ12BD" />
+        <ref role="3cM6IK" node="5CurKCJ12BD" resolve="testFieldAccess" />
       </node>
     </node>
     <node concept="2NXPZ9" id="5CurKCJ0ns8" role="N3F5h">
@@ -329,13 +329,13 @@
         <property role="3Ewwow" value="true" />
         <property role="35zhco" value="false" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="5CurKCJ12zc" />
+        <ref role="35zhcq" node="5CurKCJ12zc" resolve="myInstances" />
       </node>
     </node>
     <node concept="2eOfOl" id="5CurKCJ16RQ" role="2ePNbc">
       <property role="TrG5h" value="accent1602" />
       <node concept="2v9HqM" id="5CurKCJ16SN" role="2eOfOg">
-        <ref role="2v9HqP" node="5CurKCJ0fVI" />
+        <ref role="2v9HqP" node="5CurKCJ0fVI" resolve="AccessToComponentFieldInAbstractRunnable" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTAp5" role="1kZvWc">
         <property role="TrG5h" value="any" />

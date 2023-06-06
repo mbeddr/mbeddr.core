@@ -104,7 +104,7 @@
             </node>
             <node concept="3TM6Ey" id="$ZgyIbUTT0" role="39$JDZ">
               <node concept="39$JEu" id="$ZgyIbUTDs" role="1_9fRO">
-                <ref role="39zGOu" node="$ZgyIbUSlV" />
+                <ref role="39zGOu" node="$ZgyIbUSlV" resolve="idx" />
               </node>
             </node>
             <node concept="2BOcil" id="$ZgyIbUSm1" role="39$JC6">

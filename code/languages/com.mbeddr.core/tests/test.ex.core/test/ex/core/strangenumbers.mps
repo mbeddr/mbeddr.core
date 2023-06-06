@@ -115,16 +115,16 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="6TAwvhVWkhT" role="lIfQt">
-        <ref role="3cM6IK" node="Ux_D7zzaja" />
+        <ref role="3cM6IK" node="Ux_D7zzaja" resolve="testHex" />
       </node>
       <node concept="3cM6IN" id="2A9nHKAOI5j" role="lIfQt">
-        <ref role="3cM6IK" node="O4NhJWi5Cq" />
+        <ref role="3cM6IK" node="O4NhJWi5Cq" resolve="testOctal" />
       </node>
       <node concept="3cM6IN" id="6TAwvhVWkhU" role="lIfQt">
-        <ref role="3cM6IK" node="Ux_D7zzm55" />
+        <ref role="3cM6IK" node="Ux_D7zzm55" resolve="testBinary" />
       </node>
       <node concept="3cM6IN" id="2A9nHKAOI5F" role="lIfQt">
-        <ref role="3cM6IK" node="2A9nHKAOHnv" />
+        <ref role="3cM6IK" node="2A9nHKAOHnv" resolve="testScientificNumber" />
       </node>
     </node>
     <node concept="c0Qz5" id="Ux_D7zzaja" role="N3F5h">
@@ -158,10 +158,10 @@
             </node>
             <node concept="2BOciq" id="Ux_D7zzfda" role="3TlMhI">
               <node concept="3ZVu4v" id="Ux_D7zzfdd" role="3TlMhI">
-                <ref role="3ZVs_2" node="Ux_D7zzafn" />
+                <ref role="3ZVs_2" node="Ux_D7zzafn" resolve="x" />
               </node>
               <node concept="3ZVu4v" id="Ux_D7zzaje" role="3TlMhJ">
-                <ref role="3ZVs_2" node="Ux_D7zzafs" />
+                <ref role="3ZVs_2" node="Ux_D7zzafs" resolve="y" />
               </node>
             </node>
           </node>
@@ -200,10 +200,10 @@
             </node>
             <node concept="2BOciq" id="O4NhJWiiPF" role="3TlMhI">
               <node concept="3ZVu4v" id="O4NhJWiiPE" role="3TlMhI">
-                <ref role="3ZVs_2" node="O4NhJWi5Ct" />
+                <ref role="3ZVs_2" node="O4NhJWi5Ct" resolve="x" />
               </node>
               <node concept="3ZVu4v" id="O4NhJWiiPI" role="3TlMhJ">
-                <ref role="3ZVs_2" node="O4NhJWiiPz" />
+                <ref role="3ZVs_2" node="O4NhJWiiPz" resolve="y" />
               </node>
             </node>
           </node>
@@ -242,10 +242,10 @@
             </node>
             <node concept="2BOciq" id="Ux_D7zzm5n" role="3TlMhI">
               <node concept="3ZVu4v" id="Ux_D7zzm5m" role="3TlMhI">
-                <ref role="3ZVs_2" node="Ux_D7zzm58" />
+                <ref role="3ZVs_2" node="Ux_D7zzm58" resolve="x" />
               </node>
               <node concept="3ZVu4v" id="Ux_D7zzm5q" role="3TlMhJ">
-                <ref role="3ZVs_2" node="Ux_D7zzm5f" />
+                <ref role="3ZVs_2" node="Ux_D7zzm5f" resolve="y" />
               </node>
             </node>
           </node>
@@ -274,7 +274,7 @@
               <property role="2hmy$m" value="110" />
             </node>
             <node concept="3ZVu4v" id="2A9nHKAOHnF" role="3TlMhI">
-              <ref role="3ZVs_2" node="2A9nHKAOHnx" />
+              <ref role="3ZVs_2" node="2A9nHKAOHnx" resolve="x" />
             </node>
           </node>
         </node>
@@ -286,14 +286,14 @@
     <node concept="2eOfOl" id="Ux_D7zzfbA" role="2ePNbc">
       <property role="TrG5h" value="StrangeNumbers" />
       <node concept="2v9HqM" id="Ux_D7zzfbC" role="2eOfOg">
-        <ref role="2v9HqP" node="Ux_D7zzafi" />
+        <ref role="2v9HqP" node="Ux_D7zzafi" resolve="Numbers" />
       </node>
       <node concept="1l1$C7" id="7B3zdKLrzgx" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
     </node>
     <node concept="2xfidK" id="1WKZBvBXE1l" role="2AWWZH">
-      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" />
+      <ref role="2xfifS" to="1ok9:5qSgLsRR2m2" resolve="Desktop Platform" />
     </node>
     <node concept="2Q9Fgs" id="3R$6B6bNgvH" role="2Q9xDr">
       <node concept="2Q9FjX" id="3R$6B6bNgvI" role="2Q9FjI" />

@@ -370,11 +370,11 @@
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEm" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnzs" />
+      <ref role="3GEb4d" node="4b64BCbtnzs" resolve="c_types" />
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEn" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtno9" />
+      <ref role="3GEb4d" node="4b64BCbtno9" resolve="json" />
     </node>
     <node concept="4WHVk" id="4b64BCbtmZQ" role="N3F5h">
       <property role="TrG5h" value="JSONPARSE_MAX_DEPTH" />
@@ -395,7 +395,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPc" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -443,7 +443,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPe" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -473,7 +473,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPf" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -521,7 +521,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPg" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -551,7 +551,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPh" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -581,7 +581,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPi" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -611,7 +611,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPj" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -641,7 +641,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPk" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -671,7 +671,7 @@
           <node concept="1sgJKr" id="4b64BCbtpPl" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmZW" />
+            <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
           </node>
         </node>
       </node>
@@ -773,7 +773,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="4ZOvp" id="4b64BCbwoIA" role="1YbSNA">
-            <ref role="2DPCA0" node="4b64BCbtmZQ" />
+            <ref role="2DPCA0" node="4b64BCbtmZQ" resolve="JSONPARSE_MAX_DEPTH" />
           </node>
         </node>
       </node>
@@ -787,14 +787,14 @@
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEk" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnzs" />
+      <ref role="3GEb4d" node="4b64BCbtnzs" resolve="c_types" />
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEl" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtno9" />
+      <ref role="3GEb4d" node="4b64BCbtno9" resolve="json" />
     </node>
     <node concept="3GEVxB" id="4b64BCbwpEJ" role="2OODSX">
-      <ref role="3GEb4d" node="4b64BCbtmZs" />
+      <ref role="3GEb4d" node="4b64BCbtmZs" resolve="jsonparse" />
     </node>
     <node concept="4WHVk" id="4b64BCbtmQD" role="N3F5h">
       <property role="TrG5h" value="JSONTREE_MAX_DEPTH" />
@@ -899,12 +899,12 @@
           <node concept="1sgJKr" id="4b64BCbtpNJ" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmRi" />
+            <ref role="1sgJKq" node="4b64BCbtmRi" resolve="jsontree_value" />
           </node>
         </node>
         <node concept="2BPB98" id="4b64BCbtmTJ" role="1S8S4V">
           <node concept="39I4aJ" id="4b64BCbtpNK" role="1_9fRO">
-            <ref role="39I4aG" node="4b64BCbtmTR" />
+            <ref role="39I4aG" node="4b64BCbtmTR" resolve="value" />
           </node>
         </node>
       </node>
@@ -955,7 +955,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNL" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -967,7 +967,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNM" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmRi" />
+            <ref role="1sgJKq" node="4b64BCbtmRi" resolve="jsontree_value" />
           </node>
         </node>
       </node>
@@ -1003,7 +1003,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNO" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1024,7 +1024,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNQ" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1056,7 +1056,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNR" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1084,7 +1084,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNT" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1123,7 +1123,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNW" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1155,7 +1155,7 @@
           <node concept="1sgJKr" id="4b64BCbtpNY" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="true" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1187,7 +1187,7 @@
           <node concept="1sgJKr" id="4b64BCbtpO0" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1208,7 +1208,7 @@
           <node concept="1sgJKr" id="4b64BCbtpO1" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmQJ" />
+            <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
           </node>
         </node>
       </node>
@@ -1225,7 +1225,7 @@
         <node concept="1sgJKr" id="4b64BCbtpO2" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtmRi" />
+          <ref role="1sgJKq" node="4b64BCbtmRi" resolve="jsontree_value" />
         </node>
       </node>
     </node>
@@ -1243,11 +1243,11 @@
             <node concept="1sgJKr" id="4b64BCbtpO3" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="4b64BCbtmRi" />
+              <ref role="1sgJKq" node="4b64BCbtmRi" resolve="jsontree_value" />
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpO4" role="1YbSNA">
-            <ref role="2DPCA0" node="4b64BCbtmQD" />
+            <ref role="2DPCA0" node="4b64BCbtmQD" resolve="JSONTREE_MAX_DEPTH" />
           </node>
         </node>
       </node>
@@ -1258,7 +1258,7 @@
           <property role="2c7vTL" value="false" />
           <node concept="26VqpV" id="4b64BCbtpO5" role="2umbIo" />
           <node concept="4ZOvp" id="4b64BCbtpO6" role="1YbSNA">
-            <ref role="2DPCA0" node="4b64BCbtmQD" />
+            <ref role="2DPCA0" node="4b64BCbtmQD" resolve="JSONTREE_MAX_DEPTH" />
           </node>
         </node>
       </node>
@@ -1357,7 +1357,7 @@
             <node concept="1sgJKr" id="4b64BCbtpOd" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="4b64BCbtmQJ" />
+              <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
             </node>
           </node>
         </node>
@@ -1377,7 +1377,7 @@
             <node concept="1sgJKr" id="4b64BCbtpOe" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="4b64BCbtmQJ" />
+              <ref role="1sgJKq" node="4b64BCbtmQJ" resolve="jsontree_context" />
             </node>
           </node>
           <node concept="3wxxNl" id="4b64BCbtmSd" role="pFrBa">
@@ -1386,7 +1386,7 @@
             <node concept="1sgJKr" id="4b64BCbwpLs" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="4b64BCbtmZW" />
+              <ref role="1sgJKq" node="4b64BCbtmZW" resolve="jsonparse_state" />
             </node>
           </node>
         </node>
@@ -1414,7 +1414,7 @@
           <node concept="1sgJKr" id="4b64BCbtpOf" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmRi" />
+            <ref role="1sgJKq" node="4b64BCbtmRi" resolve="jsontree_value" />
           </node>
         </node>
       </node>
@@ -1438,7 +1438,7 @@
           <node concept="1sgJKr" id="4b64BCbtpOi" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmSg" />
+            <ref role="1sgJKq" node="4b64BCbtmSg" resolve="jsontree_pair" />
           </node>
         </node>
       </node>
@@ -1465,7 +1465,7 @@
             <node concept="1sgJKr" id="4b64BCbtpOl" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="1sgJKq" node="4b64BCbtmRi" />
+              <ref role="1sgJKq" node="4b64BCbtmRi" resolve="jsontree_value" />
             </node>
           </node>
         </node>
@@ -1525,7 +1525,7 @@
       <node concept="1AkAi2" id="4b64BCbtnAd" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1AkAi1" node="4b64BCbtnA1" />
+        <ref role="1AkAi1" node="4b64BCbtnA1" resolve="anonymous_enum" />
       </node>
     </node>
     <node concept="BTY7A" id="4b64BCbtnAw" role="N3F5h">
@@ -1545,7 +1545,7 @@
           </node>
           <node concept="2BPB98" id="4b64BCbtnAq" role="3TlMhJ">
             <node concept="39I4aJ" id="4b64BCbtqcu" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtnAx" />
+              <ref role="39I4aG" node="4b64BCbtnAx" resolve="nr" />
             </node>
           </node>
         </node>
@@ -1580,7 +1580,7 @@
         </node>
       </node>
       <node concept="3O_q_g" id="4b64BCbwnwG" role="2_0FLF">
-        <ref role="3O_q_h" node="4b64BCbwno1" />
+        <ref role="3O_q_h" node="4b64BCbwno1" resolve="dummy" />
       </node>
     </node>
     <node concept="BTY7A" id="4b64BCbtnB9" role="N3F5h">
@@ -1601,7 +1601,7 @@
         </node>
       </node>
       <node concept="3O_q_g" id="4b64BCbwnxk" role="2_0FLF">
-        <ref role="3O_q_h" node="4b64BCbwno1" />
+        <ref role="3O_q_h" node="4b64BCbwno1" resolve="dummy" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4b64BCbtuOw" role="N3F5h">
@@ -1877,7 +1877,7 @@
       </node>
       <node concept="2BPB98" id="4b64BCbtn4K" role="2_0FLF">
         <node concept="39I4aJ" id="4b64BCbtpPy" role="1_9fRO">
-          <ref role="39I4aG" node="4b64BCbtn4Q" />
+          <ref role="39I4aG" node="4b64BCbtn4Q" resolve="addr" />
         </node>
       </node>
       <node concept="1z9TsT" id="4b64BCbtn4S" role="lGtFl">
@@ -1903,7 +1903,7 @@
       </node>
       <node concept="2BPB98" id="4b64BCbtn4Y" role="2_0FLF">
         <node concept="39I4aJ" id="4b64BCbtpPz" role="1_9fRO">
-          <ref role="39I4aG" node="4b64BCbtn54" />
+          <ref role="39I4aG" node="4b64BCbtn54" resolve="addr" />
         </node>
       </node>
     </node>
@@ -1928,9 +1928,9 @@
                 <node concept="26Vqpb" id="4b64BCbtpP$" role="2umbIo" />
               </node>
               <node concept="BUAnR" id="4b64BCbtpP_" role="1S8S4V">
-                <ref role="BUAnL" node="4b64BCbtn4P" />
+                <ref role="BUAnL" node="4b64BCbtn4P" resolve="ETS_UNCACHED_ADDR" />
                 <node concept="39I4aJ" id="4b64BCbtpPA" role="BULBh">
-                  <ref role="39I4aG" node="4b64BCbtn5l" />
+                  <ref role="39I4aG" node="4b64BCbtn5l" resolve="addr" />
                 </node>
               </node>
             </node>
@@ -1966,9 +1966,9 @@
                   <node concept="26Vqpb" id="4b64BCbtpPB" role="2umbIo" />
                 </node>
                 <node concept="BUAnR" id="4b64BCbtpPC" role="1S8S4V">
-                  <ref role="BUAnL" node="4b64BCbtn4P" />
+                  <ref role="BUAnL" node="4b64BCbtn4P" resolve="ETS_UNCACHED_ADDR" />
                   <node concept="39I4aJ" id="4b64BCbtpPD" role="BULBh">
-                    <ref role="39I4aG" node="4b64BCbtn5H" />
+                    <ref role="39I4aG" node="4b64BCbtn5H" resolve="addr" />
                   </node>
                 </node>
               </node>
@@ -1979,7 +1979,7 @@
           <node concept="26Vqpb" id="4b64BCbtpPE" role="1S8S4N" />
           <node concept="2BPB98" id="4b64BCbtn5z" role="1S8S4V">
             <node concept="39I4aJ" id="4b64BCbtpPF" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtn5J" />
+              <ref role="39I4aG" node="4b64BCbtn5J" resolve="val" />
             </node>
           </node>
         </node>
@@ -2003,25 +2003,25 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpPG" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn5G" />
+        <ref role="BUAnL" node="4b64BCbtn5G" resolve="WRITE_PERI_REG" />
         <node concept="2BPB98" id="4b64BCbtn5O" role="BULBh">
           <node concept="39I4aJ" id="4b64BCbtpPH" role="1_9fRO">
-            <ref role="39I4aG" node="4b64BCbtn64" />
+            <ref role="39I4aG" node="4b64BCbtn64" resolve="reg" />
           </node>
         </node>
         <node concept="2BPB98" id="4b64BCbtn5Q" role="BULBh">
           <node concept="SSPID" id="4b64BCbtn5Y" role="1_9fRO">
             <node concept="BUAnR" id="4b64BCbtpPI" role="3TlMhI">
-              <ref role="BUAnL" node="4b64BCbtn5k" />
+              <ref role="BUAnL" node="4b64BCbtn5k" resolve="READ_PERI_REG" />
               <node concept="39I4aJ" id="4b64BCbtpPJ" role="BULBh">
-                <ref role="39I4aG" node="4b64BCbtn64" />
+                <ref role="39I4aG" node="4b64BCbtn64" resolve="reg" />
               </node>
             </node>
             <node concept="2BPB98" id="4b64BCbtn5U" role="3TlMhJ">
               <node concept="1Flubw" id="4b64BCbtn5V" role="1_9fRO">
                 <node concept="2BPB98" id="4b64BCbtn5W" role="1_9fRO">
                   <node concept="39I4aJ" id="4b64BCbtpPK" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtn66" />
+                    <ref role="39I4aG" node="4b64BCbtn66" resolve="mask" />
                   </node>
                 </node>
               </node>
@@ -2048,23 +2048,23 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpPL" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn5G" />
+        <ref role="BUAnL" node="4b64BCbtn5G" resolve="WRITE_PERI_REG" />
         <node concept="2BPB98" id="4b64BCbtn6b" role="BULBh">
           <node concept="39I4aJ" id="4b64BCbtpPM" role="1_9fRO">
-            <ref role="39I4aG" node="4b64BCbtn6p" />
+            <ref role="39I4aG" node="4b64BCbtn6p" resolve="reg" />
           </node>
         </node>
         <node concept="2BPB98" id="4b64BCbtn6d" role="BULBh">
           <node concept="EUQZk" id="4b64BCbtn6j" role="1_9fRO">
             <node concept="BUAnR" id="4b64BCbtpPN" role="3TlMhI">
-              <ref role="BUAnL" node="4b64BCbtn5k" />
+              <ref role="BUAnL" node="4b64BCbtn5k" resolve="READ_PERI_REG" />
               <node concept="39I4aJ" id="4b64BCbtpPO" role="BULBh">
-                <ref role="39I4aG" node="4b64BCbtn6p" />
+                <ref role="39I4aG" node="4b64BCbtn6p" resolve="reg" />
               </node>
             </node>
             <node concept="2BPB98" id="4b64BCbtn6h" role="3TlMhJ">
               <node concept="39I4aJ" id="4b64BCbtpPP" role="1_9fRO">
-                <ref role="39I4aG" node="4b64BCbtn6r" />
+                <ref role="39I4aG" node="4b64BCbtn6r" resolve="mask" />
               </node>
             </node>
           </node>
@@ -2100,14 +2100,14 @@
           <node concept="2BPB98" id="4b64BCbtn6v" role="3TlMhI">
             <node concept="3ov31F" id="4b64BCbtn6_" role="1_9fRO">
               <node concept="BUAnR" id="4b64BCbtpPQ" role="3TlMhI">
-                <ref role="BUAnL" node="4b64BCbtn5k" />
+                <ref role="BUAnL" node="4b64BCbtn5k" resolve="READ_PERI_REG" />
                 <node concept="39I4aJ" id="4b64BCbtpPR" role="BULBh">
-                  <ref role="39I4aG" node="4b64BCbtn6Y" />
+                  <ref role="39I4aG" node="4b64BCbtn6Y" resolve="reg" />
                 </node>
               </node>
               <node concept="2BPB98" id="4b64BCbtn6z" role="3TlMhJ">
                 <node concept="39I4aJ" id="4b64BCbtpPS" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtn72" />
+                  <ref role="39I4aG" node="4b64BCbtn72" resolve="lowpos" />
                 </node>
               </node>
             </node>
@@ -2124,12 +2124,12 @@
                       <node concept="2BOcil" id="4b64BCbtpPV" role="3TlMhI">
                         <node concept="2BPB98" id="4b64BCbtpPU" role="3TlMhI">
                           <node concept="39I4aJ" id="4b64BCbtpPT" role="1_9fRO">
-                            <ref role="39I4aG" node="4b64BCbtn70" />
+                            <ref role="39I4aG" node="4b64BCbtn70" resolve="hipos" />
                           </node>
                         </node>
                         <node concept="2BPB98" id="4b64BCbtpPX" role="3TlMhJ">
                           <node concept="39I4aJ" id="4b64BCbtpPW" role="1_9fRO">
-                            <ref role="39I4aG" node="4b64BCbtn72" />
+                            <ref role="39I4aG" node="4b64BCbtn72" resolve="lowpos" />
                           </node>
                         </node>
                       </node>
@@ -2181,19 +2181,19 @@
       </node>
       <node concept="2BPB98" id="4b64BCbtn75" role="2_0FLF">
         <node concept="BUAnR" id="4b64BCbtpPZ" role="1_9fRO">
-          <ref role="BUAnL" node="4b64BCbtn5G" />
+          <ref role="BUAnL" node="4b64BCbtn5G" resolve="WRITE_PERI_REG" />
           <node concept="2BPB98" id="4b64BCbtn78" role="BULBh">
             <node concept="39I4aJ" id="4b64BCbtpQ0" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtn7_" />
+              <ref role="39I4aG" node="4b64BCbtn7_" resolve="reg" />
             </node>
           </node>
           <node concept="EUQZk" id="4b64BCbtn7t" role="BULBh">
             <node concept="2BPB98" id="4b64BCbtn7a" role="3TlMhI">
               <node concept="SSPID" id="4b64BCbtn7m" role="1_9fRO">
                 <node concept="BUAnR" id="4b64BCbtpQ1" role="3TlMhI">
-                  <ref role="BUAnL" node="4b64BCbtn5k" />
+                  <ref role="BUAnL" node="4b64BCbtn5k" resolve="READ_PERI_REG" />
                   <node concept="39I4aJ" id="4b64BCbtpQ2" role="BULBh">
-                    <ref role="39I4aG" node="4b64BCbtn7_" />
+                    <ref role="39I4aG" node="4b64BCbtn7_" resolve="reg" />
                   </node>
                 </node>
                 <node concept="2BPB98" id="4b64BCbtn7e" role="3TlMhJ">
@@ -2202,12 +2202,12 @@
                       <node concept="3oul24" id="4b64BCbtn7l" role="1_9fRO">
                         <node concept="2BPB98" id="4b64BCbtn7h" role="3TlMhI">
                           <node concept="39I4aJ" id="4b64BCbtpQ3" role="1_9fRO">
-                            <ref role="39I4aG" node="4b64BCbtn7B" />
+                            <ref role="39I4aG" node="4b64BCbtn7B" resolve="bit_map" />
                           </node>
                         </node>
                         <node concept="2BPB98" id="4b64BCbtn7j" role="3TlMhJ">
                           <node concept="39I4aJ" id="4b64BCbtpQ4" role="1_9fRO">
-                            <ref role="39I4aG" node="4b64BCbtn7F" />
+                            <ref role="39I4aG" node="4b64BCbtn7F" resolve="shift" />
                           </node>
                         </node>
                       </node>
@@ -2220,12 +2220,12 @@
               <node concept="3oul24" id="4b64BCbtn7s" role="1_9fRO">
                 <node concept="2BPB98" id="4b64BCbtn7o" role="3TlMhI">
                   <node concept="39I4aJ" id="4b64BCbtpQ5" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtn7D" />
+                    <ref role="39I4aG" node="4b64BCbtn7D" resolve="value" />
                   </node>
                 </node>
                 <node concept="2BPB98" id="4b64BCbtn7q" role="3TlMhJ">
                   <node concept="39I4aJ" id="4b64BCbtpQ6" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtn7F" />
+                    <ref role="39I4aG" node="4b64BCbtn7F" resolve="shift" />
                   </node>
                 </node>
               </node>
@@ -2259,14 +2259,14 @@
       <property role="TrG5h" value="APB_CLK_FREQ" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpQ7" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn7M" />
+        <ref role="2DPCA0" node="4b64BCbtn7M" resolve="CPU_CLK_FREQ" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtn7Z" role="N3F5h">
       <property role="TrG5h" value="UART_CLK_FREQ" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpQ8" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn7V" />
+        <ref role="2DPCA0" node="4b64BCbtn7V" resolve="APB_CLK_FREQ" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtn86" role="N3F5h">
@@ -2275,7 +2275,7 @@
       <node concept="2BPB98" id="4b64BCbtn81" role="2DQcEM">
         <node concept="3ov31F" id="4b64BCbtn84" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpQ9" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn7V" />
+            <ref role="2DPCA0" node="4b64BCbtn7V" resolve="APB_CLK_FREQ" />
           </node>
           <node concept="3TlMh9" id="4b64BCbtn83" role="3TlMhJ">
             <property role="2hmy$m" value="8" />
@@ -2342,7 +2342,7 @@
       <node concept="2BPB98" id="4b64BCbtn8A" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtn8D" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpQa" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8f" />
+            <ref role="2DPCA0" node="4b64BCbtn8f" resolve="PERIPHS_DPORT_BASEADDR" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtn8C" role="3TlMhJ">
             <property role="2hmy$m" value="04" />
@@ -2363,12 +2363,12 @@
       <property role="TrG5h" value="TM1_EDGE_INT_ENABLE" />
       <property role="2OOxQR" value="true" />
       <node concept="BUAnR" id="4b64BCbtpQb" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn6o" />
+        <ref role="BUAnL" node="4b64BCbtn6o" resolve="SET_PERI_REG_MASK" />
         <node concept="4ZOvp" id="4b64BCbtpQc" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtn8F" />
+          <ref role="2DPCA0" node="4b64BCbtn8F" resolve="EDGE_INT_ENABLE_REG" />
         </node>
         <node concept="4ZOvp" id="4b64BCbtpQd" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtn4E" />
+          <ref role="2DPCA0" node="4b64BCbtn4E" resolve="BIT1" />
         </node>
       </node>
     </node>
@@ -2376,12 +2376,12 @@
       <property role="TrG5h" value="TM1_EDGE_INT_DISABLE" />
       <property role="2OOxQR" value="true" />
       <node concept="BUAnR" id="4b64BCbtpQe" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn63" />
+        <ref role="BUAnL" node="4b64BCbtn63" resolve="CLEAR_PERI_REG_MASK" />
         <node concept="4ZOvp" id="4b64BCbtpQf" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtn8F" />
+          <ref role="2DPCA0" node="4b64BCbtn8F" resolve="EDGE_INT_ENABLE_REG" />
         </node>
         <node concept="4ZOvp" id="4b64BCbtpQg" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtn4E" />
+          <ref role="2DPCA0" node="4b64BCbtn4E" resolve="BIT1" />
         </node>
       </node>
     </node>
@@ -2396,13 +2396,13 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpQh" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn5k" />
+        <ref role="BUAnL" node="4b64BCbtn5k" resolve="READ_PERI_REG" />
         <node concept="2BOciq" id="4b64BCbtn96" role="BULBh">
           <node concept="4ZOvp" id="4b64BCbtpQi" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8o" />
+            <ref role="2DPCA0" node="4b64BCbtn8o" resolve="PERIPHS_GPIO_BASEADDR" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtpQj" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtn9b" />
+            <ref role="39I4aG" node="4b64BCbtn9b" resolve="reg" />
           </node>
         </node>
       </node>
@@ -2434,17 +2434,17 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpQk" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn5G" />
+        <ref role="BUAnL" node="4b64BCbtn5G" resolve="WRITE_PERI_REG" />
         <node concept="2BOciq" id="4b64BCbtn9n" role="BULBh">
           <node concept="4ZOvp" id="4b64BCbtpQl" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8o" />
+            <ref role="2DPCA0" node="4b64BCbtn8o" resolve="PERIPHS_GPIO_BASEADDR" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtpQm" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtn9u" />
+            <ref role="39I4aG" node="4b64BCbtn9u" resolve="reg" />
           </node>
         </node>
         <node concept="39I4aJ" id="4b64BCbtpQn" role="BULBh">
-          <ref role="39I4aG" node="4b64BCbtn9w" />
+          <ref role="39I4aG" node="4b64BCbtn9w" resolve="val" />
         </node>
       </node>
     </node>
@@ -2537,7 +2537,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="2BOciq" id="4b64BCbtnal" role="2DQcEM">
         <node concept="4ZOvp" id="4b64BCbtpQo" role="3TlMhI">
-          <ref role="2DPCA0" node="4b64BCbtn8o" />
+          <ref role="2DPCA0" node="4b64BCbtn8o" resolve="PERIPHS_GPIO_BASEADDR" />
         </node>
         <node concept="3Hbq_t" id="4b64BCbtnak" role="3TlMhJ">
           <property role="2hmy$m" value="6c" />
@@ -2548,7 +2548,7 @@
       <property role="TrG5h" value="RTC_CALIB_START" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpQp" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn2H" />
+        <ref role="2DPCA0" node="4b64BCbtn2H" resolve="BIT31" />
       </node>
       <node concept="1z9TsT" id="4b64BCbtnas" role="lGtFl">
         <node concept="OjmMv" id="4b64BCbtnat" role="1w35rA">
@@ -2581,7 +2581,7 @@
       <property role="2OOxQR" value="true" />
       <node concept="2BOciq" id="4b64BCbtnaH" role="2DQcEM">
         <node concept="4ZOvp" id="4b64BCbtpQq" role="3TlMhI">
-          <ref role="2DPCA0" node="4b64BCbtn8o" />
+          <ref role="2DPCA0" node="4b64BCbtn8o" resolve="PERIPHS_GPIO_BASEADDR" />
         </node>
         <node concept="3Hbq_t" id="4b64BCbtnaG" role="3TlMhJ">
           <property role="2hmy$m" value="70" />
@@ -2638,11 +2638,11 @@
       <node concept="2BPB98" id="4b64BCbtnb6" role="2_0FLF">
         <node concept="2BOciq" id="4b64BCbtnba" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpQr" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnb4" />
+            <ref role="2DPCA0" node="4b64BCbtnb4" resolve="GPIO_ID_PIN0" />
           </node>
           <node concept="2BPB98" id="4b64BCbtnb8" role="3TlMhJ">
             <node concept="39I4aJ" id="4b64BCbtpQs" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtnbf" />
+              <ref role="39I4aG" node="4b64BCbtnbf" resolve="n" />
             </node>
           </node>
         </node>
@@ -2652,7 +2652,7 @@
       <property role="TrG5h" value="GPIO_LAST_REGISTER_ID" />
       <property role="2OOxQR" value="true" />
       <node concept="BUAnR" id="4b64BCbtpQt" role="2DQcEM">
-        <ref role="BUAnL" node="4b64BCbtnbe" />
+        <ref role="BUAnL" node="4b64BCbtnbe" resolve="GPIO_ID_PIN" />
         <node concept="3TlMh9" id="4b64BCbtnbk" role="BULBh">
           <property role="2hmy$m" value="15" />
         </node>
@@ -2709,16 +2709,16 @@
             <node concept="SSPID" id="4b64BCbtpQw" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtpQv" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQu" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnbU" />
+                  <ref role="39I4aG" node="4b64BCbtnbU" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQx" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtnbE" />
+                <ref role="2DPCA0" node="4b64BCbtnbE" resolve="GPIO_PIN_CONFIG_MASK" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQy" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtnbA" />
+            <ref role="2DPCA0" node="4b64BCbtnbA" resolve="GPIO_PIN_CONFIG_LSB" />
           </node>
         </node>
       </node>
@@ -2739,16 +2739,16 @@
             <node concept="3oul24" id="4b64BCbtnc2" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtnbZ" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQz" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnc9" />
+                  <ref role="39I4aG" node="4b64BCbtnc9" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQ$" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtnbA" />
+                <ref role="2DPCA0" node="4b64BCbtnbA" resolve="GPIO_PIN_CONFIG_LSB" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQ_" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtnbE" />
+            <ref role="2DPCA0" node="4b64BCbtnbE" resolve="GPIO_PIN_CONFIG_MASK" />
           </node>
         </node>
       </node>
@@ -2766,7 +2766,7 @@
       <node concept="2BPB98" id="4b64BCbtncg" role="2DQcEM">
         <node concept="1Flubw" id="4b64BCbtnch" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpQA" role="1_9fRO">
-            <ref role="2DPCA0" node="4b64BCbtnce" />
+            <ref role="2DPCA0" node="4b64BCbtnce" resolve="GPIO_WAKEUP_ENABLE" />
           </node>
         </node>
       </node>
@@ -2808,16 +2808,16 @@
             <node concept="SSPID" id="4b64BCbtpQD" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtpQC" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQB" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtncK" />
+                  <ref role="39I4aG" node="4b64BCbtncK" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQE" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtncw" />
+                <ref role="2DPCA0" node="4b64BCbtncw" resolve="GPIO_PIN_WAKEUP_ENABLE_MASK" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQF" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtncs" />
+            <ref role="2DPCA0" node="4b64BCbtncs" resolve="GPIO_PIN_WAKEUP_ENABLE_LSB" />
           </node>
         </node>
       </node>
@@ -2838,16 +2838,16 @@
             <node concept="3oul24" id="4b64BCbtncS" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtncP" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQG" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtncZ" />
+                  <ref role="39I4aG" node="4b64BCbtncZ" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQH" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtncs" />
+                <ref role="2DPCA0" node="4b64BCbtncs" resolve="GPIO_PIN_WAKEUP_ENABLE_LSB" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQI" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtncw" />
+            <ref role="2DPCA0" node="4b64BCbtncw" resolve="GPIO_PIN_WAKEUP_ENABLE_MASK" />
           </node>
         </node>
       </node>
@@ -2889,16 +2889,16 @@
             <node concept="SSPID" id="4b64BCbtpQL" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtpQK" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQJ" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnds" />
+                  <ref role="39I4aG" node="4b64BCbtnds" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQM" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtnd4" />
+                <ref role="2DPCA0" node="4b64BCbtnd4" resolve="GPIO_PIN_INT_TYPE_MASK" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQN" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtndc" />
+            <ref role="2DPCA0" node="4b64BCbtndc" resolve="GPIO_PIN_INT_TYPE_LSB" />
           </node>
         </node>
       </node>
@@ -2919,16 +2919,16 @@
             <node concept="3oul24" id="4b64BCbtnd$" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtndx" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQO" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtndF" />
+                  <ref role="39I4aG" node="4b64BCbtndF" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQP" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtndc" />
+                <ref role="2DPCA0" node="4b64BCbtndc" resolve="GPIO_PIN_INT_TYPE_LSB" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQQ" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtnd4" />
+            <ref role="2DPCA0" node="4b64BCbtnd4" resolve="GPIO_PIN_INT_TYPE_MASK" />
           </node>
         </node>
       </node>
@@ -2946,7 +2946,7 @@
       <node concept="2BPB98" id="4b64BCbtndM" role="2DQcEM">
         <node concept="1Flubw" id="4b64BCbtndN" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpQR" role="1_9fRO">
-            <ref role="2DPCA0" node="4b64BCbtndK" />
+            <ref role="2DPCA0" node="4b64BCbtndK" resolve="GPIO_PAD_DRIVER_ENABLE" />
           </node>
         </node>
       </node>
@@ -2988,16 +2988,16 @@
             <node concept="SSPID" id="4b64BCbtpQU" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtpQT" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQS" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnei" />
+                  <ref role="39I4aG" node="4b64BCbtnei" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQV" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtne2" />
+                <ref role="2DPCA0" node="4b64BCbtne2" resolve="GPIO_PIN_PAD_DRIVER_MASK" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQW" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtndY" />
+            <ref role="2DPCA0" node="4b64BCbtndY" resolve="GPIO_PIN_PAD_DRIVER_LSB" />
           </node>
         </node>
       </node>
@@ -3018,16 +3018,16 @@
             <node concept="3oul24" id="4b64BCbtneq" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtnen" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpQX" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnex" />
+                  <ref role="39I4aG" node="4b64BCbtnex" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpQY" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtndY" />
+                <ref role="2DPCA0" node="4b64BCbtndY" resolve="GPIO_PIN_PAD_DRIVER_LSB" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpQZ" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtne2" />
+            <ref role="2DPCA0" node="4b64BCbtne2" resolve="GPIO_PIN_PAD_DRIVER_MASK" />
           </node>
         </node>
       </node>
@@ -3045,7 +3045,7 @@
       <node concept="2BPB98" id="4b64BCbtneC" role="2DQcEM">
         <node concept="1Flubw" id="4b64BCbtneD" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpR0" role="1_9fRO">
-            <ref role="2DPCA0" node="4b64BCbtneA" />
+            <ref role="2DPCA0" node="4b64BCbtneA" resolve="GPIO_AS_PIN_SOURCE" />
           </node>
         </node>
       </node>
@@ -3087,16 +3087,16 @@
             <node concept="SSPID" id="4b64BCbtpR3" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtpR2" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpR1" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnf8" />
+                  <ref role="39I4aG" node="4b64BCbtnf8" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpR4" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtneS" />
+                <ref role="2DPCA0" node="4b64BCbtneS" resolve="GPIO_PIN_SOURCE_MASK" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpR5" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtneO" />
+            <ref role="2DPCA0" node="4b64BCbtneO" resolve="GPIO_PIN_SOURCE_LSB" />
           </node>
         </node>
       </node>
@@ -3117,16 +3117,16 @@
             <node concept="3oul24" id="4b64BCbtnfg" role="1_9fRO">
               <node concept="2BPB98" id="4b64BCbtnfd" role="3TlMhI">
                 <node concept="39I4aJ" id="4b64BCbtpR6" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnfn" />
+                  <ref role="39I4aG" node="4b64BCbtnfn" resolve="x" />
                 </node>
               </node>
               <node concept="4ZOvp" id="4b64BCbtpR7" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtneO" />
+                <ref role="2DPCA0" node="4b64BCbtneO" resolve="GPIO_PIN_SOURCE_LSB" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbtpR8" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtneS" />
+            <ref role="2DPCA0" node="4b64BCbtneS" resolve="GPIO_PIN_SOURCE_MASK" />
           </node>
         </node>
       </node>
@@ -3142,13 +3142,13 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpR9" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn5k" />
+        <ref role="BUAnL" node="4b64BCbtn5k" resolve="READ_PERI_REG" />
         <node concept="2BOciq" id="4b64BCbtnfu" role="BULBh">
           <node concept="4ZOvp" id="4b64BCbtpRa" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8s" />
+            <ref role="2DPCA0" node="4b64BCbtn8s" resolve="PERIPHS_TIMER_BASEDDR" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtpRb" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtnfz" />
+            <ref role="39I4aG" node="4b64BCbtnfz" resolve="addr" />
           </node>
         </node>
       </node>
@@ -3180,17 +3180,17 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpRc" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn5G" />
+        <ref role="BUAnL" node="4b64BCbtn5G" resolve="WRITE_PERI_REG" />
         <node concept="2BOciq" id="4b64BCbtnfJ" role="BULBh">
           <node concept="4ZOvp" id="4b64BCbtpRd" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8s" />
+            <ref role="2DPCA0" node="4b64BCbtn8s" resolve="PERIPHS_TIMER_BASEDDR" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtpRe" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtnfQ" />
+            <ref role="39I4aG" node="4b64BCbtnfQ" resolve="addr" />
           </node>
         </node>
         <node concept="39I4aJ" id="4b64BCbtpRf" role="BULBh">
-          <ref role="39I4aG" node="4b64BCbtnfS" />
+          <ref role="39I4aG" node="4b64BCbtnfS" resolve="val" />
         </node>
       </node>
     </node>
@@ -3212,17 +3212,17 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpRg" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn63" />
+        <ref role="BUAnL" node="4b64BCbtn63" resolve="CLEAR_PERI_REG_MASK" />
         <node concept="2BOciq" id="4b64BCbtnfZ" role="BULBh">
           <node concept="4ZOvp" id="4b64BCbtpRh" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8s" />
+            <ref role="2DPCA0" node="4b64BCbtn8s" resolve="PERIPHS_TIMER_BASEDDR" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtpRi" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtng6" />
+            <ref role="39I4aG" node="4b64BCbtng6" resolve="reg" />
           </node>
         </node>
         <node concept="39I4aJ" id="4b64BCbtpRj" role="BULBh">
-          <ref role="39I4aG" node="4b64BCbtng8" />
+          <ref role="39I4aG" node="4b64BCbtng8" resolve="mask" />
         </node>
       </node>
     </node>
@@ -3230,9 +3230,9 @@
       <property role="TrG5h" value="NOW" />
       <property role="2OOxQR" value="true" />
       <node concept="BUAnR" id="4b64BCbtpRk" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtnfy" />
+        <ref role="BUAnL" node="4b64BCbtnfy" resolve="RTC_REG_READ" />
         <node concept="4ZOvp" id="4b64BCbtpRl" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtngW" />
+          <ref role="2DPCA0" node="4b64BCbtngW" resolve="FRC2_COUNT_ADDRESS" />
         </node>
       </node>
       <node concept="1z9TsT" id="4b64BCbtngh" role="lGtFl">
@@ -3327,7 +3327,7 @@
       <property role="TrG5h" value="REG_RTC_BASE" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRm" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn8w" />
+        <ref role="2DPCA0" node="4b64BCbtn8w" resolve="PERIPHS_RTC_BASEADDR" />
       </node>
       <node concept="1z9TsT" id="4b64BCbtnh6" role="lGtFl">
         <node concept="OjmMv" id="4b64BCbtnh7" role="1w35rA">
@@ -3345,7 +3345,7 @@
       <node concept="2BPB98" id="4b64BCbtnhc" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnhf" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRn" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnh5" />
+            <ref role="2DPCA0" node="4b64BCbtnh5" resolve="REG_RTC_BASE" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnhe" role="3TlMhJ">
             <property role="2hmy$m" value="068" />
@@ -3359,7 +3359,7 @@
       <node concept="2BPB98" id="4b64BCbtnhj" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnhm" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRo" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnh5" />
+            <ref role="2DPCA0" node="4b64BCbtnh5" resolve="REG_RTC_BASE" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnhl" role="3TlMhJ">
             <property role="2hmy$m" value="074" />
@@ -3373,7 +3373,7 @@
       <node concept="2BPB98" id="4b64BCbtnhq" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnht" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRp" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnh5" />
+            <ref role="2DPCA0" node="4b64BCbtnh5" resolve="REG_RTC_BASE" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnhs" role="3TlMhJ">
             <property role="2hmy$m" value="08C" />
@@ -3387,7 +3387,7 @@
       <node concept="2BPB98" id="4b64BCbtnhx" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnh$" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRq" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnh5" />
+            <ref role="2DPCA0" node="4b64BCbtnh5" resolve="REG_RTC_BASE" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnhz" role="3TlMhJ">
             <property role="2hmy$m" value="090" />
@@ -3401,7 +3401,7 @@
       <node concept="2BPB98" id="4b64BCbtnhC" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnhF" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRr" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnh5" />
+            <ref role="2DPCA0" node="4b64BCbtnh5" resolve="REG_RTC_BASE" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnhE" role="3TlMhJ">
             <property role="2hmy$m" value="0A0" />
@@ -3436,42 +3436,42 @@
       <property role="TrG5h" value="PERIPHS_IO_MUX_PULLUP" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRs" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4i" />
+        <ref role="2DPCA0" node="4b64BCbtn4i" resolve="BIT7" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtni2" role="N3F5h">
       <property role="TrG5h" value="PERIPHS_IO_MUX_PULLUP2" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRt" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4m" />
+        <ref role="2DPCA0" node="4b64BCbtn4m" resolve="BIT6" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtni6" role="N3F5h">
       <property role="TrG5h" value="PERIPHS_IO_MUX_SLEEP_PULLUP" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRu" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4y" />
+        <ref role="2DPCA0" node="4b64BCbtn4y" resolve="BIT3" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtnia" role="N3F5h">
       <property role="TrG5h" value="PERIPHS_IO_MUX_SLEEP_PULLUP2" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRv" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4A" />
+        <ref role="2DPCA0" node="4b64BCbtn4A" resolve="BIT2" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtnie" role="N3F5h">
       <property role="TrG5h" value="PERIPHS_IO_MUX_SLEEP_OE" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRw" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4E" />
+        <ref role="2DPCA0" node="4b64BCbtn4E" resolve="BIT1" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtnii" role="N3F5h">
       <property role="TrG5h" value="PERIPHS_IO_MUX_OE" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRx" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4I" />
+        <ref role="2DPCA0" node="4b64BCbtn4I" resolve="BIT0" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtnip" role="N3F5h">
@@ -3480,7 +3480,7 @@
       <node concept="2BPB98" id="4b64BCbtnik" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnin" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRy" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnim" role="3TlMhJ">
             <property role="2hmy$m" value="00" />
@@ -3492,14 +3492,14 @@
       <property role="TrG5h" value="SPI0_CLK_EQU_SYS_CLK" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpRz" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4e" />
+        <ref role="2DPCA0" node="4b64BCbtn4e" resolve="BIT8" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtnix" role="N3F5h">
       <property role="TrG5h" value="SPI1_CLK_EQU_SYS_CLK" />
       <property role="2OOxQR" value="true" />
       <node concept="4ZOvp" id="4b64BCbtpR$" role="2DQcEM">
-        <ref role="2DPCA0" node="4b64BCbtn4a" />
+        <ref role="2DPCA0" node="4b64BCbtn4a" resolve="BIT9" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtniC" role="N3F5h">
@@ -3508,7 +3508,7 @@
       <node concept="2BPB98" id="4b64BCbtniz" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtniA" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpR_" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtni_" role="3TlMhJ">
             <property role="2hmy$m" value="04" />
@@ -3529,7 +3529,7 @@
       <node concept="2BPB98" id="4b64BCbtniI" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtniL" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRA" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtniK" role="3TlMhJ">
             <property role="2hmy$m" value="08" />
@@ -3550,7 +3550,7 @@
       <node concept="2BPB98" id="4b64BCbtniT" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtniW" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRB" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtniV" role="3TlMhJ">
             <property role="2hmy$m" value="0C" />
@@ -3571,7 +3571,7 @@
       <node concept="2BPB98" id="4b64BCbtnj4" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnj7" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRC" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnj6" role="3TlMhJ">
             <property role="2hmy$m" value="10" />
@@ -3599,7 +3599,7 @@
       <node concept="2BPB98" id="4b64BCbtnjj" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnjm" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRD" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnjl" role="3TlMhJ">
             <property role="2hmy$m" value="14" />
@@ -3620,7 +3620,7 @@
       <node concept="2BPB98" id="4b64BCbtnju" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnjx" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRE" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnjw" role="3TlMhJ">
             <property role="2hmy$m" value="18" />
@@ -3648,7 +3648,7 @@
       <node concept="2BPB98" id="4b64BCbtnjH" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnjK" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRF" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnjJ" role="3TlMhJ">
             <property role="2hmy$m" value="1c" />
@@ -3676,7 +3676,7 @@
       <node concept="2BPB98" id="4b64BCbtnjW" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnjZ" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRG" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnjY" role="3TlMhJ">
             <property role="2hmy$m" value="20" />
@@ -3711,7 +3711,7 @@
       <node concept="2BPB98" id="4b64BCbtnkf" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnki" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRH" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnkh" role="3TlMhJ">
             <property role="2hmy$m" value="24" />
@@ -3753,7 +3753,7 @@
       <node concept="2BPB98" id="4b64BCbtnkA" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnkD" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRI" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnkC" role="3TlMhJ">
             <property role="2hmy$m" value="28" />
@@ -3788,7 +3788,7 @@
       <node concept="2BPB98" id="4b64BCbtnkT" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnkW" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRJ" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnkV" role="3TlMhJ">
             <property role="2hmy$m" value="2c" />
@@ -3823,7 +3823,7 @@
       <node concept="2BPB98" id="4b64BCbtnlc" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnlf" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRK" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnle" role="3TlMhJ">
             <property role="2hmy$m" value="30" />
@@ -3851,7 +3851,7 @@
       <node concept="2BPB98" id="4b64BCbtnlr" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnlu" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRL" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnlt" role="3TlMhJ">
             <property role="2hmy$m" value="34" />
@@ -3872,7 +3872,7 @@
       <node concept="2BPB98" id="4b64BCbtnlA" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnlD" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRM" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnlC" role="3TlMhJ">
             <property role="2hmy$m" value="38" />
@@ -3907,7 +3907,7 @@
       <node concept="2BPB98" id="4b64BCbtnlT" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnlW" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRN" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnlV" role="3TlMhJ">
             <property role="2hmy$m" value="3C" />
@@ -3928,7 +3928,7 @@
       <node concept="2BPB98" id="4b64BCbtnm4" role="2DQcEM">
         <node concept="2BOciq" id="4b64BCbtnm7" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbtpRO" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtn8$" />
+            <ref role="2DPCA0" node="4b64BCbtn8$" resolve="PERIPHS_IO_MUX" />
           </node>
           <node concept="3Hbq_t" id="4b64BCbtnm6" role="3TlMhJ">
             <property role="2hmy$m" value="40" />
@@ -3954,12 +3954,12 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpRP" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn63" />
+        <ref role="BUAnL" node="4b64BCbtn63" resolve="CLEAR_PERI_REG_MASK" />
         <node concept="39I4aJ" id="4b64BCbtpRQ" role="BULBh">
-          <ref role="39I4aG" node="4b64BCbtnmn" />
+          <ref role="39I4aG" node="4b64BCbtnmn" resolve="PIN_NAME" />
         </node>
         <node concept="4ZOvp" id="4b64BCbtpRR" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtnhY" />
+          <ref role="2DPCA0" node="4b64BCbtnhY" resolve="PERIPHS_IO_MUX_PULLUP" />
         </node>
       </node>
     </node>
@@ -3974,12 +3974,12 @@
         </node>
       </node>
       <node concept="BUAnR" id="4b64BCbtpRS" role="2_0FLF">
-        <ref role="BUAnL" node="4b64BCbtn6o" />
+        <ref role="BUAnL" node="4b64BCbtn6o" resolve="SET_PERI_REG_MASK" />
         <node concept="39I4aJ" id="4b64BCbtpRT" role="BULBh">
-          <ref role="39I4aG" node="4b64BCbtnmy" />
+          <ref role="39I4aG" node="4b64BCbtnmy" resolve="PIN_NAME" />
         </node>
         <node concept="4ZOvp" id="4b64BCbtpRU" role="BULBh">
-          <ref role="2DPCA0" node="4b64BCbtnhY" />
+          <ref role="2DPCA0" node="4b64BCbtnhY" resolve="PERIPHS_IO_MUX_PULLUP" />
         </node>
       </node>
     </node>
@@ -4010,7 +4010,7 @@
   <node concept="rcWEw" id="4b64BCbuKGs">
     <property role="TrG5h" value="espconn" />
     <node concept="3GEVxB" id="4b64BCbuTfR" role="2OODSX">
-      <ref role="3GEb4d" node="4b64BCbtnu9" />
+      <ref role="3GEb4d" node="4b64BCbtnu9" resolve="ip_addr" />
     </node>
     <node concept="rcWE1" id="4b64BCbuKGt" role="rcWEr">
       <property role="rcWEL" value="&quot;espconn.h&quot;" />
@@ -4361,7 +4361,7 @@
         <node concept="rcJHQ" id="4b64BCbuLUU" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKGP" />
+          <ref role="rcJHT" node="4b64BCbuKGP" resolve="espconn_connect_callback" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKJX" role="HszBJ">
@@ -4369,7 +4369,7 @@
         <node concept="rcJHQ" id="4b64BCbuLUV" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKH1" />
+          <ref role="rcJHT" node="4b64BCbuKH1" resolve="espconn_reconnect_callback" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKK1" role="HszBJ">
@@ -4377,7 +4377,7 @@
         <node concept="rcJHQ" id="4b64BCbuLUW" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKGP" />
+          <ref role="rcJHT" node="4b64BCbuKGP" resolve="espconn_connect_callback" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKK5" role="HszBJ">
@@ -4385,7 +4385,7 @@
         <node concept="rcJHQ" id="4b64BCbuLUX" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKGP" />
+          <ref role="rcJHT" node="4b64BCbuKGP" resolve="espconn_connect_callback" />
         </node>
       </node>
     </node>
@@ -4395,7 +4395,7 @@
       <node concept="1sgJKr" id="4b64BCbuKK6" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="4b64BCbuKJx" />
+        <ref role="1sgJKq" node="4b64BCbuKJx" resolve="_esp_tcp" />
       </node>
     </node>
     <node concept="1sgJKc" id="4b64BCbuKKc" role="N3F5h">
@@ -4450,7 +4450,7 @@
       <node concept="1sgJKr" id="4b64BCbuKKx" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="4b64BCbuKKc" />
+        <ref role="1sgJKq" node="4b64BCbuKKc" resolve="_esp_udp" />
       </node>
     </node>
     <node concept="1sgJKc" id="4b64BCbuKKB" role="N3F5h">
@@ -4461,7 +4461,7 @@
         <node concept="1AkAi2" id="4b64BCbuLV0" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="4b64BCbuKJg" />
+          <ref role="1AkAi1" node="4b64BCbuKJg" resolve="espconn_state" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKKK" role="HszBJ">
@@ -4492,7 +4492,7 @@
       <node concept="1sgJKr" id="4b64BCbuKKR" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="4b64BCbuKKB" />
+        <ref role="1sgJKq" node="4b64BCbuKKB" resolve="_remot_info" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbuKLa" role="N3F5h">
@@ -4559,7 +4559,7 @@
           <node concept="1sgJKr" id="4b64BCbuLV6" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4589,7 +4589,7 @@
           <node concept="1sgJKr" id="4b64BCbuLV8" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4619,7 +4619,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVa" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4649,7 +4649,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVc" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4679,7 +4679,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVe" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4752,7 +4752,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVk" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4782,7 +4782,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVm" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4819,7 +4819,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVp" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4863,7 +4863,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVt" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4878,7 +4878,7 @@
             <node concept="rcJHQ" id="4b64BCbuLVu" role="2umbIo">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
-              <ref role="rcJHT" node="4b64BCbuKKV" />
+              <ref role="rcJHT" node="4b64BCbuKKV" resolve="remot_info" />
             </node>
           </node>
         </node>
@@ -4916,7 +4916,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVx" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4928,7 +4928,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVy" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKMJ" />
+            <ref role="1sgJKq" node="4b64BCbuKMJ" resolve="espconn_packet" />
           </node>
         </node>
       </node>
@@ -4958,7 +4958,7 @@
           <node concept="1sgJKr" id="4b64BCbuLV$" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -4967,7 +4967,7 @@
         <node concept="rcJHQ" id="4b64BCbuLV_" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKLk" />
+          <ref role="rcJHT" node="4b64BCbuKLk" resolve="espconn_sent_callback" />
         </node>
       </node>
       <node concept="26Vqqz" id="4b64BCbuLVA" role="2C2TGm">
@@ -4996,7 +4996,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVB" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5005,7 +5005,7 @@
         <node concept="rcJHQ" id="4b64BCbuLVC" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKGP" />
+          <ref role="rcJHT" node="4b64BCbuKGP" resolve="espconn_connect_callback" />
         </node>
       </node>
       <node concept="26Vqqz" id="4b64BCbuLVD" role="2C2TGm">
@@ -5034,7 +5034,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVE" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5082,7 +5082,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVI" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5130,7 +5130,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVM" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5139,7 +5139,7 @@
         <node concept="rcJHQ" id="4b64BCbuLVN" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKGP" />
+          <ref role="rcJHT" node="4b64BCbuKGP" resolve="espconn_connect_callback" />
         </node>
       </node>
       <node concept="26Vqqz" id="4b64BCbuLVO" role="2C2TGm">
@@ -5168,7 +5168,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVP" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5177,7 +5177,7 @@
         <node concept="rcJHQ" id="4b64BCbuLVQ" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKLa" />
+          <ref role="rcJHT" node="4b64BCbuKLa" resolve="espconn_recv_callback" />
         </node>
       </node>
       <node concept="26Vqqz" id="4b64BCbuLVR" role="2C2TGm">
@@ -5206,7 +5206,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVS" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5215,7 +5215,7 @@
         <node concept="rcJHQ" id="4b64BCbuLVT" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKH1" />
+          <ref role="rcJHT" node="4b64BCbuKH1" resolve="espconn_reconnect_callback" />
         </node>
       </node>
       <node concept="26Vqqz" id="4b64BCbuLVU" role="2C2TGm">
@@ -5244,7 +5244,7 @@
           <node concept="1sgJKr" id="4b64BCbuLVV" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5253,7 +5253,7 @@
         <node concept="rcJHQ" id="4b64BCbuLVW" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKGP" />
+          <ref role="rcJHT" node="4b64BCbuKGP" resolve="espconn_connect_callback" />
         </node>
       </node>
       <node concept="26Vqqz" id="4b64BCbuLVX" role="2C2TGm">
@@ -5300,7 +5300,7 @@
           <node concept="1sgJKr" id="4b64BCbuLW0" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5337,7 +5337,7 @@
           <node concept="1sgJKr" id="4b64BCbuLW3" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5374,7 +5374,7 @@
           <node concept="1sgJKr" id="4b64BCbuLW6" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5422,7 +5422,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWa" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5482,7 +5482,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXf" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
         <node concept="3wxxNl" id="4b64BCbuKTE" role="pFrBa">
@@ -5507,7 +5507,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWg" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5530,7 +5530,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXg" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -5539,13 +5539,13 @@
         <node concept="rcJHQ" id="4b64BCbuLWh" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKTF" />
+          <ref role="rcJHT" node="4b64BCbuKTF" resolve="dns_found_callback" />
         </node>
       </node>
       <node concept="rcJHQ" id="4b64BCbuLWi" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbuKG$" />
+        <ref role="rcJHT" node="4b64BCbuKG$" resolve="err_t" />
       </node>
       <node concept="1z9TsT" id="4b64BCbuKTW" role="lGtFl">
         <node concept="OjmMv" id="4b64BCbuKTX" role="1w35rA">
@@ -5569,7 +5569,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWj" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5599,7 +5599,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWl" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5629,7 +5629,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWn" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5677,7 +5677,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWr" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5839,7 +5839,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWD" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5869,7 +5869,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXh" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -5881,7 +5881,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXi" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -5911,7 +5911,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXj" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -5923,7 +5923,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXk" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -5953,7 +5953,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWH" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -5983,7 +5983,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWJ" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -6013,7 +6013,7 @@
           <node concept="1sgJKr" id="4b64BCbuLWL" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKNe" />
+            <ref role="1sgJKq" node="4b64BCbuKNe" resolve="mdns_info" />
           </node>
         </node>
       </node>
@@ -6242,7 +6242,7 @@
           <node concept="rcJHQ" id="4b64BCbuTXl" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -6315,7 +6315,7 @@
         <node concept="1AkAi2" id="4b64BCbuLX2" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="4b64BCbuKJ4" />
+          <ref role="1AkAi1" node="4b64BCbuKJ4" resolve="espconn_type" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKLw" role="HszBJ">
@@ -6323,7 +6323,7 @@
         <node concept="1AkAi2" id="4b64BCbuLX3" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1AkAi1" node="4b64BCbuKJg" />
+          <ref role="1AkAi1" node="4b64BCbuKJg" resolve="espconn_state" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKLK" role="HszBJ">
@@ -6331,7 +6331,7 @@
         <node concept="1dpZdL" id="4b64BCbuKLJ" role="2C2TGm">
           <property role="2c7vTL" value="false" />
           <property role="2caQfQ" value="false" />
-          <ref role="1dpZdN" node="4b64BCbuKLH" />
+          <ref role="1dpZdN" node="4b64BCbuKLH" resolve="espconn_3" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKLO" role="HszBJ">
@@ -6339,7 +6339,7 @@
         <node concept="rcJHQ" id="4b64BCbuLX4" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKLa" />
+          <ref role="rcJHT" node="4b64BCbuKLa" resolve="espconn_recv_callback" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKLS" role="HszBJ">
@@ -6347,7 +6347,7 @@
         <node concept="rcJHQ" id="4b64BCbuLX5" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuKLk" />
+          <ref role="rcJHT" node="4b64BCbuKLk" resolve="espconn_sent_callback" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbuKLW" role="HszBJ">
@@ -6380,7 +6380,7 @@
           <node concept="rcJHQ" id="4b64BCbuLX8" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbuKKa" />
+            <ref role="rcJHT" node="4b64BCbuKKa" resolve="esp_tcp" />
           </node>
         </node>
       </node>
@@ -6392,7 +6392,7 @@
           <node concept="rcJHQ" id="4b64BCbuLX9" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbuKK_" />
+            <ref role="rcJHT" node="4b64BCbuKK_" resolve="esp_udp" />
           </node>
         </node>
       </node>
@@ -6669,7 +6669,7 @@
         <node concept="rcJHQ" id="4b64BCbuOd8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuNes" />
+          <ref role="rcJHT" node="4b64BCbuNes" resolve="esp_now_send_cb_t" />
         </node>
       </node>
       <node concept="3TlMh2" id="4b64BCbuNeF" role="2C2TGm">
@@ -6695,7 +6695,7 @@
         <node concept="rcJHQ" id="4b64BCbuOda" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuNeg" />
+          <ref role="rcJHT" node="4b64BCbuNeg" resolve="esp_now_recv_cb_t" />
         </node>
       </node>
       <node concept="3TlMh2" id="4b64BCbuNeR" role="2C2TGm">
@@ -7146,11 +7146,11 @@
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEp" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnzs" />
+      <ref role="3GEb4d" node="4b64BCbtnzs" resolve="c_types" />
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEq" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtn2B" />
+      <ref role="3GEb4d" node="4b64BCbtn2B" resolve="eagle_soc" />
     </node>
     <node concept="rcJHK" id="4b64BCbtnp_" role="N3F5h">
       <property role="TrG5h" value="ETSSignal" />
@@ -7168,7 +7168,7 @@
       <node concept="1sgJKr" id="4b64BCbtpWw" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="4b64BCbtnpO" />
+        <ref role="1sgJKq" node="4b64BCbtnpO" resolve="ETSEventTag" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbtnq7" role="N3F5h">
@@ -7187,7 +7187,7 @@
           <node concept="rcJHQ" id="4b64BCbtpWy" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnpM" />
+            <ref role="rcJHT" node="4b64BCbtnpM" resolve="ETSEvent" />
           </node>
         </node>
       </node>
@@ -7216,7 +7216,7 @@
           <node concept="1sgJKr" id="4b64BCbtpW_" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtnqo" />
+            <ref role="1sgJKq" node="4b64BCbtnqo" resolve="_ETSTIMER_" />
           </node>
         </node>
       </node>
@@ -7236,7 +7236,7 @@
           <node concept="rcJHQ" id="4b64BCbtpWC" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnqm" />
+            <ref role="rcJHT" node="4b64BCbtnqm" resolve="ETSTimerFunc" />
           </node>
         </node>
       </node>
@@ -7258,7 +7258,7 @@
       <node concept="1sgJKr" id="4b64BCbtnqL" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="4b64BCbtnqo" />
+        <ref role="1sgJKq" node="4b64BCbtnqo" resolve="_ETSTIMER_" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtnqT" role="N3F5h">
@@ -7507,7 +7507,7 @@
         <node concept="rcJHQ" id="4b64BCbtpXk" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtnp_" />
+          <ref role="rcJHT" node="4b64BCbtnp_" resolve="ETSSignal" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbtnpW" role="HszBJ">
@@ -7515,7 +7515,7 @@
         <node concept="rcJHQ" id="4b64BCbtpXl" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtnpF" />
+          <ref role="rcJHT" node="4b64BCbtnpF" resolve="ETSParam" />
         </node>
       </node>
     </node>
@@ -7538,11 +7538,11 @@
       <node concept="2BPB98" id="4b64BCbtnP5" role="2_0FLF">
         <node concept="2BOciq" id="4b64BCbtnPa" role="1_9fRO">
           <node concept="4ZOvp" id="4b64BCbuRCQ" role="3TlMhI">
-            <ref role="2DPCA0" node="4b64BCbtnb0" />
+            <ref role="2DPCA0" node="4b64BCbtnb0" resolve="GPIO_PIN0_ADDRESS" />
           </node>
           <node concept="2BOcij" id="4b64BCbtnP9" role="3TlMhJ">
             <node concept="39I4aJ" id="4b64BCbtqux" role="3TlMhI">
-              <ref role="39I4aG" node="4b64BCbtnPf" />
+              <ref role="39I4aG" node="4b64BCbtnPf" resolve="i" />
             </node>
             <node concept="3TlMh9" id="4b64BCbtnP8" role="3TlMhJ">
               <property role="2hmy$m" value="4" />
@@ -7566,23 +7566,23 @@
           <node concept="2BPB98" id="4b64BCbtnPj" role="3TlMhI">
             <node concept="3Tl9Jp" id="4b64BCbtnPm" role="1_9fRO">
               <node concept="39I4aJ" id="4b64BCbtquy" role="3TlMhI">
-                <ref role="39I4aG" node="4b64BCbtnP$" />
+                <ref role="39I4aG" node="4b64BCbtnP$" resolve="reg_id" />
               </node>
               <node concept="4ZOvp" id="4b64BCbuRru" role="3TlMhJ">
-                <ref role="2DPCA0" node="4b64BCbtnb4" />
+                <ref role="2DPCA0" node="4b64BCbtnb4" resolve="GPIO_ID_PIN0" />
               </node>
             </node>
           </node>
           <node concept="2BPB98" id="4b64BCbtnPn" role="3TlMhJ">
             <node concept="3Tl9Jl" id="4b64BCbtnPu" role="1_9fRO">
               <node concept="39I4aJ" id="4b64BCbtquz" role="3TlMhI">
-                <ref role="39I4aG" node="4b64BCbtnP$" />
+                <ref role="39I4aG" node="4b64BCbtnP$" resolve="reg_id" />
               </node>
               <node concept="BUAnR" id="4b64BCbuRbe" role="3TlMhJ">
-                <ref role="BUAnL" node="4b64BCbtnbe" />
+                <ref role="BUAnL" node="4b64BCbtnbe" resolve="GPIO_ID_PIN" />
                 <node concept="2BOcil" id="4b64BCbtnPt" role="BULBh">
                   <node concept="4ZOvp" id="4b64BCbuR39" role="3TlMhI">
-                    <ref role="2DPCA0" node="4b64BCbtnbu" />
+                    <ref role="2DPCA0" node="4b64BCbtnbu" resolve="GPIO_PIN_COUNT" />
                   </node>
                   <node concept="3TlMh9" id="4b64BCbtnPs" role="3TlMhJ">
                     <property role="2hmy$m" value="1" />
@@ -7608,11 +7608,11 @@
         <node concept="2BOcil" id="4b64BCbtquB" role="1_9fRO">
           <node concept="2BPB98" id="4b64BCbtquA" role="3TlMhI">
             <node concept="39I4aJ" id="4b64BCbtqu_" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtnPM" />
+              <ref role="39I4aG" node="4b64BCbtnPM" resolve="reg_id" />
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbuQWs" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtnb4" />
+            <ref role="2DPCA0" node="4b64BCbtnb4" resolve="GPIO_ID_PIN0" />
           </node>
         </node>
       </node>
@@ -7663,7 +7663,7 @@
       <node concept="1AkAi2" id="4b64BCbtnQ8" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1AkAi1" node="4b64BCbtnPP" />
+        <ref role="1AkAi1" node="4b64BCbtnPP" resolve="anonymous_enum" />
       </node>
     </node>
     <node concept="BTY7A" id="4b64BCbtnQ_" role="N3F5h">
@@ -7684,15 +7684,15 @@
         </node>
       </node>
       <node concept="3O_q_g" id="4b64BCbtquD" role="2_0FLF">
-        <ref role="3O_q_h" node="4b64BCbtnRy" />
+        <ref role="3O_q_h" node="4b64BCbtnRy" resolve="gpio_output_set" />
         <node concept="3oul24" id="4b64BCbtnQj" role="3O_q_j">
           <node concept="2BPB98" id="4b64BCbtnQg" role="3TlMhI">
             <node concept="39I4aJ" id="4b64BCbtquE" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtnQC" />
+              <ref role="39I4aG" node="4b64BCbtnQC" resolve="bit_value" />
             </node>
           </node>
           <node concept="39I4aJ" id="4b64BCbtquF" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtnQA" />
+            <ref role="39I4aG" node="4b64BCbtnQA" resolve="gpio_no" />
           </node>
         </node>
         <node concept="3oul24" id="4b64BCbtnQs" role="3O_q_j">
@@ -7702,7 +7702,7 @@
                 <node concept="1Flubw" id="4b64BCbtnQm" role="1_9fRO">
                   <node concept="2BPB98" id="4b64BCbtnQn" role="1_9fRO">
                     <node concept="39I4aJ" id="4b64BCbtquG" role="1_9fRO">
-                      <ref role="39I4aG" node="4b64BCbtnQC" />
+                      <ref role="39I4aG" node="4b64BCbtnQC" resolve="bit_value" />
                     </node>
                   </node>
                 </node>
@@ -7713,7 +7713,7 @@
             </node>
           </node>
           <node concept="39I4aJ" id="4b64BCbtquH" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtnQA" />
+            <ref role="39I4aG" node="4b64BCbtnQA" resolve="gpio_no" />
           </node>
         </node>
         <node concept="3oul24" id="4b64BCbtnQv" role="3O_q_j">
@@ -7721,7 +7721,7 @@
             <property role="2hmy$m" value="1" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtquI" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtnQA" />
+            <ref role="39I4aG" node="4b64BCbtnQA" resolve="gpio_no" />
           </node>
         </node>
         <node concept="3TlMh9" id="4b64BCbtnQw" role="3O_q_j">
@@ -7740,7 +7740,7 @@
         </node>
       </node>
       <node concept="3O_q_g" id="4b64BCbtquK" role="2_0FLF">
-        <ref role="3O_q_h" node="4b64BCbtnRy" />
+        <ref role="3O_q_h" node="4b64BCbtnRy" resolve="gpio_output_set" />
         <node concept="3TlMh9" id="4b64BCbtnQH" role="3O_q_j">
           <property role="2hmy$m" value="0" />
         </node>
@@ -7755,7 +7755,7 @@
             <property role="2hmy$m" value="1" />
           </node>
           <node concept="39I4aJ" id="4b64BCbtquL" role="3TlMhJ">
-            <ref role="39I4aG" node="4b64BCbtnQR" />
+            <ref role="39I4aG" node="4b64BCbtnQR" resolve="gpio_no" />
           </node>
         </node>
       </node>
@@ -7775,15 +7775,15 @@
           <node concept="2BPB98" id="4b64BCbtnQV" role="3TlMhI">
             <node concept="3ov31F" id="4b64BCbtnQZ" role="1_9fRO">
               <node concept="3O_q_g" id="4b64BCbtquN" role="3TlMhI">
-                <ref role="3O_q_h" node="4b64BCbtnRN" />
+                <ref role="3O_q_h" node="4b64BCbtnRN" resolve="gpio_input_get" />
               </node>
               <node concept="39I4aJ" id="4b64BCbtquO" role="3TlMhJ">
-                <ref role="39I4aG" node="4b64BCbtnR6" />
+                <ref role="39I4aG" node="4b64BCbtnR6" resolve="gpio_no" />
               </node>
             </node>
           </node>
           <node concept="4ZOvp" id="4b64BCbuQSa" role="3TlMhJ">
-            <ref role="2DPCA0" node="4b64BCbtn4I" />
+            <ref role="2DPCA0" node="4b64BCbtn4I" resolve="BIT0" />
           </node>
         </node>
       </node>
@@ -7960,7 +7960,7 @@
         <node concept="rcJHQ" id="4b64BCbtqv6" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtnRj" />
+          <ref role="rcJHT" node="4b64BCbtnRj" resolve="gpio_intr_handler_fn_t" />
         </node>
       </node>
       <node concept="19RgSI" id="4b64BCbtnSp" role="1UOdpc">
@@ -8047,7 +8047,7 @@
         <node concept="rcJHQ" id="4b64BCbtqve" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtnQc" />
+          <ref role="rcJHT" node="4b64BCbtnQc" resolve="GPIO_INT_TYPE" />
         </node>
       </node>
       <node concept="19Rifw" id="4b64BCbtqvf" role="2C2TGm">
@@ -8079,7 +8079,7 @@
         <node concept="rcJHQ" id="4b64BCbtqvi" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtnQc" />
+          <ref role="rcJHT" node="4b64BCbtnQc" resolve="GPIO_INT_TYPE" />
         </node>
       </node>
       <node concept="19Rifw" id="4b64BCbtqvj" role="2C2TGm">
@@ -8088,7 +8088,7 @@
       </node>
     </node>
     <node concept="3GEVxB" id="4b64BCbuQBM" role="2OODSX">
-      <ref role="3GEb4d" node="4b64BCbtn2B" />
+      <ref role="3GEb4d" node="4b64BCbtn2B" resolve="eagle_soc" />
     </node>
   </node>
   <node concept="rcWEw" id="4b64BCbtnu9">
@@ -8098,7 +8098,7 @@
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEr" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnzs" />
+      <ref role="3GEb4d" node="4b64BCbtnzs" resolve="c_types" />
     </node>
     <node concept="rcJHK" id="4b64BCbtnur" role="N3F5h">
       <property role="TrG5h" value="ip_addr_t" />
@@ -8106,7 +8106,7 @@
       <node concept="1sgJKr" id="4b64BCbtpZz" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="1sgJKq" node="4b64BCbtnuf" />
+        <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
       </node>
     </node>
     <node concept="BTY7A" id="4b64BCbtnva" role="N3F5h">
@@ -8117,7 +8117,7 @@
         <node concept="1sgJKr" id="4b64BCbuV2Z" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
       <node concept="BUhyo" id="4b64BCbtnvd" role="BTY7U">
@@ -8125,7 +8125,7 @@
         <node concept="1sgJKr" id="4b64BCbuV4j" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
       <node concept="BUhyo" id="4b64BCbtnvf" role="BTY7U">
@@ -8133,7 +8133,7 @@
         <node concept="1sgJKr" id="4b64BCbuWu$" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
       <node concept="2BPB98" id="4b64BCbtnuJ" role="2_0FLF">
@@ -8143,21 +8143,21 @@
               <node concept="2qmXGp" id="4b64BCbtnuN" role="3TlMhI">
                 <node concept="2BPB98" id="4b64BCbtnuL" role="1_9fRO">
                   <node concept="39I4aJ" id="4b64BCbtpZ$" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtnvb" />
+                    <ref role="39I4aG" node="4b64BCbtnvb" resolve="addr1" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="4b64BCbuWdk" role="1ESnxz">
-                  <ref role="1E4Tge" node="4b64BCbtnuj" />
+                  <ref role="1E4Tge" node="4b64BCbtnuj" resolve="addr" />
                 </node>
               </node>
               <node concept="2qmXGp" id="4b64BCbtnuR" role="3TlMhJ">
                 <node concept="2BPB98" id="4b64BCbtnuP" role="1_9fRO">
                   <node concept="39I4aJ" id="4b64BCbtpZ_" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtnvf" />
+                    <ref role="39I4aG" node="4b64BCbtnvf" resolve="mask" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="4b64BCbuWFb" role="1ESnxz">
-                  <ref role="1E4Tge" node="4b64BCbtnuj" />
+                  <ref role="1E4Tge" node="4b64BCbtnuj" resolve="addr" />
                 </node>
               </node>
             </node>
@@ -8167,21 +8167,21 @@
               <node concept="2qmXGp" id="4b64BCbtnuX" role="3TlMhI">
                 <node concept="2BPB98" id="4b64BCbtnuV" role="1_9fRO">
                   <node concept="39I4aJ" id="4b64BCbtpZA" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtnvd" />
+                    <ref role="39I4aG" node="4b64BCbtnvd" resolve="addr2" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="4b64BCbuWcQ" role="1ESnxz">
-                  <ref role="1E4Tge" node="4b64BCbtnuj" />
+                  <ref role="1E4Tge" node="4b64BCbtnuj" resolve="addr" />
                 </node>
               </node>
               <node concept="2qmXGp" id="4b64BCbtnv1" role="3TlMhJ">
                 <node concept="2BPB98" id="4b64BCbtnuZ" role="1_9fRO">
                   <node concept="39I4aJ" id="4b64BCbtpZB" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtnvf" />
+                    <ref role="39I4aG" node="4b64BCbtnvf" resolve="mask" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="4b64BCbuWFr" role="1ESnxz">
-                  <ref role="1E4Tge" node="4b64BCbtnuj" />
+                  <ref role="1E4Tge" node="4b64BCbtnuj" resolve="addr" />
                 </node>
               </node>
             </node>
@@ -8206,7 +8206,7 @@
         <node concept="1sgJKr" id="4b64BCbuV5C" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
       <node concept="BUhyo" id="4b64BCbtnwq" role="BTY7U">
@@ -8241,11 +8241,11 @@
         <node concept="2qmXGp" id="4b64BCbtnvp" role="3TlMhI">
           <node concept="2BPB98" id="4b64BCbtnvn" role="1_9fRO">
             <node concept="39I4aJ" id="4b64BCbtpZC" role="1_9fRO">
-              <ref role="39I4aG" node="4b64BCbtnwo" />
+              <ref role="39I4aG" node="4b64BCbtnwo" resolve="ipaddr" />
             </node>
           </node>
           <node concept="1E4Tgc" id="4b64BCbuWcA" role="1ESnxz">
-            <ref role="1E4Tge" node="4b64BCbtnuj" />
+            <ref role="1E4Tge" node="4b64BCbtnuj" resolve="addr" />
           </node>
         </node>
         <node concept="EUQZk" id="4b64BCbtnwe" role="3TlMhJ">
@@ -8262,7 +8262,7 @@
                       <node concept="SSPID" id="4b64BCbtpZG" role="1_9fRO">
                         <node concept="2BPB98" id="4b64BCbtpZF" role="3TlMhI">
                           <node concept="39I4aJ" id="4b64BCbtpZE" role="1_9fRO">
-                            <ref role="39I4aG" node="4b64BCbtnww" />
+                            <ref role="39I4aG" node="4b64BCbtnww" resolve="d" />
                           </node>
                         </node>
                         <node concept="3Hbq_t" id="4b64BCbtnvw" role="3TlMhJ">
@@ -8287,7 +8287,7 @@
                       <node concept="SSPID" id="4b64BCbtpZK" role="1_9fRO">
                         <node concept="2BPB98" id="4b64BCbtpZJ" role="3TlMhI">
                           <node concept="39I4aJ" id="4b64BCbtpZI" role="1_9fRO">
-                            <ref role="39I4aG" node="4b64BCbtnwu" />
+                            <ref role="39I4aG" node="4b64BCbtnwu" resolve="c" />
                           </node>
                         </node>
                         <node concept="3Hbq_t" id="4b64BCbtnvH" role="3TlMhJ">
@@ -8313,7 +8313,7 @@
                     <node concept="SSPID" id="4b64BCbtpZO" role="1_9fRO">
                       <node concept="2BPB98" id="4b64BCbtpZN" role="3TlMhI">
                         <node concept="39I4aJ" id="4b64BCbtpZM" role="1_9fRO">
-                          <ref role="39I4aG" node="4b64BCbtnws" />
+                          <ref role="39I4aG" node="4b64BCbtnws" resolve="b" />
                         </node>
                       </node>
                       <node concept="3Hbq_t" id="4b64BCbtnvV" role="3TlMhJ">
@@ -8337,7 +8337,7 @@
               <node concept="SSPID" id="4b64BCbtpZS" role="1_9fRO">
                 <node concept="2BPB98" id="4b64BCbtpZR" role="3TlMhI">
                   <node concept="39I4aJ" id="4b64BCbtpZQ" role="1_9fRO">
-                    <ref role="39I4aG" node="4b64BCbtnwq" />
+                    <ref role="39I4aG" node="4b64BCbtnwq" resolve="a" />
                   </node>
                 </node>
                 <node concept="3Hbq_t" id="4b64BCbtnw8" role="3TlMhJ">
@@ -8382,7 +8382,7 @@
               </node>
               <node concept="2BPB98" id="4b64BCbtnwG" role="1S8S4V">
                 <node concept="39I4aJ" id="4b64BCbtpZU" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnwQ" />
+                  <ref role="39I4aG" node="4b64BCbtnwQ" resolve="ipaddr" />
                 </node>
               </node>
             </node>
@@ -8417,7 +8417,7 @@
               </node>
               <node concept="2BPB98" id="4b64BCbtnwX" role="1S8S4V">
                 <node concept="39I4aJ" id="4b64BCbtpZW" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnx7" />
+                  <ref role="39I4aG" node="4b64BCbtnx7" resolve="ipaddr" />
                 </node>
               </node>
             </node>
@@ -8452,7 +8452,7 @@
               </node>
               <node concept="2BPB98" id="4b64BCbtnxe" role="1S8S4V">
                 <node concept="39I4aJ" id="4b64BCbtpZY" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnxo" />
+                  <ref role="39I4aG" node="4b64BCbtnxo" resolve="ipaddr" />
                 </node>
               </node>
             </node>
@@ -8487,7 +8487,7 @@
               </node>
               <node concept="2BPB98" id="4b64BCbtnxv" role="1S8S4V">
                 <node concept="39I4aJ" id="4b64BCbtq00" role="1_9fRO">
-                  <ref role="39I4aG" node="4b64BCbtnxD" />
+                  <ref role="39I4aG" node="4b64BCbtnxD" resolve="ipaddr" />
                 </node>
               </node>
             </node>
@@ -8515,9 +8515,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="BUAnR" id="4b64BCbtq02" role="1S8S4V">
-            <ref role="BUAnL" node="4b64BCbtnwP" />
+            <ref role="BUAnL" node="4b64BCbtnwP" resolve="ip4_addr1" />
             <node concept="39I4aJ" id="4b64BCbtq03" role="BULBh">
-              <ref role="39I4aG" node="4b64BCbtnxR" />
+              <ref role="39I4aG" node="4b64BCbtnxR" resolve="ipaddr" />
             </node>
           </node>
         </node>
@@ -8540,9 +8540,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="BUAnR" id="4b64BCbtq05" role="1S8S4V">
-            <ref role="BUAnL" node="4b64BCbtnx6" />
+            <ref role="BUAnL" node="4b64BCbtnx6" resolve="ip4_addr2" />
             <node concept="39I4aJ" id="4b64BCbtq06" role="BULBh">
-              <ref role="39I4aG" node="4b64BCbtny5" />
+              <ref role="39I4aG" node="4b64BCbtny5" resolve="ipaddr" />
             </node>
           </node>
         </node>
@@ -8565,9 +8565,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="BUAnR" id="4b64BCbtq08" role="1S8S4V">
-            <ref role="BUAnL" node="4b64BCbtnxn" />
+            <ref role="BUAnL" node="4b64BCbtnxn" resolve="ip4_addr3" />
             <node concept="39I4aJ" id="4b64BCbtq09" role="BULBh">
-              <ref role="39I4aG" node="4b64BCbtnyj" />
+              <ref role="39I4aG" node="4b64BCbtnyj" resolve="ipaddr" />
             </node>
           </node>
         </node>
@@ -8590,9 +8590,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="BUAnR" id="4b64BCbtq0b" role="1S8S4V">
-            <ref role="BUAnL" node="4b64BCbtnxC" />
+            <ref role="BUAnL" node="4b64BCbtnxC" resolve="ip4_addr4" />
             <node concept="39I4aJ" id="4b64BCbtq0c" role="BULBh">
-              <ref role="39I4aG" node="4b64BCbtnyx" />
+              <ref role="39I4aG" node="4b64BCbtnyx" resolve="ipaddr" />
             </node>
           </node>
         </node>
@@ -8680,27 +8680,27 @@
       </node>
       <node concept="2Ysn8y" id="4b64BCbtnz5" role="2_0FLF">
         <node concept="BUAnR" id="4b64BCbtq0g" role="2Yskys">
-          <ref role="BUAnL" node="4b64BCbtnxQ" />
+          <ref role="BUAnL" node="4b64BCbtnxQ" resolve="ip4_addr1_16" />
           <node concept="39I4aJ" id="4b64BCbtq0h" role="BULBh">
-            <ref role="39I4aG" node="4b64BCbtnzm" />
+            <ref role="39I4aG" node="4b64BCbtnzm" resolve="ipaddr" />
           </node>
         </node>
         <node concept="BUAnR" id="4b64BCbtq0i" role="2Yskys">
-          <ref role="BUAnL" node="4b64BCbtny4" />
+          <ref role="BUAnL" node="4b64BCbtny4" resolve="ip4_addr2_16" />
           <node concept="39I4aJ" id="4b64BCbtq0j" role="BULBh">
-            <ref role="39I4aG" node="4b64BCbtnzm" />
+            <ref role="39I4aG" node="4b64BCbtnzm" resolve="ipaddr" />
           </node>
         </node>
         <node concept="BUAnR" id="4b64BCbtq0k" role="2Yskys">
-          <ref role="BUAnL" node="4b64BCbtnyi" />
+          <ref role="BUAnL" node="4b64BCbtnyi" resolve="ip4_addr3_16" />
           <node concept="39I4aJ" id="4b64BCbtq0l" role="BULBh">
-            <ref role="39I4aG" node="4b64BCbtnzm" />
+            <ref role="39I4aG" node="4b64BCbtnzm" resolve="ipaddr" />
           </node>
         </node>
         <node concept="BUAnR" id="4b64BCbtq0m" role="2Yskys">
-          <ref role="BUAnL" node="4b64BCbtnyw" />
+          <ref role="BUAnL" node="4b64BCbtnyw" resolve="ip4_addr4_16" />
           <node concept="39I4aJ" id="4b64BCbtq0n" role="BULBh">
-            <ref role="39I4aG" node="4b64BCbtnzm" />
+            <ref role="39I4aG" node="4b64BCbtnzm" resolve="ipaddr" />
           </node>
         </node>
       </node>
@@ -8731,7 +8731,7 @@
         <node concept="1sgJKr" id="4b64BCbtq0p" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbtnuB" role="HszBJ">
@@ -8739,7 +8739,7 @@
         <node concept="1sgJKr" id="4b64BCbtq0q" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbtnuG" role="HszBJ">
@@ -8747,7 +8747,7 @@
         <node concept="1sgJKr" id="4b64BCbtq0r" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="4b64BCbtnuf" />
+          <ref role="1sgJKq" node="4b64BCbtnuf" resolve="ip_addr" />
         </node>
       </node>
     </node>
@@ -8825,7 +8825,7 @@
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEo" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnpp" />
+      <ref role="3GEb4d" node="4b64BCbtnpp" resolve="ets_sys" />
     </node>
     <node concept="2NXPZ9" id="4b64BCbuZWY" role="N3F5h">
       <property role="TrG5h" value="empty_1440160416359_22" />
@@ -8836,7 +8836,7 @@
       <node concept="rcJHQ" id="4b64BCbuZZ$" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnp_" />
+        <ref role="rcJHT" node="4b64BCbtnp_" resolve="ETSSignal" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbuZZR" role="N3F5h">
@@ -8845,7 +8845,7 @@
       <node concept="rcJHQ" id="4b64BCbv00N" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnpF" />
+        <ref role="rcJHT" node="4b64BCbtnpF" resolve="ETSParam" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbv00Y" role="N3F5h">
@@ -8854,7 +8854,7 @@
       <node concept="rcJHQ" id="4b64BCbv01W" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnpM" />
+        <ref role="rcJHT" node="4b64BCbtnpM" resolve="ETSEvent" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbv03J" role="N3F5h">
@@ -8863,7 +8863,7 @@
       <node concept="rcJHQ" id="4b64BCbv04L" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnq7" />
+        <ref role="rcJHT" node="4b64BCbtnq7" resolve="ETSTask" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbv06Q" role="N3F5h">
@@ -8872,7 +8872,7 @@
       <node concept="rcJHQ" id="4b64BCbv09E" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnqP" />
+        <ref role="rcJHT" node="4b64BCbtnqP" resolve="ETSTimer" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbv0bi" role="N3F5h">
@@ -8881,7 +8881,7 @@
       <node concept="rcJHQ" id="4b64BCbv0cN" role="rcJHR">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnqm" />
+        <ref role="rcJHT" node="4b64BCbtnqm" resolve="ETSTimerFunc" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4b64BCbuZYb" role="N3F5h">
@@ -8894,7 +8894,7 @@
       <property role="rcWEL" value="&quot;osapi.h&quot;" />
     </node>
     <node concept="3GEVxB" id="4b64BCbwaNq" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:2RIhi0HBZdt" />
+      <ref role="3GEb4d" to="3y0n:2RIhi0HBZdt" resolve="string" />
     </node>
     <node concept="N3Fnw" id="4b64BCbvHdN" role="N3F5h">
       <property role="2OOxQR" value="true" />
@@ -9168,7 +9168,7 @@
           <node concept="1sgJKr" id="4b64BCbtpLv" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmJz" />
+            <ref role="1sgJKq" node="4b64BCbtmJz" resolve="ping_option" />
           </node>
         </node>
       </node>
@@ -9189,7 +9189,7 @@
           <node concept="1sgJKr" id="4b64BCbtpLx" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmJz" />
+            <ref role="1sgJKq" node="4b64BCbtmJz" resolve="ping_option" />
           </node>
         </node>
       </node>
@@ -9198,7 +9198,7 @@
         <node concept="rcJHQ" id="4b64BCbtpLy" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmJk" />
+          <ref role="rcJHT" node="4b64BCbtmJk" resolve="ping_recv_function" />
         </node>
       </node>
       <node concept="3TlMgk" id="4b64BCbtpLz" role="2C2TGm">
@@ -9218,7 +9218,7 @@
           <node concept="1sgJKr" id="4b64BCbtpL$" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbtmJz" />
+            <ref role="1sgJKq" node="4b64BCbtmJz" resolve="ping_option" />
           </node>
         </node>
       </node>
@@ -9227,7 +9227,7 @@
         <node concept="rcJHQ" id="4b64BCbtpL_" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmJx" />
+          <ref role="rcJHT" node="4b64BCbtmJx" resolve="ping_sent_function" />
         </node>
       </node>
       <node concept="3TlMgk" id="4b64BCbtpLA" role="2C2TGm">
@@ -9264,7 +9264,7 @@
         <node concept="rcJHQ" id="4b64BCbtpLE" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmJk" />
+          <ref role="rcJHT" node="4b64BCbtmJk" resolve="ping_recv_function" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbtmJR" role="HszBJ">
@@ -9272,7 +9272,7 @@
         <node concept="rcJHQ" id="4b64BCbtpLF" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmJx" />
+          <ref role="rcJHT" node="4b64BCbtmJx" resolve="ping_sent_function" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbtmJV" role="HszBJ">
@@ -9555,7 +9555,7 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="4ZOvp" id="4b64BCbtpN5" role="1YbSNA">
-            <ref role="2DPCA0" node="4b64BCbtmNG" />
+            <ref role="2DPCA0" node="4b64BCbtmNG" resolve="PWM_CHANNEL_NUM_MAX" />
           </node>
         </node>
       </node>
@@ -9594,7 +9594,7 @@
       <node concept="1AkAi2" id="4b64BCbtmPk" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1AkAi1" node="4b64BCbtmP8" />
+        <ref role="1AkAi1" node="4b64BCbtmP8" resolve="anonymous_enum" />
       </node>
     </node>
     <node concept="1AkAjs" id="4b64BCbtmPq" role="N3F5h">
@@ -9616,7 +9616,7 @@
       <node concept="1AkAi2" id="4b64BCbtmPw" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1AkAi1" node="4b64BCbtmPq" />
+        <ref role="1AkAi1" node="4b64BCbtmPq" resolve="SC_TYPE" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbtmPK" role="N3F5h">
@@ -9632,7 +9632,7 @@
         <node concept="rcJHQ" id="4b64BCbtpNs" role="pFrBa">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmPo" />
+          <ref role="rcJHT" node="4b64BCbtmPo" resolve="sc_status" />
         </node>
         <node concept="3wxxNl" id="4b64BCbtmPJ" role="pFrBa">
           <property role="2caQfQ" value="false" />
@@ -9666,7 +9666,7 @@
         <node concept="rcJHQ" id="4b64BCbtpNv" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmPK" />
+          <ref role="rcJHT" node="4b64BCbtmPK" resolve="sc_callback_t" />
         </node>
       </node>
       <node concept="3TlMgk" id="4b64BCbtpNw" role="2C2TGm">
@@ -9716,15 +9716,15 @@
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEh" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnmK" />
+      <ref role="3GEb4d" node="4b64BCbtnmK" resolve="os_type" />
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEi" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnu9" />
+      <ref role="3GEb4d" node="4b64BCbtnu9" resolve="ip_addr" />
     </node>
     <node concept="3GEVxB" id="4b64BCbtpEj" role="2OODSX">
       <property role="3GEa6x" value="true" />
-      <ref role="3GEb4d" node="4b64BCbtnu9" />
+      <ref role="3GEb4d" node="4b64BCbtnu9" resolve="ip_addr" />
     </node>
     <node concept="N3Fnw" id="4b64BCbtmom" role="N3F5h">
       <property role="TrG5h" value="sntp_get_current_timestamp" />
@@ -9870,7 +9870,7 @@
           <node concept="rcJHQ" id="4b64BCbtpGM" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtnur" />
+            <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
           </node>
         </node>
       </node>
@@ -9902,7 +9902,7 @@
       <node concept="rcJHQ" id="4b64BCbtpGO" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtnur" />
+        <ref role="rcJHT" node="4b64BCbtnur" resolve="ip_addr_t" />
       </node>
       <node concept="1z9TsT" id="4b64BCbtmpC" role="lGtFl">
         <node concept="OjmMv" id="4b64BCbtmpD" role="1w35rA">
@@ -10004,7 +10004,7 @@
       <node concept="1AkAi2" id="4b64BCbtmmo" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1AkAi1" node="4b64BCbtmmh" />
+        <ref role="1AkAi1" node="4b64BCbtmmh" resolve="anonymous_enum" />
       </node>
     </node>
     <node concept="1sgJKc" id="4b64BCbtmmU" role="N3F5h">
@@ -10060,7 +10060,7 @@
       <node concept="1sgJKr" id="4b64BCbtmmR" role="rcJHR">
         <property role="2c7vTL" value="false" />
         <property role="2caQfQ" value="false" />
-        <ref role="1sgJKq" node="4b64BCbtmmU" />
+        <ref role="1sgJKq" node="4b64BCbtmmU" resolve="a_SpiFlashChip" />
       </node>
     </node>
     <node concept="4WHVk" id="4b64BCbtmn0" role="N3F5h">
@@ -10093,7 +10093,7 @@
       <node concept="rcJHQ" id="4b64BCbtpFX" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtmms" />
+        <ref role="rcJHT" node="4b64BCbtmms" resolve="SpiFlashOpResult" />
       </node>
     </node>
     <node concept="N3Fnw" id="4b64BCbtmng" role="N3F5h">
@@ -10128,7 +10128,7 @@
       <node concept="rcJHQ" id="4b64BCbtpG1" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtmms" />
+        <ref role="rcJHT" node="4b64BCbtmms" resolve="SpiFlashOpResult" />
       </node>
     </node>
     <node concept="N3Fnw" id="4b64BCbtmnr" role="N3F5h">
@@ -10163,7 +10163,7 @@
       <node concept="rcJHQ" id="4b64BCbtpG5" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="rcJHT" node="4b64BCbtmms" />
+        <ref role="rcJHT" node="4b64BCbtmms" resolve="SpiFlashOpResult" />
       </node>
     </node>
     <node concept="rcJHK" id="4b64BCbtmnN" role="N3F5h">
@@ -10175,7 +10175,7 @@
         <node concept="rcJHQ" id="4b64BCbtpG6" role="pFrBb">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmms" />
+          <ref role="rcJHT" node="4b64BCbtmms" resolve="SpiFlashOpResult" />
         </node>
         <node concept="3wxxNl" id="4b64BCbtmnF" role="pFrBa">
           <property role="2caQfQ" value="false" />
@@ -10183,7 +10183,7 @@
           <node concept="rcJHQ" id="4b64BCbtpG7" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbtmmW" />
+            <ref role="rcJHT" node="4b64BCbtmmW" resolve="SpiFlashChip" />
           </node>
         </node>
         <node concept="26Vqpb" id="4b64BCbtpG8" role="pFrBa">
@@ -10213,7 +10213,7 @@
         <node concept="rcJHQ" id="4b64BCbtpGb" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmnN" />
+          <ref role="rcJHT" node="4b64BCbtmnN" resolve="user_spi_flash_read" />
         </node>
       </node>
       <node concept="19Rifw" id="4b64BCbtpGc" role="2C2TGm">
@@ -10225,7 +10225,7 @@
   <node concept="rcWEw" id="4b64BCbtmq8">
     <property role="TrG5h" value="upgrade" />
     <node concept="3GEVxB" id="4b64BCbwd5q" role="2OODSX">
-      <ref role="3GEb4d" node="4b64BCbuKGs" />
+      <ref role="3GEb4d" node="4b64BCbuKGs" resolve="espconn" />
     </node>
     <node concept="rcWE1" id="4b64BCbtmq9" role="rcWEr">
       <property role="rcWEL" value="&quot;upgrade.h&quot;" />
@@ -10438,7 +10438,7 @@
         <node concept="rcJHQ" id="4b64BCbtpHi" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbtmqS" />
+          <ref role="rcJHT" node="4b64BCbtmqS" resolve="upgrade_states_check_callback" />
         </node>
       </node>
       <node concept="1dpRTG" id="4b64BCbtmrA" role="HszBJ">
@@ -10449,7 +10449,7 @@
           <node concept="1sgJKr" id="4b64BCbwd7I" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="4b64BCbuKLm" />
+            <ref role="1sgJKq" node="4b64BCbuKLm" resolve="espconn" />
           </node>
         </node>
       </node>
@@ -10611,7 +10611,7 @@
         <node concept="rcJHQ" id="4b64BCclyD5" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuZYN" />
+          <ref role="rcJHT" node="4b64BCbuZYN" resolve="os_signal_t" />
         </node>
       </node>
       <node concept="19RgSI" id="4b64BCclxYW" role="1UOdpc">
@@ -10619,7 +10619,7 @@
         <node concept="rcJHQ" id="4b64BCclyD6" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbuZZR" />
+          <ref role="rcJHT" node="4b64BCbuZZR" resolve="os_param_t" />
         </node>
       </node>
       <node concept="3TlMgk" id="4b64BCclyD7" role="2C2TGm">
@@ -10637,7 +10637,7 @@
         <node concept="rcJHQ" id="4b64BCclyD8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="rcJHT" node="4b64BCbv03J" />
+          <ref role="rcJHT" node="4b64BCbv03J" resolve="os_task_t" />
         </node>
       </node>
       <node concept="19RgSI" id="4b64BCclxZ3" role="1UOdpc">
@@ -10655,7 +10655,7 @@
           <node concept="rcJHQ" id="4b64BCclyDa" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="rcJHT" node="4b64BCbv00Y" />
+            <ref role="rcJHT" node="4b64BCbv00Y" resolve="os_event_t" />
           </node>
         </node>
       </node>
@@ -10678,7 +10678,7 @@
       <property role="TrG5h" value="empty_1440167706807_4" />
     </node>
     <node concept="3GEVxB" id="4b64BCclK6L" role="2OODSX">
-      <ref role="3GEb4d" node="4b64BCbtnmK" />
+      <ref role="3GEb4d" node="4b64BCbtnmK" resolve="os_type" />
     </node>
   </node>
 </model>

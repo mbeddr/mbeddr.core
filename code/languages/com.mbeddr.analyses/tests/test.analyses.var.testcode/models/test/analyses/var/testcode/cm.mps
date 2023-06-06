@@ -77,24 +77,24 @@
     </node>
     <node concept="Id4hE" id="3KT4CxIES0e" role="Idr$j">
       <property role="TrG5h" value="ConfigModelWithMandatoryFeatures" />
-      <ref role="Id4hC" node="2xEGw1120n0" />
+      <ref role="Id4hC" node="2xEGw1120n0" resolve="MandatoryFeatures" />
       <node concept="Id4hG" id="3KT4CxIESgM" role="Id4hF">
-        <ref role="Id4hN" node="19LfhoYd26i" />
+        <ref role="Id4hN" node="19LfhoYd26i" resolve="MandatoryFeatures_root" />
         <node concept="Id4hG" id="3KT4CxIESgO" role="Id4hH">
-          <ref role="Id4hN" node="2xEGw1120n3" />
+          <ref role="Id4hN" node="2xEGw1120n3" resolve="mandatoryChild1" />
         </node>
         <node concept="Id4hG" id="3KT4CxIESgT" role="Id4hH">
-          <ref role="Id4hN" node="2xEGw1120n5" />
+          <ref role="Id4hN" node="2xEGw1120n5" resolve="mandatoryChild2" />
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="3KT4CxIES0i" role="Idr$j">
       <property role="TrG5h" value="ConfigModelWithoutMandatoryFeatures" />
-      <ref role="Id4hC" node="2xEGw1120n0" />
+      <ref role="Id4hC" node="2xEGw1120n0" resolve="MandatoryFeatures" />
       <node concept="Id4hG" id="3KT4CxIESgW" role="Id4hF">
-        <ref role="Id4hN" node="19LfhoYd26i" />
+        <ref role="Id4hN" node="19LfhoYd26i" resolve="MandatoryFeatures_root" />
         <node concept="Id4hG" id="3KT4CxIESgY" role="Id4hH">
-          <ref role="Id4hN" node="2xEGw1120n3" />
+          <ref role="Id4hN" node="2xEGw1120n3" resolve="mandatoryChild1" />
         </node>
       </node>
     </node>
@@ -116,47 +116,47 @@
     </node>
     <node concept="Id4hE" id="3KT4CxIFhaR" role="Idr$j">
       <property role="TrG5h" value="ConfigModelForXorPositive" />
-      <ref role="Id4hC" node="3KT4CxIESIm" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
       <node concept="Id4hG" id="3KT4CxIFhaS" role="Id4hF">
-        <ref role="Id4hN" node="3KT4CxIESIn" />
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
         <node concept="Id4hG" id="3KT4CxIFhaT" role="Id4hH">
-          <ref role="Id4hN" node="3KT4CxIESIp" />
+          <ref role="Id4hN" node="3KT4CxIESIp" resolve="xorChild1" />
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="3KT4CxIFhc7" role="Idr$j">
       <property role="TrG5h" value="ConfigModelForXorNegative1" />
-      <ref role="Id4hC" node="3KT4CxIESIm" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
       <node concept="Id4hG" id="3KT4CxIFhc8" role="Id4hF">
-        <ref role="Id4hN" node="3KT4CxIESIn" />
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
       </node>
     </node>
     <node concept="Id4hE" id="3KT4CxIFhcW" role="Idr$j">
       <property role="TrG5h" value="ConfigModelForXorNegative2" />
-      <ref role="Id4hC" node="3KT4CxIESIm" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
       <node concept="Id4hG" id="3KT4CxIFhcX" role="Id4hF">
-        <ref role="Id4hN" node="3KT4CxIESIn" />
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
         <node concept="Id4hG" id="3KT4CxIFhcY" role="Id4hH">
-          <ref role="Id4hN" node="3KT4CxIESIp" />
+          <ref role="Id4hN" node="3KT4CxIESIp" resolve="xorChild1" />
         </node>
         <node concept="Id4hG" id="3KT4CxIFhcZ" role="Id4hH">
-          <ref role="Id4hN" node="3KT4CxIESIr" />
+          <ref role="Id4hN" node="3KT4CxIESIr" resolve="xorChild2" />
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="3KT4CxIESIs" role="Idr$j">
       <property role="TrG5h" value="ConfigModelForXorNegative3" />
-      <ref role="Id4hC" node="3KT4CxIESIm" />
+      <ref role="Id4hC" node="3KT4CxIESIm" resolve="XorFeatures" />
       <node concept="Id4hG" id="3KT4CxIESIt" role="Id4hF">
-        <ref role="Id4hN" node="3KT4CxIESIn" />
+        <ref role="Id4hN" node="3KT4CxIESIn" resolve="XorFeatures_root" />
         <node concept="Id4hG" id="3KT4CxIESIu" role="Id4hH">
-          <ref role="Id4hN" node="3KT4CxIESIp" />
+          <ref role="Id4hN" node="3KT4CxIESIp" resolve="xorChild1" />
         </node>
         <node concept="Id4hG" id="3KT4CxIESIv" role="Id4hH">
-          <ref role="Id4hN" node="3KT4CxIESIr" />
+          <ref role="Id4hN" node="3KT4CxIESIr" resolve="xorChild2" />
         </node>
         <node concept="Id4hG" id="3KT4CxIESJs" role="Id4hH">
-          <ref role="Id4hN" node="3KT4CxIESIV" />
+          <ref role="Id4hN" node="3KT4CxIESIV" resolve="xorChild3" />
         </node>
       </node>
     </node>
@@ -173,13 +173,13 @@
           <node concept="Id4hK" id="68jd02E9zuM" role="Id4hQ">
             <property role="TrG5h" value="child11" />
             <node concept="1fCc5J" id="68jd02EcGqr" role="2FxFsO">
-              <ref role="1fCc5C" node="68jd02E9zuT" />
+              <ref role="1fCc5C" node="68jd02E9zuT" resolve="derived1" />
             </node>
           </node>
           <node concept="Id4hK" id="68jd02E9zuN" role="Id4hQ">
             <property role="TrG5h" value="child12" />
             <node concept="1fCc5J" id="68jd02E9zuO" role="2FxFsO">
-              <ref role="1fCc5C" node="68jd02EcGoU" />
+              <ref role="1fCc5C" node="68jd02EcGoU" resolve="derived2" />
             </node>
           </node>
         </node>
@@ -198,10 +198,10 @@
         <property role="TrG5h" value="derived1" />
         <node concept="2EHzL4" id="68jd02E9zuU" role="gT3TT">
           <node concept="2qVrgw" id="68jd02E9zuV" role="3TlMhJ">
-            <ref role="2qVrgz" node="68jd02E9zuS" />
+            <ref role="2qVrgz" node="68jd02E9zuS" resolve="child22" />
           </node>
           <node concept="2qVrgw" id="68jd02E9zuW" role="3TlMhI">
-            <ref role="2qVrgz" node="68jd02E9zuR" />
+            <ref role="2qVrgz" node="68jd02E9zuR" resolve="child21" />
           </node>
         </node>
       </node>
@@ -209,48 +209,48 @@
         <property role="TrG5h" value="derived2" />
         <node concept="2EHzL6" id="68jd02EcGpt" role="gT3TT">
           <node concept="2qVrgw" id="68jd02EcGpQ" role="3TlMhJ">
-            <ref role="2qVrgz" node="68jd02E9zuS" />
+            <ref role="2qVrgz" node="68jd02E9zuS" resolve="child22" />
           </node>
           <node concept="2qVrgw" id="68jd02EcGpe" role="3TlMhI">
-            <ref role="2qVrgz" node="68jd02E9zuR" />
+            <ref role="2qVrgz" node="68jd02E9zuR" resolve="child21" />
           </node>
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="68jd02E9zuX" role="Idr$j">
       <property role="TrG5h" value="CM1_DerivedFeatures" />
-      <ref role="Id4hC" node="68jd02E9zuH" />
+      <ref role="Id4hC" node="68jd02E9zuH" resolve="DerivedFeatures" />
       <node concept="Id4hG" id="68jd02E9zuY" role="Id4hF">
-        <ref role="Id4hN" node="68jd02E9zuI" />
+        <ref role="Id4hN" node="68jd02E9zuI" resolve="DerivedFeatures_root" />
         <node concept="Id4hG" id="68jd02E9zuZ" role="Id4hH">
-          <ref role="Id4hN" node="68jd02E9zuK" />
+          <ref role="Id4hN" node="68jd02E9zuK" resolve="child1" />
           <node concept="Id4hG" id="68jd02EcGqv" role="Id4hH">
-            <ref role="Id4hN" node="68jd02E9zuM" />
+            <ref role="Id4hN" node="68jd02E9zuM" resolve="child11" />
           </node>
         </node>
         <node concept="Id4hG" id="68jd02E9zv1" role="Id4hH">
-          <ref role="Id4hN" node="68jd02E9zuP" />
+          <ref role="Id4hN" node="68jd02E9zuP" resolve="child2" />
           <node concept="Id4hG" id="68jd02E9zv2" role="Id4hH">
-            <ref role="Id4hN" node="68jd02E9zuR" />
+            <ref role="Id4hN" node="68jd02E9zuR" resolve="child21" />
           </node>
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="68jd02EcGqW" role="Idr$j">
       <property role="TrG5h" value="CM2_DerivedFeatures" />
-      <ref role="Id4hC" node="68jd02E9zuH" />
+      <ref role="Id4hC" node="68jd02E9zuH" resolve="DerivedFeatures" />
       <node concept="Id4hG" id="68jd02EcGqX" role="Id4hF">
-        <ref role="Id4hN" node="68jd02E9zuI" />
+        <ref role="Id4hN" node="68jd02E9zuI" resolve="DerivedFeatures_root" />
         <node concept="Id4hG" id="68jd02EcGqY" role="Id4hH">
-          <ref role="Id4hN" node="68jd02E9zuK" />
+          <ref role="Id4hN" node="68jd02E9zuK" resolve="child1" />
           <node concept="Id4hG" id="68jd02EcGs_" role="Id4hH">
-            <ref role="Id4hN" node="68jd02E9zuN" />
+            <ref role="Id4hN" node="68jd02E9zuN" resolve="child12" />
           </node>
         </node>
         <node concept="Id4hG" id="68jd02EcGr0" role="Id4hH">
-          <ref role="Id4hN" node="68jd02E9zuP" />
+          <ref role="Id4hN" node="68jd02E9zuP" resolve="child2" />
           <node concept="Id4hG" id="68jd02EcGr1" role="Id4hH">
-            <ref role="Id4hN" node="68jd02E9zuR" />
+            <ref role="Id4hN" node="68jd02E9zuR" resolve="child21" />
           </node>
         </node>
       </node>
@@ -280,62 +280,62 @@
         <property role="TrG5h" value="derivedWithRequires" />
         <node concept="2EHzL6" id="4qsm5C8v1VB" role="gT3TT">
           <node concept="2qVrgw" id="4qsm5C8v1VC" role="3TlMhI">
-            <ref role="2qVrgz" node="4qsm5C8v1Vw" />
+            <ref role="2qVrgz" node="4qsm5C8v1Vw" resolve="c1" />
           </node>
           <node concept="2qVrgw" id="4qsm5C8v1VD" role="3TlMhJ">
-            <ref role="2qVrgz" node="4qsm5C8v1Vx" />
+            <ref role="2qVrgz" node="4qsm5C8v1Vx" resolve="c2" />
           </node>
         </node>
         <node concept="1fCc5J" id="4qsm5C8v1VE" role="2FxFsO">
-          <ref role="1fCc5C" node="4qsm5C8v1V$" />
+          <ref role="1fCc5C" node="4qsm5C8v1V$" resolve="required" />
         </node>
       </node>
       <node concept="gY_dk" id="4qsm5C8v1VF" role="gT3TO">
         <property role="TrG5h" value="derivedWithConflicts" />
         <node concept="2EHzL6" id="4qsm5C8v1VG" role="gT3TT">
           <node concept="2qVrgw" id="4qsm5C8v1VH" role="3TlMhJ">
-            <ref role="2qVrgz" node="4qsm5C8v1Vx" />
+            <ref role="2qVrgz" node="4qsm5C8v1Vx" resolve="c2" />
           </node>
           <node concept="2qVrgw" id="4qsm5C8v1VI" role="3TlMhI">
-            <ref role="2qVrgz" node="4qsm5C8v1Vw" />
+            <ref role="2qVrgz" node="4qsm5C8v1Vw" resolve="c1" />
           </node>
         </node>
         <node concept="1fCc5X" id="4qsm5C8v1VJ" role="2FxFsO">
-          <ref role="1fCc5C" node="4qsm5C8v1V_" />
+          <ref role="1fCc5C" node="4qsm5C8v1V_" resolve="conflicts" />
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="4qsm5C8v1VK" role="Idr$j">
       <property role="TrG5h" value="ConstraintsOnDerivedFeatures_Req" />
-      <ref role="Id4hC" node="4qsm5C8v1Vt" />
+      <ref role="Id4hC" node="4qsm5C8v1Vt" resolve="ConstraintsOnDerivedFeatures" />
       <node concept="Id4hG" id="4qsm5C8v1VL" role="Id4hF">
-        <ref role="Id4hN" node="4qsm5C8v1Vu" />
+        <ref role="Id4hN" node="4qsm5C8v1Vu" resolve="ConstraintsOnDerivedFeatures_root" />
         <node concept="Id4hG" id="4qsm5C8v1VM" role="Id4hH">
-          <ref role="Id4hN" node="4qsm5C8v1Vw" />
+          <ref role="Id4hN" node="4qsm5C8v1Vw" resolve="c1" />
         </node>
         <node concept="Id4hG" id="4qsm5C8v1VN" role="Id4hH">
-          <ref role="Id4hN" node="4qsm5C8v1Vx" />
+          <ref role="Id4hN" node="4qsm5C8v1Vx" resolve="c2" />
         </node>
         <node concept="Id4hG" id="4qsm5C8v1VO" role="Id4hH">
-          <ref role="Id4hN" node="4qsm5C8v1Vy" />
+          <ref role="Id4hN" node="4qsm5C8v1Vy" resolve="optional" />
         </node>
       </node>
     </node>
     <node concept="Id4hE" id="4qsm5C8v1VP" role="Idr$j">
       <property role="TrG5h" value="ConstraintsOnDerivedFeatures_Con" />
-      <ref role="Id4hC" node="4qsm5C8v1Vt" />
+      <ref role="Id4hC" node="4qsm5C8v1Vt" resolve="ConstraintsOnDerivedFeatures" />
       <node concept="Id4hG" id="4qsm5C8v1VQ" role="Id4hF">
-        <ref role="Id4hN" node="4qsm5C8v1Vu" />
+        <ref role="Id4hN" node="4qsm5C8v1Vu" resolve="ConstraintsOnDerivedFeatures_root" />
         <node concept="Id4hG" id="4qsm5C8v1VR" role="Id4hH">
-          <ref role="Id4hN" node="4qsm5C8v1Vw" />
+          <ref role="Id4hN" node="4qsm5C8v1Vw" resolve="c1" />
         </node>
         <node concept="Id4hG" id="4qsm5C8v1VS" role="Id4hH">
-          <ref role="Id4hN" node="4qsm5C8v1Vx" />
+          <ref role="Id4hN" node="4qsm5C8v1Vx" resolve="c2" />
         </node>
         <node concept="Id4hG" id="4qsm5C8v1VT" role="Id4hH">
-          <ref role="Id4hN" node="4qsm5C8v1Vy" />
+          <ref role="Id4hN" node="4qsm5C8v1Vy" resolve="optional" />
           <node concept="Id4hG" id="4qsm5C8v1VU" role="Id4hH">
-            <ref role="Id4hN" node="4qsm5C8v1V_" />
+            <ref role="Id4hN" node="4qsm5C8v1V_" resolve="conflicts" />
           </node>
         </node>
       </node>

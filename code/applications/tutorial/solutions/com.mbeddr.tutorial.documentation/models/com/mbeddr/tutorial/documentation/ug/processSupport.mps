@@ -242,7 +242,7 @@
             <node concept="3z_lpY" id="4KbglN$Oa6E" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$Oa6F" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$Oa6W" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
               </node>
             </node>
@@ -348,10 +348,10 @@
           <node concept="2bctqb" id="4KbglN$OaJi" role="3z_lpT" />
           <node concept="2NCZwO" id="4KbglN$OaJk" role="3z_lpI">
             <node concept="2NCMab" id="4KbglN$OaM5" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+              <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
             </node>
             <node concept="2NCMab" id="4KbglN$OaMb" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4I37X0YSZr3" />
+              <ref role="2NCMaa" to="e1tx:4I37X0YSZr3" resolve="FlightProcessor" />
             </node>
           </node>
         </node>
@@ -363,10 +363,10 @@
             <node concept="3z_lpY" id="4KbglN$T2sU" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T2sV" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T2t1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T2t6" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN$T2kh" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN$T2kh" resolve="everything" />
                 </node>
               </node>
             </node>
@@ -376,10 +376,10 @@
             <node concept="3z_lpY" id="4KbglN$T2ta" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T2tb" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T2tm" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T2tr" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN$QEGa" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN$QEGa" resolve="empty" />
                 </node>
               </node>
             </node>
@@ -396,13 +396,13 @@
             <node concept="3z_lpY" id="amCN_f6Mp2" role="19SJt6">
               <node concept="2NCZwO" id="amCN_f6Mp3" role="3z_lpZ">
                 <node concept="2NCMab" id="amCN_f6WmU" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="amCN_f6WmZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7mpzbZXhmk0" />
+                  <ref role="2NCMaa" to="e1tx:7mpzbZXhmk0" resolve="FlightProcessor_root" />
                 </node>
                 <node concept="2NCMab" id="amCN_f6Wn7" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YT88z" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YT88z" resolve="maxSpeed" />
                 </node>
               </node>
             </node>
@@ -439,10 +439,10 @@
             <node concept="3z_lpY" id="4KbglN$T407" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T408" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T40s" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T40y" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSZtg" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSZtg" resolve="cfgDoNothing" />
                 </node>
               </node>
             </node>
@@ -452,10 +452,10 @@
             <node concept="3z_lpY" id="4KbglN$T40J" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T40K" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T40L" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T416" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YT6qT" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YT6qT" resolve="cfgNullifyOnly" />
                 </node>
               </node>
             </node>
@@ -465,10 +465,10 @@
             <node concept="3z_lpY" id="4KbglN$T41f" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T41g" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T41h" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T41F" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSZtj" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSZtj" resolve="cfgNullifyMaxAt200" />
                 </node>
               </node>
             </node>
@@ -478,10 +478,10 @@
             <node concept="3z_lpY" id="4KbglN$T4uY" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T4uZ" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T4v0" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T4v1" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSZtj" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSZtj" resolve="cfgNullifyMaxAt200" />
                 </node>
               </node>
             </node>
@@ -491,10 +491,10 @@
             <node concept="3z_lpY" id="4KbglN$T4vv" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$T4vw" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$T4w2" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$T4w7" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YT6qN" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YT6qN" resolve="maxCustom" />
                 </node>
               </node>
             </node>
@@ -530,10 +530,10 @@
           <node concept="2bctqb" id="4IT6uofkTC" role="3z_lpT" />
           <node concept="2NCZwO" id="4IT6uofkTD" role="3z_lpI">
             <node concept="2NCMab" id="4IT6uofkTE" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+              <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
             </node>
             <node concept="2NCMab" id="4IT6uofkTF" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4I37X0YSZtj" />
+              <ref role="2NCMaa" to="e1tx:4I37X0YSZtj" resolve="cfgNullifyMaxAt200" />
             </node>
           </node>
         </node>
@@ -570,10 +570,10 @@
           <property role="3z_lpV" value="Trackpoint processTrackpoint(fmconfig&lt;FlightProcessor&gt; cfg, Trackpoint tp) {&#10;  Trackpoint result;                                                        &#10;  variant&lt;cfg&gt; {                                                            &#10;  case (nullify &amp;&amp; maxCustom) {                                             &#10;  result = process_nullifyAlt(tp);                                          &#10;  if (tp.speed &gt; maxCustom.maxSpeed) {                                      &#10;  result.speed = maxCustom.maxSpeed;                                        &#10;} if                                                                        &#10;}                                                                           &#10;  case (nullify &amp;&amp; max100) {                                                &#10;  result = process_nullifyAlt(tp);                                          &#10;  if (tp.speed &gt; 100 mps) {                                                 &#10;  result.speed = 100 mps;                                                   &#10;} if                                                                        &#10;}                                                                           &#10;  case (nullify) { result = process_nullifyAlt(tp); }                       &#10;  default { result = process_doNothing(tp); }                               &#10;}                                                                           &#10;  return result;                                                            &#10;} processTrackpoint (function)                                              " />
           <node concept="2NCZwO" id="4KbglN$T7OJ" role="3z_lpI">
             <node concept="2NCMab" id="4KbglN$T7QH" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4I37X0YSE6M" />
+              <ref role="2NCMaa" to="e1tx:4I37X0YSE6M" resolve="RuntimeVariability" />
             </node>
             <node concept="2NCMab" id="4KbglN$T7QM" role="2NCMaf">
-              <ref role="2NCMaa" to="e1tx:4I37X0YSZrQ" />
+              <ref role="2NCMaa" to="e1tx:4I37X0YSZrQ" resolve="processTrackpoint" />
             </node>
           </node>
         </node>
@@ -595,7 +595,7 @@
             <node concept="3z_lpY" id="4KbglN$TcEz" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$TcE$" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$TcEH" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
               </node>
             </node>
@@ -682,10 +682,10 @@
             <node concept="3z_lpY" id="4KbglN$Te0i" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$Te0j" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$Te0p" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE77" resolve="FlightVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$Te0u" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YT88z" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YT88z" resolve="maxSpeed" />
                 </node>
               </node>
             </node>
@@ -702,10 +702,10 @@
             <node concept="3z_lpY" id="4KbglN$ZM_N" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN$ZM_O" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN$ZM_P" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSE6M" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSE6M" resolve="RuntimeVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN$ZM_Q" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4I37X0YSZr8" />
+                  <ref role="2NCMaa" to="e1tx:4I37X0YSZr8" resolve="testRuntimeVar" />
                 </node>
               </node>
             </node>
@@ -769,10 +769,10 @@
             <node concept="3z_lpY" id="4KbglN_50bX" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_50bY" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_50bZ" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_50c0" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddm4" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddm4" resolve="process_trackpoint" />
                 </node>
               </node>
             </node>
@@ -782,10 +782,10 @@
             <node concept="3z_lpY" id="4KbglN_5104" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_5105" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_5106" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_5107" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddmZ" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddmZ" resolve="testPresenceConditions" />
                 </node>
               </node>
             </node>
@@ -889,7 +889,7 @@
             <node concept="3z_lpY" id="4KbglN_52PZ" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_52Q0" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_52Q2" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
               </node>
             </node>
@@ -946,10 +946,10 @@
             <node concept="3z_lpY" id="4KbglN_7vaC" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_7vaD" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_7vaE" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_7vaF" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN_6Vgh" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN_6Vgh" resolve="testConditionalReplacement" />
                 </node>
               </node>
             </node>
@@ -959,10 +959,10 @@
             <node concept="3z_lpY" id="4KbglN_7vb3" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_7vb4" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_7vbo" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_7vbw" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN_6X9C" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN_6X9C" resolve="v1" />
                 </node>
               </node>
             </node>
@@ -1032,10 +1032,10 @@
             <node concept="3z_lpY" id="4KbglN_7wzF" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_7wzG" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_7wzH" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_7w$Z" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN_74r$" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN_74r$" resolve="v2" />
                 </node>
               </node>
             </node>
@@ -1062,10 +1062,10 @@
             <node concept="3z_lpY" id="4KbglN_9sRt" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_9sRu" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_9sRv" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_9RRi" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN_9MEz" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN_9MEz" resolve="alternatives" />
                 </node>
               </node>
             </node>
@@ -1075,10 +1075,10 @@
             <node concept="3z_lpY" id="4KbglN_9RRs" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_9RRt" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_9RRC" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_9RRH" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN_9A0r" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN_9A0r" resolve="add" />
                 </node>
               </node>
             </node>
@@ -1088,10 +1088,10 @@
             <node concept="3z_lpY" id="4KbglN_9Tvu" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_9Tvv" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_9Tvw" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" />
+                  <ref role="2NCMaa" to="e1tx:KfIhkXddlU" resolve="StaticVariability" />
                 </node>
                 <node concept="2NCMab" id="4KbglN_9Tvx" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:4KbglN_7Dll" />
+                  <ref role="2NCMaa" to="e1tx:4KbglN_7Dll" resolve="testConditionalAlternative" />
                 </node>
               </node>
             </node>
@@ -1180,7 +1180,7 @@
             <node concept="3z_lpY" id="4KbglN_a0jg" role="19SJt6">
               <node concept="2NCZwO" id="4KbglN_a0jh" role="3z_lpZ">
                 <node concept="2NCMab" id="4KbglN_a0jj" role="2NCMaf">
-                  <ref role="2NCMaa" to="e1tx:7VsgA5L655o" />
+                  <ref role="2NCMaa" to="e1tx:7VsgA5L655o" resolve="BuildConfiguration (m.t.m.defaultExtensions)" />
                 </node>
               </node>
             </node>
@@ -2336,7 +2336,7 @@
             <node concept="3z_lpY" id="12l$qjddo1T" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjddoel" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjddoep" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
                 </node>
               </node>
             </node>
@@ -2346,7 +2346,7 @@
             <node concept="3z_lpY" id="12l$qjdfnB1" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdfnB2" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdfnBg" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:72IKZbjZLi7" />
+                  <ref role="2NCMaa" to="iwll:72IKZbjZLi7" resolve="ArchitecturalComponents" />
                 </node>
               </node>
             </node>
@@ -2356,7 +2356,7 @@
             <node concept="3z_lpY" id="12l$qjdfnBi" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdfnBj" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdfnB_" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:5YVZL2kzViv" />
+                  <ref role="2NCMaa" to="iwll:5YVZL2kzViv" resolve="UseCases" />
                 </node>
               </node>
             </node>
@@ -2377,7 +2377,7 @@
             <node concept="3z_lpY" id="12l$qjdfqgA" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdfqgB" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdfqgC" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
                 </node>
               </node>
             </node>
@@ -2439,10 +2439,10 @@
           <node concept="2bctqb" id="12l$qjdfx$V" role="3z_lpT" />
           <node concept="2NCZwO" id="12l$qjdfx$X" role="3z_lpI">
             <node concept="2NCMab" id="12l$qjdfx_i" role="2NCMaf">
-              <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+              <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
             </node>
             <node concept="2NCMab" id="12l$qjdfx_o" role="2NCMaf">
-              <ref role="2NCMaa" to="iwll:2Ts93hyB7mP" />
+              <ref role="2NCMaa" to="iwll:2Ts93hyB7mP" resolve="InitialNoPoints" />
             </node>
           </node>
         </node>
@@ -2454,10 +2454,10 @@
             <node concept="3z_lpY" id="12l$qjdfBaa" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdfBab" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdfBah" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
                 </node>
                 <node concept="2NCMab" id="12l$qjdfBam" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSY" />
+                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSY" resolve="InFlightPoints" />
                 </node>
               </node>
             </node>
@@ -2517,10 +2517,10 @@
             <node concept="3z_lpY" id="12l$qjdg4h4" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdg4h5" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdg4hb" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
                 </node>
                 <node concept="2NCMab" id="12l$qjdg7TL" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:uFBNcnBw5Z" />
+                  <ref role="2NCMaa" to="iwll:uFBNcnBw5Z" resolve="PointForATrackpoint" />
                 </node>
               </node>
             </node>
@@ -2530,10 +2530,10 @@
             <node concept="3z_lpY" id="12l$qjdg9Hz" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdg9H$" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdg9HJ" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+                  <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
                 </node>
                 <node concept="2NCMab" id="12l$qjdg9HO" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:2A5UqXKRpLH" />
+                  <ref role="2NCMaa" to="iwll:2A5UqXKRpLH" resolve="priceDep" />
                 </node>
               </node>
             </node>
@@ -2543,10 +2543,10 @@
             <node concept="3z_lpY" id="12l$qjdg9IO" role="19SJt6">
               <node concept="2NCZwO" id="12l$qjdg9IP" role="3z_lpZ">
                 <node concept="2NCMab" id="12l$qjdg9J5" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:72IKZbjZLi7" />
+                  <ref role="2NCMaa" to="iwll:72IKZbjZLi7" resolve="ArchitecturalComponents" />
                 </node>
                 <node concept="2NCMab" id="12l$qjdg9JG" role="2NCMaf">
-                  <ref role="2NCMaa" to="iwll:72IKZbjZMHH" />
+                  <ref role="2NCMaa" to="iwll:72IKZbjZMHH" resolve="Driver" />
                 </node>
               </node>
             </node>
@@ -2644,10 +2644,10 @@
           <node concept="2bctqb" id="12l$qjdgbNO" role="3z_lpT" />
           <node concept="2NCZwO" id="12l$qjdgbNQ" role="3z_lpI">
             <node concept="2NCMab" id="12l$qjdgbPw" role="2NCMaf">
-              <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+              <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
             </node>
             <node concept="2NCMab" id="12l$qjdgbPE" role="2NCMaf">
-              <ref role="2NCMaa" to="iwll:1uZspiXVHSC" />
+              <ref role="2NCMaa" to="iwll:1uZspiXVHSC" resolve="ExampleWithDependencies" />
             </node>
           </node>
           <node concept="2Cuv_b" id="12l$qjdgjGF" role="3z_lpH">
@@ -2758,10 +2758,10 @@
           <property role="TrG5h" value="depVis" />
           <node concept="2NCZwO" id="12l$qjdhAVr" role="ZeNY6">
             <node concept="2NCMab" id="12l$qjdhAX$" role="2NCMaf">
-              <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" />
+              <ref role="2NCMaa" to="iwll:1fAuj8TwdSV" resolve="FlightJudgementRules" />
             </node>
             <node concept="2NCMab" id="12l$qjdhAXD" role="2NCMaf">
-              <ref role="2NCMaa" to="iwll:1uZspiXVHSC" />
+              <ref role="2NCMaa" to="iwll:1uZspiXVHSC" resolve="ExampleWithDependencies" />
             </node>
           </node>
           <node concept="OjmMv" id="12l$qjdhAVt" role="tKoid">
@@ -2844,7 +2844,7 @@
           <node concept="3z_lpY" id="2rKfGsWjsDk" role="19SJt6">
             <node concept="2NCZwO" id="2rKfGsWjsDl" role="3z_lpZ">
               <node concept="2NCMab" id="2rKfGsWjsDr" role="2NCMaf">
-                <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
+                <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
               </node>
             </node>
           </node>
@@ -3038,7 +3038,7 @@
           <node concept="3z_lpY" id="2rKfGsWp$Vi" role="19SJt6">
             <node concept="2NCZwO" id="2rKfGsWp$Vj" role="3z_lpZ">
               <node concept="2NCMab" id="2rKfGsWp$Vt" role="2NCMaf">
-                <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" />
+                <ref role="2NCMaa" to="e1tx:4usdeMNVnYi" resolve="StateMachines" />
               </node>
             </node>
           </node>
@@ -3379,10 +3379,10 @@
                 <node concept="3z_lpY" id="4IT6unUdC1" role="19SJt6">
                   <node concept="2NCZwO" id="4IT6unUdC2" role="3z_lpZ">
                     <node concept="2NCMab" id="4IT6unUdCc" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
                     </node>
                     <node concept="2NCMab" id="4IT6unUdCh" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMm" />
+                      <ref role="2NCMaa" to="e1tx:1w5Xuj1SfMm" resolve="FlightJudger" />
                     </node>
                   </node>
                 </node>
@@ -3429,10 +3429,10 @@
                 <node concept="3z_lpY" id="4IT6unUloL" role="19SJt6">
                   <node concept="2NCZwO" id="4IT6unUloM" role="3z_lpZ">
                     <node concept="2NCMab" id="4IT6unUloN" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
                     </node>
                     <node concept="2NCMab" id="4IT6unUloO" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:6tDQfttHx1l" />
+                      <ref role="2NCMaa" to="e1tx:6tDQfttHx1l" resolve="Judge2" />
                     </node>
                   </node>
                 </node>
@@ -3469,10 +3469,10 @@
                 <node concept="3z_lpY" id="4IT6uo38Q_" role="19SJt6">
                   <node concept="2NCZwO" id="4IT6uo38QA" role="3z_lpZ">
                     <node concept="2NCMab" id="4IT6uo38QB" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
                     </node>
                     <node concept="2NCMab" id="4IT6uo38QC" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNSHXS" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNSHXS" resolve="instancesJudging" />
                     </node>
                   </node>
                 </node>
@@ -3529,10 +3529,10 @@
                 <node concept="3z_lpY" id="4IT6uo3fze" role="19SJt6">
                   <node concept="2NCZwO" id="4IT6uo3fzf" role="3z_lpZ">
                     <node concept="2NCMab" id="4IT6uo3fzg" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" />
+                      <ref role="2NCMaa" to="e1tx:1w5Xuj1QYPN" resolve="Components" />
                     </node>
                     <node concept="2NCMab" id="4IT6uo3fzh" role="2NCMaf">
-                      <ref role="2NCMaa" to="e1tx:4usdeMNSGkI" />
+                      <ref role="2NCMaa" to="e1tx:4usdeMNSGkI" resolve="testJudging" />
                     </node>
                   </node>
                 </node>

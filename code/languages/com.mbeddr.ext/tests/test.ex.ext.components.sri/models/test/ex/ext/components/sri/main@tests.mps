@@ -345,7 +345,7 @@
       <node concept="3i3YCL" id="RsLjUnNRZg" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="1PvAkX2sqti" />
+        <ref role="35zhcq" node="1PvAkX2sqti" resolve="SrTestConfig" />
       </node>
     </node>
     <node concept="MH4UO" id="4c3N3BQ6iQE" role="2Q9xDr">
@@ -354,16 +354,16 @@
     <node concept="2eOfOl" id="RsLjUnMNv2" role="2ePNbc">
       <property role="TrG5h" value="TestSenderReceiver" />
       <node concept="2v9HqM" id="4c3N3BQ5ZyX" role="2eOfOg">
-        <ref role="2v9HqP" node="4c3N3BQ5Xou" />
+        <ref role="2v9HqP" node="4c3N3BQ5Xou" resolve="Main" />
       </node>
       <node concept="2v9HqM" id="RsLjUnMNv3" role="2eOfOg">
-        <ref role="2v9HqP" node="RsLjUnMNu5" />
+        <ref role="2v9HqP" node="RsLjUnMNu5" resolve="TestSenderReceiver" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTAoV" role="1kZvWc">
         <property role="TrG5h" value="any" />
       </node>
       <node concept="2v9HqM" id="4c3N3BQ5Zz1" role="2eOfOg">
-        <ref role="2v9HqP" node="4c3N3BOdXWy" />
+        <ref role="2v9HqP" node="4c3N3BOdXWy" resolve="TestProviderConsumerSample" />
       </node>
     </node>
     <node concept="12mU2y" id="5B69dDbeJIj" role="2Q9xDr" />
@@ -395,7 +395,7 @@
           <node concept="1sgJKr" id="6Ywynt2TUk$" role="2umbIo">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="1PvAkX2sUyO" />
+            <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
           </node>
           <node concept="3TlMh9" id="6Ywynt2TUkA" role="1YbSNA">
             <property role="2hmy$m" value="3" />
@@ -442,7 +442,7 @@
         <property role="TrG5h" value="position" />
         <property role="1vaOcW" value="false" />
         <node concept="1sgJKr" id="1PvAkX2sUyX" role="2C2TGm">
-          <ref role="1sgJKq" node="1PvAkX2sUyO" />
+          <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
         </node>
       </node>
     </node>
@@ -454,11 +454,11 @@
       <property role="TrG5h" value="Kombi" />
       <node concept="2EWHp$" id="RsLjUnOUPn" role="2RW2fA">
         <property role="TrG5h" value="carData" />
-        <ref role="2EX0h9" node="RsLjUnNb$Z" />
+        <ref role="2EX0h9" node="RsLjUnNb$Z" resolve="CarData" />
       </node>
       <node concept="2EWHp$" id="6Ywynt2TUkF" role="2RW2fA">
         <property role="TrG5h" value="carPositions" />
-        <ref role="2EX0h9" node="6Ywynt2TUkx" />
+        <ref role="2EX0h9" node="6Ywynt2TUkx" resolve="CarPositions" />
       </node>
       <node concept="3Khz0B" id="AQ_pw8xkVz" role="2RW2fA" />
       <node concept="2EWDwb" id="AQ_pw8xkVC" role="2RW2fA">
@@ -467,10 +467,10 @@
           <node concept="1_9egQ" id="AQ_pw8xkVG" role="3XIRFZ">
             <node concept="3pqW6w" id="AQ_pw8xkVK" role="1_9egR">
               <node concept="2H6loZ" id="AQ_pw8xkVN" role="3TlMhJ">
-                <ref role="2H6loY" node="RsLjUnOUPn" />
+                <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
               </node>
               <node concept="1S7827" id="AQ_pw8xkVH" role="3TlMhI">
-                <ref role="1S7826" node="AQ_pw8xkVx" />
+                <ref role="1S7826" node="AQ_pw8xkVx" resolve="kombicarDataVar" />
               </node>
             </node>
           </node>
@@ -488,10 +488,10 @@
           <node concept="2BFjQ_" id="1PvAkX2sRo8" role="3XIRFZ">
             <node concept="2qmXGp" id="4WC4fmON7nk" role="2BFjQA">
               <node concept="2H6loZ" id="4WC4fmON7nj" role="1_9fRO">
-                <ref role="2H6loY" node="RsLjUnOUPn" />
+                <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
               </node>
               <node concept="3VJJif" id="4WC4fmON7nl" role="1ESnxz">
-                <ref role="3VxgQD" node="RsLjUnNu$7" />
+                <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
               </node>
             </node>
           </node>
@@ -508,16 +508,16 @@
           <node concept="2BFjQ_" id="1PvAkX2sUz7" role="3XIRFZ">
             <node concept="2qmXGp" id="4WC4fmON7nn" role="2BFjQA">
               <node concept="2H6loZ" id="4WC4fmON7nm" role="1_9fRO">
-                <ref role="2H6loY" node="RsLjUnOUPn" />
+                <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
               </node>
               <node concept="3VJJif" id="4WC4fmON7no" role="1ESnxz">
-                <ref role="3VxgQD" node="1PvAkX2sUyV" />
+                <ref role="3VxgQD" node="1PvAkX2sUyV" resolve="position" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1sgJKr" id="1PvAkX2sUz3" role="2C2TGm">
-          <ref role="1sgJKq" node="1PvAkX2sUyO" />
+          <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
         </node>
         <node concept="1KB$IV" id="7moPk04QkAT" role="lGtFl" />
       </node>
@@ -528,14 +528,14 @@
             <node concept="2qmXGp" id="6iKSPgYFokh" role="2BFjQA">
               <node concept="2qmXGp" id="4WC4fmON7nq" role="1_9fRO">
                 <node concept="2H6loZ" id="4WC4fmON7np" role="1_9fRO">
-                  <ref role="2H6loY" node="RsLjUnOUPn" />
+                  <ref role="2H6loY" node="RsLjUnOUPn" resolve="carData" />
                 </node>
                 <node concept="3VJJif" id="4WC4fmON7nr" role="1ESnxz">
-                  <ref role="3VxgQD" node="1PvAkX2sUyV" />
+                  <ref role="3VxgQD" node="1PvAkX2sUyV" resolve="position" />
                 </node>
               </node>
               <node concept="1E4Tgc" id="6iKSPgYFoki" role="1ESnxz">
-                <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+                <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
               </node>
             </node>
           </node>
@@ -568,7 +568,7 @@
         <node concept="1sgJKr" id="6Ywynt2TUkJ" role="2umbIo">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
-          <ref role="1sgJKq" node="1PvAkX2sUyO" />
+          <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
         </node>
         <node concept="3TlMh9" id="6Ywynt2TUkL" role="1YbSNA">
           <property role="2hmy$m" value="3" />
@@ -584,14 +584,14 @@
         <node concept="1_9egQ" id="4c3N3BQ5DCn" role="3XIRFZ">
           <node concept="3pqW6w" id="4c3N3BQ5DD0" role="1_9egR">
             <node concept="3ZUYvv" id="4c3N3BQ5DEK" role="3TlMhJ">
-              <ref role="3ZUYvu" node="4c3N3BQ5DEa" />
+              <ref role="3ZUYvu" node="4c3N3BQ5DEa" resolve="drehzahl" />
             </node>
             <node concept="2qmXGp" id="4c3N3BQ5DCw" role="3TlMhI">
               <node concept="3VxgRJ" id="4c3N3BQ5DCO" role="1ESnxz">
-                <ref role="3VxgQD" node="RsLjUnNu$7" />
+                <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
               </node>
               <node concept="3ZUYvv" id="4c3N3BQ5DCl" role="1_9fRO">
-                <ref role="3ZUYvu" node="4c3N3BQ5DBE" />
+                <ref role="3ZUYvu" node="4c3N3BQ5DBE" resolve="carData" />
               </node>
             </node>
           </node>
@@ -601,7 +601,7 @@
       <node concept="19RgSI" id="4c3N3BQ5DBE" role="1UOdpc">
         <property role="TrG5h" value="carData" />
         <node concept="2H6ZW9" id="4c3N3BQ5DBD" role="2C2TGm">
-          <ref role="2H6ZW8" node="RsLjUnNb$Z" />
+          <ref role="2H6ZW8" node="RsLjUnNb$Z" resolve="CarData" />
         </node>
       </node>
       <node concept="19RgSI" id="4c3N3BQ5DEa" role="1UOdpc">
@@ -618,14 +618,14 @@
         <node concept="1_9egQ" id="4c3N3BRVKQO" role="3XIRFZ">
           <node concept="3pqW6w" id="4c3N3BRVKRq" role="1_9egR">
             <node concept="3ZUYvv" id="4c3N3BRVKRZ" role="3TlMhJ">
-              <ref role="3ZUYvu" node="4c3N3BRVKQj" />
+              <ref role="3ZUYvu" node="4c3N3BRVKQj" resolve="id" />
             </node>
             <node concept="2qmXGp" id="4c3N3BRVKQX" role="3TlMhI">
               <node concept="3VxgRJ" id="4c3N3BRVKRh" role="1ESnxz">
-                <ref role="3VxgQD" node="RsLjUnOBWo" />
+                <ref role="3VxgQD" node="RsLjUnOBWo" resolve="id" />
               </node>
               <node concept="3ZUYvv" id="4c3N3BRVKQM" role="1_9fRO">
-                <ref role="3ZUYvu" node="4c3N3BRVKPw" />
+                <ref role="3ZUYvu" node="4c3N3BRVKPw" resolve="carType" />
               </node>
             </node>
           </node>
@@ -635,7 +635,7 @@
       <node concept="19RgSI" id="4c3N3BRVKPw" role="1UOdpc">
         <property role="TrG5h" value="carType" />
         <node concept="2H6ZW9" id="4c3N3BRVKPv" role="2C2TGm">
-          <ref role="2H6ZW8" node="RsLjUnOBWn" />
+          <ref role="2H6ZW8" node="RsLjUnOBWn" resolve="CarType" />
         </node>
       </node>
       <node concept="19RgSI" id="4c3N3BRVKQj" role="1UOdpc">
@@ -651,17 +651,17 @@
       <property role="TrG5h" value="Motor" />
       <node concept="2EWHp_" id="RsLjUnNu$f" role="2RW2fA">
         <property role="TrG5h" value="carData" />
-        <ref role="2EX0h9" node="RsLjUnNb$Z" />
+        <ref role="2EX0h9" node="RsLjUnNb$Z" resolve="CarData" />
       </node>
       <node concept="3Khz0B" id="29JE8qNw0HJ" role="2RW2fA" />
       <node concept="2EWHp_" id="29JE8qNw0HH" role="2RW2fA">
         <property role="TrG5h" value="carType" />
-        <ref role="2EX0h9" node="RsLjUnOBWn" />
+        <ref role="2EX0h9" node="RsLjUnOBWn" resolve="CarType" />
         <node concept="2h56Qp" id="29JE8qNw0HI" role="lGtFl" />
       </node>
       <node concept="2EWHp_" id="6Ywynt2TUkC" role="2RW2fA">
         <property role="TrG5h" value="carPositions" />
-        <ref role="2EX0h9" node="6Ywynt2TUkx" />
+        <ref role="2EX0h9" node="6Ywynt2TUkx" resolve="CarPositions" />
         <node concept="2h56Qp" id="6Ywynt2TUkD" role="lGtFl" />
       </node>
       <node concept="3Khz0B" id="RsLjUnNu$g" role="2RW2fA" />
@@ -671,14 +671,14 @@
           <node concept="1_9egQ" id="RsLjUnOl1x" role="3XIRFZ">
             <node concept="3pqW6w" id="RsLjUnOBWu" role="1_9egR">
               <node concept="3ZUYvv" id="1PvAkX2tdtm" role="3TlMhJ">
-                <ref role="3ZUYvu" node="1PvAkX2tdtk" />
+                <ref role="3ZUYvu" node="1PvAkX2tdtk" resolve="value" />
               </node>
               <node concept="2qmXGp" id="4WC4fmON7nt" role="3TlMhI">
                 <node concept="2H6loZ" id="4WC4fmON7ns" role="1_9fRO">
-                  <ref role="2H6loY" node="RsLjUnNu$f" />
+                  <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
                 </node>
                 <node concept="3VJJif" id="4WC4fmON7nu" role="1ESnxz">
-                  <ref role="3VxgQD" node="RsLjUnNu$7" />
+                  <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
                 </node>
               </node>
             </node>
@@ -702,12 +702,12 @@
         <node concept="3XIRFW" id="4c3N3BQ5DJY" role="2EWMhI">
           <node concept="1_9egQ" id="4c3N3BQ5DNv" role="3XIRFZ">
             <node concept="3O_q_g" id="4c3N3BQ5DNt" role="1_9egR">
-              <ref role="3O_q_h" node="4c3N3BQ5Dya" />
+              <ref role="3O_q_h" node="4c3N3BQ5Dya" resolve="setCarDataDrehzahlFunc" />
               <node concept="2H6loZ" id="4c3N3BQ5DNG" role="3O_q_j">
-                <ref role="2H6loY" node="RsLjUnNu$f" />
+                <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
               </node>
               <node concept="3ZUYvv" id="4c3N3BQ5DOe" role="3O_q_j">
-                <ref role="3ZUYvu" node="4c3N3BQ5DL_" />
+                <ref role="3ZUYvu" node="4c3N3BQ5DL_" resolve="value" />
               </node>
             </node>
           </node>
@@ -725,14 +725,14 @@
           <node concept="1_9egQ" id="29JE8qNwgdo" role="3XIRFZ">
             <node concept="3pqW6w" id="29JE8qNwgdp" role="1_9egR">
               <node concept="3ZUYvv" id="29JE8qNwgdq" role="3TlMhJ">
-                <ref role="3ZUYvu" node="29JE8qNwgdu" />
+                <ref role="3ZUYvu" node="29JE8qNwgdu" resolve="value" />
               </node>
               <node concept="2qmXGp" id="4WC4fmON7nw" role="3TlMhI">
                 <node concept="2H6loZ" id="4WC4fmON7nv" role="1_9fRO">
-                  <ref role="2H6loY" node="29JE8qNw0HH" />
+                  <ref role="2H6loY" node="29JE8qNw0HH" resolve="carType" />
                 </node>
                 <node concept="3VJJif" id="4WC4fmON7nx" role="1ESnxz">
-                  <ref role="3VxgQD" node="RsLjUnOBWo" />
+                  <ref role="3VxgQD" node="RsLjUnOBWo" resolve="id" />
                 </node>
               </node>
             </node>
@@ -756,12 +756,12 @@
         <node concept="3XIRFW" id="4c3N3BRVKSi" role="2EWMhI">
           <node concept="1_9egQ" id="4c3N3BRVKVR" role="3XIRFZ">
             <node concept="3O_q_g" id="4c3N3BRVKVP" role="1_9egR">
-              <ref role="3O_q_h" node="4c3N3BRVKJy" />
+              <ref role="3O_q_h" node="4c3N3BRVKJy" resolve="setCarTypeFunc" />
               <node concept="2H6loZ" id="4c3N3BRVKWx" role="3O_q_j">
-                <ref role="2H6loY" node="29JE8qNw0HH" />
+                <ref role="2H6loY" node="29JE8qNw0HH" resolve="carType" />
               </node>
               <node concept="3ZUYvv" id="4c3N3BRVKW8" role="3O_q_j">
-                <ref role="3ZUYvu" node="4c3N3BRVKSq" />
+                <ref role="3ZUYvu" node="4c3N3BRVKSq" resolve="value" />
               </node>
             </node>
           </node>
@@ -785,14 +785,14 @@
           <node concept="1_9egQ" id="1PvAkX2tdsV" role="3XIRFZ">
             <node concept="3pqW6w" id="1PvAkX2tdsW" role="1_9egR">
               <node concept="3ZUYvv" id="1PvAkX2tdts" role="3TlMhJ">
-                <ref role="3ZUYvu" node="1PvAkX2tdtp" />
+                <ref role="3ZUYvu" node="1PvAkX2tdtp" resolve="pos" />
               </node>
               <node concept="2qmXGp" id="4WC4fmON7nz" role="3TlMhI">
                 <node concept="2H6loZ" id="4WC4fmON7ny" role="1_9fRO">
-                  <ref role="2H6loY" node="RsLjUnNu$f" />
+                  <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
                 </node>
                 <node concept="3VJJif" id="4WC4fmON7n$" role="1ESnxz">
-                  <ref role="3VxgQD" node="1PvAkX2sUyV" />
+                  <ref role="3VxgQD" node="1PvAkX2sUyV" resolve="position" />
                 </node>
               </node>
             </node>
@@ -805,7 +805,7 @@
         <node concept="19RgSI" id="1PvAkX2tdtp" role="1UOdpc">
           <property role="TrG5h" value="pos" />
           <node concept="1sgJKr" id="1PvAkX2tdtq" role="2C2TGm">
-            <ref role="1sgJKq" node="1PvAkX2sUyO" />
+            <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
           </node>
         </node>
         <node concept="1KB$IV" id="7moPk04QkAO" role="lGtFl" />
@@ -817,28 +817,28 @@
             <node concept="3pqW6w" id="6Ywynt2TUlf" role="1_9egR">
               <node concept="2qmXGp" id="6iKSPgYFoHg" role="3TlMhJ">
                 <node concept="3ZUYvv" id="6Ywynt2TUlg" role="1_9fRO">
-                  <ref role="3ZUYvu" node="6Ywynt2TUlk" />
+                  <ref role="3ZUYvu" node="6Ywynt2TUlk" resolve="pos" />
                 </node>
                 <node concept="1E4Tgc" id="6iKSPgYFoHh" role="1ESnxz">
-                  <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+                  <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
                 </node>
               </node>
               <node concept="2qmXGp" id="6iKSPgYFogn" role="3TlMhI">
                 <node concept="2wJmCr" id="6Ywynt2TUlt" role="1_9fRO">
                   <node concept="2qmXGp" id="4WC4fmON7nA" role="1_9fRO">
                     <node concept="2H6loZ" id="4WC4fmON7n_" role="1_9fRO">
-                      <ref role="2H6loY" node="6Ywynt2TUkC" />
+                      <ref role="2H6loY" node="6Ywynt2TUkC" resolve="carPositions" />
                     </node>
                     <node concept="3VJJif" id="4WC4fmON7nB" role="1ESnxz">
-                      <ref role="3VxgQD" node="6Ywynt2TUky" />
+                      <ref role="3VxgQD" node="6Ywynt2TUky" resolve="poses" />
                     </node>
                   </node>
                   <node concept="3ZUYvv" id="6Ywynt2TUlw" role="2wJmCp">
-                    <ref role="3ZUYvu" node="6Ywynt2TUln" />
+                    <ref role="3ZUYvu" node="6Ywynt2TUln" resolve="idx" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="6iKSPgYFogo" role="1ESnxz">
-                  <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+                  <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
                 </node>
               </node>
             </node>
@@ -847,28 +847,28 @@
             <node concept="3pqW6w" id="6Ywynt2TUlT" role="1_9egR">
               <node concept="2qmXGp" id="6iKSPgYFof_" role="3TlMhJ">
                 <node concept="3ZUYvv" id="6Ywynt2TUlW" role="1_9fRO">
-                  <ref role="3ZUYvu" node="6Ywynt2TUlk" />
+                  <ref role="3ZUYvu" node="6Ywynt2TUlk" resolve="pos" />
                 </node>
                 <node concept="1E4Tgc" id="6iKSPgYFofA" role="1ESnxz">
-                  <ref role="1E4Tge" node="1PvAkX2sUyS" />
+                  <ref role="1E4Tge" node="1PvAkX2sUyS" resolve="y" />
                 </node>
               </node>
               <node concept="2qmXGp" id="6iKSPgYFpdv" role="3TlMhI">
                 <node concept="2wJmCr" id="6Ywynt2TUlZ" role="1_9fRO">
                   <node concept="2qmXGp" id="4WC4fmON7nD" role="1_9fRO">
                     <node concept="2H6loZ" id="4WC4fmON7nC" role="1_9fRO">
-                      <ref role="2H6loY" node="6Ywynt2TUkC" />
+                      <ref role="2H6loY" node="6Ywynt2TUkC" resolve="carPositions" />
                     </node>
                     <node concept="3VJJif" id="4WC4fmON7nE" role="1ESnxz">
-                      <ref role="3VxgQD" node="6Ywynt2TUky" />
+                      <ref role="3VxgQD" node="6Ywynt2TUky" resolve="poses" />
                     </node>
                   </node>
                   <node concept="3ZUYvv" id="6Ywynt2TUm2" role="2wJmCp">
-                    <ref role="3ZUYvu" node="6Ywynt2TUln" />
+                    <ref role="3ZUYvu" node="6Ywynt2TUln" resolve="idx" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="6iKSPgYFpdw" role="1ESnxz">
-                  <ref role="1E4Tge" node="1PvAkX2sUyS" />
+                  <ref role="1E4Tge" node="1PvAkX2sUyS" resolve="y" />
                 </node>
               </node>
             </node>
@@ -888,7 +888,7 @@
         <node concept="19RgSI" id="6Ywynt2TUlk" role="1UOdpc">
           <property role="TrG5h" value="pos" />
           <node concept="1sgJKr" id="6Ywynt2TUll" role="2C2TGm">
-            <ref role="1sgJKq" node="1PvAkX2sUyO" />
+            <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
           </node>
         </node>
         <node concept="1KB$IV" id="7moPk04QkAS" role="lGtFl" />
@@ -901,18 +901,18 @@
               <node concept="2qmXGp" id="6iKSPgYFowL" role="3TlMhI">
                 <node concept="2qmXGp" id="4WC4fmON7nG" role="1_9fRO">
                   <node concept="2H6loZ" id="4WC4fmON7nF" role="1_9fRO">
-                    <ref role="2H6loY" node="RsLjUnNu$f" />
+                    <ref role="2H6loY" node="RsLjUnNu$f" resolve="carData" />
                   </node>
                   <node concept="3VJJif" id="4WC4fmON7nH" role="1ESnxz">
-                    <ref role="3VxgQD" node="1PvAkX2sUyV" />
+                    <ref role="3VxgQD" node="1PvAkX2sUyV" resolve="position" />
                   </node>
                 </node>
                 <node concept="1E4Tgc" id="6iKSPgYFowM" role="1ESnxz">
-                  <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+                  <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
                 </node>
               </node>
               <node concept="3ZUYvv" id="1PvAkX2tdtE" role="3TlMhJ">
-                <ref role="3ZUYvu" node="1PvAkX2tdtt" />
+                <ref role="3ZUYvu" node="1PvAkX2tdtt" resolve="value" />
               </node>
             </node>
           </node>
@@ -938,78 +938,78 @@
       <property role="TrG5h" value="SrTestConfig" />
       <node concept="2EWCuV" id="1PvAkX2sqtj" role="5JtDH">
         <property role="TrG5h" value="kombi" />
-        <ref role="2EWCuU" node="RsLjUnOUPm" />
+        <ref role="2EWCuU" node="RsLjUnOUPm" resolve="Kombi" />
       </node>
       <node concept="2EWCuV" id="1PvAkX2sUqM" role="5JtDH">
         <property role="TrG5h" value="kombi2" />
-        <ref role="2EWCuU" node="RsLjUnOUPm" />
+        <ref role="2EWCuU" node="RsLjUnOUPm" resolve="Kombi" />
       </node>
       <node concept="2EWCuV" id="1PvAkX2sqtl" role="5JtDH">
         <property role="TrG5h" value="motor" />
-        <ref role="2EWCuU" node="RsLjUnNu$e" />
+        <ref role="2EWCuU" node="RsLjUnNu$e" resolve="Motor" />
         <node concept="2h4l3B" id="29JE8qNw0HP" role="3R_39I">
-          <ref role="2h4l3$" node="29JE8qNw0HH" />
+          <ref role="2h4l3$" node="29JE8qNw0HH" resolve="carType" />
           <node concept="YInwV" id="29JE8qNw0HR" role="2h4l3_">
             <node concept="1S7827" id="29JE8qNw0HT" role="1_9fRO">
-              <ref role="1S7826" node="29JE8qNw0HN" />
+              <ref role="1S7826" node="29JE8qNw0HN" resolve="carTypeData" />
             </node>
           </node>
         </node>
         <node concept="2h4l3B" id="6Ywynt2TUkO" role="3R_39I">
-          <ref role="2h4l3$" node="6Ywynt2TUkC" />
+          <ref role="2h4l3$" node="6Ywynt2TUkC" resolve="carPositions" />
           <node concept="1S7827" id="6Ywynt2TUkQ" role="2h4l3_">
-            <ref role="1S7826" node="6Ywynt2TUkI" />
+            <ref role="1S7826" node="6Ywynt2TUkI" resolve="positions" />
           </node>
         </node>
       </node>
       <node concept="JAGxh" id="1PvAkX2sqtq" role="5JtDH" />
       <node concept="2EWCuP" id="1PvAkX2sqtn" role="5JtDH">
         <node concept="2EWCuO" id="1PvAkX2sqto" role="2EWCuL">
-          <ref role="XcPQd" node="RsLjUnOUPn" />
-          <ref role="2EWCuR" node="1PvAkX2sqtj" />
+          <ref role="XcPQd" node="RsLjUnOUPn" resolve="carData" />
+          <ref role="2EWCuR" node="1PvAkX2sqtj" resolve="kombi" />
         </node>
         <node concept="2EWCuO" id="1PvAkX2sqtp" role="2EWCuK">
-          <ref role="2EWCuR" node="1PvAkX2sqtl" />
-          <ref role="XcPQd" node="RsLjUnNu$f" />
+          <ref role="2EWCuR" node="1PvAkX2sqtl" resolve="motor" />
+          <ref role="XcPQd" node="RsLjUnNu$f" resolve="carData" />
         </node>
       </node>
       <node concept="2EWCuP" id="6Ywynt2TUkW" role="5JtDH">
         <node concept="2EWCuO" id="6Ywynt2TUkX" role="2EWCuL">
-          <ref role="XcPQd" node="6Ywynt2TUkF" />
-          <ref role="2EWCuR" node="1PvAkX2sqtj" />
+          <ref role="XcPQd" node="6Ywynt2TUkF" resolve="carPositions" />
+          <ref role="2EWCuR" node="1PvAkX2sqtj" resolve="kombi" />
         </node>
         <node concept="2EWCuO" id="6Ywynt2TUkY" role="2EWCuK">
-          <ref role="2EWCuR" node="1PvAkX2sqtl" />
-          <ref role="XcPQd" node="6Ywynt2TUkC" />
+          <ref role="2EWCuR" node="1PvAkX2sqtl" resolve="motor" />
+          <ref role="XcPQd" node="6Ywynt2TUkC" resolve="carPositions" />
         </node>
       </node>
       <node concept="JAGxh" id="6Ywynt2TUl2" role="5JtDH" />
       <node concept="2EWCuP" id="1PvAkX2sUqO" role="5JtDH">
         <node concept="2EWCuO" id="1PvAkX2sUqP" role="2EWCuL">
-          <ref role="2EWCuR" node="1PvAkX2sUqM" />
-          <ref role="XcPQd" node="RsLjUnOUPn" />
+          <ref role="2EWCuR" node="1PvAkX2sUqM" resolve="kombi2" />
+          <ref role="XcPQd" node="RsLjUnOUPn" resolve="carData" />
         </node>
         <node concept="2EWCuO" id="1PvAkX2sUqQ" role="2EWCuK">
-          <ref role="XcPQd" node="RsLjUnNu$f" />
-          <ref role="2EWCuR" node="1PvAkX2sqtl" />
+          <ref role="XcPQd" node="RsLjUnNu$f" resolve="carData" />
+          <ref role="2EWCuR" node="1PvAkX2sqtl" resolve="motor" />
         </node>
       </node>
       <node concept="2EWCuP" id="6Ywynt2TUkZ" role="5JtDH">
         <node concept="2EWCuO" id="6Ywynt2TUl0" role="2EWCuL">
-          <ref role="XcPQd" node="6Ywynt2TUkF" />
-          <ref role="2EWCuR" node="1PvAkX2sUqM" />
+          <ref role="XcPQd" node="6Ywynt2TUkF" resolve="carPositions" />
+          <ref role="2EWCuR" node="1PvAkX2sUqM" resolve="kombi2" />
         </node>
         <node concept="2EWCuO" id="6Ywynt2TUl1" role="2EWCuK">
-          <ref role="XcPQd" node="6Ywynt2TUkC" />
-          <ref role="2EWCuR" node="1PvAkX2sqtl" />
+          <ref role="XcPQd" node="6Ywynt2TUkC" resolve="carPositions" />
+          <ref role="2EWCuR" node="1PvAkX2sqtl" resolve="motor" />
         </node>
       </node>
       <node concept="JAGxh" id="5Thpq265$h4" role="5JtDH" />
       <node concept="21gPQu" id="5Thpq265$ha" role="5JtDH">
         <property role="TrG5h" value="motaorCarDataAdapter" />
         <node concept="219P8x" id="5Thpq265$hb" role="21ad3a">
-          <ref role="219P8J" node="RsLjUnNu$f" />
-          <ref role="219P8w" node="1PvAkX2sqtl" />
+          <ref role="219P8J" node="RsLjUnNu$f" resolve="carData" />
+          <ref role="219P8w" node="1PvAkX2sqtl" resolve="motor" />
         </node>
       </node>
     </node>
@@ -1021,7 +1021,7 @@
       <node concept="2H6ZW9" id="AQ_pw8xkVy" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-        <ref role="2H6ZW8" node="RsLjUnNb$Z" />
+        <ref role="2H6ZW8" node="RsLjUnNb$Z" resolve="CarData" />
       </node>
     </node>
     <node concept="2NXPZ9" id="RsLjUnNb$X" role="N3F5h">
@@ -1032,14 +1032,14 @@
       <property role="TrG5h" value="testCase1" />
       <node concept="3XIRFW" id="RsLjUnMNuj" role="c0Qz3">
         <node concept="3t9XKO" id="1PvAkX2sFzp" role="3XIRFZ">
-          <ref role="3t9XKR" node="1PvAkX2sqti" />
+          <ref role="3t9XKR" node="1PvAkX2sqti" resolve="SrTestConfig" />
         </node>
         <node concept="3XISUE" id="1PvAkX2sRoa" role="3XIRFZ" />
         <node concept="1_9egQ" id="1PvAkX2sRoc" role="3XIRFZ">
           <node concept="1AmG6P" id="1PvAkX2sRod" role="1_9egR">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="2YB7zn" node="RsLjUnNu$k" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="2YB7zn" node="RsLjUnNu$k" resolve="updateCarDataDrehzahl" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
             <node concept="3TlMh9" id="1PvAkX2tdtF" role="1AmG6M">
               <property role="2hmy$m" value="10" />
             </node>
@@ -1047,9 +1047,9 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW5bQ" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BRW5bP" role="2N2GHg">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtj" />
-            <ref role="2YB7zn" node="RsLjUnOUPs" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtj" resolve="kombi" />
+            <ref role="2YB7zn" node="RsLjUnOUPs" resolve="getDrehzahl" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5bO" role="2N2GHh">
             <property role="2hmy$m" value="10" />
@@ -1057,9 +1057,9 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW4Yq" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BRW4Yp" role="2N2GHg">
-            <ref role="1XX6Gs" node="1PvAkX2sUqM" />
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="2YB7zn" node="RsLjUnOUPs" />
+            <ref role="1XX6Gs" node="1PvAkX2sUqM" resolve="kombi2" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="2YB7zn" node="RsLjUnOUPs" resolve="getDrehzahl" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW4Yo" role="2N2GHh">
             <property role="2hmy$m" value="10" />
@@ -1068,10 +1068,10 @@
         <node concept="2N2KuS" id="4c3N3BRW4Ob" role="3XIRFZ">
           <node concept="2qmXGp" id="4c3N3BRW4O8" role="2N2GHg">
             <node concept="1S7827" id="4c3N3BRW4O9" role="1_9fRO">
-              <ref role="1S7826" node="AQ_pw8xkVx" />
+              <ref role="1S7826" node="AQ_pw8xkVx" resolve="kombicarDataVar" />
             </node>
             <node concept="3VxgRJ" id="4c3N3BRW4Oa" role="1ESnxz">
-              <ref role="3VxgQD" node="RsLjUnNu$7" />
+              <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW4O7" role="2N2GHh">
@@ -1081,9 +1081,9 @@
         <node concept="3XISUE" id="6Ywynt2TUl5" role="3XIRFZ" />
         <node concept="1_9egQ" id="4c3N3BQ5DPk" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BQ5DPl" role="1_9egR">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
-            <ref role="2YB7zn" node="4c3N3BQ5DJX" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
+            <ref role="2YB7zn" node="4c3N3BQ5DJX" resolve="updateCarDataDrehzahlThroughFunc" />
             <node concept="3TlMh9" id="4c3N3BQ5DPm" role="1AmG6M">
               <property role="2hmy$m" value="9" />
             </node>
@@ -1091,9 +1091,9 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW4pP" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BRW4pO" role="2N2GHg">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtj" />
-            <ref role="2YB7zn" node="RsLjUnOUPs" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtj" resolve="kombi" />
+            <ref role="2YB7zn" node="RsLjUnOUPs" resolve="getDrehzahl" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW4pN" role="2N2GHh">
             <property role="2hmy$m" value="9" />
@@ -1101,9 +1101,9 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW4u1" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BRW4u0" role="2N2GHg">
-            <ref role="1XX6Gs" node="1PvAkX2sUqM" />
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="2YB7zn" node="RsLjUnOUPs" />
+            <ref role="1XX6Gs" node="1PvAkX2sUqM" resolve="kombi2" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="2YB7zn" node="RsLjUnOUPs" resolve="getDrehzahl" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW4tZ" role="2N2GHh">
             <property role="2hmy$m" value="9" />
@@ -1112,10 +1112,10 @@
         <node concept="2N2KuS" id="4c3N3BRW4DR" role="3XIRFZ">
           <node concept="2qmXGp" id="4c3N3BRW4DO" role="2N2GHg">
             <node concept="1S7827" id="4c3N3BRW4DP" role="1_9fRO">
-              <ref role="1S7826" node="AQ_pw8xkVx" />
+              <ref role="1S7826" node="AQ_pw8xkVx" resolve="kombicarDataVar" />
             </node>
             <node concept="3VxgRJ" id="4c3N3BRW4DQ" role="1ESnxz">
-              <ref role="3VxgQD" node="RsLjUnNu$7" />
+              <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW4DN" role="2N2GHh">
@@ -1125,9 +1125,9 @@
         <node concept="3XISUE" id="4c3N3BQ5Eew" role="3XIRFZ" />
         <node concept="1_9egQ" id="29JE8qNwgdx" role="3XIRFZ">
           <node concept="1AmG6P" id="29JE8qNwgdy" role="1_9egR">
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
-            <ref role="2YB7zn" node="29JE8qNwgdm" />
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
+            <ref role="2YB7zn" node="29JE8qNwgdm" resolve="updateCarType" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
             <node concept="3TlMh9" id="29JE8qNwgd$" role="1AmG6M">
               <property role="2hmy$m" value="20" />
             </node>
@@ -1135,7 +1135,7 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW4jS" role="3XIRFZ">
           <node concept="1S7827" id="4c3N3BRW4jR" role="2N2GHg">
-            <ref role="1S7826" node="29JE8qNw0HN" />
+            <ref role="1S7826" node="29JE8qNw0HN" resolve="carTypeData" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW4jQ" role="2N2GHh">
             <property role="2hmy$m" value="20" />
@@ -1144,9 +1144,9 @@
         <node concept="3XISUE" id="6Ywynt2TUl3" role="3XIRFZ" />
         <node concept="1_9egQ" id="4c3N3BRVL1S" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BRVL1T" role="1_9egR">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
-            <ref role="2YB7zn" node="4c3N3BRVKSh" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
+            <ref role="2YB7zn" node="4c3N3BRVKSh" resolve="updateCarTypeThroughFunc" />
             <node concept="3TlMh9" id="4c3N3BRVL1U" role="1AmG6M">
               <property role="2hmy$m" value="30" />
             </node>
@@ -1154,7 +1154,7 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW49H" role="3XIRFZ">
           <node concept="1S7827" id="4c3N3BRW49G" role="2N2GHg">
-            <ref role="1S7826" node="29JE8qNw0HN" />
+            <ref role="1S7826" node="29JE8qNw0HN" resolve="carTypeData" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW49F" role="2N2GHh">
             <property role="2hmy$m" value="30" />
@@ -1166,17 +1166,17 @@
           <node concept="1sgJKr" id="6Ywynt2TUmu" role="2C2TGm">
             <property role="2caQfQ" value="false" />
             <property role="2c7vTL" value="false" />
-            <ref role="1sgJKq" node="1PvAkX2sUyO" />
+            <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
           </node>
           <node concept="3o3WLD" id="1erouHqGLt2" role="3XIe9u">
             <node concept="2xZu8t" id="1erouHqGLt3" role="3o3WLE">
-              <ref role="2xZoc7" node="1PvAkX2sUyQ" />
+              <ref role="2xZoc7" node="1PvAkX2sUyQ" resolve="x" />
               <node concept="3TlMh9" id="6Ywynt2TUmA" role="2xZpY0">
                 <property role="2hmy$m" value="10" />
               </node>
             </node>
             <node concept="2xZu8t" id="1erouHqGLt4" role="3o3WLE">
-              <ref role="2xZoc7" node="1PvAkX2sUyS" />
+              <ref role="2xZoc7" node="1PvAkX2sUyS" resolve="y" />
               <node concept="3TlMh9" id="6Ywynt2TUmJ" role="2xZpY0">
                 <property role="2hmy$m" value="20" />
               </node>
@@ -1185,14 +1185,14 @@
         </node>
         <node concept="1_9egQ" id="6Ywynt2TUl6" role="3XIRFZ">
           <node concept="1AmG6P" id="6Ywynt2TUl7" role="1_9egR">
-            <ref role="2YB7zn" node="6Ywynt2TUlc" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
+            <ref role="2YB7zn" node="6Ywynt2TUlc" resolve="updateCarDataPositionExternal" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
             <node concept="3TlMh9" id="6Ywynt2TUmf" role="1AmG6M">
               <property role="2hmy$m" value="0" />
             </node>
             <node concept="3ZVu4v" id="6Ywynt2TUmP" role="1AmG6M">
-              <ref role="3ZVs_2" node="6Ywynt2TUmt" />
+              <ref role="3ZVs_2" node="6Ywynt2TUmt" resolve="externalPos" />
             </node>
           </node>
         </node>
@@ -1200,14 +1200,14 @@
           <node concept="2qmXGp" id="4c3N3BRW5l7" role="2N2GHg">
             <node concept="2wJmCr" id="4c3N3BRW5l8" role="1_9fRO">
               <node concept="1S7827" id="4c3N3BRW5l9" role="1_9fRO">
-                <ref role="1S7826" node="6Ywynt2TUkI" />
+                <ref role="1S7826" node="6Ywynt2TUkI" resolve="positions" />
               </node>
               <node concept="3TlMh9" id="4c3N3BRW5la" role="2wJmCp">
                 <property role="2hmy$m" value="0" />
               </node>
             </node>
             <node concept="1E4Tgc" id="4c3N3BRW5lb" role="1ESnxz">
-              <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+              <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5l6" role="2N2GHh">
@@ -1218,14 +1218,14 @@
           <node concept="2qmXGp" id="4c3N3BRW5sS" role="2N2GHg">
             <node concept="2wJmCr" id="4c3N3BRW5sT" role="1_9fRO">
               <node concept="1S7827" id="4c3N3BRW5sU" role="1_9fRO">
-                <ref role="1S7826" node="6Ywynt2TUkI" />
+                <ref role="1S7826" node="6Ywynt2TUkI" resolve="positions" />
               </node>
               <node concept="3TlMh9" id="4c3N3BRW5sV" role="2wJmCp">
                 <property role="2hmy$m" value="0" />
               </node>
             </node>
             <node concept="1E4Tgc" id="4c3N3BRW5sW" role="1ESnxz">
-              <ref role="1E4Tge" node="1PvAkX2sUyS" />
+              <ref role="1E4Tge" node="1PvAkX2sUyS" resolve="y" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5sR" role="2N2GHh">
@@ -1236,11 +1236,11 @@
         <node concept="3XIRlf" id="1PvAkX2tdtM" role="3XIRFZ">
           <property role="TrG5h" value="pos" />
           <node concept="1sgJKr" id="1PvAkX2tdtN" role="2C2TGm">
-            <ref role="1sgJKq" node="1PvAkX2sUyO" />
+            <ref role="1sgJKq" node="1PvAkX2sUyO" resolve="Position" />
           </node>
           <node concept="3o3WLD" id="1erouHqGLtf" role="3XIe9u">
             <node concept="2xZu8t" id="1erouHqGLtg" role="3o3WLE">
-              <ref role="2xZoc7" node="1PvAkX2sUyQ" />
+              <ref role="2xZoc7" node="1PvAkX2sUyQ" resolve="x" />
               <node concept="3TlMh9" id="1PvAkX2tdtS" role="2xZpY0">
                 <property role="2hmy$m" value="7" />
               </node>
@@ -1249,23 +1249,23 @@
         </node>
         <node concept="1_9egQ" id="1PvAkX2tdtI" role="3XIRFZ">
           <node concept="1AmG6P" id="1PvAkX2tdtJ" role="1_9egR">
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
-            <ref role="2YB7zn" node="1PvAkX2tdsJ" />
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
+            <ref role="2YB7zn" node="1PvAkX2tdsJ" resolve="updateCarDataPosition" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
             <node concept="3ZVu4v" id="1PvAkX2tdtT" role="1AmG6M">
-              <ref role="3ZVs_2" node="1PvAkX2tdtM" />
+              <ref role="3ZVs_2" node="1PvAkX2tdtM" resolve="pos" />
             </node>
           </node>
         </node>
         <node concept="2N2KuS" id="4c3N3BRW5yz" role="3XIRFZ">
           <node concept="2qmXGp" id="4c3N3BRW5yw" role="2N2GHg">
             <node concept="1AmG6P" id="4c3N3BRW5yx" role="1_9fRO">
-              <ref role="1XX6Gv" node="1PvAkX2sqti" />
-              <ref role="2YB7zn" node="1PvAkX2sUz4" />
-              <ref role="1XX6Gs" node="1PvAkX2sqtj" />
+              <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+              <ref role="2YB7zn" node="1PvAkX2sUz4" resolve="getPosition" />
+              <ref role="1XX6Gs" node="1PvAkX2sqtj" resolve="kombi" />
             </node>
             <node concept="1E4Tgc" id="4c3N3BRW5yy" role="1ESnxz">
-              <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+              <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5yv" role="2N2GHh">
@@ -1275,9 +1275,9 @@
         <node concept="3XISUE" id="1PvAkX2tdtU" role="3XIRFZ" />
         <node concept="1_9egQ" id="1PvAkX2tdtW" role="3XIRFZ">
           <node concept="1AmG6P" id="1PvAkX2tdtX" role="1_9egR">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtl" />
-            <ref role="2YB7zn" node="1PvAkX2tdt1" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtl" resolve="motor" />
+            <ref role="2YB7zn" node="1PvAkX2tdt1" resolve="updateCarDataPositionX" />
             <node concept="3TlMh9" id="1PvAkX2tdtZ" role="1AmG6M">
               <property role="2hmy$m" value="6" />
             </node>
@@ -1285,9 +1285,9 @@
         </node>
         <node concept="2N2KuS" id="4c3N3BRW5AQ" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BRW5AP" role="2N2GHg">
-            <ref role="1XX6Gv" node="1PvAkX2sqti" />
-            <ref role="1XX6Gs" node="1PvAkX2sqtj" />
-            <ref role="2YB7zn" node="1PvAkX2sUzf" />
+            <ref role="1XX6Gv" node="1PvAkX2sqti" resolve="SrTestConfig" />
+            <ref role="1XX6Gs" node="1PvAkX2sqtj" resolve="kombi" />
+            <ref role="2YB7zn" node="1PvAkX2sUzf" resolve="getPositionX" />
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5AO" role="2N2GHh">
             <property role="2hmy$m" value="6" />
@@ -1301,10 +1301,10 @@
             </node>
             <node concept="2qmXGp" id="4WC4fmON7n2" role="3TlMhI">
               <node concept="2H6Wec" id="4WC4fmON7n1" role="1_9fRO">
-                <ref role="2H6Wef" node="5Thpq265$ha" />
+                <ref role="2H6Wef" node="5Thpq265$ha" resolve="motaorCarDataAdapter" />
               </node>
               <node concept="3VALO5" id="4WC4fmON7n3" role="1ESnxz">
-                <ref role="3VxgQD" node="RsLjUnNu$7" />
+                <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
               </node>
             </node>
           </node>
@@ -1312,10 +1312,10 @@
         <node concept="2N2KuS" id="4c3N3BRW5EX" role="3XIRFZ">
           <node concept="2qmXGp" id="4c3N3BRW5EU" role="2N2GHg">
             <node concept="2H6Wec" id="4c3N3BRW5EV" role="1_9fRO">
-              <ref role="2H6Wef" node="5Thpq265$ha" />
+              <ref role="2H6Wef" node="5Thpq265$ha" resolve="motaorCarDataAdapter" />
             </node>
             <node concept="3VALO5" id="4c3N3BRW5EW" role="1ESnxz">
-              <ref role="3VxgQD" node="RsLjUnNu$7" />
+              <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5ET" role="2N2GHh">
@@ -1325,31 +1325,31 @@
         <node concept="3XISUE" id="IPRL99Nh4o" role="3XIRFZ" />
         <node concept="8CeH5" id="IPRL99Nh4u" role="3XIRFZ">
           <node concept="2H6Wec" id="IPRL99Nh4$" role="8CeH6">
-            <ref role="2H6Wef" node="5Thpq265$ha" />
+            <ref role="2H6Wef" node="5Thpq265$ha" resolve="motaorCarDataAdapter" />
           </node>
           <node concept="8C5q9" id="IPRL99Nh4F" role="8FUjV">
-            <ref role="8C5qb" node="RsLjUnNu$7" />
+            <ref role="8C5qb" node="RsLjUnNu$7" resolve="drehzahl" />
             <node concept="3TlMh9" id="IPRL99Nh4L" role="8C5q8">
               <property role="2hmy$m" value="1" />
             </node>
           </node>
           <node concept="8C5q9" id="7XwHIPn1yWQ" role="8FUjV">
-            <ref role="8C5qb" node="RsLjUnNu$7" />
+            <ref role="8C5qb" node="RsLjUnNu$7" resolve="drehzahl" />
             <node concept="2BpEin" id="7XwHIPn1yX2" role="8C5q8">
-              <ref role="2BpEim" node="RsLjUnNu$7" />
+              <ref role="2BpEim" node="RsLjUnNu$7" resolve="drehzahl" />
             </node>
           </node>
           <node concept="8C5q9" id="IPRL99Nh4Q" role="8FUjV">
-            <ref role="8C5qb" node="1PvAkX2sUyV" />
+            <ref role="8C5qb" node="1PvAkX2sUyV" resolve="position" />
             <node concept="3o3WLD" id="1erouHqGLej" role="8C5q8">
               <node concept="2xZu8t" id="1erouHqGLek" role="3o3WLE">
-                <ref role="2xZoc7" node="1PvAkX2sUyQ" />
+                <ref role="2xZoc7" node="1PvAkX2sUyQ" resolve="x" />
                 <node concept="3TlMh9" id="IPRL99Nh5q" role="2xZpY0">
                   <property role="2hmy$m" value="1" />
                 </node>
               </node>
               <node concept="2xZu8t" id="1erouHqGLel" role="3o3WLE">
-                <ref role="2xZoc7" node="1PvAkX2sUyS" />
+                <ref role="2xZoc7" node="1PvAkX2sUyS" resolve="y" />
                 <node concept="3TlMh9" id="IPRL99Nh5K" role="2xZpY0">
                   <property role="2hmy$m" value="1" />
                 </node>
@@ -1357,19 +1357,19 @@
             </node>
           </node>
           <node concept="8C5q9" id="7XwHIPn1yX8" role="8FUjV">
-            <ref role="8C5qb" node="1PvAkX2sUyV" />
+            <ref role="8C5qb" node="1PvAkX2sUyV" resolve="position" />
             <node concept="2BpEin" id="7XwHIPn1yXl" role="8C5q8">
-              <ref role="2BpEim" node="1PvAkX2sUyV" />
+              <ref role="2BpEim" node="1PvAkX2sUyV" resolve="position" />
             </node>
           </node>
         </node>
         <node concept="2N2KuS" id="4c3N3BRW5Ja" role="3XIRFZ">
           <node concept="2qmXGp" id="4c3N3BRW5J7" role="2N2GHg">
             <node concept="2H6Wec" id="4c3N3BRW5J8" role="1_9fRO">
-              <ref role="2H6Wef" node="5Thpq265$ha" />
+              <ref role="2H6Wef" node="5Thpq265$ha" resolve="motaorCarDataAdapter" />
             </node>
             <node concept="3VALO5" id="4c3N3BRW5J9" role="1ESnxz">
-              <ref role="3VxgQD" node="RsLjUnNu$7" />
+              <ref role="3VxgQD" node="RsLjUnNu$7" resolve="drehzahl" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5J6" role="2N2GHh">
@@ -1380,14 +1380,14 @@
           <node concept="2qmXGp" id="4c3N3BRW5Nl" role="2N2GHg">
             <node concept="2qmXGp" id="4c3N3BRW5Nm" role="1_9fRO">
               <node concept="2H6Wec" id="4c3N3BRW5Nn" role="1_9fRO">
-                <ref role="2H6Wef" node="5Thpq265$ha" />
+                <ref role="2H6Wef" node="5Thpq265$ha" resolve="motaorCarDataAdapter" />
               </node>
               <node concept="3VALO5" id="4c3N3BRW5No" role="1ESnxz">
-                <ref role="3VxgQD" node="1PvAkX2sUyV" />
+                <ref role="3VxgQD" node="1PvAkX2sUyV" resolve="position" />
               </node>
             </node>
             <node concept="1E4Tgc" id="4c3N3BRW5Np" role="1ESnxz">
-              <ref role="1E4Tge" node="1PvAkX2sUyQ" />
+              <ref role="1E4Tge" node="1PvAkX2sUyQ" resolve="x" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5Nk" role="2N2GHh">
@@ -1398,14 +1398,14 @@
           <node concept="2qmXGp" id="4c3N3BRW5RN" role="2N2GHg">
             <node concept="2qmXGp" id="4c3N3BRW5RO" role="1_9fRO">
               <node concept="2H6Wec" id="4c3N3BRW5RP" role="1_9fRO">
-                <ref role="2H6Wef" node="5Thpq265$ha" />
+                <ref role="2H6Wef" node="5Thpq265$ha" resolve="motaorCarDataAdapter" />
               </node>
               <node concept="3VALO5" id="4c3N3BRW5RQ" role="1ESnxz">
-                <ref role="3VxgQD" node="1PvAkX2sUyV" />
+                <ref role="3VxgQD" node="1PvAkX2sUyV" resolve="position" />
               </node>
             </node>
             <node concept="1E4Tgc" id="4c3N3BRW5RR" role="1ESnxz">
-              <ref role="1E4Tge" node="1PvAkX2sUyS" />
+              <ref role="1E4Tge" node="1PvAkX2sUyS" resolve="y" />
             </node>
           </node>
           <node concept="3TlMh9" id="4c3N3BRW5RM" role="2N2GHh">
@@ -1429,17 +1429,17 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAK3b" role="lIfQt">
-        <ref role="3cM6IK" node="RsLjUnMNuh" />
+        <ref role="3cM6IK" node="RsLjUnMNuh" resolve="testCase1" />
       </node>
       <node concept="3cM6IN" id="4c3N3BQ5ZyQ" role="lIfQt">
-        <ref role="3cM6IK" node="4c3N3BQ5XNS" />
+        <ref role="3cM6IK" node="4c3N3BQ5XNS" resolve="testCase2" />
       </node>
     </node>
     <node concept="3GEVxB" id="4c3N3BQ5Xoy" role="2OODSX">
-      <ref role="3GEb4d" node="RsLjUnMNu5" />
+      <ref role="3GEb4d" node="RsLjUnMNu5" resolve="TestSenderReceiver" />
     </node>
     <node concept="3GEVxB" id="4c3N3BQ5ZyJ" role="2OODSX">
-      <ref role="3GEb4d" node="4c3N3BOdXWy" />
+      <ref role="3GEb4d" node="4c3N3BOdXWy" resolve="TestProviderConsumerSample" />
     </node>
   </node>
   <node concept="N3F5e" id="4c3N3BOdXWy">
@@ -1472,14 +1472,14 @@
         <node concept="1_9egQ" id="4c3N3BOe0az" role="3XIRFZ">
           <node concept="3pqW6w" id="4c3N3BOe0b9" role="1_9egR">
             <node concept="3ZUYvv" id="4c3N3BOe0ez" role="3TlMhJ">
-              <ref role="3ZUYvu" node="4c3N3BOe0dS" />
+              <ref role="3ZUYvu" node="4c3N3BOe0dS" resolve="value" />
             </node>
             <node concept="2qmXGp" id="4c3N3BOe0aG" role="3TlMhI">
               <node concept="3VxgRJ" id="4c3N3BOe0b0" role="1ESnxz">
-                <ref role="3VxgQD" node="4c3N3BOdXWC" />
+                <ref role="3VxgQD" node="4c3N3BOdXWC" resolve="value" />
               </node>
               <node concept="3ZUYvv" id="4c3N3BOe0ax" role="1_9fRO">
-                <ref role="3ZUYvu" node="4c3N3BOe09N" />
+                <ref role="3ZUYvu" node="4c3N3BOe09N" resolve="senderReceiver" />
               </node>
             </node>
           </node>
@@ -1489,7 +1489,7 @@
       <node concept="19RgSI" id="4c3N3BOe09N" role="1UOdpc">
         <property role="TrG5h" value="senderReceiver" />
         <node concept="2H6ZW9" id="4c3N3BOe09M" role="2C2TGm">
-          <ref role="2H6ZW8" node="4c3N3BOdXW$" />
+          <ref role="2H6ZW8" node="4c3N3BOdXW$" resolve="ISenderReceiver" />
         </node>
       </node>
       <node concept="19RgSI" id="4c3N3BOe0dS" role="1UOdpc">
@@ -1505,11 +1505,11 @@
       <property role="TrG5h" value="ProviderImpl" />
       <node concept="2EWHp_" id="4c3N3BOdXX7" role="2RW2fA">
         <property role="TrG5h" value="senderReceiver" />
-        <ref role="2EX0h9" node="4c3N3BOdXW$" />
+        <ref role="2EX0h9" node="4c3N3BOdXW$" resolve="ISenderReceiver" />
       </node>
       <node concept="2EWHp_" id="4c3N3BOe6dQ" role="2RW2fA">
         <property role="TrG5h" value="clientServer" />
-        <ref role="2EX0h9" node="4c3N3BOe68S" />
+        <ref role="2EX0h9" node="4c3N3BOe68S" resolve="IClientServer" />
       </node>
       <node concept="3Khz0B" id="4c3N3BOdYg0" role="2RW2fA" />
       <node concept="2EWDwb" id="4c3N3BOe1hZ" role="2RW2fA">
@@ -1518,14 +1518,14 @@
           <node concept="1_9egQ" id="4c3N3BOe30P" role="3XIRFZ">
             <node concept="3pqW6w" id="4c3N3BOe31s" role="1_9egR">
               <node concept="3ZUYvv" id="4c3N3BQ5YXj" role="3TlMhJ">
-                <ref role="3ZUYvu" node="4c3N3BQ5YWq" />
+                <ref role="3ZUYvu" node="4c3N3BQ5YWq" resolve="value" />
               </node>
               <node concept="2qmXGp" id="4c3N3BOe313" role="3TlMhI">
                 <node concept="3VJJif" id="4c3N3BOe31j" role="1ESnxz">
-                  <ref role="3VxgQD" node="4c3N3BOdXWC" />
+                  <ref role="3VxgQD" node="4c3N3BOdXWC" resolve="value" />
                 </node>
                 <node concept="2H6loZ" id="4c3N3BOe30N" role="1_9fRO">
-                  <ref role="2H6loY" node="4c3N3BOdXX7" />
+                  <ref role="2H6loY" node="4c3N3BOdXX7" resolve="senderReceiver" />
                 </node>
               </node>
             </node>
@@ -1547,12 +1547,12 @@
         <node concept="3XIRFW" id="4c3N3BQ5YSe" role="2EWMhI">
           <node concept="1_9egQ" id="4c3N3BQ5YSl" role="3XIRFZ">
             <node concept="3O_q_g" id="4c3N3BQ5YSm" role="1_9egR">
-              <ref role="3O_q_h" node="4c3N3BOe06H" />
+              <ref role="3O_q_h" node="4c3N3BOe06H" resolve="setValue" />
               <node concept="2H6loZ" id="4c3N3BQ5YSn" role="3O_q_j">
-                <ref role="2H6loY" node="4c3N3BOdXX7" />
+                <ref role="2H6loY" node="4c3N3BOdXX7" resolve="senderReceiver" />
               </node>
               <node concept="3ZUYvv" id="4c3N3BQ5YZT" role="3O_q_j">
-                <ref role="3ZUYvu" node="4c3N3BQ5YYr" />
+                <ref role="3ZUYvu" node="4c3N3BQ5YYr" resolve="value" />
               </node>
             </node>
           </node>
@@ -1580,8 +1580,8 @@
           </node>
         </node>
         <node concept="2EWDw0" id="4c3N3BOe8NL" role="2EWDeT">
-          <ref role="1ZwSu5" node="4c3N3BOe6dQ" />
-          <ref role="1ZwxE2" node="4c3N3BOe6de" />
+          <ref role="1ZwSu5" node="4c3N3BOe6dQ" resolve="clientServer" />
+          <ref role="1ZwxE2" node="4c3N3BOe6de" resolve="perform" />
         </node>
         <node concept="19Rifw" id="4c3N3BOe8NM" role="2C2TGm" />
       </node>
@@ -1594,11 +1594,11 @@
       <property role="TrG5h" value="ConsumerImpl" />
       <node concept="2EWHp$" id="4c3N3BOdXX$" role="2RW2fA">
         <property role="TrG5h" value="senderReceiver" />
-        <ref role="2EX0h9" node="4c3N3BOdXW$" />
+        <ref role="2EX0h9" node="4c3N3BOdXW$" resolve="ISenderReceiver" />
       </node>
       <node concept="2EWHp$" id="4c3N3BOe6fg" role="2RW2fA">
         <property role="TrG5h" value="clientServer" />
-        <ref role="2EX0h9" node="4c3N3BOe68S" />
+        <ref role="2EX0h9" node="4c3N3BOe68S" resolve="IClientServer" />
       </node>
       <node concept="3Khz0B" id="4c3N3BQ5YGh" role="2RW2fA" />
       <node concept="2EWDwb" id="4c3N3BQ5YHP" role="2RW2fA">
@@ -1607,10 +1607,10 @@
           <node concept="2BFjQ_" id="4c3N3BQ5YIF" role="3XIRFZ">
             <node concept="2qmXGp" id="4c3N3BQ5YJV" role="2BFjQA">
               <node concept="3VJJif" id="4c3N3BQ5YKg" role="1ESnxz">
-                <ref role="3VxgQD" node="4c3N3BOdXWC" />
+                <ref role="3VxgQD" node="4c3N3BOdXWC" resolve="value" />
               </node>
               <node concept="2H6loZ" id="4c3N3BQ5YJ1" role="1_9fRO">
-                <ref role="2H6loY" node="4c3N3BOdXX$" />
+                <ref role="2H6loY" node="4c3N3BOdXX$" resolve="senderReceiver" />
               </node>
             </node>
           </node>
@@ -1624,9 +1624,9 @@
         <node concept="3XIRFW" id="4c3N3BOdYes" role="2EWMhI">
           <node concept="1_9egQ" id="4c3N3BOe6fT" role="3XIRFZ">
             <node concept="30IBQI" id="4c3N3BOe6gb" role="1_9egR">
-              <ref role="2H6Oet" node="4c3N3BOe6de" />
+              <ref role="2H6Oet" node="4c3N3BOe6de" resolve="perform" />
               <node concept="2H6loZ" id="4c3N3BOe6fR" role="1_9fRO">
-                <ref role="2H6loY" node="4c3N3BOe6fg" />
+                <ref role="2H6loY" node="4c3N3BOe6fg" resolve="clientServer" />
               </node>
             </node>
           </node>
@@ -1645,31 +1645,31 @@
       <property role="TrG5h" value="providerConsumerApp" />
       <node concept="2EWCuV" id="4c3N3BOdYmm" role="5JtDH">
         <property role="TrG5h" value="providerInst" />
-        <ref role="2EWCuU" node="4c3N3BOdXX0" />
+        <ref role="2EWCuU" node="4c3N3BOdXX0" resolve="ProviderImpl" />
       </node>
       <node concept="JAGxh" id="4c3N3BOe1p6" role="5JtDH" />
       <node concept="2EWCuV" id="4c3N3BOdYma" role="5JtDH">
         <property role="TrG5h" value="consumerInst" />
-        <ref role="2EWCuU" node="4c3N3BOdXXq" />
+        <ref role="2EWCuU" node="4c3N3BOdXXq" resolve="ConsumerImpl" />
       </node>
       <node concept="2EWCuP" id="4c3N3BOe6gy" role="5JtDH">
         <node concept="2EWCuO" id="4c3N3BOe6gz" role="2EWCuL">
-          <ref role="2EWCuR" node="4c3N3BOdYma" />
-          <ref role="XcPQd" node="4c3N3BOe6fg" />
+          <ref role="2EWCuR" node="4c3N3BOdYma" resolve="consumerInst" />
+          <ref role="XcPQd" node="4c3N3BOe6fg" resolve="clientServer" />
         </node>
         <node concept="2EWCuO" id="4c3N3BOe6g_" role="2EWCuK">
-          <ref role="2EWCuR" node="4c3N3BOdYmm" />
-          <ref role="XcPQd" node="4c3N3BOe6dQ" />
+          <ref role="2EWCuR" node="4c3N3BOdYmm" resolve="providerInst" />
+          <ref role="XcPQd" node="4c3N3BOe6dQ" resolve="clientServer" />
         </node>
       </node>
       <node concept="2EWCuP" id="4c3N3BOdYmw" role="5JtDH">
         <node concept="2EWCuO" id="4c3N3BOdYmx" role="2EWCuL">
-          <ref role="2EWCuR" node="4c3N3BOdYma" />
-          <ref role="XcPQd" node="4c3N3BOdXX$" />
+          <ref role="2EWCuR" node="4c3N3BOdYma" resolve="consumerInst" />
+          <ref role="XcPQd" node="4c3N3BOdXX$" resolve="senderReceiver" />
         </node>
         <node concept="2EWCuO" id="4c3N3BOdYmz" role="2EWCuK">
-          <ref role="2EWCuR" node="4c3N3BOdYmm" />
-          <ref role="XcPQd" node="4c3N3BOdXX7" />
+          <ref role="2EWCuR" node="4c3N3BOdYmm" resolve="providerInst" />
+          <ref role="XcPQd" node="4c3N3BOdXX7" resolve="senderReceiver" />
         </node>
       </node>
     </node>
@@ -1682,22 +1682,22 @@
       <node concept="19Rifw" id="4c3N3BQ5XNT" role="2C2TGm" />
       <node concept="3XIRFW" id="4c3N3BQ5XNV" role="c0Qz3">
         <node concept="3t9XKO" id="4c3N3BOdYsB" role="3XIRFZ">
-          <ref role="3t9XKR" node="4c3N3BOdYkY" />
+          <ref role="3t9XKR" node="4c3N3BOdYkY" resolve="providerConsumerApp" />
         </node>
         <node concept="3XISUE" id="4c3N3BQ5YC$" role="3XIRFZ" />
         <node concept="1_9egQ" id="4c3N3BQ5Zsz" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BQ5Zsx" role="1_9egR">
-            <ref role="1XX6Gv" node="4c3N3BOdYkY" />
-            <ref role="1XX6Gs" node="4c3N3BOdYma" />
-            <ref role="2YB7zn" node="4c3N3BOdYer" />
+            <ref role="1XX6Gv" node="4c3N3BOdYkY" resolve="providerConsumerApp" />
+            <ref role="1XX6Gs" node="4c3N3BOdYma" resolve="consumerInst" />
+            <ref role="2YB7zn" node="4c3N3BOdYer" resolve="perform" />
           </node>
         </node>
         <node concept="3XISUE" id="4c3N3BQ5Zs2" role="3XIRFZ" />
         <node concept="1_9egQ" id="4c3N3BQ5Z72" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BQ5Z70" role="1_9egR">
-            <ref role="1XX6Gv" node="4c3N3BOdYkY" />
-            <ref role="1XX6Gs" node="4c3N3BOdYmm" />
-            <ref role="2YB7zn" node="4c3N3BOe1hZ" />
+            <ref role="1XX6Gv" node="4c3N3BOdYkY" resolve="providerConsumerApp" />
+            <ref role="1XX6Gs" node="4c3N3BOdYmm" resolve="providerInst" />
+            <ref role="2YB7zn" node="4c3N3BOe1hZ" resolve="setValue" />
             <node concept="3TlMh9" id="4c3N3BQ5Z8n" role="1AmG6M">
               <property role="2hmy$m" value="7" />
             </node>
@@ -1708,17 +1708,17 @@
             <property role="2hmy$m" value="7" />
           </node>
           <node concept="1AmG6P" id="4c3N3BQ5Z9l" role="2N2GHg">
-            <ref role="1XX6Gv" node="4c3N3BOdYkY" />
-            <ref role="2YB7zn" node="4c3N3BQ5YHP" />
-            <ref role="1XX6Gs" node="4c3N3BOdYma" />
+            <ref role="1XX6Gv" node="4c3N3BOdYkY" resolve="providerConsumerApp" />
+            <ref role="2YB7zn" node="4c3N3BQ5YHP" resolve="getValue" />
+            <ref role="1XX6Gs" node="4c3N3BOdYma" resolve="consumerInst" />
           </node>
         </node>
         <node concept="3XISUE" id="4c3N3BQ5Z9A" role="3XIRFZ" />
         <node concept="1_9egQ" id="4c3N3BQ5ZdN" role="3XIRFZ">
           <node concept="1AmG6P" id="4c3N3BQ5ZdO" role="1_9egR">
-            <ref role="1XX6Gv" node="4c3N3BOdYkY" />
-            <ref role="1XX6Gs" node="4c3N3BOdYmm" />
-            <ref role="2YB7zn" node="4c3N3BQ5YSd" />
+            <ref role="1XX6Gv" node="4c3N3BOdYkY" resolve="providerConsumerApp" />
+            <ref role="1XX6Gs" node="4c3N3BOdYmm" resolve="providerInst" />
+            <ref role="2YB7zn" node="4c3N3BQ5YSd" resolve="setValueThroughFunc" />
             <node concept="3TlMh9" id="4c3N3BQ5ZdP" role="1AmG6M">
               <property role="2hmy$m" value="9" />
             </node>
@@ -1729,9 +1729,9 @@
             <property role="2hmy$m" value="9" />
           </node>
           <node concept="1AmG6P" id="4c3N3BQ5YKL" role="2N2GHg">
-            <ref role="1XX6Gv" node="4c3N3BOdYkY" />
-            <ref role="1XX6Gs" node="4c3N3BOdYma" />
-            <ref role="2YB7zn" node="4c3N3BQ5YHP" />
+            <ref role="1XX6Gv" node="4c3N3BOdYkY" resolve="providerConsumerApp" />
+            <ref role="1XX6Gs" node="4c3N3BOdYma" resolve="consumerInst" />
+            <ref role="2YB7zn" node="4c3N3BQ5YHP" resolve="getValue" />
           </node>
         </node>
       </node>

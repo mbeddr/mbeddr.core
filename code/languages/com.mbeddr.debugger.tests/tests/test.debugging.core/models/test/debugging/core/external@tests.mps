@@ -44,7 +44,7 @@
       <concept id="8867272038842303611" name="com.mbeddr.core.debug.test.structure.DebuggerTestcaseReference" flags="ng" index="UZuib">
         <reference id="8867272038842351965" name="testCase" index="UZi6H" />
       </concept>
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -111,7 +111,7 @@
   <node concept="309jyn" id="5S3xvtanoq">
     <property role="TrG5h" value="ExternalModule" />
     <node concept="3qy1PH" id="5S3xvtanor" role="3qy1PE">
-      <ref role="30ajXG" to="376k:7RiewQ_lHnQ" />
+      <ref role="30ajXG" to="376k:7RiewQ_lHnQ" resolve="ExternalModulesTest" />
     </node>
     <node concept="3scrou" id="6exYDFu6Bhi" role="1zJi$$">
       <property role="3sdR9e" value="true" />
@@ -120,14 +120,14 @@
       <node concept="3clFbS" id="6exYDFu6Bhk" role="3clF47" />
       <node concept="3sdZbQ" id="6exYDFu6Bhl" role="3scror">
         <node concept="3sdZbA" id="6exYDFu6Bhm" role="3sdZbB">
-          <ref role="3sa5fj" to="376k:bKKma6Gw43" />
+          <ref role="3sa5fj" to="376k:bKKma6Gw43" resolve="externalCall" />
         </node>
       </node>
       <node concept="3F5Y_J" id="6exYDFu6Bhn" role="3F5AM1">
         <node concept="30a7bf" id="6exYDFu6Bho" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMxZ" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="376k:bKKma6Gw44" />
+            <ref role="3cQ7K8" to="376k:bKKma6Gw44" resolve="stmntAfterExternalCall" />
           </node>
         </node>
         <node concept="1l46Ie" id="6exYDFu6Bhr" role="3F5Y$9">
@@ -166,7 +166,7 @@
         <node concept="3sdZb$" id="6exYDFu6BZm" role="3sdZbB" />
       </node>
       <node concept="UZuib" id="7GeSf1268mA" role="UYYtp">
-        <ref role="UZi6H" node="6exYDFu6Bhi" />
+        <ref role="UZi6H" node="6exYDFu6Bhi" resolve="stepOnexternalModuleCall" />
       </node>
     </node>
     <node concept="3sgmnF" id="4WY_RKG$NMX" role="1zJi$$" />
@@ -180,7 +180,7 @@
         </node>
       </node>
       <node concept="UZuib" id="7GeSf1268ys" role="UYYtp">
-        <ref role="UZi6H" node="6exYDFu6Bhi" />
+        <ref role="UZi6H" node="6exYDFu6Bhi" resolve="stepOnexternalModuleCall" />
       </node>
     </node>
     <node concept="3sgmnF" id="4WY_RKG$NMW" role="1zJi$$" />
@@ -190,7 +190,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mbx" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mby" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mbz" role="3sdZbB">
-          <ref role="3sa5fj" to="376k:bKKma6Gw43" />
+          <ref role="3sa5fj" to="376k:bKKma6Gw43" resolve="externalCall" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mb$" role="3savwP" />
@@ -198,7 +198,7 @@
         <node concept="30a7bf" id="7Jr7T0w2mbA" role="3F5Y$9">
           <node concept="3cQ7K9" id="3GPxRNRaMxX" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="376k:bKKma6Gw43" />
+            <ref role="3cQ7K8" to="376k:bKKma6Gw43" resolve="externalCall" />
           </node>
         </node>
       </node>

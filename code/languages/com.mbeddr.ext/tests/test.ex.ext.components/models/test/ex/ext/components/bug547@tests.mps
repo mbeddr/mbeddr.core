@@ -212,13 +212,13 @@
     <node concept="3i2$bm" id="6$zgR4RzMkS" role="2Q9xDr">
       <node concept="3i3YCL" id="6$zgR4RzMkU" role="3i30U9">
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="6$zgR4RzMjZ" />
+        <ref role="35zhcq" node="6$zgR4RzMjZ" resolve="instances" />
       </node>
     </node>
     <node concept="2eOfOl" id="6$zgR4RzMib" role="2ePNbc">
       <property role="TrG5h" value="bug547" />
       <node concept="2v9HqM" id="6$zgR4RzMic" role="2eOfOg">
-        <ref role="2v9HqP" node="6$zgR4RzMhh" />
+        <ref role="2v9HqP" node="6$zgR4RzMhh" resolve="bug547" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTAp0" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -352,7 +352,7 @@
               <node concept="2wJmCr" id="6$zgR4RzNuW" role="3TlMhI">
                 <node concept="2wJmCr" id="6$zgR4RzNuS" role="1_9fRO">
                   <node concept="EbZIE" id="6$zgR4RzNuP" role="1_9fRO">
-                    <ref role="EbZID" node="6$zgR4RzMih" />
+                    <ref role="EbZID" node="6$zgR4RzMih" resolve="multiDimArray" />
                   </node>
                   <node concept="3TlMh9" id="6$zgR4RzNuT" role="2wJmCp">
                     <property role="2hmy$m" value="0" />
@@ -372,7 +372,7 @@
               <node concept="2wJmCr" id="6$zgR4RzNv7" role="3TlMhI">
                 <node concept="2wJmCr" id="6$zgR4RzNv8" role="1_9fRO">
                   <node concept="EbZIE" id="6$zgR4RzNv9" role="1_9fRO">
-                    <ref role="EbZID" node="6$zgR4RzMih" />
+                    <ref role="EbZID" node="6$zgR4RzMih" resolve="multiDimArray" />
                   </node>
                   <node concept="3TlMh9" id="6$zgR4RzNva" role="2wJmCp">
                     <property role="2hmy$m" value="0" />
@@ -403,7 +403,7 @@
               <node concept="2wJmCr" id="3$tYuge51p6" role="3TlMhI">
                 <node concept="2wJmCr" id="3$tYuge51p2" role="1_9fRO">
                   <node concept="EbZIE" id="3$tYuge51oZ" role="1_9fRO">
-                    <ref role="EbZID" node="6$zgR4RzMih" />
+                    <ref role="EbZID" node="6$zgR4RzMih" resolve="multiDimArray" />
                   </node>
                   <node concept="3TlMh9" id="3$tYuge51p3" role="2wJmCp">
                     <property role="2hmy$m" value="0" />
@@ -423,7 +423,7 @@
               <node concept="2wJmCr" id="3$tYuge51ph" role="3TlMhI">
                 <node concept="2wJmCr" id="3$tYuge51pi" role="1_9fRO">
                   <node concept="EbZIE" id="3$tYuge51pj" role="1_9fRO">
-                    <ref role="EbZID" node="6$zgR4RzMih" />
+                    <ref role="EbZID" node="6$zgR4RzMih" resolve="multiDimArray" />
                   </node>
                   <node concept="3TlMh9" id="3$tYuge51pk" role="2wJmCp">
                     <property role="2hmy$m" value="0" />
@@ -443,7 +443,7 @@
               <node concept="2wJmCr" id="3$tYuge51px" role="3TlMhI">
                 <node concept="2wJmCr" id="3$tYuge51py" role="1_9fRO">
                   <node concept="EbZIE" id="3$tYuge51pA" role="1_9fRO">
-                    <ref role="EbZID" node="3$tYuge51oB" />
+                    <ref role="EbZID" node="3$tYuge51oB" resolve="multiDimArrayWithInit" />
                   </node>
                   <node concept="3TlMh9" id="3$tYuge51p$" role="2wJmCp">
                     <property role="2hmy$m" value="0" />
@@ -463,7 +463,7 @@
               <node concept="2wJmCr" id="3$tYuge51pE" role="3TlMhI">
                 <node concept="2wJmCr" id="3$tYuge51pF" role="1_9fRO">
                   <node concept="EbZIE" id="3$tYuge51pG" role="1_9fRO">
-                    <ref role="EbZID" node="3$tYuge51oB" />
+                    <ref role="EbZID" node="3$tYuge51oB" resolve="multiDimArrayWithInit" />
                   </node>
                   <node concept="3TlMh9" id="3$tYuge51pH" role="2wJmCp">
                     <property role="2hmy$m" value="0" />
@@ -491,7 +491,7 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="6$zgR4RzMk0" role="5JtDH">
         <property role="TrG5h" value="comp" />
-        <ref role="2EWCuU" node="6$zgR4RzMig" />
+        <ref role="2EWCuU" node="6$zgR4RzMig" resolve="AComponent" />
       </node>
     </node>
     <node concept="2NXPZ9" id="6$zgR4RzMjO" role="N3F5h">
@@ -507,9 +507,9 @@
       <node concept="3XIRFW" id="6$zgR4RzMjS" role="c0Qz3">
         <node concept="1_9egQ" id="3$tYuge51oV" role="3XIRFZ">
           <node concept="1AmG6P" id="3$tYuge51oW" role="1_9egR">
-            <ref role="1XX6Gs" node="6$zgR4RzMk0" />
-            <ref role="2YB7zn" node="3$tYuge51oQ" />
-            <ref role="1XX6Gv" node="6$zgR4RzMjZ" />
+            <ref role="1XX6Gs" node="6$zgR4RzMk0" resolve="comp" />
+            <ref role="2YB7zn" node="3$tYuge51oQ" resolve="testRunnable" />
+            <ref role="1XX6Gv" node="6$zgR4RzMjZ" resolve="instances" />
           </node>
         </node>
       </node>
@@ -522,11 +522,11 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAIcn" role="lIfQt">
-        <ref role="3cM6IK" node="6$zgR4RzMjQ" />
+        <ref role="3cM6IK" node="6$zgR4RzMjQ" resolve="testMultiDimArraysAsFields" />
       </node>
       <node concept="3XIRFW" id="1GMvKXN4Y3k" role="1$8m2t">
         <node concept="3t9XKO" id="1GMvKXN4Y2X" role="3XIRFZ">
-          <ref role="3t9XKR" node="6$zgR4RzMjZ" />
+          <ref role="3t9XKR" node="6$zgR4RzMjZ" resolve="instances" />
         </node>
       </node>
     </node>

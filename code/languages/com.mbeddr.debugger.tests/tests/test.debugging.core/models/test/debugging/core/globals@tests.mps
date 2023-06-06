@@ -39,7 +39,7 @@
     </language>
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -110,7 +110,7 @@
     </node>
     <node concept="3sgmnF" id="4WY_RKG$GLM" role="1zJi$$" />
     <node concept="3qy1PH" id="5S3xvtanot" role="3qy1PE">
-      <ref role="30ajXG" to="g7kc:5IYyAOzCBdJ" />
+      <ref role="30ajXG" to="g7kc:5IYyAOzCBdJ" resolve="GlobalVariablesTest" />
     </node>
     <node concept="3scrou" id="7Jr7T0w2lWu" role="1zJi$$">
       <property role="TrG5h" value="onlyGlobalsVisible" />
@@ -118,17 +118,17 @@
       <node concept="3clFbS" id="7Jr7T0w2lWw" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2lWx" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2lWy" role="3sdZbB">
-          <ref role="3sa5fj" to="g7kc:3cUcim$fhos" />
+          <ref role="3sa5fj" to="g7kc:3cUcim$fhos" resolve="mainFunction" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2lWz" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2lW$" role="3F5AM1">
         <node concept="1vtf2i" id="4WY_RKG$GLW" role="3F5Y$9">
-          <ref role="1vtf2j" node="4WY_RKGxD2I" />
+          <ref role="1vtf2j" node="4WY_RKGxD2I" resolve="inMain" />
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2lW_" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$GLQ" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$GLO" />
+            <ref role="1vv99g" node="4WY_RKG$GLO" resolve="globals" />
           </node>
         </node>
       </node>
@@ -140,14 +140,14 @@
       <node concept="3clFbS" id="7Jr7T0w2mah" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mai" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2maj" role="3sdZbB">
-          <ref role="3sa5fj" to="g7kc:bKKma6GwFH" />
+          <ref role="3sa5fj" to="g7kc:bKKma6GwFH" resolve="calledFunctionInsideImportedModule" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mak" role="3savwP" />
       <node concept="3F5Y_J" id="7Jr7T0w2mal" role="3F5AM1">
         <node concept="1l46Ie" id="7Jr7T0w2mam" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$GLR" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$GLO" />
+            <ref role="1vv99g" node="4WY_RKG$GLO" resolve="globals" />
           </node>
         </node>
         <node concept="1l6n2J" id="4WY_RKG$GLY" role="3F5Y$9">
@@ -170,7 +170,7 @@
       <node concept="3clFbS" id="7Jr7T0w2mfL" role="3clF47" />
       <node concept="3sdZbQ" id="7Jr7T0w2mfM" role="3scror">
         <node concept="3sdZbA" id="7Jr7T0w2mfN" role="3sdZbB">
-          <ref role="3sa5fj" to="g7kc:bKKma6GwFM" />
+          <ref role="3sa5fj" to="g7kc:bKKma6GwFM" resolve="mixingGlobalAndLocalVariables" />
         </node>
       </node>
       <node concept="3savIG" id="7Jr7T0w2mfO" role="3savwP" />
@@ -185,7 +185,7 @@
         </node>
         <node concept="1l46Ie" id="7Jr7T0w2mfQ" role="3F5Y$9">
           <node concept="1vv375" id="4WY_RKG$GLS" role="1vv36M">
-            <ref role="1vv99g" node="4WY_RKG$GLO" />
+            <ref role="1vv99g" node="4WY_RKG$GLO" resolve="globals" />
           </node>
           <node concept="1IjokO" id="5YGS28LWmSa" role="1l4ezG">
             <property role="TrG5h" value="x" />

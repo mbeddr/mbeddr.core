@@ -147,7 +147,7 @@
     <node concept="2eOfOl" id="4PM5ysqsGoP" role="2ePNbc">
       <property role="TrG5h" value="BitTest" />
       <node concept="2v9HqM" id="4PM5ysqsGoT" role="2eOfOg">
-        <ref role="2v9HqP" node="5nhrDHCiiST" />
+        <ref role="2v9HqP" node="5nhrDHCiiST" resolve="BitFieldTest" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxxTgz" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -189,7 +189,7 @@
       <property role="TrG5h" value="main" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Tiud0TdXES" role="lIfQt">
-        <ref role="3cM6IK" node="5nhrDHCiiXl" />
+        <ref role="3cM6IK" node="5nhrDHCiiXl" resolve="testBitFields" />
       </node>
     </node>
     <node concept="2NXPZ9" id="4PM5ysqsRf9" role="N3F5h">
@@ -203,7 +203,7 @@
         <node concept="3XIRlf" id="5nhrDHCiiXx" role="3XIRFZ">
           <property role="TrG5h" value="bits" />
           <node concept="1sgJKr" id="5nhrDHCiiXy" role="2C2TGm">
-            <ref role="1sgJKq" node="5nhrDHCiiSU" />
+            <ref role="1sgJKq" node="5nhrDHCiiSU" resolve="Bits" />
           </node>
           <node concept="3cQ7KT" id="4PM5ysqsGoW" role="lGtFl">
             <property role="TrG5h" value="bitFieldDeclaration" />
@@ -213,10 +213,10 @@
           <node concept="3pqW6w" id="1exqRpao79" role="1_9egR">
             <node concept="2qmXGp" id="1erouHqJ0H3" role="3TlMhI">
               <node concept="3ZVu4v" id="5nhrDHCiiXA" role="1_9fRO">
-                <ref role="3ZVs_2" node="5nhrDHCiiXx" />
+                <ref role="3ZVs_2" node="5nhrDHCiiXx" resolve="bits" />
               </node>
               <node concept="1E4Tgc" id="1erouHqJ0H4" role="1ESnxz">
-                <ref role="1E4Tge" node="1u3L9i_19iK" />
+                <ref role="1E4Tge" node="1u3L9i_19iK" resolve="b1" />
               </node>
             </node>
             <node concept="3TlMh9" id="5nhrDHCiiXO" role="3TlMhJ">
@@ -231,10 +231,10 @@
           <node concept="3pqW6w" id="1exqRpao1B" role="1_9egR">
             <node concept="2qmXGp" id="1erouHqJ0Ji" role="3TlMhI">
               <node concept="3ZVu4v" id="5nhrDHCiiXR" role="1_9fRO">
-                <ref role="3ZVs_2" node="5nhrDHCiiXx" />
+                <ref role="3ZVs_2" node="5nhrDHCiiXx" resolve="bits" />
               </node>
               <node concept="1E4Tgc" id="1erouHqJ0Jj" role="1ESnxz">
-                <ref role="1E4Tge" node="1u3L9i_19k3" />
+                <ref role="1E4Tge" node="1u3L9i_19k3" resolve="b2" />
               </node>
             </node>
             <node concept="3TlMh9" id="5nhrDHCiiY4" role="3TlMhJ">
@@ -252,10 +252,10 @@
             </node>
             <node concept="2qmXGp" id="1erouHqJ0Dt" role="3TlMhI">
               <node concept="3ZVu4v" id="5nhrDHCiGYJ" role="1_9fRO">
-                <ref role="3ZVs_2" node="5nhrDHCiiXx" />
+                <ref role="3ZVs_2" node="5nhrDHCiiXx" resolve="bits" />
               </node>
               <node concept="1E4Tgc" id="1erouHqJ0Du" role="1ESnxz">
-                <ref role="1E4Tge" node="1u3L9i_19iK" />
+                <ref role="1E4Tge" node="1u3L9i_19iK" resolve="b1" />
               </node>
             </node>
           </node>
@@ -267,10 +267,10 @@
             </node>
             <node concept="2qmXGp" id="1erouHqJ0zE" role="3TlMhI">
               <node concept="3ZVu4v" id="5nhrDHCiI28" role="1_9fRO">
-                <ref role="3ZVs_2" node="5nhrDHCiiXx" />
+                <ref role="3ZVs_2" node="5nhrDHCiiXx" resolve="bits" />
               </node>
               <node concept="1E4Tgc" id="1erouHqJ0zF" role="1ESnxz">
-                <ref role="1E4Tge" node="1u3L9i_19k3" />
+                <ref role="1E4Tge" node="1u3L9i_19k3" resolve="b2" />
               </node>
             </node>
           </node>

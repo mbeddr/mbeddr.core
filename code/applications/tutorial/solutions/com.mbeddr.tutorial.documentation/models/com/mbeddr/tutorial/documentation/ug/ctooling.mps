@@ -1395,7 +1395,7 @@
             <node concept="3z_lpY" id="7yEEdZqjvCF" role="19SJt6">
               <node concept="2NCZwO" id="7yEEdZqjvCG" role="3z_lpZ">
                 <node concept="2NCMab" id="7yEEdZqjvCH" role="2NCMaf">
-                  <ref role="2NCMaa" to="vdd5:5dchr4Qk7m9" />
+                  <ref role="2NCMaa" to="vdd5:5dchr4Qk7m9" resolve="Main" />
                 </node>
               </node>
             </node>
@@ -1462,7 +1462,7 @@
             <node concept="3z_lpY" id="7yEEdZqjnHZ" role="19SJt6">
               <node concept="2NCZwO" id="7yEEdZqjnI0" role="3z_lpZ">
                 <node concept="2NCMab" id="7yEEdZqjnI1" role="2NCMaf">
-                  <ref role="2NCMaa" to="vdd5:5dchr4Qk7m9" />
+                  <ref role="2NCMaa" to="vdd5:5dchr4Qk7m9" resolve="Main" />
                 </node>
               </node>
             </node>
@@ -2022,7 +2022,7 @@
             <node concept="3z_lpY" id="1IjqGpzeBwH" role="19SJt6">
               <node concept="2NCZwO" id="1IjqGpzeBwI" role="3z_lpZ">
                 <node concept="2NCMab" id="1IjqGpzeCed" role="2NCMaf">
-                  <ref role="2NCMaa" to="7qwm:AO_S936VOp" />
+                  <ref role="2NCMaa" to="7qwm:AO_S936VOp" resolve="PlainCDemo" />
                 </node>
               </node>
             </node>
@@ -2042,7 +2042,7 @@
             <node concept="3z_lpY" id="1IjqGpzeIcg" role="19SJt6">
               <node concept="2NCZwO" id="1IjqGpzeIch" role="3z_lpZ">
                 <node concept="2NCMab" id="1IjqGpzeIcA" role="2NCMaf">
-                  <ref role="2NCMaa" to="7qwm:AO_S936VPj" />
+                  <ref role="2NCMaa" to="7qwm:AO_S936VPj" resolve="BuildConfiguration (m.t.m.plainC)" />
                 </node>
               </node>
             </node>
@@ -2071,10 +2071,10 @@
                 <node concept="3z_lpY" id="1IjqGpzeIdc" role="19SJt6">
                   <node concept="2NCZwO" id="1IjqGpzeIdd" role="3z_lpZ">
                     <node concept="2NCMab" id="1IjqGpzeIdw" role="2NCMaf">
-                      <ref role="2NCMaa" to="7qwm:AO_S936VOp" />
+                      <ref role="2NCMaa" to="7qwm:AO_S936VOp" resolve="PlainCDemo" />
                     </node>
                     <node concept="2NCMab" id="1IjqGpzeId_" role="2NCMaf">
-                      <ref role="2NCMaa" to="7qwm:AO_S936VOq" />
+                      <ref role="2NCMaa" to="7qwm:AO_S936VOq" resolve="main" />
                     </node>
                   </node>
                 </node>
@@ -2824,7 +2824,7 @@
           <node concept="2bctqb" id="4Rhu9QGKB_g" role="3z_lpT" />
           <node concept="2NCZwO" id="4Rhu9QGKB_i" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGKC91" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" />
+              <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
             </node>
           </node>
           <node concept="2Cuv_b" id="4Rhu9QGKCau" role="3z_lpH">
@@ -2854,10 +2854,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4Rhu9QGM6ZE" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM70l" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" />
+              <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
             </node>
             <node concept="2NCMab" id="4Rhu9QGM70q" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGM4MG" />
+              <ref role="2NCMaa" to="orbb:4Rhu9QGM4MG" resolve="testAdding" />
             </node>
           </node>
         </node>
@@ -2919,10 +2919,10 @@
             <node concept="3z_lpY" id="4Rhu9QGM9vX" role="19SJt6">
               <node concept="2NCZwO" id="4Rhu9QGM9vY" role="3z_lpZ">
                 <node concept="2NCMab" id="4Rhu9QGM9wy" role="2NCMaf">
-                  <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" />
+                  <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
                 </node>
                 <node concept="2NCMab" id="4Rhu9QGM9wB" role="2NCMaf">
-                  <ref role="2NCMaa" to="orbb:4Rhu9QGM4MG" />
+                  <ref role="2NCMaa" to="orbb:4Rhu9QGM4MG" resolve="testAdding" />
                 </node>
               </node>
             </node>
@@ -2937,10 +2937,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="4Rhu9QGM9$9" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGM9_k" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" />
+              <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
             </node>
             <node concept="2NCMab" id="7YPARvXj08g" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Ru$s7zMAqW" />
+              <ref role="2NCMaa" to="orbb:4Ru$s7zMAqW" resolve="main" />
             </node>
           </node>
         </node>
@@ -2985,7 +2985,7 @@
           <node concept="2bctqb" id="4Rhu9QGMwpA" role="3z_lpT" />
           <node concept="2NCZwO" id="4Rhu9QGMwpC" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGMwr9" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGM9U9" />
+              <ref role="2NCMaa" to="orbb:4Rhu9QGM9U9" resolve="BuildConfiguration (c.m.t.s.H.main)" />
             </node>
           </node>
           <node concept="2Cuv_b" id="4Rhu9QGMwrr" role="3z_lpH">
@@ -3073,7 +3073,7 @@
                 <node concept="3z_lpY" id="4Rhu9QGMxz4" role="19SJt6">
                   <node concept="2NCZwO" id="4Rhu9QGMxz5" role="3z_lpZ">
                     <node concept="2NCMab" id="4Rhu9QGMxzf" role="2NCMaf">
-                      <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" />
+                      <ref role="2NCMaa" to="orbb:4Rhu9QGK$vN" resolve="HelloWorld" />
                     </node>
                   </node>
                 </node>
@@ -3115,7 +3115,7 @@
           <node concept="2bctqb" id="4Rhu9QGMynx" role="3z_lpT" />
           <node concept="2NCZwO" id="4Rhu9QGMyny" role="3z_lpI">
             <node concept="2NCMab" id="4Rhu9QGMynz" role="2NCMaf">
-              <ref role="2NCMaa" to="orbb:4Rhu9QGM9U9" />
+              <ref role="2NCMaa" to="orbb:4Rhu9QGM9U9" resolve="BuildConfiguration (c.m.t.s.H.main)" />
             </node>
           </node>
         </node>

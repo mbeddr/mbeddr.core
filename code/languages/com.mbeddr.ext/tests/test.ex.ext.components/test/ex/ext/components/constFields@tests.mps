@@ -186,7 +186,7 @@
       <property role="2OOxQR" value="true" />
       <property role="3HjyOP" value="true" />
       <node concept="3cM6IN" id="4Ru$s7zAId6" role="lIfQt">
-        <ref role="3cM6IK" node="2PeDUX_LBvJ" />
+        <ref role="3cM6IK" node="2PeDUX_LBvJ" resolve="testCase1" />
       </node>
     </node>
     <node concept="c0Qz5" id="2PeDUX_LBvJ" role="N3F5h">
@@ -198,7 +198,7 @@
       </node>
       <node concept="3XIRFW" id="2PeDUX_LBvI" role="c0Qz3">
         <node concept="3t9XKO" id="67hg1wLIS9_" role="3XIRFZ">
-          <ref role="3t9XKR" node="67hg1wLIRY1" />
+          <ref role="3t9XKR" node="67hg1wLIRY1" resolve="instances" />
         </node>
         <node concept="c0Tn9" id="67hg1wM1Bzr" role="3XIRFZ">
           <node concept="3TlM44" id="67hg1wM1B$7" role="c0Tn6">
@@ -206,9 +206,9 @@
               <property role="2hmy$m" value="1" />
             </node>
             <node concept="1AmG6P" id="67hg1wM1BzC" role="3TlMhI">
-              <ref role="1XX6Gv" node="67hg1wLIRY1" />
-              <ref role="1XX6Gs" node="67hg1wLIS95" />
-              <ref role="2YB7zn" node="67hg1wM1BfY" />
+              <ref role="1XX6Gv" node="67hg1wLIRY1" resolve="instances" />
+              <ref role="1XX6Gs" node="67hg1wLIS95" resolve="cwf" />
+              <ref role="2YB7zn" node="67hg1wM1BfY" resolve="doSth" />
             </node>
           </node>
         </node>
@@ -221,7 +221,7 @@
       <property role="TrG5h" value="instances" />
       <node concept="2EWCuV" id="67hg1wLIS95" role="5JtDH">
         <property role="TrG5h" value="cwf" />
-        <ref role="2EWCuU" node="67hg1wLy5XI" />
+        <ref role="2EWCuU" node="67hg1wLy5XI" resolve="CompWithField" />
       </node>
     </node>
     <node concept="2NXPZ9" id="67hg1wLIRMZ" role="N3F5h">
@@ -266,7 +266,7 @@
           <node concept="2BFjQ_" id="7TdHRrCfomD" role="3XIRFZ">
             <node concept="2wJmCr" id="7TdHRrCfoCT" role="2BFjQA">
               <node concept="EbZIE" id="7TdHRrCfosZ" role="1_9fRO">
-                <ref role="EbZID" node="67hg1wL_jMB" />
+                <ref role="EbZID" node="67hg1wL_jMB" resolve="globalInts" />
               </node>
               <node concept="3TlMh9" id="7TdHRrCfoQv" role="2wJmCp">
                 <property role="2hmy$m" value="0" />
@@ -304,13 +304,13 @@
       <node concept="3i3YCL" id="2PeDUX_LXXF" role="3i30U9">
         <property role="3Ewwow" value="true" />
         <property role="2$yeXr" value="true" />
-        <ref role="35zhcq" node="67hg1wLIRY1" />
+        <ref role="35zhcq" node="67hg1wLIRY1" resolve="instances" />
       </node>
     </node>
     <node concept="2eOfOl" id="2PeDUX_LBx$" role="2ePNbc">
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2v9HqM" id="2PeDUX_LBx_" role="2eOfOg">
-        <ref role="2v9HqP" node="2PeDUX_LBvX" />
+        <ref role="2v9HqP" node="2PeDUX_LBvX" resolve="ConstFields" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTApd" role="1kZvWc">
         <property role="TrG5h" value="any" />

@@ -122,10 +122,10 @@
     <node concept="2eOfOl" id="7dfuMW5oBBb" role="2ePNbc">
       <property role="TrG5h" value="main" />
       <node concept="2v9HqM" id="7dfuMW5oBBe" role="2eOfOg">
-        <ref role="2v9HqP" node="7dfuMW5oBAm" />
+        <ref role="2v9HqP" node="7dfuMW5oBAm" resolve="Conflicts" />
       </node>
       <node concept="2v9HqM" id="7dfuMW5oBBm" role="2eOfOg">
-        <ref role="2v9HqP" node="7dfuMW5oBcy" />
+        <ref role="2v9HqP" node="7dfuMW5oBcy" resolve="Main" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTvA0" role="1kZvWc">
         <property role="TrG5h" value="any" />

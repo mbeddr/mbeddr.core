@@ -1089,10 +1089,10 @@
           </node>
           <node concept="2NCZwO" id="220QoZYqmxZ" role="3z_lpI">
             <node concept="2NCMab" id="220QoZYqmy0" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
             </node>
             <node concept="2NCMab" id="220QoZYqmy1" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" resolve="Calculator" />
             </node>
           </node>
         </node>
@@ -1205,13 +1205,13 @@
           </node>
           <node concept="2NCZwO" id="220QoZYqmFk" role="3z_lpI">
             <node concept="2NCMab" id="220QoZYqmFl" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
             </node>
             <node concept="2NCMab" id="220QoZYqmFm" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" resolve="Calculator" />
             </node>
             <node concept="2NCMab" id="220QoZYqmFn" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwe" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwe" resolve="add" />
             </node>
           </node>
         </node>
@@ -1259,10 +1259,10 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="220QoZYqmFv" role="3z_lpI">
             <node concept="2NCMab" id="220QoZYqmFw" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
             </node>
             <node concept="2NCMab" id="220QoZYqmFx" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gSHwa" resolve="Calculator" />
             </node>
           </node>
         </node>
@@ -1367,10 +1367,10 @@
           </node>
           <node concept="2NCZwO" id="8K5lDO6dgo" role="ZeNY6">
             <node concept="2NCMab" id="8K5lDO6gOn" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gRxWW" resolve="ExampleCode" />
             </node>
             <node concept="2NCMab" id="8K5lDO6h39" role="2NCMaf">
-              <ref role="2NCMaa" to="bskg:7$DvC4gTGAe" />
+              <ref role="2NCMaa" to="bskg:7$DvC4gTGAe" resolve="TrafficLights" />
             </node>
           </node>
         </node>
@@ -1582,18 +1582,18 @@
             </node>
             <node concept="3XpXCz" id="6wvhQs7o1x7" role="19SJt6">
               <node concept="3XpXCp" id="6wvhQs7o1x8" role="3XpXCH">
-                <ref role="3XpXCq" node="6wvhQs7nZDo" />
+                <ref role="3XpXCq" node="6wvhQs7nZDo" resolve="N" />
               </node>
               <node concept="2BOcij" id="6wvhQs7o1x9" role="3XpXCG">
                 <node concept="3XpXCp" id="6wvhQs7o1xa" role="3TlMhJ">
-                  <ref role="3XpXCq" node="6wvhQs7nZDx" />
+                  <ref role="3XpXCq" node="6wvhQs7nZDx" resolve="ne" />
                 </node>
                 <node concept="2BOcij" id="6wvhQs7o1xb" role="3TlMhI">
                   <node concept="3XpXCp" id="6wvhQs7o1xc" role="3TlMhI">
-                    <ref role="3XpXCq" node="6wvhQs7nZDr" />
+                    <ref role="3XpXCq" node="6wvhQs7nZDr" resolve="SF" />
                   </node>
                   <node concept="3XpXCp" id="6wvhQs7o1xd" role="3TlMhJ">
-                    <ref role="3XpXCq" node="6wvhQs7nZDu" />
+                    <ref role="3XpXCq" node="6wvhQs7nZDu" resolve="fp" />
                   </node>
                 </node>
               </node>

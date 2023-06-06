@@ -103,19 +103,19 @@
     <node concept="2eOfOl" id="3xRFG9PQKjc" role="2ePNbc">
       <property role="TrG5h" value="ScheduleInCompositeComponent" />
       <node concept="2v9HqM" id="2kF1PD77CgL" role="2eOfOg">
-        <ref role="2v9HqP" to="cxcq:3Xsb2sPPkKA" />
+        <ref role="2v9HqP" to="cxcq:3Xsb2sPPkKA" resolve="ExternalSchedule" />
       </node>
       <node concept="2v9HqM" id="2kF1PD77CgO" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
       <node concept="2v9HqM" id="2kF1PD77CgP" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="2v9HqM" id="2kF1PD77CgQ" role="2eOfOg">
-        <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" />
+        <ref role="2v9HqP" to="ke8p:5gYn0x84UiB" resolve="timeb" />
       </node>
       <node concept="2v9HqM" id="2kF1PD77CgR" role="2eOfOg">
-        <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" />
+        <ref role="2v9HqP" to="ke8p:5gYn0x84VoQ" resolve="TimeUtil" />
       </node>
       <node concept="1l1yNw" id="4JZ_DSvTAoQ" role="1kZvWc">
         <property role="TrG5h" value="Linux" />
@@ -126,7 +126,7 @@
     </node>
     <node concept="1NkVLJ" id="3xRFG9PQKjg" role="2Q9xDr">
       <node concept="1OId_O" id="3qlQk_ggXt8" role="1OIqLV">
-        <ref role="1OIdAa" to="cxcq:3qlQk_gyS6H" />
+        <ref role="1OIdAa" to="cxcq:3qlQk_gyS6H" resolve="schedule1" />
       </node>
       <node concept="1PVdNI" id="7tWSY$QAAxK" role="1NkNSE" />
     </node>

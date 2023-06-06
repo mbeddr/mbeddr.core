@@ -1900,7 +1900,7 @@
               <node concept="g2oj1" id="2qwvqnUvoqh" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="g2oj0" node="2qwvqnUvoqf" />
+                <ref role="g2oj0" node="2qwvqnUvoqf" resolve="aComponent" />
               </node>
             </node>
             <node concept="3Khz0B" id="2qwvqnUvoqi" role="2RW2fA" />
@@ -1941,7 +1941,7 @@
                   <node concept="1_9egQ" id="2qwvqnUvoqu" role="3XIRFZ">
                     <node concept="3pqW6w" id="2qwvqnUvoqv" role="1_9egR">
                       <node concept="3ZVu4v" id="2qwvqnUvoqw" role="3TlMhJ">
-                        <ref role="3ZVs_2" node="2qwvqnUvoqo" />
+                        <ref role="3ZVs_2" node="2qwvqnUvoqo" resolve="someCalulatedVar" />
                         <node concept="29HgVG" id="2qwvqnUvoqx" role="lGtFl">
                           <node concept="3NFfHV" id="2qwvqnUvoqy" role="3NFExx">
                             <node concept="3clFbS" id="2qwvqnUvoqz" role="2VODD2">
@@ -1970,7 +1970,7 @@
                       </node>
                       <node concept="1igxio" id="2qwvqnUvoqG" role="3TlMhI">
                         <node concept="EbZIE" id="2qwvqnUvoqH" role="1_9fRO">
-                          <ref role="EbZID" node="2qwvqnUvoqg" />
+                          <ref role="EbZID" node="2qwvqnUvoqg" resolve="refToAComponent" />
                           <node concept="1ZhdrF" id="2qwvqnUvoqI" role="lGtFl">
                             <property role="2qtEX8" value="field" />
                             <property role="P3scX" value="97d24244-51db-4e2e-97fc-7bd73b1f5f40/5308710777891565561/5308710777891565562" />
@@ -1998,7 +1998,7 @@
                           </node>
                         </node>
                         <node concept="1ijC0e" id="2qwvqnUvoqT" role="1igach">
-                          <ref role="1ijC09" node="2qwvqnUvoqj" />
+                          <ref role="1ijC09" node="2qwvqnUvoqj" resolve="aField" />
                           <node concept="1ZhdrF" id="2qwvqnUvoqU" role="lGtFl">
                             <property role="2qtEX8" value="field" />
                             <property role="P3scX" value="97d24244-51db-4e2e-97fc-7bd73b1f5f40/9184727592626304283/9184727592626304284" />
@@ -2234,7 +2234,7 @@
                   <node concept="1_9egQ" id="2qwvqnUvosq" role="3XIRFZ">
                     <node concept="1igxio" id="2qwvqnUvosr" role="1_9egR">
                       <node concept="EbZIE" id="2qwvqnUvoss" role="1_9fRO">
-                        <ref role="EbZID" node="2qwvqnUvoqg" />
+                        <ref role="EbZID" node="2qwvqnUvoqg" resolve="refToAComponent" />
                         <node concept="1ZhdrF" id="2qwvqnUvost" role="lGtFl">
                           <property role="2qtEX8" value="field" />
                           <property role="P3scX" value="97d24244-51db-4e2e-97fc-7bd73b1f5f40/5308710777891565561/5308710777891565562" />
@@ -2248,7 +2248,7 @@
                         </node>
                       </node>
                       <node concept="1igacp" id="2qwvqnUvosy" role="1igach">
-                        <ref role="1ig9eH" node="2qwvqnUvoqm" />
+                        <ref role="1ig9eH" node="2qwvqnUvoqm" resolve="setup" />
                         <node concept="1ZhdrF" id="2qwvqnUvosz" role="lGtFl">
                           <property role="2qtEX8" value="runnable" />
                           <property role="P3scX" value="97d24244-51db-4e2e-97fc-7bd73b1f5f40/9184727592626165260/9184727592626169528" />
@@ -2281,7 +2281,7 @@
                           </node>
                         </node>
                         <node concept="3ZUYvv" id="3xn9VoNShd_" role="1AmG6M">
-                          <ref role="3ZUYvu" node="3xn9VoNS6m9" />
+                          <ref role="3ZUYvu" node="3xn9VoNS6m9" resolve="providedPort" />
                           <node concept="1WS0z7" id="3xn9VoOcgRK" role="lGtFl">
                             <node concept="3JmXsc" id="3xn9VoOcgRL" role="3Jn$fo">
                               <node concept="3clFbS" id="3xn9VoOcgRM" role="2VODD2">
@@ -2541,7 +2541,7 @@
                 </node>
                 <node concept="1_9egQ" id="2qwvqnUvou0" role="3XIRFZ">
                   <node concept="3ZVu4v" id="2qwvqnUvou1" role="1_9egR">
-                    <ref role="3ZVs_2" node="2qwvqnUvotX" />
+                    <ref role="3ZVs_2" node="2qwvqnUvotX" resolve="aVar" />
                     <node concept="raruj" id="2qwvqnUvou2" role="lGtFl" />
                     <node concept="1ZhdrF" id="2qwvqnUvou3" role="lGtFl">
                       <property role="2qtEX8" value="var" />
@@ -2635,7 +2635,7 @@
               <node concept="3XIRFW" id="2qwvqnUvouC" role="2EWMhI">
                 <node concept="1_9egQ" id="2qwvqnUvouE" role="3XIRFZ">
                   <node concept="EbZIE" id="2qwvqnUvouF" role="1_9egR">
-                    <ref role="EbZID" node="2qwvqnUvou_" />
+                    <ref role="EbZID" node="2qwvqnUvou_" resolve="aField" />
                     <node concept="raruj" id="2qwvqnUvouG" role="lGtFl" />
                     <node concept="1ZhdrF" id="2qwvqnUvouH" role="lGtFl">
                       <property role="2qtEX8" value="field" />
@@ -2722,7 +2722,7 @@
               <node concept="g2oj1" id="4dKKrcEiaIl" role="2C2TGm">
                 <property role="2caQfQ" value="false" />
                 <property role="2c7vTL" value="false" />
-                <ref role="g2oj0" node="4dKKrcEf$e1" />
+                <ref role="g2oj0" node="4dKKrcEf$e1" resolve="aComp" />
               </node>
             </node>
             <node concept="2EWDwb" id="4dKKrcEf$e4" role="2RW2fA">
@@ -2731,7 +2731,7 @@
                 <node concept="1_9egQ" id="4dKKrcEjclt" role="3XIRFZ">
                   <node concept="1igxio" id="4dKKrcEjcLC" role="1_9egR">
                     <node concept="EbZIE" id="4dKKrcEjclr" role="1_9fRO">
-                      <ref role="EbZID" node="4dKKrcEiaIo" />
+                      <ref role="EbZID" node="4dKKrcEiaIo" resolve="aComp" />
                       <node concept="1ZhdrF" id="4dKKrcEjeam" role="lGtFl">
                         <property role="2qtEX8" value="field" />
                         <property role="P3scX" value="97d24244-51db-4e2e-97fc-7bd73b1f5f40/5308710777891565561/5308710777891565562" />
@@ -2765,9 +2765,9 @@
                       </node>
                     </node>
                     <node concept="1igacp" id="4dKKrcEjcXJ" role="1igach">
-                      <ref role="1ig9eH" node="4dKKrcEf$e4" />
+                      <ref role="1ig9eH" node="4dKKrcEf$e4" resolve="setup" />
                       <node concept="3ZUYvv" id="4dKKrcEjdcK" role="1AmG6M">
-                        <ref role="3ZUYvu" node="4dKKrcEicdK" />
+                        <ref role="3ZUYvu" node="4dKKrcEicdK" resolve="arg" />
                         <node concept="2b32R4" id="4dKKrcEjfF0" role="lGtFl">
                           <node concept="3JmXsc" id="4dKKrcEjfF3" role="2P8S$">
                             <node concept="3clFbS" id="4dKKrcEjfF4" role="2VODD2">

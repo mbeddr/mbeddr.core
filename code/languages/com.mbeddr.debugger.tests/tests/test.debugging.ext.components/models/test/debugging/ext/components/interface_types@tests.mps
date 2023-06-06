@@ -43,7 +43,7 @@
     <language id="89c70b13-7f9c-47c3-b3c2-c218b52ed82c" name="com.mbeddr.core.debug.test">
       <concept id="6289137936867337325" name="com.mbeddr.core.debug.test.structure.GdbDebuggerBackend" flags="ng" index="29bEnc" />
       <concept id="4231345613098876386" name="com.mbeddr.core.debug.test.structure.StepIntoCommand" flags="ng" index="2$4FY8" />
-      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="ng" index="309jyn">
+      <concept id="7048220250905867886" name="com.mbeddr.core.debug.test.structure.DebuggerTest" flags="lg" index="309jyn">
         <child id="6289137936867385367" name="debuggerBackend" index="29bA6Q" />
         <child id="5100083648679329380" name="binaryRef" index="3qy1PE" />
       </concept>
@@ -98,7 +98,7 @@
       <node concept="3clFbS" id="uZ8WnxBAsB" role="3clF47" />
       <node concept="3sdZbQ" id="uZ8WnxBAsC" role="3scror">
         <node concept="3sdZbA" id="uZ8WnxBAsE" role="3sdZbB">
-          <ref role="3sa5fj" to="9v3f:uZ8WnxBAsD" />
+          <ref role="3sa5fj" to="9v3f:uZ8WnxBAsD" resolve="callingInterfaceOp" />
         </node>
       </node>
       <node concept="3savIG" id="uZ8WnxBAsF" role="3savwP">
@@ -110,7 +110,7 @@
         <node concept="30a7bf" id="uZ8WnxBAsO" role="3F5Y$9">
           <node concept="3cQ7K9" id="3uHGTbhAFot" role="30a7be">
             <property role="3sdDOw" value="marker" />
-            <ref role="3cQ7K8" to="9v3f:uZ8WnxBAsM" />
+            <ref role="3cQ7K8" to="9v3f:uZ8WnxBAsM" resolve="insideCalledInterfaceOp" />
           </node>
         </node>
         <node concept="1l6n2J" id="uZ8WnxBAsI" role="3F5Y$9">
@@ -127,7 +127,7 @@
       </node>
     </node>
     <node concept="3qy1PH" id="uZ8WnxBAsz" role="3qy1PE">
-      <ref role="30ajXG" to="9v3f:3yeYUb95GEG" />
+      <ref role="30ajXG" to="9v3f:3yeYUb95GEG" resolve="InterfaceTypesTest" />
     </node>
   </node>
   <node concept="2XOHcx" id="75iUP$MbTn$">

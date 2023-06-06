@@ -162,19 +162,19 @@
     <node concept="29Nb31" id="4wjSXytPLKY" role="2ePNbc">
       <property role="TrG5h" value="helper" />
       <node concept="2v9HqM" id="4wjSXytPLL4" role="2eOfOg">
-        <ref role="2v9HqP" node="58DJDcMhRF1" />
+        <ref role="2v9HqP" node="58DJDcMhRF1" resolve="ArithmeticFunctions" />
       </node>
       <node concept="2v9HqM" id="7Aba6BzyXd4" role="2eOfOg">
-        <ref role="2v9HqP" node="7Aba6BzyWES" />
+        <ref role="2v9HqP" node="7Aba6BzyWES" resolve="InternalFunctions" />
       </node>
       <node concept="2v9HqM" id="7Aba6BzyXHs" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="2v9HqM" id="7Aba6BzyXHt" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
       <node concept="2v9HqM" id="1EH1Mz64kxp" role="2eOfOg">
-        <ref role="2v9HqP" node="1EH1Mz64k9k" />
+        <ref role="2v9HqP" node="1EH1Mz64k9k" resolve="Arithmetics" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSvTv_M" role="1kZvWc">
         <property role="TrG5h" value="any" />
@@ -224,18 +224,18 @@
       <node concept="3XIRFW" id="7Aba6BzyX5d" role="3XIRFX">
         <node concept="1_9egQ" id="4sIWb0Annpw" role="3XIRFZ">
           <node concept="3O_q_g" id="4sIWb0Annpu" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="4sIWb0AnnpJ" role="3O_q_j">
               <property role="PhEJT" value="%d" />
             </node>
             <node concept="1S7827" id="4sIWb0Annub" role="3O_q_j">
-              <ref role="1S7826" node="7Aba6BziVVU" />
+              <ref role="1S7826" node="7Aba6BziVVU" resolve="var" />
             </node>
           </node>
         </node>
         <node concept="1_9egQ" id="7Aba6BzyXb8" role="3XIRFZ">
           <node concept="3O_q_g" id="7Aba6BzyXb6" role="1_9egR">
-            <ref role="3O_q_h" node="7Aba6BzyWPM" />
+            <ref role="3O_q_h" node="7Aba6BzyWPM" resolve="internalFunc" />
           </node>
         </node>
       </node>
@@ -253,10 +253,10 @@
         <node concept="2BFjQ_" id="58DJDcMhRF7" role="3XIRFZ">
           <node concept="2BOciq" id="58DJDcMhRF8" role="2BFjQA">
             <node concept="3ZUYvv" id="58DJDcMhRF9" role="3TlMhI">
-              <ref role="3ZUYvu" node="58DJDcMhRFc" />
+              <ref role="3ZUYvu" node="58DJDcMhRFc" resolve="x" />
             </node>
             <node concept="3ZUYvv" id="58DJDcMhRFa" role="3TlMhJ">
-              <ref role="3ZUYvu" node="58DJDcMhRFe" />
+              <ref role="3ZUYvu" node="58DJDcMhRFe" resolve="y" />
             </node>
           </node>
         </node>
@@ -292,16 +292,16 @@
         <node concept="2BFjQ_" id="7Aba6BziVR9" role="3XIRFZ">
           <node concept="2BOcil" id="7Aba6BziVRH" role="2BFjQA">
             <node concept="3ZUYvv" id="7Aba6BziVRL" role="3TlMhJ">
-              <ref role="3ZUYvu" node="7Aba6BziVQ_" />
+              <ref role="3ZUYvu" node="7Aba6BziVQ_" resolve="y" />
             </node>
             <node concept="3ZUYvv" id="7Aba6BziVRr" role="3TlMhI">
-              <ref role="3ZUYvu" node="7Aba6BziVQz" />
+              <ref role="3ZUYvu" node="7Aba6BziVQz" resolve="x" />
             </node>
           </node>
         </node>
       </node>
       <node concept="oneTI" id="1EH1Mz64koi" role="lGtFl">
-        <ref role="on8v6" node="1EH1Mz64k9X" />
+        <ref role="on8v6" node="1EH1Mz64k9X" resolve="sub" />
       </node>
       <node concept="26Vqph" id="7iJZfTjzmKJ" role="2C2TGm">
         <property role="2caQfQ" value="false" />
@@ -312,13 +312,13 @@
       <property role="TrG5h" value="empty_1557260325534_12" />
     </node>
     <node concept="3GEVxB" id="7Aba6BzyWK0" role="2OODSX">
-      <ref role="3GEb4d" node="7Aba6BzyWES" />
+      <ref role="3GEb4d" node="7Aba6BzyWES" resolve="InternalFunctions" />
     </node>
     <node concept="3GEVxB" id="1EH1Mz64kgl" role="2OODSX">
-      <ref role="3GEb4d" node="1EH1Mz64k9k" />
+      <ref role="3GEb4d" node="1EH1Mz64k9k" resolve="Arithmetics" />
     </node>
     <node concept="3GEVxB" id="4sIWb0Anni1" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
   </node>
   <node concept="N3F5e" id="7Aba6BzyWES">
@@ -342,7 +342,7 @@
       <node concept="3XIRFW" id="7Aba6BzyWPO" role="3XIRFX">
         <node concept="1_9egQ" id="7Aba6BzyXBC" role="3XIRFZ">
           <node concept="3O_q_g" id="7Aba6BzyXBA" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="7Aba6BzyXBM" role="3O_q_j">
               <property role="PhEJT" value="internalFunc() called" />
             </node>
@@ -352,10 +352,10 @@
       <node concept="19Rifw" id="7Aba6BzyWP8" role="2C2TGm" />
     </node>
     <node concept="3GEVxB" id="7Aba6BzyXAx" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
     <node concept="3GEVxB" id="4NsxPSU_bXR" role="2OODSX">
-      <ref role="3GEb4d" node="1EH1Mz64k9k" />
+      <ref role="3GEb4d" node="1EH1Mz64k9k" resolve="Arithmetics" />
     </node>
   </node>
   <node concept="rcWEw" id="1EH1Mz64k9k">

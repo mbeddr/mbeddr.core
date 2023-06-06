@@ -177,7 +177,7 @@
           <property role="2c7vTL" value="false" />
         </node>
         <node concept="4ZOvp" id="4ATA_JB$$ag" role="1YbSNA">
-          <ref role="2DPCA0" node="4ATA_JB$$ab" />
+          <ref role="2DPCA0" node="4ATA_JB$$ab" resolve="PAYLOAD_SIZE" />
         </node>
       </node>
       <node concept="3o3WLD" id="4ATA_JB$$ah" role="1cecVj">
@@ -203,7 +203,7 @@
                 <property role="2hmy$m" value="0" />
               </node>
               <node concept="1S7827" id="4ATA_JB$$f0" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -218,7 +218,7 @@
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="1S7827" id="4ATA_JB$$V2" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -233,7 +233,7 @@
                 <property role="2hmy$m" value="2" />
               </node>
               <node concept="1S7827" id="4ATA_JB$_0f" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -248,7 +248,7 @@
                 <property role="2hmy$m" value="3" />
               </node>
               <node concept="1S7827" id="4ATA_JB$_5y" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -260,9 +260,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="4ATA_JB$_Oa" role="3XIe9u">
-            <ref role="3O_q_h" to="fusw:68L3PPuzjup" />
+            <ref role="3O_q_h" to="fusw:68L3PPuzjup" resolve="crc16" />
             <node concept="1S7827" id="4ATA_JB$_Qb" role="3O_q_j">
-              <ref role="1S7826" node="4ATA_JB$$ad" />
+              <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
             </node>
             <node concept="3TlMh9" id="4ATA_JB$_V1" role="3O_q_j">
               <property role="2hmy$m" value="4" />
@@ -271,12 +271,12 @@
         </node>
         <node concept="1_9egQ" id="4ATA_JB$B69" role="3XIRFZ">
           <node concept="3O_q_g" id="4ATA_JB$B67" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="4ATA_JB$B8R" role="3O_q_j">
               <property role="PhEJT" value="originalCRC=%d\n" />
             </node>
             <node concept="3ZVu4v" id="4ATA_JB$BBs" role="3O_q_j">
-              <ref role="3ZVs_2" node="4ATA_JB$_F7" />
+              <ref role="3ZVs_2" node="4ATA_JB$_F7" resolve="originalCRC" />
             </node>
           </node>
         </node>
@@ -291,7 +291,7 @@
                 <property role="2hmy$m" value="0" />
               </node>
               <node concept="1S7827" id="4ATA_JB$Aai" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -306,7 +306,7 @@
                 <property role="2hmy$m" value="1" />
               </node>
               <node concept="1S7827" id="4ATA_JB$Aao" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -321,7 +321,7 @@
                 <property role="2hmy$m" value="2" />
               </node>
               <node concept="1S7827" id="4ATA_JB$Aau" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -336,7 +336,7 @@
                 <property role="2hmy$m" value="3" />
               </node>
               <node concept="1S7827" id="4ATA_JB$Aa$" role="1_9fRO">
-                <ref role="1S7826" node="4ATA_JB$$ad" />
+                <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
               </node>
             </node>
           </node>
@@ -348,9 +348,9 @@
             <property role="2c7vTL" value="false" />
           </node>
           <node concept="3O_q_g" id="4ATA_JB$AaC" role="3XIe9u">
-            <ref role="3O_q_h" to="fusw:68L3PPuzjup" />
+            <ref role="3O_q_h" to="fusw:68L3PPuzjup" resolve="crc16" />
             <node concept="1S7827" id="4ATA_JB$AaD" role="3O_q_j">
-              <ref role="1S7826" node="4ATA_JB$$ad" />
+              <ref role="1S7826" node="4ATA_JB$$ad" resolve="my_message" />
             </node>
             <node concept="3TlMh9" id="4ATA_JB$AaE" role="3O_q_j">
               <property role="2hmy$m" value="4" />
@@ -359,12 +359,12 @@
         </node>
         <node concept="1_9egQ" id="4ATA_JB$BDR" role="3XIRFZ">
           <node concept="3O_q_g" id="4ATA_JB$BDS" role="1_9egR">
-            <ref role="3O_q_h" to="3y0n:137zkozycJV" />
+            <ref role="3O_q_h" to="3y0n:137zkozycJV" resolve="printf" />
             <node concept="PhEJO" id="4ATA_JB$BDT" role="3O_q_j">
               <property role="PhEJT" value="modifiedCRC=%d\n" />
             </node>
             <node concept="3ZVu4v" id="4ATA_JB$BDU" role="3O_q_j">
-              <ref role="3ZVs_2" node="4ATA_JB$AaA" />
+              <ref role="3ZVs_2" node="4ATA_JB$AaA" resolve="modifiedCRC" />
             </node>
           </node>
         </node>
@@ -399,29 +399,29 @@
       </node>
     </node>
     <node concept="3GEVxB" id="4ATA_JB$$6Y" role="2OODSX">
-      <ref role="3GEb4d" to="fusw:68L3PPuzjuc" />
+      <ref role="3GEb4d" to="fusw:68L3PPuzjuc" resolve="crc16" />
     </node>
     <node concept="3GEVxB" id="4ATA_JB$AMj" role="2OODSX">
-      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" />
+      <ref role="3GEb4d" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
     </node>
   </node>
   <node concept="2v9HqL" id="4ATA_JB$E0s">
     <node concept="2eOfOl" id="4ATA_JB$DEI" role="2ePNbc">
       <property role="TrG5h" value="crc16_test" />
       <node concept="2v9HqM" id="4ATA_JB$E0S" role="2eOfOg">
-        <ref role="2v9HqP" node="4ATA_JB$$4V" />
+        <ref role="2v9HqP" node="4ATA_JB$$4V" resolve="crc16_main" />
       </node>
       <node concept="2v9HqM" id="4ATA_JB$E0U" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:2RIhi0HBZdt" />
+        <ref role="2v9HqP" to="3y0n:2RIhi0HBZdt" resolve="string" />
       </node>
       <node concept="2v9HqM" id="4ATA_JB$E0V" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:137zkozycPF" />
+        <ref role="2v9HqP" to="3y0n:137zkozycPF" resolve="stdarg" />
       </node>
       <node concept="2v9HqM" id="4ATA_JB$E0W" role="2eOfOg">
-        <ref role="2v9HqP" to="fusw:68L3PPuzjuc" />
+        <ref role="2v9HqP" to="fusw:68L3PPuzjuc" resolve="crc16" />
       </node>
       <node concept="2v9HqM" id="4ATA_JB$E0X" role="2eOfOg">
-        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" />
+        <ref role="2v9HqP" to="3y0n:1WTn9U1aQF1" resolve="stdio" />
       </node>
       <node concept="1l1$C7" id="4JZ_DSxyheo" role="1kZvWc">
         <property role="TrG5h" value="any" />
