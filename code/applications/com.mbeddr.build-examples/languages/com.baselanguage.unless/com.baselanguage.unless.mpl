@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.baselanguage.unless" uuid="a6c9731c-e688-447f-8d50-3cf76b24e87d" generatorOutputPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/source_gen" languageVersion="0" moduleVersion="0">
+<language namespace="com.baselanguage.unless" uuid="a6c9731c-e688-447f-8d50-3cf76b24e87d" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless" type="default">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java">
-      <classes generated="true" path="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/classes_gen" />
+      <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
   <accessoryModels />
   <generators>
-    <generator namespace="com.baselanguage.unless#2633084349332274686" uuid="ff4e4034-35f4-4a89-8bb2-ea650170919b" generatorOutputPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/generator/source_gen">
+    <generator namespace="com.baselanguage.unless#2633084349332274686" uuid="ff4e4034-35f4-4a89-8bb2-ea650170919b">
       <models>
-        <modelRoot contentPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless" type="default">
+        <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <facets>
         <facet type="java">
-          <classes generated="true" path="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/generator/classes_gen" />
+          <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
       <external-templates />

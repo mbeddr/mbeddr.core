@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.baselanguage.unless.sandbox" uuid="72af620b-9206-497f-b7d6-60b014ce425f" moduleVersion="0" compileInMPS="true" generatorOutputPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/sandbox/source_gen">
+<solution name="com.baselanguage.unless.sandbox" uuid="72af620b-9206-497f-b7d6-60b014ce425f" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/sandbox" type="default">
+	  <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java">
-      <classes generated="true" path="/home/hbecker/MPSProjects/mbeddr.core/code/applications/com.mbeddr.build-examples/languages/com.baselanguage.unless/sandbox/classes_gen" />
+	    <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
   <sourcePath />
