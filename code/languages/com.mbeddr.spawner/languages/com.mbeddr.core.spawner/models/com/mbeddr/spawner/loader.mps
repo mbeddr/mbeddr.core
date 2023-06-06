@@ -322,20 +322,15 @@
               <ref role="3cqZAo" node="1KXoG6mZDua" resolve="libraryInitializer" />
             </node>
             <node concept="2OqwBi" id="7e_V6p5zey_" role="37vLTx">
-              <node concept="37vLTw" id="1KXoG6mZEXh" role="2Oq$k0">
-                <ref role="3cqZAo" node="1KXoG6mZA6t" resolve="mpsComponents" />
-              </node>
               <node concept="liA8E" id="7e_V6p5zeHM" role="2OqNvi">
                 <ref role="37wK5l" to="3a50:~MPSCoreComponents.getLibraryInitializer()" resolve="getLibraryInitializer" />
               </node>
+              <node concept="2YIFZM" id="1vC3T39pWEq" role="2Oq$k0">
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
+              </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="1KXoG6mZA6t" role="3clF46">
-        <property role="TrG5h" value="mpsComponents" />
-        <node concept="3uibUv" id="1KXoG6mZA6s" role="1tU5fm">
-          <ref role="3uigEE" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
         </node>
       </node>
     </node>
