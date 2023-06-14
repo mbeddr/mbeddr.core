@@ -6079,14 +6079,17 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbF" id="bhVSeGfQdc" role="3cqZAp">
-            <node concept="2OqwBi" id="bhVSeGfQdd" role="3clFbG">
-              <node concept="2WthIp" id="bhVSeGfQde" role="2Oq$k0" />
-              <node concept="liA8E" id="bhVSeGfQdf" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~ActionGroup.setPopup(boolean)" resolve="setPopup" />
-                <node concept="3clFbT" id="bhVSeGfQdg" role="37wK5m">
-                  <property role="3clFbU" value="false" />
+          <node concept="3clFbF" id="7r4BpjQjCTx" role="3cqZAp">
+            <node concept="2OqwBi" id="7r4BpjQjEiV" role="3clFbG">
+              <node concept="2OqwBi" id="7r4BpjQjDs3" role="2Oq$k0">
+                <node concept="tl45R" id="7r4BpjQjCTw" role="2Oq$k0" />
+                <node concept="liA8E" id="7r4BpjQjE7n" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
                 </node>
+              </node>
+              <node concept="liA8E" id="7r4BpjQjFjc" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~Presentation.setPopupGroup(boolean)" resolve="setPopupGroup" />
+                <node concept="3clFbT" id="7r4BpjQjFkN" role="37wK5m" />
               </node>
             </node>
           </node>
