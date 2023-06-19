@@ -1347,7 +1347,7 @@
             <ref role="2NCMaa" to="qdz5:7iLD7IPXjWJ" resolve="IntegratedCProgramSMAP" />
           </node>
           <node concept="2NCMab" id="5zvNKVcR5rl" role="2NCMaf">
-            <ref role="2NCMaa" to="qdz5:5zvNKVcPlj1" resolve="HardwareConfigTable" />
+            <ref role="2NCMaa" to="qdz5:5zvNKVcPlj1" />
           </node>
         </node>
       </node>
