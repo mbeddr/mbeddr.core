@@ -33,8 +33,12 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="3861573051973810887" name="com.mbeddr.doc.structure.ITextOverride" flags="ng" index="0yqFW">
+        <property id="3861573051973810888" name="textOverride" index="0yqFN" />
+      </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
+        <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
         <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
@@ -44,6 +48,12 @@
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
       </concept>
       <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="52093402212126344" name="com.mbeddr.doc.structure.DocRefWord" flags="ng" index="1thXK$">
+        <reference id="52093402212126345" name="target" index="1thXK_" />
+      </concept>
+      <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
+        <reference id="3350625596580225386" name="doc" index="1_0j5g" />
+      </concept>
       <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
         <reference id="3350625596580108719" name="target" index="1_0GAl" />
       </concept>
@@ -107,8 +117,18 @@
         <node concept="1_0LV8" id="UK_oBpAttY" role="1_0VJ0">
           <node concept="19SGf9" id="UK_oBpAttZ" role="1_0LWR">
             <node concept="19SUe$" id="UK_oBpAtu0" role="19SJt6">
-              <property role="19SUeA" value="A graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense &quot;related&quot;." />
+              <property role="19SUeA" value="A graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense &quot;related&quot;.&#10;&#10;See also: " />
             </node>
+            <node concept="1thXK$" id="4dGh_KRBOmy" role="19SJt6">
+              <ref role="1thXK_" node="N8ix8jdWgc" resolve="Theory" />
+            </node>
+            <node concept="19SUe$" id="4dGh_KRBOmK" role="19SJt6">
+              <property role="19SUeA" value=", " />
+            </node>
+            <node concept="1_0GAv" id="N8ix8jdWiq" role="19SJt6">
+              <ref role="1_0GAl" node="N8ix8jdWgZ" resolve="GraphsInGeneral" />
+            </node>
+            <node concept="19SUe$" id="N8ix8jdWir" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -196,7 +216,13 @@
         <node concept="1_0LV8" id="1o6EjwiT6DW" role="1_0VJ0">
           <node concept="19SGf9" id="1o6EjwiT6DX" role="1_0LWR">
             <node concept="19SUe$" id="1o6EjwiT6DY" role="19SJt6">
-              <property role="19SUeA" value="The property stores the name of a graph." />
+              <property role="19SUeA" value="The property stores the name of a graph.&#10;" />
+            </node>
+            <node concept="1thXK$" id="4dGh_KRFiZ7" role="19SJt6">
+              <ref role="1thXK_" node="N8ix8jdWgc" resolve="Theory" />
+            </node>
+            <node concept="19SUe$" id="4dGh_KRFiZ8" role="19SJt6">
+              <property role="19SUeA" value="" />
             </node>
           </node>
         </node>
@@ -217,6 +243,9 @@
         </node>
       </node>
     </node>
+    <node concept="1_0j5j" id="N8ix8jdWiy" role="1DXQ57">
+      <ref role="1_0j5g" node="N8ix8jdWgc" resolve="Theory" />
+    </node>
   </node>
   <node concept="2SbYGP" id="5CkU_dHcLvS">
     <property role="3GE5qa" value="document" />
@@ -236,6 +265,42 @@
         <property role="3kgbRO" value="false" />
         <property role="3N1Lgt" value="." />
       </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="N8ix8jdWgc">
+    <property role="yApLE" value="1" />
+    <property role="3GE5qa" value="document" />
+    <property role="TrG5h" value="Theory" />
+    <ref role="G9hjw" node="5CkU_dHcLvS" resolve="DocumentConfig" />
+    <node concept="1mvXsy" id="N8ix8jdWgH" role="1_0VJ0">
+      <property role="TrG5h" value="Theory" />
+      <property role="1_0VJr" value="Theory" />
+      <node concept="1_0VNX" id="N8ix8jdWgZ" role="1_0VJ0">
+        <property role="TrG5h" value="GraphsInGeneral" />
+        <property role="1_0VJr" value="Graphs in General" />
+        <node concept="1_0LV8" id="N8ix8jdWi6" role="1_0VJ0">
+          <node concept="19SGf9" id="N8ix8jdWi7" role="1_0LWR">
+            <node concept="19SUe$" id="N8ix8jdWi8" role="19SJt6">
+              <property role="19SUeA" value="Here is some general knowledge about graphs..." />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="4dGh_KRFeXt" role="1_0VJ0">
+          <node concept="19SGf9" id="4dGh_KRFeXu" role="1_0LWR">
+            <node concept="19SUe$" id="4dGh_KRFeXv" role="19SJt6">
+              <property role="19SUeA" value="Back to main documentation: " />
+            </node>
+            <node concept="1thXK$" id="4dGh_KRFeXB" role="19SJt6">
+              <property role="0yqFN" value="Base Docs" />
+              <ref role="1thXK_" node="UK_oBpA4NZ" resolve="BaseDocumentation" />
+            </node>
+            <node concept="19SUe$" id="4dGh_KRFeXC" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_0j5j" id="4dGh_KRFeXG" role="1DXQ57">
+      <ref role="1_0j5g" node="UK_oBpA4NZ" resolve="BaseDocumentation" />
     </node>
   </node>
 </model>
