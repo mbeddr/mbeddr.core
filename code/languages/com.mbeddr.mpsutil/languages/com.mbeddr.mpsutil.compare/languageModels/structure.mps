@@ -2,7 +2,6 @@
 <model ref="r:cea04c4b-adba-417e-a192-34c7a8799ac1(com.mbeddr.mpsutil.compare.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -60,6 +59,11 @@
     <property role="34LRSv" value="assert node equals" />
     <property role="EcuMT" value="756135271275943220" />
     <ref role="1TJDcQ" to="tpe3:7jPoEeD$ZOX" resolve="BinaryAssert" />
+    <node concept="1TJgyi" id="3zBhpJLX$ET" role="1TKVEl">
+      <property role="IQ2nx" value="4100322521825823417" />
+      <property role="TrG5h" value="showDiff" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="2lpUxXMduaL" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ignoredProperties" />
