@@ -1107,7 +1107,7 @@
                           <node concept="3cpWs3" id="3zBhpJM4Bm5" role="3uHU7B">
                             <node concept="3cpWs3" id="3zBhpJM4Bm6" role="3uHU7B">
                               <node concept="Xl_RD" id="3zBhpJM4Bm7" role="3uHU7B">
-                                <property role="Xl_RC" value="expected output (in root " />
+                                <property role="Xl_RC" value="expected output (in root \&quot;" />
                               </node>
                               <node concept="2OqwBi" id="3zBhpJM4Bm8" role="3uHU7w">
                                 <node concept="37vLTw" id="3zBhpJM4Bm9" role="2Oq$k0">
@@ -1119,7 +1119,7 @@
                               </node>
                             </node>
                             <node concept="Xl_RD" id="3zBhpJM4Bmb" role="3uHU7w">
-                              <property role="Xl_RC" value=" in model " />
+                              <property role="Xl_RC" value="\&quot; in model " />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="3zBhpJM4Bmc" role="3uHU7w">
@@ -1136,7 +1136,7 @@
                       <node concept="3cpWs3" id="3zBhpJM4Bmh" role="37wK5m">
                         <node concept="3cpWs3" id="3zBhpJM4Bmi" role="3uHU7B">
                           <node concept="Xl_RD" id="3zBhpJM4Bmj" role="3uHU7B">
-                            <property role="Xl_RC" value="actual output (in root " />
+                            <property role="Xl_RC" value="actual output (in root \&quot;" />
                           </node>
                           <node concept="2OqwBi" id="3zBhpJM4Bmk" role="3uHU7w">
                             <node concept="37vLTw" id="3zBhpJM4Bml" role="2Oq$k0">
@@ -1148,7 +1148,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="3zBhpJM4Bmn" role="3uHU7w">
-                          <property role="Xl_RC" value=" in generated model)" />
+                          <property role="Xl_RC" value="\&quot; in generated model)" />
                         </node>
                       </node>
                     </node>
