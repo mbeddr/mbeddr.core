@@ -8028,11 +8028,6 @@
               <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
             </node>
           </node>
-          <node concept="1SiIV0" id="6HovwvvzfY4" role="3bR37C">
-            <node concept="3bR9La" id="6HovwvvzfY5" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="6HovwvvzfY6" role="3bR37C">
             <node concept="3bR9La" id="6HovwvvzfY7" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
