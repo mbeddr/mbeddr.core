@@ -7627,6 +7627,26 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2RIzFJ84PQv" role="3bR37C">
+            <node concept="3bR9La" id="2RIzFJ84PQw" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2RIzFJ84PQx" role="3bR37C">
+            <node concept="3bR9La" id="2RIzFJ84PQy" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2RIzFJ84PQz" role="3bR37C">
+            <node concept="3bR9La" id="2RIzFJ84PQ$" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="2RIzFJ84PQ_" role="3bR37C">
+            <node concept="3bR9La" id="2RIzFJ84PQA" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+            </node>
+          </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJNpF" role="3bR31x">
           <property role="3ZfqAx" value="languageModels" />
