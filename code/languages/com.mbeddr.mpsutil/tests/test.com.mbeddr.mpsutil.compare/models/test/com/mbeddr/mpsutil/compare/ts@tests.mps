@@ -149,9 +149,7 @@
     </language>
     <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="com.mbeddr.mpsutil.compare">
       <concept id="1831260205537497726" name="com.mbeddr.mpsutil.compare.structure.AreEqualExpression" flags="ng" index="13dIca" />
-      <concept id="756135271275943220" name="com.mbeddr.mpsutil.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L">
-        <property id="4100322521825823417" name="showDiff" index="394gWy" />
-      </concept>
+      <concept id="756135271275943220" name="com.mbeddr.mpsutil.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -846,47 +844,6 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="2RIzFJ84YL0" role="lGtFl">
-      <property role="3V$3am" value="testMethods" />
-      <property role="3V$3ak" value="8585453e-6bfb-4d80-98de-b16074f1d86c/1216913645126/1217501895093" />
-      <node concept="1LZb2c" id="6Qumy0DUPjs" role="8Wnug">
-        <property role="TrG5h" value="nonEditibleDiff" />
-        <node concept="3cqZAl" id="6Qumy0DUPjt" role="3clF45" />
-        <node concept="3clFbS" id="6Qumy0DUPju" role="3clF47">
-          <node concept="3GXo0L" id="6Qumy0DUPjv" role="3cqZAp">
-            <property role="394gWy" value="true" />
-            <node concept="3xONca" id="2RIzFJ82Vj_" role="3tpDZA">
-              <ref role="3xOPvv" node="6Qumy0DUPjP" resolve="wrong" />
-            </node>
-            <node concept="2OqwBi" id="2RIzFJ82Ve_" role="3tpDZB">
-              <node concept="2WthIp" id="2RIzFJ82VaM" role="2Oq$k0" />
-              <node concept="2XshWL" id="2RIzFJ82ViV" role="2OqNvi">
-                <ref role="2WH_rO" node="2RIzFJ7FNYX" resolve="expected" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1X3_iC" id="2RIzFJ84YL1" role="lGtFl">
-      <property role="3V$3am" value="testMethods" />
-      <property role="3V$3ak" value="8585453e-6bfb-4d80-98de-b16074f1d86c/1216913645126/1217501895093" />
-      <node concept="1LZb2c" id="2RIzFJ82R0L" role="8Wnug">
-        <property role="TrG5h" value="editibleDiff" />
-        <node concept="3cqZAl" id="2RIzFJ82R0M" role="3clF45" />
-        <node concept="3clFbS" id="2RIzFJ82R0Q" role="3clF47">
-          <node concept="3GXo0L" id="2RIzFJ7HS3x" role="3cqZAp">
-            <property role="394gWy" value="true" />
-            <node concept="3xONca" id="2RIzFJ7HS5M" role="3tpDZB">
-              <ref role="3xOPvv" node="2RIzFJ82f2z" resolve="expected" />
-            </node>
-            <node concept="3xONca" id="2RIzFJ7HS3_" role="3tpDZA">
-              <ref role="3xOPvv" node="6Qumy0DUPjP" resolve="wrong" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1qefOq" id="6Qumy0DUPjy" role="1SKRRt">
       <node concept="312cEu" id="6Qumy0DUPjz" role="1qenE9">
         <property role="TrG5h" value="Bar" />
@@ -932,6 +889,45 @@
         <node concept="3Tm1VV" id="6Qumy0DUPjO" role="1B3o_S" />
         <node concept="3xLA65" id="6Qumy0DUPjP" role="lGtFl">
           <property role="TrG5h" value="wrong" />
+        </node>
+      </node>
+    </node>
+    <node concept="1X3_iC" id="6Od11GYbneu" role="lGtFl">
+      <property role="3V$3am" value="testMethods" />
+      <property role="3V$3ak" value="8585453e-6bfb-4d80-98de-b16074f1d86c/1216913645126/1217501895093" />
+      <node concept="1LZb2c" id="6Qumy0DUPjs" role="8Wnug">
+        <property role="TrG5h" value="nonEditibleDiff" />
+        <node concept="3cqZAl" id="6Qumy0DUPjt" role="3clF45" />
+        <node concept="3clFbS" id="6Qumy0DUPju" role="3clF47">
+          <node concept="3GXo0L" id="6Qumy0DUPjv" role="3cqZAp">
+            <node concept="3xONca" id="2RIzFJ82Vj_" role="3tpDZA">
+              <ref role="3xOPvv" node="6Qumy0DUPjP" resolve="wrong" />
+            </node>
+            <node concept="2OqwBi" id="2RIzFJ82Ve_" role="3tpDZB">
+              <node concept="2WthIp" id="2RIzFJ82VaM" role="2Oq$k0" />
+              <node concept="2XshWL" id="2RIzFJ82ViV" role="2OqNvi">
+                <ref role="2WH_rO" node="2RIzFJ7FNYX" resolve="expected" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1X3_iC" id="6Od11GYbneS" role="lGtFl">
+      <property role="3V$3am" value="testMethods" />
+      <property role="3V$3ak" value="8585453e-6bfb-4d80-98de-b16074f1d86c/1216913645126/1217501895093" />
+      <node concept="1LZb2c" id="2RIzFJ82R0L" role="8Wnug">
+        <property role="TrG5h" value="editibleDiff" />
+        <node concept="3cqZAl" id="2RIzFJ82R0M" role="3clF45" />
+        <node concept="3clFbS" id="2RIzFJ82R0Q" role="3clF47">
+          <node concept="3GXo0L" id="2RIzFJ7HS3x" role="3cqZAp">
+            <node concept="3xONca" id="2RIzFJ7HS5M" role="3tpDZB">
+              <ref role="3xOPvv" node="2RIzFJ82f2z" resolve="expected" />
+            </node>
+            <node concept="3xONca" id="2RIzFJ7HS3_" role="3tpDZA">
+              <ref role="3xOPvv" node="6Qumy0DUPjP" resolve="wrong" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
