@@ -5,13 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# June 2023
+
+## com.mbeddr.doc.aspect
+
+### Fixed
+
+- Concept `SectRefWord`, i.e. `@sect[a section]`: It was only possible to open a referenced section in the same `Document` by clicking the section-link in the documentation-tool-window. With this change it's possible to open a referenced section from another `Document` in the same model.
+
+- Concept `DocRefWord`, i.e. `@doc[a document]`: The reference to another `Document` was not shown as a reference/link in the documentation-tool-window. It would also not open the referenced `Document` on click. By adding a special editor, similar to `SectRefWord`, document references are now perceived as references/links and open the referenced documentation, scrolled to the top, on click on the `DocRefWord`.
+
 # April 2023
 
 ## com.mbeddr.doc
 
 ### Fixed
 
-* @doc\[some document\] causes broken build unless a "some document" was also used in include.
+* `@doc[some document]` causes broken build unless a "some document" was also used in include.
 
 ### Changed
 
