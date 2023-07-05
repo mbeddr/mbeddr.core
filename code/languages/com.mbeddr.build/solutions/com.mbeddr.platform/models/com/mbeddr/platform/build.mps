@@ -3691,34 +3691,6 @@
         <ref role="m$_y1" to="ffeo:6EN03E8oSte" resolve="jetbrains.mps.ide.make" />
       </node>
     </node>
-    <node concept="m$_wf" id="702JZvV4DtQ" role="3989C9">
-      <property role="m$_wk" value="de.itemis.mps.build.gradlesupport" />
-      <node concept="3_J27D" id="702JZvV4DtR" role="m$_yQ">
-        <node concept="3Mxwew" id="702JZvV4DtS" role="3MwsjC">
-          <property role="3MwjfP" value="de.itemis.mps.build.gradlesupport" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="702JZvV4DtT" role="m$_w8">
-        <node concept="3Mxwey" id="702JZvV4DtU" role="3MwsjC">
-          <ref role="3Mxwex" node="2HHioL2Nii3" resolve="mbeddr.version" />
-        </node>
-      </node>
-      <node concept="m$f5U" id="702JZvV4YJj" role="m$_yh">
-        <ref role="m$f5T" node="702JZvV4J6C" resolve="group.gradle" />
-      </node>
-      <node concept="3_J27D" id="702JZvV4DtW" role="m_cZH">
-        <node concept="3Mxwew" id="702JZvV4DtX" role="3MwsjC">
-          <property role="3MwjfP" value="de.itemis.mps.build.gradlesupport" />
-        </node>
-      </node>
-      <node concept="2iUeEo" id="702JZvV4DtY" role="2iVFfd">
-        <property role="2iUeEt" value="mbeddr" />
-        <property role="2iUeEu" value="http://mbeddr.com" />
-      </node>
-      <node concept="m$_yC" id="702JZvV4Z3D" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
-      </node>
-    </node>
     <node concept="2G$12M" id="4sjR92JQf0t" role="3989C9">
       <property role="TrG5h" value="group.dataflow" />
       <node concept="1E1JtD" id="4sjR92JQkWA" role="2G$12L">
@@ -4088,138 +4060,6 @@
             </node>
             <node concept="3qWCbU" id="4PRpvcZJNct" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2G$12M" id="702JZvV4J6C" role="3989C9">
-      <property role="TrG5h" value="group.gradle" />
-      <node concept="1E1JtD" id="702JZvV4S2X" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.itemis.mps.build.gradlesupport" />
-        <property role="3LESm3" value="c0884864-b0b2-49c3-81ac-b9e4e0f43a3b" />
-        <node concept="398BVA" id="702JZvV4Snl" role="3LF7KH">
-          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-          <node concept="2Ry0Ak" id="702JZvV4T01" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="702JZvV4TCG" role="2Ry0An">
-              <property role="2Ry0Am" value="de.itemis.mps.build.gradlesupport" />
-              <node concept="2Ry0Ak" id="702JZvV4Uhn" role="2Ry0An">
-                <property role="2Ry0Am" value="de.itemis.mps.build.gradlesupport.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="702JZvV4ULE" role="3bR37C">
-          <node concept="3bR9La" id="702JZvV4ULF" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7pdFgzxlDoA" resolve="jetbrains.mps.build" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="702JZvV4ULG" role="1TViLv">
-          <property role="TrG5h" value="de.itemis.mps.build.gradlesupport#01" />
-          <property role="3LESm3" value="142b92a4-200d-46f2-8a0d-2a38da8e5009" />
-          <node concept="1SiIV0" id="702JZvV4ULH" role="3bR37C">
-            <node concept="3bR9La" id="702JZvV4ULI" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="702JZvV4ULJ" role="3bR37C">
-            <node concept="3bR9La" id="702JZvV4ULK" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7pdFgzxlDoA" resolve="jetbrains.mps.build" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="702JZvV4ULL" role="3bR37C">
-            <node concept="3bR9La" id="702JZvV4ULM" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7pdFgzxlDoP" resolve="jetbrains.mps.build.mps" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="702JZvVeh4p" role="3bR37C">
-            <node concept="3bR9La" id="702JZvVeh4q" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
-            </node>
-          </node>
-          <node concept="1BupzO" id="4PRpvcZJNcT" role="3bR31x">
-            <property role="3ZfqAx" value="generator/template" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="4PRpvcZJNcU" role="1HemKq">
-              <node concept="398BVA" id="4PRpvcZJNcG" role="3LXTmr">
-                <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNcH" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNcI" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.itemis.mps.build.gradlesupport" />
-                    <node concept="2Ry0Ak" id="4PRpvcZJNcJ" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="4PRpvcZJNcK" role="2Ry0An">
-                        <property role="2Ry0Am" value="template" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="4PRpvcZJNcV" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="702JZvV4VqP" role="3bR37C">
-          <node concept="3bR9La" id="702JZvV4VqQ" role="1SiIV1">
-            <ref role="3bR37D" node="702JZvV4S2X" resolve="de.itemis.mps.build.gradlesupport" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="702JZvVeh4l" role="3bR37C">
-          <node concept="3bR9La" id="702JZvVeh4m" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="702JZvVeh4n" role="3bR37C">
-          <node concept="3bR9La" id="702JZvVeh4o" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="702JZvVjO0x" role="3bR37C">
-          <node concept="3bR9La" id="702JZvVjO0y" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-          </node>
-        </node>
-        <node concept="1BupzO" id="4PRpvcZJNcD" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="4PRpvcZJNcE" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNcu" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNcv" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNcw" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.itemis.mps.build.gradlesupport" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNcx" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4PRpvcZJNcF" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="59cfP9ua2OF" role="3bR31x">
-          <node concept="3LXTmp" id="59cfP9ua2OG" role="3rtmxm">
-            <node concept="3qWCbU" id="59cfP9ua2OH" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="59cfP9ua2OI" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="59cfP9ua2OJ" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="59cfP9ua2OK" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.itemis.mps.build.gradlesupport" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -20359,10 +20199,6 @@
       <node concept="m$_wl" id="702JZvV4CFI" role="39821P">
         <ref role="m_rDy" node="4VgGsUqOKxx" resolve="com.mbeddr.mpsutil.buildassistent" />
         <node concept="pUk6x" id="702JZvV4CFJ" role="pUk7w" />
-      </node>
-      <node concept="m$_wl" id="702JZvV4ZnZ" role="39821P">
-        <ref role="m_rDy" node="702JZvV4DtQ" resolve="de.itemis.mps.build.gradlesupport" />
-        <node concept="pUk6x" id="702JZvV4Zo0" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="6ucYLjol8_u" role="39821P">
         <ref role="m_rDy" node="7tNo_gxoK8h" resolve="com.mbeddr.doc" />
