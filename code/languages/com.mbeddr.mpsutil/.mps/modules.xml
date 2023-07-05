@@ -175,7 +175,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.extension.sandbox/com.mbeddr.mpsutil.process.extension.sandbox.msd" folder="staging.process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.runtime/com.mbeddr.mpsutil.process.runtime.msd" folder="staging.process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.process.sandbox/com.mbeddr.mpsutil.process.sandbox.msd" folder="staging.process" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.rcpconfig/com.mbeddr.mpsutil.rcpconfig.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.msd" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.review.sandbox/com.mbeddr.mpsutil.review.sandbox.msd" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.richstring.sandbox/com.mbeddr.mpsutil.richstring.sandbox.msd" folder="rest.richstring" />
