@@ -97,6 +97,7 @@
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
       <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
+        <property id="43535111852086466" name="isAvailableOnStartup" index="tEvSQ" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
@@ -894,6 +895,7 @@
   <node concept="2wDNrl" id="1KDc5EfHUF3">
     <property role="TrG5h" value="TabbedDocViewer" />
     <property role="2XNbzY" value="Documentation" />
+    <property role="tEvSQ" value="true" />
     <node concept="2XrIbr" id="7_6SPLNAJc_" role="2XNbBy">
       <property role="TrG5h" value="addOnShowListener" />
       <node concept="3cqZAl" id="7_6SPLNALhl" role="3clF45" />
@@ -3783,14 +3785,6 @@
             <node concept="2XshWL" id="18EYPZeyctw" role="2OqNvi">
               <ref role="2WH_rO" node="7NPCd7DGkBv" resolve="initializeTabsForSelection" />
               <node concept="10Nm6u" id="18EYPZeyMVx" role="2XxRq1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1KDc5EfHWfz" role="3cqZAp">
-          <node concept="2OqwBi" id="1KDc5EfHWf$" role="3clFbG">
-            <node concept="2WthIp" id="1KDc5EfHWf_" role="2Oq$k0" />
-            <node concept="liA8E" id="1KDc5EfHWfA" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable()" resolve="makeAvailable" />
             </node>
           </node>
         </node>
