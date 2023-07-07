@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# July 2023
+
+The following languages/plugins were removed:
+
+- com.mbeddr.mpsutil.testScope (superseded by [MPS test scopes](https://www.jetbrains.com/help/mps/testing-languages.html#testingscopes))
+- com.mbeddr.mpsutil.runconfiguration (the workaround is included in MPS nowadays)
+- com.mbeddr.mpsutil.rcpconfig (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.nodediff (replacement: selected two nodes in the logical view, right-click -> Compare two nodes)
+- com.mbeddr.mpsutil.licensemanager.common (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.langstats (not very useful, was never meant as a productive language)
+- com.mbeddr.mpsutil.gradlesupport (incomplete; use the language [com.dslfoundry.plaintextgen](https://jetbrains.github.io/MPS-extensions/extensions/generator/plaintext-gen) from MPS-extensions instead)
+- com.mbeddr.mpsutil.buildutil (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.forms (experimental language that was never completed)
+
 # May 2023
 
 ## mbeddr.core
