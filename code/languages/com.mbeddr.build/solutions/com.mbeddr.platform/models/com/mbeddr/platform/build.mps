@@ -8081,6 +8081,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6GJZxHzA9pX" role="3bR37C">
+          <node concept="3bR9La" id="6GJZxHzA9pY" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="776vT$mQZbf" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8174,6 +8179,11 @@
         <node concept="1SiIV0" id="6HovwvvzfYr" role="3bR37C">
           <node concept="3bR9La" id="6HovwvvzfYs" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6GJZxHzA9qn" role="3bR37C">
+          <node concept="3bR9La" id="6GJZxHzA9qo" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
       </node>
