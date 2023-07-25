@@ -11,6 +11,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -41,7 +42,6 @@
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="qxsb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.options.ex(MPS.IDEA/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="pa15" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.persistence(MPS.Core/)" />
     <import index="xj2j" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.plugins.projectplugins(MPS.Workbench/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
@@ -318,6 +318,13 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -3288,21 +3295,10 @@
           </node>
           <node concept="9aQIb" id="10o6Xu8YP$5" role="9aQIa">
             <node concept="3clFbS" id="10o6Xu8YP$6" role="9aQI4">
-              <node concept="3clFbF" id="10o6Xu94wPs" role="3cqZAp">
-                <node concept="2OqwBi" id="10o6Xu94$sq" role="3clFbG">
-                  <node concept="2YIFZM" id="10o6Xu94x9T" role="2Oq$k0">
-                    <ref role="37wK5l" to="q7tw:~Category.getInstance(java.lang.Class)" resolve="getInstance" />
-                    <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
-                    <node concept="3VsKOn" id="10o6Xu94yOK" role="37wK5m">
-                      <ref role="3VsUkX" node="365LVGC64z0" resolve="PreferenceModules" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="10o6Xu94A55" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object)" resolve="error" />
-                    <node concept="Xl_RD" id="10o6Xu94Ai2" role="37wK5m">
-                      <property role="Xl_RC" value="Depecated code in PreferenceModules, please refactor" />
-                    </node>
-                  </node>
+              <node concept="RRSsy" id="1Ch_cEfHoaK" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="10o6Xu94Ai2" role="RRSoy">
+                  <property role="Xl_RC" value="Deprecated code in PreferenceModules, please refactor" />
                 </node>
               </node>
               <node concept="3clFbF" id="10o6Xu8Yw1i" role="3cqZAp">
@@ -4837,21 +4833,6 @@
   </node>
   <node concept="312cEu" id="5aAhNV43q1">
     <property role="TrG5h" value="SPreferencesPanel" />
-    <node concept="312cEg" id="4_SU66w0A5X" role="jymVt">
-      <property role="TrG5h" value="LOG" />
-      <node concept="3Tm6S6" id="4_SU66w0A5Y" role="1B3o_S" />
-      <node concept="3uibUv" id="4_SU66w2ob3" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="4_SU66w2oxb" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
-        <node concept="3VsKOn" id="4_SU66w2p2M" role="37wK5m">
-          <ref role="3VsUkX" node="5aAhNV43q1" resolve="SPreferencesPanel" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4_SU66w0kqH" role="jymVt" />
     <node concept="312cEg" id="4RbRvogcSVg" role="jymVt">
       <property role="TrG5h" value="myProject" />
       <node concept="3uibUv" id="1n7YT7NSmt9" role="1tU5fm">
@@ -5401,25 +5382,18 @@
               </node>
             </node>
             <node concept="3clFbS" id="4RbRvogeB3_" role="1zc67A">
-              <node concept="3clFbF" id="4_SU66w2_s6" role="3cqZAp">
-                <node concept="2OqwBi" id="4_SU66w2_up" role="3clFbG">
-                  <node concept="37vLTw" id="4_SU66w2_s5" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4_SU66w0A5X" resolve="LOG" />
+              <node concept="RRSsy" id="1Ch_cEfHJiG" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="2OqwBi" id="2Wc_BLz2spE" role="RRSoy">
+                  <node concept="37vLTw" id="2Wc_BLz2sf7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4RbRvogeB3x" resolve="t" />
                   </node>
-                  <node concept="liA8E" id="4_SU66w2_E_" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="2OqwBi" id="2Wc_BLz2spE" role="37wK5m">
-                      <node concept="37vLTw" id="2Wc_BLz2sf7" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4RbRvogeB3x" resolve="t" />
-                      </node>
-                      <node concept="liA8E" id="2Wc_BLz2sKc" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="4_SU66w2_R7" role="37wK5m">
-                      <ref role="3cqZAo" node="4RbRvogeB3x" resolve="t" />
-                    </node>
+                  <node concept="liA8E" id="2Wc_BLz2sKc" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="1Ch_cEfHQ27" role="RRSow">
+                  <ref role="3cqZAo" node="4RbRvogeB3x" resolve="t" />
                 </node>
               </node>
             </node>
@@ -5559,25 +5533,18 @@
               </node>
             </node>
             <node concept="3clFbS" id="4RbRvogcqYg" role="1zc67A">
-              <node concept="3clFbF" id="4_SU66w2A1E" role="3cqZAp">
-                <node concept="2OqwBi" id="4_SU66w2A3X" role="3clFbG">
-                  <node concept="37vLTw" id="4_SU66w2A1D" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4_SU66w0A5X" resolve="LOG" />
+              <node concept="RRSsy" id="1Ch_cEfHYBR" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="2OqwBi" id="1Ch_cEfI4Pj" role="RRSoy">
+                  <node concept="37vLTw" id="1Ch_cEfI3iH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4RbRvogcqYc" resolve="t" />
                   </node>
-                  <node concept="liA8E" id="4_SU66w2Ag9" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="2OqwBi" id="2Wc_BLz2sPy" role="37wK5m">
-                      <node concept="37vLTw" id="2Wc_BLz2sPz" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4RbRvogcqYc" resolve="t" />
-                      </node>
-                      <node concept="liA8E" id="2Wc_BLz2sP$" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="4_SU66w2Axv" role="37wK5m">
-                      <ref role="3cqZAo" node="4RbRvogcqYc" resolve="t" />
-                    </node>
+                  <node concept="liA8E" id="1Ch_cEfI6Sn" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="1Ch_cEfI9qN" role="RRSow">
+                  <ref role="3cqZAo" node="4RbRvogcqYc" resolve="t" />
                 </node>
               </node>
             </node>
