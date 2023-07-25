@@ -21,11 +21,11 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="grbm" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.text(org.apache.commons/)" />
     <import index="tp5r" ref="r:3ef5075b-89c5-437c-8971-b29ab29bb322(com.mbeddr.mpsutil.multilingual.common.behavior)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
-    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="dr5r" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.logging(JDK/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
@@ -155,7 +155,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -179,7 +179,7 @@
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
@@ -273,7 +273,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -2401,17 +2401,27 @@
           <node concept="3cpWsn" id="nrFIWUkOTK" role="3cpWs9">
             <property role="TrG5h" value="log" />
             <node concept="3uibUv" id="nrFIWUkOTL" role="1tU5fm">
-              <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
+              <ref role="3uigEE" to="dr5r:~Logger" resolve="Logger" />
             </node>
-            <node concept="2YIFZM" id="nrFIWUkPFp" role="33vP2m">
-              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-              <node concept="2OqwBi" id="nrFIWUkPVn" role="37wK5m">
-                <node concept="37vLTw" id="nrFIWUkPS_" role="2Oq$k0">
-                  <ref role="3cqZAo" node="nrFIWUjo3K" resolve="classLoader" />
-                </node>
-                <node concept="liA8E" id="nrFIWUkXCo" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+            <node concept="2OqwBi" id="5EH2I6rnTU2" role="33vP2m">
+              <node concept="2YIFZM" id="5EH2I6rnTHY" role="2Oq$k0">
+                <ref role="37wK5l" to="dr5r:~LogManager.getLogManager()" resolve="getLogManager" />
+                <ref role="1Pybhc" to="dr5r:~LogManager" resolve="LogManager" />
+              </node>
+              <node concept="liA8E" id="5EH2I6rnUfw" role="2OqNvi">
+                <ref role="37wK5l" to="dr5r:~LogManager.getLogger(java.lang.String)" resolve="getLogger" />
+                <node concept="2OqwBi" id="5EH2I6rnVl6" role="37wK5m">
+                  <node concept="2OqwBi" id="5EH2I6rnTHZ" role="2Oq$k0">
+                    <node concept="37vLTw" id="5EH2I6rnTI0" role="2Oq$k0">
+                      <ref role="3cqZAo" node="nrFIWUjo3K" resolve="classLoader" />
+                    </node>
+                    <node concept="liA8E" id="5EH2I6rnTI1" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5EH2I6ro0Nq" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2421,14 +2431,14 @@
           <node concept="3cpWsn" id="nrFIWUl37Y" role="3cpWs9">
             <property role="TrG5h" value="oldLevel" />
             <node concept="3uibUv" id="nrFIWUl37L" role="1tU5fm">
-              <ref role="3uigEE" to="q7tw:~Level" resolve="Level" />
+              <ref role="3uigEE" to="dr5r:~Level" resolve="Level" />
             </node>
             <node concept="2OqwBi" id="nrFIWUl37Z" role="33vP2m">
               <node concept="37vLTw" id="nrFIWUl380" role="2Oq$k0">
                 <ref role="3cqZAo" node="nrFIWUkOTK" resolve="log" />
               </node>
               <node concept="liA8E" id="nrFIWUl381" role="2OqNvi">
-                <ref role="37wK5l" to="q7tw:~Category.getLevel()" resolve="getLevel" />
+                <ref role="37wK5l" to="dr5r:~Logger.getLevel()" resolve="getLevel" />
               </node>
             </node>
           </node>
@@ -2441,10 +2451,10 @@
                   <ref role="3cqZAo" node="nrFIWUkOTK" resolve="log" />
                 </node>
                 <node concept="liA8E" id="nrFIWUl1DW" role="2OqNvi">
-                  <ref role="37wK5l" to="q7tw:~Category.setLevel(org.apache.log4j.Level)" resolve="setLevel" />
-                  <node concept="10M0yZ" id="nrFIWUl3Ud" role="37wK5m">
-                    <ref role="1PxDUh" to="q7tw:~Level" resolve="Level" />
-                    <ref role="3cqZAo" to="q7tw:~Level.ERROR" resolve="ERROR" />
+                  <ref role="37wK5l" to="dr5r:~Logger.setLevel(java.util.logging.Level)" resolve="setLevel" />
+                  <node concept="10M0yZ" id="5EH2I6ro23l" role="37wK5m">
+                    <ref role="3cqZAo" to="dr5r:~Level.SEVERE" resolve="SEVERE" />
+                    <ref role="1PxDUh" to="dr5r:~Level" resolve="Level" />
                   </node>
                 </node>
               </node>
@@ -2492,7 +2502,7 @@
                     <ref role="3cqZAo" node="nrFIWUkOTK" resolve="log" />
                   </node>
                   <node concept="liA8E" id="nrFIWUl6Ru" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.setLevel(org.apache.log4j.Level)" resolve="setLevel" />
+                    <ref role="37wK5l" to="dr5r:~Logger.setLevel(java.util.logging.Level)" resolve="setLevel" />
                     <node concept="37vLTw" id="nrFIWUl6Sy" role="37wK5m">
                       <ref role="3cqZAo" node="nrFIWUl37Y" resolve="oldLevel" />
                     </node>

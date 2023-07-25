@@ -17,7 +17,6 @@
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="fyhk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps(MPS.Core/)" />
     <import index="6lvu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellMenu(MPS.Editor/)" />
@@ -44,6 +43,7 @@
     <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
     <import index="j0b4" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.keyboard(MPS.Editor/)" />
     <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
+    <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -491,11 +491,11 @@
       <property role="TrG5h" value="LOG" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="2Z2H3pkZYxr" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
+        <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
       </node>
       <node concept="2YIFZM" id="2Z2H3pkZYI7" role="33vP2m">
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
+        <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
+        <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
         <node concept="3VsKOn" id="2Z2H3pkZYxu" role="37wK5m">
           <ref role="3VsUkX" node="2Z2H3pkZYxi" resolve="GroupedItemCellRenderer" />
         </node>
@@ -1411,8 +1411,10 @@
                     <ref role="1PxDUh" node="2Z2H3pkZYxi" resolve="GroupedItemCellRenderer" />
                   </node>
                   <node concept="liA8E" id="2Z2H3pkZYSx" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="10Nm6u" id="2Z2H3pkZYAw" role="37wK5m" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
+                    <node concept="Xl_RD" id="2kdwe4vT_b0" role="37wK5m">
+                      <property role="Xl_RC" value="" />
+                    </node>
                     <node concept="37vLTw" id="2Z2H3pkZYAx" role="37wK5m">
                       <ref role="3cqZAo" node="2Z2H3pkZYAp" resolve="t" />
                     </node>
@@ -1741,8 +1743,10 @@
                         <ref role="3cqZAo" node="2Z2H3pkZYxq" resolve="LOG" />
                       </node>
                       <node concept="liA8E" id="2Z2H3pkZYTk" role="2OqNvi">
-                        <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                        <node concept="10Nm6u" id="2Z2H3pkZYCd" role="37wK5m" />
+                        <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
+                        <node concept="Xl_RD" id="2kdwe4vTJP3" role="37wK5m">
+                          <property role="Xl_RC" value="" />
+                        </node>
                         <node concept="37vLTw" id="2Z2H3pkZYCe" role="37wK5m">
                           <ref role="3cqZAo" node="2Z2H3pkZYC6" resolve="t" />
                         </node>
@@ -1867,8 +1871,10 @@
                     <ref role="1PxDUh" node="2Z2H3pkZYxi" resolve="GroupedItemCellRenderer" />
                   </node>
                   <node concept="liA8E" id="2Z2H3pkZYTu" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="10Nm6u" id="2Z2H3pkZYCS" role="37wK5m" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
+                    <node concept="Xl_RD" id="2kdwe4vTV7G" role="37wK5m">
+                      <property role="Xl_RC" value="" />
+                    </node>
                     <node concept="37vLTw" id="2Z2H3pkZYCT" role="37wK5m">
                       <ref role="3cqZAo" node="2Z2H3pkZYCL" resolve="t" />
                     </node>
@@ -1943,8 +1949,10 @@
                     <ref role="3cqZAo" node="2Z2H3pkZYxq" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="2Z2H3pkZYTP" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="10Nm6u" id="2Z2H3pkZYDr" role="37wK5m" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
+                    <node concept="Xl_RD" id="2kdwe4vU1IT" role="37wK5m">
+                      <property role="Xl_RC" value="" />
+                    </node>
                     <node concept="37vLTw" id="2Z2H3pkZYDs" role="37wK5m">
                       <ref role="3cqZAo" node="2Z2H3pkZYDh" resolve="t" />
                     </node>
@@ -2009,8 +2017,10 @@
                     <ref role="3cqZAo" node="2Z2H3pkZYxq" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="2Z2H3pkZYUf" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="10Nm6u" id="2Z2H3pkZYDJ" role="37wK5m" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
+                    <node concept="Xl_RD" id="2kdwe4vUbgr" role="37wK5m">
+                      <property role="Xl_RC" value="" />
+                    </node>
                     <node concept="37vLTw" id="2Z2H3pkZYDK" role="37wK5m">
                       <ref role="3cqZAo" node="2Z2H3pkZYD_" resolve="t" />
                     </node>
@@ -3773,8 +3783,10 @@
                     <ref role="1PxDUh" node="2Z2H3pkZYxi" resolve="GroupedItemCellRenderer" />
                   </node>
                   <node concept="liA8E" id="2Z2H3pkZYYU" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="10Nm6u" id="2Z2H3pkZYFK" role="37wK5m" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
+                    <node concept="Xl_RD" id="2kdwe4vUf90" role="37wK5m">
+                      <property role="Xl_RC" value="" />
+                    </node>
                     <node concept="37vLTw" id="2Z2H3pkZYFL" role="37wK5m">
                       <ref role="3cqZAo" node="2Z2H3pkZYFD" resolve="t" />
                     </node>
@@ -4244,11 +4256,11 @@
       <property role="TrG5h" value="LOG" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="2Z2H3pkZiFF" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
+        <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
       </node>
       <node concept="2YIFZM" id="2Z2H3pkZkMC" role="33vP2m">
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
+        <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
+        <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
         <node concept="3VsKOn" id="2Z2H3pkZiFI" role="37wK5m">
           <ref role="3VsUkX" node="2Z2H3pkZixy" resolve="GroupedSubstituteChooser" />
         </node>
@@ -6651,6 +6663,7 @@
               </node>
             </node>
             <node concept="3clFbS" id="2Z2H3pkZiTc" role="1zc67A">
+              <node concept="3clFbH" id="5EH2I6rl4k$" role="3cqZAp" />
               <node concept="3clFbF" id="2Z2H3pkZiTd" role="3cqZAp">
                 <node concept="2OqwBi" id="2Z2H3pkZl0s" role="3clFbG">
                   <node concept="10M0yZ" id="2Z2H3pl0CyT" role="2Oq$k0">
@@ -6658,7 +6671,7 @@
                     <ref role="3cqZAo" node="2Z2H3pkZiFE" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="2Z2H3pkZl0t" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.Throwable,java.lang.Object)" resolve="error" />
                     <node concept="37vLTw" id="2Z2H3pkZiTf" role="37wK5m">
                       <ref role="3cqZAo" node="2Z2H3pkZiT8" resolve="e" />
                     </node>

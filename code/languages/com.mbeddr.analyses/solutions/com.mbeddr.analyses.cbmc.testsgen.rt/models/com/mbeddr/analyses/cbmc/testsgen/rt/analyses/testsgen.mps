@@ -30,7 +30,6 @@
     <import index="vpqd" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.parsers(JDK/)" />
     <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
   </imports>
   <registry>
@@ -2573,15 +2572,11 @@
       <node concept="3uibUv" id="3aDyPAXMKTm" role="1tU5fm">
         <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
       </node>
-      <node concept="2YIFZM" id="3aDyPAXMNwZ" role="33vP2m">
+      <node concept="2YIFZM" id="19o0ejtonDY" role="33vP2m">
+        <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
         <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
-        <ref role="37wK5l" to="wwqx:~Logger.wrap(org.apache.log4j.Logger)" resolve="wrap" />
-        <node concept="2YIFZM" id="3aDyPAXMOIY" role="37wK5m">
-          <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-          <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-          <node concept="3VsKOn" id="p9azjqCVF3" role="37wK5m">
-            <ref role="3VsUkX" node="6QX7yC5sR8t" resolve="TestsgenLikeAnalyzer" />
-          </node>
+        <node concept="3VsKOn" id="19o0ejtonDZ" role="37wK5m">
+          <ref role="3VsUkX" node="6QX7yC5sR8t" resolve="TestsgenLikeAnalyzer" />
         </node>
       </node>
       <node concept="NWlO9" id="3aDyPAXMQX1" role="lGtFl">

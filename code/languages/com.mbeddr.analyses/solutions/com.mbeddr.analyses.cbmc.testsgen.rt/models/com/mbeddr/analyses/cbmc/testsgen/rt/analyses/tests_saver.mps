@@ -31,7 +31,6 @@
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="fxhk" ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)" />
     <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
     <import index="qlb5" ref="r:1bbc8666-f5b9-4cdc-a48a-bd987259f243(com.mbeddr.ext.units.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -2152,15 +2151,11 @@
       <node concept="3uibUv" id="3aDyPAXMKTm" role="1tU5fm">
         <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
       </node>
-      <node concept="2YIFZM" id="3aDyPAXMNwZ" role="33vP2m">
+      <node concept="2YIFZM" id="19o0ejto5FD" role="33vP2m">
+        <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
         <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
-        <ref role="37wK5l" to="wwqx:~Logger.wrap(org.apache.log4j.Logger)" resolve="wrap" />
-        <node concept="2YIFZM" id="3aDyPAXMOIY" role="37wK5m">
-          <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-          <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-          <node concept="3VsKOn" id="p9azjqCVF3" role="37wK5m">
-            <ref role="3VsUkX" node="1ENIgcpg4c$" resolve="AssigneeLifter" />
-          </node>
+        <node concept="3VsKOn" id="19o0ejto5FE" role="37wK5m">
+          <ref role="3VsUkX" node="1ENIgcpg4c$" resolve="AssigneeLifter" />
         </node>
       </node>
       <node concept="NWlO9" id="7P0$cW9QO7l" role="lGtFl">

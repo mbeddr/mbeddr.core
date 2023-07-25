@@ -37,7 +37,6 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
   </dependencies>
