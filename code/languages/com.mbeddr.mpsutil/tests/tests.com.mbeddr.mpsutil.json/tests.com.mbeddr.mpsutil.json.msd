@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="tests.com.mbeddr.mpsutil.json" uuid="eecef0a3-bfbc-410d-af24-791863c19f80" moduleVersion="0" compileInMPS="true">
+<solution name="tests.com.mbeddr.mpsutil.json" uuid="eecef0a3-bfbc-410d-af24-791863c19f80" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">b5c0bb04-c583-4b2a-a66e-1eab92d33c68(com.mbeddr.mpsutil.json)</dependency>

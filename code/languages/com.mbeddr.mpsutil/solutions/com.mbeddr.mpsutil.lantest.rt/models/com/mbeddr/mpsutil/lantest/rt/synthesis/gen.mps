@@ -21,7 +21,6 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="6if8" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.validation(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="k2t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.checkers(MPS.Core/)" />
@@ -30,28 +29,21 @@
     <import index="gfdq" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:59b6a434-36b8-4735-ae34-3acf97303510(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.structure)" />
     <import index="v5ts" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:d411f908-940a-47de-a6bb-6c4bd57886dd(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.saver)" />
     <import index="2l8" ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:bcbcc941-b1ce-4077-84a0-535ddfca3377(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.filter)" />
-    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
     <import index="j7l4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystemEngine.checker(MPS.Core/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="ntri" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context.typechecking(MPS.Core/)" />
-    <import index="lx42" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j.spi(MPS.Core/)" />
     <import index="tmra" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.state(MPS.Core/)" />
     <import index="uu96" ref="5ef691b5-60ce-4ece-a04e-25e642dfa128/r:170ef591-83b8-43a2-8998-a090f5a13f09(com.mbeddr.mpsutil.lantest/com.mbeddr.mpsutil.lantest.behavior)" />
-    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="wsw7" ref="r:ba41e9c6-15ca-4a47-95f2-6a81c2318547(jetbrains.mps.checkers)" />
     <import index="d6hs" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors.item(MPS.Core/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="fya2" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.exception(org.apache.commons/)" />
     <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
-    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="7bhk" ref="r:7bb2797e-acd3-426b-9be6-19e432718b19(com.mbeddr.mpsutil.lantest.rt.checker.base)" />
     <import index="strd" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.typesystem.checking(MPS.Editor/)" />
@@ -60,7 +52,6 @@
     <import index="cq48" ref="r:dae0f37d-129f-4c16-b109-9b1cfb88aa4f(com.mbeddr.mpsutil.lantest.rt.checker.editor)" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="qhup" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.mutable(org.apache.commons/)" />
-    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -9265,92 +9256,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="7VeUlv8MvKm" role="jymVt" />
-    <node concept="312cEg" id="7VeUlv8Mr5Z" role="jymVt">
-      <property role="TrG5h" value="INCREMENTAL_TYPE_CHECKING_LOG" />
-      <property role="34CwA1" value="false" />
-      <property role="3TUv4t" value="true" />
-      <property role="eg7rD" value="false" />
-      <node concept="3uibUv" id="7VeUlv8Mr62" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7VeUlv8Mr64" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <node concept="3VsKOn" id="7VeUlv8Mr65" role="37wK5m">
-          <ref role="3VsUkX" to="ntri:~IncrementalTypechecking" resolve="IncrementalTypechecking" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="7VeUlv8Mr63" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="7VeUlv8Mrvy" role="jymVt">
-      <property role="TrG5h" value="INCREMENTAL_TYPE_CHECKING_CONTEXT_LOG" />
-      <property role="34CwA1" value="false" />
-      <property role="3TUv4t" value="true" />
-      <property role="eg7rD" value="false" />
-      <node concept="3uibUv" id="7VeUlv8Mrv_" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7VeUlv8MrvB" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <node concept="3VsKOn" id="7VeUlv8MrvC" role="37wK5m">
-          <ref role="3VsUkX" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="7VeUlv8MrvA" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="7VeUlv8MrT7" role="jymVt">
-      <property role="TrG5h" value="STATE_LOG" />
-      <property role="34CwA1" value="false" />
-      <property role="3TUv4t" value="true" />
-      <property role="eg7rD" value="false" />
-      <node concept="3uibUv" id="7VeUlv8MrTa" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7VeUlv8MrTc" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <node concept="3VsKOn" id="7VeUlv8MrTd" role="37wK5m">
-          <ref role="3VsUkX" to="tmra:~State" resolve="State" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="7VeUlv8MrTb" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="7VeUlv8MsiI" role="jymVt">
-      <property role="TrG5h" value="SNODE_ACCESS_UTIL_LOG" />
-      <property role="34CwA1" value="false" />
-      <property role="3TUv4t" value="true" />
-      <property role="eg7rD" value="false" />
-      <node concept="3uibUv" id="7VeUlv8MsiL" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7VeUlv8MsiN" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <node concept="3VsKOn" id="7VeUlv8MsiO" role="37wK5m">
-          <ref role="3VsUkX" to="mhbf:~SNodeAccessUtil" resolve="SNodeAccessUtil" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="7VeUlv8MsiM" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="7VeUlv9APGX" role="jymVt">
-      <property role="TrG5h" value="TYPES_EDITOR_CHECKER_LOG" />
-      <property role="34CwA1" value="false" />
-      <property role="3TUv4t" value="true" />
-      <property role="eg7rD" value="false" />
-      <node concept="3uibUv" id="7VeUlv9APGY" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7VeUlv9APGZ" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <node concept="3VsKOn" id="7VeUlv9APH0" role="37wK5m">
-          <ref role="3VsUkX" to="strd:~TypesEditorChecker" resolve="TypesEditorChecker" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="7VeUlv9APH1" role="1B3o_S" />
-    </node>
     <node concept="2tJIrI" id="7VeUlv8dLhf" role="jymVt" />
     <node concept="3clFbW" id="7VeUlv8Mt6K" role="jymVt">
       <node concept="3cqZAl" id="7VeUlv8Mt6M" role="3clF45" />
@@ -9359,40 +9264,40 @@
         <node concept="3clFbF" id="7VeUlv8Mtut" role="3cqZAp">
           <node concept="1rXfSq" id="7VeUlv8Mtus" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
-            <node concept="37vLTw" id="7VeUlv8MtvP" role="37wK5m">
-              <ref role="3cqZAo" node="7VeUlv8Mr5Z" resolve="INCREMENTAL_TYPE_CHECKING_LOG" />
+            <node concept="3VsKOn" id="7VeUlv8Mr65" role="37wK5m">
+              <ref role="3VsUkX" to="ntri:~IncrementalTypechecking" resolve="IncrementalTypechecking" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7VeUlv8MtzM" role="3cqZAp">
           <node concept="1rXfSq" id="7VeUlv8MtzN" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
-            <node concept="37vLTw" id="7VeUlv8MtEb" role="37wK5m">
-              <ref role="3cqZAo" node="7VeUlv8Mrvy" resolve="INCREMENTAL_TYPE_CHECKING_CONTEXT_LOG" />
+            <node concept="3VsKOn" id="7VeUlv8MrvC" role="37wK5m">
+              <ref role="3VsUkX" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7VeUlv8MtAz" role="3cqZAp">
           <node concept="1rXfSq" id="7VeUlv8MtA$" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
-            <node concept="37vLTw" id="7VeUlv8MtHd" role="37wK5m">
-              <ref role="3cqZAo" node="7VeUlv8MrT7" resolve="STATE_LOG" />
+            <node concept="3VsKOn" id="7VeUlv8MrTd" role="37wK5m">
+              <ref role="3VsUkX" to="tmra:~State" resolve="State" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7VeUlv8MtKH" role="3cqZAp">
           <node concept="1rXfSq" id="7VeUlv8MtKI" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
-            <node concept="37vLTw" id="7VeUlv8MtQt" role="37wK5m">
-              <ref role="3cqZAo" node="7VeUlv8MsiI" resolve="SNODE_ACCESS_UTIL_LOG" />
+            <node concept="3VsKOn" id="7VeUlv8MsiO" role="37wK5m">
+              <ref role="3VsUkX" to="mhbf:~SNodeAccessUtil" resolve="SNodeAccessUtil" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7VeUlv9AR98" role="3cqZAp">
           <node concept="1rXfSq" id="7VeUlv9AR96" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
-            <node concept="37vLTw" id="7VeUlv9ARgx" role="37wK5m">
-              <ref role="3cqZAo" node="7VeUlv9APGX" resolve="TYPES_EDITOR_CHECKER_LOG" />
+            <node concept="3VsKOn" id="7VeUlv9APH0" role="37wK5m">
+              <ref role="3VsUkX" to="strd:~TypesEditorChecker" resolve="TypesEditorChecker" />
             </node>
           </node>
         </node>

@@ -14,9 +14,7 @@
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -595,12 +593,8 @@
         <node concept="3clFbF" id="7VeUlv8Molh" role="3cqZAp">
           <node concept="1rXfSq" id="7VeUlv8Molg" role="3clFbG">
             <ref role="37wK5l" to="7bhk:7VeUlv8MmUS" resolve="addAppender" />
-            <node concept="2YIFZM" id="7VeUlv8MnvS" role="37wK5m">
-              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-              <node concept="3VsKOn" id="7VeUlv8MnvT" role="37wK5m">
-                <ref role="3VsUkX" to="g51k:~EditorCellFactoryImpl" resolve="EditorCellFactoryImpl" />
-              </node>
+            <node concept="3VsKOn" id="7VeUlv8MnvT" role="37wK5m">
+              <ref role="3VsUkX" to="g51k:~EditorCellFactoryImpl" resolve="EditorCellFactoryImpl" />
             </node>
           </node>
         </node>
