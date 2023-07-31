@@ -15085,6 +15085,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="45KItpiTysb" role="3bR37C">
+          <node concept="3bR9La" id="45KItpiTysc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4gGXGcLVFB_" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -15300,6 +15305,16 @@
             <node concept="3qWCbU" id="4PRpvcZJNTH" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="45KItpiTysI" role="3bR37C">
+          <node concept="3bR9La" id="45KItpiTysJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="45KItpiTysK" role="3bR37C">
+          <node concept="3bR9La" id="45KItpiTysL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
@@ -21985,6 +22000,11 @@
             <node concept="3qWCbU" id="$Kq8MetEY2" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="45KItpiTznO" role="3bR37C">
+          <node concept="3bR9La" id="45KItpiTznP" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>

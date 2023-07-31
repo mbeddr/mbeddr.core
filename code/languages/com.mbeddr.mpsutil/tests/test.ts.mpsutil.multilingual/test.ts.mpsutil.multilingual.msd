@@ -24,6 +24,7 @@
     <dependency reexport="false">23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)</dependency>
     <dependency reexport="false">eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)</dependency>
     <dependency reexport="false">442d3b7d-fe4a-4293-a7c1-6744d440ecaa(com.mbeddr.mpsutil.richstring)</dependency>
+    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d2a1d976-43a2-462f-ac3a-9b258ced839d:com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
