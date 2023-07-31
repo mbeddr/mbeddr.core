@@ -1649,7 +1649,7 @@
         <node concept="3clFbH" id="37C79oTgBuQ" role="3cqZAp" />
         <node concept="3clFbF" id="3_vDOCvUJ_3" role="3cqZAp">
           <node concept="2YIFZM" id="3_vDOCvUJOy" role="3clFbG">
-            <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,jetbrains.mps.project.IProject)" resolve="extendUsingProject" />
+            <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,org.jetbrains.mps.openapi.project.Project)" resolve="extendUsingProject" />
             <ref role="1Pybhc" to="wvnl:~EditorExtensionUtil" resolve="EditorExtensionUtil" />
             <node concept="37vLTw" id="3_vDOCvUK0p" role="37wK5m">
               <ref role="3cqZAo" node="7r8qu42xnk8" resolve="editorComponent" />
@@ -4198,6 +4198,30 @@
                   </node>
                   <node concept="3oM_SD" id="24MikXOkD3o" role="1PaTwD">
                     <property role="3oM_SC" value="components." />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="45KItpiMC70" role="3cqZAp">
+                <node concept="3clFbS" id="45KItpiMC72" role="3clFbx">
+                  <node concept="3clFbF" id="45KItpiMM7m" role="3cqZAp">
+                    <node concept="2OqwBi" id="45KItpiMN7W" role="3clFbG">
+                      <node concept="37vLTw" id="45KItpiMM7k" role="2Oq$k0">
+                        <ref role="3cqZAo" node="24MikXOg4Py" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="45KItpiMONk" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.register()" resolve="register" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="45KItpiMJJA" role="3clFbw">
+                  <node concept="2OqwBi" id="45KItpiMJJC" role="3fr31v">
+                    <node concept="37vLTw" id="45KItpiMJJD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="24MikXOg4Py" resolve="tool" />
+                    </node>
+                    <node concept="liA8E" id="45KItpiMJJE" role="2OqNvi">
+                      <ref role="37wK5l" to="71xd:~BaseTool.isAvailable()" resolve="isAvailable" />
+                    </node>
                   </node>
                 </node>
               </node>
