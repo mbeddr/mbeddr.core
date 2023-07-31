@@ -15,6 +15,7 @@
     <import index="spci" ref="442d3b7d-fe4a-4293-a7c1-6744d440ecaa/r:f00bea3f-6dce-47ed-ac44-0f6df7d12ced(com.mbeddr.mpsutil.richstring/com.mbeddr.mpsutil.richstring.structure)" />
     <import index="d6tz" ref="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)" />
     <import index="fw73" ref="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -35,6 +36,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -336,6 +338,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIITqx" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLB4r" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLB4s" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLB4t" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIITqy" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.ITALIAN" resolve="ITALIAN" />
@@ -372,6 +380,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIITt6" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLBas" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLBat" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLBau" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIITt7" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
@@ -408,6 +422,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIITvH" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLBdi" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLBdj" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLBdk" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIITvI" role="37wK5m">
                 <ref role="3cqZAo" to="33ny:~Locale.GERMAN" resolve="GERMAN" />
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
@@ -838,6 +858,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIISaS" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLAbD" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLA21" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLAkQ" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIISbJ" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.ITALIAN" resolve="ITALIAN" />
@@ -874,6 +900,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIISvc" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLAnn" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLAno" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLAnp" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIISvd" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
@@ -910,6 +942,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIISGE" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLAso" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLAsp" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLAsq" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIISGF" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.GERMAN" resolve="GERMAN" />
@@ -946,6 +984,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIISQX" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLAw_" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLAwA" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLAwB" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIISQY" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.ITALIAN" resolve="ITALIAN" />
@@ -982,6 +1026,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIISZS" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLACl" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLACm" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLACn" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIISZT" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.ENGLISH" resolve="ENGLISH" />
@@ -1018,6 +1068,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIIT6B" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxkb3" resolve="setCurrentLanguage" />
+              <node concept="2OqwBi" id="45KItpiLAIz" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLAI$" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLAI_" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="10M0yZ" id="2GRHOLIIT6C" role="37wK5m">
                 <ref role="1PxDUh" to="33ny:~Locale" resolve="Locale" />
                 <ref role="3cqZAo" to="33ny:~Locale.GERMAN" resolve="GERMAN" />
