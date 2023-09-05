@@ -6,7 +6,7 @@ configurations {
     jreWin
 }
 
-ext.jdkVersion = '17.0.3-b469.32'
+ext.jdkVersion = '17.0.7-b1000.6'
 dependencies {
     mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
     jreWin "com.jetbrains.jdk:jbr:${jdkVersion}:windows-x64@tgz"
