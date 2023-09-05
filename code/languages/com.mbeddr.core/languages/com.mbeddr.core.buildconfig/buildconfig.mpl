@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
     <facet type="tests" />
@@ -22,7 +22,7 @@
         </modelRoot>
       </models>
       <facets>
-        <facet type="java">
+        <facet type="java" compile="mps" classes="mps" ext="no">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
