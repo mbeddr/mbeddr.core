@@ -11,7 +11,7 @@ repositories {
 }
 
 downloadJbr {
-    jbrVersion = '17.0.6-b653.34'
+    jbrVersion = '17.0.3-b469.32'
 }
 
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
