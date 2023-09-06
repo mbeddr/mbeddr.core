@@ -7,6 +7,8 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v_2019_3.DefaultFacetExplicitPersistence" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2021_2.SplitMPSCoreStub" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2021_3.ExtractMPSBootStubs" value="executed" />
-    <entry key="project.migrated.version" value="222" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.ExplicitJavaFacetSettings" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.SplitMPSCoreStub2" value="executed" />
+    <entry key="project.migrated.version" value="223" />
   </component>
 </project>
