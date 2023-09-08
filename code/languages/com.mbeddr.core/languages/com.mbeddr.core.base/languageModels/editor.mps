@@ -3604,7 +3604,7 @@
                     <node concept="2OqwBi" id="SZmm_$GDdg" role="3uHU7w">
                       <node concept="pncrf" id="SZmm_$GDdh" role="2Oq$k0" />
                       <node concept="3TrcHB" id="SZmm_$GDdi" role="2OqNvi">
-                        <ref role="3TsBF5" to="vs0r:3Pz_UaJMNIK" resolve="lastUdpatedBy" />
+                        <ref role="3TsBF5" to="vs0r:3Pz_UaJMNIK" resolve="lastUpdatedBy" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="SZmm_$GDdj" role="3uHU7B">
