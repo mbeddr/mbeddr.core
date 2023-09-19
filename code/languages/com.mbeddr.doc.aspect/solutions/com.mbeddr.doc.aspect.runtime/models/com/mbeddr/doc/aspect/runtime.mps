@@ -652,12 +652,18 @@
         </node>
         <node concept="TZ5HA" id="qh7UMGj36v" role="TZ5H$">
           <node concept="1dT_AC" id="qh7UMGj36w" role="1dT_Ay">
-            <property role="1dT_AB" value="language and subsequently in the documentation aspects of all extending languages." />
+            <property role="1dT_AB" value="language and subsequently in the documentation aspects of all extending languages and finally in any available " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7ts$qmyJV5D" role="TZ5H$">
+          <node concept="1dT_AC" id="7ts$qmyJV5E" role="1dT_Ay">
+            <property role="1dT_AB" value="solution that depends on the concepts language." />
           </node>
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2NM$qy7XpEN" role="jymVt" />
+    <node concept="2tJIrI" id="7ts$qmyJVIT" role="jymVt" />
     <node concept="2YIFZL" id="4LTL3HuCZ4$" role="jymVt">
       <property role="TrG5h" value="findSolutionDoc" />
       <node concept="37vLTG" id="4LTL3HuD1h_" role="3clF46">
@@ -735,6 +741,49 @@
                           <ref role="3cqZAo" node="4LTL3HuD1h_" resolve="repository" />
                         </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="7ts$qmyK0p9" role="3cqZAp">
+                  <node concept="1PaTwC" id="7ts$qmyK0pa" role="1aUNEU">
+                    <node concept="3oM_SD" id="7ts$qmyK1Xe" role="1PaTwD">
+                      <property role="3oM_SC" value="only" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1Xg" role="1PaTwD">
+                      <property role="3oM_SC" value="search" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1Xj" role="1PaTwD">
+                      <property role="3oM_SC" value="for" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1Xn" role="1PaTwD">
+                      <property role="3oM_SC" value="documentation" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1Xs" role="1PaTwD">
+                      <property role="3oM_SC" value="if" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1Xy" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1XD" role="1PaTwD">
+                      <property role="3oM_SC" value="language" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1XL" role="1PaTwD">
+                      <property role="3oM_SC" value="is" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1XU" role="1PaTwD">
+                      <property role="3oM_SC" value="included" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1Yr" role="1PaTwD">
+                      <property role="3oM_SC" value="in" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1YA" role="1PaTwD">
+                      <property role="3oM_SC" value="the" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1YM" role="1PaTwD">
+                      <property role="3oM_SC" value="module" />
+                    </node>
+                    <node concept="3oM_SD" id="7ts$qmyK1YZ" role="1PaTwD">
+                      <property role="3oM_SC" value="dependencies" />
                     </node>
                   </node>
                 </node>
@@ -819,6 +868,18 @@
         <node concept="1LlUBW" id="4LTL3HuCZ3X" role="_ZDj9">
           <node concept="3Tqbb2" id="4LTL3HuCZ4i" role="1Lm7xW" />
           <node concept="10Oyi0" id="4LTL3HuCZ4w" role="1Lm7xW" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="7ts$qmyJWxE" role="lGtFl">
+        <node concept="TZ5HA" id="7ts$qmyJWxF" role="TZ5H$">
+          <node concept="1dT_AC" id="7ts$qmyJWxG" role="1dT_Ay">
+            <property role="1dT_AB" value="Find documentation in solutions, search through available modules in repository, filtering by those including the" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7ts$qmyJXRg" role="TZ5H$">
+          <node concept="1dT_AC" id="7ts$qmyJXRh" role="1dT_Ay">
+            <property role="1dT_AB" value="language of the concept" />
+          </node>
         </node>
       </node>
     </node>
