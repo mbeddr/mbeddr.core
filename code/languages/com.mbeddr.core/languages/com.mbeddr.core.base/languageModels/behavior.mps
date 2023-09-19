@@ -3879,7 +3879,7 @@
             <node concept="2OqwBi" id="3Pz_UaJN2fE" role="37vLTJ">
               <node concept="13iPFW" id="3Pz_UaJN252" role="2Oq$k0" />
               <node concept="3TrcHB" id="3Pz_UaJN34E" role="2OqNvi">
-                <ref role="3TsBF5" to="vs0r:3Pz_UaJMNIK" resolve="lastUdpatedBy" />
+                <ref role="3TsBF5" to="vs0r:3Pz_UaJMNIK" resolve="lastUpdatedBy" />
               </node>
             </node>
           </node>

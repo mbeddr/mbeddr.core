@@ -13,13 +13,29 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
 
+## com.mbeddr.core
+
+### Changed
+
+- Improved the assessment editor to better separate individual assessments in an assessment container.
+
+# June 2023
+
+## com.mbeddr.doc.aspect
+
+### Fixed
+
+- Concept `SectRefWord`, i.e. `@sect[a section]`: It was only possible to open a referenced section in the same `Document` by clicking the section-link in the documentation-tool-window. With this change it's possible to open a referenced section from another `Document` in the same model.
+
+- Concept `DocRefWord`, i.e. `@doc[a document]`: The reference to another `Document` was not shown as a reference/link in the documentation-tool-window. It would also not open the referenced `Document` on click. By adding a special editor, similar to `SectRefWord`, document references are now perceived as references/links and open the referenced documentation, scrolled to the top, on click on the `DocRefWord`.
+
 # April 2023
 
 ## com.mbeddr.doc
 
 ### Fixed
 
-* @doc\[some document\] causes broken build unless a "some document" was also used in include.
+* `@doc[some document]` causes broken build unless a "some document" was also used in include.
 
 ### Changed
 
