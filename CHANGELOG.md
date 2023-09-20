@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # September 2023
 
+## com.mbeddr.doc.aspect
+
+### Changed
+
+* The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
+
 ## com.mbeddr.core
 
 ### Changed
