@@ -128,7 +128,17 @@
       <node concept="P$JXv" id="3KxJFmNUFo7" role="lGtFl">
         <node concept="TZ5HA" id="3KxJFmNUFo8" role="TZ5H$">
           <node concept="1dT_AC" id="3KxJFmNUFo9" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO." />
+            <property role="1dT_AB" value="For references under the cursor, show the documentation of the referenced concept." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2z92rvRqna3" role="TZ5H$">
+          <node concept="1dT_AC" id="2z92rvRqna4" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2z92rvRqnaB" role="TZ5H$">
+          <node concept="1dT_AC" id="2z92rvRqnaC" role="1dT_Ay">
+            <property role="1dT_AB" value="Activate this flag to show the documentation of the referencing concept instead." />
           </node>
         </node>
       </node>
