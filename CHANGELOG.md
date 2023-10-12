@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
+# October 2023
+
+## com.mbeddr.mpsutils
+
+### Changed
+
+Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
 
 # September 2023
 
