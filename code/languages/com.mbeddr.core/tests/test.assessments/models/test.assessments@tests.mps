@@ -93,7 +93,7 @@
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
       <concept id="865293814733114044" name="com.mbeddr.core.base.structure.Assessment" flags="ng" index="3pwaUv">
-        <property id="4423545983997787056" name="lastUdpatedBy" index="2iEaKi" />
+        <property id="4423545983997787056" name="lastUpdatedBy" index="2iEaKi" />
         <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
         <property id="8691429746170824734" name="sorted" index="1Ema5g" />
         <child id="865293814733115677" name="query" index="3pwbkY" />

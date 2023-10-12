@@ -41,24 +41,24 @@
   <node concept="1WbyPV" id="1MEM7Lwynlm">
     <property role="TrG5h" value="SimpleGraph" />
     <node concept="1WbyNr" id="1MEM7Lwynl_" role="1WbyPQ">
-      <ref role="1WbyNk" node="1MEM7Lwynln" resolve="N1" />
-      <ref role="1WbyNm" node="1MEM7Lwynlp" resolve="N2" />
+      <ref role="1WbyNk" node="1MEM7Lwynln" />
+      <ref role="1WbyNm" node="1MEM7Lwynlp" />
     </node>
     <node concept="1WbyNr" id="1MEM7LwynlB" role="1WbyPQ">
-      <ref role="1WbyNk" node="1MEM7Lwynls" resolve="N3" />
-      <ref role="1WbyNm" node="1MEM7Lwynlw" resolve="N4" />
+      <ref role="1WbyNk" node="1MEM7Lwynls" />
+      <ref role="1WbyNm" node="1MEM7Lwynlw" />
     </node>
     <node concept="1WbyNr" id="1MEM7LwynlE" role="1WbyPQ">
-      <ref role="1WbyNk" node="1MEM7Lwynlw" resolve="N4" />
-      <ref role="1WbyNm" node="1MEM7Lwynln" resolve="N1" />
+      <ref role="1WbyNk" node="1MEM7Lwynlw" />
+      <ref role="1WbyNm" node="1MEM7Lwynln" />
     </node>
     <node concept="1WbyNr" id="1MEM7LwynlI" role="1WbyPQ">
-      <ref role="1WbyNk" node="1MEM7Lwynlp" resolve="N2" />
-      <ref role="1WbyNm" node="1MEM7Lwynls" resolve="N3" />
+      <ref role="1WbyNk" node="1MEM7Lwynlp" />
+      <ref role="1WbyNm" node="1MEM7Lwynls" />
     </node>
     <node concept="2lk0DD" id="7NPCd7DD$6r" role="1WbyPQ">
-      <ref role="1WbyNk" node="1MEM7Lwynlp" resolve="N2" />
-      <ref role="1WbyNm" node="1MEM7Lwynlp" resolve="N2" />
+      <ref role="1WbyNk" node="1MEM7Lwynlp" />
+      <ref role="1WbyNm" node="1MEM7Lwynlp" />
     </node>
     <node concept="aMcqk" id="1MEM7Lwynln" role="1WbyPO">
       <property role="TrG5h" value="N1" />
