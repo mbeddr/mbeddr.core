@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# November 2023
+
+## com.mbeddr.core
+
+- Fixed a NullPointerException in BlockExpression_Constraints that was preventing completion menu from appearing in mbeddr code.
+
 # July 2023
 
 The following languages/plugins were removed:
