@@ -805,23 +805,6 @@
   <node concept="1M2fIO" id="7moCclreYpX">
     <property role="3GE5qa" value="blockexpr" />
     <ref role="1M2myG" to="k146:4VEDcE28so4" resolve="BlockExpression" />
-    <node concept="9S07l" id="79i$vAY60tW" role="9Vyp8">
-      <node concept="3clFbS" id="79i$vAY60tX" role="2VODD2">
-        <node concept="3clFbF" id="79i$vAY60tY" role="3cqZAp">
-          <node concept="2OqwBi" id="79i$vAY60tZ" role="3clFbG">
-            <node concept="nLn13" id="79i$vAY60u0" role="2Oq$k0" />
-            <node concept="2qgKlT" id="79i$vAY60u1" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="79i$vAY60u2" role="3cqZAp">
-          <node concept="3clFbT" id="79i$vAY60u3" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="gaSsNU986_">
     <property role="3GE5qa" value="stack" />
