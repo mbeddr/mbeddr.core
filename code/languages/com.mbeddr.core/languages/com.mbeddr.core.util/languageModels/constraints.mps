@@ -4,6 +4,7 @@
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -807,14 +808,6 @@
     <ref role="1M2myG" to="k146:4VEDcE28so4" resolve="BlockExpression" />
     <node concept="9S07l" id="79i$vAY60tW" role="9Vyp8">
       <node concept="3clFbS" id="79i$vAY60tX" role="2VODD2">
-        <node concept="3clFbF" id="79i$vAY60tY" role="3cqZAp">
-          <node concept="2OqwBi" id="79i$vAY60tZ" role="3clFbG">
-            <node concept="nLn13" id="79i$vAY60u0" role="2Oq$k0" />
-            <node concept="2qgKlT" id="79i$vAY60u1" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="79i$vAY60u2" role="3cqZAp">
           <node concept="3clFbT" id="79i$vAY60u3" role="3clFbG">
             <property role="3clFbU" value="true" />

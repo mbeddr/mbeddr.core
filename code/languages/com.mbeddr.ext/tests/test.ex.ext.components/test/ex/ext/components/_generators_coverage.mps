@@ -18,7 +18,7 @@
         <child id="865293814733114045" name="assessments" index="3pwaUu" />
       </concept>
       <concept id="865293814733114044" name="com.mbeddr.core.base.structure.Assessment" flags="ng" index="3pwaUv">
-        <property id="4423545983997787056" name="lastUdpatedBy" index="2iEaKi" />
+        <property id="4423545983997787056" name="lastUpdatedBy" index="2iEaKi" />
         <property id="4423545983997782838" name="lastUpdatedOn" index="2iEbMk" />
         <child id="671216505796427450" name="summaries" index="q3PPx" />
         <child id="865293814733115677" name="query" index="3pwbkY" />
