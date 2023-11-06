@@ -94,10 +94,7 @@ subprojects {
         } else {
             ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
         }
-	// Treat mps/xyz branches as non-master (use branch prefix in artifact name)
-	// Because sometimes the old MPS version is used in the branch and this leads to interference
-	// when its artifacts are uploaded with the same major/minor version as the main branch.
-        if(mbeddrBuild == "stable" || mbeddrBuild.matches(/maintenance[\/-](mps)?\d+(\.\d+)*/)) {
+        if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
             ext.mbeddrBuild = "master"
         }
 
