@@ -13,6 +13,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
 
+## com.mbeddr.mpsutil
+
+### Fixed
+
+- When actionsfilter was enabled, MPS will no longer display an error saying that settings could not be saved.
+
 # October 2023
 
 ## com.mbeddr.mpsutils
