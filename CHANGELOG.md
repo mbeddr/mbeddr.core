@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
+
+# November 2023
+
+## com.mbeddr.doc
+
+### Changed
+
+- Enhanced generateScreenshots to support multiple output models (forks in genplans).
+
 # October 2023
 
 ## com.mbeddr.mpsutils
