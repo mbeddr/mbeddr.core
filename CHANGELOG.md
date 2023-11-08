@@ -5,13 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# November 2023
+
+## com.mbeddr.doc
+
+### Changed
+
+- The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
+
 # October 2023
 
 ## com.mbeddr.mpsutils
 
 ### Changed
 
-Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
+- Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
 
 # September 2023
 
@@ -19,7 +27,7 @@ Added possiblity to update the ToolWindow contents of context action 2 evenif th
 
 ### Changed
 
-* The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
+- The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
 
 ## com.mbeddr.core
 

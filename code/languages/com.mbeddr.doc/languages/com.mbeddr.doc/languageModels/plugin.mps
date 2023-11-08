@@ -2320,7 +2320,7 @@
                     <property role="Xl_RC" value="Screenshots cannot be taken in MpsEnvironment (Ant &lt;generate&gt; task). " />
                   </node>
                   <node concept="Xl_RD" id="5Ulr5FUQLH_" role="3uHU7w">
-                    <property role="Xl_RC" value="Use mps-gradle-plugins or mps-build-backends or other means to run the build in an IDEA environment." />
+                    <property role="Xl_RC" value="Use mps-gradle-plugin, mps-build-backends, MPS tests, or other means to run the MPS make process in an IDEA environment." />
                   </node>
                 </node>
               </node>
