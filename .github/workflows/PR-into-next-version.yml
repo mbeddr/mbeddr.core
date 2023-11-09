@@ -1,0 +1,37 @@
+name: PR to merge into the next version
+
+on:
+  push:
+    branches:
+      - 'maintenance/*'
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine next branch and create PR
+        id: next-branch
+        shell: bash
+        run: |
+          # Next branch matching refs/heads/maintenance/* pattern, or empty if we're on the last one
+          next_maintenance_branch_full=$(git ls-remote --quiet --heads --sort=refname ${{ github.repositoryUrl }} 'refs/heads/maintenance/*' |
+            awk '$2 > "${{ github.ref }}" { print $2; exit }')
+          
+          echo "Next maintenance branch (full): ${next_maintenance_branch_full:-(none)}"
+          
+          # Cut off refs/heads/ prefix
+          next_maintenance_branch=${next_maintenance_branch_full#refs/heads/}
+          
+          echo "Next maintenance branch (short): ${next_maintenance_branch:-(none)}"
+
+          default_branch=${{ github.event.repository.default_branch }}
+
+          # Substitute the default branch if empty
+          target_branch=${next_maintenance_branch:-$default_branch}
+
+          echo "Target branch: $target_branch"
+
+          gh pr create --head ${{ github.ref_name }} --base ${target_branch} \
+            --title "Merge ${{ github.ref_name }} into ${target_branch}" \
+            --body 'This is an automatic PR which merges changes from `${{ github.ref_name }}` to `${target_branch}`.' \
+            --assignee '@me'
