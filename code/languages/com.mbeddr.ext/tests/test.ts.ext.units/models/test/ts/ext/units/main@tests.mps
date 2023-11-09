@@ -8,7 +8,7 @@
     <use id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util" version="0" />
     <use id="b574d547-b77e-4fed-9f60-c349c4410765" name="com.mbeddr.ext.math" version="0" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements" version="2" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
@@ -65,6 +65,7 @@
         <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -317,6 +318,7 @@
   </node>
   <node concept="1lH9Xt" id="7j7F_4oxbpp">
     <property role="TrG5h" value="Conversions" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7j7F_4oxbp$" role="1SKRRt">
       <node concept="N3F5e" id="7j7F_4oxbp_" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -1086,6 +1088,7 @@
   </node>
   <node concept="1lH9Xt" id="7j7F_4oxweO">
     <property role="TrG5h" value="ExpressionsPart1" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7j7F_4oxweP" role="1SKRRt">
       <node concept="N3F5e" id="7j7F_4oxweQ" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -2374,6 +2377,7 @@
   </node>
   <node concept="1lH9Xt" id="7j7F_4oxMXt">
     <property role="TrG5h" value="MetaMethodsPart2" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7j7F_4oxMXu" role="1SKRRt">
       <node concept="N3F5e" id="7j7F_4oxMXv" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -3295,6 +3299,7 @@
   </node>
   <node concept="1lH9Xt" id="3KEQlYy6xc_">
     <property role="TrG5h" value="ComplexExpressions" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3KEQlYy6xcA" role="1SKRRt">
       <node concept="N3F5e" id="3KEQlYy6xcB" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -3539,6 +3544,7 @@
   </node>
   <node concept="1lH9Xt" id="248BCjudQc_">
     <property role="TrG5h" value="MetaMethodsWithError" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="248BCjudQjV" role="1SKRRt">
       <node concept="N3F5e" id="248BCjudQjW" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -4343,6 +4349,7 @@
   </node>
   <node concept="1lH9Xt" id="248BCjukcCT">
     <property role="TrG5h" value="MetaMethodsPart1" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="248BCjukcCU" role="1SKRRt">
       <node concept="N3F5e" id="248BCjukcCV" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -5399,6 +5406,7 @@
   </node>
   <node concept="1lH9Xt" id="4UqVSP8cUwN">
     <property role="TrG5h" value="MetaMethodsPart3" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4UqVSP8cUwO" role="1SKRRt">
       <node concept="N3F5e" id="4UqVSP8cUwP" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -5731,6 +5739,7 @@
   </node>
   <node concept="1lH9Xt" id="4UqVSP8hBqo">
     <property role="TrG5h" value="ExpressionsPart2" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4UqVSP8hBqp" role="1SKRRt">
       <node concept="N3F5e" id="4UqVSP8hBqq" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -6331,6 +6340,7 @@
   </node>
   <node concept="1lH9Xt" id="6hWxniPEwln">
     <property role="TrG5h" value="ExpressionsPart3" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6hWxniPEwlo" role="1SKRRt">
       <node concept="N3F5e" id="6hWxniPEwlp" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -6727,6 +6737,7 @@
   </node>
   <node concept="1lH9Xt" id="2r6d2fwCXwt">
     <property role="TrG5h" value="DataLogger" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2r6d2fwD2Cb" role="1SKRRt">
       <node concept="N3F5e" id="2r6d2fwD2Cf" role="1qenE9">
         <property role="TrG5h" value="m1" />

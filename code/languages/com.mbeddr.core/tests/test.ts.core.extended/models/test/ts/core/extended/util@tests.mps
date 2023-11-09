@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -40,6 +40,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -319,6 +320,7 @@
   </registry>
   <node concept="1lH9Xt" id="4bc29_mroN5">
     <property role="TrG5h" value="expressions" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="3KEQlYyp6Ct" role="1SL9yI">
       <property role="TrG5h" value="all" />
       <node concept="3cqZAl" id="3KEQlYyp6Cu" role="3clF45" />
@@ -1006,6 +1008,7 @@
   </node>
   <node concept="1lH9Xt" id="53vN8MuE8Fo">
     <property role="TrG5h" value="dataLogger" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="53vN8MuE8Fp" role="1SKRRt">
       <node concept="N3F5e" id="53vN8MuE8Fq" role="1qenE9">
         <property role="TrG5h" value="m1" />
@@ -1262,6 +1265,7 @@
   </node>
   <node concept="1lH9Xt" id="3CoVb8q0gu_">
     <property role="TrG5h" value="stack" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3CoVb8q0jTg" role="1SKRRt">
       <node concept="N3F5e" id="3CoVb8q0jTk" role="1qenE9">
         <property role="TrG5h" value="aModule" />
@@ -1432,6 +1436,7 @@
   </node>
   <node concept="1lH9Xt" id="3CoVb8q2Kqp">
     <property role="TrG5h" value="ringBuffer" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3CoVb8q2Kqq" role="1SKRRt">
       <node concept="N3F5e" id="3CoVb8q2Kqr" role="1qenE9">
         <property role="TrG5h" value="aModule" />
@@ -1598,6 +1603,7 @@
   </node>
   <node concept="1lH9Xt" id="7cvwcG64DMD">
     <property role="TrG5h" value="queue" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7cvwcG64DME" role="1SKRRt">
       <node concept="N3F5e" id="7cvwcG64DMF" role="1qenE9">
         <property role="TrG5h" value="aModule" />
@@ -1748,6 +1754,7 @@
   </node>
   <node concept="1lH9Xt" id="7PyP3ULDuSz">
     <property role="TrG5h" value="forRange" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7PyP3ULDuS$" role="1SKRRt">
       <node concept="N3F5e" id="7PyP3ULDuSC" role="1qenE9">
         <property role="TrG5h" value="forRangeTests" />
