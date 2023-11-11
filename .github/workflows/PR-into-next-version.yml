@@ -3,7 +3,7 @@ name: PR to merge into the next version
 on:
   push:
     branches:
-      - 'maintenance/*'
+      - 'maintenance/mps*'
 
 jobs:
   create-pr:
@@ -17,8 +17,8 @@ jobs:
           echo "Calculating PR branches:"
 
           # Next branch matching refs/heads/maintenance/* pattern, or empty if we're on the last one
-          next_maintenance_branch=$(gh api "/repos/$owner_and_repo/git/matching-refs/heads/maintenance/" \
-            --jq 'map(.ref | ltrimstr("refs/heads/") | select(. > "${{ github.ref_name }}")) | sort | min')
+          next_maintenance_branch=$(gh api "/repos/$owner_and_repo/git/matching-refs/heads/maintenance/mps" \
+            --jq 'map(.ref | ltrimstr("refs/heads/") | select(. > "${{ github.ref_name }}" and . < "maintenance/mps3")) | min')
           echo "  Next maintenance branch: ${next_maintenance_branch:-(none)}"
 
           # Substitute the default branch if empty
