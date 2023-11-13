@@ -36,10 +36,23 @@ jobs:
           echo "Pushing ${{ github.ref_name }} to $merge_branch"
 
           # Create or update $merge_branch
+          if gh api repos/$owner_and_repo/git/ref/heads/$merge_branch --silent
+          then
+            # Branch exists, merge $head_branch into it
+            gh api repos/$owner_and_repo/merges --silent --method=POST -f base=$merge_branch -f head=$head_branch ||
+              (echo "Merging $head_branch to existing $merge_branch failed, aborting." ; exit 1)
+          else
+            # Branch does not exist, create it from $head_branch
+            gh api repos/$owner_and_repo/git/refs --silent --method=POST -f ref="refs/heads/$merge_branch" -f sha=${{ github.sha }} ||
+              (echo "Could not create merge branch $merge_branch" ; exit 1)
+          fi
 
-          gh api --silent --method=POST -f ref="refs/heads/$merge_branch" -f sha=${{ github.sha }} "/repos/$owner_and_repo/git/refs" ||
-            gh api --silent --method=PATCH -f sha=${{ github.sha }} "/repos/$owner_and_repo/git/refs/heads/$merge_branch" ||
-            (echo "Could not push ${{ github.ref_name }} (${{ github.sha }}) to $merge_branch" 1>&2 ; exit 1)
+          # Merge $base_branch -> $merge_branch, in order for $merge_branch to be up to date, as required by the branch
+          # protection rules.
+
+          # The head and base arguments are intentionally reversed because this is a reverse merge.
+          gh api repos/$owner_and_repo/merges --silent --method=POST -f base=$merge_branch -f head=$base_branch ||
+            echo "Updating $merge_branch from $base_branch failed, please do it manually."
 
           # Create PR if it does not exist yet
           existing_pr_url=$(gh pr list --repo $owner_and_repo --head $merge_branch --base $base_branch --json url --jq 'map(.url[]).[]')
