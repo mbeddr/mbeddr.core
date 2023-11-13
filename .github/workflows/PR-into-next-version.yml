@@ -1,0 +1,56 @@
+name: PR to merge into the next version
+
+on:
+  push:
+    branches:
+      - 'maintenance/mps*'
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          owner_and_repo: ${{ github.repository }}
+        run: |
+          echo "Calculating PR branches:"
+
+          # Next branch matching refs/heads/maintenance/* pattern, or empty if we're on the last one
+          next_maintenance_branch=$(gh api "/repos/$owner_and_repo/git/matching-refs/heads/maintenance/mps" \
+            --jq 'map(.ref | ltrimstr("refs/heads/") | select(. > "${{ github.ref_name }}" and . < "maintenance/mps3")) | min')
+          echo "  Next maintenance branch: ${next_maintenance_branch:-(none)}"
+
+          # Substitute the default branch if empty
+          default_branch=${{ github.event.repository.default_branch }}
+          base_branch=${next_maintenance_branch:-$default_branch}
+          echo "  PR base branch: $base_branch"
+
+          # Calculate PR head branch name (the branch to merge) by substituting 'maintenance' for 'merge'
+          head_branch=${{ github.ref_name }}
+          head_branch=${head_branch/#maintenance/merge}
+          echo "  PR head branch: $head_branch"
+
+          echo ""
+
+          echo "Pushing ${{ github.ref_name }} to $head_branch"
+
+          # Create or update $head_branch
+
+          gh api --silent --method=POST -f ref="refs/heads/$head_branch" -f sha=${{ github.sha }} "/repos/$owner_and_repo/git/refs" ||
+            gh api --silent --method=PATCH -f sha=${{ github.sha }} "/repos/$owner_and_repo/git/refs/heads/$head_branch" ||
+            (echo "Could not push ${{ github.ref_name }} (${{ github.sha }}) to $head_branch" 1>&2 ; exit 1)
+
+          # Create PR if it does not exist yet
+          existing_pr_url=$(gh pr list --repo $owner_and_repo --head $head_branch --base $base_branch --json url --jq 'map(.url[]).[]')
+          if [[ $existing_pr_url ]]
+          then
+            echo "Pull request $head_branch -> $base_branch already exists at $existing_pr_url"
+          else
+            echo "Creating a new pull request $head_branch -> $base_branch"
+            gh pr create --repo $owner_and_repo --head $head_branch --base $base_branch \
+              --title "Merge ${{ github.ref_name }} into $base_branch" \
+              --body "This is an automatic PR which merges changes from \`${{ github.ref_name }}\` to \`$base_branch\`." \
+              --assignee '${{ github.actor }}' \
+              --reviewer '${{ github.actor }}'
+          fi
