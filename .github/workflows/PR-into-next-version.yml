@@ -28,29 +28,42 @@ jobs:
 
           # Calculate PR head branch name (the branch to merge) by substituting 'maintenance' for 'merge'
           head_branch=${{ github.ref_name }}
-          head_branch=${head_branch/#maintenance/merge}
-          echo "  PR head branch: $head_branch"
+          merge_branch=${head_branch/#maintenance/merge}
+          echo "  Merge branch (will be used as PR head): $merge_branch"
 
           echo ""
 
-          echo "Pushing ${{ github.ref_name }} to $head_branch"
+          echo "Pushing ${{ github.ref_name }} to $merge_branch"
 
-          # Create or update $head_branch
+          # Create or update $merge_branch
+          if gh api repos/$owner_and_repo/git/ref/heads/$merge_branch --silent
+          then
+            # Branch exists, merge $head_branch into it
+            gh api repos/$owner_and_repo/merges --silent --method=POST -f base=$merge_branch -f head=$head_branch ||
+              (echo "Merging $head_branch to existing $merge_branch failed, aborting." ; exit 1)
+          else
+            # Branch does not exist, create it from $head_branch
+            gh api repos/$owner_and_repo/git/refs --silent --method=POST -f ref="refs/heads/$merge_branch" -f sha=${{ github.sha }} ||
+              (echo "Could not create merge branch $merge_branch" ; exit 1)
+          fi
 
-          gh api --silent --method=POST -f ref="refs/heads/$head_branch" -f sha=${{ github.sha }} "/repos/$owner_and_repo/git/refs" ||
-            gh api --silent --method=PATCH -f sha=${{ github.sha }} "/repos/$owner_and_repo/git/refs/heads/$head_branch" ||
-            (echo "Could not push ${{ github.ref_name }} (${{ github.sha }}) to $head_branch" 1>&2 ; exit 1)
+          # Merge $base_branch -> $merge_branch, in order for $merge_branch to be up to date, as required by the branch
+          # protection rules.
+
+          # The head and base arguments are intentionally reversed because this is a reverse merge.
+          gh api repos/$owner_and_repo/merges --silent --method=POST -f base=$merge_branch -f head=$base_branch ||
+            echo "Updating $merge_branch from $base_branch failed, please do it manually."
 
           # Create PR if it does not exist yet
-          existing_pr_url=$(gh pr list --repo $owner_and_repo --head $head_branch --base $base_branch --json url --jq 'map(.url[]).[]')
+          existing_pr_url=$(gh pr list --repo $owner_and_repo --head $merge_branch --base $base_branch --json url --jq 'map(.url[]).[]')
           if [[ $existing_pr_url ]]
           then
-            echo "Pull request $head_branch -> $base_branch already exists at $existing_pr_url"
+            echo "Pull request $merge_branch -> $base_branch already exists at $existing_pr_url"
           else
-            echo "Creating a new pull request $head_branch -> $base_branch"
-            gh pr create --repo $owner_and_repo --head $head_branch --base $base_branch \
+            echo "Creating a new pull request $merge_branch -> $base_branch"
+            gh pr create --repo $owner_and_repo --head $merge_branch --base $base_branch \
               --title "Merge ${{ github.ref_name }} into $base_branch" \
-              --body "This is an automatic PR which merges changes from \`${{ github.ref_name }}\` to \`$base_branch\`." \
+              --body "An automatic PR to merge changes from \`${{ github.ref_name }}\` to \`$base_branch\`." \
               --assignee '${{ github.actor }}' \
               --reviewer '${{ github.actor }}'
           fi
