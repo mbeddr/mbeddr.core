@@ -4,7 +4,7 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
@@ -55,6 +55,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -481,6 +482,7 @@
   </node>
   <node concept="1lH9Xt" id="44jZT9pi$lE">
     <property role="TrG5h" value="EvaluatorTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="44jZT9ph3XE" role="1SKRRt">
       <node concept="qq9qg" id="44jZT9ph3XG" role="1qenE9">
         <property role="TrG5h" value="ValidationTestsInterpreter1" />
@@ -1096,6 +1098,7 @@
   </node>
   <node concept="1lH9Xt" id="44jZT9piAYO">
     <property role="TrG5h" value="CategoryTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="44jZT9pisBp" role="1SKRRt">
       <node concept="qq9qg" id="44jZT9pisKL" role="1qenE9">
         <property role="TrG5h" value="CategoryInterpreter1" />
@@ -1158,6 +1161,7 @@
   </node>
   <node concept="1lH9Xt" id="44jZT9piB0O">
     <property role="TrG5h" value="RelationTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="44jZT9piwgM" role="1SKRRt">
       <node concept="qq9qg" id="44jZT9pixcV" role="1qenE9">
         <property role="TrG5h" value="RelatedInterpreter1" />
@@ -1233,6 +1237,7 @@
   </node>
   <node concept="1lH9Xt" id="44jZT9piBYy">
     <property role="TrG5h" value="TypeMappingTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="44jZT9piBYz" role="1SKRRt">
       <node concept="qq9qg" id="44jZT9piBY_" role="1qenE9">
         <property role="TrG5h" value="TypeMappingInterpreter1" />
@@ -2135,6 +2140,7 @@
   </node>
   <node concept="1lH9Xt" id="44jZT9pHKGa">
     <property role="TrG5h" value="SortTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="44jZT9pHKOr" role="1SKRRt">
       <node concept="qq9qg" id="44jZT9pHKOu" role="1qenE9">
         <property role="TrG5h" value="SortInterpreter1" />
@@ -2776,6 +2782,7 @@
   </node>
   <node concept="1lH9Xt" id="7F2vPZ4m60r">
     <property role="TrG5h" value="StackTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7F2vPZ4qaVN" role="1SKRRt">
       <node concept="N3F5e" id="7F2vPZ4qb50" role="1qenE9">
         <property role="TrG5h" value="StackTestModule1" />
@@ -5693,6 +5700,7 @@
   </node>
   <node concept="1lH9Xt" id="7F2vPZ4FtLE">
     <property role="TrG5h" value="CacheTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7F2vPZ4FtLF" role="1SKRRt">
       <node concept="N3F5e" id="7F2vPZ4FtLJ" role="1qenE9">
         <property role="TrG5h" value="CacheTestModule1" />
@@ -6795,6 +6803,7 @@
   </node>
   <node concept="1lH9Xt" id="7oujAIfIVoy">
     <property role="TrG5h" value="ConditionalInterpreterTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7oujAIfJGbg" role="1SL9yI">
       <property role="TrG5h" value="simple" />
       <node concept="3cqZAl" id="7oujAIfJGbh" role="3clF45" />
@@ -7227,6 +7236,7 @@
   </node>
   <node concept="1lH9Xt" id="13B9DOnZh9l">
     <property role="TrG5h" value="CachePointerTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="13B9DOnZh9m" role="1SKRRt">
       <node concept="N3F5e" id="13B9DOnZh9n" role="1qenE9">
         <property role="TrG5h" value="CacheTestModule1" />
