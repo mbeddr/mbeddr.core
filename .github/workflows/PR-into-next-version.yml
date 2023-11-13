@@ -63,7 +63,7 @@ jobs:
             echo "Creating a new pull request $merge_branch -> $base_branch"
             gh pr create --repo $owner_and_repo --head $merge_branch --base $base_branch \
               --title "Merge ${{ github.ref_name }} into $base_branch" \
-              --body "This is an automatic PR which merges changes from \`${{ github.ref_name }}\` to \`$base_branch\`." \
+              --body "An automatic PR to merge changes from \`${{ github.ref_name }}\` to \`$base_branch\`." \
               --assignee '${{ github.actor }}' \
               --reviewer '${{ github.actor }}'
           fi
