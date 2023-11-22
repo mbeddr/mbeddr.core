@@ -3465,9 +3465,9 @@
               <ref role="3cqZAo" node="3EF07Bw$r7s" resolve="actions" />
             </node>
             <node concept="TSZUe" id="3EF07Bw$r8f" role="2OqNvi">
-              <node concept="2ShNRf" id="3EF07Bw$r8g" role="25WWJ7">
-                <node concept="1pGfFk" id="3EF07Bw$r8h" role="2ShVmc">
-                  <ref role="37wK5l" node="2jSY3BO8ZZ6" resolve="TraceTab.ClearTraceAction" />
+              <node concept="2ShNRf" id="kZqQ7ZQP$E" role="25WWJ7">
+                <node concept="1pGfFk" id="kZqQ7ZQP$F" role="2ShVmc">
+                  <ref role="37wK5l" node="2jSY3BO8ZZ6" resolve="ClearTraceInformationFromCodeAction" />
                 </node>
               </node>
             </node>
@@ -4072,17 +4072,17 @@
       <property role="2bfB8j" value="true" />
       <property role="1sVAO0" value="false" />
       <property role="1EXbeo" value="false" />
-      <property role="TrG5h" value="ClearTraceAction" />
+      <property role="TrG5h" value="ClearTraceInformationFromCodeAction" />
       <node concept="3clFbW" id="2jSY3BO8ZZ6" role="jymVt">
         <node concept="3cqZAl" id="2jSY3BO8ZZ7" role="3clF45" />
         <node concept="3clFbS" id="2jSY3BO8ZZ9" role="3clF47">
           <node concept="XkiVB" id="2jSY3BO90Eb" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="2jSY3BO90VD" role="37wK5m">
-              <property role="Xl_RC" value="Clear Trace" />
+              <property role="Xl_RC" value="Clear code from tracing information" />
             </node>
             <node concept="Xl_RD" id="2jSY3BO91f0" role="37wK5m">
-              <property role="Xl_RC" value="Clear any currently visible trace" />
+              <property role="Xl_RC" value="Undecorates any currently visible trace information within the code" />
             </node>
             <node concept="10M0yZ" id="zYLsjkrojy" role="37wK5m">
               <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.CloseHovered" resolve="CloseHovered" />
@@ -4994,7 +4994,7 @@
           <node concept="XkiVB" id="3wJ9Qm10ugO" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="3wJ9Qm10ugP" role="37wK5m">
-              <property role="Xl_RC" value="Computation Source" />
+              <property role="Xl_RC" value="Goto computation source" />
             </node>
             <node concept="Xl_RD" id="3wJ9Qm10veT" role="37wK5m">
               <property role="Xl_RC" value="Go to the code that created this node, if available" />
@@ -6815,6 +6815,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="kZqQ7ZPIWi" role="3cqZAp" />
         <node concept="3clFbH" id="2JfTTG8lxUK" role="3cqZAp" />
         <node concept="3cpWs8" id="2JfTTG8lxUL" role="3cqZAp">
           <node concept="3cpWsn" id="2JfTTG8lxUM" role="3cpWs9">
