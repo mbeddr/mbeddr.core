@@ -10453,7 +10453,7 @@
       <node concept="3clFbS" id="3LPUFyun5vN" role="3clF47">
         <node concept="3clFbF" id="3LPUFyun5vQ" role="3cqZAp">
           <node concept="Xl_RD" id="3LPUFyun5vP" role="3clFbG">
-            <property role="Xl_RC" value="Only nodes of concept ITracerFrame" />
+            <property role="Xl_RC" value="show reduced trace tree (default)" />
           </node>
         </node>
       </node>
@@ -11066,7 +11066,7 @@
       <node concept="3clFbS" id="3LPUFyur$Pz" role="3clF47">
         <node concept="3clFbF" id="3LPUFyur$PA" role="3cqZAp">
           <node concept="Xl_RD" id="3LPUFyur$P_" role="3clFbG">
-            <property role="Xl_RC" value="Hide invisible and skipped trace nodes." />
+            <property role="Xl_RC" value="show nearly all trace nodes" />
           </node>
         </node>
       </node>
