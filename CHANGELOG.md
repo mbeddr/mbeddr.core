@@ -13,6 +13,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced generateScreenshots to support multiple output models (forks in genplans).
 
+## com.mbeddr.MPSUtils
+
+### Changed
+
+- Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
+
 # October 2023
 
 ## com.mbeddr.mpsutils

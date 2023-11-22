@@ -2450,9 +2450,7 @@
             </node>
             <node concept="liA8E" id="1J1iBrrav4X" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JTree.setRootVisible(boolean)" resolve="setRootVisible" />
-              <node concept="3clFbT" id="1J1iBrraw4T" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+              <node concept="3clFbT" id="1J1iBrraw4T" role="37wK5m" />
             </node>
           </node>
         </node>
