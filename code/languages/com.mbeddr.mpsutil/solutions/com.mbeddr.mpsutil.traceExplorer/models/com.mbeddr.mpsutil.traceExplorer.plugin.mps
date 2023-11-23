@@ -1561,19 +1561,6 @@
         <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
       </node>
     </node>
-    <node concept="3clFb_" id="3LPUFyuORRV" role="jymVt">
-      <property role="TrG5h" value="getTargetNode" />
-      <node concept="3Tm1VV" id="3LPUFyuORRX" role="1B3o_S" />
-      <node concept="3Tqbb2" id="3LPUFyuORRY" role="3clF45" />
-      <node concept="3clFbS" id="3LPUFyuORS3" role="3clF47">
-        <node concept="3cpWs6" id="3LPUFyuOU7u" role="3cqZAp">
-          <node concept="10Nm6u" id="3LPUFyuP5q0" role="3cqZAk" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="3LPUFyuORS4" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="2jSY3BO6a0f">
     <property role="TrG5h" value="TraceRecordTreeCellRenderer" />
@@ -8036,23 +8023,6 @@
     </node>
     <node concept="2tJIrI" id="3LPUFyuOPeg" role="jymVt" />
     <node concept="2tJIrI" id="3LPUFyuOPZ2" role="jymVt" />
-    <node concept="3clFb_" id="3LPUFyuOPJH" role="jymVt">
-      <property role="TrG5h" value="getTargetNode" />
-      <node concept="3clFbS" id="3LPUFyuOPJK" role="3clF47" />
-      <node concept="3Tm1VV" id="3LPUFyuOPJL" role="1B3o_S" />
-      <node concept="3Tqbb2" id="3LPUFyuOPHh" role="3clF45" />
-      <node concept="P$JXv" id="3LPUFyuOQ6U" role="lGtFl">
-        <node concept="TZ5HA" id="3LPUFyuOQ6V" role="TZ5H$">
-          <node concept="1dT_AC" id="3LPUFyuOQ6W" role="1dT_Ay">
-            <property role="1dT_AB" value="The node of the model that produced this trace entity" />
-          </node>
-        </node>
-        <node concept="x79VA" id="3LPUFyuOQ9T" role="3nqlJM">
-          <property role="x79VB" value="a node within some model that was traced" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="43aY2QmSqWd" role="jymVt" />
     <node concept="3clFb_" id="43aY2QmSrtR" role="jymVt">
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getChildren" />
@@ -10161,10 +10131,10 @@
             <node concept="3Tqbb2" id="3LPUFyupstj" role="1tU5fm" />
             <node concept="2OqwBi" id="3LPUFyupte3" role="33vP2m">
               <node concept="37vLTw" id="3LPUFyuqTmI" role="2Oq$k0">
-                <ref role="3cqZAo" node="3LPUFyun5vx" resolve="trace" />
+                <ref role="3cqZAo" node="3LPUFyuqTmD" resolve="computationTrace" />
               </node>
               <node concept="liA8E" id="3LPUFyupte7" role="2OqNvi">
-                <ref role="37wK5l" node="3LPUFyuOPJH" resolve="getTargetNode" />
+                <ref role="37wK5l" to="2ahs:4fb2DFB6IMb" resolve="getTargetNode" />
               </node>
             </node>
           </node>
