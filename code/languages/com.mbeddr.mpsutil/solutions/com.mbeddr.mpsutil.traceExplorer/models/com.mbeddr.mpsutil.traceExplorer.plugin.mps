@@ -294,7 +294,6 @@
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -458,13 +457,6 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
         <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -2207,7 +2199,7 @@
         </node>
         <node concept="3cpWs8" id="7rNasV49NrX" role="3cqZAp">
           <node concept="3cpWsn" id="7rNasV49NrY" role="3cpWs9">
-            <property role="TrG5h" value="selctionChangedListener" />
+            <property role="TrG5h" value="selectionChangeListener" />
             <node concept="3uibUv" id="7rNasV49DtE" role="1tU5fm">
               <ref role="3uigEE" node="4SlhOg$fWsI" resolve="FilterSelectionChangeListener" />
             </node>
@@ -3160,7 +3152,7 @@
             <node concept="liA8E" id="7rNasV5CUq2" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Dialog.setTitle(java.lang.String)" resolve="setTitle" />
               <node concept="Xl_RD" id="7rNasV5CUq3" role="37wK5m">
-                <property role="Xl_RC" value="Choose one ore more options" />
+                <property role="Xl_RC" value="Choose one or more options" />
               </node>
             </node>
           </node>
@@ -10738,7 +10730,7 @@
         </node>
         <node concept="3cpWs8" id="3LPUFytZNjM" role="3cqZAp">
           <node concept="3cpWsn" id="3LPUFytZNjN" role="3cpWs9">
-            <property role="TrG5h" value="referncedNodes" />
+            <property role="TrG5h" value="referencedNodes" />
             <node concept="2I9FWS" id="3LPUFytZNjO" role="1tU5fm" />
             <node concept="2OqwBi" id="3LPUFytZNjP" role="33vP2m">
               <node concept="37vLTw" id="3LPUFytZNjQ" role="2Oq$k0">
@@ -11653,7 +11645,7 @@
     </node>
     <node concept="2tJIrI" id="17348R1slmg" role="jymVt" />
     <node concept="312cEg" id="4lVwGzUId1q" role="jymVt">
-      <property role="TrG5h" value="allowedRepeatitions" />
+      <property role="TrG5h" value="allowedRepetitions" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="4lVwGzUIatB" role="1B3o_S" />
       <node concept="10Oyi0" id="4lVwGzUIcXf" role="1tU5fm" />
@@ -11663,7 +11655,7 @@
       <node concept="z59LJ" id="17348R1sn_5" role="lGtFl">
         <node concept="TZ5HA" id="17348R1sn_6" role="TZ5H$">
           <node concept="1dT_AC" id="17348R1sn_7" role="1dT_Ay">
-            <property role="1dT_AB" value="to give feedback to the person implementing a filter we allow at least 1 repeatition of traced children." />
+            <property role="1dT_AB" value="We allow at least 1 repetition of found child traces to give feedback to the person implementing a filter" />
           </node>
         </node>
       </node>
@@ -12455,148 +12447,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7rNasV3y3I$" role="jymVt" />
-    <node concept="1X3_iC" id="4lVwGzU$TtP" role="lGtFl">
-      <property role="3V$3am" value="member" />
-      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
-      <node concept="3clFb_" id="7rNasV3yALa" role="8Wnug">
-        <property role="TrG5h" value="scanForChild" />
-        <node concept="3clFbS" id="7rNasV3yALd" role="3clF47">
-          <node concept="3clFbJ" id="7rNasV3yDKF" role="3cqZAp">
-            <node concept="3clFbC" id="7rNasV3yJEU" role="3clFbw">
-              <node concept="2OqwBi" id="7rNasV3yGf4" role="3uHU7B">
-                <node concept="37vLTw" id="7rNasV3yF6B" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7rNasV3yBDG" resolve="parent" />
-                </node>
-                <node concept="liA8E" id="7rNasV3yHws" role="2OqNvi">
-                  <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.getUserObject()" resolve="getUserObject" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="7rNasV3yJ8s" role="3uHU7w">
-                <ref role="3cqZAo" node="7rNasV3yBYy" resolve="record" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="7rNasV3yDKH" role="3clFbx">
-              <node concept="3cpWs6" id="7rNasV3yLn$" role="3cqZAp">
-                <node concept="37vLTw" id="7rNasV3yNjG" role="3cqZAk">
-                  <ref role="3cqZAo" node="7rNasV3yBDG" resolve="parent" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="7rNasV3zz2h" role="3cqZAp">
-            <node concept="3cpWsn" id="7rNasV3zz2k" role="3cpWs9">
-              <property role="TrG5h" value="scanForChild" />
-              <node concept="3uibUv" id="7rNasV3zz2l" role="1tU5fm">
-                <ref role="3uigEE" to="rgfa:~DefaultMutableTreeNode" resolve="DefaultMutableTreeNode" />
-              </node>
-              <node concept="10Nm6u" id="7rNasV3zPbU" role="33vP2m" />
-            </node>
-          </node>
-          <node concept="1Dw8fO" id="7rNasV3yYL3" role="3cqZAp">
-            <node concept="3clFbS" id="7rNasV3yYL5" role="2LFqv$">
-              <node concept="3cpWs8" id="7rNasV3zetB" role="3cqZAp">
-                <node concept="3cpWsn" id="7rNasV3zetC" role="3cpWs9">
-                  <property role="TrG5h" value="child" />
-                  <node concept="3uibUv" id="7rNasV3zemb" role="1tU5fm">
-                    <ref role="3uigEE" to="rgfa:~DefaultMutableTreeNode" resolve="DefaultMutableTreeNode" />
-                  </node>
-                  <node concept="0kSF2" id="7rNasV3zFUL" role="33vP2m">
-                    <node concept="3uibUv" id="7rNasV3zFUO" role="0kSFW">
-                      <ref role="3uigEE" to="rgfa:~DefaultMutableTreeNode" resolve="DefaultMutableTreeNode" />
-                    </node>
-                    <node concept="2OqwBi" id="7rNasV3zetD" role="0kSFX">
-                      <node concept="37vLTw" id="7rNasV3zetE" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7rNasV3yBDG" resolve="parent" />
-                      </node>
-                      <node concept="liA8E" id="7rNasV3zetF" role="2OqNvi">
-                        <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.getChildAt(int)" resolve="getChildAt" />
-                        <node concept="37vLTw" id="7rNasV3zetG" role="37wK5m">
-                          <ref role="3cqZAo" node="7rNasV3yYL6" resolve="idx" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7rNasV3zCrH" role="3cqZAp">
-                <node concept="37vLTI" id="7rNasV3zDDi" role="3clFbG">
-                  <node concept="37vLTw" id="7rNasV3zCrF" role="37vLTJ">
-                    <ref role="3cqZAo" node="7rNasV3zz2k" resolve="scanForChild" />
-                  </node>
-                  <node concept="1rXfSq" id="7rNasV3zk5x" role="37vLTx">
-                    <ref role="37wK5l" node="7rNasV3yALa" resolve="scanForChild" />
-                    <node concept="37vLTw" id="7rNasV3zk5y" role="37wK5m">
-                      <ref role="3cqZAo" node="7rNasV3zetC" resolve="child" />
-                    </node>
-                    <node concept="37vLTw" id="7rNasV3zk5z" role="37wK5m">
-                      <ref role="3cqZAo" node="7rNasV3yBYy" resolve="record" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbJ" id="7rNasV3zsEy" role="3cqZAp">
-                <node concept="3clFbS" id="7rNasV3zsE$" role="3clFbx">
-                  <node concept="3zACq4" id="7rNasV3zx53" role="3cqZAp" />
-                </node>
-                <node concept="3y3z36" id="7rNasV3zuRe" role="3clFbw">
-                  <node concept="10Nm6u" id="7rNasV3zvsp" role="3uHU7w" />
-                  <node concept="37vLTw" id="7rNasV3ztM7" role="3uHU7B">
-                    <ref role="3cqZAo" node="7rNasV3zz2k" resolve="scanForChild" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="7rNasV3yYL6" role="1Duv9x">
-              <property role="TrG5h" value="idx" />
-              <node concept="10Oyi0" id="7rNasV3yZXQ" role="1tU5fm" />
-              <node concept="3cmrfG" id="7rNasV3z1h6" role="33vP2m">
-                <property role="3cmrfH" value="0" />
-              </node>
-            </node>
-            <node concept="3eOVzh" id="7rNasV3z3wz" role="1Dwp0S">
-              <node concept="37vLTw" id="7rNasV3z2g9" role="3uHU7B">
-                <ref role="3cqZAo" node="7rNasV3yYL6" resolve="idx" />
-              </node>
-              <node concept="2OqwBi" id="7rNasV3yQCc" role="3uHU7w">
-                <node concept="37vLTw" id="7rNasV3yPJg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7rNasV3yBDG" resolve="parent" />
-                </node>
-                <node concept="liA8E" id="7rNasV3yR$y" role="2OqNvi">
-                  <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.getChildCount()" resolve="getChildCount" />
-                </node>
-              </node>
-            </node>
-            <node concept="3uNrnE" id="7rNasV3z8XF" role="1Dwrff">
-              <node concept="37vLTw" id="7rNasV3z8XH" role="2$L3a6">
-                <ref role="3cqZAo" node="7rNasV3yYL6" resolve="idx" />
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs6" id="7rNasV3znkw" role="3cqZAp">
-            <node concept="37vLTw" id="7rNasV3zJDM" role="3cqZAk">
-              <ref role="3cqZAo" node="7rNasV3zz2k" resolve="scanForChild" />
-            </node>
-          </node>
-        </node>
-        <node concept="3uibUv" id="7rNasV3yAIz" role="3clF45">
-          <ref role="3uigEE" to="rgfa:~DefaultMutableTreeNode" resolve="DefaultMutableTreeNode" />
-        </node>
-        <node concept="37vLTG" id="7rNasV3yBDG" role="3clF46">
-          <property role="TrG5h" value="parent" />
-          <node concept="3uibUv" id="7rNasV3yBDF" role="1tU5fm">
-            <ref role="3uigEE" to="rgfa:~DefaultMutableTreeNode" resolve="DefaultMutableTreeNode" />
-          </node>
-        </node>
-        <node concept="37vLTG" id="7rNasV3yBYy" role="3clF46">
-          <property role="TrG5h" value="record" />
-          <node concept="3uibUv" id="7rNasV3yCUH" role="1tU5fm">
-            <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
-          </node>
-        </node>
-        <node concept="3Tm6S6" id="4lVwGzU$Srs" role="1B3o_S" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7rNasV3VT12" role="jymVt" />
   </node>
 </model>
 
