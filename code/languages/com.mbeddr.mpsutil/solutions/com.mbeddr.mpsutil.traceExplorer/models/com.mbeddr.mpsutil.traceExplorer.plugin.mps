@@ -3152,7 +3152,7 @@
             <node concept="liA8E" id="7rNasV5CUq2" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Dialog.setTitle(java.lang.String)" resolve="setTitle" />
               <node concept="Xl_RD" id="7rNasV5CUq3" role="37wK5m">
-                <property role="Xl_RC" value="Choose one or more options" />
+                <property role="Xl_RC" value="Choose One or More Options" />
               </node>
             </node>
           </node>
@@ -4122,7 +4122,7 @@
           <node concept="XkiVB" id="2jSY3BO90Eb" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="2jSY3BO90VD" role="37wK5m">
-              <property role="Xl_RC" value="Clear code from tracing information" />
+              <property role="Xl_RC" value="Removal of Trace Information from Code" />
             </node>
             <node concept="Xl_RD" id="2jSY3BO91f0" role="37wK5m">
               <property role="Xl_RC" value="Undecorates any currently visible trace information within the code" />
@@ -4176,7 +4176,7 @@
           <node concept="XkiVB" id="5U8d23PrYAn" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="5U8d23PrYAo" role="37wK5m">
-              <property role="Xl_RC" value="Next Trace for same node" />
+              <property role="Xl_RC" value="Next Trace for Same Node" />
             </node>
             <node concept="Xl_RD" id="5U8d23PrYAp" role="37wK5m">
               <property role="Xl_RC" value="Go to next trace of the same node" />
@@ -4878,10 +4878,10 @@
           <node concept="XkiVB" id="5syY_AMv_PL" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="5syY_AMvAzh" role="37wK5m">
-              <property role="Xl_RC" value="Open filter menu" />
+              <property role="Xl_RC" value="Open Filter Menu" />
             </node>
             <node concept="Xl_RD" id="47H5HUZ5Ige" role="37wK5m">
-              <property role="Xl_RC" value="Filter out nodes from the tree" />
+              <property role="Xl_RC" value="Let you choose which filter should be applied" />
             </node>
             <node concept="10M0yZ" id="7rNasV4i_n9" role="37wK5m">
               <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
@@ -4932,7 +4932,7 @@
           <node concept="XkiVB" id="5U8d23PWgMF" role="3cqZAp">
             <ref role="37wK5l" to="lzb2:~ToggleActionButton.&lt;init&gt;(java.lang.String,javax.swing.Icon)" resolve="ToggleActionButton" />
             <node concept="Xl_RD" id="5U8d23PWgMG" role="37wK5m">
-              <property role="Xl_RC" value="Highlight Code" />
+              <property role="Xl_RC" value="Highlight in Editor" />
             </node>
             <node concept="10M0yZ" id="5U8d23Q0roU" role="37wK5m">
               <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Annotate" resolve="Annotate" />
@@ -5037,7 +5037,7 @@
           <node concept="XkiVB" id="3wJ9Qm10ugO" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="3wJ9Qm10ugP" role="37wK5m">
-              <property role="Xl_RC" value="Goto computation source" />
+              <property role="Xl_RC" value="Goto Computation Source" />
             </node>
             <node concept="Xl_RD" id="3wJ9Qm10veT" role="37wK5m">
               <property role="Xl_RC" value="Go to the code that created this node, if available" />
@@ -5604,7 +5604,7 @@
           <node concept="XkiVB" id="3T40JVgh4L9" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="3T40JVgh4La" role="37wK5m">
-              <property role="Xl_RC" value="Reset Tree" />
+              <property role="Xl_RC" value="Reset Tree Expansions" />
             </node>
             <node concept="Xl_RD" id="3T40JVghavB" role="37wK5m">
               <property role="Xl_RC" value="Reset the expansion status to default" />
@@ -5782,10 +5782,10 @@
           <node concept="XkiVB" id="7rNasV4jYle" role="3cqZAp">
             <ref role="37wK5l" to="qkt:~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
             <node concept="Xl_RD" id="7rNasV4jYlf" role="37wK5m">
-              <property role="Xl_RC" value="Unfold the tree as with last manual operation" />
+              <property role="Xl_RC" value="Apply last Manual Unfolding" />
             </node>
             <node concept="Xl_RD" id="7rNasV4jYlg" role="37wK5m">
-              <property role="Xl_RC" value="Unfold the tree as with last manual operation" />
+              <property role="Xl_RC" value="Unfolds the tree as done with last manual operation" />
             </node>
             <node concept="10M0yZ" id="7rNasV4l0gp" role="37wK5m">
               <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.ArrowExpand" resolve="ArrowExpand" />
@@ -6174,39 +6174,6 @@
               </node>
               <node concept="37vLTw" id="5IR_boHBT$g" role="2ZW6bz">
                 <ref role="3cqZAo" node="2jSY3BO84vz" resolve="root" />
-              </node>
-            </node>
-            <node concept="9aQIb" id="5IR_boHPGqb" role="9aQIa">
-              <node concept="3clFbS" id="5IR_boHPGqc" role="9aQI4">
-                <node concept="3clFbF" id="5IR_boHPH5E" role="3cqZAp">
-                  <node concept="2OqwBi" id="5IR_boHPH5B" role="3clFbG">
-                    <node concept="10M0yZ" id="5IR_boHPH5C" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                      <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                    </node>
-                    <node concept="liA8E" id="5IR_boHPH5D" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                      <node concept="3cpWs3" id="5IR_boHPI_j" role="37wK5m">
-                        <node concept="Xl_RD" id="5IR_boHPII5" role="3uHU7w">
-                          <property role="Xl_RC" value=" is not rerunnable." />
-                        </node>
-                        <node concept="3cpWs3" id="5IR_boHPHwL" role="3uHU7B">
-                          <node concept="Xl_RD" id="5IR_boHPHf5" role="3uHU7B">
-                            <property role="Xl_RC" value="root " />
-                          </node>
-                          <node concept="2OqwBi" id="5IR_boHPHVI" role="3uHU7w">
-                            <node concept="37vLTw" id="5IR_boHPHDB" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2jSY3BO84vz" resolve="root" />
-                            </node>
-                            <node concept="liA8E" id="5IR_boHPIhf" role="2OqNvi">
-                              <ref role="37wK5l" node="43aY2QmSqzA" resolve="getName" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
           </node>
