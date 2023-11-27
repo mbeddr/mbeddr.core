@@ -8704,11 +8704,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="43aY2QmUOUb" role="3bR37C">
-          <node concept="3bR9La" id="43aY2QmUOUc" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="43aY2QmUOUd" role="3bR37C">
           <node concept="3bR9La" id="43aY2QmUOUe" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
@@ -8755,6 +8750,21 @@
             <node concept="3qWCbU" id="4PRpvcZJNtL" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kZqQ7ZZcsQ" role="3bR37C">
+          <node concept="3bR9La" id="kZqQ7ZZcsR" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kZqQ7ZZcsS" role="3bR37C">
+          <node concept="3bR9La" id="kZqQ7ZZcsT" role="1SiIV1">
+            <ref role="3bR37D" node="5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="kZqQ7ZZcsU" role="3bR37C">
+          <node concept="3bR9La" id="kZqQ7ZZcsV" role="1SiIV1">
+            <ref role="3bR37D" node="2mU72gDxe9F" resolve="com.mbeddr.mpsutil.jung.pluginSolution" />
           </node>
         </node>
       </node>
