@@ -13,11 +13,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced generateScreenshots to support multiple output models (forks in genplans).
 
-## com.mbeddr.MPSUtils
+## com.mbeddr.mpsutils
 
 ### Changed
 
 - Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
+- The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
+
+### Fixed
+
+- When actionsfilter was enabled, MPS will no longer display an error saying that settings could not be saved.
 
 # October 2023
 
@@ -25,7 +30,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Changed
 
-Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
+- Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
 
 # September 2023
 
@@ -33,7 +38,7 @@ Added possiblity to update the ToolWindow contents of context action 2 evenif th
 
 ### Changed
 
-* The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
+- The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
 
 ## com.mbeddr.core
 
@@ -51,6 +56,38 @@ Added possiblity to update the ToolWindow contents of context action 2 evenif th
 
 - Concept `DocRefWord`, i.e. `@doc[a document]`: The reference to another `Document` was not shown as a reference/link in the documentation-tool-window. It would also not open the referenced `Document` on click. By adding a special editor, similar to `SectRefWord`, document references are now perceived as references/links and open the referenced documentation, scrolled to the top, on click on the `DocRefWord`.
 
+# July 2023
+
+The following languages/plugins were removed:
+
+- com.mbeddr.mpsutil.testScope (superseded by [MPS test scopes](https://www.jetbrains.com/help/mps/testing-languages.html#testingscopes))
+- com.mbeddr.mpsutil.runconfiguration (the workaround is included in MPS nowadays)
+- com.mbeddr.mpsutil.rcpconfig (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.nodediff (replacement: selected two nodes in the logical view, right-click -> Compare two nodes)
+- com.mbeddr.mpsutil.licensemanager.common (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.langstats (not very useful, was never meant as a productive language)
+- com.mbeddr.mpsutil.gradlesupport (incomplete; use the language [com.dslfoundry.plaintextgen](https://jetbrains.github.io/MPS-extensions/extensions/generator/plaintext-gen) from MPS-extensions instead)
+- com.mbeddr.mpsutil.buildutil (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.forms (experimental language that was never completed)
+
+# May 2023
+
+## mbeddr.core
+
+Update mbeddr.core languages to MPS version 2022.2
+
+## build.gradle
+* use jbr 17 instead of jbr 11
+* download jbr with mps gradle plugin
+
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+* `com.mbeddr.mpsutil.smodule.runtime.lib.ModelHelper#createModel()` method (used to implement the `addModel` operation
+  of language `com.mbeddr.mpsutil.smodule`) no longer deadlocks when run from EDT.
+
 # April 2023
 
 ## com.mbeddr.doc
@@ -58,8 +95,6 @@ Added possiblity to update the ToolWindow contents of context action 2 evenif th
 ### Fixed
 
 * `@doc[some document]` causes broken build unless a "some document" was also used in include.
-
-### Changed
 
 # March 2023
 
