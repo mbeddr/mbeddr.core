@@ -10026,6 +10026,12 @@
     </node>
     <node concept="3clFb_" id="6any$Y9INnb" role="jymVt">
       <property role="TrG5h" value="setup" />
+      <node concept="37vLTG" id="3ApArNG6_kc" role="3clF46">
+        <property role="TrG5h" value="rootTrace" />
+        <node concept="3uibUv" id="3ApArNG6_kd" role="1tU5fm">
+          <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+        </node>
+      </node>
       <node concept="3clFbS" id="6any$Y9INne" role="3clF47" />
       <node concept="3Tm1VV" id="6any$Y9INnf" role="1B3o_S" />
       <node concept="3cqZAl" id="6any$Y9INmj" role="3clF45" />
@@ -10059,6 +10065,9 @@
         <node concept="3uibUv" id="6kHzpifQGEZ" role="1tU5fm">
           <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
         </node>
+      </node>
+      <node concept="2AHcQZ" id="3ApArNG6eAG" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
     </node>
     <node concept="3Tm1VV" id="3LPUFytXo4f" role="1B3o_S" />
@@ -10925,6 +10934,12 @@
       <node concept="2AHcQZ" id="6any$Y9IPDr" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
+      <node concept="37vLTG" id="3ApArNG71CG" role="3clF46">
+        <property role="TrG5h" value="rootTrace" />
+        <node concept="3uibUv" id="3ApArNG71CF" role="1tU5fm">
+          <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="6any$Y9IPDs" role="jymVt">
       <property role="TrG5h" value="tearDown" />
@@ -11217,6 +11232,12 @@
       <node concept="3clFbS" id="6any$Y9J3yz" role="3clF47" />
       <node concept="2AHcQZ" id="6any$Y9J3y$" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+      <node concept="37vLTG" id="3ApArNG75oG" role="3clF46">
+        <property role="TrG5h" value="rootTrace" />
+        <node concept="3uibUv" id="3ApArNG75oF" role="1tU5fm">
+          <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+        </node>
       </node>
     </node>
     <node concept="3clFb_" id="6any$Y9J3y_" role="jymVt">
@@ -11732,6 +11753,9 @@
                       </node>
                       <node concept="liA8E" id="6any$Y9KmYT" role="2OqNvi">
                         <ref role="37wK5l" node="6any$Y9INnb" resolve="setup" />
+                        <node concept="37vLTw" id="3ApArNG7yjg" role="37wK5m">
+                          <ref role="3cqZAo" node="1Fii5Z39HJj" resolve="rootTrace" />
+                        </node>
                       </node>
                     </node>
                   </node>
