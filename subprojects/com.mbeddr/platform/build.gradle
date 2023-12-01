@@ -91,7 +91,7 @@ task build_actionsfilter(type: BuildLanguages, dependsOn: [copy_allScripts]) {
     outputs.upToDateWhen { false }
 }
 
-task build_platform(type: BuildLanguages, dependsOn: [copy_allScripts, build_actionsfilter]) {
+task build_platform(type: BuildLanguages, dependsOn: [copy_allScripts]) {
     script scriptFile('com.mbeddr.platform/build.xml')
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
