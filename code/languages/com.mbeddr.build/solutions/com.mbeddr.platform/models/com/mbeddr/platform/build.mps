@@ -5471,6 +5471,11 @@
             <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
           </node>
         </node>
+        <node concept="1SiIV0" id="59x1vq_e_jM" role="3bR37C">
+          <node concept="3bR9La" id="59x1vq_e_jN" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L2N" resolve="jetbrains.mps.baseLanguage.tuples.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnQoOk" role="3989C9">
