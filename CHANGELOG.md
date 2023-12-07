@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+## December 2023
+
+### Removed
+
+- The language com.mbeddr.mpsutil.lantest was removed since it isn't fully working anymore.
+
+### Changed
+
+- plantuml was upgraded to v1.2023.12.
+
 # November 2023
 
 ## com.mbeddr.doc
