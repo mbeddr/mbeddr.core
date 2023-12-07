@@ -5097,6 +5097,11 @@
             <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
           </node>
         </node>
+        <node concept="1SiIV0" id="79z8$t34qey" role="3bR37C">
+          <node concept="3bR9La" id="79z8$t34qez" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="1g7oDhK05EQ" role="3989C9">
