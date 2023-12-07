@@ -14422,6 +14422,11 @@
             <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1VRNFInCwI9" role="3bR37C">
+          <node concept="1Busua" id="1VRNFInCwIa" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6hvYmWkk_$$" role="2G$12L">
         <property role="BnDLt" value="true" />
