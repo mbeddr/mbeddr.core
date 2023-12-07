@@ -1155,6 +1155,9 @@
       <node concept="m$_yC" id="2vG6DmgvF3k" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="7IgvtL$LTTb" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
       <node concept="2pNNFK" id="7L_Y3n_ffhC" role="20twgj">
         <property role="2pNNFO" value="extensions" />
         <node concept="2pNNFK" id="7L_Y3n_ffhD" role="3o6s8t">
@@ -13661,6 +13664,11 @@
         <node concept="1SiIV0" id="4BQS8fdswkV" role="3bR37C">
           <node concept="Rbm2T" id="4BQS8fdswkW" role="1SiIV1">
             <ref role="1E1Vl2" to="ffeo:2eDSGe9d1pJ" resolve="jetbrains.mps.lang.plugin.standalone" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7IgvtL$LV7S" role="3bR37C">
+          <node concept="Rbm2T" id="7IgvtL$LV7T" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
           </node>
         </node>
       </node>
