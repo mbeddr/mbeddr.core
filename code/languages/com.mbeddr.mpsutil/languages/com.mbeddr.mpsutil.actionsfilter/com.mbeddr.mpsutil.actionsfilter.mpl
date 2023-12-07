@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -19,7 +19,7 @@
         </modelRoot>
       </models>
       <facets>
-        <facet type="java">
+        <facet type="java" compile="mps" classes="mps" ext="no">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
@@ -58,6 +58,7 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+        <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
         <module reference="c38abce1-4c09-44cb-9ebf-2a764e824bb5(com.mbeddr.mpsutil.actionsfilter)" version="0" />
         <module reference="ba4bb076-d895-4d64-b475-10e845fb0842(com.mbeddr.mpsutil.actionsfilter#6552539437647162784)" version="0" />
         <module reference="436eb984-d162-4543-a347-2601ff5bb2a0(com.mbeddr.mpsutil.actionsfilter.runtime)" version="0" />

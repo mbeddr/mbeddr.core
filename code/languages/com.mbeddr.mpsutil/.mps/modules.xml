@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/2023-12-07T13:42:50.640931Z/2023-12-07T13:42:50.640931Z.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/EcoreImporter_TestLanguage1/EcoreImporter_TestLanguage1.mpl" folder="testlanguages" />

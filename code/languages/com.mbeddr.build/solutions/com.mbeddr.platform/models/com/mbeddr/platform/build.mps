@@ -11986,6 +11986,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1VRNFInk6Og" role="3bR37C">
+          <node concept="3bR9La" id="1VRNFInk6Oh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1oM0ei22dHk" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -16089,6 +16094,11 @@
         <node concept="1SiIV0" id="4BQS8fdswr$" role="3bR37C">
           <node concept="3bR9La" id="4BQS8fdswr_" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1VRNFInk6YH" role="3bR37C">
+          <node concept="3bR9La" id="1VRNFInk6YI" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
           </node>
         </node>
       </node>
