@@ -13,6 +13,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced TraceExplorer to hide toolbar buttons.
 
+## com.mbeddr.core.base
+
+### Changed
+
+- Assessement result entries with invalid references are now automatically removed.
+
 # November 2023
 
 ## com.mbeddr.doc
