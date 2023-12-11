@@ -2,7 +2,7 @@
 <model ref="r:ed3e0c43-ec95-4718-8427-6204fc60e5a9(com.mbeddr.mpsutil.compare.pattern.test.basic@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="17566462-d837-4552-874c-64e45c10778a" name="com.mbeddr.mpsutil.compare.pattern" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="36590f48-d68b-4c16-bfba-c769260bbac0" name="com.mbeddr.mpsutil.compare.pattern.baselang" version="-1" />
@@ -28,6 +28,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -315,6 +316,7 @@
   </registry>
   <node concept="1lH9Xt" id="Um6saBVnIb">
     <property role="TrG5h" value="BasicTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="Um6saBVyXx" role="1SL9yI">
       <property role="TrG5h" value="basicTest" />
       <node concept="3cqZAl" id="Um6saBVyXy" role="3clF45" />
@@ -958,6 +960,7 @@
   </node>
   <node concept="1lH9Xt" id="1ho_jHB_jmF">
     <property role="TrG5h" value="PatternRefTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1ho_jHB_lv5" role="1SL9yI">
       <property role="TrG5h" value="patternRefTest" />
       <node concept="3cqZAl" id="1ho_jHB_lv6" role="3clF45" />
@@ -1200,6 +1203,7 @@
   </node>
   <node concept="1lH9Xt" id="1KJPJGe2VuU">
     <property role="TrG5h" value="GetterTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1KJPJGe2VuV" role="1SL9yI">
       <property role="TrG5h" value="getterTest" />
       <node concept="3cqZAl" id="1KJPJGe2VuW" role="3clF45" />
@@ -1510,6 +1514,7 @@
   </node>
   <node concept="1lH9Xt" id="4mypyst6T9y">
     <property role="TrG5h" value="IfTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="4mypyst6T9z" role="1SL9yI">
       <property role="TrG5h" value="ifTest" />
       <node concept="3cqZAl" id="4mypyst6T9$" role="3clF45" />
@@ -1735,6 +1740,7 @@
   </node>
   <node concept="1lH9Xt" id="41mTV0gdqBh">
     <property role="TrG5h" value="BinaryExpressionTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="41mTV0gdqBi" role="1SL9yI">
       <property role="TrG5h" value="basicTest" />
       <node concept="3cqZAl" id="41mTV0gdqBj" role="3clF45" />
@@ -1900,6 +1906,7 @@
   </node>
   <node concept="1lH9Xt" id="wcyv5jSYyi">
     <property role="TrG5h" value="NegationTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="wcyv5jSYyj" role="1SL9yI">
       <property role="TrG5h" value="negationTest1" />
       <node concept="3cqZAl" id="wcyv5jSYyk" role="3clF45" />
