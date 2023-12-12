@@ -7,7 +7,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # December 2023
 
+## com.mbeddr.mpsutils
+
+### Changed
+
+- Enhanced TraceExplorer to hide toolbar buttons.
+
 ## com.mbeddr.core.base
+
+### Changed
 
 - Assessement result entries with invalid references are now automatically removed.
 
@@ -19,7 +27,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced generateScreenshots to support multiple output models (forks in genplans).
 
-## com.mbeddr.MPSUtils
+## com.mbeddr.mpsutils
 
 ### Changed
 
