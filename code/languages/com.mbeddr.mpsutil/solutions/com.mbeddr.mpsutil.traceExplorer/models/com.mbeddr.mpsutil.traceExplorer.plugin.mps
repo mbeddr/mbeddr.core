@@ -9195,20 +9195,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3djJ2XoiGln" role="3cqZAp">
-          <node concept="2OqwBi" id="3djJ2XoiGIt" role="3clFbG">
-            <node concept="37vLTw" id="3djJ2XoiGll" role="2Oq$k0">
-              <ref role="3cqZAo" node="3djJ2XoiFOa" resolve="l" />
-            </node>
-            <node concept="liA8E" id="3djJ2XoiHFr" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color)" resolve="setBackground" />
-              <node concept="2YIFZM" id="6lCdCJoeEoK" role="37wK5m">
-                <ref role="37wK5l" to="g1qu:~UIUtil.getLabelTextForeground()" resolve="getLabelTextForeground" />
-                <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3djJ2XoiI8m" role="3cqZAp">
           <node concept="2OqwBi" id="3djJ2XoiIxM" role="3clFbG">
             <node concept="37vLTw" id="3djJ2XoiI8k" role="2Oq$k0">
@@ -9216,9 +9202,7 @@
             </node>
             <node concept="liA8E" id="3djJ2XoiJve" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
-              <node concept="3clFbT" id="3djJ2XoiJAu" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+              <node concept="3clFbT" id="3djJ2XoiJAu" role="37wK5m" />
             </node>
           </node>
         </node>
