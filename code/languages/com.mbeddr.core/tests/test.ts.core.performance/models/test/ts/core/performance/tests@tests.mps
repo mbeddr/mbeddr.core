@@ -892,7 +892,7 @@
             <ref role="37wK5l" to="3n1v:7OBQOW$8zKM" resolve="testPerformance" />
             <ref role="1Pybhc" to="3n1v:7OBQOW$8uK1" resolve="PerformanceTestHelper" />
             <node concept="3cmrfG" id="LQ9d6zvvrt" role="37wK5m">
-              <property role="3cmrfH" value="50" />
+              <property role="3cmrfH" value="20" />
             </node>
             <node concept="37vLTw" id="LQ9d6zvvru" role="37wK5m">
               <ref role="3cqZAo" node="LQ9d6zvvrg" resolve="code" />
