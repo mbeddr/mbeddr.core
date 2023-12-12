@@ -11,15 +11,15 @@ repositories {
 }
 
 downloadJbr {
-    jbrVersion = '17.0.6-b469.82'
+    jbrVersion = '17.0.6-b653.34'
 }
 
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
 //MPS version
-ext.mpsMajor = "2022.2"
-ext.mpsBuild = "2022.2.1"
+ext.mpsMajor = "2022.3"
+ext.mpsBuild = "2022.3.1"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
