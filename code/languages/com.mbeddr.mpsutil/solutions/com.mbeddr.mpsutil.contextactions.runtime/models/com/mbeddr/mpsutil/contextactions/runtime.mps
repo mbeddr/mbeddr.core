@@ -3197,7 +3197,7 @@
             <node concept="2OqwBi" id="2qwokRYEviy" role="37vLTJ">
               <node concept="Xjq3P" id="2qwokRYEr$i" role="2Oq$k0" />
               <node concept="2OwXpG" id="2qwokRYEAM5" role="2OqNvi">
-                <ref role="2Oxat5" node="2qwokRYDun_" resolve="debug" />
+                <ref role="2Oxat5" node="2qwokRYDun_" resolve="refreshOnlyWhenVisible" />
               </node>
             </node>
           </node>

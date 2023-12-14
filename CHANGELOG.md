@@ -9,9 +9,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutils
 
+### Removed
+
+- The language com.mbeddr.mpsutil.lantest was removed since it isn't fully working anymore.
+
 ### Changed
 
 - Enhanced TraceExplorer to hide toolbar buttons.
+- plantuml was upgraded to v1.2023.12.
 
 ## com.mbeddr.core.base
 
