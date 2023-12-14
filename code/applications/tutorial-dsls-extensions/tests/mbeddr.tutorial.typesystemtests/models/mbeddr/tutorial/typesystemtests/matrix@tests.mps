@@ -2,7 +2,7 @@
 <model ref="r:306ccf39-5254-4b2f-b40d-518804a55437(mbeddr.tutorial.typesystemtests.matrix@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -18,6 +18,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -120,6 +121,7 @@
   </node>
   <node concept="1lH9Xt" id="4Kv0gUyBOgI">
     <property role="TrG5h" value="matrixTypeSystemTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4Kv0gUyBOgJ" role="1SKRRt">
       <node concept="N3F5e" id="4Kv0gUyBOgK" role="1qenE9">
         <property role="TrG5h" value="TestModule" />

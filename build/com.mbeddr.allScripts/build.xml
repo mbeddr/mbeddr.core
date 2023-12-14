@@ -781,6 +781,7 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
@@ -824,7 +825,6 @@
       <library file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
       <library file="${artifacts.mps}/languages/tools/jetbrains.mps.core.tool.environment.jar" />
       <library file="${artifacts.mps}/languages/tools/jetbrains.mps.tool.common.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.java.stub.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.kernel.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.makeup.jar" />
@@ -877,7 +877,15 @@
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.execution.configurations.implementation.plugin.jar" />

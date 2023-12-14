@@ -2,7 +2,7 @@
 <model ref="r:ed7c27e3-e64f-4a1a-8c95-0a20f1d49fb6(test.com.mbeddr.mpsutil.ecore.modelImportExport@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="-1" />
@@ -15,6 +15,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -66,6 +67,7 @@
   </registry>
   <node concept="1lH9Xt" id="6XBHSVMFkqf">
     <property role="TrG5h" value="ExporterImporterBaseLineTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6XBHSVMFkts" role="1SL9yI">
       <property role="TrG5h" value="testModelImporterExporterBaseLine1" />
       <node concept="3cqZAl" id="6XBHSVMFktt" role="3clF45" />

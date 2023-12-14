@@ -2,7 +2,7 @@
 <model ref="r:a68423c3-5b3b-473a-89a3-7910cb495020(com.mbeddr.mpsutil.common.graphTest@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -17,6 +17,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -214,6 +215,7 @@
   </registry>
   <node concept="1lH9Xt" id="3RjqiP9Z_ul">
     <property role="TrG5h" value="AVLTreeInsertion" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="3RjqiPa00xg" role="1qtyYc">
       <property role="TrG5h" value="getPreOrderDump" />
       <node concept="17QB3L" id="3RjqiPa2LE5" role="3clF45" />
@@ -1710,6 +1712,7 @@
   </node>
   <node concept="1lH9Xt" id="Atm5Ks$Gxi">
     <property role="TrG5h" value="AVLTreeDeletion" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="Atm5Ks$Gxj" role="1qtyYc">
       <property role="TrG5h" value="getPreOrderDump" />
       <node concept="17QB3L" id="Atm5Ks$Gxk" role="3clF45" />
@@ -4158,6 +4161,7 @@
   </node>
   <node concept="1lH9Xt" id="7Z2SI4ewmxn">
     <property role="TrG5h" value="Graph" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7P61H4bGMG7" role="1qtyYc">
       <property role="TrG5h" value="createGraph" />
       <node concept="3uibUv" id="7P61H4bH13o" role="3clF45">
@@ -6650,6 +6654,7 @@
   </node>
   <node concept="1lH9Xt" id="7Z2SI4eC9Up">
     <property role="TrG5h" value="GraphUtil" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7P61H4bMrxb" role="1qtyYc">
       <property role="TrG5h" value="createGraph" />
       <node concept="3uibUv" id="7P61H4bMrxc" role="3clF45">
