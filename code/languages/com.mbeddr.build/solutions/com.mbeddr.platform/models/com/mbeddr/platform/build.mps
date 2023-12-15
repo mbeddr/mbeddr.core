@@ -9024,6 +9024,11 @@
             <ref role="3bR37D" node="5GUwywcVavP" resolve="com.mbeddr.mpsutil.interpreter" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7oqPIEqOzBc" role="3bR37C">
+          <node concept="3bR9La" id="7oqPIEqOzBd" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
+          </node>
+        </node>
         <node concept="1BupzO" id="4PRpvcZJNur" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />

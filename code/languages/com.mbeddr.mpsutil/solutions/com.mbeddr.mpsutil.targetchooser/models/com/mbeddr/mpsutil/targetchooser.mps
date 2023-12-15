@@ -35,7 +35,6 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
     <import index="vqh0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.make(MPS.Core/)" />
-    <import index="rqo8" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure(MPS.Core/)" />
     <import index="fyhk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps(MPS.Platform/)" />
     <import index="65en" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.speedSearch(MPS.IDEA/)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
@@ -2644,7 +2643,7 @@
         <property role="TrG5h" value="myProject" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="2Nt6pro8c4a" role="1tU5fm">
-          <ref role="3uigEE" to="z1c4:~StandaloneMPSProject" resolve="StandaloneMPSProject" />
+          <ref role="3uigEE" to="z1c5:~MPSProject" resolve="MPSProject" />
         </node>
         <node concept="3Tm6S6" id="2Nt6pro8c4b" role="1B3o_S" />
       </node>
@@ -2670,7 +2669,7 @@
                   <ref role="3cqZAo" node="2Nt6pro8c4e" resolve="project" />
                 </node>
                 <node concept="3uibUv" id="2Nt6pro8c4m" role="10QFUM">
-                  <ref role="3uigEE" to="z1c4:~StandaloneMPSProject" resolve="StandaloneMPSProject" />
+                  <ref role="3uigEE" to="z1c5:~MPSProject" resolve="MPSProject" />
                 </node>
               </node>
             </node>
@@ -2740,7 +2739,7 @@
                       <ref role="3cqZAo" node="2Nt6pro8c48" resolve="myProject" />
                     </node>
                     <node concept="liA8E" id="2Nt6pro8c5x" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c4:~StandaloneMPSProject.getFolderFor(org.jetbrains.mps.openapi.module.SModule)" resolve="getFolderFor" />
+                      <ref role="37wK5l" to="z1c3:~ProjectBase.getVirtualFolder(org.jetbrains.mps.openapi.module.SModule)" resolve="getVirtualFolder" />
                       <node concept="2OqwBi" id="2Nt6pro8c63" role="37wK5m">
                         <node concept="37vLTw" id="2Nt6pro8c62" role="2Oq$k0">
                           <ref role="3cqZAo" node="2Nt6pro8c4B" resolve="pmtn" />
