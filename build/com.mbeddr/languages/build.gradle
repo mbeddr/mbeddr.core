@@ -208,6 +208,7 @@ publishing {
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }
             }
+            pom additionalPomInfo
         }
     }
 }
