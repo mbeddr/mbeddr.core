@@ -153,6 +153,7 @@ publishing {
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }*/
             }
+            pom additionalPomInfo
         }
         mbeddrAllScripts(MavenPublication) {
             groupId 'com.mbeddr'
@@ -172,6 +173,7 @@ publishing {
                     }
                 }
             }
+            pom additionalPomInfo
         }
     }
 }

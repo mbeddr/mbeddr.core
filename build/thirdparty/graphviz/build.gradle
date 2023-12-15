@@ -27,6 +27,18 @@ publishing {
             artifact(repackageGraphvizWindows) {
                 classifier 'windows'
             }
+            pom {
+                licenses {
+                    license {
+                        name = "EPL-1.0"
+                        url = "https://gitlab.com/graphviz/graphviz/-/blob/main/LICENSE?ref_type=heads"
+                        comments = "Eclipse Public License - v 1.0"
+                        distribution = "repo"                    }
+                }
+                scm {
+                    url = "https://gitlab.com/graphviz/graphviz/"
+                }
+            }
         }
     }
 }
