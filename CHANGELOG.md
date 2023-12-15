@@ -19,6 +19,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Assessement result entries with invalid references are now automatically removed.
 
+## com.mbeddr.core.base.intentions
+
+- Fix the issue where the documentation annotation interferes with other annotations.
+
 # November 2023
 
 ## com.mbeddr.doc
