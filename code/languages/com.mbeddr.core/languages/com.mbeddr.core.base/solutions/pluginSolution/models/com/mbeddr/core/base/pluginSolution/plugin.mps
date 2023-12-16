@@ -22256,9 +22256,13 @@
             </node>
             <node concept="liA8E" id="7SQqK0Fdk3Y" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
-              <node concept="10M0yZ" id="7SQqK0Fdk3Z" role="37wK5m">
-                <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+              <node concept="2OqwBi" id="2pjWqF4WE5X" role="37wK5m">
+                <node concept="37vLTw" id="2pjWqF4WC6x" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7SQqK0FdFYc" resolve="editorComp" />
+                </node>
+                <node concept="liA8E" id="2pjWqF4WG6i" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Component.getBackground()" resolve="getBackground" />
+                </node>
               </node>
             </node>
           </node>
