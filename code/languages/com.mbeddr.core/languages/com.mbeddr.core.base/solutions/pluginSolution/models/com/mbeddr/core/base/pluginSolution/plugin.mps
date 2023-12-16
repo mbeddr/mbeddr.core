@@ -122,6 +122,7 @@
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="o2jy" ref="r:5a764b6f-e05f-4050-b22c-cbcad1577f1b(jetbrains.mps.ide.refactoring)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -21796,7 +21797,44 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="2hPErkZEm_e" role="3cqZAp" />
+            <node concept="3cpWs8" id="3bTIKVD_mWq" role="3cqZAp">
+              <node concept="3cpWsn" id="3bTIKVD_mWr" role="3cpWs9">
+                <property role="TrG5h" value="project" />
+                <node concept="3uibUv" id="3bTIKVD_m_R" role="1tU5fm">
+                  <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+                </node>
+                <node concept="2YIFZM" id="3bTIKVD_mWs" role="33vP2m">
+                  <ref role="37wK5l" to="alof:~ProjectHelper.getProject(org.jetbrains.mps.openapi.module.SRepository)" resolve="getProject" />
+                  <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                  <node concept="37vLTw" id="3bTIKVD_mWt" role="37wK5m">
+                    <ref role="3cqZAo" node="2hPErkZBlEx" resolve="repository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="3bTIKVD_oTH" role="3cqZAp">
+              <node concept="3clFbS" id="3bTIKVD_oTJ" role="3clFbx">
+                <node concept="3clFbF" id="3bTIKVD_fAl" role="3cqZAp">
+                  <node concept="2YIFZM" id="3bTIKVD_h9t" role="3clFbG">
+                    <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,jetbrains.mps.project.IProject)" resolve="extendUsingProject" />
+                    <ref role="1Pybhc" to="wvnl:~EditorExtensionUtil" resolve="EditorExtensionUtil" />
+                    <node concept="37vLTw" id="3bTIKVD_iPU" role="37wK5m">
+                      <ref role="3cqZAo" node="2hPErkZAv65" resolve="editorComp" />
+                    </node>
+                    <node concept="37vLTw" id="3bTIKVD_mWu" role="37wK5m">
+                      <ref role="3cqZAo" node="3bTIKVD_mWr" resolve="project" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="3bTIKVD_roA" role="3clFbw">
+                <node concept="10Nm6u" id="3bTIKVD_sxP" role="3uHU7w" />
+                <node concept="37vLTw" id="3bTIKVD_pHU" role="3uHU7B">
+                  <ref role="3cqZAo" node="3bTIKVD_mWr" resolve="project" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="3bTIKVD_dTN" role="3cqZAp" />
             <node concept="3clFbJ" id="2hPErkZAv6D" role="3cqZAp">
               <node concept="3clFbS" id="2hPErkZAv6E" role="3clFbx">
                 <node concept="3cpWs8" id="2hPErkZAv6F" role="3cqZAp">
