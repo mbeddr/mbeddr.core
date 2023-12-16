@@ -22212,8 +22212,8 @@
                 <node concept="37vLTw" id="7SQqK0Fdk21" role="37wK5m">
                   <ref role="3cqZAo" node="7SQqK0Fdk1N" resolve="height" />
                 </node>
-                <node concept="10M0yZ" id="7SQqK0Fdk22" role="37wK5m">
-                  <ref role="3cqZAo" to="jan3:~BufferedImage.TYPE_INT_RGB" resolve="TYPE_INT_RGB" />
+                <node concept="10M0yZ" id="2pjWqF5dKmN" role="37wK5m">
+                  <ref role="3cqZAo" to="jan3:~BufferedImage.TYPE_INT_ARGB" resolve="TYPE_INT_ARGB" />
                   <ref role="1PxDUh" to="jan3:~BufferedImage" resolve="BufferedImage" />
                 </node>
               </node>
