@@ -67,6 +67,7 @@
     <import index="1i7y" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.datatransfer(MPS.Editor/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+    <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
@@ -4305,6 +4306,36 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="38Vsfq9ekSA" role="3cqZAp">
+                  <node concept="3cpWsn" id="38Vsfq9ekSB" role="3cpWs9">
+                    <property role="TrG5h" value="element" />
+                    <node concept="3Tqbb2" id="38Vsfq9ekOX" role="1tU5fm">
+                      <ref role="ehGHo" to="kwxp:2N1CSrzPN_8" resolve="IVisualizable" />
+                    </node>
+                    <node concept="2OqwBi" id="38Vsfq9ekSC" role="33vP2m">
+                      <node concept="3GMtW1" id="38Vsfq9ekSD" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="38Vsfq9ekSE" role="2OqNvi">
+                        <ref role="37wK5l" to="4gky:5MdJlxzHH5Y" resolve="getVisualizableElement" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="38Vsfq9elc7" role="3cqZAp">
+                  <node concept="3clFbS" id="38Vsfq9elc9" role="3clFbx">
+                    <node concept="3cpWs6" id="38Vsfq9elIt" role="3cqZAp">
+                      <node concept="37vLTw" id="38Vsfq9elTv" role="3cqZAk">
+                        <ref role="3cqZAo" node="2fGuOSYbw04" resolve="res" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="38Vsfq9elsD" role="3clFbw">
+                    <node concept="37vLTw" id="38Vsfq9elev" role="2Oq$k0">
+                      <ref role="3cqZAo" node="38Vsfq9ekSB" resolve="element" />
+                    </node>
+                    <node concept="3w_OXm" id="38Vsfq9elHy" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="38Vsfq9el62" role="3cqZAp" />
                 <node concept="2Gpval" id="2fGuOSYbw0a" role="3cqZAp">
                   <node concept="2GrKxI" id="2fGuOSYbw0b" role="2Gsz3X">
                     <property role="TrG5h" value="c" />
@@ -4324,11 +4355,8 @@
                     </node>
                   </node>
                   <node concept="2OqwBi" id="2fGuOSYbw0i" role="2GsD0m">
-                    <node concept="2OqwBi" id="2fGuOSYbw0j" role="2Oq$k0">
-                      <node concept="3GMtW1" id="2fGuOSYbw0k" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="5MdJlx$70_w" role="2OqNvi">
-                        <ref role="37wK5l" to="4gky:5MdJlxzHH5Y" resolve="getVisualizableElement" />
-                      </node>
+                    <node concept="37vLTw" id="38Vsfq9ekSF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="38Vsfq9ekSB" resolve="visualizableElement" />
                     </node>
                     <node concept="2qgKlT" id="2fGuOSYbw0m" role="2OqNvi">
                       <ref role="37wK5l" to="grvc:2N1CSrzPN_a" resolve="getCategories" />
