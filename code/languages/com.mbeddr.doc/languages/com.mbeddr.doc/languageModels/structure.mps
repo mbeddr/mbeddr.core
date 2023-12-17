@@ -1735,7 +1735,7 @@
     <property role="EcuMT" value="3653241738344441360" />
     <property role="3GE5qa" value="words.formatted" />
     <property role="TrG5h" value="SuperScriptWord" />
-    <property role="34LRSv" value="superscript" />
+    <property role="34LRSv" value="\superscript" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="1q0W02ZGGTg">
