@@ -3843,5 +3843,9 @@
     <ref role="aqKnT" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
     <node concept="22hDWj" id="27yO7ubzfS1" role="22hAXT" />
   </node>
+  <node concept="22mcaB" id="38Vsfq8qCRn">
+    <ref role="aqKnT" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+    <node concept="22hDWj" id="38Vsfq8qCVI" role="22hAXT" />
+  </node>
 </model>
 
