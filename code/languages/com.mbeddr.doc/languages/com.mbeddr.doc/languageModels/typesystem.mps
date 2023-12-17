@@ -956,15 +956,6 @@
       <ref role="1YaFvo" to="2c95:2fGuOSYbvYU" resolve="Visualization" />
     </node>
   </node>
-  <node concept="18kY7G" id="3DAECxFHFPk">
-    <property role="TrG5h" value="check_UrlFormattedText" />
-    <property role="3GE5qa" value="words.formatted" />
-    <node concept="3clFbS" id="3DAECxFHFPl" role="18ibNy" />
-    <node concept="1YaCAy" id="3DAECxFHFPn" role="1YuTPh">
-      <property role="TrG5h" value="uft" />
-      <ref role="1YaFvo" to="2c95:3DAECxFHdtW" resolve="UrlFormattedText" />
-    </node>
-  </node>
   <node concept="18kY7G" id="3DAECxG6xHH">
     <property role="TrG5h" value="check_Chapter" />
     <property role="3GE5qa" value="structure" />
