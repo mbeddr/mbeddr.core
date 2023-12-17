@@ -592,6 +592,7 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="Abstract2IntExpression" />
     <property role="EcuMT" value="1320626622328445270" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="19jNIE0NVOQ" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -605,6 +606,7 @@
     <property role="EcuMT" value="1320626622329014538" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="AbstractInt2Expression" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="19jNIE0Q4_3" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
