@@ -3513,14 +3513,27 @@
                             </node>
                             <node concept="liA8E" id="oUcJT$luJd" role="2OqNvi">
                               <ref role="37wK5l" to="yyf4:~ProgressMonitor.step(java.lang.String)" resolve="step" />
-                              <node concept="3cpWs3" id="3jAiNlltCax" role="37wK5m">
-                                <node concept="3uNrnE" id="3jAiNlltER$" role="3uHU7w">
-                                  <node concept="37vLTw" id="3jAiNlltERA" role="2$L3a6">
-                                    <ref role="3cqZAo" node="3jAiNlltD3e" resolve="index" />
+                              <node concept="3cpWs3" id="3OTy9gWa97V" role="37wK5m">
+                                <node concept="3cpWs3" id="3OTy9gWa89m" role="3uHU7B">
+                                  <node concept="3cpWs3" id="3jAiNlltCax" role="3uHU7B">
+                                    <node concept="Xl_RD" id="3jAiNlltB_L" role="3uHU7B">
+                                      <property role="Xl_RC" value="Creating screenshot step " />
+                                    </node>
+                                    <node concept="3uNrnE" id="3jAiNlltER$" role="3uHU7w">
+                                      <node concept="37vLTw" id="3jAiNlltERA" role="2$L3a6">
+                                        <ref role="3cqZAo" node="3jAiNlltD3e" resolve="index" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="3OTy9gWa89_" role="3uHU7w">
+                                    <property role="Xl_RC" value=" of " />
                                   </node>
                                 </node>
-                                <node concept="Xl_RD" id="3jAiNlltB_L" role="3uHU7B">
-                                  <property role="Xl_RC" value="Creating screenshot step " />
+                                <node concept="2OqwBi" id="3OTy9gWa5$_" role="3uHU7w">
+                                  <node concept="37vLTw" id="3OTy9gWa4oc" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="C1ce8Wei$9" resolve="runnables" />
+                                  </node>
+                                  <node concept="34oBXx" id="3OTy9gWa6CH" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
