@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # December 2023
 
+## com.mbeddr.doc
+
+### Fixed
+
+- The escaping of the new line character works again.
+
 ## com.mbeddr.mpsutils
 
 ### Changed
@@ -18,6 +24,11 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 - Assessement result entries with invalid references are now automatically removed.
+- The cell editor screenshooter doesn't trim the offset of the editor component anymore.
+
+### Fixed
+
+- The cell editor screenshooter now supports editor extensions and the rendering quality was slightly improved.
 
 ## com.mbeddr.core.base.intentions
 
