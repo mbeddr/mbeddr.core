@@ -1043,7 +1043,7 @@
   </node>
   <node concept="1TIwiD" id="2HzhasNytLD">
     <property role="3GE5qa" value="structure" />
-    <property role="TrG5h" value="Invisble" />
+    <property role="TrG5h" value="Invisible" />
     <property role="R4oN_" value="a concept useful in generators" />
     <property role="34LRSv" value="invisible paragraph" />
     <property role="EcuMT" value="3126418051240156265" />
