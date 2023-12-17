@@ -3176,6 +3176,17 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="38Vsfq99tBw" role="3cqZAp">
+            <node concept="2OqwBi" id="38Vsfq99uVG" role="3clFbG">
+              <node concept="37vLTw" id="38Vsfq99tBu" role="2Oq$k0">
+                <ref role="3cqZAo" node="7$DvC4gUBkg" resolve="root" />
+              </node>
+              <node concept="liA8E" id="38Vsfq99wzb" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
+                <node concept="3clFbT" id="38Vsfq99xc9" role="37wK5m" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="7$DvC4gUBkm" role="3cqZAp">
             <node concept="2OqwBi" id="7$DvC4gUBkG" role="3clFbG">
               <node concept="37vLTw" id="5Hxjapw9v6_" role="2Oq$k0">
@@ -3202,6 +3213,17 @@
                 <node concept="1pGfFk" id="7$DvC4gUBo_" role="2ShVmc">
                   <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="38Vsfq9aYp$" role="3cqZAp">
+            <node concept="2OqwBi" id="38Vsfq9aZHV" role="3clFbG">
+              <node concept="37vLTw" id="38Vsfq9aYpy" role="2Oq$k0">
+                <ref role="3cqZAo" node="7$DvC4gUBox" resolve="buttonPanel" />
+              </node>
+              <node concept="liA8E" id="38Vsfq9b1G$" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
+                <node concept="3clFbT" id="38Vsfq9b1H4" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -3414,6 +3436,17 @@
                     <property role="Xl_RC" value="Paste" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="38Vsfq9cvdH" role="3cqZAp">
+            <node concept="2OqwBi" id="38Vsfq9cw$G" role="3clFbG">
+              <node concept="37vLTw" id="38Vsfq9cvdF" role="2Oq$k0">
+                <ref role="3cqZAo" node="7$DvC4gUBrl" resolve="button" />
+              </node>
+              <node concept="liA8E" id="38Vsfq9cxYw" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
+                <node concept="3clFbT" id="38Vsfq9cxZ0" role="37wK5m" />
               </node>
             </node>
           </node>
