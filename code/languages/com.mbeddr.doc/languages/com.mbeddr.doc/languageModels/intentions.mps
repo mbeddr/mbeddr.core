@@ -171,6 +171,7 @@
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -204,7 +205,9 @@
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1145570846907" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingsOperation" flags="nn" index="2TlYAL" />
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
@@ -2804,6 +2807,41 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="38Vsfq8h4Al">
+    <property role="3GE5qa" value="modelContent" />
+    <property role="TrG5h" value="AddEmptyContent" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="2c95:2TZO3Dbv6JT" resolve="IDocContentContainer" />
+    <node concept="2S6ZIM" id="38Vsfq8h4Am" role="2ZfVej">
+      <node concept="3clFbS" id="38Vsfq8h4An" role="2VODD2">
+        <node concept="3clFbF" id="38Vsfq8hcyA" role="3cqZAp">
+          <node concept="Xl_RD" id="38Vsfq8hcy_" role="3clFbG">
+            <property role="Xl_RC" value="Add New Content After This" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="38Vsfq8h4Ao" role="2ZfgGD">
+      <node concept="3clFbS" id="38Vsfq8h4Ap" role="2VODD2">
+        <node concept="3clFbF" id="38Vsfq8h6bX" role="3cqZAp">
+          <node concept="2OqwBi" id="38Vsfq8h9$2" role="3clFbG">
+            <node concept="2OqwBi" id="38Vsfq8h6sB" role="2Oq$k0">
+              <node concept="2Sf5sV" id="38Vsfq8h6bW" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="38Vsfq8h6JF" role="2OqNvi">
+                <ref role="3TtcxE" to="2c95:2TZO3Dbv6JU" resolve="contents" />
+              </node>
+            </node>
+            <node concept="2DeJg1" id="38Vsfq8hbEX" role="2OqNvi">
+              <ref role="1A0vxQ" to="2c95:2TZO3Dbuxxg" resolve="EmptyDocContent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="38Vsfq8jAs2" role="lGtFl">
+      <property role="1SWRpm" value="DOC" />
     </node>
   </node>
 </model>
