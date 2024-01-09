@@ -127,7 +127,7 @@
       </concept>
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -894,7 +894,7 @@
     <property role="3GE5qa" value="items" />
     <node concept="3clFbS" id="4QnOXkB1M4R" role="18ibNy">
       <node concept="3SKdUt" id="7EZ1Spo05vQ" role="3cqZAp">
-        <node concept="1PaTwC" id="3thiB5GVRlk" role="3ndbpf">
+        <node concept="1PaTwC" id="3thiB5GVRlk" role="1aUNEU">
           <node concept="3oM_SD" id="3thiB5GVRlm" role="1PaTwD">
             <property role="3oM_SC" value="Automatic" />
           </node>
@@ -995,7 +995,7 @@
                 <node concept="3eNFk2" id="7EZ1Spof9pu" role="3eNLev">
                   <node concept="3clFbS" id="7EZ1Spof9pv" role="3eOfB_">
                     <node concept="3SKdUt" id="7EZ1Spof9pw" role="3cqZAp">
-                      <node concept="1PaTwC" id="3thiB5GVRhx" role="3ndbpf">
+                      <node concept="1PaTwC" id="3thiB5GVRhx" role="1aUNEU">
                         <node concept="3oM_SD" id="3thiB5GVRhz" role="1PaTwD">
                           <property role="3oM_SC" value="Detect" />
                         </node>
@@ -1240,7 +1240,7 @@
                     </node>
                     <node concept="3clFbH" id="7EZ1Spof9qA" role="3cqZAp" />
                     <node concept="3SKdUt" id="7EZ1Spof9qB" role="3cqZAp">
-                      <node concept="1PaTwC" id="3thiB5GVRhi" role="3ndbpf">
+                      <node concept="1PaTwC" id="3thiB5GVRhi" role="1aUNEU">
                         <node concept="3oM_SD" id="3thiB5GVRhk" role="1PaTwD">
                           <property role="3oM_SC" value="Detect" />
                         </node>
@@ -1325,7 +1325,7 @@
                     </node>
                     <node concept="3clFbH" id="7EZ1Spof9r2" role="3cqZAp" />
                     <node concept="3SKdUt" id="7EZ1Spof9r3" role="3cqZAp">
-                      <node concept="1PaTwC" id="3thiB5GVRh3" role="3ndbpf">
+                      <node concept="1PaTwC" id="3thiB5GVRh3" role="1aUNEU">
                         <node concept="3oM_SD" id="3thiB5GVRh5" role="1PaTwD">
                           <property role="3oM_SC" value="Detect" />
                         </node>
@@ -1444,9 +1444,7 @@
                           <ref role="3TsBF5" to="i2y7:2Vizpn2Mx$$" resolve="text" />
                         </node>
                       </node>
-                      <node concept="17S1cR" id="7EZ1SpoffaX" role="2OqNvi">
-                        <property role="17S1cK" value="both" />
-                      </node>
+                      <node concept="17S1cR" id="7EZ1SpoffaX" role="2OqNvi" />
                     </node>
                     <node concept="17RvpY" id="7EZ1Spoflov" role="2OqNvi" />
                   </node>
@@ -1482,7 +1480,7 @@
       </node>
       <node concept="3clFbH" id="2NUzdxFjqeF" role="3cqZAp" />
       <node concept="3SKdUt" id="7EZ1Spo08$t" role="3cqZAp">
-        <node concept="1PaTwC" id="3thiB5GVRgO" role="3ndbpf">
+        <node concept="1PaTwC" id="3thiB5GVRgO" role="1aUNEU">
           <node concept="3oM_SD" id="3thiB5GVRgQ" role="1PaTwD">
             <property role="3oM_SC" value="Manual" />
           </node>
@@ -1500,7 +1498,7 @@
       <node concept="3clFbJ" id="7EZ1SpoFSdI" role="3cqZAp">
         <node concept="3clFbS" id="7EZ1SpoFSdK" role="3clFbx">
           <node concept="3SKdUt" id="7EZ1SpnJPfc" role="3cqZAp">
-            <node concept="1PaTwC" id="3thiB5GVRgy" role="3ndbpf">
+            <node concept="1PaTwC" id="3thiB5GVRgy" role="1aUNEU">
               <node concept="3oM_SD" id="3thiB5GVRg$" role="1PaTwD">
                 <property role="3oM_SC" value="Detect" />
               </node>
@@ -1710,7 +1708,7 @@
           </node>
           <node concept="3clFbH" id="7EZ1SpoGro1" role="3cqZAp" />
           <node concept="3SKdUt" id="7EZ1SpnJXAG" role="3cqZAp">
-            <node concept="1PaTwC" id="3thiB5GVRgj" role="3ndbpf">
+            <node concept="1PaTwC" id="3thiB5GVRgj" role="1aUNEU">
               <node concept="3oM_SD" id="3thiB5GVRgl" role="1PaTwD">
                 <property role="3oM_SC" value="Detect" />
               </node>
@@ -1726,7 +1724,7 @@
             </node>
           </node>
           <node concept="3SKdUt" id="7EZ1SpoarOo" role="3cqZAp">
-            <node concept="1PaTwC" id="3thiB5GVRfe" role="3ndbpf">
+            <node concept="1PaTwC" id="3thiB5GVRfe" role="1aUNEU">
               <node concept="3oM_SD" id="3thiB5GVRfg" role="1PaTwD">
                 <property role="3oM_SC" value="!!" />
               </node>
@@ -1915,7 +1913,7 @@
           </node>
           <node concept="3clFbH" id="7EZ1SpoarIk" role="3cqZAp" />
           <node concept="3SKdUt" id="7EZ1SpnYRE6" role="3cqZAp">
-            <node concept="1PaTwC" id="3thiB5GVReW" role="3ndbpf">
+            <node concept="1PaTwC" id="3thiB5GVReW" role="1aUNEU">
               <node concept="3oM_SD" id="3thiB5GVReY" role="1PaTwD">
                 <property role="3oM_SC" value="Detect" />
               </node>
@@ -2847,9 +2845,7 @@
                               <ref role="3TsBF5" to="i2y7:2Vizpn2Mx$$" resolve="text" />
                             </node>
                           </node>
-                          <node concept="17S1cR" id="ErGx9V99ay" role="2OqNvi">
-                            <property role="17S1cK" value="both" />
-                          </node>
+                          <node concept="17S1cR" id="ErGx9V99ay" role="2OqNvi" />
                         </node>
                         <node concept="17RlXB" id="ErGx9V9d3H" role="2OqNvi" />
                       </node>

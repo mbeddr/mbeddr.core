@@ -1189,7 +1189,7 @@
                 <node concept="1Y3b0j" id="7LkwBl9Kj0N" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="1Y3XeK" to="hdil:4g2H4r3V4OE" resolve="EditorCell_Checkbox" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                  <ref role="37wK5l" to="hdil:4g2H4r3V7I2" resolve="EditorCell_Checkbox" />
                   <node concept="3Tm1VV" id="7LkwBl9Kj0O" role="1B3o_S" />
                   <node concept="37vLTw" id="7LkwBl9JNVc" role="37wK5m">
                     <ref role="3cqZAo" node="7LkwBl9ImJ8" resolve="myEditorContext" />
