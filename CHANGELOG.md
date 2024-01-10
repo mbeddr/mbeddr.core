@@ -16,6 +16,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # December 2023
 
+## General
+
+- The project was relicensed from EPL 1.0 to EPL 2.0 and PlantUML was updated to PlantUML to v1.2023.13 EPL version.
+
 ## com.mbeddr.doc
 
 ### Fixed
