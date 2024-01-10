@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# January 2024
+
+## com.mbeddr.mpsutils
+
+### Removed
+
+- The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
+ JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+
 # December 2023
 
 ## com.mbeddr.doc
