@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# January 2024
+
+## com.mbeddr.mpsutils
+
+- A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+
 # December 2023
 
 ## com.mbeddr.mpsutils
