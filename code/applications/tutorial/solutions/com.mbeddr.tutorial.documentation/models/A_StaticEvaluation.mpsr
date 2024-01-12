@@ -173,7 +173,7 @@
         <node concept="2bctqb" id="69uDFDb5ljB" role="3z_lpT" />
         <node concept="2NCZwO" id="69uDFDb5ljD" role="3z_lpI">
           <node concept="2NCMab" id="69uDFDb5lli" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:69uDFDaUqQ8" resolve="StaticEval" />
+            <ref role="2NCMaa" to="zxcx:69uDFDaUqQ8" />
           </node>
         </node>
       </node>

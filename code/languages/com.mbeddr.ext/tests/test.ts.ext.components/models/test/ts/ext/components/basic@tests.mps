@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2" name="com.mbeddr.mpsutil.suppresswarning" version="0" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
     <use id="e3420481-604b-464e-bc1b-06ecfc1f9dfc" name="com.mbeddr.ext.components.units" version="0" />
@@ -53,6 +53,7 @@
         <child id="8333855927548182241" name="errorRef" index="39rjcI" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -500,6 +501,7 @@
   </registry>
   <node concept="1lH9Xt" id="3PT6Z48LO1C">
     <property role="TrG5h" value="Abstract" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3PT6Z48LO1D" role="1SKRRt">
       <node concept="N3F5e" id="3PT6Z48LJUm" role="1qenE9">
         <property role="TrG5h" value="AbstractTest" />
@@ -736,6 +738,7 @@
   </node>
   <node concept="1lH9Xt" id="6A4xWqfT6_8">
     <property role="TrG5h" value="Basic" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6A4xWqfT6_9" role="1SKRRt">
       <node concept="N3F5e" id="6A4xWqfT6_a" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -931,6 +934,7 @@
   </node>
   <node concept="1lH9Xt" id="1lsyexBO0Ol">
     <property role="TrG5h" value="Characteristics" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1lsyexBO0Om" role="1SKRRt">
       <node concept="N3F5e" id="1lsyexBO0On" role="1qenE9">
         <property role="TrG5h" value="Characteristics" />
@@ -1047,6 +1051,7 @@
   </node>
   <node concept="1lH9Xt" id="3PT6Z48IM$W">
     <property role="TrG5h" value="Inline" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3PT6Z48IM$X" role="1SKRRt">
       <node concept="N3F5e" id="3PT6Z48IM$Y" role="1qenE9">
         <property role="TrG5h" value="inline" />
@@ -1163,6 +1168,7 @@
   </node>
   <node concept="1lH9Xt" id="2ZUGF54k32_">
     <property role="TrG5h" value="MultiPorts" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2ZUGF54k32A" role="1SKRRt">
       <node concept="N3F5e" id="2ZUGF54k32B" role="1qenE9">
         <property role="TrG5h" value="MultiPorts" />
@@ -1539,6 +1545,7 @@
   </node>
   <node concept="1lH9Xt" id="1lsyexBOy9k">
     <property role="TrG5h" value="OptionalPort" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1lsyexBOy9l" role="1SKRRt">
       <node concept="N3F5e" id="1lsyexBOy9m" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -1614,6 +1621,7 @@
   </node>
   <node concept="1lH9Xt" id="RsLjUnOUPB">
     <property role="TrG5h" value="TestSenderReceiverConstraints" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="RsLjUnOUPC" role="1SKRRt">
       <node concept="N3F5e" id="RsLjUnOUPD" role="1qenE9">
         <property role="TrG5h" value="ExampleCode" />
@@ -1838,6 +1846,7 @@
   </node>
   <node concept="1lH9Xt" id="j_pDIZw2hN">
     <property role="TrG5h" value="WithStatementWithSenderReceiver" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="j_pDIZw2hO" role="1SKRRt">
       <node concept="N3F5e" id="j_pDIZw2hP" role="1qenE9">
         <property role="TrG5h" value="ExampleCode" />
@@ -2073,6 +2082,7 @@
   </node>
   <node concept="1lH9Xt" id="2mhTzLJufyS">
     <property role="TrG5h" value="Bug897" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2mhTzLJug6j" role="1SKRRt">
       <node concept="N3F5e" id="2mhTzLJug6m" role="1qenE9">
         <property role="TrG5h" value="Bug897" />
@@ -2317,6 +2327,7 @@
   </node>
   <node concept="1lH9Xt" id="36a7yl95bU6">
     <property role="TrG5h" value="Bug913" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="36a7yl95vly" role="1SKRRt">
       <node concept="N3F5e" id="36a7yl95vma" role="1qenE9">
         <property role="TrG5h" value="Bug913" />
@@ -2348,6 +2359,7 @@
   </node>
   <node concept="1lH9Xt" id="3BaBoWCi1qh">
     <property role="TrG5h" value="Bug989" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3BaBoWCi1qi" role="1SKRRt">
       <node concept="N3F5e" id="3BaBoWCi1ql" role="1qenE9">
         <property role="TrG5h" value="Bug989" />
@@ -2456,6 +2468,7 @@
   </node>
   <node concept="1lH9Xt" id="Z4PF253DKw">
     <property role="TrG5h" value="Bug988" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="Z4PF253DKx" role="1SKRRt">
       <node concept="N3F5e" id="Z4PF253DK$" role="1qenE9">
         <property role="TrG5h" value="Bug988" />
@@ -2612,6 +2625,7 @@
   </node>
   <node concept="1lH9Xt" id="Z4PF25tMm5">
     <property role="TrG5h" value="Bug987" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="Z4PF25tMm6" role="1SKRRt">
       <node concept="N3F5e" id="Z4PF25tMm9" role="1qenE9">
         <property role="TrG5h" value="Bug987" />
@@ -2720,6 +2734,7 @@
   </node>
   <node concept="1lH9Xt" id="7moPk05eAAu">
     <property role="TrG5h" value="Bug983" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7moPk05eAAv" role="1SKRRt">
       <node concept="N3F5e" id="7moPk05eAAy" role="1qenE9">
         <property role="TrG5h" value="Bug983" />
@@ -2815,6 +2830,7 @@
   </node>
   <node concept="1lH9Xt" id="5TsAcJo1hvN">
     <property role="TrG5h" value="Bug1006" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5TsAcJo1hvO" role="1SKRRt">
       <node concept="N3F5e" id="5TsAcJo1hvR" role="1qenE9">
         <property role="TrG5h" value="Bug1006" />
@@ -2975,6 +2991,7 @@
   </node>
   <node concept="1lH9Xt" id="x1qBlirgQ">
     <property role="TrG5h" value="InterfaceTypes" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="x1qBlirwh" role="1SKRRt">
       <node concept="N3F5e" id="x1qBlirwk" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -3068,6 +3085,7 @@
   </node>
   <node concept="1lH9Xt" id="1_dsrLeE7eP">
     <property role="TrG5h" value="PrePostConditions" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1_dsrLeE8nn" role="1SKRRt">
       <node concept="N3F5e" id="1_dsrLeE8nr" role="1qenE9">
         <property role="TrG5h" value="prepost" />
@@ -3181,6 +3199,7 @@
   </node>
   <node concept="1lH9Xt" id="7okx9D2N2vw">
     <property role="TrG5h" value="ComponentsWithUnits" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="7okx9D2N2vx" role="1SKRRt">
       <node concept="N3F5e" id="7okx9D2N2vy" role="1qenE9">
         <property role="TrG5h" value="TestModule" />
@@ -4300,6 +4319,7 @@
   </node>
   <node concept="1lH9Xt" id="1Q5RJWOJAfJ">
     <property role="TrG5h" value="Flexible_array_Field" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1Q5RJWOJAfK" role="1SKRRt">
       <node concept="N3F5e" id="1Q5RJWOJAfL" role="1qenE9">
         <property role="TrG5h" value="Dummy" />
@@ -4379,6 +4399,7 @@
   </node>
   <node concept="1lH9Xt" id="1NhHcUCz3rS">
     <property role="TrG5h" value="TestImportReexport" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1NhHcUCz3_t" role="1SKRRt">
       <node concept="N3F5e" id="3AX8Th8_W7_" role="1qenE9">
         <property role="TrG5h" value="user_config" />
@@ -4606,6 +4627,7 @@
   </node>
   <node concept="1lH9Xt" id="18IM2C3DwM8">
     <property role="TrG5h" value="BugAccent1778" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="18IM2C3DwM9" role="1SKRRt">
       <node concept="N3F5e" id="18IM2C3DwMc" role="1qenE9">
         <property role="TrG5h" value="Bug1778" />
