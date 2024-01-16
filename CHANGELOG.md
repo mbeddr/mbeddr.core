@@ -9,6 +9,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutils
 
+### Changed
+
+- A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+
 ### Removed
 
 - The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
