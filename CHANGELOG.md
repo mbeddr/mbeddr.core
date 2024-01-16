@@ -9,9 +9,20 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutils
 
+### Changed
+
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
 
+### Removed
+
+- The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
+ JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+
 # December 2023
+
+## General
+
+- The project was relicensed from EPL 1.0 to EPL 2.0 and PlantUML was updated to PlantUML to v1.2023.13 EPL version.
 
 ## com.mbeddr.doc
 
