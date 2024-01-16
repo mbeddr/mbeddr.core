@@ -419,6 +419,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -3701,29 +3702,42 @@
                     <node concept="3clFbS" id="5TZIT9NSD9X" role="3clFbx">
                       <node concept="3cpWs6" id="5TZIT9NT36U" role="3cqZAp" />
                     </node>
-                    <node concept="22lmx$" id="5TZIT9NTw4E" role="3clFbw">
-                      <node concept="3clFbC" id="5TZIT9NTorX" role="3uHU7B">
-                        <node concept="2OqwBi" id="5TZIT9NSKBT" role="3uHU7B">
-                          <node concept="37vLTw" id="5TZIT9NSHC$" role="2Oq$k0">
+                    <node concept="22lmx$" id="4IXeON4G8Bf" role="3clFbw">
+                      <node concept="2OqwBi" id="4IXeON4G8Bn" role="3uHU7w">
+                        <node concept="2OqwBi" id="4IXeON4G8Bl" role="2Oq$k0">
+                          <node concept="37vLTw" id="4IXeON4G8Bj" role="2Oq$k0">
                             <ref role="3cqZAo" node="5Ljw4ONo0l$" resolve="myNextContext" />
                           </node>
-                          <node concept="liA8E" id="5TZIT9NSPQC" role="2OqNvi">
-                            <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
+                          <node concept="liA8E" id="4IXeON4ELsK" role="2OqNvi">
+                            <ref role="37wK5l" node="5tr7YH$Ux7R" resolve="getSNode" />
                           </node>
                         </node>
-                        <node concept="10Nm6u" id="5TZIT9NTqMv" role="3uHU7w" />
+                        <node concept="3w_OXm" id="4IXeON4Fbu3" role="2OqNvi" />
                       </node>
-                      <node concept="2OqwBi" id="5TZIT9NTDCO" role="3uHU7w">
-                        <node concept="2OqwBi" id="5TZIT9NT_rA" role="2Oq$k0">
-                          <node concept="37vLTw" id="5TZIT9NT_rB" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5Ljw4ONo0l$" resolve="myNextContext" />
+                      <node concept="22lmx$" id="5TZIT9NTw4E" role="3uHU7B">
+                        <node concept="3clFbC" id="5TZIT9NTorX" role="3uHU7B">
+                          <node concept="2OqwBi" id="5TZIT9NSKBT" role="3uHU7B">
+                            <node concept="37vLTw" id="5TZIT9NSHC$" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5Ljw4ONo0l$" resolve="myNextContext" />
+                            </node>
+                            <node concept="liA8E" id="5TZIT9NSPQC" role="2OqNvi">
+                              <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="5TZIT9NT_rC" role="2OqNvi">
-                            <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
-                          </node>
+                          <node concept="10Nm6u" id="5TZIT9NTqMv" role="3uHU7w" />
                         </node>
-                        <node concept="liA8E" id="5TZIT9NTJgG" role="2OqNvi">
-                          <ref role="37wK5l" to="cj4x:~EditorComponent.isDisposed()" resolve="isDisposed" />
+                        <node concept="2OqwBi" id="5TZIT9NTDCO" role="3uHU7w">
+                          <node concept="2OqwBi" id="5TZIT9NT_rA" role="2Oq$k0">
+                            <node concept="37vLTw" id="5TZIT9NT_rB" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5Ljw4ONo0l$" resolve="myNextContext" />
+                            </node>
+                            <node concept="liA8E" id="5TZIT9NT_rC" role="2OqNvi">
+                              <ref role="37wK5l" node="5tr7YH$UFTD" resolve="getEditorComponent" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="5TZIT9NTJgG" role="2OqNvi">
+                            <ref role="37wK5l" to="cj4x:~EditorComponent.isDisposed()" resolve="isDisposed" />
+                          </node>
                         </node>
                       </node>
                     </node>
