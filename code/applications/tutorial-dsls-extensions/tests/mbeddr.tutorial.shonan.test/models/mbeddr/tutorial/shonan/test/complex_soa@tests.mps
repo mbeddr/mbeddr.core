@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c95cd812-f4dd-4ba2-8ea6-5e5ce2b5e751(mbeddr.tutorial.shonan.test.complex_soa@tests)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
