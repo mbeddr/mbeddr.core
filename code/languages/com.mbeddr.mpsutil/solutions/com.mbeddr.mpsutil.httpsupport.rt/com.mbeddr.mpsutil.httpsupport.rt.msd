@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.httpsupport.rt" uuid="7f0984ac-9f5d-4001-9257-17f7d10f3fd5" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/javax.servlet-api-3.1.0.jar" />
       <sourceRoot location="lib/jetty-all-9.4.8.v20171121-uber.jar" />
-      <sourceRoot location="lib/slf4j-api-1.7.10.jar" />
-      <sourceRoot location="lib/slf4j-log4j12-1.7.10.jar" />
     </modelRoot>
   </models>
   <facets>
