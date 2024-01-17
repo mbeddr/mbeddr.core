@@ -365,6 +365,7 @@
       <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1235746970280" name="jetbrains.mps.baseLanguage.closures.structure.CompactInvokeFunctionExpression" flags="nn" index="2Sg_IR">
         <child id="1235746996653" name="function" index="2SgG2M" />
         <child id="1235747002942" name="parameter" index="2SgHGx" />
@@ -375,8 +376,8 @@
       </concept>
     </language>
     <language id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell">
-      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="ng" index="1Q80Hy" />
-      <concept id="1176749715029" name="de.slisson.mps.richtext.customcell.structure.QueryFunction_Cell" flags="ng" index="3VJUX4" />
+      <concept id="1161622981231" name="de.slisson.mps.richtext.customcell.structure.ConceptFunctionParameter_cell" flags="nn" index="1Q80Hy" />
+      <concept id="1176749715029" name="de.slisson.mps.richtext.customcell.structure.QueryFunction_Cell" flags="in" index="3VJUX4" />
       <concept id="2490242408670732052" name="de.slisson.mps.richtext.customcell.structure.CellModel_CustomFactory" flags="ng" index="3ZSo5i">
         <child id="1073389446424" name="childCellModel" index="3EZMny" />
         <child id="2490242408670937967" name="factoryMethod" index="3ZZHOD" />
@@ -483,7 +484,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -1845,7 +1845,7 @@
                         <node concept="3clFbF" id="6UyJMA9G3Fp" role="3cqZAp">
                           <node concept="2Sg_IR" id="6UyJMA9G3Fq" role="3clFbG">
                             <node concept="37vLTw" id="2BHiRxghfTj" role="2SgG2M">
-                              <ref role="3cqZAo" node="6UyJMA9G3Fw" resolve="it" />
+                              <ref role="3cqZAo" node="2SR9xrsN2tV" resolve="it" />
                             </node>
                             <node concept="1Q80Hx" id="6UyJMA9G3Fs" role="2SgHGx" />
                             <node concept="pncrf" id="6UyJMA9G3Ft" role="2SgHGx" />
@@ -1854,9 +1854,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="6UyJMA9G3Fw" role="1bW2Oz">
+                      <node concept="gl6BB" id="2SR9xrsN2tV" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="6UyJMA9G3Fx" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2SR9xrsN2tW" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -2372,7 +2372,7 @@
                           <node concept="3clFbF" id="6UyJMA9G3DT" role="3cqZAp">
                             <node concept="2Sg_IR" id="6UyJMA9G3DU" role="3clFbG">
                               <node concept="37vLTw" id="2BHiRxgm86d" role="2SgG2M">
-                                <ref role="3cqZAo" node="6UyJMA9G3E0" resolve="it" />
+                                <ref role="3cqZAo" node="2SR9xrsN2tX" resolve="it" />
                               </node>
                               <node concept="1Q80Hx" id="6UyJMA9G3DW" role="2SgHGx" />
                               <node concept="pncrf" id="6UyJMA9G3DX" role="2SgHGx" />
@@ -2381,9 +2381,9 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="Rh6nW" id="6UyJMA9G3E0" role="1bW2Oz">
+                        <node concept="gl6BB" id="2SR9xrsN2tX" role="1bW2Oz">
                           <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="6UyJMA9G3E1" role="1tU5fm" />
+                          <node concept="2jxLKc" id="2SR9xrsN2tY" role="1tU5fm" />
                         </node>
                       </node>
                     </node>
