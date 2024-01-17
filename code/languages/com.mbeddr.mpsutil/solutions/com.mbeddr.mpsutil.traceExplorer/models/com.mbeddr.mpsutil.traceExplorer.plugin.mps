@@ -1836,7 +1836,7 @@
       <property role="TrG5h" value="filterAction" />
       <node concept="3Tm6S6" id="4SH1Ldi2ToE" role="1B3o_S" />
       <node concept="3uibUv" id="4SH1Ldi3pct" role="1tU5fm">
-        <ref role="3uigEE" node="5syY_AMvqCw" resolve="FilterAction" />
+        <ref role="3uigEE" node="5syY_AMvqCw" resolve="TraceTab.FilterAction" />
       </node>
     </node>
     <node concept="2tJIrI" id="7rNasV4Y_V4" role="jymVt" />
@@ -1932,7 +1932,7 @@
                     <node concept="2ShNRf" id="47H5HUYaaX9" role="2Oq$k0">
                       <node concept="1pGfFk" id="47H5HUYazU6" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" node="47H5HUWqveZ" resolve="FilterToggleAction" />
+                        <ref role="37wK5l" node="47H5HUWqveZ" resolve="FilterMenuOption" />
                         <node concept="37vLTw" id="17348R1tISB" role="37wK5m">
                           <ref role="3cqZAo" node="17348R1tIS$" resolve="f1" />
                         </node>
@@ -1977,7 +1977,7 @@
                     <node concept="2ShNRf" id="47H5HUYbc4A" role="2Oq$k0">
                       <node concept="1pGfFk" id="47H5HUYbc4B" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" node="47H5HUWqveZ" resolve="FilterToggleAction" />
+                        <ref role="37wK5l" node="47H5HUWqveZ" resolve="FilterMenuOption" />
                         <node concept="37vLTw" id="5t$QzkVwut2" role="37wK5m">
                           <ref role="3cqZAo" node="17348R1uosV" resolve="f2" />
                         </node>
@@ -3328,7 +3328,7 @@
                 <ref role="37wK5l" node="4SH1LdjlRDN" resolve="toolButtonVisible" />
                 <node concept="Rm8GO" id="4SH1Ldjr2cv" role="37wK5m">
                   <ref role="Rm8GQ" node="4SH1Ldjintc" resolve="Rerun" />
-                  <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                  <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                 </node>
               </node>
             </node>
@@ -3355,7 +3355,7 @@
                 <node concept="2ShNRf" id="4SH1Ldi5bsG" role="37vLTx">
                   <node concept="1pGfFk" id="4SH1Ldi5B2b" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" node="5syY_AMvqCx" resolve="FilterAction" />
+                    <ref role="37wK5l" node="5syY_AMvqCx" resolve="TraceTab.FilterAction" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="4SH1Ldi4P5P" role="37vLTJ">
@@ -3397,7 +3397,7 @@
                 <ref role="37wK5l" node="4SH1LdjlRDN" resolve="toolButtonVisible" />
                 <node concept="Rm8GO" id="4SH1LdjqmmP" role="37wK5m">
                   <ref role="Rm8GQ" node="4SH1LdjjGYn" resolve="Filter" />
-                  <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                  <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                 </node>
               </node>
             </node>
@@ -3512,8 +3512,8 @@
             <node concept="liA8E" id="4SH1LdjvnzL" role="2OqNvi">
               <ref role="37wK5l" node="4SH1LdjlRDN" resolve="toolButtonVisible" />
               <node concept="Rm8GO" id="4SH1LdjvQJn" role="37wK5m">
-                <ref role="Rm8GQ" node="4SH1Ldjinkn" resolve="Navigate" />
-                <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                <ref role="Rm8GQ" node="4SH1Ldjinkn" resolve="NextTrace" />
+                <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
               </node>
             </node>
           </node>
@@ -3568,8 +3568,8 @@
               <node concept="liA8E" id="4SH1Ldjru3d" role="2OqNvi">
                 <ref role="37wK5l" node="4SH1LdjlRDN" resolve="toolButtonVisible" />
                 <node concept="Rm8GO" id="4SH1Ldjr$1P" role="37wK5m">
-                  <ref role="Rm8GQ" node="4SH1LdjjGGd" resolve="HighlightAndClear" />
-                  <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                  <ref role="Rm8GQ" node="4SH1LdjjGGd" resolve="Highlight" />
+                  <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                 </node>
               </node>
             </node>
@@ -3599,7 +3599,7 @@
                 <node concept="TSZUe" id="3EF07Bw$ro4" role="2OqNvi">
                   <node concept="2ShNRf" id="3EF07Bw$ro5" role="25WWJ7">
                     <node concept="1pGfFk" id="3EF07Bw$ro6" role="2ShVmc">
-                      <ref role="37wK5l" node="3wJ9Qm10p6p" resolve="GoToSourceAction" />
+                      <ref role="37wK5l" node="3wJ9Qm10p6p" resolve="TraceTab.GoToSourceAction" />
                     </node>
                   </node>
                 </node>
@@ -3614,7 +3614,7 @@
               <ref role="37wK5l" node="4SH1LdjlRDN" resolve="toolButtonVisible" />
               <node concept="Rm8GO" id="4SH1LdjuBXJ" role="37wK5m">
                 <ref role="Rm8GQ" node="4SH1LdjtUWa" resolve="GotoSource" />
-                <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
               </node>
             </node>
           </node>
@@ -8561,23 +8561,23 @@
       <node concept="3Tm1VV" id="4SH1LdjhYoi" role="1B3o_S" />
       <node concept="QsSxf" id="4SH1Ldjinkn" role="Qtgdg">
         <property role="TrG5h" value="NextTrace" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="4SH1Ldjintc" role="Qtgdg">
         <property role="TrG5h" value="Rerun" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="4SH1LdjjGGd" role="Qtgdg">
         <property role="TrG5h" value="Highlight" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="4SH1LdjjGYn" role="Qtgdg">
         <property role="TrG5h" value="Filter" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="4SH1LdjtUWa" role="Qtgdg">
         <property role="TrG5h" value="GotoSource" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
     </node>
     <node concept="2tJIrI" id="4SH1LdjhZV_" role="jymVt" />
@@ -8587,17 +8587,17 @@
       <node concept="3Tm6S6" id="4SH1LdjowBj" role="1B3o_S" />
       <node concept="2hMVRd" id="4SH1LdjilBx" role="1tU5fm">
         <node concept="3uibUv" id="4SH1LdjilBy" role="2hN53Y">
-          <ref role="3uigEE" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+          <ref role="3uigEE" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
         </node>
       </node>
       <node concept="2ShNRf" id="4SH1LdjimmL" role="33vP2m">
         <node concept="2i4dXS" id="4SH1Ldjimi4" role="2ShVmc">
           <node concept="3uibUv" id="4SH1Ldjimi5" role="HW$YZ">
-            <ref role="3uigEE" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+            <ref role="3uigEE" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
           </node>
           <node concept="Rm8GO" id="4SH1LdjluzK" role="HW$Y0">
-            <ref role="Rm8GQ" node="4SH1Ldjinkn" resolve="Navigate" />
-            <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+            <ref role="Rm8GQ" node="4SH1Ldjinkn" resolve="NextTrace" />
+            <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
           </node>
         </node>
       </node>
@@ -8946,7 +8946,7 @@
         <node concept="3clFbF" id="6YXcUYOQ1ZL" role="3cqZAp">
           <node concept="37vLTI" id="6YXcUYOQ3Ua" role="3clFbG">
             <node concept="37vLTw" id="6YXcUYOQ4AS" role="37vLTx">
-              <ref role="3cqZAo" node="6YXcUYOPRad" resolve="addDetailPane" />
+              <ref role="3cqZAo" node="6YXcUYOPRad" resolve="showDetailPane" />
             </node>
             <node concept="2OqwBi" id="6YXcUYOQ2m_" role="37vLTJ">
               <node concept="Xjq3P" id="6YXcUYOQ1ZJ" role="2Oq$k0" />
@@ -8971,7 +8971,7 @@
                 <node concept="TSZUe" id="6YXcUYOQgSO" role="2OqNvi">
                   <node concept="Rm8GO" id="6YXcUYOQiiS" role="25WWJ7">
                     <ref role="Rm8GQ" node="4SH1Ldjinkn" resolve="NextTrace" />
-                    <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+                    <ref role="1Px2BO" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
                   </node>
                 </node>
               </node>
@@ -9228,7 +9228,7 @@
           <node concept="2OqwBi" id="4SH1Ldj_RSH" role="3clFbG">
             <node concept="2OqwBi" id="4SH1Ldj_OIF" role="2Oq$k0">
               <node concept="37vLTw" id="4SH1Ldj_Nhf" role="2Oq$k0">
-                <ref role="3cqZAo" node="4SH1Ldjmt7G" resolve="value" />
+                <ref role="3cqZAo" node="4SH1Ldjmt7G" resolve="values" />
               </node>
               <node concept="39bAoz" id="4SH1Ldj_PH3" role="2OqNvi" />
             </node>
@@ -9263,7 +9263,7 @@
         <property role="TrG5h" value="values" />
         <node concept="10Q1$e" id="4SH1Ldj_JO1" role="1tU5fm">
           <node concept="3uibUv" id="4SH1Ldjmt7F" role="10Q1$1">
-            <ref role="3uigEE" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+            <ref role="3uigEE" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
           </node>
         </node>
       </node>
@@ -9292,7 +9292,7 @@
       <node concept="37vLTG" id="4SH1LdjlTe_" role="3clF46">
         <property role="TrG5h" value="value" />
         <node concept="3uibUv" id="4SH1LdjlTe$" role="1tU5fm">
-          <ref role="3uigEE" node="4SH1LdjhYoh" resolve="ToolButtonEnum" />
+          <ref role="3uigEE" node="4SH1LdjhYoh" resolve="TraceTabOptions.ToolButtonEnum" />
         </node>
       </node>
     </node>
