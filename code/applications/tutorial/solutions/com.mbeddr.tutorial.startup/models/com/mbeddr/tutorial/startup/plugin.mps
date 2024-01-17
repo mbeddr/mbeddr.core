@@ -26,9 +26,10 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="k8go" ref="r:00731b77-fd60-4ebd-b554-284dbff8495f(com.mbeddr.mpsutil.editingGuide.structure)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
+    <import index="v18h" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:kotlin(MPS.IDEA/)" />
+    <import index="ksrs" ref="cc99dce1-49f3-4392-8dbf-e22ca47bd0af/java:kotlin.coroutines(org.modelix.model.api/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -91,6 +92,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -135,15 +137,11 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
-        <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -158,11 +156,13 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
         <child id="1154542793668" name="componentType" index="3g7fb8" />
         <child id="1154542803372" name="initValue" index="3g7hyw" />
@@ -175,8 +175,12 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903862077" name="jetbrains.mps.baseLanguage.structure.LowerBoundType" flags="in" index="3qUtgH">
+        <child id="1171903869531" name="bound" index="3qUvdb" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -238,8 +242,15 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
   </registry>
@@ -250,32 +261,57 @@
       <property role="TrG5h" value="startupActivity" />
       <node concept="3Tm6S6" id="2QDtwSqEBso" role="1B3o_S" />
       <node concept="3uibUv" id="2QDtwSqEBAP" role="1tU5fm">
-        <ref role="3uigEE" to="v27p:~StartupActivity" resolve="StartupActivity" />
+        <ref role="3uigEE" to="v27p:~ProjectActivity" resolve="ProjectActivity" />
       </node>
       <node concept="2ShNRf" id="2QDtwSqEBBb" role="33vP2m">
         <node concept="YeOm9" id="2QDtwSqEGbV" role="2ShVmc">
           <node concept="1Y3b0j" id="2QDtwSqEGbY" role="YeSDq">
             <property role="2bfB8j" value="true" />
-            <ref role="1Y3XeK" to="v27p:~StartupActivity" resolve="StartupActivity" />
+            <ref role="1Y3XeK" to="v27p:~ProjectActivity" resolve="ProjectActivity" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <node concept="15s5l7" id="1VcgOw5dvVG" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: The anonymous class must implement abstract method 'execute' in 'ProjectActivity'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/824450455578865184]&quot;;" />
+              <property role="huDt6" value="Error: The anonymous class must implement abstract method 'execute' in 'ProjectActivity'" />
+            </node>
+            <node concept="2tJIrI" id="1VcgOw5d5Xl" role="jymVt" />
             <node concept="3Tm1VV" id="2QDtwSqEGbZ" role="1B3o_S" />
-            <node concept="3clFb_" id="2QDtwSqEGc0" role="jymVt">
-              <property role="1EzhhJ" value="false" />
-              <property role="TrG5h" value="runActivity" />
-              <property role="DiZV1" value="false" />
-              <property role="od$2w" value="false" />
-              <node concept="3Tm1VV" id="2QDtwSqEGc1" role="1B3o_S" />
-              <node concept="3cqZAl" id="2QDtwSqEGc3" role="3clF45" />
-              <node concept="37vLTG" id="2QDtwSqEGc4" role="3clF46">
+            <node concept="3clFb_" id="1VcgOw5d6yL" role="jymVt">
+              <property role="TrG5h" value="execute" />
+              <node concept="15s5l7" id="1VcgOw5dw_5" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: Method does not override method from its superclass&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4540477783368646804]&quot;;" />
+                <property role="huDt6" value="Error: Method does not override method from its superclass" />
+              </node>
+              <node concept="3Tm1VV" id="1VcgOw5d6yM" role="1B3o_S" />
+              <node concept="2AHcQZ" id="1VcgOw5d6yO" role="2AJF6D">
+                <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+              </node>
+              <node concept="3uibUv" id="1VcgOw5d6yP" role="3clF45">
+                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+              </node>
+              <node concept="37vLTG" id="1VcgOw5d6yQ" role="3clF46">
                 <property role="TrG5h" value="ideaProject" />
-                <node concept="3uibUv" id="2QDtwSqEGc5" role="1tU5fm">
+                <node concept="3uibUv" id="1VcgOw5d6yR" role="1tU5fm">
                   <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
                 </node>
-                <node concept="2AHcQZ" id="2QDtwSqEGc6" role="2AJF6D">
+                <node concept="2AHcQZ" id="1VcgOw5d6yS" role="2AJF6D">
                   <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                 </node>
               </node>
-              <node concept="3clFbS" id="2QDtwSqEGc7" role="3clF47">
+              <node concept="37vLTG" id="1VcgOw5d6yT" role="3clF46">
+                <property role="TrG5h" value="continuation" />
+                <node concept="3uibUv" id="1VcgOw5d6yU" role="1tU5fm">
+                  <ref role="3uigEE" to="ksrs:~Continuation" resolve="Continuation" />
+                  <node concept="3qUtgH" id="1VcgOw5d6yV" role="11_B2D">
+                    <node concept="3uibUv" id="1VcgOw5d6yW" role="3qUvdb">
+                      <ref role="3uigEE" to="v18h:~Unit" resolve="Unit" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2AHcQZ" id="1VcgOw5d6yX" role="2AJF6D">
+                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="1VcgOw5d6yZ" role="3clF47">
                 <node concept="3cpWs8" id="2QDtwSqEJmP" role="3cqZAp">
                   <node concept="3cpWsn" id="2QDtwSqEJmQ" role="3cpWs9">
                     <property role="TrG5h" value="mpsProject" />
@@ -286,7 +322,7 @@
                       <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
                       <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
                       <node concept="37vLTw" id="2QDtwSqEJmS" role="37wK5m">
-                        <ref role="3cqZAo" node="2QDtwSqEGc4" resolve="ideaProject" />
+                        <ref role="3cqZAo" node="1VcgOw5d6yQ" resolve="ideaProject" />
                       </node>
                     </node>
                   </node>
@@ -591,6 +627,12 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs6" id="1VcgOw5dszP" role="3cqZAp">
+                  <node concept="10Nm6u" id="1VcgOw5dtlP" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="2AHcQZ" id="1VcgOw5d6z0" role="2AJF6D">
+                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
               </node>
             </node>
           </node>
