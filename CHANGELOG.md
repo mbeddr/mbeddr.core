@@ -5,24 +5,55 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
-# December 2023
+# January 2024
 
 ## com.mbeddr.mpsutils
 
+### Changed
+
+- A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+
 ### Removed
 
-- The language com.mbeddr.mpsutil.lantest was removed since it isn't fully working anymore.
+- The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
+  JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+
+# December 2023
+
+## General
+
+- The project was relicensed from EPL 1.0 to EPL 2.0 and PlantUML was updated to PlantUML to v1.2023.13 EPL version.
+
+## com.mbeddr.doc
+
+### Fixed
+
+- The escaping of the new line character works again.
+
+## com.mbeddr.mpsutils
 
 ### Changed
 
 - Enhanced TraceExplorer to hide toolbar buttons.
-- plantuml was upgraded to v1.2023.12.
+
+### Removed
+
+- The language com.mbeddr.mpsutil.lantest was removed since it isn't fully working anymore.
 
 ## com.mbeddr.core.base
 
 ### Changed
 
 - Assessement result entries with invalid references are now automatically removed.
+- The cell editor screenshooter doesn't trim the offset of the editor component anymore.
+
+### Fixed
+
+- The cell editor screenshooter now supports editor extensions and the rendering quality was slightly improved.
+
+## com.mbeddr.core.base.intentions
+
+- Fix the issue where the documentation annotation interferes with other annotations.
 
 # November 2023
 
@@ -38,6 +69,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
 - The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
+- plantuml was upgraded to v1.2023.12.
 
 ### Fixed
 
