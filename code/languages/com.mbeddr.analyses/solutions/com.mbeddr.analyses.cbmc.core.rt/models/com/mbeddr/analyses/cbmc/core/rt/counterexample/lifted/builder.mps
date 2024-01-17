@@ -121,6 +121,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -2056,8 +2057,8 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="3x0R1LIQ8aS" role="3clFbw">
-                <node concept="2OqwBi" id="3x0R1LIQ8aT" role="2Oq$k0">
+              <node concept="17R0WA" id="10kNSLyPMPE" role="3clFbw">
+                <node concept="2OqwBi" id="3x0R1LIQ8aT" role="3uHU7B">
                   <node concept="2GrUjf" id="3x0R1LIQ8aU" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="3x0R1LIQ8aw" resolve="vd" />
                   </node>
@@ -2065,11 +2066,8 @@
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
-                <node concept="liA8E" id="3x0R1LIQ8aW" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                  <node concept="37vLTw" id="3x0R1LIQ8aX" role="37wK5m">
-                    <ref role="3cqZAo" node="3x0R1LIQ8al" resolve="rawVarName" />
-                  </node>
+                <node concept="37vLTw" id="10kNSLyPXjh" role="3uHU7w">
+                  <ref role="3cqZAo" node="3x0R1LIQ8al" resolve="rawVarName" />
                 </node>
               </node>
             </node>
