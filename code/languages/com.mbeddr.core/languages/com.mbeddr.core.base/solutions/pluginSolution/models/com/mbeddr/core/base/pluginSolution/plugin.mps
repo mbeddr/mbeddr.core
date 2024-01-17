@@ -21817,7 +21817,7 @@
               <node concept="3clFbS" id="3bTIKVD_oTJ" role="3clFbx">
                 <node concept="3clFbF" id="3bTIKVD_fAl" role="3cqZAp">
                   <node concept="2YIFZM" id="3bTIKVD_h9t" role="3clFbG">
-                    <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,jetbrains.mps.project.IProject)" resolve="extendUsingProject" />
+                    <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,org.jetbrains.mps.openapi.project.Project)" resolve="extendUsingProject" />
                     <ref role="1Pybhc" to="wvnl:~EditorExtensionUtil" resolve="EditorExtensionUtil" />
                     <node concept="37vLTw" id="3bTIKVD_iPU" role="37wK5m">
                       <ref role="3cqZAo" node="2hPErkZAv65" resolve="editorComp" />
@@ -22261,7 +22261,7 @@
                   <ref role="3cqZAo" node="7SQqK0FdFYc" resolve="editorComp" />
                 </node>
                 <node concept="liA8E" id="2pjWqF4WG6i" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Component.getBackground()" resolve="getBackground" />
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getBackground()" resolve="getBackground" />
                 </node>
               </node>
             </node>
