@@ -562,7 +562,7 @@
           <node concept="3clFbS" id="3bTIKVDyilA" role="3clFbx">
             <node concept="3clFbF" id="3bTIKVDxLbZ" role="3cqZAp">
               <node concept="2YIFZM" id="3bTIKVDxMKe" role="3clFbG">
-                <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,jetbrains.mps.project.IProject)" resolve="extendUsingProject" />
+                <ref role="37wK5l" to="wvnl:~EditorExtensionUtil.extendUsingProject(jetbrains.mps.openapi.editor.EditorComponent,org.jetbrains.mps.openapi.project.Project)" resolve="extendUsingProject" />
                 <ref role="1Pybhc" to="wvnl:~EditorExtensionUtil" resolve="EditorExtensionUtil" />
                 <node concept="Xjq3P" id="3bTIKVDxQaB" role="37wK5m" />
                 <node concept="37vLTw" id="3bTIKVDycDj" role="37wK5m">
