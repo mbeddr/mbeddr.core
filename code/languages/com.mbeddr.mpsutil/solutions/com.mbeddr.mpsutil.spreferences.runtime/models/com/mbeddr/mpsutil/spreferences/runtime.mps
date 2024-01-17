@@ -5,7 +5,7 @@
   <languages>
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -299,6 +299,7 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -376,7 +377,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
@@ -3002,7 +3002,7 @@
                         <node concept="2OqwBi" id="2Wc_BLzaf23" role="3uHU7B">
                           <node concept="2OqwBi" id="Nmj9rdB1jE" role="2Oq$k0">
                             <node concept="37vLTw" id="Nmj9rdB1jF" role="2Oq$k0">
-                              <ref role="3cqZAo" node="Nmj9rdB1jH" resolve="it" />
+                              <ref role="3cqZAo" node="2SR9xrsN2Jy" resolve="it" />
                             </node>
                             <node concept="liA8E" id="2Wc_BLzaewy" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SModel.getName()" resolve="getName" />
@@ -3015,9 +3015,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="Nmj9rdB1jH" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2Jy" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="Nmj9rdB1jI" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2Jz" role="1tU5fm" />
                   </node>
                 </node>
               </node>
