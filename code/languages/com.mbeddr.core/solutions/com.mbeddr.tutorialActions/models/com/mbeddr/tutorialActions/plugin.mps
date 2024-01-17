@@ -1540,58 +1540,19 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="7836$RyWXkT" role="3cqZAp">
-                  <node concept="3cpWsn" id="7836$RyWXkS" role="3cpWs9">
-                    <property role="3TUv4t" value="false" />
-                    <property role="TrG5h" value="project" />
-                    <node concept="3uibUv" id="7836$RyWXkU" role="1tU5fm">
-                      <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-                    </node>
-                    <node concept="2YIFZM" id="1VRNFInKmSV" role="33vP2m">
-                      <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
-                      <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                      <node concept="2YIFZM" id="1VRNFInKqGD" role="37wK5m">
-                        <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                        <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                        <node concept="37vLTw" id="1VRNFInKrSz" role="37wK5m">
-                          <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="1VRNFInKmSX" role="37wK5m">
-                        <ref role="3cqZAo" node="1VRNFInKbww" resolve="task" />
+                <node concept="3clFbF" id="4_tgWKb89aH" role="3cqZAp">
+                  <node concept="2YIFZM" id="1VRNFInKmSV" role="3clFbG">
+                    <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
+                    <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
+                    <node concept="2YIFZM" id="1VRNFInKqGD" role="37wK5m">
+                      <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                      <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                      <node concept="37vLTw" id="1VRNFInKrSz" role="37wK5m">
+                        <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
                       </node>
                     </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="7836$RyWXkZ" role="3cqZAp">
-                  <node concept="3y3z36" id="7836$RyWXl0" role="3clFbw">
-                    <node concept="37vLTw" id="7836$RyWXl1" role="3uHU7B">
-                      <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                    </node>
-                    <node concept="10Nm6u" id="7836$RyWXl2" role="3uHU7w" />
-                  </node>
-                  <node concept="3clFbS" id="7836$RyWXl4" role="3clFbx">
-                    <node concept="3clFbF" id="7836$RyWXl5" role="3cqZAp">
-                      <node concept="2OqwBi" id="7836$RyWXl6" role="3clFbG">
-                        <node concept="2YIFZM" id="7836$RyXbKo" role="2Oq$k0">
-                          <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
-                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-                          <node concept="37vLTw" id="7836$RyWXl8" role="37wK5m">
-                            <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="7836$RyWXl9" role="2OqNvi">
-                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile)" resolve="setBaseDir" />
-                          <node concept="2OqwBi" id="7836$RyWXmh" role="37wK5m">
-                            <node concept="37vLTw" id="7836$RyWXmg" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                            </node>
-                            <node concept="liA8E" id="7836$RyWXmi" role="2OqNvi">
-                              <ref role="37wK5l" to="4nm9:~Project.getBaseDir()" resolve="getBaseDir" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="1VRNFInKmSX" role="37wK5m">
+                      <ref role="3cqZAo" node="1VRNFInKbww" resolve="task" />
                     </node>
                   </node>
                 </node>
