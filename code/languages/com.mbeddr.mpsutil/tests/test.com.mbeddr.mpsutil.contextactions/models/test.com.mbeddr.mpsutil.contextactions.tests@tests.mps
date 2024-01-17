@@ -2,7 +2,7 @@
 <model ref="r:d933013d-eaf7-42f5-a316-403f0dc9d64f(test.com.mbeddr.mpsutil.contextactions.tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
   </languages>
@@ -30,6 +30,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
@@ -157,6 +158,7 @@
   </registry>
   <node concept="1lH9Xt" id="6qTkPAkGc_a">
     <property role="TrG5h" value="checkToolWindowUpdates" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6qTkPAldlYb" role="1SKRRt">
       <node concept="312cEu" id="6qTkPAldm3l" role="1qenE9">
         <property role="TrG5h" value="FirstDummyClassToEdit" />
@@ -218,7 +220,7 @@
         <node concept="3clFbF" id="6qTkPAlt7jw" role="3cqZAp">
           <node concept="2OqwBi" id="6qTkPAltawP" role="3clFbG">
             <node concept="37vLTw" id="6qTkPAlta0v" role="2Oq$k0">
-              <ref role="3cqZAo" node="6qTkPAlta0p" resolve="component" />
+              <ref role="3cqZAo" node="6qTkPAlta0p" resolve="editorComponent" />
             </node>
             <node concept="liA8E" id="6qTkPAltd8Y" role="2OqNvi">
               <ref role="37wK5l" to="exr9:~EditorComponent.editNode(org.jetbrains.mps.openapi.model.SNode)" resolve="editNode" />
