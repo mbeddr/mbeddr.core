@@ -608,9 +608,14 @@
               </node>
               <node concept="liA8E" id="2QDtwSqEKem" role="2OqNvi">
                 <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
-                <node concept="10M0yZ" id="2QDtwSqEKfi" role="37wK5m">
-                  <ref role="1PxDUh" to="v27p:~StartupActivity" resolve="StartupActivity" />
-                  <ref role="3cqZAo" to="v27p:~StartupActivity.POST_STARTUP_ACTIVITY" resolve="POST_STARTUP_ACTIVITY" />
+                <node concept="2OqwBi" id="inc7HFLyx6" role="37wK5m">
+                  <node concept="10M0yZ" id="inc7HFLyfE" role="2Oq$k0">
+                    <ref role="3cqZAo" to="v27p:~StartupActivity.Companion" resolve="Companion" />
+                    <ref role="1PxDUh" to="v27p:~StartupActivity" resolve="StartupActivity" />
+                  </node>
+                  <node concept="liA8E" id="inc7HFLyNA" role="2OqNvi">
+                    <ref role="37wK5l" to="v27p:~StartupActivity$Companion.getPOST_STARTUP_ACTIVITY()" resolve="getPOST_STARTUP_ACTIVITY" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -638,9 +643,14 @@
               </node>
               <node concept="liA8E" id="2QDtwSqEKzm" role="2OqNvi">
                 <ref role="37wK5l" to="9ti4:~ExtensionsArea.getExtensionPoint(com.intellij.openapi.extensions.ExtensionPointName)" resolve="getExtensionPoint" />
-                <node concept="10M0yZ" id="2QDtwSqEKzn" role="37wK5m">
-                  <ref role="3cqZAo" to="v27p:~StartupActivity.POST_STARTUP_ACTIVITY" resolve="POST_STARTUP_ACTIVITY" />
-                  <ref role="1PxDUh" to="v27p:~StartupActivity" resolve="StartupActivity" />
+                <node concept="2OqwBi" id="inc7HFLz7K" role="37wK5m">
+                  <node concept="10M0yZ" id="inc7HFLz7L" role="2Oq$k0">
+                    <ref role="3cqZAo" to="v27p:~StartupActivity.Companion" resolve="Companion" />
+                    <ref role="1PxDUh" to="v27p:~StartupActivity" resolve="StartupActivity" />
+                  </node>
+                  <node concept="liA8E" id="inc7HFLz7M" role="2OqNvi">
+                    <ref role="37wK5l" to="v27p:~StartupActivity$Companion.getPOST_STARTUP_ACTIVITY()" resolve="getPOST_STARTUP_ACTIVITY" />
+                  </node>
                 </node>
               </node>
             </node>
