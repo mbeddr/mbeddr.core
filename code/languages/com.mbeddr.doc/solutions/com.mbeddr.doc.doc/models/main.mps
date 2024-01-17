@@ -48,7 +48,7 @@
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
         <child id="5785245534399940635" name="rows" index="C6TCM" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -135,7 +135,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -215,7 +215,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -230,7 +230,7 @@
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
-      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ngI" index="2C2TGh">
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -262,7 +262,7 @@
       <node concept="1_0LV8" id="1ZiHc0gKJBC" role="1_0VJ0">
         <node concept="19SGf9" id="1ZiHc0gKJBD" role="1_0LWR">
           <node concept="19SUe$" id="1ZiHc0gKJBE" role="19SJt6">
-            <property role="19SUeA" value="The mbeddr documentation language provdides a better alternative. It supports writing prose inside of MPS, supporting a tight integration between the prose and the code. In this document we explain how this works. Of course, this document is itself written in the documentation language." />
+            <property role="19SUeA" value="The mbeddr documentation language provides a better alternative. It supports writing prose inside of MPS, supporting a tight integration between the prose and the code. In this document we explain how this works. Of course, this document is itself written in the documentation language." />
           </node>
         </node>
       </node>
@@ -276,7 +276,7 @@
       <node concept="1_0LV8" id="1ZiHc0gKJBK" role="1_0VJ0">
         <node concept="19SGf9" id="1ZiHc0gKJBL" role="1_0LWR">
           <node concept="19SUe$" id="1ZiHc0gKJBM" role="19SJt6">
-            <property role="19SUeA" value="The documentation language supports several different extensions, each supporting the integration with differnet code artifacts. We will explain all of this in this document. The languages that support these features are all named " />
+            <property role="19SUeA" value="The documentation language supports several different extensions, each supporting the integration with different code artifacts. We will explain all of this in this document. The languages that support these features are all named " />
           </node>
           <node concept="1jUjqm" id="1ZiHc0gKJBN" role="19SJt6">
             <node concept="19SGf9" id="1ZiHc0gKJBO" role="$DsGW">
@@ -1002,7 +1002,7 @@
       <node concept="1_0LV8" id="7$DvC4gRxXS" role="1_0VJ0">
         <node concept="19SGf9" id="7$DvC4gRxXT" role="1_0LWR">
           <node concept="19SUe$" id="7$DvC4gRxXU" role="19SJt6">
-            <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, \nthe ability to tightly integrate with mebddr code was the reason for building\nthis documentation language, as we have said in " />
+            <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, the ability to tightly integrate with mebddr code was the reason for building\nthis documentation language, as we have said in " />
           </node>
           <node concept="1_0GAv" id="7$DvC4gRxY1" role="19SJt6">
             <ref role="1_0GAl" node="1ZiHc0gKJBz" resolve="introduction" />

@@ -92,7 +92,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -115,12 +115,10 @@
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
-        <child id="1212097481299" name="propertyValidator" index="QCWH9" />
         <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
-      <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
@@ -140,7 +138,7 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="3f41734b-72c3-42c8-b22c-bacd5a878e17" name="com.mbeddr.mpsutil.propertydefault">
-      <concept id="1550432487216066866" name="com.mbeddr.mpsutil.propertydefault.structure.IPropertyDefaultValue" flags="ngI" index="3_egWj">
+      <concept id="1550432487216066866" name="com.mbeddr.mpsutil.propertydefault.structure.IPropertyDefaultValue" flags="ng" index="3_egWj">
         <child id="1550432487216060794" name="defaultValue" index="3_eitr" />
       </concept>
       <concept id="1550432487216062719" name="com.mbeddr.mpsutil.propertydefault.structure.NodePropertyConstraintDefault" flags="ng" index="3_ehVu" />
@@ -215,7 +213,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -975,7 +973,7 @@
   </node>
   <node concept="1M2fIO" id="2HzhasNyR9S">
     <property role="3GE5qa" value="structure" />
-    <ref role="1M2myG" to="2c95:2HzhasNytLD" resolve="Invisble" />
+    <ref role="1M2myG" to="2c95:2HzhasNytLD" resolve="Invisible" />
     <node concept="EnEH3" id="2HzhasNzuac" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="2HzhasNzuad" role="EtsB7">
@@ -1431,10 +1429,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="627_yy34G1E">
-    <property role="3GE5qa" value="modelContent" />
-    <ref role="1M2myG" to="2c95:627_yy34G14" resolve="AbstractModelContentParagraph" />
-  </node>
   <node concept="1M2fIO" id="627_yy34G1F">
     <property role="3GE5qa" value="modelContent" />
     <ref role="1M2myG" to="2c95:627_yy34G1o" resolve="NodeModelContentRemoval" />
@@ -1521,22 +1515,6 @@
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="2i$odZByCaR">
-    <property role="3GE5qa" value="config" />
-    <ref role="1M2myG" to="2c95:5JlMPDXMgjR" resolve="DefaultImagePath" />
-    <node concept="EnEH3" id="2i$odZByCaS" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="QB0g5" id="2i$odZByCaT" role="QCWH9">
-        <node concept="3clFbS" id="2i$odZByCaU" role="2VODD2">
-          <node concept="3clFbF" id="2i$odZByCi1" role="3cqZAp">
-            <node concept="3clFbT" id="2i$odZByCi0" role="3clFbG">
-              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>

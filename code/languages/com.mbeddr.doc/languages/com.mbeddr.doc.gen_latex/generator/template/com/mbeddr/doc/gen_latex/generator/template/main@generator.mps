@@ -108,7 +108,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -288,7 +288,7 @@
         <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -2515,7 +2515,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2HzhasNyu8V" role="3acgRq">
-      <ref role="30HIoZ" to="2c95:2HzhasNytLD" resolve="Invisble" />
+      <ref role="30HIoZ" to="2c95:2HzhasNytLD" resolve="Invisible" />
       <node concept="gft3U" id="2HzhasNyua8" role="1lVwrX">
         <node concept="1jVumR" id="2HzhasNyuab" role="gfFT$">
           <node concept="1jVIKM" id="2HzhasNyuaf" role="1jVumL" />

@@ -62,7 +62,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -592,6 +592,7 @@
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="Abstract2IntExpression" />
     <property role="EcuMT" value="1320626622328445270" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="19jNIE0NVOQ" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -605,6 +606,7 @@
     <property role="EcuMT" value="1320626622329014538" />
     <property role="3GE5qa" value="enum" />
     <property role="TrG5h" value="AbstractInt2Expression" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="19jNIE0Q4_3" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

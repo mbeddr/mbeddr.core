@@ -78,7 +78,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -232,7 +232,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1050,6 +1050,26 @@
                               <node concept="WxPPo" id="27yO7ubJBkU" role="28ntcv">
                                 <node concept="Xl_RD" id="1LLGf91xmMq" role="WxPPp">
                                   <property role="Xl_RC" value="temp" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2pIpSj" id="ZgUntVjlQF" role="2pJxcM">
+                          <ref role="2pIpSl" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
+                          <node concept="2pJPED" id="ZgUntVjlRF" role="28nt2d">
+                            <ref role="2pJxaS" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
+                            <node concept="2pIpSj" id="ZgUntVjlS8" role="2pJxcM">
+                              <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
+                              <node concept="2pJPED" id="ZgUntVjlSD" role="28nt2d">
+                                <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                              </node>
+                            </node>
+                            <node concept="2pJxcG" id="ZgUntVjlT$" role="2pJxcM">
+                              <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                              <node concept="WxPPo" id="ZgUntVjlUi" role="28ntcv">
+                                <node concept="Xl_RD" id="ZgUntVjlUh" role="WxPPp">
+                                  <property role="Xl_RC" value="img" />
                                 </node>
                               </node>
                             </node>
