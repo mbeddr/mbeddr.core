@@ -262,7 +262,7 @@
       <node concept="1_0LV8" id="1ZiHc0gKJBC" role="1_0VJ0">
         <node concept="19SGf9" id="1ZiHc0gKJBD" role="1_0LWR">
           <node concept="19SUe$" id="1ZiHc0gKJBE" role="19SJt6">
-            <property role="19SUeA" value="The mbeddr documentation language provdides a better alternative. It supports writing prose inside of MPS, supporting a tight integration between the prose and the code. In this document we explain how this works. Of course, this document is itself written in the documentation language." />
+            <property role="19SUeA" value="The mbeddr documentation language provides a better alternative. It supports writing prose inside of MPS, supporting a tight integration between the prose and the code. In this document we explain how this works. Of course, this document is itself written in the documentation language." />
           </node>
         </node>
       </node>
@@ -276,7 +276,7 @@
       <node concept="1_0LV8" id="1ZiHc0gKJBK" role="1_0VJ0">
         <node concept="19SGf9" id="1ZiHc0gKJBL" role="1_0LWR">
           <node concept="19SUe$" id="1ZiHc0gKJBM" role="19SJt6">
-            <property role="19SUeA" value="The documentation language supports several different extensions, each supporting the integration with differnet code artifacts. We will explain all of this in this document. The languages that support these features are all named " />
+            <property role="19SUeA" value="The documentation language supports several different extensions, each supporting the integration with different code artifacts. We will explain all of this in this document. The languages that support these features are all named " />
           </node>
           <node concept="1jUjqm" id="1ZiHc0gKJBN" role="19SJt6">
             <node concept="19SGf9" id="1ZiHc0gKJBO" role="$DsGW">
@@ -1002,7 +1002,7 @@
       <node concept="1_0LV8" id="7$DvC4gRxXS" role="1_0VJ0">
         <node concept="19SGf9" id="7$DvC4gRxXT" role="1_0LWR">
           <node concept="19SUe$" id="7$DvC4gRxXU" role="19SJt6">
-            <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, \nthe ability to tightly integrate with mebddr code was the reason for building\nthis documentation language, as we have said in " />
+            <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, the ability to tightly integrate with mebddr code was the reason for building\nthis documentation language, as we have said in " />
           </node>
           <node concept="1_0GAv" id="7$DvC4gRxY1" role="19SJt6">
             <ref role="1_0GAl" node="1ZiHc0gKJBz" resolve="introduction" />
