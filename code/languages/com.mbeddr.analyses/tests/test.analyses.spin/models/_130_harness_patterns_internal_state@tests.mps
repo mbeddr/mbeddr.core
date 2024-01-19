@@ -2,7 +2,7 @@
 <model ref="r:d6bc34ce-6c30-4a56-8f7f-7ddc128971eb(_130_harness_patterns_internal_state@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="05a4b652-ab6c-4890-999b-9c6a576972c7" name="com.mbeddr.analyses.spin.testing" version="0" />
@@ -25,6 +25,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <property id="6339244025081158986" name="needsNoWriteAction" index="3OwPAg" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -133,6 +134,7 @@
   <node concept="1lH9Xt" id="n$tw_alm$f">
     <property role="TrG5h" value="_020_test_hidden_state_generated_proxy" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="n$tw_alm$g" role="1SL9yI">
       <property role="TrG5h" value="test_020_harness_with_reset_and_replay_void_return" />
       <node concept="3cqZAl" id="n$tw_alm$h" role="3clF45" />
@@ -505,6 +507,7 @@
   <node concept="1lH9Xt" id="n$tw_alm_9">
     <property role="TrG5h" value="_010_test_hidden_state_manual" />
     <property role="3OwPAg" value="true" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="n$tw_alm_a" role="1SL9yI">
       <property role="TrG5h" value="test_010" />
       <node concept="3cqZAl" id="n$tw_alm_c" role="3clF45" />

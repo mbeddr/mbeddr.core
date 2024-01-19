@@ -535,7 +535,7 @@
           </node>
           <node concept="2NCZwO" id="5dchr4QgHJD" role="3z_lpI">
             <node concept="2NCMab" id="7YPARvXj08m" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
             </node>
           </node>
           <node concept="2Cuv_b" id="5dchr4QgJnS" role="3z_lpH">
@@ -602,7 +602,7 @@
           <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4QgX8Y" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QgX8Z" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
             </node>
           </node>
           <node concept="2Cuv_b" id="5dchr4QgX90" role="3z_lpH">
@@ -692,7 +692,7 @@
           <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4Qh0Kt" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qh0Ku" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
             </node>
           </node>
         </node>
@@ -717,7 +717,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="7YPARvXjvGy" role="3z_lpI">
             <node concept="2NCMab" id="7YPARvXjvJY" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:7YPARvXjtIA" resolve="stdio_stub" />
+              <ref role="2NCMaa" to="zxcx:7YPARvXjtIA" />
             </node>
           </node>
         </node>
@@ -926,7 +926,7 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QlodJ" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qlog_" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
             </node>
           </node>
         </node>
@@ -1116,7 +1116,7 @@
           <property role="3z_lpV" value="reporting printf" />
           <node concept="2NCZwO" id="5dchr4QlnWH" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QlnZ5" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
             </node>
             <node concept="2NCMab" id="5dchr4QlnZd" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:1YUFCeFJNqs" resolve="reporting" />
@@ -1239,10 +1239,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QloG7" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QloJD" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
             </node>
             <node concept="2NCMab" id="5dchr4QloJL" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTt2Nd" resolve="HelloWorld" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTt2Nd" />
             </node>
           </node>
         </node>

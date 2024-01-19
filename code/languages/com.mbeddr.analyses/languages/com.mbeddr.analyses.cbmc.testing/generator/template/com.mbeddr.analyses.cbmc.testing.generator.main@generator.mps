@@ -5,7 +5,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -30,6 +30,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -255,6 +256,7 @@
       <node concept="1Koe21" id="49Y2Xia4i$L" role="1lVwrX">
         <node concept="1lH9Xt" id="6zmpM6BuOFt" role="1Koe22">
           <property role="TrG5h" value="Statemachines" />
+          <property role="3DII0k" value="2hh8MJdVwqX/command" />
           <node concept="1LZb2c" id="6zmpM6BuOFu" role="1SL9yI">
             <property role="TrG5h" value="dumy" />
             <node concept="3cqZAl" id="6zmpM6BuOFv" role="3clF45" />
@@ -312,6 +314,7 @@
       <node concept="1Koe21" id="49Y2Xia4Bjp" role="1lVwrX">
         <node concept="1lH9Xt" id="49Y2Xia4Bjq" role="1Koe22">
           <property role="TrG5h" value="Statemachines" />
+          <property role="3DII0k" value="2hh8MJdVwqX/command" />
           <node concept="1LZb2c" id="49Y2Xia4Bjr" role="1SL9yI">
             <property role="TrG5h" value="dumy" />
             <node concept="3cqZAl" id="49Y2Xia4Bjs" role="3clF45" />
@@ -663,6 +666,7 @@
       <node concept="1Koe21" id="1eEm1HSGlmH" role="1lVwrX">
         <node concept="1lH9Xt" id="1eEm1HSGlmI" role="1Koe22">
           <property role="TrG5h" value="Statemachines" />
+          <property role="3DII0k" value="2hh8MJdVwqX/command" />
           <node concept="1LZb2c" id="1eEm1HSGlmJ" role="1SL9yI">
             <property role="TrG5h" value="dumy" />
             <node concept="3cqZAl" id="1eEm1HSGlmK" role="3clF45" />
@@ -1047,6 +1051,7 @@
       <node concept="1Koe21" id="4Uw4KibeWaZ" role="1lVwrX">
         <node concept="1lH9Xt" id="4Uw4KibeWb0" role="1Koe22">
           <property role="TrG5h" value="Statemachines" />
+          <property role="3DII0k" value="2hh8MJdVwqX/command" />
           <node concept="1LZb2c" id="4Uw4KibeWb1" role="1SL9yI">
             <property role="TrG5h" value="dumy" />
             <node concept="3cqZAl" id="4Uw4KibeWb2" role="3clF45" />
@@ -1484,6 +1489,7 @@
       <node concept="1Koe21" id="1eEm1HSGUuW" role="1lVwrX">
         <node concept="1lH9Xt" id="1eEm1HSGUuX" role="1Koe22">
           <property role="TrG5h" value="Statemachines" />
+          <property role="3DII0k" value="2hh8MJdVwqX/command" />
           <node concept="1LZb2c" id="1eEm1HSGUuY" role="1SL9yI">
             <property role="TrG5h" value="dumy" />
             <node concept="3cqZAl" id="1eEm1HSGUuZ" role="3clF45" />

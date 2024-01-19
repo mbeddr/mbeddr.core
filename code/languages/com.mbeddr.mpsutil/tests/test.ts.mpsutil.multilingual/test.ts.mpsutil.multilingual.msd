@@ -24,6 +24,7 @@
     <dependency reexport="false">23f985f2-965f-4af1-aee8-a32677429514(com.mbeddr.mpsutil.multilingual.common)</dependency>
     <dependency reexport="false">eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)</dependency>
     <dependency reexport="false">442d3b7d-fe4a-4293-a7c1-6744d440ecaa(com.mbeddr.mpsutil.richstring)</dependency>
+    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d2a1d976-43a2-462f-ac3a-9b258ced839d:com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
@@ -39,7 +40,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
-    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="5" />
+    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="6" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:c0826d77-5349-4d44-b588-5750e22d096b:test.ts.mpsutil.multilingual.concept.sandbox" version="0" />
     <language slang="l:0eba8d68-ca0c-4113-a9e6-19b359352ecf:test.ts.mpsutil.multilingual.editor.sandbox" version="0" />
