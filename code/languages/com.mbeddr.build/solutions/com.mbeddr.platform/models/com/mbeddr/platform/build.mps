@@ -9855,6 +9855,11 @@
               <ref role="3bR37D" node="7vUP_qcXA_1" resolve="com.mbeddr.mpsutil.contextactions" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1Tx15Zbwon" role="3bR37C">
+            <node concept="3bR9La" id="1Tx15Zbwoo" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:4X1d9kMCbcv" resolve="jetbrains.mps.ide.refactoring.platform" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="tZiUABOeu8" role="3bR37C">
           <node concept="3bR9La" id="tZiUABOeu9" role="1SiIV1">
