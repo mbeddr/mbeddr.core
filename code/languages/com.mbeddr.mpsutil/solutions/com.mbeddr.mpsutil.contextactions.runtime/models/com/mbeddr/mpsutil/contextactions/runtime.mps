@@ -16623,7 +16623,15 @@
               <node concept="2OqwBi" id="JGR5whwagc" role="37wK5m">
                 <node concept="2YIFZM" id="JGR5whwa4Q" role="2Oq$k0">
                   <ref role="1Pybhc" to="y38:3dEPKBAxz0O" resolve="RefactoringAccess" />
-                  <ref role="37wK5l" to="y38:1dH5fOG2bPt" resolve="getInstance" />
+                  <ref role="37wK5l" to="y38:4xB7mi2r8bh" resolve="getInstance" />
+                  <node concept="2OqwBi" id="1Tx15Z6r2c" role="37wK5m">
+                    <node concept="37vLTw" id="1Tx15Z6r2d" role="2Oq$k0">
+                      <ref role="3cqZAo" node="54sr1JE5aDU" resolve="context" />
+                    </node>
+                    <node concept="liA8E" id="1Tx15Z6r2e" role="2OqNvi">
+                      <ref role="37wK5l" node="5tr7YH$Uyow" resolve="getProject" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="liA8E" id="JGR5whwarc" role="2OqNvi">
                   <ref role="37wK5l" to="y38:10tOJLdhm35" resolve="getRefactoringByClassName" />
@@ -16800,8 +16808,16 @@
           <node concept="2OqwBi" id="54sr1JE5GDc" role="3clFbG">
             <node concept="2OqwBi" id="54sr1JE5G8F" role="2Oq$k0">
               <node concept="2YIFZM" id="54sr1JE5FEL" role="2Oq$k0">
-                <ref role="37wK5l" to="y38:1dH5fOG2bPt" resolve="getInstance" />
+                <ref role="37wK5l" to="y38:4xB7mi2r8bh" resolve="getInstance" />
                 <ref role="1Pybhc" to="y38:3dEPKBAxz0O" resolve="RefactoringAccess" />
+                <node concept="2OqwBi" id="1Tx15Z6l7K" role="37wK5m">
+                  <node concept="37vLTw" id="1Tx15Z6ksM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="54sr1JE5c7k" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="1Tx15Z6nl0" role="2OqNvi">
+                    <ref role="37wK5l" node="5tr7YH$Uyow" resolve="getProject" />
+                  </node>
+                </node>
               </node>
               <node concept="liA8E" id="54sr1JE5G_b" role="2OqNvi">
                 <ref role="37wK5l" to="y38:52KjdOfLP8s" resolve="getRefactoringFacade" />
@@ -16978,8 +16994,16 @@
         <node concept="3clFbF" id="2hz1PZpK7bw" role="3cqZAp">
           <node concept="2OqwBi" id="4glh_DchKrX" role="3clFbG">
             <node concept="2YIFZM" id="4glh_DchKBz" role="2Oq$k0">
-              <ref role="37wK5l" to="y38:1dH5fOG2bPt" resolve="getInstance" />
+              <ref role="37wK5l" to="y38:4xB7mi2r8bh" resolve="getInstance" />
               <ref role="1Pybhc" to="y38:3dEPKBAxz0O" resolve="RefactoringAccess" />
+              <node concept="2OqwBi" id="1Tx15Z6pjV" role="37wK5m">
+                <node concept="37vLTw" id="1Tx15Z6pjW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2hz1PZpKbJ0" resolve="context" />
+                </node>
+                <node concept="liA8E" id="1Tx15Z6pjX" role="2OqNvi">
+                  <ref role="37wK5l" node="5tr7YH$Uyow" resolve="getProject" />
+                </node>
+              </node>
             </node>
             <node concept="liA8E" id="4glh_DchL6I" role="2OqNvi">
               <ref role="37wK5l" to="y38:10tOJLdi0g7" resolve="isApplicable" />
