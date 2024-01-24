@@ -618,7 +618,7 @@
             <node concept="3clFbS" id="3RseghIeKCV" role="3clFbx">
               <node concept="a7r0C" id="3RseghIeKDn" role="3cqZAp">
                 <node concept="Xl_RD" id="3RseghIeKDq" role="a7wSD">
-                  <property role="Xl_RC" value="ununsed argument" />
+                  <property role="Xl_RC" value="unused argument" />
                 </node>
                 <node concept="1YBJjd" id="3RseghIeKDr" role="1urrMF">
                   <ref role="1YBMHb" node="3RseghIeK_J" resolve="sa" />
@@ -954,15 +954,6 @@
     <node concept="1YaCAy" id="2fGuOSYbw1j" role="1YuTPh">
       <property role="TrG5h" value="v" />
       <ref role="1YaFvo" to="2c95:2fGuOSYbvYU" resolve="Visualization" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="3DAECxFHFPk">
-    <property role="TrG5h" value="check_UrlFormattedText" />
-    <property role="3GE5qa" value="words.formatted" />
-    <node concept="3clFbS" id="3DAECxFHFPl" role="18ibNy" />
-    <node concept="1YaCAy" id="3DAECxFHFPn" role="1YuTPh">
-      <property role="TrG5h" value="uft" />
-      <ref role="1YaFvo" to="2c95:3DAECxFHdtW" resolve="UrlFormattedText" />
     </node>
   </node>
   <node concept="18kY7G" id="3DAECxG6xHH">
