@@ -2,7 +2,7 @@
 <model ref="r:b940b44d-75f7-4e5e-a8c5-66b915fea907(com.mbeddr.analyses.cbmc.core.rt.analyses.decTab)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
@@ -44,7 +44,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -146,7 +146,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -169,7 +169,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -201,6 +201,7 @@
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -255,7 +256,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -294,7 +295,6 @@
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
@@ -1659,7 +1659,7 @@
                                   <node concept="3clFbF" id="2lA5DP6ncUx" role="3cqZAp">
                                     <node concept="2OqwBi" id="2lA5DP6ncUy" role="3clFbG">
                                       <node concept="37vLTw" id="2lA5DP6ncUz" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="2lA5DP6ncU_" resolve="it" />
+                                        <ref role="3cqZAo" node="2SR9xrsN2xK" resolve="it" />
                                       </node>
                                       <node concept="3TrEf2" id="2lA5DP6ncU$" role="2OqNvi">
                                         <ref role="3Tt5mk" to="q46j:2lA5DP6losD" resolve="referencedNode" />
@@ -1667,9 +1667,9 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="2lA5DP6ncU_" role="1bW2Oz">
+                                <node concept="gl6BB" id="2SR9xrsN2xK" role="1bW2Oz">
                                   <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="2lA5DP6ncUA" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="2SR9xrsN2xL" role="1tU5fm" />
                                 </node>
                               </node>
                             </node>

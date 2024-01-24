@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.sat4j.fm" uuid="c34744c1-dc64-4da4-9850-885dee7d4a0c" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.analyses.sat4j.fm" uuid="c34744c1-dc64-4da4-9850-885dee7d4a0c" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
@@ -33,7 +32,7 @@
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
-    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
+    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -100,7 +99,6 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="5187f5c9-b8a8-4309-90b3-14f9919bd2d8(jetbrains.mps.refactoring)" version="0" />
-    <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
   </dependencyVersions>
 </solution>
 
