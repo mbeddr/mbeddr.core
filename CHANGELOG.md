@@ -10,6 +10,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## com.mbeddr.mpsutils
 
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+- Referenced actions in action profiles now emit a warning when they can't be found.
 
 # December 2023
 
