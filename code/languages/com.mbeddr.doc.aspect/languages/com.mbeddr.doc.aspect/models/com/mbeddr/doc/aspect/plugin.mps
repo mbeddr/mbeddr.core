@@ -33,9 +33,21 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -58,7 +70,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
+        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
@@ -143,7 +157,72 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="5ut4bh9p_Up" role="jymVt" />
+    <node concept="3Tm1VV" id="1T8cMxCROtp" role="1B3o_S" />
+    <node concept="3UR2Jj" id="3qokpdXQck2" role="lGtFl">
+      <node concept="TZ5HA" id="3qokpdXQck3" role="TZ5H$">
+        <node concept="1dT_AC" id="3qokpdXQck4" role="1dT_Ay">
+          <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="3qokpdXQck_" role="TZ5H$">
+        <node concept="1dT_AC" id="3qokpdXQckA" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="3qokpdXQckF" role="TZ5H$">
+        <node concept="1dT_AC" id="3qokpdXQckG" role="1dT_Ay">
+          <property role="1dT_AB" value="See class &quot;DefaultDocAspectConfiguration&quot; for defaults." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="3qokpdXQc0N">
+    <property role="TrG5h" value="DefaultDocAspectConfiguration" />
+    <property role="1EXbeo" value="true" />
+    <node concept="Wx3nA" id="5X4OV7_Et82" role="jymVt">
+      <property role="TrG5h" value="DEFAULT_ALLOW_OVERRIDE_CHILDREN" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="5X4OV7_Eqnx" role="1B3o_S" />
+      <node concept="10P_77" id="5X4OV7_Et1r" role="1tU5fm" />
+      <node concept="3clFbT" id="5X4OV7_Etf$" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="5X4OV7_Eq1m" role="jymVt" />
+    <node concept="3Tm1VV" id="3qokpdXQc0O" role="1B3o_S" />
+    <node concept="3uibUv" id="5X4OV7_Dlv3" role="EKbjA">
+      <ref role="3uigEE" node="5X4OV7_Dlnb" resolve="IDocumentationAspectConfiguration_v2" />
+    </node>
+    <node concept="3clFb_" id="3qokpdXQc2t" role="jymVt">
+      <property role="TrG5h" value="showReferenceConceptDocumentation" />
+      <node concept="3Tm1VV" id="3qokpdXQc2v" role="1B3o_S" />
+      <node concept="10P_77" id="3qokpdXQc2w" role="3clF45" />
+      <node concept="3clFbS" id="3qokpdXQc2$" role="3clF47">
+        <node concept="3clFbF" id="3qokpdXQc2B" role="3cqZAp">
+          <node concept="3clFbT" id="3qokpdXQc2A" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3qokpdXQc2_" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3qokpdXQcd5" role="jymVt" />
+    <node concept="3clFb_" id="3qokpdXQc2C" role="jymVt">
+      <property role="TrG5h" value="allowOverrideChildren" />
+      <node concept="3Tm1VV" id="3qokpdXQc2E" role="1B3o_S" />
+      <node concept="10P_77" id="3qokpdXQc2F" role="3clF45" />
+      <node concept="3clFbS" id="3qokpdXQc2Z" role="3clF47">
+        <node concept="3clFbF" id="3qokpdXQc32" role="3cqZAp">
+          <node concept="37vLTw" id="5X4OV7_Et_v" role="3clFbG">
+            <ref role="3cqZAo" node="5X4OV7_Et82" resolve="DEFAULT_ALLOW_OVERRIDE_CHILDREN" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="3qokpdXQc30" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="5X4OV7_Dlnb">
+    <property role="TrG5h" value="IDocumentationAspectConfiguration_v2" />
     <node concept="3clFb_" id="5ut4bh9pm1v" role="jymVt">
       <property role="TrG5h" value="allowOverrideChildren" />
       <node concept="3clFbS" id="5ut4bh9pm1y" role="3clF47" />
@@ -187,56 +266,25 @@
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="1T8cMxCROtp" role="1B3o_S" />
-    <node concept="3UR2Jj" id="3qokpdXQck2" role="lGtFl">
-      <node concept="TZ5HA" id="3qokpdXQck3" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQck4" role="1dT_Ay">
-          <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
+    <node concept="3Tm1VV" id="5X4OV7_Dlnc" role="1B3o_S" />
+    <node concept="3uibUv" id="5X4OV7_Dlqt" role="3HQHJm">
+      <ref role="3uigEE" node="1T8cMxCROto" resolve="IDocumentationAspectConfiguration" />
+    </node>
+    <node concept="3UR2Jj" id="5X4OV7_Dl$K" role="lGtFl">
+      <node concept="TZ5HA" id="5X4OV7_Dl$L" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_Dl$M" role="1dT_Ay">
+          <property role="1dT_AB" value="Backward-compatible extension of the extension point interface for documentation-aspects." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3qokpdXQck_" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQckA" role="1dT_Ay">
+      <node concept="TZ5HA" id="5X4OV7_Dl_9" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_Dl_a" role="1dT_Ay">
           <property role="1dT_AB" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3qokpdXQckF" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQckG" role="1dT_Ay">
-          <property role="1dT_AB" value="See class &quot;DefaultDocAspectConfiguration&quot; for defaults." />
+      <node concept="TZ5HA" id="5X4OV7_Dl_v" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_Dl_w" role="1dT_Ay">
+          <property role="1dT_AB" value="Applications which implement only IDocumentationAspectConfiguration will not break." />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="312cEu" id="3qokpdXQc0N">
-    <property role="TrG5h" value="DefaultDocAspectConfiguration" />
-    <node concept="3Tm1VV" id="3qokpdXQc0O" role="1B3o_S" />
-    <node concept="3uibUv" id="3qokpdXQc21" role="EKbjA">
-      <ref role="3uigEE" node="1T8cMxCROto" resolve="IDocumentationAspectConfiguration" />
-    </node>
-    <node concept="3clFb_" id="3qokpdXQc2t" role="jymVt">
-      <property role="TrG5h" value="showReferenceConceptDocumentation" />
-      <node concept="3Tm1VV" id="3qokpdXQc2v" role="1B3o_S" />
-      <node concept="10P_77" id="3qokpdXQc2w" role="3clF45" />
-      <node concept="3clFbS" id="3qokpdXQc2$" role="3clF47">
-        <node concept="3clFbF" id="3qokpdXQc2B" role="3cqZAp">
-          <node concept="3clFbT" id="3qokpdXQc2A" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="3qokpdXQc2_" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3qokpdXQcd5" role="jymVt" />
-    <node concept="3clFb_" id="3qokpdXQc2C" role="jymVt">
-      <property role="TrG5h" value="allowOverrideChildren" />
-      <node concept="3Tm1VV" id="3qokpdXQc2E" role="1B3o_S" />
-      <node concept="10P_77" id="3qokpdXQc2F" role="3clF45" />
-      <node concept="3clFbS" id="3qokpdXQc2Z" role="3clF47">
-        <node concept="3clFbF" id="3qokpdXQc32" role="3cqZAp">
-          <node concept="3clFbT" id="3qokpdXQc31" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="3qokpdXQc30" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
   </node>
