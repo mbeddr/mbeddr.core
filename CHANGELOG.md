@@ -4,6 +4,42 @@ All notable changes to this project will be documented in this file.
 
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
+
+# January 2024
+
+## com.mbeddr.mpsutils
+
+- A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+- Referenced actions in action profiles now emit a warning when they can't be found.
+
+# December 2023
+
+## com.mbeddr.mpsutils
+
+### Changed
+
+- Enhanced TraceExplorer to hide toolbar buttons.
+
+## com.mbeddr.core.base
+
+### Changed
+
+- Assessement result entries with invalid references are now automatically removed.
+
+# November 2023
+
+## com.mbeddr.doc
+
+### Changed
+
+- Enhanced generateScreenshots to support multiple output models (forks in genplans).
+
+## com.mbeddr.mpsutils
+
+### Changed
+
+- Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
+
 # October 2023
 
 ## com.mbeddr.mpsutils
