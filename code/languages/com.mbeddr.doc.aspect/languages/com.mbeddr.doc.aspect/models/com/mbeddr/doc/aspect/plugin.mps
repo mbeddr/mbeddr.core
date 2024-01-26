@@ -169,6 +169,36 @@
           <property role="1dT_AB" value="" />
         </node>
       </node>
+      <node concept="TZ5HA" id="5X4OV7_F$t8" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$t9" role="1dT_Ay">
+          <property role="1dT_AB" value="Note: Adding new methods to this interface would break compatibility " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5X4OV7_F$tz" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$t$" role="1dT_Ay">
+          <property role="1dT_AB" value="for existing implementations. So instead of changing this interface pls." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5X4OV7_F$u0" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$u1" role="1dT_Ay">
+          <property role="1dT_AB" value="follow the extends-chain of interfaces downwards along the" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5X4OV7_F$uR" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$uS" role="1dT_Ay">
+          <property role="1dT_AB" value="IDocumentationAspectConfiguration_v2, _v3, etc. and add a new extending" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5X4OV7_F$vo" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$vp" role="1dT_Ay">
+          <property role="1dT_AB" value="interface, which then implements the new method." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5X4OV7_F$vV" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$vW" role="1dT_Ay">
+          <property role="1dT_AB" value=" " />
+        </node>
+      </node>
       <node concept="TZ5HA" id="3qokpdXQckF" role="TZ5H$">
         <node concept="1dT_AC" id="3qokpdXQckG" role="1dT_Ay">
           <property role="1dT_AB" value="See class &quot;DefaultDocAspectConfiguration&quot; for defaults." />
@@ -218,6 +248,18 @@
       </node>
       <node concept="2AHcQZ" id="3qokpdXQc30" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="5X4OV7_F$Aa" role="lGtFl">
+      <node concept="TZ5HA" id="5X4OV7_F$Ab" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$Ac" role="1dT_Ay">
+          <property role="1dT_AB" value="Note: This class should always implement the bottom-most interface in the extends-chain" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5X4OV7_F$DN" role="TZ5H$">
+        <node concept="1dT_AC" id="5X4OV7_F$DO" role="1dT_Ay">
+          <property role="1dT_AB" value="of IDocumentationAspectConfiguration_v2, _v3, etc." />
+        </node>
       </node>
     </node>
   </node>
