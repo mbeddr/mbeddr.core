@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
+    <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -57,7 +57,7 @@
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -74,7 +74,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -88,7 +88,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -104,18 +104,14 @@
         <node concept="3clFbF" id="SWpRmWAg00" role="3cqZAp">
           <node concept="2OqwBi" id="SWpRmWAgr_" role="3clFbG">
             <node concept="2YIFZM" id="SWpRmWAgkN" role="2Oq$k0">
-              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
+              <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
+              <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
               <node concept="37vLTw" id="SWpRmWAglc" role="37wK5m">
                 <ref role="3cqZAo" node="SWpRmW$KX3" resolve="clazz" />
               </node>
             </node>
             <node concept="liA8E" id="SWpRmWAgMY" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.log(org.apache.log4j.Priority,java.lang.Object)" resolve="log" />
-              <node concept="10M0yZ" id="SWpRmWAgT9" role="37wK5m">
-                <ref role="1PxDUh" to="q7tw:~Priority" resolve="Priority" />
-                <ref role="3cqZAo" to="q7tw:~Priority.ERROR" resolve="ERROR" />
-              </node>
+              <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String)" resolve="error" />
               <node concept="37vLTw" id="SWpRmWAh7c" role="37wK5m">
                 <ref role="3cqZAo" node="SWpRmW$KXv" resolve="errorMsg" />
               </node>
@@ -147,21 +143,17 @@
       <node concept="3clFbS" id="7$8IbnDjXjX" role="3clF47">
         <node concept="3clFbF" id="7$8IbnDjXjY" role="3cqZAp">
           <node concept="2OqwBi" id="7$8IbnDjXjZ" role="3clFbG">
-            <node concept="2YIFZM" id="7$8IbnDjXk0" role="2Oq$k0">
-              <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-              <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-              <node concept="37vLTw" id="7$8IbnDjXk1" role="37wK5m">
-                <ref role="3cqZAo" node="7$8IbnDjXk7" resolve="clazz" />
-              </node>
-            </node>
             <node concept="liA8E" id="7$8IbnDjXk2" role="2OqNvi">
-              <ref role="37wK5l" to="q7tw:~Category.log(org.apache.log4j.Priority,java.lang.Object)" resolve="log" />
-              <node concept="10M0yZ" id="7$8IbnDjXk3" role="37wK5m">
-                <ref role="1PxDUh" to="q7tw:~Priority" resolve="Priority" />
-                <ref role="3cqZAo" to="q7tw:~Priority.INFO" resolve="INFO" />
-              </node>
+              <ref role="37wK5l" to="wwqx:~Logger.info(java.lang.String)" resolve="info" />
               <node concept="37vLTw" id="7$8IbnDjXk4" role="37wK5m">
                 <ref role="3cqZAo" node="7$8IbnDjXk9" resolve="statusMsg" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="3GXClf3GDWE" role="2Oq$k0">
+              <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
+              <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
+              <node concept="37vLTw" id="3GXClf3GDWF" role="37wK5m">
+                <ref role="3cqZAo" node="7$8IbnDjXk7" resolve="clazz" />
               </node>
             </node>
           </node>
