@@ -90,9 +90,6 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -845,8 +842,13 @@
                 </node>
               </node>
             </node>
-            <node concept="1rXfSq" id="5X4OV7_EG_v" role="3uHU7B">
-              <ref role="37wK5l" node="5X4OV7_EuQC" resolve="allowOverrideChildren" />
+            <node concept="2OqwBi" id="5N03sBK_s9S" role="3uHU7B">
+              <node concept="1rXfSq" id="5N03sBK_rV1" role="2Oq$k0">
+                <ref role="37wK5l" node="5ut4bh9phV1" resolve="config" />
+              </node>
+              <node concept="liA8E" id="5N03sBK_sN$" role="2OqNvi">
+                <ref role="37wK5l" to="pgte:5N03sBKzJsV" resolve="allowOverrideChildren" />
+              </node>
             </node>
           </node>
         </node>
@@ -3198,69 +3200,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="qmep2m2lii" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="5X4OV7_Eken" role="jymVt" />
-    <node concept="2YIFZL" id="5X4OV7_EuQC" role="jymVt">
-      <property role="TrG5h" value="allowOverrideChildren" />
-      <node concept="3clFbS" id="5X4OV7_EuQF" role="3clF47">
-        <node concept="3cpWs8" id="5X4OV7_Exff" role="3cqZAp">
-          <node concept="3cpWsn" id="5X4OV7_Exfg" role="3cpWs9">
-            <property role="TrG5h" value="config" />
-            <node concept="3uibUv" id="5X4OV7_EwZ_" role="1tU5fm">
-              <ref role="3uigEE" to="pgte:1T8cMxCROto" resolve="IDocumentationAspectConfiguration" />
-            </node>
-            <node concept="1rXfSq" id="5X4OV7_Exfh" role="33vP2m">
-              <ref role="37wK5l" node="5ut4bh9phV1" resolve="config" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5X4OV7_ExBj" role="3cqZAp">
-          <node concept="3clFbS" id="5X4OV7_ExBl" role="3clFbx">
-            <node concept="3cpWs8" id="5X4OV7_EzwO" role="3cqZAp">
-              <node concept="3cpWsn" id="5X4OV7_EzwP" role="3cpWs9">
-                <property role="TrG5h" value="config_v2" />
-                <node concept="3uibUv" id="5X4OV7_EzwQ" role="1tU5fm">
-                  <ref role="3uigEE" to="pgte:5X4OV7_Dlnb" resolve="IDocumentationAspectConfiguration_v2" />
-                </node>
-                <node concept="10QFUN" id="5X4OV7_E$NA" role="33vP2m">
-                  <node concept="3uibUv" id="5X4OV7_E_54" role="10QFUM">
-                    <ref role="3uigEE" to="pgte:5X4OV7_Dlnb" resolve="IDocumentationAspectConfiguration_v2" />
-                  </node>
-                  <node concept="37vLTw" id="5X4OV7_E$wD" role="10QFUP">
-                    <ref role="3cqZAo" node="5X4OV7_Exfg" resolve="config" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="5X4OV7_E_LF" role="3cqZAp">
-              <node concept="2OqwBi" id="5X4OV7_EAQv" role="3cqZAk">
-                <node concept="37vLTw" id="5X4OV7_EAsR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5X4OV7_EzwP" resolve="config_v2" />
-                </node>
-                <node concept="liA8E" id="5X4OV7_EBjO" role="2OqNvi">
-                  <ref role="37wK5l" to="pgte:5ut4bh9pm1v" resolve="allowOverrideChildren" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2ZW3vV" id="5X4OV7_EyvM" role="3clFbw">
-            <node concept="3uibUv" id="5X4OV7_EyNC" role="2ZW6by">
-              <ref role="3uigEE" to="pgte:5X4OV7_Dlnb" resolve="IDocumentationAspectConfiguration_v2" />
-            </node>
-            <node concept="37vLTw" id="5X4OV7_Eyat" role="2ZW6bz">
-              <ref role="3cqZAo" node="5X4OV7_Exfg" resolve="config" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="5X4OV7_EBZ5" role="3cqZAp">
-          <node concept="10M0yZ" id="5X4OV7_ECWd" role="3cqZAk">
-            <ref role="3cqZAo" to="pgte:5X4OV7_Et82" resolve="DEFAULT_ALLOW_OVERRIDE_CHILDREN" />
-            <ref role="1PxDUh" to="pgte:3qokpdXQc0N" resolve="DefaultDocAspectConfiguration" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="5X4OV7_EnrS" role="1B3o_S" />
-      <node concept="10P_77" id="5X4OV7_EpBR" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="5ut4bh9p4ZU" role="jymVt" />
     <node concept="2YIFZL" id="5ut4bh9phV1" role="jymVt">

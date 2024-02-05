@@ -26,6 +26,9 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ng" index="2frcj7">
+        <child id="2323553266850475953" name="modifiers" index="2frcjj" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
@@ -33,7 +36,11 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="4678410916365116210" name="jetbrains.mps.baseLanguage.structure.DefaultModifier" flags="ng" index="2JFqV2" />
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
@@ -70,9 +77,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
-        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
-      </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
@@ -164,47 +169,60 @@
           <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3qokpdXQck_" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQckA" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$t8" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$t9" role="1dT_Ay">
-          <property role="1dT_AB" value="Note: Adding new methods to this interface would break compatibility " />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$tz" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$t$" role="1dT_Ay">
-          <property role="1dT_AB" value="for existing implementations. So instead of changing this interface pls." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$u0" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$u1" role="1dT_Ay">
-          <property role="1dT_AB" value="follow the extends-chain of interfaces downwards along the" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$uR" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$uS" role="1dT_Ay">
-          <property role="1dT_AB" value="IDocumentationAspectConfiguration_v2, _v3, etc. and add a new extending" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$vo" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$vp" role="1dT_Ay">
-          <property role="1dT_AB" value="interface, which then implements the new method." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$vV" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$vW" role="1dT_Ay">
-          <property role="1dT_AB" value=" " />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="3qokpdXQckF" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQckG" role="1dT_Ay">
-          <property role="1dT_AB" value="See class &quot;DefaultDocAspectConfiguration&quot; for defaults." />
-        </node>
-      </node>
     </node>
+    <node concept="2tJIrI" id="5N03sBKzJsf" role="jymVt" />
+    <node concept="3clFb_" id="5N03sBKzJsV" role="jymVt">
+      <property role="TrG5h" value="allowOverrideChildren" />
+      <node concept="3clFbS" id="5N03sBKzJsW" role="3clF47">
+        <node concept="3clFbF" id="5N03sBKzKvE" role="3cqZAp">
+          <node concept="10M0yZ" id="5N03sBKzKwm" role="3clFbG">
+            <ref role="3cqZAo" node="5X4OV7_Et82" resolve="DEFAULT_ALLOW_OVERRIDE_CHILDREN" />
+            <ref role="1PxDUh" node="3qokpdXQc0N" resolve="DefaultDocAspectConfiguration" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5N03sBKzJsX" role="1B3o_S" />
+      <node concept="10P_77" id="5N03sBKzJsY" role="3clF45" />
+      <node concept="P$JXv" id="5N03sBKzJsZ" role="lGtFl">
+        <node concept="TZ5HA" id="5N03sBKzJt0" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJt1" role="1dT_Ay">
+            <property role="1dT_AB" value="Flag to activate the overrideChildren flag of DocumentedConceptAnnotation nodes." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5N03sBKzJt2" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJt3" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5N03sBKzJt4" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJt5" role="1dT_Ay">
+            <property role="1dT_AB" value="Note: Activate this if any DocumentedConceptAnnotation in your application uses" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5N03sBKzJt6" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJt7" role="1dT_Ay">
+            <property role="1dT_AB" value="the overrideChildren flag. Although a cache will be used to ensure that the IDE" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5N03sBKzJt8" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJt9" role="1dT_Ay">
+            <property role="1dT_AB" value="performance is acceptable, selecting nodes in the editor while the documentation" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5N03sBKzJta" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJtb" role="1dT_Ay">
+            <property role="1dT_AB" value="view is opened might have a slight delay when the concept of the node hasn't been " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5N03sBKzJtc" role="TZ5H$">
+          <node concept="1dT_AC" id="5N03sBKzJtd" role="1dT_Ay">
+            <property role="1dT_AB" value="encountered in the current IDE session." />
+          </node>
+        </node>
+      </node>
+      <node concept="2JFqV2" id="5N03sBKzK4p" role="2frcjj" />
+    </node>
+    <node concept="2tJIrI" id="5N03sBKzJss" role="jymVt" />
   </node>
   <node concept="312cEu" id="3qokpdXQc0N">
     <property role="TrG5h" value="DefaultDocAspectConfiguration" />
@@ -218,8 +236,8 @@
     </node>
     <node concept="2tJIrI" id="5X4OV7_Eq1m" role="jymVt" />
     <node concept="3Tm1VV" id="3qokpdXQc0O" role="1B3o_S" />
-    <node concept="3uibUv" id="5X4OV7_Dlv3" role="EKbjA">
-      <ref role="3uigEE" node="5X4OV7_Dlnb" resolve="IDocumentationAspectConfiguration_v2" />
+    <node concept="3uibUv" id="5N03sBKzK$l" role="EKbjA">
+      <ref role="3uigEE" node="1T8cMxCROto" resolve="IDocumentationAspectConfiguration" />
     </node>
     <node concept="3clFb_" id="3qokpdXQc2t" role="jymVt">
       <property role="TrG5h" value="showReferenceConceptDocumentation" />
@@ -253,79 +271,7 @@
     <node concept="3UR2Jj" id="5X4OV7_F$Aa" role="lGtFl">
       <node concept="TZ5HA" id="5X4OV7_F$Ab" role="TZ5H$">
         <node concept="1dT_AC" id="5X4OV7_F$Ac" role="1dT_Ay">
-          <property role="1dT_AB" value="Note: This class should always implement the bottom-most interface in the extends-chain" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_F$DN" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_F$DO" role="1dT_Ay">
-          <property role="1dT_AB" value="of IDocumentationAspectConfiguration_v2, _v3, etc." />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3HP615" id="5X4OV7_Dlnb">
-    <property role="TrG5h" value="IDocumentationAspectConfiguration_v2" />
-    <node concept="3clFb_" id="5ut4bh9pm1v" role="jymVt">
-      <property role="TrG5h" value="allowOverrideChildren" />
-      <node concept="3clFbS" id="5ut4bh9pm1y" role="3clF47" />
-      <node concept="3Tm1VV" id="5ut4bh9pm1z" role="1B3o_S" />
-      <node concept="10P_77" id="5ut4bh9pm15" role="3clF45" />
-      <node concept="P$JXv" id="5ut4bh9p_Od" role="lGtFl">
-        <node concept="TZ5HA" id="5ut4bh9p_Oe" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_Of" role="1dT_Ay">
-            <property role="1dT_AB" value="Flag to activate the overrideChildren flag of DocumentedConceptAnnotation nodes." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5ut4bh9p_Tf" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_Tg" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5ut4bh9p_TN" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_TO" role="1dT_Ay">
-            <property role="1dT_AB" value="Note: Activate this if any DocumentedConceptAnnotation in your application uses" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5ut4bh9p_V8" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_V9" role="1dT_Ay">
-            <property role="1dT_AB" value="the overrideChildren flag. Although a cache will be used to ensure that the IDE" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5ut4bh9p_VK" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_VL" role="1dT_Ay">
-            <property role="1dT_AB" value="performance is acceptable, selecting nodes in the editor while the documentation" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5ut4bh9p_Wq" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_Wr" role="1dT_Ay">
-            <property role="1dT_AB" value="view is opened might have a slight delay when the concept of the node hasn't been " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5ut4bh9p_X6" role="TZ5H$">
-          <node concept="1dT_AC" id="5ut4bh9p_X7" role="1dT_Ay">
-            <property role="1dT_AB" value="encountered in the current IDE session." />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="5X4OV7_Dlnc" role="1B3o_S" />
-    <node concept="3uibUv" id="5X4OV7_Dlqt" role="3HQHJm">
-      <ref role="3uigEE" node="1T8cMxCROto" resolve="IDocumentationAspectConfiguration" />
-    </node>
-    <node concept="3UR2Jj" id="5X4OV7_Dl$K" role="lGtFl">
-      <node concept="TZ5HA" id="5X4OV7_Dl$L" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_Dl$M" role="1dT_Ay">
-          <property role="1dT_AB" value="Backward-compatible extension of the extension point interface for documentation-aspects." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_Dl_9" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_Dl_a" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5X4OV7_Dl_v" role="TZ5H$">
-        <node concept="1dT_AC" id="5X4OV7_Dl_w" role="1dT_Ay">
-          <property role="1dT_AB" value="Applications which implement only IDocumentationAspectConfiguration will not break." />
+          <property role="1dT_AB" value="Defaults for DocAspect extension point." />
         </node>
       </node>
     </node>
