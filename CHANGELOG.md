@@ -14,6 +14,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
 - Referenced actions in action profiles now emit a warning when they can't be found.
 
+## com.mbeddr.doc
+
+### Changed
+
+- The Java library xmlbeans of the spreadsheet language was upgraded from version 2.6.0 to 4.0.0
+- The Java library Apache Poi of the spreadsheet language was upgraded from 2.6.0 to 5.0.0
 ### Removed
 
 - The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
