@@ -1083,7 +1083,7 @@
           <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="6lh$fzWFMl" role="3z_lpI">
             <node concept="2NCMab" id="6lh$fzWG4j" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
             </node>
           </node>
         </node>
