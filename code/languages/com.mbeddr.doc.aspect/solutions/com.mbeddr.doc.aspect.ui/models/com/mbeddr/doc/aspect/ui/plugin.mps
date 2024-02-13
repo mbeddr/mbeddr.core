@@ -4282,13 +4282,26 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3fqX7Q" id="45KItpiMJJA" role="3clFbw">
-                  <node concept="2OqwBi" id="45KItpiMJJC" role="3fr31v">
-                    <node concept="37vLTw" id="45KItpiMJJD" role="2Oq$k0">
-                      <ref role="3cqZAo" node="24MikXOg4Py" resolve="tool" />
+                <node concept="1Wc70l" id="6NbYxGeSokk" role="3clFbw">
+                  <node concept="3y3z36" id="7CWN6fHNCFE" role="3uHU7B">
+                    <node concept="10Nm6u" id="7CWN6fHNESo" role="3uHU7w" />
+                    <node concept="2OqwBi" id="6NbYxGeSsgr" role="3uHU7B">
+                      <node concept="37vLTw" id="6NbYxGeSqQE" role="2Oq$k0">
+                        <ref role="3cqZAo" node="24MikXOg4Py" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="6NbYxGeTbC1" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="45KItpiMJJE" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTool.isAvailable()" resolve="isAvailable" />
+                  </node>
+                  <node concept="3fqX7Q" id="45KItpiMJJA" role="3uHU7w">
+                    <node concept="2OqwBi" id="45KItpiMJJC" role="3fr31v">
+                      <node concept="37vLTw" id="45KItpiMJJD" role="2Oq$k0">
+                        <ref role="3cqZAo" node="24MikXOg4Py" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="45KItpiMJJE" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.isAvailable()" resolve="isAvailable" />
+                      </node>
                     </node>
                   </node>
                 </node>
