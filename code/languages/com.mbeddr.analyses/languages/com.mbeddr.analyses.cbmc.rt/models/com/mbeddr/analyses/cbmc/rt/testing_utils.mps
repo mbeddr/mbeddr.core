@@ -2,12 +2,13 @@
 <model ref="r:fd182312-cbd2-4a09-87ee-383f798adf6c(com.mbeddr.analyses.cbmc.rt.testing_utils)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -207,9 +208,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -228,6 +226,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -330,8 +342,12 @@
       <node concept="3cmrfG" id="1kjPA_ypYwo" role="33vP2m">
         <property role="3cmrfH" value="3" />
       </node>
-      <node concept="NWlO9" id="1kjPA_yqDv7" role="lGtFl">
-        <property role="NWlVz" value="The maximum number of threads that can be used for running the tests." />
+      <node concept="z59LJ" id="70cGcTIKjTT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTS" role="1dT_Ay">
+            <property role="1dT_AB" value="The maximum number of threads that can be used for running the tests." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3NycWlQNPvC" role="jymVt" />
@@ -343,8 +359,12 @@
       <node concept="3cmrfG" id="3NycWlQNQd1" role="33vP2m">
         <property role="3cmrfH" value="30000" />
       </node>
-      <node concept="NWlO9" id="3NycWlQNQ9h" role="lGtFl">
-        <property role="NWlVz" value="Maximum time for running an analysis - currently, 30s." />
+      <node concept="z59LJ" id="70cGcTIKjTW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTV" role="1dT_Ay">
+            <property role="1dT_AB" value="Maximum time for running an analysis - currently, 30s." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="72F6xZzG69H" role="1B3o_S" />
@@ -628,8 +648,12 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="24GUsn9DcML" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="24GUsn9DcMM" role="lGtFl">
-        <property role="NWlVz" value="Check a single analysis configuration." />
+      <node concept="P$JXv" id="70cGcTIKjTZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTY" role="1dT_Ay">
+            <property role="1dT_AB" value="Check a single analysis configuration." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="24GUsn9Dcqu" role="jymVt" />
@@ -806,8 +830,12 @@
         <property role="TrG5h" value="model" />
         <node concept="H_c77" id="7mSH3Wn1Pyv" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3hNQKr2z32W" role="lGtFl">
-        <property role="NWlVz" value="Check an analysis configuration." />
+      <node concept="P$JXv" id="70cGcTIKjU2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjU0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjU1" role="1dT_Ay">
+            <property role="1dT_AB" value="Check an analysis configuration." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvFGFLa" role="jymVt" />
@@ -950,8 +978,12 @@
         <property role="3TUv4t" value="true" />
         <node concept="17QB3L" id="28vOu_uq__t" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="28vOu_uqzSD" role="lGtFl">
-        <property role="NWlVz" value="Check a single analysis configuration." />
+      <node concept="P$JXv" id="70cGcTIKjU5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjU3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjU4" role="1dT_Ay">
+            <property role="1dT_AB" value="Check a single analysis configuration." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="28vOu_uqzwZ" role="jymVt" />
@@ -1100,8 +1132,12 @@
           <ref role="ehGHo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
         </node>
       </node>
-      <node concept="NWlO9" id="6m6BTo4Xtgn" role="lGtFl">
-        <property role="NWlVz" value="Check a single analysis configuration." />
+      <node concept="P$JXv" id="70cGcTIKjU8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjU6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjU7" role="1dT_Ay">
+            <property role="1dT_AB" value="Check a single analysis configuration." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6m6BTo4Xs$G" role="jymVt" />
@@ -1293,8 +1329,12 @@
         <property role="TrG5h" value="model" />
         <node concept="H_c77" id="7mSH3Wn23V3" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3hNQKr2z2KK" role="lGtFl">
-        <property role="NWlVz" value="Facade to load the analysis results." />
+      <node concept="P$JXv" id="70cGcTIKjUb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjU9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUa" role="1dT_Ay">
+            <property role="1dT_AB" value="Facade to load the analysis results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvFGH58" role="jymVt" />
@@ -1454,13 +1494,17 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5KvlJsgh$YT" role="1B3o_S" />
-      <node concept="NWlO9" id="5A94f9Ez$dj" role="lGtFl">
-        <property role="NWlVz" value="Runs the analyzer" />
-      </node>
       <node concept="16euLQ" id="2Gafe2itbZG" role="16eVyc">
         <property role="TrG5h" value="T" />
         <node concept="3uibUv" id="2Gafe2itdTP" role="3ztrMU">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUe" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUd" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs the analyzer" />
+          </node>
         </node>
       </node>
     </node>
@@ -1582,8 +1626,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="6mJYm3jCsve" role="lGtFl">
-        <property role="NWlVz" value="Builds the model to make last generated model available." />
+      <node concept="P$JXv" id="70cGcTIKjUh" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUf" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUg" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the model to make last generated model available." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3jCi_P" role="jymVt" />
@@ -1681,8 +1729,12 @@
         <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
       </node>
       <node concept="3Tm1VV" id="3hNQKr2vu$T" role="1B3o_S" />
-      <node concept="NWlO9" id="3hNQKr2wbkv" role="lGtFl">
-        <property role="NWlVz" value="Creates an empty tool adapter." />
+      <node concept="P$JXv" id="70cGcTIKjUk" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUi" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUj" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates an empty tool adapter." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6nRVhifDWKu" role="jymVt" />
@@ -1731,9 +1783,6 @@
       <node concept="3uibUv" id="6nRVhifDZ1G" role="3clF45">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-      <node concept="NWlO9" id="6nRVhifDZIO" role="lGtFl">
-        <property role="NWlVz" value="Finds the result with a given user friendly message." />
-      </node>
       <node concept="37vLTG" id="6nRVhifDZIX" role="3clF46">
         <property role="TrG5h" value="results" />
         <node concept="_YKpA" id="6nRVhifDZIV" role="1tU5fm">
@@ -1745,6 +1794,13 @@
       <node concept="37vLTG" id="6nRVhifDZPb" role="3clF46">
         <property role="TrG5h" value="userFriendlyMsg" />
         <node concept="17QB3L" id="6nRVhifDZPY" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUn" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUl" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUm" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the result with a given user friendly message." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1eEm1HSIWwF" role="jymVt" />
@@ -1793,9 +1849,6 @@
       <node concept="3uibUv" id="1eEm1HSIXBt" role="3clF45">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-      <node concept="NWlO9" id="1eEm1HSIXBu" role="lGtFl">
-        <property role="NWlVz" value="Finds the result with a given prefix for the user friendly message." />
-      </node>
       <node concept="37vLTG" id="1eEm1HSIXBv" role="3clF46">
         <property role="TrG5h" value="results" />
         <node concept="_YKpA" id="1eEm1HSIXBw" role="1tU5fm">
@@ -1808,10 +1861,21 @@
         <property role="TrG5h" value="userFriendlyMsgPrefix" />
         <node concept="17QB3L" id="1eEm1HSIXBz" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKjUq" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUo" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUp" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the result with a given prefix for the user friendly message." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="1eEm1HSIWU8" role="jymVt" />
-    <node concept="NWlO9" id="1kjPA_yqDDl" role="lGtFl">
-      <property role="NWlVz" value="Facade for running tests." />
+    <node concept="3UR2Jj" id="70cGcTIKjUt" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjUr" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjUs" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for running tests." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5E1$geGhDJg">
@@ -1936,13 +2000,17 @@
         <property role="TrG5h" value="userFriendlyMessage" />
         <node concept="17QB3L" id="5E1$geGhDOW" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5E1$geGhI8c" role="lGtFl">
-        <property role="NWlVz" value="Finds the lifted result with a certain user friendly message from a list of results." />
-      </node>
       <node concept="16euLQ" id="1kjPA_yoTuZ" role="16eVyc">
         <property role="TrG5h" value="T" />
         <node concept="3uibUv" id="1kjPA_yoTE_" role="3ztrMU">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUv" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the lifted result with a certain user friendly message from a list of results." />
+          </node>
         </node>
       </node>
     </node>
@@ -2066,13 +2134,17 @@
         <property role="TrG5h" value="userFriendlyMsgPrefix" />
         <node concept="17QB3L" id="5kHkJcGJQCe" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5kHkJcGJQCf" role="lGtFl">
-        <property role="NWlVz" value="Finds the lifted result with a certain user friendly message prefix from a list of results." />
-      </node>
       <node concept="16euLQ" id="5kHkJcGJQCg" role="16eVyc">
         <property role="TrG5h" value="T" />
         <node concept="3uibUv" id="5kHkJcGJQCh" role="3ztrMU">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUy" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the lifted result with a certain user friendly message prefix from a list of results." />
+          </node>
         </node>
       </node>
     </node>
@@ -2203,13 +2275,17 @@
         <property role="TrG5h" value="msg" />
         <node concept="17QB3L" id="1kjPA_yjrng" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1kjPA_yjrnh" role="lGtFl">
-        <property role="NWlVz" value="Finds the all lifted result with a certain user friendly message from a list of results." />
-      </node>
       <node concept="16euLQ" id="1kjPA_yoUtB" role="16eVyc">
         <property role="TrG5h" value="T" />
         <node concept="3uibUv" id="1kjPA_yoUDj" role="3ztrMU">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUA" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjU$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjU_" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds the all lifted result with a certain user friendly message from a list of results." />
+          </node>
         </node>
       </node>
     </node>
@@ -2436,13 +2512,17 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="17FqOSBEPQc" role="lGtFl">
-        <property role="NWlVz" value="Pretty prints results" />
-      </node>
       <node concept="16euLQ" id="1kjPA_yop5X" role="16eVyc">
         <property role="TrG5h" value="T" />
         <node concept="3uibUv" id="1kjPA_yopvf" role="3ztrMU">
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUC" role="1dT_Ay">
+            <property role="1dT_AB" value="Pretty prints results" />
+          </node>
         </node>
       </node>
     </node>
@@ -2509,8 +2589,12 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="6izRX52tWm5" role="lGtFl">
-        <property role="NWlVz" value="Pretty prints cex" />
+      <node concept="P$JXv" id="70cGcTIKjUG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUF" role="1dT_Ay">
+            <property role="1dT_AB" value="Pretty prints cex" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6izRX52tWeB" role="jymVt" />
@@ -2581,13 +2665,21 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="3rfnEZlUovy" role="lGtFl">
-        <property role="NWlVz" value="Pretty prints raw cex" />
+      <node concept="P$JXv" id="70cGcTIKjUJ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUH" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUI" role="1dT_Ay">
+            <property role="1dT_AB" value="Pretty prints raw cex" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="5E1$geGhDJh" role="1B3o_S" />
-    <node concept="NWlO9" id="5E1$geGhHUT" role="lGtFl">
-      <property role="NWlVz" value="Different utility methods." />
+    <node concept="3UR2Jj" id="70cGcTIKjUM" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjUK" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjUL" role="1dT_Ay">
+          <property role="1dT_AB" value="Different utility methods." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

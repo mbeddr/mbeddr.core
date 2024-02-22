@@ -30,7 +30,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:ebb5e132-d298-4649-b320-b3f4d7f3acff:com.mbeddr.core.debug.blext" version="0" />
-    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
+    <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="3" />
     <language slang="l:935bff03-e393-4547-a3a2-60335e0cad25:com.mbeddr.mpsutil.ccmenu" version="-1" />
     <language slang="l:f92af8d7-1fae-4067-8109-17acf80f8e58:com.mbeddr.mpsutil.ccmenu.reftarget" version="-1" />
     <language slang="l:17566462-d837-4552-874c-64e45c10778a:com.mbeddr.mpsutil.compare.pattern" version="0" />

@@ -2,8 +2,8 @@
 <model ref="r:80f40856-e73c-4c3a-8c6d-bab7abe0bae8(com.mbeddr.analyses.acsl.cbmc.rt.counterexample.lifted.model)">
   <persistence version="9" />
   <languages>
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -97,12 +97,23 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -131,9 +142,6 @@
     <node concept="3uibUv" id="5GEvLp_U4t$" role="1zkMxy">
       <ref role="3uigEE" to="eqhl:3D_1CBqa5NE" resolve="FailState" />
     </node>
-    <node concept="NWlO9" id="5GEvLp_QlGR" role="lGtFl">
-      <property role="NWlVz" value="ACSL atomic contract violation." />
-    </node>
     <node concept="2tJIrI" id="5GEvLp_QlGU" role="jymVt" />
     <node concept="312cEg" id="5GEvLp_Qndx" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -143,8 +151,12 @@
       <node concept="3Tqbb2" id="5GEvLp_QnaU" role="1tU5fm">
         <ref role="ehGHo" to="97v6:3i$cQqpAZi0" resolve="IAtomicContract" />
       </node>
-      <node concept="NWlO9" id="5GEvLp_Qngb" role="lGtFl">
-        <property role="NWlVz" value="The atomic contract." />
+      <node concept="z59LJ" id="70cGcTIKcZ0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKcYY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKcYZ" role="1dT_Ay">
+            <property role="1dT_AB" value="The atomic contract." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5GEvLp_Qnhl" role="jymVt" />
@@ -187,8 +199,12 @@
           <ref role="3uigEE" to="rbq9:658if_wttbX" resolve="RAW_FAIL_KIND" />
         </node>
       </node>
-      <node concept="NWlO9" id="5GEvLp_Qmkt" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKcZ3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKcZ1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKcZ2" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5GEvLp_Qmjw" role="jymVt" />
@@ -271,6 +287,13 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5GEvLp_QmjG" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIKcYX" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKcYV" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKcYW" role="1dT_Ay">
+          <property role="1dT_AB" value="ACSL atomic contract violation." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
