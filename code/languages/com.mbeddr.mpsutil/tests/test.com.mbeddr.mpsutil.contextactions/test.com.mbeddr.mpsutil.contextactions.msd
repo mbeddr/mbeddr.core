@@ -9,6 +9,7 @@
     <facet type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <sourcePath />
   <dependencies>

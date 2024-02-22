@@ -10,7 +10,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
   </languages>
@@ -376,11 +376,6 @@
       </concept>
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
@@ -392,6 +387,18 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -5403,8 +5410,12 @@
       </node>
       <node concept="3Tm6S6" id="335p1i8Kwz2" role="1B3o_S" />
       <node concept="3cqZAl" id="335p1i8KyNz" role="3clF45" />
-      <node concept="NWlO9" id="4Fd3Qe3v516" role="lGtFl">
-        <property role="NWlVz" value="populate the CodeViewer window with the text of the currentFile" />
+      <node concept="P$JXv" id="70cGcTIKmGN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmGL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmGM" role="1dT_Ay">
+            <property role="1dT_AB" value="populate the CodeViewer window with the text of the currentFile" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7zKW2MToA35" role="jymVt" />
@@ -5782,8 +5793,12 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="3h_NS8zrEEl" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4Fd3Qe3v2kW" role="lGtFl">
-        <property role="NWlVz" value="finds and highlights the lines of a selected node in the generated file" />
+      <node concept="P$JXv" id="70cGcTIKmGQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmGO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmGP" role="1dT_Ay">
+            <property role="1dT_AB" value="finds and highlights the lines of a selected node in the generated file" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="312cEu" id="7XJGPBqmAIa" role="jymVt">
@@ -6142,8 +6157,12 @@
         <node concept="2AHcQZ" id="5z92V1otf4v" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
-        <node concept="NWlO9" id="4Fd3Qe3ucyj" role="lGtFl">
-          <property role="NWlVz" value="opens the model file and highlight the right node when the mouse selects a line in the generated file" />
+        <node concept="P$JXv" id="70cGcTIKmGT" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKmGR" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKmGS" role="1dT_Ay">
+              <property role="1dT_AB" value="opens the model file and highlight the right node when the mouse selects a line in the generated file" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3Tm6S6" id="7XJGPBqmF0Q" role="1B3o_S" />

@@ -2,8 +2,7 @@
 <model ref="r:46ce6516-d852-41d7-ab4a-ae1c6186ce94(com.mbeddr.analyses.utils.lift)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -81,10 +80,18 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -303,13 +310,21 @@
           <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
         </node>
       </node>
-      <node concept="NWlO9" id="518euTyxduh" role="lGtFl">
-        <property role="NWlVz" value="Transforms a string into a literal." />
+      <node concept="P$JXv" id="70cGcTIKda4" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKda2" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKda3" role="1dT_Ay">
+            <property role="1dT_AB" value="Transforms a string into a literal." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="518euTyx7Wi" role="1B3o_S" />
-    <node concept="NWlO9" id="518euTyx7Xl" role="lGtFl">
-      <property role="NWlVz" value="Transforms strings into expressions" />
+    <node concept="3UR2Jj" id="70cGcTIKda7" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKda5" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKda6" role="1dT_Ay">
+          <property role="1dT_AB" value="Transforms strings into expressions" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3Kl8TLCLsaJ">
@@ -472,13 +487,21 @@
           <ref role="ehGHo" to="mj1l:7FQByU3CrCQ" resolve="Type" />
         </node>
       </node>
-      <node concept="NWlO9" id="3Kl8TLCLEo_" role="lGtFl">
-        <property role="NWlVz" value="Returns a constant expression with a certain type." />
+      <node concept="P$JXv" id="70cGcTIKdaa" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKda8" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKda9" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a constant expression with a certain type." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3Kl8TLCLsaK" role="1B3o_S" />
-    <node concept="NWlO9" id="3Kl8TLCLEoq" role="lGtFl">
-      <property role="NWlVz" value="Utility class for building constant expressions with different types. " />
+    <node concept="3UR2Jj" id="70cGcTIKdad" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdab" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdac" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility class for building constant expressions with different types. " />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -3,7 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -195,9 +196,20 @@
         <property id="5667201763537739900" name="label" index="sxT66" />
         <child id="5667201763537739902" name="expr" index="sxT64" />
       </concept>
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -297,8 +309,12 @@
       <property role="TrG5h" value="savedMetadataFileName" />
       <property role="3TUv4t" value="false" />
       <node concept="17QB3L" id="7Fb9EHH5Tjd" role="1tU5fm" />
-      <node concept="NWlO9" id="7Fb9EHH5WuL" role="lGtFl">
-        <property role="NWlVz" value="Fully qualified file name containing metadata information." />
+      <node concept="z59LJ" id="70cGcTIKkrD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkrB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkrC" role="1dT_Ay">
+            <property role="1dT_AB" value="Fully qualified file name containing metadata information." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Fb9EHH5UKb" role="jymVt" />
@@ -306,8 +322,12 @@
       <property role="TrG5h" value="savedCoverageFileName" />
       <property role="3TUv4t" value="false" />
       <node concept="17QB3L" id="7Fb9EHH5U86" role="1tU5fm" />
-      <node concept="NWlO9" id="7Fb9EHH5WMG" role="lGtFl">
-        <property role="NWlVz" value="Fully qualified file name containing coverage information." />
+      <node concept="z59LJ" id="70cGcTIKkrG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkrE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkrF" role="1dT_Ay">
+            <property role="1dT_AB" value="Fully qualified file name containing coverage information." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7n88SMjN3wW" role="jymVt" />
@@ -573,8 +593,12 @@
         <property role="TrG5h" value="coverageFileName" />
         <node concept="17QB3L" id="laok7UPz0C" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7n88SMjMZPB" role="lGtFl">
-        <property role="NWlVz" value="Reads the coverage info from saved files and lifts it at DSL level." />
+      <node concept="P$JXv" id="70cGcTIKkrJ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkrH" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkrI" role="1dT_Ay">
+            <property role="1dT_AB" value="Reads the coverage info from saved files and lifts it at DSL level." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7n88SMjMSrk" role="jymVt" />
@@ -926,8 +950,12 @@
       </node>
       <node concept="3Tm1VV" id="7n88SMjN0VK" role="1B3o_S" />
       <node concept="3cqZAl" id="7n88SMjN17R" role="3clF45" />
-      <node concept="NWlO9" id="7n88SMjN1zF" role="lGtFl">
-        <property role="NWlVz" value="Refreshes the lifted information with the information found in memory by emma." />
+      <node concept="P$JXv" id="70cGcTIKkrM" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkrK" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkrL" role="1dT_Ay">
+            <property role="1dT_AB" value="Refreshes the lifted information with the information found in memory by emma." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7n88SMjN1jC" role="jymVt" />
@@ -1391,13 +1419,21 @@
           <ref role="3uigEE" to="c215:~ICoverageData" resolve="ICoverageData" />
         </node>
       </node>
-      <node concept="NWlO9" id="7n88SMjMWs6" role="lGtFl">
-        <property role="NWlVz" value="Performs the lifting." />
+      <node concept="P$JXv" id="70cGcTIKkrP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkrN" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkrO" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs the lifting." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="1OuY31lb1yc" role="1B3o_S" />
-    <node concept="NWlO9" id="7n88SMjN0rc" role="lGtFl">
-      <property role="NWlVz" value="Lifter for the coverage." />
+    <node concept="3UR2Jj" id="70cGcTIKkrS" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkrQ" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkrR" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter for the coverage." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7UjC_TCJKDa">
@@ -1804,8 +1840,12 @@
     </node>
     <node concept="2tJIrI" id="51ECGN58zVC" role="jymVt" />
     <node concept="3Tm1VV" id="7UjC_TCJKDb" role="1B3o_S" />
-    <node concept="NWlO9" id="7n88SMjN0Gd" role="lGtFl">
-      <property role="NWlVz" value="Cache for holding the lifted results." />
+    <node concept="3UR2Jj" id="70cGcTIKkrV" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkrT" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkrU" role="1dT_Ay">
+          <property role="1dT_AB" value="Cache for holding the lifted results." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -5,8 +5,9 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -291,10 +292,18 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
@@ -4911,8 +4920,12 @@
       </node>
       <node concept="10Oyi0" id="2aRRzphRRVG" role="3clF45" />
       <node concept="3Tm1VV" id="2aRRzphROzQ" role="1B3o_S" />
-      <node concept="NWlO9" id="2aRRzphRWwQ" role="lGtFl">
-        <property role="NWlVz" value="Returns the last step number in the counterexample where this node occurs." />
+      <node concept="P$JXv" id="70cGcTIK7Q2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Q0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Q1" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the last step number in the counterexample where this node occurs." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2aRRzphROpB" role="jymVt" />
@@ -5070,8 +5083,12 @@
       </node>
       <node concept="17QB3L" id="7kzfSagzVqG" role="3clF45" />
       <node concept="3Tm1VV" id="7kzfSagxW6d" role="1B3o_S" />
-      <node concept="NWlO9" id="2aRRzphSjTT" role="lGtFl">
-        <property role="NWlVz" value="Returns the value for the string for the projection for a given step in the counterexample" />
+      <node concept="P$JXv" id="70cGcTIK7Q5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Q3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Q4" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the value for the string for the projection for a given step in the counterexample" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7kzfSagzP0L" role="jymVt" />
@@ -5200,8 +5217,12 @@
       </node>
       <node concept="10Oyi0" id="5x9xdfYVlJL" role="3clF45" />
       <node concept="3Tm1VV" id="5x9xdfYVii3" role="1B3o_S" />
-      <node concept="NWlO9" id="5x9xdfYVii4" role="lGtFl">
-        <property role="NWlVz" value="Returns the number of occurrences of the current node in the counterexample." />
+      <node concept="P$JXv" id="70cGcTIK7Q8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Q6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Q7" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the number of occurrences of the current node in the counterexample." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5x9xdfYVhpQ" role="jymVt" />
@@ -5429,14 +5450,22 @@
       </node>
       <node concept="17QB3L" id="2aRRzphSmRq" role="3clF45" />
       <node concept="3Tm1VV" id="2aRRzphSmRr" role="1B3o_S" />
-      <node concept="NWlO9" id="2aRRzphSmRs" role="lGtFl">
-        <property role="NWlVz" value="Returns the tooltip for a node." />
+      <node concept="P$JXv" id="70cGcTIK7Qb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Q9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Qa" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the tooltip for a node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2aRRzphSmJv" role="jymVt" />
     <node concept="3Tm1VV" id="7kzfSagzOZK" role="1B3o_S" />
-    <node concept="NWlO9" id="2aRRzphSjT1" role="lGtFl">
-      <property role="NWlVz" value="Utility class for projecting counterexamples." />
+    <node concept="3UR2Jj" id="70cGcTIK7Qe" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Qc" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Qd" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility class for projecting counterexamples." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="RtYIR" id="7kzfSag_8G1">

@@ -2,10 +2,11 @@
 <model ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:958b1fc2-ce2f-49b5-9a5c-0628d05fdd4c(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.seed)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -122,16 +123,24 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -201,8 +210,12 @@
         <property role="TrG5h" value="scope" />
         <node concept="3Tqbb2" id="7sjDQ2_oZD4" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7sjDQ2_oZD5" role="lGtFl">
-        <property role="NWlVz" value="Chooses a node that will serve as seed for mutation." />
+      <node concept="P$JXv" id="70cGcTIKkiS" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkiQ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkiR" role="1dT_Ay">
+            <property role="1dT_AB" value="Chooses a node that will serve as seed for mutation." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7sjDQ2_oZD6" role="1B3o_S" />
@@ -418,12 +431,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="7sjDQ2_oZDE" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKkiV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkiT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkiU" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="7K2NL56H8JS" role="lGtFl">
-      <property role="NWlVz" value="Chooses randomly a descendant which is an instance of the concept." />
+    <node concept="3UR2Jj" id="70cGcTIKkiY" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkiW" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkiX" role="1dT_Ay">
+          <property role="1dT_AB" value="Chooses randomly a descendant which is an instance of the concept." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7sjDQ2_oZDF">
@@ -541,12 +562,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="7sjDQ2_oZEd" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKkj1" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkiZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkj0" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="7sjDQ2_oZEe" role="lGtFl">
-      <property role="NWlVz" value="Chooses randomly a descendant." />
+    <node concept="3UR2Jj" id="70cGcTIKkj4" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkj2" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkj3" role="1dT_Ay">
+          <property role="1dT_AB" value="Chooses randomly a descendant." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6fGXG$6hnBF">
@@ -750,12 +779,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="6fGXG$6hnCd" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKkj7" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkj5" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkj6" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="6fGXG$6hnCe" role="lGtFl">
-      <property role="NWlVz" value="Chooses randomly a descendant whose concept belongs to the set of languages." />
+    <node concept="3UR2Jj" id="70cGcTIKkja" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkj8" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkj9" role="1dT_Ay">
+          <property role="1dT_AB" value="Chooses randomly a descendant whose concept belongs to the set of languages." />
+        </node>
+      </node>
     </node>
   </node>
 </model>
