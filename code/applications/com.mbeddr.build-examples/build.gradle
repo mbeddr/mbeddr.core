@@ -27,7 +27,7 @@ repositories {
     }
 }
 // Tasks for resolving dependencies (MPS + mbeddr platform)
-task resolve_mps(type: Copy) {
+task resolve_mps(type: Sync) {
     dependsOn configurations.mps
     from {
         configurations.mps.resolve().collect { zipTree(it) }

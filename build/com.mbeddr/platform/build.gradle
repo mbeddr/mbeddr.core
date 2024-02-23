@@ -9,7 +9,7 @@ if (project.skipresolve_mps) {
         }
     }
 } else {
-    task resolve_mps(type: Copy) {
+    task resolve_mps(type: Sync) {
         dependsOn configurations.mps
         from {
             configurations.mps.resolve().collect { zipTree(it) }
@@ -19,14 +19,14 @@ if (project.skipresolve_mps) {
 }
 
 if (project.hasProperty('mpsExtensionsZip')) {
-    task resolve_mps_extensions(type: Copy) {
+    task resolve_mps_extensions(type: Sync) {
         from {
             zipTree(project.property('mpsExtensionsZip'))
         }
         into artifactsDir
     }
 } else {
-    task resolve_mps_extensions(type: Copy) {
+    task resolve_mps_extensions(type: Sync) {
         dependsOn configurations.mpsExtensions
         from {
             configurations.mpsExtensions.resolve().collect { zipTree(it) }
