@@ -26,6 +26,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
@@ -198,6 +199,7 @@
   <node concept="sE7Ow" id="70BL6LoVzwU">
     <property role="TrG5h" value="testAction" />
     <property role="2uzpH1" value="This is the Wizard Test" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="70BL6LoVzwV" role="tncku">
       <node concept="3clFbS" id="70BL6LoVzwW" role="2VODD2">
         <node concept="1X3_iC" id="4O4MWU3UikM" role="lGtFl">
@@ -212,6 +214,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1ZcZPelseak" role="3cqZAp" />
         <node concept="3cpWs8" id="6JByj2CH9zE" role="3cqZAp">
           <node concept="3cpWsn" id="6JByj2CH9zF" role="3cpWs9">
             <property role="TrG5h" value="wiz" />

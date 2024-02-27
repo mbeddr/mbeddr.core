@@ -23,7 +23,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Removed
 
 - The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
- JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+  JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
 
 ### Added
 
@@ -46,6 +46,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 - Enhanced TraceExplorer to hide toolbar buttons.
+
+### Removed
+
+- The language com.mbeddr.mpsutil.lantest was removed since it isn't fully working anymore.
 
 ## com.mbeddr.core.base
 
@@ -76,6 +80,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
 - The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
+- plantuml was upgraded to v1.2023.12.
 
 ### Fixed
 

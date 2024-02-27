@@ -190,8 +190,8 @@
     </node>
   </node>
   <node concept="1Q5_ze" id="77gEP6zfbbR">
-    <ref role="1Q5_zd" node="77gEP6zfbaR" />
-    <ref role="1Q5_zp" node="77gEP6zfbaY" />
+    <ref role="1Q5_zd" node="77gEP6zfbaR" resolve="MySpecialName" />
+    <ref role="1Q5_zp" node="77gEP6zfbaY" resolve="MeinNeuerName" />
   </node>
   <node concept="1lH9Xt" id="7Ssz$kY9Bu8">
     <property role="TrG5h" value="TranslatedPresentation" />
