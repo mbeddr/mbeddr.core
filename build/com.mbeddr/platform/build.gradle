@@ -24,6 +24,9 @@ if (project.hasProperty('mpsExtensionsZip')) {
             zipTree(project.property('mpsExtensionsZip'))
         }
         into artifactsDir
+        preserve {
+            include 'mbeddr/**'
+        }
     }
 } else {
     task resolve_mps_extensions(type: Sync) {
@@ -32,6 +35,9 @@ if (project.hasProperty('mpsExtensionsZip')) {
             configurations.mpsExtensions.resolve().collect { zipTree(it) }
         }
         into artifactsDir
+        preserve {
+            include 'mbeddr/**'
+        }
     }
 }
 
