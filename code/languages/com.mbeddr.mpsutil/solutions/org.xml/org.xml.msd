@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="off" classes="off" ext="yes">
+    <facet type="java" compile="ext" classes="provided" ext="no">
       <classes generated="true" />
       <library location="${module}/lib/resolver.jar" />
       <library location="${module}/lib/serializer.jar" />
