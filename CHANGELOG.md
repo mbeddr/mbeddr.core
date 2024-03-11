@@ -5,12 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# March 2023
+
+## com.mbeddr.mpsutils
+
+### Added
+
+- Interpreters now support data flow analysis.
+
 # January 2024
 
 ## com.mbeddr.mpsutils
 
+### Fixed
+
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
 - Referenced actions in action profiles now emit a warning when they can't be found.
+
+## com.mbeddr.doc
+
+### Changed
+
+- The Java library xmlbeans of the spreadsheet language was upgraded from version 2.6.0 to 4.0.0
+- The Java library Apache Poi of the spreadsheet language was upgraded from 2.6.0 to 5.0.0
 
 # December 2023
 

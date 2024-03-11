@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports />
   <registry>
@@ -33,10 +33,18 @@
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -58,8 +66,12 @@
       <node concept="3clFbS" id="TJrbIN7dfG" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7dfH" role="1B3o_S" />
       <node concept="17QB3L" id="TJrbIN7dfI" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7dg5" role="lGtFl">
-        <property role="NWlVz" value="Returns the name of the category of this result." />
+      <node concept="P$JXv" id="70cGcTIKdct" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcr" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcs" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name of the category of this result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7dfi" role="jymVt" />
@@ -71,8 +83,12 @@
       <node concept="3clFbS" id="TJrbIN8sPk" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN8sPl" role="1B3o_S" />
       <node concept="17QB3L" id="TJrbIN8sPm" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN8sPn" role="lGtFl">
-        <property role="NWlVz" value="Returns the user friendly name of this result." />
+      <node concept="P$JXv" id="70cGcTIKdcw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcv" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the user friendly name of this result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN8sNP" role="jymVt" />
@@ -82,8 +98,12 @@
       <node concept="3clFbS" id="TJrbIN8g11" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN8g12" role="1B3o_S" />
       <node concept="3cpWsb" id="TJrbINbUTW" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN8g2_" role="lGtFl">
-        <property role="NWlVz" value="Returns the time in milliseconds which was needed to compute this result." />
+      <node concept="P$JXv" id="70cGcTIKdcz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcy" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the time in milliseconds which was needed to compute this result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7jpD" role="jymVt" />
@@ -93,8 +113,12 @@
       <node concept="3clFbS" id="TJrbIN7moW" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7moX" role="1B3o_S" />
       <node concept="10P_77" id="TJrbIN7mop" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7mpD" role="lGtFl">
-        <property role="NWlVz" value="Returns whether this result is a success." />
+      <node concept="P$JXv" id="70cGcTIKdcA" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdc$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdc_" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns whether this result is a success." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7msv" role="jymVt" />
@@ -104,8 +128,12 @@
       <node concept="3clFbS" id="TJrbIN7mu9" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7mua" role="1B3o_S" />
       <node concept="10P_77" id="TJrbIN7mtr" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7mv1" role="lGtFl">
-        <property role="NWlVz" value="Returns whether this result is a failure." />
+      <node concept="P$JXv" id="70cGcTIKdcD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcC" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns whether this result is a failure." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7mz2" role="jymVt" />
@@ -115,8 +143,12 @@
       <node concept="3clFbS" id="TJrbIN7_af" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7_ag" role="1B3o_S" />
       <node concept="10P_77" id="TJrbIN7_ah" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7_ai" role="lGtFl">
-        <property role="NWlVz" value="Returns whether this result is unknown." />
+      <node concept="P$JXv" id="70cGcTIKdcG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcF" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns whether this result is unknown." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7mzs" role="jymVt" />
@@ -126,8 +158,12 @@
       <node concept="3clFbS" id="TJrbIN7jlG" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7jlH" role="1B3o_S" />
       <node concept="10P_77" id="TJrbIN7jlk" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7jme" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this result was generated due to a runtime error." />
+      <node concept="P$JXv" id="70cGcTIKdcJ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcH" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcI" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this result was generated due to a runtime error." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7_gF" role="jymVt" />
@@ -137,8 +173,12 @@
       <node concept="3clFbS" id="TJrbIN7_ff" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7_fg" role="1B3o_S" />
       <node concept="10P_77" id="TJrbIN7_fh" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7_fi" role="lGtFl">
-        <property role="NWlVz" value="Returns whether the computation of this result was canceled." />
+      <node concept="P$JXv" id="70cGcTIKdcM" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcK" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcL" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns whether the computation of this result was canceled." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="TJrbIN7_xi" role="jymVt" />
@@ -148,14 +188,15 @@
       <node concept="3clFbS" id="TJrbIN7_vF" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN7_vG" role="1B3o_S" />
       <node concept="10P_77" id="TJrbIN7_vH" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN7_vI" role="lGtFl">
-        <property role="NWlVz" value="Returns whether the computation of this result was timeout" />
+      <node concept="P$JXv" id="70cGcTIKdcP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcN" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcO" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns whether the computation of this result was timeout" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="TJrbIN7de_" role="1B3o_S" />
-    <node concept="NWlO9" id="TJrbIN7dfa" role="lGtFl">
-      <property role="NWlVz" value="Interface for analyses results." />
-    </node>
     <node concept="2tJIrI" id="TJrbIN9dQq" role="jymVt" />
     <node concept="3clFb_" id="TJrbIN9dUD" role="jymVt">
       <property role="2aFKle" value="false" />
@@ -163,8 +204,19 @@
       <node concept="3clFbS" id="TJrbIN9dUG" role="3clF47" />
       <node concept="3Tm1VV" id="TJrbIN9dUH" role="1B3o_S" />
       <node concept="10Oyi0" id="TJrbIN9dSW" role="3clF45" />
-      <node concept="NWlO9" id="TJrbIN9dWA" role="lGtFl">
-        <property role="NWlVz" value="Returns the size of the whitness." />
+      <node concept="P$JXv" id="70cGcTIKdcV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcU" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the size of the whitness." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKdcS" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdcQ" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdcR" role="1dT_Ay">
+          <property role="1dT_AB" value="Interface for analyses results." />
+        </node>
       </node>
     </node>
   </node>
@@ -177,13 +229,21 @@
       <node concept="3clFbS" id="1EZfgaQmLsV" role="3clF47" />
       <node concept="3Tm1VV" id="1EZfgaQmLsW" role="1B3o_S" />
       <node concept="10P_77" id="1EZfgaQmLsM" role="3clF45" />
-      <node concept="NWlO9" id="1EZfgaQmLtC" role="lGtFl">
-        <property role="NWlVz" value="Is this whitness entry a major one? Major entries will be printed with BOLD in the whitness." />
+      <node concept="P$JXv" id="70cGcTIKdcY" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcW" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcX" role="1dT_Ay">
+            <property role="1dT_AB" value="Is this whitness entry a major one? Major entries will be printed with BOLD in the whitness." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="1EZfgaQmLrU" role="1B3o_S" />
-    <node concept="NWlO9" id="1EZfgaQmLts" role="lGtFl">
-      <property role="NWlVz" value="An entry in the whitness list." />
+    <node concept="3UR2Jj" id="70cGcTIKdd1" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdcZ" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdd0" role="1dT_Ay">
+          <property role="1dT_AB" value="An entry in the whitness list." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

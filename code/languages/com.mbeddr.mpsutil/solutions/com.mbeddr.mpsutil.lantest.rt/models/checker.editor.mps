@@ -3,9 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="7bhk" ref="r:7bb2797e-acd3-426b-9be6-19e432718b19(com.mbeddr.mpsutil.lantest.rt.checker.base)" />
@@ -154,11 +155,6 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348174" name="jetbrains.mps.lang.access.structure.ExecuteCommandInEDTStatement" flags="nn" index="1QHqEF" />
@@ -171,6 +167,20 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -199,8 +209,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="5oO2AcYipdT" role="1tU5fm" />
       <node concept="3Tm6S6" id="5oO2AcYipdS" role="1B3o_S" />
-      <node concept="NWlO9" id="5oO2AcYiP7j" role="lGtFl">
-        <property role="NWlVz" value="Has this node been successfully opened in teh editor?" />
+      <node concept="z59LJ" id="70cGcTIKkiw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkiu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkiv" role="1dT_Ay">
+            <property role="1dT_AB" value="Has this node been successfully opened in teh editor?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcYiMwt" role="jymVt" />
@@ -418,8 +432,12 @@
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="5oO2AcYiIBG" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5oO2AcYiPwH" role="lGtFl">
-        <property role="NWlVz" value="Tries to open a node in the editor. Returns true if the node could be successfully opened." />
+      <node concept="P$JXv" id="70cGcTIKkiz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkix" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkiy" role="1dT_Ay">
+            <property role="1dT_AB" value="Tries to open a node in the editor. Returns true if the node could be successfully opened." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4$GVDQfVu0U" role="jymVt" />
@@ -567,8 +585,12 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5oO2AcYiI_N" role="1B3o_S" />
-    <node concept="NWlO9" id="5oO2AcYiICP" role="lGtFl">
-      <property role="NWlVz" value="Utility methods to check editors' robustness." />
+    <node concept="3UR2Jj" id="70cGcTIKkiA" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKki$" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKki_" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods to check editors' robustness." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6vg0wy0KKZn">
@@ -608,11 +630,15 @@
     </node>
     <node concept="2tJIrI" id="7VeUlv8Modl" role="jymVt" />
     <node concept="3Tm1VV" id="6vg0wy0KKZo" role="1B3o_S" />
-    <node concept="NWlO9" id="6vg0wy0KL0d" role="lGtFl">
-      <property role="NWlVz" value="Handler class for runtime errors in editor." />
-    </node>
     <node concept="3uibUv" id="7VeUlv8dBWs" role="1zkMxy">
       <ref role="3uigEE" to="7bhk:7VeUlv8dAWL" resolve="LoggedExceptionsHandlerBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKkiD" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkiB" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkiC" role="1dT_Ay">
+          <property role="1dT_AB" value="Handler class for runtime errors in editor." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

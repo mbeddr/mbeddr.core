@@ -12276,36 +12276,6 @@
       <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
     </node>
   </node>
-  <node concept="24kQdi" id="4pAedZZkdRJ">
-    <ref role="1XX52x" to="2c95:4pAedZZkdRB" resolve="DocRoot" />
-    <node concept="3EZMnI" id="4pAedZZkdSQ" role="2wV5jI">
-      <node concept="2iRkQZ" id="4pAedZZkdSR" role="2iSdaV" />
-      <node concept="3F0ifn" id="4pAedZZkdRL" role="3EZMnx">
-        <property role="3F0ifm" value="MPS built-in general purpose" />
-      </node>
-      <node concept="3F1sOY" id="4pAedZZkdSZ" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:4pAedZZkdSO" resolve="mpsText" />
-      </node>
-      <node concept="3F0ifn" id="4pAedZZkdT3" role="3EZMnx">
-        <property role="3F0ifm" value="------" />
-      </node>
-      <node concept="3F0ifn" id="4pAedZZkdT7" role="3EZMnx">
-        <property role="3F0ifm" value="Slisson RichText" />
-      </node>
-      <node concept="3F1sOY" id="4pAedZZkdTs" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:4pAedZZkdTc" resolve="slissonText" />
-      </node>
-      <node concept="3F0ifn" id="4pAedZZkdTf" role="3EZMnx">
-        <property role="3F0ifm" value="----" />
-      </node>
-      <node concept="3F0ifn" id="4pAedZZkdT$" role="3EZMnx">
-        <property role="3F0ifm" value="mbeddr textparagraph" />
-      </node>
-      <node concept="3F1sOY" id="4pAedZZkdTT" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:4pAedZZkdTG" resolve="mbeddrSection" />
-      </node>
-    </node>
-  </node>
   <node concept="1h_SRR" id="5G6qJwLf8t$">
     <property role="TrG5h" value="pasteToEmptyContent" />
     <ref role="1h_SK9" to="2c95:2TZO3Dbuxxg" resolve="EmptyDocContent" />
