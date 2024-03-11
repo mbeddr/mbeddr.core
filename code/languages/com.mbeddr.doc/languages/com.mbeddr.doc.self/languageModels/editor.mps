@@ -3,11 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="z5ox" ref="r:48b6c04c-173b-45da-963f-54fbbdb59cfc(com.mbeddr.doc.self.structure)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
+    <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -34,6 +36,9 @@
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -80,6 +85,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
   </registry>
   <node concept="24kQdi" id="7$DvC4gPSIt">
@@ -130,6 +138,7 @@
         </node>
         <node concept="3F0ifn" id="7$DvC4gPSI$" role="3EZMnx">
           <property role="3F0ifm" value="embed doc section" />
+          <ref role="1k5W1q" to="z726:3RseghId8o$" resolve="nodeReference" />
           <node concept="pVoyu" id="7$DvC4gR7zb" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -192,6 +201,18 @@
           <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="z5ox:54ozzUwooJ9" resolve="hints" />
           <node concept="l2Vlx" id="54ozzUwopex" role="2czzBx" />
+        </node>
+        <node concept="3F0ifn" id="UZf0JknA9G" role="3EZMnx">
+          <property role="3F0ifm" value="render the inspector:" />
+          <node concept="pVoyu" id="UZf0JknAay" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="UZf0JknAaz" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="27S6Sx" id="7yQnM2MA0yD" role="3EZMnx">
+          <ref role="1NtTu8" to="z5ox:UZf0Jkn_ZE" resolve="renderInspector" />
         </node>
         <node concept="l2Vlx" id="7$DvC4gSARM" role="2iSdaV" />
       </node>
