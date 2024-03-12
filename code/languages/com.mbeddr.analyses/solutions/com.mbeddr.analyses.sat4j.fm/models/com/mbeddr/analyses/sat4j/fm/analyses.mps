@@ -4,8 +4,9 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -243,9 +244,6 @@
         <child id="3212431740125201976" name="body" index="2jNDYt" />
       </concept>
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -260,6 +258,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -712,11 +724,15 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="6i3Vykm6E8L" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a feature model." />
-      </node>
       <node concept="3uibUv" id="tSjOfAaV$R" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8aH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8aF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8aG" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a feature model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BGT_ex" role="jymVt" />
@@ -833,11 +849,15 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="44j14BGTRuV" role="lGtFl">
-        <property role="NWlVz" value="Check whether all features can be in principle instantiated. Returns the feature that cannot be instantiated." />
-      </node>
       <node concept="3uibUv" id="44j14BGTRuW" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8aK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8aI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8aJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Check whether all features can be in principle instantiated. Returns the feature that cannot be instantiated." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BGTQBt" role="jymVt" />
@@ -1017,20 +1037,28 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="44j14BGTFUK" role="lGtFl">
-        <property role="NWlVz" value="Check whether derived features can exist as they are defined" />
-      </node>
       <node concept="3uibUv" id="44j14BGTNyl" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8aN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8aL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8aM" role="1dT_Ay">
+            <property role="1dT_AB" value="Check whether derived features can exist as they are defined" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAhTgC" role="jymVt" />
     <node concept="3Tm1VV" id="2hSqXWTF6wT" role="1B3o_S" />
-    <node concept="NWlO9" id="6i3Vykm6E7M" role="lGtFl">
-      <property role="NWlVz" value="Checks the consistency of this feature model." />
-    </node>
     <node concept="3uibUv" id="tSjOfAhC0X" role="1zkMxy">
       <ref role="3uigEE" node="tSjOfAhAHe" resolve="ConsistencyCheckerBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK8aQ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8aO" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8aP" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the consistency of this feature model." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="tSjOfAfjPo">
@@ -1046,8 +1074,12 @@
       <node concept="3Tqbb2" id="tSjOfAfsFh" role="1tU5fm">
         <ref role="ehGHo" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
       </node>
-      <node concept="NWlO9" id="tSjOfAfunh" role="lGtFl">
-        <property role="NWlVz" value="The FM that was analyzed." />
+      <node concept="z59LJ" id="70cGcTIK8aT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8aR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8aS" role="1dT_Ay">
+            <property role="1dT_AB" value="The FM that was analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAfrPl" role="jymVt" />
@@ -1057,8 +1089,12 @@
       <property role="TrG5h" value="erroneousNode" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tqbb2" id="44j14BHsQKV" role="1tU5fm" />
-      <node concept="NWlO9" id="44j14BHsQKW" role="lGtFl">
-        <property role="NWlVz" value="The element where the error is located." />
+      <node concept="z59LJ" id="70cGcTIK8aW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8aU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8aV" role="1dT_Ay">
+            <property role="1dT_AB" value="The element where the error is located." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BHsPQS" role="jymVt" />
@@ -1071,16 +1107,24 @@
       <node concept="3uibUv" id="44j14BH9nFS" role="1tU5fm">
         <ref role="3uigEE" node="44j14BH9bxs" resolve="FeatureModelAnalysisResult.RESULT_KIND" />
       </node>
-      <node concept="NWlO9" id="44j14BH9q5u" role="lGtFl">
-        <property role="NWlVz" value="Result kind." />
+      <node concept="z59LJ" id="70cGcTIK8aZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8aX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8aY" role="1dT_Ay">
+            <property role="1dT_AB" value="Result kind." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BH9os1" role="jymVt" />
     <node concept="312cEg" id="3$vwvl9WT33" role="jymVt">
       <property role="TrG5h" value="userFriendlyName" />
       <node concept="17QB3L" id="3$vwvl9WT34" role="1tU5fm" />
-      <node concept="NWlO9" id="3$vwvl9WT35" role="lGtFl">
-        <property role="NWlVz" value="User friendly name for this analysis result." />
+      <node concept="z59LJ" id="70cGcTIK8b2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8b0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8b1" role="1dT_Ay">
+            <property role="1dT_AB" value="User friendly name for this analysis result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3$vwvl9WRYb" role="jymVt" />
@@ -1185,8 +1229,12 @@
         <property role="TrG5h" value="erroneousNode" />
         <node concept="3Tqbb2" id="44j14BHsS6X" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="tSjOfAgTkD" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK8b5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8b3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8b4" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAgORl" role="jymVt" />
@@ -1202,8 +1250,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOM97V" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8b8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8b6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8b7" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOM9RT" role="jymVt" />
@@ -1419,8 +1471,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAgTJz" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8bb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8b9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8ba" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BH97CS" role="jymVt" />
@@ -1445,11 +1501,15 @@
       </node>
       <node concept="3Tm1VV" id="44j14BH9bxt" role="1B3o_S" />
     </node>
-    <node concept="NWlO9" id="tSjOfAflEs" role="lGtFl">
-      <property role="NWlVz" value="Result of the analysis of feature models." />
-    </node>
     <node concept="3uibUv" id="tSjOfAj3MG" role="1zkMxy">
       <ref role="3uigEE" node="tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK8be" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8bc" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8bd" role="1dT_Ay">
+          <property role="1dT_AB" value="Result of the analysis of feature models." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="tSjOfAhAHe">
@@ -1464,8 +1524,12 @@
       <node concept="Xl_RD" id="6$rx9V1M7xm" role="33vP2m">
         <property role="Xl_RC" value="Root feature: " />
       </node>
-      <node concept="NWlO9" id="6$rx9V1M886" role="lGtFl">
-        <property role="NWlVz" value="Marker that the root feature is available." />
+      <node concept="z59LJ" id="70cGcTIK8bh" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bf" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bg" role="1dT_Ay">
+            <property role="1dT_AB" value="Marker that the root feature is available." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="tSjOfAhAHf" role="1B3o_S" />
@@ -1483,8 +1547,12 @@
         <property role="3cmrfH" value="0" />
       </node>
       <node concept="3Tmbuc" id="4hqHmbTBMDo" role="1B3o_S" />
-      <node concept="NWlO9" id="4hqHmbTCwiu" role="lGtFl">
-        <property role="NWlVz" value="The index of the current boolean variable." />
+      <node concept="z59LJ" id="70cGcTIK8bk" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bi" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bj" role="1dT_Ay">
+            <property role="1dT_AB" value="The index of the current boolean variable." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4hqHmbTCn21" role="jymVt" />
@@ -1511,10 +1579,14 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAhMf2" role="lGtFl">
-        <property role="NWlVz" value="Map from features to their encoding as boolean variables" />
-      </node>
       <node concept="3Tmbuc" id="tSjOfAhQE6" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIK8bn" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bl" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bm" role="1dT_Ay">
+            <property role="1dT_AB" value="Map from features to their encoding as boolean variables" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="4hqHmbTCoIa" role="jymVt" />
     <node concept="312cEg" id="3$vwvl9SD4w" role="jymVt">
@@ -1522,10 +1594,14 @@
       <node concept="3uibUv" id="3$vwvl9SAR1" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
-      <node concept="NWlO9" id="3$vwvl9SIsB" role="lGtFl">
-        <property role="NWlVz" value="Current model repository." />
-      </node>
       <node concept="3Tmbuc" id="3$vwvl9SKZp" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIK8bq" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bo" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bp" role="1dT_Ay">
+            <property role="1dT_AB" value="Current model repository." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3$vwvl9SGdR" role="jymVt" />
     <node concept="3clFbW" id="3$vwvl9SwC1" role="jymVt">
@@ -1820,8 +1896,12 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzbaq" resolve="FeatureModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAiitB" role="lGtFl">
-        <property role="NWlVz" value="Builds the SAT4J model associated to this feature model." />
+      <node concept="P$JXv" id="70cGcTIK8bt" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8br" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bs" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the SAT4J model associated to this feature model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6i3Vykm6z1Q" role="jymVt" />
@@ -1923,11 +2003,15 @@
       <node concept="_YKpA" id="tSjOfAeipF" role="3clF45">
         <node concept="17QB3L" id="tSjOfAejJq" role="_ZDj9" />
       </node>
-      <node concept="NWlO9" id="tSjOfAegCS" role="lGtFl">
-        <property role="NWlVz" value="Returns the minimal explanation." />
-      </node>
       <node concept="3uibUv" id="tSjOfAex6K" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8bw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bv" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the minimal explanation." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6i3Vykm7hyS" role="jymVt" />
@@ -2027,8 +2111,12 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzbai" resolve="Feature" />
         </node>
       </node>
-      <node concept="NWlO9" id="6i3Vykm7TTR" role="lGtFl">
-        <property role="NWlVz" value="Add the relation between a child and its parent: childFeature =&gt; parentFeature" />
+      <node concept="P$JXv" id="70cGcTIK8bz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8by" role="1dT_Ay">
+            <property role="1dT_AB" value="Add the relation between a child and its parent: childFeature =&gt; parentFeature" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6i3Vykm7kn0" role="jymVt" />
@@ -2122,8 +2210,12 @@
           <ref role="ehGHo" to="qqyh:1UlxOSerXgq" resolve="DerivedFeature" />
         </node>
       </node>
-      <node concept="NWlO9" id="2KkviOKwkJd" role="lGtFl">
-        <property role="NWlVz" value="Add derived features: derivedFeature &lt;=&gt; expression" />
+      <node concept="P$JXv" id="70cGcTIK8bA" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8b$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8b_" role="1dT_Ay">
+            <property role="1dT_AB" value="Add derived features: derivedFeature &lt;=&gt; expression" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2KkviOKwjs3" role="jymVt" />
@@ -2750,8 +2842,12 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzbai" resolve="Feature" />
         </node>
       </node>
-      <node concept="NWlO9" id="6i3Vykm83_O" role="lGtFl">
-        <property role="NWlVz" value="Add the relation between a child and its siblings." />
+      <node concept="P$JXv" id="70cGcTIK8bD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bC" role="1dT_Ay">
+            <property role="1dT_AB" value="Add the relation between a child and its siblings." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6i3Vykm7iWQ" role="jymVt" />
@@ -3036,8 +3132,12 @@
           <ref role="ehGHo" to="qqyh:3UhOf8WVJG2" resolve="AbstractFeature" />
         </node>
       </node>
-      <node concept="NWlO9" id="6i3Vykm99WY" role="lGtFl">
-        <property role="NWlVz" value="Add cross constraints between features." />
+      <node concept="P$JXv" id="70cGcTIK8bG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bF" role="1dT_Ay">
+            <property role="1dT_AB" value="Add cross constraints between features." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3KT4CxI$vDI" role="jymVt" />
@@ -3449,8 +3549,12 @@
           <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
         </node>
       </node>
-      <node concept="NWlO9" id="3KT4CxIC670" role="lGtFl">
-        <property role="NWlVz" value="Add clauses for the expression over features." />
+      <node concept="P$JXv" id="70cGcTIK8bJ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bH" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bI" role="1dT_Ay">
+            <property role="1dT_AB" value="Add clauses for the expression over features." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3KT4CxIAGWd" role="jymVt" />
@@ -3644,13 +3748,17 @@
       </node>
       <node concept="3Tmbuc" id="44j14BH0VtQ" role="1B3o_S" />
       <node concept="3cqZAl" id="tSjOfAiAYJ" role="3clF45" />
-      <node concept="NWlO9" id="tSjOfAiBBP" role="lGtFl">
-        <property role="NWlVz" value="Adds the selected features to the theory." />
-      </node>
       <node concept="37vLTG" id="tSjOfAiGhd" role="3clF46">
         <property role="TrG5h" value="cm" />
         <node concept="3Tqbb2" id="tSjOfAiGhc" role="1tU5fm">
           <ref role="ehGHo" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8bM" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bK" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bL" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds the selected features to the theory." />
+          </node>
         </node>
       </node>
     </node>
@@ -3766,8 +3874,12 @@
           <ref role="ehGHo" to="qqyh:3UhOf8WVJG2" resolve="AbstractFeature" />
         </node>
       </node>
-      <node concept="NWlO9" id="6i3Vykm6SbK" role="lGtFl">
-        <property role="NWlVz" value="Givea a fresh variable number for a feature." />
+      <node concept="P$JXv" id="70cGcTIK8bP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bN" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bO" role="1dT_Ay">
+            <property role="1dT_AB" value="Givea a fresh variable number for a feature." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfA0cQR" role="jymVt" />
@@ -3792,8 +3904,12 @@
       </node>
       <node concept="3Tm6S6" id="tSjOfA0g_$" role="1B3o_S" />
       <node concept="10Oyi0" id="tSjOfA0g__" role="3clF45" />
-      <node concept="NWlO9" id="tSjOfA0g_C" role="lGtFl">
-        <property role="NWlVz" value="Givea a fresh variable number." />
+      <node concept="P$JXv" id="70cGcTIK8bS" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bQ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bR" role="1dT_Ay">
+            <property role="1dT_AB" value="Givea a fresh variable number." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAiudk" role="jymVt" />
@@ -4045,16 +4161,24 @@
       <node concept="_YKpA" id="1X8myJOPCeo" role="3clF45">
         <node concept="17QB3L" id="1X8myJOPCep" role="_ZDj9" />
       </node>
-      <node concept="NWlO9" id="1X8myJOPCeq" role="lGtFl">
-        <property role="NWlVz" value="Returns the model." />
-      </node>
       <node concept="3uibUv" id="1X8myJOPCer" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK8bV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8bU" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the model." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="7cDRCwNob68" role="jymVt" />
-    <node concept="NWlO9" id="1X8myJOREgW" role="lGtFl">
-      <property role="NWlVz" value="Base class for checkers of variabiity consistency." />
+    <node concept="3UR2Jj" id="70cGcTIK8bY" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8bW" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8bX" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for checkers of variabiity consistency." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="tSjOfAiztB">
@@ -4275,20 +4399,28 @@
           <ref role="ehGHo" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAizuz" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a configuration model." />
-      </node>
       <node concept="3uibUv" id="tSjOfAizu$" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8c1" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8bZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8c0" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a configuration model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAizu_" role="jymVt" />
     <node concept="3Tm1VV" id="tSjOfAizuA" role="1B3o_S" />
-    <node concept="NWlO9" id="tSjOfAizuB" role="lGtFl">
-      <property role="NWlVz" value="Checks the consistency of this configuration model." />
-    </node>
     <node concept="3uibUv" id="tSjOfAizuC" role="1zkMxy">
       <ref role="3uigEE" node="tSjOfAhAHe" resolve="ConsistencyCheckerBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK8c4" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8c2" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8c3" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the consistency of this configuration model." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="tSjOfAiUd1">
@@ -4305,8 +4437,12 @@
       <node concept="_YKpA" id="tSjOfAiUd5" role="1tU5fm">
         <node concept="17QB3L" id="tSjOfAiUd6" role="_ZDj9" />
       </node>
-      <node concept="NWlO9" id="tSjOfAiUd7" role="lGtFl">
-        <property role="NWlVz" value="A list of strings forming the explanation of failure." />
+      <node concept="z59LJ" id="70cGcTIK8c7" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8c5" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8c6" role="1dT_Ay">
+            <property role="1dT_AB" value="A list of strings forming the explanation of failure." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAiUd8" role="jymVt" />
@@ -4316,8 +4452,12 @@
       <property role="TrG5h" value="success" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="tSjOfAiUda" role="1tU5fm" />
-      <node concept="NWlO9" id="tSjOfAiUdb" role="lGtFl">
-        <property role="NWlVz" value="True if the FM is consistent." />
+      <node concept="z59LJ" id="70cGcTIK8ca" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8c8" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8c9" role="1dT_Ay">
+            <property role="1dT_AB" value="True if the FM is consistent." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BH950T" role="jymVt" />
@@ -4327,8 +4467,12 @@
       <property role="TrG5h" value="analyzedNode" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tqbb2" id="44j14BH2zNH" role="1tU5fm" />
-      <node concept="NWlO9" id="1X8myJOMDiC" role="lGtFl">
-        <property role="NWlVz" value="The analyzed node." />
+      <node concept="z59LJ" id="70cGcTIK8cd" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cb" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cc" role="1dT_Ay">
+            <property role="1dT_AB" value="The analyzed node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOMCnh" role="jymVt" />
@@ -4390,8 +4534,12 @@
           <node concept="17QB3L" id="tSjOfAiUdF" role="_ZDj9" />
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAiUdG" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK8cg" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8ce" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cf" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAiUdH" role="jymVt" />
@@ -4401,8 +4549,12 @@
       <node concept="17QB3L" id="_qCyBYJbmQ" role="3clF45" />
       <node concept="3Tm1VV" id="_qCyBYJ6FI" role="1B3o_S" />
       <node concept="3clFbS" id="_qCyBYJ6FJ" role="3clF47" />
-      <node concept="NWlO9" id="_qCyBYJe8r" role="lGtFl">
-        <property role="NWlVz" value="Returns the user friendly name for the analyzed node." />
+      <node concept="P$JXv" id="70cGcTIK8cj" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8ch" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8ci" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the user friendly name for the analyzed node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOM2yi" role="jymVt" />
@@ -4420,8 +4572,12 @@
       </node>
       <node concept="3Tm1VV" id="44j14BHh8PV" role="1B3o_S" />
       <node concept="3Tqbb2" id="44j14BHh9Gv" role="3clF45" />
-      <node concept="NWlO9" id="44j14BHhc6$" role="lGtFl">
-        <property role="NWlVz" value="Returns the analyzed node." />
+      <node concept="P$JXv" id="70cGcTIK8cm" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8ck" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cl" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the analyzed node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOMwM0" role="jymVt" />
@@ -4439,8 +4595,12 @@
       </node>
       <node concept="3Tm1VV" id="tSjOfAiUdM" role="1B3o_S" />
       <node concept="10P_77" id="tSjOfAiUdN" role="3clF45" />
-      <node concept="NWlO9" id="tSjOfAiUdO" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the analysis was successful." />
+      <node concept="P$JXv" id="70cGcTIK8cp" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cn" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8co" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the analysis was successful." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAiUdP" role="jymVt" />
@@ -4540,12 +4700,20 @@
         <property role="TrG5h" value="msg" />
         <node concept="17QB3L" id="6BowXlDOmF9" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6BowXlDOn9d" role="lGtFl">
-        <property role="NWlVz" value="Builds the explanation string." />
+      <node concept="P$JXv" id="70cGcTIK8cs" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cr" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the explanation string." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="tSjOfAiUeN" role="lGtFl">
-      <property role="NWlVz" value="Base class for results of the analysis of feature models and configuration models." />
+    <node concept="3UR2Jj" id="70cGcTIK8cv" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8ct" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8cu" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for results of the analysis of feature models and configuration models." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="tSjOfAjb8n">
@@ -4561,16 +4729,24 @@
       <node concept="3Tqbb2" id="tSjOfAjb8r" role="1tU5fm">
         <ref role="ehGHo" to="qqyh:5USXI9Kzba8" resolve="ConfigurationModel" />
       </node>
-      <node concept="NWlO9" id="tSjOfAjb8s" role="lGtFl">
-        <property role="NWlVz" value="The CM that was analyzed." />
+      <node concept="z59LJ" id="70cGcTIK8cy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cx" role="1dT_Ay">
+            <property role="1dT_AB" value="The CM that was analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAjb8t" role="jymVt" />
     <node concept="312cEg" id="3$vwvl9Wjme" role="jymVt">
       <property role="TrG5h" value="userFriendlyName" />
       <node concept="17QB3L" id="3$vwvl9WiKP" role="1tU5fm" />
-      <node concept="NWlO9" id="3$vwvl9WQGA" role="lGtFl">
-        <property role="NWlVz" value="User friendly name for this analysis result." />
+      <node concept="z59LJ" id="70cGcTIK8c_" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cz" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8c$" role="1dT_Ay">
+            <property role="1dT_AB" value="User friendly name for this analysis result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3$vwvl9WjVC" role="jymVt" />
@@ -4637,8 +4813,12 @@
           <node concept="17QB3L" id="tSjOfAjb8L" role="_ZDj9" />
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAjb8M" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK8cC" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cA" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cB" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAjb8N" role="jymVt" />
@@ -4654,8 +4834,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOMeqN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8cF" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cD" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cE" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOMdRT" role="jymVt" />
@@ -4759,15 +4943,23 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="tSjOfAjb9K" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8cI" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cG" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cH" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
-    </node>
-    <node concept="NWlO9" id="tSjOfAjb9L" role="lGtFl">
-      <property role="NWlVz" value="Result of the analysis of configuration models." />
     </node>
     <node concept="3uibUv" id="tSjOfAjb9M" role="1zkMxy">
       <ref role="3uigEE" node="tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK8cL" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8cJ" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8cK" role="1dT_Ay">
+          <property role="1dT_AB" value="Result of the analysis of configuration models." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1X8myJOPC6R">
@@ -4963,15 +5155,19 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPC81" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of an implementation module." />
-      </node>
       <node concept="3uibUv" id="1X8myJOPC82" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
       <node concept="_YKpA" id="1X8myJOPC83" role="3clF45">
         <node concept="3uibUv" id="7cDRCwNoILh" role="_ZDj9">
           <ref role="3uigEE" node="tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8cO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cN" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of an implementation module." />
+          </node>
         </node>
       </node>
     </node>
@@ -5421,11 +5617,15 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPCaB" role="lGtFl">
-        <property role="NWlVz" value="Check whether references with presence conditions can reference non-existing targets." />
-      </node>
       <node concept="3uibUv" id="1X8myJOPCaC" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8cR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Check whether references with presence conditions can reference non-existing targets." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCaD" role="jymVt" />
@@ -5812,11 +6012,15 @@
           <ref role="ehGHo" to="vs0r:70kXLV4LLzw" resolve="IReference" />
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPCcE" role="lGtFl">
-        <property role="NWlVz" value="Performs a single check." />
-      </node>
       <node concept="3uibUv" id="1X8myJOPCcF" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8cU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cS" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cT" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs a single check." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCcG" role="jymVt" />
@@ -6102,8 +6306,12 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="1X8myJOPCeZ" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1X8myJOPCf0" role="lGtFl">
-        <property role="NWlVz" value="Returns the list of variability conditions which correcpond to presence conditions or conditional alternatives attached to the ancestors." />
+      <node concept="P$JXv" id="70cGcTIK8cX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cW" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the list of variability conditions which correcpond to presence conditions or conditional alternatives attached to the ancestors." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCf1" role="jymVt" />
@@ -6276,11 +6484,15 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="1X8myJOPCgz" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1X8myJOPCg$" role="lGtFl">
-        <property role="NWlVz" value="Compute composed presence condition." />
-      </node>
       <node concept="3Tqbb2" id="1X8myJOPCg_" role="3clF45">
         <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8d0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8cY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8cZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Compute composed presence condition." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCgA" role="jymVt" />
@@ -6368,8 +6580,12 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="1X8myJOPCh5" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1X8myJOPCh6" role="lGtFl">
-        <property role="NWlVz" value="Returns a user readable representation of the reference context." />
+      <node concept="P$JXv" id="70cGcTIK8d3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8d1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8d2" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a user readable representation of the reference context." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCh7" role="jymVt" />
@@ -6745,23 +6961,31 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTcX" resolve="Module" />
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPCju" role="lGtFl">
-        <property role="NWlVz" value="Check whether composed presence conditions can exist." />
-      </node>
       <node concept="3uibUv" id="1X8myJOPCjv" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8d6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8d4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8d5" role="1dT_Ay">
+            <property role="1dT_AB" value="Check whether composed presence conditions can exist." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCjw" role="jymVt" />
     <node concept="3Tm1VV" id="1X8myJOPCjx" role="1B3o_S" />
-    <node concept="NWlO9" id="1X8myJOPCjy" role="lGtFl">
-      <property role="NWlVz" value="Checks the consistency of an implementation module." />
-    </node>
     <node concept="3uibUv" id="1X8myJOPCjz" role="1zkMxy">
       <ref role="3uigEE" node="tSjOfAhAHe" resolve="ConsistencyCheckerBase" />
     </node>
     <node concept="3uibUv" id="7cDRCwNm0si" role="EKbjA">
       <ref role="3uigEE" node="7cDRCwNlZa5" resolve="IVariabilityUseConsistencyChecker" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK8d9" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8d7" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8d8" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the consistency of an implementation module." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1X8myJOPCj$">
@@ -6820,8 +7044,12 @@
           <node concept="17QB3L" id="1X8myJOPCk6" role="_ZDj9" />
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPCk7" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK8dc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8da" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8db" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCk8" role="jymVt" />
@@ -6837,8 +7065,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPCkO" role="lGtFl">
-        <property role="NWlVz" value="Returns the user friendly name for the analyzed node." />
+      <node concept="P$JXv" id="70cGcTIK8df" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8de" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the user friendly name for the analyzed node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCkP" role="jymVt" />
@@ -6878,8 +7110,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1X8myJOPCmd" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8di" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dh" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOPCme" role="jymVt" />
@@ -6906,16 +7142,24 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="7cDRCwNlZlY" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7cDRCwNlZm$" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of the variability use within this node." />
-      </node>
       <node concept="3uibUv" id="7cDRCwNmhB5" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK8dl" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dj" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dk" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of the variability use within this node." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="7cDRCwNlZa6" role="1B3o_S" />
-    <node concept="NWlO9" id="7cDRCwNlZaQ" role="lGtFl">
-      <property role="NWlVz" value="Interface for checking the correct use of variability in a certain node." />
+    <node concept="3UR2Jj" id="70cGcTIK8do" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8dm" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8dn" role="1dT_Ay">
+          <property role="1dT_AB" value="Interface for checking the correct use of variability in a certain node." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

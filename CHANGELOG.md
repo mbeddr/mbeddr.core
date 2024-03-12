@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# March 2024
+
+## com.mbeddr.mpsutils
+
+### Added
+
+- Interpreters now support data flow analysis.
+
+## com.mbeddr.doc
+
+### Added
+
+- When embedding a documentation section or model content as image, the inspector can now be rendered instead of the editor.
+
 # January 2024
 
 ## com.mbeddr.mpsutils

@@ -2152,7 +2152,7 @@
         <node concept="3clFbF" id="3Fe92PR3jTG" role="3cqZAp">
           <node concept="2OqwBi" id="3Fe92PR3k1D" role="3clFbG">
             <node concept="QwW4i" id="3Fe92PR3jTF" role="2Oq$k0">
-              <ref role="QwW4h" node="3Fe92PR3jTp" resolve="result" />
+              <ref role="QwW4h" node="3Fe92PR3jTp" resolve="entry" />
             </node>
             <node concept="3YRAZt" id="3Fe92PR3kaE" role="2OqNvi" />
           </node>
@@ -2202,7 +2202,7 @@
                         <property role="ARO6o" value="true" />
                         <ref role="QpYPw" node="3Fe92PR3jT6" resolve="RemoveOutdatedAssessmentResult" />
                         <node concept="3CnSsL" id="3Fe92PR3sEF" role="3Coj4f">
-                          <ref role="QkamJ" node="3Fe92PR3jTp" resolve="result" />
+                          <ref role="QkamJ" node="3Fe92PR3jTp" resolve="entry" />
                           <node concept="1YBJjd" id="4u0NPMnaUKN" role="3CoRuB">
                             <ref role="1YBMHb" node="4u0NPMnaSd3" resolve="entry" />
                           </node>

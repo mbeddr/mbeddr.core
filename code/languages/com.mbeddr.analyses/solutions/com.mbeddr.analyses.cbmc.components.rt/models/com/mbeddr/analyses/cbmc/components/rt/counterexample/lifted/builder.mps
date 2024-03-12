@@ -4,9 +4,10 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="rbq9" ref="r:e9339685-9249-4681-a8f5-318d0236a4a8(com.mbeddr.analyses.cbmc.rt.counterexample.raw)" />
@@ -167,15 +168,25 @@
       <concept id="3212431740125201975" name="com.mbeddr.mpsutil.blutil.structure.CSDefault" flags="ng" index="2jNDYi">
         <child id="3212431740125201976" name="body" index="2jNDYt" />
       </concept>
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -259,8 +270,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2LKSz3MiK8b" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7UO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7UM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7UN" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2LKSz3MiSuX" role="jymVt" />
@@ -393,8 +408,12 @@
       <node concept="2AHcQZ" id="4arT0cntBGD" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4arT0cntBGE" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7UR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7UP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7UQ" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntBGF" role="jymVt" />
@@ -463,8 +482,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4arT0cnseGn" role="1B3o_S" />
-      <node concept="NWlO9" id="2LKSz3MqlZM" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7UU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7US" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7UT" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2LKSz3MqmWF" role="jymVt" />
@@ -958,16 +981,24 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4arT0cntBHD" role="1B3o_S" />
-      <node concept="NWlO9" id="4arT0cntBHE" role="lGtFl">
-        <property role="NWlVz" value="Lifts the assignment state for components." />
+      <node concept="P$JXv" id="70cGcTIK7UX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7UV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7UW" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the assignment state for components." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4arT0cntBHF" role="1B3o_S" />
     <node concept="3uibUv" id="2LKSz3MnGeY" role="1zkMxy">
       <ref role="3uigEE" to="qeyn:3x0R1LIQ83n" resolve="AssignmentsLifterCore" />
     </node>
-    <node concept="NWlO9" id="4arT0cntBHH" role="lGtFl">
-      <property role="NWlVz" value="Assignments lifter for the language com.mbeddr.components." />
+    <node concept="3UR2Jj" id="70cGcTIK7V0" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7UY" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7UZ" role="1dT_Ay">
+          <property role="1dT_AB" value="Assignments lifter for the language com.mbeddr.components." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4arT0cntDX1">
@@ -987,8 +1018,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2LKSz3MiTQJ" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7V3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7V1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7V2" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2LKSz3MiT$f" role="jymVt" />
@@ -1176,8 +1211,12 @@
       <node concept="2AHcQZ" id="4arT0cntDXm" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4arT0cntDXn" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7V6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7V4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7V5" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntDXo" role="jymVt" />
@@ -1627,17 +1666,18 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4arT0cntDY7" role="1B3o_S" />
-      <node concept="NWlO9" id="4arT0cntDY8" role="lGtFl">
-        <property role="NWlVz" value="Lifts the function calls for com.mbeddr.components." />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQpJ1J" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK7V9" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7V7" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7V8" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the function calls for com.mbeddr.components." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="4arT0cntDY9" role="1B3o_S" />
-    <node concept="NWlO9" id="4arT0cntDYa" role="lGtFl">
-      <property role="NWlVz" value="Lifter of function calls for com.mbeddr.component language." />
-    </node>
     <node concept="3uibUv" id="4arT0cntDYb" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
     </node>
@@ -1677,8 +1717,19 @@
       <node concept="2AHcQZ" id="6_oo6Ldo8DM" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="6_oo6Ldo9a1" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Vf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ve" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7Vc" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Va" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Vb" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of function calls for com.mbeddr.component language." />
+        </node>
       </node>
     </node>
   </node>
@@ -1699,8 +1750,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2LKSz3MiVLQ" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Vi" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Vh" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2LKSz3MiVqM" role="jymVt" />
@@ -1776,8 +1831,12 @@
       <node concept="2AHcQZ" id="4arT0cntGeF" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4arT0cntGeG" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Vl" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vj" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Vk" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntGeH" role="jymVt" />
@@ -1933,11 +1992,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4arT0cntGfB" role="1B3o_S" />
-      <node concept="NWlO9" id="4arT0cntGfC" role="lGtFl">
-        <property role="NWlVz" value="Lifts the function returns for com.mbeddr.components." />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQpP2P" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK7Vo" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vm" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Vn" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the function returns for com.mbeddr.components." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntGfD" role="jymVt" />
@@ -1976,16 +2039,24 @@
       <node concept="2AHcQZ" id="6_oo6LdoawL" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="6_oo6LdoaQl" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Vr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Vq" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4arT0cntGfE" role="1B3o_S" />
-    <node concept="NWlO9" id="4arT0cntGfF" role="lGtFl">
-      <property role="NWlVz" value="Lifter of function returns for com.mbeddr.components language." />
-    </node>
     <node concept="3uibUv" id="4arT0cntGfG" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7Vu" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Vs" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Vt" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of function returns for com.mbeddr.components language." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="576QrOJcWkT">
@@ -2005,8 +2076,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJcWl1" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Vx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Vw" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWl2" role="jymVt" />
@@ -2095,10 +2170,14 @@
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJcWsP" role="lGtFl">
-        <property role="NWlVz" value="Lifts the assignment state for core languages." />
-      </node>
       <node concept="3Tm1VV" id="576QrOJcWsQ" role="1B3o_S" />
+      <node concept="P$JXv" id="70cGcTIK7V$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Vy" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Vz" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the assignment state for core languages." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWsR" role="jymVt" />
     <node concept="3clFb_" id="576QrOJcWyC" role="jymVt">
@@ -2174,16 +2253,24 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="576QrOJcWyM" role="1B3o_S" />
-      <node concept="NWlO9" id="576QrOJcWyN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7VB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7V_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7VA" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="576QrOJcWyP" role="1B3o_S" />
-    <node concept="NWlO9" id="576QrOJcWyQ" role="lGtFl">
-      <property role="NWlVz" value="Lifts failures on nodes for the mbeddr.components languages." />
-    </node>
     <node concept="3uibUv" id="4kjWK0$qaO5" role="1zkMxy">
       <ref role="3uigEE" to="8ear:4kjWK0$q3Hq" resolve="FailuresLifterBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7VE" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7VC" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7VD" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifts failures on nodes for the mbeddr.components languages." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

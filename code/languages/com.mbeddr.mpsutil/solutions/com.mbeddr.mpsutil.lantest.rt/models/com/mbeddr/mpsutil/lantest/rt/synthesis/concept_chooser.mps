@@ -2,11 +2,12 @@
 <model ref="4ac576d1-143d-4250-b299-9dfff325fcb9/r:3646034e-990c-4bb7-b5b1-368a29a8bc9d(com.mbeddr.mpsutil.lantest.rt/com.mbeddr.mpsutil.lantest.rt.synthesis.concept_chooser)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
@@ -132,16 +133,25 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -225,25 +235,37 @@
           <ref role="2I9WkF" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
         </node>
       </node>
-      <node concept="NWlO9" id="7sjDQ2_p0fx" role="lGtFl">
-        <property role="NWlVz" value="Chooses a concept from the list of concepts." />
+      <node concept="P$JXv" id="70cGcTIKkjd" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjb" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkjc" role="1dT_Ay">
+            <property role="1dT_AB" value="Chooses a concept from the list of concepts." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7sjDQ2_p0fy" role="1B3o_S" />
-    <node concept="NWlO9" id="53lM3Ii3aO$" role="lGtFl">
-      <property role="NWlVz" value="Interface implemented by different choosers of concepts." />
-    </node>
     <node concept="2tJIrI" id="3S9K2OvpBOj" role="jymVt" />
     <node concept="3clFb_" id="3S9K2OvpBPu" role="jymVt">
       <property role="TrG5h" value="newGenerationStart" />
       <node concept="3cqZAl" id="3S9K2OvpC35" role="3clF45" />
       <node concept="3Tm1VV" id="3S9K2OvpBPw" role="1B3o_S" />
       <node concept="3clFbS" id="3S9K2OvpBPx" role="3clF47" />
-      <node concept="NWlO9" id="3S9K2OvpBP$" role="lGtFl">
-        <property role="NWlVz" value="New generation starts." />
+      <node concept="P$JXv" id="70cGcTIKkjj" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjh" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkji" role="1dT_Ay">
+            <property role="1dT_AB" value="New generation starts." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3S9K2OvpBOA" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIKkjg" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkje" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkjf" role="1dT_Ay">
+          <property role="1dT_AB" value="Interface implemented by different choosers of concepts." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="7sjDQ2_p0fz">
     <property role="TrG5h" value="RandomConceptChooser" />
@@ -717,8 +739,12 @@
       <node concept="3Tqbb2" id="3S9K2OvpR$z" role="1tU5fm">
         <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
       </node>
-      <node concept="NWlO9" id="3S9K2OvpSSh" role="lGtFl">
-        <property role="NWlVz" value="The first concept which is fixed." />
+      <node concept="z59LJ" id="70cGcTIKkjm" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjk" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkjl" role="1dT_Ay">
+            <property role="1dT_AB" value="The first concept which is fixed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3S9K2OvpxTY" role="jymVt" />
@@ -728,8 +754,12 @@
       <property role="TrG5h" value="currentCallIndex" />
       <property role="3TUv4t" value="false" />
       <node concept="10Oyi0" id="3S9K2OvpYfD" role="1tU5fm" />
-      <node concept="NWlO9" id="3S9K2OvpZrc" role="lGtFl">
-        <property role="NWlVz" value="Current call index in the current model generation." />
+      <node concept="z59LJ" id="70cGcTIKkjp" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjn" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkjo" role="1dT_Ay">
+            <property role="1dT_AB" value="Current call index in the current model generation." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3S9K2Ovq0jd" role="jymVt" />
@@ -757,8 +787,12 @@
           <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
         </node>
       </node>
-      <node concept="NWlO9" id="3S9K2OvpUCF" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKkjs" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkjr" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3S9K2OvpxU3" role="jymVt" />
@@ -809,11 +843,15 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3S9K2OvpUPP" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="3S9K2OvpVOR" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKkjv" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjt" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkju" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3S9K2OvpxWm" role="jymVt" />
@@ -837,15 +875,23 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3S9K2OvqcZA" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKkjy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkjw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkjx" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
-    </node>
-    <node concept="NWlO9" id="3S9K2OvpBul" role="lGtFl">
-      <property role="NWlVz" value="The first concept is fixed the next ones are random." />
     </node>
     <node concept="3uibUv" id="3S9K2OvpORx" role="1zkMxy">
       <ref role="3uigEE" node="7sjDQ2_p0fz" resolve="RandomConceptChooser" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKkj_" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkjz" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkj$" role="1dT_Ay">
+          <property role="1dT_AB" value="The first concept is fixed the next ones are random." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

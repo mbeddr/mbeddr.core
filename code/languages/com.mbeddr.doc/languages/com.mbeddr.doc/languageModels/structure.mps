@@ -1381,6 +1381,11 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="EcuMT" value="6955693250238922827" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
+    <node concept="1TJgyi" id="UZf0JknNZ8" role="1TKVEl">
+      <property role="IQ2nx" value="1062634058588045256" />
+      <property role="TrG5h" value="renderInspector" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
       <property role="20kJfa" value="path" />
       <property role="IQ2ns" value="6955693250238922828" />
@@ -1840,32 +1845,6 @@
     <property role="EcuMT" value="4211260541176321379" />
     <property role="TrG5h" value="ITocEntry" />
     <property role="3GE5qa" value="structure" />
-  </node>
-  <node concept="1TIwiD" id="4pAedZZkdRB">
-    <property role="EcuMT" value="5072804564991794663" />
-    <property role="TrG5h" value="DocRoot" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4pAedZZkdSO" role="1TKVEi">
-      <property role="IQ2ns" value="5072804564991794740" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="mpsText" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
-    </node>
-    <node concept="1TJgyj" id="4pAedZZkdTc" role="1TKVEi">
-      <property role="IQ2ns" value="5072804564991794764" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="slissonText" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
-    <node concept="1TJgyj" id="4pAedZZkdTG" role="1TKVEi">
-      <property role="IQ2ns" value="5072804564991794796" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="mbeddrSection" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2TZO3Dbv6N7" resolve="Section" />
-    </node>
   </node>
 </model>
 
