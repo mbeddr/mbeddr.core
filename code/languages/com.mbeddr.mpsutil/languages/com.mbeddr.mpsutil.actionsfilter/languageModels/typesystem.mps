@@ -5,11 +5,13 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="au0v" ref="r:ae24f9b4-2210-4864-8fbf-79fb5fb02754(com.mbeddr.mpsutil.actionsfilter.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -17,12 +19,17 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -37,6 +44,10 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -168,6 +179,88 @@
     <node concept="1YaCAy" id="2N0FrS4ANUw" role="1YuTPh">
       <property role="TrG5h" value="ap" />
       <ref role="1YaFvo" to="au0v:5FJiYrlIp_D" resolve="ActionsProfile" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="bbtYPRYU7E">
+    <property role="TrG5h" value="check_AllowAction" />
+    <node concept="3clFbS" id="bbtYPRYU7F" role="18ibNy">
+      <node concept="3clFbJ" id="bbtYPRYUNH" role="3cqZAp">
+        <node concept="3clFbC" id="bbtYPRYVG9" role="3clFbw">
+          <node concept="10Nm6u" id="bbtYPRYVGq" role="3uHU7w" />
+          <node concept="2OqwBi" id="bbtYPRYUVl" role="3uHU7B">
+            <node concept="2YIFZM" id="bbtYPRYUOd" role="2Oq$k0">
+              <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
+            </node>
+            <node concept="liA8E" id="bbtYPRYV1g" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
+              <node concept="2OqwBi" id="bbtYPRYVje" role="37wK5m">
+                <node concept="1YBJjd" id="bbtYPRYV3U" role="2Oq$k0">
+                  <ref role="1YBMHb" node="bbtYPRYU7H" resolve="allowAction" />
+                </node>
+                <node concept="3TrcHB" id="bbtYPRYVuq" role="2OqNvi">
+                  <ref role="3TsBF5" to="au0v:5ReuVUpc9R6" resolve="actionId" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="bbtYPRYUNJ" role="3clFbx">
+          <node concept="a7r0C" id="bbtYPRYVJ_" role="3cqZAp">
+            <node concept="Xl_RD" id="bbtYPRYVJL" role="a7wSD">
+              <property role="Xl_RC" value="This action can't be found" />
+            </node>
+            <node concept="1YBJjd" id="bbtYPRYVKD" role="1urrMF">
+              <ref role="1YBMHb" node="bbtYPRYU7H" resolve="allowAction" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="bbtYPRYU7H" role="1YuTPh">
+      <property role="TrG5h" value="allowAction" />
+      <ref role="1YaFvo" to="au0v:5ReuVUpc9z_" resolve="AllowAction" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="bbtYPRYZix">
+    <property role="TrG5h" value="check_RemoveAction" />
+    <node concept="3clFbS" id="bbtYPRYZiy" role="18ibNy">
+      <node concept="3clFbJ" id="bbtYPRYZiz" role="3cqZAp">
+        <node concept="3clFbC" id="bbtYPRYZi$" role="3clFbw">
+          <node concept="10Nm6u" id="bbtYPRYZi_" role="3uHU7w" />
+          <node concept="2OqwBi" id="bbtYPRYZiA" role="3uHU7B">
+            <node concept="2YIFZM" id="bbtYPRYZiB" role="2Oq$k0">
+              <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
+              <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="bbtYPRYZiC" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
+              <node concept="2OqwBi" id="bbtYPRYZiD" role="37wK5m">
+                <node concept="1YBJjd" id="bbtYPRYZiE" role="2Oq$k0">
+                  <ref role="1YBMHb" node="bbtYPRYZiK" resolve="removeAction" />
+                </node>
+                <node concept="3TrcHB" id="bbtYPRYZiF" role="2OqNvi">
+                  <ref role="3TsBF5" to="au0v:5FJiYrlIpAw" resolve="actionId" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="bbtYPRYZiG" role="3clFbx">
+          <node concept="a7r0C" id="bbtYPRYZiH" role="3cqZAp">
+            <node concept="Xl_RD" id="bbtYPRYZiI" role="a7wSD">
+              <property role="Xl_RC" value="This action can't be found" />
+            </node>
+            <node concept="1YBJjd" id="bbtYPRYZiJ" role="1urrMF">
+              <ref role="1YBMHb" node="bbtYPRYZiK" resolve="removeAction" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="bbtYPRYZiK" role="1YuTPh">
+      <property role="TrG5h" value="removeAction" />
+      <ref role="1YaFvo" to="au0v:5FJiYrlIpAp" resolve="RemoveAction" />
     </node>
   </node>
 </model>

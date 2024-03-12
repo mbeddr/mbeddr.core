@@ -66,9 +66,6 @@
     <node concept="2flH9Z" id="6XvT233DK$G" role="2flH9W">
       <property role="2flH96" value="PasteMultiple" />
     </node>
-    <node concept="2flH9Z" id="6XvT233DK_e" role="2flH9W">
-      <property role="2flH96" value="EditorFix" />
-    </node>
     <node concept="2flH9Z" id="6XvT233DK_r" role="2flH9W">
       <property role="2flH96" value="EditorSelectWord" />
     </node>
@@ -81,12 +78,6 @@
     <node concept="2flH9Z" id="6XvT233DKA8" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.CopyNodeReference_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233DKAp" role="2flH9W">
-      <property role="2flH96" value="com.mbeddr.mpsutil.nodeaccess.plugin.clipboardStuffInEditMenuDirect_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233DKAF" role="2flH9W">
-      <property role="2flH96" value="com.mbeddr.mpsutil.nodeaccess.plugin.selectNodeFromClipboardURL_Action" />
-    </node>
     <node concept="2flH9Z" id="6XvT233DKAY" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.editor.actions.DeleteLine_Action" />
     </node>
@@ -94,13 +85,13 @@
       <property role="2flH96" value="jetbrains.mps.ide.editor.actions.ExtractComponent_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233DKBB" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.EditorPopup_paste_ActionGroup" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.EditorPopup_paste_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233DKBX" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.PasteAsJavaStatements_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.PasteAsJavaStatements_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233DKCk" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.PasteAsJavaMethods_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.PasteAsJavaMethods_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233DKCG" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.Bookmarks_ActionGroup" />
@@ -268,13 +259,13 @@
       <property role="2flH96" value="Code_ActionGroupoverrideImplement" />
     </node>
     <node concept="2flH9Z" id="6XvT233Ilmg" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.CodeOverrideImplementMenu_ActionGroup" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.CodeOverrideImplementMenu_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233Ilnw" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.OverrideMethod_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.OverrideMethod_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233IloL" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.ImplementMethod_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.ImplementMethod_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233Ilq3" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.BehaviorCodeOverrideImplementMenuGroup_ActionGroup" />
@@ -289,16 +280,7 @@
       <property role="2flH96" value="Code_ActionGroupcomments" />
     </node>
     <node concept="2flH9Z" id="6XvT233Ilvl" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.CodeCommentMenu_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IlwG" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.CommentStatements_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Ily4" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.UncommentStatements_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Ilzt" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.CommentLine_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.CodeCommentMenu_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233Inwq" role="2flH9W">
       <property role="2flH96" value="AnalyzeActions" />
@@ -322,7 +304,7 @@
       <property role="2flH96" value="jetbrains.mps.ide.actions.AnalyzeModuleDependencies_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233InEG" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.actions.AnalyzeStacktrace_Action" />
+      <property role="2flH96" value="Unscramble" />
     </node>
     <node concept="2flH9Z" id="6XvT233InGe" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.make.actions.MakeProject_Action" />
@@ -349,31 +331,10 @@
       <property role="2flH96" value="CreateDesktopEntry" />
     </node>
     <node concept="2flH9Z" id="6XvT233InUH" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.migration.component.plugin.ExecuteMigrationAssistant_Action" />
+      <property role="2flH96" value="jetbrains.mps.migration.workbench.plugin.RunMigrationAssistant_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233InWp" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.migration.component.plugin.MigationAssistantActions_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233InY6" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.Migrations32_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233InZO" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.MigrateSModelReference_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Io1z" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.ClearHistoryFiles_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Io3j" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.MigrateIds_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Io54" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.MigrateFloatConstants_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Io6Q" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.WrapNotExpressionInParens_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Io8D" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.mpsmigration.migration32.UpdateDepecatedBlockDocTags_Action" />
+      <property role="2flH96" value="jetbrains.mps.migration.workbench.plugin.Migrations_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233Ioat" role="2flH9W">
       <property role="2flH96" value="ToolsMenu" />
@@ -402,26 +363,14 @@
     <node concept="2flH9Z" id="6XvT233Iopx" role="2flH9W">
       <property role="2flH96" value="de.itemis.mps.editor.diagram.runtime.plugin.PaletteAction_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233Ioru" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.modelchecker.actions.ShowModelCheckerTool_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Iots" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.modelchecker.actions.ShowModelChecker_Action" />
-    </node>
     <node concept="2flH9Z" id="6XvT233Iovr" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.DevKitTools_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233Ioxr" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.ReloadAll_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233Iozs" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.InstallIDEAPlugin_Action" />
-    </node>
     <node concept="2flH9Z" id="6XvT233Io_u" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.lang.script.pluginSolution.plugin.ScriptsGlobally_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IoFE" role="2flH9W">
-      <property role="2flH96" value="MPSHelp" />
     </node>
     <node concept="2flH9Z" id="6XvT233IoHK" role="2flH9W">
       <property role="2flH96" value="MPSHelpMenu" />
@@ -429,11 +378,8 @@
     <node concept="2flH9Z" id="6XvT233IoJR" role="2flH9W">
       <property role="2flH96" value="ShowUserGuide" />
     </node>
-    <node concept="2flH9Z" id="6XvT233IoLZ" role="2flH9W">
-      <property role="2flH96" value="ShowTutorial" />
-    </node>
     <node concept="2flH9Z" id="6XvT233IoO8" role="2flH9W">
-      <property role="2flH96" value="ShowDocumentation" />
+      <property role="2flH96" value="com.mbeddr.doc.aspect.ui.plugin.ShowDocumentation_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233IoQi" role="2flH9W">
       <property role="2flH96" value="ShowHomepage" />
@@ -443,9 +389,6 @@
     </node>
     <node concept="2flH9Z" id="6XvT233IoUD" role="2flH9W">
       <property role="2flH96" value="ShowCommunitySite" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IoWQ" role="2flH9W">
-      <property role="2flH96" value="ShowTrackerAction" />
     </node>
     <node concept="2flH9Z" id="6XvT233IoZ4" role="2flH9W">
       <property role="2flH96" value="Help.KeymapReference" />
@@ -479,9 +422,6 @@
     </node>
     <node concept="2flH9Z" id="6XvT233Ipm7" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.ShowConceptInHierarchy_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Ipow" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.actions.ShowImplementations_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233IpqU" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.ShowNodeIn_ActionGroup" />
@@ -525,12 +465,6 @@
     <node concept="2flH9Z" id="6XvT233Iqu1" role="2flH9W">
       <property role="2flH96" value="GoToEditorPopupAddition_ActionGroupother" />
     </node>
-    <node concept="2flH9Z" id="6XvT233IqwD" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.actions.EditorPopupEx_Goto_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Iqzi" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.actions.GoByCurrentReferenceToIDEA_Action" />
-    </node>
     <node concept="2flH9Z" id="6XvT233Iq_W" role="2flH9W">
       <property role="2flH96" value="GoToEditorPopupAddition_ActionGrouprefs" />
     </node>
@@ -545,9 +479,6 @@
     </node>
     <node concept="2flH9Z" id="6XvT233IqKI" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.editor.actions.GoToEditorPopupAddition_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IqNt" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.editor.actions.GoByCurrentReference_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233IqQd" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.GenerateEditorPopup_ActionGroup" />
@@ -589,22 +520,16 @@
       <property role="2flH96" value="jetbrains.mps.ide.editor.actions.core.CoreActions_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233IrDS" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.EditorPopup_ActionGroup" />
+      <property role="2flH96" value="jetbrains.mps.ide.editor.actions.EditorPopup_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233IrGR" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.editor.actions.core.ShowNodeMessages_Action" />
     </node>
-    <node concept="2flH9Z" id="6XvT233IrJR" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.GoToOverridingClassMethod_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IrMS" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.GoToOverridenMethod_Action" />
-    </node>
     <node concept="2flH9Z" id="6XvT233IrPU" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.GoToInheritedClassifier_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.GoToInheritedClassifier_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233IrSX" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.ShowMembers_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.platform.actions.ShowMembers_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233Is29" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.EditorInternal_ActionGroup" />
@@ -620,15 +545,6 @@
     </node>
     <node concept="2flH9Z" id="6XvT233Isez" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.PrintNodePosition_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IshG" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.BehaviourPopup_ActionGroup" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233IskQ" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.devkit.actions.GoToOverridingBehaviorMethod_Action" />
-    </node>
-    <node concept="2flH9Z" id="6XvT233Isrd" role="2flH9W">
-      <property role="2flH96" value="VcsToobarActions" />
     </node>
     <node concept="2flH9Z" id="6XvT233IsxC" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.CopyNodeName_Action" />
@@ -652,7 +568,7 @@
       <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
     </node>
     <node concept="2flH9Z" id="6XvT233Iv01" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.actions.ModelActions_ActionGroup" />
+      <property role="2flH96" value="jetbrains.mps.ide.actions.ModelActions_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="6XvT233Iv3o" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.OptimizeModelImports_Action" />
@@ -751,10 +667,10 @@
       <property role="2flH96" value="jetbrains.mps.ide.actions.AnalyzeModule_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="3DoSIAt302$" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.workbench.actions.AnalyzeJavaActions_ActionGroup" />
+      <property role="2flH96" value="jetbrains.mps.java.workbench.actions.AnalyzeJavaActions_ActionGroup" />
     </node>
     <node concept="2flH9Z" id="3DoSIAt306m" role="2flH9W">
-      <property role="2flH96" value="jetbrains.mps.ide.java.workbench.actions.AnalyzeClasspath_Action" />
+      <property role="2flH96" value="jetbrains.mps.java.workbench.actions.AnalyzeClasspath_Action" />
     </node>
     <node concept="2flH9Z" id="FniR$ClU6F" role="2flH9W">
       <property role="2flH96" value="com.mbeddr.mpsutil.favourites.plugin.plugin.favourites_ActionGroup" />

@@ -12,11 +12,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+- Referenced actions in action profiles now emit a warning when they can't be found.
 
 ### Removed
 
 - The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
   JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+
+### Added
+
+- The removed language `com.mbeddr.mpsutil.nodediff` was added back since the MPS action can only compare root nodes and not arbitrary nodes.
 
 # December 2023
 
