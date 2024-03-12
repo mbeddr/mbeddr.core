@@ -11,7 +11,7 @@ task getGraphvizWindows(type: Download) {
     overwrite false
 }
 
-task unzipGraphvizWindows(type: Copy, dependsOn: getGraphvizWindows) {
+task unzipGraphvizWindows(type: Sync, dependsOn: getGraphvizWindows) {
     from zipTree(getGraphvizWindows.dest)
     into "$buildDir/graphviz-${version}-windows"
 }

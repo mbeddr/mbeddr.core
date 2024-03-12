@@ -77,7 +77,7 @@ task renameTutorial(type: Copy, dependsOn: ':build:com.mbeddr:distribution:packa
     rename("com.mbeddr.tutorial.zip", tutorialFileName)
 }
 
-task renamePlarform(type: Copy, dependsOn: ':build:com.mbeddr:distribution:build_platform_distribution') {
+task renamePlatform(type: Copy, dependsOn: ':build:com.mbeddr:distribution:build_platform_distribution') {
     from(artifactsRoot + "/com.mbeddr.platform.distribution/")
     into(artifactsRoot + "/com.mbeddr.platform.distribution/")
     include("platform-distribution.zip")
@@ -95,5 +95,5 @@ task copyRenameAndDeleteMacosSetupFile(type: Delete, dependsOn: [renameMacosFile
 githubRelease.dependsOn copyRenameAndDeleteWindowsSetupFile,
         //copyRenameAndDeleteMacosSetupFile,
         renameAllInOne,
-        renamePlarform,
+        renamePlatform,
         renameTutorial
