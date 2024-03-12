@@ -51,6 +51,7 @@
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
+    <import index="v9gs" ref="r:a139668a-5a0e-46e2-a802-102190e497e5(jetbrains.mps.core.tool.environment.util)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
   </imports>
@@ -275,6 +276,7 @@
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -2234,6 +2236,107 @@
       <node concept="2aLE7I" id="oUcJT$humY" role="ElM8M">
         <node concept="ElOhj" id="oUcJT$humZ" role="2aLE7H">
           <node concept="3clFbS" id="oUcJT$hun0" role="2VODD2">
+            <node concept="3SKdUt" id="5Ulr5FUPTkl" role="3cqZAp">
+              <node concept="1PaTwC" id="5Ulr5FUPTkm" role="1aUNEU">
+                <node concept="3oM_SD" id="5Ulr5FUPUFQ" role="1PaTwD">
+                  <property role="3oM_SC" value="Make" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUMe" role="1PaTwD">
+                  <property role="3oM_SC" value="sure" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUFV" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUGh" role="1PaTwD">
+                  <property role="3oM_SC" value="only" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPWSl" role="1PaTwD">
+                  <property role="3oM_SC" value="warn" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUHY" role="1PaTwD">
+                  <property role="3oM_SC" value="about" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUGo" role="1PaTwD">
+                  <property role="3oM_SC" value="MPS" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUH0" role="1PaTwD">
+                  <property role="3oM_SC" value="Environment" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUH9" role="1PaTwD">
+                  <property role="3oM_SC" value="if" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUIU" role="1PaTwD">
+                  <property role="3oM_SC" value="screenshots" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUJB" role="1PaTwD">
+                  <property role="3oM_SC" value="are" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPWTB" role="1PaTwD">
+                  <property role="3oM_SC" value="actually" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUJP" role="1PaTwD">
+                  <property role="3oM_SC" value="used," />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUK4" role="1PaTwD">
+                  <property role="3oM_SC" value="and" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUKk" role="1PaTwD">
+                  <property role="3oM_SC" value="only" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUK_" role="1PaTwD">
+                  <property role="3oM_SC" value="do" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPUKR" role="1PaTwD">
+                  <property role="3oM_SC" value="it" />
+                </node>
+                <node concept="3oM_SD" id="5Ulr5FUPULa" role="1PaTwD">
+                  <property role="3oM_SC" value="once." />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5Ulr5FUPOua" role="3cqZAp">
+              <node concept="3cpWsn" id="5Ulr5FUPOud" role="3cpWs9">
+                <property role="TrG5h" value="isMpsEnvironment" />
+                <property role="3TUv4t" value="true" />
+                <node concept="10P_77" id="5Ulr5FUQ6KF" role="1tU5fm" />
+                <node concept="2ZW3vV" id="5Ulr5FUPUNy" role="33vP2m">
+                  <node concept="3uibUv" id="5Ulr5FUPUNz" role="2ZW6by">
+                    <ref role="3uigEE" to="v9gs:2doG_VG59Hc" resolve="FileMPSProject" />
+                  </node>
+                  <node concept="2OqwBi" id="5Ulr5FUPUN$" role="2ZW6bz">
+                    <node concept="2_BwXt" id="5Ulr5FUPUN_" role="2Oq$k0" />
+                    <node concept="liA8E" id="5Ulr5FUPUNA" role="2OqNvi">
+                      <ref role="37wK5l" to="hfuk:2BjwmTxTf34" resolve="getProject" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5Ulr5FUQJNQ" role="3cqZAp">
+              <node concept="3cpWsn" id="5Ulr5FUQJNO" role="3cpWs9">
+                <property role="3TUv4t" value="true" />
+                <property role="TrG5h" value="mpsEnvironmentWarning" />
+                <node concept="17QB3L" id="5Ulr5FUQKky" role="1tU5fm" />
+                <node concept="3cpWs3" id="5Ulr5FUQLHz" role="33vP2m">
+                  <node concept="Xl_RD" id="5Ulr5FUQLH$" role="3uHU7B">
+                    <property role="Xl_RC" value="Screenshots cannot be taken in MpsEnvironment (Ant &lt;generate&gt; task). " />
+                  </node>
+                  <node concept="Xl_RD" id="5Ulr5FUQLH_" role="3uHU7w">
+                    <property role="Xl_RC" value="Use mps-gradle-plugin, mps-build-backends, MPS tests, or other means to run the MPS make process in an IDEA environment." />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5Ulr5FUQ$al" role="3cqZAp">
+              <node concept="3cpWsn" id="5Ulr5FUQ$ao" role="3cpWs9">
+                <property role="TrG5h" value="reportMpsEnvironment" />
+                <node concept="10P_77" id="5Ulr5FUQ$aj" role="1tU5fm" />
+                <node concept="3clFbT" id="5Ulr5FUQ_zi" role="33vP2m">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5Ulr5FUPPPH" role="3cqZAp" />
             <node concept="3clFbF" id="3hEqlZ1qKCA" role="3cqZAp">
               <node concept="2OqwBi" id="3hEqlZ1qKCW" role="3clFbG">
                 <node concept="EWnkA" id="3hEqlZ1qKCB" role="2Oq$k0" />
@@ -2274,7 +2377,7 @@
                 <node concept="3clFbH" id="33dz4spT2qO" role="3cqZAp" />
                 <node concept="3cpWs8" id="3kcKtVhKdAp" role="3cqZAp">
                   <node concept="3cpWsn" id="3kcKtVhKdAs" role="3cpWs9">
-                    <property role="TrG5h" value="MakeModelFolder2Runnables" />
+                    <property role="TrG5h" value="runnablesByFolder" />
                     <node concept="3rvAFt" id="3kcKtVhKdAj" role="1tU5fm">
                       <node concept="_YKpA" id="3kcKtVhKf5L" role="3rvSg0">
                         <node concept="3uibUv" id="1cBwqeL36X_" role="_ZDj9">
@@ -2382,6 +2485,9 @@
                             </node>
                           </node>
                           <node concept="2OqwBi" id="2OaO_a3zl9D" role="33vP2m">
+                            <node concept="37vLTw" id="5gvmGjUsgod" role="2Oq$k0">
+                              <ref role="3cqZAo" node="22g6WSWEB4" resolve="resourcesWithOutput" />
+                            </node>
                             <node concept="3goQfb" id="x$_sKCq8qR" role="2OqNvi">
                               <node concept="1bVj0M" id="x$_sKCq8qT" role="23t8la">
                                 <node concept="3clFbS" id="x$_sKCq8qU" role="1bW5cS">
@@ -2455,9 +2561,6 @@
                                   <node concept="2jxLKc" id="x$_sKCq8re" role="1tU5fm" />
                                 </node>
                               </node>
-                            </node>
-                            <node concept="37vLTw" id="5gvmGjUsgod" role="2Oq$k0">
-                              <ref role="3cqZAo" node="22g6WSWEB4" resolve="resourcesWithOutput" />
                             </node>
                           </node>
                         </node>
@@ -2632,16 +2735,11 @@
                                     <ref role="2bn25l" to="fy8e:taepSZ9rBr" resolve="make" />
                                   </node>
                                   <node concept="2sxana" id="4$J9NYoGVeO" role="2OqNvi">
-                                    <ref role="2sxfKC" to="fy8e:taepSZ9rBV" resolve="pathToFile" />
+                                    <ref role="2sxfKC" to="fy8e:5rVd6vTmgKP" resolve="alternateOutput" />
                                   </node>
                                 </node>
-                                <node concept="2OqwBi" id="7OtjhV3GWOZ" role="2SgHGx">
-                                  <node concept="37vLTw" id="7OtjhV3GUn0" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7OtjhV3GP5x" resolve="modelOutputLocation" />
-                                  </node>
-                                  <node concept="liA8E" id="7OtjhV3GXzH" role="2OqNvi">
-                                    <ref role="37wK5l" to="3ju5:~IFile.getPath()" resolve="getPath" />
-                                  </node>
+                                <node concept="37vLTw" id="7OtjhV3GUn0" role="2SgHGx">
+                                  <ref role="3cqZAo" node="7OtjhV3GP5x" resolve="modelOutputLocation" />
                                 </node>
                               </node>
                             </node>
@@ -2732,6 +2830,36 @@
                               <property role="TrG5h" value="modelContent" />
                             </node>
                             <node concept="3clFbS" id="oUcJT$i_d2" role="2LFqv$">
+                              <node concept="3clFbJ" id="6D39xFaCpK0" role="3cqZAp">
+                                <node concept="3clFbS" id="6D39xFaCpK2" role="3clFbx">
+                                  <node concept="3clFbJ" id="5Ulr5FUQAJB" role="3cqZAp">
+                                    <node concept="3clFbS" id="5Ulr5FUQAJD" role="3clFbx">
+                                      <node concept="1daRAt" id="6D39xFaCR1u" role="3cqZAp">
+                                        <property role="1daRAr" value="3bEKrlZKrwG/WARNING" />
+                                        <node concept="37vLTw" id="5Ulr5FUQMHU" role="1daK9t">
+                                          <ref role="3cqZAo" node="5Ulr5FUQJNO" resolve="mpsEnvironmentWarning" />
+                                        </node>
+                                      </node>
+                                      <node concept="3clFbF" id="5Ulr5FUQETA" role="3cqZAp">
+                                        <node concept="37vLTI" id="5Ulr5FUQFWz" role="3clFbG">
+                                          <node concept="3clFbT" id="5Ulr5FUQG_5" role="37vLTx" />
+                                          <node concept="37vLTw" id="5Ulr5FUQET$" role="37vLTJ">
+                                            <ref role="3cqZAo" node="5Ulr5FUQ$ao" resolve="reportMpsEnvironment" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="37vLTw" id="5Ulr5FUQBmn" role="3clFbw">
+                                      <ref role="3cqZAo" node="5Ulr5FUQ$ao" resolve="reportMpsEnvironment" />
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="5Ulr5FUQ9rW" role="3cqZAp" />
+                                </node>
+                                <node concept="37vLTw" id="5Ulr5FUPY0h" role="3clFbw">
+                                  <ref role="3cqZAo" node="5Ulr5FUPOud" resolve="shouldReportMpsEnvironment" />
+                                </node>
+                              </node>
+                              <node concept="3clFbH" id="5Ulr5FUPGhu" role="3cqZAp" />
                               <node concept="3cpWs8" id="5XfUTkOUJIA" role="3cqZAp">
                                 <node concept="3cpWsn" id="5XfUTkOUJIB" role="3cpWs9">
                                   <property role="TrG5h" value="node" />
@@ -3043,6 +3171,36 @@
                               <property role="TrG5h" value="sectionAsImage" />
                             </node>
                             <node concept="3clFbS" id="5XfUTkOqstl" role="2LFqv$">
+                              <node concept="3clFbJ" id="5Ulr5FUQH9V" role="3cqZAp">
+                                <node concept="3clFbS" id="5Ulr5FUQH9W" role="3clFbx">
+                                  <node concept="3clFbJ" id="5Ulr5FUQH9X" role="3cqZAp">
+                                    <node concept="3clFbS" id="5Ulr5FUQH9Y" role="3clFbx">
+                                      <node concept="1daRAt" id="5Ulr5FUQH9Z" role="3cqZAp">
+                                        <property role="1daRAr" value="3bEKrlZKrwG/WARNING" />
+                                        <node concept="37vLTw" id="5Ulr5FUQOrG" role="1daK9t">
+                                          <ref role="3cqZAo" node="5Ulr5FUQJNO" resolve="mpsEnvironmentWarning" />
+                                        </node>
+                                      </node>
+                                      <node concept="3clFbF" id="5Ulr5FUQHa3" role="3cqZAp">
+                                        <node concept="37vLTI" id="5Ulr5FUQHa4" role="3clFbG">
+                                          <node concept="3clFbT" id="5Ulr5FUQHa5" role="37vLTx" />
+                                          <node concept="37vLTw" id="5Ulr5FUQHa6" role="37vLTJ">
+                                            <ref role="3cqZAo" node="5Ulr5FUQ$ao" resolve="reportMpsEnvironment" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="37vLTw" id="5Ulr5FUQHa7" role="3clFbw">
+                                      <ref role="3cqZAo" node="5Ulr5FUQ$ao" resolve="reportMpsEnvironment" />
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="5Ulr5FUQHa8" role="3cqZAp" />
+                                </node>
+                                <node concept="37vLTw" id="5Ulr5FUQHa9" role="3clFbw">
+                                  <ref role="3cqZAo" node="5Ulr5FUPOud" resolve="shouldReportMpsEnvironment" />
+                                </node>
+                              </node>
+                              <node concept="3clFbH" id="5Ulr5FUQgvP" role="3cqZAp" />
                               <node concept="3cpWs8" id="223OxQl_y91" role="3cqZAp">
                                 <node concept="3cpWsn" id="223OxQl_y92" role="3cpWs9">
                                   <property role="TrG5h" value="node" />
@@ -3372,14 +3530,27 @@
                             </node>
                             <node concept="liA8E" id="oUcJT$luJd" role="2OqNvi">
                               <ref role="37wK5l" to="yyf4:~ProgressMonitor.step(java.lang.String)" resolve="step" />
-                              <node concept="3cpWs3" id="3jAiNlltCax" role="37wK5m">
-                                <node concept="3uNrnE" id="3jAiNlltER$" role="3uHU7w">
-                                  <node concept="37vLTw" id="3jAiNlltERA" role="2$L3a6">
-                                    <ref role="3cqZAo" node="3jAiNlltD3e" resolve="index" />
+                              <node concept="3cpWs3" id="3OTy9gWa97V" role="37wK5m">
+                                <node concept="3cpWs3" id="3OTy9gWa89m" role="3uHU7B">
+                                  <node concept="3cpWs3" id="3jAiNlltCax" role="3uHU7B">
+                                    <node concept="Xl_RD" id="3jAiNlltB_L" role="3uHU7B">
+                                      <property role="Xl_RC" value="Creating screenshot step " />
+                                    </node>
+                                    <node concept="3uNrnE" id="3jAiNlltER$" role="3uHU7w">
+                                      <node concept="37vLTw" id="3jAiNlltERA" role="2$L3a6">
+                                        <ref role="3cqZAo" node="3jAiNlltD3e" resolve="index" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="3OTy9gWa89_" role="3uHU7w">
+                                    <property role="Xl_RC" value=" of " />
                                   </node>
                                 </node>
-                                <node concept="Xl_RD" id="3jAiNlltB_L" role="3uHU7B">
-                                  <property role="Xl_RC" value="Creating screenshot step " />
+                                <node concept="2OqwBi" id="3OTy9gWa5$_" role="3uHU7w">
+                                  <node concept="37vLTw" id="3OTy9gWa4oc" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="C1ce8Wei$9" resolve="runnables" />
+                                  </node>
+                                  <node concept="34oBXx" id="3OTy9gWa6CH" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
