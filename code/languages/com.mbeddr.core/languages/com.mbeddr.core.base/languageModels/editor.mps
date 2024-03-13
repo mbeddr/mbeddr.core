@@ -11109,6 +11109,34 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs8" id="5g63V595qmg" role="3cqZAp">
+                <node concept="3cpWsn" id="5g63V595qmh" role="3cpWs9">
+                  <property role="TrG5h" value="parent" />
+                  <node concept="3uibUv" id="5g63V595qmi" role="1tU5fm">
+                    <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                  </node>
+                  <node concept="2OqwBi" id="5g63V595qmj" role="33vP2m">
+                    <node concept="liA8E" id="5g63V595qmk" role="2OqNvi">
+                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent()" resolve="getParent" />
+                    </node>
+                    <node concept="Xjq3P" id="5g63V595qml" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="5g63V595sM2" role="3cqZAp">
+                <node concept="3cpWsn" id="5g63V595sM5" role="3cpWs9">
+                  <property role="TrG5h" value="y" />
+                  <node concept="10Oyi0" id="5g63V595sM0" role="1tU5fm" />
+                  <node concept="2OqwBi" id="5g63V595xPn" role="33vP2m">
+                    <node concept="37vLTw" id="5g63V595w9k" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5g63V595qmh" resolve="parent" />
+                    </node>
+                    <node concept="liA8E" id="5g63V595zp$" role="2OqNvi">
+                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbH" id="3VQE5sArMp9" role="3cqZAp" />
               <node concept="3cpWs8" id="3VQE5sArNXD" role="3cqZAp">
                 <node concept="3cpWsn" id="3VQE5sArNXC" role="3cpWs9">
@@ -11770,8 +11798,13 @@
                           <ref role="3cqZAo" node="3VQE5sArNYw" resolve="deltaX" />
                         </node>
                       </node>
-                      <node concept="1rXfSq" id="7x0eTkwTnE" role="37wK5m">
-                        <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
+                      <node concept="3cpWsd" id="5g63V596pdJ" role="37wK5m">
+                        <node concept="3cmrfG" id="5g63V596pAu" role="3uHU7w">
+                          <property role="3cmrfH" value="5" />
+                        </node>
+                        <node concept="37vLTw" id="5g63V595$VF" role="3uHU7B">
+                          <ref role="3cqZAo" node="5g63V595sM5" resolve="y" />
+                        </node>
                       </node>
                     </node>
                   </node>
