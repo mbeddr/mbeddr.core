@@ -973,8 +973,8 @@
     <property role="3GE5qa" value="table" />
     <property role="TrG5h" value="StringTableCell" />
     <property role="R4oN_" value="a simple string" />
-    <property role="34LRSv" value="(" />
     <property role="EcuMT" value="5185579450379471862" />
+    <property role="34LRSv" value="&quot;" />
     <ref role="1TJDcQ" node="4vQSg$ArKJJ" resolve="TableCell" />
     <node concept="1TJgyi" id="4vQSg$ArKJS" role="1TKVEl">
       <property role="TrG5h" value="text" />

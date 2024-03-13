@@ -3690,7 +3690,7 @@
     <node concept="3EZMnI" id="4vQSg$ArKJW" role="2wV5jI">
       <node concept="l2Vlx" id="4vQSg$ArKJX" role="2iSdaV" />
       <node concept="3F0ifn" id="4vQSg$ArKJV" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
+        <property role="3F0ifm" value="&quot;" />
         <ref role="1k5W1q" node="519ky_SjvCh" resolve="cell" />
         <node concept="11LMrY" id="4vQSg$ArKK3" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -3701,7 +3701,7 @@
         <ref role="1k5W1q" node="519ky_SjvCh" resolve="cell" />
       </node>
       <node concept="3F0ifn" id="4vQSg$ArKK1" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <property role="3F0ifm" value="&quot;" />
         <ref role="1k5W1q" node="519ky_SjvCh" resolve="cell" />
         <node concept="11L4FC" id="4vQSg$ArKK2" role="3F10Kt">
           <property role="VOm3f" value="true" />
