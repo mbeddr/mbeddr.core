@@ -249,7 +249,7 @@
               <node concept="OjmMv" id="1sNMMH9j0nX" role="3X6T9h">
                 <node concept="19SGf9" id="1sNMMH9j0nY" role="OjmMu">
                   <node concept="19SUe$" id="1sNMMH9j0nZ" role="19SJt6">
-                    <property role="19SUeA" value="Orderd Item 2.1" />
+                    <property role="19SUeA" value="Ordered Item 2.1" />
                   </node>
                 </node>
               </node>
@@ -341,7 +341,7 @@
         <node concept="1_0LV8" id="7JweZKTdN1W" role="1_0VJ0">
           <node concept="19SGf9" id="7JweZKTdN1X" role="1_0LWR">
             <node concept="19SUe$" id="7JweZKTdN1Y" role="19SJt6">
-              <property role="19SUeA" value="Link to your favourtie website " />
+              <property role="19SUeA" value="Link to your favourite website " />
             </node>
             <node concept="1hOBRO" id="7JweZKTdNcz" role="19SJt6">
               <node concept="19SGf9" id="7JweZKTdNc$" role="$DsGW">
@@ -431,7 +431,7 @@
           <node concept="OjmMv" id="191H8GfGj$i" role="2SaI5j">
             <node concept="19SGf9" id="191H8GfGj$j" role="OjmMu">
               <node concept="19SUe$" id="191H8GfGj$k" role="19SJt6">
-                <property role="19SUeA" value="A beautifull image" />
+                <property role="19SUeA" value="A beautiful image" />
               </node>
             </node>
           </node>
@@ -447,7 +447,7 @@
           <node concept="OjmMv" id="2BdmVJRqOeO" role="2SaI5j">
             <node concept="19SGf9" id="2BdmVJRqOeP" role="OjmMu">
               <node concept="19SUe$" id="2BdmVJRqOeQ" role="19SJt6">
-                <property role="19SUeA" value="A beautifull animation" />
+                <property role="19SUeA" value="A beautiful animation" />
               </node>
             </node>
           </node>
