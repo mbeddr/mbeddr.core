@@ -15,6 +15,7 @@
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -226,6 +227,7 @@
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <property id="1221209241505" name="value" index="1lJzqX" />
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
       <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
@@ -3677,8 +3679,8 @@
         <ref role="1NtTu8" to="2c95:4vQSg$Ar0ev" resolve="text" />
       </node>
       <node concept="l2Vlx" id="4vQSg$Ar0e$" role="2iSdaV" />
-      <node concept="Veino" id="2x0Xdshho0Z" role="3F10Kt">
-        <property role="Vb096" value="fLJRk5A/lightGray" />
+      <node concept="VSNWy" id="5g63V59yUBZ" role="3F10Kt">
+        <property role="1lJzqX" value="16" />
       </node>
     </node>
   </node>
@@ -11862,6 +11864,11 @@
       <node concept="16NfWO" id="3cUcim$c7G6" role="upBLP">
         <node concept="2h3Zct" id="3cUcim$c7G7" role="16NeZM">
           <property role="2h4Kg1" value="header" />
+        </node>
+      </node>
+      <node concept="16NL0t" id="5g63V59sHGa" role="upBLP">
+        <node concept="2h3Zct" id="5g63V59sHJy" role="16NL0q">
+          <property role="2h4Kg1" value="a text paragraph with a header" />
         </node>
       </node>
       <node concept="ucgPf" id="3cUcim$c7G8" role="3aKz83">
