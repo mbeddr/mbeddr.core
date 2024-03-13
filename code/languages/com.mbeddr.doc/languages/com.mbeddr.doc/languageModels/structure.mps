@@ -873,7 +873,7 @@
   <node concept="1TIwiD" id="7$DvC4gUq7B">
     <property role="3GE5qa" value="paragraphs" />
     <property role="TrG5h" value="ListingParagraph" />
-    <property role="R4oN_" value="a pasted in textual code paragraph" />
+    <property role="R4oN_" value="a pasted textual code paragraph" />
     <property role="34LRSv" value="listing" />
     <property role="EcuMT" value="8730648445434044903" />
     <ref role="1TJDcQ" node="2TZO3DbvcVJ" resolve="AbstractParagraph" />

@@ -4140,20 +4140,17 @@
       <node concept="3EZMnI" id="4ulp8VfF994" role="3EZMnx">
         <node concept="l2Vlx" id="4ulp8VfF995" role="2iSdaV" />
         <node concept="3F0ifn" id="4ulp8VfF996" role="3EZMnx">
-          <property role="3F0ifm" value="Inline Table" />
+          <property role="3F0ifm" value="inline table" />
         </node>
-        <node concept="3XFhqQ" id="4ulp8VfF99i" role="3EZMnx" />
         <node concept="3F0ifn" id="4ulp8VfF99j" role="3EZMnx">
-          <property role="3F0ifm" value="num of cols:" />
+          <property role="3F0ifm" value="with" />
         </node>
         <node concept="3F0A7n" id="4ulp8VfF99k" role="3EZMnx">
+          <property role="1$x2rV" value="0" />
           <ref role="1NtTu8" to="2c95:519ky_SkGwq" resolve="numCols" />
         </node>
-        <node concept="3F0ifn" id="4ulp8VfF99l" role="3EZMnx">
-          <property role="3F0ifm" value="line at bottom" />
-        </node>
-        <node concept="3F0A7n" id="4ulp8VfF99m" role="3EZMnx">
-          <ref role="1NtTu8" to="2c95:7IezpGAfWRT" resolve="lineAtBottom" />
+        <node concept="3F0ifn" id="5g63V59AbHq" role="3EZMnx">
+          <property role="3F0ifm" value="columns" />
         </node>
       </node>
       <node concept="gc7cB" id="4ulp8VfF99s" role="3EZMnx">
@@ -4174,6 +4171,15 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="519ky_SkGxr" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5g63V59AbVo" role="6VMZX">
+      <node concept="2iRfu4" id="5g63V59AbVp" role="2iSdaV" />
+      <node concept="3F0ifn" id="5g63V59AbVS" role="3EZMnx">
+        <property role="3F0ifm" value="line at bottom" />
+      </node>
+      <node concept="3F0A7n" id="5g63V59Ac4v" role="3EZMnx">
+        <ref role="1NtTu8" to="2c95:7IezpGAfWRT" resolve="lineAtBottom" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="519ky_SlYNd">
