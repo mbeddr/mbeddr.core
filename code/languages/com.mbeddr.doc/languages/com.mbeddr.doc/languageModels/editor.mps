@@ -67,6 +67,7 @@
     <import index="1i7y" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.datatransfer(MPS.Editor/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="zyr2" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.inspector(MPS.Editor/)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
@@ -4635,8 +4636,12 @@
                 <node concept="3clFbF" id="OI5Xv7cFsh" role="3cqZAp">
                   <node concept="2ShNRf" id="OI5Xv7cFsi" role="3clFbG">
                     <node concept="1pGfFk" id="OI5Xv7cFsj" role="2ShVmc">
-                      <ref role="37wK5l" to="r4b4:1F0U9H74l9q" resolve="CRHelperCell" />
+                      <ref role="37wK5l" to="r4b4:1F0U9H74l9y" resolve="CRHelperCell" />
                       <node concept="pncrf" id="OI5Xv7cFsk" role="37wK5m" />
+                      <node concept="10M0yZ" id="5g63V597GOR" role="37wK5m">
+                        <ref role="3cqZAo" to="lzb2:~JBColor.WHITE" resolve="WHITE" />
+                        <ref role="1PxDUh" to="lzb2:~JBColor" resolve="JBColor" />
+                      </node>
                     </node>
                   </node>
                 </node>
