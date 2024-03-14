@@ -28,7 +28,6 @@
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" implicit="true" />
-    <import index="wev6" ref="r:f29914af-ae14-4589-b53d-f60c6018b368(jetbrains.mps.lang.project.behavior)" implicit="true" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -565,11 +564,11 @@
                                         <ref role="3cqZAo" node="aiIotXl7hG" resolve="noode" />
                                       </node>
                                       <node concept="3TrEf2" id="aiIotXkVUP" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="soy0:3OU98G0_S3I" resolve="moduleRefOld" />
+                                        <ref role="3Tt5mk" to="soy0:7mK357ypJVJ" resolve="identity" />
                                       </node>
                                     </node>
                                     <node concept="2qgKlT" id="7AZhlVTk4Yq" role="2OqNvi">
-                                      <ref role="37wK5l" to="wev6:2BHFktfnkjF" resolve="toModuleReference" />
+                                      <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                                     </node>
                                   </node>
                                 </node>
