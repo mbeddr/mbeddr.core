@@ -1845,5 +1845,12 @@
     <property role="TrG5h" value="ITocEntry" />
     <property role="3GE5qa" value="structure" />
   </node>
+  <node concept="1TIwiD" id="1R2r3DPH0GG">
+    <property role="EcuMT" value="2144395370920413996" />
+    <property role="3GE5qa" value="words.formatted" />
+    <property role="TrG5h" value="SubScriptWord" />
+    <property role="34LRSv" value="\subscript" />
+    <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
+  </node>
 </model>
 

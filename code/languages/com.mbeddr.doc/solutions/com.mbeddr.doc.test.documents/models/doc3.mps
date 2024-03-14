@@ -63,6 +63,7 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
+      <concept id="2144395370920413996" name="com.mbeddr.doc.structure.SubScriptWord" flags="ng" index="1CtAsm" />
       <concept id="3653241738344441360" name="com.mbeddr.doc.structure.SuperScriptWord" flags="ng" index="1I54Ch" />
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -115,7 +116,7 @@
     <property role="TrG5h" value="SupScriptTest" />
     <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
     <node concept="1_0VNX" id="3aMV05sEe$b" role="1_0VJ0">
-      <property role="TrG5h" value="TestSupScript" />
+      <property role="TrG5h" value="TestSuperScript" />
       <property role="1_0VJr" value="TestingSuperScript" />
       <node concept="1_0LV8" id="3aMV05sEe$f" role="1_0VJ0">
         <node concept="19SGf9" id="3aMV05sEe$g" role="1_0LWR">
@@ -170,6 +171,45 @@
           <node concept="19SUe$" id="3aMV05sEe_0" role="19SJt6">
             <property role="19SUeA" value="= do the math..." />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_0VNX" id="1R2r3DPJ75T" role="1_0VJ0">
+      <property role="TrG5h" value="TestSubScript" />
+      <property role="1_0VJr" value="TestingSubScript" />
+      <node concept="1_0LV8" id="1R2r3DPJ75U" role="1_0VJ0">
+        <node concept="19SGf9" id="1R2r3DPJ75V" role="1_0LWR">
+          <node concept="19SUe$" id="1R2r3DPJ75W" role="19SJt6">
+            <property role="19SUeA" value="I am just testing subscript works:&#10;&#10;- 2 " />
+          </node>
+          <node concept="1CtAsm" id="1R2r3DPJ771" role="19SJt6">
+            <node concept="19SGf9" id="1R2r3DPJ777" role="$DsGW">
+              <node concept="19SUe$" id="1R2r3DPJ778" role="19SJt6">
+                <property role="19SUeA" value="2+33" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1R2r3DPJ760" role="19SJt6">
+            <property role="19SUeA" value="&#10;- See subscript note " />
+          </node>
+          <node concept="1CtAsm" id="1R2r3DPJ77u" role="19SJt6">
+            <node concept="19SGf9" id="1R2r3DPJ77$" role="$DsGW">
+              <node concept="19SUe$" id="1R2r3DPJ77_" role="19SJt6">
+                <property role="19SUeA" value="are you reading this note?" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1R2r3DPJ764" role="19SJt6">
+            <property role="19SUeA" value="&#10;- " />
+          </node>
+          <node concept="1I54Ch" id="1R2r3DPJ765" role="19SJt6">
+            <node concept="19SGf9" id="1R2r3DPJ766" role="$DsGW">
+              <node concept="19SUe$" id="1R2r3DPJ767" role="19SJt6">
+                <property role="19SUeA" value="Just a subscript" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1R2r3DPJ768" role="19SJt6" />
         </node>
       </node>
     </node>
