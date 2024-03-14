@@ -16,6 +16,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -639,6 +640,9 @@
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -747,6 +751,8 @@
         <reference id="1397920687864997201" name="linkDeclaration" index="2reCK$" />
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
+        <property id="406884245181045769" name="disableLeftRowEndCells" index="2R7psp" />
+        <property id="406884245181045772" name="disableRightRowEndCells" index="2R7pss" />
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
       </concept>
       <concept id="1397920687867564204" name="de.slisson.mps.tables.structure.QueryParameter_ColumnIndex" flags="ng" index="2rSBBp" />
@@ -8816,9 +8822,55 @@
           </node>
         </node>
       </node>
-      <node concept="2rfBfz" id="4ulp8Vf_5hD" role="3EZMnx">
-        <node concept="2reSaE" id="4ulp8Vf_5hE" role="2rf8GZ">
-          <ref role="2reCK$" to="2c95:519ky_SkGwr" resolve="rows" />
+      <node concept="1QoScp" id="1R2r3DPf7iw" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="1R2r3DPf7iz" role="3e4ffs">
+          <node concept="3clFbS" id="1R2r3DPf7i_" role="2VODD2">
+            <node concept="3clFbF" id="1R2r3DPl60Y" role="3cqZAp">
+              <node concept="2EnYce" id="1R2r3DPqi4M" role="3clFbG">
+                <node concept="2EnYce" id="1R2r3DPqhVo" role="2Oq$k0">
+                  <node concept="2EnYce" id="1R2r3DPqhGt" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1R2r3DPqgZA" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1R2r3DPqgE8" role="2Oq$k0">
+                        <node concept="1Q80Hx" id="1R2r3DPqgro" role="2Oq$k0" />
+                        <node concept="liA8E" id="1R2r3DPqgQE" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1R2r3DPqhcz" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorComponent.findNodeCell(org.jetbrains.mps.openapi.model.SNode)" resolve="findNodeCell" />
+                        <node concept="pncrf" id="1R2r3DPqhha" role="37wK5m" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="1R2r3DPjB1F" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getCellContext()" resolve="getCellContext" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1R2r3DPjB1G" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCellContext.getHints()" resolve="getHints" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1R2r3DPjB1H" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~Collection.contains(java.lang.Object)" resolve="contains" />
+                  <node concept="2pYGij" id="1R2r3DPjB1I" role="37wK5m">
+                    <ref role="2pYH_C" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2rfBfz" id="4ulp8Vf_5hD" role="1QoS34">
+          <property role="2R7psp" value="true" />
+          <property role="2R7pss" value="true" />
+          <node concept="2reSaE" id="4ulp8Vf_5hE" role="2rf8GZ">
+            <ref role="2reCK$" to="2c95:519ky_SkGwr" resolve="rows" />
+          </node>
+        </node>
+        <node concept="2rfBfz" id="1R2r3DPf7tj" role="1QoVPY">
+          <node concept="2reSaE" id="1R2r3DPf7tk" role="2rf8GZ">
+            <ref role="2reCK$" to="2c95:519ky_SkGwr" resolve="rows" />
+          </node>
         </node>
       </node>
       <node concept="gc7cB" id="4ulp8Vf_5hF" role="3EZMnx">
