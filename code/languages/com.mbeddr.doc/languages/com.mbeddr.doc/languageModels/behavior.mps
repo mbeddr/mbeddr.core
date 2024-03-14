@@ -420,27 +420,7 @@
   <node concept="13h7C7" id="2TZO3Dbv5xP">
     <ref role="13h7C2" to="2c95:2TZO3Dbuxxg" resolve="EmptyDocContent" />
     <node concept="13hLZK" id="2TZO3Dbv5xQ" role="13h7CW">
-      <node concept="3clFbS" id="2TZO3Dbv5xR" role="2VODD2">
-        <node concept="3clFbF" id="7JWieF82LsF" role="3cqZAp">
-          <node concept="37vLTI" id="7JWieF82LsM" role="3clFbG">
-            <node concept="3cpWs3" id="7JWieF836hK" role="37vLTx">
-              <node concept="Xl_RD" id="7JWieF836hJ" role="3uHU7B">
-                <property role="Xl_RC" value="empty_" />
-              </node>
-              <node concept="2OqwBi" id="7IDbqDr5xc" role="3uHU7w">
-                <node concept="13iPFW" id="7IDbqDr5pn" role="2Oq$k0" />
-                <node concept="2bSWHS" id="7IDbqDr6FW" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7JWieF82LsH" role="37vLTJ">
-              <node concept="13iPFW" id="7JWieF82LsG" role="2Oq$k0" />
-              <node concept="3TrcHB" id="7JWieF82LsL" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="2TZO3Dbv5xR" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="38Vsfq8kIQE" role="13h7CS">
       <property role="TrG5h" value="allowNonIdentifierNames" />
