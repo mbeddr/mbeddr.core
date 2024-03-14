@@ -4169,7 +4169,7 @@
                       <ref role="37wK5l" to="grvc:2N1CSrzPN_a" resolve="getCategories" />
                     </node>
                     <node concept="37vLTw" id="38Vsfq9ekSF" role="2Oq$k0">
-                      <ref role="3cqZAo" node="38Vsfq9ekSB" resolve="visualizableElement" />
+                      <ref role="3cqZAo" node="38Vsfq9ekSB" resolve="element" />
                     </node>
                   </node>
                 </node>
@@ -8558,7 +8558,7 @@
                             <property role="2bfB8j" value="true" />
                             <property role="373rjd" value="true" />
                             <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                             <node concept="3Tm1VV" id="1R2r3DPmXZ0" role="1B3o_S" />
                             <node concept="3clFb_" id="1R2r3DPmXZe" role="jymVt">
                               <property role="TrG5h" value="actionPerformed" />
@@ -8631,7 +8631,7 @@
                                 </node>
                               </node>
                               <node concept="2AHcQZ" id="1R2r3DPmXZm" role="2AJF6D">
-                                <ref role="2AI5Lk" to="wyt6:~Override" />
+                                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                               </node>
                             </node>
                           </node>
@@ -13850,7 +13850,7 @@
           </node>
           <node concept="3clFbF" id="1yYEjDYIGmG" role="3cqZAp">
             <node concept="37vLTw" id="1yYEjDYIQ0n" role="3clFbG">
-              <ref role="3cqZAo" node="1yYEjDYIQ0e" resolve="node" />
+              <ref role="3cqZAo" node="1yYEjDYIQ0e" resolve="item" />
             </node>
           </node>
         </node>

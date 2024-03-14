@@ -3764,7 +3764,7 @@
                 <node concept="2OqwBi" id="4E5hYf7$7kz" role="33vP2m">
                   <node concept="2OqwBi" id="4E5hYf7$7k$" role="2Oq$k0">
                     <node concept="37vLTw" id="4E5hYf7$7k_" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4E5hYf7zTyB" resolve="ancestor" />
+                      <ref role="3cqZAo" node="4E5hYf7zTyB" resolve="section" />
                     </node>
                     <node concept="2Rf3mk" id="4E5hYf7$7kA" role="2OqNvi">
                       <node concept="1xMEDy" id="4E5hYf7$7kB" role="1xVPHs">
@@ -3786,7 +3786,7 @@
                 <node concept="17QB3L" id="5g63V59KvMW" role="1tU5fm" />
                 <node concept="2OqwBi" id="5g63V59KBkD" role="33vP2m">
                   <node concept="37vLTw" id="5g63V59KBkE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4E5hYf7zTyB" resolve="ancestor" />
+                    <ref role="3cqZAo" node="4E5hYf7zTyB" resolve="section" />
                   </node>
                   <node concept="2qgKlT" id="5g63V59KBkF" role="2OqNvi">
                     <ref role="37wK5l" node="4vQSg$Aq5vD" resolve="nestingIndex" />
@@ -3822,7 +3822,7 @@
             <node concept="3cpWs6" id="5g63V59KDIJ" role="3cqZAp">
               <node concept="3cpWs3" id="4E5hYf7$8t9" role="3cqZAk">
                 <node concept="37vLTw" id="5g63V59KD89" role="3uHU7w">
-                  <ref role="3cqZAo" node="5g63V59KD80" resolve="toString" />
+                  <ref role="3cqZAo" node="5g63V59KD80" resolve="index" />
                 </node>
                 <node concept="3cpWs3" id="4E5hYf7$8eh" role="3uHU7B">
                   <node concept="37vLTw" id="5g63V59KBkG" role="3uHU7B">

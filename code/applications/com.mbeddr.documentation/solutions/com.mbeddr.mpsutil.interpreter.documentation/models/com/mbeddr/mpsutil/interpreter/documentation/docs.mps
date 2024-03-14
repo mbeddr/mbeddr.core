@@ -156,7 +156,7 @@
     <language id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta">
       <concept id="4411878964391860302" name="com.mbeddr.doc.meta.structure.SolutionRefWord" flags="ng" index="XCBN5" />
       <concept id="4411878964391805161" name="com.mbeddr.doc.meta.structure.AbstractModuleRefWord" flags="ng" index="XFqhy">
-        <child id="4411878964391805166" name="moduleRef" index="XFqh_" />
+        <child id="4411878964391805166" name="moduleRefOld" index="XFqh_" />
       </concept>
       <concept id="8408742697223012410" name="com.mbeddr.doc.meta.structure.LanguageRefWord" flags="ng" index="3R4DFk" />
     </language>
