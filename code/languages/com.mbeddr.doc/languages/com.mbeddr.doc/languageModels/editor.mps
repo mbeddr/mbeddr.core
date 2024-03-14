@@ -5391,37 +5391,10 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3EZMnI" id="4E5hYf5Y6S8" role="3EZMnx">
-        <node concept="gc7cB" id="2NmTaRWiP3S" role="3EZMnx">
-          <node concept="3VJUX4" id="2NmTaRWiP3U" role="3YsKMw">
-            <node concept="3clFbS" id="2NmTaRWiP3W" role="2VODD2">
-              <node concept="3clFbF" id="2NmTaRWiPin" role="3cqZAp">
-                <node concept="2ShNRf" id="2NmTaRWiPil" role="3clFbG">
-                  <node concept="1pGfFk" id="2NmTaRWj5ph" role="2ShVmc">
-                    <ref role="37wK5l" to="r4b4:6Ce4x7KQbw2" resolve="ColoredVerticalBarCell" />
-                    <node concept="pncrf" id="2NmTaRWj5qv" role="37wK5m" />
-                    <node concept="10M0yZ" id="2NmTaRWj5$1" role="37wK5m">
-                      <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
-                      <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                    </node>
-                    <node concept="3cmrfG" id="2NmTaRWj5WM" role="37wK5m">
-                      <property role="3cmrfH" value="0" />
-                    </node>
-                    <node concept="3cmrfG" id="2NmTaRWsyjO" role="37wK5m">
-                      <property role="3cmrfH" value="8" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3F0A7n" id="4E5hYf5Y6Sa" role="3EZMnx">
-          <ref role="1NtTu8" to="2c95:4vQSg$Ar0ev" resolve="text" />
-        </node>
-        <node concept="l2Vlx" id="4E5hYf5Y6Sb" role="2iSdaV" />
-        <node concept="Vb9p2" id="4E5hYf5Y6TU" role="3F10Kt">
-          <property role="Vbekb" value="g1_k_vY/BOLD" />
+      <node concept="3F0A7n" id="1R2r3DOOoA7" role="3EZMnx">
+        <ref role="1NtTu8" to="2c95:4vQSg$Ar0ev" resolve="text" />
+        <node concept="VSNWy" id="1R2r3DOOoAB" role="3F10Kt">
+          <property role="1lJzqX" value="16" />
         </node>
       </node>
     </node>
