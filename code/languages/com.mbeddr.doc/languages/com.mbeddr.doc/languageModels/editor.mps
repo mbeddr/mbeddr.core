@@ -158,6 +158,7 @@
       <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
         <reference id="4820515453818318891" name="hint" index="2pYH_C" />
       </concept>
+      <concept id="1886960078078641793" name="jetbrains.mps.lang.editor.structure.CellLayout_Superscript" flags="nn" index="2t5PaK" />
       <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1177327274449" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_pattern" flags="nn" index="ub8z3" />
       <concept id="1177327570013" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Substitute" flags="in" index="ucgPf" />
@@ -190,6 +191,9 @@
       <concept id="1160493135005" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues_GetValues" flags="in" index="MLZmj" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
+      <concept id="8255250703325731016" name="jetbrains.mps.lang.editor.structure.ScriptKindClassItem" flags="ln" index="2P5D8e">
+        <property id="8255250703325731018" name="script" index="2P5D8c" />
       </concept>
       <concept id="1164833692343" name="jetbrains.mps.lang.editor.structure.CellMenuPart_PropertyValues" flags="ng" index="PvTIS">
         <child id="1164833692344" name="valuesFunction" index="PvTIR" />
@@ -13922,6 +13926,22 @@
       <property role="TrG5h" value="DefaultFormattedText" />
     </node>
     <node concept="2VfDsV" id="38Vsfq7U9JM" role="3ft7WO" />
+  </node>
+  <node concept="24kQdi" id="1R2r3DPymPb">
+    <property role="3GE5qa" value="words.formatted" />
+    <ref role="1XX52x" to="2c95:3aMV05sDEog" resolve="SuperScriptWord" />
+    <node concept="3EZMnI" id="1R2r3DPyn33" role="2wV5jI">
+      <node concept="2t5PaK" id="1R2r3DPyn5_" role="2iSdaV" />
+      <node concept="3F1sOY" id="1R2r3DPFvH$" role="3EZMnx">
+        <ref role="1NtTu8" to="2c95:5mf_X_La_N_" resolve="text" />
+        <node concept="2P5D8e" id="1R2r3DPB5C2" role="3F10Kt">
+          <property role="2P5D8c" value="7agyGr7xxz4/SUPERSCRIPT" />
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="1R2r3DPymTF" role="CpUAK">
+      <ref role="2$4xQ3" to="r4b4:7xesQBpJXuT" resolve="presentationMode" />
+    </node>
   </node>
 </model>
 

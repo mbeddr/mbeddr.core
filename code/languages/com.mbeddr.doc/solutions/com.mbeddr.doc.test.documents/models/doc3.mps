@@ -116,7 +116,7 @@
     <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
     <node concept="1_0VNX" id="3aMV05sEe$b" role="1_0VJ0">
       <property role="TrG5h" value="TestSupScript" />
-      <property role="1_0VJr" value="TestingSupScript" />
+      <property role="1_0VJr" value="TestingSuperScript" />
       <node concept="1_0LV8" id="3aMV05sEe$f" role="1_0VJ0">
         <node concept="19SGf9" id="3aMV05sEe$g" role="1_0LWR">
           <node concept="19SUe$" id="3aMV05sEe$h" role="19SJt6">
