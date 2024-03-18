@@ -44,6 +44,8 @@
       <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
+      <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="4755612053022517119" name="border" index="41Bi8" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
@@ -322,6 +324,36 @@
               </node>
             </node>
             <node concept="19SUe$" id="GfNMM3dF6g" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;" />
+            </node>
+            <node concept="1jUjqm" id="1R2r3DPRmle" role="19SJt6">
+              <node concept="19SGf9" id="1R2r3DPRmlf" role="$DsGW">
+                <node concept="19SUe$" id="1R2r3DPRmlg" role="19SJt6">
+                  <property role="19SUeA" value="This is code formatted text" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1R2r3DPRmlh" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;" />
+            </node>
+            <node concept="2OoWia" id="1R2r3DPRmlz" role="19SJt6">
+              <node concept="19SGf9" id="1R2r3DPRml$" role="$DsGW">
+                <node concept="19SUe$" id="1R2r3DPRml_" role="19SJt6">
+                  <property role="19SUeA" value="This is key formatted text" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1R2r3DPRmlA" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;" />
+            </node>
+            <node concept="2OlAs7" id="1R2r3DPRn3H" role="19SJt6">
+              <node concept="19SGf9" id="1R2r3DPRn3I" role="$DsGW">
+                <node concept="19SUe$" id="1R2r3DPRn3J" role="19SJt6">
+                  <property role="19SUeA" value="This is menu formatted text" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1R2r3DPRn3K" role="19SJt6">
               <property role="19SUeA" value="&#10;&#10;" />
             </node>
             <node concept="3d4VFM" id="xxE$BM_wFl" role="19SJt6">
