@@ -1418,7 +1418,6 @@
         </node>
         <node concept="3F1sOY" id="2TZO3DbvcWg" role="3EZMnx">
           <property role="1$x2rV" value="enter text here" />
-          <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
           <ref role="1NtTu8" to="2c95:2TZO3DbvcWd" resolve="text" />
           <node concept="VechU" id="5mf_X_LaWxW" role="3F10Kt">
             <property role="Vb096" value="fLJRk5B/darkGray" />
@@ -4392,7 +4391,6 @@
         <node concept="3EZMnI" id="7X92A3KUh6E" role="3EZMnx">
           <node concept="3F1sOY" id="OI5Xv76WCv" role="3EZMnx">
             <property role="1$x2rV" value="enter text here" />
-            <ref role="1ERwB7" node="7zJMcSxj$uX" resolve="preventDeletion" />
             <ref role="1NtTu8" to="2c95:6VFmq3I3EUo" resolve="text" />
             <node concept="VechU" id="OI5Xv76WCw" role="3F10Kt">
               <property role="Vb096" value="fLJRk5B/darkGray" />
