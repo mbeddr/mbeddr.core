@@ -337,6 +337,7 @@
         <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="7991336459489871999" name="jetbrains.mps.lang.editor.structure.IOutputConceptSubstituteMenuPart" flags="ng" index="3EoQpk">
@@ -1005,6 +1006,8 @@
           </node>
         </node>
         <node concept="3F0A7n" id="4PmkglJOBl7" role="3EZMnx">
+          <property role="1$x2rV" value="no index" />
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="2c95:4PmkglJNWPJ" resolve="chapterStartIndex" />
         </node>
         <node concept="3F0ifn" id="7$DvC4gRxZ8" role="3EZMnx">
