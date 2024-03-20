@@ -11430,6 +11430,14 @@
         <property role="3clFbU" value="false" />
       </node>
     </node>
+    <node concept="312cEg" id="7zBzSouMwxo" role="jymVt">
+      <property role="TrG5h" value="myDefaultPriority" />
+      <node concept="3Tm1VV" id="7zBzSouMqSy" role="1B3o_S" />
+      <node concept="10Oyi0" id="7zBzSouMwlR" role="1tU5fm" />
+      <node concept="3cmrfG" id="7zBzSouMyez" role="33vP2m">
+        <property role="3cmrfH" value="0" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="3VOZakHQ8qn" role="jymVt" />
     <node concept="312cEg" id="3VOZakHQmfa" role="jymVt">
       <property role="TrG5h" value="myDefaultActivationCondition" />
@@ -11635,6 +11643,28 @@
         <node concept="10P_77" id="2y5$DYCdK6F" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7zBzSouM$9f" role="jymVt" />
+    <node concept="3clFb_" id="7zBzSouMCaT" role="jymVt">
+      <property role="TrG5h" value="setDefaultPriority" />
+      <node concept="3clFbS" id="7zBzSouMCaW" role="3clF47">
+        <node concept="3clFbF" id="7zBzSouMFnC" role="3cqZAp">
+          <node concept="37vLTI" id="7zBzSouMPFq" role="3clFbG">
+            <node concept="37vLTw" id="7zBzSouMR1J" role="37vLTx">
+              <ref role="3cqZAo" node="7zBzSouMDQJ" resolve="priority" />
+            </node>
+            <node concept="37vLTw" id="7zBzSouMFnB" role="37vLTJ">
+              <ref role="3cqZAo" node="7zBzSouMwxo" resolve="myDefaultPriority" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7zBzSouMAcG" role="1B3o_S" />
+      <node concept="3cqZAl" id="7zBzSouOeVn" role="3clF45" />
+      <node concept="37vLTG" id="7zBzSouMDQJ" role="3clF46">
+        <property role="TrG5h" value="priority" />
+        <node concept="10Oyi0" id="7zBzSouMDQI" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="3VOZakHQs3W" role="jymVt" />
     <node concept="3clFb_" id="3VOZakHQAq5" role="jymVt">
       <property role="TrG5h" value="setDefaultActivationCondition" />
@@ -11685,6 +11715,19 @@
           <ref role="3uigEE" to="bd8o:~ApplicationInfo" resolve="ApplicationInfo" />
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="7zBzSouMGOY" role="jymVt" />
+    <node concept="3clFb_" id="7zBzSouMLpW" role="jymVt">
+      <property role="TrG5h" value="getDefaultPriority" />
+      <node concept="3clFbS" id="7zBzSouMLpZ" role="3clF47">
+        <node concept="3clFbF" id="7zBzSouMNgT" role="3cqZAp">
+          <node concept="37vLTw" id="7zBzSouMNgS" role="3clFbG">
+            <ref role="3cqZAo" node="7zBzSouMwxo" resolve="myDefaultPriority" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7zBzSouMJgr" role="1B3o_S" />
+      <node concept="10Oyi0" id="7zBzSouMLer" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="49MflvOP3v2" role="jymVt" />
     <node concept="3clFb_" id="49MflvOP5um" role="jymVt">
