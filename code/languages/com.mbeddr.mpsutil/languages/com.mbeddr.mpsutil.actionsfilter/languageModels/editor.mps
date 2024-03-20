@@ -382,6 +382,12 @@
             <property role="1$x2rV" value="true" />
             <ref role="1NtTu8" to="au0v:2jUI4_LR89f" resolve="defaultActivationCondition" />
           </node>
+          <node concept="3F0ifn" id="7zBzSouLGPl" role="3EZMnx">
+            <property role="3F0ifm" value="with priority" />
+          </node>
+          <node concept="3F0A7n" id="7zBzSouLGPv" role="3EZMnx">
+            <ref role="1NtTu8" to="au0v:7zBzSouLw1w" resolve="defaultPriority" />
+          </node>
         </node>
         <node concept="2iRfu4" id="2N0FrS4t_7Z" role="2iSdaV" />
       </node>
