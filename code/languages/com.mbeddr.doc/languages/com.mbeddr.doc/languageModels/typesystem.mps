@@ -13,6 +13,7 @@
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="dqn8" ref="r:6f177fc3-8a05-4826-8d08-fd8676623247(com.mbeddr.mpsutil.suppresswarning.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -37,6 +38,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -266,13 +270,27 @@
     <property role="3GE5qa" value="paragraphs" />
     <node concept="3clFbS" id="5yxqZJwzj0r" role="18ibNy">
       <node concept="3clFbJ" id="5yxqZJwzj0t" role="3cqZAp">
-        <node concept="3fqX7Q" id="5yxqZJwzj0Y" role="3clFbw">
-          <node concept="2OqwBi" id="5yxqZJwzj0Z" role="3fr31v">
-            <node concept="1YBJjd" id="5yxqZJwzj10" role="2Oq$k0">
-              <ref role="1YBMHb" node="5yxqZJwzj0s" resolve="ip" />
+        <node concept="1Wc70l" id="44D1kY$xWRV" role="3clFbw">
+          <node concept="3fqX7Q" id="44D1kY$xYm$" role="3uHU7B">
+            <node concept="2YIFZM" id="44D1kY$xYmA" role="3fr31v">
+              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
+              <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+              <node concept="2OqwBi" id="44D1kY$xYmB" role="37wK5m">
+                <node concept="1YBJjd" id="44D1kY$xYmC" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5yxqZJwzj0s" resolve="ip" />
+                </node>
+                <node concept="I4A8Y" id="44D1kY$xYmD" role="2OqNvi" />
+              </node>
             </node>
-            <node concept="2qgKlT" id="5yxqZJwzj11" role="2OqNvi">
-              <ref role="37wK5l" to="4gky:5yxqZJwzdQl" resolve="hasValidPath" />
+          </node>
+          <node concept="3fqX7Q" id="5yxqZJwzj0Y" role="3uHU7w">
+            <node concept="2OqwBi" id="5yxqZJwzj0Z" role="3fr31v">
+              <node concept="1YBJjd" id="5yxqZJwzj10" role="2Oq$k0">
+                <ref role="1YBMHb" node="5yxqZJwzj0s" resolve="ip" />
+              </node>
+              <node concept="2qgKlT" id="5yxqZJwzj11" role="2OqNvi">
+                <ref role="37wK5l" to="4gky:5yxqZJwzdQl" resolve="hasValidPath" />
+              </node>
             </node>
           </node>
         </node>
