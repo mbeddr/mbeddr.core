@@ -1397,6 +1397,37 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="44D1kYzG07Q" role="3acgRq">
+      <ref role="30HIoZ" to="2c95:1R2r3DPH0GG" resolve="SubScriptWord" />
+      <node concept="gft3U" id="44D1kYzG07R" role="1lVwrX">
+        <node concept="2pNNFK" id="44D1kYzG07S" role="gfFT$">
+          <property role="2pNNFO" value="sub" />
+          <node concept="2pNUuL" id="44D1kYzG07T" role="2pNNFR">
+            <property role="2pNUuO" value="class" />
+            <node concept="2pMdtt" id="44D1kYzG07U" role="2pMdts">
+              <property role="2pMdty" value="subscript" />
+            </node>
+          </node>
+          <node concept="3o6iSG" id="44D1kYzG07V" role="3o6s8t">
+            <property role="3o6i5n" value="superScriptText" />
+            <node concept="29HgVG" id="44D1kYzG07W" role="lGtFl">
+              <node concept="3NFfHV" id="44D1kYzG07X" role="3NFExx">
+                <node concept="3clFbS" id="44D1kYzG07Y" role="2VODD2">
+                  <node concept="3clFbF" id="44D1kYzG07Z" role="3cqZAp">
+                    <node concept="2OqwBi" id="44D1kYzG080" role="3clFbG">
+                      <node concept="30H73N" id="44D1kYzG081" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="44D1kYzG082" role="2OqNvi">
+                        <ref role="3Tt5mk" to="2c95:5mf_X_La_N_" resolve="text" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="avzCv" id="QRmqzHYvrI" role="avys_">
       <node concept="3clFbS" id="QRmqzHYvrJ" role="2VODD2">
         <node concept="3clFbF" id="QRmqzHYUAL" role="3cqZAp">
