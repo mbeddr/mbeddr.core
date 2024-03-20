@@ -208,6 +208,7 @@
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
     </language>
@@ -3545,6 +3546,49 @@
                         <node concept="30H73N" id="1T7O9iWQvdk" role="2Oq$k0" />
                         <node concept="2qgKlT" id="3mn43GP_iLI" role="2OqNvi">
                           <ref role="37wK5l" to="4gky:1T7O9iWPN9q" resolve="getTextualRepresentation" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1W57fq" id="44D1kYAcnOp" role="lGtFl">
+            <node concept="3IZrLx" id="44D1kYAcnOq" role="3IZSJc">
+              <node concept="3clFbS" id="44D1kYAcnOr" role="2VODD2">
+                <node concept="3clFbF" id="44D1kYAcnQK" role="3cqZAp">
+                  <node concept="2OqwBi" id="44D1kYAcoCF" role="3clFbG">
+                    <node concept="2OqwBi" id="44D1kYAcoan" role="2Oq$k0">
+                      <node concept="30H73N" id="44D1kYAcnQJ" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="44D1kYAcotV" role="2OqNvi">
+                        <ref role="37wK5l" to="4gky:3mn43GPgUJU" resolve="getTargetNode" />
+                      </node>
+                    </node>
+                    <node concept="3x8VRR" id="44D1kYAcoO3" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="gft3U" id="44D1kYAcoWF" role="UU_$l">
+              <node concept="1jVtPD" id="44D1kYAr8CF" role="gfFT$">
+                <property role="1jVtPF" value="emph" />
+                <node concept="1jVtKS" id="44D1kYAr8CG" role="1jVtPZ">
+                  <property role="1jVtKT" value="text" />
+                  <node concept="29HgVG" id="44D1kYAr8CH" role="lGtFl">
+                    <node concept="3NFfHV" id="44D1kYAr8CI" role="3NFExx">
+                      <node concept="3clFbS" id="44D1kYAr8CJ" role="2VODD2">
+                        <node concept="3clFbF" id="44D1kYAr8CK" role="3cqZAp">
+                          <node concept="2YIFZM" id="44D1kYAr8HQ" role="3clFbG">
+                            <ref role="1Pybhc" to="tbr6:5mf_X_L9Y2A" resolve="RichTextUtil" />
+                            <ref role="37wK5l" to="tbr6:5mf_X_La5K4" resolve="createTextFromSingleString" />
+                            <node concept="2OqwBi" id="44D1kYAr8HR" role="37wK5m">
+                              <node concept="30H73N" id="44D1kYAr8HS" role="2Oq$k0" />
+                              <node concept="2qgKlT" id="44D1kYAr8HT" role="2OqNvi">
+                                <ref role="37wK5l" to="4gky:1T7O9iWPN9q" resolve="getTextualRepresentation" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
