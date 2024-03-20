@@ -61,7 +61,7 @@
     <property role="34LRSv" value="html" />
     <property role="EcuMT" value="3350625596580275037" />
     <property role="R4oN_" value="HTML renderer" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
     <node concept="1TJgyj" id="QRmqzIqw10" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cssSpec" />

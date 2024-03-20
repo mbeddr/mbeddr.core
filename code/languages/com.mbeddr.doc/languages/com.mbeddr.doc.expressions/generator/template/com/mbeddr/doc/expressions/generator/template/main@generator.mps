@@ -427,6 +427,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX8X" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="2B9KjOuvX8W" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />

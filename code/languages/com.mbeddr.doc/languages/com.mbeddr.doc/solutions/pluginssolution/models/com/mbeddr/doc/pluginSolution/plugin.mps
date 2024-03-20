@@ -444,6 +444,34 @@
                     </node>
                   </node>
                 </node>
+                <node concept="2pIpSj" id="44D1kY$kTXk" role="2pJxcM">
+                  <ref role="2pIpSl" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
+                  <node concept="2pJPED" id="44D1kY$kU6h" role="28nt2d">
+                    <ref role="2pJxaS" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
+                    <node concept="2pJxcG" id="44D1kY$kU6i" role="2pJxcM">
+                      <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="WxPPo" id="44D1kY$kU6j" role="28ntcv">
+                        <node concept="Xl_RD" id="44D1kY$kU6k" role="WxPPp">
+                          <property role="Xl_RC" value="image" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2pIpSj" id="44D1kY$kU6l" role="2pJxcM">
+                      <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
+                      <node concept="2pJPED" id="44D1kY$kU6m" role="28nt2d">
+                        <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                        <node concept="2pJxcG" id="44D1kY$kU6n" role="2pJxcM">
+                          <ref role="2pJxcJ" to="68mc:5lKnBeAtODI" resolve="path" />
+                          <node concept="WxPPo" id="44D1kY$kU6o" role="28ntcv">
+                            <node concept="Xl_RD" id="44D1kY$kU6p" role="WxPPp">
+                              <property role="Xl_RC" value="image" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

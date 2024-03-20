@@ -1875,7 +1875,7 @@
   </node>
   <node concept="13MO4I" id="xxE$BMB$9k">
     <property role="TrG5h" value="tableOfContentsEntry" />
-    <ref role="3gUMe" to="2c95:2TZO3Dbv6N7" resolve="Section" />
+    <ref role="3gUMe" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
     <node concept="8yHAK" id="xxE$BMD7Yo" role="13RCb5">
       <property role="TrG5h" value="mock" />
       <node concept="rfAC5" id="xxE$BMD7Yr" role="8x1ec">
