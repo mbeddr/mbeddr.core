@@ -99,7 +99,7 @@
   </node>
   <node concept="1M2fIO" id="4ol4Q3pM45$">
     <property role="3GE5qa" value="css" />
-    <ref role="1M2myG" to="lsus:5wmuVxvC2gr" resolve="CssSpecification" />
+    <ref role="1M2myG" to="lsus:5wmuVxvC2gr" resolve="CSSSpecification" />
     <node concept="2NXJUA" id="4ol4Q3pM45_" role="2NY200">
       <node concept="3clFbS" id="4ol4Q3pM45A" role="2VODD2">
         <node concept="3clFbF" id="4ol4Q3pM48d" role="3cqZAp">
@@ -126,9 +126,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="2i$odZByCaP">
-    <ref role="1M2myG" to="lsus:32cJsh9DNRl" resolve="HTMLDummyRenderer" />
   </node>
 </model>
 

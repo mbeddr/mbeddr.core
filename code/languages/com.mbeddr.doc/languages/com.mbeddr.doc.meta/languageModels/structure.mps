@@ -44,7 +44,7 @@
   <node concept="1TIwiD" id="7iLQIU3CO0U">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="LanguageRefWord" />
-    <property role="R4oN_" value="reference a language" />
+    <property role="R4oN_" value="a referenced language" />
     <property role="34LRSv" value="@language" />
     <property role="EcuMT" value="8408742697223012410" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
@@ -52,7 +52,7 @@
   <node concept="1TIwiD" id="3EhlX7RxHj3">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="DevKitRefWord" />
-    <property role="R4oN_" value="reference a devkit" />
+    <property role="R4oN_" value="a referenced devkit" />
     <property role="34LRSv" value="@devkit" />
     <property role="EcuMT" value="4220250885135455427" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
@@ -60,7 +60,7 @@
   <node concept="1TIwiD" id="3OU98G0A5xe">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="SolutionRefWord" />
-    <property role="R4oN_" value="reference a solution" />
+    <property role="R4oN_" value="a referenced solution" />
     <property role="34LRSv" value="@solution" />
     <property role="EcuMT" value="4411878964391860302" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
@@ -91,7 +91,7 @@
     <property role="TrG5h" value="GeneratorRefWord" />
     <property role="EcuMT" value="2181941881723048385" />
     <property role="34LRSv" value="@generator" />
-    <property role="R4oN_" value="reference a generator" />
+    <property role="R4oN_" value="a referenced generator" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
   </node>
 </model>

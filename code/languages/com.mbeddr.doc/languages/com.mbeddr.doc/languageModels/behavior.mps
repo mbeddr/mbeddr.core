@@ -4127,7 +4127,7 @@
   </node>
   <node concept="13h7C7" id="jpyKDg34cJ">
     <property role="3GE5qa" value="paragraphs" />
-    <ref role="13h7C2" to="2c95:4vQSg$Ar0eu" resolve="TextParHeader" />
+    <ref role="13h7C2" to="2c95:4vQSg$Ar0eu" resolve="TextParagraphHeader" />
     <node concept="13hLZK" id="jpyKDg34cK" role="13h7CW">
       <node concept="3clFbS" id="jpyKDg34cL" role="2VODD2" />
     </node>

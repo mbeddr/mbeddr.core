@@ -532,7 +532,7 @@
   <node concept="1M2fIO" id="2TZO3DbvSLX">
     <property role="3GE5qa" value="export" />
     <ref role="1M2myG" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
-    <ref role="1MND4H" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
+    <ref role="1MND4H" to="2c95:2TZO3DbvSLP" resolve="NoOutputRenderer" />
   </node>
   <node concept="1M2fIO" id="5yxqZJwzrdf">
     <property role="3GE5qa" value="words" />

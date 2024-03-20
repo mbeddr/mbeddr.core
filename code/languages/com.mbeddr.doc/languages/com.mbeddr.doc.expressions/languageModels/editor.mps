@@ -115,7 +115,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="4E$PniRKKs0">
-    <ref role="1XX52x" to="f87k:4E$PniRKKrW" resolve="VariableDef" />
+    <ref role="1XX52x" to="f87k:4E$PniRKKrW" resolve="VariableDefinition" />
     <node concept="3EZMnI" id="4E$PniRKKs3" role="2wV5jI">
       <node concept="l2Vlx" id="4E$PniRKKs4" role="2iSdaV" />
       <node concept="3F0ifn" id="4E$PniRKKs2" role="3EZMnx">
@@ -218,7 +218,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4E$PniRKKXJ">
-    <ref role="1XX52x" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+    <ref role="1XX52x" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
     <node concept="1iCGBv" id="4E$PniRKKXL" role="2wV5jI">
       <ref role="1NtTu8" to="f87k:4E$PniRKKXI" resolve="var" />
       <node concept="1sVBvm" id="4E$PniRKKXM" role="1sWHZn">

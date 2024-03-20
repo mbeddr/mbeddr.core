@@ -4753,7 +4753,7 @@
   <node concept="bUwia" id="QRmqzJ7zc1">
     <property role="TrG5h" value="tableOfContents" />
     <node concept="3aamgX" id="QRmqzJ7zcM" role="3acgRq">
-      <ref role="30HIoZ" to="lsus:QRmqzJj_qE" resolve="TocStart" />
+      <ref role="30HIoZ" to="lsus:QRmqzJj_qE" resolve="TableOfContents" />
       <node concept="gft3U" id="QRmqzJ7zcS" role="1lVwrX">
         <node concept="2pNNFK" id="QRmqzHqd2Z" role="gfFT$">
           <property role="2pNNFO" value="div" />
@@ -4797,7 +4797,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="QRmqzJkoIG" role="3acgRq">
-      <ref role="30HIoZ" to="lsus:QRmqzJj_2W" resolve="TocEntry" />
+      <ref role="30HIoZ" to="lsus:QRmqzJj_2W" resolve="TableOfContentsEntry" />
       <node concept="gft3U" id="QRmqzJkp59" role="1lVwrX">
         <node concept="2pNNFK" id="QRmqzJkppA" role="gfFT$">
           <property role="2pNNFO" value="div" />
@@ -4909,7 +4909,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="QRmqzJHPr4" role="3acgRq">
-      <ref role="30HIoZ" to="lsus:QRmqzJj_2W" resolve="TocEntry" />
+      <ref role="30HIoZ" to="lsus:QRmqzJj_2W" resolve="TableOfContentsEntry" />
       <node concept="gft3U" id="QRmqzJHPr5" role="1lVwrX">
         <node concept="2pNNFK" id="QRmqzJHPr6" role="gfFT$">
           <property role="2pNNFO" value="div" />
@@ -5018,7 +5018,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2CRkjeiq6vu" role="3acgRq">
-      <ref role="30HIoZ" to="lsus:QRmqzJj_2W" resolve="TocEntry" />
+      <ref role="30HIoZ" to="lsus:QRmqzJj_2W" resolve="TableOfContentsEntry" />
       <node concept="gft3U" id="2CRkjeiq6vv" role="1lVwrX">
         <node concept="2pNNFK" id="2CRkjeiq6vw" role="gfFT$">
           <property role="2pNNFO" value="div" />
@@ -5211,14 +5211,14 @@
                     <node concept="3cpWsn" id="QRmqzJoi1l" role="3cpWs9">
                       <property role="TrG5h" value="tocStart" />
                       <node concept="3Tqbb2" id="QRmqzJoi1j" role="1tU5fm">
-                        <ref role="ehGHo" to="lsus:QRmqzJj_qE" resolve="TocStart" />
+                        <ref role="ehGHo" to="lsus:QRmqzJj_qE" resolve="TableOfContents" />
                       </node>
                       <node concept="2OqwBi" id="QRmqzJoi1m" role="33vP2m">
                         <node concept="37vLTw" id="QRmqzJoi1n" role="2Oq$k0">
                           <ref role="3cqZAo" node="QRmqzJogZc" resolve="toc" />
                         </node>
                         <node concept="1_qnLN" id="QRmqzJoi1o" role="2OqNvi">
-                          <ref role="1_rbq0" to="lsus:QRmqzJj_qE" resolve="TocStart" />
+                          <ref role="1_rbq0" to="lsus:QRmqzJj_qE" resolve="TableOfContents" />
                         </node>
                       </node>
                     </node>

@@ -503,7 +503,7 @@
                 <node concept="2pIpSj" id="3$GaJTCV9PE" role="2pJxcM">
                   <ref role="2pIpSl" to="2c95:5gTlpaky6sZ" resolve="renderer" />
                   <node concept="2pJPED" id="3$GaJTCV9Rx" role="28nt2d">
-                    <ref role="2pJxaS" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
+                    <ref role="2pJxaS" to="2c95:2TZO3DbvSLP" resolve="NoOutputRenderer" />
                   </node>
                 </node>
                 <node concept="2pIpSj" id="3$GaJTCVb5M" role="2pJxcM">
