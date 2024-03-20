@@ -20,6 +20,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - When embedding a documentation section or model content as image, the inspector can now be rendered instead of the editor.
 
+### Fixed
+
+- Many usability were fixed and the editors (including presentation mode) polished.
+
 # January 2024
 
 ## com.mbeddr.mpsutils
