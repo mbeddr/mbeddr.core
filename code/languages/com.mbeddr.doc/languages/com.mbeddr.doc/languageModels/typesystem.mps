@@ -812,7 +812,7 @@
             <node concept="3clFbS" id="4vQSg$AqR22" role="3clFbx">
               <node concept="a7r0C" id="4vQSg$AqR2R" role="3cqZAp">
                 <node concept="Xl_RD" id="4vQSg$AqR2U" role="a7wSD">
-                  <property role="Xl_RC" value="some renderers may ignore nesting levels &gt; 2" />
+                  <property role="Xl_RC" value="some renderers may ignore nesting levels &gt; 3" />
                 </node>
                 <node concept="1YBJjd" id="4vQSg$AqR2V" role="1urrMF">
                   <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
