@@ -4721,16 +4721,6 @@
             <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6Kj2zNCz5hO" role="3bR37C">
-          <node concept="3bR9La" id="6Kj2zNCz5hP" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7VR7M8waXqO" role="3bR37C">
-          <node concept="3bR9La" id="7VR7M8waXqP" role="1SiIV1">
-            <ref role="3bR37D" node="7uZw0yZ43LU" resolve="com.mbeddr.core.expressions" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3AVJcIMnETq" role="3bR37C">
           <node concept="3bR9La" id="3AVJcIMnETr" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
@@ -4751,11 +4741,6 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
-        <node concept="1SiIV0" id="34uiID1u0yX" role="3bR37C">
-          <node concept="3bR9La" id="34uiID1u0yY" role="1SiIV1">
-            <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4Wyno57pGiL" role="3bR37C">
           <node concept="3bR9La" id="4Wyno57pGiM" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
@@ -4764,11 +4749,6 @@
         <node concept="1SiIV0" id="4Wyno57pQRx" role="3bR37C">
           <node concept="3bR9La" id="4Wyno57pQRy" role="1SiIV1">
             <ref role="3bR37D" to="al5i:4Wyno57pInE" resolve="com.mbeddr.mpsutil.suppresswarning" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3vFuuhEnN$T" role="3bR37C">
-          <node concept="3bR9La" id="3vFuuhEnN$U" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
         <node concept="1BupzO" id="7ZN_vIiShwf" role="3bR31x">
@@ -6108,8 +6088,8 @@
           </node>
         </node>
         <node concept="1SiIV0" id="1MVt_tpn4D7" role="3bR37C">
-          <node concept="Rbm2T" id="1MVt_tpn4D8" role="1SiIV1">
-            <ref role="1E1Vl2" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
+          <node concept="3bR9La" id="4OoJRP5mDdP" role="1SiIV1">
+            <ref role="3bR37D" node="7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
           </node>
         </node>
       </node>
