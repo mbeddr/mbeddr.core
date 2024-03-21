@@ -3541,8 +3541,8 @@
       <node concept="m$_yC" id="64SK4bcJyxn" role="m$_yJ">
         <ref role="m$_y1" to="90a9:6860Y5_ZW8e" resolve="de.itemis.mps.utils" />
       </node>
-      <node concept="m$_yC" id="64SK4bcJ_T5" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
+      <node concept="m$_yC" id="4FMvhZvbzb3" role="m$_yJ">
+        <ref role="m$_y1" node="3lZeU8ehrPx" />
       </node>
       <node concept="2iUeEo" id="7yAshxDt$n$" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
