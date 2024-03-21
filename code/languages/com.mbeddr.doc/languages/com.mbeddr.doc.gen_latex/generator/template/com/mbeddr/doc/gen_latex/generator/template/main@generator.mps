@@ -222,12 +222,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
       <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -3680,17 +3674,6 @@
                   <property role="Xl_RC" value="mbeddr-prolog.ltx" />
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2xdQw9" id="2Fugwv5QHT5" role="3cqZAp">
-          <property role="2xdLsb" value="h1akgim/info" />
-          <node concept="3cpWs3" id="3mn43GOExVG" role="9lYJi">
-            <node concept="37vLTw" id="3mn43GOExX6" role="3uHU7w">
-              <ref role="3cqZAo" node="3mn43GOEuM4" resolve="defaultPrologFile" />
-            </node>
-            <node concept="Xl_RD" id="3mn43GOExFU" role="3uHU7B">
-              <property role="Xl_RC" value="defaultPrologFile: " />
             </node>
           </node>
         </node>
