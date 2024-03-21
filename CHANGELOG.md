@@ -23,6 +23,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Fixed
 
 - Many usability were fixed and the editors (including presentation mode) polished.
+- Higher level of nesting in sections is now support by all generators.
 
 # January 2024
 
