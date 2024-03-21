@@ -789,60 +789,6 @@
       </node>
     </node>
   </node>
-  <node concept="18kY7G" id="4vQSg$AqR1X">
-    <property role="TrG5h" value="check_AbstractSection" />
-    <property role="3GE5qa" value="structure" />
-    <node concept="3clFbS" id="4vQSg$AqR1Y" role="18ibNy">
-      <node concept="3clFbJ" id="6Kj2zNCCTrC" role="3cqZAp">
-        <node concept="3clFbS" id="6Kj2zNCCTrF" role="3clFbx">
-          <node concept="3clFbJ" id="4vQSg$AqR20" role="3cqZAp">
-            <node concept="3eOSWO" id="4vQSg$AqR2N" role="3clFbw">
-              <node concept="3cmrfG" id="4vQSg$AqR2Q" role="3uHU7w">
-                <property role="3cmrfH" value="3" />
-              </node>
-              <node concept="2OqwBi" id="4vQSg$AqR2o" role="3uHU7B">
-                <node concept="1YBJjd" id="4vQSg$AqR23" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
-                </node>
-                <node concept="2qgKlT" id="4vQSg$AqR2u" role="2OqNvi">
-                  <ref role="37wK5l" to="4gky:4vQSg$AqJMN" resolve="nestingLevel" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="4vQSg$AqR22" role="3clFbx">
-              <node concept="a7r0C" id="4vQSg$AqR2R" role="3cqZAp">
-                <node concept="Xl_RD" id="4vQSg$AqR2U" role="a7wSD">
-                  <property role="Xl_RC" value="some renderers may ignore nesting levels &gt; 3" />
-                </node>
-                <node concept="1YBJjd" id="4vQSg$AqR2V" role="1urrMF">
-                  <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
-                </node>
-                <node concept="2ODE4t" id="4vQSg$AqR2Y" role="1urrC5">
-                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="6Kj2zNCCTzL" role="3clFbw">
-          <node concept="2qgKlT" id="6Kj2zNCCTOT" role="2OqNvi">
-            <ref role="37wK5l" to="dqn8:7U3Fobb_8Eq" resolve="isNotSuppressed" />
-            <node concept="1YBJjd" id="6Kj2zNCD4o3" role="37wK5m">
-              <ref role="1YBMHb" node="4vQSg$AqR1Z" resolve="as" />
-            </node>
-          </node>
-          <node concept="35c_gC" id="4BMXRfBe$4f" role="2Oq$k0">
-            <ref role="35c_gD" to="bdcd:7U3Fobb_8El" resolve="SuppressWarnings" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="6Kj2zNCD3NX" role="3cqZAp" />
-    </node>
-    <node concept="1YaCAy" id="4vQSg$AqR1Z" role="1YuTPh">
-      <property role="TrG5h" value="as" />
-      <ref role="1YaFvo" to="2c95:2TZO3Dbv6Ju" resolve="AbstractSection" />
-    </node>
-  </node>
   <node concept="18kY7G" id="519ky_Sk7HH">
     <property role="TrG5h" value="check_TableRow" />
     <property role="3GE5qa" value="table" />
