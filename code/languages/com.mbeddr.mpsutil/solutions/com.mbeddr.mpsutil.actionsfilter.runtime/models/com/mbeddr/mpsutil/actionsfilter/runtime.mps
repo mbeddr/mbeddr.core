@@ -13052,8 +13052,8 @@
         <ref role="3uigEE" node="49MflvORAv7" resolve="CustomToolBar" />
       </node>
       <node concept="2ShNRf" id="1IyFrIF3XB8" role="33vP2m">
-        <node concept="HV5vD" id="1IyFrIF4iZP" role="2ShVmc">
-          <ref role="HV5vE" node="49MflvORAv7" resolve="CustomToolBar" />
+        <node concept="1pGfFk" id="2wl_ajRvccp" role="2ShVmc">
+          <ref role="37wK5l" node="1IyFrIF4jk_" resolve="CustomToolBar" />
         </node>
       </node>
     </node>
@@ -13563,10 +13563,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Y6oVI_9gzW" role="3cqZAp">
-          <node concept="2YIFZM" id="7Y6oVI_9iWf" role="3clFbG">
-            <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
-            <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
+        <node concept="3clFbF" id="2wl_ajRvePW" role="3cqZAp">
+          <node concept="2OqwBi" id="2wl_ajRvgVn" role="3clFbG">
+            <node concept="2YIFZM" id="2wl_ajRvg7T" role="2Oq$k0">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
+            </node>
+            <node concept="liA8E" id="2wl_ajRvhYN" role="2OqNvi">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
+            </node>
           </node>
         </node>
       </node>
