@@ -93,7 +93,7 @@
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
         <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
-      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NullRenderer" flags="ng" index="1_05Lf" />
+      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NoOutputRenderer" flags="ng" index="1_05Lf" />
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
         <property id="126932837435324910" name="title" index="WqcPg" />
       </concept>
