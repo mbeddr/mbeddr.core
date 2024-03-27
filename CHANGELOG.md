@@ -12,12 +12,17 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - Interpreters now support data flow analysis.
+- Action profiles now support priorities if multiple profiles are activated by default.
 
 ## com.mbeddr.doc
 
 ### Added
 
 - When embedding a documentation section or model content as image, the inspector can now be rendered instead of the editor.
+
+### Fixed
+
+- PlantUML was updated to PlantUML to v1.2023.13 EPL version (regression bug).
 
 # January 2024
 
