@@ -386,6 +386,7 @@
             <property role="3F0ifm" value="with priority" />
           </node>
           <node concept="3F0A7n" id="7zBzSouLGPv" role="3EZMnx">
+            <property role="1$x2rV" value="0" />
             <ref role="1NtTu8" to="au0v:7zBzSouLw1w" resolve="defaultPriority" />
           </node>
         </node>
