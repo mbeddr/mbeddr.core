@@ -82,7 +82,7 @@
     </node>
     <node concept="1YaCAy" id="4E$PniRKKXR" role="1YuTPh">
       <property role="TrG5h" value="r" />
-      <ref role="1YaFvo" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+      <ref role="1YaFvo" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
     </node>
   </node>
   <node concept="1YbPZF" id="OBJ3$Vuvqt">

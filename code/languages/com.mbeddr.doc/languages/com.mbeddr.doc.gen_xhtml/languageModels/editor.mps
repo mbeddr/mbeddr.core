@@ -93,7 +93,7 @@
   </node>
   <node concept="24kQdi" id="QRmqzIpg5$">
     <property role="3GE5qa" value="css" />
-    <ref role="1XX52x" to="lsus:5wmuVxvC2gr" resolve="CssSpecification" />
+    <ref role="1XX52x" to="lsus:5wmuVxvC2gr" resolve="CSSSpecification" />
     <node concept="3EZMnI" id="QRmqzIpg6k" role="2wV5jI">
       <node concept="l2Vlx" id="QRmqzIpg6l" role="2iSdaV" />
       <node concept="3F0ifn" id="QRmqzIpg6m" role="3EZMnx">
@@ -140,7 +140,7 @@
   </node>
   <node concept="24kQdi" id="QRmqzIpg8k">
     <property role="3GE5qa" value="css" />
-    <ref role="1XX52x" to="lsus:QRmqzIpdtE" resolve="CssRuleset" />
+    <ref role="1XX52x" to="lsus:QRmqzIpdtE" resolve="CSSRuleset" />
     <node concept="3EZMnI" id="QRmqzIpg8m" role="2wV5jI">
       <node concept="l2Vlx" id="QRmqzIpg8n" role="2iSdaV" />
       <node concept="3F2HdR" id="QRmqzIpg8z" role="3EZMnx">
@@ -186,7 +186,7 @@
   </node>
   <node concept="24kQdi" id="QRmqzIpgec">
     <property role="3GE5qa" value="css" />
-    <ref role="1XX52x" to="lsus:QRmqzIpg3m" resolve="CssSelector" />
+    <ref role="1XX52x" to="lsus:QRmqzIpg3m" resolve="CSSSelector" />
     <node concept="3EZMnI" id="QRmqzIpgee" role="2wV5jI">
       <node concept="l2Vlx" id="QRmqzIpgef" role="2iSdaV" />
       <node concept="3F0A7n" id="QRmqzIpgeh" role="3EZMnx">
@@ -196,7 +196,7 @@
   </node>
   <node concept="24kQdi" id="QRmqzIpgfH">
     <property role="3GE5qa" value="css" />
-    <ref role="1XX52x" to="lsus:QRmqzIpg3J" resolve="CssDeclaration" />
+    <ref role="1XX52x" to="lsus:QRmqzIpg3J" resolve="CSSDeclaration" />
     <node concept="3EZMnI" id="QRmqzIpgfJ" role="2wV5jI">
       <node concept="l2Vlx" id="QRmqzIpgfK" role="2iSdaV" />
       <node concept="3F0A7n" id="QRmqzIpgfM" role="3EZMnx">
@@ -217,7 +217,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="QRmqzJj_rN">
-    <ref role="1XX52x" to="lsus:QRmqzJj_qE" resolve="TocStart" />
+    <ref role="1XX52x" to="lsus:QRmqzJj_qE" resolve="TableOfContents" />
     <node concept="3EZMnI" id="QRmqzJj_sz" role="2wV5jI">
       <node concept="l2Vlx" id="QRmqzJj_s$" role="2iSdaV" />
       <node concept="3F0ifn" id="QRmqzJj_s_" role="3EZMnx">
@@ -272,7 +272,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="QRmqzJj_ud">
-    <ref role="1XX52x" to="lsus:QRmqzJj_2W" resolve="TocEntry" />
+    <ref role="1XX52x" to="lsus:QRmqzJj_2W" resolve="TableOfContentsEntry" />
     <node concept="3EZMnI" id="QRmqzJj_uf" role="2wV5jI">
       <node concept="l2Vlx" id="QRmqzJj_ug" role="2iSdaV" />
       <node concept="3F0ifn" id="QRmqzJj_uh" role="3EZMnx">
@@ -338,7 +338,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="32cJsh9DNRu">
-    <ref role="1XX52x" to="lsus:32cJsh9DNRl" resolve="HTMLDummyRenderer" />
+    <ref role="1XX52x" to="lsus:32cJsh9DNRl" resolve="HTMLNoOutputRenderer" />
     <node concept="3F0ifn" id="32cJsh9DNRw" role="2wV5jI">
       <property role="3F0ifm" value="HTMLRenderer (set HTML Rendering options in Document Configuration)" />
     </node>

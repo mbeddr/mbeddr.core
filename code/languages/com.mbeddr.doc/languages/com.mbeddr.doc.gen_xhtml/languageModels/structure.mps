@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -51,18 +52,21 @@
     <property role="TrG5h" value="XHTMLFile" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8834022522772578760" />
+    <property role="34LRSv" value="xhtml file" />
+    <property role="R4oN_" value="an XML conform HTML document" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5j9j0" resolve="XmlFile" />
   </node>
   <node concept="1TIwiD" id="2TZO3DbvUdt">
     <property role="TrG5h" value="HTMLRenderer" />
     <property role="34LRSv" value="html" />
     <property role="EcuMT" value="3350625596580275037" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="R4oN_" value="HTML renderer" />
+    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLN" resolve="DocumentRenderer" />
     <node concept="1TJgyj" id="QRmqzIqw10" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cssSpec" />
       <property role="IQ2ns" value="988357225320415296" />
-      <ref role="20lvS9" node="5wmuVxvC2gr" resolve="CssSpecification" />
+      <ref role="20lvS9" node="5wmuVxvC2gr" resolve="CSSSpecification" />
     </node>
     <node concept="1TJgyi" id="3RseghIclET" role="1TKVEl">
       <property role="TrG5h" value="stylesheet" />
@@ -77,49 +81,56 @@
     <property role="TrG5h" value="InlineXmlElement" />
     <property role="34LRSv" value="&lt;inlineElement/&gt;" />
     <property role="EcuMT" value="2181941881730108005" />
+    <property role="R4oN_" value="an XML element" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
   </node>
   <node concept="1TIwiD" id="5wmuVxvC2gr">
-    <property role="TrG5h" value="CssSpecification" />
+    <property role="TrG5h" value="CSSSpecification" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="css" />
     <property role="EcuMT" value="6347396756633822235" />
+    <property role="34LRSv" value="specification" />
+    <property role="R4oN_" value="a stylesheet specification" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5ikxF" resolve="XmlContent" />
     <node concept="1TJgyj" id="QRmqzIpg44" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="rulesets" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="988357225320087812" />
-      <ref role="20lvS9" node="QRmqzIpdtE" resolve="CssRuleset" />
+      <ref role="20lvS9" node="QRmqzIpdtE" resolve="CSSRuleset" />
     </node>
     <node concept="PrWs8" id="5wmuVxvC$57" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="QRmqzIpdtE">
-    <property role="TrG5h" value="CssRuleset" />
+    <property role="TrG5h" value="CSSRuleset" />
     <property role="3GE5qa" value="css" />
     <property role="EcuMT" value="988357225320077162" />
+    <property role="34LRSv" value="ruleset" />
+    <property role="R4oN_" value="a stylesheet ruleset" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzIpg47" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="selectors" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="988357225320087815" />
-      <ref role="20lvS9" node="QRmqzIpg3m" resolve="CssSelector" />
+      <ref role="20lvS9" node="QRmqzIpg3m" resolve="CSSSelector" />
     </node>
     <node concept="1TJgyj" id="QRmqzIpg4a" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="declarations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="988357225320087818" />
-      <ref role="20lvS9" node="QRmqzIpg3J" resolve="CssDeclaration" />
+      <ref role="20lvS9" node="QRmqzIpg3J" resolve="CSSDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="QRmqzIpg3m">
-    <property role="TrG5h" value="CssSelector" />
+    <property role="TrG5h" value="CSSSelector" />
     <property role="3GE5qa" value="css" />
     <property role="EcuMT" value="988357225320087766" />
+    <property role="34LRSv" value="selector" />
+    <property role="R4oN_" value="a stylesheet selector" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzIpg4f" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -128,9 +139,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="QRmqzIpg3J">
-    <property role="TrG5h" value="CssDeclaration" />
+    <property role="TrG5h" value="CSSDeclaration" />
     <property role="3GE5qa" value="css" />
     <property role="EcuMT" value="988357225320087791" />
+    <property role="34LRSv" value="declaration" />
+    <property role="R4oN_" value="a stylesheet declaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzIpg4v" role="1TKVEl">
       <property role="TrG5h" value="property" />
@@ -144,15 +157,17 @@
     </node>
   </node>
   <node concept="1TIwiD" id="QRmqzJj_2W">
-    <property role="TrG5h" value="TocEntry" />
+    <property role="TrG5h" value="TableOfContentsEntry" />
     <property role="EcuMT" value="988357225335378108" />
+    <property role="34LRSv" value="TOC entry" />
+    <property role="R4oN_" value="table of contents entry" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzJj_30" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="subEntries" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="988357225335378112" />
-      <ref role="20lvS9" node="QRmqzJj_2W" resolve="TocEntry" />
+      <ref role="20lvS9" node="QRmqzJj_2W" resolve="TableOfContentsEntry" />
     </node>
     <node concept="1TJgyj" id="QRmqzJj_2X" role="1TKVEi">
       <property role="20kJfa" value="section" />
@@ -162,20 +177,23 @@
     </node>
   </node>
   <node concept="1TIwiD" id="QRmqzJj_qE">
-    <property role="TrG5h" value="TocStart" />
+    <property role="TrG5h" value="TableOfContents" />
     <property role="EcuMT" value="988357225335379626" />
+    <property role="34LRSv" value="table of contents" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzJj_qF" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="entries" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="988357225335379627" />
-      <ref role="20lvS9" node="QRmqzJj_2W" resolve="TocEntry" />
+      <ref role="20lvS9" node="QRmqzJj_2W" resolve="TableOfContentsEntry" />
     </node>
   </node>
   <node concept="1TIwiD" id="QRmqzKqjsY">
     <property role="TrG5h" value="KeyPress" />
     <property role="EcuMT" value="988357225353918270" />
+    <property role="34LRSv" value="key press" />
+    <property role="R4oN_" value="key presses formatted as teletype text" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzKqjto" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -188,6 +206,8 @@
   <node concept="1TIwiD" id="QRmqzKqjtk">
     <property role="TrG5h" value="Key" />
     <property role="EcuMT" value="988357225353918292" />
+    <property role="34LRSv" value="key" />
+    <property role="R4oN_" value="a key reference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzKqjtl" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -198,6 +218,8 @@
   <node concept="1TIwiD" id="QRmqzKAgfz">
     <property role="TrG5h" value="MenuClick" />
     <property role="EcuMT" value="988357225357050851" />
+    <property role="34LRSv" value="menu click" />
+    <property role="R4oN_" value="references to clickable menu items" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="QRmqzKAgfF" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -210,6 +232,8 @@
   <node concept="1TIwiD" id="QRmqzKAgf$">
     <property role="TrG5h" value="MenuItem" />
     <property role="EcuMT" value="988357225357050852" />
+    <property role="34LRSv" value="menu item" />
+    <property role="R4oN_" value="an entry in a menu" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="QRmqzKAgf_" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -219,9 +243,9 @@
   </node>
   <node concept="1TIwiD" id="32cJsh9DNRl">
     <property role="EcuMT" value="3498379661306969557" />
-    <property role="TrG5h" value="HTMLDummyRenderer" />
-    <property role="34LRSv" value="HTMLRenderer" />
-    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLP" resolve="NullRenderer" />
+    <property role="TrG5h" value="HTMLNoOutputRenderer" />
+    <property role="34LRSv" value="HTML no output renderer" />
+    <ref role="1TJDcQ" to="2c95:2TZO3DbvSLP" resolve="NoOutputRenderer" />
   </node>
   <node concept="1TIwiD" id="6ec5ny8ewiz">
     <property role="EcuMT" value="7173131913920119971" />
