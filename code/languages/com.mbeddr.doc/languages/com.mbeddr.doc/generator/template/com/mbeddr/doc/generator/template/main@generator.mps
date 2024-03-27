@@ -99,6 +99,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -1311,9 +1314,15 @@
                           <ref role="3cqZAo" node="5pyBnOIETAw" resolve="reader" />
                         </node>
                         <node concept="liA8E" id="5pyBnOIEUyU" role="2OqNvi">
-                          <ref role="37wK5l" to="81o:~SourceStringReader.generateImage(java.io.File)" resolve="generateImage" />
-                          <node concept="37vLTw" id="4t$H79$kPgE" role="37wK5m">
-                            <ref role="3cqZAo" node="4t$H79$kPgx" resolve="outputFile" />
+                          <ref role="37wK5l" to="81o:~SourceStringReader.generateImage(java.io.OutputStream)" resolve="generateImage" />
+                          <node concept="2ShNRf" id="7ymv7GF2fIm" role="37wK5m">
+                            <node concept="1pGfFk" id="7ymv7GF2fYv" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="guwi:~FileOutputStream.&lt;init&gt;(java.io.File)" resolve="FileOutputStream" />
+                              <node concept="37vLTw" id="7ymv7GF2g2Q" role="37wK5m">
+                                <ref role="3cqZAo" node="4t$H79$kPgx" resolve="outputFile" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
