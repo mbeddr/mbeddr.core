@@ -36,6 +36,7 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1402,12 +1403,20 @@
                                   <node concept="3uibUv" id="2vWNQYd$Tq7" role="1tU5fm">
                                     <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                                   </node>
-                                  <node concept="2YIFZM" id="2vWNQYd$Tqc" role="33vP2m">
-                                    <ref role="37wK5l" to="dp1x:5tGs5KqKiLL" resolve="getNodeFromClipboard" />
-                                    <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
-                                    <node concept="2OqwBi" id="2vWNQYd$Tqd" role="37wK5m">
-                                      <node concept="130tyv" id="2vWNQYd$Tqe" role="2Oq$k0" />
-                                      <node concept="I4A8Y" id="2vWNQYd$Tqf" role="2OqNvi" />
+                                  <node concept="2OqwBi" id="1PoMzZwp50v" role="33vP2m">
+                                    <node concept="2YIFZM" id="1PoMzZwp3QW" role="2Oq$k0">
+                                      <ref role="37wK5l" to="dp1x:5tGs5KqKiK3" resolve="getNodesFromClipboard" />
+                                      <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
+                                      <node concept="2OqwBi" id="1PoMzZwp3QX" role="37wK5m">
+                                        <node concept="130tyv" id="1PoMzZwp3QY" role="2Oq$k0" />
+                                        <node concept="I4A8Y" id="1PoMzZwp3QZ" role="2OqNvi" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="1PoMzZwpa6d" role="2OqNvi">
+                                      <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                                      <node concept="3cmrfG" id="1PoMzZwpahW" role="37wK5m">
+                                        <property role="3cmrfH" value="0" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
