@@ -20,6 +20,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - When embedding a documentation section or model content as image, the inspector can now be rendered instead of the editor.
 
+### Fixed
+
+- PlantUML was updated to PlantUML to v1.2023.13 EPL version (regression bug).
+
 # January 2024
 
 ## com.mbeddr.mpsutils
