@@ -17,7 +17,6 @@
     <dependency reexport="true">ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:e776175c-3bf6-498e-ad36-e4c7dfa5fbe9:com.mbeddr.mpsutil.httpsupport" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
