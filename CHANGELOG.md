@@ -22,6 +22,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Fixed
 
+- Many usability were fixed and the editors (including presentation mode) polished.
+- Higher level of nesting in sections is now support by all generators.
 - PlantUML was updated to PlantUML to v1.2023.13 EPL version (regression bug).
 
 # January 2024

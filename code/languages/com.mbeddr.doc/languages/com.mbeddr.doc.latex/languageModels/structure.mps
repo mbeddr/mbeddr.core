@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -49,6 +50,8 @@
     <property role="TrG5h" value="LatexDocument" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="4457500422381350412" />
+    <property role="34LRSv" value="latex document" />
+    <property role="R4oN_" value="a LaTeX document" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3RseghIcR1W" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -81,6 +84,7 @@
     <property role="TrG5h" value="SimpleTextualLine" />
     <property role="34LRSv" value="line" />
     <property role="EcuMT" value="4457500422381360575" />
+    <property role="R4oN_" value="a line of text" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3RseghIctn1" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -95,6 +99,7 @@
     <property role="TrG5h" value="LineList" />
     <property role="34LRSv" value="{" />
     <property role="EcuMT" value="4457500422381362355" />
+    <property role="R4oN_" value="a list of lines" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3RseghIctMO" role="PzmwI">
       <ref role="PrY4T" node="3RseghIcqSy" resolve="ILine" />
@@ -111,6 +116,7 @@
     <property role="TrG5h" value="WordLine" />
     <property role="34LRSv" value="&lt;" />
     <property role="EcuMT" value="4457500422381364312" />
+    <property role="R4oN_" value="a line consisting of words" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3RseghIcuht" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -143,6 +149,7 @@
     <property role="TrG5h" value="CommandWord" />
     <property role="34LRSv" value="\" />
     <property role="EcuMT" value="4457500422381364333" />
+    <property role="R4oN_" value="a command" />
     <ref role="1TJDcQ" node="3RseghIcuhq" resolve="Word" />
     <node concept="1TJgyj" id="3RseghIcuhU" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -180,8 +187,9 @@
   </node>
   <node concept="1TIwiD" id="3RseghIcukW">
     <property role="TrG5h" value="TextWord" />
-    <property role="34LRSv" value="t" />
+    <property role="34LRSv" value="text" />
     <property role="EcuMT" value="4457500422381364540" />
+    <property role="R4oN_" value="a text word" />
     <ref role="1TJDcQ" node="3RseghIcuhq" resolve="Word" />
     <node concept="1TJgyi" id="3RseghIcukX" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -193,6 +201,7 @@
     <property role="TrG5h" value="WordList" />
     <property role="34LRSv" value="&lt;" />
     <property role="EcuMT" value="4457500422381380663" />
+    <property role="R4oN_" value="a list of words" />
     <ref role="1TJDcQ" node="3RseghIcuhq" resolve="Word" />
     <node concept="1TJgyj" id="3RseghIcygT" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -215,6 +224,8 @@
     <property role="TrG5h" value="LatexIncludable" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="2293093897292826386" />
+    <property role="34LRSv" value="includable" />
+    <property role="R4oN_" value="include other lines" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1ZiHc0gKksk" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

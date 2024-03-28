@@ -69,7 +69,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -119,6 +119,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
   </registry>
@@ -180,6 +184,10 @@
     <node concept="3aamgX" id="7rXn3flJ_H8" role="3acgRq">
       <ref role="30HIoZ" to="8zu2:7rXn3flJtYw" resolve="TermRefWord" />
       <node concept="gft3U" id="7rXn3flJAgt" role="1lVwrX">
+        <node concept="15s5l7" id="44D1kY$JQrP" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of EmphFormattedText)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:a5b5b4fe-a87a-44d6-a204-cb07050793ac(com.mbeddr.doc.constraints)/8237807170234509102]&quot;;" />
+          <property role="huDt6" value="Node '(instance of EmphFormattedText)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
+        </node>
         <node concept="28N2ik" id="7rXn3flJAgv" role="gfFT$">
           <node concept="19SGf9" id="7rXn3flJAgw" role="$DsGW">
             <node concept="19SUe$" id="7rXn3flJAgx" role="19SJt6">
@@ -244,6 +252,10 @@
     <node concept="3aamgX" id="2nGCZEu8wFi" role="3acgRq">
       <ref role="30HIoZ" to="8zu2:14uWAurimdc" resolve="TermRelationshipText" />
       <node concept="gft3U" id="2nGCZEu8wFj" role="1lVwrX">
+        <node concept="15s5l7" id="44D1kY$JQtE" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of EmphFormattedText)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:a5b5b4fe-a87a-44d6-a204-cb07050793ac(com.mbeddr.doc.constraints)/8237807170234509102]&quot;;" />
+          <property role="huDt6" value="Node '(instance of EmphFormattedText)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
+        </node>
         <node concept="28N2ik" id="2nGCZEu8wFk" role="gfFT$">
           <node concept="19SGf9" id="2nGCZEu8wFl" role="$DsGW">
             <node concept="19SUe$" id="2nGCZEu8wFx" role="19SJt6">

@@ -40,8 +40,8 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="4E$PniRKKrW">
-    <property role="TrG5h" value="VariableDef" />
-    <property role="R4oN_" value="defines an inline variable" />
+    <property role="TrG5h" value="VariableDefinition" />
+    <property role="R4oN_" value="an inline variable definition" />
     <property role="34LRSv" value="$var" />
     <property role="EcuMT" value="5378658552263149308" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvhAy" resolve="DocumentWord" />
@@ -74,14 +74,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4E$PniRKKXH">
-    <property role="TrG5h" value="VarRef" />
+    <property role="TrG5h" value="VariableReference" />
     <property role="EcuMT" value="5378658552263151469" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="4E$PniRKKXI" role="1TKVEi">
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="5378658552263151470" />
-      <ref role="20lvS9" node="4E$PniRKKrW" resolve="VariableDef" />
+      <ref role="20lvS9" node="4E$PniRKKrW" resolve="VariableDefinition" />
     </node>
     <node concept="PrWs8" id="70kXLV5z8M7" role="PzmwI">
       <ref role="PrY4T" to="vs0r:70kXLV4LLzw" resolve="IReference" />
