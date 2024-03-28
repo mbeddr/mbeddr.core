@@ -1308,23 +1308,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3cpWs8" id="1VRNFIozvDr" role="3cqZAp">
-                      <node concept="3cpWsn" id="1VRNFIozvDs" role="3cpWs9">
-                        <property role="TrG5h" value="outputStream" />
-                        <node concept="3uibUv" id="1VRNFIozvDt" role="1tU5fm">
-                          <ref role="3uigEE" to="guwi:~FileOutputStream" resolve="FileOutputStream" />
-                        </node>
-                        <node concept="2ShNRf" id="1VRNFIozvQS" role="33vP2m">
-                          <node concept="1pGfFk" id="1VRNFIozw70" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="guwi:~FileOutputStream.&lt;init&gt;(java.io.File)" resolve="FileOutputStream" />
-                            <node concept="37vLTw" id="1VRNFIozw9W" role="37wK5m">
-                              <ref role="3cqZAo" node="4t$H79$kPgx" resolve="outputFile" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbF" id="5pyBnOIERrv" role="3cqZAp">
                       <node concept="2OqwBi" id="5pyBnOIETMT" role="3clFbG">
                         <node concept="37vLTw" id="5pyBnOIETAA" role="2Oq$k0">
@@ -1332,8 +1315,14 @@
                         </node>
                         <node concept="liA8E" id="5pyBnOIEUyU" role="2OqNvi">
                           <ref role="37wK5l" to="81o:~SourceStringReader.generateImage(java.io.OutputStream)" resolve="generateImage" />
-                          <node concept="37vLTw" id="4t$H79$kPgE" role="37wK5m">
-                            <ref role="3cqZAo" node="1VRNFIozvDs" resolve="outputStream" />
+                          <node concept="2ShNRf" id="7ymv7GF2fIm" role="37wK5m">
+                            <node concept="1pGfFk" id="7ymv7GF2fYv" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="guwi:~FileOutputStream.&lt;init&gt;(java.io.File)" resolve="FileOutputStream" />
+                              <node concept="37vLTw" id="7ymv7GF2g2Q" role="37wK5m">
+                                <ref role="3cqZAo" node="4t$H79$kPgx" resolve="outputFile" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1373,12 +1362,12 @@
             </node>
           </node>
           <node concept="2OqwBi" id="2fGuOSYbJKA" role="2GsD0m">
-            <node concept="1Q6Npb" id="2fGuOSYbJKB" role="2Oq$k0" />
             <node concept="2SmgA7" id="2fGuOSYbJKC" role="2OqNvi">
               <node concept="chp4Y" id="12zeRDvnbhv" role="1dBWTz">
                 <ref role="cht4Q" to="2c95:2fGuOSYbvYU" resolve="Visualization" />
               </node>
             </node>
+            <node concept="1Q6Npb" id="2fGuOSYbJKB" role="2Oq$k0" />
           </node>
         </node>
       </node>
