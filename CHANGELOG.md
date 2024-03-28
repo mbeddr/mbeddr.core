@@ -14,6 +14,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Interpreters now support data flow analysis.
 - Action profiles now support priorities if multiple profiles are activated by default.
 
+### Fixed
+
+- Some small issues with the action profiles were fixed as well.
+
 ## com.mbeddr.doc
 
 ### Added
