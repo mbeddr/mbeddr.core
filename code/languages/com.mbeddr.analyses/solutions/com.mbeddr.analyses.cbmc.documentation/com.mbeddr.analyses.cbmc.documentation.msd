@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.analyses.cbmc.documentation" uuid="d52adc5a-3f9d-4b6a-9ebc-fdae1441d972" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.analyses.cbmc.documentation" uuid="d52adc5a-3f9d-4b6a-9ebc-fdae1441d972" moduleVersion="0" compileInMPS="false">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
