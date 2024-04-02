@@ -936,7 +936,6 @@
                               </node>
                               <node concept="3clFbS" id="2DWJLXXAF8k" role="3eOfB_">
                                 <node concept="RRSsy" id="2DWJLXXAHTs" role="3cqZAp">
-                                  <property role="RRSoG" value="h1akgim/info" />
                                   <node concept="Xl_RD" id="2DWJLXXAHTu" role="RRSoy">
                                     <property role="Xl_RC" value="doc_gen folder doesn't exist nothing to clean" />
                                   </node>
