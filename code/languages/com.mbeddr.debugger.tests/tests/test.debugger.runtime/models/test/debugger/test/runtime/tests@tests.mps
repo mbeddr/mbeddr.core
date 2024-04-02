@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -37,6 +37,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -280,6 +281,7 @@
   <node concept="1lH9Xt" id="30gDo8BMhFW">
     <property role="TrG5h" value="TestRuntime" />
     <property role="3GE5qa" value="integration" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="30gDo8BMhFZ" role="1SL9yI">
       <property role="TrG5h" value="validateDependencies" />
       <node concept="3cqZAl" id="30gDo8BMhG0" role="3clF45" />
@@ -477,6 +479,7 @@
   <node concept="1lH9Xt" id="7C_wgEF4DNo">
     <property role="TrG5h" value="Stepper" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF4DXI" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF4DXL" role="3clF45">
@@ -4752,6 +4755,7 @@
   <node concept="1lH9Xt" id="7C_wgEF3DrS">
     <property role="TrG5h" value="BreakpointLocation" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7C_wgEF3Ds6" role="1SL9yI">
       <property role="TrG5h" value="createInvalidLocations" />
       <node concept="3cqZAl" id="7C_wgEF3Ds7" role="3clF45" />
@@ -4887,6 +4891,7 @@
   <node concept="1lH9Xt" id="7C_wgEF3DK5">
     <property role="TrG5h" value="Breakpoint" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7C_wgEF3DKg" role="1SL9yI">
       <property role="TrG5h" value="invalidOperations" />
       <node concept="3cqZAl" id="7C_wgEF3DKh" role="3clF45" />
@@ -5034,6 +5039,7 @@
   <node concept="1lH9Xt" id="7C_wgEF3Ed5">
     <property role="TrG5h" value="BreakpointManager" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7C_wgEF3EyE" role="1SL9yI">
       <property role="TrG5h" value="createInstance" />
       <node concept="3cqZAl" id="7C_wgEF3EyF" role="3clF45" />
@@ -6054,6 +6060,7 @@
   <node concept="1lH9Xt" id="7C_wgEF4DNq">
     <property role="TrG5h" value="MapperListener" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7C_wgEF4JKo" role="1SL9yI">
       <property role="TrG5h" value="createInstance" />
       <node concept="3cqZAl" id="7C_wgEF4JKp" role="3clF45" />
@@ -6421,6 +6428,7 @@
   <node concept="1lH9Xt" id="7C_wgEF4$DT">
     <property role="TrG5h" value="ProgramState" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF4$RC" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF4$RF" role="3clF45">
@@ -9098,6 +9106,7 @@
   <node concept="1lH9Xt" id="7C_wgEF3Rwo">
     <property role="3GE5qa" value="unit-tests" />
     <property role="TrG5h" value="Session" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF49xu" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF49xx" role="3clF45">
@@ -10306,6 +10315,7 @@
   <node concept="1lH9Xt" id="7C_wgEF427M">
     <property role="3GE5qa" value="unit-tests" />
     <property role="TrG5h" value="SessionAttached" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF44tV" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF44tZ" role="3clF45">
@@ -11947,6 +11957,7 @@
   <node concept="1lH9Xt" id="7C_wgEF4a2D">
     <property role="TrG5h" value="SessionNotAttached" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF4a2E" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF4a2F" role="3clF45">
@@ -13272,6 +13283,7 @@
   <node concept="1lH9Xt" id="7C_wgEF4bzk">
     <property role="TrG5h" value="SessionRunning" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF4bzl" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF4bzm" role="3clF45">
@@ -14658,6 +14670,7 @@
   <node concept="1lH9Xt" id="7C_wgEF4r1Y">
     <property role="TrG5h" value="SessionSuspended" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF4r1Z" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF4r20" role="3clF45">
@@ -16193,6 +16206,7 @@
   <node concept="1lH9Xt" id="30gDo8BMy3n">
     <property role="TrG5h" value="SessionTerminated" />
     <property role="3GE5qa" value="unit-tests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="2XrIbr" id="7C_wgEF45wv" role="1qtyYc">
       <property role="TrG5h" value="injectDependencies" />
       <node concept="3uibUv" id="7C_wgEF45ww" role="3clF45">
