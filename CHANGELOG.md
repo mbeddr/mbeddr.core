@@ -5,9 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# April 2024
+
+## com.mbeddr.doc.aspect
+
+## Fixed
+
+- A null pointer was fixed that was related to showing the documentation when the documentation tab is not opened.
+
+## com.mbeddr.mpsutil
+
+- An initialization issue related to the context actions tool was fixed.
+
 # March 2024
 
-## com.mbeddr.mpsutils
+## com.mbeddr.mpsutil
 
 ### Added
 
