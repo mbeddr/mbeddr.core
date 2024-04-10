@@ -38,6 +38,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
+    <import index="w827" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs.openapi(MPS.Core/)" implicit="true" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -1843,7 +1845,7 @@
                         <node concept="3clFbF" id="6UyJMA9G3Fp" role="3cqZAp">
                           <node concept="2Sg_IR" id="6UyJMA9G3Fq" role="3clFbG">
                             <node concept="37vLTw" id="2BHiRxghfTj" role="2SgG2M">
-                              <ref role="3cqZAo" node="4CT0O5aCrTW" resolve="it" />
+                              <ref role="3cqZAo" node="2SR9xrsN2tV" resolve="it" />
                             </node>
                             <node concept="1Q80Hx" id="6UyJMA9G3Fs" role="2SgHGx" />
                             <node concept="pncrf" id="6UyJMA9G3Ft" role="2SgHGx" />
@@ -1852,9 +1854,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="gl6BB" id="4CT0O5aCrTW" role="1bW2Oz">
+                      <node concept="gl6BB" id="2SR9xrsN2tV" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="4CT0O5aCrTX" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2SR9xrsN2tW" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -2370,7 +2372,7 @@
                           <node concept="3clFbF" id="6UyJMA9G3DT" role="3cqZAp">
                             <node concept="2Sg_IR" id="6UyJMA9G3DU" role="3clFbG">
                               <node concept="37vLTw" id="2BHiRxgm86d" role="2SgG2M">
-                                <ref role="3cqZAo" node="4CT0O5aCrTY" resolve="it" />
+                                <ref role="3cqZAo" node="2SR9xrsN2tX" resolve="it" />
                               </node>
                               <node concept="1Q80Hx" id="6UyJMA9G3DW" role="2SgHGx" />
                               <node concept="pncrf" id="6UyJMA9G3DX" role="2SgHGx" />
@@ -2379,9 +2381,9 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="gl6BB" id="4CT0O5aCrTY" role="1bW2Oz">
+                        <node concept="gl6BB" id="2SR9xrsN2tX" role="1bW2Oz">
                           <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="4CT0O5aCrTZ" role="1tU5fm" />
+                          <node concept="2jxLKc" id="2SR9xrsN2tY" role="1tU5fm" />
                         </node>
                       </node>
                     </node>
@@ -2936,10 +2938,15 @@
                 <node concept="17QB3L" id="hP3azYc" role="1tU5fm" />
                 <node concept="2OqwBi" id="hy079Lc" role="33vP2m">
                   <node concept="2YIFZM" id="6tm98vZifEl" role="2Oq$k0">
-                    <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(jetbrains.mps.project.AbstractModule)" resolve="forModule" />
+                    <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
                     <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
-                    <node concept="37vLTw" id="3GM_nagTruw" role="37wK5m">
-                      <ref role="3cqZAo" node="gTqSnTV" resolve="l" />
+                    <node concept="10QFUN" id="1wjaGbcNGbK" role="37wK5m">
+                      <node concept="3uibUv" id="1wjaGbcNHhz" role="10QFUM">
+                        <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                      </node>
+                      <node concept="37vLTw" id="3GM_nagTruw" role="10QFUP">
+                        <ref role="3cqZAo" node="gTqSnTV" resolve="l" />
+                      </node>
                     </node>
                   </node>
                   <node concept="liA8E" id="hy079Ld" role="2OqNvi">
@@ -2973,14 +2980,18 @@
                   <ref role="37wK5l" to="3ju5:~IFile.exists()" resolve="exists" />
                 </node>
                 <node concept="2OqwBi" id="4RnppgkkcW5" role="2Oq$k0">
-                  <node concept="2YIFZM" id="4RnppgkkcW3" role="2Oq$k0">
-                    <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />
-                    <ref role="37wK5l" to="3ju5:~FileSystem.getInstance()" resolve="getInstance" />
-                  </node>
                   <node concept="liA8E" id="4RnppgkkcW9" role="2OqNvi">
-                    <ref role="37wK5l" to="3ju5:~FileSystem.getFile(java.lang.String)" resolve="getFile" />
+                    <ref role="37wK5l" to="w827:~FileSystem.getFile(java.lang.String)" resolve="getFile" />
                     <node concept="37vLTw" id="3GM_nagTyHB" role="37wK5m">
                       <ref role="3cqZAo" node="gTqTi9T" resolve="s" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1wjaGbcNIsu" role="2Oq$k0">
+                    <node concept="37vLTw" id="1wjaGbcNHYY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="gTqSnTV" resolve="l" />
+                    </node>
+                    <node concept="liA8E" id="1wjaGbcNKPD" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~AbstractModule.getFileSystem()" resolve="getFileSystem" />
                     </node>
                   </node>
                 </node>

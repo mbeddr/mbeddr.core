@@ -413,14 +413,14 @@
                                             <ref role="37wK5l" to="mhbf:~SModel.getReference()" resolve="getReference" />
                                           </node>
                                           <node concept="37vLTw" id="2BHiRxgm8go" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="4CT0O5aJHX3" resolve="it" />
+                                            <ref role="3cqZAo" node="2SR9xrsN2KW" resolve="it" />
                                           </node>
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="gl6BB" id="4CT0O5aJHX3" role="1bW2Oz">
+                                    <node concept="gl6BB" id="2SR9xrsN2KW" role="1bW2Oz">
                                       <property role="TrG5h" value="it" />
-                                      <node concept="2jxLKc" id="4CT0O5aJHX4" role="1tU5fm" />
+                                      <node concept="2jxLKc" id="2SR9xrsN2KX" role="1tU5fm" />
                                     </node>
                                   </node>
                                 </node>
@@ -986,14 +986,14 @@
                         <ref role="37wK5l" to="pjrh:~MetaAdapterByDeclaration.getLanguage(jetbrains.mps.smodel.Language)" resolve="getLanguage" />
                         <ref role="1Pybhc" to="pjrh:~MetaAdapterByDeclaration" resolve="MetaAdapterByDeclaration" />
                         <node concept="37vLTw" id="G1JaZHlHn$" role="37wK5m">
-                          <ref role="3cqZAo" node="4CT0O5aJHX5" resolve="it" />
+                          <ref role="3cqZAo" node="2SR9xrsN2KY" resolve="it" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="gl6BB" id="4CT0O5aJHX5" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2KY" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4CT0O5aJHX6" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2KZ" role="1tU5fm" />
                   </node>
                 </node>
               </node>
@@ -1210,14 +1210,14 @@
                                             <ref role="37wK5l" to="mhbf:~SModel.getReference()" resolve="getReference" />
                                           </node>
                                           <node concept="37vLTw" id="4yCyDr396pP" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="4CT0O5aJHX7" resolve="it" />
+                                            <ref role="3cqZAo" node="2SR9xrsN2L0" resolve="it" />
                                           </node>
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="gl6BB" id="4CT0O5aJHX7" role="1bW2Oz">
+                                    <node concept="gl6BB" id="2SR9xrsN2L0" role="1bW2Oz">
                                       <property role="TrG5h" value="it" />
-                                      <node concept="2jxLKc" id="4CT0O5aJHX8" role="1tU5fm" />
+                                      <node concept="2jxLKc" id="2SR9xrsN2L1" role="1tU5fm" />
                                     </node>
                                   </node>
                                 </node>

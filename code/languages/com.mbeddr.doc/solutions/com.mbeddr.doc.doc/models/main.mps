@@ -378,14 +378,6 @@
       <property role="2SbEId" value="figures/doc" />
       <ref role="2SbEIe" node="7$DvC4gRmn2" resolve="images" />
     </node>
-    <node concept="2SbEIf" id="44D1kY$kNzU" role="30Gjbg">
-      <property role="2SbEId" value="figures/doc" />
-      <ref role="2SbEIe" node="6VIi5$IArfl" resolve="img" />
-    </node>
-    <node concept="2SbEIf" id="44D1kY$kNzV" role="30Gjbg">
-      <property role="2SbEId" value="figures/doc" />
-      <ref role="2SbEIe" node="3OiIliPSmau" resolve="temp" />
-    </node>
     <node concept="OjmMv" id="7$DvC4gRvLP" role="WqcPc">
       <node concept="19SGf9" id="7$DvC4gRvLQ" role="OjmMu">
         <node concept="19SUe$" id="7$DvC4gRvLR" role="19SJt6">
@@ -400,6 +392,14 @@
       <property role="1xAxd1" value="true" />
     </node>
     <node concept="1TaS0h" id="hODJYRp92O" role="30GjaH" />
+    <node concept="2SbEIf" id="44D1kY$kNzU" role="30Gjbg">
+      <property role="2SbEId" value="figures/doc" />
+      <ref role="2SbEIe" node="6VIi5$IArfl" resolve="img" />
+    </node>
+    <node concept="2SbEIf" id="44D1kY$kNzV" role="30Gjbg">
+      <property role="2SbEId" value="figures/doc" />
+      <ref role="2SbEIe" node="3OiIliPSmau" resolve="temp" />
+    </node>
   </node>
   <node concept="1_1swa" id="7$DvC4gPSHs">
     <property role="TrG5h" value="B_SimpleDocuments" />

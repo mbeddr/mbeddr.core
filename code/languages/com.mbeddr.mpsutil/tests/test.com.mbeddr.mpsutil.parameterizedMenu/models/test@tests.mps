@@ -167,7 +167,7 @@
     </language>
     <language id="3a48930f-3451-44fd-9b09-4e7ef448f2bb" name="com.mbeddr.mpsutil.parameterizedMenu">
       <concept id="6447535233437925591" name="com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableSubMenu" flags="ng" index="SA3ZP" />
-      <concept id="6447535233477338909" name="com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter" flags="ig" index="XglwZ" />
+      <concept id="6447535233477338909" name="com.mbeddr.mpsutil.parameterizedMenu.structure.QueryFunction_TransformationMenu_ParameterizableParameter" flags="ng" index="XglwZ" />
       <concept id="6447535233477338386" name="com.mbeddr.mpsutil.parameterizedMenu.structure.TransformationMenuPart_ParameterizableParameterized" flags="ng" index="XglCK" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -253,21 +253,21 @@
                             <node concept="3clFbF" id="lb9twM9tQo" role="3cqZAp">
                               <node concept="3cpWs3" id="lb9twM9uOC" role="3clFbG">
                                 <node concept="37vLTw" id="lb9twM9uOI" role="3uHU7w">
-                                  <ref role="3cqZAo" node="4CT0O5aK_OJ" resolve="b" />
+                                  <ref role="3cqZAo" node="4BrUvzNDyvZ" resolve="b" />
                                 </node>
                                 <node concept="37vLTw" id="lb9twM9tQn" role="3uHU7B">
-                                  <ref role="3cqZAo" node="4CT0O5aK_OH" resolve="a" />
+                                  <ref role="3cqZAo" node="4BrUvzNDxW3" resolve="a" />
                                 </node>
                               </node>
                             </node>
                           </node>
-                          <node concept="gl6BB" id="4CT0O5aK_OH" role="1bW2Oz">
+                          <node concept="gl6BB" id="4BrUvzNDxW3" role="1bW2Oz">
                             <property role="TrG5h" value="a" />
-                            <node concept="2jxLKc" id="4CT0O5aK_OI" role="1tU5fm" />
+                            <node concept="2jxLKc" id="4BrUvzNDxW4" role="1tU5fm" />
                           </node>
-                          <node concept="gl6BB" id="4CT0O5aK_OJ" role="1bW2Oz">
+                          <node concept="gl6BB" id="4BrUvzNDyvZ" role="1bW2Oz">
                             <property role="TrG5h" value="b" />
-                            <node concept="2jxLKc" id="4CT0O5aK_OK" role="1tU5fm" />
+                            <node concept="2jxLKc" id="4BrUvzNDyw0" role="1tU5fm" />
                           </node>
                         </node>
                       </node>

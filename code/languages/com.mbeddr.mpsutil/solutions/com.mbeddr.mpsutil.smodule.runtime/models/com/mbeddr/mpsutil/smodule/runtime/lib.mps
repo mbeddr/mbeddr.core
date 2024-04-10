@@ -616,7 +616,7 @@
                         <node concept="3clFbF" id="7raGfT8P8g6" role="3cqZAp">
                           <node concept="2OqwBi" id="7raGfT8P8tm" role="3clFbG">
                             <node concept="37vLTw" id="7raGfT8P8g5" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4CT0O5aJG19" resolve="it" />
+                              <ref role="3cqZAo" node="2SR9xrsN2Ju" resolve="it" />
                             </node>
                             <node concept="liA8E" id="7raGfT8P8Jg" role="2OqNvi">
                               <ref role="37wK5l" to="c17a:~SLanguage.getSourceModuleReference()" resolve="getSourceModuleReference" />
@@ -624,9 +624,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="gl6BB" id="4CT0O5aJG19" role="1bW2Oz">
+                      <node concept="gl6BB" id="2SR9xrsN2Ju" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="4CT0O5aJG1a" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2SR9xrsN2Jv" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -639,7 +639,7 @@
                     <node concept="3clFbF" id="fXun2Rl_$a" role="3cqZAp">
                       <node concept="2OqwBi" id="7raGfT8P5R2" role="3clFbG">
                         <node concept="37vLTw" id="7raGfT8PcQt" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4CT0O5aJG1b" resolve="it" />
+                          <ref role="3cqZAo" node="2SR9xrsN2Jw" resolve="it" />
                         </node>
                         <node concept="liA8E" id="7raGfT8P67x" role="2OqNvi">
                           <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
@@ -655,9 +655,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="gl6BB" id="4CT0O5aJG1b" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2Jw" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4CT0O5aJG1c" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2Jx" role="1tU5fm" />
                   </node>
                 </node>
               </node>

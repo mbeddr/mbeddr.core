@@ -125,15 +125,15 @@
                           <property role="Xl_RC" value="IconChar is not longer supported please run the migrations for this model to remove it. It will get replaced with an MPS native concept." />
                         </node>
                         <node concept="37vLTw" id="72HfR5QagqP" role="2k6f33">
-                          <ref role="3cqZAo" node="4CT0O5aCg9S" resolve="iconChar" />
+                          <ref role="3cqZAo" node="2SR9xrsN2pL" resolve="iconChar" />
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="gl6BB" id="4CT0O5aCg9S" role="1bW2Oz">
+                <node concept="gl6BB" id="2SR9xrsN2pL" role="1bW2Oz">
                   <property role="TrG5h" value="iconChar" />
-                  <node concept="2jxLKc" id="4CT0O5aCg9T" role="1tU5fm" />
+                  <node concept="2jxLKc" id="2SR9xrsN2pM" role="1tU5fm" />
                 </node>
               </node>
             </node>

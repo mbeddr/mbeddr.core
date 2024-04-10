@@ -356,7 +356,7 @@
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
     <language id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles">
-      <concept id="1072158555907409226" name="com.mbeddr.mpsutil.userstyles.structure.InlineStyle" flags="lg" index="2_8dvc">
+      <concept id="1072158555907409226" name="com.mbeddr.mpsutil.userstyles.structure.InlineStyle" flags="ng" index="2_8dvc">
         <child id="1072158555907409230" name="style" index="2_8dv8" />
       </concept>
     </language>
@@ -1818,7 +1818,7 @@
                             <node concept="v3k3i" id="Vx4CqFG84J" role="2OqNvi">
                               <node concept="25Kdxt" id="Vx4CqFG84K" role="v3oSu">
                                 <node concept="37vLTw" id="Vx4CqFG84L" role="25KhWn">
-                                  <ref role="3cqZAo" node="4CT0O5aCrZ3" resolve="mustExist" />
+                                  <ref role="3cqZAo" node="2SR9xrsN2uh" resolve="mustExist" />
                                 </node>
                               </node>
                             </node>
@@ -1833,9 +1833,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="gl6BB" id="4CT0O5aCrZ3" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2uh" role="1bW2Oz">
                     <property role="TrG5h" value="mustExist" />
-                    <node concept="2jxLKc" id="4CT0O5aCrZ4" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2ui" role="1tU5fm" />
                   </node>
                 </node>
               </node>
@@ -1936,7 +1936,7 @@
                           <node concept="3clFbF" id="Vx4CqFLKey" role="3cqZAp">
                             <node concept="2OqwBi" id="Vx4CqFLKq7" role="3clFbG">
                               <node concept="37vLTw" id="Vx4CqFLKex" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4CT0O5aCrZ5" resolve="it" />
+                                <ref role="3cqZAo" node="2SR9xrsN2uj" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="Vx4CqFLK_n" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1944,9 +1944,9 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="gl6BB" id="4CT0O5aCrZ5" role="1bW2Oz">
+                        <node concept="gl6BB" id="2SR9xrsN2uj" role="1bW2Oz">
                           <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="4CT0O5aCrZ6" role="1tU5fm" />
+                          <node concept="2jxLKc" id="2SR9xrsN2uk" role="1tU5fm" />
                         </node>
                       </node>
                     </node>

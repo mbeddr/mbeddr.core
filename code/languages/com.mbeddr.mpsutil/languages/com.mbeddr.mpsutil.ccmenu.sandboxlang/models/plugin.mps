@@ -45,12 +45,12 @@
       </concept>
     </language>
     <language id="935bff03-e393-4547-a3a2-60335e0cad25" name="com.mbeddr.mpsutil.ccmenu">
-      <concept id="1711273135353427577" name="com.mbeddr.mpsutil.ccmenu.structure.StyleExtension_Color" flags="ig" index="25PPYw" />
+      <concept id="1711273135353427577" name="com.mbeddr.mpsutil.ccmenu.structure.StyleExtension_Color" flags="ng" index="25PPYw" />
       <concept id="1711273135353427569" name="com.mbeddr.mpsutil.ccmenu.structure.StyleExtension" flags="ng" index="25PPYC">
         <child id="1711273135353427578" name="foregroundColor" index="25PPYz" />
         <child id="1711273135353427574" name="condition" index="25PPYJ" />
       </concept>
-      <concept id="1711273135353427573" name="com.mbeddr.mpsutil.ccmenu.structure.StyleExtension_Condition" flags="ig" index="25PPYG" />
+      <concept id="1711273135353427573" name="com.mbeddr.mpsutil.ccmenu.structure.StyleExtension_Condition" flags="ng" index="25PPYG" />
       <concept id="6243347984996272104" name="com.mbeddr.mpsutil.ccmenu.structure.CCMenuExtensions" flags="ng" index="2Kv_g1">
         <child id="3038639843201565383" name="extensions" index="2GiUwh" />
       </concept>
@@ -59,7 +59,7 @@
         <child id="490620444044280827" name="tab" index="300GHa" />
       </concept>
       <concept id="490620444044272575" name="com.mbeddr.mpsutil.ccmenu.structure.DefaultTab" flags="ng" index="300EGe" />
-      <concept id="490620444044280917" name="com.mbeddr.mpsutil.ccmenu.structure.Sorter_Function" flags="ig" index="300GN$" />
+      <concept id="490620444044280917" name="com.mbeddr.mpsutil.ccmenu.structure.Sorter_Function" flags="ng" index="300GN$" />
       <concept id="490620444044280921" name="com.mbeddr.mpsutil.ccmenu.structure.Sorter_Entries" flags="ng" index="300GNC" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -114,7 +114,7 @@
                           <node concept="2OqwBi" id="1uZEtAijAGF" role="3clFbG">
                             <node concept="2OqwBi" id="1uZEtAij$O5" role="2Oq$k0">
                               <node concept="37vLTw" id="1uZEtAij$IA" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4CT0O5aC7pH" resolve="it" />
+                                <ref role="3cqZAo" node="2SR9xrsN2lr" resolve="it" />
                               </node>
                               <node concept="liA8E" id="1uZEtAij_IJ" role="2OqNvi">
                                 <ref role="37wK5l" to="65ig:1uZEtAij__3" resolve="getMatchingText" />
@@ -126,9 +126,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="gl6BB" id="4CT0O5aC7pH" role="1bW2Oz">
+                      <node concept="gl6BB" id="2SR9xrsN2lr" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="4CT0O5aC7pI" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2SR9xrsN2ls" role="1tU5fm" />
                       </node>
                     </node>
                     <node concept="1nlBCl" id="1uZEtAijBmp" role="2S7zOq">

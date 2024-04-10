@@ -715,15 +715,15 @@
                         <node concept="liA8E" id="7o1blyuHWdT" role="2OqNvi">
                           <ref role="37wK5l" to="fyhk:~VisibleModuleRegistry.isVisible(org.jetbrains.mps.openapi.module.SModule)" resolve="isVisible" />
                           <node concept="37vLTw" id="7o1blyuHWdU" role="37wK5m">
-                            <ref role="3cqZAo" node="4CT0O5aEysB" resolve="it" />
+                            <ref role="3cqZAo" node="2SR9xrsN2Dk" resolve="it" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="gl6BB" id="4CT0O5aEysB" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2Dk" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4CT0O5aEysC" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2Dl" role="1tU5fm" />
                   </node>
                 </node>
               </node>

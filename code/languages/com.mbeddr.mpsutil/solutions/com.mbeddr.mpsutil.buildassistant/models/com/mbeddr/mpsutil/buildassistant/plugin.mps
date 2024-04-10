@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
@@ -19,7 +20,6 @@
     <import index="afa5" ref="r:cfccec82-df72-4483-9807-88776b4673ab(jetbrains.mps.ide.make.actions)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -29,6 +29,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
+    <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
   </imports>
@@ -304,12 +305,12 @@
       <property role="TrG5h" value="LOG" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="3x_7aSI23Ce" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
+        <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
       </node>
       <node concept="3Tm6S6" id="3x_7aSI21Y2" role="1B3o_S" />
       <node concept="2YIFZM" id="3x_7aSI2404" role="33vP2m">
-        <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
-        <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
+        <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
+        <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
         <node concept="3VsKOn" id="3x_7aSI24$i" role="37wK5m">
           <ref role="3VsUkX" node="3_loG33_Tx" resolve="DependencyBuilder" />
         </node>
@@ -555,7 +556,7 @@
                     <ref role="3cqZAo" node="3x_7aSI24Mw" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="3x_7aSI27kz" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
                     <node concept="3cpWs3" id="3x_7aSI290B" role="37wK5m">
                       <node concept="2OqwBi" id="3x_7aSI2aun" role="3uHU7w">
                         <node concept="37vLTw" id="3x_7aSI2afG" role="2Oq$k0">
@@ -625,7 +626,7 @@
                     <ref role="3cqZAo" node="3x_7aSI24Mw" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="3x_7aSI2d1o" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
                     <node concept="3cpWs3" id="3x_7aSI2d1p" role="37wK5m">
                       <node concept="2OqwBi" id="3x_7aSI2d1q" role="3uHU7w">
                         <node concept="37vLTw" id="3x_7aSI2d1r" role="2Oq$k0">
@@ -701,7 +702,7 @@
                     <ref role="3cqZAo" node="3x_7aSI24Mw" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="3x_7aSI2FtS" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
                     <node concept="3cpWs3" id="3x_7aSI2FtT" role="37wK5m">
                       <node concept="2OqwBi" id="3x_7aSI2FtU" role="3uHU7w">
                         <node concept="37vLTw" id="3x_7aSI2GmZ" role="2Oq$k0">
@@ -769,7 +770,7 @@
                     <ref role="3cqZAo" node="3x_7aSI24Mw" resolve="LOG" />
                   </node>
                   <node concept="liA8E" id="3x_7aSI3Oey" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
+                    <ref role="37wK5l" to="wwqx:~Logger.error(java.lang.String,java.lang.Throwable)" resolve="error" />
                     <node concept="3cpWs3" id="3x_7aSI3Oez" role="37wK5m">
                       <node concept="2OqwBi" id="3x_7aSI3PUP" role="3uHU7w">
                         <node concept="37vLTw" id="3x_7aSI3PFX" role="2Oq$k0">
@@ -1083,15 +1084,15 @@
                       <node concept="3clFbF" id="3x_7aSIHdbd" role="3cqZAp">
                         <node concept="2OqwBi" id="3x_7aSIHdo3" role="3clFbG">
                           <node concept="37vLTw" id="3x_7aSIHdbc" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4CT0O5aEAOE" resolve="it" />
+                            <ref role="3cqZAo" node="2SR9xrsN2Dm" resolve="it" />
                           </node>
                           <node concept="2z74zc" id="3x_7aSIHdF1" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
-                    <node concept="gl6BB" id="4CT0O5aEAOE" role="1bW2Oz">
+                    <node concept="gl6BB" id="2SR9xrsN2Dm" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="4CT0O5aEAOF" role="1tU5fm" />
+                      <node concept="2jxLKc" id="2SR9xrsN2Dn" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -1102,7 +1103,7 @@
                     <node concept="3clFbF" id="3x_7aSIHGFA" role="3cqZAp">
                       <node concept="2OqwBi" id="3x_7aSIHfq$" role="3clFbG">
                         <node concept="37vLTw" id="3x_7aSIHHay" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4CT0O5aEAOG" resolve="it" />
+                          <ref role="3cqZAo" node="2SR9xrsN2Do" resolve="it" />
                         </node>
                         <node concept="liA8E" id="3x_7aSIHfCd" role="2OqNvi">
                           <ref role="37wK5l" to="mhbf:~SReference.getTargetNode()" resolve="getTargetNode" />
@@ -1110,9 +1111,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="gl6BB" id="4CT0O5aEAOG" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2Do" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4CT0O5aEAOH" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2Dp" role="1tU5fm" />
                   </node>
                 </node>
               </node>
