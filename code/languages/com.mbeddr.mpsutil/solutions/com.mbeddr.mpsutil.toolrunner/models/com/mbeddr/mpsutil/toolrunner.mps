@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
@@ -219,11 +219,6 @@
       <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
       <concept id="3175313036448544056" name="jetbrains.mps.lang.extension.structure.ExtensionPointType" flags="in" index="Sf$Xq">
         <reference id="3175313036448544057" name="extensionPoint" index="Sf$Xr" />
-      </concept>
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -1029,8 +1024,12 @@
         <property role="3clFbU" value="true" />
       </node>
       <node concept="10P_77" id="1mocVhAC9ml" role="1tU5fm" />
-      <node concept="NWlO9" id="1mocVhACL3A" role="lGtFl">
-        <property role="NWlVz" value="Should we write debug infos?" />
+      <node concept="z59LJ" id="4CT0O5b3lkr" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkp" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkq" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we write debug infos?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mocVhAC9Qd" role="jymVt" />
@@ -1042,8 +1041,12 @@
       <node concept="3Tm1VV" id="3_HSwtcw2V4" role="1B3o_S" />
       <node concept="3clFbT" id="3_HSwtcw2V5" role="33vP2m" />
       <node concept="10P_77" id="3_HSwtcw2V6" role="1tU5fm" />
-      <node concept="NWlO9" id="3_HSwtcw2V7" role="lGtFl">
-        <property role="NWlVz" value="Should we write the raw output?" />
+      <node concept="z59LJ" id="4CT0O5b3lku" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lks" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkt" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we write the raw output?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3GkK2EESFDn" role="jymVt" />
@@ -1055,8 +1058,12 @@
       <node concept="3cmrfG" id="1XFitunRf7J" role="33vP2m">
         <property role="3cmrfH" value="-1" />
       </node>
-      <node concept="NWlO9" id="1mocVhACFzm" role="lGtFl">
-        <property role="NWlVz" value="Constant representing timeout that should be ignored." />
+      <node concept="z59LJ" id="4CT0O5b3lkx" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkv" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkw" role="1dT_Ay">
+            <property role="1dT_AB" value="Constant representing timeout that should be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mocVhACsLO" role="jymVt" />
@@ -1064,8 +1071,12 @@
       <property role="TrG5h" value="toolBinaryName" />
       <node concept="3Tm6S6" id="2f0rWuL9sCa" role="1B3o_S" />
       <node concept="17QB3L" id="2f0rWuL9sCg" role="1tU5fm" />
-      <node concept="NWlO9" id="1mocVhACvbh" role="lGtFl">
-        <property role="NWlVz" value="The name of the binary of the program that will be started." />
+      <node concept="z59LJ" id="4CT0O5b3lk$" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lky" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkz" role="1dT_Ay">
+            <property role="1dT_AB" value="The name of the binary of the program that will be started." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mocVhACwc4" role="jymVt" />
@@ -1076,8 +1087,12 @@
       <node concept="37vLTw" id="yLGIkBfETC" role="33vP2m">
         <ref role="3cqZAo" node="1XFitunRf7A" resolve="IGNORE_TIMEOUT" />
       </node>
-      <node concept="NWlO9" id="1mocVhAC$yj" role="lGtFl">
-        <property role="NWlVz" value="The timeout in seconds." />
+      <node concept="z59LJ" id="4CT0O5b3lkB" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lk_" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkA" role="1dT_Ay">
+            <property role="1dT_AB" value="The timeout in seconds." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mocVhACC1E" role="jymVt" />
@@ -1087,8 +1102,12 @@
         <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
       </node>
       <node concept="3Tmbuc" id="5bdxpKkL_qm" role="1B3o_S" />
-      <node concept="NWlO9" id="1mocVhACO6E" role="lGtFl">
-        <property role="NWlVz" value="Progress indicator that tells when the user cancels the task." />
+      <node concept="z59LJ" id="4CT0O5b3lkE" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkC" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkD" role="1dT_Ay">
+            <property role="1dT_AB" value="Progress indicator that tells when the user cancels the task." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mocVhACPw0" role="jymVt" />
@@ -1096,8 +1115,12 @@
       <property role="TrG5h" value="externalProcessFinished" />
       <node concept="3Tm6S6" id="6YINIHwdQwl" role="1B3o_S" />
       <node concept="10P_77" id="6YINIHwdQwr" role="1tU5fm" />
-      <node concept="NWlO9" id="1mocVhACRTA" role="lGtFl">
-        <property role="NWlVz" value="Has the external process finished?" />
+      <node concept="z59LJ" id="4CT0O5b3lkH" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkF" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkG" role="1dT_Ay">
+            <property role="1dT_AB" value="Has the external process finished?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="54L4tspm9cm" role="jymVt" />
@@ -1143,8 +1166,12 @@
       <node concept="2AHcQZ" id="6h7pCb_YaK1" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="1mocVhAG0qp" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="4CT0O5b3lkK" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkI" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkJ" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5J7jTRjW5yu" role="jymVt" />
@@ -1795,8 +1822,12 @@
       <node concept="2AHcQZ" id="6h7pCb_XpLN" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="1mocVhAG2nl" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="4CT0O5b3lkN" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkL" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkM" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="54L4tspkBQD" role="jymVt" />
@@ -1985,8 +2016,12 @@
       <node concept="3uibUv" id="7YBOkhBhwOW" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
-      <node concept="NWlO9" id="1mocVhAFYoI" role="lGtFl">
-        <property role="NWlVz" value="Runs the external program with certain arguments, on a set of files and in a certain directory." />
+      <node concept="P$JXv" id="4CT0O5b3lkQ" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkO" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkP" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs the external program with certain arguments, on a set of files and in a certain directory." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4$9c1ZxYQ5$" role="jymVt" />
@@ -2171,8 +2206,12 @@
       <node concept="_YKpA" id="4$9c1ZxYY8Z" role="3clF45">
         <node concept="17QB3L" id="4$9c1ZxYYiN" role="_ZDj9" />
       </node>
-      <node concept="NWlO9" id="4$9c1ZxZ47W" role="lGtFl">
-        <property role="NWlVz" value="Returns a list with the strings which when concatenated represent the command to be run." />
+      <node concept="P$JXv" id="4CT0O5b3lkT" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkR" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkS" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a list with the strings which when concatenated represent the command to be run." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="54L4tsplo3N" role="jymVt" />
@@ -2439,8 +2478,12 @@
       <node concept="3uibUv" id="44z3jezn1x_" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
-      <node concept="NWlO9" id="1mocVhAE3BR" role="lGtFl">
-        <property role="NWlVz" value="Kills the external process." />
+      <node concept="P$JXv" id="4CT0O5b3lkW" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkU" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkV" role="1dT_Ay">
+            <property role="1dT_AB" value="Kills the external process." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcz0yJ" role="jymVt" />
@@ -2468,8 +2511,12 @@
           <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
         </node>
       </node>
-      <node concept="NWlO9" id="3i3mSh$ZuoD" role="lGtFl">
-        <property role="NWlVz" value="Factory method for stream reader." />
+      <node concept="P$JXv" id="4CT0O5b3lkZ" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lkX" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3lkY" role="1dT_Ay">
+            <property role="1dT_AB" value="Factory method for stream reader." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3i3mSh$ZjJe" role="jymVt" />
@@ -2525,10 +2572,14 @@
         <property role="TrG5h" value="s" />
         <node concept="17QB3L" id="42G5eOpPNkK" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3_HSwtcz36o" role="lGtFl">
-        <property role="NWlVz" value="Debug." />
-      </node>
       <node concept="3Tm6S6" id="3_HSwtcG$Ia" role="1B3o_S" />
+      <node concept="P$JXv" id="4CT0O5b3ll2" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3ll0" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3ll1" role="1dT_Ay">
+            <property role="1dT_AB" value="Debug." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="62R55h2v3Tz" role="jymVt" />
     <node concept="312cEu" id="48zNdpj39bN" role="jymVt">
@@ -2545,8 +2596,12 @@
         <node concept="3uibUv" id="48zNdpj39bY" role="1tU5fm">
           <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
         </node>
-        <node concept="NWlO9" id="1mocVhADYVG" role="lGtFl">
-          <property role="NWlVz" value="The input stream to be read." />
+        <node concept="z59LJ" id="4CT0O5b3ll5" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3ll3" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3ll4" role="1dT_Ay">
+              <property role="1dT_AB" value="The input stream to be read." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="1mocVhADWSN" role="jymVt" />
@@ -2564,8 +2619,12 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="1mocVhAE06B" role="lGtFl">
-          <property role="NWlVz" value="Read lines." />
+        <node concept="z59LJ" id="4CT0O5b3ll8" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3ll6" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3ll7" role="1dT_Ay">
+              <property role="1dT_AB" value="Read lines." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="1mocVhADXLl" role="jymVt" />
@@ -2575,8 +2634,12 @@
         <node concept="3uibUv" id="48zNdpj3jQm" role="1tU5fm">
           <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
         </node>
-        <node concept="NWlO9" id="1mocVhADZWZ" role="lGtFl">
-          <property role="NWlVz" value="Exception that is thrown while reading." />
+        <node concept="z59LJ" id="4CT0O5b3llb" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3ll9" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3lla" role="1dT_Ay">
+              <property role="1dT_AB" value="Exception that is thrown while reading." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="62R55h2vmhi" role="jymVt" />
@@ -2601,8 +2664,12 @@
             <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
           </node>
         </node>
-        <node concept="NWlO9" id="1mocVhADYDd" role="lGtFl">
-          <property role="NWlVz" value="Constructor." />
+        <node concept="P$JXv" id="4CT0O5b3lle" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3llc" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3lld" role="1dT_Ay">
+              <property role="1dT_AB" value="Constructor." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="62R55h2vwKT" role="jymVt" />
@@ -2753,8 +2820,12 @@
           </node>
         </node>
         <node concept="3Tm1VV" id="48zNdpj3akV" role="1B3o_S" />
-        <node concept="NWlO9" id="1mocVhADZ7d" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="4CT0O5b3llh" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3llf" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3llg" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="62R55h2vPih" role="jymVt" />
@@ -2789,12 +2860,20 @@
         <node concept="3uibUv" id="48zNdpj3jQl" role="Sfmx6">
           <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
         </node>
-        <node concept="NWlO9" id="1mocVhAE0Xj" role="lGtFl">
-          <property role="NWlVz" value="Returns the read lines." />
+        <node concept="P$JXv" id="4CT0O5b3llk" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3lli" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3llj" role="1dT_Ay">
+              <property role="1dT_AB" value="Returns the read lines." />
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1mocVhADV7w" role="lGtFl">
-        <property role="NWlVz" value="Thread to read the output and error streams of a process." />
+      <node concept="3UR2Jj" id="4CT0O5b3lln" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3lll" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llm" role="1dT_Ay">
+            <property role="1dT_AB" value="Thread to read the output and error streams of a process." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="54L4tspl_np" role="jymVt" />
@@ -2811,8 +2890,12 @@
           <ref role="3cqZAo" node="1XFitunRf7A" resolve="IGNORE_TIMEOUT" />
         </node>
       </node>
-      <node concept="NWlO9" id="3VF7DCaOKL5" role="lGtFl">
-        <property role="NWlVz" value="Constant representing timeout that should be ignored." />
+      <node concept="z59LJ" id="4CT0O5b3llq" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3llo" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llp" role="1dT_Ay">
+            <property role="1dT_AB" value="Constant representing timeout that should be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3VF7DCaOWTF" role="jymVt" />
@@ -2828,8 +2911,12 @@
         <property role="TrG5h" value="elapsedMilliSeconds" />
         <node concept="3Tm6S6" id="1XFitunRf7N" role="1B3o_S" />
         <node concept="10Oyi0" id="3VF7DCaOGLw" role="1tU5fm" />
-        <node concept="NWlO9" id="1mocVhADtjQ" role="lGtFl">
-          <property role="NWlVz" value="How many milliseconds elapsed so far." />
+        <node concept="z59LJ" id="4CT0O5b3llt" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3llr" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3lls" role="1dT_Ay">
+              <property role="1dT_AB" value="How many milliseconds elapsed so far." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="1mocVhADy5v" role="jymVt" />
@@ -2837,8 +2924,12 @@
         <property role="TrG5h" value="timeoutInMilliseconds" />
         <node concept="3Tm6S6" id="1XFitunRf8O" role="1B3o_S" />
         <node concept="10Oyi0" id="1XFitunRf8Q" role="1tU5fm" />
-        <node concept="NWlO9" id="1mocVhAD$vE" role="lGtFl">
-          <property role="NWlVz" value="Timeout in milliseconds for this process" />
+        <node concept="z59LJ" id="4CT0O5b3llw" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3llu" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3llv" role="1dT_Ay">
+              <property role="1dT_AB" value="Timeout in milliseconds for this process" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="1d23YaEslBT" role="jymVt" />
@@ -2869,8 +2960,12 @@
           <property role="TrG5h" value="timeoutInSeconds" />
           <node concept="10Oyi0" id="1XFitunRf8M" role="1tU5fm" />
         </node>
-        <node concept="NWlO9" id="1mocVhADEoi" role="lGtFl">
-          <property role="NWlVz" value="Constructor" />
+        <node concept="P$JXv" id="4CT0O5b3llz" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3llx" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3lly" role="1dT_Ay">
+              <property role="1dT_AB" value="Constructor" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="1d23YaEsl_c" role="jymVt" />
@@ -2986,8 +3081,12 @@
           </node>
         </node>
         <node concept="3Tm1VV" id="5bdxpKkKYGz" role="1B3o_S" />
-        <node concept="NWlO9" id="1mocVhADEA9" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="4CT0O5b3llA" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3ll$" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3ll_" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="1d23YaEslOr" role="jymVt" />
@@ -3017,12 +3116,20 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="1mocVhADBxY" role="lGtFl">
-          <property role="NWlVz" value="Returns true if the elapsed time is too big and if we should case about timeouts." />
+        <node concept="P$JXv" id="4CT0O5b3llD" role="lGtFl">
+          <node concept="TZ5HA" id="4CT0O5b3llB" role="TZ5H$">
+            <node concept="1dT_AC" id="4CT0O5b3llC" role="1dT_Ay">
+              <property role="1dT_AB" value="Returns true if the elapsed time is too big and if we should case about timeouts." />
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1mocVhADGV_" role="lGtFl">
-        <property role="NWlVz" value="A thread that monitors the cancel of the users. If cancel is pressed, then the external process is killed." />
+      <node concept="3UR2Jj" id="4CT0O5b3llG" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3llE" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llF" role="1dT_Ay">
+            <property role="1dT_AB" value="A thread that monitors the cancel of the users. If cancel is pressed, then the external process is killed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="54L4tsplLRF" role="jymVt" />
@@ -3052,8 +3159,12 @@
         <property role="TrG5h" value="timeoutInSeconds" />
         <node concept="10Oyi0" id="4CtHBqN535N" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1mocVhADQWV" role="lGtFl">
-        <property role="NWlVz" value="Sets the timeout in seconds." />
+      <node concept="P$JXv" id="4CT0O5b3llJ" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3llH" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llI" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the timeout in seconds." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4CtHBqN5bK_" role="jymVt" />
@@ -3074,8 +3185,12 @@
       </node>
       <node concept="3Tm1VV" id="47vCOSht5_j" role="1B3o_S" />
       <node concept="10Oyi0" id="47vCOShtc0D" role="3clF45" />
-      <node concept="NWlO9" id="47vCOSht5_n" role="lGtFl">
-        <property role="NWlVz" value="Returns the timeout in seconds." />
+      <node concept="P$JXv" id="4CT0O5b3llM" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3llK" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llL" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the timeout in seconds." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="47vCOSht3jl" role="jymVt" />
@@ -3095,8 +3210,12 @@
       <node concept="3uibUv" id="5uqRFp9pzuE" role="3clF45">
         <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
       </node>
-      <node concept="NWlO9" id="5uqRFp9pE8W" role="lGtFl">
-        <property role="NWlVz" value="Returns the progress indicator used by this runner." />
+      <node concept="P$JXv" id="4CT0O5b3llP" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3llN" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llO" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the progress indicator used by this runner." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5uqRFp9pus_" role="jymVt" />
@@ -3128,16 +3247,24 @@
           <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
         </node>
       </node>
-      <node concept="NWlO9" id="1mocVhADSTM" role="lGtFl">
-        <property role="NWlVz" value="Sets the progress indicator (used for getting the cancel from users)." />
+      <node concept="P$JXv" id="4CT0O5b3llS" role="lGtFl">
+        <node concept="TZ5HA" id="4CT0O5b3llQ" role="TZ5H$">
+          <node concept="1dT_AC" id="4CT0O5b3llR" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the progress indicator (used for getting the cancel from users)." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1mocVhAClR1" role="jymVt" />
     <node concept="3uibUv" id="4CtHBqNlkip" role="EKbjA">
       <ref role="3uigEE" node="4CtHBqNlaPk" resolve="ToolRunner" />
     </node>
-    <node concept="NWlO9" id="1mocVhACdfi" role="lGtFl">
-      <property role="NWlVz" value="Base class for running external tools." />
+    <node concept="3UR2Jj" id="4CT0O5b3llV" role="lGtFl">
+      <node concept="TZ5HA" id="4CT0O5b3llT" role="TZ5H$">
+        <node concept="1dT_AC" id="4CT0O5b3llU" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for running external tools." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3HP615" id="7GloF9XTgpa">
