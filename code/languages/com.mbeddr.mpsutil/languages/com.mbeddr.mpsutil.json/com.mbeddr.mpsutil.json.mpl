@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.mpsutil.json" uuid="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" languageVersion="0" moduleVersion="0">
+<language namespace="com.mbeddr.mpsutil.json" uuid="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.json/source_gen" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot contentPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.json" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -11,7 +11,6 @@
     </facet>
   </facets>
   <accessoryModels />
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
