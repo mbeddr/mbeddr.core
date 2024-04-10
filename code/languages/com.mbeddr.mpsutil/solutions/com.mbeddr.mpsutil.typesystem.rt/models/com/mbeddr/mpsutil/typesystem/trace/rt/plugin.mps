@@ -507,7 +507,7 @@
                   <ref role="37wK5l" to="ev0w:~TypecheckingSessionHandler.runIsolated(jetbrains.mps.typechecking.TypecheckingSession$Flags,java.util.function.Consumer)" resolve="runIsolated" />
                   <node concept="2YIFZM" id="30RNHFs1Cbi" role="37wK5m">
                     <ref role="37wK5l" to="1ka:~TypecheckingSession$Flags.forRoot(org.jetbrains.mps.openapi.model.SNode)" resolve="forRoot" />
-                    <ref role="1Pybhc" to="1ka:~TypecheckingSession$Flags" resolve="Flags" />
+                    <ref role="1Pybhc" to="1ka:~TypecheckingSession$Flags" resolve="TypecheckingSession.Flags" />
                     <node concept="2GrUjf" id="30RNHFs1CEG" role="37wK5m">
                       <ref role="2Gs0qQ" node="7egl4Ehz5oV" resolve="rootNode" />
                     </node>

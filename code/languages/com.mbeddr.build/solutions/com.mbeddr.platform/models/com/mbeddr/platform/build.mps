@@ -8600,7 +8600,7 @@
         </node>
         <node concept="1SiIV0" id="3bBtawTixeq" role="3bR37C">
           <node concept="3bR9La" id="3bBtawTixer" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
           </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJNt3" role="3bR31x">
@@ -19905,7 +19905,7 @@
         </node>
         <node concept="1SiIV0" id="3bBtawTixVd" role="3bR37C">
           <node concept="3bR9La" id="3bBtawTixVe" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="com.mbeddr.mpsutil.serializer.xml" />
+            <ref role="3bR37D" to="90a9:6860Y5A00Lp" resolve="de.itemis.mps.utils.serializer.xml" />
           </node>
         </node>
         <node concept="1SiIV0" id="30xB0zHz3$9" role="3bR37C">
