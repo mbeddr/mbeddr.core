@@ -104,7 +104,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -129,7 +129,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="3717301156197626279" name="jetbrains.mps.lang.core.structure.BasePlaceholder" flags="ng" index="3DQ70j">
@@ -3222,7 +3222,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.apache.batik" />
         <property role="3LESm3" value="5ad14eca-28d7-4bce-b8e0-648908a49062" />
-        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="35JynOkFAzm" role="3LF7KH">
           <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
           <node concept="2Ry0Ak" id="35JynOkFBaE" role="iGT6I">
@@ -19138,7 +19137,6 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.opencsv" />
         <property role="3LESm3" value="11045775-3aaf-4816-8077-8656c4e8fee1" />
-        <property role="2GAjPV" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cU1" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cU2" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cU3" role="3LXTna">
