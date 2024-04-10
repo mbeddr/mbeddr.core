@@ -113,7 +113,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -165,6 +165,7 @@
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -182,7 +183,7 @@
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
-      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ng" index="3_9gw8">
+      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
         <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
@@ -245,7 +246,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -267,7 +268,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -369,7 +369,7 @@
                               <node concept="2OqwBi" id="7HmzdkqUuBV" role="3clFbG">
                                 <node concept="2OqwBi" id="7HmzdkqUuBW" role="2Oq$k0">
                                   <node concept="37vLTw" id="7HmzdkqUuBX" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7HmzdkqUuC1" resolve="it" />
+                                    <ref role="3cqZAo" node="4CT0O5aCoA0" resolve="it" />
                                   </node>
                                   <node concept="3TrcHB" id="7HmzdkqUuBY" role="2OqNvi">
                                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -398,9 +398,9 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="Rh6nW" id="7HmzdkqUuC1" role="1bW2Oz">
+                          <node concept="gl6BB" id="4CT0O5aCoA0" role="1bW2Oz">
                             <property role="TrG5h" value="it" />
-                            <node concept="2jxLKc" id="7HmzdkqUuC2" role="1tU5fm" />
+                            <node concept="2jxLKc" id="4CT0O5aCoA1" role="1tU5fm" />
                           </node>
                         </node>
                       </node>
@@ -472,7 +472,7 @@
                               <node concept="2OqwBi" id="7HmzdkqUKd3" role="3clFbG">
                                 <node concept="2OqwBi" id="7HmzdkqUKd4" role="2Oq$k0">
                                   <node concept="37vLTw" id="7HmzdkqUKd5" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7HmzdkqUKd9" resolve="it" />
+                                    <ref role="3cqZAo" node="4CT0O5aCoA2" resolve="it" />
                                   </node>
                                   <node concept="3CFZ6_" id="7HmzdkqUKd6" role="2OqNvi">
                                     <node concept="3CFYIy" id="7HmzdkqUKd7" role="3CFYIz">
@@ -484,9 +484,9 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="Rh6nW" id="7HmzdkqUKd9" role="1bW2Oz">
+                          <node concept="gl6BB" id="4CT0O5aCoA2" role="1bW2Oz">
                             <property role="TrG5h" value="it" />
-                            <node concept="2jxLKc" id="7HmzdkqUKda" role="1tU5fm" />
+                            <node concept="2jxLKc" id="4CT0O5aCoA3" role="1tU5fm" />
                           </node>
                         </node>
                       </node>

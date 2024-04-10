@@ -2,11 +2,11 @@
 <model ref="r:f349b2fc-480a-4a50-8b67-cd3b0a6c33b3(com.mbeddr.mpsutil.genericactions.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -47,6 +47,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
@@ -73,7 +74,7 @@
       <concept id="1562714432501166197" name="jetbrains.mps.lang.plugin.structure.KeymapChangesDeclaration" flags="ng" index="Zd50a">
         <child id="1562714432501166199" name="shortcutChange" index="Zd508" />
       </concept>
-      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ng" index="1bYyw_">
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ngI" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
@@ -82,7 +83,7 @@
         <reference id="1217252646389" name="key" index="1DUlNI" />
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -189,7 +190,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -213,7 +214,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -225,6 +226,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -232,7 +234,7 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
@@ -256,7 +258,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -275,7 +277,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
@@ -287,6 +288,7 @@
   <node concept="sE7Ow" id="dt1EHJOpK5">
     <property role="TrG5h" value="increaseEditorFontSize" />
     <property role="2uzpH1" value="Increase MPS Editor Font Size" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="dt1EHJOpK6" role="tncku">
       <node concept="3clFbS" id="dt1EHJOpK7" role="2VODD2">
         <node concept="3clFbF" id="dt1EHJPqfn" role="3cqZAp">
@@ -649,7 +651,7 @@
                     <node concept="3clFbF" id="5T3_DgSXiyT" role="3cqZAp">
                       <node concept="2OqwBi" id="5T3_DgSXiED" role="3clFbG">
                         <node concept="37vLTw" id="5T3_DgSXiyS" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5T3_DgSXiuI" resolve="it" />
+                          <ref role="3cqZAo" node="4CT0O5aIbLa" resolve="it" />
                         </node>
                         <node concept="liA8E" id="5T3_DgSXjLy" role="2OqNvi">
                           <ref role="37wK5l" to="k3nr:~MPSFileNodeEditor.getNodeEditor()" resolve="getNodeEditor" />
@@ -657,9 +659,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="5T3_DgSXiuI" role="1bW2Oz">
+                  <node concept="gl6BB" id="4CT0O5aIbLa" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="5T3_DgSXiuJ" role="1tU5fm" />
+                    <node concept="2jxLKc" id="4CT0O5aIbLb" role="1tU5fm" />
                   </node>
                 </node>
               </node>
@@ -670,7 +672,7 @@
                   <node concept="3clFbF" id="TGQG6ki2QZ" role="3cqZAp">
                     <node concept="2OqwBi" id="5T3_DgSXkKZ" role="3clFbG">
                       <node concept="37vLTw" id="5T3_DgSXkIl" role="2Oq$k0">
-                        <ref role="3cqZAo" node="TGQG6ki2$J" resolve="it" />
+                        <ref role="3cqZAo" node="4CT0O5aIbLc" resolve="it" />
                       </node>
                       <node concept="liA8E" id="5T3_DgSXkWu" role="2OqNvi">
                         <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent()" resolve="getCurrentEditorComponent" />
@@ -678,9 +680,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="TGQG6ki2$J" role="1bW2Oz">
+                <node concept="gl6BB" id="4CT0O5aIbLc" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="TGQG6ki2$K" role="1tU5fm" />
+                  <node concept="2jxLKc" id="4CT0O5aIbLd" role="1tU5fm" />
                 </node>
               </node>
             </node>
@@ -705,6 +707,7 @@
   <node concept="sE7Ow" id="dt1EHJPqgf">
     <property role="TrG5h" value="resetEditorFontSize" />
     <property role="2uzpH1" value="Reset MPS Editor Font Size" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="dt1EHJPqgg" role="tncku">
       <node concept="3clFbS" id="dt1EHJPqgh" role="2VODD2">
         <node concept="3clFbF" id="dt1EHJPqgi" role="3cqZAp">
@@ -719,6 +722,7 @@
   <node concept="sE7Ow" id="dt1EHJPqgC">
     <property role="TrG5h" value="decreaseEditorFontSize" />
     <property role="2uzpH1" value="Decrease MPS Editor Font Size" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="dt1EHJPqgD" role="tncku">
       <node concept="3clFbS" id="dt1EHJPqgE" role="2VODD2">
         <node concept="3clFbF" id="dt1EHJPqgF" role="3cqZAp">
@@ -769,6 +773,7 @@
   <node concept="sE7Ow" id="6bM7gvq4qYM">
     <property role="TrG5h" value="openGeneratorDirInFileManager" />
     <property role="2uzpH1" value="File Manager in Output Folder" />
+    <property role="1rBW0U" value="true" />
     <node concept="2XrIbr" id="6bM7gvq4WiB" role="32lrUH">
       <property role="TrG5h" value="getOutputPath" />
       <node concept="3clFbS" id="6bM7gvq4WiC" role="3clF47">
@@ -1069,6 +1074,7 @@
     <property role="2uzpH1" value="File Manager in Module Folder" />
     <property role="3GE5qa" value="" />
     <property role="fJN8o" value="true" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7uLL3Mf2tAq" role="tncku">
       <node concept="3clFbS" id="7uLL3Mf2tAr" role="2VODD2">
         <node concept="3cpWs8" id="7uLL3Mf2DgK" role="3cqZAp">
