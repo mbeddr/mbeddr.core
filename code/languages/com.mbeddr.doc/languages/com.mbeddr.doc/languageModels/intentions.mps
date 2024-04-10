@@ -690,7 +690,7 @@
           <node concept="3cpWsn" id="6PYNGEwXqPM" role="3cpWs9">
             <property role="TrG5h" value="setNew" />
             <node concept="3Tqbb2" id="6PYNGEwXqPI" role="1tU5fm">
-              <ref role="ehGHo" to="2c95:4vQSg$Ar0eu" resolve="TextParHeader" />
+              <ref role="ehGHo" to="2c95:4vQSg$Ar0eu" resolve="TextParagraphHeader" />
             </node>
             <node concept="2OqwBi" id="6PYNGEwXqPN" role="33vP2m">
               <node concept="2OqwBi" id="6PYNGEwXqPO" role="2Oq$k0">
@@ -2787,7 +2787,7 @@
               <node concept="2Sf5sV" id="6RvWQYjOLY$" role="2Oq$k0" />
               <node concept="3CFZ6_" id="6RvWQYjOM_3" role="2OqNvi">
                 <node concept="3CFYIy" id="6RvWQYjOMFR" role="3CFYIz">
-                  <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
+                  <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInFolder" />
                 </node>
               </node>
             </node>

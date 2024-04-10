@@ -20,9 +20,9 @@
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
     <import index="b9kz" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.ex(MPS.IDEA/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
-    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -554,41 +554,36 @@
             <ref role="uiZuM" to="1ne1:7vUP_qcx$o$" resolve="ViewType" />
           </node>
         </node>
-        <node concept="3clFbF" id="7vUP_qcxcA4" role="3cqZAp">
-          <node concept="2OqwBi" id="7vUP_qcxdvH" role="3clFbG">
-            <node concept="2OqwBi" id="7vUP_qcxfPv" role="2Oq$k0">
-              <node concept="37vLTw" id="7vUP_qcxfPw" role="2Oq$k0">
-                <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
-              </node>
-              <node concept="liA8E" id="7vUP_qcxfPx" role="2OqNvi">
-                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
-              </node>
+        <node concept="3clFbF" id="3Nti5i7jDuk" role="3cqZAp">
+          <node concept="2OqwBi" id="3Nti5i7jDNA" role="3clFbG">
+            <node concept="2YIFZM" id="3Nti5i7jDE4" role="2Oq$k0">
+              <ref role="37wK5l" to="jkny:~ToolWindowManager.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
+              <ref role="1Pybhc" to="jkny:~ToolWindowManager" resolve="ToolWindowManager" />
+              <node concept="2xqhHp" id="3Nti5i7jDHn" role="37wK5m" />
             </node>
-            <node concept="liA8E" id="7vUP_qcxi0V" role="2OqNvi">
-              <ref role="37wK5l" to="jkny:~ToolWindow.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
-              <node concept="2OqwBi" id="7vUP_qcxoai" role="37wK5m">
-                <node concept="2WthIp" id="7vUP_qcxoal" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="7vUP_qcxoan" role="2OqNvi">
-                  <ref role="2WH_rO" node="7vUP_qcxjQT" resolve="myGearActionGroup" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7MNKXiIOLBT" role="3cqZAp" />
-        <node concept="3clFbF" id="QmW6bqNB94" role="3cqZAp">
-          <node concept="2YIFZM" id="QmW6bqNB9U" role="3clFbG">
-            <ref role="37wK5l" to="3a50:~ThreadUtils.runInUIThreadNoWait(java.lang.Runnable)" resolve="runInUIThreadNoWait" />
-            <ref role="1Pybhc" to="3a50:~ThreadUtils" resolve="ThreadUtils" />
-            <node concept="1bVj0M" id="QmW6bqNBa6" role="37wK5m">
-              <node concept="3clFbS" id="QmW6bqNBa7" role="1bW5cS">
-                <node concept="3clFbF" id="QmW6bqNBdN" role="3cqZAp">
-                  <node concept="2OqwBi" id="QmW6bqNBW6" role="3clFbG">
-                    <node concept="37vLTw" id="QmW6bqNGmR" role="2Oq$k0">
-                      <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
-                    </node>
-                    <node concept="liA8E" id="QmW6bqNCn0" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTool.makeAvailableLater()" resolve="makeAvailableLater" />
+            <node concept="liA8E" id="3Nti5i7jE3w" role="2OqNvi">
+              <ref role="37wK5l" to="jkny:~ToolWindowManager.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="3Nti5i7jE4x" role="37wK5m">
+                <node concept="3clFbS" id="3Nti5i7jE4y" role="1bW5cS">
+                  <node concept="3clFbF" id="7vUP_qcxcA4" role="3cqZAp">
+                    <node concept="2OqwBi" id="7vUP_qcxdvH" role="3clFbG">
+                      <node concept="2OqwBi" id="7vUP_qcxfPv" role="2Oq$k0">
+                        <node concept="37vLTw" id="7vUP_qcxfPw" role="2Oq$k0">
+                          <ref role="3cqZAo" node="QmW6bqNGmN" resolve="tool" />
+                        </node>
+                        <node concept="liA8E" id="7vUP_qcxfPx" role="2OqNvi">
+                          <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="7vUP_qcxi0V" role="2OqNvi">
+                        <ref role="37wK5l" to="jkny:~ToolWindow.setAdditionalGearActions(com.intellij.openapi.actionSystem.ActionGroup)" resolve="setAdditionalGearActions" />
+                        <node concept="2OqwBi" id="7vUP_qcxoai" role="37wK5m">
+                          <node concept="2WthIp" id="7vUP_qcxoal" role="2Oq$k0" />
+                          <node concept="2BZ7hE" id="7vUP_qcxoan" role="2OqNvi">
+                            <ref role="2WH_rO" node="7vUP_qcxjQT" resolve="myGearActionGroup" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -3,10 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -102,13 +103,23 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="3253504201087213830" name="com.mbeddr.mpsutil.blutil.structure.PerformanceProfiler" flags="ng" index="1Cbqnj">
         <property id="3253504201087213832" name="name" index="1Cbqnt" />
         <child id="3253504201087213831" name="profiledStatements" index="1Cbqni" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -364,9 +375,6 @@
         <property role="TrG5h" value="m" />
         <node concept="H_c77" id="1X8myJOEHJY" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6i3Vykm6E8L" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a model." />
-      </node>
       <node concept="_YKpA" id="44j14BHezwo" role="3clF45">
         <node concept="3uibUv" id="7cDRCwNoZq2" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
@@ -375,12 +383,23 @@
       <node concept="3uibUv" id="1X8myJOHU_t" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK8dr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dq" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a model." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="2hSqXWTF6wT" role="1B3o_S" />
-    <node concept="NWlO9" id="6i3Vykm6E7M" role="lGtFl">
-      <property role="NWlVz" value="Checks the consistency of variability of all artefacts within a model." />
-    </node>
     <node concept="2tJIrI" id="1X8myJOHTUa" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIK8du" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8ds" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8dt" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the consistency of variability of all artefacts within a model." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="1X8myJOUIpf">
     <property role="TrG5h" value="ModelConsistencyCheckerOfVariabilityDefinition" />
@@ -574,9 +593,6 @@
         <property role="TrG5h" value="m" />
         <node concept="H_c77" id="1X8myJOUIpV" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1X8myJOUIpW" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a model." />
-      </node>
       <node concept="_YKpA" id="1X8myJOUIpX" role="3clF45">
         <node concept="3uibUv" id="1X8myJOUWP5" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
@@ -585,12 +601,23 @@
       <node concept="3uibUv" id="1X8myJOUIpZ" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK8dx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dw" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a model." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="1X8myJOUIq0" role="1B3o_S" />
-    <node concept="NWlO9" id="1X8myJOUIq1" role="lGtFl">
-      <property role="NWlVz" value="Checks the consistency of variability definition within a model." />
-    </node>
     <node concept="2tJIrI" id="1X8myJOUIq2" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIK8d$" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8dy" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8dz" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the consistency of variability definition within a model." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -168,8 +168,12 @@
     <property role="TrG5h" value="Export" />
     <property role="WqcPg" value="My strange export config" />
     <node concept="2SbEIf" id="4eRbT2iEycg" role="30Gjbg">
-      <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
+      <property role="2SbEId" value="main" />
       <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
+    </node>
+    <node concept="2SbEIf" id="44D1kY$kUEh" role="30Gjbg">
+      <property role="2SbEId" value="imgs" />
+      <ref role="2SbEIe" node="2B9KjOuvX9f" resolve="imgs" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
       <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_including_other_docs" />
@@ -184,6 +188,7 @@
       <node concept="9PVaO" id="2khznRHyx6f" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="main" />
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX9f" role="A10yx">

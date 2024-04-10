@@ -378,10 +378,18 @@
       <property role="2SbEId" value="figures/doc" />
       <ref role="2SbEIe" node="7$DvC4gRmn2" resolve="images" />
     </node>
+    <node concept="2SbEIf" id="44D1kY$kNzU" role="30Gjbg">
+      <property role="2SbEId" value="figures/doc" />
+      <ref role="2SbEIe" node="6VIi5$IArfl" resolve="img" />
+    </node>
+    <node concept="2SbEIf" id="44D1kY$kNzV" role="30Gjbg">
+      <property role="2SbEId" value="figures/doc" />
+      <ref role="2SbEIe" node="3OiIliPSmau" resolve="temp" />
+    </node>
     <node concept="OjmMv" id="7$DvC4gRvLP" role="WqcPc">
       <node concept="19SGf9" id="7$DvC4gRvLQ" role="OjmMu">
         <node concept="19SUe$" id="7$DvC4gRvLR" role="19SJt6">
-          <property role="19SUeA" value="This document explains how to use the documentation language of mbeddr.\nIt supports writing prose text with sections, figures etc. It also supports\nembedding program nodes into the prose text. For example, references to other\nsections or figures are actural (refactoring-safe) references. Using a separate\nextension language, it is also possible to reference mbeddr code and even to \nembed mbeddr code as images or as text. mbeddr visualizations can also be \nrendered in real-time and embedded into the document. Documents can be output\nto HTML and Latex. The document you are currently reading is is itself written \nwith the documentation language: another extension module can be used to \ndocument itself by embedding documentation language code into documentation\ndocuments." />
+          <property role="19SUeA" value="This document explains how to use the documentation language of mbeddr. It supports writing prose text with sections, figures etc. It also supports embedding program nodes into the prose text. For example, references to other sections or figures are actual (refactoring-safe) references. Using a separate extension language, it is also possible to reference mbeddr code and even to embed mbeddr code as images or as text. mbeddr visualizations can also be rendered in real-time and embedded into the document. Documents can be output to HTML and Latex. The document you are currently reading is is itself written with the documentation language: another extension module can be used to document itself by embedding documentation language code into documentation documents." />
         </node>
       </node>
     </node>
@@ -415,7 +423,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gPSIi" role="19SJt6">
-              <property role="19SUeA" value=". It has a name and \nreferences a " />
+              <property role="19SUeA" value=". It has a name and references a " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gPSIj" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gPSIk" role="$DsGW">
@@ -432,7 +440,7 @@
         <node concept="1_0LV8" id="7$DvC4gPSHS" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gPSHT" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gPSHU" role="19SJt6">
-              <property role="19SUeA" value="Inside a document, the basic document structure consists of sections  \nand various kinds of paragraphs. The simplest kind of paragraph is \nthe text paragraph (entered by typing a " />
+              <property role="19SUeA" value="Inside a document, the basic document structure consists of sections  and various kinds of paragraphs. The simplest kind of paragraph is the text paragraph (entered by typing a " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gPSHV" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gPSHW" role="$DsGW">
@@ -442,13 +450,13 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gPSHY" role="19SJt6">
-              <property role="19SUeA" value="). It has vertical brackets \non both sides to denote its boundary. Below in fig " />
+              <property role="19SUeA" value="). It has vertical brackets on both sides to denote its boundary. Below in fig " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gR7Wy" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gPWk8" resolve="exSection" />
             </node>
             <node concept="19SUe$" id="7$DvC4gR7Wx" role="19SJt6">
-              <property role="19SUeA" value=" is an \nexample, that also embeds this same paragraph as an image." />
+              <property role="19SUeA" value=" is an example, that also embeds this same paragraph as an image." />
             </node>
           </node>
         </node>
@@ -484,7 +492,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="3OiIliPS5AZ" role="19SJt6">
-              <property role="19SUeA" value=" as well as as\n" />
+              <property role="19SUeA" value=" as well as as " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gRlCz" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gRlC$" role="$DsGW">
@@ -494,7 +502,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gRlCA" role="19SJt6">
-              <property role="19SUeA" value=", and more formatting options will show up over time. You can press\n" />
+              <property role="19SUeA" value=", and more formatting options will show up over time. You can press " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gRlCD" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gRlCE" role="$DsGW">
@@ -504,13 +512,13 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gRlCG" role="19SJt6">
-              <property role="19SUeA" value=" in the text paragraph to see which formatting options are \navailable. Formatting options all start with a backslash. " />
+              <property role="19SUeA" value=" in the text paragraph to see which formatting options are available. Formatting options all start with a backslash. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRlCS" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gRlCM" resolve="formatting" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRlCR" role="19SJt6">
-              <property role="19SUeA" value=" shows \nthe paragraph you're reading here as a screenshot so you can see the way to \nformat words. " />
+              <property role="19SUeA" value=" shows the paragraph you're reading here as a screenshot so you can see the way to format words. " />
             </node>
           </node>
         </node>
@@ -536,7 +544,7 @@
         <node concept="1_0LV8" id="7$DvC4gRmn5" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRmn6" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRmn7" role="19SJt6">
-              <property role="19SUeA" value="You can also embed images that are not rendered from within MPS, but are supplied\nexternally. Below, im " />
+              <property role="19SUeA" value="You can also embed images that are not rendered from within MPS, but are supplied externally. Below, im " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRmnm" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gRmnf" resolve="glider" />
@@ -588,20 +596,20 @@
         <node concept="1_0LV8" id="7$DvC4gRna5" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRna6" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRna7" role="19SJt6">
-              <property role="19SUeA" value="When embedding an image, you have to specify a name (so the image can be referenced\nfrom within the document), a path (defined via a path definition in the document\nconfiguration), the actual image file (code completion is available in the editor),\nas well as a size specification (among others, a scaling factor or a specification\nrelative to page size). " />
+              <property role="19SUeA" value="When embedding an image, you have to specify a name (so the image can be referenced from within the document), a path (defined via a path definition in the document configuration), the actual image file (code completion is available in the editor), as well as a size specification (among others, a scaling factor or a specification relative to page size). " />
             </node>
           </node>
         </node>
         <node concept="1_0LV8" id="7$DvC4gRna9" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRnaa" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRnab" role="19SJt6">
-              <property role="19SUeA" value="The path definitions are made in the document configuration, and include a path\nthat is valid while the document is edited; MPS path variables can be used. When\nthe document is exported (see below), these are mapped to paths relative to the\nlocation at which the document is located. " />
+              <property role="19SUeA" value="The path definitions are made in the document configuration, and include a path that is valid while the document is edited; MPS path variables can be used. When the document is exported (see below), these are mapped to paths relative to the location at which the document is located. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRnzp" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gRnzk" resolve="config" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRnzq" role="19SJt6">
-              <property role="19SUeA" value=" shows the document config\nfor this document. Note that you can also define size specifications there that\ncan be referenced from images within the document (to reuse the size specs)." />
+              <property role="19SUeA" value=" shows the document config for this document. Note that you can also define size specifications there that can be referenced from images within the document (to reuse the size specs)." />
             </node>
           </node>
         </node>
@@ -627,7 +635,7 @@
         <node concept="1_0LV8" id="7$DvC4gRuaJ" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRuaK" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRuaL" role="19SJt6">
-              <property role="19SUeA" value="Other artifacts can also be embedded, not just images. The approach is always the\nsame, in particular, you typically specify a path and a size, as well as a name so\nit can be referenced. The embeddings of the document sources (as screenshots) are\nexamples. In many cases, the artifacts are actually only created during the creation of the document. For example, the screenshots that represent the document source code are created " />
+              <property role="19SUeA" value="Other artifacts can also be embedded, not just images. The approach is always the same, in particular, you typically specify a path and a size, as well as a name so it can be referenced. The embeddings of the document sources (as screenshots) are examples. In many cases, the artifacts are actually only created during the creation of the document. For example, the screenshots that represent the document source code are created " />
             </node>
             <node concept="28N2ik" id="3OiIliPS5AV" role="19SJt6">
               <node concept="19SGf9" id="3OiIliPS5AW" role="$DsGW">
@@ -648,13 +656,13 @@
         <node concept="1_0LV8" id="7$DvC4gRvLS" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRvLT" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRvLU" role="19SJt6">
-              <property role="19SUeA" value="Exporting the document (as HTML, PDF, or possibly in other formats) involves two\nsteps. First, you likely wrote the overall text in several actual documents. To \ncreate a big, contiguous HTML or Latex document you probably want to join them.\nYou can do this by creating another document and including others. " />
+              <property role="19SUeA" value="Exporting the document (as HTML, PDF, or possibly in other formats) involves two steps. First, you likely wrote the overall text in several actual documents. To create a big, contiguous HTML or Latex document you probably want to join them. You can do this by creating another document and including others. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRvM1" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gRvLW" resolve="root" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRvM2" role="19SJt6">
-              <property role="19SUeA" value=" shows\nan example how to do that. Note that you can only include documents for which you \nspecify a dependency in the document header." />
+              <property role="19SUeA" value=" shows an example how to do that. Note that you can only include documents for which you specify a dependency in the document header." />
             </node>
           </node>
         </node>
@@ -682,13 +690,13 @@
               <ref role="2SbdyP" node="7$DvC4gRwzk" resolve="doc" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRwzp" role="19SJt6">
-              <property role="19SUeA" value=".\nThere, you specify a document title, optionally an abstract, a root document, as \nwell as a renderer. You also specify path mappings: the path definitions from the\nconfiguration (" />
+              <property role="19SUeA" value=". There, you specify a document title, optionally an abstract, a root document, as well as a renderer. You also specify path mappings: the path definitions from the&#10;configuration (" />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gRwzs" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gRnzk" resolve="config" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRwzr" role="19SJt6">
-              <property role="19SUeA" value=") now have to be mapped to paths relative to the output\nfolder of the generated document (most likely you have to manually create a script \nthat copies these resources into this directory). " />
+              <property role="19SUeA" value=") now have to be mapped to paths relative to the output folder of the generated document (most likely you have to manually create a script that copies these resources into this directory). " />
             </node>
           </node>
         </node>
@@ -710,7 +718,7 @@
         <node concept="1_0LV8" id="7$DvC4gRwzu" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRwzv" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRwzw" role="19SJt6">
-              <property role="19SUeA" value="To create the document, you simply generate the respective MPS model. The HTML or\nLatex file(s) will be generated. " />
+              <property role="19SUeA" value="To create the document, you simply generate the respective MPS model. The HTML or Latex file(s) will be generated. " />
             </node>
           </node>
         </node>
@@ -719,7 +727,7 @@
             <node concept="OjmMv" id="7$DvC4gRwz$" role="3X6T9h">
               <node concept="19SGf9" id="7$DvC4gRwz_" role="OjmMu">
                 <node concept="19SUe$" id="7$DvC4gRwzA" role="19SJt6">
-                  <property role="19SUeA" value="For Latex, you specify a document class as well as a prolog file. \nThe prolog file is included at the beginning of the document, and it\ncan define all the style customizations you want." />
+                  <property role="19SUeA" value="For Latex, you specify a document class as well as a prolog file. The prolog file is included at the beginning of the document, and it can define all the style customizations you want." />
                 </node>
               </node>
             </node>
@@ -728,7 +736,7 @@
             <node concept="OjmMv" id="7$DvC4gRwzC" role="3X6T9h">
               <node concept="19SGf9" id="7$DvC4gRwzD" role="OjmMu">
                 <node concept="19SUe$" id="7$DvC4gRwzE" role="19SJt6">
-                  <property role="19SUeA" value="For HTML, you specify a style sheet. This style sheet can format the\nHTML code in any way you want. Take a look at the generated HTML to \nlearn about the style classes used in the generated HTML." />
+                  <property role="19SUeA" value="For HTML, you specify a style sheet. This style sheet can format the HTML code in any way you want. Take a look at the generated HTML to learn about the style classes used in the generated HTML." />
                 </node>
               </node>
             </node>
@@ -741,13 +749,13 @@
         <node concept="1_0LV8" id="7$DvC4gRxtP" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gRxtQ" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gRxtR" role="19SJt6">
-              <property role="19SUeA" value="The documentation language is extensible. It can embed all kinds of other things.\nIn the previous section " />
+              <property role="19SUeA" value="The documentation language is extensible. It can embed all kinds of other things. In the previous section " />
             </node>
             <node concept="1_0GAv" id="7$DvC4gRxtS" role="19SJt6">
               <ref role="1_0GAl" node="7$DvC4gPSHO" resolve="normalDocs" />
             </node>
             <node concept="19SUe$" id="7$DvC4gRxtT" role="19SJt6">
-              <property role="19SUeA" value=" we have already implictly seen how to \nembed screenshots of documentation artifacts. This is probably a bit weird and \nmeta, but it is useful for documenting the documentation language. It also shows\noff the flexibility of the approach itself." />
+              <property role="19SUeA" value=" we have already implicitly seen how to embed screenshots of documentation artifacts. This is probably a bit weird and meta, but it is useful for documenting the documentation language. It also shows off the flexibility of the approach itself." />
             </node>
           </node>
         </node>
@@ -761,7 +769,7 @@
         <node concept="1_0LV8" id="519ky_SkwHl" role="1_0VJ0">
           <node concept="19SGf9" id="519ky_SkwHm" role="1_0LWR">
             <node concept="19SUe$" id="519ky_SkwHn" role="19SJt6">
-              <property role="19SUeA" value="The documentation language supports tables. The table below\nshows an example. This is an " />
+              <property role="19SUeA" value="The documentation language supports tables. The table below shows an example. This is an " />
             </node>
             <node concept="1jUjqm" id="519ky_SkVmE" role="19SJt6">
               <node concept="19SGf9" id="519ky_SkVmF" role="$DsGW">
@@ -771,7 +779,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="519ky_SkVmH" role="19SJt6">
-              <property role="19SUeA" value=", there are also\n" />
+              <property role="19SUeA" value=", there are also " />
             </node>
             <node concept="1jUjqm" id="519ky_SkVmI" role="19SJt6">
               <node concept="19SGf9" id="519ky_SkVmJ" role="$DsGW">
@@ -791,7 +799,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="519ky_SkVmP" role="19SJt6">
-              <property role="19SUeA" value="\nreference. The code for tables is shown in " />
+              <property role="19SUeA" value=" reference. The code for tables is shown in " />
             </node>
             <node concept="2Sbdz4" id="519ky_SmA8E" role="19SJt6">
               <ref role="2SbdyP" node="519ky_SmA8_" resolve="tables" />
@@ -857,14 +865,14 @@
         <node concept="1_0LV8" id="519ky_Slbab" role="1_0VJ0">
           <node concept="19SGf9" id="519ky_Slbac" role="1_0LWR">
             <node concept="19SUe$" id="519ky_Slbad" role="19SJt6">
-              <property role="19SUeA" value="In a table, you specify the number of columns (and a name for floating\ntables). You then add rows and cells. Currently we support only text\ncells (denoted by the parens) and text block cells (denoted by the angle\nbracket, just as in text paragaphs in general). Additional cell types \nwill be supported in the future." />
+              <property role="19SUeA" value="In a table, you specify the number of columns (and a name for floating tables). You then add rows and cells. Currently we support only text cells (denoted by the parens) and text block cells (denoted by the angle bracket, just as in text paragraphs in general). Additional cell types will be supported in the future." />
             </node>
           </node>
         </node>
         <node concept="1_0LV8" id="519ky_Slbaf" role="1_0VJ0">
           <node concept="19SGf9" id="519ky_Slbag" role="1_0LWR">
             <node concept="19SUe$" id="519ky_Slbai" role="19SJt6">
-              <property role="19SUeA" value="For each cell, you set if it is a header using a setting in the inspector.\nFor each row, you can specify whether there should be lines above or \nbelow the line. Currently, there is " />
+              <property role="19SUeA" value="For each cell, you set if it is a header using a setting in the inspector. For each row, you can specify whether there should be lines above or below the line. Currently, there is " />
             </node>
             <node concept="28N2ik" id="3OiIliPS5AQ" role="19SJt6">
               <node concept="19SGf9" id="3OiIliPS5AR" role="$DsGW">
@@ -874,7 +882,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="3OiIliPS5AP" role="19SJt6">
-              <property role="19SUeA" value=" a line between the \ncolumns; this may be changed in the future." />
+              <property role="19SUeA" value=" a line between the columns; this may be changed in the future." />
             </node>
           </node>
         </node>
@@ -906,7 +914,7 @@
               <ref role="1_0GAl" node="7rXn3flJDQM" resolve="importantTerms" />
             </node>
             <node concept="19SUe$" id="7rXn3flJCir" role="19SJt6">
-              <property role="19SUeA" value=".\nIt contains a collection of terms such as " />
+              <property role="19SUeA" value=". It contains a collection of terms such as " />
             </node>
             <node concept="2zg8ej" id="7rXn3flJCis" role="19SJt6">
               <ref role="2zg8eq" node="7rXn3flJGna" resolve="Car" />
@@ -1002,13 +1010,13 @@
       <node concept="1_0LV8" id="7$DvC4gRxXS" role="1_0VJ0">
         <node concept="19SGf9" id="7$DvC4gRxXT" role="1_0LWR">
           <node concept="19SUe$" id="7$DvC4gRxXU" role="19SJt6">
-            <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, the ability to tightly integrate with mebddr code was the reason for building\nthis documentation language, as we have said in " />
+            <property role="19SUeA" value="A more interesting use case is the ability to work with mbeddr code. In fact, the ability to tightly integrate with mbeddr code was the reason for building this documentation language, as we have said in " />
           </node>
           <node concept="1_0GAv" id="7$DvC4gRxY1" role="19SJt6">
             <ref role="1_0GAl" node="1ZiHc0gKJBz" resolve="introduction" />
           </node>
           <node concept="19SUe$" id="7$DvC4gRxY2" role="19SJt6">
-            <property role="19SUeA" value=". In this\nsection we explain how it works." />
+            <property role="19SUeA" value=". In this section we explain how it works." />
           </node>
         </node>
       </node>
@@ -1018,7 +1026,7 @@
         <node concept="1_0LV8" id="7$DvC4gSvN_" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gSvNA" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gSvNB" role="19SJt6">
-              <property role="19SUeA" value="The simplest way of integrating documentation prose is to use references\nto mbeddr code. Why would you do this? Of course to be refactoring-safe: as\nyou rename the referenced element, the text in the documentation changes with it.\nIf you delete the element, the reference breaks, and you know you have to change\nsomething. " />
+              <property role="19SUeA" value="The simplest way of integrating documentation prose is to use references to mbeddr code. Why would you do this? Of course to be refactoring-safe: as you rename the referenced element, the text in the documentation changes with it. If you delete the element, the reference breaks, and you know you have to change something. " />
             </node>
           </node>
         </node>
@@ -1035,7 +1043,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gSHK9" role="19SJt6">
-              <property role="19SUeA" value="\nembedded node. You can also refer to any named child of a top level content by\nselecting that child after the slash in the " />
+              <property role="19SUeA" value=" embedded node. You can also refer to any named child of a top level content by selecting that child after the slash in the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gSHKa" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gSHKb" role="$DsGW">
@@ -1045,17 +1053,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gSHKd" role="19SJt6">
-              <property role="19SUeA" value=" element. For example, you\ncan refer to an argument . If you want to reference things that\ndo not have a name, you can attach a name label to an element (using the \n" />
-            </node>
-            <node concept="1jUjqm" id="7$DvC4gSHKl" role="19SJt6">
-              <node concept="19SGf9" id="7$DvC4gSHKm" role="$DsGW">
-                <node concept="19SUe$" id="7$DvC4gSHKn" role="19SJt6">
-                  <property role="19SUeA" value="Attach Name" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="7$DvC4gSHKo" role="19SJt6">
-              <property role="19SUeA" value=" intention; you need to use the " />
+              <property role="19SUeA" value=" element. For example, you can refer to an argument. If you want to reference things that do not have a name, you can attach a name label to an element (using the intention; you need to use the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gSHKp" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gSHKq" role="$DsGW">
@@ -1065,7 +1063,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gSHKt" role="19SJt6">
-              <property role="19SUeA" value=" language\nin the respective mbeddr model to get the intention. For example, we can refer to\n. " />
+              <property role="19SUeA" value=" language in the respective mbeddr model to get the intention. For example, we can refer to. " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSHKC" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gSHKy" resolve="calculator" />
@@ -1109,7 +1107,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gSHKL" role="19SJt6">
-              <property role="19SUeA" value=" node. For example,\nhere we refer to the  module." />
+              <property role="19SUeA" value=" node. For example, here we refer to the  module." />
             </node>
           </node>
         </node>
@@ -1146,19 +1144,19 @@
         <node concept="1_0LV8" id="7$DvC4gSPbu" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gSPbv" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gSPbw" role="19SJt6">
-              <property role="19SUeA" value="You have already seen in the previous paragraph how to embed mbeddr code as an image\ninto the document. In that example, " />
+              <property role="19SUeA" value="You have already seen in the previous paragraph how to embed mbeddr code as an image into the document. In that example, " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSPbx" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gSHKy" resolve="calculator" />
             </node>
             <node concept="19SUe$" id="7$DvC4gSPby" role="19SJt6">
-              <property role="19SUeA" value=" embedded a complete top level\nconstruct, an interface in this case. But what if you wanted to embed only a smaller\nsection, such as a state in a state machine or a single operation in an interface?\n" />
+              <property role="19SUeA" value=" embedded a complete top level construct, an interface in this case. But what if you wanted to embed only a smaller section, such as a state in a state machine or a single operation in an interface? " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSPbE" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gSPb$" resolve="addOp" />
             </node>
             <node concept="19SUe$" id="7$DvC4gSPbF" role="19SJt6">
-              <property role="19SUeA" value=" shows an example of embedding only an operation. The code to do that is \nshown in " />
+              <property role="19SUeA" value=" shows an example of embedding only an operation. The code to do that is shown in " />
             </node>
             <node concept="2Sbdz4" id="7$DvC4gSPKj" role="19SJt6">
               <ref role="2SbdyP" node="7$DvC4gSPbI" resolve="embedding1" />
@@ -1174,7 +1172,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gTF_f" role="19SJt6">
-              <property role="19SUeA" value=" operation after \nthe slash in the " />
+              <property role="19SUeA" value=" operation after the slash in the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gTF_g" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gTF_h" role="$DsGW">
@@ -1218,7 +1216,7 @@
         <node concept="1_0LV8" id="7$DvC4gTF_r" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gTF_s" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gTF_t" role="19SJt6">
-              <property role="19SUeA" value="You can also embed mbeddr code as text. This is interesting in particular for Latex\nexport, since you can configure the " />
+              <property role="19SUeA" value="You can also embed mbeddr code as text. This is interesting in particular for Latex export, since you can configure the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gTF_u" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gTF_v" role="$DsGW">
@@ -1228,7 +1226,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gTF_x" role="19SJt6">
-              <property role="19SUeA" value=" package to provide syntax \nhighlighting for your code. The following paragraph shows how to embed the interface\nas text; not that this is not a floating entity and cannot be referenced, it is \ninlined with the text. Also note that in the inspector for the " />
+              <property role="19SUeA" value=" package to provide syntax highlighting for your code. The following paragraph shows how to embed the interface as text; not that this is not a floating entity and cannot be referenced, it is inlined with the text. Also note that in the inspector for the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gTF_$" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gTF__" role="$DsGW">
@@ -1238,7 +1236,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gTF_B" role="19SJt6">
-              <property role="19SUeA" value=" \ntag you can specify the language name used for highlighting. By default, it is \n" />
+              <property role="19SUeA" value=" tag you can specify the language name used for highlighting. By default, it is " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gTF_C" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gTF_D" role="$DsGW">
@@ -1308,7 +1306,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gTG_E" role="19SJt6">
-              <property role="19SUeA" value=" interface, so they can\nprovide one or more visualizations. You can see these visualizations by selecting\nthe " />
+              <property role="19SUeA" value=" interface, so they can provide one or more visualizations. You can see these visualizations by selecting the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gTG_F" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gTG_G" role="$DsGW">
@@ -1318,7 +1316,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gTG_I" role="19SJt6">
-              <property role="19SUeA" value=" menu item from the context menu. Alternatively you can also\nembed such visualizations into a generated document; the visualization is rendered\non the fly (like the code screenshots discussed in " />
+              <property role="19SUeA" value=" menu item from the context menu. Alternatively you can also embed such visualizations into a generated document; the visualization is rendered on the fly (like the code screenshots discussed in " />
             </node>
             <node concept="1_0GAv" id="7$DvC4gTG_J" role="19SJt6">
               <ref role="1_0GAl" node="4vQSg$ApPww" resolve="embddingCode" />
@@ -1337,7 +1335,7 @@
               <ref role="2SbdyP" node="7$DvC4gTG_M" resolve="vis" />
             </node>
             <node concept="19SUe$" id="7$DvC4gUdCc" role="19SJt6">
-              <property role="19SUeA" value=". As with other images,\nyou have to specify the size\/scaling, and the location of the temporary files. \nObviously, you have to reference the visualizable element, and you also have to\nselect which of its visualizations you want to render. You can select them via\ncode completion after the slash in the " />
+              <property role="19SUeA" value=". As with other images, you have to specify the size\/scaling, and the location of the temporary files. Obviously, you have to reference the visualizable element, and you also have to select which of its visualizations you want to render. You can select them via code completion after the slash in the " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gUdCd" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gUdCe" role="$DsGW">
@@ -1392,7 +1390,7 @@
         <node concept="1_0LV8" id="7$DvC4gUdCm" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gUdCn" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gUdCo" role="19SJt6">
-              <property role="19SUeA" value="Note that (at least as of now) you have to manually render the images with \n" />
+              <property role="19SUeA" value="Note that (at least as of now) you have to manually render the images with " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gUdCp" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gUdCq" role="$DsGW">
@@ -1402,7 +1400,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gUdCs" role="19SJt6">
-              <property role="19SUeA" value=". The following listing shows how we render the images using\n" />
+              <property role="19SUeA" value=". The following listing shows how we render the images using " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gUI$8" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gUI$9" role="$DsGW">
@@ -1422,7 +1420,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gUI$f" role="19SJt6">
-              <property role="19SUeA" value=" folder. This \nfolder is the one from which the images are read by the generated Latex file." />
+              <property role="19SUeA" value=" folder. This folder is the one from which the images are read by the generated Latex file." />
             </node>
           </node>
         </node>
@@ -1433,7 +1431,7 @@
         <node concept="1_0LV8" id="7$DvC4gUQa3" role="1_0VJ0">
           <node concept="19SGf9" id="7$DvC4gUQa4" role="1_0LWR">
             <node concept="19SUe$" id="7$DvC4gUQa6" role="19SJt6">
-              <property role="19SUeA" value="The above example also shows how to embed a listing as text. You can add a \n" />
+              <property role="19SUeA" value="The above example also shows how to embed a listing as text. You can add a " />
             </node>
             <node concept="1jUjqm" id="7$DvC4gUQa7" role="19SJt6">
               <node concept="19SGf9" id="7$DvC4gUQa8" role="$DsGW">
@@ -1443,7 +1441,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="7$DvC4gUQaa" role="19SJt6">
-              <property role="19SUeA" value=" paragraph and paste the actual textual code into a text area\nin the inspector." />
+              <property role="19SUeA" value=" paragraph and paste the actual textual code into a text area in the inspector." />
             </node>
           </node>
         </node>
@@ -1486,7 +1484,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="6wvhQs7nYLI" role="19SJt6">
-              <property role="19SUeA" value=" language. For example, the regular text paragraphs as well as the sections and images are subconcepts of ." />
+              <property role="19SUeA" value=" language. For example, the regular text paragraphs as well as the sections and images are subconcepts of." />
             </node>
           </node>
         </node>
@@ -1524,7 +1522,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="6wvhQs7nZDg" role="19SJt6">
-              <property role="19SUeA" value=" property. It is the text that is used to instantite the node from the code completion menu." />
+              <property role="19SUeA" value=" property. It is the text that is used to instantiate the node from the code completion menu." />
             </node>
           </node>
         </node>
@@ -1558,7 +1556,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="6wvhQs7nZDt" role="19SJt6">
-              <property role="19SUeA" value=", the fractios of those stars that have planets " />
+              <property role="19SUeA" value=", the fractions of those stars that have planets " />
             </node>
             <node concept="3XpXe8" id="6wvhQs7nZDu" role="19SJt6">
               <property role="TrG5h" value="fp" />
@@ -1638,7 +1636,7 @@
       <node concept="1_0LV8" id="2nGCZEu8PmM" role="1_0VJ0">
         <node concept="19SGf9" id="2nGCZEu8PmN" role="1_0LWR">
           <node concept="19SUe$" id="2nGCZEu8PmO" role="19SJt6">
-            <property role="19SUeA" value="Here are a number of important terms. Each of them is defined separately\nin the document. The definitions can contain explicit relationships to \nother terms. These can be shown as a diagram. An example is in " />
+            <property role="19SUeA" value="Here are a number of important terms. Each of them is defined separately in the document. The definitions can contain explicit relationships to other terms. These can be shown as a diagram. An example is in " />
           </node>
           <node concept="2Sbdz4" id="2nGCZEu8PmP" role="19SJt6">
             <ref role="2SbdyP" node="2nGCZEu8Nx$" resolve="termDeps" />
@@ -1688,7 +1686,7 @@
               <ref role="2zg8eq" node="7rXn3flJGna" resolve="Car" />
             </node>
             <node concept="19SUe$" id="7rXn3flJGUn" role="19SJt6">
-              <property role="19SUeA" value=" has four of. I should write some more text here, because\nI need to check if line breaking works correclty. So this should be enough. Of course\nyou can also refer to other stuff, such as this " />
+              <property role="19SUeA" value=" has four of. I should write some more text here, because I need to check if line breaking works correctly. So this should be enough. Of course you can also refer to other stuff, such as this " />
             </node>
             <node concept="2Sbdz4" id="7rXn3flJM4I" role="19SJt6">
               <ref role="2SbdyP" node="7rXn3flJM4B" resolve="anImage" />
@@ -1760,7 +1758,7 @@
               <ref role="2zg8eq" node="3EwB7OlCM08" resolve="Driver" />
             </node>
             <node concept="19SUe$" id="3EwB7OlCM0c" role="19SJt6">
-              <property role="19SUeA" value=".\nSo, in fact " />
+              <property role="19SUeA" value=". So, in fact " />
             </node>
             <node concept="2alT4F" id="3EwB7OlCYQL" role="19SJt6">
               <node concept="19SGf9" id="3EwB7OlCYQM" role="$DsGW">

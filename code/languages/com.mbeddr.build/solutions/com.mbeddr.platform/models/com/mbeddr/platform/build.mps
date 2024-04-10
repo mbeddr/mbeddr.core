@@ -9356,6 +9356,11 @@
             <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1_UYrF4v0yD" role="3bR37C">
+          <node concept="3bR9La" id="1_UYrF4v0yE" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2bBLuwR9LnB" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -16945,11 +16950,6 @@
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1sNMMH9ly3W" role="3bR37C">
-          <node concept="3bR9La" id="1sNMMH9ly3X" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1sNMMH9ly3Y" role="3bR37C">
           <node concept="3bR9La" id="1sNMMH9ly3Z" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
@@ -16973,6 +16973,11 @@
         <node concept="1SiIV0" id="5aH2MRZAA1H" role="3bR37C">
           <node concept="3bR9La" id="5aH2MRZAA1I" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="44D1kY$KBtz" role="3bR37C">
+          <node concept="3bR9La" id="44D1kY$KBt$" role="1SiIV1">
+            <ref role="3bR37D" node="2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
           </node>
         </node>
       </node>
@@ -17754,6 +17759,16 @@
             <node concept="3qWCbU" id="4PRpvcZJO0X" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="44D1kY$KBvN" role="3bR37C">
+          <node concept="3bR9La" id="44D1kY$KBvO" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4SM2EuqHUPF" resolve="jetbrains.mps.lang.modelapi" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="44D1kY$KBvP" role="3bR37C">
+          <node concept="3bR9La" id="44D1kY$KBvQ" role="1SiIV1">
+            <ref role="3bR37D" node="1YMM4SJ2m0" resolve="com.mbeddr.doc" />
           </node>
         </node>
       </node>

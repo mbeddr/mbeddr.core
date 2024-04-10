@@ -659,6 +659,11 @@
         <property role="3zO_yB" value=".superscript" />
       </node>
     </node>
+    <node concept="3zOSV2" id="44D1kYzG0$8" role="3zO_yG">
+      <node concept="3zO__Y" id="44D1kYzG0B9" role="3zO_yJ">
+        <property role="3zO_yB" value=".subscript" />
+      </node>
+    </node>
   </node>
 </model>
 

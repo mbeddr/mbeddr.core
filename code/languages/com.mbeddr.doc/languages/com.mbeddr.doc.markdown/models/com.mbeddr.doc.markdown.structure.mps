@@ -53,6 +53,8 @@
     <property role="EcuMT" value="2584233667557053284" />
     <property role="TrG5h" value="MarkdownDocument" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="markdown document" />
+    <property role="R4oN_" value="a Markdown document" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ft2HgFlXd_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -73,14 +75,15 @@
     <property role="EcuMT" value="2584233667557135974" />
     <property role="TrG5h" value="Header1" />
     <property role="34LRSv" value="#" />
-    <property role="R4oN_" value="Header 1" />
+    <property role="R4oN_" value="a header (level 1)" />
     <property role="3GE5qa" value="header" />
     <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
   </node>
   <node concept="1TIwiD" id="2ft2HgFmhrT">
     <property role="EcuMT" value="2584233667557136121" />
     <property role="TrG5h" value="Line" />
-    <property role="R4oN_" value="Text line" />
+    <property role="R4oN_" value="a text line" />
+    <property role="34LRSv" value="line" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ft2HgFmhs4" role="PzmwI">
       <ref role="PrY4T" node="2ft2HgFmbft" resolve="IMarkdownContent" />
@@ -109,13 +112,14 @@
     <property role="EcuMT" value="2584233667557170793" />
     <property role="TrG5h" value="TextWord" />
     <property role="3GE5qa" value="word" />
+    <property role="34LRSv" value="text" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
   </node>
   <node concept="1TIwiD" id="2ft2HgFmztq">
     <property role="EcuMT" value="2584233667557209946" />
     <property role="TrG5h" value="Header2" />
     <property role="34LRSv" value="##" />
-    <property role="R4oN_" value="Header 2" />
+    <property role="R4oN_" value="a header (level 2)" />
     <property role="3GE5qa" value="header" />
     <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
   </node>
@@ -124,7 +128,7 @@
     <property role="TrG5h" value="Header3" />
     <property role="34LRSv" value="###" />
     <property role="3GE5qa" value="header" />
-    <property role="R4oN_" value="Header 3" />
+    <property role="R4oN_" value="a header (level 3)" />
     <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
   </node>
   <node concept="1TIwiD" id="2ft2HgFmzGD">
@@ -133,7 +137,7 @@
     <property role="TrG5h" value="Header" />
     <property role="R5$K7" value="true" />
     <property role="34LRSv" value="#" />
-    <property role="R4oN_" value="Header" />
+    <property role="R4oN_" value="a header" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ft2HgFmJBN" role="PzmwI">
       <ref role="PrY4T" node="2ft2HgFmbft" resolve="IMarkdownContent" />
@@ -151,7 +155,7 @@
     <property role="3GE5qa" value="word" />
     <property role="TrG5h" value="BoldWord" />
     <property role="34LRSv" value="**" />
-    <property role="R4oN_" value="**bold text** " />
+    <property role="R4oN_" value="bold text" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
   </node>
   <node concept="1TIwiD" id="2ft2HgFmQhr">
@@ -159,14 +163,14 @@
     <property role="3GE5qa" value="word" />
     <property role="TrG5h" value="ItalicWord" />
     <property role="34LRSv" value="*" />
-    <property role="R4oN_" value="*italicized text*" />
+    <property role="R4oN_" value="italicized text" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
   </node>
   <node concept="1TIwiD" id="I_3mOg_Wxm">
     <property role="EcuMT" value="839091667655444566" />
     <property role="TrG5h" value="BlockQuote" />
     <property role="34LRSv" value="&gt;" />
-    <property role="R4oN_" value="Blockquote" />
+    <property role="R4oN_" value="a blockquote" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="I_3mOg_Wxp" role="1TKVEi">
       <property role="IQ2ns" value="839091667655444569" />
@@ -184,14 +188,14 @@
     <property role="TrG5h" value="Code" />
     <property role="3GE5qa" value="word" />
     <property role="34LRSv" value="`" />
-    <property role="R4oN_" value="Code" />
+    <property role="R4oN_" value="text formatted in code font" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
   </node>
   <node concept="1TIwiD" id="I_3mOgAcf5">
     <property role="EcuMT" value="839091667655508933" />
     <property role="TrG5h" value="HorizontalRule" />
     <property role="34LRSv" value="---" />
-    <property role="R4oN_" value="Horizontal Rule" />
+    <property role="R4oN_" value="a horizontal line" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="I_3mOgAcf6" role="PzmwI">
       <ref role="PrY4T" node="2ft2HgFmbft" resolve="IMarkdownContent" />
@@ -202,7 +206,7 @@
     <property role="3GE5qa" value="word" />
     <property role="TrG5h" value="Link" />
     <property role="34LRSv" value="[" />
-    <property role="R4oN_" value="Link" />
+    <property role="R4oN_" value="a link" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
     <node concept="1TJgyi" id="I_3mOgAjFx" role="1TKVEl">
       <property role="IQ2nx" value="839091667655539425" />
@@ -215,7 +219,7 @@
     <property role="TrG5h" value="List" />
     <property role="3GE5qa" value="list" />
     <property role="34LRSv" value="List" />
-    <property role="R4oN_" value="ordered/unordered lists" />
+    <property role="R4oN_" value="an ordered/unordered list" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="I_3mOgARzj" role="1TKVEl">
       <property role="IQ2nx" value="839091667655686355" />
@@ -237,6 +241,8 @@
     <property role="EcuMT" value="839091667655686357" />
     <property role="3GE5qa" value="list" />
     <property role="TrG5h" value="ListItem" />
+    <property role="34LRSv" value="item" />
+    <property role="R4oN_" value="an entry in a list" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6ec5ny7UUCp" role="1TKVEl">
       <property role="IQ2nx" value="7173131913914984985" />
@@ -256,7 +262,7 @@
     <property role="3GE5qa" value="word" />
     <property role="TrG5h" value="Image" />
     <property role="34LRSv" value="![" />
-    <property role="R4oN_" value="image" />
+    <property role="R4oN_" value="an image" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
     <node concept="1TJgyi" id="GfNMM3dpCN" role="1TKVEl">
       <property role="IQ2nx" value="797083449154705971" />
@@ -272,7 +278,7 @@
     <property role="3GE5qa" value="word" />
     <property role="TrG5h" value="XmlWord" />
     <property role="34LRSv" value="xml word" />
-    <property role="R4oN_" value="A way to include html in the markdown document" />
+    <property role="R4oN_" value="a word to include HTML in the document" />
     <ref role="1TJDcQ" node="2ft2HgFmhs6" resolve="MarkdownWord" />
     <node concept="1TJgyj" id="xxE$BMxVep" role="1TKVEi">
       <property role="IQ2ns" value="603951059622671257" />
@@ -281,6 +287,30 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4zO5iT9sZp8">
+    <property role="EcuMT" value="5256849953593226824" />
+    <property role="TrG5h" value="Header4" />
+    <property role="34LRSv" value="####" />
+    <property role="3GE5qa" value="header" />
+    <property role="R4oN_" value="a header (level 4)" />
+    <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
+  </node>
+  <node concept="1TIwiD" id="4zO5iT9sZu1">
+    <property role="EcuMT" value="5256849953593227137" />
+    <property role="TrG5h" value="Header5" />
+    <property role="34LRSv" value="#####" />
+    <property role="3GE5qa" value="header" />
+    <property role="R4oN_" value="a header (level 5)" />
+    <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
+  </node>
+  <node concept="1TIwiD" id="4zO5iT9sZ$8">
+    <property role="EcuMT" value="5256849953593227528" />
+    <property role="TrG5h" value="Header6" />
+    <property role="34LRSv" value="######" />
+    <property role="3GE5qa" value="header" />
+    <property role="R4oN_" value="a header (level 6)" />
+    <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
   </node>
 </model>
 
