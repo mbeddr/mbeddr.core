@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.spreadsheat" uuid="1d891f7b-dc93-42f9-a4bc-b016656b14e2" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="languageModels" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/commons-codec-1.10.jar" />
       <sourceRoot location="lib/commons-collections4-4.1.jar" />
       <sourceRoot location="lib/curvesapi-1.04.jar" />
@@ -16,13 +16,13 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
       <library location="${module}/lib/commons-collections4-4.1.jar" />
       <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-3.16.jar" />
-      <library location="${module}/lib/poi-ooxml-3.16.jar" />
-      <library location="${module}/lib/poi-ooxml-schemas-3.16.jar" />
-      <library location="${module}/lib/xmlbeans-2.6.0.jar" />
+      <library location="${module}/lib/commons-codec-1.10.jar" />
+      <library location="${module}/lib/poi-5.0.0.jar" />
+      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
+      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
+      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
     </facet>
   </facets>
   <accessoryModels />
@@ -90,8 +90,12 @@
         <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
         <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
+        <module reference="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="446c26eb-2b7b-4bf0-9b35-f83fa582753e(jetbrains.mps.lang.modelapi)" version="0" />
+        <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
+        <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
+        <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
@@ -121,7 +125,6 @@
     <stubModelEntry path="${module}/lib/xmlbeans-4.0.0.jar" />
     <stubModelEntry path="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
   </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>
@@ -193,4 +196,3 @@
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
   </extendedLanguages>
 </language>
-

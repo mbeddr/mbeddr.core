@@ -104,7 +104,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -129,7 +129,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="3717301156197626279" name="jetbrains.mps.lang.core.structure.BasePlaceholder" flags="ng" index="3DQ70j">
@@ -17782,7 +17782,6 @@
         </node>
       </node>
       <node concept="1E1JtD" id="4aKYPQyr67s" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.spreadsheat" />
         <property role="3LESm3" value="1d891f7b-dc93-42f9-a4bc-b016656b14e2" />
         <node concept="3rtmxn" id="3xFG3bj5cXc" role="3bR31x">
@@ -17835,44 +17834,6 @@
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="6qrqamSa6l0" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-codec-1.10.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6qrqamSa6lo" role="3bR37C">
-          <node concept="1BurEX" id="6qrqamSa6lp" role="1SiIV1">
-            <node concept="398BVA" id="6qrqamSa6lb" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6qrqamSa6lc" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6qrqamSa6ld" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheat" />
-                  <node concept="2Ry0Ak" id="6qrqamSa6le" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6qrqamSa6lf" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-collections4-4.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6qrqamSa6lB" role="3bR37C">
-          <node concept="1BurEX" id="6qrqamSa6lC" role="1SiIV1">
-            <node concept="398BVA" id="6qrqamSa6lq" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6qrqamSa6lr" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6qrqamSa6ls" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheat" />
-                  <node concept="2Ry0Ak" id="6qrqamSa6lt" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6qrqamSa6lu" role="2Ry0An">
-                      <property role="2Ry0Am" value="curvesapi-1.04.jar" />
                     </node>
                   </node>
                 </node>
@@ -18014,6 +17975,44 @@
             </node>
             <node concept="3qWCbU" id="4PRpvcZJO2Q" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7nFSfz7_8Iv" role="3bR37C">
+          <node concept="1BurEX" id="7nFSfz7_8Iw" role="1SiIV1">
+            <node concept="398BVA" id="7nFSfz7_8Ii" role="1BurEY">
+              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
+              <node concept="2Ry0Ak" id="7nFSfz7_8Ij" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7nFSfz7_8Ik" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.spreadsheat" />
+                  <node concept="2Ry0Ak" id="7nFSfz7_8Il" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7nFSfz7_8Im" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-collections4-4.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7nFSfz7_8II" role="3bR37C">
+          <node concept="1BurEX" id="7nFSfz7_8IJ" role="1SiIV1">
+            <node concept="398BVA" id="7nFSfz7_8Ix" role="1BurEY">
+              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
+              <node concept="2Ry0Ak" id="7nFSfz7_8Iy" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7nFSfz7_8Iz" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.spreadsheat" />
+                  <node concept="2Ry0Ak" id="7nFSfz7_8I$" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7nFSfz7_8I_" role="2Ry0An">
+                      <property role="2Ry0Am" value="curvesapi-1.04.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
