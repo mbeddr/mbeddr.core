@@ -2,7 +2,7 @@
 <model ref="r:25031baa-17b8-457a-9a77-5e0160aafd16(com.mbeddr.analyses.z3.run)">
   <persistence version="9" />
   <languages>
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -187,6 +187,7 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -236,7 +237,6 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="9042586985346099698" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachStatement" flags="nn" index="1_o_46">
         <child id="9042586985346099734" name="forEach" index="1_o_by" />
@@ -755,7 +755,7 @@
                       <node concept="3clFbF" id="3E9Q9iDMLa3" role="3cqZAp">
                         <node concept="2OqwBi" id="3E9Q9iDMLez" role="3clFbG">
                           <node concept="37vLTw" id="3E9Q9iDMLa2" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3E9Q9iDML4m" resolve="it" />
+                            <ref role="3cqZAo" node="2SR9xrsN2zA" resolve="it" />
                           </node>
                           <node concept="2qgKlT" id="3E9Q9iDMLBa" role="2OqNvi">
                             <ref role="37wK5l" to="ywuz:1LDGRqyQFAf" resolve="getVariable" />
@@ -763,9 +763,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="3E9Q9iDML4m" role="1bW2Oz">
+                    <node concept="gl6BB" id="2SR9xrsN2zA" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="3E9Q9iDML4n" role="1tU5fm" />
+                      <node concept="2jxLKc" id="2SR9xrsN2zB" role="1tU5fm" />
                     </node>
                   </node>
                 </node>

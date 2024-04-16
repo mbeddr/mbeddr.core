@@ -250,6 +250,7 @@
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -302,7 +303,6 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
@@ -1122,7 +1122,7 @@
                               <node concept="3clFbF" id="1Ozf0xzRc1p" role="3cqZAp">
                                 <node concept="2OqwBi" id="1Ozf0xzRcdk" role="3clFbG">
                                   <node concept="37vLTw" id="1Ozf0xzRc1o" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1Ozf0xzRaRy" resolve="it" />
+                                    <ref role="3cqZAo" node="2SR9xrsN2v2" resolve="it" />
                                   </node>
                                   <node concept="liA8E" id="1Ozf0xzRe12" role="2OqNvi">
                                     <ref role="37wK5l" node="6mJYm3j2KIf" resolve="shouldIgnore" />
@@ -1133,9 +1133,9 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="1Ozf0xzRaRy" role="1bW2Oz">
+                            <node concept="gl6BB" id="2SR9xrsN2v2" role="1bW2Oz">
                               <property role="TrG5h" value="it" />
-                              <node concept="2jxLKc" id="1Ozf0xzRaRz" role="1tU5fm" />
+                              <node concept="2jxLKc" id="2SR9xrsN2v3" role="1tU5fm" />
                             </node>
                           </node>
                         </node>

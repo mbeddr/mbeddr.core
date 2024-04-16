@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -58,6 +58,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -307,6 +308,7 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -382,7 +384,6 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
     </language>
   </registry>
   <node concept="2DaZZR" id="6iM0fX1N45m" />
@@ -632,6 +633,7 @@
     <property role="TrG5h" value="CbmcVerifyAnalysisConfigurationAction" />
     <property role="2uzpH1" value="Verify Analysis Configuration" />
     <property role="1WHSii" value="Starts CBMC on this configuration" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="5BkFC2yhAHn" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -815,6 +817,7 @@
     <property role="TrG5h" value="CbmcVerifySingleAnalysisConfigurationAction" />
     <property role="2uzpH1" value="Verify Analysis Configuration" />
     <property role="1WHSii" value="Starts CBMC on this configuration" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="6w9LZ1hC3Vm" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -1014,6 +1017,7 @@
   <node concept="sE7Ow" id="EVDykUC7Si">
     <property role="TrG5h" value="CbmcLoadAnalysisConfigurationResultsAction" />
     <property role="2uzpH1" value="Load Analysis Configuration Results" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="EVDykUCb6r" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -3112,6 +3116,7 @@
     <property role="TrG5h" value="CbmcMarkLoops" />
     <property role="2uzpH1" value="Mark Loops" />
     <property role="1WHSii" value="Marks the loops reachable from this configuration" />
+    <property role="1rBW0U" value="true" />
     <node concept="2S4$dB" id="1$MI$rgGhqj" role="1NuT2Z">
       <property role="TrG5h" value="analysis" />
       <node concept="3Tm6S6" id="1$MI$rgGhqk" role="1B3o_S" />
@@ -3499,6 +3504,7 @@
     <property role="TrG5h" value="CbmcUnmarkLoops" />
     <property role="2uzpH1" value="Unmark Loops" />
     <property role="1WHSii" value="Unmarks all loops" />
+    <property role="1rBW0U" value="true" />
     <node concept="2S4$dB" id="5etR5IKpoRa" role="1NuT2Z">
       <property role="TrG5h" value="analysis" />
       <node concept="3Tm6S6" id="5etR5IKpoRb" role="1B3o_S" />
@@ -3545,14 +3551,14 @@
                     <node concept="2OqwBi" id="vbJ3AuISY7" role="3clFbG">
                       <node concept="3YRAZt" id="2yaJRbIf9jE" role="2OqNvi" />
                       <node concept="37vLTw" id="vbJ3AuISUH" role="2Oq$k0">
-                        <ref role="3cqZAo" node="vbJ3AuISO$" resolve="it" />
+                        <ref role="3cqZAo" node="2SR9xrsN2wa" resolve="it" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="vbJ3AuISO$" role="1bW2Oz">
+                <node concept="gl6BB" id="2SR9xrsN2wa" role="1bW2Oz">
                   <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="vbJ3AuISO_" role="1tU5fm" />
+                  <node concept="2jxLKc" id="2SR9xrsN2wb" role="1tU5fm" />
                 </node>
               </node>
             </node>
