@@ -17,6 +17,7 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -42,6 +43,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -104,7 +108,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -280,7 +284,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -2667,6 +2671,27 @@
           <node concept="1v1jN8" id="5x677oPnrwe" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbH" id="6JWYQQ1QeeT" role="3cqZAp" />
+      <node concept="3clFbF" id="6JWYQQ1Qekv" role="3cqZAp">
+        <node concept="2YIFZM" id="6JWYQQ1Qekx" role="3clFbG">
+          <ref role="37wK5l" to="tpeh:79XQS8VgL7r" resolve="checkDataFlow" />
+          <ref role="1Pybhc" to="tpeh:hNACUz_" resolve="DataFlowUtil" />
+          <node concept="2OqwBi" id="6JWYQQ1Qpkr" role="37wK5m">
+            <node concept="2OqwBi" id="6JWYQQ1Qeky" role="2Oq$k0">
+              <node concept="1YBJjd" id="6JWYQQ1QfWh" role="2Oq$k0">
+                <ref role="1YBMHb" node="5x677oPn6YT" resolve="conceptEvaluatorBody" />
+              </node>
+              <node concept="3TrEf2" id="6JWYQQ1Qp11" role="2OqNvi">
+                <ref role="3Tt5mk" to="3673:59qdqedqPtO" resolve="body" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6JWYQQ1QpIO" role="2OqNvi">
+              <ref role="3Tt5mk" to="tpee:fK9aQHS" resolve="statements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6JWYQQ1Qefs" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="5x677oPn6YT" role="1YuTPh">
       <property role="TrG5h" value="conceptEvaluatorBody" />

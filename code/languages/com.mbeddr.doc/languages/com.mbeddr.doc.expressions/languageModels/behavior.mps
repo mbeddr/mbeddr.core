@@ -46,7 +46,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -64,13 +64,13 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="4E$PniRKKJX">
-    <ref role="13h7C2" to="f87k:4E$PniRKKrW" resolve="VariableDef" />
+    <ref role="13h7C2" to="f87k:4E$PniRKKrW" resolve="VariableDefinition" />
     <node concept="13hLZK" id="4E$PniRKKJY" role="13h7CW">
       <node concept="3clFbS" id="4E$PniRKKJZ" role="2VODD2">
         <node concept="3clFbF" id="4E$PniRKKK0" role="3cqZAp">
@@ -96,7 +96,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4E$PniRKPtY">
-    <ref role="13h7C2" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+    <ref role="13h7C2" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
     <node concept="13i0hz" id="4E$PniRKPu1" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
       <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />

@@ -5,6 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# April 2024
+
+## com.mbeddr.doc.aspect
+
+## Fixed
+
+- A null pointer was fixed that was related to showing the documentation when the documentation tab is not opened.
+
+## com.mbeddr.mpsutil
+
+- An initialization issue related to the context actions tool was fixed.
+
+# March 2024
+
+## com.mbeddr.mpsutil
+
+### Added
+
+- Interpreters now support data flow analysis.
+- Action profiles now support priorities if multiple profiles are activated by default.
+
+### Fixed
+
+- Some small issues with the action profiles were fixed as well.
+
+## com.mbeddr.doc
+
+### Added
+
+- When embedding a documentation section or model content as image, the inspector can now be rendered instead of the editor.
+
+### Fixed
+
+- Many usability were fixed and the editors (including presentation mode) polished.
+- Higher level of nesting in sections is now support by all generators.
+- PlantUML was updated to PlantUML to v1.2023.13 EPL version (regression bug).
+
 # January 2024
 
 ## com.mbeddr.mpsutils
@@ -14,6 +51,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
 - Referenced actions in action profiles now emit a warning when they can't be found.
 
+## com.mbeddr.doc
+
+### Changed
+
+- The Java library xmlbeans of the spreadsheet language was upgraded from version 2.6.0 to 4.0.0
+- The Java library Apache Poi of the spreadsheet language was upgraded from 2.6.0 to 5.0.0
 ### Removed
 
 - The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the

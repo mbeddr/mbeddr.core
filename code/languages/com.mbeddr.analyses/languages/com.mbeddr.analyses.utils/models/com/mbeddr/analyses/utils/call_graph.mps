@@ -3,10 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -110,7 +110,7 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -126,7 +126,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
@@ -145,17 +145,26 @@
         <reference id="3175313036448544057" name="extensionPoint" index="Sf$Xr" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -196,7 +205,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -264,8 +273,12 @@
       <node concept="3Tm6S6" id="6mJYm3jiI_5" role="1B3o_S" />
       <node concept="10P_77" id="6mJYm3jiKpK" role="1tU5fm" />
       <node concept="3clFbT" id="6mJYm3jiNcN" role="33vP2m" />
-      <node concept="NWlO9" id="6mJYm3jiPKS" role="lGtFl">
-        <property role="NWlVz" value="Should we log debug info?" />
+      <node concept="z59LJ" id="70cGcTIKd9n" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9l" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9m" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we log debug info?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3jiPGq" role="jymVt" />
@@ -395,8 +408,12 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTvt" resolve="FunctionSignature" />
         </node>
       </node>
-      <node concept="NWlO9" id="Z9MVf4Dkaq" role="lGtFl">
-        <property role="NWlVz" value="All functions that are reachable from this entry point (fun. pointers and longjumps are not considered)." />
+      <node concept="P$JXv" id="70cGcTIKd9q" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9o" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9p" role="1dT_Ay">
+            <property role="1dT_AB" value="All functions that are reachable from this entry point (fun. pointers and longjumps are not considered)." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2cY39x22aKb" role="jymVt" />
@@ -535,8 +552,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="Z9MVf4Dl6z" role="lGtFl">
-        <property role="NWlVz" value="Does the job :-)" />
+      <node concept="P$JXv" id="70cGcTIKd9t" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9r" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9s" role="1dT_Ay">
+            <property role="1dT_AB" value="Does the job :-)" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lrp79e91xv" role="jymVt" />
@@ -1029,13 +1050,21 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="6lrp79e9olD" role="lGtFl">
-        <property role="NWlVz" value="Collects the functions which are directly (non-recursively) accessed from the given current function." />
+      <node concept="P$JXv" id="70cGcTIKd9w" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9u" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9v" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects the functions which are directly (non-recursively) accessed from the given current function." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="2cY39x2216q" role="1B3o_S" />
-    <node concept="NWlO9" id="Z9MVf4DkCo" role="lGtFl">
-      <property role="NWlVz" value="Utility for building the call-graph." />
+    <node concept="3UR2Jj" id="70cGcTIKd9z" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd9x" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd9y" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility for building the call-graph." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6lrp79e8eIs">
@@ -1341,12 +1370,20 @@
         <property role="TrG5h" value="startingPoint" />
         <node concept="3Tqbb2" id="6lrp79e8eJG" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6lrp79e8v47" role="lGtFl">
-        <property role="NWlVz" value="Collects all accessible code" />
+      <node concept="P$JXv" id="70cGcTIKd9A" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9_" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects all accessible code" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="6lrp79e8eKk" role="lGtFl">
-      <property role="NWlVz" value="A generalization of call graphs for domain specific constructs." />
+    <node concept="3UR2Jj" id="70cGcTIKd9D" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd9B" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd9C" role="1dT_Ay">
+          <property role="1dT_AB" value="A generalization of call graphs for domain specific constructs." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3HP615" id="6lrp79e8eKO">
@@ -1368,8 +1405,12 @@
           <node concept="3Tqbb2" id="6lrp79e8jVs" role="2hN53Y" />
         </node>
       </node>
-      <node concept="NWlO9" id="6lrp79e8eOz" role="lGtFl">
-        <property role="NWlVz" value="Collects the code which is accessible." />
+      <node concept="P$JXv" id="70cGcTIKd9G" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9E" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9F" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects the code which is accessible." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lrp79e8lhz" role="jymVt" />
@@ -1389,14 +1430,22 @@
           <node concept="3Tqbb2" id="6lrp79e8li6" role="2hN53Y" />
         </node>
       </node>
-      <node concept="NWlO9" id="6lrp79e8li7" role="lGtFl">
-        <property role="NWlVz" value="Collects the new entry points." />
+      <node concept="P$JXv" id="70cGcTIKd9J" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9H" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9I" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects the new entry points." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lrp79e8lhK" role="jymVt" />
     <node concept="3Tm1VV" id="6lrp79e8eKP" role="1B3o_S" />
-    <node concept="NWlO9" id="6lrp79e8eNy" role="lGtFl">
-      <property role="NWlVz" value="Interface to collect the code accessible from a certain node (a generalization of call-graphs)" />
+    <node concept="3UR2Jj" id="70cGcTIKd9M" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd9K" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd9L" role="1dT_Ay">
+          <property role="1dT_AB" value="Interface to collect the code accessible from a certain node (a generalization of call-graphs)" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6lrp79e8BNp">

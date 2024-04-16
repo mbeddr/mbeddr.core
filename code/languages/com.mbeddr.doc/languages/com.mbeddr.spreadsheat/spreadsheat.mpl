@@ -8,10 +8,9 @@
       <sourceRoot location="lib/commons-codec-1.10.jar" />
       <sourceRoot location="lib/commons-collections4-4.1.jar" />
       <sourceRoot location="lib/curvesapi-1.04.jar" />
-      <sourceRoot location="lib/poi-3.16.jar" />
-      <sourceRoot location="lib/poi-ooxml-3.16.jar" />
-      <sourceRoot location="lib/poi-ooxml-schemas-3.16.jar" />
-      <sourceRoot location="lib/xmlbeans-2.6.0.jar" />
+      <sourceRoot location="lib/poi-5.0.0.jar" />
+      <sourceRoot location="lib/poi-ooxml-5.0.0.jar" />
+      <sourceRoot location="lib/poi-ooxml-lite-5.0.0.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -113,6 +112,16 @@
       </mapping-priorities>
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/lib/commons-codec-1.10.jar" />
+    <stubModelEntry path="${module}/lib/commons-collections4-4.1.jar" />
+    <stubModelEntry path="${module}/lib/curvesapi-1.04.jar" />
+    <stubModelEntry path="${module}/lib/poi-5.0.0.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-5.0.0.jar" />
+    <stubModelEntry path="${module}/lib/xmlbeans-4.0.0.jar" />
+    <stubModelEntry path="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
+  </stubModelEntries>
+  <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>

@@ -3,8 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -99,7 +100,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -115,7 +116,7 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1214918975462" name="jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression" flags="nn" index="3uO5VW" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
@@ -127,10 +128,18 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -181,7 +190,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -446,8 +455,12 @@
           <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
         </node>
       </node>
-      <node concept="NWlO9" id="2hSqXWT5o5D" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this nondeterministic assignment is to a variable for a range with constant bounds." />
+      <node concept="P$JXv" id="70cGcTIK7Qw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Qu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Qv" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this nondeterministic assignment is to a variable for a range with constant bounds." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2hSqXWT8A$L" role="jymVt" />
@@ -679,13 +692,21 @@
           <ref role="ehGHo" to="q5q6:7MOa6vKIydd" resolve="NondetVarAssignment" />
         </node>
       </node>
-      <node concept="NWlO9" id="2hSqXWT8ACp" role="lGtFl">
-        <property role="NWlVz" value="Returns the number of bits for this nondeterministic assignment  interval." />
+      <node concept="P$JXv" id="70cGcTIK7Qz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Qx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Qy" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the number of bits for this nondeterministic assignment  interval." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="2hSqXWT5951" role="1B3o_S" />
-    <node concept="NWlO9" id="2hSqXWT5dK2" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for the nondeterministic gneration of interval variables." />
+    <node concept="3UR2Jj" id="70cGcTIK7QA" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Q$" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Q_" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for the nondeterministic gneration of interval variables." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3eQfn9zMf82">
@@ -783,8 +804,12 @@
       </node>
       <node concept="17QB3L" id="3eQfn9zMg7l" role="3clF45" />
       <node concept="3Tm1VV" id="3eQfn9zMg71" role="1B3o_S" />
-      <node concept="NWlO9" id="3eQfn9zMknl" role="lGtFl">
-        <property role="NWlVz" value="Computes the name of the temporary variable." />
+      <node concept="P$JXv" id="70cGcTIK7QD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7QB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7QC" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the name of the temporary variable." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3eQfn9zMg68" role="jymVt" />
@@ -828,13 +853,21 @@
         <property role="TrG5h" value="tpe" />
         <node concept="3Tqbb2" id="615cGN$7zWN" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="615cGN$7$Ru" role="lGtFl">
-        <property role="NWlVz" value="If the type is an decorated type, then it returns the real value type." />
+      <node concept="P$JXv" id="70cGcTIK7QG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7QE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7QF" role="1dT_Ay">
+            <property role="1dT_AB" value="If the type is an decorated type, then it returns the real value type." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3eQfn9zMf83" role="1B3o_S" />
-    <node concept="NWlO9" id="3eQfn9zMg5X" role="lGtFl">
-      <property role="NWlVz" value="Basic utility methods for the generation of nondet variables." />
+    <node concept="3UR2Jj" id="70cGcTIK7QJ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7QH" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7QI" role="1dT_Ay">
+          <property role="1dT_AB" value="Basic utility methods for the generation of nondet variables." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

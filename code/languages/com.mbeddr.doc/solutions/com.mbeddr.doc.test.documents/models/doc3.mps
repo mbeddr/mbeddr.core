@@ -24,7 +24,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
       <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
@@ -53,7 +53,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -63,6 +63,7 @@
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
       </concept>
+      <concept id="2144395370920413996" name="com.mbeddr.doc.structure.SubScriptWord" flags="ng" index="1CtAsm" />
       <concept id="3653241738344441360" name="com.mbeddr.doc.structure.SuperScriptWord" flags="ng" index="1I54Ch" />
     </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
@@ -74,7 +75,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -87,6 +88,7 @@
       <node concept="9PVaO" id="2khznRHyx6f" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="main" />
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX9h" role="A10yx">
@@ -115,8 +117,8 @@
     <property role="TrG5h" value="SupScriptTest" />
     <ref role="G9hjw" node="2khznRHyx6c" resolve="Config" />
     <node concept="1_0VNX" id="3aMV05sEe$b" role="1_0VJ0">
-      <property role="TrG5h" value="TestSupScript" />
-      <property role="1_0VJr" value="TestingSupScript" />
+      <property role="TrG5h" value="TestSuperScript" />
+      <property role="1_0VJr" value="TestingSuperScript" />
       <node concept="1_0LV8" id="3aMV05sEe$f" role="1_0VJ0">
         <node concept="19SGf9" id="3aMV05sEe$g" role="1_0LWR">
           <node concept="19SUe$" id="3aMV05sEe$h" role="19SJt6">
@@ -170,6 +172,45 @@
           <node concept="19SUe$" id="3aMV05sEe_0" role="19SJt6">
             <property role="19SUeA" value="= do the math..." />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_0VNX" id="1R2r3DPJ75T" role="1_0VJ0">
+      <property role="TrG5h" value="TestSubScript" />
+      <property role="1_0VJr" value="TestingSubScript" />
+      <node concept="1_0LV8" id="1R2r3DPJ75U" role="1_0VJ0">
+        <node concept="19SGf9" id="1R2r3DPJ75V" role="1_0LWR">
+          <node concept="19SUe$" id="1R2r3DPJ75W" role="19SJt6">
+            <property role="19SUeA" value="I am just testing subscript works:&#10;&#10;- 2 " />
+          </node>
+          <node concept="1CtAsm" id="1R2r3DPJ771" role="19SJt6">
+            <node concept="19SGf9" id="1R2r3DPJ777" role="$DsGW">
+              <node concept="19SUe$" id="1R2r3DPJ778" role="19SJt6">
+                <property role="19SUeA" value="2+33" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1R2r3DPJ760" role="19SJt6">
+            <property role="19SUeA" value="&#10;- See subscript note " />
+          </node>
+          <node concept="1CtAsm" id="1R2r3DPJ77u" role="19SJt6">
+            <node concept="19SGf9" id="1R2r3DPJ77$" role="$DsGW">
+              <node concept="19SUe$" id="1R2r3DPJ77_" role="19SJt6">
+                <property role="19SUeA" value="are you reading this note?" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1R2r3DPJ764" role="19SJt6">
+            <property role="19SUeA" value="&#10;- " />
+          </node>
+          <node concept="1I54Ch" id="1R2r3DPJ765" role="19SJt6">
+            <node concept="19SGf9" id="1R2r3DPJ766" role="$DsGW">
+              <node concept="19SUe$" id="1R2r3DPJ767" role="19SJt6">
+                <property role="19SUeA" value="Just a subscript" />
+              </node>
+            </node>
+          </node>
+          <node concept="19SUe$" id="1R2r3DPJ768" role="19SJt6" />
         </node>
       </node>
     </node>

@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -100,7 +100,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -116,17 +116,12 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -135,6 +130,19 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1217889960776" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_UserObjectAccessBase" flags="nn" index="2fTw9j">
@@ -157,7 +165,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -330,8 +338,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="7DLjGBGRiyW" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="68pU13UUIzu" role="lGtFl">
-        <property role="NWlVz" value="Register an object in the current generation session." />
+      <node concept="P$JXv" id="70cGcTIKd9P" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9N" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9O" role="1dT_Ay">
+            <property role="1dT_AB" value="Register an object in the current generation session." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5dSPU6qg96V" role="jymVt" />
@@ -405,8 +417,12 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="qjOluQl_0e" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="qjOluQl_0f" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the original node from which n originates has NOT been yet considered in the generation." />
+      <node concept="P$JXv" id="70cGcTIKd9S" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9Q" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9R" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the original node from which n originates has NOT been yet considered in the generation." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="qjOluQl$KS" role="jymVt" />
@@ -462,8 +478,12 @@
         <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
         <node concept="3Tqbb2" id="5dSPU6qgu7x" role="11_B2D" />
       </node>
-      <node concept="NWlO9" id="68pU13UUF_G" role="lGtFl">
-        <property role="NWlVz" value="Returns the list of root nodes from the latest generated model from transient models list before the textgen." />
+      <node concept="P$JXv" id="70cGcTIKd9V" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9T" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9U" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the list of root nodes from the latest generated model from transient models list before the textgen." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3NWJ$jvW_g" role="jymVt" />
@@ -626,12 +646,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="68pU13UUHf7" role="lGtFl">
-        <property role="NWlVz" value="Returns the first project that is opened and that contains the module." />
+      <node concept="P$JXv" id="70cGcTIKd9Y" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd9W" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd9X" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first project that is opened and that contains the module." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="68pU13UUI0v" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for the generator." />
+    <node concept="3UR2Jj" id="70cGcTIKda1" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd9Z" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKda0" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for the generator." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

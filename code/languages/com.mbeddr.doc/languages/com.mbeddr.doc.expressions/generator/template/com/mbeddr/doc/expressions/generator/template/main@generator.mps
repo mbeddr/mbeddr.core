@@ -61,7 +61,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -83,7 +83,7 @@
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
       <concept id="6165313375055755361" name="com.mbeddr.doc.structure.MathFormattedText" flags="ng" index="$DyYS" />
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
       <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
@@ -96,7 +96,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa" />
@@ -147,7 +147,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -155,7 +155,7 @@
   <node concept="bUwia" id="4E$PniRKNvK">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="7XYIXmJmEdz" role="3acgRq">
-      <ref role="30HIoZ" to="f87k:4E$PniRKKrW" resolve="VariableDef" />
+      <ref role="30HIoZ" to="f87k:4E$PniRKKrW" resolve="VariableDefinition" />
       <node concept="1Koe21" id="7XYIXmJmWwP" role="1lVwrX">
         <node concept="1_1swa" id="7XYIXmJmWwR" role="1Koe22">
           <property role="TrG5h" value="dummy" />
@@ -230,7 +230,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="7XYIXmJmWwU" role="3acgRq">
-      <ref role="30HIoZ" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+      <ref role="30HIoZ" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
       <node concept="1Koe21" id="7XYIXmJmWwV" role="1lVwrX">
         <node concept="1_1swa" id="7XYIXmJmWwW" role="1Koe22">
           <property role="TrG5h" value="dummy" />
@@ -427,6 +427,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX8X" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="2B9KjOuvX8W" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />

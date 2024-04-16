@@ -79,7 +79,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -102,7 +102,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
@@ -123,7 +123,7 @@
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
         <child id="6386504476136472817" name="paths" index="2SbYGa" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa" />
@@ -247,7 +247,7 @@
         <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -490,7 +490,7 @@
               <node concept="37vLTI" id="271UTRL9frA" role="3clFbG">
                 <node concept="2pJPEk" id="271UTRL9gcP" role="37vLTx">
                   <node concept="2pJPED" id="271UTRL9gim" role="2pJPEn">
-                    <ref role="2pJxaS" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
+                    <ref role="2pJxaS" to="2c95:2cjkfC8rZLR" resolve="PlaceInFolder" />
                     <node concept="2pJxcG" id="271UTRL9gou" role="2pJxcM">
                       <ref role="2pJxcJ" to="2c95:2cjkfC8rZLY" resolve="location" />
                       <node concept="WxPPo" id="27yO7ubx4W1" role="28ntcv">
@@ -512,7 +512,7 @@
                   </node>
                   <node concept="3CFZ6_" id="271UTRL9dWS" role="2OqNvi">
                     <node concept="3CFYIy" id="271UTRL9e0K" role="3CFYIz">
-                      <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
+                      <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInFolder" />
                     </node>
                   </node>
                 </node>
@@ -594,6 +594,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX91" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="2B9KjOuvX90" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />

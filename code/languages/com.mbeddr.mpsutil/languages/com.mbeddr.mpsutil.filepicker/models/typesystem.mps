@@ -11,6 +11,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -50,7 +51,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -109,7 +110,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -126,6 +127,21 @@
     <property role="TrG5h" value="check_AbstractPicker" />
     <property role="3GE5qa" value="pathAndFile" />
     <node concept="3clFbS" id="5lKnBeAusjK" role="18ibNy">
+      <node concept="3clFbJ" id="44D1kY$e9mh" role="3cqZAp">
+        <node concept="3clFbS" id="44D1kY$e9mj" role="3clFbx">
+          <node concept="3cpWs6" id="44D1kY$eaC8" role="3cqZAp" />
+        </node>
+        <node concept="2YIFZM" id="44D1kY$e9Gd" role="3clFbw">
+          <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
+          <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+          <node concept="2OqwBi" id="44D1kY$e9Vn" role="37wK5m">
+            <node concept="1YBJjd" id="44D1kY$e9He" role="2Oq$k0">
+              <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
+            </node>
+            <node concept="I4A8Y" id="44D1kY$easE" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="x1qBkotxB" role="3cqZAp">
         <node concept="3clFbS" id="x1qBkotxE" role="3clFbx">
           <node concept="3cpWs6" id="x1qBkowf1" role="3cqZAp" />

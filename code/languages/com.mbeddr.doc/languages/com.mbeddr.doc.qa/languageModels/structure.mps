@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -28,7 +29,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -37,6 +38,7 @@
     <property role="TrG5h" value="ConceptsDocumentationAssessment" />
     <property role="34LRSv" value="concepts not documented" />
     <property role="EcuMT" value="97836352114791058" />
+    <property role="R4oN_" value="concepts from language not documented within scope" />
     <ref role="1TJDcQ" to="79wq:5r_qjlOhAI" resolve="AbstractStructureCoverageAssessment" />
   </node>
   <node concept="1TIwiD" id="5r_qjlVEy3">
@@ -54,6 +56,7 @@
     <property role="TrG5h" value="RulesDocumentationAssessment" />
     <property role="34LRSv" value="rules not documented" />
     <property role="EcuMT" value="97836352114979448" />
+    <property role="R4oN_" value="rules from language not documented within scope" />
     <ref role="1TJDcQ" to="79wq:5r_qjlOhAI" resolve="AbstractStructureCoverageAssessment" />
   </node>
 </model>

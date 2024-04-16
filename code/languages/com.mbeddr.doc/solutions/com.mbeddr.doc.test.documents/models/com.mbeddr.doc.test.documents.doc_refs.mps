@@ -21,14 +21,14 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="3861573051973810887" name="com.mbeddr.doc.structure.ITextOverride" flags="ngI" index="0yqFW">
+      <concept id="3861573051973810887" name="com.mbeddr.doc.structure.ITextOverride" flags="ng" index="0yqFW">
         <property id="3861573051973810888" name="textOverride" index="0yqFN" />
       </concept>
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <property id="324047639344492301" name="referenceOnly" index="1P4p2h" />
         <child id="6165313375056012515" name="ref" index="$CzcU" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
@@ -62,7 +62,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
@@ -78,7 +78,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -91,6 +91,7 @@
       <node concept="9PVaO" id="2khznRHyx6f" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="main" />
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX9f" role="A10yx">
@@ -106,13 +107,17 @@
     <property role="TrG5h" value="Export" />
     <property role="WqcPg" value="My strange export config" />
     <node concept="2SbEIf" id="4eRbT2iEycg" role="30Gjbg">
-      <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
+      <property role="2SbEId" value="main" />
       <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
       <ref role="1_0j5g" node="2khznRHyx5W" resolve="MainDoc" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
+    <node concept="2SbEIf" id="44D1kY$rvCJ" role="30Gjbg">
+      <property role="2SbEId" value="imgs" />
+      <ref role="2SbEIe" node="2B9KjOuvX9f" resolve="imgs" />
+    </node>
   </node>
   <node concept="1_1swa" id="2khznRHyx5W">
     <property role="yApLE" value="1" />

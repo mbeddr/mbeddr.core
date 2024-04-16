@@ -6,7 +6,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
@@ -83,7 +83,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -256,7 +256,7 @@
         <child id="1154542793668" name="componentType" index="3g7fb8" />
         <child id="1154542803372" name="initValue" index="3g7hyw" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -292,7 +292,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -335,13 +335,21 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
       </concept>
+      <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -352,6 +360,7 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
@@ -441,7 +450,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -514,16 +523,10 @@
   </registry>
   <node concept="312cEu" id="37sMrNxDVH9">
     <property role="TrG5h" value="CProverConfigCheckingUtils" />
-    <node concept="NWlO9" id="7OKLwZ_7Yvz" role="lGtFl">
-      <property role="NWlVz" value="Utility class for checking that the absic assumptions are met before analyses are run." />
-    </node>
     <node concept="3Tm1VV" id="37sMrNxDVHa" role="1B3o_S" />
     <node concept="2tJIrI" id="2UdJgvERUA9" role="jymVt" />
     <node concept="2YIFZL" id="6dhI$530gEU" role="jymVt">
       <property role="TrG5h" value="performConfigurationChecks" />
-      <node concept="NWlO9" id="7OKLwZ_7Yk6" role="lGtFl">
-        <property role="NWlVz" value="Performs checks before running an analysis." />
-      </node>
       <node concept="10P_77" id="6dhI$530gF0" role="3clF45" />
       <node concept="3Tm1VV" id="6dhI$530gEW" role="1B3o_S" />
       <node concept="3clFbS" id="6dhI$530gEX" role="3clF47">
@@ -789,15 +792,19 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="6dhI$530gF2" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKjQ6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQ4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQ5" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs checks before running an analysis." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3fAfgHYmv3h" role="jymVt" />
     <node concept="2YIFZL" id="3fAfgHYmwxo" role="jymVt">
       <property role="TrG5h" value="checkBuildConfigContainsImplementationModule" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7OKLwZ_7Y6L" role="lGtFl">
-        <property role="NWlVz" value="If the implementation module is not contained in the BC =&gt; no code is generated; return true in case of error." />
-      </node>
       <node concept="3clFbS" id="3fAfgHYmwxr" role="3clF47">
         <node concept="3cpWs8" id="3fAfgHYn5$N" role="3cqZAp">
           <node concept="3cpWsn" id="3fAfgHYn5$O" role="3cpWs9">
@@ -864,15 +871,19 @@
         <property role="TrG5h" value="aNodeFromTheImplModule" />
         <node concept="3Tqbb2" id="3fAfgHYmwF9" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKjQ9" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQ7" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQ8" role="1dT_Ay">
+            <property role="1dT_AB" value="If the implementation module is not contained in the BC =&gt; no code is generated; return true in case of error." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="nSzxU4NSqV" role="jymVt" />
     <node concept="2YIFZL" id="nSzxU4NS97" role="jymVt">
       <property role="TrG5h" value="checkBuildConfigDisablesNamesMangling" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="nSzxU4NS98" role="lGtFl">
-        <property role="NWlVz" value="Check that names mangling is not enabled." />
-      </node>
       <node concept="3clFbS" id="nSzxU4NS99" role="3clF47">
         <node concept="3cpWs8" id="nSzxU4NS9j" role="3cqZAp">
           <node concept="3cpWsn" id="nSzxU4NS9k" role="3cpWs9">
@@ -952,8 +963,22 @@
         <property role="TrG5h" value="aNodeFromTheModelWithBuildConfig" />
         <node concept="3Tqbb2" id="nSzxU4NS9y" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKjQc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQa" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQb" role="1dT_Ay">
+            <property role="1dT_AB" value="Check that names mangling is not enabled." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvERUp0" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIKjQ3" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjQ1" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjQ2" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility class for checking that the absic assumptions are met before analyses are run." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="tGR6edUFtE">
     <property role="TrG5h" value="CBMCAnalysisConfig" />
@@ -966,8 +991,12 @@
       <node concept="3cmrfG" id="2NB$h7SAlYa" role="33vP2m">
         <property role="3cmrfH" value="8" />
       </node>
-      <node concept="NWlO9" id="2NB$h7SAtAv" role="lGtFl">
-        <property role="NWlVz" value="Default value of CBMC for --object-bits." />
+      <node concept="z59LJ" id="70cGcTIKjQf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQe" role="1dT_Ay">
+            <property role="1dT_AB" value="Default value of CBMC for --object-bits." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="tGR6edUFtF" role="1B3o_S" />
@@ -980,8 +1009,12 @@
       <node concept="3cmrfG" id="5zmbZKqW0FE" role="33vP2m">
         <property role="3cmrfH" value="-1" />
       </node>
-      <node concept="NWlO9" id="5zmbZKqW0FF" role="lGtFl">
-        <property role="NWlVz" value="Constant representing analysis depth that should be ignored." />
+      <node concept="z59LJ" id="70cGcTIKjQi" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQh" role="1dT_Ay">
+            <property role="1dT_AB" value="Constant representing analysis depth that should be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5zmbZKr51QI" role="jymVt" />
@@ -997,22 +1030,30 @@
       <node concept="3uibUv" id="6DRvbEFS_1c" role="2RkE6I">
         <ref role="3uigEE" node="6DRvbEFRpuY" resolve="CBMCAnalysisConfig.WORD_WIDTH" />
       </node>
-      <node concept="NWlO9" id="6DRvbEFTvfh" role="lGtFl">
-        <property role="NWlVz" value="Architecture options." />
+      <node concept="2aEySx" id="70cGcTIKjQj" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjQk" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjQl" role="19SJt6">
+            <property role="19SUeA" value="Architecture options." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6DRvbEFSy3f" role="jymVt" />
     <node concept="2RhdJD" id="7QgqANUCWz4" role="jymVt">
       <property role="2RkwnN" value="checkPointer" />
-      <node concept="NWlO9" id="6DRvbEFTvhA" role="lGtFl">
-        <property role="NWlVz" value="Properties generation options." />
-      </node>
       <node concept="3Tm1VV" id="7QgqANUCWz5" role="1B3o_S" />
       <node concept="10P_77" id="7QgqANUCWz6" role="2RkE6I" />
       <node concept="2RoN1w" id="7QgqANUCWz7" role="2RnVtd">
         <node concept="3wEZqW" id="7QgqANUCWz8" role="3wFrgM" />
         <node concept="3xqBd$" id="7QgqANUCWz9" role="3xrYvX">
           <node concept="3Tm1VV" id="7QgqANUCWza" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="2aEySx" id="70cGcTIKjQm" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjQn" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjQo" role="19SJt6">
+            <property role="19SUeA" value="Properties generation options." />
+          </node>
         </node>
       </node>
     </node>
@@ -1185,8 +1226,12 @@
           <node concept="3Tm1VV" id="tGR6edUFuv" role="3xqFEP" />
         </node>
       </node>
-      <node concept="NWlO9" id="6DRvbEFTvjX" role="lGtFl">
-        <property role="NWlVz" value="Unwinding options." />
+      <node concept="2aEySx" id="70cGcTIKjQp" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjQq" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjQr" role="19SJt6">
+            <property role="19SUeA" value="Unwinding options." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2RhdJD" id="6bKzo6o8nOS" role="jymVt">
@@ -1269,8 +1314,12 @@
         </node>
       </node>
       <node concept="17QB3L" id="6b3VADyBuWu" role="2RkE6I" />
-      <node concept="NWlO9" id="6b3VADyBuZ_" role="lGtFl">
-        <property role="NWlVz" value="Incremental loops." />
+      <node concept="2aEySx" id="70cGcTIKjQs" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjQt" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjQu" role="19SJt6">
+            <property role="19SUeA" value="Incremental loops." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2RhdJD" id="6b3VADyBvbA" role="jymVt">
@@ -1309,15 +1358,19 @@
     <node concept="2tJIrI" id="6b3VADyBsQk" role="jymVt" />
     <node concept="2RhdJD" id="4arT0cnCXnh" role="jymVt">
       <property role="2RkwnN" value="timeoutForPartialAnalysisInSeconds" />
-      <node concept="NWlO9" id="6DRvbEFTvmC" role="lGtFl">
-        <property role="NWlVz" value="Timeout options." />
-      </node>
       <node concept="3Tm1VV" id="4arT0cnCXni" role="1B3o_S" />
       <node concept="10Oyi0" id="4arT0cnCXnj" role="2RkE6I" />
       <node concept="2RoN1w" id="4arT0cnCXnk" role="2RnVtd">
         <node concept="3wEZqW" id="4arT0cnCXnl" role="3wFrgM" />
         <node concept="3xqBd$" id="4arT0cnCXnm" role="3xrYvX">
           <node concept="3Tm1VV" id="4arT0cnCXnn" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="2aEySx" id="70cGcTIKjQv" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjQw" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjQx" role="19SJt6">
+            <property role="19SUeA" value="Timeout options." />
+          </node>
         </node>
       </node>
     </node>
@@ -1335,9 +1388,6 @@
     <node concept="2tJIrI" id="6DRvbEFSxd5" role="jymVt" />
     <node concept="2RhdJD" id="6Fr9cYRS_VS" role="jymVt">
       <property role="2RkwnN" value="sliceFormula" />
-      <node concept="NWlO9" id="6DRvbEFTy7y" role="lGtFl">
-        <property role="NWlVz" value="Optimization options." />
-      </node>
       <node concept="3Tm1VV" id="6Fr9cYRS_VT" role="1B3o_S" />
       <node concept="2RoN1w" id="6Fr9cYRS_VU" role="2RnVtd">
         <node concept="3wEZqW" id="6Fr9cYRS_VV" role="3wFrgM" />
@@ -1346,6 +1396,13 @@
         </node>
       </node>
       <node concept="10P_77" id="6Fr9cYRSV4Q" role="2RkE6I" />
+      <node concept="2aEySx" id="70cGcTIKjQy" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjQz" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjQ$" role="19SJt6">
+            <property role="19SUeA" value="Optimization options." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2RhdJD" id="1HjqmQlLTe9" role="jymVt">
       <property role="2RkwnN" value="dropUnusedFunctions" />
@@ -3375,8 +3432,12 @@
       <node concept="Xl_RD" id="6Pij_UBJNAR" role="33vP2m">
         <property role="Xl_RC" value="none" />
       </node>
-      <node concept="NWlO9" id="41thbhvr1ul" role="lGtFl">
-        <property role="NWlVz" value="String constant when no-timeout." />
+      <node concept="z59LJ" id="70cGcTIKjQB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQ_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQA" role="1dT_Ay">
+            <property role="1dT_AB" value="String constant when no-timeout." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6Pij_UBJLOs" role="jymVt" />
@@ -3388,8 +3449,12 @@
       <node concept="Xl_RD" id="5zmbZKqV1tw" role="33vP2m">
         <property role="Xl_RC" value="none" />
       </node>
-      <node concept="NWlO9" id="5zmbZKqV1tx" role="lGtFl">
-        <property role="NWlVz" value="String constant when no-analysis depth is specified." />
+      <node concept="z59LJ" id="70cGcTIKjQE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQD" role="1dT_Ay">
+            <property role="1dT_AB" value="String constant when no-analysis depth is specified." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5zmbZKqV1hi" role="jymVt" />
@@ -3911,8 +3976,12 @@
           <ref role="ehGHo" to="q5q6:5BkFC2yhyHz" resolve="CProverBasedAnalysis" />
         </node>
       </node>
-      <node concept="NWlO9" id="41thbhvqGdN" role="lGtFl">
-        <property role="NWlVz" value="Builds the config object from the analysis config node. Analyzed node is the analysis entry point." />
+      <node concept="P$JXv" id="70cGcTIKjQH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQG" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the config object from the analysis config node. Analyzed node is the analysis entry point." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="Lg9kE9uR_e" role="jymVt" />
@@ -3994,8 +4063,12 @@
           <ref role="ehGHo" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
         </node>
       </node>
-      <node concept="NWlO9" id="41thbhvqytt" role="lGtFl">
-        <property role="NWlVz" value="Returns the C-level function name." />
+      <node concept="P$JXv" id="70cGcTIKjQK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the C-level function name." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvCVKG6" role="jymVt" />
@@ -4070,8 +4143,12 @@
         <property role="TrG5h" value="timeoutString" />
         <node concept="17QB3L" id="1XFitunRfs9" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="41thbhvqxZR" role="lGtFl">
-        <property role="NWlVz" value="Computes the timeout." />
+      <node concept="P$JXv" id="70cGcTIKjQN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQM" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the timeout." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5zmbZKqW4yh" role="jymVt" />
@@ -4146,32 +4223,41 @@
         <property role="TrG5h" value="analysisDepthString" />
         <node concept="17QB3L" id="5zmbZKqW4SQ" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5zmbZKqW4SR" role="lGtFl">
-        <property role="NWlVz" value="Computes the anaysis depth." />
+      <node concept="P$JXv" id="70cGcTIKjQQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQP" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the anaysis depth." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="41thbhvr0ec" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for building the verification configuration objects." />
+    <node concept="3UR2Jj" id="70cGcTIKjQT" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjQR" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjQS" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for building the verification configuration objects." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2UdJgvCT1yk">
     <property role="TrG5h" value="CProverAnalyzerBase" />
     <property role="1sVAO0" value="true" />
-    <node concept="NWlO9" id="3_HSwtcFDBE" role="lGtFl">
-      <property role="NWlVz" value="Base class for al CProver-based analyzers." />
-    </node>
     <node concept="2tJIrI" id="2UdJgvCUqqr" role="jymVt" />
     <node concept="312cEg" id="7F8$WoW31Wz" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="config" />
       <property role="3TUv4t" value="false" />
-      <node concept="NWlO9" id="3_HSwtcFF13" role="lGtFl">
-        <property role="NWlVz" value="The configuration object that drives this analysis." />
-      </node>
       <node concept="3Tmbuc" id="7F8$WoW34GP" role="1B3o_S" />
       <node concept="3uibUv" id="Lg9kE9zSjj" role="1tU5fm">
         <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
+      </node>
+      <node concept="z59LJ" id="70cGcTIKjQZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjQX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjQY" role="1dT_Ay">
+            <property role="1dT_AB" value="The configuration object that drives this analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcFG3i" role="jymVt" />
@@ -4182,8 +4268,12 @@
       <node concept="3uibUv" id="vbJ3AuJjg$" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
-      <node concept="NWlO9" id="vbJ3AuJjLd" role="lGtFl">
-        <property role="NWlVz" value="Model repository" />
+      <node concept="z59LJ" id="70cGcTIKjR2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjR0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjR1" role="1dT_Ay">
+            <property role="1dT_AB" value="Model repository" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5KHBa6kYmhA" role="jymVt" />
@@ -4192,12 +4282,16 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="analyzedCFiles" />
       <property role="3TUv4t" value="false" />
-      <node concept="NWlO9" id="3_HSwtcFHtR" role="lGtFl">
-        <property role="NWlVz" value="A list with all C-files that will be analyzed." />
-      </node>
       <node concept="3Tmbuc" id="7F8$WoW7PlN" role="1B3o_S" />
       <node concept="A3Dl8" id="6h7pCbAbmsJ" role="1tU5fm">
         <node concept="17QB3L" id="6h7pCbAboJ3" role="A3Ik2" />
+      </node>
+      <node concept="z59LJ" id="70cGcTIKjR5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjR3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjR4" role="1dT_Ay">
+            <property role="1dT_AB" value="A list with all C-files that will be analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvD5VMU" role="jymVt" />
@@ -4267,8 +4361,12 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="Lg9kE9zOp4" role="1B3o_S" />
-      <node concept="NWlO9" id="4XbM$YHsNRZ" role="lGtFl">
-        <property role="NWlVz" value="Constructor" />
+      <node concept="P$JXv" id="70cGcTIKjR8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjR6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjR7" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4EriiVwtu_q" role="jymVt" />
@@ -4314,8 +4412,12 @@
         <property role="TrG5h" value="analysisUniqueID" />
         <node concept="17QB3L" id="7iCG_8X12hq" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7iCG_8WMdi9" role="lGtFl">
-        <property role="NWlVz" value="Runs CProver and parses the result" />
+      <node concept="P$JXv" id="70cGcTIKjRb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjR9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRa" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs CProver and parses the result" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WKS5m" role="jymVt" />
@@ -4393,8 +4495,12 @@
           <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
         </node>
       </node>
-      <node concept="NWlO9" id="4XbM$YH6pgi" role="lGtFl">
-        <property role="NWlVz" value="Runs CProver and parses the result - here the last param config is needed in case of multi-threaded analyses" />
+      <node concept="P$JXv" id="70cGcTIKjRe" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRd" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs CProver and parses the result - here the last param config is needed in case of multi-threaded analyses" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oeyMu" role="jymVt" />
@@ -4563,8 +4669,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="67iKQ7oezZl" role="lGtFl">
-        <property role="NWlVz" value="Runs the CProver but does not parse the results." />
+      <node concept="P$JXv" id="70cGcTIKjRh" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRf" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRg" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs the CProver but does not parse the results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4XbM$YH6o2R" role="jymVt" />
@@ -4681,8 +4791,12 @@
       </node>
       <node concept="3Tmbuc" id="4GD8rS0DBSN" role="1B3o_S" />
       <node concept="3cqZAl" id="4GD8rS0DGzN" role="3clF45" />
-      <node concept="NWlO9" id="6h7pCbAdO69" role="lGtFl">
-        <property role="NWlVz" value="Collects the C files that will be analyzed." />
+      <node concept="P$JXv" id="70cGcTIKjRk" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRi" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRj" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects the C files that will be analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3fAfgHYQIBS" role="jymVt" />
@@ -5168,8 +5282,12 @@
       </node>
       <node concept="3Tmbuc" id="5VnXdFksroU" role="1B3o_S" />
       <node concept="3cqZAl" id="5VnXdFksshm" role="3clF45" />
-      <node concept="NWlO9" id="5VnXdFksudE" role="lGtFl">
-        <property role="NWlVz" value="Adds the external files." />
+      <node concept="P$JXv" id="70cGcTIKjRn" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRl" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRm" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds the external files." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5VnXdFkstiw" role="jymVt" />
@@ -5201,8 +5319,12 @@
           <node concept="17QB3L" id="6h7pCbAdMQU" role="A3Ik2" />
         </node>
       </node>
-      <node concept="NWlO9" id="6h7pCbAdPOx" role="lGtFl">
-        <property role="NWlVz" value="Set the C files that will be analyzed." />
+      <node concept="P$JXv" id="70cGcTIKjRq" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRo" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRp" role="1dT_Ay">
+            <property role="1dT_AB" value="Set the C files that will be analyzed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2HIlBfynuE$" role="jymVt" />
@@ -5284,8 +5406,12 @@
       </node>
       <node concept="3Tm1VV" id="2HIlBfynIOc" role="1B3o_S" />
       <node concept="H_c77" id="2HIlBfyoMXK" role="3clF45" />
-      <node concept="NWlO9" id="2HIlBfynIOh" role="lGtFl">
-        <property role="NWlVz" value="Returns the model which causes the generation of C-files." />
+      <node concept="P$JXv" id="70cGcTIKjRt" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRr" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRs" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the model which causes the generation of C-files." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2HIlBfynHqE" role="jymVt" />
@@ -6901,8 +7027,12 @@
           <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
         </node>
       </node>
-      <node concept="NWlO9" id="7iCG_8WESGn" role="lGtFl">
-        <property role="NWlVz" value="Computes common arguments for CBMC analyses." />
+      <node concept="P$JXv" id="70cGcTIKjRw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRv" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes common arguments for CBMC analyses." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvCXNgF" role="jymVt" />
@@ -7195,8 +7325,12 @@
         <property role="TrG5h" value="label" />
         <node concept="17QB3L" id="41thbhvCELx" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="41thbhvG3OZ" role="lGtFl">
-        <property role="NWlVz" value="Computes the arguments for labels reachibility." />
+      <node concept="P$JXv" id="70cGcTIKjRz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRy" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the arguments for labels reachibility." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4XbM$YHwq1U" role="jymVt" />
@@ -7365,8 +7499,12 @@
           <node concept="17QB3L" id="6ks7ICUwArg" role="A3Ik2" />
         </node>
       </node>
-      <node concept="NWlO9" id="6ks7ICUpT0X" role="lGtFl">
-        <property role="NWlVz" value="Computes the arguments for labels reachibility." />
+      <node concept="P$JXv" id="70cGcTIKjRA" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjR$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjR_" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the arguments for labels reachibility." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6ks7ICUpQ0y" role="jymVt" />
@@ -7493,12 +7631,16 @@
     <node concept="16euLQ" id="2UdJgvCUq9G" role="16eVyc">
       <property role="TrG5h" value="S" />
     </node>
+    <node concept="3UR2Jj" id="70cGcTIKjQW" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjQU" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjQV" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for al CProver-based analyzers." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2UdJgvD1NnP">
     <property role="TrG5h" value="CProverRunner" />
-    <node concept="NWlO9" id="3_HSwtcFbsh" role="lGtFl">
-      <property role="NWlVz" value="Runs the CProver." />
-    </node>
     <node concept="2tJIrI" id="2UdJgvD30Bt" role="jymVt" />
     <node concept="Wx3nA" id="3Z5D5F2QEcP" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -7614,9 +7756,6 @@
     </node>
     <node concept="2tJIrI" id="3fAfgHZ5M0P" role="jymVt" />
     <node concept="3clFbW" id="2UdJgvEdJWf" role="jymVt">
-      <node concept="NWlO9" id="3_HSwtcFboI" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
-      </node>
       <node concept="3cqZAl" id="2UdJgvEdJWg" role="3clF45" />
       <node concept="3clFbS" id="2UdJgvEdJWi" role="3clF47">
         <node concept="3clFbF" id="2UdJgvEdPSG" role="3cqZAp">
@@ -7656,6 +7795,13 @@
       <node concept="37vLTG" id="1yxfYMYdp40" role="3clF46">
         <property role="TrG5h" value="generatedOutputPath" />
         <node concept="17QB3L" id="1yxfYMYdp8B" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjRG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRF" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2HIlBfyAugW" role="jymVt" />
@@ -7995,8 +8141,12 @@
         <ref role="3uigEE" to="8e9v:4CtHBqNlszi" resolve="ToolRunner.ToolRunResult" />
       </node>
       <node concept="3Tm1VV" id="2Ra3lNBhgFU" role="1B3o_S" />
-      <node concept="NWlO9" id="7iCG_8WJsBh" role="lGtFl">
-        <property role="NWlVz" value="Read the result from file." />
+      <node concept="P$JXv" id="70cGcTIKjRJ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRH" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRI" role="1dT_Ay">
+            <property role="1dT_AB" value="Read the result from file." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2Ra3lNBeQkf" role="jymVt" />
@@ -9177,12 +9327,16 @@
       <node concept="3Tm1VV" id="2Ra3lNBeIRQ" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="2UdJgvD1NnQ" role="1B3o_S" />
+    <node concept="3UR2Jj" id="70cGcTIKjRD" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjRB" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjRC" role="1dT_Ay">
+          <property role="1dT_AB" value="Runs the CProver." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2UdJgvFpEBQ">
     <property role="TrG5h" value="CProverAnalysesUtils" />
-    <node concept="NWlO9" id="3_HSwtcNGwY" role="lGtFl">
-      <property role="NWlVz" value="Facade for CProver analyses started from the UI." />
-    </node>
     <node concept="2tJIrI" id="2UdJgvFpFi8" role="jymVt" />
     <node concept="Wx3nA" id="3_HSwtcSy$M" role="jymVt">
       <property role="TrG5h" value="lastProj" />
@@ -9191,8 +9345,12 @@
         <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcSve4" role="1B3o_S" />
-      <node concept="NWlO9" id="3_HSwtcSyAq" role="lGtFl">
-        <property role="NWlVz" value="Last project of the run analysis." />
+      <node concept="z59LJ" id="70cGcTIKjRP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRN" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRO" role="1dT_Ay">
+            <property role="1dT_AB" value="Last project of the run analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvL$" role="jymVt" />
@@ -9203,8 +9361,12 @@
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcSvqG" role="1B3o_S" />
-      <node concept="NWlO9" id="3_HSwtcSxOu" role="lGtFl">
-        <property role="NWlVz" value="Last model of the run analysis." />
+      <node concept="z59LJ" id="70cGcTIKjRS" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRQ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRR" role="1dT_Ay">
+            <property role="1dT_AB" value="Last model of the run analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvMZ" role="jymVt" />
@@ -9215,8 +9377,12 @@
         <ref role="3uigEE" node="3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcSvA4" role="1B3o_S" />
-      <node concept="NWlO9" id="3_HSwtcSxMz" role="lGtFl">
-        <property role="NWlVz" value="Last ran analyzer." />
+      <node concept="z59LJ" id="70cGcTIKjRV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRU" role="1dT_Ay">
+            <property role="1dT_AB" value="Last ran analyzer." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxtx" role="jymVt" />
@@ -9227,8 +9393,12 @@
         <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcWxhy" role="1B3o_S" />
-      <node concept="NWlO9" id="3_HSwtcWxhz" role="lGtFl">
-        <property role="NWlVz" value="Last tool adapter." />
+      <node concept="z59LJ" id="70cGcTIKjRY" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRW" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjRX" role="1dT_Ay">
+            <property role="1dT_AB" value="Last tool adapter." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcWxHn" role="jymVt" />
@@ -9239,8 +9409,12 @@
         <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
       </node>
       <node concept="3Tm6S6" id="3_HSwtcWxTt" role="1B3o_S" />
-      <node concept="NWlO9" id="3_HSwtcWxTu" role="lGtFl">
-        <property role="NWlVz" value="Last analysis config." />
+      <node concept="z59LJ" id="70cGcTIKjS1" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjRZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjS0" role="1dT_Ay">
+            <property role="1dT_AB" value="Last analysis config." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcSvOj" role="jymVt" />
@@ -9248,9 +9422,6 @@
       <property role="TrG5h" value="performAnalysis" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="3_HSwtcSxor" role="lGtFl">
-        <property role="NWlVz" value="Performs the analysis." />
-      </node>
       <node concept="3clFbS" id="2UdJgvFqtPs" role="3clF47">
         <node concept="3clFbF" id="3_HSwtcSzpK" role="3cqZAp">
           <node concept="37vLTI" id="3_HSwtcSzua" role="3clFbG">
@@ -9437,6 +9608,13 @@
           <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
         </node>
       </node>
+      <node concept="P$JXv" id="70cGcTIKjS4" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjS2" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjS3" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs the analysis." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3_HSwtcS$SM" role="jymVt" />
     <node concept="2YIFZL" id="3_HSwtcS$Y_" role="jymVt">
@@ -9487,14 +9665,25 @@
       </node>
       <node concept="3Tm1VV" id="3_HSwtcS$YV" role="1B3o_S" />
       <node concept="3cqZAl" id="3_HSwtcS$YW" role="3clF45" />
-      <node concept="NWlO9" id="3_HSwtcS$Z3" role="lGtFl">
-        <property role="NWlVz" value="Rerun last analysis." />
-      </node>
       <node concept="3uibUv" id="3_HSwtcSBJw" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKjS7" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjS5" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjS6" role="1dT_Ay">
+            <property role="1dT_AB" value="Rerun last analysis." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="2UdJgvFpEBR" role="1B3o_S" />
+    <node concept="3UR2Jj" id="70cGcTIKjRM" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjRK" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjRL" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for CProver analyses started from the UI." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="3T2UJ1pSoYT">
     <property role="TrG5h" value="CProverToolRunnerManager" />
@@ -9550,8 +9739,12 @@
           <ref role="HV5vE" node="sEP8ohtOE4" resolve="CProverLocalRunner.CProverLocalRunnerFactory" />
         </node>
       </node>
-      <node concept="NWlO9" id="p7QU0IWwco" role="lGtFl">
-        <property role="NWlVz" value="Factory for the runner collecting the claims - must be kept in sync with the tool which runs the analysis." />
+      <node concept="z59LJ" id="70cGcTIKjSa" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjS8" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjS9" role="1dT_Ay">
+            <property role="1dT_AB" value="Factory for the runner collecting the claims - must be kept in sync with the tool which runs the analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="p7QU0IWv2Q" role="jymVt" />
@@ -9574,8 +9767,12 @@
           <ref role="HV5vE" node="sEP8ohtOE4" resolve="CProverLocalRunner.CProverLocalRunnerFactory" />
         </node>
       </node>
-      <node concept="NWlO9" id="p7QU0IWwec" role="lGtFl">
-        <property role="NWlVz" value="Factory for the runner of the analysis - must be kept in sync with the tool which collects the claims." />
+      <node concept="z59LJ" id="70cGcTIKjSd" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSb" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSc" role="1dT_Ay">
+            <property role="1dT_AB" value="Factory for the runner of the analysis - must be kept in sync with the tool which collects the claims." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZc" role="jymVt" />
@@ -9641,9 +9838,6 @@
       <property role="TrG5h" value="getCurrentlyActiveToolRunner" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7zvQUZj5SzL" role="lGtFl">
-        <property role="NWlVz" value="Here we expect *always* a new instance of the runner !!! otherwise optimizing runners will not work" />
-      </node>
       <node concept="3clFbS" id="3T2UJ1pSoZr" role="3clF47">
         <node concept="3clFbF" id="7zvQUZj4UI8" role="3cqZAp">
           <node concept="2OqwBi" id="7zvQUZj4UIa" role="3clFbG">
@@ -9659,6 +9853,13 @@
       <node concept="3Tm1VV" id="3T2UJ1pSoZ$" role="1B3o_S" />
       <node concept="3uibUv" id="3dA$IyYZWTJ" role="3clF45">
         <ref role="3uigEE" to="8e9v:494NBewV62B" resolve="ToolRunnerBase" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjSg" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSe" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSf" role="1dT_Ay">
+            <property role="1dT_AB" value="Here we expect *always* a new instance of the runner !!! otherwise optimizing runners will not work" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3T2UJ1pSoZA" role="jymVt" />
@@ -9723,8 +9924,12 @@
       </node>
       <node concept="3Tm1VV" id="p7QU0IWjzO" role="1B3o_S" />
       <node concept="3cqZAl" id="p7QU0IWjzP" role="3clF45" />
-      <node concept="NWlO9" id="p7QU0IWwEu" role="lGtFl">
-        <property role="NWlVz" value="The current runner will be for claims collecting." />
+      <node concept="P$JXv" id="70cGcTIKjSj" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSh" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSi" role="1dT_Ay">
+            <property role="1dT_AB" value="The current runner will be for claims collecting." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="p7QU0IWjnw" role="jymVt" />
@@ -9745,8 +9950,12 @@
       </node>
       <node concept="3Tm1VV" id="p7QU0IWu6X" role="1B3o_S" />
       <node concept="3cqZAl" id="p7QU0IWu6Y" role="3clF45" />
-      <node concept="NWlO9" id="p7QU0IWx4m" role="lGtFl">
-        <property role="NWlVz" value="The current runner will be for analysis running." />
+      <node concept="P$JXv" id="70cGcTIKjSm" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSk" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSl" role="1dT_Ay">
+            <property role="1dT_AB" value="The current runner will be for analysis running." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="p7QU0IWtSI" role="jymVt" />
@@ -9805,8 +10014,12 @@
           <ref role="3uigEE" to="8e9v:sEP8ohtEIO" resolve="ToolRunner.ToolRunnerFactory" />
         </node>
       </node>
-      <node concept="NWlO9" id="p7QU0IXGbn" role="lGtFl">
-        <property role="NWlVz" value="Sets the factory for runners which collect claims." />
+      <node concept="P$JXv" id="70cGcTIKjSp" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSn" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSo" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the factory for runners which collect claims." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="p7QU0IXB$h" role="jymVt" />
@@ -9832,8 +10045,12 @@
       <node concept="Xl_RD" id="cchPmXQUL8" role="33vP2m">
         <property role="Xl_RC" value="Analysis configuration" />
       </node>
-      <node concept="NWlO9" id="6BBQp7Kbs4V" role="lGtFl">
-        <property role="NWlVz" value="Name of the analysis to be displayed." />
+      <node concept="z59LJ" id="70cGcTIKjSs" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSr" role="1dT_Ay">
+            <property role="1dT_AB" value="Name of the analysis to be displayed." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6BBQp7Kbq3h" role="jymVt" />
@@ -9956,8 +10173,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4EriiVwlglc" role="1B3o_S" />
-      <node concept="NWlO9" id="6mJYm3jINcy" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKjSv" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSt" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSu" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXU7sR" role="jymVt" />
@@ -10052,8 +10273,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4w$m_z$SHym" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjSy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSx" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXQKNe" role="jymVt" />
@@ -10477,8 +10702,12 @@
       <node concept="2AHcQZ" id="cchPmXQP8g" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXQQcd" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjS_" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSz" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjS$" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXQNI$" role="jymVt" />
@@ -10499,8 +10728,12 @@
       <node concept="2AHcQZ" id="cchPmXQRfi" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXQSjh" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjSC" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSA" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSB" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4EriiVwkVYU" role="jymVt" />
@@ -10522,8 +10755,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="cchPmXTwAl" role="lGtFl">
-        <property role="NWlVz" value="All published results." />
+      <node concept="z59LJ" id="70cGcTIKjSF" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSD" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSE" role="1dT_Ay">
+            <property role="1dT_AB" value="All published results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXTsKq" role="jymVt" />
@@ -10647,17 +10884,18 @@
       </node>
       <node concept="3Tmbuc" id="cchPmXSVUF" role="1B3o_S" />
       <node concept="3cqZAl" id="cchPmXSVUG" role="3clF45" />
-      <node concept="NWlO9" id="cchPmXSVUH" role="lGtFl">
-        <property role="NWlVz" value="Wrapper for publish that takes care of stoping the progress." />
+      <node concept="P$JXv" id="70cGcTIKjSI" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSG" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSH" role="1dT_Ay">
+            <property role="1dT_AB" value="Wrapper for publish that takes care of stoping the progress." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXSUhM" role="jymVt" />
     <node concept="3clFb_" id="4EriiVwkoFY" role="jymVt">
       <property role="TrG5h" value="removeOldCbmcRawOutputFiles" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="6lNSvt9decD" role="lGtFl">
-        <property role="NWlVz" value="Removes the old saved analyses results." />
-      </node>
       <node concept="3cqZAl" id="7oSikMJAtY_" role="3clF45" />
       <node concept="37vLTG" id="4UMTCE9hLxP" role="3clF46">
         <property role="TrG5h" value="path" />
@@ -10780,6 +11018,13 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="4EriiVwCbdK" role="1B3o_S" />
+      <node concept="P$JXv" id="70cGcTIKjSL" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSJ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSK" role="1dT_Ay">
+            <property role="1dT_AB" value="Removes the old saved analyses results." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="W6439gmI0S" role="jymVt" />
     <node concept="3clFb_" id="4EriiVwmL4S" role="jymVt">
@@ -10852,8 +11097,12 @@
       </node>
       <node concept="3Tm1VV" id="6NsiZXSemaD" role="1B3o_S" />
     </node>
-    <node concept="NWlO9" id="6mJYm3jIEIq" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for an analysis configuration." />
+    <node concept="3UR2Jj" id="70cGcTIKjSO" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjSM" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjSN" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for an analysis configuration." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6GZ1x5Gjo9f">
@@ -12248,12 +12497,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3_HSwtcWR4a" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjSR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSQ" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="3_HSwtcWR2l" role="lGtFl">
-      <property role="NWlVz" value="Factory for analysis configuration analyters." />
+    <node concept="3UR2Jj" id="70cGcTIKjSU" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjSS" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjST" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for analysis configuration analyters." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3_HSwtcWh0_">
@@ -12272,8 +12529,12 @@
       <node concept="3uibUv" id="5uqRFp90Tqf" role="1tU5fm">
         <ref role="3uigEE" node="tGR6edUFtE" resolve="CBMCAnalysisConfig" />
       </node>
-      <node concept="NWlO9" id="5uqRFp90WgM" role="lGtFl">
-        <property role="NWlVz" value="Config." />
+      <node concept="z59LJ" id="70cGcTIKjSX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSW" role="1dT_Ay">
+            <property role="1dT_AB" value="Config." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5uqRFp90Trp" role="jymVt" />
@@ -12286,8 +12547,12 @@
       <node concept="3uibUv" id="5uqRFp90TtM" role="1tU5fm">
         <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
       </node>
-      <node concept="NWlO9" id="5uqRFp90Wig" role="lGtFl">
-        <property role="NWlVz" value="Tool." />
+      <node concept="z59LJ" id="70cGcTIKjT0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjSY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjSZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Tool." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5uqRFp90Tv8" role="jymVt" />
@@ -12298,8 +12563,12 @@
       <node concept="3uibUv" id="vbJ3AuJmr8" role="1tU5fm">
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
-      <node concept="NWlO9" id="5KHBa6l32_L" role="lGtFl">
-        <property role="NWlVz" value="Model repository." />
+      <node concept="z59LJ" id="70cGcTIKjT3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjT1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjT2" role="1dT_Ay">
+            <property role="1dT_AB" value="Model repository." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5KHBa6l32wv" role="jymVt" />
@@ -12369,13 +12638,21 @@
       </node>
       <node concept="3Tm1VV" id="5uqRFp90TwZ" role="1B3o_S" />
       <node concept="3cqZAl" id="5uqRFp90T$2" role="3clF45" />
-      <node concept="NWlO9" id="5uqRFp90W8i" role="lGtFl">
-        <property role="NWlVz" value="Set parameters needed for instantiating the CBMC analyzers." />
+      <node concept="P$JXv" id="70cGcTIKjT6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjT4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjT5" role="1dT_Ay">
+            <property role="1dT_AB" value="Set parameters needed for instantiating the CBMC analyzers." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3_HSwtcWh0A" role="1B3o_S" />
-    <node concept="NWlO9" id="3_HSwtcWh1b" role="lGtFl">
-      <property role="NWlVz" value="Factory that creates analyzers." />
+    <node concept="3UR2Jj" id="70cGcTIKjT9" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjT7" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjT8" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory that creates analyzers." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4fvA6OQXXB6">
@@ -12389,11 +12666,15 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="cchPmXTxRl" role="1B3o_S" />
       <node concept="10Oyi0" id="4fvA6ORp8ex" role="1tU5fm" />
-      <node concept="NWlO9" id="4fvA6ORp9lL" role="lGtFl">
-        <property role="NWlVz" value="The number of results published so far." />
-      </node>
       <node concept="3cmrfG" id="4fvA6ORpaCQ" role="33vP2m">
         <property role="3cmrfH" value="0" />
+      </node>
+      <node concept="z59LJ" id="70cGcTIKjTc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTa" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTb" role="1dT_Ay">
+            <property role="1dT_AB" value="The number of results published so far." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="hFNQnziwGf" role="jymVt" />
@@ -12444,8 +12725,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="4fvA6OQYg_L" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKjTf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTe" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4fvA6OQXXBE" role="jymVt" />
@@ -12596,8 +12881,12 @@
       <node concept="2AHcQZ" id="4fvA6OQXXCw" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4fvA6OQXXCx" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjTi" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTh" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4fvA6OQXXCy" role="jymVt" />
@@ -12613,15 +12902,19 @@
           <ref role="3uigEE" to="ood5:7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
         </node>
       </node>
-      <node concept="NWlO9" id="4fvA6OQXXCO" role="lGtFl">
-        <property role="NWlVz" value="Returns a list of analyses jobs. Each analysis job will add the result to the list of analyses results." />
-      </node>
       <node concept="37vLTG" id="4fvA6OQXXCP" role="3clF46">
         <property role="TrG5h" value="analysesResults" />
         <property role="3TUv4t" value="true" />
         <node concept="_YKpA" id="4fvA6OQXXCQ" role="1tU5fm">
           <node concept="16syzq" id="4fvA6OQXXCR" role="_ZDj9">
             <ref role="16sUi3" node="4fvA6OQXXEb" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjTl" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTj" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTk" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a list of analyses jobs. Each analysis job will add the result to the list of analyses results." />
           </node>
         </node>
       </node>
@@ -12635,8 +12928,12 @@
       <node concept="3clFbS" id="4fvA6OQXXCU" role="3clF47" />
       <node concept="3Tmbuc" id="4fvA6OQXXCX" role="1B3o_S" />
       <node concept="17QB3L" id="4fvA6OQXXCY" role="3clF45" />
-      <node concept="NWlO9" id="4fvA6OQXXCZ" role="lGtFl">
-        <property role="NWlVz" value="Returns the analysis user friendly name." />
+      <node concept="P$JXv" id="70cGcTIKjTo" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTm" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTn" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the analysis user friendly name." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4fvA6OR05sg" role="jymVt" />
@@ -12713,8 +13010,12 @@
       </node>
       <node concept="3Tmbuc" id="4fvA6OR07$7" role="1B3o_S" />
       <node concept="3cqZAl" id="4fvA6OR08Ca" role="3clF45" />
-      <node concept="NWlO9" id="4fvA6OR0bzS" role="lGtFl">
-        <property role="NWlVz" value="Wrapper for publish that takes care of stoping the progress." />
+      <node concept="P$JXv" id="70cGcTIKjTr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTq" role="1dT_Ay">
+            <property role="1dT_AB" value="Wrapper for publish that takes care of stoping the progress." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1eSi_XMT79A" role="jymVt" />
@@ -12727,8 +13028,12 @@
       <node concept="3uibUv" id="hFNQnzwMyY" role="1tU5fm">
         <ref role="3uigEE" node="4fvA6OQXXB6" resolve="CProverCompositeAnalyzerBase" />
       </node>
-      <node concept="NWlO9" id="hFNQnzwRHb" role="lGtFl">
-        <property role="NWlVz" value="The parent analyzer." />
+      <node concept="z59LJ" id="70cGcTIKjTu" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTs" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTt" role="1dT_Ay">
+            <property role="1dT_AB" value="The parent analyzer." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="hFNQnzwRS8" role="jymVt" />
@@ -12754,13 +13059,17 @@
       </node>
       <node concept="3Tm1VV" id="hFNQnzxoJr" role="1B3o_S" />
       <node concept="3cqZAl" id="hFNQnzwxdE" role="3clF45" />
-      <node concept="NWlO9" id="hFNQnzwA_B" role="lGtFl">
-        <property role="NWlVz" value="Used in the case when this analyzer is part of a bigger analyzer." />
-      </node>
       <node concept="37vLTG" id="hFNQnzwBuD" role="3clF46">
         <property role="TrG5h" value="parent" />
         <node concept="3uibUv" id="hFNQnzwBuC" role="1tU5fm">
           <ref role="3uigEE" node="4fvA6OQXXB6" resolve="CProverCompositeAnalyzerBase" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjTx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTw" role="1dT_Ay">
+            <property role="1dT_AB" value="Used in the case when this analyzer is part of a bigger analyzer." />
+          </node>
         </node>
       </node>
     </node>
@@ -12783,17 +13092,18 @@
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
     </node>
-    <node concept="NWlO9" id="4fvA6OQXXEd" role="lGtFl">
-      <property role="NWlVz" value="Base class for composite analyses." />
+    <node concept="3UR2Jj" id="70cGcTIKjT$" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjTy" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjTz" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for composite analyses." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7GloF9XSpco">
     <property role="TrG5h" value="CBMCInstallationSanityCheck" />
     <node concept="2tJIrI" id="7GloF9XSr$A" role="jymVt" />
     <node concept="3Tm1VV" id="7GloF9XSpcp" role="1B3o_S" />
-    <node concept="NWlO9" id="7GloF9XSr$c" role="lGtFl">
-      <property role="NWlVz" value="Checks the sanity of the CBMC installation." />
-    </node>
     <node concept="3uibUv" id="7GloF9XTvTR" role="EKbjA">
       <ref role="3uigEE" to="8e9v:7GloF9XTgpa" resolve="ToolsAvailabilityChecker" />
     </node>
@@ -12812,8 +13122,12 @@
       <node concept="2AHcQZ" id="7GloF9XTwPd" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7GloF9XTxc9" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjTE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTD" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7GloF9XTx$2" role="jymVt" />
@@ -12843,13 +13157,17 @@
       <node concept="2AHcQZ" id="7GloF9XTy8H" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7GloF9XTyvF" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="37vLTG" id="7Quig7_PqX9" role="3clF46">
         <property role="TrG5h" value="messages" />
         <node concept="_YKpA" id="7Quig7_PrdM" role="1tU5fm">
           <node concept="17QB3L" id="7Quig7_PreG" role="_ZDj9" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjTH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTG" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
         </node>
       </node>
     </node>
@@ -13132,13 +13450,17 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="7GloF9XSPaX" role="1B3o_S" />
-      <node concept="NWlO9" id="7GloF9XTBip" role="lGtFl">
-        <property role="NWlVz" value="Checks that the tool has proper version." />
-      </node>
       <node concept="37vLTG" id="7Quig7_Pyja" role="3clF46">
         <property role="TrG5h" value="messages" />
         <node concept="_YKpA" id="7Quig7_Pyj8" role="1tU5fm">
           <node concept="17QB3L" id="7Quig7_Pz8K" role="_ZDj9" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjTK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks that the tool has proper version." />
+          </node>
         </node>
       </node>
     </node>
@@ -13409,13 +13731,17 @@
       </node>
       <node concept="3Tm6S6" id="3OhBgB4bpB2" role="1B3o_S" />
       <node concept="10P_77" id="3OhBgB4bpB3" role="3clF45" />
-      <node concept="NWlO9" id="3OhBgB4bpB4" role="lGtFl">
-        <property role="NWlVz" value="Returns null if everything is OK or an error message otherwise." />
-      </node>
       <node concept="37vLTG" id="3OhBgB4bpB5" role="3clF46">
         <property role="TrG5h" value="messages" />
         <node concept="_YKpA" id="3OhBgB4bpB6" role="1tU5fm">
           <node concept="17QB3L" id="3OhBgB4bpB7" role="_ZDj9" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjTN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTM" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns null if everything is OK or an error message otherwise." />
+          </node>
         </node>
       </node>
     </node>
@@ -13549,11 +13875,22 @@
       <node concept="3uibUv" id="7GloF9XSGVv" role="3clF45">
         <ref role="3uigEE" to="guwi:~File" resolve="File" />
       </node>
-      <node concept="NWlO9" id="7GloF9XS_Le" role="lGtFl">
-        <property role="NWlVz" value="Saves a dummy program and returns the full path to the file." />
+      <node concept="P$JXv" id="70cGcTIKjTQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjTO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjTP" role="1dT_Ay">
+            <property role="1dT_AB" value="Saves a dummy program and returns the full path to the file." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7GloF9XT_I5" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIKjTB" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjT_" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjTA" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the sanity of the CBMC installation." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -4,10 +4,10 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -153,7 +153,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -179,7 +179,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -218,9 +218,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -228,6 +225,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
@@ -292,7 +303,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -695,8 +706,12 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="68pU13UVjBR" role="1B3o_S" />
-      <node concept="NWlO9" id="68pU13UVm1b" role="lGtFl">
-        <property role="NWlVz" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+      <node concept="P$JXv" id="70cGcTIKdbN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbM" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7U6Ee$b8zRN" role="jymVt" />
@@ -1282,8 +1297,12 @@
       </node>
       <node concept="3Tm1VV" id="6Zad41Tri9_" role="1B3o_S" />
     </node>
-    <node concept="NWlO9" id="55eOZdvWZ1R" role="lGtFl">
-      <property role="NWlVz" value="General utility methods." />
+    <node concept="3UR2Jj" id="70cGcTIKdbQ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdbO" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdbP" role="1dT_Ay">
+          <property role="1dT_AB" value="General utility methods." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2jwOBjYhZSX">
@@ -1990,8 +2009,12 @@
       <node concept="2I9FWS" id="12GRGX$Asr$" role="3clF45">
         <ref role="2I9WkF" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
       </node>
-      <node concept="NWlO9" id="E31tqQmnCg" role="lGtFl">
-        <property role="NWlVz" value="Returns a list of variable declarations with a given name referenced from the scope" />
+      <node concept="P$JXv" id="70cGcTIKdbT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbS" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a list of variable declarations with a given name referenced from the scope" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5dSPU6qgI4P" role="jymVt" />
@@ -2084,12 +2107,20 @@
       <node concept="2I9FWS" id="4ZoQlQrgYDh" role="3clF45">
         <ref role="2I9WkF" to="mj1l:1LDGRqyQFAa" resolve="IVariableReference" />
       </node>
-      <node concept="NWlO9" id="4ZoQlQrgYDi" role="lGtFl">
-        <property role="NWlVz" value="Returns a list of variable references with a given name referenced from the scope" />
+      <node concept="P$JXv" id="70cGcTIKdbW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbV" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a list of variable references with a given name referenced from the scope" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="SWpRmWAre9" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for finding nodes." />
+    <node concept="3UR2Jj" id="70cGcTIKdbZ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdbX" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdbY" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for finding nodes." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="44j14BHn3VF">
@@ -2222,8 +2253,12 @@
       </node>
       <node concept="17QB3L" id="44j14BHd7Zu" role="3clF45" />
       <node concept="3Tm1VV" id="44j14BHn8EZ" role="1B3o_S" />
-      <node concept="NWlO9" id="44j14BHn92b" role="lGtFl">
-        <property role="NWlVz" value="Returns a user readable name for this node." />
+      <node concept="P$JXv" id="70cGcTIKdc2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdc0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdc1" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a user readable name for this node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BHn49M" role="jymVt" />
@@ -2354,8 +2389,12 @@
       </node>
       <node concept="17QB3L" id="44j14BHot3V" role="3clF45" />
       <node concept="3Tm1VV" id="44j14BHot3W" role="1B3o_S" />
-      <node concept="NWlO9" id="44j14BHot3X" role="lGtFl">
-        <property role="NWlVz" value="Returns a user readable qualified name for this node." />
+      <node concept="P$JXv" id="70cGcTIKdc5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdc3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdc4" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a user readable qualified name for this node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BHosUl" role="jymVt" />
@@ -2370,8 +2409,12 @@
       <node concept="3Tm1VV" id="1dwnYWHuO55" role="1B3o_S" />
       <node concept="10P_77" id="1dwnYWHuO56" role="1tU5fm" />
       <node concept="3clFbT" id="1dwnYWHuO57" role="33vP2m" />
-      <node concept="NWlO9" id="1dwnYWHuO58" role="lGtFl">
-        <property role="NWlVz" value="Should we debug?" />
+      <node concept="z59LJ" id="70cGcTIKdc8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdc6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdc7" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we debug?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4l47ydyfsco" role="jymVt" />
@@ -2389,8 +2432,12 @@
           <node concept="2I9FWS" id="2OALdl4Y8PG" role="3rHtpV" />
         </node>
       </node>
-      <node concept="NWlO9" id="2OALdl4Y7yN" role="lGtFl">
-        <property role="NWlVz" value="Cache that maps a program location to all possible original nodes." />
+      <node concept="z59LJ" id="70cGcTIKdcb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdc9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdca" role="1dT_Ay">
+            <property role="1dT_AB" value="Cache that maps a program location to all possible original nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2OALdl4Y6Ik" role="jymVt" />
@@ -2418,8 +2465,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="Ej6MPQeDIv" role="lGtFl">
-        <property role="NWlVz" value="Cache that prevents many reads of the trace.info file." />
+      <node concept="z59LJ" id="70cGcTIKdce" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcd" role="1dT_Ay">
+            <property role="1dT_AB" value="Cache that prevents many reads of the trace.info file." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="Ej6MPQeDA3" role="jymVt" />
@@ -2447,8 +2498,12 @@
       </node>
       <node concept="3Tm1VV" id="2OALdl4XypL" role="1B3o_S" />
       <node concept="3cqZAl" id="2OALdl4XzUz" role="3clF45" />
-      <node concept="NWlO9" id="2OALdl4XBDu" role="lGtFl">
-        <property role="NWlVz" value="Clears the cache for original nodes." />
+      <node concept="P$JXv" id="70cGcTIKdch" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcf" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcg" role="1dT_Ay">
+            <property role="1dT_AB" value="Clears the cache for original nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4l47ydyfpeq" role="jymVt" />
@@ -2486,13 +2541,17 @@
       <node concept="3uibUv" id="4a8JajkMaO1" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="4a8JajkMcub" role="lGtFl">
-        <property role="NWlVz" value="Returns the first original node that is traced to a certain file and line." />
-      </node>
       <node concept="37vLTG" id="FRRXmQcoyP" role="3clF46">
         <property role="TrG5h" value="repository" />
         <node concept="3uibUv" id="FRRXmQcoxo" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdck" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdci" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcj" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first original node that is traced to a certain file and line." />
+          </node>
         </node>
       </node>
     </node>
@@ -3010,13 +3069,17 @@
       <node concept="3uibUv" id="4a8JajkM8Db" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="4a8JajkMa7t" role="lGtFl">
-        <property role="NWlVz" value="Returns all possible original nodes that can be traced to a certain file and line." />
-      </node>
       <node concept="37vLTG" id="FRRXmQcqL6" role="3clF46">
         <property role="TrG5h" value="repository" />
         <node concept="3uibUv" id="FRRXmQcqIJ" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdcn" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdcl" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdcm" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all possible original nodes that can be traced to a certain file and line." />
+          </node>
         </node>
       </node>
     </node>
@@ -3228,8 +3291,12 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4l47ydyfkqr" role="1B3o_S" />
-    <node concept="NWlO9" id="4l47ydyfkrS" role="lGtFl">
-      <property role="NWlVz" value="Facade for tracing lines from generated files to nodes." />
+    <node concept="3UR2Jj" id="70cGcTIKdcq" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdco" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdcp" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for tracing lines from generated files to nodes." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2qWj5EANUp7">

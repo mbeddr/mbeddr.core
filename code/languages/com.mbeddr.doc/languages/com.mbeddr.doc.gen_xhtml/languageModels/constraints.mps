@@ -38,7 +38,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -60,11 +60,6 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
-    </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
     </language>
   </registry>
@@ -96,39 +91,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="4ol4Q3pM45$">
-    <property role="3GE5qa" value="css" />
-    <ref role="1M2myG" to="lsus:5wmuVxvC2gr" resolve="CssSpecification" />
-    <node concept="2NXJUA" id="4ol4Q3pM45_" role="2NY200">
-      <node concept="3clFbS" id="4ol4Q3pM45A" role="2VODD2">
-        <node concept="3clFbF" id="4ol4Q3pM48d" role="3cqZAp">
-          <node concept="22lmx$" id="4ol4Q3pM48e" role="3clFbG">
-            <node concept="2ZW3vV" id="4ol4Q3pM48f" role="3uHU7B">
-              <node concept="3uibUv" id="4ol4Q3pM48g" role="2ZW6by">
-                <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
-              </node>
-              <node concept="2OqwBi" id="4ol4Q3pM48h" role="2ZW6bz">
-                <node concept="2JrnkZ" id="4ol4Q3pM48i" role="2Oq$k0">
-                  <node concept="1Q6Npb" id="4ol4Q3pM48j" role="2JrQYb" />
-                </node>
-                <node concept="liA8E" id="4ol4Q3pM48k" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
-                </node>
-              </node>
-            </node>
-            <node concept="2YIFZM" id="4ol4Q3pM48l" role="3uHU7w">
-              <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-              <ref role="37wK5l" to="w1kc:~SModelStereotype.isGeneratorModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isGeneratorModel" />
-              <node concept="1Q6Npb" id="4ol4Q3pM48m" role="37wK5m" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="2i$odZByCaP">
-    <ref role="1M2myG" to="lsus:32cJsh9DNRl" resolve="HTMLDummyRenderer" />
   </node>
 </model>
 

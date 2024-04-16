@@ -27,7 +27,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -60,7 +60,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="5V$rgM4Mhb_">
-    <ref role="1M2myG" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+    <ref role="1M2myG" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
     <node concept="1N5Pfh" id="5V$rgM4MhbA" role="1Mr941">
       <ref role="1N5Vy1" to="f87k:4E$PniRKKXI" resolve="var" />
       <node concept="3dgokm" id="5V$rgM4MhbC" role="1N6uqs">
@@ -84,7 +84,7 @@
                 <node concept="2Rf3mk" id="5CkU_dHilLC" role="2OqNvi">
                   <node concept="1xMEDy" id="5CkU_dHilLD" role="1xVPHs">
                     <node concept="chp4Y" id="5CkU_dHilLE" role="ri$Ld">
-                      <ref role="cht4Q" to="f87k:4E$PniRKKrW" resolve="VariableDef" />
+                      <ref role="cht4Q" to="f87k:4E$PniRKKrW" resolve="VariableDefinition" />
                     </node>
                   </node>
                 </node>

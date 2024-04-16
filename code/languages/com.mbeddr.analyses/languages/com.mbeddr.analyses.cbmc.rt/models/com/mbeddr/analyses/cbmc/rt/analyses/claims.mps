@@ -2,7 +2,8 @@
 <model ref="r:0cb4b184-9d83-4ed6-8dd4-842bbe536e91(com.mbeddr.analyses.cbmc.rt.analyses.claims)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -35,7 +36,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -173,7 +174,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -206,7 +207,7 @@
       <concept id="1202077725299" name="jetbrains.mps.baseLanguage.structure.DefaultSetAccessor" flags="ng" index="3xqBd$">
         <child id="1202077744034" name="visibility" index="3xqFEP" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
@@ -232,12 +233,20 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
       </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -247,6 +256,20 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
@@ -254,7 +277,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -298,8 +321,12 @@
       <node concept="Xl_RD" id="6kQ$1ab4gdx" role="33vP2m">
         <property role="Xl_RC" value=" check OK (no Verification Condition found)" />
       </node>
-      <node concept="NWlO9" id="6kQ$1ab4nu$" role="lGtFl">
-        <property role="NWlVz" value="Message that no verification condition was found from the current entry." />
+      <node concept="z59LJ" id="70cGcTIKjJm" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJk" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJl" role="1dT_Ay">
+            <property role="1dT_AB" value="Message that no verification condition was found from the current entry." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3j1m3K" role="jymVt" />
@@ -311,8 +338,12 @@
       <node concept="3Tm1VV" id="7AULegk42mG" role="1B3o_S" />
       <node concept="3clFbT" id="71B0VAs1cxo" role="33vP2m" />
       <node concept="10P_77" id="E31tqQCaMa" role="1tU5fm" />
-      <node concept="NWlO9" id="48FvRIzKuUp" role="lGtFl">
-        <property role="NWlVz" value="Should we debug?" />
+      <node concept="z59LJ" id="70cGcTIKjJp" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJn" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJo" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we debug?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="21ftQP2m6R9" role="jymVt" />
@@ -358,8 +389,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="48FvRIzLvXK" role="lGtFl">
-        <property role="NWlVz" value="Chain of filters of irrelevant claims." />
+      <node concept="z59LJ" id="70cGcTIKjJs" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJr" role="1dT_Ay">
+            <property role="1dT_AB" value="Chain of filters of irrelevant claims." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2H5doxuk8$O" role="jymVt" />
@@ -370,8 +405,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="6mJYm3j3Doy" role="1B3o_S" />
       <node concept="10Oyi0" id="1aqqXyJJ1oU" role="1tU5fm" />
-      <node concept="NWlO9" id="48FvRIzLIl$" role="lGtFl">
-        <property role="NWlVz" value="Timeout in seconds for a single claim check." />
+      <node concept="z59LJ" id="70cGcTIKjJv" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJt" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJu" role="1dT_Ay">
+            <property role="1dT_AB" value="Timeout in seconds for a single claim check." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3j1p44" role="jymVt" />
@@ -382,8 +421,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="6mJYm3jfgkA" role="1B3o_S" />
       <node concept="17QB3L" id="6mJYm3jl9ZS" role="1tU5fm" />
-      <node concept="NWlO9" id="6mJYm3jfgkC" role="lGtFl">
-        <property role="NWlVz" value="User friendly high-level analysis name (e.g. robustness / assersion)." />
+      <node concept="z59LJ" id="70cGcTIKjJy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJx" role="1dT_Ay">
+            <property role="1dT_AB" value="User friendly high-level analysis name (e.g. robustness / assersion)." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3jfc1t" role="jymVt" />
@@ -397,8 +440,12 @@
       <node concept="3clFbT" id="6t0q$z$wWGh" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
-      <node concept="NWlO9" id="48FvRIzR81i" role="lGtFl">
-        <property role="NWlVz" value="Should the claims from the entry point in analysis be included? (NO in case of generated wrappers)" />
+      <node concept="z59LJ" id="70cGcTIKjJ_" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJz" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJ$" role="1dT_Ay">
+            <property role="1dT_AB" value="Should the claims from the entry point in analysis be included? (NO in case of generated wrappers)" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3jcTBI" role="jymVt" />
@@ -412,8 +459,12 @@
         </node>
       </node>
       <node concept="17QB3L" id="48FvRIzHd3K" role="2RkE6I" />
-      <node concept="NWlO9" id="48FvRIzMlMX" role="lGtFl">
-        <property role="NWlVz" value="The user friendly name for the entry in analysis." />
+      <node concept="2aEySx" id="70cGcTIKjJA" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjJB" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjJC" role="19SJt6">
+            <property role="19SUeA" value="The user friendly name for the entry in analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3jdl71" role="jymVt" />
@@ -496,8 +547,12 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="6mJYm3j1p5f" role="1B3o_S" />
-      <node concept="NWlO9" id="6mJYm3j2KCq" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKjJF" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJD" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJE" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3j1p4p" role="jymVt" />
@@ -525,8 +580,12 @@
         <property role="TrG5h" value="claimDescription" />
         <node concept="17QB3L" id="6mJYm3j6cya" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6mJYm3j1p2B" role="lGtFl">
-        <property role="NWlVz" value="Builder for lifted results -- analyzed node is the original node for which the claim was generated." />
+      <node concept="P$JXv" id="70cGcTIKjJI" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJG" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJH" role="1dT_Ay">
+            <property role="1dT_AB" value="Builder for lifted results -- analyzed node is the original node for which the claim was generated." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6mJYm3j13OP" role="1B3o_S" />
@@ -541,9 +600,6 @@
       <node concept="3uibUv" id="4lR09cg8$az" role="3ztrMU">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-    </node>
-    <node concept="NWlO9" id="6mJYm3j2KG5" role="lGtFl">
-      <property role="NWlVz" value="Analyzers for claims." />
     </node>
     <node concept="2tJIrI" id="6mJYm3j5tcy" role="jymVt" />
     <node concept="3clFb_" id="6mJYm3jaJVE" role="jymVt">
@@ -562,8 +618,12 @@
           <ref role="3uigEE" to="tzyt:tGR6edUFtE" resolve="CBMCAnalysisConfig" />
         </node>
       </node>
-      <node concept="NWlO9" id="6mJYm3jbfns" role="lGtFl">
-        <property role="NWlVz" value="Returns a list with CBMC arguments from the config." />
+      <node concept="P$JXv" id="70cGcTIKjJO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJN" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a list with CBMC arguments from the config." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6mJYm3jaZZY" role="jymVt" />
@@ -574,11 +634,15 @@
       <property role="3TUv4t" value="false" />
       <node concept="3cpWsb" id="4fvA6ORCrXd" role="1tU5fm" />
       <node concept="3Tm6S6" id="1Gh$g1vHxN4" role="1B3o_S" />
-      <node concept="NWlO9" id="48FvRIzMxvY" role="lGtFl">
-        <property role="NWlVz" value="How much time have all single claim analyses needed so far together." />
-      </node>
       <node concept="3cmrfG" id="48FvRIzNmX7" role="33vP2m">
         <property role="3cmrfH" value="0" />
+      </node>
+      <node concept="z59LJ" id="70cGcTIKjJR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJQ" role="1dT_Ay">
+            <property role="1dT_AB" value="How much time have all single claim analyses needed so far together." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4fvA6ORyvQJ" role="jymVt" />
@@ -835,8 +899,12 @@
       <node concept="2AHcQZ" id="4fvA6ORyHK_" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4fvA6ORyMPD" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjJU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJS" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJT" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="mb65_hz1$p" role="jymVt" />
@@ -916,8 +984,12 @@
           <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
         </node>
       </node>
-      <node concept="NWlO9" id="gVSEsVecGH" role="lGtFl">
-        <property role="NWlVz" value="Collects relevant claims and filters them." />
+      <node concept="P$JXv" id="70cGcTIKjJX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJW" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects relevant claims and filters them." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1Ozf0xzOPra" role="jymVt" />
@@ -926,9 +998,6 @@
       <property role="TrG5h" value="filterClaims" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="4fvA6ORCZDj" role="lGtFl">
-        <property role="NWlVz" value="Filters out irrelevant claims." />
-      </node>
       <node concept="_YKpA" id="3x0R1LJ5Cqn" role="3clF45">
         <node concept="3uibUv" id="3x0R1LJ5Cqo" role="_ZDj9">
           <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
@@ -1087,6 +1156,13 @@
         <node concept="3clFbF" id="1Ozf0xzQQgA" role="3cqZAp">
           <node concept="37vLTw" id="1Ozf0xzQQg$" role="3clFbG">
             <ref role="3cqZAo" node="1Ozf0xzQ$Nn" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjK0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjJY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjJZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Filters out irrelevant claims." />
           </node>
         </node>
       </node>
@@ -1249,8 +1325,12 @@
           <ref role="3uigEE" to="ood5:7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
         </node>
       </node>
-      <node concept="NWlO9" id="3ciBAsaonCA" role="lGtFl">
-        <property role="NWlVz" value="What should we do when no claim was found? By default we create a job that builds a canonical result." />
+      <node concept="P$JXv" id="70cGcTIKjK3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjK1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjK2" role="1dT_Ay">
+            <property role="1dT_AB" value="What should we do when no claim was found? By default we create a job that builds a canonical result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="gVSEsVeukj" role="jymVt" />
@@ -1743,8 +1823,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="3d5MwV8Ggsv" role="lGtFl">
-        <property role="NWlVz" value="Performs the analysis of a set of claims and collects the result" />
+      <node concept="P$JXv" id="70cGcTIKjK6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjK4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjK5" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs the analysis of a set of claims and collects the result" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3d5MwV8UN66" role="jymVt" />
@@ -1840,8 +1924,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="4a8JajkJYFT" role="lGtFl">
-        <property role="NWlVz" value="Lifts the result originating from analyzing a certain claim." />
+      <node concept="P$JXv" id="70cGcTIKjK9" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjK7" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjK8" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the result originating from analyzing a certain claim." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4a8JajkJUDD" role="jymVt" />
@@ -1855,8 +1943,12 @@
       </node>
       <node concept="10P_77" id="6ks7ICTdyTH" role="1tU5fm" />
       <node concept="3Tm6S6" id="6ks7ICTdyTI" role="1B3o_S" />
-      <node concept="NWlO9" id="6ks7ICTdyTJ" role="lGtFl">
-        <property role="NWlVz" value="Do we have cancel when calling CBMC to collect claims?" />
+      <node concept="z59LJ" id="70cGcTIKjKc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKa" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKb" role="1dT_Ay">
+            <property role="1dT_AB" value="Do we have cancel when calling CBMC to collect claims?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6ks7ICTdx4c" role="jymVt" />
@@ -1870,8 +1962,12 @@
       </node>
       <node concept="10P_77" id="1iGXuG0bjBc" role="1tU5fm" />
       <node concept="3Tm6S6" id="1iGXuG0br0Z" role="1B3o_S" />
-      <node concept="NWlO9" id="48FvRIzQT_7" role="lGtFl">
-        <property role="NWlVz" value="Do we have runtime error when calling CBMC to collect claims?" />
+      <node concept="z59LJ" id="70cGcTIKjKf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKe" role="1dT_Ay">
+            <property role="1dT_AB" value="Do we have runtime error when calling CBMC to collect claims?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="48FvRIzQUP9" role="jymVt" />
@@ -1885,8 +1981,12 @@
       </node>
       <node concept="3Tm6S6" id="1iGXuG0docX" role="1B3o_S" />
       <node concept="17QB3L" id="1iGXuG0dsnj" role="1tU5fm" />
-      <node concept="NWlO9" id="6mJYm3jcodO" role="lGtFl">
-        <property role="NWlVz" value="Error message when collecting claims fails." />
+      <node concept="z59LJ" id="70cGcTIKjKi" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKh" role="1dT_Ay">
+            <property role="1dT_AB" value="Error message when collecting claims fails." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="48FvRIzPCve" role="jymVt" />
@@ -1897,8 +1997,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6izRX52NNI7" role="1B3o_S" />
       <node concept="17QB3L" id="6izRX52NSi9" role="1tU5fm" />
-      <node concept="NWlO9" id="6izRX52O3TT" role="lGtFl">
-        <property role="NWlVz" value="Raw CBMC output when collecting the claims fails or when all claims were filtered out." />
+      <node concept="z59LJ" id="70cGcTIKjKl" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKj" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKk" role="1dT_Ay">
+            <property role="1dT_AB" value="Raw CBMC output when collecting the claims fails or when all claims were filtered out." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6izRX52NXOI" role="jymVt" />
@@ -1909,8 +2013,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4$9c1ZybNT2" role="1B3o_S" />
       <node concept="17QB3L" id="4$9c1ZybNT3" role="1tU5fm" />
-      <node concept="NWlO9" id="4$9c1ZybNT4" role="lGtFl">
-        <property role="NWlVz" value="The command ran for collecting claims." />
+      <node concept="z59LJ" id="70cGcTIKjKo" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKm" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKn" role="1dT_Ay">
+            <property role="1dT_AB" value="The command ran for collecting claims." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4$9c1ZybL$M" role="jymVt" />
@@ -2284,8 +2392,12 @@
           <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
         </node>
       </node>
-      <node concept="NWlO9" id="48FvRIzPrCC" role="lGtFl">
-        <property role="NWlVz" value="Collect all claims." />
+      <node concept="P$JXv" id="70cGcTIKjKr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKq" role="1dT_Ay">
+            <property role="1dT_AB" value="Collect all claims." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6ks7ICU_FIF" role="jymVt" />
@@ -2319,8 +2431,19 @@
         <property role="TrG5h" value="claimDescription" />
         <node concept="17QB3L" id="6ks7ICU_P_M" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6ks7ICU_Rup" role="lGtFl">
-        <property role="NWlVz" value="Returns the error label for claimDescription - if the claim does not originate from an error label, then null." />
+      <node concept="P$JXv" id="70cGcTIKjKu" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKs" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKt" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the error label for claimDescription - if the claim does not originate from an error label, then null." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKjJL" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjJJ" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjJK" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzers for claims." />
+        </node>
       </node>
     </node>
   </node>
@@ -2338,13 +2461,21 @@
           <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
         </node>
       </node>
-      <node concept="NWlO9" id="1Ozf0xzOwfE" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this claim must be ignored." />
+      <node concept="P$JXv" id="70cGcTIKjKx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjKv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjKw" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this claim must be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6mJYm3j2KIl" role="1B3o_S" />
-    <node concept="NWlO9" id="1Ozf0xzOvfD" role="lGtFl">
-      <property role="NWlVz" value="Filter for claims." />
+    <node concept="3UR2Jj" id="70cGcTIKjK$" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjKy" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjKz" role="1dT_Ay">
+          <property role="1dT_AB" value="Filter for claims." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

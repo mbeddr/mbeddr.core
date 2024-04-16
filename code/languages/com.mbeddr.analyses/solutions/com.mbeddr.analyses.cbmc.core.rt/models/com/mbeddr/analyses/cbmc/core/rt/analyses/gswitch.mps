@@ -5,9 +5,10 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -44,7 +45,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -135,7 +136,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -158,7 +159,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -178,9 +179,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -192,6 +190,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -242,7 +254,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -964,8 +976,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="576QrOJujdi" role="1B3o_S" />
-      <node concept="NWlO9" id="576QrOJujdj" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK7Yu" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Ys" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Yt" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="576QrOJujdk" role="jymVt" />
@@ -989,8 +1005,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="M7_V6uCekE" role="lGtFl">
-        <property role="NWlVz" value="Keep track the purpose of error labels." />
+      <node concept="z59LJ" id="70cGcTIK7Yx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Yv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Yw" role="1dT_Ay">
+            <property role="1dT_AB" value="Keep track the purpose of error labels." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGXnHr" role="jymVt" />
@@ -1032,8 +1052,12 @@
       <node concept="2AHcQZ" id="cchPmXP7vi" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXP8XC" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Y$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Yy" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Yz" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGX_i6" role="jymVt" />
@@ -1486,8 +1510,12 @@
       </node>
       <node concept="3Tm6S6" id="M7_V6u_aAy" role="1B3o_S" />
       <node concept="3cqZAl" id="M7_V6u_czd" role="3clF45" />
-      <node concept="NWlO9" id="M7_V6uCcr9" role="lGtFl">
-        <property role="NWlVz" value="Collects teh labels to be searched - populates the errorLabels2LabelKinds map." />
+      <node concept="P$JXv" id="70cGcTIK7YB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Y_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YA" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects teh labels to be searched - populates the errorLabels2LabelKinds map." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGXnSG" role="jymVt" />
@@ -1651,8 +1679,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="M7_V6uBmq2" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7YE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7YC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YD" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGYUS8" role="jymVt" />
@@ -1687,8 +1719,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="M7_V6uAKoB" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7YH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7YF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YG" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGXGJh" role="jymVt" />
@@ -1709,8 +1745,12 @@
       <node concept="2AHcQZ" id="576QrOJujiU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="576QrOJujiV" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7YK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7YI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YJ" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGXsrM" role="jymVt" />
@@ -1949,8 +1989,12 @@
         </node>
       </node>
     </node>
-    <node concept="NWlO9" id="576QrOJujiW" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for generic switches." />
+    <node concept="3UR2Jj" id="70cGcTIK7YN" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7YL" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7YM" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for generic switches." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="576QrOJujiX">
@@ -1991,8 +2035,12 @@
           <ref role="ehGHo" to="k146:5oGU$loBRJA" resolve="GSwitchExpression" />
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJun06" role="lGtFl">
-        <property role="NWlVz" value="Computes the label that will be searched while checking the completeness." />
+      <node concept="P$JXv" id="70cGcTIK7YQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7YO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YP" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the label that will be searched while checking the completeness." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGWWj_" role="jymVt" />
@@ -2306,13 +2354,21 @@
           <ref role="ehGHo" to="q46j:4jq$txdSYPw" resolve="ExpressionsPair" />
         </node>
       </node>
-      <node concept="NWlO9" id="2VzlLcGWUl5" role="lGtFl">
-        <property role="NWlVz" value="Computes the label that will be searched while checking the overlapping cases" />
+      <node concept="P$JXv" id="70cGcTIK7YT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7YR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YS" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the label that will be searched while checking the overlapping cases" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2VzlLcGWpS$" role="jymVt" />
-    <node concept="NWlO9" id="576QrOJumZW" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for GSwitchExpression completeness analysis." />
+    <node concept="3UR2Jj" id="70cGcTIK7YW" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7YU" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7YV" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for GSwitchExpression completeness analysis." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="576QrOJujl2">
@@ -2356,12 +2412,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJujlj" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7YZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7YX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7YY" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="576QrOJujlk" role="lGtFl">
-      <property role="NWlVz" value="Factory for GSwitchExpressions analyzers - when called through one-click (not via analysis configuration)." />
+    <node concept="3UR2Jj" id="70cGcTIK7Z2" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Z0" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Z1" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for GSwitchExpressions analyzers - when called through one-click (not via analysis configuration)." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

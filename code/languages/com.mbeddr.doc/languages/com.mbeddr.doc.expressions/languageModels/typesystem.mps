@@ -50,7 +50,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -82,7 +82,7 @@
     </node>
     <node concept="1YaCAy" id="4E$PniRKKXR" role="1YuTPh">
       <property role="TrG5h" value="r" />
-      <ref role="1YaFvo" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+      <ref role="1YaFvo" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
     </node>
   </node>
   <node concept="1YbPZF" id="OBJ3$Vuvqt">

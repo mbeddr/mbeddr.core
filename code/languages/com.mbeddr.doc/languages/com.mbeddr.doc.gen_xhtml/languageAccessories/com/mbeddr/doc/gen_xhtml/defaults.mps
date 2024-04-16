@@ -24,7 +24,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -657,6 +657,11 @@
     <node concept="3zOSV2" id="3aMV05sDRaK" role="3zO_yG">
       <node concept="3zO__Y" id="3aMV05sDRdJ" role="3zO_yJ">
         <property role="3zO_yB" value=".superscript" />
+      </node>
+    </node>
+    <node concept="3zOSV2" id="44D1kYzG0$8" role="3zO_yG">
+      <node concept="3zO__Y" id="44D1kYzG0B9" role="3zO_yJ">
+        <property role="3zO_yB" value=".subscript" />
       </node>
     </node>
   </node>

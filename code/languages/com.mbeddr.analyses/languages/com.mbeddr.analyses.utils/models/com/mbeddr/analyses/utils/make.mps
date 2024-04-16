@@ -6,9 +6,8 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
   </languages>
@@ -17,7 +16,6 @@
     <import index="fn29" ref="r:6ba2667b-185e-45cd-ac65-e4b9d66da28e(jetbrains.mps.smodel.resources)" />
     <import index="i9so" ref="r:9e5578e0-37f0-4c9b-a301-771bcb453678(jetbrains.mps.make.script)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -31,7 +29,6 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hlw7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.save(MPS.Platform/)" />
-    <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="q46j" ref="r:de290943-4e17-4d44-ae22-c863a13543cf(com.mbeddr.analyses.base.structure)" implicit="true" />
   </imports>
@@ -60,7 +57,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
@@ -181,7 +178,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -208,7 +205,7 @@
       <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -241,9 +238,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -262,6 +256,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
@@ -296,7 +304,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -345,8 +353,12 @@
       <node concept="3clFbT" id="15d7XIo_3VM" role="33vP2m">
         <property role="3clFbU" value="false" />
       </node>
-      <node concept="NWlO9" id="15d7XIo_3VN" role="lGtFl">
-        <property role="NWlVz" value="Is the make process active?" />
+      <node concept="z59LJ" id="70cGcTIKdap" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdan" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdao" role="1dT_Ay">
+            <property role="1dT_AB" value="Is the make process active?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="47xghtTLgLK" role="jymVt" />
@@ -408,8 +420,12 @@
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="41thbhvrpPG" role="lGtFl">
-        <property role="NWlVz" value="Returns a future that makes the project." />
+      <node concept="P$JXv" id="70cGcTIKdas" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdaq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdar" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a future that makes the project." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2AZbPfOSPxe" role="jymVt" />
@@ -477,8 +493,12 @@
         <property role="TrG5h" value="shouldRebuild" />
         <node concept="10P_77" id="4FpLBMtUL0s" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4FpLBMtUK3D" role="lGtFl">
-        <property role="NWlVz" value="Returns a future that makes the project. If we run from tests then we should not rebuild." />
+      <node concept="P$JXv" id="70cGcTIKdav" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdat" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdau" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a future that makes the project. If we run from tests then we should not rebuild." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4FpLBMtUJiQ" role="jymVt" />
@@ -583,8 +603,12 @@
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="4Uw4Kib5ewi" role="lGtFl">
-        <property role="NWlVz" value="This method is used from tests where from we we should not rebuild or make on the build server." />
+      <node concept="P$JXv" id="70cGcTIKday" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdaw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdax" role="1dT_Ay">
+            <property role="1dT_AB" value="This method is used from tests where from we we should not rebuild or make on the build server." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4Uw4Kib5dr8" role="jymVt" />
@@ -600,10 +624,14 @@
         <property role="TrG5h" value="shouldRebuild" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="4FpLBMtUMdj" role="1B3o_S" />
-        <node concept="NWlO9" id="4FpLBMtUMdk" role="lGtFl">
-          <property role="NWlVz" value="Flag if we should rebuild." />
-        </node>
         <node concept="10P_77" id="4FpLBMtUMQz" role="1tU5fm" />
+        <node concept="z59LJ" id="70cGcTIKda_" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaz" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKda$" role="1dT_Ay">
+              <property role="1dT_AB" value="Flag if we should rebuild." />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2tJIrI" id="4FpLBMtULO$" role="jymVt" />
       <node concept="312cEg" id="4Uw4Kib5aZf" role="jymVt">
@@ -612,10 +640,14 @@
         <property role="TrG5h" value="onlyLastGeneratedModels" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="4Uw4Kib5aZg" role="1B3o_S" />
-        <node concept="NWlO9" id="4Uw4Kib5aZh" role="lGtFl">
-          <property role="NWlVz" value="Flag if we should only make available the last generated models without make/rebuild." />
-        </node>
         <node concept="10P_77" id="4Uw4Kib5aZi" role="1tU5fm" />
+        <node concept="z59LJ" id="70cGcTIKdaC" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaA" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaB" role="1dT_Ay">
+              <property role="1dT_AB" value="Flag if we should only make available the last generated models without make/rebuild." />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2tJIrI" id="4Uw4Kib5ab8" role="jymVt" />
       <node concept="312cEg" id="7LK0SI3XjY" role="jymVt">
@@ -625,8 +657,12 @@
         <property role="3TUv4t" value="false" />
         <node concept="H_c77" id="7LK0SI4cgl" role="1tU5fm" />
         <node concept="3Tm6S6" id="7kEiJU7CbGn" role="1B3o_S" />
-        <node concept="NWlO9" id="7kEiJU7CbZ$" role="lGtFl">
-          <property role="NWlVz" value="The model to make." />
+        <node concept="z59LJ" id="70cGcTIKdaF" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaD" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaE" role="1dT_Ay">
+              <property role="1dT_AB" value="The model to make." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7uk5GW4LX0X" role="jymVt" />
@@ -636,11 +672,15 @@
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="7uk5GW4LZd0" role="1B3o_S" />
-        <node concept="NWlO9" id="7uk5GW4LZd1" role="lGtFl">
-          <property role="NWlVz" value="The current project." />
-        </node>
         <node concept="3uibUv" id="7uk5GW4M0oS" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+        <node concept="z59LJ" id="70cGcTIKdaI" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaG" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaH" role="1dT_Ay">
+              <property role="1dT_AB" value="The current project." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7uk5GW4LY6h" role="jymVt" />
@@ -715,8 +755,12 @@
           <property role="TrG5h" value="shouldRebuild" />
           <node concept="10P_77" id="4FpLBMtUN3X" role="1tU5fm" />
         </node>
-        <node concept="NWlO9" id="7kEiJU7CcQp" role="lGtFl">
-          <property role="NWlVz" value="Constructor." />
+        <node concept="P$JXv" id="70cGcTIKdaL" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaJ" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaK" role="1dT_Ay">
+              <property role="1dT_AB" value="Constructor." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7Cdqo" role="jymVt" />
@@ -787,8 +831,12 @@
           <property role="TrG5h" value="model" />
           <node concept="H_c77" id="4Uw4Kib5ipZ" role="1tU5fm" />
         </node>
-        <node concept="NWlO9" id="4Uw4Kib5iq4" role="lGtFl">
-          <property role="NWlVz" value="Constructor." />
+        <node concept="P$JXv" id="70cGcTIKdaO" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaM" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaN" role="1dT_Ay">
+              <property role="1dT_AB" value="Constructor." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="4Uw4Kib5hDw" role="jymVt" />
@@ -814,8 +862,12 @@
             <node concept="3clFbT" id="7LK0SI3Drj" role="3clFbG" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7CcWu" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKdaR" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaP" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaQ" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7CdYl" role="jymVt" />
@@ -830,8 +882,12 @@
             <node concept="3clFbT" id="7LK0SI3Drq" role="3clFbG" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Cf6m" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKdaU" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaS" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaT" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7CeyG" role="jymVt" />
@@ -846,8 +902,12 @@
             <node concept="3clFbT" id="7LK0SI3Drx" role="3clFbG" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Cf$6" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKdaX" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaV" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaW" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7LK0SI4ppi" role="jymVt" />
@@ -1131,8 +1191,12 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Cg2k" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKdb0" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdaY" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdaZ" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7LK0SI4oH6" role="jymVt" />
@@ -1351,8 +1415,12 @@
           </node>
         </node>
         <node concept="3Tm6S6" id="47xghtTLkPG" role="1B3o_S" />
-        <node concept="NWlO9" id="4FpLBMtUQ19" role="lGtFl">
-          <property role="NWlVz" value="Rebuilds the project." />
+        <node concept="P$JXv" id="70cGcTIKdb3" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdb1" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdb2" role="1dT_Ay">
+              <property role="1dT_AB" value="Rebuilds the project." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7BkUl" role="jymVt" />
@@ -1411,8 +1479,12 @@
             <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7BUQG" role="lGtFl">
-          <property role="NWlVz" value="Simple wrapper for the progress monitor to get when the generation ended." />
+        <node concept="3UR2Jj" id="70cGcTIKdb6" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdb4" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdb5" role="1dT_Ay">
+              <property role="1dT_AB" value="Simple wrapper for the progress monitor to get when the generation ended." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7BTo5" role="jymVt" />
@@ -1450,12 +1522,20 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Bpt5" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKdb9" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKdb7" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKdb8" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="NWlO9" id="41thbhvrjr1" role="lGtFl">
-        <property role="NWlVz" value="A future that makes and saves the transient models." />
+      <node concept="3UR2Jj" id="70cGcTIKdbc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdba" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbb" role="1dT_Ay">
+            <property role="1dT_AB" value="A future that makes and saves the transient models." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7LK0SI62pT" role="jymVt" />
@@ -1466,13 +1546,21 @@
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
       </node>
       <node concept="3Tm1VV" id="68pU13V1MGu" role="1B3o_S" />
-      <node concept="NWlO9" id="7kEiJU7BOXX" role="lGtFl">
-        <property role="NWlVz" value="The last output model before the text is generated." />
+      <node concept="z59LJ" id="70cGcTIKdbf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbe" role="1dT_Ay">
+            <property role="1dT_AB" value="The last output model before the text is generated." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6SYIklyM6Mh" role="1B3o_S" />
-    <node concept="NWlO9" id="41thbhvrpSr" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for rebuilding the analyzed model." />
+    <node concept="3UR2Jj" id="70cGcTIKdbi" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdbg" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdbh" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for rebuilding the analyzed model." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3AFGfkfpqfj">
@@ -1558,8 +1646,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3fAfgHZ1Zwy" role="1B3o_S" />
-      <node concept="NWlO9" id="6h7pCbAgPXP" role="lGtFl">
-        <property role="NWlVz" value="Returns the absolute path to the directory where the analyses results were saved." />
+      <node concept="P$JXv" id="70cGcTIKdbl" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbj" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbk" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the absolute path to the directory where the analyses results were saved." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3fAfgHZ1YO4" role="jymVt" />
@@ -1598,8 +1690,12 @@
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="6h7pCbA3VEl" role="lGtFl">
-        <property role="NWlVz" value="Returns a sequence with full path names of C files from the generated directory." />
+      <node concept="P$JXv" id="70cGcTIKdbo" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbm" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbn" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a sequence with full path names of C files from the generated directory." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3hNQKr2BZBg" role="jymVt" />
@@ -1718,8 +1814,12 @@
         <property role="TrG5h" value="generatorOutputPath" />
         <node concept="17QB3L" id="1aReOC$fc$c" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6h7pCbA3UKM" role="lGtFl">
-        <property role="NWlVz" value="Returns a sequence with full path names of C files from the generated directory." />
+      <node concept="P$JXv" id="70cGcTIKdbr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbq" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a sequence with full path names of C files from the generated directory." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5jEg_CuwdUR" role="jymVt" />
@@ -1858,8 +1958,12 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
         </node>
       </node>
-      <node concept="NWlO9" id="6h7pCbA957x" role="lGtFl">
-        <property role="NWlVz" value="Returns a sequence with full path names of C files that are relevant for an entry point." />
+      <node concept="P$JXv" id="70cGcTIKdbu" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbs" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbt" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a sequence with full path names of C files that are relevant for an entry point." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4EriiVv$nce" role="jymVt" />
@@ -1942,8 +2046,12 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
         </node>
       </node>
-      <node concept="NWlO9" id="PjgLhiuQ79" role="lGtFl">
-        <property role="NWlVz" value="Returns a full path name for the C file that was generated from the implementation module." />
+      <node concept="P$JXv" id="70cGcTIKdbx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbw" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a full path name for the C file that was generated from the implementation module." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="PjgLhiuPWm" role="jymVt" />
@@ -2315,8 +2423,12 @@
         <node concept="H_c77" id="3hNQKr2Cm0M" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="3hNQKr2Cad4" role="3clF45" />
-      <node concept="NWlO9" id="6h7pCbA96tq" role="lGtFl">
-        <property role="NWlVz" value="Returns the path to the directory where the C files are generated." />
+      <node concept="P$JXv" id="70cGcTIKdb$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdby" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbz" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the path to the directory where the C files are generated." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3hNQKr2C9Yr" role="jymVt" />
@@ -2402,8 +2514,12 @@
       <node concept="3uibUv" id="234BiwphZjW" role="3clF45">
         <ref role="3uigEE" to="guwi:~File" resolve="File" />
       </node>
-      <node concept="NWlO9" id="234BiwphXrX" role="lGtFl">
-        <property role="NWlVz" value="Returns the C file which originates from the implementation module." />
+      <node concept="P$JXv" id="70cGcTIKdbB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdb_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbA" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the C file which originates from the implementation module." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="234BiwphW$Z" role="jymVt" />
@@ -2494,14 +2610,22 @@
         <property role="TrG5h" value="genContext" />
         <node concept="1iwH7U" id="15d7XIoFBlQ" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="15d7XIo_JCZ" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the analyses specific code generation should be enabled (e.g. additional labels)." />
+      <node concept="P$JXv" id="70cGcTIKdbE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdbC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdbD" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the analyses specific code generation should be enabled (e.g. additional labels)." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="15d7XIo_JmX" role="jymVt" />
     <node concept="3Tm1VV" id="15d7XIo_IoV" role="1B3o_S" />
-    <node concept="NWlO9" id="15d7XIo_Nev" role="lGtFl">
-      <property role="NWlVz" value="Utility class to enable analyses specific code generation." />
+    <node concept="3UR2Jj" id="70cGcTIKdbH" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdbF" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdbG" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility class to enable analyses specific code generation." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

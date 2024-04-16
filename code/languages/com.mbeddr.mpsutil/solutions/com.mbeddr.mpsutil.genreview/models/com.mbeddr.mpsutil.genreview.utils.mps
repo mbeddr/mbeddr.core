@@ -6,9 +6,10 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -152,7 +153,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -179,7 +180,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1172058436953" name="jetbrains.mps.baseLanguage.structure.LocalStaticMethodCall" flags="nn" index="3$87h9" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -211,10 +212,19 @@
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
@@ -227,7 +237,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -501,8 +511,12 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="68pU13UVjBR" role="1B3o_S" />
-      <node concept="NWlO9" id="68pU13UVm1b" role="lGtFl">
-        <property role="NWlVz" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+      <node concept="P$JXv" id="70cGcTIKmGW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmGU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmGV" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7U6Ee$b8zRN" role="jymVt" />
@@ -1201,8 +1215,12 @@
       </node>
       <node concept="3Tm1VV" id="k2nxMiuE0q" role="1B3o_S" />
     </node>
-    <node concept="NWlO9" id="55eOZdvWZ1R" role="lGtFl">
-      <property role="NWlVz" value="General utility methods." />
+    <node concept="3UR2Jj" id="70cGcTIKmGZ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKmGX" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKmGY" role="1dT_Ay">
+          <property role="1dT_AB" value="General utility methods." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3dXNG5u6AUL">
@@ -1222,8 +1240,12 @@
           <node concept="2I9FWS" id="2OALdl4Y8PG" role="3rHtpV" />
         </node>
       </node>
-      <node concept="NWlO9" id="2OALdl4Y7yN" role="lGtFl">
-        <property role="NWlVz" value="Cache that maps a program location to all possible original nodes." />
+      <node concept="z59LJ" id="70cGcTIKmH2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmH0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmH1" role="1dT_Ay">
+            <property role="1dT_AB" value="Cache that maps a program location to all possible original nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2OALdl4Y6Ik" role="jymVt" />
@@ -1243,8 +1265,12 @@
       </node>
       <node concept="3Tm1VV" id="2OALdl4XypL" role="1B3o_S" />
       <node concept="3cqZAl" id="2OALdl4XzUz" role="3clF45" />
-      <node concept="NWlO9" id="2OALdl4XBDu" role="lGtFl">
-        <property role="NWlVz" value="Clears the cache for original nodes." />
+      <node concept="P$JXv" id="70cGcTIKmH5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmH3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmH4" role="1dT_Ay">
+            <property role="1dT_AB" value="Clears the cache for original nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3FLb4OJVD5n" role="jymVt" />
@@ -1315,8 +1341,12 @@
       <node concept="3uibUv" id="3dXNG5u6AVs" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="3dXNG5u6AVt" role="lGtFl">
-        <property role="NWlVz" value="Returns the first original node that is traced to a certain file and line." />
+      <node concept="P$JXv" id="70cGcTIKmH8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmH6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmH7" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first original node that is traced to a certain file and line." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3dXNG5u6AVu" role="jymVt" />
@@ -1751,8 +1781,12 @@
       <node concept="3uibUv" id="3dXNG5u6AYi" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="3dXNG5u6AYj" role="lGtFl">
-        <property role="NWlVz" value="Returns all possible original nodes that can be traced to a certain file and line." />
+      <node concept="P$JXv" id="70cGcTIKmHb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmH9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmHa" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all possible original nodes that can be traced to a certain file and line." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="k2nxMit3ns" role="jymVt" />
@@ -1889,8 +1923,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="7kl_6u3QrMr" role="lGtFl">
-        <property role="NWlVz" value="finds lines of code in generated file for certain node selected in the editor" />
+      <node concept="P$JXv" id="70cGcTIKmHe" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmHc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmHd" role="1dT_Ay">
+            <property role="1dT_AB" value="finds lines of code in generated file for certain node selected in the editor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7zKW2MTnyAT" role="jymVt" />
@@ -2015,8 +2053,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="7zKW2MTnyVz" role="lGtFl">
-        <property role="NWlVz" value="Finds lines of code file for certain node selected in the editor" />
+      <node concept="P$JXv" id="70cGcTIKmHh" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKmHf" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKmHg" role="1dT_Ay">
+            <property role="1dT_AB" value="Finds lines of code file for certain node selected in the editor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7zKW2MTrGSg" role="jymVt" />
@@ -2211,8 +2253,12 @@
     </node>
     <node concept="2tJIrI" id="7zKW2MTnyKN" role="jymVt" />
     <node concept="3Tm1VV" id="3dXNG5u6AYl" role="1B3o_S" />
-    <node concept="NWlO9" id="3dXNG5u6AYm" role="lGtFl">
-      <property role="NWlVz" value="Facade for tracing lines from generated files to nodes." />
+    <node concept="3UR2Jj" id="70cGcTIKmHk" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKmHi" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKmHj" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for tracing lines from generated files to nodes." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

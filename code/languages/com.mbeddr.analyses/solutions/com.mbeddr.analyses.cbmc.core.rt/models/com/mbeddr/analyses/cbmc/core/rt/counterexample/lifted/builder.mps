@@ -5,9 +5,10 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -65,7 +66,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -179,7 +180,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -203,7 +204,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -254,9 +255,6 @@
         <child id="3212431740125201976" name="body" index="2jNDYt" />
       </concept>
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -267,6 +265,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -342,7 +354,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -445,8 +457,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3x0R1LIQ83v" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK804" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK802" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK803" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ83w" role="jymVt" />
@@ -1474,12 +1490,16 @@
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="3x0R1LIQ88D" role="lGtFl">
-        <property role="NWlVz" value="Lifts the assignment state for core languages." />
-      </node>
       <node concept="3Tm1VV" id="3x0R1LIQ88E" role="1B3o_S" />
       <node concept="2AHcQZ" id="FRRXmQ_TBG" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK807" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK805" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK806" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the assignment state for core languages." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ88F" role="jymVt" />
@@ -2079,8 +2099,12 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="3x0R1LIQ8b1" role="1B3o_S" />
-      <node concept="NWlO9" id="2yoYFV_J9Lb" role="lGtFl">
-        <property role="NWlVz" value="Returns the variable declaration which is referenced in this assignment." />
+      <node concept="P$JXv" id="70cGcTIK80a" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK808" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK809" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the variable declaration which is referenced in this assignment." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ8b2" role="jymVt" />
@@ -2192,8 +2216,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="wSZHMcmizy" role="lGtFl">
-        <property role="NWlVz" value="Computes the name of the return variable." />
+      <node concept="P$JXv" id="70cGcTIK80d" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80b" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80c" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the name of the return variable." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="wSZHMcmhki" role="jymVt" />
@@ -2321,8 +2349,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="3x0R1LIQ8bL" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this assignment is to a closure." />
+      <node concept="P$JXv" id="70cGcTIK80g" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80e" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80f" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this assignment is to a closure." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ8bM" role="jymVt" />
@@ -2448,8 +2480,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="wSZHMcbZt_" role="lGtFl">
-        <property role="NWlVz" value="CBMC naming convention for return values of functions." />
+      <node concept="P$JXv" id="70cGcTIK80j" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80h" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80i" role="1dT_Ay">
+            <property role="1dT_AB" value="CBMC naming convention for return values of functions." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4wDMkkpFwsA" role="jymVt" />
@@ -2498,8 +2534,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="3PybDyp85JQ" role="lGtFl">
-        <property role="NWlVz" value="CBMC convention for accesses to pointers." />
+      <node concept="P$JXv" id="70cGcTIK80m" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80k" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80l" role="1dT_Ay">
+            <property role="1dT_AB" value="CBMC convention for accesses to pointers." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3PybDyp84aP" role="jymVt" />
@@ -2537,18 +2577,19 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3YuThaZ3uWt" role="1B3o_S" />
-      <node concept="NWlO9" id="3YuThaZ3yHM" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQA2dk" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK80p" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80n" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80o" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4wDMkkpFxhK" role="jymVt" />
     <node concept="3Tm1VV" id="3x0R1LIQ8c$" role="1B3o_S" />
-    <node concept="NWlO9" id="3x0R1LIQ8c_" role="lGtFl">
-      <property role="NWlVz" value="Lifts assignments for the mbeddr.core languages." />
-    </node>
     <node concept="3uibUv" id="3x0R1LIQ8cA" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>
@@ -2772,8 +2813,12 @@
       <node concept="2AHcQZ" id="4wDMkkpFypP" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4wDMkkpFzLu" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK80v" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80t" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80u" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2HfUidu_w23" role="jymVt" />
@@ -2880,8 +2925,12 @@
         <property role="TrG5h" value="fullLHSValue" />
         <node concept="17QB3L" id="2HfUiduAfCq" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2HfUiduAHZw" role="lGtFl">
-        <property role="NWlVz" value="Lifts an assignment to enum." />
+      <node concept="P$JXv" id="70cGcTIK80y" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80w" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80x" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts an assignment to enum." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2yoYFV_L6j8" role="jymVt" />
@@ -3185,8 +3234,12 @@
         <property role="TrG5h" value="lhsVal" />
         <node concept="17QB3L" id="2yoYFV_L852" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2yoYFV_L853" role="lGtFl">
-        <property role="NWlVz" value="Lifts an enum value." />
+      <node concept="P$JXv" id="70cGcTIK80_" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80z" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80$" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts an enum value." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2yoYFV_L6zr" role="jymVt" />
@@ -3393,8 +3446,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="2yoYFV_Mjd0" role="lGtFl">
-        <property role="NWlVz" value="Lifts a closure value." />
+      <node concept="P$JXv" id="70cGcTIK80C" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80A" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80B" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts a closure value." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2yoYFV_MhEG" role="jymVt" />
@@ -3557,11 +3614,22 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="7oz0hCwaeKK" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the LHS of the assignment is mbeddr generation noise." />
+      <node concept="P$JXv" id="70cGcTIK80F" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80D" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80E" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the LHS of the assignment is mbeddr generation noise." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6dVgVd4fczm" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIK80s" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK80q" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK80r" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifts assignments for the mbeddr.core languages." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="3x0R1LIQ8cB">
     <property role="TrG5h" value="FunctionCallsLifterCore" />
@@ -3590,8 +3658,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3x0R1LIQ8cJ" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK80I" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80G" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80H" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ8cK" role="jymVt" />
@@ -3651,11 +3723,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7iLQIU34QYs" role="1B3o_S" />
-      <node concept="NWlO9" id="3YuThaZ3e97" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQqdAW" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK80L" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80J" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80K" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="57Wj6IPcPT_" role="jymVt" />
@@ -3981,9 +4057,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3x0R1LIQ8dT" role="1B3o_S" />
-      <node concept="NWlO9" id="3x0R1LIQ8dU" role="lGtFl">
-        <property role="NWlVz" value="Lifts the function calls for com.mbeddr.core." />
-      </node>
       <node concept="_YKpA" id="1aITAdxvvwv" role="3clF45">
         <node concept="3uibUv" id="1aITAdxvweN" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -3991,6 +4064,13 @@
       </node>
       <node concept="2AHcQZ" id="FRRXmQq88R" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK80O" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80M" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80N" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the function calls for com.mbeddr.core." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="57Wj6IPcK99" role="jymVt" />
@@ -4125,11 +4205,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7iLQIU35yGb" role="1B3o_S" />
-      <node concept="NWlO9" id="7iLQIU35yGc" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this raw state is a noise and should be ignored." />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQq5ke" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK80R" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80P" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80Q" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this raw state is a noise and should be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3YuThaZ3cR$" role="jymVt" />
@@ -4217,8 +4301,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="6Lk2eJDcuC_" role="lGtFl">
-        <property role="NWlVz" value="Returns true of this call originates from a block-expression that was reduced from a DecTab." />
+      <node concept="P$JXv" id="70cGcTIK80U" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80S" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80T" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true of this call originates from a block-expression that was reduced from a DecTab." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6Lk2eJDctzq" role="jymVt" />
@@ -4244,11 +4332,15 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="3x0R1LIQ8dV" role="1B3o_S" />
-    <node concept="NWlO9" id="3x0R1LIQ8dW" role="lGtFl">
-      <property role="NWlVz" value="Lifter of function calls for com.mbeddr.core language." />
-    </node>
     <node concept="3uibUv" id="3x0R1LIQ8dX" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK80X" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK80V" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK80W" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of function calls for com.mbeddr.core language." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3x0R1LIQ8dY">
@@ -4268,11 +4360,15 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3x0R1LIQ8e6" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="395kdzFoSzB" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK810" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK80Y" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK80Z" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LIQ8e7" role="jymVt" />
@@ -4395,11 +4491,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3x0R1LIQ8fg" role="1B3o_S" />
-      <node concept="NWlO9" id="3x0R1LIQ8fh" role="lGtFl">
-        <property role="NWlVz" value="Lifts the function returns for com.mbeddr.core." />
-      </node>
       <node concept="2AHcQZ" id="395kdzFoSjN" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK813" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK811" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK812" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the function returns for com.mbeddr.core." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3YuThaZ3$sq" role="jymVt" />
@@ -4437,11 +4537,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3YuThaZ3_fM" role="1B3o_S" />
-      <node concept="NWlO9" id="3YuThaZ3AzL" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="395kdzFoS33" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK816" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK814" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK815" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="395kdzFoQZb" role="jymVt" />
@@ -4504,19 +4608,27 @@
           <node concept="3clFbT" id="395kdzFoRd9" role="3clFbG" />
         </node>
       </node>
-      <node concept="NWlO9" id="395kdzFoRxP" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="395kdzFoRMu" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK819" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK817" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK818" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="3x0R1LIQ8fj" role="1B3o_S" />
-    <node concept="NWlO9" id="3x0R1LIQ8fk" role="lGtFl">
-      <property role="NWlVz" value="Lifter of function returns for com.mbeddr.core language." />
-    </node>
     <node concept="3uibUv" id="3x0R1LIQ8fl" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK81c" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK81a" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK81b" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of function returns for com.mbeddr.core language." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3x0R1LJ2y3Z">
@@ -4567,8 +4679,12 @@
         <property role="TrG5h" value="rawIdentifier" />
         <node concept="17QB3L" id="3x0R1LJ2y4L" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3NycWlQQQUl" role="lGtFl">
-        <property role="NWlVz" value="Returns the lifted name of a function call or return." />
+      <node concept="P$JXv" id="70cGcTIK81f" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81d" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81e" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the lifted name of a function call or return." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ2y4M" role="jymVt" />
@@ -4832,8 +4948,12 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ2y6H" role="jymVt" />
-    <node concept="NWlO9" id="3NycWlQQQFO" role="lGtFl">
-      <property role="NWlVz" value="Utility for lifting names." />
+    <node concept="3UR2Jj" id="70cGcTIK81i" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK81g" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK81h" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility for lifting names." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7rAi6S1to2X">
@@ -5223,14 +5343,22 @@
         <property role="TrG5h" value="nodeOfInterest" />
         <node concept="3Tqbb2" id="7iLQIU2BbpD" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7iLQIU2C5Wq" role="lGtFl">
-        <property role="NWlVz" value="Returns the most appropriate node for the user to be selected." />
+      <node concept="P$JXv" id="70cGcTIK81l" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81j" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81k" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the most appropriate node for the user to be selected." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7rAi6S1toqg" role="jymVt" />
     <node concept="3Tm1VV" id="7rAi6S1to2Y" role="1B3o_S" />
-    <node concept="NWlO9" id="7rAi6S1toq7" role="lGtFl">
-      <property role="NWlVz" value="Computes the nodes to be selected for mbeddr.core" />
+    <node concept="3UR2Jj" id="70cGcTIK81o" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK81m" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK81n" role="1dT_Ay">
+          <property role="1dT_AB" value="Computes the nodes to be selected for mbeddr.core" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="16yBdWg2kME">
@@ -5251,8 +5379,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="16yBdWg2kMM" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK81r" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81p" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81q" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg2kMN" role="jymVt" />
@@ -5364,11 +5496,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="16yBdWg2kNW" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWg2kNX" role="lGtFl">
-        <property role="NWlVz" value="Lifts the function returns for com.mbeddr.core." />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQqxBz" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK81u" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81s" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81t" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the function returns for com.mbeddr.core." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg2kNY" role="jymVt" />
@@ -5511,8 +5647,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="16yBdWg2kO9" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWg2kOa" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK81x" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81v" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81w" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpH0R" role="jymVt" />
@@ -5619,17 +5759,25 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4cM$kBlpIyr" role="1B3o_S" />
-      <node concept="NWlO9" id="4cM$kBlpIys" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this raw state is a noise and should be ignored." />
+      <node concept="P$JXv" id="70cGcTIK81$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81y" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81z" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this raw state is a noise and should be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpH1X" role="jymVt" />
     <node concept="3Tm1VV" id="16yBdWg2kOb" role="1B3o_S" />
-    <node concept="NWlO9" id="16yBdWg2kOc" role="lGtFl">
-      <property role="NWlVz" value="Lifter of function returns for decision tables." />
-    </node>
     <node concept="3uibUv" id="16yBdWg2nqz" role="1zkMxy">
       <ref role="3uigEE" node="16yBdWg1Y0Y" resolve="FunctionCallsAndReturnsDecTabLifterBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK81B" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK81_" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK81A" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of function returns for decision tables." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4cM$kBlpK0i">
@@ -5650,8 +5798,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4cM$kBlpK0q" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK81E" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81C" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81D" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpK0r" role="jymVt" />
@@ -5695,12 +5847,16 @@
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="4cM$kBlpK8i" role="lGtFl">
-        <property role="NWlVz" value="Lifts the assignment state for core languages." />
-      </node>
       <node concept="3Tm1VV" id="4cM$kBlpK8j" role="1B3o_S" />
       <node concept="2AHcQZ" id="FRRXmQpVoY" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK81H" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81F" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81G" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the assignment state for core languages." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpKde" role="jymVt" />
@@ -5761,18 +5917,19 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4cM$kBlpKdp" role="1B3o_S" />
-      <node concept="NWlO9" id="4cM$kBlpKdq" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQpV8E" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK81K" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81I" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81J" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4cM$kBlpKdr" role="jymVt" />
     <node concept="3Tm1VV" id="4cM$kBlpKds" role="1B3o_S" />
-    <node concept="NWlO9" id="4cM$kBlpKdt" role="lGtFl">
-      <property role="NWlVz" value="Lifts assignments for the mbeddr.core languages." />
-    </node>
     <node concept="3uibUv" id="4cM$kBlpKdu" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>
@@ -5813,8 +5970,19 @@
       <node concept="2AHcQZ" id="4cM$kBlpKe9" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4cM$kBlpKea" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK81Q" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81O" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81P" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK81N" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK81L" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK81M" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifts assignments for the mbeddr.core languages." />
+        </node>
       </node>
     </node>
   </node>
@@ -5837,15 +6005,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="16yBdWg4Toa" role="lGtFl">
-        <property role="NWlVz" value="Stack of decision tables that were entered." />
-      </node>
       <node concept="3rvAFt" id="16yBdWgkZ65" role="1tU5fm">
         <node concept="3uibUv" id="16yBdWgkZXU" role="3rvQeY">
           <ref role="3uigEE" to="wyt6:~Thread" resolve="Thread" />
         </node>
         <node concept="A3Dl8" id="1zr33ZvinPW" role="3rvSg0">
           <node concept="17QB3L" id="1zr33ZvinPY" role="A3Ik2" />
+        </node>
+      </node>
+      <node concept="z59LJ" id="70cGcTIK81T" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81R" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81S" role="1dT_Ay">
+            <property role="1dT_AB" value="Stack of decision tables that were entered." />
+          </node>
         </node>
       </node>
     </node>
@@ -5856,11 +6028,15 @@
       <property role="TrG5h" value="decTabStack" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="16yBdWgc1qL" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWgc32l" role="lGtFl">
-        <property role="NWlVz" value="The decision table stack shared by all objects of this thread." />
-      </node>
       <node concept="oyxx6" id="16yBdWgkQr8" role="1tU5fm">
         <node concept="17QB3L" id="16yBdWglPIQ" role="3O5elw" />
+      </node>
+      <node concept="z59LJ" id="70cGcTIK81W" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81U" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81V" role="1dT_Ay">
+            <property role="1dT_AB" value="The decision table stack shared by all objects of this thread." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWgc28k" role="jymVt" />
@@ -5928,8 +6104,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="16yBdWglQzx" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWgm2R_" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK81Z" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK81X" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK81Y" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1zr33ZvnD43" role="jymVt" />
@@ -6003,16 +6183,24 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1zr33Zvn4JV" role="1B3o_S" />
-      <node concept="NWlO9" id="1zr33Zvn6vN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK822" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK820" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK821" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="16yBdWg1Y0Z" role="1B3o_S" />
     <node concept="3uibUv" id="16yBdWg2Kl2" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU37gC6" resolve="FunctionCallsAndReturnsLifterBase" />
     </node>
-    <node concept="NWlO9" id="16yBdWg22hf" role="lGtFl">
-      <property role="NWlVz" value="Base class for lifter of function calls and returns originating from decision tables." />
+    <node concept="3UR2Jj" id="70cGcTIK825" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK823" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK824" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for lifter of function calls and returns originating from decision tables." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="16yBdWg22Wm">
@@ -6033,8 +6221,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="16yBdWg22Wu" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK828" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK826" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK827" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg22Wv" role="jymVt" />
@@ -6224,11 +6416,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="16yBdWg22WG" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWg22WH" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQqh4$" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82b" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK829" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82a" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg22WI" role="jymVt" />
@@ -6612,9 +6808,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="16yBdWg22ZC" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWg22ZD" role="lGtFl">
-        <property role="NWlVz" value="Lifts the entries into decision tables." />
-      </node>
       <node concept="_YKpA" id="16yBdWg22ZE" role="3clF45">
         <node concept="3uibUv" id="16yBdWg22ZF" role="_ZDj9">
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
@@ -6622,6 +6815,13 @@
       </node>
       <node concept="2AHcQZ" id="FRRXmQqkly" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82e" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82c" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82d" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the entries into decision tables." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg22ZG" role="jymVt" />
@@ -6682,11 +6882,15 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="16yBdWg230a" role="1B3o_S" />
-      <node concept="NWlO9" id="16yBdWg230b" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this raw state is a noise and should be ignored." />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQqnrE" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82h" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82f" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82g" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this raw state is a noise and should be ignored." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg230c" role="jymVt" />
@@ -6797,8 +7001,12 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="NWlO9" id="16yBdWg230F" role="lGtFl">
-        <property role="NWlVz" value="Returns true of this call originates from a block-expression that was reduced from a DecTab." />
+      <node concept="P$JXv" id="70cGcTIK82k" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82i" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82j" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true of this call originates from a block-expression that was reduced from a DecTab." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="16yBdWg230G" role="jymVt" />
@@ -6825,11 +7033,15 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="16yBdWg230Q" role="1B3o_S" />
-    <node concept="NWlO9" id="16yBdWg230R" role="lGtFl">
-      <property role="NWlVz" value="Lifter of function calls originating from decision tables." />
-    </node>
     <node concept="3uibUv" id="16yBdWg2JDB" role="1zkMxy">
       <ref role="3uigEE" node="16yBdWg1Y0Y" resolve="FunctionCallsAndReturnsDecTabLifterBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK82n" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK82l" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK82m" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifter of function calls originating from decision tables." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="576QrOJcWkT">
@@ -6852,8 +7064,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJcWl1" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK82q" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82o" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82p" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWl2" role="jymVt" />
@@ -7176,12 +7392,16 @@
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJcWsP" role="lGtFl">
-        <property role="NWlVz" value="Lifts the assignment state for core languages." />
-      </node>
       <node concept="3Tm1VV" id="576QrOJcWsQ" role="1B3o_S" />
       <node concept="2AHcQZ" id="FRRXmQpX3V" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82t" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82r" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82s" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the assignment state for core languages." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWsR" role="jymVt" />
@@ -7219,17 +7439,25 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="576QrOJcWyM" role="1B3o_S" />
-      <node concept="NWlO9" id="576QrOJcWyN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQpZoV" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82w" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82u" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82v" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="576QrOJcWyO" role="jymVt" />
     <node concept="3Tm1VV" id="576QrOJcWyP" role="1B3o_S" />
-    <node concept="NWlO9" id="576QrOJcWyQ" role="lGtFl">
-      <property role="NWlVz" value="Lifts failures on nodes for the mbeddr.core languages." />
+    <node concept="3UR2Jj" id="70cGcTIK82z" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK82x" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK82y" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifts failures on nodes for the mbeddr.core languages." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="67iKQ7oFQ6S">
@@ -7249,8 +7477,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="67iKQ7oFQ75" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK82A" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82_" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oFQ76" role="jymVt" />
@@ -7335,12 +7567,16 @@
           <ref role="3uigEE" to="eqhl:54VWoniifwe" resolve="CBMCLiftedCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="67iKQ7oFQdu" role="lGtFl">
-        <property role="NWlVz" value="Lifts the assignment state for core languages." />
-      </node>
       <node concept="3Tm1VV" id="67iKQ7oFQdv" role="1B3o_S" />
       <node concept="2AHcQZ" id="FRRXmQqAcH" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82D" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82B" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82C" role="1dT_Ay">
+            <property role="1dT_AB" value="Lifts the assignment state for core languages." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oFQdw" role="jymVt" />
@@ -7378,18 +7614,19 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="67iKQ7oFQjC" role="1B3o_S" />
-      <node concept="NWlO9" id="67iKQ7oFQjD" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="FRRXmQq_jU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK82G" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82E" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82F" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="67iKQ7oFQjE" role="jymVt" />
     <node concept="3Tm1VV" id="67iKQ7oFQjF" role="1B3o_S" />
-    <node concept="NWlO9" id="67iKQ7oFQjG" role="lGtFl">
-      <property role="NWlVz" value="Lifts locations for the mbeddr.core languages." />
-    </node>
     <node concept="3uibUv" id="67iKQ7oFQjH" role="1zkMxy">
       <ref role="3uigEE" to="8ear:7iLQIU34QN7" resolve="CounterexampleLifterBase" />
     </node>
@@ -7430,8 +7667,19 @@
       <node concept="2AHcQZ" id="67iKQ7oFQkA" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="67iKQ7oFQkB" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK82M" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82K" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82L" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK82J" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK82H" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK82I" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifts locations for the mbeddr.core languages." />
+        </node>
       </node>
     </node>
   </node>
@@ -7611,8 +7859,12 @@
           <ref role="ehGHo" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
         </node>
       </node>
-      <node concept="NWlO9" id="3x0R1LIQ8cy" role="lGtFl">
-        <property role="NWlVz" value="Lift the value." />
+      <node concept="P$JXv" id="70cGcTIK82P" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82N" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82O" role="1dT_Ay">
+            <property role="1dT_AB" value="Lift the value." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3YHIg3ZBa1p" role="jymVt" />
@@ -8024,8 +8276,12 @@
           <ref role="ehGHo" to="tpck:hYa1RjM" resolve="IType" />
         </node>
       </node>
-      <node concept="NWlO9" id="3YHIg3ZBa8C" role="lGtFl">
-        <property role="NWlVz" value="Lift the value." />
+      <node concept="P$JXv" id="70cGcTIK82S" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK82Q" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK82R" role="1dT_Ay">
+            <property role="1dT_AB" value="Lift the value." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3YHIg3ZBa3Q" role="jymVt" />

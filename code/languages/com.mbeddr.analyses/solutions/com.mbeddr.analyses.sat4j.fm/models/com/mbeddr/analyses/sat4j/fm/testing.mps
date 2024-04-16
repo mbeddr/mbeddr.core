@@ -2,8 +2,9 @@
 <model ref="r:6529d99e-f27c-4f0d-b5a8-fdfbedcb1e34(com.mbeddr.analyses.sat4j.fm.testing)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -96,7 +97,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -115,7 +116,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -124,17 +125,25 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -162,7 +171,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -360,8 +369,12 @@
         <property role="TrG5h" value="fmName" />
         <node concept="17QB3L" id="tSjOfAaedC" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="tSjOfAaywV" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a feature model." />
+      <node concept="P$JXv" id="70cGcTIK8dW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dV" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a feature model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAjCvA" role="jymVt" />
@@ -534,8 +547,12 @@
         <property role="TrG5h" value="cmName" />
         <node concept="17QB3L" id="tSjOfAjCIJ" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="tSjOfAjCIK" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a configuration model." />
+      <node concept="P$JXv" id="70cGcTIK8dZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dY" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a configuration model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="tSjOfAjC$r" role="jymVt" />
@@ -688,8 +705,12 @@
         <property role="TrG5h" value="imName" />
         <node concept="17QB3L" id="44j14BH3K9z" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="44j14BH3K9$" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of an implementation module." />
+      <node concept="P$JXv" id="70cGcTIK8e2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8e0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8e1" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of an implementation module." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="44j14BH7S7x" role="jymVt" />
@@ -776,8 +797,12 @@
         <property role="TrG5h" value="m" />
         <node concept="H_c77" id="1X8myJOImrJ" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1X8myJOImrM" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of the variability use within a model." />
+      <node concept="P$JXv" id="70cGcTIK8e5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8e3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8e4" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of the variability use within a model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOIm7j" role="jymVt" />
@@ -864,8 +889,12 @@
         <property role="TrG5h" value="m" />
         <node concept="H_c77" id="1X8myJOVvEe" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1X8myJOVvEf" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of the variability definition within a model." />
+      <node concept="P$JXv" id="70cGcTIK8e8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8e6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8e7" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of the variability definition within a model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1X8myJOVvkt" role="jymVt" />
@@ -961,8 +990,12 @@
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
-      <node concept="NWlO9" id="6eIJF_HROcB" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of the variability use within a solution." />
+      <node concept="P$JXv" id="70cGcTIK8eb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8e9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8ea" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of the variability use within a solution." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4hqHmbTCVrV" role="jymVt" />
@@ -1027,14 +1060,15 @@
         <property role="TrG5h" value="msgPrefix" />
         <node concept="17QB3L" id="4hqHmbTCX3g" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4hqHmbTCY6a" role="lGtFl">
-        <property role="NWlVz" value="Returns first result from list whose userFriendlyNodeMessage starts with a given prefix." />
+      <node concept="P$JXv" id="70cGcTIK8ee" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8ec" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8ed" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns first result from list whose userFriendlyNodeMessage starts with a given prefix." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="tSjOfAadF9" role="1B3o_S" />
-    <node concept="NWlO9" id="tSjOfAaypr" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for testing analyses about variabiity." />
-    </node>
     <node concept="2tJIrI" id="6BowXlDOYaR" role="jymVt" />
     <node concept="2YIFZL" id="6BowXlDOYHL" role="jymVt">
       <property role="TrG5h" value="printResults" />
@@ -1082,11 +1116,22 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="6BowXlDOYIa" role="lGtFl">
-        <property role="NWlVz" value="Prints the user friendly names of results." />
+      <node concept="P$JXv" id="70cGcTIK8ek" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8ei" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8ej" role="1dT_Ay">
+            <property role="1dT_AB" value="Prints the user friendly names of results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6BowXlDOYtd" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIK8eh" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8ef" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8eg" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for testing analyses about variabiity." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

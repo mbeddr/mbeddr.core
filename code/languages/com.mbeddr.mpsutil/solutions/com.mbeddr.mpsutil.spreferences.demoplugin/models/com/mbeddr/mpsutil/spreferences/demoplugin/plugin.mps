@@ -69,7 +69,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -93,7 +93,7 @@
     </language>
   </registry>
   <node concept="30z_3H" id="1e_tNK9mWUI">
-    <property role="TrG5h" value="Aaaaaaa Preferences" />
+    <property role="TrG5h" value="Demo Preferences" />
     <property role="2AH19c" value="false" />
     <property role="1O$AU$" value="false" />
     <ref role="30zxtE" to="tpee:fz12cDA" resolve="ClassConcept" />

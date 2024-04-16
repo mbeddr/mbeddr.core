@@ -22,7 +22,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="watd" ref="r:1a1284ce-37a2-4d35-b38f-a54d85ba3c77(com.mbeddr.spreadsheat.behavior)" implicit="true" />
-    <import index="bxf8" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi(com.mbeddr.spreadsheat/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -49,6 +48,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -117,7 +120,7 @@
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -224,7 +227,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -402,7 +405,7 @@
                           <ref role="37wK5l" to="wowo:~XSSFCellStyle.setFillForegroundColor(org.apache.poi.xssf.usermodel.XSSFColor)" resolve="setFillForegroundColor" />
                           <node concept="2ShNRf" id="1LnB5xdvRbw" role="37wK5m">
                             <node concept="1pGfFk" id="1LnB5xdvRbB" role="2ShVmc">
-                              <ref role="37wK5l" to="wowo:~XSSFColor.&lt;init&gt;(java.awt.Color)" resolve="XSSFColor" />
+                              <ref role="37wK5l" to="wowo:~XSSFColor.&lt;init&gt;(java.awt.Color,org.apache.poi.xssf.usermodel.IndexedColorMap)" resolve="XSSFColor" />
                               <node concept="2YIFZM" id="1LnB5xdGe3U" role="37wK5m">
                                 <ref role="1Pybhc" to="770w:1LnB5xdFTCl" resolve="ColorHelper" />
                                 <ref role="37wK5l" to="770w:1LnB5xdGe2o" resolve="handleFontColor" />
@@ -415,6 +418,7 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="10Nm6u" id="2tOXMOyzuLP" role="37wK5m" />
                             </node>
                           </node>
                         </node>
@@ -429,10 +433,10 @@
                           <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                         </node>
                         <node concept="liA8E" id="1LnB5xdDZkm" role="2OqNvi">
-                          <ref role="37wK5l" to="wowo:~XSSFCellStyle.setFillPattern(short)" resolve="setFillPattern" />
-                          <node concept="10M0yZ" id="7bplM0pa1zy" role="37wK5m">
-                            <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                            <ref role="3cqZAo" to="54ve:~CellStyle.SOLID_FOREGROUND" resolve="SOLID_FOREGROUND" />
+                          <ref role="37wK5l" to="wowo:~XSSFCellStyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType)" resolve="setFillPattern" />
+                          <node concept="Rm8GO" id="2tOXMOyzb90" role="37wK5m">
+                            <ref role="Rm8GQ" to="54ve:~FillPatternType.SOLID_FOREGROUND" resolve="SOLID_FOREGROUND" />
+                            <ref role="1Px2BO" to="54ve:~FillPatternType" resolve="FillPatternType" />
                           </node>
                         </node>
                       </node>
@@ -454,7 +458,6 @@
                 <node concept="3cpWs8" id="1LnB5xdvSKZ" role="3cqZAp">
                   <node concept="3cpWsn" id="1LnB5xdvSL0" role="3cpWs9">
                     <property role="TrG5h" value="border" />
-                    <node concept="10N3zO" id="1LnB5xdvSL1" role="1tU5fm" />
                     <node concept="2YIFZM" id="1LnB5xdHRpB" role="33vP2m">
                       <ref role="37wK5l" to="770w:1LnB5xdHRnl" resolve="borderFor" />
                       <ref role="1Pybhc" to="770w:1LnB5xdHRnk" resolve="BorderHelper" />
@@ -467,6 +470,9 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3uibUv" id="2tOXMOyzmpF" role="1tU5fm">
+                      <ref role="3uigEE" to="54ve:~BorderStyle" resolve="BorderStyle" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbH" id="1LnB5xdvSKY" role="3cqZAp" />
@@ -476,7 +482,7 @@
                       <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                     </node>
                     <node concept="liA8E" id="1LnB5xdvRgQ" role="2OqNvi">
-                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderLeft(short)" resolve="setBorderLeft" />
+                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderLeft(org.apache.poi.ss.usermodel.BorderStyle)" resolve="setBorderLeft" />
                       <node concept="37vLTw" id="5Hxjapw9vah" role="37wK5m">
                         <ref role="3cqZAo" node="1LnB5xdvSL0" resolve="border" />
                       </node>
@@ -489,7 +495,7 @@
                       <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                     </node>
                     <node concept="liA8E" id="1LnB5xdvRo0" role="2OqNvi">
-                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderRight(short)" resolve="setBorderRight" />
+                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderRight(org.apache.poi.ss.usermodel.BorderStyle)" resolve="setBorderRight" />
                       <node concept="37vLTw" id="5Hxjapw9vbW" role="37wK5m">
                         <ref role="3cqZAo" node="1LnB5xdvSL0" resolve="border" />
                       </node>
@@ -502,7 +508,7 @@
                       <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                     </node>
                     <node concept="liA8E" id="1LnB5xdvRoa" role="2OqNvi">
-                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderTop(short)" resolve="setBorderTop" />
+                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderTop(org.apache.poi.ss.usermodel.BorderStyle)" resolve="setBorderTop" />
                       <node concept="37vLTw" id="5Hxjapw9vhj" role="37wK5m">
                         <ref role="3cqZAo" node="1LnB5xdvSL0" resolve="border" />
                       </node>
@@ -515,7 +521,7 @@
                       <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                     </node>
                     <node concept="liA8E" id="1LnB5xdvRok" role="2OqNvi">
-                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderBottom(short)" resolve="setBorderBottom" />
+                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setBorderBottom(org.apache.poi.ss.usermodel.BorderStyle)" resolve="setBorderBottom" />
                       <node concept="2YIFZM" id="1LnB5xdHRpt" role="37wK5m">
                         <ref role="37wK5l" to="770w:1LnB5xdHRnl" resolve="borderFor" />
                         <ref role="1Pybhc" to="770w:1LnB5xdHRnk" resolve="BorderHelper" />
@@ -537,7 +543,7 @@
                       <ref role="3cqZAo" node="1LnB5xdvP2n" resolve="cellStyle" />
                     </node>
                     <node concept="liA8E" id="1LnB5xdHRCA" role="2OqNvi">
-                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setAlignment(short)" resolve="setAlignment" />
+                      <ref role="37wK5l" to="wowo:~XSSFCellStyle.setAlignment(org.apache.poi.ss.usermodel.HorizontalAlignment)" resolve="setAlignment" />
                       <node concept="2YIFZM" id="1LnB5xdHRCG" role="37wK5m">
                         <ref role="37wK5l" to="770w:1LnB5xdHLd9" resolve="alignmentFor" />
                         <ref role="1Pybhc" to="770w:1LnB5xdHLd7" resolve="AlignmentHelper" />
@@ -689,7 +695,7 @@
                         </node>
                         <node concept="2ShNRf" id="1LnB5xdEjuP" role="33vP2m">
                           <node concept="1pGfFk" id="1LnB5xdEjuQ" role="2ShVmc">
-                            <ref role="37wK5l" to="wowo:~XSSFColor.&lt;init&gt;(java.awt.Color)" resolve="XSSFColor" />
+                            <ref role="37wK5l" to="wowo:~XSSFColor.&lt;init&gt;(java.awt.Color,org.apache.poi.xssf.usermodel.IndexedColorMap)" resolve="XSSFColor" />
                             <node concept="2YIFZM" id="1LnB5xdFTKl" role="37wK5m">
                               <ref role="1Pybhc" to="770w:1LnB5xdFTCl" resolve="ColorHelper" />
                               <ref role="37wK5l" to="770w:1LnB5xdGe2o" resolve="handleFontColor" />
@@ -702,6 +708,7 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="10Nm6u" id="2tOXMOyztAO" role="37wK5m" />
                           </node>
                         </node>
                       </node>
@@ -1162,7 +1169,7 @@
                         </node>
                         <node concept="1mIQ4w" id="1LnB5xdvDN6" role="2OqNvi">
                           <node concept="chp4Y" id="1LnB5xdvDN8" role="cj9EA">
-                            <ref role="cht4Q" to="gnwj:1LnB5xdvCoQ" resolve="ColGroup" />
+                            <ref role="cht4Q" to="gnwj:1LnB5xdvCoQ" resolve="ColumnGroup" />
                           </node>
                         </node>
                       </node>
@@ -1707,7 +1714,7 @@
                       <ref role="3cqZAo" node="6qrqamRZOFQ" resolve="excelWorkbook" />
                     </node>
                     <node concept="liA8E" id="7bplM0pbDoh" role="2OqNvi">
-                      <ref role="37wK5l" to="bxf8:~POIXMLDocument.write(java.io.OutputStream)" resolve="write" />
+                      <ref role="37wK5l" to="54ve:~Workbook.write(java.io.OutputStream)" resolve="write" />
                       <node concept="37vLTw" id="7bplM0pbDqu" role="37wK5m">
                         <ref role="3cqZAo" node="1LnB5xdvB7c" resolve="workbookOutputStream" />
                       </node>

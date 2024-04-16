@@ -8,9 +8,11 @@
   <imports>
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -32,8 +34,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -41,7 +44,7 @@
   <node concept="1TIwiD" id="7iLQIU3CO0U">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="LanguageRefWord" />
-    <property role="R4oN_" value="reference a language" />
+    <property role="R4oN_" value="a referenced language" />
     <property role="34LRSv" value="@language" />
     <property role="EcuMT" value="8408742697223012410" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
@@ -49,7 +52,7 @@
   <node concept="1TIwiD" id="3EhlX7RxHj3">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="DevKitRefWord" />
-    <property role="R4oN_" value="reference a devkit" />
+    <property role="R4oN_" value="a referenced devkit" />
     <property role="34LRSv" value="@devkit" />
     <property role="EcuMT" value="4220250885135455427" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
@@ -57,7 +60,7 @@
   <node concept="1TIwiD" id="3OU98G0A5xe">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="SolutionRefWord" />
-    <property role="R4oN_" value="reference a solution" />
+    <property role="R4oN_" value="a referenced solution" />
     <property role="34LRSv" value="@solution" />
     <property role="EcuMT" value="4411878964391860302" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
@@ -71,15 +74,24 @@
     <ref role="1TJDcQ" to="2c95:3mn43GPgUJP" resolve="AbstractRefWord" />
     <node concept="1TJgyj" id="3OU98G0_S3I" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="moduleRef" />
+      <property role="20kJfa" value="moduleRefOld" />
       <property role="IQ2ns" value="4411878964391805166" />
       <ref role="20lvS9" to="hypd:1AZH1sZHi4c" resolve="ModuleReference" />
+      <node concept="asaX9" id="1R2r3DPJFBM" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="7mK357ypJVJ" role="1TKVEi">
+      <property role="IQ2ns" value="8480291644168929007" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="identity" />
+      <ref role="20lvS9" to="dvox:k2ZBl8Cedx" resolve="ModulePointer" />
     </node>
   </node>
   <node concept="1TIwiD" id="1T7O9iWD_71">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="GeneratorRefWord" />
     <property role="EcuMT" value="2181941881723048385" />
+    <property role="34LRSv" value="@generator" />
+    <property role="R4oN_" value="a referenced generator" />
     <ref role="1TJDcQ" node="3OU98G0_S3D" resolve="AbstractModuleRefWord" />
   </node>
 </model>

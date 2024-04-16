@@ -8,7 +8,8 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,7 +24,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -58,7 +59,7 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -72,16 +73,24 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -96,7 +105,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -114,8 +123,12 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="7cDRCwNnyoZ" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7cDRCwNnyp0" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this factory knows how to create a consistency checker depending on the concept of the node." />
+      <node concept="P$JXv" id="70cGcTIK8dB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8d_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dA" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this factory knows how to create a consistency checker depending on the concept of the node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7cDRCwNnyoy" role="jymVt" />
@@ -137,13 +150,21 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="7cDRCwNmhNV" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7cDRCwNmhRy" role="lGtFl">
-        <property role="NWlVz" value="Creates consistency checker depending on the concept of the node." />
+      <node concept="P$JXv" id="70cGcTIK8dE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dD" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates consistency checker depending on the concept of the node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7cDRCwNlVm_" role="1B3o_S" />
-    <node concept="NWlO9" id="7cDRCwNmhRj" role="lGtFl">
-      <property role="NWlVz" value="Factory for variability use consistency checkers." />
+    <node concept="3UR2Jj" id="70cGcTIK8dH" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8dF" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8dG" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for variability use consistency checkers." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7cDRCwNmhSA">
@@ -180,8 +201,12 @@
       <node concept="2AHcQZ" id="7cDRCwNny_F" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7cDRCwNnyBi" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8dK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dJ" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7cDRCwNnyw_" role="jymVt" />
@@ -218,8 +243,12 @@
       <node concept="2AHcQZ" id="7cDRCwNmhWa" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7cDRCwNmhX6" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8dN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dM" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

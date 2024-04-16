@@ -2,8 +2,9 @@
 <model ref="r:8cc5dbbe-405e-410d-82f5-86cd60f5d6aa(utils)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -100,7 +101,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -116,7 +117,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -134,17 +135,25 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -240,7 +249,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -274,9 +283,6 @@
   <node concept="312cEu" id="5Gboyv9DlB9">
     <property role="TrG5h" value="NamingUtils" />
     <node concept="3Tm1VV" id="5Gboyv9DlBa" role="1B3o_S" />
-    <node concept="NWlO9" id="5Gboyv9DlC2" role="lGtFl">
-      <property role="NWlVz" value="Naming utilities." />
-    </node>
     <node concept="2tJIrI" id="5Gboyv9DlCa" role="jymVt" />
     <node concept="2YIFZL" id="5Gboyv9DlCy" role="jymVt">
       <property role="TrG5h" value="tempVarNameForAssign" />
@@ -376,8 +382,12 @@
           <ref role="ehGHo" to="mj1l:7FQByU3CrCM" resolve="Expression" />
         </node>
       </node>
-      <node concept="NWlO9" id="5Gboyv9DlD6" role="lGtFl">
-        <property role="NWlVz" value="Returns the name of the temporary variable local to a ProcType." />
+      <node concept="P$JXv" id="70cGcTIK7RX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7RV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7RW" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name of the temporary variable local to a ProcType." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5Gboyv9Eosm" role="jymVt" />
@@ -411,8 +421,12 @@
         <property role="TrG5h" value="ra" />
         <node concept="3Tqbb2" id="7T$_el86$Ds" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7T$_el86$Dt" role="lGtFl">
-        <property role="NWlVz" value="Returns the name of the global C-level variable holding whether the seed has already been initialized." />
+      <node concept="P$JXv" id="70cGcTIK7S0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7RY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7RZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name of the global C-level variable holding whether the seed has already been initialized." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1BFQdmKfGOs" role="jymVt" />
@@ -475,8 +489,19 @@
           <ref role="ehGHo" to="llb3:5RNtn4cbrGb" resolve="ForEachStatement" />
         </node>
       </node>
-      <node concept="NWlO9" id="27Rmdm_vV_M" role="lGtFl">
-        <property role="NWlVz" value="Returns the name of the variable generated from the index of the ForEachStatement." />
+      <node concept="P$JXv" id="70cGcTIK7S3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7S1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7S2" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the name of the variable generated from the index of the ForEachStatement." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7RU" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7RS" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7RT" role="1dT_Ay">
+          <property role="1dT_AB" value="Naming utilities." />
+        </node>
       </node>
     </node>
   </node>
@@ -532,8 +557,12 @@
         <property role="TrG5h" value="child" />
         <node concept="3Tqbb2" id="5hi7ucOvrIr" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5hi7ucOvt4z" role="lGtFl">
-        <property role="NWlVz" value="Returns the first parent node which is NOT instance of a StatementList." />
+      <node concept="P$JXv" id="70cGcTIK7S6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7S4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7S5" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first parent node which is NOT instance of a StatementList." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7T$_el8lOyT" role="jymVt" />
@@ -575,8 +604,12 @@
         <property role="TrG5h" value="e" />
         <node concept="3Tqbb2" id="7T$_el8lOBB" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7T$_el8lS$6" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this expression is a child of random or nondet assign." />
+      <node concept="P$JXv" id="70cGcTIK7S9" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7S7" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7S8" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this expression is a child of random or nondet assign." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5hi7ucOvrHw" role="jymVt" />
@@ -628,8 +661,12 @@
         <property role="TrG5h" value="e" />
         <node concept="3Tqbb2" id="4ly_4leJE4R" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4ly_4leJE4S" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this expression is the range of a foreach statement." />
+      <node concept="P$JXv" id="70cGcTIK7Sc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Sa" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Sb" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this expression is the range of a foreach statement." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4ly_4leJE2R" role="jymVt" />
@@ -702,8 +739,12 @@
         <property role="TrG5h" value="s" />
         <node concept="3Tqbb2" id="7T$_el8mDSc" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7T$_el8mDSd" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this statement is the guard of a ChoiceLike." />
+      <node concept="P$JXv" id="70cGcTIK7Sf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Sd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Se" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this statement is the guard of a ChoiceLike." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7T$_el8mDPV" role="jymVt" />
@@ -773,14 +814,22 @@
           <ref role="ehGHo" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
         </node>
       </node>
-      <node concept="NWlO9" id="4ly_4leLv3s" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this statement is the body of a Choice." />
+      <node concept="P$JXv" id="70cGcTIK7Si" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Sg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Sh" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this statement is the body of a Choice." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4ly_4leLv1a" role="jymVt" />
     <node concept="3Tm1VV" id="5hi7ucOvrGu" role="1B3o_S" />
-    <node concept="NWlO9" id="5hi7ucOvt8q" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for access to C code." />
+    <node concept="3UR2Jj" id="70cGcTIK7Sl" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Sj" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Sk" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for access to C code." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6AAaFOTC41u">
@@ -1855,9 +1904,6 @@
   <node concept="312cEu" id="n$tw_arcdm">
     <property role="TrG5h" value="StatementsPatcherUtils" />
     <node concept="3Tm1VV" id="n$tw_arcdn" role="1B3o_S" />
-    <node concept="NWlO9" id="n$tw_arceM" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for patching C-level statements inside c_code blocks inside Promela models." />
-    </node>
     <node concept="2tJIrI" id="n$tw_arcf2" role="jymVt" />
     <node concept="2YIFZL" id="n$tw_arcgd" role="jymVt">
       <property role="TrG5h" value="shouldPatchStatement" />
@@ -2309,6 +2355,13 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="n$tw_arcgI" role="1tU5fm">
           <ref role="ehGHo" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7So" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Sm" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Sn" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for patching C-level statements inside c_code blocks inside Promela models." />
         </node>
       </node>
     </node>

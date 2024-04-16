@@ -3,7 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -58,22 +59,30 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
@@ -102,7 +111,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -110,9 +119,6 @@
   <node concept="312cEu" id="3r65a9Far3_">
     <property role="TrG5h" value="StatemachineGeneratorAnalysisUtils" />
     <node concept="3Tm1VV" id="3r65a9Far3A" role="1B3o_S" />
-    <node concept="NWlO9" id="3r65a9FaQ78" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for state-machine generation." />
-    </node>
     <node concept="2tJIrI" id="3r65a9FaQ7I" role="jymVt" />
     <node concept="2YIFZL" id="3r65a9FaQ8v" role="jymVt">
       <property role="TrG5h" value="shouldGenerateLabels" />
@@ -183,9 +189,6 @@
       </node>
       <node concept="3Tm1VV" id="3r65a9FaQ88" role="1B3o_S" />
       <node concept="10P_77" id="3r65a9FaQ8o" role="3clF45" />
-      <node concept="NWlO9" id="3r65a9FaQ8O" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the label should be generated." />
-      </node>
       <node concept="37vLTG" id="3r65a9FaXkd" role="3clF46">
         <property role="TrG5h" value="genContext" />
         <node concept="1iwH7U" id="3r65a9FaXkc" role="1tU5fm" />
@@ -193,6 +196,20 @@
       <node concept="37vLTG" id="3r65a9FaXkL" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="3r65a9FaXlo" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK7PZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7PX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7PY" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the label should be generated." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7PW" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7PU" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7PV" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for state-machine generation." />
+        </node>
       </node>
     </node>
   </node>

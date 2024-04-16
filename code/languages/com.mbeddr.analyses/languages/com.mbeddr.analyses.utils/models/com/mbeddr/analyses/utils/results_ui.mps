@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -46,7 +46,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -183,7 +183,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -208,7 +208,7 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -243,11 +243,6 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -255,12 +250,26 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -353,8 +362,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="TJrbINa7RW" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKdd4" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdd2" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdd3" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Bf6Ux7TBbH" role="jymVt" />
@@ -928,14 +941,15 @@
         <property role="TrG5h" value="i2" />
         <node concept="10Oyi0" id="12KLbTgpYCR" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2WJ8cS_BvPq" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKdd7" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdd5" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdd6" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Bf6Ux7T_Ff" role="jymVt" />
-    <node concept="NWlO9" id="2WJ8cS_Bw12" role="lGtFl">
-      <property role="NWlVz" value="Renderer for the analyses results table." />
-    </node>
     <node concept="3uibUv" id="7Bf6Ux7TyGd" role="EKbjA">
       <ref role="3uigEE" to="c8ee:~TableCellRenderer" resolve="TableCellRenderer" />
     </node>
@@ -957,8 +971,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="TJrbINa7ZN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKddd" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddb" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddc" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKdda" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdd8" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdd9" role="1dT_Ay">
+          <property role="1dT_AB" value="Renderer for the analyses results table." />
+        </node>
       </node>
     </node>
   </node>
@@ -974,8 +999,12 @@
       <node concept="3uibUv" id="7RSjqjskvQa" role="1tU5fm">
         <ref role="3uigEE" node="4wNvmgrbgv0" resolve="AnalysesResultsTreeTableModel" />
       </node>
-      <node concept="NWlO9" id="TJrbINa5SI" role="lGtFl">
-        <property role="NWlVz" value="The model." />
+      <node concept="z59LJ" id="70cGcTIKddg" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdde" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddf" role="1dT_Ay">
+            <property role="1dT_AB" value="The model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4wNvmgra5Ju" role="jymVt" />
@@ -1237,8 +1266,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="TJrbINa6D4" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKddj" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddh" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddi" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4wNvmgrbUZW" role="jymVt" />
@@ -1506,8 +1539,12 @@
         <ref role="3uigEE" to="npwl:TJrbIN7de$" resolve="IAnalysisResult" />
       </node>
     </node>
-    <node concept="NWlO9" id="TJrbINa4xY" role="lGtFl">
-      <property role="NWlVz" value="A tree table for presenting analyses results." />
+    <node concept="3UR2Jj" id="70cGcTIKddm" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKddk" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKddl" role="1dT_Ay">
+          <property role="1dT_AB" value="A tree table for presenting analyses results." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4wNvmgrbgv0">
@@ -4008,8 +4045,12 @@
         <ref role="3uigEE" to="dxuu:~JPopupMenu" resolve="JPopupMenu" />
       </node>
       <node concept="3Tm6S6" id="4RSEWODyx3_" role="1B3o_S" />
-      <node concept="NWlO9" id="1EZfgaQlWvC" role="lGtFl">
-        <property role="NWlVz" value="The menu." />
+      <node concept="z59LJ" id="70cGcTIKddp" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddn" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddo" role="1dT_Ay">
+            <property role="1dT_AB" value="The menu." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EZfgaQlWj_" role="jymVt" />
@@ -4088,15 +4129,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1EZfgaQlUnV" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
-      </node>
       <node concept="37vLTG" id="6lZZfFPiMA3" role="3clF46">
         <property role="TrG5h" value="menu2Actions" />
         <node concept="3rvAFt" id="6lZZfFPiMM9" role="1tU5fm">
           <node concept="17QB3L" id="6lZZfFPiMOJ" role="3rvQeY" />
           <node concept="3uibUv" id="6lZZfFPiMT0" role="3rvSg0">
             <ref role="3uigEE" to="hyam:~ActionListener" resolve="ActionListener" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdds" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddr" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
           </node>
         </node>
       </node>
@@ -4137,11 +4182,15 @@
       </node>
       <node concept="3Tm1VV" id="4RSEWODs9Tl" role="1B3o_S" />
       <node concept="3cqZAl" id="4RSEWODs9Tm" role="3clF45" />
-      <node concept="NWlO9" id="1EZfgaQlUwk" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="1EZfgaQlUEz" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKddv" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddt" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddu" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3clFb_" id="4RSEWODs9Tn" role="jymVt">
@@ -4182,8 +4231,12 @@
       <node concept="2AHcQZ" id="1EZfgaQlUOR" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="1EZfgaQlUYZ" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKddy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddx" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4RSEWODywpI" role="jymVt" />
@@ -4236,16 +4289,24 @@
       </node>
       <node concept="3Tm6S6" id="4RSEWODs9TK" role="1B3o_S" />
       <node concept="3cqZAl" id="4RSEWODs9TL" role="3clF45" />
-      <node concept="NWlO9" id="1EZfgaQlXnF" role="lGtFl">
-        <property role="NWlVz" value="Shows the menu." />
+      <node concept="P$JXv" id="70cGcTIKdd_" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddz" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdd$" role="1dT_Ay">
+            <property role="1dT_AB" value="Shows the menu." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4RSEWODrZzf" role="1B3o_S" />
     <node concept="3uibUv" id="4RSEWODs9wR" role="1zkMxy">
       <ref role="3uigEE" to="hyam:~MouseAdapter" resolve="MouseAdapter" />
     </node>
-    <node concept="NWlO9" id="1EZfgaQlUe6" role="lGtFl">
-      <property role="NWlVz" value="Provider for pop-up menu in the analyses results view." />
+    <node concept="3UR2Jj" id="70cGcTIKddC" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKddA" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKddB" role="1dT_Ay">
+          <property role="1dT_AB" value="Provider for pop-up menu in the analyses results view." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="$Bv_uL$29v">
@@ -4436,12 +4497,20 @@
         <property role="TrG5h" value="i2" />
         <node concept="10Oyi0" id="$Bv_uL$2a5" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2WJ8cS_Bva7" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKddF" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddD" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddE" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="2WJ8cS_Bvq1" role="lGtFl">
-      <property role="NWlVz" value="Renderer for the counterexample table." />
+    <node concept="3UR2Jj" id="70cGcTIKddI" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKddG" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKddH" role="1dT_Ay">
+          <property role="1dT_AB" value="Renderer for the counterexample table." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="31nZcrlJSwS">
@@ -4470,8 +4539,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1EZfgaQnAdq" role="lGtFl">
-        <property role="NWlVz" value="Whitness entries which will be displayed when some filter is applied." />
+      <node concept="z59LJ" id="70cGcTIKddL" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddJ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddK" role="1dT_Ay">
+            <property role="1dT_AB" value="Whitness entries which will be displayed when some filter is applied." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EZfgaQnDXA" role="jymVt" />
@@ -4485,8 +4558,12 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="5Ac5QKE1GFq" role="1B3o_S" />
-      <node concept="NWlO9" id="1EZfgaQnDL_" role="lGtFl">
-        <property role="NWlVz" value="All whitness entries" />
+      <node concept="z59LJ" id="70cGcTIKddO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddN" role="1dT_Ay">
+            <property role="1dT_AB" value="All whitness entries" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1d23YaEmbrh" role="jymVt" />
@@ -4497,8 +4574,12 @@
       <node concept="Xl_RD" id="1gub2tHzbjN" role="33vP2m">
         <property role="Xl_RC" value="" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHbBxW" role="lGtFl">
-        <property role="NWlVz" value="String used to filter the whitness entries." />
+      <node concept="z59LJ" id="70cGcTIKddR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddQ" role="1dT_Ay">
+            <property role="1dT_AB" value="String used to filter the whitness entries." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHbAxb" role="jymVt" />
@@ -4509,8 +4590,12 @@
       <node concept="3clFbT" id="4vtpFxbq$pM" role="33vP2m">
         <property role="3clFbU" value="false" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHbV26" role="lGtFl">
-        <property role="NWlVz" value="Use regular expressions while filtering?" />
+      <node concept="z59LJ" id="70cGcTIKddU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddS" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddT" role="1dT_Ay">
+            <property role="1dT_AB" value="Use regular expressions while filtering?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHbUDd" role="jymVt" />
@@ -4533,8 +4618,12 @@
       <node concept="2AHcQZ" id="2k2dPZHbC61" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHbCnT" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKddX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddW" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="12GRGX_agHw" role="jymVt" />
@@ -4564,8 +4653,12 @@
         <property role="TrG5h" value="rowIndex" />
         <node concept="10Oyi0" id="WwTuEsr05B" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1EZfgaQnHSY" role="lGtFl">
-        <property role="NWlVz" value="Returns the whitness entry at a certain row." />
+      <node concept="P$JXv" id="70cGcTIKde0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKddY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKddZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the whitness entry at a certain row." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="12GRGX_anaQ" role="jymVt" />
@@ -4622,8 +4715,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2k2dPZHbDjb" role="lGtFl">
-        <property role="NWlVz" value="Sets the whitness entries." />
+      <node concept="P$JXv" id="70cGcTIKde3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKde1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKde2" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the whitness entries." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="12GRGX_aRSY" role="jymVt" />
@@ -4633,8 +4730,12 @@
       <node concept="3cqZAl" id="1gub2tHyR4z" role="3clF45" />
       <node concept="3Tm1VV" id="1gub2tHyR4$" role="1B3o_S" />
       <node concept="3clFbS" id="1gub2tHyR4_" role="3clF47" />
-      <node concept="NWlO9" id="1EZfgaQn_Xj" role="lGtFl">
-        <property role="NWlVz" value="Filter the whitness." />
+      <node concept="P$JXv" id="70cGcTIKde6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKde4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKde5" role="1dT_Ay">
+            <property role="1dT_AB" value="Filter the whitness." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1GgrF83gmaz" role="jymVt" />
@@ -4662,8 +4763,12 @@
       <node concept="2AHcQZ" id="3kLBXRr$3oN" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="1EZfgaQnJQe" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKde9" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKde7" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKde8" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5C7jL_4BOga" role="jymVt" />
@@ -4692,8 +4797,12 @@
         <property role="TrG5h" value="str" />
         <node concept="17QB3L" id="2k2dPZHbz$c" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHbGlg" role="lGtFl">
-        <property role="NWlVz" value="Filters the results." />
+      <node concept="P$JXv" id="70cGcTIKdec" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdea" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeb" role="1dT_Ay">
+            <property role="1dT_AB" value="Filters the results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHbzgC" role="jymVt" />
@@ -4722,8 +4831,12 @@
         <property role="TrG5h" value="selected" />
         <node concept="10P_77" id="4vtpFxbqvlE" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHc1To" role="lGtFl">
-        <property role="NWlVz" value="Set use regular expressions while filtering the whitness." />
+      <node concept="P$JXv" id="70cGcTIKdef" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKded" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdee" role="1dT_Ay">
+            <property role="1dT_AB" value="Set use regular expressions while filtering the whitness." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="16euLQ" id="1EZfgaQngo1" role="16eVyc">
@@ -4732,8 +4845,12 @@
         <ref role="3uigEE" to="npwl:1EZfgaQmLrT" resolve="IWhitnessEntry" />
       </node>
     </node>
-    <node concept="NWlO9" id="1EZfgaQny7Q" role="lGtFl">
-      <property role="NWlVz" value="Base class for whitness table models." />
+    <node concept="3UR2Jj" id="70cGcTIKdei" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdeg" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdeh" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for whitness table models." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2WJ8cS_BzNU">
@@ -4845,15 +4962,23 @@
         <property role="TrG5h" value="i2" />
         <node concept="10Oyi0" id="2WJ8cS_BzOT" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="2WJ8cS_BzOU" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="1EZfgaQnKdB" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKdel" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdej" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdek" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="NWlO9" id="2WJ8cS_BzQ2" role="lGtFl">
-      <property role="NWlVz" value="Renderer for the index column." />
+    <node concept="3UR2Jj" id="70cGcTIKdeo" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdem" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKden" role="1dT_Ay">
+          <property role="1dT_AB" value="Renderer for the index column." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1EZfgaQov3P">
@@ -4868,8 +4993,12 @@
       <node concept="3uibUv" id="2k2dPZHdiCx" role="1tU5fm">
         <ref role="3uigEE" node="31nZcrlJSwS" resolve="WhitnessTableModelBase" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHdjwd" role="lGtFl">
-        <property role="NWlVz" value="The model of the whitness table." />
+      <node concept="z59LJ" id="70cGcTIKder" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdep" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeq" role="1dT_Ay">
+            <property role="1dT_AB" value="The model of the whitness table." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHdka8" role="jymVt" />
@@ -5089,8 +5218,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1EZfgaQsHxR" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKdeu" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdes" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdet" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHbqJr" role="jymVt" />
@@ -5176,13 +5309,17 @@
     <node concept="3uibUv" id="1EZfgaQova0" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JTable" resolve="JTable" />
     </node>
-    <node concept="NWlO9" id="1EZfgaQoVkT" role="lGtFl">
-      <property role="NWlVz" value="Table containing the whitness." />
-    </node>
     <node concept="16euLQ" id="2k2dPZHcTlr" role="16eVyc">
       <property role="TrG5h" value="T" />
       <node concept="3uibUv" id="2k2dPZHcUMK" role="3ztrMU">
         <ref role="3uigEE" to="npwl:1EZfgaQmLrT" resolve="IWhitnessEntry" />
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKdex" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdev" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdew" role="1dT_Ay">
+          <property role="1dT_AB" value="Table containing the whitness." />
+        </node>
       </node>
     </node>
   </node>
@@ -5203,9 +5340,6 @@
       <node concept="3uibUv" id="1GgrF83etCj" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Font" resolve="Font" />
       </node>
-      <node concept="NWlO9" id="2k2dPZH7yNa" role="lGtFl">
-        <property role="NWlVz" value="Font used in different texts." />
-      </node>
       <node concept="2OqwBi" id="5FbNLoBKcm5" role="33vP2m">
         <node concept="2YIFZM" id="5FbNLoBKaHr" role="2Oq$k0">
           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
@@ -5213,6 +5347,13 @@
         </node>
         <node concept="liA8E" id="5FbNLoBKjWe" role="2OqNvi">
           <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+        </node>
+      </node>
+      <node concept="z59LJ" id="70cGcTIKde$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdey" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdez" role="1dT_Ay">
+            <property role="1dT_AB" value="Font used in different texts." />
+          </node>
         </node>
       </node>
     </node>
@@ -5226,8 +5367,12 @@
       <node concept="3uibUv" id="TJrbINcjhO" role="1tU5fm">
         <ref role="3uigEE" node="4wNvmgr9OM6" resolve="AnalysesResultsTreeTable" />
       </node>
-      <node concept="NWlO9" id="2k2dPZH85_p" role="lGtFl">
-        <property role="NWlVz" value="Table containing analyses results." />
+      <node concept="z59LJ" id="70cGcTIKdeB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKde_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeA" role="1dT_Ay">
+            <property role="1dT_AB" value="Table containing analyses results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH83G0" role="jymVt" />
@@ -5240,8 +5385,12 @@
       <node concept="3uibUv" id="2k2dPZHbHNS" role="1tU5fm">
         <ref role="3uigEE" node="1EZfgaQov3P" resolve="WhitnessTable" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHb525" role="lGtFl">
-        <property role="NWlVz" value="Table containing the whitness." />
+      <node concept="z59LJ" id="70cGcTIKdeE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeD" role="1dT_Ay">
+            <property role="1dT_AB" value="Table containing the whitness." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHb6xe" role="jymVt" />
@@ -5254,8 +5403,12 @@
       <node concept="3clFbS" id="2k2dPZH6h6n" role="3clF47" />
       <node concept="3Tmbuc" id="2k2dPZH6gFg" role="1B3o_S" />
       <node concept="3cqZAl" id="2k2dPZH6h6g" role="3clF45" />
-      <node concept="NWlO9" id="2k2dPZH6h7W" role="lGtFl">
-        <property role="NWlVz" value="Instantiates additional, UI specific widgets." />
+      <node concept="P$JXv" id="70cGcTIKdeH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeG" role="1dT_Ay">
+            <property role="1dT_AB" value="Instantiates additional, UI specific widgets." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH6gxY" role="jymVt" />
@@ -5270,8 +5423,12 @@
       <node concept="3uibUv" id="2k2dPZH8rd5" role="3clF45">
         <ref role="3uigEE" to="hyam:~MouseListener" resolve="MouseListener" />
       </node>
-      <node concept="NWlO9" id="2k2dPZH8bx9" role="lGtFl">
-        <property role="NWlVz" value="Defines what happens when one clicks on an entry from the analyses results table." />
+      <node concept="P$JXv" id="70cGcTIKdeK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Defines what happens when one clicks on an entry from the analyses results table." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH89Sz" role="jymVt" />
@@ -5284,8 +5441,12 @@
       <node concept="3clFbS" id="2k2dPZHbi7u" role="3clF47" />
       <node concept="3Tmbuc" id="2k2dPZHbgsQ" role="1B3o_S" />
       <node concept="3cqZAl" id="2k2dPZHbi7o" role="3clF45" />
-      <node concept="NWlO9" id="2k2dPZHblmU" role="lGtFl">
-        <property role="NWlVz" value="Creates the whitness and whitness table model." />
+      <node concept="P$JXv" id="70cGcTIKdeN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeM" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates the whitness and whitness table model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHbjJD" role="jymVt" />
@@ -5300,8 +5461,12 @@
       <node concept="3uibUv" id="2k2dPZHavJy" role="3clF45">
         <ref role="3uigEE" to="hyam:~MouseListener" resolve="MouseListener" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHavJz" role="lGtFl">
-        <property role="NWlVz" value="Defines what happens when one clicks on an entry from the whitness table." />
+      <node concept="P$JXv" id="70cGcTIKdeQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeP" role="1dT_Ay">
+            <property role="1dT_AB" value="Defines what happens when one clicks on an entry from the whitness table." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHavqE" role="jymVt" />
@@ -5314,13 +5479,17 @@
       <node concept="3clFbS" id="2k2dPZH8Aml" role="3clF47" />
       <node concept="3Tmbuc" id="2k2dPZH8Amm" role="1B3o_S" />
       <node concept="3cqZAl" id="2k2dPZH8Amn" role="3clF45" />
-      <node concept="NWlO9" id="2k2dPZH8Amo" role="lGtFl">
-        <property role="NWlVz" value="Adds additional widgets to the results UI." />
-      </node>
       <node concept="37vLTG" id="2k2dPZH8WLo" role="3clF46">
         <property role="TrG5h" value="topHalf" />
         <node concept="3uibUv" id="2k2dPZH8WLn" role="1tU5fm">
           <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdeT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeS" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds additional widgets to the results UI." />
+          </node>
         </node>
       </node>
     </node>
@@ -5334,13 +5503,17 @@
       <node concept="3clFbS" id="2k2dPZHacFk" role="3clF47" />
       <node concept="3Tmbuc" id="2k2dPZHacFl" role="1B3o_S" />
       <node concept="3cqZAl" id="2k2dPZHacFm" role="3clF45" />
-      <node concept="NWlO9" id="2k2dPZHacFn" role="lGtFl">
-        <property role="NWlVz" value="Adds additional widgets to the whitness UI." />
-      </node>
       <node concept="37vLTG" id="2k2dPZHacFo" role="3clF46">
         <property role="TrG5h" value="bottomHalf" />
         <node concept="3uibUv" id="2k2dPZHacFp" role="1tU5fm">
           <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdeW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeV" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds additional widgets to the whitness UI." />
+          </node>
         </node>
       </node>
     </node>
@@ -5360,12 +5533,13 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2k2dPZH6xf7" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKdeZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdeX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdeY" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
-    </node>
-    <node concept="NWlO9" id="2k2dPZH6h72" role="lGtFl">
-      <property role="NWlVz" value="Base class for analyses results UI." />
     </node>
     <node concept="2tJIrI" id="2k2dPZH7rc7" role="jymVt" />
     <node concept="3clFb_" id="4_pSipqUFfA" role="jymVt">
@@ -6361,8 +6535,12 @@
           <ref role="3uigEE" to="hyam:~ItemListener" resolve="ItemListener" />
         </node>
       </node>
-      <node concept="NWlO9" id="2k2dPZH7rXO" role="lGtFl">
-        <property role="NWlVz" value="Creates the search panel." />
+      <node concept="P$JXv" id="70cGcTIKdf5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdf3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdf4" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates the search panel." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH7reX" role="jymVt" />
@@ -6438,8 +6616,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4_pSipqUXKt" role="1B3o_S" />
-      <node concept="NWlO9" id="2k2dPZH9Swp" role="lGtFl">
-        <property role="NWlVz" value="Set the analyses results." />
+      <node concept="P$JXv" id="70cGcTIKdf8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdf6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdf7" role="1dT_Ay">
+            <property role="1dT_AB" value="Set the analyses results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoVDDQc" role="jymVt" />
@@ -6471,8 +6653,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7F8$WoVE15P" role="1B3o_S" />
-      <node concept="NWlO9" id="2k2dPZHa3$9" role="lGtFl">
-        <property role="NWlVz" value="Appends a result to the analyses results." />
+      <node concept="P$JXv" id="70cGcTIKdfb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdf9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfa" role="1dT_Ay">
+            <property role="1dT_AB" value="Appends a result to the analyses results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoVDT$7" role="jymVt" />
@@ -6496,8 +6682,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="7yT88Oq7qMN" role="1B3o_S" />
-      <node concept="NWlO9" id="2k2dPZHa5ut" role="lGtFl">
-        <property role="NWlVz" value="Clears all existing results." />
+      <node concept="P$JXv" id="70cGcTIKdfe" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfd" role="1dT_Ay">
+            <property role="1dT_AB" value="Clears all existing results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7yT88Oq7q4i" role="jymVt" />
@@ -6557,8 +6747,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4_pSipqUXKk" role="1B3o_S" />
-      <node concept="NWlO9" id="2k2dPZHa7AS" role="lGtFl">
-        <property role="NWlVz" value="Sets a single result." />
+      <node concept="P$JXv" id="70cGcTIKdfh" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdff" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfg" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets a single result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="16euLQ" id="2k2dPZH9VGS" role="16eVyc">
@@ -6669,8 +6863,19 @@
           <ref role="3uigEE" to="hyam:~ActionListener" resolve="ActionListener" />
         </node>
       </node>
-      <node concept="NWlO9" id="6lZZfFPim6C" role="lGtFl">
-        <property role="NWlVz" value="Adds different menu entries and action listeners to the analyses-results table." />
+      <node concept="P$JXv" id="70cGcTIKdfk" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfi" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfj" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds different menu entries and action listeners to the analyses-results table." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKdf2" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdf0" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdf1" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for analyses results UI." />
+        </node>
       </node>
     </node>
   </node>
@@ -6690,8 +6895,12 @@
           <ref role="37wK5l" to="dxuu:~JTabbedPane.&lt;init&gt;()" resolve="JTabbedPane" />
         </node>
       </node>
-      <node concept="NWlO9" id="3DDJouLEU90" role="lGtFl">
-        <property role="NWlVz" value="Tabbed pane containing different aspects of the raw result." />
+      <node concept="z59LJ" id="70cGcTIKdfn" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfl" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfm" role="1dT_Ay">
+            <property role="1dT_AB" value="Tabbed pane containing different aspects of the raw result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3DDJouLETWz" role="jymVt" />
@@ -6702,12 +6911,16 @@
       <node concept="3uibUv" id="3Hm$$iWjWQw" role="1tU5fm">
         <ref role="3uigEE" to="uipx:1agNx8KBsHD" resolve="GenericSearchPanel" />
       </node>
-      <node concept="NWlO9" id="3DDJouLGcnd" role="lGtFl">
-        <property role="NWlVz" value="Search panel." />
-      </node>
       <node concept="2ShNRf" id="3DDJouLGhj6" role="33vP2m">
         <node concept="HV5vD" id="3DDJouLGiUU" role="2ShVmc">
           <ref role="HV5vE" to="uipx:1agNx8KBsHD" resolve="GenericSearchPanel" />
+        </node>
+      </node>
+      <node concept="z59LJ" id="70cGcTIKdfq" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfo" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfp" role="1dT_Ay">
+            <property role="1dT_AB" value="Search panel." />
+          </node>
         </node>
       </node>
     </node>
@@ -6852,8 +7065,12 @@
         </node>
         <node concept="3clFbH" id="3DDJouLGNoE" role="3cqZAp" />
       </node>
-      <node concept="NWlO9" id="3DDJouLE_J4" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKdft" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfr" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfs" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3DDJouLE$5D" role="jymVt" />
@@ -6960,9 +7177,6 @@
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="3Tmbuc" id="3DDJouLFa0I" role="1B3o_S" />
-      <node concept="NWlO9" id="3DDJouLFa6K" role="lGtFl">
-        <property role="NWlVz" value="Creates a typical text area." />
-      </node>
       <node concept="37vLTG" id="3DDJouLHdn4" role="3clF46">
         <property role="TrG5h" value="tabName" />
         <node concept="17QB3L" id="3DDJouLHebQ" role="1tU5fm" />
@@ -6970,6 +7184,13 @@
       <node concept="37vLTG" id="3DDJouLFdhU" role="3clF46">
         <property role="TrG5h" value="lineWrap" />
         <node concept="10P_77" id="3DDJouLFf71" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdfw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfv" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates a typical text area." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3DDJouLF9rl" role="jymVt" />
@@ -7003,13 +7224,17 @@
         <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
       </node>
       <node concept="3Tmbuc" id="3DDJouLF$2O" role="1B3o_S" />
-      <node concept="NWlO9" id="3DDJouLF$2P" role="lGtFl">
-        <property role="NWlVz" value="Wraps a text area into a scroll pane." />
-      </node>
       <node concept="37vLTG" id="3DDJouLF$2Q" role="3clF46">
         <property role="TrG5h" value="c" />
         <node concept="3uibUv" id="3DDJouLFMps" role="1tU5fm">
           <ref role="3uigEE" to="z60i:~Component" resolve="Component" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKdfz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdfx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdfy" role="1dT_Ay">
+            <property role="1dT_AB" value="Wraps a text area into a scroll pane." />
+          </node>
         </node>
       </node>
     </node>
@@ -7027,16 +7252,24 @@
           <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
         </node>
       </node>
-      <node concept="NWlO9" id="3DDJouLGK8Q" role="lGtFl">
-        <property role="NWlVz" value="Indexes for which we inhibit the search panel." />
+      <node concept="P$JXv" id="70cGcTIKdfA" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKdf$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKdf_" role="1dT_Ay">
+            <property role="1dT_AB" value="Indexes for which we inhibit the search panel." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3DDJouLExSb" role="1B3o_S" />
-    <node concept="NWlO9" id="3DDJouLExTH" role="lGtFl">
-      <property role="NWlVz" value="Base class for analyses raw results." />
-    </node>
     <node concept="3uibUv" id="3DDJouLE$5r" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKdfD" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKdfB" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKdfC" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for analyses raw results." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

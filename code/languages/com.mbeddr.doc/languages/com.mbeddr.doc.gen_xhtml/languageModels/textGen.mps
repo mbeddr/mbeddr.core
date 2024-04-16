@@ -117,7 +117,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -321,7 +321,7 @@
   </node>
   <node concept="WtQ9Q" id="5wmuVxvCMYP">
     <property role="3GE5qa" value="css" />
-    <ref role="WuzLi" to="lsus:5wmuVxvC2gr" resolve="CssSpecification" />
+    <ref role="WuzLi" to="lsus:5wmuVxvC2gr" resolve="CSSSpecification" />
     <node concept="11bSqf" id="5wmuVxvCMYQ" role="11c4hB">
       <node concept="3clFbS" id="5wmuVxvCMYR" role="2VODD2">
         <node concept="lc7rE" id="QRmqzIqrI3" role="3cqZAp">
@@ -339,7 +339,7 @@
   </node>
   <node concept="WtQ9Q" id="QRmqzIqswe">
     <property role="3GE5qa" value="css" />
-    <ref role="WuzLi" to="lsus:QRmqzIpg3m" resolve="CssSelector" />
+    <ref role="WuzLi" to="lsus:QRmqzIpg3m" resolve="CSSSelector" />
     <node concept="11bSqf" id="QRmqzIqswf" role="11c4hB">
       <node concept="3clFbS" id="QRmqzIqswg" role="2VODD2">
         <node concept="lc7rE" id="QRmqzIqswr" role="3cqZAp">
@@ -357,7 +357,7 @@
   </node>
   <node concept="WtQ9Q" id="QRmqzIqrVX">
     <property role="3GE5qa" value="css" />
-    <ref role="WuzLi" to="lsus:QRmqzIpdtE" resolve="CssRuleset" />
+    <ref role="WuzLi" to="lsus:QRmqzIpdtE" resolve="CSSRuleset" />
     <node concept="11bSqf" id="QRmqzIqrVY" role="11c4hB">
       <node concept="3clFbS" id="QRmqzIqrVZ" role="2VODD2">
         <node concept="lc7rE" id="QRmqzIqrWa" role="3cqZAp">
@@ -403,7 +403,7 @@
   </node>
   <node concept="WtQ9Q" id="QRmqzIqsJm">
     <property role="3GE5qa" value="css" />
-    <ref role="WuzLi" to="lsus:QRmqzIpg3J" resolve="CssDeclaration" />
+    <ref role="WuzLi" to="lsus:QRmqzIpg3J" resolve="CSSDeclaration" />
     <node concept="11bSqf" id="QRmqzIqsJn" role="11c4hB">
       <node concept="3clFbS" id="QRmqzIqsJo" role="2VODD2">
         <node concept="lc7rE" id="QRmqzIqsJz" role="3cqZAp">

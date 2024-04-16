@@ -34,7 +34,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
@@ -44,6 +44,8 @@
       <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
+      <concept id="2286331641392318852" name="com.mbeddr.doc.structure.MenuFormattedText" flags="ng" index="2OlAs7" />
+      <concept id="2286331641391049225" name="com.mbeddr.doc.structure.KeyPressFormattedText" flags="ng" index="2OoWia" />
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="4755612053022517119" name="border" index="41Bi8" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
@@ -104,7 +106,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -140,7 +142,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -249,7 +251,7 @@
               <node concept="OjmMv" id="1sNMMH9j0nX" role="3X6T9h">
                 <node concept="19SGf9" id="1sNMMH9j0nY" role="OjmMu">
                   <node concept="19SUe$" id="1sNMMH9j0nZ" role="19SJt6">
-                    <property role="19SUeA" value="Orderd Item 2.1" />
+                    <property role="19SUeA" value="Ordered Item 2.1" />
                   </node>
                 </node>
               </node>
@@ -324,6 +326,36 @@
             <node concept="19SUe$" id="GfNMM3dF6g" role="19SJt6">
               <property role="19SUeA" value="&#10;&#10;" />
             </node>
+            <node concept="1jUjqm" id="1R2r3DPRmle" role="19SJt6">
+              <node concept="19SGf9" id="1R2r3DPRmlf" role="$DsGW">
+                <node concept="19SUe$" id="1R2r3DPRmlg" role="19SJt6">
+                  <property role="19SUeA" value="This is code formatted text" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1R2r3DPRmlh" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;" />
+            </node>
+            <node concept="2OoWia" id="1R2r3DPRmlz" role="19SJt6">
+              <node concept="19SGf9" id="1R2r3DPRml$" role="$DsGW">
+                <node concept="19SUe$" id="1R2r3DPRml_" role="19SJt6">
+                  <property role="19SUeA" value="This is key formatted text" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1R2r3DPRmlA" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;" />
+            </node>
+            <node concept="2OlAs7" id="1R2r3DPRn3H" role="19SJt6">
+              <node concept="19SGf9" id="1R2r3DPRn3I" role="$DsGW">
+                <node concept="19SUe$" id="1R2r3DPRn3J" role="19SJt6">
+                  <property role="19SUeA" value="This is menu formatted text" />
+                </node>
+              </node>
+            </node>
+            <node concept="19SUe$" id="1R2r3DPRn3K" role="19SJt6">
+              <property role="19SUeA" value="&#10;&#10;" />
+            </node>
             <node concept="3d4VFM" id="xxE$BM_wFl" role="19SJt6">
               <node concept="19SGf9" id="xxE$BM_wFm" role="3d4Uyx">
                 <node concept="19SUe$" id="xxE$BM_wFn" role="19SJt6">
@@ -341,7 +373,7 @@
         <node concept="1_0LV8" id="7JweZKTdN1W" role="1_0VJ0">
           <node concept="19SGf9" id="7JweZKTdN1X" role="1_0LWR">
             <node concept="19SUe$" id="7JweZKTdN1Y" role="19SJt6">
-              <property role="19SUeA" value="Link to your favourtie website " />
+              <property role="19SUeA" value="Link to your favourite website " />
             </node>
             <node concept="1hOBRO" id="7JweZKTdNcz" role="19SJt6">
               <node concept="19SGf9" id="7JweZKTdNc$" role="$DsGW">
@@ -431,7 +463,7 @@
           <node concept="OjmMv" id="191H8GfGj$i" role="2SaI5j">
             <node concept="19SGf9" id="191H8GfGj$j" role="OjmMu">
               <node concept="19SUe$" id="191H8GfGj$k" role="19SJt6">
-                <property role="19SUeA" value="A beautifull image" />
+                <property role="19SUeA" value="A beautiful image" />
               </node>
             </node>
           </node>
@@ -447,7 +479,7 @@
           <node concept="OjmMv" id="2BdmVJRqOeO" role="2SaI5j">
             <node concept="19SGf9" id="2BdmVJRqOeP" role="OjmMu">
               <node concept="19SUe$" id="2BdmVJRqOeQ" role="19SJt6">
-                <property role="19SUeA" value="A beautifull animation" />
+                <property role="19SUeA" value="A beautiful animation" />
               </node>
             </node>
           </node>

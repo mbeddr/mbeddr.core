@@ -3,8 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -89,7 +90,7 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -101,7 +102,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
@@ -116,17 +117,25 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
@@ -172,7 +181,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -241,9 +250,6 @@
       </node>
       <node concept="3Tm1VV" id="3r65a9FaQ88" role="1B3o_S" />
       <node concept="10P_77" id="3r65a9FaQ8o" role="3clF45" />
-      <node concept="NWlO9" id="3r65a9FaQ8O" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the label should be generated." />
-      </node>
       <node concept="37vLTG" id="3r65a9FaXkd" role="3clF46">
         <property role="TrG5h" value="genContext" />
         <node concept="1iwH7U" id="3r65a9FaXkc" role="1tU5fm" />
@@ -252,6 +258,13 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="3r65a9FaXlo" role="1tU5fm">
           <ref role="ehGHo" to="k146:5oGU$loBXvt" resolve="DecTab" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIK7Sr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Sp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Sq" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the label should be generated." />
+          </node>
         </node>
       </node>
     </node>
@@ -457,12 +470,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3r65a9FbsDw" role="lGtFl">
-        <property role="NWlVz" value="Builds an expression representing the guard that the dectab is incomplete." />
+      <node concept="P$JXv" id="70cGcTIK7Su" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Ss" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7St" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds an expression representing the guard that the dectab is incomplete." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="3r65a9FbsB2" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for generating decision table analysis code." />
+    <node concept="3UR2Jj" id="70cGcTIK7Sx" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Sv" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Sw" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for generating decision table analysis code." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="576QrOJtUPN">
@@ -508,9 +529,6 @@
       </node>
       <node concept="3Tm1VV" id="576QrOJtUQd" role="1B3o_S" />
       <node concept="10P_77" id="576QrOJtUQe" role="3clF45" />
-      <node concept="NWlO9" id="576QrOJtUQf" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the label should be generated." />
-      </node>
       <node concept="37vLTG" id="576QrOJtUQg" role="3clF46">
         <property role="TrG5h" value="genContext" />
         <node concept="1iwH7U" id="576QrOJtUQh" role="1tU5fm" />
@@ -519,6 +537,13 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="576QrOJtUQj" role="1tU5fm">
           <ref role="ehGHo" to="k146:5oGU$loBRJA" resolve="GSwitchExpression" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIK7S$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Sy" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Sz" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the label should be generated." />
+          </node>
         </node>
       </node>
     </node>
@@ -719,12 +744,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="576QrOJtURO" role="lGtFl">
-        <property role="NWlVz" value="Builds an expression representing the guard that the gswitch is incomplete." />
+      <node concept="P$JXv" id="70cGcTIK7SB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7S_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7SA" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds an expression representing the guard that the gswitch is incomplete." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="576QrOJtURP" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for generating GSwitch analysis code." />
+    <node concept="3UR2Jj" id="70cGcTIK7SE" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7SC" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7SD" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for generating GSwitch analysis code." />
+        </node>
+      </node>
     </node>
   </node>
 </model>
