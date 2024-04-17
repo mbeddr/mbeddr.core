@@ -216,7 +216,7 @@
         <child id="6068976060904007489" name="root" index="30Gjbj" />
       </concept>
       <concept id="6068976060904007493" name="com.mbeddr.doc.structure.IncludableExport" flags="ng" index="30Gjbn" />
-      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NoOutputRenderer" flags="ng" index="1_05Lf" />
+      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NullRenderer" flags="ng" index="1_05Lf" />
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j" />
       <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
