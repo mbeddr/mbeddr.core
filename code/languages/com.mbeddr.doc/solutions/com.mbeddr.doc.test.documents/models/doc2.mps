@@ -171,14 +171,14 @@
       <property role="2SbEId" value="main" />
       <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
-    <node concept="2SbEIf" id="44D1kY$kUEh" role="30Gjbg">
-      <property role="2SbEId" value="imgs" />
-      <ref role="2SbEIe" node="2B9KjOuvX9f" resolve="imgs" />
-    </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
       <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_including_other_docs" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
+    <node concept="2SbEIf" id="44D1kY$kUEh" role="30Gjbg">
+      <property role="2SbEId" value="imgs" />
+      <ref role="2SbEIe" node="2B9KjOuvX9f" resolve="imgs" />
+    </node>
   </node>
   <node concept="2SbYGP" id="2khznRHyx6c">
     <property role="TrG5h" value="Config" />

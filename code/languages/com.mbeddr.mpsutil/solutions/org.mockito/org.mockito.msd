@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.mockito" uuid="9414e29c-0c8d-4bc7-b251-f312597fb993" moduleVersion="0" compileInMPS="true">
+<solution name="org.mockito" uuid="9414e29c-0c8d-4bc7-b251-f312597fb993" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,15 +11,12 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/libs/mockito-core-2.23.4.jar" />
+      <library location="${module}/libs/byte-buddy-1.9.3.jar" />
+      <library location="${module}/libs/byte-buddy-agent-1.9.3.jar" />
+      <library location="${module}/libs/objenesis-2.6.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/libs/mockito-core-2.23.4.jar" />
-    <stubModelEntry path="${module}/libs/byte-buddy-1.9.3.jar" />
-    <stubModelEntry path="${module}/libs/byte-buddy-agent-1.9.3.jar" />
-    <stubModelEntry path="${module}/libs/objenesis-2.6.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
