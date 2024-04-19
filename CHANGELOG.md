@@ -10,11 +10,19 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## com.mbeddr.core
 
 ### Added
+
 - Base: Added possibility to explicitly not display roots of concept `IMbeddrIDERoot` in mbeddr menus.
+
+## com.mbeddr.doc.aspect.ui
+
+### Fixed
+
+- The documentation Tool is now only updated when the selection changed.
 
 ## com.mbeddr.mpsutil
 
 ### Fixed
+
 - EditingGuide: `ProgramFragments` support error suppression, i.e. all model-checking errors are suppressed in `ProgramFragments`, so modelchecker will disregard them and not clutter.
 - EditingGuide: Fragment module depends on its original module, to access data that is needed, but in the original module and not copied to the temporary exercise model.
 - Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
