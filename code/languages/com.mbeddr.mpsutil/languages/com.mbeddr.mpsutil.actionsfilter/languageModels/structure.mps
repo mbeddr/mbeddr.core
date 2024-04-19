@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="1oap" ref="r:03d44d4c-3d65-461c-9085-0f48e9569e59(jetbrains.mps.lang.resources.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -69,11 +69,6 @@
       <property role="IQ2nx" value="3224768364827527719" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="7zBzSouLw1w" role="1TKVEl">
-      <property role="IQ2nx" value="8712089810376196192" />
-      <property role="TrG5h" value="defaultPriority" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyj" id="5FJiYrlIpAq" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="actions" />
@@ -95,6 +90,11 @@
     </node>
     <node concept="PrWs8" id="5FJiYrlIp_E" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7zBzSouLw1w" role="1TKVEl">
+      <property role="IQ2nx" value="8712089810376196192" />
+      <property role="TrG5h" value="defaultPriority" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="5FJiYrlIpAp">

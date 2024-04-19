@@ -140,7 +140,7 @@
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
-      <concept id="3126418051240156265" name="com.mbeddr.doc.structure.Invisible" flags="ng" index="oUDze">
+      <concept id="3126418051240156265" name="com.mbeddr.doc.structure.Invisble" flags="ng" index="oUDze">
         <child id="3126418051240385698" name="contents" index="oVxw5" />
       </concept>
       <concept id="2588579461812060090" name="com.mbeddr.doc.structure.Visualization" flags="ng" index="tKojO">
@@ -172,7 +172,7 @@
       <concept id="5185579450379471862" name="com.mbeddr.doc.structure.StringTableCell" flags="ng" index="1xAuFZ">
         <property id="5185579450379471864" name="text" index="1xAuFL" />
       </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
