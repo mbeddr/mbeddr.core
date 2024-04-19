@@ -223,6 +223,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -538,6 +539,13 @@
         <ref role="3uigEE" node="24MikXOfIA3" resolve="DocumentationHandler" />
       </node>
     </node>
+    <node concept="2BZ0e9" id="2uG4XYD$7kf" role="2uRRBA">
+      <property role="TrG5h" value="lastSelection" />
+      <node concept="3Tm6S6" id="2uG4XYD$7kg" role="1B3o_S" />
+      <node concept="3uibUv" id="2uG4XYD$oqA" role="1tU5fm">
+        <ref role="3uigEE" to="lwvz:~SingularSelection" resolve="SingularSelection" />
+      </node>
+    </node>
     <node concept="2uRRBT" id="5ucAXohL$xS" role="2uRRB$">
       <node concept="3clFbS" id="5ucAXohL$xT" role="2VODD2">
         <node concept="3clFbF" id="24MikXOgRxl" role="3cqZAp">
@@ -552,6 +560,17 @@
               <node concept="2WthIp" id="24MikXOgRxj" role="2Oq$k0" />
               <node concept="2BZ7hE" id="24MikXOgS7T" role="2OqNvi">
                 <ref role="2WH_rO" node="6eatLdhqRsb" resolve="documentationHandler" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2uG4XYD$paF" role="3cqZAp">
+          <node concept="37vLTI" id="2uG4XYD$q0c" role="3clFbG">
+            <node concept="10Nm6u" id="2uG4XYD$q3u" role="37vLTx" />
+            <node concept="2OqwBi" id="2uG4XYD$puN" role="37vLTJ">
+              <node concept="2WthIp" id="2uG4XYD$paD" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="2uG4XYD$pSw" role="2OqNvi">
+                <ref role="2WH_rO" node="2uG4XYD$7kf" resolve="lastSelection" />
               </node>
             </node>
           </node>
@@ -593,23 +612,78 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="2UZ9O9PUISZ" role="3clF47">
-                      <node concept="3clFbF" id="24MikXOgVzR" role="3cqZAp">
-                        <node concept="2OqwBi" id="24MikXOgVUC" role="3clFbG">
-                          <node concept="2OqwBi" id="24MikXOgVzL" role="2Oq$k0">
-                            <node concept="2WthIp" id="24MikXOgVzO" role="2Oq$k0">
-                              <ref role="32nkFo" node="5ucAXohLzkl" resolve="DocumentationProjectPlugin" />
-                            </node>
-                            <node concept="2BZ7hE" id="24MikXOgVzQ" role="2OqNvi">
-                              <ref role="2WH_rO" node="6eatLdhqRsb" resolve="documentationHandler" />
+                      <node concept="3clFbJ" id="2uG4XYD$qGp" role="3cqZAp">
+                        <node concept="3clFbS" id="2uG4XYD$qGr" role="3clFbx">
+                          <node concept="3clFbF" id="24MikXOgVzR" role="3cqZAp">
+                            <node concept="2OqwBi" id="24MikXOgVUC" role="3clFbG">
+                              <node concept="2OqwBi" id="24MikXOgVzL" role="2Oq$k0">
+                                <node concept="2WthIp" id="24MikXOgVzO" role="2Oq$k0">
+                                  <ref role="32nkFo" node="5ucAXohLzkl" resolve="DocumentationProjectPlugin" />
+                                </node>
+                                <node concept="2BZ7hE" id="24MikXOgVzQ" role="2OqNvi">
+                                  <ref role="2WH_rO" node="6eatLdhqRsb" resolve="documentationHandler" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="24MikXOi5Gc" role="2OqNvi">
+                                <ref role="37wK5l" node="24MikXOhwDz" resolve="showDoc" />
+                                <node concept="37vLTw" id="24MikXOi5Wj" role="37wK5m">
+                                  <ref role="3cqZAo" node="2UZ9O9PUISU" resolve="component" />
+                                </node>
+                                <node concept="37vLTw" id="24MikXOi6f9" role="37wK5m">
+                                  <ref role="3cqZAo" node="2UZ9O9PUISW" resolve="selection" />
+                                </node>
+                              </node>
                             </node>
                           </node>
-                          <node concept="liA8E" id="24MikXOi5Gc" role="2OqNvi">
-                            <ref role="37wK5l" node="24MikXOhwDz" resolve="showDoc" />
-                            <node concept="37vLTw" id="24MikXOi5Wj" role="37wK5m">
-                              <ref role="3cqZAo" node="2UZ9O9PUISU" resolve="component" />
+                        </node>
+                        <node concept="1Wc70l" id="2uG4XYD$scT" role="3clFbw">
+                          <node concept="17QLQc" id="2uG4XYD$uAO" role="3uHU7w">
+                            <node concept="2OqwBi" id="2uG4XYD$vcD" role="3uHU7w">
+                              <node concept="37vLTw" id="2uG4XYD$uSt" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2UZ9O9PUISW" resolve="selection" />
+                              </node>
+                              <node concept="liA8E" id="2uG4XYD$vrb" role="2OqNvi">
+                                <ref role="37wK5l" to="lwvz:~Selection.getSelectedNodes()" resolve="getSelectedNodes" />
+                              </node>
                             </node>
-                            <node concept="37vLTw" id="24MikXOi6f9" role="37wK5m">
-                              <ref role="3cqZAo" node="2UZ9O9PUISW" resolve="selection" />
+                            <node concept="2OqwBi" id="2uG4XYD$sLr" role="3uHU7B">
+                              <node concept="2OqwBi" id="2uG4XYD$stF" role="2Oq$k0">
+                                <node concept="2WthIp" id="2uG4XYD$stI" role="2Oq$k0">
+                                  <ref role="32nkFo" node="5ucAXohLzkl" resolve="DocumentationProjectPlugin" />
+                                </node>
+                                <node concept="2BZ7hE" id="2uG4XYD$stK" role="2OqNvi">
+                                  <ref role="2WH_rO" node="2uG4XYD$7kf" resolve="lastSelection" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="2uG4XYD$t79" role="2OqNvi">
+                                <ref role="37wK5l" to="lwvz:~Selection.getSelectedNodes()" resolve="getSelectedNodes" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3y3z36" id="2uG4XYD$rkf" role="3uHU7B">
+                            <node concept="2OqwBi" id="2uG4XYD$qTn" role="3uHU7B">
+                              <node concept="2WthIp" id="2uG4XYD$qTq" role="2Oq$k0">
+                                <ref role="32nkFo" node="5ucAXohLzkl" resolve="DocumentationProjectPlugin" />
+                              </node>
+                              <node concept="2BZ7hE" id="2uG4XYD$qTs" role="2OqNvi">
+                                <ref role="2WH_rO" node="2uG4XYD$7kf" resolve="lastSelection" />
+                              </node>
+                            </node>
+                            <node concept="10Nm6u" id="2uG4XYD$s08" role="3uHU7w" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2uG4XYD$wiq" role="3cqZAp">
+                        <node concept="37vLTI" id="2uG4XYD$wI4" role="3clFbG">
+                          <node concept="37vLTw" id="2uG4XYD$x0h" role="37vLTx">
+                            <ref role="3cqZAo" node="2UZ9O9PUISW" resolve="selection" />
+                          </node>
+                          <node concept="2OqwBi" id="2uG4XYD$wik" role="37vLTJ">
+                            <node concept="2WthIp" id="2uG4XYD$win" role="2Oq$k0">
+                              <ref role="32nkFo" node="5ucAXohLzkl" resolve="DocumentationProjectPlugin" />
+                            </node>
+                            <node concept="2BZ7hE" id="2uG4XYD$wip" role="2OqNvi">
+                              <ref role="2WH_rO" node="2uG4XYD$7kf" resolve="lastSelection" />
                             </node>
                           </node>
                         </node>
