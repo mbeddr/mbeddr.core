@@ -1169,7 +1169,7 @@
                         </node>
                         <node concept="1mIQ4w" id="1LnB5xdvDN6" role="2OqNvi">
                           <node concept="chp4Y" id="1LnB5xdvDN8" role="cj9EA">
-                            <ref role="cht4Q" to="gnwj:1LnB5xdvCoQ" resolve="ColGroup" />
+                            <ref role="cht4Q" to="gnwj:1LnB5xdvCoQ" resolve="ColumnGroup" />
                           </node>
                         </node>
                       </node>

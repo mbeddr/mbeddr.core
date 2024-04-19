@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="23f985f2-965f-4af1-aee8-a32677429514" name="com.mbeddr.mpsutil.multilingual.common" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -18,6 +18,7 @@
     <import index="2oxe" ref="r:98f14745-cf68-416b-838b-49199f589585(test.ts.mpsutil.multilingual.common.otherModel@tests)" />
     <import index="8o67" ref="r:aad0b82d-5e70-4b30-977b-7c105a4d4452(com.mbeddr.mpsutil.multilingual.common.typesystem)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -35,8 +36,10 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -200,6 +203,7 @@
   </node>
   <node concept="1lH9Xt" id="1bZravpN0_m">
     <property role="TrG5h" value="KeyCreation" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6cLnm66KiDZ" role="1SL9yI">
       <property role="TrG5h" value="CamelCaseKey" />
       <node concept="3cqZAl" id="6cLnm66KiE0" role="3clF45" />
@@ -819,6 +823,7 @@
   </node>
   <node concept="1lH9Xt" id="2GRHOLIM0Fy">
     <property role="TrG5h" value="LanguageSelection" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="2GRHOLIM0FD" role="1SL9yI">
       <property role="TrG5h" value="findSpecifiedLanguageCountry" />
       <node concept="3cqZAl" id="2GRHOLIM0FE" role="3clF45" />
@@ -866,6 +871,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIM4Ac" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxmxI" resolve="findLanguageForCodes" />
+              <node concept="2OqwBi" id="45KItpiLAbD" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLA21" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLAkQ" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="Xl_RD" id="2GRHOLIM4B3" role="37wK5m">
                 <property role="Xl_RC" value="it" />
               </node>
@@ -924,6 +935,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIM4Sy" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxmxI" resolve="findLanguageForCodes" />
+              <node concept="2OqwBi" id="45KItpiLHOv" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLHOw" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLHOx" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="Xl_RD" id="2GRHOLIM4Sz" role="37wK5m">
                 <property role="Xl_RC" value="en" />
               </node>
@@ -980,6 +997,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIM5r9" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxmxI" resolve="findLanguageForCodes" />
+              <node concept="2OqwBi" id="45KItpiLI6$" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLI6_" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLI6A" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="Xl_RD" id="2GRHOLIM5ra" role="37wK5m">
                 <property role="Xl_RC" value="hi" />
               </node>
@@ -1003,6 +1026,12 @@
             </node>
             <node concept="liA8E" id="2GRHOLIM6eW" role="2OqNvi">
               <ref role="37wK5l" to="fw73:77gEP6zxmxI" resolve="findLanguageForCodes" />
+              <node concept="2OqwBi" id="45KItpiLIjB" role="37wK5m">
+                <node concept="1jxXqW" id="45KItpiLIjC" role="2Oq$k0" />
+                <node concept="liA8E" id="45KItpiLIjD" role="2OqNvi">
+                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
               <node concept="Xl_RD" id="2GRHOLIM6eX" role="37wK5m">
                 <property role="Xl_RC" value="xx" />
               </node>
@@ -1017,6 +1046,7 @@
   </node>
   <node concept="1lH9Xt" id="3TSnT3Il_h4">
     <property role="TrG5h" value="KeyReference" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="3TSnT3Il_yC" role="1SKRRt">
       <node concept="3ZQQOj" id="3TSnT3IlBKs" role="1qenE9">
         <ref role="3ZOmrH" to="2oxe:3TSnT3Il$Be" resolve="keyInOtherModel" />
@@ -1032,6 +1062,7 @@
   </node>
   <node concept="1lH9Xt" id="7NARB4mNEyZ">
     <property role="TrG5h" value="LocaleSelection" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7NARB4mNEzi" role="1SL9yI">
       <property role="TrG5h" value="findLocaleExactMatch" />
       <node concept="3cqZAl" id="7NARB4mNEzj" role="3clF45" />
