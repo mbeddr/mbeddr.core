@@ -7,11 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2024
 
-## com.mbeddr.doc.aspect
+## com.mbeddr.doc.aspect.ui
 
 ## Fixed
 
 - A null pointer was fixed that was related to showing the documentation when the documentation tab is not opened.
+- The documentation Tool is now only updated when the selection changed.
 
 ## com.mbeddr.mpsutil
 
