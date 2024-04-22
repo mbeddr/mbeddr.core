@@ -163,6 +163,9 @@
     <node concept="PrWs8" id="22irgSmHTqp" role="PzmwI">
       <ref role="PrY4T" node="44LrdWQ3eCt" resolve="INodeExporter" />
     </node>
+    <node concept="PrWs8" id="1_bTRifhdz1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_d_V">
     <property role="TrG5h" value="LiteralProgramFragment" />
