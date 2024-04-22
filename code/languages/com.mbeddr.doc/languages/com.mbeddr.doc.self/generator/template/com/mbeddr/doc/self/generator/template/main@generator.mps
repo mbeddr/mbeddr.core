@@ -490,7 +490,7 @@
               <node concept="37vLTI" id="271UTRL9frA" role="3clFbG">
                 <node concept="2pJPEk" id="271UTRL9gcP" role="37vLTx">
                   <node concept="2pJPED" id="271UTRL9gim" role="2pJPEn">
-                    <ref role="2pJxaS" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
+                    <ref role="2pJxaS" to="2c95:2cjkfC8rZLR" resolve="PlaceInFolder" />
                     <node concept="2pJxcG" id="271UTRL9gou" role="2pJxcM">
                       <ref role="2pJxcJ" to="2c95:2cjkfC8rZLY" resolve="location" />
                       <node concept="WxPPo" id="27yO7ubx4W1" role="28ntcv">
@@ -512,7 +512,7 @@
                   </node>
                   <node concept="3CFZ6_" id="271UTRL9dWS" role="2OqNvi">
                     <node concept="3CFYIy" id="271UTRL9e0K" role="3CFYIz">
-                      <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInfolder" />
+                      <ref role="3CFYIx" to="2c95:2cjkfC8rZLR" resolve="PlaceInFolder" />
                     </node>
                   </node>
                 </node>
@@ -594,6 +594,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX91" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="2B9KjOuvX90" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />

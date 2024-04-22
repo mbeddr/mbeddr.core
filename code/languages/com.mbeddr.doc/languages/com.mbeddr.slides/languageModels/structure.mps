@@ -55,6 +55,7 @@
     <property role="TrG5h" value="SlideDeck" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="5455967284188316026" />
+    <property role="34LRSv" value="slide deck" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4IRvlq8d507" role="1TKVEl">
       <property role="TrG5h" value="title" />
@@ -78,6 +79,8 @@
   <node concept="1TIwiD" id="4IRvlq8cC5V">
     <property role="TrG5h" value="Slide" />
     <property role="EcuMT" value="5455967284188316027" />
+    <property role="34LRSv" value="slide" />
+    <property role="R4oN_" value="a slide in the slide deck" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IRvlq8cIof" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -125,7 +128,7 @@
   <node concept="1TIwiD" id="4IRvlq8cJA5">
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="SmallWord" />
-    <property role="R4oN_" value="text formatted in &lt;small&gt;" />
+    <property role="R4oN_" value="text formatted in a smaller font" />
     <property role="34LRSv" value="\small" />
     <property role="EcuMT" value="5455967284188346757" />
     <ref role="1TJDcQ" node="4IRvlq8cJA3" resolve="SlideWord" />
@@ -135,6 +138,7 @@
     <property role="TrG5h" value="H1" />
     <property role="34LRSv" value="h1" />
     <property role="EcuMT" value="5455967284188347162" />
+    <property role="R4oN_" value="a header (level 1)" />
     <ref role="1TJDcQ" node="4IRvlq8d5Q7" resolve="AbstractParagraphSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cJGr" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -145,6 +149,7 @@
     <property role="TrG5h" value="H2" />
     <property role="34LRSv" value="h2" />
     <property role="EcuMT" value="5455967284188347164" />
+    <property role="R4oN_" value="a header (level 2)" />
     <ref role="1TJDcQ" node="4IRvlq8d5Q7" resolve="AbstractParagraphSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cJGt" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -155,6 +160,7 @@
     <property role="TrG5h" value="H3" />
     <property role="34LRSv" value="h3" />
     <property role="EcuMT" value="5455967284188347166" />
+    <property role="R4oN_" value="a header (level 3)" />
     <ref role="1TJDcQ" node="4IRvlq8cIQq" resolve="TextSlideContent" />
     <node concept="PrWs8" id="4IRvlq8cJGv" role="PzmwI">
       <ref role="PrY4T" node="4IRvlq8cIoe" resolve="ISlideContent" />
@@ -177,6 +183,7 @@
     <property role="3GE5qa" value="slidecontent" />
     <property role="TrG5h" value="ImageSlideContent" />
     <property role="EcuMT" value="5455967284188416495" />
+    <property role="34LRSv" value="image slide content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5yxqZJwzQtY" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -213,6 +220,8 @@
     <property role="TrG5h" value="XHTMLFile" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="8834022522772578760" />
+    <property role="34LRSv" value="xhtml file" />
+    <property role="R4oN_" value="an XML conform HTML document" />
     <ref role="1TJDcQ" to="iuxj:5M4a$b5j9j0" resolve="XmlFile" />
   </node>
   <node concept="1TIwiD" id="4IRvlq8d5Q7">

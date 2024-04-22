@@ -8,22 +8,16 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="dau9" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework.instructions(MPS.Core/)" />
-    <import index="1fjm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.dataFlow.framework(MPS.Core/)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="mu20" ref="r:fc94574f-a075-45e6-9927-48e7e87153e6(jetbrains.mps.analyzers.runtime.framework)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="m4hb" ref="r:a7ff9482-2e83-4947-8ea7-78715019099b(com.mbeddr.core.checks.dataFlow)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
-    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
-    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
+    <import index="8qxk" ref="r:3dddb2c7-b2ba-4381-896a-2e702ca1fb6e(jetbrains.mps.lang.dataFlow.framework)" />
+    <import index="9fia" ref="r:48cf50db-7ea3-4b1e-ab16-c3d84cbcf0df(jetbrains.mps.lang.dataFlow.framework.instructions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
@@ -289,7 +283,7 @@
           <node concept="3cpWsn" id="5XHLjGSJqDz" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="5XHLjGSJqD$" role="1tU5fm">
-              <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
+              <ref role="3uigEE" to="8qxk:3yaa4ph8trJ" resolve="AnalysisResult" />
               <node concept="3uibUv" id="5XHLjGSyhsV" role="11_B2D">
                 <ref role="3uigEE" to="m4hb:5XHLjGSwuHs" resolve="VariableValuesMapping" />
               </node>
@@ -299,7 +293,7 @@
                 <ref role="3cqZAo" node="5XHLjGSJqDv" resolve="constantAnalyzer" />
               </node>
               <node concept="liA8E" id="5XHLjGSJqDB" role="2OqNvi">
-                <ref role="37wK5l" to="1fjm:~AnalyzerRunner.analyze()" resolve="analyze" />
+                <ref role="37wK5l" to="8qxk:3yaa4ph8u6A" resolve="analyze" />
               </node>
             </node>
           </node>
@@ -308,7 +302,7 @@
           <node concept="3cpWsn" id="2sRGoU6fXTf" role="3cpWs9">
             <property role="TrG5h" value="prog" />
             <node concept="3uibUv" id="2sRGoU6fXTd" role="1tU5fm">
-              <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+              <ref role="3uigEE" to="8qxk:3yaa4ph8tzc" resolve="Program" />
             </node>
             <node concept="2OqwBi" id="2sRGoU6fXTg" role="33vP2m">
               <node concept="37vLTw" id="2sRGoU6fXTh" role="2Oq$k0">
@@ -381,13 +375,13 @@
       <node concept="37vLTG" id="2sRGoU6fMyG" role="3clF46">
         <property role="TrG5h" value="prog" />
         <node concept="3uibUv" id="2sRGoU6fMyH" role="1tU5fm">
-          <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+          <ref role="3uigEE" to="8qxk:3yaa4ph8tzc" resolve="Program" />
         </node>
       </node>
       <node concept="37vLTG" id="2sRGoU6fMyI" role="3clF46">
         <property role="TrG5h" value="analysisResult" />
         <node concept="3uibUv" id="2sRGoU6fMyJ" role="1tU5fm">
-          <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
+          <ref role="3uigEE" to="8qxk:3yaa4ph8trJ" resolve="AnalysisResult" />
           <node concept="3uibUv" id="2sRGoU6fMyK" role="11_B2D">
             <ref role="3uigEE" to="m4hb:5XHLjGSwuHs" resolve="VariableValuesMapping" />
           </node>
@@ -509,13 +503,13 @@
       <node concept="37vLTG" id="2sRGoU6nhdS" role="3clF46">
         <property role="TrG5h" value="prog" />
         <node concept="3uibUv" id="2sRGoU6nhdT" role="1tU5fm">
-          <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+          <ref role="3uigEE" to="8qxk:3yaa4ph8tzc" resolve="Program" />
         </node>
       </node>
       <node concept="37vLTG" id="2sRGoU6nhdU" role="3clF46">
         <property role="TrG5h" value="analysisResult" />
         <node concept="3uibUv" id="2sRGoU6nhdV" role="1tU5fm">
-          <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
+          <ref role="3uigEE" to="8qxk:3yaa4ph8trJ" resolve="AnalysisResult" />
           <node concept="3uibUv" id="2sRGoU6nhdW" role="11_B2D">
             <ref role="3uigEE" to="m4hb:5XHLjGSwuHs" resolve="VariableValuesMapping" />
           </node>
@@ -791,7 +785,7 @@
               <node concept="3cpWsn" id="2sRGoU6ftPs" role="3cpWs9">
                 <property role="TrG5h" value="instruction" />
                 <node concept="3uibUv" id="2sRGoU6ftPn" role="1tU5fm">
-                  <ref role="3uigEE" to="dau9:~Instruction" resolve="Instruction" />
+                  <ref role="3uigEE" to="9fia:3yaa4ph8tQC" resolve="Instruction" />
                 </node>
                 <node concept="2YIFZM" id="2sRGoU6gsZd" role="33vP2m">
                   <ref role="37wK5l" to="m4hb:2sRGoU6fOCf" resolve="findReadInstruction" />
@@ -816,7 +810,7 @@
                     <ref role="3cqZAo" node="2sRGoU6fsA3" resolve="analysisResult" />
                   </node>
                   <node concept="liA8E" id="2sRGoU6futC" role="2OqNvi">
-                    <ref role="37wK5l" to="1fjm:~AnalysisResult.get(jetbrains.mps.lang.dataFlow.framework.instructions.Instruction)" resolve="get" />
+                    <ref role="37wK5l" to="8qxk:3yaa4ph8tsB" resolve="get" />
                     <node concept="37vLTw" id="2sRGoU6futD" role="37wK5m">
                       <ref role="3cqZAo" node="2sRGoU6ftPs" resolve="instruction" />
                     </node>
@@ -864,13 +858,13 @@
       <node concept="37vLTG" id="2sRGoU6fsj0" role="3clF46">
         <property role="TrG5h" value="prog" />
         <node concept="3uibUv" id="2sRGoU6fszd" role="1tU5fm">
-          <ref role="3uigEE" to="1fjm:~Program" resolve="Program" />
+          <ref role="3uigEE" to="8qxk:3yaa4ph8tzc" resolve="Program" />
         </node>
       </node>
       <node concept="37vLTG" id="2sRGoU6fsA3" role="3clF46">
         <property role="TrG5h" value="analysisResult" />
         <node concept="3uibUv" id="2sRGoU6ft0I" role="1tU5fm">
-          <ref role="3uigEE" to="1fjm:~AnalysisResult" resolve="AnalysisResult" />
+          <ref role="3uigEE" to="8qxk:3yaa4ph8trJ" resolve="AnalysisResult" />
           <node concept="3uibUv" id="2sRGoU6ft0J" role="11_B2D">
             <ref role="3uigEE" to="m4hb:5XHLjGSwuHs" resolve="VariableValuesMapping" />
           </node>
