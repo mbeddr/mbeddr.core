@@ -296,20 +296,20 @@
     <property role="R4oN_" value="a header (level 4)" />
     <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
   </node>
-  <node concept="1TIwiD" id="4zO5iT9sZu1">
-    <property role="EcuMT" value="5256849953593227137" />
-    <property role="TrG5h" value="Header5" />
-    <property role="34LRSv" value="#####" />
-    <property role="3GE5qa" value="header" />
-    <property role="R4oN_" value="a header (level 5)" />
-    <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
-  </node>
   <node concept="1TIwiD" id="4zO5iT9sZ$8">
     <property role="EcuMT" value="5256849953593227528" />
     <property role="TrG5h" value="Header6" />
     <property role="34LRSv" value="######" />
     <property role="3GE5qa" value="header" />
     <property role="R4oN_" value="a header (level 6)" />
+    <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
+  </node>
+  <node concept="1TIwiD" id="4zO5iT9sZu1">
+    <property role="EcuMT" value="5256849953593227137" />
+    <property role="TrG5h" value="Header5" />
+    <property role="34LRSv" value="#####" />
+    <property role="3GE5qa" value="header" />
+    <property role="R4oN_" value="a header (level 5)" />
     <ref role="1TJDcQ" node="2ft2HgFmzGD" resolve="Header" />
   </node>
 </model>

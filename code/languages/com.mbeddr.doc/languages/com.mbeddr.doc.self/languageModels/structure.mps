@@ -51,11 +51,6 @@
     <property role="EcuMT" value="6416473402306197330" />
     <property role="R4oN_" value="embed a section as an image" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvcVJ" resolve="AbstractParagraph" />
-    <node concept="1TJgyi" id="UZf0Jkn_ZE" role="1TKVEl">
-      <property role="IQ2nx" value="1062634058587987946" />
-      <property role="TrG5h" value="renderInspector" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="5$bT90ZcZtG" role="1TKVEi">
       <property role="20kJfa" value="path" />
       <property role="20lbJX" value="fLJekj4/_1" />
@@ -94,6 +89,11 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5843576916143082441" />
       <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
+    </node>
+    <node concept="1TJgyi" id="UZf0Jkn_ZE" role="1TKVEl">
+      <property role="IQ2nx" value="1062634058587987946" />
+      <property role="TrG5h" value="renderInspector" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
