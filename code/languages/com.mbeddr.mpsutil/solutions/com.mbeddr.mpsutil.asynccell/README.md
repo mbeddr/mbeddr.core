@@ -38,6 +38,10 @@ cell provider:
 
 As example, see `com.mbeddr.mpsutil.asynccell.sandbox`.
 
+# Errors
+
+If the query callback raises an exception, the exception will be logged to stdout, the value will be set to `ERR` and the cell will stop calling it (until the next editor update).
+
 # State
 It contains automated tests and a sandbox for manual tests.
 So far, only used in Security Analyst.

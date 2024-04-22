@@ -7,11 +7,26 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2024
 
+## com.mbeddr.core
+
+### Added
+
+- Base: Added possibility to explicitly not display roots of concept `IMbeddrIDERoot` in mbeddr menus.
+
 ## com.mbeddr.doc.aspect.ui
 
 ### Fixed
 
 - The documentation Tool is now only updated when the selection changed.
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+- EditingGuide: `ProgramFragments` support error suppression, i.e. all model-checking errors are suppressed in `ProgramFragments`, so modelchecker will disregard them and not clutter.
+- EditingGuide: Fragment module depends on its original module, to access data that is needed, but in the original module and not copied to the temporary exercise model.
+- Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
+- Asynccell: Stops polling for the calculated value in case the poll-request throws an exception and shows to the user, that the calculation has failed together with the thrown exception, instead of spamming the log on each poll with the exception.
 
 # March 2024
 
