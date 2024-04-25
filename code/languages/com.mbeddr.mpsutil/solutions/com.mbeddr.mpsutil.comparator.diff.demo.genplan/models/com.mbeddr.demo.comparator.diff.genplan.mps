@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:041813a1-7c05-4ebf-89a6-19fe04baecd0(com.mbeddr.demo.compafator.diff.genplan.genplan)">
+<model ref="r:041813a1-7c05-4ebf-89a6-19fe04baecd0(com.mbeddr.demo.comparator.diff.genplan)">
   <persistence version="9" />
   <languages>
     <use id="e0989c7a-8149-4be7-97b6-0b78561af099" name="com.mbeddr.demo.comparator.diff" version="0" />

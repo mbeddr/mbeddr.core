@@ -105,8 +105,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.varscope/com.mbeddr.mpsutil.varscope.mpl" folder="stable.varscope" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="stable.xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.demo.compafator.diff.tests/com.mbeddr.demo.compafator.diff.tests.msd" folder="staging.comparator.demo" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.demo.comparator.diff.genplan/com.mbeddr.demo.comparator.diff.genplan.msd" folder="staging.comparator.demo" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.asynccell/com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildassistant/com.mbeddr.mpsutil.buildassistant.msd" folder="" />
@@ -115,6 +113,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.runtime/com.mbeddr.mpsutil.ccmenu.runtime.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.sandbox/com.mbeddr.mpsutil.ccmenu.sandbox.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="staging" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator.diff.demo.genplan/com.mbeddr.mpsutil.comparator.diff.demo.genplan.msd" folder="staging.comparator.demo" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator.diff.demo.tests/com.mbeddr.mpsutil.comparator.diff.demo.tests.msd" folder="staging.comparator.demo" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator/comparator.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.compare.pattern.generator.runtime/com.mbeddr.mpsutil.compare.pattern.generator.runtime.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.compare.pattern.runtime/com.mbeddr.mpsutil.compare.pattern.runtime.msd" folder="staging.comparator" />

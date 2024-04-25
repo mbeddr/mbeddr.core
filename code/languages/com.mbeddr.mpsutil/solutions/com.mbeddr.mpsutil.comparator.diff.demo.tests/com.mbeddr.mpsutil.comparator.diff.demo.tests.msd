@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.demo.compafator.diff.tests" uuid="5fc729b8-2fff-48a5-9bd3-4c1aaad33d23" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.comparator.diff.demo.tests" uuid="5fc729b8-2fff-48a5-9bd3-4c1aaad33d23" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -20,7 +20,7 @@
     <dependency reexport="false">7ab1a6fa-0a11-4b95-9e48-75f363d6cb00(jetbrains.mps.lang.generator.plan)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
-    <dependency reexport="false">a83addf6-6ea9-4504-83d6-0211dab89b0f(com.mbeddr.demo.compafator.diff.genplan)</dependency>
+    <dependency reexport="false">a83addf6-6ea9-4504-83d6-0211dab89b0f(com.mbeddr.mpsutil.comparator.diff.demo.genplan)</dependency>
     <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
     <dependency reexport="false">215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)</dependency>
   </dependencies>
@@ -50,8 +50,8 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="a83addf6-6ea9-4504-83d6-0211dab89b0f(com.mbeddr.demo.compafator.diff.genplan)" version="0" />
-    <module reference="5fc729b8-2fff-48a5-9bd3-4c1aaad33d23(com.mbeddr.demo.compafator.diff.tests)" version="0" />
+    <module reference="a83addf6-6ea9-4504-83d6-0211dab89b0f(com.mbeddr.mpsutil.comparator.diff.demo.genplan)" version="0" />
+    <module reference="5fc729b8-2fff-48a5-9bd3-4c1aaad33d23(com.mbeddr.mpsutil.comparator.diff.demo.tests)" version="0" />
     <module reference="2c9058b6-7cd8-4623-82a3-e4c07c3eddff(com.mbeddr.mpsutil.generatorfacade)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
