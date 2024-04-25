@@ -27,6 +27,7 @@
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
+    <import index="ap4u" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -505,7 +506,7 @@
           <node concept="3cpWsn" id="41VK2HXi9d7" role="3cpWs9">
             <property role="TrG5h" value="genStatus" />
             <node concept="3uibUv" id="41VK2HXi9d8" role="1tU5fm">
-              <ref role="3uigEE" to="ap4t:~GenerationStatus" resolve="GenerationStatus" />
+              <ref role="3uigEE" to="ap4u:~GenerationStatus" resolve="GenerationStatus" />
             </node>
           </node>
         </node>
@@ -586,7 +587,7 @@
               <ref role="3cqZAo" node="41VK2HXi9d7" resolve="genStatus" />
             </node>
             <node concept="liA8E" id="33$34j7JCpf" role="2OqNvi">
-              <ref role="37wK5l" to="ap4t:~GenerationStatus.getOutputModel()" resolve="getOutputModel" />
+              <ref role="37wK5l" to="ap4u:~GenerationStatus.getOutputModel()" resolve="getOutputModel" />
             </node>
           </node>
         </node>

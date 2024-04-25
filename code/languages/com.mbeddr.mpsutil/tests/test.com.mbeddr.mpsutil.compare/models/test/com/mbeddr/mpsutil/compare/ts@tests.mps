@@ -167,6 +167,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -613,6 +617,10 @@
             </node>
           </node>
           <node concept="3clFbF" id="Pu8Vy2cY9F" role="3cqZAp">
+            <node concept="15s5l7" id="56OidHFwudL" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_CLASS=&quot;class jetbrains.mps.project.validation.ConceptFeatureCardinalityError&quot;;FLAVOUR_MESSAGE=&quot;No reference in the obligatory role 'variableDeclaration'&quot;;FLAVOUR_NODE_FEATURE=&quot;variableDeclaration&quot;;" />
+              <property role="huDt6" value="No reference in the obligatory role 'variableDeclaration'" />
+            </node>
             <node concept="37vLTI" id="Pu8Vy2cYdI" role="3clFbG">
               <node concept="37vLTw" id="Pu8Vy2cYdY" role="37vLTx">
                 <node concept="3xLA65" id="Pu8Vy2e38c" role="lGtFl">
