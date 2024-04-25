@@ -30,6 +30,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
 - Asynccell: Stops polling for the calculated value in case the poll-request throws an exception and shows to the user, that the calculation has failed together with the thrown exception, instead of spamming the log on each poll with the exception.
 
+### Added
+
+- The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
+
 # March 2024
 
 ## com.mbeddr.mpsutil
