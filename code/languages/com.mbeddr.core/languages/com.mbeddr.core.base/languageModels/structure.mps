@@ -908,6 +908,9 @@
     <property role="3GE5qa" value="documentation" />
     <property role="TrG5h" value="IIsDocumentationComment" />
     <property role="EcuMT" value="7534202261664852649" />
+    <node concept="PrWs8" id="4jmgM1fPF5$" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3W5q5oTL9mp" resolve="IGenericComment" />
+    </node>
   </node>
   <node concept="PlHQZ" id="Ug1QzfhXN3">
     <property role="TrG5h" value="IEmpty" />

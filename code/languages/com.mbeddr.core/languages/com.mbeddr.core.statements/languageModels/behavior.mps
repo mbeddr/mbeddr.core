@@ -6108,6 +6108,27 @@
       </node>
       <node concept="3Tm1VV" id="BsHjoDSP5G" role="1B3o_S" />
     </node>
+    <node concept="13i0hz" id="4jmgM1fPOMN" role="13h7CS">
+      <property role="TrG5h" value="getTextualRepresentation" />
+      <ref role="13i0hy" to="tpcu:fB3l80ylIb" resolve="getTextualRepresentation" />
+      <node concept="3Tm1VV" id="4jmgM1fPOMO" role="1B3o_S" />
+      <node concept="3clFbS" id="4jmgM1fPOMR" role="3clF47">
+        <node concept="3clFbF" id="4jmgM1fPPO7" role="3cqZAp">
+          <node concept="2OqwBi" id="4jmgM1fPST7" role="3clFbG">
+            <node concept="2OqwBi" id="4jmgM1fPQh$" role="2Oq$k0">
+              <node concept="13iPFW" id="4jmgM1fPPO6" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4jmgM1fPSG8" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:7uLL3Mf3Z6z" resolve="textblock" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4jmgM1fPT9J" role="2OqNvi">
+              <ref role="37wK5l" to="hwgx:6byLOcR3jNg" resolve="asTextString" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4jmgM1fPOMS" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="BsHjoDSP6A" role="13h7CS">
       <property role="TrG5h" value="getBracketColor" />
       <ref role="13i0hy" to="hwgx:BsHjoDRsTa" resolve="getBracketColor" />
