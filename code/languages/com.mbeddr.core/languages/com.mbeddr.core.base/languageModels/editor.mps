@@ -73,6 +73,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -294,6 +295,12 @@
         <child id="730181322658904467" name="menuReference" index="1s_PAo" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="9122903797336200704" name="jetbrains.mps.lang.editor.structure.ApplyStyleClassCondition" flags="lg" index="1uO$qF">
+        <child id="9122903797336200706" name="query" index="1uO$qD" />
+      </concept>
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
         <property id="1075375595204" name="text" index="1xolSY" />
       </concept>
@@ -373,6 +380,9 @@
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="4307758654696938365" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_RefPresentation" flags="ig" index="1WAQ3h" />
       <concept id="4307758654696952957" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_ReferencedNode" flags="ng" index="1WAUZh" />
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
       <concept id="1166040637528" name="jetbrains.mps.lang.editor.structure.CellMenuComponent" flags="ng" index="1Xs25n">
         <child id="1166040865497" name="applicableFeature" index="1XsTJm" />
         <child id="1166041505377" name="menuDescriptor" index="1XvlXI" />
@@ -755,7 +765,9 @@
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -10354,6 +10366,39 @@
     </node>
     <node concept="14StLt" id="2CEi94dprSJ" role="V601i">
       <property role="TrG5h" value="TextComment" />
+      <node concept="1uO$qF" id="1C4$MxwnSOp" role="3F10Kt">
+        <node concept="3nzxsE" id="1C4$MxwnSOr" role="1uO$qD">
+          <node concept="3clFbS" id="1C4$MxwnSOt" role="2VODD2">
+            <node concept="3clFbF" id="1C4$MxwnT6e" role="3cqZAp">
+              <node concept="1Wc70l" id="1C4$MxwnVgM" role="3clFbG">
+                <node concept="2OqwBi" id="1C4$MxwnVKv" role="3uHU7w">
+                  <node concept="1PxgMI" id="1C4$MxwnVlY" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="1C4$MxwnV$G" role="3oSUPX">
+                      <ref role="cht4Q" to="vs0r:6yeRgC0uAED" resolve="IIsDocumentationComment" />
+                    </node>
+                    <node concept="pncrf" id="1C4$MxwnViy" role="1m5AlR" />
+                  </node>
+                  <node concept="2qgKlT" id="1C4$MxwnVZ4" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:fB3l7ZufMD" resolve="isTODOComment" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1C4$MxwnTuh" role="3uHU7B">
+                  <node concept="pncrf" id="1C4$MxwnT6d" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="1C4$MxwnTJH" role="2OqNvi">
+                    <node concept="chp4Y" id="1C4$MxwnU0R" role="cj9EA">
+                      <ref role="cht4Q" to="vs0r:6yeRgC0uAED" resolve="IIsDocumentationComment" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1wgc9g" id="1C4$MxwnSOv" role="3XvnJa">
+          <ref role="1wgcnl" node="1C4$MxwsABx" resolve="TODO" />
+        </node>
+      </node>
       <node concept="Vb9p2" id="2CEi94dprSK" role="3F10Kt">
         <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
@@ -10363,6 +10408,21 @@
         </node>
       </node>
       <node concept="2lhJJ2" id="2CEi94dprSN" role="14Sbyx" />
+    </node>
+    <node concept="14StLt" id="1C4$MxwsABx" role="V601i">
+      <property role="TrG5h" value="TODO" />
+      <node concept="3Xmtl4" id="1C4$MxwsAGW" role="3F10Kt">
+        <node concept="1wgc9g" id="1C4$MxwsAGY" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:aeM1BF$INI" />
+        </node>
+      </node>
+      <node concept="2lhJJ2" id="1C4$MxwsALw" role="14Sbyx">
+        <node concept="1ybEpN" id="1C4$Mxwu6DM" role="2lhEPC">
+          <node concept="14SbXO" id="1C4$Mxwu6DL" role="1ybEBM">
+            <ref role="14SbXR" node="2CEi94dprSJ" resolve="TextComment" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="14StLt" id="2CEi94dhrPl" role="V601i">
       <property role="TrG5h" value="TextCommentTag" />
