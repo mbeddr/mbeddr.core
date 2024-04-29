@@ -40,7 +40,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -146,7 +146,7 @@
     <property role="EcuMT" value="2265458908607221014" />
     <property role="TrG5h" value="CostAttribute" />
     <property role="34LRSv" value="cost" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1XKxHZsLKOp" role="PzmwI">
       <ref role="PrY4T" node="1XKxHZsLKOl" resolve="IAttribute" />
     </node>
