@@ -30,6 +30,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
 - Asynccell: Stops polling for the calculated value in case the poll-request throws an exception and shows to the user, that the calculation has failed together with the thrown exception, instead of spamming the log on each poll with the exception.
 
+### Added
+
+- The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
+
 # March 2024
 
 ## com.mbeddr.mpsutil
@@ -142,7 +146,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Changed
 
-- Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
+- Added possibility to update the ToolWindow contents of context action 2 even if the Window is not visible.
+
+## com.mbeddr.doc.aspect
+
+### Added
+
+* For documentation annotations of concepts there is a new flag `override children` in the inspector. It allows to show the document of a node even if the currently selected child node would have its own documentation.
+* By default, this new behavior is switched off. The `documentationAspectConfiguration` extension point now has a configuration option `allowOverrideChildren` which has to be set to true in order to use the override functionality.
+* A cache has been added to speed up the look-up and display of concept-specific documentation in the documentation view.
 
 # September 2023
 
