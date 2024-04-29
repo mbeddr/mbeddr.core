@@ -17,20 +17,26 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Fixed
 
+- A null pointer was fixed that was related to showing the documentation when the documentation tab is not opened.
 - The documentation Tool is now only updated when the selection changed.
 
 ## com.mbeddr.mpsutil
 
 ### Fixed
 
+- An initialization issue related to the context actions tool was fixed.
 - EditingGuide: `ProgramFragments` support error suppression, i.e. all model-checking errors are suppressed in `ProgramFragments`, so modelchecker will disregard them and not clutter.
 - EditingGuide: Fragment module depends on its original module, to access data that is needed, but in the original module and not copied to the temporary exercise model.
 - Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
 - Asynccell: Stops polling for the calculated value in case the poll-request throws an exception and shows to the user, that the calculation has failed together with the thrown exception, instead of spamming the log on each poll with the exception.
 
+### Added
+
+- The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
+
 # March 2024
 
-## com.mbeddr.mpsutils
+## com.mbeddr.mpsutil
 
 ### Added
 
@@ -49,13 +55,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Fixed
 
+- Many usability were fixed and the editors (including presentation mode) polished.
+- Higher level of nesting in sections is now support by all generators.
 - PlantUML was updated to PlantUML to v1.2023.13 EPL version (regression bug).
 
 # January 2024
 
 ## com.mbeddr.mpsutils
 
-### Fixed
+### Changed
 
 - A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
 - Referenced actions in action profiles now emit a warning when they can't be found.
@@ -66,8 +74,26 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The Java library xmlbeans of the spreadsheet language was upgraded from version 2.6.0 to 4.0.0
 - The Java library Apache Poi of the spreadsheet language was upgraded from 2.6.0 to 5.0.0
+### Removed
+
+- The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
+ JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+
+### Added
+
+- The removed language `com.mbeddr.mpsutil.nodediff` was added back since the MPS action can only compare root nodes and not arbitrary nodes.
 
 # December 2023
+
+## General
+
+- The project was relicensed from EPL 1.0 to EPL 2.0 and PlantUML was updated to PlantUML to v1.2023.13 EPL version.
+
+## com.mbeddr.doc
+
+### Fixed
+
+- The escaping of the new line character works again.
 
 ## com.mbeddr.mpsutils
 
@@ -80,6 +106,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 - Assessement result entries with invalid references are now automatically removed.
+- The cell editor screenshooter doesn't trim the offset of the editor component anymore.
+
+### Fixed
+
+- The cell editor screenshooter now supports editor extensions and the rendering quality was slightly improved.
+
+## com.mbeddr.core.base.intentions
+
+- Fix the issue where the documentation annotation interferes with other annotations.
 
 # November 2023
 
@@ -94,6 +129,11 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 - Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
+- The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
+
+### Fixed
+
+- When actionsfilter was enabled, MPS will no longer display an error saying that settings could not be saved.
 
 # October 2023
 
@@ -101,7 +141,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Changed
 
-Added possiblity to update the ToolWindow contents of context action 2 even if the Window is not visible.
+- Added possibility to update the ToolWindow contents of context action 2 even if the Window is not visible.
 
 ## com.mbeddr.doc.aspect
 
@@ -117,7 +157,7 @@ Added possiblity to update the ToolWindow contents of context action 2 even if t
 
 ### Changed
 
-* The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
+- The aspect documentation now can handle solution-level documentation as well and is not limited to extending languages.
 
 ## com.mbeddr.core
 
@@ -135,6 +175,38 @@ Added possiblity to update the ToolWindow contents of context action 2 even if t
 
 - Concept `DocRefWord`, i.e. `@doc[a document]`: The reference to another `Document` was not shown as a reference/link in the documentation-tool-window. It would also not open the referenced `Document` on click. By adding a special editor, similar to `SectRefWord`, document references are now perceived as references/links and open the referenced documentation, scrolled to the top, on click on the `DocRefWord`.
 
+# July 2023
+
+The following languages/plugins were removed:
+
+- com.mbeddr.mpsutil.testScope (superseded by [MPS test scopes](https://www.jetbrains.com/help/mps/testing-languages.html#testingscopes))
+- com.mbeddr.mpsutil.runconfiguration (the workaround is included in MPS nowadays)
+- com.mbeddr.mpsutil.rcpconfig (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.nodediff (replacement: selected two nodes in the logical view, right-click -> Compare two nodes)
+- com.mbeddr.mpsutil.licensemanager.common (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.langstats (not very useful, was never meant as a productive language)
+- com.mbeddr.mpsutil.gradlesupport (incomplete; use the language [com.dslfoundry.plaintextgen](https://jetbrains.github.io/MPS-extensions/extensions/generator/plaintext-gen) from MPS-extensions instead)
+- com.mbeddr.mpsutil.buildutil (an internal module that is not needed anymore)
+- com.mbeddr.mpsutil.forms (experimental language that was never completed)
+
+# May 2023
+
+## mbeddr.core
+
+Update mbeddr.core languages to MPS version 2022.2
+
+## build.gradle
+* use jbr 17 instead of jbr 11
+* download jbr with mps gradle plugin
+
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+* `com.mbeddr.mpsutil.smodule.runtime.lib.ModelHelper#createModel()` method (used to implement the `addModel` operation
+  of language `com.mbeddr.mpsutil.smodule`) no longer deadlocks when run from EDT.
+
 # April 2023
 
 ## com.mbeddr.doc
@@ -142,8 +214,6 @@ Added possiblity to update the ToolWindow contents of context action 2 even if t
 ### Fixed
 
 * `@doc[some document]` causes broken build unless a "some document" was also used in include.
-
-### Changed
 
 # March 2023
 

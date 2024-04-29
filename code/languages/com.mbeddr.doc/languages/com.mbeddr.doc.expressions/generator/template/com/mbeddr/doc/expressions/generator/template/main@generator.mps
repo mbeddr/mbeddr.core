@@ -155,7 +155,7 @@
   <node concept="bUwia" id="4E$PniRKNvK">
     <property role="TrG5h" value="main" />
     <node concept="3aamgX" id="7XYIXmJmEdz" role="3acgRq">
-      <ref role="30HIoZ" to="f87k:4E$PniRKKrW" resolve="VariableDef" />
+      <ref role="30HIoZ" to="f87k:4E$PniRKKrW" resolve="VariableDefinition" />
       <node concept="1Koe21" id="7XYIXmJmWwP" role="1lVwrX">
         <node concept="1_1swa" id="7XYIXmJmWwR" role="1Koe22">
           <property role="TrG5h" value="dummy" />
@@ -230,7 +230,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="7XYIXmJmWwU" role="3acgRq">
-      <ref role="30HIoZ" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+      <ref role="30HIoZ" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
       <node concept="1Koe21" id="7XYIXmJmWwV" role="1lVwrX">
         <node concept="1_1swa" id="7XYIXmJmWwW" role="1Koe22">
           <property role="TrG5h" value="dummy" />
@@ -427,6 +427,7 @@
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX8X" role="A10yx">
+      <property role="TrG5h" value="image" />
       <node concept="9PVaO" id="2B9KjOuvX8W" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
-    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="0" />
+    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.itemis.mps.hacks.xmodelgen" version="0" />
   </languages>
   <imports>
     <import index="8r34" ref="r:5f62df63-885f-42f0-80d6-e13ad6c51489(com.mbeddr.core.modules.gen.generator.template.main@generator)" implicit="true" />
@@ -52,12 +52,12 @@
       </concept>
       <concept id="3750601816081736033" name="jetbrains.mps.lang.generator.plan.structure.InPlaceCheckpointSpec" flags="ng" index="3ps74r" />
     </language>
-    <language id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen">
-      <concept id="961590472824346305" name="de.slisson.mps.hacks.xmodelgen.structure.MappingConfigStep" flags="ng" index="2Pg1uL">
+    <language id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.itemis.mps.hacks.xmodelgen">
+      <concept id="961590472824346305" name="de.itemis.mps.hacks.xmodelgen.structure.MappingConfigStep" flags="ng" index="2Pg1uL">
         <child id="7786846688815598697" name="mappingConfigurations" index="3VlUeB" />
       </concept>
-      <concept id="961590472824361214" name="de.slisson.mps.hacks.xmodelgen.structure.MCListLanguageIdentity" flags="ng" index="2Pgd6e" />
-      <concept id="7786846688815408482" name="de.slisson.mps.hacks.xmodelgen.structure.MappingConfigurationReference" flags="ng" index="3Vl8EG">
+      <concept id="961590472824361214" name="de.itemis.mps.hacks.xmodelgen.structure.MCListLanguageIdentity" flags="ng" index="2Pgd6e" />
+      <concept id="7786846688815408482" name="de.itemis.mps.hacks.xmodelgen.structure.MappingConfigurationReference" flags="ng" index="3Vl8EG">
         <reference id="7786846688815408483" name="mc" index="3Vl8EH" />
       </concept>
     </language>

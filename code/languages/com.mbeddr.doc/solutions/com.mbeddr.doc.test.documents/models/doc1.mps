@@ -12,7 +12,7 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
-      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLNoOutputRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -154,8 +154,12 @@
       <ref role="1_0j5g" node="4pIcGABsAb1" resolve="myDocument" />
     </node>
     <node concept="2SbEIf" id="4pIcGABsMlM" role="30Gjbg">
-      <property role="2SbEId" value="/Users/kdummann/source/mbeddr/mbeddr.core/" />
+      <property role="2SbEId" value="main" />
       <ref role="2SbEIe" node="4pIcGABsMlK" resolve="main" />
+    </node>
+    <node concept="2SbEIf" id="44D1kY$kUEe" role="30Gjbg">
+      <property role="2SbEId" value="imgs" />
+      <ref role="2SbEIe" node="2B9KjOuvX9d" resolve="imgs" />
     </node>
     <node concept="1TaS0h" id="1xGVIWdAy29" role="30GjaH" />
   </node>
@@ -167,6 +171,7 @@
       <node concept="9PVaO" id="4pIcGABsMlL" role="9PVG_">
         <property role="1RwFax" value="true" />
         <property role="3kgbRO" value="false" />
+        <property role="3N1Lgt" value="main" />
       </node>
     </node>
     <node concept="2SbYGw" id="2B9KjOuvX9d" role="A10yx">

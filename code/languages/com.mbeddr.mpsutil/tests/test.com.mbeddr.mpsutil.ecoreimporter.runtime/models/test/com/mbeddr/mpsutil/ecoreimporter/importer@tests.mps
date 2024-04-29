@@ -2,7 +2,7 @@
 <model ref="r:351de29e-9de8-474a-88fe-d4df89596905(test.com.mbeddr.mpsutil.ecoreimporter.importer@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="d08b2078-ada5-40fa-a3c5-d721088dc626" name="com.mbeddr.mpsutil.ecore.testing" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
@@ -16,6 +16,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -77,6 +78,7 @@
   </registry>
   <node concept="1lH9Xt" id="7FLq2$J$EAD">
     <property role="TrG5h" value="AllInOneTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7FLq2$J$EAE" role="1SL9yI">
       <property role="TrG5h" value="testMatch" />
       <node concept="3cqZAl" id="7FLq2$J$EAF" role="3clF45" />
@@ -162,6 +164,7 @@
   </node>
   <node concept="1lH9Xt" id="7FLq2$J$_PP">
     <property role="TrG5h" value="EnumTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7FLq2$J$_PQ" role="1SL9yI">
       <property role="TrG5h" value="testEnumInterface" />
       <node concept="3cqZAl" id="7FLq2$J$_PR" role="3clF45" />
@@ -519,6 +522,7 @@
   </node>
   <node concept="1lH9Xt" id="7FLq2$J$Brq">
     <property role="TrG5h" value="ParentChildTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7FLq2$J$Brr" role="1SL9yI">
       <property role="TrG5h" value="testClassInterface" />
       <node concept="3cqZAl" id="7FLq2$J$Brs" role="3clF45" />
@@ -816,6 +820,7 @@
   </node>
   <node concept="1lH9Xt" id="7FLq2$J$DJK">
     <property role="TrG5h" value="ReferenceTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7FLq2$J$DJL" role="1SL9yI">
       <property role="TrG5h" value="testMultipleReference" />
       <node concept="3cqZAl" id="7FLq2$J$DJM" role="3clF45" />
@@ -981,6 +986,7 @@
   </node>
   <node concept="1lH9Xt" id="7FLq2$J$AM9">
     <property role="TrG5h" value="SimpleClassTests" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7FLq2$J$AMb" role="1SL9yI">
       <property role="TrG5h" value="testEmptyClass" />
       <node concept="3cqZAl" id="7FLq2$J$AMc" role="3clF45" />
