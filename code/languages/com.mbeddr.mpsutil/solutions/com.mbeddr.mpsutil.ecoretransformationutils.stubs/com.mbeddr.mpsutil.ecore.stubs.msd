@@ -58,7 +58,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" languageLevel="JAVA_8">
+    <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
