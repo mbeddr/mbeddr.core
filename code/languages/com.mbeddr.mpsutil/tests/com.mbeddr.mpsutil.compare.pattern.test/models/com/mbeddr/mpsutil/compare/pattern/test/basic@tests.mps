@@ -280,6 +280,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -2185,6 +2189,10 @@
                 <node concept="3xLA65" id="18iyr$QYoqs" role="lGtFl">
                   <property role="TrG5h" value="cast1" />
                 </node>
+              </node>
+              <node concept="15s5l7" id="56OidHFwtua" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                <property role="huDt6" value="all typesystem messages" />
               </node>
             </node>
             <node concept="3clFbF" id="18iyr$QYnUp" role="3cqZAp">

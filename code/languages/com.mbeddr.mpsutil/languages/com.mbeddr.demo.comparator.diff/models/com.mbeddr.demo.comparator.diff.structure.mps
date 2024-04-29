@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9346a16d-d612-4cfd-a80d-017c41200de8(com.mbeddr.mpsutil.editor.displayControl.sandbox.structure)">
+<model ref="r:8545687c-2198-4cf2-8952-38bfc2847928(com.mbeddr.demo.comparator.diff.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="s8pm" ref="r:1a263161-b47f-4c8c-8169-e2033bd674f4(com.mbeddr.mpsutil.editor.displayControl.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -22,9 +22,12 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
-      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
-        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
-        <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -33,18 +36,25 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="1hUDzKRLvcA">
-    <property role="EcuMT" value="1475674605481227046" />
-    <property role="TrG5h" value="HideableConcept" />
+  <node concept="1TIwiD" id="33$34j7Izm8">
+    <property role="EcuMT" value="3522954298058749320" />
+    <property role="TrG5h" value="Root" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1hUDzKRLveA" role="PzmwI">
-      <ref role="PrY4T" to="s8pm:54QlSGoaifp" resolve="ICanHide" />
+    <node concept="1TJgyj" id="33$34j7Izm9" role="1TKVEi">
+      <property role="IQ2ns" value="3522954298058749321" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="33$34j7IEa1" resolve="Entry" />
     </node>
-    <node concept="1TJgyi" id="1hUDzKRLwxp" role="1TKVEl">
-      <property role="IQ2nx" value="1475674605481232473" />
-      <property role="TrG5h" value="someState" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+  </node>
+  <node concept="1TIwiD" id="33$34j7IEa1">
+    <property role="EcuMT" value="3522954298058777217" />
+    <property role="TrG5h" value="Entry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="33$34j7IEa2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

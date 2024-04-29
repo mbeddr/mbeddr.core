@@ -7,16 +7,32 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2024
 
+## com.mbeddr.core
+
+### Added
+
+- Base: Added possibility to explicitly not display roots of concept `IMbeddrIDERoot` in mbeddr menus.
+
 ## com.mbeddr.doc.aspect.ui
 
-## Fixed
+### Fixed
 
 - A null pointer was fixed that was related to showing the documentation when the documentation tab is not opened.
 - The documentation Tool is now only updated when the selection changed.
 
 ## com.mbeddr.mpsutil
 
+### Fixed
+
 - An initialization issue related to the context actions tool was fixed.
+- EditingGuide: `ProgramFragments` support error suppression, i.e. all model-checking errors are suppressed in `ProgramFragments`, so modelchecker will disregard them and not clutter.
+- EditingGuide: Fragment module depends on its original module, to access data that is needed, but in the original module and not copied to the temporary exercise model.
+- Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
+- Asynccell: Stops polling for the calculated value in case the poll-request throws an exception and shows to the user, that the calculation has failed together with the thrown exception, instead of spamming the log on each poll with the exception.
+
+### Added
+
+- The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
 
 ## Changes
 
@@ -134,7 +150,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Changed
 
-- Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
+- Added possibility to update the ToolWindow contents of context action 2 even if the Window is not visible.
+
+## com.mbeddr.doc.aspect
+
+### Added
+
+* For documentation annotations of concepts there is a new flag `override children` in the inspector. It allows to show the document of a node even if the currently selected child node would have its own documentation.
+* By default, this new behavior is switched off. The `documentationAspectConfiguration` extension point now has a configuration option `allowOverrideChildren` which has to be set to true in order to use the override functionality.
+* A cache has been added to speed up the look-up and display of concept-specific documentation in the documentation view.
 
 # September 2023
 

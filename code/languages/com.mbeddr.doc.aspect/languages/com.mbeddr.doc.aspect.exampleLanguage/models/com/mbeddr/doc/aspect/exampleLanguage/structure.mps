@@ -96,6 +96,13 @@
     <node concept="PrWs8" id="1MEM7Lwxekd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="1XKxHZsLKHO" role="1TKVEi">
+      <property role="IQ2ns" value="2265458908607220596" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1XKxHZsLKOl" resolve="IAttribute" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7NPCd7DDwAT">
     <property role="EcuMT" value="9004279853425756601" />
@@ -129,6 +136,26 @@
     </node>
     <node concept="PrWs8" id="1MEM7Lwytq4" role="PzmwI">
       <ref role="PrY4T" node="1MEM7LwytpY" resolve="INode" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1XKxHZsLKOl">
+    <property role="TrG5h" value="IAttribute" />
+    <property role="EcuMT" value="2265458908607221012" />
+  </node>
+  <node concept="1TIwiD" id="1XKxHZsLKOm">
+    <property role="EcuMT" value="2265458908607221014" />
+    <property role="TrG5h" value="CostAttribute" />
+    <property role="34LRSv" value="cost" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1XKxHZsLKOp" role="PzmwI">
+      <ref role="PrY4T" node="1XKxHZsLKOl" resolve="IAttribute" />
+    </node>
+    <node concept="1TJgyj" id="1XKxHZsLKOs" role="1TKVEi">
+      <property role="IQ2ns" value="2265458908607221020" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>

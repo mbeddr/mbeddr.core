@@ -122,10 +122,10 @@
     <import index="o2jy" ref="r:5a764b6f-e05f-4050-b22c-cbcad1577f1b(jetbrains.mps.ide.refactoring)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
-    <import index="mmaq" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom(org.jdom/)" />
-    <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="zyr2" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.inspector(MPS.Editor/)" />
     <import index="7oz1" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.configuration(MPS.Editor/)" />
+    <import index="mmaq" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom(org.jdom/)" />
+    <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -6977,6 +6977,21 @@
                                     </node>
                                     <node concept="LFhST" id="6r2FnBTb2aa" role="2OqNvi" />
                                   </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="7jN4X3UX8Up" role="3cqZAp">
+                            <node concept="3clFbS" id="7jN4X3UX8Ur" role="3clFbx">
+                              <node concept="3N13vt" id="2yoIUpb$_Ne" role="3cqZAp" />
+                            </node>
+                            <node concept="3fqX7Q" id="CZOBkuwhkX" role="3clFbw">
+                              <node concept="2OqwBi" id="CZOBkuwhkZ" role="3fr31v">
+                                <node concept="37vLTw" id="CZOBkuwhl0" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4augEjZSVuv" resolve="createNode" />
+                                </node>
+                                <node concept="2qgKlT" id="CZOBkuwhl1" role="2OqNvi">
+                                  <ref role="37wK5l" to="hwgx:2daXVy6Qz1j" resolve="isDisplayed" />
                                 </node>
                               </node>
                             </node>

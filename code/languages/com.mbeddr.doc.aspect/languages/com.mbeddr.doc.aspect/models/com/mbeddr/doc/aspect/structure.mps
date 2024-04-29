@@ -75,6 +75,11 @@
         <ref role="trN6q" to="2c95:2TZO3Dbv6N7" resolve="Section" />
       </node>
     </node>
+    <node concept="1TJgyi" id="1XKxHZsTPvQ" role="1TKVEl">
+      <property role="IQ2nx" value="2265458908609337334" />
+      <property role="TrG5h" value="overrideChildren" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1o6EjwiSKvw">
     <property role="TrG5h" value="DocumentedPropertyAnnotation" />

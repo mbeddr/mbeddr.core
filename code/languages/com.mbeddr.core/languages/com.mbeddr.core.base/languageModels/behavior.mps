@@ -4381,6 +4381,29 @@
   </node>
   <node concept="13h7C7" id="IviauXaxW">
     <ref role="13h7C2" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    <node concept="13i0hz" id="2daXVy6Qz1j" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isDisplayed" />
+      <node concept="3Tm1VV" id="7jN4X3UX2AX" role="1B3o_S" />
+      <node concept="10P_77" id="7jN4X3UX3Yi" role="3clF45" />
+      <node concept="3clFbS" id="7jN4X3UX2AZ" role="3clF47">
+        <node concept="3clFbF" id="7jN4X3UX40a" role="3cqZAp">
+          <node concept="3clFbT" id="7jN4X3UX409" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="7jN4X3UX40r" role="lGtFl">
+        <node concept="TZ5HA" id="7jN4X3UX40s" role="TZ5H$">
+          <node concept="1dT_AC" id="7jN4X3UX40t" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="x79VA" id="7jN4X3UX40u" role="3nqlJM">
+          <property role="x79VB" value="Whether such node can be created from the mbeddr context menu" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="IviauXb0g" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -19794,11 +19817,6 @@
         <node concept="3cpWs8" id="4PRpvcZCjWa" role="3cqZAp">
           <node concept="3cpWsn" id="4PRpvcZCjWb" role="3cpWs9">
             <property role="TrG5h" value="projectModules" />
-            <node concept="A3Dl8" id="6PcyHXr8lOW" role="1tU5fm">
-              <node concept="3uibUv" id="6PcyHXr8lOY" role="A3Ik2">
-                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-              </node>
-            </node>
             <node concept="2OqwBi" id="6PcyHXr8j8L" role="33vP2m">
               <node concept="2OqwBi" id="4PRpvcZCjWc" role="2Oq$k0">
                 <node concept="37vLTw" id="4PRpvcZCjWd" role="2Oq$k0">
@@ -19810,6 +19828,11 @@
               </node>
               <node concept="liA8E" id="6PcyHXr8kAH" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project$ProjectScope.getModules()" resolve="getModules" />
+              </node>
+            </node>
+            <node concept="A3Dl8" id="6PcyHXr8lOW" role="1tU5fm">
+              <node concept="3uibUv" id="6PcyHXr8lOY" role="A3Ik2">
+                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
               </node>
             </node>
           </node>
