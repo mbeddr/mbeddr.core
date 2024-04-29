@@ -34,7 +34,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
@@ -93,7 +93,7 @@
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
         <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
-      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NullRenderer" flags="ng" index="1_05Lf" />
+      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NoOutputRenderer" flags="ng" index="1_05Lf" />
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
         <property id="126932837435324910" name="title" index="WqcPg" />
       </concept>
@@ -106,7 +106,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -142,7 +142,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

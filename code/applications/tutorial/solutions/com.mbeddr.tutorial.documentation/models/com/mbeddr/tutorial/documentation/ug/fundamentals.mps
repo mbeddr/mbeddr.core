@@ -41,7 +41,7 @@
       <concept id="5785245534400277706" name="com.mbeddr.doc.structure.TextBlockTableCell" flags="ng" index="C7FVz">
         <child id="5785245534400277707" name="text" index="C7FVy" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
@@ -75,7 +75,7 @@
       <concept id="5185579450379471862" name="com.mbeddr.doc.structure.StringTableCell" flags="ng" index="1xAuFZ">
         <property id="5185579450379471864" name="text" index="1xAuFL" />
       </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
@@ -88,7 +88,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -122,7 +122,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

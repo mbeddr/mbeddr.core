@@ -4,8 +4,8 @@
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,8 +14,8 @@
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -284,11 +284,6 @@
   <node concept="bUwia" id="DYlgnAyWN$">
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
-    <node concept="2rT7sh" id="2RIzFJ7I7bZ" role="2rTMjI">
-      <property role="TrG5h" value="compareResult" />
-      <ref role="2rTdP9" to="8do3:DYlgnAyXkO" resolve="AssertNodeEquals" />
-      <ref role="2rZz_L" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
-    </node>
     <node concept="3aamgX" id="3C6_kMLS8OV" role="3acgRq">
       <ref role="30HIoZ" to="8do3:DYlgnAyXkO" resolve="AssertNodeEquals" />
       <node concept="1Koe21" id="3C6_kMLS8OW" role="1lVwrX">
@@ -902,6 +897,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2rT7sh" id="2RIzFJ7I7bZ" role="2rTMjI">
+      <property role="TrG5h" value="compareResult" />
+      <ref role="2rTdP9" to="8do3:DYlgnAyXkO" resolve="AssertNodeEquals" />
+      <ref role="2rZz_L" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
     </node>
   </node>
   <node concept="jVnub" id="2RIzFJ7Guov">

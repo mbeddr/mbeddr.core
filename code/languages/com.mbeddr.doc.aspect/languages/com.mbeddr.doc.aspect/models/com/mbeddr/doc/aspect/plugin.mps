@@ -2,7 +2,7 @@
 <model ref="r:e361f9f2-2afa-4fbe-b895-bdd4fbfe44fa(com.mbeddr.doc.aspect.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
@@ -163,13 +163,6 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1T8cMxCROtp" role="1B3o_S" />
-    <node concept="3UR2Jj" id="3qokpdXQck2" role="lGtFl">
-      <node concept="TZ5HA" id="3qokpdXQck3" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQck4" role="1dT_Ay">
-          <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="5N03sBKzJsf" role="jymVt" />
     <node concept="3clFb_" id="5N03sBKzJsV" role="jymVt">
       <property role="TrG5h" value="allowOverrideChildren" />
@@ -223,6 +216,13 @@
       <node concept="2JFqV2" id="5N03sBKzK4p" role="2frcjj" />
     </node>
     <node concept="2tJIrI" id="5N03sBKzJss" role="jymVt" />
+    <node concept="3UR2Jj" id="3qokpdXQck2" role="lGtFl">
+      <node concept="TZ5HA" id="3qokpdXQck3" role="TZ5H$">
+        <node concept="1dT_AC" id="3qokpdXQck4" role="1dT_Ay">
+          <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="3qokpdXQc0N">
     <property role="TrG5h" value="DefaultDocAspectConfiguration" />

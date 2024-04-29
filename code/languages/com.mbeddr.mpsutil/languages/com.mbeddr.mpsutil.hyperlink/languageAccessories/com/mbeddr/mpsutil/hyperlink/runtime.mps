@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -115,9 +114,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -139,6 +135,13 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -168,21 +171,6 @@
   </node>
   <node concept="312cEu" id="5A_Zlt6xR7j">
     <property role="TrG5h" value="HyperlinkUtil" />
-    <node concept="Wx3nA" id="5A_Zlt6y3bR" role="jymVt">
-      <property role="TrG5h" value="LOG" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="5A_Zlt6y2HF" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="3Tm6S6" id="5A_Zlt6y2Gw" role="1B3o_S" />
-      <node concept="2YIFZM" id="5A_Zlt6y337" role="33vP2m">
-        <ref role="37wK5l" to="q7tw:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
-        <ref role="1Pybhc" to="q7tw:~Logger" resolve="Logger" />
-        <node concept="3VsKOn" id="5A_Zlt6y34B" role="37wK5m">
-          <ref role="3VsUkX" node="5A_Zlt6xR7j" resolve="HyperlinkUtil" />
-        </node>
-      </node>
-    </node>
     <node concept="Wx3nA" id="5A_Zlt6xXFZ" role="jymVt">
       <property role="TrG5h" value="INSTANCE" />
       <property role="3TUv4t" value="true" />
@@ -363,25 +351,18 @@
               </node>
             </node>
             <node concept="3clFbS" id="3DAECxFHCVO" role="1zc67A">
-              <node concept="3clFbF" id="5A_Zlt6y4Uv" role="3cqZAp">
-                <node concept="2OqwBi" id="5A_Zlt6y4Wv" role="3clFbG">
-                  <node concept="37vLTw" id="5A_Zlt6y4Ut" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5A_Zlt6y3bR" resolve="LOG" />
+              <node concept="RRSsy" id="5EH2I6rnOss" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="3cpWs3" id="5A_Zlt6y6H4" role="RRSoy">
+                  <node concept="37vLTw" id="5A_Zlt6y6Hp" role="3uHU7w">
+                    <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
                   </node>
-                  <node concept="liA8E" id="5A_Zlt6y5au" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="3cpWs3" id="5A_Zlt6y6H4" role="37wK5m">
-                      <node concept="37vLTw" id="5A_Zlt6y6Hp" role="3uHU7w">
-                        <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
-                      </node>
-                      <node concept="Xl_RD" id="5A_Zlt6y5gy" role="3uHU7B">
-                        <property role="Xl_RC" value="Failed to open URL: " />
-                      </node>
-                    </node>
-                    <node concept="37vLTw" id="5A_Zlt6y5Jo" role="37wK5m">
-                      <ref role="3cqZAo" node="3DAECxFHCVM" resolve="ex" />
-                    </node>
+                  <node concept="Xl_RD" id="5A_Zlt6y5gy" role="3uHU7B">
+                    <property role="Xl_RC" value="Failed to open URL: " />
                   </node>
+                </node>
+                <node concept="37vLTw" id="5EH2I6rnOUj" role="RRSow">
+                  <ref role="3cqZAo" node="3DAECxFHCVM" resolve="ex" />
                 </node>
               </node>
             </node>

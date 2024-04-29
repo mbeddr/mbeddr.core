@@ -30,7 +30,7 @@
       <concept id="2510545900188223991" name="com.mbeddr.mpsutil.multilingual.editor.structure.MultilingualConstant" flags="ng" index="3ZRKB6" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -43,7 +43,7 @@
         <property id="568377005202317272" name="default" index="3MtHw7" />
         <property id="568377005202317271" name="technicalKey" index="3MtHw8" />
       </concept>
-      <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ng" index="3ZOmrE">
+      <concept id="2510545900188083931" name="com.mbeddr.mpsutil.multilingual.common.structure.IMessageKeyHolder" flags="ngI" index="3ZOmrE">
         <reference id="2510545900188083932" name="key" index="3ZOmrH" />
       </concept>
     </language>

@@ -51,7 +51,7 @@
       <concept id="5744000828452849517" name="com.mbeddr.cc.requirements.scenarios.structure.NonSelfCall" flags="ng" index="16NoOZ">
         <child id="5744000828452849518" name="targetParticipant" index="16NoOW" />
       </concept>
-      <concept id="5744000828452862536" name="com.mbeddr.cc.requirements.scenarios.structure.ICallContext" flags="ng" index="16Nr0q">
+      <concept id="5744000828452862536" name="com.mbeddr.cc.requirements.scenarios.structure.ICallContext" flags="ngI" index="16Nr0q">
         <child id="5744000828452862537" name="contents" index="16Nr0r" />
       </concept>
       <concept id="5744000828452835552" name="com.mbeddr.cc.requirements.scenarios.structure.ScenarioRequirementKind" flags="ng" index="16NtEM" />
@@ -119,7 +119,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
       <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
@@ -158,7 +158,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -223,7 +223,7 @@
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
-      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
+      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ngI" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
@@ -330,7 +330,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -348,7 +348,7 @@
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
-      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ngI" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
