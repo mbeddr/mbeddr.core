@@ -19,6 +19,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - A null pointer was fixed that was related to showing the documentation when the documentation tab is not opened.
 - The documentation Tool is now only updated when the selection changed.
+- com.mbeddr.mpsutil.compare: the diff preview feature now also works in external classes and not only test cases.
 
 ## com.mbeddr.mpsutil
 
