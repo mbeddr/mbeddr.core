@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="off" classes="off" ext="yes">
       <classes generated="true" />
     </facet>
   </facets>

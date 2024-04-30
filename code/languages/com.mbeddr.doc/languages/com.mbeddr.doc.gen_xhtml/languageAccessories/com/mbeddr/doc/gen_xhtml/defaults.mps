@@ -8,17 +8,17 @@
   <imports />
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="6347396756633822235" name="com.mbeddr.doc.gen_xhtml.structure.CSSSpecification" flags="ng" index="7H_Yz">
+      <concept id="6347396756633822235" name="com.mbeddr.doc.gen_xhtml.structure.CssSpecification" flags="ng" index="7H_Yz">
         <child id="988357225320087812" name="rulesets" index="3zO_yG" />
       </concept>
-      <concept id="988357225320087791" name="com.mbeddr.doc.gen_xhtml.structure.CSSDeclaration" flags="ng" index="3zO__7">
+      <concept id="988357225320087791" name="com.mbeddr.doc.gen_xhtml.structure.CssDeclaration" flags="ng" index="3zO__7">
         <property id="988357225320087842" name="expression" index="3zO_ya" />
         <property id="988357225320087839" name="property" index="3zO_yR" />
       </concept>
-      <concept id="988357225320087766" name="com.mbeddr.doc.gen_xhtml.structure.CSSSelector" flags="ng" index="3zO__Y">
+      <concept id="988357225320087766" name="com.mbeddr.doc.gen_xhtml.structure.CssSelector" flags="ng" index="3zO__Y">
         <property id="988357225320087823" name="text" index="3zO_yB" />
       </concept>
-      <concept id="988357225320077162" name="com.mbeddr.doc.gen_xhtml.structure.CSSRuleset" flags="ng" index="3zOSV2">
+      <concept id="988357225320077162" name="com.mbeddr.doc.gen_xhtml.structure.CssRuleset" flags="ng" index="3zOSV2">
         <child id="988357225320087818" name="declarations" index="3zO_yy" />
         <child id="988357225320087815" name="selectors" index="3zO_yJ" />
       </concept>

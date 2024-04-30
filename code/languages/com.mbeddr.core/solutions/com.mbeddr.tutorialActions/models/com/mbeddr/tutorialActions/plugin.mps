@@ -25,6 +25,7 @@
     <import index="ofh9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.platform(MPS.IDEA/)" />
     <import index="btn2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.impl(MPS.IDEA/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -104,6 +105,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -1530,6 +1534,28 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="1VRNFInKbwv" role="3cqZAp">
+                  <node concept="3cpWsn" id="1VRNFInKbww" role="3cpWs9">
+                    <property role="TrG5h" value="task" />
+                    <node concept="3uibUv" id="1VRNFInKbwx" role="1tU5fm">
+                      <ref role="3uigEE" to="btn2:~OpenProjectTask" resolve="OpenProjectTask" />
+                    </node>
+                    <node concept="2ShNRf" id="1VRNFInKcsf" role="33vP2m">
+                      <node concept="1pGfFk" id="1VRNFInKeBL" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="btn2:~OpenProjectTask.&lt;init&gt;(boolean,com.intellij.openapi.project.Project,boolean,boolean)" resolve="OpenProjectTask" />
+                        <node concept="3clFbT" id="1VRNFInKgUo" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                        <node concept="10Nm6u" id="1VRNFInKi5P" role="37wK5m" />
+                        <node concept="3clFbT" id="1VRNFInKj6i" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                        <node concept="3clFbT" id="1VRNFInKkRa" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="7836$RyWXkT" role="3cqZAp">
                   <node concept="3cpWsn" id="7836$RyWXkS" role="3cpWs9">
                     <property role="3TUv4t" value="false" />
@@ -1537,17 +1563,18 @@
                     <node concept="3uibUv" id="7836$RyWXkU" role="1tU5fm">
                       <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
                     </node>
-                    <node concept="2YIFZM" id="7836$RyX1S3" role="33vP2m">
+                    <node concept="2YIFZM" id="1VRNFInKmSV" role="33vP2m">
+                      <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
                       <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                      <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.lang.String,com.intellij.openapi.project.Project,boolean)" resolve="openProject" />
-                      <node concept="37vLTw" id="7836$RyWXkW" role="37wK5m">
-                        <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
+                      <node concept="2YIFZM" id="1VRNFInKqGD" role="37wK5m">
+                        <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                        <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                        <node concept="37vLTw" id="1VRNFInKrSz" role="37wK5m">
+                          <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
+                        </node>
                       </node>
-                      <node concept="37vLTw" id="7836$RyWXkX" role="37wK5m">
-                        <ref role="3cqZAo" node="7836$RyWXjW" resolve="currentProject" />
-                      </node>
-                      <node concept="3clFbT" id="7836$RyWXkY" role="37wK5m">
-                        <property role="3clFbU" value="false" />
+                      <node concept="37vLTw" id="1VRNFInKmSX" role="37wK5m">
+                        <ref role="3cqZAo" node="1VRNFInKbww" resolve="task" />
                       </node>
                     </node>
                   </node>

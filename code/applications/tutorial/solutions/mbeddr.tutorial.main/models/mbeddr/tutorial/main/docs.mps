@@ -47,7 +47,7 @@
         <property id="126932837435370852" name="email" index="Wq1Bq" />
         <property id="126932837435370851" name="name" index="Wq1Bt" />
       </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -88,8 +88,8 @@
       </concept>
     </language>
     <language id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions">
-      <concept id="5378658552263149308" name="com.mbeddr.doc.expressions.structure.VariableDefinition" flags="ng" index="3XpXe8" />
-      <concept id="5378658552263151469" name="com.mbeddr.doc.expressions.structure.VariableReference" flags="ng" index="3XpXCp">
+      <concept id="5378658552263149308" name="com.mbeddr.doc.expressions.structure.VariableDef" flags="ng" index="3XpXe8" />
+      <concept id="5378658552263151469" name="com.mbeddr.doc.expressions.structure.VarRef" flags="ng" index="3XpXCp">
         <reference id="5378658552263151470" name="var" index="3XpXCq" />
       </concept>
       <concept id="5378658552263151447" name="com.mbeddr.doc.expressions.structure.Equation" flags="ng" index="3XpXCz">
