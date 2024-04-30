@@ -141,7 +141,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Changed
 
-- Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
+- Added possibility to update the ToolWindow contents of context action 2 even if the Window is not visible.
+
+## com.mbeddr.doc.aspect
+
+### Added
+
+* For documentation annotations of concepts there is a new flag `override children` in the inspector. It allows to show the document of a node even if the currently selected child node would have its own documentation.
+* By default, this new behavior is switched off. The `documentationAspectConfiguration` extension point now has a configuration option `allowOverrideChildren` which has to be set to true in order to use the override functionality.
+* A cache has been added to speed up the look-up and display of concept-specific documentation in the documentation view.
 
 # September 2023
 
