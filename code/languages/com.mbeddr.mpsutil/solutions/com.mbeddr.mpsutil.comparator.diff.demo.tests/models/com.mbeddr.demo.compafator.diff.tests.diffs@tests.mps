@@ -12,6 +12,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -69,6 +70,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -728,6 +730,41 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="3iWn33UB39" role="1SL9yI">
+      <property role="TrG5h" value="helperClass" />
+      <node concept="3cqZAl" id="3iWn33UB3a" role="3clF45" />
+      <node concept="3clFbS" id="3iWn33UB3b" role="3clF47">
+        <node concept="3clFbJ" id="3iWn33UB3c" role="3cqZAp">
+          <node concept="3clFbS" id="3iWn33UB3d" role="3clFbx">
+            <node concept="3cpWs6" id="3iWn33UB3e" role="3cqZAp" />
+          </node>
+          <node concept="3fqX7Q" id="3iWn33UB3f" role="3clFbw">
+            <node concept="2OqwBi" id="3iWn33UB3g" role="3fr31v">
+              <node concept="2WthIp" id="3iWn33UB3h" role="2Oq$k0" />
+              <node concept="2XshWL" id="3iWn33UB3i" role="2OqNvi">
+                <ref role="2WH_rO" node="3j0GERRSceI" resolve="testsEnabled" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3iWn33UB3j" role="3cqZAp" />
+        <node concept="3clFbF" id="3iWn33UBHi" role="3cqZAp">
+          <node concept="2YIFZM" id="3iWn33UBIH" role="3clFbG">
+            <ref role="37wK5l" node="3iWn33UAZJ" resolve="compare" />
+            <ref role="1Pybhc" node="3iWn33UAWP" resolve="HelperClass" />
+            <node concept="2OqwBi" id="3iWn33UBOa" role="37wK5m">
+              <node concept="2WthIp" id="3iWn33UBJK" role="2Oq$k0" />
+              <node concept="2XshWL" id="3iWn33UBSN" role="2OqNvi">
+                <ref role="2WH_rO" node="2RIzFJ7FNYX" resolve="expected" />
+              </node>
+            </node>
+            <node concept="3xONca" id="3iWn33UBV$" role="37wK5m">
+              <ref role="3xOPvv" node="6Qumy0DUPjP" resolve="wrong" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="5oR1gCFPHyE" role="1SL9yI">
       <property role="TrG5h" value="editibleFromMemory1" />
       <node concept="3cqZAl" id="5oR1gCFPHyF" role="3clF45" />
@@ -926,6 +963,33 @@
   </node>
   <node concept="2XOHcx" id="4X7wieqDZ0B">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+  </node>
+  <node concept="312cEu" id="3iWn33UAWP">
+    <property role="TrG5h" value="HelperClass" />
+    <node concept="2YIFZL" id="3iWn33UAZJ" role="jymVt">
+      <property role="TrG5h" value="compare" />
+      <node concept="3clFbS" id="3iWn33UAZM" role="3clF47">
+        <node concept="3GXo0L" id="3iWn33UBrh" role="3cqZAp">
+          <node concept="37vLTw" id="3iWn33UB$D" role="3tpDZB">
+            <ref role="3cqZAo" node="3iWn33UByy" resolve="expected" />
+          </node>
+          <node concept="37vLTw" id="3iWn33UBBL" role="3tpDZA">
+            <ref role="3cqZAo" node="3iWn33UB_l" resolve="actual" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3iWn33UAZ9" role="1B3o_S" />
+      <node concept="3cqZAl" id="3iWn33UB0k" role="3clF45" />
+      <node concept="37vLTG" id="3iWn33UByy" role="3clF46">
+        <property role="TrG5h" value="expected" />
+        <node concept="3Tqbb2" id="3iWn33UByx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3iWn33UB_l" role="3clF46">
+        <property role="TrG5h" value="actual" />
+        <node concept="3Tqbb2" id="3iWn33UBAb" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="3iWn33UAWQ" role="1B3o_S" />
   </node>
 </model>
 
