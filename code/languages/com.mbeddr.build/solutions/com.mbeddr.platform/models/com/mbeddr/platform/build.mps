@@ -6396,19 +6396,9 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5fGcQI947Ch" role="3bR37C">
-          <node concept="3bR9La" id="5fGcQI947Ci" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5fGcQI947Cj" role="3bR37C">
           <node concept="3bR9La" id="5fGcQI947Ck" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5fGcQI947Cl" role="3bR37C">
-          <node concept="3bR9La" id="5fGcQI947Cm" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
           </node>
         </node>
         <node concept="1SiIV0" id="5fGcQI947Cn" role="3bR37C">
@@ -6449,9 +6439,9 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="9jWrhFmzzW" role="3bR37C">
-          <node concept="3bR9La" id="9jWrhFmzzX" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+        <node concept="1SiIV0" id="9jWrhFq1E0" role="3bR37C">
+          <node concept="3bR9La" id="9jWrhFq1E1" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
       </node>
