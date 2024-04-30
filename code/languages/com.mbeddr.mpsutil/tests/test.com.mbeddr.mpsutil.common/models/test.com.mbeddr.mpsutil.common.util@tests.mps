@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2ab3ddbe-8637-491d-bebd-21897939eb53(com.mbeddr.mpsutil.common.util@tests)">
+<model ref="r:4edb27ca-b2e0-4133-881e-47d5e6977f2d(test.com.mbeddr.mpsutil.common.util@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
@@ -10,8 +10,8 @@
   <imports>
     <import index="7wpd" ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21/r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.util)" />
     <import index="qhup" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.mutable(org.apache.commons/)" />
-    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -120,9 +120,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="3RjqiP9ZZRO">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
-  </node>
   <node concept="3s_ewN" id="9jWrhFjvu4">
     <property role="3s_ewP" value="LazyInit" />
     <node concept="3Tm1VV" id="9jWrhFjvu5" role="1B3o_S" />
@@ -254,7 +251,7 @@
               <node concept="10Oyi0" id="9jWrhFkU19" role="1tU5fm" />
               <node concept="2OqwBi" id="9jWrhFkRCC" role="33vP2m">
                 <node concept="37vLTw" id="9jWrhFkRCD" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9jWrhFjvMm" resolve="init" />
+                  <ref role="3cqZAo" node="9jWrhFjvMm" resolve="supplier" />
                 </node>
                 <node concept="liA8E" id="9jWrhFkRCE" role="2OqNvi">
                   <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
@@ -342,7 +339,7 @@
               <node concept="10Oyi0" id="9jWrhFkTTI" role="1tU5fm" />
               <node concept="2OqwBi" id="9jWrhFkTCm" role="33vP2m">
                 <node concept="37vLTw" id="9jWrhFkTCn" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9jWrhFjvMm" resolve="init" />
+                  <ref role="3cqZAo" node="9jWrhFjvMm" resolve="supplier" />
                 </node>
                 <node concept="liA8E" id="9jWrhFkTCo" role="2OqNvi">
                   <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
@@ -589,7 +586,7 @@
               <node concept="10Oyi0" id="9jWrhFl427" role="1tU5fm" />
               <node concept="2OqwBi" id="9jWrhFl428" role="33vP2m">
                 <node concept="37vLTw" id="9jWrhFl429" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="init" />
+                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="supplier" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl42a" role="2OqNvi">
                   <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
@@ -681,7 +678,7 @@
               <node concept="10Oyi0" id="9jWrhFl42D" role="1tU5fm" />
               <node concept="2OqwBi" id="9jWrhFl42E" role="33vP2m">
                 <node concept="37vLTw" id="9jWrhFl42F" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="init" />
+                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="supplier" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl42G" role="2OqNvi">
                   <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
@@ -786,7 +783,7 @@
               <node concept="10Oyi0" id="9jWrhFlbJL" role="1tU5fm" />
               <node concept="2OqwBi" id="9jWrhFlbJM" role="33vP2m">
                 <node concept="37vLTw" id="9jWrhFlbJN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="init" />
+                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="supplier" />
                 </node>
                 <node concept="liA8E" id="9jWrhFlbJO" role="2OqNvi">
                   <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
@@ -796,7 +793,7 @@
           </node>
           <node concept="3vlDli" id="9jWrhFlbJP" role="3cqZAp">
             <node concept="37vLTw" id="9jWrhFlbJQ" role="3tpDZA">
-              <ref role="3cqZAo" node="9jWrhFlbJK" resolve="v2" />
+              <ref role="3cqZAo" node="9jWrhFlbJK" resolve="v3" />
             </node>
             <node concept="2YIFZM" id="9jWrhFlZGJ" role="3tpDZB">
               <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
@@ -869,7 +866,7 @@
               <node concept="10Oyi0" id="9jWrhFldaX" role="1tU5fm" />
               <node concept="2OqwBi" id="9jWrhFldaY" role="33vP2m">
                 <node concept="37vLTw" id="9jWrhFldaZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="init" />
+                  <ref role="3cqZAo" node="9jWrhFl41x" resolve="supplier" />
                 </node>
                 <node concept="liA8E" id="9jWrhFldb0" role="2OqNvi">
                   <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
@@ -879,7 +876,7 @@
           </node>
           <node concept="3vlDli" id="9jWrhFldb1" role="3cqZAp">
             <node concept="37vLTw" id="9jWrhFldb2" role="3tpDZA">
-              <ref role="3cqZAo" node="9jWrhFldaW" resolve="v3" />
+              <ref role="3cqZAo" node="9jWrhFldaW" resolve="v4" />
             </node>
             <node concept="2YIFZM" id="9jWrhFm059" role="3tpDZB">
               <ref role="37wK5l" to="33ny:~Objects.hash(java.lang.Object...)" resolve="hash" />
@@ -908,6 +905,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="3RjqiP9ZZRO">
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
   </node>
 </model>
 
