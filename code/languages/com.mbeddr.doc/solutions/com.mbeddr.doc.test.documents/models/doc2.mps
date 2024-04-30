@@ -27,7 +27,7 @@
       <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
         <child id="6165313375056012515" name="ref" index="$CzcU" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
@@ -73,7 +73,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -99,7 +99,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -171,14 +171,14 @@
       <property role="2SbEId" value="main" />
       <ref role="2SbEIe" node="2khznRHyx6e" resolve="main" />
     </node>
-    <node concept="2SbEIf" id="44D1kY$kUEh" role="30Gjbg">
-      <property role="2SbEId" value="imgs" />
-      <ref role="2SbEIe" node="2B9KjOuvX9f" resolve="imgs" />
-    </node>
     <node concept="1_0j5j" id="2khznRHyx6i" role="30Gjbj">
       <ref role="1_0j5g" node="2khznRHyx5W" resolve="main_document_including_other_docs" />
     </node>
     <node concept="1TaS0h" id="2khznRHyx6b" role="30GjaH" />
+    <node concept="2SbEIf" id="44D1kY$kUEh" role="30Gjbg">
+      <property role="2SbEId" value="imgs" />
+      <ref role="2SbEIe" node="2B9KjOuvX9f" resolve="imgs" />
+    </node>
   </node>
   <node concept="2SbYGP" id="2khznRHyx6c">
     <property role="TrG5h" value="Config" />

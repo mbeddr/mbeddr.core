@@ -35,6 +35,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
 
+## Changes
+
+- The interface `IIsDocumentationComment` is now integrated into the MPS TODO window and the old mbeddr todo viewer was completely removed.
+
 # March 2024
 
 ## com.mbeddr.mpsutil

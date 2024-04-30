@@ -48,7 +48,7 @@
         <property id="5785245534399940634" name="numCols" index="C6TCN" />
         <child id="5785245534399940635" name="rows" index="C6TCM" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -108,7 +108,7 @@
       <concept id="5185579450379471862" name="com.mbeddr.doc.structure.StringTableCell" flags="ng" index="1xAuFZ">
         <property id="5185579450379471864" name="text" index="1xAuFL" />
       </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
@@ -135,7 +135,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -215,7 +215,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -230,7 +230,7 @@
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
-      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ngI" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
@@ -378,14 +378,6 @@
       <property role="2SbEId" value="figures/doc" />
       <ref role="2SbEIe" node="7$DvC4gRmn2" resolve="images" />
     </node>
-    <node concept="2SbEIf" id="44D1kY$kNzU" role="30Gjbg">
-      <property role="2SbEId" value="figures/doc" />
-      <ref role="2SbEIe" node="6VIi5$IArfl" resolve="img" />
-    </node>
-    <node concept="2SbEIf" id="44D1kY$kNzV" role="30Gjbg">
-      <property role="2SbEId" value="figures/doc" />
-      <ref role="2SbEIe" node="3OiIliPSmau" resolve="temp" />
-    </node>
     <node concept="OjmMv" id="7$DvC4gRvLP" role="WqcPc">
       <node concept="19SGf9" id="7$DvC4gRvLQ" role="OjmMu">
         <node concept="19SUe$" id="7$DvC4gRvLR" role="19SJt6">
@@ -400,6 +392,14 @@
       <property role="1xAxd1" value="true" />
     </node>
     <node concept="1TaS0h" id="hODJYRp92O" role="30GjaH" />
+    <node concept="2SbEIf" id="44D1kY$kNzU" role="30Gjbg">
+      <property role="2SbEId" value="figures/doc" />
+      <ref role="2SbEIe" node="6VIi5$IArfl" resolve="img" />
+    </node>
+    <node concept="2SbEIf" id="44D1kY$kNzV" role="30Gjbg">
+      <property role="2SbEId" value="figures/doc" />
+      <ref role="2SbEIe" node="3OiIliPSmau" resolve="temp" />
+    </node>
   </node>
   <node concept="1_1swa" id="7$DvC4gPSHs">
     <property role="TrG5h" value="B_SimpleDocuments" />

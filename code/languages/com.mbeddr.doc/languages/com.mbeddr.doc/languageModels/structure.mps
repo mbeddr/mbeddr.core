@@ -79,7 +79,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -998,8 +998,8 @@
     <property role="3GE5qa" value="table" />
     <property role="TrG5h" value="StringTableCell" />
     <property role="R4oN_" value="a simple string" />
-    <property role="EcuMT" value="5185579450379471862" />
     <property role="34LRSv" value="&quot;" />
+    <property role="EcuMT" value="5185579450379471862" />
     <ref role="1TJDcQ" node="4vQSg$ArKJJ" resolve="TableCell" />
     <node concept="1TJgyi" id="4vQSg$ArKJS" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -1412,11 +1412,6 @@
     <property role="3GE5qa" value="modelContent" />
     <property role="EcuMT" value="6955693250238922827" />
     <ref role="1TJDcQ" node="627_yy34G14" resolve="AbstractModelContentParagraph" />
-    <node concept="1TJgyi" id="UZf0JknNZ8" role="1TKVEl">
-      <property role="IQ2nx" value="1062634058588045256" />
-      <property role="TrG5h" value="renderInspector" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="627_yy34G1c" role="1TKVEi">
       <property role="20kJfa" value="path" />
       <property role="IQ2ns" value="6955693250238922828" />
@@ -1457,6 +1452,11 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="5843576916141742081" />
       <ref role="20lvS9" to="tpc2:5UHFGFk4ozs" resolve="ConceptEditorHintDeclarationReference" />
+    </node>
+    <node concept="1TJgyi" id="UZf0JknNZ8" role="1TKVEl">
+      <property role="IQ2nx" value="1062634058588045256" />
+      <property role="TrG5h" value="renderInspector" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="627_yy34G1i">
