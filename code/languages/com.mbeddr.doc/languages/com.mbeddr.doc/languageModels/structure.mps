@@ -71,6 +71,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -1894,6 +1895,29 @@
     <property role="34LRSv" value="\subscript" />
     <property role="R4oN_" value="text set slightly below the normal line of type" />
     <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
+  </node>
+  <node concept="1TIwiD" id="xCXNld9xv2">
+    <property role="3GE5qa" value="words.formatted" />
+    <property role="TrG5h" value="HypertextReferenceFormattedText" />
+    <property role="R4oN_" value="text formatted as a hypertext reference" />
+    <property role="34LRSv" value="\href" />
+    <property role="EcuMT" value="606005958181001154" />
+    <ref role="1TJDcQ" node="5mf_X_La_N$" resolve="FormattedText" />
+    <node concept="1TJgyj" id="xCXNldb8b1" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="url" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="606005958181421761" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <ref role="20ksaX" node="5mf_X_La_N_" resolve="text" />
+    </node>
+    <node concept="1TJgyj" id="xCXNldb8oL" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="title" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="606005958181422641" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
   </node>
 </model>
 
