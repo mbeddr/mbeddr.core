@@ -75,7 +75,7 @@
       <concept id="5185579450379471862" name="com.mbeddr.doc.structure.StringTableCell" flags="ng" index="1xAuFZ">
         <property id="5185579450379471864" name="text" index="1xAuFL" />
       </concept>
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
