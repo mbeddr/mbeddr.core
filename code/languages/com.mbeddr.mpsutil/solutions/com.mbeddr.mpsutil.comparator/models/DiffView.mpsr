@@ -58,10 +58,6 @@
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -582,19 +578,24 @@
           <node concept="3clFbS" id="6Od11GYe2sz" role="3clFbx">
             <node concept="3cpWs8" id="3zBhpJM4Blb" role="3cqZAp">
               <node concept="3cpWsn" id="3zBhpJM4Blc" role="3cpWs9">
-                <property role="TrG5h" value="mpsProject" />
+                <property role="TrG5h" value="project" />
                 <node concept="3uibUv" id="3zBhpJM4Bld" role="1tU5fm">
-                  <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+                  <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
                 </node>
-                <node concept="10QFUN" id="3zBhpJM4Ble" role="33vP2m">
-                  <node concept="3uibUv" id="3zBhpJM4Blf" role="10QFUM">
-                    <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+                <node concept="2OqwBi" id="3Z0sSZQGQp" role="33vP2m">
+                  <node concept="2OqwBi" id="3Z0sSZQGQq" role="2Oq$k0">
+                    <node concept="2YIFZM" id="3Z0sSZQGQr" role="2Oq$k0">
+                      <ref role="37wK5l" to="z1c4:~ProjectManager.getInstance()" resolve="getInstance" />
+                      <ref role="1Pybhc" to="z1c4:~ProjectManager" resolve="ProjectManager" />
+                    </node>
+                    <node concept="liA8E" id="3Z0sSZQGQs" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c4:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />
+                    </node>
                   </node>
-                  <node concept="2YIFZM" id="6Qumy0DW60V" role="10QFUP">
-                    <ref role="37wK5l" to="alof:~ProjectHelper.getProject(org.jetbrains.mps.openapi.module.SRepository)" resolve="getProject" />
-                    <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                    <node concept="37vLTw" id="6Qumy0DW60W" role="37wK5m">
-                      <ref role="3cqZAo" node="3zBhpJM5Jws" resolve="repo" />
+                  <node concept="liA8E" id="3Z0sSZQGQt" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                    <node concept="3cmrfG" id="3Z0sSZQGQu" role="37wK5m">
+                      <property role="3cmrfH" value="0" />
                     </node>
                   </node>
                 </node>
@@ -733,12 +734,11 @@
                                 <ref role="1Y3XeK" to="p37l:778KdJ_suR6" resolve="StructDifferenceDialog" />
                                 <node concept="2tJIrI" id="2u2KgtdovIs" role="jymVt" />
                                 <node concept="3Tm1VV" id="2u2Kgtdlo0U" role="1B3o_S" />
-                                <node concept="2OqwBi" id="2u2KgtdlfvO" role="37wK5m">
-                                  <node concept="37vLTw" id="2u2KgtdlfvP" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3zBhpJM4Blc" resolve="mpsProject" />
-                                  </node>
-                                  <node concept="liA8E" id="2u2KgtdlfvQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="z1c3:~MPSProject.getProject()" resolve="getProject" />
+                                <node concept="2YIFZM" id="3Z0sSZQLrC" role="37wK5m">
+                                  <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
+                                  <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                                  <node concept="37vLTw" id="3Z0sSZQMdN" role="37wK5m">
+                                    <ref role="3cqZAo" node="3zBhpJM4Blc" resolve="project" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="2u2KgtdlfvR" role="37wK5m">
