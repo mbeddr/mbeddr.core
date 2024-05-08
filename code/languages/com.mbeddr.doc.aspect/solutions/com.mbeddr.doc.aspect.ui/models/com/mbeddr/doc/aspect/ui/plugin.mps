@@ -107,6 +107,9 @@
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
         <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
+      <concept id="4295816563224240545" name="jetbrains.mps.lang.plugin.structure.PinTabOperation" flags="ng" index="1kDqZ6">
+        <child id="5386424596292315200" name="componentExpression" index="3PF$jx" />
+      </concept>
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="5818192529492099570" name="jetbrains.mps.lang.plugin.structure.CloseTabOperation" flags="nn" index="3ryLUP">
         <child id="5818192529492102108" name="componentExpression" index="3ryLir" />
@@ -357,11 +360,6 @@
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
-    </language>
-    <language id="58e731a3-6aaa-444a-bf40-801b91c15878" name="com.mbeddr.mpsutil.lang.plugin.extensions">
-      <concept id="4295816563224240545" name="com.mbeddr.mpsutil.lang.plugin.extensions.structure.PinTabOperation" flags="ng" index="1kDqZ6">
-        <child id="6938053545825381648" name="componentExpression" index="2BLOvw" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -3600,11 +3598,8 @@
                                 <node concept="2WthIp" id="DxJoPcq$gP" role="2Oq$k0" />
                                 <node concept="2XshWL" id="DxJoPcq$gQ" role="2OqNvi">
                                   <ref role="2WH_rO" node="1CsE99tCRef" resolve="hasDoc" />
-                                  <node concept="2OqwBi" id="DxJoPcq$gR" role="2XxRq1">
-                                    <node concept="37vLTw" id="DxJoPcq$j$" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="DxJoPcq$jw" resolve="selectedNode" />
-                                    </node>
-                                    <node concept="2yIwOk" id="DxJoPcq$gT" role="2OqNvi" />
+                                  <node concept="37vLTw" id="DxJoPcq$j$" role="2XxRq1">
+                                    <ref role="3cqZAo" node="DxJoPcq$jw" resolve="selectedNode" />
                                   </node>
                                   <node concept="2EnYce" id="DxJoPcq$gU" role="2XxRq1">
                                     <node concept="2OqwBi" id="DxJoPcq$gV" role="2Oq$k0">
@@ -3781,13 +3776,13 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="DxJoPcq$i1" role="3cqZAp">
-                                  <node concept="2OqwBi" id="DxJoPcq$i2" role="3clFbG">
-                                    <node concept="2WthIp" id="DxJoPcq$i3" role="2Oq$k0" />
-                                    <node concept="1kDqZ6" id="DxJoPcq$i4" role="2OqNvi">
-                                      <node concept="2OqwBi" id="DxJoPcq$i5" role="2BLOvw">
-                                        <node concept="2WthIp" id="DxJoPcq$i6" role="2Oq$k0" />
-                                        <node concept="2BZ7hE" id="DxJoPcq$i7" role="2OqNvi">
+                                <node concept="3clFbF" id="eTHO$V0b6S" role="3cqZAp">
+                                  <node concept="2OqwBi" id="eTHO$V0cqK" role="3clFbG">
+                                    <node concept="2WthIp" id="eTHO$V0b6Q" role="2Oq$k0" />
+                                    <node concept="1kDqZ6" id="eTHO$V0dJs" role="2OqNvi">
+                                      <node concept="2OqwBi" id="eTHO$V0fFo" role="3PF$jx">
+                                        <node concept="2WthIp" id="eTHO$V0eRd" role="2Oq$k0" />
+                                        <node concept="2BZ7hE" id="eTHO$V0gVq" role="2OqNvi">
                                           <ref role="2WH_rO" node="19PERUGMVUM" resolve="conceptDocPanel" />
                                         </node>
                                       </node>
