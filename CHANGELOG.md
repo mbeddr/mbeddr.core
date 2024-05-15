@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# May 2024
+
+## com.mbeddr.mpsutil
+
+### Added
+
+- A new generic class `Traversal<T>` is provided. It allows to do breadth-first traversals on data structures like graphs or trees. It is robust against cycles.
+
 # April 2024
 
 ## com.mbeddr.core
