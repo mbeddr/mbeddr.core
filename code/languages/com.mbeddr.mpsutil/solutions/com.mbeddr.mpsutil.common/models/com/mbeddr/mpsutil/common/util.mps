@@ -4258,6 +4258,40 @@
       <node concept="16euLQ" id="5Hb7SE2mUv2" role="16eVyc">
         <property role="TrG5h" value="E" />
       </node>
+      <node concept="P$JXv" id="1BQevbVSiDq" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSiDr" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSiDs" role="1dT_Ay">
+            <property role="1dT_AB" value="Run traversal directly by providing a start node." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSiDt" role="3nqlJM">
+          <property role="TUZQ4" value="the node where the traversal is started" />
+          <node concept="zr_55" id="1BQevbVSiDv" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mUum" resolve="startNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSiDw" role="3nqlJM">
+          <property role="TUZQ4" value="a function which may request a premature finish of the traversal" />
+          <node concept="zr_55" id="1BQevbVSiDy" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mUup" resolve="finishNow" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSiDz" role="3nqlJM">
+          <property role="TUZQ4" value="a function returning the successors for any given node" />
+          <node concept="zr_55" id="1BQevbVSiD_" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mUut" resolve="successors" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSiDA" role="3nqlJM">
+          <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+          <node concept="zr_56" id="1BQevbVSiDC" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mUv2" resolve="E" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSUo_" role="3nqlJM">
+          <property role="x79VB" value="true if the premature end of the traversal has been requested by finishNow, false otherwise" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5Hb7SE2n5iS" role="jymVt" />
     <node concept="2YIFZL" id="5Hb7SE2n3_8" role="jymVt">
@@ -4319,6 +4353,40 @@
       <node concept="10P_77" id="5Hb7SE2n3_u" role="3clF45" />
       <node concept="16euLQ" id="5Hb7SE2n3_v" role="16eVyc">
         <property role="TrG5h" value="E" />
+      </node>
+      <node concept="P$JXv" id="1BQevbVSUNt" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSVD_" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSVDA" role="1dT_Ay">
+            <property role="1dT_AB" value="Run traversal directly by providing a set of start nodes." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSV74" role="3nqlJM">
+          <property role="TUZQ4" value="the set of start nodes for the traversal" />
+          <node concept="zr_55" id="1BQevbVSV75" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2n3_9" resolve="startNodes" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSV76" role="3nqlJM">
+          <property role="TUZQ4" value="a function which may request a premature finish of the traversal" />
+          <node concept="zr_55" id="1BQevbVSV77" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2n3_c" resolve="finishNow" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSV78" role="3nqlJM">
+          <property role="TUZQ4" value="a function returning the successors for any given node" />
+          <node concept="zr_55" id="1BQevbVSV79" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2n3_g" resolve="successors" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSV7a" role="3nqlJM">
+          <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+          <node concept="zr_56" id="1BQevbVSV7b" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2n3_v" resolve="E" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSV7c" role="3nqlJM">
+          <property role="x79VB" value="true if the premature end of the traversal has been requested by finishNow, false otherwise" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5Hb7SE2mUpg" role="jymVt" />
@@ -4432,8 +4500,316 @@
       <node concept="16euLQ" id="5Hb7SE2mERS" role="16eVyc">
         <property role="TrG5h" value="E" />
       </node>
+      <node concept="P$JXv" id="1BQevbVSWn3" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSWn4" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSWn5" role="1dT_Ay">
+            <property role="1dT_AB" value="Factory function for simple creation of an traversal instance." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSXxT" role="3nqlJM">
+          <property role="TUZQ4" value="a function which may request a premature finish of the traversal" />
+          <node concept="zr_55" id="1BQevbVSXxU" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mD42" resolve="finishNowFunc" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSXxV" role="3nqlJM">
+          <property role="TUZQ4" value="a function returning the successors for any given node" />
+          <node concept="zr_55" id="1BQevbVSXxW" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mD_U" resolve="successorsFunc" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSX3M" role="3nqlJM">
+          <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+          <node concept="zr_56" id="1BQevbVSX3N" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2mERS" resolve="E" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSWnf" role="3nqlJM">
+          <property role="x79VB" value="a new traversal instance" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5Hb7SE2mBRk" role="jymVt" />
+    <node concept="2YIFZL" id="1BQevbVT1pR" role="jymVt">
+      <property role="TrG5h" value="doBreadthFirst" />
+      <node concept="37vLTG" id="1BQevbVT1pS" role="3clF46">
+        <property role="TrG5h" value="startNode" />
+        <node concept="16syzq" id="1BQevbVT1pT" role="1tU5fm">
+          <ref role="16sUi3" node="1BQevbVT1qd" resolve="E" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1BQevbVT1pY" role="3clF46">
+        <property role="TrG5h" value="successors" />
+        <property role="3TUv4t" value="true" />
+        <node concept="1ajhzC" id="1BQevbVT1pZ" role="1tU5fm">
+          <node concept="16syzq" id="1BQevbVT1q0" role="1ajw0F">
+            <ref role="16sUi3" node="1BQevbVT1qd" resolve="E" />
+          </node>
+          <node concept="A3Dl8" id="1BQevbVT1q1" role="1ajl9A">
+            <node concept="16syzq" id="1BQevbVT1q2" role="A3Ik2">
+              <ref role="16sUi3" node="1BQevbVT1qd" resolve="E" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="1BQevbVT1q3" role="3clF47">
+        <node concept="3clFbF" id="1BQevbVT1q4" role="3cqZAp">
+          <node concept="2OqwBi" id="1BQevbVT1q5" role="3clFbG">
+            <node concept="1rXfSq" id="1BQevbVT1q6" role="2Oq$k0">
+              <ref role="37wK5l" node="1BQevbVSj7_" resolve="create" />
+              <node concept="37vLTw" id="1BQevbVT1q8" role="37wK5m">
+                <ref role="3cqZAo" node="1BQevbVT1pY" resolve="successors" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1BQevbVT1q9" role="2OqNvi">
+              <ref role="37wK5l" node="5Hb7SE23SD3" resolve="doBreadthFirst" />
+              <node concept="37vLTw" id="1BQevbVT1qa" role="37wK5m">
+                <ref role="3cqZAo" node="1BQevbVT1pS" resolve="startNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1BQevbVT1qb" role="1B3o_S" />
+      <node concept="10P_77" id="1BQevbVT1qc" role="3clF45" />
+      <node concept="16euLQ" id="1BQevbVT1qd" role="16eVyc">
+        <property role="TrG5h" value="E" />
+      </node>
+      <node concept="P$JXv" id="1BQevbVT1qe" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVT1qf" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT1qg" role="1dT_Ay">
+            <property role="1dT_AB" value="Run traversal directly by providing a start node." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVT5zX" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT5zY" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVT5PX" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT5PY" role="1dT_Ay">
+            <property role="1dT_AB" value="This traversal will always run until the end, as it does not have a finishNow() function." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVT1qh" role="3nqlJM">
+          <property role="TUZQ4" value="the node where the traversal is started" />
+          <node concept="zr_55" id="1BQevbVT1qi" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVT1pS" resolve="startNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVT1ql" role="3nqlJM">
+          <property role="TUZQ4" value="a function returning the successors for any given node" />
+          <node concept="zr_55" id="1BQevbVT1qm" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVT1pY" resolve="successors" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVT1qn" role="3nqlJM">
+          <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+          <node concept="zr_56" id="1BQevbVT1qo" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVT1qd" resolve="E" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVT1qp" role="3nqlJM">
+          <property role="x79VB" value="true if the premature end of the traversal has been requested by finishNow, false otherwise" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1BQevbVT1qq" role="jymVt" />
+    <node concept="2YIFZL" id="1BQevbVT1qr" role="jymVt">
+      <property role="TrG5h" value="doBreadthFirst" />
+      <node concept="37vLTG" id="1BQevbVT1qs" role="3clF46">
+        <property role="TrG5h" value="startNodes" />
+        <node concept="A3Dl8" id="1BQevbVT1qt" role="1tU5fm">
+          <node concept="16syzq" id="1BQevbVT1qu" role="A3Ik2">
+            <ref role="16sUi3" node="1BQevbVT1qM" resolve="E" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1BQevbVT1qz" role="3clF46">
+        <property role="TrG5h" value="successors" />
+        <property role="3TUv4t" value="true" />
+        <node concept="1ajhzC" id="1BQevbVT1q$" role="1tU5fm">
+          <node concept="16syzq" id="1BQevbVT1q_" role="1ajw0F">
+            <ref role="16sUi3" node="1BQevbVT1qM" resolve="E" />
+          </node>
+          <node concept="A3Dl8" id="1BQevbVT1qA" role="1ajl9A">
+            <node concept="16syzq" id="1BQevbVT1qB" role="A3Ik2">
+              <ref role="16sUi3" node="1BQevbVT1qM" resolve="E" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="1BQevbVT1qC" role="3clF47">
+        <node concept="3clFbF" id="1BQevbVT1qD" role="3cqZAp">
+          <node concept="2OqwBi" id="1BQevbVT1qE" role="3clFbG">
+            <node concept="1rXfSq" id="1BQevbVT1qF" role="2Oq$k0">
+              <ref role="37wK5l" node="1BQevbVSj7_" resolve="create" />
+              <node concept="37vLTw" id="1BQevbVT1qH" role="37wK5m">
+                <ref role="3cqZAo" node="1BQevbVT1qz" resolve="successors" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1BQevbVT1qI" role="2OqNvi">
+              <ref role="37wK5l" node="5Hb7SE23LnD" resolve="doBreadthFirst1" />
+              <node concept="37vLTw" id="1BQevbVT1qJ" role="37wK5m">
+                <ref role="3cqZAo" node="1BQevbVT1qs" resolve="startNodes" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1BQevbVT1qK" role="1B3o_S" />
+      <node concept="10P_77" id="1BQevbVT1qL" role="3clF45" />
+      <node concept="16euLQ" id="1BQevbVT1qM" role="16eVyc">
+        <property role="TrG5h" value="E" />
+      </node>
+      <node concept="P$JXv" id="1BQevbVT1qN" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVT1qO" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT1qP" role="1dT_Ay">
+            <property role="1dT_AB" value="Run traversal directly by providing a set of start nodes." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVT6FH" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT6FI" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVT6YQ" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT6YR" role="1dT_Ay">
+            <property role="1dT_AB" value="This traversal will always run until the end, as it does not have a finishNow() function." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVT1qQ" role="3nqlJM">
+          <property role="TUZQ4" value="the set of start nodes for the traversal" />
+          <node concept="zr_55" id="1BQevbVT1qR" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVT1qs" resolve="startNodes" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVT1qU" role="3nqlJM">
+          <property role="TUZQ4" value="a function returning the successors for any given node" />
+          <node concept="zr_55" id="1BQevbVT1qV" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVT1qz" resolve="successors" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVT1qW" role="3nqlJM">
+          <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+          <node concept="zr_56" id="1BQevbVT1qX" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVT1qM" resolve="E" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVT1qY" role="3nqlJM">
+          <property role="x79VB" value="true if the premature end of the traversal has been requested by finishNow, false otherwise" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1BQevbVT1qZ" role="jymVt" />
+    <node concept="2YIFZL" id="1BQevbVSj7_" role="jymVt">
+      <property role="TrG5h" value="create" />
+      <node concept="37vLTG" id="1BQevbVSj7E" role="3clF46">
+        <property role="TrG5h" value="successorsFunc" />
+        <property role="3TUv4t" value="true" />
+        <node concept="1ajhzC" id="1BQevbVSj7F" role="1tU5fm">
+          <node concept="16syzq" id="1BQevbVSj7G" role="1ajw0F">
+            <ref role="16sUi3" node="1BQevbVSj8g" resolve="E" />
+          </node>
+          <node concept="A3Dl8" id="1BQevbVSj7H" role="1ajl9A">
+            <node concept="16syzq" id="1BQevbVSj7I" role="A3Ik2">
+              <ref role="16sUi3" node="1BQevbVSj8g" resolve="E" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="1BQevbVSj7J" role="3clF47">
+        <node concept="3clFbF" id="1BQevbVSj7K" role="3cqZAp">
+          <node concept="2ShNRf" id="1BQevbVSj7L" role="3clFbG">
+            <node concept="YeOm9" id="1BQevbVSj7M" role="2ShVmc">
+              <node concept="1Y3b0j" id="1BQevbVSj7N" role="YeSDq">
+                <property role="2bfB8j" value="true" />
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                <ref role="1Y3XeK" node="5Hb7SE23e8T" resolve="Traversal" />
+                <node concept="3Tm1VV" id="1BQevbVSj7O" role="1B3o_S" />
+                <node concept="16syzq" id="1BQevbVSj7P" role="2Ghqu4">
+                  <ref role="16sUi3" node="1BQevbVSj8g" resolve="E" />
+                </node>
+                <node concept="3clFb_" id="1BQevbVSj81" role="jymVt">
+                  <property role="TrG5h" value="successorsOf" />
+                  <node concept="A3Dl8" id="1BQevbVSj82" role="3clF45">
+                    <node concept="16syzq" id="1BQevbVSj83" role="A3Ik2">
+                      <ref role="16sUi3" node="1BQevbVSj8g" resolve="E" />
+                    </node>
+                  </node>
+                  <node concept="3Tm1VV" id="1BQevbVSj84" role="1B3o_S" />
+                  <node concept="37vLTG" id="1BQevbVSj85" role="3clF46">
+                    <property role="TrG5h" value="n" />
+                    <node concept="16syzq" id="1BQevbVSj86" role="1tU5fm">
+                      <ref role="16sUi3" node="1BQevbVSj8g" resolve="E" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="1BQevbVSj87" role="3clF47">
+                    <node concept="3clFbF" id="1BQevbVSj88" role="3cqZAp">
+                      <node concept="2Sg_IR" id="1BQevbVSj89" role="3clFbG">
+                        <node concept="37vLTw" id="1BQevbVSj8a" role="2SgG2M">
+                          <ref role="3cqZAo" node="1BQevbVSj7E" resolve="successorsFunc" />
+                        </node>
+                        <node concept="37vLTw" id="1BQevbVSj8b" role="2SgHGx">
+                          <ref role="3cqZAo" node="1BQevbVSj85" resolve="n" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="1BQevbVSj8c" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1BQevbVSj8d" role="1B3o_S" />
+      <node concept="3uibUv" id="1BQevbVSj8e" role="3clF45">
+        <ref role="3uigEE" node="5Hb7SE23e8T" resolve="Traversal" />
+        <node concept="16syzq" id="1BQevbVSj8f" role="11_B2D">
+          <ref role="16sUi3" node="1BQevbVSj8g" resolve="E" />
+        </node>
+      </node>
+      <node concept="16euLQ" id="1BQevbVSj8g" role="16eVyc">
+        <property role="TrG5h" value="E" />
+      </node>
+      <node concept="P$JXv" id="1BQevbVSYqt" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSYqu" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSYqv" role="1dT_Ay">
+            <property role="1dT_AB" value="Factory function for simple creation of an traversal instance." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSZzd" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSZze" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSZzj" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSZzk" role="1dT_Ay">
+            <property role="1dT_AB" value="This traversal will always run until the end, as it does not have a finishNow() function." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSYQk" role="3nqlJM">
+          <property role="TUZQ4" value="a function returning the successors for any given node" />
+          <node concept="zr_55" id="1BQevbVSYQl" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVSj7E" resolve="successorsFunc" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSYQm" role="3nqlJM">
+          <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+          <node concept="zr_56" id="1BQevbVSYQn" role="zr_5Q">
+            <ref role="zr_51" node="1BQevbVSj8g" resolve="E" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSYQo" role="3nqlJM">
+          <property role="x79VB" value="a new traversal instance" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1BQevbVSr3s" role="jymVt" />
     <node concept="312cEg" id="5Hb7SE23KSM" role="jymVt">
       <property role="TrG5h" value="visited" />
       <node concept="2hMVRd" id="5Hb7SE23KHE" role="1tU5fm">
@@ -4449,6 +4825,13 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="5Hb7SE23L9J" role="1B3o_S" />
+      <node concept="z59LJ" id="1BQevbVT9g4" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVT9g5" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVT9g6" role="1dT_Ay">
+            <property role="1dT_AB" value="We store the set of visited nodes, maybe the client wants to use it later." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5Hb7SE23Lat" role="jymVt" />
     <node concept="3clFb_" id="5Hb7SE23SD3" role="jymVt">
@@ -4476,6 +4859,32 @@
         <property role="TrG5h" value="startNode" />
         <node concept="16syzq" id="5Hb7SE23ZjF" role="1tU5fm">
           <ref role="16sUi3" node="5Hb7SE23Jsr" resolve="T" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="1BQevbVSPTw" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSQPx" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSQPy" role="1dT_Ay">
+            <property role="1dT_AB" value="Start a breadth-first traversal using a single start node." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSQPz" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSQP$" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSQP_" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSQPA" role="1dT_Ay">
+            <property role="1dT_AB" value="The traversal will visit nodes in BFS order and will break cycles." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSPTz" role="3nqlJM">
+          <property role="TUZQ4" value="the start node for the traversal" />
+          <node concept="zr_55" id="1BQevbVSPT_" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE23Uub" resolve="startNode" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVST8P" role="3nqlJM">
+          <property role="x79VB" value="true if the premature end of the traversal has been requested by finishNow(), false otherwise" />
         </node>
       </node>
     </node>
@@ -4633,6 +5042,32 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="1BQevbVSMRS" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSMRT" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSMRU" role="1dT_Ay">
+            <property role="1dT_AB" value="Start a breadth-first traversal using a set of start nodes." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSOb4" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSOb5" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSOba" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSObb" role="1dT_Ay">
+            <property role="1dT_AB" value="The traversal will visit nodes in BFS order and will break cycles." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSMRV" role="3nqlJM">
+          <property role="TUZQ4" value="the set of start nodes" />
+          <node concept="zr_55" id="1BQevbVSMRX" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE23Lt8" resolve="startNodes" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSMRY" role="3nqlJM">
+          <property role="x79VB" value="true if the premature end of the traversal has been requested by finishNow(), false otherwise" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5Hb7SE2moKD" role="jymVt" />
     <node concept="3clFb_" id="5Hb7SE2m4Ao" role="jymVt">
@@ -4648,6 +5083,52 @@
         <property role="TrG5h" value="n" />
         <node concept="16syzq" id="5Hb7SE2m6Cb" role="1tU5fm">
           <ref role="16sUi3" node="5Hb7SE23Jsr" resolve="T" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="1BQevbVSAHg" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSAHh" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSAHi" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will visit all traversed nodes in turn. It can be used to prematurely end the traversal." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSCHI" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSCHJ" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSE1i" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSE1j" role="1dT_Ay">
+            <property role="1dT_AB" value="The default implementation returns false, meaning that the traversal should be continued until " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSHFL" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSHFM" role="1dT_Ay">
+            <property role="1dT_AB" value="every reachable node has been visited." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSJHc" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSJHd" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSJHo" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSJHp" role="1dT_Ay">
+            <property role="1dT_AB" value="The logic of the return value has the following use case in mind: Traverse a structure recursively" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSLaA" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSLaB" role="1dT_Ay">
+            <property role="1dT_AB" value="until a node with a specific property is found. If a node is actually found, the method returns true." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSAHj" role="3nqlJM">
+          <property role="TUZQ4" value="the node which is currently traversed" />
+          <node concept="zr_55" id="1BQevbVSAHl" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE2m5Ug" resolve="n" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSAHm" role="3nqlJM">
+          <property role="x79VB" value="true if traversal should be aborted immediately, false if it should be continued" />
         </node>
       </node>
     </node>
@@ -4666,6 +5147,32 @@
         <property role="TrG5h" value="n" />
         <node concept="16syzq" id="5Hb7SE24Gvr" role="1tU5fm">
           <ref role="16sUi3" node="5Hb7SE23Jsr" resolve="T" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="1BQevbVSyu8" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSyu9" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSyua" role="1dT_Ay">
+            <property role="1dT_AB" value="Get successors of a given node." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVS_AH" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVS_AI" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1BQevbVSzRE" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSzRF" role="1dT_Ay">
+            <property role="1dT_AB" value="This method has to be provided by the user of this class." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1BQevbVSyub" role="3nqlJM">
+          <property role="TUZQ4" value="some node in the data structure which is traversed" />
+          <node concept="zr_55" id="1BQevbVSyud" role="zr_5Q">
+            <ref role="zr_51" node="5Hb7SE24FP$" resolve="n" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSyue" role="3nqlJM">
+          <property role="x79VB" value="all successors of node n" />
         </node>
       </node>
     </node>
@@ -4688,10 +5195,53 @@
           <ref role="16sUi3" node="5Hb7SE23Jsr" resolve="T" />
         </node>
       </node>
+      <node concept="P$JXv" id="1BQevbVSw$r" role="lGtFl">
+        <node concept="TZ5HA" id="1BQevbVSw$s" role="TZ5H$">
+          <node concept="1dT_AC" id="1BQevbVSw$t" role="1dT_Ay">
+            <property role="1dT_AB" value="After the traversal, this method can be used to find out which nodes were visited" />
+          </node>
+        </node>
+        <node concept="x79VA" id="1BQevbVSw$u" role="3nqlJM">
+          <property role="x79VB" value="the nodes visited during the traversal" />
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="5Hb7SE23e8U" role="1B3o_S" />
     <node concept="16euLQ" id="5Hb7SE23Jsr" role="16eVyc">
       <property role="TrG5h" value="T" />
+    </node>
+    <node concept="3UR2Jj" id="5Hb7SE31DQf" role="lGtFl">
+      <node concept="TZ5HA" id="5Hb7SE31DQg" role="TZ5H$">
+        <node concept="1dT_AC" id="5Hb7SE31DQh" role="1dT_Ay">
+          <property role="1dT_AB" value="Breadth-first traversal of tree- or graph-structures, with cycle check." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5Hb7SE31EXu" role="TZ5H$">
+        <node concept="1dT_AC" id="5Hb7SE31EXv" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5Hb7SE31EX$" role="TZ5H$">
+        <node concept="1dT_AC" id="5Hb7SE31EX_" role="1dT_Ay">
+          <property role="1dT_AB" value="The class offers two APIs:" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1BQevbVSgfb" role="TZ5H$">
+        <node concept="1dT_AC" id="1BQevbVSgfc" role="1dT_Ay">
+          <property role="1dT_AB" value="- static methods which allow to use the traversal as-is in a compact way" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1BQevbVShrR" role="TZ5H$">
+        <node concept="1dT_AC" id="1BQevbVShrS" role="1dT_Ay">
+          <property role="1dT_AB" value="- abstract class API which can be extended, e.g. when collecting extra data during the traversal" />
+        </node>
+      </node>
+      <node concept="TUZQ0" id="5Hb7SE31DQi" role="3nqlJM">
+        <property role="TUZQ4" value="template parameter defining which type of objects is traversed" />
+        <node concept="zr_56" id="5Hb7SE31DQk" role="zr_5Q">
+          <ref role="zr_51" node="5Hb7SE23Jsr" resolve="T" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
