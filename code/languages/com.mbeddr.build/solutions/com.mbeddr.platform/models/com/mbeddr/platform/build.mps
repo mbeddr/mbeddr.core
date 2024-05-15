@@ -22830,11 +22830,6 @@
             <ref role="3bR37D" node="5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
-        <node concept="1SiIV0" id="9jWrhFpXqx" role="3bR37C">
-          <node concept="3bR9La" id="9jWrhFpXqy" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
         <node concept="1BupzO" id="9jWrhFpXqP" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -22855,6 +22850,16 @@
             <node concept="3qWCbU" id="9jWrhFpXqR" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QrefRhijNV" role="3bR37C">
+          <node concept="3bR9La" id="QrefRhijNW" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QrefRhijNX" role="3bR37C">
+          <node concept="3bR9La" id="QrefRhijNY" role="1SiIV1">
+            <ref role="3bR37D" node="vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecore.stubs" />
           </node>
         </node>
       </node>
