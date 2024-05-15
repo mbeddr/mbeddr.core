@@ -11,11 +11,12 @@
   </languages>
   <imports>
     <import index="7wpd" ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21/r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.util)" />
-    <import index="qhup" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.mutable(org.apache.commons/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="cfsy" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.apache.commons.lang.mutable(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -249,11 +250,11 @@
             <node concept="3cpWsn" id="9jWrhFjvJ0" role="3cpWs9">
               <property role="TrG5h" value="expensiveCount" />
               <node concept="3uibUv" id="9jWrhFjvJ1" role="1tU5fm">
-                <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
+                <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
               </node>
               <node concept="2ShNRf" id="9jWrhFjvK6" role="33vP2m">
                 <node concept="1pGfFk" id="9jWrhFjvJX" role="2ShVmc">
-                  <ref role="37wK5l" to="qhup:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
                   <node concept="3cmrfG" id="9jWrhFjvKE" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -300,7 +301,7 @@
                           <ref role="3cqZAo" node="9jWrhFjvJ0" resolve="expensiveCount" />
                         </node>
                         <node concept="liA8E" id="9jWrhFjUDf" role="2OqNvi">
-                          <ref role="37wK5l" to="qhup:~MutableInt.increment()" resolve="increment" />
+                          <ref role="37wK5l" to="cfsy:~MutableInt.increment()" resolve="increment" />
                         </node>
                       </node>
                     </node>
@@ -394,7 +395,7 @@
                   <ref role="3cqZAo" node="9jWrhFjvJ0" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl2mE" role="2OqNvi">
-                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -482,7 +483,7 @@
                   <ref role="3cqZAo" node="9jWrhFjvJ0" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFkOYI" role="2OqNvi">
-                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -505,11 +506,11 @@
             <node concept="3cpWsn" id="9jWrhFl41r" role="3cpWs9">
               <property role="TrG5h" value="expensiveCount" />
               <node concept="3uibUv" id="9jWrhFl41s" role="1tU5fm">
-                <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
+                <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
               </node>
               <node concept="2ShNRf" id="9jWrhFl41t" role="33vP2m">
                 <node concept="1pGfFk" id="9jWrhFl41u" role="2ShVmc">
-                  <ref role="37wK5l" to="qhup:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
                   <node concept="3cmrfG" id="9jWrhFl41v" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -521,11 +522,11 @@
             <node concept="3cpWsn" id="9jWrhFl5iH" role="3cpWs9">
               <property role="TrG5h" value="m" />
               <node concept="3uibUv" id="9jWrhFl5iI" role="1tU5fm">
-                <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
+                <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
               </node>
               <node concept="2ShNRf" id="9jWrhFl5Ea" role="33vP2m">
                 <node concept="1pGfFk" id="9jWrhFl5E1" role="2ShVmc">
-                  <ref role="37wK5l" to="qhup:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
                   <node concept="3cmrfG" id="9jWrhFla4D" role="37wK5m">
                     <property role="3cmrfH" value="77" />
                   </node>
@@ -572,7 +573,7 @@
                           <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                         </node>
                         <node concept="liA8E" id="9jWrhFl41L" role="2OqNvi">
-                          <ref role="37wK5l" to="qhup:~MutableInt.increment()" resolve="increment" />
+                          <ref role="37wK5l" to="cfsy:~MutableInt.increment()" resolve="increment" />
                         </node>
                       </node>
                     </node>
@@ -587,7 +588,7 @@
                   <node concept="37vLTG" id="9jWrhFl79Q" role="1bW2Oz">
                     <property role="TrG5h" value="m" />
                     <node concept="3uibUv" id="9jWrhFl7A$" role="1tU5fm">
-                      <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
+                      <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="9jWrhFl73g" role="1bW5cS">
@@ -640,7 +641,7 @@
                             <ref role="3cqZAo" node="9jWrhFl79Q" resolve="m" />
                           </node>
                           <node concept="liA8E" id="9jWrhFl9tj" role="2OqNvi">
-                            <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                            <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                           </node>
                         </node>
                       </node>
@@ -734,7 +735,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl42k" role="2OqNvi">
-                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -826,7 +827,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl42Q" role="2OqNvi">
-                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -890,7 +891,7 @@
                 <ref role="3cqZAo" node="9jWrhFl5iH" resolve="m" />
               </node>
               <node concept="liA8E" id="9jWrhFlbnC" role="2OqNvi">
-                <ref role="37wK5l" to="qhup:~MutableInt.increment()" resolve="increment" />
+                <ref role="37wK5l" to="cfsy:~MutableInt.increment()" resolve="increment" />
               </node>
             </node>
           </node>
@@ -928,7 +929,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFlbJY" role="2OqNvi">
-                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -1011,7 +1012,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFldb9" role="2OqNvi">
-                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
