@@ -38,7 +38,7 @@
         <property id="126932837435370851" name="name" index="Wq1Bt" />
       </concept>
       <concept id="4457500422381571986" name="com.mbeddr.doc.structure.CodeFormattedText" flags="ng" index="1jUjqm" />
-      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParagraphHeader" flags="ng" index="1xAIan">
+      <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
