@@ -2367,49 +2367,6 @@
               </node>
             </node>
           </node>
-          <node concept="3SKdUt" id="5yIFZmd5RiH" role="3cqZAp">
-            <node concept="1PaTwC" id="5yIFZmd5RiI" role="1aUNEU">
-              <node concept="3oM_SD" id="5yIFZmd5RoJ" role="1PaTwD">
-                <property role="3oM_SC" value="ToDo" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5RoL" role="1PaTwD">
-                <property role="3oM_SC" value="Is" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5RoO" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5RoS" role="1PaTwD">
-                <property role="3oM_SC" value="guaranteed?" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5RoX" role="1PaTwD">
-                <property role="3oM_SC" value="The" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Rp3" role="1PaTwD">
-                <property role="3oM_SC" value="traversal" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Rpa" role="1PaTwD">
-                <property role="3oM_SC" value="could" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Rpi" role="1PaTwD">
-                <property role="3oM_SC" value="go" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Rpr" role="1PaTwD">
-                <property role="3oM_SC" value="1,3,6" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Rp_" role="1PaTwD">
-                <property role="3oM_SC" value="then" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5RpK" role="1PaTwD">
-                <property role="3oM_SC" value="nVisited" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5RpW" role="1PaTwD">
-                <property role="3oM_SC" value="is" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Rq9" role="1PaTwD">
-                <property role="3oM_SC" value="2?!" />
-              </node>
-            </node>
-          </node>
           <node concept="3vlDli" id="1BQevbW9Vxa" role="3cqZAp">
             <node concept="37vLTw" id="1BQevbW9Vxb" role="3tpDZA">
               <ref role="3cqZAo" node="1BQevbWcy1i" resolve="nVisited" />
@@ -2572,49 +2529,6 @@
               </node>
               <node concept="3oM_SD" id="1BQevbW9Vyd" role="1PaTwD">
                 <property role="3oM_SC" value="&quot;6&quot;" />
-              </node>
-            </node>
-          </node>
-          <node concept="3SKdUt" id="5yIFZmd5Tt6" role="3cqZAp">
-            <node concept="1PaTwC" id="5yIFZmd5Tt7" role="1aUNEU">
-              <node concept="3oM_SD" id="5yIFZmd5Tt8" role="1PaTwD">
-                <property role="3oM_SC" value="ToDo" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Tt9" role="1PaTwD">
-                <property role="3oM_SC" value="Is" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Tta" role="1PaTwD">
-                <property role="3oM_SC" value="this" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttb" role="1PaTwD">
-                <property role="3oM_SC" value="guaranteed?" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttc" role="1PaTwD">
-                <property role="3oM_SC" value="The" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttd" role="1PaTwD">
-                <property role="3oM_SC" value="traversal" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Tte" role="1PaTwD">
-                <property role="3oM_SC" value="could" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttf" role="1PaTwD">
-                <property role="3oM_SC" value="go" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttg" role="1PaTwD">
-                <property role="3oM_SC" value="2,3,4,5" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Tth" role="1PaTwD">
-                <property role="3oM_SC" value="then" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Tti" role="1PaTwD">
-                <property role="3oM_SC" value="nVisited" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttj" role="1PaTwD">
-                <property role="3oM_SC" value="is" />
-              </node>
-              <node concept="3oM_SD" id="5yIFZmd5Ttk" role="1PaTwD">
-                <property role="3oM_SC" value="4?!" />
               </node>
             </node>
           </node>
