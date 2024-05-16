@@ -9,8 +9,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.core
 
+### Added
+
 - The image aspect ratio is now kept when scaling the image in the presentation mode down to the maximum size.
 - Antialising is now activated for images displayed in the presentation mode.
+
+## com.mbeddr.mpsutil
+
+### Added
+
+- A new generic class `Traversal<T>` is provided. It allows to do breadth-first traversals on data structures like graphs or trees. It is robust against cycles.
 
 # April 2024
 
