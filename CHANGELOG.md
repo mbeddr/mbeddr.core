@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# May 2024
+
+## com.mbeddr.core
+
+- The image aspect ratio is now kept when scaling the image in the presentation mode down to the maximum size.
+- Antialising is now activated for images displayed in the presentation mode.
+
 # April 2024
 
 ## com.mbeddr.core
