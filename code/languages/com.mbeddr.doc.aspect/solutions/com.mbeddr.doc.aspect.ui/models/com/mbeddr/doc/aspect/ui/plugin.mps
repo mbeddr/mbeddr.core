@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="5" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -16,7 +16,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
   </languages>
   <imports>
@@ -61,8 +61,8 @@
     <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
-    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -84,6 +84,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
         <child id="8976425910813834639" name="icon" index="3Uehp1" />
@@ -450,6 +451,7 @@
     <property role="TrG5h" value="ShowDocumentation" />
     <property role="2uzpH1" value="Show Documentation" />
     <property role="fJN8o" value="true" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="69s3uhHTaJn" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -557,6 +559,13 @@
       <node concept="3Tm6S6" id="6eatLdhqRsc" role="1B3o_S" />
       <node concept="3uibUv" id="24MikXOgl5X" role="1tU5fm">
         <ref role="3uigEE" node="24MikXOfIA3" resolve="DocumentationHandler" />
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="2uG4XYD$7kf" role="2uRRBA">
+      <property role="TrG5h" value="lastSelection" />
+      <node concept="3Tm6S6" id="2uG4XYD$7kg" role="1B3o_S" />
+      <node concept="3uibUv" id="2uG4XYD$oqA" role="1tU5fm">
+        <ref role="3uigEE" to="lwvz:~SingularSelection" resolve="SingularSelection" />
       </node>
     </node>
     <node concept="2uRRBT" id="5ucAXohL$xS" role="2uRRB$">
@@ -975,13 +984,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="2BZ0e9" id="2uG4XYD$7kf" role="2uRRBA">
-      <property role="TrG5h" value="lastSelection" />
-      <node concept="3Tm6S6" id="2uG4XYD$7kg" role="1B3o_S" />
-      <node concept="3uibUv" id="2uG4XYD$oqA" role="1tU5fm">
-        <ref role="3uigEE" to="lwvz:~SingularSelection" resolve="SingularSelection" />
       </node>
     </node>
   </node>
@@ -4435,7 +4437,7 @@
             <property role="TrG5h" value="e" />
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="24MikXOjzGs" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Entry" />
+              <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Map.Entry" />
               <node concept="3uibUv" id="24MikXOjTTf" role="11_B2D">
                 <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
               </node>
