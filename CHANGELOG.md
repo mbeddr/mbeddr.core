@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# June 2024
+
+## com.mbeddr.mpsutil
+
+### Deprecated
+
+- The language `com.mbeddr.mpsutil.favourites` was deprecated in favor of the builtin MPS bookmark manager. See: https://www.jetbrains.com/help/mps/navigating-through-the-source-code.html#use_bookmarks
+
+# May 2024
+
+## com.mbeddr.core
+
+### Added
+
+- The image aspect ratio is now kept when scaling the image in the presentation mode down to the maximum size.
+- Antialising is now activated for images displayed in the presentation mode.
+
+## com.mbeddr.mpsutil
+
+### Added
+
+- A new generic class `Traversal<T>` is provided. It allows to do breadth-first traversals on data structures like graphs or trees. It is robust against cycles.
+
 # April 2024
 
 ## com.mbeddr.core
