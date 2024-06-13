@@ -11,7 +11,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/org.sat4j.core.jar" />
       <library location="${module}/lib/org.sat4j.maxsat.jar" />
@@ -41,4 +41,3 @@
     <module reference="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e(com.mbeddr.analyses.sat4j)" version="0" />
   </dependencyVersions>
 </solution>
-

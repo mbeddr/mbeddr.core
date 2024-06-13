@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/libs/mockito-core-2.23.4.jar" />
       <library location="${module}/libs/byte-buddy-1.9.3.jar" />
@@ -33,4 +33,3 @@
     <module reference="9414e29c-0c8d-4bc7-b251-f312597fb993(org.mockito)" version="0" />
   </dependencyVersions>
 </solution>
-

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.xml" uuid="96569509-ecfc-4944-b6c9-075faf02fe2c" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/xml-apis-ext.jar" />
       <sourceRoot location="lib/resolver.jar" />
       <sourceRoot location="lib/serializer.jar" />
@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="off" classes="off" ext="yes">
+    <facet type="java" compile="off" classes="mps" ext="yes">
       <classes generated="true" />
       <library location="${module}/lib/resolver.jar" />
       <library location="${module}/lib/serializer.jar" />
