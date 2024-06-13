@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # June 2024
 
+## General
+
+- Some classloading issues with stubs were fixed.
+
 ## com.mbeddr.mpsutil
 
 ### Deprecated

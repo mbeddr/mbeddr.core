@@ -9,7 +9,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/com.microsoft.z3.jar" />
     </facet>
@@ -28,4 +28,3 @@
     <module reference="6e9e9327-19d7-416c-8dd0-24b15ea19915(com.mbeddr.analyses.z3.lib)" version="0" />
   </dependencyVersions>
 </solution>
-
