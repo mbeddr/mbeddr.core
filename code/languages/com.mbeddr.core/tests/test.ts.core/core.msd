@@ -27,6 +27,7 @@
     <dependency reexport="false">b2da2e1a-b542-47f5-9be0-4dc21efe74a4(com.mbeddr.core.checks)</dependency>
     <dependency reexport="false">1c897ba5-9d43-4035-ac7f-0306495743ac(com.mbeddr.mpsutil.interpreter.test)</dependency>
     <dependency reexport="false">06d68b77-b699-4918-83b8-857e63787800(com.mbeddr.core.unittest)</dependency>
+    <dependency reexport="false">7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -68,7 +69,7 @@
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="5" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="9" />
-    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="6" />
+    <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="5" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
   </languageVersions>
