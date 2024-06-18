@@ -29417,15 +29417,15 @@
           </node>
         </node>
         <node concept="3vlDli" id="5wiMD66NgwZ" role="3cqZAp">
-          <node concept="2YIFZM" id="5wiMD66NdgE" role="3tpDZB">
+          <node concept="Xl_RD" id="3m8h6gjHVwa" role="3tpDZB">
+            <property role="Xl_RC" value="int8_t (*int8ArrayPtr)[8]" />
+          </node>
+          <node concept="2YIFZM" id="3m8h6gjHVy9" role="3tpDZA">
             <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
             <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-            <node concept="3xONca" id="5wiMD66NdiN" role="37wK5m">
+            <node concept="3xONca" id="3m8h6gjHVya" role="37wK5m">
               <ref role="3xOPvv" node="5wiMD66NdgZ" resolve="FirstParam" />
             </node>
-          </node>
-          <node concept="Xl_RD" id="5wiMD66Ngjm" role="3tpDZA">
-            <property role="Xl_RC" value="int8_t (*int8ArrayPtr)[8]" />
           </node>
         </node>
         <node concept="3clFbH" id="5wiMD66QV5N" role="3cqZAp" />
@@ -29449,15 +29449,15 @@
           </node>
         </node>
         <node concept="3vlDli" id="5wiMD66OVzT" role="3cqZAp">
-          <node concept="2YIFZM" id="5wiMD66OVzU" role="3tpDZB">
+          <node concept="Xl_RD" id="3m8h6gjHVxH" role="3tpDZB">
+            <property role="Xl_RC" value="int8_t *int8PtrArray[]" />
+          </node>
+          <node concept="2YIFZM" id="3m8h6gjHVzF" role="3tpDZA">
             <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
             <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
-            <node concept="3xONca" id="5wiMD66OVzV" role="37wK5m">
+            <node concept="3xONca" id="3m8h6gjHVzG" role="37wK5m">
               <ref role="3xOPvv" node="5wiMD66OVph" resolve="SecondParam" />
             </node>
-          </node>
-          <node concept="Xl_RD" id="5wiMD66OVzW" role="3tpDZA">
-            <property role="Xl_RC" value="int8_t *int8PtrArray[]" />
           </node>
         </node>
         <node concept="3clFbH" id="5wiMD66QVdV" role="3cqZAp" />
@@ -29484,15 +29484,15 @@
           </node>
         </node>
         <node concept="3vlDli" id="5wiMD66SrUO" role="3cqZAp">
-          <node concept="2YIFZM" id="5wiMD66SrUP" role="3tpDZB">
+          <node concept="Xl_RD" id="3m8h6gjHVHU" role="3tpDZB">
+            <property role="Xl_RC" value="char (*charArrayPtr)[9]" />
+          </node>
+          <node concept="2YIFZM" id="5wiMD66SrUP" role="3tpDZA">
             <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
             <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
             <node concept="3xONca" id="5wiMD66SrUQ" role="37wK5m">
               <ref role="3xOPvv" node="5wiMD66OVqx" resolve="ThirdParam" />
             </node>
-          </node>
-          <node concept="Xl_RD" id="5wiMD66SrUR" role="3tpDZA">
-            <property role="Xl_RC" value="char (*charArrayPtr)[9]" />
           </node>
         </node>
         <node concept="3clFbH" id="5wiMD66UzzU" role="3cqZAp" />
