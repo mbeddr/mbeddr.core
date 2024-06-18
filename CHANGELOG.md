@@ -5,6 +5,68 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# April 2024
+
+## com.mbeddr.core
+
+### Added
+
+- Base: Added possibility to explicitly not display roots of concept `IMbeddrIDERoot` in mbeddr menus.
+
+## com.mbeddr.doc.aspect.ui
+
+### Fixed
+
+- The documentation Tool is now only updated when the selection changed.
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+- EditingGuide: `ProgramFragments` support error suppression, i.e. all model-checking errors are suppressed in `ProgramFragments`, so modelchecker will disregard them and not clutter.
+- EditingGuide: Fragment module depends on its original module, to access data that is needed, but in the original module and not copied to the temporary exercise model.
+- Hyperlink: `HyperlinkUtil.openInBrowser()` behaves like no-op instead of raising an exception on null or empty URLs.
+- Asynccell: Stops polling for the calculated value in case the poll-request throws an exception and shows to the user, that the calculation has failed together with the thrown exception, instead of spamming the log on each poll with the exception.
+
+# March 2024
+
+## com.mbeddr.mpsutils
+
+### Added
+
+- Interpreters now support data flow analysis.
+- Action profiles now support priorities if multiple profiles are activated by default.
+
+### Fixed
+
+- Some small issues with the action profiles were fixed as well.
+
+## com.mbeddr.doc
+
+### Added
+
+- When embedding a documentation section or model content as image, the inspector can now be rendered instead of the editor.
+
+### Fixed
+
+- PlantUML was updated to PlantUML to v1.2023.13 EPL version (regression bug).
+
+# January 2024
+
+## com.mbeddr.mpsutils
+
+### Fixed
+
+- A dummy computation trace is now used when the computation trace is not available in the interpreter to prevent NullPointerExceptions.
+- Referenced actions in action profiles now emit a warning when they can't be found.
+
+## com.mbeddr.doc
+
+### Changed
+
+- The Java library xmlbeans of the spreadsheet language was upgraded from version 2.6.0 to 4.0.0
+- The Java library Apache Poi of the spreadsheet language was upgraded from 2.6.0 to 5.0.0
+
 # December 2023
 
 ## com.mbeddr.mpsutils
@@ -39,7 +101,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Changed
 
-Added possiblity to update the ToolWindow contents of context action 2 evenif the Window is not visible.
+Added possiblity to update the ToolWindow contents of context action 2 even if the Window is not visible.
+
+## com.mbeddr.doc.aspect
+
+### Added
+
+* For documentation annotations of concepts there is a new flag `override children` in the inspector. It allows to show the document of a node even if the currently selected child node would have its own documentation.
+* By default, this new behavior is switched off. The `documentationAspectConfiguration` extension point now has a configuration option `allowOverrideChildren` which has to be set to true in order to use the override functionality.
+* A cache has been added to speed up the look-up and display of concept-specific documentation in the documentation view.
 
 # September 2023
 

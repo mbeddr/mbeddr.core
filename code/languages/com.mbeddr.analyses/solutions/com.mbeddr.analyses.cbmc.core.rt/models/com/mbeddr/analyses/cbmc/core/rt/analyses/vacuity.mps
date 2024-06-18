@@ -3,8 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="7uhm" ref="r:5a6e4bc9-0a07-41cd-ab54-88993517e687(com.mbeddr.analyses.cbmc.core.rt.analyses.asserts)" />
@@ -163,13 +164,24 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
@@ -238,8 +250,12 @@
       <node concept="3Tm1VV" id="7AULegk42mG" role="1B3o_S" />
       <node concept="3clFbT" id="E31tqQCaU2" role="33vP2m" />
       <node concept="10P_77" id="E31tqQCaMa" role="1tU5fm" />
-      <node concept="NWlO9" id="48FvRIzKuUp" role="lGtFl">
-        <property role="NWlVz" value="Should we debug?" />
+      <node concept="z59LJ" id="70cGcTIK7Zw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Zu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Zv" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we debug?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3tp$LrDQpzt" role="jymVt" />
@@ -290,22 +306,20 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3WYFqns_p1F" role="1B3o_S" />
-      <node concept="NWlO9" id="3WYFqns_p1G" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK7Zz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Zx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Zy" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3WYFqns_oEr" role="jymVt" />
-    <node concept="NWlO9" id="3x0R1LJ5Cpn" role="lGtFl">
-      <property role="NWlVz" value="Analyzer that checks vacuity -- looks for &quot;assert(false)&quot; or &quot;__CPROVER_assert(EXP,&quot;vacuity&quot;)&quot;." />
-    </node>
     <node concept="3clFb_" id="3x0R1LJ5Cpo" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="liftResult" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="4fvA6ORCY1p" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3Tmbuc" id="3x0R1LJ5Cpp" role="1B3o_S" />
       <node concept="3uibUv" id="3x0R1LJ5Cpq" role="3clF45">
         <ref role="3uigEE" node="3x0R1LJ5Cqx" resolve="VacuityCheckResult" />
@@ -400,6 +414,13 @@
       <node concept="2AHcQZ" id="3x0R1LJ5CpK" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK7ZD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZC" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3x0R1LJ5CpL" role="jymVt" />
     <node concept="3clFb_" id="4fvA6ORD1sm" role="jymVt">
@@ -419,8 +440,12 @@
       <node concept="2AHcQZ" id="4fvA6ORD2co" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="4fvA6ORD3IT" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7ZG" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZE" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZF" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3WYFqnsvHU9" role="jymVt" />
@@ -429,9 +454,6 @@
       <property role="TrG5h" value="filterClaims" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="4fvA6ORCZDj" role="lGtFl">
-        <property role="NWlVz" value="Filters out all other assertions which are not vacuity related." />
-      </node>
       <node concept="_YKpA" id="3x0R1LJ5Cqn" role="3clF45">
         <node concept="3uibUv" id="3x0R1LJ5Cqo" role="_ZDj9">
           <ref role="3uigEE" to="rbq9:mb65_hnqw$" resolve="CBMCRawClaim" />
@@ -602,6 +624,13 @@
       <node concept="2AHcQZ" id="3WYFqnsvJwS" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK7ZJ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZH" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZI" role="1dT_Ay">
+            <property role="1dT_AB" value="Filters out all other assertions which are not vacuity related." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3WYFqnsvI4p" role="jymVt" />
     <node concept="3uibUv" id="3WYFqnswb_I" role="1zkMxy">
@@ -615,9 +644,6 @@
       <property role="TrG5h" value="computeArguments" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="4fvA6ORD06Q" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3Tmbuc" id="3x0R1LJ5CpN" role="1B3o_S" />
       <node concept="_YKpA" id="3x0R1LJ5CpO" role="3clF45">
         <node concept="17QB3L" id="3x0R1LJ5CpP" role="_ZDj9" />
@@ -715,6 +741,20 @@
       </node>
       <node concept="2AHcQZ" id="3x0R1LJ5Cqk" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK7ZM" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZK" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZL" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7ZA" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Z$" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Z_" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer that checks vacuity -- looks for &quot;assert(false)&quot; or &quot;__CPROVER_assert(EXP,&quot;vacuity&quot;)&quot;." />
+        </node>
       </node>
     </node>
   </node>
@@ -868,8 +908,12 @@
       <node concept="2AHcQZ" id="3WYFqnsxyJC" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="3WYFqnsxyPW" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7ZP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZN" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZO" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3WYFqnsxy0p" role="jymVt" />
@@ -894,8 +938,12 @@
       <node concept="2AHcQZ" id="3WYFqnsxy7g" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="3WYFqnsxyWb" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7ZS" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZQ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZR" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3WYFqnsxytC" role="jymVt" />
@@ -920,8 +968,12 @@
       <node concept="2AHcQZ" id="3WYFqnsxy7t" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="3WYFqnsxz2p" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7ZV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7ZU" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3WYFqnsxyAx" role="jymVt" />
@@ -1105,9 +1157,6 @@
     <node concept="3uibUv" id="3_HSwtcW_zr" role="1zkMxy">
       <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
     </node>
-    <node concept="NWlO9" id="3_HSwtcW_zE" role="lGtFl">
-      <property role="NWlVz" value="Factory for creating vacuity analyzers." />
-    </node>
     <node concept="2tJIrI" id="3_HSwtcW_AE" role="jymVt" />
     <node concept="3clFb_" id="3_HSwtcW_zS" role="jymVt">
       <property role="TrG5h" value="createAnalyzer" />
@@ -1143,8 +1192,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3_HSwtcW_CN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK801" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7ZZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK800" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7ZY" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7ZW" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7ZX" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for creating vacuity analyzers." />
+        </node>
       </node>
     </node>
   </node>
