@@ -521,7 +521,7 @@
                   </node>
                   <node concept="2YIFZM" id="I_3mOgBE89" role="3uHU7B">
                     <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                    <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object)" resolve="valueOf" />
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                     <node concept="2OqwBi" id="1sNMMH9iSlx" role="37wK5m">
                       <node concept="117lpO" id="1sNMMH9iSaW" role="2Oq$k0" />
                       <node concept="2qgKlT" id="1sNMMH9iSow" role="2OqNvi">

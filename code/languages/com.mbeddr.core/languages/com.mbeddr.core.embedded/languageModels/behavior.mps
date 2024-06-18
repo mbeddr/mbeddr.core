@@ -141,7 +141,9 @@
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -604,15 +606,16 @@
       <node concept="3clFbS" id="5W7baq$60ms" role="3clF47">
         <node concept="3clFbF" id="50jlhG3wcxx" role="3cqZAp">
           <node concept="2OqwBi" id="y826GHuaPH" role="3clFbG">
-            <node concept="1PxgMI" id="y826GHuaPI" role="2Oq$k0">
+            <node concept="1PxgMI" id="4oC$u2d2kSg" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="4oC$u2d2kXo" role="3oSUPX">
+                <ref role="cht4Q" to="nbyu:5W7baq$5Va_" resolve="RegisterRefExpr" />
+              </node>
               <node concept="2OqwBi" id="y826GHuaPJ" role="1m5AlR">
                 <node concept="13iPFW" id="y826GHuaPK" role="2Oq$k0" />
                 <node concept="3TrEf2" id="y826GHuaPL" role="2OqNvi">
                   <ref role="3Tt5mk" to="mj1l:6iIoqg1yDLg" resolve="expression" />
                 </node>
-              </node>
-              <node concept="chp4Y" id="79i$vAY5PLA" role="3oSUPX">
-                <ref role="cht4Q" to="nbyu:5W7baq$5Va_" resolve="RegisterRefExpr" />
               </node>
             </node>
             <node concept="2qgKlT" id="y826GHuaPM" role="2OqNvi">

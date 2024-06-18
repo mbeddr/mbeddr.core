@@ -6,8 +6,9 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
@@ -240,9 +241,6 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -261,6 +259,20 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -623,8 +635,12 @@
         <property role="3TUv4t" value="false" />
         <node concept="H_c77" id="7LK0SI4cgl" role="1tU5fm" />
         <node concept="3Tm6S6" id="7kEiJU7CbGn" role="1B3o_S" />
-        <node concept="NWlO9" id="7kEiJU7CbZ$" role="lGtFl">
-          <property role="NWlVz" value="The model to make." />
+        <node concept="z59LJ" id="70cGcTIKkhc" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkha" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhb" role="1dT_Ay">
+              <property role="1dT_AB" value="The model to make." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7uk5GW4LX0X" role="jymVt" />
@@ -634,11 +650,15 @@
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="7uk5GW4LZd0" role="1B3o_S" />
-        <node concept="NWlO9" id="7uk5GW4LZd1" role="lGtFl">
-          <property role="NWlVz" value="The current project." />
-        </node>
         <node concept="3uibUv" id="7uk5GW4M0oS" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+        <node concept="z59LJ" id="70cGcTIKkhf" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhd" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhe" role="1dT_Ay">
+              <property role="1dT_AB" value="The current project." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7uk5GW4LY6h" role="jymVt" />
@@ -683,8 +703,12 @@
           <property role="TrG5h" value="model" />
           <node concept="H_c77" id="4Uw4Kib5ipZ" role="1tU5fm" />
         </node>
-        <node concept="NWlO9" id="4Uw4Kib5iq4" role="lGtFl">
-          <property role="NWlVz" value="Constructor." />
+        <node concept="P$JXv" id="70cGcTIKkhi" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhg" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhh" role="1dT_Ay">
+              <property role="1dT_AB" value="Constructor." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="4Uw4Kib5hDw" role="jymVt" />
@@ -710,8 +734,12 @@
             <node concept="3clFbT" id="7LK0SI3Drj" role="3clFbG" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7CcWu" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKkhl" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhj" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhk" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7CdYl" role="jymVt" />
@@ -726,8 +754,12 @@
             <node concept="3clFbT" id="7LK0SI3Drq" role="3clFbG" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Cf6m" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKkho" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhm" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhn" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7CeyG" role="jymVt" />
@@ -742,8 +774,12 @@
             <node concept="3clFbT" id="7LK0SI3Drx" role="3clFbG" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Cf$6" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKkhr" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhp" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhq" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7LK0SI4ppi" role="jymVt" />
@@ -1107,8 +1143,12 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Cg2k" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKkhu" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhs" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkht" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7LK0SI4oH6" role="jymVt" />
@@ -1320,8 +1360,12 @@
           </node>
         </node>
         <node concept="3Tm6S6" id="47xghtTLkPG" role="1B3o_S" />
-        <node concept="NWlO9" id="4FpLBMtUQ19" role="lGtFl">
-          <property role="NWlVz" value="Rebuilds the project." />
+        <node concept="P$JXv" id="70cGcTIKkhx" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhv" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhw" role="1dT_Ay">
+              <property role="1dT_AB" value="Rebuilds the project." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7kEiJU7BkUl" role="jymVt" />
@@ -1359,8 +1403,12 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7Bpt5" role="lGtFl">
-          <property role="NWlVz" value="{@inheritDoc}" />
+        <node concept="P$JXv" id="70cGcTIKkh$" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkhy" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhz" role="1dT_Ay">
+              <property role="1dT_AB" value="{@inheritDoc}" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7Wcf1tRXtCx" role="jymVt" />
@@ -1419,13 +1467,21 @@
             <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
           </node>
         </node>
-        <node concept="NWlO9" id="7kEiJU7BUQG" role="lGtFl">
-          <property role="NWlVz" value="Simple wrapper for the progress monitor to get when the generation ended." />
+        <node concept="3UR2Jj" id="70cGcTIKkhB" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKkh_" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKkhA" role="1dT_Ay">
+              <property role="1dT_AB" value="Simple wrapper for the progress monitor to get when the generation ended." />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="7Wcf1tRXtGu" role="jymVt" />
-      <node concept="NWlO9" id="41thbhvrjr1" role="lGtFl">
-        <property role="NWlVz" value="A future that makes and saves the transient models." />
+      <node concept="3UR2Jj" id="70cGcTIKkhE" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhC" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhD" role="1dT_Ay">
+            <property role="1dT_AB" value="A future that makes and saves the transient models." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7WAADv2KpY3" role="jymVt" />
@@ -1436,8 +1492,12 @@
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
       </node>
       <node concept="3Tm1VV" id="68pU13V1MGu" role="1B3o_S" />
-      <node concept="NWlO9" id="7kEiJU7BOXX" role="lGtFl">
-        <property role="NWlVz" value="The last output model before the text is generated." />
+      <node concept="z59LJ" id="70cGcTIKkhH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhG" role="1dT_Ay">
+            <property role="1dT_AB" value="The last output model before the text is generated." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="2xOuuoyA4FE" role="1B3o_S" />
@@ -1454,8 +1514,12 @@
       <node concept="3uibUv" id="5oO2AcZyqJi" role="1tU5fm">
         <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
       </node>
-      <node concept="NWlO9" id="5oO2AcZysCt" role="lGtFl">
-        <property role="NWlVz" value="The current project." />
+      <node concept="z59LJ" id="70cGcTIKkhK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhJ" role="1dT_Ay">
+            <property role="1dT_AB" value="The current project." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZyq3n" role="jymVt" />
@@ -1466,8 +1530,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="3Ts5Ln3KWJ8" role="1B3o_S" />
       <node concept="H_c77" id="3Ts5Ln3KX5z" role="1tU5fm" />
-      <node concept="NWlO9" id="3Ts5Ln3KXsn" role="lGtFl">
-        <property role="NWlVz" value="Model on which the generation is triggered." />
+      <node concept="z59LJ" id="70cGcTIKkhN" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhL" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhM" role="1dT_Ay">
+            <property role="1dT_AB" value="Model on which the generation is triggered." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3Ts5Ln3KWoN" role="jymVt" />
@@ -1477,10 +1545,14 @@
       <property role="TrG5h" value="checkEditorsRobustness" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="484XVyxOFG0" role="1tU5fm" />
-      <node concept="NWlO9" id="484XVyxOGaK" role="lGtFl">
-        <property role="NWlVz" value="Should we check the editors?" />
-      </node>
       <node concept="3Tmbuc" id="484XVyxOGbd" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIKkhQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhP" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we check the editors?" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="484XVyxOFsE" role="jymVt" />
     <node concept="312cEg" id="484XVyxOH63" role="jymVt">
@@ -1489,10 +1561,14 @@
       <property role="TrG5h" value="checkGeneratedCode" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="484XVyxOH64" role="1tU5fm" />
-      <node concept="NWlO9" id="484XVyxOH65" role="lGtFl">
-        <property role="NWlVz" value="Should we run the generator?" />
-      </node>
       <node concept="3Tmbuc" id="484XVyxOH66" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIKkhT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhS" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we run the generator?" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="484XVyxOGQA" role="jymVt" />
     <node concept="312cEg" id="484XVyxORwB" role="jymVt">
@@ -1501,10 +1577,14 @@
       <property role="TrG5h" value="deleteCheckedRoots" />
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="484XVyxORwC" role="1tU5fm" />
-      <node concept="NWlO9" id="484XVyxORwD" role="lGtFl">
-        <property role="NWlVz" value="Should we delete already checked roots?" />
-      </node>
       <node concept="3Tmbuc" id="484XVyxORwE" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIKkhW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhV" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we delete already checked roots?" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="484XVyxORd3" role="jymVt" />
     <node concept="312cEg" id="1EeUs_TuvUG" role="jymVt">
@@ -1513,10 +1593,14 @@
       <property role="TrG5h" value="modelWithBuggyRoots" />
       <property role="3TUv4t" value="false" />
       <node concept="H_c77" id="1EeUs_TuxFj" role="1tU5fm" />
-      <node concept="NWlO9" id="1EeUs_TuvUI" role="lGtFl">
-        <property role="NWlVz" value="Model where buggy roots are saved." />
-      </node>
       <node concept="3Tmbuc" id="1EeUs_TuvUJ" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIKkhZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkhX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkhY" role="1dT_Ay">
+            <property role="1dT_AB" value="Model where buggy roots are saved." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5siEZZN9GsN" role="jymVt" />
     <node concept="312cEg" id="5siEZZN9HWN" role="jymVt">
@@ -1526,8 +1610,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="5siEZZN9Hsp" role="1B3o_S" />
       <node concept="17QB3L" id="5siEZZN9HWi" role="1tU5fm" />
-      <node concept="NWlO9" id="5siEZZN9IsH" role="lGtFl">
-        <property role="NWlVz" value="Directory where the log file will be saved." />
+      <node concept="z59LJ" id="70cGcTIKki2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKki0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKki1" role="1dT_Ay">
+            <property role="1dT_AB" value="Directory where the log file will be saved." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1EeUs_TuvbL" role="jymVt" />
@@ -1538,8 +1626,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="7rZVxqnvoq3" role="1B3o_S" />
       <node concept="17QB3L" id="7rZVxqnuYtA" role="1tU5fm" />
-      <node concept="NWlO9" id="7rZVxqnv0eN" role="lGtFl">
-        <property role="NWlVz" value="Time-stamp string when the analysis was started - used as name for the virtual package for the saved nodes." />
+      <node concept="z59LJ" id="70cGcTIKki5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKki3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKki4" role="1dT_Ay">
+            <property role="1dT_AB" value="Time-stamp string when the analysis was started - used as name for the virtual package for the saved nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7rZVxqnuZmj" role="jymVt" />
@@ -1679,8 +1771,12 @@
           <ref role="ehGHo" to="gfdq:4XCJ8CcQ6Nj" resolve="LantestConfig" />
         </node>
       </node>
-      <node concept="NWlO9" id="5oO2AcZysRY" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKki8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKki6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKki7" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZyprx" role="jymVt" />
@@ -2642,8 +2738,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5oO2AcYig9E" role="1B3o_S" />
-      <node concept="NWlO9" id="5oO2AcZyvka" role="lGtFl">
-        <property role="NWlVz" value="Does the check." />
+      <node concept="P$JXv" id="70cGcTIKkib" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKki9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkia" role="1dT_Ay">
+            <property role="1dT_AB" value="Does the check." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3LbvSaYdS31" role="jymVt" />
@@ -2656,8 +2756,12 @@
       <node concept="3clFbS" id="5oO2AcYizc8" role="3clF47" />
       <node concept="3Tmbuc" id="5oO2AcYiyHH" role="1B3o_S" />
       <node concept="2I9FWS" id="5oO2AcYizbU" role="3clF45" />
-      <node concept="NWlO9" id="5oO2AcYi$My" role="lGtFl">
-        <property role="NWlVz" value="Collects the root nodes from the given model and which are to be checked." />
+      <node concept="P$JXv" id="70cGcTIKkie" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkic" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkid" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects the root nodes from the given model and which are to be checked." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcYizZw" role="jymVt" />
@@ -2670,12 +2774,16 @@
       <node concept="3clFbS" id="5oO2AcZdInO" role="3clF47" />
       <node concept="3Tmbuc" id="5oO2AcZaQNz" role="1B3o_S" />
       <node concept="3cqZAl" id="5oO2AcZcLnX" role="3clF45" />
-      <node concept="NWlO9" id="5oO2AcZeFW9" role="lGtFl">
-        <property role="NWlVz" value="Prepares for the generation -- e.g. add the root node to a build configuration." />
-      </node>
       <node concept="37vLTG" id="5oO2AcZjtld" role="3clF46">
         <property role="TrG5h" value="currentRootNode" />
         <node concept="3Tqbb2" id="5oO2AcZjtlc" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKkih" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkif" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkig" role="1dT_Ay">
+            <property role="1dT_AB" value="Prepares for the generation -- e.g. add the root node to a build configuration." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZ9TgS" role="jymVt" />
@@ -2688,12 +2796,16 @@
       <node concept="3clFbS" id="5oO2AcZxspc" role="3clF47" />
       <node concept="3Tmbuc" id="5oO2AcZxspd" role="1B3o_S" />
       <node concept="10P_77" id="5oO2AcZxyzQ" role="3clF45" />
-      <node concept="NWlO9" id="5oO2AcZxspf" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the generation was successful - e.g. if gcc could compile the generated file without errors." />
-      </node>
       <node concept="37vLTG" id="5oO2AcZxspg" role="3clF46">
         <property role="TrG5h" value="currentRootNode" />
         <node concept="3Tqbb2" id="5oO2AcZxsph" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKkik" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkii" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkij" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the generation was successful - e.g. if gcc could compile the generated file without errors." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZxt13" role="jymVt" />
@@ -2708,9 +2820,6 @@
       <node concept="_YKpA" id="5siEZZNa9pd" role="3clF45">
         <node concept="17QB3L" id="5siEZZNa9Ur" role="_ZDj9" />
       </node>
-      <node concept="NWlO9" id="5oO2AcZxI3A" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the latest generated model conforms to the expected (domain specific) assertions." />
-      </node>
       <node concept="37vLTG" id="5oO2AcZxI3B" role="3clF46">
         <property role="TrG5h" value="currentRootNode" />
         <node concept="3Tqbb2" id="5oO2AcZxI3C" role="1tU5fm" />
@@ -2718,6 +2827,13 @@
       <node concept="37vLTG" id="5oO2AcZxMlk" role="3clF46">
         <property role="TrG5h" value="latestGeneratedModel" />
         <node concept="H_c77" id="5oO2AcZxMQN" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKkin" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkil" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkim" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the latest generated model conforms to the expected (domain specific) assertions." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZxrM4" role="jymVt" />
@@ -2730,9 +2846,6 @@
       <node concept="3clFbS" id="5oO2AcZxSfi" role="3clF47" />
       <node concept="3Tmbuc" id="5oO2AcZxSfj" role="1B3o_S" />
       <node concept="3cqZAl" id="5oO2AcZzWmF" role="3clF45" />
-      <node concept="NWlO9" id="5oO2AcZxSfl" role="lGtFl">
-        <property role="NWlVz" value="Cleans-up the model and prepares for a new generation step." />
-      </node>
       <node concept="37vLTG" id="5oO2AcZxSfm" role="3clF46">
         <property role="TrG5h" value="currentRootNode" />
         <node concept="3Tqbb2" id="5oO2AcZxSfn" role="1tU5fm" />
@@ -2740,6 +2853,13 @@
       <node concept="37vLTG" id="5oO2AcZxSfo" role="3clF46">
         <property role="TrG5h" value="modelIsValid" />
         <node concept="10P_77" id="5oO2AcZxUU7" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKkiq" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKkio" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKkip" role="1dT_Ay">
+            <property role="1dT_AB" value="Cleans-up the model and prepares for a new generation step." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5oO2AcZxRDg" role="jymVt" />
@@ -2978,8 +3098,12 @@
         <node concept="3Tqbb2" id="5siEZZN9Wt7" role="1tU5fm" />
       </node>
     </node>
-    <node concept="NWlO9" id="5oO2AcZys0m" role="lGtFl">
-      <property role="NWlVz" value="Base class for drivers for bugs finders." />
+    <node concept="3UR2Jj" id="70cGcTIKkit" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKkir" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKkis" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for drivers for bugs finders." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3Ts5Ln3KLPN">

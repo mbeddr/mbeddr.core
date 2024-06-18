@@ -16,6 +16,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -29,7 +33,6 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
-      <concept id="1070533982221" name="jetbrains.mps.baseLanguage.structure.ShortType" flags="in" index="10N3zO" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -421,15 +424,14 @@
     <node concept="3Tm1VV" id="1LnB5xdHLd8" role="1B3o_S" />
     <node concept="2YIFZL" id="1LnB5xdHLd9" role="jymVt">
       <property role="TrG5h" value="alignmentFor" />
-      <node concept="10N3zO" id="1LnB5xdHLdq" role="3clF45" />
       <node concept="3Tm1VV" id="1LnB5xdHLdb" role="1B3o_S" />
       <node concept="3clFbS" id="1LnB5xdHLdc" role="3clF47">
         <node concept="3clFbJ" id="1LnB5xdHLNt" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHLNu" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL$z" role="3cqZAp">
-              <node concept="10M0yZ" id="1LnB5xdHL$$" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_CENTER" resolve="ALIGN_CENTER" />
+              <node concept="Rm8GO" id="2tOXMOyzjND" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.CENTER" resolve="CENTER" />
+                <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
               </node>
             </node>
           </node>
@@ -469,9 +471,9 @@
         <node concept="3clFbJ" id="1LnB5xdHLN_" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHLNA" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL__" role="3cqZAp">
-              <node concept="10M0yZ" id="7bplM0p9th4" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_RIGHT" resolve="ALIGN_RIGHT" />
+              <node concept="Rm8GO" id="2tOXMOyzjZ1" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.RIGHT" resolve="RIGHT" />
+                <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
               </node>
             </node>
           </node>
@@ -511,9 +513,9 @@
         <node concept="3clFbJ" id="1LnB5xdHLNH" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHLNI" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL_I" role="3cqZAp">
-              <node concept="10M0yZ" id="7bplM0p9t_X" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_JUSTIFY" resolve="ALIGN_JUSTIFY" />
+              <node concept="Rm8GO" id="2tOXMOyzkTJ" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.JUSTIFY" resolve="JUSTIFY" />
+                <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
               </node>
             </node>
           </node>
@@ -551,9 +553,9 @@
           </node>
         </node>
         <node concept="3cpWs6" id="1LnB5xdHLeH" role="3cqZAp">
-          <node concept="10M0yZ" id="7bplM0p9tVe" role="3cqZAk">
-            <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-            <ref role="3cqZAo" to="54ve:~CellStyle.ALIGN_LEFT" resolve="ALIGN_LEFT" />
+          <node concept="Rm8GO" id="2tOXMOyzl5v" role="3cqZAk">
+            <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.LEFT" resolve="LEFT" />
+            <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
           </node>
         </node>
         <node concept="3clFbH" id="1LnB5xdHLdT" role="3cqZAp" />
@@ -562,6 +564,9 @@
         <property role="TrG5h" value="alignment" />
         <node concept="10Oyi0" id="1LnB5xdHLdI" role="1tU5fm" />
       </node>
+      <node concept="3uibUv" id="2tOXMOyziTl" role="3clF45">
+        <ref role="3uigEE" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1LnB5xdHRnk">
@@ -569,15 +574,14 @@
     <node concept="3Tm1VV" id="1LnB5xdHRoi" role="1B3o_S" />
     <node concept="2YIFZL" id="1LnB5xdHRnl" role="jymVt">
       <property role="TrG5h" value="borderFor" />
-      <node concept="10N3zO" id="1LnB5xdHRnm" role="3clF45" />
       <node concept="3Tm1VV" id="1LnB5xdHRnn" role="1B3o_S" />
       <node concept="3clFbS" id="1LnB5xdHRno" role="3clF47">
         <node concept="3clFbJ" id="1LnB5xdHRnp" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHRnq" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnr" role="3cqZAp">
-              <node concept="10M0yZ" id="7bplM0p9uCc" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_THIN" resolve="BORDER_THIN" />
+              <node concept="Rm8GO" id="2tOXMOyzeGJ" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~BorderStyle.THIN" resolve="THIN" />
+                <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
               </node>
             </node>
           </node>
@@ -617,9 +621,9 @@
         <node concept="3clFbJ" id="1LnB5xdHRnA" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHRnB" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnC" role="3cqZAp">
-              <node concept="10M0yZ" id="7bplM0p9uY6" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_MEDIUM" resolve="BORDER_MEDIUM" />
+              <node concept="Rm8GO" id="2tOXMOyzfEH" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~BorderStyle.MEDIUM" resolve="MEDIUM" />
+                <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
               </node>
             </node>
           </node>
@@ -659,9 +663,9 @@
         <node concept="3clFbJ" id="1LnB5xdHRnN" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHRnO" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnP" role="3cqZAp">
-              <node concept="10M0yZ" id="7bplM0p9vkw" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_THICK" resolve="BORDER_THICK" />
+              <node concept="Rm8GO" id="2tOXMOyzgCJ" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~BorderStyle.THICK" resolve="THICK" />
+                <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
               </node>
             </node>
           </node>
@@ -701,9 +705,9 @@
         <node concept="3clFbJ" id="1LnB5xdHRo0" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHRo1" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRo2" role="3cqZAp">
-              <node concept="10M0yZ" id="7bplM0p9vEU" role="3cqZAk">
-                <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-                <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_DOUBLE" resolve="BORDER_DOUBLE" />
+              <node concept="Rm8GO" id="2tOXMOyzgRN" role="3cqZAk">
+                <ref role="Rm8GQ" to="54ve:~BorderStyle.DOUBLE" resolve="DOUBLE" />
+                <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
               </node>
             </node>
           </node>
@@ -741,9 +745,9 @@
           </node>
         </node>
         <node concept="3cpWs6" id="1LnB5xdHRod" role="3cqZAp">
-          <node concept="10M0yZ" id="7bplM0p9w1k" role="3cqZAk">
-            <ref role="1PxDUh" to="54ve:~CellStyle" resolve="CellStyle" />
-            <ref role="3cqZAo" to="54ve:~CellStyle.BORDER_NONE" resolve="BORDER_NONE" />
+          <node concept="Rm8GO" id="2tOXMOyzdJ5" role="3cqZAk">
+            <ref role="Rm8GQ" to="54ve:~BorderStyle.NONE" resolve="NONE" />
+            <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
           </node>
         </node>
         <node concept="3clFbH" id="1LnB5xdHRof" role="3cqZAp" />
@@ -751,6 +755,9 @@
       <node concept="37vLTG" id="1LnB5xdHRog" role="3clF46">
         <property role="TrG5h" value="border" />
         <node concept="10Oyi0" id="1LnB5xdHRoh" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="2tOXMOyzc23" role="3clF45">
+        <ref role="3uigEE" to="54ve:~BorderStyle" resolve="BorderStyle" />
       </node>
     </node>
   </node>

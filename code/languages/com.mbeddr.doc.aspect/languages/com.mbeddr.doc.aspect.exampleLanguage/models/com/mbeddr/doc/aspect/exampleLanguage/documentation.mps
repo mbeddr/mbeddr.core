@@ -20,6 +20,7 @@
       </concept>
       <concept id="7810506636291686467" name="com.mbeddr.doc.aspect.structure.DocumentedPropertyItemAnnotation" flags="ng" index="fANS$" />
       <concept id="1058510331725720478" name="com.mbeddr.doc.aspect.structure.DocumentedConceptAnnotation" flags="ng" index="3n9NSn">
+        <property id="2265458908609337334" name="overrideChildren" index="33_X4D" />
         <property id="1881564090922902400" name="priority" index="17ySGi" />
         <reference id="1058510331725761196" name="concept" index="3nadW_" />
       </concept>
@@ -240,6 +241,21 @@
             <ref role="3nadW_" to="hauh:4MORkbYxnx" resolve="Node" />
             <ref role="4TqVk" to="tpck:h0TrG11" resolve="name" />
           </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="1XKxHZsLVso" role="1_0VJ0">
+        <property role="TrG5h" value="CostAttribute" />
+        <property role="1_0VJr" value="Cost attribute" />
+        <node concept="1_0LV8" id="1XKxHZsLVtc" role="1_0VJ0">
+          <node concept="19SGf9" id="1XKxHZsLVtd" role="1_0LWR">
+            <node concept="19SUe$" id="1XKxHZsLVte" role="19SJt6">
+              <property role="19SUeA" value="This is an attribute for defining cost via an expression." />
+            </node>
+          </node>
+        </node>
+        <node concept="3n9NSn" id="1XKxHZsLVtj" role="lGtFl">
+          <property role="33_X4D" value="true" />
+          <ref role="3nadW_" to="hauh:1XKxHZsLKOm" resolve="CostAttribute" />
         </node>
       </node>
     </node>

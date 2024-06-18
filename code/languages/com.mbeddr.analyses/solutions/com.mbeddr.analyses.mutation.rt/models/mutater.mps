@@ -13,8 +13,9 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
@@ -199,15 +200,25 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -675,8 +686,12 @@
         <property role="TrG5h" value="original" />
         <node concept="3Tqbb2" id="5PJiK1q5JTV" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5PJiK1q5JWK" role="lGtFl">
-        <property role="NWlVz" value="Returns a mutated node which is the result of applying this strategy." />
+      <node concept="P$JXv" id="70cGcTIKd7m" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7k" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7l" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a mutated node which is the result of applying this strategy." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="5PJiK1q5JSK" role="1B3o_S" />
@@ -694,12 +709,20 @@
         <property role="TrG5h" value="original" />
         <node concept="3Tqbb2" id="5PJiK1q5JVM" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="5PJiK1q5JWA" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this strategy can be applied." />
+      <node concept="P$JXv" id="70cGcTIKd7p" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7n" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7o" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this strategy can be applied." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="5PJiK1q5JWs" role="lGtFl">
-      <property role="NWlVz" value="Base class for different mutation strategies." />
+    <node concept="3UR2Jj" id="70cGcTIKd7s" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd7q" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd7r" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for different mutation strategies." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5PJiK1q5JXk">
@@ -1056,8 +1079,12 @@
       <node concept="2AHcQZ" id="5PJiK1q5NFl" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="5PJiK1q5NH7" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKd7v" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7t" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7u" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5PJiK1q5N$p" role="jymVt" />
@@ -1092,18 +1119,26 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="5PJiK1q5NIZ" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="5PJiK1q5NL4" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKd7y" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7w" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7x" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3uibUv" id="5PJiK1q5Nxc" role="1zkMxy">
       <ref role="3uigEE" node="5PJiK1q5JSJ" resolve="MutationStrategyBase" />
     </node>
-    <node concept="NWlO9" id="5PJiK1q5NDl" role="lGtFl">
-      <property role="NWlVz" value="Replaces binary comparison expressions." />
+    <node concept="3UR2Jj" id="70cGcTIKd7_" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd7z" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd7$" role="1dT_Ay">
+          <property role="1dT_AB" value="Replaces binary comparison expressions." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5PJiK1q6ppn">
@@ -1399,8 +1434,12 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
         </node>
       </node>
-      <node concept="NWlO9" id="1y8E7lqf2N" role="lGtFl">
-        <property role="NWlVz" value="Adds an implementation model if it does not exist." />
+      <node concept="P$JXv" id="70cGcTIKd7C" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7A" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7B" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds an implementation model if it does not exist." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1y8E7lq9UL" role="jymVt" />
@@ -1463,8 +1502,12 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
         </node>
       </node>
-      <node concept="NWlO9" id="1y8E7lqeXD" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the imNew already exists in the model." />
+      <node concept="P$JXv" id="70cGcTIKd7F" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7D" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7E" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the imNew already exists in the model." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1y8E7lqa7F" role="jymVt" />
@@ -1664,13 +1707,21 @@
         <property role="TrG5h" value="n2" />
         <node concept="3Tqbb2" id="1y8E7lqab9" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1y8E7lqf09" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the nodes are identical." />
+      <node concept="P$JXv" id="70cGcTIKd7I" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7G" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7H" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the nodes are identical." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="5PJiK1q6ppo" role="1B3o_S" />
-    <node concept="NWlO9" id="5PJiK1q6ppJ" role="lGtFl">
-      <property role="NWlVz" value="Adds the implementation module to the BuildConfig and to an analysis config." />
+    <node concept="3UR2Jj" id="70cGcTIKd7L" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd7J" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd7K" role="1dT_Ay">
+          <property role="1dT_AB" value="Adds the implementation module to the BuildConfig and to an analysis config." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1y8E7ln5vg">
@@ -1912,8 +1963,12 @@
         <property role="TrG5h" value="m" />
         <node concept="H_c77" id="1y8E7ln5wi" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1y8E7loEfX" role="lGtFl">
-        <property role="NWlVz" value="Cleans everything what was generated during mutation." />
+      <node concept="P$JXv" id="70cGcTIKd7O" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7M" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7N" role="1dT_Ay">
+            <property role="1dT_AB" value="Cleans everything what was generated during mutation." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1y8E7loagd" role="jymVt" />
@@ -1953,8 +2008,12 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1y8E7ln5vh" role="1B3o_S" />
-    <node concept="NWlO9" id="1y8E7ln5vC" role="lGtFl">
-      <property role="NWlVz" value="Cleans all mutants, referencing analyses configs, references from build config, etc." />
+    <node concept="3UR2Jj" id="70cGcTIKd7R" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKd7P" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKd7Q" role="1dT_Ay">
+          <property role="1dT_AB" value="Cleans all mutants, referencing analyses configs, references from build config, etc." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

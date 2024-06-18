@@ -63,9 +63,9 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="b9kz" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.ex(MPS.IDEA/)" />
+    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -4359,6 +4359,29 @@
   </node>
   <node concept="13h7C7" id="IviauXaxW">
     <ref role="13h7C2" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    <node concept="13i0hz" id="2daXVy6Qz1j" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isDisplayed" />
+      <node concept="3Tm1VV" id="7jN4X3UX2AX" role="1B3o_S" />
+      <node concept="10P_77" id="7jN4X3UX3Yi" role="3clF45" />
+      <node concept="3clFbS" id="7jN4X3UX2AZ" role="3clF47">
+        <node concept="3clFbF" id="7jN4X3UX40a" role="3cqZAp">
+          <node concept="3clFbT" id="7jN4X3UX409" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="7jN4X3UX40r" role="lGtFl">
+        <node concept="TZ5HA" id="7jN4X3UX40s" role="TZ5H$">
+          <node concept="1dT_AC" id="7jN4X3UX40t" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="x79VA" id="7jN4X3UX40u" role="3nqlJM">
+          <property role="x79VB" value="Whether such node can be created from the mbeddr context menu" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="IviauXb0g" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

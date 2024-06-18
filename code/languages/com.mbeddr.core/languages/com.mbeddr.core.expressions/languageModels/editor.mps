@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
@@ -3842,6 +3842,10 @@
   <node concept="22mcaB" id="2cvVnUv6F24">
     <ref role="aqKnT" to="mj1l:7FQByU3CrDB" resolve="NumberLiteral" />
     <node concept="22hDWj" id="27yO7ubzfS1" role="22hAXT" />
+  </node>
+  <node concept="22mcaB" id="38Vsfq8qCRn">
+    <ref role="aqKnT" to="mj1l:40tXLnqhyKc" resolve="GenericDotExpression" />
+    <node concept="22hDWj" id="38Vsfq8qCVI" role="22hAXT" />
   </node>
 </model>
 

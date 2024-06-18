@@ -4,9 +4,10 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -164,9 +165,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -177,6 +175,19 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -538,8 +549,12 @@
       <node concept="3uibUv" id="4arT0cnsjZ5" role="3clF45">
         <ref role="3uigEE" node="4arT0cnsjXC" resolve="StatemachineResult" />
       </node>
-      <node concept="NWlO9" id="4arT0cnsjZ6" role="lGtFl">
-        <property role="NWlVz" value="Builds the states reachable result." />
+      <node concept="P$JXv" id="70cGcTIK8hb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8h9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8ha" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the states reachable result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cnsjZ7" role="jymVt" />
@@ -612,8 +627,12 @@
       <node concept="3uibUv" id="4arT0cnsjZs" role="3clF45">
         <ref role="3uigEE" node="4arT0cnsjXC" resolve="StatemachineResult" />
       </node>
-      <node concept="NWlO9" id="4arT0cnsjZt" role="lGtFl">
-        <property role="NWlVz" value="Builds the transition reachable result." />
+      <node concept="P$JXv" id="70cGcTIK8he" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8hc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hd" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the transition reachable result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1ieRNjmEMJ9" role="jymVt" />
@@ -714,8 +733,12 @@
         </node>
       </node>
     </node>
-    <node concept="NWlO9" id="4arT0cnsjZu" role="lGtFl">
-      <property role="NWlVz" value="Builder for statemachine results" />
+    <node concept="3UR2Jj" id="70cGcTIK8hh" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8hf" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8hg" role="1dT_Ay">
+          <property role="1dT_AB" value="Builder for statemachine results" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4arT0cnsjZv">
@@ -1032,8 +1055,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4arT0cnsk1V" role="1B3o_S" />
-      <node concept="NWlO9" id="4arT0cnsk1W" role="lGtFl">
-        <property role="NWlVz" value="Constructor" />
+      <node concept="P$JXv" id="70cGcTIK8hk" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8hi" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hj" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cnsk1X" role="jymVt" />
@@ -1249,8 +1276,12 @@
       <node concept="2AHcQZ" id="cchPmXXXhL" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXXYBV" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8hn" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8hl" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hm" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXXSZz" role="jymVt" />
@@ -1271,8 +1302,12 @@
       <node concept="2AHcQZ" id="cchPmXXU_2" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXXVVa" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8hq" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8ho" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hp" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cnsk3B" role="jymVt" />
@@ -1490,8 +1525,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cnsk4G" role="lGtFl">
-        <property role="NWlVz" value="Checks the states reachibility." />
+      <node concept="P$JXv" id="70cGcTIK8ht" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8hr" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hs" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the states reachibility." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cnsk4H" role="jymVt" />
@@ -1708,12 +1747,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cnsk5M" role="lGtFl">
-        <property role="NWlVz" value="Check the reachibility of transitions." />
+      <node concept="P$JXv" id="70cGcTIK8hw" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8hu" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hv" role="1dT_Ay">
+            <property role="1dT_AB" value="Check the reachibility of transitions." />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="4arT0cnsk5N" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for reachibility of states and transitions of state machines." />
+    <node concept="3UR2Jj" id="70cGcTIK8hz" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8hx" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8hy" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for reachibility of states and transitions of state machines." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3_HSwtcYpiz">
@@ -1721,9 +1768,6 @@
     <node concept="3Tm1VV" id="3_HSwtcYpi$" role="1B3o_S" />
     <node concept="3uibUv" id="3_HSwtcYprc" role="1zkMxy">
       <ref role="3uigEE" to="tzyt:3_HSwtcWh0_" resolve="CProverAnalyzerFactory" />
-    </node>
-    <node concept="NWlO9" id="3_HSwtcYprE" role="lGtFl">
-      <property role="NWlVz" value="Factory for Statemachines analyzers." />
     </node>
     <node concept="2tJIrI" id="3_HSwtcYpuE" role="jymVt" />
     <node concept="3clFb_" id="3_HSwtcYprS" role="jymVt">
@@ -1760,8 +1804,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3_HSwtcYpwN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK8hD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8hB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8hC" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK8hA" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8h$" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8h_" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for Statemachines analyzers." />
+        </node>
       </node>
     </node>
   </node>

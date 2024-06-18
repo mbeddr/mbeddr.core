@@ -3,8 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="j6po" ref="d280cd6b-3d77-4bf2-b70d-fe049ab4c77e/java:org.sat4j.specs(com.mbeddr.analyses.sat4j/)" />
@@ -82,13 +83,23 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="3253504201087213830" name="com.mbeddr.mpsutil.blutil.structure.PerformanceProfiler" flags="ng" index="1Cbqnj">
         <property id="3253504201087213832" name="name" index="1Cbqnt" />
         <child id="3253504201087213831" name="profiledStatements" index="1Cbqni" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -264,9 +275,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1X8myJOLdqH" role="1B3o_S" />
-      <node concept="NWlO9" id="1X8myJOLdqK" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency of a solution." />
-      </node>
       <node concept="_YKpA" id="1X8myJOLdqL" role="3clF45">
         <node concept="3uibUv" id="4XJOimFNQ9o" role="_ZDj9">
           <ref role="3uigEE" to="vy7l:tSjOfAiUd1" resolve="VariabilityAnalysisResultBase" />
@@ -275,10 +283,21 @@
       <node concept="3uibUv" id="1X8myJOLdqN" role="Sfmx6">
         <ref role="3uigEE" to="j6po:~TimeoutException" resolve="TimeoutException" />
       </node>
+      <node concept="P$JXv" id="70cGcTIK8dQ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8dO" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8dP" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency of a solution." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="1X8myJOLdqO" role="1B3o_S" />
-    <node concept="NWlO9" id="1X8myJOLdqP" role="lGtFl">
-      <property role="NWlVz" value="Checks the consistency of variability of all artefacts within a solution." />
+    <node concept="3UR2Jj" id="70cGcTIK8dT" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8dR" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8dS" role="1dT_Ay">
+          <property role="1dT_AB" value="Checks the consistency of variability of all artefacts within a solution." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

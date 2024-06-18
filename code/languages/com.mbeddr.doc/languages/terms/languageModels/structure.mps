@@ -60,6 +60,7 @@
     <property role="TrG5h" value="TermRefWord" />
     <property role="34LRSv" value="[" />
     <property role="EcuMT" value="8574110643282370464" />
+    <property role="R4oN_" value="a reference to a definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7rXn3flJtYx" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
@@ -80,6 +81,7 @@
     <property role="TrG5h" value="TermDefParagraph" />
     <property role="34LRSv" value="term" />
     <property role="EcuMT" value="8574110643282425937" />
+    <property role="R4oN_" value="a definition of a word or expression" />
     <ref role="1TJDcQ" to="2c95:2TZO3DbvcVJ" resolve="AbstractParagraph" />
     <node concept="1TJgyj" id="7rXn3flJFxk" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -101,6 +103,7 @@
     <property role="TrG5h" value="TermRelationshipText" />
     <property role="34LRSv" value="-&gt;" />
     <property role="EcuMT" value="1233689874746925900" />
+    <property role="R4oN_" value="a relationship between terms" />
     <ref role="1TJDcQ" to="2c95:5mf_X_La_N$" resolve="FormattedText" />
   </node>
   <node concept="1TIwiD" id="3EwB7OlCGlH">

@@ -4,9 +4,10 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="tzyt" ref="r:b35b0dd8-a38e-4607-ba37-cc8f7410b705(com.mbeddr.analyses.cbmc.rt.run)" />
@@ -199,9 +200,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -212,6 +210,19 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -371,8 +382,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4arT0cntK24" role="1B3o_S" />
-      <node concept="NWlO9" id="4arT0cntK25" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK7TV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7TT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7TU" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXWlYY" role="jymVt" />
@@ -865,8 +880,12 @@
       <node concept="2AHcQZ" id="cchPmXWBiL" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXWDrQ" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7TY" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7TW" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7TX" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXWwsj" role="jymVt" />
@@ -887,8 +906,12 @@
       <node concept="2AHcQZ" id="cchPmXWz0c" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXW_9f" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7U1" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7TZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7U0" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXWneu" role="jymVt" />
@@ -1060,8 +1083,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cntK6v" role="lGtFl">
-        <property role="NWlVz" value="Performs a single pre-/post check." />
+      <node concept="P$JXv" id="70cGcTIK7U4" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7U2" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7U3" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs a single pre-/post check." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntK6w" role="jymVt" />
@@ -1243,8 +1270,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cntK7u" role="lGtFl">
-        <property role="NWlVz" value="Performs a single protocol check." />
+      <node concept="P$JXv" id="70cGcTIK7U7" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7U5" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7U6" role="1dT_Ay">
+            <property role="1dT_AB" value="Performs a single protocol check." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntK7v" role="jymVt" />
@@ -1339,8 +1370,12 @@
         <property role="TrG5h" value="label" />
         <node concept="17QB3L" id="4arT0cntK85" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4arT0cntK86" role="lGtFl">
-        <property role="NWlVz" value="Computes the arguments." />
+      <node concept="P$JXv" id="70cGcTIK7Ua" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7U8" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7U9" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the arguments." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntK87" role="jymVt" />
@@ -1463,13 +1498,21 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="4arT0cntK8M" role="1B3o_S" />
-      <node concept="NWlO9" id="4arT0cntK8N" role="lGtFl">
-        <property role="NWlVz" value="Helping class acting as container for pre/post, runnable, label." />
+      <node concept="3UR2Jj" id="70cGcTIK7Ud" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Ub" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Uc" role="1dT_Ay">
+            <property role="1dT_AB" value="Helping class acting as container for pre/post, runnable, label." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntK8O" role="jymVt" />
-    <node concept="NWlO9" id="4arT0cntK8P" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for components: checks the pre-/postconditions." />
+    <node concept="3UR2Jj" id="70cGcTIK7Ug" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Ue" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Uf" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for components: checks the pre-/postconditions." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4arT0cntK8Q">
@@ -1590,8 +1633,12 @@
       <node concept="2AHcQZ" id="7Bf6Ux8Hulk" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7Bf6Ux8HuSP" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Uj" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Uh" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ui" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Bf6Ux8HvG4" role="jymVt" />
@@ -1829,8 +1876,12 @@
           <ref role="ehGHo" to="v7ag:3TmmsQkDc76" resolve="Runnable" />
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cntKaC" role="lGtFl">
-        <property role="NWlVz" value="Computes the label corresponding to a precondition." />
+      <node concept="P$JXv" id="70cGcTIK7Um" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Uk" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ul" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the label corresponding to a precondition." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntKaD" role="jymVt" />
@@ -1865,8 +1916,12 @@
           <ref role="ehGHo" to="x27k:7LOsK3rQkU_" resolve="ReturnStatement" />
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cntKaR" role="lGtFl">
-        <property role="NWlVz" value="Computes the label corresponding to a postcondition." />
+      <node concept="P$JXv" id="70cGcTIK7Up" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Un" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Uo" role="1dT_Ay">
+            <property role="1dT_AB" value="Computes the label corresponding to a postcondition." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntKaS" role="jymVt" />
@@ -2051,14 +2106,18 @@
           <ref role="ehGHo" to="v7ag:3TmmsQkCzn9" resolve="Component" />
         </node>
       </node>
-      <node concept="NWlO9" id="4arT0cntKc8" role="lGtFl">
-        <property role="NWlVz" value="Returns a map from pre/post to runnables." />
-      </node>
       <node concept="_YKpA" id="4arT0cntKc9" role="3clF45">
         <node concept="3uibUv" id="4arT0cntKca" role="_ZDj9">
           <ref role="3uigEE" to="18ew:~Pair" resolve="Pair" />
           <node concept="3Tqbb2" id="4arT0cntKcb" role="11_B2D" />
           <node concept="3Tqbb2" id="4arT0cntKcc" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIK7Us" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Uq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ur" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a map from pre/post to runnables." />
+          </node>
         </node>
       </node>
     </node>
@@ -2155,8 +2214,12 @@
       <node concept="2AHcQZ" id="7Bf6Ux8HyZj" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="7Bf6Ux8HyZk" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Uv" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Ut" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Uu" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4arT0cntKc$" role="jymVt" />
@@ -2714,14 +2777,22 @@
           <ref role="ehGHo" to="c4ml:5KvlJsg9xOT" resolve="VerificationConfigurationAttribute" />
         </node>
       </node>
-      <node concept="NWlO9" id="41thbhvqFL_" role="lGtFl">
-        <property role="NWlVz" value="Builds the config from verification attribute." />
+      <node concept="P$JXv" id="70cGcTIK7Uy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Uw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ux" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the config from verification attribute." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="Lg9kE9uR_e" role="jymVt" />
     <node concept="2tJIrI" id="2UdJgvCVKG6" role="jymVt" />
-    <node concept="NWlO9" id="41thbhvr0ec" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for building the verification configuration objects." />
+    <node concept="3UR2Jj" id="70cGcTIK7U_" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Uz" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7U$" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for building the verification configuration objects." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3_HSwtcWHI9">
@@ -2765,12 +2836,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3_HSwtcWI2t" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7UC" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7UA" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7UB" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="3_HSwtcWI0C" role="lGtFl">
-      <property role="NWlVz" value="Factory for components analyzers." />
+    <node concept="3UR2Jj" id="70cGcTIK7UF" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7UD" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7UE" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for components analyzers." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

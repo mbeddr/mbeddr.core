@@ -5,9 +5,10 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -192,9 +193,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -205,6 +203,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1174,8 +1186,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3x0R1LJ5Dka" role="1B3o_S" />
-      <node concept="NWlO9" id="3x0R1LJ5Dkb" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIK7XX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7XV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7XW" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXP2fA" role="jymVt" />
@@ -1523,8 +1539,12 @@
       <node concept="2AHcQZ" id="cchPmXP7vi" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXP8XC" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Y0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7XY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7XZ" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="cchPmXP5Iz" role="jymVt" />
@@ -1548,8 +1568,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="M7_V6uCekE" role="lGtFl">
-        <property role="NWlVz" value="Keep track the purpose of error labels." />
+      <node concept="z59LJ" id="70cGcTIK7Y3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Y1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Y2" role="1dT_Ay">
+            <property role="1dT_AB" value="Keep track the purpose of error labels." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u_OXC" role="jymVt" />
@@ -1567,8 +1591,12 @@
           <node concept="17QB3L" id="2bZFDXOLEjS" role="HW$YZ" />
         </node>
       </node>
-      <node concept="NWlO9" id="2bZFDXOLZSp" role="lGtFl">
-        <property role="NWlVz" value="The current error labels." />
+      <node concept="z59LJ" id="70cGcTIK7Y6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Y4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Y5" role="1dT_Ay">
+            <property role="1dT_AB" value="The current error labels." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2bZFDXOL_1N" role="jymVt" />
@@ -2217,8 +2245,12 @@
       </node>
       <node concept="3Tm6S6" id="M7_V6u_aAy" role="1B3o_S" />
       <node concept="3cqZAl" id="M7_V6u_czd" role="3clF45" />
-      <node concept="NWlO9" id="M7_V6uCcr9" role="lGtFl">
-        <property role="NWlVz" value="Collects teh labels to be searched - populates the errorLabels2LabelKinds map." />
+      <node concept="P$JXv" id="70cGcTIK7Y9" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Y7" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Y8" role="1dT_Ay">
+            <property role="1dT_AB" value="Collects teh labels to be searched - populates the errorLabels2LabelKinds map." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u_8ME" role="jymVt" />
@@ -2239,8 +2271,12 @@
       <node concept="2AHcQZ" id="cchPmXPccf" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="cchPmXPdEB" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Yc" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Ya" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Yb" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u$MG6" role="jymVt" />
@@ -2367,8 +2403,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="M7_V6uBmq2" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Yf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Yd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ye" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6uB0zt" role="jymVt" />
@@ -2400,8 +2440,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="M7_V6uAKoB" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Yi" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Yg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Yh" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u_s3A" role="jymVt" />
@@ -2741,8 +2785,12 @@
       </node>
       <node concept="2tJIrI" id="2S1OXleKa_Q" role="jymVt" />
     </node>
-    <node concept="NWlO9" id="3x0R1LJ5Dp1" role="lGtFl">
-      <property role="NWlVz" value="Analyzer for decision-tables." />
+    <node concept="3UR2Jj" id="70cGcTIK7Yl" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Yj" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Yk" role="1dT_Ay">
+          <property role="1dT_AB" value="Analyzer for decision-tables." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3x0R1LJ5Dp2">
@@ -3397,12 +3445,20 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="3_HSwtcWnAc" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK7Yo" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Ym" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Yn" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="3_HSwtcWnur" role="lGtFl">
-      <property role="NWlVz" value="Factory for decision tables analyzers - when called through one-click (not via analysis configuration)." />
+    <node concept="3UR2Jj" id="70cGcTIK7Yr" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7Yp" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7Yq" role="1dT_Ay">
+          <property role="1dT_AB" value="Factory for decision tables analyzers - when called through one-click (not via analysis configuration)." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -5,9 +5,10 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -129,9 +130,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -142,6 +140,19 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -213,9 +224,6 @@
   </registry>
   <node concept="312cEu" id="67iKQ7oy7e8">
     <property role="TrG5h" value="TestgenTestingUtils" />
-    <node concept="NWlO9" id="73BQep1R5WA" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for tests generation." />
-    </node>
     <node concept="3Tm1VV" id="67iKQ7oy7e9" role="1B3o_S" />
     <node concept="2tJIrI" id="67iKQ7oy7ei" role="jymVt" />
     <node concept="2YIFZL" id="341WyjDj7Hm" role="jymVt">
@@ -266,8 +274,12 @@
         <property role="TrG5h" value="funName" />
         <node concept="17QB3L" id="341WyjDj7HA" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="341WyjDj7HB" role="lGtFl">
-        <property role="NWlVz" value="Facade for testsgen with 'location' coverage." />
+      <node concept="P$JXv" id="70cGcTIK8lO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8lM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8lN" role="1dT_Ay">
+            <property role="1dT_AB" value="Facade for testsgen with 'location' coverage." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="341WyjDj7yf" role="jymVt" />
@@ -319,8 +331,12 @@
         <property role="TrG5h" value="funName" />
         <node concept="17QB3L" id="7yN$Xh8otQN" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7yN$Xh8otQO" role="lGtFl">
-        <property role="NWlVz" value="Facade for testsgen with 'branch' coverage." />
+      <node concept="P$JXv" id="70cGcTIK8lR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8lP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8lQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Facade for testsgen with 'branch' coverage." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="341WyjDj3tW" role="jymVt" />
@@ -631,8 +647,12 @@
         <property role="TrG5h" value="criterion" />
         <node concept="17QB3L" id="341WyjDj5RX" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="341WyjDj3NT" role="lGtFl">
-        <property role="NWlVz" value="Facade for testsgen." />
+      <node concept="P$JXv" id="70cGcTIK8lU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8lS" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8lT" role="1dT_Ay">
+            <property role="1dT_AB" value="Facade for testsgen." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="341WyjDj3C0" role="jymVt" />
@@ -690,9 +710,6 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="73BQep1QQ5i" role="lGtFl">
-        <property role="NWlVz" value="Returns the synthethised test vectors." />
-      </node>
       <node concept="37vLTG" id="71B0VArQW8D" role="3clF46">
         <property role="TrG5h" value="repo" />
         <node concept="3uibUv" id="71B0VArQWg1" role="1tU5fm">
@@ -709,6 +726,13 @@
         <property role="TrG5h" value="entry" />
         <node concept="3Tqbb2" id="73BQep1QTrB" role="1tU5fm">
           <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIK8lX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8lV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8lW" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the synthethised test vectors." />
+          </node>
         </node>
       </node>
     </node>
@@ -841,8 +865,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="73BQep1R5FB" role="lGtFl">
-        <property role="NWlVz" value="Returns the function used as entry point for testsgen." />
+      <node concept="P$JXv" id="70cGcTIK8m0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8lY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8lZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the function used as entry point for testsgen." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="73BQep1UGf8" role="jymVt" />
@@ -1024,9 +1052,6 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="73BQep1UGHJ" role="lGtFl">
-        <property role="NWlVz" value="Returns the synthethised test vectors." />
-      </node>
       <node concept="37vLTG" id="71B0VArR2im" role="3clF46">
         <property role="TrG5h" value="repo" />
         <node concept="3uibUv" id="71B0VArR2ZG" role="1tU5fm">
@@ -1039,8 +1064,22 @@
           <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
         </node>
       </node>
+      <node concept="P$JXv" id="70cGcTIK8m3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK8m1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK8m2" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the synthethised test vectors." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3aDyPAY71W6" role="jymVt" />
+    <node concept="3UR2Jj" id="70cGcTIK8lL" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK8lJ" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK8lK" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for tests generation." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

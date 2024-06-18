@@ -4,11 +4,12 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -273,8 +274,16 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+      <concept id="3693790620639876318" name="com.mbeddr.mpsutil.blutil.structure.BLDoc" flags="ng" index="2aEySx">
+        <child id="3693790620639876319" name="text" index="2aEySw" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -282,6 +291,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -493,8 +516,12 @@
         </node>
       </node>
       <node concept="17QB3L" id="5hXEsQidsBo" role="2RkE6I" />
-      <node concept="NWlO9" id="5hXEsQidsDL" role="lGtFl">
-        <property role="NWlVz" value="Filename where the result lies." />
+      <node concept="2aEySx" id="70cGcTIKjNR" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjNS" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjNT" role="19SJt6">
+            <property role="19SUeA" value="Filename where the result lies." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lZZfFP8Ttd" role="jymVt" />
@@ -508,8 +535,12 @@
         </node>
       </node>
       <node concept="10Oyi0" id="5hXEsQidt2Z" role="2RkE6I" />
-      <node concept="NWlO9" id="5hXEsQidsFU" role="lGtFl">
-        <property role="NWlVz" value="Line number where the result lies." />
+      <node concept="2aEySx" id="70cGcTIKjNU" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjNV" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjNW" role="19SJt6">
+            <property role="19SUeA" value="Line number where the result lies." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lZZfFP8SjT" role="jymVt" />
@@ -523,8 +554,12 @@
         </node>
       </node>
       <node concept="17QB3L" id="6lZZfFP92AN" role="2RkE6I" />
-      <node concept="NWlO9" id="6lZZfFP8Oxv" role="lGtFl">
-        <property role="NWlVz" value="Property for which this result stays." />
+      <node concept="2aEySx" id="70cGcTIKjNX" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjNY" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjNZ" role="19SJt6">
+            <property role="19SUeA" value="Property for which this result stays." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5hXEsQidr_R" role="jymVt" />
@@ -1263,8 +1298,12 @@
       <node concept="3cmrfG" id="4vY$tOPRevn" role="33vP2m">
         <property role="3cmrfH" value="-1" />
       </node>
-      <node concept="NWlO9" id="4vY$tOPRh8z" role="lGtFl">
-        <property role="NWlVz" value="Constant for no information about line of the current step." />
+      <node concept="z59LJ" id="70cGcTIKjO2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjO0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjO1" role="1dT_Ay">
+            <property role="1dT_AB" value="Constant for no information about line of the current step." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4yi9mPsfu$Q" role="jymVt" />
@@ -2202,8 +2241,12 @@
       <node concept="3uibUv" id="WwTuEsv041" role="3clF45">
         <ref role="3uigEE" node="6iM0fX1N0qr" resolve="CBMCRawResult" />
       </node>
-      <node concept="NWlO9" id="3_HSwtcHsRE" role="lGtFl">
-        <property role="NWlVz" value="Builds the raw result." />
+      <node concept="P$JXv" id="70cGcTIKjO5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjO3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjO4" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the raw result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5WN2hYTStTC" role="jymVt" />
@@ -2288,10 +2331,14 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3RFEChb1yu9" role="3clF45" />
-      <node concept="NWlO9" id="6izRX52KgiF" role="lGtFl">
-        <property role="NWlVz" value="Joins and escapes output lines; test true if CBMC 4.9 is used." />
-      </node>
       <node concept="3Tmbuc" id="5lmv0usI8ge" role="1B3o_S" />
+      <node concept="P$JXv" id="70cGcTIKjO8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjO6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjO7" role="1dT_Ay">
+            <property role="1dT_AB" value="Joins and escapes output lines; test true if CBMC 4.9 is used." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="6izRX52K6oQ" role="jymVt" />
     <node concept="2YIFZL" id="7lqcRYfXkVE" role="jymVt">
@@ -2320,10 +2367,14 @@
         <node concept="17QB3L" id="7lqcRYfXd$O" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="7lqcRYfXaR9" role="3clF45" />
-      <node concept="NWlO9" id="7lqcRYfXnHj" role="lGtFl">
-        <property role="NWlVz" value="Utility to format error explanations." />
-      </node>
       <node concept="3Tmbuc" id="5lmv0usIpc$" role="1B3o_S" />
+      <node concept="P$JXv" id="70cGcTIKjOb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjO9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjOa" role="1dT_Ay">
+            <property role="1dT_AB" value="Utility to format error explanations." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="191E9vaceYA" role="jymVt" />
     <node concept="Wx3nA" id="191E9vacinT" role="jymVt">
@@ -2334,10 +2385,14 @@
       <node concept="3uibUv" id="191E9vacind" role="1tU5fm">
         <ref role="3uigEE" to="vpqd:~SAXParser" resolve="SAXParser" />
       </node>
-      <node concept="NWlO9" id="560HybK_zY3" role="lGtFl">
-        <property role="NWlVz" value="The SAX parser which will parse the lifted results." />
-      </node>
       <node concept="3Tmbuc" id="5lmv0usIjeO" role="1B3o_S" />
+      <node concept="z59LJ" id="70cGcTIKjOe" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjOc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjOd" role="1dT_Ay">
+            <property role="1dT_AB" value="The SAX parser which will parse the lifted results." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="191E9vaciPx" role="jymVt" />
     <node concept="1Pe0a1" id="191E9vackOo" role="jymVt">
@@ -2387,8 +2442,12 @@
         </node>
       </node>
     </node>
-    <node concept="NWlO9" id="3_HSwtcH$N6" role="lGtFl">
-      <property role="NWlVz" value="Parses the XML and builds an object model representing an analysis result at CBMC level.." />
+    <node concept="3UR2Jj" id="70cGcTIKjOh" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjOf" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjOg" role="1dT_Ay">
+          <property role="1dT_AB" value="Parses the XML and builds an object model representing an analysis result at CBMC level.." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3ccRFHLc8YE">
@@ -3447,11 +3506,15 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="NWlO9" id="7iLQIU2w3FG" role="lGtFl">
-      <property role="NWlVz" value="An object representing a raw counterexample state of CBMC." />
-    </node>
     <node concept="3uibUv" id="1$MI$rgHFFA" role="1zkMxy">
       <ref role="3uigEE" node="1$MI$rgHyud" resolve="CBMCRawObjectBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKjOk" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjOi" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjOj" role="1dT_Ay">
+          <property role="1dT_AB" value="An object representing a raw counterexample state of CBMC." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="Qs71p" id="WwTuEsv4v1">
@@ -3625,71 +3688,104 @@
   </node>
   <node concept="Qs71p" id="6oOIJNsBVXe">
     <property role="TrG5h" value="RAW_RESULT_KIND" />
-    <node concept="NWlO9" id="6izRX52JLW3" role="lGtFl">
-      <property role="NWlVz" value="Enumeration for the kinds of results that CBMC tool runner can give." />
-    </node>
     <node concept="2tJIrI" id="6izRX52JLN9" role="jymVt" />
     <node concept="QsSxf" id="6oOIJNsBXl4" role="Qtgdg">
       <property role="TrG5h" value="PROPERTY_HOLDS" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLVz" role="lGtFl">
-        <property role="NWlVz" value="Property holds." />
+      <node concept="2aEySx" id="70cGcTIKjOo" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOp" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOq" role="19SJt6">
+            <property role="19SUeA" value="Property holds." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="6oOIJNsBVXJ" role="Qtgdg">
       <property role="TrG5h" value="PROPERTY_FAILS" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLVi" role="lGtFl">
-        <property role="NWlVz" value="Property fails" />
+      <node concept="2aEySx" id="70cGcTIKjOr" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOs" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOt" role="19SJt6">
+            <property role="19SUeA" value="Property fails" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="6oOIJNsBXkZ" role="Qtgdg">
       <property role="TrG5h" value="RUNTIME_ERROR" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLV1" role="lGtFl">
-        <property role="NWlVz" value="Runtime error when calling cbmc." />
+      <node concept="2aEySx" id="70cGcTIKjOu" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOv" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOw" role="19SJt6">
+            <property role="19SUeA" value="Runtime error when calling cbmc." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="5pfYjqBbyPA" role="Qtgdg">
       <property role="TrG5h" value="UNKNOWN" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="5pfYjqBbySl" role="lGtFl">
-        <property role="NWlVz" value="Unknown status result." />
+      <node concept="2aEySx" id="70cGcTIKjOx" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOy" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOz" role="19SJt6">
+            <property role="19SUeA" value="Unknown status result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="7N0A15XmyUV" role="Qtgdg">
       <property role="TrG5h" value="TIMEOUT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLUK" role="lGtFl">
-        <property role="NWlVz" value="The cbmc run resulted in a timeout." />
+      <node concept="2aEySx" id="70cGcTIKjO$" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjO_" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOA" role="19SJt6">
+            <property role="19SUeA" value="The cbmc run resulted in a timeout." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="1d23YaEy6Q6" role="Qtgdg">
       <property role="TrG5h" value="CANCELED" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLUv" role="lGtFl">
-        <property role="NWlVz" value="The cbmc run was canceled." />
+      <node concept="2aEySx" id="70cGcTIKjOB" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOC" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOD" role="19SJt6">
+            <property role="19SUeA" value="The cbmc run was canceled." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="mb65_hnQmG" role="Qtgdg">
       <property role="TrG5h" value="SHOW_PROPERTIES" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLMq" role="lGtFl">
-        <property role="NWlVz" value="Result of running cbmc with --show-properties argument" />
+      <node concept="2aEySx" id="70cGcTIKjOE" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOF" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOG" role="19SJt6">
+            <property role="19SUeA" value="Result of running cbmc with --show-properties argument" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="1$MI$rgHaqa" role="Qtgdg">
       <property role="TrG5h" value="SHOW_LOOPS" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="1$MI$rgHaqb" role="lGtFl">
-        <property role="NWlVz" value="Result of running cbmc with --show-loops argument" />
+      <node concept="2aEySx" id="70cGcTIKjOH" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOI" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOJ" role="19SJt6">
+            <property role="19SUeA" value="Result of running cbmc with --show-loops argument" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="QsSxf" id="6qzwnPipIsl" role="Qtgdg">
       <property role="TrG5h" value="LAZY_RESULT" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      <node concept="NWlO9" id="6izRX52JLMS" role="lGtFl">
-        <property role="NWlVz" value="Result which acts only as a stub (e.g. in the case of remotely run analyses)" />
+      <node concept="2aEySx" id="70cGcTIKjOK" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjOL" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjOM" role="19SJt6">
+            <property role="19SUeA" value="Result which acts only as a stub (e.g. in the case of remotely run analyses)" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6oOIJNsBVXw" role="1B3o_S" />
@@ -3741,6 +3837,13 @@
       </node>
       <node concept="3Tm1VV" id="5bSnXVJUY$j" role="1B3o_S" />
       <node concept="17QB3L" id="5bSnXVJUYB$" role="3clF45" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKjOn" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjOl" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjOm" role="1dT_Ay">
+          <property role="1dT_AB" value="Enumeration for the kinds of results that CBMC tool runner can give." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="mb65_hnqw$">
@@ -4124,8 +4227,12 @@
       <node concept="3clFbT" id="6lZZfFOZvwV" role="33vP2m">
         <property role="3clFbU" value="false" />
       </node>
-      <node concept="NWlO9" id="6lZZfFP09cu" role="lGtFl">
-        <property role="NWlVz" value="Fault localization information." />
+      <node concept="z59LJ" id="70cGcTIKjOP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjON" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjOO" role="1dT_Ay">
+            <property role="1dT_AB" value="Fault localization information." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="312cEg" id="6lZZfFP09Kn" role="jymVt">
@@ -4214,8 +4321,12 @@
         <property role="TrG5h" value="end" />
         <node concept="10Oyi0" id="WwTuEsv15r" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3_HSwtcHu9U" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjOS" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjOQ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjOR" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4yi9mPscuiD" role="jymVt" />
@@ -4338,8 +4449,12 @@
         <property role="TrG5h" value="lineNumberAsString" />
         <node concept="17QB3L" id="5WN2hYTSOWO" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3_HSwtcHdT7" role="lGtFl">
-        <property role="NWlVz" value="Returns the integer representing the line number. This method is a convenience that treats NumberFormatEx." />
+      <node concept="P$JXv" id="70cGcTIKjOV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjOT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjOU" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the integer representing the line number. This method is a convenience that treats NumberFormatEx." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lZZfFP0ej7" role="jymVt" />
@@ -4527,8 +4642,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4yi9mPskzkS" role="1B3o_S" />
-      <node concept="NWlO9" id="1$MI$rgH8kl" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="70cGcTIKjOY" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjOW" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjOX" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4yi9mPskzkV" role="jymVt" />
@@ -6314,8 +6433,12 @@
           <ref role="3uigEE" to="kart:~Attributes" resolve="Attributes" />
         </node>
       </node>
-      <node concept="NWlO9" id="4yi9mPskzpD" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjP1" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjOZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjP0" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4yi9mPskzpE" role="jymVt" />
@@ -6881,8 +7004,12 @@
         <property role="TrG5h" value="qName" />
         <node concept="17QB3L" id="4yi9mPskztu" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="4yi9mPskztv" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjP4" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjP2" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjP3" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6VCbeAJjgDM" role="jymVt" />
@@ -7653,8 +7780,12 @@
     <node concept="3uibUv" id="4yi9mPskztx" role="1zkMxy">
       <ref role="3uigEE" node="4yi9mPsdwG1" resolve="XmlHandlerBase" />
     </node>
-    <node concept="NWlO9" id="4yi9mPskzty" role="lGtFl">
-      <property role="NWlVz" value="Handler for the XML output of &quot;new CBMC&quot; (v. 5.0)." />
+    <node concept="3UR2Jj" id="70cGcTIKjP7" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjP5" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjP6" role="1dT_Ay">
+          <property role="1dT_AB" value="Handler for the XML output of &quot;new CBMC&quot; (v. 5.0)." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1$MI$rgH1u0">
@@ -7670,8 +7801,12 @@
           <node concept="3Tm1VV" id="1$MI$rgH1u8" role="3xqFEP" />
         </node>
       </node>
-      <node concept="NWlO9" id="1$MI$rgHelV" role="lGtFl">
-        <property role="NWlVz" value="The ID of the loop." />
+      <node concept="2aEySx" id="70cGcTIKjP8" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjP9" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjPa" role="19SJt6">
+            <property role="19SUeA" value="The ID of the loop." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1$MI$rgH1uN" role="jymVt" />
@@ -7798,25 +7933,30 @@
       <node concept="2AHcQZ" id="1$MI$rgH1vY" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="1$MI$rgHfx1" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjPd" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPb" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPc" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="1$MI$rgH1vZ" role="1B3o_S" />
-    <node concept="NWlO9" id="1$MI$rgHegF" role="lGtFl">
-      <property role="NWlVz" value="The information about a loop when running &quot;cbmc --show-loops&quot;." />
-    </node>
     <node concept="3uibUv" id="1$MI$rgHy_F" role="1zkMxy">
       <ref role="3uigEE" node="1$MI$rgHyud" resolve="CBMCRawObjectBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKjPg" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjPe" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjPf" role="1dT_Ay">
+          <property role="1dT_AB" value="The information about a loop when running &quot;cbmc --show-loops&quot;." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1$MI$rgHyud">
     <property role="TrG5h" value="CBMCRawObjectBase" />
     <node concept="2tJIrI" id="1$MI$rgHyv0" role="jymVt" />
     <node concept="3Tm1VV" id="1$MI$rgHyue" role="1B3o_S" />
-    <node concept="NWlO9" id="1$MI$rgHyuS" role="lGtFl">
-      <property role="NWlVz" value="Base class for counterexample states, claims or loops." />
-    </node>
     <node concept="2RhdJD" id="1$MI$rgH1uG" role="jymVt">
       <property role="2RkwnN" value="function" />
       <node concept="3Tm1VV" id="1$MI$rgH1uH" role="1B3o_S" />
@@ -7827,8 +7967,12 @@
           <node concept="3Tm1VV" id="1$MI$rgH1uM" role="3xqFEP" />
         </node>
       </node>
-      <node concept="NWlO9" id="1$MI$rgHfcA" role="lGtFl">
-        <property role="NWlVz" value="The function containing this object." />
+      <node concept="2aEySx" id="70cGcTIKjPk" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjPl" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjPm" role="19SJt6">
+            <property role="19SUeA" value="The function containing this object." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1$MI$rgHyLQ" role="jymVt" />
@@ -7842,8 +7986,12 @@
           <node concept="3Tm1VV" id="1$MI$rgH1um" role="3xqFEP" />
         </node>
       </node>
-      <node concept="NWlO9" id="1$MI$rgHeR9" role="lGtFl">
-        <property role="NWlVz" value="The line in the file where the object is located." />
+      <node concept="2aEySx" id="70cGcTIKjPn" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjPo" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjPp" role="19SJt6">
+            <property role="19SUeA" value="The line in the file where the object is located." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1$MI$rgHf0W" role="jymVt" />
@@ -7857,8 +8005,19 @@
           <node concept="3Tm1VV" id="1$MI$rgH1uf" role="3xqFEP" />
         </node>
       </node>
-      <node concept="NWlO9" id="1$MI$rgHezU" role="lGtFl">
-        <property role="NWlVz" value="The file where the object is contained." />
+      <node concept="2aEySx" id="70cGcTIKjPq" role="lGtFl">
+        <node concept="19SGf9" id="70cGcTIKjPr" role="2aEySw">
+          <node concept="19SUe$" id="70cGcTIKjPs" role="19SJt6">
+            <property role="19SUeA" value="The file where the object is contained." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKjPj" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjPh" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjPi" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for counterexample states, claims or loops." />
+        </node>
       </node>
     </node>
   </node>
@@ -8308,11 +8467,15 @@
       <node concept="17QB3L" id="6WMdQJQpYf7" role="2RkE6I" />
     </node>
     <node concept="3Tm1VV" id="6WMdQJQpXMf" role="1B3o_S" />
-    <node concept="NWlO9" id="6WMdQJQpXPc" role="lGtFl">
-      <property role="NWlVz" value="A message printed by CBMC." />
-    </node>
     <node concept="3uibUv" id="6WMdQJQq8IM" role="1zkMxy">
       <ref role="3uigEE" node="1$MI$rgHyud" resolve="CBMCRawObjectBase" />
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIKjPv" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjPt" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjPu" role="1dT_Ay">
+          <property role="1dT_AB" value="A message printed by CBMC." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

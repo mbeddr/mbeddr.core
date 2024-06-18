@@ -70,7 +70,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4E$PniRKKJX">
-    <ref role="13h7C2" to="f87k:4E$PniRKKrW" resolve="VariableDef" />
+    <ref role="13h7C2" to="f87k:4E$PniRKKrW" resolve="VariableDefinition" />
     <node concept="13hLZK" id="4E$PniRKKJY" role="13h7CW">
       <node concept="3clFbS" id="4E$PniRKKJZ" role="2VODD2">
         <node concept="3clFbF" id="4E$PniRKKK0" role="3cqZAp">
@@ -96,7 +96,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4E$PniRKPtY">
-    <ref role="13h7C2" to="f87k:4E$PniRKKXH" resolve="VarRef" />
+    <ref role="13h7C2" to="f87k:4E$PniRKKXH" resolve="VariableReference" />
     <node concept="13i0hz" id="4E$PniRKPu1" role="13h7CS">
       <property role="TrG5h" value="renderReadable" />
       <ref role="13i0hy" to="ywuz:1VQvajLb13M" resolve="renderReadable" />

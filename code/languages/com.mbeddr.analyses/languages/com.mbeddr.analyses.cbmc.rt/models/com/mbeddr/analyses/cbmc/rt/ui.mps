@@ -4,10 +4,11 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="eqhl" ref="r:147b294d-1dd0-41c5-9d44-67586fcda349(com.mbeddr.analyses.cbmc.rt.counterexample.lifted.model)" />
@@ -293,9 +294,6 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -305,6 +303,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -886,8 +898,12 @@
       <node concept="2AHcQZ" id="1EZfgaQo16g" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="1EZfgaQo20$" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjUP" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUN" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUO" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1GgrF83gmaz" role="jymVt" />
@@ -1454,8 +1470,12 @@
       <node concept="3uibUv" id="JsaLOcoxMc" role="1tU5fm">
         <ref role="3uigEE" node="31nZcrlJSwS" resolve="CounterexampleTableModel" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHb8gS" role="lGtFl">
-        <property role="NWlVz" value="Table model for the counterexample." />
+      <node concept="z59LJ" id="70cGcTIKjUS" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUQ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUR" role="1dT_Ay">
+            <property role="1dT_AB" value="Table model for the counterexample." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZHcFHJ" role="jymVt" />
@@ -1877,8 +1897,12 @@
       <node concept="2AHcQZ" id="2k2dPZH6kvp" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="2k2dPZH6nTp" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjUV" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUT" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUU" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH6swo" role="jymVt" />
@@ -2314,11 +2338,15 @@
       <node concept="3uibUv" id="2k2dPZH6$tI" role="Sfmx6">
         <ref role="3uigEE" to="z60i:~HeadlessException" resolve="HeadlessException" />
       </node>
-      <node concept="NWlO9" id="2k2dPZH6JhS" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="2k2dPZHd9xi" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjUY" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUW" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjUX" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2k2dPZH4yjh" role="jymVt" />
@@ -2924,11 +2952,15 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2k2dPZH4_DN" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="2AHcQZ" id="2k2dPZH8xSh" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjV1" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjUZ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjV0" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5PkarIFUHcb" role="jymVt" />
@@ -3291,8 +3323,12 @@
       <node concept="2AHcQZ" id="2k2dPZH9FUb" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="2k2dPZH9Iak" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjV4" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjV2" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjV3" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1H8VqTw5G5M" role="jymVt" />
@@ -3632,8 +3668,12 @@
       <node concept="2AHcQZ" id="2k2dPZHaHHh" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHaJO8" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjV7" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjV5" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjV6" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="12GRGX_ddSm" role="jymVt" />
@@ -3745,8 +3785,12 @@
       <node concept="2AHcQZ" id="2k2dPZHcgIi" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="2k2dPZHcpV1" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjVa" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjV8" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjV9" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lZZfFPeqh7" role="jymVt" />
@@ -6676,8 +6720,12 @@
         <property role="TrG5h" value="partialLoops" />
         <node concept="10P_77" id="R2cMzhyxqR" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="R2cMzhyHQC" role="lGtFl">
-        <property role="NWlVz" value="Checks the consistency for CBMC." />
+      <node concept="P$JXv" id="70cGcTIKjVd" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVb" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVc" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks the consistency for CBMC." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7xDyb4PkmxX" role="jymVt" />
@@ -6696,10 +6744,14 @@
       <property role="TrG5h" value="projectionActive" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="2nqAz1imING" role="1B3o_S" />
-      <node concept="NWlO9" id="2nqAz1imIch" role="lGtFl">
-        <property role="NWlVz" value="Is counterexample projection mode active?" />
-      </node>
       <node concept="10P_77" id="2nqAz1imIrP" role="1tU5fm" />
+      <node concept="z59LJ" id="70cGcTIKjVg" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVe" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVf" role="1dT_Ay">
+            <property role="1dT_AB" value="Is counterexample projection mode active?" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2nqAz1imI99" role="jymVt" />
     <node concept="Wx3nA" id="7kzfSag_KAT" role="jymVt">
@@ -6708,11 +6760,15 @@
       <property role="TrG5h" value="currentRes" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="7kzfSagMj$y" role="1B3o_S" />
-      <node concept="NWlO9" id="7kzfSagMj5t" role="lGtFl">
-        <property role="NWlVz" value="Current selected result" />
-      </node>
       <node concept="3uibUv" id="7kzfSagMjkg" role="1tU5fm">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
+      </node>
+      <node concept="z59LJ" id="70cGcTIKjVj" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVh" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVi" role="1dT_Ay">
+            <property role="1dT_AB" value="Current selected result" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7kzfSag_P54" role="jymVt" />
@@ -6741,8 +6797,12 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="7kzfSagMkcg" role="lGtFl">
-        <property role="NWlVz" value="Sets the current result." />
+      <node concept="P$JXv" id="70cGcTIKjVm" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVk" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVl" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the current result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7kzfSagMk4e" role="jymVt" />
@@ -6762,8 +6822,12 @@
       <node concept="3uibUv" id="WDEcAzFcrX" role="3clF45">
         <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
       </node>
-      <node concept="NWlO9" id="WDEcAzF2ZC" role="lGtFl">
-        <property role="NWlVz" value="Gets the current result." />
+      <node concept="P$JXv" id="70cGcTIKjVp" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVn" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVo" role="1dT_Ay">
+            <property role="1dT_AB" value="Gets the current result." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="WDEcAzF2jK" role="jymVt" />
@@ -6891,13 +6955,21 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="7kzfSag_P65" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7kzfSagMmKE" role="lGtFl">
-        <property role="NWlVz" value="Does this node have relevant information for the CEX trace?" />
+      <node concept="P$JXv" id="70cGcTIKjVs" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVq" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVr" role="1dT_Ay">
+            <property role="1dT_AB" value="Does this node have relevant information for the CEX trace?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7kzfSag_qzE" role="1B3o_S" />
-    <node concept="NWlO9" id="7kzfSagMj0x" role="lGtFl">
-      <property role="NWlVz" value="Keeps the analysis result that is currently selected." />
+    <node concept="3UR2Jj" id="70cGcTIKjVv" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjVt" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjVu" role="1dT_Ay">
+          <property role="1dT_AB" value="Keeps the analysis result that is currently selected." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3FEqw8GYAfT">
@@ -7041,13 +7113,21 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="3FEqw8GYAnV" role="lGtFl">
-        <property role="NWlVz" value="Returns a string representing a helpful error message or null if the result is SUCCESS." />
+      <node concept="P$JXv" id="70cGcTIKjVy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVx" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a string representing a helpful error message or null if the result is SUCCESS." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3FEqw8GYAfU" role="1B3o_S" />
-    <node concept="NWlO9" id="3FEqw8GYAk8" role="lGtFl">
-      <property role="NWlVz" value="Utility class for meaningful error messages." />
+    <node concept="3UR2Jj" id="70cGcTIKjV_" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjVz" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjV$" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility class for meaningful error messages." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6izRX53pUdc">
@@ -7063,8 +7143,12 @@
       <node concept="3uibUv" id="6izRX53q3SM" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
-      <node concept="NWlO9" id="3Ymokd9HQBw" role="lGtFl">
-        <property role="NWlVz" value="Text area containing the raw output." />
+      <node concept="z59LJ" id="70cGcTIKjVC" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVA" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVB" role="1dT_Ay">
+            <property role="1dT_AB" value="Text area containing the raw output." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6izRX53pUZ6" role="jymVt" />
@@ -7077,8 +7161,12 @@
       <node concept="3uibUv" id="z7U7OJhGAy" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
-      <node concept="NWlO9" id="M7_V6u5yUc" role="lGtFl">
-        <property role="NWlVz" value="Text area containing the raw counterexample." />
+      <node concept="z59LJ" id="70cGcTIKjVF" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVD" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVE" role="1dT_Ay">
+            <property role="1dT_AB" value="Text area containing the raw counterexample." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u5ysg" role="jymVt" />
@@ -7091,8 +7179,12 @@
       <node concept="3uibUv" id="4$9c1ZyAb8X" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
-      <node concept="NWlO9" id="4$9c1ZyA7DT" role="lGtFl">
-        <property role="NWlVz" value="Text area containing the ran command." />
+      <node concept="z59LJ" id="70cGcTIKjVI" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVG" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVH" role="1dT_Ay">
+            <property role="1dT_AB" value="Text area containing the ran command." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4$9c1ZyA5FH" role="jymVt" />
@@ -7105,8 +7197,12 @@
       <node concept="3uibUv" id="1agNx8KNPSI" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
-      <node concept="NWlO9" id="h7gcTUiwsa" role="lGtFl">
-        <property role="NWlVz" value="Text area containing the lifted counterexample." />
+      <node concept="z59LJ" id="70cGcTIKjVL" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVJ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVK" role="1dT_Ay">
+            <property role="1dT_AB" value="Text area containing the lifted counterexample." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="h7gcTUivhs" role="jymVt" />
@@ -7119,8 +7215,12 @@
       <node concept="3uibUv" id="1agNx8KNUJq" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
-      <node concept="NWlO9" id="5C7jL_4BZft" role="lGtFl">
-        <property role="NWlVz" value="Text area containing the filtered lifted counterexample." />
+      <node concept="z59LJ" id="70cGcTIKjVO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVN" role="1dT_Ay">
+            <property role="1dT_AB" value="Text area containing the filtered lifted counterexample." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4asBXw$yCWx" role="jymVt" />
@@ -7133,8 +7233,12 @@
       <node concept="3uibUv" id="4c9lfPlHpCa" role="1tU5fm">
         <ref role="3uigEE" node="4c9lfPlD_kp" resolve="RawCounterexamplePanel" />
       </node>
-      <node concept="NWlO9" id="4asBXw$yDZu" role="lGtFl">
-        <property role="NWlVz" value="Table containing RAW analysis results " />
+      <node concept="z59LJ" id="70cGcTIKjVR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Table containing RAW analysis results " />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1agNx8KMYBl" role="jymVt" />
@@ -7147,8 +7251,12 @@
       <node concept="3uibUv" id="6WMdQJQqHhO" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTable" resolve="JTable" />
       </node>
-      <node concept="NWlO9" id="6WMdQJQqIqi" role="lGtFl">
-        <property role="NWlVz" value="Table containing the messages given by CBMC." />
+      <node concept="z59LJ" id="70cGcTIKjVU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVS" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVT" role="1dT_Ay">
+            <property role="1dT_AB" value="Table containing the messages given by CBMC." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6WMdQJQqQoq" role="jymVt" />
@@ -7595,13 +7703,17 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6izRX53yf5q" role="1B3o_S" />
-      <node concept="NWlO9" id="3Ymokd9HQkG" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
-      </node>
       <node concept="37vLTG" id="4c9lfPlRL3M" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="4c9lfPlRL3L" role="1tU5fm">
           <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjVX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVW" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
         </node>
       </node>
     </node>
@@ -7786,8 +7898,12 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="3Ymokd9HPTu" role="lGtFl">
-        <property role="NWlVz" value="Presents the new raw-output." />
+      <node concept="P$JXv" id="70cGcTIKjW0" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjVY" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjVZ" role="1dT_Ay">
+            <property role="1dT_AB" value="Presents the new raw-output." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6WMdQJQuOfN" role="jymVt" />
@@ -7998,8 +8114,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="5C7jL_4BFe6" role="lGtFl">
-        <property role="NWlVz" value="Presents the new raw-output." />
+      <node concept="P$JXv" id="70cGcTIKjW3" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjW1" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjW2" role="1dT_Ay">
+            <property role="1dT_AB" value="Presents the new raw-output." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="M7_V6u7Sb$" role="jymVt" />
@@ -8823,16 +8943,24 @@
       <node concept="2AHcQZ" id="3DDJouLGXf$" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="3DDJouLH3al" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIKjW6" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjW4" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjW5" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6izRX53pUdd" role="1B3o_S" />
     <node concept="3uibUv" id="3DDJouLEDeS" role="1zkMxy">
       <ref role="3uigEE" to="vbi4:3DDJouLExSa" resolve="AnalysesRawResultsUIBase" />
     </node>
-    <node concept="NWlO9" id="3Ymokd9HQTr" role="lGtFl">
-      <property role="NWlVz" value="UI for presenting the raw output." />
+    <node concept="3UR2Jj" id="70cGcTIKjW9" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjW7" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjW8" role="1dT_Ay">
+          <property role="1dT_AB" value="UI for presenting the raw output." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3OhBgB4hwNb">
@@ -10082,9 +10210,6 @@
   <node concept="312cEu" id="4c9lfPllQzn">
     <property role="TrG5h" value="RawTableModel" />
     <property role="3GE5qa" value="raw_result" />
-    <node concept="NWlO9" id="1kBaeCW$hc0" role="lGtFl">
-      <property role="NWlVz" value="model used by the RawCounterExampleTable" />
-    </node>
     <node concept="2tJIrI" id="4c9lfPlro0C" role="jymVt" />
     <node concept="312cEg" id="4c9lfPlrr$r" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -10514,8 +10639,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2k2dPZHbDjb" role="lGtFl">
-        <property role="NWlVz" value="Sets the whitness entries." />
+      <node concept="P$JXv" id="70cGcTIKjWf" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWd" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWe" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the whitness entries." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1XPQUZrhrVD" role="jymVt" />
@@ -12136,6 +12265,13 @@
     <node concept="3uibUv" id="4c9lfPlEx9q" role="1zkMxy">
       <ref role="3uigEE" to="c8ee:~DefaultTableModel" resolve="DefaultTableModel" />
     </node>
+    <node concept="3UR2Jj" id="70cGcTIKjWc" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjWa" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjWb" role="1dT_Ay">
+          <property role="1dT_AB" value="model used by the RawCounterExampleTable" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="4c9lfPlD_kp">
     <property role="TrG5h" value="RawCounterexamplePanel" />
@@ -12150,9 +12286,6 @@
       <node concept="3uibUv" id="4c9lfPlFkVN" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Font" resolve="Font" />
       </node>
-      <node concept="NWlO9" id="4c9lfPlFkVT" role="lGtFl">
-        <property role="NWlVz" value="Font used in different texts." />
-      </node>
       <node concept="2OqwBi" id="5FbNLoBKcm5" role="33vP2m">
         <node concept="2YIFZM" id="5FbNLoBKaHr" role="2Oq$k0">
           <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
@@ -12160,6 +12293,13 @@
         </node>
         <node concept="liA8E" id="5FbNLoBKjWe" role="2OqNvi">
           <ref role="37wK5l" to="exr9:~EditorSettings.getDefaultEditorFont()" resolve="getDefaultEditorFont" />
+        </node>
+      </node>
+      <node concept="z59LJ" id="70cGcTIKjWi" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWg" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWh" role="1dT_Ay">
+            <property role="1dT_AB" value="Font used in different texts." />
+          </node>
         </node>
       </node>
     </node>
@@ -12636,14 +12776,18 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4c9lfPlE9vk" role="1B3o_S" />
-      <node concept="NWlO9" id="4c9lfPlHcz2" role="lGtFl">
-        <property role="NWlVz" value="Constructor - it sets up the entire panel with the 3 Tables + the search and filter panel " />
-      </node>
       <node concept="37vLTG" id="4c9lfPlRpAU" role="3clF46">
         <property role="TrG5h" value="project" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="4c9lfPlRpAT" role="1tU5fm">
           <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="70cGcTIKjWl" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWj" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWk" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor - it sets up the entire panel with the 3 Tables + the search and filter panel " />
+          </node>
         </node>
       </node>
     </node>
@@ -12654,9 +12798,6 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="NWlO9" id="1kBaeCW$v2j" role="lGtFl">
-        <property role="NWlVz" value="creates the elements of the filtering tool" />
-      </node>
       <node concept="3clFbS" id="3HL7I34lqvM" role="3clF47">
         <node concept="3clFbF" id="3HL7I34lseE" role="3cqZAp">
           <node concept="37vLTI" id="3HL7I34lseF" role="3clFbG">
@@ -12813,6 +12954,13 @@
       </node>
       <node concept="3Tm1VV" id="3HL7I34loJa" role="1B3o_S" />
       <node concept="3cqZAl" id="3HL7I34lqsJ" role="3clF45" />
+      <node concept="P$JXv" id="70cGcTIKjWo" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWm" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWn" role="1dT_Ay">
+            <property role="1dT_AB" value="creates the elements of the filtering tool" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3HL7I34lgNo" role="jymVt" />
     <node concept="3clFb_" id="4c9lfPlES1G" role="jymVt">
@@ -12895,8 +13043,12 @@
           <ref role="3uigEE" to="rbq9:6iM0fX1N0qr" resolve="CBMCRawResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="4c9lfPlHbeY" role="lGtFl">
-        <property role="NWlVz" value="Sets the lines of the table with the given result" />
+      <node concept="P$JXv" id="70cGcTIKjWr" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWp" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWq" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the lines of the table with the given result" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4c9lfPlF9AM" role="jymVt" />
@@ -13360,8 +13512,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="4c9lfPlFav$" role="lGtFl">
-        <property role="NWlVz" value="Creates the search panel." />
+      <node concept="P$JXv" id="70cGcTIKjWu" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWs" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWt" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates the search panel." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4c9lfPlH0W8" role="jymVt" />
@@ -13799,8 +13955,12 @@
       <node concept="3uibUv" id="4c9lfPlGhao" role="3clF45">
         <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
       </node>
-      <node concept="NWlO9" id="4c9lfPlH8gm" role="lGtFl">
-        <property role="NWlVz" value="Creates search options widgets" />
+      <node concept="P$JXv" id="70cGcTIKjWx" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWv" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWw" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates search options widgets" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcKZmh" role="jymVt" />
@@ -14011,8 +14171,12 @@
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$ygZ" role="lGtFl">
-        <property role="NWlVz" value="Adapter used for notifying the StackTracerTable and the VariablesTracerTable of the selected state" />
+      <node concept="3UR2Jj" id="70cGcTIKjW$" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWy" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWz" role="1dT_Ay">
+            <property role="1dT_AB" value="Adapter used for notifying the StackTracerTable and the VariablesTracerTable of the selected state" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4c9lfPlD_kq" role="1B3o_S" />
@@ -15236,13 +15400,21 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4LQJkpcHcga" role="1B3o_S" />
-      <node concept="NWlO9" id="1kBaeCWzVzR" role="lGtFl">
-        <property role="NWlVz" value="Recursive method for building a TreeNode out fo the ValueExpression" />
+      <node concept="P$JXv" id="70cGcTIKjWB" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjW_" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWA" role="1dT_Ay">
+            <property role="1dT_AB" value="Recursive method for building a TreeNode out fo the ValueExpression" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="1kBaeCWzQ$E" role="1B3o_S" />
-    <node concept="NWlO9" id="1kBaeCWzTz6" role="lGtFl">
-      <property role="NWlVz" value="Utility for building tree structure of the variables" />
+    <node concept="3UR2Jj" id="70cGcTIKjWE" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjWC" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjWD" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility for building tree structure of the variables" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1XKuUn_2OW8">
@@ -15381,8 +15553,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$ls9" role="lGtFl">
-        <property role="NWlVz" value="Calls the model´s method for computing the stack trace" />
+      <node concept="P$JXv" id="70cGcTIKjWH" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWF" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWG" role="1dT_Ay">
+            <property role="1dT_AB" value="Calls the model´s method for computing the stack trace" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2RvHLeWuzvs" role="jymVt" />
@@ -15424,8 +15600,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$maq" role="lGtFl">
-        <property role="NWlVz" value="Calls the model´s method for setting the list of states of the current result" />
+      <node concept="P$JXv" id="70cGcTIKjWK" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWI" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Calls the model´s method for setting the list of states of the current result" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2RvHLeWtZyQ" role="jymVt" />
@@ -15574,8 +15754,12 @@
             <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
-        <node concept="NWlO9" id="1kBaeCW$kNc" role="lGtFl">
-          <property role="NWlVz" value="computes the stack trace of function calls for a selected state" />
+        <node concept="P$JXv" id="70cGcTIKjWN" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKjWL" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKjWM" role="1dT_Ay">
+              <property role="1dT_AB" value="computes the stack trace of function calls for a selected state" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="2RvHLeWtZID" role="jymVt" />
@@ -15812,8 +15996,12 @@
     <node concept="3uibUv" id="1XKuUn_2P0V" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JTable" resolve="JTable" />
     </node>
-    <node concept="NWlO9" id="1kBaeCW$jZ4" role="lGtFl">
-      <property role="NWlVz" value="Table showing the stack of function calls for a selected state of the RawCounterExampleTable" />
+    <node concept="3UR2Jj" id="70cGcTIKjWQ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjWO" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjWP" role="1dT_Ay">
+          <property role="1dT_AB" value="Table showing the stack of function calls for a selected state of the RawCounterExampleTable" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="4LQJkpcH2cp">
@@ -16167,8 +16355,12 @@
           <ref role="3uigEE" node="4LQJkpcH64t" resolve="VariablesTracerTable.VariablesTracerModel" />
         </node>
       </node>
-      <node concept="NWlO9" id="7bCp4DdQV87" role="lGtFl">
-        <property role="NWlVz" value="Constructor" />
+      <node concept="P$JXv" id="70cGcTIKjWT" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWR" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWS" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcH4v4" role="jymVt" />
@@ -16213,8 +16405,12 @@
           <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$13U" role="lGtFl">
-        <property role="NWlVz" value="computes the values of variables in certain selected state" />
+      <node concept="P$JXv" id="70cGcTIKjWW" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWU" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWV" role="1dT_Ay">
+            <property role="1dT_AB" value="computes the values of variables in certain selected state" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcNSot" role="jymVt" />
@@ -16256,8 +16452,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$870" role="lGtFl">
-        <property role="NWlVz" value="sets the list of states in the model of the current result" />
+      <node concept="P$JXv" id="70cGcTIKjWZ" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjWX" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjWY" role="1dT_Ay">
+            <property role="1dT_AB" value="sets the list of states in the model of the current result" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcMwfm" role="jymVt" />
@@ -16816,8 +17016,12 @@
             <ref role="3uigEE" to="rbq9:3ccRFHLc8YE" resolve="CBMCRawCounterexampleState" />
           </node>
         </node>
-        <node concept="NWlO9" id="1kBaeCW$d12" role="lGtFl">
-          <property role="NWlVz" value="computes the last assignment of variables with a bottom-up approach" />
+        <node concept="P$JXv" id="70cGcTIKjX2" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKjX0" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKjX1" role="1dT_Ay">
+              <property role="1dT_AB" value="computes the last assignment of variables with a bottom-up approach" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="4LQJkpcLws7" role="jymVt" />
@@ -16852,8 +17056,12 @@
             </node>
           </node>
         </node>
-        <node concept="NWlO9" id="1kBaeCW$eJu" role="lGtFl">
-          <property role="NWlVz" value="set the states of current result in the model" />
+        <node concept="P$JXv" id="70cGcTIKjX5" role="lGtFl">
+          <node concept="TZ5HA" id="70cGcTIKjX3" role="TZ5H$">
+            <node concept="1dT_AC" id="70cGcTIKjX4" role="1dT_Ay">
+              <property role="1dT_AB" value="set the states of current result in the model" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2tJIrI" id="4LQJkpcKCF8" role="jymVt" />
@@ -17004,8 +17212,12 @@
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$bpB" role="lGtFl">
-        <property role="NWlVz" value="model used by the table for showing the values of the variables" />
+      <node concept="3UR2Jj" id="70cGcTIKjX8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjX6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjX7" role="1dT_Ay">
+            <property role="1dT_AB" value="model used by the table for showing the values of the variables" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4LQJkpcQKFd" role="jymVt" />
@@ -17073,16 +17285,24 @@
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
-      <node concept="NWlO9" id="1kBaeCW$ggQ" role="lGtFl">
-        <property role="NWlVz" value="class used for rendering the trees in the table" />
+      <node concept="3UR2Jj" id="70cGcTIKjXb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjX9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjXa" role="1dT_Ay">
+            <property role="1dT_AB" value="class used for rendering the trees in the table" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4LQJkpcH2cq" role="1B3o_S" />
     <node concept="3uibUv" id="4LQJkpcH4uS" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JTable" resolve="JTable" />
     </node>
-    <node concept="NWlO9" id="1kBaeCWzXoR" role="lGtFl">
-      <property role="NWlVz" value="class used for showing table of variables values in a certain step" />
+    <node concept="3UR2Jj" id="70cGcTIKjXe" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjXc" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjXd" role="1dT_Ay">
+          <property role="1dT_AB" value="class used for showing table of variables values in a certain step" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

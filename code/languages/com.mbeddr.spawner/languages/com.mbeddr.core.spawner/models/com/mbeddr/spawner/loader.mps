@@ -1738,7 +1738,7 @@
         <node concept="2pNNFK" id="1o_$mJEhEh3" role="3o6s8t">
           <property role="2pNNFO" value="version" />
           <node concept="3o6iSG" id="1o_$mJEhEh4" role="3o6s8t">
-            <property role="3o6i5n" value="1.0" />
+            <property role="3o6i5n" value="1.1" />
           </node>
         </node>
         <node concept="2pNNFK" id="1o_$mJEhEh5" role="3o6s8t">

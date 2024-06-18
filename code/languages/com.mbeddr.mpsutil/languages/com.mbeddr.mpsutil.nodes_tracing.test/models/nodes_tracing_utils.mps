@@ -2,8 +2,9 @@
 <model ref="r:c726a733-8038-42b5-adf4-0fce41e0214c(com.mbeddr.mpsutil.nodes_tracing.test.nodes_tracing_utils)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -180,9 +181,6 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="5753587520027644759" name="body" index="3kxCCa" />
       </concept>
@@ -192,6 +190,19 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
@@ -275,8 +286,12 @@
       <node concept="3uibUv" id="4a8JajkMaO1" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="4a8JajkMcub" role="lGtFl">
-        <property role="NWlVz" value="Returns the first original node that is traced to a certain file and line." />
+      <node concept="P$JXv" id="70cGcTIK7Tz" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Tx" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ty" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first original node that is traced to a certain file and line." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7HmzdkqWn$I" role="jymVt" />
@@ -551,8 +566,12 @@
       <node concept="3uibUv" id="4a8JajkM8Db" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="4a8JajkMa7t" role="lGtFl">
-        <property role="NWlVz" value="Returns all possible original nodes that can be traced to a certain file and line." />
+      <node concept="P$JXv" id="70cGcTIK7TA" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7T$" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7T_" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all possible original nodes that can be traced to a certain file and line." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7HmzdkqVQcj" role="jymVt" />
@@ -768,8 +787,12 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="68pU13UVjBR" role="1B3o_S" />
-      <node concept="NWlO9" id="68pU13UVm1b" role="lGtFl">
-        <property role="NWlVz" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+      <node concept="P$JXv" id="70cGcTIK7TD" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7TB" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7TC" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7U6Ee$b8zRN" role="jymVt" />
@@ -1328,8 +1351,12 @@
       </node>
       <node concept="3Tm1VV" id="6Zad41Tri9_" role="1B3o_S" />
     </node>
-    <node concept="NWlO9" id="55eOZdvWZ1R" role="lGtFl">
-      <property role="NWlVz" value="General utility methods." />
+    <node concept="3UR2Jj" id="70cGcTIK7TG" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7TE" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7TF" role="1dT_Ay">
+          <property role="1dT_AB" value="General utility methods." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5uY69zv5FFj">

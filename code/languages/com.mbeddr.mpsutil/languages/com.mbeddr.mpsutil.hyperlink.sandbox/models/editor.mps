@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="04e1f940-330e-483b-9a6a-1648b396a81c" name="com.mbeddr.mpsutil.hyperlink" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -72,6 +71,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -401,6 +403,67 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5YjCZTskMch" role="3EZMnx" />
+      <node concept="3F0ifn" id="1vOFPmHie07" role="3EZMnx">
+        <property role="3F0ifm" value="A URL link to an arbitrary URL" />
+        <node concept="3tD6jV" id="1vOFPmHie08" role="3F10Kt">
+          <ref role="3tD7wE" to="tj7y:3T8dS7TLUcl" resolve="hyperlink-style" />
+          <node concept="3sjG9q" id="1vOFPmHie09" role="3tD6jU">
+            <node concept="3clFbS" id="1vOFPmHie0a" role="2VODD2">
+              <node concept="3clFbF" id="1vOFPmHie0b" role="3cqZAp">
+                <node concept="Rm8GO" id="1vOFPmHie0c" role="3clFbG">
+                  <ref role="1Px2BO" to="tj7y:3T8dS7U966b" resolve="HyperlinkStyle" />
+                  <ref role="Rm8GQ" to="tj7y:3T8dS7U98jM" resolve="URL" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3tD6jV" id="1vOFPmHie0d" role="3F10Kt">
+          <ref role="3tD7wE" to="tj7y:5A_Zlt6qyoK" resolve="hyperlink-handler" />
+          <node concept="3sjG9q" id="1vOFPmHie0e" role="3tD6jU">
+            <node concept="3clFbS" id="1vOFPmHie0f" role="2VODD2">
+              <node concept="3clFbF" id="1vOFPmHie0g" role="3cqZAp">
+                <node concept="2ShNRf" id="1vOFPmHie0h" role="3clFbG">
+                  <node concept="YeOm9" id="1vOFPmHie0i" role="2ShVmc">
+                    <node concept="1Y3b0j" id="1vOFPmHie0j" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                      <ref role="1Y3XeK" to="ag3p:5A_Zlt6xR6d" resolve="HyperlinkHandler" />
+                      <node concept="3Tm1VV" id="1vOFPmHie0k" role="1B3o_S" />
+                      <node concept="3clFb_" id="1vOFPmHie0l" role="jymVt">
+                        <property role="1EzhhJ" value="false" />
+                        <property role="TrG5h" value="open" />
+                        <node concept="3cqZAl" id="1vOFPmHie0m" role="3clF45" />
+                        <node concept="3Tm1VV" id="1vOFPmHie0n" role="1B3o_S" />
+                        <node concept="37vLTG" id="1vOFPmHie0o" role="3clF46">
+                          <property role="TrG5h" value="util" />
+                          <node concept="3uibUv" id="1vOFPmHie0p" role="1tU5fm">
+                            <ref role="3uigEE" to="ag3p:5A_Zlt6xR7j" resolve="HyperlinkUtil" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="1vOFPmHie0q" role="3clF47">
+                          <node concept="3clFbF" id="1vOFPmHiAIA" role="3cqZAp">
+                            <node concept="2OqwBi" id="1vOFPmHie0v" role="3clFbG">
+                              <node concept="37vLTw" id="1vOFPmHie0w" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1vOFPmHie0o" resolve="util" />
+                              </node>
+                              <node concept="liA8E" id="1vOFPmHie0x" role="2OqNvi">
+                                <ref role="37wK5l" to="ag3p:5A_Zlt6y20F" resolve="openInBrowser" />
+                                <node concept="Xl_RD" id="1vOFPmHie0y" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1vOFPmHie06" role="3EZMnx" />
       <node concept="3F0ifn" id="5YjCZTskO$C" role="3EZMnx">
         <property role="3F0ifm" value="A reference link to a handler" />
         <node concept="3tD6jV" id="5YjCZTskPRE" role="3F10Kt">

@@ -9,9 +9,10 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
@@ -272,8 +273,17 @@
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -698,9 +708,6 @@
       <property role="TrG5h" value="appendResult" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7XCY$_raVG_" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3clFbS" id="7F8$WoVMof4" role="3clF47">
         <node concept="3cpWs8" id="13EXNGXNpLd" role="3cqZAp">
           <node concept="3cpWsn" id="13EXNGXNpLe" role="3cpWs9">
@@ -809,6 +816,13 @@
       <node concept="2AHcQZ" id="7F8$WoVVmUn" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKd7U" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7S" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7T" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoW2$45" role="jymVt" />
     <node concept="3clFb_" id="7F8$WoW2$AJ" role="jymVt">
@@ -816,9 +830,6 @@
       <property role="TrG5h" value="presentResults" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7XCY$_raVQ7" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3clFbS" id="7F8$WoW2$AK" role="3clF47">
         <node concept="3clFbJ" id="6izRX53r8Hs" role="3cqZAp">
           <node concept="3clFbS" id="6izRX53r8Ht" role="3clFbx">
@@ -927,6 +938,13 @@
       <node concept="2AHcQZ" id="7F8$WoW2$AU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="P$JXv" id="70cGcTIKd7X" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7V" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7W" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvCNHo4" role="jymVt" />
     <node concept="3clFb_" id="2UdJgvCNFe3" role="jymVt">
@@ -934,9 +952,6 @@
       <property role="TrG5h" value="clearResults" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="7XCY$_raVZp" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
-      </node>
       <node concept="3clFbS" id="2UdJgvCNFe4" role="3clF47">
         <node concept="3clFbJ" id="6VUBYZefoNV" role="3cqZAp">
           <node concept="3clFbS" id="6VUBYZefoNX" role="3clFbx">
@@ -996,6 +1011,13 @@
       <node concept="3cqZAl" id="2UdJgvCNFeb" role="3clF45" />
       <node concept="2AHcQZ" id="2UdJgvCNFec" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIKd80" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKd7Y" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKd7Z" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3uibUv" id="2UdJgvD7znj" role="EKbjA">

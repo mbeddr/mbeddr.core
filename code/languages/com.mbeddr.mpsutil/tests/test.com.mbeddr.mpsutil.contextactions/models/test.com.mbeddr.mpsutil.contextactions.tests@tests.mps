@@ -218,7 +218,7 @@
         <node concept="3clFbF" id="6qTkPAlt7jw" role="3cqZAp">
           <node concept="2OqwBi" id="6qTkPAltawP" role="3clFbG">
             <node concept="37vLTw" id="6qTkPAlta0v" role="2Oq$k0">
-              <ref role="3cqZAo" node="6qTkPAlta0p" resolve="component" />
+              <ref role="3cqZAo" node="6qTkPAlta0p" resolve="editorComponent" />
             </node>
             <node concept="liA8E" id="6qTkPAltd8Y" role="2OqNvi">
               <ref role="37wK5l" to="exr9:~EditorComponent.editNode(org.jetbrains.mps.openapi.model.SNode)" resolve="editNode" />

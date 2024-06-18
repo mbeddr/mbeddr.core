@@ -2,6 +2,7 @@
 <model ref="04e1f940-330e-483b-9a6a-1648b396a81c/r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.runtime)">
   <persistence version="9" />
   <languages>
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -48,6 +49,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -118,7 +120,31 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -310,11 +336,19 @@
                   </node>
                 </node>
               </node>
-              <node concept="3y3z36" id="3DAECxFHCVI" role="3clFbw">
-                <node concept="37vLTw" id="3DAECxFHCVJ" role="3uHU7B">
-                  <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
+              <node concept="1Wc70l" id="1_bTRifhpRH" role="3clFbw">
+                <node concept="2OqwBi" id="1_bTRifhqrT" role="3uHU7w">
+                  <node concept="37vLTw" id="1_bTRifhq0J" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A_Zlt6y22D" resolve="url" />
+                  </node>
+                  <node concept="17RvpY" id="1_bTRifhqIT" role="2OqNvi" />
                 </node>
-                <node concept="10Nm6u" id="3DAECxFHCVK" role="3uHU7w" />
+                <node concept="3y3z36" id="3DAECxFHCVI" role="3uHU7B">
+                  <node concept="37vLTw" id="3DAECxFHCVJ" role="3uHU7B">
+                    <ref role="3cqZAo" node="3DAECxFHCVy" resolve="d" />
+                  </node>
+                  <node concept="10Nm6u" id="3DAECxFHCVK" role="3uHU7w" />
+                </node>
               </node>
             </node>
           </node>
@@ -351,6 +385,24 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="1vOFPmHilQh" role="lGtFl">
+        <node concept="TZ5HA" id="1vOFPmHilQi" role="TZ5H$">
+          <node concept="1dT_AC" id="1vOFPmHilQj" role="1dT_Ay">
+            <property role="1dT_AB" value="Will open a provided URL via the OS' default browser." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1vOFPmHiocU" role="TZ5H$">
+          <node concept="1dT_AC" id="1vOFPmHiocV" role="1dT_Ay">
+            <property role="1dT_AB" value="No-op, if the provided URL is null or empty." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="1vOFPmHilQk" role="3nqlJM">
+          <property role="TUZQ4" value="any URL that should be opened in the OS' default browser" />
+          <node concept="zr_55" id="1vOFPmHilQm" role="zr_5Q">
+            <ref role="zr_51" node="5A_Zlt6y22D" resolve="url" />
           </node>
         </node>
       </node>

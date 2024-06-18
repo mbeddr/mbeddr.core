@@ -3,10 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -251,15 +252,25 @@
       <concept id="3212431740125201975" name="com.mbeddr.mpsutil.blutil.structure.CSDefault" flags="ng" index="2jNDYi">
         <child id="3212431740125201976" name="body" index="2jNDYt" />
       </concept>
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -2000,9 +2011,6 @@
     <property role="3GE5qa" value="structure_cov" />
     <property role="TrG5h" value="Utils" />
     <node concept="3Tm1VV" id="6Xk4NhNm3Uf" role="1B3o_S" />
-    <node concept="NWlO9" id="6Xk4NhNm3ZF" role="lGtFl">
-      <property role="NWlVz" value="Utility methods." />
-    </node>
     <node concept="2tJIrI" id="6Xk4NhNm3ZN" role="jymVt" />
     <node concept="2YIFZL" id="6Xk4NhNm9KC" role="jymVt">
       <property role="TrG5h" value="collectAllAvailableLanguages" />
@@ -2030,8 +2038,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6Xk4NhNm5UJ" role="1B3o_S" />
-      <node concept="NWlO9" id="6Xk4NhNmaC8" role="lGtFl">
-        <property role="NWlVz" value="Returns a sequence with all languages available in the repository." />
+      <node concept="P$JXv" id="70cGcTIK7T2" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7T0" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7T1" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a sequence with all languages available in the repository." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6Xk4NhNnwRY" role="jymVt" />
@@ -2287,8 +2299,12 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6Xk4NhNnx4_" role="1B3o_S" />
-      <node concept="NWlO9" id="6Xk4NhNnx4A" role="lGtFl">
-        <property role="NWlVz" value="Returns a sequence with all languages that start with a certain prefix." />
+      <node concept="P$JXv" id="70cGcTIK7T5" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7T3" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7T4" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a sequence with all languages that start with a certain prefix." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6Xk4NhNo8ZZ" role="jymVt" />
@@ -2410,8 +2426,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="5r_qjlOaED" role="lGtFl">
-        <property role="NWlVz" value="Returns all concept declared within the set of languages." />
+      <node concept="P$JXv" id="70cGcTIK7T8" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7T6" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7T7" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all concept declared within the set of languages." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5r_qjlO2MC" role="jymVt" />
@@ -2517,8 +2537,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="5r_qjlVQOz" role="lGtFl">
-        <property role="NWlVz" value="Returns all rules (typesystem, non-type-system, etc) declared within the set of languages." />
+      <node concept="P$JXv" id="70cGcTIK7Tb" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7T9" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Ta" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all rules (typesystem, non-type-system, etc) declared within the set of languages." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5r_qjlVP8Q" role="jymVt" />
@@ -2638,8 +2662,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="68pU13UUHf7" role="lGtFl">
-        <property role="NWlVz" value="Returns the first project that is opened and that contains the module." />
+      <node concept="P$JXv" id="70cGcTIK7Te" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK7Tc" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK7Td" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first project that is opened and that contains the module." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="70cGcTIK7SZ" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK7SX" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK7SY" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods." />
+        </node>
       </node>
     </node>
   </node>

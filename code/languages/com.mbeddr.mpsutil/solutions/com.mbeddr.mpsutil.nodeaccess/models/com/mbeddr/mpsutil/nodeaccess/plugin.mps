@@ -1388,9 +1388,7 @@
                         <node concept="37vLTw" id="3YjQI$jOtfF" role="37wK5m">
                           <ref role="3cqZAo" node="4nkJFds06Ei" resolve="modelID" />
                         </node>
-                        <node concept="Xl_RD" id="3YjQI$jOtfG" role="37wK5m">
-                          <property role="Xl_RC" value="can be omitted" />
-                        </node>
+                        <node concept="Xl_RD" id="3YjQI$jOtfG" role="37wK5m" />
                       </node>
                     </node>
                     <node concept="liA8E" id="3YjQI$jOtfH" role="2OqNvi">

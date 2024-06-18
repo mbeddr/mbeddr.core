@@ -2,8 +2,9 @@
 <model ref="r:547f7db0-7ae9-4903-962d-d0cb86588a65(com.mbeddr.analyses.cbmc.rt.results_cacher)">
   <persistence version="9" />
   <languages>
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -107,16 +108,25 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
@@ -302,8 +312,12 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="WDEcAzIfvt" role="lGtFl">
-        <property role="NWlVz" value="Adds a new result to the cache." />
+      <node concept="P$JXv" id="70cGcTIKjPy" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPw" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPx" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds a new result to the cache." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3ASzZs53yom" role="jymVt" />
@@ -479,8 +493,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="148xcJ47HT_" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7kzfSagLekB" role="lGtFl">
-        <property role="NWlVz" value="Returns the list of errors that occur from this node." />
+      <node concept="P$JXv" id="70cGcTIKjP_" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPz" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjP$" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the list of errors that occur from this node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="148xcJ47Hbp" role="jymVt" />
@@ -510,8 +528,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="188YFGrEffT" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="188YFGrEffU" role="lGtFl">
-        <property role="NWlVz" value="Returns the list of results that are attached to this node." />
+      <node concept="P$JXv" id="70cGcTIKjPC" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPA" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPB" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the list of results that are attached to this node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="188YFGrEeZV" role="jymVt" />
@@ -599,8 +621,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="3ASzZs53_lG" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7kzfSagLdFq" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the node has property failures." />
+      <node concept="P$JXv" id="70cGcTIKjPF" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPD" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPE" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the node has property failures." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3ASzZs53_3z" role="jymVt" />
@@ -680,8 +706,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="6BowXlDupfc" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="6BowXlDupfd" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the node has only property success results." />
+      <node concept="P$JXv" id="70cGcTIKjPI" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPG" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPH" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the node has only property success results." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6BowXlDuoYA" role="jymVt" />
@@ -757,8 +787,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="7kzfSagK_xb" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7kzfSagLegC" role="lGtFl">
-        <property role="NWlVz" value="Returns true if this node has attached unwinding failures." />
+      <node concept="P$JXv" id="70cGcTIKjPL" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPJ" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPK" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if this node has attached unwinding failures." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7kzfSagK_pi" role="jymVt" />
@@ -806,8 +840,12 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="7kzfSagLdiK" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7kzfSagLdCM" role="lGtFl">
-        <property role="NWlVz" value="Returns true if there is a CBMC-result that is attached to this node." />
+      <node concept="P$JXv" id="70cGcTIKjPO" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPM" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPN" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if there is a CBMC-result that is attached to this node." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7kzfSagLd7i" role="jymVt" />
@@ -827,8 +865,12 @@
       </node>
       <node concept="3Tm1VV" id="148xcJ45USI" role="1B3o_S" />
       <node concept="3cqZAl" id="148xcJ45XfS" role="3clF45" />
-      <node concept="NWlO9" id="7kzfSagMnF0" role="lGtFl">
-        <property role="NWlVz" value="Clears the analyses results cache." />
+      <node concept="P$JXv" id="70cGcTIKjPR" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPP" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPQ" role="1dT_Ay">
+            <property role="1dT_AB" value="Clears the analyses results cache." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="148xcJ45UOj" role="jymVt" />
@@ -842,8 +884,12 @@
       <node concept="3clFbT" id="1H8VqTw0Lyb" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
-      <node concept="NWlO9" id="1H8VqTw0LBQ" role="lGtFl">
-        <property role="NWlVz" value="Should we display the marking in the editor?" />
+      <node concept="z59LJ" id="70cGcTIKjPU" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPS" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPT" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we display the marking in the editor?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1H8VqTw0KVp" role="jymVt" />
@@ -870,13 +916,21 @@
         <property role="TrG5h" value="markingsEnabled" />
         <node concept="10P_77" id="1H8VqTw0KHB" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="1H8VqTw0KV4" role="lGtFl">
-        <property role="NWlVz" value="Inhibits/Allows marking of results in the editor." />
+      <node concept="P$JXv" id="70cGcTIKjPX" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIKjPV" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIKjPW" role="1dT_Ay">
+            <property role="1dT_AB" value="Inhibits/Allows marking of results in the editor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3ASzZs53yna" role="1B3o_S" />
-    <node concept="NWlO9" id="148xcJ461dx" role="lGtFl">
-      <property role="NWlVz" value="Cache for the analyses results." />
+    <node concept="3UR2Jj" id="70cGcTIKjQ0" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIKjPY" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIKjPZ" role="1dT_Ay">
+          <property role="1dT_AB" value="Cache for the analyses results." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

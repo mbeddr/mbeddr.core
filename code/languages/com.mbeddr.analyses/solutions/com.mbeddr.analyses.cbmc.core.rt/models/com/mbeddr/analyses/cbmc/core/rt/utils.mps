@@ -4,9 +4,10 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="hj5x" ref="r:51d4e66d-7bef-4322-a125-0efcf6898af6(com.mbeddr.analyses.cbmc.core.structure)" />
@@ -166,16 +167,24 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -384,13 +393,21 @@
         <property role="TrG5h" value="aNode" />
         <node concept="3Tqbb2" id="6dhI$530gF2" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3JyX84yTDXU" role="lGtFl">
-        <property role="NWlVz" value="Returns true if the preconditions for running the analysis are met and false otherwise." />
+      <node concept="P$JXv" id="70cGcTIK83p" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83n" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83o" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if the preconditions for running the analysis are met and false otherwise." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2UdJgvERUp0" role="jymVt" />
-    <node concept="NWlO9" id="6BM8NjX8FQB" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for checking the models to be analyzed" />
+    <node concept="3UR2Jj" id="70cGcTIK83s" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK83q" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK83r" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for checking the models to be analyzed" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="83yZIikU9h">
@@ -447,12 +464,16 @@
         <ref role="3uigEE" to="tzyt:tGR6edUFtE" resolve="CBMCAnalysisConfig" />
       </node>
       <node concept="3Tm1VV" id="83yZIikSXz" role="1B3o_S" />
-      <node concept="NWlO9" id="83yZIikSX$" role="lGtFl">
-        <property role="NWlVz" value="Builds the config and sets all robustness flags to true." />
-      </node>
       <node concept="37vLTG" id="83yZIikX1M" role="3clF46">
         <property role="TrG5h" value="analyzedNode" />
         <node concept="3Tqbb2" id="83yZIikX1L" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="70cGcTIK83v" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83t" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83u" role="1dT_Ay">
+            <property role="1dT_AB" value="Builds the config and sets all robustness flags to true." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="83yZIikUbe" role="jymVt" />
@@ -614,20 +635,28 @@
       </node>
       <node concept="3cqZAl" id="83yZIil_aP" role="3clF45" />
       <node concept="3Tm1VV" id="83yZIil$Cf" role="1B3o_S" />
-      <node concept="NWlO9" id="83yZIil$Cg" role="lGtFl">
-        <property role="NWlVz" value="Sets the config parameters for robustness checks to true." />
-      </node>
       <node concept="37vLTG" id="83yZIil$Ch" role="3clF46">
         <property role="TrG5h" value="conf" />
         <node concept="3uibUv" id="83yZIil$Yc" role="1tU5fm">
           <ref role="3uigEE" to="tzyt:tGR6edUFtE" resolve="CBMCAnalysisConfig" />
         </node>
       </node>
+      <node concept="P$JXv" id="70cGcTIK83y" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83w" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83x" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the config parameters for robustness checks to true." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="83yZIikUbl" role="jymVt" />
     <node concept="3Tm1VV" id="83yZIikU9i" role="1B3o_S" />
-    <node concept="NWlO9" id="83yZIikUb1" role="lGtFl">
-      <property role="NWlVz" value="Utility class for verification configuration for checking robustness." />
+    <node concept="3UR2Jj" id="70cGcTIK83_" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK83z" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK83$" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility class for verification configuration for checking robustness." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3NycWlQTo4y">
@@ -905,8 +934,12 @@
         <property role="TrG5h" value="rawName" />
         <node concept="17QB3L" id="3NycWlQQTKk" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="3NycWlQQUTO" role="lGtFl">
-        <property role="NWlVz" value="Special lifter of variable names. Deals with complex types." />
+      <node concept="P$JXv" id="70cGcTIK83C" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83A" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83B" role="1dT_Ay">
+            <property role="1dT_AB" value="Special lifter of variable names. Deals with complex types." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3NycWlQQQNF" role="jymVt" />
@@ -1056,14 +1089,22 @@
           <ref role="ehGHo" to="clbe:3bHYGwzt_Ut" resolve="SUType" />
         </node>
       </node>
-      <node concept="NWlO9" id="3NycWlQR3Ey" role="lGtFl">
-        <property role="NWlVz" value="Special lifter of structured types names." />
+      <node concept="P$JXv" id="70cGcTIK83F" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83D" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83E" role="1dT_Ay">
+            <property role="1dT_AB" value="Special lifter of structured types names." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3NycWlQToj3" role="jymVt" />
     <node concept="3Tm1VV" id="3NycWlQTo4z" role="1B3o_S" />
-    <node concept="NWlO9" id="3NycWlQToiQ" role="lGtFl">
-      <property role="NWlVz" value="Utility methods for lifting names." />
+    <node concept="3UR2Jj" id="70cGcTIK83I" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK83G" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK83H" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods for lifting names." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="IRJfuKbvVz">
@@ -1115,8 +1156,12 @@
           <ref role="3uigEE" to="eqhl:54VWoniifyz" resolve="CBMCLiftedResult" />
         </node>
       </node>
-      <node concept="NWlO9" id="IRJfuKb$uU" role="lGtFl">
-        <property role="NWlVz" value="Returns the CEX without the locations." />
+      <node concept="P$JXv" id="70cGcTIK83L" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83J" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83K" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the CEX without the locations." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="IRJfuKdJy5" role="jymVt" />
@@ -1172,14 +1217,22 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="IRJfuKdJDg" role="lGtFl">
-        <property role="NWlVz" value="Filters locations states." />
+      <node concept="P$JXv" id="70cGcTIK83O" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83M" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83N" role="1dT_Ay">
+            <property role="1dT_AB" value="Filters locations states." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="IRJfuKbw0B" role="jymVt" />
     <node concept="3Tm1VV" id="IRJfuKbvV$" role="1B3o_S" />
-    <node concept="NWlO9" id="IRJfuKbw0o" role="lGtFl">
-      <property role="NWlVz" value="Utility methods to deal with lifted results." />
+    <node concept="3UR2Jj" id="70cGcTIK83R" role="lGtFl">
+      <node concept="TZ5HA" id="70cGcTIK83P" role="TZ5H$">
+        <node concept="1dT_AC" id="70cGcTIK83Q" role="1dT_Ay">
+          <property role="1dT_AB" value="Utility methods to deal with lifted results." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1GDKzvUmUjQ">
@@ -1318,8 +1371,12 @@
       <node concept="2AHcQZ" id="6lrp79e8v$r" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="6lrp79e8vFf" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK83U" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83S" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83T" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6lrp79e8vTo" role="jymVt" />
@@ -1385,8 +1442,12 @@
       <node concept="2AHcQZ" id="6lrp79e8w39" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="NWlO9" id="6lrp79e8w9Y" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="70cGcTIK83X" role="lGtFl">
+        <node concept="TZ5HA" id="70cGcTIK83V" role="TZ5H$">
+          <node concept="1dT_AC" id="70cGcTIK83W" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
