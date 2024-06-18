@@ -29495,6 +29495,71 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5j7TjldKP3n" role="3cqZAp" />
+        <node concept="3SKdUt" id="5j7TjldLWyS" role="3cqZAp">
+          <node concept="1PaTwC" id="5j7TjldLWyT" role="1aUNEU">
+            <node concept="3oM_SD" id="5j7TjldLW_d" role="1PaTwD">
+              <property role="3oM_SC" value="Pointer" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_f" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_i" role="1PaTwD">
+              <property role="3oM_SC" value="function" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_m" role="1PaTwD">
+              <property role="3oM_SC" value="using" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_r" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWB4" role="1PaTwD">
+              <property role="3oM_SC" value="pointer" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_x" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWBk" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_C" role="1PaTwD">
+              <property role="3oM_SC" value="array" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_K" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_T" role="1PaTwD">
+              <property role="3oM_SC" value="2" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWA3" role="1PaTwD">
+              <property role="3oM_SC" value="int16" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAe" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAq" role="1PaTwD">
+              <property role="3oM_SC" value="returning" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAB" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAP" role="1PaTwD">
+              <property role="3oM_SC" value="int32" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5j7TjldKP0I" role="3cqZAp">
+          <node concept="Xl_RD" id="5j7TjldKP0J" role="3tpDZB">
+            <property role="Xl_RC" value="int32_t ((*(sum))(int16_t (*)[2]))" />
+          </node>
+          <node concept="2YIFZM" id="5j7TjldKP0K" role="3tpDZA">
+            <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+            <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+            <node concept="3xONca" id="5j7TjldKP0L" role="37wK5m">
+              <ref role="3xOPvv" node="5j7TjldKORY" resolve="FourthParam" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="5wiMD66UzzU" role="3cqZAp" />
         <node concept="3SKdUt" id="5wiMD66Z14b" role="3cqZAp">
           <node concept="1PaTwC" id="5wiMD66Z14c" role="1aUNEU">
@@ -29938,6 +30003,23 @@
             </node>
             <node concept="3xLA65" id="5wiMD66OVqx" role="lGtFl">
               <property role="TrG5h" value="ThirdParam" />
+            </node>
+          </node>
+          <node concept="19RgSI" id="5j7TjldKOqb" role="1UOdpc">
+            <property role="TrG5h" value="sum" />
+            <node concept="pFrBc" id="5j7TjldKOq7" role="2C2TGm">
+              <node concept="26Vqph" id="5j7TjldKO_5" role="pFrBb" />
+              <node concept="3wxxNl" id="5j7TjldKOxq" role="pFrBa">
+                <node concept="3J0A42" id="5j7TjldKOvz" role="2umbIo">
+                  <node concept="26Vqpq" id="5j7TjldKOv9" role="2umbIo" />
+                  <node concept="3TlMh9" id="5j7TjldKOwj" role="1YbSNA">
+                    <property role="2hmy$m" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xLA65" id="5j7TjldKORY" role="lGtFl">
+              <property role="TrG5h" value="FourthParam" />
             </node>
           </node>
           <node concept="19RgSI" id="5wiMD66YoMs" role="1UOdpc">
