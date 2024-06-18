@@ -29875,7 +29875,7 @@
               <node concept="OjmMv" id="C7lj4lOXxn" role="3SJzmv">
                 <node concept="19SGf9" id="C7lj4lOXxo" role="OjmMu">
                   <node concept="19SUe$" id="C7lj4lOXxp" role="19SJt6">
-                    <property role="19SUeA" value="Expected generated code: &#10;arraysAndPointersOK( int8_t (*int8ArrayPtr)[8], int8_t *(int8PtrArray[]), char (*stringArrayPtr)[8 + 1], char const  charPtrArray[] )&#10;               " />
+                    <property role="19SUeA" value="Expected generated code: &#10;arraysAndPointersOK( int8_t (*int8ArrayPtr)[8],&#10;                             int8_t *(int8PtrArray[]), &#10;                             char (*charArrayPtr)[9],&#10;                             char (*stringArrayPtr)[8 + 1],&#10;                             char const  charPtrArray[] )&#10;               " />
                   </node>
                 </node>
               </node>
