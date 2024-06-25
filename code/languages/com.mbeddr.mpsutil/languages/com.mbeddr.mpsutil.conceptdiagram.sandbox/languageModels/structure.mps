@@ -20,6 +20,9 @@
   <registry>
     <language id="9d1cb9f8-2ae0-4895-91c8-ff32e8afc27d" name="com.mbeddr.mpsutil.conceptdiagram">
       <concept id="2634829965774842138" name="com.mbeddr.mpsutil.conceptdiagram.structure.ConceptDiagram" flags="ng" index="3X0abY">
+        <property id="1934248081282033245" name="autoPopulate" index="3qB38W" />
+        <property id="1934248081280676045" name="autoLayoutOnInit" index="3qSeiG" />
+        <property id="1934248081280111078" name="dontSaveLayoutData" index="3qYkm7" />
         <child id="8770068006951591727" name="languagesInScope" index="2bUTld" />
         <child id="2634829965775258652" name="contents" index="3X1wZS" />
       </concept>
@@ -79,7 +82,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
         <child id="738815095926774816" name="portLayouts" index="1pap1a" />
       </concept>
       <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
@@ -737,7 +740,7 @@
         <node concept="gqqVs" id="6vp$_2v0JnJ" role="37mO4d">
           <property role="gqqTZ" value="78.828919053171" />
           <property role="gqqTW" value="434.0" />
-          <property role="gqqTX" value="82.0" />
+          <property role="gqqTX" value="84.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="4AXwGoMCKiY" role="1pap1a">
@@ -763,7 +766,7 @@
         <node concept="gqqVs" id="6vp$_2v0JnL" role="37mO4d">
           <property role="gqqTZ" value="128.22937901341763" />
           <property role="gqqTW" value="141.0" />
-          <property role="gqqTX" value="76.0" />
+          <property role="gqqTX" value="78.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="4AXwGoMCKj2" role="1pap1a">
@@ -789,7 +792,7 @@
         <node concept="gqqVs" id="6vp$_2v0JnN" role="37mO4d">
           <property role="gqqTZ" value="121.35446936202209" />
           <property role="gqqTW" value="305.0" />
-          <property role="gqqTX" value="138.0" />
+          <property role="gqqTX" value="140.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="4AXwGoMCKj6" role="1pap1a">
@@ -815,7 +818,7 @@
         <node concept="gqqVs" id="6vp$_2v0JnP" role="37mO4d">
           <property role="gqqTZ" value="118.0" />
           <property role="gqqTW" value="12.0" />
-          <property role="gqqTX" value="186.0" />
+          <property role="gqqTX" value="188.0" />
           <property role="gqqTy" value="84.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="4AXwGoMCKja" role="1pap1a">
@@ -841,8 +844,8 @@
         <node concept="gqqVs" id="6vp$_2v0JnR" role="37mO4d">
           <property role="gqqTZ" value="0.0" />
           <property role="gqqTW" value="30.0" />
-          <property role="gqqTX" value="98.0" />
-          <property role="gqqTy" value="47.0" />
+          <property role="gqqTX" value="100.0" />
+          <property role="gqqTy" value="49.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           <node concept="1pa3jb" id="4AXwGoMCKje" role="1pap1a">
             <property role="1pa3iD" value="extensions" />
@@ -1777,6 +1780,12 @@
     <node concept="3XhJPz" id="4XdNxtB3lqi" role="3X1wZS">
       <ref role="3XhJPG" to="tpee:hP7QB7G" resolve="StringType" />
     </node>
+  </node>
+  <node concept="3X0abY" id="1FnP670iRJc">
+    <property role="TrG5h" value="Auto populate" />
+    <property role="3qB38W" value="true" />
+    <property role="3qSeiG" value="true" />
+    <property role="3qYkm7" value="true" />
   </node>
 </model>
 

@@ -13,6 +13,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The usability of the language was improved and buttons were added to automatically populate a diagram. Auto-layout on init and saving the layout information can also be customized. The diagrams are now also more compact.
 
+### Added
+
+- A new option was added to supported automatically populating the diagram based on the declared language or the language that the diagram is contained in.
+
 # May 2024
 
 ## com.mbeddr.core

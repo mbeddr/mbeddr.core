@@ -60,6 +60,16 @@
       <property role="TrG5h" value="autoLayoutOnInit" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="1FnP670iYpt" role="1TKVEl">
+      <property role="IQ2nx" value="1934248081282033245" />
+      <property role="TrG5h" value="autoPopulate" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="1FnP670iYyR" role="1TKVEl">
+      <property role="IQ2nx" value="1934248081282033847" />
+      <property role="TrG5h" value="ignoredDeprecatedConcepts" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="2igMYjp_Ggs" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contents" />
