@@ -86,6 +86,7 @@
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+        <child id="1223387335081" name="query" index="3n$kyP" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
@@ -102,6 +103,8 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1223386653097" name="jetbrains.mps.lang.editor.structure.StrikeOutStyleSheet" flags="ln" index="3nxI2P" />
+      <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="3982520150125052579" name="jetbrains.mps.lang.editor.structure.QueryFunction_AttributeStyleParameter" flags="ig" index="3sjG9q" />
       <concept id="3982520150122341378" name="jetbrains.mps.lang.editor.structure.AttributeStyleClassItem" flags="lg" index="3tD6jV">
         <reference id="3982520150122346707" name="attribute" index="3tD7wE" />
@@ -490,6 +493,12 @@
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
+      </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -1252,6 +1261,26 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="37jFXN" id="5gQBemmsHfl" role="3F10Kt">
             <property role="37lx6p" value="hZ7kQ4a/CENTER" />
+          </node>
+          <node concept="3nxI2P" id="1FnP670hg_Y" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+            <node concept="3nzxsE" id="1FnP670hgBG" role="3n$kyP">
+              <node concept="3clFbS" id="1FnP670hgBH" role="2VODD2">
+                <node concept="3clFbF" id="1FnP670hgCC" role="3cqZAp">
+                  <node concept="2OqwBi" id="1FnP670hzyo" role="3clFbG">
+                    <node concept="2OqwBi" id="1FnP670hh1l" role="2Oq$k0">
+                      <node concept="pncrf" id="1FnP670hgCB" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="1FnP670hzbO" role="2OqNvi">
+                        <node concept="3CFYIy" id="1FnP670hzhv" role="3CFYIz">
+                          <ref role="3CFYIx" to="tpce:hOasaTk" resolve="DeprecatedNodeAnnotation" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3x8VRR" id="1FnP670hzXD" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
