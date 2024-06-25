@@ -63,7 +63,6 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
-      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -75,6 +74,7 @@
       <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -353,6 +353,7 @@
       <concept id="1110129820007229393" name="de.itemis.mps.editor.diagram.structure.CellModel_Diagram" flags="ng" index="27vDVx">
         <property id="4706276119306323403" name="runAutoLayoutOnInit" index="1ju4zT" />
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
+        <child id="8316481512155640329" name="saveLayout" index="qiu7m" />
         <child id="5018298105379062639" name="autoLayoutOnInit" index="2Dxx3A" />
         <child id="8637411062076630380" name="connectionTypes" index="1xLlFP" />
         <child id="1981294357059564524" name="paletteSources" index="1RuSHk" />
@@ -3880,9 +3881,6 @@
             </node>
           </node>
         </node>
-        <node concept="39fpm" id="2igMYjpI0bd" role="35U2g">
-          <property role="1NdBj4" value="6Bd7VwqYQBO/UP" />
-        </node>
         <node concept="3tD6jV" id="1FnP66Zec8j" role="3F10Kt">
           <ref role="3tD7wE" to="88j9:56jSwhzYNtN" resolve="diagram-layout-edge-node-spacing" />
           <node concept="3sjG9q" id="1FnP66Zec8k" role="3tD6jU">
@@ -3975,6 +3973,35 @@
             </node>
           </node>
         </node>
+        <node concept="39fpm" id="2igMYjpI0bd" role="35U2g">
+          <property role="1NdBj4" value="6Bd7VwqYQBO/UP" />
+        </node>
+        <node concept="pkWqt" id="1FnP670bQ_f" role="2Dxx3A">
+          <node concept="3clFbS" id="1FnP670bQ_g" role="2VODD2">
+            <node concept="3clFbF" id="1FnP670bVSx" role="3cqZAp">
+              <node concept="2OqwBi" id="1FnP670bWvm" role="3clFbG">
+                <node concept="pncrf" id="1FnP670bWvn" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1FnP670bWvo" role="2OqNvi">
+                  <ref role="3TsBF5" to="45ke:1FnP670dN3d" resolve="autoLayoutOnInit" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="1FnP670bWFL" role="qiu7m">
+          <node concept="3clFbS" id="1FnP670bWFM" role="2VODD2">
+            <node concept="3clFbF" id="1FnP670c3hZ" role="3cqZAp">
+              <node concept="3fqX7Q" id="1FnP670cdNY" role="3clFbG">
+                <node concept="2OqwBi" id="1FnP670cdO0" role="3fr31v">
+                  <node concept="pncrf" id="1FnP670cdO1" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1FnP670cdO2" role="2OqNvi">
+                    <ref role="3TsBF5" to="45ke:1FnP670bD7A" resolve="dontSaveLayoutData" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRkQZ" id="2igMYjpAqwn" role="2iSdaV" />
     </node>
@@ -3982,7 +4009,7 @@
       <node concept="VPM3Z" id="6oUHYlAzUwz" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
-      <node concept="2iRkQZ" id="6oUHYlAzUwA" role="2iSdaV" />
+      <node concept="2EHx9g" id="1FnP670bQ3O" role="2iSdaV" />
       <node concept="3EZMnI" id="7APyAbMnDpR" role="3EZMnx">
         <node concept="VPM3Z" id="7APyAbMnDpS" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -3997,7 +4024,25 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
-        <node concept="l2Vlx" id="7APyAbMnDpX" role="2iSdaV" />
+        <node concept="2iRfu4" id="1FnP670cUKk" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1FnP670bPGy" role="3EZMnx">
+        <node concept="2iRfu4" id="1FnP670bPGz" role="2iSdaV" />
+        <node concept="3F0ifn" id="1FnP670bNCm" role="3EZMnx">
+          <property role="3F0ifm" value="auto layout on init" />
+        </node>
+        <node concept="3F0A7n" id="1FnP670bQqI" role="3EZMnx">
+          <ref role="1NtTu8" to="45ke:1FnP670dN3d" resolve="autoLayoutOnInit" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1FnP670dYgj" role="3EZMnx">
+        <node concept="2iRfu4" id="1FnP670dYgk" role="2iSdaV" />
+        <node concept="3F0ifn" id="1FnP670dYgl" role="3EZMnx">
+          <property role="3F0ifm" value="don't save layout data" />
+        </node>
+        <node concept="3F0A7n" id="1FnP670dYgm" role="3EZMnx">
+          <ref role="1NtTu8" to="45ke:1FnP670bD7A" resolve="dontSaveLayoutData" />
+        </node>
       </node>
       <node concept="3EZMnI" id="1FnP66Z9mTa" role="3EZMnx">
         <node concept="2iRfu4" id="1FnP66Z9mTb" role="2iSdaV" />
