@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# June 2024
+
+## com.mbeddr.mpsutil.conceptdiagram
+
+### Fixed
+
+- The usability of the language was improved and buttons were added to automatically populate a diagram. Auto-layout on init and saving the layout information can also be customized. The diagrams are now also more compact.
+
 # May 2024
 
 ## com.mbeddr.core
