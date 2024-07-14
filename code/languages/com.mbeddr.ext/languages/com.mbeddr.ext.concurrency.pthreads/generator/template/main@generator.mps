@@ -6375,7 +6375,7 @@
             <node concept="3XIRFW" id="6u_410TCq9$" role="3XIRFX">
               <node concept="1_9egQ" id="6u_410TCq9_" role="3XIRFZ">
                 <node concept="3O_q_g" id="6u_410TCq9A" role="1_9egR">
-                  <ref role="3O_q_h" to="bicj:6u_410T$l0p" resolve="atomic_resource_entry" />
+                  <ref role="3O_q_h" to="bicj:6u_410T$l01" resolve="atomic_resource_exit" />
                   <node concept="YInwV" id="6u_410TCq9B" role="3O_q_j">
                     <node concept="1S7827" id="6u_410TCq9C" role="1_9fRO">
                       <ref role="1S7826" node="6u_410TCq9v" resolve="data" />
@@ -6409,7 +6409,7 @@
                       <node concept="3clFbS" id="6OFMQWQQiu6" role="2VODD2">
                         <node concept="3clFbF" id="6OFMQWQQiCB" role="3cqZAp">
                           <node concept="Xl_RD" id="6OFMQWQQiCA" role="3clFbG">
-                            <property role="Xl_RC" value="atomic_resource_entry" />
+                            <property role="Xl_RC" value="atomic_shared_exit" />
                           </node>
                         </node>
                       </node>
