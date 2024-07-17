@@ -93,7 +93,7 @@
     </language>
   </registry>
   <node concept="30z_3H" id="1e_tNK9mWUI">
-    <property role="TrG5h" value="Aaaaaaa Preferences" />
+    <property role="TrG5h" value="Demo Preferences" />
     <property role="2AH19c" value="false" />
     <property role="1O$AU$" value="false" />
     <ref role="30zxtE" to="tpee:fz12cDA" resolve="ClassConcept" />

@@ -1055,6 +1055,26 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="2pIpSj" id="ZgUntVjlQF" role="2pJxcM">
+                          <ref role="2pIpSl" to="2c95:5JlMPDXOsfV" resolve="defaultImagePath" />
+                          <node concept="2pJPED" id="ZgUntVjlRF" role="28nt2d">
+                            <ref role="2pJxaS" to="2c95:5yxqZJwzC3r" resolve="PathDefinition" />
+                            <node concept="2pIpSj" id="ZgUntVjlS8" role="2pJxcM">
+                              <ref role="2pIpSl" to="2c95:2iGZqsHuOq2" resolve="pathPicker" />
+                              <node concept="2pJPED" id="ZgUntVjlSD" role="28nt2d">
+                                <ref role="2pJxaS" to="68mc:2iGZqsHuOWj" resolve="SolutionRelativeDirPicker" />
+                              </node>
+                            </node>
+                            <node concept="2pJxcG" id="ZgUntVjlT$" role="2pJxcM">
+                              <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
+                              <node concept="WxPPo" id="ZgUntVjlUi" role="28ntcv">
+                                <node concept="Xl_RD" id="ZgUntVjlUh" role="WxPPp">
+                                  <property role="Xl_RC" value="img" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="2pJxcG" id="1LLGf91xmAw" role="2pJxcM">
                           <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                           <node concept="WxPPo" id="27yO7ubJBkV" role="28ntcv">
