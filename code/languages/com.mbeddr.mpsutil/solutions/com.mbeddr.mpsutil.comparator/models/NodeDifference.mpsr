@@ -112,6 +112,9 @@
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
     </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
@@ -319,7 +322,7 @@
       <node concept="3Tmbuc" id="DYlgnA$vt3" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnA$vt4" role="3clF47">
         <node concept="3cpWs6" id="6fymoI4XrqQ" role="3cqZAp">
-          <node concept="2OqwBi" id="6fymoI4XrqR" role="3cqZAk">
+          <node concept="2EnYce" id="E9Bg75kjNT" role="3cqZAk">
             <node concept="2OqwBi" id="6fymoI4XrqS" role="2Oq$k0">
               <node concept="37vLTw" id="6fymoI4XrqT" role="2Oq$k0">
                 <ref role="3cqZAo" node="DYlgnA$stH" resolve="expected" />
@@ -369,7 +372,7 @@
       <node concept="3Tmbuc" id="DYlgnA$vtd" role="1B3o_S" />
       <node concept="3clFbS" id="DYlgnA$vte" role="3clF47">
         <node concept="3cpWs6" id="6fymoI4Xrlm" role="3cqZAp">
-          <node concept="2OqwBi" id="6fymoI4Xrln" role="3cqZAk">
+          <node concept="2EnYce" id="E9Bg75kkBA" role="3cqZAk">
             <node concept="2OqwBi" id="6fymoI4Xrlo" role="2Oq$k0">
               <node concept="37vLTw" id="6fymoI4Xrlp" role="2Oq$k0">
                 <ref role="3cqZAo" node="DYlgnA$stK" resolve="actual" />
