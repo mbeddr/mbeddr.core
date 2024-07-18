@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# July 2024
+
+## com.mbeddr.mpsutil.comparator
+
+### Added
+
+- In addition to some null checks, node annotations can now be compared and also children of references. The node difference descriptions were also improved.
+
 # June 2024
 
 ## com.mbeddr.mpsutil.conceptdiagram
