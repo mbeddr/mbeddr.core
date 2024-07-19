@@ -4,6 +4,9 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -34,6 +37,10 @@
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
     </language>
   </registry>
   <node concept="312cEu" id="E9Bg74y9pX">
@@ -46,6 +53,13 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="E9Bg74WAJb" role="1B3o_S" />
+      <node concept="2ShNRf" id="IWH1FID_iD" role="33vP2m">
+        <node concept="2Jqq0_" id="IWH1FIDARZ" role="2ShVmc">
+          <node concept="3uibUv" id="IWH1FIDB7i" role="HW$YZ">
+            <ref role="3uigEE" node="DYlgnBstFb" resolve="IgnoredProperty" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="E9Bg74H7$G" role="jymVt">
       <property role="TrG5h" value="ignoredReferences" />
@@ -55,6 +69,13 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="E9Bg74WAJr" role="1B3o_S" />
+      <node concept="2ShNRf" id="IWH1FIDBs_" role="33vP2m">
+        <node concept="2Jqq0_" id="IWH1FIDC_f" role="2ShVmc">
+          <node concept="3uibUv" id="IWH1FIDCOy" role="HW$YZ">
+            <ref role="3uigEE" node="2mzdNw3ouFX" resolve="IgnoredReference" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="312cEg" id="E9Bg74yDJd" role="jymVt">
       <property role="TrG5h" value="compareChildren" />
