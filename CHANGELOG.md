@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# July 2024
+
+## com.mbeddr.mpsutil.comparator
+
+### Added
+
+- In addition to some null checks, node annotations can now be compared and also children of references. The node difference descriptions were also improved.
+
 # June 2024
 
 ## General
@@ -16,6 +24,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Deprecated
 
 - The language `com.mbeddr.mpsutil.favourites` was deprecated in favor of the builtin MPS bookmark manager. See: https://www.jetbrains.com/help/mps/navigating-through-the-source-code.html#use_bookmarks
+
+## com.mbeddr.mpsutil.conceptdiagram
+
+### Fixed
+
+- The usability of the language was improved and buttons were added to automatically populate a diagram. Auto-layout on init and saving the layout information can also be customized. The diagrams are now also more compact.
+
+### Added
+
+- A new option was added to supported automatically populating the diagram based on the declared language or the language that the diagram is contained in.
 
 # May 2024
 
