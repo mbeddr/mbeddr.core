@@ -26,14 +26,14 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ngI" index="2frcj7">
+      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ng" index="2frcj7">
         <child id="2323553266850475953" name="modifiers" index="2frcjj" />
       </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="4678410916365116210" name="jetbrains.mps.baseLanguage.structure.DefaultModifier" flags="ng" index="2JFqV2" />
@@ -74,7 +74,7 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
@@ -108,7 +108,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -163,6 +163,13 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1T8cMxCROtp" role="1B3o_S" />
+    <node concept="3UR2Jj" id="3qokpdXQck2" role="lGtFl">
+      <node concept="TZ5HA" id="3qokpdXQck3" role="TZ5H$">
+        <node concept="1dT_AC" id="3qokpdXQck4" role="1dT_Ay">
+          <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5N03sBKzJsf" role="jymVt" />
     <node concept="3clFb_" id="5N03sBKzJsV" role="jymVt">
       <property role="TrG5h" value="allowOverrideChildren" />
@@ -216,13 +223,6 @@
       <node concept="2JFqV2" id="5N03sBKzK4p" role="2frcjj" />
     </node>
     <node concept="2tJIrI" id="5N03sBKzJss" role="jymVt" />
-    <node concept="3UR2Jj" id="3qokpdXQck2" role="lGtFl">
-      <node concept="TZ5HA" id="3qokpdXQck3" role="TZ5H$">
-        <node concept="1dT_AC" id="3qokpdXQck4" role="1dT_Ay">
-          <property role="1dT_AB" value="Provide an extension point in your application to configure this." />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="3qokpdXQc0N">
     <property role="TrG5h" value="DefaultDocAspectConfiguration" />

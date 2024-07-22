@@ -120,6 +120,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -182,7 +185,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -205,7 +208,7 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
@@ -288,7 +291,7 @@
       <concept id="2011139961867522368" name="com.mbeddr.core.debug.blext.structure.IdentifierExpression" flags="ng" index="3nnt1z" />
       <concept id="7634928937261088600" name="com.mbeddr.core.debug.blext.structure.CVariableValueExpression" flags="ng" index="3ve8wM" />
       <concept id="7634928937261243331" name="com.mbeddr.core.debug.blext.structure.DefaultValueMappingRule" flags="ng" index="3veyMD" />
-      <concept id="7634928937261243271" name="com.mbeddr.core.debug.blext.structure.IValueMappingRule" flags="ngI" index="3veyNH">
+      <concept id="7634928937261243271" name="com.mbeddr.core.debug.blext.structure.IValueMappingRule" flags="ng" index="3veyNH">
         <child id="4996624930072785096" name="value" index="3lzIcI" />
       </concept>
     </language>
@@ -364,7 +367,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -3268,6 +3271,43 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5wiMD64QZSv" role="3cqZAp">
+          <node concept="3clFbS" id="5wiMD64QZSx" role="3clFbx">
+            <node concept="3clFbF" id="5wiMD64QyP9" role="3cqZAp">
+              <node concept="2OqwBi" id="5wiMD64Qzl8" role="3clFbG">
+                <node concept="37vLTw" id="5wiMD64QyP7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="29BUUxcmPHg" resolve="token" />
+                </node>
+                <node concept="liA8E" id="5wiMD64Q$by" role="2OqNvi">
+                  <ref role="37wK5l" to="iq8l:1YPL71Yln2O" resolve="add" />
+                  <node concept="2ShNRf" id="5wiMD64Q$AQ" role="37wK5m">
+                    <node concept="1pGfFk" id="5wiMD64QS_r" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="iq8l:6sPmSUBrjFn" resolve="AtomicToken" />
+                      <node concept="Xl_RD" id="5wiMD64QT4$" role="37wK5m">
+                        <property role="Xl_RC" value="(" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5wiMD64QWPk" role="3clFbw">
+            <node concept="Rm8GO" id="5wiMD64QYKh" role="3uHU7w">
+              <ref role="1Px2BO" to="iq8l:1YPL71YmUJE" resolve="TypeKind" />
+              <ref role="Rm8GQ" to="iq8l:1YPL71YmUKY" resolve="POINTER" />
+            </node>
+            <node concept="2OqwBi" id="5wiMD64QVRf" role="3uHU7B">
+              <node concept="37vLTw" id="5wiMD64QVBe" role="2Oq$k0">
+                <ref role="3cqZAo" node="29BUUxcmPiB" resolve="child" />
+              </node>
+              <node concept="liA8E" id="5wiMD64QWpT" role="2OqNvi">
+                <ref role="37wK5l" to="iq8l:2W1GNPBdoKb" resolve="getKind" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="29BUUxcmZGW" role="3cqZAp">
           <node concept="2OqwBi" id="29BUUxcmZHB" role="3clFbG">
             <node concept="37vLTw" id="29BUUxcmZHA" role="2Oq$k0">
@@ -3281,6 +3321,44 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5wiMD64R3S5" role="3cqZAp">
+          <node concept="3clFbS" id="5wiMD64R3S6" role="3clFbx">
+            <node concept="3clFbF" id="5wiMD64R3S7" role="3cqZAp">
+              <node concept="2OqwBi" id="5wiMD64R3S8" role="3clFbG">
+                <node concept="37vLTw" id="5wiMD64R3S9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="29BUUxcmPHg" resolve="token" />
+                </node>
+                <node concept="liA8E" id="5wiMD64R3Sa" role="2OqNvi">
+                  <ref role="37wK5l" to="iq8l:1YPL71Yln2O" resolve="add" />
+                  <node concept="2ShNRf" id="5wiMD64R3Sb" role="37wK5m">
+                    <node concept="1pGfFk" id="5wiMD64R3Sc" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="iq8l:6sPmSUBrjFn" resolve="AtomicToken" />
+                      <node concept="Xl_RD" id="5wiMD64R3Sd" role="37wK5m">
+                        <property role="Xl_RC" value=")" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5wiMD64R3Se" role="3clFbw">
+            <node concept="Rm8GO" id="5wiMD64R3Sf" role="3uHU7w">
+              <ref role="1Px2BO" to="iq8l:1YPL71YmUJE" resolve="TypeKind" />
+              <ref role="Rm8GQ" to="iq8l:1YPL71YmUKY" resolve="POINTER" />
+            </node>
+            <node concept="2OqwBi" id="5wiMD64R3Sg" role="3uHU7B">
+              <node concept="37vLTw" id="5wiMD64R3Sh" role="2Oq$k0">
+                <ref role="3cqZAo" node="29BUUxcmPiB" resolve="child" />
+              </node>
+              <node concept="liA8E" id="5wiMD64R3Si" role="2OqNvi">
+                <ref role="37wK5l" to="iq8l:2W1GNPBdoKb" resolve="getKind" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5wiMD64QxHl" role="3cqZAp" />
         <node concept="3clFbF" id="29BUUxcmZGZ" role="3cqZAp">
           <node concept="2OqwBi" id="29BUUxcmZHE" role="3clFbG">
             <node concept="37vLTw" id="29BUUxcmZHD" role="2Oq$k0">

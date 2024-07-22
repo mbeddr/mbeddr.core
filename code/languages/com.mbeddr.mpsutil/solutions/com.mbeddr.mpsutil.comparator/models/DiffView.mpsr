@@ -797,7 +797,7 @@
                                         <property role="Xl_RC" value="OK" />
                                       </node>
                                       <node concept="37vLTw" id="2u2KgtdmC0f" role="9lYEk">
-                                        <ref role="3cqZAo" node="3zBhpJM4Blc" resolve="mpsProject" />
+                                        <ref role="3cqZAo" node="3zBhpJM4Blc" resolve="project" />
                                       </node>
                                     </node>
                                     <node concept="1QHqEO" id="2u2KgtdluI1" role="3cqZAp">

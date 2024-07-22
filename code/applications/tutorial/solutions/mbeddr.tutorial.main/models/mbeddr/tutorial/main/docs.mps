@@ -11,7 +11,7 @@
   <imports />
   <registry>
     <language id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell">
-      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ngI" index="3vooZZ">
+      <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
         <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
         <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
       </concept>
@@ -30,7 +30,7 @@
       </concept>
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
       </concept>
@@ -54,7 +54,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -88,8 +88,8 @@
       </concept>
     </language>
     <language id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions">
-      <concept id="5378658552263149308" name="com.mbeddr.doc.expressions.structure.VariableDef" flags="ng" index="3XpXe8" />
-      <concept id="5378658552263151469" name="com.mbeddr.doc.expressions.structure.VarRef" flags="ng" index="3XpXCp">
+      <concept id="5378658552263149308" name="com.mbeddr.doc.expressions.structure.VariableDefinition" flags="ng" index="3XpXe8" />
+      <concept id="5378658552263151469" name="com.mbeddr.doc.expressions.structure.VariableReference" flags="ng" index="3XpXCp">
         <reference id="5378658552263151470" name="var" index="3XpXCq" />
       </concept>
       <concept id="5378658552263151447" name="com.mbeddr.doc.expressions.structure.Equation" flags="ng" index="3XpXCz">
@@ -102,14 +102,14 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
-      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ngI" index="2C2TGh">
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">

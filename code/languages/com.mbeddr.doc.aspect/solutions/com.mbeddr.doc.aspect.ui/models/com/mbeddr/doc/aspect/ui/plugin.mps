@@ -61,8 +61,8 @@
     <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -561,13 +561,6 @@
         <ref role="3uigEE" node="24MikXOfIA3" resolve="DocumentationHandler" />
       </node>
     </node>
-    <node concept="2BZ0e9" id="2uG4XYD$7kf" role="2uRRBA">
-      <property role="TrG5h" value="lastSelection" />
-      <node concept="3Tm6S6" id="2uG4XYD$7kg" role="1B3o_S" />
-      <node concept="3uibUv" id="2uG4XYD$oqA" role="1tU5fm">
-        <ref role="3uigEE" to="lwvz:~SingularSelection" resolve="SingularSelection" />
-      </node>
-    </node>
     <node concept="2uRRBT" id="5ucAXohL$xS" role="2uRRB$">
       <node concept="3clFbS" id="5ucAXohL$xT" role="2VODD2">
         <node concept="3clFbF" id="24MikXOgRxl" role="3cqZAp">
@@ -984,6 +977,13 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="2uG4XYD$7kf" role="2uRRBA">
+      <property role="TrG5h" value="lastSelection" />
+      <node concept="3Tm6S6" id="2uG4XYD$7kg" role="1B3o_S" />
+      <node concept="3uibUv" id="2uG4XYD$oqA" role="1tU5fm">
+        <ref role="3uigEE" to="lwvz:~SingularSelection" resolve="SingularSelection" />
       </node>
     </node>
   </node>
@@ -3487,7 +3487,7 @@
                     <property role="2bfB8j" value="true" />
                     <property role="373rjd" value="true" />
                     <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="7YOUX1l3g_3" role="1B3o_S" />
                     <node concept="3clFb_" id="7YOUX1l3g_h" role="jymVt">
                       <property role="TrG5h" value="run" />
@@ -4056,7 +4056,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="7YOUX1l3g_n" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>

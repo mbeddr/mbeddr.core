@@ -7,7 +7,6 @@
     <use id="983e02f8-8062-426e-b60d-bc044a46b93a" name="com.mbeddr.cc.requirements.report" version="0" />
     <use id="7a52ca96-9053-41d2-ae13-8cee05f36698" name="com.mbeddr.cc.requirements.c2doc" version="0" />
     <use id="b9f5080f-7f6a-4d86-b994-77d4c982153a" name="com.mbeddr.cc.requirements.scenario2doc" version="0" />
-    <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -17,7 +16,7 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
-      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLDummyRenderer" flags="ng" index="1TaS0h" />
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLNoOutputRenderer" flags="ng" index="1TaS0h" />
     </language>
     <language id="d6714220-402d-48cb-a4a2-88223c6257f6" name="com.mbeddr.cc.requirements.scenarios">
       <concept id="6514529288613812198" name="com.mbeddr.cc.requirements.scenarios.structure.UseCaseKind" flags="ng" index="4R1oT" />
@@ -51,7 +50,7 @@
       <concept id="5744000828452849517" name="com.mbeddr.cc.requirements.scenarios.structure.NonSelfCall" flags="ng" index="16NoOZ">
         <child id="5744000828452849518" name="targetParticipant" index="16NoOW" />
       </concept>
-      <concept id="5744000828452862536" name="com.mbeddr.cc.requirements.scenarios.structure.ICallContext" flags="ngI" index="16Nr0q">
+      <concept id="5744000828452862536" name="com.mbeddr.cc.requirements.scenarios.structure.ICallContext" flags="ng" index="16Nr0q">
         <child id="5744000828452862537" name="contents" index="16Nr0r" />
       </concept>
       <concept id="5744000828452835552" name="com.mbeddr.cc.requirements.scenarios.structure.ScenarioRequirementKind" flags="ng" index="16NtEM" />
@@ -93,11 +92,6 @@
         <child id="6446320527598554647" name="data" index="3UDY1a" />
       </concept>
     </language>
-    <language id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites">
-      <concept id="1259468517902790203" name="com.mbeddr.mpsutil.favourites.structure.FavouritesAnnotation" flags="ng" index="2Y6aBa">
-        <property id="1259468517902790204" name="category" index="2Y6aBd" />
-      </concept>
-    </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
@@ -119,7 +113,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
       </concept>
       <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
@@ -158,7 +152,7 @@
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -223,7 +217,7 @@
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
         <child id="8967919205527146150" name="expression" index="2BFjQA" />
       </concept>
-      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ngI" index="2H9T1B">
+      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
         <child id="5708867820623310661" name="arguments" index="1UOdpc" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
@@ -330,7 +324,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -348,7 +342,7 @@
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
-      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ngI" index="2C2TGh">
+      <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ng" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
@@ -1102,9 +1096,6 @@
       </node>
     </node>
     <node concept="2RsZnQ" id="2TTzVZwqvwb" role="2RsZnW" />
-    <node concept="2Y6aBa" id="FniR$CltW3" role="lGtFl">
-      <property role="2Y6aBd" value="Requirements" />
-    </node>
   </node>
   <node concept="3fbPIq" id="72IKZbjZLi7">
     <property role="TrG5h" value="ArchitecturalComponents" />
@@ -1303,9 +1294,6 @@
       <node concept="19SGf9" id="2TTzVZwqvw9" role="OjmMu">
         <node concept="19SUe$" id="2TTzVZwqvwa" role="19SJt6" />
       </node>
-    </node>
-    <node concept="2Y6aBa" id="FniR$ClGbG" role="lGtFl">
-      <property role="2Y6aBd" value="Requirements" />
     </node>
   </node>
   <node concept="3fbPIq" id="5YVZL2kzViv">
@@ -1689,9 +1677,6 @@
       </node>
     </node>
     <node concept="2RsZnQ" id="2TTzVZwqvwc" role="2RsZnW" />
-    <node concept="2Y6aBa" id="FniR$ClnkY" role="lGtFl">
-      <property role="2Y6aBd" value="Requirements" />
-    </node>
   </node>
   <node concept="1_1swa" id="519ky_SmMSS">
     <property role="TrG5h" value="requirementsReport" />

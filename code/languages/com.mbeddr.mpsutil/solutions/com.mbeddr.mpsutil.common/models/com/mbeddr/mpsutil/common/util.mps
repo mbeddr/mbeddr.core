@@ -3682,7 +3682,7 @@
                       </node>
                     </node>
                     <node concept="37vLTw" id="9jWrhFiGOr" role="37vLTJ">
-                      <ref role="3cqZAo" node="9jWrhFiBB7" resolve="supplier" />
+                      <ref role="3cqZAo" node="9jWrhFiBB7" resolve="innerSupplier" />
                     </node>
                   </node>
                 </node>
@@ -3696,7 +3696,7 @@
             <node concept="2OqwBi" id="9jWrhFiD1Z" role="37vLTJ">
               <node concept="Xjq3P" id="9jWrhFiCJ0" role="2Oq$k0" />
               <node concept="2OwXpG" id="9jWrhFiD_8" role="2OqNvi">
-                <ref role="2Oxat5" node="9jWrhFiBB7" resolve="supplier" />
+                <ref role="2Oxat5" node="9jWrhFiBB7" resolve="innerSupplier" />
               </node>
             </node>
           </node>
@@ -3732,13 +3732,13 @@
         <node concept="3clFbF" id="9jWrhFiJg9" role="3cqZAp">
           <node concept="2Sg_IR" id="9jWrhFiJtA" role="3clFbG">
             <node concept="37vLTw" id="9jWrhFiJtB" role="2SgG2M">
-              <ref role="3cqZAo" node="9jWrhFiBB7" resolve="supplier" />
+              <ref role="3cqZAo" node="9jWrhFiBB7" resolve="innerSupplier" />
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="9jWrhFiB10" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3UR2Jj" id="9jWrhFm7uv" role="lGtFl">
@@ -3894,7 +3894,7 @@
             <node concept="2OqwBi" id="9jWrhFiXur" role="37vLTJ">
               <node concept="Xjq3P" id="9jWrhFiXus" role="2Oq$k0" />
               <node concept="2OwXpG" id="9jWrhFiXut" role="2OqNvi">
-                <ref role="2Oxat5" node="9jWrhFiXu0" resolve="supplier" />
+                <ref role="2Oxat5" node="9jWrhFiXu0" resolve="innerSupplier" />
               </node>
             </node>
           </node>
@@ -4118,13 +4118,13 @@
         <node concept="3clFbF" id="9jWrhFiXuE" role="3cqZAp">
           <node concept="2Sg_IR" id="9jWrhFiXuF" role="3clFbG">
             <node concept="37vLTw" id="9jWrhFiXuG" role="2SgG2M">
-              <ref role="3cqZAo" node="9jWrhFiXu0" resolve="supplier" />
+              <ref role="3cqZAo" node="9jWrhFiXu0" resolve="innerSupplier" />
             </node>
           </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="9jWrhFiXuH" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3UR2Jj" id="9jWrhFm84N" role="lGtFl">
@@ -4239,7 +4239,7 @@
             <node concept="1rXfSq" id="5Hb7SE2mZSt" role="2Oq$k0">
               <ref role="37wK5l" node="5Hb7SE2mAo$" resolve="create" />
               <node concept="37vLTw" id="5Hb7SE2n0qo" role="37wK5m">
-                <ref role="3cqZAo" node="5Hb7SE2mUup" resolve="visit" />
+                <ref role="3cqZAo" node="5Hb7SE2mUup" resolve="finishNow" />
               </node>
               <node concept="37vLTw" id="5Hb7SE2n1hZ" role="37wK5m">
                 <ref role="3cqZAo" node="5Hb7SE2mUut" resolve="successors" />
@@ -4248,7 +4248,7 @@
             <node concept="liA8E" id="5Hb7SE2n2aK" role="2OqNvi">
               <ref role="37wK5l" node="5Hb7SE23SD3" resolve="doBreadthFirst" />
               <node concept="37vLTw" id="5Hb7SE2n3ai" role="37wK5m">
-                <ref role="3cqZAo" node="5Hb7SE2mUum" resolve="startNodes" />
+                <ref role="3cqZAo" node="5Hb7SE2mUum" resolve="startNode" />
               </node>
             </node>
           </node>
@@ -4335,14 +4335,14 @@
             <node concept="1rXfSq" id="5Hb7SE2n3_o" role="2Oq$k0">
               <ref role="37wK5l" node="5Hb7SE2mAo$" resolve="create" />
               <node concept="37vLTw" id="5Hb7SE2n3_p" role="37wK5m">
-                <ref role="3cqZAo" node="5Hb7SE2n3_c" resolve="visit" />
+                <ref role="3cqZAo" node="5Hb7SE2n3_c" resolve="finishNow" />
               </node>
               <node concept="37vLTw" id="5Hb7SE2n3_q" role="37wK5m">
                 <ref role="3cqZAo" node="5Hb7SE2n3_g" resolve="successors" />
               </node>
             </node>
             <node concept="liA8E" id="5Hb7SE2n3_r" role="2OqNvi">
-              <ref role="37wK5l" node="5Hb7SE23LnD" resolve="doBreadthFirst1" />
+              <ref role="37wK5l" node="5Hb7SE23LnD" resolve="doBreadthFirst" />
               <node concept="37vLTw" id="5Hb7SE2n3_s" role="37wK5m">
                 <ref role="3cqZAo" node="5Hb7SE2n3_9" resolve="startNodes" />
               </node>
@@ -4424,7 +4424,7 @@
               <node concept="1Y3b0j" id="5Hb7SE2mIpt" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <ref role="1Y3XeK" node="5Hb7SE23e8T" resolve="Traversal" />
                 <node concept="3Tm1VV" id="5Hb7SE2mIpu" role="1B3o_S" />
                 <node concept="16syzq" id="5Hb7SE2mI4$" role="2Ghqu4">
@@ -4444,7 +4444,7 @@
                     <node concept="3clFbF" id="5Hb7SE2mJks" role="3cqZAp">
                       <node concept="2Sg_IR" id="5Hb7SE2mP4a" role="3clFbG">
                         <node concept="37vLTw" id="5Hb7SE2mP4b" role="2SgG2M">
-                          <ref role="3cqZAo" node="5Hb7SE2mD42" resolve="visit" />
+                          <ref role="3cqZAo" node="5Hb7SE2mD42" resolve="finishNowFunc" />
                         </node>
                         <node concept="37vLTw" id="5Hb7SE2mPGE" role="2SgHGx">
                           <ref role="3cqZAo" node="5Hb7SE2mJkk" resolve="n" />
@@ -4453,7 +4453,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="5Hb7SE2mJkq" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="3clFb_" id="5Hb7SE2mJkt" role="jymVt">
@@ -4474,7 +4474,7 @@
                     <node concept="3clFbF" id="5Hb7SE2mT0L" role="3cqZAp">
                       <node concept="2Sg_IR" id="5Hb7SE2mTr8" role="3clFbG">
                         <node concept="37vLTw" id="5Hb7SE2mTr9" role="2SgG2M">
-                          <ref role="3cqZAo" node="5Hb7SE2mD_U" resolve="successors" />
+                          <ref role="3cqZAo" node="5Hb7SE2mD_U" resolve="successorsFunc" />
                         </node>
                         <node concept="37vLTw" id="5Hb7SE2mUeH" role="2SgHGx">
                           <ref role="3cqZAo" node="5Hb7SE2mJky" resolve="n" />
@@ -4483,7 +4483,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="5Hb7SE2mJkD" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
               </node>
@@ -4650,7 +4650,7 @@
               </node>
             </node>
             <node concept="liA8E" id="1BQevbVT1qI" role="2OqNvi">
-              <ref role="37wK5l" node="5Hb7SE23LnD" resolve="doBreadthFirst1" />
+              <ref role="37wK5l" node="5Hb7SE23LnD" resolve="doBreadthFirst" />
               <node concept="37vLTw" id="1BQevbVT1qJ" role="37wK5m">
                 <ref role="3cqZAo" node="1BQevbVT1qs" resolve="startNodes" />
               </node>
@@ -4955,7 +4955,7 @@
                     </node>
                     <node concept="TSZUe" id="1YEBaqBGnXH" role="2OqNvi">
                       <node concept="37vLTw" id="1YEBaqBGoXj" role="25WWJ7">
-                        <ref role="3cqZAo" node="1YEBaqBFUrt" resolve="vc" />
+                        <ref role="3cqZAo" node="1YEBaqBFUrt" resolve="item" />
                       </node>
                     </node>
                   </node>
@@ -4986,7 +4986,7 @@
                       </node>
                     </node>
                     <node concept="1rXfSq" id="5Hb7SE24NBp" role="33vP2m">
-                      <ref role="37wK5l" node="5Hb7SE24D9s" resolve="successors" />
+                      <ref role="37wK5l" node="5Hb7SE24D9s" resolve="successorsOf" />
                       <node concept="37vLTw" id="5Hb7SE24NBq" role="37wK5m">
                         <ref role="3cqZAo" node="1YEBaqBFUrt" resolve="item" />
                       </node>
@@ -5013,7 +5013,7 @@
                   </node>
                   <node concept="3JPx81" id="1YEBaqBGjFe" role="2OqNvi">
                     <node concept="37vLTw" id="1YEBaqBGjFf" role="25WWJ7">
-                      <ref role="3cqZAo" node="1YEBaqBFUrt" resolve="vc" />
+                      <ref role="3cqZAo" node="1YEBaqBFUrt" resolve="item" />
                     </node>
                   </node>
                 </node>
