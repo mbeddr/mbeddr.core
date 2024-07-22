@@ -34,6 +34,7 @@
     <import index="pzvh" ref="r:ca045cc4-bf15-4298-974d-854171fafdc0(com.mbeddr.core.statements.constraints)" />
     <import index="p3tm" ref="r:7b158038-abbe-4e11-b171-d5a959b4e91a(com.mbeddr.core.modules.typesystem)" />
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
+    <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +89,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -29794,7 +29798,7 @@
               <node concept="OjmMv" id="C7lj4lOXxn" role="3SJzmv">
                 <node concept="19SGf9" id="C7lj4lOXxo" role="OjmMu">
                   <node concept="19SUe$" id="C7lj4lOXxp" role="19SJt6">
-                    <property role="19SUeA" value="Expected generated code: &#10;arraysAndPointersOK( int8_t (*int8ArrayPtr)[8], int8_t *(int8PtrArray[]), char (*stringArrayPtr)[8 + 1], char const  *(stringPtrArray[]) )&#10;               " />
+                    <property role="19SUeA" value="Expected generated code: &#10;arraysAndPointersOK( int8_t (*int8ArrayPtr)[8],&#10;                             int8_t *(int8PtrArray[]), &#10;                             char (*charArrayPtr)[9],&#10;                             int32_t ((*(sum))(int16_t (*)[2])),&#10;                             char (*stringArrayPtr)[8 + 1],&#10;                             char const  charPtrArray[] )&#10;               " />
                   </node>
                 </node>
               </node>
@@ -29821,6 +29825,9 @@
                 </node>
               </node>
             </node>
+            <node concept="3xLA65" id="5wiMD66NdgZ" role="lGtFl">
+              <property role="TrG5h" value="FirstParam" />
+            </node>
           </node>
           <node concept="19RgSI" id="C7lj4lOXA3" role="1UOdpc">
             <property role="TrG5h" value="int8PtrArray" />
@@ -29836,10 +29843,46 @@
                 </node>
               </node>
             </node>
+            <node concept="3xLA65" id="5wiMD66OVph" role="lGtFl">
+              <property role="TrG5h" value="SecondParam" />
+            </node>
           </node>
           <node concept="19RgSI" id="C7lj4lWri8" role="1UOdpc">
-            <property role="TrG5h" value="stringArrayPtr" />
+            <property role="TrG5h" value="charArrayPtr" />
             <node concept="3wxxNl" id="C7lj4lWrm$" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+              <node concept="3J0A42" id="5wiMD66U$Yt" role="2umbIo">
+                <node concept="biTqx" id="5wiMD66U$W$" role="2umbIo" />
+                <node concept="3TlMh9" id="5wiMD66U_0$" role="1YbSNA">
+                  <property role="2hmy$m" value="9" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xLA65" id="5wiMD66OVqx" role="lGtFl">
+              <property role="TrG5h" value="ThirdParam" />
+            </node>
+          </node>
+          <node concept="19RgSI" id="5j7TjldKOqb" role="1UOdpc">
+            <property role="TrG5h" value="sum" />
+            <node concept="pFrBc" id="5j7TjldKOq7" role="2C2TGm">
+              <node concept="26Vqph" id="5j7TjldKO_5" role="pFrBb" />
+              <node concept="3wxxNl" id="5j7TjldKOxq" role="pFrBa">
+                <node concept="3J0A42" id="5j7TjldKOvz" role="2umbIo">
+                  <node concept="26Vqpq" id="5j7TjldKOv9" role="2umbIo" />
+                  <node concept="3TlMh9" id="5j7TjldKOwj" role="1YbSNA">
+                    <property role="2hmy$m" value="2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xLA65" id="5j7TjldKORY" role="lGtFl">
+              <property role="TrG5h" value="FourthParam" />
+            </node>
+          </node>
+          <node concept="19RgSI" id="5wiMD66YoMs" role="1UOdpc">
+            <property role="TrG5h" value="stringArrayPtr" />
+            <node concept="3wxxNl" id="5wiMD66YoMt" role="2C2TGm">
               <property role="2caQfQ" value="false" />
               <property role="2c7vTL" value="false" />
               <node concept="12rfTQ" id="C7lj4lWrm4" role="2umbIo">
@@ -29851,7 +29894,7 @@
               </node>
             </node>
           </node>
-          <node concept="19RgSI" id="C7lj4lOs_t" role="1UOdpc">
+          <node concept="19RgSI" id="5wiMD66YoVv" role="1UOdpc">
             <property role="TrG5h" value="stringPtrArray" />
             <node concept="3J0A42" id="C7lj4lOsCg" role="2C2TGm">
               <property role="2caQfQ" value="false" />
@@ -29868,6 +29911,201 @@
         </node>
         <node concept="7CXmI" id="3LtIbWJH_pp" role="lGtFl">
           <node concept="7OXhh" id="3LtIbWJH_HI" role="7EUXB" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5wiMD66MZZx" role="1SL9yI">
+      <property role="TrG5h" value="checkFunctionParameterTextGen" />
+      <node concept="3cqZAl" id="5wiMD66MZZy" role="3clF45" />
+      <node concept="3clFbS" id="5wiMD66MZZA" role="3clF47">
+        <node concept="3SKdUt" id="5wiMD66QVb2" role="3cqZAp">
+          <node concept="1PaTwC" id="5wiMD66QVb3" role="1aUNEU">
+            <node concept="3oM_SD" id="5wiMD66QVcC" role="1PaTwD">
+              <property role="3oM_SC" value="Pointer" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QVd1" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QVda" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QVdk" role="1PaTwD">
+              <property role="3oM_SC" value="Array" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QVcI" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QVcL" role="1PaTwD">
+              <property role="3oM_SC" value="int8_t:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5wiMD66NgwZ" role="3cqZAp">
+          <node concept="Xl_RD" id="3m8h6gjHVwa" role="3tpDZB">
+            <property role="Xl_RC" value="int8_t (*int8ArrayPtr)[8]" />
+          </node>
+          <node concept="2YIFZM" id="3m8h6gjHVy9" role="3tpDZA">
+            <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+            <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+            <node concept="3xONca" id="3m8h6gjHVya" role="37wK5m">
+              <ref role="3xOPvv" node="5wiMD66NdgZ" resolve="FirstParam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5wiMD66QV5N" role="3cqZAp" />
+        <node concept="3SKdUt" id="5wiMD66QV3_" role="3cqZAp">
+          <node concept="1PaTwC" id="5wiMD66QV3A" role="1aUNEU">
+            <node concept="3oM_SD" id="5wiMD66QV53" role="1PaTwD">
+              <property role="3oM_SC" value="Array" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QV59" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QV5g" role="1PaTwD">
+              <property role="3oM_SC" value="pointer" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QV5o" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66QV5x" role="1PaTwD">
+              <property role="3oM_SC" value="int8_t:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5wiMD66OVzT" role="3cqZAp">
+          <node concept="Xl_RD" id="3m8h6gjHVxH" role="3tpDZB">
+            <property role="Xl_RC" value="int8_t *int8PtrArray[]" />
+          </node>
+          <node concept="2YIFZM" id="3m8h6gjHVzF" role="3tpDZA">
+            <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+            <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+            <node concept="3xONca" id="3m8h6gjHVzG" role="37wK5m">
+              <ref role="3xOPvv" node="5wiMD66OVph" resolve="SecondParam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5wiMD66QVdV" role="3cqZAp" />
+        <node concept="3SKdUt" id="5wiMD66RRaz" role="3cqZAp">
+          <node concept="1PaTwC" id="5wiMD66RRcG" role="1aUNEU">
+            <node concept="3oM_SD" id="5wiMD66RRcH" role="1PaTwD">
+              <property role="3oM_SC" value="Pointer" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66RRe5" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66RRek" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66RRe$" role="1PaTwD">
+              <property role="3oM_SC" value="Array" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66RReP" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66RRf7" role="1PaTwD">
+              <property role="3oM_SC" value="chars:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5wiMD66SrUO" role="3cqZAp">
+          <node concept="Xl_RD" id="3m8h6gjHVHU" role="3tpDZB">
+            <property role="Xl_RC" value="char (*charArrayPtr)[9]" />
+          </node>
+          <node concept="2YIFZM" id="5wiMD66SrUP" role="3tpDZA">
+            <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+            <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+            <node concept="3xONca" id="5wiMD66SrUQ" role="37wK5m">
+              <ref role="3xOPvv" node="5wiMD66OVqx" resolve="ThirdParam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5j7TjldKP3n" role="3cqZAp" />
+        <node concept="3SKdUt" id="5j7TjldLWyS" role="3cqZAp">
+          <node concept="1PaTwC" id="5j7TjldLWyT" role="1aUNEU">
+            <node concept="3oM_SD" id="5j7TjldLW_d" role="1PaTwD">
+              <property role="3oM_SC" value="Pointer" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_f" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_i" role="1PaTwD">
+              <property role="3oM_SC" value="function" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_m" role="1PaTwD">
+              <property role="3oM_SC" value="using" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_r" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWB4" role="1PaTwD">
+              <property role="3oM_SC" value="pointer" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_x" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWBk" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_C" role="1PaTwD">
+              <property role="3oM_SC" value="array" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_K" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLW_T" role="1PaTwD">
+              <property role="3oM_SC" value="2" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWA3" role="1PaTwD">
+              <property role="3oM_SC" value="int16" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAe" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAq" role="1PaTwD">
+              <property role="3oM_SC" value="returning" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAB" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="5j7TjldLWAP" role="1PaTwD">
+              <property role="3oM_SC" value="int32" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5j7TjldKP0I" role="3cqZAp">
+          <node concept="Xl_RD" id="5j7TjldKP0J" role="3tpDZB">
+            <property role="Xl_RC" value="int32_t ((*(sum))(int16_t (*)[2]))" />
+          </node>
+          <node concept="2YIFZM" id="5j7TjldKP0K" role="3tpDZA">
+            <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+            <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+            <node concept="3xONca" id="5j7TjldKP0L" role="37wK5m">
+              <ref role="3xOPvv" node="5j7TjldKORY" resolve="FourthParam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5wiMD66UzzU" role="3cqZAp" />
+        <node concept="3SKdUt" id="5wiMD66Z14b" role="3cqZAp">
+          <node concept="1PaTwC" id="5wiMD66Z14c" role="1aUNEU">
+            <node concept="3oM_SD" id="5wiMD66Z15W" role="1PaTwD">
+              <property role="3oM_SC" value="StringArrayTypes" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66Z17P" role="1PaTwD">
+              <property role="3oM_SC" value="cannot" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66Z167" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66Z16e" role="1PaTwD">
+              <property role="3oM_SC" value="tested" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66Z16m" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="5wiMD66Z16O" role="1PaTwD">
+              <property role="3oM_SC" value="TextGeneratorEngine." />
+            </node>
+          </node>
         </node>
       </node>
     </node>

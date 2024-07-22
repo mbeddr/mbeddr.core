@@ -433,7 +433,7 @@
         <node concept="3clFbF" id="Pu8Vy2crRx" role="3cqZAp">
           <node concept="3cpWs3" id="Pu8Vy2dL6_" role="3clFbG">
             <node concept="Xl_RD" id="Pu8Vy2dL71" role="3uHU7w">
-              <property role="Xl_RC" value="]" />
+              <property role="Xl_RC" value=")" />
             </node>
             <node concept="3cpWs3" id="Pu8Vy2dKO7" role="3uHU7B">
               <node concept="3cpWs3" id="Pu8Vy2dKET" role="3uHU7B">
@@ -466,7 +466,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="Pu8Vy2dKIt" role="3uHU7w">
-                  <property role="Xl_RC" value="[" />
+                  <property role="Xl_RC" value="(" />
                 </node>
               </node>
               <node concept="2OqwBi" id="Pu8Vy2dKZE" role="3uHU7w">

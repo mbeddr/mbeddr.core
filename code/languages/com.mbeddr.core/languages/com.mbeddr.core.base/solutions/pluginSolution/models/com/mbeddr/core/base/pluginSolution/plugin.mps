@@ -121,9 +121,9 @@
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="o2jy" ref="r:5a764b6f-e05f-4050-b22c-cbcad1577f1b(jetbrains.mps.ide.refactoring)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
-    <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
     <import index="zyr2" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.inspector(MPS.Editor/)" />
     <import index="7oz1" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.configuration(MPS.Editor/)" />
+    <import index="wvnl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.extensions(MPS.Editor/)" />
     <import index="mmaq" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom(org.jdom/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
@@ -18190,12 +18190,17 @@
               </node>
               <node concept="3clFbJ" id="bhVSeGbaYZ" role="3cqZAp">
                 <node concept="3clFbS" id="bhVSeGbaZ2" role="3clFbx">
-                  <node concept="3clFbF" id="bhVSeGelF7" role="3cqZAp">
-                    <node concept="2OqwBi" id="bhVSeGelF8" role="3clFbG">
-                      <node concept="2WthIp" id="bhVSeGelF9" role="2Oq$k0" />
-                      <node concept="liA8E" id="bhVSeGelFa" role="2OqNvi">
-                        <ref role="37wK5l" to="qkt:~ActionGroup.setPopup(boolean)" resolve="setPopup" />
-                        <node concept="3clFbT" id="bhVSeGelFb" role="37wK5m">
+                  <node concept="3clFbF" id="1FnP66YV0Nr" role="3cqZAp">
+                    <node concept="2OqwBi" id="1FnP66YV0Ns" role="3clFbG">
+                      <node concept="2OqwBi" id="1FnP66YV0Nt" role="2Oq$k0">
+                        <node concept="tl45R" id="1FnP66YV0Nu" role="2Oq$k0" />
+                        <node concept="liA8E" id="1FnP66YV0Nv" role="2OqNvi">
+                          <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1FnP66YV0Nw" role="2OqNvi">
+                        <ref role="37wK5l" to="qkt:~Presentation.setPopupGroup(boolean)" resolve="setPopupGroup" />
+                        <node concept="3clFbT" id="1FnP66YV0Nx" role="37wK5m">
                           <property role="3clFbU" value="true" />
                         </node>
                       </node>
