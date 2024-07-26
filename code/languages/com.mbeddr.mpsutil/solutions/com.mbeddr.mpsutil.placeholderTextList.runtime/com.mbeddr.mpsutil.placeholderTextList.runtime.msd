@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.placeholderTextList.runtime" uuid="b8cd51c2-0845-4e1a-be50-29c6044bc90f" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.placeholderTextList.runtime" uuid="b8cd51c2-0845-4e1a-be50-29c6044bc90f" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
