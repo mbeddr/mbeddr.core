@@ -1,11 +1,11 @@
 pluginManagement {
     repositories {
-        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
+        maven("https://artifacts.itemis.cloud/repository/maven-mps/")
         gradlePluginPortal()
     }
 }
 
-include ":build:com.mbeddr",
+include(":build:com.mbeddr",
         ":build:com.mbeddr:platform",
         ":build:com.mbeddr:languages",
         ":build:com.mbeddr:distribution",
@@ -13,9 +13,9 @@ include ":build:com.mbeddr",
         ":build:thirdparty",
         ":build:thirdparty:graphviz",
         ":build:thirdparty:jdk",
-        ":build:publishing"
+        ":build:publishing")
 
-include ":BigProject"
-project(":BigProject").projectDir = file('tools/BigProject')
+include(":BigProject")
+project(":BigProject").projectDir = file("tools/BigProject")
 
-rootProject.name = 'mbeddr.core'
+rootProject.name = "mbeddr.core"
