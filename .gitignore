@@ -147,8 +147,6 @@ code/languages/offline.sh
 # CBMC analyses results temporary files
 code/*/xmlCBMCRawOutput/*
 
-/build/**/*.xml
-/build/com.mbeddr.allScripts/build.xml
 
 # -----------------------------------------------------------
 # tutorial build
@@ -176,15 +174,16 @@ gradle.properties
 **/.gradle/*
 **/scripts/*
 **/MPS/*
-**/build/repo/
-**/build/distributions
-**/build/classes
 antlib.xml
 **/code/languages/myDependencies
 **/.settings/org.eclipse.buildship.core.prefs
 **/.project
+
+/build/
+
 # ecore transformation tools
 code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox
+
 
 # -----------------------------------------------------------
 # Visual Studio Code settings
