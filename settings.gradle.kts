@@ -5,11 +5,20 @@ pluginManagement {
     }
 }
 
-include(":build:com.mbeddr",
-        ":build:com.mbeddr:platform",
-        ":build:com.mbeddr:languages",
-        ":build:com.mbeddr:distribution",
-        ":build:publishing")
+val subprojectPaths = listOf("com.mbeddr",
+    "com.mbeddr:platform",
+    "com.mbeddr:languages",
+    "com.mbeddr:distribution",
+    "publishing")
+
+fun fqpath(path: String) = ":build:$path"
+fun dir(path: String) = file("subprojects/" + path.replace(':', '/'))
+
+include(*subprojectPaths.map(::fqpath).toTypedArray())
+
+for (path in subprojectPaths) {
+    project(fqpath(path)).projectDir = dir(path)
+}
 
 include(":BigProject")
 project(":BigProject").projectDir = file("tools/BigProject")
