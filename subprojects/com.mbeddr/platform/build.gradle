@@ -43,12 +43,10 @@ task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_mps
             println "##teamcity[buildNumber '${mbeddrPlatformBuildNumber}']"
         }
     }
-    script rootProject.file('build/com.mbeddr.allScripts/build.xml')
-    // Next is to tell gradle there's output under specified folder.
-    // Gradle looks into locations during 'configuration' phase, and can't guess the build.xml script (above)
-    // produces anything into artifacts/..., and from time to time considers package_allScripts Zip task
-    // as having NO-SOURCE, and ignores the task
-    outputs.dir(new File(artifactsDir, 'com.mbeddr.allScripts.build/'))
+    script rootProject.file('build-allScripts.xml')
+
+    // Need to override basedir until https://github.com/JetBrains/MPS/pull/73 is merged or otherwise fixed.
+    scriptArgs = ["-Dbasedir=${rootProject.file('code/languages/com.mbeddr.build')}"]
 }
 
 task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
