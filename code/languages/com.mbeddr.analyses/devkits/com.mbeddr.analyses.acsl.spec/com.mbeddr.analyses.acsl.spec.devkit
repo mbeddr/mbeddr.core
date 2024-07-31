@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.analyses.acsl.spec" uuid="e79cff4c-e3e9-4626-9aca-bcc76320fb14">
-  <exported-language name="3c648e74-bfd0-47ab-a27b-a7ece174dc55(com.mbeddr.analyses.acsl)" />
-  <exported-language name="1a857f23-abc6-4154-8fb9-f23dbfc65145(com.mbeddr.analyses.acsl.assertions.gen)" />
-</dev-kit>
-

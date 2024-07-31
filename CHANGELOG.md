@@ -7,6 +7,13 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # July 2024
 
+## com.mbeddr.analyses
+
+### Removed
+
+- The complete com.mbeddr.analyses project (integration with static checkers for C) was removed as it was unmaintained
+  and apparently no longer used.
+
 ## com.mbeddr.mpsutil.comparator
 
 ### Added
