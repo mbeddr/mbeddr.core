@@ -1036,7 +1036,7 @@
           <node concept="3fqX7Q" id="80_psBWgvD" role="3clFbw">
             <node concept="2OqwBi" id="80_psBWgvE" role="3fr31v">
               <node concept="liA8E" id="80_psBWgvG" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~Component.isFocusOwner()" resolve="isFocusOwner" />
+                <ref role="37wK5l" to="exr9:~EditorComponent.isFocusOwner()" resolve="isFocusOwner" />
               </node>
               <node concept="1rXfSq" id="7RVr8_tUInB" role="2Oq$k0">
                 <ref role="37wK5l" node="7RVr8_tU_PH" resolve="getEditorComponent" />
