@@ -9,7 +9,6 @@ include ":build:com.mbeddr",
         ":build:com.mbeddr:platform",
         ":build:com.mbeddr:languages",
         ":build:com.mbeddr:distribution",
-        ":build:com.mbeddr:analyses.test",
         ":build:publishing"
 
 include ":BigProject"
