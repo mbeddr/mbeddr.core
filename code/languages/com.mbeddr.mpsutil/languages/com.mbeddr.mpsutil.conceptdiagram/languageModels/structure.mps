@@ -50,6 +50,23 @@
     <property role="EcuMT" value="2634829965774842138" />
     <property role="34LRSv" value="concept diagram" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2igMYjp_Ggs" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="IQ2ns" value="2634829965775258652" />
+      <ref role="20lvS9" node="2igMYjpPzq7" resolve="AbstractConceptDeclarationRef" />
+    </node>
+    <node concept="1TJgyj" id="7APyAbMnxWJ" role="1TKVEi">
+      <property role="IQ2ns" value="8770068006951591727" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="languagesInScope" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    </node>
+    <node concept="PrWs8" id="2igMYjp$jPf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="1TJgyi" id="1FnP670bD7A" role="1TKVEl">
       <property role="IQ2nx" value="1934248081280111078" />
       <property role="TrG5h" value="dontSaveLayoutData" />
@@ -69,23 +86,6 @@
       <property role="IQ2nx" value="1934248081282033847" />
       <property role="TrG5h" value="ignoredDeprecatedConcepts" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="2igMYjp_Ggs" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="contents" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="IQ2ns" value="2634829965775258652" />
-      <ref role="20lvS9" node="2igMYjpPzq7" resolve="AbstractConceptDeclarationRef" />
-    </node>
-    <node concept="1TJgyj" id="7APyAbMnxWJ" role="1TKVEi">
-      <property role="IQ2ns" value="8770068006951591727" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="languagesInScope" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
-    </node>
-    <node concept="PrWs8" id="2igMYjp$jPf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2igMYjpPzq7">

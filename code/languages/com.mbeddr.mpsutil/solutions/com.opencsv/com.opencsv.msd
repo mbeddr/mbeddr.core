@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.opencsv" uuid="11045775-3aaf-4816-8077-8656c4e8fee1" moduleVersion="0" compileInMPS="true">
+<solution name="com.opencsv" uuid="11045775-3aaf-4816-8077-8656c4e8fee1" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/opencsv-2.3.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/opencsv-2.3.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/opencsv-2.3.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
