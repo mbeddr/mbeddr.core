@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# August 2024
+
+## com.mbeddr.mpsutils
+
+### Added
+
+- Trace explorer option to decorate nodes with values of evaluated counterparts, which are not part of the model. 
+
 # July 2024
 
 ## com.mbeddr.mpsutil.comparator
