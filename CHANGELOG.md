@@ -5,7 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# August 2024
+
+## com.mbeddr.rcp, com.mbeddr.allInOne
+
+### Removed
+
+- RCP, installer, and all-in-one distribution was removed.
+
 # July 2024
+
+## com.mbeddr.analyses
+
+### Removed
+
+- The complete com.mbeddr.analyses project (integration with static checkers for C) was removed as it was unmaintained
+  and apparently no longer used.
 
 ## com.mbeddr.mpsutil.comparator
 
@@ -14,6 +29,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - In addition to some null checks, node annotations can now be compared and also children of references. The node difference descriptions were also improved.
 
 # June 2024
+
+## com.mbeddr.mpsutil
+
+### Deprecated
+
+- The language `com.mbeddr.mpsutil.favourites` was deprecated in favor of the builtin MPS bookmark manager. See: https://www.jetbrains.com/help/mps/navigating-through-the-source-code.html#use_bookmarks
 
 ## com.mbeddr.mpsutil.conceptdiagram
 
@@ -113,7 +134,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Removed
 
 - The deprecated language `com.mbeddr.mpsutil.coverage.emma` was removed. As a replacement, the
- JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
+  JaCoCo code coverage integration from [mbeddr/mps-qa](https://github.com/mbeddr/mps-qa) can be used ([more information](https://github.com/mbeddr/mps-qa/tree/master/code/languages/org.mpsqa.testing)).
 
 ### Added
 
@@ -136,6 +157,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Changed
 
 - Enhanced TraceExplorer to hide toolbar buttons.
+
+### Removed
+
+- The language com.mbeddr.mpsutil.lantest was removed since it isn't fully working anymore.
 
 ## com.mbeddr.core.base
 
@@ -166,6 +191,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Enhanced TraceExplorer to allow custom filters on trace nodes, choose filters by menu and stores and can restore a manually unfolded trees.
 - The language will no longer attempt to generate screenshots when run from an `MpsEnvironment` (i.e. the `<generate>` Ant task) but will instead output a warning. Use [mps-gradle-plugin](https://github.com/mbeddr/mps-gradle-plugin), [mps-build-backends](https://github.com/mbeddr/mps-build-backends), MPS tests, or other means to run the MPS make process in an IDEA environment.
+- plantuml was upgraded to v1.2023.12.
 
 ### Fixed
 
