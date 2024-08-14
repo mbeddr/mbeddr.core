@@ -7,11 +7,11 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # August 2024
 
-## com.mbeddr.mpsutils
+## com.mbeddr.mpsutil.traceExplorer
 
 ### Added
 
-- Trace explorer option to decorate nodes with values of evaluated counterparts, which are not part of the model. 
+- Added trace explorer option to decorate nodes with values of evaluated counterparts, which are not part of the model. 
 
 # July 2024
 
