@@ -13,6 +13,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The tests build script (`com.mbeddr.platform.tests.ts.build`) is no longer part of the `com.mbeddr.platform` build
   solution.
+- Unused (and unusable) `com.mbeddr.platform.distribution` build script was removed.
 
 ## com.mbeddr.rcp, com.mbeddr.allInOne
 

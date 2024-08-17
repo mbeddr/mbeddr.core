@@ -53,7 +53,6 @@
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="927724900262033862" name="copyResources" index="2_Ic$B" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
-        <child id="927724900262033863" name="resourceSelectors" index="2_Ic$A" />
       </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
         <child id="2750015747481074432" name="path" index="2HvfZ0" />
@@ -66,7 +65,6 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
@@ -79,9 +77,7 @@
       </concept>
       <concept id="5617550519002745364" name="jetbrains.mps.build.structure.BuildLayout" flags="ng" index="1l3spV" />
       <concept id="5617550519002745363" name="jetbrains.mps.build.structure.BuildProject" flags="ng" index="1l3spW">
-        <property id="4915877860348071612" name="fileName" index="turDy" />
         <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
-        <child id="4796668409958418110" name="scriptsDir" index="auvoZ" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
         <child id="7389400916848080626" name="parts" index="3989C9" />
         <child id="3542413272732620719" name="aspects" index="1hWBAP" />
@@ -99,9 +95,6 @@
         <reference id="5610619299013057365" name="target" index="3ygNvj" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
-      <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
-        <property id="5248329904288051101" name="pattern" index="3LWZYw" />
-      </concept>
       <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
         <child id="5248329904287794598" name="dir" index="3LXTmr" />
         <child id="5248329904287794679" name="selectors" index="3LXTna" />
@@ -21207,99 +21200,6 @@
       </node>
       <node concept="m$f5U" id="3lcj7hzs_XZ" role="m$_yh">
         <ref role="m$f5T" node="3lcj7hzsgVW" resolve="com.mbeddr.mpsutil.logicalChild" />
-      </node>
-    </node>
-  </node>
-  <node concept="1l3spW" id="6ucYLjosbT2">
-    <property role="TrG5h" value="com.mbeddr.platform.distribution" />
-    <property role="turDy" value="build-distribution.xml" />
-    <property role="2DA0ip" value="../../../../../build/com.mbeddr.platform" />
-    <node concept="398rNT" id="5ueaxoTn61k" role="1l3spd">
-      <property role="TrG5h" value="artifacts.root" />
-      <node concept="55IIr" id="3vzyAKEKoBV" role="398pKh">
-        <node concept="2Ry0Ak" id="3vzyAKEKoBW" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="3vzyAKEKoBX" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="3vzyAKEKoC3" role="2Ry0An">
-              <property role="2Ry0Am" value="artifacts" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2_Ic$z" id="16IL9jC9Glo" role="3989C9">
-      <property role="2_Ic$B" value="true" />
-      <property role="TZNOO" value="1.8" />
-      <property role="2_Ic$$" value="true" />
-      <node concept="3LWZYx" id="16IL9jC9Glp" role="2_Ic$A">
-        <property role="3LWZYw" value="**/*.info" />
-      </node>
-    </node>
-    <node concept="398rNT" id="6ucYLjosfLw" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.github.core.home" />
-      <node concept="55IIr" id="6ucYLjosfLx" role="398pKh">
-        <node concept="2Ry0Ak" id="6ucYLjosfLy" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="6ucYLjosfLz" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="6ucYLjosfL$" role="2Ry0An">
-              <property role="2Ry0Am" value="" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="6ucYLjotydi" role="1l3spd">
-      <property role="TrG5h" value="platform.sl-all" />
-      <node concept="398BVA" id="5ueaxoTp$uR" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn61k" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="5ueaxoTp$uS" role="iGT6I">
-          <property role="2Ry0Am" value="mps-sl-all" />
-        </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="6RmoJr9Cop$" role="1l3spd">
-      <property role="TrG5h" value="platform.artifacts" />
-      <node concept="398BVA" id="5ueaxoTpkOU" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn61k" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="5ueaxoTpkOV" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
-        </node>
-      </node>
-    </node>
-    <node concept="10PD9b" id="6ucYLjoscGT" role="10PD9s" />
-    <node concept="3b7kt6" id="6ucYLjoscGU" role="10PD9s" />
-    <node concept="55IIr" id="6ucYLjosbT3" role="auvoZ" />
-    <node concept="1l3spV" id="6ucYLjosbT4" role="1l3spN">
-      <node concept="3981dG" id="3AVJcIMlF9y" role="39821P">
-        <node concept="398223" id="3AVJcIMlFar" role="39821P">
-          <node concept="3ygNvl" id="6ucYLjosgm$" role="39821P">
-            <ref role="3ygNvj" node="3AVJcIMlF9x" />
-          </node>
-          <node concept="3_J27D" id="3AVJcIMlFas" role="Nbhlr">
-            <node concept="3Mxwew" id="3AVJcIMlFat" role="3MwsjC">
-              <property role="3MwjfP" value="plugins" />
-            </node>
-          </node>
-        </node>
-        <node concept="3_J27D" id="3AVJcIMlFay" role="Nbhlr">
-          <node concept="3Mxwew" id="3AVJcIMlFaz" role="3MwsjC">
-            <property role="3MwjfP" value="platform-distribution.zip" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6ucYLjosdav" role="1l3spa">
-      <ref role="1l3spb" node="3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="6RmoJr9DmSL" role="2JcizS">
-        <ref role="398BVh" node="6RmoJr9Cop$" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="3AVJcIMlF9v" role="1l3spa">
-      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
-      <node concept="398BVA" id="3AVJcIMlF9w" role="2JcizS">
-        <ref role="398BVh" node="6ucYLjotydi" resolve="platform.sl-all" />
       </node>
     </node>
   </node>
