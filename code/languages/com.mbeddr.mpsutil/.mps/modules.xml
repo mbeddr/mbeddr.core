@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/2023-12-07T13:42:50.640931Z/2023-12-07T13:42:50.640931Z.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/EcoreImporter_TestLanguage1/EcoreImporter_TestLanguage1.mpl" folder="testlanguages" />
@@ -14,6 +13,8 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu.reftarget/com.mbeddr.mpsutil.ccmenu.reftarget.mpl" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu.sandboxlang/com.mbeddr.mpsutil.ccmenu.sandboxlang.mpl" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu/com.mbeddr.mpsutil.ccmenu.mpl" folder="rest.ccmenu" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.checkinHandler.demo/com.mbeddr.mpsutil.checkinHandler.demo.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.checkinHandler/com.mbeddr.mpsutil.checkinHandler.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare.pattern.baselang/com.mbeddr.mpsutil.compare.pattern.baselang.mpl" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare.pattern.generator/com.mbeddr.mpsutil.compare.pattern.generator.mpl" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare.pattern/com.mbeddr.mpsutil.compare.pattern.mpl" folder="staging.comparator" />
@@ -108,6 +109,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.runtime/com.mbeddr.mpsutil.ccmenu.reftarget.runtime.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.runtime/com.mbeddr.mpsutil.ccmenu.runtime.msd" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.sandbox/com.mbeddr.mpsutil.ccmenu.sandbox.msd" folder="rest.ccmenu" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.checkinHandler.demo.plugin/com.mbeddr.mpsutil.checkinHandler.demo.plugin.msd" folder="checkinHandler" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.checkinHandler/com.mbeddr.mpsutil.checkinHandler.msd" folder="checkinHandler" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.msd" folder="staging.common" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator.diff.demo.genplan/com.mbeddr.mpsutil.comparator.diff.demo.genplan.msd" folder="staging.comparator.demo" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.comparator.diff.demo.tests/com.mbeddr.mpsutil.comparator.diff.demo.tests.msd" folder="staging.comparator.demo" />
