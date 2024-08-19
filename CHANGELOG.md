@@ -20,6 +20,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - RCP, installer, and all-in-one distribution was removed.
 
+## com.mbeddr.mpsutil.traceExplorer
+
+### Added
+
+- Added trace explorer option to decorate nodes with values of evaluated counterparts, which are not part of the model. 
+
 # July 2024
 
 ## com.mbeddr.analyses
