@@ -6868,44 +6868,58 @@
           <node concept="3clFbS" id="2JfTTG8lxUS" role="3clFbx">
             <node concept="3clFbJ" id="1TNXcegMe_F" role="3cqZAp">
               <node concept="3clFbS" id="1TNXcegMe_H" role="3clFbx">
-                <node concept="3clFbF" id="1TNXcegQhRB" role="3cqZAp">
-                  <node concept="37vLTI" id="1TNXcegQv0q" role="3clFbG">
-                    <node concept="37vLTw" id="1TNXcegQhRA" role="37vLTJ">
-                      <ref role="3cqZAo" node="2JfTTG8lxUM" resolve="target" />
-                    </node>
-                    <node concept="2OqwBi" id="1TNXcegQDxe" role="37vLTx">
-                      <node concept="2OqwBi" id="1TNXcegQDxf" role="2Oq$k0">
-                        <node concept="2OqwBi" id="1TNXcegQDxg" role="2Oq$k0">
-                          <node concept="liA8E" id="1TNXcegQDxp" role="2OqNvi">
-                            <ref role="37wK5l" node="1TNXceg$vUg" resolve="getNodeMapper" />
+                <node concept="1QHqEK" id="2a_JeWG98Ny" role="3cqZAp">
+                  <node concept="1QHqEC" id="2a_JeWG98N$" role="1QHqEI">
+                    <node concept="3clFbS" id="2a_JeWG98NA" role="1bW5cS">
+                      <node concept="3clFbF" id="1TNXcegQhRB" role="3cqZAp">
+                        <node concept="37vLTI" id="1TNXcegQv0q" role="3clFbG">
+                          <node concept="37vLTw" id="1TNXcegQhRA" role="37vLTJ">
+                            <ref role="3cqZAo" node="2JfTTG8lxUM" resolve="target" />
                           </node>
-                          <node concept="37vLTw" id="1TNXcegRmDB" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5t$QzkSNPKM" resolve="options" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="1TNXcegQDxq" role="2OqNvi">
-                          <ref role="37wK5l" node="1TNXcegzljC" resolve="getMappedNodeOrGivenNode" />
-                          <node concept="2OqwBi" id="1TNXcegQDxr" role="37wK5m">
-                            <node concept="37vLTw" id="1TNXcegQDxs" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2JfTTG8lxUM" resolve="target" />
-                            </node>
-                            <node concept="liA8E" id="1TNXcegQDxt" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
-                              <node concept="2OqwBi" id="1TNXcegQDxu" role="37wK5m">
-                                <node concept="37vLTw" id="1TNXcegQDxv" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2jSY3BO8rVn" resolve="project" />
+                          <node concept="2OqwBi" id="1TNXcegQDxe" role="37vLTx">
+                            <node concept="2OqwBi" id="1TNXcegQDxf" role="2Oq$k0">
+                              <node concept="2OqwBi" id="1TNXcegQDxg" role="2Oq$k0">
+                                <node concept="liA8E" id="1TNXcegQDxp" role="2OqNvi">
+                                  <ref role="37wK5l" node="1TNXceg$vUg" resolve="getNodeMapper" />
                                 </node>
-                                <node concept="liA8E" id="1TNXcegQDxw" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
+                                <node concept="37vLTw" id="1TNXcegRmDB" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5t$QzkSNPKM" resolve="options" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="1TNXcegQDxq" role="2OqNvi">
+                                <ref role="37wK5l" node="1TNXcegzljC" resolve="getMappedNodeOrGivenNode" />
+                                <node concept="2OqwBi" id="1TNXcegQDxr" role="37wK5m">
+                                  <node concept="37vLTw" id="1TNXcegQDxs" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2JfTTG8lxUM" resolve="target" />
+                                  </node>
+                                  <node concept="liA8E" id="1TNXcegQDxt" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SNodeReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
+                                    <node concept="2OqwBi" id="1TNXcegQDxu" role="37wK5m">
+                                      <node concept="37vLTw" id="1TNXcegQDxv" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2jSY3BO8rVn" resolve="project" />
+                                      </node>
+                                      <node concept="liA8E" id="1TNXcegQDxw" role="2OqNvi">
+                                        <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
+                            <node concept="liA8E" id="1TNXcegQDxx" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="1TNXcegQDxx" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SNode.getReference()" resolve="getReference" />
-                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2a_JeWG9Fdy" role="ukAjM">
+                    <node concept="37vLTw" id="2a_JeWG9vXv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2jSY3BO8rVn" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="2a_JeWGa1HP" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
