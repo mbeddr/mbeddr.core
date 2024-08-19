@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="Eclipse.Debugger" uuid="85d9f97b-1654-4692-b61c-fcc40db03653" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="false">
   <models>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="aopalliance.jar" />
       <sourceRoot location="cdt-facade.jar" />
       <sourceRoot location="cdt.jar" />
@@ -28,7 +28,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="ext" classes="mps" ext="yes">
       <classes generated="true" />
     </facet>
     <facet pluginId="com.mbeddr.spawner" type="ideaPlugin" />

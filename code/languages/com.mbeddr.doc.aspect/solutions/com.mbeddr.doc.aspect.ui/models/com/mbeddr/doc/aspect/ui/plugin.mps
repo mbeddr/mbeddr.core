@@ -3485,7 +3485,7 @@
                     <property role="2bfB8j" value="true" />
                     <property role="373rjd" value="true" />
                     <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="7YOUX1l3g_3" role="1B3o_S" />
                     <node concept="3clFb_" id="7YOUX1l3g_h" role="jymVt">
                       <property role="TrG5h" value="run" />
@@ -4054,7 +4054,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="7YOUX1l3g_n" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -4435,7 +4435,7 @@
             <property role="TrG5h" value="e" />
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="24MikXOjzGs" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Entry" />
+              <ref role="3uigEE" to="33ny:~Map$Entry" resolve="Map.Entry" />
               <node concept="3uibUv" id="24MikXOjTTf" role="11_B2D">
                 <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
               </node>
