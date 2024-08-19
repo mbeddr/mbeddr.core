@@ -9,7 +9,7 @@
     <language id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheat">
       <concept id="2042272859107050152" name="com.mbeddr.spreadsheat.structure.Style" flags="ng" index="1hadVK" />
       <concept id="2042272859107001907" name="com.mbeddr.spreadsheat.structure.RowGroup" flags="ng" index="1hahDF" />
-      <concept id="2042272859107001892" name="com.mbeddr.spreadsheat.structure.IGroup" flags="ng" index="1hahDW">
+      <concept id="2042272859107001892" name="com.mbeddr.spreadsheat.structure.IGroup" flags="ngI" index="1hahDW">
         <property id="2042272859107001893" name="start" index="1hahDX" />
         <property id="2042272859107001894" name="end" index="1hahDY" />
       </concept>
@@ -29,7 +29,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
