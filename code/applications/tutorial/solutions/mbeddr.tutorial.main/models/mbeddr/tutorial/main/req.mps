@@ -7,7 +7,6 @@
     <use id="983e02f8-8062-426e-b60d-bc044a46b93a" name="com.mbeddr.cc.requirements.report" version="0" />
     <use id="7a52ca96-9053-41d2-ae13-8cee05f36698" name="com.mbeddr.cc.requirements.c2doc" version="0" />
     <use id="b9f5080f-7f6a-4d86-b994-77d4c982153a" name="com.mbeddr.cc.requirements.scenario2doc" version="0" />
-    <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="0" />
     <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
@@ -91,11 +90,6 @@
       </concept>
       <concept id="6446320527598554645" name="com.mbeddr.cc.requirements.scenarios.structure.AnonymousInstance" flags="ng" index="3UDY18">
         <child id="6446320527598554647" name="data" index="3UDY1a" />
-      </concept>
-    </language>
-    <language id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites">
-      <concept id="1259468517902790203" name="com.mbeddr.mpsutil.favourites.structure.FavouritesAnnotation" flags="ng" index="2Y6aBa">
-        <property id="1259468517902790204" name="category" index="2Y6aBd" />
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -1102,9 +1096,6 @@
       </node>
     </node>
     <node concept="2RsZnQ" id="2TTzVZwqvwb" role="2RsZnW" />
-    <node concept="2Y6aBa" id="FniR$CltW3" role="lGtFl">
-      <property role="2Y6aBd" value="Requirements" />
-    </node>
   </node>
   <node concept="3fbPIq" id="72IKZbjZLi7">
     <property role="TrG5h" value="ArchitecturalComponents" />
@@ -1303,9 +1294,6 @@
       <node concept="19SGf9" id="2TTzVZwqvw9" role="OjmMu">
         <node concept="19SUe$" id="2TTzVZwqvwa" role="19SJt6" />
       </node>
-    </node>
-    <node concept="2Y6aBa" id="FniR$ClGbG" role="lGtFl">
-      <property role="2Y6aBd" value="Requirements" />
     </node>
   </node>
   <node concept="3fbPIq" id="5YVZL2kzViv">
@@ -1689,9 +1677,6 @@
       </node>
     </node>
     <node concept="2RsZnQ" id="2TTzVZwqvwc" role="2RsZnW" />
-    <node concept="2Y6aBa" id="FniR$ClnkY" role="lGtFl">
-      <property role="2Y6aBd" value="Requirements" />
-    </node>
   </node>
   <node concept="1_1swa" id="519ky_SmMSS">
     <property role="TrG5h" value="requirementsReport" />

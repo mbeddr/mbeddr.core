@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2/classes_gen" />
     </facet>
   </facets>
@@ -19,7 +19,7 @@
         </modelRoot>
       </models>
       <facets>
-        <facet type="java">
+        <facet type="java" compile="mps" classes="mps" ext="no">
           <classes generated="true" path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2/generator/classes_gen" />
         </facet>
       </facets>
