@@ -3168,7 +3168,7 @@
     <node concept="2tJIrI" id="T08V6J3cR1" role="jymVt" />
     <node concept="3clFb_" id="7rNasV5CUrg" role="jymVt">
       <property role="TrG5h" value="showSelectionDialog" />
-      <node concept="3Tm6S6" id="7rNasV5CUrh" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6fyeJ0bqx0V" role="1B3o_S" />
       <node concept="3cqZAl" id="7rNasV5CUri" role="3clF45" />
       <node concept="3clFbS" id="7rNasV5CUpY" role="3clF47">
         <node concept="3clFbF" id="T08V6J7PW$" role="3cqZAp">
@@ -5150,7 +5150,7 @@
         <node concept="10P_77" id="7IhZGc$yTRL" role="1tU5fm" />
       </node>
       <node concept="3cqZAl" id="7IhZGc$yJxr" role="3clF45" />
-      <node concept="3Tm6S6" id="4SlhOgzL7BJ" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6fyeJ0bpNXF" role="1B3o_S" />
       <node concept="3clFbS" id="7IhZGc$yJxt" role="3clF47">
         <node concept="1QHqEK" id="7IhZGc$yXeh" role="3cqZAp">
           <node concept="1QHqEC" id="7IhZGc$yXei" role="1QHqEI">
@@ -6763,7 +6763,7 @@
     <node concept="2tJIrI" id="4yQfyMjqHwi" role="jymVt" />
     <node concept="3clFb_" id="2JfTTG8lxVb" role="jymVt">
       <property role="TrG5h" value="highlightCodeForRec" />
-      <node concept="3Tm6S6" id="2JfTTG8lxVc" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6fyeJ0bpskn" role="1B3o_S" />
       <node concept="10P_77" id="2JfTTG8lxVd" role="3clF45" />
       <node concept="37vLTG" id="2JfTTG8lxV2" role="3clF46">
         <property role="TrG5h" value="rec" />
@@ -6958,7 +6958,7 @@
             </node>
             <node concept="3clFbF" id="2JfTTG8lxUT" role="3cqZAp">
               <node concept="1rXfSq" id="2JfTTG8lxUU" role="3clFbG">
-                <ref role="37wK5l" node="l9iXyRdj8c" resolve="selectFirstLeafCell" />
+                <ref role="37wK5l" node="6fyeJ0brdBQ" resolve="selectFirstLeafCell" />
                 <node concept="37vLTw" id="2JfTTG8lxUV" role="37wK5m">
                   <ref role="3cqZAo" node="2jSY3BO8rVn" resolve="project" />
                 </node>
@@ -7969,11 +7969,8 @@
       </node>
     </node>
     <node concept="2tJIrI" id="$lfQMocIya" role="jymVt" />
-    <node concept="2YIFZL" id="l9iXyRdj8c" role="jymVt">
+    <node concept="3clFb_" id="6fyeJ0brdBQ" role="jymVt">
       <property role="TrG5h" value="selectFirstLeafCell" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="l9iXyRdj8f" role="3clF47">
         <node concept="1QHqEO" id="l9iXyRe0OY" role="3cqZAp">
           <node concept="1QHqEC" id="l9iXyRe0P0" role="1QHqEI">
@@ -8091,8 +8088,6 @@
           </node>
         </node>
       </node>
-      <node concept="3Tmbuc" id="3EF07Bwwcm5" role="1B3o_S" />
-      <node concept="3cqZAl" id="l9iXyRdiz5" role="3clF45" />
       <node concept="37vLTG" id="l9iXyRdou9" role="3clF46">
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="l9iXyRdou8" role="1tU5fm">
@@ -8105,6 +8100,8 @@
           <ref role="3uigEE" to="mhbf:~SNodeReference" resolve="SNodeReference" />
         </node>
       </node>
+      <node concept="3cqZAl" id="l9iXyRdiz5" role="3clF45" />
+      <node concept="3Tmbuc" id="3EF07Bwwcm5" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="2jSY3BO827F" role="1B3o_S" />
     <node concept="3uibUv" id="4yQfyMjqdhB" role="1zkMxy">
