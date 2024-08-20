@@ -238,6 +238,10 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
+      <concept id="5686963296372573083" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerType" flags="in" index="3O5elB">
+        <child id="5686963296372573084" name="elementType" index="3O5elw" />
+      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="7uW9A9Lcnfm">
@@ -882,6 +886,28 @@
         <node concept="H_c77" id="1yfWS2nPUdG" role="_ZDj9" />
       </node>
     </node>
+    <node concept="2tJIrI" id="32CFzTqVbQe" role="jymVt" />
+    <node concept="3clFb_" id="32CFzTqVg78" role="jymVt">
+      <property role="TrG5h" value="getAffectedFiles" />
+      <node concept="3clFbS" id="32CFzTqVg7b" role="3clF47">
+        <node concept="3clFbF" id="32CFzTqVkaM" role="3cqZAp">
+          <node concept="2OqwBi" id="32CFzTqVh2b" role="3clFbG">
+            <node concept="liA8E" id="32CFzTqVh2c" role="2OqNvi">
+              <ref role="37wK5l" to="jlcu:~CheckinProjectPanel.getVirtualFiles()" resolve="getVirtualFiles" />
+            </node>
+            <node concept="37vLTw" id="32CFzTqVh2d" role="2Oq$k0">
+              <ref role="3cqZAo" node="7uW9A9LcS0c" resolve="panel" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tmbuc" id="32CFzTqVduA" role="1B3o_S" />
+      <node concept="3vKaQO" id="32CFzTqVg4S" role="3clF45">
+        <node concept="3uibUv" id="32CFzTqVg4U" role="3O5elw">
+          <ref role="3uigEE" to="jlff:~VirtualFile" resolve="VirtualFile" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="7uW9A9Lcnfn" role="1B3o_S" />
     <node concept="3uibUv" id="7uW9A9LcnhB" role="1zkMxy">
       <ref role="3uigEE" to="18nx:~CheckinHandler" resolve="CheckinHandler" />
@@ -1163,3 +1189,4 @@
   </node>
   <node concept="2DaZZR" id="1yfWS2nNLUx" />
 </model>
+

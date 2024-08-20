@@ -23,9 +23,21 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
+    <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" />
+    <import index="l8al" ref="f57286e3-4e19-4d8d-8045-3900761f6530/java:git4idea.commands(jetbrains.mps.git4idea.stubs/)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="tkms" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.dvcs.repo(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="3205675194086589964" name="jetbrains.mps.lang.plugin.structure.ActionAccessOperation" flags="nn" index="3$FdUm">
+        <reference id="3205675194086671728" name="action" index="3$FpRE" />
+      </concept>
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -76,6 +88,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -85,6 +100,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -224,15 +242,23 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -330,7 +356,7 @@
                   <property role="TrG5h" value="actionBeforeCommit" />
                   <node concept="3Tmbuc" id="eZmA2p5ter" role="1B3o_S" />
                   <node concept="3uibUv" id="eZmA2p5tes" role="3clF45">
-                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                   </node>
                   <node concept="3clFbS" id="eZmA2p5tet" role="3clF47">
                     <node concept="3J1_TO" id="7SmYmUZGM0J" role="3cqZAp">
@@ -524,7 +550,7 @@
                         <node concept="3clFbF" id="eZmA2p5teJ" role="3cqZAp">
                           <node concept="2YIFZM" id="eZmA2p5teK" role="3clFbG">
                             <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification)" resolve="notify" />
-                            <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Bus" />
+                            <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
                             <node concept="37vLTw" id="eZmA2p5teL" role="37wK5m">
                               <ref role="3cqZAo" node="eZmA2p5tev" resolve="notification" />
                             </node>
@@ -536,7 +562,7 @@
                         <node concept="3clFbS" id="7SmYmUZGP50" role="1wplMD">
                           <node concept="3cpWs6" id="7SmYmUZGPok" role="3cqZAp">
                             <node concept="Rm8GO" id="eZmA2p5teN" role="3cqZAk">
-                              <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                              <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                               <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CANCEL" resolve="CANCEL" />
                             </node>
                           </node>
@@ -604,7 +630,7 @@
                   <property role="TrG5h" value="actionBeforeCommit" />
                   <node concept="3Tmbuc" id="6uXv1_IYtIs" role="1B3o_S" />
                   <node concept="3uibUv" id="6uXv1_IYtIt" role="3clF45">
-                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                   </node>
                   <node concept="3clFbS" id="6uXv1_IYtIu" role="3clF47">
                     <node concept="3J1_TO" id="6uXv1_IYtIv" role="3cqZAp">
@@ -752,7 +778,7 @@
                         <node concept="3clFbF" id="6uXv1_IYtJg" role="3cqZAp">
                           <node concept="2YIFZM" id="6uXv1_IYtJh" role="3clFbG">
                             <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification)" resolve="notify" />
-                            <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Bus" />
+                            <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
                             <node concept="37vLTw" id="6uXv1_IYtJi" role="37wK5m">
                               <ref role="3cqZAo" node="6uXv1_IYNbe" resolve="notification" />
                             </node>
@@ -764,7 +790,7 @@
                         <node concept="3clFbS" id="6uXv1_IYtJl" role="1wplMD">
                           <node concept="3cpWs6" id="6uXv1_IYtJm" role="3cqZAp">
                             <node concept="Rm8GO" id="6uXv1_IYtJn" role="3cqZAk">
-                              <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                              <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                               <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CANCEL" resolve="CANCEL" />
                             </node>
                           </node>
@@ -831,7 +857,7 @@
                   <property role="TrG5h" value="actionBeforeCommit" />
                   <node concept="3Tmbuc" id="6uXv1_IZpvg" role="1B3o_S" />
                   <node concept="3uibUv" id="6uXv1_IZpvh" role="3clF45">
-                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                   </node>
                   <node concept="3clFbS" id="6uXv1_IZpvi" role="3clF47">
                     <node concept="3clFbH" id="6uXv1_IZpvB" role="3cqZAp" />
@@ -965,7 +991,7 @@
                                     <node concept="3clFbF" id="2hNr1jFoEp2" role="3cqZAp">
                                       <node concept="2YIFZM" id="2hNr1jFoEp3" role="3clFbG">
                                         <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification)" resolve="notify" />
-                                        <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Bus" />
+                                        <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
                                         <node concept="37vLTw" id="2hNr1jFoEp4" role="37wK5m">
                                           <ref role="3cqZAo" node="2hNr1jFoE2F" resolve="notification" />
                                         </node>
@@ -998,7 +1024,7 @@
                     <node concept="3clFbH" id="6uXv1_IZrsC" role="3cqZAp" />
                     <node concept="3clFbF" id="6uXv1_IZpvC" role="3cqZAp">
                       <node concept="Rm8GO" id="6uXv1_IZpvD" role="3clFbG">
-                        <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                        <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                         <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CANCEL" resolve="CANCEL" />
                       </node>
                     </node>
@@ -1062,7 +1088,7 @@
                   <property role="TrG5h" value="actionBeforeCommit" />
                   <node concept="3Tmbuc" id="1yfWS2nQuNP" role="1B3o_S" />
                   <node concept="3uibUv" id="1yfWS2nQuNQ" role="3clF45">
-                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                   </node>
                   <node concept="3clFbS" id="1yfWS2nQuNS" role="3clF47">
                     <node concept="3cpWs8" id="1yfWS2nQF2w" role="3cqZAp">
@@ -1114,7 +1140,7 @@
                     <node concept="3clFbF" id="1yfWS2nQyWh" role="3cqZAp">
                       <node concept="2YIFZM" id="1yfWS2nQz$u" role="3clFbG">
                         <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification)" resolve="notify" />
-                        <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Bus" />
+                        <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
                         <node concept="37vLTw" id="1yfWS2nQF2F" role="37wK5m">
                           <ref role="3cqZAo" node="1yfWS2nQF2x" resolve="notification" />
                         </node>
@@ -1124,7 +1150,7 @@
                     <node concept="3clFbF" id="1yfWS2nQEtL" role="3cqZAp">
                       <node concept="Rm8GO" id="1yfWS2nQEx9" role="3clFbG">
                         <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CANCEL" resolve="CANCEL" />
-                        <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                        <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                       </node>
                     </node>
                   </node>
@@ -1156,4 +1182,352 @@
       </node>
     </node>
   </node>
+  <node concept="1lYeZD" id="32CFzTqVtcV">
+    <property role="TrG5h" value="ForceSaveAllCheckin" />
+    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="CheckinExtensionPoint" />
+    <node concept="3Tm1VV" id="32CFzTqVtcW" role="1B3o_S" />
+    <node concept="2tJIrI" id="32CFzTqVtcX" role="jymVt" />
+    <node concept="3tTeZs" id="32CFzTqVtcY" role="jymVt">
+      <property role="3tTeZt" value="activate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
+    </node>
+    <node concept="3tTeZs" id="32CFzTqVtcZ" role="jymVt">
+      <property role="3tTeZt" value="deactivate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+    </node>
+    <node concept="2tJIrI" id="32CFzTqVtd0" role="jymVt" />
+    <node concept="q3mfD" id="32CFzTqVtd1" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="32CFzTqVtd2" role="1B3o_S" />
+      <node concept="3clFbS" id="32CFzTqVtd3" role="3clF47">
+        <node concept="3clFbF" id="32CFzTqVtd4" role="3cqZAp">
+          <node concept="2ShNRf" id="32CFzTqVtd5" role="3clFbG">
+            <node concept="YeOm9" id="32CFzTqVtd6" role="2ShVmc">
+              <node concept="1Y3b0j" id="32CFzTqVtd7" role="YeSDq">
+                <property role="2bfB8j" value="true" />
+                <ref role="1Y3XeK" to="aqel:7uW9A9Lcnfm" resolve="BaseCheckinHandler" />
+                <ref role="37wK5l" to="aqel:1yfWS2nOYu5" resolve="BaseCheckinHandler" />
+                <node concept="3Tm1VV" id="32CFzTqVtd8" role="1B3o_S" />
+                <node concept="3clFb_" id="32CFzTqVtd9" role="jymVt">
+                  <property role="TrG5h" value="actionBeforeCommit" />
+                  <node concept="3Tmbuc" id="32CFzTqVtda" role="1B3o_S" />
+                  <node concept="3uibUv" id="32CFzTqVtdb" role="3clF45">
+                    <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
+                  </node>
+                  <node concept="3clFbS" id="32CFzTqVtdc" role="3clF47">
+                    <node concept="3cpWs8" id="32CFzTqVNBA" role="3cqZAp">
+                      <node concept="3cpWsn" id="32CFzTqVNBB" role="3cpWs9">
+                        <property role="TrG5h" value="dataContext" />
+                        <node concept="3uibUv" id="32CFzTqVNBC" role="1tU5fm">
+                          <ref role="3uigEE" to="qkt:~DataContext" resolve="DataContext" />
+                        </node>
+                        <node concept="2OqwBi" id="32CFzTqVRjR" role="33vP2m">
+                          <node concept="2YIFZM" id="32CFzTqVRbG" role="2Oq$k0">
+                            <ref role="37wK5l" to="ddhc:~DataManager.getInstance()" resolve="getInstance" />
+                            <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                          </node>
+                          <node concept="liA8E" id="32CFzTqVRva" role="2OqNvi">
+                            <ref role="37wK5l" to="ddhc:~DataManager.getDataContext(java.awt.Component)" resolve="getDataContext" />
+                            <node concept="2OqwBi" id="32CFzTqVTWN" role="37wK5m">
+                              <node concept="2OqwBi" id="32CFzTqVRPB" role="2Oq$k0">
+                                <node concept="Xjq3P" id="32CFzTqVRCl" role="2Oq$k0" />
+                                <node concept="2OwXpG" id="32CFzTqVS9V" role="2OqNvi">
+                                  <ref role="2Oxat5" to="aqel:7uW9A9LcS0c" resolve="panel" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="32CFzTqVUhX" role="2OqNvi">
+                                <ref role="37wK5l" to="jlcu:~CheckinProjectPanel.getComponent()" resolve="getComponent" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="32CFzTqVULL" role="3cqZAp">
+                      <node concept="3cpWsn" id="32CFzTqVULM" role="3cpWs9">
+                        <property role="TrG5h" value="event" />
+                        <node concept="3uibUv" id="32CFzTqVULN" role="1tU5fm">
+                          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                        </node>
+                        <node concept="2YIFZM" id="32CFzTqVVwN" role="33vP2m">
+                          <ref role="37wK5l" to="7bx7:~ActionUtils.createEvent(java.lang.String,com.intellij.openapi.actionSystem.DataContext)" resolve="createEvent" />
+                          <ref role="1Pybhc" to="7bx7:~ActionUtils" resolve="ActionUtils" />
+                          <node concept="10M0yZ" id="32CFzTqVVDp" role="37wK5m">
+                            <ref role="3cqZAo" to="qkt:~ActionPlaces.UNKNOWN" resolve="UNKNOWN" />
+                            <ref role="1PxDUh" to="qkt:~ActionPlaces" resolve="ActionPlaces" />
+                          </node>
+                          <node concept="37vLTw" id="32CFzTqVVMo" role="37wK5m">
+                            <ref role="3cqZAo" node="32CFzTqVNBB" resolve="dataContext" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="32CFzTqVW8k" role="3cqZAp">
+                      <node concept="2YIFZM" id="32CFzTqVWdB" role="3clFbG">
+                        <ref role="37wK5l" to="7bx7:~ActionUtils.updateAndPerformAction(com.intellij.openapi.actionSystem.AnAction,com.intellij.openapi.actionSystem.AnActionEvent)" resolve="updateAndPerformAction" />
+                        <ref role="1Pybhc" to="7bx7:~ActionUtils" resolve="ActionUtils" />
+                        <node concept="3$FdUm" id="32CFzTqVWte" role="37wK5m">
+                          <ref role="3$FpRE" to="tprs:2cEqqWVQVCm" resolve="ForceSaveAll" />
+                        </node>
+                        <node concept="37vLTw" id="32CFzTqVWRI" role="37wK5m">
+                          <ref role="3cqZAo" node="32CFzTqVULM" resolve="event" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="2$lNLAkVcif" role="3cqZAp" />
+                    <node concept="3cpWs8" id="2$lNLAkVe4B" role="3cqZAp">
+                      <node concept="3cpWsn" id="2$lNLAkVe4C" role="3cpWs9">
+                        <property role="TrG5h" value="repositoryManager" />
+                        <node concept="3uibUv" id="2$lNLAkVe24" role="1tU5fm">
+                          <ref role="3uigEE" to="5mlj:~GitRepositoryManager" resolve="GitRepositoryManager" />
+                        </node>
+                        <node concept="2YIFZM" id="2$lNLAkVe4D" role="33vP2m">
+                          <ref role="37wK5l" to="hr4p:~GitUtil.getRepositoryManager(com.intellij.openapi.project.Project)" resolve="getRepositoryManager" />
+                          <ref role="1Pybhc" to="hr4p:~GitUtil" resolve="GitUtil" />
+                          <node concept="2OqwBi" id="2$lNLAkVe4E" role="37wK5m">
+                            <node concept="Xjq3P" id="2$lNLAkVe4F" role="2Oq$k0" />
+                            <node concept="2OwXpG" id="2$lNLAkVe4G" role="2OqNvi">
+                              <ref role="2Oxat5" to="aqel:7uW9A9LcNXZ" resolve="ideaProject" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="2$lNLAkVfIm" role="3cqZAp">
+                      <node concept="3cpWsn" id="2$lNLAkVfIn" role="3cpWs9">
+                        <property role="TrG5h" value="repositories" />
+                        <node concept="2OqwBi" id="2$lNLAkVfIo" role="33vP2m">
+                          <node concept="37vLTw" id="2$lNLAkVfIp" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2$lNLAkVe4C" resolve="repositoryManager" />
+                          </node>
+                          <node concept="liA8E" id="2$lNLAkVfIq" role="2OqNvi">
+                            <ref role="37wK5l" to="5mlj:~GitRepositoryManager.getRepositories()" resolve="getRepositories" />
+                          </node>
+                        </node>
+                        <node concept="_YKpA" id="2$lNLAkVgI9" role="1tU5fm">
+                          <node concept="3uibUv" id="2$lNLAkVh3y" role="_ZDj9">
+                            <ref role="3uigEE" to="5mlj:~GitRepository" resolve="GitRepository" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="2$lNLAkVgja" role="3cqZAp">
+                      <node concept="3clFbS" id="2$lNLAkVgjc" role="3clFbx">
+                        <node concept="3cpWs6" id="2$lNLAkVjRt" role="3cqZAp">
+                          <node concept="Rm8GO" id="2$lNLAkVl7G" role="3cqZAk">
+                            <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CANCEL" resolve="CANCEL" />
+                            <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2$lNLAkVi1e" role="3clFbw">
+                        <node concept="37vLTw" id="2$lNLAkVhdH" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2$lNLAkVfIn" resolve="repositories" />
+                        </node>
+                        <node concept="1v1jN8" id="2$lNLAkVjrp" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="2$lNLAkVkGo" role="3cqZAp" />
+                    <node concept="3clFbF" id="4E9ClRMlW0" role="3cqZAp">
+                      <node concept="2OqwBi" id="4E9ClRMnKz" role="3clFbG">
+                        <node concept="2YIFZM" id="4E9ClRMnb_" role="2Oq$k0">
+                          <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
+                          <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
+                        </node>
+                        <node concept="liA8E" id="4E9ClRMo$A" role="2OqNvi">
+                          <ref role="37wK5l" to="xygl:~ProgressManager.runProcessWithProgressSynchronously(java.lang.Runnable,java.lang.String,boolean,com.intellij.openapi.project.Project)" resolve="runProcessWithProgressSynchronously" />
+                          <node concept="1bVj0M" id="4E9ClRMq5r" role="37wK5m">
+                            <node concept="3clFbS" id="4E9ClRMq5s" role="1bW5cS">
+                              <node concept="3cpWs8" id="2$lNLAkVl$u" role="3cqZAp">
+                                <node concept="3cpWsn" id="2$lNLAkVl$v" role="3cpWs9">
+                                  <property role="TrG5h" value="repository" />
+                                  <node concept="3uibUv" id="2$lNLAkVl$w" role="1tU5fm">
+                                    <ref role="3uigEE" to="5mlj:~GitRepository" resolve="GitRepository" />
+                                  </node>
+                                  <node concept="2OqwBi" id="2$lNLAkVmOv" role="33vP2m">
+                                    <node concept="37vLTw" id="2$lNLAkVlPw" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2$lNLAkVfIn" resolve="repositories" />
+                                    </node>
+                                    <node concept="34jXtK" id="2$lNLAkVnNu" role="2OqNvi">
+                                      <node concept="3cmrfG" id="2$lNLAkVnXa" role="25WWJ7">
+                                        <property role="3cmrfH" value="0" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3cpWs8" id="EINZMujMpp" role="3cqZAp">
+                                <node concept="3cpWsn" id="EINZMujMpq" role="3cpWs9">
+                                  <property role="TrG5h" value="addHandler" />
+                                  <node concept="3uibUv" id="EINZMujMpr" role="1tU5fm">
+                                    <ref role="3uigEE" to="l8al:~GitLineHandler" resolve="GitLineHandler" />
+                                  </node>
+                                  <node concept="2ShNRf" id="EINZMujMps" role="33vP2m">
+                                    <node concept="1pGfFk" id="EINZMujMpt" role="2ShVmc">
+                                      <property role="373rjd" value="true" />
+                                      <ref role="37wK5l" to="l8al:~GitLineHandler.&lt;init&gt;(com.intellij.openapi.project.Project,com.intellij.openapi.vfs.VirtualFile,git4idea.commands.GitCommand)" resolve="GitLineHandler" />
+                                      <node concept="2OqwBi" id="EINZMujMpu" role="37wK5m">
+                                        <node concept="Xjq3P" id="EINZMujMpv" role="2Oq$k0" />
+                                        <node concept="2OwXpG" id="EINZMujMpw" role="2OqNvi">
+                                          <ref role="2Oxat5" to="aqel:7uW9A9LcNXZ" resolve="ideaProject" />
+                                        </node>
+                                      </node>
+                                      <node concept="2OqwBi" id="EINZMujMpx" role="37wK5m">
+                                        <node concept="37vLTw" id="EINZMujMpy" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2$lNLAkVl$v" resolve="repository" />
+                                        </node>
+                                        <node concept="liA8E" id="EINZMujMpz" role="2OqNvi">
+                                          <ref role="37wK5l" to="tkms:~Repository.getRoot()" resolve="getRoot" />
+                                        </node>
+                                      </node>
+                                      <node concept="10M0yZ" id="EINZMujOHv" role="37wK5m">
+                                        <ref role="3cqZAo" to="l8al:~GitCommand.ADD" resolve="ADD" />
+                                        <ref role="1PxDUh" to="l8al:~GitCommand" resolve="GitCommand" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="EINZMujQCb" role="3cqZAp">
+                                <node concept="2OqwBi" id="EINZMujRbL" role="3clFbG">
+                                  <node concept="37vLTw" id="EINZMujQC9" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="EINZMujMpq" resolve="addHandler" />
+                                  </node>
+                                  <node concept="liA8E" id="EINZMujRHM" role="2OqNvi">
+                                    <ref role="37wK5l" to="l8al:~GitHandler.addParameters(java.lang.String...)" resolve="addParameters" />
+                                    <node concept="Xl_RD" id="EINZMujS28" role="37wK5m">
+                                      <property role="Xl_RC" value="-A" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="EINZMujTW6" role="3cqZAp">
+                                <node concept="2OqwBi" id="EINZMujMKE" role="3clFbG">
+                                  <node concept="2YIFZM" id="EINZMujMKF" role="2Oq$k0">
+                                    <ref role="37wK5l" to="l8al:~Git.getInstance()" resolve="getInstance" />
+                                    <ref role="1Pybhc" to="l8al:~Git" resolve="Git" />
+                                  </node>
+                                  <node concept="liA8E" id="EINZMujMKG" role="2OqNvi">
+                                    <ref role="37wK5l" to="l8al:~Git.runCommand(git4idea.commands.GitLineHandler)" resolve="runCommand" />
+                                    <node concept="37vLTw" id="EINZMujMKH" role="37wK5m">
+                                      <ref role="3cqZAo" node="EINZMujMpq" resolve="addHandler" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbH" id="EINZMujMgC" role="3cqZAp" />
+                              <node concept="3cpWs8" id="2$lNLAkVrWK" role="3cqZAp">
+                                <node concept="3cpWsn" id="2$lNLAkVrWL" role="3cpWs9">
+                                  <property role="TrG5h" value="commitHandler" />
+                                  <node concept="3uibUv" id="2$lNLAkVrWM" role="1tU5fm">
+                                    <ref role="3uigEE" to="l8al:~GitLineHandler" resolve="GitLineHandler" />
+                                  </node>
+                                  <node concept="2ShNRf" id="2$lNLAkVsaW" role="33vP2m">
+                                    <node concept="1pGfFk" id="2$lNLAkVwA5" role="2ShVmc">
+                                      <property role="373rjd" value="true" />
+                                      <ref role="37wK5l" to="l8al:~GitLineHandler.&lt;init&gt;(com.intellij.openapi.project.Project,com.intellij.openapi.vfs.VirtualFile,git4idea.commands.GitCommand)" resolve="GitLineHandler" />
+                                      <node concept="2OqwBi" id="2$lNLAkVx3Q" role="37wK5m">
+                                        <node concept="Xjq3P" id="2$lNLAkVwLR" role="2Oq$k0" />
+                                        <node concept="2OwXpG" id="2$lNLAkVxtB" role="2OqNvi">
+                                          <ref role="2Oxat5" to="aqel:7uW9A9LcNXZ" resolve="ideaProject" />
+                                        </node>
+                                      </node>
+                                      <node concept="2OqwBi" id="2$lNLAkVCVq" role="37wK5m">
+                                        <node concept="37vLTw" id="2$lNLAkVCC4" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="2$lNLAkVl$v" resolve="repository" />
+                                        </node>
+                                        <node concept="liA8E" id="2$lNLAkVDmM" role="2OqNvi">
+                                          <ref role="37wK5l" to="tkms:~Repository.getRoot()" resolve="getRoot" />
+                                        </node>
+                                      </node>
+                                      <node concept="10M0yZ" id="2$lNLAkVDya" role="37wK5m">
+                                        <ref role="3cqZAo" to="l8al:~GitCommand.COMMIT" resolve="COMMIT" />
+                                        <ref role="1PxDUh" to="l8al:~GitCommand" resolve="GitCommand" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="2$lNLAkVJBD" role="3cqZAp">
+                                <node concept="2OqwBi" id="2$lNLAkVKb2" role="3clFbG">
+                                  <node concept="37vLTw" id="2$lNLAkVJBB" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2$lNLAkVrWL" resolve="commitHandler" />
+                                  </node>
+                                  <node concept="liA8E" id="2$lNLAkVKGw" role="2OqNvi">
+                                    <ref role="37wK5l" to="l8al:~GitHandler.addParameters(java.lang.String...)" resolve="addParameters" />
+                                    <node concept="Xl_RD" id="2$lNLAkVKUJ" role="37wK5m">
+                                      <property role="Xl_RC" value="-m" />
+                                    </node>
+                                    <node concept="Xl_RD" id="2$lNLAkVMqA" role="37wK5m">
+                                      <property role="Xl_RC" value="Force Save All" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="EINZMujVQ8" role="3cqZAp">
+                                <node concept="2OqwBi" id="3ccDGDuG02b" role="3clFbG">
+                                  <node concept="2YIFZM" id="3ccDGDuG02c" role="2Oq$k0">
+                                    <ref role="37wK5l" to="l8al:~Git.getInstance()" resolve="getInstance" />
+                                    <ref role="1Pybhc" to="l8al:~Git" resolve="Git" />
+                                  </node>
+                                  <node concept="liA8E" id="3ccDGDuG02d" role="2OqNvi">
+                                    <ref role="37wK5l" to="l8al:~Git.runCommand(git4idea.commands.GitLineHandler)" resolve="runCommand" />
+                                    <node concept="37vLTw" id="3ccDGDuG02e" role="37wK5m">
+                                      <ref role="3cqZAo" node="2$lNLAkVrWL" resolve="commitHandler" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="4E9ClRMs$t" role="37wK5m">
+                            <property role="Xl_RC" value="Force Save All" />
+                          </node>
+                          <node concept="3clFbT" id="4E9ClRMtLm" role="37wK5m" />
+                          <node concept="2OqwBi" id="4E9ClRMuG6" role="37wK5m">
+                            <node concept="Xjq3P" id="4E9ClRMulU" role="2Oq$k0" />
+                            <node concept="2OwXpG" id="4E9ClRMvbI" role="2OqNvi">
+                              <ref role="2Oxat5" to="aqel:7uW9A9LcNXZ" resolve="ideaProject" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="2$lNLAkVkPb" role="3cqZAp">
+                      <node concept="Rm8GO" id="2$lNLAkVkPc" role="3cqZAk">
+                        <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.COMMIT" resolve="COMMIT" />
+                        <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="32CFzTqVtd_" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="32CFzTqVtdA" role="37wK5m">
+                  <ref role="37wK5l" node="2hNr1jFa1hM" resolve="getKey" />
+                  <ref role="1Pybhc" node="2hNr1jFDx56" resolve="KeyProvider" />
+                  <node concept="Xl_RD" id="32CFzTqVtdB" role="37wK5m">
+                    <property role="Xl_RC" value="forceSaveAll" />
+                  </node>
+                </node>
+                <node concept="3clFbT" id="32CFzTqVtdC" role="37wK5m">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="Xl_RD" id="32CFzTqVtdD" role="37wK5m">
+                  <property role="Xl_RC" value="Demo action: Force Save All" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="32CFzTqVtdE" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="32CFzTqVtd1" resolve="get" />
+      </node>
+    </node>
+  </node>
 </model>
+
