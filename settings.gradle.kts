@@ -11,7 +11,7 @@ val subprojectPaths = listOf("com.mbeddr",
     "com.mbeddr:distribution",
     "publishing")
 
-fun fqpath(path: String) = ":build:$path"
+fun fqpath(path: String) = ":$path"
 fun dir(path: String) = file("subprojects/" + path.replace(':', '/'))
 
 include(*subprojectPaths.map(::fqpath).toTypedArray())
