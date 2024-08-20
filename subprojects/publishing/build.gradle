@@ -43,7 +43,7 @@ githubRelease {
 }
 
 tasks.register('renameTutorial') {
-    dependsOn(':build:com.mbeddr:distribution:package_tutorial')
+    dependsOn(':com.mbeddr:distribution:package_tutorial')
     doLast {
         def dir = Paths.get(artifactsRoot, 'com.mbeddr.tutorial')
         Files.copy(
@@ -55,7 +55,7 @@ tasks.register('renameTutorial') {
 }
 
 tasks.register('renamePlatform') {
-    dependsOn(':build:com.mbeddr:platform:build_platform_distribution')
+    dependsOn(':com.mbeddr:platform:build_platform_distribution')
     doLast {
         def dir = Paths.get(artifactsRoot, 'com.mbeddr.platform.distribution')
         Files.copy(

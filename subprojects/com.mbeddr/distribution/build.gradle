@@ -25,7 +25,7 @@ task resolve_mbeddr() {
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
-task build_all_in_one(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
+task build_all_in_one(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
     script script_build_mbeddrAllInOne
 }
 
@@ -35,4 +35,4 @@ task package_tutorial(type: Zip) {
     archiveFileName = "com.mbeddr.tutorial.zip"
 }
 
-task prepare_distribution(dependsOn: [build_all_in_one, ':build:com.mbeddr:platform:build_platform_distribution', package_tutorial])
+task prepare_distribution(dependsOn: [build_all_in_one, ':com.mbeddr:platform:build_platform_distribution', package_tutorial])

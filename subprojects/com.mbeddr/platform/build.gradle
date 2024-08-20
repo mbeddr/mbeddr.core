@@ -74,7 +74,7 @@ task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
     include "de.itemis.mps.nativelibs.loader/"
     into "$mpsPluginsDir"
 }
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_nativelibs_loader
+tasks.getByPath(':com.mbeddr:install').dependsOn install_nativelibs_loader
 */
 
 task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
@@ -89,7 +89,7 @@ task install_actionsfilter(type: Copy, dependsOn: build_platform) {
     include "com.mbeddr.mpsutil.actionsfilter/"
     into "$mpsPluginsDir"
 }
-tasks.getByPath(':build:com.mbeddr:install').dependsOn install_actionsfilter
+tasks.getByPath(':com.mbeddr:install').dependsOn install_actionsfilter
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
     script script_test_mbeddrPlatform
