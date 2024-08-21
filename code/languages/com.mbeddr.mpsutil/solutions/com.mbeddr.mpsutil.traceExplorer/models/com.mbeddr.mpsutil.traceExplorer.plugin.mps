@@ -1473,6 +1473,24 @@
         <ref role="3uigEE" node="2jSY3BO406M" resolve="DefaultTraceRecord" />
       </node>
     </node>
+    <node concept="3clFb_" id="fo3l86ccZb" role="jymVt">
+      <property role="TrG5h" value="getTargetNode" />
+      <node concept="3Tm1VV" id="fo3l86ccZd" role="1B3o_S" />
+      <node concept="3uibUv" id="fo3l86ccZe" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="2AHcQZ" id="fo3l86ccZf" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3clFbS" id="fo3l86ccZk" role="3clF47">
+        <node concept="3clFbF" id="fo3l86ccZn" role="3cqZAp">
+          <node concept="10Nm6u" id="fo3l86ccZm" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="fo3l86ccZl" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2jSY3BO6a0f">
     <property role="TrG5h" value="TraceRecordTreeCellRenderer" />
