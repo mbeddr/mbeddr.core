@@ -13,6 +13,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Added trace explorer option to decorate nodes with values of evaluated counterparts, which are not part of the model. 
 
+### Changed 
+
+- Added method to interface ITraceRecord
+
 # July 2024
 
 ## com.mbeddr.mpsutil.comparator
