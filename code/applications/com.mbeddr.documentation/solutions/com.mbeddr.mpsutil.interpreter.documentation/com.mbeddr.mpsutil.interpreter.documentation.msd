@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -42,7 +42,7 @@
     <language slang="l:1c5b7d51-0ef3-4332-af36-874466950878:com.mbeddr.doc.expressions" version="0" />
     <language slang="l:f44f6b9a-bf30-4f73-866e-fac17c177409:com.mbeddr.doc.gen_latex" version="0" />
     <language slang="l:2dec0852-3a21-4c4e-a68c-b05236cc37f2:com.mbeddr.doc.gen_xhtml" version="1" />
-    <language slang="l:e06345c7-da82-4f8b-bd44-1425fe158640:com.mbeddr.doc.meta" version="0" />
+    <language slang="l:e06345c7-da82-4f8b-bd44-1425fe158640:com.mbeddr.doc.meta" version="1" />
     <language slang="l:5344b781-2242-4d23-be90-673ee10bea46:com.mbeddr.doc.qa" version="0" />
     <language slang="l:d7145000-936a-47e8-95a5-71f220e623f9:com.mbeddr.doc.self" version="0" />
     <language slang="l:c61970b4-87fb-4429-8a3a-c87719f000a3:com.mbeddr.doc.terms" version="0" />
@@ -67,7 +67,6 @@
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:86ef8290-12bb-4ca7-947f-093788f263a9:jetbrains.mps.lang.project" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
-    <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="9" />
     <language slang="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" version="6" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />

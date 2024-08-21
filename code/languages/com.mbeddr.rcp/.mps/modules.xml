@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="MPSProject">
-    <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.rcp.actions/com.mbeddr.rcp.actions.msd" folder="" />
-    </projectModules>
-  </component>
-</project>

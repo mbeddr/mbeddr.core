@@ -18,6 +18,8 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v_2019_3.DefaultFacetExplicitPersistence" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2021_2.SplitMPSCoreStub" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2021_3.ExtractMPSBootStubs" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.ExplicitJavaFacetSettings" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.SplitMPSCoreStub2" value="executed" />
     <entry key="jetbrains.mps.javaVersionMigration_JDKDefault" value="executed" />
     <entry key="jetbrains.mps.mps33.resaveModules" value="executed" />
     <entry key="jetbrains.mps.name2id_gen" value="executed" />
@@ -26,6 +28,6 @@
     <entry key="jetbrains.mps.projectJavaVersionMigration" value="executed" />
     <entry key="jetbrains.mps.resaveModules" value="executed" />
     <entry key="jetbrains.mps.v8_elimination" value="executed" />
-    <entry key="project.migrated.version" value="222" />
+    <entry key="project.migrated.version" value="223" />
   </component>
 </project>

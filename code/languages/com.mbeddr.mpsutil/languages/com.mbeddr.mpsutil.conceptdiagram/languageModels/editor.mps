@@ -2,7 +2,7 @@
 <model ref="r:f4f9cb22-513c-4c2a-bf03-5ba144f465a9(com.mbeddr.mpsutil.conceptdiagram.editor)">
   <persistence version="9" />
   <languages>
-    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="1" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -22,15 +22,15 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="45ke" ref="r:40ee9130-2844-4f59-96e6-d12b358ca46c(com.mbeddr.mpsutil.conceptdiagram.structure)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="u8j" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.elk.alg.layered.options(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="vgho" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.elk.core.math(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="u8j" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.elk.alg.layered.options(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
@@ -3930,6 +3930,9 @@
           </node>
           <node concept="37u81S" id="4AXwGoMGgVX" role="1i7NIZ" />
         </node>
+        <node concept="39fpm" id="2igMYjpI0bd" role="35U2g">
+          <property role="1NdBj4" value="6Bd7VwqYQBO/UP" />
+        </node>
         <node concept="yMipj" id="2igMYjpLwHf" role="1RuSHk">
           <node concept="3clFbS" id="2igMYjpLwHg" role="2VODD2">
             <node concept="3clFbF" id="2igMYjpLyRu" role="3cqZAp">
@@ -3952,35 +3955,6 @@
                     <node concept="liA8E" id="1FnP670m9GH" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="39fpm" id="2igMYjpI0bd" role="35U2g">
-          <property role="1NdBj4" value="6Bd7VwqYQBO/UP" />
-        </node>
-        <node concept="pkWqt" id="1FnP670bQ_f" role="2Dxx3A">
-          <node concept="3clFbS" id="1FnP670bQ_g" role="2VODD2">
-            <node concept="3clFbF" id="1FnP670bVSx" role="3cqZAp">
-              <node concept="2OqwBi" id="1FnP670bWvm" role="3clFbG">
-                <node concept="pncrf" id="1FnP670bWvn" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1FnP670bWvo" role="2OqNvi">
-                  <ref role="3TsBF5" to="45ke:1FnP670dN3d" resolve="autoLayoutOnInit" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pkWqt" id="1FnP670bWFL" role="qiu7m">
-          <node concept="3clFbS" id="1FnP670bWFM" role="2VODD2">
-            <node concept="3clFbF" id="1FnP670c3hZ" role="3cqZAp">
-              <node concept="3fqX7Q" id="1FnP670cdNY" role="3clFbG">
-                <node concept="2OqwBi" id="1FnP670cdO0" role="3fr31v">
-                  <node concept="pncrf" id="1FnP670cdO1" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1FnP670cdO2" role="2OqNvi">
-                    <ref role="3TsBF5" to="45ke:1FnP670bD7A" resolve="dontSaveLayoutData" />
                   </node>
                 </node>
               </node>
@@ -4062,6 +4036,32 @@
                 <node concept="Rm8GO" id="1FnP66ZzBaV" role="3clFbG">
                   <ref role="Rm8GQ" to="u8j:~NodePlacementStrategy.LINEAR_SEGMENTS" resolve="LINEAR_SEGMENTS" />
                   <ref role="1Px2BO" to="u8j:~NodePlacementStrategy" resolve="NodePlacementStrategy" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="1FnP670bWFL" role="qiu7m">
+          <node concept="3clFbS" id="1FnP670bWFM" role="2VODD2">
+            <node concept="3clFbF" id="1FnP670c3hZ" role="3cqZAp">
+              <node concept="3fqX7Q" id="1FnP670cdNY" role="3clFbG">
+                <node concept="2OqwBi" id="1FnP670cdO0" role="3fr31v">
+                  <node concept="pncrf" id="1FnP670cdO1" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1FnP670cdO2" role="2OqNvi">
+                    <ref role="3TsBF5" to="45ke:1FnP670bD7A" resolve="dontSaveLayoutData" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="1FnP670bQ_f" role="2Dxx3A">
+          <node concept="3clFbS" id="1FnP670bQ_g" role="2VODD2">
+            <node concept="3clFbF" id="1FnP670bVSx" role="3cqZAp">
+              <node concept="2OqwBi" id="1FnP670bWvm" role="3clFbG">
+                <node concept="pncrf" id="1FnP670bWvn" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1FnP670bWvo" role="2OqNvi">
+                  <ref role="3TsBF5" to="45ke:1FnP670dN3d" resolve="autoLayoutOnInit" />
                 </node>
               </node>
             </node>
@@ -5587,12 +5587,6 @@
           <ref role="ehGHo" to="45ke:2igMYjp$6$q" resolve="ConceptDiagram" />
         </node>
       </node>
-      <node concept="37vLTG" id="1FnP670lQ92" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="1FnP670lQWG" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
       <node concept="3cqZAl" id="6vp$_2vHABo" role="3clF45" />
       <node concept="3Tm1VV" id="6vp$_2vHABp" role="1B3o_S" />
       <node concept="3clFbS" id="6vp$_2vHABq" role="3clF47">
@@ -5733,9 +5727,6 @@
           <node concept="2GrKxI" id="7APyAbMnLOm" role="2Gsz3X">
             <property role="TrG5h" value="l" />
           </node>
-          <node concept="1rXfSq" id="1FnP66Z39MD" role="2GsD0m">
-            <ref role="37wK5l" node="1FnP66Z2G_t" resolve="getLanguages" />
-          </node>
           <node concept="3clFbS" id="7APyAbMnLOo" role="2LFqv$">
             <node concept="2Gpval" id="7APyAbMxIRX" role="3cqZAp">
               <node concept="2GrKxI" id="7APyAbMxIRZ" role="2Gsz3X">
@@ -5781,6 +5772,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="1rXfSq" id="1FnP66Z39MD" role="2GsD0m">
+            <ref role="37wK5l" node="1FnP66Z2G_t" resolve="getLanguages" />
           </node>
         </node>
         <node concept="3clFbH" id="7APyAbMnHuE" role="3cqZAp" />
@@ -5836,6 +5830,12 @@
               <ref role="37wK5l" node="1FnP66Z3EiC" resolve="getMissingConcepts" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1FnP670lQ92" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="1FnP670lQWG" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
