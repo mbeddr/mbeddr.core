@@ -9,6 +9,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.platform
 
+### Added
+
+- A new language `com.mbeddr.mpsutil.checkinHandler` was added that can be used to execute pre-commit handlers which can approve or reject commits or execute arbitrary code before the checkin happens.
+
 ### Removed
 
 - The tests build script (`com.mbeddr.platform.tests.ts.build`) is no longer part of the `com.mbeddr.platform` build

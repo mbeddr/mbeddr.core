@@ -21185,6 +21185,10 @@
         <ref role="m_rDy" node="3lcj7hzsuXf" resolve="com.mbeddr.mpsutil.logicalChild" />
         <node concept="pUk6x" id="3lcj7hzsE8a" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="SUkpD3RkHU" role="39821P">
+        <ref role="m_rDy" node="2hNr1jFzOYG" resolve="com.mbeddr.mpsutil.checkinHandler" />
+        <node concept="pUk6x" id="SUkpD3Rllc" role="pUk7w" />
+      </node>
     </node>
     <node concept="m$_wf" id="64SK4bcO2rO" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.projectview.favourites" />
@@ -21494,6 +21498,112 @@
       </node>
       <node concept="m$f5U" id="3lcj7hzs_XZ" role="m$_yh">
         <ref role="m$f5T" node="3lcj7hzsgVW" resolve="com.mbeddr.mpsutil.logicalChild" />
+      </node>
+    </node>
+    <node concept="2G$12M" id="2hNr1jFzOYr" role="3989C9">
+      <property role="TrG5h" value="com.mbeddr.mpsutil.checkinHandler" />
+      <node concept="1E1JtA" id="2hNr1jFzSEf" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.checkinHandler" />
+        <property role="3LESm3" value="5e43bd52-71f1-484a-90fa-e1e624f7e44b" />
+        <node concept="398BVA" id="2hNr1jFzSXU" role="3LF7KH">
+          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+          <node concept="2Ry0Ak" id="2hNr1jFzSXV" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2hNr1jFzSXW" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.checkinHandler" />
+              <node concept="2Ry0Ak" id="5mHD6CprAVT" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.checkinHandler.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNr1jFzUtA" role="3bR37C">
+          <node concept="3bR9La" id="2hNr1jFzUtB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNr1jFzUtC" role="3bR37C">
+          <node concept="3bR9La" id="2hNr1jFzUtD" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNr1jFzUtE" role="3bR37C">
+          <node concept="3bR9La" id="2hNr1jFzUtF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNr1jFzUtG" role="3bR37C">
+          <node concept="3bR9La" id="2hNr1jFzUtH" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNr1jFzUtI" role="3bR37C">
+          <node concept="3bR9La" id="2hNr1jFzUtJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2hNr1jFzUtK" role="3bR37C">
+          <node concept="3bR9La" id="2hNr1jFzUtL" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="2hNr1jFzUtX" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="2hNr1jFzUtY" role="1HemKq">
+            <node concept="398BVA" id="2hNr1jFzUtM" role="3LXTmr">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="2hNr1jFzUtN" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2hNr1jFzUtO" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.checkinHandler" />
+                  <node concept="2Ry0Ak" id="2hNr1jFzUtP" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="2hNr1jFzUtZ" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="2hNr1jFzOYG" role="3989C9">
+      <property role="m$_wk" value="com.mbeddr.mpsutil.checkinHandler" />
+      <node concept="m$_yC" id="2hNr1jFzOYH" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="3_J27D" id="2hNr1jFzOYI" role="m$_yQ">
+        <node concept="3Mxwew" id="2hNr1jFzOYJ" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.checkinHandler" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="2hNr1jFzOYK" role="m_cZH">
+        <node concept="3Mxwew" id="2hNr1jFzOYL" role="3MwsjC">
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.checkinHandler" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="2hNr1jFzOYM" role="m$_w8">
+        <node concept="3Mxwew" id="2hNr1jFzOYN" role="3MwsjC">
+          <property role="3MwjfP" value="mbeddr" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="2hNr1jFzOYO" role="2iVFfd">
+        <property role="2iUeEt" value="mbeddr" />
+        <property role="2iUeEu" value="http://mbeddr.com" />
+      </node>
+      <node concept="m$f5U" id="2hNr1jFzOYP" role="m$_yh">
+        <ref role="m$f5T" node="2hNr1jFzOYr" resolve="com.mbeddr.mpsutil.checkinHandler" />
+      </node>
+      <node concept="3_J27D" id="2hNr1jFzWjE" role="3s6cr7">
+        <node concept="3Mxwew" id="2hNr1jFzWjF" role="3MwsjC">
+          <property role="3MwjfP" value="helper plugin to create version control pre-commit handlers" />
+        </node>
       </node>
     </node>
   </node>
