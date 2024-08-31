@@ -65,14 +65,8 @@ String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
 String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
 String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
 ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
 ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
-
-// path locations
-ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
-ext.allScripts_buildFileLocation = file(mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts").getAbsolutePath()
-ext.slAll_buildFileLocation = file(ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all").getAbsolutePath()
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home]
 
 // ant script locations
 ext.scriptsBasePath = rootProject.file("scripts").absolutePath
