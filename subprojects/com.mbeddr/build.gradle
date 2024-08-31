@@ -66,6 +66,7 @@ Map<String, Object> antSystemProperties = [
         'build': mbeddrBuildNumber,
         'major.version': mbeddrMajor,
         'minor.version': mbeddrMinor,
+        'build.jna.library.path': new File(mpsHomeDir, "lib/jna/${System.getProperty('os.arch')}")
 ]
 
 
