@@ -58,15 +58,19 @@ logger.info "jdk_home: $jdk_home"
 
 ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
 
-ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
-ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
-ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
-String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
-String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
-ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home]
+Map<String, Object> antSystemProperties = [
+        'mps.home': mpsHomeDir,
+        'build.dir': rootProject.layout.projectDirectory,
+        'artifacts.root': rootProject.file('artifacts'),
+        'mbeddr.github.core.home': rootProject.layout.projectDirectory,
+        'build': mbeddrBuildNumber,
+        'major.version': mbeddrMajor,
+        'minor.version': mbeddrMinor,
+]
+
+
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs =
+        antSystemProperties.collect { "-D${it.key}=${it.value}".toString() }
 
 // path locations
 ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
