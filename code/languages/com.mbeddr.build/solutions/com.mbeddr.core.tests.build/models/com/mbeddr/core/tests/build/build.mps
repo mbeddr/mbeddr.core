@@ -1066,6 +1066,22 @@
             <ref role="3bR37D" node="5Z2CJwRopt8" resolve="test.assessments.testlang" />
           </node>
         </node>
+        <node concept="3rtmxn" id="4mvQA9n$oM$" role="3bR31x">
+          <node concept="3LXTmp" id="4mvQA9n$oM_" role="3rtmxm">
+            <node concept="3qWCbU" id="4mvQA9n$oMA" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4mvQA9n$oMB" role="3LXTmr">
+              <ref role="398BVh" node="7eF9rfAuuux" resolve="mbeddr.core" />
+              <node concept="2Ry0Ak" id="4mvQA9n$oMC" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4mvQA9n$oMD" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.assessments" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="7eF9rfAuuuc" role="1l3spd">
