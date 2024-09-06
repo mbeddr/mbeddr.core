@@ -146,7 +146,7 @@
     <property role="EcuMT" value="2265458908607221014" />
     <property role="TrG5h" value="CostAttribute" />
     <property role="34LRSv" value="cost" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1XKxHZsLKOp" role="PzmwI">
       <ref role="PrY4T" node="1XKxHZsLKOl" resolve="IAttribute" />
     </node>

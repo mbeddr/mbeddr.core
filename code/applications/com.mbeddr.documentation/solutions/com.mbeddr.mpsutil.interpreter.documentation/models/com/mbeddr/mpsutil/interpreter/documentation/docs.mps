@@ -5,7 +5,7 @@
     <use id="1c897ba5-9d43-4035-ac7f-0306495743ac" name="com.mbeddr.mpsutil.interpreter.test" version="0" />
     <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="1" />
     <use id="390de4af-0c8d-4716-8dec-3d05ca751b28" name="com.mbeddr.core.cinterpreter" version="0" />
-    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="0" />
+    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="1" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
@@ -38,12 +38,6 @@
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
       <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLNoOutputRenderer" flags="ng" index="1TaS0h" />
-    </language>
-    <language id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project">
-      <concept id="1855399583446016268" name="jetbrains.mps.lang.project.structure.ModuleReference" flags="ng" index="A2Dkr">
-        <property id="1855399583446016270" name="qualifiedName" index="A2Dkp" />
-        <property id="1855399583446016269" name="uuid" index="A2Dkq" />
-      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -148,6 +142,12 @@
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -156,7 +156,7 @@
     <language id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta">
       <concept id="4411878964391860302" name="com.mbeddr.doc.meta.structure.SolutionRefWord" flags="ng" index="XCBN5" />
       <concept id="4411878964391805161" name="com.mbeddr.doc.meta.structure.AbstractModuleRefWord" flags="ng" index="XFqhy">
-        <child id="4411878964391805166" name="moduleRefOld" index="XFqh_" />
+        <child id="8480291644168929007" name="identity" index="2nPJaY" />
       </concept>
       <concept id="8408742697223012410" name="com.mbeddr.doc.meta.structure.LanguageRefWord" flags="ng" index="3R4DFk" />
     </language>
@@ -181,9 +181,9 @@
               <property role="19SUeA" value="The " />
             </node>
             <node concept="3R4DFk" id="3OU98G0AHDQ" role="19SJt6">
-              <node concept="A2Dkr" id="3OU98G0AHDU" role="XFqh_">
-                <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter" />
-                <property role="A2Dkq" value="47f075a6-558e-4640-a606-7ce0236c8023" />
+              <node concept="1dCxOk" id="4FginuvUePu" role="2nPJaY">
+                <property role="1XweGW" value="47f075a6-558e-4640-a606-7ce0236c8023" />
+                <property role="1XxBO9" value="com.mbeddr.mpsutil.interpreter" />
               </node>
             </node>
             <node concept="19SUe$" id="3OU98G0AHDP" role="19SJt6">
@@ -270,9 +270,9 @@
                   <property role="19SUeA" value="The " />
                 </node>
                 <node concept="XCBN5" id="1T7O9iWSE4I" role="19SJt6">
-                  <node concept="A2Dkr" id="1T7O9iWSHRt" role="XFqh_">
-                    <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.rt" />
-                    <property role="A2Dkq" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
+                  <node concept="1dCxOk" id="4FginuvUePy" role="2nPJaY">
+                    <property role="1XweGW" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.interpreter.rt" />
                   </node>
                 </node>
                 <node concept="19SUe$" id="1T7O9iWSE4J" role="19SJt6">
@@ -288,9 +288,9 @@
                   <property role="19SUeA" value="The " />
                 </node>
                 <node concept="3R4DFk" id="1T7O9iWSJey" role="19SJt6">
-                  <node concept="A2Dkr" id="1T7O9iWSJeB" role="XFqh_">
-                    <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.test" />
-                    <property role="A2Dkq" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
+                  <node concept="1dCxOk" id="4FginuvUePv" role="2nPJaY">
+                    <property role="1XweGW" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.interpreter.test" />
                   </node>
                 </node>
                 <node concept="19SUe$" id="1T7O9iWSJez" role="19SJt6">
@@ -502,9 +502,9 @@
             <property role="19SUeA" value=", a Java class based on the " />
           </node>
           <node concept="XCBN5" id="1d83w5bFauk" role="19SJt6">
-            <node concept="A2Dkr" id="1d83w5bFfzt" role="XFqh_">
-              <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.rt" />
-              <property role="A2Dkq" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
+            <node concept="1dCxOk" id="4FginuvUePz" role="2nPJaY">
+              <property role="1XweGW" value="735f86bc-17fb-4d1c-a664-82c2b8e8a34e" />
+              <property role="1XxBO9" value="com.mbeddr.mpsutil.interpreter.rt" />
             </node>
           </node>
           <node concept="19SUe$" id="1d83w5bFaul" role="19SJt6">
@@ -2559,18 +2559,18 @@
             <property role="19SUeA" value="The " />
           </node>
           <node concept="3R4DFk" id="1Y3rEQ3p9VK" role="19SJt6">
-            <node concept="A2Dkr" id="1Y3rEQ3p9WS" role="XFqh_">
-              <property role="A2Dkp" value="com.mbeddr.mpsutil.interpreter.test" />
-              <property role="A2Dkq" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
+            <node concept="1dCxOk" id="4FginuvUePw" role="2nPJaY">
+              <property role="1XweGW" value="1c897ba5-9d43-4035-ac7f-0306495743ac" />
+              <property role="1XxBO9" value="com.mbeddr.mpsutil.interpreter.test" />
             </node>
           </node>
           <node concept="19SUe$" id="1Y3rEQ3p9VL" role="19SJt6">
             <property role="19SUeA" value=" language provides the basis for custom test languages for the Interpreted Language. An example for a custom test language would be " />
           </node>
           <node concept="3R4DFk" id="1Y3rEQ3p9WU" role="19SJt6">
-            <node concept="A2Dkr" id="1Y3rEQ3p9X2" role="XFqh_">
-              <property role="A2Dkp" value="com.mbeddr.core.cinterpreter" />
-              <property role="A2Dkq" value="390de4af-0c8d-4716-8dec-3d05ca751b28" />
+            <node concept="1dCxOk" id="4FginuvUePx" role="2nPJaY">
+              <property role="1XweGW" value="390de4af-0c8d-4716-8dec-3d05ca751b28" />
+              <property role="1XxBO9" value="com.mbeddr.core.cinterpreter" />
             </node>
           </node>
           <node concept="19SUe$" id="1Y3rEQ3p9WV" role="19SJt6">
