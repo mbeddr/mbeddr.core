@@ -1,4 +1,5 @@
 import de.itemis.mps.gradle.GitBasedVersioning
+import de.itemis.mps.gradle.RunAntScript
 
 
 plugins {
@@ -156,7 +157,7 @@ subprojects {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
 
-    tasks.configureEach( task -> {  task.dependsOn(':downloadJbr') })
+        tasks.withType(RunAntScript).configureEach(task -> { task.dependsOn(':downloadJbr') })
 
     }
  }
