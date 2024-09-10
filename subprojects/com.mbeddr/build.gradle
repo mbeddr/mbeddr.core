@@ -1,3 +1,8 @@
+plugins {
+    id 'base'
+    id 'maven-publish'
+}
+
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
@@ -53,21 +58,20 @@ logger.info "jdk_home: $jdk_home"
 
 ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
 
-ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
-ext.build_dir = '-Dbuild.dir=' + file(rootProject.projectDir.absolutePath).getAbsolutePath()
-ext.artifacts_root = '-Dartifacts.root=' + file(rootProject.projectDir.absolutePath + "/artifacts").getAbsolutePath()
-String buildVersion = '-Dbuild=' + ext.mbeddrBuildNumber
-String majorVersion = '-Dmajor.version=' + ext.mbeddrMajor
-String minorVersion = '-Dminor.version=' + ext.mbeddrMinor
-ext.mbeddr_home = ['-Dmbeddr.github.core.home=' + file(rootProject.projectDir.absolutePath).getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.slall_home = ['-Dsl-all.home=' + file(artifactsDir.absolutePath + '/de.itemis.mps.extensions').getAbsolutePath(), minorVersion, majorVersion, buildVersion]
-ext.dependsOnMPS_scriptArgs = [mps_home, build_dir, artifacts_root]
-ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs = [*dependsOnMPS_scriptArgs, *mbeddr_home, *slall_home]
+Map<String, Object> antSystemProperties = [
+        'mps.home': mpsHomeDir,
+        'build.dir': rootProject.layout.projectDirectory,
+        'artifacts.root': rootProject.file('artifacts'),
+        'mbeddr.github.core.home': rootProject.layout.projectDirectory,
+        'build': mbeddrBuildNumber,
+        'major.version': mbeddrMajor,
+        'minor.version': mbeddrMinor,
+        'build.jna.library.path': new File(mpsHomeDir, "lib/jna/${System.getProperty('os.arch')}")
+]
 
-// path locations
-ext.mbeddrScripts_basePath = file(ant.properties['mbeddr.github.core.home'] + "/build").getAbsolutePath()
-ext.allScripts_buildFileLocation = file(mbeddrScripts_basePath + "/" + "com.mbeddr.allScripts").getAbsolutePath()
-ext.slAll_buildFileLocation = file(ant.properties['mbeddr.github.core.home'] + "/scripts" + "/" + "sl-all").getAbsolutePath()
+
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs =
+        antSystemProperties.collect { "-D${it.key}=${it.value}".toString() }
 
 // ant script locations
 ext.scriptsBasePath = rootProject.file("scripts").absolutePath
