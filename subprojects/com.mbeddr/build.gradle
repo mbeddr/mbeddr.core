@@ -160,14 +160,14 @@ private static void configureRepositories(Project project) {
 }
 
 
-task printVersions {
+tasks.register('printVersions') {
     doLast {
         println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
         println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
     }
 }
 
-task printRepositories {
+tasks.register('printRepositories') {
     doLast {
         println "snapshotRepository: $snapshotRepository"
         println "releaseRepository: $releaseRepository"
