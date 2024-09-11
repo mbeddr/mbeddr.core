@@ -86,10 +86,6 @@ ext.additionalPomInfo = {
 }
 
 subprojects {
-    // required plugins
-    apply plugin: "base"
-    apply plugin: "maven-publish"
-
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
 

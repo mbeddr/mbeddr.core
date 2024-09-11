@@ -1,190 +1,24 @@
 # -----------------------------------------------------------
 # General
 
+/build/
+/artifacts/
+/scripts/
+/.gradle/
+/MPS/
+/tmp/
 
-distros/*
-MPS/*
-mps-distrib/*
-artifacts/*
+.idea/
+**/.mps/workspace.xml
 
-.ant_targets
-.DS_Store
-.metadata
-.svn
-*.synctex.gz
-*.aux
-*.log
-*.*.synctex.gz
-*.*.aux
-*.*.log
-*.class
+classes_gen/
+doc_gen/
+source_gen/
+source_gen.caches/
+test_gen/
+test_gen.caches/
 
-.idea
-workspace.xml
-
-
-junitvmwatcher*.properties
-build.properties
-TEST-*.xml
-junit*.properties
-
-classes_gen
-doc_gen
-source_gen
-source_gen.caches
-result_gen
-jimple_gen
-
-# -----------------------------------------------------------
-# Type Size Config
-code/languages/com.mbeddr.build/_spreferences
-code/languages/com.mbeddr.mpsutil/_spreferences
-
-# -----------------------------------------------------------
-# * build
-build/**/build
-build/allInOne
-build/jbrDownload
-
-# -----------------------------------------------------------
-# * diagrams
-code/languages/com.mbeddr.core/diagrams/*.dot
-code/languages/com.mbeddr.core/diagrams/*.gv
-code/languages/com.mbeddr.core/diagrams/*.png
-code/languages/com.mbeddr.ext/diagrams/*.dot
-code/languages/com.mbeddr.ext/diagrams/*.gv
-code/languages/com.mbeddr.ext/diagrams/*.png
-
-# -----------------------------------------------------------
-# * lib - here we seem to need the generated sources.
-code/languages/*/lib/*/classes_gen
-code/languages/*/lib/*/source_gen.caches
-
-
-
-# -----------------------------------------------------------
-# * tests
-test_gen
-test_gen.caches
-analyses_results
-
-
-
-
-# -----------------------------------------------------------
-# * project settings
-code/languages/*/*.iws
-code/languages/*/build.properties
-code/languages/*/TEST*.xml
-
-# -----------------------------------------------------------
-# applications
-code/applications/*/*.iws
-code/applications/*/build.properties
-
-#-----------------------------------------------------------
-# tests
-code/languages/*/solutions/*/test_gen.caches/
-code/languages/*/solutions/*/test_gen/
-
-
-# -----------------------------------------------------------
-# documents
-deliverables/*/*.aux
-deliverables/*/*.bbl
-deliverables/*/*.blg
-deliverables/*/*.dvi
-deliverables/*/*.log
-deliverables/*/*.out
-deliverables/*/*.toc
-
-documentation/*/*.aux
-documentation/*/*.bbl
-documentation/*/*.blg
-documentation/*/*.dvi
-documentation/*/*.log
-documentation/*/*.out
-documentation/*/*.toc
-documentation/*/*.synctex.gz
-
-documentation/userguide/*.pdf
-documentation/build
-
-
-# ----------------------------------------------------
-# result files from the NuSMV unit tests
-code/languages/com.mbeddr.ext/result.txt
-code/languages/com.mbeddr.ext/result.xml
-
-# ----------------------------------------------------
-# result files from the cbmc unit tests
-source_gentest.analyses.cbmc.testcode_nightly_nightly.html
-
-# -----------------------------------------------------------
-# tools
-tools/zgrviewer/zgrviewerformps/target/*
-tools/zgrviewer/zvtm-core-formps/target/*
-
-# -----------------------------------------------------------
-# compiled java classes within the ant-task eclipse workspace 
-ant-task-workspace/*/bin/
-
-# -----------------------------------------------------------
-# debugger test code
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/a.*
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/*.exe
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest*
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
-
-# other test resources
-code/languages/com.mbeddr.mpsutil/tests/test.com.mbeddr.mpsutil.iconchar/icons/
-
-#Some local script (not to be shared)
-code/languages/offline.sh
-
-# -----------------------------------------------------------
-# CBMC analyses results temporary files
-code/*/xmlCBMCRawOutput/*
-
-/build/**/*.xml
-/build/com.mbeddr.allScripts/build.xml
-
-# -----------------------------------------------------------
-# tutorial build
-
-build/com.mbeddr.tutorial/null/*.puml
-applications/tutorial/solutions/mbeddr.tutorial.main/temp/
-
-# -----------------------------------------------------------
-# IntelliJ debugging info
-*.iml
-
-# Generated visualizations
-*.puml
-_vis/*.png
-code/applications/tutorial/solutions/com.mbeddr.tutorial.documentation/_vis
-tools/ant/ant-task-workspace/MakeTestsTask/out/artifacts
-tools/ant/ant-task-workspace/TeamcityMakeTests/bin/com
-code/plugins/sl-all/build-tests.xml
-code/plugins/sl-all/build.xml
-tmp
-
-# -----------------------------------------------------------
-# gradle files
 gradle.properties
-**/.gradle/*
-**/scripts/*
-**/MPS/*
-**/build/repo/
-**/build/distributions
-**/build/classes
-antlib.xml
-**/code/languages/myDependencies
-**/.settings/org.eclipse.buildship.core.prefs
-**/.project
-# ecore transformation tools
-code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmation.sandbox
 
 # -----------------------------------------------------------
 # Visual Studio Code settings
@@ -194,4 +28,3 @@ code/languages/com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.ecoretransofmatio
 
 /config/
 /system/
-markdown-navigator**
