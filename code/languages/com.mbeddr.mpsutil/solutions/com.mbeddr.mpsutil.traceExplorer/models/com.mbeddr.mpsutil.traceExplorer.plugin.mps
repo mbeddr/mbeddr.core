@@ -1491,7 +1491,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="fo3l86ccZl" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
@@ -9432,7 +9432,7 @@
       <node concept="37vLTG" id="1TNXceg$fBV" role="3clF46">
         <property role="TrG5h" value="mapper" />
         <node concept="3uibUv" id="1TNXceg$fBU" role="1tU5fm">
-          <ref role="3uigEE" node="1TNXcegzj9g" resolve="ITraceRecordMapper" />
+          <ref role="3uigEE" node="1TNXcegzj9g" resolve="INodeMapper" />
         </node>
       </node>
     </node>
