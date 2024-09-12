@@ -2238,13 +2238,13 @@
                   <node concept="17QB3L" id="ODg7jjiecs" role="1tU5fm" />
                   <node concept="3K4zz7" id="ODg7jjigUC" role="33vP2m">
                     <node concept="Xl_RD" id="ODg7jjihix" role="3K4E3e">
-                      <property role="Xl_RC" value="./gradlew" />
-                    </node>
-                    <node concept="Xl_RD" id="ODg7jjihEp" role="3K4GZi">
                       <property role="Xl_RC" value="gradlew.bat" />
                     </node>
-                    <node concept="10M0yZ" id="ODg7jjigfj" role="3K4Cdx">
-                      <ref role="3cqZAo" to="zn9m:~SystemInfo.isMac" resolve="isMac" />
+                    <node concept="Xl_RD" id="ODg7jjihEp" role="3K4GZi">
+                      <property role="Xl_RC" value="./gradlew" />
+                    </node>
+                    <node concept="10M0yZ" id="9xWdX0LSqW" role="3K4Cdx">
+                      <ref role="3cqZAo" to="zn9m:~SystemInfo.isWindows" resolve="isWindows" />
                       <ref role="1PxDUh" to="zn9m:~SystemInfo" resolve="SystemInfo" />
                     </node>
                   </node>
