@@ -56,6 +56,10 @@
         <reference id="8455208232410321432" name="reviewedRoot" index="2f$7Oe" />
         <child id="8455208232410321433" name="notes" index="2f$7Of" />
       </concept>
+      <concept id="2887576756982815155" name="com.mbeddr.mpsutil.review.readonly.structure.MyConcept" flags="ng" index="35G29L">
+        <child id="2887576756982822230" name="children" index="35G0Uk" />
+      </concept>
+      <concept id="2887576756982813059" name="com.mbeddr.mpsutil.review.readonly.structure.MyChild" flags="ng" index="35G2D1" />
     </language>
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
       <concept id="8455208232410333108" name="com.mbeddr.mpsutil.review.annotation.structure.CommentAnnotationContainer" flags="ng" index="2f$52y">
@@ -239,6 +243,51 @@
         <ref role="19LoX1" node="7lmVLrUwj48" />
         <node concept="19SGf9" id="3cilTABWkJe" role="3ajGZ5">
           <node concept="19SUe$" id="3cilTABWkJf" role="19SJt6" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="35G29L" id="2wiIWbHCJkU">
+    <property role="TrG5h" value="Collapsible" />
+    <node concept="35G2D1" id="2wiIWbHCKy1" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCKy3" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLd" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLh" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLm" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLs" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLz" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLF" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLO" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNLY" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNM9" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNMl" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNMy" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNMK" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNMZ" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNNf" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNNw" role="35G0Uk" />
+    <node concept="35G2D1" id="2wiIWbHCNNM" role="35G0Uk" />
+    <node concept="2f$52y" id="2wiIWbHCNO5" role="lGtFl">
+      <node concept="3vAitl" id="2wiIWbHCNO6" role="2f$52z">
+        <property role="3ajGZW" value="apann" />
+        <property role="3ajGZ3" value="6 Sept 2024, 5:33:35 pm" />
+        <property role="19LeSh" value="constant_0" />
+        <ref role="19LoX1" node="2wiIWbHCNLz" />
+        <node concept="19SGf9" id="2wiIWbHCNO7" role="3ajGZ5">
+          <node concept="19SUe$" id="2wiIWbHCNO8" role="19SJt6">
+            <property role="19SUeA" value="Annotation 2" />
+          </node>
+        </node>
+      </node>
+      <node concept="3vAitl" id="2wiIWbHJrqB" role="2f$52z">
+        <property role="3ajGZW" value="apann" />
+        <property role="3ajGZ3" value="6 Sept 2024, 6:07:44 pm" />
+        <property role="19LeSh" value="constant_0" />
+        <ref role="19LoX1" node="2wiIWbHCKy3" />
+        <node concept="19SGf9" id="2wiIWbHJrqC" role="3ajGZ5">
+          <node concept="19SUe$" id="2wiIWbHJrqD" role="19SJt6">
+            <property role="19SUeA" value=" Annotation" />
+          </node>
         </node>
       </node>
     </node>

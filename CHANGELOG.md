@@ -11,6 +11,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - A new kind of Checkin handlers (background handler) now support the interface `CommitCheck` which allows more options like running the code after the commit or in the background.
 
+## com.mbeddr.mpsutil.margincell
+
+### Fixed
+
+- When the attached cell can't be found (e.g. it is collapsed), the next suitable anchestor cell is now used to align the margin cell.
+
 # August 2024
 
 ## com.mbeddr.platform
