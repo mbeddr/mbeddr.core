@@ -21256,12 +21256,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2hNr1jFzUtK" role="3bR37C">
-          <node concept="3bR9La" id="2hNr1jFzUtL" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
         <node concept="1BupzO" id="2hNr1jFzUtX" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -21284,12 +21278,37 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4LY$CIohIRB" role="3bR37C">
+          <node concept="3bR9La" id="4LY$CIohIRC" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:5z3whG1oBTp" resolve="MPS.Kotlin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LY$CIohIRD" role="3bR37C">
+          <node concept="3bR9La" id="4LY$CIohIRE" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LY$CIohIRF" role="3bR37C">
+          <node concept="3bR9La" id="4LY$CIohIRG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ACpgrwmP7U" resolve="jetbrains.mps.kotlin.stdlib" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="2hNr1jFzOYG" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.checkinHandler" />
       <node concept="m$_yC" id="2hNr1jFzOYH" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="4LY$CIohJv6" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
+      </node>
+      <node concept="m$_yC" id="4LY$CIohJMI" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2IcGFIaJU8j" resolve="MPS.Kotlin" />
+      </node>
+      <node concept="m$_yC" id="4LY$CIohKH$" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1diEraJ0skp" resolve="jetbrains.mps.kotlin" />
       </node>
       <node concept="3_J27D" id="2hNr1jFzOYI" role="m$_yQ">
         <node concept="3Mxwew" id="2hNr1jFzOYJ" role="3MwsjC">

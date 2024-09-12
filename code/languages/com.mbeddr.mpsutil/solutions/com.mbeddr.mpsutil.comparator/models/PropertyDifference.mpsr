@@ -454,7 +454,7 @@
                   <node concept="liA8E" id="E9Bg74iX2$" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
                     <node concept="37vLTw" id="E9Bg74mZLE" role="37wK5m">
-                      <ref role="3cqZAo" node="E9Bg74mZL$" resolve="property" />
+                      <ref role="3cqZAo" node="E9Bg74mZL$" resolve="expected" />
                     </node>
                   </node>
                 </node>
