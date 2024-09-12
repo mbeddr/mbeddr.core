@@ -326,7 +326,7 @@
             <node concept="liA8E" id="E9Bg74Xo89" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(int)" resolve="append" />
               <node concept="37vLTw" id="E9Bg750OZs" role="37wK5m">
-                <ref role="3cqZAo" node="E9Bg750OZ7" resolve="i" />
+                <ref role="3cqZAo" node="E9Bg750OZ7" resolve="expectedChildren" />
               </node>
             </node>
           </node>

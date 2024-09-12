@@ -369,7 +369,7 @@
   </node>
   <node concept="1lYeZD" id="2hNr1jFDxsE">
     <property role="TrG5h" value="BugfixCommitMessageCheckin" />
-    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="CheckinExtensionPoint" />
+    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="ForegroundCheckin" />
     <node concept="3Tm1VV" id="2hNr1jFDxsF" role="1B3o_S" />
     <node concept="2tJIrI" id="2hNr1jFDxsG" role="jymVt" />
     <node concept="3tTeZs" id="2hNr1jFDxsH" role="jymVt">
@@ -643,7 +643,7 @@
   <node concept="2DaZZR" id="2hNr1jFDxQs" />
   <node concept="1lYeZD" id="2hNr1jFD$Xi">
     <property role="TrG5h" value="CapitalizedSubjectCheckin" />
-    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="CheckinExtensionPoint" />
+    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="ForegroundCheckin" />
     <node concept="3Tm1VV" id="2hNr1jFD$Xj" role="1B3o_S" />
     <node concept="2tJIrI" id="2hNr1jFD$Xk" role="jymVt" />
     <node concept="3tTeZs" id="2hNr1jFD$Xl" role="jymVt">
@@ -868,7 +868,7 @@
   </node>
   <node concept="1lYeZD" id="2hNr1jFD$XS">
     <property role="TrG5h" value="DeleteClassesCheckin" />
-    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="CheckinExtensionPoint" />
+    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="ForegroundCheckin" />
     <node concept="3Tm1VV" id="2hNr1jFD$XT" role="1B3o_S" />
     <node concept="2tJIrI" id="2hNr1jFD$XU" role="jymVt" />
     <node concept="3tTeZs" id="2hNr1jFD$XV" role="jymVt">
@@ -1099,7 +1099,7 @@
   </node>
   <node concept="1lYeZD" id="2hNr1jFD$Yu">
     <property role="TrG5h" value="HelloCheckin" />
-    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="CheckinExtensionPoint" />
+    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="ForegroundCheckin" />
     <node concept="3Tm1VV" id="2hNr1jFD$Yv" role="1B3o_S" />
     <node concept="2tJIrI" id="2hNr1jFD$Yw" role="jymVt" />
     <node concept="3tTeZs" id="2hNr1jFD$Yx" role="jymVt">
@@ -1224,7 +1224,7 @@
   </node>
   <node concept="1lYeZD" id="32CFzTqVtcV">
     <property role="TrG5h" value="ForceSaveAllCheckin" />
-    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="CheckinExtensionPoint" />
+    <ref role="1lYe$Y" to="aqel:1yfWS2nNO6t" resolve="ForegroundCheckin" />
     <node concept="3Tm1VV" id="32CFzTqVtcW" role="1B3o_S" />
     <node concept="2tJIrI" id="32CFzTqVtcX" role="jymVt" />
     <node concept="3tTeZs" id="32CFzTqVtcY" role="jymVt">
@@ -1593,8 +1593,8 @@
             <node concept="YeOm9" id="iOccn7Y6zQ" role="2ShVmc">
               <node concept="1Y3b0j" id="iOccn7Y6zR" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" to="aqel:iOccn7YWVJ" resolve="BackgroundCheckingHandler" />
-                <ref role="37wK5l" to="aqel:iOccn7Z0_l" resolve="BackgroundCheckingHandler" />
+                <ref role="1Y3XeK" to="aqel:iOccn7YWVJ" resolve="BackgroundCheckinHandler" />
+                <ref role="37wK5l" to="aqel:iOccn7Z0_l" resolve="BackgroundCheckinHandler" />
                 <node concept="3Tm1VV" id="iOccn7Y6zS" role="1B3o_S" />
                 <node concept="2YIFZM" id="iOccn7Y6$m" role="37wK5m">
                   <ref role="37wK5l" node="2hNr1jFa1hM" resolve="getKey" />
@@ -1639,7 +1639,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="XpfY8WyZPY" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="D2dJ$FajmO" role="jymVt" />
@@ -1656,7 +1656,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="D2dJ$Fajqx" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
               </node>
@@ -1694,8 +1694,8 @@
             <node concept="YeOm9" id="12pSLg$sqPy" role="2ShVmc">
               <node concept="1Y3b0j" id="12pSLg$sqPz" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" to="aqel:iOccn7YWVJ" resolve="BackgroundCheckingHandler" />
-                <ref role="37wK5l" to="aqel:iOccn7Z0_l" resolve="BackgroundCheckingHandler" />
+                <ref role="1Y3XeK" to="aqel:iOccn7YWVJ" resolve="BackgroundCheckinHandler" />
+                <ref role="37wK5l" to="aqel:iOccn7Z0_l" resolve="BackgroundCheckinHandler" />
                 <node concept="3Tm1VV" id="12pSLg$sqP_" role="1B3o_S" />
                 <node concept="2YIFZM" id="12pSLg$sqPA" role="37wK5m">
                   <ref role="37wK5l" node="2hNr1jFa1hM" resolve="getKey" />
@@ -1732,7 +1732,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="12pSLg$sqPP" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="D2dJ$Faxk6" role="jymVt" />
@@ -1748,7 +1748,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="D2dJ$Faxn3" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
               </node>
@@ -1786,8 +1786,8 @@
             <node concept="YeOm9" id="2HiDHfmiazZ" role="2ShVmc">
               <node concept="1Y3b0j" id="2HiDHfmia$0" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" to="aqel:iOccn7YWVJ" resolve="BackgroundCheckingHandler" />
-                <ref role="37wK5l" to="aqel:iOccn7Z0_l" resolve="BackgroundCheckingHandler" />
+                <ref role="1Y3XeK" to="aqel:iOccn7YWVJ" resolve="BackgroundCheckinHandler" />
+                <ref role="37wK5l" to="aqel:iOccn7Z0_l" resolve="BackgroundCheckinHandler" />
                 <node concept="3Tm1VV" id="2HiDHfmia$1" role="1B3o_S" />
                 <node concept="2YIFZM" id="2HiDHfmia$2" role="37wK5m">
                   <ref role="37wK5l" node="2hNr1jFa1hM" resolve="getKey" />
@@ -1913,14 +1913,14 @@
                       <node concept="3cpWsn" id="2HiDHfmj0Gx" role="3cpWs9">
                         <property role="TrG5h" value="factory" />
                         <node concept="3uibUv" id="2HiDHfmj0Gz" role="1tU5fm">
-                          <ref role="3uigEE" node="2HiDHfmj7k4" resolve="GradleWindowFactory" />
+                          <ref role="3uigEE" node="2HiDHfmj7k4" resolve="GradleTasksCheckin.MyWindowFactory" />
                         </node>
                         <node concept="2ShNRf" id="2HiDHfmjdKA" role="33vP2m">
                           <node concept="1pGfFk" id="ODg7jjkk8D" role="2ShVmc">
                             <property role="373rjd" value="true" />
-                            <ref role="37wK5l" node="ODg7jjjopU" resolve="MyWindowFactory" />
+                            <ref role="37wK5l" node="ODg7jjjopU" resolve="GradleTasksCheckin.MyWindowFactory" />
                             <node concept="1rXfSq" id="ODg7jjkk8C" role="37wK5m">
-                              <ref role="37wK5l" node="ODg7jjkuIo" resolve="getProjectRootPath" />
+                              <ref role="37wK5l" node="ODg7jjkuIo" resolve="getVCSRootPath" />
                             </node>
                           </node>
                         </node>
@@ -1950,7 +1950,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="2HiDHfmia$f" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="ODg7jjj7uL" role="jymVt" />

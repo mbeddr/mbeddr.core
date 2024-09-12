@@ -372,7 +372,7 @@
       </node>
       <node concept="3clFbS" id="w97ei4GRmX" role="3clF47">
         <node concept="XkiVB" id="w97ei4GRmY" role="3cqZAp">
-          <ref role="37wK5l" node="1yfWS2nOYu5" resolve="AbstractCheckinHandler" />
+          <ref role="37wK5l" node="1yfWS2nOYu5" resolve="BaseCheckinHandler" />
           <node concept="37vLTw" id="w97ei4GRmZ" role="37wK5m">
             <ref role="3cqZAo" node="w97ei4GRmR" resolve="settingsKey" />
           </node>
@@ -392,7 +392,7 @@
       <node concept="3clFbS" id="1yfWS2nQf$C" role="3clF47" />
       <node concept="3Tmbuc" id="1yfWS2nQeQ$" role="1B3o_S" />
       <node concept="3uibUv" id="1yfWS2nQfzk" role="3clF45">
-        <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+        <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
       </node>
     </node>
     <node concept="2tJIrI" id="1yfWS2nPS52" role="jymVt" />
@@ -400,7 +400,7 @@
       <property role="TrG5h" value="beforeCheckin" />
       <node concept="3Tm1VV" id="1yfWS2nQial" role="1B3o_S" />
       <node concept="3uibUv" id="1yfWS2nQian" role="3clF45">
-        <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+        <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
       </node>
       <node concept="3clFbS" id="1yfWS2nQiao" role="3clF47">
         <node concept="3clFbJ" id="2GzKrnbewM" role="3cqZAp">
@@ -427,7 +427,7 @@
     </node>
     <node concept="3Tm1VV" id="7uW9A9Lcnfn" role="1B3o_S" />
     <node concept="3uibUv" id="w97ei4GPLy" role="1zkMxy">
-      <ref role="3uigEE" node="w97ei4GzZs" resolve="AbstractCheckinHandler" />
+      <ref role="3uigEE" node="w97ei4GzZs" resolve="BaseCheckinHandler" />
     </node>
   </node>
   <node concept="vrV6u" id="1yfWS2nNO6t">
@@ -599,7 +599,7 @@
                 </node>
                 <node concept="TSZUe" id="2Nko9yAVk0T" role="2OqNvi">
                   <node concept="37vLTw" id="2Nko9yAVnNi" role="25WWJ7">
-                    <ref role="3cqZAo" node="2Nko9yAVnNe" resolve="createFactory" />
+                    <ref role="3cqZAo" node="2Nko9yAVnNe" resolve="factory" />
                   </node>
                 </node>
               </node>
@@ -1029,7 +1029,7 @@
       </node>
       <node concept="3Tm1VV" id="1yfWS2nO6lP" role="1B3o_S" />
       <node concept="3uibUv" id="1yfWS2nO9hh" role="3clF45">
-        <ref role="3uigEE" node="w97ei4GzZs" resolve="AbstractCheckinHandler" />
+        <ref role="3uigEE" node="w97ei4GzZs" resolve="BaseCheckinHandler" />
       </node>
     </node>
     <node concept="2tJIrI" id="D2dJ$F9T2l" role="jymVt" />
@@ -1380,7 +1380,7 @@
       <ref role="37wK5l" node="7vUP_qcxDx4" resolve="ExecutionOrder" />
       <node concept="Rm8GO" id="w97ei57_S6" role="37wK5m">
         <ref role="Rm8GQ" to="18nx:~CommitCheck$ExecutionOrder.EARLY" resolve="EARLY" />
-        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="sRL9v" id="w97ei58BvB" role="lGtFl">
         <node concept="19SGf9" id="w97ei58BvC" role="sRSUq">
@@ -1395,7 +1395,7 @@
       <ref role="37wK5l" node="7vUP_qcxDx4" resolve="ExecutionOrder" />
       <node concept="Rm8GO" id="w97ei57_Wc" role="37wK5m">
         <ref role="Rm8GQ" to="18nx:~CommitCheck$ExecutionOrder.MODIFICATION" resolve="MODIFICATION" />
-        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="sRL9v" id="w97ei58BTS" role="lGtFl">
         <node concept="19SGf9" id="w97ei58BTT" role="sRSUq">
@@ -1410,7 +1410,7 @@
       <ref role="37wK5l" node="7vUP_qcxDx4" resolve="ExecutionOrder" />
       <node concept="Rm8GO" id="w97ei57A3s" role="37wK5m">
         <ref role="Rm8GQ" to="18nx:~CommitCheck$ExecutionOrder.LATE" resolve="LATE" />
-        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="sRL9v" id="w97ei58Cjb" role="lGtFl">
         <node concept="19SGf9" id="w97ei58Cjc" role="sRSUq">
@@ -1425,7 +1425,7 @@
       <ref role="37wK5l" node="7vUP_qcxDx4" resolve="ExecutionOrder" />
       <node concept="Rm8GO" id="w97ei57Af1" role="37wK5m">
         <ref role="Rm8GQ" to="18nx:~CommitCheck$ExecutionOrder.POST_COMMIT" resolve="POST_COMMIT" />
-        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="1Px2BO" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
     </node>
     <node concept="3Tm1VV" id="w97ei4HiXF" role="1B3o_S" />
@@ -1433,7 +1433,7 @@
       <property role="TrG5h" value="executionOrderInternal" />
       <node concept="3Tm6S6" id="7vUP_qcxBIf" role="1B3o_S" />
       <node concept="3uibUv" id="w97ei5862r" role="1tU5fm">
-        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
     </node>
     <node concept="3clFbW" id="7vUP_qcxDx4" role="jymVt">
@@ -1443,7 +1443,7 @@
         <node concept="3clFbF" id="7vUP_qcxDNX" role="3cqZAp">
           <node concept="37vLTI" id="7vUP_qcxEqs" role="3clFbG">
             <node concept="37vLTw" id="7vUP_qcxEPf" role="37vLTx">
-              <ref role="3cqZAo" node="7vUP_qcxDGF" resolve="text" />
+              <ref role="3cqZAo" node="7vUP_qcxDGF" resolve="executionOrder" />
             </node>
             <node concept="37vLTw" id="7vUP_qcxDNW" role="37vLTJ">
               <ref role="3cqZAo" node="7vUP_qcxBIe" resolve="executionOrderInternal" />
@@ -1454,7 +1454,7 @@
       <node concept="37vLTG" id="7vUP_qcxDGF" role="3clF46">
         <property role="TrG5h" value="executionOrder" />
         <node concept="3uibUv" id="w97ei587g5" role="1tU5fm">
-          <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+          <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
         </node>
       </node>
     </node>
@@ -1469,7 +1469,7 @@
       </node>
       <node concept="3Tm1VV" id="w97ei58r$j" role="1B3o_S" />
       <node concept="3uibUv" id="w97ei58seM" role="3clF45">
-        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
     </node>
   </node>
@@ -1490,7 +1490,7 @@
       <node concept="3cqZAl" id="iOccn7Z0_m" role="3clF45" />
       <node concept="3clFbS" id="iOccn7Z0_n" role="3clF47">
         <node concept="XkiVB" id="iOccn7Z0Ix" role="3cqZAp">
-          <ref role="37wK5l" node="1yfWS2nOYu5" resolve="AbstractCheckinHandler" />
+          <ref role="37wK5l" node="1yfWS2nOYu5" resolve="BaseCheckinHandler" />
           <node concept="37vLTw" id="iOccn7Z0KB" role="37wK5m">
             <ref role="3cqZAo" node="iOccn7Z0_F" resolve="settingsKey" />
           </node>
@@ -1559,7 +1559,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2PSVZXMfrlF" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2PSVZXMfrlH" role="3clF47">
         <node concept="3clFbF" id="2PSVZXMftGc" role="3cqZAp">
@@ -1568,20 +1568,20 @@
               <ref role="3cqZAo" node="2PSVZXMfo7h" resolve="executionOrder" />
             </node>
             <node concept="liA8E" id="2PSVZXMfv5B" role="2OqNvi">
-              <ref role="37wK5l" node="w97ei58shL" resolve="getExecutionOrder" />
+              <ref role="37wK5l" node="w97ei58shL" resolve="get" />
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="2Nko9yAOeXD" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="2PSVZXMfrlI" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2PSVZXMfrc4" role="jymVt" />
     <node concept="3Tm1VV" id="iOccn7YWVK" role="1B3o_S" />
     <node concept="3uibUv" id="iOccn7YZ2o" role="1zkMxy">
-      <ref role="3uigEE" node="w97ei4GzZs" resolve="AbstractCheckinHandler" />
+      <ref role="3uigEE" node="w97ei4GzZs" resolve="BaseCheckinHandler" />
     </node>
     <node concept="3uibUv" id="7Inuc2b_WMj" role="EKbjA">
       <ref role="3uigEE" to="18ny:~CommitCheck" resolve="CommitCheck" />
@@ -1604,7 +1604,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="iOccn7Zb$g" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="XpfY8WyUTC" role="jymVt" />
@@ -1665,7 +1665,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="XpfY8WyVex" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
@@ -1677,7 +1677,7 @@
       <property role="TrG5h" value="beforeCheckin" />
       <node concept="3Tm1VV" id="7SRksDjMSlK" role="1B3o_S" />
       <node concept="3uibUv" id="7SRksDjMSlL" role="3clF45">
-        <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+        <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
       </node>
       <node concept="3clFbS" id="7SRksDjMSlM" role="3clF47">
         <node concept="2Gpval" id="7SRksDjN2Dd" role="3cqZAp">
@@ -1714,7 +1714,7 @@
               <node concept="3cpWsn" id="7SRksDjNoCh" role="3cpWs9">
                 <property role="TrG5h" value="result" />
                 <node concept="3uibUv" id="7SRksDjNo_g" role="1tU5fm">
-                  <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                  <ref role="3uigEE" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                 </node>
                 <node concept="2OqwBi" id="7SRksDjNoCi" role="33vP2m">
                   <node concept="2GrUjf" id="7SRksDjNoCj" role="2Oq$k0">
@@ -1738,7 +1738,7 @@
                 <node concept="17R0WA" id="7SRksDjNAoh" role="3uHU7w">
                   <node concept="Rm8GO" id="7SRksDjNBKh" role="3uHU7w">
                     <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CLOSE_WINDOW" resolve="CLOSE_WINDOW" />
-                    <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                    <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                   </node>
                   <node concept="37vLTw" id="7SRksDjN_WN" role="3uHU7B">
                     <ref role="3cqZAo" node="7SRksDjNoCh" resolve="result" />
@@ -1750,7 +1750,7 @@
                   </node>
                   <node concept="Rm8GO" id="7SRksDjN_3t" role="3uHU7w">
                     <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.CANCEL" resolve="CANCEL" />
-                    <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+                    <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
                   </node>
                 </node>
               </node>
@@ -1760,7 +1760,7 @@
         <node concept="3cpWs6" id="7SRksDjNFMk" role="3cqZAp">
           <node concept="Rm8GO" id="3y8dKk6NOao" role="3cqZAk">
             <ref role="Rm8GQ" to="18nx:~CheckinHandler$ReturnResult.COMMIT" resolve="COMMIT" />
-            <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="ReturnResult" />
+            <ref role="1Px2BO" to="18nx:~CheckinHandler$ReturnResult" resolve="CheckinHandler.ReturnResult" />
           </node>
         </node>
       </node>
@@ -1798,7 +1798,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yARd9U" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
@@ -1806,7 +1806,7 @@
     <property role="TrG5h" value="BackgroundCheckin" />
     <property role="3GE5qa" value="background" />
     <node concept="3uibUv" id="4yZoggcRgaj" role="luc8K">
-      <ref role="3uigEE" node="iOccn7YWVJ" resolve="BackgroundCheckingHandler" />
+      <ref role="3uigEE" node="iOccn7YWVJ" resolve="BackgroundCheckinHandler" />
     </node>
   </node>
   <node concept="312cEu" id="2Nko9yAPngh">
@@ -1993,7 +1993,7 @@
             <node concept="10Oyi0" id="1adXBFNxT4D" role="1tU5fm" />
             <node concept="2OqwBi" id="1adXBFNxUfe" role="33vP2m">
               <node concept="37vLTw" id="1adXBFNxUff" role="2Oq$k0">
-                <ref role="3cqZAo" node="6pFqDJAzhNY" resolve="foregroundHandlers" />
+                <ref role="3cqZAo" node="6pFqDJAzhNY" resolve="handlers" />
               </node>
               <node concept="34oBXx" id="1adXBFNxUfg" role="2OqNvi" />
             </node>
@@ -2111,7 +2111,7 @@
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
                 <ref role="1Y3XeK" to="4zvo:~RefreshableOnComponent" resolve="RefreshableOnComponent" />
-                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="3Vy2pj$Y5VK" role="1B3o_S" />
                 <node concept="3clFb_" id="3Vy2pj$Y5VY" role="jymVt">
                   <property role="TrG5h" value="saveState" />
@@ -2152,7 +2152,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="3Vy2pj$Y5W4" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="3Vy2pj$Y5W5" role="jymVt" />
@@ -2195,7 +2195,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="3Vy2pj$Y5Wc" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="3Vy2pj$Y5Wd" role="jymVt" />
@@ -2213,7 +2213,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="3Vy2pj$Y5Wk" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
               </node>
@@ -2284,7 +2284,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="2Nko9yATVHe" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
               </node>
@@ -2363,7 +2363,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yARWBV" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yARWBX" role="3clF47">
         <node concept="3clFbF" id="2Nko9yAS4oB" role="3cqZAp">
@@ -2379,7 +2379,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yARWBY" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2Nko9yARkN9" role="jymVt" />
@@ -2397,7 +2397,7 @@
           <node concept="2OqwBi" id="2Nko9yASlx$" role="3clFbG">
             <node concept="2OqwBi" id="2Nko9yASago" role="2Oq$k0">
               <node concept="3nyPlj" id="2Nko9yAS9es" role="2Oq$k0">
-                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryExtensionPoint" />
+                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryHandlers" />
               </node>
               <node concept="3zZkjj" id="2Nko9yASbtV" role="2OqNvi">
                 <node concept="1bVj0M" id="2Nko9yASbtX" role="23t8la">
@@ -2441,7 +2441,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yAQXtt" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="2Nko9yAS3mZ" role="1zkMxy">
@@ -2563,7 +2563,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yAS0JG" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2Nko9yAS0JR" role="jymVt" />
@@ -2585,7 +2585,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yAS0JZ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2Nko9yAS0K0" role="jymVt" />
@@ -2618,7 +2618,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yAS0Kf" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="2Nko9yAS0Kg" role="EKbjA">
@@ -2636,7 +2636,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yASmt4" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yASmt5" role="3clF47">
         <node concept="3clFbF" id="2Nko9yASmt6" role="3cqZAp">
@@ -2652,7 +2652,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yASmta" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2Nko9yASmtb" role="jymVt" />
@@ -2670,7 +2670,7 @@
           <node concept="2OqwBi" id="2Nko9yASmtj" role="3clFbG">
             <node concept="2OqwBi" id="2Nko9yASmtk" role="2Oq$k0">
               <node concept="3nyPlj" id="2Nko9yASmtl" role="2Oq$k0">
-                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryExtensionPoint" />
+                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryHandlers" />
               </node>
               <node concept="3zZkjj" id="2Nko9yASmtm" role="2OqNvi">
                 <node concept="1bVj0M" id="2Nko9yASmtn" role="23t8la">
@@ -2714,7 +2714,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yASmt$" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="2Nko9yASmt_" role="1zkMxy">
@@ -2732,7 +2732,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yASns6" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yASns7" role="3clF47">
         <node concept="3clFbF" id="2Nko9yASns8" role="3cqZAp">
@@ -2748,7 +2748,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yASnsc" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2Nko9yASnsd" role="jymVt" />
@@ -2766,7 +2766,7 @@
           <node concept="2OqwBi" id="2Nko9yASnsl" role="3clFbG">
             <node concept="2OqwBi" id="2Nko9yASnsm" role="2Oq$k0">
               <node concept="3nyPlj" id="2Nko9yASnsn" role="2Oq$k0">
-                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryExtensionPoint" />
+                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryHandlers" />
               </node>
               <node concept="3zZkjj" id="2Nko9yASnso" role="2OqNvi">
                 <node concept="1bVj0M" id="2Nko9yASnsp" role="23t8la">
@@ -2810,7 +2810,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yASnsA" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="2Nko9yASnsB" role="1zkMxy">
@@ -2828,7 +2828,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yASoyS" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="ExecutionOrder" />
+        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yASoyT" role="3clF47">
         <node concept="3clFbF" id="2Nko9yASoyU" role="3cqZAp">
@@ -2844,7 +2844,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yASoyY" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="2Nko9yASoyZ" role="jymVt" />
@@ -2862,7 +2862,7 @@
           <node concept="2OqwBi" id="2Nko9yASoz7" role="3clFbG">
             <node concept="2OqwBi" id="2Nko9yASoz8" role="2Oq$k0">
               <node concept="3nyPlj" id="2Nko9yASoz9" role="2Oq$k0">
-                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryExtensionPoint" />
+                <ref role="37wK5l" node="2Nko9yAS0K4" resolve="queryHandlers" />
               </node>
               <node concept="3zZkjj" id="2Nko9yASoza" role="2OqNvi">
                 <node concept="1bVj0M" id="2Nko9yASozb" role="23t8la">
@@ -2906,7 +2906,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2Nko9yASozo" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="2Nko9yASozp" role="1zkMxy">
