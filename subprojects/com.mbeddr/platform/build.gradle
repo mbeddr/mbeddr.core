@@ -5,7 +5,7 @@ plugins {
 
 import de.itemis.mps.gradle.*
 
-def script_test_mbeddrPlatform = new File(scriptsBasePath + "/com.mbeddr.platform/" + "build-ts-tests.xml")
+def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
 
 if (project.skipresolve_mps) {
@@ -104,6 +104,13 @@ task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
 }
 tasks.getByPath(':com.mbeddr:install').dependsOn install_actionsfilter
 
+tasks.register('generate_mbeddr_platform_tests', RunAntScript) {
+    dependsOn build_platform
+    script script_test_mbeddrPlatform
+    description "build mbeddr platform tests"
+    targets 'generate'
+}
+
 tasks.register('generate_platform_sandboxes', RunAntScript) {
     dependsOn build_platform
     script script_mbeddrPlatform_sandboxes
@@ -111,9 +118,14 @@ tasks.register('generate_platform_sandboxes', RunAntScript) {
     targets 'generate'
 }
 
-task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
+tasks.register('generate_platform_languages') {
+    dependsOn build_platform, generate_mbeddr_platform_tests, generate_platform_sandboxes
+}
+
+task test_mbeddr_platform(type: TestLanguages, dependsOn: [build_platform, generate_mbeddr_platform_tests]) {
     script script_test_mbeddrPlatform
     description "execute typesystem and generator tests for the plaform"
+    targets 'check'
 }
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
