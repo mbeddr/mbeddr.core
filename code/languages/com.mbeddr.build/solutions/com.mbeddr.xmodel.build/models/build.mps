@@ -348,21 +348,6 @@
         <ref role="L2wRA" node="3qyGNHcUVB4" resolve="com.mbeddr.xmodel.tests" />
       </node>
     </node>
-    <node concept="398rNT" id="6BHziVHZYZn" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6BHziVHZYZm" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn615" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6BHziVHZYZl" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6BHziVHZYZp" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
-      <node concept="398BVA" id="6BHziVHZYZo" role="2JcizS">
-        <ref role="398BVh" node="6BHziVHZYZn" resolve="spawner.artifacts" />
-      </node>
-    </node>
   </node>
 </model>
 

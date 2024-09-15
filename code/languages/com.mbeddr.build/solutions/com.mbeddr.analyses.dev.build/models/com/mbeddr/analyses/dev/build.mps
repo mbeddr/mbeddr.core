@@ -251,15 +251,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="6BHziVHZYZA" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6BHziVHZYZ_" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn60X" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6BHziVHZYZ$" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
     <node concept="10PD9b" id="3bBV0dtdsX5" role="10PD9s" />
     <node concept="3b7kt6" id="3bBV0dtdsX6" role="10PD9s" />
     <node concept="2sgV4H" id="3bBV0dtdsX7" role="1l3spa">
@@ -278,12 +269,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9tbx$" role="2JcizS">
         <ref role="398BVh" node="6RmoJr9qF5L" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6BHziVHZYZC" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
-      <node concept="398BVA" id="6BHziVHZYZB" role="2JcizS">
-        <ref role="398BVh" node="6BHziVHZYZA" resolve="spawner.artifacts" />
       </node>
     </node>
     <node concept="1l3spV" id="3bBV0dtdsXm" role="1l3spN">
@@ -771,15 +756,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="6BHziVHZYZF" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6BHziVHZYZE" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn60Y" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6BHziVHZYZD" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
     <node concept="10PD9b" id="7Vt15sLWjMx" role="10PD9s" />
     <node concept="3b7kt6" id="7Vt15sLWjMy" role="10PD9s" />
     <node concept="1gjT0q" id="7Vt15sLWsUv" role="10PD9s" />
@@ -799,12 +775,6 @@
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6RmoJr9tbYI" role="2JcizS">
         <ref role="398BVh" node="6RmoJr9tbDV" resolve="platform.artifacts" />
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6BHziVHZYZH" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
-      <node concept="398BVA" id="6BHziVHZYZG" role="2JcizS">
-        <ref role="398BVh" node="6BHziVHZYZF" resolve="spawner.artifacts" />
       </node>
     </node>
     <node concept="1l3spV" id="7Vt15sLWjMR" role="1l3spN">

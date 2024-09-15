@@ -941,21 +941,6 @@
     </node>
     <node concept="10PD9b" id="AyMfzoGqP$" role="10PD9s" />
     <node concept="3b7kt6" id="AyMfzoGqP_" role="10PD9s" />
-    <node concept="398rNT" id="6BHziVHZYYE" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6BHziVHZYYD" role="398pKh">
-        <ref role="398BVh" node="AyMfzoGqLm" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6BHziVHZYYC" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6BHziVHZYYG" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
-      <node concept="398BVA" id="6BHziVHZYYF" role="2JcizS">
-        <ref role="398BVh" node="6BHziVHZYYE" resolve="spawner.artifacts" />
-      </node>
-    </node>
   </node>
   <node concept="1l3spW" id="3IKDaVZnIjX">
     <property role="TrG5h" value="mpsDistribution" />
@@ -1790,21 +1775,6 @@
             <property role="3MwjfP" value="1.0" />
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="398rNT" id="6BHziVHZYYJ" role="1l3spd">
-      <property role="TrG5h" value="spawner.artifacts" />
-      <node concept="398BVA" id="6BHziVHZYYI" role="398pKh">
-        <ref role="398BVh" node="5wLtKNeV_2d" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="6BHziVHZYYH" role="iGT6I">
-          <property role="2Ry0Am" value="spawner" />
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="6BHziVHZYYL" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:6YaWssNZ9op" resolve="spawner" />
-      <node concept="398BVA" id="6BHziVHZYYK" role="2JcizS">
-        <ref role="398BVh" node="6BHziVHZYYJ" resolve="spawner.artifacts" />
       </node>
     </node>
   </node>
