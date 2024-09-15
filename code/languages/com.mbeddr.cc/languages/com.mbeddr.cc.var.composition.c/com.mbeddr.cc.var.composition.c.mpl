@@ -30,7 +30,6 @@
         <language slang="l:21ac77a4-1b66-44c5-aaec-94e43bb86519:com.mbeddr.cc.var.composition" version="0" />
         <language slang="l:03f78d94-3f33-4789-ad35-5950b32fdad8:com.mbeddr.cc.var.composition.c" version="0" />
         <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
-        <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
         <language slang="l:61c69711-ed61-4850-81d9-7714ff227fb0:com.mbeddr.core.expressions" version="5" />
         <language slang="l:3bf5377a-e904-4ded-9754-5a516023bfaa:com.mbeddr.core.pointers" version="0" />
         <language slang="l:a9d69647-0840-491e-bf39-2eb0805d2011:com.mbeddr.core.statements" version="2" />
@@ -69,7 +68,6 @@
         <module reference="03f78d94-3f33-4789-ad35-5950b32fdad8(com.mbeddr.cc.var.composition.c)" version="0" />
         <module reference="bfc9839b-2340-4d20-9868-5b1bc9ed39d4(com.mbeddr.cc.var.composition.c#5966716731426614652)" version="0" />
         <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
-        <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
         <module reference="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" version="0" />
         <module reference="984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)" version="0" />
         <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
@@ -168,7 +166,6 @@
     <module reference="21ac77a4-1b66-44c5-aaec-94e43bb86519(com.mbeddr.cc.var.composition)" version="0" />
     <module reference="03f78d94-3f33-4789-ad35-5950b32fdad8(com.mbeddr.cc.var.composition.c)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
-    <module reference="223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" version="0" />
     <module reference="984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)" version="0" />
     <module reference="6d11763d-483d-4b2b-8efc-09336c1b0001(com.mbeddr.core.modules)" version="0" />

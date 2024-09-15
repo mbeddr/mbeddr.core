@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="v7ag" ref="r:9596407c-f27a-49d3-abde-3a66293c5b61(com.mbeddr.ext.components.structure)" />
     <import index="yz9a" ref="r:734c02dd-cc16-4184-99eb-5fd9f43aa37e(com.mbeddr.core.unittest.structure)" />
@@ -64,9 +63,6 @@
     </node>
     <node concept="PrWs8" id="5iVHc7E9E8a" role="PzmwI">
       <ref role="PrY4T" to="v7ag:1ijJyTDpXkK" resolve="IReferencesInstance" />
-    </node>
-    <node concept="PrWs8" id="44822uN6Tsi" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
     </node>
   </node>
   <node concept="1TIwiD" id="vMpGaXIYy0">
