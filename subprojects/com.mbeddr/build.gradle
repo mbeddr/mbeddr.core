@@ -1,3 +1,10 @@
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
+
+plugins {
+    id 'de.itemis.mps.gradle.common'
+}
+
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
@@ -168,10 +175,44 @@ task printRepositories {
     }
 }
 
-tasks.register('migrate') {
-    // No-op in this version
+List<String> projectsInDependencyOrder = [
+        'com.mbeddr.mpsutil',
+//        'com.mbeddr.doc',
+//        'com.mbeddr.doc.aspect',
+//        'com.mbeddr.core',
+//        'com.mbeddr.ext',
+//        'com.mbeddr.cc',
+//        'com.mbeddr.xmodel',
+        'com.mbeddr.build',
+]
+
+List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.collect {
+    new File(rootProject.file('code/languages'), it)
 }
 
-tasks.register('remigrate') {
-    // No-op in this version
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(':com.mbeddr:platform:generate_platform_languages')
+    mpsHome = mpsHomeDir
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+
+    folderMacros['mbeddr.github.core.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = "4G"
 }
+
+tasks.register('remigrate', Remigrate) {
+    dependsOn(':com.mbeddr:platform:generate_platform_languages')
+    mpsHome = mpsHomeDir
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+
+    folderMacros['mbeddr.github.core.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = "4G"
+}
+
+// For the remigrate backend
+configureRepositories(project)
