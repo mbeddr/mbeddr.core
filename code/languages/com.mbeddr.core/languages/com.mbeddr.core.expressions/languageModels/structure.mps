@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -97,9 +96,6 @@
     <property role="R4oN_" value="--" />
     <property role="EcuMT" value="8860443239512128050" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="jLLIdCmp4d" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
-    </node>
     <node concept="PrWs8" id="79LR_4z937A" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
     </node>
@@ -154,9 +150,6 @@
       <property role="TrG5h" value="volatile" />
       <property role="IQ2nx" value="2941277002448691247" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="7mVHCj32uLT" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2by6456Kf3p" resolve="IMappableType" />
     </node>
     <node concept="PrWs8" id="7YIk2VQGXrJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:hYa1RjM" resolve="IType" />
@@ -1476,9 +1469,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7034214596252529803" />
       <ref role="20lvS9" node="40tXLnqhXcx" resolve="IGenericDotTarget" />
-    </node>
-    <node concept="PrWs8" id="1W9UllqQ$3G" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="PyYoN5cNy9" role="PzmwI">
       <ref role="PrY4T" node="6mzZsELnskC" resolve="IBinaryLike" />
