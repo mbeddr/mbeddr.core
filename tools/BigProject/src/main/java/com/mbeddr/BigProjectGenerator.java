@@ -28,8 +28,7 @@ public class BigProjectGenerator {
         File langDir = new File(projectDir + "/code/languages");
         File testsDir = new File(projectDir + "/code/tests");
         File applicationsDir = new File(projectDir + "/code/applications");
-        File eclipseDebuggerDir = new File(projectDir, "tools/Eclipse.Debugger");
-        
+
         File modulesXml = new File(projectDir + MODULES_XML_PATH);
         modulesXml.getParentFile().mkdirs();
         BufferedWriter w = new BufferedWriter(new FileWriter(modulesXml));
@@ -43,7 +42,6 @@ public class BigProjectGenerator {
         traverse(langDir, w);
         traverse(testsDir, w);
         traverse(applicationsDir, w);
-        traverse(eclipseDebuggerDir, w);
 
         w.write("    </projectModules>\n" +
                 "  </component>\n" +

@@ -608,7 +608,7 @@
       <ref role="1_0j5g" to="vi23:tMF5FXsCLB" resolve="F_ProductLineVariability" />
     </node>
     <node concept="1_0j5j" id="_A$C2hiper" role="1DXQ57">
-      <ref role="1_0j5g" to="4kwm:4IT6uoYGEZ" resolve="E_HelloWorld" />
+      <ref role="1_0j5g" to="4kwm:4IT6uoYGEZ" resolve="D_HelloWorld" />
     </node>
     <node concept="1_0j5j" id="_A$C2hiqke" role="1DXQ57">
       <ref role="1_0j5g" to="4kwm:3MXxQvv3i_o" resolve="C_LaunchConfiguration" />

@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
@@ -133,21 +132,6 @@
     <node concept="PrWs8" id="4VEDcE28xIo" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
     </node>
-    <node concept="PrWs8" id="4DC8Sn_QM8_" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:UWuwz3o4rv" resolve="IVirtualStackFrameContributor" />
-    </node>
-    <node concept="PrWs8" id="4KP9FoHGDgQ" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
-    </node>
-    <node concept="PrWs8" id="3S2G1J1yq2k" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
-    </node>
-    <node concept="PrWs8" id="3S2G1J1yq2s" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="7FOyR3XrXfN" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4VEDcE28y9l">
     <property role="TrG5h" value="YieldStatement" />
@@ -188,15 +172,6 @@
     <node concept="PrWs8" id="3pcBCY8AN$s" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
-    <node concept="PrWs8" id="2vLpZ7wiipl" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:UWuwz3o4rv" resolve="IVirtualStackFrameContributor" />
-    </node>
-    <node concept="PrWs8" id="2vLpZ7wiipn" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="2vLpZ7wiRLC" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5oGU$loBRJB">
     <property role="3GE5qa" value="gswitch" />
@@ -207,12 +182,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2vLpZ7wijWI" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
-    </node>
-    <node concept="PrWs8" id="2vLpZ7wim9e" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-    </node>
-    <node concept="PrWs8" id="2vLpZ7wj2eL" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
     </node>
     <node concept="1TJgyj" id="5oGU$loBRJD" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -270,23 +239,8 @@
       <property role="IQ2ns" value="4143042878078342166" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="4dVT39GwXRv" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
-    </node>
-    <node concept="PrWs8" id="4dVT39Gx1nm" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:UWuwz3o4sj" resolve="IRealStackFrameContributor" />
-    </node>
-    <node concept="PrWs8" id="4DC8Sn_RAP8" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="XO8DdDocAx" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
     <node concept="PrWs8" id="6uBdxghiFTR" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
-    </node>
-    <node concept="PrWs8" id="6Exsrk_$_NQ" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:1d7Vth$qHPp" resolve="ISuspendableNode" />
     </node>
   </node>
   <node concept="1TIwiD" id="2lgwE2U2X_H">
@@ -552,15 +506,6 @@
     <node concept="PrWs8" id="6l691cEo961" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
     </node>
-    <node concept="PrWs8" id="2biXVDFLS3I" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="1jxsZplq8h6" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
-    <node concept="PrWs8" id="1jxsZplq8h8" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
     <node concept="PrWs8" id="7HkFchP0Cfb" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
     </node>
@@ -689,9 +634,6 @@
     <node concept="PrWs8" id="2EBw14y1QHm" role="PzmwI">
       <ref role="PrY4T" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
     </node>
-    <node concept="PrWs8" id="4mOSeTntt_0" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2EBw14y1Xqo">
     <property role="3GE5qa" value="with" />
@@ -713,9 +655,6 @@
     </node>
     <node concept="PrWs8" id="VuCligKhYo" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7oI7FI6oqPw" resolve="IInitializationContext" />
-    </node>
-    <node concept="PrWs8" id="5JubA6cFNKC" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:vymDPxT3Jf" resolve="ISteppable" />
     </node>
     <node concept="PrWs8" id="7Jr7T0w1uLA" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmz" resolve="TraceableConcept" />
@@ -847,15 +786,6 @@
     </node>
     <node concept="PrWs8" id="5uVxDlUcwLb" role="PzmwI">
       <ref role="PrY4T" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLc" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLd" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
-    </node>
-    <node concept="PrWs8" id="5uVxDlUcwLe" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="33xYbhPQm_r" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7HkFchP0Cf3" resolve="ILoopStatement" />
@@ -1819,9 +1749,6 @@
     <node concept="PrWs8" id="2h5hmpsJv8o" role="PzmwI">
       <ref role="PrY4T" to="x27k:2h5hmpsyQcW" resolve="IFunctionLikeReducedToSingleFunction" />
     </node>
-    <node concept="PrWs8" id="7Jr7T0w731$" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
-    </node>
     <node concept="PrWs8" id="QIiPbLCJIv" role="PzmwI">
       <ref role="PrY4T" to="x27k:QIiPbLCHqs" resolve="IClosureLike" />
     </node>
@@ -1834,9 +1761,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7apEgWbIQg5" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
-    <node concept="PrWs8" id="7Jr7T0w731A" role="PzmwI">
-      <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfY">

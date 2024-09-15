@@ -129,14 +129,6 @@ tools/zgrviewer/zvtm-core-formps/target/*
 # compiled java classes within the ant-task eclipse workspace 
 ant-task-workspace/*/bin/
 
-# -----------------------------------------------------------
-# debugger test code
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/a.*
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/*.exe
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest*
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/debuggableTest
-code/languages/com.mbeddr.debugger/tests/test.debugger.cdt/testcode/
-
 # other test resources
 code/languages/com.mbeddr.mpsutil/tests/test.com.mbeddr.mpsutil.iconchar/icons/
 
