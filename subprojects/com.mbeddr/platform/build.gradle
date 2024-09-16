@@ -52,6 +52,11 @@ task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_mps
 
     // Need to override basedir until https://github.com/JetBrains/MPS/pull/73 is merged or otherwise fixed.
     scriptArgs = ["-Dbasedir=${rootProject.file('code/languages/com.mbeddr.build')}"]
+
+    // Workaround for https://github.com/gradle/gradle/issues/24368 -- provide outputs but disable up-to-date checks
+    // since we don't provide inputs.
+    outputs.dir(new File(artifactsDir, 'com.mbeddr.allScripts.build'))
+    outputs.upToDateWhen { false }
 }
 
 task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
@@ -82,6 +87,7 @@ task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
+    outputs.upToDateWhen { false }
 }
 
 task install_actionsfilter(type: Copy, dependsOn: build_platform) {
