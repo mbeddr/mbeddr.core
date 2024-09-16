@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.com.mbeddr.mpsutil.extensionclass" uuid="460ef3f4-0093-4c53-8c6a-bb8c36a7a621" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.com.mbeddr.mpsutil.extensionclass" uuid="460ef3f4-0093-4c53-8c6a-bb8c36a7a621" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">f39336d3-1288-47ee-bbfe-ad2ea7e4504e(com.mbeddr.mpsutil.extensionclass)</dependency>
