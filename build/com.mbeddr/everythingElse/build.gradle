@@ -49,7 +49,7 @@ configurations {
 
 
 
-// :build:com.mbeddr.tests
+// :com.mbeddr.tests
 
 import org.apache.tools.ant.taskdefs.condition.Os
 
@@ -113,7 +113,7 @@ task unzip_cbmcWinZip(type: Copy, dependsOn: resolve_cbmcWin)  {
 
 
 
-// :build:com.mbeddr.rcp
+// :com.mbeddr.rcp
 publishing {
     publications {
         mbeddrJre(MavenPublication) {
@@ -141,7 +141,7 @@ task package_JRE(type: Zip, dependsOn: download_JRE) {
     include "jdk..tar.gz"
 }
 
-// :build:com.mbeddr.analyses.cbmc
+// :com.mbeddr.analyses.cbmc
 publishing {
     publications {
         cbmcMac(MavenPublication) {
