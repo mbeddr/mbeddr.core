@@ -117,8 +117,7 @@ subprojects {
         if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
             ext.mbeddrBuild = "master"
         }
-
-        // locally versions are SNAPSHOT
+        // locally versions and all branches other than master/maintenance*/mps* are SNAPSHOTs
         if (ciBuild) {
             // setting mbeddrMajor
             if (project.hasProperty('mbeddrMajor')) {
@@ -136,7 +135,13 @@ subprojects {
                 ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
             }
 
-            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
+            if(mbeddrBuild == "master" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
+                ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
+            } else {
+                // use same logic as in all other platforms for snapshot publications
+                ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int) + "-SNAPSHOT"
+            }
+
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
             // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
