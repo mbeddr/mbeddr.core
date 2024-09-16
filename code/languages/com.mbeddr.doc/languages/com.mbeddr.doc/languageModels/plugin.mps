@@ -2317,7 +2317,7 @@
                 <node concept="17QB3L" id="5Ulr5FUQKky" role="1tU5fm" />
                 <node concept="3cpWs3" id="5Ulr5FUQLHz" role="33vP2m">
                   <node concept="Xl_RD" id="5Ulr5FUQLH$" role="3uHU7B">
-                    <property role="Xl_RC" value="Screenshots might not be taken in MpsEnvironment (Ant &lt;generate&gt; task). " />
+                    <property role="Xl_RC" value="Screenshots might not be taken correctly in MpsEnvironment (Ant &lt;generate&gt; task). " />
                   </node>
                   <node concept="Xl_RD" id="5Ulr5FUQLH_" role="3uHU7w">
                     <property role="Xl_RC" value="Use mps-gradle-plugin, mps-build-backends, MPS tests, or other means to run the MPS make process in an IDEA environment." />
