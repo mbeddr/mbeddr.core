@@ -139,7 +139,7 @@ subprojects {
                 ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
             } else {
                 // use same logic as in all other platforms for snapshot publications
-                ext.mbeddrBuildNumber = GitBasedVersioning.getVersionWithCount(mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int) + "-SNAPSHOT"
+                ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int) + "-SNAPSHOT"
             }
 
         } else {
