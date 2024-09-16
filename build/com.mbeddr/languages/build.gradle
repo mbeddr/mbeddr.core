@@ -1,6 +1,6 @@
 import de.itemis.mps.gradle.*
 
-// :build:com.mbeddr.build
+// :com.mbeddr.build
 def script_build_mbeddr = new File(scriptsBasePath + "/com.mbeddr.build/" + "build.xml")
 
 ant.taskdef(name: "makeTests",
@@ -40,7 +40,7 @@ task resolve_mbeddr_platform() {
     }
 }
 
-task copy_logConfig(type: Copy, dependsOn: ':build:com.mbeddr:platform:copy_allScripts') {
+task copy_logConfig(type: Copy, dependsOn: ':com.mbeddr:platform:copy_allScripts') {
     from "$rootDir/debug"
     into "$mpsHomeDir/bin"
 }
@@ -58,7 +58,7 @@ def usePrebuiltPlatform = ciBuild && !project.hasProperty('forceBuildPlatform')
 if (usePrebuiltPlatform) {
     mbeddrDependencies = [resolve_mbeddr_platform]
 } else {
-    mbeddrDependencies = [':build:com.mbeddr:platform:build_platform']
+    mbeddrDependencies = [':com.mbeddr:platform:build_platform']
 }
 
 task build_mbeddr(type: BuildLanguages, dependsOn: mbeddrDependencies) {
@@ -195,7 +195,7 @@ publishing {
 
 
 task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
-':build:com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
+':com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
 
 //mbeddr build is "master" also for maintenance branches
 //using the closure to delay evaluate from configuration to execution phase is important because the

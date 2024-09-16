@@ -25,11 +25,11 @@ task resolve_mbeddr() {
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
-task build_all_in_one(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
+task build_all_in_one(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
     script script_build_mbeddrAllInOne
 }
 
-task build_platform_distribution(type: BuildLanguages, dependsOn: [':build:com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
+task build_platform_distribution(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
     // Support incremental build
     inputs.file(script)
