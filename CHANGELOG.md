@@ -7,6 +7,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # September 2024
 
+* Breaking change: debugger and spawner were not maintained and were removed.
+
 ## com.mbeddr.mpsutil.margincell
 
 ### Fixed

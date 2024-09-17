@@ -145,324 +145,8 @@
       </concept>
     </language>
   </registry>
-  <node concept="1_1swa" id="yrKNEnvQ24">
-    <property role="TrG5h" value="D_Debugging" />
-    <property role="yApLE" value="4" />
-    <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1_0VNX" id="3mn43GO6BBY" role="1_0VJ0">
-      <property role="TrG5h" value="debugging" />
-      <property role="1_0VJr" value="Debugging" />
-      <node concept="1_0LV8" id="6OxdrRm_Gpq" role="1_0VJ0">
-        <node concept="19SGf9" id="6OxdrRm_Gpr" role="1_0LWR">
-          <node concept="19SUe$" id="6OxdrRm_Gps" role="19SJt6">
-            <property role="19SUeA" value="mbeddr comes with a debugger for core C. This chapter describes how to use this debugger to debug C programs written with mbeddr." />
-          </node>
-        </node>
-      </node>
-      <node concept="1_0VNX" id="6OxdrRmCyCH" role="1_0VJ0">
-        <property role="TrG5h" value="DebuggerIntroduction" />
-        <property role="1_0VJr" value="Introduction" />
-        <node concept="1_0LV8" id="6OxdrRmCyAk" role="1_0VJ0">
-          <node concept="19SGf9" id="6OxdrRmCyAl" role="1_0LWR">
-            <node concept="19SUe$" id="6OxdrRmCyAm" role="19SJt6">
-              <property role="19SUeA" value="The mbeddr debugger behaves like a regular C debugger, but on the abstraction level of mbeddr and its extensions: it shows the call stack and watchables and allows stepping and setting of breakpoints. This way, you don't need to know any details about the generated C code. In addition, the debugger can be extended to enable debugging of code written with user-defined  language extensions. Currently, the debugger uses " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpz8_Ko" role="19SJt6">
-              <node concept="19SGf9" id="6OxdrRmCyAs" role="$DsGW">
-                <node concept="19SUe$" id="6OxdrRmCyAt" role="19SJt6">
-                  <property role="19SUeA" value="gdb" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="6OxdrRmCyAu" role="19SJt6">
-              <property role="19SUeA" value=" as debug backend and only supports  local debugging. However, in future releases of mbeddr, we plan to support debugging on the target device. In the tutorial, you find in the solution " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpz8_KC" role="19SJt6">
-              <node concept="19SGf9" id="6OxdrRmCyAw" role="$DsGW">
-                <node concept="19SUe$" id="6OxdrRmCyAx" role="19SJt6">
-                  <property role="19SUeA" value="mbeddr.tutorial.main" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="6OxdrRmCyAy" role="19SJt6">
-              <property role="19SUeA" value=" a model named " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpz8_KS" role="19SJt6">
-              <node concept="19SGf9" id="6OxdrRmCyA$" role="$DsGW">
-                <node concept="19SUe$" id="6OxdrRmCyA_" role="19SJt6">
-                  <property role="19SUeA" value="plainC" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="6OxdrRmCyAA" role="19SJt6">
-              <property role="19SUeA" value=". We  use the contained mbeddr code to illustrate debugging mbeddr programs in MPS." />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1_0VNX" id="6OxdrRmDPCF" role="1_0VJ0">
-        <property role="1_0VJr" value="Starting a Debug Session" />
-        <property role="TrG5h" value="DebugSession" />
-        <node concept="1_0LV8" id="6Kly4FTRFJE" role="1_0VJ0">
-          <node concept="19SGf9" id="6Kly4FTRFJF" role="1_0LWR">
-            <node concept="19SUe$" id="6Kly4FTRFJG" role="19SJt6">
-              <property role="19SUeA" value="Before you can debug your program, you have to make sure the C code for the program has been generated. Therefore, click on the model " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpz8_L8" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7W0ZR" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7W0ZS" role="19SJt6">
-                  <property role="19SUeA" value="plainC" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7W0ZP" role="19SJt6">
-              <property role="19SUeA" value=", open the context menu and select " />
-            </node>
-            <node concept="2OlAs7" id="1IjqGpz8_M8" role="19SJt6">
-              <node concept="19SGf9" id="1IjqGpz8_Mb" role="$DsGW">
-                <node concept="19SUe$" id="1IjqGpz8_Mc" role="19SJt6">
-                  <property role="19SUeA" value="Rebuild Model 'm.t.main.plainC'" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7W0ZC" role="19SJt6">
-              <property role="19SUeA" value=" or press " />
-            </node>
-            <node concept="2OoWia" id="1IjqGpz8_LM" role="19SJt6">
-              <node concept="19SGf9" id="1IjqGpz8_LP" role="$DsGW">
-                <node concept="19SUe$" id="1IjqGpz8_LQ" role="19SJt6">
-                  <property role="19SUeA" value="Ctrl-F9" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7W0Ys" role="19SJt6">
-              <property role="19SUeA" value=". Next, set a breakpoint in the first line of the " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpz8_Mu" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7W1QI" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7W1QJ" role="19SJt6">
-                  <property role="19SUeA" value="main" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7W1QG" role="19SJt6">
-              <property role="19SUeA" value=" function. This is done by clicking into the gutter of the editor. The result should look like this:" />
-            </node>
-          </node>
-        </node>
-        <node concept="2SaynC" id="6Kly4FTRFKM" role="1_0VJ0">
-          <property role="TrG5h" value="CreatedBreakpoint" />
-          <property role="1DKIkx" value="true" />
-          <property role="2Sbq$t" value="true" />
-          <node concept="2Sb_l4" id="6Kly4FTRI5O" role="2SbwM5">
-            <property role="2Sb_kV" value="debugger/debugger9.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-          </node>
-          <node concept="OjmMv" id="6Kly4FTRFKQ" role="2SaI5j">
-            <node concept="19SGf9" id="6Kly4FTRFKR" role="OjmMu">
-              <node concept="19SUe$" id="6Kly4FTRFKS" role="19SJt6">
-                <property role="19SUeA" value="Creating a Breakpoint " />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="6Kly4FTRFKU" role="3SHJ_F" />
-        </node>
-        <node concept="1_0LV8" id="6Kly4FTRP3g" role="1_0VJ0">
-          <node concept="19SGf9" id="6Kly4FTRP3h" role="1_0LWR">
-            <node concept="19SUe$" id="6Kly4FTRP3i" role="19SJt6">
-              <property role="19SUeA" value="Next, create a run configuration as explained in " />
-            </node>
-            <node concept="1_0GAv" id="7yEEdZqhRyB" role="19SJt6">
-              <ref role="1_0GAl" node="6OxdrRmCyFc" resolve="LaunchConfiguration" />
-            </node>
-            <node concept="19SUe$" id="7yEEdZqhRyA" role="19SJt6">
-              <property role="19SUeA" value=" and run it in debug mode by pressing " />
-            </node>
-            <node concept="2OoWia" id="1IjqGpzdNMK" role="19SJt6">
-              <node concept="19SGf9" id="1IjqGpzdNMN" role="$DsGW">
-                <node concept="19SUe$" id="1IjqGpzdNMO" role="19SJt6">
-                  <property role="19SUeA" value="Shift-F9" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7WcvF" role="19SJt6">
-              <property role="19SUeA" value=" or by clicking on the debug button in MPS' toolbar (see " />
-            </node>
-            <node concept="2Sbdz4" id="1IjqGpzdYlx" role="19SJt6">
-              <ref role="2SbdyP" node="6Kly4FTRP5g" resolve="RunDebugger" />
-            </node>
-            <node concept="19SUe$" id="1IjqGpzdYlw" role="19SJt6">
-              <property role="19SUeA" value="). " />
-            </node>
-          </node>
-        </node>
-        <node concept="2SaynC" id="6Kly4FTRP5g" role="1_0VJ0">
-          <property role="TrG5h" value="RunDebugger" />
-          <property role="1DKIkx" value="true" />
-          <node concept="2Sb_l4" id="6Kly4FTRQhj" role="2SbwM5">
-            <property role="2Sb_kV" value="debugger/debugger5.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-          </node>
-          <node concept="OjmMv" id="6Kly4FTRP5k" role="2SaI5j">
-            <node concept="19SGf9" id="6Kly4FTRP5l" role="OjmMu">
-              <node concept="19SUe$" id="6Kly4FTRP5m" role="19SJt6">
-                <property role="19SUeA" value="Starting a new debug session" />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="6Kly4FTRP5o" role="3SHJ_F" />
-        </node>
-        <node concept="1_0LV8" id="6Kly4FTRTJA" role="1_0VJ0">
-          <node concept="19SGf9" id="6Kly4FTRTJB" role="1_0LWR">
-            <node concept="19SUe$" id="6Kly4FTRTJC" role="19SJt6">
-              <property role="19SUeA" value="The debugger UI should now appear at the bottom of the MPS window. In the lower left corner of this UI,  you can see two activated buttons: a green (arrow) and a red (square) one. This indicates,  that the debugger is now connected to the underlying C debugger. You can now start program execution by clicking on the green (arrow) button. This will suspend the debugger on the first line of the main function, on your previously created breakpoint:" />
-            </node>
-          </node>
-        </node>
-        <node concept="2SaynC" id="6Kly4FTRTKf" role="1_0VJ0">
-          <property role="TrG5h" value="SuspendedDebugger" />
-          <property role="1DKIkx" value="true" />
-          <property role="2Sbq$t" value="true" />
-          <node concept="2Sb_l4" id="6Kly4FTRTNa" role="2SbwM5">
-            <property role="2Sb_kV" value="debugger/debugger10.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-          </node>
-          <node concept="OjmMv" id="6Kly4FTRTKj" role="2SaI5j">
-            <node concept="19SGf9" id="6Kly4FTRTKk" role="OjmMu">
-              <node concept="19SUe$" id="6Kly4FTRTKl" role="19SJt6">
-                <property role="19SUeA" value="Debugger suspended at Breakpoint" />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="6Kly4FTRTKn" role="3SHJ_F" />
-        </node>
-        <node concept="1_0LV8" id="6Kly4FTRW7t" role="1_0VJ0">
-          <node concept="19SGf9" id="6Kly4FTRW7u" role="1_0LWR">
-            <node concept="19SUe$" id="6Kly4FTRW7v" role="19SJt6">
-              <property role="19SUeA" value="Next, press " />
-            </node>
-            <node concept="2OoWia" id="1IjqGpzdYmG" role="19SJt6">
-              <node concept="19SGf9" id="1IjqGpzdYmH" role="$DsGW">
-                <node concept="19SUe$" id="1IjqGpzdYmI" role="19SJt6">
-                  <property role="19SUeA" value="F7" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="1IjqGpzdYmF" role="19SJt6">
-              <property role="19SUeA" value=" to " />
-            </node>
-            <node concept="28N2ik" id="6Kly4FTRWcr" role="19SJt6">
-              <node concept="19SGf9" id="6Kly4FTRWcs" role="$DsGW">
-                <node concept="19SUe$" id="6Kly4FTRWct" role="19SJt6">
-                  <property role="19SUeA" value="step into" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="6Kly4FTRWcq" role="19SJt6">
-              <property role="19SUeA" value=" the current line, this will suspend the debugger in the called function " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpzdYni" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7Wf9d" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7Wf9e" role="19SJt6">
-                  <property role="19SUeA" value="add" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7Wf9b" role="19SJt6">
-              <property role="19SUeA" value=". For returning to the calling function " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpzdYnS" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7Wf_n" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7Wf_o" role="19SJt6">
-                  <property role="19SUeA" value="main" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7Wf_l" role="19SJt6">
-              <property role="19SUeA" value=", press " />
-            </node>
-            <node concept="2OoWia" id="1IjqGpzdYou" role="19SJt6">
-              <node concept="19SGf9" id="1IjqGpzdYox" role="$DsGW">
-                <node concept="19SUe$" id="1IjqGpzdYoy" role="19SJt6">
-                  <property role="19SUeA" value="Shift-F8" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7WfAk" role="19SJt6">
-              <property role="19SUeA" value=". Once the debugger is suspended there, you can see the stack frame " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpzdYp6" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7WfE8" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7WfE9" role="19SJt6">
-                  <property role="19SUeA" value="main" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7WfE6" role="19SJt6">
-              <property role="19SUeA" value=" in the call stack and the local variables " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpzdYpG" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7WfFD" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7WfFE" role="19SJt6">
-                  <property role="19SUeA" value="p" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7WfFB" role="19SJt6">
-              <property role="19SUeA" value=", " />
-            </node>
-            <node concept="1jUjqm" id="1IjqGpzdYqj" role="19SJt6">
-              <node concept="19SGf9" id="1IjqGpzdYqk" role="$DsGW">
-                <node concept="19SUe$" id="1IjqGpzdYql" role="19SJt6">
-                  <property role="19SUeA" value="argc" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="1IjqGpzdYqi" role="19SJt6">
-              <property role="19SUeA" value=" and " />
-            </node>
-            <node concept="1jUjqm" id="yaVrOusiPS" role="19SJt6">
-              <node concept="19SGf9" id="2ZXYLt7Wgam" role="$DsGW">
-                <node concept="19SUe$" id="2ZXYLt7Wgan" role="19SJt6">
-                  <property role="19SUeA" value="argv" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7Wgak" role="19SJt6">
-              <property role="19SUeA" value=" in the watchables view (see " />
-            </node>
-            <node concept="2Sbdz4" id="2ZXYLt7WgbU" role="19SJt6">
-              <ref role="2SbdyP" node="6Kly4FTRW8I" resolve="SuspendedInMain" />
-            </node>
-            <node concept="19SUe$" id="2ZXYLt7WgbT" role="19SJt6">
-              <property role="19SUeA" value=")." />
-            </node>
-          </node>
-        </node>
-        <node concept="2SaynC" id="6Kly4FTRW8I" role="1_0VJ0">
-          <property role="TrG5h" value="SuspendedInMain" />
-          <property role="2Sbq$t" value="true" />
-          <node concept="2Sb_l4" id="6Kly4FTRW8J" role="2SbwM5">
-            <property role="2Sb_kV" value="debugger/debugger11.png" />
-            <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-          </node>
-          <node concept="OjmMv" id="6Kly4FTRW8K" role="2SaI5j">
-            <node concept="19SGf9" id="6Kly4FTRW8L" role="OjmMu">
-              <node concept="19SUe$" id="6Kly4FTRW8M" role="19SJt6">
-                <property role="19SUeA" value="Suspended Debugger after performing step out" />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="6Kly4FTRW8N" role="3SHJ_F" />
-        </node>
-      </node>
-    </node>
-    <node concept="1_0j5j" id="7yEEdZqhRyJ" role="1DXQ57">
-      <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
-    </node>
-  </node>
   <node concept="1_1swa" id="6UY8Kx5jzAQ">
-    <property role="TrG5h" value="F_LegacyCode" />
+    <property role="TrG5h" value="E_LegacyCode" />
     <property role="yApLE" value="8" />
     <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="3mn43GO6C$J" role="1_0VJ0">
@@ -814,11 +498,8 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Z_CHAPTER_CTooling" />
     <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1_0j5j" id="4IT6uoYGFh" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
-    </node>
     <node concept="1_0j5j" id="4IT6uoYGFi" role="1DXQ57">
-      <ref role="1_0j5g" node="6UY8Kx5jzAQ" resolve="F_LegacyCode" />
+      <ref role="1_0j5g" node="6UY8Kx5jzAQ" resolve="E_LegacyCode" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFj" role="1DXQ57">
       <ref role="1_0j5g" node="5dchr4QjR6$" resolve="A_BuildingInTheIDE" />
@@ -830,7 +511,7 @@
       <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
     </node>
     <node concept="1_0j5j" id="4IT6uoYGFm" role="1DXQ57">
-      <ref role="1_0j5g" node="4IT6uoYGEZ" resolve="E_HelloWorld" />
+      <ref role="1_0j5g" node="4IT6uoYGEZ" resolve="D_HelloWorld" />
     </node>
     <node concept="1mvXsy" id="1OEOMsplmw6" role="1_0VJ0">
       <property role="TrG5h" value="ctooling" />
@@ -850,19 +531,14 @@
           <ref role="1_0j5g" node="3MXxQvv3i_o" resolve="C_LaunchConfiguration" />
         </node>
       </node>
-      <node concept="$CzcT" id="4IT6uoYGFK" role="1_0VJ0">
-        <node concept="1_0j5j" id="4IT6uoYGGq" role="$CzcU">
-          <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
-        </node>
-      </node>
       <node concept="$CzcT" id="4IT6uoYGFU" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGt" role="$CzcU">
-          <ref role="1_0j5g" node="4IT6uoYGEZ" resolve="E_HelloWorld" />
+          <ref role="1_0j5g" node="4IT6uoYGEZ" resolve="D_HelloWorld" />
         </node>
       </node>
       <node concept="$CzcT" id="4IT6uoYGG6" role="1_0VJ0">
         <node concept="1_0j5j" id="4IT6uoYGGw" role="$CzcU">
-          <ref role="1_0j5g" node="6UY8Kx5jzAQ" resolve="F_LegacyCode" />
+          <ref role="1_0j5g" node="6UY8Kx5jzAQ" resolve="E_LegacyCode" />
         </node>
       </node>
     </node>
@@ -1911,9 +1587,6 @@
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="C_LaunchConfiguration" />
     <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
-    <node concept="1_0j5j" id="3MXxQvvjQKz" role="1DXQ57">
-      <ref role="1_0j5g" node="yrKNEnvQ24" resolve="D_Debugging" />
-    </node>
     <node concept="1_0VNX" id="6OxdrRmCyFc" role="1_0VJ0">
       <property role="1_0VJr" value="Running Applications from MPS/mbeddr" />
       <property role="TrG5h" value="LaunchConfiguration" />
@@ -2181,7 +1854,7 @@
         <node concept="1_0LV8" id="3MXxQvvjNdt" role="1_0VJ0">
           <node concept="19SGf9" id="3MXxQvvjNdu" role="1_0LWR">
             <node concept="19SUe$" id="3MXxQvvjNdv" role="19SJt6">
-              <property role="19SUeA" value="After you have run the executable a new launch configuration will be created with the name of the executable that you have specified. If a configuration already exists with the same name then it will be overwritten. From this point, it is also possible to run/debug the executable from the menu bar or from the " />
+              <property role="19SUeA" value="After you have run the executable a new launch configuration will be created with the name of the executable that you have specified. If a configuration already exists with the same name then it will be overwritten. From this point, it is also possible to run the executable from the menu bar or from the " />
             </node>
             <node concept="2OlAs7" id="yaVrOupUsH" role="19SJt6">
               <node concept="19SGf9" id="yaVrOupUsK" role="$DsGW">
@@ -2239,22 +1912,6 @@
               <ref role="2SbdyP" node="3MXxQvvjL3v" resolve="LaunchConfiguration_Build" />
             </node>
             <node concept="19SUe$" id="3MXxQvvjNjF" role="19SJt6">
-              <property role="19SUeA" value=". In order to debug the application, you need to click on the green bug icon next to the selected " />
-            </node>
-            <node concept="1jUjqm" id="3MXxQvvjNjG" role="19SJt6">
-              <node concept="19SGf9" id="3MXxQvvjNjH" role="$DsGW">
-                <node concept="19SUe$" id="3MXxQvvjNjI" role="19SJt6">
-                  <property role="19SUeA" value="Launch Configuration" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="3MXxQvvjNjJ" role="19SJt6">
-              <property role="19SUeA" value=". You can read more about how you can debug your application in " />
-            </node>
-            <node concept="1_0GAv" id="3MXxQvvjQIH" role="19SJt6">
-              <ref role="1_0GAl" node="3mn43GO6BBY" resolve="debugging" />
-            </node>
-            <node concept="19SUe$" id="3MXxQvvjQII" role="19SJt6">
               <property role="19SUeA" value="." />
             </node>
           </node>
@@ -2531,7 +2188,7 @@
   </node>
   <node concept="1_1swa" id="4IT6uoYGEZ">
     <property role="yApLE" value="1" />
-    <property role="TrG5h" value="E_HelloWorld" />
+    <property role="TrG5h" value="D_HelloWorld" />
     <ref role="G9hjw" to="ntnz:2fBMM_3XZ4C" resolve="Config" />
     <node concept="1_0VNX" id="4IT6uoYGF0" role="1_0VJ0">
       <property role="TrG5h" value="helloWorld" />
