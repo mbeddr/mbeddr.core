@@ -135,7 +135,7 @@
             <node concept="2OqwBi" id="E9Bg752xOF" role="37vLTJ">
               <node concept="2tS5IS" id="E9Bg752xOG" role="2Oq$k0" />
               <node concept="2OwXpG" id="E9Bg752xOH" role="2OqNvi">
-                <ref role="2Oxat5" node="E9Bg752xHS" resolve="compareAttributes" />
+                <ref role="2Oxat5" node="E9Bg752xHS" resolve="compareAnnotations" />
               </node>
             </node>
           </node>
