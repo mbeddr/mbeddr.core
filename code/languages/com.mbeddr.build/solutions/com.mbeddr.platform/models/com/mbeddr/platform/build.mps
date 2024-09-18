@@ -5838,11 +5838,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5A_Zlt6CXMC" role="3bR37C">
-          <node concept="3bR9La" id="5A_Zlt6CXMD" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:2Xjt3l57hht" resolve="de.slisson.mps.reflection.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5A_Zlt6CXME" role="3bR37C">
           <node concept="3bR9La" id="5A_Zlt6CXMF" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
