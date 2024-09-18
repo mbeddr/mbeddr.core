@@ -1,0 +1,38 @@
+import de.itemis.mps.gradle.*
+
+configurations {
+    junitAnt
+    mbeddr
+    jreWin
+}
+
+ext.jdkVersion = '17.0.3-b469.32'
+dependencies {
+    mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    jreWin "com.jetbrains.jdk:jbr:${jdkVersion}:windows-x64@tgz"
+}
+
+task resolve_mbeddr() {
+    doLast { 
+        copy {
+            from {
+                    configurations.mbeddr.resolve().collect { zipTree(it) }
+                 }
+            into artifactsDir
+        }
+    }
+}
+
+def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
+
+task build_all_in_one(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
+    script script_build_mbeddrAllInOne
+}
+
+task package_tutorial(type: Zip) {
+    from rootProject.projectDir.absolutePath + "/code/applications/tutorial"
+    destinationDirectory = new File(rootProject.projectDir.absolutePath + "/artifacts/" + "com.mbeddr.tutorial")
+    archiveFileName = "com.mbeddr.tutorial.zip"
+}
+
+task prepare_distribution(dependsOn: [build_all_in_one, ':com.mbeddr:platform:build_platform_distribution', package_tutorial])

@@ -6,7 +6,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
     <use id="1c5b7d51-0ef3-4332-af36-874466950878" name="com.mbeddr.doc.expressions" version="0" />
-    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="0" />
+    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="1" />
     <use id="5344b781-2242-4d23-be90-673ee10bea46" name="com.mbeddr.doc.qa" version="0" />
     <use id="d7145000-936a-47e8-95a5-71f220e623f9" name="com.mbeddr.doc.self" version="0" />
     <use id="c61970b4-87fb-4429-8a3a-c87719f000a3" name="com.mbeddr.doc.terms" version="0" />

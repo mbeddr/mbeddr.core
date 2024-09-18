@@ -41,9 +41,6 @@ http://plantuml.com/
 Sat4J
 http://www.sat4j.org/
 
-SLF4J
-http://www.slf4j.org/
-
 Microsoft Corporation
 https://github.com/Z3Prover/
 

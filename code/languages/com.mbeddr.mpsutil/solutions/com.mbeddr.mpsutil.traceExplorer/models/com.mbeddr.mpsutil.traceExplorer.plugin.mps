@@ -16,6 +16,8 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="16e76fe3-9534-4def-afb7-925a169a7c0b" name="jetbrains.mps.lang.feedback.messages" version="0" />
+    <use id="ad93155d-79b2-4759-b10c-55123e763903" name="jetbrains.mps.lang.messages" version="0" />
   </languages>
   <imports>
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
@@ -51,7 +53,8 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
-    <import index="gspm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup(MPS.IDEA/)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="gspm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1488,7 +1491,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="fo3l86ccZl" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
@@ -3378,12 +3381,24 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="47H5HUYSg1h" role="3cqZAp">
+            <node concept="3clFbF" id="5D5IL_PXglU" role="3cqZAp">
               <node concept="2OqwBi" id="47H5HUYSuQ6" role="3clFbG">
                 <node concept="37vLTw" id="47H5HUYSg1f" role="2Oq$k0">
                   <ref role="3cqZAo" node="3EF07Bw$r7s" resolve="actions" />
                 </node>
                 <node concept="TSZUe" id="47H5HUYSRBZ" role="2OqNvi">
+                  <node concept="37vLTw" id="5D5IL_PXglY" role="25WWJ7">
+                    <ref role="3cqZAo" node="4SH1Ldi3K8o" resolve="filterAction" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3EF07Bw$r8w" role="3cqZAp">
+              <node concept="2OqwBi" id="3EF07Bw$r8x" role="3clFbG">
+                <node concept="37vLTw" id="3EF07Bw$r8y" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3EF07Bw$r7s" resolve="actions" />
+                </node>
+                <node concept="TSZUe" id="3EF07Bw$r8z" role="2OqNvi">
                   <node concept="37vLTw" id="4SH1Ldi2nXg" role="25WWJ7">
                     <ref role="3cqZAo" node="4SH1Ldi3K8o" resolve="filterAction" />
                   </node>
@@ -9381,6 +9396,14 @@
       </node>
     </node>
     <node concept="2tJIrI" id="13FXotcW5E3" role="jymVt" />
+    <node concept="3Tm1VV" id="43aY2QmUpUj" role="1B3o_S" />
+    <node concept="16euLQ" id="6u2KKsj64ou" role="16eVyc">
+      <property role="TrG5h" value="RecT" />
+      <node concept="3uibUv" id="6u2KKsj6bfD" role="3ztrMU">
+        <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
+        <node concept="3qTvmN" id="6u2KKsj6gTn" role="11_B2D" />
+      </node>
+    </node>
     <node concept="3clFb_" id="1TNXceg$d$W" role="jymVt">
       <property role="TrG5h" value="setNodeMapper" />
       <node concept="3clFbS" id="1TNXceg$d$Z" role="3clF47">
@@ -9403,7 +9426,7 @@
       <node concept="37vLTG" id="1TNXceg$fBV" role="3clF46">
         <property role="TrG5h" value="mapper" />
         <node concept="3uibUv" id="1TNXceg$fBU" role="1tU5fm">
-          <ref role="3uigEE" node="1TNXcegzj9g" resolve="ITraceRecordMapper" />
+          <ref role="3uigEE" node="1TNXcegzj9g" resolve="INodeMapper" />
         </node>
       </node>
     </node>
@@ -9425,14 +9448,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1TNXceg$Bul" role="jymVt" />
-    <node concept="3Tm1VV" id="43aY2QmUpUj" role="1B3o_S" />
-    <node concept="16euLQ" id="6u2KKsj64ou" role="16eVyc">
-      <property role="TrG5h" value="RecT" />
-      <node concept="3uibUv" id="6u2KKsj6bfD" role="3ztrMU">
-        <ref role="3uigEE" node="43aY2QmSq3e" resolve="ITraceRecord" />
-        <node concept="3qTvmN" id="6u2KKsj6gTn" role="11_B2D" />
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="13FXotcVBt$">
     <property role="TrG5h" value="CVR" />
@@ -9692,20 +9707,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3djJ2XoiGln" role="3cqZAp">
-          <node concept="2OqwBi" id="3djJ2XoiGIt" role="3clFbG">
-            <node concept="37vLTw" id="3djJ2XoiGll" role="2Oq$k0">
-              <ref role="3cqZAo" node="3djJ2XoiFOa" resolve="l" />
-            </node>
-            <node concept="liA8E" id="3djJ2XoiHFr" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color)" resolve="setBackground" />
-              <node concept="2YIFZM" id="6lCdCJoeEoK" role="37wK5m">
-                <ref role="37wK5l" to="g1qu:~UIUtil.getLabelTextForeground()" resolve="getLabelTextForeground" />
-                <ref role="1Pybhc" to="g1qu:~UIUtil" resolve="UIUtil" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3djJ2XoiI8m" role="3cqZAp">
           <node concept="2OqwBi" id="3djJ2XoiIxM" role="3clFbG">
             <node concept="37vLTw" id="3djJ2XoiI8k" role="2Oq$k0">
@@ -9713,9 +9714,7 @@
             </node>
             <node concept="liA8E" id="3djJ2XoiJve" role="2OqNvi">
               <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
-              <node concept="3clFbT" id="3djJ2XoiJAu" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+              <node concept="3clFbT" id="3djJ2XoiJAu" role="37wK5m" />
             </node>
           </node>
         </node>

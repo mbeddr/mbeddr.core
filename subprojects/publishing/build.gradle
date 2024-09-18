@@ -1,0 +1,71 @@
+import java.nio.file.Files
+import java.nio.file.Paths
+import java.nio.file.StandardCopyOption
+import java.time.*
+import de.itemis.mps.gradle.GitBasedVersioning
+
+plugins {
+    id "com.github.breadmoirai.github-release" version "2.5.2"
+}
+
+def artifactsRoot = rootProject.projectDir.absolutePath + "/artifacts"
+
+def buildNumber
+if (rootProject.hasProperty("build.number"))
+{
+    buildNumber = rootProject.getProperty("build.number")
+} else {
+  buildNumber = ""
+}
+
+
+LocalDateTime t = LocalDateTime.now();
+
+def releaseNotes = """Automated Nighly build from ${t as String}."""
+
+def tutorialFileName = "com.mbeddr.tutorial-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
+def platformFileName = "platform-distribution-${ext.mbeddrPlatformBuildNumber}-MPS-${mpsBuild}.zip"
+
+githubRelease {
+    owner = 'mbeddr'
+    repo = 'mbeddr.core'
+    token = rootProject.hasProperty("github.token") ? rootProject.getProperty("github.token") : "empty"
+    tagName = 'nightly-' + buildNumber
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
+    releaseName = 'Nighly Build ' + buildNumber
+    body = releaseNotes
+    prerelease = true
+    releaseAssets = [
+            artifactsRoot + "/com.mbeddr.tutorial/" + tutorialFileName,
+            artifactsRoot + "/com.mbeddr.platform.distribution/" + platformFileName,
+    ]
+    dryRun = project.hasProperty("githubReleaseDryRun")
+}
+
+tasks.register('renameTutorial') {
+    dependsOn(':com.mbeddr:distribution:package_tutorial')
+    doLast {
+        def dir = Paths.get(artifactsRoot, 'com.mbeddr.tutorial')
+        Files.copy(
+                dir.resolve('com.mbeddr.tutorial.zip'),
+                dir.resolve(tutorialFileName),
+                StandardCopyOption.REPLACE_EXISTING
+        )
+    }
+}
+
+tasks.register('renamePlatform') {
+    dependsOn(':com.mbeddr:platform:build_platform_distribution')
+    doLast {
+        def dir = Paths.get(artifactsRoot, 'com.mbeddr.platform.distribution')
+        Files.copy(
+                dir.resolve('platform-distribution.zip'),
+                dir.resolve(platformFileName),
+                StandardCopyOption.REPLACE_EXISTING
+        )
+    }
+}
+
+tasks.named('githubRelease') {
+    dependsOn renamePlatform, renameTutorial
+}
