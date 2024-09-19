@@ -1470,8 +1470,8 @@
               <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
               <node concept="2Ry0Ak" id="bHMJKhDD8S" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="bHMJKhDD8T" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoreimporter.runtime" />
+                <node concept="2Ry0Ak" id="5Ap$XSqWAMk" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecore.metaModelImport" />
                 </node>
               </node>
             </node>
