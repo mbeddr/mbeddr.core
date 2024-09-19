@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage" uuid="841cfdd9-ec16-4978-b87d-93178df0473a" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage" uuid="841cfdd9-ec16-4978-b87d-93178df0473a" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
     <dependency reexport="false">3ab9bd46-be60-4c45-806b-37a5b96358a2(com.mbeddr.mpsutil.ccmenu.reftarget.runtime)</dependency>
@@ -20,7 +19,7 @@
     <language slang="l:f92af8d7-1fae-4067-8109-17acf80f8e58:com.mbeddr.mpsutil.ccmenu.reftarget" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
-    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
+    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
