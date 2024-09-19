@@ -4,6 +4,7 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
+    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -20,7 +21,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
@@ -170,14 +170,12 @@
   <node concept="25R3W" id="apJ4OR4rgP">
     <property role="TrG5h" value="enumTest1" />
     <node concept="25R33" id="apJ4OR4ror" role="25R1y">
-      <property role="3tVfz5" value="187387899334997531" />
+      <property role="3tVfz5" value="0" />
       <property role="TrG5h" value="val1" />
-      <property role="1L1pqM" value="0" />
     </node>
     <node concept="25R33" id="apJ4OR4rot" role="25R1y">
-      <property role="3tVfz5" value="187387899334997533" />
+      <property role="3tVfz5" value="1" />
       <property role="TrG5h" value="val2" />
-      <property role="1L1pqM" value="1" />
     </node>
   </node>
 </model>
