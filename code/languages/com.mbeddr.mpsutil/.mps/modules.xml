@@ -193,8 +193,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare.testlang/test.com.mbeddr.mpsutil.compare.testlang.mpl" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.contextactions/tests.com.mbeddr.mpsutil.contextactions.msd" folder="rest.contextActions" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.metaModelImport/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
-      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoreimporter.runtime/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1.mpl" folder="rest.ecore.tests.testLanguages" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.mpl" folder="rest.ecore.tests.testLanguages" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3.mpl" folder="rest.ecore.tests.testLanguages" />
