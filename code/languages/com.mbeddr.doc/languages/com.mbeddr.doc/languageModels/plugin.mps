@@ -276,6 +276,7 @@
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -2317,7 +2318,7 @@
                 <node concept="17QB3L" id="5Ulr5FUQKky" role="1tU5fm" />
                 <node concept="3cpWs3" id="5Ulr5FUQLHz" role="33vP2m">
                   <node concept="Xl_RD" id="5Ulr5FUQLH$" role="3uHU7B">
-                    <property role="Xl_RC" value="Screenshots might not be taken correctly in MpsEnvironment (Ant &lt;generate&gt; task). " />
+                    <property role="Xl_RC" value="Screenshots cannot be taken in MpsEnvironment (Ant &lt;generate&gt; task). " />
                   </node>
                   <node concept="Xl_RD" id="5Ulr5FUQLH_" role="3uHU7w">
                     <property role="Xl_RC" value="Use mps-gradle-plugin, mps-build-backends, MPS tests, or other means to run the MPS make process in an IDEA environment." />
@@ -2851,6 +2852,7 @@
                                       <ref role="3cqZAo" node="5Ulr5FUQ$ao" resolve="reportMpsEnvironment" />
                                     </node>
                                   </node>
+                                  <node concept="3zACq4" id="5Ulr5FUQ9rW" role="3cqZAp" />
                                 </node>
                                 <node concept="37vLTw" id="5Ulr5FUPY0h" role="3clFbw">
                                   <ref role="3cqZAo" node="5Ulr5FUPOud" resolve="isMpsEnvironment" />
@@ -3191,11 +3193,13 @@
                                       <ref role="3cqZAo" node="5Ulr5FUQ$ao" resolve="reportMpsEnvironment" />
                                     </node>
                                   </node>
+                                  <node concept="3zACq4" id="5Ulr5FUQHa8" role="3cqZAp" />
                                 </node>
                                 <node concept="37vLTw" id="5Ulr5FUQHa9" role="3clFbw">
                                   <ref role="3cqZAo" node="5Ulr5FUPOud" resolve="isMpsEnvironment" />
                                 </node>
                               </node>
+                              <node concept="3clFbH" id="5Ulr5FUQgvP" role="3cqZAp" />
                               <node concept="3cpWs8" id="223OxQl_y91" role="3cqZAp">
                                 <node concept="3cpWsn" id="223OxQl_y92" role="3cpWs9">
                                   <property role="TrG5h" value="node" />
