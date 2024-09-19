@@ -195,6 +195,12 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.contextactions/tests.com.mbeddr.mpsutil.contextactions.msd" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoreimporter.runtime/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage3.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage4.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6.mpl" folder="rest.ecore.tests.testLanguages" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.extensionclass/test.com.mbeddr.mpsutil.extensionclass.msd" folder="staging.extensionclass" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar.test/test.com.mbeddr.mpsutil.iconchar.test.msd" folder="stable.iconchar" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.iconchar/test.com.mbeddr.mpsutil.iconchar.mpl" folder="stable.iconchar" />
