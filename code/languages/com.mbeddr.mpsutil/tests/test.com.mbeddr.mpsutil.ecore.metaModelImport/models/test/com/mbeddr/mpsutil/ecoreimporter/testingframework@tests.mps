@@ -144,10 +144,10 @@
             <property role="3N1Lgt" value="test_Ecore_Files/testingFrameworkReferenceLanguage.ecore" />
           </node>
           <node concept="1Xw6AR" id="xRVdUhx77N" role="1uyDA$">
-            <node concept="1dCxOl" id="xRVdUhx783" role="1XwpL7">
-              <property role="1XweGQ" value="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f" />
-              <node concept="1j_P7g" id="xRVdUhx784" role="1j$8Uc">
-                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch" />
+            <node concept="1dCxOl" id="5Ap$XSr8ns8" role="1XwpL7">
+              <property role="1XweGQ" value="r:ab50d504-3c45-46c5-9732-ab1e5b810f3a" />
+              <node concept="1j_P7g" id="5Ap$XSr8ns9" role="1j$8Uc">
+                <property role="1j_P7h" value="test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10.structure" />
               </node>
             </node>
           </node>
