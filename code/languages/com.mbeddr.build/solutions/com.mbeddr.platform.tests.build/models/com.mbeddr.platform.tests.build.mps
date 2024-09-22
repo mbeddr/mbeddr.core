@@ -358,6 +358,9 @@
       <node concept="L2wRC" id="4JHJliM0ApO" role="39821P">
         <ref role="L2wRA" node="4JHJliM0kFI" resolve="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" />
       </node>
+      <node concept="L2wRC" id="4JHJliM0B5C" role="39821P">
+        <ref role="L2wRA" node="4JHJliM0AJz" resolve="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" />
+      </node>
       <node concept="L2wRC" id="4JHJliM0gol" role="39821P">
         <ref role="L2wRA" node="4JHJliM0g2K" resolve="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
       </node>
@@ -1880,6 +1883,66 @@
             </node>
             <node concept="3qWCbU" id="4JHJliM0lfU" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4JHJliM0AJz" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" />
+        <property role="3LESm3" value="ad8b5993-1cc2-49c0-b7a0-0283da231703" />
+        <node concept="398BVA" id="4JHJliM0AKh" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="4JHJliM0AMj" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4JHJliM0API" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" />
+              <node concept="2Ry0Ak" id="4JHJliM0AR5" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4JHJliM0ASq" role="3bR31x">
+          <node concept="3LXTmp" id="4JHJliM0ASr" role="3rtmxm">
+            <node concept="398BVA" id="4JHJliM0ASs" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4JHJliM0ASt" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4JHJliM0ASu" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4JHJliM0ASw" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0B0C" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0B0D" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeKHIn" resolve="com.mbeddr.mpsutil.ecore" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4JHJliM0B0W" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4JHJliM0B0X" role="1HemKq">
+            <node concept="398BVA" id="4JHJliM0B0E" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4JHJliM0B0F" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4JHJliM0B0G" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" />
+                  <node concept="2Ry0Ak" id="4JHJliM0B0H" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4JHJliM0B0Y" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
