@@ -4,9 +4,7 @@
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
-  <imports>
-    <import index="7nm8" ref="r:9f4fe936-9a84-4faf-afe9-9c15141d78dc(test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia" />
