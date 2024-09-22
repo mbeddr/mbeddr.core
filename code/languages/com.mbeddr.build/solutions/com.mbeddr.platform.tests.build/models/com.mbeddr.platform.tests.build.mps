@@ -340,6 +340,9 @@
       <node concept="L2wRC" id="5Ap$XSqW8Xp" role="39821P">
         <ref role="L2wRA" node="bHMJKhDAXg" resolve="test.com.mbeddr.mpsutil.ecore.metaModelImport" />
       </node>
+      <node concept="L2wRC" id="4JHJliM0gol" role="39821P">
+        <ref role="L2wRA" node="4JHJliM0g2K" resolve="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
+      </node>
       <node concept="398223" id="2GRHOLIUBUT" role="39821P">
         <node concept="3_J27D" id="2GRHOLIUBUV" role="Nbhlr">
           <node concept="3Mxwew" id="2GRHOLIUC5d" role="3MwsjC">
@@ -1533,6 +1536,102 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="4JHJliM0g2K" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
+        <property role="3LESm3" value="e3fe9621-6e2b-47be-b722-97dd69d692c2" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="4JHJliM0g3u" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="4JHJliM0g4b" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="4JHJliM0g8a" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
+              <node concept="2Ry0Ak" id="4JHJliM0g9x" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4JHJliM0gaQ" role="3bR31x">
+          <node concept="3LXTmp" id="4JHJliM0gaR" role="3rtmxm">
+            <node concept="398BVA" id="4JHJliM0gaS" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4JHJliM0gaT" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4JHJliM0gaU" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4JHJliM0gaW" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0gho" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ghp" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:776vT$mQZbf" resolve="com.mbeddr.mpsutil.comparator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0ghq" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ghr" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeLNYF" resolve="com.mbeddr.mpsutil.ecore.testing.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0ghs" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ght" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0ghu" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ghv" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0ghw" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ghx" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeKPEA" resolve="com.mbeddr.mpsutil.ecore.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0ghy" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ghz" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecore.stubs" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0gh$" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0gh_" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4JHJliM0ghA" role="3bR37C">
+          <node concept="3bR9La" id="4JHJliM0ghB" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeKzbV" resolve="com.mbeddr.mpsutil.ecore.runtime" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4JHJliM0ghU" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4JHJliM0ghV" role="1HemKq">
+            <node concept="398BVA" id="4JHJliM0ghC" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4JHJliM0ghD" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4JHJliM0ghE" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
+                  <node concept="2Ry0Ak" id="4JHJliM0ghF" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4JHJliM0ghW" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="Um6saBVXnk" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.compare.pattern.test" />
@@ -2370,6 +2469,9 @@
       </node>
       <node concept="22LTRM" id="bHMJKhDDlh" role="22LTRK">
         <ref role="22LTRN" node="bHMJKhDAXg" resolve="test.com.mbeddr.mpsutil.ecore.metaModelImport" />
+      </node>
+      <node concept="22LTRM" id="4JHJliM0gmY" role="22LTRK">
+        <ref role="22LTRN" node="4JHJliM0g2K" resolve="test.com.mbeddr.mpsutil.ecore.modelImportExport" />
       </node>
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
