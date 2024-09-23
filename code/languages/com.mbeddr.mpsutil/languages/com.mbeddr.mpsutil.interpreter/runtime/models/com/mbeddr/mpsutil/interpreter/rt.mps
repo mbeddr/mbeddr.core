@@ -15285,7 +15285,7 @@
     </node>
     <node concept="2tJIrI" id="7cNsFS_gVYU" role="jymVt" />
     <node concept="2YIFZL" id="DCSeLnKHSR" role="jymVt">
-      <property role="TrG5h" value="SetCallBackWhenChildAdded" />
+      <property role="TrG5h" value="setCallBackWhenChildAdded" />
       <node concept="3clFbS" id="DCSeLnKHSU" role="3clF47">
         <node concept="3clFbF" id="DCSeLnKPtO" role="3cqZAp">
           <node concept="37vLTI" id="DCSeLnKQ4K" role="3clFbG">
@@ -15311,7 +15311,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="DCSeLnLmcu" role="jymVt">
-      <property role="TrG5h" value="GetCallBackWhenChildAdded" />
+      <property role="TrG5h" value="getCallBackWhenChildAdded" />
       <node concept="3clFbS" id="DCSeLnLmcv" role="3clF47">
         <node concept="3clFbF" id="DCSeLnLmcw" role="3cqZAp">
           <node concept="37vLTw" id="DCSeLnLmcz" role="3clFbG">
@@ -15953,12 +15953,7 @@
             <node concept="3uibUv" id="3KLmtT4G_t3" role="1tU5fm">
               <ref role="3uigEE" node="7cNsFS_gTK8" resolve="ComputationTrace" />
             </node>
-            <node concept="2OqwBi" id="DCSeLnN_ON" role="33vP2m">
-              <node concept="Xjq3P" id="3KLmtT4G_t5" role="2Oq$k0" />
-              <node concept="2OwXpG" id="DCSeLnND48" role="2OqNvi">
-                <ref role="2Oxat5" node="YcTL0giMk" resolve="parent" />
-              </node>
-            </node>
+            <node concept="Xjq3P" id="3KLmtT4G_t5" role="33vP2m" />
           </node>
         </node>
         <node concept="2$JKZl" id="3KLmtT4G_tE" role="3cqZAp">
