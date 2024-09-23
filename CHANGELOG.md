@@ -9,6 +9,11 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Breaking change: debugger and spawner were not maintained and were removed.
 
+## com.mbeddr.mpsutil.graphstream
+
+A previously unpublished language for using the [GraphStream](https://graphstream-project.org/) graph library is now
+part of the mbeddr platform distribution.
+
 ## com.mbeddr.mpsutil.checkinHandler
 
 - A new kind of Checkin handlers (background handler) now support the interface `CommitCheck` which allows more options like running the code after the commit or in the background.
