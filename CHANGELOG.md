@@ -9,6 +9,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Breaking change: debugger and spawner were not maintained and were removed.
 
+## com.mbeddr.mpsutil.interpreter
+
+### Feature
+
+- Added user defineable call back function when trace node is added to the trace tree
+
 ## com.mbeddr.mpsutil.margincell
 
 ### Fixed
