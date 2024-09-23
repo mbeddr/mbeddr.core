@@ -82,16 +82,22 @@ task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
 tasks.getByPath(':com.mbeddr:install').dependsOn install_nativelibs_loader
 */
 
-task build_platform(type: BuildLanguages, dependsOn: copy_allScripts) {
-    script scriptFile('com.mbeddr.platform/build.xml')
+task build_actionsfilter(type: BuildLanguages) {
+    script scriptFile('com.mbeddr.platform/actionsfilter.xml')
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
+    outputs.dir(new File(artifactsDir, 'com.mbeddr.mpsutil.actionsfilter/'))
+    outputs.upToDateWhen { false }
+}
+
+task build_platform(type: BuildLanguages, dependsOn: [copy_allScripts, build_actionsfilter]) {
+    script scriptFile('com.mbeddr.platform/build.xml')
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
 }
 
-task install_actionsfilter(type: Copy, dependsOn: build_platform) {
-    from "$rootDir/artifacts/com.mbeddr.platform/"
+task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
+    from "$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/"
     include "com.mbeddr.mpsutil.actionsfilter/"
     into "$mpsPluginsDir"
 }
