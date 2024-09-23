@@ -275,6 +275,7 @@
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -551,7 +552,6 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -757,7 +757,7 @@
                           <node concept="2OqwBi" id="6ndohCVdZlS" role="3clFbG">
                             <node concept="2OqwBi" id="6ndohCVdZlT" role="2Oq$k0">
                               <node concept="37vLTw" id="6ndohCVdZlU" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6ndohCVdZm3" resolve="it" />
+                                <ref role="3cqZAo" node="2SR9xrsN2fD" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="6ndohCVdZlV" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -782,9 +782,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="6ndohCVdZm3" role="1bW2Oz">
+                      <node concept="gl6BB" id="2SR9xrsN2fD" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="6ndohCVdZm4" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2SR9xrsN2fE" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -3167,7 +3167,7 @@
                                   <node concept="3clFbF" id="6bs538mCJ_A" role="3cqZAp">
                                     <node concept="2OqwBi" id="6bs538mCJLH" role="3clFbG">
                                       <node concept="37vLTw" id="6bs538mCJ__" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="6bs538mCJvx" resolve="it" />
+                                        <ref role="3cqZAo" node="2SR9xrsN2fF" resolve="it" />
                                       </node>
                                       <node concept="2qgKlT" id="6bs538mCKnh" role="2OqNvi">
                                         <ref role="37wK5l" to="qozy:6bs538mCDK9" resolve="accessedEvents" />
@@ -3175,9 +3175,9 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="6bs538mCJvx" role="1bW2Oz">
+                                <node concept="gl6BB" id="2SR9xrsN2fF" role="1bW2Oz">
                                   <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="6bs538mCJvy" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="2SR9xrsN2fG" role="1tU5fm" />
                                 </node>
                               </node>
                             </node>
@@ -3252,7 +3252,7 @@
                                   <node concept="3clFbF" id="6bs538mD45b" role="3cqZAp">
                                     <node concept="2OqwBi" id="6bs538mD45c" role="3clFbG">
                                       <node concept="37vLTw" id="6bs538mD45d" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="6bs538mD45f" resolve="it" />
+                                        <ref role="3cqZAo" node="2SR9xrsN2fH" resolve="it" />
                                       </node>
                                       <node concept="2qgKlT" id="6bs538mD4JG" role="2OqNvi">
                                         <ref role="37wK5l" to="qozy:6zcb4tIDdsk" resolve="accessedSharedVariables" />
@@ -3260,9 +3260,9 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="Rh6nW" id="6bs538mD45f" role="1bW2Oz">
+                                <node concept="gl6BB" id="2SR9xrsN2fH" role="1bW2Oz">
                                   <property role="TrG5h" value="it" />
-                                  <node concept="2jxLKc" id="6bs538mD45g" role="1tU5fm" />
+                                  <node concept="2jxLKc" id="2SR9xrsN2fI" role="1tU5fm" />
                                 </node>
                               </node>
                             </node>
@@ -5680,7 +5680,7 @@
                           <node concept="2OqwBi" id="7hczD5g1CRs" role="3clFbG">
                             <node concept="2OqwBi" id="7hczD5g1CRt" role="2Oq$k0">
                               <node concept="37vLTw" id="7hczD5g1CRu" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7hczD5g1CR$" resolve="it" />
+                                <ref role="3cqZAo" node="2SR9xrsN2fJ" resolve="it" />
                               </node>
                               <node concept="3TrcHB" id="7hczD5g1CRv" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -5700,9 +5700,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="7hczD5g1CR$" role="1bW2Oz">
+                      <node concept="gl6BB" id="2SR9xrsN2fJ" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="7hczD5g1CR_" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2SR9xrsN2fK" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -5837,7 +5837,7 @@
                     <node concept="3clFbF" id="7hczD5g1NFD" role="3cqZAp">
                       <node concept="2OqwBi" id="7hczD5g1NFE" role="3clFbG">
                         <node concept="37vLTw" id="7hczD5g1NFF" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7hczD5g1NFJ" resolve="it" />
+                          <ref role="3cqZAo" node="2SR9xrsN2fL" resolve="it" />
                         </node>
                         <node concept="2Xjw5R" id="7hczD5g1NFG" role="2OqNvi">
                           <node concept="1xMEDy" id="7hczD5g1NFH" role="1xVPHs">
@@ -5849,9 +5849,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="7hczD5g1NFJ" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2fL" role="1bW2Oz">
                     <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="7hczD5g1NFK" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2fM" role="1tU5fm" />
                   </node>
                 </node>
               </node>

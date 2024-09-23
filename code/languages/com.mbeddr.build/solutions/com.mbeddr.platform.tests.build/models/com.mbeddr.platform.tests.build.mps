@@ -477,6 +477,22 @@
             <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
           </node>
         </node>
+        <node concept="3rtmxn" id="4mvQA9n$oMU" role="3bR31x">
+          <node concept="3LXTmp" id="4mvQA9n$oMV" role="3rtmxm">
+            <node concept="3qWCbU" id="4mvQA9n$oMW" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4mvQA9n$oMX" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4mvQA9n$oMY" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4mvQA9n$oMZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="tests.com.mbeddr.mpsutil.json" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4BxzwLdy2a8" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -535,6 +551,22 @@
         <node concept="1SiIV0" id="2lpmVPSkCqT" role="3bR37C">
           <node concept="3bR9La" id="2lpmVPSkCqU" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4mvQA9n$oN1" role="3bR31x">
+          <node concept="3LXTmp" id="4mvQA9n$oN2" role="3rtmxm">
+            <node concept="3qWCbU" id="4mvQA9n$oN3" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4mvQA9n$oN4" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4mvQA9n$oN5" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4mvQA9n$oN6" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.contextactions" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

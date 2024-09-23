@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ab50d504-3c45-46c5-9732-ab1e5b810f3a(test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10.structure)">
+<model ref="r:679ddd2a-675f-4aaf-8311-c8eecf410a8f(test.com.mbeddr.mpsutil.ecoreimporter.testingFrameworkTestLanguageMatch)">
   <persistence version="9" />
   <languages>
     <use id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore" version="0" />
@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="gj51" ref="r:ab50d504-3c45-46c5-9732-ab1e5b810f3a(test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="77948de3-6ef9-452d-b392-d01403e4086f" name="com.mbeddr.mpsutil.ecore">
@@ -62,56 +63,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="25R3W" id="apJ4OR7VSO">
-    <property role="TrG5h" value="enumTest" />
-    <property role="3F6X1D" value="187387899335917108" />
-    <node concept="25R33" id="apJ4OR7XgR" role="25R1y">
-      <property role="3tVfz5" value="0" />
-      <property role="TrG5h" value="test1" />
-    </node>
-    <node concept="25R33" id="apJ4OR7XgT" role="25R1y">
-      <property role="3tVfz5" value="1" />
-      <property role="TrG5h" value="test12" />
-    </node>
-    <node concept="25R33" id="apJ4OR7XgW" role="25R1y">
-      <property role="3tVfz5" value="2" />
-      <property role="TrG5h" value="test13" />
-    </node>
-  </node>
-  <node concept="25R3W" id="apJ4OR7VST">
-    <property role="TrG5h" value="enumTest2" />
-    <property role="3F6X1D" value="187387899335917113" />
-    <node concept="25R33" id="apJ4OR7Xh0" role="25R1y">
-      <property role="3tVfz5" value="0" />
-      <property role="TrG5h" value="val1" />
-    </node>
-    <node concept="25R33" id="apJ4OR7Xh2" role="25R1y">
-      <property role="3tVfz5" value="1" />
-      <property role="TrG5h" value="val2" />
-    </node>
-    <node concept="25R33" id="apJ4OR7Xh5" role="25R1y">
-      <property role="3tVfz5" value="2" />
-      <property role="TrG5h" value="val3" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="7CVN7FEkFW_">
-    <property role="TrG5h" value="i_SuperClass2" />
-    <property role="EcuMT" value="8807858324542504741" />
-    <node concept="1TJgyj" id="7CVN7FEkFWy" role="1TKVEi">
-      <property role="IQ2ns" value="8807858324542504738" />
-      <property role="20kJfa" value="sp2ref2" />
-      <ref role="20lvS9" node="7CVN7FEkFW9" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="7CVN7FEkFWB">
-    <property role="TrG5h" value="i_SuperClass3" />
-    <property role="EcuMT" value="8807858324542504743" />
-    <node concept="1TJgyi" id="7CVN7FEkFWs" role="1TKVEl">
-      <property role="IQ2nx" value="8807858324542504732" />
-      <property role="TrG5h" value="sp3int3" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7CVN7FEkFWm">
     <property role="R5$K7" value="false" />
     <property role="19KtqR" value="true" />
@@ -142,6 +93,24 @@
     <property role="TrG5h" value="SuperClass3" />
     <node concept="PrWs8" id="4G$uji5tbEu" role="PzmwI">
       <ref role="PrY4T" node="7CVN7FEkFWB" resolve="i_SuperClass3" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7CVN7FEkFW_">
+    <property role="TrG5h" value="i_SuperClass2" />
+    <property role="EcuMT" value="8807858324542504741" />
+    <node concept="1TJgyj" id="7CVN7FEkFWy" role="1TKVEi">
+      <property role="IQ2ns" value="8807858324542504738" />
+      <property role="20kJfa" value="sp2ref2" />
+      <ref role="20lvS9" to="gj51:7CVN7FEkFW9" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7CVN7FEkFWB">
+    <property role="TrG5h" value="i_SuperClass3" />
+    <property role="EcuMT" value="8807858324542504743" />
+    <node concept="1TJgyi" id="7CVN7FEkFWs" role="1TKVEl">
+      <property role="IQ2nx" value="8807858324542504732" />
+      <property role="TrG5h" value="sp3int3" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="7CVN7FEkFW9">
@@ -195,12 +164,44 @@
     <node concept="1TJgyi" id="17qUVvSZm9K" role="1TKVEl">
       <property role="TrG5h" value="prop1" />
       <property role="IQ2nx" value="1286599818956595824" />
-      <ref role="AX2Wp" node="apJ4OR7VSO" resolve="enumTest1" />
+      <ref role="AX2Wp" to="gj51:apJ4OR7VSO" resolve="enumTest1" />
     </node>
     <node concept="1TJgyi" id="17qUVvSZm9M" role="1TKVEl">
       <property role="TrG5h" value="prop2" />
       <property role="IQ2nx" value="1286599818956595826" />
-      <ref role="AX2Wp" node="apJ4OR7VST" resolve="enumTest2" />
+      <ref role="AX2Wp" to="gj51:apJ4OR7VST" resolve="enumTest2" />
+    </node>
+  </node>
+  <node concept="25R3W" id="apJ4OR7VSO">
+    <property role="TrG5h" value="enumTest" />
+    <property role="3F6X1D" value="187387899335917108" />
+    <node concept="25R33" id="apJ4OR7XgR" role="25R1y">
+      <property role="3tVfz5" value="0" />
+      <property role="TrG5h" value="test1" />
+    </node>
+    <node concept="25R33" id="apJ4OR7XgT" role="25R1y">
+      <property role="3tVfz5" value="1" />
+      <property role="TrG5h" value="test12" />
+    </node>
+    <node concept="25R33" id="apJ4OR7XgW" role="25R1y">
+      <property role="3tVfz5" value="2" />
+      <property role="TrG5h" value="test13" />
+    </node>
+  </node>
+  <node concept="25R3W" id="apJ4OR7VST">
+    <property role="TrG5h" value="enumTest2" />
+    <property role="3F6X1D" value="187387899335917113" />
+    <node concept="25R33" id="apJ4OR7Xh0" role="25R1y">
+      <property role="3tVfz5" value="0" />
+      <property role="TrG5h" value="val1" />
+    </node>
+    <node concept="25R33" id="apJ4OR7Xh2" role="25R1y">
+      <property role="3tVfz5" value="1" />
+      <property role="TrG5h" value="val2" />
+    </node>
+    <node concept="25R33" id="apJ4OR7Xh5" role="25R1y">
+      <property role="3tVfz5" value="2" />
+      <property role="TrG5h" value="val3" />
     </node>
   </node>
 </model>
