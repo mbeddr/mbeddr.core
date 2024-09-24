@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5" uuid="b883f758-9a65-4140-ac15-f5b95052c219" generatorOutputPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5/source_gen" languageVersion="0" moduleVersion="0">
+<language namespace="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5" uuid="b883f758-9a65-4140-ac15-f5b95052c219" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5" type="default">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
-      <classes generated="true" path="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil/languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5/classes_gen" />
+      <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
   <accessoryModels />
