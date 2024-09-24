@@ -82,7 +82,7 @@ task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
 tasks.getByPath(':com.mbeddr:install').dependsOn install_nativelibs_loader
 */
 
-task build_actionsfilter(type: BuildLanguages) {
+task build_actionsfilter(type: BuildLanguages, dependsOn: [copy_allScripts]) {
     script scriptFile('com.mbeddr.platform/actionsfilter.xml')
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
