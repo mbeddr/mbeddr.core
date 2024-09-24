@@ -26,7 +26,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -37,19 +36,6 @@
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
-        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
-        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
-        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -81,7 +67,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -212,32 +198,13 @@
     <property role="TrG5h" value="enumTest1" />
     <property role="3F6X1D" value="3289023490928248338" />
     <ref role="1H5jkz" node="17qUVvSZm6q" resolve="val1" />
-    <node concept="2JgGob" id="17qUVvSZm6p" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="2Q$Xn1yGooi" role="3lCyv">
-        <property role="TrG5h" value="enumTest1" />
-        <property role="3F6X1D" value="3289023490928248338" />
-        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-        <node concept="M4N5e" id="2Q$Xn1yGoog" role="M5hS2">
-          <property role="1uS6qv" value="0" />
-          <property role="1uS6qo" value="val1" />
-        </node>
-        <node concept="M4N5e" id="2Q$Xn1yGooh" role="M5hS2">
-          <property role="1uS6qv" value="1" />
-          <property role="1uS6qo" value="val2" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="17qUVvSZm6q" role="25R1y">
       <property role="TrG5h" value="val1" />
       <property role="3tVfz5" value="3289023490928248336" />
-      <ref role="2wpffI" node="2Q$Xn1yGoog" />
     </node>
     <node concept="25R33" id="17qUVvSZm6r" role="25R1y">
       <property role="TrG5h" value="val2" />
       <property role="3tVfz5" value="3289023490928248337" />
-      <ref role="2wpffI" node="2Q$Xn1yGooh" />
     </node>
   </node>
 </model>
