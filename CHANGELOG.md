@@ -19,6 +19,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - When the attached cell can't be found (e.g. it is collapsed), the next suitable anchestor cell is now used to align the margin cell.
 
+## com.mbeddr.mpsutil.ecore
+
+### Fixed
+
+- The handling of enumeration properties by the Ecore importer/exporter has been improved, esp. if and how default literals are persisted on MPS and EMF side. 
+
 # August 2024
 
 ## com.mbeddr.platform

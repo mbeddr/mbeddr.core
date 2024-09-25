@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:c7e76692-1c08-4e97-a02d-1b3b061c60b7(test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance2)">
+<model ref="r:ecadeb2e-7c23-422c-b47e-a11d750bf16d(test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance2b)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="true" />
   <languages>
@@ -8,13 +8,9 @@
   <imports />
   <registry>
     <language id="8cff051b-53c3-4e5f-bf0a-6688f069e505" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2">
-      <concept id="3289023490928248227" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.structure.testClass" flags="ng" index="1f5n3j">
-        <property id="3289023490928248228" name="attr1" index="1f5n3k" />
-      </concept>
+      <concept id="3289023490928248227" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.structure.testClass" flags="ng" index="1f5n3j" />
     </language>
   </registry>
-  <node concept="1f5n3j" id="2t75AsPxBty">
-    <property role="1f5n3k" value="2Q$Xn1yGomw/val2" />
-  </node>
+  <node concept="1f5n3j" id="4JHJliM0LbZ" />
 </model>
 
