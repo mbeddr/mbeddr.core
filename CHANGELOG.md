@@ -9,7 +9,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 * Breaking change: debugger and spawner were not maintained and were removed.
 
+## com.mbeddr.mpsutil.interpreter
+
+### Feature
+
+- Added user defineable call back function when trace node is added to the trace tree
+
 ## com.mbeddr.mpsutil.conceptdiagram
+
+### Fixed
 
 - The `auto-layout on init` flag is now working correctly.
 
@@ -20,6 +28,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - The preference component now shows the actively loaded profile correctly.
 
 ## com.mbeddr.mpsutil.checkinHandler
+
+### Feature
 
 - A new kind of Checkin handlers (background handler) now support the interface `CommitCheck` which allows more options like running the code after the commit or in the background.
 
