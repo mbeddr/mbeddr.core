@@ -31,8 +31,6 @@ task build_all_in_one(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:co
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
-    // Support incremental build
-    inputs.file(script)
 }
 
 task package_tutorial(type: Zip) {

@@ -95,12 +95,6 @@ task test_mbeddr_platform(type: TestLanguages, dependsOn: build_platform) {
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
-
-    // Support incremental build
-    inputs.file(script)
-    inputs.dir("$rootDir/artifacts/mps-sl-all")
-    inputs.dir("$rootDir/artifacts/com.mbeddr.platform")
-    outputs.dir("$rootDir/artifacts/com.mbeddr.platform.distribution")
 }
 
 task package_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
