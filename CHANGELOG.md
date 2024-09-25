@@ -15,6 +15,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Added user defineable call back function when trace node is added to the trace tree
 
+## com.mbeddr.mpsutil.conceptdiagram
+
+### Fixed
+
+- The `auto-layout on init` flag is now working correctly.
+
 ## com.mbeddr.mpsutil.actionsfilter
 
 ### Fixed
