@@ -421,7 +421,7 @@
             <property role="TrG5h" value="localDocNode" />
             <node concept="3Tqbb2" id="1GfgNpVRbK$" role="1tU5fm" />
             <node concept="1rXfSq" id="1XKxHZsUjEJ" role="33vP2m">
-              <ref role="37wK5l" node="2DFA9RLm5bh" resolve="getDocumentationForConcept" />
+              <ref role="37wK5l" node="2DFA9RLm5bh" resolve="getDocForConceptCached" />
               <node concept="37vLTw" id="1XKxHZsUjEK" role="37wK5m">
                 <ref role="3cqZAo" node="1XKxHZsSvB0" resolve="repository" />
               </node>
@@ -1636,7 +1636,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="1XKxHZsW5vp" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Deprecated" />
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="2tJIrI" id="6SZYYyyjrZw" role="jymVt" />
@@ -3082,7 +3082,7 @@
               </node>
               <node concept="2OqwBi" id="3qokpdXQLXn" role="3clFbw">
                 <node concept="1rXfSq" id="3qokpdXQLiQ" role="2Oq$k0">
-                  <ref role="37wK5l" node="5ut4bh9phV1" resolve="getConfig" />
+                  <ref role="37wK5l" node="5ut4bh9phV1" resolve="config" />
                 </node>
                 <node concept="liA8E" id="3qokpdXQMvJ" role="2OqNvi">
                   <ref role="37wK5l" to="pgte:1T8cMxCROxk" resolve="showReferenceConceptDocumentation" />
@@ -3281,7 +3281,7 @@
             </node>
             <node concept="2OqwBi" id="5R9SlUlNz7q" role="33vP2m">
               <node concept="37vLTw" id="2JMQ0Qq3aKy" role="2Oq$k0">
-                <ref role="3cqZAo" node="2JMQ0Qq3aKs" resolve="seq" />
+                <ref role="3cqZAo" node="2JMQ0Qq3aKs" resolve="extensions" />
               </node>
               <node concept="1uHKPH" id="5R9SlUlNz7u" role="2OqNvi" />
             </node>

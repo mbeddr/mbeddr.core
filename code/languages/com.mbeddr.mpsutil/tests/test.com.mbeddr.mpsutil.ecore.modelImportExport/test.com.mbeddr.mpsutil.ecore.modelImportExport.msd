@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="test.com.mbeddr.mpsutil.ecore.modelImportExport" uuid="e3fe9621-6e2b-47be-b722-97dd69d692c2" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
     <facet type="tests" />
   </facets>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
-    <dependency reexport="false">822a7acd-f487-45f5-bbb9-1ce595a1705f(com.mbeddr.mpsutil.ecore.stubs)</dependency>
-    <dependency reexport="false">3852b093-b918-413a-91e0-ba454bb21921(com.mbeddr.mpsutil.ecore.runtime)</dependency>
-    <dependency reexport="false">c6420b75-4569-420d-aaf7-9bc590ad7b2a(com.mbeddr.mpsutil.comparator)</dependency>
-    <dependency reexport="false">53f72aed-03c9-433e-8bca-b0a0c1ec0c31(com.mbeddr.mpsutil.ecore.testing.runtime)</dependency>
-    <dependency reexport="false">d08b2078-ada5-40fa-a3c5-d721088dc626(com.mbeddr.mpsutil.ecore.testing)</dependency>
-    <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
-    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecore.testing" version="0" />
     <language slang="l:ad8b5993-1cc2-49c0-b7a0-0283da231703:com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" version="0" />
