@@ -1790,12 +1790,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46XBvPMFwgD" role="3bR37C">
-          <node concept="3bR9La" id="46XBvPMFwgE" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
         <node concept="1BupzO" id="4PRpvcZJN7E" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -1816,6 +1810,12 @@
             <node concept="3qWCbU" id="4PRpvcZJN7G" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="46XBvPMFwgD" role="3bR37C">
+          <node concept="3bR9La" id="46XBvPMFwgE" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
       </node>
@@ -20099,6 +20099,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="3xUpIvHHZl6" role="3bR31x">
+          <node concept="3LXTmp" id="3xUpIvHHZl7" role="3rtmxm">
+            <node concept="3qWCbU" id="3xUpIvHHZl8" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3xUpIvHHZl9" role="3LXTmr">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3xUpIvHHZla" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3xUpIvHHZlb" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.editor.displayControl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="3Ol24ijlxoL" role="3989C9">
@@ -20176,6 +20192,22 @@
             </node>
             <node concept="3qWCbU" id="3lcj7hzsBO2" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3xUpIvHHZld" role="3bR31x">
+          <node concept="3LXTmp" id="3xUpIvHHZle" role="3rtmxm">
+            <node concept="3qWCbU" id="3xUpIvHHZlf" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3xUpIvHHZlg" role="3LXTmr">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3xUpIvHHZlh" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3xUpIvHHZli" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.logicalChild" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -20288,6 +20320,22 @@
         <node concept="1SiIV0" id="4LY$CIohIRF" role="3bR37C">
           <node concept="3bR9La" id="4LY$CIohIRG" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ACpgrwmP7U" resolve="jetbrains.mps.kotlin.stdlib" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3xUpIvHHZkZ" role="3bR31x">
+          <node concept="3LXTmp" id="3xUpIvHHZl0" role="3rtmxm">
+            <node concept="3qWCbU" id="3xUpIvHHZl1" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3xUpIvHHZl2" role="3LXTmr">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="3xUpIvHHZl3" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3xUpIvHHZl4" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.checkinHandler" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
