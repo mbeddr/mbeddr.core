@@ -174,7 +174,7 @@
             <node concept="3clFbS" id="5lKnBeBacFK" role="3clFbx">
               <node concept="2MkqsV" id="5lKnBeBaeLT" role="3cqZAp">
                 <node concept="Xl_RD" id="5lKnBeBaeLU" role="2MkJ7o">
-                  <property role="Xl_RC" value="a valid file must be picked." />
+                  <property role="Xl_RC" value="a valid file must be picked" />
                 </node>
                 <node concept="1YBJjd" id="5lKnBeBaeLV" role="1urrMF">
                   <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
@@ -205,7 +205,7 @@
               <node concept="3clFbS" id="4WvfojApy5D" role="3eOfB_">
                 <node concept="2MkqsV" id="4WvfojApzcH" role="3cqZAp">
                   <node concept="Xl_RD" id="4WvfojApzcI" role="2MkJ7o">
-                    <property role="Xl_RC" value="a valid folder must be picked." />
+                    <property role="Xl_RC" value="a valid folder must be picked" />
                   </node>
                   <node concept="1YBJjd" id="4WvfojApzcJ" role="1urrMF">
                     <ref role="1YBMHb" node="5lKnBeAusjM" resolve="ap" />
@@ -435,7 +435,7 @@
                             <node concept="3clFbS" id="3PuSfTTlfOr" role="3clFbx">
                               <node concept="2MkqsV" id="3PuSfTTlh4x" role="3cqZAp">
                                 <node concept="Xl_RD" id="3PuSfTTlh4K" role="2MkJ7o">
-                                  <property role="Xl_RC" value="Even under Microsoft(R) Windows(R), please use a forward slash (/) as a separator." />
+                                  <property role="Xl_RC" value="use a forward slash (/) as a separator (applicable even for Windows user)" />
                                 </node>
                                 <node concept="2ODE4t" id="3PuSfTTlh8E" role="1urrC5">
                                   <ref role="2ODJFN" to="68mc:5lKnBeAtODI" resolve="path" />
@@ -676,22 +676,17 @@
         </node>
         <node concept="3clFbS" id="HgIalQMxLl" role="3clFbx">
           <node concept="2MkqsV" id="HgIalQMBE3" role="3cqZAp">
-            <node concept="3cpWs3" id="HgIalQMQi1" role="2MkJ7o">
-              <node concept="3cpWs3" id="HgIalQMQi2" role="3uHU7B">
-                <node concept="Xl_RD" id="HgIalQMQi3" role="3uHU7B">
-                  <property role="Xl_RC" value="path macro " />
-                </node>
-                <node concept="2OqwBi" id="HgIalQMQi4" role="3uHU7w">
-                  <node concept="1YBJjd" id="HgIalQMQua" role="2Oq$k0">
-                    <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
-                  </node>
-                  <node concept="3TrcHB" id="HgIalQMQi6" role="2OqNvi">
-                    <ref role="3TsBF5" to="68mc:4eXJ6EO9ZKy" resolve="macro" />
-                  </node>
-                </node>
+            <node concept="3cpWs3" id="4PawC2QkWV9" role="2MkJ7o">
+              <node concept="Xl_RD" id="4PawC2QkWo9" role="3uHU7B">
+                <property role="Xl_RC" value="path macro does not exist: " />
               </node>
-              <node concept="Xl_RD" id="HgIalQMQi7" role="3uHU7w">
-                <property role="Xl_RC" value=" does not exist" />
+              <node concept="2OqwBi" id="HgIalQMQi4" role="3uHU7w">
+                <node concept="1YBJjd" id="HgIalQMQua" role="2Oq$k0">
+                  <ref role="1YBMHb" node="HgIalQMxLf" resolve="macroFolderPicker" />
+                </node>
+                <node concept="3TrcHB" id="HgIalQMQi6" role="2OqNvi">
+                  <ref role="3TsBF5" to="68mc:4eXJ6EO9ZKy" resolve="macro" />
+                </node>
               </node>
             </node>
             <node concept="1YBJjd" id="HgIalQMBHg" role="1urrMF">
@@ -750,22 +745,17 @@
         </node>
         <node concept="3clFbS" id="HgIalQMCim" role="3clFbx">
           <node concept="2MkqsV" id="HgIalQMCin" role="3cqZAp">
-            <node concept="3cpWs3" id="HgIalQMNwt" role="2MkJ7o">
-              <node concept="3cpWs3" id="HgIalQMOU4" role="3uHU7B">
-                <node concept="Xl_RD" id="HgIalQMOZQ" role="3uHU7B">
-                  <property role="Xl_RC" value="path macro " />
-                </node>
-                <node concept="2OqwBi" id="HgIalQMNMZ" role="3uHU7w">
-                  <node concept="1YBJjd" id="HgIalQMNA0" role="2Oq$k0">
-                    <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
-                  </node>
-                  <node concept="3TrcHB" id="HgIalQMOgt" role="2OqNvi">
-                    <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
-                  </node>
-                </node>
+            <node concept="3cpWs3" id="4PawC2QkVXI" role="2MkJ7o">
+              <node concept="Xl_RD" id="4PawC2QkVqI" role="3uHU7B">
+                <property role="Xl_RC" value="path macro does not exist: " />
               </node>
-              <node concept="Xl_RD" id="HgIalQMCio" role="3uHU7w">
-                <property role="Xl_RC" value=" does not exist" />
+              <node concept="2OqwBi" id="HgIalQMNMZ" role="3uHU7w">
+                <node concept="1YBJjd" id="HgIalQMNA0" role="2Oq$k0">
+                  <ref role="1YBMHb" node="HgIalQMCih" resolve="macroFilePicker" />
+                </node>
+                <node concept="3TrcHB" id="HgIalQMOgt" role="2OqNvi">
+                  <ref role="3TsBF5" to="68mc:7c_RIoB8OqH" resolve="macro" />
+                </node>
               </node>
             </node>
             <node concept="1YBJjd" id="HgIalQMCwf" role="1urrMF">
