@@ -12395,11 +12395,11 @@
                               <node concept="3cpWs3" id="17348R1rCHy" role="3uHU7B">
                                 <node concept="3cpWs3" id="17348R1rCHz" role="3uHU7B">
                                   <node concept="Xl_RD" id="17348R1rCH$" role="3uHU7w">
-                                    <property role="Xl_RC" value=" containing node with NodeID: " />
+                                    <property role="Xl_RC" value=" containing node with node ID:" />
                                   </node>
                                   <node concept="3cpWs3" id="17348R1rCH_" role="3uHU7B">
                                     <node concept="Xl_RD" id="17348R1rCHA" role="3uHU7B">
-                                      <property role="Xl_RC" value="Trace with hash: " />
+                                      <property role="Xl_RC" value="trace with hash: " />
                                     </node>
                                     <node concept="2OqwBi" id="17348R1rCHB" role="3uHU7w">
                                       <node concept="37vLTw" id="17348R1rCHC" role="2Oq$k0">

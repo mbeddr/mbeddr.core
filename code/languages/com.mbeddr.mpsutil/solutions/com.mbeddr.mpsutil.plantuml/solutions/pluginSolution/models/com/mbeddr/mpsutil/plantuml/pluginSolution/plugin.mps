@@ -1766,7 +1766,7 @@
               <node concept="RRSsy" id="42VTAcDfnRi" role="3cqZAp">
                 <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="2aP19v2YufU" role="RRSoy">
-                  <property role="Xl_RC" value="Failed to save SVG document!" />
+                  <property role="Xl_RC" value="failed to save SVG document" />
                 </node>
                 <node concept="37vLTw" id="5HxjapwgGYc" role="RRSow">
                   <ref role="3cqZAo" node="2aP19v2Yuf2" resolve="e" />
@@ -1833,7 +1833,7 @@
                     <node concept="RRSsy" id="42VTAcDfnRq" role="3cqZAp">
                       <property role="RRSoG" value="gZ5fh_4/error" />
                       <node concept="Xl_RD" id="4NnN$WSohKO" role="RRSoy">
-                        <property role="Xl_RC" value="Failed to close stream!" />
+                        <property role="Xl_RC" value="failed to close stream" />
                       </node>
                       <node concept="37vLTw" id="4NnN$WSohKQ" role="RRSow">
                         <ref role="3cqZAo" node="4NnN$WSogUE" resolve="e" />
