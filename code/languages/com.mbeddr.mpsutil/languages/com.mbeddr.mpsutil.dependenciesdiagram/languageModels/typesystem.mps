@@ -182,7 +182,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="6GbYcWowASs" role="3uHU7B">
-                      <property role="Xl_RC" value="Duplicated Module Reference " />
+                      <property role="Xl_RC" value="duplicated module reference: " />
                     </node>
                   </node>
                   <node concept="37vLTw" id="6GbYcWowASt" role="1urrMF">
@@ -287,7 +287,7 @@
                       </node>
                     </node>
                     <node concept="Xl_RD" id="6GbYcWowBfa" role="3uHU7B">
-                      <property role="Xl_RC" value="Duplicated Model Reference " />
+                      <property role="Xl_RC" value="duplicated model reference: " />
                     </node>
                   </node>
                   <node concept="37vLTw" id="6GbYcWowBfb" role="1urrMF">

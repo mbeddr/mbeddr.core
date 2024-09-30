@@ -9,6 +9,7 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" implicit="true" />
     <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)" implicit="true" />
   </imports>
@@ -27,6 +28,20 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -34,8 +49,14 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -291,19 +312,11 @@
   <node concept="18kY7G" id="70BL6LoWg7s">
     <property role="TrG5h" value="check_RunWizardExpression" />
     <node concept="3clFbS" id="70BL6LoWg7t" role="18ibNy">
-      <node concept="3clFbJ" id="70BL6LoWg7D" role="3cqZAp">
-        <node concept="3clFbS" id="70BL6LoWg7E" role="3clFbx">
-          <node concept="2MkqsV" id="70BL6LoWthO" role="3cqZAp">
-            <node concept="Xl_RD" id="70BL6LoWti3" role="2MkJ7o">
-              <property role="Xl_RC" value="Parameter count does not match" />
-            </node>
-            <node concept="1YBJjd" id="70BL6LoWtje" role="1urrMF">
-              <ref role="1YBMHb" node="70BL6LoWg7v" resolve="createWizardExpressionBase" />
-            </node>
-          </node>
-        </node>
-        <node concept="3y3z36" id="70BL6LoWkKE" role="3clFbw">
-          <node concept="2OqwBi" id="70BL6LoWnFZ" role="3uHU7w">
+      <node concept="3cpWs8" id="4PawC2Qlyg0" role="3cqZAp">
+        <node concept="3cpWsn" id="4PawC2Qlyg3" role="3cpWs9">
+          <property role="TrG5h" value="expectedSize" />
+          <node concept="10Oyi0" id="4PawC2QlyfY" role="1tU5fm" />
+          <node concept="2OqwBi" id="70BL6LoWnFZ" role="33vP2m">
             <node concept="2OqwBi" id="70BL6LoWltg" role="2Oq$k0">
               <node concept="2OqwBi" id="70BL6LoWkTg" role="2Oq$k0">
                 <node concept="1YBJjd" id="70BL6LoWkM7" role="2Oq$k0">
@@ -319,6 +332,67 @@
             </node>
             <node concept="34oBXx" id="70BL6LoWtfQ" role="2OqNvi" />
           </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="4PawC2Qlz0q" role="3cqZAp">
+        <node concept="3cpWsn" id="4PawC2Qlz0t" role="3cpWs9">
+          <property role="TrG5h" value="actualSize" />
+          <node concept="10Oyi0" id="4PawC2Qlz0o" role="1tU5fm" />
+          <node concept="2OqwBi" id="4PawC2Qlz0z" role="33vP2m">
+            <node concept="2OqwBi" id="4PawC2Qlz0$" role="2Oq$k0">
+              <node concept="1YBJjd" id="4PawC2Qlz0_" role="2Oq$k0">
+                <ref role="1YBMHb" node="70BL6LoWg7v" resolve="createWizardExpressionBase" />
+              </node>
+              <node concept="3Tsc0h" id="4PawC2Qlz0A" role="2OqNvi">
+                <ref role="3TtcxE" to="hbjw:6JByj2CgDYu" resolve="initVals" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="4PawC2Qlz0B" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="4PawC2Qlyf0" role="3cqZAp" />
+      <node concept="3clFbJ" id="70BL6LoWg7D" role="3cqZAp">
+        <node concept="3clFbS" id="70BL6LoWg7E" role="3clFbx">
+          <node concept="2MkqsV" id="70BL6LoWthO" role="3cqZAp">
+            <node concept="1YBJjd" id="70BL6LoWtje" role="1urrMF">
+              <ref role="1YBMHb" node="70BL6LoWg7v" resolve="createWizardExpressionBase" />
+            </node>
+            <node concept="3cpWs3" id="4PawC2Ql$08" role="2MkJ7o">
+              <node concept="3cpWs3" id="4PawC2QlzDs" role="3uHU7B">
+                <node concept="3cpWs3" id="4PawC2Qlxtz" role="3uHU7B">
+                  <node concept="Xl_RD" id="4PawC2Qlx2U" role="3uHU7B">
+                    <property role="Xl_RC" value="expected " />
+                  </node>
+                  <node concept="2YIFZM" id="4PawC2Qlz2g" role="3uHU7w">
+                    <ref role="37wK5l" to="18ew:~NameUtil.formatNumericalString(int,java.lang.String)" resolve="formatNumericalString" />
+                    <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                    <node concept="37vLTw" id="4PawC2Qlz68" role="37wK5m">
+                      <ref role="3cqZAo" node="4PawC2Qlyg3" resolve="expectedSize" />
+                    </node>
+                    <node concept="Xl_RD" id="4PawC2Qlza9" role="37wK5m">
+                      <property role="Xl_RC" value="parameter" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="4PawC2QlzDv" role="3uHU7w">
+                  <property role="Xl_RC" value=", got " />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="4PawC2Ql_6H" role="3uHU7w">
+                <ref role="37wK5l" to="18ew:~NameUtil.formatNumericalString(int,java.lang.String)" resolve="formatNumericalString" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="37vLTw" id="4PawC2Ql_ba" role="37wK5m">
+                  <ref role="3cqZAo" node="4PawC2Qlz0t" resolve="actualSize" />
+                </node>
+                <node concept="Xl_RD" id="4PawC2QlAfJ" role="37wK5m">
+                  <property role="Xl_RC" value="parameter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="70BL6LoWkKE" role="3clFbw">
           <node concept="2OqwBi" id="70BL6LoWh1k" role="3uHU7B">
             <node concept="2OqwBi" id="70BL6LoWga3" role="2Oq$k0">
               <node concept="1YBJjd" id="70BL6LoWg7S" role="2Oq$k0">
@@ -329,6 +403,9 @@
               </node>
             </node>
             <node concept="34oBXx" id="70BL6LoWjjJ" role="2OqNvi" />
+          </node>
+          <node concept="37vLTw" id="4PawC2QlyT3" role="3uHU7w">
+            <ref role="3cqZAo" node="4PawC2Qlyg3" resolve="expectedSize" />
           </node>
         </node>
       </node>

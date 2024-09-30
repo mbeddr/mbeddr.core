@@ -79,7 +79,7 @@
         <node concept="3clFbS" id="2bng37t2hF9" role="3clFbx">
           <node concept="a7r0C" id="2bng37t2hFa" role="3cqZAp">
             <node concept="Xl_RD" id="2bng37t2hFb" role="a7wSD">
-              <property role="Xl_RC" value="Should probably be replaced by MultilingualConstant" />
+              <property role="Xl_RC" value="could be replaced by multilingual constant" />
             </node>
             <node concept="1YBJjd" id="2bng37t2hFc" role="1urrMF">
               <ref role="1YBMHb" node="2bng37t2hFn" resolve="cellModel_Constant" />
