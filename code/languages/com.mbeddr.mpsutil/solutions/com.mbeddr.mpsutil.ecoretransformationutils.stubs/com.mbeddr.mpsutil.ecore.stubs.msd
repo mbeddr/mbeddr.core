@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.ecore.stubs" uuid="822a7acd-f487-45f5-bbb9-1ce595a1705f" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/com.google.guava-15.0.0.v201403281430.jar" />
+    <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/com.google.inject-3.0.0.v201605172100.jar" />
       <sourceRoot location="lib/com.ibm.icu-56.1.0.v201601250100.jar" />
       <sourceRoot location="lib/javax.inject-1.0.0.v20091030.jar" />
@@ -63,7 +62,6 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/com.google.guava-15.0.0.v201403281430.jar" />
     <stubModelEntry path="${module}/lib/com.google.inject-3.0.0.v201605172100.jar" />
     <stubModelEntry path="${module}/lib/com.ibm.icu-56.1.0.v201601250100.jar" />
     <stubModelEntry path="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
