@@ -32,10 +32,6 @@
       <sourceRoot location="lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
       <sourceRoot location="lib/org.eclipse.equinox.preferences-3.6.0.v20160120-1756.jar" />
       <sourceRoot location="lib/org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
-      <sourceRoot location="lib/org.eclipse.jdt.core-3.12.0.v20160516-2131.jar" />
-      <sourceRoot location="lib/org.eclipse.jdt.debug-3.10.0.v20160418-1524-jdi.jar.jar" />
-      <sourceRoot location="lib/org.eclipse.jdt.debug-3.10.0.v20160418-1524-jdimodel.jar.jar" />
-      <sourceRoot location="lib/org.eclipse.jdt.launching-3.8.100.v20160505-0636.jar" />
       <sourceRoot location="lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
       <sourceRoot location="lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
       <sourceRoot location="lib/org.eclipse.xtend-2.2.0.v201605260315.jar" />
@@ -83,10 +79,6 @@
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.preferences-3.6.0.v20160120-1756.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.jdt.core-3.12.0.v20160516-2131.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.jdt.debug-3.10.0.v20160418-1524-jdi.jar.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.jdt.debug-3.10.0.v20160418-1524-jdimodel.jar.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.jdt.launching-3.8.100.v20160505-0636.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtend-2.2.0.v201605260315.jar" />
