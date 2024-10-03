@@ -7,8 +7,6 @@
     <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/com.google.inject-3.0.0.v201605172100.jar" />
       <sourceRoot location="lib/javax.inject-1.0.0.v20091030.jar" />
-      <sourceRoot location="lib/org.eclipse.core.resources-3.11.0.v20160503-1608.jar" />
-      <sourceRoot location="lib/org.eclipse.core.runtime-3.12.0.v20160606-1342.jar" />
       <sourceRoot location="lib/org.eclipse.debug.core-3.10.100.v20160419-1720.jar" />
       <sourceRoot location="lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
       <sourceRoot location="lib/org.eclipse.emf.ecore.xcore-1.4.0.v20160526-0606.jar" />
@@ -34,8 +32,6 @@
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/com.google.inject-3.0.0.v201605172100.jar" />
     <stubModelEntry path="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.core.resources-3.11.0.v20160503-1608.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.core.runtime-3.12.0.v20160606-1342.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.debug.core-3.10.100.v20160419-1720.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore.xcore-1.4.0.v20160526-0606.jar" />
