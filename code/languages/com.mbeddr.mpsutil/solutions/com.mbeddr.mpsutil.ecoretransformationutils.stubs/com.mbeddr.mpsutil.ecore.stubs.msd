@@ -19,9 +19,6 @@
       <sourceRoot location="lib/org.eclipse.core.runtime-3.12.0.v20160606-1342.jar" />
       <sourceRoot location="lib/org.eclipse.core.variables-3.3.0.v20160419-1720.jar" />
       <sourceRoot location="lib/org.eclipse.debug.core-3.10.100.v20160419-1720.jar" />
-      <sourceRoot location="lib/org.eclipse.emf.codegen-2.11.0.v20160526-0356.jar" />
-      <sourceRoot location="lib/org.eclipse.emf.codegen.ecore-2.12.0.v20160526-0356.jar" />
-      <sourceRoot location="lib/org.eclipse.emf.codegen.ecore.xtext-1.2.0.v20160526-0606.jar" />
       <sourceRoot location="lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
       <sourceRoot location="lib/org.eclipse.emf.ecore.xcore-1.4.0.v20160526-0606.jar" />
       <sourceRoot location="lib/org.eclipse.emf.ecore.xcore.lib-1.1.100.v20160526-0606.jar" />
@@ -73,9 +70,6 @@
     <stubModelEntry path="${module}/lib/org.eclipse.core.runtime-3.12.0.v20160606-1342.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.variables-3.3.0.v20160419-1720.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.debug.core-3.10.100.v20160419-1720.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.emf.codegen-2.11.0.v20160526-0356.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.emf.codegen.ecore-2.12.0.v20160526-0356.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.emf.codegen.ecore.xtext-1.2.0.v20160526-0606.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore.xcore-1.4.0.v20160526-0606.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore.xcore.lib-1.1.100.v20160526-0606.jar" />
