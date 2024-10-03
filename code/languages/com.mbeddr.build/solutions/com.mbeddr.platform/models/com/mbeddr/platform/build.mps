@@ -1600,25 +1600,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVm5" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVm6" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVlS" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVlT" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVlU" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVlV" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVlW" role="2Ry0An">
-                      <property role="2Ry0Am" value="com.ibm.icu-56.1.0.v201601250100.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVmk" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVml" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVm7" role="1BurEY">

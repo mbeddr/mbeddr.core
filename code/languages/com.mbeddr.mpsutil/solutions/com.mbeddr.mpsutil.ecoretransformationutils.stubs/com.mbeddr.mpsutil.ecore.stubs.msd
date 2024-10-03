@@ -6,7 +6,6 @@
     </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/com.google.inject-3.0.0.v201605172100.jar" />
-      <sourceRoot location="lib/com.ibm.icu-56.1.0.v201601250100.jar" />
       <sourceRoot location="lib/javax.inject-1.0.0.v20091030.jar" />
       <sourceRoot location="lib/org.antlr.runtime-3.2.0.v201101311130.jar" />
       <sourceRoot location="lib/org.apache.commons.cli-1.2.0.v201404270220.jar" />
@@ -61,7 +60,6 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/com.google.inject-3.0.0.v201605172100.jar" />
-    <stubModelEntry path="${module}/lib/com.ibm.icu-56.1.0.v201601250100.jar" />
     <stubModelEntry path="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
     <stubModelEntry path="${module}/lib/org.antlr.runtime-3.2.0.v201101311130.jar" />
     <stubModelEntry path="${module}/lib/org.apache.commons.cli-1.2.0.v201404270220.jar" />
