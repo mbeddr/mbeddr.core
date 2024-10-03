@@ -1695,25 +1695,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVur" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVus" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVue" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVuf" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVug" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVuh" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVui" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVuE" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVuF" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVut" role="1BurEY">

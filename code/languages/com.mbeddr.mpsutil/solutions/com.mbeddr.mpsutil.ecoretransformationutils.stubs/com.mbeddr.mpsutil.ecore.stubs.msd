@@ -14,7 +14,6 @@
       <sourceRoot location="lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" />
       <sourceRoot location="lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" />
       <sourceRoot location="lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
-      <sourceRoot location="lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
       <sourceRoot location="lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
       <sourceRoot location="lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.common.types-2.11.0.v20170131-1210.jar" />
@@ -39,7 +38,6 @@
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.common.types-2.11.0.v20170131-1210.jar" />
