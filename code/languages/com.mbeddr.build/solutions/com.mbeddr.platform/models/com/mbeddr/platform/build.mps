@@ -1676,25 +1676,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVn1" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVn2" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVmO" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVmP" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVmQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVmR" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVmS" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.apache.commons.lang-2.6.0.v201404270220.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVng" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVnh" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVn3" role="1BurEY">

@@ -10,7 +10,6 @@
       <sourceRoot location="lib/javax.inject-1.0.0.v20091030.jar" />
       <sourceRoot location="lib/org.antlr.runtime-3.2.0.v201101311130.jar" />
       <sourceRoot location="lib/org.apache.commons.cli-1.2.0.v201404270220.jar" />
-      <sourceRoot location="lib/org.apache.commons.lang-2.6.0.v201404270220.jar" />
       <sourceRoot location="lib/org.apache.commons.logging-1.1.1.v201101211721.jar" />
       <sourceRoot location="lib/org.eclipse.core.commands-3.8.0.v20160316-1921.jar" />
       <sourceRoot location="lib/org.eclipse.core.contenttype-3.5.100.v20160418-1621.jar" />
@@ -67,7 +66,6 @@
     <stubModelEntry path="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
     <stubModelEntry path="${module}/lib/org.antlr.runtime-3.2.0.v201101311130.jar" />
     <stubModelEntry path="${module}/lib/org.apache.commons.cli-1.2.0.v201404270220.jar" />
-    <stubModelEntry path="${module}/lib/org.apache.commons.lang-2.6.0.v201404270220.jar" />
     <stubModelEntry path="${module}/lib/org.apache.commons.logging-1.1.1.v201101211721.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.commands-3.8.0.v20160316-1921.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.contenttype-3.5.100.v20160418-1621.jar" />
