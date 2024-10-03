@@ -34,7 +34,6 @@
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/com.google.inject-3.0.0.v201605172100.jar" />
     <stubModelEntry path="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
-    <stubModelEntry path="${module}/lib/org.antlr.runtime-3.2.0.v201101311130.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.resources-3.11.0.v20160503-1608.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.core.runtime-3.12.0.v20160606-1342.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.debug.core-3.10.100.v20160419-1720.jar" />

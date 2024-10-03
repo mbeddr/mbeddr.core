@@ -1619,25 +1619,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVmz" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVm$" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVmm" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVmn" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVmo" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVmp" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVmq" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.antlr.runtime-3.2.0.v201101311130.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVoT" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVoU" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVoG" role="1BurEY">
