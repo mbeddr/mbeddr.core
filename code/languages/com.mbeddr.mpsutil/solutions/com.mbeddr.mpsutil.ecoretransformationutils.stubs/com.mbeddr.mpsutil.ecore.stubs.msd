@@ -52,7 +52,6 @@
       <sourceRoot location="lib/org.eclipse.xtext.util-2.11.0.v20170130-0808.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase-2.11.0.v20170131-1210.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.xbase.lib-2.11.0.v20170124-1424.jar" />
-      <sourceRoot location="lib/org.objectweb.asm-5.0.1.v201404251740.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -108,7 +107,6 @@
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.util-2.11.0.v20170130-0808.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase-2.11.0.v20170131-1210.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.xbase.lib-2.11.0.v20170124-1424.jar" />
-    <stubModelEntry path="${module}/lib/org.objectweb.asm-5.0.1.v201404251740.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
