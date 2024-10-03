@@ -1733,25 +1733,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVsz" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVs$" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVsm" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVsn" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVso" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVsp" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVsq" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.app-1.3.400.v20150715-1528.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVsM" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVsN" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVs_" role="1BurEY">
@@ -1764,44 +1745,6 @@
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="76lGx$NdVsD" role="2Ry0An">
                       <property role="2Ry0Am" value="org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="76lGx$NdVt1" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVt2" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVsO" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVsP" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVsQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVsR" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVsS" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.preferences-3.6.0.v20160120-1756.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="76lGx$NdVtg" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVth" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVt3" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVt4" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVt5" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVt6" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVt7" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
                     </node>
                   </node>
                 </node>

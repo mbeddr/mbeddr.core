@@ -15,10 +15,7 @@
       <sourceRoot location="lib/org.eclipse.emf.ecore.xcore.lib-1.1.100.v20160526-0606.jar" />
       <sourceRoot location="lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" />
       <sourceRoot location="lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" />
-      <sourceRoot location="lib/org.eclipse.equinox.app-1.3.400.v20150715-1528.jar" />
       <sourceRoot location="lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
-      <sourceRoot location="lib/org.eclipse.equinox.preferences-3.6.0.v20160120-1756.jar" />
-      <sourceRoot location="lib/org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
       <sourceRoot location="lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
       <sourceRoot location="lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
       <sourceRoot location="lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
@@ -46,10 +43,7 @@
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore.xcore.lib-1.1.100.v20160526-0606.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.equinox.app-1.3.400.v20150715-1528.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.equinox.preferences-3.6.0.v20160120-1756.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
