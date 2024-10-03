@@ -30,10 +30,6 @@
       <sourceRoot location="lib/org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
       <sourceRoot location="lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
       <sourceRoot location="lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
-      <sourceRoot location="lib/org.eclipse.xtend-2.2.0.v201605260315.jar" />
-      <sourceRoot location="lib/org.eclipse.xtend.lib-2.11.0.v20170124-1424.jar" />
-      <sourceRoot location="lib/org.eclipse.xtend.lib.macro-2.11.0.v20170124-1424.jar" />
-      <sourceRoot location="lib/org.eclipse.xtend.typesystem.emf-2.2.0.v201605260315.jar" />
       <sourceRoot location="lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.common.types-2.11.0.v20170131-1210.jar" />
       <sourceRoot location="lib/org.eclipse.xtext.ecore-2.11.0.v20170131-1210.jar" />
@@ -73,10 +69,6 @@
     <stubModelEntry path="${module}/lib/org.eclipse.equinox.registry-3.6.100.v20160223-2218.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.osgi-3.11.0.v20160603-1336.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.text-3.6.0.v20160503-1849.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.xtend-2.2.0.v201605260315.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.xtend.lib-2.11.0.v20170124-1424.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.xtend.lib.macro-2.11.0.v20170124-1424.jar" />
-    <stubModelEntry path="${module}/lib/org.eclipse.xtend.typesystem.emf-2.2.0.v201605260315.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.common.types-2.11.0.v20170131-1210.jar" />
     <stubModelEntry path="${module}/lib/org.eclipse.xtext.ecore-2.11.0.v20170131-1210.jar" />
