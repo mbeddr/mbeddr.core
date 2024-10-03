@@ -1638,44 +1638,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVmM" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVmN" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVm_" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVmA" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVmB" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVmC" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVmD" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.apache.commons.cli-1.2.0.v201404270220.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="76lGx$NdVng" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVnh" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVn3" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVn4" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVn5" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVn6" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVn7" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.apache.commons.logging-1.1.1.v201101211721.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVnI" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVnJ" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVnx" role="1BurEY">
