@@ -13417,8 +13417,8 @@
     <property role="1EXbeo" value="false" />
     <property role="3GE5qa" value="common" />
     <node concept="3Tm1VV" id="1Ur9vEMLygD" role="1B3o_S" />
-    <node concept="3uibUv" id="1Ur9vEMLygE" role="1zkMxy">
-      <ref role="3uigEE" to="elak:~XcoreStandaloneSetup$XcoreStandaloneRuntimeModule$XcoreResourceSetInitializer" resolve="XcoreStandaloneSetup.XcoreStandaloneRuntimeModule.XcoreResourceSetInitializer" />
+    <node concept="3uibUv" id="6Yk8MIpf76j" role="1zkMxy">
+      <ref role="3uigEE" to="elak:~XcoreStandaloneSetup$XcoreStandaloneRuntimeModule$XcoreResourceSetInitializer" resolve="XcoreResourceSetInitializer" />
     </node>
     <node concept="312cEg" id="1Ur9vEMLygF" role="jymVt">
       <property role="34CwA1" value="false" />
