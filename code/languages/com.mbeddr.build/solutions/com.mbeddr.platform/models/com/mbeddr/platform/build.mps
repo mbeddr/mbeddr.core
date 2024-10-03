@@ -1619,25 +1619,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="76lGx$NdVpA" role="3bR37C">
-          <node concept="1BurEX" id="76lGx$NdVpB" role="1SiIV1">
-            <node concept="398BVA" id="76lGx$NdVpp" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="76lGx$NdVpq" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="76lGx$NdVpr" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="76lGx$NdVps" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="76lGx$NdVpt" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.eclipse.debug.core-3.10.100.v20160419-1720.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="76lGx$NdVqJ" role="3bR37C">
           <node concept="1BurEX" id="76lGx$NdVqK" role="1SiIV1">
             <node concept="398BVA" id="76lGx$NdVqy" role="1BurEY">
