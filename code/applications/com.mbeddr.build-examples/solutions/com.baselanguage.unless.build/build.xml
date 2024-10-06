@@ -30,6 +30,10 @@
   <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.distribution.com.mbeddr.platform.build}" />
   <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.distribution.com.mbeddr.platform.mbeddr.version}" />
   <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.distribution.de.itemis.mps.extensions.versionNumber}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.major.version" value="${import.com.mbeddr.platform.distribution.com.mbeddr.mpsutil.actionsfilter.major.version}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.minor.version" value="${import.com.mbeddr.platform.distribution.com.mbeddr.mpsutil.actionsfilter.minor.version}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.build" value="${import.com.mbeddr.platform.distribution.com.mbeddr.mpsutil.actionsfilter.build}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.mbeddr.version" value="${import.com.mbeddr.platform.distribution.com.mbeddr.mpsutil.actionsfilter.mbeddr.version}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -191,16 +195,13 @@
           <module ref="a6c9731c-e688-447f-8d50-3cf76b24e87d(com.baselanguage.unless)" kind="cl" />
         </dependencies>
         <uses>
-          <language id="l:a6c9731c-e688-447f-8d50-3cf76b24e87d:com.baselanguage.unless" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
           <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
           <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
-          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
           <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
-          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
@@ -242,7 +243,7 @@
     <zip destfile="${build.layout}/com.baselanguage.unless.zip">
       <fileset dir="${build.tmp}/default/com.baselanguage.unless.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}com.mbeddr.mpsutil.actionsfilter.major.version=${com.mbeddr.mpsutil.actionsfilter.major.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.minor.version=${com.mbeddr.mpsutil.actionsfilter.minor.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.build=${com.mbeddr.mpsutil.actionsfilter.build}${line.separator}com.mbeddr.mpsutil.actionsfilter.mbeddr.version=${com.mbeddr.mpsutil.actionsfilter.mbeddr.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -283,6 +284,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" />
+      <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/MPS.Kotlin" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/MPS.ThirdParty" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/com.mbeddr.mpsutil.common" />
       <plugin path="${build.tmp}/deps/com.mbeddr.platform.distribution/platform-distribution.zip/plugins/com.mbeddr.mpsutil.contextactions" />
@@ -438,7 +440,6 @@
       <chunk>
         <module file="${unless.home}/languages/com.baselanguage.unless/com.baselanguage.unless.mpl" />
       </chunk>
-      <chunk />
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx6096m" />

@@ -12,9 +12,9 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator namespace="demo.expr#4065005624680061148" uuid="b505bed8-d2af-4259-9f0d-c76aca8d5c96">
+    <generator alias="" namespace="demo.expr#4065005624680061148" uuid="b505bed8-d2af-4259-9f0d-c76aca8d5c96">
       <models>
-        <modelRoot contentPath="${module}" type="default">
+        <modelRoot type="default" contentPath="${module}">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>

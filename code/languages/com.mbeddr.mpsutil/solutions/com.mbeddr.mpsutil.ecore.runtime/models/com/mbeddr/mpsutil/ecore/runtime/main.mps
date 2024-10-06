@@ -8640,7 +8640,7 @@
                     <ref role="3cqZAo" node="4XUUgAlkxU9" resolve="classEmF" />
                   </node>
                   <node concept="37vLTw" id="RLDPQUSsGM" role="37wK5m">
-                    <ref role="3cqZAo" node="RLDPQUSsGI" resolve="name" />
+                    <ref role="3cqZAo" node="RLDPQUSsGI" resolve="propName" />
                   </node>
                 </node>
               </node>
@@ -8826,11 +8826,11 @@
                   <node concept="3cpWsn" id="RLDPQUWMEc" role="3cpWs9">
                     <property role="TrG5h" value="litAdapter" />
                     <node concept="3uibUv" id="RLDPQUWMEd" role="1tU5fm">
-                      <ref role="3uigEE" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter" resolve="SEnumLiteralAdapter" />
+                      <ref role="3uigEE" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter" resolve="SEnumerationAdapter.SEnumLiteralAdapter" />
                     </node>
                     <node concept="0kSF2" id="RLDPQUWMEe" role="33vP2m">
                       <node concept="3uibUv" id="RLDPQUWMEf" role="0kSFW">
-                        <ref role="3uigEE" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter" resolve="SEnumLiteralAdapter" />
+                        <ref role="3uigEE" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter" resolve="SEnumerationAdapter.SEnumLiteralAdapter" />
                       </node>
                       <node concept="37vLTw" id="RLDPQUWMEg" role="0kSFX">
                         <ref role="3cqZAo" node="RLDPQUBNRI" resolve="propertyVal" />
@@ -8852,7 +8852,7 @@
                         <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                         <node concept="2OqwBi" id="RLDPQVaog_" role="37wK5m">
                           <node concept="37vLTw" id="RLDPQVajYc" role="2Oq$k0">
-                            <ref role="3cqZAo" node="RLDPQUWMEc" resolve="adap" />
+                            <ref role="3cqZAo" node="RLDPQUWMEc" resolve="litAdapter" />
                           </node>
                           <node concept="liA8E" id="RLDPQVawqg" role="2OqNvi">
                             <ref role="37wK5l" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter.getOrdinal()" resolve="getOrdinal" />
@@ -9008,7 +9008,7 @@
               </node>
               <node concept="2ZW3vV" id="RLDPQUWME$" role="3clFbw">
                 <node concept="3uibUv" id="RLDPQUWME_" role="2ZW6by">
-                  <ref role="3uigEE" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter" resolve="SEnumLiteralAdapter" />
+                  <ref role="3uigEE" to="xx25:~SEnumerationAdapter$SEnumLiteralAdapter" resolve="SEnumerationAdapter.SEnumLiteralAdapter" />
                 </node>
                 <node concept="37vLTw" id="RLDPQUWMEA" role="2ZW6bz">
                   <ref role="3cqZAo" node="RLDPQUBNRI" resolve="propertyVal" />
@@ -9063,10 +9063,10 @@
                       <node concept="1rXfSq" id="4XUUgAloX$I" role="33vP2m">
                         <ref role="37wK5l" node="4XUUgAlmIvh" resolve="getValueAsObject" />
                         <node concept="37vLTw" id="RLDPQV3BHI" role="37wK5m">
-                          <ref role="3cqZAo" node="RLDPQV3BHE" resolve="eAttributeType" />
+                          <ref role="3cqZAo" node="RLDPQV3BHE" resolve="attrType" />
                         </node>
                         <node concept="37vLTw" id="4XUUgAloYsj" role="37wK5m">
-                          <ref role="3cqZAo" node="4XUUgAlk$G2" resolve="propertyValOld" />
+                          <ref role="3cqZAo" node="4XUUgAlk$G2" resolve="propValue" />
                         </node>
                       </node>
                     </node>
@@ -9093,7 +9093,7 @@
                     <node concept="3y3z36" id="4XUUgAloZqN" role="3clFbw">
                       <node concept="10Nm6u" id="4XUUgAloZxI" role="3uHU7w" />
                       <node concept="37vLTw" id="4XUUgAloZ3f" role="3uHU7B">
-                        <ref role="3cqZAo" node="4XUUgAlk$G2" resolve="propertyValOld" />
+                        <ref role="3cqZAo" node="4XUUgAlk$G2" resolve="propValue" />
                       </node>
                     </node>
                   </node>
@@ -9122,7 +9122,7 @@
                         </node>
                         <node concept="3JPx81" id="4JHJliLKErP" role="2OqNvi">
                           <node concept="37vLTw" id="4JHJliLKL6f" role="25WWJ7">
-                            <ref role="3cqZAo" node="4JHJliLK$fU" resolve="it" />
+                            <ref role="3cqZAo" node="4JHJliLK$fU" resolve="p" />
                           </node>
                         </node>
                       </node>
@@ -9132,7 +9132,7 @@
                         </node>
                         <node concept="2OqwBi" id="4JHJliLKErT" role="2ZW6bz">
                           <node concept="37vLTw" id="4JHJliLKSxQ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4JHJliLK$fU" resolve="it" />
+                            <ref role="3cqZAo" node="4JHJliLK$fU" resolve="p" />
                           </node>
                           <node concept="liA8E" id="4JHJliLKErV" role="2OqNvi">
                             <ref role="37wK5l" to="c17a:~SProperty.getType()" resolve="getType" />
@@ -9301,7 +9301,7 @@
             <node concept="liA8E" id="4is5PX58caZ" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="4is5PX58cuq" role="37wK5m">
-                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
+                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="typeName" />
               </node>
             </node>
           </node>
@@ -9332,7 +9332,7 @@
             <node concept="liA8E" id="4is5PX58dRP" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="4is5PX58dRQ" role="37wK5m">
-                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
+                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="typeName" />
               </node>
             </node>
           </node>
@@ -9367,7 +9367,7 @@
             <node concept="liA8E" id="6TRxMBi$JvR" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="6TRxMBi$JvS" role="37wK5m">
-                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
+                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="typeName" />
               </node>
             </node>
           </node>
@@ -9402,7 +9402,7 @@
             <node concept="liA8E" id="6TRxMBi$L1e" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="6TRxMBi$L1f" role="37wK5m">
-                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
+                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="typeName" />
               </node>
             </node>
           </node>
@@ -9441,7 +9441,7 @@
             <node concept="liA8E" id="5IB1dTJjvbU" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="37vLTw" id="5IB1dTJjvbV" role="37wK5m">
-                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="attrType" />
+                <ref role="3cqZAo" node="4is5PX57Wp$" resolve="typeName" />
               </node>
             </node>
           </node>
@@ -13418,7 +13418,7 @@
     <property role="3GE5qa" value="common" />
     <node concept="3Tm1VV" id="1Ur9vEMLygD" role="1B3o_S" />
     <node concept="3uibUv" id="6Yk8MIpf76j" role="1zkMxy">
-      <ref role="3uigEE" to="elak:~XcoreStandaloneSetup$XcoreStandaloneRuntimeModule$XcoreResourceSetInitializer" resolve="XcoreResourceSetInitializer" />
+      <ref role="3uigEE" to="elak:~XcoreStandaloneSetup$XcoreStandaloneRuntimeModule$XcoreResourceSetInitializer" resolve="XcoreStandaloneSetup.XcoreStandaloneRuntimeModule.XcoreResourceSetInitializer" />
     </node>
     <node concept="312cEg" id="1Ur9vEMLygF" role="jymVt">
       <property role="34CwA1" value="false" />

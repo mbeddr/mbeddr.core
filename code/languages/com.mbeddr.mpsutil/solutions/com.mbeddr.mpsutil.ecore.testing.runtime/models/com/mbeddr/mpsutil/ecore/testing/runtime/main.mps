@@ -352,7 +352,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="7ESlTHs1S2l" role="37vLTJ">
-              <ref role="3cqZAo" node="7ESlTHs1QyV" resolve="undiscoveredClasses" />
+              <ref role="3cqZAo" node="7ESlTHs1QyV" resolve="undiscoveredRoots" />
             </node>
           </node>
         </node>
@@ -508,7 +508,7 @@
                 <node concept="3clFbF" id="5Ap$XSqZHI$" role="3cqZAp">
                   <node concept="2OqwBi" id="5Ap$XSqZHI_" role="3clFbG">
                     <node concept="37vLTw" id="5Ap$XSqZHIA" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ESlTHs1QyV" resolve="undiscoveredClasses" />
+                      <ref role="3cqZAo" node="7ESlTHs1QyV" resolve="undiscoveredRoots" />
                     </node>
                     <node concept="TSZUe" id="5Ap$XSr8JRo" role="2OqNvi">
                       <node concept="2OqwBi" id="5Ap$XSr8NBK" role="25WWJ7">
@@ -525,7 +525,7 @@
               </node>
               <node concept="2OqwBi" id="5Ap$XSqZHIF" role="3clFbw">
                 <node concept="37vLTw" id="5Ap$XSqZHIG" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5Ap$XSqZHIe" resolve="nameMatch" />
+                  <ref role="3cqZAo" node="5Ap$XSqZHIe" resolve="matched" />
                 </node>
                 <node concept="3w_OXm" id="5Ap$XSqZHIH" role="2OqNvi" />
               </node>
@@ -545,7 +545,7 @@
                               <ref role="2Gs0qQ" node="5Ap$XSqZHIb" resolve="expected" />
                             </node>
                             <node concept="37vLTw" id="5Ap$XSqZHIR" role="37wK5m">
-                              <ref role="3cqZAo" node="5Ap$XSqZHIe" resolve="nameMatch" />
+                              <ref role="3cqZAo" node="5Ap$XSqZHIe" resolve="matched" />
                             </node>
                             <node concept="1rXfSq" id="5Ap$XSqZHIS" role="37wK5m">
                               <ref role="37wK5l" node="7CVN7FEjpP4" resolve="propertiesToIgnore" />
@@ -769,7 +769,7 @@
             <node concept="17QB3L" id="7ESlTHs1V_w" role="1tU5fm" />
           </node>
           <node concept="37vLTw" id="7ESlTHs1V_x" role="1DdaDG">
-            <ref role="3cqZAo" node="7ESlTHs1QyV" resolve="undiscoveredClasses" />
+            <ref role="3cqZAo" node="7ESlTHs1QyV" resolve="undiscoveredRoots" />
           </node>
         </node>
       </node>
@@ -1625,7 +1625,7 @@
         <node concept="3clFbF" id="1XBwKttg4W_" role="3cqZAp">
           <node concept="2OqwBi" id="1XBwKttg6vF" role="3clFbG">
             <node concept="37vLTw" id="4JHJliM48Yk" role="2Oq$k0">
-              <ref role="3cqZAo" node="4JHJliM48Yg" resolve="differences" />
+              <ref role="3cqZAo" node="4JHJliM48Yg" resolve="diffs" />
             </node>
             <node concept="2es0OD" id="1XBwKttg8vC" role="2OqNvi">
               <node concept="1bVj0M" id="1XBwKttg8vE" role="23t8la">
@@ -1930,8 +1930,8 @@
                 <node concept="3clFbF" id="RLDPQUlYHx" role="3cqZAp">
                   <node concept="2OqwBi" id="RLDPQUlYHu" role="3clFbG">
                     <node concept="10M0yZ" id="RLDPQUlYHv" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" />
-                      <ref role="3cqZAo" to="wyt6:~System.out" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="RLDPQUlYHw" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1982,8 +1982,8 @@
               <node concept="3clFbF" id="RLDPQUlTjw" role="3cqZAp">
                 <node concept="2OqwBi" id="RLDPQUlTjt" role="3clFbG">
                   <node concept="10M0yZ" id="RLDPQUlTju" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                   </node>
                   <node concept="liA8E" id="RLDPQUlTjv" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />

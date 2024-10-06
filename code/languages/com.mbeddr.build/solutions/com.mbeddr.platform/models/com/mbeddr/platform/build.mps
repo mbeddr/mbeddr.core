@@ -19151,7 +19151,7 @@
     <node concept="2sgV4H" id="1vIw1eCEpNB" role="1l3spa">
       <ref role="1l3spb" node="4SMNYR2Zjjf" resolve="com.mbeddr.mpsutil.actionsfilter" />
       <node concept="398BVA" id="1vIw1eCEpNC" role="2JcizS">
-        <ref role="398BVh" node="1vIw1eCEqqR" resolve="actionsfilter" />
+        <ref role="398BVh" node="1vIw1eCEqqR" resolve="artifacts.actionsfilter" />
       </node>
     </node>
     <node concept="1l3spV" id="3AVJcIMlF9x" role="1l3spN">
