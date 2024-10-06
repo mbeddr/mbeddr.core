@@ -362,7 +362,7 @@
             <node concept="RRSsy" id="42VTAcDfnS2" role="3cqZAp">
               <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="_jqqJb0$WK" role="RRSoy">
-                <property role="Xl_RC" value="unit test mode detected. looking for alternate port setting" />
+                <property role="Xl_RC" value="Unit test mode detected. Looking for alternate port setting" />
               </node>
             </node>
             <node concept="3cpWs8" id="_jqqJb0p$2" role="3cqZAp">
@@ -387,7 +387,7 @@
                       <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
                     </node>
                     <node concept="Xl_RD" id="_jqqJb0x3d" role="3uHU7B">
-                      <property role="Xl_RC" value="found http server port in env: " />
+                      <property role="Xl_RC" value="found HTTP server port in environment: " />
                     </node>
                   </node>
                 </node>
@@ -420,7 +420,7 @@
                         <property role="RRSoG" value="h1akgim/info" />
                         <node concept="3cpWs3" id="_jqqJb0xG5" role="RRSoy">
                           <node concept="Xl_RD" id="_jqqJb0xzp" role="3uHU7B">
-                            <property role="Xl_RC" value="found http server port in system property: " />
+                            <property role="Xl_RC" value="found HTTP server port in system property:" />
                           </node>
                           <node concept="37vLTw" id="7uvldrz6rjK" role="3uHU7w">
                             <ref role="3cqZAo" node="_jqqJb0p$3" resolve="portSetting" />
@@ -513,7 +513,7 @@
                         <property role="RRSoG" value="gZ5fksE/warn" />
                         <node concept="3cpWs3" id="_jqqJb0ske" role="RRSoy">
                           <node concept="Xl_RD" id="_jqqJb0sm7" role="3uHU7w">
-                            <property role="Xl_RC" value=" to integer" />
+                            <property role="Xl_RC" value=" as a number" />
                           </node>
                           <node concept="3cpWs3" id="_jqqJb0sd5" role="3uHU7B">
                             <node concept="Xl_RD" id="_jqqJb0s4v" role="3uHU7B">
@@ -594,7 +594,7 @@
             <node concept="RRSsy" id="7uvldrz66aJ" role="3cqZAp">
               <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="7uvldrz66aK" role="RRSoy">
-                <property role="Xl_RC" value="unit test mode detected. checking for alternate enabled setting" />
+                <property role="Xl_RC" value="Unit test mode detected. Checking for alternate enabled setting" />
               </node>
             </node>
             <node concept="3cpWs8" id="7uvldrz5WRC" role="3cqZAp">
@@ -619,7 +619,7 @@
                       <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
                     </node>
                     <node concept="Xl_RD" id="7uvldrz5A12" role="3uHU7B">
-                      <property role="Xl_RC" value="found http server enabled in env: " />
+                      <property role="Xl_RC" value="found HTTP server enabled in environment:" />
                     </node>
                   </node>
                 </node>
@@ -655,7 +655,7 @@
                             <ref role="3cqZAo" node="7uvldrz5WRF" resolve="enabledSetting" />
                           </node>
                           <node concept="Xl_RD" id="7uvldrz5A1P" role="3uHU7B">
-                            <property role="Xl_RC" value="found http server enabled in system property: " />
+                            <property role="Xl_RC" value="found HTTP server enabled in system property: " />
                           </node>
                         </node>
                       </node>
@@ -773,7 +773,7 @@
                                         <ref role="3cqZAo" node="3zAWwLKh7X_" resolve="port" />
                                       </node>
                                       <node concept="Xl_RD" id="39h1xietdMz" role="3uHU7B">
-                                        <property role="Xl_RC" value="Starting server on port " />
+                                        <property role="Xl_RC" value="starting server on port " />
                                       </node>
                                     </node>
                                   </node>
@@ -1029,7 +1029,7 @@
                 <node concept="RRSsy" id="42VTAcDfnTA" role="3cqZAp">
                   <property role="RRSoG" value="h1akgim/info" />
                   <node concept="Xl_RD" id="39h1xietqjv" role="RRSoy">
-                    <property role="Xl_RC" value="Server started successfully" />
+                    <property role="Xl_RC" value="server started successfully" />
                   </node>
                 </node>
               </node>
@@ -1226,7 +1226,7 @@
                                     <ref role="37wK5l" node="7GB4siXi_Lg" resolve="getPort" />
                                   </node>
                                   <node concept="Xl_RD" id="3vXSZsAOPux" role="3uHU7B">
-                                    <property role="Xl_RC" value="Starting server on port " />
+                                    <property role="Xl_RC" value="starting server on port " />
                                   </node>
                                 </node>
                               </node>
@@ -1392,7 +1392,7 @@
             <node concept="RRSsy" id="42VTAcDfnU8" role="3cqZAp">
               <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="3vXSZsAOPvr" role="RRSoy">
-                <property role="Xl_RC" value="Server started successfully" />
+                <property role="Xl_RC" value="server started successfully" />
               </node>
             </node>
           </node>
@@ -1410,7 +1410,7 @@
               <node concept="RRSsy" id="42VTAcDfnUe" role="3cqZAp">
                 <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="3vXSZsAOPvx" role="RRSoy">
-                  <property role="Xl_RC" value="Server could not be started" />
+                  <property role="Xl_RC" value="server could not be started" />
                 </node>
                 <node concept="37vLTw" id="3vXSZsAOPvy" role="RRSow">
                   <ref role="3cqZAo" node="3vXSZsAOPvt" resolve="e" />
@@ -1559,7 +1559,7 @@
             <node concept="RRSsy" id="42VTAcDfnUm" role="3cqZAp">
               <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="3vXSZsAOJU0" role="RRSoy">
-                <property role="Xl_RC" value="Stopping server" />
+                <property role="Xl_RC" value="stopping server" />
               </node>
             </node>
             <node concept="3clFbF" id="3vXSZsAOJU1" role="3cqZAp">
@@ -1591,7 +1591,7 @@
             <node concept="RRSsy" id="42VTAcDfnUs" role="3cqZAp">
               <property role="RRSoG" value="h1akgim/info" />
               <node concept="Xl_RD" id="3vXSZsAOJUd" role="RRSoy">
-                <property role="Xl_RC" value="Server stopped" />
+                <property role="Xl_RC" value="server stopped" />
               </node>
             </node>
           </node>

@@ -216,7 +216,7 @@
                           </node>
                         </node>
                         <node concept="Xl_RD" id="6QoXIYUbKho" role="3uHU7B">
-                          <property role="Xl_RC" value="Calculation cycle for \&quot;" />
+                          <property role="Xl_RC" value="calculation cycle for \&quot;" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="6QoXIYUbMNt" role="3uHU7w">

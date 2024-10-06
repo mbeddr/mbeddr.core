@@ -1767,7 +1767,7 @@
               <node concept="RRSsy" id="42VTAcDfnRi" role="3cqZAp">
                 <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="2aP19v2YufU" role="RRSoy">
-                  <property role="Xl_RC" value="Failed to save SVG document!" />
+                  <property role="Xl_RC" value="failed to save SVG document" />
                 </node>
                 <node concept="37vLTw" id="5HxjapwgGYc" role="RRSow">
                   <ref role="3cqZAo" node="2aP19v2Yuf2" resolve="e" />
@@ -1834,7 +1834,7 @@
                     <node concept="RRSsy" id="42VTAcDfnRq" role="3cqZAp">
                       <property role="RRSoG" value="gZ5fh_4/error" />
                       <node concept="Xl_RD" id="4NnN$WSohKO" role="RRSoy">
-                        <property role="Xl_RC" value="Failed to close stream!" />
+                        <property role="Xl_RC" value="failed to close stream" />
                       </node>
                       <node concept="37vLTw" id="4NnN$WSohKQ" role="RRSow">
                         <ref role="3cqZAo" node="4NnN$WSogUE" resolve="e" />
@@ -3147,10 +3147,6 @@
   </node>
   <node concept="312cEu" id="2sPLpCfQsmQ">
     <property role="TrG5h" value="PlantUMLSVGCanvas" />
-    <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
-    <node concept="3uibUv" id="2sPLpCfQ$Lm" role="1zkMxy">
-      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
-    </node>
     <node concept="2tJIrI" id="5gmO3pL7GYO" role="jymVt" />
     <node concept="312cEg" id="5gmO3pL7KrD" role="jymVt">
       <property role="TrG5h" value="svgScale" />
@@ -3178,6 +3174,10 @@
     </node>
     <node concept="2tJIrI" id="5gmO3pL7WRn" role="jymVt" />
     <node concept="2tJIrI" id="5gmO3pL7I9J" role="jymVt" />
+    <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
+    <node concept="3uibUv" id="2sPLpCfQ$Lm" role="1zkMxy">
+      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
+    </node>
     <node concept="3clFbW" id="2sPLpCfQsmS" role="jymVt">
       <node concept="3cqZAl" id="2sPLpCfQsmT" role="3clF45" />
       <node concept="3Tm1VV" id="2sPLpCfQsmU" role="1B3o_S" />

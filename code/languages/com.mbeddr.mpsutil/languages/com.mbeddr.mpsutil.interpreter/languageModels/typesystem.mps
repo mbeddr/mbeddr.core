@@ -1916,7 +1916,7 @@
                 <ref role="3cqZAo" node="44jZT9pwqev" resolve="interpreterSuffix" />
               </node>
               <node concept="Xl_RD" id="44jZT9pthPo" role="3uHU7B">
-                <property role="Xl_RC" value="duplicated type mapping" />
+                <property role="Xl_RC" value="duplicated type mapping:" />
               </node>
             </node>
             <node concept="1YBJjd" id="44jZT9ptiAj" role="1urrMF">
@@ -2047,7 +2047,7 @@
                 </node>
               </node>
               <node concept="Xl_RD" id="44jZT9ptq6y" role="3uHU7B">
-                <property role="Xl_RC" value="same fromType, different toType as " />
+                <property role="Xl_RC" value="same from type and different to type as " />
               </node>
             </node>
             <node concept="1YBJjd" id="44jZT9ptrtd" role="1urrMF">
@@ -2638,7 +2638,7 @@
         <node concept="3clFbS" id="5x677oPn81s" role="3clFbx">
           <node concept="2MkqsV" id="5x677oPnrC8" role="3cqZAp">
             <node concept="Xl_RD" id="5x677oPnrCt" role="2MkJ7o">
-              <property role="Xl_RC" value="Evaluator must return a value" />
+              <property role="Xl_RC" value="evaluator must return a value" />
             </node>
             <node concept="1YBJjd" id="5x677oPnrQq" role="1urrMF">
               <ref role="1YBMHb" node="5x677oPn6YT" resolve="conceptEvaluatorBody" />
@@ -2967,7 +2967,7 @@
         <node concept="3clFbS" id="7oujAIePaaB" role="3clFbx">
           <node concept="2MkqsV" id="7oujAIePaaC" role="3cqZAp">
             <node concept="Xl_RD" id="7oujAIePaaD" role="2MkJ7o">
-              <property role="Xl_RC" value="Condition must return a value" />
+              <property role="Xl_RC" value="condition must return a value" />
             </node>
             <node concept="1YBJjd" id="7oujAIePaEV" role="1urrMF">
               <ref role="1YBMHb" node="7oujAIePa2a" resolve="evaluatorConditionBody" />

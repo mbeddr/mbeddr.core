@@ -999,7 +999,7 @@
         <node concept="3clFbS" id="1KJPJGe2kBG" role="3clFbx">
           <node concept="2MkqsV" id="1KJPJGe2kO1" role="3cqZAp">
             <node concept="Xl_RD" id="1KJPJGe2kOg" role="2MkJ7o">
-              <property role="Xl_RC" value="Expression must be specified!" />
+              <property role="Xl_RC" value="expression must not be null" />
             </node>
             <node concept="1YBJjd" id="1KJPJGe2kOL" role="1urrMF">
               <ref role="1YBMHb" node="1KJPJGe2kB$" resolve="member" />
@@ -1477,7 +1477,7 @@
                 <node concept="3clFbS" id="5JUf$kCWKFM" role="2LFqv$">
                   <node concept="2MkqsV" id="5JUf$kCWKTJ" role="3cqZAp">
                     <node concept="Xl_RD" id="5JUf$kCWKU1" role="2MkJ7o">
-                      <property role="Xl_RC" value="Name clash with other annotation's name!" />
+                      <property role="Xl_RC" value="name clash with other annotation's name" />
                     </node>
                     <node concept="2GrUjf" id="5JUf$kCZR96" role="1urrMF">
                       <ref role="2Gs0qQ" node="5JUf$kCWKFK" resolve="annotation" />

@@ -48,7 +48,7 @@
     <node concept="3clFbS" id="7ADpZz9Aw0k" role="18ibNy">
       <node concept="a7r0C" id="7ADpZz9Aw0q" role="3cqZAp">
         <node concept="Xl_RD" id="7ADpZz9Aw0G" role="a7wSD">
-          <property role="Xl_RC" value="IconChar is deprecated, please run the re runable migrations from Migration -&gt; Migrations -&gt; Execute Re-Runnable Migrations" />
+          <property role="Xl_RC" value="IconChar is deprecated, please run the re-runnable migrations from Migration -&gt; Migrations -&gt; Execute Re-Runnable Migrations" />
         </node>
         <node concept="1YBJjd" id="7ADpZz9Aw8V" role="1urrMF">
           <ref role="1YBMHb" node="7ADpZz9Aw0m" resolve="iconChar" />

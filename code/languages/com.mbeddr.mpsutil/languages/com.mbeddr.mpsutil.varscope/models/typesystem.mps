@@ -285,7 +285,7 @@
                       <node concept="2MkqsV" id="1jrHnBBjrsW" role="3cqZAp">
                         <node concept="3cpWs3" id="1jrHnBBjsP1" role="2MkJ7o">
                           <node concept="Xl_RD" id="1jrHnBBjsP4" role="3uHU7w">
-                            <property role="Xl_RC" value=" is not a unique name!" />
+                            <property role="Xl_RC" value=" is not a unique name" />
                           </node>
                           <node concept="2OqwBi" id="1jrHnBBjrUo" role="3uHU7B">
                             <node concept="2GrUjf" id="1jrHnBBjrIF" role="2Oq$k0">

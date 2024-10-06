@@ -1194,22 +1194,12 @@
           <node concept="3clFbS" id="4QhMqW3m4sd" role="3clFbx">
             <node concept="RRSsy" id="42VTAcDfnEs" role="3cqZAp">
               <property role="RRSoG" value="gZ5fh_4/error" />
-              <node concept="3cpWs3" id="4QhMqW3o5QB" role="RRSoy">
-                <node concept="37vLTw" id="4QhMqW3o5X9" role="3uHU7w">
+              <node concept="3cpWs3" id="4QhMqW3o4BB" role="RRSoy">
+                <node concept="37vLTw" id="ZYPG76jrvA" role="3uHU7w">
                   <ref role="3cqZAo" node="4QhMqW3k5MM" resolve="containingBigCell" />
                 </node>
-                <node concept="3cpWs3" id="4QhMqW3o4J2" role="3uHU7B">
-                  <node concept="3cpWs3" id="4QhMqW3o4BB" role="3uHU7B">
-                    <node concept="Xl_RD" id="4QhMqW3o3F$" role="3uHU7B">
-                      <property role="Xl_RC" value="selectedCell: " />
-                    </node>
-                    <node concept="37vLTw" id="4QhMqW3o4Co" role="3uHU7w">
-                      <ref role="3cqZAo" node="4QhMqW2YsIu" resolve="selectedCell" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="4QhMqW3o4J9" role="3uHU7w">
-                    <property role="Xl_RC" value=" containingBigCell: " />
-                  </node>
+                <node concept="Xl_RD" id="4QhMqW3o3F$" role="3uHU7B">
+                  <property role="Xl_RC" value="The selected cell is null. Containing big cell:" />
                 </node>
               </node>
             </node>

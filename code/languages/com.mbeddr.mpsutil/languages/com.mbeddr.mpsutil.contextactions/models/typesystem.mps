@@ -738,7 +738,7 @@
         <node concept="3clFbS" id="23_jb1v5_o" role="3clFbx">
           <node concept="2MkqsV" id="23_jb1v67v" role="3cqZAp">
             <node concept="Xl_RD" id="23_jb1v68c" role="2MkJ7o">
-              <property role="Xl_RC" value="Please specify an extended folder" />
+              <property role="Xl_RC" value="please specify an extended folder" />
             </node>
             <node concept="1YBJjd" id="23_jb1v67F" role="1urrMF">
               <ref role="1YBMHb" node="23_jb1v5_j" resolve="actionSourceWithExtendingFolder" />
@@ -770,7 +770,7 @@
         <node concept="3clFbS" id="29tOPhTpbmC" role="3clFbx">
           <node concept="2MkqsV" id="29tOPhTpbw0" role="3cqZAp">
             <node concept="Xl_RD" id="29tOPhTpbwf" role="2MkJ7o">
-              <property role="Xl_RC" value="Only one ContextActions root is allowed" />
+              <property role="Xl_RC" value="only one context actions root is allowed" />
             </node>
             <node concept="1YBJjd" id="29tOPhTpbwR" role="1urrMF">
               <ref role="1YBMHb" node="29tOPhToZLw" resolve="n" />
