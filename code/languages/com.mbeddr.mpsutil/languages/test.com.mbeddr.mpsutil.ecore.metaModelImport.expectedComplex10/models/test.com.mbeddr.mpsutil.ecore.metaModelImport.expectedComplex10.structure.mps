@@ -100,7 +100,7 @@
     <node concept="1TJgyj" id="7CVN7FEkFWy" role="1TKVEi">
       <property role="IQ2ns" value="8807858324542504738" />
       <property role="20kJfa" value="sp2ref2" />
-      <ref role="20lvS9" node="7CVN7FEkFW9" />
+      <ref role="20lvS9" node="7CVN7FEkFW9" resolve="testClass1" />
     </node>
   </node>
   <node concept="PlHQZ" id="7CVN7FEkFWB">
@@ -195,7 +195,7 @@
     <node concept="1TJgyi" id="17qUVvSZm9K" role="1TKVEl">
       <property role="TrG5h" value="prop1" />
       <property role="IQ2nx" value="1286599818956595824" />
-      <ref role="AX2Wp" node="apJ4OR7VSO" resolve="enumTest1" />
+      <ref role="AX2Wp" node="apJ4OR7VSO" resolve="enumTest" />
     </node>
     <node concept="1TJgyi" id="17qUVvSZm9M" role="1TKVEl">
       <property role="TrG5h" value="prop2" />

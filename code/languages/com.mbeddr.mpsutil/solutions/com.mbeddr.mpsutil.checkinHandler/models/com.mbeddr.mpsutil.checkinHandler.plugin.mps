@@ -630,6 +630,18 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5N5qOp2n5OI" role="3cqZAp">
+          <node concept="2YIFZM" id="5N5qOp2n63J" role="3clFbG">
+            <ref role="37wK5l" to="zn9m:~Disposer.dispose(com.intellij.openapi.Disposable)" resolve="dispose" />
+            <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+            <node concept="2OqwBi" id="5N5qOp2n6dS" role="37wK5m">
+              <node concept="2WthIp" id="5N5qOp2n6dV" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="5N5qOp2n6dX" role="2OqNvi">
+                <ref role="2WH_rO" node="2hNr1jFo5wy" resolve="disposable" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Nko9yAVr2D" role="3cqZAp" />
         <node concept="2Gpval" id="2Nko9yAVrFI" role="3cqZAp">
           <node concept="2GrKxI" id="2Nko9yAVrFK" role="2Gsz3X">
