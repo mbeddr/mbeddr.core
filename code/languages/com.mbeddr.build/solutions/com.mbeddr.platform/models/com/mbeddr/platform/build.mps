@@ -6797,6 +6797,11 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
             </node>
           </node>
+          <node concept="1SiIV0" id="71rPdZkBL2f" role="3bR37C">
+            <node concept="3bR9La" id="71rPdZkBL2g" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+            </node>
+          </node>
         </node>
         <node concept="1BupzO" id="4PRpvcZJNpF" role="3bR31x">
           <property role="3ZfqAx" value="languageModels" />
