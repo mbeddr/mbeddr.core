@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:d08b2078-ada5-40fa-a3c5-d721088dc626:com.mbeddr.mpsutil.ecore.testing" version="0" />
     <language slang="l:ad8b5993-1cc2-49c0-b7a0-0283da231703:com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel" version="0" />

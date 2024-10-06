@@ -10,7 +10,7 @@
       <concept id="3289023490928248245" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5.structure.testClass1" flags="ng" index="1f5n35">
         <property id="3289023490928248246" name="attr1" index="1f5n36" />
       </concept>
-      <concept id="3289023490928248247" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5.structure.testInterface1" flags="ng" index="1f5n37">
+      <concept id="3289023490928248247" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5.structure.testInterface1" flags="ngI" index="1f5n37">
         <property id="3289023490928248248" name="testInterfaceattr1" index="1f5n38" />
       </concept>
     </language>

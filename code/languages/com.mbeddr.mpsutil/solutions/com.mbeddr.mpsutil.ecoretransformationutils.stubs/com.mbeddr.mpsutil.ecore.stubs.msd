@@ -66,6 +66,34 @@
       <library location="${module}/lib/org.eclipse.xtext.util-2.11.0.v20170130-0808.jar" />
       <library location="${module}/lib/org.eclipse.xtext.xbase-2.11.0.v20170131-1210.jar" />
       <library location="${module}/lib/org.eclipse.xtext.xbase.lib-2.11.0.v20170124-1424.jar" />
+      <library location="${module}/lib/com.google.inject-3.0.0.v201605172100.jar" />
+      <library location="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
+      <library location="${module}/lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore.xcore-1.4.0.v20160526-0606.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore.xcore.lib-1.1.100.v20160526-0606.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" />
+      <library location="${module}/lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
+      <library location="${module}/lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.common.types-2.11.0.v20170131-1210.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.ecore-2.11.0.v20170131-1210.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.util-2.11.0.v20170130-0808.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.xbase-2.11.0.v20170131-1210.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.xbase.lib-2.11.0.v20170124-1424.jar" />
+      <library location="${module}/lib/com.google.inject-3.0.0.v201605172100.jar" />
+      <library location="${module}/lib/javax.inject-1.0.0.v20091030.jar" />
+      <library location="${module}/lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore.xcore-1.4.0.v20160526-0606.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore.xcore.lib-1.1.100.v20160526-0606.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar" />
+      <library location="${module}/lib/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar" />
+      <library location="${module}/lib/org.eclipse.equinox.common-3.8.0.v20160509-1230.jar" />
+      <library location="${module}/lib/org.eclipse.xtext-2.11.0.v20170130-0808.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.common.types-2.11.0.v20170131-1210.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.ecore-2.11.0.v20170131-1210.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.util-2.11.0.v20170130-0808.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.xbase-2.11.0.v20170131-1210.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.xbase.lib-2.11.0.v20170124-1424.jar" />
     </facet>
   </facets>
   <stubModelEntries>
