@@ -4,7 +4,6 @@
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-    <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
   </languages>
   <imports />
   <registry>
@@ -81,36 +80,6 @@
         <child id="1452920870317474611" name="sizeExpr" index="1YbSNA" />
       </concept>
     </language>
-    <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
-      <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
-        <property id="4053481679317021372" name="check_nan" index="1nvAUw" />
-        <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
-        <property id="4053481679317021369" name="check_array_bounds" index="1nvAU_" />
-        <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
-        <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
-        <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
-      </concept>
-    </language>
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="8985851583396455245" name="com.mbeddr.analyses.cbmc.structure.NondetVarAssignment" flags="ng" index="2c3wGE">
-        <property id="2613206384568936346" name="constraintsEnabled" index="2xg5V6" />
-        <child id="8985851583396455257" name="varRef" index="2c3wGY" />
-      </concept>
-      <concept id="8985851583396455243" name="com.mbeddr.analyses.cbmc.structure.HarnessModule" flags="ng" index="2c3wGG" />
-      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
-        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
-        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
-        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
-        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
-        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
-        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
-        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
-      </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
-      <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
-      </concept>
-    </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
         <child id="4459718605982051999" name="strategy" index="2Q9FjI" />
@@ -178,12 +147,6 @@
       </concept>
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
-      </concept>
-    </language>
-    <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
-      <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
-        <child id="6472990431939692464" name="analyses" index="3V$2$K" />
-        <child id="559958203687603517" name="imports" index="3W6d8T" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -397,19 +360,6 @@
             <node concept="19SGf9" id="1W6K2BBAtTc" role="OjmMu">
               <node concept="19SUe$" id="1W6K2BBAtTd" role="19SJt6">
                 <property role="19SUeA" value="Note, that the payload length is 1, here it can be described by any number" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2c3wGG" id="1W6K2BBDSHl" role="3XIRFZ">
-          <node concept="2c3wGE" id="1W6K2BBDXKI" role="3XIRFZ">
-            <property role="2xg5V6" value="false" />
-            <node concept="2qmXGp" id="1W6K2BBDYhV" role="2c3wGY">
-              <node concept="1E4Tgc" id="1W6K2BBDYAT" role="1ESnxz">
-                <ref role="1E4Tge" node="4yOgC5DNkzS" resolve="payload_length" />
-              </node>
-              <node concept="3ZVu4v" id="1W6K2BBDYhS" role="1_9fRO">
-                <ref role="3ZVs_2" node="1W6K2BBAm0B" resolve="m" />
               </node>
             </node>
           </node>
@@ -1364,63 +1314,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="3uEX16" id="2N9rEs47IR">
-    <property role="2l50Ka" value="none" />
-    <property role="2l50Km" value="none" />
-    <property role="2lUGeZ" value="true" />
-    <property role="2lUHrg" value="25" />
-    <property role="2lUGe1" value="true" />
-    <property role="2lUGbD" value="none" />
-    <property role="TrG5h" value="Analyses" />
-    <node concept="1nvAUE" id="2N9rEs47IS" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <ref role="3V$Cn$" node="1W6K2BB_NAm" resolve="verification" />
-    </node>
-    <node concept="1nvAUE" id="2N9rEs47IT" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <ref role="3V$Cn$" node="1nKwQCIU2W7" resolve="verificationFixed" />
-    </node>
-    <node concept="1nvAUE" id="2N9rEs47IU" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <ref role="3V$Cn$" node="21ftQP2zJmX" resolve="testRobustness" />
-    </node>
-    <node concept="3GEVxB" id="2N9rEs47J4" role="3W6d8T">
-      <ref role="3GEb4d" node="4yOgC5DNb4L" resolve="HeartBleed" />
     </node>
   </node>
 </model>
