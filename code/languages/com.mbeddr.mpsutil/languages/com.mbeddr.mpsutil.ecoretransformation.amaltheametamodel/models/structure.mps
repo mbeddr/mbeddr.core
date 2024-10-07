@@ -91,7 +91,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -8804,86 +8804,37 @@
     <property role="TrG5h" value="BusType" />
     <property role="3F6X1D" value="20746029588650769" />
     <ref role="1H5jkz" node="17qUVvSZm58" resolve="_undefined_" />
-    <node concept="2JgGob" id="17qUVvSZm57" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="19H6tG8pGh" role="3lCyv">
-        <property role="TrG5h" value="BusType" />
-        <property role="3F6X1D" value="20746029588650769" />
-        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-        <node concept="M4N5e" id="19H6tG8pG9" role="M5hS2">
-          <property role="1uS6qv" value="0" />
-          <property role="1uS6qo" value="_undefined_" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGa" role="M5hS2">
-          <property role="1uS6qv" value="1" />
-          <property role="1uS6qo" value="CAN" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGb" role="M5hS2">
-          <property role="1uS6qv" value="2" />
-          <property role="1uS6qo" value="TTCAN" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGc" role="M5hS2">
-          <property role="1uS6qv" value="3" />
-          <property role="1uS6qo" value="LIN" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGd" role="M5hS2">
-          <property role="1uS6qv" value="4" />
-          <property role="1uS6qo" value="FLEXRAY" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGe" role="M5hS2">
-          <property role="1uS6qv" value="5" />
-          <property role="1uS6qo" value="ETHERNET" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGf" role="M5hS2">
-          <property role="1uS6qv" value="6" />
-          <property role="1uS6qo" value="SPI" />
-        </node>
-        <node concept="M4N5e" id="19H6tG8pGg" role="M5hS2">
-          <property role="1uS6qv" value="7" />
-          <property role="1uS6qo" value="NA" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="17qUVvSZm58" role="25R1y">
       <property role="TrG5h" value="_undefined_" />
       <property role="3tVfz5" value="20746029588650761" />
-      <ref role="2wpffI" node="19H6tG8pG9" />
     </node>
     <node concept="25R33" id="17qUVvSZm59" role="25R1y">
       <property role="TrG5h" value="CAN" />
       <property role="3tVfz5" value="20746029588650762" />
-      <ref role="2wpffI" node="19H6tG8pGa" />
     </node>
     <node concept="25R33" id="17qUVvSZm5a" role="25R1y">
       <property role="TrG5h" value="TTCAN" />
       <property role="3tVfz5" value="20746029588650763" />
-      <ref role="2wpffI" node="19H6tG8pGb" />
     </node>
     <node concept="25R33" id="17qUVvSZm5b" role="25R1y">
       <property role="TrG5h" value="LIN" />
       <property role="3tVfz5" value="20746029588650764" />
-      <ref role="2wpffI" node="19H6tG8pGc" />
     </node>
     <node concept="25R33" id="17qUVvSZm5c" role="25R1y">
       <property role="TrG5h" value="FLEXRAY" />
       <property role="3tVfz5" value="20746029588650765" />
-      <ref role="2wpffI" node="19H6tG8pGd" />
     </node>
     <node concept="25R33" id="17qUVvSZm5d" role="25R1y">
       <property role="TrG5h" value="ETHERNET" />
       <property role="3tVfz5" value="20746029588650766" />
-      <ref role="2wpffI" node="19H6tG8pGe" />
     </node>
     <node concept="25R33" id="17qUVvSZm5e" role="25R1y">
       <property role="TrG5h" value="SPI" />
       <property role="3tVfz5" value="20746029588650767" />
-      <ref role="2wpffI" node="19H6tG8pGf" />
     </node>
     <node concept="25R33" id="17qUVvSZm5f" role="25R1y">
       <property role="TrG5h" value="NA" />
       <property role="3tVfz5" value="20746029588650768" />
-      <ref role="2wpffI" node="19H6tG8pGg" />
     </node>
   </node>
   <node concept="25R3W" id="17qUVvSZm5g">
