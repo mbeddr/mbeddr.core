@@ -23,6 +23,15 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="3982520150125052579" name="jetbrains.mps.lang.editor.structure.QueryFunction_AttributeStyleParameter" flags="ig" index="3sjG9q" />
       <concept id="3982520150122341378" name="jetbrains.mps.lang.editor.structure.AttributeStyleClassItem" flags="lg" index="3tD6jV">
         <reference id="3982520150122346707" name="attribute" index="3tD7wE" />
@@ -30,6 +39,9 @@
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -118,6 +130,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -667,7 +682,38 @@
         <ref role="1NtTu8" to="q861:5YjCZTslj6E" resolve="myAbsentChild" />
       </node>
       <node concept="3F0ifn" id="5YjCZTskOAJ" role="3EZMnx" />
+      <node concept="3F0ifn" id="2wHvNG0katZ" role="3EZMnx">
+        <property role="3F0ifm" value="link" />
+        <ref role="1ERwB7" node="2wHvNG0kaTF" resolve="Link" />
+      </node>
       <node concept="2iRkQZ" id="5YjCZTskMca" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="2wHvNG0kaTF">
+    <property role="TrG5h" value="Link" />
+    <ref role="1h_SK9" to="q861:5YjCZTskMbB" resolve="DummyConcept" />
+    <node concept="1hA7zw" id="2wHvNG0kaTG" role="1h_SK8">
+      <property role="1hAc7j" value="1FSxSwWqMNJ/click_action_id" />
+      <node concept="1hAIg9" id="2wHvNG0kaTH" role="1hA7z_">
+        <node concept="3clFbS" id="2wHvNG0kaTI" role="2VODD2">
+          <node concept="3clFbF" id="2wHvNG0kaU0" role="3cqZAp">
+            <node concept="2OqwBi" id="2wHvNG0kbiV" role="3clFbG">
+              <node concept="2OqwBi" id="2wHvNG0kb18" role="2Oq$k0">
+                <node concept="1Q80Hx" id="2wHvNG0kaTZ" role="2Oq$k0" />
+                <node concept="liA8E" id="2wHvNG0kbaZ" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getEditorPanelManager()" resolve="getEditorPanelManager" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2wHvNG0kbrB" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorPanelManager.openEditor(org.jetbrains.mps.openapi.model.SNode)" resolve="openEditor" />
+                <node concept="3B5_sB" id="2wHvNG0kbvq" role="37wK5m">
+                  <ref role="3B5MYn" to="ag3p:5A_Zlt6xR6d" resolve="HyperlinkHandler" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

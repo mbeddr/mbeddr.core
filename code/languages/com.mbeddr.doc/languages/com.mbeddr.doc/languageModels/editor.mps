@@ -404,6 +404,9 @@
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
+      <concept id="8428109087107030357" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_ReferenceScope" flags="ng" index="3XHNnq">
+        <reference id="8428109087107339113" name="reference" index="3XGfJA" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -1578,19 +1581,15 @@
   </node>
   <node concept="24kQdi" id="2TZO3DbvI5F">
     <ref role="1XX52x" to="2c95:2TZO3DbvI5D" resolve="DocumentRef" />
-    <node concept="3EZMnI" id="xCXNlcPU0q" role="2wV5jI">
-      <node concept="2iRfu4" id="xCXNlcPU0r" role="2iSdaV" />
-      <node concept="1iCGBv" id="2TZO3DbvI5H" role="3EZMnx">
-        <ref role="1NtTu8" to="2c95:2TZO3DbvI5E" resolve="doc" />
-        <node concept="1sVBvm" id="2TZO3DbvI5I" role="1sWHZn">
-          <node concept="3F0A7n" id="2TZO3DbvI5K" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
-          </node>
+    <node concept="1iCGBv" id="2TZO3DbvI5H" role="2wV5jI">
+      <ref role="1NtTu8" to="2c95:2TZO3DbvI5E" resolve="doc" />
+      <node concept="1sVBvm" id="2TZO3DbvI5I" role="1sWHZn">
+        <node concept="3F0A7n" id="2TZO3DbvI5K" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" node="2TZO3DbviIs" resolve="structure" />
         </node>
       </node>
-      <node concept="VPM3Z" id="xCXNlcQev0" role="3F10Kt" />
     </node>
   </node>
   <node concept="24kQdi" id="2TZO3DbvSLR">
@@ -14492,6 +14491,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="22mcaB" id="6P3qf9XEhq7">
+    <ref role="aqKnT" to="2c95:2TZO3DbvI5D" resolve="DocumentRef" />
+    <node concept="22hDWj" id="6P3qf9XEhq8" role="22hAXT" />
+    <node concept="3XHNnq" id="6P3qf9XEhq9" role="3ft7WO">
+      <ref role="3XGfJA" to="2c95:2TZO3DbvI5E" resolve="doc" />
     </node>
   </node>
 </model>

@@ -3,26 +3,19 @@
   <persistence version="9" />
   <languages>
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components" version="0" />
     <use id="97d24244-51db-4e2e-97fc-7bd73b1f5f40" name="com.mbeddr.ext.components" version="2" />
     <use id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw" version="1" />
     <use id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines" version="1" />
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="1" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
-    <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
     <devkit ref="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
-    <devkit ref="74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
-    <devkit ref="315c0ec2-38ff-4e9c-9d15-fd0848b5f062(com.mbeddr.analyses.components)" />
   </languages>
   <imports>
     <import index="cmgk" ref="r:679066bc-2da8-4932-a09c-5d2b3d47b911(com.mbeddr.ext.units.siunits)" implicit="true" />
   </imports>
   <registry>
     <language id="daa1849d-6955-4fef-afe3-8aea1f61e6fa" name="com.mbeddr.analyses.cbmc.statemachines">
-      <concept id="6085839724192268104" name="com.mbeddr.analyses.cbmc.statemachines.structure.StatemachineCBMCAnalysis" flags="ng" index="1W1s6O">
-        <reference id="6085839724192268105" name="satemachine" index="1W1s6P" />
-      </concept>
       <concept id="6085839724193282957" name="com.mbeddr.analyses.cbmc.statemachines.structure.StatemachineCheckAttribute" flags="ng" index="1WXklL" />
     </language>
     <language id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units">
@@ -69,16 +62,6 @@
       <concept id="1159656764131926609" name="com.mbeddr.mpsutil.margincell.structure.IMarginCellContent" flags="ng" index="3vooZZ">
         <property id="8039098920897639409" name="attachedCellId" index="19LeSh" />
         <reference id="8039098920897680033" name="attachedNode" index="19LoX1" />
-      </concept>
-    </language>
-    <language id="c9a5ade7-5f6a-41ae-a703-5d94a418cf4f" name="com.mbeddr.analyses.cbmc.components">
-      <concept id="807751914255908947" name="com.mbeddr.analyses.cbmc.components.structure.ComponentsCBMCAnalysis" flags="ng" index="gU3p5">
-        <reference id="807751914255908948" name="analyzedComponent" index="gU3p2" />
-      </concept>
-      <concept id="6638119994895244601" name="com.mbeddr.analyses.cbmc.components.structure.VerificationConfigurationAttribute" flags="ng" index="1cekJe">
-        <property id="6638119994895244606" name="analysisDepth" index="1cekJ9" />
-        <property id="6638119994895244604" name="unwindingDepth" index="1cekJb" />
-        <reference id="6638119994895244607" name="verificationEntryPoint" index="1cekJ8" />
       </concept>
     </language>
     <language id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation">
@@ -157,19 +140,6 @@
     </language>
     <language id="0a02a8f9-14d0-4970-9bd2-ca35a097c80d" name="com.mbeddr.analyses.cbmc.core">
       <concept id="4053481679316838003" name="com.mbeddr.analyses.cbmc.core.structure.DecTabCheckAttribute" flags="ng" index="1nuNDJ" />
-      <concept id="4053481679317021364" name="com.mbeddr.analyses.cbmc.core.structure.DecTabCBMCAnalysis" flags="ng" index="1nvAUC">
-        <reference id="4053481679317021365" name="decTabContainer" index="1nvAUD" />
-      </concept>
-      <concept id="4053481679317021366" name="com.mbeddr.analyses.cbmc.core.structure.RobustnessCBMCAnalysis" flags="ng" index="1nvAUE">
-        <property id="9020927825194549928" name="check_memory_leak" index="2o64iB" />
-        <property id="4053481679317021372" name="check_nan" index="1nvAUw" />
-        <property id="4053481679317021368" name="check_pointer" index="1nvAU$" />
-        <property id="4053481679317021369" name="check_array_bounds" index="1nvAU_" />
-        <property id="4053481679317021370" name="check_signed_overflow" index="1nvAUA" />
-        <property id="4053481679317021371" name="check_unsigned_overflow" index="1nvAUB" />
-        <property id="4053481679317021367" name="check_div_by_zero" index="1nvAUF" />
-      </concept>
-      <concept id="4053481679317021363" name="com.mbeddr.analyses.cbmc.core.structure.AssertionsCBMCAnalysis" flags="ng" index="1nvAUJ" />
     </language>
     <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
       <concept id="8985851583396614966" name="com.mbeddr.analyses.cbmc.structure.GuardedNonDeterministicChoice" flags="ng" index="2c2bHh">
@@ -186,23 +156,6 @@
         <child id="8985851583396455257" name="varRef" index="2c3wGY" />
       </concept>
       <concept id="8985851583396455243" name="com.mbeddr.analyses.cbmc.structure.HarnessModule" flags="ng" index="2c3wGG" />
-      <concept id="8327535879610131181" name="com.mbeddr.analyses.cbmc.structure.ICbmcSettings" flags="ng" index="2lUzGJ">
-        <property id="8327535879610783176" name="timeoutInSeconds" index="2l50Ka" />
-        <property id="8327535879610783188" name="timeoutForSingleAnalysis" index="2l50Km" />
-        <property id="8327535879610783118" name="hasLocalTimeout" index="2l50Lc" />
-        <property id="8327535879610783060" name="sliceFormula" index="2l50Mm" />
-        <property id="8327535879613056020" name="hasLocalCbmcSettings" index="2lelRm" />
-        <property id="8327535879610145579" name="analysisDepth" index="2lUGbD" />
-        <property id="8327535879610145521" name="useRefinement" index="2lUGcN" />
-        <property id="8327535879610145463" name="partialLoops" index="2lUGdP" />
-        <property id="8327535879610145347" name="hasUnwindingDepth" index="2lUGe1" />
-        <property id="8327535879610145405" name="unwindingAssertions" index="2lUGeZ" />
-        <property id="8327535879610142482" name="unwindingDepth" index="2lUHrg" />
-      </concept>
-      <concept id="2135612507694884868" name="com.mbeddr.analyses.cbmc.structure.CBMCAnalysisConfigurationContainer" flags="ng" index="3uEX16" />
-      <concept id="6472990431939799907" name="com.mbeddr.analyses.cbmc.structure.CProverBasedAnalysis" flags="ng" index="3V$Cnz">
-        <reference id="6472990431939799908" name="entryPoint" index="3V$Cn$" />
-      </concept>
     </language>
     <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
       <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
@@ -304,12 +257,6 @@
       <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
       <concept id="2093108837558505658" name="com.mbeddr.core.modules.structure.ArgumentRef" flags="ng" index="3ZUYvv">
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
-      </concept>
-    </language>
-    <language id="5d09074f-babf-4f2b-b78b-e9929af0f3be" name="com.mbeddr.analyses.base">
-      <concept id="6472990431939580591" name="com.mbeddr.analyses.base.structure.AnalysisConfiguration" flags="ng" index="3V_BKJ">
-        <child id="6472990431939692464" name="analyses" index="3V$2$K" />
-        <child id="559958203687603517" name="imports" index="3W6d8T" />
       </concept>
     </language>
     <language id="564e97d6-8fb7-41f5-bfc1-c7ed376efd62" name="com.mbeddr.ext.statemachines">
@@ -2281,11 +2228,6 @@
           <property role="2c7vTL" value="false" />
         </node>
       </node>
-      <node concept="1cekJe" id="4LZvqgKpjd2" role="lGtFl">
-        <property role="1cekJb" value="10" />
-        <property role="1cekJ9" value="1000" />
-        <ref role="1cekJ8" node="1RY5dqNoqQR" resolve="emitCurrentSpeed" />
-      </node>
     </node>
     <node concept="2NXPZ9" id="1RY5dqNoqQL" role="N3F5h">
       <property role="TrG5h" value="empty_1354262983704_3" />
@@ -3001,106 +2943,6 @@
       <node concept="19Rifw" id="4vY$tOPH4d5" role="2C2TGm">
         <property role="2caQfQ" value="false" />
         <property role="2c7vTL" value="false" />
-      </node>
-    </node>
-  </node>
-  <node concept="3uEX16" id="3sPnzfj1gkp">
-    <property role="2lelRm" value="false" />
-    <property role="2l50Lc" value="false" />
-    <property role="2l50Ka" value="none" />
-    <property role="2l50Km" value="none" />
-    <property role="2lUGeZ" value="true" />
-    <property role="2lUGdP" value="false" />
-    <property role="2lUHrg" value="25" />
-    <property role="2lUGe1" value="true" />
-    <property role="2lUGbD" value="none" />
-    <property role="2lUGcN" value="false" />
-    <property role="2l50Mm" value="false" />
-    <property role="TrG5h" value="DemoAnalysesConfigurations" />
-    <node concept="3GEVxB" id="7OKLwZ_9N2A" role="3W6d8T">
-      <ref role="3GEb4d" node="7OKLwZ_7lYX" resolve="RobustnessExamples" />
-    </node>
-    <node concept="3GEVxB" id="3JyX84yT9iC" role="3W6d8T">
-      <ref role="3GEb4d" node="3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
-    </node>
-    <node concept="3GEVxB" id="3JyX84yT9iO" role="3W6d8T">
-      <ref role="3GEb4d" node="3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
-    </node>
-    <node concept="3GEVxB" id="6_lULi3$WoL" role="3W6d8T">
-      <ref role="3GEb4d" node="6_lULi3$M1J" resolve="Assertions" />
-    </node>
-    <node concept="3GEVxB" id="6_lULi3I34b" role="3W6d8T">
-      <ref role="3GEb4d" node="1RY5dqNoqQb" resolve="ComponentsContracts" />
-    </node>
-    <node concept="1nvAUE" id="7OKLwZ_9N2y" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="1nvAU_" value="true" />
-      <property role="1nvAUF" value="true" />
-      <property role="1nvAUw" value="true" />
-      <property role="1nvAU$" value="true" />
-      <property role="1nvAUA" value="true" />
-      <property role="1nvAUB" value="true" />
-      <property role="2o64iB" value="true" />
-      <ref role="3V$Cn$" node="7OKLwZ_7Llm" resolve="computeAverage1" />
-      <node concept="1h5QrK" id="3JyX84yUg6b" role="lGtFl">
-        <property role="TrG5h" value="aRobustnessCBMCAnalysis" />
-      </node>
-    </node>
-    <node concept="1nvAUC" id="3JyX84yT9ii" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <property role="2l50Lc" value="false" />
-      <ref role="1nvAUD" node="3uoNPXnjeUw" resolve="computeBreakingDistance" />
-      <ref role="3V$Cn$" node="3JyX84yTqLW" resolve="controlLoop" />
-      <node concept="1h5QrK" id="3JyX84yUfVT" role="lGtFl">
-        <property role="TrG5h" value="aDecTabCBMCAnalysis" />
-      </node>
-    </node>
-    <node concept="1W1s6O" id="3JyX84yTv$m" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="25" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="3JyX84yTx6w" resolve="stateMachineVerificationEntry" />
-      <ref role="1W1s6P" node="3JyX84ySf6B" resolve="Counter" />
-      <node concept="1h5QrK" id="3JyX84yUg68" role="lGtFl">
-        <property role="TrG5h" value="aStatemachineCBMCAnalysis" />
-      </node>
-    </node>
-    <node concept="1nvAUJ" id="6_lULi3$Woo" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="6_lULi3$NcV" resolve="clientCode" />
-      <node concept="1h5QrK" id="6_lULi3$WOv" role="lGtFl">
-        <property role="TrG5h" value="aAssertionsAnalysis" />
-      </node>
-    </node>
-    <node concept="gU3p5" id="6_lULi3AZHC" role="3V$2$K">
-      <property role="2lUGeZ" value="false" />
-      <property role="2lUHrg" value="-1" />
-      <property role="2lUGbD" value="none" />
-      <property role="2l50Ka" value="none" />
-      <property role="2l50Km" value="none" />
-      <property role="2l50Mm" value="false" />
-      <ref role="3V$Cn$" node="1RY5dqNoqQR" resolve="emitCurrentSpeed" />
-      <ref role="gU3p2" node="1RY5dqNoqQy" resolve="PlauzibilizedSpeedComputer" />
-      <node concept="1h5QrK" id="6_lULi3I2Fy" role="lGtFl">
-        <property role="TrG5h" value="aComponentsCBMCAnalysis" />
       </node>
     </node>
   </node>

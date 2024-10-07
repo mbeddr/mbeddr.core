@@ -7,12 +7,10 @@
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/javax.servlet-api-3.1.0.jar" />
       <sourceRoot location="lib/jetty-all-9.4.8.v20171121-uber.jar" />
-      <sourceRoot location="lib/slf4j-api-1.7.10.jar" />
-      <sourceRoot location="lib/slf4j-log4j12-1.7.10.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>

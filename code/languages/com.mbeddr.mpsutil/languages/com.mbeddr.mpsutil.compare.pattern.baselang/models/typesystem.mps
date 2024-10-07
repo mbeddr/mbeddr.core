@@ -717,7 +717,7 @@
                 <node concept="3clFbS" id="3JvTRSXZdl2" role="3clFbx">
                   <node concept="2MkqsV" id="3JvTRSXZdr1" role="3cqZAp">
                     <node concept="Xl_RD" id="3JvTRSXZdrj" role="2MkJ7o">
-                      <property role="Xl_RC" value="Incompatible types!" />
+                      <property role="Xl_RC" value="incompatible types" />
                     </node>
                     <node concept="1YBJjd" id="3JvTRSXZdtf" role="1urrMF">
                       <ref role="1YBMHb" node="3JvTRSXZ5uo" resolve="operation" />

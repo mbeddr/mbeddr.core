@@ -5509,17 +5509,28 @@
       <node concept="3uibUv" id="3NH93czhHkG" role="1tU5fm">
         <ref role="3uigEE" node="3NH93czh8sX" resolve="Model" />
       </node>
-      <node concept="2ShNRf" id="61pZq5SwibM" role="33vP2m">
-        <node concept="1pGfFk" id="3NH93czhHOZ" role="2ShVmc">
-          <ref role="37wK5l" node="3NH93czhh96" resolve="Model" />
-        </node>
-      </node>
     </node>
     <node concept="2tJIrI" id="2ZrHegMYRNT" role="jymVt" />
     <node concept="3clFbW" id="2ZrHegMYBk9" role="jymVt">
       <node concept="3cqZAl" id="2ZrHegMYBkb" role="3clF45" />
       <node concept="3Tm1VV" id="2ZrHegMYBkc" role="1B3o_S" />
       <node concept="3clFbS" id="2ZrHegMYBkd" role="3clF47">
+        <node concept="3clFbF" id="6hRsVM7clzk" role="3cqZAp">
+          <node concept="37vLTI" id="6hRsVM7cmHT" role="3clFbG">
+            <node concept="2OqwBi" id="6hRsVM7czAA" role="37vLTx">
+              <node concept="2YIFZM" id="6hRsVM7czcP" role="2Oq$k0">
+                <ref role="37wK5l" node="5vQUrnx8UbS" resolve="getInstance" />
+                <ref role="1Pybhc" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+              </node>
+              <node concept="liA8E" id="6hRsVM7c$it" role="2OqNvi">
+                <ref role="37wK5l" node="5vQUrnx8UdY" resolve="getState" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6hRsVM7clzi" role="37vLTJ">
+              <ref role="3cqZAo" node="61pZq5SwhO6" resolve="myModel" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2ZrHegMYTc_" role="3cqZAp">
           <node concept="1rXfSq" id="2ZrHegMYTc$" role="3clFbG">
             <ref role="37wK5l" node="2ZrHegMYRxp" resolve="initComponents" />

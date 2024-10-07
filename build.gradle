@@ -1,4 +1,5 @@
 import de.itemis.mps.gradle.GitBasedVersioning
+import de.itemis.mps.gradle.RunAntScript
 
 
 plugins {
@@ -11,15 +12,15 @@ repositories {
 }
 
 downloadJbr {
-    jbrVersion = '17.0.6-b469.82'
+    jbrVersion = '17.0.6-b653.34'
 }
 
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
 //MPS version
-ext.mpsMajor = "2022.2"
-ext.mpsBuild = "2022.2.3"
+ext.mpsMajor = "2022.3"
+ext.mpsBuild = "2022.3.2"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
@@ -83,11 +84,8 @@ ext.additionalPomInfo = {
         url = "https://github.com/mbeddr/mbeddr.core.git"
     }
 }
-subprojects {
-    // required plugins
-    apply plugin: "base"
-    apply plugin: "maven-publish"
 
+subprojects {
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
 
@@ -160,7 +158,7 @@ subprojects {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
 
-    tasks.configureEach( task -> {  task.dependsOn(':downloadJbr') })
+        tasks.withType(RunAntScript).configureEach(task -> { task.dependsOn(':downloadJbr') })
 
     }
  }

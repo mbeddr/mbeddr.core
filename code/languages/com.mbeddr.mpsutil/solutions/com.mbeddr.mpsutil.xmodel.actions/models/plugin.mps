@@ -474,18 +474,6 @@
         <node concept="3clFbH" id="5ZP7uETyiTD" role="3cqZAp" />
         <node concept="3clFbJ" id="5ZP7uETyccw" role="3cqZAp">
           <node concept="3clFbS" id="5ZP7uETyccy" role="3clFbx">
-            <node concept="2xdQw9" id="5ZP7uETylms" role="3cqZAp">
-              <property role="2xdLsb" value="gZ5fksE/warn" />
-              <node concept="2OqwBi" id="5ZP7uETylAs" role="9lYEk">
-                <node concept="2WthIp" id="5ZP7uETylnS" role="2Oq$k0" />
-                <node concept="1DTwFV" id="5ZP7uETym4Q" role="2OqNvi">
-                  <ref role="2WH_rO" node="5wEedBsfqYO" resolve="project" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="5ZP7uETyjGw" role="9lYJi">
-                <property role="Xl_RC" value="No model selected, cancelling" />
-              </node>
-            </node>
             <node concept="3cpWs6" id="5ZP7uETyi7R" role="3cqZAp" />
           </node>
           <node concept="3clFbC" id="5ZP7uETyhIt" role="3clFbw">
@@ -1087,19 +1075,7 @@
                   <node concept="RRSsy" id="4yCyDr3aoC_" role="3cqZAp">
                     <property role="RRSoG" value="gZ5fh_4/error" />
                     <node concept="Xl_RD" id="4yCyDr3aoCB" role="RRSoy">
-                      <property role="Xl_RC" value="model data is not jetbrains.mps.smodel.SModel" />
-                    </node>
-                  </node>
-                  <node concept="2xdQw9" id="4yCyDr3apnD" role="3cqZAp">
-                    <property role="2xdLsb" value="gZ5fh_4/error" />
-                    <node concept="Xl_RD" id="4yCyDr3apok" role="9lYJi">
-                      <property role="Xl_RC" value="model data is not jetbrains.mps.smodel.SModel" />
-                    </node>
-                    <node concept="2OqwBi" id="4yCyDr3apoU" role="9lYEk">
-                      <node concept="2WthIp" id="4yCyDr3apoX" role="2Oq$k0" />
-                      <node concept="1DTwFV" id="4yCyDr3apoZ" role="2OqNvi">
-                        <ref role="2WH_rO" node="5ZP7uETz5Of" resolve="project" />
-                      </node>
+                      <property role="Xl_RC" value="model data is an jetbrains.mps.smodel.SModel" />
                     </node>
                   </node>
                 </node>
@@ -1119,18 +1095,6 @@
               <node concept="RRSsy" id="4yCyDr3apRT" role="3cqZAp">
                 <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="4yCyDr3apRU" role="RRSoy">
-                  <property role="Xl_RC" value="model is not jetbrains.mps.extapi.model.SModelBase" />
-                </node>
-              </node>
-              <node concept="2xdQw9" id="4yCyDr3apRV" role="3cqZAp">
-                <property role="2xdLsb" value="gZ5fh_4/error" />
-                <node concept="2OqwBi" id="4yCyDr3apRX" role="9lYEk">
-                  <node concept="2WthIp" id="4yCyDr3apRY" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="4yCyDr3apRZ" role="2OqNvi">
-                    <ref role="2WH_rO" node="5ZP7uETz5Of" resolve="project" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="4yCyDr3apWu" role="9lYJi">
                   <property role="Xl_RC" value="model is not jetbrains.mps.extapi.model.SModelBase" />
                 </node>
               </node>
