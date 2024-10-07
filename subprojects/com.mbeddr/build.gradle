@@ -167,3 +167,11 @@ task printRepositories {
         println "dependencyRepositories: $dependencyRepositories"
     }
 }
+
+tasks.register('migrate') {
+    // No-op in this version
+}
+
+tasks.register('remigrate') {
+    // No-op in this version
+}
