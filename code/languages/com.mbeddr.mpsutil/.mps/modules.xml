@@ -183,6 +183,13 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmlImport/com.mbeddr.mpsutil.xmlImport.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmodel.actions/com.mbeddr.mpsutil.xmodel.actions.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.MPS.IDEA.q60.test/guava.dependency.MPS.IDEA.q60.test.msd" folder="guava.dependency.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.MPS.IDEA.test/guava.dependency.MPS.IDEA.test.msd" folder="guava.dependency.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.MPS.ThirdParty.q60.test/guava.dependency.MPS.ThirdParty.q60.test.msd" folder="guava.dependency.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.MPS.ThirdParty.test/guava.dependency.MPS.ThirdParty.test.msd" folder="guava.dependency.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.MPS.both.test/guava.dependency.MPS.both.test.msd" folder="guava.dependency.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.all.test/guava.dependency.all.test.msd" folder="guava.dependency.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/guava.dependency.q60.test/guava.dependency.q60.test.msd" folder="guava.dependency.test" />
       <modulePath path="$PROJECT_DIR$/solutions/org.apache.batik/org.apache.batik.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mockito/org.mockito.msd" folder="stubs" />
       <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
