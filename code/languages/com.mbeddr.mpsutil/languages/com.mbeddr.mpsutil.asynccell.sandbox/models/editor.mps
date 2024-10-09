@@ -51,7 +51,7 @@
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
@@ -126,7 +126,7 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -138,7 +138,7 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -156,7 +156,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -193,7 +193,7 @@
                     <ref role="3cqZAo" node="17HIJlKZU71" resolve="button" />
                   </node>
                   <node concept="liA8E" id="17HIJlKZWfd" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="1bVj0M" id="2YOONxNRT5i" role="37wK5m">
                       <node concept="3clFbS" id="2YOONxNRT5j" role="1bW5cS">
                         <node concept="3clFbF" id="17HIJlL0gGV" role="3cqZAp">
@@ -218,11 +218,11 @@
                             <node concept="2OqwBi" id="2u$73V9t9yn" role="2Oq$k0">
                               <node concept="1Q80Hx" id="2u$73V9t9yo" role="2Oq$k0" />
                               <node concept="liA8E" id="2u$73V9t9yp" role="2OqNvi">
-                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2u$73V9t9yq" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                             </node>
                           </node>
                         </node>
@@ -270,7 +270,7 @@
                     <ref role="3cqZAo" node="2YOONxNRDtr" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2YOONxNRDtz" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="1bVj0M" id="2YOONxNRQT4" role="37wK5m">
                       <node concept="3clFbS" id="2YOONxNRQT5" role="1bW5cS">
                         <node concept="3clFbF" id="2YOONxNRQqV" role="3cqZAp">
@@ -300,11 +300,11 @@
                             <node concept="2OqwBi" id="2YOONxNRDtQ" role="2Oq$k0">
                               <node concept="1Q80Hx" id="2YOONxNRDtR" role="2Oq$k0" />
                               <node concept="liA8E" id="2YOONxNRDtS" role="2OqNvi">
-                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2YOONxNRDtT" role="2OqNvi">
-                              <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                             </node>
                           </node>
                         </node>
@@ -358,7 +358,7 @@
                     <ref role="3cqZAo" node="2u$73V9r4da" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2u$73V9r4di" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2u$73V9r4dj" role="37wK5m">
                       <node concept="YeOm9" id="2u$73V9r4dk" role="2ShVmc">
                         <node concept="1Y3b0j" id="2u$73V9r4dl" role="YeSDq">
@@ -397,11 +397,11 @@
                                   <node concept="2OqwBi" id="2u$73V9t9pz" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9t9p$" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9t9p_" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9t9pA" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -446,7 +446,7 @@
                     <ref role="3cqZAo" node="2u$73V9r4Bu" resolve="button" />
                   </node>
                   <node concept="liA8E" id="2u$73V9r4BA" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2u$73V9r4BB" role="37wK5m">
                       <node concept="YeOm9" id="2u$73V9r4BC" role="2ShVmc">
                         <node concept="1Y3b0j" id="2u$73V9r4BD" role="YeSDq">
@@ -487,11 +487,11 @@
                                   <node concept="2OqwBi" id="2u$73V9r4BN" role="2Oq$k0">
                                     <node concept="1Q80Hx" id="2u$73V9r4BO" role="2Oq$k0" />
                                     <node concept="liA8E" id="2u$73V9r4BP" role="2OqNvi">
-                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2u$73V9r4BQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update():void" resolve="update" />
+                                    <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                                   </node>
                                 </node>
                               </node>
@@ -564,11 +564,11 @@
                             <node concept="2EnYce" id="2u$73V9uyfS" role="2Oq$k0">
                               <node concept="1Q80Hx" id="2u$73V9uwFY" role="2Oq$k0" />
                               <node concept="liA8E" id="2u$73V9uwFZ" role="2OqNvi">
-                                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+                                <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell()" resolve="getContextCell" />
                               </node>
                             </node>
                             <node concept="liA8E" id="2u$73V9uwG0" role="2OqNvi">
-                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle():jetbrains.mps.openapi.editor.style.Style" resolve="getStyle" />
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
                             </node>
                           </node>
                         </node>
