@@ -243,7 +243,7 @@
                     <ref role="3cqZAo" node="2YOONxNStSE" resolve="exception" />
                   </node>
                   <node concept="liA8E" id="2YOONxNSz1I" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
               </node>
@@ -475,7 +475,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2YOONxNRGtC" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~Timer.stop():void" resolve="stop" />
+                  <ref role="37wK5l" to="dxuu:~Timer.stop()" resolve="stop" />
                 </node>
               </node>
             </node>
@@ -518,7 +518,7 @@
               <ref role="3cqZAo" node="17HIJlL0Ew$" resolve="timer" />
             </node>
             <node concept="liA8E" id="2YOONxNRGu7" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~Timer.setRepeats(boolean):void" resolve="setRepeats" />
+              <ref role="37wK5l" to="dxuu:~Timer.setRepeats(boolean)" resolve="setRepeats" />
               <node concept="3clFbT" id="2YOONxNRGu8" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
@@ -531,7 +531,7 @@
               <ref role="3cqZAo" node="17HIJlL0Ew$" resolve="timer" />
             </node>
             <node concept="liA8E" id="2YOONxNRGuc" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~Timer.start():void" resolve="start" />
+              <ref role="37wK5l" to="dxuu:~Timer.start()" resolve="start" />
             </node>
           </node>
         </node>

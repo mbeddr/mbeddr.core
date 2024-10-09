@@ -480,7 +480,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
@@ -9123,7 +9122,7 @@
                         </node>
                         <node concept="3JPx81" id="4JHJliLKErP" role="2OqNvi">
                           <node concept="37vLTw" id="4JHJliLKL6f" role="25WWJ7">
-                            <ref role="3cqZAo" node="4JHJliLK$fU" resolve="p" />
+                            <ref role="3cqZAo" node="2K_c9781UO3" resolve="p" />
                           </node>
                         </node>
                       </node>
@@ -9133,7 +9132,7 @@
                         </node>
                         <node concept="2OqwBi" id="4JHJliLKErT" role="2ZW6bz">
                           <node concept="37vLTw" id="4JHJliLKSxQ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4JHJliLK$fU" resolve="p" />
+                            <ref role="3cqZAo" node="2K_c9781UO3" resolve="p" />
                           </node>
                           <node concept="liA8E" id="4JHJliLKErV" role="2OqNvi">
                             <ref role="37wK5l" to="c17a:~SProperty.getType()" resolve="getType" />
@@ -9143,9 +9142,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="Rh6nW" id="4JHJliLK$fU" role="1bW2Oz">
+                <node concept="gl6BB" id="2K_c9781UO3" role="1bW2Oz">
                   <property role="TrG5h" value="p" />
-                  <node concept="2jxLKc" id="4JHJliLK$fV" role="1tU5fm" />
+                  <node concept="2jxLKc" id="2K_c9781UO4" role="1tU5fm" />
                 </node>
               </node>
             </node>

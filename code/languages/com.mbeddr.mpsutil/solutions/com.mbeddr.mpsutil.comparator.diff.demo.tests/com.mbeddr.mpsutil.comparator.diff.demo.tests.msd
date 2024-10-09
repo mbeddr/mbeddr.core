@@ -9,6 +9,7 @@
     <facet type="java" compile="off" classes="off" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
