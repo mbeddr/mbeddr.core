@@ -253,7 +253,6 @@
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
@@ -1019,7 +1018,7 @@
                         <node concept="3clFbF" id="7zBzSouOEvw" role="3cqZAp">
                           <node concept="2OqwBi" id="7zBzSouOEL9" role="3clFbG">
                             <node concept="37vLTw" id="7zBzSouOEvv" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7zBzSouOEen" resolve="it" />
+                              <ref role="3cqZAo" node="2K_c977ZBYY" resolve="it" />
                             </node>
                             <node concept="liA8E" id="7zBzSouOF8u" role="2OqNvi">
                               <ref role="37wK5l" to="ykkq:2jUI4_LRtLD" resolve="canBeActivatedByDefault" />
@@ -1031,9 +1030,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="7zBzSouOEen" role="1bW2Oz">
+                      <node concept="gl6BB" id="2K_c977ZBYY" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="7zBzSouOEeo" role="1tU5fm" />
+                        <node concept="2jxLKc" id="2K_c977ZBYZ" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -1044,7 +1043,7 @@
                       <node concept="3clFbF" id="7zBzSouOHvg" role="3cqZAp">
                         <node concept="2OqwBi" id="7zBzSouOHHy" role="3clFbG">
                           <node concept="37vLTw" id="7zBzSouOHvf" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7zBzSouOHd_" resolve="it" />
+                            <ref role="3cqZAo" node="2K_c977ZBZ0" resolve="it" />
                           </node>
                           <node concept="2OwXpG" id="7zBzSouOI49" role="2OqNvi">
                             <ref role="2Oxat5" to="ykkq:7zBzSouMwxo" resolve="myDefaultPriority" />
@@ -1052,9 +1051,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="7zBzSouOHd_" role="1bW2Oz">
+                    <node concept="gl6BB" id="2K_c977ZBZ0" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="7zBzSouOHdA" role="1tU5fm" />
+                      <node concept="2jxLKc" id="2K_c977ZBZ1" role="1tU5fm" />
                     </node>
                   </node>
                   <node concept="1nlBCl" id="7zBzSouOHdB" role="2S7zOq">
