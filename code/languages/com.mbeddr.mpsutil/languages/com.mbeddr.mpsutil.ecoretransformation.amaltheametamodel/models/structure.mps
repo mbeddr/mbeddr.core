@@ -4049,7 +4049,7 @@
         <node concept="1TJgyi" id="19H6tG8pFX" role="3l_iP">
           <property role="IQ2nx" value="20746029588650749" />
           <property role="TrG5h" value="busType" />
-          <ref role="AX2Wp" node="19H6tG8pGh" resolve="BusType" />
+          <ref role="AX2Wp" node="17qUVvSZm56" resolve="BusType" />
         </node>
       </node>
     </node>

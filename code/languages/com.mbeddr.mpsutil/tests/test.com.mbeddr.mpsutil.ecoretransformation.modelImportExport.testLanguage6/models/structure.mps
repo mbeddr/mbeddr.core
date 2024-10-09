@@ -91,7 +91,7 @@
         <node concept="1TJgyi" id="2Q$Xn1yGoo7" role="3l_iP">
           <property role="IQ2nx" value="3289023490928248327" />
           <property role="TrG5h" value="testEnumAttr" />
-          <ref role="AX2Wp" node="2Q$Xn1yGooi" resolve="enumTest1" />
+          <ref role="AX2Wp" node="17qUVvSZm6o" resolve="enumTest1" />
         </node>
       </node>
     </node>
