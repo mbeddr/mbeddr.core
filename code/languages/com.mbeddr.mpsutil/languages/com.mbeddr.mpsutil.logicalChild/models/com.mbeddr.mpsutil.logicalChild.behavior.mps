@@ -1063,7 +1063,7 @@
                         <ref role="2Gs0qQ" node="7LqGxA8CNoB" resolve="module" />
                       </node>
                       <node concept="37vLTw" id="7LqGxA8GccU" role="37wK5m">
-                        <ref role="3cqZAo" node="7LqGxA8Fasb" resolve="bufferMultimap" />
+                        <ref role="3cqZAo" node="7LqGxA8Fasb" resolve="owner2childen" />
                       </node>
                     </node>
                   </node>
@@ -1072,7 +1072,7 @@
               <node concept="3clFbC" id="7LqGxA8FYae" role="3clFbw">
                 <node concept="10Nm6u" id="7LqGxA8FYE4" role="3uHU7w" />
                 <node concept="37vLTw" id="7LqGxA8FX_R" role="3uHU7B">
-                  <ref role="3cqZAo" node="7LqGxA8Fasb" resolve="bufferMultimap" />
+                  <ref role="3cqZAo" node="7LqGxA8Fasb" resolve="owner2childen" />
                 </node>
               </node>
             </node>
@@ -1156,7 +1156,7 @@
                               <node concept="3clFbF" id="7LqGxA8Fdip" role="3cqZAp">
                                 <node concept="2OqwBi" id="7LqGxA8FdSO" role="3clFbG">
                                   <node concept="37vLTw" id="7LqGxA8Fdio" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="7LqGxA8Fasb" resolve="bufferMultimap" />
+                                    <ref role="3cqZAo" node="7LqGxA8Fasb" resolve="owner2childen" />
                                   </node>
                                   <node concept="liA8E" id="7LqGxA8FeHR" role="2OqNvi">
                                     <ref role="37wK5l" to="3o3z:~Multimap.put(java.lang.Object,java.lang.Object)" resolve="put" />
@@ -1223,7 +1223,7 @@
               </node>
             </node>
             <node concept="2YIFZM" id="6aYyEt1Fp7E" role="33vP2m">
-              <ref role="37wK5l" node="7LqGxA8Bhbr" resolve="getLogicalChildrenCache" />
+              <ref role="37wK5l" node="7LqGxA8Bhbr" resolve="logicalChildrenCache" />
               <ref role="1Pybhc" node="44INz$MLbE3" resolve="LogicalChildOwnerUtil" />
               <node concept="37vLTw" id="6aYyEt1Fp7F" role="37wK5m">
                 <ref role="3cqZAo" node="6aYyEt1Fmor" resolve="module" />
