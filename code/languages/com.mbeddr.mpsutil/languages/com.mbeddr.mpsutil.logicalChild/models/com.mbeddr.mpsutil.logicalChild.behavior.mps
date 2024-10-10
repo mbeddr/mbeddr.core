@@ -5,6 +5,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +15,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="3o3z" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.google.common.collect(MPS.IDEA/)" />
     <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
+    <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -119,6 +121,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -143,6 +146,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -528,21 +534,38 @@
         </node>
       </node>
       <node concept="3clFbS" id="6aYyEt1EuYF" role="3clF47">
-        <node concept="3clFbF" id="6aYyEt1ExK5" role="3cqZAp">
-          <node concept="2YIFZM" id="6aYyEt1ExNG" role="3clFbG">
-            <ref role="37wK5l" to="33ny:~Collections.singleton(java.lang.Object)" resolve="singleton" />
-            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
-            <node concept="2OqwBi" id="6aYyEt1ExqY" role="37wK5m">
-              <node concept="2OqwBi" id="6aYyEt1Ex9I" role="2Oq$k0">
-                <node concept="2JrnkZ" id="6aYyEt1EwSr" role="2Oq$k0">
-                  <node concept="13iPFW" id="6aYyEt1EwRH" role="2JrQYb" />
-                </node>
-                <node concept="liA8E" id="6aYyEt1Exhb" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+        <node concept="3clFbF" id="2LNowVOI08t" role="3cqZAp">
+          <node concept="2OqwBi" id="2LNowVOIbte" role="3clFbG">
+            <node concept="2OqwBi" id="2LNowVOI5X1" role="2Oq$k0">
+              <node concept="2YIFZM" id="2LNowVOI1$a" role="2Oq$k0">
+                <ref role="37wK5l" to="33ny:~Optional.ofNullable(java.lang.Object)" resolve="ofNullable" />
+                <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
+                <node concept="2EnYce" id="2LNowVOIqA6" role="37wK5m">
+                  <node concept="2OqwBi" id="2LNowVOIqA7" role="2Oq$k0">
+                    <node concept="2JrnkZ" id="2LNowVOIqA8" role="2Oq$k0">
+                      <node concept="13iPFW" id="2LNowVOIqA9" role="2JrQYb" />
+                    </node>
+                    <node concept="liA8E" id="2LNowVOIqAa" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getModel()" resolve="getModel" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2LNowVOIqAb" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+                  </node>
                 </node>
               </node>
-              <node concept="liA8E" id="6aYyEt1ExC7" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
+              <node concept="liA8E" id="2LNowVOI7fI" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Optional.stream()" resolve="stream" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2LNowVOIdde" role="2OqNvi">
+              <ref role="37wK5l" to="1ctc:~Stream.collect(java.util.stream.Collector)" resolve="collect" />
+              <node concept="2YIFZM" id="2LNowVOIj1m" role="37wK5m">
+                <ref role="37wK5l" to="1ctc:~Collectors.toList()" resolve="toList" />
+                <ref role="1Pybhc" to="1ctc:~Collectors" resolve="Collectors" />
+                <node concept="3uibUv" id="2LNowVOInFY" role="3PaCim">
+                  <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                </node>
               </node>
             </node>
           </node>
