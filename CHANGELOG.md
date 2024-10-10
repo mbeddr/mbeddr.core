@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2024
 
+## com.mbeddr.mpsutil
+
+### Feature
+
+- Adds a caching mechanism for caching the retrieval of 'ILogicalChild' by 'ILogicalChildOwner'
+
 ## com.mbeddr.mpsutil.ecore
 
 ### Fixed
