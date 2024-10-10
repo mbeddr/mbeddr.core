@@ -16,6 +16,8 @@
     <import index="3o3z" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.google.common.collect(MPS.IDEA/)" />
     <import index="17wx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.locks(JDK/)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -72,6 +74,13 @@
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
+      <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ" />
+      <concept id="1109279851642" name="jetbrains.mps.baseLanguage.structure.GenericDeclaration" flags="ng" index="16eOlS">
+        <child id="1109279881614" name="typeVariableDeclaration" index="16eVyc" />
+      </concept>
+      <concept id="1109283449304" name="jetbrains.mps.baseLanguage.structure.TypeVariableReference" flags="in" index="16syzq">
+        <reference id="1109283546497" name="typeVariableDeclaration" index="16sUi3" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -82,6 +91,7 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1164879685961" name="throwsItem" index="Sfmx6" />
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -136,9 +146,16 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
+        <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
+      </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+        <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -157,11 +174,16 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537397872" name="jetbrains.mps.baseLanguage.javadoc.structure.ThrowsBlockDocTag" flags="ng" index="x0GOo">
+        <property id="5858074156537397874" name="text" index="x0GOq" />
+        <child id="6832197706140448505" name="exceptionType" index="zrq5$" />
+      </concept>
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518107" name="jetbrains.mps.baseLanguage.javadoc.structure.DocTypeParameterReference" flags="ng" index="zr_56" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
@@ -782,6 +804,86 @@
     </node>
     <node concept="2tJIrI" id="7LqGxA8AZ1u" role="jymVt" />
     <node concept="2tJIrI" id="7LqGxA8CBz9" role="jymVt" />
+    <node concept="2YIFZL" id="4dKV7gVaIME" role="jymVt">
+      <property role="TrG5h" value="withCachedLogicalChildren" />
+      <node concept="3clFbS" id="4dKV7gVaIMK" role="3clF47">
+        <node concept="3J1_TO" id="4dKV7gVaOg$" role="3cqZAp">
+          <node concept="3clFbS" id="4dKV7gVaOg_" role="1zxBo7">
+            <node concept="3clFbF" id="4dKV7gVaMbB" role="3cqZAp">
+              <node concept="1rXfSq" id="4dKV7gVaMbA" role="3clFbG">
+                <ref role="37wK5l" node="6aYyEt27Bpy" resolve="useCacheNow" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="4dKV7gVclRJ" role="3cqZAp">
+              <node concept="2OqwBi" id="4dKV7gVcowk" role="3cqZAk">
+                <node concept="37vLTw" id="4dKV7gVcowl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4dKV7gVaIMG" resolve="runnable" />
+                </node>
+                <node concept="liA8E" id="4dKV7gVcowm" role="2OqNvi">
+                  <ref role="37wK5l" to="5zyv:~Callable.call()" resolve="call" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1wplmZ" id="4dKV7gVaOgA" role="1zxBo6">
+            <node concept="3clFbS" id="4dKV7gVaOgB" role="1wplMD">
+              <node concept="3clFbF" id="4dKV7gVaOwz" role="3cqZAp">
+                <node concept="1rXfSq" id="4dKV7gVaOwy" role="3clFbG">
+                  <ref role="37wK5l" node="6aYyEt27DQJ" resolve="stopUsingCache" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="16syzq" id="4dKV7gVco2l" role="3clF45">
+        <ref role="16sUi3" node="4dKV7gVcil2" resolve="T" />
+      </node>
+      <node concept="37vLTG" id="4dKV7gVaIMG" role="3clF46">
+        <property role="TrG5h" value="codeToBeRun" />
+        <node concept="3uibUv" id="4dKV7gVaIMH" role="1tU5fm">
+          <ref role="3uigEE" to="5zyv:~Callable" resolve="Callable" />
+          <node concept="16syzq" id="4dKV7gVck2X" role="11_B2D">
+            <ref role="16sUi3" node="4dKV7gVcil2" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4dKV7gVaIMJ" role="1B3o_S" />
+      <node concept="16euLQ" id="4dKV7gVcil2" role="16eVyc">
+        <property role="TrG5h" value="T" />
+      </node>
+      <node concept="3uibUv" id="4dKV7gVcmoN" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+      </node>
+      <node concept="P$JXv" id="4dKV7gVjhVd" role="lGtFl">
+        <node concept="TZ5HA" id="4dKV7gVjhVe" role="TZ5H$">
+          <node concept="1dT_AC" id="4dKV7gVjhVf" role="1dT_Ay">
+            <property role="1dT_AB" value="Wrap a code block with an environment where any call to the method 'findLogicalChildren' of 'ILogicalChildOwner' is cached." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4dKV7gVjhVg" role="3nqlJM">
+          <property role="TUZQ4" value="code block" />
+          <node concept="zr_55" id="4dKV7gVjhVi" role="zr_5Q">
+            <ref role="zr_51" node="4dKV7gVaIMG" resolve="codeToBeRun" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4dKV7gVjhVj" role="3nqlJM">
+          <property role="TUZQ4" value="type of result " />
+          <node concept="zr_56" id="4dKV7gVjhVl" role="zr_5Q">
+            <ref role="zr_51" node="4dKV7gVcil2" resolve="T" />
+          </node>
+        </node>
+        <node concept="x0GOo" id="4dKV7gVjhVm" role="3nqlJM">
+          <property role="x0GOq" value=" " />
+          <node concept="3uibUv" id="4dKV7gVjhVo" role="zrq5$">
+            <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4dKV7gVjhVp" role="3nqlJM">
+          <property role="x79VB" value="result" />
+        </node>
+      </node>
+    </node>
     <node concept="2YIFZL" id="6aYyEt27Bpy" role="jymVt">
       <property role="TrG5h" value="useCacheNow" />
       <node concept="3clFbS" id="6aYyEt27BpA" role="3clF47">
@@ -807,7 +909,7 @@
         </node>
       </node>
       <node concept="3cqZAl" id="6aYyEt27Bp$" role="3clF45" />
-      <node concept="3Tm1VV" id="6aYyEt27Bp_" role="1B3o_S" />
+      <node concept="3Tm6S6" id="4dKV7gVjdD_" role="1B3o_S" />
       <node concept="P$JXv" id="6aYyEt27ViZ" role="lGtFl">
         <node concept="TZ5HA" id="6aYyEt27Vj0" role="TZ5H$">
           <node concept="1dT_AC" id="6aYyEt27Vj1" role="1dT_Ay">
@@ -860,7 +962,7 @@
         </node>
       </node>
       <node concept="3cqZAl" id="6aYyEt27DQL" role="3clF45" />
-      <node concept="3Tm1VV" id="6aYyEt27DQM" role="1B3o_S" />
+      <node concept="3Tm6S6" id="4dKV7gVjdOV" role="1B3o_S" />
       <node concept="P$JXv" id="6aYyEt27WCY" role="lGtFl">
         <node concept="TZ5HA" id="6aYyEt27WCZ" role="TZ5H$">
           <node concept="1dT_AC" id="6aYyEt27WD0" role="1dT_Ay">
