@@ -29,27 +29,7 @@ ext.artifactsDir = new File(rootDir, 'artifacts')
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
 
 afterEvaluate {
-
     ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
-
-    def jdk_home = null
-
-    if (ext.has('java17_home')) {
-        jdk_home = ext.get('java17_home')
-    } else if (System.getenv('JB_JAVA17_HOME') != null) {
-        jdk_home = System.getenv('JB_JAVA17_HOME')
-    }
-
-    if(jdk_home != null) {
-        // Check JDK location
-        if (!new File(jdk_home, "lib").exists()) {
-            throw new GradleException("Unable to locate JDK home folder. Detected folder is: $jdk_home")
-        } else {
-            ext.jdk_home = jdk_home
-            logger.info 'Using JDK at {}', jdk_home
-            ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = new File(jdk_home, 'bin/java')
-	}
-    }
 }
 
 def hasNonEmptyProperty(property) {
