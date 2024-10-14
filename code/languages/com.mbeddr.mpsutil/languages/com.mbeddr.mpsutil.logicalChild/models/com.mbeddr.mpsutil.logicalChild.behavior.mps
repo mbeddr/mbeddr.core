@@ -542,7 +542,7 @@
           <node concept="1dT_AC" id="6aYyEt2cNss" role="1dT_Ay" />
         </node>
         <node concept="x79VA" id="6aYyEt2cNst" role="3nqlJM">
-          <property role="x79VB" value="modelsl where logical children are" />
+          <property role="x79VB" value="models where logical children are" />
         </node>
       </node>
     </node>
@@ -600,7 +600,7 @@
           </node>
         </node>
         <node concept="x79VA" id="6aYyEt2cN3t" role="3nqlJM">
-          <property role="x79VB" value="moduels where the logical children are to be searched" />
+          <property role="x79VB" value="modules where the logical children are to be searched" />
         </node>
       </node>
     </node>
