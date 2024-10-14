@@ -2792,6 +2792,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="3WyAxHbtRcO" role="3bR31x">
+          <node concept="3LXTmp" id="3WyAxHbtRcP" role="3rtmxm">
+            <node concept="3qWCbU" id="3WyAxHbtRcQ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3WyAxHbtRcR" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="3WyAxHbtRcS" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3WyAxHbtRcT" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.logicalChild" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6n0otOpkvEj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2849,6 +2865,22 @@
         <node concept="1SiIV0" id="6n0otOpkB8z" role="3bR37C">
           <node concept="1Busua" id="6n0otOpkB8$" role="1SiIV1">
             <ref role="1Busuk" to="al5i:3lcj7hzsmpl" resolve="com.mbeddr.mpsutil.logicalChild" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3WyAxHbtRcV" role="3bR31x">
+          <node concept="3LXTmp" id="3WyAxHbtRcW" role="3rtmxm">
+            <node concept="3qWCbU" id="3WyAxHbtRcX" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3WyAxHbtRcY" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="3WyAxHbtRcZ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3WyAxHbtRd0" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.logicalChild.sandbox" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
