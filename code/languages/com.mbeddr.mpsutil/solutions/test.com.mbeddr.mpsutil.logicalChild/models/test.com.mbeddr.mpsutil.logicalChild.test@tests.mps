@@ -11,10 +11,12 @@
   </languages>
   <imports>
     <import index="n7tw" ref="r:e9fcc9c2-114c-4ba2-897c-9e44451eea40(com.mbeddr.mpsutil.logicalChild.behavior)" />
+    <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="xxir" ref="r:a615bfc0-ceb2-486e-85b1-8debbfdfdbb6(com.mbeddr.mpsutil.logicalChild.structure)" implicit="true" />
-    <import index="legp" ref="r:e06fc7a9-6c1d-4d1e-abb5-eda20a08c26c(com.mbeddr.mpsutil.logicalChild.sandbox.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="legp" ref="r:e06fc7a9-6c1d-4d1e-abb5-eda20a08c26c(com.mbeddr.mpsutil.logicalChild.sandbox.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -35,19 +37,37 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -73,6 +93,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -90,6 +113,7 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
         <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -97,11 +121,16 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
       <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -146,6 +175,12 @@
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+      <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
+        <child id="1171981057159" name="condition" index="3vwVQn" />
+      </concept>
+      <concept id="1171983834376" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertFalse" flags="nn" index="3vFxKo">
+        <child id="1171983854940" name="condition" index="3vFALc" />
+      </concept>
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
@@ -316,7 +351,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="2LNowVOKuJU" role="3cqZAp" />
             <node concept="3SKdUt" id="3kJ7$$sNLkj" role="3cqZAp">
               <node concept="1PaTwC" id="3kJ7$$sNLkk" role="1aUNEU">
                 <node concept="3oM_SD" id="2LNowVOKwoG" role="1PaTwD">
@@ -339,7 +373,142 @@
                 <ref role="1Pybhc" to="n7tw:44INz$MLbE3" resolve="LogicalChildOwnerUtil" />
                 <node concept="1bVj0M" id="4dKV7gVb4hn" role="37wK5m">
                   <node concept="3clFbS" id="4dKV7gVb4ho" role="1bW5cS">
-                    <node concept="3clFbH" id="4dKV7gVb4$Q" role="3cqZAp" />
+                    <node concept="3vwNmj" id="6hawlnuBqR4" role="3cqZAp">
+                      <node concept="2YIFZM" id="7LqGxA8Gs8m" role="3vwVQn">
+                        <ref role="37wK5l" to="n7tw:7LqGxA8GqrF" resolve="shouldUseCache" />
+                        <ref role="1Pybhc" to="n7tw:44INz$MLbE3" resolve="LogicalChildOwnerUtil" />
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="6hawlnuC1qS" role="3cqZAp" />
+                    <node concept="3cpWs8" id="6hawlnuCfpt" role="3cqZAp">
+                      <node concept="3cpWsn" id="6hawlnuCfpu" role="3cpWs9">
+                        <property role="TrG5h" value="otherThreadFailed" />
+                        <node concept="3uibUv" id="6hawlnuCfpv" role="1tU5fm">
+                          <ref role="3uigEE" to="i5cy:~AtomicBoolean" resolve="AtomicBoolean" />
+                        </node>
+                        <node concept="2ShNRf" id="6hawlnuCfIg" role="33vP2m">
+                          <node concept="1pGfFk" id="6hawlnuCgDK" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="i5cy:~AtomicBoolean.&lt;init&gt;(boolean)" resolve="AtomicBoolean" />
+                            <node concept="3clFbT" id="6hawlnuCh14" role="37wK5m" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="6hawlnuCi_I" role="3cqZAp">
+                      <node concept="3cpWsn" id="6hawlnuCi_J" role="3cpWs9">
+                        <property role="TrG5h" value="executorService" />
+                        <node concept="3uibUv" id="6hawlnuCi_K" role="1tU5fm">
+                          <ref role="3uigEE" to="5zyv:~ExecutorService" resolve="ExecutorService" />
+                        </node>
+                        <node concept="2YIFZM" id="6hawlnuCjei" role="33vP2m">
+                          <ref role="37wK5l" to="5zyv:~Executors.newSingleThreadExecutor()" resolve="newSingleThreadExecutor" />
+                          <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="6hawlnuCluE" role="3cqZAp" />
+                    <node concept="3clFbF" id="6hawlnuCmsy" role="3cqZAp">
+                      <node concept="2OqwBi" id="6hawlnuCmTo" role="3clFbG">
+                        <node concept="37vLTw" id="6hawlnuCmsw" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6hawlnuCi_J" resolve="executorService" />
+                        </node>
+                        <node concept="liA8E" id="6hawlnuCo1u" role="2OqNvi">
+                          <ref role="37wK5l" to="5zyv:~Executor.execute(java.lang.Runnable)" resolve="execute" />
+                          <node concept="1bVj0M" id="6hawlnuCosq" role="37wK5m">
+                            <node concept="3clFbS" id="6hawlnuCosr" role="1bW5cS">
+                              <node concept="3J1_TO" id="6hawlnuCqp0" role="3cqZAp">
+                                <node concept="3uVAMA" id="6hawlnuCqHA" role="1zxBo5">
+                                  <node concept="XOnhg" id="6hawlnuCqHB" role="1zc67B">
+                                    <property role="TrG5h" value="e" />
+                                    <node concept="nSUau" id="6hawlnuCqHC" role="1tU5fm">
+                                      <node concept="3uibUv" id="6hawlnuCr2f" role="nSUat">
+                                        <ref role="3uigEE" to="wyt6:~AssertionError" resolve="AssertionError" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbS" id="6hawlnuCqHD" role="1zc67A">
+                                    <node concept="3clFbF" id="6hawlnuCt2R" role="3cqZAp">
+                                      <node concept="2OqwBi" id="6hawlnuCttW" role="3clFbG">
+                                        <node concept="37vLTw" id="6hawlnuCt2Q" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6hawlnuCfpu" resolve="otherThreadFailed" />
+                                        </node>
+                                        <node concept="liA8E" id="6hawlnuCu1G" role="2OqNvi">
+                                          <ref role="37wK5l" to="i5cy:~AtomicBoolean.set(boolean)" resolve="set" />
+                                          <node concept="3clFbT" id="6hawlnuCumD" role="37wK5m">
+                                            <property role="3clFbU" value="true" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="YS8fn" id="6hawlnuCuWe" role="3cqZAp">
+                                      <node concept="37vLTw" id="6hawlnuCvhI" role="YScLw">
+                                        <ref role="3cqZAo" node="6hawlnuCqHB" resolve="e" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbS" id="6hawlnuCqp1" role="1zxBo7">
+                                  <node concept="3vFxKo" id="6hawlnuCXFr" role="3cqZAp">
+                                    <node concept="2YIFZM" id="6hawlnuCYqM" role="3vFALc">
+                                      <ref role="37wK5l" to="n7tw:7LqGxA8GqrF" resolve="shouldUseCache" />
+                                      <ref role="1Pybhc" to="n7tw:44INz$MLbE3" resolve="LogicalChildOwnerUtil" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="6hawlnuCwEj" role="3cqZAp">
+                      <node concept="2OqwBi" id="6hawlnuCxe9" role="3clFbG">
+                        <node concept="37vLTw" id="6hawlnuCwEh" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6hawlnuCi_J" resolve="executorService" />
+                        </node>
+                        <node concept="liA8E" id="6hawlnuCxIK" role="2OqNvi">
+                          <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown()" resolve="shutdown" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="6hawlnuCyyl" role="3cqZAp">
+                      <node concept="3cpWsn" id="6hawlnuCyyo" role="3cpWs9">
+                        <property role="TrG5h" value="terminatedInTime" />
+                        <node concept="10P_77" id="6hawlnuCyyj" role="1tU5fm" />
+                        <node concept="2OqwBi" id="6hawlnuC_$c" role="33vP2m">
+                          <node concept="37vLTw" id="6hawlnuC$oD" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6hawlnuCi_J" resolve="executorService" />
+                          </node>
+                          <node concept="liA8E" id="6hawlnuCAcr" role="2OqNvi">
+                            <ref role="37wK5l" to="5zyv:~ExecutorService.awaitTermination(long,java.util.concurrent.TimeUnit)" resolve="awaitTermination" />
+                            <node concept="3cmrfG" id="6hawlnuCAzg" role="37wK5m">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                            <node concept="Rm8GO" id="6hawlnuCCkp" role="37wK5m">
+                              <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />
+                              <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3vwNmj" id="6hawlnuCCG$" role="3cqZAp">
+                      <node concept="37vLTw" id="6hawlnuCDLr" role="3vwVQn">
+                        <ref role="3cqZAo" node="6hawlnuCyyo" resolve="terminatedInTime" />
+                      </node>
+                    </node>
+                    <node concept="3vFxKo" id="6hawlnuCEjx" role="3cqZAp">
+                      <node concept="2OqwBi" id="6hawlnuCFOO" role="3vFALc">
+                        <node concept="37vLTw" id="6hawlnuCFfv" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6hawlnuCfpu" resolve="otherThreadFailed" />
+                        </node>
+                        <node concept="liA8E" id="6hawlnuCGlV" role="2OqNvi">
+                          <ref role="37wK5l" to="i5cy:~AtomicBoolean.get()" resolve="get" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="6hawlnuCDLt" role="3cqZAp" />
                     <node concept="3cpWs8" id="2LNowVOJVaT" role="3cqZAp">
                       <node concept="3cpWsn" id="2LNowVOJVaU" role="3cpWs9">
                         <property role="TrG5h" value="logicalChildren" />
@@ -636,6 +805,12 @@
                 <node concept="3uibUv" id="4dKV7gVcqr4" role="3PaCim">
                   <ref role="3uigEE" to="wyt6:~Void" resolve="Void" />
                 </node>
+              </node>
+            </node>
+            <node concept="3vFxKo" id="6hawlnuBFVt" role="3cqZAp">
+              <node concept="2YIFZM" id="6hawlnuBGNE" role="3vFALc">
+                <ref role="37wK5l" to="n7tw:7LqGxA8GqrF" resolve="shouldUseCache" />
+                <ref role="1Pybhc" to="n7tw:44INz$MLbE3" resolve="LogicalChildOwnerUtil" />
               </node>
             </node>
             <node concept="3clFbH" id="2LNowVOJWRl" role="3cqZAp" />

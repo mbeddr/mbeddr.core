@@ -108,9 +108,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -736,20 +734,6 @@
   <node concept="312cEu" id="44INz$MLbE3">
     <property role="TrG5h" value="LogicalChildOwnerUtil" />
     <node concept="2tJIrI" id="7LqGxA8Cw8j" role="jymVt" />
-    <node concept="Wx3nA" id="44INz$MMr45" role="jymVt">
-      <property role="TrG5h" value="useCache" />
-      <node concept="10P_77" id="6aYyEt26VdI" role="1tU5fm" />
-      <node concept="3Tm6S6" id="6aYyEt1FNHL" role="1B3o_S" />
-      <node concept="3clFbT" id="6aYyEt26Wdb" role="33vP2m" />
-      <node concept="z59LJ" id="6aYyEt27M$Q" role="lGtFl">
-        <node concept="TZ5HA" id="6aYyEt27M$R" role="TZ5H$">
-          <node concept="1dT_AC" id="6aYyEt27M$S" role="1dT_Ay">
-            <property role="1dT_AB" value="Indicates if caching should be applied" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6aYyEt27NXn" role="jymVt" />
     <node concept="Wx3nA" id="7LqGxA8AYpj" role="jymVt">
       <property role="TrG5h" value="module2LogicalChildCache" />
       <node concept="3uibUv" id="7LqGxA8AYxK" role="1tU5fm">
@@ -793,7 +777,6 @@
           <ref role="37wK5l" to="17wx:~ReentrantLock.&lt;init&gt;()" resolve="ReentrantLock" />
         </node>
       </node>
-      <node concept="3Tm6S6" id="6aYyEt1EjIt" role="1B3o_S" />
       <node concept="z59LJ" id="6aYyEt27TUB" role="lGtFl">
         <node concept="TZ5HA" id="6aYyEt27TUC" role="TZ5H$">
           <node concept="1dT_AC" id="6aYyEt27TUD" role="1dT_Ay">
@@ -801,6 +784,7 @@
           </node>
         </node>
       </node>
+      <node concept="3Tm6S6" id="6aYyEt1EjIt" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7LqGxA8AZ1u" role="jymVt" />
     <node concept="2tJIrI" id="7LqGxA8CBz9" role="jymVt" />
@@ -897,16 +881,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6aYyEt27BpF" role="3cqZAp">
-          <node concept="37vLTI" id="6aYyEt27BpG" role="3clFbG">
-            <node concept="3clFbT" id="6aYyEt27BpH" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="37vLTw" id="6aYyEt27BpI" role="37vLTJ">
-              <ref role="3cqZAo" node="44INz$MMr45" resolve="useCache" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3cqZAl" id="6aYyEt27Bp$" role="3clF45" />
       <node concept="3Tm6S6" id="4dKV7gVjdD_" role="1B3o_S" />
@@ -922,24 +896,6 @@
     <node concept="2YIFZL" id="6aYyEt27DQJ" role="jymVt">
       <property role="TrG5h" value="stopUsingCache" />
       <node concept="3clFbS" id="6aYyEt27DQN" role="3clF47">
-        <node concept="3clFbF" id="6aYyEt27DQO" role="3cqZAp">
-          <node concept="2OqwBi" id="6aYyEt27DQP" role="3clFbG">
-            <node concept="37vLTw" id="6aYyEt27DQQ" role="2Oq$k0">
-              <ref role="3cqZAo" node="6aYyEt1EjIo" resolve="lock" />
-            </node>
-            <node concept="liA8E" id="6aYyEt27DQR" role="2OqNvi">
-              <ref role="37wK5l" to="17wx:~ReentrantLock.lock()" resolve="lock" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6aYyEt27DQS" role="3cqZAp">
-          <node concept="37vLTI" id="6aYyEt27DQT" role="3clFbG">
-            <node concept="3clFbT" id="6aYyEt27DQU" role="37vLTx" />
-            <node concept="37vLTw" id="6aYyEt27DQV" role="37vLTJ">
-              <ref role="3cqZAo" node="44INz$MMr45" resolve="useCache" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6aYyEt27DQW" role="3cqZAp">
           <node concept="2OqwBi" id="6aYyEt27DQX" role="3clFbG">
             <node concept="37vLTw" id="6aYyEt27DQY" role="2Oq$k0">
@@ -980,20 +936,16 @@
             <node concept="37vLTw" id="6aYyEt2cdnp" role="2Oq$k0">
               <ref role="3cqZAo" node="6aYyEt1EjIo" resolve="lock" />
             </node>
-            <node concept="liA8E" id="6aYyEt2ce7l" role="2OqNvi">
-              <ref role="37wK5l" to="17wx:~ReentrantLock.lock()" resolve="lock" />
+            <node concept="liA8E" id="6hawlnuB3r0" role="2OqNvi">
+              <ref role="37wK5l" to="17wx:~ReentrantLock.isHeldByCurrentThread()" resolve="isHeldByCurrentThread" />
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7LqGxA8GqrK" role="3cqZAp">
-          <node concept="37vLTw" id="7LqGxA8GqrM" role="3clFbG">
-            <ref role="3cqZAo" node="44INz$MMr45" resolve="useCache" />
           </node>
         </node>
       </node>
       <node concept="3uibUv" id="7LqGxA8Gt3c" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
       </node>
+      <node concept="3Tm1VV" id="6hawlnuBx6L" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="7LqGxA8CUGm" role="jymVt" />
     <node concept="2YIFZL" id="6aYyEt1F6sz" role="jymVt">
@@ -1014,16 +966,6 @@
       </node>
       <node concept="3clFbS" id="6aYyEt1F6sB" role="3clF47">
         <node concept="3clFbH" id="6aYyEt1FRWc" role="3cqZAp" />
-        <node concept="3clFbF" id="6aYyEt1EsJj" role="3cqZAp">
-          <node concept="2OqwBi" id="6aYyEt1EsJk" role="3clFbG">
-            <node concept="37vLTw" id="6aYyEt1FSbC" role="2Oq$k0">
-              <ref role="3cqZAo" node="6aYyEt1EjIo" resolve="lock" />
-            </node>
-            <node concept="liA8E" id="6aYyEt1EsJl" role="2OqNvi">
-              <ref role="37wK5l" to="17wx:~ReentrantLock.lock()" resolve="lock" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6aYyEt1FnTY" role="3cqZAp">
           <node concept="2OqwBi" id="6aYyEt1F_jd" role="3clFbG">
             <node concept="2OqwBi" id="6aYyEt1FoeH" role="2Oq$k0">
