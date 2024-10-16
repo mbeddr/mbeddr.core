@@ -142,7 +142,6 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
-      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -176,9 +175,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
-        <child id="1160998896846" name="condition" index="1gVkn0" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -742,10 +738,13 @@
             </node>
           </node>
         </node>
-        <node concept="1gVbGN" id="lcBmxsnw6K" role="3cqZAp">
-          <node concept="17QLQc" id="lcBmxsnwKx" role="1gVkn0">
-            <node concept="10Nm6u" id="lcBmxsnx0L" role="3uHU7w" />
-            <node concept="37vLTw" id="lcBmxsnwr4" role="3uHU7B">
+        <node concept="3clFbJ" id="7PIunOs4qOh" role="3cqZAp">
+          <node concept="3clFbS" id="7PIunOs4qOj" role="3clFbx">
+            <node concept="3cpWs6" id="7PIunOs4tcM" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="7PIunOs4rzE" role="3clFbw">
+            <node concept="10Nm6u" id="7PIunOs4saX" role="3uHU7w" />
+            <node concept="37vLTw" id="7PIunOs4r8I" role="3uHU7B">
               <ref role="3cqZAo" node="5gyVhZ1blCP" resolve="ref" />
             </node>
           </node>
