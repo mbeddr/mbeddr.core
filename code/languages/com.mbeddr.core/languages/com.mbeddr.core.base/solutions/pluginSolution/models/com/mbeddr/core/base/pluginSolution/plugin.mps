@@ -126,6 +126,7 @@
     <import index="7oz1" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.configuration(MPS.Editor/)" />
     <import index="mmaq" ref="f647e48e-4568-4f4c-b48a-1546492c6a2e/java:org.jdom(org.jdom/)" />
     <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="3pb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.table(MPS.IDEA/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -7537,7 +7538,7 @@
   <node concept="sE7Ow" id="16oY6Yuy2BP">
     <property role="3GE5qa" value="ideEnhancement" />
     <property role="TrG5h" value="CreateMbeddrModel" />
-    <property role="2uzpH1" value="New model" />
+    <property role="2uzpH1" value="New Model" />
     <property role="72QZ$" value="true" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="16oY6Yuy2BQ" role="tncku">
