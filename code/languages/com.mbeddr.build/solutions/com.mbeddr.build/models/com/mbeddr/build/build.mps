@@ -1146,11 +1146,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7udlxS$N$Jr" role="3bR37C">
-          <node concept="3bR9La" id="7udlxS$N$Js" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:4LDuh$Ud1Lx" resolve="jetbrains.mps.debugger.java.api" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="17FCEM7ip1J" role="3bR37C">
           <node concept="3bR9La" id="17FCEM7ip1K" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
@@ -3108,11 +3103,6 @@
             <ref role="1Busuk" node="7uZw0yZ43L9" resolve="com.mbeddr.core.modules" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6oAagBJCrGJ" role="3bR37C">
-          <node concept="3bR9La" id="6oAagBJCrGK" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7gdoTYdo$et" resolve="jetbrains.mps.debugger.api.api" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="HiHZpX4D0I" role="3bR37C">
           <node concept="1Busua" id="HiHZpX4D0J" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
@@ -3428,6 +3418,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7PIunOs7bbE" role="3bR37C">
+          <node concept="3bR9La" id="7PIunOs7bbF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4X1d9kMCbcv" resolve="jetbrains.mps.ide.refactoring.platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7uZw0yZ43Mb" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3584,6 +3579,11 @@
             <node concept="3qWCbU" id="7ZN_vIiShxj" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7PIunOs7bbV" role="3bR37C">
+          <node concept="3bR9La" id="7PIunOs7bbW" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4X1d9kMCbcv" resolve="jetbrains.mps.ide.refactoring.platform" />
           </node>
         </node>
       </node>
