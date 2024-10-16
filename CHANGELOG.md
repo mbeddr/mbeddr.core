@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2024
 
+## com.mbeddr.core.base
+
+- Diagrams are not auto-layouted before taking a screenshot.
+
 ## com.mbeddr.mpsutil.ecore
 
 ### Fixed
