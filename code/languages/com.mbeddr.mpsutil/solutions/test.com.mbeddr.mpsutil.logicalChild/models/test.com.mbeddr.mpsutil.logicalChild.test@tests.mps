@@ -1272,8 +1272,8 @@
                                 <node concept="3clFbF" id="79TFkryGxq7" role="3cqZAp">
                                   <node concept="2OqwBi" id="79TFkryGxq4" role="3clFbG">
                                     <node concept="10M0yZ" id="79TFkryGxq5" role="2Oq$k0">
-                                      <ref role="1PxDUh" to="wyt6:~System" />
-                                      <ref role="3cqZAo" to="wyt6:~System.out" />
+                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                     </node>
                                     <node concept="liA8E" id="79TFkryGxq6" role="2OqNvi">
                                       <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1339,8 +1339,8 @@
                                                   <node concept="3clFbF" id="79TFkryGHGZ" role="3cqZAp">
                                                     <node concept="2OqwBi" id="79TFkryGHH0" role="3clFbG">
                                                       <node concept="10M0yZ" id="79TFkryGHH1" role="2Oq$k0">
-                                                        <ref role="1PxDUh" to="wyt6:~System" />
-                                                        <ref role="3cqZAo" to="wyt6:~System.out" />
+                                                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                                       </node>
                                                       <node concept="liA8E" id="79TFkryGHH2" role="2OqNvi">
                                                         <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1444,8 +1444,8 @@
                                           <node concept="3clFbF" id="79TFkryGEt$" role="3cqZAp">
                                             <node concept="2OqwBi" id="79TFkryGEt_" role="3clFbG">
                                               <node concept="10M0yZ" id="79TFkryGEtA" role="2Oq$k0">
-                                                <ref role="1PxDUh" to="wyt6:~System" />
-                                                <ref role="3cqZAo" to="wyt6:~System.out" />
+                                                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                               </node>
                                               <node concept="liA8E" id="79TFkryGEtB" role="2OqNvi">
                                                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
