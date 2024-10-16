@@ -12032,40 +12032,25 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="79AXByylc$t" role="3cqZAp">
-          <node concept="2YIFZM" id="79AXByylc_j" role="3clFbG">
-            <ref role="1Pybhc" to="dxuu:~SwingUtilities" resolve="SwingUtilities" />
-            <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
-            <node concept="2ShNRf" id="79AXByylc$v" role="37wK5m">
-              <node concept="YeOm9" id="79AXByylc$w" role="2ShVmc">
-                <node concept="1Y3b0j" id="79AXByylc$x" role="YeSDq">
-                  <property role="2bfB8j" value="true" />
-                  <property role="1sVAO0" value="false" />
-                  <property role="1EXbeo" value="false" />
-                  <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                  <node concept="3Tm1VV" id="79AXByylc$y" role="1B3o_S" />
-                  <node concept="3clFb_" id="79AXByylc$z" role="jymVt">
-                    <property role="TrG5h" value="run" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="2AHcQZ" id="79AXByylc$$" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                    </node>
-                    <node concept="3clFbS" id="79AXByylc$_" role="3clF47">
-                      <node concept="3clFbF" id="79AXByylc$A" role="3cqZAp">
-                        <node concept="2OqwBi" id="79AXByylc_p" role="3clFbG">
-                          <node concept="37vLTw" id="79AXByylc_o" role="2Oq$k0">
-                            <ref role="3cqZAo" node="79AXByylc$l" resolve="configurableEditor" />
-                          </node>
-                          <node concept="liA8E" id="79AXByylc_q" role="2OqNvi">
-                            <ref role="37wK5l" to="jkm4:~DialogWrapper.show()" resolve="show" />
-                          </node>
-                        </node>
+        <node concept="3clFbF" id="1F7KUkmjHyk" role="3cqZAp">
+          <node concept="2OqwBi" id="1F7KUkmjPRP" role="3clFbG">
+            <node concept="2YIFZM" id="1F7KUkmjLcn" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="1F7KUkmjTYX" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="1F7KUkmjWVL" role="37wK5m">
+                <node concept="3clFbS" id="1F7KUkmjWVO" role="1bW5cS">
+                  <node concept="3clFbF" id="79AXByylc$A" role="3cqZAp">
+                    <node concept="2OqwBi" id="79AXByylc_p" role="3clFbG">
+                      <node concept="37vLTw" id="79AXByylc_o" role="2Oq$k0">
+                        <ref role="3cqZAo" node="79AXByylc$l" resolve="configurableEditor" />
+                      </node>
+                      <node concept="liA8E" id="79AXByylc_q" role="2OqNvi">
+                        <ref role="37wK5l" to="jkm4:~DialogWrapper.show()" resolve="show" />
                       </node>
                     </node>
-                    <node concept="3Tm1VV" id="79AXByylc$C" role="1B3o_S" />
-                    <node concept="3cqZAl" id="79AXByylc$D" role="3clF45" />
                   </node>
                 </node>
               </node>
@@ -13559,6 +13544,11 @@
       <node concept="3uibUv" id="1yljmw4$Yjn" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTree" resolve="JTree" />
       </node>
+      <node concept="2ShNRf" id="7Q6Q5uy_XOQ" role="33vP2m">
+        <node concept="1pGfFk" id="1yljmw4II77" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JTree.&lt;init&gt;()" resolve="JTree" />
+        </node>
+      </node>
     </node>
     <node concept="2BZ0e9" id="24fB7C42Qel" role="2XNbBz">
       <property role="TrG5h" value="table" />
@@ -14068,21 +14058,6 @@
         </node>
         <node concept="3clFbH" id="24fB7C3ZTv2" role="3cqZAp" />
         <node concept="3clFbH" id="7gyAA1uVw3F" role="3cqZAp" />
-        <node concept="3clFbF" id="1yljmw4_2oL" role="3cqZAp">
-          <node concept="37vLTI" id="1yljmw4_79c" role="3clFbG">
-            <node concept="2OqwBi" id="1yljmw4_2oF" role="37vLTJ">
-              <node concept="2WthIp" id="1yljmw4_2oI" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1yljmw4_2oK" role="2OqNvi">
-                <ref role="2WH_rO" node="1yljmw4$Yb0" resolve="tree" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="7Q6Q5uy_XOQ" role="37vLTx">
-              <node concept="1pGfFk" id="1yljmw4II77" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JTree.&lt;init&gt;()" resolve="JTree" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1SYZy6Qeo7q" role="3cqZAp">
           <node concept="2OqwBi" id="1SYZy6QesMj" role="3clFbG">
             <node concept="2OqwBi" id="1SYZy6Qep6p" role="2Oq$k0">
