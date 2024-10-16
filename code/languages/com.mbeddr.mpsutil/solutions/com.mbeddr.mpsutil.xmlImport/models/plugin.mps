@@ -6,6 +6,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,9 +24,11 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +38,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
@@ -241,6 +245,14 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -2191,6 +2203,7 @@
     <property role="TrG5h" value="importXMLFile" />
     <property role="2uzpH1" value="Import XML File(s)" />
     <property role="1rBW0U" value="true" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="4mEgncq5mFM" role="tncku">
       <node concept="3clFbS" id="4mEgncq5mFN" role="2VODD2">
         <node concept="3cpWs8" id="T1v2oLnKbA" role="3cqZAp">
@@ -2334,22 +2347,39 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="4mEgncq5YB3" role="3cqZAp">
-                  <node concept="2OqwBi" id="4mEgncq5YWZ" role="3clFbG">
-                    <node concept="2OqwBi" id="4mEgncq5YAX" role="2Oq$k0">
-                      <node concept="2WthIp" id="4mEgncq5YB0" role="2Oq$k0" />
-                      <node concept="3gHZIF" id="4mEgncq5YB2" role="2OqNvi">
-                        <ref role="2WH_rO" node="4mEgncq5ppU" resolve="mdl" />
-                      </node>
-                    </node>
-                    <node concept="3BYIHo" id="4mEgncq5Zb1" role="2OqNvi">
-                      <node concept="2YIFZM" id="4mEgncq5Zey" role="3BYIHq">
-                        <ref role="1Pybhc" node="24KZuFtDQtb" resolve="XmlHelper" />
-                        <ref role="37wK5l" node="4mEgncq5LFT" resolve="importFile" />
-                        <node concept="2GrUjf" id="7ZV2gfQAYrN" role="37wK5m">
-                          <ref role="2Gs0qQ" node="7ZV2gfQAVXI" resolve="file" />
+                <node concept="1QHqEO" id="7PIunOs6D1X" role="3cqZAp">
+                  <node concept="1QHqEC" id="7PIunOs6D1Z" role="1QHqEI">
+                    <node concept="3clFbS" id="7PIunOs6D21" role="1bW5cS">
+                      <node concept="3clFbF" id="4mEgncq5YB3" role="3cqZAp">
+                        <node concept="2OqwBi" id="4mEgncq5YWZ" role="3clFbG">
+                          <node concept="2OqwBi" id="4mEgncq5YAX" role="2Oq$k0">
+                            <node concept="2WthIp" id="4mEgncq5YB0" role="2Oq$k0" />
+                            <node concept="3gHZIF" id="4mEgncq5YB2" role="2OqNvi">
+                              <ref role="2WH_rO" node="4mEgncq5ppU" resolve="mdl" />
+                            </node>
+                          </node>
+                          <node concept="3BYIHo" id="4mEgncq5Zb1" role="2OqNvi">
+                            <node concept="2YIFZM" id="4mEgncq5Zey" role="3BYIHq">
+                              <ref role="1Pybhc" node="24KZuFtDQtb" resolve="XmlHelper" />
+                              <ref role="37wK5l" node="4mEgncq5LFT" resolve="importFile" />
+                              <node concept="2GrUjf" id="7ZV2gfQAYrN" role="37wK5m">
+                                <ref role="2Gs0qQ" node="7ZV2gfQAVXI" resolve="file" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7PIunOs6JIi" role="ukAjM">
+                    <node concept="2OqwBi" id="7PIunOs6HUL" role="2Oq$k0">
+                      <node concept="2WthIp" id="7PIunOs6HUO" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="7PIunOs6HUQ" role="2OqNvi">
+                        <ref role="2WH_rO" node="7PIunOs6FG2" resolve="mpsProject" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7PIunOs6L5s" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                     </node>
                   </node>
                 </node>
@@ -2426,8 +2456,13 @@
     </node>
     <node concept="1DS2jV" id="T1v2oLo5iy" role="1NuT2Z">
       <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~PlatformCoreDataKeys.PROJECT_CONTEXT" resolve="PROJECT_CONTEXT" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="T1v2oLo5iz" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="7PIunOs6FG2" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="7PIunOs6FG3" role="1oa70y" />
     </node>
   </node>
   <node concept="tC5Ba" id="4mEgncq5mG6">
