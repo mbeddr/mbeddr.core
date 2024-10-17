@@ -487,6 +487,22 @@
             <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
           </node>
         </node>
+        <node concept="3rtmxn" id="4mvQA9n$oMU" role="3bR31x">
+          <node concept="3LXTmp" id="4mvQA9n$oMV" role="3rtmxm">
+            <node concept="3qWCbU" id="4mvQA9n$oMW" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4mvQA9n$oMX" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4mvQA9n$oMY" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4mvQA9n$oMZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="tests.com.mbeddr.mpsutil.json" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3rtmxn" id="3xUpIvHHZkB" role="3bR31x">
           <node concept="3LXTmp" id="3xUpIvHHZkC" role="3rtmxm">
             <node concept="3qWCbU" id="3xUpIvHHZkD" role="3LXTna">
@@ -573,6 +589,22 @@
               <node concept="2Ry0Ak" id="3xUpIvHHZkM" role="iGT6I">
                 <property role="2Ry0Am" value="tests" />
                 <node concept="2Ry0Ak" id="3xUpIvHHZkN" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.contextactions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4mvQA9n$oN1" role="3bR31x">
+          <node concept="3LXTmp" id="4mvQA9n$oN2" role="3rtmxm">
+            <node concept="3qWCbU" id="4mvQA9n$oN3" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4mvQA9n$oN4" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4mvQA9n$oN5" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4mvQA9n$oN6" role="2Ry0An">
                   <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.contextactions" />
                 </node>
               </node>
@@ -1533,6 +1565,21 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="bHMJKhDDfb" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDfc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bHMJKhDDfd" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDfe" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeKPEA" resolve="com.mbeddr.mpsutil.ecore.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bHMJKhDDff" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDfg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
         <node concept="398BVA" id="bHMJKhDAXY" role="3LF7KH">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
           <node concept="2Ry0Ak" id="bHMJKhDAYF" role="iGT6I">
@@ -1581,21 +1628,6 @@
             <node concept="3qWCbU" id="5Ap$XSqW8TG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="bHMJKhDDfb" role="3bR37C">
-          <node concept="3bR9La" id="bHMJKhDDfc" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="bHMJKhDDfd" role="3bR37C">
-          <node concept="3bR9La" id="bHMJKhDDfe" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:vOGyTeKPEA" resolve="com.mbeddr.mpsutil.ecore.testing" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="bHMJKhDDff" role="3bR37C">
-          <node concept="3bR9La" id="bHMJKhDDfg" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
@@ -1835,6 +1867,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="4JHJliM0l2k" role="3bR31x">
+          <node concept="3LXTmp" id="4JHJliM0l2l" role="3rtmxm">
+            <node concept="398BVA" id="4JHJliM0l2m" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4JHJliM0l2n" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4JHJliM0l2o" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4JHJliM0l2q" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
+            </node>
+          </node>
+        </node>
         <node concept="1BupzO" id="4JHJliM0kXc" role="3bR31x">
           <property role="3ZfqAx" value="../../languages/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5/models" />
           <property role="1Hdu6h" value="true" />
@@ -1857,22 +1905,6 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="4JHJliM0l2k" role="3bR31x">
-          <node concept="3LXTmp" id="4JHJliM0l2l" role="3rtmxm">
-            <node concept="398BVA" id="4JHJliM0l2m" role="3LXTmr">
-              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-              <node concept="2Ry0Ak" id="4JHJliM0l2n" role="iGT6I">
-                <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="4JHJliM0l2o" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage5" />
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4JHJliM0l2q" role="3LXTna">
-              <property role="3qWCbO" value="icons/**" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="4JHJliM0kFI" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1887,6 +1919,22 @@
               <node concept="2Ry0Ak" id="4JHJliM0kMw" role="2Ry0An">
                 <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6.mpl" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4JHJliM0lfO" role="3bR31x">
+          <node concept="3LXTmp" id="4JHJliM0lfP" role="3rtmxm">
+            <node concept="398BVA" id="4JHJliM0lfQ" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="4JHJliM0lfR" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4JHJliM0lfS" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4JHJliM0lfU" role="3LXTna">
+              <property role="3qWCbO" value="icons/**" />
             </node>
           </node>
         </node>
@@ -1909,22 +1957,6 @@
             </node>
             <node concept="3qWCbU" id="4JHJliM0kXW" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="4JHJliM0lfO" role="3bR31x">
-          <node concept="3LXTmp" id="4JHJliM0lfP" role="3rtmxm">
-            <node concept="398BVA" id="4JHJliM0lfQ" role="3LXTmr">
-              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
-              <node concept="2Ry0Ak" id="4JHJliM0lfR" role="iGT6I">
-                <property role="2Ry0Am" value="tests" />
-                <node concept="2Ry0Ak" id="4JHJliM0lfS" role="2Ry0An">
-                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage6" />
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4JHJliM0lfU" role="3LXTna">
-              <property role="3qWCbO" value="icons/**" />
             </node>
           </node>
         </node>

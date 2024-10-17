@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:e9fcc9c2-114c-4ba2-897c-9e44451eea40(com.mbeddr.mpsutil.logicalChild.behavior)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -166,6 +167,7 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -320,6 +322,9 @@
         </node>
       </node>
     </node>
+    <node concept="13hLZK" id="jksL7exwEW" role="13h7CW">
+      <node concept="3clFbS" id="jksL7exwEX" role="2VODD2" />
+    </node>
     <node concept="13i0hz" id="3hmSi0TnTy5" role="13h7CS">
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="informsOwner" />
@@ -330,9 +335,6 @@
           <node concept="3clFbT" id="3hmSi0To5Zo" role="3clFbG" />
         </node>
       </node>
-    </node>
-    <node concept="13hLZK" id="jksL7exwEW" role="13h7CW">
-      <node concept="3clFbS" id="jksL7exwEX" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="jksL7exBwZ">
@@ -364,10 +366,10 @@
         </node>
         <node concept="3clFbF" id="7LqGxA8CbMG" role="3cqZAp">
           <node concept="2OqwBi" id="7LqGxA8CckM" role="3clFbG">
-            <node concept="13iPFW" id="7LqGxA8CbME" role="2Oq$k0" />
             <node concept="2qgKlT" id="7LqGxA8CcG1" role="2OqNvi">
               <ref role="37wK5l" node="7LqGxA8BBYW" resolve="directSearch" />
             </node>
+            <node concept="13iPFW" id="7LqGxA8CbME" role="2Oq$k0" />
           </node>
         </node>
       </node>
@@ -614,7 +616,6 @@
       <node concept="3clFbS" id="5zdrv$9zA29" role="3clF47">
         <node concept="3cpWs6" id="5zdrv$9zA2a" role="3cqZAp">
           <node concept="2OqwBi" id="5zdrv$anLnI" role="3cqZAk">
-            <node concept="ANE8D" id="5zdrv$anNhL" role="2OqNvi" />
             <node concept="2OqwBi" id="5zdrv$9zA2b" role="2Oq$k0">
               <node concept="2OqwBi" id="5zdrv$9zA2c" role="2Oq$k0">
                 <node concept="1eOMI4" id="5zdrv$9zA2d" role="2Oq$k0">
@@ -639,7 +640,7 @@
                         <node concept="13iPFW" id="5zdrv$9zA2o" role="3uHU7w" />
                         <node concept="2OqwBi" id="5zdrv$9zA2p" role="3uHU7B">
                           <node concept="37vLTw" id="5zdrv$9zA2q" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5zdrv$9zA2s" resolve="child" />
+                            <ref role="3cqZAo" node="2SR9xrsN2s3" resolve="child" />
                           </node>
                           <node concept="2qgKlT" id="5SdnHczgZrP" role="2OqNvi">
                             <ref role="37wK5l" node="7c93VeVMBwo" resolve="getOwner" />
@@ -648,13 +649,14 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="Rh6nW" id="5zdrv$9zA2s" role="1bW2Oz">
+                  <node concept="gl6BB" id="2SR9xrsN2s3" role="1bW2Oz">
                     <property role="TrG5h" value="child" />
-                    <node concept="2jxLKc" id="5zdrv$9zA2t" role="1tU5fm" />
+                    <node concept="2jxLKc" id="2SR9xrsN2s4" role="1tU5fm" />
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="ANE8D" id="5zdrv$anNhL" role="2OqNvi" />
           </node>
         </node>
       </node>

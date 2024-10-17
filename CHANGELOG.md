@@ -13,6 +13,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - Adds a caching mechanism for caching the retrieval of 'ILogicalChild' by 'ILogicalChildOwner'
 
+## com.mbeddr.core.base
+
+- Diagrams are not auto-layouted before taking a screenshot.
+
 ## com.mbeddr.mpsutil.ecore
 
 ### Fixed
@@ -105,6 +109,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # June 2024
 
+## General
+
+- Some classloading issues with stubs were fixed.
+
 ## com.mbeddr.mpsutil
 
 ### Deprecated
@@ -165,6 +173,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
+
+## Changes
+
+- The interface `IIsDocumentationComment` is now integrated into the MPS TODO window and the old mbeddr todo viewer was completely removed.
 
 # March 2024
 
