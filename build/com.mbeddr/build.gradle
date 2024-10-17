@@ -39,18 +39,6 @@ task install() {
 
 logger.info "skipresolve_mps: {}, mpsHomeDir: {}", ext.skipresolve_mps, ext.mpsHomeDir
 
-// JDK_HOME required for adding tools.jar into classpath of the forked ant process
-if (!hasProperty("jdk_home")) {
-    def java_home = System.properties['java.home']
-    def jdk_home = java_home
-    if (!file("$jdk_home/lib").exists()) {
-        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
-    }
-    ext.jdk_home = jdk_home
-}
-
-logger.info "jdk_home: $jdk_home"
-
 ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
 
 ext.mps_home = '-Dmps.home=' + mpsHomeDir.getAbsolutePath()
