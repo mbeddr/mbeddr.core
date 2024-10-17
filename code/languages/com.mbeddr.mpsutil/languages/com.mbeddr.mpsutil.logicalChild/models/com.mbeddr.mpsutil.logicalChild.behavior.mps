@@ -63,7 +63,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -109,7 +108,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -324,17 +322,6 @@
     </node>
     <node concept="13hLZK" id="jksL7exwEW" role="13h7CW">
       <node concept="3clFbS" id="jksL7exwEX" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="3hmSi0TnTy5" role="13h7CS">
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="informsOwner" />
-      <node concept="3Tm1VV" id="3hmSi0TnTy6" role="1B3o_S" />
-      <node concept="10P_77" id="3hmSi0To5Xl" role="3clF45" />
-      <node concept="3clFbS" id="3hmSi0TnTy8" role="3clF47">
-        <node concept="3clFbF" id="3hmSi0To5Zp" role="3cqZAp">
-          <node concept="3clFbT" id="3hmSi0To5Zo" role="3clFbG" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="jksL7exBwZ">
