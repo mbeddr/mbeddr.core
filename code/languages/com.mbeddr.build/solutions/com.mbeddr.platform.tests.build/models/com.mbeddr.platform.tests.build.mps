@@ -1555,6 +1555,11 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+        <node concept="1SiIV0" id="bHMJKhDDf7" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDf8" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:776vT$mQZbf" resolve="com.mbeddr.mpsutil.comparator" />
+          </node>
+        </node>
         <node concept="1SiIV0" id="bHMJKhDDf9" role="3bR37C">
           <node concept="3bR9La" id="bHMJKhDDfa" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
@@ -1608,6 +1613,21 @@
             <node concept="3qWCbU" id="5Ap$XSqW8TG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bHMJKhDDfb" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDfc" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bHMJKhDDfd" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDfe" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:vOGyTeKPEA" resolve="com.mbeddr.mpsutil.ecore.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bHMJKhDDff" role="3bR37C">
+          <node concept="3bR9La" id="bHMJKhDDfg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
