@@ -656,6 +656,11 @@
       <node concept="3uibUv" id="FUKXd6ZBkK" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTable" resolve="JTable" />
       </node>
+      <node concept="2ShNRf" id="FUKXd6ZPth" role="33vP2m">
+        <node concept="1pGfFk" id="FUKXd6ZQH3" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JTable.&lt;init&gt;()" resolve="JTable" />
+        </node>
+      </node>
     </node>
     <node concept="2BZ0e9" id="6u6UJCOMnXH" role="2XNbBz">
       <property role="TrG5h" value="model" />
@@ -1085,21 +1090,6 @@
                     <ref role="37wK5l" to="z60i:~BorderLayout.&lt;init&gt;()" resolve="BorderLayout" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="FUKXd6ZNy2" role="3cqZAp">
-          <node concept="37vLTI" id="FUKXd6ZPhd" role="3clFbG">
-            <node concept="2ShNRf" id="FUKXd6ZPth" role="37vLTx">
-              <node concept="1pGfFk" id="FUKXd6ZQH3" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JTable.&lt;init&gt;()" resolve="JTable" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="FUKXd6ZNEH" role="37vLTJ">
-              <node concept="2WthIp" id="FUKXd6ZNy0" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="FUKXd6ZOt_" role="2OqNvi">
-                <ref role="2WH_rO" node="FUKXd6Z$z7" resolve="table" />
               </node>
             </node>
           </node>
