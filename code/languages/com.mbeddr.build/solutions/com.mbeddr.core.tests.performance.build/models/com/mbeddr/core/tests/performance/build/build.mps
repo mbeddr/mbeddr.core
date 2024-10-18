@@ -103,6 +103,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -186,6 +187,7 @@
         <property role="3LESm3" value="15647c29-db71-4cfd-8aee-149f84bd12f4" />
         <property role="TrG5h" value="test.ts.core.performance" />
         <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <property role="2GAjPV" value="true" />
         <node concept="398BVA" id="7eF9rfAuutM" role="3LF7KH">
           <ref role="398BVh" node="2coa6XmoCi3" resolve="mbeddr.core" />
           <node concept="2Ry0Ak" id="7eF9rfAuutN" role="iGT6I">

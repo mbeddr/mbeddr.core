@@ -1,10 +1,16 @@
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 
 plugins {
     id 'de.itemis.mps.gradle.common'
 }
 
+apply plugin: 'download-jbr'
+
+downloadJbr {
+    jbrVersion = '17.0.8.1-b1000.32'
+}
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
@@ -45,18 +51,6 @@ task install() {
 }
 
 logger.info "skipresolve_mps: {}, mpsHomeDir: {}", ext.skipresolve_mps, ext.mpsHomeDir
-
-// JDK_HOME required for adding tools.jar into classpath of the forked ant process
-if (!hasProperty("jdk_home")) {
-    def java_home = System.properties['java.home']
-    def jdk_home = java_home
-    if (!file("$jdk_home/lib").exists()) {
-        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
-    }
-    ext.jdk_home = jdk_home
-}
-
-logger.info "jdk_home: $jdk_home"
 
 ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
 
@@ -191,7 +185,9 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 }
 
 tasks.register('migrate', MpsMigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages')
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
 
@@ -203,7 +199,9 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages')
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
 
