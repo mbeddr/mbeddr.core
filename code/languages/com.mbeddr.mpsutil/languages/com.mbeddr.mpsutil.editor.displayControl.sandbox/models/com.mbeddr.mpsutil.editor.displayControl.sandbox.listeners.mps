@@ -57,7 +57,7 @@
         <node concept="RRSsy" id="1hUDzKRNoA$" role="3cqZAp">
           <property role="RRSoG" value="h1akgim/info" />
           <node concept="Xl_RD" id="1hUDzKRNoAA" role="RRSoy">
-            <property role="Xl_RC" value="HideableConceptListner - Run" />
+            <property role="Xl_RC" value="HideableConceptListner: run" />
           </node>
         </node>
         <node concept="3clFbF" id="1hUDzKRLYEI" role="3cqZAp">

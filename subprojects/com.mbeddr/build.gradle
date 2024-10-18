@@ -1,0 +1,216 @@
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
+
+plugins {
+    id 'de.itemis.mps.gradle.common'
+}
+
+apply plugin: 'download-jbr'
+
+downloadJbr {
+    jbrVersion = '17.0.8.1-b1000.32'
+}
+// path variables
+// If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
+// the root directory).
+ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
+ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
+
+def userHome = System.properties['user.home']
+def mpsPluginsDirPattern
+def os_name = System.properties['os.name'].toLowerCase()
+// calculate system-specific plugins directory (since MPS 2020.1) according to:
+// https://www.jetbrains.com/help/idea/tuning-the-ide.html?_ga=2.229302868.95678467.1595072035-1152171669.1521775253#plugins-directory
+if (os_name.contains('mac')) {
+    mpsPluginsDirPattern = "$userHome/Library/Application Support/JetBrains/%s/plugins"
+} else if (os_name.contains('win')) {
+    mpsPluginsDirPattern = "${System.getenv('APPDATA')}\\JetBrains\\%s\\plugins"
+} else {
+    mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
+}
+
+if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+} else {
+    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+}
+
+task install() {
+    // dependencies to this task are added dynamically from other scripts (com.mbeddr.platform, com.mbeddr.languages)
+    description "Install the required plugins into the MPS plugin repository"
+    group "Build Setup"
+    doFirst {
+        // check parent gradle file for definition of the variables
+        println "Installing required mbeddr plugins to '$mpsPluginsDir'"
+        if (!project.hasProperty("MPS_PATHS_SELECTOR")) {
+            println "To change 'MPS<...>' part, pass MPS_PATHS_SELECTOR property to gradle with -PMPS_PATHS_SELECTOR=<custom path selector>"
+            println "The path selector only contains the actual MPS version, for instance \"MPS2017.3\", not the full path to the user plugin directory."
+        }
+    }
+}
+
+logger.info "skipresolve_mps: {}, mpsHomeDir: {}", ext.skipresolve_mps, ext.mpsHomeDir
+
+ext.artifactsDir = file(rootProject.projectDir.absolutePath + "/artifacts")
+
+Map<String, Object> antSystemProperties = [
+        'mps.home': mpsHomeDir,
+        'build.dir': rootProject.layout.projectDirectory,
+        'artifacts.root': rootProject.file('artifacts'),
+        'mbeddr.github.core.home': rootProject.layout.projectDirectory,
+        'build': mbeddrBuildNumber,
+        'major.version': mbeddrMajor,
+        'minor.version': mbeddrMinor,
+        'build.jna.library.path': new File(mpsHomeDir, "lib/jna/${System.getProperty('os.arch')}")
+]
+
+
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs =
+        antSystemProperties.collect { "-D${it.key}=${it.value}".toString() }
+
+// ant script locations
+ext.scriptsBasePath = rootProject.file("scripts").absolutePath
+
+// mbeddr properties
+subprojects {
+    // repository urls
+    configureRepositories(it)
+
+    // configs
+    configurations {
+        mps
+        mpsExtensions
+        ant_lib
+    }
+
+    dependencies {
+        mps "com.jetbrains:mps:$mpsBuild"
+        mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
+        ant_lib "org.apache.ant:ant-junit:1.10.1"
+    }
+
+    ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
+}
+
+
+File scriptFile(String relativePath) {
+    new File("$rootDir/scripts/$relativePath")
+}
+
+private static void configureRepositories(Project project) {
+    project.pluginManager.withPlugin('maven-publish') {
+        project.publishing {
+            repositories {
+                maven {
+                    url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+                    if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                        credentials {
+                            username project.getProperty('artifacts.itemis.cloud.user')
+                            password project.getProperty('artifacts.itemis.cloud.pw')
+                        }
+                    }
+                }
+
+                //mbeddr build is "master" also for maintenance branches
+                //using the closure to delay evaluate from configuration to execution phase is important because the
+                //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
+                //if no closure is used the build script won't compile.
+                if({project.mbeddrBuild}() == "master") {
+                    maven {
+                        name = "GitHubPackages"
+                        url = "https://maven.pkg.github.com/mbeddr/mbeddr.core"
+                        if (project.hasProperty("gpr.token")) {
+                            credentials {
+                                username = project.findProperty("gpr.user")
+                                password = project.findProperty("gpr.token")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    project.repositories {
+        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
+        if (!disableMavenLocal) {
+            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+            mavenLocal()
+        }
+        for (repoUrl in project.dependencyRepositories) {
+            maven {
+                url repoUrl
+                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                    credentials {
+                        username project.getProperty('artifacts.itemis.cloud.user')
+                        password project.getProperty('artifacts.itemis.cloud.pw')
+                    }
+                }
+            }
+        }
+        mavenCentral()
+    }
+}
+
+
+tasks.register('printVersions') {
+    doLast {
+        println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
+        println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
+    }
+}
+
+tasks.register('printRepositories') {
+    doLast {
+        println "snapshotRepository: $snapshotRepository"
+        println "releaseRepository: $releaseRepository"
+        println "dependencyRepositories: $dependencyRepositories"
+    }
+}
+
+List<String> projectsInDependencyOrder = [
+        'com.mbeddr.mpsutil',
+//        'com.mbeddr.doc',
+//        'com.mbeddr.doc.aspect',
+//        'com.mbeddr.core',
+//        'com.mbeddr.ext',
+//        'com.mbeddr.cc',
+//        'com.mbeddr.xmodel',
+        'com.mbeddr.build',
+]
+
+List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.collect {
+    new File(rootProject.file('code/languages'), it)
+}
+
+tasks.register('migrate', MpsMigrate) {
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    mpsHome = mpsHomeDir
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+
+    folderMacros['mbeddr.github.core.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = "4G"
+}
+
+tasks.register('remigrate', Remigrate) {
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
+    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+
+    mpsHome = mpsHomeDir
+    projectDirectories.from(projectDirectoriesInDependencyOrder)
+
+    folderMacros['mbeddr.github.core.home'] = rootProject.layout.projectDirectory
+
+    pluginRoots.from(new File(mpsHomeDir, 'plugins'))
+
+    maxHeapSize = "4G"
+}
+
+// For the remigrate backend
+configureRepositories(project)

@@ -59,13 +59,13 @@
   <node concept="1TIwiD" id="2wiIWbHCD63">
     <property role="EcuMT" value="2887576756982813059" />
     <property role="TrG5h" value="MyChild" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2wiIWbHCDAN">
     <property role="EcuMT" value="2887576756982815155" />
     <property role="TrG5h" value="MyConcept" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2wiIWbHCFlm" role="1TKVEi">
       <property role="IQ2ns" value="2887576756982822230" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

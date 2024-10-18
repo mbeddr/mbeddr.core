@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -20,3 +20,4 @@
     <module reference="a83addf6-6ea9-4504-83d6-0211dab89b0f(com.mbeddr.mpsutil.comparator.diff.demo.genplan)" version="0" />
   </dependencyVersions>
 </solution>
+

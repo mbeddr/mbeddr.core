@@ -178,13 +178,6 @@
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265560" name="project" index="9lYEk" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
@@ -791,15 +784,6 @@
                                   <node concept="3Tmbuc" id="2u2KgtdlouN" role="1B3o_S" />
                                   <node concept="3cqZAl" id="2u2KgtdlouP" role="3clF45" />
                                   <node concept="3clFbS" id="2u2KgtdlouT" role="3clF47">
-                                    <node concept="2xdQw9" id="2u2Kgtdm5P5" role="3cqZAp">
-                                      <property role="2xdLsb" value="gZ5fh_4/error" />
-                                      <node concept="Xl_RD" id="2u2Kgtdm5P7" role="9lYJi">
-                                        <property role="Xl_RC" value="OK" />
-                                      </node>
-                                      <node concept="37vLTw" id="2u2KgtdmC0f" role="9lYEk">
-                                        <ref role="3cqZAo" node="3zBhpJM4Blc" resolve="mpsProject" />
-                                      </node>
-                                    </node>
                                     <node concept="1QHqEO" id="2u2KgtdluI1" role="3cqZAp">
                                       <node concept="1QHqEC" id="2u2KgtdluI3" role="1QHqEI">
                                         <node concept="3clFbS" id="2u2KgtdluI5" role="1bW5cS">

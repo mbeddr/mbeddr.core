@@ -583,7 +583,7 @@
             <node concept="3clFbS" id="ShU0rYY_4z" role="3clFbx">
               <node concept="2MkqsV" id="ShU0rYY_yj" role="3cqZAp">
                 <node concept="Xl_RD" id="ShU0rYY_y_" role="2MkJ7o">
-                  <property role="Xl_RC" value="Condition must be in the form of \&quot;node.match(&lt;pattern&gt;)\&quot; when pattern is used!" />
+                  <property role="Xl_RC" value="condition must be in the form of \&quot;node.match(&lt;pattern&gt;)\&quot; when pattern is used!" />
                 </node>
                 <node concept="1YBJjd" id="ShU0rYY_Hy" role="1urrMF">
                   <ref role="1YBMHb" node="ShU0rYY9rG" resolve="condition" />
