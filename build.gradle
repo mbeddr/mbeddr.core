@@ -27,7 +27,7 @@ ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mps
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
-ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
+ext.ciBuild = project.hasProperty("forceCI") || project.hasProperty("teamcity")
 
 afterEvaluate {
     ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
