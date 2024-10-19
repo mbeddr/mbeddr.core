@@ -97,16 +97,6 @@ subprojects {
         }
         // locally versions and all branches other than master/maintenance*/mps* are SNAPSHOTs
         if (ciBuild) {
-            // setting mbeddrMajor
-            if (project.hasProperty('mbeddrMajor')) {
-                ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-            }
-
-            // setting mbeddrMinor
-            if (project.hasProperty('mbeddrMinor')) {
-                ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-            }
-
             if (project.hasProperty("mbeddrBuildCounter")) {
                 ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
             } else {
