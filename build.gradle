@@ -15,9 +15,6 @@ downloadJbr {
     jbrVersion = '17.0.8.1-b1000.32'
 }
 
-ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
-ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
-
 //MPS version
 ext.mpsMajor = "2023.2"
 ext.mpsBuild = "2023.2.2"
@@ -68,20 +65,6 @@ ext.additionalPomInfo = {
 subprojects {
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
-
-    // switch to snapshot/release repositories passed with -P option via command line, if any,
-    // or use default snapshot/release repositories otherwise
-    ext.snapshotRepository = project.findProperty('snapshotRepository') ?: defaultSnapshotRepository
-    ext.releaseRepository = project.findProperty('releaseRepository') ?: defaultReleaseRepository
-
-    // use depencency repositories passed as comma-separated list with -P option via command line, if any,
-    // or use default snapshot/release repositories otherwise
-    // TODO: String check is only required due to multiple executions of this block for each subproject - check if this can be refactored to a single global init
-    if (project.findProperty('dependencyRepositories') instanceof String) {
-        ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
-    } else {
-        ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
-    }
 
     ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
     if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
