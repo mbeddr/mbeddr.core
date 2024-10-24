@@ -45,6 +45,7 @@ dependencies {
 }
 
 task resolve_mbeddr_platform() {
+    dependsOn(configurations.mbeddrPlatform)
     doLast {
         copy {
             from {
@@ -65,9 +66,7 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
-def mbeddrPlatformDependency
-
-task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', configurations.mbeddrPlatform]) {
+task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', 'resolve_mbeddr_platform']) {
     script script_build_mbeddr
     outputs.dir("$artifactsDir/mbeddr")
 }
