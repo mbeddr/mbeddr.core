@@ -128,15 +128,28 @@ task test_mbeddr_platform(type: TestLanguages, dependsOn: [build_platform, gener
     targets 'check'
 }
 
+tasks.register('test') {
+    dependsOn(test_mbeddr_platform)
+}
+
+tasks.named('check') {
+    dependsOn('test')
+}
+
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
 }
 
-task package_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
+task package_mbeddrPlatform(type: Zip, dependsOn: build_platform) {
     archiveFileName = 'com.mbeddr.platform.zip'
     from artifactsDir
     include "com.mbeddr.platform/**"
 }
+
+artifacts {
+    'default'(package_mbeddrPlatform)
+}
+
 
 task defaultWrapper(dependsOn: build_platform) {
     doFirst {
