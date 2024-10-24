@@ -14,10 +14,8 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="gtp9" ref="r:007d0985-20e2-4d70-80f1-d0de1aff1076(com.mbeddr.mpsutil.common.graph)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
-    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
-    <import index="cfsy" ref="822a7acd-f487-45f5-bbb9-1ce595a1705f/java:org.apache.commons.lang.mutable(com.mbeddr.mpsutil.ecore.stubs/)" />
     <import index="3o3z" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.google.common.collect(MPS.IDEA/)" />
+    <import index="qhup" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.mutable(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -242,11 +240,11 @@
             <node concept="3cpWsn" id="9jWrhFjvJ0" role="3cpWs9">
               <property role="TrG5h" value="expensiveCount" />
               <node concept="3uibUv" id="9jWrhFjvJ1" role="1tU5fm">
-                <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
+                <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
               </node>
               <node concept="2ShNRf" id="9jWrhFjvK6" role="33vP2m">
                 <node concept="1pGfFk" id="9jWrhFjvJX" role="2ShVmc">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
                   <node concept="3cmrfG" id="9jWrhFjvKE" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -293,7 +291,7 @@
                           <ref role="3cqZAo" node="9jWrhFjvJ0" resolve="expensiveCount" />
                         </node>
                         <node concept="liA8E" id="9jWrhFjUDf" role="2OqNvi">
-                          <ref role="37wK5l" to="cfsy:~MutableInt.increment()" resolve="increment" />
+                          <ref role="37wK5l" to="qhup:~MutableInt.increment()" resolve="increment" />
                         </node>
                       </node>
                     </node>
@@ -387,7 +385,7 @@
                   <ref role="3cqZAo" node="9jWrhFjvJ0" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl2mE" role="2OqNvi">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -475,7 +473,7 @@
                   <ref role="3cqZAo" node="9jWrhFjvJ0" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFkOYI" role="2OqNvi">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -498,11 +496,11 @@
             <node concept="3cpWsn" id="9jWrhFl41r" role="3cpWs9">
               <property role="TrG5h" value="expensiveCount" />
               <node concept="3uibUv" id="9jWrhFl41s" role="1tU5fm">
-                <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
+                <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
               </node>
               <node concept="2ShNRf" id="9jWrhFl41t" role="33vP2m">
                 <node concept="1pGfFk" id="9jWrhFl41u" role="2ShVmc">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
                   <node concept="3cmrfG" id="9jWrhFl41v" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -514,11 +512,11 @@
             <node concept="3cpWsn" id="9jWrhFl5iH" role="3cpWs9">
               <property role="TrG5h" value="m" />
               <node concept="3uibUv" id="9jWrhFl5iI" role="1tU5fm">
-                <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
+                <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
               </node>
               <node concept="2ShNRf" id="9jWrhFl5Ea" role="33vP2m">
                 <node concept="1pGfFk" id="9jWrhFl5E1" role="2ShVmc">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.&lt;init&gt;(int)" resolve="MutableInt" />
                   <node concept="3cmrfG" id="9jWrhFla4D" role="37wK5m">
                     <property role="3cmrfH" value="77" />
                   </node>
@@ -537,7 +535,7 @@
               </node>
               <node concept="2YIFZM" id="9jWrhFl41$" role="33vP2m">
                 <ref role="37wK5l" to="7wpd:9jWrhFiXuJ" resolve="lazy" />
-                <ref role="1Pybhc" to="7wpd:9jWrhFiXtZ" resolve="LazyInitCheck" />
+                <ref role="1Pybhc" to="7wpd:9jWrhFiXtZ" resolve="LazyInitWithCheck" />
                 <node concept="1bVj0M" id="9jWrhFl41_" role="37wK5m">
                   <node concept="3clFbS" id="9jWrhFl41A" role="1bW5cS">
                     <node concept="3SKdUt" id="9jWrhFl41B" role="3cqZAp">
@@ -565,7 +563,7 @@
                           <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                         </node>
                         <node concept="liA8E" id="9jWrhFl41L" role="2OqNvi">
-                          <ref role="37wK5l" to="cfsy:~MutableInt.increment()" resolve="increment" />
+                          <ref role="37wK5l" to="qhup:~MutableInt.increment()" resolve="increment" />
                         </node>
                       </node>
                     </node>
@@ -580,7 +578,7 @@
                   <node concept="37vLTG" id="9jWrhFl79Q" role="1bW2Oz">
                     <property role="TrG5h" value="m" />
                     <node concept="3uibUv" id="9jWrhFl7A$" role="1tU5fm">
-                      <ref role="3uigEE" to="cfsy:~MutableInt" resolve="MutableInt" />
+                      <ref role="3uigEE" to="qhup:~MutableInt" resolve="MutableInt" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="9jWrhFl73g" role="1bW5cS">
@@ -633,7 +631,7 @@
                             <ref role="3cqZAo" node="9jWrhFl79Q" resolve="m" />
                           </node>
                           <node concept="liA8E" id="9jWrhFl9tj" role="2OqNvi">
-                            <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                            <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                           </node>
                         </node>
                       </node>
@@ -727,7 +725,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl42k" role="2OqNvi">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -819,7 +817,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFl42Q" role="2OqNvi">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -883,7 +881,7 @@
                 <ref role="3cqZAo" node="9jWrhFl5iH" resolve="m" />
               </node>
               <node concept="liA8E" id="9jWrhFlbnC" role="2OqNvi">
-                <ref role="37wK5l" to="cfsy:~MutableInt.increment()" resolve="increment" />
+                <ref role="37wK5l" to="qhup:~MutableInt.increment()" resolve="increment" />
               </node>
             </node>
           </node>
@@ -921,7 +919,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFlbJY" role="2OqNvi">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -1004,7 +1002,7 @@
                   <ref role="3cqZAo" node="9jWrhFl41r" resolve="expensiveCount" />
                 </node>
                 <node concept="liA8E" id="9jWrhFldb9" role="2OqNvi">
-                  <ref role="37wK5l" to="cfsy:~MutableInt.getValue()" resolve="getValue" />
+                  <ref role="37wK5l" to="qhup:~MutableInt.getValue()" resolve="getValue" />
                 </node>
               </node>
             </node>
@@ -2097,7 +2095,7 @@
                 <property role="3cmrfH" value="1" />
               </node>
               <node concept="37vLTw" id="1BQevbW9Vw4" role="37wK5m">
-                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc" />
+                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc2" />
               </node>
               <node concept="3uibUv" id="1BQevbW9Vw5" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
@@ -2247,7 +2245,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="1BQevbW9Vwq" role="37wK5m">
-                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc" />
+                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc2" />
               </node>
               <node concept="3uibUv" id="1BQevbW9Vwr" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
@@ -2327,7 +2325,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="1BQevbW9VwU" role="37wK5m">
-                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc" />
+                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc2" />
               </node>
               <node concept="3uibUv" id="1BQevbW9VwV" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
@@ -2425,7 +2423,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="1BQevbW9Vxw" role="37wK5m">
-                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc" />
+                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc2" />
               </node>
               <node concept="3uibUv" id="1BQevbW9Vxx" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
@@ -2492,7 +2490,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="1BQevbW9VxY" role="37wK5m">
-                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc" />
+                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc2" />
               </node>
               <node concept="3uibUv" id="1BQevbW9VxZ" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
@@ -2597,7 +2595,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="1BQevbW9VyE" role="37wK5m">
-                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc" />
+                <ref role="3cqZAo" node="1BQevbW8OqS" resolve="successorFunc2" />
               </node>
               <node concept="3uibUv" id="1BQevbW9VyF" role="3PaCim">
                 <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
@@ -2763,7 +2761,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="1BQevbWbAHs" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="15s5l7" id="QrefRhl9tG" role="lGtFl">
@@ -2805,7 +2803,7 @@
       </node>
       <node concept="3Tm1VV" id="1BQevbWbEVv" role="1B3o_S" />
       <node concept="3uibUv" id="1BQevbWbGcY" role="1zkMxy">
-        <ref role="3uigEE" node="1BQevbWb_fV" resolve="FullTraversal" />
+        <ref role="3uigEE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
       </node>
       <node concept="3clFb_" id="1BQevbWbGUn" role="jymVt">
         <property role="TrG5h" value="finishNow" />
@@ -2830,7 +2828,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="1BQevbWbGUP" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
     </node>
@@ -2845,12 +2843,12 @@
             <node concept="3cpWsn" id="1BQevbWbK6S" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWbJUF" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWb_fV" resolve="FullTraversal" />
+                <ref role="3uigEE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWbK6T" role="33vP2m">
                 <node concept="HV5vD" id="1BQevbWbK6U" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="HV5vE" node="1BQevbWb_fV" resolve="FullTraversal" />
+                  <ref role="HV5vE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
                 </node>
               </node>
             </node>
@@ -2913,12 +2911,12 @@
             <node concept="3cpWsn" id="1BQevbWbSiw" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWbSix" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWb_fV" resolve="FullTraversal" />
+                <ref role="3uigEE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWbSiy" role="33vP2m">
                 <node concept="HV5vD" id="1BQevbWbSiz" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="HV5vE" node="1BQevbWb_fV" resolve="FullTraversal" />
+                  <ref role="HV5vE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
                 </node>
               </node>
             </node>
@@ -2980,12 +2978,12 @@
             <node concept="3cpWsn" id="1BQevbWbZut" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWbZuu" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWb_fV" resolve="FullTraversal" />
+                <ref role="3uigEE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWbZuv" role="33vP2m">
                 <node concept="HV5vD" id="1BQevbWbZuw" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="HV5vE" node="1BQevbWb_fV" resolve="FullTraversal" />
+                  <ref role="HV5vE" node="1BQevbWb_fV" resolve="TraversalClassAPI_NoCycles_Test.FullTraversal" />
                 </node>
               </node>
             </node>
@@ -3072,11 +3070,11 @@
             <node concept="3cpWsn" id="1BQevbWc2Wx" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWc2S3" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWbF$f" resolve="SearchTraversal" />
+                <ref role="3uigEE" node="1BQevbWbF$f" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWc2Wy" role="33vP2m">
                 <node concept="1pGfFk" id="1BQevbWc62R" role="2ShVmc">
-                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="SearchTraversal" />
+                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
                   <node concept="3cmrfG" id="1BQevbWc8Dx" role="37wK5m">
                     <property role="3cmrfH" value="4" />
                   </node>
@@ -3174,11 +3172,11 @@
             <node concept="3cpWsn" id="1BQevbWc4rl" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWc4rm" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWbF$f" resolve="SearchTraversal" />
+                <ref role="3uigEE" node="1BQevbWbF$f" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWc4rn" role="33vP2m">
                 <node concept="1pGfFk" id="1BQevbWc62P" role="2ShVmc">
-                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="SearchTraversal" />
+                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
                   <node concept="3cmrfG" id="1BQevbWc8Fq" role="37wK5m">
                     <property role="3cmrfH" value="77" />
                   </node>
@@ -3243,11 +3241,11 @@
             <node concept="3cpWsn" id="1BQevbWc90t" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWc90u" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWbF$f" resolve="SearchTraversal" />
+                <ref role="3uigEE" node="1BQevbWbF$f" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWc90v" role="33vP2m">
                 <node concept="1pGfFk" id="1BQevbWc90w" role="2ShVmc">
-                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="SearchTraversal" />
+                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
                   <node concept="3cmrfG" id="1BQevbWc90x" role="37wK5m">
                     <property role="3cmrfH" value="4" />
                   </node>
@@ -3352,11 +3350,11 @@
             <node concept="3cpWsn" id="1BQevbWccgd" role="3cpWs9">
               <property role="TrG5h" value="t" />
               <node concept="3uibUv" id="1BQevbWccge" role="1tU5fm">
-                <ref role="3uigEE" node="1BQevbWbF$f" resolve="SearchTraversal" />
+                <ref role="3uigEE" node="1BQevbWbF$f" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
               </node>
               <node concept="2ShNRf" id="1BQevbWccgf" role="33vP2m">
                 <node concept="1pGfFk" id="1BQevbWccgg" role="2ShVmc">
-                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="SearchTraversal" />
+                  <ref role="37wK5l" node="1BQevbWc5V_" resolve="TraversalClassAPI_NoCycles_Test.SearchTraversal" />
                   <node concept="3cmrfG" id="1BQevbWcdbx" role="37wK5m">
                     <property role="3cmrfH" value="1" />
                   </node>

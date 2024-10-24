@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:057f1e33-9c13-431f-bf95-fe15efaa6624(test.com.mbeddr.mpsutil.ecore.modelImportExport.testInstance1)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="98309aa4-0aee-4c83-b79a-2ab22ee75043" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1" version="0" />
   </languages>

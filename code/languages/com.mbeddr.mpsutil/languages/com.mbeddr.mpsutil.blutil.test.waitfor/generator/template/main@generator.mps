@@ -318,14 +318,14 @@
                           <node concept="3cpWs3" id="4IjegxhmQYl" role="RRSoy">
                             <node concept="3cpWs3" id="4IjegxhmQYn" role="3uHU7B">
                               <node concept="Xl_RD" id="4IjegxhmQYo" role="3uHU7B">
-                                <property role="Xl_RC" value="Timeout of " />
+                                <property role="Xl_RC" value="timeout of " />
                               </node>
                               <node concept="37vLTw" id="4IjegxhmQYp" role="3uHU7w">
                                 <ref role="3cqZAo" node="3anL894Ttwc" resolve="timeout" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="4IjegxhmQYm" role="3uHU7w">
-                              <property role="Xl_RC" value="ms exceeded." />
+                              <property role="Xl_RC" value="ms exceeded" />
                             </node>
                           </node>
                         </node>
@@ -471,7 +471,7 @@
                         <node concept="RRSsy" id="4IjegxhmzEz" role="3cqZAp">
                           <property role="RRSoG" value="h1akgim/info" />
                           <node concept="Xl_RD" id="4IjegxhmzE_" role="RRSoy">
-                            <property role="Xl_RC" value="wait for condition to come true" />
+                            <property role="Xl_RC" value="waiting for condition to come true" />
                           </node>
                         </node>
                         <node concept="3clFbF" id="3anL894Tuif" role="3cqZAp">

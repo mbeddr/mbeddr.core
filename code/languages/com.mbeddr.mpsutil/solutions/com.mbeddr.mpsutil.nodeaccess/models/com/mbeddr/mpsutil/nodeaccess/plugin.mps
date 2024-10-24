@@ -954,7 +954,7 @@
                       <node concept="3cpWs3" id="7CAL8BWt7f" role="3uHU7B">
                         <node concept="3cpWs3" id="7CAL8BWt7g" role="3uHU7B">
                           <node concept="Xl_RD" id="7CAL8BWt7h" role="3uHU7B">
-                            <property role="Xl_RC" value="Cannot open node in project named '" />
+                            <property role="Xl_RC" value="cannot open node in project named '" />
                           </node>
                           <node concept="37vLTw" id="7CAL8BWt7i" role="3uHU7w">
                             <ref role="3cqZAo" node="2N1CSrzLgCf" resolve="projectName" />

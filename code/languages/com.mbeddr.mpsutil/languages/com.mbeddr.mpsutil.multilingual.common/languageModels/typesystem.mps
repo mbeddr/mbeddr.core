@@ -73,7 +73,7 @@
         <node concept="3clFbS" id="3TSnT3IjwmF" role="3clFbx">
           <node concept="a7r0C" id="3TSnT3IjFCd" role="3cqZAp">
             <node concept="Xl_RD" id="3TSnT3IjFCF" role="a7wSD">
-              <property role="Xl_RC" value="ResourceBundle of referenced key should be in the same model" />
+              <property role="Xl_RC" value="resource bundle of referenced key should be in the same model" />
             </node>
             <node concept="1YBJjd" id="3TSnT3IjFHR" role="1urrMF">
               <ref role="1YBMHb" node="3TSnT3Ijpai" resolve="iMessageKeyHolder" />

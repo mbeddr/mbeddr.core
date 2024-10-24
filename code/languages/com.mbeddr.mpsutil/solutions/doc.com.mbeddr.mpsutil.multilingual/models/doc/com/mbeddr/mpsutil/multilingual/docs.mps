@@ -5,7 +5,7 @@
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
-    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="-1" />
+    <use id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta" version="1" />
     <use id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="-1" />
@@ -31,12 +31,6 @@
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
       <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLNoOutputRenderer" flags="ng" index="1TaS0h" />
-    </language>
-    <language id="86ef8290-12bb-4ca7-947f-093788f263a9" name="jetbrains.mps.lang.project">
-      <concept id="1855399583446016268" name="jetbrains.mps.lang.project.structure.ModuleReference" flags="ng" index="A2Dkr">
-        <property id="1855399583446016270" name="qualifiedName" index="A2Dkp" />
-        <property id="1855399583446016269" name="uuid" index="A2Dkq" />
-      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
@@ -258,6 +252,12 @@
         <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -280,7 +280,7 @@
     </language>
     <language id="e06345c7-da82-4f8b-bd44-1425fe158640" name="com.mbeddr.doc.meta">
       <concept id="4411878964391805161" name="com.mbeddr.doc.meta.structure.AbstractModuleRefWord" flags="ng" index="XFqhy">
-        <child id="4411878964391805166" name="moduleRefOld" index="XFqh_" />
+        <child id="8480291644168929007" name="identity" index="2nPJaY" />
       </concept>
       <concept id="8408742697223012410" name="com.mbeddr.doc.meta.structure.LanguageRefWord" flags="ng" index="3R4DFk" />
     </language>
@@ -395,36 +395,36 @@
                   <property role="19SUeA" value="All of the following MPS languages:\n" />
                 </node>
                 <node concept="3R4DFk" id="3TSnT3IxdUA" role="19SJt6">
-                  <node concept="A2Dkr" id="3TSnT3IxiAP" role="XFqh_">
-                    <property role="A2Dkp" value="com.mbeddr.mpsutil.multilingual.common" />
-                    <property role="A2Dkq" value="23f985f2-965f-4af1-aee8-a32677429514" />
+                  <node concept="1dCxOk" id="4AENUaOqpQh" role="2nPJaY">
+                    <property role="1XweGW" value="23f985f2-965f-4af1-aee8-a32677429514" />
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.multilingual.common" />
                   </node>
                 </node>
                 <node concept="19SUe$" id="3TSnT3IxiAZ" role="19SJt6">
                   <property role="19SUeA" value=",\n" />
                 </node>
                 <node concept="3R4DFk" id="3TSnT3IxiAR" role="19SJt6">
-                  <node concept="A2Dkr" id="3TSnT3IxiCt" role="XFqh_">
-                    <property role="A2Dkp" value="com.mbeddr.mpsutil.multilingual.baseLanguage" />
-                    <property role="A2Dkq" value="d2a1d976-43a2-462f-ac3a-9b258ced839d" />
+                  <node concept="1dCxOk" id="4FginuvUeP$" role="2nPJaY">
+                    <property role="1XweGW" value="d2a1d976-43a2-462f-ac3a-9b258ced839d" />
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.multilingual.baseLanguage" />
                   </node>
                 </node>
                 <node concept="19SUe$" id="3TSnT3IxdUB" role="19SJt6">
                   <property role="19SUeA" value=",\n" />
                 </node>
                 <node concept="3R4DFk" id="3TSnT3IxiBE" role="19SJt6">
-                  <node concept="A2Dkr" id="3TSnT3IxiCx" role="XFqh_">
-                    <property role="A2Dkp" value="com.mbeddr.mpsutil.multilingual.editor" />
-                    <property role="A2Dkq" value="13a9e567-3b9e-4ccf-b94c-9155f5e78586" />
+                  <node concept="1dCxOk" id="4FginuvUeP_" role="2nPJaY">
+                    <property role="1XweGW" value="13a9e567-3b9e-4ccf-b94c-9155f5e78586" />
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.multilingual.editor" />
                   </node>
                 </node>
                 <node concept="19SUe$" id="3TSnT3IxiBD" role="19SJt6">
                   <property role="19SUeA" value=",\n" />
                 </node>
                 <node concept="3R4DFk" id="3TSnT3IxiBn" role="19SJt6">
-                  <node concept="A2Dkr" id="3TSnT3IxiCz" role="XFqh_">
-                    <property role="A2Dkp" value="com.mbeddr.mpsutil.multilingual.concept" />
-                    <property role="A2Dkq" value="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d" />
+                  <node concept="1dCxOk" id="4FginuvUePA" role="2nPJaY">
+                    <property role="1XweGW" value="d0fe2e60-9f9c-4d3c-94aa-de9257b67a6d" />
+                    <property role="1XxBO9" value="com.mbeddr.mpsutil.multilingual.concept" />
                   </node>
                 </node>
                 <node concept="19SUe$" id="3TSnT3IxiBm" role="19SJt6" />
@@ -774,9 +774,9 @@
             <property role="19SUeA" value="Both can be used at any place a simple Java string constant can be used. Make sure the MPS language " />
           </node>
           <node concept="3R4DFk" id="3TSnT3I_Wvm" role="19SJt6">
-            <node concept="A2Dkr" id="3TSnT3I_Wvr" role="XFqh_">
-              <property role="A2Dkp" value="com.mbeddr.mpsutil.multilingual.baseLanguage" />
-              <property role="A2Dkq" value="d2a1d976-43a2-462f-ac3a-9b258ced839d" />
+            <node concept="1dCxOk" id="4FginuvUePB" role="2nPJaY">
+              <property role="1XweGW" value="d2a1d976-43a2-462f-ac3a-9b258ced839d" />
+              <property role="1XxBO9" value="com.mbeddr.mpsutil.multilingual.baseLanguage" />
             </node>
           </node>
           <node concept="19SUe$" id="3TSnT3I_Wvn" role="19SJt6">
