@@ -58,7 +58,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
@@ -80,7 +80,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -115,6 +115,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
+        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -233,6 +234,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.allScripts" />
         <property role="3LESm3" value="752496a0-da43-4b5e-bd15-ea1a5aa211f6" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="1RubBbpfBdf" role="3bR37C">
           <node concept="3bR9La" id="1RubBbpfBdg" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:5xa9wY2vhb7" resolve="jetbrains.mps.execution.configurations.implementation.plugin" />
@@ -303,6 +305,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.core.tests.build" />
         <property role="3LESm3" value="d47a3921-8b42-4664-bed6-25e3e4fd6efb" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="2coa6XmWDD_" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWDDA" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
@@ -375,6 +378,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.core.tests.performance.build" />
         <property role="3LESm3" value="b4b96a11-a253-4152-8bd6-6444c1b087e8" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="2coa6XmWDsP" role="3bR37C">
           <node concept="3bR9La" id="2coa6XmWDsQ" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
@@ -447,6 +451,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.cc.tests.dev.build" />
         <property role="3LESm3" value="ffd31df9-5187-4c9a-bb4f-d84e5f59ffd5" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="2UI1wmC2X8U" role="3bR37C">
           <node concept="3bR9La" id="2UI1wmC2X8V" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
@@ -519,6 +524,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.ext.tests.build" />
         <property role="3LESm3" value="06f4ccb3-313d-4d48-9667-87a8fb963fb2" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="2UI1wmC2Qwz" role="3bR37C">
           <node concept="3bR9La" id="2UI1wmC2Qw$" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
@@ -594,6 +600,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.platform" />
         <property role="3LESm3" value="3ae9cfda-f938-4524-b4ca-fbcba3b0525b" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="6ucYLjoxZFR" role="3bR37C">
           <node concept="3bR9La" id="6ucYLjoxZFS" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
@@ -656,6 +663,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.platform.tests.build" />
         <property role="3LESm3" value="c0ea564d-353d-4607-8b37-02e98106a159" />
+        <property role="2GAjPV" value="true" />
         <node concept="55IIr" id="5WPcUZfpqH_" role="3LF7KH">
           <node concept="2Ry0Ak" id="5WPcUZfpqHK" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -726,6 +734,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.build" />
         <property role="3LESm3" value="7ac0dfb8-7d5f-4573-ab80-81af2106ce03" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="3AVJcIMl$Ko" role="3bR37C">
           <node concept="3bR9La" id="3AVJcIMl$Kp" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
@@ -798,6 +807,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.xmodel.build" />
         <property role="3LESm3" value="f784c90b-1ff6-440a-9cf3-266de03c53ec" />
+        <property role="2GAjPV" value="true" />
         <node concept="1SiIV0" id="3qyGNHcUY08" role="3bR37C">
           <node concept="3bR9La" id="3qyGNHcUY09" role="1SiIV1">
             <ref role="3bR37D" node="2coa6XmWDDt" resolve="com.mbeddr.core.tests.build" />
