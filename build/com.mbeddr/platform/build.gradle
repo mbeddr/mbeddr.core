@@ -1,5 +1,5 @@
 plugins {
-    id 'lifecycle-base'
+    id 'base'
 }
 
 import de.itemis.mps.gradle.*
@@ -114,6 +114,11 @@ task package_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
     from artifactsDir
     include "com.mbeddr.platform/**"
 }
+
+artifacts {
+    'default'(package_mbeddrPlatform)
+}
+
 
 task defaultWrapper(dependsOn: build_platform) {
     doFirst {
