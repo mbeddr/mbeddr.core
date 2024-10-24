@@ -22,6 +22,8 @@ configurations {
     mbeddrPlatform
 }
 
+def usePrebuiltPlatform = ciBuild && !project.hasProperty('forceBuildPlatform')
+
 dependencies {
     junitAnt 'junit:junit:4.12'
     junitAnt('org.apache.ant:ant-junit:1.9.7') {
@@ -30,9 +32,18 @@ dependencies {
     junitAnt('org.apache.ant:ant-junit4:1.9.7') {
         transitive = false
     }
-    mbeddrPlatform "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
-}
 
+    def mbeddrPlatformDependency
+
+    if (usePrebuiltPlatform) {
+        // By default, on CI we don't build the platform but take it from Nexus, unless overridden by `-PforceBuildPlatform`.
+        mbeddrPlatformDependency = "com.mbeddr:platform:$mbeddrPlatformBuildNumber"
+    } else {
+        mbeddrPlatformDependency = project(':com.mbeddr:platform')
+    }
+
+    mbeddrPlatform mbeddrPlatformDependency
+}
 
 task resolve_mbeddr_platform() {
     doLast {
@@ -57,16 +68,7 @@ ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optio
 
 def mbeddrPlatformDependency
 
-def usePrebuiltPlatform = ciBuild && !project.hasProperty('forceBuildPlatform')
-
-//on teamcity we don't build the platform we take it from the nexus. Locally we want to build it
-if (usePrebuiltPlatform) {
-    mbeddrPlatformDependency = resolve_mbeddr_platform
-} else {
-    mbeddrPlatformDependency = ':com.mbeddr:platform:build_platform'
-}
-
-task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', mbeddrPlatformDependency]) {
+task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', configurations.mbeddrPlatform]) {
     script script_build_mbeddr
     outputs.dir("$artifactsDir/mbeddr")
 }
@@ -162,10 +164,22 @@ task test_mbeddr_xmodel(dependsOn: []) {}
 
 task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext, test_mbeddr_xmodel]) {}
 
+tasks.register('test') {
+    dependsOn(test_mbeddr)
+}
+
+tasks.named('check') {
+    dependsOn 'test'
+}
+
 task package_mbeddr(type: Zip, dependsOn: build_mbeddr) {
     archiveFileName = 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"
+}
+
+artifacts {
+    'default'(package_mbeddr)
 }
 
 publishing {
@@ -218,5 +232,3 @@ if({project.mbeddrBuild}() == "master") {
        */
     tasks.findByName("publishMbeddrPublicationToMavenRepository").dependsOn("publishMbeddrPublicationToGitHubPackagesRepository")
 }
-
-check.dependsOn test_mbeddr
