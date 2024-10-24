@@ -109,7 +109,7 @@ task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platfor
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
 }
 
-task package_mbeddrPlatform(type: Zip, dependsOn: test_mbeddr_platform) {
+task package_mbeddrPlatform(type: Zip, dependsOn: build_platform) {
     archiveFileName = 'com.mbeddr.platform.zip'
     from artifactsDir
     include "com.mbeddr.platform/**"
