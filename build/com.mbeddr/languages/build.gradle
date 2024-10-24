@@ -171,18 +171,14 @@ tasks.named('check') {
     dependsOn 'test'
 }
 
-
-def pubDeb
-if (ciBuild) {
-    pubDeb = test_mbeddr
-} else {
-    pubDeb = build_mbeddr
-}
-
-task package_mbeddr(type: Zip, dependsOn: pubDeb) {
+task package_mbeddr(type: Zip, dependsOn: build_mbeddr) {
     archiveFileName = 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"
+}
+
+artifacts {
+    'default'(package_mbeddr)
 }
 
 publishing {
