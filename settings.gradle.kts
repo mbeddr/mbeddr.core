@@ -10,9 +10,6 @@ val subprojectPaths = listOf("com.mbeddr",
     "com.mbeddr:languages",
     "com.mbeddr:distribution",
     "com.mbeddr:analyses.test",
-    "thirdparty",
-    "thirdparty:graphviz",
-    "thirdparty:jdk",
     "publishing")
 
 fun fqpath(path: String) = ":$path"
