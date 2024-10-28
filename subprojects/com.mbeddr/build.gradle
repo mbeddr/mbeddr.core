@@ -85,7 +85,9 @@ subprojects {
     }
 
     dependencies {
-        mps "com.jetbrains:mps:$mpsBuild"
+        // For a release version of MPS, use this dependency:
+        //mps "com.jetbrains:mps:$mpsBuild"
+        mps "com.jetbrains.mps:mps-prerelease:$mpsBuild"
         mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
         ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
