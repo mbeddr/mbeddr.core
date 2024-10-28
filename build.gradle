@@ -4,10 +4,6 @@ plugins {
     alias(libs.plugins.common) apply false // Only needed to have access to GitBasedVersioning in this build
 }
 
-repositories {
-    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-}
-
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 

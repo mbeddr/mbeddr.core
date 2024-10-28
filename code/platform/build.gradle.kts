@@ -28,11 +28,6 @@ val reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
 // Project group
 group = "com.mbeddr"
 
-repositories {
-    // required for com.michaelbaranov:microba library
-    maven("https://maven.atlassian.com/content/repositories/atlassian-public/")
-}
-
 val mpsLibraries by configurations.registering {
     isCanBeConsumed = false
 }
