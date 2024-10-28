@@ -7,10 +7,6 @@ plugins {
     id 'download-jbr' version '1.28.+'
 }
 
-repositories {
-    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-}
-
 downloadJbr {
     jbrVersion = '21.0.5-b631.8'
 }

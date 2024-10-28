@@ -13,10 +13,6 @@ ant.taskdef(name: "makeTests",
         classpath: file(rootProject.projectDir.absolutePath + "/tools/ant/tasks/TeamcityMakeTests.jar")
 )
 
-// Ant <junit> task support
-repositories {
-    mavenCentral()
-}
 configurations {
     junitAnt
     mbeddrPlatform
