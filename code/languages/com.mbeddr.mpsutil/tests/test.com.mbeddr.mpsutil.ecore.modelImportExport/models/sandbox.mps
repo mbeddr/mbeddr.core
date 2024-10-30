@@ -13,7 +13,7 @@
       <concept id="20746029588651015" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.Runnable" flags="ng" index="1Gq2xw">
         <child id="20746029588651180" name="runnableItems" index="1Gq2zb" />
       </concept>
-      <concept id="20746029588650303" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.IReferable" flags="ngI" index="1Gq2Po">
+      <concept id="20746029588650303" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.IReferable" flags="ng" index="1Gq2Po">
         <property id="20746029588650304" name="name" index="1Gq2OB" />
       </concept>
       <concept id="20746029588650297" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.Amalthea" flags="ng" index="1Gq2Pu">
@@ -54,7 +54,7 @@
         <property id="20746029588650990" name="osekTaskGroup" index="1Gq2Y9" />
         <property id="20746029588650992" name="multipleTaskActivationLimit" index="1Gq2Yn" />
       </concept>
-      <concept id="20746029588650942" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.AbstractProcess" flags="ngI" index="1Gq2Zp">
+      <concept id="20746029588650942" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.AbstractProcess" flags="ng" index="1Gq2Zp">
         <property id="20746029588650943" name="priority" index="1Gq2Zo" />
       </concept>
       <concept id="20746029588650940" name="com.mbeddr.mpsutil.ecoretransformation.amaltheametamodel.structure.SWModel" flags="ng" index="1Gq2Zr">
