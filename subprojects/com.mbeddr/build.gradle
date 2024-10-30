@@ -180,7 +180,8 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 tasks.register('migrate', MpsMigrate) {
     dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
-
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = false
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
 
