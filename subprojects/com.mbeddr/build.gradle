@@ -178,9 +178,10 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 }
 
 tasks.register('migrate', MpsMigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
+    dependsOn('downloadJbr')
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
-
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = false
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
 
@@ -192,7 +193,7 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
+    dependsOn('downloadJbr')
     javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
     mpsHome = mpsHomeDir
