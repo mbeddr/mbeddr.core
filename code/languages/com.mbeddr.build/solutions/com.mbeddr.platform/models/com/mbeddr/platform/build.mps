@@ -303,6 +303,9 @@
       <node concept="m$_yC" id="64SK4bcNVGq" role="m$_yJ">
         <ref role="m$_y1" node="DnqfiuSO_Q" resolve="com.mbeddr.mpsutil.compare" />
       </node>
+      <node concept="m$_yC" id="4wBLq3Y5yV5" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2OJNL7ElZsF" resolve="de.q60.mps.collections.libs" />
+      </node>
       <node concept="2iUeEo" id="7yAshxDtnaX" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
         <property role="2iUeEu" value="http://mbeddr.com" />
@@ -1549,12 +1552,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="46XBvPMFwgD" role="3bR37C">
-          <node concept="3bR9La" id="46XBvPMFwgE" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1dlPbo9VJC9" role="3bR37C">
           <node concept="1BurEX" id="1dlPbo9VJCa" role="1SiIV1">
             <node concept="398BVA" id="1dlPbo9VJBW" role="1BurEY">
@@ -1819,6 +1816,12 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4wBLq3Y5xJO" role="3bR37C">
+          <node concept="3bR9La" id="4wBLq3Y5xJP" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
       </node>
@@ -20901,9 +20904,9 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="5bVx5KEQpYO" role="3bR37C">
-          <node concept="3bR9La" id="5bVx5KEQpYP" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+        <node concept="1SiIV0" id="4wBLq3Y5yBj" role="3bR37C">
+          <node concept="3bR9La" id="4wBLq3Y5yBk" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
       </node>
@@ -20912,6 +20915,9 @@
       <property role="m$_wk" value="com.mbeddr.mpsutil.logicalChild" />
       <node concept="m$_yC" id="3lcj7hzsAhP" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="4wBLq3Y5zxU" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2OJNL7ElZsF" resolve="de.q60.mps.collections.libs" />
       </node>
       <node concept="3_J27D" id="3lcj7hzsuXh" role="m$_yQ">
         <node concept="3Mxwew" id="3lcj7hzszbz" role="3MwsjC">
