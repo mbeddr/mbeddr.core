@@ -22,7 +22,7 @@
     <import index="pgte" ref="r:e361f9f2-2afa-4fbe-b895-bdd4fbfe44fa(com.mbeddr.doc.aspect.plugin)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
-    <import index="sgh3" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.cache(de.q60.mps.collections.libs/)" />
+    <import index="itts" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.github.benmanes.caffeine.cache(MPS.ThirdParty/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
@@ -1062,7 +1062,7 @@
       <property role="TrG5h" value="cache" />
       <node concept="3Tm6S6" id="2DFA9RLl1cR" role="1B3o_S" />
       <node concept="3uibUv" id="2DFA9RLkRkP" role="1tU5fm">
-        <ref role="3uigEE" to="sgh3:~Cache" resolve="Cache" />
+        <ref role="3uigEE" to="itts:~Cache" resolve="Cache" />
         <node concept="1LlUBW" id="2DFA9RLkRLr" role="11_B2D">
           <node concept="3bZ5Sz" id="2DFA9RLkSej" role="1Lm7xW" />
           <node concept="3uibUv" id="2DFA9RLkSFc" role="1Lm7xW">
@@ -1074,37 +1074,37 @@
           <node concept="3Tqbb2" id="1GfgNpVSGmN" role="11_B2D" />
         </node>
       </node>
-      <node concept="2OqwBi" id="2DFA9RLkXKB" role="33vP2m">
-        <node concept="2OqwBi" id="2DFA9RLkVrI" role="2Oq$k0">
-          <node concept="2YIFZM" id="2DFA9RLkV2x" role="2Oq$k0">
-            <ref role="37wK5l" to="sgh3:~CacheBuilder.newBuilder()" resolve="newBuilder" />
-            <ref role="1Pybhc" to="sgh3:~CacheBuilder" resolve="CacheBuilder" />
-          </node>
-          <node concept="liA8E" id="2DFA9RLkWu4" role="2OqNvi">
-            <ref role="37wK5l" to="sgh3:~CacheBuilder.maximumSize(long)" resolve="maximumSize" />
-            <node concept="3cmrfG" id="2DFA9RLkWMO" role="37wK5m">
-              <property role="3cmrfH" value="5000" />
-            </node>
-          </node>
-        </node>
-        <node concept="liA8E" id="2DFA9RLkYWI" role="2OqNvi">
-          <ref role="37wK5l" to="sgh3:~CacheBuilder.build()" resolve="build" />
-          <node concept="1LlUBW" id="2DFA9RLl0fN" role="3PaCim">
-            <node concept="3bZ5Sz" id="2DFA9RLl0fO" role="1Lm7xW" />
-            <node concept="3uibUv" id="2DFA9RLl0fP" role="1Lm7xW">
-              <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
-            </node>
-          </node>
-          <node concept="3uibUv" id="1GfgNpVSIDz" role="3PaCim">
-            <ref role="3uigEE" to="33ny:~Optional" resolve="Optional" />
-            <node concept="3Tqbb2" id="1GfgNpVSID$" role="11_B2D" />
-          </node>
-        </node>
-      </node>
       <node concept="z59LJ" id="1GfgNpVVt$C" role="lGtFl">
         <node concept="TZ5HA" id="1GfgNpVVt$D" role="TZ5H$">
           <node concept="1dT_AC" id="1GfgNpVVt$E" role="1dT_Ay">
             <property role="1dT_AB" value="Cache for concept/property to corresponding node in documentation." />
+          </node>
+        </node>
+      </node>
+      <node concept="2OqwBi" id="3BP506voh2s" role="33vP2m">
+        <node concept="2OqwBi" id="3BP506vod_p" role="2Oq$k0">
+          <node concept="2YIFZM" id="3BP506vocKt" role="2Oq$k0">
+            <ref role="37wK5l" to="itts:~Caffeine.newBuilder()" resolve="newBuilder" />
+            <ref role="1Pybhc" to="itts:~Caffeine" resolve="Caffeine" />
+          </node>
+          <node concept="liA8E" id="3BP506voeAa" role="2OqNvi">
+            <ref role="37wK5l" to="itts:~Caffeine.maximumSize(long)" resolve="maximumSize" />
+            <node concept="3cmrfG" id="3BP506voflv" role="37wK5m">
+              <property role="3cmrfH" value="5000" />
+            </node>
+          </node>
+        </node>
+        <node concept="liA8E" id="3BP506voi04" role="2OqNvi">
+          <ref role="37wK5l" to="itts:~Caffeine.build()" resolve="build" />
+          <node concept="1LlUBW" id="3BP506voyGc" role="3PaCim">
+            <node concept="3bZ5Sz" id="3BP506voyGd" role="1Lm7xW" />
+            <node concept="3uibUv" id="3BP506voyGe" role="1Lm7xW">
+              <ref role="3uigEE" to="c17a:~SProperty" resolve="SProperty" />
+            </node>
+          </node>
+          <node concept="3uibUv" id="3BP506vo$tk" role="3PaCim">
+            <ref role="3uigEE" to="33ny:~Optional" resolve="Optional" />
+            <node concept="3Tqbb2" id="3BP506vo$tl" role="11_B2D" />
           </node>
         </node>
       </node>
@@ -1159,7 +1159,7 @@
                 <ref role="3cqZAo" node="2DFA9RLkOfY" resolve="cache" />
               </node>
               <node concept="liA8E" id="1GfgNpVOgQm" role="2OqNvi">
-                <ref role="37wK5l" to="sgh3:~Cache.getIfPresent(java.lang.Object)" resolve="getIfPresent" />
+                <ref role="37wK5l" to="itts:~Cache.getIfPresent(java.lang.Object)" resolve="getIfPresent" />
                 <node concept="37vLTw" id="1GfgNpVOWOX" role="37wK5m">
                   <ref role="3cqZAo" node="1GfgNpVOWOT" resolve="key" />
                 </node>
@@ -1239,7 +1239,7 @@
                   <ref role="3cqZAo" node="2DFA9RLkOfY" resolve="cache" />
                 </node>
                 <node concept="liA8E" id="1GfgNpVQoOd" role="2OqNvi">
-                  <ref role="37wK5l" to="sgh3:~Cache.put(java.lang.Object,java.lang.Object)" resolve="put" />
+                  <ref role="37wK5l" to="itts:~Cache.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="37vLTw" id="1GfgNpVQrcc" role="37wK5m">
                     <ref role="3cqZAo" node="1GfgNpVOWOT" resolve="key" />
                   </node>

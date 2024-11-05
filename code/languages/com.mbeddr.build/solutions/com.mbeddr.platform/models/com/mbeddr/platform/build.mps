@@ -18411,9 +18411,9 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7VnJHsAbmDt" role="3bR37C">
-          <node concept="3bR9La" id="7VnJHsAbmDu" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
+        <node concept="1SiIV0" id="3BP506vp1ec" role="3bR37C">
+          <node concept="3bR9La" id="3BP506vp1ed" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
