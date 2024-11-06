@@ -45,6 +45,7 @@
     <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2751,15 +2752,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="18ZQ$P82G0W" role="3cqZAp">
-          <node concept="2OqwBi" id="18ZQ$P82G1i" role="3clFbG">
-            <node concept="37vLTw" id="18ZQ$P82G0X" role="2Oq$k0">
-              <ref role="3cqZAo" node="5BkFC2yhAI1" resolve="tool" />
+        <node concept="3clFbF" id="5UujJsmrDc3" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmrDZO" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmrDkZ" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="18ZQ$P82G1o" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="18ZQ$P84YIK" role="37wK5m">
-                <property role="3clFbU" value="true" />
+            <node concept="liA8E" id="5UujJsmrEEZ" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmrEGh" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmrEGk" role="1bW5cS">
+                  <node concept="3clFbF" id="18ZQ$P82G0W" role="3cqZAp">
+                    <node concept="2OqwBi" id="18ZQ$P82G1i" role="3clFbG">
+                      <node concept="37vLTw" id="18ZQ$P82G0X" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5BkFC2yhAI1" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="18ZQ$P82G1o" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="18ZQ$P84YIK" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -6244,15 +6260,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bhVSeGf3ss" role="3cqZAp">
-          <node concept="2OqwBi" id="bhVSeGf3st" role="3clFbG">
-            <node concept="37vLTw" id="bhVSeGf3su" role="2Oq$k0">
-              <ref role="3cqZAo" node="bhVSeGf3sl" resolve="tool" />
+        <node concept="3clFbF" id="5UujJsmrFUW" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmrGBa" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmrFXk" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="bhVSeGf3sv" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="bhVSeGf3sw" role="37wK5m">
-                <property role="3clFbU" value="true" />
+            <node concept="liA8E" id="5UujJsmrHcM" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmrHe4" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmrHe7" role="1bW5cS">
+                  <node concept="3clFbF" id="bhVSeGf3ss" role="3cqZAp">
+                    <node concept="2OqwBi" id="bhVSeGf3st" role="3clFbG">
+                      <node concept="37vLTw" id="bhVSeGf3su" role="2Oq$k0">
+                        <ref role="3cqZAo" node="bhVSeGf3sl" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="bhVSeGf3sv" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="bhVSeGf3sw" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

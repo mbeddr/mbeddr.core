@@ -40,8 +40,8 @@
     <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
-    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -7015,15 +7015,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7TUlQeg0WRR" role="3cqZAp">
-          <node concept="2OqwBi" id="7TUlQeg0X0I" role="3clFbG">
-            <node concept="37vLTw" id="7TUlQeg0WRP" role="2Oq$k0">
-              <ref role="3cqZAo" node="7TUlQeg0GZx" resolve="crt" />
+        <node concept="3clFbF" id="5UujJsmqpdw" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmqpUa" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmqpfZ" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="7TUlQeg0Xov" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="7TUlQeg0XpS" role="37wK5m">
-                <property role="3clFbU" value="true" />
+            <node concept="liA8E" id="5UujJsmqqPX" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmqqRf" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmqqRi" role="1bW5cS">
+                  <node concept="3clFbF" id="7TUlQeg0WRR" role="3cqZAp">
+                    <node concept="2OqwBi" id="7TUlQeg0X0I" role="3clFbG">
+                      <node concept="37vLTw" id="7TUlQeg0WRP" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7TUlQeg0GZx" resolve="crt" />
+                      </node>
+                      <node concept="liA8E" id="7TUlQeg0Xov" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="7TUlQeg0XpS" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -8226,15 +8241,30 @@
             </node>
             <node concept="3clFbJ" id="7zKW2MTr9Eq" role="3cqZAp">
               <node concept="3clFbS" id="7zKW2MTr9Es" role="3clFbx">
-                <node concept="3clFbF" id="7zKW2MTrcVi" role="3cqZAp">
-                  <node concept="2OqwBi" id="7zKW2MTrcVj" role="3clFbG">
-                    <node concept="37vLTw" id="7zKW2MTrcVk" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7zKW2MTonY0" resolve="crt" />
+                <node concept="3clFbF" id="5UujJsmqyIK" role="3cqZAp">
+                  <node concept="2OqwBi" id="5UujJsmqzPx" role="3clFbG">
+                    <node concept="2YIFZM" id="5UujJsmqyYB" role="2Oq$k0">
+                      <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                      <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                     </node>
-                    <node concept="liA8E" id="7zKW2MTrcVl" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-                      <node concept="3clFbT" id="7zKW2MTrcVm" role="37wK5m">
-                        <property role="3clFbU" value="true" />
+                    <node concept="liA8E" id="5UujJsmq$DV" role="2OqNvi">
+                      <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                      <node concept="1bVj0M" id="5UujJsmq_aE" role="37wK5m">
+                        <node concept="3clFbS" id="5UujJsmq_aH" role="1bW5cS">
+                          <node concept="3clFbF" id="7zKW2MTrcVi" role="3cqZAp">
+                            <node concept="2OqwBi" id="7zKW2MTrcVj" role="3clFbG">
+                              <node concept="37vLTw" id="7zKW2MTrcVk" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7zKW2MTonY0" resolve="crt" />
+                              </node>
+                              <node concept="liA8E" id="7zKW2MTrcVl" role="2OqNvi">
+                                <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                                <node concept="3clFbT" id="7zKW2MTrcVm" role="37wK5m">
+                                  <property role="3clFbU" value="true" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -8354,15 +8384,30 @@
             </node>
             <node concept="3clFbJ" id="7zKW2MTrOVZ" role="3cqZAp">
               <node concept="3clFbS" id="7zKW2MTrOW0" role="3clFbx">
-                <node concept="3clFbF" id="7zKW2MTrOW1" role="3cqZAp">
-                  <node concept="2OqwBi" id="7zKW2MTrOW2" role="3clFbG">
-                    <node concept="37vLTw" id="7zKW2MTrOW3" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7zKW2MTonY0" resolve="crt" />
+                <node concept="3clFbF" id="5yciJwh0RzM" role="3cqZAp">
+                  <node concept="2OqwBi" id="5yciJwh0SO4" role="3clFbG">
+                    <node concept="2YIFZM" id="5yciJwh0RUa" role="2Oq$k0">
+                      <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                      <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                     </node>
-                    <node concept="liA8E" id="7zKW2MTrOW4" role="2OqNvi">
-                      <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-                      <node concept="3clFbT" id="7zKW2MTrOW5" role="37wK5m">
-                        <property role="3clFbU" value="true" />
+                    <node concept="liA8E" id="5yciJwh0TH8" role="2OqNvi">
+                      <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                      <node concept="1bVj0M" id="5yciJwh0U9m" role="37wK5m">
+                        <node concept="3clFbS" id="5yciJwh0U9p" role="1bW5cS">
+                          <node concept="3clFbF" id="7zKW2MTrOW1" role="3cqZAp">
+                            <node concept="2OqwBi" id="7zKW2MTrOW2" role="3clFbG">
+                              <node concept="37vLTw" id="7zKW2MTrOW3" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7zKW2MTonY0" resolve="crt" />
+                              </node>
+                              <node concept="liA8E" id="7zKW2MTrOW4" role="2OqNvi">
+                                <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                                <node concept="3clFbT" id="7zKW2MTrOW5" role="37wK5m">
+                                  <property role="3clFbU" value="true" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
