@@ -44,6 +44,7 @@
     <import index="4anb" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" />
     <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -5167,6 +5168,29 @@
       </node>
       <node concept="3clFbS" id="2sPLpCfXNb4" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="43zZ$xOTr5n" role="jymVt" />
+    <node concept="3clFb_" id="43zZ$xOS5C5" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="43zZ$xOS5C6" role="1B3o_S" />
+      <node concept="2AHcQZ" id="43zZ$xOS5C8" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="43zZ$xOS5C9" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="43zZ$xOS5Ca" role="3clF47">
+        <node concept="3clFbF" id="43zZ$xOScF6" role="3cqZAp">
+          <node concept="Rm8GO" id="43zZ$xOSd8Z" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="43zZ$xOS5Cb" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="43zZ$xOTr5o" role="jymVt" />
   </node>
   <node concept="Zd50a" id="Wvkle$RXGw">
     <property role="TrG5h" value="visualizeKeymapping" />

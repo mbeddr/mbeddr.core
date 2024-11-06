@@ -65,6 +65,10 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -1583,6 +1587,28 @@
     <node concept="3uibUv" id="7836$RyWUVh" role="1zkMxy">
       <ref role="3uigEE" to="qkt:~AnAction" resolve="AnAction" />
     </node>
+    <node concept="3clFb_" id="43zZ$xOS5C5" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="43zZ$xOS5C6" role="1B3o_S" />
+      <node concept="2AHcQZ" id="43zZ$xOS5C8" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="43zZ$xOS5C9" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="43zZ$xOS5Ca" role="3clF47">
+        <node concept="3clFbF" id="43zZ$xOScF6" role="3cqZAp">
+          <node concept="Rm8GO" id="43zZ$xOSd8Z" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="43zZ$xOS5Cb" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="43zZ$xPahQx" role="jymVt" />
   </node>
   <node concept="2pMbU2" id="1o_$mJEhEgT">
     <property role="TrG5h" value="plugin" />
