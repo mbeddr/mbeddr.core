@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.ecore.stubs" uuid="822a7acd-f487-45f5-bbb9-1ce595a1705f" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/com.google.inject-3.0.0.v201605172100.jar" />
       <sourceRoot location="lib/javax.inject-1.0.0.v20091030.jar" />
       <sourceRoot location="lib/org.eclipse.emf.common_2.10.1.v20150123-0348.jar" />
