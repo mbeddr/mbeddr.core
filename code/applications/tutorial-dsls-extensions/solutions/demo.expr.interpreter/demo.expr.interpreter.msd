@@ -12,6 +12,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">444fc60e-b7e2-46c2-95fa-301dd48918b2(demo.expr)</dependency>
+    <dependency reexport="false">735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
