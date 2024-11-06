@@ -3971,14 +3971,16 @@
                               </node>
                               <node concept="liA8E" id="2ag5hDwyhiQ" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
-                                <node concept="2OqwBi" id="2ag5hDwyiTV" role="37wK5m">
-                                  <node concept="2OqwBi" id="2ag5hDwyhv2" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="2ag5hDwyhjX" role="2Oq$k0" />
-                                    <node concept="liA8E" id="2ag5hDwyi8Z" role="2OqNvi">
+                                <node concept="2OqwBi" id="5ziaHPEAGLQ" role="37wK5m">
+                                  <node concept="2OqwBi" id="5ziaHPEAuoL" role="2Oq$k0">
+                                    <node concept="Xjq3P" id="5ziaHPEApcj" role="2Oq$k0">
+                                      <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
+                                    </node>
+                                    <node concept="liA8E" id="5ziaHPEAzPA" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="2ag5hDwynHj" role="2OqNvi">
+                                  <node concept="liA8E" id="5ziaHPEALZA" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
                                   </node>
                                 </node>
