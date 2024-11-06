@@ -6,7 +6,6 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="e1tx" ref="r:bd5ec23c-c294-47cc-a078-675c03abdb69(mbeddr.tutorial.main.defaultExtensions)" implicit="true" />
     <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" implicit="true" />
-    <import index="us0v" ref="r:22b9d29d-483d-4f08-8d1b-4e6567157caf(com.mbeddr.tutorial.documentation.ug.analyses)" implicit="true" />
     <import index="zxcx" ref="r:af51c5c3-b54b-4a75-a1e6-409757d1a380(com.mbeddr.tutorial.documentation.code)" implicit="true" />
   </imports>
   <registry>
@@ -815,13 +814,7 @@
         <node concept="1_0LV8" id="300OR6GobDw" role="1_0VJ0">
           <node concept="19SGf9" id="300OR6GobDx" role="1_0LWR">
             <node concept="19SUe$" id="300OR6GobDy" role="19SJt6">
-              <property role="19SUeA" value="Note that the transitions are checked in the order of their appearance in the state machine; if several of them are ready to fire (based on the received event and the evaluation of the guard conditions), the first one is picked. Actually this kind of nondeterminism is usually not wanted and mbeddr provides support for the verification of state machines, which you can read more about in " />
-            </node>
-            <node concept="1_0GAv" id="2XVA19iOlBD" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
-            </node>
-            <node concept="19SUe$" id="2XVA19iOlBC" role="19SJt6">
-              <property role="19SUeA" value="." />
+              <property role="19SUeA" value="Note that the transitions are checked in the order of their appearance in the state machine; if several of them are ready to fire (based on the received event and the evaluation of the guard conditions), the first one is picked." />
             </node>
           </node>
         </node>
@@ -901,13 +894,7 @@
         <node concept="1_0LV8" id="1CZbvxNb$ma" role="1_0VJ0">
           <node concept="19SGf9" id="1CZbvxNb$mb" role="1_0LWR">
             <node concept="19SUe$" id="1CZbvxNb$mc" role="19SJt6">
-              <property role="19SUeA" value="The first one is to simply invoke a C function from an entry or exit action. Another alternative, which is more suitable for formal analysis (as we will see below and in " />
-            </node>
-            <node concept="1_0GAv" id="1CZbvxNb_rf" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
-            </node>
-            <node concept="19SUe$" id="1CZbvxNb_re" role="19SJt6">
-              <property role="19SUeA" value=") involves out events. From the entry action we " />
+              <property role="19SUeA" value="The first one is to simply invoke a C function from an entry or exit action. Another alternative, which is more suitable for formal analysis  involves out events. From the entry action we " />
             </node>
             <node concept="1jUjqm" id="6lh$fzUGo3" role="19SJt6">
               <node concept="19SGf9" id="6lh$fzUGo4" role="$DsGW">
@@ -1026,13 +1013,7 @@
               </node>
             </node>
             <node concept="19SUe$" id="6lh$fzWCUR" role="19SJt6">
-              <property role="19SUeA" value=" function, but on the state machine level we have abstracted the implementation from the intent. See " />
-            </node>
-            <node concept="1_0GAv" id="1CZbvxNeCTW" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yR4zp" resolve="state_machines" />
-            </node>
-            <node concept="19SUe$" id="1CZbvxNeCTV" role="19SJt6">
-              <property role="19SUeA" value=" for a discussion of state machine verification. " />
+              <property role="19SUeA" value=" function, but on the state machine level we have abstracted the implementation from the intent. . " />
             </node>
           </node>
         </node>
