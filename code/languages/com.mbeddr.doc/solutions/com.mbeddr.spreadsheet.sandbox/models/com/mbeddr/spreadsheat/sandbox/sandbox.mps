@@ -6,30 +6,30 @@
   </languages>
   <imports />
   <registry>
-    <language id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheat">
-      <concept id="2042272859107050152" name="com.mbeddr.spreadsheat.structure.Style" flags="ng" index="1hadVK" />
-      <concept id="2042272859107001907" name="com.mbeddr.spreadsheat.structure.RowGroup" flags="ng" index="1hahDF" />
-      <concept id="2042272859107001892" name="com.mbeddr.spreadsheat.structure.IGroup" flags="ng" index="1hahDW">
+    <language id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheet">
+      <concept id="2042272859107050152" name="com.mbeddr.spreadsheet.structure.Style" flags="ng" index="1hadVK" />
+      <concept id="2042272859107001907" name="com.mbeddr.spreadsheet.structure.RowGroup" flags="ng" index="1hahDF" />
+      <concept id="2042272859107001892" name="com.mbeddr.spreadsheet.structure.IGroup" flags="ng" index="1hahDW">
         <property id="2042272859107001893" name="start" index="1hahDX" />
         <property id="2042272859107001894" name="end" index="1hahDY" />
       </concept>
-      <concept id="2042272859106810439" name="com.mbeddr.spreadsheat.structure.Row" flags="ng" index="1hb0ov">
+      <concept id="2042272859106810439" name="com.mbeddr.spreadsheet.structure.Row" flags="ng" index="1hb0ov">
         <child id="2042272859106810465" name="cells" index="1hb0oT" />
       </concept>
-      <concept id="2042272859106810464" name="com.mbeddr.spreadsheat.structure.TextCell" flags="ng" index="1hb0oS">
+      <concept id="2042272859106810464" name="com.mbeddr.spreadsheet.structure.TextCell" flags="ng" index="1hb0oS">
         <property id="2042272859106810478" name="value" index="1hb0oQ" />
       </concept>
-      <concept id="2042272859106810418" name="com.mbeddr.spreadsheat.structure.Workbook" flags="ng" index="1hb0pE">
+      <concept id="2042272859106810418" name="com.mbeddr.spreadsheet.structure.Workbook" flags="ng" index="1hb0pE">
         <child id="2042272859107050154" name="styles" index="1hadVM" />
         <child id="2042272859106810421" name="sheets" index="1hb0pH" />
       </concept>
-      <concept id="2042272859106810420" name="com.mbeddr.spreadsheat.structure.Sheet" flags="ng" index="1hb0pG">
+      <concept id="2042272859106810420" name="com.mbeddr.spreadsheet.structure.Sheet" flags="ng" index="1hb0pG">
         <child id="2042272859107001913" name="groups" index="1hahDx" />
         <child id="2042272859106810440" name="rows" index="1hb0og" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

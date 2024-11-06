@@ -7,4 +7,3 @@
   <imports />
   <registry />
 </model>
-
