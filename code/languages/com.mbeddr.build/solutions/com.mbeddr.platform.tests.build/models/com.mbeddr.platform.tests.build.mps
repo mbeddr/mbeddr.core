@@ -2263,11 +2263,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="QrefRhijNV" role="3bR37C">
-          <node concept="3bR9La" id="QrefRhijNW" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="QrefRhijNX" role="3bR37C">
           <node concept="3bR9La" id="QrefRhijNY" role="1SiIV1">
             <ref role="3bR37D" to="al5i:vOGyTeKpB6" resolve="com.mbeddr.mpsutil.ecore.stubs" />
@@ -2276,6 +2271,11 @@
         <node concept="1SiIV0" id="4Ky34TRCBQT" role="3bR37C">
           <node concept="3bR9La" id="4Ky34TRCBQU" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4wBLq3Y5_9L" role="3bR37C">
+          <node concept="3bR9La" id="4wBLq3Y5_9M" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
       </node>

@@ -44,6 +44,7 @@
     <module reference="3852b093-b918-413a-91e0-ba454bb21921(com.mbeddr.mpsutil.ecore.runtime)" version="0" />
     <module reference="822a7acd-f487-45f5-bbb9-1ce595a1705f(com.mbeddr.mpsutil.ecore.stubs)" version="0" />
     <module reference="eb3ff167-aa45-42e9-9297-313fbfce587f(com.mbeddr.mpsutil.ecore.ui)" version="0" />
+    <module reference="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" version="0" />
     <module reference="bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)" version="0" />
     <module reference="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" version="0" />
     <module reference="25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)" version="0" />
