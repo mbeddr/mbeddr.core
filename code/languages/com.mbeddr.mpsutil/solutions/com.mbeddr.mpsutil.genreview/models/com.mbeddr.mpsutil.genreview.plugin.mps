@@ -5677,16 +5677,26 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="2I9trI94Cxy" role="3cqZAp">
-                  <node concept="2OqwBi" id="2I9trI94Cxz" role="3clFbG">
-                    <node concept="37vLTw" id="2I9trI94Cx$" role="2Oq$k0">
-                      <ref role="3cqZAo" node="13$DeUDKIds" resolve="textArea" />
-                    </node>
-                    <node concept="liA8E" id="2I9trI94Cx_" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JComponent.scrollRectToVisible(java.awt.Rectangle)" resolve="scrollRectToVisible" />
-                      <node concept="37vLTw" id="2I9trI94CxA" role="37wK5m">
-                        <ref role="3cqZAo" node="2I9trI91J85" resolve="highlightViewRect" />
+                <node concept="3clFbJ" id="5yciJwh1ExD" role="3cqZAp">
+                  <node concept="3clFbS" id="5yciJwh1ExF" role="3clFbx">
+                    <node concept="3clFbF" id="2I9trI94Cxy" role="3cqZAp">
+                      <node concept="2OqwBi" id="2I9trI94Cxz" role="3clFbG">
+                        <node concept="37vLTw" id="2I9trI94Cx$" role="2Oq$k0">
+                          <ref role="3cqZAo" node="13$DeUDKIds" resolve="textArea" />
+                        </node>
+                        <node concept="liA8E" id="2I9trI94Cx_" role="2OqNvi">
+                          <ref role="37wK5l" to="dxuu:~JComponent.scrollRectToVisible(java.awt.Rectangle)" resolve="scrollRectToVisible" />
+                          <node concept="37vLTw" id="2I9trI94CxA" role="37wK5m">
+                            <ref role="3cqZAo" node="2I9trI91J85" resolve="highlightViewRect" />
+                          </node>
+                        </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="5yciJwh1UhY" role="3clFbw">
+                    <node concept="10Nm6u" id="5yciJwh1WfH" role="3uHU7w" />
+                    <node concept="37vLTw" id="5yciJwh1OPl" role="3uHU7B">
+                      <ref role="3cqZAo" node="2I9trI91J85" resolve="highlightViewRect" />
                     </node>
                   </node>
                 </node>
@@ -5747,16 +5757,26 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="2I9trI94SHP" role="3cqZAp">
-                    <node concept="2OqwBi" id="2I9trI94SHQ" role="3clFbG">
-                      <node concept="37vLTw" id="2I9trI94SHR" role="2Oq$k0">
-                        <ref role="3cqZAo" node="13$DeUDKIds" resolve="textArea" />
-                      </node>
-                      <node concept="liA8E" id="2I9trI94SHS" role="2OqNvi">
-                        <ref role="37wK5l" to="dxuu:~JComponent.scrollRectToVisible(java.awt.Rectangle)" resolve="scrollRectToVisible" />
-                        <node concept="37vLTw" id="2I9trI95lAF" role="37wK5m">
-                          <ref role="3cqZAo" node="2I9trI91J85" resolve="highlightViewRect" />
+                  <node concept="3clFbJ" id="5yciJwh2qI3" role="3cqZAp">
+                    <node concept="3clFbS" id="5yciJwh2qI5" role="3clFbx">
+                      <node concept="3clFbF" id="2I9trI94SHP" role="3cqZAp">
+                        <node concept="2OqwBi" id="2I9trI94SHQ" role="3clFbG">
+                          <node concept="37vLTw" id="2I9trI94SHR" role="2Oq$k0">
+                            <ref role="3cqZAo" node="13$DeUDKIds" resolve="textArea" />
+                          </node>
+                          <node concept="liA8E" id="2I9trI94SHS" role="2OqNvi">
+                            <ref role="37wK5l" to="dxuu:~JComponent.scrollRectToVisible(java.awt.Rectangle)" resolve="scrollRectToVisible" />
+                            <node concept="37vLTw" id="2I9trI95lAF" role="37wK5m">
+                              <ref role="3cqZAo" node="2I9trI91J85" resolve="highlightViewRect" />
+                            </node>
+                          </node>
                         </node>
+                      </node>
+                    </node>
+                    <node concept="3y3z36" id="5yciJwh2Hfv" role="3clFbw">
+                      <node concept="10Nm6u" id="5yciJwh2Kgs" role="3uHU7w" />
+                      <node concept="37vLTw" id="5yciJwh2wTd" role="3uHU7B">
+                        <ref role="3cqZAo" node="2I9trI91J85" resolve="highlightViewRect" />
                       </node>
                     </node>
                   </node>
