@@ -41,6 +41,7 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -8483,13 +8484,16 @@
                         <node concept="1bVj0M" id="3YJTqBz2Q6r" role="37wK5m">
                           <node concept="3clFbS" id="3YJTqBz2Q6s" role="1bW5cS">
                             <node concept="3clFbF" id="3YJTqBz2QNM" role="3cqZAp">
-                              <node concept="2YIFZM" id="7zKW2MTrOWo" role="3clFbG">
-                                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                                <node concept="10Nm6u" id="7zKW2MTrOWp" role="37wK5m" />
-                                <node concept="Xl_RD" id="7zKW2MTrOWq" role="37wK5m">
-                                  <property role="Xl_RC" value="No lines found for selected node! Please try to:\n    1) select another node,\n    2) select another directory where to look for, or\n    3) set the generated file manually." />
+                              <node concept="2YIFZM" id="5yciJwh5sI_" role="3clFbG">
+                                <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showMessageDialog" />
+                                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                <node concept="Xl_RD" id="5yciJwh5sIB" role="37wK5m">
+                                  <property role="Xl_RC" value="Please try to:\n    1) select another node,\n    2) select another directory where to look for, or\n    3) set the generated file manually." />
                                 </node>
+                                <node concept="Xl_RD" id="5yciJwh6azL" role="37wK5m">
+                                  <property role="Xl_RC" value="No lines found for selected node" />
+                                </node>
+                                <node concept="10Nm6u" id="5yciJwh5F8n" role="37wK5m" />
                               </node>
                             </node>
                           </node>
@@ -8689,12 +8693,15 @@
                       <node concept="3clFbS" id="3YJTqBz2N_m" role="1bW5cS">
                         <node concept="3clFbF" id="7zKW2MTr2Yr" role="3cqZAp">
                           <node concept="2YIFZM" id="7zKW2MTr31c" role="3clFbG">
-                            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                            <node concept="10Nm6u" id="7zKW2MTr39y" role="37wK5m" />
+                            <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showMessageDialog" />
+                            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
                             <node concept="Xl_RD" id="7zKW2MTr3jQ" role="37wK5m">
-                              <property role="Xl_RC" value="No lines found for selected node! Please try to:\n\t 1) select another node, or\n\t 2) set the generated file manually." />
+                              <property role="Xl_RC" value="Please try to:\n\t 1) select another node, or\n\t 2) set the generated file manually." />
                             </node>
+                            <node concept="Xl_RD" id="5yciJwh690T" role="37wK5m">
+                              <property role="Xl_RC" value="No lines found for selected node" />
+                            </node>
+                            <node concept="10Nm6u" id="5yciJwh5uQz" role="37wK5m" />
                           </node>
                         </node>
                       </node>
