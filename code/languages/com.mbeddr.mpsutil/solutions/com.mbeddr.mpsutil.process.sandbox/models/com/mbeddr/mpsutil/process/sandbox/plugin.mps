@@ -199,7 +199,7 @@
   <node concept="2DaZZR" id="70BL6LoVzwF" />
   <node concept="sE7Ow" id="70BL6LoVzwU">
     <property role="TrG5h" value="testAction" />
-    <property role="2uzpH1" value="This is the Wizard Test" />
+    <property role="2uzpH1" value="This Is the Wizard Test" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="70BL6LoVzwV" role="tncku">
