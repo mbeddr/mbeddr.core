@@ -2,7 +2,7 @@
 <model ref="r:62e553c0-8df6-4920-af41-2a88b1d4e969(com.mbeddr.xmodel.build.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
@@ -97,7 +97,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <property id="2928402740576877067" name="javaCode" index="3vZFNd" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -180,7 +180,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.xmodel.tests" />
         <property role="3LESm3" value="1d0d71e8-791e-42d4-80dd-0310f22fc889" />
-        <property role="2GAjPV" value="true" />
+        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
         <node concept="398BVA" id="3qyGNHcUVBc" role="3LF7KH">
           <ref role="398BVh" node="7eF9rfAuup1" resolve="mbeddr.github.core.home" />
           <node concept="2Ry0Ak" id="3qyGNHcUVBi" role="iGT6I">

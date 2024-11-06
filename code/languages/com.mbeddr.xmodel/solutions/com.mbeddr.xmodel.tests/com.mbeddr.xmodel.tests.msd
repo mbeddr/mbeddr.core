@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet planModel="r:8bed4b02-7437-49bf-bfa1-4f220b72fa26(com.mbeddr.xmodel.plan.genplan)" type="generator" />
+    <facet type="generator" planModel="r:8bed4b02-7437-49bf-bfa1-4f220b72fa26(com.mbeddr.xmodel.plan.genplan)" />
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>

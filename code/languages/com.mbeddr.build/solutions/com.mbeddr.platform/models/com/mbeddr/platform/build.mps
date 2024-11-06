@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="-1" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
@@ -188,7 +188,7 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <property id="2928402740576877067" name="javaCode" index="3vZFNd" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
@@ -2296,7 +2296,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.xml" />
         <property role="3LESm3" value="96569509-ecfc-4944-b6c9-075faf02fe2c" />
-        <property role="2GAjPV" value="true" />
+        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
         <node concept="3rtmxn" id="3xFG3bj5cFm" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cFn" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cFo" role="3LXTna">
