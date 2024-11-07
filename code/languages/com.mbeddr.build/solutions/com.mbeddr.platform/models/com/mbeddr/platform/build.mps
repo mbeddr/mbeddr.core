@@ -2446,7 +2446,7 @@
                   <node concept="2Ry0Ak" id="1dlPbo9VJHs" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="1dlPbo9VJHt" role="2Ry0An">
-                      <property role="2Ry0Am" value="batik-all-1.12.jar" />
+                      <property role="2Ry0Am" value="batik-all-1.18.jar" />
                     </node>
                   </node>
                 </node>
@@ -21989,4 +21989,3 @@
     </node>
   </node>
 </model>
-

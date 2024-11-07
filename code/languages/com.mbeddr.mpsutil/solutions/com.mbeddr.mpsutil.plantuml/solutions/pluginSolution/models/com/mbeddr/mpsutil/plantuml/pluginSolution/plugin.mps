@@ -37,15 +37,15 @@
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
-    <import index="dnq3" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.dom.util(org.apache.batik/)" />
-    <import index="ugom" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.bridge(org.apache.batik/)" />
-    <import index="e373" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.util(org.apache.batik/)" />
-    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
-    <import index="4anb" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" />
-    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
+    <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
+    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
+    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
+    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -3192,7 +3192,7 @@
     <node concept="2tJIrI" id="5gmO3pL7WRn" role="jymVt" />
     <node concept="2tJIrI" id="5gmO3pL7I9J" role="jymVt" />
     <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
-    <node concept="3uibUv" id="2sPLpCfQ$Lm" role="1zkMxy">
+    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
       <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
     </node>
     <node concept="3clFbW" id="2sPLpCfQsmS" role="jymVt">
@@ -4181,14 +4181,14 @@
       <property role="3TUv4t" value="false" />
       <property role="TrG5h" value="startedDispatcher" />
       <node concept="3uibUv" id="2sPLpCfQE5C" role="1tU5fm">
-        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
       </node>
       <node concept="2ShNRf" id="2sPLpCfQE5D" role="33vP2m">
         <node concept="YeOm9" id="2sPLpCfQE7o" role="2ShVmc">
           <node concept="1Y3b0j" id="2sPLpCfQE7p" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
             <node concept="3Tm1VV" id="2sPLpCfQE7q" role="1B3o_S" />
             <node concept="3clFb_" id="2sPLpCfQE7r" role="jymVt">
               <property role="1EzhhJ" value="false" />
@@ -4244,14 +4244,14 @@
       <property role="3TUv4t" value="false" />
       <property role="TrG5h" value="completedDispatcher" />
       <node concept="3uibUv" id="2sPLpCfQE5G" role="1tU5fm">
-        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
       </node>
       <node concept="2ShNRf" id="2sPLpCfQE7K" role="33vP2m">
         <node concept="YeOm9" id="2sPLpCfQE7L" role="2ShVmc">
           <node concept="1Y3b0j" id="2sPLpCfQE7M" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
             <node concept="3Tm1VV" id="2sPLpCfQE7N" role="1B3o_S" />
             <node concept="3clFb_" id="2sPLpCfQE7O" role="jymVt">
               <property role="1EzhhJ" value="false" />
@@ -4307,14 +4307,14 @@
       <property role="3TUv4t" value="false" />
       <property role="TrG5h" value="cancelledDispatcher" />
       <node concept="3uibUv" id="2sPLpCfQE5O" role="1tU5fm">
-        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
       </node>
       <node concept="2ShNRf" id="2sPLpCfQE88" role="33vP2m">
         <node concept="YeOm9" id="2sPLpCfQE89" role="2ShVmc">
           <node concept="1Y3b0j" id="2sPLpCfQE8a" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
             <node concept="3Tm1VV" id="2sPLpCfQE8b" role="1B3o_S" />
             <node concept="3clFb_" id="2sPLpCfQE8c" role="jymVt">
               <property role="1EzhhJ" value="false" />
@@ -4370,14 +4370,14 @@
       <property role="3TUv4t" value="false" />
       <property role="TrG5h" value="failedDispatcher" />
       <node concept="3uibUv" id="2sPLpCfQE64" role="1tU5fm">
-        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+        <ref role="3uigEE" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
       </node>
       <node concept="2ShNRf" id="2sPLpCfQE8w" role="33vP2m">
         <node concept="YeOm9" id="2sPLpCfQE8x" role="2ShVmc">
           <node concept="1Y3b0j" id="2sPLpCfQE8y" role="YeSDq">
             <property role="2bfB8j" value="true" />
             <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="EventDispatcher.Dispatcher" />
+            <ref role="1Y3XeK" to="e373:~EventDispatcher$Dispatcher" resolve="Dispatcher" />
             <node concept="3Tm1VV" id="2sPLpCfQE8z" role="1B3o_S" />
             <node concept="3clFb_" id="2sPLpCfQE8$" role="jymVt">
               <property role="1EzhhJ" value="false" />
@@ -4562,7 +4562,7 @@
                   </node>
                 </node>
                 <node concept="3clFbJ" id="2sPLpCfQE4P" role="3cqZAp">
-                  <node concept="3P9mCS" id="2sPLpCfQE4Q" role="3clFbw">
+                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
                     <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                   </node>
                   <node concept="3clFbS" id="2sPLpCfQE4R" role="3clFbx">
@@ -4696,7 +4696,7 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2sPLpCfQE56" role="3cqZAp">
-                      <node concept="3P9mCS" id="2sPLpCfQE57" role="3clFbw">
+                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
                         <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                       </node>
                       <node concept="3clFbS" id="2sPLpCfQE58" role="3clFbx">
