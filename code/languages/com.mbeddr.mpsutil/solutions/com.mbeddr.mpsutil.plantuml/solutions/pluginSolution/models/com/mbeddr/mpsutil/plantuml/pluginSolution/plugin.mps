@@ -36,7 +36,6 @@
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
@@ -46,6 +45,7 @@
     <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
     <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
     <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
+    <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -3220,9 +3220,9 @@
                 <ref role="2Oxat5" node="5gmO3pL7KrD" resolve="svgScale" />
               </node>
             </node>
-            <node concept="10M0yZ" id="5gmO3pL7Pil" role="37vLTx">
-              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
+            <node concept="10M0yZ" id="3uj04QfX$Sq" role="37vLTx">
               <ref role="3cqZAo" to="ughz:~SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMAX" resolve="SVG_PRESERVEASPECTRATIO_XMIDYMAX" />
+              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
             </node>
           </node>
         </node>

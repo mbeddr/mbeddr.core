@@ -22,8 +22,8 @@
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
-    <dependency reexport="false">96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)</dependency>
     <dependency reexport="true">563a0770-eb88-4f4f-83ed-f708776fc2fe(de.itemis.stubs.batik)</dependency>
+    <dependency reexport="false">124d077c-270f-42ca-8bf8-bee488dc96dc(de.itemis.stubs.xml)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -55,6 +55,7 @@
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="c0488c1e-322f-4f38-92d4-5520a7ce96c1(com.mbeddr.mpsutil.plantuml.pluginSolution)" version="0" />
     <module reference="563a0770-eb88-4f4f-83ed-f708776fc2fe(de.itemis.stubs.batik)" version="0" />
+    <module reference="124d077c-270f-42ca-8bf8-bee488dc96dc(de.itemis.stubs.xml)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" version="0" />
     <module reference="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" version="0" />
