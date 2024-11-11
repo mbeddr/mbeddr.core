@@ -1413,7 +1413,7 @@
     <node concept="3clFbW" id="2UDGRNXxxvO" role="jymVt">
       <node concept="3cqZAl" id="2UDGRNXxxvP" role="3clF45" />
       <node concept="37vLTG" id="2UDGRNXxxvQ" role="3clF46">
-        <property role="TrG5h" value="set" />
+        <property role="TrG5h" value="copy" />
         <node concept="3uibUv" id="2UDGRNXxxvR" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
         </node>
@@ -1422,7 +1422,7 @@
         <node concept="XkiVB" id="2UDGRNXx_PA" role="3cqZAp">
           <ref role="37wK5l" node="5wNjLS4qFj3" resolve="EquivalenceHashSet" />
           <node concept="37vLTw" id="2UDGRNXxFBw" role="37wK5m">
-            <ref role="3cqZAo" node="2UDGRNXxxvQ" resolve="set" />
+            <ref role="3cqZAo" node="2UDGRNXxxvQ" resolve="copy" />
           </node>
           <node concept="2ShNRf" id="2UDGRNXxFFV" role="37wK5m">
             <node concept="HV5vD" id="2UDGRNXxFFW" role="2ShVmc">
