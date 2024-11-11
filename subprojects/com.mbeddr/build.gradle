@@ -86,7 +86,7 @@ subprojects {
 
     dependencies {
         mps "com.jetbrains:mps:$mpsBuild"
-        //mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
+        mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
         ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
 
