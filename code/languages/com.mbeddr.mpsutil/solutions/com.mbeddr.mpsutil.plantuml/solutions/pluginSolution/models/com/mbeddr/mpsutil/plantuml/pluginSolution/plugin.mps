@@ -79,6 +79,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -2864,6 +2865,7 @@
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
     <property role="TrG5h" value="VisualizeActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="1DVNPtFPBO2" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
     </node>
@@ -2876,6 +2878,7 @@
   <node concept="tC5Ba" id="18ZQ$P85bbH">
     <property role="TrG5h" value="ToolbarGroup" />
     <property role="3GE5qa" value="toolbar" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="18ZQ$P85bbJ" role="ftER_">
       <node concept="tCFHf" id="4ppn3W9rIRl" role="ftvYc">
         <ref role="tCJdB" node="4ppn3W9rIR8" resolve="Back" />
@@ -6350,6 +6353,7 @@
     <property role="TrG5h" value="VisualizeActionGroupDynamic" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Visualize ..." />
+    <property role="22ra45" value="true" />
     <node concept="2OiAzN" id="bhVSeGf9rc" role="ftER_">
       <node concept="2OiTZ2" id="bhVSeGf9rd" role="2Oj6PV">
         <node concept="3clFbS" id="bhVSeGf9re" role="2VODD2">

@@ -55,6 +55,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -1715,6 +1716,7 @@
     <property role="3GE5qa" value="clipboard" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Copy/Paste Special" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2N1CSrzm3gH" role="ftER_">
       <node concept="2a7GMi" id="2N1CSrzm3gK" role="ftvYc" />
       <node concept="tCFHf" id="2N1CSrzm3gI" role="ftvYc">

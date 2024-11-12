@@ -56,6 +56,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -643,6 +644,7 @@
   <node concept="tC5Ba" id="3$GaJTCVkrz">
     <property role="3GE5qa" value="wizards" />
     <property role="TrG5h" value="mbeddrWizards" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3$GaJTCVkr_" role="ftER_">
       <node concept="tCFHf" id="3$GaJTCVkrC" role="ftvYc">
         <ref role="tCJdB" node="78Ts1skpdx2" resolve="createExportSkeleton" />
@@ -1342,6 +1344,7 @@
   <node concept="tC5Ba" id="1q0W02ZUiOt">
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="WordsViewerGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="l3$K9zSXev" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
       <ref role="2f8Tey" to="tprs:hHYwqIT" resolve="customTools" />

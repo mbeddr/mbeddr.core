@@ -97,6 +97,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -6699,6 +6700,7 @@
     <property role="TrG5h" value="GeneratedArtifactsReviewGroup" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Generated Artifacts Review" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="39c7fuKvKLM" role="2f5YQi">
       <ref role="tU$_T" to="tprs:1JdTZ5pVxeC" resolve="EditorPopupEx" />
     </node>
@@ -6715,6 +6717,7 @@
     <property role="TrG5h" value="GeneratedArtifactsReviewGroup_Model_Level" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Generated Artifacts Review" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="335p1i8CBba" role="ftER_">
       <node concept="tCFHf" id="335p1i8FwaN" role="ftvYc">
         <ref role="tCJdB" node="335p1i8CBaN" resolve="SetPathToGeneratedArtifactsToReviewAction" />

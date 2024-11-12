@@ -74,6 +74,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
@@ -1597,6 +1598,7 @@
   <node concept="tC5Ba" id="18ZQ$P85bbH">
     <property role="TrG5h" value="GraphingToolbar" />
     <property role="3GE5qa" value="toolbar" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="18ZQ$P85bbJ" role="ftER_">
       <node concept="tCFHf" id="4iv9KfRBTl5" role="ftvYc">
         <ref role="tCJdB" node="4iv9KfRBKWH" resolve="HistoryGoBack" />
@@ -1722,6 +1724,7 @@
     <property role="2f7twF" value="View Graph" />
     <property role="1rdrE6" value="true" />
     <property role="TrG5h" value="ViewInGraphingToolActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="2N1CSrzSaIc" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
       <ref role="2f8Tey" to="ekwn:6S3xhs4vzRz" resolve="diagram" />
