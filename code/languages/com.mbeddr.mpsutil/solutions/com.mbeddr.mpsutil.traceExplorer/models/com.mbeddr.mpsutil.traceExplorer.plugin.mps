@@ -4913,10 +4913,11 @@
         <node concept="3cqZAl" id="5U8d23PWgMD" role="3clF45" />
         <node concept="3clFbS" id="5U8d23PWgME" role="3clF47">
           <node concept="XkiVB" id="5U8d23PWgMF" role="3cqZAp">
-            <ref role="37wK5l" to="lzb2:~ToggleActionButton.&lt;init&gt;(java.lang.String,javax.swing.Icon)" resolve="ToggleActionButton" />
+            <ref role="37wK5l" to="qkt:~ToggleAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="ToggleAction" />
             <node concept="Xl_RD" id="5U8d23PWgMG" role="37wK5m">
               <property role="Xl_RC" value="Highlight in Editor" />
             </node>
+            <node concept="10Nm6u" id="6LC1q0qWVUA" role="37wK5m" />
             <node concept="10M0yZ" id="5U8d23Q0roU" role="37wK5m">
               <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Annotate" resolve="Annotate" />
               <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
@@ -4926,8 +4927,8 @@
         <node concept="3Tm1VV" id="5U8d23PWgMI" role="1B3o_S" />
       </node>
       <node concept="3Tmbuc" id="3EF07Bwya9g" role="1B3o_S" />
-      <node concept="3uibUv" id="5U8d23PWgMK" role="1zkMxy">
-        <ref role="3uigEE" to="lzb2:~ToggleActionButton" resolve="ToggleActionButton" />
+      <node concept="3uibUv" id="6LC1q0qTytq" role="1zkMxy">
+        <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
       </node>
       <node concept="3clFb_" id="5U8d23PWgML" role="jymVt">
         <property role="1EzhhJ" value="false" />
@@ -5004,6 +5005,29 @@
         </node>
         <node concept="2AHcQZ" id="5U8d23PWgNh" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="6LC1q0qU9$E" role="jymVt" />
+      <node concept="2tJIrI" id="6LC1q0qU9AG" role="jymVt" />
+      <node concept="3clFb_" id="6LC1q0qUAMp" role="jymVt">
+        <property role="TrG5h" value="getActionUpdateThread" />
+        <node concept="3Tm1VV" id="6LC1q0qUAMq" role="1B3o_S" />
+        <node concept="2AHcQZ" id="6LC1q0qUAMs" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+        <node concept="3uibUv" id="6LC1q0qUAMt" role="3clF45">
+          <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+        </node>
+        <node concept="3clFbS" id="6LC1q0qUAMw" role="3clF47">
+          <node concept="3clFbF" id="6LC1q0qVda8" role="3cqZAp">
+            <node concept="Rm8GO" id="6LC1q0qVu3z" role="3clFbG">
+              <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+              <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+            </node>
+          </node>
+        </node>
+        <node concept="2AHcQZ" id="6LC1q0qUAMx" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" />
         </node>
       </node>
     </node>
