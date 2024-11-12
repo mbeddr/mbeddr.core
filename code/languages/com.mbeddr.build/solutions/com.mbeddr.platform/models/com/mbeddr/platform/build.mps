@@ -309,6 +309,9 @@
       <node concept="m$_yC" id="4wBLq3Y5yV5" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2OJNL7ElZsF" resolve="de.q60.mps.collections.libs" />
       </node>
+      <node concept="m$_yC" id="2DDNE2eaR2F" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
+      </node>
     </node>
     <node concept="m$_wf" id="33r_JpZ6k_l" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.platform.build" />
@@ -2540,7 +2543,7 @@
         <property role="2iUeEu" value="http://mbeddr.com" />
       </node>
       <node concept="m$_yC" id="gz2HgGliyx" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:6bkzxtWP$OT" />
+        <ref role="m$_y1" to="90a9:6bkzxtWP$OT" resolve="de.itemis.stubs.batik" />
       </node>
     </node>
     <node concept="2G$12M" id="4VgGsUqP22z" role="3989C9">

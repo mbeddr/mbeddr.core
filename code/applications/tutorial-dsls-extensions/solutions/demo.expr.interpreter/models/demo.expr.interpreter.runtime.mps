@@ -159,7 +159,7 @@
               <node concept="37vLTI" id="3xDNhgd54Tt" role="3clFbG">
                 <node concept="2ShNRf" id="3xDNhgd54Uj" role="37vLTx">
                   <node concept="1pGfFk" id="3xDNhgd562j" role="2ShVmc">
-                    <ref role="37wK5l" to="2ahs:27SkbdzdAWl" />
+                    <ref role="37wK5l" to="2ahs:27SkbdzdAWl" resolve="ContextImpl" />
                     <node concept="37vLTw" id="5UujJsmuynZ" role="37wK5m">
                       <ref role="3cqZAo" node="3xDNhgd53F9" resolve="interpreter" />
                     </node>

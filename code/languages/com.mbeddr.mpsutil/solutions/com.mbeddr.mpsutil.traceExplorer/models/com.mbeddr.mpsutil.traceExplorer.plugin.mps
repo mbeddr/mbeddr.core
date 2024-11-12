@@ -4018,7 +4018,7 @@
             <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
           </node>
           <node concept="2AHcQZ" id="43zZ$xOPbdJ" role="2AJF6D">
-            <ref role="2AI5Lk" to="zn9m:~NlsActions$ActionText" resolve="ActionText" />
+            <ref role="2AI5Lk" to="zn9m:~NlsActions$ActionText" resolve="NlsActions.ActionText" />
           </node>
         </node>
         <node concept="37vLTG" id="43zZ$xOPbdL" role="3clF46">
@@ -4030,7 +4030,7 @@
             <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
           </node>
           <node concept="2AHcQZ" id="43zZ$xOPbdN" role="2AJF6D">
-            <ref role="2AI5Lk" to="zn9m:~NlsActions$ActionDescription" resolve="ActionDescription" />
+            <ref role="2AI5Lk" to="zn9m:~NlsActions$ActionDescription" resolve="NlsActions.ActionDescription" />
           </node>
         </node>
         <node concept="37vLTG" id="43zZ$xOPbdP" role="3clF46">
@@ -4076,7 +4076,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="43zZ$xOS5Cb" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
       <node concept="3Tm1VV" id="43zZ$xOUWtU" role="1B3o_S" />
@@ -4094,7 +4094,7 @@
         <node concept="3cqZAl" id="2jSY3BO8ZZ7" role="3clF45" />
         <node concept="3clFbS" id="2jSY3BO8ZZ9" role="3clF47">
           <node concept="XkiVB" id="2jSY3BO90Eb" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="2jSY3BO90VD" role="37wK5m">
               <property role="Xl_RC" value="Removal of Trace Information from Code" />
             </node>
@@ -4148,7 +4148,7 @@
         <node concept="3cqZAl" id="5U8d23PrYAl" role="3clF45" />
         <node concept="3clFbS" id="5U8d23PrYAm" role="3clF47">
           <node concept="XkiVB" id="5U8d23PrYAn" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="5U8d23PrYAo" role="37wK5m">
               <property role="Xl_RC" value="Next Trace for Same Node" />
             </node>
@@ -4859,7 +4859,7 @@
         <node concept="3cqZAl" id="5syY_AMvqCy" role="3clF45" />
         <node concept="3clFbS" id="5syY_AMvqCz" role="3clF47">
           <node concept="XkiVB" id="5syY_AMv_PL" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="5syY_AMvAzh" role="37wK5m">
               <property role="Xl_RC" value="Open Filter Menu" />
             </node>
@@ -5027,7 +5027,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="6LC1q0qUAMx" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
     </node>
@@ -5042,7 +5042,7 @@
         <node concept="3cqZAl" id="3wJ9Qm10p6q" role="3clF45" />
         <node concept="3clFbS" id="3wJ9Qm10p6r" role="3clF47">
           <node concept="XkiVB" id="3wJ9Qm10ugO" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="3wJ9Qm10ugP" role="37wK5m">
               <property role="Xl_RC" value="Goto Computation Source" />
             </node>
@@ -5693,7 +5693,7 @@
         <node concept="3cqZAl" id="4yQfyMjydYY" role="3clF45" />
         <node concept="3clFbS" id="4yQfyMjydYZ" role="3clF47">
           <node concept="XkiVB" id="4yQfyMjydZ0" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="4yQfyMjydZ1" role="37wK5m">
               <property role="Xl_RC" value="Expand All" />
             </node>
@@ -5817,7 +5817,7 @@
         <node concept="3cqZAl" id="7rNasV4jYlc" role="3clF45" />
         <node concept="3clFbS" id="7rNasV4jYld" role="3clF47">
           <node concept="XkiVB" id="7rNasV4jYle" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="7rNasV4jYlf" role="37wK5m">
               <property role="Xl_RC" value="Apply last Manual Unfolding" />
             </node>
@@ -5936,7 +5936,7 @@
         <node concept="3cqZAl" id="4yQfyMjyk9Q" role="3clF45" />
         <node concept="3clFbS" id="4yQfyMjyk9R" role="3clF47">
           <node concept="XkiVB" id="4yQfyMjyk9S" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="4yQfyMjyk9T" role="37wK5m">
               <property role="Xl_RC" value="Collapse All" />
             </node>
@@ -6065,7 +6065,7 @@
         <node concept="3cqZAl" id="5IR_boHB45h" role="3clF45" />
         <node concept="3clFbS" id="5IR_boHB45i" role="3clF47">
           <node concept="XkiVB" id="5IR_boHB45j" role="3cqZAp">
-            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="AnAction" />
+            <ref role="37wK5l" node="~AnAction.&lt;init&gt;(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="TraceTab.TraceAction" />
             <node concept="Xl_RD" id="5IR_boHB45k" role="37wK5m">
               <property role="Xl_RC" value="Rerun" />
             </node>

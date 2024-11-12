@@ -9317,7 +9317,7 @@
               <node concept="2OqwBi" id="1FqEKJFsavi" role="2Oq$k0">
                 <node concept="2WthIp" id="1FqEKJFsavj" role="2Oq$k0" />
                 <node concept="1DTwFV" id="1FqEKJFsavk" role="2OqNvi">
-                  <ref role="2WH_rO" node="7NyyyjNHi27" resolve="project" />
+                  <ref role="2WH_rO" node="7NyyyjNHi27" resolve="ideaProject" />
                 </node>
               </node>
               <node concept="liA8E" id="1FqEKJFsavl" role="2OqNvi">
@@ -9339,7 +9339,7 @@
               <node concept="2OqwBi" id="7NyyyjNHi25" role="2Oq$k0">
                 <node concept="2WthIp" id="7NyyyjNHi26" role="2Oq$k0" />
                 <node concept="1DTwFV" id="4mGNV$rbl34" role="2OqNvi">
-                  <ref role="2WH_rO" node="7NyyyjNHi27" resolve="project" />
+                  <ref role="2WH_rO" node="7NyyyjNHi27" resolve="ideaProject" />
                 </node>
               </node>
               <node concept="LR4U6" id="23WougRDsKR" role="2OqNvi">
