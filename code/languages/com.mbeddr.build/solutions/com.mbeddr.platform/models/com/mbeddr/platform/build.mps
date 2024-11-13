@@ -20626,6 +20626,27 @@
               <property role="3MwjfP" value="lib" />
             </node>
           </node>
+          <node concept="398223" id="6L0JKBMPRz4" role="39821P">
+            <node concept="3_J27D" id="6L0JKBMPRz5" role="Nbhlr">
+              <node concept="3Mxwew" id="6L0JKBMPRz6" role="3MwsjC">
+                <property role="3MwjfP" value="datepicker" />
+              </node>
+            </node>
+            <node concept="2HvfSZ" id="6L0JKBMPRz7" role="39821P">
+              <node concept="398BVA" id="6L0JKBMPRz8" role="2HvfZ0">
+                <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+                <node concept="2Ry0Ak" id="6L0JKBMPRz9" role="iGT6I">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="6L0JKBMPRza" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.mbeddr.mpsutil.datepicker.runtime" />
+                    <node concept="2Ry0Ak" id="6L0JKBMXb9a" role="2Ry0An">
+                      <property role="2Ry0Am" value="lib" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="398223" id="29VkIO0XNOJ" role="39821P">
             <node concept="3_J27D" id="29VkIO0XNOL" role="Nbhlr">
               <node concept="3Mxwew" id="29VkIO0XOGA" role="3MwsjC">
