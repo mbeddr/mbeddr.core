@@ -8,9 +8,6 @@ plugins {
 
 apply plugin: 'download-jbr'
 
-downloadJbr {
-    jbrVersion = '17.0.11-b1207.30'
-}
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
@@ -161,8 +158,8 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 }
 
 tasks.register('migrate', MpsMigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
-    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', ':downloadJbr')
+    javaLauncher = rootProject.tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
     haltOnPrecheckFailure = false
     haltOnDependencyError = false
     mpsHome = mpsHomeDir
@@ -176,8 +173,8 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
-    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', ':downloadJbr')
+    javaLauncher = rootProject.tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
