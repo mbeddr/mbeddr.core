@@ -54,7 +54,6 @@
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
@@ -73,10 +72,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -110,9 +105,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -146,12 +138,10 @@
       <concept id="440773076688628186" name="com.mbeddr.core.buildconfig.structure.NothingPlatform" flags="ng" index="wyh$t" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
         <child id="1199542457201" name="resultType" index="1ajl9A" />
       </concept>
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -191,18 +181,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
-        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
-      </concept>
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
-      </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -264,13 +245,9 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
-        <child id="1204796294226" name="closure" index="23t8la" />
+      <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
+        <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
-      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
-        <child id="1151689745422" name="elementType" index="A3Ik2" />
-      </concept>
-      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
     </language>
   </registry>
@@ -280,98 +257,26 @@
     <node concept="2XrIbr" id="5kiZIBgBuTP" role="1qtyYc">
       <property role="TrG5h" value="getCInterpreter" />
       <node concept="3clFbS" id="5kiZIBgBuTQ" role="3clF47">
-        <node concept="3cpWs8" id="15Er3QytrWI" role="3cqZAp">
-          <node concept="3cpWsn" id="15Er3QytrWJ" role="3cpWs9">
-            <property role="TrG5h" value="interpreterNodes" />
-            <node concept="A3Dl8" id="15Er3QytrWA" role="1tU5fm">
-              <node concept="3Tqbb2" id="15Er3QytrWD" role="A3Ik2">
-                <ref role="ehGHo" to="3673:7ueT7DHTBbE" resolve="Interpreter" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="15Er3QytrWK" role="33vP2m">
-              <node concept="2YIFZM" id="15Er3QytrWL" role="2Oq$k0">
-                <ref role="37wK5l" to="2ahs:6t6gMvcMFOM" resolve="getInstance" />
-                <ref role="1Pybhc" to="2ahs:6t6gMvcKSR1" resolve="CachedInterpreterFinder" />
-              </node>
-              <node concept="liA8E" id="15Er3QytrWM" role="2OqNvi">
-                <ref role="37wK5l" to="2ahs:6t6gMvcMGiv" resolve="findInterpretersForCategory" />
-                <node concept="Xl_RD" id="7xtsKqWlq7Z" role="37wK5m">
-                  <property role="Xl_RC" value="CInterpreter" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3YR_2qPI0Ir" role="3cqZAp">
-          <node concept="3cpWsn" id="3YR_2qPI0Is" role="3cpWs9">
-            <property role="TrG5h" value="conditionalInterpreterNodes" />
-            <node concept="A3Dl8" id="3YR_2qPI0I9" role="1tU5fm">
-              <node concept="3Tqbb2" id="3YR_2qPI0Ic" role="A3Ik2">
-                <ref role="ehGHo" to="3673:7oujAIeONTA" resolve="ConditionalInterpreter" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3YR_2qPI0It" role="33vP2m">
-              <node concept="v3k3i" id="3YR_2qPI0Iu" role="2OqNvi">
-                <node concept="chp4Y" id="3YR_2qPI0Iv" role="v3oSu">
-                  <ref role="cht4Q" to="3673:7oujAIeONTA" resolve="ConditionalInterpreter" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="3YR_2qPI0Iw" role="2Oq$k0">
-                <ref role="3cqZAo" node="15Er3QytrWJ" resolve="interpreterNodes" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3YR_2qPI1vJ" role="3cqZAp">
-          <node concept="3cpWsn" id="3YR_2qPI1vK" role="3cpWs9">
-            <property role="TrG5h" value="conditionalInterpreters" />
-            <node concept="A3Dl8" id="3YR_2qPI1uZ" role="1tU5fm">
-              <node concept="3uibUv" id="3YR_2qPI1v2" role="A3Ik2">
-                <ref role="3uigEE" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="3YR_2qPI1vL" role="33vP2m">
-              <node concept="37vLTw" id="3YR_2qPI1vM" role="2Oq$k0">
-                <ref role="3cqZAo" node="3YR_2qPI0Is" resolve="conditionalInterpreterNodes" />
-              </node>
-              <node concept="3$u5V9" id="3YR_2qPI1vN" role="2OqNvi">
-                <node concept="1bVj0M" id="3YR_2qPI1vO" role="23t8la">
-                  <node concept="3clFbS" id="3YR_2qPI1vP" role="1bW5cS">
-                    <node concept="3clFbF" id="3YR_2qPI1vQ" role="3cqZAp">
-                      <node concept="1eOMI4" id="3YR_2qPI1vR" role="3clFbG">
-                        <node concept="10QFUN" id="3YR_2qPI1vS" role="1eOMHV">
-                          <node concept="2YIFZM" id="3YR_2qPI1vT" role="10QFUP">
-                            <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                            <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                            <node concept="37vLTw" id="3YR_2qPI1vU" role="37wK5m">
-                              <ref role="3cqZAo" node="2SR9xrsN2A2" resolve="it" />
-                            </node>
-                          </node>
-                          <node concept="3uibUv" id="3YR_2qPI1vV" role="10QFUM">
-                            <ref role="3uigEE" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="gl6BB" id="2SR9xrsN2A2" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="2SR9xrsN2A3" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="3YR_2qPHZ$R" role="3cqZAp">
           <node concept="2ShNRf" id="7xtsKqWls5g" role="3cqZAk">
             <node concept="1pGfFk" id="7xtsKqWlsw3" role="2ShVmc">
               <ref role="37wK5l" to="2ahs:2pogikRxFvC" resolve="CombinedConditionalInterpreter" />
-              <node concept="2OqwBi" id="7xtsKqWlvjv" role="37wK5m">
-                <node concept="37vLTw" id="3YR_2qPI1vY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3YR_2qPI1vK" resolve="conditionalInterpreters" />
+              <node concept="2OqwBi" id="1jg0lh7LLzh" role="37wK5m">
+                <node concept="2OqwBi" id="1jg0lh7LRWH" role="2Oq$k0">
+                  <node concept="2YIFZM" id="1jg0lh7LJkd" role="2Oq$k0">
+                    <ref role="37wK5l" to="2ahs:2PA_oGdvp1R" resolve="findAllInterpreterExecutablesForCategory" />
+                    <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                    <node concept="Xl_RD" id="1jg0lh7LJE8" role="37wK5m">
+                      <property role="Xl_RC" value="CInterpreter" />
+                    </node>
+                  </node>
+                  <node concept="UnYns" id="1jg0lh7LTbd" role="2OqNvi">
+                    <node concept="3uibUv" id="1jg0lh7LTu6" role="UnYnz">
+                      <ref role="3uigEE" to="2ahs:7oujAIfiLO4" resolve="IConditionalInterpreter" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="3_kTaI" id="7xtsKqWlvPl" role="2OqNvi" />
+                <node concept="3_kTaI" id="1jg0lh7LMy2" role="2OqNvi" />
               </node>
             </node>
           </node>
