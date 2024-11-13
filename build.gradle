@@ -7,20 +7,16 @@ plugins {
     id 'download-jbr' version '1.28.+'
 }
 
-repositories {
-    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-}
-
 downloadJbr {
-    jbrVersion = '17.0.11-b1207.30'
+    jbrVersion = '21.0.5-b631.8'
 }
 
 //MPS version
-ext.mpsMajor = "2024.1"
-ext.mpsBuild = "2024.1.1"
+ext.mpsMajor = "9999.9"
+ext.mpsBuild = "243.21565.106"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
+ext.mpsExtensionsVersion = "9999.9.3017.107b036-SNAPSHOT"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
