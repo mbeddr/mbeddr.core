@@ -11,7 +11,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.templates/com.mbeddr.build.templates.msd" folder="templates" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

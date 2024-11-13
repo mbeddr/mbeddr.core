@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:be4dd3c4-5648-4c3a-ba98-90c3060d299f(tutorial-dsls-extensions.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
   </languages>
