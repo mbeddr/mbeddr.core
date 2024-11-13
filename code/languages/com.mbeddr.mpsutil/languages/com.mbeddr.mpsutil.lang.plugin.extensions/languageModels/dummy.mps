@@ -11,6 +11,7 @@
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
     </language>
@@ -22,6 +23,7 @@
   </registry>
   <node concept="tC5Ba" id="eRZjv$WKyw">
     <property role="TrG5h" value="dummy" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="eRZjv$WKzd" role="ftER_" />
   </node>
 </model>

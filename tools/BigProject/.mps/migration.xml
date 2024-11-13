@@ -11,6 +11,7 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.SplitMPSCoreStub2" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.DataFlowStubsToRegularNodes" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.JavaModuleSettingsToFacet" value="executed" />
-    <entry key="project.migrated.version" value="232" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2023_3.CleanStubForeignMethodIds" value="executed" />
+    <entry key="project.migrated.version" value="241" />
   </component>
 </project>

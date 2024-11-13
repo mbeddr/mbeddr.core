@@ -2,7 +2,7 @@
 <model ref="r:ff600857-8d5a-4544-a102-5d8eb616766a(com.mbeddr.platform.tests.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
@@ -3573,6 +3573,11 @@
           <node concept="3qWCbU" id="E0fxGqluKg" role="3LXTna">
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2hC83VUYsa" role="3bR37C">
+        <node concept="3bR9La" id="2hC83VUYsb" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
         </node>
       </node>
     </node>

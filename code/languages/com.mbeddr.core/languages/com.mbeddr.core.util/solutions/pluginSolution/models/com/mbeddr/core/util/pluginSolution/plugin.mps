@@ -82,6 +82,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1205160812895" name="mnemonic" index="2pbE17" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -609,6 +610,7 @@
   <node concept="tC5Ba" id="1ptFCtLqsyO">
     <property role="TrG5h" value="mbeddrWizards" />
     <property role="3GE5qa" value="wizards" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="1ptFCtLqsyP" role="ftER_">
       <node concept="tCFHf" id="1ptFCtLqsyR" role="ftvYc">
         <ref role="tCJdB" node="1ptFCtLqsw3" resolve="makeHelloWorld" />
@@ -6748,6 +6750,7 @@
     <property role="TrG5h" value="mbeddrNewWizards" />
     <property role="2f7twF" value="New" />
     <property role="2pbE17" value="n" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2YKCKZ22N3L" role="ftER_">
       <node concept="2a7GMi" id="eRZjv$U_OF" role="ftvYc" />
       <node concept="tCFHf" id="2YKCKZ22N3P" role="ftvYc">
