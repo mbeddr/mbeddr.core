@@ -2143,7 +2143,7 @@
                     <ref role="2Gs0qQ" node="VPgi8egj9f" resolve="module" />
                   </node>
                   <node concept="liA8E" id="4jHuzb0Embu" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getModuleReference()" resolve="getModuleReference" />
+                    <ref role="37wK5l" to="j8aq:~ReloadableModule.getModuleReference()" resolve="getModuleReference" />
                   </node>
                 </node>
               </node>
