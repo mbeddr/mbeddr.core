@@ -25,6 +25,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -120,6 +121,7 @@
   <node concept="2DaZZR" id="7Ynnt_Ofh3$" />
   <node concept="tC5Ba" id="7Ynnt_OfRHj">
     <property role="TrG5h" value="dummyStuff" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="7Ynnt_OfRHl" role="ftER_">
       <node concept="tCFHf" id="7Ynnt_OfRHo" role="ftvYc">
         <ref role="tCJdB" node="7Ynnt_OeSdG" resolve="lalla" />
@@ -163,6 +165,7 @@
   </node>
   <node concept="tC5Ba" id="lse_ua3ln_">
     <property role="TrG5h" value="moduleActions" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="lse_ua3lnB" role="ftER_" />
     <node concept="tT9cl" id="lse_ua3lnG" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hF$i1WJ" resolve="IDEAEdit" />

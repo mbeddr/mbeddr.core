@@ -6,8 +6,6 @@
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="43d889ae-8e6a-4f6e-a649-d59342d8728d(com.mbeddr.statemachines)" />
     <devkit ref="a4dac888-0788-4852-b4c0-f386bf6f2c0b(com.mbeddr.cc.reqtrace)" />
-    <devkit ref="0ca77142-1eea-4b14-b369-69bdaa1c44fb(com.mbeddr.analyses.core)" />
-    <devkit ref="74a1428c-a8b1-49f6-8abb-f4008cf591e6(com.mbeddr.analyses.statemachines)" />
   </languages>
   <imports />
   <registry>
@@ -116,14 +114,6 @@
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
-    </language>
-    <language id="42270baf-e92c-4c32-b263-d617b3fce239" name="com.mbeddr.analyses.cbmc">
-      <concept id="8985851583396455245" name="com.mbeddr.analyses.cbmc.structure.NondetVarAssignment" flags="ng" index="2c3wGE">
-        <property id="2613206384568936346" name="constraintsEnabled" index="2xg5V6" />
-        <child id="8985851583396455261" name="constraints" index="2c3wGU" />
-        <child id="8985851583396455257" name="varRef" index="2c3wGY" />
-      </concept>
-      <concept id="8985851583396455243" name="com.mbeddr.analyses.cbmc.structure.HarnessModule" flags="ng" index="2c3wGG" />
     </language>
     <language id="2693fc71-9b0e-4b05-ab13-f57227d675f2" name="com.mbeddr.core.util">
       <concept id="4459718605982051949" name="com.mbeddr.core.util.structure.ReportingConfiguration" flags="ng" index="2Q9Fgs">
@@ -310,7 +300,6 @@
       <concept id="5763383285156373022" name="com.mbeddr.core.expressions.structure.DivExpression" flags="ng" index="2BOcih" />
       <concept id="5763383285156373020" name="com.mbeddr.core.expressions.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156373018" name="com.mbeddr.core.expressions.structure.MinusExpression" flags="ng" index="2BOcil" />
-      <concept id="5763383285156373013" name="com.mbeddr.core.expressions.structure.PlusExpression" flags="ng" index="2BOciq" />
       <concept id="5763383285156533447" name="com.mbeddr.core.expressions.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="318113533128716675" name="com.mbeddr.core.expressions.structure.ITyped" flags="ngI" index="2C2TGh">
         <child id="318113533128716676" name="type" index="2C2TGm" />
@@ -318,7 +307,6 @@
       <concept id="8399455261460717640" name="com.mbeddr.core.expressions.structure.AndExpression" flags="ng" index="2EHzL6" />
       <concept id="3830958861296781575" name="com.mbeddr.core.expressions.structure.NotExpression" flags="ng" index="19$8ne" />
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
-      <concept id="2799490600706093744" name="com.mbeddr.core.expressions.structure.ModuloExpression" flags="ng" index="1hY7HI" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="6610873504380029780" name="com.mbeddr.core.expressions.structure.CastExpression" flags="ng" index="1S8S4T">
         <child id="6610873504380029790" name="targetType" index="1S8S4N" />
@@ -1733,96 +1721,6 @@
           </node>
         </node>
         <node concept="3XISUE" id="72i$66eNls3" role="3XIRFZ" />
-        <node concept="2c3wGG" id="72i$66eNlAC" role="3XIRFZ">
-          <node concept="2c3wGE" id="72i$66eNosb" role="3XIRFZ">
-            <property role="2xg5V6" value="true" />
-            <node concept="3ZVu4v" id="72i$66eNr5A" role="2c3wGY">
-              <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
-            </node>
-            <node concept="2EHzL6" id="4efBVmuzN5V" role="2c3wGU">
-              <node concept="2EHzL6" id="4efBVmuzN64" role="3TlMhI">
-                <node concept="3Tl9Jl" id="72i$66eNv_T" role="3TlMhI">
-                  <node concept="3ZVu4v" id="72i$66eNvAG" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
-                  </node>
-                  <node concept="3TlMh9" id="72i$66eNvmk" role="3TlMhI">
-                    <property role="2hmy$m" value="30" />
-                  </node>
-                </node>
-                <node concept="3Tl9Jl" id="5EA63UsFnew" role="3TlMhJ">
-                  <node concept="3TlMh9" id="5EA63UsFs1q" role="3TlMhJ">
-                    <property role="2hmy$m" value="50" />
-                  </node>
-                  <node concept="3ZVu4v" id="5EA63UsF66O" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3TlM44" id="5EA63UsGawN" role="3TlMhJ">
-                <node concept="3TlMh9" id="5EA63UsGg0z" role="3TlMhJ">
-                  <property role="2hmy$m" value="0" />
-                </node>
-                <node concept="1hY7HI" id="5EA63UsG44l" role="3TlMhI">
-                  <node concept="3TlMh9" id="5EA63UsG44o" role="3TlMhJ">
-                    <property role="2hmy$m" value="5" />
-                  </node>
-                  <node concept="3ZVu4v" id="5EA63UsFXNx" role="3TlMhI">
-                    <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2c3wGE" id="72i$66eO7qp" role="3XIRFZ">
-            <property role="2xg5V6" value="true" />
-            <node concept="3ZVu4v" id="72i$66eOczP" role="2c3wGY">
-              <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
-            </node>
-            <node concept="2EHzL6" id="4efBVmuzOSC" role="2c3wGU">
-              <node concept="2EHzL6" id="4efBVmuzOSJ" role="3TlMhI">
-                <node concept="3Tl9Jl" id="72i$66eOCrJ" role="3TlMhI">
-                  <node concept="3ZVu4v" id="72i$66eOGE5" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
-                  </node>
-                  <node concept="2BOciq" id="72i$66eOfyx" role="3TlMhI">
-                    <node concept="3TlMh9" id="72i$66eOfy$" role="3TlMhJ">
-                      <property role="2hmy$m" value="40" />
-                    </node>
-                    <node concept="3ZVu4v" id="72i$66eOfyl" role="3TlMhI">
-                      <ref role="3ZVs_2" node="9zybxv$G5J" resolve="lrl" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3Tl9Jl" id="72i$66eOWKS" role="3TlMhJ">
-                  <node concept="3ZVu4v" id="72i$66eP0YP" role="3TlMhJ">
-                    <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
-                  </node>
-                  <node concept="3TlMh9" id="72i$66eOPHQ" role="3TlMhI">
-                    <property role="2hmy$m" value="50" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3Tl9Jl" id="72i$66ePgKR" role="3TlMhJ">
-                <node concept="3TlMh9" id="72i$66ePln6" role="3TlMhJ">
-                  <property role="2hmy$m" value="175" />
-                </node>
-                <node concept="3ZVu4v" id="72i$66ePbdH" role="3TlMhI">
-                  <ref role="3ZVs_2" node="9zybxv$G5M" resolve="url" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3XISUE" id="72i$66eNvmg" role="3XIRFZ" />
-          <node concept="1z9TsT" id="72i$66ePw5r" role="lGtFl">
-            <node concept="OjmMv" id="72i$66ePw5s" role="1w35rA">
-              <node concept="19SGf9" id="72i$66ePw5t" role="OjmMu">
-                <node concept="19SUe$" id="72i$66ePw5u" role="19SJt6">
-                  <property role="19SUeA" value="The parameters are set by a doctor in a certain limits, given \nby the specification. We produce them nondeterministically - to \nverify with all the possible values!\n\nThe counterexample trace starts, telling the parameter values, at\nwhich the failure happens." />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3XISUE" id="9zybxv$G5S" role="3XIRFZ" />
         <node concept="3XIRlf" id="9zybxv$G5T" role="3XIRFZ">
           <property role="TrG5h" value="tickLengthMs" />

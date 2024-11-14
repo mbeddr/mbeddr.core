@@ -38,6 +38,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -570,14 +571,10 @@
         </node>
         <node concept="3clFbF" id="4w$MyS_0YKM" role="3cqZAp">
           <node concept="2EnYce" id="4w$MyS_10gj" role="3clFbG">
-            <node concept="2EnYce" id="4w$MyS_0ZAu" role="2Oq$k0">
-              <node concept="2YIFZM" id="4w$MyS_0YQw" role="2Oq$k0">
-                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
-                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                <node concept="1KvdUw" id="4w$MyS_0YQS" role="37wK5m" />
-              </node>
+            <node concept="2OqwBi" id="2P9sdrBJ$B2" role="2Oq$k0">
+              <node concept="1KvdUw" id="2P9sdrBJ$sP" role="2Oq$k0" />
               <node concept="liA8E" id="4w$MyS_0ZD8" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
+                <ref role="37wK5l" to="z1c4:~MPSProject.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="4w$MyS_0ZVF" role="37wK5m">
                   <ref role="3VsUkX" to="wvnl:~EditorExtensionRegistry" resolve="EditorExtensionRegistry" />
                 </node>
@@ -634,14 +631,10 @@
         </node>
         <node concept="3clFbF" id="4w$MyS_10CO" role="3cqZAp">
           <node concept="2EnYce" id="4w$MyS_10CP" role="3clFbG">
-            <node concept="2EnYce" id="4w$MyS_10CQ" role="2Oq$k0">
-              <node concept="2YIFZM" id="4w$MyS_10CR" role="2Oq$k0">
-                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-                <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
-                <node concept="1KvdUw" id="4w$MyS_10CS" role="37wK5m" />
-              </node>
+            <node concept="2OqwBi" id="2P9sdrBJ$QN" role="2Oq$k0">
+              <node concept="1KvdUw" id="2P9sdrBJ$M_" role="2Oq$k0" />
               <node concept="liA8E" id="4w$MyS_10CT" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
+                <ref role="37wK5l" to="z1c4:~MPSProject.getComponent(java.lang.Class)" resolve="getComponent" />
                 <node concept="3VsKOn" id="4w$MyS_10CU" role="37wK5m">
                   <ref role="3VsUkX" to="wvnl:~EditorExtensionRegistry" resolve="EditorExtensionRegistry" />
                 </node>

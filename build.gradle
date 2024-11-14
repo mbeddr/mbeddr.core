@@ -12,12 +12,12 @@ repositories {
 }
 
 downloadJbr {
-    jbrVersion = '17.0.8.1-b1000.32'
+    jbrVersion = '17.0.11-b1207.30'
 }
 
 //MPS version
-ext.mpsMajor = "2023.2"
-ext.mpsBuild = "2023.2.2"
+ext.mpsMajor = "2024.1"
+ext.mpsBuild = "2024.1.1"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"

@@ -55,6 +55,7 @@
   </generators>
   <dependencies>
     <dependency reexport="false">98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea(com.mbeddr.mpsutil.datepicker.runtime)</dependency>
+    <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:fb1561dd-216d-4cd5-9cd8-5d1dc9d20bcf:com.mbeddr.mpsutil.datepicker" version="0" />
@@ -97,6 +98,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
     <module reference="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea(com.mbeddr.mpsutil.datepicker.runtime)" version="0" />
     <module reference="27e888f7-20c7-4b89-9a66-3c9207e0608b(com.mbeddr.mpsutil.datepicker.sandbox)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

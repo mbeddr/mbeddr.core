@@ -19,6 +19,7 @@
   <property name="mps.teamcity.buildConfName" value="${import.mps.mps.teamcity.buildConfName}" />
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
   <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
+  <property name="mps.runtimeBuild" value="${import.mps.mps.runtimeBuild}" />
   <property name="mpsBootstrapCore.version.major" value="${import.mps.mpsBootstrapCore.version.major}" />
   <property name="mpsBootstrapCore.version.minor" value="${import.mps.mpsBootstrapCore.version.minor}" />
   <property name="mpsBootstrapCore.version.bugfixNr" value="${import.mps.mpsBootstrapCore.version.bugfixNr}" />
@@ -44,25 +45,6 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
     <mkdir dir="${build.layout}/mbeddr.allScripts" />
-    <mkdir dir="${build.layout}/mbeddr.allScripts/META-INF" />
-    <echoxml file="${build.layout}/mbeddr.allScripts/META-INF/plugin.xml">
-      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>com.mbeddr.allScripts</id>
-        <name>com.mbeddr.allScripts</name>
-        <version>${mbeddr.version}</version>
-        <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.build</depends>
-        <depends>jetbrains.mps.debugger.api</depends>
-        <depends>jetbrains.mps.execution.api</depends>
-        <depends>jetbrains.mps.execution.languages</depends>
-        <depends>jetbrains.mps.execution.configurations</depends>
-        <depends>de.itemis.mps.extensions.build</depends>
-        
-        <extensions defaultExtensionNs="com.intellij">
-          <mps.LanguageLibrary dir="/languages" />
-        </extensions>
-      </idea-plugin>
-    </echoxml>
     <mkdir dir="${build.layout}/mbeddr.allScripts/lib" />
     <mkdir dir="${build.tmp}/default/mbeddr.allScripts.jar" />
     <mkdir dir="${build.tmp}/default/mbeddr.allScripts.jar/META-INF" />
@@ -71,6 +53,7 @@
         <id>com.mbeddr.allScripts</id>
         <name>com.mbeddr.allScripts</name>
         <version>${mbeddr.version}</version>
+        <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>jetbrains.mps.debugger.api</depends>
@@ -95,7 +78,6 @@
         <dependencies>
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -137,7 +119,6 @@
           <module ref="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" kind="cl" />
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -177,7 +158,6 @@
           <module ref="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" kind="cl" />
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -217,7 +197,6 @@
           <module ref="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" kind="cl" />
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -257,7 +236,6 @@
           <module ref="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" kind="cl" />
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -290,48 +268,6 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.ext.build-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.layout}/mbeddr.allScripts/languages" />
-    <mkdir dir="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.xmodel" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.xmodel.build.jar" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.xmodel.build.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.xmodel.build.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.xmodel.build" type="solution" uuid="f784c90b-1ff6-440a-9cf3-266de03c53ec">
-        <dependencies>
-          <module ref="7ac0dfb8-7d5f-4573-ab80-81af2106ce03(com.mbeddr.build)" kind="cl" />
-          <module ref="d47a3921-8b42-4664-bed6-25e3e4fd6efb(com.mbeddr.core.tests.build)" kind="cl" />
-          <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
-        </dependencies>
-        <uses>
-          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
-          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
-          <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
-        </uses>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="com.mbeddr.xmodel.build-src.jar" descriptor="com.mbeddr.xmodel.build.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.xmodel/com.mbeddr.xmodel.build.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.xmodel.build" />
-      <fileset dir="${basedir}/solutions/com.mbeddr.xmodel.build" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/com.mbeddr.xmodel.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/com.mbeddr.xmodel.build.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.xmodel.build-models">
-      <fileset dir="${basedir}/solutions/com.mbeddr.xmodel.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/mbeddr.allScripts/languages/com.mbeddr.xmodel/com.mbeddr.xmodel.build-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/com.mbeddr.xmodel.build/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.mbeddr.xmodel.build-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.layout}/mbeddr.allScripts/languages" />
     <mkdir dir="${build.layout}/mbeddr.allScripts/languages/mbeddr.allScripts" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.jar" />
     <mkdir dir="${build.tmp}/default/com.mbeddr.allScripts.jar/META-INF" />
@@ -340,7 +276,6 @@
         <dependencies>
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
           <module ref="bf659d6c-5638-4ea1-972b-4d492b5a91f2(jetbrains.mps.execution.configurations.implementation.plugin)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -380,7 +315,6 @@
         <dependencies>
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -420,7 +354,6 @@
       <module namespace="com.mbeddr.platform" type="solution" uuid="3ae9cfda-f938-4524-b4ca-fbcba3b0525b">
         <dependencies>
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -461,7 +394,6 @@
         <dependencies>
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
-          <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -497,7 +429,7 @@
     <copy todir="${build.layout}/de.itemis.mps.extensions.build">
       <fileset dir="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build" />
     </copy>
-    <echo file="${build.layout}/build.properties">com.mbeddr.allScripts.build.major.version=${major.version}${line.separator}com.mbeddr.allScripts.build.minor.version=${minor.version}${line.separator}com.mbeddr.allScripts.build.build=${build}${line.separator}com.mbeddr.allScripts.build.mbeddr.version=${mbeddr.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
+    <echo file="${build.layout}/build.properties">com.mbeddr.allScripts.build.major.version=${major.version}${line.separator}com.mbeddr.allScripts.build.minor.version=${minor.version}${line.separator}com.mbeddr.allScripts.build.build=${build}${line.separator}com.mbeddr.allScripts.build.mbeddr.version=${mbeddr.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mps.runtimeBuild=${mps.runtimeBuild}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -511,7 +443,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.platform, java.compile.com.mbeddr.platform.tests.build, java.compile.com.mbeddr.build, java.compile.com.mbeddr.xmodel.build" />
+  <target name="compileJava" depends="java.compile.com.mbeddr.allScripts, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.core.tests.performance.build, java.compile.com.mbeddr.cc.tests.dev.build, java.compile.com.mbeddr.ext.tests.build, java.compile.com.mbeddr.platform, java.compile.com.mbeddr.platform.tests.build, java.compile.com.mbeddr.build" />
   
   <target name="processResources" />
   
@@ -525,110 +457,19 @@
     <echo message="generating" />
     <generate fork="true" targetJavaVersion="1.8" logLevel="${mps.ant.log}">      
       <settings refid="m2m-0" />
-      <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build" />
-      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
-      <plugin path="${artifacts.mps}/plugins/mps-build" />
-      <plugin path="${artifacts.mps}/plugins/mps-core" />
-      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" />
-      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" />
-      <plugin path="${artifacts.mps}/plugins/mps-testing" />
-      <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.references.runtime.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.util.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editing.runtime.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editor.runtime.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editorlang.runtime.jar" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/editor/typesystemIntegration.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.kinds.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.rules.skeleton.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.defs.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.migration.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.pattern.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.quotation.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.refactoring.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.resources.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.typesystemEngine.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.facets.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.runtime.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.smodel.resources.jar" />
-      <library file="${artifacts.mps}/languages/make/jetbrains.mps.tool.gentest.jar" />
-      <library file="${artifacts.mps}/languages/mps-stubs.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.constraints.rules.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.legacy-constraints.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rt.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
-      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.refactoring.runtime.jar" />
-      <library file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
-      <library file="${artifacts.mps}/languages/tools/jetbrains.mps.core.tool.environment.jar" />
-      <library file="${artifacts.mps}/languages/tools/jetbrains.mps.tool.builder.jar" />
-      <library file="${artifacts.mps}/languages/tools/jetbrains.mps.tool.common.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.java.stub.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.kernel.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.makeup.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.project.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.refactoring.jar" />
-      <library file="${artifacts.mps}/languages/util/jetbrains.mps.runtime.jar" />
+      <plugin path="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.extensions.build" id="de.itemis.mps.extensions.build" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
+      <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" id="jetbrains.mps.debugger.api" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-java" id="jetbrains.mps.debugger.java" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" id="jetbrains.mps.execution.api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-configurations" id="jetbrains.mps.execution.configurations" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-languages" id="jetbrains.mps.execution.languages" />
+      <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
-      <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <chunk>
         <module file="${basedir}/solutions/com.mbeddr.allScripts/com.mbeddr.allScripts.msd" />
         <module file="${basedir}/solutions/com.mbeddr.build/com.mbeddr.build.msd" />
@@ -638,7 +479,6 @@
         <module file="${basedir}/solutions/com.mbeddr.ext.build/build.msd" />
         <module file="${basedir}/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" />
         <module file="${basedir}/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd" />
-        <module file="${basedir}/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -673,6 +513,7 @@
         <fileset file="${artifacts.mps}/lib/util_rt.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
         <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
@@ -833,27 +674,6 @@
     </copy>
   </target>
   
-  <target name="java.compile.com.mbeddr.xmodel.build" depends="java.compile.com.mbeddr.build, java.compile.com.mbeddr.core.tests.build, java.compile.com.mbeddr.platform">
-    <mkdir dir="${basedir}/solutions/com.mbeddr.xmodel.build/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.xmodel.build" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.xmodel.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/solutions/com.mbeddr.xmodel.build/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.build" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.core.tests.build" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.platform" />
-      </classpath>
-    </javac>
-    <copy todir="${build.tmp}/java/out/com.mbeddr.xmodel.build">
-      <fileset dir="${basedir}/solutions/com.mbeddr.xmodel.build/source_gen">
-        <include name="**/*.info" />
-      </fileset>
-    </copy>
-  </target>
-  
   <target name="cleanSources">
     <delete dir="${basedir}/solutions/com.mbeddr.allScripts/source_gen" />
     <delete dir="${basedir}/solutions/com.mbeddr.build/source_gen" />
@@ -863,6 +683,5 @@
     <delete dir="${basedir}/solutions/com.mbeddr.ext.build/source_gen" />
     <delete dir="${basedir}/solutions/com.mbeddr.platform/source_gen" />
     <delete dir="${basedir}/solutions/com.mbeddr.platform.tests.build/source_gen" />
-    <delete dir="${basedir}/solutions/com.mbeddr.xmodel.build/source_gen" />
   </target>
 </project>

@@ -2143,7 +2143,7 @@
                     <ref role="2Gs0qQ" node="VPgi8egj9f" resolve="module" />
                   </node>
                   <node concept="liA8E" id="4jHuzb0Embu" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getModuleReference()" resolve="getModuleReference" />
+                    <ref role="37wK5l" to="j8aq:~ReloadableModule.getModuleReference()" resolve="getModuleReference" />
                   </node>
                 </node>
               </node>
@@ -13629,9 +13629,31 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5UujJsmBbyN" role="jymVt" />
     <node concept="3Tm1VV" id="7vUP_qcxS3F" role="1B3o_S" />
     <node concept="3uibUv" id="40Nmswov7E3" role="1zkMxy">
       <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
+    </node>
+    <node concept="3clFb_" id="5UujJsmBd8H" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="5UujJsmBd8I" role="1B3o_S" />
+      <node concept="2AHcQZ" id="5UujJsmBd8K" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="5UujJsmBd8L" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="5UujJsmBd8O" role="3clF47">
+        <node concept="3clFbF" id="5UujJsmBmpJ" role="3cqZAp">
+          <node concept="Rm8GO" id="5UujJsmBmWI" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5UujJsmBd8P" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7vUP_qcI0Jm">
