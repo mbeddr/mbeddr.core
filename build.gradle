@@ -4,7 +4,7 @@ import de.itemis.mps.gradle.RunAntScript
 
 plugins {
     id 'de.itemis.mps.gradle.common' version '1.28.+'
-    id 'download-jbr' version '1.28.+'
+    id 'download-jbr' version '2.0.+'
 }
 
 downloadJbr {
