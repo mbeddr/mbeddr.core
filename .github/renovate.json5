@@ -4,4 +4,21 @@
     "config:best-practices"
   ],
   "enabledManagers": ["gradle", "gradle-wrapper"],
+
+  "packageRules": [
+    {
+      "matchPackageNames": ["download-jbr:download-jbr.gradle.plugin", "de.itemis.mps.gradle.common:de.itemis.mps.gradle.common.gradle.plugin"],
+      "groupName": "mps-gradle-plugin",
+      "allowedVersions": "< 2.0"
+    },
+    {
+      "matchPackageNames": ["org.apache.ant:*"],
+      "groupName": "ant"
+    },
+    {
+      "matchBaseBranches": ["master"],
+      "matchPackageNames": ["de.itemis.mps:extensions"],
+      "ignoreUnstable": false,
+    }
+  ]
 }
