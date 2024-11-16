@@ -22,10 +22,10 @@ def usePrebuiltPlatform = ciBuild && !project.hasProperty('forceBuildPlatform')
 
 dependencies {
     junitAnt 'junit:junit:4.13.2'
-    junitAnt('org.apache.ant:ant-junit:1.9.7') {
+    junitAnt('org.apache.ant:ant-junit:1.10.15') {
         transitive = false
     }
-    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
+    junitAnt('org.apache.ant:ant-junit4:1.10.15') {
         transitive = false
     }
 
