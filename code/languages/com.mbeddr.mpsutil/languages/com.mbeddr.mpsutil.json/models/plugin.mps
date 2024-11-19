@@ -59,6 +59,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -738,6 +739,7 @@
   </node>
   <node concept="tC5Ba" id="6Sh7xm2KwMs">
     <property role="TrG5h" value="importJsonFileGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6Sh7xm2KwMu" role="ftER_">
       <node concept="tCFHf" id="6Sh7xm2KwMx" role="ftvYc">
         <ref role="tCJdB" node="6Sh7xm2JLAh" resolve="importJsonFile" />
@@ -751,6 +753,7 @@
   <node concept="2DaZZR" id="6Sh7xm2Li2H" />
   <node concept="tC5Ba" id="4MGk$bFp2_g">
     <property role="TrG5h" value="pasteJsonGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="4MGk$bFp2_i" role="ftER_">
       <node concept="2a7GMi" id="4MGk$bFpC5D" role="ftvYc" />
       <node concept="tCFHf" id="4MGk$bFp2_E" role="ftvYc">
