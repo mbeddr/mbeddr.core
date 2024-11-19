@@ -1,6 +1,6 @@
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
-import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 
 plugins {
     id 'de.itemis.mps.gradle.common'
@@ -8,32 +8,35 @@ plugins {
 
 apply plugin: 'download-jbr'
 
-downloadJbr {
-    jbrVersion = '17.0.11-b1207.30'
-}
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
 ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
 ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "MPS/MPS-mbeddr-$mpsBuild/")
 
-def userHome = System.properties['user.home']
-def mpsPluginsDirPattern
-def os_name = System.properties['os.name'].toLowerCase()
-// calculate system-specific plugins directory (since MPS 2020.1) according to:
-// https://www.jetbrains.com/help/idea/tuning-the-ide.html?_ga=2.229302868.95678467.1595072035-1152171669.1521775253#plugins-directory
-if (os_name.contains('mac')) {
-    mpsPluginsDirPattern = "$userHome/Library/Application Support/JetBrains/%s/plugins"
-} else if (os_name.contains('win')) {
-    mpsPluginsDirPattern = "${System.getenv('APPDATA')}\\JetBrains\\%s\\plugins"
-} else {
-    mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
-}
+ext.mpsPluginsDir = provider {
+    def userHome = System.properties['user.home']
 
-if (project.hasProperty("MPS_PATHS_SELECTOR")) {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
-} else {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+    def mpsPluginsDirPattern
+    def os_name = System.properties['os.name'].toLowerCase()
+
+    // calculate system-specific plugins directory (since MPS 2020.1) according to:
+    // https://www.jetbrains.com/help/idea/tuning-the-ide.html?_ga=2.229302868.95678467.1595072035-1152171669.1521775253#plugins-directory
+    if (os_name.contains('mac')) {
+        mpsPluginsDirPattern = "$userHome/Library/Application Support/JetBrains/%s/plugins"
+    } else if (os_name.contains('win')) {
+        mpsPluginsDirPattern = "${System.getenv('APPDATA')}\\JetBrains\\%s\\plugins"
+    } else {
+        mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
+    }
+
+    if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+        sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+    } else if (mpsMajor != '9999.9') {
+        sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+    } else {
+        throw new GradleException("Cannot detect plugin directory for MPS prerelease, specify MPS_PATHS_SELECTOR property explicitly")
+    }
 }
 
 task install() {
@@ -85,9 +88,11 @@ subprojects {
     }
 
     dependencies {
-        mps "com.jetbrains:mps:$mpsBuild"
+        // For a release version of MPS, use this dependency:
+        //mps "com.jetbrains:mps:$mpsBuild"
+        mps "com.jetbrains.mps:mps-prerelease:$mpsBuild"
         mpsExtensions "de.itemis.mps:extensions:$mpsExtensionsVersion"
-        ant_lib "org.apache.ant:ant-junit:1.10.1"
+        ant_lib "org.apache.ant:ant-junit:1.10.15"
     }
 
     ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
@@ -133,25 +138,6 @@ private static void configureRepositories(Project project) {
             }
         }
     }
-    project.repositories {
-        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
-        if (!disableMavenLocal) {
-            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
-            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
-            mavenLocal()
-        }
-        maven {
-            url 'https://artifacts.itemis.cloud/repository/maven-mps/'
-
-            if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
-                credentials {
-                    username project.getProperty('artifacts.itemis.cloud.user')
-                    password project.getProperty('artifacts.itemis.cloud.pw')
-                }
-            }
-        }
-        mavenCentral()
-    }
 }
 
 
@@ -178,8 +164,8 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 }
 
 tasks.register('migrate', MpsMigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
-    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', ':downloadJbr')
+    javaLauncher = rootProject.tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
     haltOnPrecheckFailure = false
     haltOnDependencyError = false
     mpsHome = mpsHomeDir
@@ -193,8 +179,8 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages', 'downloadJbr')
-    javaLauncher = tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', ':downloadJbr')
+    javaLauncher = rootProject.tasks.named('downloadJbr', DownloadJbrForPlatform).flatMap { it.javaLauncher }
 
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
@@ -205,6 +191,3 @@ tasks.register('remigrate', Remigrate) {
 
     maxHeapSize = "4G"
 }
-
-// For the remigrate backend
-configureRepositories(project)
