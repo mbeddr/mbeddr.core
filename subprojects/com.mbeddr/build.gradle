@@ -9,7 +9,7 @@ plugins {
 apply plugin: 'download-jbr'
 
 downloadJbr {
-    jbrVersion = '17.0.8.1-b1000.32'
+    jbrVersion = '17.0.11-b1207.30'
 }
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from

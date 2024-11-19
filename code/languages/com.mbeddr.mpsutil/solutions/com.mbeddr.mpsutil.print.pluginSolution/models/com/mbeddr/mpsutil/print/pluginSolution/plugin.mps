@@ -18,6 +18,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -34,6 +35,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -207,7 +209,7 @@
               <node concept="2OqwBi" id="1DZCyiI4mAd" role="2Oq$k0">
                 <node concept="2WthIp" id="1DZCyiI4mAe" role="2Oq$k0" />
                 <node concept="1DTwFV" id="1DZCyiI4mAf" role="2OqNvi">
-                  <ref role="2WH_rO" node="1DZCyiI4hsH" resolve="editorCompoent" />
+                  <ref role="2WH_rO" node="1DZCyiI4hsH" resolve="editorComponent" />
                 </node>
               </node>
               <node concept="liA8E" id="1DZCyiI4mAg" role="2OqNvi">
@@ -491,7 +493,7 @@
                                 <ref role="32nkFo" node="1DZCyiI2R2M" resolve="PrintEditorAction" />
                               </node>
                               <node concept="1DTwFV" id="bHbw4esLo" role="2OqNvi">
-                                <ref role="2WH_rO" node="1DZCyiI4hsH" resolve="editorCompoent" />
+                                <ref role="2WH_rO" node="1DZCyiI4hsH" resolve="editorComponent" />
                               </node>
                             </node>
                             <node concept="liA8E" id="bHbw4eEn0" role="2OqNvi">
@@ -580,20 +582,20 @@
                     </node>
                     <node concept="3clFbS" id="3cT15VbZjv3" role="1zc67A">
                       <node concept="3clFbF" id="3cT15VbZknW" role="3cqZAp">
-                        <node concept="2YIFZM" id="3cT15VbZnlW" role="3clFbG">
-                          <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                          <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                          <node concept="2OqwBi" id="3cT15VbZnwh" role="37wK5m">
-                            <node concept="2WthIp" id="3cT15VbZnwk" role="2Oq$k0" />
-                            <node concept="1DTwFV" id="3cT15VbZnwm" role="2OqNvi">
-                              <ref role="2WH_rO" node="1DZCyiI4hsH" resolve="editorCompoent" />
+                        <node concept="2YIFZM" id="5yciJwhhw2J" role="3clFbG">
+                          <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String)" resolve="showErrorDialog" />
+                          <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                          <node concept="2OqwBi" id="5yciJwhhw2K" role="37wK5m">
+                            <node concept="2WthIp" id="5yciJwhhw2L" role="2Oq$k0" />
+                            <node concept="1DTwFV" id="5yciJwhhw2M" role="2OqNvi">
+                              <ref role="2WH_rO" node="1DZCyiI4hsH" resolve="editorComponent" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="3cT15VbZp0z" role="37wK5m">
-                            <node concept="37vLTw" id="3cT15VbZonK" role="2Oq$k0">
+                          <node concept="2OqwBi" id="5yciJwhhw2N" role="37wK5m">
+                            <node concept="37vLTw" id="5yciJwhhw2O" role="2Oq$k0">
                               <ref role="3cqZAo" node="3cT15VbZjuZ" resolve="ex" />
                             </node>
-                            <node concept="liA8E" id="3cT15VbZpHQ" role="2OqNvi">
+                            <node concept="liA8E" id="5yciJwhhw2P" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                             </node>
                           </node>
@@ -618,7 +620,7 @@
       </node>
     </node>
     <node concept="1DS2jV" id="1DZCyiI4hsH" role="1NuT2Z">
-      <property role="TrG5h" value="editorCompoent" />
+      <property role="TrG5h" value="editorComponent" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
       <node concept="1oajcY" id="1DZCyiI4hsI" role="1oa70y" />
     </node>
@@ -626,6 +628,7 @@
   <node concept="2DaZZR" id="1DZCyiI54nc" />
   <node concept="tC5Ba" id="7_KMir46WeQ">
     <property role="TrG5h" value="PrintGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="7_KMir46Wj1" role="ftER_">
       <node concept="2a7GMi" id="1WzkXggN1$M" role="ftvYc" />
       <node concept="tCFHf" id="7_KMir46Wj6" role="ftvYc">

@@ -56,6 +56,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -302,6 +303,7 @@
   </node>
   <node concept="tC5Ba" id="dt1EHJOwf3">
     <property role="TrG5h" value="genericActionsGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="dt1EHJOwfs" role="ftER_">
       <node concept="tCFHf" id="dt1EHJPqnI" role="ftvYc">
         <ref role="tCJdB" node="dt1EHJPqgC" resolve="decreaseEditorFontSize" />
@@ -760,6 +762,7 @@
   </node>
   <node concept="tC5Ba" id="6bM7gvq4Vt2">
     <property role="TrG5h" value="genericActionsModelGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="6bM7gvq4Vt4" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
       <ref role="2f8Tey" to="tprs:2blMBvV$tE0" resolve="showHelp" />
@@ -1159,6 +1162,7 @@
   </node>
   <node concept="tC5Ba" id="DMIuLunJDF">
     <property role="TrG5h" value="genericActionsModuleGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="DMIuLunJDG" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Jd1" resolve="SolutionActions" />
       <ref role="2f8Tey" to="tprs:miYJQArh7g" resolve="commonModule" />

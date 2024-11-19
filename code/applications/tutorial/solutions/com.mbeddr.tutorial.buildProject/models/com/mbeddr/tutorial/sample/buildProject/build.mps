@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <devkit ref="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)" />
   </languages>
   <imports>
@@ -108,7 +108,6 @@
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
-        <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
         <child id="5253498789149547825" name="sources" index="3bR31x" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -196,7 +195,6 @@
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="com.mbeddr.tutorial.sample.CProject" />
       <property role="3LESm3" value="2bd5059a-12b0-4f35-8cc0-1327110664f0" />
-      <property role="2GAjPV" value="false" />
       <node concept="3rtmxn" id="1lMVil75Qe2" role="3bR31x">
         <node concept="3LXTmp" id="1lMVil75Qe3" role="3rtmxm">
           <node concept="3qWCbU" id="1lMVil75Qe4" role="3LXTna">

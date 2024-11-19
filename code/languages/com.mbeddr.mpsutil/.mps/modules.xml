@@ -13,8 +13,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu.reftarget/com.mbeddr.mpsutil.ccmenu.reftarget.mpl" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu.sandboxlang/com.mbeddr.mpsutil.ccmenu.sandboxlang.mpl" folder="rest.ccmenu" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.ccmenu/com.mbeddr.mpsutil.ccmenu.mpl" folder="rest.ccmenu" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.checkinHandler.demo/com.mbeddr.mpsutil.checkinHandler.demo.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.checkinHandler/com.mbeddr.mpsutil.checkinHandler.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.collections/com.mbeddr.mpsutil.collections.mpl" folder="collections" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare.pattern.baselang/com.mbeddr.mpsutil.compare.pattern.baselang.mpl" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.compare.pattern.generator/com.mbeddr.mpsutil.compare.pattern.generator.mpl" folder="staging.comparator" />
@@ -37,7 +35,6 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.displayControl.sandbox/sandbox/com.mbeddr.mpsutil.editor.displayControl.sandbox.sandbox.msd" folder="displayControl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.editor.displayControl/com.mbeddr.mpsutil.editor.displayControl.mpl" folder="displayControl" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.extensionclass/com.mbeddr.mpsutil.extensionclass.mpl" folder="staging.extensionclass" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="move.projectview" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.filepicker/com.mbeddr.mpsutil.filepicker.mpl" folder="stable" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.framecell/com.mbeddr.mpsutil.framecell.mpl" folder="rest" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.genutil/genutil.mpl" folder="staging" />
@@ -183,11 +180,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.userstyles.sandbox/com.mbeddr.mpsutil.userstyles.sandbox.msd" folder="staging.userstyles" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.varscope.runtime/com.mbeddr.mpsutil.varscope.runtime.msd" folder="stable.varscope" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmlImport/com.mbeddr.mpsutil.xmlImport.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.xmodel.actions/com.mbeddr.mpsutil.xmodel.actions.msd" folder="staging" />
       <modulePath path="$PROJECT_DIR$/solutions/com.opencsv/com.opencsv.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.apache.batik/org.apache.batik.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.mockito/org.mockito.msd" folder="stubs" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.xml/org.xml.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.collections.runtime/test.com.mbeddr.mpsutil.collections.runtime.msd" folder="collections" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.logicalChild/test.com.mbeddr.mpsutil.logicalChild.msd" folder="logicalChild" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.compare.pattern.test/com.mbeddr.mpsutil.compare.pattern.test.msd" folder="staging.comparator" />
@@ -197,7 +191,6 @@
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.common/test.com.mbeddr.mpsutil.common.msd" folder="staging.common" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare.testlang/test.com.mbeddr.mpsutil.compare.testlang.mpl" folder="staging.comparator" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.compare/test.com.mbeddr.mpsutil.compare.msd" folder="staging.comparator" />
-      <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.contextactions/tests.com.mbeddr.mpsutil.contextactions.msd" folder="rest.contextActions" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.metaModelImport/test.com.mbeddr.mpsutil.ecore.metaModelImport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecore.modelImportExport/test.com.mbeddr.mpsutil.ecore.modelImportExport.msd" folder="rest.ecore.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1/test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage1.mpl" folder="rest.ecore.tests.testLanguages" />
