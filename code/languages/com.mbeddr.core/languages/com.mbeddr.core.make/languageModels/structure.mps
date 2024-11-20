@@ -20,7 +20,6 @@
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
         <property id="672037151186491528" name="presentation" index="1L1pqM" />
-        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -34,22 +33,6 @@
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
-        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
-        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
-        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -664,61 +647,25 @@
     <property role="3GE5qa" value="variables" />
     <property role="3F6X1D" value="7595578942777302784" />
     <ref role="1H5jkz" node="13p6s1wtcL4" resolve="assign" />
-    <node concept="2JgGob" id="13p6s1wtcL3" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3eZ/string_presentation" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="115mCuKqAxZ" role="3lCyv">
-        <property role="3GE5qa" value="var" />
-        <property role="TrG5h" value="VariableAssignmentType" />
-        <property role="3lZH7k" value="hrlZpEz/custom" />
-        <property role="3F6X1D" value="7595578942777302784" />
-        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-        <ref role="Qgau1" node="6_CUGSFFpW1" />
-        <node concept="M4N5e" id="115mCuKqAy0" role="M5hS2">
-          <property role="1uS6qo" value="=" />
-          <property role="1uS6qv" value="=" />
-          <property role="2fHolG" value="assign" />
-        </node>
-        <node concept="M4N5e" id="115mCuKqAy1" role="M5hS2">
-          <property role="1uS6qo" value=":=" />
-          <property role="1uS6qv" value=":=" />
-          <property role="2fHolG" value="expand" />
-        </node>
-        <node concept="M4N5e" id="115mCuKqAy2" role="M5hS2">
-          <property role="1uS6qo" value="?=" />
-          <property role="1uS6qv" value="?=" />
-          <property role="2fHolG" value="conditional" />
-        </node>
-        <node concept="M4N5e" id="115mCuKqAy3" role="M5hS2">
-          <property role="1uS6qo" value="+=" />
-          <property role="1uS6qv" value="+=" />
-          <property role="2fHolG" value="append" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="13p6s1wtcL4" role="25R1y">
       <property role="TrG5h" value="assign" />
       <property role="1L1pqM" value="=" />
       <property role="3tVfz5" value="7595578942777302785" />
-      <ref role="2wpffI" node="6_CUGSFFpW1" />
     </node>
     <node concept="25R33" id="13p6s1wtcL5" role="25R1y">
       <property role="TrG5h" value="expand" />
       <property role="1L1pqM" value=":=" />
       <property role="3tVfz5" value="7595578942777302830" />
-      <ref role="2wpffI" node="6_CUGSFFpWI" />
     </node>
     <node concept="25R33" id="13p6s1wtcL6" role="25R1y">
       <property role="TrG5h" value="conditional" />
       <property role="1L1pqM" value="?=" />
       <property role="3tVfz5" value="7595578942777302923" />
-      <ref role="2wpffI" node="6_CUGSFFpYb" />
     </node>
     <node concept="25R33" id="13p6s1wtcL7" role="25R1y">
       <property role="TrG5h" value="append" />
       <property role="1L1pqM" value="+=" />
       <property role="3tVfz5" value="2822507107682784603" />
-      <ref role="2wpffI" node="2sFzOapsDlr" />
     </node>
   </node>
   <node concept="1TIwiD" id="4QnOXkAhxVR">
@@ -767,61 +714,25 @@
     <property role="3GE5qa" value="variables" />
     <property role="3F6X1D" value="5855318100909942784" />
     <ref role="1H5jkz" node="115mCuKV8DB" resolve="assign" />
-    <node concept="2JgGob" id="115mCuKV8DA" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3eZ/string_presentation" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="6_CUGSFFpW0" role="3lCyv">
-        <property role="3GE5qa" value="variables" />
-        <property role="TrG5h" value="VariablAssignmentType" />
-        <property role="3lZH7k" value="hrlZpEz/custom" />
-        <property role="3F6X1D" value="5855318100909942784" />
-        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-        <ref role="Qgau1" node="6_CUGSFFpW1" />
-        <node concept="M4N5e" id="6_CUGSFFpW1" role="M5hS2">
-          <property role="1uS6qo" value="=" />
-          <property role="1uS6qv" value="=" />
-          <property role="2fHolG" value="assign" />
-        </node>
-        <node concept="M4N5e" id="6_CUGSFFpWI" role="M5hS2">
-          <property role="1uS6qo" value=":=" />
-          <property role="1uS6qv" value=":=" />
-          <property role="2fHolG" value="expand" />
-        </node>
-        <node concept="M4N5e" id="6_CUGSFFpYb" role="M5hS2">
-          <property role="1uS6qo" value="?=" />
-          <property role="1uS6qv" value="?=" />
-          <property role="2fHolG" value="conditional" />
-        </node>
-        <node concept="M4N5e" id="2sFzOapsDlr" role="M5hS2">
-          <property role="1uS6qo" value="+=" />
-          <property role="1uS6qv" value="+=" />
-          <property role="2fHolG" value="append" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="115mCuKV8DB" role="25R1y">
       <property role="TrG5h" value="assign" />
       <property role="1L1pqM" value="=" />
       <property role="3tVfz5" value="7595578942777302785" />
-      <ref role="2wpffI" node="6_CUGSFFpW1" />
     </node>
     <node concept="25R33" id="115mCuKV8DC" role="25R1y">
       <property role="TrG5h" value="expand" />
       <property role="1L1pqM" value=":=" />
       <property role="3tVfz5" value="7595578942777302830" />
-      <ref role="2wpffI" node="6_CUGSFFpWI" />
     </node>
     <node concept="25R33" id="115mCuKV8DD" role="25R1y">
       <property role="TrG5h" value="conditional" />
       <property role="1L1pqM" value="?=" />
       <property role="3tVfz5" value="7595578942777302923" />
-      <ref role="2wpffI" node="6_CUGSFFpYb" />
     </node>
     <node concept="25R33" id="115mCuKV8DE" role="25R1y">
       <property role="TrG5h" value="append" />
       <property role="1L1pqM" value="+=" />
       <property role="3tVfz5" value="2822507107682784603" />
-      <ref role="2wpffI" node="2sFzOapsDlr" />
     </node>
   </node>
   <node concept="1TIwiD" id="50D6DLKrwmy">
