@@ -7,6 +7,11 @@ on:
 
 jobs:
   create-pr:
-    uses: specificlanguages/cascading-merge/.github/workflows/workflow.yml@v1
-    with:
-      exclude_branch_prefix: maintenance/mps3
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create PR
+        uses: specificlanguages/cascading-merge@v2
+        with:
+          exclude_branch_prefix: maintenance/mps3
+          automerge_new_prs: 'true'
+          token: ${{ secrets.MPS_CI_BUILD_BOT_ACCESS_TOKEN }}
