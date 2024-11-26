@@ -63,6 +63,7 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -71,7 +72,7 @@
     </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
       <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
         <child id="8974276187400029893" name="icon" index="1QGGTw" />
@@ -520,8 +521,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="UK_oBpzHVU" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+    <node concept="1QGGSu" id="MipY_gdpYf" role="3Uehp1">
+      <node concept="10M0yZ" id="MipY_gdr1y" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="69s3uhHThi8">
@@ -2171,8 +2175,11 @@
                 <node concept="liA8E" id="1IUlN8Q3WKg" role="2OqNvi">
                   <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon)" resolve="setIcon" />
                   <node concept="1QGGTA" id="1IUlN8Q3WKA" role="37wK5m">
-                    <node concept="1QGGSu" id="1IUlN8Q3WKB" role="1QGGTw">
-                      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+                    <node concept="1QGGSu" id="MipY_gcWZb" role="1QGGTw">
+                      <node concept="10M0yZ" id="MipY_gd3QS" role="3xaMm5">
+                        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2245,9 +2252,7 @@
                 <node concept="liA8E" id="7r8qu42xWDu" role="2OqNvi">
                   <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon)" resolve="setIcon" />
                   <node concept="1QGGTA" id="7r8qu42xWDv" role="37wK5m">
-                    <node concept="1QGGSu" id="7r8qu42xWDw" role="1QGGTw">
-                      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
-                    </node>
+                    <node concept="1QGGSu" id="MipY_gd8yr" role="1QGGTw" />
                   </node>
                 </node>
               </node>
@@ -3454,9 +3459,6 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="1KDc5EfI0Ce" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
-    </node>
     <node concept="2XrIbr" id="DxJoPcq$jB" role="2XNbBy">
       <property role="TrG5h" value="showNodeOrConceptContent" />
       <node concept="3Tm6S6" id="DxJoPcq$jC" role="1B3o_S" />
@@ -3787,8 +3789,11 @@
                                         </node>
                                       </node>
                                       <node concept="1QGGTA" id="DxJoPcq$hM" role="37wK5m">
-                                        <node concept="1QGGSu" id="DxJoPcq$hN" role="1QGGTw">
-                                          <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+                                        <node concept="1QGGSu" id="MipY_gdgc4" role="1QGGTw">
+                                          <node concept="10M0yZ" id="MipY_gdi5C" role="3xaMm5">
+                                            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                                          </node>
                                         </node>
                                       </node>
                                       <node concept="10Nm6u" id="DxJoPcq$hO" role="37wK5m" />
@@ -3971,8 +3976,11 @@
                                         </node>
                                       </node>
                                       <node concept="1QGGTA" id="DxJoPcq$j0" role="37wK5m">
-                                        <node concept="1QGGSu" id="DxJoPcq$j1" role="1QGGTw">
-                                          <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+                                        <node concept="1QGGSu" id="MipY_gd9oS" role="1QGGTw">
+                                          <node concept="10M0yZ" id="MipY_gdbko" role="3xaMm5">
+                                            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                                          </node>
                                         </node>
                                       </node>
                                       <node concept="10Nm6u" id="DxJoPcq$j2" role="37wK5m" />
@@ -4073,6 +4081,12 @@
       <node concept="3Tm6S6" id="7YOUX1l3Aiq" role="1B3o_S" />
       <node concept="3uibUv" id="7YOUX1l3D8g" role="1tU5fm">
         <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+      </node>
+    </node>
+    <node concept="1QGGSu" id="MipY_gc55f" role="1nVCmq">
+      <node concept="10M0yZ" id="MipY_gcgqb" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
       </node>
     </node>
   </node>

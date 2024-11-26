@@ -30,6 +30,8 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="v18h" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:kotlin(MPS.IDEA/)" />
     <import index="ksrs" ref="cc99dce1-49f3-4392-8dbf-e22ca47bd0af/java:kotlin.coroutines(org.modelix.model.api/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="jz16" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:icons(MPS.ThirdParty/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -768,12 +770,12 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="2QDtwSqDi2V" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="2QDtwSqDi2W" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/play.png" />
+    <node concept="1QGGSu" id="frftTv53d3" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/task.svg" />
     </node>
   </node>
   <node concept="sE7Ow" id="2NmTaRWDjVL">
-    <property role="TrG5h" value="openUserGUide" />
+    <property role="TrG5h" value="openUserGuide" />
     <property role="2uzpH1" value="mbeddr User Guide" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="2NmTaRWDjZk" role="tncku">

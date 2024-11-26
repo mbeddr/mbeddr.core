@@ -10,6 +10,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -115,9 +116,6 @@
   </registry>
   <node concept="3vrhyV" id="70oIz4aiOJd">
     <property role="TrG5h" value="documentation" />
-    <node concept="1QGGSu" id="70oIz4aiOKk" role="3vqPLo">
-      <property role="1iqoE4" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc.aspect/solutions/com.mbeddr.doc.aspect.ui/icons/toc_closed.png" />
-    </node>
     <node concept="2V$Bhx" id="70oIz4aiOKf" role="QG$2i">
       <property role="2V$B1T" value="38a074ed-e5ad-4b2d-be31-ca436911b8aa" />
       <property role="2V$B1Q" value="com.mbeddr.doc.lang" />
@@ -129,6 +127,9 @@
     <node concept="2V$Bhx" id="3TrpzyP_Ftg" role="QG$2o">
       <property role="2V$B1T" value="2374bc90-7e37-41f1-a9c4-c2e35194c36a" />
       <property role="2V$B1Q" value="com.mbeddr.doc" />
+    </node>
+    <node concept="1QGGSu" id="MipY_gdmsX" role="3vqPLo">
+      <property role="1iqoE4" value="${module}/icons/documentation.svg" />
     </node>
   </node>
   <node concept="vrV6u" id="1T8cMxCROk6">

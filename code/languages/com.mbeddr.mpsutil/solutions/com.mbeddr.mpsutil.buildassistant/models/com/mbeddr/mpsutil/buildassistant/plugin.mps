@@ -29,13 +29,14 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2149,8 +2150,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
       <node concept="1oajcY" id="3x_7aSMkI7S" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6YP03IIYksX" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    <node concept="1QGGSu" id="6Nf_8jRm2rZ" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRm67z" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="3_loG3uwDi">
@@ -2201,8 +2205,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="3_loG3uwDH" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="FniR$CiprS" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    <node concept="1QGGSu" id="6Nf_8jRm9$8" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRmb_4" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="3x_7aSMkC8e">
@@ -2279,8 +2286,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
       <node concept="1oajcY" id="3x_7aSMkEFL" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6YP03IIYkCy" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    <node concept="1QGGSu" id="6Nf_8jRmcVE" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRmecy" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="3_loG33b7f">
@@ -2331,8 +2341,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="3_loG33bjf" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="74geI_h41wO" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/buildassistant.png" />
+    <node concept="1QGGSu" id="6Nf_8jRm73T" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRm8D0" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="3x_7aSMkJ6n">

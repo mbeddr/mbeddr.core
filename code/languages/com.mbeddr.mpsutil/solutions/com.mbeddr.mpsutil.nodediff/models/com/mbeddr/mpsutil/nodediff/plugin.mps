@@ -24,6 +24,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -31,7 +32,7 @@
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -115,6 +116,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -940,8 +944,11 @@
       <node concept="1oajcY" id="2rgL4xy7Ayf" role="1oa70y" />
       <node concept="3Tqbb2" id="2rgL4xy7_1b" role="1tU5fm" />
     </node>
-    <node concept="1QGGSu" id="2rgL4xy7L5I" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/diff1.png" />
+    <node concept="1QGGSu" id="6Nf_8jRl7kL" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRl8wn" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.ArrowLeftDown" resolve="ArrowLeftDown" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="2rgL4xy7AJl">
@@ -1009,8 +1016,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="2rgL4xy7Lcg" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/diff2.png" />
+    <node concept="1QGGSu" id="6Nf_8jRl9$6" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlbXb" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.ArrowRight" resolve="ArrowRight" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
+      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="2rgL4xy7CcB">

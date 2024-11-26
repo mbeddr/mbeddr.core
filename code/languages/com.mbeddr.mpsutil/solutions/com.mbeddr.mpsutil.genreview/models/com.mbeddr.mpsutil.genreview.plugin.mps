@@ -40,6 +40,7 @@
     <import index="lg3m" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.search(MPS.Platform/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
   </imports>
@@ -66,10 +67,7 @@
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
-      </concept>
-      <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
-        <child id="8974276187400029893" name="icon" index="1QGGTw" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -623,8 +621,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="335p1i8Lxpe" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/code_review.png" />
+    <node concept="1QGGSu" id="6Nf_8jRlm$U" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlo_O" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$General.Settings" resolve="Settings" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
+      </node>
     </node>
   </node>
   <node concept="2uRRBC" id="Gz1BlfcHmK">
@@ -4023,10 +4024,9 @@
                 <node concept="Xl_RD" id="13$DeUDQdkQ" role="37wK5m">
                   <property role="Xl_RC" value=" Select file to review" />
                 </node>
-                <node concept="1QGGTA" id="2QR_NtQCWq4" role="37wK5m">
-                  <node concept="1QGGSu" id="2QR_NtQCX1c" role="1QGGTw">
-                    <property role="1iqoE4" value="${module}/icons/folder.png" />
-                  </node>
+                <node concept="10M0yZ" id="frftTv2WBa" role="37wK5m">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$General.OpenDisk" resolve="OpenDisk" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
                 </node>
               </node>
             </node>
@@ -4040,10 +4040,9 @@
                 <node concept="Xl_RD" id="335p1i8MY6m" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
-                <node concept="1QGGTA" id="335p1i8MZb4" role="37wK5m">
-                  <node concept="1QGGSu" id="335p1i8MZfK" role="1QGGTw">
-                    <property role="1iqoE4" value="${module}/icons/arrow_left.png" />
-                  </node>
+                <node concept="10M0yZ" id="frftTv3DrT" role="37wK5m">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Back" resolve="Back" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
                 </node>
               </node>
             </node>
@@ -4058,10 +4057,9 @@
               <node concept="1pGfFk" id="5z92V1ozUP2" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String,javax.swing.Icon)" resolve="JButton" />
                 <node concept="Xl_RD" id="5z92V1ozViy" role="37wK5m" />
-                <node concept="1QGGTA" id="335p1i8N09Z" role="37wK5m">
-                  <node concept="1QGGSu" id="335p1i8N0eF" role="1QGGTw">
-                    <property role="1iqoE4" value="${module}/icons/arrow_right.png" />
-                  </node>
+                <node concept="10M0yZ" id="frftTv47a5" role="37wK5m">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Forward" resolve="Forward" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
                 </node>
               </node>
             </node>
@@ -4106,10 +4104,9 @@
                 <node concept="Xl_RD" id="3Hn7Pd_I3bs" role="37wK5m">
                   <property role="Xl_RC" value="Reload" />
                 </node>
-                <node concept="1QGGTA" id="3Hn7Pd_I4ZC" role="37wK5m">
-                  <node concept="1QGGSu" id="3Hn7Pd_I54f" role="1QGGTw">
-                    <property role="1iqoE4" value="${module}/icons/refresh.png" />
-                  </node>
+                <node concept="10M0yZ" id="frftTv4Cp6" role="37wK5m">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Refresh" resolve="Refresh" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
                 </node>
               </node>
             </node>
@@ -6953,8 +6950,11 @@
     <node concept="15feLf" id="48h5VLbZEGE" role="15cTzA">
       <property role="15feLF" value="1" />
     </node>
-    <node concept="1QGGSu" id="335p1i8LEpE" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/code_review.png" />
+    <node concept="1QGGSu" id="5XU4dCzQz8f" role="1nVCmq">
+      <node concept="10M0yZ" id="5XU4dCzQEGd" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$CodeWithMe.CwmPermissionView" resolve="CwmPermissionView" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$CodeWithMe" resolve="AllIcons.CodeWithMe" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="6pgsoSCzlAX">
@@ -7030,8 +7030,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="335p1i8MDBd" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/code_review.png" />
+    <node concept="1QGGSu" id="6Nf_8jRli_T" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRllSj" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.GeneratedFolder" resolve="GeneratedFolder" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="2TQvFxbywia">

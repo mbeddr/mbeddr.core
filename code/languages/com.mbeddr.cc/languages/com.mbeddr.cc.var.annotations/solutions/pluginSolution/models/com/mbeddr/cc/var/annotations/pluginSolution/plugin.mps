@@ -17,12 +17,13 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="rpdm" ref="r:91453863-abdf-432d-a851-57f349774287(com.mbeddr.cc.var.annotations.behavior)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="qdv7" ref="r:1ff3d952-eae5-4d94-b89e-ea3060b11545(com.mbeddr.cc.var.annotations.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -214,8 +215,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="7QrLfqVNtaG" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/check.png" />
+    <node concept="1QGGSu" id="6ghi$I1WfLg" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WhbY" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="7TnSnE3by8X">
@@ -256,8 +260,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="7TnSnE3by9m" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/check.png" />
+    <node concept="1QGGSu" id="6ghi$I1W04A" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1W6I8" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="7TnSnE3byA0">
@@ -298,8 +305,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="7TnSnE3byAp" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/check.png" />
+    <node concept="1QGGSu" id="6ghi$I1Wreg" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WsX_" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="7TnSnE3bz3Y">
