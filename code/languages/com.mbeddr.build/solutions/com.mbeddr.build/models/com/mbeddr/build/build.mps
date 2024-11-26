@@ -11427,21 +11427,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="7eF9rfAuDUw" role="1l3spd">
-      <property role="TrG5h" value="mbeddr.analyses" />
-      <node concept="398BVA" id="7eF9rfAuDUx" role="398pKh">
-        <ref role="398BVh" node="7uZw0yZ2_Jf" resolve="mbeddr.github.core.home" />
-        <node concept="2Ry0Ak" id="7eF9rfAuDUy" role="iGT6I">
-          <property role="2Ry0Am" value="code" />
-          <node concept="2Ry0Ak" id="7eF9rfAuDUz" role="2Ry0An">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="7eF9rfAuDU$" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.analyses" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
     </node>

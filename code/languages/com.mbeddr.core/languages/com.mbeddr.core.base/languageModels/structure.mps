@@ -20,6 +20,7 @@
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" implicit="true" />
   </imports>
@@ -1045,7 +1046,7 @@
       <ref role="PrY4T" node="3Y7ywckEJZi" resolve="IKeepAliveInGeneration" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AM7j" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/assessment.png" />
+      <property role="1iqoE4" value="${module}/icons/assessment.svg" />
     </node>
   </node>
   <node concept="1TIwiD" id="K292flwCEW">
@@ -1115,7 +1116,7 @@
       <ref role="PrY4T" node="3m8H$lmFM60" resolve="IDocumentable" />
     </node>
     <node concept="1QGGSu" id="1N5Tah$AM7k" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/assessment.png" />
+      <property role="1iqoE4" value="${module}/icons/assessment.svg" />
     </node>
   </node>
   <node concept="1TIwiD" id="K292flwD4r">
