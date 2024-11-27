@@ -74,6 +74,7 @@
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -87,7 +88,7 @@
     </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
       <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
         <child id="8974276187400029893" name="icon" index="1QGGTw" />
@@ -5647,8 +5648,11 @@
               <ref role="3cqZAo" node="CPtprWNoG0" resolve="n" />
             </node>
             <node concept="1QGGTA" id="VuyCfHNr9y" role="37wK5m">
-              <node concept="1QGGSu" id="VuyCfHNr9z" role="1QGGTw">
-                <property role="1iqoE4" value="${module}/icons/up.png" />
+              <node concept="1QGGSu" id="frftTuZdvm" role="1QGGTw">
+                <node concept="10M0yZ" id="frftTuZfzF" role="3xaMm5">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowUp" resolve="ArrowUp" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                </node>
               </node>
             </node>
           </node>
@@ -5669,14 +5673,17 @@
       <node concept="3Tm1VV" id="CPtprWNBIw" role="1B3o_S" />
       <node concept="3clFbS" id="CPtprWNBIx" role="3clF47">
         <node concept="3clFbF" id="CPtprWNBIy" role="3cqZAp">
-          <node concept="3P9mCS" id="CPtprWNBIz" role="3clFbG">
+          <node concept="3P9mCS" id="frftTv12qa" role="3clFbG">
             <ref role="37wK5l" node="CPtprWNpe6" resolve="createButtonWithIcon" />
-            <node concept="37vLTw" id="CPtprWNBI$" role="37wK5m">
+            <node concept="37vLTw" id="frftTv12qb" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNBIt" resolve="n" />
             </node>
-            <node concept="1QGGTA" id="VuyCfHNr1e" role="37wK5m">
-              <node concept="1QGGSu" id="VuyCfHNr1f" role="1QGGTw">
-                <property role="1iqoE4" value="${module}/icons/down.png" />
+            <node concept="1QGGTA" id="frftTv12qc" role="37wK5m">
+              <node concept="1QGGSu" id="frftTv12qd" role="1QGGTw">
+                <node concept="10M0yZ" id="frftTv12OJ" role="3xaMm5">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowDown" resolve="ArrowDown" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                </node>
               </node>
             </node>
           </node>
@@ -5697,14 +5704,17 @@
       <node concept="3Tm1VV" id="CPtprWNBIE" role="1B3o_S" />
       <node concept="3clFbS" id="CPtprWNBIF" role="3clF47">
         <node concept="3clFbF" id="CPtprWNBIG" role="3cqZAp">
-          <node concept="3P9mCS" id="CPtprWNBIH" role="3clFbG">
+          <node concept="3P9mCS" id="frftTv13eb" role="3clFbG">
             <ref role="37wK5l" node="CPtprWNpe6" resolve="createButtonWithIcon" />
-            <node concept="37vLTw" id="CPtprWNBII" role="37wK5m">
+            <node concept="37vLTw" id="frftTv13ec" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNBIB" resolve="n" />
             </node>
-            <node concept="1QGGTA" id="VuyCfHNquM" role="37wK5m">
-              <node concept="1QGGSu" id="VuyCfHNquN" role="1QGGTw">
-                <property role="1iqoE4" value="${module}/icons/left.png" />
+            <node concept="1QGGTA" id="frftTv13ed" role="37wK5m">
+              <node concept="1QGGSu" id="frftTv13ee" role="1QGGTw">
+                <node concept="10M0yZ" id="frftTv13CL" role="3xaMm5">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowLeft" resolve="ArrowLeft" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                </node>
               </node>
             </node>
           </node>
@@ -5725,14 +5735,17 @@
       <node concept="3Tm1VV" id="CPtprWNBIQ" role="1B3o_S" />
       <node concept="3clFbS" id="CPtprWNBIR" role="3clF47">
         <node concept="3clFbF" id="CPtprWNBIS" role="3cqZAp">
-          <node concept="3P9mCS" id="CPtprWNBIT" role="3clFbG">
+          <node concept="3P9mCS" id="frftTv142e" role="3clFbG">
             <ref role="37wK5l" node="CPtprWNpe6" resolve="createButtonWithIcon" />
-            <node concept="37vLTw" id="CPtprWNBIU" role="37wK5m">
+            <node concept="37vLTw" id="frftTv142f" role="37wK5m">
               <ref role="3cqZAo" node="CPtprWNBIN" resolve="n" />
             </node>
-            <node concept="1QGGTA" id="VuyCfHNq67" role="37wK5m">
-              <node concept="1QGGSu" id="VuyCfHNqeq" role="1QGGTw">
-                <property role="1iqoE4" value="${module}/icons/right.png" />
+            <node concept="1QGGTA" id="frftTv142g" role="37wK5m">
+              <node concept="1QGGSu" id="frftTv142h" role="1QGGTw">
+                <node concept="10M0yZ" id="frftTv14sP" role="3xaMm5">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowRight" resolve="ArrowRight" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                </node>
               </node>
             </node>
           </node>

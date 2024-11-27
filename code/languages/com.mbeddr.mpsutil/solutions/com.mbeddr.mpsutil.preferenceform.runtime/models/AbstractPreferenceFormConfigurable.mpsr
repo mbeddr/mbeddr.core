@@ -199,6 +199,9 @@
     <node concept="3uibUv" id="X7OD3Wrikr" role="EKbjA">
       <ref role="3uigEE" to="hq8m:~Configurable" resolve="Configurable" />
     </node>
+    <node concept="3uibUv" id="3dMezZ0ymKN" role="EKbjA">
+      <ref role="3uigEE" to="hq8m:~SearchableConfigurable" resolve="SearchableConfigurable" />
+    </node>
     <node concept="Wx3nA" id="4vnGofEqMD3" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="TrG5h" value="OWN_CLIENT_PROPERTY_KEY" />

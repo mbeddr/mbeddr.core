@@ -241,8 +241,8 @@
     <node concept="PrWs8" id="4sSf$eKhX2q" role="PzmwI">
       <ref role="PrY4T" node="4sSf$eKgZ7y" resolve="IAmAwareOfRuntime" />
     </node>
-    <node concept="1QGGSu" id="6LCinStDtiP" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/play.png" />
+    <node concept="1QGGSu" id="frftTv5thU" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/task.svg" />
     </node>
   </node>
   <node concept="1TIwiD" id="3p1cdQ7_xTL">

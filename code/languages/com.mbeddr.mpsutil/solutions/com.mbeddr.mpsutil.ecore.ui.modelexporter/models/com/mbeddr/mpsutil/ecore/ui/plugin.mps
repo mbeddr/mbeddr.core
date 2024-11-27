@@ -35,6 +35,11 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
@@ -47,6 +52,7 @@
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203071677434" name="jetbrains.mps.lang.plugin.structure.ToolDeclaration" flags="ng" index="sEfby">
         <child id="1214307129846" name="getComponentBlock" index="2Um5zG" />
@@ -72,6 +78,7 @@
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
+        <child id="6791676465872004185" name="toolIcon" index="1nVCmq" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -1550,6 +1557,9 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="KbQql6O$hc" role="1nVCmq">
+      <property role="1iqoE4" value="${module}/icons/emf.png" />
+    </node>
   </node>
   <node concept="sEfby" id="6TiIOkR_ShZ">
     <property role="TrG5h" value="ImportModelViewer" />
@@ -1671,6 +1681,9 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="7izjdFIxsrg" role="1oa70y" />
     </node>
+    <node concept="1QGGSu" id="KbQql6O$pk" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/emf.png" />
+    </node>
   </node>
   <node concept="tC5Ba" id="6TiIOkR_RTk">
     <property role="TrG5h" value="ecoreActionGroup" />
@@ -1753,6 +1766,9 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="7izjdFIxjGY" role="1oa70y" />
     </node>
+    <node concept="1QGGSu" id="1_GBr6nf$J3" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/emf.png" />
+    </node>
   </node>
   <node concept="sE7Ow" id="6TiIOkR_Sie">
     <property role="TrG5h" value="importEcoreModelAction" />
@@ -1792,6 +1808,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="KbQql6OzN1" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/emf.png" />
     </node>
   </node>
 </model>
