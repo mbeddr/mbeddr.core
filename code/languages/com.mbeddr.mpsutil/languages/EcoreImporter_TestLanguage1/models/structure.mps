@@ -20,7 +20,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -31,19 +30,6 @@
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
-        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
-        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
-        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -202,82 +188,34 @@
     <property role="TrG5h" value="enumTest" />
     <property role="3F6X1D" value="1153270145993231150" />
     <ref role="1H5jkz" node="17qUVvSZlYd" resolve="test1" />
-    <node concept="2JgGob" id="17qUVvSZlYc" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="101fhp_ZkGI" role="3lCyv">
-        <property role="TrG5h" value="enumTest" />
-        <property role="3F6X1D" value="1153270145993231150" />
-        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-        <node concept="M4N5e" id="101fhp_ZkGJ" role="M5hS2">
-          <property role="1uS6qv" value="0" />
-          <property role="1uS6qo" value="test1" />
-        </node>
-        <node concept="M4N5e" id="101fhp_ZkGK" role="M5hS2">
-          <property role="1uS6qv" value="1" />
-          <property role="1uS6qo" value="test12" />
-        </node>
-        <node concept="M4N5e" id="101fhp_ZkGL" role="M5hS2">
-          <property role="1uS6qv" value="2" />
-          <property role="1uS6qo" value="test13" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="17qUVvSZlYd" role="25R1y">
       <property role="TrG5h" value="test1" />
       <property role="3tVfz5" value="1153270145993231151" />
-      <ref role="2wpffI" node="101fhp_ZkGJ" />
     </node>
     <node concept="25R33" id="17qUVvSZlYe" role="25R1y">
       <property role="TrG5h" value="test12" />
       <property role="3tVfz5" value="1153270145993231152" />
-      <ref role="2wpffI" node="101fhp_ZkGK" />
     </node>
     <node concept="25R33" id="17qUVvSZlYf" role="25R1y">
       <property role="TrG5h" value="test13" />
       <property role="3tVfz5" value="1153270145993231153" />
-      <ref role="2wpffI" node="101fhp_ZkGL" />
     </node>
   </node>
   <node concept="25R3W" id="17qUVvSZlYg">
     <property role="TrG5h" value="enumTest2" />
     <property role="3F6X1D" value="1153270145993231139" />
     <ref role="1H5jkz" node="17qUVvSZlYi" resolve="val1" />
-    <node concept="2JgGob" id="17qUVvSZlYh" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="101fhp_ZkGz" role="3lCyv">
-        <property role="TrG5h" value="enumTest2" />
-        <property role="3F6X1D" value="1153270145993231139" />
-        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-        <node concept="M4N5e" id="101fhp_ZkG$" role="M5hS2">
-          <property role="1uS6qv" value="0" />
-          <property role="1uS6qo" value="val1" />
-        </node>
-        <node concept="M4N5e" id="101fhp_ZkG_" role="M5hS2">
-          <property role="1uS6qv" value="1" />
-          <property role="1uS6qo" value="val2" />
-        </node>
-        <node concept="M4N5e" id="101fhp_ZkGA" role="M5hS2">
-          <property role="1uS6qv" value="2" />
-          <property role="1uS6qo" value="val3" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="17qUVvSZlYi" role="25R1y">
       <property role="TrG5h" value="val1" />
       <property role="3tVfz5" value="1153270145993231140" />
-      <ref role="2wpffI" node="101fhp_ZkG$" />
     </node>
     <node concept="25R33" id="17qUVvSZlYj" role="25R1y">
       <property role="TrG5h" value="val2" />
       <property role="3tVfz5" value="1153270145993231141" />
-      <ref role="2wpffI" node="101fhp_ZkG_" />
     </node>
     <node concept="25R33" id="17qUVvSZlYk" role="25R1y">
       <property role="TrG5h" value="val3" />
       <property role="3tVfz5" value="1153270145993231142" />
-      <ref role="2wpffI" node="101fhp_ZkGA" />
     </node>
   </node>
 </model>

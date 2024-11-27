@@ -20,7 +20,6 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -31,20 +30,6 @@
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
-        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
-        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
-        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -1668,61 +1653,25 @@
     <property role="3GE5qa" value="expr" />
     <property role="3F6X1D" value="2532836982795392838" />
     <ref role="1H5jkz" node="13p6s1wtcKX" resolve="none" />
-    <node concept="2JgGob" id="13p6s1wtcKW" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3eY/string_name" />
-      <property role="3sfsH" value="5CkWgdpp0p1/by_name" />
-      <node concept="AxPO7" id="2cAst3Tvtt6" role="3lCyv">
-        <property role="3GE5qa" value="expr" />
-        <property role="TrG5h" value="StaticValueMathOperation" />
-        <property role="PDuV0" value="false" />
-        <property role="3F6X1D" value="2532836982795392838" />
-        <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-        <node concept="M4N5e" id="2cAst3Tvtz5" role="M5hS2">
-          <property role="1uS6qo" value="none" />
-          <property role="1uS6qv" value="none" />
-        </node>
-        <node concept="M4N5e" id="2cAst3TvtBF" role="M5hS2">
-          <property role="1uS6qo" value="round" />
-          <property role="1uS6qv" value="round" />
-        </node>
-        <node concept="M4N5e" id="2cAst3TvtB$" role="M5hS2">
-          <property role="1uS6qo" value="trunc" />
-          <property role="1uS6qv" value="trunc" />
-        </node>
-        <node concept="M4N5e" id="2cAst3TvtBB" role="M5hS2">
-          <property role="1uS6qo" value="ceil" />
-          <property role="1uS6qv" value="ceil" />
-        </node>
-        <node concept="M4N5e" id="2cAst3TTVzi" role="M5hS2">
-          <property role="1uS6qo" value="floor" />
-          <property role="1uS6qv" value="floor" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="13p6s1wtcKX" role="25R1y">
       <property role="TrG5h" value="none" />
       <property role="3tVfz5" value="2532836982795393221" />
-      <ref role="2wpffI" node="2cAst3Tvtz5" />
     </node>
     <node concept="25R33" id="13p6s1wtcKY" role="25R1y">
       <property role="TrG5h" value="round" />
       <property role="3tVfz5" value="2532836982795393515" />
-      <ref role="2wpffI" node="2cAst3TvtBF" />
     </node>
     <node concept="25R33" id="13p6s1wtcKZ" role="25R1y">
       <property role="TrG5h" value="trunc" />
       <property role="3tVfz5" value="2532836982795393508" />
-      <ref role="2wpffI" node="2cAst3TvtB$" />
     </node>
     <node concept="25R33" id="13p6s1wtcL0" role="25R1y">
       <property role="TrG5h" value="ceil" />
       <property role="3tVfz5" value="2532836982795393511" />
-      <ref role="2wpffI" node="2cAst3TvtBB" />
     </node>
     <node concept="25R33" id="13p6s1wtcL1" role="25R1y">
       <property role="TrG5h" value="floor" />
       <property role="3tVfz5" value="2532836982802331858" />
-      <ref role="2wpffI" node="2cAst3TTVzi" />
     </node>
   </node>
   <node concept="PlHQZ" id="4zXqh6TNW6K">
