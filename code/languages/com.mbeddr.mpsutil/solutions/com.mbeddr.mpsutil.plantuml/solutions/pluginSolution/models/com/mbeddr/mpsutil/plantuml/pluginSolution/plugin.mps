@@ -37,20 +37,21 @@
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
+    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
+    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
     <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
     <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" />
     <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
-    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
-    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
-    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
-    <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2107,8 +2108,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/vis.png" />
+    <node concept="1GtWCo" id="1fWpbocvrPP" role="1nVCmq">
+      <node concept="10M0yZ" id="5XU4dCzVlL3" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$FileTypes.Diagram" resolve="Diagram" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$FileTypes" resolve="AllIcons.FileTypes" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1X6acCMyThI">
@@ -2669,7 +2673,7 @@
   </node>
   <node concept="sE7Ow" id="18ZQ$P82xbr">
     <property role="TrG5h" value="ZoomIn" />
-    <property role="2uzpH1" value="Zoom In" />
+    <property role="2uzpH1" value="Zoom In (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="18ZQ$P82xbs" role="tncku">
@@ -2705,13 +2709,16 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="5BkFC2yhAJ4" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/zoomInIcon.png" />
-    </node>
     <node concept="1DS2jV" id="18ZQ$P85cQE" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="18ZQ$P85cQF" role="1oa70y" />
+    </node>
+    <node concept="1GtWCo" id="1fWpbocvrPQ" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzWopf" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomIn" resolve="ZoomIn" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="18ZQ$P82Epd">
@@ -2859,8 +2866,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="53G_t0FbBQs" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/vis.png" />
+    <node concept="1GtWCo" id="1fWpbocvrPR" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVEQc" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$FileTypes.Diagram" resolve="Diagram" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$FileTypes" resolve="AllIcons.FileTypes" />
+      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
@@ -2909,7 +2919,7 @@
   </node>
   <node concept="sE7Ow" id="2sPLpCfQji_">
     <property role="TrG5h" value="ZoomOut" />
-    <property role="2uzpH1" value="Zoom Out" />
+    <property role="2uzpH1" value="Zoom Out (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="2sPLpCfQjiA" role="tncku">
@@ -2945,13 +2955,16 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="2sPLpCfQjiP" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/zoomOutIcon.png" />
-    </node>
     <node concept="1DS2jV" id="2sPLpCfQjiQ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="2sPLpCfQjiR" role="1oa70y" />
+    </node>
+    <node concept="1GtWCo" id="1fWpbocvrPS" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzWqUx" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomOut" resolve="ZoomOut" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="2sPLpCfQjiT">
@@ -3151,9 +3164,6 @@
         <node concept="3clFbH" id="2aP19v2Yi5h" role="3cqZAp" />
       </node>
     </node>
-    <node concept="1QGGSu" id="2sPLpCfQjj9" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/saveIcon.png" />
-    </node>
     <node concept="1DS2jV" id="2sPLpCfQjja" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -3163,6 +3173,12 @@
       <property role="TrG5h" value="frame" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
       <node concept="1oajcY" id="2aP19v2Ugnt" role="1oa70y" />
+    </node>
+    <node concept="1GtWCo" id="1fWpbocvrPT" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzW6oV" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.MenuSaveall" resolve="MenuSaveall" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2sPLpCfQsmQ">
@@ -3195,9 +3211,6 @@
     <node concept="2tJIrI" id="5gmO3pL7WRn" role="jymVt" />
     <node concept="2tJIrI" id="5gmO3pL7I9J" role="jymVt" />
     <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
-    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
-      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
-    </node>
     <node concept="3clFbW" id="2sPLpCfQsmS" role="jymVt">
       <node concept="3cqZAl" id="2sPLpCfQsmT" role="3clF45" />
       <node concept="3Tm1VV" id="2sPLpCfQsmU" role="1B3o_S" />
@@ -3976,11 +3989,11 @@
                                 <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
                                 <node concept="2OqwBi" id="5ziaHPEAGLQ" role="37wK5m">
                                   <node concept="2OqwBi" id="5ziaHPEAuoL" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="5ziaHPEApcj" role="2Oq$k0">
-                                      <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
-                                    </node>
                                     <node concept="liA8E" id="5ziaHPEAzPA" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                                    </node>
+                                    <node concept="Xjq3P" id="5ziaHPEApcj" role="2Oq$k0">
+                                      <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="5ziaHPEALZA" role="2OqNvi">
@@ -4172,6 +4185,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
+      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
     </node>
   </node>
   <node concept="312cEu" id="2sPLpCfQCUL">
@@ -4565,9 +4581,6 @@
                   </node>
                 </node>
                 <node concept="3clFbJ" id="2sPLpCfQE4P" role="3cqZAp">
-                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
-                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
-                  </node>
                   <node concept="3clFbS" id="2sPLpCfQE4R" role="3clFbx">
                     <node concept="3clFbF" id="2sPLpCfQE4S" role="3cqZAp">
                       <node concept="3P9mCS" id="2sPLpCfQE4T" role="3clFbG">
@@ -4581,6 +4594,9 @@
                       </node>
                     </node>
                     <node concept="3cpWs6" id="2sPLpCfQE4W" role="3cqZAp" />
+                  </node>
+                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
+                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                   </node>
                 </node>
                 <node concept="3clFbH" id="2sPLpCfQJty" role="3cqZAp" />
@@ -4699,9 +4715,6 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2sPLpCfQE56" role="3cqZAp">
-                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
-                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
-                      </node>
                       <node concept="3clFbS" id="2sPLpCfQE58" role="3clFbx">
                         <node concept="3clFbF" id="2sPLpCfQE59" role="3cqZAp">
                           <node concept="3P9mCS" id="2sPLpCfQE5a" role="3clFbG">
@@ -4715,6 +4728,9 @@
                           </node>
                         </node>
                         <node concept="3cpWs6" id="2sPLpCfQE5d" role="3cqZAp" />
+                      </node>
+                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
+                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                       </node>
                     </node>
                     <node concept="3clFbF" id="2sPLpCfQE5e" role="3cqZAp">
@@ -5225,7 +5241,7 @@
   </node>
   <node concept="sE7Ow" id="4ppn3W9rGUJ">
     <property role="TrG5h" value="Reset" />
-    <property role="2uzpH1" value="Reset" />
+    <property role="2uzpH1" value="Reset (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="4ppn3W9rGUK" role="tncku">
@@ -5261,18 +5277,21 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="4ppn3W9rGUY" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/resetIcon.png" />
-    </node>
     <node concept="1DS2jV" id="4ppn3W9rGUZ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4ppn3W9rGV0" role="1oa70y" />
     </node>
+    <node concept="1GtWCo" id="1fWpbocvrPU" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVXbj" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$General.Reset" resolve="Reset" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
+      </node>
+    </node>
   </node>
   <node concept="sE7Ow" id="4ppn3W9rIR8">
     <property role="TrG5h" value="Back" />
-    <property role="2uzpH1" value="Previous Visualization" />
+    <property role="2uzpH1" value="Previous (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="fJN8o" value="true" />
     <property role="1rBW0U" value="true" />
@@ -5297,9 +5316,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1QGGSu" id="4ppn3W9rIRb" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/backIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRc" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -5328,10 +5344,16 @@
         </node>
       </node>
     </node>
+    <node concept="1GtWCo" id="1fWpbocvrPV" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVK04" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Back" resolve="Back" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
+    </node>
   </node>
   <node concept="sE7Ow" id="4ppn3W9rIRe">
     <property role="TrG5h" value="Forward" />
-    <property role="2uzpH1" value="Next Visualization" />
+    <property role="2uzpH1" value="Next Visualization (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="fJN8o" value="true" />
     <property role="1rBW0U" value="true" />
@@ -5356,9 +5378,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1QGGSu" id="4ppn3W9rIRh" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/fwdIcon.png" />
     </node>
     <node concept="1DS2jV" id="4ppn3W9rIRi" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -5386,6 +5405,12 @@
           </node>
         </node>
         <node concept="3clFbH" id="2aP19v30Uav" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="1GtWCo" id="1fWpbocvrPW" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVURB" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Forward" resolve="Forward" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
     </node>
   </node>
@@ -6119,7 +6144,7 @@
   </node>
   <node concept="sE7Ow" id="6IuaPRfaRij">
     <property role="TrG5h" value="CopySources" />
-    <property role="2uzpH1" value="Copy sources to clipboard" />
+    <property role="2uzpH1" value="Copy sources to clipboard (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="6IuaPRfaRik" role="tncku">
@@ -6206,13 +6231,16 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6IuaPRfaRiy" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/puml.png" />
-    </node>
     <node concept="1DS2jV" id="6IuaPRfaRiz" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="6IuaPRfaRi$" role="1oa70y" />
+    </node>
+    <node concept="1GtWCo" id="1fWpbocvrPX" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVSsO" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Copy" resolve="Copy" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="bhVSeGf3sb">
@@ -6317,9 +6345,6 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="bhVSeGf3t4" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/vis.png" />
-    </node>
     <node concept="2ScWuX" id="bhVSeGf5_Y" role="tmbBb">
       <node concept="3clFbS" id="bhVSeGf5_Z" role="2VODD2">
         <node concept="3clFbF" id="bhVSeFXdrL" role="3cqZAp">
@@ -6346,6 +6371,12 @@
             <property role="3clFbU" value="true" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="1GtWCo" id="1fWpbocvrPY" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRl5Hd" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$FileTypes.Diagram" resolve="Diagram" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$FileTypes" resolve="AllIcons.FileTypes" />
       </node>
     </node>
   </node>

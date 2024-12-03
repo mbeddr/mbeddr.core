@@ -28,12 +28,13 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -134,6 +135,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1044,8 +1048,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="67rUwlckK4B" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/folder.png" />
+    <node concept="1GtWCo" id="1fWpbocu6uv" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlRJ4" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.GeneratedFolder" resolve="GeneratedFolder" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
     </node>
   </node>
   <node concept="Zd50a" id="6bM7gvq4Vtb">
@@ -1156,8 +1163,11 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULE" resolve="MODULE" />
       <node concept="1oajcY" id="7uLL3Mf2_Qz" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6wvhQs7nVXo" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/folder.png" />
+    <node concept="1GtWCo" id="1fWpbocu6uw" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlQXY" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.GeneratedFolder" resolve="GeneratedFolder" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="DMIuLunJDF">

@@ -54,13 +54,13 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="gspm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui.popup(MPS.IDEA/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -1118,8 +1118,11 @@
         <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
       </node>
     </node>
-    <node concept="1QGGSu" id="5d4VabvUrnR" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/trace.png" />
+    <node concept="1GtWCo" id="1fWpbocvsDD" role="1nVCmq">
+      <node concept="10M0yZ" id="5XU4dCzXya7" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.TraceInto" resolve="TraceInto" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2jSY3BO406M">
@@ -4875,9 +4878,6 @@
         <node concept="3Tm1VV" id="5syY_AMvqCC" role="1B3o_S" />
       </node>
       <node concept="3Tmbuc" id="3EF07BwyiEp" role="1B3o_S" />
-      <node concept="3uibUv" id="43zZ$xOYbZ0" role="1zkMxy">
-        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
-      </node>
       <node concept="3clFb_" id="47H5HUZ1V3T" role="jymVt">
         <property role="TrG5h" value="actionPerformed" />
         <node concept="3Tm1VV" id="47H5HUZ1V3U" role="1B3o_S" />
@@ -4901,6 +4901,9 @@
         <node concept="2AHcQZ" id="47H5HUZ1V43" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
+      </node>
+      <node concept="3uibUv" id="43zZ$xOYbZ0" role="1zkMxy">
+        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
       </node>
     </node>
     <node concept="2tJIrI" id="5U8d23PWktf" role="jymVt" />
@@ -4927,9 +4930,6 @@
         <node concept="3Tm1VV" id="5U8d23PWgMI" role="1B3o_S" />
       </node>
       <node concept="3Tmbuc" id="3EF07Bwya9g" role="1B3o_S" />
-      <node concept="3uibUv" id="6LC1q0qTytq" role="1zkMxy">
-        <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
-      </node>
       <node concept="3clFb_" id="5U8d23PWgML" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="isSelected" />
@@ -5029,6 +5029,9 @@
         <node concept="2AHcQZ" id="6LC1q0qUAMx" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
+      </node>
+      <node concept="3uibUv" id="6LC1q0qTytq" role="1zkMxy">
+        <ref role="3uigEE" to="qkt:~ToggleAction" resolve="ToggleAction" />
       </node>
     </node>
     <node concept="2tJIrI" id="3wJ9Qm10iLQ" role="jymVt" />
@@ -5237,9 +5240,6 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="4LCAlMBQST3" role="1B3o_S" />
-      <node concept="3uibUv" id="43zZ$xOYFTx" role="1zkMxy">
-        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
-      </node>
       <node concept="3clFb_" id="7wcaLmvFWm7" role="jymVt">
         <property role="TrG5h" value="update" />
         <node concept="3Tm1VV" id="7wcaLmvFWm8" role="1B3o_S" />
@@ -5283,6 +5283,9 @@
         <node concept="2AHcQZ" id="7wcaLmvFWmf" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
+      </node>
+      <node concept="3uibUv" id="43zZ$xOYFTx" role="1zkMxy">
+        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
       </node>
     </node>
     <node concept="2tJIrI" id="5U8d23PFxtB" role="jymVt" />
@@ -5882,9 +5885,6 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="7rNasV4jYlT" role="1B3o_S" />
-      <node concept="3uibUv" id="43zZ$xOZI3L" role="1zkMxy">
-        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
-      </node>
       <node concept="3clFb_" id="7wcaLmvCaRG" role="jymVt">
         <property role="TrG5h" value="update" />
         <node concept="3Tm1VV" id="7wcaLmvCaRH" role="1B3o_S" />
@@ -5924,6 +5924,9 @@
         <node concept="2AHcQZ" id="7wcaLmvCaRO" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
+      </node>
+      <node concept="3uibUv" id="43zZ$xOZI3L" role="1zkMxy">
+        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
       </node>
     </node>
     <node concept="2tJIrI" id="4yQfyMjzv5k" role="jymVt" />
@@ -6260,9 +6263,6 @@
         </node>
       </node>
       <node concept="3Tmbuc" id="3EF07BwwMzj" role="1B3o_S" />
-      <node concept="3uibUv" id="43zZ$xP0L32" role="1zkMxy">
-        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
-      </node>
       <node concept="3clFb_" id="7wcaLmvsh1g" role="jymVt">
         <property role="TrG5h" value="update" />
         <node concept="3Tm1VV" id="7wcaLmvsh1h" role="1B3o_S" />
@@ -6325,6 +6325,9 @@
         <node concept="2AHcQZ" id="7wcaLmvsh1o" role="2AJF6D">
           <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
+      </node>
+      <node concept="3uibUv" id="43zZ$xP0L32" role="1zkMxy">
+        <ref role="3uigEE" node="43zZ$xOUWtT" resolve="TraceTab.TraceAction" />
       </node>
     </node>
     <node concept="2tJIrI" id="2jSY3BOcmM6" role="jymVt" />
