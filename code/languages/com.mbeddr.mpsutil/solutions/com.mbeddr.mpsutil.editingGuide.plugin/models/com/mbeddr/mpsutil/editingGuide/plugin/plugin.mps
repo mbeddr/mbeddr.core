@@ -270,8 +270,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="2N1CSrzEzc9" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="45f0X_J3uoz" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/play.png" />
+    <node concept="1QGGSu" id="frftTv53d3" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/task.svg" />
     </node>
   </node>
   <node concept="tC5Ba" id="31xWCC5Urf">
@@ -415,6 +415,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="2uR7kGCk757" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/task.svg" />
     </node>
   </node>
 </model>

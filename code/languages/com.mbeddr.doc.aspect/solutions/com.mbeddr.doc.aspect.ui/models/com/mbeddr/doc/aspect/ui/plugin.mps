@@ -63,6 +63,7 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -71,7 +72,7 @@
     </language>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
+        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
       <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
         <child id="8974276187400029893" name="icon" index="1QGGTw" />
@@ -127,7 +128,7 @@
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -169,7 +170,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -233,7 +234,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -296,7 +297,7 @@
         <child id="1154542793668" name="componentType" index="3g7fb8" />
         <child id="1154542803372" name="initValue" index="3g7hyw" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -321,7 +322,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -389,7 +390,7 @@
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp">
         <reference id="1218736638915" name="classifier" index="32nkFo" />
       </concept>
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
@@ -423,7 +424,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
@@ -536,8 +537,11 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="UK_oBpzHVU" role="3Uehp1">
-      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+    <node concept="1QGGSu" id="MipY_gdpYf" role="3Uehp1">
+      <node concept="10M0yZ" id="MipY_gdr1y" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="69s3uhHThi8">
@@ -2203,8 +2207,11 @@
                 <node concept="liA8E" id="1IUlN8Q3WKg" role="2OqNvi">
                   <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon)" resolve="setIcon" />
                   <node concept="1QGGTA" id="1IUlN8Q3WKA" role="37wK5m">
-                    <node concept="1QGGSu" id="1IUlN8Q3WKB" role="1QGGTw">
-                      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+                    <node concept="1QGGSu" id="MipY_gcWZb" role="1QGGTw">
+                      <node concept="10M0yZ" id="MipY_gd3QS" role="3xaMm5">
+                        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2277,9 +2284,7 @@
                 <node concept="liA8E" id="7r8qu42xWDu" role="2OqNvi">
                   <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon)" resolve="setIcon" />
                   <node concept="1QGGTA" id="7r8qu42xWDv" role="37wK5m">
-                    <node concept="1QGGSu" id="7r8qu42xWDw" role="1QGGTw">
-                      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
-                    </node>
+                    <node concept="1QGGSu" id="MipY_gd8yr" role="1QGGTw" />
                   </node>
                 </node>
               </node>
@@ -3486,9 +3491,6 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="1KDc5EfI0Ce" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
-    </node>
     <node concept="2XrIbr" id="DxJoPcq$jB" role="2XNbBy">
       <property role="TrG5h" value="showNodeOrConceptContent" />
       <node concept="3Tm6S6" id="DxJoPcq$jC" role="1B3o_S" />
@@ -3819,8 +3821,11 @@
                                         </node>
                                       </node>
                                       <node concept="1QGGTA" id="DxJoPcq$hM" role="37wK5m">
-                                        <node concept="1QGGSu" id="DxJoPcq$hN" role="1QGGTw">
-                                          <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+                                        <node concept="1QGGSu" id="MipY_gdgc4" role="1QGGTw">
+                                          <node concept="10M0yZ" id="MipY_gdi5C" role="3xaMm5">
+                                            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                                          </node>
                                         </node>
                                       </node>
                                       <node concept="10Nm6u" id="DxJoPcq$hO" role="37wK5m" />
@@ -4003,8 +4008,11 @@
                                         </node>
                                       </node>
                                       <node concept="1QGGTA" id="DxJoPcq$j0" role="37wK5m">
-                                        <node concept="1QGGSu" id="DxJoPcq$j1" role="1QGGTw">
-                                          <property role="1iqoE4" value="${module}/icons/toc_closed.png" />
+                                        <node concept="1QGGSu" id="MipY_gd9oS" role="1QGGTw">
+                                          <node concept="10M0yZ" id="MipY_gdbko" role="3xaMm5">
+                                            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                                          </node>
                                         </node>
                                       </node>
                                       <node concept="10Nm6u" id="DxJoPcq$j2" role="37wK5m" />
@@ -4105,6 +4113,12 @@
       <node concept="3Tm6S6" id="7YOUX1l3Aiq" role="1B3o_S" />
       <node concept="3uibUv" id="7YOUX1l3D8g" role="1tU5fm">
         <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+      </node>
+    </node>
+    <node concept="1QGGSu" id="MipY_gc55f" role="1nVCmq">
+      <node concept="10M0yZ" id="MipY_gcgqb" role="3xaMm5">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
       </node>
     </node>
   </node>
