@@ -33,8 +33,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -1048,8 +1048,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRlztq" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRlRJ4" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocu6uv" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlRJ4" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.GeneratedFolder" resolve="GeneratedFolder" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -1163,8 +1163,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULE" resolve="MODULE" />
       <node concept="1oajcY" id="7uLL3Mf2_Qz" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRlFq7" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRlQXY" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocu6uw" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlQXY" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.GeneratedFolder" resolve="GeneratedFolder" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>

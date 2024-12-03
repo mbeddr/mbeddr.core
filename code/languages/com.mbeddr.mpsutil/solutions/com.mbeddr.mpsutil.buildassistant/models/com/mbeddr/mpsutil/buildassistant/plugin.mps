@@ -35,8 +35,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2150,8 +2150,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
       <node concept="1oajcY" id="3x_7aSMkI7S" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRm2rZ" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRm67z" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpboct718" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRm67z" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
       </node>
@@ -2205,8 +2205,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="3_loG3uwDH" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRm9$8" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRmb_4" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpboct719" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRmb_4" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
       </node>
@@ -2286,8 +2286,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULES" resolve="MODULES" />
       <node concept="1oajcY" id="3x_7aSMkEFL" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRmcVE" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRmecy" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpboct71a" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRmecy" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
       </node>
@@ -2341,8 +2341,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODEL" resolve="MODEL" />
       <node concept="1oajcY" id="3_loG33bjf" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRm73T" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRm8D0" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpboct71b" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRm8D0" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.MagicResolve" resolve="MagicResolve" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
       </node>

@@ -64,11 +64,11 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
+      </concept>
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
-      </concept>
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -623,8 +623,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRlm$U" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRlo_O" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocu6uT" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlo_O" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Settings" resolve="Settings" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -6974,8 +6974,8 @@
     <node concept="15feLf" id="48h5VLbZEGE" role="15cTzA">
       <property role="15feLF" value="1" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzQz8f" role="1nVCmq">
-      <node concept="10M0yZ" id="5XU4dCzQEGd" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocu6uU" role="1nVCmq">
+      <node concept="10M0yZ" id="5XU4dCzQEGd" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$CodeWithMe.CwmPermissionView" resolve="CwmPermissionView" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$CodeWithMe" resolve="AllIcons.CodeWithMe" />
       </node>
@@ -7069,8 +7069,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRli_T" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRllSj" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocu6uV" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRllSj" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.GeneratedFolder" resolve="GeneratedFolder" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>

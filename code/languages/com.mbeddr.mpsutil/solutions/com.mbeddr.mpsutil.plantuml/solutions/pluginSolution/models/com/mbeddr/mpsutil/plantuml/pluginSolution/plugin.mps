@@ -50,8 +50,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2108,8 +2108,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="5XU4dCzVfhS" role="1nVCmq">
-      <node concept="10M0yZ" id="5XU4dCzVlL3" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPP" role="1nVCmq">
+      <node concept="10M0yZ" id="5XU4dCzVlL3" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$FileTypes.Diagram" resolve="Diagram" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$FileTypes" resolve="AllIcons.FileTypes" />
       </node>
@@ -2714,8 +2714,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="18ZQ$P85cQF" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzWmSw" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzWopf" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPQ" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzWopf" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomIn" resolve="ZoomIn" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -2866,8 +2866,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="5XU4dCzVDwy" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzVEQc" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPR" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVEQc" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$FileTypes.Diagram" resolve="Diagram" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$FileTypes" resolve="AllIcons.FileTypes" />
       </node>
@@ -2960,8 +2960,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="2sPLpCfQjiR" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzWoCx" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzWqUx" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPS" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzWqUx" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomOut" resolve="ZoomOut" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -3174,8 +3174,8 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
       <node concept="1oajcY" id="2aP19v2Ugnt" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzW31G" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzW6oV" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPT" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzW6oV" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.MenuSaveall" resolve="MenuSaveall" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -5282,8 +5282,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4ppn3W9rGV0" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzVVzt" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzVXbj" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPU" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVXbj" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Reset" resolve="Reset" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -5344,8 +5344,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="5XU4dCzVImC" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzVK04" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPV" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVK04" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Back" resolve="Back" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -5407,8 +5407,8 @@
         <node concept="3clFbH" id="2aP19v30Uav" role="3cqZAp" />
       </node>
     </node>
-    <node concept="1QGGSu" id="5XU4dCzVSUN" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzVURB" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPW" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVURB" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Forward" resolve="Forward" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -6236,8 +6236,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="6IuaPRfaRi$" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzVR2x" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzVSsO" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPX" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzVSsO" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Copy" resolve="Copy" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -6373,8 +6373,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRkT6T" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRl5Hd" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocvrPY" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRl5Hd" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$FileTypes.Diagram" resolve="Diagram" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$FileTypes" resolve="AllIcons.FileTypes" />
       </node>
