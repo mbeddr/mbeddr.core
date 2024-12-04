@@ -8,6 +8,7 @@
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
@@ -58,6 +59,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
@@ -82,6 +86,10 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -142,6 +150,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -180,12 +189,20 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
         <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
+      </concept>
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
@@ -241,6 +258,13 @@
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1750,18 +1774,55 @@
             <node concept="3cpWs8" id="69s3uhHTfFQ" role="3cqZAp">
               <node concept="3cpWsn" id="69s3uhHTfFR" role="3cpWs9">
                 <property role="TrG5h" value="docAspect" />
-                <property role="3TUv4t" value="true" />
                 <node concept="3uibUv" id="69s3uhHTfFO" role="1tU5fm">
                   <ref role="3uigEE" node="tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
                 </node>
-                <node concept="2OqwBi" id="69s3uhHTfFS" role="33vP2m">
-                  <node concept="2GrUjf" id="qmep2lZ7S2" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="qmep2lZ6vo" resolve="nextLanguage" />
+                <node concept="10Nm6u" id="3HwHK4HU6$o" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3J1_TO" id="3HwHK4HU8Gx" role="3cqZAp">
+              <node concept="3uVAMA" id="3HwHK4HU9Jq" role="1zxBo5">
+                <node concept="XOnhg" id="3HwHK4HU9Jr" role="1zc67B">
+                  <property role="TrG5h" value="error" />
+                  <node concept="nSUau" id="3HwHK4HU9Js" role="1tU5fm">
+                    <node concept="3uibUv" id="3HwHK4HUaIy" role="nSUat">
+                      <ref role="3uigEE" to="wyt6:~NoClassDefFoundError" resolve="NoClassDefFoundError" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="69s3uhHTfFU" role="2OqNvi">
-                    <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class)" resolve="getAspect" />
-                    <node concept="3VsKOn" id="69s3uhHTfFV" role="37wK5m">
-                      <ref role="3VsUkX" node="tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
+                </node>
+                <node concept="3clFbS" id="3HwHK4HU9Jt" role="1zc67A">
+                  <node concept="RRSsy" id="1J9MAka07Ny" role="3cqZAp">
+                    <property role="RRSoG" value="gZ5fh_4/error" />
+                    <node concept="3cpWs3" id="5094wKnoHEh" role="RRSoy">
+                      <node concept="Xl_RD" id="5094wKnoHEi" role="3uHU7B">
+                        <property role="Xl_RC" value="Failed to get editor aspect descriptor for language: " />
+                      </node>
+                      <node concept="2GrUjf" id="3HwHK4HVHd_" role="3uHU7w">
+                        <ref role="2Gs0qQ" node="qmep2lZ6vo" resolve="nextLanguage" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="1J9MAka0hmF" role="RRSow">
+                      <ref role="3cqZAo" node="3HwHK4HU9Jr" resolve="error" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="3HwHK4HU8Gz" role="1zxBo7">
+                <node concept="3clFbF" id="3HwHK4HU3Rn" role="3cqZAp">
+                  <node concept="37vLTI" id="3HwHK4HU3Rp" role="3clFbG">
+                    <node concept="2OqwBi" id="69s3uhHTfFS" role="37vLTx">
+                      <node concept="2GrUjf" id="qmep2lZ7S2" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="qmep2lZ6vo" resolve="nextLanguage" />
+                      </node>
+                      <node concept="liA8E" id="69s3uhHTfFU" role="2OqNvi">
+                        <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class)" resolve="getAspect" />
+                        <node concept="3VsKOn" id="69s3uhHTfFV" role="37wK5m">
+                          <ref role="3VsUkX" node="tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="3HwHK4HU3Rt" role="37vLTJ">
+                      <ref role="3cqZAo" node="69s3uhHTfFR" resolve="docAspect" />
                     </node>
                   </node>
                 </node>
