@@ -18,6 +18,7 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -395,6 +396,13 @@
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
       <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL">
         <child id="1205770614681" name="actualArgument" index="2XxRq1" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2356,18 +2364,55 @@
                     <node concept="3cpWs8" id="18EYPZeyJO8" role="3cqZAp">
                       <node concept="3cpWsn" id="18EYPZeyJO9" role="3cpWs9">
                         <property role="TrG5h" value="aspect" />
-                        <property role="3TUv4t" value="true" />
                         <node concept="3uibUv" id="18EYPZeyJNZ" role="1tU5fm">
                           <ref role="3uigEE" to="ttl0:tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
                         </node>
-                        <node concept="2OqwBi" id="18EYPZeyJOa" role="33vP2m">
-                          <node concept="37vLTw" id="18EYPZeyJOb" role="2Oq$k0">
-                            <ref role="3cqZAo" node="18EYPZeyJr8" resolve="languageRuntime" />
+                        <node concept="10Nm6u" id="3HwHK4HUZAH" role="33vP2m" />
+                      </node>
+                    </node>
+                    <node concept="3J1_TO" id="3HwHK4HUWVM" role="3cqZAp">
+                      <node concept="3uVAMA" id="3HwHK4HUWZ3" role="1zxBo5">
+                        <node concept="XOnhg" id="3HwHK4HUWZ4" role="1zc67B">
+                          <property role="TrG5h" value="error" />
+                          <node concept="nSUau" id="3HwHK4HUWZ5" role="1tU5fm">
+                            <node concept="3uibUv" id="3HwHK4HUX5g" role="nSUat">
+                              <ref role="3uigEE" to="wyt6:~NoClassDefFoundError" resolve="NoClassDefFoundError" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="18EYPZeyJOc" role="2OqNvi">
-                            <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class)" resolve="getAspect" />
-                            <node concept="3VsKOn" id="18EYPZeyJOd" role="37wK5m">
-                              <ref role="3VsUkX" to="ttl0:tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
+                        </node>
+                        <node concept="3clFbS" id="3HwHK4HUWZ6" role="1zc67A">
+                          <node concept="RRSsy" id="1J9MAka07Ny" role="3cqZAp">
+                            <property role="RRSoG" value="gZ5fh_4/error" />
+                            <node concept="3cpWs3" id="5094wKnoHEh" role="RRSoy">
+                              <node concept="Xl_RD" id="5094wKnoHEi" role="3uHU7B">
+                                <property role="Xl_RC" value="Failed to get editor aspect descriptor for language: " />
+                              </node>
+                              <node concept="37vLTw" id="5094wKnoHEj" role="3uHU7w">
+                                <ref role="3cqZAo" node="18EYPZeyJr8" resolve="languageRuntime" />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="1J9MAka0hmF" role="RRSow">
+                              <ref role="3cqZAo" node="3HwHK4HUWZ4" resolve="error" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="3HwHK4HUWVO" role="1zxBo7">
+                        <node concept="3clFbF" id="3HwHK4HUWkU" role="3cqZAp">
+                          <node concept="37vLTI" id="3HwHK4HUWkW" role="3clFbG">
+                            <node concept="2OqwBi" id="18EYPZeyJOa" role="37vLTx">
+                              <node concept="37vLTw" id="18EYPZeyJOb" role="2Oq$k0">
+                                <ref role="3cqZAo" node="18EYPZeyJr8" resolve="languageRuntime" />
+                              </node>
+                              <node concept="liA8E" id="18EYPZeyJOc" role="2OqNvi">
+                                <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class)" resolve="getAspect" />
+                                <node concept="3VsKOn" id="18EYPZeyJOd" role="37wK5m">
+                                  <ref role="3VsUkX" to="ttl0:tBHOvWexR9" resolve="IDocumentationAspectDescriptor" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="3HwHK4HUWl0" role="37vLTJ">
+                              <ref role="3cqZAo" node="18EYPZeyJO9" resolve="aspect" />
                             </node>
                           </node>
                         </node>
