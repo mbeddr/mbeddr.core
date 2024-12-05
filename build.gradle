@@ -13,7 +13,7 @@ downloadJbr {
 
 //MPS version
 ext.mpsMajor = "9999.9"
-ext.mpsBuild = "243.21565.10032"
+ext.mpsBuild = "243.21565.10033"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = "9999.9.3057.490c83a-SNAPSHOT"
