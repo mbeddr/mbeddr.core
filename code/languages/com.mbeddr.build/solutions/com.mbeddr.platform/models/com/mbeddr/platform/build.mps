@@ -19620,21 +19620,6 @@
             <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
           </node>
         </node>
-        <node concept="1SiIV0" id="58oUBCRFXvg" role="3bR37C">
-          <node concept="3bR9La" id="58oUBCRFXvh" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="58oUBCRFXvi" role="3bR37C">
-          <node concept="3bR9La" id="58oUBCRFXvj" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="58oUBCRFXvk" role="3bR37C">
-          <node concept="3bR9La" id="58oUBCRFXvl" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lfi" resolve="jetbrains.mps.generator" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="58oUBCRFXvm" role="3bR37C">
           <node concept="3bR9La" id="58oUBCRFXvn" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:307DWrMiIBc" resolve="jetbrains.mps.lang.generator.plan" />
