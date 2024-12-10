@@ -110,7 +110,7 @@
     <import index="sud2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui.table(MPS.IDEA/)" />
     <import index="qqrq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.ui.components(MPS.ThirdParty/)" />
     <import index="3pb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.table(MPS.IDEA/)" />
-    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2956,7 +2956,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2HzhasNzWTD" role="3cqZAp" />
       </node>
     </node>
     <node concept="3clFb_" id="2HzhasNzNJ3" role="jymVt">
@@ -3305,79 +3304,69 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6wvhQs7ni2U" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7niak" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7ni9S" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7ni3g" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7ni2V" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7ni9z" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7ni9Y" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7ni9Z" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
+        <node concept="3clFbF" id="1GW3SvffHR7" role="3cqZAp">
+          <node concept="1rXfSq" id="1GW3SvffHR5" role="3clFbG">
+            <ref role="37wK5l" node="1GW3SvfftX3" resolve="adjustColumnSizes" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6wvhQs7njzx" role="3clF46">
+        <property role="TrG5h" value="tm" />
+        <node concept="3uibUv" id="6wvhQs7njzy" role="1tU5fm">
+          <ref role="3uigEE" node="jpyKDg1OGH" resolve="ResultTableModel" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1GW3SvffaLw" role="jymVt" />
+    <node concept="3clFb_" id="1GW3SvfftX3" role="jymVt">
+      <property role="TrG5h" value="adjustColumnSizes" />
+      <node concept="3clFbS" id="1GW3SvfftX6" role="3clF47">
+        <node concept="3clFbF" id="1GW3SvfiBU5" role="3cqZAp">
+          <node concept="2OqwBi" id="1GW3SvfiHpF" role="3clFbG">
+            <node concept="37vLTw" id="1GW3SvfiBU3" role="2Oq$k0">
+              <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
             </node>
-            <node concept="liA8E" id="6wvhQs7niaq" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setWidth(int)" resolve="setWidth" />
-              <node concept="3cmrfG" id="6wvhQs7niar" role="37wK5m">
-                <property role="3cmrfH" value="20" />
+            <node concept="liA8E" id="1GW3SvfiL3j" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JTable.setAutoResizeMode(int)" resolve="setAutoResizeMode" />
+              <node concept="10M0yZ" id="1GW3SvfiQ8G" role="37wK5m">
+                <ref role="3cqZAo" to="dxuu:~JTable.AUTO_RESIZE_NEXT_COLUMN" resolve="AUTO_RESIZE_NEXT_COLUMN" />
+                <ref role="1PxDUh" to="dxuu:~JTable" resolve="JTable" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6wvhQs7np9z" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7np9$" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7np9_" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7np9A" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7np9B" role="2Oq$k0">
+        <node concept="3cpWs8" id="1GW3SvfiV6s" role="3cqZAp">
+          <node concept="3cpWsn" id="1GW3SvfiV6t" role="3cpWs9">
+            <property role="TrG5h" value="IconColumn" />
+            <node concept="3uibUv" id="1GW3SvfiQ_b" role="1tU5fm">
+              <ref role="3uigEE" to="c8ee:~TableColumn" resolve="TableColumn" />
+            </node>
+            <node concept="2OqwBi" id="1GW3SvfiV6u" role="33vP2m">
+              <node concept="2OqwBi" id="1GW3SvfiV6v" role="2Oq$k0">
+                <node concept="37vLTw" id="1GW3SvfiV6w" role="2Oq$k0">
                   <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
                 </node>
-                <node concept="liA8E" id="6wvhQs7np9C" role="2OqNvi">
+                <node concept="liA8E" id="1GW3SvfiV6x" role="2OqNvi">
                   <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
                 </node>
               </node>
-              <node concept="liA8E" id="6wvhQs7np9D" role="2OqNvi">
+              <node concept="liA8E" id="1GW3SvfiV6y" role="2OqNvi">
                 <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7np9E" role="37wK5m">
+                <node concept="3cmrfG" id="1GW3SvfiV6z" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7np9F" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMinWidth(int)" resolve="setMinWidth" />
-              <node concept="3cmrfG" id="6wvhQs7np9G" role="37wK5m">
-                <property role="3cmrfH" value="20" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6wvhQs7np9H" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7np9I" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7np9J" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7np9K" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7np9L" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7np9M" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7np9N" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7np9O" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
+        <node concept="3clFbF" id="1GW3Svfs06s" role="3cqZAp">
+          <node concept="2OqwBi" id="1GW3Svfs06t" role="3clFbG">
+            <node concept="37vLTw" id="1GW3Svfs06u" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GW3SvfiV6t" resolve="column" />
             </node>
-            <node concept="liA8E" id="6wvhQs7np9P" role="2OqNvi">
+            <node concept="liA8E" id="1GW3Svfs06v" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int)" resolve="setMaxWidth" />
-              <node concept="3cmrfG" id="6wvhQs7np9Q" role="37wK5m">
+              <node concept="3cmrfG" id="1GW3Svfs06w" role="37wK5m">
                 <property role="3cmrfH" value="20" />
               </node>
             </node>
@@ -3385,21 +3374,8 @@
         </node>
         <node concept="3clFbF" id="6wvhQs7np9T" role="3cqZAp">
           <node concept="2OqwBi" id="6wvhQs7np9U" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7np9V" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7np9W" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7np9X" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7np9Y" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7np9Z" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7npa0" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="1GW3SvfiV6B" role="2Oq$k0">
+              <ref role="3cqZAo" node="1GW3SvfiV6t" resolve="column" />
             </node>
             <node concept="liA8E" id="6wvhQs7npa1" role="2OqNvi">
               <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int)" resolve="setPreferredWidth" />
@@ -3409,242 +3385,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6wvhQs7nqyU" role="3cqZAp" />
-        <node concept="3clFbF" id="6wvhQs7nnJ1" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nnKg" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nnJO" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nnJn" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nnJ2" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nnJt" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nnJU" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nnJV" role="37wK5m">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nnKm" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMinWidth(int)" resolve="setMinWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nnKn" role="37wK5m">
-                <property role="3cmrfH" value="100" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqyV" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqyW" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqyX" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqyY" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqyZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqz0" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nqz1" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nqz2" role="37wK5m">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nqz3" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int)" resolve="setMaxWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nqz4" role="37wK5m">
-                <property role="3cmrfH" value="1000" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqz5" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqz6" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqz7" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqz8" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqz9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqza" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nqzb" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nqzc" role="37wK5m">
-                  <property role="3cmrfH" value="1" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nqzd" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int)" resolve="setPreferredWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nqze" role="37wK5m">
-                <property role="3cmrfH" value="150" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nq$4" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nq$5" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nq$6" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nq$7" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nq$8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nq$9" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nq$a" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nq$b" role="37wK5m">
-                  <property role="3cmrfH" value="2" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nq$c" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMinWidth(int)" resolve="setMinWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nq$d" role="37wK5m">
-                <property role="3cmrfH" value="100" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqzU" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqzV" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqzW" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqzX" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqzY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqzZ" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nq$0" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nq$1" role="37wK5m">
-                  <property role="3cmrfH" value="2" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nq$2" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int)" resolve="setMaxWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nq$3" role="37wK5m">
-                <property role="3cmrfH" value="1000" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqzK" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqzL" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqzM" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqzN" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqzO" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqzP" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nqzQ" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nqzR" role="37wK5m">
-                  <property role="3cmrfH" value="2" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nqzS" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int)" resolve="setPreferredWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nqzT" role="37wK5m">
-                <property role="3cmrfH" value="150" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqzA" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqzB" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqzC" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqzD" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqzE" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqzF" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nqzG" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nqzH" role="37wK5m">
-                  <property role="3cmrfH" value="3" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nqzI" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMinWidth(int)" resolve="setMinWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nqzJ" role="37wK5m">
-                <property role="3cmrfH" value="100" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqzs" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqzt" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqzu" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqzv" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqzw" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqzx" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nqzy" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nqzz" role="37wK5m">
-                  <property role="3cmrfH" value="3" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nqz$" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setMaxWidth(int)" resolve="setMaxWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nqz_" role="37wK5m">
-                <property role="3cmrfH" value="500" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6wvhQs7nqzi" role="3cqZAp">
-          <node concept="2OqwBi" id="6wvhQs7nqzj" role="3clFbG">
-            <node concept="2OqwBi" id="6wvhQs7nqzk" role="2Oq$k0">
-              <node concept="2OqwBi" id="6wvhQs7nqzl" role="2Oq$k0">
-                <node concept="37vLTw" id="6wvhQs7nqzm" role="2Oq$k0">
-                  <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
-                </node>
-                <node concept="liA8E" id="6wvhQs7nqzn" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JTable.getColumnModel()" resolve="getColumnModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6wvhQs7nqzo" role="2OqNvi">
-                <ref role="37wK5l" to="c8ee:~TableColumnModel.getColumn(int)" resolve="getColumn" />
-                <node concept="3cmrfG" id="6wvhQs7nqzp" role="37wK5m">
-                  <property role="3cmrfH" value="3" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="6wvhQs7nqzq" role="2OqNvi">
-              <ref role="37wK5l" to="c8ee:~TableColumn.setPreferredWidth(int)" resolve="setPreferredWidth" />
-              <node concept="3cmrfG" id="6wvhQs7nqzr" role="37wK5m">
-                <property role="3cmrfH" value="200" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="6wvhQs7nqzf" role="3cqZAp" />
+        <node concept="3clFbH" id="1GW3SvfiqmF" role="3cqZAp" />
         <node concept="3clFbF" id="jpyKDg2tIK" role="3cqZAp">
           <node concept="2OqwBi" id="jpyKDg2tIL" role="3clFbG">
             <node concept="37vLTw" id="jpyKDg2tIM" role="2Oq$k0">
@@ -3656,13 +3397,10 @@
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="6wvhQs7njzx" role="3clF46">
-        <property role="TrG5h" value="tm" />
-        <node concept="3uibUv" id="6wvhQs7njzy" role="1tU5fm">
-          <ref role="3uigEE" node="jpyKDg1OGH" resolve="ResultTableModel" />
-        </node>
-      </node>
+      <node concept="3Tm6S6" id="1GW3SvfflVa" role="1B3o_S" />
+      <node concept="3cqZAl" id="1GW3SvffqpK" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="1GW3SvffaLy" role="jymVt" />
     <node concept="3clFb_" id="jpyKDg2SuJ" role="jymVt">
       <property role="TrG5h" value="openSelectionInEditor" />
       <node concept="3Tm6S6" id="jpyKDg2SuK" role="1B3o_S" />
