@@ -2096,7 +2096,6 @@
     <property role="TrG5h" value="MbeddrSearchViewer" />
     <property role="2XNbzY" value="Search" />
     <property role="3GE5qa" value="search" />
-    <property role="2bmUCM" value="2aGS$UDXOxV/RIGHT" />
     <node concept="2XrIbr" id="2HzhasNzPxh" role="2XNbBy">
       <property role="TrG5h" value="setModel" />
       <node concept="3cqZAl" id="2HzhasNzPxn" role="3clF45" />
