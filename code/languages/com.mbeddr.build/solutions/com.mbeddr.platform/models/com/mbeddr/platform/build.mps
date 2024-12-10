@@ -15178,6 +15178,11 @@
             <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1dH515xDROo" role="3bR37C">
+          <node concept="3bR9La" id="1dH515xDROp" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="$bJ0jguQfr" role="2G$12L">
         <property role="BnDLt" value="true" />
