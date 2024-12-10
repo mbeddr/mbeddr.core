@@ -3069,6 +3069,42 @@
           </node>
         </node>
         <node concept="3clFbH" id="4EP4zG72nTb" role="3cqZAp" />
+        <node concept="3cpWs8" id="3wUOPyJMKpH" role="3cqZAp">
+          <node concept="3cpWsn" id="3wUOPyJMKpI" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="3wUOPyJMzkK" role="1tU5fm">
+              <ref role="3uigEE" node="jpyKDg1OGH" resolve="ResultTableModel" />
+            </node>
+            <node concept="2ShNRf" id="3wUOPyJMKpJ" role="33vP2m">
+              <node concept="1pGfFk" id="3wUOPyJMKpK" role="2ShVmc">
+                <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
+                <node concept="2OqwBi" id="3wUOPyJMKpL" role="37wK5m">
+                  <node concept="2OqwBi" id="3wUOPyJMKpM" role="2Oq$k0">
+                    <node concept="Xjq3P" id="3wUOPyJMKpN" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="3wUOPyJMKpO" role="2OqNvi">
+                      <ref role="2Oxat5" node="2HzhasNzNGZ" resolve="myProject" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3wUOPyJMKpP" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="3wUOPyJMKpQ" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3wUOPyJMV3P" role="3cqZAp">
+          <node concept="2OqwBi" id="3wUOPyJMV3Q" role="3clFbG">
+            <node concept="liA8E" id="3wUOPyJMV3R" role="2OqNvi">
+              <ref role="37wK5l" to="c8ee:~AbstractTableModel.fireTableDataChanged()" resolve="fireTableDataChanged" />
+            </node>
+            <node concept="37vLTw" id="3wUOPyJMV3S" role="2Oq$k0">
+              <ref role="3cqZAo" node="3wUOPyJMKpI" resolve="model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3wUOPyJMU_d" role="3cqZAp" />
         <node concept="3clFbF" id="2Gn1WTgOnVb" role="3cqZAp">
           <node concept="2OqwBi" id="2Gn1WTgOnVc" role="3clFbG">
             <node concept="2OqwBi" id="2Gn1WTgOnVd" role="2Oq$k0">
@@ -3079,22 +3115,8 @@
             </node>
             <node concept="liA8E" id="2Gn1WTgOnVg" role="2OqNvi">
               <ref role="37wK5l" to="3pb2:~JBTable.setModel(javax.swing.table.TableModel)" resolve="setModel" />
-              <node concept="2ShNRf" id="2Gn1WTgOnVh" role="37wK5m">
-                <node concept="1pGfFk" id="2Gn1WTgOnVi" role="2ShVmc">
-                  <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
-                  <node concept="2OqwBi" id="1GW3SvfBbMr" role="37wK5m">
-                    <node concept="2OqwBi" id="1GW3SvfAZNn" role="2Oq$k0">
-                      <node concept="Xjq3P" id="1GW3SvfARdM" role="2Oq$k0" />
-                      <node concept="2OwXpG" id="1GW3SvfB3Ef" role="2OqNvi">
-                        <ref role="2Oxat5" node="2HzhasNzNGZ" resolve="myProject" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="1GW3SvfBg$C" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="2Gn1WTgOnVj" role="37wK5m" />
-                </node>
+              <node concept="37vLTw" id="3wUOPyJMKpR" role="37wK5m">
+                <ref role="3cqZAo" node="3wUOPyJMKpI" resolve="model" />
               </node>
             </node>
           </node>
@@ -3108,7 +3130,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2Gn1WTgOnVq" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.invalidate()" resolve="invalidate" />
+              <ref role="37wK5l" to="dxuu:~JComponent.revalidate()" resolve="revalidate" />
             </node>
           </node>
         </node>
@@ -3121,7 +3143,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2Gn1WTgOnVw" role="2OqNvi">
-              <ref role="37wK5l" to="3pb2:~JBTable.updateUI()" resolve="updateUI" />
+              <ref role="37wK5l" to="z60i:~Component.repaint()" resolve="repaint" />
             </node>
           </node>
         </node>
@@ -3210,29 +3232,70 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="7ipIhbo7mb4" role="3clF47">
-                        <node concept="3clFbF" id="6wvhQs7njzN" role="3cqZAp">
-                          <node concept="3P9mCS" id="6wvhQs7njzO" role="3clFbG">
-                            <ref role="37wK5l" node="6wvhQs7njzg" resolve="setTableModel" />
-                            <node concept="2ShNRf" id="jpyKDg2tIH" role="37wK5m">
-                              <node concept="1pGfFk" id="jpyKDg2tII" role="2ShVmc">
+                        <node concept="3cpWs8" id="3wUOPyJLoRt" role="3cqZAp">
+                          <node concept="3cpWsn" id="3wUOPyJLoRu" role="3cpWs9">
+                            <property role="TrG5h" value="model" />
+                            <node concept="3uibUv" id="3wUOPyJL49G" role="1tU5fm">
+                              <ref role="3uigEE" node="jpyKDg1OGH" resolve="ResultTableModel" />
+                            </node>
+                            <node concept="2ShNRf" id="3wUOPyJLoRv" role="33vP2m">
+                              <node concept="1pGfFk" id="3wUOPyJLoRw" role="2ShVmc">
                                 <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
-                                <node concept="2OqwBi" id="1GW3SvfBjDL" role="37wK5m">
-                                  <node concept="2OqwBi" id="1GW3SvfBjDM" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="1GW3SvfBjDN" role="2Oq$k0">
+                                <node concept="2OqwBi" id="3wUOPyJLoRx" role="37wK5m">
+                                  <node concept="2OqwBi" id="3wUOPyJLoRy" role="2Oq$k0">
+                                    <node concept="Xjq3P" id="3wUOPyJLoRz" role="2Oq$k0">
                                       <ref role="1HBi2w" node="2HzhasNzNEW" resolve="SearchViewer" />
                                     </node>
-                                    <node concept="2OwXpG" id="1GW3SvfBjDO" role="2OqNvi">
+                                    <node concept="2OwXpG" id="3wUOPyJLoR$" role="2OqNvi">
                                       <ref role="2Oxat5" node="2HzhasNzNGZ" resolve="myProject" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="1GW3SvfBjDP" role="2OqNvi">
+                                  <node concept="liA8E" id="3wUOPyJLoR_" role="2OqNvi">
                                     <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                                   </node>
                                 </node>
-                                <node concept="37vLTw" id="5Hxjapwgwuz" role="37wK5m">
+                                <node concept="37vLTw" id="3wUOPyJLoRA" role="37wK5m">
                                   <ref role="3cqZAo" node="7ipIhbo7mb1" resolve="results" />
                                 </node>
                               </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="6wvhQs7njzN" role="3cqZAp">
+                          <node concept="3P9mCS" id="6wvhQs7njzO" role="3clFbG">
+                            <ref role="37wK5l" node="6wvhQs7njzg" resolve="setTableModel" />
+                            <node concept="37vLTw" id="3wUOPyJLoRB" role="37wK5m">
+                              <ref role="3cqZAo" node="3wUOPyJLoRu" resolve="model" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="3wUOPyJLBHw" role="3cqZAp">
+                          <node concept="2OqwBi" id="3wUOPyJLPKX" role="3clFbG">
+                            <node concept="liA8E" id="3wUOPyJLWRP" role="2OqNvi">
+                              <ref role="37wK5l" to="c8ee:~AbstractTableModel.fireTableDataChanged()" resolve="fireTableDataChanged" />
+                            </node>
+                            <node concept="37vLTw" id="3wUOPyJMySg" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3wUOPyJLoRu" resolve="model" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="3wUOPyJJlks" role="3cqZAp">
+                          <node concept="2OqwBi" id="3wUOPyJJlkt" role="3clFbG">
+                            <node concept="liA8E" id="3wUOPyJJlkx" role="2OqNvi">
+                              <ref role="37wK5l" to="dxuu:~JComponent.revalidate()" resolve="revalidate" />
+                            </node>
+                            <node concept="37vLTw" id="3wUOPyJJMG2" role="2Oq$k0">
+                              <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="3wUOPyJJloK" role="3cqZAp">
+                          <node concept="2OqwBi" id="3wUOPyJJloL" role="3clFbG">
+                            <node concept="liA8E" id="3wUOPyJJloP" role="2OqNvi">
+                              <ref role="37wK5l" to="z60i:~Component.repaint()" resolve="repaint" />
+                            </node>
+                            <node concept="37vLTw" id="3wUOPyJK2e_" role="2Oq$k0">
+                              <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
                             </node>
                           </node>
                         </node>
@@ -6109,8 +6172,8 @@
         <node concept="10Oyi0" id="5jGyeU5X$Pk" role="1tU5fm" />
       </node>
     </node>
-    <node concept="3uibUv" id="5jGyeU5Xznt" role="EKbjA">
-      <ref role="3uigEE" to="c8ee:~TableModel" resolve="TableModel" />
+    <node concept="3uibUv" id="3wUOPyJMceC" role="1zkMxy">
+      <ref role="3uigEE" to="c8ee:~AbstractTableModel" resolve="AbstractTableModel" />
     </node>
   </node>
   <node concept="Zd50a" id="60jO6Ca_l5b">
