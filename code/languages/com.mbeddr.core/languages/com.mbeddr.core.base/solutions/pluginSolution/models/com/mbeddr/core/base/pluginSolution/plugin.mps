@@ -2820,9 +2820,10 @@
             </node>
             <node concept="2ShNRf" id="2HzhasNzWTB" role="33vP2m">
               <node concept="1pGfFk" id="2HzhasNzWTC" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                <node concept="Xl_RD" id="2HzhasNzWTE" role="37wK5m">
-                  <property role="Xl_RC" value="go" />
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(javax.swing.Icon)" resolve="JButton" />
+                <node concept="10M0yZ" id="4EP4zG76c_W" role="37wK5m">
+                  <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
                 </node>
               </node>
             </node>
