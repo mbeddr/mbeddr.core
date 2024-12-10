@@ -2127,6 +2127,37 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2AcrvuoLhOy" role="3cqZAp">
+          <node concept="2OqwBi" id="2AcrvuoLhOz" role="3clFbG">
+            <node concept="2YIFZM" id="2AcrvuoLhO$" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="2AcrvuoLhO_" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="2AcrvuoLhOA" role="37wK5m">
+                <node concept="3clFbS" id="2AcrvuoLhOB" role="1bW5cS">
+                  <node concept="3clFbF" id="2AcrvuoLhOC" role="3cqZAp">
+                    <node concept="2OqwBi" id="2AcrvuoLhOD" role="3clFbG">
+                      <node concept="liA8E" id="2AcrvuoLhOF" role="2OqNvi">
+                        <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
+                        <node concept="Xl_RD" id="2AcrvuoLhOG" role="37wK5m">
+                          <property role="Xl_RC" value="global" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2AcrvuoLiN9" role="2Oq$k0">
+                        <node concept="2WthIp" id="2AcrvuoLiNa" role="2Oq$k0" />
+                        <node concept="liA8E" id="2AcrvuoLiNb" role="2OqNvi">
+                          <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="vqDSpa7807" role="1B3o_S" />
     </node>
@@ -2144,6 +2175,37 @@
             </node>
             <node concept="liA8E" id="6KjVnJoXx1Z" role="2OqNvi">
               <ref role="37wK5l" node="6KjVnJoW8X3" resolve="setProjectScope" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2AcrvuoKfX3" role="3cqZAp">
+          <node concept="2OqwBi" id="2AcrvuoKgMr" role="3clFbG">
+            <node concept="2YIFZM" id="2AcrvuoKg8d" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="2AcrvuoKhsB" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="2AcrvuoKhzw" role="37wK5m">
+                <node concept="3clFbS" id="2AcrvuoKhzz" role="1bW5cS">
+                  <node concept="3clFbF" id="2AcrvuoGWD1" role="3cqZAp">
+                    <node concept="2OqwBi" id="2AcrvuoGX5y" role="3clFbG">
+                      <node concept="liA8E" id="2AcrvuoGXBx" role="2OqNvi">
+                        <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
+                        <node concept="Xl_RD" id="2AcrvuoGXHM" role="37wK5m">
+                          <property role="Xl_RC" value="project" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2AcrvuoGW3K" role="2Oq$k0">
+                        <node concept="2WthIp" id="2AcrvuoGW3L" role="2Oq$k0" />
+                        <node concept="liA8E" id="2AcrvuoGW3M" role="2OqNvi">
+                          <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2170,25 +2232,40 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2HzhasN$8Yo" role="3cqZAp">
-          <node concept="2OqwBi" id="2HzhasN$8Zj" role="3clFbG">
-            <node concept="2OqwBi" id="2HzhasN$8YE" role="2Oq$k0">
-              <node concept="2WthIp" id="2HzhasN$8Yp" role="2Oq$k0" />
-              <node concept="liA8E" id="2HzhasN$8Z2" role="2OqNvi">
-                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
-              </node>
+        <node concept="3clFbF" id="2AcrvuoI7lv" role="3cqZAp">
+          <node concept="2OqwBi" id="2AcrvuoI8F8" role="3clFbG">
+            <node concept="2YIFZM" id="2AcrvuoI7KB" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="2HzhasN$8Zp" role="2OqNvi">
-              <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
-              <node concept="3cpWs3" id="4Q2Vz3iBgJB" role="37wK5m">
-                <node concept="Xl_RD" id="4Q2Vz3iBgJF" role="3uHU7B">
-                  <property role="Xl_RC" value=" model " />
-                </node>
-                <node concept="2OqwBi" id="2HzhasN$8ZZ" role="3uHU7w">
-                  <node concept="37vLTw" id="2HzhasN$8ZI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2HzhasNzPxo" resolve="m" />
+            <node concept="liA8E" id="2AcrvuoI9lq" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="2AcrvuoI9rR" role="37wK5m">
+                <node concept="3clFbS" id="2AcrvuoI9rU" role="1bW5cS">
+                  <node concept="3clFbF" id="2HzhasN$8Yo" role="3cqZAp">
+                    <node concept="2OqwBi" id="2HzhasN$8Zj" role="3clFbG">
+                      <node concept="liA8E" id="2HzhasN$8Zp" role="2OqNvi">
+                        <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
+                        <node concept="3cpWs3" id="4Q2Vz3iBgJB" role="37wK5m">
+                          <node concept="Xl_RD" id="4Q2Vz3iBgJF" role="3uHU7B">
+                            <property role="Xl_RC" value="model " />
+                          </node>
+                          <node concept="2OqwBi" id="2HzhasN$8ZZ" role="3uHU7w">
+                            <node concept="37vLTw" id="2HzhasN$8ZI" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2HzhasNzPxo" resolve="m" />
+                            </node>
+                            <node concept="LkI2h" id="2HzhasN$905" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2AcrvuoGV1E" role="2Oq$k0">
+                        <node concept="2WthIp" id="2AcrvuoGV1F" role="2Oq$k0" />
+                        <node concept="liA8E" id="2AcrvuoGV1G" role="2OqNvi">
+                          <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="LkI2h" id="2HzhasN$905" role="2OqNvi" />
                 </node>
               </node>
             </node>
@@ -2221,26 +2298,41 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2Gn1WTgMSe8" role="3cqZAp">
-          <node concept="2OqwBi" id="2Gn1WTgMSe9" role="3clFbG">
-            <node concept="2OqwBi" id="2Gn1WTgMSea" role="2Oq$k0">
-              <node concept="2WthIp" id="2Gn1WTgMSeb" role="2Oq$k0" />
-              <node concept="liA8E" id="2Gn1WTgMSec" role="2OqNvi">
-                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
-              </node>
+        <node concept="3clFbF" id="2AcrvuoKcCo" role="3cqZAp">
+          <node concept="2OqwBi" id="2AcrvuoKdLV" role="3clFbG">
+            <node concept="2YIFZM" id="2AcrvuoKd3C" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="2Gn1WTgMSed" role="2OqNvi">
-              <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
-              <node concept="3cpWs3" id="2Gn1WTgMSee" role="37wK5m">
-                <node concept="Xl_RD" id="2Gn1WTgMSef" role="3uHU7B">
-                  <property role="Xl_RC" value=" solution " />
-                </node>
-                <node concept="2OqwBi" id="2Gn1WTgPlUK" role="3uHU7w">
-                  <node concept="37vLTw" id="2Gn1WTgPlO3" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2Gn1WTgMSek" resolve="s" />
-                  </node>
-                  <node concept="liA8E" id="2Gn1WTgPnEc" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
+            <node concept="liA8E" id="2AcrvuoKesi" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="2AcrvuoKez5" role="37wK5m">
+                <node concept="3clFbS" id="2AcrvuoKez8" role="1bW5cS">
+                  <node concept="3clFbF" id="2Gn1WTgMSe8" role="3cqZAp">
+                    <node concept="2OqwBi" id="2Gn1WTgMSe9" role="3clFbG">
+                      <node concept="liA8E" id="2Gn1WTgMSed" role="2OqNvi">
+                        <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
+                        <node concept="3cpWs3" id="2Gn1WTgMSee" role="37wK5m">
+                          <node concept="Xl_RD" id="2Gn1WTgMSef" role="3uHU7B">
+                            <property role="Xl_RC" value="solution " />
+                          </node>
+                          <node concept="2OqwBi" id="2Gn1WTgPlUK" role="3uHU7w">
+                            <node concept="37vLTw" id="2Gn1WTgPlO3" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2Gn1WTgMSek" resolve="s" />
+                            </node>
+                            <node concept="liA8E" id="2Gn1WTgPnEc" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="2AcrvuoKfrz" role="2Oq$k0">
+                        <node concept="2WthIp" id="2AcrvuoKfr$" role="2Oq$k0" />
+                        <node concept="liA8E" id="2AcrvuoKfr_" role="2OqNvi">
+                          <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
