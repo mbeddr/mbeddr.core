@@ -2958,12 +2958,14 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfBzhC" role="jymVt" />
     <node concept="3clFb_" id="2HzhasNzNJ3" role="jymVt">
       <property role="TrG5h" value="dispose" />
       <node concept="3Tm1VV" id="2HzhasNzNJ4" role="1B3o_S" />
       <node concept="3cqZAl" id="2HzhasNzNJ5" role="3clF45" />
       <node concept="3clFbS" id="2HzhasNzNJ6" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="1GW3SvfBC1$" role="jymVt" />
     <node concept="3clFb_" id="jpyKDg0M3F" role="jymVt">
       <property role="TrG5h" value="setModel" />
       <node concept="3cqZAl" id="jpyKDg0M3G" role="3clF45" />
@@ -3004,6 +3006,7 @@
         <node concept="H_c77" id="jpyKDg0M3U" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfBGLw" role="jymVt" />
     <node concept="3clFb_" id="2Gn1WTgNQ7i" role="jymVt">
       <property role="TrG5h" value="setSolution" />
       <node concept="3cqZAl" id="2Gn1WTgNQ7j" role="3clF45" />
@@ -3046,6 +3049,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfBLxs" role="jymVt" />
     <node concept="3clFb_" id="2Gn1WTgOnVE" role="jymVt">
       <property role="TrG5h" value="cleanUp" />
       <node concept="3Tm6S6" id="2Gn1WTgOnVF" role="1B3o_S" />
@@ -3078,6 +3082,17 @@
               <node concept="2ShNRf" id="2Gn1WTgOnVh" role="37wK5m">
                 <node concept="1pGfFk" id="2Gn1WTgOnVi" role="2ShVmc">
                   <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
+                  <node concept="2OqwBi" id="1GW3SvfBbMr" role="37wK5m">
+                    <node concept="2OqwBi" id="1GW3SvfAZNn" role="2Oq$k0">
+                      <node concept="Xjq3P" id="1GW3SvfARdM" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="1GW3SvfB3Ef" role="2OqNvi">
+                        <ref role="2Oxat5" node="2HzhasNzNGZ" resolve="myProject" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="1GW3SvfBg$C" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
                   <node concept="10Nm6u" id="2Gn1WTgOnVj" role="37wK5m" />
                 </node>
               </node>
@@ -3125,6 +3140,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfBQho" role="jymVt" />
     <node concept="3clFb_" id="jpyKDg2tIn" role="jymVt">
       <property role="TrG5h" value="runSearch" />
       <node concept="3Tm6S6" id="jpyKDg2tIo" role="1B3o_S" />
@@ -3187,6 +3203,17 @@
                 <node concept="2ShNRf" id="jpyKDg2tIH" role="37wK5m">
                   <node concept="1pGfFk" id="jpyKDg2tII" role="2ShVmc">
                     <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
+                    <node concept="2OqwBi" id="1GW3SvfBjDL" role="37wK5m">
+                      <node concept="2OqwBi" id="1GW3SvfBjDM" role="2Oq$k0">
+                        <node concept="Xjq3P" id="1GW3SvfBjDN" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="1GW3SvfBjDO" role="2OqNvi">
+                          <ref role="2Oxat5" node="2HzhasNzNGZ" resolve="myProject" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1GW3SvfBjDP" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                      </node>
+                    </node>
                     <node concept="37vLTw" id="5Hxjapwgwuz" role="37wK5m">
                       <ref role="3cqZAo" node="jpyKDg2tIm" resolve="result" />
                     </node>
@@ -3262,6 +3289,17 @@
                 <node concept="2ShNRf" id="2Gn1WTgPaZk" role="37wK5m">
                   <node concept="1pGfFk" id="2Gn1WTgPaZl" role="2ShVmc">
                     <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
+                    <node concept="2OqwBi" id="1GW3SvfBmI2" role="37wK5m">
+                      <node concept="2OqwBi" id="1GW3SvfBmI3" role="2Oq$k0">
+                        <node concept="Xjq3P" id="1GW3SvfBmI4" role="2Oq$k0" />
+                        <node concept="2OwXpG" id="1GW3SvfBmI5" role="2OqNvi">
+                          <ref role="2Oxat5" node="2HzhasNzNGZ" resolve="myProject" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1GW3SvfBmI6" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                      </node>
+                    </node>
                     <node concept="37vLTw" id="2Gn1WTgPaZm" role="37wK5m">
                       <ref role="3cqZAo" node="2Gn1WTgPaZ9" resolve="result" />
                     </node>
@@ -3286,6 +3324,7 @@
         <node concept="10P_77" id="7DRyZmDokoK" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfBplv" role="jymVt" />
     <node concept="3clFb_" id="6wvhQs7njzg" role="jymVt">
       <property role="TrG5h" value="setTableModel" />
       <node concept="3cqZAl" id="6wvhQs7njzh" role="3clF45" />
@@ -5077,10 +5116,31 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="1GW3SvfAtF8" role="jymVt">
+      <property role="TrG5h" value="repository" />
+      <node concept="3Tm6S6" id="1GW3SvfAsVi" role="1B3o_S" />
+      <node concept="3uibUv" id="1GW3SvfAtyO" role="1tU5fm">
+        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1GW3SvfArqh" role="jymVt" />
     <node concept="3clFbW" id="jpyKDg1OH8" role="jymVt">
       <node concept="3cqZAl" id="jpyKDg1OH9" role="3clF45" />
       <node concept="3Tm1VV" id="jpyKDg1OHa" role="1B3o_S" />
       <node concept="3clFbS" id="jpyKDg1OHb" role="3clF47">
+        <node concept="3clFbF" id="1GW3SvfAvVr" role="3cqZAp">
+          <node concept="37vLTI" id="1GW3SvfAwZl" role="3clFbG">
+            <node concept="37vLTw" id="1GW3SvfAymN" role="37vLTx">
+              <ref role="3cqZAo" node="1GW3SvfAu7e" resolve="repository" />
+            </node>
+            <node concept="2OqwBi" id="1GW3SvfAwdC" role="37vLTJ">
+              <node concept="Xjq3P" id="1GW3SvfAvVp" role="2Oq$k0" />
+              <node concept="2OwXpG" id="1GW3SvfAwyi" role="2OqNvi">
+                <ref role="2Oxat5" node="1GW3SvfAtF8" resolve="repository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="jpyKDg1OHn" role="3cqZAp">
           <node concept="37vLTI" id="jpyKDg1OI9" role="3clFbG">
             <node concept="37vLTw" id="jpyKDg1OIc" role="37vLTx">
@@ -5095,6 +5155,12 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="1GW3SvfAu7e" role="3clF46">
+        <property role="TrG5h" value="repository" />
+        <node concept="3uibUv" id="1GW3SvfAurc" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+      </node>
       <node concept="37vLTG" id="jpyKDg1OHc" role="3clF46">
         <property role="TrG5h" value="res" />
         <node concept="_YKpA" id="jpyKDg1OHd" role="1tU5fm">
@@ -5104,6 +5170,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfAywI" role="jymVt" />
     <node concept="3clFb_" id="5jGyeU5Xznu" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getRowCount" />
@@ -5136,6 +5203,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfAzSO" role="jymVt" />
     <node concept="3clFb_" id="5jGyeU5Xzny" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getColumnCount" />
@@ -5150,6 +5218,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfAzsh" role="jymVt" />
     <node concept="3clFb_" id="5jGyeU5XznA" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getColumnName" />
@@ -5222,6 +5291,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfA$Iu" role="jymVt" />
     <node concept="3clFb_" id="5jGyeU5XznI" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getColumnClass" />
@@ -5260,6 +5330,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfA_b1" role="jymVt" />
     <node concept="3clFb_" id="5jGyeU5XznR" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isCellEditable" />
@@ -5280,6 +5351,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfA_B$" role="jymVt" />
     <node concept="3clFb_" id="2Gn1WTgZUvE" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getModelAt" />
@@ -5311,6 +5383,7 @@
         <node concept="10Oyi0" id="2Gn1WTgZVY6" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1GW3SvfAA47" role="jymVt" />
     <node concept="3clFb_" id="5jGyeU5Xzo1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getValueAt" />
@@ -5450,6 +5523,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="37vLTw" id="1GW3SvfAAIL" role="ukAjM">
+                  <ref role="3cqZAo" node="1GW3SvfAtF8" resolve="repository" />
                 </node>
               </node>
               <node concept="3cpWs6" id="5jGyeU5XzqK" role="3cqZAp">
