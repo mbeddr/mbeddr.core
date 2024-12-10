@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # December 2024
 
+## com.mbeddr.core.base
+
+### Changed
+
+- The mbeddr search tool was improved: It can now also search the project and globally. It also got options for approximate searching with an error distance, and matching the case. The UI was also improved.
+
 ## com.mbeddr.mpsutil
 
 ### Fixed
@@ -17,7 +23,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil
 
-### Feature
+### Added
 
 - A new language `com.mbeddr.mpsutil.collections` was added that adds support for a set type `nset` that use nodes as the values of the set. Equivalence of nodes is checked structurally. The hash code calculation is done for all properties and children and the first level of references. The runtime solution also contains a more general class `EquivalenceHashSet` to implement hashsets with arbitrary `equals` and `hashcode` methods.
 
@@ -45,7 +51,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.interpreter
 
-### Feature
+### Added
 
 - Added user defineable call back function when trace node is added to the trace tree
 
@@ -63,7 +69,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.checkinHandler
 
-### Feature
+### Added
 
 - A new kind of Checkin handlers (background handler) now support the interface `CommitCheck` which allows more options like running the code after the commit or in the background.
 
