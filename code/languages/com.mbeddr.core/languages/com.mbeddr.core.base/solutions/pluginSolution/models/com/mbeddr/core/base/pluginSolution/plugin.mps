@@ -107,6 +107,9 @@
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="sud2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui.table(MPS.IDEA/)" />
+    <import index="qqrq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.ui.components(MPS.ThirdParty/)" />
+    <import index="3pb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.table(MPS.IDEA/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2376,11 +2379,11 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="jpyKDg1Mqf" role="1B3o_S" />
       <node concept="3uibUv" id="jpyKDg1Mqq" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JTextField" resolve="JTextField" />
+        <ref role="3uigEE" to="qqrq:~JBTextField" resolve="JBTextField" />
       </node>
       <node concept="2ShNRf" id="jpyKDg1Mqs" role="33vP2m">
         <node concept="1pGfFk" id="jpyKDg1MMr" role="2ShVmc">
-          <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;()" resolve="JTextField" />
+          <ref role="37wK5l" to="qqrq:~JBTextField.&lt;init&gt;()" resolve="JBTextField" />
         </node>
       </node>
     </node>
@@ -2389,11 +2392,11 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="7DRyZmDjH3T" role="1B3o_S" />
       <node concept="3uibUv" id="7DRyZmDjJ7K" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JCheckBox" resolve="JCheckBox" />
+        <ref role="3uigEE" to="qqrq:~JBCheckBox" resolve="JBCheckBox" />
       </node>
       <node concept="2ShNRf" id="7DRyZmDjH3V" role="33vP2m">
         <node concept="1pGfFk" id="7DRyZmDkgDI" role="2ShVmc">
-          <ref role="37wK5l" to="dxuu:~JCheckBox.&lt;init&gt;(java.lang.String)" resolve="JCheckBox" />
+          <ref role="37wK5l" to="qqrq:~JBCheckBox.&lt;init&gt;(java.lang.String)" resolve="JBCheckBox" />
           <node concept="Xl_RD" id="7DRyZmDkhhS" role="37wK5m">
             <property role="Xl_RC" value="all" />
           </node>
@@ -2405,11 +2408,11 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="jpyKDg1OFP" role="1B3o_S" />
       <node concept="3uibUv" id="5jGyeU5Xx04" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JTable" resolve="JTable" />
+        <ref role="3uigEE" to="3pb2:~JBTable" resolve="JBTable" />
       </node>
       <node concept="2ShNRf" id="jpyKDg1OG2" role="33vP2m">
         <node concept="1pGfFk" id="jpyKDg1OG3" role="2ShVmc">
-          <ref role="37wK5l" to="dxuu:~JTable.&lt;init&gt;()" resolve="JTable" />
+          <ref role="37wK5l" to="3pb2:~JBTable.&lt;init&gt;()" resolve="JBTable" />
         </node>
       </node>
     </node>
@@ -2457,7 +2460,7 @@
               <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
             </node>
             <node concept="liA8E" id="5jGyeU5XF1i" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setShowVerticalLines(boolean)" resolve="setShowVerticalLines" />
+              <ref role="37wK5l" to="3pb2:~JBTable.setShowVerticalLines(boolean)" resolve="setShowVerticalLines" />
               <node concept="3clFbT" id="5jGyeU5XF1j" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -2468,13 +2471,13 @@
         <node concept="3cpWs8" id="2HzhasNzUYT" role="3cqZAp">
           <node concept="3cpWsn" id="2HzhasNzUYU" role="3cpWs9">
             <property role="TrG5h" value="topPanel" />
-            <node concept="3uibUv" id="2HzhasNzUYV" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
-            </node>
             <node concept="2ShNRf" id="2HzhasNzUYX" role="33vP2m">
               <node concept="1pGfFk" id="2HzhasNzUYY" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+                <ref role="37wK5l" to="qqrq:~JBPanel.&lt;init&gt;()" resolve="JBPanel" />
               </node>
+            </node>
+            <node concept="3uibUv" id="4EP4zG71h7p" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
             </node>
           </node>
         </node>
@@ -2523,7 +2526,7 @@
             </node>
             <node concept="2ShNRf" id="2HzhasNzWRQ" role="33vP2m">
               <node concept="1pGfFk" id="2HzhasNzWRR" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+                <ref role="37wK5l" to="qqrq:~JBPanel.&lt;init&gt;()" resolve="JBPanel" />
               </node>
             </node>
           </node>
@@ -2570,7 +2573,7 @@
             </node>
             <node concept="2ShNRf" id="7DRyZmDl4N5" role="33vP2m">
               <node concept="1pGfFk" id="7DRyZmDl4b2" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
+                <ref role="37wK5l" to="qqrq:~JBPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JBPanel" />
                 <node concept="2ShNRf" id="7DRyZmDng6G" role="37wK5m">
                   <node concept="1pGfFk" id="7DRyZmDnjYj" role="2ShVmc">
                     <ref role="37wK5l" to="z60i:~BorderLayout.&lt;init&gt;()" resolve="BorderLayout" />
@@ -2714,11 +2717,11 @@
           <node concept="3cpWsn" id="jpyKDg2wxD" role="3cpWs9">
             <property role="TrG5h" value="listScroller" />
             <node concept="3uibUv" id="jpyKDg2wxE" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
+              <ref role="3uigEE" to="qqrq:~JBScrollPane" resolve="JBScrollPane" />
             </node>
             <node concept="2ShNRf" id="jpyKDg2Bn$" role="33vP2m">
               <node concept="1pGfFk" id="jpyKDg2BnA" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JScrollPane" />
+                <ref role="37wK5l" to="qqrq:~JBScrollPane.&lt;init&gt;(java.awt.Component,int,int)" resolve="JBScrollPane" />
                 <node concept="37vLTw" id="jpyKDg2BnB" role="37wK5m">
                   <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
                 </node>
@@ -3062,6 +3065,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4EP4zG72nTb" role="3cqZAp" />
         <node concept="3clFbF" id="2Gn1WTgOnVb" role="3cqZAp">
           <node concept="2OqwBi" id="2Gn1WTgOnVc" role="3clFbG">
             <node concept="2OqwBi" id="2Gn1WTgOnVd" role="2Oq$k0">
@@ -3071,7 +3075,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2Gn1WTgOnVg" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setModel(javax.swing.table.TableModel)" resolve="setModel" />
+              <ref role="37wK5l" to="3pb2:~JBTable.setModel(javax.swing.table.TableModel)" resolve="setModel" />
               <node concept="2ShNRf" id="2Gn1WTgOnVh" role="37wK5m">
                 <node concept="1pGfFk" id="2Gn1WTgOnVi" role="2ShVmc">
                   <ref role="37wK5l" node="jpyKDg1OH8" resolve="ResultTableModel" />
@@ -3103,7 +3107,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2Gn1WTgOnVw" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.updateUI()" resolve="updateUI" />
+              <ref role="37wK5l" to="3pb2:~JBTable.updateUI()" resolve="updateUI" />
             </node>
           </node>
         </node>
@@ -3294,7 +3298,7 @@
               <ref role="3cqZAo" node="jpyKDg1OFO" resolve="resultTable" />
             </node>
             <node concept="liA8E" id="jpyKDg2tIG" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JTable.setModel(javax.swing.table.TableModel)" resolve="setModel" />
+              <ref role="37wK5l" to="3pb2:~JBTable.setModel(javax.swing.table.TableModel)" resolve="setModel" />
               <node concept="37vLTw" id="6wvhQs7njzP" role="37wK5m">
                 <ref role="3cqZAo" node="6wvhQs7njzx" resolve="tm" />
               </node>
@@ -5369,9 +5373,6 @@
     <property role="3GE5qa" value="search" />
     <property role="TrG5h" value="ResultTableModel" />
     <node concept="3Tm1VV" id="jpyKDg1OGI" role="1B3o_S" />
-    <node concept="3uibUv" id="5jGyeU5Xznt" role="EKbjA">
-      <ref role="3uigEE" to="c8ee:~TableModel" resolve="TableModel" />
-    </node>
     <node concept="312cEg" id="jpyKDg1OHg" role="jymVt">
       <property role="TrG5h" value="result" />
       <node concept="3Tm6S6" id="jpyKDg1OHh" role="1B3o_S" />
@@ -5934,6 +5935,9 @@
         <property role="TrG5h" value="row" />
         <node concept="10Oyi0" id="5jGyeU5X$Pk" role="1tU5fm" />
       </node>
+    </node>
+    <node concept="3uibUv" id="5jGyeU5Xznt" role="EKbjA">
+      <ref role="3uigEE" to="c8ee:~TableModel" resolve="TableModel" />
     </node>
   </node>
   <node concept="Zd50a" id="60jO6Ca_l5b">
