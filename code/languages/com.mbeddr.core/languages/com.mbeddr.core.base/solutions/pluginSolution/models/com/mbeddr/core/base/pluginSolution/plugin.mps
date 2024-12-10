@@ -3838,6 +3838,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3K9FTCmK7XR" role="3cqZAp">
+          <node concept="2OqwBi" id="3K9FTCmK7XS" role="3clFbG">
+            <node concept="2OqwBi" id="3K9FTCmK7XT" role="2Oq$k0">
+              <node concept="37vLTw" id="3K9FTCmK7XU" role="2Oq$k0">
+                <ref role="3cqZAo" node="2HzhasNzNK6" resolve="searchViewer" />
+              </node>
+              <node concept="liA8E" id="3K9FTCmK7XV" role="2OqNvi">
+                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3K9FTCmK7XW" role="2OqNvi">
+              <ref role="37wK5l" to="jkny:~ToolWindow.setAnchor(com.intellij.openapi.wm.ToolWindowAnchor,java.lang.Runnable)" resolve="setAnchor" />
+              <node concept="10M0yZ" id="3K9FTCmK7XX" role="37wK5m">
+                <ref role="3cqZAo" to="jkny:~ToolWindowAnchor.BOTTOM" resolve="BOTTOM" />
+                <ref role="1PxDUh" to="jkny:~ToolWindowAnchor" resolve="ToolWindowAnchor" />
+              </node>
+              <node concept="10Nm6u" id="3K9FTCmK7XY" role="37wK5m" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2HzhasNzNKd" role="3cqZAp">
           <node concept="2OqwBi" id="2HzhasNzNKe" role="3clFbG">
             <node concept="37vLTw" id="2HzhasNzNKf" role="2Oq$k0">
@@ -12902,6 +12922,26 @@
               <node concept="LR4U6" id="2Gn1WTgS$Il" role="2OqNvi">
                 <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3K9FTCmK8RN" role="3cqZAp">
+          <node concept="2OqwBi" id="3K9FTCmK8RO" role="3clFbG">
+            <node concept="2OqwBi" id="3K9FTCmK8RP" role="2Oq$k0">
+              <node concept="37vLTw" id="3K9FTCmK8RQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="2Gn1WTgS$If" resolve="searchViewer" />
+              </node>
+              <node concept="liA8E" id="3K9FTCmK8RR" role="2OqNvi">
+                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3K9FTCmK8RS" role="2OqNvi">
+              <ref role="37wK5l" to="jkny:~ToolWindow.setAnchor(com.intellij.openapi.wm.ToolWindowAnchor,java.lang.Runnable)" resolve="setAnchor" />
+              <node concept="10M0yZ" id="3K9FTCmK8RT" role="37wK5m">
+                <ref role="3cqZAo" to="jkny:~ToolWindowAnchor.BOTTOM" resolve="BOTTOM" />
+                <ref role="1PxDUh" to="jkny:~ToolWindowAnchor" resolve="ToolWindowAnchor" />
+              </node>
+              <node concept="10Nm6u" id="3K9FTCmK8RU" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -23141,6 +23181,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3K9FTCmK8hs" role="3cqZAp">
+          <node concept="2OqwBi" id="3K9FTCmK8ht" role="3clFbG">
+            <node concept="2OqwBi" id="3K9FTCmK8hu" role="2Oq$k0">
+              <node concept="37vLTw" id="3K9FTCmK8hv" role="2Oq$k0">
+                <ref role="3cqZAo" node="6KjVnJoX4FB" resolve="searchViewer" />
+              </node>
+              <node concept="liA8E" id="3K9FTCmK8hw" role="2OqNvi">
+                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3K9FTCmK8hx" role="2OqNvi">
+              <ref role="37wK5l" to="jkny:~ToolWindow.setAnchor(com.intellij.openapi.wm.ToolWindowAnchor,java.lang.Runnable)" resolve="setAnchor" />
+              <node concept="10M0yZ" id="3K9FTCmK8hy" role="37wK5m">
+                <ref role="3cqZAo" to="jkny:~ToolWindowAnchor.BOTTOM" resolve="BOTTOM" />
+                <ref role="1PxDUh" to="jkny:~ToolWindowAnchor" resolve="ToolWindowAnchor" />
+              </node>
+              <node concept="10Nm6u" id="3K9FTCmK8hz" role="37wK5m" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6KjVnJoX4FI" role="3cqZAp">
           <node concept="2OqwBi" id="6KjVnJoX4FJ" role="3clFbG">
             <node concept="37vLTw" id="6KjVnJoX4FK" role="2Oq$k0">
@@ -23245,6 +23305,26 @@
               <node concept="LR4U6" id="vqDSpa9D$z" role="2OqNvi">
                 <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3K9FTCmK1PH" role="3cqZAp">
+          <node concept="2OqwBi" id="3K9FTCmK2JG" role="3clFbG">
+            <node concept="2OqwBi" id="3K9FTCmK25W" role="2Oq$k0">
+              <node concept="37vLTw" id="3K9FTCmK1PF" role="2Oq$k0">
+                <ref role="3cqZAo" node="vqDSpa9D$t" resolve="searchViewer" />
+              </node>
+              <node concept="liA8E" id="3K9FTCmK2kn" role="2OqNvi">
+                <ref role="37wK5l" to="71xd:~BaseTool.getToolWindow()" resolve="getToolWindow" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3K9FTCmK5hp" role="2OqNvi">
+              <ref role="37wK5l" to="jkny:~ToolWindow.setAnchor(com.intellij.openapi.wm.ToolWindowAnchor,java.lang.Runnable)" resolve="setAnchor" />
+              <node concept="10M0yZ" id="3K9FTCmK6JO" role="37wK5m">
+                <ref role="3cqZAo" to="jkny:~ToolWindowAnchor.BOTTOM" resolve="BOTTOM" />
+                <ref role="1PxDUh" to="jkny:~ToolWindowAnchor" resolve="ToolWindowAnchor" />
+              </node>
+              <node concept="10Nm6u" id="3K9FTCmK725" role="37wK5m" />
             </node>
           </node>
         </node>
