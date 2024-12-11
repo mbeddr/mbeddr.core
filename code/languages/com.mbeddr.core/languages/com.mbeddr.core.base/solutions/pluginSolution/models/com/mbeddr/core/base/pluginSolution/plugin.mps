@@ -2538,8 +2538,8 @@
         <ref role="3uigEE" to="3pb2:~JBTable" resolve="JBTable" />
       </node>
       <node concept="2ShNRf" id="jpyKDg1OG2" role="33vP2m">
-        <node concept="1pGfFk" id="jpyKDg1OG3" role="2ShVmc">
-          <ref role="37wK5l" to="3pb2:~JBTable.&lt;init&gt;()" resolve="JBTable" />
+        <node concept="HV5vD" id="1gBxUY8atHJ" role="2ShVmc">
+          <ref role="HV5vE" node="1gBxUY86ZVt" resolve="SearchResultsTable" />
         </node>
       </node>
     </node>
@@ -24068,6 +24068,104 @@
     <node concept="tT9cl" id="6hfhqO7XuP4" role="2f5YQi">
       <ref role="tU$_T" node="6hfhqO7XuD$" resolve="mbeddrPlatformLanguageGroup" />
       <ref role="2f8Tey" node="6hfhqO7XuDB" resolve="mbeddrPlatformLanguageExtensions" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1gBxUY86ZVt">
+    <property role="3GE5qa" value="search" />
+    <property role="TrG5h" value="SearchResultsTable" />
+    <node concept="3Tm1VV" id="1gBxUY86ZVu" role="1B3o_S" />
+    <node concept="3uibUv" id="1gBxUY874Wo" role="1zkMxy">
+      <ref role="3uigEE" to="3pb2:~JBTable" resolve="JBTable" />
+    </node>
+    <node concept="3uibUv" id="1gBxUY87gp9" role="EKbjA">
+      <ref role="3uigEE" to="g1qu:~ComponentWithEmptyText" resolve="ComponentWithEmptyText" />
+    </node>
+    <node concept="3clFb_" id="1gBxUY87gJc" role="jymVt">
+      <property role="TrG5h" value="getEmptyText" />
+      <node concept="3Tm1VV" id="1gBxUY87gJd" role="1B3o_S" />
+      <node concept="2AHcQZ" id="1gBxUY87gJf" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="1gBxUY87gJg" role="3clF45">
+        <ref role="3uigEE" to="g1qu:~StatusText" resolve="StatusText" />
+      </node>
+      <node concept="3clFbS" id="1gBxUY87gJh" role="3clF47">
+        <node concept="3cpWs8" id="1gBxUY8aAiP" role="3cqZAp">
+          <node concept="3cpWsn" id="1gBxUY8aAiQ" role="3cpWs9">
+            <property role="TrG5h" value="text" />
+            <node concept="3uibUv" id="1gBxUY8aAiO" role="1tU5fm">
+              <ref role="3uigEE" to="g1qu:~StatusText" resolve="StatusText" />
+            </node>
+            <node concept="2ShNRf" id="1gBxUY8aAiR" role="33vP2m">
+              <node concept="YeOm9" id="1gBxUY8aAiS" role="2ShVmc">
+                <node concept="1Y3b0j" id="1gBxUY8aAiT" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <property role="373rjd" value="true" />
+                  <ref role="1Y3XeK" to="g1qu:~StatusText" resolve="StatusText" />
+                  <ref role="37wK5l" to="g1qu:~StatusText.&lt;init&gt;()" resolve="StatusText" />
+                  <node concept="3Tm1VV" id="1gBxUY8aAiU" role="1B3o_S" />
+                  <node concept="3clFb_" id="1gBxUY8aAiV" role="jymVt">
+                    <property role="TrG5h" value="isStatusVisible" />
+                    <node concept="3Tmbuc" id="1gBxUY8aAiW" role="1B3o_S" />
+                    <node concept="10P_77" id="1gBxUY8aAiX" role="3clF45" />
+                    <node concept="3clFbS" id="1gBxUY8aAiY" role="3clF47">
+                      <node concept="3clFbF" id="1gBxUY8c1gV" role="3cqZAp">
+                        <node concept="3clFbC" id="1gBxUY8crUO" role="3clFbG">
+                          <node concept="3cmrfG" id="1gBxUY8cvRd" role="3uHU7w">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                          <node concept="2OqwBi" id="1gBxUY8co1C" role="3uHU7B">
+                            <node concept="0kSF2" id="1gBxUY8cmk6" role="2Oq$k0">
+                              <node concept="3uibUv" id="1gBxUY8cmk8" role="0kSFW">
+                                <ref role="3uigEE" node="jpyKDg1OGH" resolve="ResultTableModel" />
+                              </node>
+                              <node concept="2OqwBi" id="1gBxUY8cid1" role="0kSFX">
+                                <node concept="Xjq3P" id="1gBxUY8cf3k" role="2Oq$k0">
+                                  <ref role="1HBi2w" node="1gBxUY86ZVt" resolve="SearchResultsTable" />
+                                </node>
+                                <node concept="liA8E" id="1gBxUY8clou" role="2OqNvi">
+                                  <ref role="37wK5l" to="dxuu:~JTable.getModel()" resolve="getModel" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="1gBxUY8coOt" role="2OqNvi">
+                              <ref role="37wK5l" node="5jGyeU5Xznu" resolve="getRowCount" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="1gBxUY8aAj1" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1gBxUY8aF2e" role="3cqZAp">
+          <node concept="2OqwBi" id="1gBxUY8aGtt" role="3clFbG">
+            <node concept="37vLTw" id="1gBxUY8aF2c" role="2Oq$k0">
+              <ref role="3cqZAo" node="1gBxUY8aAiQ" resolve="text" />
+            </node>
+            <node concept="liA8E" id="1gBxUY8aGWb" role="2OqNvi">
+              <ref role="37wK5l" to="g1qu:~StatusText.setText(java.lang.String)" resolve="setText" />
+              <node concept="Xl_RD" id="1gBxUY8aIcm" role="37wK5m">
+                <property role="Xl_RC" value="No results found" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1gBxUY8a54w" role="3cqZAp">
+          <node concept="37vLTw" id="1gBxUY8aAj2" role="3clFbG">
+            <ref role="3cqZAo" node="1gBxUY8aAiQ" resolve="text" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1gBxUY87gJi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
     </node>
   </node>
 </model>
