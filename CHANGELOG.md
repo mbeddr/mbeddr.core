@@ -12,6 +12,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Fixed
 
 - Updated `GeneratorFacade` helper class to support execution of genplans with Transform steps that have multiple entries (migrated from the old, deprecated languages list) which have to be executed all together in one single generation step.
+- Breaking: The language `com.mbeddr.mpsutil.httsupport` was removed. Please use `jetbrains.mps.ide.httpsupport` instead.
 
 # November 2024
 
