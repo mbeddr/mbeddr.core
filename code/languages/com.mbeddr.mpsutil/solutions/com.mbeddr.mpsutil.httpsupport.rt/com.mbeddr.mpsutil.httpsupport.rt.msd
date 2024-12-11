@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.httpsupport.rt" uuid="7f0984ac-9f5d-4001-9257-17f7d10f3fd5" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="lib/javax.servlet-api-3.1.0.jar" />
       <sourceRoot location="lib/jetty-all-9.4.8.v20171121-uber.jar" />
     </modelRoot>

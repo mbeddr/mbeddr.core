@@ -5,7 +5,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
@@ -31,8 +31,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -945,8 +945,8 @@
       <node concept="1oajcY" id="2rgL4xy7Ayf" role="1oa70y" />
       <node concept="3Tqbb2" id="2rgL4xy7_1b" role="1tU5fm" />
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRl7kL" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRl8wn" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocuFd0" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRl8wn" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.ArrowLeftDown" resolve="ArrowLeftDown" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
       </node>
@@ -1017,8 +1017,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6Nf_8jRl9$6" role="3Uehp1">
-      <node concept="10M0yZ" id="6Nf_8jRlbXb" role="3xaMm5">
+    <node concept="1GtWCo" id="1fWpbocuFd1" role="3Uehp1">
+      <node concept="10M0yZ" id="6Nf_8jRlbXb" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Diff.ArrowRight" resolve="ArrowRight" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Diff" resolve="AllIcons.Diff" />
       </node>
