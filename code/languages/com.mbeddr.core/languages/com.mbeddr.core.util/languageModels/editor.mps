@@ -36,6 +36,7 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="j4gk" ref="r:44b6f9b4-bfdb-4b99-b104-960ec485d777(com.mbeddr.core.statements.editor)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -370,6 +371,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -530,7 +532,6 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
@@ -1396,28 +1397,49 @@
                           <property role="1hAc7k" value="7P1WhNABBij/paste_action_id" />
                           <node concept="130t_S" id="2vWNQYd$laz" role="130oVf">
                             <node concept="3clFbS" id="2vWNQYd$la$" role="2VODD2">
-                              <node concept="3cpWs8" id="2vWNQYd$Tqa" role="3cqZAp">
-                                <node concept="3cpWsn" id="2vWNQYd$Tqb" role="3cpWs9">
-                                  <property role="TrG5h" value="nodeFromClipboard" />
-                                  <node concept="3uibUv" id="2vWNQYd$Tq7" role="1tU5fm">
-                                    <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                                  </node>
-                                  <node concept="2YIFZM" id="2vWNQYd$Tqc" role="33vP2m">
-                                    <ref role="37wK5l" to="dp1x:5tGs5KqKiLL" resolve="getNodeFromClipboard" />
-                                    <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
-                                    <node concept="2OqwBi" id="2vWNQYd$Tqd" role="37wK5m">
-                                      <node concept="130tyv" id="2vWNQYd$Tqe" role="2Oq$k0" />
-                                      <node concept="I4A8Y" id="2vWNQYd$Tqf" role="2OqNvi" />
+                              <node concept="3cpWs8" id="IBMfzZU0QU" role="3cqZAp">
+                                <node concept="3cpWsn" id="IBMfzZU0QV" role="3cpWs9">
+                                  <property role="TrG5h" value="nodesFromClipboard" />
+                                  <node concept="3uibUv" id="IBMfzZU0Pk" role="1tU5fm">
+                                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                                    <node concept="3uibUv" id="IBMfzZU0Pn" role="11_B2D">
+                                      <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                                     </node>
+                                  </node>
+                                  <node concept="2YIFZM" id="IBMfzZU0YH" role="33vP2m">
+                                    <ref role="37wK5l" to="dp1x:oR0qGlMF5V" resolve="getNodesFromClipboard" />
+                                    <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3clFbF" id="5SRWded_qqa" role="3cqZAp">
-                                <node concept="2OqwBi" id="5SRWded_qtt" role="3clFbG">
-                                  <node concept="130tyv" id="5SRWded_qq8" role="2Oq$k0" />
-                                  <node concept="1P9Npp" id="5SRWded_qIX" role="2OqNvi">
-                                    <node concept="37vLTw" id="5SRWded_rHk" role="1P9ThW">
-                                      <ref role="3cqZAo" node="2vWNQYd$Tqb" resolve="nodeFromClipboard" />
+                              <node concept="3clFbJ" id="IBMfzZU1tB" role="3cqZAp">
+                                <node concept="3clFbS" id="IBMfzZU1tD" role="3clFbx">
+                                  <node concept="3clFbF" id="5SRWded_qqa" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5SRWded_qtt" role="3clFbG">
+                                      <node concept="130tyv" id="5SRWded_qq8" role="2Oq$k0" />
+                                      <node concept="1P9Npp" id="5SRWded_qIX" role="2OqNvi">
+                                        <node concept="2OqwBi" id="IBMfzZUbDx" role="1P9ThW">
+                                          <node concept="37vLTw" id="5SRWded_rHk" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="IBMfzZU0QV" resolve="nodesFromClipboard" />
+                                          </node>
+                                          <node concept="liA8E" id="IBMfzZUeBG" role="2OqNvi">
+                                            <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                                            <node concept="3cmrfG" id="IBMfzZUeKO" role="37wK5m">
+                                              <property role="3cmrfH" value="0" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3fqX7Q" id="IBMfzZU9GG" role="3clFbw">
+                                  <node concept="2OqwBi" id="IBMfzZU9GI" role="3fr31v">
+                                    <node concept="37vLTw" id="IBMfzZU9GJ" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="IBMfzZU0QV" resolve="nodesFromClipboard" />
+                                    </node>
+                                    <node concept="liA8E" id="IBMfzZU9GK" role="2OqNvi">
+                                      <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                                     </node>
                                   </node>
                                 </node>

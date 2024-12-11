@@ -18,15 +18,25 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil
 
-### Feature
+### Added
 
 - A new language `com.mbeddr.mpsutil.collections` was added that adds support for a set type `nset` that use nodes as the values of the set. Equivalence of nodes is checked structurally. The hash code calculation is done for all properties and children and the first level of references. The runtime solution also contains a more general class `EquivalenceHashSet` to implement hashsets with arbitrary `equals` and `hashcode` methods.
+
+### Changes
+
+- The language `com.mbeddr.spreadsheat` was renamed to `com.mbeddr.spreadsheet`.
+
+### Removed
+
+- The language `com.mbeddr.mpsutil.projectview.favourites` was removed. Please use the MPS bookmarks manager instead: https://www.jetbrains.com/help/mps/navigating-through-the-source-code.html#use_bookmarks
+- The stub solution `org.apache.batik` were removed. Please use `de.itemis.stubs.batik` from MPS-Extensions instead.
+- The stub solution `org.xml` were removed. Please use `de.itemis.stubs.xml` from MPS-Extensions instead.
 
 # October 2024
 
 ## com.mbeddr.mpsutil
 
-### Feature
+### Added
 
 - Adds a caching mechanism for caching the retrieval of 'ILogicalChild' by 'ILogicalChildOwner'
 
@@ -46,7 +56,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.interpreter
 
-### Feature
+### Added
 
 - Added user defineable call back function when trace node is added to the trace tree
 
@@ -64,7 +74,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.checkinHandler
 
-### Feature
+### Added
 
 - A new kind of Checkin handlers (background handler) now support the interface `CommitCheck` which allows more options like running the code after the commit or in the background.
 
