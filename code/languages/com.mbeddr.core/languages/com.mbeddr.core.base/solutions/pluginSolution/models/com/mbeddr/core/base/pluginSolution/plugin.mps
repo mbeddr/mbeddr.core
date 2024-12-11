@@ -2279,7 +2279,7 @@
       </node>
     </node>
     <node concept="2XrIbr" id="2Gn1WTgMSdY" role="2XNbBy">
-      <property role="TrG5h" value="setSolution" />
+      <property role="TrG5h" value="setModule" />
       <node concept="3cqZAl" id="2Gn1WTgMSdZ" role="3clF45" />
       <node concept="3clFbS" id="2Gn1WTgMSe0" role="3clF47">
         <node concept="3clFbF" id="2Gn1WTgMSe1" role="3cqZAp">
@@ -2291,7 +2291,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2Gn1WTgMSe6" role="2OqNvi">
-              <ref role="37wK5l" node="2Gn1WTgNQ7i" resolve="setSolutionScope" />
+              <ref role="37wK5l" node="2Gn1WTgNQ7i" resolve="setModuleScope" />
               <node concept="37vLTw" id="2Gn1WTgMSe7" role="37wK5m">
                 <ref role="3cqZAo" node="2Gn1WTgMSek" resolve="s" />
               </node>
@@ -2314,14 +2314,14 @@
                         <ref role="37wK5l" to="jkny:~ToolWindow.setTitle(java.lang.String)" resolve="setTitle" />
                         <node concept="3cpWs3" id="2Gn1WTgMSee" role="37wK5m">
                           <node concept="Xl_RD" id="2Gn1WTgMSef" role="3uHU7B">
-                            <property role="Xl_RC" value="solution " />
+                            <property role="Xl_RC" value="module " />
                           </node>
                           <node concept="2OqwBi" id="2Gn1WTgPlUK" role="3uHU7w">
                             <node concept="37vLTw" id="2Gn1WTgPlO3" role="2Oq$k0">
                               <ref role="3cqZAo" node="2Gn1WTgMSek" resolve="s" />
                             </node>
                             <node concept="liA8E" id="2Gn1WTgPnEc" role="2OqNvi">
-                              <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
+                              <ref role="37wK5l" to="lui2:~SModule.getModuleName()" resolve="getModuleName" />
                             </node>
                           </node>
                         </node>
@@ -2342,9 +2342,9 @@
       </node>
       <node concept="3Tm1VV" id="2Gn1WTgMSej" role="1B3o_S" />
       <node concept="37vLTG" id="2Gn1WTgMSek" role="3clF46">
-        <property role="TrG5h" value="s" />
+        <property role="TrG5h" value="module" />
         <node concept="3uibUv" id="2Gn1WTgNGtJ" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
     </node>
@@ -3045,7 +3045,7 @@
     </node>
     <node concept="2tJIrI" id="1GW3SvfBGLw" role="jymVt" />
     <node concept="3clFb_" id="2Gn1WTgNQ7i" role="jymVt">
-      <property role="TrG5h" value="setSolutionScope" />
+      <property role="TrG5h" value="setModuleScope" />
       <node concept="3cqZAl" id="2Gn1WTgNQ7j" role="3clF45" />
       <node concept="3Tm1VV" id="2Gn1WTgNQ7k" role="1B3o_S" />
       <node concept="3clFbS" id="2Gn1WTgNQ7l" role="3clF47">
@@ -3072,9 +3072,9 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Gn1WTgNQ7Y" role="3clF46">
-        <property role="TrG5h" value="solution" />
+        <property role="TrG5h" value="module" />
         <node concept="3uibUv" id="2Gn1WTgOgJl" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
     </node>
@@ -12891,8 +12891,8 @@
   </node>
   <node concept="sE7Ow" id="2Gn1WTgS$I7">
     <property role="3GE5qa" value="search" />
-    <property role="TrG5h" value="OpenSearchActionOnSolution" />
-    <property role="2uzpH1" value="Search Solution" />
+    <property role="TrG5h" value="OpenSearchActionOnModule" />
+    <property role="2uzpH1" value="Search Module" />
     <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="2Gn1WTgS$Ia" role="1NuT2Z">
       <property role="TrG5h" value="project" />
@@ -12900,7 +12900,7 @@
       <node concept="1oajcY" id="2Gn1WTgS$Ib" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="2Gn1WTgS$Yk" role="1NuT2Z">
-      <property role="TrG5h" value="solution" />
+      <property role="TrG5h" value="module" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
       <node concept="1oajcY" id="2Gn1WTgS$Yl" role="1oa70y" />
     </node>
@@ -12964,36 +12964,12 @@
               <ref role="3cqZAo" node="2Gn1WTgS$If" resolve="searchViewer" />
             </node>
             <node concept="2XshWL" id="2Gn1WTgSDs1" role="2OqNvi">
-              <ref role="2WH_rO" node="2Gn1WTgMSdY" resolve="setSolution" />
-              <node concept="1eOMI4" id="2Gn1WTgSFiw" role="2XxRq1">
-                <node concept="10QFUN" id="2Gn1WTgSFix" role="1eOMHV">
-                  <node concept="2OqwBi" id="2Gn1WTgSFit" role="10QFUP">
-                    <node concept="2WthIp" id="2Gn1WTgSFiu" role="2Oq$k0" />
-                    <node concept="1DTwFV" id="2Gn1WTgSFiv" role="2OqNvi">
-                      <ref role="2WH_rO" node="2Gn1WTgS$Yk" resolve="solution" />
-                    </node>
-                  </node>
-                  <node concept="3uibUv" id="2Gn1WTgSFzZ" role="10QFUM">
-                    <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                  </node>
+              <ref role="2WH_rO" node="2Gn1WTgMSdY" resolve="setModule" />
+              <node concept="2OqwBi" id="2Gn1WTgSFit" role="2XxRq1">
+                <node concept="2WthIp" id="2Gn1WTgSFiu" role="2Oq$k0" />
+                <node concept="1DTwFV" id="2Gn1WTgSFiv" role="2OqNvi">
+                  <ref role="2WH_rO" node="2Gn1WTgS$Yk" resolve="solution" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2ScWuX" id="2Gn1WTgS_2H" role="tmbBb">
-      <node concept="3clFbS" id="2Gn1WTgS_2I" role="2VODD2">
-        <node concept="3clFbF" id="2Gn1WTgS_iH" role="3cqZAp">
-          <node concept="2ZW3vV" id="2Gn1WTgSCdc" role="3clFbG">
-            <node concept="3uibUv" id="2Gn1WTgSCuh" role="2ZW6by">
-              <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-            </node>
-            <node concept="2OqwBi" id="2Gn1WTgS_iB" role="2ZW6bz">
-              <node concept="2WthIp" id="2Gn1WTgS_iE" role="2Oq$k0" />
-              <node concept="1DTwFV" id="2Gn1WTgS_iG" role="2OqNvi">
-                <ref role="2WH_rO" node="2Gn1WTgS$Yk" resolve="solution" />
               </node>
             </node>
           </node>
@@ -24066,6 +24042,32 @@
       <node concept="2AHcQZ" id="vqDSpasZYd" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="6hfhqO7XuD$">
+    <property role="TrG5h" value="mbeddrPlatformLanguageGroup" />
+    <node concept="ftmFs" id="6hfhqO7XuD_" role="ftER_">
+      <node concept="2a7GMi" id="6hfhqO7XuDA" role="ftvYc" />
+      <node concept="10WQ6h" id="6hfhqO7XuDB" role="ftvYc">
+        <property role="TrG5h" value="mbeddrPlatformLanguageExtensions" />
+      </node>
+    </node>
+    <node concept="tT9cl" id="6hfhqO7XuDC" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4IKE" resolve="LanguageActions" />
+      <ref role="2f8Tey" to="tprs:1Fww89lo1oU" resolve="ex" />
+    </node>
+  </node>
+  <node concept="tC5Ba" id="6hfhqO7XuP1">
+    <property role="3GE5qa" value="search" />
+    <property role="TrG5h" value="MbeddrSearchLanguageGroup" />
+    <node concept="ftmFs" id="6hfhqO7XuP2" role="ftER_">
+      <node concept="tCFHf" id="6hfhqO7XuP3" role="ftvYc">
+        <ref role="tCJdB" node="2Gn1WTgS$I7" resolve="OpenSearchActionOnSolution" />
+      </node>
+    </node>
+    <node concept="tT9cl" id="6hfhqO7XuP4" role="2f5YQi">
+      <ref role="tU$_T" node="6hfhqO7XuD$" resolve="mbeddrPlatformLanguageGroup" />
+      <ref role="2f8Tey" node="6hfhqO7XuDB" resolve="mbeddrPlatformLanguageExtensions" />
     </node>
   </node>
 </model>
