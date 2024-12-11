@@ -61,9 +61,6 @@
   </registry>
   <node concept="1hPL24" id="3YJTqBze$Jf">
     <property role="TrG5h" value="HTTPSupport Diagram" />
-    <node concept="A2Dkr" id="3YJTqBze$K6" role="1hQaAD">
-      <property role="A2Dkp" value="com.mbeddr.mpsutil.httpsupport" />
-    </node>
     <node concept="37mRI7" id="3YJTqBze$K9" role="lGtFl">
       <node concept="37mRIm" id="3YJTqBze$Ka" role="37mRID">
         <property role="37mO49" value="e776175c-3bf6-498e-ad36-e4c7dfa5fbe9" />
@@ -90,8 +87,8 @@
         <node concept="gqqVs" id="3YJTqBze$Kz" role="37mO4d">
           <property role="gqqTZ" value="1280.0007103515625" />
           <property role="gqqTW" value="370.0" />
-          <property role="gqqTX" value="314.0" />
-          <property role="gqqTy" value="31.0" />
+          <property role="gqqTX" value="316.0" />
+          <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -100,8 +97,8 @@
         <node concept="gqqVs" id="3YJTqBze$K_" role="37mO4d">
           <property role="gqqTZ" value="836.6671328776041" />
           <property role="gqqTW" value="802.49995" />
-          <property role="gqqTX" value="234.0" />
-          <property role="gqqTy" value="31.0" />
+          <property role="gqqTX" value="236.0" />
+          <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -110,8 +107,8 @@
         <node concept="gqqVs" id="3YJTqBze$KB" role="37mO4d">
           <property role="gqqTZ" value="824.0004662109375" />
           <property role="gqqTW" value="64.0" />
-          <property role="gqqTX" value="258.0" />
-          <property role="gqqTy" value="31.0" />
+          <property role="gqqTX" value="260.0" />
+          <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -120,8 +117,8 @@
         <node concept="gqqVs" id="3YJTqBze$KD" role="37mO4d">
           <property role="gqqTZ" value="2186.0010765625" />
           <property role="gqqTW" value="519.49995" />
-          <property role="gqqTX" value="194.0" />
-          <property role="gqqTy" value="31.0" />
+          <property role="gqqTX" value="196.0" />
+          <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -130,8 +127,8 @@
         <node concept="gqqVs" id="3YJTqBze$KF" role="37mO4d">
           <property role="gqqTZ" value="2536.001320703125" />
           <property role="gqqTW" value="519.49995" />
-          <property role="gqqTX" value="306.0" />
-          <property role="gqqTy" value="31.0" />
+          <property role="gqqTX" value="308.0" />
+          <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -140,8 +137,8 @@
         <node concept="gqqVs" id="3YJTqBze$KH" role="37mO4d">
           <property role="gqqTZ" value="1822.0009544921875" />
           <property role="gqqTW" value="370.0" />
-          <property role="gqqTX" value="218.0" />
-          <property role="gqqTy" value="31.0" />
+          <property role="gqqTX" value="220.0" />
+          <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1259,9 +1256,16 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="A2Dkr" id="3YJTqBze$Ki" role="1hQaAD">
-      <property role="A2Dkp" value="com.mbeddr.mpsutil.httpsupport.rt" />
+      <node concept="37mRIm" id="6MDnqV4AOIm" role="37mRID">
+        <property role="37mO49" value="__unresolved__ModuleReference" />
+        <node concept="gqqVs" id="6MDnqV4AOIl" role="37mO4d">
+          <property role="gqqTZ" value="78.0" />
+          <property role="gqqTW" value="77.0" />
+          <property role="gqqTX" value="452.0" />
+          <property role="gqqTy" value="33.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="A2Dkr" id="3YJTqBze$Kj" role="1hQaAD">
       <property role="A2Dkp" value="jetbrains.mps.baseLanguage.collections" />
