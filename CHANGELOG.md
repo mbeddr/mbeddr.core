@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# December 2024
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+- Updated `GeneratorFacade` helper class to support execution of genplans with Transform steps that have multiple entries (migrated from the old, deprecated languages list) which have to be executed all together in one single generation step.
+- Breaking: The language `com.mbeddr.mpsutil.httsupport` was removed. Please use `jetbrains.mps.ide.httpsupport` instead.
+
 # November 2024
 
 ## com.mbeddr.mpsutil
