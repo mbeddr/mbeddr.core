@@ -3801,6 +3801,9 @@
       <ref role="tU$_T" node="goNQ8fiCdc" resolve="mbeddrPlatformModelGroup" />
       <ref role="2f8Tey" node="goNQ8fiCdf" resolve="mbeddrPlatformModelExtensions" />
     </node>
+    <node concept="tT9cl" id="14DpnPoxNW$" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:6RIKhBiOn6O" resolve="Search" />
+    </node>
   </node>
   <node concept="sE7Ow" id="2HzhasNzNK1">
     <property role="3GE5qa" value="search" />
@@ -17139,19 +17142,6 @@
       <ref role="2f8Tey" to="tprs:1bRM4HyGOKI" resolve="contents" />
     </node>
   </node>
-  <node concept="tC5Ba" id="goNQ8fiHkf">
-    <property role="3GE5qa" value="search" />
-    <property role="TrG5h" value="MbeddrSearchSolutionGroup" />
-    <node concept="ftmFs" id="goNQ8fiHkg" role="ftER_">
-      <node concept="tCFHf" id="goNQ8fiHki" role="ftvYc">
-        <ref role="tCJdB" node="2Gn1WTgS$I7" resolve="OpenSearchActionOnSolution" />
-      </node>
-    </node>
-    <node concept="tT9cl" id="goNQ8fiHkk" role="2f5YQi">
-      <ref role="tU$_T" node="goNQ8fiE3l" resolve="mbeddrPlatformSolutionGroup" />
-      <ref role="2f8Tey" node="goNQ8fiE3o" resolve="mbeddrPlatformSolutionExtensions" />
-    </node>
-  </node>
   <node concept="tC5Ba" id="goNQ8fnbtb">
     <property role="TrG5h" value="mbeddrPlatformProjectionModeGroup" />
     <property role="2f7twF" value="Projection" />
@@ -23125,6 +23115,9 @@
     <node concept="tT9cl" id="6KjVnJoTXb3" role="2f5YQi">
       <ref role="tU$_T" node="6KjVnJoXyer" resolve="mbeddrPlatformProjectGroup" />
     </node>
+    <node concept="tT9cl" id="14DpnPoxNWK" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:6RIKhBiOn6O" resolve="Search" />
+    </node>
   </node>
   <node concept="sE7Ow" id="6KjVnJoX4Fv">
     <property role="3GE5qa" value="search" />
@@ -23251,6 +23244,9 @@
     </node>
     <node concept="tT9cl" id="vqDSpa73XA" role="2f5YQi">
       <ref role="tU$_T" node="6KjVnJoXyer" resolve="mbeddrPlatformProjectGroup" />
+    </node>
+    <node concept="tT9cl" id="14DpnPoxNWH" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:6RIKhBiOn6O" resolve="Search" />
     </node>
   </node>
   <node concept="sE7Ow" id="vqDSpa9D$n">
@@ -24059,7 +24055,7 @@
   </node>
   <node concept="tC5Ba" id="6hfhqO7XuP1">
     <property role="3GE5qa" value="search" />
-    <property role="TrG5h" value="MbeddrSearchLanguageGroup" />
+    <property role="TrG5h" value="MbeddrSearchModuleGroup" />
     <node concept="ftmFs" id="6hfhqO7XuP2" role="ftER_">
       <node concept="tCFHf" id="6hfhqO7XuP3" role="ftvYc">
         <ref role="tCJdB" node="2Gn1WTgS$I7" resolve="OpenSearchActionOnSolution" />
@@ -24068,6 +24064,13 @@
     <node concept="tT9cl" id="6hfhqO7XuP4" role="2f5YQi">
       <ref role="tU$_T" node="6hfhqO7XuD$" resolve="mbeddrPlatformLanguageGroup" />
       <ref role="2f8Tey" node="6hfhqO7XuDB" resolve="mbeddrPlatformLanguageExtensions" />
+    </node>
+    <node concept="tT9cl" id="14DpnPozEhd" role="2f5YQi">
+      <ref role="tU$_T" node="goNQ8fiE3l" resolve="mbeddrPlatformSolutionGroup" />
+      <ref role="2f8Tey" node="goNQ8fiE3o" resolve="mbeddrPlatformSolutionExtensions" />
+    </node>
+    <node concept="tT9cl" id="14DpnPoxNWJ" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:6RIKhBiOn6O" resolve="Search" />
     </node>
   </node>
   <node concept="312cEu" id="1gBxUY86ZVt">
