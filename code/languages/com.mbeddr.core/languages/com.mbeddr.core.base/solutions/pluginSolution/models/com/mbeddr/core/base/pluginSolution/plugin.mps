@@ -194,6 +194,7 @@
       <concept id="1214307303872" name="jetbrains.mps.lang.plugin.structure.GetComponentBlock" flags="in" index="2UmK3q" />
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
+        <property id="43535111852086466" name="isAvailableOnStartup" index="tEvSQ" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
         <child id="8096638938275469615" name="toolDisposeBlock" index="uR5co" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
@@ -2107,6 +2108,7 @@
     <property role="TrG5h" value="MbeddrSearchViewer" />
     <property role="2XNbzY" value="Search" />
     <property role="3GE5qa" value="search" />
+    <property role="tEvSQ" value="true" />
     <node concept="2XrIbr" id="vqDSpa77ZY" role="2XNbBy">
       <property role="TrG5h" value="setGlobal" />
       <node concept="3cqZAl" id="vqDSpa77ZZ" role="3clF45" />
@@ -2388,6 +2390,14 @@
                 </node>
                 <node concept="2WthIp" id="2HzhasNzNEb" role="37wK5m" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1k90KlDplPc" role="3cqZAp">
+          <node concept="2OqwBi" id="1k90KlDpm7K" role="3clFbG">
+            <node concept="2WthIp" id="1k90KlDplPa" role="2Oq$k0" />
+            <node concept="2XshWL" id="1k90KlDpmo1" role="2OqNvi">
+              <ref role="2WH_rO" node="6KjVnJoXq9s" resolve="setProject" />
             </node>
           </node>
         </node>
