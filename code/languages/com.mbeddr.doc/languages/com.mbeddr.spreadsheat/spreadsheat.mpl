@@ -51,6 +51,13 @@
       <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
       <library location="${module}/lib/xmlbeans-4.0.0.jar" />
       <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
+      <library location="${module}/lib/commons-codec-1.10.jar" />
+      <library location="${module}/lib/commons-collections4-4.1.jar" />
+      <library location="${module}/lib/curvesapi-1.04.jar" />
+      <library location="${module}/lib/poi-5.0.0.jar" />
+      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
+      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
+      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
     </facet>
   </facets>
   <accessoryModels />
