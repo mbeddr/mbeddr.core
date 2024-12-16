@@ -15168,11 +15168,6 @@
             <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6lcdwS9PGDu" role="3bR37C">
-          <node concept="3bR9La" id="6lcdwS9PGDv" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:HHlBn9$wJ2" resolve="org.jdom" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3AVU87RT5z6" role="3bR37C">
           <node concept="3bR9La" id="3AVU87RT5z7" role="1SiIV1">
             <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />

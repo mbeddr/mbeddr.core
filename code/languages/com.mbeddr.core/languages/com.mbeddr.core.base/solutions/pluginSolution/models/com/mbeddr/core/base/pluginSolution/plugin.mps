@@ -107,17 +107,16 @@
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
-    <import index="sud2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui.table(MPS.IDEA/)" />
     <import index="qqrq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.ui.components(MPS.ThirdParty/)" />
     <import index="3pb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.table(MPS.IDEA/)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
-    <import index="82te" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.util(MPS.Platform/)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="mte5" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.findusages.model.scopes(MPS.Platform/)" />
     <import index="mte6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.ide.findusages.model.scopes(MPS.Core/)" />
-    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2695,110 +2694,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="55oOaAFhIuI" role="3cqZAp">
-          <node concept="2OqwBi" id="55oOaAFhOUo" role="3clFbG">
-            <node concept="37vLTw" id="55oOaAFhIuG" role="2Oq$k0">
-              <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
-            </node>
-            <node concept="liA8E" id="55oOaAFhV11" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setInputVerifier(javax.swing.InputVerifier)" resolve="setInputVerifier" />
-              <node concept="2ShNRf" id="55oOaAFi5fI" role="37wK5m">
-                <node concept="YeOm9" id="55oOaAFidqA" role="2ShVmc">
-                  <node concept="1Y3b0j" id="55oOaAFidqD" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <property role="373rjd" value="true" />
-                    <ref role="1Y3XeK" to="dxuu:~InputVerifier" resolve="InputVerifier" />
-                    <ref role="37wK5l" to="dxuu:~InputVerifier.&lt;init&gt;()" resolve="InputVerifier" />
-                    <node concept="3Tm1VV" id="55oOaAFidqE" role="1B3o_S" />
-                    <node concept="3clFb_" id="55oOaAFidqQ" role="jymVt">
-                      <property role="TrG5h" value="verify" />
-                      <node concept="3Tm1VV" id="55oOaAFidqR" role="1B3o_S" />
-                      <node concept="10P_77" id="55oOaAFidqT" role="3clF45" />
-                      <node concept="37vLTG" id="55oOaAFidqU" role="3clF46">
-                        <property role="TrG5h" value="comp" />
-                        <node concept="3uibUv" id="55oOaAFidqV" role="1tU5fm">
-                          <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="55oOaAFidqW" role="3clF47">
-                        <node concept="3clFbJ" id="55oOaAFiZqB" role="3cqZAp">
-                          <node concept="37vLTw" id="55oOaAFjlAq" role="3clFbw">
-                            <ref role="3cqZAo" node="55oOaAFcfOp" resolve="matchRegex" />
-                          </node>
-                          <node concept="3clFbS" id="55oOaAFiZqD" role="3clFbx">
-                            <node concept="3J1_TO" id="55oOaAFl8Gd" role="3cqZAp">
-                              <node concept="3uVAMA" id="55oOaAFleLo" role="1zxBo5">
-                                <node concept="XOnhg" id="55oOaAFleLp" role="1zc67B">
-                                  <property role="TrG5h" value="ex" />
-                                  <node concept="nSUau" id="55oOaAFleLq" role="1tU5fm">
-                                    <node concept="3uibUv" id="55oOaAFliyX" role="nSUat">
-                                      <ref role="3uigEE" to="ni5j:~PatternSyntaxException" resolve="PatternSyntaxException" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbS" id="55oOaAFleLr" role="1zc67A">
-                                  <node concept="3cpWs6" id="55oOaAFlxpo" role="3cqZAp">
-                                    <node concept="3clFbT" id="55oOaAFlCKI" role="3cqZAk" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3clFbS" id="55oOaAFl8Ge" role="1zxBo7">
-                                <node concept="3cpWs8" id="55oOaAFkbZd" role="3cqZAp">
-                                  <node concept="3cpWsn" id="55oOaAFkbZe" role="3cpWs9">
-                                    <property role="TrG5h" value="pattern" />
-                                    <node concept="3uibUv" id="55oOaAFkbZf" role="1tU5fm">
-                                      <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
-                                    </node>
-                                    <node concept="2YIFZM" id="55oOaAFkqlG" role="33vP2m">
-                                      <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
-                                      <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
-                                      <node concept="2OqwBi" id="55oOaAFky$Y" role="37wK5m">
-                                        <node concept="37vLTw" id="55oOaAFkuVX" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
-                                        </node>
-                                        <node concept="liA8E" id="55oOaAFkWV4" role="2OqNvi">
-                                          <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="RRSsy" id="55oOaAFmg4v" role="3cqZAp">
-                                  <node concept="3cpWs3" id="55oOaAFmwJP" role="RRSoy">
-                                    <node concept="37vLTw" id="55oOaAFm_y3" role="3uHU7w">
-                                      <ref role="3cqZAo" node="55oOaAFkbZe" resolve="pattern" />
-                                    </node>
-                                    <node concept="Xl_RD" id="55oOaAFmg4x" role="3uHU7B">
-                                      <property role="Xl_RC" value="Verifying search regex:" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3cpWs6" id="55oOaAFlZcD" role="3cqZAp">
-                                  <node concept="3clFbT" id="55oOaAFm4wu" role="3cqZAk">
-                                    <property role="3clFbU" value="true" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbH" id="55oOaAFj2Eu" role="3cqZAp" />
-                        <node concept="3cpWs6" id="55oOaAFjbK3" role="3cqZAp">
-                          <node concept="3clFbT" id="55oOaAFjh2L" role="3cqZAk">
-                            <property role="3clFbU" value="true" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2AHcQZ" id="55oOaAFidqY" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="jpyKDg2tHv" role="3cqZAp">
           <node concept="2OqwBi" id="jpyKDg2tHP" role="3clFbG">
             <node concept="37vLTw" id="jpyKDg2tHw" role="2Oq$k0">
@@ -2869,7 +2764,217 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2HzhasNzWSO" role="3cqZAp" />
+        <node concept="3clFbF" id="2Ltn1$mq2xj" role="3cqZAp">
+          <node concept="2OqwBi" id="2Ltn1$mFUG1" role="3clFbG">
+            <node concept="2OqwBi" id="2Ltn1$mqSLr" role="2Oq$k0">
+              <node concept="2ShNRf" id="2Ltn1$mq2xf" role="2Oq$k0">
+                <node concept="1pGfFk" id="2Ltn1$mqebe" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="jkm4:~ComponentValidator.&lt;init&gt;(com.intellij.openapi.Disposable)" resolve="ComponentValidator" />
+                  <node concept="2YIFZM" id="2Ltn1$mqJuW" role="37wK5m">
+                    <ref role="37wK5l" to="zn9m:~Disposer.newDisposable()" resolve="newDisposable" />
+                    <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="2Ltn1$mqYy9" role="2OqNvi">
+                <ref role="37wK5l" to="jkm4:~ComponentValidator.withValidator(java.util.function.Supplier)" resolve="withValidator" />
+                <node concept="2ShNRf" id="2Ltn1$mx2ft" role="37wK5m">
+                  <node concept="YeOm9" id="2Ltn1$mxzAI" role="2ShVmc">
+                    <node concept="1Y3b0j" id="2Ltn1$mxzAL" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <property role="373rjd" value="true" />
+                      <ref role="1Y3XeK" to="82uw:~Supplier" resolve="Supplier" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                      <node concept="3Tm1VV" id="2Ltn1$mxzAM" role="1B3o_S" />
+                      <node concept="3clFb_" id="2Ltn1$mxzAZ" role="jymVt">
+                        <property role="TrG5h" value="get" />
+                        <node concept="3Tm1VV" id="2Ltn1$mxzB0" role="1B3o_S" />
+                        <node concept="3uibUv" id="2Ltn1$mxzBd" role="3clF45">
+                          <ref role="3uigEE" to="jkm4:~ValidationInfo" resolve="ValidationInfo" />
+                        </node>
+                        <node concept="3clFbS" id="2Ltn1$mxzB3" role="3clF47">
+                          <node concept="3clFbJ" id="55oOaAFiZqB" role="3cqZAp">
+                            <node concept="37vLTw" id="55oOaAFjlAq" role="3clFbw">
+                              <ref role="3cqZAo" node="55oOaAFcfOp" resolve="matchRegex" />
+                            </node>
+                            <node concept="3clFbS" id="55oOaAFiZqD" role="3clFbx">
+                              <node concept="3J1_TO" id="55oOaAFl8Gd" role="3cqZAp">
+                                <node concept="3uVAMA" id="55oOaAFleLo" role="1zxBo5">
+                                  <node concept="XOnhg" id="55oOaAFleLp" role="1zc67B">
+                                    <property role="TrG5h" value="ex" />
+                                    <node concept="nSUau" id="55oOaAFleLq" role="1tU5fm">
+                                      <node concept="3uibUv" id="55oOaAFliyX" role="nSUat">
+                                        <ref role="3uigEE" to="ni5j:~PatternSyntaxException" resolve="PatternSyntaxException" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbS" id="55oOaAFleLr" role="1zc67A">
+                                    <node concept="3cpWs6" id="2Ltn1$mrI3v" role="3cqZAp">
+                                      <node concept="2ShNRf" id="2Ltn1$mrX61" role="3cqZAk">
+                                        <node concept="1pGfFk" id="2Ltn1$msdbb" role="2ShVmc">
+                                          <property role="373rjd" value="true" />
+                                          <ref role="37wK5l" to="jkm4:~ValidationInfo.&lt;init&gt;(java.lang.String,javax.swing.JComponent)" resolve="ValidationInfo" />
+                                          <node concept="3cpWs3" id="2Ltn1$mssj1" role="37wK5m">
+                                            <node concept="2OqwBi" id="2Ltn1$msAjw" role="3uHU7w">
+                                              <node concept="37vLTw" id="2Ltn1$mszvp" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="55oOaAFleLp" resolve="ex" />
+                                              </node>
+                                              <node concept="liA8E" id="2Ltn1$msEHm" role="2OqNvi">
+                                                <ref role="37wK5l" to="ni5j:~PatternSyntaxException.getMessage()" resolve="getMessage" />
+                                              </node>
+                                            </node>
+                                            <node concept="Xl_RD" id="2Ltn1$msk2M" role="3uHU7B">
+                                              <property role="Xl_RC" value="Invalid regular expression:" />
+                                            </node>
+                                          </node>
+                                          <node concept="37vLTw" id="2Ltn1$msXyc" role="37wK5m">
+                                            <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbS" id="55oOaAFl8Ge" role="1zxBo7">
+                                  <node concept="3cpWs8" id="55oOaAFkbZd" role="3cqZAp">
+                                    <node concept="3cpWsn" id="55oOaAFkbZe" role="3cpWs9">
+                                      <property role="TrG5h" value="pattern" />
+                                      <node concept="3uibUv" id="55oOaAFkbZf" role="1tU5fm">
+                                        <ref role="3uigEE" to="ni5j:~Pattern" resolve="Pattern" />
+                                      </node>
+                                      <node concept="2YIFZM" id="55oOaAFkqlG" role="33vP2m">
+                                        <ref role="37wK5l" to="ni5j:~Pattern.compile(java.lang.String)" resolve="compile" />
+                                        <ref role="1Pybhc" to="ni5j:~Pattern" resolve="Pattern" />
+                                        <node concept="2OqwBi" id="55oOaAFky$Y" role="37wK5m">
+                                          <node concept="37vLTw" id="55oOaAFkuVX" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
+                                          </node>
+                                          <node concept="liA8E" id="55oOaAFkWV4" role="2OqNvi">
+                                            <ref role="37wK5l" to="r791:~JTextComponent.getText()" resolve="getText" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="RRSsy" id="2Ltn1$mBOrv" role="3cqZAp">
+                                    <node concept="3cpWs3" id="2Ltn1$mC4Rc" role="RRSoy">
+                                      <node concept="37vLTw" id="2Ltn1$mC6Er" role="3uHU7w">
+                                        <ref role="3cqZAo" node="55oOaAFkbZe" resolve="pattern" />
+                                      </node>
+                                      <node concept="Xl_RD" id="2Ltn1$mBOrx" role="3uHU7B">
+                                        <property role="Xl_RC" value="Validating pattern:" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3cpWs6" id="55oOaAFlZcD" role="3cqZAp">
+                                    <node concept="10Nm6u" id="2Ltn1$mry7q" role="3cqZAk" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3cpWs6" id="2Ltn1$mz8aq" role="3cqZAp">
+                            <node concept="10Nm6u" id="2Ltn1$mzewM" role="3cqZAk" />
+                          </node>
+                        </node>
+                        <node concept="2AHcQZ" id="2Ltn1$mxzB5" role="2AJF6D">
+                          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                        </node>
+                      </node>
+                      <node concept="3uibUv" id="2Ltn1$mxzBc" role="2Ghqu4">
+                        <ref role="3uigEE" to="jkm4:~ValidationInfo" resolve="ValidationInfo" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="2Ltn1$mFZZC" role="2OqNvi">
+              <ref role="37wK5l" to="jkm4:~ComponentValidator.installOn(javax.swing.JComponent)" resolve="installOn" />
+              <node concept="37vLTw" id="2Ltn1$mGaqq" role="37wK5m">
+                <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ltn1$mtaE1" role="3cqZAp">
+          <node concept="2OqwBi" id="2Ltn1$mtr$A" role="3clFbG">
+            <node concept="2OqwBi" id="2Ltn1$mteUy" role="2Oq$k0">
+              <node concept="37vLTw" id="2Ltn1$mtaDZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
+              </node>
+              <node concept="liA8E" id="2Ltn1$mtjyR" role="2OqNvi">
+                <ref role="37wK5l" to="r791:~JTextComponent.getDocument()" resolve="getDocument" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2Ltn1$mttiZ" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~Document.addDocumentListener(javax.swing.event.DocumentListener)" resolve="addDocumentListener" />
+              <node concept="2ShNRf" id="2Ltn1$mtxbB" role="37wK5m">
+                <node concept="YeOm9" id="2Ltn1$mtCEF" role="2ShVmc">
+                  <node concept="1Y3b0j" id="2Ltn1$mtCEI" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <ref role="1Y3XeK" to="lzb2:~DocumentAdapter" resolve="DocumentAdapter" />
+                    <ref role="37wK5l" to="lzb2:~DocumentAdapter.&lt;init&gt;()" resolve="DocumentAdapter" />
+                    <node concept="3Tm1VV" id="2Ltn1$mtCEJ" role="1B3o_S" />
+                    <node concept="3clFb_" id="2Ltn1$mtCEX" role="jymVt">
+                      <property role="TrG5h" value="textChanged" />
+                      <node concept="3Tmbuc" id="2Ltn1$mtCEY" role="1B3o_S" />
+                      <node concept="3cqZAl" id="2Ltn1$mtCF0" role="3clF45" />
+                      <node concept="37vLTG" id="2Ltn1$mtCF1" role="3clF46">
+                        <property role="TrG5h" value="e" />
+                        <node concept="3uibUv" id="2Ltn1$mtCF2" role="1tU5fm">
+                          <ref role="3uigEE" to="gsia:~DocumentEvent" resolve="DocumentEvent" />
+                        </node>
+                        <node concept="2AHcQZ" id="2Ltn1$mtCF3" role="2AJF6D">
+                          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="2Ltn1$mtCF4" role="3clF47">
+                        <node concept="3clFbF" id="2Ltn1$mtNL$" role="3cqZAp">
+                          <node concept="2OqwBi" id="2Ltn1$mu2Gh" role="3clFbG">
+                            <node concept="2YIFZM" id="2Ltn1$mtP6T" role="2Oq$k0">
+                              <ref role="37wK5l" to="jkm4:~ComponentValidator.getInstance(javax.swing.JComponent)" resolve="getInstance" />
+                              <ref role="1Pybhc" to="jkm4:~ComponentValidator" resolve="ComponentValidator" />
+                              <node concept="37vLTw" id="2Ltn1$mtWZZ" role="37wK5m">
+                                <ref role="3cqZAo" node="jpyKDg1Mqe" resolve="searchTerm" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2Ltn1$muaEz" role="2OqNvi">
+                              <ref role="37wK5l" to="33ny:~Optional.ifPresent(java.util.function.Consumer)" resolve="ifPresent" />
+                              <node concept="1bVj0M" id="2Ltn1$muj1D" role="37wK5m">
+                                <node concept="gl6BB" id="2Ltn1$muj1N" role="1bW2Oz">
+                                  <property role="TrG5h" value="v" />
+                                  <node concept="2jxLKc" id="2Ltn1$muj1O" role="1tU5fm" />
+                                </node>
+                                <node concept="3clFbS" id="2Ltn1$muj5J" role="1bW5cS">
+                                  <node concept="3clFbF" id="2Ltn1$muppO" role="3cqZAp">
+                                    <node concept="2OqwBi" id="2Ltn1$mupLh" role="3clFbG">
+                                      <node concept="37vLTw" id="2Ltn1$muppN" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2Ltn1$muj1N" resolve="v" />
+                                      </node>
+                                      <node concept="liA8E" id="2Ltn1$muqZ_" role="2OqNvi">
+                                        <ref role="37wK5l" to="jkm4:~ComponentValidator.revalidate()" resolve="revalidate" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2AHcQZ" id="2Ltn1$mtCF6" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6KjVnJoO74C" role="3cqZAp">
           <node concept="2OqwBi" id="6KjVnJoOcnA" role="3clFbG">
             <node concept="37vLTw" id="6KjVnJoO74A" role="2Oq$k0">
