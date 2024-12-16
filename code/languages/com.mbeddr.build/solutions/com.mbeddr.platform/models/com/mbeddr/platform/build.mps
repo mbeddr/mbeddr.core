@@ -15427,6 +15427,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="55oOaAG4FTH" role="3bR37C">
+          <node concept="3bR9La" id="55oOaAG4FTI" role="1SiIV1">
+            <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Nsh5Tc2mTg" role="3989C9">
