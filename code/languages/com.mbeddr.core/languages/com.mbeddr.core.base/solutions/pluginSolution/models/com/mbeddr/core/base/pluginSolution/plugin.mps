@@ -17141,7 +17141,7 @@
     </node>
     <node concept="tT9cl" id="goNQ8fiCdg" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
-      <ref role="2f8Tey" to="tprs:2blMBvV$tE0" resolve="showHelp" />
+      <ref role="2f8Tey" to="tprs:Ymhd0bfr94" resolve="modelUsages" />
     </node>
   </node>
   <node concept="tC5Ba" id="goNQ8fiE3l">
@@ -17154,7 +17154,7 @@
     </node>
     <node concept="tT9cl" id="goNQ8fiE3p" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Jd1" resolve="SolutionActions" />
-      <ref role="2f8Tey" to="tprs:1bRM4HyGOKI" resolve="contents" />
+      <ref role="2f8Tey" to="tprs:6gJrPYfWcoC" resolve="find_usages" />
     </node>
   </node>
   <node concept="tC5Ba" id="goNQ8fnbtb">
@@ -23981,7 +23981,7 @@
     </node>
     <node concept="tT9cl" id="6hfhqO7XuDC" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4IKE" resolve="LanguageActions" />
-      <ref role="2f8Tey" to="tprs:1Fww89lo1oU" resolve="ex" />
+      <ref role="2f8Tey" to="tprs:i0Y3C8d" resolve="find_usages" />
     </node>
   </node>
   <node concept="tC5Ba" id="6hfhqO7XuP1">
