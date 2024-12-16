@@ -4901,8 +4901,8 @@
                                               </node>
                                               <node concept="2qgKlT" id="7DRyZmEC7tF" role="2OqNvi">
                                                 <ref role="37wK5l" to="hwgx:jpyKDg1onB" resolve="containsText" />
-                                                <node concept="37vLTw" id="7DRyZmEC7tG" role="37wK5m">
-                                                  <ref role="3cqZAo" node="vqDSpavrgI" resolve="textToSearch" />
+                                                <node concept="37vLTw" id="55oOaAFzvQX" role="37wK5m">
+                                                  <ref role="3cqZAo" node="4Q2Vz3i$q7V" resolve="text" />
                                                 </node>
                                               </node>
                                             </node>
