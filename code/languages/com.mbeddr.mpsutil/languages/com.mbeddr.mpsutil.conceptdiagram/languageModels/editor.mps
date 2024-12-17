@@ -3959,6 +3959,32 @@
             </node>
           </node>
         </node>
+        <node concept="pkWqt" id="1FnP670bWFL" role="qiu7m">
+          <node concept="3clFbS" id="1FnP670bWFM" role="2VODD2">
+            <node concept="3clFbF" id="1FnP670c3hZ" role="3cqZAp">
+              <node concept="3fqX7Q" id="1FnP670cdNY" role="3clFbG">
+                <node concept="2OqwBi" id="1FnP670cdO0" role="3fr31v">
+                  <node concept="pncrf" id="1FnP670cdO1" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1FnP670cdO2" role="2OqNvi">
+                    <ref role="3TsBF5" to="45ke:1FnP670bD7A" resolve="dontSaveLayoutData" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="1FnP670bQ_f" role="2Dxx3A">
+          <node concept="3clFbS" id="1FnP670bQ_g" role="2VODD2">
+            <node concept="3clFbF" id="1FnP670bVSx" role="3cqZAp">
+              <node concept="2OqwBi" id="1FnP670bWvm" role="3clFbG">
+                <node concept="pncrf" id="1FnP670bWvn" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1FnP670bWvo" role="2OqNvi">
+                  <ref role="3TsBF5" to="45ke:1FnP670dN3d" resolve="autoLayoutOnInit" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3tD6jV" id="1FnP66Zec8j" role="3F10Kt">
           <ref role="3tD7wE" to="88j9:56jSwhzYNtN" resolve="diagram-layout-edge-node-spacing" />
           <node concept="3sjG9q" id="1FnP66Zec8k" role="3tD6jU">
@@ -4021,45 +4047,6 @@
                 <node concept="Rm8GO" id="1FnP66ZJH2m" role="3clFbG">
                   <ref role="Rm8GQ" to="u8j:~LayeringStrategy.COFFMAN_GRAHAM" resolve="COFFMAN_GRAHAM" />
                   <ref role="1Px2BO" to="u8j:~LayeringStrategy" resolve="LayeringStrategy" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3tD6jV" id="1FnP66ZvHP3" role="3F10Kt">
-          <ref role="3tD7wE" to="88j9:56jSwhzYiVL" resolve="diagram-layout-layered-node-placement-strategy" />
-          <node concept="3sjG9q" id="1FnP66ZvHP5" role="3tD6jU">
-            <node concept="3clFbS" id="1FnP66ZvHP7" role="2VODD2">
-              <node concept="3clFbF" id="1FnP66ZvOfN" role="3cqZAp">
-                <node concept="Rm8GO" id="1FnP66ZzBaV" role="3clFbG">
-                  <ref role="Rm8GQ" to="u8j:~NodePlacementStrategy.LINEAR_SEGMENTS" resolve="LINEAR_SEGMENTS" />
-                  <ref role="1Px2BO" to="u8j:~NodePlacementStrategy" resolve="NodePlacementStrategy" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pkWqt" id="1FnP670bWFL" role="qiu7m">
-          <node concept="3clFbS" id="1FnP670bWFM" role="2VODD2">
-            <node concept="3clFbF" id="1FnP670c3hZ" role="3cqZAp">
-              <node concept="3fqX7Q" id="1FnP670cdNY" role="3clFbG">
-                <node concept="2OqwBi" id="1FnP670cdO0" role="3fr31v">
-                  <node concept="pncrf" id="1FnP670cdO1" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1FnP670cdO2" role="2OqNvi">
-                    <ref role="3TsBF5" to="45ke:1FnP670bD7A" resolve="dontSaveLayoutData" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pkWqt" id="1FnP670bQ_f" role="2Dxx3A">
-          <node concept="3clFbS" id="1FnP670bQ_g" role="2VODD2">
-            <node concept="3clFbF" id="1FnP670bVSx" role="3cqZAp">
-              <node concept="2OqwBi" id="1FnP670bWvm" role="3clFbG">
-                <node concept="pncrf" id="1FnP670bWvn" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1FnP670bWvo" role="2OqNvi">
-                  <ref role="3TsBF5" to="45ke:1FnP670dN3d" resolve="autoLayoutOnInit" />
                 </node>
               </node>
             </node>
