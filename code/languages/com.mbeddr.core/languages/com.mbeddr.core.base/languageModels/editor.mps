@@ -5651,7 +5651,7 @@
               <node concept="1QGGSu" id="frftTuZdvm" role="1QGGTw">
                 <node concept="10M0yZ" id="frftTuZfzF" role="3xaMm5">
                   <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowUp" resolve="ArrowUp" />
-                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
                 </node>
               </node>
             </node>
@@ -5682,7 +5682,7 @@
               <node concept="1QGGSu" id="frftTv12qd" role="1QGGTw">
                 <node concept="10M0yZ" id="frftTv12OJ" role="3xaMm5">
                   <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowDown" resolve="ArrowDown" />
-                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
                 </node>
               </node>
             </node>
@@ -5713,7 +5713,7 @@
               <node concept="1QGGSu" id="frftTv13ee" role="1QGGTw">
                 <node concept="10M0yZ" id="frftTv13CL" role="3xaMm5">
                   <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowLeft" resolve="ArrowLeft" />
-                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
                 </node>
               </node>
             </node>
@@ -5744,7 +5744,7 @@
               <node concept="1QGGSu" id="frftTv142h" role="1QGGTw">
                 <node concept="10M0yZ" id="frftTv14sP" role="3xaMm5">
                   <ref role="3cqZAo" to="z2i8:~AllIcons$General.ArrowRight" resolve="ArrowRight" />
-                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
+                  <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
                 </node>
               </node>
             </node>
