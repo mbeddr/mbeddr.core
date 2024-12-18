@@ -824,6 +824,8 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
+      <concept id="1240824834947" name="jetbrains.mps.baseLanguage.collections.structure.ValueAccessOperation" flags="nn" index="3AV6Ez" />
+      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -22811,6 +22813,29 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="1TN3KbKdfey" role="3cqZAp">
+              <node concept="3cpWsn" id="1TN3KbKdfe_" role="3cpWs9">
+                <property role="TrG5h" value="modelMap" />
+                <node concept="3rvAFt" id="1TN3KbKdfes" role="1tU5fm">
+                  <node concept="3uibUv" id="1TN3KbKdgQJ" role="3rvQeY">
+                    <ref role="3uigEE" to="nkm5:27djZ8_ZBps" resolve="DiagramModel" />
+                  </node>
+                  <node concept="3uibUv" id="1TN3KbKdiA5" role="3rvSg0">
+                    <ref role="3uigEE" to="r3rm:190K99KhFiz" resolve="MyGraph" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="1TN3KbKdsK9" role="33vP2m">
+                  <node concept="3rGOSV" id="1TN3KbKdzx7" role="2ShVmc">
+                    <node concept="3uibUv" id="1TN3KbKd$Eu" role="3rHrn6">
+                      <ref role="3uigEE" to="nkm5:27djZ8_ZBps" resolve="DiagramModel" />
+                    </node>
+                    <node concept="3uibUv" id="1TN3KbKdAkV" role="3rHtpV">
+                      <ref role="3uigEE" to="r3rm:190K99KhFiz" resolve="MyGraph" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3AVU87RRLpe" role="3cqZAp">
               <node concept="2OqwBi" id="3AVU87RRMH4" role="3clFbG">
                 <node concept="2OqwBi" id="3AVU87RRLpg" role="2Oq$k0">
@@ -22863,31 +22888,22 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="26a4BNiQNhF" role="3cqZAp">
-                        <node concept="2OqwBi" id="26a4BNiQNhG" role="3clFbG">
-                          <node concept="2OqwBi" id="26a4BNiQNhH" role="2Oq$k0">
-                            <node concept="liA8E" id="26a4BNiQNhI" role="2OqNvi">
-                              <ref role="37wK5l" to="nkm5:7k8PWDQhok1" resolve="getLayouter" />
+                      <node concept="3clFbF" id="1TN3KbKeHPd" role="3cqZAp">
+                        <node concept="37vLTI" id="1TN3KbKeNGk" role="3clFbG">
+                          <node concept="2OqwBi" id="1TN3KbKeRay" role="37vLTx">
+                            <node concept="37vLTw" id="1TN3KbKeOQ7" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3AVU87RRPKb" resolve="it" />
                             </node>
-                            <node concept="37vLTw" id="3AVU87RIM2s" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3AVU87RIM2o" resolve="model" />
+                            <node concept="liA8E" id="1TN3KbKeVnw" role="2OqNvi">
+                              <ref role="37wK5l" to="r3rm:4HMzb$XPdI$" resolve="getContextGraph" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="26a4BNiQNhM" role="2OqNvi">
-                            <ref role="37wK5l" to="r3rm:xqQxwstVRr" resolve="layout" />
-                            <node concept="2OqwBi" id="26a4BNiQNhN" role="37wK5m">
-                              <node concept="37vLTw" id="26a4BNiQNhO" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3AVU87RRPKb" resolve="it" />
-                              </node>
-                              <node concept="liA8E" id="26a4BNiQNhP" role="2OqNvi">
-                                <ref role="37wK5l" to="r3rm:4HMzb$XPdI$" resolve="getContextGraph" />
-                              </node>
+                          <node concept="3EllGN" id="1TN3KbKeKV_" role="37vLTJ">
+                            <node concept="37vLTw" id="1TN3KbKeM6C" role="3ElVtu">
+                              <ref role="3cqZAo" node="3AVU87RIM2o" resolve="model" />
                             </node>
-                            <node concept="2ShNRf" id="26a4BNiQNhQ" role="37wK5m">
-                              <node concept="1pGfFk" id="26a4BNiQNhR" role="2ShVmc">
-                                <property role="373rjd" value="true" />
-                                <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
-                              </node>
+                            <node concept="37vLTw" id="1TN3KbKeHPb" role="3ElQJh">
+                              <ref role="3cqZAo" node="1TN3KbKdfe_" resolve="modelMap" />
                             </node>
                           </node>
                         </node>
@@ -22896,6 +22912,46 @@
                     <node concept="gl6BB" id="3AVU87RRPKb" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
                       <node concept="2jxLKc" id="3AVU87RRPKc" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="1TN3KbKcXze" role="3cqZAp">
+              <node concept="2GrKxI" id="1TN3KbKcXzg" role="2Gsz3X">
+                <property role="TrG5h" value="entry" />
+              </node>
+              <node concept="37vLTw" id="1TN3KbKd26H" role="2GsD0m">
+                <ref role="3cqZAo" node="1TN3KbKdfe_" resolve="modelMap" />
+              </node>
+              <node concept="3clFbS" id="1TN3KbKcXzk" role="2LFqv$">
+                <node concept="3clFbF" id="26a4BNiQNhF" role="3cqZAp">
+                  <node concept="2OqwBi" id="26a4BNiQNhG" role="3clFbG">
+                    <node concept="2OqwBi" id="26a4BNiQNhH" role="2Oq$k0">
+                      <node concept="liA8E" id="26a4BNiQNhI" role="2OqNvi">
+                        <ref role="37wK5l" to="nkm5:7k8PWDQhok1" resolve="getLayouter" />
+                      </node>
+                      <node concept="2OqwBi" id="1TN3KbKe9mD" role="2Oq$k0">
+                        <node concept="2GrUjf" id="1TN3KbKe7B7" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1TN3KbKcXzg" resolve="entry" />
+                        </node>
+                        <node concept="3AY5_j" id="1TN3KbKeaR9" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="26a4BNiQNhM" role="2OqNvi">
+                      <ref role="37wK5l" to="r3rm:xqQxwstVRr" resolve="layout" />
+                      <node concept="2OqwBi" id="1TN3KbKedJQ" role="37wK5m">
+                        <node concept="2GrUjf" id="1TN3KbKd74X" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1TN3KbKcXzg" resolve="entry" />
+                        </node>
+                        <node concept="3AV6Ez" id="6E9H6NYYY7h" role="2OqNvi" />
+                      </node>
+                      <node concept="2ShNRf" id="26a4BNiQNhQ" role="37wK5m">
+                        <node concept="1pGfFk" id="26a4BNiQNhR" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="xygl:~EmptyProgressIndicator.&lt;init&gt;()" resolve="EmptyProgressIndicator" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
