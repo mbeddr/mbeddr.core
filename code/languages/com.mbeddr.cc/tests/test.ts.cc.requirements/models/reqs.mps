@@ -28,6 +28,16 @@
       <concept id="1525129109275491768" name="com.mbeddr.core.buildconfig.structure.None" flags="ng" index="ZOQlw" />
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="6386504476136472795" name="com.mbeddr.doc.structure.PathDefinition" flags="ng" index="2SbYGw">
+        <child id="2642765975824057986" name="pathPicker" index="9PVG_" />
+      </concept>
+      <concept id="6386504476136472782" name="com.mbeddr.doc.structure.DocumentConfig" flags="ng" index="2SbYGP">
+        <child id="6617418817009206267" name="defaultImagePath" index="A10yx" />
+        <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
+      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
@@ -42,6 +52,9 @@
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
     </language>
     <language id="e865cad2-7cc8-437a-951a-665bcbcb8b1a" name="com.mbeddr.cc.requirements">
       <concept id="8921256082857728250" name="com.mbeddr.cc.requirements.structure.FunctionalRequirementKind" flags="ng" index="22Mrfp" />
@@ -85,6 +98,7 @@
   </registry>
   <node concept="3fbPIq" id="7_tU7IQtgcw">
     <property role="TrG5h" value="HighLevelRequirements" />
+    <ref role="G9hjw" node="IBMf$2Rqr9" resolve="DefaultDocConfig" />
     <node concept="3fbQ3u" id="2QG2TH$1ClX" role="3fbPIo">
       <property role="TrG5h" value="Main" />
       <property role="1ylvJX" value="Program has to run from the command line" />
@@ -278,6 +292,17 @@
       <node concept="ZOQlw" id="59cfP9ua3sV" role="1kZvWc">
         <property role="TrG5h" value="none" />
       </node>
+    </node>
+  </node>
+  <node concept="2SbYGP" id="IBMf$2Rqr9">
+    <property role="TrG5h" value="DefaultDocConfig" />
+    <node concept="2SbYGw" id="IBMf$2Rqra" role="Cbewh">
+      <property role="TrG5h" value="temp" />
+      <node concept="9PVaO" id="IBMf$2Rqrb" role="9PVG_" />
+    </node>
+    <node concept="2SbYGw" id="IBMf$2Rqrc" role="A10yx">
+      <property role="TrG5h" value="img" />
+      <node concept="9PVaO" id="IBMf$2Rqrd" role="9PVG_" />
     </node>
   </node>
 </model>

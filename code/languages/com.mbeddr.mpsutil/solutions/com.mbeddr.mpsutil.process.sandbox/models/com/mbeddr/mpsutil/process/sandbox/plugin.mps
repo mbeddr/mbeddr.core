@@ -32,6 +32,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -199,7 +200,7 @@
   <node concept="2DaZZR" id="70BL6LoVzwF" />
   <node concept="sE7Ow" id="70BL6LoVzwU">
     <property role="TrG5h" value="testAction" />
-    <property role="2uzpH1" value="This is the Wizard Test" />
+    <property role="2uzpH1" value="This Is the Wizard Test" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="70BL6LoVzwV" role="tncku">
@@ -648,6 +649,7 @@
   </node>
   <node concept="tC5Ba" id="70BL6LoX56n">
     <property role="TrG5h" value="testGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="70BL6LoX56p" role="ftER_">
       <node concept="tCFHf" id="70BL6LoX56t" role="ftvYc">
         <ref role="tCJdB" node="70BL6LoVzwU" resolve="testAction" />

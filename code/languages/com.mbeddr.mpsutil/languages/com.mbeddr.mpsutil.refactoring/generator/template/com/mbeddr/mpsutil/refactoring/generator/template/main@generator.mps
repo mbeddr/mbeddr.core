@@ -30,6 +30,7 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
     <import index="1ne1" ref="r:e9a49de8-6adf-4c2e-b5c2-32fc88189c93(com.mbeddr.mpsutil.contextactions.runtime)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tp4f" ref="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" implicit="true" />
@@ -61,6 +62,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -116,6 +118,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -1500,6 +1506,7 @@
   </node>
   <node concept="tC5Ba" id="6xlxoSXd9CL">
     <property role="TrG5h" value="map_RefactoringAction2Group" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="6xlxoSXd9CS" role="2f5YQi">
       <ref role="tU$_T" to="9oh:5OJQJ_HXTB6" resolve="NodeRefactoring" />
     </node>
@@ -2639,6 +2646,7 @@
   <node concept="tC5Ba" id="7xesQBpKNxz">
     <property role="3GE5qa" value="projectionMode" />
     <property role="TrG5h" value="SingleActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="7xesQBpKNxC" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hHE20ff" resolve="AbstractFileActions" />
       <ref role="2f8Tey" to="tprs:2fRL70r1T29" resolve="idealocalhistory" />
@@ -3011,6 +3019,28 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="1URh_kuDmZm" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5UujJsmCv5k" role="jymVt" />
+    <node concept="3clFb_" id="5UujJsmCv_Y" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="5UujJsmCv_Z" role="1B3o_S" />
+      <node concept="2AHcQZ" id="5UujJsmCvA1" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="5UujJsmCvA2" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="5UujJsmCvA6" role="3clF47">
+        <node concept="3clFbF" id="5UujJsmCB_e" role="3cqZAp">
+          <node concept="Rm8GO" id="5UujJsmCC8V" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5UujJsmCvA7" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
@@ -3563,6 +3593,7 @@
   <node concept="tC5Ba" id="5_O4MwJH5rm">
     <property role="3GE5qa" value="projectionMode" />
     <property role="TrG5h" value="MultipleActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="5_O4MwJHysg" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hHE20ff" resolve="AbstractFileActions" />
       <ref role="2f8Tey" to="tprs:2fRL70r1T29" resolve="idealocalhistory" />
