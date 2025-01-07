@@ -19,7 +19,6 @@
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
         <property id="672037151186491528" name="presentation" index="1L1pqM" />
-        <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
@@ -37,20 +36,6 @@
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
-        <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
-        <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
-        <child id="6491077959632451996" name="oldEnum" index="3lCyv" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
@@ -444,36 +429,15 @@
     <property role="3GE5qa" value="config" />
     <property role="3F6X1D" value="4791118330015767247" />
     <ref role="1H5jkz" node="61XOOojGe6z" resolve="_0" />
-    <node concept="2JgGob" id="61XOOojGe6y" role="lGtFl">
-      <property role="3scbB" value="5CkWgdpp3fb/int_ordinal" />
-      <property role="3sfsH" value="5CkWgdpp0p5/by_custom_methods" />
-      <node concept="AxPO7" id="49XubMpsXFf" role="3lCyv">
-        <property role="3GE5qa" value="config" />
-        <property role="TrG5h" value="NameManglingStrategy" />
-        <property role="3lZH7k" value="hrlZj6Q/derive_from_internal_value" />
-        <property role="3F6X1D" value="4791118330015767247" />
-        <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
-        <node concept="M4N5e" id="49XubMpsXFg" role="M5hS2">
-          <property role="1uS6qo" value="use qualified names" />
-          <property role="1uS6qv" value="0" />
-        </node>
-        <node concept="M4N5e" id="49XubMpsXFh" role="M5hS2">
-          <property role="1uS6qv" value="1" />
-          <property role="1uS6qo" value="use short names where possible" />
-        </node>
-      </node>
-    </node>
     <node concept="25R33" id="61XOOojGe6z" role="25R1y">
       <property role="TrG5h" value="_0" />
       <property role="1L1pqM" value="use qualified names" />
       <property role="3tVfz5" value="4791118330015767248" />
-      <ref role="2wpffI" node="49XubMpsXFg" />
     </node>
     <node concept="25R33" id="61XOOojGe6$" role="25R1y">
       <property role="TrG5h" value="_1" />
       <property role="1L1pqM" value="use short names where possible" />
       <property role="3tVfz5" value="4791118330015767249" />
-      <ref role="2wpffI" node="49XubMpsXFh" />
     </node>
   </node>
   <node concept="1TIwiD" id="6TPUpoF_U6X">

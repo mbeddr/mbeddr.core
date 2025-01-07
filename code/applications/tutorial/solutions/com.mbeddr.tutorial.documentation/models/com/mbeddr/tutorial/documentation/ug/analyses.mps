@@ -36,7 +36,7 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
@@ -70,12 +70,7 @@
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
-      </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
-        <property id="6955693250238922835" name="text" index="3z_lpV" />
-        <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
@@ -87,7 +82,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -117,7 +112,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -694,13 +689,7 @@
                 </node>
               </node>
               <node concept="19SUe$" id="7OKLwZ_7lyZ" role="19SJt6">
-                <property role="19SUeA" value=" allows automatic checking of the robustness of several mbeddr-extensions (similar to C-code robustness checks, we can check the robustness of extensions). For example, given a state-machine, a robustness check for it ensures that all states of the state machine can be reached and all transitions can be fired. More details are provided in " />
-              </node>
-              <node concept="1_0GAv" id="7OKLwZ_7lSe" role="19SJt6">
-                <ref role="1_0GAl" node="7OKLwZ_7lMM" resolve="robustness_checks_at_mbeddr_level" />
-              </node>
-              <node concept="19SUe$" id="7OKLwZ_7lSd" role="19SJt6">
-                <property role="19SUeA" value="." />
+                <property role="19SUeA" value=" allows automatic checking of the robustness of several mbeddr-extensions (similar to C-code robustness checks, we can check the robustness of extensions)." />
               </node>
             </node>
           </node>
@@ -1313,26 +1302,6 @@
           </node>
           <node concept="2bctqb" id="7OKLwZ_aMDO" role="3SHJ_F" />
         </node>
-        <node concept="1_1sxE" id="7OKLwZ_aMHr" role="1_0VJ0" />
-        <node concept="3z_lpz" id="3JyX84yUg7T" role="1_0VJ0">
-          <property role="TrG5h" value="verification_config_robustness_item_example" />
-          <node concept="OjmMv" id="3JyX84yUg7V" role="3z_lpS">
-            <node concept="19SGf9" id="3JyX84yUg7W" role="OjmMu">
-              <node concept="19SUe$" id="3JyX84yUg7X" role="19SJt6">
-                <property role="19SUeA" value="For each configuration item the users can fine-tune which robustness properties will be checked and the entry point in the verification." />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="3JyX84yUg7Z" role="3z_lpT" />
-          <node concept="2NCZwO" id="3JyX84yUg81" role="3z_lpI">
-            <node concept="2NCMab" id="4AuO4fdzn$t" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
-            </node>
-            <node concept="2NCMab" id="3JyX84yUga3" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:3JyX84yUg6b" resolve="aRobustnessCBMCAnalysis" />
-            </node>
-          </node>
-        </node>
         <node concept="2SaynC" id="7OKLwZ_aN2R" role="1_0VJ0">
           <property role="TrG5h" value="verification_config_robustness_item_start_verification" />
           <property role="1DKIkx" value="true" />
@@ -1479,278 +1448,6 @@
           </node>
         </node>
       </node>
-      <node concept="1_0VNX" id="7OKLwZ_7lMM" role="1_0VJ0">
-        <property role="TrG5h" value="robustness_checks_at_mbeddr_level" />
-        <property role="1_0VJr" value="Robustness Checks of mbeddr-Extensions" />
-        <node concept="1_0LV8" id="3JyX84yPgxS" role="1_0VJ0">
-          <node concept="19SGf9" id="3JyX84yPgxT" role="1_0LWR">
-            <node concept="19SUe$" id="3JyX84yPgxU" role="19SJt6">
-              <property role="19SUeA" value="Higher-level language constructs carry with them higher-level properties that can be checked. For example, when programming using decision tables, we might ask ourselves if the decision table is complete (have we covered all cases?) or if it is consistent (do we have cases where multiple cells could be active at the same time?). Another example are state-machines about which we might ask ourselves if all states are reachable (i.e. we do not have superfluous states) and if all transitions can be fired (i.e. no transition is completely shadowed by previous transitions)." />
-            </node>
-          </node>
-        </node>
-        <node concept="1_0VNX" id="3JyX84yPgyl" role="1_0VJ0">
-          <property role="TrG5h" value="decision_tables" />
-          <property role="1_0VJr" value="Checking Decision Tables" />
-          <node concept="1_0LV8" id="3JyX84yPgyK" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yPgyL" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yPgyM" role="19SJt6">
-                <property role="19SUeA" value="Let's consider a decision table which implements a look-up table to compute a breaking distance given the current speed and the information whether the road is icy or not." />
-              </node>
-            </node>
-          </node>
-          <node concept="3z_lpz" id="yaVrOuyu4L" role="1_0VJ0">
-            <property role="TrG5h" value="computeBreakingDistance" />
-            <node concept="2NCZwO" id="yaVrOuyu4N" role="3z_lpI">
-              <node concept="2NCMab" id="yaVrOuyu6H" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3uoNPXnjeUv" resolve="RobustnessExtensionsExamples" />
-              </node>
-              <node concept="2NCMab" id="yaVrOuyu6Q" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3uoNPXnjeUw" resolve="computeBreakingDistance" />
-              </node>
-            </node>
-            <node concept="2bctqb" id="yaVrOuyu4R" role="3z_lpT" />
-            <node concept="OjmMv" id="yaVrOuyu4T" role="3z_lpS">
-              <node concept="19SGf9" id="yaVrOuyu4U" role="OjmMu">
-                <node concept="19SUe$" id="yaVrOuyu4V" role="19SJt6" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_0LV8" id="3JyX84yPMh$" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yPMh_" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yPMhA" role="19SJt6">
-                <property role="19SUeA" value="A decision table can be verified only if the 'checked' annotation is enabled as shown below. This flag will instruct the C-code generator to generate labels for each of the properties to be checked." />
-              </node>
-            </node>
-          </node>
-          <node concept="2SaynC" id="3JyX84yPMiq" role="1_0VJ0">
-            <property role="TrG5h" value="verification_dectab_toggle_check" />
-            <property role="1DKIkx" value="true" />
-            <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="3JyX84yPMir" role="2SbwM5">
-              <property role="2Sb_kV" value="analyses/verification_dectab_toggle_check.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-            </node>
-            <node concept="OjmMv" id="3JyX84yPMis" role="2SaI5j">
-              <node concept="19SGf9" id="3JyX84yPMit" role="OjmMu">
-                <node concept="19SUe$" id="3JyX84yPMiu" role="19SJt6">
-                  <property role="19SUeA" value="To verify a decision table one needs to make it 'checked' by using an intention." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="3JyX84yPMiv" role="3SHJ_F" />
-          </node>
-          <node concept="1_0LV8" id="3JyX84yQTPJ" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yQTPK" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yQTPL" role="19SJt6">
-                <property role="19SUeA" value="It is possible to start the verification with one click from the pop-up menu of the decision table node or through an analysis configuration as described in the case of robustness checks. The one-click start will use the " />
-              </node>
-              <node concept="1jUjqm" id="3JyX84yQTQw" role="19SJt6">
-                <node concept="19SGf9" id="3JyX84yQTQx" role="$DsGW">
-                  <node concept="19SUe$" id="3JyX84yQTQy" role="19SJt6">
-                    <property role="19SUeA" value="main" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="3JyX84yQTQv" role="19SJt6">
-                <property role="19SUeA" value=" method as entry point; in the case when analysis configurations are used then we can specify another entry point (usually a harness - see " />
-              </node>
-              <node concept="1_0GAv" id="3r65a9F9$Q6" role="19SJt6">
-                <ref role="1_0GAl" node="2aAK$SsCF5P" resolve="verification_environment" />
-              </node>
-              <node concept="19SUe$" id="3r65a9F9$Q5" role="19SJt6">
-                <property role="19SUeA" value=")." />
-              </node>
-            </node>
-          </node>
-          <node concept="2SaynC" id="3JyX84yQTR5" role="1_0VJ0">
-            <property role="TrG5h" value="verification_dectab_start_verification" />
-            <property role="1DKIkx" value="true" />
-            <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="3JyX84yQTR6" role="2SbwM5">
-              <property role="2Sb_kV" value="analyses/verification_dectab_start_verification.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-            </node>
-            <node concept="OjmMv" id="3JyX84yQTR7" role="2SaI5j">
-              <node concept="19SGf9" id="3JyX84yQTR8" role="OjmMu">
-                <node concept="19SUe$" id="3JyX84yQTR9" role="19SJt6">
-                  <property role="19SUeA" value="One-click starting of the decision table verification." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="3JyX84yQTRa" role="3SHJ_F" />
-          </node>
-          <node concept="3z_lpz" id="3JyX84yUg2H" role="1_0VJ0">
-            <property role="TrG5h" value="verification_dectab_configuration_item" />
-            <node concept="OjmMv" id="3JyX84yUg2J" role="3z_lpS">
-              <node concept="19SGf9" id="3JyX84yUg2K" role="OjmMu">
-                <node concept="19SUe$" id="3JyX84yUg2L" role="19SJt6">
-                  <property role="19SUeA" value="A configuration item for verifying a decision table." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="3JyX84yUg2N" role="3z_lpT" />
-            <node concept="2NCZwO" id="3JyX84yUg2P" role="3z_lpI">
-              <node concept="2NCMab" id="4AuO4fdzn$p" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
-              </node>
-              <node concept="2NCMab" id="3JyX84yUg4_" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84yUfVT" resolve="aDecTabCBMCAnalysis" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_0LV8" id="3JyX84yQTTe" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yQTTf" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yQTTg" role="19SJt6">
-                <property role="19SUeA" value="After the verification is finished, the results (i.e. have we missed cases?, do we have cases where two cells of the table are active at the same time?) are automatically shown. When a result fails then a trace through the system is given that shows an example of values that could cause the failure. " />
-              </node>
-            </node>
-          </node>
-          <node concept="2SaynC" id="3JyX84yQU2X" role="1_0VJ0">
-            <property role="TrG5h" value="verification_dectab_results" />
-            <property role="1DKIkx" value="true" />
-            <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="3JyX84yQU2Y" role="2SbwM5">
-              <property role="2Sb_kV" value="analyses/verification_dectab_results.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-            </node>
-            <node concept="OjmMv" id="3JyX84yQU2Z" role="2SaI5j">
-              <node concept="19SGf9" id="3JyX84yQU30" role="OjmMu">
-                <node concept="19SUe$" id="3JyX84yQU31" role="19SJt6">
-                  <property role="19SUeA" value="A trace to the failure will be shown if the verification result is selected." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="3JyX84yQU32" role="3SHJ_F" />
-          </node>
-        </node>
-        <node concept="1_1sxE" id="3JyX84yR4of" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-        <node concept="1_0VNX" id="3JyX84yR4zp" role="1_0VJ0">
-          <property role="TrG5h" value="state_machines" />
-          <property role="1_0VJr" value="Checking State Machines" />
-          <node concept="1_0LV8" id="3JyX84yUjCV" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yUjCW" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yUjCX" role="19SJt6">
-                <property role="19SUeA" value="The first step to check state-machines is to add the " />
-              </node>
-              <node concept="1jUjqm" id="3JyX84yUjIa" role="19SJt6">
-                <node concept="19SGf9" id="3JyX84yUjIb" role="$DsGW">
-                  <node concept="19SUe$" id="3JyX84yUjIc" role="19SJt6">
-                    <property role="19SUeA" value="com.mbeddr.analyses.statemachines" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="3JyX84yUjI9" role="19SJt6">
-                <property role="19SUeA" value=" devkit to the model containing the state machine. This devkit enables actions in context menus and the lifting of counterexamples such that they are aware of state-machines.\n\nLet's consider a state-machine that implements a simple counter. After the state-machine is started (with the start event), it counts up or down." />
-              </node>
-            </node>
-          </node>
-          <node concept="3z_lpU" id="3JyX84yUjCY" role="1_0VJ0">
-            <property role="3z_lpW" value="mbeddr" />
-            <property role="3z_lpV" value="statemachine Counter initial = Init {                   &#10;  in event countUp(int16 step) &lt;no binding&gt;             &#10;  in event countDown(int16 step) &lt;no binding&gt;           &#10;  in event start() &lt;no binding&gt;                         &#10;  var int16 counterState = 0                            &#10;                                                        &#10;  state Init {                                          &#10;  on start [ ] -&gt; Counting                              &#10;} state Init                                            &#10;  state Counting {                                      &#10;  on countUp [ ] -&gt; Counting { counterState += step; }  &#10;  on countUp [step &lt; 0] -&gt; Init                         &#10;  on countDown [ ] -&gt; Counting { counterState += step; }&#10;  on countDown [step &lt; 0] -&gt; Init                       &#10;} state Counting                                        &#10;}                                                       " />
-            <property role="3z_lpJ" value="false" />
-            <node concept="2NCZwO" id="3JyX84yUjHQ" role="3z_lpI">
-              <node concept="2NCMab" id="3JyX84yUjHW" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
-              </node>
-              <node concept="2NCMab" id="3JyX84yUjI4" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84ySf6B" resolve="Counter" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_1sxE" id="3JyX84yUjD2" role="1_0VJ0">
-            <property role="TrG5h" value="empty_-1" />
-          </node>
-          <node concept="1_0LV8" id="3JyX84yUjD3" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yUjD4" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yUjD5" role="19SJt6">
-                <property role="19SUeA" value="A state-machine can be verified only if the 'checked' annotation is enabled as shown below. The checked flag is enabled via an intention on the state-machine. This flag will instruct the C-code generator to generate labels for each of the properties to be checked (see " />
-              </node>
-              <node concept="1_0GAv" id="3r65a9FghWZ" role="19SJt6">
-                <ref role="1_0GAl" node="3r65a9FgiwI" resolve="behind_the_courtain" />
-              </node>
-              <node concept="19SUe$" id="3r65a9FghWY" role="19SJt6">
-                <property role="19SUeA" value="). " />
-              </node>
-            </node>
-          </node>
-          <node concept="3z_lpU" id="3JyX84yUjYD" role="1_0VJ0">
-            <property role="3z_lpW" value="mbeddr" />
-            <property role="3z_lpV" value="checked" />
-            <property role="3z_lpJ" value="false" />
-            <node concept="2NCZwO" id="3JyX84yUjYE" role="3z_lpI">
-              <node concept="2NCMab" id="3JyX84yUjYF" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84ySf5_" resolve="RobustnessStatemachinedExamples" />
-              </node>
-              <node concept="2NCMab" id="3JyX84yUp7b" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84yUp78" resolve="aStatemachineCheckAttribute" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_0LV8" id="3JyX84yUjDc" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yUjDd" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yUjDe" role="19SJt6">
-                <property role="19SUeA" value="The verification can be started either with one click from the pop-up menu of the state-machine node or through an analysis configuration. The one-click start will use the " />
-              </node>
-              <node concept="1jUjqm" id="3JyX84yUjDf" role="19SJt6">
-                <node concept="19SGf9" id="3JyX84yUjDg" role="$DsGW">
-                  <node concept="19SUe$" id="3JyX84yUjDh" role="19SJt6">
-                    <property role="19SUeA" value="main" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="3JyX84yUjDi" role="19SJt6">
-                <property role="19SUeA" value=" method as entry point and global settings for CBMC; in the case when analysis configurations are used then we can specify another entry point and fine-tune the settings." />
-              </node>
-            </node>
-          </node>
-          <node concept="3z_lpz" id="3JyX84yUjDp" role="1_0VJ0">
-            <property role="TrG5h" value="verification_statemachine_configuration_item" />
-            <node concept="OjmMv" id="3JyX84yUjDq" role="3z_lpS">
-              <node concept="19SGf9" id="3JyX84yUjDr" role="OjmMu">
-                <node concept="19SUe$" id="3JyX84yUjDs" role="19SJt6">
-                  <property role="19SUeA" value="A configuration item for verifying state-machines." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="3JyX84yUjDt" role="3z_lpT" />
-            <node concept="2NCZwO" id="3JyX84yUjDu" role="3z_lpI">
-              <node concept="2NCMab" id="4AuO4fdzn$l" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
-              </node>
-              <node concept="2NCMab" id="3JyX84yUk24" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3JyX84yUg68" resolve="aStatemachineCBMCAnalysis" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_0LV8" id="3JyX84yUjDx" role="1_0VJ0">
-            <node concept="19SGf9" id="3JyX84yUjDy" role="1_0LWR">
-              <node concept="19SUe$" id="3JyX84yUjDz" role="19SJt6">
-                <property role="19SUeA" value="After the verification is finished, the results are automatically shown - i.e. if a state cannot be reached or a transition cannot be fired then the result is marked with FAIL. Since the generated labels cannot be reached, we do not have any trace through the system. " />
-              </node>
-            </node>
-          </node>
-          <node concept="2SaynC" id="3JyX84yUjD$" role="1_0VJ0">
-            <property role="TrG5h" value="verification_statemachine_results" />
-            <property role="1DKIkx" value="true" />
-            <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="3JyX84yUjD_" role="2SbwM5">
-              <property role="2Sb_kV" value="analyses/verification_statemachine_results.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-            </node>
-            <node concept="OjmMv" id="3JyX84yUjDA" role="2SaI5j">
-              <node concept="19SGf9" id="3JyX84yUjDB" role="OjmMu">
-                <node concept="19SUe$" id="3JyX84yUjDC" role="19SJt6">
-                  <property role="19SUeA" value="Results of the state machine verification. Two transitions cannot be fired since they are shadowed by previous transitions." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="3JyX84yUjDD" role="3SHJ_F" />
-          </node>
-        </node>
-      </node>
       <node concept="1_0VNX" id="7OKLwZ_7lPw" role="1_0VJ0">
         <property role="TrG5h" value="functional_verification" />
         <property role="1_0VJr" value="Functional Verification" />
@@ -1758,109 +1455,6 @@
           <node concept="19SGf9" id="6_lULi3$LvG" role="1_0LWR">
             <node concept="19SUe$" id="6_lULi3$LvH" role="19SJt6">
               <property role="19SUeA" value="Many times we want to check properties in the code that are relevant to the business domain of our application and originate from requirements. In order to do so, we need to be able to write such properties in the code. In mbeddr one can use plain C-level assertions, extended assertions or can attach properties to higher level constructs like for example pre/post conditions to components." />
-            </node>
-          </node>
-        </node>
-        <node concept="1_0VNX" id="6_lULi3$Lw3" role="1_0VJ0">
-          <property role="TrG5h" value="verifying_assertions" />
-          <property role="1_0VJr" value="Assertions verification" />
-          <node concept="1_0LV8" id="6_lULi3$LQi" role="1_0VJ0">
-            <node concept="19SGf9" id="6_lULi3$LQj" role="1_0LWR">
-              <node concept="19SUe$" id="6_lULi3$LQk" role="19SJt6">
-                <property role="19SUeA" value="Writing assertions in C code is a 'classical' method to check properties. In the code fragment below we present a simple assertion." />
-              </node>
-            </node>
-          </node>
-          <node concept="3z_lpz" id="6_lULi3$OZp" role="1_0VJ0">
-            <property role="TrG5h" value="assertion_example" />
-            <node concept="OjmMv" id="6_lULi3$OZr" role="3z_lpS">
-              <node concept="19SGf9" id="6_lULi3$OZs" role="OjmMu">
-                <node concept="19SUe$" id="6_lULi3$OZt" role="19SJt6">
-                  <property role="19SUeA" value="We specify that the time should be positive." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="6_lULi3$OZv" role="3z_lpT" />
-            <node concept="2NCZwO" id="6_lULi3$OZx" role="3z_lpI">
-              <node concept="2NCMab" id="6_lULi3$OZT" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$M1J" resolve="Assertions" />
-              </node>
-              <node concept="2NCMab" id="6_lULi3$P01" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$NhY" resolve="speedComputer" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_0LV8" id="6nRVhifiybL" role="1_0VJ0">
-            <node concept="19SGf9" id="6nRVhifiybM" role="1_0LWR">
-              <node concept="19SUe$" id="6nRVhifiybN" role="19SJt6">
-                <property role="19SUeA" value="Many times using simple assertions to encode more complex properties that represent the evolution of the system in time (e.g. 'after Q then P', 'before Q must P') is cumbersome. As usual, mbeddr provides a set of first class language constructs that allow users to directly express such properties. By clicking on these constructs, you can find in the 'Inspector' information about how the code will be generated - basically C-level assertions wrapped in small monitors. " />
-              </node>
-            </node>
-            <node concept="1xAIan" id="6nRVhifiybO" role="1xAIax">
-              <property role="1xAIam" value="Extended assertions" />
-            </node>
-          </node>
-          <node concept="3z_lpz" id="6nRVhifiyd7" role="1_0VJ0">
-            <property role="TrG5h" value="extended_assertions_example" />
-            <property role="3z_lpJ" value="true" />
-            <node concept="OjmMv" id="6nRVhifiyd9" role="3z_lpS">
-              <node concept="19SGf9" id="6nRVhifiyda" role="OjmMu">
-                <node concept="19SUe$" id="6nRVhifiydb" role="19SJt6">
-                  <property role="19SUeA" value="Examples of extended assertions." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="6nRVhifiydd" role="3z_lpT" />
-            <node concept="2NCZwO" id="6nRVhifiydf" role="3z_lpI">
-              <node concept="2NCMab" id="6nRVhifiRUW" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$M1J" resolve="Assertions" />
-              </node>
-              <node concept="2NCMab" id="6nRVhifiRV2" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6nRVhifiH8L" resolve="computeMaximalSpeed" />
-              </node>
-            </node>
-          </node>
-          <node concept="1_0LV8" id="6_lULi3$U4T" role="1_0VJ0">
-            <node concept="19SGf9" id="6_lULi3$U4U" role="1_0LWR">
-              <node concept="19SUe$" id="6_lULi3$U4V" role="19SJt6">
-                <property role="19SUeA" value="The assertions verification can be started either with one-click from the pop-up menu of the function, or by defining an analysis configuration item. Both ways are illustrated below." />
-              </node>
-            </node>
-          </node>
-          <node concept="2SaynC" id="6_lULi3$Wl$" role="1_0VJ0">
-            <property role="TrG5h" value="verification_assertions_direct_start" />
-            <property role="1DKIkx" value="true" />
-            <property role="41Bi8" value="true" />
-            <node concept="2Sb_l4" id="6_lULi3$Wl_" role="2SbwM5">
-              <property role="2Sb_kV" value="analyses/verification_assertions_direct_start.png" />
-              <ref role="2Sb_kU" to="ntnz:2fBMM_3XZ4D" resolve="images" />
-            </node>
-            <node concept="OjmMv" id="6_lULi3$WlA" role="2SaI5j">
-              <node concept="19SGf9" id="6_lULi3$WlB" role="OjmMu">
-                <node concept="19SUe$" id="6_lULi3$WlC" role="19SJt6">
-                  <property role="19SUeA" value="One click check of all assertions that can be reached from one function." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="6_lULi3$WlD" role="3SHJ_F" />
-          </node>
-          <node concept="3z_lpz" id="6_lULi3$WOy" role="1_0VJ0">
-            <property role="TrG5h" value="assertions_analysis_config" />
-            <node concept="OjmMv" id="6_lULi3$WO$" role="3z_lpS">
-              <node concept="19SGf9" id="6_lULi3$WO_" role="OjmMu">
-                <node concept="19SUe$" id="6_lULi3$WOA" role="19SJt6">
-                  <property role="19SUeA" value="As any other analysis configuration items, assertion analysis configuration items allow mbeddr users to fine tune different verification parameters." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="6_lULi3$WOC" role="3z_lpT" />
-            <node concept="2NCZwO" id="6_lULi3$WOE" role="3z_lpI">
-              <node concept="2NCMab" id="4AuO4fdzn$h" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
-              </node>
-              <node concept="2NCMab" id="6_lULi3$WPG" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3$WOv" resolve="aAssertionsAnalysis" />
-              </node>
             </node>
           </node>
         </node>
@@ -1982,26 +1576,6 @@
             </node>
             <node concept="2bctqb" id="6_lULi3AZFY" role="3SHJ_F" />
           </node>
-          <node concept="3z_lpz" id="6_lULi3I2I5" role="1_0VJ0">
-            <property role="TrG5h" value="components_configuration_item" />
-            <property role="3z_lpJ" value="true" />
-            <node concept="OjmMv" id="6_lULi3I2I7" role="3z_lpS">
-              <node concept="19SGf9" id="6_lULi3I2I8" role="OjmMu">
-                <node concept="19SUe$" id="6_lULi3I2I9" role="19SJt6">
-                  <property role="19SUeA" value="Example of a configuration item for components analyses." />
-                </node>
-              </node>
-            </node>
-            <node concept="2bctqb" id="6_lULi3I2Ib" role="3z_lpT" />
-            <node concept="2NCZwO" id="6_lULi3I2Id" role="3z_lpI">
-              <node concept="2NCMab" id="4AuO4fdznnf" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:3sPnzfj1gkp" resolve="DemoAnalysesConfigurations" />
-              </node>
-              <node concept="2NCMab" id="6_lULi3I2Kd" role="2NCMaf">
-                <ref role="2NCMaa" to="1yl6:6_lULi3I2Fy" resolve="aComponentsCBMCAnalysis" />
-              </node>
-            </node>
-          </node>
           <node concept="1_0LV8" id="2aAK$SsAlKV" role="1_0VJ0">
             <node concept="19SGf9" id="2aAK$SsAlKW" role="1_0LWR">
               <node concept="19SUe$" id="2aAK$SsAlKX" role="19SJt6">
@@ -2029,163 +1603,6 @@
         </node>
       </node>
       <node concept="1_1sxE" id="7OKLwZ_7lK5" role="1_0VJ0" />
-      <node concept="1_0VNX" id="2aAK$SsCF5P" role="1_0VJ0">
-        <property role="TrG5h" value="verification_environment" />
-        <property role="1_0VJr" value="Defining the Environment for Verification" />
-        <node concept="1_0LV8" id="2aAK$SsCFhv" role="1_0VJ0">
-          <node concept="19SGf9" id="2aAK$SsCFhw" role="1_0LWR">
-            <node concept="19SUe$" id="2aAK$SsCFhx" role="19SJt6">
-              <property role="19SUeA" value="Most of the software modules we develop (e.g. functions, state machines, components) are included within bigger systems. Other systems, that are neighboring with our module that we verify are called the environment of the system. Most of the time, the data types of the inputs of the to-be-verified system are too permissive and in practice, the sub-system we are verifying should work under much tighter constraints." />
-            </node>
-          </node>
-        </node>
-        <node concept="3z_lpz" id="2aAK$SsCGAE" role="1_0VJ0">
-          <property role="TrG5h" value="system_under_verification" />
-          <node concept="OjmMv" id="2aAK$SsCGAG" role="3z_lpS">
-            <node concept="19SGf9" id="2aAK$SsCGAH" role="OjmMu">
-              <node concept="19SUe$" id="2aAK$SsCGAI" role="19SJt6">
-                <property role="19SUeA" value="Let's consider for example that our system under verification is a simple function that computes the speed of a car. This function takes two parameters: a distance and a time interval, both of type " />
-              </node>
-              <node concept="1jUjqm" id="2aAK$SsCGCi" role="19SJt6">
-                <node concept="19SGf9" id="2aAK$SsCGCj" role="$DsGW">
-                  <node concept="19SUe$" id="2aAK$SsCGCk" role="19SJt6">
-                    <property role="19SUeA" value="int16" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="2aAK$SsCGCh" role="19SJt6">
-                <property role="19SUeA" value=". Of course that the time interval cannot be smaller than zero; let's assume that it is smaller than 10. We can also assume that the distance cannot be bigger than 1000 and must be positive as well. " />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="2aAK$SsCGAK" role="3z_lpT" />
-          <node concept="2NCZwO" id="2aAK$SsCGAM" role="3z_lpI">
-            <node concept="2NCMab" id="2aAK$SsCGBc" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" resolve="VerificationEnvironment" />
-            </node>
-            <node concept="2NCMab" id="2aAK$SsCGBk" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCGj2" resolve="speedComputer" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_0LV8" id="2aAK$SsCJMc" role="1_0VJ0">
-          <node concept="19SGf9" id="2aAK$SsCJMd" role="1_0LWR">
-            <node concept="19SUe$" id="2aAK$SsCJMe" role="19SJt6">
-              <property role="19SUeA" value="The constraints over variables and ranges can be modeled inside " />
-            </node>
-            <node concept="1jUjqm" id="2aAK$SsCJMU" role="19SJt6">
-              <node concept="19SGf9" id="2aAK$SsCJMV" role="$DsGW">
-                <node concept="19SUe$" id="2aAK$SsCJMW" role="19SJt6">
-                  <property role="19SUeA" value="harness modules" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="2aAK$SsCJMX" role="19SJt6">
-              <property role="19SUeA" value=". Below we show an example of such a module:" />
-            </node>
-          </node>
-        </node>
-        <node concept="3z_lpz" id="2aAK$SsCJN8" role="1_0VJ0">
-          <property role="TrG5h" value="environment_definition" />
-          <property role="3z_lpJ" value="true" />
-          <node concept="OjmMv" id="2aAK$SsCJNa" role="3z_lpS">
-            <node concept="19SGf9" id="2aAK$SsCJNb" role="OjmMu">
-              <node concept="19SUe$" id="2aAK$SsCJNc" role="19SJt6">
-                <property role="19SUeA" value="The function " />
-              </node>
-              <node concept="1jUjqm" id="2aAK$SsCKuH" role="19SJt6">
-                <node concept="19SGf9" id="2aAK$SsCKuI" role="$DsGW">
-                  <node concept="19SUe$" id="2aAK$SsCKuJ" role="19SJt6">
-                    <property role="19SUeA" value="speedComputer" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="2aAK$SsCKuK" role="19SJt6">
-                <property role="19SUeA" value=" is called from within the harness definition that contains nondeterministic assignments that are further constraint (via an intention on a " />
-              </node>
-              <node concept="1jUjqm" id="2aAK$SsCKuW" role="19SJt6">
-                <node concept="19SGf9" id="2aAK$SsCKuX" role="$DsGW">
-                  <node concept="19SUe$" id="2aAK$SsCKuY" role="19SJt6">
-                    <property role="19SUeA" value="nondet assign" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="2aAK$SsCKuV" role="19SJt6">
-                <property role="19SUeA" value=") to belong to the desired intervals. In the first nondeterministic assignment we use an explicit construct to specify the interval, in the second assignment we use classical C inequalities. When we use the 'in range expression' (as opposed to explicit inequalities), then the harness is generated in an optimal manner and this increases the running efficiency of CBMC." />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="2aAK$SsCJNe" role="3z_lpT" />
-          <node concept="2NCZwO" id="2aAK$SsCJNg" role="3z_lpI">
-            <node concept="2NCMab" id="2aAK$SsCJOg" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" resolve="VerificationEnvironment" />
-            </node>
-            <node concept="2NCMab" id="2aAK$SsCJOo" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCGK6" resolve="computeSpeedEnvironment" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_0LV8" id="6nRVhifjP8W" role="1_0VJ0">
-          <node concept="19SGf9" id="6nRVhifjP8X" role="1_0LWR">
-            <node concept="19SUe$" id="6nRVhifjP8Y" role="19SJt6">
-              <property role="19SUeA" value="Furthermore, the sequence in which different operations are called can be modeled as well using the harness. For doing this, we can use the " />
-            </node>
-            <node concept="1jUjqm" id="6nRVhifjPbX" role="19SJt6">
-              <node concept="19SGf9" id="6nRVhifjPbY" role="$DsGW">
-                <node concept="19SUe$" id="6nRVhifjPbZ" role="19SJt6">
-                  <property role="19SUeA" value="nondeterministic_choice" />
-                </node>
-              </node>
-            </node>
-            <node concept="19SUe$" id="6nRVhifjPc0" role="19SJt6">
-              <property role="19SUeA" value=" construct that will choose nondeterministically one of the defined cases.\n" />
-            </node>
-          </node>
-        </node>
-        <node concept="3z_lpz" id="6nRVhifjPSp" role="1_0VJ0">
-          <property role="TrG5h" value="calls_sequence" />
-          <property role="3z_lpJ" value="true" />
-          <node concept="OjmMv" id="6nRVhifjPSq" role="3z_lpS">
-            <node concept="19SGf9" id="6nRVhifjPSr" role="OjmMu">
-              <node concept="19SUe$" id="6nRVhifjPSs" role="19SJt6">
-                <property role="19SUeA" value="We define traces with size 5 (using the for loop) and at each step either " />
-              </node>
-              <node concept="1jUjqm" id="6nRVhifjPSt" role="19SJt6">
-                <node concept="19SGf9" id="6nRVhifjPSu" role="$DsGW">
-                  <node concept="19SUe$" id="6nRVhifjPSv" role="19SJt6">
-                    <property role="19SUeA" value="fun1" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="6nRVhifjPSw" role="19SJt6">
-                <property role="19SUeA" value=" or " />
-              </node>
-              <node concept="1jUjqm" id="6nRVhifkCV4" role="19SJt6">
-                <node concept="19SGf9" id="6nRVhifkCV5" role="$DsGW">
-                  <node concept="19SUe$" id="6nRVhifkCV6" role="19SJt6">
-                    <property role="19SUeA" value="fun2" />
-                  </node>
-                </node>
-              </node>
-              <node concept="19SUe$" id="6nRVhifkCV3" role="19SJt6">
-                <property role="19SUeA" value=" are called that compute some value. We check that for 5 calls in either order to these functions, a specific property holds. In this manner we can for example model a sequence of external events, each event triggering a function where it is handled." />
-              </node>
-            </node>
-          </node>
-          <node concept="2bctqb" id="6nRVhifjPS_" role="3z_lpT" />
-          <node concept="2NCZwO" id="6nRVhifjPSA" role="3z_lpI">
-            <node concept="2NCMab" id="6nRVhifjPSB" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:2aAK$SsCFhL" resolve="VerificationEnvironment" />
-            </node>
-            <node concept="2NCMab" id="6nRVhifkC5y" role="2NCMaf">
-              <ref role="2NCMaa" to="1yl6:6nRVhifjSae" resolve="sequenceOfCalls" />
-            </node>
-          </node>
-        </node>
-        <node concept="1_1sxE" id="6nRVhifjPQ5" role="1_0VJ0">
-          <property role="TrG5h" value="empty_-1" />
-        </node>
-      </node>
     </node>
     <node concept="2f$52y" id="2GUQ_N1aXxc" role="lGtFl" />
     <node concept="1_0j5j" id="6nRVhifCg4y" role="1DXQ57">
@@ -2209,20 +1626,12 @@
           <ref role="1_0j5g" node="7OKLwZ_6QC9" resolve="B_VariabilityVerification" />
         </node>
       </node>
-      <node concept="$CzcT" id="1ig5Eljl80T" role="1_0VJ0">
-        <node concept="1_0j5j" id="hZfTLMexSD" role="$CzcU">
-          <ref role="1_0j5g" node="7OKLwZ_7fp5" resolve="C_FormalVerification" />
-        </node>
-      </node>
     </node>
     <node concept="1_0j5j" id="hZfTLMexSh" role="1DXQ57">
       <ref role="1_0j5g" node="3XWIBckDw6b" resolve="A_Introduction" />
     </node>
     <node concept="1_0j5j" id="hZfTLMexSm" role="1DXQ57">
       <ref role="1_0j5g" node="7OKLwZ_6QC9" resolve="B_VariabilityVerification" />
-    </node>
-    <node concept="1_0j5j" id="hZfTLMexSu" role="1DXQ57">
-      <ref role="1_0j5g" node="7OKLwZ_7fp5" resolve="C_FormalVerification" />
     </node>
   </node>
 </model>
