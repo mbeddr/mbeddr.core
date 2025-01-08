@@ -38,7 +38,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="urs3" ref="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
-    <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
+    <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -516,9 +516,6 @@
       <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
-      </concept>
-      <concept id="1576845966386891367" name="jetbrains.mps.baseLanguage.collections.structure.CustomMapCreator" flags="nn" index="1u7pXE">
-        <reference id="1576845966386891370" name="containerDeclaration" index="1u7pXB" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
@@ -13051,7 +13048,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="interpreterCache" />
-      <property role="3TUv4t" value="false" />
+      <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="48h5VLciYUH" role="1B3o_S" />
       <node concept="3rvAFt" id="48h5VLciZEY" role="1tU5fm">
         <node concept="17QB3L" id="48h5VLciZIl" role="3rvQeY" />
@@ -13059,14 +13056,9 @@
           <ref role="3uigEE" node="4X7QcQ36WR7" resolve="IInterpreter" />
         </node>
       </node>
-      <node concept="2ShNRf" id="48h5VLcj0tm" role="33vP2m">
-        <node concept="1u7pXE" id="48h5VLcj0s3" role="2ShVmc">
-          <ref role="1u7pXB" to="z8iw:3TJnG96iD$S" resolve="weakHashMap" />
-          <node concept="17QB3L" id="48h5VLcj0s4" role="3rHrn6" />
-          <node concept="3uibUv" id="48h5VLcj0s5" role="3rHtpV">
-            <ref role="3uigEE" node="4X7QcQ36WR7" resolve="IInterpreter" />
-          </node>
-        </node>
+      <node concept="2YIFZM" id="7MgIIhY_P7h" role="33vP2m">
+        <ref role="37wK5l" to="e8no:~ContainerUtil.createSoftValueMap()" resolve="createSoftValueMap" />
+        <ref role="1Pybhc" to="e8no:~ContainerUtil" resolve="ContainerUtil" />
       </node>
     </node>
     <node concept="2tJIrI" id="48h5VLciWra" role="jymVt" />
@@ -13181,15 +13173,14 @@
                 <ref role="3cqZAo" node="X_36FbMvQP" resolve="cacheInterpreter" />
               </node>
             </node>
-            <node concept="3fqX7Q" id="48h5VLcj450" role="3uHU7w">
-              <node concept="2OqwBi" id="48h5VLcj452" role="3fr31v">
-                <node concept="37vLTw" id="48h5VLcj453" role="2Oq$k0">
-                  <ref role="3cqZAo" node="48h5VLciZOf" resolve="interpreterCache" />
+            <node concept="3clFbC" id="1ueRhDee7Gc" role="3uHU7w">
+              <node concept="10Nm6u" id="1ueRhDeeacf" role="3uHU7w" />
+              <node concept="3EllGN" id="1ueRhDee4eN" role="3uHU7B">
+                <node concept="37vLTw" id="1ueRhDee5Ut" role="3ElVtu">
+                  <ref role="3cqZAo" node="50LzNoSyEwk" resolve="category" />
                 </node>
-                <node concept="2Nt0df" id="48h5VLcj64G" role="2OqNvi">
-                  <node concept="37vLTw" id="48h5VLcj6cb" role="38cxEo">
-                    <ref role="3cqZAo" node="50LzNoSyEwk" resolve="category" />
-                  </node>
+                <node concept="37vLTw" id="48h5VLcj453" role="3ElQJh">
+                  <ref role="3cqZAo" node="48h5VLciZOf" resolve="interpreterCache" />
                 </node>
               </node>
             </node>
