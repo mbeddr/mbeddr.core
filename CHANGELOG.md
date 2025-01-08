@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # December 2024
 
+## com.mbeddr.core.base
+
+### Changed
+
+- The mbeddr search tool was improved: It can now also search languages, the project and globally. It also got options for approximate searching with an error distance matching the case and searching by a regular expression. Nodes that should or should not be filter, can now be customized through the extension point `SearchNodeFilter`. The UI was also improved.
+
 ## com.mbeddr.mpsutil
 
 ### Fixed
