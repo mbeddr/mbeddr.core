@@ -7950,6 +7950,15 @@
           <ref role="3uigEE" to="dxuu:~JFormattedTextField" resolve="JFormattedTextField" />
         </node>
       </node>
+      <node concept="312cEg" id="6SqTcxi0kwh" role="jymVt">
+        <property role="TrG5h" value="initialForegroundColor" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm6S6" id="6SqTcxi0et7" role="1B3o_S" />
+        <node concept="3uibUv" id="6SqTcxi0j_z" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="6SqTcxi0o0G" role="jymVt" />
       <node concept="3Tm6S6" id="5yNeVI8LrsF" role="1B3o_S" />
       <node concept="3uibUv" id="5yNeVI8LrsH" role="EKbjA">
         <ref role="3uigEE" to="mnlj:~PropertyChangeListener" resolve="PropertyChangeListener" />
@@ -7976,6 +7985,24 @@
                 <node concept="Xjq3P" id="7udlxS$B3yY" role="2Oq$k0" />
                 <node concept="2OwXpG" id="7udlxS$B50O" role="2OqNvi">
                   <ref role="2Oxat5" node="7udlxS$B11j" resolve="textField" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6SqTcxi0snV" role="3cqZAp">
+            <node concept="37vLTI" id="6SqTcxi0wIK" role="3clFbG">
+              <node concept="2OqwBi" id="6SqTcxi0Bfb" role="37vLTx">
+                <node concept="37vLTw" id="6SqTcxi0$vK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7udlxS$B2vc" resolve="textField" />
+                </node>
+                <node concept="liA8E" id="6SqTcxi0Eww" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Component.getForeground()" resolve="getForeground" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6SqTcxi0tet" role="37vLTJ">
+                <node concept="Xjq3P" id="6SqTcxi0snT" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6SqTcxi0vxn" role="2OqNvi">
+                  <ref role="2Oxat5" node="6SqTcxi0kwh" resolve="initialForegroundColor" />
                 </node>
               </node>
             </node>
@@ -8009,14 +8036,8 @@
               <node concept="liA8E" id="5yNeVI8LrsX" role="2OqNvi">
                 <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color)" resolve="setForeground" />
                 <node concept="3K4zz7" id="5yNeVI8LrsY" role="37wK5m">
-                  <node concept="2OqwBi" id="1U58p5YZEMl" role="3K4E3e">
-                    <node concept="2YIFZM" id="1U58p5YZEl5" role="2Oq$k0">
-                      <ref role="1Pybhc" to="hox0:~StyleRegistry" resolve="StyleRegistry" />
-                      <ref role="37wK5l" to="hox0:~StyleRegistry.getInstance()" resolve="getInstance" />
-                    </node>
-                    <node concept="liA8E" id="1U58p5YZFot" role="2OqNvi">
-                      <ref role="37wK5l" to="hox0:~StyleRegistry.getEditorForeground()" resolve="getEditorForeground" />
-                    </node>
+                  <node concept="37vLTw" id="6SqTcxi0M_L" role="3K4E3e">
+                    <ref role="3cqZAo" node="6SqTcxi0kwh" resolve="initialForegroundColor" />
                   </node>
                   <node concept="10M0yZ" id="5yNeVI8Lrt3" role="3K4GZi">
                     <ref role="3cqZAo" to="z60i:~Color.RED" resolve="RED" />
