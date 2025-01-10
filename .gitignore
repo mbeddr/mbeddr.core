@@ -4,7 +4,7 @@
 /build/
 /artifacts/
 /scripts/
-/.gradle/
+.gradle/
 /MPS/
 /tmp/
 
