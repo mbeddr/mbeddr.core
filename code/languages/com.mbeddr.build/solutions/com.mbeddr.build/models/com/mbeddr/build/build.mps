@@ -2184,7 +2184,7 @@
         </node>
         <node concept="1SiIV0" id="1iNy2iby4hV" role="3bR37C">
           <node concept="3bR9La" id="1iNy2iby4hW" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1qokWp1VHJa" resolve="jetbrains.mps.refactoring.participant" />
+            <ref role="3bR37D" to="ffeo:JWw_zseP2h" resolve="jetbrains.mps.refactoring.participant" />
           </node>
         </node>
         <node concept="1SiIV0" id="1aL6sVX49Ca" role="3bR37C">
@@ -2249,6 +2249,11 @@
         <node concept="1SiIV0" id="Tb1Z8IqXn3" role="3bR37C">
           <node concept="3bR9La" id="Tb1Z8IqXn4" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3qkjbZn808a" resolve="jetbrains.mps.lang.constraints.rules.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5V2O$2QNhm1" role="3bR37C">
+          <node concept="3bR9La" id="5V2O$2QNhm2" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4X1d9kMCbcv" resolve="jetbrains.mps.ide.refactoring.platform" />
           </node>
         </node>
       </node>
