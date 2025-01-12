@@ -2184,7 +2184,7 @@
         </node>
         <node concept="1SiIV0" id="1iNy2iby4hV" role="3bR37C">
           <node concept="3bR9La" id="1iNy2iby4hW" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1qokWp1VHJa" resolve="jetbrains.mps.refactoring.participant" />
+            <ref role="3bR37D" to="ffeo:JWw_zseP2h" resolve="jetbrains.mps.refactoring.participant" />
           </node>
         </node>
         <node concept="1SiIV0" id="1aL6sVX49Ca" role="3bR37C">
