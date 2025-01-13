@@ -368,7 +368,7 @@
             </node>
             <node concept="10M0yZ" id="2JDrrqkHaGX" role="37vLTJ">
               <ref role="3cqZAo" to="n8tf:7TK9se3Zi4G" resolve="PRIORITY" />
-              <ref role="1PxDUh" to="n8tf:2JDrrqkF5aP" resolve="TestJsonConfig" />
+              <ref role="1PxDUh" to="n8tf:2JDrrqkF5aP" resolve="DontExportNumbersAsTextConfig" />
             </node>
           </node>
         </node>
@@ -380,7 +380,7 @@
           <node concept="37vLTI" id="2JDrrqkHKxj" role="3clFbG">
             <node concept="10M0yZ" id="2JDrrqkHKxl" role="37vLTJ">
               <ref role="3cqZAo" to="n8tf:7TK9se3Zi4G" resolve="PRIORITY" />
-              <ref role="1PxDUh" to="n8tf:2JDrrqkF5aP" resolve="TestJsonConfig" />
+              <ref role="1PxDUh" to="n8tf:2JDrrqkF5aP" resolve="DontExportNumbersAsTextConfig" />
             </node>
             <node concept="3cmrfG" id="2JDrrqkHKz2" role="37vLTx">
               <property role="3cmrfH" value="-1" />
@@ -570,7 +570,7 @@
         </node>
         <node concept="3GXo0L" id="2JDrrqjTMtH" role="3cqZAp">
           <node concept="3xONca" id="2JDrrqjTMuZ" role="3tpDZB">
-            <ref role="3xOPvv" node="2JDrrqjTMuY" resolve="parsedNode" />
+            <ref role="3xOPvv" node="2JDrrqjTMuY" resolve="expectedNode" />
           </node>
           <node concept="37vLTw" id="2JDrrqjTMyL" role="3tpDZA">
             <ref role="3cqZAo" node="2JDrrqjTMjt" resolve="parsedNode" />
@@ -663,7 +663,7 @@
           <node concept="37vLTI" id="2JDrrqkKt34" role="3clFbG">
             <node concept="10M0yZ" id="2JDrrqkKt36" role="37vLTJ">
               <ref role="3cqZAo" to="n8tf:2JDrrqkI1WG" resolve="PRIORITY" />
-              <ref role="1PxDUh" to="n8tf:2JDrrqkI1WF" resolve="DontEscapeConfig" />
+              <ref role="1PxDUh" to="n8tf:2JDrrqkI1WF" resolve="DontQuoteFieldNames" />
             </node>
             <node concept="3cmrfG" id="2JDrrqkKtt3" role="37vLTx">
               <property role="3cmrfH" value="-1" />
@@ -675,7 +675,7 @@
             <property role="Xl_RC" value="{\n  hello : \&quot;world\&quot;\n}" />
           </node>
           <node concept="37vLTw" id="2JDrrqkOUg3" role="3tpDZA">
-            <ref role="3cqZAo" node="2JDrrqkOUg0" resolve="generateText" />
+            <ref role="3cqZAo" node="2JDrrqkOUg0" resolve="output" />
           </node>
         </node>
       </node>

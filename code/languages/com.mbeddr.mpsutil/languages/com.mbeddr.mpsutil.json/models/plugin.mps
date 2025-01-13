@@ -1192,7 +1192,7 @@
   <node concept="vrV6u" id="WieAE6FJqt">
     <property role="TrG5h" value="json" />
     <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
-      <ref role="3uigEE" node="2Qbt$1tSnqh" />
+      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="JsonConfig" />
     </node>
   </node>
   <node concept="312cEu" id="2Qbt$1tSnqh">
@@ -1274,10 +1274,10 @@
           <node concept="3cpWsn" id="H70Sn$AeRf" role="3cpWs9">
             <property role="TrG5h" value="ep" />
             <node concept="Sf$Xq" id="H70Sn$AeRg" role="1tU5fm">
-              <ref role="Sf$Xr" node="WieAE6FJqt" resolve="components" />
+              <ref role="Sf$Xr" node="WieAE6FJqt" resolve="json" />
             </node>
             <node concept="2O5UvJ" id="H70Sn$AeRh" role="33vP2m">
-              <ref role="2O5UnU" node="WieAE6FJqt" resolve="components" />
+              <ref role="2O5UnU" node="WieAE6FJqt" resolve="json" />
             </node>
           </node>
         </node>
@@ -1286,7 +1286,7 @@
             <property role="TrG5h" value="sortedMappers" />
             <node concept="A3Dl8" id="H70Sn$AeRk" role="1tU5fm">
               <node concept="3uibUv" id="H70Sn$AeRl" role="A3Ik2">
-                <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="ComponentsConfig" />
+                <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="JsonConfig" />
               </node>
             </node>
             <node concept="2OqwBi" id="H70Sn$AeRm" role="33vP2m">
@@ -1360,7 +1360,7 @@
       </node>
       <node concept="3Tm1VV" id="4qv99IrBkRE" role="1B3o_S" />
       <node concept="3uibUv" id="4qv99IrBo4U" role="3clF45">
-        <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="ComponentsConfig" />
+        <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="JsonConfig" />
       </node>
     </node>
     <node concept="3Tm1VV" id="4qv99IrBkzF" role="1B3o_S" />
