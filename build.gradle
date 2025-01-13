@@ -1,18 +1,12 @@
 import de.itemis.mps.gradle.GitBasedVersioning
-import de.itemis.mps.gradle.RunAntScript
 
 
 plugins {
     id 'de.itemis.mps.gradle.common' version '1.28.+'
-    id 'download-jbr' version '1.28.+'
 }
 
 repositories {
     maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-}
-
-downloadJbr {
-    jbrVersion = '17.0.6-b653.34'
 }
 
 ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
@@ -28,10 +22,6 @@ ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mps
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
-
-afterEvaluate {
-    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
-}
 
 def hasNonEmptyProperty(property) {
     return project.hasProperty(property) && !project.getProperty(property).empty
@@ -137,8 +127,6 @@ subprojects {
         } else {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
-
-        tasks.withType(RunAntScript).configureEach(task -> { task.dependsOn(':downloadJbr') })
 
     }
  }
