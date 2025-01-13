@@ -80,6 +80,7 @@
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
+    <import index="drih" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.colors(MPS.IDEA/)" />
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="vog7" ref="r:eaa106c6-4c8f-4807-a686-9c6a09ced82c(com.mbeddr.core.make.behavior)" implicit="true" />
   </imports>
@@ -7991,12 +7992,18 @@
           </node>
           <node concept="3clFbF" id="6SqTcxi0snV" role="3cqZAp">
             <node concept="37vLTI" id="6SqTcxi0wIK" role="3clFbG">
-              <node concept="2OqwBi" id="6SqTcxi0Bfb" role="37vLTx">
-                <node concept="37vLTw" id="6SqTcxi0$vK" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7udlxS$B2vc" resolve="textField" />
+              <node concept="2OqwBi" id="63DQtI7SFVe" role="37vLTx">
+                <node concept="2OqwBi" id="63DQtI7SDGw" role="2Oq$k0">
+                  <node concept="2YIFZM" id="63DQtI7SCbo" role="2Oq$k0">
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="drih:~EditorColorsManager" resolve="EditorColorsManager" />
+                  </node>
+                  <node concept="liA8E" id="63DQtI7SEKI" role="2OqNvi">
+                    <ref role="37wK5l" to="drih:~EditorColorsManager.getGlobalScheme()" resolve="getGlobalScheme" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="6SqTcxi0Eww" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Component.getForeground()" resolve="getForeground" />
+                <node concept="liA8E" id="63DQtI7SKAM" role="2OqNvi">
+                  <ref role="37wK5l" to="drih:~EditorColorsScheme.getDefaultForeground()" resolve="getDefaultForeground" />
                 </node>
               </node>
               <node concept="2OqwBi" id="6SqTcxi0tet" role="37vLTJ">
