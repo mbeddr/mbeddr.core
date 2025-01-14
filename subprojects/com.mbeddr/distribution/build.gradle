@@ -1,19 +1,15 @@
 import de.itemis.mps.gradle.*
 
 configurations {
-    junitAnt
     mbeddr
-    jreWin
 }
 
-ext.jdkVersion = '17.0.3-b469.32'
 dependencies {
     mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
-    jreWin "com.jetbrains.jdk:jbr:${jdkVersion}:windows-x64@tgz"
 }
 
 task resolve_mbeddr() {
-    doLast { 
+    doLast {
         copy {
             from {
                     configurations.mbeddr.resolve().collect { zipTree(it) }
