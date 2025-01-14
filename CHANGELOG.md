@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# January 2025
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+- The text generator output of `com.mbeddr.mpsutil.json` was improved and escaping of special characters was implemented. The output options and JSON parsing can now also be configured through the extension point `json` in the method JsonConfig#getFactory. For more information read: https://github.com/fasterxml/jackson-core/wiki/JsonFactory-Features, https://github.com/fasterxml/jackson-core/wiki/JsonGenerator-Features and https://github.com/fasterxml/jackson-core/wiki/JsonParser-Features.
+
 # December 2024
 
 ## com.mbeddr.core.base

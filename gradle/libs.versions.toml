@@ -1,0 +1,6 @@
+[plugins]
+common = "de.itemis.mps.gradle.common:1.28.+"
+jbr-toolchain = "com.specificlanguages.jbr-toolchain:1.0.0"
+
+[libraries]
+jbr = "com.jetbrains.jdk:jbr_jcef:21.0.5-b631.8"

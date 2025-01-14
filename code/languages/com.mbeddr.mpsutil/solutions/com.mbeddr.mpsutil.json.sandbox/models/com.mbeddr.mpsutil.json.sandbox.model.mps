@@ -38,7 +38,7 @@
       <node concept="3YX88e" id="7W6mbU9gkRU" role="3YX86K">
         <property role="TrG5h" value="description" />
         <node concept="3YX86M" id="7W6mbU9gkRY" role="3YX8ah">
-          <property role="3YX86R" value="This is a json file" />
+          <property role="3YX86R" value="This &quot;hi&quot; is a json file" />
         </node>
       </node>
       <node concept="3YX88e" id="7W6mbU9gkS1" role="3YX86K">
