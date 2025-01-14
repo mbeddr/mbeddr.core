@@ -1,6 +1,7 @@
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'buildlogic.mps-conventions'
 }
 
 import de.itemis.mps.gradle.*
