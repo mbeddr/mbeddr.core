@@ -97,7 +97,9 @@ private static void configureRepositories(Project project) {
         project.publishing {
             repositories {
                 maven {
-                    url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+                    url project.mbeddrBuildNumber.endsWith('-SNAPSHOT')
+                            ? 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
+                            : 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
                     if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
                         credentials {
                             username project.getProperty('artifacts.itemis.cloud.user')
@@ -132,14 +134,13 @@ private static void configureRepositories(Project project) {
             // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
             mavenLocal()
         }
-        for (repoUrl in project.dependencyRepositories) {
-            maven {
-                url repoUrl
-                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
-                    credentials {
-                        username project.getProperty('artifacts.itemis.cloud.user')
-                        password project.getProperty('artifacts.itemis.cloud.pw')
-                    }
+        maven {
+            url 'https://artifacts.itemis.cloud/repository/maven-mps/'
+
+            if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                credentials {
+                    username project.getProperty('artifacts.itemis.cloud.user')
+                    password project.getProperty('artifacts.itemis.cloud.pw')
                 }
             }
         }
@@ -152,14 +153,6 @@ tasks.register('printVersions') {
     doLast {
         println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
         println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
-    }
-}
-
-tasks.register('printRepositories') {
-    doLast {
-        println "snapshotRepository: $snapshotRepository"
-        println "releaseRepository: $releaseRepository"
-        println "dependencyRepositories: $dependencyRepositories"
     }
 }
 
@@ -181,7 +174,8 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 tasks.register('migrate', MpsMigrate) {
     dependsOn(':com.mbeddr:platform:generate_platform_languages')
     javaLauncher = jbrToolchain.javaLauncher
-
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = false
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
 
