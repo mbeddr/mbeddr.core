@@ -1,14 +1,8 @@
 import de.itemis.mps.gradle.GitBasedVersioning
-import de.itemis.mps.gradle.RunAntScript
 
 
 plugins {
     id 'de.itemis.mps.gradle.common' version '1.28.+'
-    id 'download-jbr' version '1.28.+'
-}
-
-downloadJbr {
-    jbrVersion = '21.0.5-b631.8'
 }
 
 //MPS version
@@ -21,10 +15,6 @@ ext.mpsExtensionsVersion = "9999.9.3092.695ec9e-SNAPSHOT"
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.hasProperty("forceCI") || project.hasProperty("teamcity")
-
-afterEvaluate {
-    ext["itemis.mps.gradle.ant.defaultJavaExecutable"] = tasks.getByName('downloadJbr').javaExecutable
-}
 
 def hasNonEmptyProperty(property) {
     return project.hasProperty(property) && !project.getProperty(property).empty
@@ -85,7 +75,11 @@ subprojects {
         // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
         //ext.mbeddrBuild = "master"
     }
+
+    // Enable mbeddr to be assigned a different version number than mbeddr platform,
+    // as well as mbeddr to be built against a specified existing mbeddr platform version
     ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+
     if (ciBuild) {
         // Coerce TeamCity build number to mbeddrBuildNumber by default
         // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
@@ -93,5 +87,4 @@ subprojects {
     } else {
         println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
     }
-    tasks.withType(RunAntScript).configureEach(task -> { task.dependsOn(':downloadJbr') })
- }
+}

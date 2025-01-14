@@ -3,6 +3,8 @@ pluginManagement {
         maven("https://artifacts.itemis.cloud/repository/maven-mps/")
         gradlePluginPortal()
     }
+
+    includeBuild("build-logic")
 }
 
 val subprojectPaths = listOf("com.mbeddr",
