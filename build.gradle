@@ -95,5 +95,4 @@ subprojects {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
 
-    }
- }
+}
