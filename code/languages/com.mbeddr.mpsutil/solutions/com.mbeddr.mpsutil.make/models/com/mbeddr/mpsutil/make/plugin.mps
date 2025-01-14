@@ -56,6 +56,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -2758,6 +2759,7 @@
   <node concept="tC5Ba" id="7tZeFupJF6m">
     <property role="TrG5h" value="ProjectMake" />
     <property role="3GE5qa" value="Make.groups" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="7tZeFupJF6n" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4HGL" resolve="ProjectActions" />
       <ref role="2f8Tey" to="tprs:44Q0udIi4Db" resolve="make" />
@@ -2771,6 +2773,7 @@
   <node concept="tC5Ba" id="7tZeFupJF6r">
     <property role="TrG5h" value="GlobalMake" />
     <property role="3GE5qa" value="Make.groups" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="7tZeFupJF6s" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hF$rJGH" resolve="Build" />
       <ref role="2f8Tey" to="tprs:4XkeBbjB6J_" resolve="make" />

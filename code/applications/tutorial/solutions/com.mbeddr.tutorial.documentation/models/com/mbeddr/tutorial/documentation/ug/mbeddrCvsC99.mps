@@ -42,7 +42,7 @@
       <concept id="5785245534400277706" name="com.mbeddr.doc.structure.TextBlockTableCell" flags="ng" index="C7FVz">
         <child id="5785245534400277707" name="text" index="C7FVy" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -111,7 +111,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -138,7 +138,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1016,10 +1016,10 @@
           <property role="3z_lpV" value="boolean bool = true;" />
           <node concept="2NCZwO" id="37qjepTtKzK" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTtKzO" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
+              <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
             </node>
             <node concept="2NCMab" id="37qjepTtKzU" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:37qjepTtDSG" />
+              <ref role="2NCMaa" to="zxcx:37qjepTtDSG" resolve="boo" />
             </node>
           </node>
         </node>
@@ -1036,10 +1036,10 @@
           <property role="3z_lpV" value="if (1) {    &#10;  //do stuff&#10;            &#10;} if        " />
           <node concept="2NCZwO" id="R8SBebSkVJ" role="3z_lpI">
             <node concept="2NCMab" id="R8SBebSkVN" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
+              <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
             </node>
             <node concept="2NCMab" id="R8SBebSkVT" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:R8SBebSjXE" />
+              <ref role="2NCMaa" to="zxcx:R8SBebSjXE" resolve="main" />
             </node>
             <node concept="2NCMab" id="R8SBebSpYW" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:R8SBebSptr" resolve="aIfStatement" />
@@ -1079,7 +1079,7 @@
           <property role="3z_lpV" value="{                                     &#10;  int16 aInt16 = 0;                   &#10;  boolean aBoolean = int2bool&lt;aInt16&gt;;&#10;}                                     " />
           <node concept="2NCZwO" id="37qjepTtyxx" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTtyx_" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
+              <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
             </node>
             <node concept="2NCMab" id="37qjepTtyxF" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:37qjepTtxWy" resolve="aStatementList" />
@@ -1123,7 +1123,7 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="37qjepTx0Xo" role="3z_lpI">
             <node concept="2NCMab" id="37qjepTx4cK" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:37qjepTx0XD" />
+              <ref role="2NCMaa" to="zxcx:37qjepTx0XD" resolve="C99vsMbeddr2" />
             </node>
           </node>
         </node>
@@ -1348,10 +1348,10 @@
         <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSeD" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSeJ" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
+            <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
           </node>
           <node concept="2NCMab" id="37qjepTxSeS" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:37qjepTxOna" />
+            <ref role="2NCMaa" to="zxcx:37qjepTxOna" resolve="integers" />
           </node>
         </node>
       </node>
@@ -1368,10 +1368,10 @@
         <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSio" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSiu" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
+            <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
           </node>
           <node concept="2NCMab" id="37qjepTxSiB" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:37qjepTxi3K" />
+            <ref role="2NCMaa" to="zxcx:37qjepTxi3K" resolve="array" />
           </node>
         </node>
       </node>
@@ -1406,10 +1406,10 @@
         <property role="3z_lpJ" value="false" />
         <node concept="2NCZwO" id="37qjepTxSA5" role="3z_lpI">
           <node concept="2NCMab" id="37qjepTxSAb" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:R8SBebSjF4" />
+            <ref role="2NCMaa" to="zxcx:R8SBebSjF4" resolve="C99vsMbeddr" />
           </node>
           <node concept="2NCMab" id="37qjepTxTL$" role="2NCMaf">
-            <ref role="2NCMaa" to="zxcx:37qjepTxa$A" />
+            <ref role="2NCMaa" to="zxcx:37qjepTxa$A" resolve="pointer" />
           </node>
         </node>
       </node>
@@ -1746,7 +1746,7 @@
           <node concept="3z_lpY" id="6lh$f$4Wjf" role="19SJt6">
             <node concept="2NCZwO" id="6lh$f$4Wjg" role="3z_lpZ">
               <node concept="2NCMab" id="6lh$f$4WjF" role="2NCMaf">
-                <ref role="2NCMaa" to="zxcx:OI5Xv7j_22" />
+                <ref role="2NCMaa" to="zxcx:OI5Xv7j_22" resolve="HelloWorld" />
               </node>
             </node>
           </node>
