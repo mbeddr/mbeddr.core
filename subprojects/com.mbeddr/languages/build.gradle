@@ -3,6 +3,7 @@ import de.itemis.mps.gradle.*
 plugins {
     id 'base'
     id 'maven-publish'
+    id 'buildlogic.mps-conventions'
 }
 
 // :com.mbeddr.build
