@@ -2177,6 +2177,11 @@
             <ref role="3bR37D" to="ffeo:1qokWp1VAAr" resolve="jetbrains.mps.refactoring" />
           </node>
         </node>
+        <node concept="1SiIV0" id="73O_8Q8Hd_a" role="3bR37C">
+          <node concept="3bR9La" id="73O_8Q8Hd_b" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:4X1d9kMCbcv" resolve="jetbrains.mps.ide.refactoring.platform" />
+          </node>
+        </node>
         <node concept="1SiIV0" id="1iNy2iby4hT" role="3bR37C">
           <node concept="3bR9La" id="1iNy2iby4hU" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lfd" resolve="jetbrains.mps.findUsages.runtime" />
