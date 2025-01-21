@@ -20117,18 +20117,38 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="3TSnT3Ivcei" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.mpsutil.multilingual.editor" />
-                  <node concept="2Ry0Ak" id="3TSnT3Ivcej" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5jdrrsPOhHp" role="2Ry0An">
                     <property role="2Ry0Am" value="icons" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2HvfSZ" id="6VdWf6S5Df5" role="39821P">
-            <node concept="398BVA" id="6VdWf6S5E23" role="2HvfZ0">
+          <node concept="2HvfSZ" id="5jdrrsPOiZ7" role="39821P">
+            <node concept="398BVA" id="5jdrrsPOjC1" role="2HvfZ0">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="6VdWf6S5EOM" role="iGT6I">
+              <node concept="2Ry0Ak" id="5jdrrsPOkgV" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5jdrrsPOkgZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.editingGuide.plugin" />
+                  <node concept="2Ry0Ak" id="5jdrrsPOkh1" role="2Ry0An">
+                    <property role="2Ry0Am" value="icons" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="5jdrrsPOkTT" role="39821P">
+            <node concept="398BVA" id="5jdrrsPOlyN" role="2HvfZ0">
+              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
+              <node concept="2Ry0Ak" id="5jdrrsPOmbH" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5jdrrsPOmbK" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.ui.modelexporter" />
+                  <node concept="2Ry0Ak" id="5jdrrsPOmbM" role="2Ry0An">
+                    <property role="2Ry0Am" value="icons" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
