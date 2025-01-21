@@ -117,9 +117,6 @@
         <child id="5386424596292315200" name="componentExpression" index="3PF$jx" />
       </concept>
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
-      <concept id="5818192529492099570" name="jetbrains.mps.lang.plugin.structure.CloseTabOperation" flags="nn" index="3ryLUP">
-        <child id="5818192529492102108" name="componentExpression" index="3ryLir" />
-      </concept>
       <concept id="1208528650020" name="jetbrains.mps.lang.plugin.structure.ToolType" flags="in" index="1xUVSX">
         <reference id="1208529537963" name="tool" index="1xYkEM" />
       </concept>
@@ -3914,23 +3911,6 @@
                                 <node concept="10Nm6u" id="DxJoPcq$ij" role="3uHU7w" />
                                 <node concept="37vLTw" id="DxJoPcq$ik" role="3uHU7B">
                                   <ref role="3cqZAo" node="DxJoPcq$h4" resolve="conceptContent" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="9aQIb" id="DxJoPcq$il" role="9aQIa">
-                            <node concept="3clFbS" id="DxJoPcq$im" role="9aQI4">
-                              <node concept="3clFbF" id="DxJoPcq$in" role="3cqZAp">
-                                <node concept="2OqwBi" id="DxJoPcq$io" role="3clFbG">
-                                  <node concept="2WthIp" id="DxJoPcq$ip" role="2Oq$k0" />
-                                  <node concept="3ryLUP" id="DxJoPcq$iq" role="2OqNvi">
-                                    <node concept="2OqwBi" id="DxJoPcq$ir" role="3ryLir">
-                                      <node concept="2WthIp" id="DxJoPcq$is" role="2Oq$k0" />
-                                      <node concept="2BZ7hE" id="DxJoPcq$it" role="2OqNvi">
-                                        <ref role="2WH_rO" node="19PERUGMVUM" resolve="conceptDocPanel" />
-                                      </node>
-                                    </node>
-                                  </node>
                                 </node>
                               </node>
                             </node>
