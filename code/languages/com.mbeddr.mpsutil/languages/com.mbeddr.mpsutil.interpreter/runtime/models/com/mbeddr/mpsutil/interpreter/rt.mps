@@ -12,6 +12,8 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -39,7 +41,11 @@
     <import index="urs3" ref="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <import index="1ka" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typechecking(MPS.Core/)" />
     <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -371,6 +377,7 @@
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -5890,6 +5897,30 @@
       <node concept="3Tm6S6" id="2ALJBcqR9lA" role="1B3o_S" />
       <node concept="3Tqbb2" id="7JF0K7yEV8g" role="1tU5fm" />
     </node>
+    <node concept="Wx3nA" id="1ePLy0N58Hf" role="jymVt">
+      <property role="TrG5h" value="classLoaderManager" />
+      <node concept="3Tm6S6" id="1ePLy0N56Sc" role="1B3o_S" />
+      <node concept="3uibUv" id="1ePLy0N57KR" role="1tU5fm">
+        <ref role="3uigEE" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+      </node>
+      <node concept="2OqwBi" id="1ePLy0N5fRJ" role="33vP2m">
+        <node concept="2OqwBi" id="1ePLy0N5cgx" role="2Oq$k0">
+          <node concept="2YIFZM" id="1ePLy0N5c2q" role="2Oq$k0">
+            <ref role="37wK5l" to="3a50:~MPSCoreComponents.getInstance()" resolve="getInstance" />
+            <ref role="1Pybhc" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
+          </node>
+          <node concept="liA8E" id="1ePLy0N5ePJ" role="2OqNvi">
+            <ref role="37wK5l" to="3a50:~MPSCoreComponents.getPlatform()" resolve="getPlatform" />
+          </node>
+        </node>
+        <node concept="liA8E" id="1ePLy0N5h4D" role="2OqNvi">
+          <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
+          <node concept="3VsKOn" id="1ePLy0N5ixa" role="37wK5m">
+            <ref role="3VsUkX" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="6ENu_m7svnk" role="jymVt" />
     <node concept="3clFbW" id="6ENu_m7svp8" role="jymVt">
       <node concept="3cqZAl" id="6ENu_m7svpa" role="3clF45" />
@@ -6187,6 +6218,81 @@
                   <node concept="37vLTw" id="7lAg7aDJxvj" role="2Oq$k0">
                     <ref role="3cqZAo" node="7lAg7aDJma9" resolve="typechecking" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1ePLy0N51Q4" role="3cqZAp">
+              <node concept="3clFbS" id="1ePLy0N51Q6" role="3clFbx">
+                <node concept="3cpWs8" id="1ePLy0N5iIR" role="3cqZAp">
+                  <node concept="3cpWsn" id="1ePLy0N5iIQ" role="3cpWs9">
+                    <property role="TrG5h" value="typeChecking" />
+                    <node concept="3uibUv" id="1ePLy0N5iIS" role="1tU5fm">
+                      <ref role="3uigEE" to="u78q:~TypeCheckingContext" resolve="TypeCheckingContext" />
+                    </node>
+                    <node concept="2ShNRf" id="1ePLy0N5mxI" role="33vP2m">
+                      <node concept="1pGfFk" id="1ePLy0N5my1" role="2ShVmc">
+                        <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                        <node concept="37vLTw" id="1ePLy0N5my2" role="37wK5m">
+                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                        </node>
+                        <node concept="2OqwBi" id="1ePLy0N5pRv" role="37wK5m">
+                          <node concept="2QUAEa" id="1ePLy0N5oC6" role="2Oq$k0" />
+                          <node concept="liA8E" id="1ePLy0N5qI2" role="2OqNvi">
+                            <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="1ePLy0N5my3" role="37wK5m">
+                          <ref role="3cqZAo" node="1ePLy0N58Hf" resolve="classLoaderManager" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1ePLy0N5iIX" role="3cqZAp">
+                  <node concept="2OqwBi" id="1ePLy0N5kzz" role="3clFbG">
+                    <node concept="37vLTw" id="1ePLy0N5jy9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1ePLy0N5iIQ" resolve="typeChecking" />
+                    </node>
+                    <node concept="liA8E" id="1ePLy0N5kz$" role="2OqNvi">
+                      <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRoot(boolean)" resolve="checkRoot" />
+                      <node concept="3clFbT" id="1ePLy0N5kz_" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1ePLy0N5uob" role="3cqZAp">
+                  <node concept="37vLTI" id="1ePLy0N5v4n" role="3clFbG">
+                    <node concept="37vLTw" id="1ePLy0N5uo9" role="37vLTJ">
+                      <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                    </node>
+                    <node concept="2OqwBi" id="1ePLy0N5kn9" role="37vLTx">
+                      <node concept="37vLTw" id="1ePLy0N5jxU" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1ePLy0N5iIQ" resolve="typeChecking" />
+                      </node>
+                      <node concept="liA8E" id="1ePLy0N5kna" role="2OqNvi">
+                        <ref role="37wK5l" to="u78q:~TypeCheckingContext.typeOf(org.jetbrains.mps.openapi.model.SNode)" resolve="typeOf" />
+                        <node concept="37vLTw" id="1ePLy0N5knb" role="37wK5m">
+                          <ref role="3cqZAo" node="4_QpjDho2In" resolve="matchingChild" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="RRSsy" id="1ePLy0N5PDT" role="3cqZAp">
+                  <property role="RRSoG" value="gZ5frni/trace" />
+                  <node concept="3cpWs3" id="1ePLy0N5PDU" role="RRSoy">
+                    <node concept="37vLTw" id="1ePLy0N5PDV" role="3uHU7w">
+                      <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
+                    </node>
+                    <node concept="Xl_RD" id="1ePLy0N5PDW" role="3uHU7B">
+                      <property role="Xl_RC" value="matchingChildType by incremental type check: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="1ePLy0N54wc" role="3clFbw">
+                <node concept="10Nm6u" id="1ePLy0N55jr" role="3uHU7w" />
+                <node concept="37vLTw" id="1ePLy0N532Y" role="3uHU7B">
+                  <ref role="3cqZAo" node="5EXX68Xhtjt" resolve="matchingChildType" />
                 </node>
               </node>
             </node>
