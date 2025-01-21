@@ -24,10 +24,12 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
     <import index="itts" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.github.benmanes.caffeine.cache(MPS.ThirdParty/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -281,10 +283,6 @@
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
@@ -426,6 +424,9 @@
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="1XKxHZsSvB1" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+        <node concept="2AHcQZ" id="3RY4lWmLvCT" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
       <node concept="37vLTG" id="1XKxHZsSvB2" role="3clF46">
@@ -1322,6 +1323,9 @@
         <node concept="3uibUv" id="2DFA9RLl8eX" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
+        <node concept="2AHcQZ" id="3RY4lWmLw_V" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
       </node>
       <node concept="37vLTG" id="2DFA9RLl8eY" role="3clF46">
         <property role="TrG5h" value="concept" />
@@ -1632,6 +1636,9 @@
         <node concept="3uibUv" id="qh7UMGiqr7" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
+        <node concept="2AHcQZ" id="3RY4lWmLv1_" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
       </node>
       <node concept="37vLTG" id="qh7UMGipdd" role="3clF46">
         <property role="TrG5h" value="concept" />
@@ -1672,6 +1679,9 @@
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="6SZYYyyjzc6" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+        <node concept="2AHcQZ" id="3RY4lWmLybj" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
       <node concept="37vLTG" id="6SZYYyyjzc7" role="3clF46">
@@ -2035,6 +2045,9 @@
         <property role="TrG5h" value="repository" />
         <node concept="3uibUv" id="4LTL3HuD2ph" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+        <node concept="2AHcQZ" id="3RY4lWmL$qw" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
       <node concept="37vLTG" id="4LTL3HuD2TG" role="3clF46">
@@ -3047,17 +3060,17 @@
                     <node concept="3Tqbb2" id="11K_5nNfog1" role="1tU5fm" />
                     <node concept="1rXfSq" id="1GfgNpVXlZA" role="33vP2m">
                       <ref role="37wK5l" node="1XKxHZsSs$9" resolve="getDocumentation" />
-                      <node concept="2OqwBi" id="1GfgNpVXlsH" role="37wK5m">
-                        <node concept="2JrnkZ" id="1GfgNpVXlsI" role="2Oq$k0">
-                          <node concept="2OqwBi" id="1GfgNpVXlsJ" role="2JrQYb">
-                            <node concept="37vLTw" id="1GfgNpVXlsK" role="2Oq$k0">
-                              <ref role="3cqZAo" node="68WEpgCynYA" resolve="n" />
-                            </node>
-                            <node concept="I4A8Y" id="1GfgNpVXlsL" role="2OqNvi" />
+                      <node concept="2OqwBi" id="6d_vyLJIqkd" role="37wK5m">
+                        <node concept="2OqwBi" id="6d_vyLJIo1I" role="2Oq$k0">
+                          <node concept="37vLTw" id="6d_vyLJInu7" role="2Oq$k0">
+                            <ref role="3cqZAo" node="qmep2m2lij" resolve="editorCell" />
+                          </node>
+                          <node concept="liA8E" id="6d_vyLJIq8A" role="2OqNvi">
+                            <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="1GfgNpVXlsM" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                        <node concept="liA8E" id="6d_vyLJIqMX" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="1GfgNpVXlsN" role="37wK5m">
