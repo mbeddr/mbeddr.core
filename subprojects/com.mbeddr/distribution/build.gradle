@@ -21,7 +21,7 @@ task resolve_mbeddr() {
 
 def script_build_mbeddrAllInOne = new File(scriptsBasePath + "/com.mbeddr.allInOne/" + "build.xml")
 
-task build_all_in_one(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', resolve_mbeddr]) {
+task build_all_in_one(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:build_allScripts', resolve_mbeddr]) {
     script script_build_mbeddrAllInOne
 }
 

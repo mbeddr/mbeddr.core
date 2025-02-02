@@ -54,24 +54,7 @@ tasks.register('build_allScripts', MpsGenerate) {
     folderMacros.put('mbeddr.github.core.home', rootProject.layout.projectDirectory)
 }
 
-task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
-    from "$rootDir/build"
-    from "$rootDir/code/plugins"
-    into "$rootDir/scripts"
-    include "*/*.xml"
-}
-
-/*
-// since MPS 2019.2 nativlibs plugin can be installed from the marketplace
-task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
-    from "$artifactsDir/de.itemis.mps.extensions/"
-    include "de.itemis.mps.nativelibs.loader/"
-    into "$mpsPluginsDir"
-}
-tasks.getByPath(':com.mbeddr:install').dependsOn install_nativelibs_loader
-*/
-
-task build_actionsfilter(type: BuildLanguages, dependsOn: [copy_allScripts]) {
+task build_actionsfilter(type: BuildLanguages, dependsOn: ['build_allScripts']) {
     script scriptFile('com.mbeddr.platform/actionsfilter.xml')
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
@@ -79,7 +62,7 @@ task build_actionsfilter(type: BuildLanguages, dependsOn: [copy_allScripts]) {
     outputs.upToDateWhen { false }
 }
 
-task build_platform(type: BuildLanguages, dependsOn: [copy_allScripts, build_actionsfilter]) {
+task build_platform(type: BuildLanguages, dependsOn: ['build_allScripts', build_actionsfilter]) {
     script scriptFile('com.mbeddr.platform/build.xml')
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
