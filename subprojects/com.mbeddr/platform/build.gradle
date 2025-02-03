@@ -44,6 +44,7 @@ if (project.hasProperty('mpsExtensionsZip')) {
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
+    javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
     mpsHome.fileProvider(tasks.named('resolve_mps', Copy).map { it.destinationDir })
 
