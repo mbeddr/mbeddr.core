@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# February 2025
+
+## com.mbeddr.build
+
+- `com.mbeddr:allScripts` artifact is no longer built nor published. It should not be used in your projects as all build
+  solutions are part of the corresponding platforms.
+
 # January 2025
 
 ## com.mbeddr.mpsutil
