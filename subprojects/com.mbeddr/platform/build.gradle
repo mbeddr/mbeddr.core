@@ -5,6 +5,7 @@ plugins {
 }
 
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsGenerate
 
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
@@ -42,49 +43,19 @@ if (project.hasProperty('mpsExtensionsZip')) {
     }
 }
 
-task build_allScripts(type: BuildLanguages, dependsOn: [resolve_mps, resolve_mps_extensions]) {
-    doFirst {
-        if (ciBuild) {
-            // Coerce TeamCity build number to mbeddrPlatformBuildNumber
-            // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
-            println "##teamcity[buildNumber '${mbeddrPlatformBuildNumber}']"
-        }
-    }
-    script rootProject.file('build-allScripts.xml')
+tasks.register('build_allScripts', MpsGenerate) {
+    javaLauncher = jbrToolchain.javaLauncher
+    environmentKind = EnvironmentKind.MPS
+    mpsHome.fileProvider(tasks.named('resolve_mps', Copy).map { it.destinationDir })
 
-    // Need to override basedir until https://github.com/JetBrains/MPS/pull/73 is merged or otherwise fixed.
-    scriptArgs = ["-Dbasedir=${rootProject.file('code/languages/com.mbeddr.build')}"]
+    projectLocation = rootProject.file('code/languages/com.mbeddr.build')
+    pluginRoots.from(tasks.named('resolve_mps_extensions', Copy).map { it.destinationDir })
+    pluginRoots.from(mpsHome.dir('plugins'))
 
-    // Workaround for https://github.com/gradle/gradle/issues/24368 -- provide outputs but disable up-to-date checks
-    // since we don't provide inputs.
-    outputs.dir(new File(artifactsDir, 'com.mbeddr.allScripts.build'))
-    outputs.upToDateWhen { false }
+    folderMacros.put('mbeddr.github.core.home', rootProject.layout.projectDirectory)
 }
 
-task copy_allScripts(type: Copy, dependsOn: build_allScripts) {
-    from "$rootDir/build"
-    from "$rootDir/code/plugins"
-    into "$rootDir/scripts"
-    include "*/*.xml"
-}
-
-task package_allScripts(type: Zip, dependsOn: build_allScripts) {
-    archiveFileName = 'com.mbeddr.allScripts.build.zip'
-    from artifactsDir
-    include "com.mbeddr.allScripts.build/**"
-}
-
-/*
-// since MPS 2019.2 nativlibs plugin can be installed from the marketplace
-task install_nativelibs_loader(type: Copy, dependsOn: resolve_extensions) {
-    from "$artifactsDir/de.itemis.mps.extensions/"
-    include "de.itemis.mps.nativelibs.loader/"
-    into "$mpsPluginsDir"
-}
-tasks.getByPath(':com.mbeddr:install').dependsOn install_nativelibs_loader
-*/
-
-task build_actionsfilter(type: BuildLanguages, dependsOn: [copy_allScripts]) {
+task build_actionsfilter(type: BuildLanguages, dependsOn: ['build_allScripts']) {
     script scriptFile('com.mbeddr.platform/actionsfilter.xml')
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
@@ -92,7 +63,7 @@ task build_actionsfilter(type: BuildLanguages, dependsOn: [copy_allScripts]) {
     outputs.upToDateWhen { false }
 }
 
-task build_platform(type: BuildLanguages, dependsOn: [copy_allScripts, build_actionsfilter]) {
+task build_platform(type: BuildLanguages, dependsOn: ['build_allScripts', build_actionsfilter]) {
     script scriptFile('com.mbeddr.platform/build.xml')
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
@@ -167,7 +138,7 @@ task defaultWrapper(dependsOn: build_platform) {
 
 rootProject.defaultTasks 'defaultWrapper'
 
-task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrAllScriptsPublicationToMavenLocal', 'publishMbeddrPlatformPublicationToMavenLocal'])
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrPlatformPublicationToMavenLocal'])
 
 publishing {
     publications {
@@ -195,26 +166,6 @@ publishing {
                     dependencyNode.appendNode('version', it.moduleVersion)
                     dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                 }*/
-            }
-            pom additionalPomInfo
-        }
-        mbeddrAllScripts(MavenPublication) {
-            groupId 'com.mbeddr'
-            artifactId 'allScripts'
-            version mbeddrPlatformBuildNumber
-            artifact package_allScripts
-            pom.withXml {
-                def dependenciesNode = asNode().appendNode('dependencies')
-                if (!project.skipresolve_mps) {
-                    configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each {
-                        def dependencyNode = dependenciesNode.appendNode('dependency')
-                        dependencyNode.appendNode('groupId', it.moduleGroup)
-                        dependencyNode.appendNode('artifactId', it.moduleName)
-                        dependencyNode.appendNode('version', it.moduleVersion)
-                        dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                        dependencyNode.appendNode('scope', 'provided')
-                    }
-                }
             }
             pom additionalPomInfo
         }

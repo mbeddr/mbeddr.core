@@ -54,7 +54,7 @@ task resolve_mbeddr_platform() {
     }
 }
 
-task copy_logConfig(type: Copy, dependsOn: ':com.mbeddr:platform:copy_allScripts') {
+task copy_logConfig(type: Copy, dependsOn: ':com.mbeddr:platform:build_allScripts') {
     from "$rootDir/debug"
     into "$mpsHomeDir/bin"
 }
@@ -64,7 +64,7 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
-task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:copy_allScripts', 'resolve_mbeddr_platform']) {
+task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:build_allScripts', 'resolve_mbeddr_platform']) {
     script script_build_mbeddr
     outputs.dir("$artifactsDir/mbeddr")
 }
