@@ -4429,11 +4429,6 @@
             <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
           </node>
         </node>
-        <node concept="1SiIV0" id="59x1vq_e_jM" role="3bR37C">
-          <node concept="3bR9La" id="59x1vq_e_jN" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L2N" resolve="jetbrains.mps.baseLanguage.tuples.runtime" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnQoOk" role="3989C9">
@@ -14759,11 +14754,6 @@
               <ref role="3bR37D" node="$bJ0jguQfr" resolve="com.mbeddr.core.base" />
             </node>
           </node>
-          <node concept="1SiIV0" id="30hqvrsTBX8" role="3bR37C">
-            <node concept="3bR9La" id="30hqvrsTBX9" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
-            </node>
-          </node>
           <node concept="1BupzO" id="4PRpvcZJNX6" role="3bR31x">
             <property role="3ZfqAx" value="generator/template" />
             <property role="1Hdu6h" value="true" />
@@ -14935,11 +14925,6 @@
         <node concept="1SiIV0" id="1C4$Mxwyf9e" role="3bR37C">
           <node concept="3bR9La" id="1C4$Mxwyf9f" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="55oOaAG4FTH" role="3bR37C">
-          <node concept="3bR9La" id="55oOaAG4FTI" role="1SiIV1">
-            <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
           </node>
         </node>
       </node>
@@ -17169,17 +17154,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaaqb" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaaqc" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaapY" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqIBj" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqIBk" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqIB6" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaapZ" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqIB7" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaq0" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqIB8" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaaq1" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqIB9" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaq2" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqIBa" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-codec-1.10.jar" />
                     </node>
                   </node>
@@ -17188,17 +17173,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaaqq" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaaqr" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaaqd" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqIBy" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqIBz" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqIBl" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaaqe" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqIBm" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaqf" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqIBn" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaaqg" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqIBo" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaqh" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqIBp" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-collections4-4.1.jar" />
                     </node>
                   </node>
@@ -17207,17 +17192,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaaqD" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaaqE" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaaqs" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqIBL" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqIBM" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqIB$" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaaqt" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqIB_" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaqu" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqIBA" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaaqv" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqIBB" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaqw" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqIBC" role="2Ry0An">
                       <property role="2Ry0Am" value="curvesapi-1.04.jar" />
                     </node>
                   </node>
@@ -17226,17 +17211,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaaqS" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaaqT" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaaqF" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqIC0" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqIC1" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqIBN" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaaqG" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqIBO" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaqH" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqIBP" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaaqI" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqIBQ" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaqJ" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqIBR" role="2Ry0An">
                       <property role="2Ry0Am" value="poi-5.0.0.jar" />
                     </node>
                   </node>
@@ -17245,17 +17230,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaar7" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaar8" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaaqU" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqICf" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqICg" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqIC2" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaaqV" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqIC3" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaqW" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqIC4" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaaqX" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqIC5" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaqY" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqIC6" role="2Ry0An">
                       <property role="2Ry0Am" value="poi-ooxml-5.0.0.jar" />
                     </node>
                   </node>
@@ -17264,17 +17249,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaarm" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaarn" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaar9" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqICu" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqICv" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqICh" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaara" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqICi" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaarb" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqICj" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaarc" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqICk" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaard" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqICl" role="2Ry0An">
                       <property role="2Ry0Am" value="xmlbeans-4.0.0.jar" />
                     </node>
                   </node>
@@ -17283,283 +17268,17 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="6F2NIPJaar_" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaarA" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaaro" role="1BurEY">
+        <node concept="1SiIV0" id="6fEsL9iqICH" role="3bR37C">
+          <node concept="1BurEX" id="6fEsL9iqICI" role="1SiIV1">
+            <node concept="398BVA" id="6fEsL9iqICw" role="1BurEY">
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaarp" role="iGT6I">
+              <node concept="2Ry0Ak" id="6fEsL9iqICx" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaarq" role="2Ry0An">
+                <node concept="2Ry0Ak" id="6fEsL9iqICy" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaarr" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6fEsL9iqICz" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaars" role="2Ry0An">
-                      <property role="2Ry0Am" value="poi-ooxml-lite-5.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaarO" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaarP" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaarB" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaarC" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaarD" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaarE" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaarF" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-codec-1.10.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaas3" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaas4" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaarQ" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaarR" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaarS" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaarT" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaarU" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-collections4-4.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaasi" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaasj" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaas5" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaas6" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaas7" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaas8" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaas9" role="2Ry0An">
-                      <property role="2Ry0Am" value="curvesapi-1.04.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaasx" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaasy" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaask" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaasl" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaasm" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaasn" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaso" role="2Ry0An">
-                      <property role="2Ry0Am" value="poi-5.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaasK" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaasL" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaasz" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaas$" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaas_" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaasA" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaasB" role="2Ry0An">
-                      <property role="2Ry0Am" value="poi-ooxml-5.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaasZ" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaat0" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaasM" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaasN" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaasO" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaasP" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaasQ" role="2Ry0An">
-                      <property role="2Ry0Am" value="xmlbeans-4.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaate" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaatf" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaat1" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaat2" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaat3" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaat4" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaat5" role="2Ry0An">
-                      <property role="2Ry0Am" value="poi-ooxml-lite-5.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaatt" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaatu" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaatg" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaath" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaati" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaatj" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaatk" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-codec-1.10.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaatG" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaatH" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaatv" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaatw" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaatx" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaaty" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaatz" role="2Ry0An">
-                      <property role="2Ry0Am" value="commons-collections4-4.1.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaatV" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaatW" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaatI" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaatJ" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaatK" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaatL" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaatM" role="2Ry0An">
-                      <property role="2Ry0Am" value="curvesapi-1.04.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaaua" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaaub" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaatX" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaatY" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaatZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaau0" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaau1" role="2Ry0An">
-                      <property role="2Ry0Am" value="poi-5.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaaup" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaauq" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaauc" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaaud" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaue" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaauf" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaaug" role="2Ry0An">
-                      <property role="2Ry0Am" value="poi-ooxml-5.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaauC" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaauD" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaaur" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaaus" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaaut" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaauu" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaauv" role="2Ry0An">
-                      <property role="2Ry0Am" value="xmlbeans-4.0.0.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6F2NIPJaauR" role="3bR37C">
-          <node concept="1BurEX" id="6F2NIPJaauS" role="1SiIV1">
-            <node concept="398BVA" id="6F2NIPJaauE" role="1BurEY">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="6F2NIPJaauF" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6F2NIPJaauG" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet" />
-                  <node concept="2Ry0Ak" id="6F2NIPJaauH" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="6F2NIPJaauI" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="6fEsL9iqIC$" role="2Ry0An">
                       <property role="2Ry0Am" value="poi-ooxml-lite-5.0.0.jar" />
                     </node>
                   </node>
