@@ -26,12 +26,14 @@ if (project.skipresolve_mps) {
     }
 }
 
+ext.dependenciesDir = rootProject.layout.buildDirectory.dir('dependencies')
+
 if (project.hasProperty('mpsExtensionsZip')) {
     task resolve_mps_extensions(type: Copy) {
         from {
             zipTree(project.property('mpsExtensionsZip'))
         }
-        into artifactsDir
+        into dependenciesDir
     }
 } else {
     task resolve_mps_extensions(type: Copy) {
@@ -39,11 +41,12 @@ if (project.hasProperty('mpsExtensionsZip')) {
         from {
             configurations.mpsExtensions.resolve().collect { zipTree(it) }
         }
-        into artifactsDir
+        into dependenciesDir
     }
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
+    javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
     mpsHome.fileProvider(tasks.named('resolve_mps', Copy).map { it.destinationDir })
 
