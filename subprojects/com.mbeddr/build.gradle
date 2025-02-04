@@ -71,7 +71,7 @@ ext["itemis.mps.gradle.ant.defaultScriptArgs"] = ext.dependsOnMbeddr_scriptArgs 
         antSystemProperties.collect { "-D${it.key}=${it.value}".toString() }
 
 // ant script locations
-ext.scriptsBasePath = rootProject.file("scripts").absolutePath
+ext.scriptsBasePath = rootProject.file("build").absolutePath
 
 // mbeddr properties
 subprojects {
@@ -98,7 +98,7 @@ subprojects {
 
 
 File scriptFile(String relativePath) {
-    new File("$rootDir/scripts/$relativePath")
+    new File("$rootDir/build/$relativePath")
 }
 
 private static void configureRepositories(Project project) {
