@@ -26,23 +26,21 @@ if (!project.skipresolve_mps) {
     mpsHomeProvider.fileValue(mpsHomeDir)
 }
 
-ext.dependenciesDir = rootProject.layout.buildDirectory.dir('dependencies')
+configurations {
+    mpsLibraries { canBeConsumed = false }
+}
 
-if (project.hasProperty('mpsExtensionsZip')) {
-    task resolve_mps_extensions(type: Copy) {
-        from {
-            zipTree(project.property('mpsExtensionsZip'))
-        }
-        into dependenciesDir
+dependencies {
+    if (project.hasProperty('mpsExtensionsZip')) {
+        mpsLibraries files(project.property('mpsExtensionsZip'))
+    } else {
+        mpsLibraries "de.itemis.mps:extensions:$mpsExtensionsVersion"
     }
-} else {
-    task resolve_mps_extensions(type: Copy) {
-        dependsOn configurations.mpsExtensions
-        from {
-            configurations.mpsExtensions.resolve().collect { zipTree(it) }
-        }
-        into dependenciesDir
-    }
+}
+
+tasks.register('resolveMpsLibraries', Sync) {
+    from configurations.mpsLibraries.elements.map { it.collect(project.&zipTree) }
+    into rootProject.layout.buildDirectory.dir('dependencies')
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
@@ -51,7 +49,7 @@ tasks.register('build_allScripts', MpsGenerate) {
     mpsHome = mpsHomeProvider
 
     projectLocation = rootProject.file('code/languages/com.mbeddr.build')
-    pluginRoots.from(tasks.named('resolve_mps_extensions', Copy).map { it.destinationDir })
+    pluginRoots.from(tasks.named('resolveMpsLibraries', Sync).map { it.destinationDir })
     pluginRoots.from(mpsHome.dir('plugins'))
 
     folderMacros.put('mbeddr.github.core.home', rootProject.layout.projectDirectory)
