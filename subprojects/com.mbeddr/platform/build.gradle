@@ -10,27 +10,21 @@ import de.itemis.mps.gradle.tasks.MpsGenerate
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
 
-configurations.create('mpsHome') {
-    // Contains the MPS home directory to use for the build.
-    canBeConsumed = false
-}
+/**
+ * The MPS home directory as a property, for use in tasks supporting lazy configuration. The property carries along
+ * the dependency information (i.e. tasks necessary to produce the directory, if any).
+ */
+DirectoryProperty mpsHomeProvider = objects.directoryProperty()
 
-// The MPS home directory as a provider, for use in tasks supporting lazy configuration. The provider carries along
-// the dependency information (i.e. any tasks necessary to produce the directory).
-Provider<File> mpsHomeProvider = configurations.mpsHome.elements.map {it.first().asFile }
-
-dependencies {
-    def mpsHomeFiles = files(mpsHomeDir)
-    if (!project.skipresolve_mps) {
-        def resolve_mps = tasks.register('resolve_mps', Sync) {
-            dependsOn configurations.mps
-            from zipTree({ configurations.mps.singleFile })
-            into mpsHomeDir
-        }
-        mpsHomeFiles.builtBy(resolve_mps)
+if (!project.skipresolve_mps) {
+    def resolve_mps = tasks.register('resolve_mps', Sync) {
+        dependsOn configurations.mps
+        from zipTree({ configurations.mps.singleFile })
+        into mpsHomeDir
     }
-
-    mpsHome(mpsHomeFiles)
+    mpsHomeProvider.fileProvider(resolve_mps.map { it.destinationDir })
+} else {
+    mpsHomeProvider.fileValue(mpsHomeDir)
 }
 
 ext.dependenciesDir = rootProject.layout.buildDirectory.dir('dependencies')
@@ -55,7 +49,7 @@ if (project.hasProperty('mpsExtensionsZip')) {
 tasks.register('build_allScripts', MpsGenerate) {
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
-    mpsHome.fileProvider(mpsHomeProvider)
+    mpsHome = mpsHomeProvider
 
     projectLocation = rootProject.file('code/languages/com.mbeddr.build')
     pluginRoots.from(tasks.named('resolve_mps_extensions', Copy).map { it.destinationDir })
