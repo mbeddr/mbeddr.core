@@ -17,12 +17,11 @@ def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.plat
 DirectoryProperty mpsHomeProvider = objects.directoryProperty()
 
 if (!project.skipresolve_mps) {
-    def resolve_mps = tasks.register('resolve_mps', Sync) {
-        dependsOn configurations.mps
-        from zipTree({ configurations.mps.singleFile })
+    def resolveMps = tasks.register('resolveMps', Sync) {
+        from configurations.mps.elements.map { it.collect(project.&zipTree) }
         into mpsHomeDir
     }
-    mpsHomeProvider.fileProvider(resolve_mps.map { it.destinationDir })
+    mpsHomeProvider.fileProvider(resolveMps.map { it.destinationDir })
 } else {
     mpsHomeProvider.fileValue(mpsHomeDir)
 }
