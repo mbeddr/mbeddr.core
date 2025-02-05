@@ -73,12 +73,10 @@ subprojects {
 
     // configs
     configurations {
-        mps
         ant_lib
     }
 
     dependencies {
-        mps "com.jetbrains:mps:$mpsBuild"
         ant_lib "org.apache.ant:ant-junit:1.10.1"
     }
 
