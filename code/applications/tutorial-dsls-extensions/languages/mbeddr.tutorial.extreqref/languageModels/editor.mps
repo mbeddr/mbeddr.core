@@ -10,6 +10,10 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="2yyc" ref="r:79803cd7-885d-4e28-8672-973d389d71b6(mbeddr.tutorial.extreqref.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="3zbh" ref="r:9027fe04-52c3-4416-aa88-4c72e7a422ed(mbeddr.tutorial.extreqref.behavior)" implicit="true" />
@@ -107,6 +111,10 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -146,6 +154,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -395,9 +406,21 @@
                                 <property role="TrG5h" value="s" />
                                 <node concept="17QB3L" id="2juwowPkZeC" role="1tU5fm" />
                                 <node concept="2YIFZM" id="2juwowPkYdd" role="33vP2m">
-                                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object)" resolve="showInputDialog" />
-                                  <node concept="10Nm6u" id="2juwowPkYde" role="37wK5m" />
+                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                  <ref role="37wK5l" to="jkm4:~Messages.showInputDialog(java.awt.Component,java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showInputDialog" />
+                                  <node concept="1eOMI4" id="5yciJwhnPpR" role="37wK5m">
+                                    <node concept="10QFUN" id="5yciJwhnPpO" role="1eOMHV">
+                                      <node concept="3uibUv" id="5yciJwhnQsr" role="10QFUM">
+                                        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                                      </node>
+                                      <node concept="2OqwBi" id="5yciJwhnNQU" role="10QFUP">
+                                        <node concept="1Q80Hx" id="5yciJwhnMX9" role="2Oq$k0" />
+                                        <node concept="liA8E" id="5yciJwhnOvu" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                   <node concept="Xl_RD" id="2juwowPkYdf" role="37wK5m">
                                     <property role="Xl_RC" value="Enter City Name" />
                                   </node>
@@ -407,6 +430,7 @@
                                       <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
                                     </node>
                                   </node>
+                                  <node concept="10Nm6u" id="5yciJwhhPNs" role="37wK5m" />
                                 </node>
                               </node>
                             </node>
