@@ -74,7 +74,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
@@ -87,7 +87,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -223,12 +223,15 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="4hvHh3QXKHO" role="1l3spd">
-      <property role="TrG5h" value="platform.sl-all" />
-      <node concept="398BVA" id="5ueaxoTp$uT" role="398pKh">
-        <ref role="398BVh" node="5ueaxoTn61l" resolve="artifacts.root" />
-        <node concept="2Ry0Ak" id="5ueaxoTp$uU" role="iGT6I">
-          <property role="2Ry0Am" value="de.itemis.mps.extensions" />
+    <node concept="398rNT" id="1OEbLwd81mk" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="1OEbLwd81ml" role="398pKh">
+        <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="1OEbLwd81mm" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="1OEbLwd81mn" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
         </node>
       </node>
     </node>
@@ -259,7 +262,10 @@
     <node concept="2sgV4H" id="4hvHh3QXKNz" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
       <node concept="398BVA" id="4hvHh3QXKSB" role="2JcizS">
-        <ref role="398BVh" node="4hvHh3QXKHO" resolve="platform.sl-all" />
+        <ref role="398BVh" node="1OEbLwd81mk" resolve="dependencies.root" />
+        <node concept="2Ry0Ak" id="1OEbLwd81nI" role="iGT6I">
+          <property role="2Ry0Am" value="de.itemis.mps.extensions" />
+        </node>
       </node>
     </node>
     <node concept="1l3spV" id="7eF9rfAnzV1" role="1l3spN">
@@ -2981,6 +2987,18 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="1OEbLwd81bU" role="1l3spd">
+      <property role="TrG5h" value="dependencies.root" />
+      <node concept="398BVA" id="1OEbLwd81ei" role="398pKh">
+        <ref role="398BVh" node="E0fxGqls7d" resolve="mbeddr.github.core.home" />
+        <node concept="2Ry0Ak" id="1OEbLwd81i5" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="1OEbLwd81jj" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="E0fxGqls7k" role="1l3spd">
       <property role="TrG5h" value="mbeddr.mpsutil" />
       <node concept="398BVA" id="E0fxGqls7l" role="398pKh">
@@ -3014,7 +3032,7 @@
     <node concept="2sgV4H" id="E0fxGqls5t" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
       <node concept="398BVA" id="E0fxGqls6j" role="2JcizS">
-        <ref role="398BVh" node="E0fxGqls73" resolve="artifacts.root" />
+        <ref role="398BVh" node="1OEbLwd81bU" resolve="dependencies.root" />
         <node concept="2Ry0Ak" id="E0fxGqls6k" role="iGT6I">
           <property role="2Ry0Am" value="de.itemis.mps.extensions" />
         </node>
