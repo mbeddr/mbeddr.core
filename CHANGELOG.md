@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# February 2025
+
+## com.mbeddr.mpsutil.compare
+
+### Removed
+
+- Plugin `com.mbeddr.mpsutil.compare`, its langugages and solutions were moved to MPS-Extensions. The migration followed MPS-Extensions' conventions, so the new plugin name is: `de.itemis.mps.compare`. All languages and soluttions maintained their names.
+
 # January 2025
 
 ## com.mbeddr.mpsutil
