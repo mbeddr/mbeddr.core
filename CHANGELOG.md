@@ -11,7 +11,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Removed
 
-- Plugin `com.mbeddr.mpsutil.compare`, its langugages and solutions were moved to MPS-Extensions. The migration followed MPS-Extensions' conventions, so the new plugin name is: `de.itemis.mps.compare`. All languages and soluttions maintained their names.
+- Plugin `com.mbeddr.mpsutil.compare`, its languages and solutions were moved to MPS-Extensions. The migration followed MPS-Extensions' conventions, so the new plugin name is: `de.itemis.mps.compare`. All languages and soluttions maintained their names.
 
 ## com.mbeddr.build
 
