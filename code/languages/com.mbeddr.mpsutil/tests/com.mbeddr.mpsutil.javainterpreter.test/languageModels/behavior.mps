@@ -36,7 +36,6 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
-      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -110,13 +109,6 @@
       </concept>
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
-    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
-      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
-      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
-        <child id="1199569906740" name="parameter" index="1bW2Oz" />
-        <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
@@ -131,10 +123,6 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
-        <child id="1204796294226" name="closure" index="23t8la" />
-      </concept>
-      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1184963466173" name="jetbrains.mps.baseLanguage.collections.structure.ToArrayOperation" flags="nn" index="3_kTaI" />
     </language>
   </registry>
@@ -351,41 +339,15 @@
           <node concept="2ShNRf" id="2pogikRzImK" role="3cqZAk">
             <node concept="1pGfFk" id="2pogikRzNEc" role="2ShVmc">
               <ref role="37wK5l" to="2ahs:2yaxsm5jILI" resolve="CombinedInterpreter" />
-              <node concept="2OqwBi" id="40eYuE1yzVC" role="37wK5m">
-                <node concept="2OqwBi" id="40eYuE1yyhh" role="2Oq$k0">
-                  <node concept="2OqwBi" id="15Er3QytrWK" role="2Oq$k0">
-                    <node concept="2YIFZM" id="15Er3QytrWL" role="2Oq$k0">
-                      <ref role="1Pybhc" to="2ahs:6t6gMvcKSR1" resolve="CachedInterpreterFinder" />
-                      <ref role="37wK5l" to="2ahs:6t6gMvcMFOM" resolve="getInstance" />
-                    </node>
-                    <node concept="liA8E" id="15Er3QytrWM" role="2OqNvi">
-                      <ref role="37wK5l" to="2ahs:6t6gMvcMGiv" resolve="findInterpretersForCategory" />
-                      <node concept="Xl_RD" id="7xtsKqWlq7Z" role="37wK5m">
-                        <property role="Xl_RC" value="java" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3$u5V9" id="40eYuE1yyCe" role="2OqNvi">
-                    <node concept="1bVj0M" id="40eYuE1yyCg" role="23t8la">
-                      <node concept="3clFbS" id="40eYuE1yyCh" role="1bW5cS">
-                        <node concept="3clFbF" id="40eYuE1yz45" role="3cqZAp">
-                          <node concept="2YIFZM" id="7FtvAFycdiI" role="3clFbG">
-                            <ref role="37wK5l" to="2ahs:4jkUBhBVOKX" resolve="getInterpreterExecutable" />
-                            <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
-                            <node concept="37vLTw" id="7FtvAFycdiJ" role="37wK5m">
-                              <ref role="3cqZAo" node="2SR9xrsN2ut" resolve="it" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="gl6BB" id="2SR9xrsN2ut" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="2SR9xrsN2uu" role="1tU5fm" />
-                      </node>
-                    </node>
+              <node concept="2OqwBi" id="3Rn_vkRmLCV" role="37wK5m">
+                <node concept="2YIFZM" id="3Rn_vkRmI86" role="2Oq$k0">
+                  <ref role="37wK5l" to="2ahs:2PA_oGdvp1R" resolve="findAllInterpreterExecutablesForCategory" />
+                  <ref role="1Pybhc" to="2ahs:4jkUBhBVMPS" resolve="InterpreterRegistry" />
+                  <node concept="Xl_RD" id="3Rn_vkRmIid" role="37wK5m">
+                    <property role="Xl_RC" value="java" />
                   </node>
                 </node>
-                <node concept="3_kTaI" id="40eYuE1y$Y7" role="2OqNvi" />
+                <node concept="3_kTaI" id="3Rn_vkRmMhP" role="2OqNvi" />
               </node>
             </node>
           </node>
