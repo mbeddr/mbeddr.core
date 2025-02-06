@@ -10,49 +10,55 @@ import de.itemis.mps.gradle.tasks.MpsGenerate
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
 
-/**
- * The MPS home directory as a property, for use in tasks supporting lazy configuration. The property carries along
- * the dependency information (i.e. tasks necessary to produce the directory, if any).
- */
-DirectoryProperty mpsHomeProvider = objects.directoryProperty()
-
-if (!project.skipresolve_mps) {
-    def resolveMps = tasks.register('resolveMps', Sync) {
-        from configurations.mps.elements.map { it.collect(project.&zipTree) }
-        into mpsHomeDir
-    }
-    mpsHomeProvider.fileProvider(resolveMps.map { it.destinationDir })
-} else {
-    mpsHomeProvider.fileValue(mpsHomeDir)
+configurations.create('mpsHome') {
+    // Contains the MPS home directory to use for the build.
+    canBeConsumed = false
 }
 
-configurations {
-    mps { canBeConsumed = false }
-    mpsLibraries { canBeConsumed = false }
-}
+// The MPS home directory as a provider, for use in tasks supporting lazy configuration. The provider carries along
+// the dependency information (i.e. any tasks necessary to produce the directory).
+Provider<File> mpsHomeProvider = configurations.mpsHome.elements.map {it.first().asFile }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsBuild"
-
-    if (project.hasProperty('mpsExtensionsZip')) {
-        mpsLibraries files(project.property('mpsExtensionsZip'))
-    } else {
-        mpsLibraries "de.itemis.mps:extensions:$mpsExtensionsVersion"
+    def mpsHomeFiles = files(mpsHomeDir)
+    if (!project.skipresolve_mps) {
+        def resolve_mps = tasks.register('resolve_mps', Sync) {
+            dependsOn configurations.mps
+            from zipTree({ configurations.mps.singleFile })
+            into mpsHomeDir
+        }
+        mpsHomeFiles.builtBy(resolve_mps)
     }
+
+    mpsHome(mpsHomeFiles)
 }
 
-tasks.register('resolveMpsLibraries', Sync) {
-    from configurations.mpsLibraries.elements.map { it.collect(project.&zipTree) }
-    into rootProject.layout.buildDirectory.dir('dependencies')
+ext.dependenciesDir = rootProject.layout.buildDirectory.dir('dependencies')
+
+if (project.hasProperty('mpsExtensionsZip')) {
+    task resolve_mps_extensions(type: Copy) {
+        from {
+            zipTree(project.property('mpsExtensionsZip'))
+        }
+        into dependenciesDir
+    }
+} else {
+    task resolve_mps_extensions(type: Copy) {
+        dependsOn configurations.mpsExtensions
+        from {
+            configurations.mpsExtensions.resolve().collect { zipTree(it) }
+        }
+        into dependenciesDir
+    }
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
-    mpsHome = mpsHomeProvider
+    mpsHome.fileProvider(mpsHomeProvider)
 
     projectLocation = rootProject.file('code/languages/com.mbeddr.build')
-    pluginRoots.from(tasks.named('resolveMpsLibraries', Sync).map { it.destinationDir })
+    pluginRoots.from(tasks.named('resolve_mps_extensions', Copy).map { it.destinationDir })
     pluginRoots.from(mpsHome.dir('plugins'))
 
     folderMacros.put('mbeddr.github.core.home', rootProject.layout.projectDirectory)
