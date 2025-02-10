@@ -260,8 +260,8 @@
       <node concept="m$_yC" id="631ZZAfPIcM" role="m$_yJ">
         <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
-      <node concept="m$_yC" id="631ZZAfPJqc" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:DnqfiuSO_Q" resolve="com.mbeddr.mpsutil.compare" />
+      <node concept="m$_yC" id="3v2Yd5SNxfq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:77YfcvOMg42" resolve="de.itemis.mps.compare" />
       </node>
       <node concept="m$_yC" id="K3FXS9PK_b" role="m$_yJ">
         <ref role="m$_y1" to="al5i:5fGcQI93Tz0" resolve="com.mbeddr.mpsutil.processwizard" />

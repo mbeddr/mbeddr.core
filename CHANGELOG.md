@@ -7,7 +7,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # February 2025
 
+## com.mbeddr.mpsutil.compare
+
+### Removed
+
+- Plugin `com.mbeddr.mpsutil.compare`, its languages and solutions were moved to MPS-Extensions. The migration followed MPS-Extensions' conventions, so the new plugin name is: `de.itemis.mps.compare`. All languages and solutions maintained their names.
+
 ## com.mbeddr.build
+
+### Removed
 
 - `com.mbeddr:allScripts` artifact is no longer built nor published. It should not be used in your projects as all build
   solutions are part of the corresponding platforms.

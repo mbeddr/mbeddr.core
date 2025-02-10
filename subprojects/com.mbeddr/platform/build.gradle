@@ -23,7 +23,7 @@ if (!project.skipresolve_mps) {
     }
     mpsHomeProvider.fileProvider(resolveMps.map { it.destinationDir })
 } else {
-    mpsHomeProvider.fileValue(mpsHomeDir)
+    mpsHomeProvider.fileValue(rootProject.file(mpsHomeDir))
 }
 
 configurations {
