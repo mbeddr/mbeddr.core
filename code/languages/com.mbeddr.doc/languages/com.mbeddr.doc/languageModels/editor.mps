@@ -13536,12 +13536,8 @@
                 <node concept="1pGfFk" id="5G6qJwL_nN0" role="2ShVmc">
                   <ref role="37wK5l" to="1i7y:~NodePaster.&lt;init&gt;(java.util.List)" resolve="NodePaster" />
                   <node concept="2YIFZM" id="5G6qJwL_nN1" role="37wK5m">
-                    <ref role="37wK5l" to="dp1x:5tGs5KqKiK3" resolve="getNodesFromClipboard" />
+                    <ref role="37wK5l" to="dp1x:oR0qGlMF5V" resolve="getNodesFromClipboard" />
                     <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
-                    <node concept="2OqwBi" id="5G6qJwL_nN2" role="37wK5m">
-                      <node concept="0IXxy" id="5G6qJwL_nN3" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="5G6qJwL_nN4" role="2OqNvi" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -13760,12 +13756,8 @@
                 <node concept="1pGfFk" id="1yYEjDYETK5" role="2ShVmc">
                   <ref role="37wK5l" to="1i7y:~NodePaster.&lt;init&gt;(java.util.List)" resolve="NodePaster" />
                   <node concept="2YIFZM" id="1yYEjDYETK6" role="37wK5m">
-                    <ref role="37wK5l" to="dp1x:5tGs5KqKiK3" resolve="getNodesFromClipboard" />
+                    <ref role="37wK5l" to="dp1x:oR0qGlMF5V" resolve="getNodesFromClipboard" />
                     <ref role="1Pybhc" to="dp1x:5tGs5KqKfGH" resolve="CopyPasteUtil" />
-                    <node concept="2OqwBi" id="1yYEjDYETK7" role="37wK5m">
-                      <node concept="0IXxy" id="1yYEjDYETK8" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="1yYEjDYETK9" role="2OqNvi" />
-                    </node>
                   </node>
                 </node>
               </node>
