@@ -140,6 +140,7 @@
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1215865999894" name="mnemonic" index="ngHcd" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -7881,11 +7882,7 @@
     <property role="3GE5qa" value="buttonsInEditor" />
     <property role="TrG5h" value="TurnButtonsInEditorOn" />
     <property role="2uzpH1" value="Editor Helper Buttons" />
-    <node concept="1DS2jV" id="3slbD0C6UdE" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3slbD0C6UdF" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3slbD0C7DLv" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -7958,11 +7955,7 @@
     <property role="3GE5qa" value="buttonsInEditor" />
     <property role="TrG5h" value="TurnButtonsInEditorOff" />
     <property role="2uzpH1" value="Editor Helper Buttons" />
-    <node concept="1DS2jV" id="3slbD0C7$Ao" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3slbD0C7$Ap" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3slbD0C7DL8" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -23939,6 +23932,7 @@
     <property role="3GE5qa" value="documentationStuff" />
     <property role="TrG5h" value="AddDocumentation" />
     <property role="2uzpH1" value="Add Documentation" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7HcPDtliVd7" role="1NuT2Z">
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
