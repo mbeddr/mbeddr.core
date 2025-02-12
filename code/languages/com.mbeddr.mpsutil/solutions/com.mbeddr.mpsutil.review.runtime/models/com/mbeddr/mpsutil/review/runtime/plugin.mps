@@ -34,6 +34,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -308,6 +309,7 @@
   <node concept="sE7Ow" id="7lmVLrULG7p">
     <property role="TrG5h" value="AddReview" />
     <property role="2uzpH1" value="Add Comment" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="tnohg" id="7lmVLrULG7q" role="tncku">
       <node concept="3clFbS" id="7lmVLrULG7r" role="2VODD2">
         <node concept="3cpWs8" id="7lmVLrULG7z" role="3cqZAp">
@@ -479,6 +481,7 @@
   <node concept="sE7Ow" id="7lmVLrULG8A">
     <property role="TrG5h" value="DeleteReview" />
     <property role="2uzpH1" value="Delete Comment" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7lmVLrULG8B" role="1NuT2Z">
       <property role="TrG5h" value="editorComponent" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
@@ -563,6 +566,7 @@
   <node concept="sE7Ow" id="7lmVLrULG9b">
     <property role="TrG5h" value="JumpToReview" />
     <property role="2uzpH1" value="Jump to Comment" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7lmVLrULG9c" role="1NuT2Z">
       <property role="TrG5h" value="editorComponent" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
@@ -656,6 +660,7 @@
   <node concept="sE7Ow" id="7lmVLrULG9P">
     <property role="TrG5h" value="JumpToReviewed" />
     <property role="2uzpH1" value="Select Commented Node" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7lmVLrULG9Q" role="1NuT2Z">
       <property role="TrG5h" value="editorComponent" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
@@ -802,6 +807,7 @@
   <node concept="sE7Ow" id="7lmVLrULGaS">
     <property role="TrG5h" value="ReplyReview" />
     <property role="2uzpH1" value="Reply to Comment" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7lmVLrULGaT" role="1NuT2Z">
       <property role="TrG5h" value="editorComponent" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
