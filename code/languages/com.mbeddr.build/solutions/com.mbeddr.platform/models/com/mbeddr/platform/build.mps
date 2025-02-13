@@ -1334,6 +1334,12 @@
       <node concept="m$_yC" id="64SK4bcK9OL" role="m$_yJ">
         <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
+      <node concept="m$_yC" id="26jb3RVdtr7" role="m$_yJ">
+        <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
+      </node>
+      <node concept="m$_yC" id="26jb3RVdwfU" role="m$_yJ">
+        <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
+      </node>
       <node concept="m$_yC" id="5fGcQI99wPx" role="m$_yJ">
         <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
