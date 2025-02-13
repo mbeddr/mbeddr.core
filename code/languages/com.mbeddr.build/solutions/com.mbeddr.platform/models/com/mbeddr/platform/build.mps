@@ -752,9 +752,6 @@
       <node concept="m$_yC" id="NMVW79ysTx" role="m$_yJ">
         <ref role="m$_y1" node="NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
       </node>
-      <node concept="m$_yC" id="nnCEsShA5M" role="m$_yJ">
-        <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
-      </node>
       <node concept="m$_yC" id="TGQG6kicFm" role="m$_yJ">
         <ref role="m$_y1" node="TGQG6khGGJ" resolve="com.mbeddr.mpsutil.uisupport" />
       </node>
