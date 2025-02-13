@@ -737,9 +737,6 @@
       <node concept="m$_yC" id="6rBfBe1X8sS" role="m$_yJ">
         <ref role="m$_y1" node="6rBfBe1WRMd" resolve="com.mbeddr.mpsutil.varscope" />
       </node>
-      <node concept="m$_yC" id="6rBfBe1XpxG" role="m$_yJ">
-        <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
-      </node>
       <node concept="m$_yC" id="3up1w8ILY2s" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
       </node>
