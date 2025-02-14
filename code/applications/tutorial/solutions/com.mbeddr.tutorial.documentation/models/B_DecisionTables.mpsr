@@ -51,9 +51,6 @@
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
-      <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
-        <reference id="3350625596580108719" name="target" index="1_0GAl" />
-      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
@@ -336,13 +333,7 @@
         <node concept="1_0LV8" id="6UY8Kx5jfFp" role="1_0VJ0">
           <node concept="19SGf9" id="6UY8Kx5jfFq" role="1_0LWR">
             <node concept="19SUe$" id="6UY8Kx5jfFr" role="19SJt6">
-              <property role="19SUeA" value="So far so good. The test case is fine. However, as with many tests, this one only tests part of the overall functionality. And in fact, you may have noticed that an error lurks inside our decision table: for 2000 m of altitude, the table is non-deterministic: both conditions in the column header work! We could find this problem with more tests, or we could use formal verification as described in " />
-            </node>
-            <node concept="1_0GAv" id="2JeiqU7feA5" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:3JyX84yPgyl" resolve="decision_tables" />
-            </node>
-            <node concept="19SUe$" id="2JeiqU7feA4" role="19SJt6">
-              <property role="19SUeA" value=". " />
+              <property role="19SUeA" value="So far so good. The test case is fine. However, as with many tests, this one only tests part of the overall functionality. And in fact, you may have noticed that an error lurks inside our decision table: for 2000 m of altitude, the table is non-deterministic: both conditions in the column header work!. " />
             </node>
           </node>
         </node>

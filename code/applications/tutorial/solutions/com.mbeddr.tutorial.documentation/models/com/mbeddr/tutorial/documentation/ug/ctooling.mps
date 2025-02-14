@@ -46,7 +46,7 @@
       <concept id="2179458690439382890" name="com.mbeddr.doc.structure.ConceptModelContentRemoval" flags="ng" index="2Cuv_b">
         <reference id="2179458690439403347" name="conceptDecl" index="2Cuq_M" />
       </concept>
-      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ngI" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -112,7 +112,7 @@
         <child id="5185579450379273128" name="header" index="1xAIax" />
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
-      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ngI" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
       <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
@@ -140,7 +140,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -219,7 +219,7 @@
           </node>
           <node concept="2NCZwO" id="5dchr4QgHJD" role="3z_lpI">
             <node concept="2NCMab" id="7YPARvXj08m" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
             </node>
           </node>
           <node concept="2Cuv_b" id="5dchr4QgJnS" role="3z_lpH">
@@ -286,7 +286,7 @@
           <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4QgX8Y" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QgX8Z" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
             </node>
           </node>
           <node concept="2Cuv_b" id="5dchr4QgX90" role="3z_lpH">
@@ -376,7 +376,7 @@
           <property role="3z_lpV" value="                                                                                                                                  &#10; stdlib_stub                                                                                                                      &#10;// contents are exported by default                                                                                               &#10;model   com.mbeddr.tutorial.documentation.code    imports nothing                                                                 &#10;                                                                                                                                  &#10;                                                                                                                                  &#10;void* malloc(size_t size);                                                                                                        &#10;void free(void* ptr);                                                                                                             &#10;                                                                                                      resources header: &lt;stdlib.h&gt;" />
           <node concept="2NCZwO" id="5dchr4Qh0Kt" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qh0Ku" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" />
+              <ref role="2NCMaa" to="zxcx:5dchr4QgsMd" resolve="stdlib_stub" />
             </node>
           </node>
         </node>
@@ -401,7 +401,7 @@
           <property role="3z_lpW" value="mbeddr" />
           <node concept="2NCZwO" id="7YPARvXjvGy" role="3z_lpI">
             <node concept="2NCMab" id="7YPARvXjvJY" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:7YPARvXjtIA" />
+              <ref role="2NCMaa" to="zxcx:7YPARvXjtIA" resolve="stdio_stub" />
             </node>
           </node>
         </node>
@@ -602,7 +602,7 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QlodJ" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4Qlog_" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
             </node>
           </node>
         </node>
@@ -792,7 +792,7 @@
           <property role="3z_lpV" value="reporting printf" />
           <node concept="2NCZwO" id="5dchr4QlnWH" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QlnZ5" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
             </node>
             <node concept="2NCMab" id="5dchr4QlnZd" role="2NCMaf">
               <ref role="2NCMaa" to="zxcx:1YUFCeFJNqs" resolve="reporting" />
@@ -915,10 +915,10 @@
           <property role="3z_lpJ" value="false" />
           <node concept="2NCZwO" id="5dchr4QloG7" role="3z_lpI">
             <node concept="2NCMab" id="5dchr4QloJD" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTsmlH" resolve="BuildConfiguration (c.m.t.d.code)" />
             </node>
             <node concept="2NCMab" id="5dchr4QloJL" role="2NCMaf">
-              <ref role="2NCMaa" to="zxcx:50GTeOTt2Nd" />
+              <ref role="2NCMaa" to="zxcx:50GTeOTt2Nd" resolve="HelloWorld" />
             </node>
           </node>
         </node>
