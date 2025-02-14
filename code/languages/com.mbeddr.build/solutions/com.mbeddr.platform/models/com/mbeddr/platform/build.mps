@@ -737,9 +737,6 @@
       <node concept="m$_yC" id="6rBfBe1X8sS" role="m$_yJ">
         <ref role="m$_y1" node="6rBfBe1WRMd" resolve="com.mbeddr.mpsutil.varscope" />
       </node>
-      <node concept="m$_yC" id="6rBfBe1XpxG" role="m$_yJ">
-        <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
-      </node>
       <node concept="m$_yC" id="3up1w8ILY2s" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
       </node>
@@ -751,9 +748,6 @@
       </node>
       <node concept="m$_yC" id="NMVW79ysTx" role="m$_yJ">
         <ref role="m$_y1" node="NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
-      </node>
-      <node concept="m$_yC" id="nnCEsShA5M" role="m$_yJ">
-        <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
       </node>
       <node concept="m$_yC" id="TGQG6kicFm" role="m$_yJ">
         <ref role="m$_y1" node="TGQG6khGGJ" resolve="com.mbeddr.mpsutil.uisupport" />
@@ -1339,6 +1333,12 @@
       <property role="m$_wk" value="com.mbeddr.doc" />
       <node concept="m$_yC" id="64SK4bcK9OL" role="m$_yJ">
         <ref role="m$_y1" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      </node>
+      <node concept="m$_yC" id="26jb3RVdtr7" role="m$_yJ">
+        <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
+      </node>
+      <node concept="m$_yC" id="26jb3RVdwfU" role="m$_yJ">
+        <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
       </node>
       <node concept="m$_yC" id="5fGcQI99wPx" role="m$_yJ">
         <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
