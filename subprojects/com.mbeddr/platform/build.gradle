@@ -10,30 +10,11 @@ import de.itemis.mps.gradle.tasks.MpsGenerate
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
 
-/**
- * The MPS home directory as a property, for use in tasks supporting lazy configuration. The property carries along
- * the dependency information (i.e. tasks necessary to produce the directory, if any).
- */
-DirectoryProperty mpsHomeProvider = objects.directoryProperty()
-
-if (!project.skipresolve_mps) {
-    def resolveMps = tasks.register('resolveMps', Sync) {
-        from configurations.mps.elements.map { it.collect(project.&zipTree) }
-        into mpsHomeDir
-    }
-    mpsHomeProvider.fileProvider(resolveMps.map { it.destinationDir })
-} else {
-    mpsHomeProvider.fileValue(rootProject.file(mpsHomeDir))
-}
-
 configurations {
-    mps { canBeConsumed = false }
     mpsLibraries { canBeConsumed = false }
 }
 
 dependencies {
-    mps "com.jetbrains:mps:$mpsBuild"
-
     if (project.hasProperty('mpsExtensionsZip')) {
         mpsLibraries files(project.property('mpsExtensionsZip'))
     } else {
@@ -153,7 +134,7 @@ publishing {
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
                 if (!project.skipresolve_mps) {
-                    configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    project(':com.mbeddr').configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
                         def dependencyNode = dependenciesNode.appendNode('dependency')
                         dependencyNode.appendNode('groupId', it.moduleGroup)
                         dependencyNode.appendNode('artifactId', it.moduleName)
