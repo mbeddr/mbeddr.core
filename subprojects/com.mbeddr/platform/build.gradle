@@ -32,7 +32,7 @@ tasks.register('build_allScripts', MpsGenerate) {
     environmentKind = EnvironmentKind.MPS
     mpsHome = mpsHomeProvider
 
-    projectLocation = rootProject.file('code/languages/com.mbeddr.build')
+    projectLocation = rootProject.file('code/languages/com.mbeddr.platform.build')
     pluginRoots.from(tasks.named('resolveMpsLibraries', Sync).map { it.destinationDir })
     pluginRoots.from(mpsHome.dir('plugins'))
 
