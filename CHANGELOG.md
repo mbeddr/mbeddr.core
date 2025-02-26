@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # February 2025
 
+## com.mbeddr.doc
+
+### Fixed
+
+- Generating screenshots now uses much less memory.
+
 ## com.mbeddr.mpsutil.compare
 
 ### Removed
