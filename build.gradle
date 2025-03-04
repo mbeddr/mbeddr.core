@@ -13,15 +13,15 @@ ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven
 ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
 //MPS version
-ext.mpsMajor = "2022.3"
-ext.mpsBuild = "2022.3.2"
+ext.mpsMajor = "2023.2"
+ext.mpsBuild = "2023.2.2"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
-ext.ciBuild = project.findProperty("forceCI") ?: !project.findProperty('mpsHomeDir') && project.hasProperty("teamcity")
+ext.ciBuild = project.hasProperty("forceCI") || project.hasProperty("teamcity")
 
 def hasNonEmptyProperty(property) {
     return project.hasProperty(property) && !project.getProperty(property).empty
@@ -59,56 +59,23 @@ subprojects {
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
 
-    // switch to snapshot/release repositories passed with -P option via command line, if any,
-    // or use default snapshot/release repositories otherwise
-    ext.snapshotRepository = project.findProperty('snapshotRepository') ?: defaultSnapshotRepository
-    ext.releaseRepository = project.findProperty('releaseRepository') ?: defaultReleaseRepository
-
-    // use depencency repositories passed as comma-separated list with -P option via command line, if any,
-    // or use default snapshot/release repositories otherwise
-    // TODO: String check is only required due to multiple executions of this block for each subproject - check if this can be refactored to a single global init
-    if (project.findProperty('dependencyRepositories') instanceof String) {
-        ext.dependencyRepositories = project.getProperty('dependencyRepositories').split(',') as Set
-    } else {
-        ext.dependencyRepositories = ['https://artifacts.itemis.cloud/repository/maven-mps/']
+    ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+    if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
+        ext.mbeddrBuild = "master"
     }
-
-    if (project.hasProperty("mbeddrVersion")) {
-        ext.mbeddrBuildNumber = project.getProperty('mbeddrVersion')
-    } else {
-        // setting mbeddrBuild
-        if (project.hasProperty('mbeddrBuild')) {
-            ext.mbeddrBuild = project.getProperty('mbeddrBuild')
+    if (ciBuild) {
+        if (project.hasProperty("mbeddrBuildCounter")) {
+            ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
         } else {
-            ext.mbeddrBuild = GitBasedVersioning.getGitBranch()
+            ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
         }
-        if(mbeddrBuild == "stable" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
-            ext.mbeddrBuild = "master"
+
+        if(mbeddrBuild == "master" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
+            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
+        } else {
+            // use same logic as in all other platforms for snapshot publications
+            ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int) + "-SNAPSHOT"
         }
-        // locally versions and all branches other than master/maintenance*/mps* are SNAPSHOTs
-        if (ciBuild) {
-            // setting mbeddrMajor
-            if (project.hasProperty('mbeddrMajor')) {
-                ext.mbeddrMajor = project.getProperty('mbeddrMajor')
-            }
-
-            // setting mbeddrMinor
-            if (project.hasProperty('mbeddrMinor')) {
-                ext.mbeddrMinor = project.getProperty('mbeddrMinor')
-            }
-
-            if (project.hasProperty("mbeddrBuildCounter")) {
-                ext.mbeddrBuildCounter = project.getProperty("mbeddrBuildCounter")
-            } else {
-                ext.mbeddrBuildCounter = GitBasedVersioning.getGitCommitCount()
-            }
-
-            if(mbeddrBuild == "master" || mbeddrBuild.matches(/(maintenance|mps)[\/-](mps)?\d+(\.\d+)*/)) {
-                ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int)
-            } else {
-                // use same logic as in all other platforms for snapshot publications
-                ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int) + "-SNAPSHOT"
-            }
 
         } else {
             ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
@@ -128,5 +95,4 @@ subprojects {
             println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
         }
 
-    }
- }
+}
