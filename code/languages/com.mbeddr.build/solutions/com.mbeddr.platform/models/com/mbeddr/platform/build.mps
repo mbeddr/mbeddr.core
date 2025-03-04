@@ -14926,8 +14926,8 @@
               <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
               <node concept="2Ry0Ak" id="3xFG3bj5cGW" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="3xFG3bj5cGX" role="2Ry0An">
-                  <property role="2Ry0Am" value="terms" />
+                <node concept="2Ry0Ak" id="1QQ0jURjobp" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.doc.terms" />
                 </node>
               </node>
             </node>
@@ -14938,7 +14938,7 @@
           <node concept="2Ry0Ak" id="6XXe7bCzPE7" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="6XXe7bCzPE8" role="2Ry0An">
-              <property role="2Ry0Am" value="terms" />
+              <property role="2Ry0Am" value="com.mbeddr.doc.terms" />
               <node concept="2Ry0Ak" id="6XXe7bCzPE9" role="2Ry0An">
                 <property role="2Ry0Am" value="com.mbeddr.doc.terms.mpl" />
               </node>
@@ -14978,7 +14978,7 @@
                 <node concept="2Ry0Ak" id="4PRpvcZJNZP" role="iGT6I">
                   <property role="2Ry0Am" value="languages" />
                   <node concept="2Ry0Ak" id="4PRpvcZJNZQ" role="2Ry0An">
-                    <property role="2Ry0Am" value="terms" />
+                    <property role="2Ry0Am" value="com.mbeddr.doc.terms" />
                     <node concept="2Ry0Ak" id="4PRpvcZJNZR" role="2Ry0An">
                       <property role="2Ry0Am" value="generator" />
                       <node concept="2Ry0Ak" id="4PRpvcZJNZS" role="2Ry0An">
@@ -15029,7 +15029,7 @@
               <node concept="2Ry0Ak" id="4PRpvcZJNZB" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="4PRpvcZJNZC" role="2Ry0An">
-                  <property role="2Ry0Am" value="terms" />
+                  <property role="2Ry0Am" value="com.mbeddr.doc.terms" />
                   <node concept="2Ry0Ak" id="4PRpvcZJNZD" role="2Ry0An">
                     <property role="2Ry0Am" value="languageModels" />
                   </node>
