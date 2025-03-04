@@ -132,7 +132,6 @@
         <child id="6202678563380433923" name="query" index="sbcd9" />
         <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
       </concept>
-      <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListNodeExpression" flags="ng" index="GFMny" />
       <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -375,7 +374,7 @@
           <node concept="3clFbS" id="2AYRZAcqNkr" role="2VODD2">
             <node concept="3clFbF" id="2AYRZAcqNoe" role="3cqZAp">
               <node concept="2OqwBi" id="2AYRZAcqNB4" role="3clFbG">
-                <node concept="GFMny" id="2AYRZAcqNod" role="2Oq$k0" />
+                <node concept="pncrf" id="1QQ0jURj4JJ" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2AYRZAcqPuP" role="2OqNvi">
                   <ref role="3Tt5mk" to="8zu2:7rXn3flJtYD" resolve="term" />
                 </node>
