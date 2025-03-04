@@ -92,7 +92,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -120,7 +120,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="3717301156197626279" name="jetbrains.mps.lang.core.structure.BasePlaceholder" flags="ng" index="3DQ70j">
@@ -14255,7 +14255,7 @@
                 <node concept="2Ry0Ak" id="3xFG3bj5cTW" role="2Ry0An">
                   <property role="2Ry0Am" value="languages" />
                   <node concept="2Ry0Ak" id="3xFG3bj5cTX" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.build" />
+                    <property role="2Ry0Am" value="com.mbeddr.platform.build" />
                     <node concept="2Ry0Ak" id="3xFG3bj5cTY" role="2Ry0An">
                       <property role="2Ry0Am" value="solutions" />
                       <node concept="2Ry0Ak" id="3xFG3bj5cTZ" role="2Ry0An">
@@ -14275,7 +14275,7 @@
             <node concept="2Ry0Ak" id="7Pr7tifzlkL" role="2Ry0An">
               <property role="2Ry0Am" value="languages" />
               <node concept="2Ry0Ak" id="7Pr7tifzlkR" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.build" />
+                <property role="2Ry0Am" value="com.mbeddr.platform.build" />
                 <node concept="2Ry0Ak" id="7Pr7tifzlkX" role="2Ry0An">
                   <property role="2Ry0Am" value="solutions" />
                   <node concept="2Ry0Ak" id="7Pr7tifzll3" role="2Ry0An">
@@ -14311,7 +14311,7 @@
                 <node concept="2Ry0Ak" id="4PRpvcZJNXR" role="2Ry0An">
                   <property role="2Ry0Am" value="languages" />
                   <node concept="2Ry0Ak" id="4PRpvcZJNXS" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.build" />
+                    <property role="2Ry0Am" value="com.mbeddr.platform.build" />
                     <node concept="2Ry0Ak" id="4PRpvcZJNXT" role="2Ry0An">
                       <property role="2Ry0Am" value="solutions" />
                       <node concept="2Ry0Ak" id="4PRpvcZJNXU" role="2Ry0An">
