@@ -163,6 +163,7 @@ tasks.register('printVersions') {
 }
 
 List<String> projectsInDependencyOrder = [
+        'com.mbeddr.platform.build',
         'com.mbeddr.mpsutil',
 //        'com.mbeddr.doc',
 //        'com.mbeddr.doc.aspect',
