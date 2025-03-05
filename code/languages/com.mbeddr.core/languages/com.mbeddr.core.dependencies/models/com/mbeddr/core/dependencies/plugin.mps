@@ -33,6 +33,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -510,7 +511,7 @@
               <ref role="3cqZAo" node="6o2p2Z1qMmd" resolve="f" />
             </node>
             <node concept="liA8E" id="6o2p2Z1qMmk" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.setLocation(int,int)" resolve="setLocation" />
+              <ref role="37wK5l" to="z60i:~Window.setLocation(int,int)" resolve="setLocation" />
               <node concept="3cmrfG" id="6o2p2Z1qMml" role="37wK5m">
                 <property role="3cmrfH" value="300" />
               </node>
@@ -1281,6 +1282,7 @@
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
     <property role="TrG5h" value="VisualizeActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="18ZQ$P84YIQ" role="ftER_">
       <node concept="tCFHf" id="6o2p2Z1wblE" role="ftvYc">
         <ref role="tCJdB" node="6o2p2Z1vK9r" resolve="ShowDependencies" />
