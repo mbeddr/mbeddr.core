@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.javainterpreter" uuid="c69d41ac-d672-4068-b5a5-b892873f6bb9" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.javainterpreter" uuid="c69d41ac-d672-4068-b5a5-b892873f6bb9" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
   </dependencies>
