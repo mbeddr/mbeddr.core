@@ -2,22 +2,15 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 
 plugins {
-    id 'de.itemis.mps.gradle.common' version '1.28.+'
+    id 'de.itemis.mps.gradle.common' version '1.29.+'
 }
-
-repositories {
-    maven { url 'https://artifacts.itemis.cloud/repository/maven-mps' }
-}
-
-ext.defaultSnapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
-ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 
 //MPS version
-ext.mpsMajor = "2024.1"
-ext.mpsBuild = "2024.1.1"
+ext.mpsMajor = "2024.3"
+ext.mpsBuild = "2024.3-RC1"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
+ext.mpsExtensionsVersion = "2024.3.+"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
@@ -77,22 +70,21 @@ subprojects {
             ext.mbeddrBuildNumber = GitBasedVersioning.getVersion(mbeddrBuild, mbeddrMajor, mbeddrMinor, mbeddrBuildCounter as int) + "-SNAPSHOT"
         }
 
-        } else {
-            ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
-            // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
-            //ext.mbeddrBuild = "master"
-        }
+    } else {
+        ext.mbeddrBuildNumber = "${ext.mbeddrMajor}.${ext.mbeddrMinor}-SNAPSHOT"
+        // TODO: not clear why this has been added - makes local builds from any branch to behave like a master build
+        //ext.mbeddrBuild = "master"
+    }
 
-        // Enable mbeddr to be assigned a different version number than mbeddr platform,
-        // as well as mbeddr to be built against a specified existing mbeddr platform version
-        ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
+    // Enable mbeddr to be assigned a different version number than mbeddr platform,
+    // as well as mbeddr to be built against a specified existing mbeddr platform version
+    ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
-        if (ciBuild) {
-            // Coerce TeamCity build number to mbeddrBuildNumber by default
-            // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
-            println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
-        } else {
-            println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
-        }
-
+    if (ciBuild) {
+        // Coerce TeamCity build number to mbeddrBuildNumber by default
+        // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
+        println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
+    } else {
+        println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
+    }
 }

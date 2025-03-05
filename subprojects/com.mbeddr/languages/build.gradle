@@ -15,10 +15,6 @@ ant.taskdef(name: "makeTests",
         classpath: file(rootProject.projectDir.absolutePath + "/tools/ant/tasks/TeamcityMakeTests.jar")
 )
 
-// Ant <junit> task support
-repositories {
-    mavenCentral()
-}
 configurations {
     junitAnt
     mbeddrPlatform
@@ -27,11 +23,11 @@ configurations {
 def usePrebuiltPlatform = ciBuild && !project.hasProperty('forceBuildPlatform')
 
 dependencies {
-    junitAnt 'junit:junit:4.12'
-    junitAnt('org.apache.ant:ant-junit:1.9.7') {
+    junitAnt 'junit:junit:4.13.2'
+    junitAnt('org.apache.ant:ant-junit:1.10.15') {
         transitive = false
     }
-    junitAnt('org.apache.ant:ant-junit4:1.9.7') {
+    junitAnt('org.apache.ant:ant-junit4:1.10.15') {
         transitive = false
     }
 

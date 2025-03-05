@@ -3319,11 +3319,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="2hC83VUYsa" role="3bR37C">
-        <node concept="3bR9La" id="2hC83VUYsb" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
-        </node>
-      </node>
     </node>
     <node concept="1E1JtD" id="E0fxGqluKi" role="3989C9">
       <property role="BnDLt" value="true" />

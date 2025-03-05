@@ -1,3 +1,4 @@
+import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 
@@ -49,10 +50,13 @@ if (os_name.contains('mac')) {
     mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
 }
 
-if (project.hasProperty("MPS_PATHS_SELECTOR")) {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
-} else {
-    ext.mpsPluginsDir = sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+    if (project.hasProperty("MPS_PATHS_SELECTOR")) {
+        sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
+    } else if (mpsMajor != '9999.9') {
+        sprintf(mpsPluginsDirPattern, "MPS$mpsMajor")
+    } else {
+        throw new GradleException("Cannot detect plugin directory for MPS prerelease, specify MPS_PATHS_SELECTOR property explicitly")
+    }
 }
 
 task install() {
@@ -102,7 +106,7 @@ subprojects {
     }
 
     dependencies {
-        ant_lib "org.apache.ant:ant-junit:1.10.1"
+        ant_lib "org.apache.ant:ant-junit:1.10.15"
     }
 
     ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
@@ -147,25 +151,6 @@ private static void configureRepositories(Project project) {
                 }
             }
         }
-    }
-    project.repositories {
-        def disableMavenLocal = project.hasProperty("disableMavenLocal") && project.getProperty("disableMavenLocal").toBoolean()
-        if (!disableMavenLocal) {
-            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
-            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
-            mavenLocal()
-        }
-        maven {
-            url 'https://artifacts.itemis.cloud/repository/maven-mps/'
-
-            if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
-                credentials {
-                    username project.getProperty('artifacts.itemis.cloud.user')
-                    password project.getProperty('artifacts.itemis.cloud.pw')
-                }
-            }
-        }
-        mavenCentral()
     }
 }
 
@@ -220,6 +205,3 @@ tasks.register('remigrate', Remigrate) {
 
     maxHeapSize = "4G"
 }
-
-// For the remigrate backend
-configureRepositories(project)
