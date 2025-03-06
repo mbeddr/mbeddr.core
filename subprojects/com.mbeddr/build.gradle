@@ -36,19 +36,21 @@ if (!project.skipresolve_mps) {
     mpsHomeProvider.fileValue(rootProject.file(mpsHomeDir))
 }
 
+ext.mpsPluginsDir = provider {
+    def userHome = System.properties['user.home']
 
-def userHome = System.properties['user.home']
-def mpsPluginsDirPattern
-def os_name = System.properties['os.name'].toLowerCase()
-// calculate system-specific plugins directory (since MPS 2020.1) according to:
-// https://www.jetbrains.com/help/idea/tuning-the-ide.html?_ga=2.229302868.95678467.1595072035-1152171669.1521775253#plugins-directory
-if (os_name.contains('mac')) {
-    mpsPluginsDirPattern = "$userHome/Library/Application Support/JetBrains/%s/plugins"
-} else if (os_name.contains('win')) {
-    mpsPluginsDirPattern = "${System.getenv('APPDATA')}\\JetBrains\\%s\\plugins"
-} else {
-    mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
-}
+    def mpsPluginsDirPattern
+    def os_name = System.properties['os.name'].toLowerCase()
+
+    // calculate system-specific plugins directory (since MPS 2020.1) according to:
+    // https://www.jetbrains.com/help/idea/tuning-the-ide.html?_ga=2.229302868.95678467.1595072035-1152171669.1521775253#plugins-directory
+    if (os_name.contains('mac')) {
+        mpsPluginsDirPattern = "$userHome/Library/Application Support/JetBrains/%s/plugins"
+    } else if (os_name.contains('win')) {
+        mpsPluginsDirPattern = "${System.getenv('APPDATA')}\\JetBrains\\%s\\plugins"
+    } else {
+        mpsPluginsDirPattern = "$userHome/.local/share/JetBrains/%s"
+    }
 
     if (project.hasProperty("MPS_PATHS_SELECTOR")) {
         sprintf(mpsPluginsDirPattern, project.getProperty("MPS_PATHS_SELECTOR"))
