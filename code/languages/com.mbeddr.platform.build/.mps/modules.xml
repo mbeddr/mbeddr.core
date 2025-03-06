@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd" folder="platform" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="platform" />
+    </projectModules>
+  </component>
+</project>

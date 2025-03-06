@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+    <component name="ProjectLibraryManager">
+        <option name="libraries">
+            <map>
+                <entry key="mps.extensions">
+                    <value>
+                        <Library>
+                            <option name="name" value="mps.extensions" />
+                            <option name="path" value="${mbeddr.github.core.home}/build/dependencies/de.itemis.mps.extensions" />
+                        </Library>
+                    </value>
+                </entry>
+            </map>
+        </option>
+    </component>
+</project>
