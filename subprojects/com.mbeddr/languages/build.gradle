@@ -1,4 +1,5 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsGenerate
 
 plugins {
     id 'base'
@@ -54,7 +55,28 @@ task resolve_mbeddr_platform() {
     }
 }
 
-task copy_logConfig(type: Copy, dependsOn: ':com.mbeddr:platform:build_allScripts') {
+tasks.register('build_allScripts', MpsGenerate) {
+    javaLauncher = jbrToolchain.javaLauncher
+    environmentKind = EnvironmentKind.MPS
+    mpsHome = mpsHomeProvider
+
+    projectLocation = rootProject.file('code/languages/com.mbeddr.build')
+
+    pluginRoots.from(
+            evaluationDependsOn(':com.mbeddr:platform')
+                    .tasks.named('resolveMpsLibraries', Sync)
+                    .map { it.destinationDir })
+    pluginRoots.from(mpsHome.dir('plugins'))
+
+    folderMacros.put('mbeddr.github.core.home', rootProject.layout.projectDirectory)
+
+    // Note that MpsGenerate loads project libraries defined in the project (in this case com.mbeddr.build). In case we
+    // are using a pre-built mbeddr platform, the project library dependency should, strictly speaking, be replaced with
+    // the plugin/library dependency on the pre-built artifact. However, this is difficult to do and probably not worth
+    // implementing just yet.
+}
+
+task copy_logConfig(type: Copy, dependsOn: 'build_allScripts') {
     from "$rootDir/debug"
     into "$mpsHomeDir/bin"
 }
@@ -64,7 +86,7 @@ ant.taskdef(name: 'junit', classname: 'org.apache.tools.ant.taskdefs.optional.ju
 ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator',
         classpath: configurations.junitAnt.asPath)
 
-task build_mbeddr(type: BuildLanguages, dependsOn: [':com.mbeddr:platform:build_allScripts', 'resolve_mbeddr_platform']) {
+task build_mbeddr(type: BuildLanguages, dependsOn: ['build_allScripts', 'resolve_mbeddr_platform']) {
     script script_build_mbeddr
     outputs.dir("$artifactsDir/mbeddr")
 }

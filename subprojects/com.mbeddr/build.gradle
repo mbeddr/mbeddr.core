@@ -6,11 +6,37 @@ plugins {
     id 'buildlogic.mps-conventions'
 }
 
+configurations {
+    mps { canBeConsumed = false }
+}
+
+dependencies {
+    // For a release version of MPS, use this dependency:
+    //mps "com.jetbrains:mps:$mpsBuild"
+    mps "com.jetbrains.mps:mps-prerelease:$mpsBuild"
+}
+
 // path variables
 // If mpsHomeDir is set explicitly, skip the MPS resolution step and use the explicit path (which may be relative from
 // the root directory).
 ext.skipresolve_mps = project.hasProperty('mpsHomeDir')
 ext.mpsHomeDir = rootProject.file(project.findProperty('mpsHomeDir') ?: "build/mps")
+
+/**
+ * The MPS home directory as a property, for use in tasks supporting lazy configuration. The property carries along
+ * the dependency information (i.e. tasks necessary to produce the directory, if any).
+ */
+ext.mpsHomeProvider = objects.directoryProperty()
+
+if (!project.skipresolve_mps) {
+    def resolveMps = tasks.register('resolveMps', Sync) {
+        from configurations.mps.elements.map { it.collect(project.&zipTree) }
+        into mpsHomeDir
+    }
+    mpsHomeProvider.fileProvider(resolveMps.map { it.destinationDir })
+} else {
+    mpsHomeProvider.fileValue(rootProject.file(mpsHomeDir))
+}
 
 ext.mpsPluginsDir = provider {
     def userHome = System.properties['user.home']
@@ -141,6 +167,7 @@ tasks.register('printVersions') {
 }
 
 List<String> projectsInDependencyOrder = [
+        'com.mbeddr.platform.build',
         'com.mbeddr.mpsutil',
 //        'com.mbeddr.doc',
 //        'com.mbeddr.doc.aspect',

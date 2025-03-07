@@ -14259,7 +14259,7 @@
                 <node concept="2Ry0Ak" id="3xFG3bj5cTW" role="2Ry0An">
                   <property role="2Ry0Am" value="languages" />
                   <node concept="2Ry0Ak" id="3xFG3bj5cTX" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.build" />
+                    <property role="2Ry0Am" value="com.mbeddr.platform.build" />
                     <node concept="2Ry0Ak" id="3xFG3bj5cTY" role="2Ry0An">
                       <property role="2Ry0Am" value="solutions" />
                       <node concept="2Ry0Ak" id="3xFG3bj5cTZ" role="2Ry0An">
@@ -14279,7 +14279,7 @@
             <node concept="2Ry0Ak" id="7Pr7tifzlkL" role="2Ry0An">
               <property role="2Ry0Am" value="languages" />
               <node concept="2Ry0Ak" id="7Pr7tifzlkR" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.build" />
+                <property role="2Ry0Am" value="com.mbeddr.platform.build" />
                 <node concept="2Ry0Ak" id="7Pr7tifzlkX" role="2Ry0An">
                   <property role="2Ry0Am" value="solutions" />
                   <node concept="2Ry0Ak" id="7Pr7tifzll3" role="2Ry0An">
@@ -14315,7 +14315,7 @@
                 <node concept="2Ry0Ak" id="4PRpvcZJNXR" role="2Ry0An">
                   <property role="2Ry0Am" value="languages" />
                   <node concept="2Ry0Ak" id="4PRpvcZJNXS" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.build" />
+                    <property role="2Ry0Am" value="com.mbeddr.platform.build" />
                     <node concept="2Ry0Ak" id="4PRpvcZJNXT" role="2Ry0An">
                       <property role="2Ry0Am" value="solutions" />
                       <node concept="2Ry0Ak" id="4PRpvcZJNXU" role="2Ry0An">
