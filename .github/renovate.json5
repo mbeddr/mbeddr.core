@@ -44,6 +44,13 @@
       "automerge": true,
       "platformAutomerge": false,
       "automergeSchedule": "* 4-6 * * 3"
+    },
+
+    {
+      // Disable JBR updates on maintenance branches
+      "matchPackageNames": ["com.jetbrains.jdk:*"],
+      "matchBaseBranches": ["!/^master$/"],
+      "enabled": false
     }
   ]
 }
