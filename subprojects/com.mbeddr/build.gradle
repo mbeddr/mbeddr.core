@@ -102,7 +102,7 @@ subprojects {
     }
 
     dependencies {
-        ant_lib "org.apache.ant:ant-junit:1.10.1"
+        ant_lib "org.apache.ant:ant-junit:1.10.15"
     }
 
     ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = configurations.ant_lib
