@@ -20,9 +20,10 @@
     },
 
     {
-      // MPS libraries: do not treat letters in the commit hash suffix as alpha/beta/etc. unstable versions.
+      // MPS-extensions: allow unstable versions on master (snapshots, a/b letters in commit hashes, etc.)
+      "matchBaseBranches": ["master"],
       "matchPackageNames": ["de.itemis.mps:extensions"],
-      "versioning": "loose",
+      "ignoreUnstable": false,
     },
 
     {
