@@ -5,6 +5,9 @@
   ],
   "enabledManagers": ["gradle", "gradle-wrapper"],
 
+  // Renovate master and recent maintenance branches
+  "baseBranches": ["master", "/^maintenance/mps202[4-9][0-9]/"],
+
   "packageRules": [
     {
       "matchPackageNames": ["download-jbr:download-jbr.gradle.plugin", "de.itemis.mps.gradle.common:de.itemis.mps.gradle.common.gradle.plugin"],
@@ -15,10 +18,39 @@
       "matchPackageNames": ["org.apache.ant:*"],
       "groupName": "ant"
     },
+
     {
-      "matchBaseBranches": ["master"],
+      // MPS libraries: do not treat letters in the commit hash suffix as alpha/beta/etc. unstable versions.
       "matchPackageNames": ["de.itemis.mps:extensions"],
-      "ignoreUnstable": false,
+      "versioning": "loose",
+    },
+
+    {
+      // MPS and libraries: separate minor and patch updates in order to disable minor but leave patch updates enabled
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
+      "separateMinorPatch": true,
+    },
+
+    {
+      // MPS and libraries: disable major and minor updates, only enable patch updates
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
+    },
+
+    {
+      // MPS and libraries: merge PRs on Wednesday morning
+      "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
+      "automerge": true,
+      "platformAutomerge": false,
+      "automergeSchedule": "* 4-6 * * 3"
+    },
+
+    {
+      // Disable JBR updates on maintenance branches
+      "matchPackageNames": ["com.jetbrains.jdk:*"],
+      "matchBaseBranches": ["!/^master$/"],
+      "enabled": false
     }
   ]
 }
