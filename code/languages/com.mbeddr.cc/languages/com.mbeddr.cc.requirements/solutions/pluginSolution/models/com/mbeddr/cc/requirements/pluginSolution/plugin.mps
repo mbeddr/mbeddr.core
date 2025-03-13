@@ -396,7 +396,7 @@
     <node concept="1QGGSu" id="6ghi$I1W7AX" role="3Uehp1">
       <node concept="10M0yZ" id="6ghi$I1WacR" role="3xaMm5">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
     </node>
   </node>
@@ -568,7 +568,7 @@
     <node concept="1QGGSu" id="6ghi$I1WccG" role="3Uehp1">
       <node concept="10M0yZ" id="6ghi$I1WdI0" role="3xaMm5">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
     </node>
   </node>

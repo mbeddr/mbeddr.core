@@ -529,7 +529,7 @@
     <node concept="1QGGSu" id="MipY_gdpYf" role="3Uehp1">
       <node concept="10M0yZ" id="MipY_gdr1y" role="3xaMm5">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
       </node>
     </node>
   </node>
@@ -2183,7 +2183,7 @@
                     <node concept="1QGGSu" id="MipY_gcWZb" role="1QGGTw">
                       <node concept="10M0yZ" id="MipY_gd3QS" role="3xaMm5">
                         <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
                       </node>
                     </node>
                   </node>
@@ -3834,7 +3834,7 @@
                                         <node concept="1QGGSu" id="MipY_gdgc4" role="1QGGTw">
                                           <node concept="10M0yZ" id="MipY_gdi5C" role="3xaMm5">
                                             <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
                                           </node>
                                         </node>
                                       </node>
@@ -4004,7 +4004,7 @@
                                         <node concept="1QGGSu" id="MipY_gd9oS" role="1QGGTw">
                                           <node concept="10M0yZ" id="MipY_gdbko" role="3xaMm5">
                                             <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
                                           </node>
                                         </node>
                                       </node>
@@ -4111,7 +4111,7 @@
     <node concept="1QGGSu" id="MipY_gc55f" role="1nVCmq">
       <node concept="10M0yZ" id="MipY_gcgqb" role="3xaMm5">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="Toolwindows" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
       </node>
     </node>
   </node>

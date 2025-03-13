@@ -1009,7 +1009,7 @@
     <property role="TrG5h" value="userGuideInHelpMenu" />
     <node concept="ftmFs" id="2NmTaRWDlpn" role="ftER_">
       <node concept="tCFHf" id="2NmTaRWDlpq" role="ftvYc">
-        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGUide" />
+        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGuide" />
       </node>
       <node concept="tCFHf" id="2QDtwSqDkt1" role="ftvYc">
         <ref role="tCJdB" node="2QDtwSqDi2L" resolve="openEditingGuide" />
@@ -1027,7 +1027,7 @@
       <node concept="2a7GMi" id="4IT6unro1V" role="ftvYc" />
       <node concept="2a7GMi" id="4IT6unro20" role="ftvYc" />
       <node concept="tCFHf" id="4IT6unqfNl" role="ftvYc">
-        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGUide" />
+        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGuide" />
       </node>
       <node concept="tCFHf" id="2QDtwSqDktm" role="ftvYc">
         <ref role="tCJdB" node="2QDtwSqDi2L" resolve="openEditingGuide" />
