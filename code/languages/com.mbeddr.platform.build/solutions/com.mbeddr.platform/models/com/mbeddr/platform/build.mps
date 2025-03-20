@@ -15387,7 +15387,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="4aKYPQyr67s" role="2G$12L">
-        <property role="TrG5h" value="com.mbeddr.spreadsheet" />
+        <property role="TrG5h" value="com.mbeddr.spreadsheat" />
         <property role="3LESm3" value="1d891f7b-dc93-42f9-a4bc-b016656b14e2" />
         <node concept="3rtmxn" id="3xFG3bj5cXc" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cXd" role="3rtmxm">
@@ -15561,7 +15561,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="4aKYPQyrdec" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.spreadsheet#4354378109086982931" />
+          <property role="TrG5h" value="com.mbeddr.spreadsheat#4354378109086982931" />
           <property role="3LESm3" value="7986ede4-bb02-4e5d-8e13-03458d393ab7" />
           <node concept="1SiIV0" id="4aKYPQyrecS" role="3bR37C">
             <node concept="3bR9La" id="4aKYPQyrecT" role="1SiIV1">
