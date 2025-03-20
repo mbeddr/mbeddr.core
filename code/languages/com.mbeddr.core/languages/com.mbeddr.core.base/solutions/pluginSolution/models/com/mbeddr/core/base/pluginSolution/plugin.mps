@@ -140,6 +140,7 @@
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1215865999894" name="mnemonic" index="ngHcd" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -154,6 +155,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
@@ -214,7 +216,7 @@
       <concept id="471625927503601927" name="jetbrains.mps.lang.plugin.structure.NumberToolShortcut" flags="ng" index="15feLf">
         <property id="471625927503601955" name="number" index="15feLF" />
       </concept>
-      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ngI" index="1bYyw_">
+      <concept id="6193305307616715384" name="jetbrains.mps.lang.plugin.structure.ShortcutChange" flags="ng" index="1bYyw_">
         <reference id="6193305307616734326" name="action" index="1bYAoF" />
       </concept>
       <concept id="1206092561075" name="jetbrains.mps.lang.plugin.structure.ActionParameterReferenceOperation" flags="nn" index="3gHZIF" />
@@ -226,7 +228,7 @@
         <reference id="1217252646389" name="key" index="1DUlNI" />
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -266,7 +268,7 @@
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1153422105332" name="jetbrains.mps.baseLanguage.structure.RemExpression" flags="nn" index="2dk9JS" />
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
-      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ngI" index="2frcj7">
+      <concept id="2323553266850475941" name="jetbrains.mps.baseLanguage.structure.IHasModifiers" flags="ng" index="2frcj7">
         <child id="2323553266850475953" name="modifiers" index="2frcjj" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
@@ -289,7 +291,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -380,7 +382,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ">
@@ -465,7 +467,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -508,7 +510,7 @@
       <concept id="1184952934362" name="jetbrains.mps.baseLanguage.structure.DimensionExpression" flags="nn" index="3$GHV9">
         <child id="1184953288404" name="expression" index="3$I4v7" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -614,7 +616,7 @@
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp">
         <reference id="1218736638915" name="classifier" index="32nkFo" />
       </concept>
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
@@ -716,7 +718,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -1227,6 +1229,7 @@
   <node concept="tC5Ba" id="7uLL3Mf2Aq0">
     <property role="3GE5qa" value="terminal" />
     <property role="TrG5h" value="terminalForModule" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="7uLL3Mf2Aq3" role="ftER_">
       <node concept="tCFHf" id="7uLL3Mf2Aq4" role="ftvYc">
         <ref role="tCJdB" node="7uLL3Mf2tAp" resolve="openTerminalForModule" />
@@ -2143,6 +2146,7 @@
   <node concept="tC5Ba" id="7uLL3Mf2PnX">
     <property role="3GE5qa" value="terminal" />
     <property role="TrG5h" value="terminalForModel" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="7uLL3Mf2PnY" role="ftER_">
       <node concept="tCFHf" id="7uLL3Mf2Po3" role="ftvYc">
         <ref role="tCJdB" node="7uLL3Mf2Fyf" resolve="openTerminalForModelOutput" />
@@ -4354,6 +4358,7 @@
   <node concept="tC5Ba" id="2HzhasNzNJV">
     <property role="3GE5qa" value="search" />
     <property role="TrG5h" value="MbeddrSearchModelGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2HzhasNzNJW" role="ftER_">
       <node concept="tCFHf" id="2HzhasNzPyl" role="ftvYc">
         <ref role="tCJdB" node="2HzhasNzNK1" resolve="OpenSearchActionOnModel" />
@@ -7862,6 +7867,7 @@
   <node concept="tC5Ba" id="3jNX2XuMqRP">
     <property role="3GE5qa" value="assessment" />
     <property role="TrG5h" value="AssessmentGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3jNX2XuMqRQ" role="ftER_">
       <node concept="tCFHf" id="3jNX2XuMqRT" role="ftvYc">
         <ref role="tCJdB" node="3jNX2XuMqyL" resolve="UpdateAssessments" />
@@ -7876,11 +7882,7 @@
     <property role="3GE5qa" value="buttonsInEditor" />
     <property role="TrG5h" value="TurnButtonsInEditorOn" />
     <property role="2uzpH1" value="Editor Helper Buttons" />
-    <node concept="1DS2jV" id="3slbD0C6UdE" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3slbD0C6UdF" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3slbD0C7DLv" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -7934,6 +7936,7 @@
   <node concept="tC5Ba" id="3slbD0C6VXu">
     <property role="3GE5qa" value="buttonsInEditor" />
     <property role="TrG5h" value="EditorButtonGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3slbD0C6VXv" role="ftER_">
       <node concept="tCFHf" id="3slbD0C6VXz" role="ftvYc">
         <ref role="tCJdB" node="3slbD0C6UdB" resolve="TurnButtonsInEditorOn" />
@@ -7952,11 +7955,7 @@
     <property role="3GE5qa" value="buttonsInEditor" />
     <property role="TrG5h" value="TurnButtonsInEditorOff" />
     <property role="2uzpH1" value="Editor Helper Buttons" />
-    <node concept="1DS2jV" id="3slbD0C7$Ao" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3slbD0C7$Ap" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3slbD0C7DL8" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -9298,6 +9297,7 @@
     <property role="3GE5qa" value="ideEnhancement" />
     <property role="TrG5h" value="mbeddrModelGroup" />
     <property role="1rdrE6" value="true" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="IviauxKTs" role="ftER_">
       <node concept="tCFHf" id="IviauxKTv" role="ftvYc">
         <ref role="tCJdB" node="16oY6Yuy2BP" resolve="CreateMbeddrModel" />
@@ -9679,6 +9679,7 @@
     <property role="2f7twF" value="New Roots" />
     <property role="1XlLyE" value="true" />
     <property role="1rdrE6" value="true" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="Iviav56X2" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
       <ref role="2f8Tey" to="tprs:1ePK2dvwshF" resolve="newActions" />
@@ -18497,6 +18498,7 @@
   <node concept="tC5Ba" id="7Q6Q5uyzQ95">
     <property role="TrG5h" value="genericTreeGroup" />
     <property role="3GE5qa" value="tree" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="7Q6Q5uyzQag" role="ftER_">
       <node concept="tCFHf" id="7NyyyjNHoKk" role="ftvYc">
         <ref role="tCJdB" node="7Q6Q5uyyekc" resolve="OpenGenericTreeTool" />
@@ -18526,6 +18528,7 @@
   </node>
   <node concept="tC5Ba" id="53G_t0FcvfX">
     <property role="TrG5h" value="mbeddrPlatformEditorPopupGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="53G_t0FcvgP" role="ftER_">
       <node concept="2a7GMi" id="53G_t0FcvgS" role="ftvYc" />
       <node concept="10WQ6h" id="53G_t0FcvgX" role="ftvYc">
@@ -18542,6 +18545,7 @@
   </node>
   <node concept="tC5Ba" id="goNQ8fiCdc">
     <property role="TrG5h" value="mbeddrPlatformModelGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="goNQ8fiCdd" role="ftER_">
       <node concept="2a7GMi" id="goNQ8fiCde" role="ftvYc" />
       <node concept="10WQ6h" id="goNQ8fiCdf" role="ftvYc">
@@ -18555,6 +18559,7 @@
   </node>
   <node concept="tC5Ba" id="goNQ8fiE3l">
     <property role="TrG5h" value="mbeddrPlatformSolutionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="goNQ8fiE3m" role="ftER_">
       <node concept="2a7GMi" id="goNQ8fiE3n" role="ftvYc" />
       <node concept="10WQ6h" id="goNQ8fiE3o" role="ftvYc">
@@ -18570,6 +18575,7 @@
     <property role="TrG5h" value="mbeddrPlatformProjectionModeGroup" />
     <property role="2f7twF" value="Projection" />
     <property role="1XlLyE" value="true" />
+    <property role="22ra45" value="true" />
     <node concept="30SVEG" id="3kpOq3PZX3V" role="2f5YQi">
       <property role="30T2Og" value="ViewMenu" />
       <ref role="tU$_T" to="tprs:hF$pMQx" resolve="IDEAMainMenu" />
@@ -18582,6 +18588,7 @@
   </node>
   <node concept="tC5Ba" id="goNQ8fxK7J">
     <property role="TrG5h" value="CodeMenuExtensions" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="goNQ8fxK8l" role="ftER_">
       <node concept="2a7GMi" id="goNQ8fyUxC" role="ftvYc" />
       <node concept="10WQ6h" id="goNQ8fyUxT" role="ftvYc">
@@ -18600,6 +18607,7 @@
     <property role="TrG5h" value="mbeddrPlatformWizards" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Wizards" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="goNQ8fyUy4" role="ftER_">
       <node concept="10WQ6h" id="goNQ8fyUy5" role="ftvYc">
         <property role="TrG5h" value="mbeddrPlatformWizards" />
@@ -18782,6 +18790,7 @@
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Show Tree View ..." />
     <property role="1rdrE6" value="true" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="bhVSeFHkXT" role="2f5YQi">
       <ref role="2f8Tey" node="53G_t0FcvgX" resolve="mbeddrPlatformEditorPopupExtensions" />
       <ref role="tU$_T" node="53G_t0FcvfX" resolve="mbeddrPlatformEditorPopupGroup" />
@@ -20331,6 +20340,7 @@
   <node concept="tC5Ba" id="2nGuY2QPdFy">
     <property role="TrG5h" value="accentSolutionTreeActions" />
     <property role="3GE5qa" value="solutionTree" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2nGuY2QPdFz" role="ftER_">
       <node concept="tCFHf" id="2nGuY2QOyE$" role="ftvYc">
         <ref role="tCJdB" node="2nGuY2QOx22" resolve="openSolutionTree2" />
@@ -20472,6 +20482,7 @@
   <node concept="tC5Ba" id="3ODAlcN4S1o">
     <property role="3GE5qa" value="tree.toolbar" />
     <property role="TrG5h" value="toolbackGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3ODAlcN4S1x" role="ftER_">
       <node concept="tCFHf" id="3ODAlcNAoup" role="ftvYc">
         <ref role="tCJdB" node="3ODAlcNAny7" resolve="RefreshButton" />
@@ -23894,6 +23905,7 @@
   <node concept="tC5Ba" id="79jc6Yzh4Gr">
     <property role="3GE5qa" value="screenshot" />
     <property role="TrG5h" value="screenshotting" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="79jc6Yzh5lQ" role="ftER_">
       <node concept="2a7GMi" id="79jc6YzhUcS" role="ftvYc" />
       <node concept="tCFHf" id="79jc6Yzh5lT" role="ftvYc">
@@ -23920,6 +23932,7 @@
     <property role="3GE5qa" value="documentationStuff" />
     <property role="TrG5h" value="AddDocumentation" />
     <property role="2uzpH1" value="Add Documentation" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7HcPDtliVd7" role="1NuT2Z">
       <property role="TrG5h" value="editorContext" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -24501,6 +24514,7 @@
   <node concept="tC5Ba" id="6KjVnJoTXb0">
     <property role="3GE5qa" value="search" />
     <property role="TrG5h" value="MbeddrSearchProjectGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6KjVnJoTXb1" role="ftER_">
       <node concept="tCFHf" id="6KjVnJoTXb2" role="ftvYc">
         <ref role="tCJdB" node="6KjVnJoX4Fv" resolve="OpenSearchActionOnProject" />
@@ -24598,6 +24612,7 @@
   </node>
   <node concept="tC5Ba" id="6KjVnJoXyer">
     <property role="TrG5h" value="mbeddrPlatformProjectGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6KjVnJoXyes" role="ftER_">
       <node concept="2a7GMi" id="6KjVnJoXyet" role="ftvYc" />
       <node concept="10WQ6h" id="6KjVnJoXyeu" role="ftvYc">
@@ -24631,6 +24646,7 @@
   <node concept="tC5Ba" id="vqDSpa73Xz">
     <property role="3GE5qa" value="search" />
     <property role="TrG5h" value="MbeddrSearchGlobalGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="vqDSpa73X$" role="ftER_">
       <node concept="tCFHf" id="vqDSpa73X_" role="ftvYc">
         <ref role="tCJdB" node="vqDSpa9D$n" resolve="OpenSearchActionGlobally" />
@@ -25436,6 +25452,7 @@
   </node>
   <node concept="tC5Ba" id="6hfhqO7XuD$">
     <property role="TrG5h" value="mbeddrPlatformLanguageGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6hfhqO7XuD_" role="ftER_">
       <node concept="2a7GMi" id="6hfhqO7XuDA" role="ftvYc" />
       <node concept="10WQ6h" id="6hfhqO7XuDB" role="ftvYc">
@@ -25450,6 +25467,7 @@
   <node concept="tC5Ba" id="6hfhqO7XuP1">
     <property role="3GE5qa" value="search" />
     <property role="TrG5h" value="MbeddrSearchModuleGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6hfhqO7XuP2" role="ftER_">
       <node concept="tCFHf" id="6hfhqO7XuP3" role="ftvYc">
         <ref role="tCJdB" node="2Gn1WTgS$I7" resolve="OpenSearchActionOnModule" />

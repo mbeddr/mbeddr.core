@@ -47,6 +47,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -397,6 +398,7 @@
   <node concept="2DaZZR" id="24KZuFtD0Ka" />
   <node concept="tC5Ba" id="24KZuFtD0Kb">
     <property role="TrG5h" value="pasteGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="24KZuFtEE3D" role="ftER_">
       <node concept="tCFHf" id="24KZuFtEE3G" role="ftvYc">
         <ref role="tCJdB" node="24KZuFtD0Kd" resolve="pasteAsXmlContent" />
@@ -2467,6 +2469,7 @@
   </node>
   <node concept="tC5Ba" id="4mEgncq5mG6">
     <property role="TrG5h" value="importXmlActions" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="4mEgncq5mG8" role="ftER_">
       <node concept="tCFHf" id="4mEgncq5mGb" role="ftvYc">
         <ref role="tCJdB" node="4mEgncq5mFL" resolve="importXMLFile" />

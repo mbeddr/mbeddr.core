@@ -10,8 +10,6 @@
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="-1" />
     <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -40,7 +38,6 @@
     <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
-    <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="1kj4" ref="r:0bcaf439-5bc6-429b-a457-4e0d9746449f(jetbrains.mps.make.delta)" />
     <import index="iqmz" ref="r:6bc4612e-813e-4efa-8244-77b9a4da8b36(jetbrains.mps.internal.make.runtime.java)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
@@ -52,8 +49,10 @@
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="v9gs" ref="r:a139668a-5a0e-46e2-a802-102190e497e5(jetbrains.mps.core.tool.environment.util)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="w0gx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.structure.modules(MPS.Core/)" />
+    <import index="hfuk" ref="r:b25dd364-bc3f-4a66-97d1-262009610c5e(jetbrains.mps.make)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -93,6 +92,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -109,7 +109,7 @@
         <reference id="1217252646389" name="key" index="1DUlNI" />
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -249,7 +249,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -278,7 +278,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1170075670744" name="jetbrains.mps.baseLanguage.structure.SynchronizedStatement" flags="nn" index="1HWtB8">
@@ -355,7 +355,7 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
@@ -448,7 +448,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -757,6 +757,7 @@
   </node>
   <node concept="tC5Ba" id="41AlOFgDs2N">
     <property role="TrG5h" value="DocModuleContextMenu" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="41AlOFgDs2P" role="ftER_">
       <node concept="tCFHf" id="41AlOFgDs2S" role="ftvYc">
         <ref role="tCJdB" node="41AlOFgBPyg" resolve="UpdateAllCodeTexts" />
@@ -1063,7 +1064,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="1A8gWv2rerI" role="3cqZAp" />
                 <node concept="3cpWs8" id="5pm8$ZexlPw" role="3cqZAp">
                   <node concept="3cpWsn" id="5pm8$ZexlPx" role="3cpWs9">
                     <property role="TrG5h" value="outputPath" />
@@ -1073,16 +1073,11 @@
                     <node concept="2YIFZM" id="5pm8$ZezCJs" role="33vP2m">
                       <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
                       <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                      <node concept="2YIFZM" id="49PUF$HTiTJ" role="37wK5m">
-                        <ref role="1Pybhc" to="z1c3:~ProjectPathUtil" resolve="ProjectPathUtil" />
-                        <ref role="37wK5l" to="z1c3:~ProjectPathUtil.getGeneratorOutputPath(jetbrains.mps.project.structure.modules.ModuleDescriptor)" resolve="getGeneratorOutputPath" />
-                        <node concept="2OqwBi" id="49PUF$HTiTK" role="37wK5m">
-                          <node concept="37vLTw" id="49PUF$HVtqg" role="2Oq$k0">
-                            <ref role="3cqZAo" node="49PUF$HVrVy" resolve="module" />
-                          </node>
-                          <node concept="liA8E" id="49PUF$HTiTM" role="2OqNvi">
-                            <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleDescriptor()" resolve="getModuleDescriptor" />
-                          </node>
+                      <node concept="2YIFZM" id="7Plgyert59J" role="37wK5m">
+                        <ref role="37wK5l" node="7Plgyersbl9" resolve="getGeneratorOutputPath" />
+                        <ref role="1Pybhc" node="6RvWQYjPIDF" resolve="GenerationHelper" />
+                        <node concept="37vLTw" id="7Plgyert5aP" role="37wK5m">
+                          <ref role="3cqZAo" node="49PUF$HVrVy" resolve="module" />
                         </node>
                       </node>
                     </node>
@@ -1749,6 +1744,134 @@
       </node>
       <node concept="3Tm1VV" id="6RvWQYjPII1" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="7Plgyers8SE" role="jymVt" />
+    <node concept="2YIFZL" id="7Plgyersbl9" role="jymVt">
+      <property role="TrG5h" value="getGeneratorOutputPath" />
+      <node concept="3clFbS" id="7Plgyersblc" role="3clF47">
+        <node concept="3cpWs8" id="7Plgyersd19" role="3cqZAp">
+          <node concept="3cpWsn" id="7Plgyersd1a" role="3cpWs9">
+            <property role="TrG5h" value="macroHelper" />
+            <node concept="3uibUv" id="7Plgyersd1b" role="1tU5fm">
+              <ref role="3uigEE" to="18ew:~MacroHelper" resolve="MacroHelper" />
+            </node>
+            <node concept="2YIFZM" id="7Plgyersfvm" role="33vP2m">
+              <ref role="37wK5l" to="18ew:~MacrosFactory.forModule(org.jetbrains.mps.openapi.module.SModule)" resolve="forModule" />
+              <ref role="1Pybhc" to="18ew:~MacrosFactory" resolve="MacrosFactory" />
+              <node concept="37vLTw" id="7Plgyersfvo" role="37wK5m">
+                <ref role="3cqZAo" node="7Plgyerschs" resolve="module" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7Plgyersga$" role="3cqZAp">
+          <node concept="3cpWsn" id="7Plgyersga_" role="3cpWs9">
+            <property role="TrG5h" value="md" />
+            <node concept="3uibUv" id="7PlgyersgaA" role="1tU5fm">
+              <ref role="3uigEE" to="w0gx:~ModuleDescriptor" resolve="ModuleDescriptor" />
+            </node>
+            <node concept="2OqwBi" id="7Plgyersh2A" role="33vP2m">
+              <node concept="37vLTw" id="7PlgyersgE_" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Plgyerschs" resolve="module" />
+              </node>
+              <node concept="liA8E" id="7Plgyershtd" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleDescriptor()" resolve="getModuleDescriptor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7Plgyerskwv" role="3cqZAp">
+          <node concept="3clFbS" id="7Plgyerskwx" role="3clFbx">
+            <node concept="3cpWs6" id="7Plgyersm_c" role="3cqZAp">
+              <node concept="10Nm6u" id="7Plgyersn6b" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="7Plgyerslqu" role="3clFbw">
+            <node concept="10Nm6u" id="7PlgyerslVb" role="3uHU7w" />
+            <node concept="37vLTw" id="7Plgyersk$i" role="3uHU7B">
+              <ref role="3cqZAo" node="7Plgyersga_" resolve="md" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7Plgyersi0L" role="3cqZAp">
+          <node concept="3y3z36" id="7Plgyersi0M" role="3clFbw">
+            <node concept="2OqwBi" id="7Plgyersj9H" role="3uHU7B">
+              <node concept="37vLTw" id="7PlgyersiS8" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Plgyersga_" resolve="md" />
+              </node>
+              <node concept="liA8E" id="7Plgyersj9I" role="2OqNvi">
+                <ref role="37wK5l" to="w0gx:~ModuleDescriptor.getOutputRoot()" resolve="getOutputRoot" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7Plgyersi0O" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="7Plgyersi0Q" role="3clFbx">
+            <node concept="3cpWs6" id="7Plgyersi0R" role="3cqZAp">
+              <node concept="2OqwBi" id="7Plgyersjcx" role="3cqZAk">
+                <node concept="37vLTw" id="7PlgyersiSB" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Plgyersd1a" resolve="macroHelper" />
+                </node>
+                <node concept="liA8E" id="7Plgyersjcy" role="2OqNvi">
+                  <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
+                  <node concept="2OqwBi" id="7Plgyersjcz" role="37wK5m">
+                    <node concept="37vLTw" id="7Plgyersjc$" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7Plgyersga_" resolve="md" />
+                    </node>
+                    <node concept="liA8E" id="7Plgyersjc_" role="2OqNvi">
+                      <ref role="37wK5l" to="w0gx:~ModuleDescriptor.getOutputRoot()" resolve="getOutputRoot" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7Plgyersi0V" role="3cqZAp">
+          <node concept="3cpWsn" id="7Plgyersi0U" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="p" />
+            <node concept="17QB3L" id="7PlgyersjKs" role="1tU5fm" />
+            <node concept="2YIFZM" id="7PlgyersiSN" role="33vP2m">
+              <ref role="1Pybhc" to="z1c3:~ProjectPathUtil" resolve="ProjectPathUtil" />
+              <ref role="37wK5l" to="z1c3:~ProjectPathUtil._getGeneratorOutputPathPrim(jetbrains.mps.project.structure.modules.ModuleDescriptor)" resolve="_getGeneratorOutputPathPrim" />
+              <node concept="37vLTw" id="7PlgyersiSO" role="37wK5m">
+                <ref role="3cqZAo" node="7Plgyersga_" resolve="md" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7Plgyersi0Z" role="3cqZAp">
+          <node concept="3K4zz7" id="7Plgyersi16" role="3cqZAk">
+            <node concept="3clFbC" id="7Plgyersi10" role="3K4Cdx">
+              <node concept="37vLTw" id="7Plgyersi11" role="3uHU7B">
+                <ref role="3cqZAo" node="7Plgyersi0U" resolve="p" />
+              </node>
+              <node concept="10Nm6u" id="7Plgyersi12" role="3uHU7w" />
+            </node>
+            <node concept="10Nm6u" id="7Plgyersi13" role="3K4E3e" />
+            <node concept="2OqwBi" id="7Plgyersj0y" role="3K4GZi">
+              <node concept="37vLTw" id="7PlgyersiSi" role="2Oq$k0">
+                <ref role="3cqZAo" node="7Plgyersd1a" resolve="macroHelper" />
+              </node>
+              <node concept="liA8E" id="7Plgyersj0z" role="2OqNvi">
+                <ref role="37wK5l" to="18ew:~MacroHelper.expandPath(java.lang.String)" resolve="expandPath" />
+                <node concept="37vLTw" id="7Plgyersj0$" role="37wK5m">
+                  <ref role="3cqZAo" node="7Plgyersi0U" resolve="p" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7Plgyersh$_" role="3cqZAp" />
+      </node>
+      <node concept="3Tm1VV" id="7Plgyers9N0" role="1B3o_S" />
+      <node concept="17QB3L" id="7PlgyersbXa" role="3clF45" />
+      <node concept="37vLTG" id="7Plgyerschs" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3uibUv" id="7Plgyerschr" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~AbstractModule" resolve="AbstractModule" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="5mrX3UfrY3F" role="jymVt" />
     <node concept="2YIFZL" id="271UTRL1QGA" role="jymVt">
       <property role="TrG5h" value="getResourceOutputLocation" />
@@ -1856,16 +1979,10 @@
           <node concept="3cpWsn" id="2DWJLXXzCsp" role="3cpWs9">
             <property role="TrG5h" value="generatorOutputPath" />
             <node concept="17QB3L" id="2DWJLXXzDi$" role="1tU5fm" />
-            <node concept="2YIFZM" id="2DWJLXXzCsr" role="33vP2m">
-              <ref role="1Pybhc" to="z1c3:~ProjectPathUtil" resolve="ProjectPathUtil" />
-              <ref role="37wK5l" to="z1c3:~ProjectPathUtil.getGeneratorOutputPath(jetbrains.mps.project.structure.modules.ModuleDescriptor)" resolve="getGeneratorOutputPath" />
-              <node concept="2OqwBi" id="2DWJLXXzCss" role="37wK5m">
-                <node concept="37vLTw" id="2DWJLXXzCst" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2DWJLXXzCrf" resolve="m" />
-                </node>
-                <node concept="liA8E" id="2DWJLXXzCsu" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleDescriptor()" resolve="getModuleDescriptor" />
-                </node>
+            <node concept="1rXfSq" id="7Plgyert0qp" role="33vP2m">
+              <ref role="37wK5l" node="7Plgyersbl9" resolve="getGeneratorOutputPath" />
+              <node concept="37vLTw" id="7Plgyert117" role="37wK5m">
+                <ref role="3cqZAo" node="2DWJLXXzCrf" resolve="m" />
               </node>
             </node>
           </node>

@@ -33,6 +33,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -40,6 +41,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -58,7 +60,7 @@
         <reference id="1217252646389" name="key" index="1DUlNI" />
       </concept>
       <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
-      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
@@ -101,7 +103,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -110,7 +112,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -118,7 +120,7 @@
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
@@ -134,7 +136,7 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -151,6 +153,7 @@
   </node>
   <node concept="tC5Ba" id="3slbD0C6VXu">
     <property role="TrG5h" value="VarGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3slbD0C6VXv" role="ftER_">
       <node concept="tCFHf" id="7TnSnE3b$DF" role="ftvYc">
         <ref role="tCJdB" node="7TnSnE3by8X" resolve="pleConciseActive" />
@@ -180,22 +183,7 @@
   <node concept="sE7Ow" id="7QrLfqVLYHe">
     <property role="TrG5h" value="pleDetailedActive" />
     <property role="2uzpH1" value="Detailed Product Line" />
-    <node concept="1DS2jV" id="7QrLfqVLYHf" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7QrLfqVLYHg" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7QrLfqVLYHh" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
-      <node concept="1oajcY" id="7QrLfqVLYHi" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7QrLfqVLYHj" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7QrLfqVLYHk" role="1B3o_S" />
-      <node concept="1oajcY" id="7QrLfqVLYHl" role="1oa70y" />
-      <node concept="3Tqbb2" id="7QrLfqVLYHm" role="1tU5fm" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="7QrLfqVLYHn" role="tncku">
       <node concept="3clFbS" id="7QrLfqVLYHo" role="2VODD2" />
     </node>
@@ -225,22 +213,7 @@
   <node concept="sE7Ow" id="7TnSnE3by8X">
     <property role="TrG5h" value="pleConciseActive" />
     <property role="2uzpH1" value="Compact Product Line" />
-    <node concept="1DS2jV" id="7TnSnE3by8Y" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3by8Z" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7TnSnE3by90" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
-      <node concept="1oajcY" id="7TnSnE3by91" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3by92" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3by93" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3by94" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3by95" role="1tU5fm" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="7TnSnE3by96" role="tncku">
       <node concept="3clFbS" id="7TnSnE3by97" role="2VODD2" />
     </node>
@@ -270,22 +243,7 @@
   <node concept="sE7Ow" id="7TnSnE3byA0">
     <property role="TrG5h" value="pleVariantActive" />
     <property role="2uzpH1" value="Selected Variant" />
-    <node concept="1DS2jV" id="7TnSnE3byA1" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3byA2" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7TnSnE3byA3" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
-      <node concept="1oajcY" id="7TnSnE3byA4" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3byA5" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3byA6" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3byA7" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3byA8" role="1tU5fm" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="tnohg" id="7TnSnE3byA9" role="tncku">
       <node concept="3clFbS" id="7TnSnE3byAa" role="2VODD2" />
     </node>
@@ -315,21 +273,11 @@
   <node concept="sE7Ow" id="7TnSnE3bz3Y">
     <property role="TrG5h" value="pleConciseInctive" />
     <property role="2uzpH1" value="Compact Product Line" />
-    <node concept="1DS2jV" id="7TnSnE3bz3Z" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3bz40" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7TnSnE3bz41" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="7TnSnE3bz42" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3bz43" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3bz44" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3bz45" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3bz46" role="1tU5fm" />
     </node>
     <node concept="tnohg" id="7TnSnE3bz47" role="tncku">
       <node concept="3clFbS" id="7TnSnE3bz48" role="2VODD2">
@@ -383,21 +331,11 @@
   <node concept="sE7Ow" id="7TnSnE3bzHL">
     <property role="TrG5h" value="pleDetailedInctive" />
     <property role="2uzpH1" value="Detailed Product Line" />
-    <node concept="1DS2jV" id="7TnSnE3bzHM" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3bzHN" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7TnSnE3bzHO" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="7TnSnE3bzHP" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3bzHQ" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3bzHR" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3bzHS" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3bzHT" role="1tU5fm" />
     </node>
     <node concept="tnohg" id="7TnSnE3bzHU" role="tncku">
       <node concept="3clFbS" id="7TnSnE3bzHV" role="2VODD2">
@@ -451,11 +389,7 @@
   <node concept="sE7Ow" id="7TnSnE3b$c2">
     <property role="TrG5h" value="pleVariantInactive" />
     <property role="2uzpH1" value="Selected Variant" />
-    <node concept="1DS2jV" id="7TnSnE3b$c3" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3b$c4" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7TnSnE3b$c5" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
