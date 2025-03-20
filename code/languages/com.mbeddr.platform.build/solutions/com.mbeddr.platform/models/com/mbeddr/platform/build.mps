@@ -15565,7 +15565,7 @@
           <property role="3LESm3" value="7986ede4-bb02-4e5d-8e13-03458d393ab7" />
           <node concept="1SiIV0" id="4aKYPQyrecS" role="3bR37C">
             <node concept="3bR9La" id="4aKYPQyrecT" role="1SiIV1">
-              <ref role="3bR37D" node="4aKYPQyr67s" resolve="com.mbeddr.spreadsheet" />
+              <ref role="3bR37D" node="4aKYPQyr67s" resolve="com.mbeddr.spreadsheat" />
             </node>
           </node>
           <node concept="1SiIV0" id="6qrqamRQNQb" role="3bR37C">
