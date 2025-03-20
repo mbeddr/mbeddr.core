@@ -30,8 +30,8 @@
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="v18h" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:kotlin(MPS.IDEA/)" />
     <import index="ksrs" ref="cc99dce1-49f3-4392-8dbf-e22ca47bd0af/java:kotlin.coroutines(org.modelix.model.api/)" />
-    <import index="jz16" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:icons(MPS.ThirdParty/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="jz16" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:icons(MPS.ThirdParty/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -1011,7 +1011,7 @@
     <property role="22ra45" value="true" />
     <node concept="ftmFs" id="2NmTaRWDlpn" role="ftER_">
       <node concept="tCFHf" id="2NmTaRWDlpq" role="ftvYc">
-        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGUide" />
+        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGuide" />
       </node>
       <node concept="tCFHf" id="2QDtwSqDkt1" role="ftvYc">
         <ref role="tCJdB" node="2QDtwSqDi2L" resolve="openEditingGuide" />
@@ -1030,7 +1030,7 @@
       <node concept="2a7GMi" id="4IT6unro1V" role="ftvYc" />
       <node concept="2a7GMi" id="4IT6unro20" role="ftvYc" />
       <node concept="tCFHf" id="4IT6unqfNl" role="ftvYc">
-        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGUide" />
+        <ref role="tCJdB" node="2NmTaRWDjVL" resolve="openUserGuide" />
       </node>
       <node concept="tCFHf" id="2QDtwSqDktm" role="ftvYc">
         <ref role="tCJdB" node="2QDtwSqDi2L" resolve="openEditingGuide" />

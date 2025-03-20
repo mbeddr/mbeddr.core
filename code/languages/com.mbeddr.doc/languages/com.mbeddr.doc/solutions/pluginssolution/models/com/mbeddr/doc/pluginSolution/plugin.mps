@@ -2710,7 +2710,7 @@
     <node concept="1QGGSu" id="1_GBr6nf8KR" role="1nVCmq">
       <node concept="10M0yZ" id="1_GBr6nfdXd" role="3xaMm5">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Words" resolve="Words" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="Actions" />
+        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
     </node>
   </node>
