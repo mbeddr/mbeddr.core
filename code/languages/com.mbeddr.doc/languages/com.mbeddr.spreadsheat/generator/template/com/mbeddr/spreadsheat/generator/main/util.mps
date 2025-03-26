@@ -6,8 +6,8 @@
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="54ve" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheat/)" />
     <import index="gnwj" ref="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheat.structure)" />
+    <import index="54ve" ref="fc506c9e-94ac-4d65-9950-01def4cba278/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheet.libs/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -429,7 +429,7 @@
         <node concept="3clFbJ" id="1LnB5xdHLNt" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHLNu" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL$z" role="3cqZAp">
-              <node concept="Rm8GO" id="2tOXMOyzjND" role="3cqZAk">
+              <node concept="Rm8GO" id="WD9jaaiBig" role="3cqZAk">
                 <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.CENTER" resolve="CENTER" />
                 <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
               </node>
@@ -513,7 +513,7 @@
         <node concept="3clFbJ" id="1LnB5xdHLNH" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHLNI" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHL_I" role="3cqZAp">
-              <node concept="Rm8GO" id="2tOXMOyzkTJ" role="3cqZAk">
+              <node concept="Rm8GO" id="WD9jaaiB98" role="3cqZAk">
                 <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.JUSTIFY" resolve="JUSTIFY" />
                 <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
               </node>
@@ -553,7 +553,7 @@
           </node>
         </node>
         <node concept="3cpWs6" id="1LnB5xdHLeH" role="3cqZAp">
-          <node concept="Rm8GO" id="2tOXMOyzl5v" role="3cqZAk">
+          <node concept="Rm8GO" id="WD9jaaiB9$" role="3cqZAk">
             <ref role="Rm8GQ" to="54ve:~HorizontalAlignment.LEFT" resolve="LEFT" />
             <ref role="1Px2BO" to="54ve:~HorizontalAlignment" resolve="HorizontalAlignment" />
           </node>
@@ -579,7 +579,7 @@
         <node concept="3clFbJ" id="1LnB5xdHRnp" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHRnq" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRnr" role="3cqZAp">
-              <node concept="Rm8GO" id="2tOXMOyzeGJ" role="3cqZAk">
+              <node concept="Rm8GO" id="WD9jaaiwBK" role="3cqZAk">
                 <ref role="Rm8GQ" to="54ve:~BorderStyle.THIN" resolve="THIN" />
                 <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
               </node>
@@ -705,7 +705,7 @@
         <node concept="3clFbJ" id="1LnB5xdHRo0" role="3cqZAp">
           <node concept="3clFbS" id="1LnB5xdHRo1" role="3clFbx">
             <node concept="3cpWs6" id="1LnB5xdHRo2" role="3cqZAp">
-              <node concept="Rm8GO" id="2tOXMOyzgRN" role="3cqZAk">
+              <node concept="Rm8GO" id="WD9jaaiwBk" role="3cqZAk">
                 <ref role="Rm8GQ" to="54ve:~BorderStyle.DOUBLE" resolve="DOUBLE" />
                 <ref role="1Px2BO" to="54ve:~BorderStyle" resolve="BorderStyle" />
               </node>
