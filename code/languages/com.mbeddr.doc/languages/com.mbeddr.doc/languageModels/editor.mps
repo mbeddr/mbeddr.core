@@ -757,7 +757,7 @@
         <child id="6202678563380433923" name="query" index="sbcd9" />
         <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
       </concept>
-      <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListNodeExpression" flags="ng" index="GFMny" />
+      <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInputExpression" flags="ng" index="GFMny" />
       <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">

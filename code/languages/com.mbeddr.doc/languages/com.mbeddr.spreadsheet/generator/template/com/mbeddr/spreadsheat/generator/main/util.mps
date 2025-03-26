@@ -6,7 +6,7 @@
   </languages>
   <imports>
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="54ve" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheet/)" />
+    <import index="54ve" ref="1d891f7b-dc93-42f9-a4bc-b016656b14e2/java:org.apache.poi.ss.usermodel(com.mbeddr.spreadsheat/)" />
     <import index="gnwj" ref="r:f6651a85-73de-42f1-9bd6-d372b5b47f05(com.mbeddr.spreadsheet.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -762,3 +762,4 @@
     </node>
   </node>
 </model>
+
