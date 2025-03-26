@@ -6,14 +6,12 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.documentation/com.mbeddr.documentation.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.expressions/com.mbeddr.doc.expressions.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_latex/com.mbeddr.doc.gen_latex.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_markdown/com.mbeddr.doc.gen_markdown.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.gen_xhtml/com.mbeddr.doc.gen_xhtml.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.latex/com.mbeddr.doc.latex.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.markdown/com.mbeddr.doc.markdown.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.meta/com.mbeddr.doc.meta.mpl" folder="lang" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.qa/com.mbeddr.doc.qa.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc.self/com.mbeddr.doc.self.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc/doc.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.doc/solutions/pluginssolution/com.mbeddr.doc.pluginsolution.msd" folder="lang" />
