@@ -54,7 +54,7 @@
       </concept>
     </language>
     <language id="d00351b1-72a6-4072-aea2-5982add6bee4" name="mbeddr.tutorial.shonan">
-      <concept id="8284846660091650166" name="mbeddr.tutorial.shonan.structure.IStencilComputationElement" flags="ng" index="3Cp1i">
+      <concept id="8284846660091650166" name="mbeddr.tutorial.shonan.structure.IStencilComputationElement" flags="ngI" index="3Cp1i">
         <child id="8284846660091650167" name="initializer" index="3Cp1j" />
       </concept>
       <concept id="5614144563374998802" name="mbeddr.tutorial.shonan.structure.StencilLocalVarRef" flags="ng" index="cgjuI" />
@@ -2742,10 +2742,10 @@
                     <node concept="2BOciq" id="6kBcLJ2m0wD" role="3Cp1j">
                       <node concept="2BOcij" id="6kBcLJ2mbrY" role="3TlMhJ">
                         <node concept="13Sk8F" id="6kBcLJ2me0d" role="3TlMhJ">
-                          <ref role="13Sk8E" node="6kBcLJ2lj7y" />
+                          <ref role="13Sk8E" node="6kBcLJ2lj7y" resolve="temp" />
                         </node>
                         <node concept="13Sk8F" id="6kBcLJ2m8Lz" role="3TlMhI">
-                          <ref role="13Sk8E" node="6kBcLJ2lj7y" />
+                          <ref role="13Sk8E" node="6kBcLJ2lj7y" resolve="temp" />
                         </node>
                       </node>
                       <node concept="cgjuI" id="6kBcLJ2m0wu" role="3TlMhI">
