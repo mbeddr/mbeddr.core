@@ -3,11 +3,43 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mbeddr">
+        <entry key="cc">
           <value>
             <Library>
-              <option name="name" value="mbeddr" />
-              <option name="path" value="${mbeddr.github.core.home}/code" />
+              <option name="name" value="cc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.cc" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="core">
+          <value>
+            <Library>
+              <option name="name" value="core" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="doc">
+          <value>
+            <Library>
+              <option name="name" value="doc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="ext">
+          <value>
+            <Library>
+              <option name="name" value="ext" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mpsutil">
+          <value>
+            <Library>
+              <option name="name" value="mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
@@ -15,7 +47,7 @@
           <value>
             <Library>
               <option name="name" value="mps.extensions" />
-              <option name="path" value="${mbeddr.github.core.home}/artifacts/de.itemis.mps.extensions" />
+              <option name="path" value="${mbeddr.github.core.home}/build/dependencies/de.itemis.mps.extensions" />
             </Library>
           </value>
         </entry>
