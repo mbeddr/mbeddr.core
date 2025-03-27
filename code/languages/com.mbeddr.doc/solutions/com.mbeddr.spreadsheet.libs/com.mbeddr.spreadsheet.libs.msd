@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.spreadsheet.libs" uuid="fc506c9e-94ac-4d65-9950-01def4cba278" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.spreadsheet.libs" uuid="fc506c9e-94ac-4d65-9950-01def4cba278" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}">
       <sourceRoot location="lib/commons-codec-1.10.jar" />
       <sourceRoot location="lib/commons-collections4-4.1.jar" />
@@ -27,7 +24,6 @@
     <stubModelEntry path="${module}/lib/xmlbeans-4.0.0.jar" />
     <stubModelEntry path="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
   </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

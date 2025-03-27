@@ -8,55 +8,6 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-      <library location="${module}/lib/commons-codec-1.10.jar" />
-      <library location="${module}/lib/commons-collections4-4.1.jar" />
-      <library location="${module}/lib/curvesapi-1.04.jar" />
-      <library location="${module}/lib/poi-5.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-5.0.0.jar" />
-      <library location="${module}/lib/xmlbeans-4.0.0.jar" />
-      <library location="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
     </facet>
   </facets>
   <accessoryModels />
@@ -152,7 +103,6 @@
       </mapping-priorities>
     </generator>
   </generators>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
   </dependencies>
