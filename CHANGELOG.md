@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# March 2025
+
+## com.mbeddr.doc
+
+- 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
+  to solution `com.mbeddr.spreadsheet.libs`.
+- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
+  enables using Document nodes in tests, for example.
+
 # January 2025
 
 ## com.mbeddr.build

@@ -4,14 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/commons-codec-1.10.jar" />
-      <sourceRoot location="lib/commons-collections4-4.1.jar" />
-      <sourceRoot location="lib/curvesapi-1.04.jar" />
-      <sourceRoot location="lib/poi-5.0.0.jar" />
-      <sourceRoot location="lib/poi-ooxml-5.0.0.jar" />
-      <sourceRoot location="lib/poi-ooxml-lite-5.0.0.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
@@ -36,6 +28,7 @@
         <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+        <dependency reexport="false">fc506c9e-94ac-4d65-9950-01def4cba278(com.mbeddr.spreadsheet.libs)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -70,6 +63,7 @@
         <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
         <module reference="1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)" version="0" />
         <module reference="7986ede4-bb02-4e5d-8e13-03458d393ab7(com.mbeddr.spreadsheat#4354378109086982931)" version="0" />
+        <module reference="fc506c9e-94ac-4d65-9950-01def4cba278(com.mbeddr.spreadsheet.libs)" version="0" />
         <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
         <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
         <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
@@ -109,15 +103,6 @@
       </mapping-priorities>
     </generator>
   </generators>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/commons-codec-1.10.jar" />
-    <stubModelEntry path="${module}/lib/commons-collections4-4.1.jar" />
-    <stubModelEntry path="${module}/lib/curvesapi-1.04.jar" />
-    <stubModelEntry path="${module}/lib/poi-5.0.0.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-5.0.0.jar" />
-    <stubModelEntry path="${module}/lib/xmlbeans-4.0.0.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
