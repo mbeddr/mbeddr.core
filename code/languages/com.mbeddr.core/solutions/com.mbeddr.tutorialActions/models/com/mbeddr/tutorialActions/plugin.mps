@@ -9,7 +9,6 @@
   <imports>
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
@@ -24,7 +23,6 @@
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="ofh9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.platform(MPS.IDEA/)" />
     <import index="btn2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.impl(MPS.IDEA/)" />
-    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
   </imports>
   <registry>
@@ -50,7 +48,7 @@
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
         <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
@@ -106,7 +104,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -167,7 +165,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -190,7 +188,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
@@ -250,8 +248,15 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -266,21 +271,7 @@
   </registry>
   <node concept="312cEu" id="7836$RyVVLX">
     <property role="TrG5h" value="MbeddrTutorialExtractor" />
-    <node concept="Wx3nA" id="7836$RyVWjJ" role="jymVt">
-      <property role="TrG5h" value="LOG" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="7836$RyVWjK" role="1tU5fm">
-        <ref role="3uigEE" to="q7tw:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7836$RyVZuA" role="33vP2m">
-        <ref role="1Pybhc" to="q7tw:~LogManager" resolve="LogManager" />
-        <ref role="37wK5l" to="q7tw:~LogManager.getLogger(java.lang.Class)" resolve="getLogger" />
-        <node concept="3VsKOn" id="7836$RyVWjN" role="37wK5m">
-          <ref role="3VsUkX" node="7836$RyVVLX" resolve="MbeddrTutorialExtractor" />
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="7836$RyVWjO" role="1B3o_S" />
-    </node>
+    <node concept="2tJIrI" id="3GgspuIYB$d" role="jymVt" />
     <node concept="2tJIrI" id="35jXaZBM65z" role="jymVt" />
     <node concept="Wx3nA" id="7836$RyVWjP" role="jymVt">
       <property role="TrG5h" value="SAMPLES_IN_MPS_HOME_DIR" />
@@ -1251,18 +1242,11 @@
               </node>
             </node>
             <node concept="3clFbS" id="7836$RyVWp4" role="1zc67A">
-              <node concept="3clFbF" id="7836$RyVWp5" role="3cqZAp">
-                <node concept="2OqwBi" id="7836$RyVWr3" role="3clFbG">
-                  <node concept="37vLTw" id="7836$RyVWr2" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7836$RyVWjJ" resolve="LOG" />
-                  </node>
-                  <node concept="liA8E" id="7836$RyVWr4" role="2OqNvi">
-                    <ref role="37wK5l" to="q7tw:~Category.error(java.lang.Object,java.lang.Throwable)" resolve="error" />
-                    <node concept="10Nm6u" id="7836$RyVWp7" role="37wK5m" />
-                    <node concept="37vLTw" id="7836$RyVWp8" role="37wK5m">
-                      <ref role="3cqZAo" node="7836$RyVWp0" resolve="e" />
-                    </node>
-                  </node>
+              <node concept="RRSsy" id="3GgspuIYx41" role="3cqZAp">
+                <property role="RRSoG" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="3GgspuIYx43" role="RRSoy" />
+                <node concept="37vLTw" id="3GgspuIY_uR" role="RRSow">
+                  <ref role="3cqZAo" node="7836$RyVWp0" resolve="e" />
                 </node>
               </node>
             </node>
@@ -1556,58 +1540,19 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs8" id="7836$RyWXkT" role="3cqZAp">
-                  <node concept="3cpWsn" id="7836$RyWXkS" role="3cpWs9">
-                    <property role="3TUv4t" value="false" />
-                    <property role="TrG5h" value="project" />
-                    <node concept="3uibUv" id="7836$RyWXkU" role="1tU5fm">
-                      <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-                    </node>
-                    <node concept="2YIFZM" id="1VRNFInKmSV" role="33vP2m">
-                      <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
-                      <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                      <node concept="2YIFZM" id="1VRNFInKqGD" role="37wK5m">
-                        <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                        <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                        <node concept="37vLTw" id="1VRNFInKrSz" role="37wK5m">
-                          <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="1VRNFInKmSX" role="37wK5m">
-                        <ref role="3cqZAo" node="1VRNFInKbww" resolve="task" />
+                <node concept="3clFbF" id="4_tgWKb89aH" role="3cqZAp">
+                  <node concept="2YIFZM" id="1VRNFInKmSV" role="3clFbG">
+                    <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
+                    <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
+                    <node concept="2YIFZM" id="1VRNFInKqGD" role="37wK5m">
+                      <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                      <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                      <node concept="37vLTw" id="1VRNFInKrSz" role="37wK5m">
+                        <ref role="3cqZAo" node="7836$RyWXkO" resolve="filePath" />
                       </node>
                     </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="7836$RyWXkZ" role="3cqZAp">
-                  <node concept="3y3z36" id="7836$RyWXl0" role="3clFbw">
-                    <node concept="37vLTw" id="7836$RyWXl1" role="3uHU7B">
-                      <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                    </node>
-                    <node concept="10Nm6u" id="7836$RyWXl2" role="3uHU7w" />
-                  </node>
-                  <node concept="3clFbS" id="7836$RyWXl4" role="3clFbx">
-                    <node concept="3clFbF" id="7836$RyWXl5" role="3cqZAp">
-                      <node concept="2OqwBi" id="7836$RyWXl6" role="3clFbG">
-                        <node concept="2YIFZM" id="7836$RyXbKo" role="2Oq$k0">
-                          <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
-                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-                          <node concept="37vLTw" id="7836$RyWXl8" role="37wK5m">
-                            <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="7836$RyWXl9" role="2OqNvi">
-                          <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile)" resolve="setBaseDir" />
-                          <node concept="2OqwBi" id="7836$RyWXmh" role="37wK5m">
-                            <node concept="37vLTw" id="7836$RyWXmg" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7836$RyWXkS" resolve="project" />
-                            </node>
-                            <node concept="liA8E" id="7836$RyWXmi" role="2OqNvi">
-                              <ref role="37wK5l" to="4nm9:~Project.getBaseDir()" resolve="getBaseDir" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="1VRNFInKmSX" role="37wK5m">
+                      <ref role="3cqZAo" node="1VRNFInKbww" resolve="task" />
                     </node>
                   </node>
                 </node>

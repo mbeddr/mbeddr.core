@@ -9,6 +9,8 @@
     <entry key="jetbrains.mps.ide.mpsmigration.v_2021_3.ExtractMPSBootStubs" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.ExplicitJavaFacetSettings" value="executed" />
     <entry key="jetbrains.mps.ide.mpsmigration.v_2022_3.SplitMPSCoreStub2" value="executed" />
-    <entry key="project.migrated.version" value="223" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.DataFlowStubsToRegularNodes" value="executed" />
+    <entry key="jetbrains.mps.ide.mpsmigration.v_2023_1.JavaModuleSettingsToFacet" value="executed" />
+    <entry key="project.migrated.version" value="232" />
   </component>
 </project>

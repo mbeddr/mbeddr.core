@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.com.mbeddr.mpsutil.blutil.test.waitfor" uuid="c4943a3c-45c9-4523-8723-a18368d2c1fc" moduleVersion="0" compileInMPS="true">
+<solution name="test.com.mbeddr.mpsutil.blutil.test.waitfor" uuid="c4943a3c-45c9-4523-8723-a18368d2c1fc" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>

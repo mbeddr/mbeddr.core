@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" uuid="a956e7e5-f191-4a9f-b9f2-0c44bcfea98a" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.multilingual.baseLanguage.runtime" uuid="a956e7e5-f191-4a9f-b9f2-0c44bcfea98a" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)</dependency>
   </dependencies>

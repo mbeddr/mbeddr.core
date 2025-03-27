@@ -104,7 +104,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -294,6 +294,35 @@
       <ref role="1YaFvo" to="jphc:2ZUGF54m9ir" resolve="SetIntStatement" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4PawC2Ql1wS">
+    <property role="TrG5h" value="typeof_TempNodeAssign" />
+    <property role="3GE5qa" value="tempnode" />
+    <node concept="3clFbS" id="4PawC2Ql1wT" role="18ibNy">
+      <node concept="1Z5TYs" id="4PawC2Ql1ZH" role="3cqZAp">
+        <node concept="mw_s8" id="4PawC2Ql1ZT" role="1ZfhKB">
+          <node concept="2c44tf" id="4PawC2Ql1ZP" role="mwGJk">
+            <node concept="3Tqbb2" id="4PawC2Ql20d" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4PawC2Ql1ZK" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4PawC2Ql1xK" role="mwGJk">
+            <node concept="2OqwBi" id="4PawC2Ql1E3" role="1Z2MuG">
+              <node concept="1YBJjd" id="4PawC2Ql1xX" role="2Oq$k0">
+                <ref role="1YBMHb" node="4PawC2Ql1wV" resolve="tempNodeAssign" />
+              </node>
+              <node concept="3TrEf2" id="4PawC2Ql1OA" role="2OqNvi">
+                <ref role="3Tt5mk" to="jphc:7FEESS$TGRX" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4PawC2Ql1wV" role="1YuTPh">
+      <property role="TrG5h" value="tempNodeAssign" />
+      <ref role="1YaFvo" to="jphc:7FEESS$TGRU" resolve="TempNodeAssign" />
+    </node>
+  </node>
   <node concept="1YbPZF" id="4PawC2QkZxA">
     <property role="TrG5h" value="typeof_SetRefStatement" />
     <node concept="3clFbS" id="4PawC2QkZxB" role="18ibNy">
@@ -339,35 +368,6 @@
     <node concept="1YaCAy" id="4PawC2QkZxD" role="1YuTPh">
       <property role="TrG5h" value="setRefStatement" />
       <ref role="1YaFvo" to="jphc:7ee7PEvaQPZ" resolve="SetRefStatement" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="4PawC2Ql1wS">
-    <property role="TrG5h" value="typeof_TempNodeAssign" />
-    <property role="3GE5qa" value="tempnode" />
-    <node concept="3clFbS" id="4PawC2Ql1wT" role="18ibNy">
-      <node concept="1Z5TYs" id="4PawC2Ql1ZH" role="3cqZAp">
-        <node concept="mw_s8" id="4PawC2Ql1ZT" role="1ZfhKB">
-          <node concept="2c44tf" id="4PawC2Ql1ZP" role="mwGJk">
-            <node concept="3Tqbb2" id="4PawC2Ql20d" role="2c44tc" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="4PawC2Ql1ZK" role="1ZfhK$">
-          <node concept="1Z2H0r" id="4PawC2Ql1xK" role="mwGJk">
-            <node concept="2OqwBi" id="4PawC2Ql1E3" role="1Z2MuG">
-              <node concept="1YBJjd" id="4PawC2Ql1xX" role="2Oq$k0">
-                <ref role="1YBMHb" node="4PawC2Ql1wV" resolve="tempNodeAssign" />
-              </node>
-              <node concept="3TrEf2" id="4PawC2Ql1OA" role="2OqNvi">
-                <ref role="3Tt5mk" to="jphc:7FEESS$TGRX" resolve="value" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4PawC2Ql1wV" role="1YuTPh">
-      <property role="TrG5h" value="tempNodeAssign" />
-      <ref role="1YaFvo" to="jphc:7FEESS$TGRU" resolve="TempNodeAssign" />
     </node>
   </node>
 </model>

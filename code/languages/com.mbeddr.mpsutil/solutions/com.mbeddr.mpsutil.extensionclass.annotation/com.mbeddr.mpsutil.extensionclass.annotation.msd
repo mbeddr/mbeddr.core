@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.extensionclass.annotation" uuid="63c6c042-d558-4559-a9a2-93791d48eb74" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.extensionclass.annotation" uuid="63c6c042-d558-4559-a9a2-93791d48eb74" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
   </dependencies>

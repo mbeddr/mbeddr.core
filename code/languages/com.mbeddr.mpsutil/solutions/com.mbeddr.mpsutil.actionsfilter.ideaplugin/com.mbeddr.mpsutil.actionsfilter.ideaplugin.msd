@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.actionsfilter.ideaplugin" uuid="c091aa8e-adbb-460a-b99f-e1a7f2242121" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.actionsfilter.ideaplugin" uuid="c091aa8e-adbb-460a-b99f-e1a7f2242121" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">436eb984-d162-4543-a347-2601ff5bb2a0(com.mbeddr.mpsutil.actionsfilter.runtime)</dependency>
   </dependencies>

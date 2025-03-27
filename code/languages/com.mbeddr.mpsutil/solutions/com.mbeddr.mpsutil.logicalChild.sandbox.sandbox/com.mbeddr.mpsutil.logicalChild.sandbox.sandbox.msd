@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.logicalChild.sandbox.sandbox" uuid="48c7bab0-f577-43cc-921f-b5c4e933be86" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.logicalChild.sandbox.sandbox" uuid="48c7bab0-f577-43cc-921f-b5c4e933be86" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">85a9bace-37a1-40af-956a-7bb1b081a77c(com.mbeddr.mpsutil.logicalChild)</dependency>
     <dependency reexport="false">286e2375-00e3-4042-b083-84873dd623be(com.mbeddr.mpsutil.logicalChild.sandbox)</dependency>

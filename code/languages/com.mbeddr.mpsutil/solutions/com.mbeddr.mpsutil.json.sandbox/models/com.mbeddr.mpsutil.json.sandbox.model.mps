@@ -27,7 +27,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -38,7 +38,7 @@
       <node concept="3YX88e" id="7W6mbU9gkRU" role="3YX86K">
         <property role="TrG5h" value="description" />
         <node concept="3YX86M" id="7W6mbU9gkRY" role="3YX8ah">
-          <property role="3YX86R" value="This is a json file" />
+          <property role="3YX86R" value="This &quot;hi&quot; is a json file" />
         </node>
       </node>
       <node concept="3YX88e" id="7W6mbU9gkS1" role="3YX86K">

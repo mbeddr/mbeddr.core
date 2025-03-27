@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.richstring.sandbox" uuid="10d128c8-0b0f-41a7-b9f3-fc3eac840ee5" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.mpsutil.richstring.sandbox" uuid="10d128c8-0b0f-41a7-b9f3-fc3eac840ee5" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

@@ -9,12 +9,12 @@
   <registry>
     <language id="8cff051b-53c3-4e5f-bf0a-6688f069e505" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2">
       <concept id="3289023490928248227" name="test.com.mbeddr.mpsutil.ecoretransformation.modelImportExport.testLanguage2.structure.testClass" flags="ng" index="1f5n3j">
-        <property id="1004768212881491943" name="attr1" index="2R_A2U" />
+        <property id="3289023490928248228" name="attr1" index="1f5n3k" />
       </concept>
     </language>
   </registry>
-  <node concept="1f5n3j" id="7vV01RznhoZ">
-    <property role="2R_A2U" value="1$/val1" />
+  <node concept="1f5n3j" id="2t75AsPxBty">
+    <property role="1f5n3k" value="2Q$Xn1yGomw/val2" />
   </node>
 </model>
 
