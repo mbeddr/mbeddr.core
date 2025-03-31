@@ -7,6 +7,7 @@ plugins {
 
 import de.itemis.mps.gradle.*
 import de.itemis.mps.gradle.tasks.MpsGenerate
+import groovy.transform.TupleConstructor
 
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
@@ -32,37 +33,56 @@ dependencies {
     }
 }
 
+@TupleConstructor
+class BundledDep {
+    String name
+    List<String> notations
+    String modulePath
+    Closure depConfigClosure = { transitive = false }
+    String getConfigName() {
+        name + '_bundled'
+    }
+    String getTaskName() {
+        'resolve_' + this.configName
+    }
+}
+
 def bundledDeps = [
-        ['commonmark', 'org.commonmark:commonmark:0.17.2', 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'],
-        ['microba', 'com.michaelbaranov:microba:0.4.4.3', 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.datepicker.runtime']
+        new BundledDep('commonmark', ['org.commonmark:commonmark:0.17.2'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
+        new BundledDep('microba', ['com.michaelbaranov:microba:0.4.4.3'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.datepicker.runtime'),
+        new BundledDep('poi-ooxml', ['org.apache.poi:poi-ooxml:5.0.0'], 'com.mbeddr.doc/languages/com.mbeddr.spreadsheat', {
+            exclude group: 'org.slf4j'
+            exclude module: 'commons-compress'
+            exclude group: 'org.bouncycastle'
+            exclude module: 'xmlsec'
+            exclude module: 'batik-all'
+            exclude module: 'graphics2d'
+            exclude module: 'commons-math3'
+            exclude module: 'SparseBitSet'
+        }),
+        new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1', 'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
+            exclude module: 'stax-api'
+        })
 ]
 
-bundledDeps.each { bundledDep ->
-    def depName = bundledDep[0] + '_bundled'
-    def depNotation = bundledDep[1]
-    def bundledDepModulePath = bundledDep[2]
-    // in case a dependency has a broken artifact name, e.g. w/o extension
-    def jarNameOverride = bundledDep[3]
-
+bundledDeps.each {bd ->
     configurations {
-        create(depName)
+        create(bd.configName)
     }
     dependencies {
-        add(depName, depNotation) {
-            transitive = false
+        bd.notations.each {depNotation ->
+            add(bd.configName, depNotation, bd.depConfigClosure)
         }
     }
-    tasks.create("resolve_$depName", Sync.class) {
-        from configurations.getByName(depName)
-        into file(rootProject.file("code/languages/$bundledDepModulePath/lib"))
+    tasks.create(bd.taskName, Sync.class) {
+        from configurations.getByName(bd.configName)
+        into file(rootProject.file("code/languages/${bd.modulePath}/lib"))
 
         // Strip version numbers from file names
         rename { filename ->
-            def ra = configurations.getByName(depName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            def ra = configurations.getByName(bd.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
             String finalName
-            if (jarNameOverride != null) {
-                finalName = jarNameOverride
-            } else if (ra.classifier != null) {
+            if (ra.classifier != null) {
                 finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
             } else {
                 finalName = "${ra.name}.${ra.extension}"
@@ -106,7 +126,7 @@ task build_platform(type: BuildLanguages, dependsOn: ['build_allScripts', build_
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
 }
-build_platform.dependsOn << tasks.findAll {it.name.endsWith('_bundled') }
+build_platform.dependsOn << bundledDeps.collect {it.taskName }
 
 task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
     description 'Copy the actions filter IntelliJ plugin to the MPS plugin\'s directory'
