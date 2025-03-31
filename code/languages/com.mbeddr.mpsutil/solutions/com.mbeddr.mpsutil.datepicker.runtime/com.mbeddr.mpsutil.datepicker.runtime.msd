@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.datepicker.runtime" uuid="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/microba-0.4.4.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="microba.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_9" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/microba-0.4.4.jar" />
+      <library location="${module}/lib/microba.jar" />
     </facet>
   </facets>
   <dependencies>
