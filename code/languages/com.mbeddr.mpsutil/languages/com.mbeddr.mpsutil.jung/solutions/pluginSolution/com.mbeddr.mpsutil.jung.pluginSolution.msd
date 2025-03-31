@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.jung.pluginSolution" uuid="1338ba73-5059-479b-a929-de86597a62b8" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/collections-generic-4.01.jar" />
-      <sourceRoot location="lib/colt-1.2.0.jar" />
-      <sourceRoot location="lib/concurrent-1.3.4.jar" />
-      <sourceRoot location="lib/j3d-core-1.3.1.jar" />
-      <sourceRoot location="lib/jung-3d-2.0.1.jar" />
-      <sourceRoot location="lib/jung-3d-demos-2.0.1.jar" />
-      <sourceRoot location="lib/jung-algorithms-2.0.1.jar" />
-      <sourceRoot location="lib/jung-api-2.0.1.jar" />
-      <sourceRoot location="lib/jung-graph-impl-2.0.1.jar" />
-      <sourceRoot location="lib/jung-io-2.0.1.jar" />
-      <sourceRoot location="lib/jung-jai-2.0.1.jar" />
-      <sourceRoot location="lib/jung-jai-samples-2.0.1.jar" />
-      <sourceRoot location="lib/jung-samples-2.0.1.jar" />
-      <sourceRoot location="lib/jung-visualization-2.0.1.jar" />
-      <sourceRoot location="lib/vecmath-1.3.1.jar" />
-      <sourceRoot location="lib/wstx-asl-3.2.6.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="collections-generic.jar" />
+      <sourceRoot location="colt.jar" />
+      <sourceRoot location="concurrent.jar" />
+      <sourceRoot location="j3d-core.jar" />
+      <sourceRoot location="jung-3d-demos.jar" />
+      <sourceRoot location="jung-3d.jar" />
+      <sourceRoot location="jung-algorithms.jar" />
+      <sourceRoot location="jung-api.jar" />
+      <sourceRoot location="jung-graph-impl.jar" />
+      <sourceRoot location="jung-io.jar" />
+      <sourceRoot location="jung-jai-samples.jar" />
+      <sourceRoot location="jung-jai.jar" />
+      <sourceRoot location="jung-samples.jar" />
+      <sourceRoot location="jung-visualization.jar" />
+      <sourceRoot location="vecmath.jar" />
+      <sourceRoot location="wstx-asl.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/collections-generic-4.01.jar" />
-      <library location="${module}/lib/colt-1.2.0.jar" />
-      <library location="${module}/lib/concurrent-1.3.4.jar" />
-      <library location="${module}/lib/j3d-core-1.3.1.jar" />
-      <library location="${module}/lib/jung-3d-2.0.1.jar" />
-      <library location="${module}/lib/jung-3d-demos-2.0.1.jar" />
-      <library location="${module}/lib/jung-algorithms-2.0.1.jar" />
-      <library location="${module}/lib/jung-api-2.0.1.jar" />
-      <library location="${module}/lib/jung-graph-impl-2.0.1.jar" />
-      <library location="${module}/lib/jung-io-2.0.1.jar" />
-      <library location="${module}/lib/jung-jai-2.0.1.jar" />
-      <library location="${module}/lib/jung-jai-samples-2.0.1.jar" />
-      <library location="${module}/lib/jung-samples-2.0.1.jar" />
-      <library location="${module}/lib/jung-visualization-2.0.1.jar" />
-      <library location="${module}/lib/vecmath-1.3.1.jar" />
-      <library location="${module}/lib/wstx-asl-3.2.6.jar" />
+      <library location="${module}/lib/collections-generic.jar" />
+      <library location="${module}/lib/colt.jar" />
+      <library location="${module}/lib/concurrent.jar" />
+      <library location="${module}/lib/j3d-core.jar" />
+      <library location="${module}/lib/jung-3d-demos.jar" />
+      <library location="${module}/lib/jung-3d.jar" />
+      <library location="${module}/lib/jung-algorithms.jar" />
+      <library location="${module}/lib/jung-api.jar" />
+      <library location="${module}/lib/jung-graph-impl.jar" />
+      <library location="${module}/lib/jung-io.jar" />
+      <library location="${module}/lib/jung-jai-samples.jar" />
+      <library location="${module}/lib/jung-jai.jar" />
+      <library location="${module}/lib/jung-samples.jar" />
+      <library location="${module}/lib/jung-visualization.jar" />
+      <library location="${module}/lib/vecmath.jar" />
+      <library location="${module}/lib/wstx-asl.jar" />
     </facet>
   </facets>
   <dependencies>
