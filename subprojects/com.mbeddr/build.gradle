@@ -180,12 +180,12 @@ tasks.register('printVersions') {
 List<String> projectsInDependencyOrder = [
         'com.mbeddr.platform.build',
         'com.mbeddr.mpsutil',
-//        'com.mbeddr.doc',
-//        'com.mbeddr.doc.aspect',
-//        'com.mbeddr.core',
-//        'com.mbeddr.ext',
-//        'com.mbeddr.cc',
-//        'com.mbeddr.xmodel',
+        'com.mbeddr.doc',
+        'com.mbeddr.doc.aspect',
+        'com.mbeddr.core',
+        'com.mbeddr.ext',
+        'com.mbeddr.cc',
+        'com.mbeddr.xmodel',
         'com.mbeddr.build',
 ]
 
@@ -193,8 +193,12 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
     new File(rootProject.file('code/languages'), it)
 }
 
+tasks.register('generate_all_languages') {
+    dependsOn(':com.mbeddr:platform:generate_platform_languages', ':com.mbeddr:languages:generate_mbeddr_languages')
+}
+
 tasks.register('migrate', MpsMigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages')
+    dependsOn('generate_all_languages')
     javaLauncher = jbrToolchain.javaLauncher
     haltOnPrecheckFailure = false
     haltOnDependencyError = false
@@ -209,7 +213,7 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
-    dependsOn(':com.mbeddr:platform:generate_platform_languages')
+    dependsOn('generate_all_languages')
     javaLauncher = jbrToolchain.javaLauncher
 
     mpsHome = mpsHomeDir

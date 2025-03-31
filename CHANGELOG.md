@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# March 2025
+
+## com.mbeddr.doc
+
+- 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
+  to solution `com.mbeddr.spreadsheet.libs`.
+- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
+  enables using Document nodes in tests, for example.
+
 # February 2025
 
 ## com.mbeddr.doc
@@ -18,6 +27,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Removed
 
 - Plugin `com.mbeddr.mpsutil.compare`, its languages and solutions were moved to MPS-Extensions. The migration followed MPS-Extensions' conventions, so the new plugin name is: `de.itemis.mps.compare`. All languages and solutions maintained their names.
+
+## com.mbeddr.build
+
+### Removed
+
+- `com.mbeddr:allScripts` artifact is no longer built nor published. It should not be used in your projects as all build
+  solutions are part of the corresponding platforms.
+
+# January 2025
 
 ## com.mbeddr.build
 
