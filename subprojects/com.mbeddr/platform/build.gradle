@@ -2,7 +2,7 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'buildlogic.mps-conventions'
-    id "org.cyclonedx.bom" version "1.8.2"
+    id "org.cyclonedx.bom" version "2.2.0"
 }
 
 import de.itemis.mps.gradle.*
