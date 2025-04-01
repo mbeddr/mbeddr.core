@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.jfreechart.runtime" uuid="7fe13e34-8620-4d5d-92c7-df091b0ed628" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/jfreechart-1.0.19.jar" />
-      <sourceRoot location="lib/jcommon-1.0.23.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="jcommon.jar" />
+      <sourceRoot location="jfreechart.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/jfreechart-1.0.19.jar" />
-      <library location="${module}/lib/jcommon-1.0.23.jar" />
+      <library location="${module}/lib/jcommon.jar" />
+      <library location="${module}/lib/jfreechart.jar" />
     </facet>
   </facets>
   <dependencies>

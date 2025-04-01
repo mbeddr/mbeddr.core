@@ -2,13 +2,13 @@
 <solution name="org.apache.batik" uuid="5ad14eca-28d7-4bce-b8e0-648908a49062" moduleVersion="0">
   <models>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="batik-all-1.12.jar" />
+      <sourceRoot location="batik-all.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/batik-all-1.12.jar" />
+      <library location="${module}/lib/batik-all.jar" />
     </facet>
   </facets>
   <dependencies>
