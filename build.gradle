@@ -7,7 +7,7 @@ plugins {
 
 //MPS version
 ext.mpsMajor = "9999.9"
-ext.mpsBuild = "251.23774.49"
+ext.mpsBuild = "251.23774.153"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = "9999.9.3171.483da6f-SNAPSHOT"
