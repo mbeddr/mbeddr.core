@@ -1478,7 +1478,7 @@
             <property role="TrG5h" value="evaluator" />
           </node>
           <node concept="37vLTw" id="4Dpunc8PB3s" role="2GsD0m">
-            <ref role="3cqZAo" node="4Dpunc8PB3q" resolve="listEvaluators" />
+            <ref role="3cqZAo" node="4Dpunc8PB3q" resolve="evaluators" />
           </node>
           <node concept="3clFbS" id="6ENu_m7uqUO" role="2LFqv$">
             <node concept="3SKdUt" id="5eIgiuM$y1p" role="3cqZAp">
@@ -1714,7 +1714,7 @@
         <node concept="YS8fn" id="6ENu_m7uyAR" role="3cqZAp">
           <node concept="2ShNRf" id="6ENu_m7uzeM" role="YScLw">
             <node concept="1pGfFk" id="6ENu_m7uzNa" role="2ShVmc">
-              <ref role="37wK5l" node="1PWW75uO27B" resolve="EvaluatorMissingException" />
+              <ref role="37wK5l" node="1PWW75uO27B" resolve="EvaluatorNotApplicableException" />
               <node concept="37vLTw" id="6ENu_m7u$97" role="37wK5m">
                 <ref role="3cqZAo" node="4_qY3E5j7S3" resolve="node" />
               </node>
