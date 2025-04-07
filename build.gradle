@@ -55,6 +55,8 @@ ext.additionalPomInfo = {
     }
 }
 
+var isFirstSubproject = true
+
 subprojects {
     ext.mbeddrMajor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> major }
     ext.mbeddrMinor = mpsMajor.replaceFirst(/(\d{4})\.(\d)/) { all, major, minor -> minor }
@@ -87,12 +89,14 @@ subprojects {
         // as well as mbeddr to be built against a specified existing mbeddr platform version
         ext.mbeddrPlatformBuildNumber = findNonEmptyProperty('mbeddrPlatformVersion') ?: mbeddrBuildNumber
 
-        if (ciBuild) {
+        if(isFirstSubproject) {
+            if (ciBuild) {
             // Coerce TeamCity build number to mbeddrBuildNumber by default
             // (see https://octopus.com/blog/teamcity-version-numbers-based-on-branches for details)
             println "##teamcity[buildNumber '${mbeddrBuildNumber}']"
-        } else {
-            println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
+            } else {
+                println "Local build detected. mbeddr version $ext.mbeddrBuildNumber, mbeddr platform version $ext.mbeddrPlatformBuildNumber"
+            }
         }
-
+        isFirstSubproject = false
 }
