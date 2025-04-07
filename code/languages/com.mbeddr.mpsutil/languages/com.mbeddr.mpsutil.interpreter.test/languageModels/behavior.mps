@@ -212,17 +212,12 @@
             </node>
             <node concept="3clFbS" id="65E6xpGVsLH" role="1zc67A">
               <node concept="3cpWs6" id="65E6xpGVw0l" role="3cqZAp">
-                <node concept="3cpWs3" id="65E6xpGVPGR" role="3cqZAk">
-                  <node concept="2OqwBi" id="65E6xpGVQI$" role="3uHU7w">
-                    <node concept="37vLTw" id="65E6xpGVPH2" role="2Oq$k0">
-                      <ref role="3cqZAo" node="65E6xpGVsLD" resolve="ex" />
-                    </node>
-                    <node concept="liA8E" id="65E6xpGVSkC" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                    </node>
+                <node concept="2OqwBi" id="65E6xpGVQI$" role="3cqZAk">
+                  <node concept="37vLTw" id="65E6xpGVPH2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="65E6xpGVsLD" resolve="ex" />
                   </node>
-                  <node concept="Xl_RD" id="65E6xpGVx1r" role="3uHU7B">
-                    <property role="Xl_RC" value="Evaluation error: " />
+                  <node concept="liA8E" id="65E6xpGVSkC" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
               </node>
