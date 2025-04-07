@@ -23,11 +23,13 @@ dependencies {
 }
 
 tasks.register('resolveMpsLibraries', Sync) {
+    description 'Download the MPS libraries that are used in this project.'
     from configurations.mpsLibraries.elements.map { it.collect(project.&zipTree) }
     into rootProject.layout.buildDirectory.dir('dependencies')
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
+    description 'Generates the build script that contains all other build scripts.'
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
     mpsHome = mpsHomeProvider
@@ -41,6 +43,7 @@ tasks.register('build_allScripts', MpsGenerate) {
 
 task build_actionsfilter(type: BuildLanguages, dependsOn: ['build_allScripts']) {
     script scriptFile('com.mbeddr.platform/actionsfilter.xml')
+    description 'Builds the actions filter IntelliJ plugin.'
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
     outputs.dir(new File(artifactsDir, 'com.mbeddr.mpsutil.actionsfilter/'))
@@ -49,11 +52,13 @@ task build_actionsfilter(type: BuildLanguages, dependsOn: ['build_allScripts']) 
 
 task build_platform(type: BuildLanguages, dependsOn: ['build_allScripts', build_actionsfilter]) {
     script scriptFile('com.mbeddr.platform/build.xml')
+    description 'Build the mbeddr platform.'
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
 }
 
 task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
+    description 'Copy the actions filter IntelliJ plugin to the MPS plugin\'s directory'
     from "$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/"
     include "com.mbeddr.mpsutil.actionsfilter/"
     into "$mpsPluginsDir"
@@ -63,14 +68,14 @@ tasks.getByPath(':com.mbeddr:install').dependsOn install_actionsfilter
 tasks.register('generate_mbeddr_platform_tests', RunAntScript) {
     dependsOn build_platform
     script script_test_mbeddrPlatform
-    description "build mbeddr platform tests"
+    description 'Build the mbeddr platform tests.'
     targets 'generate'
 }
 
 tasks.register('generate_platform_sandboxes', RunAntScript) {
     dependsOn build_platform
     script script_mbeddrPlatform_sandboxes
-    description "build mbeddr platform sandboxes"
+    description 'Build the mbeddr platform sandboxes.'
     targets 'generate'
 }
 
@@ -80,23 +85,27 @@ tasks.register('generate_platform_languages') {
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: [build_platform, generate_mbeddr_platform_tests]) {
     script script_test_mbeddrPlatform
-    description "execute typesystem and generator tests for the plaform"
+    description 'Execute typesystem and generator tests for the mbeddr plaform.'
     targets 'check'
 }
 
 tasks.register('test') {
     dependsOn(test_mbeddr_platform)
+    description 'Run all tests in the mbeddr platform.'
 }
 
 tasks.named('check') {
     dependsOn('test')
+    description 'Run all checks.'
 }
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
+    description 'Build the platform describution.'
 }
 
 task package_mbeddrPlatform(type: Zip, dependsOn: build_platform) {
+    description 'Package the mbeddr platform.'
     archiveFileName = 'com.mbeddr.platform.zip'
     from artifactsDir
     include "com.mbeddr.platform/**"
@@ -122,7 +131,9 @@ task defaultWrapper(dependsOn: build_platform) {
 
 rootProject.defaultTasks 'defaultWrapper'
 
-task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrPlatformPublicationToMavenLocal'])
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrPlatformPublicationToMavenLocal']) {
+    description 'Publish the mbeddr platform to the local Maven repository.'
+}
 
 publishing {
     publications {

@@ -27,6 +27,7 @@ ext.mpsHomeProvider = objects.directoryProperty()
 
 if (!project.skipresolve_mps) {
     def resolveMps = tasks.register('resolveMps', Sync) {
+        description 'Download the required MPS version.'
         from configurations.mps.elements.map { it.collect(project.&zipTree) }
         into mpsHomeDir
     }
@@ -57,7 +58,7 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 
 task install() {
     // dependencies to this task are added dynamically from other scripts (com.mbeddr.platform, com.mbeddr.languages)
-    description "Install the required plugins into the MPS plugin repository"
+    description "Install the required IntelliJ plugins into the MPS plugin repository."
     group "Build Setup"
     doFirst {
         // check parent gradle file for definition of the variables
@@ -171,6 +172,7 @@ private static void configureRepositories(Project project) {
 
 
 tasks.register('printVersions') {
+    description 'Print the mbeddr and mbeddr platform build number.'
     doLast {
         println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
         println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
@@ -194,6 +196,7 @@ List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.colle
 }
 
 tasks.register('migrate', MpsMigrate) {
+    description 'Run all pending migrations in the project.'
     dependsOn(':com.mbeddr:platform:generate_platform_languages')
     javaLauncher = jbrToolchain.javaLauncher
     haltOnPrecheckFailure = false
@@ -209,6 +212,7 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
+    description 'Execute rerunnable module migrations and project migrations.'
     dependsOn(':com.mbeddr:platform:generate_platform_languages')
     javaLauncher = jbrToolchain.javaLauncher
 
