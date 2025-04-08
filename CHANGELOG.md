@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# April 2025
+
+## com.mbeddr.mpsutil.conceptdiagram
+
+### Added
+
+- A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
+
 # February 2025
 
 ## com.mbeddr.doc

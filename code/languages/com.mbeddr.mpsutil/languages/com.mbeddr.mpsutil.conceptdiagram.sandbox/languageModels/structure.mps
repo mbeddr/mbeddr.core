@@ -20,6 +20,7 @@
   <registry>
     <language id="9d1cb9f8-2ae0-4895-91c8-ff32e8afc27d" name="com.mbeddr.mpsutil.conceptdiagram">
       <concept id="2634829965774842138" name="com.mbeddr.mpsutil.conceptdiagram.structure.ConceptDiagram" flags="ng" index="3X0abY">
+        <property id="6996316882641061254" name="readonly" index="2sX6M$" />
         <property id="1934248081282033245" name="autoPopulate" index="3qB38W" />
         <property id="1934248081280676045" name="autoLayoutOnInit" index="3qSeiG" />
         <property id="1934248081280111078" name="dontSaveLayoutData" index="3qYkm7" />
@@ -1690,6 +1691,7 @@
     <property role="3qB38W" value="true" />
     <property role="3qSeiG" value="true" />
     <property role="3qYkm7" value="true" />
+    <property role="2sX6M$" value="true" />
   </node>
 </model>
 
