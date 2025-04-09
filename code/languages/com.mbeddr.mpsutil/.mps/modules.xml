@@ -5,6 +5,8 @@
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.commenting.devkit" folder="staging.margincell_review" />
       <modulePath path="$PROJECT_DIR$/devkits/com.mbeddr.mpsutil.guides/com.mbeddr.mpsutil.guides.devkit" folder="staging.editingGuide" />
       <modulePath path="$PROJECT_DIR$/languages/EcoreImporter_TestLanguage1/EcoreImporter_TestLanguage1.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.base/com.mbeddr.core.base.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.core.codereview/com.mbeddr.core.codereview.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.actionsfilter/com.mbeddr.mpsutil.actionsfilter.mpl" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.asynccell.sandbox/com.mbeddr.mpsutil.asynccell.sandbox.mpl" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.bldoc/com.mbeddr.mpsutil.bldoc.mpl" folder="rest" />
@@ -98,6 +100,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.xml.fix/com.mbeddr.mpsutil.xml.fix.mpl" folder="stable.xml.fix" />
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10/test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10.mpl" folder="rest.ecore.tests.testLanguages" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.base.pluginSolution/com.mbeddr.core.base.pluginSolution.msd" folder="core.solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.asynccell/com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildassistant/com.mbeddr.mpsutil.buildassistant.msd" folder="" />

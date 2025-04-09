@@ -4,26 +4,10 @@
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="languageModels" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="commons-codec.jar" />
-      <sourceRoot location="commons-collections4.jar" />
-      <sourceRoot location="curvesapi.jar" />
-      <sourceRoot location="poi-ooxml-lite.jar" />
-      <sourceRoot location="poi-ooxml.jar" />
-      <sourceRoot location="poi.jar" />
-      <sourceRoot location="xmlbeans.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/commons-codec.jar" />
-      <library location="${module}/lib/commons-collections4.jar" />
-      <library location="${module}/lib/curvesapi.jar" />
-      <library location="${module}/lib/poi-ooxml-lite.jar" />
-      <library location="${module}/lib/poi-ooxml.jar" />
-      <library location="${module}/lib/poi.jar" />
-      <library location="${module}/lib/xmlbeans.jar" />
     </facet>
   </facets>
   <accessoryModels />
@@ -44,6 +28,7 @@
         <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false" scope="design">2764de2d-de8a-48ff-9db3-f78342da5c1a(com.mbeddr.core.base#8626086128958648025)</dependency>
+        <dependency reexport="false">fc506c9e-94ac-4d65-9950-01def4cba278(com.mbeddr.spreadsheet.libs)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -78,6 +63,7 @@
         <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
         <module reference="1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)" version="0" />
         <module reference="7986ede4-bb02-4e5d-8e13-03458d393ab7(com.mbeddr.spreadsheat#4354378109086982931)" version="0" />
+        <module reference="fc506c9e-94ac-4d65-9950-01def4cba278(com.mbeddr.spreadsheet.libs)" version="0" />
         <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
         <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
         <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />

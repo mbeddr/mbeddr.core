@@ -7,6 +7,13 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2025
 
+## com.mbeddr.doc
+
+- 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
+  to solution `com.mbeddr.spreadsheet.libs`.
+- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
+  enables using Document nodes in tests, for example.
+
 ## com.mbeddr.mpsutil.conceptdiagram
 
 ### Added

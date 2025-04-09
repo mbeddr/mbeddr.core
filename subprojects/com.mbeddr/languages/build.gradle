@@ -150,9 +150,16 @@ task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_l
     description 'Run the mbeddr core execution tests.'
 }
 
+tasks.register('generate_mbeddr_core_ts', RunAntScript) {
+    script script_test_mbeddrCoreTs
+    targets = ['generate']
+}
+
 task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
+    dependsOn('generate_mbeddr_core_ts')
     script script_test_mbeddrCoreTs
     description 'Run the mbeddr core typesystem tests.'
+    targets = ['check']
 }
 
 task test_mbeddr_core_ex {
@@ -270,7 +277,10 @@ publishing {
     }
 }
 
-
+tasks.register('generate_mbeddr_languages') {
+    description = 'Generate all mbeddr languages in order to run migrations'
+    dependsOn('build_mbeddr', 'generate_mbeddr_core_ts')
+}
 
 task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
 ':com.mbeddr:platform:publishMbeddrPlatformToLocal']) {
