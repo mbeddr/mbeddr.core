@@ -48,6 +48,7 @@ dependencies {
 }
 
 task resolve_mbeddr_platform() {
+    description 'Resolve the mbeddr platform artifact via the mbeddr platform configuration.'
     dependsOn(configurations.mbeddrPlatform)
     doLast {
         copy {
@@ -60,6 +61,7 @@ task resolve_mbeddr_platform() {
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
+    description 'Generates the build script that contains all other build scripts.'
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
     mpsHome = mpsHomeProvider
@@ -81,6 +83,7 @@ tasks.register('build_allScripts', MpsGenerate) {
 }
 
 task copy_logConfig(type: Copy, dependsOn: 'build_allScripts') {
+    description 'Copy the logging configuration to the MPS installation.'
     from "$rootDir/debug"
     into "$mpsHomeDir/bin"
 }
@@ -91,6 +94,7 @@ ant.taskdef(name: 'junitreport', classname: 'org.apache.tools.ant.taskdefs.optio
         classpath: configurations.junitAnt.asPath)
 
 task build_mbeddr(type: BuildLanguages, dependsOn: ['build_allScripts', 'resolve_mbeddr_platform']) {
+    description 'Build mbeddr itself.'
     script script_build_mbeddr
     outputs.dir("$artifactsDir/mbeddr")
 }
@@ -113,27 +117,37 @@ def script_build_tutorialSolutions = new File(scriptsBasePath + "/com.mbeddr.tut
 
 task build_tutorial_languages(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_build_tutorialLanguages
+    description 'Build the mbeddr tutorial languages.'
 }
 
 task build_tutorial_solutions(type: BuildLanguages, dependsOn: build_tutorial_languages) {
     script script_build_tutorialSolutions
+    description 'Build the mbeddr tutorial solutions.'
 }
 
-task build_tutorial(dependsOn: build_tutorial_solutions) { }
+task build_tutorial(dependsOn: build_tutorial_solutions) {
+    description 'Build the mbeddr tutorial.'
+ }
 
 
 task test_mbeddr_tutorial(type: TestLanguages, dependsOn: build_tutorial) {
     script script_test_mbeddrTutorial
+    description 'Test the mbeddr tutorial.'
 }
+
 task test_mbeddr_ext_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrExtTs
+    description 'Run the mbeddr typesystem tests.'
 }
+
 task test_mbeddr_performance(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrPerformance
+    description 'Run the mbeddr performance tests.'
 }
 
 task build_mbeddr_core_ex(type: BuildLanguages, dependsOn: [build_mbeddr, copy_logConfig]) {
     script script_test_mbeddrCoreEx
+    description 'Run the mbeddr core execution tests.'
 }
 
 tasks.register('generate_mbeddr_core_ts', RunAntScript) {
@@ -144,20 +158,23 @@ tasks.register('generate_mbeddr_core_ts', RunAntScript) {
 task test_mbeddr_core_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     dependsOn('generate_mbeddr_core_ts')
     script script_test_mbeddrCoreTs
+    description 'Run the mbeddr core typesystem tests.'
     targets = ['check']
 }
 
 task test_mbeddr_core_ex {
+    description 'Run the mbeddr core execution tests.'
 	doLast {
 		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.core")
 	}
 }
 
 task test_mbeddr_core(dependsOn: [test_mbeddr_core_ex, test_mbeddr_core_ts]) {
-
+    description 'Run all mbeddr core tests.'
 }
 
 task test_mbeddr_cc_ex {
+    description 'Run the mbeddr cc execution tests.'
 	doLast {
 		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.cc")
 	}
@@ -165,46 +182,63 @@ task test_mbeddr_cc_ex {
 
 task build_mbeddr_cc_ex(type: RunAntScript, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcEx
+    description 'Build the mbeddr cc execution tests.'
     targets 'clean', 'generate'
 }
 
 task test_mbeddr_cc_ts(type: TestLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrCcTs
+    description 'Run the mbeddr cc typesystem tests.'
 }
 
-task test_mbeddr_cc(dependsOn: [build_mbeddr_cc_ex, test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {}
+task test_mbeddr_cc(dependsOn: [build_mbeddr_cc_ex, test_mbeddr_cc_ex, test_mbeddr_cc_ts]) {
+    description 'Run all mbeddr cc tests.'
+}
 
 task build_mbeddr_ext_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrExtEx
+    description 'Build all mbeddr C extension execution tests.'
 }
+
 task build_mbeddr_xmodel_ex(type: BuildLanguages, dependsOn: build_mbeddr) {
     script script_test_mbeddrXmodelEx
+    description 'Build all mbeddr crossmodel generation execution tests.'
 }
 
 task test_mbeddr_ext_ex {
 	doLast {
 		ant.makeTests(workingDirectory: rootProject.projectDir.absolutePath + "/code/languages/com.mbeddr.ext")
 	}
+    description 'Run all mbeddr mbeddr crossmodel generation execution tests.'
 }
 
-task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {}
+task test_mbeddr_ext(dependsOn: [build_mbeddr_ext_ex, test_mbeddr_ext_ex, test_mbeddr_ext_ts]) {
+    description 'Run all mbeddr C extension tests.'
+}
 
-task test_mbeddr_xmodel(dependsOn: []) {}
+task test_mbeddr_xmodel(dependsOn: []) {
+    description 'Run all mbeddr crossmodel generation tests.'
+}
 
-task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext, test_mbeddr_xmodel]) {}
+task test_mbeddr(dependsOn: [test_mbeddr_core, test_mbeddr_performance, test_mbeddr_cc, test_mbeddr_ext, test_mbeddr_xmodel]) {
+    description 'Run all tests in mbeddr.'
+}
 
 tasks.register('test') {
     dependsOn(test_mbeddr)
+    description 'Run all tests.'
 }
 
 tasks.named('check') {
     dependsOn 'test'
+    description 'Check the full project.'
 }
 
 task package_mbeddr(type: Zip, dependsOn: build_mbeddr) {
     archiveFileName = 'com.mbeddr.zip'
     from artifactsDir
     include "mbeddr/**"
+    description 'Package mbeddr into a zip file.'
 }
 
 artifacts {
@@ -249,7 +283,9 @@ tasks.register('generate_mbeddr_languages') {
 }
 
 task publishMbeddrToLocal (dependsOn: ['publishMbeddrPublicationToMavenLocal',
-':com.mbeddr:platform:publishMbeddrPlatformToLocal']) {}
+':com.mbeddr:platform:publishMbeddrPlatformToLocal']) {
+    description 'Publish mbeddr to the local maven repository.'
+}
 
 //mbeddr build is "master" also for maintenance branches
 //using the closure to delay evaluate from configuration to execution phase is important because the

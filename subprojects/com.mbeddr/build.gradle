@@ -27,6 +27,7 @@ ext.mpsHomeProvider = objects.directoryProperty()
 
 if (!project.skipresolve_mps) {
     def resolveMps = tasks.register('resolveMps', Sync) {
+        description 'Download the required MPS version.'
         from configurations.mps.elements.map { it.collect(project.&zipTree) }
         into mpsHomeDir
     }
@@ -57,7 +58,7 @@ if (project.hasProperty("MPS_PATHS_SELECTOR")) {
 
 task install() {
     // dependencies to this task are added dynamically from other scripts (com.mbeddr.platform, com.mbeddr.languages)
-    description "Install the required plugins into the MPS plugin repository"
+    description "Install the required IntelliJ plugins into the MPS plugin repository."
     group "Build Setup"
     doFirst {
         // check parent gradle file for definition of the variables
@@ -118,7 +119,9 @@ private static void configureRepositories(Project project) {
         project.publishing {
             repositories {
                 maven {
-                    url project.mbeddrBuildNumber.endsWith('-SNAPSHOT') ? project.snapshotRepository : project.releaseRepository
+                    url project.mbeddrBuildNumber.endsWith('-SNAPSHOT')
+                            ? 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
+                            : 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
                     if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
                         credentials {
                             username project.getProperty('artifacts.itemis.cloud.user')
@@ -153,14 +156,13 @@ private static void configureRepositories(Project project) {
             // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
             mavenLocal()
         }
-        for (repoUrl in project.dependencyRepositories) {
-            maven {
-                url repoUrl
-                if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
-                    credentials {
-                        username project.getProperty('artifacts.itemis.cloud.user')
-                        password project.getProperty('artifacts.itemis.cloud.pw')
-                    }
+        maven {
+            url 'https://artifacts.itemis.cloud/repository/maven-mps/'
+
+            if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
+                credentials {
+                    username project.getProperty('artifacts.itemis.cloud.user')
+                    password project.getProperty('artifacts.itemis.cloud.pw')
                 }
             }
         }
@@ -170,17 +172,10 @@ private static void configureRepositories(Project project) {
 
 
 tasks.register('printVersions') {
+    description 'Print the mbeddr and mbeddr platform build number.'
     doLast {
         println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
         println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
-    }
-}
-
-tasks.register('printRepositories') {
-    doLast {
-        println "snapshotRepository: $snapshotRepository"
-        println "releaseRepository: $releaseRepository"
-        println "dependencyRepositories: $dependencyRepositories"
     }
 }
 
@@ -205,9 +200,11 @@ tasks.register('generate_all_languages') {
 }
 
 tasks.register('migrate', MpsMigrate) {
+    description 'Run all pending migrations in the project.'
     dependsOn('generate_all_languages')
     javaLauncher = jbrToolchain.javaLauncher
-
+    haltOnPrecheckFailure = false
+    haltOnDependencyError = false
     mpsHome = mpsHomeDir
     projectDirectories.from(projectDirectoriesInDependencyOrder)
 
@@ -219,6 +216,7 @@ tasks.register('migrate', MpsMigrate) {
 }
 
 tasks.register('remigrate', Remigrate) {
+    description 'Execute rerunnable module migrations and project migrations.'
     dependsOn('generate_all_languages')
     javaLauncher = jbrToolchain.javaLauncher
 

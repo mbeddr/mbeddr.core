@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.apache.batik" uuid="5ad14eca-28d7-4bce-b8e0-648908a49062" moduleVersion="0" compileInMPS="true">
+<solution name="org.apache.batik" uuid="5ad14eca-28d7-4bce-b8e0-648908a49062" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-all-1.12.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="batik-all.jar" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/batik-all.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/batik-all-1.12.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)</dependency>

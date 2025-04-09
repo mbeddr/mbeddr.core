@@ -8,7 +8,6 @@
   </languages>
   <imports>
     <import index="et5u" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.messages(MPS.Core/)" />
-    <import index="i30" ref="r:ab837574-aa54-4b18-9762-b783ef089263(jetbrains.mps.generator.impl)" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -18,7 +17,6 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="tft2" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator.impl.plan(MPS.Generator/)" />
     <import index="ap4t" ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd/java:jetbrains.mps.generator(MPS.Generator/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
@@ -33,7 +31,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -70,6 +68,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -120,7 +121,10 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
+        <child id="1160998896846" name="condition" index="1gVkn0" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -143,7 +147,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -153,13 +157,14 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -427,51 +432,35 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2_w5$M94NDQ" role="3clF47">
         <node concept="3clFbH" id="2_w5$M94NDR" role="3cqZAp" />
-        <node concept="3cpWs8" id="2_w5$M94NDS" role="3cqZAp">
-          <node concept="3cpWsn" id="2_w5$M94NDT" role="3cpWs9">
-            <property role="TrG5h" value="planBuilder" />
-            <node concept="3uibUv" id="2_w5$M94NDU" role="1tU5fm">
-              <ref role="3uigEE" to="tft2:~RigidPlanBuilder" resolve="RigidPlanBuilder" />
+        <node concept="3cpWs8" id="1zLDpTpog5v" role="3cqZAp">
+          <node concept="3cpWsn" id="1zLDpTpog5w" role="3cpWs9">
+            <property role="TrG5h" value="planProvider" />
+            <node concept="3uibUv" id="1zLDpTpofGX" role="1tU5fm">
+              <ref role="3uigEE" to="ap4t:~InterpretedPlanProvider" resolve="InterpretedPlanProvider" />
             </node>
-            <node concept="2ShNRf" id="2_w5$M94NDV" role="33vP2m">
-              <node concept="1pGfFk" id="2_w5$M94NDW" role="2ShVmc">
-                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry)" resolve="RigidPlanBuilder" />
-                <node concept="2YIFZM" id="2_w5$M94NDX" role="37wK5m">
+            <node concept="2ShNRf" id="1zLDpTpog5x" role="33vP2m">
+              <node concept="1pGfFk" id="1zLDpTpog5y" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="ap4t:~InterpretedPlanProvider.&lt;init&gt;(jetbrains.mps.smodel.language.LanguageRegistry,jetbrains.mps.messages.IMessageHandler,org.jetbrains.mps.openapi.model.SNodeReference,org.jetbrains.mps.openapi.module.SRepository)" resolve="InterpretedPlanProvider" />
+                <node concept="2YIFZM" id="1zLDpTpog5z" role="37wK5m">
                   <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
                   <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                  <node concept="37vLTw" id="2_w5$M94NDY" role="37wK5m">
+                  <node concept="37vLTw" id="1zLDpTpog5$" role="37wK5m">
                     <ref role="3cqZAo" node="2_w5$M94NFy" resolve="repo" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="2_w5$M94NDZ" role="3cqZAp">
-          <node concept="3cpWsn" id="2_w5$M94NE0" role="3cpWs9">
-            <property role="TrG5h" value="planTranslator" />
-            <node concept="3uibUv" id="2_w5$M94NE1" role="1tU5fm">
-              <ref role="3uigEE" to="i30:1UVrAZQmEH$" resolve="GenPlanTranslator" />
-            </node>
-            <node concept="2ShNRf" id="2_w5$M94NE2" role="33vP2m">
-              <node concept="1pGfFk" id="2_w5$M94NE3" role="2ShVmc">
-                <ref role="37wK5l" to="i30:1UVrAZQmUpe" resolve="GenPlanTranslator" />
-                <node concept="37vLTw" id="2_w5$M94NE4" role="37wK5m">
-                  <ref role="3cqZAo" node="2_w5$M94NF$" resolve="plan" />
+                <node concept="37vLTw" id="1zLDpTpog5_" role="37wK5m">
+                  <ref role="3cqZAo" node="2_w5$M94NFE" resolve="messageHandler" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2_w5$M94NE5" role="3cqZAp">
-          <node concept="2OqwBi" id="2_w5$M94NE6" role="3clFbG">
-            <node concept="37vLTw" id="2_w5$M94NE7" role="2Oq$k0">
-              <ref role="3cqZAo" node="2_w5$M94NE0" resolve="planTranslator" />
-            </node>
-            <node concept="liA8E" id="2_w5$M94NE8" role="2OqNvi">
-              <ref role="37wK5l" to="i30:1UVrAZQmU_x" resolve="feed" />
-              <node concept="37vLTw" id="2_w5$M94NE9" role="37wK5m">
-                <ref role="3cqZAo" node="2_w5$M94NDT" resolve="planBuilder" />
+                <node concept="2OqwBi" id="1zLDpTpog5A" role="37wK5m">
+                  <node concept="37vLTw" id="1zLDpTpog5B" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2_w5$M94NF$" resolve="plan" />
+                  </node>
+                  <node concept="iZEcu" id="1zLDpTpog5C" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="1zLDpTpog5D" role="37wK5m">
+                  <ref role="3cqZAo" node="2_w5$M94NFy" resolve="repo" />
+                </node>
               </node>
             </node>
           </node>
@@ -482,21 +471,24 @@
             <node concept="3uibUv" id="2_w5$M94NEc" role="1tU5fm">
               <ref role="3uigEE" to="ap4t:~ModelGenerationPlan" resolve="ModelGenerationPlan" />
             </node>
-            <node concept="2OqwBi" id="2_w5$M94NEd" role="33vP2m">
-              <node concept="37vLTw" id="2_w5$M94NEe" role="2Oq$k0">
-                <ref role="3cqZAo" node="2_w5$M94NDT" resolve="planBuilder" />
+            <node concept="2OqwBi" id="1zLDpTpoiUa" role="33vP2m">
+              <node concept="37vLTw" id="1zLDpTpoieR" role="2Oq$k0">
+                <ref role="3cqZAo" node="1zLDpTpog5w" resolve="planProvider" />
               </node>
-              <node concept="liA8E" id="2_w5$M94NEf" role="2OqNvi">
-                <ref role="37wK5l" to="tft2:~RigidPlanBuilder.wrapUp(jetbrains.mps.generator.plan.PlanIdentity)" resolve="wrapUp" />
-                <node concept="2OqwBi" id="2_w5$M94NEg" role="37wK5m">
-                  <node concept="37vLTw" id="2_w5$M94NEh" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2_w5$M94NE0" resolve="planTranslator" />
-                  </node>
-                  <node concept="liA8E" id="2_w5$M94NEi" role="2OqNvi">
-                    <ref role="37wK5l" to="i30:1UVrAZQp80f" resolve="getPlanIdentity" />
-                  </node>
+              <node concept="liA8E" id="1zLDpTpok1C" role="2OqNvi">
+                <ref role="37wK5l" to="ap4t:~InterpretedPlanProvider.getPlan(org.jetbrains.mps.openapi.model.SModel)" resolve="getPlan" />
+                <node concept="37vLTw" id="1zLDpTpokox" role="37wK5m">
+                  <ref role="3cqZAo" node="2_w5$M94NFA" resolve="modelToGenerate" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1zLDpTpomCt" role="3cqZAp">
+          <node concept="3y3z36" id="1zLDpTpont7" role="1gVkn0">
+            <node concept="10Nm6u" id="1zLDpTpoo77" role="3uHU7w" />
+            <node concept="37vLTw" id="1zLDpTpon0C" role="3uHU7B">
+              <ref role="3cqZAo" node="2_w5$M94NEb" resolve="genPlan" />
             </node>
           </node>
         </node>

@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
-# March 2025
+# April 2025
 
 ## com.mbeddr.doc
 
@@ -14,24 +14,71 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
   enables using Document nodes in tests, for example.
 
-# January 2025
+## com.mbeddr.mpsutil.conceptdiagram
+
+### Added
+
+- A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
+
+## com.mbeddr:platform languages
+
+### Changed
+
+- Replaced used bundled jars stored in the source code repo by Gradle dependencies
+
+### Added
+
+- SBOM file with the description of all used components (libraries) and their dependencies
+
+# February 2025
+
+## com.mbeddr.doc
+
+### Fixed
+
+- Generating screenshots now uses much less memory.
+
+## com.mbeddr.mpsutil.compare
+
+### Removed
+
+- Plugin `com.mbeddr.mpsutil.compare`, its languages and solutions were moved to MPS-Extensions. The migration followed MPS-Extensions' conventions, so the new plugin name is: `de.itemis.mps.compare`. All languages and solutions maintained their names.
 
 ## com.mbeddr.build
+
+### Removed
 
 - `com.mbeddr:allScripts` artifact is no longer built nor published. It should not be used in your projects as all build
   solutions are part of the corresponding platforms.
 
-# December 2024
+# January 2025
 
 ## com.mbeddr.mpsutil
 
+### Fixed
+
+- The text generator output of `com.mbeddr.mpsutil.json` was improved and escaping of special characters was implemented. The output options and JSON parsing can now also be configured through the extension point `json` in the method JsonConfig#getFactory. For more information read: https://github.com/fasterxml/jackson-core/wiki/JsonFactory-Features, https://github.com/fasterxml/jackson-core/wiki/JsonGenerator-Features and https://github.com/fasterxml/jackson-core/wiki/JsonParser-Features.
+
+# December 2024
+
+## com.mbeddr.core.base
+
+### Changed
+
+- The mbeddr search tool was improved: It can now also search languages, the project and globally. It also got options for approximate searching with an error distance matching the case and searching by a regular expression. Nodes that should or should not be filter, can now be customized through the extension point `SearchNodeFilter`. The UI was also improved.
+
+## com.mbeddr.mpsutil
+
+### Fixed
+
+- Updated `GeneratorFacade` helper class to support execution of genplans with Transform steps that have multiple entries (migrated from the old, deprecated languages list) which have to be executed all together in one single generation step.
 - Breaking: The language `com.mbeddr.mpsutil.httsupport` was removed. Please use `jetbrains.mps.ide.httpsupport` instead.
 
 # November 2024
 
 ## com.mbeddr.mpsutil
 
-### Feature
+### Added
 
 - A new language `com.mbeddr.mpsutil.collections` was added that adds support for a set type `nset` that use nodes as the values of the set. Equivalence of nodes is checked structurally. The hash code calculation is done for all properties and children and the first level of references. The runtime solution also contains a more general class `EquivalenceHashSet` to implement hashsets with arbitrary `equals` and `hashcode` methods.
 
@@ -42,6 +89,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Feature
 
 - Adds a caching mechanism for caching the retrieval of 'ILogicalChild' by 'ILogicalChildOwner'
+
+## com.mbeddr.core.base
+
+- Diagrams are not auto-layouted before taking a screenshot.
 
 ## com.mbeddr.mpsutil.ecore
 
@@ -55,7 +106,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.interpreter
 
-### Feature
+### Added
 
 - Added user defineable call back function when trace node is added to the trace tree
 
@@ -73,7 +124,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.checkinHandler
 
-### Feature
+### Added
 
 - A new kind of Checkin handlers (background handler) now support the interface `CommitCheck` which allows more options like running the code after the commit or in the background.
 
@@ -135,6 +186,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # June 2024
 
+## General
+
+- Some classloading issues with stubs were fixed.
+
 ## com.mbeddr.mpsutil
 
 ### Deprecated
@@ -195,6 +250,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - The comparator language now supports a diff tool that can be activated through the `show diff` checkbox.
+
+## Changes
+
+- The interface `IIsDocumentationComment` is now integrated into the MPS TODO window and the old mbeddr todo viewer was completely removed.
 
 # March 2024
 

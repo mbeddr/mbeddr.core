@@ -2,13 +2,24 @@ plugins {
     id 'base'
     id 'maven-publish'
     id 'buildlogic.mps-conventions'
+    id "org.cyclonedx.bom" version "2.2.0"
 }
 
 import de.itemis.mps.gradle.*
 import de.itemis.mps.gradle.tasks.MpsGenerate
+import groovy.transform.TupleConstructor
 
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
+ext.reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
+
+// Project group
+group = 'com.mbeddr'
+
+repositories {
+    // required for com.michaelbaranov:microba library
+    maven { url 'https://maven.atlassian.com/content/repositories/atlassian-public/' }
+}
 
 configurations {
     mpsLibraries { canBeConsumed = false }
@@ -22,12 +33,92 @@ dependencies {
     }
 }
 
+@TupleConstructor
+class BundledDep {
+    String name
+    List<String> notations
+    String modulePath
+    Closure depConfigClosure = { transitive = false }
+    String getConfigName() {
+        name + '_bundled'
+    }
+    String getTaskName() {
+        'resolve_' + this.configName
+    }
+}
+
+def bundledDeps = [
+        new BundledDep('commonmark', ['org.commonmark:commonmark:0.17.2'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
+        new BundledDep('microba', ['com.michaelbaranov:microba:0.4.4.3'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.datepicker.runtime'),
+        new BundledDep('poi-ooxml', ['org.apache.poi:poi-ooxml:5.0.0'], 'com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs', {
+            exclude group: 'org.slf4j'
+            exclude module: 'commons-compress'
+            exclude group: 'org.bouncycastle'
+            exclude module: 'xmlsec'
+            exclude module: 'batik-all'
+            exclude module: 'graphics2d'
+            exclude module: 'commons-math3'
+            exclude module: 'SparseBitSet'
+        }),
+        new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1', 'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
+            exclude module: 'stax-api'
+        }),
+        new BundledDep('jfreechart', ['org.jfree:jfreechart:1.0.19'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
+        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2023.13'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
+        new BundledDep('batik', ['org.apache.xmlgraphics:batik-all:1.12'], 'com.mbeddr.mpsutil/solutions/org.apache.batik'),
+        new BundledDep('xml', ['xerces:xercesImpl:2.12.2', 'xalan:serializer:2.7.3', 'xml-resolver:xml-resolver:1.2', 'xml-apis:xml-apis-ext:1.3.04'], 'com.mbeddr.mpsutil/solutions/org.xml'),
+        new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
+        new BundledDep('mockito', ['org.mockito:mockito-core:2.23.4'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
+        new BundledDep('xtext', ['org.eclipse.xtext:org.eclipse.xtext.xbase:2.11.0',
+                                 'org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.11.0',
+                                 'org.eclipse.xtext:org.eclipse.xtext.ecore:2.11.0',
+                                 'org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.3.1',
+                                 'org.eclipse.emf:org.eclipse.emf.ecore.xcore.lib:1.1.100'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecoretransformationutils.stubs', {
+            exclude module: 'aopalliance'
+            exclude module: 'antlr-runtime'
+            exclude module: 'org.eclipse.osgi'
+            exclude module: 'org.eclipse.xtend.lib'
+            exclude module: 'asm-commons'
+            exclude module: 'log4j'
+            exclude module: 'guava'
+        })
+]
+
+bundledDeps.each {bd ->
+    configurations {
+        create(bd.configName)
+    }
+    dependencies {
+        bd.notations.each {depNotation ->
+            add(bd.configName, depNotation, bd.depConfigClosure)
+        }
+    }
+    tasks.create(bd.taskName, Sync.class) {
+        from configurations.getByName(bd.configName)
+        into file(rootProject.file("code/languages/${bd.modulePath}/lib"))
+
+        // Strip version numbers from file names
+        rename { filename ->
+            def ra = configurations.getByName(bd.configName).resolvedConfiguration.resolvedArtifacts.find { ResolvedArtifact ra -> ra.file.name == filename }
+            String finalName
+            if (ra.classifier != null) {
+                finalName = "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                finalName = "${ra.name}.${ra.extension}"
+            }
+            return finalName
+        }
+    }
+}
+
 tasks.register('resolveMpsLibraries', Sync) {
+    description 'Download the MPS libraries that are used in this project.'
     from configurations.mpsLibraries.elements.map { it.collect(project.&zipTree) }
     into rootProject.layout.buildDirectory.dir('dependencies')
 }
 
 tasks.register('build_allScripts', MpsGenerate) {
+    description 'Generates the build script that contains all other build scripts.'
     javaLauncher = jbrToolchain.javaLauncher
     environmentKind = EnvironmentKind.MPS
     mpsHome = mpsHomeProvider
@@ -41,6 +132,7 @@ tasks.register('build_allScripts', MpsGenerate) {
 
 task build_actionsfilter(type: BuildLanguages, dependsOn: ['build_allScripts']) {
     script scriptFile('com.mbeddr.platform/actionsfilter.xml')
+    description 'Builds the actions filter IntelliJ plugin.'
     // see comment in build_allScripts, above, for reasons we need to explicitly state task output
     // to address NO-SOURCE failure for package_mbeddrPlatform
     outputs.dir(new File(artifactsDir, 'com.mbeddr.mpsutil.actionsfilter/'))
@@ -49,11 +141,14 @@ task build_actionsfilter(type: BuildLanguages, dependsOn: ['build_allScripts']) 
 
 task build_platform(type: BuildLanguages, dependsOn: ['build_allScripts', build_actionsfilter]) {
     script scriptFile('com.mbeddr.platform/build.xml')
+    description 'Build the mbeddr platform.'
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
 }
+build_platform.dependsOn << bundledDeps.collect {it.taskName }
 
 task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
+    description 'Copy the actions filter IntelliJ plugin to the MPS plugin\'s directory'
     from "$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/"
     include "com.mbeddr.mpsutil.actionsfilter/"
     into "$mpsPluginsDir"
@@ -63,14 +158,14 @@ tasks.getByPath(':com.mbeddr:install').dependsOn install_actionsfilter
 tasks.register('generate_mbeddr_platform_tests', RunAntScript) {
     dependsOn build_platform
     script script_test_mbeddrPlatform
-    description "build mbeddr platform tests"
+    description 'Build the mbeddr platform tests.'
     targets 'generate'
 }
 
 tasks.register('generate_platform_sandboxes', RunAntScript) {
     dependsOn build_platform
     script script_mbeddrPlatform_sandboxes
-    description "build mbeddr platform sandboxes"
+    description 'Build the mbeddr platform sandboxes.'
     targets 'generate'
 }
 
@@ -80,26 +175,34 @@ tasks.register('generate_platform_languages') {
 
 task test_mbeddr_platform(type: TestLanguages, dependsOn: [build_platform, generate_mbeddr_platform_tests]) {
     script script_test_mbeddrPlatform
-    description "execute typesystem and generator tests for the plaform"
+    description 'Execute typesystem and generator tests for the mbeddr plaform.'
     targets 'check'
 }
 
 tasks.register('test') {
     dependsOn(test_mbeddr_platform)
+    description 'Run all tests in the mbeddr platform.'
 }
 
 tasks.named('check') {
     dependsOn('test')
+    description 'Run all checks.'
 }
 
 task build_platform_distribution(type: BuildLanguages, dependsOn: [build_platform, test_mbeddr_platform]) {
     script scriptFile('com.mbeddr.platform/build-distribution.xml')
+    description 'Build the platform describution.'
 }
 
-task package_mbeddrPlatform(type: Zip, dependsOn: build_platform) {
+task package_mbeddrPlatform(type: Zip, dependsOn: [build_platform, cyclonedxBom]) {
+    description 'Package the mbeddr platform.'
     archiveFileName = 'com.mbeddr.platform.zip'
-    from artifactsDir
-    include "com.mbeddr.platform/**"
+    from(artifactsDir) {
+        include "com.mbeddr.platform/**"
+    }
+    from(reportsDir) {
+        include 'sbom.json'
+    }
 }
 
 artifacts {
@@ -122,7 +225,9 @@ task defaultWrapper(dependsOn: build_platform) {
 
 rootProject.defaultTasks 'defaultWrapper'
 
-task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrPlatformPublicationToMavenLocal'])
+task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrPlatformPublicationToMavenLocal']) {
+    description 'Publish the mbeddr platform to the local Maven repository.'
+}
 
 publishing {
     publications {
@@ -168,4 +273,15 @@ if({project.mbeddrBuild}() == "master") {
        and github packages when we are on master or a maintenance branch.
        */
     tasks.findByName("publishMbeddrPlatformPublicationToMavenRepository").dependsOn("publishMbeddrPlatformPublicationToGitHubPackagesRepository")
+}
+
+cyclonedxBom {
+    // SBOM destination directory
+    destination = reportsDir
+    // The file name for the generated SBOMs (before the file format suffix)
+    outputName = "sbom"
+    // The file format generated, can be xml, json or all for generating both
+    outputFormat = "json"
+    // Don't include license texts in generated SBOMs
+    includeLicenseText = false
 }

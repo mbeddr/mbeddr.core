@@ -4,30 +4,28 @@
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}">
-      <sourceRoot location="lib/commons-codec-1.10.jar" />
-      <sourceRoot location="lib/commons-collections4-4.1.jar" />
-      <sourceRoot location="lib/curvesapi-1.04.jar" />
-      <sourceRoot location="lib/poi-5.0.0.jar" />
-      <sourceRoot location="lib/poi-ooxml-5.0.0.jar" />
-      <sourceRoot location="lib/poi-ooxml-lite-5.0.0.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="commons-codec.jar" />
+      <sourceRoot location="commons-collections4.jar" />
+      <sourceRoot location="curvesapi.jar" />
+      <sourceRoot location="poi-ooxml-lite.jar" />
+      <sourceRoot location="poi-ooxml.jar" />
+      <sourceRoot location="poi.jar" />
+      <sourceRoot location="xmlbeans.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet compile="mps" classes="mps" ext="no" type="java">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/commons-codec.jar" />
+      <library location="${module}/lib/commons-collections4.jar" />
+      <library location="${module}/lib/curvesapi.jar" />
+      <library location="${module}/lib/poi-ooxml-lite.jar" />
+      <library location="${module}/lib/poi-ooxml.jar" />
+      <library location="${module}/lib/poi.jar" />
+      <library location="${module}/lib/xmlbeans.jar" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/commons-codec-1.10.jar" />
-    <stubModelEntry path="${module}/lib/commons-collections4-4.1.jar" />
-    <stubModelEntry path="${module}/lib/curvesapi-1.04.jar" />
-    <stubModelEntry path="${module}/lib/poi-5.0.0.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-5.0.0.jar" />
-    <stubModelEntry path="${module}/lib/xmlbeans-4.0.0.jar" />
-    <stubModelEntry path="${module}/lib/poi-ooxml-lite-5.0.0.jar" />
-  </stubModelEntries>
-  <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

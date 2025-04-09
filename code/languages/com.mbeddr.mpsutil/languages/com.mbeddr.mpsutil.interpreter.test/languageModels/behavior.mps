@@ -97,7 +97,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -113,7 +113,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -129,7 +129,7 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -212,17 +212,12 @@
             </node>
             <node concept="3clFbS" id="65E6xpGVsLH" role="1zc67A">
               <node concept="3cpWs6" id="65E6xpGVw0l" role="3cqZAp">
-                <node concept="3cpWs3" id="65E6xpGVPGR" role="3cqZAk">
-                  <node concept="2OqwBi" id="65E6xpGVQI$" role="3uHU7w">
-                    <node concept="37vLTw" id="65E6xpGVPH2" role="2Oq$k0">
-                      <ref role="3cqZAo" node="65E6xpGVsLD" resolve="ex" />
-                    </node>
-                    <node concept="liA8E" id="65E6xpGVSkC" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                    </node>
+                <node concept="2OqwBi" id="65E6xpGVQI$" role="3cqZAk">
+                  <node concept="37vLTw" id="65E6xpGVPH2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="65E6xpGVsLD" resolve="ex" />
                   </node>
-                  <node concept="Xl_RD" id="65E6xpGVx1r" role="3uHU7B">
-                    <property role="Xl_RC" value="Evaluation error: " />
+                  <node concept="liA8E" id="65E6xpGVSkC" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
               </node>
