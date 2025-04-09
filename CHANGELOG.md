@@ -13,6 +13,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
 
+## com.mbeddr:platform languages
+
+### Changed
+
+- Replaced used bundled jars stored in the source code repo by Gradle dependencies
+
+### Added
+
+- SBOM file with the description of all used components (libraries) and their dependencies
+
 # February 2025
 
 ## com.mbeddr.doc

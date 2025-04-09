@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.plantuml.pluginSolution" uuid="c0488c1e-322f-4f38-92d4-5520a7ce96c1" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="plantuml.jar" />
-      <sourceRoot location="rhino-1.7.10.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/plantuml.jar" />
-      <library location="${module}/lib/rhino-1.7.10.jar" />
     </facet>
   </facets>
   <dependencies>
