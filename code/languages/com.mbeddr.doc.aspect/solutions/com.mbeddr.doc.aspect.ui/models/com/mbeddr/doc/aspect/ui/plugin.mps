@@ -2179,13 +2179,9 @@
                 </node>
                 <node concept="liA8E" id="1IUlN8Q3WKg" role="2OqNvi">
                   <ref role="37wK5l" to="v7ux:~Content.setIcon(javax.swing.Icon)" resolve="setIcon" />
-                  <node concept="1QGGTA" id="1IUlN8Q3WKA" role="37wK5m">
-                    <node concept="1QGGSu" id="MipY_gcWZb" role="1QGGTw">
-                      <node concept="10M0yZ" id="MipY_gd3QS" role="3xaMm5">
-                        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
-                      </node>
-                    </node>
+                  <node concept="10M0yZ" id="MipY_gd3QS" role="37wK5m">
+                    <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                    <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
                   </node>
                 </node>
               </node>
@@ -3830,13 +3826,9 @@
                                           <ref role="2WH_rO" node="7r8qu42xNeI" resolve="CONCEPT_DOC_TITLE" />
                                         </node>
                                       </node>
-                                      <node concept="1QGGTA" id="DxJoPcq$hM" role="37wK5m">
-                                        <node concept="1QGGSu" id="MipY_gdgc4" role="1QGGTw">
-                                          <node concept="10M0yZ" id="MipY_gdi5C" role="3xaMm5">
-                                            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
-                                          </node>
-                                        </node>
+                                      <node concept="10M0yZ" id="MipY_gdi5C" role="37wK5m">
+                                        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
                                       </node>
                                       <node concept="10Nm6u" id="DxJoPcq$hO" role="37wK5m" />
                                       <node concept="3clFbT" id="DxJoPcq$hP" role="37wK5m" />
@@ -4000,13 +3992,9 @@
                                           <ref role="2WH_rO" node="7r8qu42xNX_" resolve="NODE_DOC_TITLE" />
                                         </node>
                                       </node>
-                                      <node concept="1QGGTA" id="DxJoPcq$j0" role="37wK5m">
-                                        <node concept="1QGGSu" id="MipY_gd9oS" role="1QGGTw">
-                                          <node concept="10M0yZ" id="MipY_gdbko" role="3xaMm5">
-                                            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
-                                            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
-                                          </node>
-                                        </node>
+                                      <node concept="10M0yZ" id="MipY_gdbko" role="37wK5m">
+                                        <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.Documentation" resolve="Documentation" />
+                                        <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
                                       </node>
                                       <node concept="10Nm6u" id="DxJoPcq$j2" role="37wK5m" />
                                       <node concept="3clFbT" id="DxJoPcq$j3" role="37wK5m" />

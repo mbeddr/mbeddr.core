@@ -18974,6 +18974,7 @@
     <property role="2uzpH1" value="Refresh Tree View" />
     <property role="ngHcd" value="R" />
     <property role="3GE5qa" value="tree" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="6AXckLE8K8h" role="tncku">
       <node concept="3clFbS" id="6AXckLE8K8i" role="2VODD2">
         <node concept="3clFbF" id="6AXckLEakwA" role="3cqZAp">
@@ -21080,6 +21081,7 @@
     <property role="TrG5h" value="RefreshButton" />
     <property role="2uzpH1" value="Refresh (tree)" />
     <property role="3GE5qa" value="tree.toolbar" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="3ODAlcNAnya" role="tncku">
       <node concept="3clFbS" id="3ODAlcNAnyb" role="2VODD2">
         <node concept="3clFbF" id="33WP3AMCg0r" role="3cqZAp">
