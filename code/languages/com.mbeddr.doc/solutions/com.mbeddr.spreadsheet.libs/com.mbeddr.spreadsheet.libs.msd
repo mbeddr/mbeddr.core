@@ -15,7 +15,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet compile="mps" classes="mps" ext="no" type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/commons-codec.jar" />
       <library location="${module}/lib/commons-collections4.jar" />
