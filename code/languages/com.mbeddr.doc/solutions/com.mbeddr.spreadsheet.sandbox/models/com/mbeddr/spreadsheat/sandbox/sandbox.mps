@@ -2,14 +2,14 @@
 <model ref="r:87160f2e-dc6d-4d39-9fc7-31f069293feb(com.mbeddr.spreadsheet.sandbox.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheat" version="0" />
+    <use id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheet" version="0" />
   </languages>
   <imports />
   <registry>
-    <language id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheat">
+    <language id="1d891f7b-dc93-42f9-a4bc-b016656b14e2" name="com.mbeddr.spreadsheet">
       <concept id="2042272859107050152" name="com.mbeddr.spreadsheet.structure.Style" flags="ng" index="1hadVK" />
       <concept id="2042272859107001907" name="com.mbeddr.spreadsheet.structure.RowGroup" flags="ng" index="1hahDF" />
-      <concept id="2042272859107001892" name="com.mbeddr.spreadsheet.structure.IGroup" flags="ng" index="1hahDW">
+      <concept id="2042272859107001892" name="com.mbeddr.spreadsheet.structure.IGroup" flags="ngI" index="1hahDW">
         <property id="2042272859107001893" name="start" index="1hahDX" />
         <property id="2042272859107001894" name="end" index="1hahDY" />
       </concept>

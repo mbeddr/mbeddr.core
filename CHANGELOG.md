@@ -7,6 +7,29 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2025
 
+## com.mbeddr.doc
+
+- 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
+  to solution `com.mbeddr.spreadsheet.libs`.
+- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
+  enables using Document nodes in tests, for example.
+
+## com.mbeddr.mpsutil.conceptdiagram
+
+### Added
+
+- A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
+
+## com.mbeddr:platform languages
+
+### Changed
+
+- Replaced used bundled jars stored in the source code repo by Gradle dependencies
+
+### Added
+
+- SBOM file with the description of all used components (libraries) and their dependencies
+
 ### Removed
 
 - The disabled language `com.mbeddr.mpsutil.ccmenu` was removed. To customize the code completion menu, please use [completion stylings](https://www.jetbrains.com/help/mps/editor.html#-bdbley_15).

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.doc.gen_markdown" uuid="8b0f9e01-1098-448b-a2c4-fe1c1896ef86" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="commonmark-0.17.1.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="commonmark.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/commonmark-0.17.1.jar" />
+      <library location="${module}/lib/commonmark.jar" />
     </facet>
   </facets>
   <accessoryModels />

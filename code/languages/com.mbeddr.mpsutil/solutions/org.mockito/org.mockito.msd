@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.mockito" uuid="9414e29c-0c8d-4bc7-b251-f312597fb993" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/libs" type="java_classes">
-      <sourceRoot location="mockito-core-2.23.4.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="byte-buddy-agent.jar" />
+      <sourceRoot location="byte-buddy.jar" />
+      <sourceRoot location="mockito-core.jar" />
+      <sourceRoot location="objenesis.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/libs/mockito-core-2.23.4.jar" />
-      <library location="${module}/libs/byte-buddy-1.9.3.jar" />
-      <library location="${module}/libs/byte-buddy-agent-1.9.3.jar" />
-      <library location="${module}/libs/objenesis-2.6.jar" />
+      <library location="${module}/lib/byte-buddy-agent.jar" />
+      <library location="${module}/lib/byte-buddy.jar" />
+      <library location="${module}/lib/mockito-core.jar" />
+      <library location="${module}/lib/objenesis.jar" />
     </facet>
   </facets>
   <dependencies>

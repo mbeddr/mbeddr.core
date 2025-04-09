@@ -34,6 +34,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -184,6 +185,7 @@
     <property role="TrG5h" value="pleDetailedActive" />
     <property role="2uzpH1" value="Detailed Product Line" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7QrLfqVLYHn" role="tncku">
       <node concept="3clFbS" id="7QrLfqVLYHo" role="2VODD2" />
     </node>
@@ -214,6 +216,7 @@
     <property role="TrG5h" value="pleConciseActive" />
     <property role="2uzpH1" value="Compact Product Line" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7TnSnE3by96" role="tncku">
       <node concept="3clFbS" id="7TnSnE3by97" role="2VODD2" />
     </node>
@@ -244,6 +247,7 @@
     <property role="TrG5h" value="pleVariantActive" />
     <property role="2uzpH1" value="Selected Variant" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7TnSnE3byA9" role="tncku">
       <node concept="3clFbS" id="7TnSnE3byAa" role="2VODD2" />
     </node>
