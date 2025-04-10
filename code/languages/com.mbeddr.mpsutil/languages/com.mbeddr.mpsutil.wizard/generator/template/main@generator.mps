@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9ab45c0f-00bd-48bd-b230-479e451ac0d5(com.mbeddr.mpsutil.process.generator.template.main@generator)">
+<model ref="r:9ab45c0f-00bd-48bd-b230-479e451ac0d5(com.mbeddr.mpsutil.wizard.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
@@ -12,15 +12,15 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" />
-    <import index="k8g2" ref="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.process.runtime.plugin)" />
+    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.wizard.structure)" />
+    <import index="k8g2" ref="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="uxeh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.wizard(MPS.IDEA/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
-    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)" implicit="true" />
+    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.wizard.behavior)" implicit="true" />
     <import index="tp4f" ref="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" implicit="true" />
@@ -378,7 +378,7 @@
     <property role="3GE5qa" value="" />
     <node concept="2rT7sh" id="7YSjiE81mDy" role="2rTMjI">
       <property role="TrG5h" value="class2ProcessExtension" />
-      <ref role="2rTdP9" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+      <ref role="2rTdP9" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
     <node concept="2rT7sh" id="7235WRFPi22" role="2rTMjI">
@@ -393,7 +393,7 @@
     </node>
     <node concept="2rT7sh" id="7235WRFPO5f" role="2rTMjI">
       <property role="TrG5h" value="class2Process_Export" />
-      <ref role="2rTdP9" to="hbjw:46fEo9VciUW" resolve="Process" />
+      <ref role="2rTdP9" to="hbjw:46fEo9VciUW" resolve="Wizard" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
     <node concept="3aamgX" id="70BL6LoP8iZ" role="3acgRq">
@@ -1491,7 +1491,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="rF8Sb8UXWW" role="3acgRq">
-      <ref role="30HIoZ" to="hbjw:70BL6LoMMBn" resolve="ProcessInputRef" />
+      <ref role="30HIoZ" to="hbjw:70BL6LoMMBn" resolve="WizardInputRef" />
       <node concept="1Koe21" id="rF8Sb8UZ2n" role="1lVwrX">
         <node concept="312cEu" id="rF8Sb8UZ2t" role="1Koe22">
           <property role="2bfB8j" value="true" />
@@ -1518,8 +1518,8 @@
                   <property role="huDt6" value="Warning: Classifier is not specified for ThisExpression that is not within the same template with corresponding classifier. This may lead to incorrect code generated in some cases." />
                 </node>
                 <node concept="15s5l7" id="7am4gyMsQMh" role="lGtFl">
-                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type com.mbeddr.mpsutil.process.runtime.plugin.BaseWizard&lt;Object&gt; is not comparable with com.mbeddr.mpsutil.process.runtime.plugin.BaseProcessStep&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/6469607165247478858]&quot;;" />
-                  <property role="huDt6" value="Error: type com.mbeddr.mpsutil.process.runtime.plugin.BaseWizard&lt;Object&gt; is not comparable with com.mbeddr.mpsutil.process.runtime.plugin.BaseProcessStep" />
+                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type com.mbeddr.mpsutil.wizard.runtime.plugin.BaseWizard&lt;Object&gt; is not comparable with com.mbeddr.mpsutil.wizard.runtime.plugin.BaseProcessStep&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/6469607165247478858]&quot;;" />
+                  <property role="huDt6" value="Error: type com.mbeddr.mpsutil.wizard.runtime.plugin.BaseWizard&lt;Object&gt; is not comparable with com.mbeddr.mpsutil.wizard.runtime.plugin.BaseProcessStep" />
                 </node>
                 <node concept="2OqwBi" id="rF8Sb8UZYe" role="3clFbG">
                   <node concept="1eOMI4" id="rF8Sb8VdlH" role="2Oq$k0">
@@ -1549,7 +1549,7 @@
                                     <node concept="2Xjw5R" id="rF8Sb8Vg9y" role="2OqNvi">
                                       <node concept="1xMEDy" id="rF8Sb8Vg9$" role="1xVPHs">
                                         <node concept="chp4Y" id="rF8Sb8Vgij" role="ri$Ld">
-                                          <ref role="cht4Q" to="hbjw:46fEo9VciUW" resolve="Process" />
+                                          <ref role="cht4Q" to="hbjw:46fEo9VciUW" resolve="Wizard" />
                                         </node>
                                       </node>
                                     </node>
@@ -1677,7 +1677,7 @@
                                     <node concept="2OqwBi" id="7235WRFVB_v" role="1iwH7V">
                                       <node concept="30H73N" id="7235WRFVB_w" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="7235WRFVB_x" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="process" />
+                                        <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="wizard" />
                                       </node>
                                     </node>
                                   </node>
@@ -1745,7 +1745,7 @@
                               <node concept="2OqwBi" id="6JByj2C_xlW" role="1iwH7V">
                                 <node concept="30H73N" id="6JByj2C_xiy" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="6JByj2C_xLX" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="process" />
+                                  <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="wizard" />
                                 </node>
                               </node>
                             </node>
@@ -2299,16 +2299,16 @@
       <ref role="3lhOvi" node="43jzEnWgsGN" resolve="map_StepClassRoot" />
     </node>
     <node concept="3lhOvk" id="70BL6LoQ235" role="3lj3bC">
-      <ref role="30HIoZ" to="hbjw:46fEo9VciUW" resolve="Process" />
+      <ref role="30HIoZ" to="hbjw:46fEo9VciUW" resolve="Wizard" />
       <ref role="3lhOvi" node="70BL6LoQ238" resolve="map_Process" />
     </node>
     <node concept="3lhOvk" id="7YSjiE81oRS" role="3lj3bC">
       <property role="13Pg2o" value="h94ayQF/true_" />
-      <ref role="30HIoZ" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+      <ref role="30HIoZ" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
       <ref role="3lhOvi" node="7YSjiE81qvq" resolve="map_ProcessExtension" />
     </node>
     <node concept="3lhOvk" id="44rcFjhY7Ss" role="3lj3bC">
-      <ref role="30HIoZ" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+      <ref role="30HIoZ" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
       <ref role="3lhOvi" node="44rcFjhYcjo" resolve="wizardExtensions_extension" />
     </node>
     <node concept="1puMqW" id="43jzEnWa4yI" role="1puA0r">
@@ -2927,7 +2927,7 @@
     <node concept="2tJIrI" id="70BL6LoTqfu" role="jymVt" />
     <node concept="3Tm1VV" id="70BL6LoQ239" role="1B3o_S" />
     <node concept="n94m4" id="70BL6LoQ23a" role="lGtFl">
-      <ref role="n9lRv" to="hbjw:46fEo9VciUW" resolve="Process" />
+      <ref role="n9lRv" to="hbjw:46fEo9VciUW" resolve="Wizard" />
     </node>
     <node concept="3uibUv" id="70BL6LoQ23u" role="1zkMxy">
       <ref role="3uigEE" to="k8g2:5Kcl6zlFo7R" resolve="BaseWizard" />
@@ -3013,7 +3013,7 @@
     </node>
     <node concept="3Tm1VV" id="7YSjiE81qvr" role="1B3o_S" />
     <node concept="n94m4" id="7YSjiE81qvs" role="lGtFl">
-      <ref role="n9lRv" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+      <ref role="n9lRv" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
     </node>
     <node concept="17Uvod" id="7YSjiE81r85" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -3029,7 +3029,7 @@
                 <node concept="2OqwBi" id="7YSjiE81vkb" role="2Oq$k0">
                   <node concept="30H73N" id="7YSjiE81vga" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7YSjiE81w72" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="process" />
+                    <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="wizard" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="7YSjiE81xC9" role="2OqNvi">
@@ -3158,7 +3158,7 @@
       </node>
     </node>
     <node concept="n94m4" id="7235WRG2s6Y" role="lGtFl">
-      <ref role="n9lRv" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+      <ref role="n9lRv" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
     </node>
   </node>
 </model>

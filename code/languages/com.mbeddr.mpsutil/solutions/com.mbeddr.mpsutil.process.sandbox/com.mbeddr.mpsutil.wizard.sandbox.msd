@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.process.sandbox" uuid="4df82fd0-088a-4158-85ec-920403c10e72" moduleVersion="0">
+<solution name="com.mbeddr.mpsutil.wizard.sandbox" uuid="4df82fd0-088a-4158-85ec-920403c10e72" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -14,7 +14,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:306d7456-29e2-4ea3-9c46-e7b830b08481:com.mbeddr.mpsutil.process" version="0" />
+    <language slang="l:306d7456-29e2-4ea3-9c46-e7b830b08481:com.mbeddr.mpsutil.wizard" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -28,7 +28,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="4df82fd0-088a-4158-85ec-920403c10e72(com.mbeddr.mpsutil.process.sandbox)" version="0" />
+    <module reference="4df82fd0-088a-4158-85ec-920403c10e72(com.mbeddr.mpsutil.wizard.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
-

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:37647b9f-6a0b-40aa-9d2c-924b2e2f2a62(com.mbeddr.mpsutil.process.constraints)">
+<model ref="r:37647b9f-6a0b-40aa-9d2c-924b2e2f2a62(com.mbeddr.mpsutil.wizard.constraints)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" />
+    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.wizard.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)" implicit="true" />
+    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.wizard.behavior)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -185,7 +185,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="70BL6LoMOZI">
-    <ref role="1M2myG" to="hbjw:70BL6LoMMBn" resolve="ProcessInputRef" />
+    <ref role="1M2myG" to="hbjw:70BL6LoMMBn" resolve="WizardInputRef" />
     <node concept="1N5Pfh" id="70BL6LoMOZY" role="1Mr941">
       <ref role="1N5Vy1" to="hbjw:70BL6LoMMB$" resolve="input" />
       <node concept="3dgokm" id="70BL6LoMP04" role="1N6uqs">
@@ -200,7 +200,7 @@
                   <node concept="2Xjw5R" id="2lop6rSgaTt" role="2OqNvi">
                     <node concept="1xMEDy" id="2lop6rSgaTu" role="1xVPHs">
                       <node concept="chp4Y" id="2lop6rSgaTv" role="ri$Ld">
-                        <ref role="cht4Q" to="hbjw:46fEo9VciUW" resolve="Process" />
+                        <ref role="cht4Q" to="hbjw:46fEo9VciUW" resolve="Wizard" />
                       </node>
                     </node>
                   </node>
@@ -254,14 +254,14 @@
                     <node concept="2Xjw5R" id="2lop6rSgaQO" role="2OqNvi">
                       <node concept="1xMEDy" id="2lop6rSgaQP" role="1xVPHs">
                         <node concept="chp4Y" id="2lop6rSgaQQ" role="ri$Ld">
-                          <ref role="cht4Q" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+                          <ref role="cht4Q" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
                         </node>
                       </node>
                       <node concept="1xIGOp" id="2lop6rSgaQR" role="1xVPHs" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2lop6rSgaQS" role="2OqNvi">
-                    <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="process" />
+                    <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="wizard" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="2lop6rSgaQT" role="2OqNvi">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)">
+<model ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.wizard.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -10,7 +10,7 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" />
+    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.wizard.structure)" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" />
     <import index="tp4f" ref="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -1075,7 +1075,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="rF8Sb8PvDa">
-    <ref role="13h7C2" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+    <ref role="13h7C2" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
     <node concept="13hLZK" id="rF8Sb8PvDb" role="13h7CW">
       <node concept="3clFbS" id="rF8Sb8PvDc" role="2VODD2" />
     </node>
@@ -1092,7 +1092,7 @@
               <node concept="2OqwBi" id="rF8Sb8PvJn" role="2Oq$k0">
                 <node concept="13iPFW" id="rF8Sb8PvHW" role="2Oq$k0" />
                 <node concept="3TrEf2" id="rF8Sb8P$_3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="process" />
+                  <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="wizard" />
                 </node>
               </node>
               <node concept="3TrcHB" id="rF8Sb8P$Ru" role="2OqNvi">
@@ -1109,7 +1109,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="rF8Sb8V2s_">
-    <ref role="13h7C2" to="hbjw:46fEo9VciUW" resolve="Process" />
+    <ref role="13h7C2" to="hbjw:46fEo9VciUW" resolve="Wizard" />
     <node concept="13hLZK" id="rF8Sb8V2sA" role="13h7CW">
       <node concept="3clFbS" id="rF8Sb8V2sB" role="2VODD2" />
     </node>
@@ -1585,7 +1585,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="rF8Sb8V4QS">
-    <ref role="13h7C2" to="hbjw:5Kcl6zlFIFW" resolve="ProcessInputVariable" />
+    <ref role="13h7C2" to="hbjw:5Kcl6zlFIFW" resolve="WizardInputVariable" />
     <node concept="13hLZK" id="rF8Sb8V4QT" role="13h7CW">
       <node concept="3clFbS" id="rF8Sb8V4QU" role="2VODD2" />
     </node>
@@ -1674,19 +1674,19 @@
               <node concept="2Xjw5R" id="rF8Sb9aEG4" role="2OqNvi">
                 <node concept="1xMEDy" id="rF8Sb9aEG5" role="1xVPHs">
                   <node concept="chp4Y" id="rF8Sb9aEG6" role="ri$Ld">
-                    <ref role="cht4Q" to="hbjw:rF8Sb8Oz3G" resolve="ProcessExtension" />
+                    <ref role="cht4Q" to="hbjw:rF8Sb8Oz3G" resolve="WizardExtension" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="3TrEf2" id="rF8Sb9aERe" role="2OqNvi">
-              <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="process" />
+              <ref role="3Tt5mk" to="hbjw:rF8Sb8Oz3H" resolve="wizard" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3Tqbb2" id="rF8Sb9aEFs" role="3clF45">
-        <ref role="ehGHo" to="hbjw:46fEo9VciUW" resolve="Process" />
+        <ref role="ehGHo" to="hbjw:46fEo9VciUW" resolve="Wizard" />
       </node>
     </node>
     <node concept="13hLZK" id="rF8Sb905bO" role="13h7CW">
@@ -1717,7 +1717,7 @@
           <node concept="3cpWsn" id="7YSjiE87Cmv" role="3cpWs9">
             <property role="TrG5h" value="process" />
             <node concept="3Tqbb2" id="7YSjiE87Cmt" role="1tU5fm">
-              <ref role="ehGHo" to="hbjw:46fEo9VciUW" resolve="Process" />
+              <ref role="ehGHo" to="hbjw:46fEo9VciUW" resolve="Wizard" />
             </node>
             <node concept="BsUDl" id="7YSjiE87Cmw" role="33vP2m">
               <ref role="37wK5l" node="rF8Sb9aE$w" resolve="getProcess" />

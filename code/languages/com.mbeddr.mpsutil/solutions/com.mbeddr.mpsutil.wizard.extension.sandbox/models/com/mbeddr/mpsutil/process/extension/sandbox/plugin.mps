@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:aad09bab-646f-4c77-9edc-30839bc868a8(com.mbeddr.mpsutil.process.extension.sandbox.plugin)">
+<model ref="r:aad09bab-646f-4c77-9edc-30839bc868a8(com.mbeddr.mpsutil.wizard.extension.sandbox.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process" version="0" />
+    <use id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.wizard" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="uis2" ref="r:9aef0d3c-87c9-4ce3-ad67-def9817c1ab4(com.mbeddr.mpsutil.process.sandbox.plugin)" />
+    <import index="uis2" ref="r:9aef0d3c-87c9-4ce3-ad67-def9817c1ab4(com.mbeddr.mpsutil.wizard.sandbox.plugin)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" implicit="true" />
@@ -90,32 +90,32 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
     </language>
-    <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process">
-      <concept id="6632769160448859561" name="com.mbeddr.mpsutil.process.structure.MainPanelArg" flags="ng" index="29H0B1" />
-      <concept id="8081644025962062833" name="com.mbeddr.mpsutil.process.structure.StepPrivateData" flags="ng" index="CxUut" />
-      <concept id="8081644025963170966" name="com.mbeddr.mpsutil.process.structure.StepMemberReference" flags="ng" index="C_CzU" />
-      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ig" index="UJns9" />
-      <concept id="4724180912012648918" name="com.mbeddr.mpsutil.process.structure.Step" flags="ng" index="UJ$xk">
+    <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.wizard">
+      <concept id="6632769160448859561" name="com.mbeddr.mpsutil.wizard.structure.MainPanelArg" flags="ng" index="29H0B1" />
+      <concept id="8081644025962062833" name="com.mbeddr.mpsutil.wizard.structure.StepPrivateData" flags="ng" index="CxUut" />
+      <concept id="8081644025963170966" name="com.mbeddr.mpsutil.wizard.structure.StepMemberReference" flags="ng" index="C_CzU" />
+      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.wizard.structure.CreateComponentFunction" flags="ig" index="UJns9" />
+      <concept id="4724180912012648918" name="com.mbeddr.mpsutil.wizard.structure.Step" flags="ng" index="UJ$xk">
         <property id="4671234082065499041" name="titel" index="2WTsO4" />
         <child id="8081644025962072165" name="privatData" index="CxOK9" />
         <child id="4724180912012936691" name="component" index="UIuLL" />
         <child id="498531228376113227" name="update" index="3e9Kf9" />
         <child id="498531228382043807" name="onFinish" index="3fNrOt" />
       </concept>
-      <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV" />
-      <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
-      <concept id="498531228376510767" name="com.mbeddr.mpsutil.process.structure.AfterExtensionKind" flags="ng" index="3eehaH" />
-      <concept id="498531228376510703" name="com.mbeddr.mpsutil.process.structure.Extension" flags="ng" index="3eehdH">
+      <concept id="4724180912012650169" name="com.mbeddr.mpsutil.wizard.structure.SimpleStep" flags="ng" index="UJ$WV" />
+      <concept id="498531228376113013" name="com.mbeddr.mpsutil.wizard.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
+      <concept id="498531228376510767" name="com.mbeddr.mpsutil.wizard.structure.AfterExtensionKind" flags="ng" index="3eehaH" />
+      <concept id="498531228376510703" name="com.mbeddr.mpsutil.wizard.structure.Extension" flags="ng" index="3eehdH">
         <reference id="498531228376510777" name="target" index="3eehaV" />
         <child id="498531228376510780" name="content" index="3eehaY" />
         <child id="498531228376510708" name="kind" index="3eehdQ" />
       </concept>
-      <concept id="498531228376510700" name="com.mbeddr.mpsutil.process.structure.ProcessExtension" flags="ng" index="3eehdI">
+      <concept id="498531228376510700" name="com.mbeddr.mpsutil.wizard.structure.ProcessExtension" flags="ng" index="3eehdI">
         <reference id="498531228376510701" name="process" index="3eehdJ" />
         <child id="498531228376510704" name="extensions" index="3eehdM" />
       </concept>
-      <concept id="498531228376510710" name="com.mbeddr.mpsutil.process.structure.BeforeExtensionKind" flags="ng" index="3eehdO" />
-      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
+      <concept id="498531228376510710" name="com.mbeddr.mpsutil.wizard.structure.BeforeExtensionKind" flags="ng" index="3eehdO" />
+      <concept id="498531228381780164" name="com.mbeddr.mpsutil.wizard.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -306,4 +306,3 @@
   </node>
   <node concept="2DaZZR" id="7YSjiE8ewK5" />
 </model>
-

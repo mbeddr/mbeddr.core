@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.process.runtime.plugin)">
+<model ref="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
@@ -2548,4 +2548,3 @@
     <node concept="3Tm1VV" id="44rcFjhSNud" role="1B3o_S" />
   </node>
 </model>
-

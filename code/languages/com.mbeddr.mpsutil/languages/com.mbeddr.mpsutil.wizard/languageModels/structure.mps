@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)">
+<model ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.wizard.structure)">
   <persistence version="9" />
   <languages>
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
@@ -55,7 +55,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="46fEo9VciUW">
-    <property role="TrG5h" value="Process" />
+    <property role="TrG5h" value="Wizard" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="4724180912012603068" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -69,7 +69,7 @@
       <property role="20kJfa" value="inputs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="6632769160448301733" />
-      <ref role="20lvS9" node="5Kcl6zlFIFW" resolve="ProcessInputVariable" />
+      <ref role="20lvS9" node="5Kcl6zlFIFW" resolve="WizardInputVariable" />
     </node>
     <node concept="PrWs8" id="46fEo9Vcu6w" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -208,7 +208,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5Kcl6zlFIFW">
-    <property role="TrG5h" value="ProcessInputVariable" />
+    <property role="TrG5h" value="WizardInputVariable" />
     <property role="EcuMT" value="6632769160448240380" />
     <ref role="1TJDcQ" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     <node concept="PrWs8" id="5Kcl6zlFIGf" role="PzmwI">
@@ -300,14 +300,14 @@
     </node>
   </node>
   <node concept="1TIwiD" id="70BL6LoMMBn">
-    <property role="TrG5h" value="ProcessInputRef" />
+    <property role="TrG5h" value="WizardInputRef" />
     <property role="EcuMT" value="8081644025964866007" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="70BL6LoMMB$" role="1TKVEi">
       <property role="20kJfa" value="input" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8081644025964866020" />
-      <ref role="20lvS9" node="5Kcl6zlFIFW" resolve="ProcessInputVariable" />
+      <ref role="20lvS9" node="5Kcl6zlFIFW" resolve="WizardInputVariable" />
     </node>
   </node>
   <node concept="1TIwiD" id="70BL6LoU5mn">
@@ -330,7 +330,7 @@
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="rF8Sb8Oz3G">
-    <property role="TrG5h" value="ProcessExtension" />
+    <property role="TrG5h" value="WizardExtension" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="498531228376510700" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -342,10 +342,10 @@
       <ref role="20lvS9" node="rF8Sb8Oz3J" resolve="Extension" />
     </node>
     <node concept="1TJgyj" id="rF8Sb8Oz3H" role="1TKVEi">
-      <property role="20kJfa" value="process" />
+      <property role="20kJfa" value="wizard" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="498531228376510701" />
-      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
+      <ref role="20lvS9" node="46fEo9VciUW" resolve="Wizard" />
     </node>
   </node>
   <node concept="1TIwiD" id="rF8Sb8Oz3J">
@@ -432,7 +432,7 @@
       <property role="20kJfa" value="wizard" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7775334123752756259" />
-      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
+      <ref role="20lvS9" node="46fEo9VciUW" resolve="Wizard" />
     </node>
   </node>
   <node concept="1TIwiD" id="6JByj2CgDXh">
@@ -446,10 +446,10 @@
     <property role="EcuMT" value="7775334123752824719" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="6JByj2CgDY_" role="1TKVEi">
-      <property role="20kJfa" value="process" />
+      <property role="20kJfa" value="wizard" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="7775334123752824741" />
-      <ref role="20lvS9" node="46fEo9VciUW" resolve="Process" />
+      <ref role="20lvS9" node="46fEo9VciUW" resolve="Wizard" />
     </node>
     <node concept="1TJgyj" id="6JByj2CgDYu" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

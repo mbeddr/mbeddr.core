@@ -90,7 +90,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.margincell_review" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.processwizard" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.wizardwizard" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.projectview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.smodule" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences" />

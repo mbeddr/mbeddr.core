@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:60d7128e-1dcd-4d2f-a98c-bb4e03d90615(com.mbeddr.mpsutil.process.typesystem)">
+<model ref="r:60d7128e-1dcd-4d2f-a98c-bb4e03d90615(com.mbeddr.mpsutil.wizard.typesystem)">
   <persistence version="9" />
   <languages>
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
@@ -7,11 +7,11 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" />
-    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.process.structure)" />
+    <import index="hbjw" ref="r:2ffefd76-4fe0-43c2-9fbd-203c67a47b34(com.mbeddr.mpsutil.wizard.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="tp4h" ref="r:00000000-0000-4000-0000-011c8959036d(jetbrains.mps.baseLanguage.classifiers.behavior)" implicit="true" />
-    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.process.behavior)" implicit="true" />
+    <import index="cw0" ref="r:792d18f6-5d8a-43f6-aca9-5e07a8586147(com.mbeddr.mpsutil.wizard.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -273,7 +273,7 @@
     </node>
     <node concept="1YaCAy" id="70BL6LoMO1W" role="1YuTPh">
       <property role="TrG5h" value="pir" />
-      <ref role="1YaFvo" to="hbjw:70BL6LoMMBn" resolve="ProcessInputRef" />
+      <ref role="1YaFvo" to="hbjw:70BL6LoMMBn" resolve="WizardInputRef" />
     </node>
   </node>
   <node concept="1YbPZF" id="70BL6LoU6v1">
@@ -287,7 +287,7 @@
                 <ref role="1YBMHb" node="70BL6LoU6v4" resolve="rwe" />
               </node>
               <node concept="3TrEf2" id="6JByj2CgL8_" role="2OqNvi">
-                <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="process" />
+                <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="wizard" />
               </node>
             </node>
             <node concept="2qgKlT" id="6JByj2CeWsc" role="2OqNvi">
@@ -323,7 +323,7 @@
                   <ref role="1YBMHb" node="70BL6LoWg7v" resolve="createWizardExpressionBase" />
                 </node>
                 <node concept="3TrEf2" id="6JByj2CgEV0" role="2OqNvi">
-                  <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="process" />
+                  <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="wizard" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="70BL6LoWlKd" role="2OqNvi">
@@ -590,7 +590,7 @@
               <ref role="1YBMHb" node="6JByj2CgLpP" resolve="createWizardExpressionBase" />
             </node>
             <node concept="3TrEf2" id="6JByj2CgJ1W" role="2OqNvi">
-              <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="process" />
+              <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="wizard" />
             </node>
           </node>
           <node concept="3Tsc0h" id="6JByj2CgJCc" role="2OqNvi">
@@ -620,7 +620,7 @@
                       <ref role="1YBMHb" node="6JByj2CgMtx" resolve="cwe" />
                     </node>
                     <node concept="3TrEf2" id="6JByj2Ch1XU" role="2OqNvi">
-                      <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="process" />
+                      <ref role="3Tt5mk" to="hbjw:6JByj2CgDY_" resolve="wizard" />
                     </node>
                   </node>
                 </node>

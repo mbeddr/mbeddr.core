@@ -32,7 +32,7 @@
   </dependencies>
   <languageVersions>
     <language slang="l:58e731a3-6aaa-444a-bf40-801b91c15878:com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
-    <language slang="l:306d7456-29e2-4ea3-9c46-e7b830b08481:com.mbeddr.mpsutil.process" version="0" />
+    <language slang="l:306d7456-29e2-4ea3-9c46-e7b830b08481:com.mbeddr.mpsutil.wizard" version="0" />
     <language slang="l:3eada220-3310-4fd3-b794-ff924add7d8a:com.mbeddr.mpsutil.smodule" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -106,4 +106,3 @@
     <module reference="5187f5c9-b8a8-4309-90b3-14f9919bd2d8(jetbrains.mps.refactoring)" version="0" />
   </dependencyVersions>
 </solution>
-
