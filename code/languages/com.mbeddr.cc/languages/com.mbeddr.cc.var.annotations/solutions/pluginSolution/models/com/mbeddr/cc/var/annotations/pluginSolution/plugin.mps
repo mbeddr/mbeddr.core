@@ -6,7 +6,7 @@
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
@@ -22,8 +22,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -34,6 +34,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -184,6 +185,7 @@
     <property role="TrG5h" value="pleDetailedActive" />
     <property role="2uzpH1" value="Detailed Product Line" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7QrLfqVLYHn" role="tncku">
       <node concept="3clFbS" id="7QrLfqVLYHo" role="2VODD2" />
     </node>
@@ -203,8 +205,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6ghi$I1WfLg" role="3Uehp1">
-      <node concept="10M0yZ" id="6ghi$I1WhbY" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcumQE" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WhbY" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -214,6 +216,7 @@
     <property role="TrG5h" value="pleConciseActive" />
     <property role="2uzpH1" value="Compact Product Line" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7TnSnE3by96" role="tncku">
       <node concept="3clFbS" id="7TnSnE3by97" role="2VODD2" />
     </node>
@@ -233,8 +236,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6ghi$I1W04A" role="3Uehp1">
-      <node concept="10M0yZ" id="6ghi$I1W6I8" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcumQF" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1W6I8" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -244,6 +247,7 @@
     <property role="TrG5h" value="pleVariantActive" />
     <property role="2uzpH1" value="Selected Variant" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7TnSnE3byA9" role="tncku">
       <node concept="3clFbS" id="7TnSnE3byAa" role="2VODD2" />
     </node>
@@ -263,8 +267,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6ghi$I1Wreg" role="3Uehp1">
-      <node concept="10M0yZ" id="6ghi$I1WsX_" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcumQG" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WsX_" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>

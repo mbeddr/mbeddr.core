@@ -43,6 +43,7 @@ githubRelease {
 }
 
 tasks.register('renameTutorial') {
+    description 'Rename the mbeddr tutorial distribution to include the build number.'
     dependsOn(':com.mbeddr:distribution:package_tutorial')
     doLast {
         def dir = Paths.get(artifactsRoot, 'com.mbeddr.tutorial')
@@ -55,6 +56,7 @@ tasks.register('renameTutorial') {
 }
 
 tasks.register('renamePlatform') {
+    description 'Rename the mbeddr platform distribution to include the build number.'
     dependsOn(':com.mbeddr:platform:build_platform_distribution')
     doLast {
         def dir = Paths.get(artifactsRoot, 'com.mbeddr.platform.distribution')
@@ -67,5 +69,6 @@ tasks.register('renamePlatform') {
 }
 
 tasks.named('githubRelease') {
+    description 'Publish the artifacts to GitHub as releases'
     dependsOn renamePlatform, renameTutorial
 }
