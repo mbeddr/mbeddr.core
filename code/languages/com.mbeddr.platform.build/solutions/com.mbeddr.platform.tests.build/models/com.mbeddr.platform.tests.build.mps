@@ -313,6 +313,9 @@
       <node concept="L2wRC" id="4X7wieqKkD2" role="39821P">
         <ref role="L2wRA" node="4X7wieqKka$" resolve="test.com.mbeddr.mpsutil.extensionclass" />
       </node>
+      <node concept="L2wRC" id="7am4gyMP1xa" role="39821P">
+        <ref role="L2wRA" node="7am4gyMcO_6" resolve="test.com.mbeddr.mpsutil.extensionclass.source" />
+      </node>
       <node concept="L2wRC" id="9jWrhFpWP3" role="39821P">
         <ref role="L2wRA" node="9jWrhFpWZO" resolve="test.com.mbeddr.mpsutil.common" />
       </node>

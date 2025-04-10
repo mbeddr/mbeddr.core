@@ -978,7 +978,7 @@
       </node>
       <node concept="3_J27D" id="5fGcQI93Tza" role="3s6cr7">
         <node concept="3Mxwew" id="5fGcQI93Tzb" role="3MwsjC">
-          <property role="3MwjfP" value="Wizard/Process Langauge from mbeddr.mpsutil" />
+          <property role="3MwjfP" value="Wizard/Process Language from mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -5148,7 +5148,7 @@
               <node concept="2Ry0Ak" id="3xFG3bj5cFa" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="3xFG3bj5cFb" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.test" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.strings" />
                 </node>
               </node>
             </node>
@@ -10887,7 +10887,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnGdLo" role="3989C9">
-      <property role="TrG5h" value="group.process" />
+      <property role="TrG5h" value="group.wizard" />
       <node concept="1E1JtA" id="4NGTlZuXbyM" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.wizard.runtime" />
@@ -19091,4 +19091,3 @@
     </node>
   </node>
 </model>
-
