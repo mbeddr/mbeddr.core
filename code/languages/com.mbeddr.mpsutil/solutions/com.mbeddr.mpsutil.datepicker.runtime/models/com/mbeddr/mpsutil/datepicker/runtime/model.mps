@@ -5,15 +5,18 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
+    <import index="fvx8" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:sun.awt(JDK/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
@@ -22,6 +25,8 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
+    <import index="6uvr" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.common(com.mbeddr.mpsutil.datepicker.runtime/)" />
+    <import index="yzu" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui(MPS.IDEA/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
@@ -29,8 +34,6 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="6t7w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.format(JDK/)" />
-    <import index="yzu" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.michaelbaranov.microba.calendar(MPS.ThirdParty/)" />
-    <import index="6uvr" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.michaelbaranov.microba.common(MPS.ThirdParty/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -285,10 +288,10 @@
     </node>
     <node concept="2tJIrI" id="2nIaZ7ix0Ls" role="jymVt" />
     <node concept="3Tm1VV" id="2nIaZ7ix0Lt" role="1B3o_S" />
-    <node concept="3uibUv" id="2hC83VP4Yn" role="1zkMxy">
+    <node concept="3uibUv" id="2nIaZ7iyXfY" role="1zkMxy">
       <ref role="3uigEE" to="6uvr:~AbstractPolicy" resolve="AbstractPolicy" />
     </node>
-    <node concept="3uibUv" id="2hC83VP50q" role="EKbjA">
+    <node concept="3uibUv" id="2nIaZ7iyXZR" role="EKbjA">
       <ref role="3uigEE" to="yzu:~VetoPolicy" resolve="VetoPolicy" />
     </node>
     <node concept="2tJIrI" id="2nIaZ7ix0Lw" role="jymVt" />
@@ -1803,7 +1806,7 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="2nIaZ7ix0Z4" role="1B3o_S" />
-    <node concept="3uibUv" id="2hC83VOPUM" role="1zkMxy">
+    <node concept="3uibUv" id="2nIaZ7ize3C" role="1zkMxy">
       <ref role="3uigEE" to="yzu:~DatePicker" resolve="DatePicker" />
     </node>
   </node>

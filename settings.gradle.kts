@@ -26,3 +26,19 @@ include(":BigProject")
 project(":BigProject").projectDir = file("tools/BigProject")
 
 rootProject.name = "mbeddr.core"
+
+dependencyResolutionManagement {
+    repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
+    repositories {
+        maven("https://artifacts.itemis.cloud/repository/maven-mps")
+        mavenCentral()
+
+        val disableMavenLocal = ext.has("disableMavenLocal") && "true".equals(ext.get("disableMavenLocal"))
+        if (!disableMavenLocal) {
+            // we don't use mavenLocal() repo, since it can cause various issues with resolving dependencies,
+            // see https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:case-for-maven-local
+            mavenLocal()
+        }
+    }
+
+}
