@@ -72,6 +72,9 @@
       <node concept="trNpa" id="1gJuyfgBDLe" role="EQaZv">
         <ref role="trN6q" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
       </node>
+      <node concept="trNpa" id="7am4gyMKbky" role="EQaZv">
+        <ref role="trN6q" to="tpc2:hgV6hR6" resolve="StyleClassItem" />
+      </node>
     </node>
     <node concept="PrWs8" id="1gJuyfgAD93" role="PzmwI">
       <ref role="PrY4T" node="1gJuyfgAD8m" resolve="IGeneratesUserStyleItem" />
