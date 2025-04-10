@@ -49,7 +49,7 @@ class BundledDep {
 
 def bundledDeps = [
         new BundledDep('commonmark', ['org.commonmark:commonmark:0.17.2'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
-        new BundledDep('poi-ooxml', ['org.apache.poi:poi-ooxml:5.0.0'], 'com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs', {
+        new BundledDep('poi-ooxml', ['org.apache.poi:poi-ooxml:5.4.1'], 'com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs', {
             exclude group: 'org.slf4j'
             exclude module: 'commons-compress'
             exclude group: 'org.bouncycastle'
