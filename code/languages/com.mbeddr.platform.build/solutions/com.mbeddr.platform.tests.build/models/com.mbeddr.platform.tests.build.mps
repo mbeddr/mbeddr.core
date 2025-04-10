@@ -3965,28 +3965,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="1dlPboa4UDr" role="3bR37C">
-        <node concept="1BurEX" id="1dlPboa4UDs" role="1SiIV1">
-          <node concept="398BVA" id="1dlPboa4UDc" role="1BurEY">
-            <ref role="398BVh" node="E0fxGqls7k" resolve="mbeddr.mpsutil" />
-            <node concept="2Ry0Ak" id="1dlPboa4UDd" role="iGT6I">
-              <property role="2Ry0Am" value="languages" />
-              <node concept="2Ry0Ak" id="1dlPboa4UDe" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.mpsutil.graphstream" />
-                <node concept="2Ry0Ak" id="1dlPboa4UDf" role="2Ry0An">
-                  <property role="2Ry0Am" value="runtime" />
-                  <node concept="2Ry0Ak" id="1dlPboa4UDg" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="1dlPboa4UDh" role="2Ry0An">
-                      <property role="2Ry0Am" value="jgraphx-3.7.4.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1SiIV0" id="1dlPboa4UDG" role="3bR37C">
         <node concept="1BurEX" id="1dlPboa4UDH" role="1SiIV1">
           <node concept="398BVA" id="1dlPboa4UDt" role="1BurEY">

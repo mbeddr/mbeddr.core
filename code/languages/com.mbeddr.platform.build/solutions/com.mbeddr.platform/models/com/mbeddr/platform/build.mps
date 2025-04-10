@@ -7817,21 +7817,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="tZiUABOeu8" role="3bR37C">
-          <node concept="3bR9La" id="tZiUABOeu9" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="tZiUABOeua" role="3bR37C">
-          <node concept="3bR9La" id="tZiUABOeub" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="tZiUABOeuc" role="3bR37C">
-          <node concept="3bR9La" id="tZiUABOeud" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-          </node>
-        </node>
         <node concept="1E0d5M" id="tZiUABOeue" role="1E1XAP">
           <ref role="1E0d5P" node="5IpIYYkrzsE" resolve="com.mbeddr.mpsutil.refactoring.rt" />
         </node>
@@ -19106,3 +19091,4 @@
     </node>
   </node>
 </model>
+
