@@ -6,14 +6,12 @@
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="plantuml.jar" />
-      <sourceRoot location="rhino-1.7.10.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/plantuml.jar" />
-      <library location="${module}/lib/rhino-1.7.10.jar" />
     </facet>
   </facets>
   <dependencies>

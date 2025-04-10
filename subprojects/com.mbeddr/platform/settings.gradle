@@ -1,0 +1,9 @@
+dependencyResolutionManagement {
+ repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+ repositories {
+   mavenCentral()
+    // required for com.michaelbaranov:microba library
+    maven { url 'https://maven.atlassian.com/content/repositories/atlassian-public/' }
+ }
+}
+rootProject.name = "mbeddr.platform"

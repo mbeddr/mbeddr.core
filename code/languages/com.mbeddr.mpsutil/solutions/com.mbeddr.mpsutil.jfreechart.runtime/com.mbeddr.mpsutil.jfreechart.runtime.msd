@@ -4,16 +4,16 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/jfreechart-1.0.19.jar" />
-      <sourceRoot location="lib/jcommon-1.0.23.jar" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="jcommon.jar" />
+      <sourceRoot location="jfreechart.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/jfreechart-1.0.19.jar" />
-      <library location="${module}/lib/jcommon-1.0.23.jar" />
+      <library location="${module}/lib/jcommon.jar" />
+      <library location="${module}/lib/jfreechart.jar" />
     </facet>
   </facets>
   <dependencies>
