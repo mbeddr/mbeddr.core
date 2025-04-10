@@ -5142,7 +5142,7 @@
       <property role="TrG5h" value="group.baseLanguage" />
       <node concept="1E1JtA" id="3zYUNYHJ2S3" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.mbeddr.mpsutil.lib" />
+        <property role="TrG5h" value="com.mbeddr.mpsutil.strings" />
         <property role="3LESm3" value="ebc3846f-fa92-4849-93e4-dec2faf6b78f" />
         <node concept="3rtmxn" id="3xFG3bj5cF6" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cF7" role="3rtmxm">
@@ -5165,9 +5165,9 @@
           <node concept="2Ry0Ak" id="3zYUNYHJ2S5" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="NSVqUvRXd4" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.mpsutil.test" />
-              <node concept="2Ry0Ak" id="NSVqUvRXJO" role="2Ry0An">
-                <property role="2Ry0Am" value="com.mbeddr.mpsutil.test.msd" />
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.strings" />
+              <node concept="2Ry0Ak" id="2XILj7L9F7k" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mbeddr.mpsutil.strings.msd" />
               </node>
             </node>
           </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.mpsutil.lib" uuid="ebc3846f-fa92-4849-93e4-dec2faf6b78f" moduleVersion="0">
+<solution name="com.mbeddr.mpsutil.strings" uuid="ebc3846f-fa92-4849-93e4-dec2faf6b78f" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -30,7 +30,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="ebc3846f-fa92-4849-93e4-dec2faf6b78f(com.mbeddr.mpsutil.lib)" version="0" />
+    <module reference="ebc3846f-fa92-4849-93e4-dec2faf6b78f(com.mbeddr.mpsutil.strings)" version="0" />
     <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
   </dependencyVersions>
 </solution>
