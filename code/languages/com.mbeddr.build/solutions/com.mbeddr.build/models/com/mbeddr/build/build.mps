@@ -10465,7 +10465,7 @@
         </node>
         <node concept="1SiIV0" id="44jZT9pgbrR" role="3bR37C">
           <node concept="3bR9La" id="44jZT9pgbrS" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:3zYUNYHJ2S3" resolve="com.mbeddr.mpsutil.lib" />
+            <ref role="3bR37D" to="al5i:3zYUNYHJ2S3" resolve="com.mbeddr.mpsutil.strings" />
           </node>
         </node>
         <node concept="1SiIV0" id="4hvHh3QYla$" role="3bR37C">
@@ -11459,3 +11459,4 @@
     <node concept="3b7kt6" id="5CDsLVFi0ui" role="10PD9s" />
   </node>
 </model>
+

@@ -623,7 +623,7 @@
                   <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border)" resolve="setBorder" />
                   <node concept="2YIFZM" id="7am4gyMzy9K" role="37wK5m">
                     <ref role="37wK5l" to="g1qu:~JBUI$Borders.empty(int,int,int,int)" resolve="empty" />
-                    <ref role="1Pybhc" to="g1qu:~JBUI$Borders" resolve="Borders" />
+                    <ref role="1Pybhc" to="g1qu:~JBUI$Borders" resolve="JBUI.Borders" />
                     <node concept="3cmrfG" id="7am4gyMz$mF" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>

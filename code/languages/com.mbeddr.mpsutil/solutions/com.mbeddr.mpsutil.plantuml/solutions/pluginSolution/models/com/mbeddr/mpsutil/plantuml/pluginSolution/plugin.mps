@@ -2444,7 +2444,7 @@
             <ref role="37wK5l" to="z60i:~Component.addMouseWheelListener(java.awt.event.MouseWheelListener)" resolve="addMouseWheelListener" />
             <node concept="2ShNRf" id="7am4gyMkI$U" role="37wK5m">
               <node concept="1pGfFk" id="7am4gyMkI$V" role="2ShVmc">
-                <ref role="37wK5l" node="18ZQ$P81TV5" />
+                <ref role="37wK5l" node="18ZQ$P81TV5" resolve="JSVGScrollerWithMouseWheelListener.WheelListener" />
               </node>
             </node>
           </node>

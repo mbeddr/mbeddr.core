@@ -110,8 +110,8 @@
         <child id="498531228376510780" name="content" index="3eehaY" />
         <child id="498531228376510708" name="kind" index="3eehdQ" />
       </concept>
-      <concept id="498531228376510700" name="com.mbeddr.mpsutil.wizard.structure.ProcessExtension" flags="ng" index="3eehdI">
-        <reference id="498531228376510701" name="process" index="3eehdJ" />
+      <concept id="498531228376510700" name="com.mbeddr.mpsutil.wizard.structure.WizardExtension" flags="ng" index="3eehdI">
+        <reference id="498531228376510701" name="wizard" index="3eehdJ" />
         <child id="498531228376510704" name="extensions" index="3eehdM" />
       </concept>
       <concept id="498531228376510710" name="com.mbeddr.mpsutil.wizard.structure.BeforeExtensionKind" flags="ng" index="3eehdO" />
@@ -130,7 +130,7 @@
     </language>
   </registry>
   <node concept="3eehdI" id="7YSjiE86cMT">
-    <ref role="3eehdJ" to="uis2:46fEo9VfLK_" resolve="theProcess" />
+    <ref role="3eehdJ" to="uis2:46fEo9VfLK_" resolve="theWizard" />
     <node concept="3eehdH" id="7YSjiE86cMU" role="3eehdM">
       <ref role="3eehaV" to="uis2:1J_CuVjhhsn" resolve="test" />
       <node concept="3eehaH" id="7YSjiE87dPm" role="3eehdQ" />
@@ -306,3 +306,4 @@
   </node>
   <node concept="2DaZZR" id="7YSjiE8ewK5" />
 </model>
+

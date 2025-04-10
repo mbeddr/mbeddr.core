@@ -956,7 +956,7 @@
         </node>
       </node>
       <node concept="m$f5U" id="5fGcQI942m7" role="m$_yh">
-        <ref role="m$f5T" node="3quoVcnGdLo" resolve="group.process" />
+        <ref role="m$f5T" node="3quoVcnGdLo" resolve="group.wizard" />
       </node>
       <node concept="m$_yC" id="5fGcQI93Tz6" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -19091,3 +19091,4 @@
     </node>
   </node>
 </model>
+

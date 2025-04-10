@@ -357,7 +357,7 @@
       </concept>
     </language>
     <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.wizard">
-      <concept id="6632769160448240380" name="com.mbeddr.mpsutil.wizard.structure.ProcessInputVariable" flags="ng" index="29CFUk" />
+      <concept id="6632769160448240380" name="com.mbeddr.mpsutil.wizard.structure.WizardInputVariable" flags="ng" index="29CFUk" />
       <concept id="6632769160448859561" name="com.mbeddr.mpsutil.wizard.structure.MainPanelArg" flags="ng" index="29H0B1" />
       <concept id="6632769160448631607" name="com.mbeddr.mpsutil.wizard.structure.StepOutputData" flags="ng" index="29Ibtv" />
       <concept id="8081644025962062833" name="com.mbeddr.mpsutil.wizard.structure.StepPrivateData" flags="ng" index="CxUut" />
@@ -365,7 +365,7 @@
       <concept id="8081644025964609311" name="com.mbeddr.mpsutil.wizard.structure.StepRefExpression" flags="ng" index="CSfHN">
         <reference id="8081644025964621849" name="step" index="CSbhP" />
       </concept>
-      <concept id="8081644025964866007" name="com.mbeddr.mpsutil.wizard.structure.ProcessInputRef" flags="ng" index="CVeQV">
+      <concept id="8081644025964866007" name="com.mbeddr.mpsutil.wizard.structure.WizardInputRef" flags="ng" index="CVeQV">
         <reference id="8081644025964866020" name="input" index="CVeQ8" />
       </concept>
       <concept id="4724180912012713611" name="com.mbeddr.mpsutil.wizard.structure.CreateComponentFunction" flags="ig" index="UJns9" />
@@ -380,7 +380,7 @@
         <child id="498531228382043807" name="onFinish" index="3fNrOt" />
       </concept>
       <concept id="4724180912012650169" name="com.mbeddr.mpsutil.wizard.structure.SimpleStep" flags="ng" index="UJ$WV" />
-      <concept id="4724180912012603068" name="com.mbeddr.mpsutil.wizard.structure.Process" flags="ng" index="UJCsY">
+      <concept id="4724180912012603068" name="com.mbeddr.mpsutil.wizard.structure.Wizard" flags="ng" index="UJCsY">
         <property id="8081644025965715607" name="titel" index="CZYjV" />
         <child id="6632769160448301733" name="inputs" index="29CSVd" />
         <child id="4724180912012650163" name="steps" index="UJ$WL" />
@@ -391,7 +391,7 @@
       <concept id="7775334123755359387" name="com.mbeddr.mpsutil.wizard.structure.FinishOp" flags="ng" index="33zGmF" />
       <concept id="7775334123752824657" name="com.mbeddr.mpsutil.wizard.structure.CreateWizardExpression" flags="ng" index="33Dhpx" />
       <concept id="7775334123752824719" name="com.mbeddr.mpsutil.wizard.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
-        <reference id="7775334123752824741" name="process" index="33Dhql" />
+        <reference id="7775334123752824741" name="wizard" index="33Dhql" />
         <child id="7775334123752824734" name="initVals" index="33DhqI" />
       </concept>
       <concept id="7775334123752756248" name="com.mbeddr.mpsutil.wizard.structure.WizardType" flags="ig" index="33DxOC">
@@ -8646,3 +8646,4 @@
     <node concept="3Tm1VV" id="2cNe_D14_CA" role="1B3o_S" />
   </node>
 </model>
+

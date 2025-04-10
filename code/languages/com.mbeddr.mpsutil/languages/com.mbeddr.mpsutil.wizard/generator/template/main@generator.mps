@@ -1163,12 +1163,12 @@
                         <node concept="2OqwBi" id="6JByj2CbmTn" role="3clFbG">
                           <node concept="2OqwBi" id="6JByj2Cbl1W" role="2Oq$k0">
                             <node concept="3TrEf2" id="6JByj2Cbmr1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpee:gyVODHa" />
+                              <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
                             </node>
                             <node concept="30H73N" id="6JByj2Cbl20" role="2Oq$k0" />
                           </node>
                           <node concept="3Tsc0h" id="6JByj2CbnnN" role="2OqNvi">
-                            <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                            <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
                           </node>
                         </node>
                       </node>
