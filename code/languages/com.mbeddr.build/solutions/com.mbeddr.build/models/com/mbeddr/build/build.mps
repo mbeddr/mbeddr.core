@@ -263,7 +263,7 @@
         <ref role="m$_y1" to="90a9:77YfcvOMg42" resolve="de.itemis.mps.compare" />
       </node>
       <node concept="m$_yC" id="K3FXS9PK_b" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:5fGcQI93Tz0" resolve="com.mbeddr.mpsutil.processwizard" />
+        <ref role="m$_y1" to="al5i:5fGcQI93Tz0" resolve="com.mbeddr.mpsutil.wizardwizard" />
       </node>
       <node concept="m$_yC" id="631ZZAfPKBG" role="m$_yJ">
         <ref role="m$_y1" to="al5i:7tNo_gxoK8h" resolve="com.mbeddr.doc" />
@@ -10465,7 +10465,7 @@
         </node>
         <node concept="1SiIV0" id="44jZT9pgbrR" role="3bR37C">
           <node concept="3bR9La" id="44jZT9pgbrS" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:3zYUNYHJ2S3" resolve="com.mbeddr.mpsutil.lib" />
+            <ref role="3bR37D" to="al5i:3zYUNYHJ2S3" resolve="com.mbeddr.mpsutil.strings" />
           </node>
         </node>
         <node concept="1SiIV0" id="4hvHh3QYla$" role="3bR37C">
