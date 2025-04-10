@@ -2507,12 +2507,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6zQ13TyAXu3" role="3bR37C">
-          <node concept="3bR9La" id="6zQ13TyAXu4" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
-          </node>
-        </node>
         <node concept="1BupzO" id="4PRpvcZJNbj" role="3bR31x">
           <property role="3ZfqAx" value="languageModels" />
           <property role="1Hdu6h" value="true" />
@@ -5186,20 +5180,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="4PRpvcZJNlA" role="1HemKq">
-            <node concept="398BVA" id="4PRpvcZJNlq" role="3LXTmr">
+          <node concept="3LXTmp" id="7am4gyMp3qu" role="1HemKq">
+            <node concept="398BVA" id="7am4gyMp3qj" role="3LXTmr">
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="4PRpvcZJNlr" role="iGT6I">
+              <node concept="2Ry0Ak" id="7am4gyMp3qk" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4PRpvcZJNls" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.test" />
-                  <node concept="2Ry0Ak" id="4PRpvcZJNlt" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7am4gyMp3ql" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.strings" />
+                  <node concept="2Ry0Ak" id="7am4gyMp3qm" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="4PRpvcZJNlB" role="3LXTna">
+            <node concept="3qWCbU" id="7am4gyMp3qv" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
