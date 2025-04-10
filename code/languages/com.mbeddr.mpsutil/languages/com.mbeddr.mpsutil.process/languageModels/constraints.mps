@@ -30,10 +30,10 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -314,12 +314,12 @@
                 </node>
               </node>
               <node concept="1eOMI4" id="5RIakkDJ1MK" role="3uHU7w">
-                <node concept="3clFbC" id="5RIakkDJ1ML" role="1eOMHV">
-                  <node concept="359W_D" id="5RIakkDJ1MP" role="3uHU7w">
+                <node concept="17R0WA" id="7am4gyMt5rk" role="1eOMHV">
+                  <node concept="2DA6wF" id="7am4gyMt5rl" role="3uHU7B" />
+                  <node concept="359W_D" id="7am4gyMt5rm" role="3uHU7w">
                     <ref role="359W_E" to="tpee:hqOqwz4" resolve="DotExpression" />
                     <ref role="359W_F" to="tpee:hqOqNr4" resolve="operation" />
                   </node>
-                  <node concept="2DA6wF" id="5RIakkDJ1MO" role="3uHU7B" />
                 </node>
               </node>
             </node>

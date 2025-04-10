@@ -143,6 +143,7 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
@@ -354,6 +355,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -454,6 +459,10 @@
             <property role="eg7rD" value="false" />
             <property role="TrG5h" value="dummy" />
             <property role="3TUv4t" value="false" />
+            <node concept="15s5l7" id="7am4gyMvy4y" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Field is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/7581428506283755675]&quot;;" />
+              <property role="huDt6" value="Warning: Field is never used" />
+            </node>
             <node concept="3Tm6S6" id="70BL6LoPavT" role="1B3o_S" />
             <node concept="17QB3L" id="70BL6LoPaw4" role="1tU5fm">
               <node concept="29HgVG" id="70BL6LoPawv" role="lGtFl">
@@ -506,7 +515,7 @@
             <property role="eg7rD" value="false" />
             <property role="TrG5h" value="dummy" />
             <property role="3TUv4t" value="false" />
-            <node concept="3Tm6S6" id="1J_CuVjjhRf" role="1B3o_S" />
+            <node concept="3Tm1VV" id="7am4gyMvyxL" role="1B3o_S" />
             <node concept="17QB3L" id="1J_CuVjjhRo" role="1tU5fm" />
           </node>
           <node concept="3clFb_" id="1J_CuVjjhRU" role="jymVt">
@@ -545,7 +554,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3Tm6S6" id="1J_CuVjjhRK" role="1B3o_S" />
+            <node concept="3Tm1VV" id="7am4gyMvyDo" role="1B3o_S" />
             <node concept="17QB3L" id="7235WRFTkRh" role="3clF45" />
           </node>
           <node concept="3Tm1VV" id="1J_CuVjjhQX" role="1B3o_S" />
@@ -616,7 +625,7 @@
             <property role="eg7rD" value="false" />
             <property role="TrG5h" value="dummy" />
             <property role="3TUv4t" value="false" />
-            <node concept="3Tm6S6" id="rF8Sb8KAvX" role="1B3o_S" />
+            <node concept="3Tm1VV" id="7am4gyMvyKX" role="1B3o_S" />
             <node concept="17QB3L" id="rF8Sb8KAvY" role="1tU5fm" />
           </node>
           <node concept="3clFb_" id="rF8Sb8KAvZ" role="jymVt">
@@ -636,6 +645,10 @@
                 </node>
               </node>
               <node concept="3clFbF" id="rF8Sb8KBCL" role="3cqZAp">
+                <node concept="15s5l7" id="7am4gyMvspd" role="lGtFl">
+                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
+                  <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
+                </node>
                 <node concept="2OqwBi" id="rF8Sb8KBDa" role="3clFbG">
                   <node concept="37vLTw" id="rF8Sb8KBCJ" role="2Oq$k0">
                     <ref role="3cqZAo" node="rF8Sb8KBCd" resolve="f" />
@@ -669,7 +682,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3Tm6S6" id="rF8Sb8KAwd" role="1B3o_S" />
+            <node concept="3Tm1VV" id="7am4gyMvyLi" role="1B3o_S" />
             <node concept="17QB3L" id="7235WRFXtCO" role="3clF45" />
           </node>
           <node concept="3Tm1VV" id="rF8Sb8KAwf" role="1B3o_S" />
@@ -772,6 +785,9 @@
           <node concept="3Tm1VV" id="rF8Sb8_gTH" role="1B3o_S" />
           <node concept="3uibUv" id="rF8Sb8_gU0" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvUVf" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
           <node concept="3clFbW" id="7235WRFZZHz" role="jymVt">
             <node concept="3cqZAl" id="7235WRFZZH$" role="3clF45" />
@@ -811,6 +827,7 @@
             <property role="TrG5h" value="a" />
             <property role="3TUv4t" value="false" />
             <node concept="17QB3L" id="1J_CuVjlzlY" role="1tU5fm" />
+            <node concept="3Tm1VV" id="7am4gyMvyRa" role="1B3o_S" />
           </node>
           <node concept="3clFb_" id="1J_CuVjlzmW" role="jymVt">
             <property role="1EzhhJ" value="false" />
@@ -859,6 +876,7 @@
               </node>
             </node>
             <node concept="17QB3L" id="7235WRFSJZk" role="3clF45" />
+            <node concept="3Tm1VV" id="7am4gyMvz1U" role="1B3o_S" />
           </node>
           <node concept="3Tm1VV" id="1J_CuVjlzlG" role="1B3o_S" />
         </node>
@@ -931,6 +949,9 @@
           <node concept="3Tm1VV" id="rF8Sb8_PSK" role="1B3o_S" />
           <node concept="3uibUv" id="rF8Sb8_PTf" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvVzp" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
           <node concept="3clFbW" id="7235WRFZHF8" role="jymVt">
             <node concept="3cqZAl" id="7235WRFZHF9" role="3clF45" />
@@ -1036,6 +1057,9 @@
           <node concept="3Tm1VV" id="rF8Sb8_TjM" role="1B3o_S" />
           <node concept="3uibUv" id="rF8Sb8_Tkp" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvWv0" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
         </node>
       </node>
@@ -1130,24 +1154,21 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="6JByj2Cbl11" role="3cqZAp">
-                <node concept="3cpWsn" id="6JByj2Cbl14" role="3cpWs9">
-                  <property role="TrG5h" value="a" />
-                  <node concept="10Oyi0" id="6JByj2Cbl0Z" role="1tU5fm" />
-                </node>
-                <node concept="2b32R4" id="6JByj2Cbl1R" role="lGtFl">
-                  <node concept="3JmXsc" id="6JByj2Cbl1U" role="2P8S$">
-                    <node concept="3clFbS" id="6JByj2Cbl1V" role="2VODD2">
+              <node concept="3cpWs6" id="7am4gyMt06B" role="3cqZAp">
+                <node concept="10Nm6u" id="7am4gyMt0UO" role="3cqZAk" />
+                <node concept="2b32R4" id="7am4gyMt3iP" role="lGtFl">
+                  <node concept="3JmXsc" id="7am4gyMt3iQ" role="2P8S$">
+                    <node concept="3clFbS" id="7am4gyMt3iR" role="2VODD2">
                       <node concept="3clFbF" id="6JByj2Cbl21" role="3cqZAp">
                         <node concept="2OqwBi" id="6JByj2CbmTn" role="3clFbG">
                           <node concept="2OqwBi" id="6JByj2Cbl1W" role="2Oq$k0">
                             <node concept="3TrEf2" id="6JByj2Cbmr1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpee:gyVODHa" resolve="body" />
+                              <ref role="3Tt5mk" to="tpee:gyVODHa" />
                             </node>
                             <node concept="30H73N" id="6JByj2Cbl20" role="2Oq$k0" />
                           </node>
                           <node concept="3Tsc0h" id="6JByj2CbnnN" role="2OqNvi">
-                            <ref role="3TtcxE" to="tpee:fzcqZ_x" resolve="statement" />
+                            <ref role="3TtcxE" to="tpee:fzcqZ_x" />
                           </node>
                         </node>
                       </node>
@@ -1267,6 +1288,9 @@
           <node concept="3Tm1VV" id="rF8Sb8EGj7" role="1B3o_S" />
           <node concept="3uibUv" id="rF8Sb8EGjY" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvWZC" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
         </node>
       </node>
@@ -1327,6 +1351,9 @@
           <node concept="3Tm1VV" id="rF8Sb8Ne_1" role="1B3o_S" />
           <node concept="3uibUv" id="rF8Sb8NeAg" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvXOr" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
           <node concept="3clFbW" id="7235WRFZoty" role="jymVt">
             <node concept="3cqZAl" id="7235WRFZotz" role="3clF45" />
@@ -1366,6 +1393,10 @@
             <property role="od$2w" value="false" />
             <property role="DiZV1" value="false" />
             <property role="2aFKle" value="false" />
+            <node concept="15s5l7" id="7am4gyMvIq7" role="lGtFl">
+              <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused parameter&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/1225278748067]&quot;;" />
+              <property role="huDt6" value="Warning: Unused parameter" />
+            </node>
             <node concept="3clFbS" id="1J_CuVjhIdw" role="3clF47">
               <node concept="3cpWs6" id="1J_CuVjhIe4" role="3cqZAp">
                 <node concept="10Nm6u" id="1J_CuVjhIeu" role="3cqZAk" />
@@ -1374,6 +1405,7 @@
             <node concept="3Tm6S6" id="1J_CuVjhIdf" role="1B3o_S" />
             <node concept="3uibUv" id="1J_CuVjhIdo" role="3clF45">
               <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+              <node concept="3qTvmN" id="7am4gyMvuSC" role="11_B2D" />
             </node>
             <node concept="37vLTG" id="1J_CuVjhIdF" role="3clF46">
               <property role="TrG5h" value="id" />
@@ -1452,6 +1484,7 @@
             <node concept="3uibUv" id="7235WRFYsQq" role="3clF45">
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
+            <node concept="3Tm1VV" id="7am4gyMvI4U" role="1B3o_S" />
           </node>
           <node concept="3Tm1VV" id="1J_CuVjhIcX" role="1B3o_S" />
         </node>
@@ -1480,6 +1513,14 @@
             <property role="2aFKle" value="false" />
             <node concept="3clFbS" id="rF8Sb8UZ7q" role="3clF47">
               <node concept="3clFbF" id="rF8Sb8UZ8q" role="3cqZAp">
+                <node concept="15s5l7" id="7am4gyMw0aX" role="lGtFl">
+                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Classifier is not specified for ThisExpression that is not within the same template with corresponding classifier. This may lead to incorrect code generated in some cases.&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902e4(jetbrains.mps.lang.generator.typesystem)/6495695326613151358]&quot;;" />
+                  <property role="huDt6" value="Warning: Classifier is not specified for ThisExpression that is not within the same template with corresponding classifier. This may lead to incorrect code generated in some cases." />
+                </node>
+                <node concept="15s5l7" id="7am4gyMsQMh" role="lGtFl">
+                  <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type com.mbeddr.mpsutil.process.runtime.plugin.BaseWizard&lt;Object&gt; is not comparable with com.mbeddr.mpsutil.process.runtime.plugin.BaseProcessStep&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/6469607165247478858]&quot;;" />
+                  <property role="huDt6" value="Error: type com.mbeddr.mpsutil.process.runtime.plugin.BaseWizard&lt;Object&gt; is not comparable with com.mbeddr.mpsutil.process.runtime.plugin.BaseProcessStep" />
+                </node>
                 <node concept="2OqwBi" id="rF8Sb8UZYe" role="3clFbG">
                   <node concept="1eOMI4" id="rF8Sb8VdlH" role="2Oq$k0">
                     <node concept="10QFUN" id="rF8Sb8VdlI" role="1eOMHV">
@@ -1555,10 +1596,14 @@
             <node concept="3uibUv" id="7235WRFZ3Ls" role="3clF45">
               <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
             </node>
+            <node concept="3Tm1VV" id="7am4gyMvIJq" role="1B3o_S" />
           </node>
           <node concept="3Tm1VV" id="rF8Sb8UZ2u" role="1B3o_S" />
           <node concept="3uibUv" id="rF8Sb8UZ3D" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvYBp" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
           <node concept="3clFbW" id="7235WRFUMqe" role="jymVt">
             <node concept="3cqZAl" id="7235WRFUMqf" role="3clF45" />
@@ -1732,11 +1777,16 @@
                 <property role="TrG5h" value="q" />
                 <node concept="3uibUv" id="6JByj2CF8mu" role="1tU5fm">
                   <ref role="3uigEE" to="k8g2:5Kcl6zlFo7R" resolve="BaseWizard" />
+                  <node concept="3qTvmN" id="7am4gyMvwYC" role="11_B2D" />
                 </node>
                 <node concept="10Nm6u" id="7235WRFWR6m" role="33vP2m" />
               </node>
             </node>
             <node concept="3clFbF" id="6JByj2CF8mO" role="3cqZAp">
+              <node concept="15s5l7" id="7am4gyMvwTb" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
+                <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
+              </node>
               <node concept="2OqwBi" id="6JByj2CF8vx" role="3clFbG">
                 <node concept="37vLTw" id="6JByj2CF8mM" role="2Oq$k0">
                   <ref role="3cqZAo" node="6JByj2CF8mt" resolve="q" />
@@ -1763,11 +1813,16 @@
                 <property role="TrG5h" value="q" />
                 <node concept="3uibUv" id="6JByj2CFj92" role="1tU5fm">
                   <ref role="3uigEE" to="k8g2:5Kcl6zlFo7R" resolve="BaseWizard" />
+                  <node concept="3qTvmN" id="7am4gyMvx3w" role="11_B2D" />
                 </node>
                 <node concept="10Nm6u" id="7235WRFZ3FZ" role="33vP2m" />
               </node>
             </node>
             <node concept="3clFbF" id="6JByj2CFj9o" role="3cqZAp">
+              <node concept="15s5l7" id="7am4gyMvxj6" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
+                <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
+              </node>
               <node concept="2OqwBi" id="6JByj2CFjdw" role="3clFbG">
                 <node concept="37vLTw" id="6JByj2CFj9m" role="2Oq$k0">
                   <ref role="3cqZAo" node="6JByj2CFj91" resolve="q" />
@@ -1794,6 +1849,7 @@
                 <property role="TrG5h" value="q" />
                 <node concept="3uibUv" id="6JByj2CFo8u" role="1tU5fm">
                   <ref role="3uigEE" to="k8g2:5Kcl6zlFo7R" resolve="BaseWizard" />
+                  <node concept="3qTvmN" id="7am4gyMvxpA" role="11_B2D" />
                 </node>
                 <node concept="10Nm6u" id="7235WRFZ3Ep" role="33vP2m" />
               </node>
@@ -1807,6 +1863,10 @@
                   <ref role="37wK5l" to="k8g2:6JByj2Ce7TP" resolve="getResult" />
                   <node concept="raruj" id="6JByj2CFo8z" role="lGtFl" />
                 </node>
+              </node>
+              <node concept="15s5l7" id="7am4gyMvxwG" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                <property role="huDt6" value="all typesystem messages" />
               </node>
             </node>
           </node>
@@ -1825,11 +1885,16 @@
                 <property role="TrG5h" value="q" />
                 <node concept="3uibUv" id="6JByj2CFxOb" role="1tU5fm">
                   <ref role="3uigEE" to="k8g2:5Kcl6zlFo7R" resolve="BaseWizard" />
+                  <node concept="3qTvmN" id="7am4gyMvxB4" role="11_B2D" />
                 </node>
                 <node concept="10Nm6u" id="7235WRFZ3DJ" role="33vP2m" />
               </node>
             </node>
             <node concept="3clFbF" id="6JByj2CFxOc" role="3cqZAp">
+              <node concept="15s5l7" id="7am4gyMvxEc" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
+                <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
+              </node>
               <node concept="2OqwBi" id="6JByj2CFxOd" role="3clFbG">
                 <node concept="37vLTw" id="6JByj2CFxOe" role="2Oq$k0">
                   <ref role="3cqZAo" node="6JByj2CFxOa" resolve="q" />
@@ -1927,10 +1992,14 @@
               </node>
             </node>
             <node concept="3cqZAl" id="4ZRMpUz9wK2" role="3clF45" />
+            <node concept="3Tm1VV" id="7am4gyMvxXj" role="1B3o_S" />
           </node>
           <node concept="3Tm1VV" id="4ZRMpUz9w$J" role="1B3o_S" />
           <node concept="3uibUv" id="4ZRMpUz9wDA" role="1zkMxy">
             <ref role="3uigEE" to="k8g2:5Kcl6zlCSj0" resolve="BaseProcessStep" />
+            <node concept="3uibUv" id="7am4gyMvUnn" role="11_B2D">
+              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+            </node>
           </node>
           <node concept="3clFbW" id="7235WRFV4nV" role="jymVt">
             <node concept="3cqZAl" id="7235WRFV4nW" role="3clF45" />
