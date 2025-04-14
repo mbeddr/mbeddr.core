@@ -57,7 +57,7 @@ def bundledDeps = [
         new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1', 'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
             exclude module: 'stax-api'
         }),
-        new BundledDep('jfreechart', ['org.jfree:jfreechart:1.0.19'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
+        new BundledDep('jfreechart', ['org.jfree:jfreechart:1.5.5'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
         new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.2'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
         new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
         new BundledDep('mockito', ['org.mockito:mockito-core:2.28.2'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
