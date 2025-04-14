@@ -16,11 +16,6 @@ ext.reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
 // Project group
 group = 'com.mbeddr'
 
-repositories {
-    // required for com.michaelbaranov:microba library
-    maven { url 'https://maven.atlassian.com/content/repositories/atlassian-public/' }
-}
-
 configurations {
     mpsLibraries { canBeConsumed = false }
 }
