@@ -202,6 +202,7 @@ task package_mbeddrPlatform(type: Zip, dependsOn: [build_platform, cyclonedxBom]
     }
     from(reportsDir) {
         include 'sbom.json'
+        into 'com.mbeddr.platform'
     }
 }
 
