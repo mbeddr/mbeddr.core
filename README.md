@@ -1,6 +1,6 @@
 # Mbeddr core
 
-### Mbeddr
+## Mbeddr
 
 mbeddr aims at creating a different way of developing embedded software systems. Instead of using archaic modeling tools and manually written C code, we use the Open sSurce [JetBrains MPS](http://jetbrains.com/mps) language workbench to create an integrated approach to embedded development, where C programming, DSLs, domain specific extensions to C, product line variability, requirements traceability and model checking are supported directly.
 
@@ -23,11 +23,11 @@ For some more information about the project, visit http://mbeddr.com/mps-platfor
   <a href="http://mbeddr.com/#!prettyPhoto/12/"><img src="http://mbeddr.com/images/feature_versionControl.png" name="Version Control"></a>
 </details>
 
-### Mbeddr Platform
+## Mbeddr Platform
 
 The mbeddr platform provides various languages and extensions that can be used in all kinds of projects. Many extensions are briefly explained on [this page](http://mbeddr.com/mps-platform-docs/platform_essentials/mpsutils/). You most likely want to have `com.mbeddr.platform` as a dependency and not `com.mbeddr`. If you can't find a language here, make sure that it wasn't moved to [MPS-Extensions](https://jetbrains.github.io/MPS-extensions/extensions/full_extensions_list/). The mbeddr platform currently repackages all languages from MPS-Extensions. Some of the old languages that were moved have also still have the old com.mbeddr prefix  Visit the page [Issue Tracker | MPS Platform Docs](http://mbeddr.com/mps-platform-docs/reference/issue_trackers/) for some more information on how to distinguish the various MPS repositories by package name.
 
-### Project Structure
+## Project Structure
 
 The project consists of the following subprojects in the `code/languages` subfolder:
 
@@ -41,14 +41,14 @@ The project consists of the following subprojects in the `code/languages` subfol
 
 The `code/solutions` folder contains some examples for the mbeddr C languages.
 
-### Maven Dependencies
+## Maven Dependencies
 
 To use mbeddr or the mbeddr platform in your project, you need one of the following dependencies in your Maven or Gradle build script. The latest supported MPS version is 2024.1, the master branch builds against the MPS master.
 
 [![mbeddr](https://img.shields.io/badge/Github%20pages-mbeddr-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.mbeddr)
 [![mbeddr platform](https://img.shields.io/badge/Github%20pages-mbeddr.platform-success)](https://github.com/orgs/mbeddr/packages?tab=packages&q=com.mbeddr.platform)
 
-#### Mbeddr
+### Mbeddr
 
 | MPS version | nexus status | 
 | --------------- | --------------- |
@@ -66,7 +66,7 @@ To use mbeddr or the mbeddr platform in your project, you need one of the follow
 | 2019.3 | [![artifacts.itemis.cloud](https://img.shields.io/badge/dynamic/xml?url=https://artifacts.itemis.cloud/repository/maven-mps/com/mbeddr/mbeddr/maven-metadata.xml&label=artifacts.itemis.cloud&color=success&query=.//versioning/versions/version[starts-with(text(),'2019.3')][last()])](https://artifacts.itemis.cloud/#browse/browse:maven-mps:com%2Fmbeddr%2Fmbeddr) |
 
 
-#### Mbeddr Platform
+### Mbeddr Platform
 
 
 | MPS version | nexus status |
@@ -95,7 +95,7 @@ If that happens, some migrations were not executed in the project. Run `./gradle
 
 Please select the correct target branch for the PR. The master branch builds against the MPS master and is most likely not the branch you want to contribute to. After the PR is merged, a bot will automatically open a PR to merge the changes into the next maintenance branch. You don't have to do anything at the last step.
 
-### Contributing to the mbeddr.platform
+## Contributing to the mbeddr.platform
 
 To contribute your module to the mbeddr platform for reuse, you probably want to add it to the mps utils (`com.mbeddr.mpsutils`). After some incubation time, it may be considered to move it to the MPS-extensions, if the motivation and implementation have grown mature.
 
@@ -116,3 +116,7 @@ To contribute your module to the mbeddr platform for reuse, you probably want to
     - Add it to the default layout
     - Add it to the test modules configuration
 - Run the build locally with `./gradlew publishMbeddrPlatformPublicationToMavenLocal` and check if your project works with it
+
+## Automatic Updating Of Dependencies
+
+The [Renovate](https://docs.renovatebot.com/) bot updates the dependencies automatically for the master branch or optionally other branches and creates PRs for those changes. The configuration can be found at [renovate.json5](https://github.com/mbeddr/mbeddr.core/blob/master/.github/renovate.json5). The documentation for the configuration can be found at https://docs.renovatebot.com/configuration-options/.
