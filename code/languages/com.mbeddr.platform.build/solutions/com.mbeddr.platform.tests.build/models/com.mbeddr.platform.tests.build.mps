@@ -313,6 +313,9 @@
       <node concept="L2wRC" id="4X7wieqKkD2" role="39821P">
         <ref role="L2wRA" node="4X7wieqKka$" resolve="test.com.mbeddr.mpsutil.extensionclass" />
       </node>
+      <node concept="L2wRC" id="7am4gyMP1xa" role="39821P">
+        <ref role="L2wRA" node="7am4gyMcO_6" resolve="test.com.mbeddr.mpsutil.extensionclass.source" />
+      </node>
       <node concept="L2wRC" id="9jWrhFpWP3" role="39821P">
         <ref role="L2wRA" node="9jWrhFpWZO" resolve="test.com.mbeddr.mpsutil.common" />
       </node>
@@ -1486,6 +1489,67 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="7am4gyMcO_6" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.mbeddr.mpsutil.extensionclass.source" />
+        <property role="3LESm3" value="1817cee4-e994-4411-a9bb-ec664fea95f2" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="3rtmxn" id="7am4gyMcO_7" role="3bR31x">
+          <node concept="3LXTmp" id="7am4gyMcO_8" role="3rtmxm">
+            <node concept="3qWCbU" id="7am4gyMcO_9" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7am4gyMcO_a" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="7am4gyMcO_b" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="7am4gyMcO_c" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.extensionclass" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="398BVA" id="7am4gyMcO_d" role="3LF7KH">
+          <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+          <node concept="2Ry0Ak" id="7am4gyMcO_e" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="7am4gyMcO_f" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.extensionclass.source" />
+              <node concept="2Ry0Ak" id="7am4gyMcOAK" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.extensionclass.source.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7am4gyMcO_j" role="3bR37C">
+          <node concept="3bR9La" id="7am4gyMcO_k" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="7am4gyMcO_l" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7am4gyMcOGU" role="1HemKq">
+            <node concept="398BVA" id="7am4gyMcOGC" role="3LXTmr">
+              <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
+              <node concept="2Ry0Ak" id="7am4gyMcOGD" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="7am4gyMcOGE" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.mpsutil.extensionclass.source" />
+                  <node concept="2Ry0Ak" id="7am4gyMcOGF" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7am4gyMcOGV" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="4X7wieqKka$" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="test.com.mbeddr.mpsutil.extensionclass" />
@@ -1549,6 +1613,11 @@
             <node concept="3qWCbU" id="$Kq8MetF3P" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7am4gyMcOUT" role="3bR37C">
+          <node concept="3bR9La" id="7am4gyMcOUU" role="1SiIV1">
+            <ref role="3bR37D" node="7am4gyMcO_6" resolve="test.com.mbeddr.mpsutil.extensionclass.source" />
           </node>
         </node>
       </node>

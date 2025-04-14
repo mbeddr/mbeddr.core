@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2025
 
+## com.mbeddr.mpsutil.process
+
+### Changed
+
+- The language was renamed to com.mbeddr.mpsutil.wizard
+
 ## com.mbeddr.doc
 
 - 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`

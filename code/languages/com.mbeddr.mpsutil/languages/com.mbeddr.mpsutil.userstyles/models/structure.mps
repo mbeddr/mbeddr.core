@@ -54,7 +54,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="75yNFwrT_dH">
-    <property role="TrG5h" value="UserConfigurable" />
+    <property role="TrG5h" value="UserStyle" />
     <property role="EcuMT" value="8170319964140884845" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="1gJuyfgAvvf" role="1TKVEl">
@@ -68,9 +68,12 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="M6xJ_" id="75yNFwrT_e3" role="lGtFl">
-      <property role="Hh88m" value="userConfigurable" />
+      <property role="Hh88m" value="userStyle" />
       <node concept="trNpa" id="1gJuyfgBDLe" role="EQaZv">
         <ref role="trN6q" to="tpc2:2VNGR_E4AW$" resolve="StyleClass" />
+      </node>
+      <node concept="trNpa" id="7am4gyMKbky" role="EQaZv">
+        <ref role="trN6q" to="tpc2:hgV6hR6" resolve="StyleClassItem" />
       </node>
     </node>
     <node concept="PrWs8" id="1gJuyfgAD93" role="PzmwI">
