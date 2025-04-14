@@ -68,7 +68,7 @@
       </concept>
     </language>
     <language id="62a3babb-5d40-4920-897f-d4144dc99c9d" name="com.mbeddr.mpsutil.userstyles">
-      <concept id="8170319964140884845" name="com.mbeddr.mpsutil.userstyles.structure.UserConfigurable" flags="ng" index="1Ex9Rl">
+      <concept id="8170319964140884845" name="com.mbeddr.mpsutil.userstyles.structure.UserStyle" flags="ng" index="1Ex9Rl">
         <property id="1454515498906453564" name="description" index="34GvKv" />
         <property id="1454515498906154959" name="displayText" index="34HCRG" />
       </concept>
