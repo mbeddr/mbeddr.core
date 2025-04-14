@@ -1,5 +1,5 @@
 // Dependency versions
-ext.mpsVersion = '2024.3.1'
+ext.mpsVersion = '2024.3.2'
 ext.mbeddrVersion = '1.0.+'
 // Location where resolved dependencies are stored
 ext.artifactsDir = new File(rootDir, 'artifacts')
