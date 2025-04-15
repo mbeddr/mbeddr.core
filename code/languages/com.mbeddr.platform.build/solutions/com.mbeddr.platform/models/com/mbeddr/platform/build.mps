@@ -94,11 +94,15 @@
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
         <reference id="5610619299013057365" name="target" index="3ygNvj" />
+        <child id="6789562173791401562" name="selectors" index="1juEy9" />
       </concept>
       <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
         <reference id="841011766565753076" name="target" index="3_I8Xa" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="5248329904288051111" name="jetbrains.mps.build.structure.BuildFileExcludeSelector" flags="ng" index="3LWZYq">
+        <property id="5248329904288051112" name="pattern" index="3LWZYl" />
+      </concept>
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
       </concept>
@@ -18071,6 +18075,9 @@
       </node>
       <node concept="3ygNvl" id="3ZcHznne7By" role="39821P">
         <ref role="3ygNvj" to="90a9:2Xjt3l56m3c" />
+        <node concept="3LWZYq" id="2kSjHhbioMr" role="1juEy9">
+          <property role="3LWZYl" value="sbom.json" />
+        </node>
       </node>
       <node concept="m$_wl" id="6ucYLjolhRD" role="39821P">
         <ref role="m_rDy" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
