@@ -21,10 +21,8 @@
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="xyqd" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="h5a6" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.j2dviewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="tdww" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.impl(MPS.IDEA/)" />
     <import index="n5wa" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
@@ -41,12 +39,12 @@
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
-    <import index="lafm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.toolWindow(MPS.IDEA/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
-    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" implicit="true" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -78,6 +76,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
@@ -918,13 +917,28 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="CwWUtG4xVp" role="3cqZAp">
-          <node concept="2OqwBi" id="CwWUtG4y45" role="3clFbG">
-            <node concept="2WthIp" id="CwWUtG4xVn" role="2Oq$k0" />
-            <node concept="liA8E" id="CwWUtG4yoU" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="CwWUtG4ysl" role="37wK5m">
-                <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="5UujJsmqXz0" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmqYem" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmqXET" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="5UujJsmqYP6" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmqYX8" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmqYXb" role="1bW5cS">
+                  <node concept="3clFbF" id="CwWUtG4xVp" role="3cqZAp">
+                    <node concept="2OqwBi" id="CwWUtG4y45" role="3clFbG">
+                      <node concept="2WthIp" id="CwWUtG4xVn" role="2Oq$k0" />
+                      <node concept="liA8E" id="CwWUtG4yoU" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="CwWUtG4ysl" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1589,6 +1603,7 @@
   <node concept="tC5Ba" id="18ZQ$P85bbH">
     <property role="TrG5h" value="GraphingToolbar" />
     <property role="3GE5qa" value="toolbar" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="18ZQ$P85bbJ" role="ftER_">
       <node concept="tCFHf" id="4iv9KfRBTl5" role="ftvYc">
         <ref role="tCJdB" node="4iv9KfRBKWH" resolve="HistoryGoBack" />
@@ -1720,6 +1735,7 @@
     <property role="2f7twF" value="View Graph" />
     <property role="1rdrE6" value="true" />
     <property role="TrG5h" value="ViewInGraphingToolActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="2N1CSrzSaIc" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
       <ref role="2f8Tey" to="ekwn:6S3xhs4vzRz" resolve="diagram" />

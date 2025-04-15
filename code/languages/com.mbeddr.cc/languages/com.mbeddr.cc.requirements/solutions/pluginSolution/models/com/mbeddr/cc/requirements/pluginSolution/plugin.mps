@@ -38,6 +38,7 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -46,6 +47,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -208,6 +210,7 @@
   </node>
   <node concept="tC5Ba" id="3slbD0C6VXu">
     <property role="TrG5h" value="RequirementsGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3slbD0C6VXv" role="ftER_">
       <node concept="tCFHf" id="TFjNjjzXXc" role="ftvYc">
         <ref role="tCJdB" node="3slbD0C7$An" resolve="ActivateOutline" />
@@ -232,11 +235,7 @@
     <property role="TrG5h" value="ActivateOutline" />
     <property role="2uzpH1" value="Outline Mode" />
     <property role="3GE5qa" value="outline" />
-    <node concept="1DS2jV" id="3slbD0C7$Ao" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3slbD0C7$Ap" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3slbD0C7DL8" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -317,11 +316,7 @@
     <property role="TrG5h" value="DeactivateOutline" />
     <property role="2uzpH1" value="Outline Mode" />
     <property role="3GE5qa" value="outline" />
-    <node concept="1DS2jV" id="3slbD0C6UdE" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3slbD0C6UdF" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3slbD0C7DLv" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -404,11 +399,7 @@
     <property role="TrG5h" value="ActivateTraceStatus" />
     <property role="2uzpH1" value="Trace Status" />
     <property role="3GE5qa" value="tracestatus" />
-    <node concept="1DS2jV" id="3JD5OqKQTX7" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3JD5OqKQTX8" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3JD5OqKQTX9" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
@@ -489,11 +480,7 @@
     <property role="TrG5h" value="DeactivateTraceStatus" />
     <property role="2uzpH1" value="Trace Status" />
     <property role="3GE5qa" value="tracestatus" />
-    <node concept="1DS2jV" id="3JD5OqKQTY6" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="3JD5OqKQTY7" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="3JD5OqKQTY8" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />

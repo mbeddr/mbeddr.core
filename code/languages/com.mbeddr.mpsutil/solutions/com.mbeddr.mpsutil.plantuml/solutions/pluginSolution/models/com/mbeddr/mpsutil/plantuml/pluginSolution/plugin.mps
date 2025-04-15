@@ -36,15 +36,17 @@
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
-    <import index="dnq3" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.dom.util(org.apache.batik/)" />
-    <import index="ugom" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.bridge(org.apache.batik/)" />
-    <import index="e373" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.util(org.apache.batik/)" />
-    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
-    <import index="4anb" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" />
-    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
+    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
+    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
+    <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -78,6 +80,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -268,6 +271,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -338,7 +344,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -346,6 +354,7 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -384,7 +393,6 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -1183,6 +1191,7 @@
       <node concept="3Tm6S6" id="2sPLpCfXHV8" role="1B3o_S" />
       <node concept="3uibUv" id="2sPLpCfXHVd" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~MutableComboBoxModel" resolve="MutableComboBoxModel" />
+        <node concept="17QB3L" id="7am4gyMjUzW" role="11_B2D" />
       </node>
     </node>
     <node concept="2BZ0e9" id="2aP19v315U7" role="2XNbBz">
@@ -1969,7 +1978,9 @@
           <node concept="37vLTI" id="2sPLpCfXHVJ" role="3clFbG">
             <node concept="2ShNRf" id="2sPLpCfXHVP" role="37vLTx">
               <node concept="1pGfFk" id="2sPLpCfXHW$" role="2ShVmc">
+                <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="dxuu:~DefaultComboBoxModel.&lt;init&gt;()" resolve="DefaultComboBoxModel" />
+                <node concept="17QB3L" id="7am4gyMkol$" role="1pMfVU" />
               </node>
             </node>
             <node concept="2OqwBi" id="2sPLpCfXHVk" role="37vLTJ">
@@ -2428,11 +2439,11 @@
             <ref role="3cqZAo" node="18ZQ$P82hpD" resolve="c" />
           </node>
         </node>
-        <node concept="3clFbF" id="18ZQ$P82jTz" role="3cqZAp">
-          <node concept="3P9mCS" id="18ZQ$P82jT$" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMkFsL" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMkFsJ" role="3clFbG">
             <ref role="37wK5l" to="z60i:~Component.addMouseWheelListener(java.awt.event.MouseWheelListener)" resolve="addMouseWheelListener" />
-            <node concept="2ShNRf" id="18ZQ$P82jT_" role="37wK5m">
-              <node concept="1pGfFk" id="18ZQ$P82jTB" role="2ShVmc">
+            <node concept="2ShNRf" id="7am4gyMkI$U" role="37wK5m">
+              <node concept="1pGfFk" id="7am4gyMkI$V" role="2ShVmc">
                 <ref role="37wK5l" node="18ZQ$P81TV5" resolve="JSVGScrollerWithMouseWheelListener.WheelListener" />
               </node>
             </node>
@@ -2483,12 +2494,12 @@
                               <ref role="3cqZAo" node="18ZQ$P81TVc" resolve="e" />
                             </node>
                             <node concept="liA8E" id="18ZQ$P81TVp" role="2OqNvi">
-                              <ref role="37wK5l" to="hyam:~InputEvent.getModifiers()" resolve="getModifiers" />
+                              <ref role="37wK5l" to="hyam:~MouseEvent.getModifiersEx()" resolve="getModifiersEx" />
                             </node>
                           </node>
-                          <node concept="10M0yZ" id="18ZQ$P81TVq" role="3uHU7w">
+                          <node concept="10M0yZ" id="7am4gyMkWxj" role="3uHU7w">
+                            <ref role="3cqZAo" to="hyam:~InputEvent.SHIFT_DOWN_MASK" resolve="SHIFT_DOWN_MASK" />
                             <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
-                            <ref role="3cqZAo" to="hyam:~InputEvent.SHIFT_MASK" resolve="SHIFT_MASK" />
                           </node>
                         </node>
                       </node>
@@ -2670,7 +2681,7 @@
   </node>
   <node concept="sE7Ow" id="18ZQ$P82xbr">
     <property role="TrG5h" value="ZoomIn" />
-    <property role="2uzpH1" value="Zoom In (SVG)" />
+    <property role="2uzpH1" value="Zoom in (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="18ZQ$P82xbs" role="tncku">
@@ -2757,15 +2768,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="18ZQ$P82G0W" role="3cqZAp">
-          <node concept="2OqwBi" id="18ZQ$P82G1i" role="3clFbG">
-            <node concept="37vLTw" id="18ZQ$P82G0X" role="2Oq$k0">
-              <ref role="3cqZAo" node="5BkFC2yhAI1" resolve="tool" />
+        <node concept="3clFbF" id="5UujJsmrDc3" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmrDZO" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmrDkZ" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="18ZQ$P82G1o" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="18ZQ$P84YIK" role="37wK5m">
-                <property role="3clFbU" value="true" />
+            <node concept="liA8E" id="5UujJsmrEEZ" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmrEGh" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmrEGk" role="1bW5cS">
+                  <node concept="3clFbF" id="18ZQ$P82G0W" role="3cqZAp">
+                    <node concept="2OqwBi" id="18ZQ$P82G1i" role="3clFbG">
+                      <node concept="37vLTw" id="18ZQ$P82G0X" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5BkFC2yhAI1" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="18ZQ$P82G1o" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="18ZQ$P84YIK" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2857,6 +2883,7 @@
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
     <property role="TrG5h" value="VisualizeActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="1DVNPtFPBO2" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
     </node>
@@ -2869,6 +2896,7 @@
   <node concept="tC5Ba" id="18ZQ$P85bbH">
     <property role="TrG5h" value="ToolbarGroup" />
     <property role="3GE5qa" value="toolbar" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="18ZQ$P85bbJ" role="ftER_">
       <node concept="tCFHf" id="4ppn3W9rIRl" role="ftvYc">
         <ref role="tCJdB" node="4ppn3W9rIR8" resolve="Back" />
@@ -3191,9 +3219,6 @@
     <node concept="2tJIrI" id="5gmO3pL7WRn" role="jymVt" />
     <node concept="2tJIrI" id="5gmO3pL7I9J" role="jymVt" />
     <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
-    <node concept="3uibUv" id="2sPLpCfQ$Lm" role="1zkMxy">
-      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
-    </node>
     <node concept="3clFbW" id="2sPLpCfQsmS" role="jymVt">
       <node concept="3cqZAl" id="2sPLpCfQsmT" role="3clF45" />
       <node concept="3Tm1VV" id="2sPLpCfQsmU" role="1B3o_S" />
@@ -3219,9 +3244,9 @@
                 <ref role="2Oxat5" node="5gmO3pL7KrD" resolve="svgScale" />
               </node>
             </node>
-            <node concept="10M0yZ" id="5gmO3pL7Pil" role="37vLTx">
-              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
+            <node concept="10M0yZ" id="3uj04QfX$Sq" role="37vLTx">
               <ref role="3cqZAo" to="ughz:~SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMAX" resolve="SVG_PRESERVEASPECTRATIO_XMIDYMAX" />
+              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
             </node>
           </node>
         </node>
@@ -3238,13 +3263,10 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2sPLpCfXGIS" role="3cqZAp" />
-        <node concept="3clFbF" id="2sPLpCfXHxx" role="3cqZAp">
-          <node concept="3P9mCS" id="2sPLpCfXHxy" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMl5kG" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMl5kE" role="3clFbG">
             <ref role="37wK5l" to="er5d:~JSVGCanvas.setEnablePanInteractor(boolean)" resolve="setEnablePanInteractor" />
-            <node concept="3clFbT" id="2sPLpCfXHxz" role="37wK5m">
-              <property role="3clFbU" value="false" />
-            </node>
+            <node concept="3clFbT" id="7am4gyMlc5e" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbF" id="2sPLpCfXGIZ" role="3cqZAp">
@@ -3279,7 +3301,7 @@
                               <ref role="3cqZAo" node="2sPLpCfXGJA" resolve="event" />
                             </node>
                             <node concept="liA8E" id="2sPLpCfXGJM" role="2OqNvi">
-                              <ref role="37wK5l" to="hyam:~InputEvent.getModifiers()" resolve="getModifiers" />
+                              <ref role="37wK5l" to="hyam:~InputEvent.getModifiersEx()" resolve="getModifiersEx" />
                             </node>
                           </node>
                         </node>
@@ -3307,9 +3329,9 @@
                                   <node concept="37vLTw" id="5Hxjapwgwwi" role="3uHU7B">
                                     <ref role="3cqZAo" node="2sPLpCfXGJI" resolve="mods" />
                                   </node>
-                                  <node concept="10M0yZ" id="2sPLpCfXGJZ" role="3uHU7w">
+                                  <node concept="10M0yZ" id="7am4gyMlkil" role="3uHU7w">
+                                    <ref role="3cqZAo" to="hyam:~InputEvent.BUTTON1_DOWN_MASK" resolve="BUTTON1_DOWN_MASK" />
                                     <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
-                                    <ref role="3cqZAo" to="hyam:~InputEvent.BUTTON1_MASK" resolve="BUTTON1_MASK" />
                                   </node>
                                 </node>
                               </node>
@@ -3318,9 +3340,9 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="3P9mCS" id="2sPLpCfXGOq" role="3uHU7w">
+                          <node concept="1rXfSq" id="7am4gyMmnzC" role="3uHU7w">
                             <ref role="37wK5l" node="2sPLpCfXGO9" resolve="noModifiers" />
-                            <node concept="37vLTw" id="2sPLpCfXGOr" role="37wK5m">
+                            <node concept="37vLTw" id="7am4gyMmwqs" role="37wK5m">
                               <ref role="3cqZAo" node="2sPLpCfXGJA" resolve="event" />
                             </node>
                           </node>
@@ -3412,32 +3434,28 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2sPLpCfXGOD" role="3cqZAp">
-          <node concept="3P9mCS" id="2sPLpCfXGOE" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMlH4J" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMlH4H" role="3clFbG">
             <ref role="37wK5l" to="er5d:~JSVGCanvas.setEnablePanInteractor(boolean)" resolve="setEnablePanInteractor" />
-            <node concept="3clFbT" id="2sPLpCfXGOF" role="37wK5m">
+            <node concept="3clFbT" id="7am4gyMlNtb" role="37wK5m">
               <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2sPLpCfXGOG" role="3cqZAp" />
-        <node concept="3clFbF" id="2sPLpCfXGON" role="3cqZAp">
-          <node concept="3P9mCS" id="2sPLpCfXGOO" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMlSM0" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMlSLY" role="3clFbG">
             <ref role="37wK5l" to="4anb:~JSVGComponent.setRecenterOnResize(boolean)" resolve="setRecenterOnResize" />
-            <node concept="3clFbT" id="2sPLpCfXGOP" role="37wK5m">
-              <property role="3clFbU" value="false" />
-            </node>
+            <node concept="3clFbT" id="7am4gyMlZF3" role="37wK5m" />
           </node>
         </node>
-        <node concept="3clFbF" id="2sPLpCfXGOV" role="3cqZAp">
-          <node concept="3P9mCS" id="2sPLpCfXGOW" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMm7ql" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMm7qj" role="3clFbG">
             <ref role="37wK5l" to="41rc:~JGVTComponent.setDoubleBufferedRendering(boolean)" resolve="setDoubleBufferedRendering" />
-            <node concept="3clFbT" id="2sPLpCfXGOX" role="37wK5m">
+            <node concept="3clFbT" id="7am4gyMmdMi" role="37wK5m">
               <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2sPLpCfXGO$" role="3cqZAp" />
         <node concept="3SKdUt" id="2sPLpCfXGIU" role="3cqZAp">
           <node concept="1PaTwC" id="17qUVvSZlDN" role="1aUNEU">
             <node concept="3oM_SD" id="17qUVvSZlDO" role="1PaTwD">
@@ -3457,8 +3475,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2sPLpCfXG1M" role="3cqZAp">
-          <node concept="3P9mCS" id="2sPLpCfXG1N" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMmM0H" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMmM0F" role="3clFbG">
             <ref role="37wK5l" to="4anb:~JSVGComponent.addGVTTreeBuilderListener(org.apache.batik.swing.svg.GVTTreeBuilderListener)" resolve="addGVTTreeBuilderListener" />
             <node concept="2ShNRf" id="2sPLpCfXG1O" role="37wK5m">
               <node concept="YeOm9" id="2sPLpCfXG1Q" role="2ShVmc">
@@ -3615,9 +3633,7 @@
       </node>
       <node concept="37vLTG" id="5gmO3pL7Ks5" role="3clF46">
         <property role="TrG5h" value="svgElementIdentifier" />
-        <node concept="3uibUv" id="5gmO3pL7Ks6" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="7am4gyMp1Vs" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="5gmO3pL7Ks7" role="3clF46">
         <property role="TrG5h" value="svgElement" />
@@ -3970,14 +3986,16 @@
                               </node>
                               <node concept="liA8E" id="2ag5hDwyhiQ" role="2OqNvi">
                                 <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
-                                <node concept="2OqwBi" id="2ag5hDwyiTV" role="37wK5m">
-                                  <node concept="2OqwBi" id="2ag5hDwyhv2" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="2ag5hDwyhjX" role="2Oq$k0" />
-                                    <node concept="liA8E" id="2ag5hDwyi8Z" role="2OqNvi">
+                                <node concept="2OqwBi" id="5ziaHPEAGLQ" role="37wK5m">
+                                  <node concept="2OqwBi" id="5ziaHPEAuoL" role="2Oq$k0">
+                                    <node concept="liA8E" id="5ziaHPEAzPA" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                                     </node>
+                                    <node concept="Xjq3P" id="5ziaHPEApcj" role="2Oq$k0">
+                                      <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
+                                    </node>
                                   </node>
-                                  <node concept="liA8E" id="2ag5hDwynHj" role="2OqNvi">
+                                  <node concept="liA8E" id="5ziaHPEALZA" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
                                   </node>
                                 </node>
@@ -4061,6 +4079,9 @@
                           <property role="3TUv4t" value="false" />
                           <node concept="3uibUv" id="2sPLpCfQ_lS" role="1tU5fm">
                             <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
+                            <node concept="3uibUv" id="7am4gyMn8xY" role="11_B2D">
+                              <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                            </node>
                           </node>
                           <node concept="2OqwBi" id="2sPLpCfQ_12" role="33vP2m">
                             <node concept="37vLTw" id="2sPLpCfQ_m0" role="2Oq$k0">
@@ -4166,6 +4187,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
+      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
     </node>
   </node>
   <node concept="312cEu" id="2sPLpCfQCUL">
@@ -4547,34 +4571,34 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="2sPLpCfQE4L" role="3cqZAp">
-                  <node concept="3P9mCS" id="2sPLpCfQE4M" role="3clFbG">
+                <node concept="3clFbF" id="7am4gyMne_i" role="3cqZAp">
+                  <node concept="1rXfSq" id="7am4gyMne_g" role="3clFbG">
                     <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                    <node concept="37vLTw" id="2sPLpCfQE5M" role="37wK5m">
+                    <node concept="37vLTw" id="7am4gyMni_V" role="37wK5m">
                       <ref role="3cqZAo" node="2sPLpCfQE5B" resolve="startedDispatcher" />
                     </node>
-                    <node concept="37vLTw" id="2sPLpCfQE4O" role="37wK5m">
+                    <node concept="37vLTw" id="7am4gyMngl2" role="37wK5m">
                       <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbJ" id="2sPLpCfQE4P" role="3cqZAp">
-                  <node concept="3P9mCS" id="2sPLpCfQE4Q" role="3clFbw">
-                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
-                  </node>
                   <node concept="3clFbS" id="2sPLpCfQE4R" role="3clFbx">
-                    <node concept="3clFbF" id="2sPLpCfQE4S" role="3cqZAp">
-                      <node concept="3P9mCS" id="2sPLpCfQE4T" role="3clFbG">
+                    <node concept="3clFbF" id="7am4gyMnlBG" role="3cqZAp">
+                      <node concept="1rXfSq" id="7am4gyMnlBH" role="3clFbG">
                         <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                        <node concept="37vLTw" id="2sPLpCfQE5R" role="37wK5m">
+                        <node concept="37vLTw" id="7am4gyMnnw6" role="37wK5m">
                           <ref role="3cqZAo" node="2sPLpCfQE5N" resolve="cancelledDispatcher" />
                         </node>
-                        <node concept="37vLTw" id="2sPLpCfQE4V" role="37wK5m">
+                        <node concept="37vLTw" id="7am4gyMnlBI" role="37wK5m">
                           <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                         </node>
                       </node>
                     </node>
                     <node concept="3cpWs6" id="2sPLpCfQE4W" role="3cqZAp" />
+                  </node>
+                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
+                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                   </node>
                 </node>
                 <node concept="3clFbH" id="2sPLpCfQJty" role="3cqZAp" />
@@ -4693,22 +4717,22 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2sPLpCfQE56" role="3cqZAp">
-                      <node concept="3P9mCS" id="2sPLpCfQE57" role="3clFbw">
-                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
-                      </node>
                       <node concept="3clFbS" id="2sPLpCfQE58" role="3clFbx">
-                        <node concept="3clFbF" id="2sPLpCfQE59" role="3cqZAp">
-                          <node concept="3P9mCS" id="2sPLpCfQE5a" role="3clFbG">
+                        <node concept="3clFbF" id="7am4gyMnrz3" role="3cqZAp">
+                          <node concept="1rXfSq" id="7am4gyMnrz4" role="3clFbG">
                             <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                            <node concept="37vLTw" id="2sPLpCfQE5X" role="37wK5m">
+                            <node concept="37vLTw" id="7am4gyMnutW" role="37wK5m">
                               <ref role="3cqZAo" node="2sPLpCfQE5N" resolve="cancelledDispatcher" />
                             </node>
-                            <node concept="37vLTw" id="5HxjapweqgV" role="37wK5m">
+                            <node concept="37vLTw" id="7am4gyMnrz5" role="37wK5m">
                               <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                             </node>
                           </node>
                         </node>
                         <node concept="3cpWs6" id="2sPLpCfQE5d" role="3cqZAp" />
+                      </node>
+                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
+                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                       </node>
                     </node>
                     <node concept="3clFbF" id="2sPLpCfQE5e" role="3cqZAp">
@@ -4743,13 +4767,13 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="2sPLpCfQE5l" role="3cqZAp">
-                  <node concept="3P9mCS" id="2sPLpCfQE5m" role="3clFbG">
+                <node concept="3clFbF" id="7am4gyMnww6" role="3cqZAp">
+                  <node concept="1rXfSq" id="7am4gyMnww7" role="3clFbG">
                     <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                    <node concept="37vLTw" id="2sPLpCfQE5Y" role="37wK5m">
+                    <node concept="37vLTw" id="7am4gyMnzw_" role="37wK5m">
                       <ref role="3cqZAo" node="2sPLpCfQE5F" resolve="completedDispatcher" />
                     </node>
-                    <node concept="37vLTw" id="5Hxjapweq8c" role="37wK5m">
+                    <node concept="37vLTw" id="7am4gyMnww8" role="37wK5m">
                       <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                     </node>
                   </node>
@@ -4786,13 +4810,13 @@
               </node>
             </node>
             <node concept="3clFbS" id="2sPLpCfQE3R" role="1zc67A">
-              <node concept="3clFbF" id="2sPLpCfQE3S" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE3T" role="3clFbG">
+              <node concept="3clFbF" id="7am4gyMnABq" role="3cqZAp">
+                <node concept="1rXfSq" id="7am4gyMnABr" role="3clFbG">
                   <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE5Z" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnDgP" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE5N" resolve="cancelledDispatcher" />
                   </node>
-                  <node concept="37vLTw" id="5HxjapwgHuK" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnABs" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                   </node>
                 </node>
@@ -4820,13 +4844,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2sPLpCfQE44" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE45" role="3clFbG">
+              <node concept="3clFbF" id="7am4gyMnGdV" role="3cqZAp">
+                <node concept="1rXfSq" id="7am4gyMnGdW" role="3clFbG">
                   <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE68" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnIRo" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
                   </node>
-                  <node concept="37vLTw" id="5HxjapwgJuW" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnGdX" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                   </node>
                 </node>
@@ -4864,13 +4888,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2sPLpCfQE4k" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE4l" role="3clFbG">
+              <node concept="3clFbF" id="7am4gyMnMm7" role="3cqZAp">
+                <node concept="1rXfSq" id="7am4gyMnMm8" role="3clFbG">
                   <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE69" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnP9i" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
                   </node>
-                  <node concept="37vLTw" id="2sPLpCfQE4n" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnMm9" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                   </node>
                 </node>
@@ -4923,13 +4947,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2sPLpCfQE4E" role="3cqZAp">
-                <node concept="3P9mCS" id="2sPLpCfQE4F" role="3clFbG">
+              <node concept="3clFbF" id="7am4gyMnRi_" role="3cqZAp">
+                <node concept="1rXfSq" id="7am4gyMnRiA" role="3clFbG">
                   <ref role="37wK5l" to="4anb:~SVGDocumentLoader.fireEvent(org.apache.batik.util.EventDispatcher$Dispatcher,java.lang.Object)" resolve="fireEvent" />
-                  <node concept="37vLTw" id="2sPLpCfQE6a" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnU6i" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE63" resolve="failedDispatcher" />
                   </node>
-                  <node concept="37vLTw" id="2sPLpCfQE4H" role="37wK5m">
+                  <node concept="37vLTw" id="7am4gyMnRiB" role="37wK5m">
                     <ref role="3cqZAo" node="2sPLpCfQE3G" resolve="evt" />
                   </node>
                 </node>
@@ -4965,6 +4989,7 @@
       <node concept="3Tm6S6" id="2sPLpCfXNyr" role="1B3o_S" />
       <node concept="3uibUv" id="2sPLpCfXNyt" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~MutableComboBoxModel" resolve="MutableComboBoxModel" />
+        <node concept="17QB3L" id="7am4gyMktYV" role="11_B2D" />
       </node>
     </node>
     <node concept="312cEg" id="6rOzHwXwJIu" role="jymVt">
@@ -5028,6 +5053,7 @@
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="2sPLpCfXNyo" role="1tU5fm">
           <ref role="3uigEE" to="dxuu:~MutableComboBoxModel" resolve="MutableComboBoxModel" />
+          <node concept="17QB3L" id="7am4gyMkxxI" role="11_B2D" />
         </node>
       </node>
       <node concept="37vLTG" id="6rOzHwXwJIr" role="3clF46">
@@ -5058,6 +5084,7 @@
             <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="6rOzHwXwGtv" role="1tU5fm">
               <ref role="3uigEE" to="dxuu:~JComboBox" resolve="JComboBox" />
+              <node concept="17QB3L" id="7am4gyMk$MF" role="11_B2D" />
             </node>
             <node concept="2ShNRf" id="6rOzHwXwGtw" role="33vP2m">
               <node concept="1pGfFk" id="6rOzHwXwGtx" role="2ShVmc">
@@ -5183,6 +5210,29 @@
       </node>
       <node concept="3clFbS" id="2sPLpCfXNb4" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="43zZ$xOTr5n" role="jymVt" />
+    <node concept="3clFb_" id="43zZ$xOS5C5" role="jymVt">
+      <property role="TrG5h" value="getActionUpdateThread" />
+      <node concept="3Tm1VV" id="43zZ$xOS5C6" role="1B3o_S" />
+      <node concept="2AHcQZ" id="43zZ$xOS5C8" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="43zZ$xOS5C9" role="3clF45">
+        <ref role="3uigEE" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+      </node>
+      <node concept="3clFbS" id="43zZ$xOS5Ca" role="3clF47">
+        <node concept="3clFbF" id="43zZ$xOScF6" role="3cqZAp">
+          <node concept="Rm8GO" id="43zZ$xOSd8Z" role="3clFbG">
+            <ref role="Rm8GQ" to="qkt:~ActionUpdateThread.BGT" resolve="BGT" />
+            <ref role="1Px2BO" to="qkt:~ActionUpdateThread" resolve="ActionUpdateThread" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="43zZ$xOS5Cb" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="43zZ$xOTr5o" role="jymVt" />
   </node>
   <node concept="Zd50a" id="Wvkle$RXGw">
     <property role="TrG5h" value="visualizeKeymapping" />
@@ -5453,13 +5503,13 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2aP19v312aj" role="3cqZAp">
-          <node concept="3P9mCS" id="2aP19v312ak" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMo0aE" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMo0aC" role="3clFbG">
             <ref role="37wK5l" node="2aP19v3129s" resolve="addInternal" />
-            <node concept="37vLTw" id="2aP19v312am" role="37wK5m">
+            <node concept="37vLTw" id="7am4gyMo1Ed" role="37wK5m">
               <ref role="3cqZAo" node="2aP19v3123G" resolve="newPtr" />
             </node>
-            <node concept="37vLTw" id="2aP19v312al" role="37wK5m">
+            <node concept="37vLTw" id="7am4gyMo31O" role="37wK5m">
               <ref role="3cqZAo" node="2aP19v311VI" resolve="category" />
             </node>
           </node>
@@ -5481,18 +5531,18 @@
       <node concept="3cqZAl" id="2aP19v311Wk" role="3clF45" />
       <node concept="3Tm1VV" id="2aP19v311Wl" role="1B3o_S" />
       <node concept="3clFbS" id="2aP19v311Wm" role="3clF47">
-        <node concept="3clFbF" id="2aP19v3128V" role="3cqZAp">
-          <node concept="3P9mCS" id="2aP19v3128W" role="3clFbG">
+        <node concept="3clFbF" id="7am4gyMo6DB" role="3cqZAp">
+          <node concept="1rXfSq" id="7am4gyMo6D_" role="3clFbG">
             <ref role="37wK5l" node="2aP19v3129s" resolve="addInternal" />
-            <node concept="2OqwBi" id="2aP19v3129i" role="37wK5m">
-              <node concept="338YkY" id="2aP19v3128X" role="2Oq$k0">
+            <node concept="2OqwBi" id="7am4gyMo8Ue" role="37wK5m">
+              <node concept="338YkY" id="7am4gyMo7$n" role="2Oq$k0">
                 <ref role="338YkT" node="2aP19v311TJ" resolve="current" />
               </node>
-              <node concept="2OwXpG" id="2aP19v312ap" role="2OqNvi">
+              <node concept="2OwXpG" id="7am4gyMoan0" role="2OqNvi">
                 <ref role="2Oxat5" node="2aP19v311YL" resolve="nPtr" />
               </node>
             </node>
-            <node concept="37vLTw" id="2aP19v312ar" role="37wK5m">
+            <node concept="37vLTw" id="7am4gyMocgt" role="37wK5m">
               <ref role="3cqZAo" node="2aP19v311Wp" resolve="category" />
             </node>
           </node>
@@ -6074,10 +6124,10 @@
             <ref role="338YkT" node="2aP19v315V6" resolve="enabled" />
           </node>
           <node concept="3clFbS" id="2aP19v315Vn" role="3clFbx">
-            <node concept="3clFbF" id="2aP19v315Vp" role="3cqZAp">
-              <node concept="3P9mCS" id="2aP19v315Vq" role="3clFbG">
+            <node concept="3clFbF" id="7am4gyMjfR$" role="3cqZAp">
+              <node concept="1rXfSq" id="7am4gyMjfRy" role="3clFbG">
                 <ref role="37wK5l" node="2aP19v315Vf" resolve="categoryChangedImpl" />
-                <node concept="37vLTw" id="2aP19v315Vr" role="37wK5m">
+                <node concept="37vLTw" id="7am4gyMjgR4" role="37wK5m">
                   <ref role="3cqZAo" node="2aP19v315V0" resolve="newCat" />
                 </node>
               </node>
@@ -6099,7 +6149,7 @@
   </node>
   <node concept="sE7Ow" id="6IuaPRfaRij">
     <property role="TrG5h" value="CopySources" />
-    <property role="2uzpH1" value="Copy sources to clipboard (SVG)" />
+    <property role="2uzpH1" value="Copy Sources to Clipboard (SVG)" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="6IuaPRfaRik" role="tncku">
@@ -6248,15 +6298,30 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bhVSeGf3ss" role="3cqZAp">
-          <node concept="2OqwBi" id="bhVSeGf3st" role="3clFbG">
-            <node concept="37vLTw" id="bhVSeGf3su" role="2Oq$k0">
-              <ref role="3cqZAo" node="bhVSeGf3sl" resolve="tool" />
+        <node concept="3clFbF" id="5UujJsmrFUW" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmrGBa" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmrFXk" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
             </node>
-            <node concept="liA8E" id="bhVSeGf3sv" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="bhVSeGf3sw" role="37wK5m">
-                <property role="3clFbU" value="true" />
+            <node concept="liA8E" id="5UujJsmrHcM" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmrHe4" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmrHe7" role="1bW5cS">
+                  <node concept="3clFbF" id="bhVSeGf3ss" role="3cqZAp">
+                    <node concept="2OqwBi" id="bhVSeGf3st" role="3clFbG">
+                      <node concept="37vLTw" id="bhVSeGf3su" role="2Oq$k0">
+                        <ref role="3cqZAo" node="bhVSeGf3sl" resolve="tool" />
+                      </node>
+                      <node concept="liA8E" id="bhVSeGf3sv" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="bhVSeGf3sw" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -6324,6 +6389,7 @@
     <property role="TrG5h" value="VisualizeActionGroupDynamic" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Visualize ..." />
+    <property role="22ra45" value="true" />
     <node concept="2OiAzN" id="bhVSeGf9rc" role="ftER_">
       <node concept="2OiTZ2" id="bhVSeGf9rd" role="2Oj6PV">
         <node concept="3clFbS" id="bhVSeGf9re" role="2VODD2">

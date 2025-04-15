@@ -5,8 +5,8 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -26,9 +26,9 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="41ey" ref="r:f005c0ad-4467-4fc6-b611-c9d0774d1591(com.mbeddr.mpsutil.json.behavior)" />
+    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(MPS.ThirdParty/)" />
-    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -65,6 +65,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -774,6 +775,7 @@
   </node>
   <node concept="tC5Ba" id="6Sh7xm2KwMs">
     <property role="TrG5h" value="importJsonFileGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6Sh7xm2KwMu" role="ftER_">
       <node concept="tCFHf" id="6Sh7xm2KwMx" role="ftvYc">
         <ref role="tCJdB" node="6Sh7xm2JLAh" resolve="importJsonFile" />
@@ -787,6 +789,7 @@
   <node concept="2DaZZR" id="6Sh7xm2Li2H" />
   <node concept="tC5Ba" id="4MGk$bFp2_g">
     <property role="TrG5h" value="pasteJsonGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="4MGk$bFp2_i" role="ftER_">
       <node concept="2a7GMi" id="4MGk$bFpC5D" role="ftvYc" />
       <node concept="tCFHf" id="4MGk$bFp2_E" role="ftvYc">
@@ -1189,82 +1192,6 @@
       </node>
     </node>
   </node>
-  <node concept="vrV6u" id="WieAE6FJqt">
-    <property role="TrG5h" value="json" />
-    <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
-      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="JsonConfig" />
-    </node>
-  </node>
-  <node concept="312cEu" id="2Qbt$1tSnqh">
-    <property role="TrG5h" value="JsonConfig" />
-    <property role="1sVAO0" value="true" />
-    <node concept="2tJIrI" id="2Qbt$1tSq4w" role="jymVt" />
-    <node concept="3clFb_" id="2Qbt$1tSwXM" role="jymVt">
-      <property role="TrG5h" value="getPriorityLevel" />
-      <node concept="10Oyi0" id="2Qbt$1tSx7l" role="3clF45" />
-      <node concept="3Tm1VV" id="2Qbt$1tSwXP" role="1B3o_S" />
-      <node concept="3clFbS" id="2Qbt$1tSwXQ" role="3clF47">
-        <node concept="3clFbF" id="3HwHK4HNSfC" role="3cqZAp">
-          <node concept="3cmrfG" id="3HwHK4HNSfB" role="3clFbG">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3HwHK4HNNrr" role="jymVt" />
-    <node concept="3clFb_" id="2JDrrqkBcJH" role="jymVt">
-      <property role="TrG5h" value="getFactory" />
-      <node concept="3clFbS" id="2JDrrqkBcJK" role="3clF47">
-        <node concept="3clFbF" id="2JDrrqkFsf1" role="3cqZAp">
-          <node concept="2ShNRf" id="2JDrrqkFseZ" role="3clFbG">
-            <node concept="1pGfFk" id="2JDrrqkFDDw" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="i4mf:~JsonFactory.&lt;init&gt;()" resolve="JsonFactory" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2JDrrqkBb2Y" role="1B3o_S" />
-      <node concept="3uibUv" id="2JDrrqkBcSV" role="3clF45">
-        <ref role="3uigEE" to="i4mf:~JsonFactory" resolve="JsonFactory" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="3PmL$ALj$iO" role="jymVt" />
-    <node concept="3clFb_" id="3PmL$ALjpfg" role="jymVt">
-      <property role="TrG5h" value="getWriter" />
-      <node concept="3clFbS" id="3PmL$ALjpfh" role="3clF47">
-        <node concept="3clFbF" id="3PmL$ALjH1l" role="3cqZAp">
-          <node concept="2OqwBi" id="2JDrrqk8TNf" role="3clFbG">
-            <node concept="37vLTw" id="2JDrrqjSQst" role="2Oq$k0">
-              <ref role="3cqZAo" node="3PmL$ALjDTO" resolve="mapper" />
-            </node>
-            <node concept="liA8E" id="2JDrrqk8Uvn" role="2OqNvi">
-              <ref role="37wK5l" to="7k8f:~ObjectMapper.writerWithDefaultPrettyPrinter()" resolve="writerWithDefaultPrettyPrinter" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3PmL$ALjpfl" role="1B3o_S" />
-      <node concept="3uibUv" id="3PmL$ALjpfm" role="3clF45">
-        <ref role="3uigEE" to="7k8f:~ObjectWriter" resolve="ObjectWriter" />
-      </node>
-      <node concept="37vLTG" id="3PmL$ALjDTO" role="3clF46">
-        <property role="TrG5h" value="mapper" />
-        <node concept="3uibUv" id="3PmL$ALjDTN" role="1tU5fm">
-          <ref role="3uigEE" to="7k8f:~ObjectMapper" resolve="ObjectMapper" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2JDrrqkBFoh" role="jymVt" />
-    <node concept="3clFb_" id="2JDrrqkBGIw" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="TrG5h" value="exportNumbersAsText" />
-      <node concept="3clFbS" id="2JDrrqkBGIz" role="3clF47" />
-      <node concept="3Tm1VV" id="2JDrrqkBFLa" role="1B3o_S" />
-      <node concept="10P_77" id="2JDrrqkBGIm" role="3clF45" />
-    </node>
-    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
-  </node>
   <node concept="312cEu" id="4qv99IrBkzE">
     <property role="TrG5h" value="JsonConfigHelper" />
     <node concept="2YIFZL" id="4qv99IrBnzk" role="jymVt">
@@ -1364,6 +1291,82 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4qv99IrBkzF" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="WieAE6FJqt">
+    <property role="TrG5h" value="json" />
+    <node concept="3uibUv" id="2Qbt$1tSq3A" role="luc8K">
+      <ref role="3uigEE" node="2Qbt$1tSnqh" resolve="JsonConfig" />
+    </node>
+  </node>
+  <node concept="312cEu" id="2Qbt$1tSnqh">
+    <property role="TrG5h" value="JsonConfig" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="2Qbt$1tSq4w" role="jymVt" />
+    <node concept="3clFb_" id="2Qbt$1tSwXM" role="jymVt">
+      <property role="TrG5h" value="getPriorityLevel" />
+      <node concept="10Oyi0" id="2Qbt$1tSx7l" role="3clF45" />
+      <node concept="3Tm1VV" id="2Qbt$1tSwXP" role="1B3o_S" />
+      <node concept="3clFbS" id="2Qbt$1tSwXQ" role="3clF47">
+        <node concept="3clFbF" id="3HwHK4HNSfC" role="3cqZAp">
+          <node concept="3cmrfG" id="3HwHK4HNSfB" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3HwHK4HNNrr" role="jymVt" />
+    <node concept="3clFb_" id="2JDrrqkBcJH" role="jymVt">
+      <property role="TrG5h" value="getFactory" />
+      <node concept="3clFbS" id="2JDrrqkBcJK" role="3clF47">
+        <node concept="3clFbF" id="2JDrrqkFsf1" role="3cqZAp">
+          <node concept="2ShNRf" id="2JDrrqkFseZ" role="3clFbG">
+            <node concept="1pGfFk" id="2JDrrqkFDDw" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="i4mf:~JsonFactory.&lt;init&gt;()" resolve="JsonFactory" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2JDrrqkBb2Y" role="1B3o_S" />
+      <node concept="3uibUv" id="2JDrrqkBcSV" role="3clF45">
+        <ref role="3uigEE" to="i4mf:~JsonFactory" resolve="JsonFactory" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3PmL$ALj$iO" role="jymVt" />
+    <node concept="3clFb_" id="3PmL$ALjpfg" role="jymVt">
+      <property role="TrG5h" value="getWriter" />
+      <node concept="3clFbS" id="3PmL$ALjpfh" role="3clF47">
+        <node concept="3clFbF" id="3PmL$ALjH1l" role="3cqZAp">
+          <node concept="2OqwBi" id="2JDrrqk8TNf" role="3clFbG">
+            <node concept="37vLTw" id="2JDrrqjSQst" role="2Oq$k0">
+              <ref role="3cqZAo" node="3PmL$ALjDTO" resolve="mapper" />
+            </node>
+            <node concept="liA8E" id="2JDrrqk8Uvn" role="2OqNvi">
+              <ref role="37wK5l" to="7k8f:~ObjectMapper.writerWithDefaultPrettyPrinter()" resolve="writerWithDefaultPrettyPrinter" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3PmL$ALjpfl" role="1B3o_S" />
+      <node concept="3uibUv" id="3PmL$ALjpfm" role="3clF45">
+        <ref role="3uigEE" to="7k8f:~ObjectWriter" resolve="ObjectWriter" />
+      </node>
+      <node concept="37vLTG" id="3PmL$ALjDTO" role="3clF46">
+        <property role="TrG5h" value="mapper" />
+        <node concept="3uibUv" id="3PmL$ALjDTN" role="1tU5fm">
+          <ref role="3uigEE" to="7k8f:~ObjectMapper" resolve="ObjectMapper" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2JDrrqkBFoh" role="jymVt" />
+    <node concept="3clFb_" id="2JDrrqkBGIw" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="exportNumbersAsText" />
+      <node concept="3clFbS" id="2JDrrqkBGIz" role="3clF47" />
+      <node concept="3Tm1VV" id="2JDrrqkBFLa" role="1B3o_S" />
+      <node concept="10P_77" id="2JDrrqkBGIm" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="2Qbt$1tSnqi" role="1B3o_S" />
   </node>
 </model>
 

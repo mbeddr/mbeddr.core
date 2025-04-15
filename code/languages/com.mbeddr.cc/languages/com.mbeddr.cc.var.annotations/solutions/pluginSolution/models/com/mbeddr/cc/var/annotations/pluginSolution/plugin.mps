@@ -33,6 +33,8 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -40,6 +42,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -151,6 +154,7 @@
   </node>
   <node concept="tC5Ba" id="3slbD0C6VXu">
     <property role="TrG5h" value="VarGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="3slbD0C6VXv" role="ftER_">
       <node concept="tCFHf" id="7TnSnE3b$DF" role="ftvYc">
         <ref role="tCJdB" node="7TnSnE3by8X" resolve="pleConciseActive" />
@@ -180,22 +184,8 @@
   <node concept="sE7Ow" id="7QrLfqVLYHe">
     <property role="TrG5h" value="pleDetailedActive" />
     <property role="2uzpH1" value="Detailed Product Line" />
-    <node concept="1DS2jV" id="7QrLfqVLYHf" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7QrLfqVLYHg" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7QrLfqVLYHh" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
-      <node concept="1oajcY" id="7QrLfqVLYHi" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7QrLfqVLYHj" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7QrLfqVLYHk" role="1B3o_S" />
-      <node concept="1oajcY" id="7QrLfqVLYHl" role="1oa70y" />
-      <node concept="3Tqbb2" id="7QrLfqVLYHm" role="1tU5fm" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7QrLfqVLYHn" role="tncku">
       <node concept="3clFbS" id="7QrLfqVLYHo" role="2VODD2" />
     </node>
@@ -225,22 +215,8 @@
   <node concept="sE7Ow" id="7TnSnE3by8X">
     <property role="TrG5h" value="pleConciseActive" />
     <property role="2uzpH1" value="Compact Product Line" />
-    <node concept="1DS2jV" id="7TnSnE3by8Y" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3by8Z" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7TnSnE3by90" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
-      <node concept="1oajcY" id="7TnSnE3by91" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3by92" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3by93" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3by94" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3by95" role="1tU5fm" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7TnSnE3by96" role="tncku">
       <node concept="3clFbS" id="7TnSnE3by97" role="2VODD2" />
     </node>
@@ -270,22 +246,8 @@
   <node concept="sE7Ow" id="7TnSnE3byA0">
     <property role="TrG5h" value="pleVariantActive" />
     <property role="2uzpH1" value="Selected Variant" />
-    <node concept="1DS2jV" id="7TnSnE3byA1" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3byA2" role="1oa70y" />
-    </node>
-    <node concept="1DS2jV" id="7TnSnE3byA3" role="1NuT2Z">
-      <property role="TrG5h" value="ctx" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
-      <node concept="1oajcY" id="7TnSnE3byA4" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3byA5" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3byA6" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3byA7" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3byA8" role="1tU5fm" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="7TnSnE3byA9" role="tncku">
       <node concept="3clFbS" id="7TnSnE3byAa" role="2VODD2" />
     </node>
@@ -315,21 +277,11 @@
   <node concept="sE7Ow" id="7TnSnE3bz3Y">
     <property role="TrG5h" value="pleConciseInctive" />
     <property role="2uzpH1" value="Compact Product Line" />
-    <node concept="1DS2jV" id="7TnSnE3bz3Z" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3bz40" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7TnSnE3bz41" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="7TnSnE3bz42" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3bz43" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3bz44" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3bz45" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3bz46" role="1tU5fm" />
     </node>
     <node concept="tnohg" id="7TnSnE3bz47" role="tncku">
       <node concept="3clFbS" id="7TnSnE3bz48" role="2VODD2">
@@ -383,21 +335,11 @@
   <node concept="sE7Ow" id="7TnSnE3bzHL">
     <property role="TrG5h" value="pleDetailedInctive" />
     <property role="2uzpH1" value="Detailed Product Line" />
-    <node concept="1DS2jV" id="7TnSnE3bzHM" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3bzHN" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7TnSnE3bzHO" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
       <node concept="1oajcY" id="7TnSnE3bzHP" role="1oa70y" />
-    </node>
-    <node concept="2S4$dB" id="7TnSnE3bzHQ" role="1NuT2Z">
-      <property role="TrG5h" value="currentNode" />
-      <node concept="3Tm6S6" id="7TnSnE3bzHR" role="1B3o_S" />
-      <node concept="1oajcY" id="7TnSnE3bzHS" role="1oa70y" />
-      <node concept="3Tqbb2" id="7TnSnE3bzHT" role="1tU5fm" />
     </node>
     <node concept="tnohg" id="7TnSnE3bzHU" role="tncku">
       <node concept="3clFbS" id="7TnSnE3bzHV" role="2VODD2">
@@ -451,11 +393,7 @@
   <node concept="sE7Ow" id="7TnSnE3b$c2">
     <property role="TrG5h" value="pleVariantInactive" />
     <property role="2uzpH1" value="Selected Variant" />
-    <node concept="1DS2jV" id="7TnSnE3b$c3" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
-      <node concept="1oajcY" id="7TnSnE3b$c4" role="1oa70y" />
-    </node>
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="7TnSnE3b$c5" role="1NuT2Z">
       <property role="TrG5h" value="ctx" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
