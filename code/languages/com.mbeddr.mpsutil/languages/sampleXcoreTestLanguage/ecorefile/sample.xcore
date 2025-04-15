@@ -1,5 +1,0 @@
-package p
-
-class Demo {
- String name
-}

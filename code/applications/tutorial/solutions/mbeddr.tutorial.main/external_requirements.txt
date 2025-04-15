@@ -1,7 +1,0 @@
-a1,This is requirement a1
-a2,This is requirement a2
-a3,This is requirement a3
-a4,This is requirement a4
-a5,This is requirement a5
-a6,This is requirement a6
-a7,This is requirement a7

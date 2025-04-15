@@ -1,1 +1,0 @@
-ant build-and-run-test

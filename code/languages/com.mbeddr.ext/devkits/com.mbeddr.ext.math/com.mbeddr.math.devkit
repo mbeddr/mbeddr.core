@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.math" uuid="bad61089-aa44-4252-8f72-63f3375f5e64">
-  <exported-language name="b574d547-b77e-4fed-9f60-c349c4410765(com.mbeddr.ext.math)" />
-  <extendedDevKits>
-    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
-  </extendedDevKits>
-</dev-kit>
-

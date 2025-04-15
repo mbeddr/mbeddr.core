@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="com.mbeddr.concurrency" uuid="aa72fbcf-7e79-465b-a4d9-4517ef4624ee">
-  <exported-language name="b879012d-402b-40e0-8df7-e6fa93b9b711(com.mbeddr.ext.concurrency)" />
-  <exported-language name="8c1a7e14-9520-42a4-a3a7-b15e523af156(com.mbeddr.ext.concurrency.pthreads)" />
-  <exported-language name="d6943f81-8340-4661-9d57-8fc1e2d23b36(com.mbeddr.ext.concurrency.plainC)" />
-</dev-kit>
-

@@ -1,1 +1,0 @@
-call ant build-and-run-test
