@@ -21,10 +21,8 @@
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="xyqd" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="h5a6" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.j2dviewer(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="tdww" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm.impl(MPS.IDEA/)" />
     <import index="n5wa" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:org.graphstream.ui.layout(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="upej" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="5svn" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model(com.mbeddr.mpsutil.graphstream.runtime/)" />
@@ -41,18 +39,16 @@
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="u99y" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.model.style(com.mbeddr.mpsutil.graphstream.runtime/)" />
     <import index="7vlr" ref="ab71436a-a7d1-4689-ac02-b5fde2ec681f/java:de.itemis.graphing.view.interaction(com.mbeddr.mpsutil.graphstream.runtime/)" />
-    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
-    <import index="lafm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.toolWindow(MPS.IDEA/)" />
-    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
     <import index="7noo" ref="r:81975c0c-72ff-4213-b65b-0baff111a818(com.mbeddr.mpsutil.graphstream.behavior)" implicit="true" />
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" implicit="true" />
-    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" implicit="true" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
       <concept id="8974276187400029891" name="jetbrains.mps.lang.resources.structure.IconExpression" flags="nn" index="1QGGTA">
         <child id="8974276187400029893" name="icon" index="1QGGTw" />
@@ -918,13 +914,28 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="CwWUtG4xVp" role="3cqZAp">
-          <node concept="2OqwBi" id="CwWUtG4y45" role="3clFbG">
-            <node concept="2WthIp" id="CwWUtG4xVn" role="2Oq$k0" />
-            <node concept="liA8E" id="CwWUtG4yoU" role="2OqNvi">
-              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-              <node concept="3clFbT" id="CwWUtG4ysl" role="37wK5m">
-                <property role="3clFbU" value="true" />
+        <node concept="3clFbF" id="5UujJsmqXz0" role="3cqZAp">
+          <node concept="2OqwBi" id="5UujJsmqYem" role="3clFbG">
+            <node concept="2YIFZM" id="5UujJsmqXET" role="2Oq$k0">
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+            </node>
+            <node concept="liA8E" id="5UujJsmqYP6" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+              <node concept="1bVj0M" id="5UujJsmqYX8" role="37wK5m">
+                <node concept="3clFbS" id="5UujJsmqYXb" role="1bW5cS">
+                  <node concept="3clFbF" id="CwWUtG4xVp" role="3cqZAp">
+                    <node concept="2OqwBi" id="CwWUtG4y45" role="3clFbG">
+                      <node concept="2WthIp" id="CwWUtG4xVn" role="2Oq$k0" />
+                      <node concept="liA8E" id="CwWUtG4yoU" role="2OqNvi">
+                        <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                        <node concept="3clFbT" id="CwWUtG4ysl" role="37wK5m">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1492,7 +1503,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="53G_t0Fb_PQ" role="1nVCmq">
-      <property role="1iqoE4" value="${module}/icons/graphstream.png" />
+      <property role="1iqoE4" value="${module}/icons/graphingTool.png" />
     </node>
     <node concept="2xpOpl" id="6yVMxJNjcaz" role="uR5co">
       <node concept="3clFbS" id="6yVMxJNjca$" role="2VODD2">
@@ -1538,7 +1549,7 @@
   </node>
   <node concept="sE7Ow" id="4ppn3W9rGUJ">
     <property role="TrG5h" value="FitView" />
-    <property role="2uzpH1" value="Fit View (Graph)" />
+    <property role="2uzpH1" value="Fit View" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="4ppn3W9rGUK" role="tncku">
@@ -1574,16 +1585,13 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="4ppn3W9rGUY" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/fitView.png" />
+    </node>
     <node concept="1DS2jV" id="4ppn3W9rGUZ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4ppn3W9rGV0" role="1oa70y" />
-    </node>
-    <node concept="1QGGSu" id="5XU4dCzRmLM" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRylx" role="3xaMm5">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$General.FitContent" resolve="FitContent" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
-      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="18ZQ$P85bbH">
@@ -1618,7 +1626,7 @@
   <node concept="sE7Ow" id="18ZQ$P82xbr">
     <property role="TrG5h" value="ZoomIn" />
     <property role="3GE5qa" value="toolbar" />
-    <property role="2uzpH1" value="Zoom In (Graph)" />
+    <property role="2uzpH1" value="Zoom in" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="18ZQ$P82xbs" role="tncku">
       <node concept="3clFbS" id="18ZQ$P82xbt" role="2VODD2">
@@ -1653,21 +1661,18 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="5BkFC2yhAJ4" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/zoomIn.png" />
+    </node>
     <node concept="1DS2jV" id="18ZQ$P85cQE" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="18ZQ$P85cQF" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRB$o" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRCLY" role="3xaMm5">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomIn" resolve="ZoomIn" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
-      </node>
-    </node>
   </node>
   <node concept="sE7Ow" id="2sPLpCfQji_">
     <property role="TrG5h" value="ZoomOut" />
-    <property role="2uzpH1" value="Zoom Out (Graph)" />
+    <property role="2uzpH1" value="Zoom out" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="2sPLpCfQjiA" role="tncku">
@@ -1703,16 +1708,13 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="2sPLpCfQjiP" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/zoomOut.png" />
+    </node>
     <node concept="1DS2jV" id="2sPLpCfQjiQ" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="2sPLpCfQjiR" role="1oa70y" />
-    </node>
-    <node concept="1QGGSu" id="5XU4dCzRCTr" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRErq" role="3xaMm5">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$General.ZoomOut" resolve="ZoomOut" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
-      </node>
     </node>
   </node>
   <node concept="tC5Ba" id="bhVSeGf9hE">
@@ -1791,8 +1793,8 @@
               <node concept="liA8E" id="4DzE9lEwD$9" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~Presentation.setIcon(javax.swing.Icon)" resolve="setIcon" />
                 <node concept="1QGGTA" id="4glh_Dcka$v" role="37wK5m">
-                  <node concept="1QGGSu" id="5XU4dCzR77z" role="1QGGTw">
-                    <property role="1iqoE4" value="${module}/icons/graphstream.png" />
+                  <node concept="1QGGSu" id="4glh_DckaC1" role="1QGGTw">
+                    <property role="1iqoE4" value="${module}/icons/graphingTool.png" />
                   </node>
                 </node>
               </node>
@@ -2823,7 +2825,7 @@
   </node>
   <node concept="sE7Ow" id="4iv9KfRBKWH">
     <property role="TrG5h" value="HistoryGoBack" />
-    <property role="2uzpH1" value="Go Back (Graph)" />
+    <property role="2uzpH1" value="Go Back" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="4iv9KfRBKWI" role="tncku">
@@ -2859,21 +2861,18 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="4iv9KfRBKWW" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/back.png" />
+    </node>
     <node concept="1DS2jV" id="4iv9KfRBKWX" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4iv9KfRBKWY" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzRz0M" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzR$F2" role="3xaMm5">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Back" resolve="Back" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
-      </node>
-    </node>
   </node>
   <node concept="sE7Ow" id="4iv9KfRBRSs">
     <property role="TrG5h" value="HistoryGoForward" />
-    <property role="2uzpH1" value="Go Forward (Graph)" />
+    <property role="2uzpH1" value="Go Forward" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="4iv9KfRBRSt" role="tncku">
@@ -2909,21 +2908,18 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="4iv9KfRBRSF" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/forward.png" />
+    </node>
     <node concept="1DS2jV" id="4iv9KfRBRSG" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4iv9KfRBRSH" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="5XU4dCzR$Mv" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzR_ZU" role="3xaMm5">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Forward" resolve="Forward" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
-      </node>
-    </node>
   </node>
   <node concept="sE7Ow" id="4iv9KfRC_SE">
     <property role="TrG5h" value="Refresh" />
-    <property role="2uzpH1" value="Refresh (Graph)" />
+    <property role="2uzpH1" value="Refresh" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="4iv9KfRC_SF" role="tncku">
@@ -2959,16 +2955,13 @@
         </node>
       </node>
     </node>
+    <node concept="1QGGSu" id="4iv9KfRC_ST" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/refresh.png" />
+    </node>
     <node concept="1DS2jV" id="4iv9KfRC_SU" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="4iv9KfRC_SV" role="1oa70y" />
-    </node>
-    <node concept="1QGGSu" id="5XU4dCzRA7n" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzRBmK" role="3xaMm5">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Refresh" resolve="Refresh" />
-        <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="50Rn4r1GKpK">
@@ -4625,7 +4618,7 @@
   </node>
   <node concept="sE7Ow" id="6x5UxX31b1p">
     <property role="TrG5h" value="RenderAsSVG" />
-    <property role="2uzpH1" value="Render As SVG (Graph)" />
+    <property role="2uzpH1" value="Render GraphViz SVG" />
     <property role="3GE5qa" value="toolbar" />
     <property role="1rBW0U" value="true" />
     <node concept="tnohg" id="6x5UxX31b1q" role="tncku">

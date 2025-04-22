@@ -2411,68 +2411,6 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="35JynOkF_BM" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.apache.batik" />
-        <property role="3LESm3" value="5ad14eca-28d7-4bce-b8e0-648908a49062" />
-        <node concept="398BVA" id="35JynOkFAzm" role="3LF7KH">
-          <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-          <node concept="2Ry0Ak" id="35JynOkFBaE" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="35JynOkFBLX" role="2Ry0An">
-              <property role="2Ry0Am" value="org.apache.batik" />
-              <node concept="2Ry0Ak" id="35JynOkFCGR" role="2Ry0An">
-                <property role="2Ry0Am" value="org.apache.batik.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="35JynOkFDbF" role="3bR37C">
-          <node concept="3bR9La" id="35JynOkFDbG" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="35JynOkFDbH" role="3bR37C">
-          <node concept="3bR9La" id="35JynOkFDbI" role="1SiIV1">
-            <ref role="3bR37D" node="11w71Xmfzpd" resolve="org.xml" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="Cwh4MJ26_F" role="3bR37C">
-          <node concept="1BurEX" id="Cwh4MJ26_G" role="1SiIV1">
-            <node concept="398BVA" id="Cwh4MJ26_u" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="Cwh4MJ26_v" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="Cwh4MJ26_w" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.apache.batik" />
-                  <node concept="2Ry0Ak" id="Cwh4MJ26_x" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="Cwh4MJ26_y" role="2Ry0An">
-                      <property role="2Ry0Am" value="batik-all.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="59cfP9ua2Of" role="3bR31x">
-          <node concept="3LXTmp" id="59cfP9ua2Og" role="3rtmxm">
-            <node concept="3qWCbU" id="59cfP9ua2Oh" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="59cfP9ua2Oi" role="3LXTmr">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="59cfP9ua2Oj" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="59cfP9ua2Ok" role="2Ry0An">
-                  <property role="2Ry0Am" value="org.apache.batik" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="2G$12M" id="3quoVcnL8hF" role="3989C9">
       <property role="TrG5h" value="group.plantuml" />
@@ -2581,7 +2519,7 @@
         <node concept="1SiIV0" id="35JynOkFDOf" role="3bR37C">
           <node concept="3bR9La" id="35JynOkFDOg" role="1SiIV1">
             <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="35JynOkF_BM" resolve="org.apache.batik" />
+            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
           </node>
         </node>
         <node concept="1SiIV0" id="1dlPbo9VJHT" role="3bR37C">
@@ -2712,6 +2650,9 @@
       </node>
       <node concept="m$_yC" id="64SK4bcJ_T5" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
+      </node>
+      <node concept="m$_yC" id="6o_zse_Xpjw" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6bkzxtWP$OT" resolve="de.itemis.stubs.batik" />
       </node>
     </node>
     <node concept="2G$12M" id="4VgGsUqP22z" role="3989C9">
