@@ -1617,25 +1617,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="Cwh4MJ2kNF" role="3bR37C">
-          <node concept="1BurEX" id="Cwh4MJ2kNG" role="1SiIV1">
-            <node concept="398BVA" id="Cwh4MJ2kNu" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="Cwh4MJ2kNv" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="Cwh4MJ2kNw" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
-                  <node concept="2Ry0Ak" id="Cwh4MJ2kNx" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="Cwh4MJ2kNy" role="2Ry0An">
-                      <property role="2Ry0Am" value="javax.inject.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="Cwh4MJ2kNU" role="3bR37C">
           <node concept="1BurEX" id="Cwh4MJ2kNV" role="1SiIV1">
             <node concept="398BVA" id="Cwh4MJ2kNH" role="1BurEY">

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.ecore.stubs" uuid="822a7acd-f487-45f5-bbb9-1ce595a1705f" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="guice.jar" />
-      <sourceRoot location="javax.inject.jar" />
       <sourceRoot location="org.eclipse.emf.common.jar" />
       <sourceRoot location="org.eclipse.emf.ecore.jar" />
       <sourceRoot location="org.eclipse.emf.ecore.xcore.jar" />
@@ -22,7 +21,6 @@
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/guice.jar" />
-      <library location="${module}/lib/javax.inject.jar" />
       <library location="${module}/lib/org.eclipse.emf.common.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.xcore.jar" />
