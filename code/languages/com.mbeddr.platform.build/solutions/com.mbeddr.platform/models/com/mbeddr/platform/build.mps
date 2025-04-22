@@ -1567,8 +1567,8 @@
               <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
               <node concept="2Ry0Ak" id="3xFG3bj5cMz" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3xFG3bj5cM$" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                <node concept="2Ry0Ak" id="2iYM2WqeC3v" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                 </node>
               </node>
             </node>
@@ -1579,7 +1579,7 @@
           <node concept="2Ry0Ak" id="vOGyTeKsd7" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="76lGx$NdSB7" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+              <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
               <node concept="2Ry0Ak" id="76lGx$NdUrk" role="2Ry0An">
                 <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs.msd" />
               </node>
@@ -1605,7 +1605,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kNg" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kNh" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kNi" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kNj" role="2Ry0An">
@@ -1624,7 +1624,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kNI" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kNJ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kNK" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kNL" role="2Ry0An">
@@ -1643,7 +1643,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kNX" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kNY" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kNZ" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kO0" role="2Ry0An">
@@ -1662,7 +1662,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kOc" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kOd" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kOe" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kOf" role="2Ry0An">
@@ -1681,7 +1681,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kOr" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kOs" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kOt" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kOu" role="2Ry0An">
@@ -1700,7 +1700,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kOE" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kOF" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kOG" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kOH" role="2Ry0An">
@@ -1719,7 +1719,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kOT" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kOU" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kOV" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kOW" role="2Ry0An">
@@ -1738,7 +1738,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kP8" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kP9" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kPa" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kPb" role="2Ry0An">
@@ -1757,7 +1757,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kPn" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kPo" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kPp" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kPq" role="2Ry0An">
@@ -1776,7 +1776,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kPA" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kPB" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kPC" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kPD" role="2Ry0An">
@@ -1795,7 +1795,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kPP" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kPQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kPR" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kPS" role="2Ry0An">
@@ -1814,7 +1814,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kQ4" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kQ5" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kQ6" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kQ7" role="2Ry0An">
@@ -1833,7 +1833,7 @@
               <node concept="2Ry0Ak" id="Cwh4MJ2kQj" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="Cwh4MJ2kQk" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="Cwh4MJ2kQl" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="Cwh4MJ2kQm" role="2Ry0An">
@@ -17454,7 +17454,7 @@
               <node concept="2Ry0Ak" id="vOGyTeNcTr" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="vOGyTeNcTy" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecoretransformationutils.stubs" />
+                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.ecore.stubs" />
                   <node concept="2Ry0Ak" id="vOGyTeNcTD" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
                   </node>
