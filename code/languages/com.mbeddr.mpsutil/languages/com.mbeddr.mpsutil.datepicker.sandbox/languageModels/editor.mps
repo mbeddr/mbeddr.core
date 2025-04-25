@@ -9,8 +9,8 @@
   <imports>
     <import index="zh2l" ref="r:dc5899a3-fac3-4abc-ae22-e716260dc024(com.mbeddr.mpsutil.datepicker.sandbox.structure)" />
     <import index="k0h" ref="r:5369d8b1-f259-457c-8b3f-061c696f3d80(com.mbeddr.mpsutil.datepicker.runtime.model)" />
+    <import index="yzu" ref="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea/java:com.michaelbaranov.microba.calendar(com.mbeddr.mpsutil.datepicker.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="yzu" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.michaelbaranov.microba.calendar(MPS.ThirdParty/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
