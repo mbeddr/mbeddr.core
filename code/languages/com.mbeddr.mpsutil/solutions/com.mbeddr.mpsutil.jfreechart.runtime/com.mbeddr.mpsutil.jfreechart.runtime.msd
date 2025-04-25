@@ -5,14 +5,12 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jcommon.jar" />
       <sourceRoot location="jfreechart.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/jcommon.jar" />
       <library location="${module}/lib/jfreechart.jar" />
     </facet>
   </facets>
