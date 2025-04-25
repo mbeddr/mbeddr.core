@@ -94,11 +94,15 @@
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
         <reference id="5610619299013057365" name="target" index="3ygNvj" />
+        <child id="6789562173791401562" name="selectors" index="1juEy9" />
       </concept>
       <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
         <reference id="841011766565753076" name="target" index="3_I8Xa" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="5248329904288051111" name="jetbrains.mps.build.structure.BuildFileExcludeSelector" flags="ng" index="3LWZYq">
+        <property id="5248329904288051112" name="pattern" index="3LWZYl" />
+      </concept>
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
       </concept>
@@ -15000,6 +15004,44 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="19CIvIhsHGS" role="3bR37C">
+          <node concept="1BurEX" id="19CIvIhsHGT" role="1SiIV1">
+            <node concept="398BVA" id="19CIvIhsHGF" role="1BurEY">
+              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
+              <node concept="2Ry0Ak" id="19CIvIhsHGG" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="19CIvIhsHGH" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet.libs" />
+                  <node concept="2Ry0Ak" id="19CIvIhsHGI" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="19CIvIhsHGJ" role="2Ry0An">
+                      <property role="2Ry0Am" value="commons-io.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="19CIvIhsHH7" role="3bR37C">
+          <node concept="1BurEX" id="19CIvIhsHH8" role="1SiIV1">
+            <node concept="398BVA" id="19CIvIhsHGU" role="1BurEY">
+              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
+              <node concept="2Ry0Ak" id="19CIvIhsHGV" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="19CIvIhsHGW" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet.libs" />
+                  <node concept="2Ry0Ak" id="19CIvIhsHGX" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="19CIvIhsHGY" role="2Ry0An">
+                      <property role="2Ry0Am" value="log4j-api.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4aKYPQyr67s" role="2G$12L">
         <property role="TrG5h" value="com.mbeddr.spreadsheet" />
@@ -16083,25 +16125,6 @@
         <node concept="1SiIV0" id="7uOgiTanCV" role="3bR37C">
           <node concept="3bR9La" id="7uOgiTanCW" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="Cwh4MJ0sWc" role="3bR37C">
-          <node concept="1BurEX" id="Cwh4MJ0sWd" role="1SiIV1">
-            <node concept="398BVA" id="Cwh4MJ0sVZ" role="1BurEY">
-              <ref role="398BVh" node="7uZw0yZ2_Lj" resolve="mpsutil" />
-              <node concept="2Ry0Ak" id="Cwh4MJ0sW0" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="Cwh4MJ0sW1" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.mpsutil.jfreechart.runtime" />
-                  <node concept="2Ry0Ak" id="Cwh4MJ0sW2" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="Cwh4MJ0sW3" role="2Ry0An">
-                      <property role="2Ry0Am" value="jcommon.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="1SiIV0" id="Cwh4MJ0sWr" role="3bR37C">
@@ -17381,6 +17404,9 @@
       </node>
       <node concept="3ygNvl" id="3ZcHznne7By" role="39821P">
         <ref role="3ygNvj" to="90a9:2Xjt3l56m3c" />
+        <node concept="3LWZYq" id="2kSjHhbioMr" role="1juEy9">
+          <property role="3LWZYl" value="sbom.json" />
+        </node>
       </node>
       <node concept="m$_wl" id="6ucYLjolhRD" role="39821P">
         <ref role="m_rDy" node="$bJ0jguQdg" resolve="com.mbeddr.platform" />
