@@ -36,15 +36,15 @@
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
-    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" implicit="true" />
-    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" implicit="true" />
-    <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" implicit="true" />
-    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" implicit="true" />
-    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" implicit="true" />
-    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" implicit="true" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
+    <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" />
+    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
+    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
+    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
+    <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -2124,7 +2124,7 @@
       <node concept="3Tm1VV" id="1X6acCMyThM" role="1B3o_S" />
       <node concept="3clFbS" id="1X6acCMyThN" role="3clF47">
         <node concept="XkiVB" id="1X6acCMyTw9" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+          <ref role="37wK5l" to="4anb:~SVGUserAgentGUIAdapter.&lt;init&gt;(java.awt.Component)" resolve="SVGUserAgentGUIAdapter" />
           <node concept="37vLTw" id="1X6acCMyTwa" role="37wK5m">
             <ref role="3cqZAo" node="1X6acCMyTw7" resolve="parent" />
           </node>
@@ -2423,7 +2423,7 @@
       <node concept="3Tm1VV" id="18ZQ$P81TV0" role="1B3o_S" />
       <node concept="3clFbS" id="18ZQ$P81TV1" role="3clF47">
         <node concept="XkiVB" id="18ZQ$P82jTw" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+          <ref role="37wK5l" to="er5d:~JSVGScrollPane.&lt;init&gt;(org.apache.batik.swing.JSVGCanvas)" resolve="JSVGScrollPane" />
           <node concept="37vLTw" id="18ZQ$P82jTx" role="37wK5m">
             <ref role="3cqZAo" node="18ZQ$P82hpD" resolve="c" />
           </node>
@@ -3196,7 +3196,7 @@
       <node concept="3Tm1VV" id="2sPLpCfQsmU" role="1B3o_S" />
       <node concept="3clFbS" id="2sPLpCfQsmV" role="3clF47">
         <node concept="XkiVB" id="2sPLpCfQ$L$" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+          <ref role="37wK5l" to="er5d:~JSVGCanvas.&lt;init&gt;(org.apache.batik.swing.svg.SVGUserAgent,boolean,boolean)" resolve="JSVGCanvas" />
           <node concept="37vLTw" id="2sPLpCfQ$L_" role="37wK5m">
             <ref role="3cqZAo" node="2sPLpCfQ$Ls" resolve="agent" />
           </node>
@@ -3216,9 +3216,9 @@
                 <ref role="2Oxat5" node="5gmO3pL7KrD" resolve="svgScale" />
               </node>
             </node>
-            <node concept="10M0yZ" id="5gmO3pL7Pil" role="37vLTx">
-              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
+            <node concept="10M0yZ" id="5SX2F57WPg7" role="37vLTx">
               <ref role="3cqZAo" to="ughz:~SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMAX" resolve="SVG_PRESERVEASPECTRATIO_XMIDYMAX" />
+              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
             </node>
           </node>
         </node>
@@ -3251,7 +3251,7 @@
                 <node concept="1Y3b0j" id="2sPLpCfXGJx" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="1Y3XeK" to="41rc:~AbstractPanInteractor" resolve="AbstractPanInteractor" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                  <ref role="37wK5l" to="41rc:~AbstractPanInteractor.&lt;init&gt;()" resolve="AbstractPanInteractor" />
                   <node concept="3Tm1VV" id="2sPLpCfXGJy" role="1B3o_S" />
                   <node concept="3clFb_" id="2sPLpCfXGJz" role="jymVt">
                     <property role="1EzhhJ" value="false" />
@@ -3462,7 +3462,7 @@
                 <node concept="1Y3b0j" id="2sPLpCfXG1R" role="YeSDq">
                   <property role="2bfB8j" value="true" />
                   <ref role="1Y3XeK" to="4anb:~GVTTreeBuilderAdapter" resolve="GVTTreeBuilderAdapter" />
-                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                  <ref role="37wK5l" to="4anb:~GVTTreeBuilderAdapter.&lt;init&gt;()" resolve="GVTTreeBuilderAdapter" />
                   <node concept="3Tm1VV" id="2sPLpCfXG1S" role="1B3o_S" />
                   <node concept="3clFb_" id="2sPLpCfXG1T" role="jymVt">
                     <property role="1EzhhJ" value="false" />
@@ -3972,7 +3972,9 @@
                                     <node concept="liA8E" id="2ag5hDwyi8Z" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                                     </node>
-                                    <node concept="Xjq3P" id="2ag5hDwyhjX" role="2Oq$k0" />
+                                    <node concept="Xjq3P" id="5SX2F57T1tc" role="2Oq$k0">
+                                      <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
+                                    </node>
                                   </node>
                                   <node concept="liA8E" id="2ag5hDwynHj" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
@@ -4436,7 +4438,7 @@
       <node concept="3Tm1VV" id="2sPLpCfQCUP" role="1B3o_S" />
       <node concept="3clFbS" id="2sPLpCfQCUQ" role="3clF47">
         <node concept="XkiVB" id="2sPLpCfQE3h" role="3cqZAp">
-          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+          <ref role="37wK5l" to="4anb:~SVGDocumentLoader.&lt;init&gt;(java.lang.String,org.apache.batik.bridge.DocumentLoader)" resolve="SVGDocumentLoader" />
           <node concept="37vLTw" id="2sPLpCfQE3n" role="37wK5m">
             <ref role="3cqZAo" node="2sPLpCfQE3i" resolve="url" />
           </node>
