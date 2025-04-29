@@ -4792,6 +4792,25 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6USpnrazy_y" role="jymVt" />
+    <node concept="3clFbW" id="6USpnrazAHn" role="jymVt">
+      <node concept="3cqZAl" id="6USpnrazAHp" role="3clF45" />
+      <node concept="3Tm1VV" id="6USpnrazAHq" role="1B3o_S" />
+      <node concept="3clFbS" id="6USpnrazAHr" role="3clF47">
+        <node concept="XkiVB" id="6USpnrazD2H" role="3cqZAp">
+          <ref role="37wK5l" to="7wpd:6USpnrawOgS" resolve="InstancePath" />
+          <node concept="37vLTw" id="6USpnrazE7s" role="37wK5m">
+            <ref role="3cqZAo" node="6USpnrazBHQ" resolve="orig" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6USpnrazBHQ" role="3clF46">
+        <property role="TrG5h" value="orig" />
+        <node concept="3uibUv" id="6USpnrazBHP" role="1tU5fm">
+          <ref role="3uigEE" node="3u1rFxeDiKa" resolve="NestedMemberPath" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="1dyouTTeo_U" role="jymVt" />
     <node concept="3Tm1VV" id="3u1rFxeDiKb" role="1B3o_S" />
     <node concept="3uibUv" id="3u1rFxeDjjc" role="1zkMxy">
@@ -4807,7 +4826,7 @@
       </node>
     </node>
     <node concept="3clFb_" id="1dyouTTekf7" role="jymVt">
-      <property role="TrG5h" value="copy" />
+      <property role="TrG5h" value="cloneObject" />
       <node concept="3Tmbuc" id="1dyouTTekf9" role="1B3o_S" />
       <node concept="3uibUv" id="1dyouTTepZF" role="3clF45">
         <ref role="3uigEE" node="3u1rFxeDiKa" resolve="NestedMemberPath" />
@@ -4817,10 +4836,8 @@
           <node concept="2ShNRf" id="1dyouTTeqkc" role="3clFbG">
             <node concept="1pGfFk" id="1dyouTTerWm" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" node="1dyouTTekMU" resolve="NestedMemberPath" />
-              <node concept="1rXfSq" id="1dyouTTesdK" role="37wK5m">
-                <ref role="37wK5l" to="7wpd:65ATjZHmLvj" resolve="root" />
-              </node>
+              <ref role="37wK5l" node="6USpnrazAHn" />
+              <node concept="Xjq3P" id="6USpnrazHQW" role="37wK5m" />
             </node>
           </node>
         </node>

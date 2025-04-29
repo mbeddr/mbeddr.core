@@ -248,6 +248,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1178893518978" name="jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" flags="nn" index="1VxSAg" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -5360,32 +5361,62 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="65ATjZHx9KI" role="jymVt" />
-    <node concept="3clFb_" id="65ATjZH$y4K" role="jymVt">
-      <property role="TrG5h" value="copy" />
-      <property role="1EzhhJ" value="true" />
-      <node concept="3clFbS" id="65ATjZH$y4M" role="3clF47" />
-      <node concept="3Tmbuc" id="65ATjZH$y4N" role="1B3o_S" />
-      <node concept="16syzq" id="6USpnraqqXx" role="3clF45">
-        <ref role="16sUi3" node="6USpnrapQRs" resolve="T" />
+    <node concept="2tJIrI" id="6USpnraxvw9" role="jymVt" />
+    <node concept="3clFbW" id="6USpnraxyXp" role="jymVt">
+      <node concept="3cqZAl" id="6USpnraxyXr" role="3clF45" />
+      <node concept="3Tm1VV" id="6USpnraxyXs" role="1B3o_S" />
+      <node concept="3clFbS" id="6USpnraxyXt" role="3clF47">
+        <node concept="1VxSAg" id="6USpnraxGW9" role="3cqZAp">
+          <ref role="37wK5l" node="65ATjZHljwS" />
+          <node concept="2OqwBi" id="6USpnraxI6q" role="37wK5m">
+            <node concept="37vLTw" id="6USpnraxHAJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="6USpnrax$Vq" resolve="orig" />
+            </node>
+            <node concept="2OwXpG" id="6USpnraxJ7Q" role="2OqNvi">
+              <ref role="2Oxat5" node="5LihCoMhIxN" resolve="segments" />
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="P$JXv" id="1dyouTTKxJN" role="lGtFl">
-        <node concept="TZ5HA" id="1dyouTTKxJO" role="TZ5H$">
-          <node concept="1dT_AC" id="1dyouTTKxJP" role="1dT_Ay">
-            <property role="1dT_AB" value="This is a factory method which has to create a specific object where all data" />
+      <node concept="37vLTG" id="6USpnrax$Vq" role="3clF46">
+        <property role="TrG5h" value="orig" />
+        <node concept="3uibUv" id="6USpnrax$Vp" role="1tU5fm">
+          <ref role="3uigEE" node="65ATjZHjTwL" resolve="ImmutablePath" />
+          <node concept="16syzq" id="6USpnrax_ha" role="11_B2D">
+            <ref role="16sUi3" node="65ATjZHjU$1" resolve="S" />
           </node>
-        </node>
-        <node concept="TZ5HA" id="1dyouTTKz2k" role="TZ5H$">
-          <node concept="1dT_AC" id="1dyouTTKz2l" role="1dT_Ay">
-            <property role="1dT_AB" value="except the segments is a deep copy from the &quot;this&quot; object." />
+          <node concept="16syzq" id="6USpnraxBjK" role="11_B2D">
+            <ref role="16sUi3" node="6USpnrapQRs" resolve="T" />
           </node>
-        </node>
-        <node concept="x79VA" id="1dyouTTKxJQ" role="3nqlJM">
-          <property role="x79VB" value="the deep copy" />
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="3u1rFxdD$fV" role="jymVt" />
+    <node concept="3clFb_" id="65ATjZHHdB4" role="jymVt">
+      <property role="TrG5h" value="cloneObject" />
+      <property role="1EzhhJ" value="true" />
+      <node concept="3clFbS" id="65ATjZHHdB7" role="3clF47" />
+      <node concept="3Tmbuc" id="3u1rFxep7aA" role="1B3o_S" />
+      <node concept="16syzq" id="6USpnraqxl1" role="3clF45">
+        <ref role="16sUi3" node="6USpnrapQRs" resolve="T" />
+      </node>
+      <node concept="P$JXv" id="6USpnraz8cH" role="lGtFl">
+        <node concept="TZ5HA" id="6USpnraz8cI" role="TZ5H$">
+          <node concept="1dT_AC" id="6USpnraz8cJ" role="1dT_Ay">
+            <property role="1dT_AB" value="This is a copy constructor for the application type T." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6USpnra$sLT" role="TZ5H$">
+          <node concept="1dT_AC" id="6USpnra$sLU" role="1dT_Ay">
+            <property role="1dT_AB" value="It would be more elegant to call a copy constructor for generic type T, but this is impossible." />
+          </node>
+        </node>
+        <node concept="x79VA" id="6USpnraz8cK" role="3nqlJM">
+          <property role="x79VB" value="the deep copy" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="65ATjZHCniu" role="jymVt" />
     <node concept="3clFb_" id="65ATjZHxexA" role="jymVt">
       <property role="TrG5h" value="lastSegment" />
       <node concept="3clFbS" id="65ATjZHxexD" role="3clF47">
@@ -5749,55 +5780,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6USpnrat57_" role="jymVt" />
-    <node concept="3clFb_" id="65ATjZHHdB4" role="jymVt">
-      <property role="TrG5h" value="cloneObject" />
-      <node concept="3clFbS" id="65ATjZHHdB7" role="3clF47">
-        <node concept="3cpWs8" id="65ATjZHHkP6" role="3cqZAp">
-          <node concept="3cpWsn" id="65ATjZHHkP7" role="3cpWs9">
-            <property role="TrG5h" value="result" />
-            <node concept="1rXfSq" id="65ATjZHHkP8" role="33vP2m">
-              <ref role="37wK5l" node="65ATjZH$y4K" resolve="copy" />
-            </node>
-            <node concept="16syzq" id="6USpnraqz3M" role="1tU5fm">
-              <ref role="16sUi3" node="6USpnrapQRs" resolve="T" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="65ATjZHHkPb" role="3cqZAp">
-          <node concept="2OqwBi" id="65ATjZHHkPc" role="3clFbG">
-            <node concept="2OqwBi" id="65ATjZHHkPd" role="2Oq$k0">
-              <node concept="2OwXpG" id="65ATjZHHkPf" role="2OqNvi">
-                <ref role="2Oxat5" node="5LihCoMhIxN" resolve="segments" />
-              </node>
-              <node concept="1rXfSq" id="6USpnrauc2H" role="2Oq$k0">
-                <ref role="37wK5l" node="6USpnratakR" resolve="upcast" />
-                <node concept="37vLTw" id="6USpnraudqn" role="37wK5m">
-                  <ref role="3cqZAo" node="65ATjZHHkP7" resolve="result" />
-                </node>
-              </node>
-            </node>
-            <node concept="X8dFx" id="65ATjZHHkPg" role="2OqNvi">
-              <node concept="2OqwBi" id="65ATjZHHkPh" role="25WWJ7">
-                <node concept="Xjq3P" id="65ATjZHHkPi" role="2Oq$k0" />
-                <node concept="2OwXpG" id="65ATjZHHkPj" role="2OqNvi">
-                  <ref role="2Oxat5" node="5LihCoMhIxN" resolve="segments" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="65ATjZHHwbM" role="3cqZAp">
-          <node concept="37vLTw" id="65ATjZHHwbK" role="3clFbG">
-            <ref role="3cqZAo" node="65ATjZHHkP7" resolve="result" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="3u1rFxep7aA" role="1B3o_S" />
-      <node concept="16syzq" id="6USpnraqxl1" role="3clF45">
-        <ref role="16sUi3" node="6USpnrapQRs" resolve="T" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="65ATjZHCniu" role="jymVt" />
     <node concept="3clFb_" id="6USpnratakR" role="jymVt">
       <property role="TrG5h" value="upcast" />
       <node concept="3clFbS" id="6USpnratakU" role="3clF47">
@@ -6033,6 +6015,12 @@
           <ref role="zr_51" node="65ATjZHjU$1" resolve="S" />
         </node>
       </node>
+      <node concept="TUZQ0" id="6USpnra$Spw" role="3nqlJM">
+        <property role="TUZQ4" value="the actual application type which extends ImmutablePath&lt;&gt;" />
+        <node concept="zr_56" id="6USpnra$ThP" role="zr_5Q">
+          <ref role="zr_51" node="6USpnrapQRs" resolve="T" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="65ATjZHjU$h">
@@ -6140,6 +6128,52 @@
         <node concept="A3Dl8" id="65ATjZHlpTr" role="1tU5fm">
           <node concept="16syzq" id="65ATjZHlpXE" role="A3Ik2">
             <ref role="16sUi3" node="65ATjZHjU$J" resolve="T" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6USpnrawGwa" role="jymVt" />
+    <node concept="3clFbW" id="6USpnrawOgS" role="jymVt">
+      <node concept="3cqZAl" id="6USpnrawOgU" role="3clF45" />
+      <node concept="3Tm1VV" id="6USpnrawOgV" role="1B3o_S" />
+      <node concept="3clFbS" id="6USpnrawOgW" role="3clF47">
+        <node concept="XkiVB" id="6USpnraxUnX" role="3cqZAp">
+          <ref role="37wK5l" node="6USpnraxyXp" />
+          <node concept="37vLTw" id="6USpnraxYdf" role="37wK5m">
+            <ref role="3cqZAo" node="6USpnrawVwS" resolve="orig" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6USpnrax13L" role="3cqZAp">
+          <node concept="37vLTI" id="6USpnrax6sa" role="3clFbG">
+            <node concept="2OqwBi" id="6USpnrax9Ho" role="37vLTx">
+              <node concept="37vLTw" id="6USpnrax97f" role="2Oq$k0">
+                <ref role="3cqZAo" node="6USpnrawVwS" resolve="orig" />
+              </node>
+              <node concept="2OwXpG" id="6USpnraxc8N" role="2OqNvi">
+                <ref role="2Oxat5" node="65ATjZHlp_8" resolve="root" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6USpnrax1IM" role="37vLTJ">
+              <node concept="Xjq3P" id="6USpnrax13K" role="2Oq$k0" />
+              <node concept="2OwXpG" id="6USpnrax4Aj" role="2OqNvi">
+                <ref role="2Oxat5" node="65ATjZHlp_8" resolve="root" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6USpnrawVwS" role="3clF46">
+        <property role="TrG5h" value="orig" />
+        <node concept="3uibUv" id="6USpnrawVwR" role="1tU5fm">
+          <ref role="3uigEE" node="65ATjZHjU$h" resolve="InstancePath" />
+          <node concept="16syzq" id="6USpnraxjyF" role="11_B2D">
+            <ref role="16sUi3" node="65ATjZHlpYF" resolve="D" />
+          </node>
+          <node concept="16syzq" id="6USpnraxopa" role="11_B2D">
+            <ref role="16sUi3" node="65ATjZHjU$J" resolve="S" />
+          </node>
+          <node concept="16syzq" id="6USpnraxtem" role="11_B2D">
+            <ref role="16sUi3" node="6USpnrapFVg" resolve="T" />
           </node>
         </node>
       </node>
@@ -7229,6 +7263,12 @@
         <property role="TUZQ4" value="the type of the path's segments (the &quot;segment&quot; type)" />
         <node concept="zr_56" id="1dyouTTKIS0" role="zr_5Q">
           <ref role="zr_51" node="65ATjZHjU$J" resolve="S" />
+        </node>
+      </node>
+      <node concept="TUZQ0" id="6USpnra_3ot" role="3nqlJM">
+        <property role="TUZQ4" value="the actual application type which extends InstancePath&lt;&gt;" />
+        <node concept="zr_56" id="6USpnra_3ou" role="zr_5Q">
+          <ref role="zr_51" node="6USpnrapFVg" resolve="T" />
         </node>
       </node>
     </node>
