@@ -11,9 +11,7 @@ configurations {
 }
 
 dependencies {
-    // For a release version of MPS, use this dependency:
-    //mps "com.jetbrains:mps:$mpsBuild"
-    mps "com.jetbrains.mps:mps-prerelease:$mpsBuild"
+    mps "com.jetbrains:mps:$mpsBuild"
 }
 
 // path variables
