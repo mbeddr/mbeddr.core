@@ -2219,6 +2219,11 @@
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6XtbTQ047N9" role="3bR37C">
+          <node concept="3bR9La" id="6XtbTQ047Na" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2yMzZpANLwn" role="2G$12L">
         <property role="BnDLt" value="true" />

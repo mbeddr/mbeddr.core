@@ -5440,6 +5440,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6XtbTQ046YU" role="3bR37C">
+          <node concept="3bR9La" id="6XtbTQ046YV" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnRjZi" role="3989C9">
