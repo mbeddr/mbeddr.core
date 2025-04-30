@@ -15,6 +15,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.doc
 
+### Changed
+
 - 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
   to solution `com.mbeddr.spreadsheet.libs`.
 - During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
@@ -25,6 +27,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
+
+## com.mbeddr.mpsutil.common
+
+### Added
+
+- Base classes for representing paths in instance trees have been added. This is a common use case, e.g. for implementing component architecture DSLs (see `InstancePath<>`).
 
 ## com.mbeddr:platform languages
 
