@@ -58,6 +58,7 @@ def bundledDeps = [
             exclude module: 'graphics2d'
             exclude module: 'commons-math3'
             exclude module: 'SparseBitSet'
+            exclude module: 'batik-all'
         }),
         new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1', 'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
             exclude module: 'stax-api'
