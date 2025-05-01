@@ -297,6 +297,9 @@
       <node concept="m$_yC" id="5ZsrU$Jfnm_" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI8WTaQ" resolve="com.mbeddr.mpsutil.smodule" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSnDSy" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
       <node concept="m$_yC" id="64SK4bcNSkG" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
@@ -309,6 +312,9 @@
       </node>
       <node concept="m$_yC" id="4wBLq3Y5yV5" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2OJNL7ElZsF" resolve="de.q60.mps.collections.libs" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnAYo" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
       </node>
       <node concept="m$_yC" id="2DDNE2eaR2F" role="m$_yJ">
         <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
@@ -557,6 +563,21 @@
       <node concept="m$_yC" id="6rBfBe1WsaJ" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSnEHL" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnF5a" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnFtC" role="m$_yJ">
+        <ref role="m$_y1" node="3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnIxk" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6860Y5_ZW8e" resolve="de.itemis.mps.utils" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnO_X" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
+      </node>
       <node concept="m$_yC" id="6rBfBe1Wuqz" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
       </node>
@@ -722,6 +743,9 @@
       </node>
       <node concept="m$_yC" id="7VbYB1xE_k8" role="m$_yJ">
         <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnxih" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
       </node>
       <node concept="m$_yC" id="64SK4bcNIGW" role="m$_yJ">
         <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
@@ -910,6 +934,12 @@
       <node concept="m$_yC" id="3mZVitHC1kc" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSnScv" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnSzS" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
     </node>
     <node concept="m$_wf" id="6hpTCZQe7wE" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.placeholderTextList" />
@@ -971,6 +1001,9 @@
       <node concept="m$_yC" id="5fGcQI94m18" role="m$_yJ">
         <ref role="m$_y1" node="5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSnwrX" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
       <node concept="3_J27D" id="5fGcQI93Tz7" role="m_cZH">
         <node concept="3Mxwew" id="5fGcQI93Tz8" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.wizardwizard" />
@@ -1024,6 +1057,9 @@
       <node concept="m$_yC" id="1xlcIshd7bT" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSnvQI" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
+      </node>
     </node>
     <node concept="m$_wf" id="5fGcQI94fMR" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.common" />
@@ -1045,6 +1081,12 @@
       </node>
       <node concept="m$_yC" id="5fGcQI94fMY" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnyzc" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSnTcx" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
       <node concept="3_J27D" id="5fGcQI94fMZ" role="m_cZH">
         <node concept="3Mxwew" id="5fGcQI94fN0" role="3MwsjC">
@@ -1295,6 +1337,15 @@
       <node concept="m$_yC" id="ZhAg9Tj4d0" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSo5Z8" role="m$_yJ">
+        <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSo9cG" role="m$_yJ">
+        <ref role="m$_y1" node="59sJF$9ugx_" resolve="com.mbeddr.mpsutil.spreferences" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSodlM" role="m$_yJ">
+        <ref role="m$_y1" node="nnCEsSfXF5" resolve="com.mbeddr.mpsutil.refactoring" />
+      </node>
       <node concept="m$_yC" id="26FYVWAjM5F" role="m$_yJ">
         <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
       </node>
@@ -1428,6 +1479,9 @@
       <node concept="m$_yC" id="64SK4bcNM6e" role="m$_yJ">
         <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSozeS" role="m$_yJ">
+        <ref role="m$_y1" node="NMVW79yitG" resolve="com.mbeddr.mpsutil.userstyles" />
+      </node>
       <node concept="3_J27D" id="7tNo_gxoK8o" role="m_cZH">
         <node concept="3Mxwew" id="7tNo_gxoK8p" role="3MwsjC">
           <property role="3MwjfP" value="mbeddr.doc" />
@@ -1502,6 +1556,9 @@
       <node concept="m$_yC" id="59sJF$9uyDy" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSog$r" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
+      </node>
       <node concept="m$f5U" id="59sJF$9uiZw" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnJkAK" resolve="group.spreferences" />
       </node>
@@ -1541,8 +1598,17 @@
       <node concept="m$_yC" id="NlXl$eqRcj" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSojMJ" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoh08" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7szUFELHeHf" resolve="de.itemis.mps.editor.widgets" />
+      </node>
       <node concept="m$_yC" id="NlXl$eqXt4" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoyEz" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
       </node>
       <node concept="m$f5U" id="NlXl$eqByF" role="m$_yh">
         <ref role="m$f5T" node="3quoVcnJTPD" resolve="group.margincell_review" />
@@ -3304,6 +3370,9 @@
       </node>
       <node concept="m$_yC" id="3VIBP3dq_3y" role="m$_yJ">
         <ref role="m$_y1" node="Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSokIM" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
       </node>
     </node>
     <node concept="2G$12M" id="3quoVcnR1gA" role="3989C9">
@@ -7671,6 +7740,9 @@
       </node>
       <node concept="m$_yC" id="nnCEsShyGw" role="m$_yJ">
         <ref role="m$_y1" node="6rBfBe1XaAA" resolve="com.mbeddr.mpsutil.contextactions" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSom8w" role="m$_yJ">
+        <ref role="m$_y1" node="64SK4bcNyQW" resolve="com.mbeddr.mpsutil.editorsupport" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtx45" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
@@ -16587,6 +16659,9 @@
       <node concept="m$_yC" id="7yAshxDtwsn" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSov7K" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
+      </node>
     </node>
     <node concept="2G$12M" id="3Gj8GGYjpUG" role="3989C9">
       <property role="TrG5h" value="group.nodes_tracing" />
@@ -17127,6 +17202,15 @@
       </node>
       <node concept="m$_yC" id="75qFqB425iF" role="m$_yJ">
         <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSorv$" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSorPS" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSovBL" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2NyZxKpUXYJ" resolve="de.itemis.mps.blutil" />
       </node>
       <node concept="3_J27D" id="NMVW79y25C" role="m_cZH">
         <node concept="3Mxwew" id="NMVW79y25D" role="3MwsjC">
@@ -18470,6 +18554,12 @@
       <node concept="m$_yC" id="4JmsWjEr2u_" role="m$_yJ">
         <ref role="m$_y1" to="90a9:77YfcvOMg42" resolve="de.itemis.mps.compare" />
       </node>
+      <node concept="m$_yC" id="5I3PmkSop8X" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoplJ" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:2Xjt3l57iTJ" resolve="de.slisson.mps.hacks" />
+      </node>
     </node>
     <node concept="m$_wf" id="2hNr1jFzOYG" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.mpsutil.checkinHandler" />
@@ -18484,6 +18574,21 @@
       </node>
       <node concept="m$_yC" id="4LY$CIohKH$" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:1diEraJ0skp" resolve="jetbrains.mps.kotlin" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoAjD" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4wxeloVufXr" resolve="jetbrains.mps.git4idea.stubs" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoAHc" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:RJsmGEieyQ" resolve="jetbrains.mps.vcs" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoDQh" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6SVXTgIe8wD" resolve="de.itemis.mps.celllayout" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoGKr" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6Y0V2RJk3uw" resolve="de.itemis.mps.selection" />
+      </node>
+      <node concept="m$_yC" id="5I3PmkSoJQh" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:31bAEZ0srEa" resolve="de.slisson.mps.editor.multiline" />
       </node>
       <node concept="3_J27D" id="2hNr1jFzOYI" role="m$_yQ">
         <node concept="3Mxwew" id="2hNr1jFzOYJ" role="3MwsjC">
