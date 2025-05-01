@@ -496,7 +496,7 @@
         <ref role="m$f5T" node="3quoVcnKz3m" resolve="group.jung" />
       </node>
       <node concept="m$_yC" id="64SK4bcI_br" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+        <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
       <node concept="2iUeEo" id="7yAshxDtoql" role="2iVFfd">
         <property role="2iUeEt" value="mbeddr" />
