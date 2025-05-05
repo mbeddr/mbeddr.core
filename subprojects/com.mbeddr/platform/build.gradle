@@ -55,18 +55,16 @@ def bundledDeps = [
             exclude module: 'commons-compress'
             exclude group: 'org.bouncycastle'
             exclude module: 'xmlsec'
-            exclude module: 'batik-all'
             exclude module: 'graphics2d'
             exclude module: 'commons-math3'
             exclude module: 'SparseBitSet'
+            exclude module: 'batik-all'
         }),
         new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1', 'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
             exclude module: 'stax-api'
         }),
         new BundledDep('jfreechart', ['org.jfree:jfreechart:1.0.19'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
         new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2023.13'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
-        new BundledDep('batik', ['org.apache.xmlgraphics:batik-all:1.12'], 'com.mbeddr.mpsutil/solutions/org.apache.batik'),
-        new BundledDep('xml', ['xerces:xercesImpl:2.12.2', 'xalan:serializer:2.7.3', 'xml-resolver:xml-resolver:1.2', 'xml-apis:xml-apis-ext:1.3.04'], 'com.mbeddr.mpsutil/solutions/org.xml'),
         new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
         new BundledDep('mockito', ['org.mockito:mockito-core:2.23.4'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
         new BundledDep('xtext', ['org.eclipse.xtext:org.eclipse.xtext.xbase:2.11.0',

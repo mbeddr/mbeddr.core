@@ -36,15 +36,15 @@
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="ughz" ref="96569509-ecfc-4944-b6c9-075faf02fe2c/java:org.w3c.dom.svg(org.xml/)" />
-    <import index="dnq3" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.dom.util(org.apache.batik/)" />
-    <import index="ugom" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.bridge(org.apache.batik/)" />
-    <import index="e373" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.util(org.apache.batik/)" />
-    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
-    <import index="4anb" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" />
-    <import index="41rc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.gvt(org.apache.batik/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
+    <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" />
+    <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
+    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
+    <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
+    <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -3191,9 +3191,6 @@
     <node concept="2tJIrI" id="5gmO3pL7WRn" role="jymVt" />
     <node concept="2tJIrI" id="5gmO3pL7I9J" role="jymVt" />
     <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
-    <node concept="3uibUv" id="2sPLpCfQ$Lm" role="1zkMxy">
-      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
-    </node>
     <node concept="3clFbW" id="2sPLpCfQsmS" role="jymVt">
       <node concept="3cqZAl" id="2sPLpCfQsmT" role="3clF45" />
       <node concept="3Tm1VV" id="2sPLpCfQsmU" role="1B3o_S" />
@@ -3219,9 +3216,9 @@
                 <ref role="2Oxat5" node="5gmO3pL7KrD" resolve="svgScale" />
               </node>
             </node>
-            <node concept="10M0yZ" id="5gmO3pL7Pil" role="37vLTx">
-              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
+            <node concept="10M0yZ" id="5SX2F57WPg7" role="37vLTx">
               <ref role="3cqZAo" to="ughz:~SVGPreserveAspectRatio.SVG_PRESERVEASPECTRATIO_XMIDYMAX" resolve="SVG_PRESERVEASPECTRATIO_XMIDYMAX" />
+              <ref role="1PxDUh" to="ughz:~SVGPreserveAspectRatio" resolve="SVGPreserveAspectRatio" />
             </node>
           </node>
         </node>
@@ -3972,9 +3969,11 @@
                                 <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
                                 <node concept="2OqwBi" id="2ag5hDwyiTV" role="37wK5m">
                                   <node concept="2OqwBi" id="2ag5hDwyhv2" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="2ag5hDwyhjX" role="2Oq$k0" />
                                     <node concept="liA8E" id="2ag5hDwyi8Z" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                                    </node>
+                                    <node concept="Xjq3P" id="5SX2F57T1tc" role="2Oq$k0">
+                                      <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2ag5hDwynHj" role="2OqNvi">
@@ -4166,6 +4165,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
+      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
     </node>
   </node>
   <node concept="312cEu" id="2sPLpCfQCUL">
@@ -4559,9 +4561,6 @@
                   </node>
                 </node>
                 <node concept="3clFbJ" id="2sPLpCfQE4P" role="3cqZAp">
-                  <node concept="3P9mCS" id="2sPLpCfQE4Q" role="3clFbw">
-                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
-                  </node>
                   <node concept="3clFbS" id="2sPLpCfQE4R" role="3clFbx">
                     <node concept="3clFbF" id="2sPLpCfQE4S" role="3cqZAp">
                       <node concept="3P9mCS" id="2sPLpCfQE4T" role="3clFbG">
@@ -4575,6 +4574,9 @@
                       </node>
                     </node>
                     <node concept="3cpWs6" id="2sPLpCfQE4W" role="3cqZAp" />
+                  </node>
+                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
+                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                   </node>
                 </node>
                 <node concept="3clFbH" id="2sPLpCfQJty" role="3cqZAp" />
@@ -4693,9 +4695,6 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2sPLpCfQE56" role="3cqZAp">
-                      <node concept="3P9mCS" id="2sPLpCfQE57" role="3clFbw">
-                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
-                      </node>
                       <node concept="3clFbS" id="2sPLpCfQE58" role="3clFbx">
                         <node concept="3clFbF" id="2sPLpCfQE59" role="3cqZAp">
                           <node concept="3P9mCS" id="2sPLpCfQE5a" role="3clFbG">
@@ -4709,6 +4708,9 @@
                           </node>
                         </node>
                         <node concept="3cpWs6" id="2sPLpCfQE5d" role="3cqZAp" />
+                      </node>
+                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
+                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                       </node>
                     </node>
                     <node concept="3clFbF" id="2sPLpCfQE5e" role="3cqZAp">
