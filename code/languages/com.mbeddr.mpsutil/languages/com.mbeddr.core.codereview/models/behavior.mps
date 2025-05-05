@@ -19,7 +19,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="bqxk" ref="r:c93f2be3-1de1-4106-85fd-653ed63baac3(com.mbeddr.core.base.enumMigration)" />
+    <import index="5q19" ref="r:e9a6ad85-6629-40c9-a75a-47f5a31d40b4(com.mbeddr.core.codereview.migration)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1849,9 +1849,9 @@
                   <node concept="liA8E" id="6Re_Us$1zDR" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
                   </node>
-                  <node concept="2YIFZM" id="13p6s1wth$o" role="2Oq$k0">
-                    <ref role="37wK5l" to="bqxk:13p6s1wtcJy" resolve="value" />
-                    <ref role="1Pybhc" to="bqxk:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
+                  <node concept="2YIFZM" id="43oNdHM2k$c" role="2Oq$k0">
+                    <ref role="37wK5l" to="5q19:13p6s1wtcJy" resolve="value" />
+                    <ref role="1Pybhc" to="5q19:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
                     <node concept="2OqwBi" id="6Re_Us$1zDO" role="37wK5m">
                       <node concept="37vLTw" id="6Re_Us$1zDP" role="2Oq$k0">
                         <ref role="3cqZAo" node="6Re_Us$1zDF" resolve="d" />
@@ -1916,9 +1916,9 @@
                   <node concept="liA8E" id="6Re_UszXzs4" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
                   </node>
-                  <node concept="2YIFZM" id="13p6s1wth$p" role="2Oq$k0">
-                    <ref role="37wK5l" to="bqxk:13p6s1wtcJy" resolve="value" />
-                    <ref role="1Pybhc" to="bqxk:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
+                  <node concept="2YIFZM" id="43oNdHM2k$d" role="2Oq$k0">
+                    <ref role="37wK5l" to="5q19:13p6s1wtcJy" resolve="value" />
+                    <ref role="1Pybhc" to="5q19:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
                     <node concept="2OqwBi" id="6Re_UszXx1p" role="37wK5m">
                       <node concept="37vLTw" id="6Re_UszXwYy" role="2Oq$k0">
                         <ref role="3cqZAo" node="6Re_UszXwJF" resolve="d" />
@@ -1983,9 +1983,9 @@
                   <node concept="liA8E" id="6Re_Us$1$cw" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
                   </node>
-                  <node concept="2YIFZM" id="13p6s1wth$q" role="2Oq$k0">
-                    <ref role="37wK5l" to="bqxk:13p6s1wtcJy" resolve="value" />
-                    <ref role="1Pybhc" to="bqxk:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
+                  <node concept="2YIFZM" id="43oNdHM2k$e" role="2Oq$k0">
+                    <ref role="37wK5l" to="5q19:13p6s1wtcJy" resolve="value" />
+                    <ref role="1Pybhc" to="5q19:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
                     <node concept="2OqwBi" id="6Re_Us$1$ct" role="37wK5m">
                       <node concept="37vLTw" id="6Re_Us$1$cu" role="2Oq$k0">
                         <ref role="3cqZAo" node="6Re_Us$1$ck" resolve="d" />
@@ -2167,9 +2167,9 @@
                     <ref role="3TsBF5" to="w8vz:13p6s1wtfz0" resolve="codeState" />
                   </node>
                 </node>
-                <node concept="2YIFZM" id="13p6s1wth$t" role="37vLTx">
-                  <ref role="37wK5l" to="bqxk:13p6s1wtcJF" resolve="fromValue" />
-                  <ref role="1Pybhc" to="bqxk:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
+                <node concept="2YIFZM" id="43oNdHM2k$f" role="37vLTx">
+                  <ref role="37wK5l" to="5q19:13p6s1wtcJF" resolve="fromValue" />
+                  <ref role="1Pybhc" to="5q19:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
                   <node concept="Xl_RD" id="1tDstbgKAyF" role="37wK5m">
                     <property role="Xl_RC" value="raw" />
                   </node>

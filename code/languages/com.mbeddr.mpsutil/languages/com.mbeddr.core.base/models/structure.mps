@@ -1722,24 +1722,6 @@
       <property role="3tVfz5" value="806361095878057902" />
     </node>
   </node>
-  <node concept="25R3W" id="13p6s1wtcJe">
-    <property role="TrG5h" value="CodeState" />
-    <property role="3GE5qa" value="codereview" />
-    <property role="3F6X1D" value="1687004685686364696" />
-    <ref role="1H5jkz" node="13p6s1wtcJg" resolve="raw" />
-    <node concept="25R33" id="13p6s1wtcJg" role="25R1y">
-      <property role="TrG5h" value="raw" />
-      <property role="3tVfz5" value="1687004685686364697" />
-    </node>
-    <node concept="25R33" id="13p6s1wtcJh" role="25R1y">
-      <property role="TrG5h" value="ready" />
-      <property role="3tVfz5" value="1687004685686364698" />
-    </node>
-    <node concept="25R33" id="13p6s1wtcJi" role="25R1y">
-      <property role="TrG5h" value="reviewed" />
-      <property role="3tVfz5" value="1687004685686364703" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4PRpvcZBC0F">
     <property role="EcuMT" value="5582042358567829547" />
     <property role="3GE5qa" value="assessment.scope" />

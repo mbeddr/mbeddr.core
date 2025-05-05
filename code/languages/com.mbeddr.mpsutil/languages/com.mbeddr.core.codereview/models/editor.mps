@@ -21,7 +21,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="hhch" ref="r:6c7111c6-ffee-4eb3-88d6-17dba9e005bf(com.mbeddr.core.codereview.behavior)" />
-    <import index="bqxk" ref="r:c93f2be3-1de1-4106-85fd-653ed63baac3(com.mbeddr.core.base.enumMigration)" />
+    <import index="5q19" ref="r:e9a6ad85-6629-40c9-a75a-47f5a31d40b4(com.mbeddr.core.codereview.migration)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -471,9 +471,9 @@
                 <node concept="3TQlhw" id="5SHUFrIjbtd" role="1Hhtcw">
                   <node concept="3clFbS" id="5SHUFrIjbtf" role="2VODD2">
                     <node concept="3clFbF" id="5SHUFrIji1g" role="3cqZAp">
-                      <node concept="2YIFZM" id="13p6s1wth$w" role="3clFbG">
-                        <ref role="37wK5l" to="bqxk:13p6s1wtcJy" resolve="value" />
-                        <ref role="1Pybhc" to="bqxk:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
+                      <node concept="2YIFZM" id="43oNdHM2k$b" role="3clFbG">
+                        <ref role="37wK5l" to="5q19:13p6s1wtcJy" resolve="value" />
+                        <ref role="1Pybhc" to="5q19:13p6s1wtcJj" resolve="CodeState_MigrationUtils" />
                         <node concept="2OqwBi" id="5SHUFrIji5O" role="37wK5m">
                           <node concept="pncrf" id="5SHUFrIji1f" role="2Oq$k0" />
                           <node concept="3TrcHB" id="5SHUFrIjiIZ" role="2OqNvi">
