@@ -36547,5 +36547,76 @@
       <ref role="3uigEE" to="slm6:5TUCQr2ybBO" resolve="HasMigrationScriptReference" />
     </node>
   </node>
+  <node concept="W$Crc" id="7g6ZA0NuNu4">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="3" />
+    <property role="TrG5h" value="Update References: CodeState-&gt;CodeState" />
+    <node concept="1w76tK" id="7g6ZA0NuNu5" role="1w76sc">
+      <node concept="1w76tN" id="7g6ZA0NuNu6" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="7g6ZA0NuNu7" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="7g6ZA0NuNu8" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7g6ZA0NuNua" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7g6ZA0NuNtW" role="hSBgu">
+        <property role="2pBcoG" value="1214029888595741646" />
+        <property role="2pBcow" value="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+        <property role="2pBc3U" value="CodeState" />
+      </node>
+      <node concept="2pBcaW" id="7g6ZA0NuNu9" role="hSBgs">
+        <property role="2pBcoG" value="1214029888595741646" />
+        <property role="2pBcow" value="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)" />
+        <property role="2pBc3U" value="CodeState" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7g6ZA0NuNuc" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7g6ZA0NuNtX" role="hSBgu">
+        <property role="2pBcoG" value="1214029888595741648" />
+        <property role="2pBcow" value="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+        <property role="2pBc3U" value="raw" />
+      </node>
+      <node concept="2pBcaW" id="7g6ZA0NuNub" role="hSBgs">
+        <property role="2pBcoG" value="1214029888595741648" />
+        <property role="2pBcow" value="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)" />
+        <property role="2pBc3U" value="raw" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7g6ZA0NuNue" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7g6ZA0NuNtY" role="hSBgu">
+        <property role="2pBcoG" value="1214029888595741649" />
+        <property role="2pBcow" value="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+        <property role="2pBc3U" value="ready" />
+      </node>
+      <node concept="2pBcaW" id="7g6ZA0NuNud" role="hSBgs">
+        <property role="2pBcoG" value="1214029888595741649" />
+        <property role="2pBcow" value="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)" />
+        <property role="2pBc3U" value="ready" />
+      </node>
+    </node>
+    <node concept="7amoh" id="7g6ZA0NuNug" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="7g6ZA0NuNtZ" role="hSBgu">
+        <property role="2pBcoG" value="1214029888595741650" />
+        <property role="2pBcow" value="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+        <property role="2pBc3U" value="reviewed" />
+      </node>
+      <node concept="2pBcaW" id="7g6ZA0NuNuf" role="hSBgs">
+        <property role="2pBcoG" value="1214029888595741650" />
+        <property role="2pBcow" value="r:70f80dec-8580-44c0-ad9d-103cf07213ef(com.mbeddr.core.codereview.structure)" />
+        <property role="2pBc3U" value="reviewed" />
+      </node>
+    </node>
+  </node>
 </model>
 
