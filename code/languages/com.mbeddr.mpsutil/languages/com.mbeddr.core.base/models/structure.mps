@@ -9,7 +9,6 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
-    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" />
     <import index="hba4" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -1545,20 +1544,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="8490595898229164172" />
       <ref role="20lvS9" node="6clJcrJYOUA" resolve="Chunk" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1JcbkuyFcOM">
-    <property role="3GE5qa" value="pathAndFile" />
-    <property role="TrG5h" value="SolutionRelativeHashedFilePicker" />
-    <property role="EcuMT" value="2003025719968189746" />
-    <ref role="1TJDcQ" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
-    <node concept="1TJgyi" id="1JcbkuyFVAG" role="1TKVEl">
-      <property role="TrG5h" value="descr" />
-      <property role="IQ2nx" value="2003025719968381356" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="1JcbkuyFnZT" role="PzmwI">
-      <ref role="PrY4T" node="GKLijS$AT1" resolve="IExtRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="5stuwjVkYpE">
