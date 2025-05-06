@@ -14094,9 +14094,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="7tNo_gxoK97" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.doc.gen_latex" />
         <property role="3LESm3" value="f44f6b9a-bf30-4f73-866e-fac17c177409" />
+        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cPi" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cPj" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cPk" role="3LXTna">
@@ -14177,6 +14177,11 @@
               <node concept="3qWCbU" id="4PRpvcZJNYU" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="1ZywnBKZMQd" role="3bR37C">
+            <node concept="3bR9La" id="1ZywnBKZMQe" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
             </node>
           </node>
         </node>
