@@ -37,14 +37,14 @@
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="81o" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:net.sourceforge.plantuml(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
-    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
+    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
     <import index="4anb" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.svg(de.itemis.stubs.batik/)" />
+    <import index="41rc" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing.gvt(de.itemis.stubs.batik/)" />
     <import index="ugom" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.bridge(de.itemis.stubs.batik/)" />
     <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
-    <import index="er5d" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.swing(de.itemis.stubs.batik/)" />
     <import index="dnq3" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.dom.util(de.itemis.stubs.batik/)" />
     <import index="ughz" ref="124d077c-270f-42ca-8bf8-bee488dc96dc/java:org.w3c.dom.svg(de.itemis.stubs.xml/)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -78,6 +78,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -2857,6 +2858,7 @@
   </node>
   <node concept="tC5Ba" id="18ZQ$P84YIL">
     <property role="TrG5h" value="VisualizeActionGroup" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="1DVNPtFPBO2" role="2f5YQi">
       <ref role="tU$_T" to="ekwn:1xsN4xJX8VI" resolve="EditorPopup" />
     </node>
@@ -2869,6 +2871,7 @@
   <node concept="tC5Ba" id="18ZQ$P85bbH">
     <property role="TrG5h" value="ToolbarGroup" />
     <property role="3GE5qa" value="toolbar" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="18ZQ$P85bbJ" role="ftER_">
       <node concept="tCFHf" id="4ppn3W9rIRl" role="ftvYc">
         <ref role="tCJdB" node="4ppn3W9rIR8" resolve="Back" />
@@ -3191,6 +3194,9 @@
     <node concept="2tJIrI" id="5gmO3pL7WRn" role="jymVt" />
     <node concept="2tJIrI" id="5gmO3pL7I9J" role="jymVt" />
     <node concept="3Tm1VV" id="2sPLpCfQsmR" role="1B3o_S" />
+    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
+      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
+    </node>
     <node concept="3clFbW" id="2sPLpCfQsmS" role="jymVt">
       <node concept="3cqZAl" id="2sPLpCfQsmT" role="3clF45" />
       <node concept="3Tm1VV" id="2sPLpCfQsmU" role="1B3o_S" />
@@ -3969,11 +3975,11 @@
                                 <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
                                 <node concept="2OqwBi" id="2ag5hDwyiTV" role="37wK5m">
                                   <node concept="2OqwBi" id="2ag5hDwyhv2" role="2Oq$k0">
-                                    <node concept="liA8E" id="2ag5hDwyi8Z" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
-                                    </node>
                                     <node concept="Xjq3P" id="5SX2F57T1tc" role="2Oq$k0">
                                       <ref role="1HBi2w" node="2sPLpCfQsmQ" resolve="PlantUMLSVGCanvas" />
+                                    </node>
+                                    <node concept="liA8E" id="2ag5hDwyi8Z" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="2ag5hDwynHj" role="2OqNvi">
@@ -4165,9 +4171,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3uibUv" id="6geq6jk11UV" role="1zkMxy">
-      <ref role="3uigEE" to="er5d:~JSVGCanvas" resolve="JSVGCanvas" />
     </node>
   </node>
   <node concept="312cEu" id="2sPLpCfQCUL">
@@ -4561,6 +4564,9 @@
                   </node>
                 </node>
                 <node concept="3clFbJ" id="2sPLpCfQE4P" role="3cqZAp">
+                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
+                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
+                  </node>
                   <node concept="3clFbS" id="2sPLpCfQE4R" role="3clFbx">
                     <node concept="3clFbF" id="2sPLpCfQE4S" role="3cqZAp">
                       <node concept="3P9mCS" id="2sPLpCfQE4T" role="3clFbG">
@@ -4574,9 +4580,6 @@
                       </node>
                     </node>
                     <node concept="3cpWs6" id="2sPLpCfQE4W" role="3cqZAp" />
-                  </node>
-                  <node concept="1rXfSq" id="6geq6jk2IPw" role="3clFbw">
-                    <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                   </node>
                 </node>
                 <node concept="3clFbH" id="2sPLpCfQJty" role="3cqZAp" />
@@ -4695,6 +4698,9 @@
                       </node>
                     </node>
                     <node concept="3clFbJ" id="2sPLpCfQE56" role="3cqZAp">
+                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
+                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
+                      </node>
                       <node concept="3clFbS" id="2sPLpCfQE58" role="3clFbx">
                         <node concept="3clFbF" id="2sPLpCfQE59" role="3cqZAp">
                           <node concept="3P9mCS" id="2sPLpCfQE5a" role="3clFbG">
@@ -4708,9 +4714,6 @@
                           </node>
                         </node>
                         <node concept="3cpWs6" id="2sPLpCfQE5d" role="3cqZAp" />
-                      </node>
-                      <node concept="1rXfSq" id="6geq6jk2Hmb" role="3clFbw">
-                        <ref role="37wK5l" to="e373:~HaltingThread.isHalted()" resolve="isHalted" />
                       </node>
                     </node>
                     <node concept="3clFbF" id="2sPLpCfQE5e" role="3cqZAp">
@@ -6326,6 +6329,7 @@
     <property role="TrG5h" value="VisualizeActionGroupDynamic" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Visualize ..." />
+    <property role="22ra45" value="true" />
     <node concept="2OiAzN" id="bhVSeGf9rc" role="ftER_">
       <node concept="2OiTZ2" id="bhVSeGf9rd" role="2Oj6PV">
         <node concept="3clFbS" id="bhVSeGf9re" role="2VODD2">

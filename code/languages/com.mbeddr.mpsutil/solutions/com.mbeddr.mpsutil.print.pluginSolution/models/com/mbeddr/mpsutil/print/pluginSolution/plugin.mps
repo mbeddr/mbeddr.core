@@ -28,12 +28,14 @@
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -194,6 +196,7 @@
   <node concept="sE7Ow" id="1DZCyiI2R2M">
     <property role="TrG5h" value="PrintEditorAction" />
     <property role="2uzpH1" value="Print Editor" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="tnohg" id="1DZCyiI2R2N" role="tncku">
       <node concept="3clFbS" id="1DZCyiI2R2O" role="2VODD2">
         <node concept="3cpWs8" id="1DZCyiI4mAa" role="3cqZAp">
@@ -626,6 +629,7 @@
   <node concept="2DaZZR" id="1DZCyiI54nc" />
   <node concept="tC5Ba" id="7_KMir46WeQ">
     <property role="TrG5h" value="PrintGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="7_KMir46Wj1" role="ftER_">
       <node concept="2a7GMi" id="1WzkXggN1$M" role="ftvYc" />
       <node concept="tCFHf" id="7_KMir46Wj6" role="ftvYc">

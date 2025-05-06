@@ -26,6 +26,7 @@
         <child id="1207145494930" name="expression" index="fuByb" />
       </concept>
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -231,6 +232,7 @@
   <node concept="2DaZZR" id="14DmiwrkMQn" />
   <node concept="tC5Ba" id="14DmiwropnB">
     <property role="TrG5h" value="debug" />
+    <property role="22ra45" value="true" />
     <node concept="tT9cl" id="14DmiwropnD" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
       <ref role="2f8Tey" to="tprs:1TFxXPONz$p" resolve="devkitTools" />
