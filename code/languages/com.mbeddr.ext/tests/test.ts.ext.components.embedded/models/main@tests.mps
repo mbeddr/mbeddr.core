@@ -41,7 +41,6 @@
       <concept id="1265662339477539521" name="com.mbeddr.ext.components.embedded.structure.InterruptExitHandler" flags="ng" index="RHCfK">
         <child id="1265662339477539528" name="body" index="RHCfT" />
       </concept>
-      <concept id="9172009453270757747" name="com.mbeddr.ext.components.embedded.structure.InterruptComponentTriggerConfigItem" flags="ng" index="3_WZtN" />
       <concept id="9172009453270375539" name="com.mbeddr.ext.components.embedded.structure.InterruptRunnableMapping" flags="ng" index="3_ZhDN">
         <reference id="9172009453270375540" name="interrupt" index="3_ZhDO" />
         <reference id="9172009453270375541" name="instance" index="3_ZhDP" />
@@ -61,49 +60,11 @@
       </concept>
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
-    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
-      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
-        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
-        <child id="5476261277775063442" name="target" index="1kZvWc" />
-      </concept>
-      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl" />
-      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
-        <child id="5046689135694070731" name="binaries" index="2ePNbc" />
-        <child id="5323740605968447026" name="platform" index="2AWWZH" />
-      </concept>
-      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
-        <reference id="7717755763392524108" name="module" index="2v9HqP" />
-      </concept>
-      <concept id="5323740605968447022" name="com.mbeddr.core.buildconfig.structure.DesktopPlatform" flags="ng" index="2AWWZL">
-        <property id="5323740605968447025" name="cCompilerOptions" index="2AWWZI" />
-        <property id="5323740605968447024" name="cCompiler" index="2AWWZJ" />
-        <property id="1253797277664981186" name="cppCompilerOptions" index="UXd4T" />
-        <property id="1253797277664981177" name="cppCompiler" index="UXd52" />
-        <property id="8774011376396215812" name="linker" index="18_EFo" />
-        <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
-        <property id="3963667026125442676" name="make" index="3r8Kxs" />
-      </concept>
-      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
-        <property id="5952395988556102274" name="supportsSharedLibraries" index="uKT8v" />
-      </concept>
-      <concept id="5476261277774416029" name="com.mbeddr.core.buildconfig.structure.Win32" flags="ng" index="1l1LS3" />
-      <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ngI" index="1FkSt_">
-        <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
-      </concept>
-    </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
-    <language id="bd640b8f-4be4-42b6-8dc0-2c94d1ddf606" name="com.mbeddr.ext.components.gen_nomw">
-      <concept id="2103658896110278831" name="com.mbeddr.ext.components.gen_nomw.structure.NoMwComponentsGenStrategy" flags="ng" index="3i3YCL">
-        <property id="4768833643347725006" name="generateContracts" index="3Ewwow" />
-      </concept>
-    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="4459718605982007337" name="com.mbeddr.core.base.structure.IConfigurationContainer" flags="ngI" index="2Q9xDo">
-        <child id="4459718605982007338" name="configurationItems" index="2Q9xDr" />
-      </concept>
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
       </concept>
@@ -135,10 +96,6 @@
       <concept id="7780999115923829680" name="com.mbeddr.ext.compositecomponents.structure.CompositeComponent" flags="ng" index="5JLF8" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
-      <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
-        <child id="9172009453269286214" name="kind" index="3_UBH6" />
-      </concept>
       <concept id="1017957699896642358" name="com.mbeddr.core.embedded.structure.InterruptDeclaration" flags="ng" index="1O_wwk" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -166,9 +123,6 @@
         <child id="6041318036221669720" name="contents" index="2RW2fA" />
       </concept>
       <concept id="1089269900847289701" name="com.mbeddr.ext.components.structure.EmptyInstanceConfigContent" flags="ng" index="JAGxh" />
-      <concept id="2103658896110121032" name="com.mbeddr.ext.components.structure.ComponentsConfigItem" flags="ng" index="3i2$bm">
-        <child id="2103658896110238743" name="genStrategy" index="3i30U9" />
-      </concept>
       <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
@@ -855,63 +809,6 @@
   </node>
   <node concept="2XOHcx" id="45k_U8HjFeP">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.ext/" />
-  </node>
-  <node concept="1lH9Xt" id="3F9kUGaOQp8">
-    <property role="TrG5h" value="InterruptChecksInBuildConfiguration" />
-    <property role="3DII0k" value="2hh8MJdVwqX/command" />
-    <node concept="1qefOq" id="3F9kUGaOQOv" role="1SKRRt">
-      <node concept="2v9HqL" id="3F9kUGaOQOy" role="1qenE9">
-        <node concept="3i2$bm" id="3F9kUGaOQP5" role="2Q9xDr">
-          <node concept="3i3YCL" id="3F9kUGaOQP6" role="3i30U9">
-            <property role="3Ewwow" value="true" />
-          </node>
-        </node>
-        <node concept="3_UEaq" id="3F9kUGaOQP7" role="2Q9xDr">
-          <node concept="3_UBHe" id="3F9kUGaOQP8" role="3_UBH6" />
-        </node>
-        <node concept="3_WZtN" id="3F9kUGaOQP9" role="2Q9xDr" />
-        <node concept="2eOfOl" id="3F9kUGaOQO_" role="2ePNbc">
-          <property role="TrG5h" value="dummy" />
-          <node concept="2v9HqM" id="3F9kUGaORiA" role="2eOfOg">
-            <ref role="2v9HqP" to="yrk4:3F9kUGaOQPu" resolve="Main" />
-          </node>
-          <node concept="2v9HqM" id="3F9kUGaOQOC" role="2eOfOg">
-            <ref role="2v9HqP" to="yrk4:3F9kUGaOOXM" resolve="Dummy1" />
-            <node concept="7CXmI" id="3F9kUGaORov" role="lGtFl">
-              <node concept="1TM$A" id="3F9kUGaORow" role="7EUXB">
-                <node concept="2PYRI3" id="3F9kUGaORox" role="3lydEf">
-                  <ref role="39XzEq" to="iowh:3F9kUGawZZA" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2v9HqM" id="3F9kUGaORiM" role="2eOfOg">
-            <ref role="2v9HqP" to="yrk4:3F9kUGaOPax" resolve="Dummy2" />
-            <node concept="7CXmI" id="3F9kUGaORoG" role="lGtFl">
-              <node concept="1TM$A" id="3F9kUGaORoH" role="7EUXB">
-                <node concept="2PYRI3" id="3F9kUGaORoI" role="3lydEf">
-                  <ref role="39XzEq" to="iowh:3F9kUGawZZA" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1l1LS3" id="4JZ_DSvTAq7" role="1kZvWc">
-            <property role="TrG5h" value="Win32" />
-          </node>
-        </node>
-        <node concept="2AWWZL" id="3F9kUGaOQOQ" role="2AWWZH">
-          <property role="2AWWZJ" value="gcc" />
-          <property role="3r8Kw1" value="gdb" />
-          <property role="3r8Kxs" value="make" />
-          <property role="2AWWZI" value="-std=c99" />
-          <property role="1FkSt$" value="-g" />
-          <property role="uKT8v" value="true" />
-          <property role="UXd52" value="g++" />
-          <property role="UXd4T" value="-std=c++11" />
-          <property role="18_EFo" value="gcc" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1lH9Xt" id="3ClwVOAo3aO">
     <property role="TrG5h" value="InterruptChecksImplementationModule" />
