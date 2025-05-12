@@ -38,6 +38,7 @@
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="qq04" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.actions(MPS.Workbench/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -77,7 +78,7 @@
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
         <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
@@ -234,7 +235,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -264,7 +265,7 @@
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -348,7 +349,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -6240,18 +6241,22 @@
                     <node concept="3cpWsn" id="3NH93czqOEB" role="3cpWs9">
                       <property role="TrG5h" value="newName" />
                       <node concept="17QB3L" id="3NH93czqOQk" role="1tU5fm" />
-                      <node concept="2YIFZM" id="3NH93czqOEC" role="33vP2m">
-                        <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                        <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object)" resolve="showInputDialog" />
-                        <node concept="Xjq3P" id="3NH93czqOED" role="37wK5m" />
-                        <node concept="3cpWs3" id="3NH93czqOEE" role="37wK5m">
-                          <node concept="37vLTw" id="3NH93czqOEF" role="3uHU7w">
+                      <node concept="2YIFZM" id="5yciJwh8tp_" role="33vP2m">
+                        <ref role="37wK5l" to="jkm4:~Messages.showInputDialog(java.awt.Component,java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showInputDialog" />
+                        <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                        <node concept="Xjq3P" id="5yciJwh8tpA" role="37wK5m" />
+                        <node concept="3cpWs3" id="5yciJwh8tpB" role="37wK5m">
+                          <node concept="37vLTw" id="5yciJwh8tpC" role="3uHU7w">
                             <ref role="3cqZAo" node="3NH93cznfMi" resolve="name" />
                           </node>
-                          <node concept="Xl_RD" id="3NH93czqOEG" role="3uHU7B">
+                          <node concept="Xl_RD" id="5yciJwh8tpD" role="3uHU7B">
                             <property role="Xl_RC" value="New name for " />
                           </node>
                         </node>
+                        <node concept="Xl_RD" id="5yciJwh9puA" role="37wK5m">
+                          <property role="Xl_RC" value="Name of new profile" />
+                        </node>
+                        <node concept="10Nm6u" id="5yciJwh8D2v" role="37wK5m" />
                       </node>
                     </node>
                   </node>
@@ -13760,10 +13765,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Y6oVI_9gzW" role="3cqZAp">
-          <node concept="2YIFZM" id="7Y6oVI_9iWf" role="3clFbG">
-            <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
-            <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
+        <node concept="3clFbF" id="5yciJwhblvq" role="3cqZAp">
+          <node concept="2OqwBi" id="5yciJwhbonh" role="3clFbG">
+            <node concept="2YIFZM" id="5yciJwhbmV1" role="2Oq$k0">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
+            </node>
+            <node concept="liA8E" id="5yciJwhbpVF" role="2OqNvi">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
+            </node>
           </node>
         </node>
       </node>

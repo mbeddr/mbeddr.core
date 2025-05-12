@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.ecore.stubs" uuid="822a7acd-f487-45f5-bbb9-1ce595a1705f" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="guice.jar" />
       <sourceRoot location="javax.inject.jar" />

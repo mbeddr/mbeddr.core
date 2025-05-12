@@ -51,14 +51,14 @@
     </language>
   </registry>
   <node concept="24kQdi" id="75yNFwrUfT7">
-    <ref role="1XX52x" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+    <ref role="1XX52x" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
     <node concept="3EZMnI" id="75yNFwrUfTy" role="2wV5jI">
       <node concept="3EZMnI" id="1gJuyfgAvvl" role="3EZMnx">
         <node concept="VPM3Z" id="1gJuyfgAvvn" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="1gJuyfgAvvp" role="3EZMnx">
-          <property role="3F0ifm" value="@userConfigurable" />
+          <property role="3F0ifm" value="@customizableByUser" />
         </node>
         <node concept="3F0ifn" id="1gJuyfgAvvZ" role="3EZMnx">
           <property role="3F0ifm" value="(" />

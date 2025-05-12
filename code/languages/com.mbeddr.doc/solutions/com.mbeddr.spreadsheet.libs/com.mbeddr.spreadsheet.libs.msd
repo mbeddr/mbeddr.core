@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.spreadsheet.libs" uuid="fc506c9e-94ac-4d65-9950-01def4cba278" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="commons-codec.jar" />
       <sourceRoot location="commons-collections4.jar" />
       <sourceRoot location="curvesapi.jar" />
@@ -15,8 +15,10 @@
     </modelRoot>
   </models>
   <facets>
-    <facet compile="mps" classes="mps" ext="no" type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/commons-io.jar" />
+      <library location="${module}/lib/log4j-api.jar" />
       <library location="${module}/lib/commons-codec.jar" />
       <library location="${module}/lib/commons-collections4.jar" />
       <library location="${module}/lib/curvesapi.jar" />

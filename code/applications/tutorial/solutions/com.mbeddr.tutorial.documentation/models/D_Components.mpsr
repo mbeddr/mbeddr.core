@@ -81,9 +81,6 @@
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
-      <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
-        <reference id="3350625596580108719" name="target" index="1_0GAl" />
-      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
@@ -2600,13 +2597,7 @@
         <node concept="1_0LV8" id="6UY8Kx5f7Ma" role="1_0VJ0">
           <node concept="19SGf9" id="6UY8Kx5f7Mb" role="1_0LWR">
             <node concept="19SUe$" id="6UY8Kx5f7Mc" role="19SJt6">
-              <property role="19SUeA" value="mbeddr comes with support for verifying contracts of components statically. This verification is based on C-level verification with CBMC (for a more detailed discussion about the formal verification with mbeddr, please look at " />
-            </node>
-            <node concept="1_0GAv" id="2JeiqU7f4YR" role="19SJt6">
-              <ref role="1_0GAl" to="us0v:7OKLwZ_7lPw" resolve="functional_verification" />
-            </node>
-            <node concept="19SUe$" id="2JeiqU7f4YQ" role="19SJt6">
-              <property role="19SUeA" value=". Let's set up our tutorial to use verification.  Let us verify the " />
+              <property role="19SUeA" value="mbeddr comes with support for verifying contracts of components statically. This verification is based on C-level verification with CBMC . Let's set up our tutorial to use verification.  Let us verify the " />
             </node>
             <node concept="1jUjqm" id="6UY8Kx5f9Ze" role="19SJt6">
               <node concept="19SGf9" id="6UY8Kx5f9Zf" role="$DsGW">
