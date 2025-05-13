@@ -13,9 +13,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="9zoj" ref="r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
   </imports>
   <registry>
@@ -93,7 +90,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -950,63 +946,6 @@
                       <ref role="cht4Q" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="1JcbkuyR6kS">
-    <property role="3GE5qa" value="pathAndFile" />
-    <ref role="1M2myG" to="vs0r:1JcbkuyFcOM" resolve="SolutionRelativeHashedFilePicker" />
-    <node concept="EnEH3" id="1JcbkuyR6qV" role="1MhHOB">
-      <ref role="EomxK" to="68mc:5lKnBeAtODI" resolve="path" />
-      <node concept="1LLf8_" id="1JcbkuyR6qY" role="1LXaQT">
-        <node concept="3clFbS" id="1JcbkuyR6qZ" role="2VODD2">
-          <node concept="3clFbF" id="1JcbkuyR6rl" role="3cqZAp">
-            <node concept="37vLTI" id="1JcbkuyR78_" role="3clFbG">
-              <node concept="1Wqviy" id="1JcbkuyR7iu" role="37vLTx" />
-              <node concept="2OqwBi" id="1JcbkuyR6tz" role="37vLTJ">
-                <node concept="EsrRn" id="1JcbkuyR6rk" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1JcbkuyR6Qk" role="2OqNvi">
-                  <ref role="3TsBF5" to="68mc:5lKnBeAtODI" resolve="path" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="1JcbkuyW0br" role="3cqZAp">
-            <node concept="37vLTI" id="1JcbkuyW1oI" role="3clFbG">
-              <node concept="3cpWs3" id="1JcbkuyW1WC" role="37vLTx">
-                <node concept="1Wqviy" id="1JcbkuyW2sS" role="3uHU7w" />
-                <node concept="Xl_RD" id="1JcbkuyW1wt" role="3uHU7B">
-                  <property role="Xl_RC" value="file:" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1JcbkuyW0ll" role="37vLTJ">
-                <node concept="EsrRn" id="1JcbkuyW0bp" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1JcbkuyW14E" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:GKLijS$DFv" resolve="extID" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="1JcbkuyR7sW" role="3cqZAp">
-            <node concept="37vLTI" id="1JcbkuyR8hf" role="3clFbG">
-              <node concept="3cpWs3" id="1JcbkuyR8Lm" role="37vLTx">
-                <node concept="Xl_RD" id="1JcbkuyR8Lr" role="3uHU7w">
-                  <property role="Xl_RC" value="" />
-                </node>
-                <node concept="2YIFZM" id="1JcbkuyR8ry" role="3uHU7B">
-                  <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
-                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1JcbkuyR7vm" role="37vLTJ">
-                <node concept="EsrRn" id="1JcbkuyR7sU" role="2Oq$k0" />
-                <node concept="3TrcHB" id="1JcbkuyR7YY" role="2OqNvi">
-                  <ref role="3TsBF5" to="vs0r:GKLijTbrTL" resolve="lastUpdated" />
                 </node>
               </node>
             </node>

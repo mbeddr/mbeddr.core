@@ -13,11 +13,18 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
-        <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
@@ -99,14 +106,7 @@
     <node concept="1TJgyi" id="13p6s1wtfyY" role="1TKVEl">
       <property role="TrG5h" value="lastReviewState" />
       <property role="IQ2nx" value="279511073609046054" />
-      <ref role="AX2Wp" to="vs0r:13p6s1wtcJe" resolve="CodeState" />
-      <node concept="3l_iC" id="13p6s1wtfyZ" role="lGtFl">
-        <node concept="1TJgyi" id="fx1tsHglwA" role="3l_iP">
-          <property role="TrG5h" value="lastReviewState" />
-          <property role="IQ2nx" value="279511073609046054" />
-          <ref role="AX2Wp" to="vs0r:1tDstbgKlCo" resolve="CodeState" />
-        </node>
-      </node>
+      <ref role="AX2Wp" node="13p6s1wtcJe" resolve="CodeState" />
     </node>
     <node concept="1TJgyi" id="4g52gaNPEri" role="1TKVEl">
       <property role="TrG5h" value="reviewIsCurrent" />
@@ -116,14 +116,7 @@
     <node concept="1TJgyi" id="13p6s1wtfz0" role="1TKVEl">
       <property role="TrG5h" value="codeState" />
       <property role="IQ2nx" value="1687004685686364087" />
-      <ref role="AX2Wp" to="vs0r:13p6s1wtcJe" resolve="CodeState" />
-      <node concept="3l_iC" id="13p6s1wtfz1" role="lGtFl">
-        <node concept="1TJgyi" id="1tDstbgKluR" role="3l_iP">
-          <property role="TrG5h" value="codeState" />
-          <property role="IQ2nx" value="1687004685686364087" />
-          <ref role="AX2Wp" to="vs0r:1tDstbgKlCo" resolve="CodeState" />
-        </node>
-      </node>
+      <ref role="AX2Wp" node="13p6s1wtcJe" resolve="CodeState" />
     </node>
     <node concept="M6xJ_" id="4g52gaNN$a_" role="lGtFl">
       <property role="Hh88m" value="codereview" />
@@ -178,6 +171,24 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4901333676674512137" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="25R3W" id="13p6s1wtcJe">
+    <property role="TrG5h" value="CodeState" />
+    <property role="3GE5qa" value="codereview" />
+    <property role="3F6X1D" value="1687004685686364696" />
+    <ref role="1H5jkz" node="13p6s1wtcJg" resolve="raw" />
+    <node concept="25R33" id="13p6s1wtcJg" role="25R1y">
+      <property role="TrG5h" value="raw" />
+      <property role="3tVfz5" value="1687004685686364697" />
+    </node>
+    <node concept="25R33" id="13p6s1wtcJh" role="25R1y">
+      <property role="TrG5h" value="ready" />
+      <property role="3tVfz5" value="1687004685686364698" />
+    </node>
+    <node concept="25R33" id="13p6s1wtcJi" role="25R1y">
+      <property role="TrG5h" value="reviewed" />
+      <property role="3tVfz5" value="1687004685686364703" />
     </node>
   </node>
 </model>
