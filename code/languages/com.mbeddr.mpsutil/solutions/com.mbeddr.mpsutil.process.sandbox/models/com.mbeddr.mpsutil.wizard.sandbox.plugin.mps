@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9aef0d3c-87c9-4ce3-ad67-def9817c1ab4(com.mbeddr.mpsutil.process.sandbox.plugin)">
+<model ref="r:9aef0d3c-87c9-4ce3-ad67-def9817c1ab4(com.mbeddr.mpsutil.wizard.sandbox.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process" version="0" />
+    <use id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.wizard" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
@@ -106,7 +106,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -127,22 +127,22 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
     </language>
-    <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.process">
-      <concept id="6632769160448240380" name="com.mbeddr.mpsutil.process.structure.ProcessInputVariable" flags="ng" index="29CFUk" />
-      <concept id="6632769160448859561" name="com.mbeddr.mpsutil.process.structure.MainPanelArg" flags="ng" index="29H0B1" />
-      <concept id="6632769160448631607" name="com.mbeddr.mpsutil.process.structure.StepOutputData" flags="ng" index="29Ibtv" />
-      <concept id="8081644025962062833" name="com.mbeddr.mpsutil.process.structure.StepPrivateData" flags="ng" index="CxUut" />
-      <concept id="8081644025963170966" name="com.mbeddr.mpsutil.process.structure.StepMemberReference" flags="ng" index="C_CzU" />
-      <concept id="8081644025966777751" name="com.mbeddr.mpsutil.process.structure.ExecuteWizardAndGetResultExpression" flags="ng" index="CNT7V" />
-      <concept id="8081644025964609311" name="com.mbeddr.mpsutil.process.structure.StepRefExpression" flags="ng" index="CSfHN">
+    <language id="306d7456-29e2-4ea3-9c46-e7b830b08481" name="com.mbeddr.mpsutil.wizard">
+      <concept id="6632769160448240380" name="com.mbeddr.mpsutil.wizard.structure.WizardInputVariable" flags="ng" index="29CFUk" />
+      <concept id="6632769160448859561" name="com.mbeddr.mpsutil.wizard.structure.MainPanelArg" flags="ng" index="29H0B1" />
+      <concept id="6632769160448631607" name="com.mbeddr.mpsutil.wizard.structure.StepOutputData" flags="ng" index="29Ibtv" />
+      <concept id="8081644025962062833" name="com.mbeddr.mpsutil.wizard.structure.StepPrivateData" flags="ng" index="CxUut" />
+      <concept id="8081644025963170966" name="com.mbeddr.mpsutil.wizard.structure.StepMemberReference" flags="ng" index="C_CzU" />
+      <concept id="8081644025966777751" name="com.mbeddr.mpsutil.wizard.structure.ExecuteWizardAndGetResultExpression" flags="ng" index="CNT7V" />
+      <concept id="8081644025964609311" name="com.mbeddr.mpsutil.wizard.structure.StepRefExpression" flags="ng" index="CSfHN">
         <reference id="8081644025964621849" name="step" index="CSbhP" />
       </concept>
-      <concept id="8081644025964866007" name="com.mbeddr.mpsutil.process.structure.ProcessInputRef" flags="ng" index="CVeQV">
+      <concept id="8081644025964866007" name="com.mbeddr.mpsutil.wizard.structure.WizardInputRef" flags="ng" index="CVeQV">
         <reference id="8081644025964866020" name="input" index="CVeQ8" />
       </concept>
-      <concept id="4724180912012936682" name="com.mbeddr.mpsutil.process.structure.IsApplicableFunction" flags="ig" index="UIuLC" />
-      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.process.structure.CreateComponentFunction" flags="ig" index="UJns9" />
-      <concept id="4724180912012648918" name="com.mbeddr.mpsutil.process.structure.Step" flags="ng" index="UJ$xk">
+      <concept id="4724180912012936682" name="com.mbeddr.mpsutil.wizard.structure.IsApplicableFunction" flags="ig" index="UIuLC" />
+      <concept id="4724180912012713611" name="com.mbeddr.mpsutil.wizard.structure.CreateComponentFunction" flags="ig" index="UJns9" />
+      <concept id="4724180912012648918" name="com.mbeddr.mpsutil.wizard.structure.Step" flags="ng" index="UJ$xk">
         <property id="4671234082065499041" name="titel" index="2WTsO4" />
         <child id="8081644025962072165" name="privatData" index="CxOK9" />
         <child id="4724180912013250630" name="output" index="UHbB4" />
@@ -151,33 +151,33 @@
         <child id="498531228376113227" name="update" index="3e9Kf9" />
         <child id="498531228382043807" name="onFinish" index="3fNrOt" />
       </concept>
-      <concept id="4724180912012650169" name="com.mbeddr.mpsutil.process.structure.SimpleStep" flags="ng" index="UJ$WV" />
-      <concept id="4724180912012650175" name="com.mbeddr.mpsutil.process.structure.OptionalStep" flags="ng" index="UJ$WX">
+      <concept id="4724180912012650169" name="com.mbeddr.mpsutil.wizard.structure.SimpleStep" flags="ng" index="UJ$WV" />
+      <concept id="4724180912012650175" name="com.mbeddr.mpsutil.wizard.structure.OptionalStep" flags="ng" index="UJ$WX">
         <child id="4724180912012936702" name="isApplicable" index="UIuLW" />
       </concept>
-      <concept id="4724180912012603068" name="com.mbeddr.mpsutil.process.structure.Process" flags="ng" index="UJCsY">
+      <concept id="4724180912012603068" name="com.mbeddr.mpsutil.wizard.structure.Wizard" flags="ng" index="UJCsY">
         <property id="8081644025965715607" name="titel" index="CZYjV" />
         <child id="6632769160448301733" name="inputs" index="29CSVd" />
         <child id="4724180912012650163" name="steps" index="UJ$WL" />
         <child id="498531228381448308" name="output" index="3fXEJQ" />
       </concept>
-      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.process.structure.OnNextFunction" flags="ig" index="2WTm8d" />
-      <concept id="7775334123755359387" name="com.mbeddr.mpsutil.process.structure.FinishOp" flags="ng" index="33zGmF" />
-      <concept id="7775334123752824657" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpression" flags="ng" index="33Dhpx" />
-      <concept id="7775334123752824719" name="com.mbeddr.mpsutil.process.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
-        <reference id="7775334123752824741" name="process" index="33Dhql" />
+      <concept id="4671234082065542312" name="com.mbeddr.mpsutil.wizard.structure.OnNextFunction" flags="ig" index="2WTm8d" />
+      <concept id="7775334123755359387" name="com.mbeddr.mpsutil.wizard.structure.FinishOp" flags="ng" index="33zGmF" />
+      <concept id="7775334123752824657" name="com.mbeddr.mpsutil.wizard.structure.CreateWizardExpression" flags="ng" index="33Dhpx" />
+      <concept id="7775334123752824719" name="com.mbeddr.mpsutil.wizard.structure.CreateWizardExpressionBase" flags="ng" index="33DhqZ">
+        <reference id="7775334123752824741" name="wizard" index="33Dhql" />
         <child id="7775334123752824734" name="initVals" index="33DhqI" />
       </concept>
-      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.process.structure.WizardType" flags="ig" index="33DxOC">
+      <concept id="7775334123752756248" name="com.mbeddr.mpsutil.wizard.structure.WizardType" flags="ig" index="33DxOC">
         <reference id="7775334123752756259" name="wizard" index="33DxOj" />
       </concept>
-      <concept id="7775334123753877828" name="com.mbeddr.mpsutil.process.structure.ShowOperation" flags="ng" index="33HjxO" />
-      <concept id="498531228376113013" name="com.mbeddr.mpsutil.process.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
-      <concept id="498531228381780164" name="com.mbeddr.mpsutil.process.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
+      <concept id="7775334123753877828" name="com.mbeddr.mpsutil.wizard.structure.ShowOperation" flags="ng" index="33HjxO" />
+      <concept id="498531228376113013" name="com.mbeddr.mpsutil.wizard.structure.UpdateUIFunction" flags="ig" index="3e9NNR" />
+      <concept id="498531228381780164" name="com.mbeddr.mpsutil.wizard.structure.OnFinshFunction" flags="ig" index="3fMrH6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
-      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
@@ -185,7 +185,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
