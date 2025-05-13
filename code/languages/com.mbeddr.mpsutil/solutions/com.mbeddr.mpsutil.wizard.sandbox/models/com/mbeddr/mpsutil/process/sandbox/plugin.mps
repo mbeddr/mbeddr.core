@@ -210,7 +210,7 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbF" id="70BL6LoV$Nq" role="8Wnug">
             <node concept="CNT7V" id="70BL6LoV$Np" role="3clFbG">
-              <ref role="33Dhql" node="46fEo9VfLK_" resolve="theProcess" />
+              <ref role="33Dhql" node="46fEo9VfLK_" resolve="theWizard" />
               <node concept="Xl_RD" id="6JByj2CjPy$" role="33DhqI">
                 <property role="Xl_RC" value="this is data from outsite" />
               </node>
@@ -222,10 +222,10 @@
           <node concept="3cpWsn" id="6JByj2CH9zF" role="3cpWs9">
             <property role="TrG5h" value="wiz" />
             <node concept="33DxOC" id="6JByj2CH9zD" role="1tU5fm">
-              <ref role="33DxOj" node="46fEo9VfLK_" resolve="theProcess" />
+              <ref role="33DxOj" node="46fEo9VfLK_" resolve="theWizard" />
             </node>
             <node concept="33Dhpx" id="6JByj2CH9zG" role="33vP2m">
-              <ref role="33Dhql" node="46fEo9VfLK_" resolve="theProcess" />
+              <ref role="33Dhql" node="46fEo9VfLK_" resolve="theWizard" />
               <node concept="Xl_RD" id="6JByj2CH9zH" role="33DhqI">
                 <property role="Xl_RC" value="This is my testdata" />
               </node>
