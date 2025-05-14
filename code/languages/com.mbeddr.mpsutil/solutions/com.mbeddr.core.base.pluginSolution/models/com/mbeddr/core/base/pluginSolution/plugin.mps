@@ -5,7 +5,7 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
@@ -18,7 +18,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -121,9 +121,11 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="7927811850890310904" name="jetbrains.mps.lang.resources.structure.ConstantFieldIcon" flags="ng" index="1GtWCo">
+        <child id="7927811850890311914" name="field" index="1GtWoa" />
+      </concept>
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
-        <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -2546,8 +2548,8 @@
     <node concept="15feLf" id="5OPKfxQ3lZ8" role="15cTzA">
       <property role="15feLF" value="7" />
     </node>
-    <node concept="1QGGSu" id="MipY_gaLSs" role="1nVCmq">
-      <node concept="10M0yZ" id="MipY_gaOND" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rD" role="1nVCmq">
+      <node concept="10M0yZ" id="MipY_gaOND" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -4459,8 +4461,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="MipY_gaPoV" role="3Uehp1">
-      <node concept="10M0yZ" id="MipY_gaRyn" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rE" role="3Uehp1">
+      <node concept="10M0yZ" id="MipY_gaRyn" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -7857,8 +7859,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="5XU4dCzYtNG" role="3Uehp1">
-      <node concept="10M0yZ" id="5XU4dCzYzH_" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rF" role="3Uehp1">
+      <node concept="10M0yZ" id="5XU4dCzYzH_" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Debugger.EvaluateExpression" resolve="EvaluateExpression" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Debugger" resolve="AllIcons.Debugger" />
       </node>
@@ -8000,8 +8002,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6ghi$I1WGcA" role="3Uehp1">
-      <node concept="10M0yZ" id="6ghi$I1WHLW" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rG" role="3Uehp1">
+      <node concept="10M0yZ" id="6ghi$I1WHLW" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Checked" resolve="Checked" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -14404,8 +14406,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="MipY_gaSlR" role="3Uehp1">
-      <node concept="10M0yZ" id="MipY_gaUVb" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rH" role="3Uehp1">
+      <node concept="10M0yZ" id="MipY_gaUVb" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -18270,8 +18272,8 @@
       </node>
       <node concept="3Tm1VV" id="3ODAlcN6A$s" role="1B3o_S" />
     </node>
-    <node concept="1QGGSu" id="1MQpRKewwvP" role="1nVCmq">
-      <node concept="10M0yZ" id="MipY_g72gz" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rI" role="1nVCmq">
+      <node concept="10M0yZ" id="MipY_g72gz" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Tree" resolve="Tree" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -18488,8 +18490,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="MipY_g8qdP" role="3Uehp1">
-      <node concept="10M0yZ" id="MipY_g8tQO" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rJ" role="3Uehp1">
+      <node concept="10M0yZ" id="MipY_g8tQO" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Tree" resolve="Tree" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -18777,8 +18779,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="MipY_g9wUo" role="3Uehp1">
-      <node concept="10M0yZ" id="MipY_g9y34" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rK" role="3Uehp1">
+      <node concept="10M0yZ" id="MipY_g9y34" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Tree" resolve="Tree" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -19069,8 +19071,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="2uR7kGChGPE" role="3Uehp1">
-      <node concept="10M0yZ" id="2uR7kGChJ0n" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rL" role="3Uehp1">
+      <node concept="10M0yZ" id="2uR7kGChJ0n" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Refresh" resolve="Refresh" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -20551,8 +20553,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="2uR7kGChojb" role="3Uehp1">
-      <node concept="10M0yZ" id="2uR7kGChqU4" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rM" role="3Uehp1">
+      <node concept="10M0yZ" id="2uR7kGChqU4" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Back" resolve="Back" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -20613,8 +20615,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="2uR7kGChlug" role="3Uehp1">
-      <node concept="10M0yZ" id="2uR7kGChnJ$" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rN" role="3Uehp1">
+      <node concept="10M0yZ" id="2uR7kGChnJ$" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Forward" resolve="Forward" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -21120,8 +21122,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="3ODAlcNAnyl" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="2uR7kGChrH9" role="3Uehp1">
-      <node concept="10M0yZ" id="2uR7kGCh$mM" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rO" role="3Uehp1">
+      <node concept="10M0yZ" id="2uR7kGCh$mM" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Refresh" resolve="Refresh" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -23897,8 +23899,8 @@
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
       <node concept="1oajcY" id="7SQqK0FfdCZ" role="1oa70y" />
     </node>
-    <node concept="1QGGSu" id="2uR7kGCiQgi" role="3Uehp1">
-      <node concept="10M0yZ" id="2uR7kGCiUg8" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rP" role="3Uehp1">
+      <node concept="10M0yZ" id="2uR7kGCiUg8" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Print" resolve="Print" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="AllIcons.General" />
       </node>
@@ -24605,8 +24607,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="6KjVnJoX4FU" role="3Uehp1">
-      <node concept="10M0yZ" id="6KjVnJoX4FV" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rQ" role="3Uehp1">
+      <node concept="10M0yZ" id="6KjVnJoX4FV" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
@@ -24737,8 +24739,8 @@
         </node>
       </node>
     </node>
-    <node concept="1QGGSu" id="vqDSpa9D$H" role="3Uehp1">
-      <node concept="10M0yZ" id="vqDSpa9D$I" role="3xaMm5">
+    <node concept="1GtWCo" id="3ketZMcr6rR" role="3Uehp1">
+      <node concept="10M0yZ" id="vqDSpa9D$I" role="1GtWoa">
         <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
