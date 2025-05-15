@@ -3,7 +3,6 @@
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="guice.jar" />
-      <sourceRoot location="javax.inject.jar" />
       <sourceRoot location="org.eclipse.emf.common.jar" />
       <sourceRoot location="org.eclipse.emf.ecore.jar" />
       <sourceRoot location="org.eclipse.emf.ecore.xcore.jar" />
@@ -22,7 +21,6 @@
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/guice.jar" />
-      <library location="${module}/lib/javax.inject.jar" />
       <library location="${module}/lib/org.eclipse.emf.common.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.xcore.jar" />
