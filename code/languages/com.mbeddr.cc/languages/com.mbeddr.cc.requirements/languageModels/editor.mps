@@ -22,7 +22,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="y6af" ref="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="hczm" ref="ebc3846f-fa92-4849-93e4-dec2faf6b78f/r:b9ee036f-3395-4eab-86f3-44b8517c4f7e(com.mbeddr.mpsutil.lib/com.mbeddr.mpsutil.test.modelone)" />
+    <import index="hczm" ref="ebc3846f-fa92-4849-93e4-dec2faf6b78f/r:b9ee036f-3395-4eab-86f3-44b8517c4f7e(com.mbeddr.mpsutil.strings/com.mbeddr.mpsutil.strings.util)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="h23j" ref="r:bbbfeb3c-4321-4879-a3bb-77f1152cdb6b(com.mbeddr.cc.requirements.actions)" />
