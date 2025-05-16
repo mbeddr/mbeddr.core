@@ -11,7 +11,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ### Fixed
 
-- Fixed rename of idea plugin to com.mbeddr.mpsutil.process
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.process to com.mbeddr.mpsutil.wizard.
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.test to com.mbeddr.mpsutil.strings.
 
 # April 2025
 
