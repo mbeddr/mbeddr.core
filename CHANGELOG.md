@@ -15,6 +15,17 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
   [d3e54084](https://github.com/mbeddr/mbeddr.core/commit/d3e540849808d1649a4728ac9a32a5c06d37ade2), and was merged
   in [ee09cc31](https://github.com/mbeddr/mbeddr.core/commit/ee09cc3167c9943e3a193d2d2dc89d3e82fd1e35) in April 2025.
 
+## com.mbeddr.mpsutil.process
+
+### Fixed
+
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.process to com.mbeddr.mpsutil.wizard.
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.test to com.mbeddr.mpsutil.strings.
+
+## com.mbeddr.mpsutil.actionsfilter
+
+- An exception (!app.isDispatchThread()) was fixed that was related to the initialization of the actionsfilter language.
+
 # April 2025
 
 ## com.mbeddr.mpsutil.process
