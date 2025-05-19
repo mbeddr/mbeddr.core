@@ -2819,6 +2819,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.doc.test.documents" />
         <property role="3LESm3" value="4078ebaa-02fd-430a-ab03-975592a2372c" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="3rtmxn" id="3xFG3bj5cRg" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cRh" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cRi" role="3LXTna">
@@ -2901,6 +2902,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4yqSQKZiSYC" role="3bR37C">
+          <node concept="3bR9La" id="4yqSQKZiSYD" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
@@ -2956,6 +2962,9 @@
       </node>
       <node concept="22LTRM" id="6n0otOpmfAs" role="22LTRK">
         <ref role="22LTRN" node="6n0otOpkQ9s" resolve="test.com.mbeddr.mpsutil.logicalChild" />
+      </node>
+      <node concept="22LTRM" id="4yqSQKZiTcM" role="22LTRK">
+        <ref role="22LTRN" node="4pIcGABAzoW" resolve="com.mbeddr.doc.test.documents" />
       </node>
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
