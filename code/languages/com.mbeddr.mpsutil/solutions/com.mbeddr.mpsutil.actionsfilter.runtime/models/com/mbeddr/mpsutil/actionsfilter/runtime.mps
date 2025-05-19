@@ -12858,6 +12858,28 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7xgxWxJ7qDJ" role="3cqZAp">
+          <node concept="3cpWsn" id="7xgxWxJ7qDK" role="3cpWs9">
+            <property role="TrG5h" value="instance" />
+            <node concept="3uibUv" id="7xgxWxJ7qko" role="1tU5fm">
+              <ref role="3uigEE" to="qkt:~ActionManager" resolve="ActionManager" />
+            </node>
+            <node concept="2YIFZM" id="7xgxWxJ8AKo" role="33vP2m">
+              <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
+            </node>
+          </node>
+        </node>
+        <node concept="RRSsy" id="7xgxWxJ7rQi" role="3cqZAp">
+          <node concept="3cpWs3" id="7xgxWxJ7uLY" role="RRSoy">
+            <node concept="37vLTw" id="7xgxWxJ7vQM" role="3uHU7w">
+              <ref role="3cqZAo" node="7xgxWxJ7qDK" resolve="instance" />
+            </node>
+            <node concept="Xl_RD" id="7xgxWxJ7rQk" role="3uHU7B">
+              <property role="Xl_RC" value="Action manager initialized:" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="24qwin8x0Ns" role="3cqZAp">
           <node concept="2YIFZM" id="24qwin8x0Rd" role="3clFbG">
             <ref role="37wK5l" to="dxuu:~SwingUtilities.invokeLater(java.lang.Runnable)" resolve="invokeLater" />

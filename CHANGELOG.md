@@ -14,6 +14,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.process to com.mbeddr.mpsutil.wizard.
 - Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.test to com.mbeddr.mpsutil.strings.
 
+## com.mbeddr.mpsutil.actionsfilter
+
+- An exception (!app.isDispatchThread()) was fixed that was related to the initialization of the actionsfilter language.
+
 # April 2025
 
 ## com.mbeddr.mpsutil.process
