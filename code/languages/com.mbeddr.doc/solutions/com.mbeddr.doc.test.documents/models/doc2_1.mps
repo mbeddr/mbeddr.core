@@ -2,7 +2,6 @@
 <model ref="r:260e0933-d20e-4f4f-88cb-1c3cbbf973a8(com.mbeddr.doc.test.documents.doc2_1)">
   <persistence version="9" />
   <languages>
-    <use id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml" version="1" />
     <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="5" />
   </languages>
   <imports>
@@ -101,8 +100,8 @@
     </node>
   </node>
   <node concept="1_1swa" id="2khznRHyxyJ">
-    <property role="yApLE" value="1" />
     <property role="TrG5h" value="sub_document_3" />
+    <property role="yApLE" value="1" />
     <ref role="G9hjw" to="gzw8:2khznRHyx6c" resolve="Config" />
     <node concept="1_0VNX" id="2khznRHyxyK" role="1_0VJ0">
       <property role="TrG5h" value="thirdsection" />
@@ -140,6 +139,22 @@
     </node>
     <node concept="1_0j5j" id="4eRbT2iDalh" role="1DXQ57">
       <ref role="1_0j5g" node="2khznRHyx6K" resolve="sub_document_2" />
+    </node>
+  </node>
+  <node concept="1_1swa" id="4yqSQKZg0Sn">
+    <property role="TrG5h" value="sub_document_forStableID" />
+    <property role="yApLE" value="3" />
+    <ref role="G9hjw" to="gzw8:2khznRHyx6c" resolve="Config" />
+    <node concept="1_0VNX" id="4yqSQKZg3eo" role="1_0VJ0">
+      <property role="TrG5h" value="sectionSHouldHaveStableId" />
+      <property role="1_0VJr" value="The thrid section" />
+      <node concept="1_0LV8" id="4yqSQKZg3ep" role="1_0VJ0">
+        <node concept="19SGf9" id="4yqSQKZg3eq" role="1_0LWR">
+          <node concept="19SUe$" id="4yqSQKZg3er" role="19SJt6">
+            <property role="19SUeA" value="(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
