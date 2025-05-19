@@ -505,14 +505,6 @@
           <node concept="10P_77" id="27FrVSvIorI" role="3clF45" />
           <node concept="3clFbS" id="27FrVSvIorJ" role="3clF47">
             <node concept="3cpWs8" id="27FrVSvIorK" role="3cqZAp">
-              <node concept="15s5l7" id="7am4gyMG6QI" role="lGtFl">
-                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Variable 'x' initializer is redundant&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/963887337804010668]&quot;;" />
-                <property role="huDt6" value="Warning: Variable 'x' initializer is redundant" />
-              </node>
-              <node concept="15s5l7" id="7am4gyMG6lB" role="lGtFl">
-                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
-                <property role="huDt6" value="Warning: Unused variable" />
-              </node>
               <node concept="3cpWsn" id="27FrVSvIorL" role="3cpWs9">
                 <property role="TrG5h" value="x" />
                 <node concept="2I9FWS" id="27FrVSvIorS" role="1tU5fm" />
@@ -520,6 +512,14 @@
                   <ref role="3cqZAo" node="27FrVSvIorE" resolve="nodesToRefactor" />
                   <node concept="raruj" id="27FrVSvIorO" role="lGtFl" />
                 </node>
+              </node>
+              <node concept="15s5l7" id="7am4gyMG6QI" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Variable 'x' initializer is redundant&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/963887337804010668]&quot;;" />
+                <property role="huDt6" value="Warning: Variable 'x' initializer is redundant" />
+              </node>
+              <node concept="15s5l7" id="7am4gyMG6lB" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
+                <property role="huDt6" value="Warning: Unused variable" />
               </node>
             </node>
             <node concept="3cpWs6" id="27FrVSvIorP" role="3cqZAp">
@@ -2067,6 +2067,9 @@
                         <node concept="3clFbH" id="7am4gyMDIZ8" role="3cqZAp" />
                         <node concept="3clFbF" id="3e2grRPIssT" role="3cqZAp">
                           <node concept="37vLTI" id="3e2grRPIssV" role="3clFbG">
+                            <node concept="37vLTw" id="3e2grRPIssZ" role="37vLTJ">
+                              <ref role="3cqZAo" node="3e2grRPIlw4" resolve="selection" />
+                            </node>
                             <node concept="2YIFZM" id="7am4gyMDTSB" role="37vLTx">
                               <ref role="37wK5l" to="b6pq:6yXTMcU3MEP" resolve="chooseTarget" />
                               <ref role="1Pybhc" to="b6pq:4GGI4_vgxXF" resolve="TargetChooserDialog" />
@@ -2110,9 +2113,6 @@
                               <node concept="37vLTw" id="7am4gyMDVKy" role="37wK5m">
                                 <ref role="3cqZAo" node="6yXTMcU3yKT" resolve="options" />
                               </node>
-                            </node>
-                            <node concept="37vLTw" id="3e2grRPIssZ" role="37vLTJ">
-                              <ref role="3cqZAo" node="3e2grRPIlw4" resolve="selection" />
                             </node>
                           </node>
                         </node>
@@ -2422,10 +2422,6 @@
                     <node concept="3clFbH" id="6OxU5jV7RLn" role="3cqZAp" />
                     <node concept="3clFbH" id="$a4wC9wrXS" role="3cqZAp" />
                     <node concept="3clFbF" id="6bN1lgb2MWD" role="3cqZAp">
-                      <node concept="15s5l7" id="7am4gyMDsLS" role="lGtFl">
-                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
-                        <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
-                      </node>
                       <node concept="37vLTI" id="$a4wC9wsni" role="3clFbG">
                         <node concept="3K4zz7" id="$a4wC9wsvd" role="37vLTx">
                           <node concept="2OqwBi" id="$a4wC9wsA4" role="3K4E3e">
@@ -2494,6 +2490,10 @@
                         <node concept="37vLTw" id="6bN1lgb2MWC" role="37vLTJ">
                           <ref role="3cqZAo" node="6bN1lgb2Lti" resolve="node" />
                         </node>
+                      </node>
+                      <node concept="15s5l7" id="7am4gyMDsLS" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
+                        <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
                       </node>
                     </node>
                   </node>
@@ -2753,10 +2753,6 @@
     <node concept="fu6FP" id="3C$MSDk_1FP" role="ftER_">
       <node concept="3clFbS" id="3C$MSDk_1FR" role="2VODD2">
         <node concept="fuyK3" id="4BZFyk0pEV2" role="3cqZAp">
-          <node concept="15s5l7" id="7am4gyMDZnq" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
-            <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
-          </node>
           <node concept="2ShNRf" id="4BZFyk0pEV3" role="fuByb">
             <node concept="1pGfFk" id="3C$MSDk_dBM" role="2ShVmc">
               <ref role="37wK5l" node="3C$MSDk$FyQ" resolve="ToggleSingleAction" />
@@ -2783,15 +2779,19 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="fuyK3" id="3C$MSDk_i3G" role="3cqZAp">
-          <node concept="15s5l7" id="7am4gyMDZFS" role="lGtFl">
+          <node concept="15s5l7" id="7am4gyMDZnq" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
             <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
           </node>
+        </node>
+        <node concept="fuyK3" id="3C$MSDk_i3G" role="3cqZAp">
           <node concept="2YIFZM" id="3C$MSDk_hjC" role="fuByb">
             <ref role="37wK5l" to="qkt:~Separator.getInstance()" resolve="getInstance" />
             <ref role="1Pybhc" to="qkt:~Separator" resolve="Separator" />
+          </node>
+          <node concept="15s5l7" id="7am4gyMDZFS" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
+            <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
           </node>
         </node>
       </node>
@@ -2989,14 +2989,6 @@
           </node>
         </node>
         <node concept="3cpWs8" id="1WqRI525AzT" role="3cqZAp">
-          <node concept="15s5l7" id="7am4gyMHXvm" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
-            <property role="huDt6" value="Warning: Unused variable" />
-          </node>
-          <node concept="15s5l7" id="7am4gyMHUB_" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Variable 'hintId' initializer is redundant&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/963887337804010668]&quot;;" />
-            <property role="huDt6" value="Warning: Variable 'hintId' initializer is redundant" />
-          </node>
           <node concept="3cpWsn" id="1WqRI525AzW" role="3cpWs9">
             <property role="TrG5h" value="hintId" />
             <node concept="17QB3L" id="1WqRI525AzR" role="1tU5fm" />
@@ -3032,6 +3024,14 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="7am4gyMHXvm" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Unused variable&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/4056233746948448436]&quot;;" />
+            <property role="huDt6" value="Warning: Unused variable" />
+          </node>
+          <node concept="15s5l7" id="7am4gyMHUB_" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Variable 'hintId' initializer is redundant&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/963887337804010668]&quot;;" />
+            <property role="huDt6" value="Warning: Variable 'hintId' initializer is redundant" />
           </node>
         </node>
         <node concept="3clFbF" id="5RfdBauWe5Y" role="3cqZAp">
@@ -3699,10 +3699,6 @@
     <node concept="fu6FP" id="5_O4MwJHzkT" role="ftER_">
       <node concept="3clFbS" id="5_O4MwJHzkU" role="2VODD2">
         <node concept="fuyK3" id="5_O4MwJHzkV" role="3cqZAp">
-          <node concept="15s5l7" id="7am4gyMDYsu" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
-            <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
-          </node>
           <node concept="2ShNRf" id="5_O4MwJHzkW" role="fuByb">
             <node concept="1pGfFk" id="5_O4MwJLvtJ" role="2ShVmc">
               <ref role="37wK5l" node="5_O4MwJL0Ib" resolve="ToggleMultipleAction.NoHint" />
@@ -3724,6 +3720,10 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="7am4gyMDYsu" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
+            <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
           </node>
           <node concept="1W57fq" id="5_O4MwJL8qA" role="lGtFl">
             <node concept="3IZrLx" id="5_O4MwJL8qI" role="3IZSJc">
@@ -3780,23 +3780,23 @@
         </node>
         <node concept="3clFbH" id="5_O4MwJO94B" role="3cqZAp" />
         <node concept="fuyK3" id="5_O4MwJHzl7" role="3cqZAp">
-          <node concept="15s5l7" id="7am4gyMDXiu" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
-            <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
-          </node>
           <node concept="2YIFZM" id="5_O4MwJHzl8" role="fuByb">
             <ref role="37wK5l" to="qkt:~Separator.getInstance()" resolve="getInstance" />
             <ref role="1Pybhc" to="qkt:~Separator" resolve="Separator" />
           </node>
-        </node>
-        <node concept="fuyK3" id="5_O4MwJNRxJ" role="3cqZAp">
-          <node concept="15s5l7" id="7am4gyMDXjk" role="lGtFl">
+          <node concept="15s5l7" id="7am4gyMDXiu" role="lGtFl">
             <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
             <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
           </node>
+        </node>
+        <node concept="fuyK3" id="5_O4MwJNRxJ" role="3cqZAp">
           <node concept="2YIFZM" id="5_O4MwJNRxK" role="fuByb">
             <ref role="37wK5l" to="qkt:~Separator.getInstance()" resolve="getInstance" />
             <ref role="1Pybhc" to="qkt:~Separator" resolve="Separator" />
+          </node>
+          <node concept="15s5l7" id="7am4gyMDXjk" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: The node 'addJavaAction' is an instance of deprecated concept&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/8524227390952646895]&quot;;" />
+            <property role="huDt6" value="Warning: The node 'addJavaAction' is an instance of deprecated concept" />
           </node>
         </node>
       </node>
