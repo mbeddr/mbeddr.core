@@ -54,24 +54,19 @@ def bundledDeps = [
             exclude module: 'commons-math3'
             exclude module: 'SparseBitSet'
         }),
-        new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1', 'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
+        new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1',
+                                'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
             exclude module: 'stax-api'
         }),
         new BundledDep('jfreechart', ['org.jfree:jfreechart:1.5.5'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
-        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:8059'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
+        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.2'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
         new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
         new BundledDep('mockito', ['org.mockito:mockito-core:5.17.0'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
-        new BundledDep('xtext', ['org.eclipse.xtext:org.eclipse.xtext.xbase:2.38.0',
-                                 'org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.38.0',
-                                 'org.eclipse.xtext:org.eclipse.xtext.ecore:2.38.0',
-                                 'org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.32.0',
-                                 'org.eclipse.emf:org.eclipse.emf.ecore.xcore.lib:1.7.0'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecoretransformationutils.stubs', {
+        new BundledDep('ecore', ['org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.32.0'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs', {
             exclude module: 'aopalliance'
             exclude module: 'antlr-runtime'
             exclude module: 'org.eclipse.osgi'
             exclude module: 'org.eclipse.xtend.lib'
-            exclude module: 'asm-commons'
-            exclude module: 'log4j'
             exclude module: 'guava'
         })
 ]
@@ -101,6 +96,10 @@ bundledDeps.each {bd ->
             return finalName
         }
     }
+}
+
+tasks.register('resolveBundledLibraries') {
+    dependsOn << bundledDeps.collect {it.taskName }
 }
 
 tasks.register('resolveMpsLibraries', Sync) {
@@ -136,8 +135,8 @@ task build_platform(type: BuildLanguages, dependsOn: ['build_allScripts', build_
     description 'Build the mbeddr platform.'
     outputs.dir(new File(artifactsDir, 'com.mbeddr.platform/'))
     outputs.upToDateWhen { false }
+    dependsOn 'resolveBundledLibraries'
 }
-build_platform.dependsOn << bundledDeps.collect {it.taskName }
 
 task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
     description 'Copy the actions filter IntelliJ plugin to the MPS plugin\'s directory'
