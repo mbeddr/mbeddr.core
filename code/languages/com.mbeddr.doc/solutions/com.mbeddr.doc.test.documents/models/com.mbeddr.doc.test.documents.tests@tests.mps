@@ -31,17 +31,9 @@
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1216993439383" name="methods" index="1qtyYc" />
-        <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
-      <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
-        <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
-      </concept>
-      <concept id="1210673684636" name="jetbrains.mps.lang.test.structure.TestNodeAnnotation" flags="ng" index="3xLA65" />
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
-    </language>
-    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="2181941881730108005" name="com.mbeddr.doc.gen_xhtml.structure.InlineXmlElement" flags="ng" index="2zltFL" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -102,24 +94,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-    </language>
-    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
-      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
-        <property id="6666499814681541920" name="text" index="2pMdty" />
-      </concept>
-      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
-        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
-        <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
-        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
-        <child id="1622293396948928802" name="content" index="3o6s8t" />
-      </concept>
-      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
-        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
-        <child id="6666499814681541918" name="value" index="2pMdts" />
-      </concept>
-      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
-        <property id="1622293396948953704" name="value" index="3o6i5n" />
-      </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
@@ -270,45 +244,6 @@
         </node>
       </node>
     </node>
-    <node concept="1qefOq" id="4yqSQKZjZ0t" role="1SKRRt">
-      <node concept="2pNNFK" id="4yqSQKZjYN1" role="1qenE9">
-        <property role="2pNNFO" value="div" />
-        <node concept="2zltFL" id="4yqSQKZjYN2" role="3o6s8t">
-          <property role="qg3DV" value="false" />
-          <property role="2pNNFO" value="h1" />
-          <node concept="2pNUuL" id="4yqSQKZjYN3" role="2pNNFR">
-            <property role="2pNUuO" value="id" />
-            <node concept="2pMdtt" id="4yqSQKZjYN4" role="2pMdts">
-              <property role="2pMdty" value="sid5231743971202427791" />
-            </node>
-          </node>
-          <node concept="2pNUuL" id="4yqSQKZjYN5" role="2pNNFR">
-            <property role="2pNUuO" value="class" />
-            <node concept="2pMdtt" id="4yqSQKZjYN6" role="2pMdts">
-              <property role="2pMdty" value="section" />
-            </node>
-          </node>
-          <node concept="3o6iSG" id="4yqSQKZjYT5" role="3o6s8t">
-            <property role="3o6i5n" value="2 The thrid section" />
-          </node>
-          <node concept="3xLA65" id="4yqSQKZjZ0R" role="lGtFl">
-            <property role="TrG5h" value="expedctedHeaderWithStableID" />
-          </node>
-        </node>
-        <node concept="2pNNFK" id="4yqSQKZjYN8" role="3o6s8t">
-          <property role="2pNNFO" value="p" />
-          <node concept="2pNUuL" id="4yqSQKZjYN9" role="2pNNFR">
-            <property role="2pNUuO" value="class" />
-            <node concept="2pMdtt" id="4yqSQKZjYNa" role="2pMdts">
-              <property role="2pMdty" value="body" />
-            </node>
-          </node>
-          <node concept="3o6iSG" id="4yqSQKZjYT6" role="3o6s8t">
-            <property role="3o6i5n" value="(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1LZb2c" id="4yqSQKZiyP$" role="1SL9yI">
       <property role="TrG5h" value="CheckStableIDsCalculation" />
       <node concept="3cqZAl" id="4yqSQKZiyP_" role="3clF45" />
@@ -378,13 +313,13 @@
         </node>
         <node concept="TZ5HA" id="4yqSQKZiJu5" role="TZ5H$">
           <node concept="1dT_AC" id="4yqSQKZiJu6" role="1dT_Ay">
-            <property role="1dT_AB" value="content of the test model is copied into the transient model and IDs will change." />
+            <property role="1dT_AB" value="content of the test model is copied into the transient model and Node-IDs would change otherwise." />
           </node>
         </node>
       </node>
     </node>
     <node concept="1LZb2c" id="4yqSQKZkZX9" role="1SL9yI">
-      <property role="TrG5h" value="checkHTMLFileIsGenerated" />
+      <property role="TrG5h" value="checkMainDocHTMLFileIsGenerated" />
       <node concept="3cqZAl" id="4yqSQKZkZXa" role="3clF45" />
       <node concept="3clFbS" id="4yqSQKZkZXe" role="3clF47">
         <node concept="3cpWs8" id="4yqSQKZl008" role="3cqZAp">
@@ -490,6 +425,11 @@
             <node concept="10Nm6u" id="4yqSQKZlmvE" role="3uHU7w" />
             <node concept="37vLTw" id="4yqSQKZllEW" role="3uHU7B">
               <ref role="3cqZAo" node="4yqSQKZll0z" resolve="sectionHeader" />
+            </node>
+          </node>
+          <node concept="3_1$Yv" id="5CV8POq$0yx" role="3_9lra">
+            <node concept="Xl_RD" id="5CV8POq$1tK" role="3_1BAH">
+              <property role="Xl_RC" value="No stable ID found for header" />
             </node>
           </node>
         </node>
