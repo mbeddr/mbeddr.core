@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.doc.test.documents" uuid="4078ebaa-02fd-430a-ab03-975592a2372c" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -17,6 +17,7 @@
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
