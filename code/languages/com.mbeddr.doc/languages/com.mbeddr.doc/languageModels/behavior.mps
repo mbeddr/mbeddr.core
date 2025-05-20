@@ -8404,11 +8404,8 @@
                     <node concept="37vLTw" id="73FPRWNYFqn" role="37wK5m">
                       <ref role="3cqZAo" node="6jiGbW_zIT$" resolve="USER_OBJECT_KEY" />
                     </node>
-                    <node concept="1rXfSq" id="73FPRWNYFqg" role="37wK5m">
-                      <ref role="37wK5l" node="73FPRWNYEdD" resolve="computeStableId" />
-                      <node concept="37vLTw" id="73FPRWNYFqh" role="37wK5m">
-                        <ref role="3cqZAo" node="6jiGbW_zIQs" resolve="n" />
-                      </node>
+                    <node concept="37vLTw" id="5CV8POq$aFc" role="37wK5m">
+                      <ref role="3cqZAo" node="73FPRWNYESx" resolve="newStableId" />
                     </node>
                   </node>
                 </node>
