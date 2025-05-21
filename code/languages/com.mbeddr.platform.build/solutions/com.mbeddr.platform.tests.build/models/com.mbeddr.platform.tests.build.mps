@@ -521,6 +521,11 @@
             <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5T_MwWLRP3l" role="3bR37C">
+          <node concept="3bR9La" id="5T_MwWLRP3m" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOKCUm" resolve="com.mbeddr.mpsutil.compare" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4BxzwLdy2a8" role="2G$12L">
         <property role="BnDLt" value="true" />
