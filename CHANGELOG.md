@@ -7,6 +7,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # May 2025
 
+## com.mbeddr.doc
+
+### Fixed
+
+- PlantUML version changed from erroneously used old 8059 back to 1.2025.2. The erroneous update happened in commit
+  [d3e54084](https://github.com/mbeddr/mbeddr.core/commit/d3e540849808d1649a4728ac9a32a5c06d37ade2), and was merged
+  in [ee09cc31](https://github.com/mbeddr/mbeddr.core/commit/ee09cc3167c9943e3a193d2d2dc89d3e82fd1e35) in April 2025.
+
 ## com.mbeddr.mpsutil.process
 
 ### Fixed
