@@ -978,10 +978,10 @@
       </node>
     </node>
     <node concept="m$_wf" id="5fGcQI93Tz0" role="3989C9">
-      <property role="m$_wk" value="com.mbeddr.mpsutil.wizardwizard" />
+      <property role="m$_wk" value="com.mbeddr.mpsutil.wizard" />
       <node concept="3_J27D" id="5fGcQI93Tz1" role="m$_yQ">
         <node concept="3Mxwew" id="5fGcQI93Tz2" role="3MwsjC">
-          <property role="3MwjfP" value="com.mbeddr.mpsutil.wizardwizard" />
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.wizard" />
         </node>
       </node>
       <node concept="3_J27D" id="5fGcQI93Tz3" role="m$_w8">
@@ -1006,7 +1006,7 @@
       </node>
       <node concept="3_J27D" id="5fGcQI93Tz7" role="m_cZH">
         <node concept="3Mxwew" id="5fGcQI93Tz8" role="3MwsjC">
-          <property role="3MwjfP" value="com.mbeddr.mpsutil.wizardwizard" />
+          <property role="3MwjfP" value="com.mbeddr.mpsutil.wizard" />
         </node>
       </node>
       <node concept="2iUeEo" id="5fGcQI93Tz9" role="2iVFfd">
@@ -1015,7 +1015,7 @@
       </node>
       <node concept="3_J27D" id="5fGcQI93Tza" role="3s6cr7">
         <node concept="3Mxwew" id="5fGcQI93Tzb" role="3MwsjC">
-          <property role="3MwjfP" value="Wizard/Process Language from mbeddr.mpsutil" />
+          <property role="3MwjfP" value="Wizard Language from mbeddr.mpsutil" />
         </node>
       </node>
     </node>
@@ -17567,7 +17567,7 @@
         <node concept="pUk6x" id="76N1O$Kj6u7" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="5fGcQI97F2C" role="39821P">
-        <ref role="m_rDy" node="5fGcQI93Tz0" resolve="com.mbeddr.mpsutil.wizardwizard" />
+        <ref role="m_rDy" node="5fGcQI93Tz0" resolve="com.mbeddr.mpsutil.wizard" />
         <node concept="pUk6x" id="76N1O$Kj6u4" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="64SK4bcOniE" role="39821P">
