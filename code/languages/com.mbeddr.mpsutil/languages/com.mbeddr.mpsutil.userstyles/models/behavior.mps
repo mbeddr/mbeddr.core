@@ -138,7 +138,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="5l2JxZPaA8V">
-    <ref role="13h7C2" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+    <ref role="13h7C2" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
     <node concept="13hLZK" id="5l2JxZPaA8W" role="13h7CW">
       <node concept="3clFbS" id="5l2JxZPaA8X" role="2VODD2" />
     </node>
@@ -257,7 +257,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="1gJuyfgBF5W" role="3clF45">
-        <ref role="ehGHo" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+        <ref role="ehGHo" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
       </node>
     </node>
     <node concept="13i0hz" id="Vx4CqFL0da" role="13h7CS">
@@ -297,7 +297,7 @@
                         </node>
                         <node concept="3CFZ6_" id="Vx4CqFPw_P" role="2OqNvi">
                           <node concept="3CFYIy" id="Vx4CqFPwEo" role="3CFYIz">
-                            <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                            <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                           </node>
                         </node>
                       </node>
@@ -332,7 +332,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="Vx4CqFL0d$" role="3clF45">
-        <ref role="ehGHo" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+        <ref role="ehGHo" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
       </node>
     </node>
   </node>

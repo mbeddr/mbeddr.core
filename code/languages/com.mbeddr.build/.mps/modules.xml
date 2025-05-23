@@ -7,10 +7,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.tests.build/com.mbeddr.core.tests.build.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.tests.performance.build/com.mbeddr.core.tests.performance.build.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.build/build.msd" folder="ext" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform.tests.build/com.mbeddr.platform.tests.build.msd" folder="platform" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.platform/com.mbeddr.platform.msd" folder="platform" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.templates/com.mbeddr.build.templates.msd" folder="templates" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.xmodel.build/com.mbeddr.xmodel.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

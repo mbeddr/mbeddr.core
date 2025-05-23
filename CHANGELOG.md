@@ -7,13 +7,36 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # May 2025
 
+## com.mbeddr.doc
+
+### Fixed
+
+- PlantUML version changed from erroneously used old 8059 back to 1.2025.2. The erroneous update happened in commit
+  [d3e54084](https://github.com/mbeddr/mbeddr.core/commit/d3e540849808d1649a4728ac9a32a5c06d37ade2), and was merged
+  in [ee09cc31](https://github.com/mbeddr/mbeddr.core/commit/ee09cc3167c9943e3a193d2d2dc89d3e82fd1e35) in April 2025.
+
+## com.mbeddr.mpsutil.process
+
+### Fixed
+
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.process to com.mbeddr.mpsutil.wizard.
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.test to com.mbeddr.mpsutil.strings.
+
 ## com.mbeddr.mpsutil.actionsfilter
 
 - An exception (!app.isDispatchThread()) was fixed that was related to the initialization of the actionsfilter language.
 
 # April 2025
 
+## com.mbeddr.mpsutil.process
+
+### Changed
+
+- The language was renamed to com.mbeddr.mpsutil.wizard
+
 ## com.mbeddr.doc
+
+### Changed
 
 - 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
   to solution `com.mbeddr.spreadsheet.libs`.
@@ -26,6 +49,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
 
+## com.mbeddr.mpsutil.common
+
+### Added
+
+- Base classes for representing paths in instance trees have been added. This is a common use case, e.g. for implementing component architecture DSLs (see `InstancePath<>`).
+
 ## com.mbeddr:platform languages
 
 ### Changed
@@ -35,6 +64,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - SBOM file with the description of all used components (libraries) and their dependencies
+
+### Removed
+
+- The disabled language `com.mbeddr.mpsutil.ccmenu` was removed. To customize the code completion menu, please use [completion stylings](https://www.jetbrains.com/help/mps/editor.html#-bdbley_15).
 
 # February 2025
 
@@ -88,11 +121,21 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - A new language `com.mbeddr.mpsutil.collections` was added that adds support for a set type `nset` that use nodes as the values of the set. Equivalence of nodes is checked structurally. The hash code calculation is done for all properties and children and the first level of references. The runtime solution also contains a more general class `EquivalenceHashSet` to implement hashsets with arbitrary `equals` and `hashcode` methods.
 
+### Changes
+
+- The language `com.mbeddr.spreadsheat` was renamed to `com.mbeddr.spreadsheet`.
+
+### Removed
+
+- The language `com.mbeddr.mpsutil.projectview.favourites` was removed. Please use the MPS bookmarks manager instead: https://www.jetbrains.com/help/mps/navigating-through-the-source-code.html#use_bookmarks
+- The stub solution `org.apache.batik` were removed. Please use `de.itemis.stubs.batik` from MPS-Extensions instead.
+- The stub solution `org.xml` were removed. Please use `de.itemis.stubs.xml` from MPS-Extensions instead.
+
 # October 2024
 
 ## com.mbeddr.mpsutil
 
-### Feature
+### Added
 
 - Adds a caching mechanism for caching the retrieval of 'ILogicalChild' by 'ILogicalChildOwner'
 
