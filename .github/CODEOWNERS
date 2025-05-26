@@ -1,0 +1,5 @@
+# code/ needs a review before merging, everything else does not
+code/ @sergej-koscejev @slisson
+
+# CODEOWNERS need review from code owners
+.github/CODEOWNERS @sergej-koscejev @slisson
