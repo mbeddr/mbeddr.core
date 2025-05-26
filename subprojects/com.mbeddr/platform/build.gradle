@@ -62,7 +62,7 @@ def bundledDeps = [
         new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.2'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
         new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
         new BundledDep('mockito', ['org.mockito:mockito-core:5.18.0'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
-        new BundledDep('ecore', ['org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.32.0'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs', {
+        new BundledDep('ecore', ['org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.33.0'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs', {
             exclude module: 'aopalliance'
             exclude module: 'antlr-runtime'
             exclude module: 'org.eclipse.osgi'
