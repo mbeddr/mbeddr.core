@@ -14,6 +14,7 @@
   <dependencies>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">f39336d3-1288-47ee-bbfe-ad2ea7e4504e(com.mbeddr.mpsutil.extensionclass)</dependency>
+    <dependency reexport="false">1817cee4-e994-4411-a9bb-ec664fea95f2(test.com.mbeddr.mpsutil.extensionclass.source)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f39336d3-1288-47ee-bbfe-ad2ea7e4504e:com.mbeddr.mpsutil.extensionclass" version="1" />
@@ -39,6 +40,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
     <module reference="460ef3f4-0093-4c53-8c6a-bb8c36a7a621(test.com.mbeddr.mpsutil.extensionclass)" version="0" />
+    <module reference="1817cee4-e994-4411-a9bb-ec664fea95f2(test.com.mbeddr.mpsutil.extensionclass.source)" version="0" />
   </dependencyVersions>
 </solution>
 

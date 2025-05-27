@@ -129,10 +129,10 @@
         <node concept="3clFbF" id="75yNFwrUk91" role="3cqZAp">
           <node concept="3K4zz7" id="75yNFwrUkxG" role="3clFbG">
             <node concept="Xl_RD" id="75yNFwrUkzd" role="3K4E3e">
-              <property role="Xl_RC" value="Make User Configurable" />
+              <property role="Xl_RC" value="Make it Customizable by the User" />
             </node>
             <node concept="Xl_RD" id="75yNFwrUkAY" role="3K4GZi">
-              <property role="Xl_RC" value="Remove User Configurable" />
+              <property role="Xl_RC" value="Make it not Customizable by the User" />
             </node>
             <node concept="2OqwBi" id="75yNFwrUklT" role="3K4Cdx">
               <node concept="2OqwBi" id="75yNFwrUkby" role="2Oq$k0">
@@ -141,7 +141,7 @@
                 </node>
                 <node concept="3CFZ6_" id="75yNFwrUkhg" role="2OqNvi">
                   <node concept="3CFYIy" id="75yNFwrUkiI" role="3CFYIz">
-                    <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                    <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                   </node>
                 </node>
               </node>
@@ -183,7 +183,7 @@
                   </node>
                   <node concept="3CFZ6_" id="75yNFwrUljU" role="2OqNvi">
                     <node concept="3CFYIy" id="75yNFwrUll9" role="3CFYIz">
-                      <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                      <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                     </node>
                   </node>
                 </node>
@@ -198,7 +198,7 @@
               </node>
               <node concept="3CFZ6_" id="75yNFwrUkQl" role="2OqNvi">
                 <node concept="3CFYIy" id="75yNFwrUkR$" role="3CFYIz">
-                  <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                  <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                 </node>
               </node>
             </node>
@@ -214,7 +214,7 @@
                     </node>
                     <node concept="3CFZ6_" id="75yNFwrUlQu" role="2OqNvi">
                       <node concept="3CFYIy" id="75yNFwrUlRH" role="3CFYIz">
-                        <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                        <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                       </node>
                     </node>
                   </node>
@@ -270,10 +270,10 @@
         <node concept="3clFbF" id="1gJuyfgBDP$" role="3cqZAp">
           <node concept="3K4zz7" id="1gJuyfgBDP_" role="3clFbG">
             <node concept="Xl_RD" id="1gJuyfgBDPA" role="3K4E3e">
-              <property role="Xl_RC" value="Make User Configurable" />
+              <property role="Xl_RC" value="Make it Customizable by the User" />
             </node>
             <node concept="Xl_RD" id="1gJuyfgBDPB" role="3K4GZi">
-              <property role="Xl_RC" value="Remove User Configurable" />
+              <property role="Xl_RC" value="Make it not Customizable by the User" />
             </node>
             <node concept="2OqwBi" id="1gJuyfgBDPC" role="3K4Cdx">
               <node concept="2OqwBi" id="1gJuyfgBDPD" role="2Oq$k0">
@@ -282,7 +282,7 @@
                 </node>
                 <node concept="3CFZ6_" id="1gJuyfgBDPF" role="2OqNvi">
                   <node concept="3CFYIy" id="1gJuyfgBDPG" role="3CFYIz">
-                    <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                    <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                   </node>
                 </node>
               </node>
@@ -324,7 +324,7 @@
                   </node>
                   <node concept="3CFZ6_" id="1gJuyfgBDPX" role="2OqNvi">
                     <node concept="3CFYIy" id="1gJuyfgBDPY" role="3CFYIz">
-                      <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                      <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                     </node>
                   </node>
                 </node>
@@ -339,7 +339,7 @@
               </node>
               <node concept="3CFZ6_" id="1gJuyfgBDQ3" role="2OqNvi">
                 <node concept="3CFYIy" id="1gJuyfgBDQ4" role="3CFYIz">
-                  <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                  <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                 </node>
               </node>
             </node>
@@ -355,7 +355,7 @@
                     </node>
                     <node concept="3CFZ6_" id="1gJuyfgBDQc" role="2OqNvi">
                       <node concept="3CFYIy" id="1gJuyfgBDQd" role="3CFYIz">
-                        <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserConfigurable" />
+                        <ref role="3CFYIx" to="6asz:75yNFwrT_dH" resolve="UserStyle" />
                       </node>
                     </node>
                   </node>
