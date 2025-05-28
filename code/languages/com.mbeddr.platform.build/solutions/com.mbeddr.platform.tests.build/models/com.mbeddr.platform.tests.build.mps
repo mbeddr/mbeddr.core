@@ -2898,10 +2898,11 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.doc.test.documents" />
         <property role="3LESm3" value="4078ebaa-02fd-430a-ab03-975592a2372c" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
         <node concept="3rtmxn" id="3xFG3bj5cRg" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cRh" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cRi" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+              <property role="3qWCbO" value="icons/**, resources/**, doc_gen/**" />
             </node>
             <node concept="398BVA" id="3xFG3bj5cRj" role="3LXTmr">
               <ref role="398BVh" node="7eF9rfAnzU3" resolve="mbeddr.github.core.home" />
@@ -2980,6 +2981,26 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4yqSQKZiSYC" role="3bR37C">
+          <node concept="3bR9La" id="4yqSQKZiSYD" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:1YMM4SJ2m0" resolve="com.mbeddr.doc" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5CV8POqzRMh" role="3bR37C">
+          <node concept="3bR9La" id="5CV8POqzRMi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5CV8POqzRMj" role="3bR37C">
+          <node concept="3bR9La" id="5CV8POqzRMk" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5CV8POqzRMl" role="3bR37C">
+          <node concept="3bR9La" id="5CV8POqzRMm" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="7eF9rfAnzVt" role="1hWBAP">
@@ -3051,6 +3072,9 @@
       </node>
       <node concept="22LTRM" id="6n0otOpmfAs" role="22LTRK">
         <ref role="22LTRN" node="6n0otOpkQ9s" resolve="test.com.mbeddr.mpsutil.logicalChild" />
+      </node>
+      <node concept="22LTRM" id="4yqSQKZiTcM" role="22LTRK">
+        <ref role="22LTRN" node="4pIcGABAzoW" resolve="com.mbeddr.doc.test.documents" />
       </node>
     </node>
     <node concept="2igEWh" id="3HpWboH_Z$G" role="1hWBAP">
