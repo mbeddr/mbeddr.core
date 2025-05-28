@@ -542,8 +542,16 @@
         </node>
       </node>
     </node>
+    <node concept="$CzcT" id="4yqSQKZf0cK" role="1_0VJ0">
+      <node concept="1_0j5j" id="4yqSQKZf0cM" role="$CzcU">
+        <ref role="1_0j5g" node="4yqSQKZf08U" resolve="SubDocumentForDirectInclude" />
+      </node>
+    </node>
     <node concept="1_0j5j" id="1Gd_uyNeHgT" role="1DXQ57">
       <ref role="1_0j5g" node="1Gd_uyNeHer" resolve="SubDocument" />
+    </node>
+    <node concept="1_0j5j" id="4yqSQKZf0cO" role="1DXQ57">
+      <ref role="1_0j5g" node="4yqSQKZf08U" resolve="SubDocumentForDirectInclude" />
     </node>
   </node>
   <node concept="1_08Dk" id="1Gd_uyNesUv">
@@ -597,6 +605,22 @@
       </node>
     </node>
     <node concept="1YFc4a" id="7YublcAIHp1" role="2wNnkt" />
+  </node>
+  <node concept="1_1swa" id="4yqSQKZf08U">
+    <property role="TrG5h" value="SubDocumentForDirectInclude" />
+    <property role="yApLE" value="3" />
+    <ref role="G9hjw" node="5xsBLDLCa4c" resolve="MarkdownConfig" />
+    <node concept="1_0VNX" id="4yqSQKZf0ab" role="1_0VJ0">
+      <property role="TrG5h" value="ThirdSection" />
+      <property role="1_0VJr" value="The section" />
+      <node concept="1_0LV8" id="4yqSQKZf0ac" role="1_0VJ0">
+        <node concept="19SGf9" id="4yqSQKZf0ad" role="1_0LWR">
+          <node concept="19SUe$" id="4yqSQKZf0ae" role="19SJt6">
+            <property role="19SUeA" value="text for the third section - &#10;The SIDs of the generated links from the TOC should stay identical after multiple &#10;generation runs. " />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

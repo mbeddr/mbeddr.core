@@ -325,6 +325,30 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet">
       <concept id="3344436107830227889" name="jetbrains.mps.make.facet.structure.ForeignParametersComponentExpression" flags="nn" index="2bn25q" />
       <concept id="3344436107830227888" name="jetbrains.mps.make.facet.structure.ForeignParametersExpression" flags="nn" index="2bn25r">
@@ -448,6 +472,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -4566,6 +4593,78 @@
     <node concept="3uibUv" id="3kcKtVhMzZm" role="EKbjA">
       <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
     </node>
+  </node>
+  <node concept="312cEu" id="4XyruUDBFl$">
+    <property role="TrG5h" value="DocGeneratorHelper" />
+    <node concept="2tJIrI" id="2JVFIvwCtAD" role="jymVt" />
+    <node concept="2YIFZL" id="52iEUv_OK3m" role="jymVt">
+      <property role="TrG5h" value="getOriginalStableId" />
+      <node concept="3Tm1VV" id="52iEUv_OK3n" role="1B3o_S" />
+      <node concept="17QB3L" id="52iEUv_OK3o" role="3clF45" />
+      <node concept="37vLTG" id="52iEUv_OK3d" role="3clF46">
+        <property role="TrG5h" value="originalNode" />
+        <node concept="3Tqbb2" id="52iEUv_OK3e" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="52iEUv_OK2R" role="3clF47">
+        <node concept="3clFbF" id="52iEUv_OK2Z" role="3cqZAp">
+          <node concept="3K4zz7" id="52iEUv_OK30" role="3clFbG">
+            <node concept="2OqwBi" id="52iEUv_OK31" role="3K4E3e">
+              <node concept="1PxgMI" id="52iEUv_OK32" role="2Oq$k0">
+                <node concept="chp4Y" id="52iEUv_OK33" role="3oSUPX">
+                  <ref role="cht4Q" to="2c95:6jiGbW_JBH_" resolve="IDocReferencable" />
+                </node>
+                <node concept="37vLTw" id="52iEUv_OK34" role="1m5AlR">
+                  <ref role="3cqZAo" node="52iEUv_OK3d" resolve="originalNode" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="52iEUv_OK35" role="2OqNvi">
+                <ref role="37wK5l" to="4gky:6jiGbW_aIil" resolve="stableId" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="52iEUv_OK36" role="3K4Cdx">
+              <node concept="37vLTw" id="52iEUv_OK37" role="2Oq$k0">
+                <ref role="3cqZAo" node="52iEUv_OK3d" resolve="originalNode" />
+              </node>
+              <node concept="1mIQ4w" id="52iEUv_OK38" role="2OqNvi">
+                <node concept="chp4Y" id="52iEUv_OK39" role="cj9EA">
+                  <ref role="cht4Q" to="2c95:6jiGbW_JBH_" resolve="IDocReferencable" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="6jiGbW_zKoi" role="3K4GZi">
+              <ref role="1Pybhc" to="4gky:6jiGbW_zIPK" resolve="StableIdHelper" />
+              <ref role="37wK5l" to="4gky:6jiGbW_zIQb" resolve="getStableId" />
+              <node concept="37vLTw" id="3x8tM34l6Ul" role="37wK5m">
+                <ref role="3cqZAo" node="52iEUv_OK3d" resolve="originalNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4XyruUDBaii" role="lGtFl">
+        <node concept="TZ5HA" id="4XyruUDBaij" role="TZ5H$">
+          <node concept="1dT_AC" id="4XyruUDBaik" role="1dT_Ay">
+            <property role="1dT_AB" value="Tries to get the stable ID from the original model in case it was a IDocReferencable" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3x8tM34ld_8" role="TZ5H$">
+          <node concept="1dT_AC" id="3x8tM34ld_9" role="1dT_Ay">
+            <property role="1dT_AB" value="Otherwise generates a new stable ID" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4XyruUDBail" role="3nqlJM">
+          <property role="TUZQ4" value=" from original imput model" />
+          <node concept="zr_55" id="4XyruUDBain" role="zr_5Q">
+            <ref role="zr_51" node="52iEUv_OK3d" resolve="originalNode" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4XyruUDBair" role="3nqlJM">
+          <property role="x79VB" value="stable id based on the node id from the original model" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4XyruUDBFmR" role="jymVt" />
+    <node concept="3Tm1VV" id="4XyruUDBFl_" role="1B3o_S" />
   </node>
 </model>
 
