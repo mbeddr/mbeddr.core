@@ -24401,6 +24401,35 @@
         </node>
       </node>
       <node concept="3clFbS" id="1GW3SvfRxfI" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvberwg" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvberwh" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvberwi" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvberwj" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvberwk" role="2Oq$k0">
+                <ref role="3cqZAo" node="1GW3SvfRxfF" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvberwl" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvberwm" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvberwn" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvberwo" role="3cqZAp">
+              <node concept="3clFbT" id="1FXfFvberwp" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="1FXfFvberwq" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvberwr" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvberws" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvberwh" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1GW3SvfZ3KB" role="3cqZAp">
           <node concept="3cpWsn" id="1GW3SvfZ3KC" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -24412,14 +24441,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="1GW3SvfZofZ" role="10QFUP">
-                <node concept="2EnYce" id="1GW3SvfZnII" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1GW3SvfZdrn" role="2Oq$k0">
-                    <node concept="37vLTw" id="1GW3SvfZcKw" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1GW3SvfRxfF" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="1GW3SvfZe2g" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbeu4T" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvbetM7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvberwh" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="1GW3SvfZ3KL" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -24466,6 +24490,33 @@
         <node concept="10P_77" id="1GW3SvfRxfU" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="1GW3SvfRxfV" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvbevbs" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvbevbt" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvbevbu" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvbevbv" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvbevbw" role="2Oq$k0">
+                <ref role="3cqZAo" node="1GW3SvfRxfQ" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvbevbx" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvbevby" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvbevbz" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvbevb$" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="1FXfFvbevbA" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvbevbB" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvbevbC" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvbevbt" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="1GW3SvfZfb6" role="3cqZAp">
           <node concept="3cpWsn" id="1GW3SvfZfb7" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -24477,14 +24528,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="1GW3SvfZpPX" role="10QFUP">
-                <node concept="2EnYce" id="1GW3SvfZrfo" role="2Oq$k0">
-                  <node concept="2EnYce" id="1GW3SvfZqvN" role="2Oq$k0">
-                    <node concept="37vLTw" id="1GW3SvfZfbe" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1GW3SvfRxfQ" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="1GW3SvfZfbf" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbewjx" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvbez2c" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvbevbt" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="1GW3SvfZfbg" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -24796,6 +24842,35 @@
         </node>
       </node>
       <node concept="3clFbS" id="vqDSpafUbf" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvb9Wr9" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvb9Wra" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvb9W4r" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvb9Wrb" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvb9Wrc" role="2Oq$k0">
+                <ref role="3cqZAo" node="vqDSpafUbc" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvb9Wrd" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvb9Yvn" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvb9Yvp" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvba8bG" role="3cqZAp">
+              <node concept="3clFbT" id="1FXfFvbaamt" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="1FXfFvba3mg" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvba5au" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvba2aN" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvb9Wra" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="vqDSpafUbg" role="3cqZAp">
           <node concept="3cpWsn" id="vqDSpafUbh" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -24807,14 +24882,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="vqDSpafUbl" role="10QFUP">
-                <node concept="2EnYce" id="vqDSpafUbm" role="2Oq$k0">
-                  <node concept="2OqwBi" id="vqDSpafUbn" role="2Oq$k0">
-                    <node concept="37vLTw" id="vqDSpafUbo" role="2Oq$k0">
-                      <ref role="3cqZAo" node="vqDSpafUbc" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="vqDSpafUbp" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbbsh7" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvb9Wre" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvb9Wra" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="vqDSpafUbq" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -24861,6 +24931,33 @@
         <node concept="10P_77" id="vqDSpafUbD" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="vqDSpafUbE" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvb9IPW" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvb9IPX" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvb9IvG" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvb9IPY" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvb9IPZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="vqDSpafUb_" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvb9IQ0" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvb9L5U" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvb9L5W" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvb9UWq" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="1FXfFvb9Pgf" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvb9RV_" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvb9O5a" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvb9IPX" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="vqDSpafUbF" role="3cqZAp">
           <node concept="3cpWsn" id="vqDSpafUbG" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -24872,14 +24969,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="vqDSpafUbK" role="10QFUP">
-                <node concept="2EnYce" id="vqDSpafUbL" role="2Oq$k0">
-                  <node concept="2EnYce" id="vqDSpafUbM" role="2Oq$k0">
-                    <node concept="37vLTw" id="vqDSpafUbN" role="2Oq$k0">
-                      <ref role="3cqZAo" node="vqDSpafUb_" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="vqDSpafUbO" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvb9VV6" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvb9IQ1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvb9IPX" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="vqDSpafUbP" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -25340,6 +25432,35 @@
         </node>
       </node>
       <node concept="3clFbS" id="vqDSpasZXw" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvbb6$W" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvbb6$X" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvbb61s" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvbb6$Y" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvbb6$Z" role="2Oq$k0">
+                <ref role="3cqZAo" node="vqDSpasZXt" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvbb6_0" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvbb8Ik" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvbb8Im" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvbbhPg" role="3cqZAp">
+              <node concept="3clFbT" id="1FXfFvbbkeA" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="1FXfFvbbcGf" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvbbevG" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvbbbBn" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvbb6$X" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="vqDSpasZXx" role="3cqZAp">
           <node concept="3cpWsn" id="vqDSpasZXy" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -25351,14 +25472,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="vqDSpasZXA" role="10QFUP">
-                <node concept="2EnYce" id="vqDSpasZXB" role="2Oq$k0">
-                  <node concept="2OqwBi" id="vqDSpasZXC" role="2Oq$k0">
-                    <node concept="37vLTw" id="vqDSpasZXD" role="2Oq$k0">
-                      <ref role="3cqZAo" node="vqDSpasZXt" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="vqDSpasZXE" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbbrI1" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvbb6_1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvbb6$X" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="vqDSpasZXF" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -25405,6 +25521,33 @@
         <node concept="10P_77" id="vqDSpasZXU" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="vqDSpasZXV" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvbbkBR" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvbbkBS" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvbbkBT" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvbbkBU" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvbbkBV" role="2Oq$k0">
+                <ref role="3cqZAo" node="vqDSpasZXQ" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvbbkBW" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvbbkBX" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvbbkBY" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvbbkBZ" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="1FXfFvbbkC1" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvbbkC2" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvbbkC3" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvbbkBS" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="vqDSpasZXW" role="3cqZAp">
           <node concept="3cpWsn" id="vqDSpasZXX" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -25416,14 +25559,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="vqDSpasZY1" role="10QFUP">
-                <node concept="2EnYce" id="vqDSpasZY2" role="2Oq$k0">
-                  <node concept="2EnYce" id="vqDSpasZY3" role="2Oq$k0">
-                    <node concept="37vLTw" id="vqDSpasZY4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="vqDSpasZXQ" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="vqDSpasZY5" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbbrqe" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvbbr0y" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvbbkBS" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="vqDSpasZY6" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -25753,6 +25891,35 @@
         </node>
       </node>
       <node concept="3clFbS" id="55oOaAFbF8Q" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvbcq0a" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvbcq0b" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvbcq0c" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvbcq0d" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvbcq0e" role="2Oq$k0">
+                <ref role="3cqZAo" node="55oOaAFbF8N" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvbcq0f" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvbcq0g" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvbcq0h" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvbcq0i" role="3cqZAp">
+              <node concept="3clFbT" id="1FXfFvbcq0j" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="1FXfFvbcq0k" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvbcq0l" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvbcq0m" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvbcq0b" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="55oOaAFbF8R" role="3cqZAp">
           <node concept="3cpWsn" id="55oOaAFbF8S" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -25764,14 +25931,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="55oOaAFbF8W" role="10QFUP">
-                <node concept="2EnYce" id="55oOaAFbF8X" role="2Oq$k0">
-                  <node concept="2OqwBi" id="55oOaAFbF8Y" role="2Oq$k0">
-                    <node concept="37vLTw" id="55oOaAFbF8Z" role="2Oq$k0">
-                      <ref role="3cqZAo" node="55oOaAFbF8N" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="55oOaAFbF90" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbct50" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvbcsFG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvbcq0b" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="55oOaAFbF91" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
@@ -25818,6 +25980,33 @@
         <node concept="10P_77" id="55oOaAFbF9g" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="55oOaAFbF9h" role="3clF47">
+        <node concept="3cpWs8" id="1FXfFvbcu4I" role="3cqZAp">
+          <node concept="3cpWsn" id="1FXfFvbcu4J" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1FXfFvbcu4K" role="1tU5fm">
+              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+            </node>
+            <node concept="2OqwBi" id="1FXfFvbcu4L" role="33vP2m">
+              <node concept="37vLTw" id="1FXfFvbcu4M" role="2Oq$k0">
+                <ref role="3cqZAo" node="55oOaAFbF9c" resolve="event" />
+              </node>
+              <node concept="liA8E" id="1FXfFvbcu4N" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1FXfFvbcu4O" role="3cqZAp">
+          <node concept="3clFbS" id="1FXfFvbcu4P" role="3clFbx">
+            <node concept="3cpWs6" id="1FXfFvbcu4Q" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="1FXfFvbcu4S" role="3clFbw">
+            <node concept="10Nm6u" id="1FXfFvbcu4T" role="3uHU7w" />
+            <node concept="37vLTw" id="1FXfFvbcu4U" role="3uHU7B">
+              <ref role="3cqZAo" node="1FXfFvbcu4J" resolve="project" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="55oOaAFbF9i" role="3cqZAp">
           <node concept="3cpWsn" id="55oOaAFbF9j" role="3cpWs9">
             <property role="TrG5h" value="viewer" />
@@ -25829,14 +26018,9 @@
                 <ref role="3uigEE" node="2HzhasNzNEW" resolve="SearchViewer" />
               </node>
               <node concept="2EnYce" id="55oOaAFbF9n" role="10QFUP">
-                <node concept="2EnYce" id="55oOaAFbF9o" role="2Oq$k0">
-                  <node concept="2EnYce" id="55oOaAFbF9p" role="2Oq$k0">
-                    <node concept="37vLTw" id="55oOaAFbF9q" role="2Oq$k0">
-                      <ref role="3cqZAo" node="55oOaAFbF9c" resolve="event" />
-                    </node>
-                    <node concept="liA8E" id="55oOaAFbF9r" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getProject()" resolve="getProject" />
-                    </node>
+                <node concept="2OqwBi" id="1FXfFvbc_XN" role="2Oq$k0">
+                  <node concept="37vLTw" id="1FXfFvbc_$7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1FXfFvbcu4J" resolve="project" />
                   </node>
                   <node concept="LR4U6" id="55oOaAFbF9s" role="2OqNvi">
                     <ref role="LR4U5" node="2HzhasNzNDO" resolve="MbeddrSearchViewer" />
