@@ -276,4 +276,11 @@ cyclonedxBom {
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
+    // Include runtime deps only (bundled libs, language libs, mps, jbr)
+    def runtimeConfigs = bundledDeps.collect {it.configName }
+    runtimeConfigs << configurations.mpsLibraries.name
+    // TODO: mps config cannot be handled by cyclonedxBom, since it's located in com.mbeddr project
+    //runtimeConfigs << project(':com.mbeddr').configurations.mps.name
+    runtimeConfigs << 'jbr'
+    includeConfigs = runtimeConfigs
 }
