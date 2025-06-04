@@ -58,7 +58,6 @@
     <import index="yyf4" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.util(MPS.OpenAPI/)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
     <import index="ahli" ref="r:44ccebce-f3a6-4238-afbf-c4a18f6348c1(com.mbeddr.core.buildconfig.behavior)" implicit="true" />
-    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
     <import index="e4sx" ref="r:61fb604a-2ab8-423c-94bd-dec61f3a6b61(com.mbeddr.mpsutil.lang.plugin.extensions.dummy)" implicit="true" />
   </imports>
   <registry>
@@ -322,9 +321,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -6207,9 +6203,9 @@
                         <node concept="3cpWs8" id="2cNe_D14Awo" role="3cqZAp">
                           <node concept="3cpWsn" id="2cNe_D14Awn" role="3cpWs9">
                             <property role="3TUv4t" value="false" />
-                            <property role="TrG5h" value="project" />
+                            <property role="TrG5h" value="mpsProject" />
                             <node concept="3uibUv" id="2cNe_D14CjT" role="1tU5fm">
-                              <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+                              <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
                             </node>
                             <node concept="2OqwBi" id="2cNe_D14Axj" role="33vP2m">
                               <node concept="37vLTw" id="2cNe_D14Axi" role="2Oq$k0">
@@ -6580,16 +6576,8 @@
                             </node>
                             <node concept="liA8E" id="2cNe_D17S1u" role="2OqNvi">
                               <ref role="37wK5l" to="fpme:~TemplateFiller.fillProjectWithModules(jetbrains.mps.project.MPSProject)" resolve="fillProjectWithModules" />
-                              <node concept="2OqwBi" id="2cNe_D17T9V" role="37wK5m">
-                                <node concept="37vLTw" id="2cNe_D17S1H" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2cNe_D14Awn" resolve="project" />
-                                </node>
-                                <node concept="liA8E" id="2cNe_D17TDa" role="2OqNvi">
-                                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                                  <node concept="3VsKOn" id="2cNe_D17U19" role="37wK5m">
-                                    <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
-                                  </node>
-                                </node>
+                              <node concept="37vLTw" id="2cNe_D17S1H" role="37wK5m">
+                                <ref role="3cqZAo" node="2cNe_D14Awn" resolve="mpsProject" />
                               </node>
                             </node>
                           </node>
