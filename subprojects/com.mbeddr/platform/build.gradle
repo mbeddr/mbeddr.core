@@ -54,7 +54,7 @@ def bundledDeps = [
             exclude module: 'stax-api'
         }),
         new BundledDep('jfreechart', ['org.jfree:jfreechart:1.5.6'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
-        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.2'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
+        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.3'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
         new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
         new BundledDep('mockito', ['org.mockito:mockito-core:5.18.0'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
         new BundledDep('ecore', ['org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.33.0'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs', {
@@ -271,4 +271,11 @@ cyclonedxBom {
     outputFormat = "json"
     // Don't include license texts in generated SBOMs
     includeLicenseText = false
+    // Include runtime deps only (bundled libs, language libs, mps, jbr)
+    def runtimeConfigs = bundledDeps.collect {it.configName }
+    runtimeConfigs << configurations.mpsLibraries.name
+    // TODO: mps config cannot be handled by cyclonedxBom, since it's located in com.mbeddr project
+    //runtimeConfigs << project(':com.mbeddr').configurations.mps.name
+    runtimeConfigs << 'jbr'
+    includeConfigs = runtimeConfigs
 }

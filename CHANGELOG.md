@@ -13,6 +13,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - prevent exception in MbeddrSearchViewer actions initialization due to null value of the project event parameter
 
+## com.mbeddr.platform publication
+
+### Changed
+
+- Published SBOM contains dependencies only from runtime configurations. This covers bundled libraries and all runtime 
+  dependencies like used language libraries, JBR and MPS. The latter is however currently not yet included due to a restriction 
+  of the CycloneDX gradle plugin.
+
 # May 2025
 
 ## com.mbeddr.doc
