@@ -52,6 +52,11 @@
       "matchPackageNames": ["com.jetbrains.jdk:*"],
       "matchBaseBranches": ["!/^master$/"],
       "enabled": false
+    },
+
+    {
+      "matchPackageNames" : ["net.sourceforge.plantuml:plantuml"],
+      "allowedVersions": "< 2000"
     }
   ]
 }
