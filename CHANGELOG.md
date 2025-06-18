@@ -7,6 +7,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # June 2025
 
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixed
+
+- The previous fix from May 2025 (merged from 2023.2) introduced a different problem due to changed threading rules in
+  2024.1: "PluginException: Access from Event Dispatch Thread (EDT) is not allowed;
+  see https://jb.gg/ij-platform-threading for details". This is now fixed.
+
 ## com.mbeddr.platform publication
 
 ### Changed
