@@ -19,6 +19,7 @@
       </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
         <child id="6666499814681415861" name="attributes" index="2pNNFR" />
         <child id="1622293396948928802" name="content" index="3o6s8t" />
       </concept>
@@ -18740,6 +18741,7 @@
         <property role="2pNNFO" value="extensions" />
         <node concept="2pNNFK" id="4SMNYR2Zjo8" role="3o6s8t">
           <property role="2pNNFO" value="applicationConfigurable" />
+          <property role="qg3DV" value="true" />
           <node concept="2pNUuL" id="4SMNYR2Zjo9" role="2pNNFR">
             <property role="2pNUuO" value="groupId" />
             <node concept="2pMdtt" id="4SMNYR2Zjoa" role="2pMdts">
@@ -18771,6 +18773,17 @@
             </node>
           </node>
         </node>
+        <node concept="2pNNFK" id="1cK4KxbPZRn" role="3o6s8t">
+          <property role="2pNNFO" value="applicationService" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="1cK4KxbPZRr" role="2pNNFR">
+            <property role="2pNUuO" value="serviceImplementation" />
+            <node concept="2pMdtt" id="1cK4KxbPZRs" role="2pMdts">
+              <property role="2pMdty" value="com.mbeddr.mpsutil.actionsfilter.runtime.ActionsApplicationComponent" />
+            </node>
+          </node>
+        </node>
+        <node concept="3o6iSG" id="1cK4KxbPZRm" role="3o6s8t" />
         <node concept="2pNUuL" id="4SMNYR2Zjoh" role="2pNNFR">
           <property role="2pNUuO" value="defaultExtensionNs" />
           <node concept="2pMdtt" id="4SMNYR2Zjoi" role="2pMdts">
