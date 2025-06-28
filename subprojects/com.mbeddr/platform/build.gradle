@@ -59,7 +59,7 @@ def bundledDeps = [
             exclude module: 'stax-api'
         }),
         new BundledDep('jfreechart', ['org.jfree:jfreechart:1.5.6'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
-        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.3'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
+        new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.4'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
         new BundledDep('opencsv', ['au.com.bytecode:opencsv:2.4'], 'com.mbeddr.mpsutil/solutions/com.opencsv'),
         new BundledDep('mockito', ['org.mockito:mockito-core:5.18.0'], 'com.mbeddr.mpsutil/solutions/org.mockito', {}),
         new BundledDep('ecore', ['org.eclipse.emf:org.eclipse.emf.ecore.xcore:1.33.0'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.ecore.stubs', {
