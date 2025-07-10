@@ -6,18 +6,20 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="2ae9b0c0-0e87-4510-aa2a-9949fa0436bf" name="test.assessments.testlang" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="7d323e61-8358-4656-a071-a2bb68438615" name="com.mbeddr.core.codereview" version="0" />
   </languages>
   <imports>
     <import index="hikj" ref="r:08e46f36-ad08-4837-aae6-df5fffab661d(test.assessments.testlang.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -90,7 +92,13 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="7d323e61-8358-4656-a071-a2bb68438615" name="com.mbeddr.core.codereview">
+      <concept id="4901333676674651668" name="com.mbeddr.core.codereview.structure.ReviewAssessmentQuery" flags="ng" index="3RRLWm">
+        <child id="8490595898229198814" name="scope" index="28wUw_" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="6277307617439377002" name="com.mbeddr.core.base.structure.ProjectScope" flags="ng" index="2GjDLI" />
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
         <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
@@ -128,6 +136,9 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
@@ -136,12 +147,16 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -182,10 +197,14 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="1lH9Xt" id="6v0bPePA6ac">
@@ -543,6 +562,9 @@
       <node concept="3pwaUv" id="5Z2CJwRn$uR" role="1qenE9">
         <property role="TrG5h" value="sorting" />
         <property role="1Ema5g" value="true" />
+        <node concept="3xLA65" id="5Z2CJwRnK9F" role="lGtFl">
+          <property role="TrG5h" value="sorting" />
+        </node>
         <node concept="3ilFYh" id="5Z2CJwRn$uT" role="3pwbkY">
           <node concept="3ilFYD" id="5Z2CJwRn$uX" role="3ilUJ_">
             <property role="3ilQhQ" value="200" />
@@ -557,14 +579,81 @@
             <property role="3ilFYC" value="baz" />
           </node>
         </node>
-        <node concept="3xLA65" id="5Z2CJwRnK9F" role="lGtFl">
-          <property role="TrG5h" value="sorting" />
-        </node>
       </node>
     </node>
   </node>
   <node concept="2XOHcx" id="6v0bPePBkpS">
     <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.core" />
+  </node>
+  <node concept="1lH9Xt" id="3V7vYltn9XS">
+    <property role="TrG5h" value="ProjectScopeTest" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1LZb2c" id="3V7vYltn9Zp" role="1SL9yI">
+      <property role="TrG5h" value="projectScopedAssement" />
+      <node concept="3cqZAl" id="3V7vYltn9Zq" role="3clF45" />
+      <node concept="3clFbS" id="3V7vYltn9Zr" role="3clF47">
+        <node concept="3cpWs8" id="3V7vYltnovP" role="3cqZAp">
+          <node concept="3cpWsn" id="3V7vYltnovQ" role="3cpWs9">
+            <property role="TrG5h" value="scope" />
+            <node concept="3Tqbb2" id="3V7vYltnovl" role="1tU5fm">
+              <ref role="ehGHo" to="vs0r:5stuwjVkYpE" resolve="ProjectScope" />
+            </node>
+            <node concept="2OqwBi" id="3V7vYltnovR" role="33vP2m">
+              <node concept="2OqwBi" id="3V7vYltnovS" role="2Oq$k0">
+                <node concept="3xONca" id="3V7vYltnovT" role="2Oq$k0">
+                  <ref role="3xOPvv" node="3V7vYltna0e" resolve="projectScoped" />
+                </node>
+                <node concept="2Rf3mk" id="3V7vYltnovU" role="2OqNvi">
+                  <node concept="1xMEDy" id="3V7vYltnovV" role="1xVPHs">
+                    <node concept="chp4Y" id="3V7vYltnovW" role="ri$Ld">
+                      <ref role="cht4Q" to="vs0r:5stuwjVkYpE" resolve="ProjectScope" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="3V7vYltnovX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3V7vYltnpeP" role="3cqZAp">
+          <node concept="3cpWsn" id="3V7vYltnpeQ" role="3cpWs9">
+            <property role="TrG5h" value="elements" />
+            <node concept="A3Dl8" id="3V7vYltnp9z" role="1tU5fm">
+              <node concept="3Tqbb2" id="3V7vYltnp9A" role="A3Ik2" />
+            </node>
+            <node concept="2OqwBi" id="3V7vYltnpeR" role="33vP2m">
+              <node concept="37vLTw" id="3V7vYltnpeS" role="2Oq$k0">
+                <ref role="3cqZAo" node="3V7vYltnovQ" resolve="scope" />
+              </node>
+              <node concept="2qgKlT" id="3V7vYltnpeT" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
+                <node concept="1jGwE1" id="3V7vYltnpeU" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="3V7vYltnrxP" role="3cqZAp">
+          <node concept="2OqwBi" id="3V7vYltnrZ1" role="3vwVQn">
+            <node concept="37vLTw" id="3V7vYltnryJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="3V7vYltnpeQ" resolve="elements" />
+            </node>
+            <node concept="3GX2aA" id="3V7vYltnuXV" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3V7vYltna0a" role="1SKRRt">
+      <node concept="3pwaUv" id="3V7vYltna0b" role="1qenE9">
+        <property role="TrG5h" value="sorting" />
+        <property role="1Ema5g" value="true" />
+        <node concept="3RRLWm" id="3V7vYltna0c" role="3pwbkY">
+          <node concept="2GjDLI" id="3V7vYltna0d" role="28wUw_" />
+        </node>
+        <node concept="3xLA65" id="3V7vYltna0e" role="lGtFl">
+          <property role="TrG5h" value="projectScoped" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
