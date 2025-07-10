@@ -1077,6 +1077,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3V7vYlt_PUJ" role="3bR37C">
+          <node concept="3bR9La" id="3V7vYlt_PUK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="7eF9rfAuuuc" role="1l3spd">
