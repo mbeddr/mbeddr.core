@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# July 2025
+
+## com.mbeddr.core.base
+- `com.mbeddr.core.base.ProjectScope` failed during a command line build
+
+  During test execution there was an additional temporary project open. That's why the strategy of
+  choosing the single open project didn't work.
+  The fallback logic of choosing the most recent focused window doesn't work in a headless environment
+  and even a normal IDE environment isn't a reliable strategy.
+
+  The new strategy is to find the project that contains the current module and as a fallback to
+  include all open projects.
+
 # June 2025
 
 ## com.mbeddr.platform publication
