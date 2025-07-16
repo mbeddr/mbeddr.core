@@ -28,6 +28,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
   2024.1: "PluginException: Access from Event Dispatch Thread (EDT) is not allowed;
   see https://jb.gg/ij-platform-threading for details". This is now fixed.
 
+## com.mbeddr.core.base
+
+### Fixed
+
+- prevent exception in MbeddrSearchViewer actions initialization due to null value of the project event parameter
+
 ## com.mbeddr.platform publication
 
 ### Changed

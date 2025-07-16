@@ -1682,7 +1682,12 @@
                       </node>
                       <node concept="liA8E" id="5wzRHNZ$BSo" role="2OqNvi">
                         <ref role="37wK5l" to="qkt:~ActionGroup.getChildren(com.intellij.openapi.actionSystem.AnActionEvent)" resolve="getChildren" />
-                        <node concept="10Nm6u" id="5wzRHNZ$BSp" role="37wK5m" />
+                        <node concept="10QFUN" id="7cEfVlSFbjt" role="37wK5m">
+                          <node concept="3uibUv" id="7cEfVlSFbjy" role="10QFUM">
+                            <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                          </node>
+                          <node concept="10Nm6u" id="7cEfVlSFbj_" role="10QFUP" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1823,7 +1828,12 @@
                   </node>
                   <node concept="liA8E" id="4ph9euf1Z7q" role="2OqNvi">
                     <ref role="37wK5l" to="qkt:~DefaultActionGroup.getChildren(com.intellij.openapi.actionSystem.AnActionEvent)" resolve="getChildren" />
-                    <node concept="10Nm6u" id="4ph9euf1Z7r" role="37wK5m" />
+                    <node concept="10QFUN" id="7cEfVlSEVnb" role="37wK5m">
+                      <node concept="3uibUv" id="7cEfVlSF4Am" role="10QFUM">
+                        <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                      </node>
+                      <node concept="10Nm6u" id="4ph9euf1Z7r" role="10QFUP" />
+                    </node>
                   </node>
                 </node>
                 <node concept="39bAoz" id="4ph9euf1Z7s" role="2OqNvi" />
@@ -2079,7 +2089,12 @@
                     </node>
                     <node concept="liA8E" id="4ph9euf3Dk0" role="2OqNvi">
                       <ref role="37wK5l" to="qkt:~DefaultActionGroup.getChildren(com.intellij.openapi.actionSystem.AnActionEvent)" resolve="getChildren" />
-                      <node concept="10Nm6u" id="4ph9euf3Dk1" role="37wK5m" />
+                      <node concept="10QFUN" id="7cEfVlSEMd8" role="37wK5m">
+                        <node concept="3uibUv" id="7cEfVlSEMdd" role="10QFUM">
+                          <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                        </node>
+                        <node concept="10Nm6u" id="7cEfVlSEMdg" role="10QFUP" />
+                      </node>
                     </node>
                   </node>
                   <node concept="39bAoz" id="4ph9euf3Dk2" role="2OqNvi" />
@@ -2465,7 +2480,12 @@
               </node>
               <node concept="liA8E" id="3_otpeV9g$Y" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~DefaultActionGroup.getChildren(com.intellij.openapi.actionSystem.AnActionEvent)" resolve="getChildren" />
-                <node concept="10Nm6u" id="3_otpeV9g$Z" role="37wK5m" />
+                <node concept="10QFUN" id="7cEfVlSEmcn" role="37wK5m">
+                  <node concept="3uibUv" id="7cEfVlSEuP6" role="10QFUM">
+                    <ref role="3uigEE" to="qkt:~AnActionEvent" resolve="AnActionEvent" />
+                  </node>
+                  <node concept="10Nm6u" id="3_otpeV9g$Z" role="10QFUP" />
+                </node>
               </node>
             </node>
           </node>
