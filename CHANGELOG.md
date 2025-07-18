@@ -17,6 +17,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
   The new strategy is to find the project that contains the current module and as a fallback to
   include all open projects.
+- An exception related to the refresh action (F5) of the tree viewer was fixed.
 
 ## com.mbeddr.mpsutil.actionsfilter
 
