@@ -18,6 +18,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
   The new strategy is to find the project that contains the current module and as a fallback to
   include all open projects.
 
+## com.mbeddr.mpsutil.actionsfilter
+
+- The actionsfilter plugin now correctly initializes when opening an RCP for the first time.
+
 # May 2025
 
 ## com.mbeddr.doc
