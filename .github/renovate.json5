@@ -6,7 +6,7 @@
   "enabledManagers": ["gradle", "gradle-wrapper"],
 
   // Renovate master and recent maintenance branches
-  "baseBranches": ["master", "/^maintenance/mps202[4-9][0-9]/"],
+  "baseBranchPatterns": ["master", "/^maintenance/mps202[4-9][0-9]/"],
 
   "packageRules": [
     {
