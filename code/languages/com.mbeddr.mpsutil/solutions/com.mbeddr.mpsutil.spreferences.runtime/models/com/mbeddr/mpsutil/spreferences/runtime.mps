@@ -6070,6 +6070,9 @@
       <node concept="2AHcQZ" id="5vqL7mJfGzB" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+      <node concept="2AHcQZ" id="I9WajAN0$8" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" />
+      </node>
     </node>
     <node concept="2tJIrI" id="5aAhNV5GVV" role="jymVt" />
     <node concept="3clFb_" id="5aAhNV5CPO" role="jymVt">
@@ -6669,6 +6672,50 @@
                     <node concept="37vLTw" id="2OR4Cbp4NEH" role="37wK5m">
                       <ref role="3cqZAo" node="2OR4Cbp3TzF" resolve="moduleCL" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3SKdUt" id="1LEJpHNGyfR" role="3cqZAp">
+              <node concept="1PaTwC" id="1LEJpHNGyfS" role="1aUNEU">
+                <node concept="3oM_SD" id="1LEJpHNGz1C" role="1PaTwD">
+                  <property role="3oM_SC" value="This" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz3V" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz3W" role="1PaTwD">
+                  <property role="3oM_SC" value="necessary" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz3X" role="1PaTwD">
+                  <property role="3oM_SC" value="so" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz3Y" role="1PaTwD">
+                  <property role="3oM_SC" value="that" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz40" role="1PaTwD">
+                  <property role="3oM_SC" value="getDisplayName()" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz41" role="1PaTwD">
+                  <property role="3oM_SC" value="can" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz42" role="1PaTwD">
+                  <property role="3oM_SC" value="be" />
+                </node>
+                <node concept="3oM_SD" id="1LEJpHNGz4b" role="1PaTwD">
+                  <property role="3oM_SC" value="read." />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1LEJpHNFQLI" role="3cqZAp">
+              <node concept="2OqwBi" id="1LEJpHNFScx" role="3clFbG">
+                <node concept="37vLTw" id="1LEJpHNFQLG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2OR4Cbp4NEB" resolve="customPluginDesc" />
+                </node>
+                <node concept="liA8E" id="1LEJpHNFVcE" role="2OqNvi">
+                  <ref role="37wK5l" to="9ti4:~DefaultPluginDescriptor.setEnabled(boolean)" resolve="setEnabled" />
+                  <node concept="3clFbT" id="1LEJpHNFXnQ" role="37wK5m">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
