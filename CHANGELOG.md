@@ -21,7 +21,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.actionsfilter
 
-- The actionsfilter plugin now correctly initializes when opening an RCP for the first time and also loads the default actions profile.
+- The actionsfilter plugin now correctly initializes when opening an RCP for the first time and also loads the default actions profile. Various other improvements were made to the language.
 
 # May 2025
 

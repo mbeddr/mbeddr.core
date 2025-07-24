@@ -29,6 +29,7 @@
         <dependency reexport="false">ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
+        <dependency reexport="false">c091aa8e-adbb-460a-b99f-e1a7f2242121(com.mbeddr.mpsutil.actionsfilter.ideaplugin)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -61,6 +62,7 @@
         <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
         <module reference="c38abce1-4c09-44cb-9ebf-2a764e824bb5(com.mbeddr.mpsutil.actionsfilter)" version="0" />
         <module reference="ba4bb076-d895-4d64-b475-10e845fb0842(com.mbeddr.mpsutil.actionsfilter#6552539437647162784)" version="0" />
+        <module reference="c091aa8e-adbb-460a-b99f-e1a7f2242121(com.mbeddr.mpsutil.actionsfilter.ideaplugin)" version="0" />
         <module reference="436eb984-d162-4543-a347-2601ff5bb2a0(com.mbeddr.mpsutil.actionsfilter.runtime)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
