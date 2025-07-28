@@ -101,7 +101,9 @@
       <modulePath path="$PROJECT_DIR$/languages/doc.com.mbeddr.mpsutil.multilingual.lang/doc.com.mbeddr.mpsutil.multilingual.lang.mpl" folder="rest.multilingual" />
       <modulePath path="$PROJECT_DIR$/languages/test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10/test.com.mbeddr.mpsutil.ecore.metaModelImport.expectedComplex10.mpl" folder="rest.ecore.tests.testLanguages" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.core.base.pluginSolution/com.mbeddr.core.base.pluginSolution.msd" folder="core.solutions" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.ideaplugin/com.mbeddr.mpsutil.actionsfilter.ideaplugin.msd" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.runtime/com.mbeddr.mpsutil.actionsfilter.runtime.msd" folder="staging.actionsfilter" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.actionsfilter.sandbox/com.mbeddr.mpsutil.actionsfilter.sandbox.msd" folder="staging.actionsfilter" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.asynccell/com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.buildassistant/com.mbeddr.mpsutil.buildassistant.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage/com.mbeddr.mpsutil.ccmenu.reftarget.baseLanguage.msd" folder="rest.ccmenu" />
