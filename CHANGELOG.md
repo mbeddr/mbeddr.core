@@ -22,7 +22,6 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ## com.mbeddr.mpsutil.actionsfilter
 
 - The actionsfilter plugin now correctly initializes when opening an RCP for the first time and also loads the default actions profile. Various other improvements were made to the language.
-- Breaking: The class com.mbeddr.mpsutil.actionsfilter.runtime.ActionsApplicationComponent was moved to com.mbeddr.mpsutil.actionsfilter.ideaplugin.ActionsService which breaks binary compatibility when the actionsfilter plugin is installed.
 
 # May 2025
 
