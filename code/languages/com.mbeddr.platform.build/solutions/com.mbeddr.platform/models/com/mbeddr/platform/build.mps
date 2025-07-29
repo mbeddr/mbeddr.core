@@ -19484,6 +19484,9 @@
             <ref role="1E1Vl2" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
           </node>
         </node>
+        <node concept="1E0d5M" id="5oQKe17CW1d" role="1E1XAP">
+          <ref role="1E0d5P" node="1LEJpHNG_EO" resolve="com.mbeddr.mpsutil.actionsfilter.ideaplugin" />
+        </node>
       </node>
       <node concept="1E1JtA" id="4SMNYR2ZktT" role="2G$12L">
         <property role="BnDLt" value="true" />

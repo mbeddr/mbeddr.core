@@ -40,7 +40,7 @@
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="qq04" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.actions(MPS.Workbench/)" />
-    <import index="mkpt" ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin.plugin)" />
+    <import index="mkpt" ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
   </imports>
@@ -11316,7 +11316,7 @@
           <node concept="2OqwBi" id="5vQUrnx9JWx" role="3clFbG">
             <node concept="2YIFZM" id="5vQUrnx9Koq" role="2Oq$k0">
               <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-              <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+              <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
             </node>
             <node concept="liA8E" id="5vQUrnx9KyO" role="2OqNvi">
               <ref role="37wK5l" to="mkpt:5vQUrnx8Ue8" resolve="loadState" />
@@ -11354,7 +11354,7 @@
               <node concept="2OqwBi" id="5vQUrnx9QUU" role="37wK5m">
                 <node concept="2YIFZM" id="5vQUrnx9QMK" role="2Oq$k0">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
                 </node>
                 <node concept="liA8E" id="5vQUrnx9R5C" role="2OqNvi">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
@@ -11397,7 +11397,7 @@
               <node concept="2OqwBi" id="5vQUrnx9R70" role="37wK5m">
                 <node concept="2YIFZM" id="6ogw5zWK07p" role="2Oq$k0">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
                 </node>
                 <node concept="liA8E" id="5vQUrnx9R72" role="2OqNvi">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
@@ -12912,7 +12912,7 @@
             <node concept="2OqwBi" id="77G1$weVjwV" role="33vP2m">
               <node concept="2YIFZM" id="77G1$weVjwW" role="2Oq$k0">
                 <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
               </node>
               <node concept="liA8E" id="77G1$weVjwX" role="2OqNvi">
                 <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
@@ -14350,7 +14350,7 @@
                     <node concept="3clFbS" id="3ifiSLud$cV" role="1bW5cS">
                       <node concept="3clFbF" id="3ifiSLudByA" role="3cqZAp">
                         <node concept="Xl_RD" id="3ifiSLudBy_" role="3clFbG">
-                          <property role="Xl_RC" value="Copy Profile" />
+                          <property role="Xl_RC" value="Duplicate Profile" />
                         </node>
                       </node>
                     </node>
