@@ -40,7 +40,7 @@
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="qq04" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.actions(MPS.Workbench/)" />
-    <import index="mkpt" ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin.plugin)" />
+    <import index="mkpt" ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
   </imports>
@@ -325,6 +325,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
+        <child id="2546654756694997556" name="reference" index="92FcQ" />
+        <child id="3106559687488913694" name="line" index="2XjZqd" />
+      </concept>
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
@@ -336,9 +340,19 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
+      <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
+        <reference id="2217234381367530213" name="classifier" index="VXe09" />
+      </concept>
+      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
+        <child id="6962838954693749192" name="tag" index="qph3F" />
+      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
@@ -11316,7 +11330,7 @@
           <node concept="2OqwBi" id="5vQUrnx9JWx" role="3clFbG">
             <node concept="2YIFZM" id="5vQUrnx9Koq" role="2Oq$k0">
               <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-              <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+              <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
             </node>
             <node concept="liA8E" id="5vQUrnx9KyO" role="2OqNvi">
               <ref role="37wK5l" to="mkpt:5vQUrnx8Ue8" resolve="loadState" />
@@ -11354,7 +11368,7 @@
               <node concept="2OqwBi" id="5vQUrnx9QUU" role="37wK5m">
                 <node concept="2YIFZM" id="5vQUrnx9QMK" role="2Oq$k0">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
                 </node>
                 <node concept="liA8E" id="5vQUrnx9R5C" role="2OqNvi">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
@@ -11397,7 +11411,7 @@
               <node concept="2OqwBi" id="5vQUrnx9R70" role="37wK5m">
                 <node concept="2YIFZM" id="6ogw5zWK07p" role="2Oq$k0">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                  <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
                 </node>
                 <node concept="liA8E" id="5vQUrnx9R72" role="2OqNvi">
                   <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
@@ -12912,7 +12926,7 @@
             <node concept="2OqwBi" id="77G1$weVjwV" role="33vP2m">
               <node concept="2YIFZM" id="77G1$weVjwW" role="2Oq$k0">
                 <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
-                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
               </node>
               <node concept="liA8E" id="77G1$weVjwX" role="2OqNvi">
                 <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
@@ -14350,7 +14364,7 @@
                     <node concept="3clFbS" id="3ifiSLud$cV" role="1bW5cS">
                       <node concept="3clFbF" id="3ifiSLudByA" role="3cqZAp">
                         <node concept="Xl_RD" id="3ifiSLudBy_" role="3clFbG">
-                          <property role="Xl_RC" value="Copy Profile" />
+                          <property role="Xl_RC" value="Duplicate Profile" />
                         </node>
                       </node>
                     </node>
@@ -14898,6 +14912,132 @@
     <node concept="3Tm1VV" id="2ZrHegMYz1n" role="1B3o_S" />
     <node concept="3uibUv" id="3$wt7UMbpbm" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+    </node>
+  </node>
+  <node concept="312cEu" id="5vQUrnx8UbK">
+    <property role="TrG5h" value="ActionsApplicationComponent" />
+    <property role="3GE5qa" value="actionfilter" />
+    <node concept="2tJIrI" id="5vQUrnx8UbL" role="jymVt" />
+    <node concept="Wx3nA" id="4$6RyTUH7wB" role="jymVt">
+      <property role="TrG5h" value="ourInstance" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="4$6RyTUH779" role="1tU5fm">
+        <ref role="3uigEE" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+      </node>
+      <node concept="3Tm6S6" id="4$6RyTUH6Fw" role="1B3o_S" />
+      <node concept="2ShNRf" id="2JK_OXJ2Kku" role="33vP2m">
+        <node concept="HV5vD" id="2JK_OXJ5fe7" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="HV5vE" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4$6RyTUH6l_" role="jymVt" />
+    <node concept="2YIFZL" id="5vQUrnx8UbS" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="5vQUrnx8UbT" role="3clF47">
+        <node concept="3clFbF" id="5vQUrnx93eF" role="3cqZAp">
+          <node concept="37vLTw" id="4$6RyTUGoLt" role="3clFbG">
+            <ref role="3cqZAo" node="4$6RyTUH7wB" resolve="ourInstance" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5vQUrnx8UbW" role="3clF45">
+        <ref role="3uigEE" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+      </node>
+      <node concept="3Tm1VV" id="5vQUrnx8UbX" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5vQUrnx8Ucg" role="jymVt" />
+    <node concept="3Tm1VV" id="5vQUrnx8Ucp" role="1B3o_S" />
+    <node concept="3uibUv" id="5vQUrnx8Ucr" role="EKbjA">
+      <ref role="3uigEE" to="1m72:~PersistentStateComponent" resolve="PersistentStateComponent" />
+      <node concept="3uibUv" id="5vQUrnx8Ucs" role="11_B2D">
+        <ref role="3uigEE" node="3NH93czh8sX" resolve="Model" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5vQUrnx8UdY" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getState" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="5vQUrnx8UdZ" role="1B3o_S" />
+      <node concept="3uibUv" id="5vQUrnx8Ue0" role="3clF45">
+        <ref role="3uigEE" node="3NH93czh8sX" resolve="Model" />
+      </node>
+      <node concept="2AHcQZ" id="5vQUrnx8Ue1" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+      </node>
+      <node concept="3clFbS" id="5vQUrnx8Ue2" role="3clF47">
+        <node concept="3clFbF" id="2JK_OXJ3ez6" role="3cqZAp">
+          <node concept="2OqwBi" id="2JK_OXJ3fy2" role="3clFbG">
+            <node concept="2YIFZM" id="2JK_OXJ3eOa" role="2Oq$k0">
+              <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
+              <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
+            </node>
+            <node concept="liA8E" id="2JK_OXJ3gdU" role="2OqNvi">
+              <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5vQUrnx8Ue7" role="jymVt" />
+    <node concept="3clFb_" id="5vQUrnx8Ue8" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="loadState" />
+      <property role="DiZV1" value="false" />
+      <node concept="3Tm1VV" id="5vQUrnx8Ue9" role="1B3o_S" />
+      <node concept="3cqZAl" id="5vQUrnx8Uea" role="3clF45" />
+      <node concept="37vLTG" id="5vQUrnx8Ueb" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="5vQUrnx8Uec" role="1tU5fm">
+          <ref role="3uigEE" node="3NH93czh8sX" resolve="Model" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5vQUrnx8Ued" role="3clF47" />
+      <node concept="2AHcQZ" id="2JK_OXJ3hNy" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5vQUrnx98ie" role="jymVt" />
+    <node concept="2AHcQZ" id="2JK_OXJ253V" role="2AJF6D">
+      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+    </node>
+    <node concept="3UR2Jj" id="2JK_OXJ269e" role="lGtFl">
+      <node concept="TZ5HA" id="2JK_OXJ269f" role="TZ5H$">
+        <node concept="1dT_AC" id="2JK_OXJ269g" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2JK_OXJ5dJZ" role="TZ5H$">
+        <node concept="1dT_AC" id="2JK_OXJ5dK0" role="1dT_Ay">
+          <property role="1dT_AB" value="This class is left behind to keep binary compatibility with existing action filters that call" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2JK_OXJ5eqz" role="TZ5H$">
+        <node concept="1dT_AC" id="2JK_OXJ5eq$" role="1dT_Ay">
+          <property role="1dT_AB" value="ActionsApplicationComponent.getInstance().getState()." />
+        </node>
+      </node>
+      <node concept="TZ5HI" id="2JK_OXJ5dOl" role="3nqlJM">
+        <node concept="TZ5HA" id="2JK_OXJ5dOm" role="3HnX3l">
+          <node concept="1dT_AC" id="2JK_OXJ5e2b" role="1dT_Ay">
+            <property role="1dT_AB" value="Use " />
+          </node>
+          <node concept="1dT_AA" id="2JK_OXJ5e2d" role="1dT_Ay">
+            <node concept="92FcH" id="2JK_OXJ5e2f" role="qph3F">
+              <node concept="TZ5HA" id="2JK_OXJ5e2h" role="2XjZqd" />
+              <node concept="VXe08" id="2JK_OXJ5e2l" role="92FcQ">
+                <ref role="VXe09" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="2JK_OXJ5e2c" role="1dT_Ay">
+            <property role="1dT_AB" value="." />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

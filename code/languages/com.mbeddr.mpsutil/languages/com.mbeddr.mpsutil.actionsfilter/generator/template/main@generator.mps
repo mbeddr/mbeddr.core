@@ -511,7 +511,7 @@
             </node>
             <node concept="2OqwBi" id="7tHQrcrQ2gd" role="33vP2m">
               <node concept="2YIFZM" id="1KfSgTa_tEx" role="2Oq$k0">
-                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
                 <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="7tHQrcrQ2gf" role="2OqNvi">
