@@ -221,7 +221,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1f0gqNzAccm">
-    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
+    <property role="2XOHcw" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc" />
   </node>
 </model>
 
