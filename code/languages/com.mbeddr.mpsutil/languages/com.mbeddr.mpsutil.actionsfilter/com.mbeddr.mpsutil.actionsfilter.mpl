@@ -153,6 +153,7 @@
   <runtime>
     <dependency reexport="false">436eb984-d162-4543-a347-2601ff5bb2a0(com.mbeddr.mpsutil.actionsfilter.runtime)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
+    <dependency reexport="false">c091aa8e-adbb-460a-b99f-e1a7f2242121(com.mbeddr.mpsutil.actionsfilter.ideaplugin)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
