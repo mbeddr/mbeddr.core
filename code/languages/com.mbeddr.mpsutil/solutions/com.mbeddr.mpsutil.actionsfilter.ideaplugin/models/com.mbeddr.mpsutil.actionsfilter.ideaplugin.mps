@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin.plugin)">
+<model ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -152,7 +152,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="5vQUrnx8UbK">
-    <property role="TrG5h" value="ActionsApplicationComponent" />
+    <property role="TrG5h" value="ActionsService" />
     <property role="1EXbeo" value="true" />
     <node concept="2tJIrI" id="5vQUrnx8UbL" role="jymVt" />
     <node concept="2tJIrI" id="4$6RyTUH6l_" role="jymVt" />
@@ -165,7 +165,7 @@
           <node concept="3cpWsn" id="4$6RyTUGoLo" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="4$6RyTUGoLm" role="1tU5fm">
-              <ref role="3uigEE" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+              <ref role="3uigEE" node="5vQUrnx8UbK" resolve="ActionsService" />
             </node>
             <node concept="2OqwBi" id="4$6RyTUGoLp" role="33vP2m">
               <node concept="2YIFZM" id="4$6RyTUGoLq" role="2Oq$k0">
@@ -175,7 +175,7 @@
               <node concept="liA8E" id="4$6RyTUGoLr" role="2OqNvi">
                 <ref role="37wK5l" to="1m72:~ComponentManager.getService(java.lang.Class)" resolve="getService" />
                 <node concept="3VsKOn" id="4$6RyTUGoLs" role="37wK5m">
-                  <ref role="3VsUkX" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+                  <ref role="3VsUkX" node="5vQUrnx8UbK" resolve="ActionsService" />
                 </node>
               </node>
             </node>
@@ -188,7 +188,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="5vQUrnx8UbW" role="3clF45">
-        <ref role="3uigEE" node="5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
+        <ref role="3uigEE" node="5vQUrnx8UbK" resolve="ActionsService" />
       </node>
       <node concept="3Tm1VV" id="5vQUrnx8UbX" role="1B3o_S" />
     </node>
