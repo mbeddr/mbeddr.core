@@ -3,22 +3,6 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="doc">
-          <value>
-            <Library>
-              <option name="name" value="doc" />
-              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc" />
-            </Library>
-          </value>
-        </entry>
-        <entry key="doc.aspect">
-          <value>
-            <Library>
-              <option name="name" value="doc.aspect" />
-              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc.aspect" />
-            </Library>
-          </value>
-        </entry>
         <entry key="mpsutil">
           <value>
             <Library>

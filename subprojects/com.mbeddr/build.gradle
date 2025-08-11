@@ -180,18 +180,18 @@ tasks.register('printVersions') {
 }
 
 List<String> projectsInDependencyOrder = [
-        'com.mbeddr.platform.build',
-        'com.mbeddr.mpsutil',
-        'com.mbeddr.doc',
-        'com.mbeddr.doc.aspect',
-        'com.mbeddr.core',
-        'com.mbeddr.ext',
-        'com.mbeddr.cc',
-        'com.mbeddr.build',
+        'platform/com.mbeddr.platform.build',
+        'platform/com.mbeddr.mpsutil',
+        'platform/com.mbeddr.doc',
+        'platform/com.mbeddr.doc.aspect',
+        'languages/com.mbeddr.core',
+        'languages/com.mbeddr.ext',
+        'languages/com.mbeddr.cc',
+        'languages/com.mbeddr.build',
 ]
 
 List<File> projectDirectoriesInDependencyOrder = projectsInDependencyOrder.collect {
-    new File(rootProject.file('code/languages'), it)
+    rootProject.file("code/$it")
 }
 
 tasks.register('generate_all_languages') {
