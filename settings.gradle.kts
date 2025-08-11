@@ -8,7 +8,6 @@ pluginManagement {
 }
 
 val subprojectPaths = listOf("com.mbeddr",
-    "com.mbeddr:platform",
     "com.mbeddr:languages",
     "com.mbeddr:distribution",
     "publishing")
@@ -24,5 +23,8 @@ for (path in subprojectPaths) {
 
 include(":BigProject")
 project(":BigProject").projectDir = file("tools/BigProject")
+
+include(":com.mbeddr:platform")
+project(":com.mbeddr:platform").projectDir = file("code/platform")
 
 rootProject.name = "mbeddr.core"
