@@ -15,6 +15,7 @@
     <import index="ykkq" ref="r:7171fd48-62d6-4c67-ab22-d7d6b8fa4653(com.mbeddr.mpsutil.actionsfilter.runtime)" />
     <import index="8fb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.ui.customization(MPS.IDEA/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="mkpt" ref="r:11aea2c3-e421-4253-bccb-b78b0737d67a(com.mbeddr.mpsutil.actionsfilter.ideaplugin.plugin)" />
     <import index="au0v" ref="r:ae24f9b4-2210-4864-8fbf-79fb5fb02754(com.mbeddr.mpsutil.actionsfilter.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="jm5d" ref="r:48ef7588-196b-4d9d-b0a1-f8a83910685c(com.mbeddr.mpsutil.actionsfilter.behavior)" implicit="true" />
@@ -510,11 +511,11 @@
             </node>
             <node concept="2OqwBi" id="7tHQrcrQ2gd" role="33vP2m">
               <node concept="2YIFZM" id="1KfSgTa_tEx" role="2Oq$k0">
-                <ref role="1Pybhc" to="ykkq:5vQUrnx8UbK" resolve="ActionsApplicationComponent" />
-                <ref role="37wK5l" to="ykkq:5vQUrnx8UbS" resolve="getInstance" />
+                <ref role="1Pybhc" to="mkpt:5vQUrnx8UbK" resolve="ActionsService" />
+                <ref role="37wK5l" to="mkpt:5vQUrnx8UbS" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="7tHQrcrQ2gf" role="2OqNvi">
-                <ref role="37wK5l" to="ykkq:5vQUrnx8UdY" resolve="getState" />
+                <ref role="37wK5l" to="mkpt:5vQUrnx8UdY" resolve="getState" />
               </node>
             </node>
           </node>
@@ -557,7 +558,7 @@
                 <ref role="3cqZAo" node="7tHQrcrQ2gc" resolve="persistentModel" />
               </node>
               <node concept="liA8E" id="IuB3xAAyuz" role="2OqNvi">
-                <ref role="37wK5l" to="ykkq:3NH93czj0Xh" resolve="getProfiles" />
+                <ref role="37wK5l" to="ykkq:3NH93czj0Xh" resolve="getAllProfiles" />
               </node>
             </node>
           </node>
