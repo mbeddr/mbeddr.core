@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="platform.build" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.platform.build" />
+              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.platform.build" />
             </Library>
           </value>
         </entry>
