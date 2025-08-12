@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="doc" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc" />
+              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc" />
             </Library>
           </value>
         </entry>
@@ -15,7 +15,7 @@
           <value>
             <Library>
               <option name="name" value="doc.aspect" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.doc.aspect" />
+              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.doc.aspect" />
             </Library>
           </value>
         </entry>
@@ -23,7 +23,7 @@
           <value>
             <Library>
               <option name="name" value="mpsutil" />
-              <option name="path" value="${mbeddr.github.core.home}/code/languages/com.mbeddr.mpsutil" />
+              <option name="path" value="${mbeddr.github.core.home}/code/platform/com.mbeddr.mpsutil" />
             </Library>
           </value>
         </entry>
