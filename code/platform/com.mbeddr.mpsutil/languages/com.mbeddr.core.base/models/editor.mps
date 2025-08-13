@@ -76,6 +76,7 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="muut" ref="63e0e566-5131-447e-90e3-12ea330e1a00/r:7b6c196f-8133-489b-a5b2-6ed29b884e93(com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.editor)" />
+    <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -92,7 +93,7 @@
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
-      <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
+      <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ng" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
       </concept>
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -210,10 +211,10 @@
       <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
         <child id="6918029743851332884" name="matchingText" index="1NQq9M" />
       </concept>
-      <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ngI" index="2Z_bC8">
+      <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
-      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ngI" index="2ZABuq">
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
@@ -270,7 +271,7 @@
       <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
         <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
       </concept>
-      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
@@ -324,7 +325,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
@@ -335,7 +336,7 @@
         <child id="1182233390675" name="filter" index="12AuX0" />
       </concept>
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
-      <concept id="843003353410421268" name="jetbrains.mps.lang.editor.structure.IOutputConceptTransformationMenuPart" flags="ngI" index="1FNN41">
+      <concept id="843003353410421268" name="jetbrains.mps.lang.editor.structure.IOutputConceptTransformationMenuPart" flags="ng" index="1FNN41">
         <child id="843003353410424960" name="outputConceptReference" index="1FNMel" />
       </concept>
       <concept id="843003353410421233" name="jetbrains.mps.lang.editor.structure.OptionalConceptReference" flags="ng" index="1FNNb$">
@@ -349,7 +350,7 @@
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
-      <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ngI" index="3INCJE">
+      <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
       <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
@@ -420,10 +421,13 @@
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
+      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
+        <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
@@ -493,6 +497,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -558,13 +565,14 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
         <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
@@ -586,6 +594,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
@@ -595,8 +604,15 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
+      <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
+        <child id="1144231399730" name="condition" index="1Dwp0S" />
+        <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
@@ -781,7 +797,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -1684,6 +1700,29 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFb_" id="inTShiWUFS" role="jymVt">
+                    <property role="TrG5h" value="renderText" />
+                    <node concept="3Tm1VV" id="inTShiWUFT" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiWUFV" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiWUFX" role="3clF47">
+                      <node concept="3clFbF" id="inTShiWYWZ" role="3cqZAp">
+                        <node concept="2ShNRf" id="inTShiWYWX" role="3clFbG">
+                          <node concept="1pGfFk" id="inTShiX9lD" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                            <node concept="Xl_RD" id="inTShiXaSi" role="37wK5m">
+                              <property role="Xl_RC" value="]" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiWUFY" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1998,6 +2037,29 @@
                           <property role="3clFbU" value="true" />
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="3clFb_" id="inTShiXcMw" role="jymVt">
+                    <property role="TrG5h" value="renderText" />
+                    <node concept="3Tm1VV" id="inTShiXcMx" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiXcMy" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiXcMz" role="3clF47">
+                      <node concept="3clFbF" id="inTShiXcM$" role="3cqZAp">
+                        <node concept="2ShNRf" id="inTShiXcM_" role="3clFbG">
+                          <node concept="1pGfFk" id="inTShiXcMA" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                            <node concept="Xl_RD" id="inTShiXcMB" role="37wK5m">
+                              <property role="Xl_RC" value="[" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiXcMC" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" />
                     </node>
                   </node>
                 </node>
@@ -3346,6 +3408,183 @@
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
+                  <node concept="2tJIrI" id="inTShiXraq" role="jymVt" />
+                  <node concept="3clFb_" id="7d0q5VH9zS5" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="renderText" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="7d0q5VH9zS6" role="1B3o_S" />
+                    <node concept="3uibUv" id="7d0q5VH9zS7" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="7d0q5VH9zS8" role="3clF47">
+                      <node concept="3cpWs8" id="10diQy0mxks" role="3cqZAp">
+                        <node concept="3cpWsn" id="10diQy0mxkr" role="3cpWs9">
+                          <property role="TrG5h" value="settings" />
+                          <node concept="3uibUv" id="10diQy0mxkt" role="1tU5fm">
+                            <ref role="3uigEE" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                          </node>
+                          <node concept="2YIFZM" id="10diQy0mxY7" role="33vP2m">
+                            <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                            <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="10diQy0mHsb" role="3cqZAp">
+                        <node concept="3cpWsn" id="10diQy0mHsc" role="3cpWs9">
+                          <property role="TrG5h" value="editorComponentSettings" />
+                          <node concept="3uibUv" id="10diQy0mGZP" role="1tU5fm">
+                            <ref role="3uigEE" to="cj4x:~EditorComponentSettings" resolve="EditorComponentSettings" />
+                          </node>
+                          <node concept="2OqwBi" id="10diQy0mHsd" role="33vP2m">
+                            <node concept="1rXfSq" id="10diQy0mHse" role="2Oq$k0">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditorComponent()" resolve="getEditorComponent" />
+                            </node>
+                            <node concept="liA8E" id="10diQy0mHsf" role="2OqNvi">
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorComponentSettings()" resolve="getEditorComponentSettings" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="10diQy0mRiS" role="3cqZAp">
+                        <node concept="3cpWsn" id="10diQy0mRiT" role="3cpWs9">
+                          <property role="TrG5h" value="fontMetrics" />
+                          <node concept="3uibUv" id="10diQy0mQT_" role="1tU5fm">
+                            <ref role="3uigEE" to="f4zo:~EditorFontMetrics" resolve="EditorFontMetrics" />
+                          </node>
+                          <node concept="2OqwBi" id="10diQy0mRiU" role="33vP2m">
+                            <node concept="37vLTw" id="10diQy0mRiV" role="2Oq$k0">
+                              <ref role="3cqZAo" node="10diQy0mHsc" resolve="editorComponentSettings" />
+                            </node>
+                            <node concept="liA8E" id="10diQy0mRiW" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~EditorFontMetricsProvider.getFontMetrics(java.lang.String,int,int)" resolve="getFontMetrics" />
+                              <node concept="2OqwBi" id="10diQy0mRiX" role="37wK5m">
+                                <node concept="37vLTw" id="10diQy0mRiY" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="10diQy0mxkr" resolve="settings" />
+                                </node>
+                                <node concept="liA8E" id="10diQy0mRiZ" role="2OqNvi">
+                                  <ref role="37wK5l" to="exr9:~EditorSettings.getFontFamily()" resolve="getFontFamily" />
+                                </node>
+                              </node>
+                              <node concept="10M0yZ" id="10diQy0mRj0" role="37wK5m">
+                                <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
+                                <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                              </node>
+                              <node concept="2OqwBi" id="10diQy0mRj1" role="37wK5m">
+                                <node concept="37vLTw" id="10diQy0mRj2" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="10diQy0mHsc" resolve="editorComponentSettings" />
+                                </node>
+                                <node concept="liA8E" id="10diQy0mRj3" role="2OqNvi">
+                                  <ref role="37wK5l" to="cj4x:~EditorComponentSettings.getFontSize()" resolve="getFontSize" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="10diQy0lnXf" role="3cqZAp">
+                        <node concept="3cpWsn" id="10diQy0lnXg" role="3cpWs9">
+                          <property role="TrG5h" value="heightOfOneDash" />
+                          <node concept="10Oyi0" id="10diQy0lnXh" role="1tU5fm" />
+                          <node concept="2OqwBi" id="10diQy0mUcq" role="33vP2m">
+                            <node concept="37vLTw" id="10diQy0mT_B" role="2Oq$k0">
+                              <ref role="3cqZAo" node="10diQy0mRiT" resolve="fontMetrics" />
+                            </node>
+                            <node concept="liA8E" id="10diQy0mUXf" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~EditorFontMetrics.getHeight()" resolve="getHeight" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="10diQy0mtgp" role="3cqZAp" />
+                      <node concept="3cpWs8" id="10diQy0luMT" role="3cqZAp">
+                        <node concept="3cpWsn" id="10diQy0luMU" role="3cpWs9">
+                          <property role="TrG5h" value="builder" />
+                          <node concept="3uibUv" id="10diQy0luMV" role="1tU5fm">
+                            <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                          </node>
+                          <node concept="2ShNRf" id="10diQy0lw_b" role="33vP2m">
+                            <node concept="1pGfFk" id="10diQy0lx$d" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;()" resolve="TextBuilderImpl" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="10diQy0lnXp" role="3cqZAp">
+                        <node concept="3cpWsn" id="10diQy0lnXq" role="3cpWs9">
+                          <property role="TrG5h" value="numberOfDashes" />
+                          <node concept="10Oyi0" id="10diQy0lnXr" role="1tU5fm" />
+                          <node concept="FJ1c_" id="10diQy0lnXs" role="33vP2m">
+                            <node concept="37vLTw" id="10diQy0lnXt" role="3uHU7w">
+                              <ref role="3cqZAo" node="10diQy0lnXg" resolve="heightOfOneDash" />
+                            </node>
+                            <node concept="2OqwBi" id="10diQy0miNB" role="3uHU7B">
+                              <node concept="1rXfSq" id="10diQy0lnXu" role="2Oq$k0">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent()" resolve="getParent" />
+                              </node>
+                              <node concept="liA8E" id="10diQy0mkDD" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getHeight()" resolve="getHeight" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Dw8fO" id="10diQy0lz3I" role="3cqZAp">
+                        <node concept="3clFbS" id="10diQy0lz3K" role="2LFqv$">
+                          <node concept="3clFbF" id="10diQy0lJHX" role="3cqZAp">
+                            <node concept="2OqwBi" id="10diQy0lKka" role="3clFbG">
+                              <node concept="37vLTw" id="10diQy0lJHV" role="2Oq$k0">
+                                <ref role="3cqZAo" node="10diQy0luMU" resolve="builder" />
+                              </node>
+                              <node concept="liA8E" id="10diQy0lKZ9" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~TextBuilder.appendToTheBottom(jetbrains.mps.openapi.editor.TextBuilder)" resolve="appendToTheBottom" />
+                                <node concept="2ShNRf" id="10diQy0lLKP" role="37wK5m">
+                                  <node concept="1pGfFk" id="10diQy0lMBr" role="2ShVmc">
+                                    <property role="373rjd" value="true" />
+                                    <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                                    <node concept="Xl_RD" id="10diQy0lNgy" role="37wK5m">
+                                      <property role="Xl_RC" value="|" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWsn" id="10diQy0lz3L" role="1Duv9x">
+                          <property role="TrG5h" value="i" />
+                          <node concept="10Oyi0" id="10diQy0lzA3" role="1tU5fm" />
+                          <node concept="3cmrfG" id="10diQy0l_q4" role="33vP2m">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                        </node>
+                        <node concept="3eOVzh" id="10diQy0lGqq" role="1Dwp0S">
+                          <node concept="37vLTw" id="10diQy0lIaP" role="3uHU7w">
+                            <ref role="3cqZAo" node="10diQy0lnXq" resolve="numberOfDashes" />
+                          </node>
+                          <node concept="37vLTw" id="10diQy0lDd5" role="3uHU7B">
+                            <ref role="3cqZAo" node="10diQy0lz3L" resolve="i" />
+                          </node>
+                        </node>
+                        <node concept="3uNrnE" id="10diQy0lJ5Q" role="1Dwrff">
+                          <node concept="37vLTw" id="10diQy0lJ5S" role="2$L3a6">
+                            <ref role="3cqZAo" node="10diQy0lz3L" resolve="i" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="10diQy0lOt1" role="3cqZAp">
+                        <node concept="37vLTw" id="10diQy0lOsZ" role="3clFbG">
+                          <ref role="3cqZAo" node="10diQy0luMU" resolve="builder" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="7d0q5VH9zSd" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="2tJIrI" id="inTShiXrar" role="jymVt" />
                 </node>
               </node>
             </node>
@@ -5083,10 +5322,6 @@
         <property role="3TUv4t" value="true" />
         <node concept="3Tqbb2" id="CPtprWMC0R" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="CPtprWMDBr" role="3clF46">
-        <property role="TrG5h" value="lengthInLetters" />
-        <node concept="10Oyi0" id="CPtprWMDBt" role="1tU5fm" />
-      </node>
       <node concept="3clFbS" id="CPtprWMC0S" role="3clF47">
         <node concept="3cpWs8" id="CPtprWMC0T" role="3cqZAp">
           <node concept="3cpWsn" id="CPtprWMC0J" role="3cpWs9">
@@ -5533,6 +5768,10 @@
             <ref role="3cqZAo" node="CPtprWMC0I" resolve="l" />
           </node>
         </node>
+      </node>
+      <node concept="37vLTG" id="CPtprWMDBr" role="3clF46">
+        <property role="TrG5h" value="lengthInLetters" />
+        <node concept="10Oyi0" id="CPtprWMDBt" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="7F1rX5GHGUN" role="jymVt" />
@@ -6353,6 +6592,38 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="2ka6MWOx8Lg" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="2tJIrI" id="inTShiY$RD" role="jymVt" />
+                  <node concept="3clFb_" id="inTShiY$cM" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="renderText" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="inTShiY$cN" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiY$cO" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiY$cP" role="3clF47">
+                      <node concept="3clFbF" id="inTShiY$cQ" role="3cqZAp">
+                        <node concept="2ShNRf" id="inTShiY$cR" role="3clFbG">
+                          <node concept="1pGfFk" id="inTShiY$cS" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                            <node concept="3cpWs3" id="inTShiYFid" role="37wK5m">
+                              <node concept="Xl_RD" id="inTShiYHd2" role="3uHU7w">
+                                <property role="Xl_RC" value="%" />
+                              </node>
+                              <node concept="37vLTw" id="inTShiYAZY" role="3uHU7B">
+                                <ref role="3cqZAo" node="2ka6MWOx8ZT" resolve="percentage" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiY$cU" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
@@ -9611,6 +9882,33 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="2iRSkE4DJ4y" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="2tJIrI" id="inTShiYub2" role="jymVt" />
+                  <node concept="3clFb_" id="inTShiYruE" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="renderText" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="inTShiYruF" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiYruG" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiYruH" role="3clF47">
+                      <node concept="3clFbF" id="inTShiYvBf" role="3cqZAp">
+                        <node concept="2ShNRf" id="inTShiYrvf" role="3clFbG">
+                          <node concept="1pGfFk" id="inTShiYrvg" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                            <node concept="Xl_RD" id="inTShiYwwy" role="37wK5m">
+                              <property role="Xl_RC" value="+" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiYrvG" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
@@ -13389,6 +13687,182 @@
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
+                  <node concept="2tJIrI" id="inTShiYm6v" role="jymVt" />
+                  <node concept="3clFb_" id="inTShiYi_A" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="renderText" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="inTShiYi_B" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiYi_C" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiYi_D" role="3clF47">
+                      <node concept="3cpWs8" id="inTShiYi_E" role="3cqZAp">
+                        <node concept="3cpWsn" id="inTShiYi_F" role="3cpWs9">
+                          <property role="TrG5h" value="settings" />
+                          <node concept="3uibUv" id="inTShiYi_G" role="1tU5fm">
+                            <ref role="3uigEE" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                          </node>
+                          <node concept="2YIFZM" id="inTShiYi_H" role="33vP2m">
+                            <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                            <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="inTShiYi_I" role="3cqZAp">
+                        <node concept="3cpWsn" id="inTShiYi_J" role="3cpWs9">
+                          <property role="TrG5h" value="editorComponentSettings" />
+                          <node concept="3uibUv" id="inTShiYi_K" role="1tU5fm">
+                            <ref role="3uigEE" to="cj4x:~EditorComponentSettings" resolve="EditorComponentSettings" />
+                          </node>
+                          <node concept="2OqwBi" id="inTShiYi_L" role="33vP2m">
+                            <node concept="1rXfSq" id="inTShiYi_M" role="2Oq$k0">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditorComponent()" resolve="getEditorComponent" />
+                            </node>
+                            <node concept="liA8E" id="inTShiYi_N" role="2OqNvi">
+                              <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorComponentSettings()" resolve="getEditorComponentSettings" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="inTShiYi_O" role="3cqZAp">
+                        <node concept="3cpWsn" id="inTShiYi_P" role="3cpWs9">
+                          <property role="TrG5h" value="fontMetrics" />
+                          <node concept="3uibUv" id="inTShiYi_Q" role="1tU5fm">
+                            <ref role="3uigEE" to="f4zo:~EditorFontMetrics" resolve="EditorFontMetrics" />
+                          </node>
+                          <node concept="2OqwBi" id="inTShiYi_R" role="33vP2m">
+                            <node concept="37vLTw" id="inTShiYi_S" role="2Oq$k0">
+                              <ref role="3cqZAo" node="inTShiYi_J" resolve="editorComponentSettings" />
+                            </node>
+                            <node concept="liA8E" id="inTShiYi_T" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~EditorFontMetricsProvider.getFontMetrics(java.lang.String,int,int)" resolve="getFontMetrics" />
+                              <node concept="2OqwBi" id="inTShiYi_U" role="37wK5m">
+                                <node concept="37vLTw" id="inTShiYi_V" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="inTShiYi_F" resolve="settings" />
+                                </node>
+                                <node concept="liA8E" id="inTShiYi_W" role="2OqNvi">
+                                  <ref role="37wK5l" to="exr9:~EditorSettings.getFontFamily()" resolve="getFontFamily" />
+                                </node>
+                              </node>
+                              <node concept="10M0yZ" id="inTShiYi_X" role="37wK5m">
+                                <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
+                                <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                              </node>
+                              <node concept="2OqwBi" id="inTShiYi_Y" role="37wK5m">
+                                <node concept="37vLTw" id="inTShiYi_Z" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="inTShiYi_J" resolve="editorComponentSettings" />
+                                </node>
+                                <node concept="liA8E" id="inTShiYiA0" role="2OqNvi">
+                                  <ref role="37wK5l" to="cj4x:~EditorComponentSettings.getFontSize()" resolve="getFontSize" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="inTShiYiA1" role="3cqZAp">
+                        <node concept="3cpWsn" id="inTShiYiA2" role="3cpWs9">
+                          <property role="TrG5h" value="heightOfOneDash" />
+                          <node concept="10Oyi0" id="inTShiYiA3" role="1tU5fm" />
+                          <node concept="2OqwBi" id="inTShiYiA4" role="33vP2m">
+                            <node concept="37vLTw" id="inTShiYiA5" role="2Oq$k0">
+                              <ref role="3cqZAo" node="inTShiYi_P" resolve="fontMetrics" />
+                            </node>
+                            <node concept="liA8E" id="inTShiYiA6" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~EditorFontMetrics.getHeight()" resolve="getHeight" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="inTShiYiA7" role="3cqZAp" />
+                      <node concept="3cpWs8" id="inTShiYiA8" role="3cqZAp">
+                        <node concept="3cpWsn" id="inTShiYiA9" role="3cpWs9">
+                          <property role="TrG5h" value="builder" />
+                          <node concept="3uibUv" id="inTShiYiAa" role="1tU5fm">
+                            <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                          </node>
+                          <node concept="2ShNRf" id="inTShiYiAb" role="33vP2m">
+                            <node concept="1pGfFk" id="inTShiYiAc" role="2ShVmc">
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;()" resolve="TextBuilderImpl" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="inTShiYiAd" role="3cqZAp">
+                        <node concept="3cpWsn" id="inTShiYiAe" role="3cpWs9">
+                          <property role="TrG5h" value="numberOfDashes" />
+                          <node concept="10Oyi0" id="inTShiYiAf" role="1tU5fm" />
+                          <node concept="FJ1c_" id="inTShiYiAg" role="33vP2m">
+                            <node concept="37vLTw" id="inTShiYiAh" role="3uHU7w">
+                              <ref role="3cqZAo" node="inTShiYiA2" resolve="heightOfOneDash" />
+                            </node>
+                            <node concept="2OqwBi" id="inTShiYiAi" role="3uHU7B">
+                              <node concept="1rXfSq" id="inTShiYiAj" role="2Oq$k0">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent()" resolve="getParent" />
+                              </node>
+                              <node concept="liA8E" id="inTShiYiAk" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getHeight()" resolve="getHeight" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Dw8fO" id="inTShiYiAl" role="3cqZAp">
+                        <node concept="3clFbS" id="inTShiYiAm" role="2LFqv$">
+                          <node concept="3clFbF" id="inTShiYiAn" role="3cqZAp">
+                            <node concept="2OqwBi" id="inTShiYiAo" role="3clFbG">
+                              <node concept="37vLTw" id="inTShiYiAp" role="2Oq$k0">
+                                <ref role="3cqZAo" node="inTShiYiA9" resolve="builder" />
+                              </node>
+                              <node concept="liA8E" id="inTShiYiAq" role="2OqNvi">
+                                <ref role="37wK5l" to="cj4x:~TextBuilder.appendToTheBottom(jetbrains.mps.openapi.editor.TextBuilder)" resolve="appendToTheBottom" />
+                                <node concept="2ShNRf" id="inTShiYiAr" role="37wK5m">
+                                  <node concept="1pGfFk" id="inTShiYiAs" role="2ShVmc">
+                                    <property role="373rjd" value="true" />
+                                    <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                                    <node concept="Xl_RD" id="inTShiYiAt" role="37wK5m">
+                                      <property role="Xl_RC" value="|" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWsn" id="inTShiYiAu" role="1Duv9x">
+                          <property role="TrG5h" value="i" />
+                          <node concept="10Oyi0" id="inTShiYiAv" role="1tU5fm" />
+                          <node concept="3cmrfG" id="inTShiYiAw" role="33vP2m">
+                            <property role="3cmrfH" value="0" />
+                          </node>
+                        </node>
+                        <node concept="3eOVzh" id="inTShiYiAx" role="1Dwp0S">
+                          <node concept="37vLTw" id="inTShiYiAy" role="3uHU7w">
+                            <ref role="3cqZAo" node="inTShiYiAe" resolve="numberOfDashes" />
+                          </node>
+                          <node concept="37vLTw" id="inTShiYiAz" role="3uHU7B">
+                            <ref role="3cqZAo" node="inTShiYiAu" resolve="i" />
+                          </node>
+                        </node>
+                        <node concept="3uNrnE" id="inTShiYiA$" role="1Dwrff">
+                          <node concept="37vLTw" id="inTShiYiA_" role="2$L3a6">
+                            <ref role="3cqZAo" node="inTShiYiAu" resolve="i" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="inTShiYiAA" role="3cqZAp">
+                        <node concept="37vLTw" id="inTShiYiAB" role="3clFbG">
+                          <ref role="3cqZAo" node="inTShiYiA9" resolve="builder" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiYiAC" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -13731,6 +14205,33 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="56eyDwNvPp8" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="2tJIrI" id="inTShiYNmu" role="jymVt" />
+                  <node concept="3clFb_" id="inTShiYMAW" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="renderText" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="inTShiYMAX" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiYMAY" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiYMAZ" role="3clF47">
+                      <node concept="3clFbF" id="inTShiYMB0" role="3cqZAp">
+                        <node concept="2ShNRf" id="inTShiYMB1" role="3clFbG">
+                          <node concept="1pGfFk" id="inTShiYMB2" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                            <node concept="Xl_RD" id="inTShiYMB3" role="37wK5m">
+                              <property role="Xl_RC" value="|" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiYMB4" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
