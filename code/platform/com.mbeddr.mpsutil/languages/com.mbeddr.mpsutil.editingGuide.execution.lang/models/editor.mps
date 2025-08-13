@@ -10,6 +10,7 @@
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -26,9 +27,10 @@
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="mc8f" ref="r:02240f59-d215-4642-b459-56f9f2ccb58d(de.itemis.mps.editor.celllayout.runtime.cells)" />
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
+    <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -77,9 +79,6 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
-      <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
-        <property id="1235999920262" name="align" index="37lx6p" />
-      </concept>
       <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
@@ -90,7 +89,7 @@
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
         <property id="1225456424731" name="value" index="1iTho6" />
       </concept>
-      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
@@ -115,7 +114,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
@@ -157,7 +156,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -199,6 +198,9 @@
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -265,12 +267,13 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -282,7 +285,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="3066917033203108594" name="jetbrains.mps.baseLanguage.structure.LocalInstanceMethodCall" flags="nn" index="3P9mCS" />
@@ -307,6 +310,9 @@
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -387,7 +393,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -706,9 +712,9 @@
             <node concept="2iRfu4" id="7FOIhAt67tG" role="2iSdaV" />
             <node concept="3EZMnI" id="7lgjy2PT7d$" role="3EZMnx">
               <node concept="2iRfu4" id="7lgjy2PT7dA" role="2iSdaV" />
-              <node concept="3gTLQM" id="7lgjy2PT7dB" role="3EZMnx">
-                <node concept="3Fmcul" id="7lgjy2PT7dC" role="3FoqZy">
-                  <node concept="3clFbS" id="7lgjy2PT7dD" role="2VODD2">
+              <node concept="fWXJ_" id="5vhcTL2ySaY" role="3EZMnx">
+                <node concept="3Fmcul" id="5vhcTL2ySb0" role="3FoqZy">
+                  <node concept="3clFbS" id="5vhcTL2ySb2" role="2VODD2">
                     <node concept="3cpWs8" id="57DYivDUoNY" role="3cqZAp">
                       <node concept="3cpWsn" id="57DYivDUoO1" role="3cpWs9">
                         <property role="TrG5h" value="previousExecutor" />
@@ -739,10 +745,33 @@
                           <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                         </node>
                         <node concept="2ShNRf" id="7lgjy2PT7dH" role="33vP2m">
-                          <node concept="1pGfFk" id="7lgjy2PT7dI" role="2ShVmc">
-                            <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                            <node concept="Xl_RD" id="7lgjy2PT7dJ" role="37wK5m">
-                              <property role="Xl_RC" value="Go Back" />
+                          <node concept="YeOm9" id="inTShjfgZ8" role="2ShVmc">
+                            <node concept="1Y3b0j" id="inTShjfgZb" role="YeSDq">
+                              <property role="2bfB8j" value="true" />
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                              <ref role="1Y3XeK" to="dxuu:~JButton" resolve="JButton" />
+                              <node concept="3clFb_" id="inTShjfi4i" role="jymVt">
+                                <property role="TrG5h" value="toString" />
+                                <node concept="3Tm1VV" id="inTShjfi4j" role="1B3o_S" />
+                                <node concept="3uibUv" id="inTShjfi4k" role="3clF45">
+                                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                                </node>
+                                <node concept="3clFbS" id="inTShjfi4l" role="3clF47">
+                                  <node concept="3clFbF" id="inTShjfi4m" role="3cqZAp">
+                                    <node concept="1rXfSq" id="inTShjfi4n" role="3clFbG">
+                                      <ref role="37wK5l" to="dxuu:~AbstractButton.getText()" resolve="getText" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2AHcQZ" id="inTShjfi4o" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                                </node>
+                              </node>
+                              <node concept="3Tm1VV" id="inTShjfgZc" role="1B3o_S" />
+                              <node concept="Xl_RD" id="7lgjy2PT7dJ" role="37wK5m">
+                                <property role="Xl_RC" value="Go Back" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1051,9 +1080,9 @@
                 </node>
               </node>
               <node concept="3XFhqQ" id="7FOIhAt4Yrw" role="3EZMnx" />
-              <node concept="3gTLQM" id="icy2A0JpOG" role="3EZMnx">
-                <node concept="3Fmcul" id="icy2A0JpOH" role="3FoqZy">
-                  <node concept="3clFbS" id="icy2A0JpOI" role="2VODD2">
+              <node concept="fWXJ_" id="5vhcTL2z2P5" role="3EZMnx">
+                <node concept="3Fmcul" id="5vhcTL2z2P7" role="3FoqZy">
+                  <node concept="3clFbS" id="5vhcTL2z2P9" role="2VODD2">
                     <node concept="3cpWs8" id="icy2A0JpOJ" role="3cqZAp">
                       <node concept="3cpWsn" id="icy2A0JpOK" role="3cpWs9">
                         <property role="TrG5h" value="ex" />
@@ -1283,7 +1312,8 @@
                           <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                         </node>
                         <node concept="2ShNRf" id="icy2A0JpPe" role="33vP2m">
-                          <node concept="1pGfFk" id="icy2A0JpPf" role="2ShVmc">
+                          <node concept="1pGfFk" id="5vhcTL2z9Vi" role="2ShVmc">
+                            <property role="373rjd" value="true" />
                             <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                             <node concept="37vLTw" id="DBaqrEYxjZ" role="37wK5m">
                               <ref role="3cqZAo" node="DBaqrEYsHN" resolve="buttonText" />
@@ -1442,9 +1472,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="37jFXN" id="icy2A0JpPQ" role="3F10Kt">
-                  <property role="37lx6p" value="hZ7kOz9/RIGHT" />
-                </node>
               </node>
             </node>
           </node>
@@ -1573,9 +1600,9 @@
             <property role="3F0ifm" value="You are done with this exercise." />
           </node>
           <node concept="3F0ifn" id="47lXHjomsQ0" role="3EZMnx" />
-          <node concept="3gTLQM" id="47lXHjomsQc" role="3EZMnx">
-            <node concept="3Fmcul" id="47lXHjomsQd" role="3FoqZy">
-              <node concept="3clFbS" id="47lXHjomsQe" role="2VODD2">
+          <node concept="fWXJ_" id="5vhcTL2yCwZ" role="3EZMnx">
+            <node concept="3Fmcul" id="5vhcTL2yCx1" role="3FoqZy">
+              <node concept="3clFbS" id="5vhcTL2yCx3" role="2VODD2">
                 <node concept="3cpWs8" id="47lXHjomsQf" role="3cqZAp">
                   <node concept="3cpWsn" id="47lXHjomsQg" role="3cpWs9">
                     <property role="TrG5h" value="button" />
@@ -1583,7 +1610,8 @@
                       <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                     </node>
                     <node concept="2ShNRf" id="47lXHjomsQi" role="33vP2m">
-                      <node concept="1pGfFk" id="47lXHjomsQj" role="2ShVmc">
+                      <node concept="1pGfFk" id="5vhcTL2yJYs" role="2ShVmc">
+                        <property role="373rjd" value="true" />
                         <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                         <node concept="Xl_RD" id="47lXHjomsQk" role="37wK5m">
                           <property role="Xl_RC" value="Go Back" />
@@ -2648,6 +2676,32 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="1LnB5xduXK0" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                    </node>
+                  </node>
+                  <node concept="3clFb_" id="inTShiYMAW" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="renderText" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="inTShiYMAX" role="1B3o_S" />
+                    <node concept="3uibUv" id="inTShiYMAY" role="3clF45">
+                      <ref role="3uigEE" to="cj4x:~TextBuilder" resolve="TextBuilder" />
+                    </node>
+                    <node concept="3clFbS" id="inTShiYMAZ" role="3clF47">
+                      <node concept="3clFbF" id="inTShiYMB0" role="3cqZAp">
+                        <node concept="2ShNRf" id="inTShiYMB1" role="3clFbG">
+                          <node concept="1pGfFk" id="inTShiYMB2" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="hhnx:~TextBuilderImpl.&lt;init&gt;(java.lang.String)" resolve="TextBuilderImpl" />
+                            <node concept="Xl_RD" id="inTShiYMB3" role="37wK5m">
+                              <property role="Xl_RC" value="|" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2AHcQZ" id="inTShiYMB4" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>

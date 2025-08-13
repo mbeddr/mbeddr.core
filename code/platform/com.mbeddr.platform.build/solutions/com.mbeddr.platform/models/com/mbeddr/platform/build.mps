@@ -13926,6 +13926,11 @@
             <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5vhcTL2KfrF" role="3bR37C">
+          <node concept="3bR9La" id="5vhcTL2KfrG" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:7wH7VDRXrTO" resolve="nl.f1re.mps.editor.swing.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Nsh5Tc2mTg" role="3989C9">
