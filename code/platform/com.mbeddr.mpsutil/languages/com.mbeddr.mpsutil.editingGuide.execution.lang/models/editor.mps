@@ -28,8 +28,8 @@
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="l4gp" ref="r:a2db9c62-2dcd-4812-bc5f-0468bbf0b1c1(com.mbeddr.mpsutil.editingGuide.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -275,6 +275,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -743,10 +744,33 @@
                           <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                         </node>
                         <node concept="2ShNRf" id="7lgjy2PT7dH" role="33vP2m">
-                          <node concept="1pGfFk" id="7lgjy2PT7dI" role="2ShVmc">
-                            <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                            <node concept="Xl_RD" id="7lgjy2PT7dJ" role="37wK5m">
-                              <property role="Xl_RC" value="Go Back" />
+                          <node concept="YeOm9" id="inTShjfgZ8" role="2ShVmc">
+                            <node concept="1Y3b0j" id="inTShjfgZb" role="YeSDq">
+                              <property role="2bfB8j" value="true" />
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                              <ref role="1Y3XeK" to="dxuu:~JButton" resolve="JButton" />
+                              <node concept="3clFb_" id="inTShjfi4i" role="jymVt">
+                                <property role="TrG5h" value="toString" />
+                                <node concept="3Tm1VV" id="inTShjfi4j" role="1B3o_S" />
+                                <node concept="3uibUv" id="inTShjfi4k" role="3clF45">
+                                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                                </node>
+                                <node concept="3clFbS" id="inTShjfi4l" role="3clF47">
+                                  <node concept="3clFbF" id="inTShjfi4m" role="3cqZAp">
+                                    <node concept="1rXfSq" id="inTShjfi4n" role="3clFbG">
+                                      <ref role="37wK5l" to="dxuu:~AbstractButton.getText()" resolve="getText" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2AHcQZ" id="inTShjfi4o" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="wyt6:~Override" />
+                                </node>
+                              </node>
+                              <node concept="3Tm1VV" id="inTShjfgZc" role="1B3o_S" />
+                              <node concept="Xl_RD" id="7lgjy2PT7dJ" role="37wK5m">
+                                <property role="Xl_RC" value="Go Back" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1287,10 +1311,33 @@
                           <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                         </node>
                         <node concept="2ShNRf" id="icy2A0JpPe" role="33vP2m">
-                          <node concept="1pGfFk" id="icy2A0JpPf" role="2ShVmc">
-                            <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                            <node concept="37vLTw" id="DBaqrEYxjZ" role="37wK5m">
-                              <ref role="3cqZAo" node="DBaqrEYsHN" resolve="buttonText" />
+                          <node concept="YeOm9" id="inTShjfnVD" role="2ShVmc">
+                            <node concept="1Y3b0j" id="inTShjfnVG" role="YeSDq">
+                              <property role="2bfB8j" value="true" />
+                              <property role="373rjd" value="true" />
+                              <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                              <ref role="1Y3XeK" to="dxuu:~JButton" resolve="JButton" />
+                              <node concept="3clFb_" id="inTShjfpji" role="jymVt">
+                                <property role="TrG5h" value="toString" />
+                                <node concept="3Tm1VV" id="inTShjfpjj" role="1B3o_S" />
+                                <node concept="3uibUv" id="inTShjfpjk" role="3clF45">
+                                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                                </node>
+                                <node concept="3clFbS" id="inTShjfpjl" role="3clF47">
+                                  <node concept="3clFbF" id="inTShjfpjm" role="3cqZAp">
+                                    <node concept="1rXfSq" id="inTShjfpjn" role="3clFbG">
+                                      <ref role="37wK5l" to="dxuu:~AbstractButton.getText()" resolve="getText" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2AHcQZ" id="inTShjfpjo" role="2AJF6D">
+                                  <ref role="2AI5Lk" to="wyt6:~Override" />
+                                </node>
+                              </node>
+                              <node concept="3Tm1VV" id="inTShjfnVH" role="1B3o_S" />
+                              <node concept="37vLTw" id="DBaqrEYxjZ" role="37wK5m">
+                                <ref role="3cqZAo" node="DBaqrEYsHN" resolve="buttonText" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1587,10 +1634,33 @@
                       <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                     </node>
                     <node concept="2ShNRf" id="47lXHjomsQi" role="33vP2m">
-                      <node concept="1pGfFk" id="47lXHjomsQj" role="2ShVmc">
-                        <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                        <node concept="Xl_RD" id="47lXHjomsQk" role="37wK5m">
-                          <property role="Xl_RC" value="Go Back" />
+                      <node concept="YeOm9" id="inTShjfaa$" role="2ShVmc">
+                        <node concept="1Y3b0j" id="inTShjfaaB" role="YeSDq">
+                          <property role="2bfB8j" value="true" />
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                          <ref role="1Y3XeK" to="dxuu:~JButton" resolve="JButton" />
+                          <node concept="3clFb_" id="inTShje3v6" role="jymVt">
+                            <property role="TrG5h" value="toString" />
+                            <node concept="3Tm1VV" id="inTShje3v7" role="1B3o_S" />
+                            <node concept="3uibUv" id="inTShje3v9" role="3clF45">
+                              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                            </node>
+                            <node concept="3clFbS" id="inTShje3vk" role="3clF47">
+                              <node concept="3clFbF" id="inTShje9nw" role="3cqZAp">
+                                <node concept="1rXfSq" id="inTShje9nv" role="3clFbG">
+                                  <ref role="37wK5l" to="dxuu:~AbstractButton.getText()" resolve="getText" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2AHcQZ" id="inTShje3vl" role="2AJF6D">
+                              <ref role="2AI5Lk" to="wyt6:~Override" />
+                            </node>
+                          </node>
+                          <node concept="3Tm1VV" id="inTShjfaaC" role="1B3o_S" />
+                          <node concept="Xl_RD" id="47lXHjomsQk" role="37wK5m">
+                            <property role="Xl_RC" value="Go Back" />
+                          </node>
                         </node>
                       </node>
                     </node>
