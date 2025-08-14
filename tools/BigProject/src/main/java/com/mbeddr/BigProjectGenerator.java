@@ -26,6 +26,7 @@ public class BigProjectGenerator {
         System.out.println("Searching for modules under " + projectDir);
 
         File langDir = new File(projectDir + "/code/languages");
+        File platformDir = new File(projectDir + "/code/platform");
         File testsDir = new File(projectDir + "/code/tests");
         File applicationsDir = new File(projectDir + "/code/applications");
 
@@ -40,6 +41,7 @@ public class BigProjectGenerator {
         w.newLine();
 
         traverse(langDir, w);
+        traverse(platformDir, w);
         traverse(testsDir, w);
         traverse(applicationsDir, w);
 

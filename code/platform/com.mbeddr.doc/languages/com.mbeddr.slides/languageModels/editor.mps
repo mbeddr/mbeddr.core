@@ -109,6 +109,12 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -136,6 +142,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -189,6 +198,7 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -503,10 +513,33 @@
                         <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                       </node>
                       <node concept="2ShNRf" id="5yxqZJwz93D" role="33vP2m">
-                        <node concept="1pGfFk" id="5yxqZJwz93E" role="2ShVmc">
-                          <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                          <node concept="Xl_RD" id="5yxqZJwz93K" role="37wK5m">
-                            <property role="Xl_RC" value="Invalid Path" />
+                        <node concept="YeOm9" id="inTShjg3Pm" role="2ShVmc">
+                          <node concept="1Y3b0j" id="inTShjg3Pp" role="YeSDq">
+                            <property role="2bfB8j" value="true" />
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                            <ref role="1Y3XeK" to="dxuu:~JLabel" resolve="JLabel" />
+                            <node concept="3clFb_" id="inTShjfF4E" role="jymVt">
+                              <property role="TrG5h" value="toString" />
+                              <node concept="3Tm1VV" id="inTShjfF4F" role="1B3o_S" />
+                              <node concept="3uibUv" id="inTShjfF4G" role="3clF45">
+                                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                              </node>
+                              <node concept="3clFbS" id="inTShjfF4H" role="3clF47">
+                                <node concept="3clFbF" id="inTShje9nw" role="3cqZAp">
+                                  <node concept="1rXfSq" id="inTShje9nv" role="3clFbG">
+                                    <ref role="37wK5l" to="dxuu:~JLabel.getText()" resolve="getText" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2AHcQZ" id="inTShjfF4I" role="2AJF6D">
+                                <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                              </node>
+                            </node>
+                            <node concept="3Tm1VV" id="inTShjg3Pq" role="1B3o_S" />
+                            <node concept="Xl_RD" id="5yxqZJwz93K" role="37wK5m">
+                              <property role="Xl_RC" value="Invalid Path" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -570,13 +603,36 @@
                               <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                             </node>
                             <node concept="2ShNRf" id="5yxqZJwyQDd" role="33vP2m">
-                              <node concept="1pGfFk" id="5yxqZJwyQDe" role="2ShVmc">
-                                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(javax.swing.Icon)" resolve="JLabel" />
-                                <node concept="2ShNRf" id="3RseghIdPNQ" role="37wK5m">
-                                  <node concept="1pGfFk" id="3RseghIdPNS" role="2ShVmc">
-                                    <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.awt.Image)" resolve="ImageIcon" />
-                                    <node concept="37vLTw" id="5Hxjapw9vhf" role="37wK5m">
-                                      <ref role="3cqZAo" node="3RseghIdPNC" resolve="imeg" />
+                              <node concept="YeOm9" id="inTShjgaKC" role="2ShVmc">
+                                <node concept="1Y3b0j" id="inTShjgaKF" role="YeSDq">
+                                  <property role="2bfB8j" value="true" />
+                                  <property role="373rjd" value="true" />
+                                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(javax.swing.Icon)" resolve="JLabel" />
+                                  <ref role="1Y3XeK" to="dxuu:~JLabel" resolve="JLabel" />
+                                  <node concept="3clFb_" id="inTShjgcy1" role="jymVt">
+                                    <property role="TrG5h" value="toString" />
+                                    <node concept="3Tm1VV" id="inTShjgcy2" role="1B3o_S" />
+                                    <node concept="3uibUv" id="inTShjgcy3" role="3clF45">
+                                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                                    </node>
+                                    <node concept="3clFbS" id="inTShjgcy4" role="3clF47">
+                                      <node concept="3clFbF" id="inTShjgcy5" role="3cqZAp">
+                                        <node concept="1rXfSq" id="inTShjgcy6" role="3clFbG">
+                                          <ref role="37wK5l" to="dxuu:~JLabel.getText()" resolve="getText" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="2AHcQZ" id="inTShjgcy7" role="2AJF6D">
+                                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                                    </node>
+                                  </node>
+                                  <node concept="3Tm1VV" id="inTShjgaKG" role="1B3o_S" />
+                                  <node concept="2ShNRf" id="3RseghIdPNQ" role="37wK5m">
+                                    <node concept="1pGfFk" id="3RseghIdPNS" role="2ShVmc">
+                                      <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.awt.Image)" resolve="ImageIcon" />
+                                      <node concept="37vLTw" id="5Hxjapw9vhf" role="37wK5m">
+                                        <ref role="3cqZAo" node="3RseghIdPNC" resolve="imeg" />
+                                      </node>
                                     </node>
                                   </node>
                                 </node>
@@ -618,18 +674,41 @@
                                 <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
                               </node>
                               <node concept="2ShNRf" id="3RseghIdSPO" role="33vP2m">
-                                <node concept="1pGfFk" id="3RseghIdSPP" role="2ShVmc">
-                                  <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                                  <node concept="3cpWs3" id="3RseghIdSQe" role="37wK5m">
-                                    <node concept="Xl_RD" id="3RseghIdSPQ" role="3uHU7B">
-                                      <property role="Xl_RC" value="Exception: " />
-                                    </node>
-                                    <node concept="2OqwBi" id="3RseghIdSQB" role="3uHU7w">
-                                      <node concept="37vLTw" id="5Hxjapw9vb7" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="3RseghIdSP5" resolve="ex" />
+                                <node concept="YeOm9" id="inTShjggfs" role="2ShVmc">
+                                  <node concept="1Y3b0j" id="inTShjggfv" role="YeSDq">
+                                    <property role="2bfB8j" value="true" />
+                                    <property role="373rjd" value="true" />
+                                    <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                                    <ref role="1Y3XeK" to="dxuu:~JLabel" resolve="JLabel" />
+                                    <node concept="3clFb_" id="inTShjggfy" role="jymVt">
+                                      <property role="TrG5h" value="toString" />
+                                      <node concept="3Tm1VV" id="inTShjggfz" role="1B3o_S" />
+                                      <node concept="3uibUv" id="inTShjggf$" role="3clF45">
+                                        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                                       </node>
-                                      <node concept="liA8E" id="3RseghIdSQI" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                      <node concept="3clFbS" id="inTShjggf_" role="3clF47">
+                                        <node concept="3clFbF" id="inTShjggfA" role="3cqZAp">
+                                          <node concept="1rXfSq" id="inTShjggfB" role="3clFbG">
+                                            <ref role="37wK5l" to="dxuu:~JLabel.getText()" resolve="getText" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="2AHcQZ" id="inTShjggfC" role="2AJF6D">
+                                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                                      </node>
+                                    </node>
+                                    <node concept="3Tm1VV" id="inTShjggfw" role="1B3o_S" />
+                                    <node concept="3cpWs3" id="3RseghIdSQe" role="37wK5m">
+                                      <node concept="Xl_RD" id="3RseghIdSPQ" role="3uHU7B">
+                                        <property role="Xl_RC" value="Exception: " />
+                                      </node>
+                                      <node concept="2OqwBi" id="3RseghIdSQB" role="3uHU7w">
+                                        <node concept="37vLTw" id="5Hxjapw9vb7" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="3RseghIdSP5" resolve="ex" />
+                                        </node>
+                                        <node concept="liA8E" id="3RseghIdSQI" role="2OqNvi">
+                                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>

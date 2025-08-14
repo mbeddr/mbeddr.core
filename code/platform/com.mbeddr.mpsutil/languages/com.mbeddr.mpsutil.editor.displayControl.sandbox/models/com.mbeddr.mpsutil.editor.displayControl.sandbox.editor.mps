@@ -82,6 +82,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -113,11 +116,11 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -187,10 +190,33 @@
                   <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                 </node>
                 <node concept="2ShNRf" id="3Ol24iiU3B8" role="33vP2m">
-                  <node concept="1pGfFk" id="3Ol24iiU99A" role="2ShVmc">
-                    <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                    <node concept="Xl_RD" id="3Ol24iiUCiy" role="37wK5m">
-                      <property role="Xl_RC" value="Refresh" />
+                  <node concept="YeOm9" id="inTShjfsMo" role="2ShVmc">
+                    <node concept="1Y3b0j" id="inTShjfsMr" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                      <ref role="1Y3XeK" to="dxuu:~JButton" resolve="JButton" />
+                      <node concept="3clFb_" id="inTShje3v6" role="jymVt">
+                        <property role="TrG5h" value="toString" />
+                        <node concept="3Tm1VV" id="inTShje3v7" role="1B3o_S" />
+                        <node concept="3uibUv" id="inTShje3v9" role="3clF45">
+                          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                        </node>
+                        <node concept="3clFbS" id="inTShje3vk" role="3clF47">
+                          <node concept="3clFbF" id="inTShje9nw" role="3cqZAp">
+                            <node concept="1rXfSq" id="inTShje9nv" role="3clFbG">
+                              <ref role="37wK5l" to="dxuu:~AbstractButton.getText()" resolve="getText" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2AHcQZ" id="inTShje3vl" role="2AJF6D">
+                          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="inTShjfsMs" role="1B3o_S" />
+                      <node concept="Xl_RD" id="3Ol24iiUCiy" role="37wK5m">
+                        <property role="Xl_RC" value="Refresh" />
+                      </node>
                     </node>
                   </node>
                 </node>

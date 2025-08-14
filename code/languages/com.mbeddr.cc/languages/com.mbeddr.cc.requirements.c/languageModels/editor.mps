@@ -222,11 +222,15 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -287,6 +291,7 @@
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -2495,21 +2500,46 @@
                     <ref role="3uigEE" to="dxuu:~JSlider" resolve="JSlider" />
                   </node>
                   <node concept="2ShNRf" id="dfV14BYn6Z" role="33vP2m">
-                    <node concept="1pGfFk" id="dfV14BYn70" role="2ShVmc">
-                      <ref role="37wK5l" to="dxuu:~JSlider.&lt;init&gt;(int,int,int,int)" resolve="JSlider" />
-                      <node concept="10M0yZ" id="dfV14BYn71" role="37wK5m">
-                        <ref role="1PxDUh" to="dxuu:~JSlider" resolve="JSlider" />
-                        <ref role="3cqZAo" to="dxuu:~SwingConstants.HORIZONTAL" resolve="HORIZONTAL" />
-                      </node>
-                      <node concept="3cmrfG" id="dfV14BYn72" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
-                      </node>
-                      <node concept="3cmrfG" id="dfV14BYn73" role="37wK5m">
-                        <property role="3cmrfH" value="100" />
-                      </node>
-                      <node concept="10M0yZ" id="dfV14BYn74" role="37wK5m">
-                        <ref role="3cqZAo" to="1v9t:$bJ0jgVdf9" resolve="sliderValue" />
-                        <ref role="1PxDUh" to="1v9t:$bJ0jgVdf3" resolve="DebugHelper" />
+                    <node concept="YeOm9" id="inTShj4YcG" role="2ShVmc">
+                      <node concept="1Y3b0j" id="inTShj4YcJ" role="YeSDq">
+                        <property role="2bfB8j" value="true" />
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="dxuu:~JSlider.&lt;init&gt;(int,int,int,int)" resolve="JSlider" />
+                        <ref role="1Y3XeK" to="dxuu:~JSlider" resolve="JSlider" />
+                        <node concept="3Tm1VV" id="inTShj4YcK" role="1B3o_S" />
+                        <node concept="10M0yZ" id="dfV14BYn71" role="37wK5m">
+                          <ref role="1PxDUh" to="dxuu:~JSlider" resolve="JSlider" />
+                          <ref role="3cqZAo" to="dxuu:~SwingConstants.HORIZONTAL" resolve="HORIZONTAL" />
+                        </node>
+                        <node concept="3cmrfG" id="dfV14BYn72" role="37wK5m">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="3cmrfG" id="dfV14BYn73" role="37wK5m">
+                          <property role="3cmrfH" value="100" />
+                        </node>
+                        <node concept="10M0yZ" id="dfV14BYn74" role="37wK5m">
+                          <ref role="3cqZAo" to="1v9t:$bJ0jgVdf9" resolve="sliderValue" />
+                          <ref role="1PxDUh" to="1v9t:$bJ0jgVdf3" resolve="DebugHelper" />
+                        </node>
+                        <node concept="3clFb_" id="inTShj50rK" role="jymVt">
+                          <property role="TrG5h" value="toString" />
+                          <node concept="3Tm1VV" id="inTShj50rL" role="1B3o_S" />
+                          <node concept="17QB3L" id="inTShj5nYr" role="3clF45" />
+                          <node concept="3clFbS" id="inTShj50rW" role="3clF47">
+                            <node concept="3clFbF" id="inTShj5fY8" role="3cqZAp">
+                              <node concept="2YIFZM" id="inTShj5gxF" role="3clFbG">
+                                <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+                                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                                <node concept="1rXfSq" id="inTShj597d" role="37wK5m">
+                                  <ref role="37wK5l" to="dxuu:~JSlider.getValue()" resolve="getValue" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="inTShj50rX" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
