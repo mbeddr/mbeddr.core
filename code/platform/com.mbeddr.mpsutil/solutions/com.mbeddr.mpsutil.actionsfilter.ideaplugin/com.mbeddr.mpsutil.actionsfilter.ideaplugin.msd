@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.mpsutil.actionsfilter.ideaplugin" uuid="c091aa8e-adbb-460a-b99f-e1a7f2242121" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="provided" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
