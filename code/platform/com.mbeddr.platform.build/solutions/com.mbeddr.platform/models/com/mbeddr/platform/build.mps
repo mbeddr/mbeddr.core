@@ -19185,15 +19185,18 @@
       </node>
       <node concept="m$_wl" id="4SMNYR2Zl4L" role="39821P">
         <ref role="m_rDy" node="4SMNYR2Zjo5" resolve="com.mbeddr.mpsutil.actionsfilter" />
-        <node concept="pUk6x" id="4SMNYR2Zl4M" role="pUk7w" />
+        <node concept="pUk6x" id="1MBa0SvgMP4" role="pUk7w" />
         <node concept="398223" id="4SMNYR2Zl4N" role="39821P">
+          <node concept="L2wRC" id="4SMNYR2Zl4Q" role="39821P">
+            <ref role="L2wRA" node="4SMNYR2ZktT" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
+          </node>
+          <node concept="L2wRC" id="11HDj3hprs4" role="39821P">
+            <ref role="L2wRA" node="1LEJpHNG_EO" resolve="com.mbeddr.mpsutil.actionsfilter.ideaplugin" />
+          </node>
           <node concept="3_J27D" id="4SMNYR2Zl4O" role="Nbhlr">
             <node concept="3Mxwew" id="4SMNYR2Zl4P" role="3MwsjC">
               <property role="3MwjfP" value="lib" />
             </node>
-          </node>
-          <node concept="L2wRC" id="4SMNYR2Zl4Q" role="39821P">
-            <ref role="L2wRA" node="4SMNYR2ZktT" resolve="com.mbeddr.mpsutil.actionsfilter.runtime" />
           </node>
         </node>
       </node>
