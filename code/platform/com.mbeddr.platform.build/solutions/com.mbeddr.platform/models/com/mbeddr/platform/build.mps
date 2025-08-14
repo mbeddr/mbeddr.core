@@ -2117,7 +2117,7 @@
           </node>
           <node concept="1SiIV0" id="vOGyTeLW36" role="3bR37C">
             <node concept="3bR9La" id="vOGyTeLW37" role="1SiIV1">
-              <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+              <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
             </node>
           </node>
           <node concept="1SiIV0" id="vOGyTeLW38" role="3bR37C">
@@ -2218,7 +2218,7 @@
         </node>
         <node concept="1SiIV0" id="vOGyTeLV80" role="3bR37C">
           <node concept="3bR9La" id="vOGyTeLV81" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="1SiIV0" id="vOGyTeLV82" role="3bR37C">
@@ -18828,7 +18828,7 @@
         </node>
         <node concept="1SiIV0" id="4JmsWjEr2hh" role="3bR37C">
           <node concept="3bR9La" id="4JmsWjEr2hi" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="1SiIV0" id="4JmsWjEr2hj" role="3bR37C">
