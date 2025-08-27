@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # August 2025
 
+## com.mbeddr.doc
+
+- Embed model context as text fixed.
+
 ## com.mbeddr.mpsutil.actionsfilter
 
 - Classloading issues fixed.
