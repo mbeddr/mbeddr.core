@@ -1565,7 +1565,7 @@
         <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
           <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
             <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="398BVA" id="bHMJKhDAXY" role="3LF7KH">
