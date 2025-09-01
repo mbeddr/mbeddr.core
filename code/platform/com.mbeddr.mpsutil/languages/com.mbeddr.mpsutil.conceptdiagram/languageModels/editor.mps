@@ -8,6 +8,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -329,6 +330,9 @@
     </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
+    </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -5020,9 +5024,24 @@
         <node concept="2iRfu4" id="1FnP66Z9mTb" role="2iSdaV" />
         <node concept="3EZMnI" id="1FnP66Z5iNH" role="3EZMnx">
           <node concept="2iRfu4" id="1FnP66Z5iNI" role="2iSdaV" />
-          <node concept="3gTLQM" id="1RYCYRTU8cT" role="3EZMnx">
-            <node concept="3Fmcul" id="1RYCYRTU8cV" role="3FoqZy">
-              <node concept="3clFbS" id="1RYCYRTU8cX" role="2VODD2">
+          <node concept="pkWqt" id="1FnP66Z7dCm" role="pqm2j">
+            <node concept="3clFbS" id="1FnP66Z7dCn" role="2VODD2">
+              <node concept="3clFbF" id="1FnP66Z7e67" role="3cqZAp">
+                <node concept="2OqwBi" id="1FnP66Z7hc_" role="3clFbG">
+                  <node concept="2OqwBi" id="1FnP66Z7ej2" role="2Oq$k0">
+                    <node concept="pncrf" id="1FnP66Z7e66" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1FnP66Z7eG6" role="2OqNvi">
+                      <ref role="3TtcxE" to="45ke:7APyAbMnxWJ" resolve="languagesInScope" />
+                    </node>
+                  </node>
+                  <node concept="3GX2aA" id="1FnP66Z7j7U" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="fWXJ_" id="5vhcTL2vUw$" role="3EZMnx">
+            <node concept="3Fmcul" id="5vhcTL2vUwA" role="3FoqZy">
+              <node concept="3clFbS" id="5vhcTL2vUwC" role="2VODD2">
                 <node concept="3cpWs8" id="1RYCYRTUbyK" role="3cqZAp">
                   <node concept="3cpWsn" id="1RYCYRTUbyL" role="3cpWs9">
                     <property role="TrG5h" value="autoFillBtn" />
@@ -5030,24 +5049,13 @@
                       <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                     </node>
                     <node concept="2ShNRf" id="1RYCYRTUbEm" role="33vP2m">
-                      <node concept="1pGfFk" id="1RYCYRTUcJD" role="2ShVmc">
+                      <node concept="1pGfFk" id="5vhcTL2w5J4" role="2ShVmc">
                         <property role="373rjd" value="true" />
                         <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                         <node concept="Xl_RD" id="1RYCYRTUd8X" role="37wK5m">
                           <property role="Xl_RC" value="Populate" />
                         </node>
                       </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="1FnP66YTszj" role="3cqZAp">
-                  <node concept="2OqwBi" id="1FnP66YTtjN" role="3clFbG">
-                    <node concept="37vLTw" id="1FnP66YTszh" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1RYCYRTUbyL" resolve="autoFillBtn" />
-                    </node>
-                    <node concept="liA8E" id="1FnP66YTuaZ" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
-                      <node concept="3clFbT" id="1FnP66YTFbq" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -5131,9 +5139,9 @@
               </node>
             </node>
           </node>
-          <node concept="3gTLQM" id="1FnP66Z5jCS" role="3EZMnx">
-            <node concept="3Fmcul" id="1FnP66Z5jCT" role="3FoqZy">
-              <node concept="3clFbS" id="1FnP66Z5jCU" role="2VODD2">
+          <node concept="fWXJ_" id="5vhcTL2vW_c" role="3EZMnx">
+            <node concept="3Fmcul" id="5vhcTL2vW_e" role="3FoqZy">
+              <node concept="3clFbS" id="5vhcTL2vW_g" role="2VODD2">
                 <node concept="3cpWs8" id="1FnP66Z5jCV" role="3cqZAp">
                   <node concept="3cpWsn" id="1FnP66Z5jCW" role="3cpWs9">
                     <property role="TrG5h" value="autoFillBtn" />
@@ -5141,24 +5149,13 @@
                       <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                     </node>
                     <node concept="2ShNRf" id="1FnP66Z5jCY" role="33vP2m">
-                      <node concept="1pGfFk" id="1FnP66Z5jCZ" role="2ShVmc">
+                      <node concept="1pGfFk" id="5vhcTL2wqbE" role="2ShVmc">
                         <property role="373rjd" value="true" />
                         <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                         <node concept="Xl_RD" id="1FnP66Z5jD0" role="37wK5m">
                           <property role="Xl_RC" value="Populate (ignore deprecated nodes)" />
                         </node>
                       </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="1FnP66Z5jD1" role="3cqZAp">
-                  <node concept="2OqwBi" id="1FnP66Z5jD2" role="3clFbG">
-                    <node concept="37vLTw" id="1FnP66Z5jD3" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1FnP66Z5jCW" resolve="autoFillBtn" />
-                    </node>
-                    <node concept="liA8E" id="1FnP66Z5jD4" role="2OqNvi">
-                      <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
-                      <node concept="3clFbT" id="1FnP66Z5jD5" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -5244,25 +5241,10 @@
               </node>
             </node>
           </node>
-          <node concept="pkWqt" id="1FnP66Z7dCm" role="pqm2j">
-            <node concept="3clFbS" id="1FnP66Z7dCn" role="2VODD2">
-              <node concept="3clFbF" id="1FnP66Z7e67" role="3cqZAp">
-                <node concept="2OqwBi" id="1FnP66Z7hc_" role="3clFbG">
-                  <node concept="2OqwBi" id="1FnP66Z7ej2" role="2Oq$k0">
-                    <node concept="pncrf" id="1FnP66Z7e66" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="1FnP66Z7eG6" role="2OqNvi">
-                      <ref role="3TtcxE" to="45ke:7APyAbMnxWJ" resolve="languagesInScope" />
-                    </node>
-                  </node>
-                  <node concept="3GX2aA" id="1FnP66Z7j7U" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
-        <node concept="3gTLQM" id="1FnP66Z8qWU" role="3EZMnx">
-          <node concept="3Fmcul" id="1FnP66Z8qWV" role="3FoqZy">
-            <node concept="3clFbS" id="1FnP66Z8qWW" role="2VODD2">
+        <node concept="fWXJ_" id="5vhcTL2wD0v" role="3EZMnx">
+          <node concept="3Fmcul" id="5vhcTL2wD0x" role="3FoqZy">
+            <node concept="3clFbS" id="5vhcTL2wD0z" role="2VODD2">
               <node concept="3cpWs8" id="1FnP66Z8qWX" role="3cqZAp">
                 <node concept="3cpWsn" id="1FnP66Z8qWY" role="3cpWs9">
                   <property role="TrG5h" value="autoFillBtn" />
@@ -5270,24 +5252,13 @@
                     <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                   </node>
                   <node concept="2ShNRf" id="1FnP66Z8qX0" role="33vP2m">
-                    <node concept="1pGfFk" id="1FnP66Z8qX1" role="2ShVmc">
+                    <node concept="1pGfFk" id="5vhcTL2wUdf" role="2ShVmc">
                       <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                       <node concept="Xl_RD" id="1FnP66Z8qX2" role="37wK5m">
                         <property role="Xl_RC" value="Clear" />
                       </node>
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="1FnP66Z8qX3" role="3cqZAp">
-                <node concept="2OqwBi" id="1FnP66Z8qX4" role="3clFbG">
-                  <node concept="37vLTw" id="1FnP66Z8qX5" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1FnP66Z8qWY" resolve="autoFillBtn" />
-                  </node>
-                  <node concept="liA8E" id="1FnP66Z8qX6" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComponent.setOpaque(boolean)" resolve="setOpaque" />
-                    <node concept="3clFbT" id="1FnP66Z8qX7" role="37wK5m" />
                   </node>
                 </node>
               </node>
