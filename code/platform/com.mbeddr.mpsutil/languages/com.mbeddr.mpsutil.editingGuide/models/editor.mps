@@ -7,6 +7,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="04e1f940-330e-483b-9a6a-1648b396a81c" name="com.mbeddr.mpsutil.hyperlink" version="-1" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -239,6 +240,12 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
+    </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544244790000" name="nl.f1re.mps.editor.swing.structure.QueryFunction_String" flags="ig" index="05MPa" />
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_">
+        <child id="8659612544238938786" name="toStringFunction" index="fNvko" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1346,9 +1353,9 @@
       <node concept="3F0A7n" id="2Sndli4jFQe" role="3EZMnx">
         <ref role="1NtTu8" to="1oap:Ib_Fk7zNeV" resolve="file" />
       </node>
-      <node concept="3gTLQM" id="Ib_Fk7zNg6" role="3EZMnx">
-        <node concept="3Fmcul" id="Ib_Fk7zNg7" role="3FoqZy">
-          <node concept="3clFbS" id="Ib_Fk7zNg8" role="2VODD2">
+      <node concept="fWXJ_" id="5vhcTL2QWNC" role="3EZMnx">
+        <node concept="3Fmcul" id="5vhcTL2QWNE" role="3FoqZy">
+          <node concept="3clFbS" id="5vhcTL2QWNG" role="2VODD2">
             <node concept="3cpWs6" id="Ib_Fk7zNg9" role="3cqZAp">
               <node concept="2YIFZM" id="AN0tL0jRgr" role="3cqZAk">
                 <ref role="1Pybhc" to="7a0s:6UDbxo8i0QW" resolve="EditorUtil" />
@@ -1359,6 +1366,15 @@
                   <ref role="355D3u" to="1oap:Ib_Fk7zNeV" resolve="file" />
                 </node>
                 <node concept="1Q80Hx" id="AN0tL0jRgu" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="05MPa" id="5vhcTL2R0QH" role="fNvko">
+          <node concept="3clFbS" id="5vhcTL2R0QI" role="2VODD2">
+            <node concept="3clFbF" id="5vhcTL2R0V3" role="3cqZAp">
+              <node concept="Xl_RD" id="5vhcTL2R0V2" role="3clFbG">
+                <property role="Xl_RC" value="" />
               </node>
             </node>
           </node>

@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -82,6 +83,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -128,6 +132,9 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
+    </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -177,9 +184,9 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3gTLQM" id="3Ol24iiTPXS" role="3EZMnx">
-        <node concept="3Fmcul" id="3Ol24iiTPXU" role="3FoqZy">
-          <node concept="3clFbS" id="3Ol24iiTPXW" role="2VODD2">
+      <node concept="fWXJ_" id="5vhcTL2zTLI" role="3EZMnx">
+        <node concept="3Fmcul" id="5vhcTL2zTLK" role="3FoqZy">
+          <node concept="3clFbS" id="5vhcTL2zTLM" role="2VODD2">
             <node concept="3cpWs8" id="3Ol24iiU3_X" role="3cqZAp">
               <node concept="3cpWsn" id="3Ol24iiU3_Y" role="3cpWs9">
                 <property role="TrG5h" value="refresh" />
@@ -187,7 +194,8 @@
                   <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                 </node>
                 <node concept="2ShNRf" id="3Ol24iiU3B8" role="33vP2m">
-                  <node concept="1pGfFk" id="3Ol24iiU99A" role="2ShVmc">
+                  <node concept="1pGfFk" id="5vhcTL2zZxp" role="2ShVmc">
+                    <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                     <node concept="Xl_RD" id="3Ol24iiUCiy" role="37wK5m">
                       <property role="Xl_RC" value="Refresh" />

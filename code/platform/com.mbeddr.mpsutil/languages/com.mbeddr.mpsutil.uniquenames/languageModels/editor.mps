@@ -9,6 +9,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -362,6 +363,12 @@
         <reference id="6626851894249712469" name="extensionPoint" index="2O5UnU" />
       </concept>
       <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
+    </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544244790000" name="nl.f1re.mps.editor.swing.structure.QueryFunction_String" flags="ig" index="05MPa" />
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_">
+        <child id="8659612544238938786" name="toStringFunction" index="fNvko" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -1790,8 +1797,8 @@
     </node>
     <node concept="3EZMnI" id="fLIIZeM" role="2wV5jI">
       <node concept="PXfge" id="4rDGDFJUR0t" role="3EZMnx">
-        <ref role="1k5W1q" to="tpen:hshQ_OE" resolve="Field" />
         <ref role="1NtTu8" to="tpce:fA0kJcN" resolve="role" />
+        <ref role="1k5W1q" to="tpen:hshQ_OE" resolve="Field" />
         <node concept="PXuZA" id="4rDGDFJUR0u" role="PY5m3">
           <node concept="3clFbS" id="4rDGDFJUR0v" role="2VODD2">
             <node concept="3clFbJ" id="6UyJMA9G3F9" role="3cqZAp">
@@ -3026,9 +3033,13 @@
           <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
           <ref role="1NtTu8" to="tpce:gSMwhzt" resolve="iconPath" />
         </node>
-        <node concept="3gTLQM" id="gSMKOBU" role="3EZMnx">
-          <node concept="3Fmcul" id="h7Gq5ai" role="3FoqZy">
-            <node concept="3clFbS" id="h7Gq5aj" role="2VODD2">
+        <node concept="VPM3Z" id="hEU$PQn" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="2iRfu4" id="i2IuJLJ" role="2iSdaV" />
+        <node concept="fWXJ_" id="5vhcTL2RH9M" role="3EZMnx">
+          <node concept="3Fmcul" id="5vhcTL2RH9O" role="3FoqZy">
+            <node concept="3clFbS" id="5vhcTL2RH9Q" role="2VODD2">
               <node concept="3cpWs6" id="h7GrovA" role="3cqZAp">
                 <node concept="2YIFZM" id="4oSomgtvHf2" role="3cqZAk">
                   <ref role="37wK5l" to="7a0s:6UDbxo8i0Rf" resolve="createSelectIconButton" />
@@ -3046,11 +3057,16 @@
               </node>
             </node>
           </node>
+          <node concept="05MPa" id="5vhcTL2RJLk" role="fNvko">
+            <node concept="3clFbS" id="5vhcTL2RJLl" role="2VODD2">
+              <node concept="3clFbF" id="5vhcTL2RKac" role="3cqZAp">
+                <node concept="Xl_RD" id="5vhcTL2RKab" role="3clFbG">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node concept="VPM3Z" id="hEU$PQn" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="2iRfu4" id="i2IuJLJ" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="i2IuJLQ" role="2iSdaV" />
     </node>
