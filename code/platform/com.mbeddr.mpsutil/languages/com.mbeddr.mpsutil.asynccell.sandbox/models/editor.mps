@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +15,7 @@
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="9aj0" ref="r:22cab18f-2fbb-4efb-b2e4-0123510ed1db(com.mbeddr.mpsutil.asynccell.sandbox.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -86,6 +88,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -149,6 +154,9 @@
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -168,9 +176,9 @@
         <node concept="VPM3Z" id="17HIJlL0f2u" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
-        <node concept="3gTLQM" id="17HIJlKZMgt" role="3EZMnx">
-          <node concept="3Fmcul" id="17HIJlKZMgv" role="3FoqZy">
-            <node concept="3clFbS" id="17HIJlKZMgx" role="2VODD2">
+        <node concept="fWXJ_" id="5vhcTL2u3Tj" role="3EZMnx">
+          <node concept="3Fmcul" id="5vhcTL2u3Tl" role="3FoqZy">
+            <node concept="3clFbS" id="5vhcTL2u3Tn" role="2VODD2">
               <node concept="3cpWs8" id="17HIJlKZU70" role="3cqZAp">
                 <node concept="3cpWsn" id="17HIJlKZU71" role="3cpWs9">
                   <property role="TrG5h" value="button" />
@@ -178,7 +186,8 @@
                     <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                   </node>
                   <node concept="2ShNRf" id="17HIJlKZU72" role="33vP2m">
-                    <node concept="1pGfFk" id="17HIJlKZU73" role="2ShVmc">
+                    <node concept="1pGfFk" id="5vhcTL2uloQ" role="2ShVmc">
+                      <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                       <node concept="Xl_RD" id="17HIJlKZU74" role="37wK5m">
                         <property role="Xl_RC" value="Start 5s calculation" />
@@ -245,9 +254,9 @@
             </node>
           </node>
         </node>
-        <node concept="3gTLQM" id="2YOONxNRDtn" role="3EZMnx">
-          <node concept="3Fmcul" id="2YOONxNRDto" role="3FoqZy">
-            <node concept="3clFbS" id="2YOONxNRDtp" role="2VODD2">
+        <node concept="fWXJ_" id="5vhcTL2u7zb" role="3EZMnx">
+          <node concept="3Fmcul" id="5vhcTL2u7zd" role="3FoqZy">
+            <node concept="3clFbS" id="5vhcTL2u7zf" role="2VODD2">
               <node concept="3cpWs8" id="2YOONxNRDtq" role="3cqZAp">
                 <node concept="3cpWsn" id="2YOONxNRDtr" role="3cpWs9">
                   <property role="TrG5h" value="button" />
@@ -255,7 +264,8 @@
                     <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                   </node>
                   <node concept="2ShNRf" id="2YOONxNRDtt" role="33vP2m">
-                    <node concept="1pGfFk" id="2YOONxNRDtu" role="2ShVmc">
+                    <node concept="1pGfFk" id="5vhcTL2uuAs" role="2ShVmc">
+                      <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                       <node concept="Xl_RD" id="2YOONxNRDtv" role="37wK5m">
                         <property role="Xl_RC" value="Throw Exception in 5s" />
@@ -333,9 +343,10 @@
             <property role="VOm3f" value="false" />
           </node>
         </node>
-        <node concept="3gTLQM" id="2u$73V9r4d6" role="3EZMnx">
-          <node concept="3Fmcul" id="2u$73V9r4d7" role="3FoqZy">
-            <node concept="3clFbS" id="2u$73V9r4d8" role="2VODD2">
+        <node concept="2iRfu4" id="17HIJlL0f2x" role="2iSdaV" />
+        <node concept="fWXJ_" id="5vhcTL2uaB7" role="3EZMnx">
+          <node concept="3Fmcul" id="5vhcTL2uaB9" role="3FoqZy">
+            <node concept="3clFbS" id="5vhcTL2uaBb" role="2VODD2">
               <node concept="3cpWs8" id="2u$73V9r4d9" role="3cqZAp">
                 <node concept="3cpWsn" id="2u$73V9r4da" role="3cpWs9">
                   <property role="TrG5h" value="button" />
@@ -343,7 +354,8 @@
                     <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                   </node>
                   <node concept="2ShNRf" id="2u$73V9r4dc" role="33vP2m">
-                    <node concept="1pGfFk" id="2u$73V9r4dd" role="2ShVmc">
+                    <node concept="1pGfFk" id="5vhcTL2uB7r" role="2ShVmc">
+                      <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                       <node concept="Xl_RD" id="2u$73V9r4de" role="37wK5m">
                         <property role="Xl_RC" value="Set to calculating" />
@@ -421,9 +433,9 @@
             </node>
           </node>
         </node>
-        <node concept="3gTLQM" id="2u$73V9r4Bq" role="3EZMnx">
-          <node concept="3Fmcul" id="2u$73V9r4Br" role="3FoqZy">
-            <node concept="3clFbS" id="2u$73V9r4Bs" role="2VODD2">
+        <node concept="fWXJ_" id="5vhcTL2uezJ" role="3EZMnx">
+          <node concept="3Fmcul" id="5vhcTL2uezL" role="3FoqZy">
+            <node concept="3clFbS" id="5vhcTL2uezN" role="2VODD2">
               <node concept="3cpWs8" id="2u$73V9r4Bt" role="3cqZAp">
                 <node concept="3cpWsn" id="2u$73V9r4Bu" role="3cpWs9">
                   <property role="TrG5h" value="button" />
@@ -431,7 +443,8 @@
                     <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                   </node>
                   <node concept="2ShNRf" id="2u$73V9r4Bw" role="33vP2m">
-                    <node concept="1pGfFk" id="2u$73V9r4Bx" role="2ShVmc">
+                    <node concept="1pGfFk" id="5vhcTL2uPjA" role="2ShVmc">
+                      <property role="373rjd" value="true" />
                       <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                       <node concept="Xl_RD" id="2u$73V9r4By" role="37wK5m">
                         <property role="Xl_RC" value="Set to \&quot;my result\&quot;" />
@@ -511,7 +524,6 @@
             </node>
           </node>
         </node>
-        <node concept="2iRfu4" id="17HIJlL0f2x" role="2iSdaV" />
       </node>
       <node concept="gc7cB" id="17HIJlL001o" role="3EZMnx">
         <node concept="2SqB2G" id="3Wx3Ow9bTSR" role="2SqHTX">

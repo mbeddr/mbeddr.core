@@ -13496,6 +13496,11 @@
             <ref role="3bR37D" node="$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5vhcTL2KfrF" role="3bR37C">
+          <node concept="3bR9La" id="5vhcTL2KfrG" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:7wH7VDRXrTO" resolve="nl.f1re.mps.editor.swing.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7Nsh5Tc2mTg" role="3989C9">
@@ -18715,25 +18720,6 @@
       <node concept="m$_yC" id="4SMNYR2Zjo6" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbLe59" resolve="com.intellij.modules.mps" />
       </node>
-      <node concept="2pNNFK" id="4SMNYR2Zjo7" role="20twgj">
-        <property role="2pNNFO" value="extensions" />
-        <node concept="2pNNFK" id="1cK4KxbROlt" role="3o6s8t">
-          <property role="2pNNFO" value="postStartupActivity" />
-          <property role="qg3DV" value="true" />
-          <node concept="2pNUuL" id="1cK4KxbROlv" role="2pNNFR">
-            <property role="2pNUuO" value="implementation" />
-            <node concept="2pMdtt" id="1cK4KxbROlw" role="2pMdts">
-              <property role="2pMdty" value="com.mbeddr.mpsutil.actionsfilter.ideaplugin.EnableActionFilterUpdates" />
-            </node>
-          </node>
-        </node>
-        <node concept="2pNUuL" id="4SMNYR2Zjoh" role="2pNNFR">
-          <property role="2pNUuO" value="defaultExtensionNs" />
-          <node concept="2pMdtt" id="4SMNYR2Zjoi" role="2pMdts">
-            <property role="2pMdty" value="com.intellij" />
-          </node>
-        </node>
-      </node>
       <node concept="3_J27D" id="4SMNYR2Zjon" role="m$_yQ">
         <node concept="3Mxwew" id="4SMNYR2Zjoo" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.mpsutil.actionsfilter" />
@@ -18763,6 +18749,25 @@
       </node>
       <node concept="m$_yC" id="4SMNYR2Zjox" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="2pNNFK" id="4SMNYR2Zjo7" role="20twgj">
+        <property role="2pNNFO" value="extensions" />
+        <node concept="2pNUuL" id="4SMNYR2Zjoh" role="2pNNFR">
+          <property role="2pNUuO" value="defaultExtensionNs" />
+          <node concept="2pMdtt" id="4SMNYR2Zjoi" role="2pMdts">
+            <property role="2pMdty" value="com.intellij" />
+          </node>
+        </node>
+        <node concept="2pNNFK" id="1cK4KxbROlt" role="3o6s8t">
+          <property role="2pNNFO" value="postStartupActivity" />
+          <property role="qg3DV" value="true" />
+          <node concept="2pNUuL" id="1cK4KxbROlv" role="2pNNFR">
+            <property role="2pNUuO" value="implementation" />
+            <node concept="2pMdtt" id="1cK4KxbROlw" role="2pMdts">
+              <property role="2pMdty" value="com.mbeddr.mpsutil.actionsfilter.ideaplugin.EnableActionFilterUpdates" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4SMNYR2ZksV" role="3989C9">

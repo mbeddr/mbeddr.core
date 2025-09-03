@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -95,6 +96,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -150,6 +154,12 @@
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
+    </language>
+    <language id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing">
+      <concept id="8659612544244790000" name="nl.f1re.mps.editor.swing.structure.QueryFunction_String" flags="ig" index="05MPa" />
+      <concept id="8659612544238797919" name="nl.f1re.mps.editor.swing.structure.CellModel_CustomJComponent" flags="sg" stub="8659612544238937882" index="fWXJ_">
+        <child id="8659612544238938786" name="toStringFunction" index="fNvko" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -249,9 +259,9 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3gTLQM" id="7uOgiT9t5r" role="3EZMnx">
-        <node concept="3Fmcul" id="7uOgiT9t5t" role="3FoqZy">
-          <node concept="3clFbS" id="7uOgiT9t5v" role="2VODD2">
+      <node concept="fWXJ_" id="5vhcTL2$zaT" role="3EZMnx">
+        <node concept="3Fmcul" id="5vhcTL2$zaV" role="3FoqZy">
+          <node concept="3clFbS" id="5vhcTL2$zaX" role="2VODD2">
             <node concept="3cpWs8" id="7uOgiT9urn" role="3cqZAp">
               <node concept="3cpWsn" id="7uOgiT9uro" role="3cpWs9">
                 <property role="TrG5h" value="panel" />
@@ -259,7 +269,8 @@
                   <ref role="3uigEE" to="k6nw:~ChartPanel" resolve="ChartPanel" />
                 </node>
                 <node concept="2ShNRf" id="7uOgiT9urp" role="33vP2m">
-                  <node concept="1pGfFk" id="7uOgiT9urq" role="2ShVmc">
+                  <node concept="1pGfFk" id="5vhcTL2$Kds" role="2ShVmc">
+                    <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="k6nw:~ChartPanel.&lt;init&gt;(org.jfree.chart.JFreeChart)" resolve="ChartPanel" />
                     <node concept="2OqwBi" id="7uOgiT9N7J" role="37wK5m">
                       <node concept="pncrf" id="7uOgiT9MZm" role="2Oq$k0" />
@@ -296,6 +307,15 @@
             </node>
           </node>
         </node>
+        <node concept="05MPa" id="5vhcTL2$KY2" role="fNvko">
+          <node concept="3clFbS" id="5vhcTL2$KY3" role="2VODD2">
+            <node concept="3clFbF" id="5vhcTL2$KY8" role="3cqZAp">
+              <node concept="Xl_RD" id="5vhcTL2$KY7" role="3clFbG">
+                <property role="Xl_RC" value="chart" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="7uOgiT9i5X" role="3EZMnx">
         <node concept="ljvvj" id="7uOgiT9i5Y" role="3F10Kt">
@@ -311,9 +331,9 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3gTLQM" id="7uOgiT9P_C" role="3EZMnx">
-        <node concept="3Fmcul" id="7uOgiT9P_E" role="3FoqZy">
-          <node concept="3clFbS" id="7uOgiT9P_G" role="2VODD2">
+      <node concept="fWXJ_" id="5vhcTL2$NIC" role="3EZMnx">
+        <node concept="3Fmcul" id="5vhcTL2$NIE" role="3FoqZy">
+          <node concept="3clFbS" id="5vhcTL2$NIG" role="2VODD2">
             <node concept="3cpWs8" id="7uOgiT9Qx_" role="3cqZAp">
               <node concept="3cpWsn" id="7uOgiT9QxA" role="3cpWs9">
                 <property role="TrG5h" value="button" />
@@ -321,7 +341,8 @@
                   <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
                 </node>
                 <node concept="2ShNRf" id="7uOgiT9QxB" role="33vP2m">
-                  <node concept="1pGfFk" id="7uOgiT9QxC" role="2ShVmc">
+                  <node concept="1pGfFk" id="5vhcTL2$SFZ" role="2ShVmc">
+                    <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
                     <node concept="Xl_RD" id="7uOgiT9QxD" role="37wK5m">
                       <property role="Xl_RC" value="Show in Tool Window" />
