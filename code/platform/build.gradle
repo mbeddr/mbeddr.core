@@ -237,8 +237,17 @@ publishing {
             artifact package_mbeddrPlatform
             pom.withXml {
                 def dependenciesNode = asNode().appendNode('dependencies')
+
+                List<Configuration> configurationsWithProvidedDependencies = [
+                        configurations.mpsLibraries,
+                        *bundledDeps.collect { configurations[it.configName] }
+                ]
                 if (!project.skipresolve_mps) {
-                    project(':com.mbeddr').configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    configurationsWithProvidedDependencies.add(project(':com.mbeddr').configurations.mps)
+                }
+
+                configurationsWithProvidedDependencies.each { Configuration cfg ->
+                    cfg.resolvedConfiguration.firstLevelModuleDependencies.each {
                         def dependencyNode = dependenciesNode.appendNode('dependency')
                         dependencyNode.appendNode('groupId', it.moduleGroup)
                         dependencyNode.appendNode('artifactId', it.moduleName)
@@ -247,13 +256,6 @@ publishing {
                         dependencyNode.appendNode('scope', 'provided')
                     }
                 }
-                /*configurations.mpsExtensions.resolvedConfiguration.firstLevelModuleDependencies.each{
-                    def dependencyNode = dependenciesNode.appendNode('dependency')
-                    dependencyNode.appendNode('groupId', it.moduleGroup)
-                    dependencyNode.appendNode('artifactId', it.moduleName)
-                    dependencyNode.appendNode('version', it.moduleVersion)
-                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                }*/
             }
             pom additionalPomInfo
         }
