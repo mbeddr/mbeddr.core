@@ -4,6 +4,7 @@
   <languages>
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -321,6 +322,7 @@
               <property role="nf9zW" value="260" />
             </node>
           </node>
+          <node concept="2iRkQZ" id="7KO_iaDZdU" role="2iSdaV" />
           <node concept="gc7cB" id="7KO_iaIKHH" role="3EZMnx">
             <node concept="3VJUX4" id="7KO_iaIKHJ" role="3YsKMw">
               <node concept="3clFbS" id="7KO_iaIKHL" role="2VODD2">
@@ -524,7 +526,6 @@
               </node>
             </node>
           </node>
-          <node concept="2iRkQZ" id="7KO_iaDZdU" role="2iSdaV" />
         </node>
         <node concept="3EZMnI" id="7KO_iaKeAM" role="3EZMnx">
           <node concept="VPM3Z" id="7KO_iaKeAO" role="3F10Kt">
