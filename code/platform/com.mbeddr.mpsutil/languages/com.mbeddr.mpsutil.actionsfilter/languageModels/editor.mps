@@ -12,7 +12,6 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="8rsk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem.ex(MPS.IDEA/)" />
     <import index="obo9" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.plugins.actions(MPS.Platform/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
@@ -808,9 +807,9 @@
           <node concept="1rXfSq" id="7LkwBl9I_iP" role="3clFbG">
             <ref role="37wK5l" node="7LkwBl9Infb" resolve="createEntryCell" />
             <node concept="2OqwBi" id="7LkwBl9I_jR" role="37wK5m">
-              <node concept="2YIFZM" id="7LkwBl9I_jS" role="2Oq$k0">
-                <ref role="1Pybhc" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
-                <ref role="37wK5l" to="8rsk:~ActionManagerEx.getInstanceEx()" resolve="getInstanceEx" />
+              <node concept="2YIFZM" id="7X7PnMPfqVa" role="2Oq$k0">
+                <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
               </node>
               <node concept="liA8E" id="7LkwBl9I_jT" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
@@ -839,9 +838,9 @@
             <property role="3TUv4t" value="true" />
             <node concept="17QB3L" id="7LkwBl9Dlln" role="1tU5fm" />
             <node concept="2OqwBi" id="7LkwBl9DkPS" role="33vP2m">
-              <node concept="2YIFZM" id="7LkwBl9DkPT" role="2Oq$k0">
-                <ref role="37wK5l" to="8rsk:~ActionManagerEx.getInstanceEx()" resolve="getInstanceEx" />
-                <ref role="1Pybhc" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
+              <node concept="2YIFZM" id="7X7PnMPcF_S" role="2Oq$k0">
+                <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
               </node>
               <node concept="liA8E" id="7LkwBl9DkPU" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~ActionManager.getId(com.intellij.openapi.actionSystem.AnAction)" resolve="getId" />
