@@ -1884,13 +1884,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="7LkwBl9BEi9" role="2GsD0m">
-                <node concept="37vLTw" id="7LkwBl9BE5_" role="2Oq$k0">
+              <node concept="2YIFZM" id="7X7PnMPC$fp" role="2GsD0m">
+                <ref role="37wK5l" to="ykkq:7X7PnMPB29s" resolve="getChildActionsOrStubs" />
+                <ref role="1Pybhc" to="ykkq:4JPDo_GOOui" resolve="ActionHacks" />
+                <node concept="37vLTw" id="7X7PnMPC_bm" role="37wK5m">
                   <ref role="3cqZAo" node="7LkwBl9BDNJ" resolve="group" />
-                </node>
-                <node concept="liA8E" id="7LkwBl9BFVv" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~ActionGroup.getChildren(com.intellij.openapi.actionSystem.AnActionEvent)" resolve="getChildren" />
-                  <node concept="10Nm6u" id="7LkwBl9BFYp" role="37wK5m" />
                 </node>
               </node>
             </node>
