@@ -9,6 +9,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope.
 
+## com.mbeddr.mpsutil.actionsfilter
+
+- Fix the "Do not call getChildren(null)" message being logged many times on startup (#3071).
+
 # August 2025
 
 - Copying of custom cells and editors with custom swing components to plain text was improved.
