@@ -8,6 +8,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 # September 2025
 
 - The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope.
+- replaced plugin dependency `com.mbeddr.mpsutil.httpsupport` with `jetbrains.mps.ide.httpsupport`.
 
 ## com.mbeddr.mpsutil.actionsfilter
 
