@@ -1222,7 +1222,7 @@
                           </node>
                           <node concept="2OqwBi" id="5wzRHNZBtl8" role="0kSFX">
                             <node concept="liA8E" id="5wzRHNZBtla" role="2OqNvi">
-                              <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
+                              <ref role="37wK5l" to="qkt:~ActionManager.getActionOrStub(java.lang.String)" resolve="getActionOrStub" />
                               <node concept="37vLTw" id="5wzRHNZBtlb" role="37wK5m">
                                 <ref role="3cqZAo" node="7chCMJ_skPo" resolve="it" />
                               </node>
