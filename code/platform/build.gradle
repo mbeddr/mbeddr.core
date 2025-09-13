@@ -48,7 +48,7 @@ class BundledDep {
 }
 
 def bundledDeps = [
-        new BundledDep('commonmark', ['org.commonmark:commonmark:0.25.1'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
+        new BundledDep('commonmark', ['org.commonmark:commonmark:0.26.0'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
         new BundledDep('poi-ooxml', ['org.apache.poi:poi-ooxml:5.4.1'], 'com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs', {
             exclude module: 'commons-compress'
             exclude module: 'commons-math3'
