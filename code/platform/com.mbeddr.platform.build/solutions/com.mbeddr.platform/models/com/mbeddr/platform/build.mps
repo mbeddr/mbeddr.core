@@ -567,9 +567,6 @@
       <node concept="m$_yC" id="5I3PmkSnF5a" role="m$_yJ">
         <ref role="m$_y1" to="90a9:6hpTCZQdXQX" resolve="com.mbeddr.mpsutil.editor.querylist" />
       </node>
-      <node concept="m$_yC" id="5I3PmkSnFtC" role="m$_yJ">
-        <ref role="m$_y1" node="3lZeU8ehrPx" resolve="com.mbeddr.mpsutil.httpsupport" />
-      </node>
       <node concept="m$_yC" id="5I3PmkSnIxk" role="m$_yJ">
         <ref role="m$_y1" to="90a9:6860Y5_ZW8e" resolve="de.itemis.mps.utils" />
       </node>
@@ -7177,11 +7174,6 @@
           <node concept="1SiIV0" id="4wLa9UIpU_d" role="3bR37C">
             <node concept="3bR9La" id="4wLa9UIpU_e" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="4wLa9UIpU_f" role="3bR37C">
-            <node concept="3bR9La" id="4wLa9UIpU_g" role="1SiIV1">
-              <ref role="3bR37D" node="2N1CSrzsvbI" resolve="com.mbeddr.mpsutil.nodeaccess" />
             </node>
           </node>
           <node concept="1SiIV0" id="4wLa9UIpU_h" role="3bR37C">
@@ -14853,28 +14845,6 @@
           <node concept="3bR9La" id="WD9jaaiH4G" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1BupzO" id="WD9jaaiH6x" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="WD9jaaiH6y" role="1HemKq">
-            <node concept="398BVA" id="WD9jaaiH6m" role="3LXTmr">
-              <ref role="398BVh" node="1m4fy7Kxwst" resolve="mbeddr.doc" />
-              <node concept="2Ry0Ak" id="WD9jaaiH6n" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="WD9jaaiH6o" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.spreadsheet.libs" />
-                  <node concept="2Ry0Ak" id="WD9jaaiH6p" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="WD9jaaiH6z" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
           </node>
         </node>
         <node concept="3rtmxn" id="2ma2oLwrVRx" role="3bR31x">
