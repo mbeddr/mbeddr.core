@@ -13,7 +13,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 ## com.mbeddr.mpsutil.actionsfilter
 
-- Fix the "Do not call getChildren(null)" message being logged many times on startup (#3071).
+- Fix the "Do not call getChildren(null)" message being logged many times on startup (#3071, #3125).
 
 # August 2025
 
