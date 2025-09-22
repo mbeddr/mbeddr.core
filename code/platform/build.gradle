@@ -29,7 +29,7 @@ dependencies {
     if (project.hasProperty('mpsExtensionsZip')) {
         mpsLibraries files(project.property('mpsExtensionsZip'))
     } else {
-        mpsLibraries "de.itemis.mps:extensions:$mpsExtensionsVersion"
+        mpsLibraries "de.itemis.mps:extensions:$mpsMajor.+"
     }
 }
 

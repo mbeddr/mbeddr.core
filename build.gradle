@@ -16,9 +16,6 @@ ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-
 ext.mpsMajor = "2023.2"
 ext.mpsBuild = "2023.2.2"
 
-//MPS-extensions version
-ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
-
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
 ext.ciBuild = project.hasProperty("forceCI") || project.hasProperty("teamcity")
