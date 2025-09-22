@@ -6,11 +6,13 @@ plugins {
 }
 
 //MPS version
-ext.mpsMajor = "2025.1"
-ext.mpsBuild = "2025.1"
+ext.mpsMajor = "9999.9"
+ext.mpsBuild = "252.25557.10320"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = "2025.1.3447.aa28590"
+
+ext.mpsExtensionsVersion = "9999.9.3445.248dc57-SNAPSHOT"
+
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
