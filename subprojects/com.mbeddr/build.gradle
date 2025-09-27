@@ -79,9 +79,9 @@ Map<String, Object> antSystemProperties = [
         'build.dir': rootProject.layout.projectDirectory,
         'artifacts.root': rootProject.file('artifacts'),
         'mbeddr.github.core.home': rootProject.layout.projectDirectory,
-        'build': mbeddrBuildNumber,
-        'major.version': mbeddrMajor,
-        'minor.version': mbeddrMinor,
+        'build': versionInfo.mbeddrBuildNumber,
+        'major.version': versionInfo.mbeddrMajor,
+        'minor.version': versionInfo.mbeddrMinor,
         'build.jna.library.path': new File(mpsHomeDir, "lib/jna/${System.getProperty('os.arch')}")
 ]
 
@@ -119,7 +119,7 @@ private static void configureRepositories(Project project) {
         project.publishing {
             repositories {
                 maven {
-                    url project.mbeddrBuildNumber.endsWith('-SNAPSHOT')
+                    url project.versionInfo.mbeddrBuildNumber.endsWith('-SNAPSHOT')
                             ? 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots/'
                             : 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
                     if (project.hasProperty('artifacts.itemis.cloud.user') && project.hasProperty('artifacts.itemis.cloud.pw')) {
@@ -131,10 +131,7 @@ private static void configureRepositories(Project project) {
                 }
 
                 //mbeddr build is "master" also for maintenance branches
-                //using the closure to delay evaluate from configuration to execution phase is important because the
-                //mbeddrBuild property is created by a "subproject" block which is executed after this script is configured.
-                //if no closure is used the build script won't compile.
-                if({project.mbeddrBuild}() == "master") {
+                if(project.versionInfo.mbeddrBuild == "master") {
                     maven {
                         name = "GitHubPackages"
                         url = "https://maven.pkg.github.com/mbeddr/mbeddr.core"
@@ -172,10 +169,11 @@ private static void configureRepositories(Project project) {
 
 
 tasks.register('printVersions') {
-    description 'Print the mbeddr and mbeddr platform build number.'
+    description 'Print the mbeddr build number.'
     doLast {
-        println "mbeddrBuildNumber: $project.mbeddrBuildNumber"
-        println "mbeddrPlatformBuildNumber: $project.mbeddrPlatformBuildNumber"
+        println "mbeddrBuildNumber: $versionInfo.mbeddrBuildNumber"
+        println "mbeddrPlatformBuildNumber: $versionInfo.mbeddrPlatformBuildNumber"
+
     }
 }
 

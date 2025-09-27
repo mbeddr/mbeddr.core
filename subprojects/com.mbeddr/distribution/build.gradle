@@ -5,7 +5,7 @@ configurations {
 }
 
 dependencies {
-    mbeddr "com.mbeddr:mbeddr:$mbeddrBuildNumber"
+    mbeddr "com.mbeddr:mbeddr:$versionInfo.mbeddrBuildNumber"
 }
 
 task resolve_mbeddr() {

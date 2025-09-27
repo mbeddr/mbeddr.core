@@ -1,3 +1,4 @@
+import buildlogic.LazyString
 import de.itemis.mps.gradle.RunAntScript
 
 plugins {

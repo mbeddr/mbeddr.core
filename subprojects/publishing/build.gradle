@@ -23,8 +23,8 @@ LocalDateTime t = LocalDateTime.now();
 
 def releaseNotes = """Automated Nighly build from ${t as String}."""
 
-def tutorialFileName = "com.mbeddr.tutorial-${ext.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
-def platformFileName = "platform-distribution-${ext.mbeddrPlatformBuildNumber}-MPS-${mpsBuild}.zip"
+def tutorialFileName = "com.mbeddr.tutorial-${versionInfo.mbeddrBuildNumber}-MPS-${mpsBuild}.zip"
+def platformFileName = "platform-distribution-${versionInfo.mbeddrPlatformBuildNumber}-MPS-${mpsBuild}.zip"
 
 githubRelease {
     owner = 'mbeddr'

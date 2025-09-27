@@ -1,3 +1,5 @@
+package buildlogic
+
 import org.gradle.api.provider.Provider
 import java.io.Serializable
 

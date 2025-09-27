@@ -7,6 +7,10 @@ pluginManagement {
     includeBuild("build-logic")
 }
 
+plugins {
+    id("buildlogic.version-info")
+}
+
 val subprojectPaths = listOf("com.mbeddr",
     "com.mbeddr:languages",
     "com.mbeddr:distribution",
@@ -28,3 +32,4 @@ include(":com.mbeddr:platform")
 project(":com.mbeddr:platform").projectDir = file("code/platform")
 
 rootProject.name = "mbeddr.core"
+
