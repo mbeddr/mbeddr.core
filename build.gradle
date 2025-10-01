@@ -10,7 +10,7 @@ ext.mpsMajor = "2025.1"
 ext.mpsBuild = "2025.1"
 
 //MPS-extensions version
-ext.mpsExtensionsVersion = "2025.1.3452.914f327"
+ext.mpsExtensionsVersion = "2025.1.3460.1d2fff5"
 
 ext.artifactsDir = new File(rootDir, 'artifacts')
 
