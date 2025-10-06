@@ -1871,9 +1871,22 @@
                       <node concept="3clFbS" id="ojedFZ8f4O" role="1bW5cS">
                         <node concept="3clFbF" id="ojedFZ8luV" role="3cqZAp">
                           <node concept="2OqwBi" id="ojedFZ8lEr" role="3clFbG">
-                            <node concept="2YIFZM" id="ojedFZ8lxL" role="2Oq$k0">
-                              <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                            <node concept="2YIFZM" id="3kWkjLhO4JC" role="2Oq$k0">
+                              <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
                               <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
+                              <node concept="2OqwBi" id="3kWkjLhO7xE" role="37wK5m">
+                                <node concept="2OqwBi" id="3kWkjLhO7xF" role="2Oq$k0">
+                                  <node concept="37vLTw" id="3kWkjLhO7xG" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="ojedFZ8myy" resolve="editorContext" />
+                                  </node>
+                                  <node concept="liA8E" id="3kWkjLhO7xH" role="2OqNvi">
+                                    <ref role="37wK5l" to="exr9:~EditorContext.getOperationContext()" resolve="getOperationContext" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="3kWkjLhO7xI" role="2OqNvi">
+                                  <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
+                                </node>
+                              </node>
                             </node>
                             <node concept="liA8E" id="ojedFZ8lP1" role="2OqNvi">
                               <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
