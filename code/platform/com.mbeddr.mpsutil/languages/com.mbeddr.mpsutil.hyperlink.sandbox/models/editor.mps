@@ -464,7 +464,9 @@
                               </node>
                               <node concept="liA8E" id="1vOFPmHie0x" role="2OqNvi">
                                 <ref role="37wK5l" to="ag3p:5A_Zlt6y20F" resolve="openInBrowser" />
-                                <node concept="Xl_RD" id="1vOFPmHie0y" role="37wK5m" />
+                                <node concept="Xl_RD" id="1vOFPmHie0y" role="37wK5m">
+                                  <property role="Xl_RC" value="http://www.google.com" />
+                                </node>
                               </node>
                             </node>
                           </node>
