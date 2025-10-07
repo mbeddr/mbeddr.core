@@ -7,6 +7,19 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2025
 
+## Multiple languages
+
+### Fixed
+
+- `jetbrains.mps.openapi.navigation.NavigationSupport - Replace with #getInstance(project) call` message is no longer
+  being logged (#3175).
+
+## com.mbeddr.mpsutil.hyperlink
+
+### Fixed
+
+- MPS no longer freezes when clicking on a link that opens another root node (#3180).
+
 ## com.mbeddr.mpsutil.actionsfilter
 
 ### Fixed
