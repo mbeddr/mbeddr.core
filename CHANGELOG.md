@@ -7,7 +7,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # September 2025
 
-- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope.
+- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
+  bundled dependencies of MPS-extensions. 
 
 # August 2025
 
