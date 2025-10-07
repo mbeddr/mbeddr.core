@@ -5,9 +5,16 @@ plugins {
     id "org.cyclonedx.bom" version "2.4.1"
 }
 
-import de.itemis.mps.gradle.*
+
+import de.itemis.mps.gradle.BuildLanguages
+import de.itemis.mps.gradle.EnvironmentKind
+import de.itemis.mps.gradle.RunAntScript
+import de.itemis.mps.gradle.TestLanguages
 import de.itemis.mps.gradle.tasks.MpsGenerate
+import groovy.transform.Immutable
 import groovy.transform.TupleConstructor
+
+import javax.xml.parsers.DocumentBuilderFactory
 
 def script_test_mbeddrPlatform = new File(scriptsBasePath, "com.mbeddr.platform/build-ts-tests.xml")
 def script_mbeddrPlatform_sandboxes = new File(scriptsBasePath, "com.mbeddr.platform/build-sandboxes.xml")
@@ -221,6 +228,67 @@ task publishMbeddrPlatformToLocal(dependsOn: ['publishMbeddrPlatformPublicationT
     description 'Publish the mbeddr platform to the local Maven repository.'
 }
 
+List<File> getPomsOfConfiguration(Configuration cfg) {
+    List<ComponentIdentifier> componentIds =
+            configurations.mpsLibraries.incoming.resolutionResult.allDependencies
+                    .findAll { it instanceof ResolvedDependencyResult }
+                    .collect { ((ResolvedDependencyResult) it).selected.id }
+
+    ArtifactResolutionResult resolutionResult = dependencies.createArtifactResolutionQuery()
+            .forComponents(componentIds)
+            .withArtifacts(MavenModule, MavenPomArtifact)
+            .execute()
+
+    return resolutionResult
+            .resolvedComponents.collectMany { it.getArtifacts(MavenPomArtifact) }
+            .findAll { it instanceof ResolvedArtifactResult }
+            .collect { ((ResolvedArtifactResult) it).file }
+}
+
+@Immutable
+class Coordinates {
+    String groupId
+    String artifactId
+    String version
+    String classifier
+    String type
+}
+
+List<Coordinates> getProvidedDependenciesFromPom(File pomFile) {
+    def doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(pomFile)
+
+    List<Coordinates> result = new ArrayList<>()
+
+    // Add actual <scope>provided</scope> deps
+    def deps = doc.getElementsByTagName("dependency")
+    for (i in 0..deps.length - 1) {
+        def d = deps.item(i)
+
+        def kids = d.childNodes
+        String g = null
+        String a = null
+        String v = null
+        String c = null
+        String t = null
+        String s = null
+        for (k in 0..kids.length - 1) {
+            switch (kids.item(k).nodeName) {
+                case "groupId": g = kids.item(k).textContent.trim(); break
+                case "artifactId": a = kids.item(k).textContent.trim(); break
+                case "version": v = kids.item(k).textContent.trim(); break
+                case "classifier": c = kids.item(k).textContent.trim(); break
+                case "type": t = kids.item(k).textContent.trim(); break
+                case "scope": s = kids.item(k).textContent.trim(); break
+            }
+        }
+        if (s == "provided") {
+            result.add(new Coordinates(g, a, v, c, t))
+        }
+    }
+
+    return result
+}
+
 publishing {
     publications {
         mbeddrPlatform(MavenPublication) {
@@ -248,6 +316,24 @@ publishing {
                         dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
                         dependencyNode.appendNode('scope', 'provided')
                     }
+                }
+
+                // Add provided dependencies of mpsLibraries (i.e. libraries bundled with MPS-extensions)
+                List<File> pomsOfMpsLibraries = getPomsOfConfiguration(configurations.mpsLibraries)
+                List<Coordinates> providedDependenciesOfMpsLibraries = pomsOfMpsLibraries.collectMany { getProvidedDependenciesFromPom(it) }
+
+                providedDependenciesOfMpsLibraries.each {
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.groupId)
+                    dependencyNode.appendNode('artifactId', it.artifactId)
+                    dependencyNode.appendNode('version', it.version)
+                    if (it.classifier != null) {
+                        dependencyNode.appendNode('classifier', it.classifier)
+                    }
+                    if (it.type != null) {
+                        dependencyNode.appendNode('type', it.type)
+                    }
+                    dependencyNode.appendNode('scope', 'provided')
                 }
             }
             pom additionalPomInfo
