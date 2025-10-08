@@ -25,6 +25,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Fixed
 
 - Exceptions are no longer thrown on startup.
+- Fixed a NPE coming from `CustomActionsSchema#removeIconCustomization()`.
 
 # September 2025
 
