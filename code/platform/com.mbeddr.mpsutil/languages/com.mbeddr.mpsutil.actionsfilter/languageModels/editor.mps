@@ -235,9 +235,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -1824,16 +1821,14 @@
               <node concept="3cpWsn" id="7LkwBl9BDNJ" role="3cpWs9">
                 <property role="TrG5h" value="group" />
                 <node concept="3uibUv" id="7LkwBl9BDNF" role="1tU5fm">
-                  <ref role="3uigEE" to="qkt:~ActionGroup" resolve="ActionGroup" />
+                  <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
                 </node>
-                <node concept="1eOMI4" id="7LkwBl9BDNK" role="33vP2m">
-                  <node concept="10QFUN" id="7LkwBl9BDNL" role="1eOMHV">
-                    <node concept="3uibUv" id="7LkwBl9BDNM" role="10QFUM">
-                      <ref role="3uigEE" to="qkt:~ActionGroup" resolve="ActionGroup" />
-                    </node>
-                    <node concept="37vLTw" id="7LkwBl9BDNN" role="10QFUP">
-                      <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
-                    </node>
+                <node concept="10QFUN" id="7LkwBl9BDNL" role="33vP2m">
+                  <node concept="3uibUv" id="7LkwBl9BDNM" role="10QFUM">
+                    <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
+                  </node>
+                  <node concept="37vLTw" id="7LkwBl9BDNN" role="10QFUP">
+                    <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
                   </node>
                 </node>
               </node>
@@ -1884,18 +1879,19 @@
                   </node>
                 </node>
               </node>
-              <node concept="2YIFZM" id="7X7PnMPC$fp" role="2GsD0m">
-                <ref role="37wK5l" to="ykkq:7X7PnMPB29s" resolve="getChildActionsOrStubs" />
-                <ref role="1Pybhc" to="ykkq:4JPDo_GOOui" resolve="ActionHacks" />
-                <node concept="37vLTw" id="7X7PnMPC_bm" role="37wK5m">
+              <node concept="2OqwBi" id="4o4dGLysupS" role="2GsD0m">
+                <node concept="37vLTw" id="4o4dGLyssgg" role="2Oq$k0">
                   <ref role="3cqZAo" node="7LkwBl9BDNJ" resolve="group" />
+                </node>
+                <node concept="liA8E" id="4o4dGLysxpV" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DefaultActionGroup.getChildActionsOrStubs()" resolve="getChildActionsOrStubs" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2ZW3vV" id="7LkwBl9BDlM" role="3clFbw">
             <node concept="3uibUv" id="7LkwBl9BD$d" role="2ZW6by">
-              <ref role="3uigEE" to="qkt:~ActionGroup" resolve="ActionGroup" />
+              <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
             </node>
             <node concept="37vLTw" id="7LkwBl9BD5S" role="2ZW6bz">
               <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />

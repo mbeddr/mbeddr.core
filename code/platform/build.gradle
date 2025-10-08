@@ -137,7 +137,7 @@ task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
     description 'Copy the actions filter IntelliJ plugin to the MPS plugin\'s directory'
     from "$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/"
     include "com.mbeddr.mpsutil.actionsfilter/"
-    into "$mpsPluginsDir"
+    into(mpsPluginsDir)
 }
 tasks.getByPath(':com.mbeddr:install').dependsOn install_actionsfilter
 
