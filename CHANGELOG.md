@@ -14,6 +14,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - `jetbrains.mps.openapi.navigation.NavigationSupport - Replace with #getInstance(project) call` message is no longer
   being logged (#3175).
 
+## com.mbeddr.mpsutil.genericactions
+
+### Fixed
+
+- "File Manager in Output Folder" action will now remain visible but disabled if the output folder does not exist.
+
 ## com.mbeddr.mpsutil.hyperlink
 
 ### Fixed
@@ -25,10 +31,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Fixed
 
 - Exceptions are no longer thrown on startup.
+- Fixed a NPE coming from `CustomActionsSchema#removeIconCustomization()`.
 
 # September 2025
 
-- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope.
+- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
+  bundled dependencies of MPS-extensions. 
 - replaced plugin dependency `com.mbeddr.mpsutil.httpsupport` with `jetbrains.mps.ide.httpsupport`.
 - Removed plugin dependency `com.mbeddr.mpsutil.httpsupport` from `mpsutil.interpreter`
 
