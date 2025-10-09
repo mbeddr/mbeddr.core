@@ -14,6 +14,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - `jetbrains.mps.openapi.navigation.NavigationSupport - Replace with #getInstance(project) call` message is no longer
   being logged (#3175).
 
+## com.mbeddr.mpsutil.genericactions
+
+### Fixed
+
+- "File Manager in Output Folder" action will now remain visible but disabled if the output folder does not exist.
+
 ## com.mbeddr.mpsutil.hyperlink
 
 ### Fixed
