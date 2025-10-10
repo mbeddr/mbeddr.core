@@ -61,9 +61,11 @@ def bundledDeps = [
             exclude module: 'commons-math3'
             exclude module: 'SparseBitSet'
         }),
-        new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1',
-                                'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
-            exclude module: 'stax-api'
+        new BundledDep('jung', ['net.sf.jung:jung-algorithms:2.1.1',
+                                'net.sf.jung:jung-visualization:2.1.1',
+                                'net.sf.jung:jung-graph-impl:2.1.1'],
+                'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
+            exclude module: 'guava'
         }),
         new BundledDep('jfreechart', ['org.jfree:jfreechart:1.5.6'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
         new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.8'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),
