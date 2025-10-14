@@ -14,7 +14,7 @@ ext.defaultReleaseRepository = 'https://artifacts.itemis.cloud/repository/maven-
 
 //MPS version
 ext.mpsMajor = "2024.1"
-ext.mpsBuild = "2024.1.4"
+ext.mpsBuild = "2024.1.5"
 
 //MPS-extensions version
 ext.mpsExtensionsVersion = findNonEmptyProperty('mpsExtensionsVersion') ?: "$mpsMajor.+"
