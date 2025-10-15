@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# October 2025
+
+## com.mbeddr.doc
+
+- Null checks for accessing the documentation generation folder were added so that the documentation won't be generated for places where it is not possible (e.g. the console model).
+
 # September 2025
 
 - The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
