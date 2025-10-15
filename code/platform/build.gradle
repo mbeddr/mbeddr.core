@@ -50,15 +50,17 @@ class BundledDep {
 }
 
 def bundledDeps = [
-        new BundledDep('commonmark', ['org.commonmark:commonmark:0.26.0'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
+        new BundledDep('commonmark', ['org.commonmark:commonmark:0.27.0'], 'com.mbeddr.doc/languages/com.mbeddr.doc.gen_markdown'),
         new BundledDep('poi-ooxml', ['org.apache.poi:poi-ooxml:5.4.1'], 'com.mbeddr.doc/solutions/com.mbeddr.spreadsheet.libs', {
             exclude module: 'commons-compress'
             exclude module: 'commons-math3'
             exclude module: 'SparseBitSet'
         }),
-        new BundledDep('jung', ['net.sf.jung:jung-3d-demos:2.0.1',
-                                'net.sf.jung:jung-jai-samples:2.0.1'], 'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
-            exclude module: 'stax-api'
+        new BundledDep('jung', ['net.sf.jung:jung-algorithms:2.1.1',
+                                'net.sf.jung:jung-visualization:2.1.1',
+                                'net.sf.jung:jung-graph-impl:2.1.1'],
+                'com.mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/solutions/pluginSolution', {
+            exclude module: 'guava'
         }),
         new BundledDep('jfreechart', ['org.jfree:jfreechart:1.5.6'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.jfreechart.runtime', {}),
         new BundledDep('plantuml', ['net.sourceforge.plantuml:plantuml:1.2025.8'], 'com.mbeddr.mpsutil/solutions/com.mbeddr.mpsutil.plantuml/solutions/pluginSolution'),

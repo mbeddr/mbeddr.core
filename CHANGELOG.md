@@ -33,6 +33,11 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Exceptions are no longer thrown on startup.
 - Fixed a NPE coming from `CustomActionsSchema#removeIconCustomization()`.
 
+## com.mbeddr.mpsutil.jung
+
+- 🚨 Upgrade to JUNG version 2.1.1 to avoid dependency on an old vulnerable collections library.
+- 🚨 Change JUNG dependency from samples to the modules containing the actual implementation.
+
 # September 2025
 
 - The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
