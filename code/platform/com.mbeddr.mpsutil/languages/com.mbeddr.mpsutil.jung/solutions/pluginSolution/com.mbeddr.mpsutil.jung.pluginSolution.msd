@@ -5,43 +5,19 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="collections-generic.jar" />
-      <sourceRoot location="colt.jar" />
-      <sourceRoot location="concurrent.jar" />
-      <sourceRoot location="j3d-core.jar" />
-      <sourceRoot location="jung-3d-demos.jar" />
-      <sourceRoot location="jung-3d.jar" />
       <sourceRoot location="jung-algorithms.jar" />
       <sourceRoot location="jung-api.jar" />
       <sourceRoot location="jung-graph-impl.jar" />
-      <sourceRoot location="jung-io.jar" />
-      <sourceRoot location="jung-jai-samples.jar" />
-      <sourceRoot location="jung-jai.jar" />
-      <sourceRoot location="jung-samples.jar" />
       <sourceRoot location="jung-visualization.jar" />
-      <sourceRoot location="vecmath.jar" />
-      <sourceRoot location="wstx-asl.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/collections-generic.jar" />
-      <library location="${module}/lib/colt.jar" />
-      <library location="${module}/lib/concurrent.jar" />
-      <library location="${module}/lib/j3d-core.jar" />
-      <library location="${module}/lib/jung-3d-demos.jar" />
-      <library location="${module}/lib/jung-3d.jar" />
       <library location="${module}/lib/jung-algorithms.jar" />
       <library location="${module}/lib/jung-api.jar" />
       <library location="${module}/lib/jung-graph-impl.jar" />
-      <library location="${module}/lib/jung-io.jar" />
-      <library location="${module}/lib/jung-jai-samples.jar" />
-      <library location="${module}/lib/jung-jai.jar" />
-      <library location="${module}/lib/jung-samples.jar" />
       <library location="${module}/lib/jung-visualization.jar" />
-      <library location="${module}/lib/vecmath.jar" />
-      <library location="${module}/lib/wstx-asl.jar" />
     </facet>
   </facets>
   <dependencies>
@@ -53,6 +29,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)</dependency>
+    <dependency reexport="false">ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -81,6 +58,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="1338ba73-5059-479b-a929-de86597a62b8(com.mbeddr.mpsutil.jung.pluginSolution)" version="0" />
+    <module reference="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
   </dependencyVersions>

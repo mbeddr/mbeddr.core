@@ -38,7 +38,6 @@
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
-    <import index="fyn1" ref="1338ba73-5059-479b-a929-de86597a62b8/java:org.apache.commons.collections15(com.mbeddr.mpsutil.jung.pluginSolution/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="2kct" ref="1338ba73-5059-479b-a929-de86597a62b8/java:edu.uci.ics.jung.visualization.picking(com.mbeddr.mpsutil.jung.pluginSolution/)" />
@@ -47,6 +46,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="gyfg" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.base(de.q60.mps.collections.libs/)" />
+    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -359,9 +360,6 @@
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
@@ -437,18 +435,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1535,110 +1523,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3XsK4wOYLO7" role="3cqZAp" />
-        <node concept="1X3_iC" id="4O4MWU3ROwB" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="7P$SxBYKdEc" role="8Wnug">
-            <node concept="2OqwBi" id="7P$SxBYKdEd" role="3clFbG">
-              <node concept="2OqwBi" id="7P$SxBYKdEe" role="2Oq$k0">
-                <node concept="37vLTw" id="7P$SxBYKdEf" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7P$SxBYKdE5" resolve="vv" />
-                </node>
-                <node concept="liA8E" id="7P$SxBYKdEg" role="2OqNvi">
-                  <ref role="37wK5l" to="ao2i:~BasicVisualizationServer.getRenderContext()" resolve="getRenderContext" />
-                </node>
-              </node>
-              <node concept="liA8E" id="7P$SxBYKdEh" role="2OqNvi">
-                <ref role="37wK5l" to="ao2i:~RenderContext.setVertexLabelTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexLabelTransformer" />
-                <node concept="2ShNRf" id="4sWN29l2Df2" role="37wK5m">
-                  <node concept="YeOm9" id="4sWN29l2QTS" role="2ShVmc">
-                    <node concept="1Y3b0j" id="4sWN29l2QTV" role="YeSDq">
-                      <property role="2bfB8j" value="true" />
-                      <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
-                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                      <node concept="3Tm1VV" id="4sWN29l2QTW" role="1B3o_S" />
-                      <node concept="3clFb_" id="4sWN29l2QTX" role="jymVt">
-                        <property role="1EzhhJ" value="false" />
-                        <property role="TrG5h" value="transform" />
-                        <property role="DiZV1" value="false" />
-                        <node concept="3Tm1VV" id="4sWN29l2QTY" role="1B3o_S" />
-                        <node concept="17QB3L" id="4sWN29l2RYk" role="3clF45" />
-                        <node concept="37vLTG" id="4sWN29l2QU1" role="3clF46">
-                          <property role="TrG5h" value="vertex" />
-                          <node concept="3uibUv" id="4sWN29l2QZF" role="1tU5fm">
-                            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                          </node>
-                        </node>
-                        <node concept="3clFbS" id="4sWN29l2QU3" role="3clF47">
-                          <node concept="3clFbJ" id="4sWN29l2SnJ" role="3cqZAp">
-                            <node concept="3clFbS" id="4sWN29l2SnK" role="3clFbx">
-                              <node concept="3cpWs6" id="4sWN29l2Sze" role="3cqZAp">
-                                <node concept="Xl_RD" id="4sWN29l2SzO" role="3cqZAk">
-                                  <property role="Xl_RC" value="" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="1Wc70l" id="4gOf7bxq7Se" role="3clFbw">
-                              <node concept="3fqX7Q" id="4gOf7bxqz5r" role="3uHU7w">
-                                <node concept="2OqwBi" id="4gOf7bxqz5t" role="3fr31v">
-                                  <node concept="2WthIp" id="4gOf7bxqz5u" role="2Oq$k0">
-                                    <ref role="32nkFo" node="4mGNV$r8Mai" resolve="GraphViewer" />
-                                  </node>
-                                  <node concept="2XshWL" id="4gOf7bxqz5v" role="2OqNvi">
-                                    <ref role="2WH_rO" node="1hdlKPe7YMz" resolve="isSelectedInCategoryFilter" />
-                                    <node concept="2OqwBi" id="4gOf7bxqzOI" role="2XxRq1">
-                                      <node concept="1eOMI4" id="4gOf7bxqzGv" role="2Oq$k0">
-                                        <node concept="10QFUN" id="4gOf7bxqzGw" role="1eOMHV">
-                                          <node concept="37vLTw" id="4gOf7bxqzGx" role="10QFUP">
-                                            <ref role="3cqZAo" node="4sWN29l2QU1" resolve="vertex" />
-                                          </node>
-                                          <node concept="3uibUv" id="4gOf7bxqzGy" role="10QFUM">
-                                            <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="4gOf7bxq$5b" role="2OqNvi">
-                                        <ref role="37wK5l" to="ln2k:1hdlKPe8fsq" resolve="kinds" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="2OqwBi" id="4sWN29l2SqX" role="3uHU7B">
-                                <node concept="2WthIp" id="4sWN29l2Sr0" role="2Oq$k0">
-                                  <ref role="32nkFo" node="4mGNV$r8Mai" resolve="GraphViewer" />
-                                </node>
-                                <node concept="2XshWL" id="4sWN29l2Sr2" role="2OqNvi">
-                                  <ref role="2WH_rO" node="4sWN29l1QBs" resolve="filterInvisibleOnly" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3cpWs6" id="4sWN29l2SWL" role="3cqZAp">
-                            <node concept="2OqwBi" id="4sWN29l2T8Z" role="3cqZAk">
-                              <node concept="37vLTw" id="4sWN29l2T4P" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4sWN29l2QU1" resolve="vertex" />
-                              </node>
-                              <node concept="liA8E" id="4sWN29l2TpU" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3uibUv" id="4sWN29l2QZE" role="2Ghqu4">
-                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                      </node>
-                      <node concept="3uibUv" id="4sWN29l2QZG" role="2Ghqu4">
-                        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="4FMOSC6vwMX" role="3cqZAp" />
         <node concept="3cpWs8" id="4FMOSC6w0ss" role="3cqZAp">
           <node concept="3cpWsn" id="4FMOSC6w0st" role="3cpWs9">
@@ -2132,36 +2016,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="33j3Ev2tvG5" role="3cqZAp" />
-        <node concept="1X3_iC" id="4O4MWU3ROIt" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3ohuQccti3C" role="8Wnug">
-            <node concept="2OqwBi" id="3ohuQccvXIk" role="3clFbG">
-              <node concept="2OqwBi" id="3ohuQcctjhp" role="2Oq$k0">
-                <node concept="37vLTw" id="3ohuQccti3A" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7P$SxBYKdE5" resolve="vv" />
-                </node>
-                <node concept="liA8E" id="3ohuQcctqqE" role="2OqNvi">
-                  <ref role="37wK5l" to="ao2i:~BasicVisualizationServer.getRenderContext()" resolve="getRenderContext" />
-                </node>
-              </node>
-              <node concept="liA8E" id="3ohuQccw1fY" role="2OqNvi">
-                <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeShapeTransformer(org.apache.commons.collections15.Transformer)" resolve="setEdgeShapeTransformer" />
-                <node concept="2ShNRf" id="3ohuQcctqwR" role="37wK5m">
-                  <node concept="1pGfFk" id="3ohuQcctA1j" role="2ShVmc">
-                    <ref role="37wK5l" to="r25o:~EdgeShape$Orthogonal.&lt;init&gt;()" resolve="EdgeShape.Orthogonal" />
-                    <node concept="3uibUv" id="3ohuQccw205" role="1pMfVU">
-                      <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
-                    </node>
-                    <node concept="3uibUv" id="3ohuQccw2Iq" role="1pMfVU">
-                      <ref role="3uigEE" to="ln2k:5yCuRHcavmW" resolve="JNEdge" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="3ohuQccwOKC" role="3cqZAp" />
         <node concept="3clFbH" id="5Z9SOD6CMcp" role="3cqZAp" />
         <node concept="3clFbF" id="7P$SxBYKdH6" role="3cqZAp">
@@ -2369,14 +2223,10 @@
         <node concept="3clFbF" id="3HHdT04k0Uk" role="3cqZAp">
           <node concept="37vLTI" id="3HHdT04k1W0" role="3clFbG">
             <node concept="2OqwBi" id="3HHdT04k41i" role="37vLTx">
-              <node concept="2OqwBi" id="3HHdT04k2BM" role="2Oq$k0">
-                <node concept="2xqhHp" id="3HHdT04k2mz" role="2Oq$k0" />
-                <node concept="liA8E" id="3HHdT04k3pK" role="2OqNvi">
-                  <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                  <node concept="3VsKOn" id="3HHdT04k3tM" role="37wK5m">
-                    <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
-                  </node>
-                </node>
+              <node concept="2YIFZM" id="4vsPZrQ91Xb" role="2Oq$k0">
+                <ref role="37wK5l" to="alof:~ProjectHelper.fromIdeaProject(com.intellij.openapi.project.Project)" resolve="fromIdeaProject" />
+                <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                <node concept="2xqhHp" id="4vsPZrQ91Yu" role="37wK5m" />
               </node>
               <node concept="liA8E" id="3HHdT04k4Qq" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
@@ -4338,7 +4188,7 @@
                         </node>
                         <node concept="2ShNRf" id="78j9QLkcxYI" role="37vLTx">
                           <node concept="1pGfFk" id="78j9QLkcxYJ" role="2ShVmc">
-                            <ref role="37wK5l" to="d6lm:~SpringLayout2.&lt;init&gt;(edu.uci.ics.jung.graph.Graph,org.apache.commons.collections15.Transformer)" resolve="SpringLayout2" />
+                            <ref role="37wK5l" to="d6lm:~SpringLayout2.&lt;init&gt;(edu.uci.ics.jung.graph.Graph,com.google.common.base.Function)" resolve="SpringLayout2" />
                             <node concept="3uibUv" id="78j9QLkcxYK" role="1pMfVU">
                               <ref role="3uigEE" to="ln2k:5yCuRHcav6I" resolve="JNNode" />
                             </node>
@@ -4352,12 +4202,12 @@
                               <node concept="YeOm9" id="78j9QLkcxYO" role="2ShVmc">
                                 <node concept="1Y3b0j" id="78j9QLkcxYP" role="YeSDq">
                                   <property role="2bfB8j" value="true" />
-                                  <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                                  <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                                   <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                   <node concept="3Tm1VV" id="78j9QLkcxYQ" role="1B3o_S" />
                                   <node concept="3clFb_" id="78j9QLkcxYR" role="jymVt">
                                     <property role="1EzhhJ" value="false" />
-                                    <property role="TrG5h" value="transform" />
+                                    <property role="TrG5h" value="apply" />
                                     <property role="DiZV1" value="false" />
                                     <node concept="3Tm1VV" id="78j9QLkcxYS" role="1B3o_S" />
                                     <node concept="3uibUv" id="78j9QLkcxYT" role="3clF45">
@@ -4620,17 +4470,17 @@
               <ref role="3cqZAo" node="78j9QLkdcu9" resolve="vv" />
             </node>
             <node concept="liA8E" id="78j9QLkdctt" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~VisualizationViewer.setVertexToolTipTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexToolTipTransformer" />
+              <ref role="37wK5l" to="ao2i:~VisualizationViewer.setVertexToolTipTransformer(com.google.common.base.Function)" resolve="setVertexToolTipTransformer" />
               <node concept="2ShNRf" id="78j9QLkdctu" role="37wK5m">
                 <node concept="YeOm9" id="78j9QLkdctv" role="2ShVmc">
                   <node concept="1Y3b0j" id="78j9QLkdctw" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                    <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                     <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="78j9QLkdctx" role="1B3o_S" />
                     <node concept="3clFb_" id="78j9QLkdcty" role="jymVt">
                       <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="transform" />
+                      <property role="TrG5h" value="apply" />
                       <property role="DiZV1" value="false" />
                       <node concept="3Tm1VV" id="78j9QLkdctz" role="1B3o_S" />
                       <node concept="17QB3L" id="78j9QLkdct$" role="3clF45" />
@@ -4770,17 +4620,17 @@
               <ref role="3cqZAo" node="78j9QLkdcu9" resolve="vv" />
             </node>
             <node concept="liA8E" id="78j9QLkdctP" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~VisualizationViewer.setEdgeToolTipTransformer(org.apache.commons.collections15.Transformer)" resolve="setEdgeToolTipTransformer" />
+              <ref role="37wK5l" to="ao2i:~VisualizationViewer.setEdgeToolTipTransformer(com.google.common.base.Function)" resolve="setEdgeToolTipTransformer" />
               <node concept="2ShNRf" id="78j9QLkdctQ" role="37wK5m">
                 <node concept="YeOm9" id="78j9QLkdctR" role="2ShVmc">
                   <node concept="1Y3b0j" id="78j9QLkdctS" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                    <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                     <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="78j9QLkdctT" role="1B3o_S" />
                     <node concept="3clFb_" id="78j9QLkdctU" role="jymVt">
                       <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="transform" />
+                      <property role="TrG5h" value="apply" />
                       <property role="DiZV1" value="false" />
                       <node concept="3Tm1VV" id="78j9QLkdctV" role="1B3o_S" />
                       <node concept="17QB3L" id="78j9QLkdctW" role="3clF45" />
@@ -5088,17 +4938,17 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="78j9QLkdimY" role="2OqNvi">
-                  <ref role="37wK5l" to="ao2i:~RenderContext.setVertexShapeTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexShapeTransformer" />
+                  <ref role="37wK5l" to="ao2i:~RenderContext.setVertexShapeTransformer(com.google.common.base.Function)" resolve="setVertexShapeTransformer" />
                   <node concept="2ShNRf" id="78j9QLkdimZ" role="37wK5m">
                     <node concept="YeOm9" id="78j9QLkdin0" role="2ShVmc">
                       <node concept="1Y3b0j" id="78j9QLkdin1" role="YeSDq">
                         <property role="2bfB8j" value="true" />
                         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                        <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                        <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                         <node concept="3Tm1VV" id="78j9QLkdin2" role="1B3o_S" />
                         <node concept="3clFb_" id="78j9QLkdin3" role="jymVt">
                           <property role="1EzhhJ" value="false" />
-                          <property role="TrG5h" value="transform" />
+                          <property role="TrG5h" value="apply" />
                           <property role="DiZV1" value="false" />
                           <node concept="3Tm1VV" id="78j9QLkdin4" role="1B3o_S" />
                           <node concept="3uibUv" id="78j9QLkdin5" role="3clF45">
@@ -5236,17 +5086,17 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="78j9QLkdinY" role="2OqNvi">
-                    <ref role="37wK5l" to="ao2i:~RenderContext.setVertexShapeTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexShapeTransformer" />
+                    <ref role="37wK5l" to="ao2i:~RenderContext.setVertexShapeTransformer(com.google.common.base.Function)" resolve="setVertexShapeTransformer" />
                     <node concept="2ShNRf" id="78j9QLkdinZ" role="37wK5m">
                       <node concept="YeOm9" id="78j9QLkdio0" role="2ShVmc">
                         <node concept="1Y3b0j" id="78j9QLkdio1" role="YeSDq">
                           <property role="2bfB8j" value="true" />
                           <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                          <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                          <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                           <node concept="3Tm1VV" id="78j9QLkdio2" role="1B3o_S" />
                           <node concept="3clFb_" id="78j9QLkdio3" role="jymVt">
                             <property role="1EzhhJ" value="false" />
-                            <property role="TrG5h" value="transform" />
+                            <property role="TrG5h" value="apply" />
                             <property role="DiZV1" value="false" />
                             <node concept="3Tm1VV" id="78j9QLkdio4" role="1B3o_S" />
                             <node concept="3uibUv" id="78j9QLkdio5" role="3clF45">
@@ -5451,17 +5301,17 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="2$2HGUevJM4" role="2OqNvi">
-                  <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeArrowTransformer(org.apache.commons.collections15.Transformer)" resolve="setEdgeArrowTransformer" />
+                  <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeArrowTransformer(com.google.common.base.Function)" resolve="setEdgeArrowTransformer" />
                   <node concept="2ShNRf" id="2$2HGUew7_5" role="37wK5m">
                     <node concept="YeOm9" id="2$2HGUewsIH" role="2ShVmc">
                       <node concept="1Y3b0j" id="2$2HGUewsIK" role="YeSDq">
                         <property role="2bfB8j" value="true" />
-                        <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                        <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="2$2HGUewsIL" role="1B3o_S" />
                         <node concept="3clFb_" id="2$2HGUewsIM" role="jymVt">
                           <property role="1EzhhJ" value="false" />
-                          <property role="TrG5h" value="transform" />
+                          <property role="TrG5h" value="apply" />
                           <property role="DiZV1" value="false" />
                           <node concept="3Tm1VV" id="2$2HGUewsIN" role="1B3o_S" />
                           <node concept="3uibUv" id="2$2HGUewsKy" role="3clF45">
@@ -5832,17 +5682,17 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="1Hrx$eB2hUE" role="2OqNvi">
-                  <ref role="37wK5l" to="ao2i:~RenderContext.setVertexDrawPaintTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexDrawPaintTransformer" />
+                  <ref role="37wK5l" to="ao2i:~RenderContext.setVertexDrawPaintTransformer(com.google.common.base.Function)" resolve="setVertexDrawPaintTransformer" />
                   <node concept="2ShNRf" id="1Hrx$eB2hUF" role="37wK5m">
                     <node concept="YeOm9" id="1Hrx$eB2hUG" role="2ShVmc">
                       <node concept="1Y3b0j" id="1Hrx$eB2hUH" role="YeSDq">
                         <property role="2bfB8j" value="true" />
                         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                        <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                        <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                         <node concept="3Tm1VV" id="1Hrx$eB2hUI" role="1B3o_S" />
                         <node concept="3clFb_" id="1Hrx$eB2hUJ" role="jymVt">
                           <property role="1EzhhJ" value="false" />
-                          <property role="TrG5h" value="transform" />
+                          <property role="TrG5h" value="apply" />
                           <property role="DiZV1" value="false" />
                           <node concept="3Tm1VV" id="1Hrx$eB2hUK" role="1B3o_S" />
                           <node concept="3uibUv" id="1Hrx$eB2hUL" role="3clF45">
@@ -6072,17 +5922,17 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="78j9QLkdKpd" role="2OqNvi">
-                  <ref role="37wK5l" to="ao2i:~RenderContext.setVertexFillPaintTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexFillPaintTransformer" />
+                  <ref role="37wK5l" to="ao2i:~RenderContext.setVertexFillPaintTransformer(com.google.common.base.Function)" resolve="setVertexFillPaintTransformer" />
                   <node concept="2ShNRf" id="78j9QLkdKov" role="37wK5m">
                     <node concept="YeOm9" id="78j9QLkdKow" role="2ShVmc">
                       <node concept="1Y3b0j" id="78j9QLkdKox" role="YeSDq">
                         <property role="2bfB8j" value="true" />
                         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                        <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                        <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                         <node concept="3Tm1VV" id="78j9QLkdKoy" role="1B3o_S" />
                         <node concept="3clFb_" id="78j9QLkdKoz" role="jymVt">
                           <property role="1EzhhJ" value="false" />
-                          <property role="TrG5h" value="transform" />
+                          <property role="TrG5h" value="apply" />
                           <property role="DiZV1" value="false" />
                           <node concept="3Tm1VV" id="78j9QLkdKo$" role="1B3o_S" />
                           <node concept="3uibUv" id="78j9QLkdKo_" role="3clF45">
@@ -6203,17 +6053,17 @@
               </node>
             </node>
             <node concept="liA8E" id="61tT5XhX$81" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setVertexStrokeTransformer(org.apache.commons.collections15.Transformer)" resolve="setVertexStrokeTransformer" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setVertexStrokeTransformer(com.google.common.base.Function)" resolve="setVertexStrokeTransformer" />
               <node concept="2ShNRf" id="61tT5XhXWVP" role="37wK5m">
                 <node concept="YeOm9" id="61tT5XhYccF" role="2ShVmc">
                   <node concept="1Y3b0j" id="61tT5XhYccI" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                    <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                     <node concept="3Tm1VV" id="61tT5XhYccJ" role="1B3o_S" />
                     <node concept="3clFb_" id="61tT5XhYccK" role="jymVt">
                       <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="transform" />
+                      <property role="TrG5h" value="apply" />
                       <property role="DiZV1" value="false" />
                       <node concept="3Tm1VV" id="61tT5XhYccL" role="1B3o_S" />
                       <node concept="3uibUv" id="61tT5XhYcei" role="3clF45">
@@ -6385,17 +6235,17 @@
               </node>
             </node>
             <node concept="liA8E" id="78j9QLkdW5P" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeStrokeTransformer(org.apache.commons.collections15.Transformer)" resolve="setEdgeStrokeTransformer" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeStrokeTransformer(com.google.common.base.Function)" resolve="setEdgeStrokeTransformer" />
               <node concept="2ShNRf" id="78j9QLkdW5Q" role="37wK5m">
                 <node concept="YeOm9" id="78j9QLkdW5R" role="2ShVmc">
                   <node concept="1Y3b0j" id="78j9QLkdW5S" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                    <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                     <node concept="3Tm1VV" id="78j9QLkdW5T" role="1B3o_S" />
                     <node concept="3clFb_" id="78j9QLkdW5U" role="jymVt">
                       <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="transform" />
+                      <property role="TrG5h" value="apply" />
                       <property role="DiZV1" value="false" />
                       <node concept="3Tm1VV" id="78j9QLkdW5V" role="1B3o_S" />
                       <node concept="3uibUv" id="78j9QLkdW5W" role="3clF45">
@@ -6681,7 +6531,7 @@
           <node concept="3cpWsn" id="78j9QLke6$p" role="3cpWs9">
             <property role="TrG5h" value="edgePaintTf" />
             <node concept="3uibUv" id="78j9QLke6$q" role="1tU5fm">
-              <ref role="3uigEE" to="fyn1:~Transformer" resolve="Transformer" />
+              <ref role="3uigEE" to="gyfg:~Function" resolve="Function" />
               <node concept="3uibUv" id="78j9QLke6$r" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
               </node>
@@ -6693,7 +6543,7 @@
               <node concept="YeOm9" id="78j9QLke6$u" role="2ShVmc">
                 <node concept="1Y3b0j" id="78j9QLke6$v" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="fyn1:~Transformer" resolve="Transformer" />
+                  <ref role="1Y3XeK" to="gyfg:~Function" resolve="Function" />
                   <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                   <node concept="3Tm1VV" id="78j9QLke6$w" role="1B3o_S" />
                   <node concept="3uibUv" id="78j9QLke6$x" role="2Ghqu4">
@@ -6704,7 +6554,7 @@
                   </node>
                   <node concept="3clFb_" id="78j9QLke6$z" role="jymVt">
                     <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="transform" />
+                    <property role="TrG5h" value="apply" />
                     <property role="DiZV1" value="false" />
                     <node concept="3Tm1VV" id="78j9QLke6$$" role="1B3o_S" />
                     <node concept="3uibUv" id="78j9QLke6$_" role="3clF45">
@@ -6857,7 +6707,7 @@
               </node>
             </node>
             <node concept="liA8E" id="78j9QLke6_f" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeDrawPaintTransformer(org.apache.commons.collections15.Transformer)" resolve="setEdgeDrawPaintTransformer" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeDrawPaintTransformer(com.google.common.base.Function)" resolve="setEdgeDrawPaintTransformer" />
               <node concept="37vLTw" id="78j9QLke6_g" role="37wK5m">
                 <ref role="3cqZAo" node="78j9QLke6$p" resolve="edgePaintTf" />
               </node>
@@ -6875,7 +6725,7 @@
               </node>
             </node>
             <node concept="liA8E" id="78j9QLke6_m" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setArrowDrawPaintTransformer(org.apache.commons.collections15.Transformer)" resolve="setArrowDrawPaintTransformer" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setArrowDrawPaintTransformer(com.google.common.base.Function)" resolve="setArrowDrawPaintTransformer" />
               <node concept="37vLTw" id="78j9QLke6_n" role="37wK5m">
                 <ref role="3cqZAo" node="78j9QLke6$p" resolve="edgePaintTf" />
               </node>
@@ -6893,7 +6743,7 @@
               </node>
             </node>
             <node concept="liA8E" id="78j9QLke6_t" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setArrowFillPaintTransformer(org.apache.commons.collections15.Transformer)" resolve="setArrowFillPaintTransformer" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setArrowFillPaintTransformer(com.google.common.base.Function)" resolve="setArrowFillPaintTransformer" />
               <node concept="37vLTw" id="78j9QLke6_u" role="37wK5m">
                 <ref role="3cqZAo" node="78j9QLke6$p" resolve="edgePaintTf" />
               </node>
@@ -9050,17 +8900,17 @@
               </node>
             </node>
             <node concept="liA8E" id="1hdlKPe8QLa" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setVertexIncludePredicate(org.apache.commons.collections15.Predicate)" resolve="setVertexIncludePredicate" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setVertexIncludePredicate(com.google.common.base.Predicate)" resolve="setVertexIncludePredicate" />
               <node concept="2ShNRf" id="1hdlKPe8QLb" role="37wK5m">
                 <node concept="YeOm9" id="1hdlKPe8QLc" role="2ShVmc">
                   <node concept="1Y3b0j" id="1hdlKPe8QLd" role="YeSDq">
                     <property role="2bfB8j" value="true" />
-                    <ref role="1Y3XeK" to="fyn1:~Predicate" resolve="Predicate" />
+                    <ref role="1Y3XeK" to="gyfg:~Predicate" resolve="Predicate" />
                     <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="1hdlKPe8QLe" role="1B3o_S" />
                     <node concept="3clFb_" id="1hdlKPe8QLf" role="jymVt">
                       <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="evaluate" />
+                      <property role="TrG5h" value="apply" />
                       <property role="DiZV1" value="false" />
                       <node concept="3Tm1VV" id="1hdlKPe8QLg" role="1B3o_S" />
                       <node concept="10P_77" id="1hdlKPe8QLh" role="3clF45" />
@@ -9175,17 +9025,17 @@
               </node>
             </node>
             <node concept="liA8E" id="1hdlKPe8QLN" role="2OqNvi">
-              <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeIncludePredicate(org.apache.commons.collections15.Predicate)" resolve="setEdgeIncludePredicate" />
+              <ref role="37wK5l" to="ao2i:~RenderContext.setEdgeIncludePredicate(com.google.common.base.Predicate)" resolve="setEdgeIncludePredicate" />
               <node concept="2ShNRf" id="1hdlKPe8QLO" role="37wK5m">
                 <node concept="YeOm9" id="1hdlKPe8QLP" role="2ShVmc">
                   <node concept="1Y3b0j" id="1hdlKPe8QLQ" role="YeSDq">
                     <property role="2bfB8j" value="true" />
                     <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <ref role="1Y3XeK" to="fyn1:~Predicate" resolve="Predicate" />
+                    <ref role="1Y3XeK" to="gyfg:~Predicate" resolve="Predicate" />
                     <node concept="3Tm1VV" id="1hdlKPe8QLR" role="1B3o_S" />
                     <node concept="3clFb_" id="1hdlKPe8QLS" role="jymVt">
                       <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="evaluate" />
+                      <property role="TrG5h" value="apply" />
                       <property role="DiZV1" value="false" />
                       <node concept="3Tm1VV" id="1hdlKPe8QLT" role="1B3o_S" />
                       <node concept="10P_77" id="1hdlKPe8QLU" role="3clF45" />
@@ -9309,7 +9159,7 @@
       <node concept="1oajcY" id="7Q6Q5uyzyhI" role="1oa70y" />
     </node>
     <node concept="1DS2jV" id="2P9sdrBEHPd" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
+      <property role="TrG5h" value="mpsProject" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
       <node concept="1oajcY" id="2P9sdrBEHPe" role="1oa70y" />
     </node>
@@ -9321,28 +9171,6 @@
     </node>
     <node concept="tnohg" id="4mGNV$raQvG" role="tncku">
       <node concept="3clFbS" id="4mGNV$raQvH" role="2VODD2">
-        <node concept="3cpWs8" id="1FqEKJFsavf" role="3cqZAp">
-          <node concept="3cpWsn" id="1FqEKJFsavg" role="3cpWs9">
-            <property role="TrG5h" value="pp" />
-            <node concept="3uibUv" id="1FqEKJFsav8" role="1tU5fm">
-              <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-            </node>
-            <node concept="2OqwBi" id="1FqEKJFsavh" role="33vP2m">
-              <node concept="2OqwBi" id="1FqEKJFsavi" role="2Oq$k0">
-                <node concept="2WthIp" id="1FqEKJFsavj" role="2Oq$k0" />
-                <node concept="1DTwFV" id="1FqEKJFsavk" role="2OqNvi">
-                  <ref role="2WH_rO" node="7NyyyjNHi27" resolve="ideaProject" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1FqEKJFsavl" role="2OqNvi">
-                <ref role="37wK5l" to="1m72:~ComponentManager.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="1FqEKJFsavm" role="37wK5m">
-                  <ref role="3VsUkX" to="z1c4:~MPSProject" resolve="MPSProject" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="7Q6Q5uyym_w" role="3cqZAp">
           <node concept="3cpWsn" id="7Q6Q5uyym_z" role="3cpWs9">
             <property role="TrG5h" value="tool" />
@@ -9398,8 +9226,11 @@
                             <ref role="cht4Q" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                           </node>
                         </node>
-                        <node concept="37vLTw" id="1FqEKJFsavn" role="2XxRq1">
-                          <ref role="3cqZAo" node="1FqEKJFsavg" resolve="pp" />
+                        <node concept="2OqwBi" id="4vsPZrQ7KoK" role="2XxRq1">
+                          <node concept="2WthIp" id="4vsPZrQ7KoN" role="2Oq$k0" />
+                          <node concept="1DTwFV" id="4vsPZrQ7KoP" role="2OqNvi">
+                            <ref role="2WH_rO" node="2P9sdrBEHPd" resolve="mpsProject" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -9474,8 +9305,11 @@
                               <ref role="cht4Q" to="10jo:5yCuRHcawFz" resolve="IJGraphProvider" />
                             </node>
                           </node>
-                          <node concept="37vLTw" id="1FqEKJFsavo" role="2XxRq1">
-                            <ref role="3cqZAo" node="1FqEKJFsavg" resolve="pp" />
+                          <node concept="2OqwBi" id="4vsPZrQ7K_I" role="2XxRq1">
+                            <node concept="2WthIp" id="4vsPZrQ7K_L" role="2Oq$k0" />
+                            <node concept="1DTwFV" id="4vsPZrQ7K_N" role="2OqNvi">
+                              <ref role="2WH_rO" node="2P9sdrBEHPd" resolve="mpsProject" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -9489,7 +9323,7 @@
             <node concept="2OqwBi" id="2P9sdrBELAm" role="2Oq$k0">
               <node concept="2WthIp" id="2P9sdrBELAp" role="2Oq$k0" />
               <node concept="1DTwFV" id="2P9sdrBELAr" role="2OqNvi">
-                <ref role="2WH_rO" node="2P9sdrBEHPd" resolve="project" />
+                <ref role="2WH_rO" node="2P9sdrBEHPd" resolve="mpsProject" />
               </node>
             </node>
             <node concept="liA8E" id="2P9sdrBEOHY" role="2OqNvi">
