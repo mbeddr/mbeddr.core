@@ -7,6 +7,32 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2025
 
+## Multiple languages
+
+### Fixed
+
+- `jetbrains.mps.openapi.navigation.NavigationSupport - Replace with #getInstance(project) call` message is no longer
+  being logged (#3175).
+
+## com.mbeddr.mpsutil.genericactions
+
+### Fixed
+
+- "File Manager in Output Folder" action will now remain visible but disabled if the output folder does not exist.
+
+## com.mbeddr.mpsutil.hyperlink
+
+### Fixed
+
+- MPS no longer freezes when clicking on a link that opens another root node (#3180).
+
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixed
+
+- Exceptions are no longer thrown on startup.
+- Fixed a NPE coming from `CustomActionsSchema#removeIconCustomization()`.
+
 ## com.mbeddr.mpsutil.jung
 
 - 🚨 Upgrade to JUNG version 2.1.1 to avoid dependency on an old vulnerable collections library.
@@ -16,6 +42,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
   bundled dependencies of MPS-extensions. 
+- replaced plugin dependency `com.mbeddr.mpsutil.httpsupport` with `jetbrains.mps.ide.httpsupport`.
+- Removed plugin dependency `com.mbeddr.mpsutil.httpsupport` from `mpsutil.interpreter`
+
+## com.mbeddr.mpsutil.actionsfilter
+
+- Fix the "Do not call getChildren(null)" message being logged many times on startup (#3071, #3125).
 
 # August 2025
 
@@ -52,6 +84,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - The previous fix from May 2025 (merged from 2023.2) introduced a different problem due to changed threading rules in
   2024.1: "PluginException: Access from Event Dispatch Thread (EDT) is not allowed;
   see https://jb.gg/ij-platform-threading for details". This is now fixed.
+
+## com.mbeddr.core.base
+
+### Fixed
+
+- prevent exception in MbeddrSearchViewer actions initialization due to null value of the project event parameter
 
 ## com.mbeddr.platform publication
 
