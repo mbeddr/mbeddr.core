@@ -14,6 +14,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - `jetbrains.mps.openapi.navigation.NavigationSupport - Replace with #getInstance(project) call` message is no longer
   being logged (#3175).
 
+## com.mbeddr.core.base.pluginSolution
+
+### Fixed
+
+- "New Roots" action on a virtual package now again places the newly created nodes in this package.
+
 ## com.mbeddr.mpsutil.genericactions
 
 ### Fixed
