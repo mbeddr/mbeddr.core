@@ -118,6 +118,7 @@
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="7e8u" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -9772,24 +9773,6 @@
                 </node>
               </node>
               <node concept="3clFbH" id="1N2UgSJI$DJ" role="3cqZAp" />
-              <node concept="3cpWs8" id="1N2UgSJIA0J" role="3cqZAp">
-                <node concept="3cpWsn" id="1N2UgSJIA0I" role="3cpWs9">
-                  <property role="TrG5h" value="treeNode" />
-                  <node concept="3uibUv" id="1N2UgSJIA0K" role="1tU5fm">
-                    <ref role="3uigEE" to="rgfa:~TreeNode" resolve="TreeNode" />
-                  </node>
-                  <node concept="2OqwBi" id="1N2UgSJIIBH" role="33vP2m">
-                    <node concept="tl45R" id="1N2UgSJIIqU" role="2Oq$k0" />
-                    <node concept="liA8E" id="1N2UgSJIILo" role="2OqNvi">
-                      <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
-                      <node concept="10M0yZ" id="1N2UgSJIBaZ" role="37wK5m">
-                        <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
-                        <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.TREE_NODE" resolve="TREE_NODE" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="1N2UgSJIZsX" role="3cqZAp">
                 <node concept="3cpWsn" id="1N2UgSJIZt0" role="3cpWs9">
                   <property role="TrG5h" value="selectedPackage" />
@@ -9797,13 +9780,31 @@
                   <node concept="10Nm6u" id="1N2UgSJJ0Mx" role="33vP2m" />
                 </node>
               </node>
+              <node concept="3cpWs8" id="7vYy9pU2A5N" role="3cqZAp">
+                <node concept="3cpWsn" id="7vYy9pU2A5O" role="3cpWs9">
+                  <property role="TrG5h" value="value" />
+                  <node concept="3uibUv" id="7vYy9pU2A5P" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                  </node>
+                  <node concept="2OqwBi" id="7vYy9pU2Asu" role="33vP2m">
+                    <node concept="tl45R" id="7vYy9pU2AiB" role="2Oq$k0" />
+                    <node concept="liA8E" id="7vYy9pU2C_R" role="2OqNvi">
+                      <ref role="37wK5l" to="qkt:~AnActionEvent.getData(com.intellij.openapi.actionSystem.DataKey)" resolve="getData" />
+                      <node concept="10M0yZ" id="7vYy9pU2En6" role="37wK5m">
+                        <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.VALUE" resolve="VALUE" />
+                        <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="1N2UgSJIA0N" role="3cqZAp">
                 <node concept="2ZW3vV" id="1N2UgSJIA0R" role="3clFbw">
                   <node concept="37vLTw" id="1N2UgSJIA0P" role="2ZW6bz">
-                    <ref role="3cqZAo" node="1N2UgSJIA0I" resolve="treeNode" />
+                    <ref role="3cqZAo" node="7vYy9pU2A5O" resolve="value" />
                   </node>
                   <node concept="3uibUv" id="1N2UgSJIXcR" role="2ZW6by">
-                    <ref role="3uigEE" to="xr52:~PackageNode" resolve="PackageNode" />
+                    <ref role="3uigEE" to="7e8u:~VirtualFolder$Nodes" resolve="VirtualFolder.Nodes" />
                   </node>
                 </node>
                 <node concept="3clFbS" id="1N2UgSJIA0U" role="3clFbx">
@@ -9816,15 +9817,15 @@
                         <node concept="1eOMI4" id="1N2UgSJJ5FH" role="2Oq$k0">
                           <node concept="10QFUN" id="1N2UgSJJ5FE" role="1eOMHV">
                             <node concept="3uibUv" id="1N2UgSJJ63m" role="10QFUM">
-                              <ref role="3uigEE" to="xr52:~PackageNode" resolve="PackageNode" />
+                              <ref role="3uigEE" to="7e8u:~VirtualFolder$Nodes" resolve="VirtualFolder.Nodes" />
                             </node>
                             <node concept="37vLTw" id="1N2UgSJJ5FJ" role="10QFUP">
-                              <ref role="3cqZAo" node="1N2UgSJIA0I" resolve="treeNode" />
+                              <ref role="3cqZAo" node="7vYy9pU2A5O" resolve="value" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1N2UgSJJ6Tu" role="2OqNvi">
-                          <ref role="37wK5l" to="xr52:~PackageNode.getPackage()" resolve="getPackage" />
+                          <ref role="37wK5l" to="7e8u:~VirtualFolder.getName()" resolve="getName" />
                         </node>
                       </node>
                     </node>
