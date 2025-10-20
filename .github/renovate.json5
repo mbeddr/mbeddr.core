@@ -27,6 +27,13 @@
     },
 
     {
+      // MPS-extensions: allow unstable versions on master (snapshots)
+      "matchBaseBranches": ["master"],
+      "matchPackageNames": ["de.itemis.mps:extensions"],
+      "ignoreUnstable": false,
+    },
+
+    {
       // MPS and libraries: separate minor and patch updates in order to disable minor but leave patch updates enabled
       "matchPackageNames": ["de.itemis.mps:extensions", "com.jetbrains:mps"],
       "separateMinorPatch": true,
