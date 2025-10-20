@@ -23,7 +23,7 @@
       // Versioning for MPS extensions: match the typical version number: 2024.1.234.abcdef12, but do not treat commit
       // hashes with 'a' or 'b' as pre-releases. Only a `-something` suffix is treated as a pre-release.
       "matchPackageNames": ["de.itemis.mps:extensions"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.[\\da-f]+[(?:-(?<prerelease>.*))?$",
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.[0-9a-f]+[(?:-(?<prerelease>.*))?$",
     },
 
     {
