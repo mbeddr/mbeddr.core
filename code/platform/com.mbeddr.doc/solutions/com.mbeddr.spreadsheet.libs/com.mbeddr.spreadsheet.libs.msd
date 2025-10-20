@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.spreadsheet.libs" uuid="fc506c9e-94ac-4d65-9950-01def4cba278" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="commons-codec.jar" />
       <sourceRoot location="commons-collections4.jar" />
