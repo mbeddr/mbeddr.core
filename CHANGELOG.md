@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2025
 
+## com.mbeddr.doc
+
+- Null checks for accessing the documentation generation folder were added so that the documentation won't be generated for places where it is not possible (e.g. the console model).
+
 ## com.mbeddr.mpsutil.jung
 
 - 🚨 Upgrade to JUNG version 2.1.1 to avoid dependency on an old vulnerable collections library.
