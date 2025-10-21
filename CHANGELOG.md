@@ -48,10 +48,15 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - 🚨 Upgrade to JUNG version 2.1.1 to avoid dependency on an old vulnerable collections library.
 - 🚨 Change JUNG dependency from samples to the modules containing the actual implementation.
 
+## com.mbeddr.doc
+
+### Fixed
+
+- Null checks for accessing the documentation generation folder were added so that the documentation won't be generated for places where it is not possible (e.g. the console model).
+
 # September 2025
 
-- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
-  bundled dependencies of MPS-extensions. 
+- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the bundled dependencies of MPS-extensions.
 - replaced plugin dependency `com.mbeddr.mpsutil.httpsupport` with `jetbrains.mps.ide.httpsupport`.
 - Removed plugin dependency `com.mbeddr.mpsutil.httpsupport` from `mpsutil.interpreter`
 
@@ -64,6 +69,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Copying of custom cells and editors with custom swing components to plain text was improved.
 
 ## com.mbeddr.mpsutil.actionsfilter
+
+### Fixed
 
 - Classloading issues fixed.
 
@@ -145,8 +152,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
   to solution `com.mbeddr.spreadsheet.libs`.
-- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
-  enables using Document nodes in tests, for example.
+- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This enables using Document nodes in tests, for example.
 
 ## com.mbeddr.mpsutil.conceptdiagram
 
