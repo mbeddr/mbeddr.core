@@ -39,7 +39,8 @@
     <import index="tljb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.concurrency.annotations(MPS.IDEA/)" />
     <import index="0" ref="b50d89c0-0fb9-4105-b652-222148c26a9b/kotlin:kotlin(jetbrains.mps.kotlin.stdlib/)" />
     <import index="ksrs" ref="47198eff-d292-4dcd-85af-227f983426b5/java:kotlin.coroutines(MPS.Kotlin/)" />
-    <import index="18ny" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs.checkin(MPS.IDEA.Modules/)" />
+    <import index="jlcv" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs(MPS.IDEA.Modules/)" />
+    <import index="1038" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.openapi.vcs.changes(MPS.IDEA.Modules/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -417,7 +418,7 @@
         </node>
         <node concept="3clFbF" id="2GzKrnbj9_" role="3cqZAp">
           <node concept="3nyPlj" id="2GzKrnbj9z" role="3clFbG">
-            <ref role="37wK5l" to="18ny:~CheckinHandler.beforeCheckin()" resolve="beforeCheckin" />
+            <ref role="37wK5l" to="18nx:~CheckinHandler.beforeCheckin()" resolve="beforeCheckin" />
           </node>
         </node>
       </node>
@@ -466,13 +467,13 @@
       <node concept="3Tm6S6" id="3Vy2pj$ZLCb" role="1B3o_S" />
       <node concept="_YKpA" id="2Nko9yASSoY" role="1tU5fm">
         <node concept="3uibUv" id="2Nko9yASSoZ" role="_ZDj9">
-          <ref role="3uigEE" to="18ny:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
+          <ref role="3uigEE" to="18nx:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
         </node>
       </node>
       <node concept="2ShNRf" id="2Nko9yASTvD" role="33vP2m">
         <node concept="2Jqq0_" id="2Nko9yASUkH" role="2ShVmc">
           <node concept="3uibUv" id="2Nko9yASVnj" role="HW$YZ">
-            <ref role="3uigEE" to="18ny:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
+            <ref role="3uigEE" to="18nx:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
           </node>
         </node>
       </node>
@@ -558,7 +559,7 @@
               <node concept="3cpWsn" id="2Nko9yAVnNe" role="3cpWs9">
                 <property role="TrG5h" value="factory" />
                 <node concept="3uibUv" id="2Nko9yAVnu0" role="1tU5fm">
-                  <ref role="3uigEE" to="18ny:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
+                  <ref role="3uigEE" to="18nx:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
                 </node>
                 <node concept="2OqwBi" id="2Nko9yAVnNf" role="33vP2m">
                   <node concept="2GrUjf" id="2Nko9yAVnNg" role="2Oq$k0">
@@ -685,7 +686,7 @@
       <property role="TrG5h" value="panel" />
       <node concept="3Tmbuc" id="1yfWS2nO87U" role="1B3o_S" />
       <node concept="3uibUv" id="7uW9A9LcRYn" role="1tU5fm">
-        <ref role="3uigEE" to="jlcu:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
+        <ref role="3uigEE" to="jlcv:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
       </node>
     </node>
     <node concept="312cEg" id="7uW9A9LcNXZ" role="jymVt">
@@ -721,7 +722,7 @@
       <property role="TrG5h" value="context" />
       <node concept="3Tmbuc" id="2Nko9yATvfx" role="1B3o_S" />
       <node concept="3uibUv" id="2Nko9yATwJ6" role="1tU5fm">
-        <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+        <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
       </node>
     </node>
     <node concept="2tJIrI" id="w97ei4G_Dx" role="jymVt" />
@@ -981,13 +982,13 @@
       <node concept="37vLTG" id="1yfWS2nO7Vp" role="3clF46">
         <property role="TrG5h" value="panel" />
         <node concept="3uibUv" id="1yfWS2nO7Vq" role="1tU5fm">
-          <ref role="3uigEE" to="jlcu:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
+          <ref role="3uigEE" to="jlcv:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
         </node>
       </node>
       <node concept="37vLTG" id="2Nko9yATJu4" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="2Nko9yATKsT" role="1tU5fm">
-          <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+          <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
         </node>
       </node>
       <node concept="3clFbS" id="1yfWS2nO7Ru" role="3clF47">
@@ -1017,7 +1018,7 @@
                 <ref role="3cqZAo" node="1yfWS2nO7Vp" resolve="panel" />
               </node>
               <node concept="liA8E" id="1yfWS2nOaV8" role="2OqNvi">
-                <ref role="37wK5l" to="jlcu:~CheckinProjectPanel.getProject()" resolve="getProject" />
+                <ref role="37wK5l" to="jlcv:~CheckinProjectPanel.getProject()" resolve="getProject" />
               </node>
             </node>
           </node>
@@ -1209,7 +1210,7 @@
             </node>
             <node concept="2OqwBi" id="7naSPkSzu3I" role="33vP2m">
               <node concept="liA8E" id="7naSPkSzu3J" role="2OqNvi">
-                <ref role="37wK5l" to="jlcu:~CheckinProjectPanel.getVirtualFiles()" resolve="getVirtualFiles" />
+                <ref role="37wK5l" to="jlcv:~CheckinProjectPanel.getVirtualFiles()" resolve="getVirtualFiles" />
               </node>
               <node concept="37vLTw" id="1yfWS2nQ2IG" role="2Oq$k0">
                 <ref role="3cqZAo" node="7uW9A9LcS0c" resolve="panel" />
@@ -1347,7 +1348,7 @@
         <node concept="3clFbF" id="32CFzTqVkaM" role="3cqZAp">
           <node concept="2OqwBi" id="32CFzTqVh2b" role="3clFbG">
             <node concept="liA8E" id="32CFzTqVh2c" role="2OqNvi">
-              <ref role="37wK5l" to="jlcu:~CheckinProjectPanel.getVirtualFiles()" resolve="getVirtualFiles" />
+              <ref role="37wK5l" to="jlcv:~CheckinProjectPanel.getVirtualFiles()" resolve="getVirtualFiles" />
             </node>
             <node concept="37vLTw" id="32CFzTqVh2d" role="2Oq$k0">
               <ref role="3cqZAo" node="7uW9A9LcS0c" resolve="panel" />
@@ -1382,7 +1383,7 @@
     </node>
     <node concept="3Tm1VV" id="w97ei4GzZt" role="1B3o_S" />
     <node concept="3uibUv" id="2Nko9yAUpys" role="1zkMxy">
-      <ref role="3uigEE" to="18ny:~CheckinHandler" resolve="CheckinHandler" />
+      <ref role="3uigEE" to="18nx:~CheckinHandler" resolve="CheckinHandler" />
     </node>
   </node>
   <node concept="Qs71p" id="w97ei4HiXE">
@@ -1571,7 +1572,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2PSVZXMfrlF" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2PSVZXMfrlH" role="3clF47">
         <node concept="3clFbF" id="2PSVZXMftGc" role="3cqZAp">
@@ -1596,7 +1597,7 @@
       <ref role="3uigEE" node="w97ei4GzZs" resolve="BaseCheckinHandler" />
     </node>
     <node concept="3uibUv" id="7Inuc2b_WMj" role="EKbjA">
-      <ref role="3uigEE" to="18ny:~CommitCheck" resolve="CommitCheck" />
+      <ref role="3uigEE" to="18nx:~CommitCheck" resolve="CommitCheck" />
     </node>
     <node concept="3clFb_" id="iOccn7Zb$9" role="jymVt">
       <property role="TrG5h" value="isEnabled" />
@@ -1828,7 +1829,7 @@
       <property role="TrG5h" value="panel" />
       <node concept="3Tmbuc" id="3Vy2pj$XgAD" role="1B3o_S" />
       <node concept="3uibUv" id="3Vy2pj$XgAE" role="1tU5fm">
-        <ref role="3uigEE" to="jlcu:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
+        <ref role="3uigEE" to="jlcv:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
       </node>
     </node>
     <node concept="312cEg" id="6pFqDJAzhNY" role="jymVt">
@@ -1894,13 +1895,13 @@
       <node concept="37vLTG" id="3Vy2pj$XgBp" role="3clF46">
         <property role="TrG5h" value="panel" />
         <node concept="3uibUv" id="3Vy2pj$XgBq" role="1tU5fm">
-          <ref role="3uigEE" to="jlcu:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
+          <ref role="3uigEE" to="jlcv:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
         </node>
       </node>
       <node concept="37vLTG" id="2Nko9yAUHAk" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="2Nko9yAUIhy" role="1tU5fm">
-          <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+          <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3Vy2pj$XgBr" role="3clF47">
@@ -2247,8 +2248,8 @@
               <node concept="1Y3b0j" id="2Nko9yATVGM" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
-                <ref role="1Y3XeK" to="18ny:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
-                <ref role="37wK5l" to="18ny:~CheckinHandlerFactory.&lt;init&gt;()" resolve="CheckinHandlerFactory" />
+                <ref role="1Y3XeK" to="18nx:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
+                <ref role="37wK5l" to="18nx:~CheckinHandlerFactory.&lt;init&gt;()" resolve="CheckinHandlerFactory" />
                 <node concept="3Tm1VV" id="2Nko9yATVGN" role="1B3o_S" />
                 <node concept="3clFb_" id="2Nko9yATVH1" role="jymVt">
                   <property role="TrG5h" value="createHandler" />
@@ -2257,12 +2258,12 @@
                     <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
                   </node>
                   <node concept="3uibUv" id="2Nko9yATVH5" role="3clF45">
-                    <ref role="3uigEE" to="18ny:~CheckinHandler" resolve="CheckinHandler" />
+                    <ref role="3uigEE" to="18nx:~CheckinHandler" resolve="CheckinHandler" />
                   </node>
                   <node concept="37vLTG" id="2Nko9yATVH6" role="3clF46">
                     <property role="TrG5h" value="panel" />
                     <node concept="3uibUv" id="2Nko9yATVH7" role="1tU5fm">
-                      <ref role="3uigEE" to="jlcu:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
+                      <ref role="3uigEE" to="jlcv:~CheckinProjectPanel" resolve="CheckinProjectPanel" />
                     </node>
                     <node concept="2AHcQZ" id="2Nko9yATVH8" role="2AJF6D">
                       <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
@@ -2271,7 +2272,7 @@
                   <node concept="37vLTG" id="2Nko9yATVH9" role="3clF46">
                     <property role="TrG5h" value="context" />
                     <node concept="3uibUv" id="2Nko9yATVHa" role="1tU5fm">
-                      <ref role="3uigEE" to="1037:~CommitContext" resolve="CommitContext" />
+                      <ref role="3uigEE" to="1038:~CommitContext" resolve="CommitContext" />
                     </node>
                     <node concept="2AHcQZ" id="2Nko9yATVHb" role="2AJF6D">
                       <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
@@ -2305,7 +2306,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="2Nko9yASZCz" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
+        <ref role="3uigEE" to="18nx:~CheckinHandlerFactory" resolve="CheckinHandlerFactory" />
       </node>
       <node concept="3Tm1VV" id="2Nko9yAT0Md" role="1B3o_S" />
     </node>
@@ -2355,7 +2356,7 @@
     </node>
     <node concept="3Tm1VV" id="2Nko9yAPngi" role="1B3o_S" />
     <node concept="3uibUv" id="2Nko9yAPQG_" role="1zkMxy">
-      <ref role="3uigEE" to="18ny:~CheckinHandler" resolve="CheckinHandler" />
+      <ref role="3uigEE" to="18nx:~CheckinHandler" resolve="CheckinHandler" />
     </node>
     <node concept="16euLQ" id="2Nko9yAR0JQ" role="16eVyc">
       <property role="TrG5h" value="T" />
@@ -2375,7 +2376,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yARWBV" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yARWBX" role="3clF47">
         <node concept="3clFbF" id="2Nko9yAS4oB" role="3cqZAp">
@@ -2634,7 +2635,7 @@
       </node>
     </node>
     <node concept="3uibUv" id="2Nko9yAS0Kg" role="EKbjA">
-      <ref role="3uigEE" to="18ny:~CommitCheck" resolve="CommitCheck" />
+      <ref role="3uigEE" to="18nx:~CommitCheck" resolve="CommitCheck" />
     </node>
   </node>
   <node concept="312cEu" id="2Nko9yASmsZ">
@@ -2648,7 +2649,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yASmt4" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yASmt5" role="3clF47">
         <node concept="3clFbF" id="2Nko9yASmt6" role="3cqZAp">
@@ -2744,7 +2745,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yASns6" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yASns7" role="3clF47">
         <node concept="3clFbF" id="2Nko9yASns8" role="3cqZAp">
@@ -2840,7 +2841,7 @@
         <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
       </node>
       <node concept="3uibUv" id="2Nko9yASoyS" role="3clF45">
-        <ref role="3uigEE" to="18ny:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
+        <ref role="3uigEE" to="18nx:~CommitCheck$ExecutionOrder" resolve="CommitCheck.ExecutionOrder" />
       </node>
       <node concept="3clFbS" id="2Nko9yASoyT" role="3clF47">
         <node concept="3clFbF" id="2Nko9yASoyU" role="3cqZAp">
