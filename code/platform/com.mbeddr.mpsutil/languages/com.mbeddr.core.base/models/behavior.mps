@@ -61,8 +61,7 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="4nm9" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.openapi.project(MPS.ThirdParty/)" />
-    <import index="4nma" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -2573,9 +2572,6 @@
           </node>
         </node>
         <node concept="2Gpval" id="7xO7pTkwk_m" role="3cqZAp">
-          <node concept="2GrKxI" id="7xO7pTkwk_r" role="2Gsz3X">
-            <property role="TrG5h" value="oldEntry" />
-          </node>
           <node concept="3clFbS" id="7xO7pTkwk__" role="2LFqv$">
             <node concept="3cpWs8" id="7xO7pTkwH7t" role="3cqZAp">
               <node concept="3cpWsn" id="7xO7pTkwH7u" role="3cpWs9">
@@ -2645,6 +2641,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="2GrKxI" id="7xO7pTkwk_r" role="2Gsz3X">
+            <property role="TrG5h" value="oldEntry" />
           </node>
           <node concept="2ShNRf" id="7xO7pTk$sFW" role="2GsD0m">
             <node concept="Tc6Ow" id="7xO7pTk$vgC" role="2ShVmc">
@@ -17532,7 +17531,7 @@
             <property role="TrG5h" value="ideaProjects" />
             <node concept="_YKpA" id="3V7vYltya2j" role="1tU5fm">
               <node concept="3uibUv" id="3V7vYltya2m" role="_ZDj9">
-                <ref role="3uigEE" to="4nma:~Project" resolve="Project" />
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
               </node>
             </node>
             <node concept="2OqwBi" id="3V7vYltyajq" role="33vP2m">
