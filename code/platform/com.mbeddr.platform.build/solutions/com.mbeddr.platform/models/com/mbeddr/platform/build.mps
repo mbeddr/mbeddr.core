@@ -8244,9 +8244,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="2mU72gDx9ye" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mbeddr.mpsutil.jung" />
         <property role="3LESm3" value="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" />
+        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cWu" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cWv" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cWw" role="3LXTna">
@@ -8305,6 +8305,11 @@
             <node concept="3qWCbU" id="4PRpvcZJNBn" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="36MfRUKdp1S" role="3bR37C">
+          <node concept="3bR9La" id="36MfRUKdp1T" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
       </node>
@@ -12945,9 +12950,9 @@
         </node>
       </node>
       <node concept="1E1JtD" id="$bJ0jguQfr" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="3LESm3" value="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" />
         <property role="TrG5h" value="com.mbeddr.core.base" />
+        <property role="BnDLt" value="true" />
         <node concept="3rtmxn" id="3xFG3bj5cI3" role="3bR31x">
           <node concept="3LXTmp" id="3xFG3bj5cI4" role="3rtmxm">
             <node concept="3qWCbU" id="3xFG3bj5cI5" role="3LXTna">
@@ -13190,6 +13195,11 @@
         <node concept="1SiIV0" id="5vhcTL2KfrF" role="3bR37C">
           <node concept="3bR9La" id="5vhcTL2KfrG" role="1SiIV1">
             <ref role="3bR37D" to="90a9:7wH7VDRXrTO" resolve="nl.f1re.mps.editor.swing.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7JToctqR$Dv" role="3bR37C">
+          <node concept="3bR9La" id="7JToctqR$Dw" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
       </node>
