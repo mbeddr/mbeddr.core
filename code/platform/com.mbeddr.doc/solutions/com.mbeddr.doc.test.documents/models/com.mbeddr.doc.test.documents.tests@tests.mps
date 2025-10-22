@@ -15,8 +15,8 @@
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="qajb" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.jsoup(MPS.IDEA/)" />
-    <import index="b3ru" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.jsoup.nodes(MPS.IDEA/)" />
+    <import index="qajb" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jsoup(MPS.IDEA.Modules/)" />
+    <import index="b3ru" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jsoup.nodes(MPS.IDEA.Modules/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
