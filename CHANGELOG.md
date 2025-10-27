@@ -7,6 +7,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2025
 
+## com.mbeddr.core.base
+
+- Performance improvement of AssesmentQuery.executeQuery
+
 ## com.mbeddr.doc
 
 - Null checks for accessing the documentation generation folder were added so that the documentation won't be generated for places where it is not possible (e.g. the console model).
