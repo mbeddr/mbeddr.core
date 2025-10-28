@@ -7,10 +7,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2025
 
+
+## com.mbeddr.core.base
+
+- Performance improvement of AssesmentQuery.executeQuery
+
 ## com.mbeddr.mpsutil.jung
 
 - 🚨 Upgrade to JUNG version 2.1.1 to avoid dependency on an old vulnerable collections library.
 - 🚨 Change JUNG dependency from samples to the modules containing the actual implementation.
+
 
 ## com.mbeddr.doc
 
