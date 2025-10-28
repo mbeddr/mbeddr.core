@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="-1" />
@@ -86,6 +87,7 @@
     <import index="kwxp" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:4903509f-5416-46ff-9a8b-44b5a178b568(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -764,7 +766,7 @@
         <child id="6202678563380433923" name="query" index="sbcd9" />
         <child id="7238779735251877228" name="editorComponent" index="1yzFaX" />
       </concept>
-      <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListNodeExpression" flags="ng" index="GFMny" />
+      <concept id="2239254897981410197" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInputExpression" flags="ng" index="GFMny" />
       <concept id="7238779735251712681" name="com.mbeddr.mpsutil.editor.querylist.structure.QueryListInlineEditorComponent" flags="ig" index="1yz3lS" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -8756,20 +8758,35 @@
                                 <node concept="1QHqEK" id="5vhcTL2P0bX" role="3cqZAp">
                                   <node concept="1QHqEC" id="5vhcTL2P0bY" role="1QHqEI">
                                     <node concept="3clFbS" id="5vhcTL2P0bZ" role="1bW5cS">
-                                      <node concept="3clFbF" id="5vhcTL2P0c0" role="3cqZAp">
-                                        <node concept="2OqwBi" id="5vhcTL2P0c1" role="3clFbG">
-                                          <node concept="liA8E" id="5vhcTL2P0c2" role="2OqNvi">
-                                            <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
-                                            <node concept="3clFbT" id="5vhcTL2P0c3" role="37wK5m">
-                                              <property role="3clFbU" value="true" />
-                                            </node>
+                                      <node concept="3clFbF" id="5UujJsmnbxE" role="3cqZAp">
+                                        <node concept="2OqwBi" id="5UujJsmncVk" role="3clFbG">
+                                          <node concept="2YIFZM" id="5UujJsmnbUL" role="2Oq$k0">
+                                            <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+                                            <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
                                           </node>
-                                          <node concept="2OqwBi" id="5vhcTL2P0c4" role="2Oq$k0">
-                                            <node concept="37vLTw" id="5vhcTL2P0c5" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="5vhcTL2P0bk" resolve="ideaProject" />
-                                            </node>
-                                            <node concept="LR4U6" id="5vhcTL2P0c6" role="2OqNvi">
-                                              <ref role="LR4U5" to="k4pk:1X6acCMyKUd" resolve="SVGViewer" />
+                                          <node concept="liA8E" id="5UujJsmngda" role="2OqNvi">
+                                            <ref role="37wK5l" to="bd8o:~Application.invokeLater(java.lang.Runnable)" resolve="invokeLater" />
+                                            <node concept="1bVj0M" id="5UujJsmngLX" role="37wK5m">
+                                              <node concept="3clFbS" id="5UujJsmngM0" role="1bW5cS">
+                                                <node concept="3clFbF" id="1R2r3DPnlfx" role="3cqZAp">
+                                                  <node concept="2OqwBi" id="1R2r3DPnlqE" role="3clFbG">
+                                                    <node concept="liA8E" id="1R2r3DPnlEC" role="2OqNvi">
+                                                      <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean)" resolve="openTool" />
+                                                      <node concept="3clFbT" id="1R2r3DPnmta" role="37wK5m">
+                                                        <property role="3clFbU" value="true" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="2OqwBi" id="1R2r3DPnhCu" role="2Oq$k0">
+                                                      <node concept="37vLTw" id="1R2r3DPnh3J" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="5vhcTL2P0bk" resolve="ideaProject" />
+                                                      </node>
+                                                      <node concept="LR4U6" id="1R2r3DPni3C" role="2OqNvi">
+                                                        <ref role="LR4U5" to="k4pk:1X6acCMyKUd" resolve="SVGViewer" />
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
                                             </node>
                                           </node>
                                         </node>

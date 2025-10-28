@@ -11,10 +11,10 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215611834554" name="jetbrains.mps.lang.test.structure.CheckDataFlowOperation" flags="ng" index="8796x" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -131,7 +131,7 @@
                 <property role="2hmy$m" value="10" />
               </node>
               <node concept="7CXmI" id="5UDKTeAvEB3" role="lGtFl">
-                <node concept="8796x" id="5UDKTeAvRJ2" role="7EUXB" />
+                <node concept="29bkU" id="d$zdnvx3$y" role="7EUXB" />
               </node>
             </node>
             <node concept="3XIRlf" id="5UDKTeAvEtw" role="3XIRFZ">

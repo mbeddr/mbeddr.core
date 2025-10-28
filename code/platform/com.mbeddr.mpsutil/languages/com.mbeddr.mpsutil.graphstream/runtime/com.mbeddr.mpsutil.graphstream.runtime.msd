@@ -8,7 +8,6 @@
       <sourceRoot location="gs-algo-1.3.jar" />
       <sourceRoot location="gs-core-1.3.jar" />
       <sourceRoot location="gs-ui-1.3.jar" />
-      <sourceRoot location="jgraphx-3.7.4.jar" />
       <sourceRoot location="abego-treelayout-1.0.3.jar" />
       <sourceRoot location="de.itemis.graphing.jar" />
     </modelRoot>
@@ -19,7 +18,6 @@
       <library location="${module}/lib/gs-algo-1.3.jar" />
       <library location="${module}/lib/gs-core-1.3.jar" />
       <library location="${module}/lib/gs-ui-1.3.jar" />
-      <library location="${module}/lib/jgraphx-3.7.4.jar" />
       <library location="${module}/lib/abego-treelayout-1.0.3.jar" />
       <library location="${module}/lib/de.itemis.graphing.jar" />
     </facet>
@@ -60,6 +58,7 @@
     <module reference="563a0770-eb88-4f4f-83ed-f708776fc2fe(de.itemis.stubs.batik)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)" version="0" />
   </dependencyVersions>
 </solution>
 

@@ -7,22 +7,36 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # October 2025
 
+
 ## com.mbeddr.core.base
 
 - Performance improvement of AssesmentQuery.executeQuery
 
+## com.mbeddr.mpsutil.jung
+
+- 🚨 Upgrade to JUNG version 2.1.1 to avoid dependency on an old vulnerable collections library.
+- 🚨 Change JUNG dependency from samples to the modules containing the actual implementation.
+
+
 ## com.mbeddr.doc
+
+### Fixed
 
 - Null checks for accessing the documentation generation folder were added so that the documentation won't be generated for places where it is not possible (e.g. the console model).
 
 # September 2025
 
-- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the
-  bundled dependencies of MPS-extensions. 
+- The POM file of the mbeddr platform now includes bundled dependencies with 'provided' scope, including the bundled dependencies of MPS-extensions.
 
 # August 2025
 
 - Copying of custom cells and editors with custom swing components to plain text was improved.
+
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixed
+
+- Classloading issues fixed.
 
 # July 2025
 
@@ -42,10 +56,41 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The actionsfilter plugin now correctly initializes when opening an RCP for the first time and also loads the default actions profile. Various other improvements were made to the language.
 
+# June 2025
+
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixed
+
+- The previous fix from May 2025 (merged from 2023.2) introduced a different problem due to changed threading rules in
+  2024.1: "PluginException: Access from Event Dispatch Thread (EDT) is not allowed;
+  see https://jb.gg/ij-platform-threading for details". This is now fixed.
+
+## com.mbeddr.platform publication
+
+### Changed
+
+- Published SBOM contains dependencies only from runtime configurations. This covers bundled libraries and all runtime 
+  dependencies like used language libraries, JBR and MPS. The latter is however currently not yet included due to a restriction 
+  of the CycloneDX gradle plugin.
+
 # May 2025
 
 ## com.mbeddr.doc
+
+### Fixed
+
+- PlantUML version changed from erroneously used old 8059 back to 1.2025.2. The erroneous update happened in commit
+  [d3e54084](https://github.com/mbeddr/mbeddr.core/commit/d3e540849808d1649a4728ac9a32a5c06d37ade2), and was merged
+  in [ee09cc31](https://github.com/mbeddr/mbeddr.core/commit/ee09cc3167c9943e3a193d2d2dc89d3e82fd1e35) in April 2025.
 - Use original nodeID for stable ID (SID) generation instead of transient nodeID
+
+## com.mbeddr.mpsutil.process
+
+### Fixed
+
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.process to com.mbeddr.mpsutil.wizard.
+- Cleaned up leftovers after the renaming of com.mbeddr.mpsutil.test to com.mbeddr.mpsutil.strings.
 
 ## com.mbeddr.mpsutil.actionsfilter
 
@@ -53,18 +98,31 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # April 2025
 
+## com.mbeddr.mpsutil.process
+
+### Changed
+
+- The language was renamed to com.mbeddr.mpsutil.wizard
+
 ## com.mbeddr.doc
+
+### Changed
 
 - 🚨 Stubs for POI and other libraries were moved from language `com.mbeddr.spreadsheat`
   to solution `com.mbeddr.spreadsheet.libs`.
-- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This
-  enables using Document nodes in tests, for example.
+- During generation non-root Document nodes will be kept even if they are not referenced by any other document. This enables using Document nodes in tests, for example.
 
 ## com.mbeddr.mpsutil.conceptdiagram
 
 ### Added
 
 - A new flag was added to make concept diagrams read-only, so that they can't edit the structure of languages.
+
+## com.mbeddr.mpsutil.common
+
+### Added
+
+- Base classes for representing paths in instance trees have been added. This is a common use case, e.g. for implementing component architecture DSLs (see `InstancePath<>`).
 
 ## com.mbeddr:platform languages
 
@@ -75,6 +133,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - SBOM file with the description of all used components (libraries) and their dependencies
+
+### Removed
+
+- The disabled language `com.mbeddr.mpsutil.ccmenu` was removed. To customize the code completion menu, please use [completion stylings](https://www.jetbrains.com/help/mps/editor.html#-bdbley_15).
 
 # February 2025
 
@@ -128,11 +190,21 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - A new language `com.mbeddr.mpsutil.collections` was added that adds support for a set type `nset` that use nodes as the values of the set. Equivalence of nodes is checked structurally. The hash code calculation is done for all properties and children and the first level of references. The runtime solution also contains a more general class `EquivalenceHashSet` to implement hashsets with arbitrary `equals` and `hashcode` methods.
 
+### Changes
+
+- The language `com.mbeddr.spreadsheat` was renamed to `com.mbeddr.spreadsheet`.
+
+### Removed
+
+- The language `com.mbeddr.mpsutil.projectview.favourites` was removed. Please use the MPS bookmarks manager instead: https://www.jetbrains.com/help/mps/navigating-through-the-source-code.html#use_bookmarks
+- The stub solution `org.apache.batik` were removed. Please use `de.itemis.stubs.batik` from MPS-Extensions instead.
+- The stub solution `org.xml` were removed. Please use `de.itemis.stubs.xml` from MPS-Extensions instead.
+
 # October 2024
 
 ## com.mbeddr.mpsutil
 
-### Feature
+### Added
 
 - Adds a caching mechanism for caching the retrieval of 'ILogicalChild' by 'ILogicalChildOwner'
 

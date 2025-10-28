@@ -23,7 +23,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="y6af" ref="r:266125ed-2b05-4b4a-aa3e-7e3d1931d4cd(com.mbeddr.cc.trace.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="hczm" ref="ebc3846f-fa92-4849-93e4-dec2faf6b78f/r:b9ee036f-3395-4eab-86f3-44b8517c4f7e(com.mbeddr.mpsutil.lib/com.mbeddr.mpsutil.test.modelone)" />
+    <import index="hczm" ref="ebc3846f-fa92-4849-93e4-dec2faf6b78f/r:b9ee036f-3395-4eab-86f3-44b8517c4f7e(com.mbeddr.mpsutil.strings/com.mbeddr.mpsutil.strings.util)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="h23j" ref="r:bbbfeb3c-4321-4879-a3bb-77f1152cdb6b(com.mbeddr.cc.requirements.actions)" />
@@ -1466,6 +1466,20 @@
           <node concept="VPM3Z" id="2TTzVZwoCl$" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
+          <node concept="l2Vlx" id="2TTzVZwoClA" role="2iSdaV" />
+          <node concept="pkWqt" id="2TTzVZwoClJ" role="pqm2j">
+            <node concept="3clFbS" id="2TTzVZwoClK" role="2VODD2">
+              <node concept="3clFbF" id="2TTzVZwoClL" role="3cqZAp">
+                <node concept="3y3z36" id="2TTzVZwoCmz" role="3clFbG">
+                  <node concept="10Nm6u" id="2TTzVZwoCmA" role="3uHU7w" />
+                  <node concept="2OqwBi" id="2TTzVZwoCm7" role="3uHU7B">
+                    <node concept="pncrf" id="2TTzVZwoClM" role="2Oq$k0" />
+                    <node concept="YBYNd" id="2TTzVZwoCmd" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="fWXJ_" id="5vhcTL2KRBr" role="3EZMnx">
             <node concept="3Fmcul" id="5vhcTL2KRBt" role="3FoqZy">
               <node concept="3clFbS" id="5vhcTL2KRBv" role="2VODD2">
@@ -1601,22 +1615,18 @@
               </node>
             </node>
           </node>
-          <node concept="l2Vlx" id="2TTzVZwoClA" role="2iSdaV" />
-          <node concept="pkWqt" id="2TTzVZwoClJ" role="pqm2j">
-            <node concept="3clFbS" id="2TTzVZwoClK" role="2VODD2">
-              <node concept="3clFbF" id="2TTzVZwoClL" role="3cqZAp">
-                <node concept="3y3z36" id="2TTzVZwoCmz" role="3clFbG">
-                  <node concept="10Nm6u" id="2TTzVZwoCmA" role="3uHU7w" />
-                  <node concept="2OqwBi" id="2TTzVZwoCm7" role="3uHU7B">
-                    <node concept="pncrf" id="2TTzVZwoClM" role="2Oq$k0" />
-                    <node concept="YBYNd" id="2TTzVZwoCmd" role="2OqNvi" />
-                  </node>
-                </node>
+        </node>
+        <node concept="3XFhqQ" id="7S_3HdEVHc9" role="3EZMnx" />
+        <node concept="pkWqt" id="3slbD0C71IH" role="pqm2j">
+          <node concept="3clFbS" id="3slbD0C71II" role="2VODD2">
+            <node concept="3clFbF" id="3slbD0C71IJ" role="3cqZAp">
+              <node concept="2YIFZM" id="3slbD0C71IM" role="3clFbG">
+                <ref role="37wK5l" to="hwgx:3slbD0C6STN" resolve="showButtons" />
+                <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3XFhqQ" id="7S_3HdEVHc9" role="3EZMnx" />
         <node concept="fWXJ_" id="5vhcTL2LkpP" role="3EZMnx">
           <node concept="3Fmcul" id="5vhcTL2LkpR" role="3FoqZy">
             <node concept="3clFbS" id="5vhcTL2LkpT" role="2VODD2">
@@ -1772,16 +1782,6 @@
                     <node concept="10Nm6u" id="2TTzVZwoIrk" role="3uHU7w" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pkWqt" id="3slbD0C71IH" role="pqm2j">
-          <node concept="3clFbS" id="3slbD0C71II" role="2VODD2">
-            <node concept="3clFbF" id="3slbD0C71IJ" role="3cqZAp">
-              <node concept="2YIFZM" id="3slbD0C71IM" role="3clFbG">
-                <ref role="37wK5l" to="hwgx:3slbD0C6STN" resolve="showButtons" />
-                <ref role="1Pybhc" to="hwgx:3slbD0C6STH" resolve="EditorButtonHelper" />
               </node>
             </node>
           </node>
