@@ -2,7 +2,7 @@
 <model ref="r:d7a72757-9d59-454c-a452-6509c79b709b(com.mbeddr.mpsutil.contextactions.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -253,7 +253,6 @@
         <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
-      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -790,20 +789,17 @@
                   <node concept="2ShNRf" id="4mMeETlpDx9" role="3clFbG">
                     <node concept="Tc6Ow" id="4mMeETlpE9c" role="2ShVmc">
                       <node concept="17QB3L" id="4mMeETlpEGE" role="HW$YZ" />
-                      <node concept="2OqwBi" id="4mMeETlpHjm" role="I$8f6">
-                        <node concept="2OqwBi" id="4mMeETlpHjn" role="2Oq$k0">
-                          <node concept="2YIFZM" id="4mMeETlpHjo" role="2Oq$k0">
-                            <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
-                            <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
-                          </node>
-                          <node concept="liA8E" id="4mMeETlpHjp" role="2OqNvi">
-                            <ref role="37wK5l" to="qkt:~ActionManager.getActionIds(java.lang.String)" resolve="getActionIds" />
-                            <node concept="Xl_RD" id="4mMeETlpHjq" role="37wK5m">
-                              <property role="Xl_RC" value="" />
-                            </node>
+                      <node concept="2OqwBi" id="4mMeETlpHjn" role="I$8f6">
+                        <node concept="2YIFZM" id="4mMeETlpHjo" role="2Oq$k0">
+                          <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+                          <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
+                        </node>
+                        <node concept="liA8E" id="4mMeETlpHjp" role="2OqNvi">
+                          <ref role="37wK5l" to="qkt:~ActionManager.getActionIdList(java.lang.String)" resolve="getActionIdList" />
+                          <node concept="Xl_RD" id="4mMeETlpHjq" role="37wK5m">
+                            <property role="Xl_RC" value="" />
                           </node>
                         </node>
-                        <node concept="39bAoz" id="4mMeETlpHjr" role="2OqNvi" />
                       </node>
                     </node>
                   </node>

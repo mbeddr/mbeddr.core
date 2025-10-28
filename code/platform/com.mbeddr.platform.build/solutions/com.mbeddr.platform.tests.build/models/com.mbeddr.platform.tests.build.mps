@@ -1636,12 +1636,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
-          <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
-          </node>
-        </node>
         <node concept="398BVA" id="bHMJKhDAXY" role="3LF7KH">
           <ref role="398BVh" node="7hVsScEQJ6E" resolve="mbeddr.mpsutil" />
           <node concept="2Ry0Ak" id="bHMJKhDAYF" role="iGT6I">
@@ -1690,6 +1684,12 @@
             <node concept="3qWCbU" id="5Ap$XSqW8TG" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2SeJqc6Ohp2" role="3bR37C">
+          <node concept="3bR9La" id="2SeJqc6Ohp3" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
@@ -3316,11 +3316,6 @@
           <node concept="3qWCbU" id="E0fxGqluKg" role="3LXTna">
             <property role="3qWCbO" value="icons/**, resources/**" />
           </node>
-        </node>
-      </node>
-      <node concept="1SiIV0" id="2hC83VUYsa" role="3bR37C">
-        <node concept="3bR9La" id="2hC83VUYsb" role="1SiIV1">
-          <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
         </node>
       </node>
     </node>
