@@ -5,9 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). The project does _not_ follow
 Semantic Versioning and the changes are simply documented in reverse chronological order, grouped by calendar month.
 
+# November 2025
+
+## com.mbeddr.core.base
+
+### Added
+
+- MPS project is now passed to Assessment.runQuery() and AssessmentScope.findElements(). The overloads without the project parameter are deprecated.
+
 # October 2025
 
 ## com.mbeddr.core.base
+
+### Fixed
+
 - Performance improvement of AssesmentQuery.executeQuery
 
 ## Multiple languages
