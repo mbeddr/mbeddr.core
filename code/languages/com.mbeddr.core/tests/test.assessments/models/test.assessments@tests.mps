@@ -22,6 +22,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1225469856668" name="jetbrains.mps.lang.test.structure.ModelExpression" flags="nn" index="1jGwE1" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -240,7 +241,8 @@
               <ref role="3xOPvv" node="6v0bPePA_gT" resolve="empty" />
             </node>
             <node concept="2qgKlT" id="6v0bPePAA2P" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
+              <ref role="37wK5l" to="hwgx:4WjNWxKKBRM" resolve="update" />
+              <node concept="1jxXqW" id="20N7CGtPFbc" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -425,7 +427,8 @@
               <ref role="3xOPvv" node="6v0bPePBI9j" resolve="updateExisting" />
             </node>
             <node concept="2qgKlT" id="6v0bPePBTDB" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
+              <ref role="37wK5l" to="hwgx:4WjNWxKKBRM" resolve="update" />
+              <node concept="1jxXqW" id="20N7CGtPFl$" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -465,7 +468,8 @@
               <ref role="3xOPvv" node="5Z2CJwRnK9F" resolve="sorting" />
             </node>
             <node concept="2qgKlT" id="5Z2CJwRnKH9" role="2OqNvi">
-              <ref role="37wK5l" to="hwgx:3jNX2XuLy_p" resolve="update" />
+              <ref role="37wK5l" to="hwgx:4WjNWxKKBRM" resolve="update" />
+              <node concept="1jxXqW" id="20N7CGtPF_m" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -646,7 +650,8 @@
                 <ref role="3cqZAo" node="3V7vYltnovQ" resolve="scope" />
               </node>
               <node concept="2qgKlT" id="3V7vYltnpeT" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
+                <ref role="37wK5l" to="hwgx:20N7CGtOl8_" resolve="findElements" />
+                <node concept="1jxXqW" id="20N7CGtPC6z" role="37wK5m" />
                 <node concept="1jGwE1" id="3V7vYltnpeU" role="37wK5m" />
               </node>
             </node>
