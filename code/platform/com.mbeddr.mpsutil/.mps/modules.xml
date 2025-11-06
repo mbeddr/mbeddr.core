@@ -170,6 +170,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.collections.runtime/test.com.mbeddr.mpsutil.collections.runtime.msd" folder="collections" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.mpsutil.logicalChild/test.com.mbeddr.mpsutil.logicalChild.msd" folder="logicalChild" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.mpsutil.javainterpreter.test/com.mbeddr.mpsutil.javainterpreter.test.mpl" folder="staging.javainterpreter" />
+      <modulePath path="$PROJECT_DIR$/tests/test.assessments.testlang/test.assessments.testlang.mpl" folder="core.tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.assessments/test.assessments.msd" folder="core.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.asynccell/test.com.mbeddr.mpsutil.asynccell.msd" folder="asynccell" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.blutil.test.waitfor/test.com.mbeddr.mpsutil.blutil.test.waitfor.msd" folder="waitfor" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.mpsutil.common/test.com.mbeddr.mpsutil.common.msd" folder="staging.common" />
