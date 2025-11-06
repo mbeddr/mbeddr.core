@@ -125,8 +125,6 @@ val build_allScripts by tasks.registering(MpsGenerate::class) {
     projectLocation = file("com.mbeddr.platform.build")
     pluginRoots.from(tasks.named("resolveMpsLibraries", Sync::class.java).map { it.destinationDir })
     pluginRoots.from(mpsHome.dir("plugins"))
-
-    folderMacros.put("mbeddr.github.core.home", rootProject.layout.projectDirectory)
 }
 
 val build_actionsfilter by tasks.registering(BuildLanguages::class) {
