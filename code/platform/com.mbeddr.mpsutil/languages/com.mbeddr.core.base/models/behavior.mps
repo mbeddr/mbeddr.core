@@ -61,9 +61,9 @@
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="4nm9" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.intellij.openapi.project(MPS.ThirdParty/)" />
-    <import index="4nma" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="gyfg" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.base(de.q60.mps.collections.libs/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -381,6 +381,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
+        <child id="2546654756694997556" name="reference" index="92FcQ" />
+        <child id="3106559687488913694" name="line" index="2XjZqd" />
+      </concept>
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
@@ -406,8 +410,14 @@
       <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
         <child id="2217234381367190458" name="reference" index="VUp5m" />
       </concept>
+      <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
+        <reference id="2217234381367530213" name="classifier" index="VXe09" />
+      </concept>
       <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
         <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
+      </concept>
+      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
+        <child id="6962838954693749192" name="tag" index="qph3F" />
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
@@ -2573,9 +2583,6 @@
           </node>
         </node>
         <node concept="2Gpval" id="7xO7pTkwk_m" role="3cqZAp">
-          <node concept="2GrKxI" id="7xO7pTkwk_r" role="2Gsz3X">
-            <property role="TrG5h" value="oldEntry" />
-          </node>
           <node concept="3clFbS" id="7xO7pTkwk__" role="2LFqv$">
             <node concept="3cpWs8" id="7xO7pTkwH7t" role="3cqZAp">
               <node concept="3cpWsn" id="7xO7pTkwH7u" role="3cpWs9">
@@ -2645,6 +2652,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="2GrKxI" id="7xO7pTkwk_r" role="2Gsz3X">
+            <property role="TrG5h" value="oldEntry" />
           </node>
           <node concept="2ShNRf" id="7xO7pTk$sFW" role="2GsD0m">
             <node concept="Tc6Ow" id="7xO7pTk$vgC" role="2ShVmc">
@@ -17532,7 +17542,7 @@
             <property role="TrG5h" value="ideaProjects" />
             <node concept="_YKpA" id="3V7vYltya2j" role="1tU5fm">
               <node concept="3uibUv" id="3V7vYltya2m" role="_ZDj9">
-                <ref role="3uigEE" to="4nma:~Project" resolve="Project" />
+                <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
               </node>
             </node>
             <node concept="2OqwBi" id="3V7vYltyajq" role="33vP2m">
@@ -18313,6 +18323,25 @@
         <ref role="3uigEE" to="ln2k:5yCuRHcaxfZ" resolve="JNGraph" />
       </node>
       <node concept="3Tm1VV" id="2HGVlaPT2hJ" role="1B3o_S" />
+      <node concept="P$JXv" id="7JToctqQuWt" role="lGtFl">
+        <node concept="TZ5HA" id="7JToctqQuWu" role="TZ5H$">
+          <node concept="1dT_AC" id="7JToctqQkl1" role="1dT_Ay">
+            <property role="1dT_AB" value="Dummy reference to " />
+          </node>
+          <node concept="1dT_AA" id="7JToctqQkx9" role="1dT_Ay">
+            <node concept="92FcH" id="7JToctqQkxb" role="qph3F">
+              <node concept="TZ5HA" id="7JToctqQkxd" role="2XjZqd" />
+              <node concept="VXe08" id="7JToctqQs9e" role="92FcQ">
+                <ref role="VXe09" to="gyfg:~Function" resolve="Function" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dT_AC" id="7JToctqQkx8" role="1dT_Ay">
+            <property role="1dT_AB" value=" to help compilation" />
+          </node>
+          <node concept="1dT_AC" id="7JToctqQuWv" role="1dT_Ay" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="1OJ4NX2DqqZ" role="jymVt" />
     <node concept="2YIFZL" id="1OJ4NX2EYxc" role="jymVt">
