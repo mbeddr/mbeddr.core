@@ -782,6 +782,9 @@
       <node concept="37vLTG" id="4EB7X9kjC2n" role="3clF46">
         <property role="TrG5h" value="rootActionGroupId" />
         <node concept="17QB3L" id="4EB7X9kjCbk" role="1tU5fm" />
+        <node concept="2AHcQZ" id="14Z1LPduRqn" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7LkwBl9I0ZD" role="jymVt" />
@@ -834,15 +837,24 @@
             <property role="TrG5h" value="id" />
             <property role="3TUv4t" value="true" />
             <node concept="17QB3L" id="7LkwBl9Dlln" role="1tU5fm" />
-            <node concept="2OqwBi" id="7LkwBl9DkPS" role="33vP2m">
-              <node concept="2YIFZM" id="7X7PnMPcF_S" role="2Oq$k0">
-                <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
-                <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
-              </node>
-              <node concept="liA8E" id="7LkwBl9DkPU" role="2OqNvi">
-                <ref role="37wK5l" to="qkt:~ActionManager.getId(com.intellij.openapi.actionSystem.AnAction)" resolve="getId" />
-                <node concept="37vLTw" id="7LkwBl9DkPV" role="37wK5m">
+            <node concept="3K4zz7" id="14Z1LPdwHtW" role="33vP2m">
+              <node concept="10Nm6u" id="14Z1LPdwLgA" role="3K4GZi" />
+              <node concept="3y3z36" id="14Z1LPdwDeP" role="3K4Cdx">
+                <node concept="10Nm6u" id="14Z1LPdwEnP" role="3uHU7w" />
+                <node concept="37vLTw" id="14Z1LPdw_Zl" role="3uHU7B">
                   <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7LkwBl9DkPS" role="3K4E3e">
+                <node concept="2YIFZM" id="7X7PnMPcF_S" role="2Oq$k0">
+                  <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+                  <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
+                </node>
+                <node concept="liA8E" id="7LkwBl9DkPU" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~ActionManager.getId(com.intellij.openapi.actionSystem.AnAction)" resolve="getId" />
+                  <node concept="37vLTw" id="7LkwBl9DkPV" role="37wK5m">
+                    <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -854,7 +866,7 @@
             <property role="3TUv4t" value="false" />
             <node concept="17QB3L" id="7LkwBl9Dlu1" role="1tU5fm" />
             <node concept="2EnYce" id="7LkwBl9Dl3X" role="33vP2m">
-              <node concept="2OqwBi" id="7LkwBl9Dl3Y" role="2Oq$k0">
+              <node concept="2EnYce" id="14Z1LPdxnHs" role="2Oq$k0">
                 <node concept="37vLTw" id="7LkwBl9Dl3Z" role="2Oq$k0">
                   <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
                 </node>
@@ -1053,7 +1065,7 @@
               <node concept="3cpWsn" id="7HJ2q_ghZvA" role="3cpWs9">
                 <property role="TrG5h" value="pos" />
                 <node concept="10Oyi0" id="7HJ2q_ghZvx" role="1tU5fm" />
-                <node concept="2OqwBi" id="7HJ2q_ghZvB" role="33vP2m">
+                <node concept="2EnYce" id="14Z1LPdxV0d" role="33vP2m">
                   <node concept="37vLTw" id="7HJ2q_ghZvC" role="2Oq$k0">
                     <ref role="3cqZAo" node="7HJ2q_ggxJY" resolve="label" />
                   </node>
@@ -1070,7 +1082,7 @@
               <node concept="3clFbS" id="7HJ2q_ghqYf" role="3clFbx">
                 <node concept="3clFbF" id="7HJ2q_ghthO" role="3cqZAp">
                   <node concept="37vLTI" id="7HJ2q_ghthQ" role="3clFbG">
-                    <node concept="2OqwBi" id="7HJ2q_ggzxj" role="37vLTx">
+                    <node concept="2EnYce" id="14Z1LPdy0nf" role="37vLTx">
                       <node concept="37vLTw" id="7HJ2q_gh$7k" role="2Oq$k0">
                         <ref role="3cqZAo" node="7HJ2q_ggxJY" resolve="label" />
                       </node>
@@ -1725,8 +1737,8 @@
                   <ref role="3cqZAo" node="7LkwBl9I0MB" resolve="myNode" />
                 </node>
                 <node concept="3cpWs3" id="7HJ2q_geHhC" role="37wK5m">
-                  <node concept="2OqwBi" id="7HJ2q_geIFk" role="3uHU7w">
-                    <node concept="2OqwBi" id="7HJ2q_geHFa" role="2Oq$k0">
+                  <node concept="2EnYce" id="14Z1LPdxR1F" role="3uHU7w">
+                    <node concept="2EnYce" id="14Z1LPdxPgl" role="2Oq$k0">
                       <node concept="37vLTw" id="7HJ2q_geHwi" role="2Oq$k0">
                         <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
                       </node>

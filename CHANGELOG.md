@@ -13,6 +13,13 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - MPS project is now passed to Assessment.runQuery() and AssessmentScope.findElements(). The overloads without the project parameter are deprecated.
 
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixes
+
+- The language was refactored to not need the IntelliJ plugin.
+- Breaking: Custom profiles are now correctly set on MPS startup. Because the format of the saved profiles changed, previous custom profiles must be recreated.
+
 # October 2025
 
 ## com.mbeddr.core.base
