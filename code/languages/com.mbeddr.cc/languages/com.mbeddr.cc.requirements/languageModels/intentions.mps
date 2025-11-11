@@ -1358,7 +1358,7 @@
                 <node concept="2OqwBi" id="64BVCtJ2Pf7" role="10QFUP">
                   <node concept="71T_Y" id="64BVCtJ2Pf8" role="2Oq$k0" />
                   <node concept="liA8E" id="64BVCtJ2Pf9" role="2OqNvi">
-                    <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                    <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
                   </node>
                 </node>
                 <node concept="2I9FWS" id="64BVCtJ2Pf6" role="10QFUM">
@@ -1478,7 +1478,7 @@
             <node concept="2OqwBi" id="64BVCtJ2gwk" role="33vP2m">
               <node concept="71T_Y" id="64BVCtJ2gwl" role="2Oq$k0" />
               <node concept="liA8E" id="64BVCtJ2gwm" role="2OqNvi">
-                <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
@@ -1562,7 +1562,7 @@
             <node concept="2OqwBi" id="1$2iQp39gOb" role="33vP2m">
               <node concept="71T_Y" id="1$2iQp39gOc" role="2Oq$k0" />
               <node concept="liA8E" id="1$2iQp39gOd" role="2OqNvi">
-                <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
@@ -2016,7 +2016,7 @@
             <node concept="2OqwBi" id="1$2iQp3906F" role="33vP2m">
               <node concept="71T_Y" id="1$2iQp3906G" role="2Oq$k0" />
               <node concept="liA8E" id="1$2iQp3906H" role="2OqNvi">
-                <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>

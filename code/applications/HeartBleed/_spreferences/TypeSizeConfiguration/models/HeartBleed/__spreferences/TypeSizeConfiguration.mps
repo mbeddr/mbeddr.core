@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:eb41e7a7-8f9a-3225-acb5-2c9ca86a2cc3(HeartBleed.__spreferences.TypeSizeConfiguration)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="5" />
   </languages>
