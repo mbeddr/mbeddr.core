@@ -7,11 +7,19 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # November 2025
 
+## com.mbeddr.spreadsheet
+
+### Fixed
+
+- Removed empty model root causing warning on library load
+
 ## com.mbeddr.core.base
 
 ### Added
 
 - MPS project is now passed to Assessment.runQuery() and AssessmentScope.findElements(). The overloads without the project parameter are deprecated.
+- Assessment now has an `alwaysShowCheckboxes` property to show checkboxes for each result even if `mustBeOk` is set to false.
+  The checkboxes can be used to mark some findings as 'accepted' without triggering a model checking error for those not marked.
 
 # October 2025
 
