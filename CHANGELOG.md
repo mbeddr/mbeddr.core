@@ -7,6 +7,12 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # November 2025
 
+## com.mbeddr.spreadsheet
+
+### Fixed
+
+- Removed empty model root causing warning on library load
+
 ## com.mbeddr.core.base
 
 ### Added
