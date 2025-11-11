@@ -15,7 +15,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -5848,15 +5848,6 @@
         <property role="TrG5h" value="n" />
         <node concept="3Tqbb2" id="3slbD0C7KnL" role="1tU5fm" />
       </node>
-      <node concept="P$JXv" id="4WjNWxKM5uy" role="lGtFl">
-        <node concept="TZ5HI" id="4WjNWxKM5uz" role="3nqlJM">
-          <node concept="TZ5HA" id="4WjNWxKM5u$" role="3HnX3l">
-            <node concept="1dT_AC" id="4WjNWxKMbyA" role="1dT_Ay">
-              <property role="1dT_AB" value="override perform(Project, SNode)" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="2AHcQZ" id="4WjNWxKM5u_" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
         <node concept="2B6LJw" id="4WjNWxKM6h2" role="2B76xF">
@@ -5869,6 +5860,15 @@
           <ref role="2B6OnR" to="wyt6:~Deprecated.forRemoval()" resolve="forRemoval" />
           <node concept="3clFbT" id="4WjNWxKMBBI" role="2B70Vg">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4WjNWxKM5uy" role="lGtFl">
+        <node concept="TZ5HI" id="4WjNWxKM5uz" role="3nqlJM">
+          <node concept="TZ5HA" id="4WjNWxKM5u$" role="3HnX3l">
+            <node concept="1dT_AC" id="4WjNWxKMbyA" role="1dT_Ay">
+              <property role="1dT_AB" value="override perform(Project, SNode)" />
+            </node>
           </node>
         </node>
       </node>
