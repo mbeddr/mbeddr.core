@@ -4,7 +4,7 @@
   <languages>
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -12,7 +12,6 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="8rsk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem.ex(MPS.IDEA/)" />
     <import index="obo9" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.plugins.actions(MPS.Platform/)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
@@ -236,9 +235,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -808,9 +804,9 @@
           <node concept="1rXfSq" id="7LkwBl9I_iP" role="3clFbG">
             <ref role="37wK5l" node="7LkwBl9Infb" resolve="createEntryCell" />
             <node concept="2OqwBi" id="7LkwBl9I_jR" role="37wK5m">
-              <node concept="2YIFZM" id="7LkwBl9I_jS" role="2Oq$k0">
-                <ref role="1Pybhc" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
-                <ref role="37wK5l" to="8rsk:~ActionManagerEx.getInstanceEx()" resolve="getInstanceEx" />
+              <node concept="2YIFZM" id="7X7PnMPfqVa" role="2Oq$k0">
+                <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
               </node>
               <node concept="liA8E" id="7LkwBl9I_jT" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~ActionManager.getAction(java.lang.String)" resolve="getAction" />
@@ -839,9 +835,9 @@
             <property role="3TUv4t" value="true" />
             <node concept="17QB3L" id="7LkwBl9Dlln" role="1tU5fm" />
             <node concept="2OqwBi" id="7LkwBl9DkPS" role="33vP2m">
-              <node concept="2YIFZM" id="7LkwBl9DkPT" role="2Oq$k0">
-                <ref role="37wK5l" to="8rsk:~ActionManagerEx.getInstanceEx()" resolve="getInstanceEx" />
-                <ref role="1Pybhc" to="8rsk:~ActionManagerEx" resolve="ActionManagerEx" />
+              <node concept="2YIFZM" id="7X7PnMPcF_S" role="2Oq$k0">
+                <ref role="37wK5l" to="qkt:~ActionManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
               </node>
               <node concept="liA8E" id="7LkwBl9DkPU" role="2OqNvi">
                 <ref role="37wK5l" to="qkt:~ActionManager.getId(com.intellij.openapi.actionSystem.AnAction)" resolve="getId" />
@@ -1825,16 +1821,14 @@
               <node concept="3cpWsn" id="7LkwBl9BDNJ" role="3cpWs9">
                 <property role="TrG5h" value="group" />
                 <node concept="3uibUv" id="7LkwBl9BDNF" role="1tU5fm">
-                  <ref role="3uigEE" to="qkt:~ActionGroup" resolve="ActionGroup" />
+                  <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
                 </node>
-                <node concept="1eOMI4" id="7LkwBl9BDNK" role="33vP2m">
-                  <node concept="10QFUN" id="7LkwBl9BDNL" role="1eOMHV">
-                    <node concept="3uibUv" id="7LkwBl9BDNM" role="10QFUM">
-                      <ref role="3uigEE" to="qkt:~ActionGroup" resolve="ActionGroup" />
-                    </node>
-                    <node concept="37vLTw" id="7LkwBl9BDNN" role="10QFUP">
-                      <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
-                    </node>
+                <node concept="10QFUN" id="7LkwBl9BDNL" role="33vP2m">
+                  <node concept="3uibUv" id="7LkwBl9BDNM" role="10QFUM">
+                    <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
+                  </node>
+                  <node concept="37vLTw" id="7LkwBl9BDNN" role="10QFUP">
+                    <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />
                   </node>
                 </node>
               </node>
@@ -1885,20 +1879,19 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="7LkwBl9BEi9" role="2GsD0m">
-                <node concept="37vLTw" id="7LkwBl9BE5_" role="2Oq$k0">
+              <node concept="2OqwBi" id="4o4dGLysupS" role="2GsD0m">
+                <node concept="37vLTw" id="4o4dGLyssgg" role="2Oq$k0">
                   <ref role="3cqZAo" node="7LkwBl9BDNJ" resolve="group" />
                 </node>
-                <node concept="liA8E" id="7LkwBl9BFVv" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~ActionGroup.getChildren(com.intellij.openapi.actionSystem.AnActionEvent)" resolve="getChildren" />
-                  <node concept="10Nm6u" id="7LkwBl9BFYp" role="37wK5m" />
+                <node concept="liA8E" id="4o4dGLysxpV" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~DefaultActionGroup.getChildActionsOrStubs()" resolve="getChildActionsOrStubs" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2ZW3vV" id="7LkwBl9BDlM" role="3clFbw">
             <node concept="3uibUv" id="7LkwBl9BD$d" role="2ZW6by">
-              <ref role="3uigEE" to="qkt:~ActionGroup" resolve="ActionGroup" />
+              <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
             </node>
             <node concept="37vLTw" id="7LkwBl9BD5S" role="2ZW6bz">
               <ref role="3cqZAo" node="7LkwBl9BxQR" resolve="action" />

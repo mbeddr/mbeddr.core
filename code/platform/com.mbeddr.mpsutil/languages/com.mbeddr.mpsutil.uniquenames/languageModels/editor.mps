@@ -7,7 +7,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="62971cbe-fd2f-4135-b001-ee6cb7a74436" name="nl.f1re.mps.editor.swing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -99,7 +99,6 @@
       </concept>
       <concept id="1216380990741" name="jetbrains.mps.lang.editor.structure.CellModel_TransactionalProperty" flags="sg" stub="8104358048506729358" index="PXfge">
         <property id="1232439938817" name="runInCommand" index="3N9gSv" />
-        <reference id="1216381219207" name="property" index="PY72s" />
         <child id="1216381211800" name="handlerBlock" index="PY5m3" />
       </concept>
       <concept id="1216381054717" name="jetbrains.mps.lang.editor.structure.TransactionalPropertyHandler" flags="in" index="PXuZA" />
@@ -1798,7 +1797,7 @@
     </node>
     <node concept="3EZMnI" id="fLIIZeM" role="2wV5jI">
       <node concept="PXfge" id="4rDGDFJUR0t" role="3EZMnx">
-        <ref role="PY72s" to="tpce:fA0kJcN" resolve="role" />
+        <ref role="1NtTu8" to="tpce:fA0kJcN" resolve="role" />
         <ref role="1k5W1q" to="tpen:hshQ_OE" resolve="Field" />
         <node concept="PXuZA" id="4rDGDFJUR0u" role="PY5m3">
           <node concept="3clFbS" id="4rDGDFJUR0v" role="2VODD2">
@@ -2326,7 +2325,7 @@
         <node concept="PXfge" id="hGQkfP6" role="3EZMnx">
           <property role="3N9gSv" value="false" />
           <ref role="1k5W1q" to="tpen:2adVrWyBK$Y" resolve="ConceptName" />
-          <ref role="PY72s" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="PXuZA" id="hGQkfP7" role="PY5m3">
             <node concept="3clFbS" id="hGQkfP8" role="2VODD2">
               <node concept="3clFbJ" id="6UyJMA9G3De" role="3cqZAp">
@@ -3034,6 +3033,10 @@
           <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
           <ref role="1NtTu8" to="tpce:gSMwhzt" resolve="iconPath" />
         </node>
+        <node concept="VPM3Z" id="hEU$PQn" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="2iRfu4" id="i2IuJLJ" role="2iSdaV" />
         <node concept="fWXJ_" id="5vhcTL2RH9M" role="3EZMnx">
           <node concept="3Fmcul" id="5vhcTL2RH9O" role="3FoqZy">
             <node concept="3clFbS" id="5vhcTL2RH9Q" role="2VODD2">
@@ -3064,10 +3067,6 @@
             </node>
           </node>
         </node>
-        <node concept="VPM3Z" id="hEU$PQn" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="2iRfu4" id="i2IuJLJ" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="i2IuJLQ" role="2iSdaV" />
     </node>

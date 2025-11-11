@@ -23,11 +23,6 @@ ext.reportsDir = rootProject.layout.buildDirectory.dir("reports").get().asFile
 // Project group
 group = 'com.mbeddr'
 
-repositories {
-    // required for com.michaelbaranov:microba library
-    maven { url 'https://maven.atlassian.com/content/repositories/atlassian-public/' }
-}
-
 configurations {
     mpsLibraries { canBeConsumed = false }
 }
@@ -151,7 +146,7 @@ task install_actionsfilter(type: Copy, dependsOn: build_actionsfilter) {
     description 'Copy the actions filter IntelliJ plugin to the MPS plugin\'s directory'
     from "$rootDir/artifacts/com.mbeddr.mpsutil.actionsfilter/"
     include "com.mbeddr.mpsutil.actionsfilter/"
-    into "$mpsPluginsDir"
+    into(mpsPluginsDir)
 }
 tasks.getByPath(':com.mbeddr:install').dependsOn install_actionsfilter
 
