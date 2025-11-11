@@ -18,6 +18,8 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 ### Added
 
 - MPS project is now passed to Assessment.runQuery() and AssessmentScope.findElements(). The overloads without the project parameter are deprecated.
+- Assessment now has an `alwaysShowCheckboxes` property to show checkboxes for each result even if `mustBeOk` is set to false.
+  The checkboxes can be used to mark some findings as 'accepted' without triggering a model checking error for those not marked.
 
 # October 2025
 
