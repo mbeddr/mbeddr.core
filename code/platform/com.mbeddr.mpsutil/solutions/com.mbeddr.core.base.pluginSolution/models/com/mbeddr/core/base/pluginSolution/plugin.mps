@@ -2559,8 +2559,8 @@
       <property role="15feLF" value="7" />
     </node>
     <node concept="1GtWCo" id="3ketZMcr6rD" role="1nVCmq">
-      <node concept="10M0yZ" id="MipY_gaOND" role="1GtWoa">
-        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.Search" resolve="Search" />
+      <node concept="10M0yZ" id="7z_lg$d9mRn" role="1GtWoa">
+        <ref role="3cqZAo" to="z2i8:~AllIcons$Actions.FindForward" resolve="FindForward" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$Actions" resolve="AllIcons.Actions" />
       </node>
     </node>
