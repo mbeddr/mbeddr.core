@@ -19,6 +19,7 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 - The language was refactored to not need the IntelliJ plugin.
 - Breaking: Custom profiles are now correctly set on MPS startup. Because the format of the saved profiles changed, previous custom profiles must be recreated.
+- Breaking: p´Predefined action profiles also have to be regenerated and recompiled due to changed runtime API.
 
 # October 2025
 
