@@ -22,8 +22,12 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
+    <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
+    <import index="4b2m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.messages(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -116,6 +120,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -134,6 +141,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -195,7 +203,9 @@
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
       <concept id="1213999117680" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldAccessOperation" flags="nn" index="2BZ7hE" />
-      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
+      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp">
+        <reference id="1218736638915" name="classifier" index="32nkFo" />
+      </concept>
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ngI" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
@@ -445,6 +455,80 @@
         <ref role="3uigEE" to="qkt:~DefaultActionGroup" resolve="DefaultActionGroup" />
       </node>
     </node>
+    <node concept="2BZ0e9" id="PeUK68JRd2" role="2XNbBz">
+      <property role="TrG5h" value="toolWindowListener" />
+      <node concept="3Tm6S6" id="PeUK68JRd3" role="1B3o_S" />
+      <node concept="3uibUv" id="PeUK68JRDj" role="1tU5fm">
+        <ref role="3uigEE" to="b9kz:~ToolWindowManagerListener" resolve="ToolWindowManagerListener" />
+      </node>
+      <node concept="2ShNRf" id="PeUK68JRD_" role="33vP2m">
+        <node concept="YeOm9" id="PeUK68JZ8d" role="2ShVmc">
+          <node concept="1Y3b0j" id="PeUK68JZ8g" role="YeSDq">
+            <property role="2bfB8j" value="true" />
+            <property role="373rjd" value="true" />
+            <ref role="1Y3XeK" to="b9kz:~ToolWindowManagerListener" resolve="ToolWindowManagerListener" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+            <node concept="3Tm1VV" id="PeUK68JZ8h" role="1B3o_S" />
+            <node concept="3clFb_" id="PeUK68JZce" role="jymVt">
+              <property role="TrG5h" value="toolWindowShown" />
+              <node concept="3Tm1VV" id="PeUK68JZcg" role="1B3o_S" />
+              <node concept="3cqZAl" id="PeUK68JZci" role="3clF45" />
+              <node concept="37vLTG" id="PeUK68JZcj" role="3clF46">
+                <property role="TrG5h" value="toolWindow" />
+                <node concept="3uibUv" id="PeUK68JZck" role="1tU5fm">
+                  <ref role="3uigEE" to="jkny:~ToolWindow" resolve="ToolWindow" />
+                </node>
+                <node concept="2AHcQZ" id="PeUK68JZcl" role="2AJF6D">
+                  <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="PeUK68JZcn" role="3clF47">
+                <node concept="3clFbJ" id="PeUK68MIk6" role="3cqZAp">
+                  <node concept="3clFbS" id="PeUK68MIk8" role="3clFbx">
+                    <node concept="3clFbF" id="PeUK68KhOA" role="3cqZAp">
+                      <node concept="2OqwBi" id="PeUK68KiZV" role="3clFbG">
+                        <node concept="2OqwBi" id="PeUK68KhOw" role="2Oq$k0">
+                          <node concept="2WthIp" id="PeUK68KhOz" role="2Oq$k0">
+                            <ref role="32nkFo" node="5tr7YH$U35C" resolve="ContextActionsTool" />
+                          </node>
+                          <node concept="2BZ7hE" id="PeUK68KhO_" role="2OqNvi">
+                            <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="PeUK68KlUh" role="2OqNvi">
+                          <ref role="37wK5l" to="1ne1:PeUK68K$P8" resolve="forceUpdate" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbC" id="PeUK68MKkz" role="3clFbw">
+                    <node concept="2OqwBi" id="PeUK68MKRT" role="3uHU7w">
+                      <node concept="2WthIp" id="PeUK68MKRW" role="2Oq$k0">
+                        <ref role="32nkFo" node="5tr7YH$U35C" resolve="ContextActionsTool" />
+                      </node>
+                      <node concept="2BZ7hE" id="PeUK68MKRY" role="2OqNvi">
+                        <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="PeUK68MIQD" role="3uHU7B">
+                      <node concept="37vLTw" id="PeUK68MIrX" role="2Oq$k0">
+                        <ref role="3cqZAo" node="PeUK68JZcj" resolve="toolWindow" />
+                      </node>
+                      <node concept="liA8E" id="PeUK68MJkC" role="2OqNvi">
+                        <ref role="37wK5l" to="jkny:~ToolWindow.getComponent()" resolve="getComponent" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2AHcQZ" id="PeUK68JZco" role="2AJF6D">
+                <ref role="2AI5Lk" to="wyt6:~Override" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2UmK3q" id="5tr7YH$U35D" role="2Um5zG">
       <node concept="3clFbS" id="5tr7YH$U35E" role="2VODD2">
         <node concept="3cpWs6" id="5tr7YH$Ug8u" role="3cqZAp">
@@ -459,16 +543,15 @@
     </node>
     <node concept="2xpOpl" id="5lGdLibXOZR" role="uR5co">
       <node concept="3clFbS" id="5lGdLibXOZS" role="2VODD2">
-        <node concept="3clFbF" id="5lGdLibXQnk" role="3cqZAp">
-          <node concept="2OqwBi" id="5lGdLibXQ__" role="3clFbG">
-            <node concept="2OqwBi" id="5lGdLibXQne" role="2Oq$k0">
-              <node concept="2WthIp" id="5lGdLibXQnh" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="5lGdLibXQnj" role="2OqNvi">
+        <node concept="3clFbF" id="PeUK68MFFv" role="3cqZAp">
+          <node concept="2YIFZM" id="PeUK68MFHN" role="3clFbG">
+            <ref role="37wK5l" to="zn9m:~Disposer.dispose(com.intellij.openapi.Disposable)" resolve="dispose" />
+            <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+            <node concept="2OqwBi" id="PeUK68MFIL" role="37wK5m">
+              <node concept="2WthIp" id="PeUK68MFIO" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="PeUK68MFIQ" role="2OqNvi">
                 <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
               </node>
-            </node>
-            <node concept="liA8E" id="5lGdLibXRGd" role="2OqNvi">
-              <ref role="37wK5l" to="1ne1:5lGdLibXPSt" resolve="dispose" />
             </node>
           </node>
         </node>
@@ -590,6 +673,41 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="PeUK68MG7y" role="3cqZAp" />
+        <node concept="3clFbF" id="PeUK68LGk1" role="3cqZAp">
+          <node concept="2OqwBi" id="PeUK68MGz5" role="3clFbG">
+            <node concept="2OqwBi" id="PeUK68LHTH" role="2Oq$k0">
+              <node concept="2OqwBi" id="PeUK68LGV3" role="2Oq$k0">
+                <node concept="2xqhHp" id="PeUK68LGk0" role="2Oq$k0" />
+                <node concept="liA8E" id="PeUK68LH_i" role="2OqNvi">
+                  <ref role="37wK5l" to="1m72:~ComponentManager.getMessageBus()" resolve="getMessageBus" />
+                </node>
+              </node>
+              <node concept="liA8E" id="PeUK68LIrR" role="2OqNvi">
+                <ref role="37wK5l" to="4b2m:~MessageBus.connect(com.intellij.openapi.Disposable)" resolve="connect" />
+                <node concept="2OqwBi" id="PeUK68MCjn" role="37wK5m">
+                  <node concept="2WthIp" id="PeUK68MCjq" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="PeUK68MCjs" role="2OqNvi">
+                    <ref role="2WH_rO" node="5tr7YH$U8Tk" resolve="myComponent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="PeUK68MGXV" role="2OqNvi">
+              <ref role="37wK5l" to="4b2m:~SimpleMessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object)" resolve="subscribe" />
+              <node concept="10M0yZ" id="PeUK68MH6U" role="37wK5m">
+                <ref role="3cqZAo" to="b9kz:~ToolWindowManagerListener.TOPIC" resolve="TOPIC" />
+                <ref role="1PxDUh" to="b9kz:~ToolWindowManagerListener" resolve="ToolWindowManagerListener" />
+              </node>
+              <node concept="2OqwBi" id="PeUK68MHnk" role="37wK5m">
+                <node concept="2WthIp" id="PeUK68MHnn" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="PeUK68MHnp" role="2OqNvi">
+                  <ref role="2WH_rO" node="PeUK68JRd2" resolve="listener" />
                 </node>
               </node>
             </node>
