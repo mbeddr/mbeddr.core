@@ -21,6 +21,10 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Assessment now has an `alwaysShowCheckboxes` property to show checkboxes for each result even if `mustBeOk` is set to false.
   The checkboxes can be used to mark some findings as 'accepted' without triggering a model checking error for those not marked.
 
+### Changed
+
+- The search tool now uses a different icon, so that it doesn't use the same one as the "usages" tool.
+
 ## com.mbeddr.mpsutil.actionsfilter
 
 ### Fixes
