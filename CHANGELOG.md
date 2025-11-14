@@ -21,6 +21,14 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 - Assessment now has an `alwaysShowCheckboxes` property to show checkboxes for each result even if `mustBeOk` is set to false.
   The checkboxes can be used to mark some findings as 'accepted' without triggering a model checking error for those not marked.
 
+## com.mbeddr.mpsutil.actionsfilter
+
+### Fixes
+
+- The language was refactored to not need the IntelliJ plugin.
+- Breaking: Custom profiles are now correctly set on MPS startup. Because the format of the saved profiles changed, previous custom profiles must be recreated.
+- Breaking: p´Predefined action profiles also have to be regenerated and recompiled due to changed runtime API.
+
 # October 2025
 
 ## com.mbeddr.core.base
