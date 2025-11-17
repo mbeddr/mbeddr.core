@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="zhzw" ref="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)" />
-    <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(MPS.ThirdParty/)" />
+    <import index="i4mf" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.core(MPS.IDEA.Modules/)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
