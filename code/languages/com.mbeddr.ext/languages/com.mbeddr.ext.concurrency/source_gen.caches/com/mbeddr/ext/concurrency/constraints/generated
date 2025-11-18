@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="6fz1kw3ash4t12flr9kmzy39odlcmqs">
+  <files names="AtomicStatement_Constraints.java:AwaitStatement_Constraints.java:ConcurrentQueueType_Constraints.java:ConcurrentQueueValExpr_Constraints.java:ConstraintsAspectDescriptor.java:GlobalVarAccessSpecifier_Constraints.java:ITaskContextTarget_Constraints.java:ITaskSpecific_Constraints.java:ResourceAccessSpecifier_Constraints.java:SchedSpecRef_Constraints.java:SignalStatement_Constraints.java:SingleTaskSchedulingConstraint_Constraints.java:StartScheduleStatement_Constraints.java:TaskContextExpr_Constraints.java:TaskReference_Constraints.java:TaskVarRef_Constraints.java" />
+</product>
+

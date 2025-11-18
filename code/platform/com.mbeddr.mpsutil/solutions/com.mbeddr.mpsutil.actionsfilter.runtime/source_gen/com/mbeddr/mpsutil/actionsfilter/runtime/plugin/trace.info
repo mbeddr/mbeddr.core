@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)/3749906162948788086">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="3749906162948788086" at="12,0,13,0" concept="2" trace="myId" />
+      <node id="3749906162948788086" at="18,27,19,16" concept="4" />
+      <node id="3749906162948788086" at="14,0,16,0" concept="0" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="3749906162948788086" at="17,0,21,0" concept="3" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3749906162948788086" at="22,0,26,0" concept="3" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3749906162948788086" at="14,38,14,38" />
+      <scope id="3749906162948788086" at="18,27,19,16" />
+      <scope id="3749906162948788086" at="23,66,24,49" />
+      <scope id="3749906162948788086" at="14,0,16,0" />
+      <scope id="3749906162948788086" at="17,0,21,0" />
+      <scope id="3749906162948788086" at="22,0,26,0">
+        <var name="parts" id="3749906162948788086" />
+      </scope>
+      <unit id="3749906162948788086" at="11,0,27,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)/3749906162948789413">
+    <file name="ActionsFilter_AppPluginPart.java">
+      <node id="3749906162948811511" at="11,0,12,0" concept="2" trace="configurable" />
+      <node id="3749906162948791719" at="15,22,16,144" concept="1" />
+      <node id="3749906162948828840" at="19,25,20,100" concept="1" />
+      <node id="3749906162948789413" at="12,0,14,0" concept="0" trace="ActionsFilter_AppPluginPart#()V" />
+      <node id="3749906162948789413" at="14,0,18,0" concept="3" trace="init#()V" />
+      <node id="3749906162948789413" at="18,0,22,0" concept="3" trace="dispose#()V" />
+      <scope id="3749906162948789413" at="12,40,12,40" />
+      <scope id="3749906162948790741" at="15,22,16,144" />
+      <scope id="3749906162948823839" at="19,25,20,100" />
+      <scope id="3749906162948789413" at="12,0,14,0" />
+      <scope id="3749906162948789413" at="14,0,18,0" />
+      <scope id="3749906162948789413" at="18,0,22,0" />
+      <unit id="3749906162948789413" at="10,0,23,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.ActionsFilter_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="3749906162948789413" at="23,66,24,49" concept="1" />
+    </file>
+  </root>
+</debug-info>
+

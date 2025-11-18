@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-5m5a1tjkgxb3uc2fwno9pibl3rlcpbk">
+  <files names="TypesystemDescriptor.java:check_AssignmentWithRegister_NonTypesystemRule.java:check_DirectRegisterAccess_NonTypesystemRule.java:check_HalfRegRefExpr_NonTypesystemRule.java:check_Register_NonTypesystemRule.java:check_StructuredRegister_NonTypesystemRule.java:enableLowHighAccess_QuickFix.java:typeof_HalfRegExpr_InferenceRule.java:typeof_ISRCallExpression_InferenceRule.java:typeof_Register16_InferenceRule.java:typeof_Register32_InferenceRule.java:typeof_Register8_InferenceRule.java:typeof_RegisterRefExpr_InferenceRule.java:typeof_RegisterValueExpression_InferenceRule.java" />
+</product>
+

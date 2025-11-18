@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:d5b414a7-c846-4113-8df9-063c89c407de(com.mbeddr.core.tests.build.build)/5920472724568125822">
+    <file name="com.mbeddr.core.aLibrary.build.xml">
+      <unit id="5920472724568125822" at="1,0,478,10" name="com.mbeddr.core.tests.build.build.com$mbeddr$core$aLibrary$build" />
+    </file>
+  </root>
+  <root nodeRef="r:d5b414a7-c846-4113-8df9-063c89c407de(com.mbeddr.core.tests.build.build)/8334796989975356743">
+    <file name="com.mbeddr.core.ex-tests.build.xml">
+      <unit id="8334796989975356743" at="1,0,535,10" name="com.mbeddr.core.tests.build.build.com$mbeddr$core$ex-tests$build" />
+    </file>
+  </root>
+  <root nodeRef="r:d5b414a7-c846-4113-8df9-063c89c407de(com.mbeddr.core.tests.build.build)/8334796989975357052">
+    <file name="com.mbeddr.core.ts-tests.build.xml">
+      <unit id="8334796989975357052" at="1,0,1731,10" name="com.mbeddr.core.tests.build.build.com$mbeddr$core$ts-tests$build" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root nodeRef="r:4261d3cd-fb09-4744-93d4-9c4e98dc94fc(com.mbeddr.ext.components.concurrency.util)/8610007178376583745">
+    <file name="ComponentConcurrencyUtil.java">
+      <node id="2678242487724722214" at="27,72,28,70" concept="4" />
+      <node id="2678242487724732521" at="29,55,30,138" concept="9" />
+      <node id="7002989686230773886" at="32,59,33,91" concept="4" />
+      <node id="7002989686230773895" at="33,91,34,27" concept="4" />
+      <node id="6955622946955565147" at="35,62,36,163" concept="1" />
+      <node id="6955622946955562619" at="37,30,38,25" concept="5" />
+      <node id="6955622946955569309" at="40,7,41,21" concept="5" />
+      <node id="6955622946955504916" at="42,12,43,54" concept="5" />
+      <node id="6955622946955496909" at="44,5,45,0" concept="6" />
+      <node id="2678242487724691648" at="49,89,50,608" concept="5" />
+      <node id="2678242487727717653" at="55,79,56,611" concept="5" />
+      <node id="8610007178378935341" at="59,91,60,455" concept="5" />
+      <node id="4185528509083546516" at="63,58,64,20" concept="4" />
+      <node id="4185528509083546520" at="64,20,65,132" concept="4" />
+      <node id="4185528509083569680" at="67,78,68,16" concept="1" />
+      <node id="4185528509083546553" at="68,16,69,18" concept="5" />
+      <node id="4185528509083546563" at="70,133,71,139" concept="1" />
+      <node id="4185528509083546571" at="71,139,72,18" concept="5" />
+      <node id="4185528509083546580" at="74,5,75,14" concept="5" />
+      <node id="7002989686229137275" at="78,66,79,662" concept="5" />
+      <node id="8610007178376583745" at="83,0,84,0" concept="7" trace="name$MnvL" />
+      <node id="8610007178376583745" at="87,0,88,0" concept="7" trace="component$ikVC" />
+      <node id="8610007178376583745" at="88,0,89,0" concept="7" trace="contents$E4B8" />
+      <node id="8610007178376583745" at="89,0,90,0" concept="7" trace="instanceRef$1B_2" />
+      <node id="8610007178376583745" at="90,0,91,0" concept="7" trace="runnable$vLSf" />
+      <node id="8610007178376583745" at="91,0,92,0" concept="7" trace="trigger$4EcB" />
+      <node id="8610007178376583745" at="95,0,96,0" concept="7" trace="CompositeComponent$c8" />
+      <node id="8610007178376583745" at="96,0,97,0" concept="7" trace="IVisibleElementProvider$$O" />
+      <node id="8610007178376583745" at="97,0,98,0" concept="7" trace="AbstractInstanceConfiguration$QD" />
+      <node id="8610007178376583745" at="98,0,99,0" concept="7" trace="ComponentInstance$zN" />
+      <node id="8610007178376583745" at="99,0,100,0" concept="7" trace="ComponentInstanceRunnableCall$kj" />
+      <node id="6955622946955503580" at="42,10,44,5" concept="0" />
+      <node id="2678242487724725433" at="28,70,31,5" concept="3" />
+      <node id="7002989686230773904" at="36,163,39,9" concept="3" />
+      <node id="2678242487724719713" at="49,0,52,0" concept="8" trace="findComponentInstances#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="2678242487727742726" at="55,0,58,0" concept="8" trace="findComponentInstance#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8610007178378935165" at="59,0,62,0" concept="8" trace="getCalledRunnablesWithoutInterface#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="7002989686229137273" at="78,0,81,0" concept="8" trace="getAllCCInstances#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="7002989686230773892" at="34,27,40,7" concept="2" />
+      <node id="4185528509083546532" at="66,57,73,7" concept="3" />
+      <node id="4185528509083546529" at="65,132,74,5" concept="2" />
+      <node id="6955622946955497555" at="31,5,44,5" concept="3" />
+      <node id="7002989686229162629" at="63,0,77,0" concept="8" trace="findCI#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8610007178376686774" at="27,0,47,0" concept="8" trace="findComponentInstance#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2678242487724725435" at="29,55,30,138" />
+      <scope id="7002989686230773905" at="37,30,38,25" />
+      <scope id="6955622946955503581" at="42,12,43,54" />
+      <scope id="2678242487724691181" at="49,89,50,608" />
+      <scope id="2678242487727717108" at="55,79,56,611" />
+      <scope id="8610007178378935019" at="59,91,60,455" />
+      <scope id="7002989686229137274" at="78,66,79,662" />
+      <scope id="4185528509083546533" at="67,78,69,18" />
+      <scope id="4185528509083546562" at="70,133,72,18" />
+      <scope id="2678242487724719713" at="49,0,52,0">
+        <var name="context" id="2678242487724691473" />
+        <var name="type" id="2678242487724691475" />
+      </scope>
+      <scope id="2678242487727742726" at="55,0,58,0">
+        <var name="context" id="2678242487727717525" />
+        <var name="name" id="2678242487727717546" />
+      </scope>
+      <scope id="8610007178378935165" at="59,0,62,0">
+        <var name="component" id="8610007178378935299" />
+      </scope>
+      <scope id="7002989686229137273" at="78,0,81,0">
+        <var name="context" id="7002989686229137311" />
+      </scope>
+      <scope id="7002989686230773894" at="35,62,39,9" />
+      <scope id="7002989686230773892" at="34,27,40,7">
+        <var name="it" id="7002989686230773893" />
+      </scope>
+      <scope id="4185528509083546531" at="66,57,73,7" />
+      <scope id="6955622946955497557" at="32,59,41,21">
+        <var name="allCCInstances" id="7002989686230773887" />
+        <var name="innerCI" id="7002989686230773896" />
+      </scope>
+      <scope id="4185528509083546529" at="65,132,74,5">
+        <var name="it" id="4185528509083546530" />
+      </scope>
+      <scope id="4185528509083546515" at="63,58,75,14">
+        <var name="ci" id="4185528509083546517" />
+        <var name="descendants" id="4185528509083546521" />
+      </scope>
+      <scope id="7002989686229162629" at="63,0,77,0">
+        <var name="actualComp" id="4185528509083557542" />
+        <var name="cc" id="4185528509083546511" />
+      </scope>
+      <scope id="8610007178376583783" at="27,72,45,0">
+        <var name="instances" id="2678242487724722215" />
+      </scope>
+      <scope id="8610007178376686774" at="27,0,47,0">
+        <var name="context" id="8610007178376583819" />
+        <var name="type" id="8610007178376583839" />
+      </scope>
+      <unit id="8610007178376583745" at="82,0,85,0" name="com.mbeddr.ext.components.concurrency.util.ComponentConcurrencyUtil$PROPS" />
+      <unit id="8610007178376583745" at="86,0,93,0" name="com.mbeddr.ext.components.concurrency.util.ComponentConcurrencyUtil$LINKS" />
+      <unit id="8610007178376583745" at="94,0,101,0" name="com.mbeddr.ext.components.concurrency.util.ComponentConcurrencyUtil$CONCEPTS" />
+      <unit id="8610007178376583745" at="25,0,102,0" name="com.mbeddr.ext.components.concurrency.util.ComponentConcurrencyUtil" />
+    </file>
+  </root>
+</debug-info>
+

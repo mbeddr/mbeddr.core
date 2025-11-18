@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,40,0" name="com.mbeddr.ext.math.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:22789568-56b5-473d-8bb8-6af2690ab8a7(com.mbeddr.ext.math.dataFlow)/437076543542741089">
+    <file name="AbsExpression_DataFlow.java">
+      <node id="437076543542744144" at="13,60,14,110" concept="0" />
+      <node id="437076543542741089" at="18,0,19,0" concept="2" trace="expression$bLXU" />
+      <node id="437076543542741089" at="13,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="437076543542741091" at="13,60,14,110" />
+      <scope id="437076543542741089" at="13,0,16,0">
+        <var name="_context" id="437076543542741089" />
+      </scope>
+      <unit id="437076543542741089" at="17,0,20,0" name="com.mbeddr.ext.math.dataFlow.AbsExpression_DataFlow$LINKS" />
+      <unit id="437076543542741089" at="12,0,21,0" name="com.mbeddr.ext.math.dataFlow.AbsExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:22789568-56b5-473d-8bb8-6af2690ab8a7(com.mbeddr.ext.math.dataFlow)/6821198149550076061">
+    <file name="FractionExpression_DataFlow.java">
+      <node id="6821198149550076186" at="13,60,14,104" concept="0" />
+      <node id="6821198149550081022" at="14,104,15,105" concept="0" />
+      <node id="6821198149550076061" at="19,0,20,0" concept="2" trace="left$RMpx" />
+      <node id="6821198149550076061" at="20,0,21,0" concept="2" trace="right$UBZB" />
+      <node id="6821198149550076061" at="13,0,17,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6821198149550076063" at="13,60,15,105" />
+      <scope id="6821198149550076061" at="13,0,17,0">
+        <var name="_context" id="6821198149550076061" />
+      </scope>
+      <unit id="6821198149550076061" at="18,0,22,0" name="com.mbeddr.ext.math.dataFlow.FractionExpression_DataFlow$LINKS" />
+      <unit id="6821198149550076061" at="12,0,23,0" name="com.mbeddr.ext.math.dataFlow.FractionExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:22789568-56b5-473d-8bb8-6af2690ab8a7(com.mbeddr.ext.math.dataFlow)/6821198149550312394">
+    <file name="LogarithmExpression_DataFlow.java">
+      <node id="6821198149550312415" at="13,60,14,104" concept="0" />
+      <node id="6821198149550315564" at="14,104,15,105" concept="0" />
+      <node id="6821198149550312394" at="19,0,20,0" concept="2" trace="base$rS1w" />
+      <node id="6821198149550312394" at="20,0,21,0" concept="2" trace="logOf$rdkE" />
+      <node id="6821198149550312394" at="13,0,17,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6821198149550312396" at="13,60,15,105" />
+      <scope id="6821198149550312394" at="13,0,17,0">
+        <var name="_context" id="6821198149550312394" />
+      </scope>
+      <unit id="6821198149550312394" at="18,0,22,0" name="com.mbeddr.ext.math.dataFlow.LogarithmExpression_DataFlow$LINKS" />
+      <unit id="6821198149550312394" at="12,0,23,0" name="com.mbeddr.ext.math.dataFlow.LogarithmExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:22789568-56b5-473d-8bb8-6af2690ab8a7(com.mbeddr.ext.math.dataFlow)/6821198149550320384">
+    <file name="MathLoopExpression_DataFlow.java">
+      <node id="6821198149550320405" at="13,60,14,107" concept="0" />
+      <node id="6821198149550324098" at="14,107,15,105" concept="0" />
+      <node id="6821198149550327916" at="15,105,16,105" concept="0" />
+      <node id="6821198149550333730" at="16,105,17,104" concept="0" />
+      <node id="6821198149550320384" at="21,0,22,0" concept="2" trace="varType$zsEZ" />
+      <node id="6821198149550320384" at="22,0,23,0" concept="2" trace="lower$bpVj" />
+      <node id="6821198149550320384" at="23,0,24,0" concept="2" trace="upper$k9sH" />
+      <node id="6821198149550320384" at="24,0,25,0" concept="2" trace="body$kg19" />
+      <node id="6821198149550320384" at="13,0,19,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6821198149550320386" at="13,60,17,104" />
+      <scope id="6821198149550320384" at="13,0,19,0">
+        <var name="_context" id="6821198149550320384" />
+      </scope>
+      <unit id="6821198149550320384" at="20,0,26,0" name="com.mbeddr.ext.math.dataFlow.MathLoopExpression_DataFlow$LINKS" />
+      <unit id="6821198149550320384" at="12,0,27,0" name="com.mbeddr.ext.math.dataFlow.MathLoopExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:22789568-56b5-473d-8bb8-6af2690ab8a7(com.mbeddr.ext.math.dataFlow)/6821198149550341769">
+    <file name="PowerExpression_DataFlow.java">
+      <node id="6821198149550341790" at="13,60,14,104" concept="0" />
+      <node id="6821198149550344939" at="14,104,15,108" concept="0" />
+      <node id="6821198149550341769" at="19,0,20,0" concept="2" trace="base$xJpq" />
+      <node id="6821198149550341769" at="20,0,21,0" concept="2" trace="exponent$$$Kv" />
+      <node id="6821198149550341769" at="13,0,17,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6821198149550341771" at="13,60,15,108" />
+      <scope id="6821198149550341769" at="13,0,17,0">
+        <var name="_context" id="6821198149550341769" />
+      </scope>
+      <unit id="6821198149550341769" at="18,0,22,0" name="com.mbeddr.ext.math.dataFlow.PowerExpression_DataFlow$LINKS" />
+      <unit id="6821198149550341769" at="12,0,23,0" name="com.mbeddr.ext.math.dataFlow.PowerExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:22789568-56b5-473d-8bb8-6af2690ab8a7(com.mbeddr.ext.math.dataFlow)/6821198149550349759">
+    <file name="SqrtExpression_DataFlow.java">
+      <node id="6821198149550349780" at="13,60,14,110" concept="0" />
+      <node id="6821198149550349759" at="18,0,19,0" concept="2" trace="expression$7cOe" />
+      <node id="6821198149550349759" at="13,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6821198149550349761" at="13,60,14,110" />
+      <scope id="6821198149550349759" at="13,0,16,0">
+        <var name="_context" id="6821198149550349759" />
+      </scope>
+      <unit id="6821198149550349759" at="17,0,20,0" name="com.mbeddr.ext.math.dataFlow.SqrtExpression_DataFlow$LINKS" />
+      <unit id="6821198149550349759" at="12,0,21,0" name="com.mbeddr.ext.math.dataFlow.SqrtExpression_DataFlow" />
+    </file>
+  </root>
+</debug-info>
+

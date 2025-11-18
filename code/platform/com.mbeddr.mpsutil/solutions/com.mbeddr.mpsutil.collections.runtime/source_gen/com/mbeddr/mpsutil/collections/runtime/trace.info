@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1178893518978:jetbrains.mps.baseLanguage.structure.ThisConstructorInvocation" />
+  <root nodeRef="r:240d60dc-7568-46d8-a080-a0889db7fd44(com.mbeddr.mpsutil.collections.runtime)/3362415946219380976">
+    <file name="NodeHashSet.java">
+      <node id="3362415946219413347" at="9,24,10,33" concept="10" />
+      <node id="3362415946219543910" at="13,32,14,39" concept="10" />
+      <node id="3362415946219413337" at="9,0,12,0" concept="0" trace="NodeHashSet#()V" />
+      <node id="3362415946219526132" at="13,0,16,0" concept="0" trace="NodeHashSet#(Ljava/util/Set;)V" />
+      <scope id="3362415946219413346" at="9,24,10,33" />
+      <scope id="3362415946219526139" at="13,32,14,39" />
+      <scope id="3362415946219413337" at="9,0,12,0" />
+      <scope id="3362415946219526132" at="13,0,16,0">
+        <var name="copy" id="3362415946219526134" />
+      </scope>
+      <unit id="3362415946219380976" at="8,0,18,0" name="com.mbeddr.mpsutil.collections.runtime.NodeHashSet" />
+    </file>
+  </root>
+  <root nodeRef="r:240d60dc-7568-46d8-a080-a0889db7fd44(com.mbeddr.mpsutil.collections.runtime)/6355510489490361370">
+    <file name="EquivalenceHashSet.java">
+      <node id="6355510489491616952" at="18,0,19,0" concept="2" trace="internalSet" />
+      <node id="6355510489491616958" at="19,0,20,0" concept="2" trace="equivalence" />
+      <node id="8011842826663759376" at="21,31,22,54" concept="11" />
+      <node id="8011842826663546600" at="25,57,26,60" concept="11" />
+      <node id="6355510489491616969" at="29,66,30,27" concept="1" />
+      <node id="6355510489491616975" at="30,27,31,35" concept="1" />
+      <node id="6355510489491616986" at="34,50,35,37" concept="7" />
+      <node id="6355510489491616997" at="39,33,40,42" concept="7" />
+      <node id="6355510489491617011" at="44,59,45,29" concept="6" />
+      <node id="6355510489491617022" at="47,25,48,24" concept="1" />
+      <node id="6355510489491617030" at="50,5,51,20" concept="7" />
+      <node id="3817904171511901313" at="55,21,56,30" concept="7" />
+      <node id="3817904171511881684" at="60,28,61,33" concept="7" />
+      <node id="3817904171511861608" at="65,37,66,47" concept="7" />
+      <node id="6355510489492268916" at="70,33,71,138" concept="7" />
+      <node id="3817904171511839343" at="75,29,76,85" concept="7" />
+      <node id="3817904171512288736" at="82,45,83,27" concept="7" />
+      <node id="3817904171511784530" at="89,35,90,45" concept="7" />
+      <node id="3817904171511803100" at="94,47,95,38" concept="7" />
+      <node id="6355510489491617115" at="99,45,100,36" concept="7" />
+      <node id="3817904171511821223" at="104,45,105,36" concept="7" />
+      <node id="6355510489491617134" at="109,23,110,24" concept="1" />
+      <node id="8011842826663731117" at="21,0,24,0" concept="0" trace="EquivalenceHashSet#()V" />
+      <node id="8011842826663441650" at="25,0,28,0" concept="0" trace="EquivalenceHashSet#(Lcom/google/common/base/Equivalence;)V" />
+      <node id="6355510489491616982" at="34,0,37,0" concept="5" trace="wrap#(null)Lcom/google/common/base/Equivalence/Wrapper;" />
+      <node id="6355510489491617017" at="46,32,49,7" concept="4" />
+      <node id="3817904171512148038" at="82,0,85,0" concept="5" trace="apply#(Lcom/google/common/base/Equivalence/Wrapper;)null" />
+      <node id="6355510489491616963" at="29,0,33,0" concept="0" trace="EquivalenceHashSet#(Ljava/util/Set;Lcom/google/common/base/Equivalence;)V" />
+      <node id="6355510489491616992" at="38,0,42,0" concept="5" trace="add#(null)Z" />
+      <node id="6355510489491617034" at="54,0,58,0" concept="5" trace="size#()I" />
+      <node id="6355510489491617041" at="59,0,63,0" concept="5" trace="isEmpty#()Z" />
+      <node id="6355510489491617048" at="64,0,68,0" concept="5" trace="contains#(Ljava/lang/Object;)Z" />
+      <node id="6355510489491617058" at="69,0,73,0" concept="5" trace="iterator#()Ljava/util/Iterator;" />
+      <node id="6355510489491617067" at="74,0,78,0" concept="5" trace="toArray#()[Ljava/lang/Object;" />
+      <node id="6355510489491617088" at="88,0,92,0" concept="5" trace="remove#(Ljava/lang/Object;)Z" />
+      <node id="6355510489491617098" at="93,0,97,0" concept="5" trace="containsAll#(Ljava/util/Collection;)Z" />
+      <node id="6355510489491617109" at="98,0,102,0" concept="5" trace="removeAll#(Ljava/util/Collection;)Z" />
+      <node id="6355510489491617120" at="103,0,107,0" concept="5" trace="retainAll#(Ljava/util/Collection;)Z" />
+      <node id="6355510489491617131" at="108,0,112,0" concept="5" trace="clear#()V" />
+      <node id="6355510489491617014" at="45,29,50,5" concept="3" />
+      <node id="3817904171511416890" at="80,33,85,47" concept="7" />
+      <node id="6355510489491617075" at="79,0,87,0" concept="5" trace="toArray#([null)[null" />
+      <node id="6355510489491617003" at="43,0,53,0" concept="5" trace="addAll#(Ljava/util/Collection;)Z" />
+      <scope id="8011842826663731120" at="21,31,22,54" />
+      <scope id="8011842826663441657" at="25,57,26,60" />
+      <scope id="6355510489491616985" at="34,50,35,37" />
+      <scope id="6355510489491616996" at="39,33,40,42" />
+      <scope id="6355510489491617021" at="47,25,48,24" />
+      <scope id="6355510489491617036" at="55,21,56,30" />
+      <scope id="6355510489491617043" at="60,28,61,33" />
+      <scope id="6355510489491617052" at="65,37,66,47" />
+      <scope id="6355510489491617060" at="70,33,71,138" />
+      <scope id="6355510489491617069" at="75,29,76,85" />
+      <scope id="3817904171512148039" at="82,45,83,27" />
+      <scope id="6355510489491617092" at="89,35,90,45" />
+      <scope id="6355510489491617103" at="94,47,95,38" />
+      <scope id="6355510489491617114" at="99,45,100,36" />
+      <scope id="6355510489491617125" at="104,45,105,36" />
+      <scope id="6355510489491617133" at="109,23,110,24" />
+      <scope id="6355510489491616968" at="29,66,31,35" />
+      <scope id="8011842826663731117" at="21,0,24,0" />
+      <scope id="8011842826663441650" at="25,0,28,0">
+        <var name="equivalence" id="8011842826663595241" />
+      </scope>
+      <scope id="6355510489491616982" at="34,0,37,0">
+        <var name="element" id="6355510489491616983" />
+      </scope>
+      <scope id="6355510489491617016" at="46,32,49,7" />
+      <scope id="3817904171512148038" at="82,0,85,0">
+        <var name="a" id="3817904171512148038" />
+      </scope>
+      <scope id="6355510489491616963" at="29,0,33,0">
+        <var name="equivalence" id="6355510489491616965" />
+        <var name="set" id="7073751248901004689" />
+      </scope>
+      <scope id="6355510489491616992" at="38,0,42,0">
+        <var name="element" id="6355510489491616994" />
+      </scope>
+      <scope id="6355510489491617034" at="54,0,58,0" />
+      <scope id="6355510489491617041" at="59,0,63,0" />
+      <scope id="6355510489491617048" at="64,0,68,0">
+        <var name="o" id="6355510489491617050" />
+      </scope>
+      <scope id="6355510489491617058" at="69,0,73,0" />
+      <scope id="6355510489491617067" at="74,0,78,0" />
+      <scope id="6355510489491617088" at="88,0,92,0">
+        <var name="o" id="6355510489491617090" />
+      </scope>
+      <scope id="6355510489491617098" at="93,0,97,0">
+        <var name="c" id="6355510489491617100" />
+      </scope>
+      <scope id="6355510489491617109" at="98,0,102,0">
+        <var name="c" id="6355510489491617111" />
+      </scope>
+      <scope id="6355510489491617120" at="103,0,107,0">
+        <var name="c" id="6355510489491617122" />
+      </scope>
+      <scope id="6355510489491617131" at="108,0,112,0" />
+      <scope id="6355510489491617014" at="45,29,50,5">
+        <var name="element" id="6355510489491617026" />
+      </scope>
+      <scope id="6355510489491617081" at="80,33,85,47" />
+      <scope id="6355510489491617009" at="44,59,51,20">
+        <var name="modified" id="6355510489491617010" />
+      </scope>
+      <scope id="6355510489491617075" at="79,0,87,0">
+        <var name="a" id="6355510489491617078" />
+      </scope>
+      <scope id="6355510489491617003" at="43,0,53,0">
+        <var name="elements" id="6355510489491617005" />
+      </scope>
+      <unit id="3817904171512148038" at="81,40,85,5" name="com.mbeddr.mpsutil.collections.runtime.EquivalenceHashSet$1" />
+      <unit id="6355510489490361370" at="17,0,113,0" name="com.mbeddr.mpsutil.collections.runtime.EquivalenceHashSet" />
+    </file>
+  </root>
+  <root nodeRef="r:240d60dc-7568-46d8-a080-a0889db7fd44(com.mbeddr.mpsutil.collections.runtime)/7073751248896175881">
+    <file name="NodeEquivalence.java">
+      <node id="1213972344439958457" at="14,52,15,61" concept="7" />
+      <node id="7470771634848614286" at="19,36,20,31" concept="7" />
+      <node id="7470771634848574846" at="23,62,24,23" concept="6" />
+      <node id="7470771634848574850" at="24,23,25,45" concept="6" />
+      <node id="5464682487445609189" at="26,54,27,45" concept="1" />
+      <node id="7470771634848574857" at="27,45,28,64" concept="1" />
+      <node id="5464682487445635552" at="30,45,31,63" concept="1" />
+      <node id="7470771634848574874" at="31,63,32,45" concept="1" />
+      <node id="7470771634848631448" at="33,5,34,0" concept="8" />
+      <node id="5464682487445673472" at="36,58,37,58" concept="1" />
+      <node id="7470771634848574896" at="38,48,39,69" concept="1" />
+      <node id="7470771634848574909" at="42,5,43,16" concept="7" />
+      <node id="7470771634848574890" at="37,58,40,9" concept="4" />
+      <node id="7073751248896175885" at="13,0,17,0" concept="5" trace="doEquivalent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7073751248896175948" at="18,0,22,0" concept="5" trace="doHash#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="7470771634848574854" at="25,45,29,5" concept="3" />
+      <node id="7470771634848574871" at="29,5,33,5" concept="3" />
+      <node id="7470771634848574887" at="35,30,41,7" concept="3" />
+      <node id="7470771634848633700" at="34,0,42,5" concept="4" />
+      <node id="7470771634848577961" at="23,0,45,0" concept="5" trace="doHash#(Lorg/jetbrains/mps/openapi/model/SNode;Z)I" />
+      <scope id="7073751248896175891" at="14,52,15,61" />
+      <scope id="7073751248896175952" at="19,36,20,31" />
+      <scope id="7470771634848574895" at="38,48,39,69" />
+      <scope id="7470771634848574856" at="26,54,28,64" />
+      <scope id="7470771634848574873" at="30,45,32,45" />
+      <scope id="7073751248896175885" at="13,0,17,0">
+        <var name="a" id="7073751248896175887" />
+        <var name="b" id="7073751248896175889" />
+      </scope>
+      <scope id="7073751248896175948" at="18,0,22,0">
+        <var name="node" id="7073751248896175950" />
+      </scope>
+      <scope id="7470771634848574854" at="25,45,29,5">
+        <var name="property" id="7470771634848574867" />
+      </scope>
+      <scope id="7470771634848574871" at="29,5,33,5">
+        <var name="child" id="7470771634848574883" />
+      </scope>
+      <scope id="7470771634848574889" at="36,58,40,9" />
+      <scope id="7470771634848574887" at="35,30,41,7">
+        <var name="reference" id="7470771634848574905" />
+      </scope>
+      <scope id="7470771634848633702" at="35,30,41,7" />
+      <scope id="7470771634848577964" at="23,62,43,16">
+        <var name="hash" id="7470771634848574849" />
+        <var name="snode" id="7470771634848574845" />
+      </scope>
+      <scope id="7470771634848577961" at="23,0,45,0">
+        <var name="ignoreReferences" id="7470771634848581878" />
+        <var name="node" id="7470771634848579444" />
+      </scope>
+      <unit id="7073751248896175881" at="11,0,46,0" name="com.mbeddr.mpsutil.collections.runtime.NodeEquivalence" />
+    </file>
+  </root>
+  <root nodeRef="r:240d60dc-7568-46d8-a080-a0889db7fd44(com.mbeddr.mpsutil.collections.runtime)/8011842826663853499">
+    <file name="EqualsEquivalence.java">
+      <node id="8011842826663853503" at="9,0,10,0" concept="9" trace="INSTANCE" />
+      <node id="8011842826663853517" at="11,44,12,23" concept="7" />
+      <node id="8011842826663853527" at="15,34,16,24" concept="7" />
+      <node id="8011842826663853506" at="19,0,20,0" concept="9" trace="serialVersionUID" />
+      <node id="8011842826663853510" at="10,0,14,0" concept="5" trace="doEquivalent#(nullnull)Z" />
+      <node id="8011842826663853522" at="14,0,18,0" concept="5" trace="doHash#(Ljava/lang/Object;)I" />
+      <scope id="8011842826663853516" at="11,44,12,23" />
+      <scope id="8011842826663853526" at="15,34,16,24" />
+      <scope id="8011842826663853510" at="10,0,14,0">
+        <var name="a" id="8011842826663853512" />
+        <var name="b" id="8011842826663853514" />
+      </scope>
+      <scope id="8011842826663853522" at="14,0,18,0">
+        <var name="o" id="8011842826663853524" />
+      </scope>
+      <unit id="8011842826663853499" at="8,0,21,0" name="com.mbeddr.mpsutil.collections.runtime.EqualsEquivalence" />
+    </file>
+  </root>
+</debug-info>
+

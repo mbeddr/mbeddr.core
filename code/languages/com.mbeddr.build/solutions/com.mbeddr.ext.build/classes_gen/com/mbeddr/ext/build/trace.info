@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:03dd57e2-3edc-4361-a061-60ea71ecad78(com.mbeddr.ext.build)/6247780594427554490">
+    <file name="com.mbeddr.ext.tests.xml">
+      <unit id="6247780594427554490" at="1,0,1830,10" name="com.mbeddr.ext.build.com$mbeddr$ext$tests" />
+    </file>
+  </root>
+  <root nodeRef="r:03dd57e2-3edc-4361-a061-60ea71ecad78(com.mbeddr.ext.build)/9141467591178606009">
+    <file name="com.mbeddr.ts.tests.xml">
+      <unit id="9141467591178606009" at="1,0,1969,10" name="com.mbeddr.ext.build.com$mbeddr$ts$tests" />
+    </file>
+  </root>
+</debug-info>
+

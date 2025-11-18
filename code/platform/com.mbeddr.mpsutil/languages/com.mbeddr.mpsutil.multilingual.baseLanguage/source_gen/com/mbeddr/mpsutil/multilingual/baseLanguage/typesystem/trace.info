@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="10,0,30,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)/2510545900188478799">
+    <file name="TypesystemDescriptor.java">
+      <node id="2510545900188478799" at="12,5,13,94" concept="8" />
+      <node id="2510545900188478799" at="13,94,14,47" concept="3" />
+      <node id="2510545900188478799" at="11,33,15,5" concept="0" />
+      <scope id="2510545900188478799" at="12,5,14,47">
+        <var name="inferenceRule" id="2510545900188478799" />
+      </scope>
+    </file>
+    <file name="typeof_MultilingualJavaString_InferenceRule.java">
+      <node id="2510545900188478801" at="20,5,21,64" concept="8" />
+      <node id="2510545900188478801" at="21,64,22,303" concept="8" />
+      <node id="2510545900188478801" at="22,303,23,555" concept="3" />
+      <node id="2510545900188478799" at="26,50,27,46" concept="9" />
+      <node id="2510545900188478799" at="29,68,30,102" concept="9" />
+      <node id="2510545900188478799" at="32,30,33,16" concept="9" />
+      <node id="2510545900188478799" at="37,0,38,0" concept="12" trace="MultilingualJavaString$5S" />
+      <node id="2510545900188478799" at="17,0,19,0" concept="1" trace="typeof_MultilingualJavaString_InferenceRule#()V" />
+      <node id="2510545900188478799" at="26,0,29,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2510545900188478799" at="29,0,32,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2510545900188478799" at="32,0,35,0" concept="7" trace="overrides#()Z" />
+      <node id="2510545900188478801" at="19,135,24,5" concept="0" />
+      <node id="2510545900188478799" at="19,0,26,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="2510545900188478799" at="17,56,17,56" />
+      <scope id="2510545900188478799" at="26,50,27,46" />
+      <scope id="2510545900188478799" at="29,68,30,102" />
+      <scope id="2510545900188478799" at="32,30,33,16" />
+      <scope id="2510545900188478799" at="17,0,19,0" />
+      <scope id="2510545900188478801" at="20,5,23,555">
+        <var name="_info_12389875345" id="2510545900188478801" />
+        <var name="_nodeToCheck_1029348928467" id="2510545900188478801" />
+      </scope>
+      <scope id="2510545900188478799" at="26,0,29,0" />
+      <scope id="2510545900188478799" at="29,0,32,0">
+        <var name="argument" id="2510545900188478799" />
+      </scope>
+      <scope id="2510545900188478799" at="32,0,35,0" />
+      <scope id="2510545900188478800" at="19,135,24,5" />
+      <scope id="2510545900188478799" at="19,0,26,0">
+        <var name="multilingualJavaString" id="2510545900188478799" />
+        <var name="status" id="2510545900188478799" />
+        <var name="typeCheckingContext" id="2510545900188478799" />
+      </scope>
+      <unit id="2510545900188478799" at="36,0,39,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.typeof_MultilingualJavaString_InferenceRule$CONCEPTS" />
+      <unit id="2510545900188478799" at="16,0,40,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.typeof_MultilingualJavaString_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)/2510545900188478810">
+    <file name="MultilingualJavaString_extends_java_lang_String_SubtypingRule.java">
+      <node id="2510545900188478812" at="21,143,22,104" concept="9" />
+      <node id="2510545900188478810" at="24,50,25,50" concept="9" />
+      <node id="2510545900188478810" at="27,68,28,102" concept="9" />
+      <node id="2510545900188478810" at="30,27,31,17" concept="9" />
+      <node id="2510545900188478816" at="33,62,34,30" concept="8" />
+      <node id="2510545900188478816" at="34,30,35,225" concept="8" />
+      <node id="2510545900188478816" at="35,225,36,34" concept="3" />
+      <node id="2510545900188478816" at="36,34,37,214" concept="3" />
+      <node id="2510545900188478816" at="37,214,38,24" concept="9" />
+      <node id="2510545900188478810" at="42,0,43,0" concept="12" trace="MultilingualJavaStringType$6Q" />
+      <node id="2510545900188478810" at="19,0,21,0" concept="1" trace="MultilingualJavaString_extends_java_lang_String_SubtypingRule#()V" />
+      <node id="2510545900188478810" at="21,0,24,0" concept="7" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
+      <node id="2510545900188478810" at="24,0,27,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2510545900188478810" at="27,0,30,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2510545900188478810" at="30,0,33,0" concept="7" trace="isWeak#()Z" />
+      <node id="2510545900188478816" at="33,0,40,0" concept="13" trace="_quotation_createNode_sl6yi5_a0a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2510545900188478810" at="19,74,19,74" />
+      <scope id="2510545900188478811" at="21,143,22,104" />
+      <scope id="2510545900188478810" at="24,50,25,50" />
+      <scope id="2510545900188478810" at="27,68,28,102" />
+      <scope id="2510545900188478810" at="30,27,31,17" />
+      <scope id="2510545900188478810" at="19,0,21,0" />
+      <scope id="2510545900188478810" at="21,0,24,0">
+        <var name="multilingualJavaStringType" id="2510545900188478810" />
+        <var name="status" id="2510545900188478810" />
+        <var name="typeCheckingContext" id="2510545900188478810" />
+      </scope>
+      <scope id="2510545900188478810" at="24,0,27,0" />
+      <scope id="2510545900188478810" at="27,0,30,0">
+        <var name="argument" id="2510545900188478810" />
+      </scope>
+      <scope id="2510545900188478810" at="30,0,33,0" />
+      <scope id="2510545900188478816" at="33,62,38,24">
+        <var name="nb" id="2510545900188478816" />
+        <var name="quotedNode_1" id="2510545900188478816" />
+      </scope>
+      <scope id="2510545900188478816" at="33,0,40,0" />
+      <unit id="2510545900188478810" at="41,0,44,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.MultilingualJavaString_extends_java_lang_String_SubtypingRule$CONCEPTS" />
+      <unit id="2510545900188478810" at="18,0,45,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.MultilingualJavaString_extends_java_lang_String_SubtypingRule" />
+    </file>
+    <file name="TypesystemDescriptor.java">
+      <node id="2510545900188478810" at="24,5,25,112" concept="8" />
+      <node id="2510545900188478810" at="25,112,26,47" concept="3" />
+      <node id="2510545900188478810" at="23,5,27,5" concept="0" />
+      <scope id="2510545900188478810" at="24,5,26,47">
+        <var name="subtypingRule" id="2510545900188478810" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)/9087294576176631434">
+    <file name="TypesystemDescriptor.java">
+      <node id="9087294576176631434" at="20,5,21,103" concept="8" />
+      <node id="9087294576176631434" at="21,103,22,55" concept="3" />
+      <node id="9087294576176631434" at="19,5,23,5" concept="0" />
+      <scope id="9087294576176631434" at="20,5,22,55">
+        <var name="nonTypesystemRule" id="9087294576176631434" />
+      </scope>
+    </file>
+    <file name="check_RichStringMessageKey_NonTypesystemRule.java">
+      <node id="7151873359526860064" at="29,133,30,0" concept="11" />
+      <node id="7151873359526949533" at="30,0,31,205" concept="8" />
+      <node id="7151873359526905083" at="31,205,32,146" concept="8" />
+      <node id="7151873359526860182" at="32,146,33,0" concept="11" />
+      <node id="9087294576176722065" at="33,0,34,0" concept="11" />
+      <node id="9087294576177881901" at="35,9,36,47" concept="8" />
+      <node id="7151873359526929698" at="37,43,38,105" concept="10" />
+      <node id="7151873359526926911" at="38,105,39,55" concept="8" />
+      <node id="9087294576176750451" at="41,11,42,70" concept="8" />
+      <node id="9087294576176750451" at="42,70,43,354" concept="8" />
+      <node id="7151873359526944164" at="48,15,49,74" concept="8" />
+      <node id="7151873359526944164" at="49,74,50,351" concept="8" />
+      <node id="9087294576177891030" at="57,5,58,0" concept="11" />
+      <node id="9087294576176631434" at="60,50,61,44" concept="9" />
+      <node id="9087294576176631434" at="63,68,64,102" concept="9" />
+      <node id="9087294576176631434" at="66,30,67,17" concept="9" />
+      <node id="9087294576176631434" at="71,0,72,0" concept="12" trace="richDefault$98lc" />
+      <node id="9087294576176631434" at="75,0,76,0" concept="12" trace="MultilingualInlineFormat$MK" />
+      <node id="9087294576176631434" at="76,0,77,0" concept="12" trace="RichStringMessageKey$ac" />
+      <node id="9087294576176631434" at="80,0,81,0" concept="12" trace="argumentIndex$euNt" />
+      <node id="9087294576176631434" at="27,0,29,0" concept="1" trace="check_RichStringMessageKey_NonTypesystemRule#()V" />
+      <node id="9087294576176631434" at="60,0,63,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9087294576176631434" at="63,0,66,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9087294576176631434" at="66,0,69,0" concept="7" trace="overrides#()Z" />
+      <node id="9087294576176750451" at="40,25,44,11" concept="0" />
+      <node id="7151873359526944164" at="47,84,51,15" concept="0" />
+      <node id="7151873359526966949" at="46,59,52,13" concept="6" />
+      <node id="7151873359526944160" at="45,31,53,11" concept="5" />
+      <node id="9087294576176748843" at="39,55,54,9" concept="6" />
+      <node id="9087294576176724348" at="36,47,55,7" concept="4" />
+      <node id="9087294576185769082" at="34,0,57,5" concept="14" />
+      <node id="9087294576176631434" at="29,0,60,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9087294576176631434" at="27,57,27,57" />
+      <scope id="9087294576185769087" at="56,40,56,40" />
+      <scope id="9087294576185769084" at="56,5,57,5">
+        <var name="e" id="9087294576185769085" />
+      </scope>
+      <scope id="9087294576176631434" at="60,50,61,44" />
+      <scope id="9087294576176631434" at="63,68,64,102" />
+      <scope id="9087294576176631434" at="66,30,67,17" />
+      <scope id="9087294576176631434" at="27,0,29,0" />
+      <scope id="9087294576176750451" at="41,11,43,354">
+        <var name="_reporter_2309309498" id="9087294576176750451" />
+        <var name="errorTarget" id="9087294576176750451" />
+      </scope>
+      <scope id="7151873359526944164" at="48,15,50,351">
+        <var name="_reporter_2309309498" id="7151873359526944164" />
+        <var name="errorTarget" id="7151873359526944164" />
+      </scope>
+      <scope id="9087294576176631434" at="60,0,63,0" />
+      <scope id="9087294576176631434" at="63,0,66,0">
+        <var name="argument" id="9087294576176631434" />
+      </scope>
+      <scope id="9087294576176631434" at="66,0,69,0" />
+      <scope id="9087294576176748846" at="40,25,44,11" />
+      <scope id="7151873359526966951" at="47,84,51,15" />
+      <scope id="7151873359526944163" at="46,59,52,13" />
+      <scope id="7151873359526944157" at="45,31,53,11" />
+      <scope id="7151873359526944160" at="45,31,53,11">
+        <var name="it" id="7151873359526944161" />
+      </scope>
+      <scope id="9087294576176724352" at="37,43,54,9">
+        <var name="count" id="7151873359526926912" />
+      </scope>
+      <scope id="9087294576176724348" at="36,47,55,7">
+        <var name="i" id="9087294576176724350" />
+      </scope>
+      <scope id="9087294576185769083" at="35,9,55,7">
+        <var name="maxIndex" id="9087294576177881902" />
+      </scope>
+      <scope id="9087294576176631435" at="29,133,58,0">
+        <var name="entries" id="7151873359526949534" />
+        <var name="indicies" id="7151873359526905084" />
+      </scope>
+      <scope id="9087294576176631434" at="29,0,60,0">
+        <var name="richStringMessageKey" id="9087294576176631434" />
+        <var name="status" id="9087294576176631434" />
+        <var name="typeCheckingContext" id="9087294576176631434" />
+      </scope>
+      <unit id="9087294576176631434" at="70,0,73,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_RichStringMessageKey_NonTypesystemRule$LINKS" />
+      <unit id="9087294576176631434" at="79,0,82,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_RichStringMessageKey_NonTypesystemRule$PROPS" />
+      <unit id="9087294576176631434" at="74,0,78,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_RichStringMessageKey_NonTypesystemRule$CONCEPTS" />
+      <unit id="9087294576176631434" at="26,0,83,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_RichStringMessageKey_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:b2834b64-265d-4877-941d-d9125f9bc1d6(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem)/9087294576179189853">
+    <file name="TypesystemDescriptor.java">
+      <node id="9087294576179189853" at="16,5,17,109" concept="8" />
+      <node id="9087294576179189853" at="17,109,18,55" concept="3" />
+      <node id="9087294576179189853" at="15,5,19,5" concept="0" />
+      <scope id="9087294576179189853" at="16,5,18,55">
+        <var name="nonTypesystemRule" id="9087294576179189853" />
+      </scope>
+    </file>
+    <file name="check_MultilingualJavaRichString_NonTypesystemRule.java">
+      <node id="9087294576179240743" at="32,139,33,316" concept="8" />
+      <node id="9087294576179311457" at="33,316,34,110" concept="8" />
+      <node id="9087294576179312050" at="34,110,35,0" concept="11" />
+      <node id="9087294576179370579" at="37,7,38,66" concept="8" />
+      <node id="9087294576179370579" at="38,66,39,588" concept="8" />
+      <node id="9087294576179312302" at="41,5,42,0" concept="11" />
+      <node id="9087294576185007558" at="44,129,45,17" concept="2" />
+      <node id="9087294576185007561" at="46,7,47,0" concept="11" />
+      <node id="9087294576185123166" at="47,0,48,107" concept="8" />
+      <node id="9087294576185124401" at="48,107,49,163" concept="8" />
+      <node id="9087294576185125428" at="49,163,50,0" concept="11" />
+      <node id="9087294576185129492" at="51,56,52,17" concept="2" />
+      <node id="9087294576185129495" at="53,7,54,0" concept="11" />
+      <node id="9087294576179481414" at="56,9,57,68" concept="8" />
+      <node id="9087294576179481414" at="57,68,58,534" concept="8" />
+      <node id="9087294576179189853" at="63,50,64,50" concept="9" />
+      <node id="9087294576179189853" at="66,68,67,102" concept="9" />
+      <node id="9087294576179189853" at="69,30,70,17" concept="9" />
+      <node id="9087294576179189853" at="74,0,75,0" concept="12" trace="key$qYDz" />
+      <node id="9087294576179189853" at="75,0,76,0" concept="12" trace="expressions$vApI" />
+      <node id="9087294576179189853" at="79,0,80,0" concept="12" trace="MultilingualInlineFormat$MK" />
+      <node id="9087294576179189853" at="80,0,81,0" concept="12" trace="MultilingualJavaRichString$Bh" />
+      <node id="9087294576179189853" at="84,0,85,0" concept="12" trace="argumentIndex$euNt" />
+      <node id="9087294576179189853" at="30,0,32,0" concept="1" trace="check_MultilingualJavaRichString_NonTypesystemRule#()V" />
+      <node id="9087294576184992805" at="43,120,46,7" concept="6" />
+      <node id="9087294576185126474" at="50,0,53,7" concept="6" />
+      <node id="9087294576179189853" at="63,0,66,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9087294576179189853" at="66,0,69,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9087294576179189853" at="69,0,72,0" concept="7" trace="overrides#()Z" />
+      <node id="9087294576179370579" at="36,95,40,7" concept="0" />
+      <node id="9087294576179481414" at="55,86,59,9" concept="0" />
+      <node id="9087294576179313371" at="35,0,41,5" concept="6" />
+      <node id="9087294576179452391" at="54,0,60,7" concept="6" />
+      <node id="9087294576179242856" at="42,0,61,5" concept="4" />
+      <node id="9087294576179189853" at="32,0,63,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9087294576179189853" at="30,63,30,63" />
+      <scope id="9087294576184992808" at="44,129,45,17" />
+      <scope id="9087294576185126477" at="51,56,52,17" />
+      <scope id="9087294576179189853" at="63,50,64,50" />
+      <scope id="9087294576179189853" at="66,68,67,102" />
+      <scope id="9087294576179189853" at="69,30,70,17" />
+      <scope id="9087294576179189853" at="30,0,32,0" />
+      <scope id="9087294576179370579" at="37,7,39,588">
+        <var name="_reporter_2309309498" id="9087294576179370579" />
+        <var name="errorTarget" id="9087294576179370579" />
+      </scope>
+      <scope id="9087294576179481414" at="56,9,58,534">
+        <var name="_reporter_2309309498" id="9087294576179481414" />
+        <var name="errorTarget" id="9087294576179481414" />
+      </scope>
+      <scope id="9087294576179189853" at="63,0,66,0" />
+      <scope id="9087294576179189853" at="66,0,69,0">
+        <var name="argument" id="9087294576179189853" />
+      </scope>
+      <scope id="9087294576179189853" at="69,0,72,0" />
+      <scope id="9087294576179313374" at="36,95,40,7" />
+      <scope id="9087294576179452392" at="55,86,59,9" />
+      <scope id="9087294576179242860" at="43,120,60,7">
+        <var name="calculateCategory" id="9087294576185124402" />
+        <var name="typeOf" id="9087294576185123167" />
+      </scope>
+      <scope id="9087294576179242856" at="42,0,61,5">
+        <var name="i" id="9087294576179242858" />
+      </scope>
+      <scope id="9087294576179189854" at="32,139,61,5">
+        <var name="expressions" id="9087294576179311458" />
+        <var name="formats" id="9087294576179240744" />
+      </scope>
+      <scope id="9087294576179189853" at="32,0,63,0">
+        <var name="multilingualJavaRichString" id="9087294576179189853" />
+        <var name="status" id="9087294576179189853" />
+        <var name="typeCheckingContext" id="9087294576179189853" />
+      </scope>
+      <unit id="9087294576179189853" at="83,0,86,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_MultilingualJavaRichString_NonTypesystemRule$PROPS" />
+      <unit id="9087294576179189853" at="73,0,77,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_MultilingualJavaRichString_NonTypesystemRule$LINKS" />
+      <unit id="9087294576179189853" at="78,0,82,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_MultilingualJavaRichString_NonTypesystemRule$CONCEPTS" />
+      <unit id="9087294576179189853" at="29,0,87,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.typesystem.check_MultilingualJavaRichString_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

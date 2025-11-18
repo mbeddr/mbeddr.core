@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-1qj5ni5nf7kugvpm4naxlzhnmratedt">
+  <files names="CVR.java:CustomValueRenderer.java:DefaultTraceRecord.java:DefaultTraceRecordRenderer.java:ExtensionDescriptor.java:FilterMenuOption.java:IASTHighlighter.java:IComputationTraceFilter.java:INodeMapper.java:IRerunnableTraceRecord.java:ITraceDecorator.java:ITraceRecord.java:ITraceRecordRenderer.java:ITraceRerunner.java:NullConceptValueRenderer.java:TraceExplorer_ProjectPlugin.java:TraceExplorer_Tool.java:TraceFilterByITracerFrame.java:TraceFilterNoChildsMarkedSkip.java:TraceRecordTreeCellRenderer.java:TraceTab.java:TraceTabOptions.java:TraceTreeModel.java:TreeExpansionUtil.java" />
+</product>
+

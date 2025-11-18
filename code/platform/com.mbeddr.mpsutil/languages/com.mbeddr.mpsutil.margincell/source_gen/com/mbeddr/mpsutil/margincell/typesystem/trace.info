@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.margincell.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="92f195b6-a209-4804-ad65-f5248ecd5873/r:29fe3e16-ebfd-4f72-95aa-0aca5a1b349d(com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.typesystem)/4685941679575164429">
+    <file name="removeUnattachedMarginCell_QuickFix.java">
+      <node id="4685941679575164429" at="11,48,12,202" concept="8" />
+      <node id="4685941679575164432" at="14,35,15,37" concept="2" />
+      <node id="4685941679575164429" at="11,0,14,0" concept="1" trace="removeUnattachedMarginCell_QuickFix#()V" />
+      <node id="4685941679575164429" at="14,0,17,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4685941679575164429" at="11,48,12,202" />
+      <scope id="4685941679575164431" at="14,35,15,37" />
+      <scope id="4685941679575164429" at="11,0,14,0" />
+      <scope id="4685941679575164429" at="14,0,17,0">
+        <var name="node" id="4685941679575164429" />
+      </scope>
+      <unit id="4685941679575164429" at="10,0,18,0" name="com.mbeddr.mpsutil.margincell.typesystem.removeUnattachedMarginCell_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="92f195b6-a209-4804-ad65-f5248ecd5873/r:29fe3e16-ebfd-4f72-95aa-0aca5a1b349d(com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.typesystem)/4685941679575165525">
+    <file name="TypesystemDescriptor.java">
+      <node id="4685941679575165525" at="10,5,11,101" concept="5" />
+      <node id="4685941679575165525" at="11,101,12,55" concept="2" />
+      <node id="4685941679575165525" at="9,33,13,5" concept="0" />
+      <scope id="4685941679575165525" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="4685941679575165525" />
+      </scope>
+    </file>
+    <file name="check_IMarginCellContent_NonTypesystemRule.java">
+      <node id="4685941679575167446" at="25,7,26,66" concept="5" />
+      <node id="4685941679575167446" at="26,66,27,304" concept="5" />
+      <node id="4685941679575167589" at="28,9,29,185" concept="5" />
+      <node id="4685941679575167589" at="29,185,30,71" concept="2" />
+      <node id="4685941679575165525" at="35,50,36,42" concept="6" />
+      <node id="4685941679575165525" at="38,68,39,102" concept="6" />
+      <node id="4685941679575165525" at="41,30,42,17" concept="6" />
+      <node id="4685941679575165525" at="46,0,47,0" concept="7" trace="attachedNode$Bgt0" />
+      <node id="4685941679575165525" at="50,0,51,0" concept="7" trace="IMarginCellContent$zg" />
+      <node id="4685941679575165525" at="21,0,23,0" concept="1" trace="check_IMarginCellContent_NonTypesystemRule#()V" />
+      <node id="4685941679575165525" at="35,0,38,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4685941679575165525" at="38,0,41,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4685941679575165525" at="41,0,44,0" concept="4" trace="overrides#()Z" />
+      <node id="4685941679575167589" at="27,304,31,9" concept="0" />
+      <node id="4685941679575167446" at="24,75,32,7" concept="0" />
+      <node id="4685941679575165551" at="23,115,33,5" concept="3" />
+      <node id="4685941679575165525" at="23,0,35,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4685941679575165525" at="21,55,21,55" />
+      <scope id="4685941679575165525" at="35,50,36,42" />
+      <scope id="4685941679575165525" at="38,68,39,102" />
+      <scope id="4685941679575165525" at="41,30,42,17" />
+      <scope id="4685941679575165525" at="21,0,23,0" />
+      <scope id="4685941679575167589" at="28,9,30,71">
+        <var name="intentionProvider" id="4685941679575167589" />
+      </scope>
+      <scope id="4685941679575165525" at="35,0,38,0" />
+      <scope id="4685941679575165525" at="38,0,41,0">
+        <var name="argument" id="4685941679575165525" />
+      </scope>
+      <scope id="4685941679575165525" at="41,0,44,0" />
+      <scope id="4685941679575167446" at="25,7,31,9">
+        <var name="_reporter_2309309498" id="4685941679575167446" />
+        <var name="errorTarget" id="4685941679575167446" />
+      </scope>
+      <scope id="4685941679575165552" at="24,75,32,7" />
+      <scope id="4685941679575165526" at="23,115,33,5" />
+      <scope id="4685941679575165525" at="23,0,35,0">
+        <var name="im" id="4685941679575165525" />
+        <var name="status" id="4685941679575165525" />
+        <var name="typeCheckingContext" id="4685941679575165525" />
+      </scope>
+      <unit id="4685941679575165525" at="45,0,48,0" name="com.mbeddr.mpsutil.margincell.typesystem.check_IMarginCellContent_NonTypesystemRule$LINKS" />
+      <unit id="4685941679575165525" at="49,0,52,0" name="com.mbeddr.mpsutil.margincell.typesystem.check_IMarginCellContent_NonTypesystemRule$CONCEPTS" />
+      <unit id="4685941679575165525" at="20,0,53,0" name="com.mbeddr.mpsutil.margincell.typesystem.check_IMarginCellContent_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-b8xyi0x2pxiv43djm8a6kp7v952qzat">
+  <files names="ApplicationHelper.java:IdentityHelperUtil.java:ImmutablePath.java:InstancePath.java:LazyInit.java:LazyInitWithCheck.java:ModelComparator.java:ModelComparatorMismatch.java:SNodeIdentityWrapper.java:SNodeIdentityWrapperT.java:Traversal.java" />
+</product>
+

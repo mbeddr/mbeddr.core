@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-buo38y50c3pgorodrv1m64hesce0ogp">
+  <files names="Expression_Rebalance_Intention.java:IntentionsDescriptor.java:commentIn_Intention.java:commentOut_Intention.java:convertIntoC99Type_Intention.java:makeSignedInt16_Intention.java:makeSignedInt32_Intention.java:makeSignedInt64_Intention.java:makeSignedInt8_Intention.java:makeUnsignedInt16_Intention.java:makeUnsignedInt32_Intention.java:makeUnsignedInt64_Intention.java:makeUnsignedInt8_Intention.java:populateWithDefault_Intention.java:surroundWithCast_Intention.java:surroundWithNot_Intention.java:surroundWithParens_Intention.java:surroundWithQuestionMarkOp_Intention.java:surroundWithStaticValueExpr_Intention.java:toggleCastToInt_Intention.java:toggleConst_Intention.java:toggleVolatile_Intention.java:unwrap_Intention.java:wrapWithIWrapperExpression_Intention.java" />
+</product>
+

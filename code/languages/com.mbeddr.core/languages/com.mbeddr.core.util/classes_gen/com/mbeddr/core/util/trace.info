@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="Language.java">
+      <unit at="30,0,101,0" name="com.mbeddr.core.util.Language" />
+    </file>
+  </root>
+</debug-info>
+

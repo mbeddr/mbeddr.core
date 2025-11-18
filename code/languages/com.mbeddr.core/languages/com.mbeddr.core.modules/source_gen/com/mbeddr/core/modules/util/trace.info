@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:a9b5b843-57a9-4ca1-af30-7a435b64927d(com.mbeddr.core.modules.util)/577369824220466779">
+    <file name="NameManglingHelper.java">
+      <node id="6917928436448800484" at="30,74,31,0" concept="7" />
+      <node id="6917928436448800485" at="31,0,32,102" concept="4" />
+      <node id="6917928436448800496" at="32,102,33,0" concept="7" />
+      <node id="6917928436448800506" at="35,119,36,150" concept="1" />
+      <node id="6917928436448800523" at="37,7,38,146" concept="1" />
+      <node id="6917928436448800532" at="39,5,40,0" concept="7" />
+      <node id="6917928436448800533" at="40,0,41,71" concept="4" />
+      <node id="6917928436448800540" at="41,71,42,0" concept="7" />
+      <node id="6917928436448800541" at="42,0,43,131" concept="6" />
+      <node id="6917928436448800559" at="46,9,47,119" concept="4" />
+      <node id="6917928436448800561" at="48,86,49,68" concept="1" />
+      <node id="6917928436448800580" at="53,5,54,0" concept="7" />
+      <node id="6917928436448800581" at="54,0,55,53" concept="5" />
+      <node id="577369824220466779" at="59,0,60,0" concept="8" trace="name$MnvL" />
+      <node id="577369824220466779" at="63,0,64,0" concept="8" trace="IModuleContent$H1" />
+      <node id="577369824220466779" at="64,0,65,0" concept="8" trace="ICanMangleNames$yI" />
+      <node id="6917928436448800504" at="34,108,37,7" concept="3" />
+      <node id="6917928436448800559" at="47,119,50,11" concept="3" />
+      <node id="6917928436448800497" at="33,0,39,5" concept="2" />
+      <node id="6917928436448800559" at="45,101,51,9" concept="0" />
+      <node id="6917928436448800557" at="44,79,52,7" concept="3" />
+      <node id="6917928436448800551" at="43,131,53,5" concept="2" />
+      <node id="6917928436448800482" at="30,0,57,0" concept="9" trace="uniqueMangleableModuleContents#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/util/List;" />
+      <scope id="6917928436448800505" at="35,119,36,150" />
+      <scope id="6917928436448800560" at="48,86,49,68" />
+      <scope id="6917928436448800503" at="34,108,38,146" />
+      <scope id="6917928436448800559" at="46,9,50,11">
+        <var name="mangleable" id="6917928436448800559" />
+      </scope>
+      <scope id="6917928436448800497" at="33,0,39,5">
+        <var name="content" id="6917928436448800498" />
+      </scope>
+      <scope id="6917928436448800558" at="45,101,51,9" />
+      <scope id="6917928436448800556" at="44,79,52,7" />
+      <scope id="6917928436448800551" at="43,131,53,5">
+        <var name="contentName" id="6917928436448800552" />
+      </scope>
+      <scope id="6917928436448800483" at="30,74,55,53">
+        <var name="allModuleContent" id="6917928436448800486" />
+        <var name="uniqueNodes" id="6917928436448800534" />
+      </scope>
+      <scope id="6917928436448800482" at="30,0,57,0">
+        <var name="model" id="6917928436448800587" />
+      </scope>
+      <unit id="577369824220466779" at="58,0,61,0" name="com.mbeddr.core.modules.util.NameManglingHelper$PROPS" />
+      <unit id="577369824220466779" at="62,0,66,0" name="com.mbeddr.core.modules.util.NameManglingHelper$CONCEPTS" />
+      <unit id="577369824220466779" at="22,0,67,0" name="com.mbeddr.core.modules.util.NameManglingHelper" />
+    </file>
+  </root>
+</debug-info>
+

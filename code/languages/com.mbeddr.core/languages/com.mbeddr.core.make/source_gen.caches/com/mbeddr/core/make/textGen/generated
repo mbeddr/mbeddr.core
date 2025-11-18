@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bgzwp5d03lplh9n9z65g698b3zfktxq">
+  <files names="BinaryConditionalDirective_TextGen.java:Command_TextGen.java:Comment_TextGen.java:EmptyLine_TextGen.java:Include_TextGen.java:ItemSequence_TextGen.java:Macro_TextGen.java:MakefileFragment_TextGen.java:Makefile_TextGen.java:MultiLineVariable_TextGen.java:PlainTextFragment_TextGen.java:Prerequisite_TextGen.java:RuleRef_TextGen.java:Rule_TextGen.java:Target_TextGen.java:TextGenAspectDescriptor.java:UnaryConditionalDirective_TextGen.java:VariableRef_TextGen.java:VariableValue_TextGen.java:Variable_TextGen.java" />
+</product>
+

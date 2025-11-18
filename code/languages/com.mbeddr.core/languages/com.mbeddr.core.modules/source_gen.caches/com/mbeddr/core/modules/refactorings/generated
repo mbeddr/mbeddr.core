@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-dcac68cumrpaj0odn05eslwfhzvcygq">
+  <files names="ExpressionReplacerInModule.java:RefactoringAspectDescriptor.java:convertExternalModuleIntoImplModule.java:convertExternalModuleIntoImplModule_Target.java:extractConstant.java:extractConstant_Target.java:extractIntoNewModule.java:extractIntoNewModule_Target.java:moveIntoNewSection.java:moveIntoNewSection_Target.java:moveIntoSection.java:moveIntoSection_Target.java:moveToImportedModule.java:moveToImportedModule_Target.java" />
+</product>
+

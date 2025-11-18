@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="71dz72avsp35k9m25vaowbhoy1bfyir">
+  <files names="ExpressionReplacerInStatements.java:RefactoringAspectDescriptor.java:inlineLocalVariable.java:inlineLocalVariable_Target.java:introduceLocalVariable.java:introduceLocalVariable_Target.java" />
+</product>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="r:a296e8c9-b717-45da-a3a4-9f0b7cc360c0(com.mbeddt.core.expressions.pluginSolution.plugin)/9174439846097762893">
+    <file name="PluginSolution_ProjectPlugin.java">
+      <node id="9174439846097762893" at="32,96,33,92" concept="3" />
+      <node id="9174439846097762893" at="33,92,34,0" concept="5" />
+      <node id="9174439846097762893" at="36,78,37,44" concept="3" />
+      <node id="9174439846097762893" at="37,44,38,49" concept="3" />
+      <node id="9174439846097762893" at="38,49,39,81" concept="3" />
+      <node id="9174439846097762893" at="39,81,40,82" concept="3" />
+      <node id="9174439846097762893" at="40,82,41,87" concept="3" />
+      <node id="9174439846097762893" at="41,87,42,0" concept="5" />
+      <node id="9174439846098100873" at="44,29,45,248" concept="0" />
+      <node id="9174439846097762893" at="45,248,46,0" concept="5" />
+      <node id="9174439846097762893" at="46,0,47,101" concept="3" />
+      <node id="9174439846097762893" at="47,101,48,49" concept="3" />
+      <node id="9174439846097762893" at="48,49,49,64" concept="3" />
+      <node id="9174439846097762893" at="50,25,51,128" concept="0" />
+      <node id="9174439846097762893" at="51,128,52,60" concept="0" />
+      <node id="9174439846097762893" at="53,13,54,0" concept="5" />
+      <node id="9174439846097762893" at="54,0,55,53" concept="0" />
+      <node id="9174439846097762893" at="55,53,56,0" concept="5" />
+      <node id="9174439846097762893" at="56,0,57,63" concept="3" />
+      <node id="9174439846097762893" at="58,67,59,30" concept="0" />
+      <node id="9174439846097762893" at="60,13,61,0" concept="5" />
+      <node id="9174439846097762893" at="61,0,62,68" concept="3" />
+      <node id="9174439846097762893" at="63,77,64,35" concept="0" />
+      <node id="9174439846097902500" at="68,25,69,110" concept="0" />
+      <node id="9174439846097762893" at="72,11,73,0" concept="5" />
+      <node id="9174439846097762893" at="73,0,74,21" concept="4" />
+      <node id="9174439846097762893" at="79,72,80,66" concept="4" />
+      <node id="9174439846097762893" at="83,51,84,49" concept="4" />
+      <node id="9174439846097762893" at="86,7,87,0" concept="5" />
+      <node id="9174439846097762893" at="87,0,88,22" concept="4" />
+      <node id="9174439846097762893" at="93,0,94,0" concept="6" trace="TypeSizeConfiguration$OP" />
+      <node id="9174439846097762893" at="57,63,60,13" concept="1" />
+      <node id="9174439846097762893" at="62,68,65,13" concept="1" />
+      <node id="5299504751977830456" at="67,101,70,13" concept="1" />
+      <node id="9174439846097762893" at="83,0,86,0" concept="2" trace="getRootConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9174439846097762893" at="49,64,53,13" concept="1" />
+      <node id="9174439846097762893" at="78,0,82,0" concept="2" trace="enabled#(Ljetbrains/mps/project/Project;)Z" />
+      <node id="9174439846097762893" at="67,0,72,0" concept="2" trace="initUpdate#(ZLorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/project/Project;)V" />
+      <node id="9174439846097762893" at="76,6,86,7" concept="0" />
+      <node id="9174439846097762893" at="44,0,67,0" concept="2" trace="run#()V" />
+      <node id="9174439846097762893" at="42,0,72,11" concept="0" />
+      <node id="9174439846097762893" at="36,0,76,0" concept="2" trace="getModel#(Ljetbrains/mps/project/Project;)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <node id="9174439846097762893" at="34,0,76,6" concept="3" />
+      <node id="9174439846097762893" at="31,0,90,0" concept="2" trace="createPreferencesComponents#(Lcom/intellij/openapi/project/Project;)Ljava/util/List;" />
+      <scope id="9174439846097762893" at="58,67,59,30" />
+      <scope id="9174439846097762893" at="63,77,64,35" />
+      <scope id="5299504751977830459" at="68,25,69,110" />
+      <scope id="9174439846097762893" at="79,72,80,66" />
+      <scope id="9174439846097762893" at="83,51,84,49" />
+      <scope id="9174439846097762893" at="50,25,52,60" />
+      <scope id="9174439846097762893" at="67,101,70,13" />
+      <scope id="9174439846097762893" at="83,0,86,0" />
+      <scope id="9174439846097762893" at="78,0,82,0">
+        <var name="project" id="9174439846097762893" />
+      </scope>
+      <scope id="9174439846097762893" at="67,0,72,0">
+        <var name="isInit" id="9174439846097762893" />
+        <var name="node" id="9174439846097762893" />
+        <var name="project" id="9174439846097762893" />
+      </scope>
+      <scope id="9174439846097762893" at="44,29,65,13">
+        <var name="editableModel" id="9174439846097762893" />
+        <var name="isInit" id="9174439846097762893" />
+        <var name="pageNode" id="9174439846097762893" />
+        <var name="pageNodes" id="9174439846097762893" />
+        <var name="solution" id="9174439846097762893" />
+      </scope>
+      <scope id="9174439846097762893" at="44,0,67,0" />
+      <scope id="9174439846097762893" at="36,78,74,21">
+        <var name="folder" id="9174439846097762893" />
+        <var name="id" id="9174439846097762893" />
+        <var name="model" id="9174439846097762893" />
+        <var name="modelName" id="9174439846097762893" />
+        <var name="title" id="9174439846097762893" />
+      </scope>
+      <scope id="9174439846097762893" at="36,0,76,0">
+        <var name="mpsProject" id="9174439846097762893" />
+      </scope>
+      <scope id="9174439846097762893" at="32,96,88,22">
+        <var name="components" id="9174439846097762893" />
+        <var name="factory" id="9174439846097762893" />
+      </scope>
+      <scope id="9174439846097762893" at="31,0,90,0">
+        <var name="project" id="9174439846097762893" />
+      </scope>
+      <unit id="9174439846097762893" at="92,0,95,0" name="com.mbeddt.core.expressions.pluginSolution.plugin.PluginSolution_ProjectPlugin$CONCEPTS" />
+      <unit id="9174439846097762893" at="77,23,86,5" name="com.mbeddt.core.expressions.pluginSolution.plugin.PluginSolution_ProjectPlugin$2" />
+      <unit id="9174439846097762893" at="43,71,72,9" name="com.mbeddt.core.expressions.pluginSolution.plugin.PluginSolution_ProjectPlugin$1$1" />
+      <unit id="9174439846097762893" at="35,43,76,5" name="com.mbeddt.core.expressions.pluginSolution.plugin.PluginSolution_ProjectPlugin$1" />
+      <unit id="9174439846097762893" at="29,0,96,0" name="com.mbeddt.core.expressions.pluginSolution.plugin.PluginSolution_ProjectPlugin" />
+    </file>
+  </root>
+</debug-info>
+

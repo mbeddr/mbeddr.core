@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ScriptsDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.core.expressions.scripts.ScriptsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b4ace5ee-7fa0-430a-9ad4-4a1f6eaf0e09(com.mbeddr.core.expressions.scripts)/86069659506039361">
+    <file name="ScriptsDescriptor.java">
+      <node id="86069659506039361" at="15,52,16,75" concept="1" />
+    </file>
+    <file name="deleteUnsignedProperty_MigrationScript.java">
+      <node id="86069659506039361" at="16,51,17,57" concept="6" />
+      <node id="2736179788492057716" at="20,31,21,42" concept="3" />
+      <node id="2736179788492057716" at="24,41,25,42" concept="3" />
+      <node id="2736179788492057716" at="28,54,29,43" concept="3" />
+      <node id="2916021110333475305" at="32,59,33,70" concept="4" />
+      <node id="86069659506047840" at="33,70,34,52" concept="3" />
+      <node id="86069659505572137" at="37,52,38,43" concept="1" />
+      <node id="2736179788492057716" at="41,42,42,21" concept="3" />
+      <node id="86069659506039361" at="49,41,50,160" concept="3" />
+      <node id="86069659506039361" at="54,0,55,0" concept="5" trace="INumericLiteral$7P" />
+      <node id="2736179788492057716" at="19,0,23,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="2736179788492057716" at="23,0,27,0" concept="2" trace="getAdditionalInfo#()Ljava/lang/String;" />
+      <node id="2736179788492057716" at="27,0,31,0" concept="2" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2736179788492057716" at="36,0,40,0" concept="2" trace="doUpdateInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2736179788492057716" at="40,0,44,0" concept="2" trace="isShowAsIntention#()Z" />
+      <node id="2736179788492057716" at="31,0,36,0" concept="2" trace="isApplicableInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="86069659506039361" at="47,0,52,0" concept="2" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2736179788492057716" at="17,57,44,7" concept="1" />
+      <node id="86069659506039361" at="16,0,46,0" concept="0" trace="deleteUnsignedProperty_MigrationScript#()V" />
+      <scope id="2736179788492057716" at="20,31,21,42" />
+      <scope id="2736179788492057716" at="24,41,25,42" />
+      <scope id="2736179788492057716" at="28,54,29,43" />
+      <scope id="2736179788492057718" at="37,52,38,43" />
+      <scope id="2736179788492057716" at="41,42,42,21" />
+      <scope id="86069659506039361" at="49,41,50,160" />
+      <scope id="2736179788492057720" at="32,59,34,52" />
+      <scope id="2736179788492057716" at="19,0,23,0" />
+      <scope id="2736179788492057716" at="23,0,27,0" />
+      <scope id="2736179788492057716" at="27,0,31,0" />
+      <scope id="2736179788492057716" at="36,0,40,0">
+        <var name="node" id="2736179788492057716" />
+      </scope>
+      <scope id="2736179788492057716" at="40,0,44,0" />
+      <scope id="2736179788492057716" at="31,0,36,0">
+        <var name="node" id="2736179788492057716" />
+      </scope>
+      <scope id="86069659506039361" at="47,0,52,0" />
+      <scope id="86069659506039361" at="16,51,44,7" />
+      <scope id="86069659506039361" at="16,0,46,0" />
+      <unit id="86069659506039361" at="53,0,56,0" name="com.mbeddr.core.expressions.scripts.deleteUnsignedProperty_MigrationScript$CONCEPTS" />
+      <unit id="2736179788492057716" at="18,28,44,5" name="com.mbeddr.core.expressions.scripts.deleteUnsignedProperty_MigrationScript$1" />
+      <unit id="86069659506039361" at="15,0,57,0" name="com.mbeddr.core.expressions.scripts.deleteUnsignedProperty_MigrationScript" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,31,0" name="com.mbeddr.core.pointers.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:bd926a45-d72f-48d2-9b35-f5586f5ff2bc(com.mbeddr.core.pointers.constraints)/4893482163759218600">
+    <file name="StringLiteral_Constraints.java">
+      <node id="4893482163759218600" at="21,38,22,37" concept="8" />
+      <node id="4893482163759218601" at="26,60,27,61" concept="8" />
+      <node id="4893482163759218601" at="30,109,31,99" concept="4" />
+      <node id="4893482163759218601" at="32,53,33,165" concept="1" />
+      <node id="4893482163759218601" at="34,7,35,20" concept="5" />
+      <node id="4660171311585296812" at="37,85,38,82" concept="5" />
+      <node id="4893482163759218600" at="42,84,43,119" concept="4" />
+      <node id="4893482163759218601" at="43,119,44,63" concept="1" />
+      <node id="4893482163759218600" at="44,63,45,22" concept="5" />
+      <node id="4893482163759218600" at="49,0,50,0" concept="6" trace="StringLiteral$dJ" />
+      <node id="4893482163759218600" at="53,0,54,0" concept="6" trace="value$a7Yf" />
+      <node id="4893482163759218600" at="21,0,24,0" concept="0" trace="StringLiteral_Constraints#()V" />
+      <node id="4893482163759218601" at="26,0,29,0" concept="0" trace="Value_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4893482163759218601" at="31,99,34,7" concept="2" />
+      <node id="4893482163759218601" at="37,0,40,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="4893482163759218600" at="41,0,47,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="4893482163759218601" at="29,0,37,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="4893482163759218600" at="21,38,22,37" />
+      <scope id="4893482163759218601" at="26,60,27,61" />
+      <scope id="4893482163759218601" at="32,53,33,165" />
+      <scope id="4893482163759218608" at="37,85,38,82" />
+      <scope id="4893482163759218600" at="21,0,24,0" />
+      <scope id="4893482163759218601" at="26,0,29,0">
+        <var name="container" id="4893482163759218601" />
+      </scope>
+      <scope id="4893482163759218601" at="37,0,40,0">
+        <var name="node" id="4893482163759218601" />
+        <var name="propertyValue" id="4893482163759218601" />
+      </scope>
+      <scope id="4893482163759218600" at="42,84,45,22">
+        <var name="properties" id="4893482163759218600" />
+      </scope>
+      <scope id="4893482163759218601" at="30,109,35,20">
+        <var name="result" id="4893482163759218601" />
+      </scope>
+      <scope id="4893482163759218600" at="41,0,47,0" />
+      <scope id="4893482163759218601" at="29,0,37,0">
+        <var name="checkingNodeContext" id="4893482163759218601" />
+        <var name="node" id="4893482163759218601" />
+        <var name="propertyValue" id="4893482163759218601" />
+      </scope>
+      <unit id="4893482163759218600" at="48,0,51,0" name="com.mbeddr.core.pointers.constraints.StringLiteral_Constraints$CONCEPTS" />
+      <unit id="4893482163759218600" at="52,0,55,0" name="com.mbeddr.core.pointers.constraints.StringLiteral_Constraints$PROPS" />
+      <unit id="4893482163759218601" at="25,0,41,0" name="com.mbeddr.core.pointers.constraints.StringLiteral_Constraints$Value_Property" />
+      <unit id="4893482163759218600" at="20,0,56,0" name="com.mbeddr.core.pointers.constraints.StringLiteral_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:bd926a45-d72f-48d2-9b35-f5586f5ff2bc(com.mbeddr.core.pointers.constraints)/5355719375892497747">
+    <file name="VerbatimStringLiteral_Constraints.java">
+      <node id="5355719375892497747" at="20,46,21,45" concept="8" />
+      <node id="5355719375892497748" at="25,60,26,61" concept="8" />
+      <node id="5355719375892497748" at="29,109,30,99" concept="4" />
+      <node id="5355719375892497748" at="31,53,32,165" concept="1" />
+      <node id="5355719375892497748" at="33,7,34,20" concept="5" />
+      <node id="5355719375892497820" at="36,85,37,18" concept="5" />
+      <node id="5355719375892497747" at="41,84,42,119" concept="4" />
+      <node id="5355719375892497748" at="42,119,43,63" concept="1" />
+      <node id="5355719375892497747" at="43,63,44,22" concept="5" />
+      <node id="5355719375892497747" at="48,0,49,0" concept="6" trace="VerbatimStringLiteral$$A" />
+      <node id="5355719375892497747" at="52,0,53,0" concept="6" trace="value$a7Yf" />
+      <node id="5355719375892497747" at="20,0,23,0" concept="0" trace="VerbatimStringLiteral_Constraints#()V" />
+      <node id="5355719375892497748" at="25,0,28,0" concept="0" trace="Value_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5355719375892497748" at="30,99,33,7" concept="2" />
+      <node id="5355719375892497748" at="36,0,39,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="5355719375892497747" at="40,0,46,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="5355719375892497748" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="5355719375892497747" at="20,46,21,45" />
+      <scope id="5355719375892497748" at="25,60,26,61" />
+      <scope id="5355719375892497748" at="31,53,32,165" />
+      <scope id="5355719375892497751" at="36,85,37,18" />
+      <scope id="5355719375892497747" at="20,0,23,0" />
+      <scope id="5355719375892497748" at="25,0,28,0">
+        <var name="container" id="5355719375892497748" />
+      </scope>
+      <scope id="5355719375892497748" at="36,0,39,0">
+        <var name="node" id="5355719375892497748" />
+        <var name="propertyValue" id="5355719375892497748" />
+      </scope>
+      <scope id="5355719375892497747" at="41,84,44,22">
+        <var name="properties" id="5355719375892497747" />
+      </scope>
+      <scope id="5355719375892497748" at="29,109,34,20">
+        <var name="result" id="5355719375892497748" />
+      </scope>
+      <scope id="5355719375892497747" at="40,0,46,0" />
+      <scope id="5355719375892497748" at="28,0,36,0">
+        <var name="checkingNodeContext" id="5355719375892497748" />
+        <var name="node" id="5355719375892497748" />
+        <var name="propertyValue" id="5355719375892497748" />
+      </scope>
+      <unit id="5355719375892497747" at="47,0,50,0" name="com.mbeddr.core.pointers.constraints.VerbatimStringLiteral_Constraints$CONCEPTS" />
+      <unit id="5355719375892497747" at="51,0,54,0" name="com.mbeddr.core.pointers.constraints.VerbatimStringLiteral_Constraints$PROPS" />
+      <unit id="5355719375892497748" at="24,0,40,0" name="com.mbeddr.core.pointers.constraints.VerbatimStringLiteral_Constraints$Value_Property" />
+      <unit id="5355719375892497747" at="19,0,55,0" name="com.mbeddr.core.pointers.constraints.VerbatimStringLiteral_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

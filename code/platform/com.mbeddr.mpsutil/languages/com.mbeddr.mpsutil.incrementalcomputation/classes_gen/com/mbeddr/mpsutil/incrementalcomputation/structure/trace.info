@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,29,0" name="com.mbeddr.mpsutil.incrementalcomputation.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.incrementalcomputation.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,56,0" name="com.mbeddr.mpsutil.incrementalcomputation.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:644d327d-a4dc-4e49-b137-5aa4630bcd32(com.mbeddr.mpsutil.incrementalcomputation.structure)/3315277234172465334">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3315277234172465334" at="12,0,13,0" concept="1" trace="props_IncrementallyComputedValueHolder" />
+      <node id="3315277234172465334" at="20,61,21,76" concept="3" />
+      <node id="3315277234172465334" at="21,76,22,64" concept="0" />
+      <node id="3315277234172465334" at="23,9,24,54" concept="4" />
+      <node id="3315277234172465334" at="19,66,23,9" concept="2" />
+      <scope id="3315277234172465334" at="20,61,22,64">
+        <var name="cpb" id="3315277234172465334" />
+      </scope>
+      <scope id="3315277234172465334" at="19,66,24,54" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3315277234172465334" at="12,0,13,0" concept="5" trace="IncrementallyComputedValueHolder" />
+      <node id="3315277234172465334" at="15,116,16,71" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3315277234172465334" at="15,0,16,0" concept="1" trace="myConceptIncrementallyComputedValueHolder" />
+      <node id="3315277234172465334" at="36,66,37,57" concept="4" />
+      <node id="3315277234172465334" at="48,90,49,208" concept="3" />
+      <node id="3315277234172465334" at="49,208,50,19" concept="0" />
+      <node id="3315277234172465334" at="50,19,51,128" concept="0" />
+      <node id="3315277234172465334" at="51,128,52,17" concept="0" />
+      <node id="3315277234172465334" at="52,17,53,22" concept="4" />
+      <node id="3315277234172465334" at="48,0,55,0" concept="6" trace="createDescriptorForIncrementallyComputedValueHolder#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3315277234172465334" at="36,66,37,57" />
+      <scope id="3315277234172465334" at="48,90,53,22">
+        <var name="b" id="3315277234172465334" />
+      </scope>
+      <scope id="3315277234172465334" at="48,0,55,0" />
+    </file>
+  </root>
+</debug-info>
+

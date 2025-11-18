@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-bw9yu45q5ld73arsvpcxlenn0ikj7l1">
+  <files names="AssignmentExpr_DataFlow.java:BinaryExpression_DataFlow.java:CastExpression_DataFlow.java:DataFlowAspectDescriptorImpl.java:DirectAssignmentExpression_DataFlow.java:Expression_DataFlow.java:GenericDotExpression_DataFlow.java:TernaryExpression_DataFlow.java:UnaryExpression_DataFlow.java:UnaryPrePosModificationExpression_DataFlow.java" />
+</product>
+

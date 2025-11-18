@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,47,0" name="com.mbeddr.ext.components.mock.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/1854993706183445313">
+    <file name="ValidateMock_Constraints.java">
+      <node id="1854993706183445313" at="10,37,11,36" concept="10" />
+      <node id="1854993706183445313" at="15,0,16,0" concept="8" trace="ValidateMock$iv" />
+      <node id="1854993706183445313" at="10,0,13,0" concept="1" trace="ValidateMock_Constraints#()V" />
+      <scope id="1854993706183445313" at="10,37,11,36" />
+      <scope id="1854993706183445313" at="10,0,13,0" />
+      <unit id="1854993706183445313" at="14,0,17,0" name="com.mbeddr.ext.components.mock.constraints.ValidateMock_Constraints$CONCEPTS" />
+      <unit id="1854993706183445313" at="9,0,18,0" name="com.mbeddr.ext.components.mock.constraints.ValidateMock_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/2319970887606630702">
+    <file name="PhaseExpression_Constraints.java">
+      <node id="2319970887606630702" at="20,40,21,39" concept="10" />
+      <node id="2319970887606630702" at="28,127,29,128" concept="5" />
+      <node id="2319970887606630702" at="29,128,30,0" concept="7" />
+      <node id="2319970887606630702" at="31,55,32,71" concept="2" />
+      <node id="2319970887606630702" at="33,9,34,0" concept="7" />
+      <node id="2319970887606630702" at="34,0,35,22" concept="6" />
+      <node id="8237807170236482434" at="39,128,40,106" concept="6" />
+      <node id="2319970887606630702" at="42,0,43,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="2319970887606630702" at="45,0,46,0" concept="8" trace="PhaseExpression$oz" />
+      <node id="2319970887606630702" at="46,0,47,0" concept="8" trace="StubComponent$3D" />
+      <node id="2319970887606630702" at="20,0,23,0" concept="1" trace="PhaseExpression_Constraints#()V" />
+      <node id="2319970887606630702" at="30,0,33,9" concept="3" />
+      <node id="2319970887606630702" at="39,0,42,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2319970887606630702" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2319970887606630702" at="25,103,37,6" concept="6" />
+      <node id="2319970887606630702" at="24,0,39,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="2319970887606630702" at="20,40,21,39" />
+      <scope id="2319970887606630702" at="31,55,32,71" />
+      <scope id="8237807170236482433" at="39,128,40,106" />
+      <scope id="2319970887606630702" at="20,0,23,0" />
+      <scope id="2319970887606630702" at="39,0,42,0">
+        <var name="childConcept" id="2319970887606630702" />
+        <var name="link" id="2319970887606630702" />
+        <var name="node" id="2319970887606630702" />
+        <var name="parentNode" id="2319970887606630702" />
+      </scope>
+      <scope id="2319970887606630702" at="28,127,35,22">
+        <var name="result" id="2319970887606630702" />
+      </scope>
+      <scope id="2319970887606630702" at="27,0,37,0">
+        <var name="checkingNodeContext" id="2319970887606630702" />
+        <var name="context" id="2319970887606630702" />
+      </scope>
+      <scope id="2319970887606630702" at="25,103,37,6" />
+      <scope id="2319970887606630702" at="24,0,39,0" />
+      <unit id="2319970887606630702" at="44,0,48,0" name="com.mbeddr.ext.components.mock.constraints.PhaseExpression_Constraints$CONCEPTS" />
+      <unit id="2319970887606630702" at="26,15,37,5" name="com.mbeddr.ext.components.mock.constraints.PhaseExpression_Constraints$1" />
+      <unit id="2319970887606630702" at="19,0,49,0" name="com.mbeddr.ext.components.mock.constraints.PhaseExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/2319970887606697465">
+    <file name="PhaseChangeStatement_Constraints.java">
+      <node id="2319970887606697465" at="32,45,33,44" concept="10" />
+      <node id="2319970887606697466" at="44,63,45,145" concept="6" />
+      <node id="6491070606984442569" at="48,80,49,513" concept="6" />
+      <node id="2319970887606697491" at="60,63,61,145" concept="6" />
+      <node id="6491070606984442999" at="64,80,65,150" concept="5" />
+      <node id="6491070606984443013" at="66,80,67,156" concept="6" />
+      <node id="6491070606984443019" at="68,13,69,75" concept="6" />
+      <node id="2319970887606697465" at="73,6,74,131" concept="5" />
+      <node id="2319970887606697466" at="74,131,75,42" concept="2" />
+      <node id="2319970887606697491" at="75,42,76,42" concept="2" />
+      <node id="2319970887606697465" at="76,42,77,22" concept="6" />
+      <node id="2319970887606697465" at="81,0,82,0" concept="8" trace="PhaseChangeStatement$AD" />
+      <node id="2319970887606697465" at="82,0,83,0" concept="8" trace="IVisibleElementProvider$$O" />
+      <node id="2319970887606697465" at="83,0,84,0" concept="8" trace="InstanceConfiguration$MO" />
+      <node id="2319970887606697465" at="84,0,85,0" concept="8" trace="StubComponent$3D" />
+      <node id="2319970887606697465" at="88,0,89,0" concept="8" trace="instance$bJfI" />
+      <node id="2319970887606697465" at="89,0,90,0" concept="8" trace="phase$_fKS" />
+      <node id="2319970887606697465" at="90,0,91,0" concept="8" trace="component$ikVC" />
+      <node id="2319970887606697465" at="91,0,92,0" concept="8" trace="phases$8j$M" />
+      <node id="2319970887606697465" at="32,0,35,0" concept="1" trace="PhaseChangeStatement_Constraints#()V" />
+      <node id="6491070606984443007" at="65,150,68,13" concept="3" />
+      <node id="2319970887606697466" at="43,0,47,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2319970887606697466" at="47,0,51,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2319970887606697491" at="59,0,63,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2319970887606697491" at="63,0,71,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2319970887606697466" at="41,56,51,10" concept="6" />
+      <node id="2319970887606697466" at="39,0,53,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2319970887606697491" at="57,56,71,10" concept="6" />
+      <node id="2319970887606697466" at="37,90,53,6" concept="5" />
+      <node id="2319970887606697491" at="55,0,73,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2319970887606697491" at="53,6,73,6" concept="5" />
+      <node id="2319970887606697465" at="36,0,79,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="2319970887606697465" at="32,45,33,44" />
+      <scope id="2319970887606697466" at="44,63,45,145" />
+      <scope id="2319970887606697466" at="48,80,49,513" />
+      <scope id="2319970887606697491" at="60,63,61,145" />
+      <scope id="6491070606984443012" at="66,80,67,156" />
+      <scope id="2319970887606697465" at="32,0,35,0" />
+      <scope id="2319970887606697466" at="43,0,47,0" />
+      <scope id="2319970887606697466" at="47,0,51,0">
+        <var name="_context" id="2319970887606697466" />
+      </scope>
+      <scope id="2319970887606697491" at="59,0,63,0" />
+      <scope id="2319970887606697491" at="64,80,69,75">
+        <var name="comp" id="6491070606984443000" />
+      </scope>
+      <scope id="2319970887606697491" at="63,0,71,0">
+        <var name="_context" id="2319970887606697491" />
+      </scope>
+      <scope id="2319970887606697466" at="41,56,51,10" />
+      <scope id="2319970887606697466" at="39,0,53,0" />
+      <scope id="2319970887606697491" at="57,56,71,10" />
+      <scope id="2319970887606697491" at="55,0,73,0" />
+      <scope id="2319970887606697465" at="37,90,77,22">
+        <var name="d0" id="2319970887606697466" />
+        <var name="d1" id="2319970887606697491" />
+        <var name="references" id="2319970887606697465" />
+      </scope>
+      <scope id="2319970887606697465" at="36,0,79,0" />
+      <unit id="2319970887606697465" at="80,0,86,0" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints$CONCEPTS" />
+      <unit id="2319970887606697465" at="87,0,93,0" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints$LINKS" />
+      <unit id="2319970887606697466" at="42,19,51,9" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints$1$1" />
+      <unit id="2319970887606697491" at="58,19,71,9" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints$2$1" />
+      <unit id="2319970887606697466" at="38,48,53,5" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints$1" />
+      <unit id="2319970887606697491" at="54,48,73,5" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints$2" />
+      <unit id="2319970887606697465" at="31,0,94,0" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/3540137500592628736">
+    <file name="ParamterAssertion_Constraints.java">
+      <node id="3540137500592628736" at="26,42,27,41" concept="10" />
+      <node id="3540137500592628737" at="38,63,39,145" concept="6" />
+      <node id="6491070606984442478" at="42,80,43,235" concept="6" />
+      <node id="3540137500592628736" at="47,6,48,131" concept="5" />
+      <node id="3540137500592628737" at="48,131,49,42" concept="2" />
+      <node id="3540137500592628736" at="49,42,50,22" concept="6" />
+      <node id="3540137500592628736" at="54,0,55,0" concept="8" trace="ParamterAssertion$1i" />
+      <node id="3540137500592628736" at="55,0,56,0" concept="8" trace="Step$6I" />
+      <node id="3540137500592628736" at="59,0,60,0" concept="8" trace="param$SsQn" />
+      <node id="3540137500592628736" at="60,0,61,0" concept="8" trace="op$VaYP" />
+      <node id="3540137500592628736" at="61,0,62,0" concept="8" trace="arguments$6da0" />
+      <node id="3540137500592628736" at="26,0,29,0" concept="1" trace="ParamterAssertion_Constraints#()V" />
+      <node id="3540137500592628737" at="37,0,41,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3540137500592628737" at="41,0,45,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="3540137500592628737" at="35,56,45,10" concept="6" />
+      <node id="3540137500592628737" at="33,0,47,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3540137500592628737" at="31,90,47,6" concept="5" />
+      <node id="3540137500592628736" at="30,0,52,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3540137500592628736" at="26,42,27,41" />
+      <scope id="3540137500592628737" at="38,63,39,145" />
+      <scope id="3540137500592628737" at="42,80,43,235" />
+      <scope id="3540137500592628736" at="26,0,29,0" />
+      <scope id="3540137500592628737" at="37,0,41,0" />
+      <scope id="3540137500592628737" at="41,0,45,0">
+        <var name="_context" id="3540137500592628737" />
+      </scope>
+      <scope id="3540137500592628737" at="35,56,45,10" />
+      <scope id="3540137500592628737" at="33,0,47,0" />
+      <scope id="3540137500592628736" at="31,90,50,22">
+        <var name="d0" id="3540137500592628737" />
+        <var name="references" id="3540137500592628736" />
+      </scope>
+      <scope id="3540137500592628736" at="30,0,52,0" />
+      <unit id="3540137500592628736" at="53,0,57,0" name="com.mbeddr.ext.components.mock.constraints.ParamterAssertion_Constraints$CONCEPTS" />
+      <unit id="3540137500592628736" at="58,0,63,0" name="com.mbeddr.ext.components.mock.constraints.ParamterAssertion_Constraints$LINKS" />
+      <unit id="3540137500592628737" at="36,19,45,9" name="com.mbeddr.ext.components.mock.constraints.ParamterAssertion_Constraints$1$1" />
+      <unit id="3540137500592628737" at="32,48,47,5" name="com.mbeddr.ext.components.mock.constraints.ParamterAssertion_Constraints$1" />
+      <unit id="3540137500592628736" at="25,0,64,0" name="com.mbeddr.ext.components.mock.constraints.ParamterAssertion_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/4331139697889301330">
+    <file name="ParamRefExpression_Constraints.java">
+      <node id="4331139697889301330" at="32,43,33,42" concept="10" />
+      <node id="4331139697889301330" at="40,127,41,128" concept="5" />
+      <node id="4331139697889301330" at="41,128,42,0" concept="7" />
+      <node id="4331139697889301330" at="43,55,44,71" concept="2" />
+      <node id="4331139697889301330" at="45,9,46,0" concept="7" />
+      <node id="4331139697889301330" at="46,0,47,22" concept="6" />
+      <node id="4331139697889442854" at="59,63,60,145" concept="6" />
+      <node id="6491070606984441914" at="63,80,64,235" concept="6" />
+      <node id="4331139697889301330" at="68,6,69,131" concept="5" />
+      <node id="4331139697889442854" at="69,131,70,42" concept="2" />
+      <node id="4331139697889301330" at="70,42,71,22" concept="6" />
+      <node id="8237807170236482412" at="73,128,74,96" concept="6" />
+      <node id="4331139697889301330" at="76,0,77,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="4331139697889301330" at="79,0,80,0" concept="8" trace="ParamRefExpression$kc" />
+      <node id="4331139697889301330" at="80,0,81,0" concept="8" trace="Step$6I" />
+      <node id="4331139697889301330" at="84,0,85,0" concept="8" trace="param$oF7D" />
+      <node id="4331139697889301330" at="85,0,86,0" concept="8" trace="op$VaYP" />
+      <node id="4331139697889301330" at="86,0,87,0" concept="8" trace="arguments$6da0" />
+      <node id="4331139697889301330" at="32,0,35,0" concept="1" trace="ParamRefExpression_Constraints#()V" />
+      <node id="4331139697889301330" at="42,0,45,9" concept="3" />
+      <node id="4331139697889301330" at="73,0,76,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="4331139697889442854" at="58,0,62,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4331139697889442854" at="62,0,66,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4331139697889301330" at="39,0,49,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="4331139697889442854" at="56,56,66,10" concept="6" />
+      <node id="4331139697889301330" at="37,103,49,6" concept="6" />
+      <node id="4331139697889442854" at="54,0,68,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4331139697889301330" at="36,0,51,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="4331139697889442854" at="52,90,68,6" concept="5" />
+      <node id="4331139697889301330" at="51,0,73,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4331139697889301330" at="32,43,33,42" />
+      <scope id="4331139697889301330" at="43,55,44,71" />
+      <scope id="4331139697889442854" at="59,63,60,145" />
+      <scope id="4331139697889442854" at="63,80,64,235" />
+      <scope id="8237807170236482411" at="73,128,74,96" />
+      <scope id="4331139697889301330" at="32,0,35,0" />
+      <scope id="4331139697889301330" at="73,0,76,0">
+        <var name="childConcept" id="4331139697889301330" />
+        <var name="link" id="4331139697889301330" />
+        <var name="node" id="4331139697889301330" />
+        <var name="parentNode" id="4331139697889301330" />
+      </scope>
+      <scope id="4331139697889442854" at="58,0,62,0" />
+      <scope id="4331139697889442854" at="62,0,66,0">
+        <var name="_context" id="4331139697889442854" />
+      </scope>
+      <scope id="4331139697889301330" at="40,127,47,22">
+        <var name="result" id="4331139697889301330" />
+      </scope>
+      <scope id="4331139697889301330" at="39,0,49,0">
+        <var name="checkingNodeContext" id="4331139697889301330" />
+        <var name="context" id="4331139697889301330" />
+      </scope>
+      <scope id="4331139697889442854" at="56,56,66,10" />
+      <scope id="4331139697889301330" at="37,103,49,6" />
+      <scope id="4331139697889442854" at="54,0,68,0" />
+      <scope id="4331139697889301330" at="36,0,51,0" />
+      <scope id="4331139697889301330" at="52,90,71,22">
+        <var name="d0" id="4331139697889442854" />
+        <var name="references" id="4331139697889301330" />
+      </scope>
+      <scope id="4331139697889301330" at="51,0,73,0" />
+      <unit id="4331139697889301330" at="78,0,82,0" name="com.mbeddr.ext.components.mock.constraints.ParamRefExpression_Constraints$CONCEPTS" />
+      <unit id="4331139697889301330" at="83,0,88,0" name="com.mbeddr.ext.components.mock.constraints.ParamRefExpression_Constraints$LINKS" />
+      <unit id="4331139697889442854" at="57,19,66,9" name="com.mbeddr.ext.components.mock.constraints.ParamRefExpression_Constraints$2$1" />
+      <unit id="4331139697889301330" at="38,15,49,5" name="com.mbeddr.ext.components.mock.constraints.ParamRefExpression_Constraints$1" />
+      <unit id="4331139697889442854" at="53,48,68,5" name="com.mbeddr.ext.components.mock.constraints.ParamRefExpression_Constraints$2" />
+      <unit id="4331139697889301330" at="31,0,89,0" name="com.mbeddr.ext.components.mock.constraints.ParamRefExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/4957503999940788294">
+    <file name="Step_Constraints.java">
+      <node id="4957503999940788294" at="27,29,28,28" concept="10" />
+      <node id="4957503999940788295" at="39,63,40,145" concept="6" />
+      <node id="6491070606984442021" at="43,80,44,263" concept="6" />
+      <node id="4957503999940788321" at="55,63,56,145" concept="6" />
+      <node id="6491070606984442157" at="59,80,60,300" concept="6" />
+      <node id="4957503999940788294" at="64,6,65,131" concept="5" />
+      <node id="4957503999940788295" at="65,131,66,42" concept="2" />
+      <node id="4957503999940788321" at="66,42,67,42" concept="2" />
+      <node id="4957503999940788294" at="67,42,68,22" concept="6" />
+      <node id="4957503999940788294" at="72,0,73,0" concept="8" trace="Step$6I" />
+      <node id="4957503999940788294" at="73,0,74,0" concept="8" trace="MockComponent$E0" />
+      <node id="4957503999940788294" at="74,0,75,0" concept="8" trace="ProvidedPort$RN" />
+      <node id="4957503999940788294" at="75,0,76,0" concept="8" trace="ClientServerInterface$D2" />
+      <node id="4957503999940788294" at="79,0,80,0" concept="8" trace="port$VaJO" />
+      <node id="4957503999940788294" at="80,0,81,0" concept="8" trace="op$VaYP" />
+      <node id="4957503999940788294" at="81,0,82,0" concept="8" trace="intf$QYND" />
+      <node id="4957503999940788294" at="27,0,30,0" concept="1" trace="Step_Constraints#()V" />
+      <node id="4957503999940788295" at="38,0,42,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4957503999940788295" at="42,0,46,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4957503999940788321" at="54,0,58,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4957503999940788321" at="58,0,62,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4957503999940788295" at="36,56,46,10" concept="6" />
+      <node id="4957503999940788321" at="52,56,62,10" concept="6" />
+      <node id="4957503999940788295" at="34,0,48,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4957503999940788321" at="50,0,64,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4957503999940788295" at="32,90,48,6" concept="5" />
+      <node id="4957503999940788321" at="48,6,64,6" concept="5" />
+      <node id="4957503999940788294" at="31,0,70,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4957503999940788294" at="27,29,28,28" />
+      <scope id="4957503999940788295" at="39,63,40,145" />
+      <scope id="4957503999940788295" at="43,80,44,263" />
+      <scope id="4957503999940788321" at="55,63,56,145" />
+      <scope id="4957503999940788321" at="59,80,60,300" />
+      <scope id="4957503999940788294" at="27,0,30,0" />
+      <scope id="4957503999940788295" at="38,0,42,0" />
+      <scope id="4957503999940788295" at="42,0,46,0">
+        <var name="_context" id="4957503999940788295" />
+      </scope>
+      <scope id="4957503999940788321" at="54,0,58,0" />
+      <scope id="4957503999940788321" at="58,0,62,0">
+        <var name="_context" id="4957503999940788321" />
+      </scope>
+      <scope id="4957503999940788295" at="36,56,46,10" />
+      <scope id="4957503999940788321" at="52,56,62,10" />
+      <scope id="4957503999940788295" at="34,0,48,0" />
+      <scope id="4957503999940788321" at="50,0,64,0" />
+      <scope id="4957503999940788294" at="32,90,68,22">
+        <var name="d0" id="4957503999940788295" />
+        <var name="d1" id="4957503999940788321" />
+        <var name="references" id="4957503999940788294" />
+      </scope>
+      <scope id="4957503999940788294" at="31,0,70,0" />
+      <unit id="4957503999940788294" at="78,0,83,0" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints$LINKS" />
+      <unit id="4957503999940788294" at="71,0,77,0" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints$CONCEPTS" />
+      <unit id="4957503999940788295" at="37,19,46,9" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints$1$1" />
+      <unit id="4957503999940788321" at="53,19,62,9" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints$2$1" />
+      <unit id="4957503999940788295" at="33,48,48,5" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints$1" />
+      <unit id="4957503999940788321" at="49,48,64,5" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints$2" />
+      <unit id="4957503999940788294" at="26,0,84,0" name="com.mbeddr.ext.components.mock.constraints.Step_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/6041318036222173317">
+    <file name="Expectation_Constraints.java">
+      <node id="6041318036222173317" at="26,36,27,35" concept="10" />
+      <node id="6041318036222173317" at="34,127,35,128" concept="5" />
+      <node id="6041318036222173317" at="35,128,36,0" concept="7" />
+      <node id="6041318036222173317" at="37,55,38,71" concept="2" />
+      <node id="6041318036222173317" at="39,9,40,0" concept="7" />
+      <node id="6041318036222173317" at="40,0,41,22" concept="6" />
+      <node id="6041318036222176297" at="46,59,47,60" concept="10" />
+      <node id="6041318036222176300" at="50,40,51,66" concept="6" />
+      <node id="6041318036222176371" at="54,38,55,43" concept="6" />
+      <node id="6041318036222176371" at="56,7,57,18" concept="6" />
+      <node id="6041318036222173317" at="61,84,62,119" concept="5" />
+      <node id="6041318036222176297" at="62,119,63,61" concept="2" />
+      <node id="6041318036222173317" at="63,61,64,22" concept="6" />
+      <node id="8237807170236482423" at="66,128,67,105" concept="6" />
+      <node id="6041318036222173317" at="69,0,70,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="6041318036222173317" at="72,0,73,0" concept="8" trace="Expectation$50" />
+      <node id="6041318036222173317" at="73,0,74,0" concept="8" trace="MockComponent$E0" />
+      <node id="6041318036222173317" at="77,0,78,0" concept="8" trace="name$MnvL" />
+      <node id="6041318036222173317" at="26,0,29,0" concept="1" trace="Expectation_Constraints#()V" />
+      <node id="6041318036222173317" at="36,0,39,9" concept="3" />
+      <node id="6041318036222176297" at="46,0,49,0" concept="1" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6041318036222176371" at="53,74,56,7" concept="3" />
+      <node id="6041318036222173317" at="66,0,69,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6041318036222176297" at="49,0,53,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="6041318036222176371" at="53,0,59,0" concept="9" trace="check_gyu4hl_a0a0a#(Lorg/jetbrains/mps/openapi/language/SConcept;)Ljava/lang/String;" />
+      <node id="6041318036222173317" at="60,0,66,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="6041318036222173317" at="33,0,43,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6041318036222173317" at="31,103,43,6" concept="6" />
+      <node id="6041318036222173317" at="30,0,45,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="6041318036222173317" at="26,36,27,35" />
+      <scope id="6041318036222173317" at="37,55,38,71" />
+      <scope id="6041318036222176297" at="46,59,47,60" />
+      <scope id="6041318036222176299" at="50,40,51,66" />
+      <scope id="6041318036222176371" at="54,38,55,43" />
+      <scope id="8237807170236482422" at="66,128,67,105" />
+      <scope id="6041318036222173317" at="26,0,29,0" />
+      <scope id="6041318036222176297" at="46,0,49,0">
+        <var name="container" id="6041318036222176297" />
+      </scope>
+      <scope id="6041318036222173317" at="61,84,64,22">
+        <var name="properties" id="6041318036222173317" />
+      </scope>
+      <scope id="6041318036222173317" at="66,0,69,0">
+        <var name="childConcept" id="6041318036222173317" />
+        <var name="link" id="6041318036222173317" />
+        <var name="node" id="6041318036222173317" />
+        <var name="parentNode" id="6041318036222173317" />
+      </scope>
+      <scope id="6041318036222176297" at="49,0,53,0">
+        <var name="node" id="6041318036222176297" />
+      </scope>
+      <scope id="6041318036222176371" at="53,74,57,18" />
+      <scope id="6041318036222176371" at="53,0,59,0">
+        <var name="checkedDotOperand" id="6041318036222176371" />
+      </scope>
+      <scope id="6041318036222173317" at="60,0,66,0" />
+      <scope id="6041318036222173317" at="34,127,41,22">
+        <var name="result" id="6041318036222173317" />
+      </scope>
+      <scope id="6041318036222173317" at="33,0,43,0">
+        <var name="checkingNodeContext" id="6041318036222173317" />
+        <var name="context" id="6041318036222173317" />
+      </scope>
+      <scope id="6041318036222173317" at="31,103,43,6" />
+      <scope id="6041318036222173317" at="30,0,45,0" />
+      <unit id="6041318036222173317" at="76,0,79,0" name="com.mbeddr.ext.components.mock.constraints.Expectation_Constraints$PROPS" />
+      <unit id="6041318036222173317" at="71,0,75,0" name="com.mbeddr.ext.components.mock.constraints.Expectation_Constraints$CONCEPTS" />
+      <unit id="6041318036222173317" at="32,15,43,5" name="com.mbeddr.ext.components.mock.constraints.Expectation_Constraints$1" />
+      <unit id="6041318036222176297" at="45,0,60,0" name="com.mbeddr.ext.components.mock.constraints.Expectation_Constraints$Name_Property" />
+      <unit id="6041318036222173317" at="25,0,80,0" name="com.mbeddr.ext.components.mock.constraints.Expectation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/6307143892175683237">
+    <file name="StubCounterExpr_Constraints.java">
+      <node id="6307143892175683237" at="20,40,21,39" concept="10" />
+      <node id="6307143892175683237" at="28,127,29,128" concept="5" />
+      <node id="6307143892175683237" at="29,128,30,0" concept="7" />
+      <node id="6307143892175683237" at="31,55,32,71" concept="2" />
+      <node id="6307143892175683237" at="33,9,34,0" concept="7" />
+      <node id="6307143892175683237" at="34,0,35,22" concept="6" />
+      <node id="8237807170236482454" at="39,128,40,106" concept="6" />
+      <node id="6307143892175683237" at="42,0,43,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="6307143892175683237" at="45,0,46,0" concept="8" trace="StubCounterExpr$YB" />
+      <node id="6307143892175683237" at="46,0,47,0" concept="8" trace="StubComponent$3D" />
+      <node id="6307143892175683237" at="20,0,23,0" concept="1" trace="StubCounterExpr_Constraints#()V" />
+      <node id="6307143892175683237" at="30,0,33,9" concept="3" />
+      <node id="6307143892175683237" at="39,0,42,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6307143892175683237" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6307143892175683237" at="25,103,37,6" concept="6" />
+      <node id="6307143892175683237" at="24,0,39,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="6307143892175683237" at="20,40,21,39" />
+      <scope id="6307143892175683237" at="31,55,32,71" />
+      <scope id="8237807170236482453" at="39,128,40,106" />
+      <scope id="6307143892175683237" at="20,0,23,0" />
+      <scope id="6307143892175683237" at="39,0,42,0">
+        <var name="childConcept" id="6307143892175683237" />
+        <var name="link" id="6307143892175683237" />
+        <var name="node" id="6307143892175683237" />
+        <var name="parentNode" id="6307143892175683237" />
+      </scope>
+      <scope id="6307143892175683237" at="28,127,35,22">
+        <var name="result" id="6307143892175683237" />
+      </scope>
+      <scope id="6307143892175683237" at="27,0,37,0">
+        <var name="checkingNodeContext" id="6307143892175683237" />
+        <var name="context" id="6307143892175683237" />
+      </scope>
+      <scope id="6307143892175683237" at="25,103,37,6" />
+      <scope id="6307143892175683237" at="24,0,39,0" />
+      <unit id="6307143892175683237" at="44,0,48,0" name="com.mbeddr.ext.components.mock.constraints.StubCounterExpr_Constraints$CONCEPTS" />
+      <unit id="6307143892175683237" at="26,15,37,5" name="com.mbeddr.ext.components.mock.constraints.StubCounterExpr_Constraints$1" />
+      <unit id="6307143892175683237" at="19,0,49,0" name="com.mbeddr.ext.components.mock.constraints.StubCounterExpr_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/6329057548771013496">
+    <file name="PhaseChangeTrigger_Constraints.java">
+      <node id="6329057548771013496" at="20,43,21,42" concept="10" />
+      <node id="6329057548771013496" at="28,127,29,128" concept="5" />
+      <node id="6329057548771013496" at="29,128,30,0" concept="7" />
+      <node id="6329057548771013496" at="31,55,32,71" concept="2" />
+      <node id="6329057548771013496" at="33,9,34,0" concept="7" />
+      <node id="6329057548771013496" at="34,0,35,22" concept="6" />
+      <node id="8237807170236482444" at="39,128,40,106" concept="6" />
+      <node id="6329057548771013496" at="42,0,43,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="6329057548771013496" at="45,0,46,0" concept="8" trace="PhaseChangeTrigger$yf" />
+      <node id="6329057548771013496" at="46,0,47,0" concept="8" trace="StubComponent$3D" />
+      <node id="6329057548771013496" at="20,0,23,0" concept="1" trace="PhaseChangeTrigger_Constraints#()V" />
+      <node id="6329057548771013496" at="30,0,33,9" concept="3" />
+      <node id="6329057548771013496" at="39,0,42,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6329057548771013496" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6329057548771013496" at="25,103,37,6" concept="6" />
+      <node id="6329057548771013496" at="24,0,39,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="6329057548771013496" at="20,43,21,42" />
+      <scope id="6329057548771013496" at="31,55,32,71" />
+      <scope id="8237807170236482443" at="39,128,40,106" />
+      <scope id="6329057548771013496" at="20,0,23,0" />
+      <scope id="6329057548771013496" at="39,0,42,0">
+        <var name="childConcept" id="6329057548771013496" />
+        <var name="link" id="6329057548771013496" />
+        <var name="node" id="6329057548771013496" />
+        <var name="parentNode" id="6329057548771013496" />
+      </scope>
+      <scope id="6329057548771013496" at="28,127,35,22">
+        <var name="result" id="6329057548771013496" />
+      </scope>
+      <scope id="6329057548771013496" at="27,0,37,0">
+        <var name="checkingNodeContext" id="6329057548771013496" />
+        <var name="context" id="6329057548771013496" />
+      </scope>
+      <scope id="6329057548771013496" at="25,103,37,6" />
+      <scope id="6329057548771013496" at="24,0,39,0" />
+      <unit id="6329057548771013496" at="44,0,48,0" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeTrigger_Constraints$CONCEPTS" />
+      <unit id="6329057548771013496" at="26,15,37,5" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeTrigger_Constraints$1" />
+      <unit id="6329057548771013496" at="19,0,49,0" name="com.mbeddr.ext.components.mock.constraints.PhaseChangeTrigger_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:be3e7b1f-38b9-4122-99bb-08c003e53762(com.mbeddr.ext.components.mock.constraints)/6329057548771013573">
+    <file name="PhaseRefExpression_Constraints.java">
+      <node id="6329057548771013573" at="28,43,29,42" concept="10" />
+      <node id="6329057548771013576" at="40,63,41,145" concept="6" />
+      <node id="6491070606984442388" at="44,80,45,125" concept="5" />
+      <node id="6491070606984442398" at="46,33,47,107" concept="6" />
+      <node id="6491070606984442407" at="48,20,49,77" concept="6" />
+      <node id="6329057548771013573" at="54,6,55,131" concept="5" />
+      <node id="6329057548771013576" at="55,131,56,42" concept="2" />
+      <node id="6329057548771013573" at="56,42,57,22" concept="6" />
+      <node id="6329057548771013573" at="61,0,62,0" concept="8" trace="PhaseRefExpression$uj" />
+      <node id="6329057548771013573" at="62,0,63,0" concept="8" trace="StubComponent$3D" />
+      <node id="6329057548771013573" at="66,0,67,0" concept="8" trace="phase$raSP" />
+      <node id="6329057548771013573" at="67,0,68,0" concept="8" trace="phases$8j$M" />
+      <node id="6491070606984442405" at="48,18,50,13" concept="0" />
+      <node id="6329057548771013573" at="28,0,31,0" concept="1" trace="PhaseRefExpression_Constraints#()V" />
+      <node id="6329057548771013576" at="39,0,43,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="6491070606984442396" at="45,125,50,13" concept="3" />
+      <node id="6329057548771013576" at="43,0,52,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="6329057548771013576" at="37,56,52,10" concept="6" />
+      <node id="6329057548771013576" at="35,0,54,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="6329057548771013576" at="33,90,54,6" concept="5" />
+      <node id="6329057548771013573" at="32,0,59,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="6329057548771013573" at="28,43,29,42" />
+      <scope id="6329057548771013576" at="40,63,41,145" />
+      <scope id="6491070606984442397" at="46,33,47,107" />
+      <scope id="6491070606984442406" at="48,20,49,77" />
+      <scope id="6329057548771013573" at="28,0,31,0" />
+      <scope id="6329057548771013576" at="39,0,43,0" />
+      <scope id="6329057548771013576" at="44,80,50,13">
+        <var name="stub" id="6491070606984442389" />
+      </scope>
+      <scope id="6329057548771013576" at="43,0,52,0">
+        <var name="_context" id="6329057548771013576" />
+      </scope>
+      <scope id="6329057548771013576" at="37,56,52,10" />
+      <scope id="6329057548771013576" at="35,0,54,0" />
+      <scope id="6329057548771013573" at="33,90,57,22">
+        <var name="d0" id="6329057548771013576" />
+        <var name="references" id="6329057548771013573" />
+      </scope>
+      <scope id="6329057548771013573" at="32,0,59,0" />
+      <unit id="6329057548771013573" at="60,0,64,0" name="com.mbeddr.ext.components.mock.constraints.PhaseRefExpression_Constraints$CONCEPTS" />
+      <unit id="6329057548771013573" at="65,0,69,0" name="com.mbeddr.ext.components.mock.constraints.PhaseRefExpression_Constraints$LINKS" />
+      <unit id="6329057548771013576" at="38,19,52,9" name="com.mbeddr.ext.components.mock.constraints.PhaseRefExpression_Constraints$1$1" />
+      <unit id="6329057548771013576" at="34,48,54,5" name="com.mbeddr.ext.components.mock.constraints.PhaseRefExpression_Constraints$1" />
+      <unit id="6329057548771013573" at="27,0,70,0" name="com.mbeddr.ext.components.mock.constraints.PhaseRefExpression_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

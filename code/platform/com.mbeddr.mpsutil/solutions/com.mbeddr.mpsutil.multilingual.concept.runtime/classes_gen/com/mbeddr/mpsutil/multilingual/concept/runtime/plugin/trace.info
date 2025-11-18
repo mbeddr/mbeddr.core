@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1/r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)/4912572611768257501">
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="4912572611768257501" at="10,0,12,0" concept="0" trace="Runtime_ProjectPlugin#()V" />
+      <node id="4912572611768257501" at="12,0,15,0" concept="4" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="4912572611768257501" at="10,34,10,34" />
+      <scope id="4912572611768257501" at="12,62,13,72" />
+      <scope id="4912572611768257501" at="10,0,12,0" />
+      <scope id="4912572611768257501" at="12,0,15,0">
+        <var name="parts" id="4912572611768257501" />
+      </scope>
+      <unit id="4912572611768257501" at="9,0,16,0" name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1/r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)/4912572611768257502">
+    <file name="MultilingualConceptProjectPlugin_ProjectPluginPart.java">
+      <node id="4912572611768257503" at="11,0,12,0" concept="2" trace="SHOW_TRANSLATIONS_KEY" />
+      <node id="4912572611768257509" at="15,40,16,104" concept="5" />
+      <node id="4912572611768257513" at="16,104,17,116" concept="5" />
+      <node id="4912572611768257519" at="17,116,18,0" concept="7" />
+      <node id="4912572611768257520" at="18,0,19,262" concept="1" />
+      <node id="4912572611768257535" at="22,43,23,104" concept="5" />
+      <node id="4912572611768257539" at="23,104,24,116" concept="5" />
+      <node id="4912572611768257545" at="24,116,25,0" concept="7" />
+      <node id="4912572611768257546" at="25,0,26,272" concept="1" />
+      <node id="4912572611768257502" at="12,0,14,0" concept="0" trace="MultilingualConceptProjectPlugin_ProjectPluginPart#()V" />
+      <node id="4912572611768257502" at="14,0,21,0" concept="4" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="4912572611768257502" at="21,0,28,0" concept="4" trace="dispose#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="4912572611768257502" at="12,63,12,63" />
+      <scope id="4912572611768257502" at="12,0,14,0" />
+      <scope id="4912572611768257508" at="15,40,19,262">
+        <var name="propertiesComponent" id="4912572611768257514" />
+        <var name="translationProvider" id="4912572611768257510" />
+      </scope>
+      <scope id="4912572611768257534" at="22,43,26,272">
+        <var name="propertiesComponent" id="4912572611768257540" />
+        <var name="translationProvider" id="4912572611768257536" />
+      </scope>
+      <scope id="4912572611768257502" at="14,0,21,0">
+        <var name="project" id="4912572611768257502" />
+      </scope>
+      <scope id="4912572611768257502" at="21,0,28,0">
+        <var name="project" id="4912572611768257502" />
+      </scope>
+      <unit id="4912572611768257502" at="10,0,29,0" name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.MultilingualConceptProjectPlugin_ProjectPluginPart" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="4912572611768257502" at="12,62,13,72" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1/r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)/4912572611768465403">
+    <file name="MultilingualConceptPluginHelper.java">
+      <node id="4912572611768491217" at="7,62,8,52" concept="6" />
+      <node id="4912572611768491215" at="7,0,10,0" concept="9" trace="concatKey#(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="4912572611768491216" at="7,62,8,52" />
+      <scope id="4912572611768491215" at="7,0,10,0">
+        <var name="context" id="4912572611768491229" />
+        <var name="key" id="4912572611768491231" />
+      </scope>
+      <unit id="4912572611768465403" at="6,0,11,0" name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.MultilingualConceptPluginHelper" />
+    </file>
+  </root>
+  <root nodeRef="c038e2c4-0a5f-47e2-a3e8-327c1084f6a1/r:86fa5f44-7382-488b-81e3-2a8da8e2ebdd(com.mbeddr.mpsutil.multilingual.concept.runtime/com.mbeddr.mpsutil.multilingual.concept.runtime.plugin)/4912572611768497477">
+    <file name="MultilingualTranslationProvider.java">
+      <node id="4912572611768511629" at="7,0,8,0" concept="8" trace="instance" />
+      <node id="4802078767697886274" at="13,27,14,55" concept="1" />
+      <node id="4802078767697888474" at="15,5,16,0" concept="7" />
+      <node id="4802078767697888718" at="16,0,17,20" concept="6" />
+      <node id="4912572611768531904" at="20,0,21,0" concept="2" trace="showTranslations" />
+      <node id="1934708319409059863" at="21,0,22,0" concept="2" trace="showTranslationsIntentionEnabled" />
+      <node id="4912572611768531911" at="23,39,24,28" concept="6" />
+      <node id="4912572611768531917" at="27,61,28,45" concept="1" />
+      <node id="1934708319409060536" at="31,55,32,44" concept="6" />
+      <node id="1934708319409060542" at="35,93,36,77" concept="1" />
+      <node id="2510545900187751337" at="9,0,11,0" concept="0" trace="MultilingualTranslationProvider#()V" />
+      <node id="4802078767697885942" at="12,63,15,5" concept="3" />
+      <node id="4912572611768531907" at="23,0,26,0" concept="4" trace="isShowTranslations#()Z" />
+      <node id="4912572611768531913" at="27,0,30,0" concept="4" trace="setShowTranslations#(Z)V" />
+      <node id="1934708319409060532" at="31,0,34,0" concept="4" trace="isShowTranslationsIntentionEnabled#()Z" />
+      <node id="1934708319409060538" at="35,0,38,0" concept="4" trace="setShowTranslationsIntentionEnabled#(Z)V" />
+      <node id="2510545900187751342" at="12,0,19,0" concept="9" trace="getInstance#()Lcom/mbeddr/mpsutil/multilingual/concept/runtime/plugin/MultilingualTranslationProvider;" />
+      <scope id="2510545900187751340" at="9,45,9,45" />
+      <scope id="4802078767697885943" at="13,27,14,55" />
+      <scope id="4912572611768531910" at="23,39,24,28" />
+      <scope id="4912572611768531916" at="27,61,28,45" />
+      <scope id="1934708319409060535" at="31,55,32,44" />
+      <scope id="1934708319409060541" at="35,93,36,77" />
+      <scope id="2510545900187751337" at="9,0,11,0" />
+      <scope id="4912572611768531907" at="23,0,26,0" />
+      <scope id="4912572611768531913" at="27,0,30,0">
+        <var name="showTranslations" id="4912572611768531923" />
+      </scope>
+      <scope id="1934708319409060532" at="31,0,34,0" />
+      <scope id="1934708319409060538" at="35,0,38,0">
+        <var name="showTranslationsIntentionEnabled" id="1934708319409060545" />
+      </scope>
+      <scope id="2510545900187751343" at="12,63,17,20" />
+      <scope id="2510545900187751342" at="12,0,19,0" />
+      <unit id="4912572611768497477" at="6,0,39,0" name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.MultilingualTranslationProvider" />
+    </file>
+  </root>
+</debug-info>
+

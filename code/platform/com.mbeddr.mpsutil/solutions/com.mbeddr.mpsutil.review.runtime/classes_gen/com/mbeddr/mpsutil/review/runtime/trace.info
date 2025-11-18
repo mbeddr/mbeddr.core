@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:2b3b5f84-66ef-4014-bab0-8d3017aa7a4e(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime)/8455208232410320102">
+    <file name="ReviewMarginCellStyle.java">
+      <node id="8455208232410320103" at="18,0,19,0" concept="6" trace="CREATOR_KEY" />
+      <node id="8455208232410320112" at="20,0,21,0" concept="6" trace="creatorColors" />
+      <node id="8455208232410320122" at="22,0,23,0" concept="6" trace="availableCreatorColors" />
+      <node id="8455208232410320156" at="26,53,27,69" concept="3" />
+      <node id="8455208232410320165" at="27,69,28,0" concept="5" />
+      <node id="8455208232410320168" at="29,69,30,203" concept="0" />
+      <node id="8455208232410320190" at="31,68,32,191" concept="0" />
+      <node id="8455208232410320214" at="34,5,35,0" concept="5" />
+      <node id="8455208232410320215" at="35,0,36,59" concept="4" />
+      <node id="8455208232410320188" at="30,203,33,7" concept="1" />
+      <node id="8455208232410320166" at="28,0,34,5" concept="1" />
+      <node id="8455208232410320150" at="25,0,38,0" concept="2" trace="getLineColor#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljava/awt/Color;" />
+      <scope id="8455208232410320189" at="31,68,32,191" />
+      <scope id="8455208232410320167" at="29,69,33,7" />
+      <scope id="8455208232410320155" at="26,53,36,59">
+        <var name="creator" id="8455208232410320157" />
+      </scope>
+      <scope id="8455208232410320150" at="25,0,38,0">
+        <var name="contentCell" id="8455208232410320151" />
+      </scope>
+      <unit id="8455208232410320102" at="17,0,39,0" name="com.mbeddr.mpsutil.review.runtime.ReviewMarginCellStyle" />
+    </file>
+  </root>
+</debug-info>
+

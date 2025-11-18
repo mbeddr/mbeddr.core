@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:4cc5fae5-5c15-4e9e-97c5-f935f1e9571f(com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util)/5656577636281341739">
+    <file name="ArrayCopyUtil.java">
+      <node id="5656577636285899006" at="26,68,27,122" concept="7" />
+      <node id="5656577636285912426" at="28,12,29,98" concept="7" />
+      <node id="5656577636297579459" at="33,79,34,253" concept="6" />
+      <node id="5656577636297646403" at="34,253,35,255" concept="6" />
+      <node id="5656577636284431411" at="35,255,36,147" concept="6" />
+      <node id="5656577636284426499" at="36,147,37,150" concept="6" />
+      <node id="5656577636281492381" at="40,93,41,90" concept="6" />
+      <node id="5656577636281492381" at="41,90,42,21" concept="7" />
+      <node id="5656577636281492566" at="44,93,45,91" concept="6" />
+      <node id="5656577636281492566" at="45,91,46,21" concept="7" />
+      <node id="5656577636281492308" at="48,93,49,203" concept="6" />
+      <node id="5656577636281492353" at="49,203,50,84" concept="1" />
+      <node id="5656577636281492535" at="50,84,51,85" concept="1" />
+      <node id="5656577636281492308" at="51,85,52,21" concept="7" />
+      <node id="5656577636281486665" at="54,87,55,209" concept="6" />
+      <node id="5656577636281489600" at="55,209,56,84" concept="1" />
+      <node id="5656577636281486665" at="56,84,57,21" concept="7" />
+      <node id="5656577636281485488" at="58,20,59,40" concept="7" />
+      <node id="5656577636297767906" at="64,113,65,45" concept="6" />
+      <node id="5656577636297753547" at="70,35,71,208" concept="6" />
+      <node id="5656577636297753544" at="71,208,72,91" concept="1" />
+      <node id="5656577636297753547" at="72,91,73,25" concept="7" />
+      <node id="5656577636300976714" at="77,35,78,206" concept="6" />
+      <node id="5656577636300976714" at="78,206,79,25" concept="7" />
+      <node id="5656577636297753550" at="83,35,84,207" concept="6" />
+      <node id="5656577636297753543" at="84,207,85,93" concept="1" />
+      <node id="5656577636297753548" at="85,93,86,94" concept="1" />
+      <node id="5656577636297753550" at="86,94,87,25" concept="7" />
+      <node id="5656577636297753541" at="89,21,90,42" concept="7" />
+      <node id="5656577636300776634" at="93,76,94,60" concept="6" />
+      <node id="5656577636301355963" at="94,60,95,161" concept="6" />
+      <node id="5656577636300781207" at="98,37,99,210" concept="6" />
+      <node id="5656577636300781204" at="99,210,100,93" concept="1" />
+      <node id="5656577636300781207" at="100,93,101,27" concept="7" />
+      <node id="5656577636300781972" at="105,37,106,208" concept="6" />
+      <node id="5656577636300781972" at="106,208,107,27" concept="7" />
+      <node id="5656577636300781213" at="111,37,112,209" concept="6" />
+      <node id="5656577636300781203" at="112,209,113,95" concept="1" />
+      <node id="5656577636300781208" at="113,95,114,96" concept="1" />
+      <node id="5656577636300781213" at="114,96,115,27" concept="7" />
+      <node id="5656577636300781201" at="117,23,118,44" concept="7" />
+      <node id="5656577636300784159" at="119,23,120,54" concept="1" />
+      <node id="5656577636297854357" at="124,95,125,123" concept="7" />
+      <node id="5656577636300833380" at="126,12,127,263" concept="1" />
+      <node id="5656577636297853883" at="127,263,128,17" concept="7" />
+      <node id="5656577636281341739" at="133,0,134,0" concept="8" trace="ArrayType$WW" />
+      <node id="5656577636281341739" at="134,0,135,0" concept="8" trace="ArrayAccessExpr$IH" />
+      <node id="5656577636281341739" at="138,0,139,0" concept="8" trace="baseType$zMGV" />
+      <node id="5656577636281341739" at="139,0,140,0" concept="8" trace="left$SkXz" />
+      <node id="5656577636281341739" at="140,0,141,0" concept="8" trace="right$Slc$" />
+      <node id="5656577636281341739" at="141,0,142,0" concept="8" trace="statements$euTV" />
+      <node id="5656577636281341739" at="142,0,143,0" concept="8" trace="expr$vamr" />
+      <node id="5656577636281341739" at="143,0,144,0" concept="8" trace="indexExpr$2oee" />
+      <node id="5656577636281341739" at="144,0,145,0" concept="8" trace="expression$PfNq" />
+      <node id="5656577636281341739" at="148,0,149,0" concept="8" trace="value$qZmE" />
+      <node id="5656577636285911936" at="28,10,30,5" concept="0" />
+      <node id="5656577636297853471" at="126,10,129,5" concept="0" />
+      <node id="5656577636281492353" at="39,152,43,20" concept="6" />
+      <node id="5656577636281492535" at="43,20,47,20" concept="6" />
+      <node id="5656577636300976714" at="77,0,81,0" concept="5" trace="invoke#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5656577636300781972" at="105,0,109,0" concept="5" trace="invoke#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5656577636285894974" at="25,47,30,5" concept="4" />
+      <node id="5656577636281485489" at="53,20,58,20" concept="6" />
+      <node id="5656577636297753547" at="70,0,75,0" concept="5" trace="invoke#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5656577636300781207" at="98,0,103,0" concept="5" trace="invoke#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5656577636281489600" at="47,20,53,20" concept="6" />
+      <node id="5656577636297753548" at="75,21,81,21" concept="6" />
+      <node id="5656577636297753550" at="83,0,89,0" concept="5" trace="invoke#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5656577636300781208" at="103,23,109,23" concept="6" />
+      <node id="5656577636300781213" at="111,0,117,0" concept="5" trace="invoke#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5656577636297838248" at="123,5,129,5" concept="4" />
+      <node id="5656577636285894638" at="25,0,32,0" concept="9" trace="validType#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5656577636297753543" at="68,92,75,21" concept="6" />
+      <node id="5656577636300781203" at="96,117,103,23" concept="6" />
+      <node id="5656577636297753542" at="81,21,89,21" concept="6" />
+      <node id="5656577636300781202" at="109,23,117,23" concept="6" />
+      <node id="5656577636281402980" at="38,142,60,19" concept="1" />
+      <node id="5656577636284445305" at="37,150,61,5" concept="2" />
+      <node id="5656577636297770689" at="67,121,91,21" concept="1" />
+      <node id="5656577636300770934" at="95,161,119,23" concept="1" />
+      <node id="5656577636298081271" at="92,14,121,9" concept="3" />
+      <node id="5656577636281344916" at="33,0,63,0" concept="9" trace="flattenAssignment#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5656577636298080502" at="92,12,122,7" concept="0" />
+      <node id="5656577636298066602" at="66,199,122,7" concept="4" />
+      <node id="5656577636297753487" at="65,45,123,5" concept="2" />
+      <node id="5656577636284018536" at="64,0,131,0" concept="9" trace="buttomUpAssignmExprs#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <scope id="5656577636285894976" at="26,68,27,122" />
+      <scope id="5656577636285911937" at="28,12,29,98" />
+      <scope id="5656577636297838250" at="124,95,125,123" />
+      <scope id="5656577636281492381" at="40,93,42,21">
+        <var name="res" id="5656577636281492381" />
+      </scope>
+      <scope id="5656577636281492566" at="44,93,46,21">
+        <var name="res" id="5656577636281492566" />
+      </scope>
+      <scope id="5656577636300976714" at="77,35,79,25">
+        <var name="res" id="5656577636300976714" />
+      </scope>
+      <scope id="5656577636300781972" at="105,37,107,27">
+        <var name="res" id="5656577636300781972" />
+      </scope>
+      <scope id="5656577636297853472" at="126,12,128,17" />
+      <scope id="5656577636281486665" at="54,87,57,21">
+        <var name="res" id="5656577636281486665" />
+      </scope>
+      <scope id="5656577636297753547" at="70,35,73,25">
+        <var name="res" id="5656577636297753547" />
+      </scope>
+      <scope id="5656577636300781207" at="98,37,101,27">
+        <var name="res" id="5656577636300781207" />
+      </scope>
+      <scope id="5656577636281492308" at="48,93,52,21">
+        <var name="res" id="5656577636281492308" />
+      </scope>
+      <scope id="5656577636300976714" at="77,0,81,0" />
+      <scope id="5656577636297753550" at="83,35,87,25">
+        <var name="res" id="5656577636297753550" />
+      </scope>
+      <scope id="5656577636300781972" at="105,0,109,0" />
+      <scope id="5656577636300781213" at="111,37,115,27">
+        <var name="res" id="5656577636300781213" />
+      </scope>
+      <scope id="5656577636285894159" at="25,47,30,5" />
+      <scope id="5656577636297753547" at="70,0,75,0" />
+      <scope id="5656577636300781207" at="98,0,103,0" />
+      <scope id="5656577636297753550" at="83,0,89,0" />
+      <scope id="5656577636300781213" at="111,0,117,0" />
+      <scope id="5656577636285894638" at="25,0,32,0">
+        <var name="type" id="5656577636285894567" />
+      </scope>
+      <scope id="5656577636281485488" at="39,152,59,40">
+        <var name="node_5656577636281485489" id="5656577636281485489" />
+        <var name="node_5656577636281489600" id="5656577636281489600" />
+        <var name="node_5656577636281492353" id="5656577636281492353" />
+        <var name="node_5656577636281492535" id="5656577636281492535" />
+      </scope>
+      <scope id="5656577636284445307" at="38,142,60,19" />
+      <scope id="5656577636297753541" at="68,92,90,42">
+        <var name="node_5656577636297753542" id="5656577636297753542" />
+        <var name="node_5656577636297753543" id="5656577636297753543" />
+        <var name="node_5656577636297753548" id="5656577636297753548" />
+      </scope>
+      <scope id="5656577636300781201" at="96,117,118,44">
+        <var name="node_5656577636300781202" id="5656577636300781202" />
+        <var name="node_5656577636300781203" id="5656577636300781203" />
+        <var name="node_5656577636300781208" id="5656577636300781208" />
+      </scope>
+      <scope id="5656577636284445305" at="37,150,61,5">
+        <var name="index" id="5656577636284445308" />
+      </scope>
+      <scope id="5656577636298066604" at="67,121,91,21" />
+      <scope id="5656577636298081274" at="93,76,120,54">
+        <var name="bottomExpr" id="5656577636301355964" />
+        <var name="copy" id="5656577636300776635" />
+      </scope>
+      <scope id="5656577636281344894" at="33,79,61,5">
+        <var name="leftArrayAccessExprs" id="5656577636284431412" />
+        <var name="leftBaseArrayType" id="5656577636297579460" />
+        <var name="rightArrayAccessExprs" id="5656577636284426502" />
+        <var name="rightBaseArrayType" id="5656577636297646404" />
+      </scope>
+      <scope id="5656577636298080503" at="92,14,121,9" />
+      <scope id="5656577636298081271" at="92,14,121,9">
+        <var name="accessExpr" id="5656577636298081272" />
+      </scope>
+      <scope id="5656577636281344916" at="33,0,63,0">
+        <var name="assignExpr" id="5656577636281393613" />
+        <var name="statementList" id="5656577636281359737" />
+      </scope>
+      <scope id="5656577636297753488" at="66,199,122,7" />
+      <scope id="5656577636297753487" at="65,45,123,5">
+        <var name="i" id="5656577636297753551" />
+      </scope>
+      <scope id="5656577636284018537" at="64,113,129,5">
+        <var name="res" id="5656577636297767907" />
+      </scope>
+      <scope id="5656577636284018536" at="64,0,131,0">
+        <var name="expr" id="5656577636284399478" />
+        <var name="topLevelAccessExpr" id="5656577636284213178" />
+        <var name="type" id="5656577636284033160" />
+      </scope>
+      <unit id="5656577636281341739" at="147,0,150,0" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$PROPS" />
+      <unit id="5656577636281341739" at="132,0,136,0" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$CONCEPTS" />
+      <unit id="5656577636300976714" at="76,53,81,11" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$2" />
+      <unit id="5656577636300781972" at="104,55,109,13" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$5" />
+      <unit id="5656577636297753547" at="69,53,75,11" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$1" />
+      <unit id="5656577636300781207" at="97,55,103,13" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$4" />
+      <unit id="5656577636297753550" at="82,47,89,11" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$3" />
+      <unit id="5656577636300781213" at="110,49,117,13" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$6" />
+      <unit id="5656577636281341739" at="137,0,146,0" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil$LINKS" />
+      <unit id="5656577636281341739" at="23,0,151,0" name="com.mbeddr.core.modules.generator.com.mbeddr.core.modules.util.ArrayCopyUtil" />
+    </file>
+  </root>
+</debug-info>
+

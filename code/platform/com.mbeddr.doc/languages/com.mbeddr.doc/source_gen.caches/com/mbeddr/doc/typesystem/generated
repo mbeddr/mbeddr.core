@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="33o1k3ln8zi2q8voins0gw9sdg1lfee">
+  <files names="TypesystemDescriptor.java:check_AbstractCCodeParagraph_NonTypesystemRule.java:check_AbstractExport_NonTypesystemRule.java:check_BuildConfiguration_Presence_NonTypesystemRule.java:check_Chapter_NonTypesystemRule.java:check_DependsOn_NonTypesystemRule.java:check_ImageParagraph_NonTypesystemRule.java:check_PathDefinition_NonTypesystemRule.java:check_ShortcutArg_NonTypesystemRule.java:check_ShortcutRefWord_NonTypesystemRule.java:check_TableRow_NonTypesystemRule.java:check_Visualization_NonTypesystemRule.java:createPathDir_QuickFix.java:fixEmptyCodePointer_QuickFix.java" />
+</product>
+

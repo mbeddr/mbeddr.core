@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-7blhror3qshge2cpc9dm5pgjxt55z14">
+  <files names="TypesystemDescriptor.java:check_FeatureAttrRefExpr_NonTypesystemRule.java:check_VariantCase_NonTypesystemRule.java:check_VariantSwitch_NonTypesystemRule.java:typeof_CreateRtConfigExpr_InferenceRule.java:typeof_FeatureAttrRefExpr_InferenceRule.java:typeof_FeatureRef_InferenceRule.java:typeof_VariantCase_InferenceRule.java" />
+</product>
+

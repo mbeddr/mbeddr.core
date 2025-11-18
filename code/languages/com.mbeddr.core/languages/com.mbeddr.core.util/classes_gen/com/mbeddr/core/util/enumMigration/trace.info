@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:f10a7086-46fb-4b3b-90a4-76146d8d1223(com.mbeddr.core.util.enumMigration)/1214029888595741833">
+    <file name="MessageSeverity_MigrationUtils.java">
+      <node id="1214029888595741841" at="13,13,14,17" concept="0" />
+      <node id="1214029888595741844" at="15,13,16,17" concept="0" />
+      <node id="1214029888595741847" at="17,13,18,17" concept="0" />
+      <node id="1214029888595741854" at="19,14,20,17" concept="0" />
+      <node id="1214029888595741866" at="25,13,26,219" concept="0" />
+      <node id="1214029888595741873" at="27,13,28,218" concept="0" />
+      <node id="1214029888595741880" at="29,13,30,218" concept="0" />
+      <node id="1214029888595741889" at="31,14,32,20" concept="0" />
+      <node id="1214029888595741833" at="35,0,36,0" concept="1" trace="enumSwitchIndex" />
+      <node id="1214029888595741854" at="11,59,21,5" concept="3" />
+      <node id="1214029888595741886" at="23,58,33,5" concept="3" />
+      <node id="1214029888595741848" at="11,0,23,0" concept="2" trace="value#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)I" />
+      <node id="1214029888595741857" at="23,0,35,0" concept="2" trace="fromValue#(I)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="1214029888595741841" at="13,13,14,17" />
+      <scope id="1214029888595741844" at="15,13,16,17" />
+      <scope id="1214029888595741847" at="17,13,18,17" />
+      <scope id="1214029888595741854" at="19,14,20,17" />
+      <scope id="1214029888595741865" at="25,13,26,219" />
+      <scope id="1214029888595741872" at="27,13,28,218" />
+      <scope id="1214029888595741879" at="29,13,30,218" />
+      <scope id="1214029888595741888" at="31,14,32,20" />
+      <scope id="1214029888595741852" at="11,59,21,5" />
+      <scope id="1214029888595741885" at="23,58,33,5" />
+      <scope id="1214029888595741848" at="11,0,23,0">
+        <var name="enummember" id="1214029888595741849" />
+      </scope>
+      <scope id="1214029888595741857" at="23,0,35,0">
+        <var name="value" id="1214029888595741858" />
+      </scope>
+      <unit id="1214029888595741833" at="10,0,37,0" name="com.mbeddr.core.util.enumMigration.MessageSeverity_MigrationUtils" />
+    </file>
+  </root>
+</debug-info>
+

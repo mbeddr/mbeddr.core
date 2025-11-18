@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:95792b17-23d0-4889-a401-c18694fce2bf(com.mbeddr.core.dependencies.plugin)/1315009641672076209">
+    <file name="Dependencies_ApplicationPlugin.java">
+      <node id="1315009641672076209" at="24,13,25,57" concept="2" />
+      <node id="1315009641672076216" at="27,37,28,126" concept="2" />
+      <node id="4276766474763251569" at="28,126,29,130" concept="2" />
+    </file>
+    <file name="VisualizeActionGroup_ActionGroup.java">
+      <node id="1315009641672076209" at="10,0,11,0" concept="11" trace="ID" />
+      <node id="1315009641672076209" at="12,78,13,46" concept="13" />
+      <node id="1315009641672076209" at="13,46,14,25" concept="2" />
+      <node id="1315009641672076209" at="14,25,15,20" concept="2" />
+      <node id="1315009641672076209" at="15,20,16,29" concept="2" />
+      <node id="7350547698094749034" at="16,29,17,115" concept="2" />
+      <node id="1315009641672076209" at="12,0,19,0" concept="1" trace="VisualizeActionGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="1315009641672076209" at="12,78,17,115" />
+      <scope id="1315009641672076209" at="12,0,19,0">
+        <var name="plugin" id="1315009641672076209" />
+      </scope>
+      <unit id="1315009641672076209" at="9,0,20,0" name="com.mbeddr.core.dependencies.plugin.VisualizeActionGroup_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:95792b17-23d0-4889-a401-c18694fce2bf(com.mbeddr.core.dependencies.plugin)/7350547698080894619">
+    <file name="MbeddrCodeBlockAnalyer.java">
+      <node id="7350547698094308438" at="17,87,18,46" concept="13" />
+      <node id="7350547698080894756" at="22,45,23,218" concept="8" />
+      <node id="7350547698080894860" at="26,44,27,216" concept="8" />
+      <node id="7350547698080894883" at="30,43,31,214" concept="8" />
+      <node id="7350547698080894906" at="34,42,35,212" concept="8" />
+      <node id="7350547698080894619" at="39,0,40,0" concept="11" trace="TypeDefType$3U" />
+      <node id="7350547698080894619" at="40,0,41,0" concept="11" trace="StructType$B3" />
+      <node id="7350547698080894619" at="41,0,42,0" concept="11" trace="UnionType$xI" />
+      <node id="7350547698080894619" at="42,0,43,0" concept="11" trace="EnumType$MR" />
+      <node id="7350547698080894619" at="46,0,47,0" concept="11" trace="typeDef$LmRK" />
+      <node id="7350547698080894619" at="47,0,48,0" concept="11" trace="struct$WCsg" />
+      <node id="7350547698080894619" at="48,0,49,0" concept="11" trace="union$RA0L" />
+      <node id="7350547698080894619" at="49,0,50,0" concept="11" trace="enum$UImg" />
+      <node id="7350547698080894632" at="17,0,20,0" concept="1" trace="MbeddrCodeBlockAnalyer#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7350547698080894751" at="22,0,25,0" concept="6" trace="findUsedTypeDefs#()Ljava/lang/Iterable;" />
+      <node id="7350547698080894855" at="26,0,29,0" concept="6" trace="findStructTypes#()Ljava/lang/Iterable;" />
+      <node id="7350547698080894878" at="30,0,33,0" concept="6" trace="findUnionTypes#()Ljava/lang/Iterable;" />
+      <node id="7350547698080894901" at="34,0,37,0" concept="6" trace="findEnumTypes#()Ljava/lang/Iterable;" />
+      <scope id="7350547698080894635" at="17,87,18,46" />
+      <scope id="7350547698080894755" at="22,45,23,218" />
+      <scope id="7350547698080894859" at="26,44,27,216" />
+      <scope id="7350547698080894882" at="30,43,31,214" />
+      <scope id="7350547698080894905" at="34,42,35,212" />
+      <scope id="7350547698080894632" at="17,0,20,0">
+        <var name="contextNode" id="7350547698080894656" />
+        <var name="outsideBoundary" id="7350547698080894658" />
+        <var name="root" id="7350547698080894654" />
+      </scope>
+      <scope id="7350547698080894751" at="22,0,25,0" />
+      <scope id="7350547698080894855" at="26,0,29,0" />
+      <scope id="7350547698080894878" at="30,0,33,0" />
+      <scope id="7350547698080894901" at="34,0,37,0" />
+      <unit id="7350547698080894619" at="38,0,44,0" name="com.mbeddr.core.dependencies.plugin.MbeddrCodeBlockAnalyer$CONCEPTS" />
+      <unit id="7350547698080894619" at="45,0,51,0" name="com.mbeddr.core.dependencies.plugin.MbeddrCodeBlockAnalyer$LINKS" />
+      <unit id="7350547698080894619" at="15,0,52,0" name="com.mbeddr.core.dependencies.plugin.MbeddrCodeBlockAnalyer" />
+    </file>
+  </root>
+  <root nodeRef="r:95792b17-23d0-4889-a401-c18694fce2bf(com.mbeddr.core.dependencies.plugin)/7350547698093335944">
+    <file name="DependencyAnalyzerDialog.java">
+      <node id="7350547698093335948" at="23,60,24,34" concept="7" />
+      <node id="7350547698093335953" at="24,34,25,28" concept="2" />
+      <node id="7350547698093335959" at="25,28,26,24" concept="2" />
+      <node id="7350547698093335965" at="26,24,27,94" concept="2" />
+      <node id="7350547698093335974" at="27,94,28,0" concept="10" />
+      <node id="7350547698093335975" at="28,0,29,36" concept="2" />
+      <node id="7350547698093335981" at="29,36,30,28" concept="7" />
+      <node id="7350547698093335986" at="30,28,31,34" concept="2" />
+      <node id="7350547698093335992" at="31,34,32,0" concept="10" />
+      <node id="7350547698093335993" at="32,0,33,0" concept="10" />
+      <node id="7350547698093335994" at="33,0,34,38" concept="2" />
+      <node id="7350547698093336002" at="34,38,35,80" concept="2" />
+      <node id="7350547698093336009" at="35,80,36,69" concept="2" />
+      <node id="7350547698093336016" at="36,69,37,74" concept="2" />
+      <node id="7350547698093336023" at="37,74,38,63" concept="2" />
+      <node id="7350547698093336030" at="38,63,39,61" concept="2" />
+      <node id="7350547698093336037" at="39,61,40,61" concept="2" />
+      <node id="7350547698093336044" at="40,61,41,54" concept="2" />
+      <node id="7350547698093336051" at="41,54,42,54" concept="2" />
+      <node id="7350547698093336058" at="42,54,43,50" concept="2" />
+      <node id="7350547698093336065" at="43,50,44,67" concept="2" />
+      <node id="7350547698093336072" at="44,67,45,0" concept="10" />
+      <node id="7350547698093336073" at="45,0,46,34" concept="7" />
+      <node id="7350547698093336078" at="46,34,47,41" concept="7" />
+      <node id="7350547698093336084" at="47,41,48,23" concept="2" />
+      <node id="7350547698093336103" at="50,51,51,28" concept="2" />
+      <node id="7350547698093336108" at="53,7,54,26" concept="2" />
+      <node id="7350547698093336112" at="54,26,55,0" concept="10" />
+      <node id="7350547698093336113" at="55,0,56,39" concept="2" />
+      <node id="7350547698093336119" at="56,39,57,0" concept="10" />
+      <node id="7350547698093336120" at="57,0,58,13" concept="2" />
+      <node id="7350547698093336124" at="58,13,59,23" concept="2" />
+      <node id="7350547698093336136" at="62,57,63,43" concept="7" />
+      <node id="7350547698093336141" at="63,43,64,14" concept="7" />
+      <node id="7350547698093336145" at="64,14,65,18" concept="2" />
+      <node id="7350547698093336155" at="67,18,68,24" concept="2" />
+      <node id="7350547698093336165" at="70,71,71,118" concept="2" />
+      <node id="7350547698093336179" at="72,14,73,21" concept="2" />
+      <node id="7350547698093336184" at="74,7,75,10" concept="2" />
+      <node id="7350547698093336187" at="76,5,77,25" concept="8" />
+      <node id="7350547698093336199" at="80,78,81,45" concept="2" />
+      <node id="7350547698093336210" at="81,45,82,46" concept="2" />
+      <node id="7350547698093335944" at="86,0,87,0" concept="11" trace="INamedConcept$Kd" />
+      <node id="7350547698093335944" at="90,0,91,0" concept="11" trace="name$MnvL" />
+      <node id="7350547698093336177" at="72,12,74,7" concept="0" />
+      <node id="7350547698093336097" at="50,0,53,0" concept="6" trace="actionPerformed#(Ljava/awt/event/ActionEvent;)V" />
+      <node id="7350547698093336153" at="66,50,69,7" concept="5" />
+      <node id="7350547698093336197" at="80,0,84,0" concept="12" trace="addPair#(Ljavax/swing/JPanel;Ljava/lang/String;Ljava/lang/Iterable;)V" />
+      <node id="7350547698093336089" at="48,23,53,7" concept="2" />
+      <node id="7350547698093336163" at="69,7,74,7" concept="5" />
+      <node id="7350547698093336149" at="65,18,76,5" concept="4" />
+      <node id="7350547698093336134" at="62,0,79,0" concept="12" trace="toString#(Ljava/lang/Iterable;)Ljava/lang/String;" />
+      <node id="7350547698093335946" at="23,0,61,0" concept="12" trace="show#(Lcom/mbeddr/core/dependencies/plugin/MbeddrCodeBlockAnalyer;)V" />
+      <scope id="7350547698093336102" at="50,51,51,28" />
+      <scope id="7350547698093336154" at="67,18,68,24" />
+      <scope id="7350547698093336164" at="70,71,71,118" />
+      <scope id="7350547698093336178" at="72,14,73,21" />
+      <scope id="7350547698093336198" at="80,78,82,46" />
+      <scope id="7350547698093336097" at="50,0,53,0">
+        <var name="p0" id="7350547698093336100" />
+      </scope>
+      <scope id="7350547698093336197" at="80,0,84,0">
+        <var name="label" id="7350547698093336224" />
+        <var name="nodes" id="7350547698093336226" />
+        <var name="p" id="7350547698093336222" />
+      </scope>
+      <scope id="7350547698093336152" at="66,50,75,10" />
+      <scope id="7350547698093336149" at="65,18,76,5">
+        <var name="n" id="7350547698093336150" />
+      </scope>
+      <scope id="7350547698093336135" at="62,57,77,25">
+        <var name="i" id="7350547698093336142" />
+        <var name="sb" id="7350547698093336137" />
+      </scope>
+      <scope id="7350547698093336134" at="62,0,79,0">
+        <var name="nodes" id="7350547698093336193" />
+      </scope>
+      <scope id="7350547698093335947" at="23,60,59,23">
+        <var name="buttons" id="7350547698093336074" />
+        <var name="close" id="7350547698093336079" />
+        <var name="f" id="7350547698093335949" />
+        <var name="p" id="7350547698093335982" />
+      </scope>
+      <scope id="7350547698093335946" at="23,0,61,0">
+        <var name="analyzer" id="7350547698093336131" />
+      </scope>
+      <unit id="7350547698093335944" at="85,0,88,0" name="com.mbeddr.core.dependencies.plugin.DependencyAnalyzerDialog$CONCEPTS" />
+      <unit id="7350547698093335944" at="89,0,92,0" name="com.mbeddr.core.dependencies.plugin.DependencyAnalyzerDialog$PROPS" />
+      <unit id="7350547698093336095" at="49,32,53,5" name="com.mbeddr.core.dependencies.plugin.DependencyAnalyzerDialog$1" />
+      <unit id="7350547698093335944" at="21,0,93,0" name="com.mbeddr.core.dependencies.plugin.DependencyAnalyzerDialog" />
+    </file>
+  </root>
+  <root nodeRef="r:95792b17-23d0-4889-a401-c18694fce2bf(com.mbeddr.core.dependencies.plugin)/7350547698094636399">
+    <file name="Dependencies_ApplicationPlugin.java">
+      <node id="7350547698094636399" at="11,0,12,0" concept="3" trace="myId" />
+      <node id="7350547698094636399" at="17,27,18,16" concept="8" />
+      <node id="7350547698094636399" at="21,30,22,29" concept="9" />
+      <node id="7350547698094636399" at="23,45,24,13" concept="9" />
+      <node id="7350547698094636399" at="13,0,15,0" concept="1" trace="Dependencies_ApplicationPlugin#()V" />
+      <node id="7350547698094636399" at="16,0,20,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="7350547698094636399" at="27,0,31,0" concept="6" trace="adjustRegularGroups#()V" />
+      <node id="7350547698094636399" at="21,0,27,0" concept="6" trace="createGroups#()V" />
+      <scope id="7350547698094636399" at="13,43,13,43" />
+      <scope id="7350547698094636399" at="17,27,18,16" />
+      <scope id="7350547698094636399" at="13,0,15,0" />
+      <scope id="7350547698094636399" at="27,37,29,130" />
+      <scope id="7350547698094636399" at="16,0,20,0" />
+      <scope id="7350547698094636399" at="21,30,25,57" />
+      <scope id="7350547698094636399" at="27,0,31,0" />
+      <scope id="7350547698094636399" at="21,0,27,0" />
+      <unit id="7350547698094636399" at="10,0,32,0" name="com.mbeddr.core.dependencies.plugin.Dependencies_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:95792b17-23d0-4889-a401-c18694fce2bf(com.mbeddr.core.dependencies.plugin)/7350547698094637659">
+    <file name="Dependencies_ApplicationPlugin.java">
+      <node id="7350547698094637659" at="22,29,23,45" concept="2" />
+    </file>
+    <file name="ShowDependencies_Action.java">
+      <node id="7350547698094637659" at="21,0,22,0" concept="11" trace="ICON" />
+      <node id="7350547698094637659" at="23,36,24,41" concept="13" />
+      <node id="7350547698094637659" at="24,41,25,35" concept="2" />
+      <node id="7350547698094637659" at="25,35,26,52" concept="2" />
+      <node id="7350547698094637659" at="26,52,27,29" concept="2" />
+      <node id="7350547698094637659" at="30,32,31,16" concept="8" />
+      <node id="7350547698094637659" at="35,53,36,19" concept="8" />
+      <node id="6472990431939816279" at="38,5,39,56" concept="7" />
+      <node id="6472990431939816280" at="40,22,41,21" concept="8" />
+      <node id="6472990431939816281" at="44,5,45,57" concept="7" />
+      <node id="6472990431939816281" at="46,93,47,20" concept="2" />
+      <node id="6472990431939816283" at="49,25,50,21" concept="8" />
+      <node id="7350547698094637659" at="52,5,53,16" concept="8" />
+      <node id="7350547698093327528" at="56,96,57,248" concept="7" />
+      <node id="7350547698093327538" at="57,248,58,37" concept="2" />
+      <node id="7350547698094637659" at="62,0,63,0" concept="11" trace="IFunctionLike$zN" />
+      <node id="7350547698094637659" at="34,95,37,5" concept="5" />
+      <node id="6472990431939816280" at="39,56,42,7" concept="5" />
+      <node id="6472990431939816281" at="45,57,48,7" concept="5" />
+      <node id="6472990431939816283" at="48,7,51,7" concept="5" />
+      <node id="7350547698094637659" at="29,0,33,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="7350547698094637659" at="55,0,60,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="7350547698094637659" at="23,0,29,0" concept="1" trace="ShowDependencies_Action#()V" />
+      <node id="6472990431939816279" at="37,5,43,5" concept="0" />
+      <node id="6472990431939816281" at="43,5,52,5" concept="0" />
+      <node id="7350547698094637659" at="33,0,55,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="7350547698094637659" at="30,32,31,16" />
+      <scope id="7350547698094637659" at="35,53,36,19" />
+      <scope id="6472990431939816280" at="40,22,41,21" />
+      <scope id="6472990431939816281" at="46,93,47,20" />
+      <scope id="6472990431939816283" at="49,25,50,21" />
+      <scope id="7350547698094637659" at="56,96,58,37">
+        <var name="d" id="7350547698093327529" />
+      </scope>
+      <scope id="7350547698094637659" at="23,36,27,29" />
+      <scope id="7350547698094637659" at="29,0,33,0" />
+      <scope id="6472990431939816279" at="38,5,42,7">
+        <var name="p" id="6472990431939816279" />
+      </scope>
+      <scope id="7350547698094637659" at="55,0,60,0">
+        <var name="_params" id="7350547698094637659" />
+        <var name="event" id="7350547698094637659" />
+      </scope>
+      <scope id="7350547698094637659" at="23,0,29,0" />
+      <scope id="6472990431939816281" at="44,5,51,7">
+        <var name="node" id="6472990431939816281" />
+      </scope>
+      <scope id="7350547698094637659" at="34,95,53,16" />
+      <scope id="7350547698094637659" at="33,0,55,0">
+        <var name="_params" id="7350547698094637659" />
+        <var name="event" id="7350547698094637659" />
+      </scope>
+      <unit id="7350547698094637659" at="61,0,64,0" name="com.mbeddr.core.dependencies.plugin.ShowDependencies_Action$CONCEPTS" />
+      <unit id="7350547698094637659" at="20,0,65,0" name="com.mbeddr.core.dependencies.plugin.ShowDependencies_Action" />
+    </file>
+  </root>
+</debug-info>
+

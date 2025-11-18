@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,31,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:52d0d8c1-a4fe-46a1-b193-682645ea5e8d(com.mbeddr.mpsutil.multilingual.common.constraints)/568377005202722033">
+    <file name="MessageKey_Constraints.java">
+      <node id="568377005202722033" at="22,35,23,34" concept="9" />
+      <node id="568377005202722034" at="27,59,28,60" concept="9" />
+      <node id="568377005202722034" at="31,109,32,99" concept="5" />
+      <node id="568377005202722034" at="33,53,34,178" concept="2" />
+      <node id="568377005202722034" at="35,7,36,20" concept="6" />
+      <node id="568377005202722037" at="38,85,39,62" concept="6" />
+      <node id="568377005202722041" at="43,62,44,63" concept="9" />
+      <node id="568377005202722046" at="48,89,49,86" concept="6" />
+      <node id="568377005202722056" at="50,14,51,71" concept="6" />
+      <node id="568377005202722033" at="56,84,57,119" concept="5" />
+      <node id="568377005202722034" at="57,119,58,61" concept="2" />
+      <node id="568377005202722041" at="58,61,59,67" concept="2" />
+      <node id="568377005202722033" at="59,67,60,22" concept="6" />
+      <node id="568377005202722033" at="64,0,65,0" concept="7" trace="MessageKey$NR" />
+      <node id="568377005202722033" at="68,0,69,0" concept="7" trace="name$MnvL" />
+      <node id="568377005202722033" at="69,0,70,0" concept="7" trace="default$p9e4" />
+      <node id="568377005202722054" at="50,12,52,7" concept="0" />
+      <node id="568377005202722033" at="22,0,25,0" concept="1" trace="MessageKey_Constraints#()V" />
+      <node id="568377005202722034" at="27,0,30,0" concept="1" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="568377005202722034" at="32,99,35,7" concept="3" />
+      <node id="568377005202722034" at="38,0,41,0" concept="8" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="568377005202722041" at="43,0,46,0" concept="1" trace="Default_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="568377005202722044" at="47,40,52,7" concept="3" />
+      <node id="568377005202722033" at="55,0,62,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="568377005202722034" at="30,0,38,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="568377005202722041" at="46,0,54,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="568377005202722033" at="22,35,23,34" />
+      <scope id="568377005202722034" at="27,59,28,60" />
+      <scope id="568377005202722034" at="33,53,34,178" />
+      <scope id="568377005202722036" at="38,85,39,62" />
+      <scope id="568377005202722041" at="43,62,44,63" />
+      <scope id="568377005202722045" at="48,89,49,86" />
+      <scope id="568377005202722055" at="50,14,51,71" />
+      <scope id="568377005202722033" at="22,0,25,0" />
+      <scope id="568377005202722034" at="27,0,30,0">
+        <var name="container" id="568377005202722034" />
+      </scope>
+      <scope id="568377005202722034" at="38,0,41,0">
+        <var name="node" id="568377005202722034" />
+        <var name="propertyValue" id="568377005202722034" />
+      </scope>
+      <scope id="568377005202722041" at="43,0,46,0">
+        <var name="container" id="568377005202722041" />
+      </scope>
+      <scope id="568377005202722033" at="56,84,60,22">
+        <var name="properties" id="568377005202722033" />
+      </scope>
+      <scope id="568377005202722034" at="31,109,36,20">
+        <var name="result" id="568377005202722034" />
+      </scope>
+      <scope id="568377005202722043" at="47,40,52,7" />
+      <scope id="568377005202722033" at="55,0,62,0" />
+      <scope id="568377005202722034" at="30,0,38,0">
+        <var name="checkingNodeContext" id="568377005202722034" />
+        <var name="node" id="568377005202722034" />
+        <var name="propertyValue" id="568377005202722034" />
+      </scope>
+      <scope id="568377005202722041" at="46,0,54,0">
+        <var name="node" id="568377005202722041" />
+      </scope>
+      <unit id="568377005202722033" at="63,0,66,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.MessageKey_Constraints$CONCEPTS" />
+      <unit id="568377005202722033" at="67,0,71,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.MessageKey_Constraints$PROPS" />
+      <unit id="568377005202722041" at="42,0,55,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.MessageKey_Constraints$Default_Property" />
+      <unit id="568377005202722034" at="26,0,42,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.MessageKey_Constraints$Name_Property" />
+      <unit id="568377005202722033" at="21,0,72,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.MessageKey_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:52d0d8c1-a4fe-46a1-b193-682645ea5e8d(com.mbeddr.mpsutil.multilingual.common.constraints)/568377005202722060">
+    <file name="ResourceBundle_Constraints.java">
+      <node id="568377005202722060" at="10,39,11,38" concept="9" />
+      <node id="568377005202722060" at="15,0,16,0" concept="7" trace="ResourceBundle$PN" />
+      <node id="568377005202722060" at="10,0,13,0" concept="1" trace="ResourceBundle_Constraints#()V" />
+      <scope id="568377005202722060" at="10,39,11,38" />
+      <scope id="568377005202722060" at="10,0,13,0" />
+      <unit id="568377005202722060" at="14,0,17,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.ResourceBundle_Constraints$CONCEPTS" />
+      <unit id="568377005202722060" at="9,0,18,0" name="com.mbeddr.mpsutil.multilingual.common.constraints.ResourceBundle_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

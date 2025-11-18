@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:35c064c1-b917-4f2b-bc64-8c8be01bce65(com.mbeddr.cc.requirements.report.generator.req2doc.util)/5785245534400828681">
+    <file name="TraceFinder.java">
+      <node id="2667296550441496312" at="28,67,29,61" concept="4" />
+      <node id="2654924083840953799" at="29,61,30,41" concept="1" />
+      <node id="8767939494018450045" at="30,41,31,113" concept="4" />
+      <node id="8767939494018450088" at="31,113,32,0" concept="6" />
+      <node id="8767939494018450090" at="32,0,33,0" concept="6" />
+      <node id="1197636333572" at="33,0,34,110" concept="4" />
+      <node id="2182575634095821170" at="35,55,36,44" concept="4" />
+      <node id="2182575634095821112" at="36,44,37,108" concept="5" />
+      <node id="5785245534400829709" at="38,23,39,44" concept="4" />
+      <node id="5785245534400829655" at="39,44,40,100" concept="5" />
+      <node id="3008175113736698348" at="44,0,45,0" concept="2" trace="parent" />
+      <node id="3008175113736723827" at="46,46,47,27" concept="1" />
+      <node id="3008175113737169907" at="50,43,51,78" concept="4" />
+      <node id="3008175113737169914" at="51,78,52,93" concept="1" />
+      <node id="3008175113737169715" at="52,93,53,0" concept="6" />
+      <node id="3008175113736480711" at="53,0,54,78" concept="5" />
+      <node id="3008175113736798644" at="56,41,57,72" concept="4" />
+      <node id="3008175113741687813" at="58,58,59,40" concept="4" />
+      <node id="3008175113741265689" at="59,40,60,42" concept="5" />
+      <node id="3008175113736861295" at="61,9,62,0" concept="6" />
+      <node id="3008175113736742200" at="69,54,70,39" concept="5" />
+      <node id="3008175113736746859" at="77,56,78,39" concept="5" />
+      <node id="5785245534400828681" at="84,0,85,0" concept="7" trace="TraceAnnotation$ho" />
+      <node id="3008175113736580129" at="46,0,49,0" concept="0" trace="FilteredScope#(Lorg/jetbrains/mps/openapi/module/SearchScope;)V" />
+      <node id="3008175113741256347" at="57,72,61,9" concept="5" />
+      <node id="3008175113736480720" at="68,0,72,0" concept="3" trace="resolve#(Lorg/jetbrains/mps/openapi/model/SModelReference;)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <node id="3008175113736480730" at="76,0,80,0" concept="3" trace="resolve#(Lorg/jetbrains/mps/openapi/module/SModuleReference;)Lorg/jetbrains/mps/openapi/module/SModule;" />
+      <node id="3008175113736480704" at="50,0,56,0" concept="3" trace="getModules#()Ljava/lang/Iterable;" />
+      <node id="5785245534400829601" at="34,110,41,7" concept="5" />
+      <node id="3008175113736480712" at="56,0,64,0" concept="3" trace="getModels#()Ljava/lang/Iterable;" />
+      <node id="5785245534400828687" at="28,0,43,0" concept="8" trace="findTracesForRequirement#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <scope id="3008175113736580132" at="46,46,47,27" />
+      <scope id="3008175113736480727" at="69,54,70,39" />
+      <scope id="3008175113736480737" at="77,56,78,39" />
+      <scope id="2182575634095821109" at="35,55,37,108">
+        <var name="sourceNode" id="2182575634095821171" />
+      </scope>
+      <scope id="5785245534400829652" at="38,23,40,100">
+        <var name="sourceNode" id="5785245534400829710" />
+      </scope>
+      <scope id="3008175113741265309" at="58,58,60,42">
+        <var name="module" id="3008175113741687814" />
+      </scope>
+      <scope id="3008175113736580129" at="46,0,49,0">
+        <var name="parent" id="3008175113736586944" />
+      </scope>
+      <scope id="3008175113736480709" at="50,43,54,78">
+        <var name="modules" id="3008175113737169908" />
+      </scope>
+      <scope id="3008175113736480720" at="68,0,72,0">
+        <var name="reference" id="3008175113736480724" />
+      </scope>
+      <scope id="3008175113736480730" at="76,0,80,0">
+        <var name="reference" id="3008175113736480734" />
+      </scope>
+      <scope id="3008175113736480704" at="50,0,56,0" />
+      <scope id="3008175113736480717" at="56,41,62,0">
+        <var name="models" id="3008175113736798647" />
+      </scope>
+      <scope id="3008175113736480712" at="56,0,64,0" />
+      <scope id="5785245534400828690" at="28,67,41,7">
+        <var name="resRefs" id="1197636333573" />
+        <var name="s" id="2667296550441496313" />
+        <var name="scope" id="8767939494018450046" />
+      </scope>
+      <scope id="5785245534400828687" at="28,0,43,0">
+        <var name="r" id="5785245534400828691" />
+      </scope>
+      <unit id="5785245534400828681" at="83,0,86,0" name="com.mbeddr.cc.requirements.report.generator.req2doc.util.TraceFinder$CONCEPTS" />
+      <unit id="8767939494018629959" at="43,0,82,0" name="com.mbeddr.cc.requirements.report.generator.req2doc.util.TraceFinder$FilteredScope" />
+      <unit id="5785245534400828681" at="27,0,87,0" name="com.mbeddr.cc.requirements.report.generator.req2doc.util.TraceFinder" />
+    </file>
+  </root>
+</debug-info>
+

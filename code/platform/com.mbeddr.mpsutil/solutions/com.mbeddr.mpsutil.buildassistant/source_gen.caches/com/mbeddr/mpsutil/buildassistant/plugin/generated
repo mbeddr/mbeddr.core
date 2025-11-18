@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="d2xovlemhj3mvhnbimwkx5kfydnsc2y">
+  <files names="BuildDependencies_Model_Action.java:BuildDependencies_Module_Action.java:BuildDependencies_Project_Action.java:Buildassistant_ApplicationPlugin.java:DependencyBuilder.java:GenPlanModelFinder.java:RebuildDependencies_Model_Action.java:RebuildDependencies_Module_Action.java:RebuildDependencies_Project_Action.java" />
+</product>
+

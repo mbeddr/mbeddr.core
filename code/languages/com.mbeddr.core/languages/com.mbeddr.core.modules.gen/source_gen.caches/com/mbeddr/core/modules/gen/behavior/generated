@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-bb7isl4yexlgzavfanh1yey48hav97o">
+  <files names="AbstractGenModule__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:DummyMangledNameFinalizer__BehaviorDescriptor.java:ExportedContentsOfTypeCacheHelper.java:GenExtModuleImport__BehaviorDescriptor.java:GenExtModule__BehaviorDescriptor.java:GenForeignExtModuleImport__BehaviorDescriptor.java:GenImplModuleImport__BehaviorDescriptor.java:GenModuleC__BehaviorDescriptor.java:GenModuleH__BehaviorDescriptor.java:ICareAboutImportingMyself__BehaviorDescriptor.java:IMultiPlatformConstruct__BehaviorDescriptor.java:LegalReferencesConfiguration__BehaviorDescriptor.java:MultiPlatformStatement__BehaviorDescriptor.java:UniquifyIncludeGuard__BehaviorDescriptor.java:VisibleContentsOfTypeCacheHelper.java" />
+</product>
+

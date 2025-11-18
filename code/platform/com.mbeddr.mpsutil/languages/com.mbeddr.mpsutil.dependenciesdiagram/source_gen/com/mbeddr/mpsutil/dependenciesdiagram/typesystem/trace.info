@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.dependenciesdiagram.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d2f19bcb-b564-4514-8fa7-0185e11040cd(com.mbeddr.mpsutil.dependenciesdiagram.typesystem)/7713532355154846327">
+    <file name="TypesystemDescriptor.java">
+      <node id="7713532355154846327" at="10,5,11,102" concept="4" />
+      <node id="7713532355154846327" at="11,102,12,55" concept="2" />
+      <node id="7713532355154846327" at="9,33,13,5" concept="0" />
+      <scope id="7713532355154846327" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="7713532355154846327" />
+      </scope>
+    </file>
+    <file name="check_DependenciesDiagram_NonTypesystemRule.java">
+      <node id="7713532355155226135" at="28,7,29,66" concept="4" />
+      <node id="7713532355155226135" at="29,66,30,316" concept="4" />
+      <node id="7713532355155196223" at="32,7,33,0" concept="6" />
+      <node id="7713532355155227589" at="35,7,36,66" concept="4" />
+      <node id="7713532355155227589" at="36,66,37,315" concept="4" />
+      <node id="7713532355155175938" at="39,7,40,0" concept="6" />
+      <node id="7713532355154846327" at="42,50,43,43" concept="5" />
+      <node id="7713532355154846327" at="45,68,46,102" concept="5" />
+      <node id="7713532355154846327" at="48,30,49,17" concept="5" />
+      <node id="7713532355154846327" at="53,0,54,0" concept="7" trace="modules$n44W" />
+      <node id="7713532355154846327" at="54,0,55,0" concept="7" trace="models$Onh_" />
+      <node id="7713532355154846327" at="58,0,59,0" concept="7" trace="qualifiedName$Z4hI" />
+      <node id="7713532355154846327" at="59,0,60,0" concept="7" trace="qualifiedName$331j" />
+      <node id="7713532355154846327" at="63,0,64,0" concept="7" trace="DependenciesDiagram$su" />
+      <node id="7713532355154846327" at="24,0,26,0" concept="1" trace="check_DependenciesDiagram_NonTypesystemRule#()V" />
+      <node id="7713532355154846327" at="42,0,45,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7713532355154846327" at="45,0,48,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7713532355154846327" at="48,0,51,0" concept="3" trace="overrides#()Z" />
+      <node id="7713532355155226135" at="27,413,31,7" concept="0" />
+      <node id="7713532355155227589" at="34,411,38,7" concept="0" />
+      <node id="7713532355155176033" at="26,132,32,7" concept="2" />
+      <node id="7713532355155194445" at="33,0,39,7" concept="2" />
+      <node id="7713532355154846327" at="26,0,42,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7713532355154846327" at="24,56,24,56" />
+      <scope id="7713532355154846327" at="42,50,43,43" />
+      <scope id="7713532355154846327" at="45,68,46,102" />
+      <scope id="7713532355154846327" at="48,30,49,17" />
+      <scope id="7713532355154846327" at="24,0,26,0" />
+      <scope id="7713532355155226135" at="28,7,30,316">
+        <var name="_reporter_2309309498" id="7713532355155226135" />
+        <var name="errorTarget" id="7713532355155226135" />
+      </scope>
+      <scope id="7713532355155227589" at="35,7,37,315">
+        <var name="_reporter_2309309498" id="7713532355155227589" />
+        <var name="errorTarget" id="7713532355155227589" />
+      </scope>
+      <scope id="7713532355154846327" at="42,0,45,0" />
+      <scope id="7713532355154846327" at="45,0,48,0">
+        <var name="argument" id="7713532355154846327" />
+      </scope>
+      <scope id="7713532355154846327" at="48,0,51,0" />
+      <scope id="7713532355155226134" at="27,413,31,7" />
+      <scope id="7713532355155227588" at="34,411,38,7" />
+      <scope id="7713532355154846328" at="26,132,40,0" />
+      <scope id="7713532355154846327" at="26,0,42,0">
+        <var name="dependenciesDiagram" id="7713532355154846327" />
+        <var name="status" id="7713532355154846327" />
+        <var name="typeCheckingContext" id="7713532355154846327" />
+      </scope>
+      <unit id="7713532355154846327" at="62,0,65,0" name="com.mbeddr.mpsutil.dependenciesdiagram.typesystem.check_DependenciesDiagram_NonTypesystemRule$CONCEPTS" />
+      <unit id="7713532355154846327" at="52,0,56,0" name="com.mbeddr.mpsutil.dependenciesdiagram.typesystem.check_DependenciesDiagram_NonTypesystemRule$LINKS" />
+      <unit id="7713532355154846327" at="57,0,61,0" name="com.mbeddr.mpsutil.dependenciesdiagram.typesystem.check_DependenciesDiagram_NonTypesystemRule$PROPS" />
+      <unit id="7713532355154846327" at="23,0,66,0" name="com.mbeddr.mpsutil.dependenciesdiagram.typesystem.check_DependenciesDiagram_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

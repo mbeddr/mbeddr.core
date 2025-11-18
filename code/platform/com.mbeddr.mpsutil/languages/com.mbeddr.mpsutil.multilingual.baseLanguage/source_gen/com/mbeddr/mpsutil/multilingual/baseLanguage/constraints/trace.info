@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,33,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:86da6bb0-4855-45c3-9852-1c2632372bee(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.constraints)/9087294576173815569">
+    <file name="RichStringMessageKey_Constraints.java">
+      <node id="9087294576173815569" at="34,45,35,44" concept="10" />
+      <node id="9087294576173815569" at="42,130,43,161" concept="5" />
+      <node id="9087294576173815569" at="43,161,44,0" concept="7" />
+      <node id="9087294576173815569" at="45,55,46,70" concept="2" />
+      <node id="9087294576173815569" at="47,9,48,0" concept="7" />
+      <node id="9087294576173815569" at="48,0,49,22" concept="6" />
+      <node id="568377005202722041" at="54,62,55,62" concept="10" />
+      <node id="568377005202722046" at="59,78,60,86" concept="6" />
+      <node id="568377005202722056" at="61,14,62,175" concept="6" />
+      <node id="568377005202722041" at="66,68,67,82" concept="2" />
+      <node id="9087294576173838831" at="70,78,71,72" concept="2" />
+      <node id="9087294576173834505" at="72,7,73,162" concept="2" />
+      <node id="9087294576173815569" at="77,84,78,119" concept="5" />
+      <node id="568377005202722041" at="78,119,79,67" concept="2" />
+      <node id="9087294576173815569" at="79,67,80,22" concept="6" />
+      <node id="6768392667014107235" at="82,149,83,182" concept="6" />
+      <node id="9087294576173815569" at="85,0,86,0" concept="8" trace="canBeRootBreakingPoint" />
+      <node id="9087294576173815569" at="88,0,89,0" concept="8" trace="RichStringMessageKey$ac" />
+      <node id="9087294576173815569" at="89,0,90,0" concept="8" trace="InlineFormat$AE" />
+      <node id="9087294576173815569" at="90,0,91,0" concept="8" trace="IInlineExpression$QB" />
+      <node id="9087294576173815569" at="94,0,95,0" concept="8" trace="default$p9e4" />
+      <node id="9087294576173815569" at="98,0,99,0" concept="8" trace="richDefault$98lc" />
+      <node id="9087294576173815569" at="99,0,100,0" concept="8" trace="text$oMhk" />
+      <node id="568377005202722054" at="61,12,63,7" concept="0" />
+      <node id="9087294576173815569" at="34,0,37,0" concept="1" trace="RichStringMessageKey_Constraints#()V" />
+      <node id="9087294576173815569" at="44,0,47,9" concept="3" />
+      <node id="568377005202722041" at="54,0,57,0" concept="1" trace="Default_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="9087294576173835592" at="69,82,72,7" concept="3" />
+      <node id="9087294576173815569" at="82,0,85,0" concept="9" trace="staticCanBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="568377005202722041" at="65,0,69,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="568377005202722044" at="58,40,63,7" concept="3" />
+      <node id="568377005202722041" at="69,0,75,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="9087294576173815569" at="76,0,82,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="568377005202722041" at="57,0,65,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="9087294576173815569" at="41,0,51,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeAncestor;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="9087294576173815569" at="39,109,51,6" concept="6" />
+      <node id="9087294576173815569" at="38,0,53,0" concept="4" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="9087294576173815569" at="34,45,35,44" />
+      <scope id="9087294576173815569" at="45,55,46,70" />
+      <scope id="568377005202722041" at="54,62,55,62" />
+      <scope id="568377005202722045" at="59,78,60,86" />
+      <scope id="568377005202722055" at="61,14,62,175" />
+      <scope id="568377005202722041" at="66,68,67,82" />
+      <scope id="9087294576173835595" at="70,78,71,72" />
+      <scope id="6768392667014107234" at="82,149,83,182" />
+      <scope id="9087294576173815569" at="34,0,37,0" />
+      <scope id="568377005202722041" at="54,0,57,0">
+        <var name="container" id="568377005202722041" />
+      </scope>
+      <scope id="9087294576173815569" at="77,84,80,22">
+        <var name="properties" id="9087294576173815569" />
+      </scope>
+      <scope id="9087294576173815569" at="82,0,85,0">
+        <var name="childConcept" id="9087294576173815569" />
+        <var name="childNode" id="9087294576173815569" />
+        <var name="link" id="9087294576173815569" />
+        <var name="node" id="9087294576173815569" />
+        <var name="parentNode" id="9087294576173815569" />
+      </scope>
+      <scope id="568377005202722041" at="65,0,69,0">
+        <var name="node" id="568377005202722041" />
+        <var name="propertyValue" id="568377005202722041" />
+      </scope>
+      <scope id="9087294576173833591" at="69,82,73,162" />
+      <scope id="568377005202722043" at="58,40,63,7" />
+      <scope id="568377005202722041" at="69,0,75,0">
+        <var name="node" id="568377005202722041" />
+        <var name="propertyValue" id="568377005202722041" />
+      </scope>
+      <scope id="9087294576173815569" at="76,0,82,0" />
+      <scope id="9087294576173815569" at="42,130,49,22">
+        <var name="result" id="9087294576173815569" />
+      </scope>
+      <scope id="568377005202722041" at="57,0,65,0">
+        <var name="node" id="568377005202722041" />
+      </scope>
+      <scope id="9087294576173815569" at="41,0,51,0">
+        <var name="checkingNodeContext" id="9087294576173815569" />
+        <var name="context" id="9087294576173815569" />
+      </scope>
+      <scope id="9087294576173815569" at="39,109,51,6" />
+      <scope id="9087294576173815569" at="38,0,53,0" />
+      <unit id="9087294576173815569" at="93,0,96,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.RichStringMessageKey_Constraints$PROPS" />
+      <unit id="9087294576173815569" at="97,0,101,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.RichStringMessageKey_Constraints$LINKS" />
+      <unit id="9087294576173815569" at="87,0,92,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.RichStringMessageKey_Constraints$CONCEPTS" />
+      <unit id="9087294576173815569" at="40,15,51,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.RichStringMessageKey_Constraints$1" />
+      <unit id="568377005202722041" at="53,0,76,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.RichStringMessageKey_Constraints$Default_Property" />
+      <unit id="9087294576173815569" at="33,0,102,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.RichStringMessageKey_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:86da6bb0-4855-45c3-9852-1c2632372bee(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.constraints)/9087294576173879492">
+    <file name="MultilingualJavaRichString_Constraints.java">
+      <node id="9087294576173879492" at="10,51,11,50" concept="10" />
+      <node id="9087294576173879492" at="15,0,16,0" concept="8" trace="MultilingualJavaRichString$Bh" />
+      <node id="9087294576173879492" at="10,0,13,0" concept="1" trace="MultilingualJavaRichString_Constraints#()V" />
+      <scope id="9087294576173879492" at="10,51,11,50" />
+      <scope id="9087294576173879492" at="10,0,13,0" />
+      <unit id="9087294576173879492" at="14,0,17,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualJavaRichString_Constraints$CONCEPTS" />
+      <unit id="9087294576173879492" at="9,0,18,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualJavaRichString_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="d2a1d976-43a2-462f-ac3a-9b258ced839d/r:86da6bb0-4855-45c3-9852-1c2632372bee(com.mbeddr.mpsutil.multilingual.baseLanguage/com.mbeddr.mpsutil.multilingual.baseLanguage.constraints)/9087294576174785098">
+    <file name="MultilingualInlineFormat_Constraints.java">
+      <node id="9087294576174785098" at="34,49,35,48" concept="10" />
+      <node id="3091065834761699552" at="39,68,40,69" concept="10" />
+      <node id="3091065834761699552" at="43,109,44,100" concept="5" />
+      <node id="3091065834761699552" at="45,53,46,267" concept="2" />
+      <node id="3091065834761699552" at="47,7,48,20" concept="6" />
+      <node id="3091065834761707158" at="50,82,51,31" concept="6" />
+      <node id="9087294576174785098" at="55,84,56,119" concept="5" />
+      <node id="3091065834761699552" at="56,119,57,79" concept="2" />
+      <node id="9087294576174785098" at="57,79,58,22" concept="6" />
+      <node id="9087294576174785099" at="68,63,69,241" concept="6" />
+      <node id="2691011170768299775" at="72,80,73,243" concept="6" />
+      <node id="9087294576174785098" at="77,6,78,131" concept="5" />
+      <node id="9087294576174785099" at="78,131,79,42" concept="2" />
+      <node id="9087294576174785098" at="79,42,80,22" concept="6" />
+      <node id="9087294576174785098" at="84,0,85,0" concept="8" trace="MultilingualInlineFormat$MK" />
+      <node id="9087294576174785098" at="85,0,86,0" concept="8" trace="IInlineFormatCategory$2Y" />
+      <node id="9087294576174785098" at="89,0,90,0" concept="8" trace="argumentIndex$euNt" />
+      <node id="9087294576174785098" at="93,0,94,0" concept="8" trace="argumentCategory$uab0" />
+      <node id="9087294576174785098" at="34,0,37,0" concept="1" trace="MultilingualInlineFormat_Constraints#()V" />
+      <node id="3091065834761699552" at="39,0,42,0" concept="1" trace="ArgumentIndex_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3091065834761699552" at="44,100,47,7" concept="3" />
+      <node id="3091065834761699552" at="50,0,53,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="9087294576174785099" at="67,0,71,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="9087294576174785099" at="71,0,75,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="9087294576174785098" at="54,0,60,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="3091065834761699552" at="42,0,50,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="9087294576174785099" at="65,56,75,10" concept="6" />
+      <node id="9087294576174785099" at="63,0,77,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="9087294576174785099" at="61,90,77,6" concept="5" />
+      <node id="9087294576174785098" at="60,0,82,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="9087294576174785098" at="34,49,35,48" />
+      <scope id="3091065834761699552" at="39,68,40,69" />
+      <scope id="3091065834761699552" at="45,53,46,267" />
+      <scope id="3091065834761699588" at="50,82,51,31" />
+      <scope id="9087294576174785099" at="68,63,69,241" />
+      <scope id="9087294576174785099" at="72,80,73,243" />
+      <scope id="9087294576174785098" at="34,0,37,0" />
+      <scope id="3091065834761699552" at="39,0,42,0">
+        <var name="container" id="3091065834761699552" />
+      </scope>
+      <scope id="3091065834761699552" at="50,0,53,0">
+        <var name="node" id="3091065834761699552" />
+        <var name="propertyValue" id="3091065834761699552" />
+      </scope>
+      <scope id="9087294576174785098" at="55,84,58,22">
+        <var name="properties" id="9087294576174785098" />
+      </scope>
+      <scope id="9087294576174785099" at="67,0,71,0" />
+      <scope id="9087294576174785099" at="71,0,75,0">
+        <var name="_context" id="9087294576174785099" />
+      </scope>
+      <scope id="3091065834761699552" at="43,109,48,20">
+        <var name="result" id="3091065834761699552" />
+      </scope>
+      <scope id="9087294576174785098" at="54,0,60,0" />
+      <scope id="3091065834761699552" at="42,0,50,0">
+        <var name="checkingNodeContext" id="3091065834761699552" />
+        <var name="node" id="3091065834761699552" />
+        <var name="propertyValue" id="3091065834761699552" />
+      </scope>
+      <scope id="9087294576174785099" at="65,56,75,10" />
+      <scope id="9087294576174785099" at="63,0,77,0" />
+      <scope id="9087294576174785098" at="61,90,80,22">
+        <var name="d0" id="9087294576174785099" />
+        <var name="references" id="9087294576174785098" />
+      </scope>
+      <scope id="9087294576174785098" at="60,0,82,0" />
+      <unit id="9087294576174785098" at="88,0,91,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints$PROPS" />
+      <unit id="9087294576174785098" at="92,0,95,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints$LINKS" />
+      <unit id="9087294576174785098" at="83,0,87,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints$CONCEPTS" />
+      <unit id="9087294576174785099" at="66,19,75,9" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints$1$1" />
+      <unit id="9087294576174785099" at="62,48,77,5" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints$1" />
+      <unit id="3091065834761699552" at="38,0,54,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints$ArgumentIndex_Property" />
+      <unit id="9087294576174785098" at="33,0,96,0" name="com.mbeddr.mpsutil.multilingual.baseLanguage.constraints.MultilingualInlineFormat_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

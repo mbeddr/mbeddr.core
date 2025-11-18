@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="com.mbeddr.ext.components.embedded.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:0b61c575-a3b4-4d4a-96a3-b11f017fce35(com.mbeddr.ext.components.embedded.intentions)/1265662339477666404">
+    <file name="IntentionsDescriptor.java">
+      <node id="1265662339477666404" at="37,47,38,71" concept="2" />
+      <node id="1265662339477666404" at="50,52,51,57" concept="2" />
+    </file>
+    <file name="toggleOnInterruptExitHandler_Intention.java">
+      <node id="1265662339477666404" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
+      <node id="1265662339477666404" at="26,51,27,160" concept="8" />
+      <node id="1265662339477666404" at="31,35,32,42" concept="6" />
+      <node id="1265662339477666404" at="36,35,37,17" concept="6" />
+      <node id="1265662339477666404" at="41,37,42,105" concept="2" />
+      <node id="1265662339477666404" at="43,5,44,30" concept="6" />
+      <node id="1265662339477696200" at="51,87,52,48" concept="6" />
+      <node id="1265662339477666976" at="57,105,58,94" concept="2" />
+      <node id="1265662339477666991" at="59,14,60,119" concept="2" />
+      <node id="1265662339477666404" at="66,55,67,21" concept="6" />
+      <node id="1265662339477666404" at="68,7,69,18" concept="6" />
+      <node id="1265662339477711383" at="72,93,73,125" concept="6" />
+      <node id="1265662339477666404" at="78,48,79,57" concept="6" />
+      <node id="1265662339477666404" at="85,0,86,0" concept="7" trace="InterruptExitHandler$Ur" />
+      <node id="1265662339477666404" at="86,0,87,0" concept="7" trace="InterruptTrigger$nA" />
+      <node id="1265662339477666404" at="90,0,91,0" concept="7" trace="trigger$4EcB" />
+      <node id="1265662339477666404" at="47,0,49,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="1265662339477666989" at="59,12,61,7" concept="0" />
+      <node id="1265662339477666404" at="26,0,29,0" concept="1" trace="toggleOnInterruptExitHandler_Intention#()V" />
+      <node id="1265662339477666404" at="40,99,43,5" concept="4" />
+      <node id="1265662339477666404" at="65,86,68,7" concept="4" />
+      <node id="1265662339477666404" at="72,0,75,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="1265662339477666404" at="30,0,34,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="1265662339477666404" at="35,0,39,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="1265662339477666404" at="50,0,54,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="1265662339477666404" at="77,0,81,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="1265662339477666974" at="56,78,61,7" concept="4" />
+      <node id="1265662339477666404" at="40,0,46,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="1265662339477666404" at="64,0,71,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="1265662339477666404" at="55,0,63,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="1265662339477666404" at="47,38,47,38" />
+      <scope id="1265662339477666404" at="26,51,27,160" />
+      <scope id="1265662339477666404" at="31,35,32,42" />
+      <scope id="1265662339477666404" at="36,35,37,17" />
+      <scope id="1265662339477666404" at="41,37,42,105" />
+      <scope id="1265662339477666406" at="51,87,52,48" />
+      <scope id="1265662339477666975" at="57,105,58,94" />
+      <scope id="1265662339477666990" at="59,14,60,119" />
+      <scope id="1265662339477666404" at="66,55,67,21" />
+      <scope id="1265662339477708186" at="72,93,73,125" />
+      <scope id="1265662339477666404" at="78,48,79,57" />
+      <scope id="1265662339477666404" at="47,0,49,0" />
+      <scope id="1265662339477666404" at="26,0,29,0" />
+      <scope id="1265662339477666404" at="72,0,75,0">
+        <var name="editorContext" id="1265662339477666404" />
+        <var name="node" id="1265662339477666404" />
+      </scope>
+      <scope id="1265662339477666404" at="30,0,34,0" />
+      <scope id="1265662339477666404" at="35,0,39,0" />
+      <scope id="1265662339477666404" at="40,99,44,30" />
+      <scope id="1265662339477666404" at="50,0,54,0">
+        <var name="editorContext" id="1265662339477666404" />
+        <var name="node" id="1265662339477666404" />
+      </scope>
+      <scope id="1265662339477666404" at="65,86,69,18" />
+      <scope id="1265662339477666404" at="77,0,81,0" />
+      <scope id="1265662339477666408" at="56,78,61,7" />
+      <scope id="1265662339477666404" at="40,0,46,0">
+        <var name="context" id="1265662339477666404" />
+        <var name="node" id="1265662339477666404" />
+      </scope>
+      <scope id="1265662339477666404" at="64,0,71,0">
+        <var name="editorContext" id="1265662339477666404" />
+        <var name="node" id="1265662339477666404" />
+      </scope>
+      <scope id="1265662339477666404" at="55,0,63,0">
+        <var name="editorContext" id="1265662339477666404" />
+        <var name="node" id="1265662339477666404" />
+      </scope>
+      <unit id="1265662339477666404" at="89,0,92,0" name="com.mbeddr.ext.components.embedded.intentions.toggleOnInterruptExitHandler_Intention$LINKS" />
+      <unit id="1265662339477666404" at="84,0,88,0" name="com.mbeddr.ext.components.embedded.intentions.toggleOnInterruptExitHandler_Intention$CONCEPTS" />
+      <unit id="1265662339477666404" at="46,0,83,0" name="com.mbeddr.ext.components.embedded.intentions.toggleOnInterruptExitHandler_Intention$IntentionImplementation" />
+      <unit id="1265662339477666404" at="23,0,93,0" name="com.mbeddr.ext.components.embedded.intentions.toggleOnInterruptExitHandler_Intention" />
+    </file>
+  </root>
+</debug-info>
+

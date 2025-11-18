@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.core.embedded.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:66bd370b-5afb-41e2-94d6-791a9aaffdf8(com.mbeddr.core.embedded.migration)/8562657935770315507">
+    <file name="Register16.java">
+      <node id="8562657935770315507" at="22,0,23,0" concept="1" trace="description" />
+      <node id="8562657935770315507" at="23,30,24,23" concept="5" />
+      <node id="8562657935770315507" at="27,33,28,16" concept="5" />
+      <node id="8562657935770315507" at="30,41,31,17" concept="0" />
+      <node id="8562657935770315507" at="31,17,32,16" concept="5" />
+      <node id="8918418202798949545" at="35,64,36,43" concept="4" />
+      <node id="8562657935770600055" at="37,103,38,126" concept="0" />
+      <node id="8562657935770791444" at="38,126,39,73" concept="0" />
+      <node id="8562657935771196468" at="39,73,40,0" concept="6" />
+      <node id="8562657935771032854" at="40,0,41,128" concept="0" />
+      <node id="8562657935771032848" at="41,128,42,74" concept="0" />
+      <node id="8562657935771421381" at="42,74,43,0" concept="6" />
+      <node id="8562657935771421734" at="43,0,44,139" concept="0" />
+      <node id="8562657935771608818" at="44,139,45,76" concept="0" />
+      <node id="8562657935771196526" at="45,76,46,0" concept="6" />
+      <node id="8562657935770327949" at="46,0,47,122" concept="0" />
+      <node id="8562657935771198104" at="47,122,48,94" concept="0" />
+      <node id="8562657935771361876" at="48,94,49,0" concept="6" />
+      <node id="8562657935770498126" at="49,0,50,124" concept="0" />
+      <node id="8562657935771360941" at="50,124,51,95" concept="0" />
+      <node id="8562657935770315507" at="55,50,56,145" concept="5" />
+      <node id="8562657935770315507" at="60,0,61,0" concept="7" trace="lowSuffix$K8an" />
+      <node id="8562657935770315507" at="61,0,62,0" concept="7" trace="lowSuffix_old$xNJP" />
+      <node id="8562657935770315507" at="62,0,63,0" concept="7" trace="highSuffix$K7Gl" />
+      <node id="8562657935770315507" at="63,0,64,0" concept="7" trace="highSuffix_old$xNwO" />
+      <node id="8562657935770315507" at="64,0,65,0" concept="7" trace="enableLowHighAccess$KdMJ" />
+      <node id="8562657935770315507" at="65,0,66,0" concept="7" trace="allowCharAccess$xNYQ" />
+      <node id="8562657935770315507" at="69,0,70,0" concept="7" trace="lowSetExpr$Klyg" />
+      <node id="8562657935770315507" at="70,0,71,0" concept="7" trace="lowSetterExpr$xN2M" />
+      <node id="8562657935770315507" at="71,0,72,0" concept="7" trace="highSetExpr$Km0i" />
+      <node id="8562657935770315507" at="72,0,73,0" concept="7" trace="highSetterExpr$xNhN" />
+      <node id="8562657935770315507" at="76,0,77,0" concept="7" trace="Register16$nv" />
+      <node id="8562657935770315507" at="23,0,26,0" concept="3" trace="getCaption#()Ljava/lang/String;" />
+      <node id="8562657935770315507" at="55,0,58,0" concept="3" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="8562657935770315507" at="26,0,30,0" concept="3" trace="isRerunnable#()Z" />
+      <node id="8562657935770315507" at="30,0,34,0" concept="3" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8918418202798950643" at="36,43,52,7" concept="2" />
+      <node id="8918418202798947937" at="34,42,53,5" concept="2" />
+      <node id="8562657935770315507" at="34,0,55,0" concept="3" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="8562657935770315507" at="23,30,24,23" />
+      <scope id="8562657935770315507" at="27,33,28,16" />
+      <scope id="8562657935770315507" at="55,50,56,145" />
+      <scope id="8562657935770315507" at="30,41,32,16" />
+      <scope id="8562657935770315507" at="23,0,26,0" />
+      <scope id="8562657935770315507" at="55,0,58,0" />
+      <scope id="8562657935770315507" at="26,0,30,0" />
+      <scope id="8562657935770315507" at="30,0,34,0">
+        <var name="m" id="8562657935770315507" />
+      </scope>
+      <scope id="8918418202798950649" at="37,103,51,95" />
+      <scope id="8918418202798950643" at="36,43,52,7">
+        <var name="node" id="8918418202798950645" />
+      </scope>
+      <scope id="8918418202798947943" at="35,64,52,7">
+        <var name="model" id="8918418202798949548" />
+      </scope>
+      <scope id="8562657935770315507" at="34,42,53,5" />
+      <scope id="8918418202798947937" at="34,42,53,5">
+        <var name="_model" id="8918418202798947939" />
+      </scope>
+      <scope id="8562657935770315507" at="34,0,55,0">
+        <var name="m" id="8562657935770315507" />
+      </scope>
+      <unit id="8562657935770315507" at="75,0,78,0" name="com.mbeddr.core.embedded.migration.Register16$CONCEPTS" />
+      <unit id="8562657935770315507" at="68,0,74,0" name="com.mbeddr.core.embedded.migration.Register16$LINKS" />
+      <unit id="8562657935770315507" at="59,0,67,0" name="com.mbeddr.core.embedded.migration.Register16$PROPS" />
+      <unit id="8562657935770315507" at="21,0,79,0" name="com.mbeddr.core.embedded.migration.Register16" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-7dsaya1bauphic4i2sxeky8te4obuh1">
+  <files names="EMFUtils.java:EcoreFileImporter.java:EcoreModelExporter.java:EcoreModelImporter.java:ExporterRuntime.java:LazyClassEnumReference.java:LazyLinkDeclaration.java:MetaModelFreshImporter.java:MetaModelImporterCore.java:MetaModelReImporter.java:ModelImporterRuntime.java:XcoreResourceSetInitializerModuleClassLoader.java:XcoreStandaloneSetupModuleClassLoader.java" />
+</product>
+

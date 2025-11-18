@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,20,0" name="com.mbeddr.doc.expressions.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)/5378658552263151477">
+    <file name="TypesystemDescriptor.java">
+      <node id="5378658552263151477" at="14,5,15,78" concept="4" />
+      <node id="5378658552263151477" at="15,78,16,47" concept="2" />
+      <node id="5378658552263151477" at="13,5,17,5" concept="0" />
+      <scope id="5378658552263151477" at="14,5,16,47">
+        <var name="inferenceRule" id="5378658552263151477" />
+      </scope>
+    </file>
+    <file name="typeof_VarRef_InferenceRule.java">
+      <node id="5378658552263151504" at="21,5,22,43" concept="4" />
+      <node id="5378658552263151504" at="22,43,23,203" concept="4" />
+      <node id="5378658552263151504" at="23,203,24,426" concept="2" />
+      <node id="5378658552263151477" at="27,50,28,41" concept="5" />
+      <node id="5378658552263151477" at="30,68,31,102" concept="5" />
+      <node id="5378658552263151477" at="33,30,34,17" concept="5" />
+      <node id="5378658552263151477" at="38,0,39,0" concept="6" trace="var$Py6P" />
+      <node id="5378658552263151477" at="42,0,43,0" concept="6" trace="VariableReference$Mw" />
+      <node id="5378658552263151477" at="18,0,20,0" concept="1" trace="typeof_VarRef_InferenceRule#()V" />
+      <node id="5378658552263151477" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5378658552263151477" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5378658552263151477" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="5378658552263151504" at="20,114,25,5" concept="0" />
+      <node id="5378658552263151477" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5378658552263151477" at="18,40,18,40" />
+      <scope id="5378658552263151477" at="27,50,28,41" />
+      <scope id="5378658552263151477" at="30,68,31,102" />
+      <scope id="5378658552263151477" at="33,30,34,17" />
+      <scope id="5378658552263151477" at="18,0,20,0" />
+      <scope id="5378658552263151504" at="21,5,24,426">
+        <var name="_info_12389875345" id="5378658552263151504" />
+        <var name="_nodeToCheck_1029348928467" id="5378658552263151504" />
+      </scope>
+      <scope id="5378658552263151477" at="27,0,30,0" />
+      <scope id="5378658552263151477" at="30,0,33,0">
+        <var name="argument" id="5378658552263151477" />
+      </scope>
+      <scope id="5378658552263151477" at="33,0,36,0" />
+      <scope id="5378658552263151478" at="20,114,25,5" />
+      <scope id="5378658552263151477" at="20,0,27,0">
+        <var name="r" id="5378658552263151477" />
+        <var name="status" id="5378658552263151477" />
+        <var name="typeCheckingContext" id="5378658552263151477" />
+      </scope>
+      <unit id="5378658552263151477" at="37,0,40,0" name="com.mbeddr.doc.expressions.typesystem.typeof_VarRef_InferenceRule$LINKS" />
+      <unit id="5378658552263151477" at="41,0,44,0" name="com.mbeddr.doc.expressions.typesystem.typeof_VarRef_InferenceRule$CONCEPTS" />
+      <unit id="5378658552263151477" at="17,0,45,0" name="com.mbeddr.doc.expressions.typesystem.typeof_VarRef_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:7d63afe9-9fc3-4991-890c-1008af05d479(com.mbeddr.doc.expressions.typesystem)/947933200581785245">
+    <file name="TypesystemDescriptor.java">
+      <node id="947933200581785245" at="10,5,11,80" concept="4" />
+      <node id="947933200581785245" at="11,80,12,47" concept="2" />
+      <node id="947933200581785245" at="9,33,13,5" concept="0" />
+      <scope id="947933200581785245" at="10,5,12,47">
+        <var name="inferenceRule" id="947933200581785245" />
+      </scope>
+    </file>
+    <file name="typeof_Equation_InferenceRule.java">
+      <node id="947933200581785299" at="21,5,22,90" concept="4" />
+      <node id="947933200581785299" at="22,90,23,202" concept="4" />
+      <node id="947933200581785299" at="23,202,24,454" concept="2" />
+      <node id="947933200581785245" at="27,50,28,32" concept="5" />
+      <node id="947933200581785245" at="30,68,31,102" concept="5" />
+      <node id="947933200581785245" at="33,30,34,17" concept="5" />
+      <node id="947933200581785245" at="38,0,39,0" concept="6" trace="lvalue$PdUx" />
+      <node id="947933200581785245" at="39,0,40,0" concept="6" trace="rvalue$PdFw" />
+      <node id="947933200581785245" at="43,0,44,0" concept="6" trace="Equation$jw" />
+      <node id="947933200581785245" at="18,0,20,0" concept="1" trace="typeof_Equation_InferenceRule#()V" />
+      <node id="947933200581785245" at="27,0,30,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="947933200581785245" at="30,0,33,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="947933200581785245" at="33,0,36,0" concept="3" trace="overrides#()Z" />
+      <node id="947933200581785299" at="20,115,25,5" concept="0" />
+      <node id="947933200581785245" at="20,0,27,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="947933200581785245" at="18,42,18,42" />
+      <scope id="947933200581785245" at="27,50,28,32" />
+      <scope id="947933200581785245" at="30,68,31,102" />
+      <scope id="947933200581785245" at="33,30,34,17" />
+      <scope id="947933200581785245" at="18,0,20,0" />
+      <scope id="947933200581785299" at="21,5,24,454">
+        <var name="_info_12389875345" id="947933200581785299" />
+        <var name="_nodeToCheck_1029348928467" id="947933200581785299" />
+      </scope>
+      <scope id="947933200581785245" at="27,0,30,0" />
+      <scope id="947933200581785245" at="30,0,33,0">
+        <var name="argument" id="947933200581785245" />
+      </scope>
+      <scope id="947933200581785245" at="33,0,36,0" />
+      <scope id="947933200581785246" at="20,115,25,5" />
+      <scope id="947933200581785245" at="20,0,27,0">
+        <var name="eq" id="947933200581785245" />
+        <var name="status" id="947933200581785245" />
+        <var name="typeCheckingContext" id="947933200581785245" />
+      </scope>
+      <unit id="947933200581785245" at="42,0,45,0" name="com.mbeddr.doc.expressions.typesystem.typeof_Equation_InferenceRule$CONCEPTS" />
+      <unit id="947933200581785245" at="37,0,41,0" name="com.mbeddr.doc.expressions.typesystem.typeof_Equation_InferenceRule$LINKS" />
+      <unit id="947933200581785245" at="17,0,46,0" name="com.mbeddr.doc.expressions.typesystem.typeof_Equation_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="com.mbeddr.mpsutil.multilingual.common.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2a3adbc5-cf99-4b8d-8cf6-7680039dd780(com.mbeddr.mpsutil.multilingual.common.intentions)/4912572611770058607">
+    <file name="IntentionsDescriptor.java">
+      <node id="4912572611770058607" at="37,47,38,64" concept="1" />
+      <node id="4912572611770058607" at="50,52,51,50" concept="1" />
+    </file>
+    <file name="createMultilingualKey_Intention.java">
+      <node id="4912572611770058607" at="25,0,26,0" concept="2" trace="myCachedExecutable" />
+      <node id="4912572611770058607" at="27,44,28,163" concept="10" />
+      <node id="4912572611770058607" at="32,35,33,35" concept="6" />
+      <node id="4912572611770058607" at="37,35,38,17" concept="6" />
+      <node id="4912572611770058607" at="42,37,43,105" concept="1" />
+      <node id="4912572611770058607" at="44,5,45,30" concept="6" />
+      <node id="4912572611770058610" at="52,87,53,39" concept="6" />
+      <node id="4912572611770058614" at="57,78,58,87" concept="5" />
+      <node id="4912572611770058623" at="59,49,60,15" concept="6" />
+      <node id="4912572611770058627" at="61,7,62,0" concept="7" />
+      <node id="4912572611770058628" at="62,0,63,95" concept="5" />
+      <node id="4912572611770058636" at="63,95,64,0" concept="7" />
+      <node id="4912572611770058637" at="64,0,65,136" concept="1" />
+      <node id="4912572611770058607" at="70,55,71,21" concept="6" />
+      <node id="4912572611770058607" at="72,7,73,18" concept="6" />
+      <node id="4912572611770058650" at="76,93,77,172" concept="6" />
+      <node id="4912572611770058607" at="82,48,83,50" concept="6" />
+      <node id="4912572611770058620" at="87,56,88,45" concept="6" />
+      <node id="4501452903635818853" at="90,55,91,43" concept="6" />
+      <node id="4912572611770058607" at="95,0,96,0" concept="8" trace="IMessageKeyHolder$vc" />
+      <node id="4912572611770058607" at="99,0,100,0" concept="8" trace="key$qYDz" />
+      <node id="4912572611770058607" at="48,0,50,0" concept="0" trace="IntentionImplementation#()V" />
+      <node id="4912572611770058607" at="27,0,30,0" concept="0" trace="createMultilingualKey_Intention#()V" />
+      <node id="4912572611770058607" at="41,99,44,5" concept="3" />
+      <node id="4912572611770058621" at="58,87,61,7" concept="3" />
+      <node id="4912572611770058607" at="69,86,72,7" concept="3" />
+      <node id="4912572611770058607" at="76,0,79,0" concept="4" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="4912572611770058620" at="87,0,90,0" concept="9" trace="trim_x6n0e7_a0a0a4j#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="4501452903635818853" at="90,0,93,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4912572611770058607" at="31,0,35,0" concept="4" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="4912572611770058607" at="36,0,40,0" concept="4" trace="isSurroundWith#()Z" />
+      <node id="4912572611770058607" at="51,0,55,0" concept="4" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="4912572611770058607" at="81,0,85,0" concept="4" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="4912572611770058607" at="41,0,47,0" concept="4" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="4912572611770058607" at="68,0,75,0" concept="4" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="4912572611770058607" at="56,0,67,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="4912572611770058607" at="48,38,48,38" />
+      <scope id="4912572611770058607" at="27,44,28,163" />
+      <scope id="4912572611770058607" at="32,35,33,35" />
+      <scope id="4912572611770058607" at="37,35,38,17" />
+      <scope id="4912572611770058607" at="42,37,43,105" />
+      <scope id="4912572611770058609" at="52,87,53,39" />
+      <scope id="4912572611770058622" at="59,49,60,15" />
+      <scope id="4912572611770058607" at="70,55,71,21" />
+      <scope id="4912572611770058649" at="76,93,77,172" />
+      <scope id="4912572611770058607" at="82,48,83,50" />
+      <scope id="4912572611770058620" at="87,56,88,45" />
+      <scope id="4501452903635818853" at="90,55,91,43" />
+      <scope id="4912572611770058607" at="48,0,50,0" />
+      <scope id="4912572611770058607" at="27,0,30,0" />
+      <scope id="4912572611770058607" at="76,0,79,0">
+        <var name="editorContext" id="4912572611770058607" />
+        <var name="node" id="4912572611770058607" />
+      </scope>
+      <scope id="4912572611770058620" at="87,0,90,0">
+        <var name="str" id="4912572611770058620" />
+      </scope>
+      <scope id="4501452903635818853" at="90,0,93,0">
+        <var name="str" id="4501452903635818853" />
+      </scope>
+      <scope id="4912572611770058607" at="31,0,35,0" />
+      <scope id="4912572611770058607" at="36,0,40,0" />
+      <scope id="4912572611770058607" at="41,99,45,30" />
+      <scope id="4912572611770058607" at="51,0,55,0">
+        <var name="editorContext" id="4912572611770058607" />
+        <var name="node" id="4912572611770058607" />
+      </scope>
+      <scope id="4912572611770058607" at="69,86,73,18" />
+      <scope id="4912572611770058607" at="81,0,85,0" />
+      <scope id="4912572611770058607" at="41,0,47,0">
+        <var name="context" id="4912572611770058607" />
+        <var name="node" id="4912572611770058607" />
+      </scope>
+      <scope id="4912572611770058607" at="68,0,75,0">
+        <var name="editorContext" id="4912572611770058607" />
+        <var name="node" id="4912572611770058607" />
+      </scope>
+      <scope id="4912572611770058613" at="57,78,65,136">
+        <var name="key" id="4912572611770058629" />
+        <var name="text" id="4912572611770058615" />
+      </scope>
+      <scope id="4912572611770058607" at="56,0,67,0">
+        <var name="editorContext" id="4912572611770058607" />
+        <var name="node" id="4912572611770058607" />
+      </scope>
+      <unit id="4912572611770058607" at="94,0,97,0" name="com.mbeddr.mpsutil.multilingual.common.intentions.createMultilingualKey_Intention$CONCEPTS" />
+      <unit id="4912572611770058607" at="98,0,101,0" name="com.mbeddr.mpsutil.multilingual.common.intentions.createMultilingualKey_Intention$LINKS" />
+      <unit id="4912572611770058607" at="47,0,87,0" name="com.mbeddr.mpsutil.multilingual.common.intentions.createMultilingualKey_Intention$IntentionImplementation" />
+      <unit id="4912572611770058607" at="24,0,102,0" name="com.mbeddr.mpsutil.multilingual.common.intentions.createMultilingualKey_Intention" />
+    </file>
+  </root>
+</debug-info>
+

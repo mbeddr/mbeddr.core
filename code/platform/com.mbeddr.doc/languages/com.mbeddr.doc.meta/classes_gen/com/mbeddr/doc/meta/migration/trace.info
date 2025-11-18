@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.doc.meta.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:9f495d79-0279-4f50-b3d5-c3891fb45e04(com.mbeddr.doc.meta.migration)/2144395370921271688">
+    <file name="AbstractModuleRefWordReference.java">
+      <node id="2144395370921271688" at="21,0,22,0" concept="1" trace="description" />
+      <node id="2144395370921271688" at="22,30,23,23" concept="4" />
+      <node id="2144395370921271688" at="26,33,27,16" concept="4" />
+      <node id="2144395370921271688" at="29,41,30,17" concept="0" />
+      <node id="2144395370921271688" at="30,17,31,16" concept="4" />
+      <node id="2144395370921289581" at="35,190,36,339" concept="0" />
+      <node id="2144395370921677848" at="36,339,37,91" concept="0" />
+      <node id="2144395370921271688" at="41,50,42,140" concept="4" />
+      <node id="2144395370921271688" at="46,0,47,0" concept="5" trace="AbstractModuleRefWord$YC" />
+      <node id="2144395370921271688" at="47,0,48,0" concept="5" trace="ModulePointer$7i" />
+      <node id="2144395370921271688" at="51,0,52,0" concept="5" trace="moduleRefOld$k7f7" />
+      <node id="2144395370921271688" at="52,0,53,0" concept="5" trace="identity$Zt8g" />
+      <node id="2144395370921271688" at="22,0,25,0" concept="3" trace="getCaption#()Ljava/lang/String;" />
+      <node id="2144395370921271688" at="41,0,44,0" concept="3" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="2144395370921271688" at="25,0,29,0" concept="3" trace="isRerunnable#()Z" />
+      <node id="2144395370921271688" at="29,0,33,0" concept="3" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8480291644170583701" at="34,38,38,9" concept="0" />
+      <node id="8480291644170578973" at="33,42,39,5" concept="2" />
+      <node id="2144395370921271688" at="33,0,41,0" concept="3" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="2144395370921271688" at="22,30,23,23" />
+      <scope id="2144395370921271688" at="26,33,27,16" />
+      <scope id="2144395370921271688" at="41,50,42,140" />
+      <scope id="2144395370921271688" at="29,41,31,16" />
+      <scope id="8480291644170616691" at="35,190,37,91" />
+      <scope id="2144395370921271688" at="22,0,25,0" />
+      <scope id="2144395370921271688" at="41,0,44,0" />
+      <scope id="2144395370921271688" at="25,0,29,0" />
+      <scope id="2144395370921271688" at="29,0,33,0">
+        <var name="m" id="2144395370921271688" />
+      </scope>
+      <scope id="8480291644170578975" at="34,38,38,9" />
+      <scope id="2144395370921271688" at="33,42,39,5" />
+      <scope id="8480291644170578973" at="33,42,39,5">
+        <var name="mdl" id="8480291644170578976" />
+      </scope>
+      <scope id="2144395370921271688" at="33,0,41,0">
+        <var name="m" id="2144395370921271688" />
+      </scope>
+      <unit id="2144395370921271688" at="45,0,49,0" name="com.mbeddr.doc.meta.migration.AbstractModuleRefWordReference$CONCEPTS" />
+      <unit id="2144395370921271688" at="50,0,54,0" name="com.mbeddr.doc.meta.migration.AbstractModuleRefWordReference$LINKS" />
+      <unit id="2144395370921271688" at="20,0,55,0" name="com.mbeddr.doc.meta.migration.AbstractModuleRefWordReference" />
+    </file>
+  </root>
+</debug-info>
+
