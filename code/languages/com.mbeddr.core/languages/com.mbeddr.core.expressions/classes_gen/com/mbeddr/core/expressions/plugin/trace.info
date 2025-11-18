@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.core.expressions.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)/5259475464700665453">
+    <file name="IPrintfFormatCustomizer.java">
+      <node id="5259475464721594173" at="9,0,10,0" concept="0" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="5259475464700665970" at="10,0,11,0" concept="0" trace="getFormatSpecifier#(Lorg/jetbrains/mps/openapi/model/SModel;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1469403253941390807" at="11,0,12,0" concept="0" trace="getEndOfLineLiteral#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/String;" />
+      <scope id="5259475464721594173" at="9,0,10,0">
+        <var name="model" id="5259475464721594431" />
+      </scope>
+      <scope id="5259475464700665970" at="10,0,11,0">
+        <var name="model" id="5259475464723468586" />
+        <var name="type" id="5259475464723467367" />
+      </scope>
+      <scope id="1469403253941390807" at="11,0,12,0">
+        <var name="model" id="1469403253941396394" />
+      </scope>
+      <unit id="5259475464700665453" at="8,0,13,0" name="com.mbeddr.core.expressions.plugin.IPrintfFormatCustomizer" />
+    </file>
+  </root>
+  <root nodeRef="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)/5259475464700667697">
+    <file name="IPrintfFunctionCustomizer.java">
+      <node id="5259475464723436741" at="9,0,10,0" concept="0" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="5259475464700668131" at="10,0,11,0" concept="0" trace="getPrintfFunctionName#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/String;" />
+      <node id="5259475464738856323" at="11,0,12,0" concept="0" trace="getPrintfFunctionHeader#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/lang/String;" />
+      <node id="7516784819718665011" at="12,0,13,0" concept="0" trace="getPrintfFunctionExtraArgs#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/util/List;" />
+      <node id="7516784819718665273" at="13,0,14,0" concept="0" trace="getPrintfFunctionExtraArgDeclarations#(Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/util/List;" />
+      <scope id="5259475464723436741" at="9,0,10,0">
+        <var name="model" id="5259475464723436742" />
+      </scope>
+      <scope id="5259475464700668131" at="10,0,11,0">
+        <var name="model" id="5259475464700668374" />
+      </scope>
+      <scope id="5259475464738856323" at="11,0,12,0">
+        <var name="model" id="5259475464738856401" />
+      </scope>
+      <scope id="7516784819718665011" at="12,0,13,0">
+        <var name="model" id="7516784819718665012" />
+      </scope>
+      <scope id="7516784819718665273" at="13,0,14,0">
+        <var name="model" id="7516784819718665274" />
+      </scope>
+      <unit id="5259475464700667697" at="8,0,15,0" name="com.mbeddr.core.expressions.plugin.IPrintfFunctionCustomizer" />
+    </file>
+  </root>
+</debug-info>
+

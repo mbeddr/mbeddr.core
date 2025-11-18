@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="9rgxay0r0i5k1udldlm0ertlunmxoyc">
+  <files names="BinaryNumberLiteral_Constraints.java:CharLiteral_Constraints.java:CommentedContent_Constraints.java:ConstraintsAspectDescriptor.java:HexNumberLiteral_Constraints.java:IEEE754TypeSizeSpecification_Constraints.java:NumberLiteral_Constraints.java:OctalNumberLiteral_Constraints.java:ScientificNumber_Constraints.java:TypeSizeConfiguration_Constraints.java:TypeSizeSpecification_Constraints.java:UnaryMinusExpression_Constraints.java:UnaryPrePosModificationExpression_Constraints.java:UnsignedIntegerLiteral_Constraints.java:VoidType_Constraints.java" />
+</product>
+

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333605">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333605" at="10,0,11,0" concept="3" trace="myId" />
+      <node id="8455208232410333605" at="16,27,17,16" concept="8" />
+      <node id="8455208232410333605" at="20,30,21,29" concept="9" />
+      <node id="8455208232410333605" at="26,40,27,13" concept="9" />
+      <node id="8455208232410333605" at="12,0,14,0" concept="1" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="8455208232410333605" at="30,0,33,0" concept="6" trace="adjustRegularGroups#()V" />
+      <node id="8455208232410333605" at="15,0,19,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="8455208232410333605" at="20,0,30,0" concept="6" trace="createGroups#()V" />
+      <scope id="8455208232410333605" at="12,38,12,38" />
+      <scope id="8455208232410333605" at="16,27,17,16" />
+      <scope id="8455208232410333605" at="30,37,31,121" />
+      <scope id="8455208232410333605" at="12,0,14,0" />
+      <scope id="8455208232410333605" at="30,0,33,0" />
+      <scope id="8455208232410333605" at="15,0,19,0" />
+      <scope id="8455208232410333605" at="20,30,28,48" />
+      <scope id="8455208232410333605" at="20,0,30,0" />
+      <unit id="8455208232410333605" at="9,0,34,0" name="com.mbeddr.mpsutil.review.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333657">
+    <file name="AddReview_Action.java">
+      <node id="8455208232410333657" at="25,0,26,0" concept="11" trace="ICON" />
+      <node id="8455208232410333657" at="27,29,28,35" concept="13" />
+      <node id="8455208232410333657" at="28,35,29,35" concept="2" />
+      <node id="8455208232410333657" at="29,35,30,57" concept="2" />
+      <node id="8455208232410333657" at="33,32,34,16" concept="8" />
+      <node id="8455208232410333717" at="37,87,38,242" concept="8" />
+      <node id="8455208232410333657" at="41,89,42,85" concept="2" />
+      <node id="8455208232410333657" at="46,53,47,19" concept="8" />
+      <node id="8455208232410333706" at="49,5,50,90" concept="7" />
+      <node id="8455208232410333706" at="51,67,52,31" concept="2" />
+      <node id="8455208232410333707" at="54,36,55,21" concept="8" />
+      <node id="8455208232410333708" at="58,5,59,57" concept="7" />
+      <node id="8455208232410333710" at="60,35,61,21" concept="8" />
+      <node id="8455208232410333657" at="63,5,64,16" concept="8" />
+      <node id="8455208232410333667" at="67,96,68,306" concept="7" />
+      <node id="8455208232410333675" at="68,306,69,109" concept="7" />
+      <node id="8455208232410333682" at="69,109,70,0" concept="10" />
+      <node id="8455208232410333683" at="70,0,71,86" concept="2" />
+      <node id="8455208232410333691" at="71,86,72,90" concept="2" />
+      <node id="8455208232410333699" at="72,90,73,0" concept="10" />
+      <node id="8455208232410333700" at="73,0,74,89" concept="2" />
+      <node id="8455208232410333712" at="76,49,77,17" concept="8" />
+      <node id="8455208232410333657" at="81,0,82,0" concept="11" trace="attachedNode$Bgt0" />
+      <node id="8455208232410333657" at="85,0,86,0" concept="11" trace="attachedCellId$G9fZ" />
+      <node id="8455208232410333657" at="45,95,48,5" concept="5" />
+      <node id="8455208232410333706" at="50,90,53,7" concept="5" />
+      <node id="8455208232410333707" at="53,7,56,7" concept="5" />
+      <node id="8455208232410333710" at="59,57,62,7" concept="5" />
+      <node id="8455208232410333710" at="76,0,79,0" concept="6" trace="nodeCondition#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8455208232410333657" at="32,0,36,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="8455208232410333657" at="36,0,40,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="8455208232410333657" at="40,0,44,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333657" at="27,0,32,0" concept="1" trace="AddReview_Action#()V" />
+      <node id="8455208232410333708" at="57,5,63,5" concept="0" />
+      <node id="8455208232410333706" at="48,5,57,5" concept="0" />
+      <node id="8455208232410333657" at="66,0,76,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333657" at="44,0,66,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="8455208232410333657" at="33,32,34,16" />
+      <scope id="8455208232410333716" at="37,87,38,242" />
+      <scope id="8455208232410333657" at="41,89,42,85" />
+      <scope id="8455208232410333657" at="46,53,47,19" />
+      <scope id="8455208232410333706" at="51,67,52,31" />
+      <scope id="8455208232410333707" at="54,36,55,21" />
+      <scope id="8455208232410333710" at="60,35,61,21" />
+      <scope id="8455208232410333711" at="76,49,77,17" />
+      <scope id="8455208232410333657" at="27,29,30,57" />
+      <scope id="8455208232410333710" at="76,0,79,0">
+        <var name="parameter" id="8455208232410333710" />
+      </scope>
+      <scope id="8455208232410333657" at="32,0,36,0" />
+      <scope id="8455208232410333657" at="36,0,40,0">
+        <var name="_params" id="8455208232410333657" />
+        <var name="event" id="8455208232410333657" />
+      </scope>
+      <scope id="8455208232410333657" at="40,0,44,0">
+        <var name="_params" id="8455208232410333657" />
+        <var name="event" id="8455208232410333657" />
+      </scope>
+      <scope id="8455208232410333708" at="58,5,62,7">
+        <var name="node" id="8455208232410333708" />
+      </scope>
+      <scope id="8455208232410333657" at="27,0,32,0" />
+      <scope id="8455208232410333706" at="49,5,56,7">
+        <var name="editorComponent" id="8455208232410333706" />
+      </scope>
+      <scope id="8455208232410333657" at="67,96,74,89">
+        <var name="commonParent" id="8455208232410333676" />
+        <var name="note" id="8455208232410333668" />
+      </scope>
+      <scope id="8455208232410333657" at="66,0,76,0">
+        <var name="_params" id="8455208232410333657" />
+        <var name="event" id="8455208232410333657" />
+      </scope>
+      <scope id="8455208232410333657" at="45,95,64,16" />
+      <scope id="8455208232410333657" at="44,0,66,0">
+        <var name="_params" id="8455208232410333657" />
+        <var name="event" id="8455208232410333657" />
+      </scope>
+      <unit id="8455208232410333657" at="80,0,83,0" name="com.mbeddr.mpsutil.review.runtime.plugin.AddReview_Action$LINKS" />
+      <unit id="8455208232410333657" at="84,0,87,0" name="com.mbeddr.mpsutil.review.runtime.plugin.AddReview_Action$PROPS" />
+      <unit id="8455208232410333657" at="24,0,88,0" name="com.mbeddr.mpsutil.review.runtime.plugin.AddReview_Action" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333657" at="21,29,22,38" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333734">
+    <file name="DeleteReview_Action.java">
+      <node id="8455208232410333734" at="20,0,21,0" concept="11" trace="ICON" />
+      <node id="8455208232410333734" at="22,32,23,38" concept="13" />
+      <node id="8455208232410333734" at="23,38,24,35" concept="2" />
+      <node id="8455208232410333734" at="24,35,25,57" concept="2" />
+      <node id="8455208232410333734" at="28,32,29,16" concept="8" />
+      <node id="8455208232410333755" at="32,87,33,207" concept="8" />
+      <node id="8455208232410333734" at="36,89,37,85" concept="2" />
+      <node id="8455208232410333734" at="41,53,42,19" concept="8" />
+      <node id="8455208232410333735" at="44,5,45,90" concept="7" />
+      <node id="8455208232410333735" at="46,67,47,31" concept="2" />
+      <node id="8455208232410333736" at="49,36,50,21" concept="8" />
+      <node id="8455208232410333737" at="53,5,54,57" concept="7" />
+      <node id="8455208232410333739" at="55,25,56,21" concept="8" />
+      <node id="8455208232410333734" at="58,5,59,16" concept="8" />
+      <node id="8455208232410333743" at="62,96,63,192" concept="2" />
+      <node id="8455208232410333734" at="67,0,68,0" concept="11" trace="ReviewNote$Wo" />
+      <node id="8455208232410333734" at="40,95,43,5" concept="5" />
+      <node id="8455208232410333735" at="45,90,48,7" concept="5" />
+      <node id="8455208232410333736" at="48,7,51,7" concept="5" />
+      <node id="8455208232410333739" at="54,57,57,7" concept="5" />
+      <node id="8455208232410333734" at="27,0,31,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="8455208232410333734" at="31,0,35,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="8455208232410333734" at="35,0,39,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333734" at="61,0,65,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333734" at="22,0,27,0" concept="1" trace="DeleteReview_Action#()V" />
+      <node id="8455208232410333737" at="52,5,58,5" concept="0" />
+      <node id="8455208232410333735" at="43,5,52,5" concept="0" />
+      <node id="8455208232410333734" at="39,0,61,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="8455208232410333734" at="28,32,29,16" />
+      <scope id="8455208232410333754" at="32,87,33,207" />
+      <scope id="8455208232410333734" at="36,89,37,85" />
+      <scope id="8455208232410333734" at="41,53,42,19" />
+      <scope id="8455208232410333735" at="46,67,47,31" />
+      <scope id="8455208232410333736" at="49,36,50,21" />
+      <scope id="8455208232410333739" at="55,25,56,21" />
+      <scope id="8455208232410333734" at="62,96,63,192" />
+      <scope id="8455208232410333734" at="22,32,25,57" />
+      <scope id="8455208232410333734" at="27,0,31,0" />
+      <scope id="8455208232410333734" at="31,0,35,0">
+        <var name="_params" id="8455208232410333734" />
+        <var name="event" id="8455208232410333734" />
+      </scope>
+      <scope id="8455208232410333734" at="35,0,39,0">
+        <var name="_params" id="8455208232410333734" />
+        <var name="event" id="8455208232410333734" />
+      </scope>
+      <scope id="8455208232410333737" at="53,5,57,7">
+        <var name="node" id="8455208232410333737" />
+      </scope>
+      <scope id="8455208232410333734" at="61,0,65,0">
+        <var name="_params" id="8455208232410333734" />
+        <var name="event" id="8455208232410333734" />
+      </scope>
+      <scope id="8455208232410333734" at="22,0,27,0" />
+      <scope id="8455208232410333735" at="44,5,51,7">
+        <var name="editorComponent" id="8455208232410333735" />
+      </scope>
+      <scope id="8455208232410333734" at="40,95,59,16" />
+      <scope id="8455208232410333734" at="39,0,61,0">
+        <var name="_params" id="8455208232410333734" />
+        <var name="event" id="8455208232410333734" />
+      </scope>
+      <unit id="8455208232410333734" at="66,0,69,0" name="com.mbeddr.mpsutil.review.runtime.plugin.DeleteReview_Action$CONCEPTS" />
+      <unit id="8455208232410333734" at="19,0,70,0" name="com.mbeddr.mpsutil.review.runtime.plugin.DeleteReview_Action" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333734" at="22,38,23,41" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333771">
+    <file name="JumpToReview_Action.java">
+      <node id="8455208232410333771" at="17,0,18,0" concept="11" trace="ICON" />
+      <node id="8455208232410333771" at="19,32,20,39" concept="13" />
+      <node id="8455208232410333771" at="20,39,21,35" concept="2" />
+      <node id="8455208232410333771" at="21,35,22,57" concept="2" />
+      <node id="8455208232410333771" at="25,32,26,16" concept="8" />
+      <node id="8455208232410333797" at="29,87,30,248" concept="8" />
+      <node id="8455208232410333771" at="33,89,34,85" concept="2" />
+      <node id="8455208232410333771" at="38,53,39,19" concept="8" />
+      <node id="8455208232410333772" at="41,5,42,90" concept="7" />
+      <node id="8455208232410333772" at="43,67,44,31" concept="2" />
+      <node id="8455208232410333773" at="46,36,47,21" concept="8" />
+      <node id="8455208232410333774" at="50,5,51,57" concept="7" />
+      <node id="8455208232410333776" at="52,35,53,21" concept="8" />
+      <node id="8455208232410333771" at="55,5,56,16" concept="8" />
+      <node id="8455208232410333783" at="59,96,60,209" concept="2" />
+      <node id="8455208232410333778" at="62,49,63,17" concept="8" />
+      <node id="8455208232410333771" at="37,95,40,5" concept="5" />
+      <node id="8455208232410333772" at="42,90,45,7" concept="5" />
+      <node id="8455208232410333773" at="45,7,48,7" concept="5" />
+      <node id="8455208232410333776" at="51,57,54,7" concept="5" />
+      <node id="8455208232410333776" at="62,0,65,0" concept="6" trace="nodeCondition#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8455208232410333771" at="24,0,28,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="8455208232410333771" at="28,0,32,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="8455208232410333771" at="32,0,36,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333771" at="58,0,62,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333771" at="19,0,24,0" concept="1" trace="JumpToReview_Action#()V" />
+      <node id="8455208232410333774" at="49,5,55,5" concept="0" />
+      <node id="8455208232410333772" at="40,5,49,5" concept="0" />
+      <node id="8455208232410333771" at="36,0,58,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="8455208232410333771" at="25,32,26,16" />
+      <scope id="8455208232410333796" at="29,87,30,248" />
+      <scope id="8455208232410333771" at="33,89,34,85" />
+      <scope id="8455208232410333771" at="38,53,39,19" />
+      <scope id="8455208232410333772" at="43,67,44,31" />
+      <scope id="8455208232410333773" at="46,36,47,21" />
+      <scope id="8455208232410333776" at="52,35,53,21" />
+      <scope id="8455208232410333771" at="59,96,60,209" />
+      <scope id="8455208232410333777" at="62,49,63,17" />
+      <scope id="8455208232410333771" at="19,32,22,57" />
+      <scope id="8455208232410333776" at="62,0,65,0">
+        <var name="parameter" id="8455208232410333776" />
+      </scope>
+      <scope id="8455208232410333771" at="24,0,28,0" />
+      <scope id="8455208232410333771" at="28,0,32,0">
+        <var name="_params" id="8455208232410333771" />
+        <var name="event" id="8455208232410333771" />
+      </scope>
+      <scope id="8455208232410333771" at="32,0,36,0">
+        <var name="_params" id="8455208232410333771" />
+        <var name="event" id="8455208232410333771" />
+      </scope>
+      <scope id="8455208232410333774" at="50,5,54,7">
+        <var name="node" id="8455208232410333774" />
+      </scope>
+      <scope id="8455208232410333771" at="58,0,62,0">
+        <var name="_params" id="8455208232410333771" />
+        <var name="event" id="8455208232410333771" />
+      </scope>
+      <scope id="8455208232410333771" at="19,0,24,0" />
+      <scope id="8455208232410333772" at="41,5,48,7">
+        <var name="editorComponent" id="8455208232410333772" />
+      </scope>
+      <scope id="8455208232410333771" at="37,95,56,16" />
+      <scope id="8455208232410333771" at="36,0,58,0">
+        <var name="_params" id="8455208232410333771" />
+        <var name="event" id="8455208232410333771" />
+      </scope>
+      <unit id="8455208232410333771" at="16,0,66,0" name="com.mbeddr.mpsutil.review.runtime.plugin.JumpToReview_Action" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333771" at="23,41,24,41" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333813">
+    <file name="JumpToReviewed_Action.java">
+      <node id="8455208232410333813" at="25,0,26,0" concept="11" trace="ICON" />
+      <node id="8455208232410333813" at="27,34,28,45" concept="13" />
+      <node id="8455208232410333813" at="28,45,29,35" concept="2" />
+      <node id="8455208232410333813" at="29,35,30,57" concept="2" />
+      <node id="8455208232410333813" at="33,32,34,16" concept="8" />
+      <node id="8455208232410333863" at="37,87,38,207" concept="8" />
+      <node id="8455208232410333879" at="38,207,39,0" concept="10" />
+      <node id="8455208232410333813" at="42,89,43,85" concept="2" />
+      <node id="8455208232410333813" at="47,53,48,19" concept="8" />
+      <node id="8455208232410333814" at="50,5,51,90" concept="7" />
+      <node id="8455208232410333814" at="52,67,53,31" concept="2" />
+      <node id="8455208232410333815" at="55,36,56,21" concept="8" />
+      <node id="8455208232410333816" at="59,5,60,57" concept="7" />
+      <node id="8455208232410333818" at="61,25,62,21" concept="8" />
+      <node id="8455208232410333813" at="64,5,65,16" concept="8" />
+      <node id="8455208232410333822" at="68,96,69,131" concept="7" />
+      <node id="8455208232410333833" at="69,131,70,267" concept="2" />
+      <node id="8455208232410333850" at="70,267,71,163" concept="2" />
+      <node id="8455208232410333813" at="75,0,76,0" concept="11" trace="ReviewNote$Wo" />
+      <node id="8455208232410333813" at="79,0,80,0" concept="11" trace="attachedNode$Bgt0" />
+      <node id="8455208232410333813" at="83,0,84,0" concept="11" trace="attachedCellId$G9fZ" />
+      <node id="8455208232410333813" at="46,95,49,5" concept="5" />
+      <node id="8455208232410333814" at="51,90,54,7" concept="5" />
+      <node id="8455208232410333815" at="54,7,57,7" concept="5" />
+      <node id="8455208232410333818" at="60,57,63,7" concept="5" />
+      <node id="8455208232410333813" at="32,0,36,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="8455208232410333813" at="41,0,45,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333813" at="27,0,32,0" concept="1" trace="JumpToReviewed_Action#()V" />
+      <node id="8455208232410333813" at="36,0,41,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="8455208232410333816" at="58,5,64,5" concept="0" />
+      <node id="8455208232410333813" at="67,0,73,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333814" at="49,5,58,5" concept="0" />
+      <node id="8455208232410333813" at="45,0,67,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="8455208232410333813" at="33,32,34,16" />
+      <scope id="8455208232410333813" at="42,89,43,85" />
+      <scope id="8455208232410333813" at="47,53,48,19" />
+      <scope id="8455208232410333814" at="52,67,53,31" />
+      <scope id="8455208232410333815" at="55,36,56,21" />
+      <scope id="8455208232410333818" at="61,25,62,21" />
+      <scope id="8455208232410333862" at="37,87,39,0" />
+      <scope id="8455208232410333813" at="27,34,30,57" />
+      <scope id="8455208232410333813" at="68,96,71,163">
+        <var name="reviewNode" id="8455208232410333823" />
+      </scope>
+      <scope id="8455208232410333813" at="32,0,36,0" />
+      <scope id="8455208232410333813" at="41,0,45,0">
+        <var name="_params" id="8455208232410333813" />
+        <var name="event" id="8455208232410333813" />
+      </scope>
+      <scope id="8455208232410333816" at="59,5,63,7">
+        <var name="node" id="8455208232410333816" />
+      </scope>
+      <scope id="8455208232410333813" at="27,0,32,0" />
+      <scope id="8455208232410333813" at="36,0,41,0">
+        <var name="_params" id="8455208232410333813" />
+        <var name="event" id="8455208232410333813" />
+      </scope>
+      <scope id="8455208232410333813" at="67,0,73,0">
+        <var name="_params" id="8455208232410333813" />
+        <var name="event" id="8455208232410333813" />
+      </scope>
+      <scope id="8455208232410333814" at="50,5,57,7">
+        <var name="editorComponent" id="8455208232410333814" />
+      </scope>
+      <scope id="8455208232410333813" at="46,95,65,16" />
+      <scope id="8455208232410333813" at="45,0,67,0">
+        <var name="_params" id="8455208232410333813" />
+        <var name="event" id="8455208232410333813" />
+      </scope>
+      <unit id="8455208232410333813" at="74,0,77,0" name="com.mbeddr.mpsutil.review.runtime.plugin.JumpToReviewed_Action$CONCEPTS" />
+      <unit id="8455208232410333813" at="78,0,81,0" name="com.mbeddr.mpsutil.review.runtime.plugin.JumpToReviewed_Action$LINKS" />
+      <unit id="8455208232410333813" at="82,0,85,0" name="com.mbeddr.mpsutil.review.runtime.plugin.JumpToReviewed_Action$PROPS" />
+      <unit id="8455208232410333813" at="24,0,86,0" name="com.mbeddr.mpsutil.review.runtime.plugin.JumpToReviewed_Action" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333813" at="24,41,25,43" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333880">
+    <file name="ReplyReview_Action.java">
+      <node id="8455208232410333880" at="26,0,27,0" concept="11" trace="ICON" />
+      <node id="8455208232410333880" at="28,31,29,40" concept="13" />
+      <node id="8455208232410333880" at="29,40,30,35" concept="2" />
+      <node id="8455208232410333880" at="30,35,31,57" concept="2" />
+      <node id="8455208232410333880" at="34,32,35,16" concept="8" />
+      <node id="8455208232410333950" at="38,87,39,207" concept="8" />
+      <node id="8455208232410333966" at="39,207,40,0" concept="10" />
+      <node id="8455208232410333880" at="43,89,44,85" concept="2" />
+      <node id="8455208232410333880" at="48,53,49,19" concept="8" />
+      <node id="8455208232410333881" at="51,5,52,90" concept="7" />
+      <node id="8455208232410333881" at="53,67,54,31" concept="2" />
+      <node id="8455208232410333882" at="56,36,57,21" concept="8" />
+      <node id="8455208232410333883" at="60,5,61,57" concept="7" />
+      <node id="8455208232410333885" at="62,25,63,21" concept="8" />
+      <node id="8455208232410333880" at="65,5,66,16" concept="8" />
+      <node id="8455208232410333896" at="69,96,70,199" concept="7" />
+      <node id="8455208232410333902" at="70,199,71,132" concept="7" />
+      <node id="8455208232410333913" at="71,132,72,73" concept="2" />
+      <node id="8455208232410333919" at="72,73,73,126" concept="2" />
+      <node id="8455208232410333927" at="73,126,74,135" concept="2" />
+      <node id="8455208232410333935" at="74,135,75,121" concept="2" />
+      <node id="8455208232410333942" at="75,121,76,89" concept="2" />
+      <node id="8455208232410333880" at="80,0,81,0" concept="11" trace="ReviewNote$Wo" />
+      <node id="8455208232410333880" at="84,0,85,0" concept="11" trace="repliedNote$u_0w" />
+      <node id="8455208232410333880" at="85,0,86,0" concept="11" trace="attachedNode$Bgt0" />
+      <node id="8455208232410333880" at="89,0,90,0" concept="11" trace="attachedCellId$G9fZ" />
+      <node id="8455208232410333880" at="47,95,50,5" concept="5" />
+      <node id="8455208232410333881" at="52,90,55,7" concept="5" />
+      <node id="8455208232410333882" at="55,7,58,7" concept="5" />
+      <node id="8455208232410333885" at="61,57,64,7" concept="5" />
+      <node id="8455208232410333880" at="33,0,37,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="8455208232410333880" at="42,0,46,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333880" at="28,0,33,0" concept="1" trace="ReplyReview_Action#()V" />
+      <node id="8455208232410333880" at="37,0,42,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="8455208232410333883" at="59,5,65,5" concept="0" />
+      <node id="8455208232410333881" at="50,5,59,5" concept="0" />
+      <node id="8455208232410333880" at="68,0,78,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8455208232410333880" at="46,0,68,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="8455208232410333880" at="34,32,35,16" />
+      <scope id="8455208232410333880" at="43,89,44,85" />
+      <scope id="8455208232410333880" at="48,53,49,19" />
+      <scope id="8455208232410333881" at="53,67,54,31" />
+      <scope id="8455208232410333882" at="56,36,57,21" />
+      <scope id="8455208232410333885" at="62,25,63,21" />
+      <scope id="8455208232410333949" at="38,87,40,0" />
+      <scope id="8455208232410333880" at="28,31,31,57" />
+      <scope id="8455208232410333880" at="33,0,37,0" />
+      <scope id="8455208232410333880" at="42,0,46,0">
+        <var name="_params" id="8455208232410333880" />
+        <var name="event" id="8455208232410333880" />
+      </scope>
+      <scope id="8455208232410333883" at="60,5,64,7">
+        <var name="node" id="8455208232410333883" />
+      </scope>
+      <scope id="8455208232410333880" at="28,0,33,0" />
+      <scope id="8455208232410333880" at="37,0,42,0">
+        <var name="_params" id="8455208232410333880" />
+        <var name="event" id="8455208232410333880" />
+      </scope>
+      <scope id="8455208232410333881" at="51,5,58,7">
+        <var name="editorComponent" id="8455208232410333881" />
+      </scope>
+      <scope id="8455208232410333880" at="69,96,76,89">
+        <var name="note" id="8455208232410333897" />
+        <var name="repliedNote" id="8455208232410333903" />
+      </scope>
+      <scope id="8455208232410333880" at="68,0,78,0">
+        <var name="_params" id="8455208232410333880" />
+        <var name="event" id="8455208232410333880" />
+      </scope>
+      <scope id="8455208232410333880" at="47,95,66,16" />
+      <scope id="8455208232410333880" at="46,0,68,0">
+        <var name="_params" id="8455208232410333880" />
+        <var name="event" id="8455208232410333880" />
+      </scope>
+      <unit id="8455208232410333880" at="79,0,82,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReplyReview_Action$CONCEPTS" />
+      <unit id="8455208232410333880" at="88,0,91,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReplyReview_Action$PROPS" />
+      <unit id="8455208232410333880" at="83,0,87,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReplyReview_Action$LINKS" />
+      <unit id="8455208232410333880" at="25,0,92,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReplyReview_Action" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333880" at="25,43,26,40" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333967">
+    <file name="ReviewGroup_ActionGroup.java">
+      <node id="8455208232410333967" at="10,0,11,0" concept="11" trace="ID" />
+      <node id="8455208232410333967" at="12,69,13,37" concept="13" />
+      <node id="8455208232410333967" at="13,37,14,25" concept="2" />
+      <node id="8455208232410333967" at="14,25,15,20" concept="2" />
+      <node id="8455208232410333967" at="15,20,16,29" concept="2" />
+      <node id="8455208232410333969" at="16,29,17,104" concept="2" />
+      <node id="8455208232410333970" at="17,104,18,107" concept="2" />
+      <node id="8455208232410333971" at="18,107,19,109" concept="2" />
+      <node id="8455208232410333972" at="19,109,20,106" concept="2" />
+      <node id="8455208232410333973" at="20,106,21,107" concept="2" />
+      <node id="8455208232410333967" at="12,0,23,0" concept="1" trace="ReviewGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="8455208232410333967" at="12,69,21,107" />
+      <scope id="8455208232410333967" at="12,0,23,0">
+        <var name="plugin" id="8455208232410333967" />
+      </scope>
+      <unit id="8455208232410333967" at="9,0,24,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReviewGroup_ActionGroup" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8455208232410333967" at="27,13,28,48" concept="2" />
+      <node id="8455208232410333974" at="30,37,31,121" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="bb6926d3-ebcc-4ca6-a3be-c618633c0dc1/r:4fc3a93b-59e3-4f66-97ba-b0ddcf568c35(com.mbeddr.mpsutil.review.runtime/com.mbeddr.mpsutil.review.runtime.plugin)/8455208232410333975">
+    <file name="ReviewUtil.java">
+      <node id="8455208232410333978" at="25,78,26,109" concept="7" />
+      <node id="8455208232410333989" at="26,109,27,125" concept="7" />
+      <node id="8455208232410334005" at="27,125,28,0" concept="10" />
+      <node id="8455208232410334006" at="28,0,29,18" concept="8" />
+      <node id="8455208232410334015" at="32,66,33,56" concept="7" />
+      <node id="8455208232410334021" at="33,56,34,0" concept="10" />
+      <node id="8455208232410334022" at="34,0,35,41" concept="7" />
+      <node id="8455208232410334028" at="35,41,36,0" concept="10" />
+      <node id="8455208232410334031" at="37,72,38,86" concept="14" />
+      <node id="8455208232410334040" at="39,5,40,0" concept="10" />
+      <node id="8455208232410334041" at="40,0,41,38" concept="7" />
+      <node id="8455208232410334048" at="41,38,42,0" concept="10" />
+      <node id="8455208232410334049" at="42,0,43,18" concept="8" />
+      <node id="8455208232410334058" at="46,90,47,115" concept="2" />
+      <node id="8455208232410334065" at="47,115,48,45" concept="2" />
+      <node id="3680100162972715351" at="52,9,53,74" concept="7" />
+      <node id="3680100162973302764" at="53,74,54,142" concept="7" />
+      <node id="8455208232410334081" at="54,142,55,20" concept="8" />
+      <node id="8455208232410334090" at="56,39,57,19" concept="8" />
+      <node id="8455208232410334099" at="61,83,62,149" concept="8" />
+      <node id="8455208232410334127" at="66,25,67,19" concept="8" />
+      <node id="8455208232410334132" at="68,5,69,59" concept="8" />
+      <node id="8455208232410334153" at="73,25,74,19" concept="8" />
+      <node id="8455208232410334158" at="75,5,76,68" concept="8" />
+      <node id="3680100162973017003" at="79,77,80,62" concept="7" />
+      <node id="3680100162973022118" at="81,89,82,82" concept="8" />
+      <node id="3680100162973027220" at="83,12,84,87" concept="8" />
+      <node id="4668666393581655021" at="88,86,89,62" concept="7" />
+      <node id="4668666393581655031" at="90,89,91,84" concept="8" />
+      <node id="4668666393581655038" at="92,12,93,18" concept="8" />
+      <node id="8455208232410334173" at="98,98,99,56" concept="7" />
+      <node id="8455208232410334187" at="100,101,101,69" concept="7" />
+      <node id="8455208232410334192" at="101,69,102,290" concept="7" />
+      <node id="8455208232410334220" at="103,29,104,22" concept="8" />
+      <node id="8455208232410334225" at="106,5,107,0" concept="10" />
+      <node id="8455208232410334226" at="107,0,108,16" concept="8" />
+      <node id="8455208232410334237" at="111,89,112,81" concept="7" />
+      <node id="8455208232410334244" at="112,81,113,259" concept="8" />
+      <node id="8455208232410334290" at="118,88,119,46" concept="2" />
+      <node id="8455208232410334300" at="121,7,122,37" concept="2" />
+      <node id="4668666393581725691" at="122,37,123,81" concept="9" />
+      <node id="4668666393581656362" at="124,135,125,81" concept="2" />
+      <node id="8455208232410333975" at="130,0,131,0" concept="11" trace="Review$yq" />
+      <node id="8455208232410333975" at="131,0,132,0" concept="11" trace="CommentAnnotationContainer$3o" />
+      <node id="8455208232410333975" at="132,0,133,0" concept="11" trace="ReviewNote$Wo" />
+      <node id="8455208232410333975" at="133,0,134,0" concept="11" trace="ReviewReplyNote$Ue" />
+      <node id="8455208232410333975" at="137,0,138,0" concept="11" trace="comments$KPYX" />
+      <node id="8455208232410333975" at="138,0,139,0" concept="11" trace="notes$Cawq" />
+      <node id="8455208232410333975" at="139,0,140,0" concept="11" trace="attachedNode$Bgt0" />
+      <node id="8455208232410333975" at="140,0,141,0" concept="11" trace="repliedNote$u_0w" />
+      <node id="8455208232410333975" at="144,0,145,0" concept="11" trace="attachedCellId$G9fZ" />
+      <node id="3680100162973026649" at="83,10,85,5" concept="0" />
+      <node id="4668666393581655036" at="92,10,94,5" concept="0" />
+      <node id="8455208232410334029" at="36,0,39,5" concept="5" />
+      <node id="8455208232410334097" at="61,0,64,0" concept="12" trace="isReviewable#(Ljetbrains/mps/nodeEditor/EditorComponent;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8455208232410334125" at="65,80,68,5" concept="5" />
+      <node id="8455208232410334151" at="72,89,75,5" concept="5" />
+      <node id="8455208232410334218" at="102,290,105,7" concept="5" />
+      <node id="8455208232410334288" at="117,133,120,7" concept="5" />
+      <node id="4668666393581591915" at="123,81,126,5" concept="5" />
+      <node id="8455208232410334056" at="46,0,50,0" concept="12" trace="selectReviewNote#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/nodeEditor/EditorComponent;)V" />
+      <node id="8455208232410334231" at="111,0,115,0" concept="12" trace="findReviewNote#(Ljetbrains/mps/nodeEditor/EditorComponent;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3680100162973019027" at="80,62,85,5" concept="5" />
+      <node id="4668666393581655029" at="89,62,94,5" concept="5" />
+      <node id="8455208232410334272" at="116,96,121,7" concept="2" />
+      <node id="8455208232410333976" at="25,0,31,0" concept="12" trace="findCommonParent#(Ljetbrains/mps/nodeEditor/EditorComponent;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="8455208232410334123" at="65,0,71,0" concept="12" trace="hasReview#(Ljetbrains/mps/nodeEditor/EditorComponent;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8455208232410334145" at="72,0,78,0" concept="12" trace="hasReviewRecursive#(Ljetbrains/mps/nodeEditor/EditorComponent;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8455208232410334079" at="51,71,58,5" concept="15" />
+      <node id="8455208232410334180" at="99,56,106,5" concept="4" />
+      <node id="3680100162972993101" at="79,0,87,0" concept="12" trace="getReviewNotes#(Ljetbrains/mps/nodeEditor/EditorComponent;)Ljava/util/List;" />
+      <node id="4668666393581655019" at="88,0,96,0" concept="12" trace="getCommentAnnotationContainer#(Ljetbrains/mps/nodeEditor/EditorComponent;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8455208232410334077" at="51,0,60,0" concept="12" trace="isApplicable#(Ljetbrains/mps/nodeEditor/EditorComponent;)Z" />
+      <node id="8455208232410334167" at="98,0,110,0" concept="12" trace="findReviewNoteRecursive#(Ljetbrains/mps/nodeEditor/EditorComponent;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8455208232410334270" at="116,0,128,0" concept="12" trace="deleteReviewNote#(Ljetbrains/mps/nodeEditor/EditorComponent;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8455208232410334013" at="32,0,45,0" concept="12" trace="getReview#(Ljetbrains/mps/nodeEditor/EditorComponent;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="8455208232410334030" at="37,72,38,86" />
+      <scope id="8455208232410334089" at="56,39,57,19" />
+      <scope id="8455208232410334098" at="61,83,62,149" />
+      <scope id="8455208232410334126" at="66,25,67,19" />
+      <scope id="8455208232410334152" at="73,25,74,19" />
+      <scope id="3680100162973019030" at="81,89,82,82" />
+      <scope id="3680100162973026650" at="83,12,84,87" />
+      <scope id="4668666393581655030" at="90,89,91,84" />
+      <scope id="4668666393581655037" at="92,12,93,18" />
+      <scope id="8455208232410334219" at="103,29,104,22" />
+      <scope id="8455208232410334289" at="118,88,119,46" />
+      <scope id="4668666393581591917" at="124,135,125,81" />
+      <scope id="8455208232410334057" at="46,90,48,45" />
+      <scope id="8455208232410334086" at="56,5,58,5">
+        <var name="e" id="8455208232410334087" />
+      </scope>
+      <scope id="8455208232410334236" at="111,89,113,259">
+        <var name="selectionCellId" id="8455208232410334238" />
+      </scope>
+      <scope id="8455208232410334080" at="52,9,55,20">
+        <var name="result" id="3680100162973302765" />
+        <var name="rootNode" id="3680100162972715352" />
+      </scope>
+      <scope id="8455208232410334097" at="61,0,64,0">
+        <var name="editorComponent" id="8455208232410334118" />
+        <var name="node" id="8455208232410334120" />
+      </scope>
+      <scope id="8455208232410334287" at="117,133,120,7" />
+      <scope id="8455208232410333977" at="25,78,29,18">
+        <var name="result" id="8455208232410333990" />
+        <var name="selectedNodes" id="8455208232410333979" />
+      </scope>
+      <scope id="8455208232410334056" at="46,0,50,0">
+        <var name="editorComponent" id="8455208232410334074" />
+        <var name="reviewNote" id="8455208232410334072" />
+      </scope>
+      <scope id="8455208232410334124" at="65,80,69,59" />
+      <scope id="8455208232410334150" at="72,89,76,68" />
+      <scope id="8455208232410334231" at="111,0,115,0">
+        <var name="editorComponent" id="8455208232410334232" />
+        <var name="node" id="8455208232410334234" />
+      </scope>
+      <scope id="8455208232410334186" at="100,101,105,7">
+        <var name="result" id="8455208232410334193" />
+        <var name="selection" id="8455208232410334188" />
+      </scope>
+      <scope id="8455208232410333976" at="25,0,31,0">
+        <var name="editorComponent" id="8455208232410334010" />
+      </scope>
+      <scope id="8455208232410334123" at="65,0,71,0">
+        <var name="editorComponent" id="8455208232410334140" />
+        <var name="node" id="8455208232410334142" />
+      </scope>
+      <scope id="8455208232410334145" at="72,0,78,0">
+        <var name="editorComponent" id="8455208232410334146" />
+        <var name="node" id="8455208232410334148" />
+      </scope>
+      <scope id="3680100162972993104" at="79,77,85,5">
+        <var name="rootNode" id="3680100162973017004" />
+      </scope>
+      <scope id="4668666393581655020" at="88,86,94,5">
+        <var name="rootNode" id="4668666393581655022" />
+      </scope>
+      <scope id="8455208232410334078" at="51,71,58,5" />
+      <scope id="8455208232410334180" at="99,56,106,5">
+        <var name="n" id="8455208232410334181" />
+      </scope>
+      <scope id="3680100162972993101" at="79,0,87,0">
+        <var name="editorComponent" id="3680100162972994613" />
+      </scope>
+      <scope id="4668666393581655019" at="88,0,96,0">
+        <var name="editorComponent" id="4668666393581655040" />
+      </scope>
+      <scope id="8455208232410334077" at="51,0,60,0">
+        <var name="editorComponent" id="8455208232410334094" />
+      </scope>
+      <scope id="8455208232410334172" at="98,98,108,16">
+        <var name="notes" id="8455208232410334174" />
+      </scope>
+      <scope id="8455208232410334271" at="116,96,126,5" />
+      <scope id="8455208232410334014" at="32,66,43,18">
+        <var name="result" id="8455208232410334042" />
+        <var name="rootCell" id="8455208232410334016" />
+        <var name="rootNode" id="8455208232410334023" />
+      </scope>
+      <scope id="8455208232410334167" at="98,0,110,0">
+        <var name="editorComponent" id="8455208232410334168" />
+        <var name="node" id="8455208232410334170" />
+      </scope>
+      <scope id="8455208232410334270" at="116,0,128,0">
+        <var name="editorComponent" id="3680100162973043337" />
+        <var name="node" id="8455208232410334306" />
+      </scope>
+      <scope id="8455208232410334013" at="32,0,45,0">
+        <var name="editorComponent" id="8455208232410334053" />
+      </scope>
+      <unit id="8455208232410333975" at="143,0,146,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReviewUtil$PROPS" />
+      <unit id="8455208232410333975" at="129,0,135,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReviewUtil$CONCEPTS" />
+      <unit id="8455208232410333975" at="136,0,142,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReviewUtil$LINKS" />
+      <unit id="8455208232410333975" at="24,0,147,0" name="com.mbeddr.mpsutil.review.runtime.plugin.ReviewUtil" />
+    </file>
+  </root>
+</debug-info>
+

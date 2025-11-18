@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,33,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:31a189cd-2d93-4bf2-8b99-11ae1a7452f0(com.mbeddr.mpsutil.parameterizedMenu.constraints)/6447535233437960001">
+    <file name="TransformationMenuPart_ParameterizableSubMenu_Constraints.java">
+      <node id="6447535233437960001" at="22,70,23,69" concept="10" />
+      <node id="6447535233437960001" at="30,127,31,128" concept="4" />
+      <node id="6447535233437960001" at="31,128,32,0" concept="7" />
+      <node id="6447535233437960001" at="33,55,34,71" concept="1" />
+      <node id="6447535233437960001" at="35,9,36,0" concept="7" />
+      <node id="6447535233437960001" at="36,0,37,22" concept="5" />
+      <node id="6447535233437960001" at="45,128,46,133" concept="4" />
+      <node id="6447535233437960001" at="46,133,47,0" concept="7" />
+      <node id="6447535233437960001" at="48,55,49,72" concept="1" />
+      <node id="6447535233437960001" at="50,9,51,0" concept="7" />
+      <node id="6447535233437960001" at="51,0,52,22" concept="5" />
+      <node id="6447535233486271418" at="56,128,57,114" concept="5" />
+      <node id="6447535233467236882" at="59,128,60,27" concept="6" />
+      <node id="6447535233486313644" at="61,40,62,51" concept="6" />
+      <node id="6447535233486309201" at="63,82,64,21" concept="5" />
+      <node id="6447535233486298222" at="66,5,67,0" concept="7" />
+      <node id="6447535233467239414" at="67,0,68,37" concept="6" />
+      <node id="6447535233467229809" at="68,37,69,16" concept="5" />
+      <node id="6447535233437960001" at="71,0,72,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="6447535233437960001" at="72,0,73,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="6447535233437960001" at="75,0,76,0" concept="8" trace="TransformationMenuPart_ParameterizableSubMenu$Ly" />
+      <node id="6447535233437960001" at="76,0,77,0" concept="8" trace="IMenuPartParameterized$_u" />
+      <node id="6447535233437960001" at="77,0,78,0" concept="8" trace="TransformationMenuPart_Parameterized$sQ" />
+      <node id="6447535233437960001" at="81,0,82,0" concept="8" trace="items$zIaz" />
+      <node id="6447535233437960001" at="22,0,25,0" concept="0" trace="TransformationMenuPart_ParameterizableSubMenu_Constraints#()V" />
+      <node id="6447535233437960001" at="32,0,35,9" concept="2" />
+      <node id="6447535233437960001" at="47,0,50,9" concept="2" />
+      <node id="6447535233437960001" at="56,0,59,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6447535233486300703" at="62,51,65,7" concept="2" />
+      <node id="6447535233486298781" at="60,27,66,5" concept="2" />
+      <node id="6447535233437960001" at="29,0,39,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6447535233437960001" at="44,0,54,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6447535233437960001" at="27,103,39,6" concept="5" />
+      <node id="6447535233437960001" at="42,105,54,6" concept="5" />
+      <node id="6447535233437960001" at="59,0,71,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6447535233437960001" at="26,0,41,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="6447535233437960001" at="41,0,56,0" concept="3" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="6447535233437960001" at="22,70,23,69" />
+      <scope id="6447535233437960001" at="33,55,34,71" />
+      <scope id="6447535233437960001" at="48,55,49,72" />
+      <scope id="6447535233437960003" at="56,128,57,114" />
+      <scope id="6447535233486300705" at="63,82,64,21" />
+      <scope id="6447535233437960001" at="22,0,25,0" />
+      <scope id="6447535233437960001" at="56,0,59,0">
+        <var name="childConcept" id="6447535233437960001" />
+        <var name="link" id="6447535233437960001" />
+        <var name="node" id="6447535233437960001" />
+        <var name="parentNode" id="6447535233437960001" />
+      </scope>
+      <scope id="6447535233486298782" at="61,40,65,7" />
+      <scope id="6447535233437960001" at="30,127,37,22">
+        <var name="result" id="6447535233437960001" />
+      </scope>
+      <scope id="6447535233437960001" at="45,128,52,22">
+        <var name="result" id="6447535233437960001" />
+      </scope>
+      <scope id="6447535233437960001" at="29,0,39,0">
+        <var name="checkingNodeContext" id="6447535233437960001" />
+        <var name="context" id="6447535233437960001" />
+      </scope>
+      <scope id="6447535233437960001" at="44,0,54,0">
+        <var name="checkingNodeContext" id="6447535233437960001" />
+        <var name="context" id="6447535233437960001" />
+      </scope>
+      <scope id="6447535233467125250" at="59,128,69,16" />
+      <scope id="6447535233437960001" at="27,103,39,6" />
+      <scope id="6447535233437960001" at="42,105,54,6" />
+      <scope id="6447535233437960001" at="59,0,71,0">
+        <var name="childConcept" id="6447535233437960001" />
+        <var name="childNode" id="6447535233437960001" />
+        <var name="link" id="6447535233437960001" />
+        <var name="node" id="6447535233437960001" />
+      </scope>
+      <scope id="6447535233437960001" at="26,0,41,0" />
+      <scope id="6447535233437960001" at="41,0,56,0" />
+      <unit id="6447535233437960001" at="80,0,83,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableSubMenu_Constraints$LINKS" />
+      <unit id="6447535233437960001" at="74,0,79,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableSubMenu_Constraints$CONCEPTS" />
+      <unit id="6447535233437960001" at="28,15,39,5" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableSubMenu_Constraints$1" />
+      <unit id="6447535233437960001" at="43,15,54,5" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableSubMenu_Constraints$2" />
+      <unit id="6447535233437960001" at="21,0,84,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableSubMenu_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:31a189cd-2d93-4bf2-8b99-11ae1a7452f0(com.mbeddr.mpsutil.parameterizedMenu.constraints)/6447535233477353646">
+    <file name="TransformationMenuPart_ParameterizableParameterized_Constraints.java">
+      <node id="6447535233477353646" at="23,76,24,75" concept="10" />
+      <node id="6447535233477353646" at="31,127,32,128" concept="4" />
+      <node id="6447535233477353646" at="32,128,33,0" concept="7" />
+      <node id="6447535233477353646" at="34,55,35,71" concept="1" />
+      <node id="6447535233477353646" at="36,9,37,0" concept="7" />
+      <node id="6447535233477353646" at="37,0,38,22" concept="5" />
+      <node id="6447535233477353646" at="46,128,47,133" concept="4" />
+      <node id="6447535233477353646" at="47,133,48,0" concept="7" />
+      <node id="6447535233477353646" at="49,55,50,72" concept="1" />
+      <node id="6447535233477353646" at="51,9,52,0" concept="7" />
+      <node id="6447535233477353646" at="52,0,53,22" concept="5" />
+      <node id="6447535233477458903" at="57,128,58,114" concept="5" />
+      <node id="9025622912060977148" at="61,315,62,58" concept="6" />
+      <node id="9025622912060972854" at="62,58,63,19" concept="5" />
+      <node id="6447535233477356127" at="65,49,66,104" concept="5" />
+      <node id="6447535233478932455" at="67,5,68,0" concept="7" />
+      <node id="6447535233477362009" at="68,0,69,16" concept="5" />
+      <node id="6447535233477353646" at="71,0,72,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="6447535233477353646" at="72,0,73,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="6447535233477353646" at="75,0,76,0" concept="8" trace="TransformationMenuPart_ParameterizableParameterized$wu" />
+      <node id="6447535233477353646" at="76,0,77,0" concept="8" trace="IMenuPartParameterized$_u" />
+      <node id="6447535233477353646" at="77,0,78,0" concept="8" trace="TransformationMenuPart_Parameterized$sQ" />
+      <node id="6447535233477353646" at="78,0,79,0" concept="8" trace="QueryFunction_TransformationMenu_ParameterizableParameter$iH" />
+      <node id="6447535233477353646" at="82,0,83,0" concept="8" trace="part$CUN7" />
+      <node id="6447535233477353646" at="83,0,84,0" concept="8" trace="parameterQuery$PnLY" />
+      <node id="6447535233477353646" at="23,0,26,0" concept="0" trace="TransformationMenuPart_ParameterizableParameterized_Constraints#()V" />
+      <node id="6447535233477353646" at="33,0,36,9" concept="2" />
+      <node id="6447535233477353646" at="48,0,51,9" concept="2" />
+      <node id="6447535233477353646" at="57,0,60,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6447535233477354156" at="64,5,67,5" concept="2" />
+      <node id="9025622912061004139" at="60,128,64,5" concept="2" />
+      <node id="6447535233477353646" at="30,0,40,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6447535233477353646" at="45,0,55,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6447535233477353646" at="60,0,71,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6447535233477353646" at="28,103,40,6" concept="5" />
+      <node id="6447535233477353646" at="43,105,55,6" concept="5" />
+      <node id="6447535233477353646" at="27,0,42,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="6447535233477353646" at="42,0,57,0" concept="3" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="6447535233477353646" at="23,76,24,75" />
+      <scope id="6447535233477353646" at="34,55,35,71" />
+      <scope id="6447535233477353646" at="49,55,50,72" />
+      <scope id="6447535233477458449" at="57,128,58,114" />
+      <scope id="6447535233477354158" at="65,49,66,104" />
+      <scope id="9025622912061004141" at="61,315,63,19" />
+      <scope id="6447535233477353646" at="23,0,26,0" />
+      <scope id="6447535233477353646" at="57,0,60,0">
+        <var name="childConcept" id="6447535233477353646" />
+        <var name="link" id="6447535233477353646" />
+        <var name="node" id="6447535233477353646" />
+        <var name="parentNode" id="6447535233477353646" />
+      </scope>
+      <scope id="6447535233477353646" at="31,127,38,22">
+        <var name="result" id="6447535233477353646" />
+      </scope>
+      <scope id="6447535233477353646" at="46,128,53,22">
+        <var name="result" id="6447535233477353646" />
+      </scope>
+      <scope id="6447535233477353702" at="60,128,69,16" />
+      <scope id="6447535233477353646" at="30,0,40,0">
+        <var name="checkingNodeContext" id="6447535233477353646" />
+        <var name="context" id="6447535233477353646" />
+      </scope>
+      <scope id="6447535233477353646" at="45,0,55,0">
+        <var name="checkingNodeContext" id="6447535233477353646" />
+        <var name="context" id="6447535233477353646" />
+      </scope>
+      <scope id="6447535233477353646" at="60,0,71,0">
+        <var name="childConcept" id="6447535233477353646" />
+        <var name="childNode" id="6447535233477353646" />
+        <var name="link" id="6447535233477353646" />
+        <var name="node" id="6447535233477353646" />
+      </scope>
+      <scope id="6447535233477353646" at="28,103,40,6" />
+      <scope id="6447535233477353646" at="43,105,55,6" />
+      <scope id="6447535233477353646" at="27,0,42,0" />
+      <scope id="6447535233477353646" at="42,0,57,0" />
+      <unit id="6447535233477353646" at="81,0,85,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableParameterized_Constraints$LINKS" />
+      <unit id="6447535233477353646" at="74,0,80,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableParameterized_Constraints$CONCEPTS" />
+      <unit id="6447535233477353646" at="29,15,40,5" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableParameterized_Constraints$1" />
+      <unit id="6447535233477353646" at="44,15,55,5" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableParameterized_Constraints$2" />
+      <unit id="6447535233477353646" at="22,0,86,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.TransformationMenuPart_ParameterizableParameterized_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:31a189cd-2d93-4bf2-8b99-11ae1a7452f0(com.mbeddr.mpsutil.parameterizedMenu.constraints)/6447535233486278573">
+    <file name="QueryFunction_TransformationMenu_ParameterizableParameter_Constraints.java">
+      <node id="6447535233486278573" at="21,82,22,81" concept="10" />
+      <node id="6447535233486278573" at="29,127,30,128" concept="4" />
+      <node id="6447535233486278573" at="30,128,31,0" concept="7" />
+      <node id="6447535233486278573" at="32,55,33,71" concept="1" />
+      <node id="6447535233486278573" at="34,9,35,0" concept="7" />
+      <node id="6447535233486278573" at="35,0,36,22" concept="5" />
+      <node id="6447535233486279119" at="40,128,41,114" concept="5" />
+      <node id="6447535233486278573" at="43,0,44,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="6447535233486278573" at="46,0,47,0" concept="8" trace="QueryFunction_TransformationMenu_ParameterizableParameter$iH" />
+      <node id="6447535233486278573" at="47,0,48,0" concept="8" trace="IMenuPartParameterized$_u" />
+      <node id="6447535233486278573" at="21,0,24,0" concept="0" trace="QueryFunction_TransformationMenu_ParameterizableParameter_Constraints#()V" />
+      <node id="6447535233486278573" at="31,0,34,9" concept="2" />
+      <node id="6447535233486278573" at="40,0,43,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="6447535233486278573" at="28,0,38,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="6447535233486278573" at="26,103,38,6" concept="5" />
+      <node id="6447535233486278573" at="25,0,40,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="6447535233486278573" at="21,82,22,81" />
+      <scope id="6447535233486278573" at="32,55,33,71" />
+      <scope id="6447535233486278662" at="40,128,41,114" />
+      <scope id="6447535233486278573" at="21,0,24,0" />
+      <scope id="6447535233486278573" at="40,0,43,0">
+        <var name="childConcept" id="6447535233486278573" />
+        <var name="link" id="6447535233486278573" />
+        <var name="node" id="6447535233486278573" />
+        <var name="parentNode" id="6447535233486278573" />
+      </scope>
+      <scope id="6447535233486278573" at="29,127,36,22">
+        <var name="result" id="6447535233486278573" />
+      </scope>
+      <scope id="6447535233486278573" at="28,0,38,0">
+        <var name="checkingNodeContext" id="6447535233486278573" />
+        <var name="context" id="6447535233486278573" />
+      </scope>
+      <scope id="6447535233486278573" at="26,103,38,6" />
+      <scope id="6447535233486278573" at="25,0,40,0" />
+      <unit id="6447535233486278573" at="45,0,49,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.QueryFunction_TransformationMenu_ParameterizableParameter_Constraints$CONCEPTS" />
+      <unit id="6447535233486278573" at="27,15,38,5" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.QueryFunction_TransformationMenu_ParameterizableParameter_Constraints$1" />
+      <unit id="6447535233486278573" at="20,0,50,0" name="com.mbeddr.mpsutil.parameterizedMenu.constraints.QueryFunction_TransformationMenu_ParameterizableParameter_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

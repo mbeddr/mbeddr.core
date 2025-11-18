@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,33,0" name="com.mbeddr.ext.components.embedded.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)/1004608116908719224">
+    <file name="TypesystemDescriptor.java">
+      <node id="1004608116908719224" at="19,5,20,100" concept="6" />
+      <node id="1004608116908719224" at="20,100,21,55" concept="2" />
+      <node id="1004608116908719224" at="18,5,22,5" concept="0" />
+      <scope id="1004608116908719224" at="19,5,21,55">
+        <var name="nonTypesystemRule" id="1004608116908719224" />
+      </scope>
+    </file>
+    <file name="check_ComponentInstance_NonTypesystemRule.java">
+      <node id="3529637298167484175" at="34,9,35,68" concept="6" />
+      <node id="3529637298167484175" at="35,68,36,356" concept="6" />
+      <node id="1004608116908719224" at="41,50,42,41" concept="7" />
+      <node id="1004608116908719224" at="44,68,45,102" concept="7" />
+      <node id="1004608116908719224" at="47,30,48,17" concept="7" />
+      <node id="1004608116908719224" at="52,0,53,0" concept="9" trace="name$MnvL" />
+      <node id="1004608116908719224" at="56,0,57,0" concept="9" trace="InterruptRunnableMapping$6o" />
+      <node id="1004608116908719224" at="57,0,58,0" concept="9" trace="InterruptTrigger$nA" />
+      <node id="1004608116908719224" at="58,0,59,0" concept="9" trace="ComponentInstance$zN" />
+      <node id="1004608116908719224" at="62,0,63,0" concept="9" trace="instance$BIjm" />
+      <node id="1004608116908719224" at="63,0,64,0" concept="9" trace="runnable$BIyn" />
+      <node id="1004608116908719224" at="64,0,65,0" concept="9" trace="component$ikVC" />
+      <node id="1004608116908719224" at="65,0,66,0" concept="9" trace="trigger$4EcB" />
+      <node id="1004608116908719224" at="29,0,31,0" concept="1" trace="check_ComponentInstance_NonTypesystemRule#()V" />
+      <node id="1004608116908719224" at="41,0,44,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1004608116908719224" at="44,0,47,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1004608116908719224" at="47,0,50,0" concept="5" trace="overrides#()Z" />
+      <node id="3529637298167484175" at="33,332,37,9" concept="0" />
+      <node id="3529637298167484173" at="32,311,38,7" concept="4" />
+      <node id="3529637298167484168" at="31,130,39,5" concept="3" />
+      <node id="1004608116908719224" at="31,0,41,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1004608116908719224" at="29,54,29,54" />
+      <scope id="1004608116908719224" at="41,50,42,41" />
+      <scope id="1004608116908719224" at="44,68,45,102" />
+      <scope id="1004608116908719224" at="47,30,48,17" />
+      <scope id="1004608116908719224" at="29,0,31,0" />
+      <scope id="3529637298167484175" at="34,9,36,356">
+        <var name="_reporter_2309309498" id="3529637298167484175" />
+        <var name="errorTarget" id="3529637298167484175" />
+      </scope>
+      <scope id="1004608116908719224" at="41,0,44,0" />
+      <scope id="1004608116908719224" at="44,0,47,0">
+        <var name="argument" id="1004608116908719224" />
+      </scope>
+      <scope id="1004608116908719224" at="47,0,50,0" />
+      <scope id="3529637298167484174" at="33,332,37,9" />
+      <scope id="3529637298167484172" at="32,311,38,7" />
+      <scope id="1004608116908719225" at="31,130,39,5" />
+      <scope id="3529637298167484168" at="31,130,39,5">
+        <var name="runnable" id="3529637298167484169" />
+      </scope>
+      <scope id="1004608116908719224" at="31,0,41,0">
+        <var name="componentInstance" id="1004608116908719224" />
+        <var name="status" id="1004608116908719224" />
+        <var name="typeCheckingContext" id="1004608116908719224" />
+      </scope>
+      <unit id="1004608116908719224" at="51,0,54,0" name="com.mbeddr.ext.components.embedded.typesystem.check_ComponentInstance_NonTypesystemRule$PROPS" />
+      <unit id="1004608116908719224" at="55,0,60,0" name="com.mbeddr.ext.components.embedded.typesystem.check_ComponentInstance_NonTypesystemRule$CONCEPTS" />
+      <unit id="1004608116908719224" at="61,0,67,0" name="com.mbeddr.ext.components.embedded.typesystem.check_ComponentInstance_NonTypesystemRule$LINKS" />
+      <unit id="1004608116908719224" at="28,0,68,0" name="com.mbeddr.ext.components.embedded.typesystem.check_ComponentInstance_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)/1265662339477398542">
+    <file name="TypesystemDescriptor.java">
+      <node id="1265662339477398542" at="11,5,12,100" concept="6" />
+      <node id="1265662339477398542" at="12,100,13,47" concept="2" />
+      <node id="1265662339477398542" at="10,33,14,5" concept="0" />
+      <scope id="1265662339477398542" at="11,5,13,47">
+        <var name="inferenceRule" id="1265662339477398542" />
+      </scope>
+    </file>
+    <file name="typeof_InterruptRunnableReturnValue_InferenceRule.java">
+      <node id="1265662339477400488" at="22,5,23,70" concept="6" />
+      <node id="1265662339477400488" at="23,70,24,211" concept="6" />
+      <node id="1265662339477400488" at="24,211,25,393" concept="2" />
+      <node id="1265662339477398542" at="28,50,29,52" concept="7" />
+      <node id="1265662339477398542" at="31,68,32,102" concept="7" />
+      <node id="1265662339477398542" at="34,30,35,17" concept="7" />
+      <node id="1265662339477398542" at="39,0,40,0" concept="9" trace="Runnable$OJ" />
+      <node id="1265662339477398542" at="40,0,41,0" concept="9" trace="InterruptRunnableReturnValue$tm" />
+      <node id="1265662339477398542" at="44,0,45,0" concept="9" trace="type$sXU3" />
+      <node id="1265662339477398542" at="19,0,21,0" concept="1" trace="typeof_InterruptRunnableReturnValue_InferenceRule#()V" />
+      <node id="1265662339477398542" at="28,0,31,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1265662339477398542" at="31,0,34,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1265662339477398542" at="34,0,37,0" concept="5" trace="overrides#()Z" />
+      <node id="1265662339477400488" at="21,141,26,5" concept="0" />
+      <node id="1265662339477398542" at="21,0,28,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1265662339477398542" at="19,62,19,62" />
+      <scope id="1265662339477398542" at="28,50,29,52" />
+      <scope id="1265662339477398542" at="31,68,32,102" />
+      <scope id="1265662339477398542" at="34,30,35,17" />
+      <scope id="1265662339477398542" at="19,0,21,0" />
+      <scope id="1265662339477400488" at="22,5,25,393">
+        <var name="_info_12389875345" id="1265662339477400488" />
+        <var name="_nodeToCheck_1029348928467" id="1265662339477400488" />
+      </scope>
+      <scope id="1265662339477398542" at="28,0,31,0" />
+      <scope id="1265662339477398542" at="31,0,34,0">
+        <var name="argument" id="1265662339477398542" />
+      </scope>
+      <scope id="1265662339477398542" at="34,0,37,0" />
+      <scope id="1265662339477398543" at="21,141,26,5" />
+      <scope id="1265662339477398542" at="21,0,28,0">
+        <var name="interruptRunnableReturnValue" id="1265662339477398542" />
+        <var name="status" id="1265662339477398542" />
+        <var name="typeCheckingContext" id="1265662339477398542" />
+      </scope>
+      <unit id="1265662339477398542" at="43,0,46,0" name="com.mbeddr.ext.components.embedded.typesystem.typeof_InterruptRunnableReturnValue_InferenceRule$LINKS" />
+      <unit id="1265662339477398542" at="38,0,42,0" name="com.mbeddr.ext.components.embedded.typesystem.typeof_InterruptRunnableReturnValue_InferenceRule$CONCEPTS" />
+      <unit id="1265662339477398542" at="18,0,47,0" name="com.mbeddr.ext.components.embedded.typesystem.typeof_InterruptRunnableReturnValue_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)/1265662339482334058">
+    <file name="TypesystemDescriptor.java">
+      <node id="1265662339482334058" at="27,5,28,107" concept="6" />
+      <node id="1265662339482334058" at="28,107,29,55" concept="2" />
+      <node id="1265662339482334058" at="26,5,30,5" concept="0" />
+      <scope id="1265662339482334058" at="27,5,29,55">
+        <var name="nonTypesystemRule" id="1265662339482334058" />
+      </scope>
+    </file>
+    <file name="check_InterruptRunnableMapping_NonTypesystemRule.java">
+      <node id="4236008918583797667" at="26,137,27,149" concept="6" />
+      <node id="1265662339482582066" at="29,7,30,66" concept="6" />
+      <node id="1265662339482582066" at="30,66,31,591" concept="6" />
+      <node id="1265662339482334058" at="35,50,36,48" concept="7" />
+      <node id="1265662339482334058" at="38,68,39,102" concept="7" />
+      <node id="1265662339482334058" at="41,30,42,17" concept="7" />
+      <node id="1265662339482334058" at="46,0,47,0" concept="9" trace="interrupt$BI4l" />
+      <node id="1265662339482334058" at="50,0,51,0" concept="9" trace="InterruptRunnableMapping$6o" />
+      <node id="1265662339482334058" at="24,0,26,0" concept="1" trace="check_InterruptRunnableMapping_NonTypesystemRule#()V" />
+      <node id="1265662339482334058" at="35,0,38,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1265662339482334058" at="38,0,41,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1265662339482334058" at="41,0,44,0" concept="5" trace="overrides#()Z" />
+      <node id="1265662339482582066" at="28,97,32,7" concept="0" />
+      <node id="1265662339482334065" at="27,149,33,5" concept="4" />
+      <node id="1265662339482334058" at="26,0,35,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1265662339482334058" at="24,61,24,61" />
+      <scope id="1265662339482334058" at="35,50,36,48" />
+      <scope id="1265662339482334058" at="38,68,39,102" />
+      <scope id="1265662339482334058" at="41,30,42,17" />
+      <scope id="1265662339482334058" at="24,0,26,0" />
+      <scope id="1265662339482582066" at="29,7,31,591">
+        <var name="_reporter_2309309498" id="1265662339482582066" />
+        <var name="errorTarget" id="1265662339482582066" />
+      </scope>
+      <scope id="1265662339482334058" at="35,0,38,0" />
+      <scope id="1265662339482334058" at="38,0,41,0">
+        <var name="argument" id="1265662339482334058" />
+      </scope>
+      <scope id="1265662339482334058" at="41,0,44,0" />
+      <scope id="1265662339482334067" at="28,97,32,7" />
+      <scope id="1265662339482334059" at="26,137,33,5">
+        <var name="visibleCompanions" id="4236008918583797668" />
+      </scope>
+      <scope id="1265662339482334058" at="26,0,35,0">
+        <var name="interruptRunnableMapping" id="1265662339482334058" />
+        <var name="status" id="1265662339482334058" />
+        <var name="typeCheckingContext" id="1265662339482334058" />
+      </scope>
+      <unit id="1265662339482334058" at="45,0,48,0" name="com.mbeddr.ext.components.embedded.typesystem.check_InterruptRunnableMapping_NonTypesystemRule$LINKS" />
+      <unit id="1265662339482334058" at="49,0,52,0" name="com.mbeddr.ext.components.embedded.typesystem.check_InterruptRunnableMapping_NonTypesystemRule$CONCEPTS" />
+      <unit id="1265662339482334058" at="23,0,53,0" name="com.mbeddr.ext.components.embedded.typesystem.check_InterruptRunnableMapping_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)/4185396277126644567">
+    <file name="TypesystemDescriptor.java">
+      <node id="4185396277126644567" at="23,5,24,103" concept="6" />
+      <node id="4185396277126644567" at="24,103,25,55" concept="2" />
+      <node id="4185396277126644567" at="22,5,26,5" concept="0" />
+      <scope id="4185396277126644567" at="23,5,25,55">
+        <var name="nonTypesystemRule" id="4185396277126644567" />
+      </scope>
+    </file>
+    <file name="check_ImplementationModule_NonTypesystemRule.java">
+      <node id="4185396277126650303" at="29,133,30,128" concept="6" />
+      <node id="4185396277126650308" at="30,128,31,163" concept="6" />
+      <node id="4185396277126650323" at="32,125,33,113" concept="6" />
+      <node id="4185396277127085774" at="33,113,34,153" concept="2" />
+      <node id="4185396277127081558" at="34,153,35,0" concept="8" />
+      <node id="4185396277126650377" at="38,11,39,70" concept="6" />
+      <node id="4185396277126650377" at="39,70,40,569" concept="6" />
+      <node id="4185396277126644567" at="46,50,47,44" concept="7" />
+      <node id="4185396277126644567" at="49,68,50,102" concept="7" />
+      <node id="4185396277126644567" at="52,30,53,17" concept="7" />
+      <node id="4185396277126644567" at="57,0,58,0" concept="9" trace="Module$fX" />
+      <node id="4185396277126644567" at="58,0,59,0" concept="9" trace="ImplementationModule$Gy" />
+      <node id="4185396277126644567" at="27,0,29,0" concept="1" trace="check_ImplementationModule_NonTypesystemRule#()V" />
+      <node id="4185396277126644567" at="46,0,49,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4185396277126644567" at="49,0,52,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4185396277126644567" at="52,0,55,0" concept="5" trace="overrides#()Z" />
+      <node id="4185396277126650377" at="37,132,41,11" concept="0" />
+      <node id="4185396277126650352" at="36,99,42,11" concept="2" />
+      <node id="4185396277126650350" at="35,0,43,7" concept="4" />
+      <node id="4185396277126650315" at="31,163,44,7" concept="2" />
+      <node id="4185396277126644567" at="29,0,46,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4185396277126644567" at="27,57,27,57" />
+      <scope id="4185396277126644567" at="46,50,47,44" />
+      <scope id="4185396277126644567" at="49,68,50,102" />
+      <scope id="4185396277126644567" at="52,30,53,17" />
+      <scope id="4185396277126644567" at="27,0,29,0" />
+      <scope id="4185396277126650377" at="38,11,40,569">
+        <var name="_reporter_2309309498" id="4185396277126650377" />
+        <var name="errorTarget" id="4185396277126650377" />
+      </scope>
+      <scope id="4185396277126644567" at="46,0,49,0" />
+      <scope id="4185396277126644567" at="49,0,52,0">
+        <var name="argument" id="4185396277126644567" />
+      </scope>
+      <scope id="4185396277126644567" at="52,0,55,0" />
+      <scope id="4185396277126650376" at="37,132,41,11" />
+      <scope id="4185396277126650351" at="36,99,42,11" />
+      <scope id="4185396277126650322" at="32,125,43,7">
+        <var name="visibleCompanions" id="4185396277126650324" />
+      </scope>
+      <scope id="4185396277126644568" at="29,133,44,7">
+        <var name="activeInstanceConfigurations" id="4185396277126650304" />
+        <var name="visibleInterruptRunnableMappings" id="4185396277126650309" />
+      </scope>
+      <scope id="4185396277126644567" at="29,0,46,0">
+        <var name="implementationModule" id="4185396277126644567" />
+        <var name="status" id="4185396277126644567" />
+        <var name="typeCheckingContext" id="4185396277126644567" />
+      </scope>
+      <unit id="4185396277126644567" at="56,0,60,0" name="com.mbeddr.ext.components.embedded.typesystem.check_ImplementationModule_NonTypesystemRule$CONCEPTS" />
+      <unit id="4185396277126644567" at="26,0,61,0" name="com.mbeddr.ext.components.embedded.typesystem.check_ImplementationModule_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:c0815ac4-d2ac-4cc2-bba3-ad9f68c94008(com.mbeddr.ext.components.embedded.typesystem)/4236008918598880789">
+    <file name="TypesystemDescriptor.java">
+      <node id="4236008918598880789" at="15,5,16,101" concept="6" />
+      <node id="4236008918598880789" at="16,101,17,55" concept="2" />
+      <node id="4236008918598880789" at="14,5,18,5" concept="0" />
+      <scope id="4236008918598880789" at="15,5,17,55">
+        <var name="nonTypesystemRule" id="4236008918598880789" />
+      </scope>
+    </file>
+    <file name="check_BuildConfiguration_NonTypesystemRule.java">
+      <node id="529332856714534743" at="33,131,34,170" concept="6" />
+      <node id="4236008918598952555" at="36,7,37,66" concept="6" />
+      <node id="4236008918598952555" at="37,66,38,415" concept="6" />
+      <node id="4236008918599036861" at="40,5,41,0" concept="8" />
+      <node id="4236008918598978563" at="44,9,45,68" concept="6" />
+      <node id="4236008918598978563" at="45,68,46,327" concept="6" />
+      <node id="4236008918599185336" at="49,5,50,0" concept="8" />
+      <node id="4236008918599248059" at="50,0,51,124" concept="6" />
+      <node id="4236008918599709083" at="51,124,52,163" concept="6" />
+      <node id="4236008918600017119" at="53,125,54,113" concept="6" />
+      <node id="4236008918602561867" at="54,113,55,190" concept="6" />
+      <node id="4236008918600053972" at="55,190,56,0" concept="8" />
+      <node id="4236008918599598054" at="59,11,60,70" concept="6" />
+      <node id="4236008918599598054" at="60,70,61,601" concept="6" />
+      <node id="4236008918598880789" at="67,50,68,42" concept="7" />
+      <node id="4236008918598880789" at="70,68,71,102" concept="7" />
+      <node id="4236008918598880789" at="73,30,74,17" concept="7" />
+      <node id="4236008918598880789" at="78,0,79,0" concept="9" trace="ComponentsConfigItem$6o" />
+      <node id="4236008918598880789" at="79,0,80,0" concept="9" trace="NoMwComponentsGenStrategy$VR" />
+      <node id="4236008918598880789" at="80,0,81,0" concept="9" trace="ComponentsGenStrategy$7P" />
+      <node id="4236008918598880789" at="81,0,82,0" concept="9" trace="Module$fX" />
+      <node id="4236008918598880789" at="82,0,83,0" concept="9" trace="BuildConfiguration$kH" />
+      <node id="4236008918598880789" at="86,0,87,0" concept="9" trace="genStrategy$fd3B" />
+      <node id="4236008918598880789" at="87,0,88,0" concept="9" trace="binaries$R6lf" />
+      <node id="4236008918598880789" at="88,0,89,0" concept="9" trace="referencedModules$Su7l" />
+      <node id="4236008918598880789" at="89,0,90,0" concept="9" trace="module$6_LN" />
+      <node id="4236008918598880789" at="31,0,33,0" concept="1" trace="check_BuildConfiguration_NonTypesystemRule#()V" />
+      <node id="4236008918598880789" at="67,0,70,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4236008918598880789" at="70,0,73,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4236008918598880789" at="73,0,76,0" concept="5" trace="overrides#()Z" />
+      <node id="4236008918598952555" at="35,389,39,7" concept="0" />
+      <node id="4236008918598978563" at="43,116,47,9" concept="0" />
+      <node id="4236008918599598054" at="58,322,62,11" concept="0" />
+      <node id="529332856714534770" at="34,170,40,5" concept="4" />
+      <node id="4236008918598987270" at="42,114,48,9" concept="2" />
+      <node id="4236008918599887887" at="57,99,63,11" concept="2" />
+      <node id="4236008918589122841" at="41,0,49,5" concept="4" />
+      <node id="4236008918599596224" at="56,0,64,7" concept="4" />
+      <node id="4236008918599274105" at="52,163,65,7" concept="2" />
+      <node id="4236008918598880789" at="33,0,67,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4236008918598880789" at="31,55,31,55" />
+      <scope id="4236008918598880789" at="67,50,68,42" />
+      <scope id="4236008918598880789" at="70,68,71,102" />
+      <scope id="4236008918598880789" at="73,30,74,17" />
+      <scope id="4236008918598880789" at="31,0,33,0" />
+      <scope id="4236008918598952555" at="36,7,38,415">
+        <var name="_reporter_2309309498" id="4236008918598952555" />
+        <var name="errorTarget" id="4236008918598952555" />
+      </scope>
+      <scope id="4236008918598978563" at="44,9,46,327">
+        <var name="_reporter_2309309498" id="4236008918598978563" />
+        <var name="errorTarget" id="4236008918598978563" />
+      </scope>
+      <scope id="4236008918599598054" at="59,11,61,601">
+        <var name="_reporter_2309309498" id="4236008918599598054" />
+        <var name="errorTarget" id="4236008918599598054" />
+      </scope>
+      <scope id="4236008918598880789" at="67,0,70,0" />
+      <scope id="4236008918598880789" at="70,0,73,0">
+        <var name="argument" id="4236008918598880789" />
+      </scope>
+      <scope id="4236008918598880789" at="73,0,76,0" />
+      <scope id="529332856714534771" at="35,389,39,7" />
+      <scope id="4236008918599027017" at="43,116,47,9" />
+      <scope id="4236008918599964542" at="58,322,62,11" />
+      <scope id="4236008918589122843" at="42,114,48,9" />
+      <scope id="4236008918599596226" at="57,99,63,11" />
+      <scope id="4236008918599352723" at="53,125,64,7">
+        <var name="enclosingModules" id="4236008918602561868" />
+        <var name="visibleCompanions" id="4236008918600017120" />
+      </scope>
+      <scope id="4236008918598880790" at="33,131,65,7">
+        <var name="activeInstanceConfigurations" id="4236008918599248060" />
+        <var name="ci" id="529332856714534744" />
+        <var name="visibleInterruptRunnableMappings" id="4236008918599709084" />
+      </scope>
+      <scope id="4236008918598880789" at="33,0,67,0">
+        <var name="buildConfiguration" id="4236008918598880789" />
+        <var name="status" id="4236008918598880789" />
+        <var name="typeCheckingContext" id="4236008918598880789" />
+      </scope>
+      <unit id="4236008918598880789" at="85,0,91,0" name="com.mbeddr.ext.components.embedded.typesystem.check_BuildConfiguration_NonTypesystemRule$LINKS" />
+      <unit id="4236008918598880789" at="77,0,84,0" name="com.mbeddr.ext.components.embedded.typesystem.check_BuildConfiguration_NonTypesystemRule$CONCEPTS" />
+      <unit id="4236008918598880789" at="30,0,92,0" name="com.mbeddr.ext.components.embedded.typesystem.check_BuildConfiguration_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

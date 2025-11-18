@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-ayjcvmbwsu33tytlrn1vxs2fco26j4k">
+  <files names="BehaviorAspectDescriptor.java:DoubleSumExpr__BehaviorDescriptor.java:DoubleSumIterator__BehaviorDescriptor.java:FBarDivExpr__BehaviorDescriptor.java:PEqWord__BehaviorDescriptor.java:PTable__BehaviorDescriptor.java:RCaclulationCall__BehaviorDescriptor.java:RConstantRef__BehaviorDescriptor.java:RConstant__BehaviorDescriptor.java:RParamRefWord__BehaviorDescriptor.java:RParamRef__BehaviorDescriptor.java:RTestCase__BehaviorDescriptor.java:SumExpr__BehaviorDescriptor.java:SumIterator__BehaviorDescriptor.java:VarRef__BehaviorDescriptor.java:VarWord__BehaviorDescriptor.java" />
+</product>
+

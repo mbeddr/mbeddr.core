@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <root nodeRef="r:00bd75cf-1225-4ef5-9a7e-390aed8718dd(com.mbeddr.mpsutil.generatorfacade.runtime)/5915735921188775088">
+    <file name="GeneratorFacade.java">
+      <node id="5915735921189285923" at="27,143,28,117" concept="7" />
+      <node id="5915735921188912526" at="31,188,32,0" concept="8" />
+      <node id="5915735921188912522" at="32,0,33,86" concept="6" />
+      <node id="2981407471292398718" at="33,86,34,88" concept="7" />
+      <node id="2981407471292478502" at="37,110,38,80" concept="6" />
+      <node id="2981407471292478506" at="38,80,39,40" concept="2" />
+      <node id="2981407471292478511" at="39,40,40,41" concept="2" />
+      <node id="5915735921189034511" at="41,33,42,42" concept="2" />
+      <node id="2981407471292483128" at="43,5,44,20" concept="7" />
+      <node id="2981407471292332663" at="47,195,48,0" concept="8" />
+      <node id="1797399825820483935" at="48,0,49,163" concept="6" />
+      <node id="2981407471292332682" at="49,163,50,72" concept="6" />
+      <node id="1797399825820510749" at="50,72,51,27" concept="0" />
+      <node id="2981407471292332696" at="51,27,52,50" concept="2" />
+      <node id="2981407471292332723" at="52,50,53,0" concept="8" />
+      <node id="2981407471292332724" at="53,0,54,50" concept="6" />
+      <node id="2981407471292332751" at="54,50,55,86" concept="6" />
+      <node id="2981407471292332758" at="55,86,56,105" concept="7" />
+      <node id="5915735921188923391" at="59,195,60,0" concept="8" />
+      <node id="5915735921188923392" at="60,0,61,69" concept="6" />
+      <node id="5915735921188923406" at="61,69,62,29" concept="2" />
+      <node id="5915735921188923410" at="62,29,63,0" concept="8" />
+      <node id="5915735921188923412" at="63,0,64,104" concept="6" />
+      <node id="5915735921188923421" at="64,104,65,80" concept="2" />
+      <node id="5915735921188923433" at="65,80,66,75" concept="6" />
+      <node id="5915735921188923442" at="66,75,67,0" concept="8" />
+      <node id="5915735921188923443" at="67,0,68,19" concept="7" />
+      <node id="5915735921189283889" at="27,0,30,0" concept="5" trace="runGenerator#(Lorg/jetbrains/mps/openapi/module/SRepository;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Lcom/intellij/openapi/project/Project;Ljetbrains/mps/messages/IMessageHandler;)Ljetbrains/mps/generator/GenerationStatus;" />
+      <node id="5915735921189279464" at="40,41,43,5" concept="4" />
+      <node id="5915735921188912520" at="31,0,36,0" concept="5" trace="runGenerator#(Lorg/jetbrains/mps/openapi/module/SRepository;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Lcom/intellij/openapi/project/Project;Ljetbrains/mps/messages/IMessageHandler;Ljetbrains/mps/generator/GenerationParametersProvider;)Ljetbrains/mps/generator/GenerationStatus;" />
+      <node id="2981407471292470374" at="37,0,46,0" concept="5" trace="defaultOptionsBuilder#(Ljetbrains/mps/generator/GenerationParametersProvider;)Ljetbrains/mps/generator/GenerationOptions/OptionsBuilder;" />
+      <node id="2981407471292332661" at="47,0,58,0" concept="5" trace="runGenerator#(Lorg/jetbrains/mps/openapi/module/SRepository;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Lcom/intellij/openapi/project/Project;Ljetbrains/mps/messages/IMessageHandler;Ljetbrains/mps/generator/GenerationOptions/OptionsBuilder;)Ljetbrains/mps/generator/GenerationStatus;" />
+      <node id="5915735921188923345" at="59,0,70,0" concept="5" trace="runGenerator#(Lorg/jetbrains/mps/openapi/module/SRepository;Ljetbrains/mps/generator/GenerationOptions;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/generator/TransientModelsProvider;Ljetbrains/mps/messages/IMessageHandler;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)Ljetbrains/mps/generator/GenerationStatus;" />
+      <scope id="5915735921189283890" at="27,143,28,117" />
+      <scope id="5915735921189279466" at="41,33,42,42" />
+      <scope id="5915735921189283889" at="27,0,30,0">
+        <var name="messageHandler" id="5915735921189283973" />
+        <var name="modelToGenerate" id="5915735921189283969" />
+        <var name="plan" id="5915735921189283967" />
+        <var name="project" id="5915735921189283971" />
+        <var name="repo" id="5915735921189283965" />
+      </scope>
+      <scope id="5915735921188912521" at="31,188,34,88">
+        <var name="defaults" id="5915735921188912523" />
+      </scope>
+      <scope id="5915735921188912520" at="31,0,36,0">
+        <var name="messageHandler" id="5915735921188917728" />
+        <var name="modelToGenerate" id="5915735921188912647" />
+        <var name="paramsProvider" id="5915735921189277795" />
+        <var name="plan" id="5915735921188912645" />
+        <var name="project" id="5915735921188912649" />
+        <var name="repo" id="5915735921188912643" />
+      </scope>
+      <scope id="2981407471292470377" at="37,110,44,20">
+        <var name="defaults" id="2981407471292478503" />
+      </scope>
+      <scope id="2981407471292470374" at="37,0,46,0">
+        <var name="paramsProvider" id="2981407471295318764" />
+      </scope>
+      <scope id="2981407471292332662" at="47,195,56,105">
+        <var name="genPlan" id="2981407471292332683" />
+        <var name="options" id="2981407471292332725" />
+        <var name="planProvider" id="1797399825820483936" />
+        <var name="tmp" id="2981407471292332752" />
+      </scope>
+      <scope id="5915735921188923346" at="59,195,68,19">
+        <var name="genFacade" id="5915735921188923393" />
+        <var name="process" id="5915735921188923434" />
+        <var name="taskHandler" id="5915735921188923413" />
+      </scope>
+      <scope id="2981407471292332661" at="47,0,58,0">
+        <var name="defaults" id="2981407471292332780" />
+        <var name="messageHandler" id="2981407471292332778" />
+        <var name="modelToGenerate" id="2981407471292332774" />
+        <var name="plan" id="2981407471292332772" />
+        <var name="project" id="2981407471292332776" />
+        <var name="repo" id="2981407471292332770" />
+      </scope>
+      <scope id="5915735921188923345" at="59,0,70,0">
+        <var name="messageHandler" id="5915735921188923455" />
+        <var name="modelToGenerate" id="5915735921188923451" />
+        <var name="monitor" id="5915735921188959726" />
+        <var name="options" id="5915735921188923449" />
+        <var name="repo" id="5915735921188923447" />
+        <var name="tmp" id="5915735921188923453" />
+      </scope>
+      <unit id="5915735921188775088" at="25,0,73,0" name="com.mbeddr.mpsutil.generatorfacade.runtime.GeneratorFacade" />
+    </file>
+  </root>
+  <root nodeRef="r:00bd75cf-1225-4ef5-9a7e-390aed8718dd(com.mbeddr.mpsutil.generatorfacade.runtime)/5915735921189391717">
+    <file name="StreamMessageHandler.java">
+      <node id="5915735921189395698" at="15,0,16,0" concept="3" trace="stream" />
+      <node id="1103723565306657175" at="16,0,17,0" concept="3" trace="messages" />
+      <node id="5915735921189396060" at="18,46,19,15" concept="2" />
+      <node id="1103723565306657700" at="23,49,24,68" concept="2" />
+      <node id="5915735921189398682" at="25,5,26,38" concept="2" />
+      <node id="1103723565306668827" at="29,29,30,61" concept="7" />
+      <node id="1103723565306681618" at="33,41,34,25" concept="7" />
+      <node id="5915735921189392544" at="18,0,21,0" concept="1" trace="StreamMessageHandler#(Ljava/io/PrintStream;)V" />
+      <node id="1103723565306650237" at="22,49,25,5" concept="4" />
+      <node id="1103723565306620219" at="29,0,32,0" concept="5" trace="hasError#()Z" />
+      <node id="1103723565306625773" at="33,0,36,0" concept="5" trace="getMessages#()Ljava/lang/Iterable;" />
+      <node id="5915735921189391811" at="21,0,28,0" concept="5" trace="handle#(Ljetbrains/mps/messages/IMessage;)V" />
+      <scope id="5915735921189392547" at="18,46,19,15" />
+      <scope id="1103723565306650239" at="23,49,24,68" />
+      <scope id="1103723565306620223" at="29,29,30,61" />
+      <scope id="1103723565306625776" at="33,41,34,25" />
+      <scope id="5915735921189392544" at="18,0,21,0">
+        <var name="s" id="5915735921189395891" />
+      </scope>
+      <scope id="1103723565306620219" at="29,0,32,0" />
+      <scope id="1103723565306625773" at="33,0,36,0" />
+      <scope id="5915735921189391818" at="22,49,26,38" />
+      <scope id="5915735921189391811" at="21,0,28,0">
+        <var name="message" id="5915735921189391815" />
+      </scope>
+      <unit id="5915735921189391717" at="13,0,37,0" name="com.mbeddr.mpsutil.generatorfacade.runtime.StreamMessageHandler" />
+    </file>
+  </root>
+</debug-info>
+

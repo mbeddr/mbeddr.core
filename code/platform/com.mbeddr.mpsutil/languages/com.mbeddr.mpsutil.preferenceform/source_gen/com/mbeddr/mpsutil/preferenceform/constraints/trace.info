@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,39,0" name="com.mbeddr.mpsutil.preferenceform.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:b47699e1-f579-45a2-980f-682f8fd4cb7b(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.constraints)/3057648661792873081">
+    <file name="GetPreferenceFormInProjectOperation_Constraints.java">
+      <node id="3057648661792873081" at="29,60,30,59" concept="7" />
+      <node id="3057648661795005401" at="41,63,42,219" concept="4" />
+      <node id="2691011170768300472" at="45,80,46,307" concept="4" />
+      <node id="3057648661792873081" at="50,6,51,131" concept="3" />
+      <node id="3057648661795005401" at="51,131,52,42" concept="1" />
+      <node id="3057648661792873081" at="52,42,53,22" concept="4" />
+      <node id="3057648661792873081" at="57,0,58,0" concept="5" trace="GetPreferenceFormInProjectOperation$2s" />
+      <node id="3057648661792873081" at="58,0,59,0" concept="5" trace="PreferenceForm$yS" />
+      <node id="3057648661792873081" at="62,0,63,0" concept="5" trace="formDeclaration$wvZ7" />
+      <node id="3057648661792873081" at="66,0,67,0" concept="5" trace="scope$poW2" />
+      <node id="3057648661792873081" at="29,0,32,0" concept="0" trace="GetPreferenceFormInProjectOperation_Constraints#()V" />
+      <node id="3057648661795005401" at="40,0,44,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3057648661795005401" at="44,0,48,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="3057648661795005401" at="38,56,48,10" concept="4" />
+      <node id="3057648661795005401" at="36,0,50,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3057648661795005401" at="34,90,50,6" concept="3" />
+      <node id="3057648661792873081" at="33,0,55,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3057648661792873081" at="29,60,30,59" />
+      <scope id="3057648661795005401" at="41,63,42,219" />
+      <scope id="3057648661795005401" at="45,80,46,307" />
+      <scope id="3057648661792873081" at="29,0,32,0" />
+      <scope id="3057648661795005401" at="40,0,44,0" />
+      <scope id="3057648661795005401" at="44,0,48,0">
+        <var name="_context" id="3057648661795005401" />
+      </scope>
+      <scope id="3057648661795005401" at="38,56,48,10" />
+      <scope id="3057648661795005401" at="36,0,50,0" />
+      <scope id="3057648661792873081" at="34,90,53,22">
+        <var name="d0" id="3057648661795005401" />
+        <var name="references" id="3057648661792873081" />
+      </scope>
+      <scope id="3057648661792873081" at="33,0,55,0" />
+      <unit id="3057648661792873081" at="61,0,64,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInProjectOperation_Constraints$LINKS" />
+      <unit id="3057648661792873081" at="65,0,68,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInProjectOperation_Constraints$PROPS" />
+      <unit id="3057648661792873081" at="56,0,60,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInProjectOperation_Constraints$CONCEPTS" />
+      <unit id="3057648661795005401" at="39,19,48,9" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInProjectOperation_Constraints$1$1" />
+      <unit id="3057648661795005401" at="35,48,50,5" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInProjectOperation_Constraints$1" />
+      <unit id="3057648661792873081" at="28,0,69,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInProjectOperation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:b47699e1-f579-45a2-980f-682f8fd4cb7b(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.constraints)/3057648661793081489">
+    <file name="GetPreferenceFormInApplicationExpression_Constraints.java">
+      <node id="3057648661793081489" at="29,65,30,64" concept="7" />
+      <node id="3057648661794951672" at="41,63,42,219" concept="4" />
+      <node id="2691011170768300709" at="45,80,46,307" concept="4" />
+      <node id="3057648661793081489" at="50,6,51,131" concept="3" />
+      <node id="3057648661794951672" at="51,131,52,42" concept="1" />
+      <node id="3057648661793081489" at="52,42,53,22" concept="4" />
+      <node id="3057648661793081489" at="57,0,58,0" concept="5" trace="GetPreferenceFormInApplicationExpression$cV" />
+      <node id="3057648661793081489" at="58,0,59,0" concept="5" trace="PreferenceForm$yS" />
+      <node id="3057648661793081489" at="62,0,63,0" concept="5" trace="formDeclaration$wvZ7" />
+      <node id="3057648661793081489" at="66,0,67,0" concept="5" trace="scope$poW2" />
+      <node id="3057648661793081489" at="29,0,32,0" concept="0" trace="GetPreferenceFormInApplicationExpression_Constraints#()V" />
+      <node id="3057648661794951672" at="40,0,44,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="3057648661794951672" at="44,0,48,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="3057648661794951672" at="38,56,48,10" concept="4" />
+      <node id="3057648661794951672" at="36,0,50,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="3057648661794951672" at="34,90,50,6" concept="3" />
+      <node id="3057648661793081489" at="33,0,55,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="3057648661793081489" at="29,65,30,64" />
+      <scope id="3057648661794951672" at="41,63,42,219" />
+      <scope id="3057648661794951672" at="45,80,46,307" />
+      <scope id="3057648661793081489" at="29,0,32,0" />
+      <scope id="3057648661794951672" at="40,0,44,0" />
+      <scope id="3057648661794951672" at="44,0,48,0">
+        <var name="_context" id="3057648661794951672" />
+      </scope>
+      <scope id="3057648661794951672" at="38,56,48,10" />
+      <scope id="3057648661794951672" at="36,0,50,0" />
+      <scope id="3057648661793081489" at="34,90,53,22">
+        <var name="d0" id="3057648661794951672" />
+        <var name="references" id="3057648661793081489" />
+      </scope>
+      <scope id="3057648661793081489" at="33,0,55,0" />
+      <unit id="3057648661793081489" at="61,0,64,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInApplicationExpression_Constraints$LINKS" />
+      <unit id="3057648661793081489" at="65,0,68,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInApplicationExpression_Constraints$PROPS" />
+      <unit id="3057648661793081489" at="56,0,60,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInApplicationExpression_Constraints$CONCEPTS" />
+      <unit id="3057648661794951672" at="39,19,48,9" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInApplicationExpression_Constraints$1$1" />
+      <unit id="3057648661794951672" at="35,48,50,5" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInApplicationExpression_Constraints$1" />
+      <unit id="3057648661793081489" at="28,0,69,0" name="com.mbeddr.mpsutil.preferenceform.constraints.GetPreferenceFormInApplicationExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:b47699e1-f579-45a2-980f-682f8fd4cb7b(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.constraints)/4412484936313572">
+    <file name="PassWordFieldPreferenceFormProperty_Constraints.java">
+      <node id="4412484936313572" at="21,60,22,59" concept="7" />
+      <node id="4412484936313573" at="26,67,27,68" concept="7" />
+      <node id="4412484936313573" at="30,68,31,82" concept="1" />
+      <node id="4412484936313576" at="33,82,34,197" concept="3" />
+      <node id="4412484936313582" at="34,197,35,75" concept="1" />
+      <node id="4412484936313588" at="35,75,36,71" concept="1" />
+      <node id="4412484936313594" at="36,71,37,79" concept="1" />
+      <node id="4412484936313572" at="41,84,42,119" concept="3" />
+      <node id="4412484936313573" at="42,119,43,77" concept="1" />
+      <node id="4412484936313572" at="43,77,44,22" concept="4" />
+      <node id="4412484936313572" at="48,0,49,0" concept="5" trace="PassWordFieldPreferenceFormProperty$i$" />
+      <node id="4412484936313572" at="52,0,53,0" concept="5" trace="defaultValue$Li7P" />
+      <node id="4412484936313572" at="53,0,54,0" concept="5" trace="value$w7MM" />
+      <node id="4412484936313572" at="57,0,58,0" concept="5" trace="initializer$2twD" />
+      <node id="4412484936313572" at="21,0,24,0" concept="0" trace="PassWordFieldPreferenceFormProperty_Constraints#()V" />
+      <node id="4412484936313573" at="26,0,29,0" concept="0" trace="DefaultValue_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4412484936313573" at="29,0,33,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="4412484936313573" at="33,0,39,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="4412484936313572" at="40,0,46,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="4412484936313572" at="21,60,22,59" />
+      <scope id="4412484936313573" at="26,67,27,68" />
+      <scope id="4412484936313573" at="30,68,31,82" />
+      <scope id="4412484936313572" at="21,0,24,0" />
+      <scope id="4412484936313573" at="26,0,29,0">
+        <var name="container" id="4412484936313573" />
+      </scope>
+      <scope id="4412484936313572" at="41,84,44,22">
+        <var name="properties" id="4412484936313572" />
+      </scope>
+      <scope id="4412484936313573" at="29,0,33,0">
+        <var name="node" id="4412484936313573" />
+        <var name="propertyValue" id="4412484936313573" />
+      </scope>
+      <scope id="4412484936313575" at="33,82,37,79">
+        <var name="literal" id="4412484936313577" />
+      </scope>
+      <scope id="4412484936313573" at="33,0,39,0">
+        <var name="node" id="4412484936313573" />
+        <var name="propertyValue" id="4412484936313573" />
+      </scope>
+      <scope id="4412484936313572" at="40,0,46,0" />
+      <unit id="4412484936313572" at="47,0,50,0" name="com.mbeddr.mpsutil.preferenceform.constraints.PassWordFieldPreferenceFormProperty_Constraints$CONCEPTS" />
+      <unit id="4412484936313572" at="56,0,59,0" name="com.mbeddr.mpsutil.preferenceform.constraints.PassWordFieldPreferenceFormProperty_Constraints$LINKS" />
+      <unit id="4412484936313572" at="51,0,55,0" name="com.mbeddr.mpsutil.preferenceform.constraints.PassWordFieldPreferenceFormProperty_Constraints$PROPS" />
+      <unit id="4412484936313573" at="25,0,40,0" name="com.mbeddr.mpsutil.preferenceform.constraints.PassWordFieldPreferenceFormProperty_Constraints$DefaultValue_Property" />
+      <unit id="4412484936313572" at="20,0,60,0" name="com.mbeddr.mpsutil.preferenceform.constraints.PassWordFieldPreferenceFormProperty_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:b47699e1-f579-45a2-980f-682f8fd4cb7b(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.constraints)/4660659496839302718">
+    <file name="CheckBoxPreferenceFormProperty_Constraints.java">
+      <node id="4660659496839302718" at="21,55,22,54" concept="7" />
+      <node id="4660659496839302812" at="26,67,27,68" concept="7" />
+      <node id="4660659496839302812" at="30,68,31,83" concept="1" />
+      <node id="4660659496839691787" at="33,83,34,199" concept="3" />
+      <node id="4660659496839710143" at="34,199,35,75" concept="1" />
+      <node id="4660659496839303381" at="35,75,36,71" concept="1" />
+      <node id="4660659496839748383" at="36,71,37,79" concept="1" />
+      <node id="4660659496839302718" at="41,84,42,119" concept="3" />
+      <node id="4660659496839302812" at="42,119,43,77" concept="1" />
+      <node id="4660659496839302718" at="43,77,44,22" concept="4" />
+      <node id="4660659496839302718" at="48,0,49,0" concept="5" trace="CheckBoxPreferenceFormProperty$P0" />
+      <node id="4660659496839302718" at="52,0,53,0" concept="5" trace="defaultValue$93lP" />
+      <node id="4660659496839302718" at="53,0,54,0" concept="5" trace="value$5y_M" />
+      <node id="4660659496839302718" at="57,0,58,0" concept="5" trace="initializer$2twD" />
+      <node id="4660659496839302718" at="21,0,24,0" concept="0" trace="CheckBoxPreferenceFormProperty_Constraints#()V" />
+      <node id="4660659496839302812" at="26,0,29,0" concept="0" trace="DefaultValue_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4660659496839302812" at="29,0,33,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="4660659496839302812" at="33,0,39,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
+      <node id="4660659496839302718" at="40,0,46,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="4660659496839302718" at="21,55,22,54" />
+      <scope id="4660659496839302812" at="26,67,27,68" />
+      <scope id="4660659496839302812" at="30,68,31,83" />
+      <scope id="4660659496839302718" at="21,0,24,0" />
+      <scope id="4660659496839302812" at="26,0,29,0">
+        <var name="container" id="4660659496839302812" />
+      </scope>
+      <scope id="4660659496839302718" at="41,84,44,22">
+        <var name="properties" id="4660659496839302718" />
+      </scope>
+      <scope id="4660659496839302812" at="29,0,33,0">
+        <var name="node" id="4660659496839302812" />
+        <var name="propertyValue" id="4660659496839302812" />
+      </scope>
+      <scope id="4660659496839303361" at="33,83,37,79">
+        <var name="literal" id="4660659496839691788" />
+      </scope>
+      <scope id="4660659496839302812" at="33,0,39,0">
+        <var name="node" id="4660659496839302812" />
+        <var name="propertyValue" id="4660659496839302812" />
+      </scope>
+      <scope id="4660659496839302718" at="40,0,46,0" />
+      <unit id="4660659496839302718" at="47,0,50,0" name="com.mbeddr.mpsutil.preferenceform.constraints.CheckBoxPreferenceFormProperty_Constraints$CONCEPTS" />
+      <unit id="4660659496839302718" at="56,0,59,0" name="com.mbeddr.mpsutil.preferenceform.constraints.CheckBoxPreferenceFormProperty_Constraints$LINKS" />
+      <unit id="4660659496839302718" at="51,0,55,0" name="com.mbeddr.mpsutil.preferenceform.constraints.CheckBoxPreferenceFormProperty_Constraints$PROPS" />
+      <unit id="4660659496839302812" at="25,0,40,0" name="com.mbeddr.mpsutil.preferenceform.constraints.CheckBoxPreferenceFormProperty_Constraints$DefaultValue_Property" />
+      <unit id="4660659496839302718" at="20,0,60,0" name="com.mbeddr.mpsutil.preferenceform.constraints.CheckBoxPreferenceFormProperty_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:b47699e1-f579-45a2-980f-682f8fd4cb7b(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.constraints)/4660659496839758272">
+    <file name="TextFieldPreferenceFormProperty_Constraints.java">
+      <node id="4660659496839758272" at="21,56,22,55" concept="7" />
+      <node id="4660659496839758273" at="26,67,27,68" concept="7" />
+      <node id="4660659496839758273" at="30,68,31,82" concept="1" />
+      <node id="4660659496839769742" at="33,82,34,197" concept="3" />
+      <node id="4660659496839769748" at="34,197,35,75" concept="1" />
+      <node id="4660659496839769754" at="35,75,36,71" concept="1" />
+      <node id="4660659496839769760" at="36,71,37,79" concept="1" />
+      <node id="4660659496839758272" at="41,84,42,119" concept="3" />
+      <node id="4660659496839758273" at="42,119,43,77" concept="1" />
+      <node id="4660659496839758272" at="43,77,44,22" concept="4" />
+      <node id="4660659496839758272" at="48,0,49,0" concept="5" trace="TextFieldPreferenceFormProperty$Ok" />
+      <node id="4660659496839758272" at="52,0,53,0" concept="5" trace="defaultValue$UyZP" />
+      <node id="4660659496839758272" at="53,0,54,0" concept="5" trace="value$w7MM" />
+      <node id="4660659496839758272" at="57,0,58,0" concept="5" trace="initializer$2twD" />
+      <node id="4660659496839758272" at="21,0,24,0" concept="0" trace="TextFieldPreferenceFormProperty_Constraints#()V" />
+      <node id="4660659496839758273" at="26,0,29,0" concept="0" trace="DefaultValue_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4660659496839758273" at="29,0,33,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="4660659496839758273" at="33,0,39,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="4660659496839758272" at="40,0,46,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="4660659496839758272" at="21,56,22,55" />
+      <scope id="4660659496839758273" at="26,67,27,68" />
+      <scope id="4660659496839758273" at="30,68,31,82" />
+      <scope id="4660659496839758272" at="21,0,24,0" />
+      <scope id="4660659496839758273" at="26,0,29,0">
+        <var name="container" id="4660659496839758273" />
+      </scope>
+      <scope id="4660659496839758272" at="41,84,44,22">
+        <var name="properties" id="4660659496839758272" />
+      </scope>
+      <scope id="4660659496839758273" at="29,0,33,0">
+        <var name="node" id="4660659496839758273" />
+        <var name="propertyValue" id="4660659496839758273" />
+      </scope>
+      <scope id="4660659496839758276" at="33,82,37,79">
+        <var name="literal" id="4660659496839769743" />
+      </scope>
+      <scope id="4660659496839758273" at="33,0,39,0">
+        <var name="node" id="4660659496839758273" />
+        <var name="propertyValue" id="4660659496839758273" />
+      </scope>
+      <scope id="4660659496839758272" at="40,0,46,0" />
+      <unit id="4660659496839758272" at="47,0,50,0" name="com.mbeddr.mpsutil.preferenceform.constraints.TextFieldPreferenceFormProperty_Constraints$CONCEPTS" />
+      <unit id="4660659496839758272" at="56,0,59,0" name="com.mbeddr.mpsutil.preferenceform.constraints.TextFieldPreferenceFormProperty_Constraints$LINKS" />
+      <unit id="4660659496839758272" at="51,0,55,0" name="com.mbeddr.mpsutil.preferenceform.constraints.TextFieldPreferenceFormProperty_Constraints$PROPS" />
+      <unit id="4660659496839758273" at="25,0,40,0" name="com.mbeddr.mpsutil.preferenceform.constraints.TextFieldPreferenceFormProperty_Constraints$DefaultValue_Property" />
+      <unit id="4660659496839758272" at="20,0,60,0" name="com.mbeddr.mpsutil.preferenceform.constraints.TextFieldPreferenceFormProperty_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:b47699e1-f579-45a2-980f-682f8fd4cb7b(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.constraints)/4728279602824496434">
+    <file name="IntegerFieldPreferenceFormProperty_Constraints.java">
+      <node id="4728279602824496434" at="21,59,22,58" concept="7" />
+      <node id="4728279602824497302" at="26,67,27,68" concept="7" />
+      <node id="4728279602824497302" at="30,68,31,83" concept="1" />
+      <node id="4728279602824497388" at="33,79,34,199" concept="3" />
+      <node id="4728279602824497394" at="34,199,35,75" concept="1" />
+      <node id="4728279602824497400" at="35,75,36,71" concept="1" />
+      <node id="4728279602824497406" at="36,71,37,79" concept="1" />
+      <node id="4728279602824496434" at="41,84,42,119" concept="3" />
+      <node id="4728279602824497302" at="42,119,43,77" concept="1" />
+      <node id="4728279602824496434" at="43,77,44,22" concept="4" />
+      <node id="4728279602824496434" at="48,0,49,0" concept="5" trace="IntegerFieldPreferenceFormProperty$96" />
+      <node id="4728279602824496434" at="52,0,53,0" concept="5" trace="defaultValue$BNQj" />
+      <node id="4728279602824496434" at="53,0,54,0" concept="5" trace="value$jgCM" />
+      <node id="4728279602824496434" at="57,0,58,0" concept="5" trace="initializer$2twD" />
+      <node id="4728279602824496434" at="21,0,24,0" concept="0" trace="IntegerFieldPreferenceFormProperty_Constraints#()V" />
+      <node id="4728279602824497302" at="26,0,29,0" concept="0" trace="DefaultValue_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4728279602824497302" at="29,0,33,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="4728279602824497302" at="33,0,39,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
+      <node id="4728279602824496434" at="40,0,46,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="4728279602824496434" at="21,59,22,58" />
+      <scope id="4728279602824497302" at="26,67,27,68" />
+      <scope id="4728279602824497302" at="30,68,31,83" />
+      <scope id="4728279602824496434" at="21,0,24,0" />
+      <scope id="4728279602824497302" at="26,0,29,0">
+        <var name="container" id="4728279602824497302" />
+      </scope>
+      <scope id="4728279602824496434" at="41,84,44,22">
+        <var name="properties" id="4728279602824496434" />
+      </scope>
+      <scope id="4728279602824497302" at="29,0,33,0">
+        <var name="node" id="4728279602824497302" />
+        <var name="propertyValue" id="4728279602824497302" />
+      </scope>
+      <scope id="4728279602824497305" at="33,79,37,79">
+        <var name="literal" id="4728279602824497389" />
+      </scope>
+      <scope id="4728279602824497302" at="33,0,39,0">
+        <var name="node" id="4728279602824497302" />
+        <var name="propertyValue" id="4728279602824497302" />
+      </scope>
+      <scope id="4728279602824496434" at="40,0,46,0" />
+      <unit id="4728279602824496434" at="47,0,50,0" name="com.mbeddr.mpsutil.preferenceform.constraints.IntegerFieldPreferenceFormProperty_Constraints$CONCEPTS" />
+      <unit id="4728279602824496434" at="56,0,59,0" name="com.mbeddr.mpsutil.preferenceform.constraints.IntegerFieldPreferenceFormProperty_Constraints$LINKS" />
+      <unit id="4728279602824496434" at="51,0,55,0" name="com.mbeddr.mpsutil.preferenceform.constraints.IntegerFieldPreferenceFormProperty_Constraints$PROPS" />
+      <unit id="4728279602824497302" at="25,0,40,0" name="com.mbeddr.mpsutil.preferenceform.constraints.IntegerFieldPreferenceFormProperty_Constraints$DefaultValue_Property" />
+      <unit id="4728279602824496434" at="20,0,60,0" name="com.mbeddr.mpsutil.preferenceform.constraints.IntegerFieldPreferenceFormProperty_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

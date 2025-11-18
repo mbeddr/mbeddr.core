@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="didmd5i3mbiw04gngh9e1a25c02vo98">
+  <files names="AbstractDefineLike_TextGen.java:ArbitraryTextContent_TextGen.java:ArgumentRef_TextGen.java:Argument_TextGen.java:CommentModuleContent_TextGen.java:ConcatExpression_TextGen.java:EmptyModuleContent_TextGen.java:FunctionCall_TextGen.java:FunctionPrototype_TextGen.java:FunctionRefCallExpr_TextGen.java:FunctionRefExpr_TextGen.java:FunctionRefType_TextGen.java:Function_TextGen.java:GlobalConstantFunctionArgument_TextGen.java:GlobalConstantFunctionDeclaration_TextGen.java:GlobalConstantFunctionRef_TextGen.java:GlobalConstantFuntionArgumentRef_TextGen.java:GlobalConstantRef_TextGen.java:GlobalVarRef_TextGen.java:GlobalVariableDeclaration_TextGen.java:GotoStatement_TextGen.java:HashOperator_TextGen.java:LabelStatement_TextGen.java:ModifierModuleContent_TextGen.java:NameOfFunctionExpression_TextGen.java:NoOp_TextGen.java:ReturnStatement_TextGen.java:TextGenAspectDescriptor.java:TypeExpression_TextGen.java:VaArgs_TextGen.java:VaEndStatement_TextGen.java:VaStartStatement_TextGen.java:VariadicArgument_TextGen.java" />
+</product>
+

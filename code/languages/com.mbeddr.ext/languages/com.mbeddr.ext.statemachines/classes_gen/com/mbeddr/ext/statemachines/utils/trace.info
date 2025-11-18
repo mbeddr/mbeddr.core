@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:0408ee73-1f2e-4dd0-8c67-48f28bb6adce(com.mbeddr.ext.statemachines.utils)/5832006583492059432">
+    <file name="StatemachineNamingUtils.java">
+      <node id="5832006583492059434" at="15,0,16,0" concept="3" trace="EVENT_ARG_VARIABLE_NAME_FORMAT" />
+      <node id="6393824609528892965" at="16,0,17,0" concept="3" trace="EVENT_ARG_VARIABLE_NAME_PATTERN" />
+      <node id="6393824609534875995" at="18,0,19,0" concept="3" trace="EVENTS_ARG_VARIABLE_NAME_FORMAT" />
+      <node id="5126871010063616644" at="19,0,20,0" concept="3" trace="TRANSITON_END_LABEL_NAME_FORMAT" />
+      <node id="6393824609528900363" at="21,88,22,220" concept="2" />
+      <node id="6393824609534870991" at="25,78,26,168" concept="2" />
+      <node id="6393824609528916941" at="29,57,30,70" concept="2" />
+      <node id="6393824609528925612" at="33,57,34,71" concept="1" />
+      <node id="6393824609528928485" at="35,28,36,30" concept="2" />
+      <node id="6393824609528931769" at="37,5,38,16" concept="2" />
+      <node id="5126871010063616627" at="41,89,42,201" concept="2" />
+      <node id="5832006583492059432" at="46,0,47,0" concept="3" trace="name$MnvL" />
+      <node id="5832006583492059438" at="21,0,24,0" concept="4" trace="computeNameOfEventVariable#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6393824609534870989" at="25,0,28,0" concept="4" trace="computeNameOfEventsVariable#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5832006583492059451" at="29,0,32,0" concept="4" trace="isEventVariable#(Ljava/lang/String;)Z" />
+      <node id="6393824609528925925" at="34,71,37,5" concept="0" />
+      <node id="5126871010063626037" at="41,0,44,0" concept="4" trace="computeNameOfTransitionEndLabel#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5832006583492059463" at="33,0,40,0" concept="4" trace="computeEventName#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="5832006583492059439" at="21,88,22,220" />
+      <scope id="6393824609534870990" at="25,78,26,168" />
+      <scope id="5832006583492059452" at="29,57,30,70" />
+      <scope id="6393824609528925927" at="35,28,36,30" />
+      <scope id="5126871010063611810" at="41,89,42,201" />
+      <scope id="5832006583492059438" at="21,0,24,0">
+        <var name="arg" id="5832006583492059448" />
+        <var name="evt" id="6393824609528810483" />
+        <var name="machine" id="6393824609528810074" />
+      </scope>
+      <scope id="6393824609534870989" at="25,0,28,0">
+        <var name="evt" id="6393824609534871007" />
+        <var name="machine" id="6393824609534871005" />
+      </scope>
+      <scope id="5832006583492059451" at="29,0,32,0">
+        <var name="varName" id="5832006583492059460" />
+      </scope>
+      <scope id="5126871010063626037" at="41,0,44,0">
+        <var name="machine" id="5126871010067389967" />
+        <var name="transition" id="5126871010063615609" />
+      </scope>
+      <scope id="5832006583492059464" at="33,57,38,16">
+        <var name="matcher" id="6393824609528925613" />
+      </scope>
+      <scope id="5832006583492059463" at="33,0,40,0">
+        <var name="varName" id="5832006583492059474" />
+      </scope>
+      <unit id="5832006583492059432" at="45,0,48,0" name="com.mbeddr.ext.statemachines.utils.StatemachineNamingUtils$PROPS" />
+      <unit id="5832006583492059432" at="13,0,49,0" name="com.mbeddr.ext.statemachines.utils.StatemachineNamingUtils" />
+    </file>
+  </root>
+</debug-info>
+

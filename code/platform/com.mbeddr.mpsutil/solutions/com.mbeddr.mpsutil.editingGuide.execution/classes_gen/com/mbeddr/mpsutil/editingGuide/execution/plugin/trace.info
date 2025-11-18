@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root nodeRef="r:dba7389e-f3da-45d5-96fa-844ef50273de(com.mbeddr.mpsutil.editingGuide.execution.plugin)/4124905213060628614">
+    <file name="Execution_ProjectPlugin.java">
+      <node id="4124905213060628614" at="10,0,12,0" concept="0" trace="Execution_ProjectPlugin#()V" />
+      <node id="4124905213060628614" at="12,0,15,0" concept="2" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="4124905213060628614" at="10,36,10,36" />
+      <scope id="4124905213060628614" at="12,62,13,53" />
+      <scope id="4124905213060628614" at="10,0,12,0" />
+      <scope id="4124905213060628614" at="12,0,15,0">
+        <var name="parts" id="4124905213060628614" />
+      </scope>
+      <unit id="4124905213060628614" at="9,0,16,0" name="com.mbeddr.mpsutil.editingGuide.execution.plugin.Execution_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:dba7389e-f3da-45d5-96fa-844ef50273de(com.mbeddr.mpsutil.editingGuide.execution.plugin)/4124905213060628615">
+    <file name="Execution_ProjectPlugin.java">
+      <node id="4124905213060628615" at="12,62,13,53" concept="1" />
+    </file>
+    <file name="ProjectPlugin_ProjectPluginPart.java">
+      <node id="4124905213060673168" at="16,43,17,41" concept="1" />
+      <node id="4124905213060628615" at="10,0,12,0" concept="0" trace="ProjectPlugin_ProjectPluginPart#()V" />
+      <node id="4124905213060628615" at="12,0,15,0" concept="2" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="4124905213060628615" at="15,0,19,0" concept="2" trace="dispose#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="4124905213060628615" at="10,44,10,44" />
+      <scope id="4124905213060628617" at="13,40,13,40" />
+      <scope id="4124905213060628631" at="16,43,17,41" />
+      <scope id="4124905213060628615" at="10,0,12,0" />
+      <scope id="4124905213060628615" at="12,0,15,0">
+        <var name="project" id="4124905213060628615" />
+      </scope>
+      <scope id="4124905213060628615" at="15,0,19,0">
+        <var name="project" id="4124905213060628615" />
+      </scope>
+      <unit id="4124905213060628615" at="9,0,20,0" name="com.mbeddr.mpsutil.editingGuide.execution.plugin.ProjectPlugin_ProjectPluginPart" />
+    </file>
+  </root>
+</debug-info>
+

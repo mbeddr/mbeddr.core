@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="322,0,325,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$PROPS" />
+      <unit at="326,0,332,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$LINKS" />
+      <unit at="314,0,321,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$CONCEPTS" />
+      <unit at="174,0,189,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$SNsQ" />
+      <unit at="142,0,163,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$SNQ" />
+      <unit at="245,0,266,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$IfMC" />
+      <unit at="205,0,231,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$PVQ" />
+      <unit at="283,0,313,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$RTQ" />
+      <unit at="41,0,333,0" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:22eca94c-69be-4da1-91ba-2d3e5b402425(com.mbeddr.cc.requirements.scenario2doc.generator.template.main@generator)/5785245534400582257">
+    <file name="QueriesGenerated.java">
+      <node id="5785245534401214241" at="46,88,47,164" concept="3" />
+      <node id="3126418051240127519" at="49,88,50,78" concept="3" />
+      <node id="3126418051240127537" at="52,88,53,30" concept="3" />
+      <node id="8903209210859207202" at="55,88,56,107" concept="3" />
+      <node id="8903209210859207314" at="58,88,59,78" concept="3" />
+      <node id="8903209210859207369" at="61,88,62,102" concept="3" />
+      <node id="8903209210859194987" at="64,93,65,164" concept="3" />
+      <node id="157649465198141740" at="67,93,68,109" concept="3" />
+      <node id="157649465198141065" at="70,93,71,30" concept="3" />
+      <node id="157649465198151891" at="73,93,74,109" concept="3" />
+      <node id="157649465198151901" at="76,93,77,30" concept="3" />
+      <node id="157649465198197752" at="79,93,80,109" concept="3" />
+      <node id="157649465198197762" at="82,93,83,30" concept="3" />
+      <node id="3126418051240128042" at="88,41,89,78" concept="3" />
+      <node id="3126418051240128115" at="92,7,93,206" concept="3" />
+      <node id="8903209210859207087" at="95,78,96,170" concept="3" />
+      <node id="8903209210859207103" at="98,78,99,167" concept="3" />
+      <node id="8903209210859207117" at="101,78,102,167" concept="3" />
+      <node id="3126418051240128105" at="107,41,108,78" concept="3" />
+      <node id="8903209210859192259" at="113,92,114,157" concept="3" />
+      <node id="3126418051240127507" at="116,92,117,215" concept="3" />
+      <node id="4400783559374200944" at="119,92,120,119" concept="3" />
+      <node id="4400783559374200992" at="122,92,123,339" concept="3" />
+      <node id="8903209210859207130" at="125,104,126,131" concept="3" />
+      <node id="8903209210859192257" at="130,14,131,56" concept="0" />
+      <node id="3126418051240127505" at="131,56,132,56" concept="0" />
+      <node id="4400783559374200942" at="132,56,133,56" concept="0" />
+      <node id="4400783559374200989" at="133,56,134,56" concept="0" />
+      <node id="8903209210859192257" at="150,15,151,59" concept="3" />
+      <node id="3126418051240127505" at="152,15,153,59" concept="3" />
+      <node id="4400783559374200942" at="154,15,155,59" concept="3" />
+      <node id="4400783559374200989" at="156,15,157,59" concept="3" />
+      <node id="8903209210859207128" at="165,14,166,58" concept="0" />
+      <node id="8903209210859207128" at="182,15,183,87" concept="3" />
+      <node id="5785245534401214238" at="191,14,192,175" concept="0" />
+      <node id="3126418051240127516" at="192,175,193,175" concept="0" />
+      <node id="3126418051240127534" at="193,175,194,196" concept="0" />
+      <node id="8903209210859207199" at="194,196,195,187" concept="0" />
+      <node id="8903209210859207311" at="195,187,196,188" concept="0" />
+      <node id="8903209210859207366" at="196,188,197,188" concept="0" />
+      <node id="5785245534401214238" at="214,15,215,66" concept="3" />
+      <node id="3126418051240127516" at="216,15,217,66" concept="3" />
+      <node id="3126418051240127534" at="218,15,219,66" concept="3" />
+      <node id="8903209210859207199" at="220,15,221,66" concept="3" />
+      <node id="8903209210859207311" at="222,15,223,66" concept="3" />
+      <node id="8903209210859207366" at="224,15,225,66" concept="3" />
+      <node id="8903209210859207084" at="233,14,234,57" concept="0" />
+      <node id="8903209210859207100" at="234,57,235,57" concept="0" />
+      <node id="8903209210859207114" at="235,57,236,57" concept="0" />
+      <node id="3126418051240128059" at="236,57,237,57" concept="0" />
+      <node id="8903209210859207084" at="253,15,254,61" concept="3" />
+      <node id="8903209210859207100" at="255,15,256,61" concept="3" />
+      <node id="8903209210859207114" at="257,15,258,61" concept="3" />
+      <node id="3126418051240128059" at="259,15,260,61" concept="3" />
+      <node id="8903209210859194984" at="267,3,268,59" concept="0" />
+      <node id="157649465198141631" at="268,59,269,58" concept="0" />
+      <node id="157649465198140934" at="269,58,270,58" concept="0" />
+      <node id="157649465198151888" at="270,58,271,58" concept="0" />
+      <node id="157649465198151898" at="271,58,272,58" concept="0" />
+      <node id="157649465198197749" at="272,58,273,58" concept="0" />
+      <node id="157649465198197759" at="273,58,274,64" concept="0" />
+      <node id="3126418051240127760" at="274,64,275,63" concept="0" />
+      <node id="8903209210859194984" at="292,15,293,70" concept="3" />
+      <node id="157649465198141631" at="294,15,295,70" concept="3" />
+      <node id="157649465198140934" at="296,15,297,70" concept="3" />
+      <node id="157649465198151888" at="298,15,299,70" concept="3" />
+      <node id="157649465198151898" at="300,15,301,70" concept="3" />
+      <node id="157649465198197749" at="302,15,303,70" concept="3" />
+      <node id="157649465198197759" at="304,15,305,70" concept="3" />
+      <node id="3126418051240127760" at="306,15,307,70" concept="3" />
+      <node id="5785245534401214239" at="46,0,49,0" concept="4" trace="propertyMacro_GetValue_0_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="3126418051240127517" at="49,0,52,0" concept="4" trace="propertyMacro_GetValue_0_1#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="3126418051240127535" at="52,0,55,0" concept="4" trace="propertyMacro_GetValue_0_2#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="8903209210859207200" at="55,0,58,0" concept="4" trace="propertyMacro_GetValue_0_3#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="8903209210859207312" at="58,0,61,0" concept="4" trace="propertyMacro_GetValue_0_4#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="8903209210859207367" at="61,0,64,0" concept="4" trace="propertyMacro_GetValue_0_5#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="8903209210859194985" at="64,0,67,0" concept="4" trace="referenceMacro_GetReferent_0_0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="157649465198141632" at="67,0,70,0" concept="4" trace="referenceMacro_GetReferent_0_1#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="157649465198140935" at="70,0,73,0" concept="4" trace="referenceMacro_GetReferent_0_2#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="157649465198151889" at="73,0,76,0" concept="4" trace="referenceMacro_GetReferent_0_3#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="157649465198151899" at="76,0,79,0" concept="4" trace="referenceMacro_GetReferent_0_4#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="157649465198197750" at="79,0,82,0" concept="4" trace="referenceMacro_GetReferent_0_5#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="157649465198197760" at="82,0,85,0" concept="4" trace="referenceMacro_GetReferent_0_6#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <node id="3126418051240128040" at="88,0,91,0" concept="1" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="8903209210859207085" at="95,0,98,0" concept="4" trace="ifMacro_Condition_0_0#(Ljetbrains/mps/generator/template/IfMacroContext;)Z" />
+      <node id="8903209210859207101" at="98,0,101,0" concept="4" trace="ifMacro_Condition_0_1#(Ljetbrains/mps/generator/template/IfMacroContext;)Z" />
+      <node id="8903209210859207115" at="101,0,104,0" concept="4" trace="ifMacro_Condition_0_2#(Ljetbrains/mps/generator/template/IfMacroContext;)Z" />
+      <node id="3126418051240128103" at="107,0,110,0" concept="1" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="8903209210859192257" at="113,0,116,0" concept="4" trace="sourceNodeQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3126418051240127505" at="116,0,119,0" concept="4" trace="sourceNodeQuery_0_1#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4400783559374200942" at="119,0,122,0" concept="4" trace="sourceNodeQuery_0_2#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4400783559374200989" at="122,0,125,0" concept="4" trace="sourceNodeQuery_0_3#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8903209210859207128" at="125,0,128,0" concept="4" trace="sourceNodesQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodesContext;)Ljava/lang/Iterable;" />
+      <node id="3126418051240128034" at="86,144,91,9" concept="3" />
+      <node id="3126418051240128097" at="105,132,110,9" concept="3" />
+      <node id="3126418051240128022" at="85,93,92,7" concept="2" />
+      <node id="3126418051240128093" at="104,78,111,7" concept="3" />
+      <node id="3126418051240128060" at="104,0,113,0" concept="4" trace="ifMacro_Condition_0_3#(Ljetbrains/mps/generator/template/IfMacroContext;)Z" />
+      <node id="3126418051240127761" at="85,0,95,0" concept="4" trace="referenceMacro_GetReferent_0_7#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <scope id="5785245534401214240" at="46,88,47,164" />
+      <scope id="3126418051240127518" at="49,88,50,78" />
+      <scope id="3126418051240127536" at="52,88,53,30" />
+      <scope id="8903209210859207201" at="55,88,56,107" />
+      <scope id="8903209210859207313" at="58,88,59,78" />
+      <scope id="8903209210859207368" at="61,88,62,102" />
+      <scope id="8903209210859194986" at="64,93,65,164" />
+      <scope id="157649465198141633" at="67,93,68,109" />
+      <scope id="157649465198140936" at="70,93,71,30" />
+      <scope id="157649465198151890" at="73,93,74,109" />
+      <scope id="157649465198151900" at="76,93,77,30" />
+      <scope id="157649465198197751" at="79,93,80,109" />
+      <scope id="157649465198197761" at="82,93,83,30" />
+      <scope id="3126418051240128041" at="88,41,89,78" />
+      <scope id="8903209210859207086" at="95,78,96,170" />
+      <scope id="8903209210859207102" at="98,78,99,167" />
+      <scope id="8903209210859207116" at="101,78,102,167" />
+      <scope id="3126418051240128104" at="107,41,108,78" />
+      <scope id="8903209210859192258" at="113,92,114,157" />
+      <scope id="3126418051240127506" at="116,92,117,215" />
+      <scope id="4400783559374200943" at="119,92,120,119" />
+      <scope id="4400783559374200990" at="122,92,123,339" />
+      <scope id="8903209210859207129" at="125,104,126,131" />
+      <scope id="8903209210859192257" at="150,15,151,59" />
+      <scope id="3126418051240127505" at="152,15,153,59" />
+      <scope id="4400783559374200942" at="154,15,155,59" />
+      <scope id="4400783559374200989" at="156,15,157,59" />
+      <scope id="8903209210859207128" at="182,15,183,87" />
+      <scope id="5785245534401214238" at="214,15,215,66" />
+      <scope id="3126418051240127516" at="216,15,217,66" />
+      <scope id="3126418051240127534" at="218,15,219,66" />
+      <scope id="8903209210859207199" at="220,15,221,66" />
+      <scope id="8903209210859207311" at="222,15,223,66" />
+      <scope id="8903209210859207366" at="224,15,225,66" />
+      <scope id="8903209210859207084" at="253,15,254,61" />
+      <scope id="8903209210859207100" at="255,15,256,61" />
+      <scope id="8903209210859207114" at="257,15,258,61" />
+      <scope id="3126418051240128059" at="259,15,260,61" />
+      <scope id="8903209210859194984" at="292,15,293,70" />
+      <scope id="157649465198141631" at="294,15,295,70" />
+      <scope id="157649465198140934" at="296,15,297,70" />
+      <scope id="157649465198151888" at="298,15,299,70" />
+      <scope id="157649465198151898" at="300,15,301,70" />
+      <scope id="157649465198197749" at="302,15,303,70" />
+      <scope id="157649465198197759" at="304,15,305,70" />
+      <scope id="3126418051240127760" at="306,15,307,70" />
+      <scope id="5785245534401214239" at="46,0,49,0">
+        <var name="_context" id="5785245534401214239" />
+      </scope>
+      <scope id="3126418051240127517" at="49,0,52,0">
+        <var name="_context" id="3126418051240127517" />
+      </scope>
+      <scope id="3126418051240127535" at="52,0,55,0">
+        <var name="_context" id="3126418051240127535" />
+      </scope>
+      <scope id="8903209210859207200" at="55,0,58,0">
+        <var name="_context" id="8903209210859207200" />
+      </scope>
+      <scope id="8903209210859207312" at="58,0,61,0">
+        <var name="_context" id="8903209210859207312" />
+      </scope>
+      <scope id="8903209210859207367" at="61,0,64,0">
+        <var name="_context" id="8903209210859207367" />
+      </scope>
+      <scope id="8903209210859194985" at="64,0,67,0">
+        <var name="_context" id="8903209210859194985" />
+      </scope>
+      <scope id="157649465198141632" at="67,0,70,0">
+        <var name="_context" id="157649465198141632" />
+      </scope>
+      <scope id="157649465198140935" at="70,0,73,0">
+        <var name="_context" id="157649465198140935" />
+      </scope>
+      <scope id="157649465198151889" at="73,0,76,0">
+        <var name="_context" id="157649465198151889" />
+      </scope>
+      <scope id="157649465198151899" at="76,0,79,0">
+        <var name="_context" id="157649465198151899" />
+      </scope>
+      <scope id="157649465198197750" at="79,0,82,0">
+        <var name="_context" id="157649465198197750" />
+      </scope>
+      <scope id="157649465198197760" at="82,0,85,0">
+        <var name="_context" id="157649465198197760" />
+      </scope>
+      <scope id="3126418051240128040" at="88,0,91,0">
+        <var name="it" id="3126418051240128040" />
+      </scope>
+      <scope id="8903209210859207085" at="95,0,98,0">
+        <var name="_context" id="8903209210859207085" />
+      </scope>
+      <scope id="8903209210859207101" at="98,0,101,0">
+        <var name="_context" id="8903209210859207101" />
+      </scope>
+      <scope id="8903209210859207115" at="101,0,104,0">
+        <var name="_context" id="8903209210859207115" />
+      </scope>
+      <scope id="3126418051240128103" at="107,0,110,0">
+        <var name="it" id="3126418051240128103" />
+      </scope>
+      <scope id="8903209210859192257" at="113,0,116,0">
+        <var name="_context" id="8903209210859192257" />
+      </scope>
+      <scope id="3126418051240127505" at="116,0,119,0">
+        <var name="_context" id="3126418051240127505" />
+      </scope>
+      <scope id="4400783559374200942" at="119,0,122,0">
+        <var name="_context" id="4400783559374200942" />
+      </scope>
+      <scope id="4400783559374200989" at="122,0,125,0">
+        <var name="_context" id="4400783559374200989" />
+      </scope>
+      <scope id="8903209210859207128" at="125,0,128,0">
+        <var name="_context" id="8903209210859207128" />
+      </scope>
+      <scope id="3126418051240128033" at="86,144,91,9" />
+      <scope id="3126418051240128096" at="105,132,110,9" />
+      <scope id="3126418051240128061" at="104,78,111,7" />
+      <scope id="3126418051240127762" at="85,93,93,206">
+        <var name="node" id="3126418051240128023" />
+      </scope>
+      <scope id="3126418051240128060" at="104,0,113,0">
+        <var name="_context" id="3126418051240128060" />
+      </scope>
+      <scope id="3126418051240127761" at="85,0,95,0">
+        <var name="_context" id="3126418051240127761" />
+      </scope>
+      <unit id="3126418051240128040" at="87,103,91,7" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$1" />
+      <unit id="3126418051240128103" at="106,103,110,7" name="com.mbeddr.cc.requirements.scenario2doc.generator.template.main.QueriesGenerated$2" />
+    </file>
+  </root>
+</debug-info>
+

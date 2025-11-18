@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-7xhlh453waa10oc7xzmaozkqhvvzg1n">
+  <files names="IntentionsDescriptor.java:SelectionIntentionsDescriptor.java:SurroundWithAndFilter_Intention.java:SurroundWithNotFilter_Intention.java:SurroundWithOrFilter_Intention.java:addChild_Intention.java:addCommentToRequirement_Intention.java:addData_Intention.java:addDoc_Intention.java:addReplyComment_Intention.java:addSibling_Intention.java:foldAllChildrenInModule_Intention.java:foldAllChildren_Intention.java:markAllNewRequirementsAsDraft_Intention.java:moveToOtherModule.java:setConfidence_Intention.java:updateUsageStats_Intention.java:wrapSeveralInNewparent.java" />
+</product>
+

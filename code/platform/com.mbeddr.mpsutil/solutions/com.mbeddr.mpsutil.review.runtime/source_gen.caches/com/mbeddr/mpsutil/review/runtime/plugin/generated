@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="97khm9e769uxb3bwwslzlsx9wor1ex1">
+  <files names="AddReview_Action.java:DeleteReview_Action.java:JumpToReview_Action.java:JumpToReviewed_Action.java:ReplyReview_Action.java:ReviewGroup_ActionGroup.java:ReviewUtil.java:Runtime_ApplicationPlugin.java" />
+</product>
+

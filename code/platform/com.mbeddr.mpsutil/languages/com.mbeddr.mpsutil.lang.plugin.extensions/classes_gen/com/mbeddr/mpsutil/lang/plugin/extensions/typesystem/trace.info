@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e1dcf4f1-2f88-4a30-9425-fa726fe3c851(com.mbeddr.mpsutil.lang.plugin.extensions.typesystem)/4295816563224253646">
+    <file name="TypesystemDescriptor.java">
+      <node id="4295816563224253646" at="10,5,11,87" concept="4" />
+      <node id="4295816563224253646" at="11,87,12,47" concept="2" />
+      <node id="4295816563224253646" at="9,33,13,5" concept="0" />
+      <scope id="4295816563224253646" at="10,5,12,47">
+        <var name="inferenceRule" id="4295816563224253646" />
+      </scope>
+    </file>
+    <file name="typeof_PinTabOperation_InferenceRule.java">
+      <node id="4295816563224254501" at="22,5,23,50" concept="4" />
+      <node id="4295816563224254501" at="23,50,24,218" concept="4" />
+      <node id="4295816563224254501" at="24,218,25,299" concept="2" />
+      <node id="4295816563224253674" at="27,5,28,109" concept="4" />
+      <node id="4295816563224253674" at="28,109,29,218" concept="4" />
+      <node id="4295816563224253674" at="29,218,30,322" concept="2" />
+      <node id="4295816563224253646" at="33,50,34,39" concept="5" />
+      <node id="4295816563224253646" at="36,68,37,102" concept="5" />
+      <node id="4295816563224253646" at="39,30,40,17" concept="5" />
+      <node id="4295816563224254641" at="42,65,43,30" concept="4" />
+      <node id="4295816563224254641" at="43,30,44,218" concept="4" />
+      <node id="4295816563224254641" at="44,218,45,34" concept="2" />
+      <node id="4295816563224254641" at="45,34,46,24" concept="5" />
+      <node id="4295816563224254699" at="48,65,49,30" concept="4" />
+      <node id="4295816563224254699" at="49,30,50,225" concept="4" />
+      <node id="4295816563224254699" at="50,225,51,34" concept="2" />
+      <node id="4295816563224254699" at="51,34,52,220" concept="2" />
+      <node id="4295816563224254699" at="52,220,53,24" concept="5" />
+      <node id="4295816563224253646" at="57,0,58,0" concept="6" trace="componentExpression$usQ_" />
+      <node id="4295816563224253646" at="61,0,62,0" concept="6" trace="PinTabOperation$Ke" />
+      <node id="4295816563224253646" at="19,0,21,0" concept="1" trace="typeof_PinTabOperation_InferenceRule#()V" />
+      <node id="4295816563224253646" at="33,0,36,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4295816563224253646" at="36,0,39,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4295816563224253646" at="39,0,42,0" concept="3" trace="overrides#()Z" />
+      <node id="4295816563224254501" at="21,121,26,5" concept="0" />
+      <node id="4295816563224253674" at="26,5,31,5" concept="0" />
+      <node id="4295816563224254641" at="42,0,48,0" concept="7" trace="_quotation_createNode_enqt6v_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4295816563224254699" at="48,0,55,0" concept="7" trace="_quotation_createNode_enqt6v_a1a0c0b0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4295816563224253646" at="21,0,33,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4295816563224253646" at="19,49,19,49" />
+      <scope id="4295816563224253646" at="33,50,34,39" />
+      <scope id="4295816563224253646" at="36,68,37,102" />
+      <scope id="4295816563224253646" at="39,30,40,17" />
+      <scope id="4295816563224253646" at="19,0,21,0" />
+      <scope id="4295816563224254501" at="22,5,25,299">
+        <var name="_info_12389875345" id="4295816563224254501" />
+        <var name="_nodeToCheck_1029348928467" id="4295816563224254501" />
+      </scope>
+      <scope id="4295816563224253674" at="27,5,30,322">
+        <var name="_info_12389875345" id="4295816563224253674" />
+        <var name="_nodeToCheck_1029348928467" id="4295816563224253674" />
+      </scope>
+      <scope id="4295816563224253646" at="33,0,36,0" />
+      <scope id="4295816563224253646" at="36,0,39,0">
+        <var name="argument" id="4295816563224253646" />
+      </scope>
+      <scope id="4295816563224253646" at="39,0,42,0" />
+      <scope id="4295816563224254641" at="42,65,46,24">
+        <var name="nb" id="4295816563224254641" />
+        <var name="quotedNode_1" id="4295816563224254641" />
+      </scope>
+      <scope id="4295816563224254699" at="48,65,53,24">
+        <var name="nb" id="4295816563224254699" />
+        <var name="quotedNode_1" id="4295816563224254699" />
+      </scope>
+      <scope id="4295816563224254641" at="42,0,48,0" />
+      <scope id="4295816563224254699" at="48,0,55,0" />
+      <scope id="4295816563224253647" at="21,121,31,5" />
+      <scope id="4295816563224253646" at="21,0,33,0">
+        <var name="pinTabOp" id="4295816563224253646" />
+        <var name="status" id="4295816563224253646" />
+        <var name="typeCheckingContext" id="4295816563224253646" />
+      </scope>
+      <unit id="4295816563224253646" at="56,0,59,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.typesystem.typeof_PinTabOperation_InferenceRule$LINKS" />
+      <unit id="4295816563224253646" at="60,0,63,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.typesystem.typeof_PinTabOperation_InferenceRule$CONCEPTS" />
+      <unit id="4295816563224253646" at="18,0,64,0" name="com.mbeddr.mpsutil.lang.plugin.extensions.typesystem.typeof_PinTabOperation_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

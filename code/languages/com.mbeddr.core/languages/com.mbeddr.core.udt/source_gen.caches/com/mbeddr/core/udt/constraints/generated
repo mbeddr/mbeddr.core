@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="1pw5tdh1do8vcaoqsblre8zqesybdhf">
+  <files names="AbstractBitType_Constraints.java:AnonymousStructDeclaration_Constraints.java:AnonymousUnionDeclaration_Constraints.java:ArbitraryMemberRef_Constraints.java:ConstraintsAspectDescriptor.java:EnumDeclaration_Constraints.java:EnumLiteralRef_Constraints.java:EnumLiteral_Constraints.java:EnumType_Constraints.java:GenericMemberRef_Constraints.java:MemberInitExpression_Constraints.java:Member_Constraints.java:ModuleContentSUDeclaration_Constraints.java:SUDeclaration_Constraints.java:StructType_Constraints.java:TypeDefType_Constraints.java:TypeDef_Constraints.java:UnionType_Constraints.java" />
+</product>
+

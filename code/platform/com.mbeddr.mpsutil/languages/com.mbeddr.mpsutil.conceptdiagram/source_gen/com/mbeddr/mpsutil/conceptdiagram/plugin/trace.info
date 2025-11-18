@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IconContainer.java">
+      <unit at="8,0,11,0" name="com.mbeddr.mpsutil.conceptdiagram.plugin.IconContainer" />
+    </file>
+  </root>
+  <root nodeRef="r:5b899050-dad7-477e-b8fe-25eef62fcab0(com.mbeddr.mpsutil.conceptdiagram.plugin)/3668028687373612015">
+    <file name="Conceptdiagram_ApplicationPlugin.java">
+      <node id="3668028687373612015" at="10,0,11,0" concept="3" trace="myId" />
+      <node id="3668028687373612015" at="16,27,17,16" concept="7" />
+      <node id="3668028687373612015" at="20,30,21,29" concept="8" />
+      <node id="3668028687373612015" at="22,52,23,13" concept="8" />
+      <node id="3668028687373612015" at="12,0,14,0" concept="1" trace="Conceptdiagram_ApplicationPlugin#()V" />
+      <node id="3668028687373612015" at="26,0,29,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="3668028687373612015" at="15,0,19,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3668028687373612015" at="20,0,26,0" concept="5" trace="createGroups#()V" />
+      <scope id="3668028687373612015" at="12,45,12,45" />
+      <scope id="3668028687373612015" at="16,27,17,16" />
+      <scope id="3668028687373612015" at="26,37,27,131" />
+      <scope id="3668028687373612015" at="12,0,14,0" />
+      <scope id="3668028687373612015" at="26,0,29,0" />
+      <scope id="3668028687373612015" at="15,0,19,0" />
+      <scope id="3668028687373612015" at="20,30,24,58" />
+      <scope id="3668028687373612015" at="20,0,26,0" />
+      <unit id="3668028687373612015" at="9,0,30,0" name="com.mbeddr.mpsutil.conceptdiagram.plugin.Conceptdiagram_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:5b899050-dad7-477e-b8fe-25eef62fcab0(com.mbeddr.mpsutil.conceptdiagram.plugin)/5419338062822510070">
+    <file name="Conceptdiagram_ApplicationPlugin.java">
+      <node id="5419338062822510070" at="21,29,22,52" concept="2" />
+    </file>
+    <file name="ExpandConceptFirstLevel_Action.java">
+      <node id="5419338062822510070" at="31,0,32,0" concept="10" trace="ICON" />
+      <node id="5419338062822510070" at="33,43,34,68" concept="12" />
+      <node id="5419338062822510070" at="34,68,35,35" concept="2" />
+      <node id="5419338062822510070" at="35,35,36,57" concept="2" />
+      <node id="5419338062822510070" at="39,32,40,16" concept="7" />
+      <node id="3668028687374102767" at="43,87,44,154" concept="7" />
+      <node id="5419338062822510070" at="47,89,48,85" concept="2" />
+      <node id="5419338062822510070" at="52,53,53,19" concept="7" />
+      <node id="3668028687373782255" at="55,5,56,90" concept="6" />
+      <node id="3668028687373782255" at="57,67,58,31" concept="2" />
+      <node id="3668028687373782256" at="60,36,61,21" concept="7" />
+      <node id="3668028687374298776" at="64,5,65,57" concept="6" />
+      <node id="3668028687374298776" at="66,106,67,20" concept="2" />
+      <node id="3668028687374298778" at="69,25,70,21" concept="7" />
+      <node id="3668028687374629933" at="73,5,74,68" concept="6" />
+      <node id="3668028687374629935" at="75,26,76,21" concept="7" />
+      <node id="5419338062822510070" at="78,5,79,16" concept="7" />
+      <node id="3668028687377755544" at="82,96,83,109" concept="6" />
+      <node id="3668028687378620118" at="83,109,84,0" concept="9" />
+      <node id="3668028687375064273" at="84,0,85,54" concept="6" />
+      <node id="3668028687375067788" at="85,54,86,205" concept="2" />
+      <node id="3668028687375152028" at="86,205,87,215" concept="2" />
+      <node id="3668028687378210854" at="87,215,88,0" concept="9" />
+      <node id="3668028687378242309" at="88,0,89,463" concept="2" />
+      <node id="3668028687378315494" at="91,89,92,89" concept="6" />
+      <node id="3668028687378315494" at="92,89,93,50" concept="2" />
+      <node id="3668028687378315494" at="93,50,94,26" concept="7" />
+      <node id="5419338062822510070" at="98,0,99,0" concept="10" trace="ConceptDiagram$9t" />
+      <node id="5419338062822510070" at="99,0,100,0" concept="10" trace="AbstractConceptDeclaration$KA" />
+      <node id="5419338062822510070" at="100,0,101,0" concept="10" trace="AbstractConceptDeclarationRef$IU" />
+      <node id="5419338062822510070" at="104,0,105,0" concept="10" trace="linkDeclaration$YU1f" />
+      <node id="5419338062822510070" at="105,0,106,0" concept="10" trace="target$m40F" />
+      <node id="5419338062822510070" at="106,0,107,0" concept="10" trace="contents$BgwK" />
+      <node id="5419338062822510070" at="107,0,108,0" concept="10" trace="concept$p3Wi" />
+      <node id="5419338062822510070" at="51,95,54,5" concept="4" />
+      <node id="3668028687373782255" at="56,90,59,7" concept="4" />
+      <node id="3668028687373782256" at="59,7,62,7" concept="4" />
+      <node id="3668028687374298776" at="65,57,68,7" concept="4" />
+      <node id="3668028687374298778" at="68,7,71,7" concept="4" />
+      <node id="3668028687374629935" at="74,68,77,7" concept="4" />
+      <node id="5419338062822510070" at="38,0,42,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="5419338062822510070" at="42,0,46,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="5419338062822510070" at="46,0,50,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="5419338062822510070" at="33,0,38,0" concept="1" trace="ExpandConceptFirstLevel_Action#()V" />
+      <node id="3668028687378315494" at="91,0,96,0" concept="11" trace="createAbstractConceptDeclarationRef_pl7r2p_a0a0a0a0g0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3668028687374629933" at="72,5,78,5" concept="0" />
+      <node id="3668028687373782255" at="54,5,63,5" concept="0" />
+      <node id="3668028687374298776" at="63,5,72,5" concept="0" />
+      <node id="5419338062822510070" at="81,0,91,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="5419338062822510070" at="50,0,81,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="5419338062822510070" at="39,32,40,16" />
+      <scope id="3668028687373805955" at="43,87,44,154" />
+      <scope id="5419338062822510070" at="47,89,48,85" />
+      <scope id="5419338062822510070" at="52,53,53,19" />
+      <scope id="3668028687373782255" at="57,67,58,31" />
+      <scope id="3668028687373782256" at="60,36,61,21" />
+      <scope id="3668028687374298776" at="66,106,67,20" />
+      <scope id="3668028687374298778" at="69,25,70,21" />
+      <scope id="3668028687374629935" at="75,26,76,21" />
+      <scope id="5419338062822510070" at="33,43,36,57" />
+      <scope id="3668028687378315494" at="91,89,94,26">
+        <var name="n0" id="3668028687378315494" />
+      </scope>
+      <scope id="5419338062822510070" at="38,0,42,0" />
+      <scope id="5419338062822510070" at="42,0,46,0">
+        <var name="_params" id="5419338062822510070" />
+        <var name="event" id="5419338062822510070" />
+      </scope>
+      <scope id="5419338062822510070" at="46,0,50,0">
+        <var name="_params" id="5419338062822510070" />
+        <var name="event" id="5419338062822510070" />
+      </scope>
+      <scope id="3668028687374629933" at="73,5,77,7">
+        <var name="model" id="3668028687374629933" />
+      </scope>
+      <scope id="5419338062822510070" at="33,0,38,0" />
+      <scope id="3668028687378315494" at="91,0,96,0">
+        <var name="p0" id="3668028687378315494" />
+      </scope>
+      <scope id="3668028687373782255" at="55,5,62,7">
+        <var name="editorComponent" id="3668028687373782255" />
+      </scope>
+      <scope id="3668028687374298776" at="64,5,71,7">
+        <var name="node" id="3668028687374298776" />
+      </scope>
+      <scope id="5419338062822510070" at="82,96,89,463">
+        <var name="dependencies" id="3668028687375064276" />
+        <var name="diagram" id="3668028687377755545" />
+      </scope>
+      <scope id="5419338062822510070" at="81,0,91,0">
+        <var name="_params" id="5419338062822510070" />
+        <var name="event" id="5419338062822510070" />
+      </scope>
+      <scope id="5419338062822510070" at="51,95,79,16" />
+      <scope id="5419338062822510070" at="50,0,81,0">
+        <var name="_params" id="5419338062822510070" />
+        <var name="event" id="5419338062822510070" />
+      </scope>
+      <unit id="5419338062822510070" at="97,0,102,0" name="com.mbeddr.mpsutil.conceptdiagram.plugin.ExpandConceptFirstLevel_Action$CONCEPTS" />
+      <unit id="5419338062822510070" at="103,0,109,0" name="com.mbeddr.mpsutil.conceptdiagram.plugin.ExpandConceptFirstLevel_Action$LINKS" />
+      <unit id="5419338062822510070" at="30,0,110,0" name="com.mbeddr.mpsutil.conceptdiagram.plugin.ExpandConceptFirstLevel_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:5b899050-dad7-477e-b8fe-25eef62fcab0(com.mbeddr.mpsutil.conceptdiagram.plugin)/5419338062822933104">
+    <file name="ConceptDiagramActions_ActionGroup.java">
+      <node id="5419338062822933104" at="10,0,11,0" concept="10" trace="ID" />
+      <node id="5419338062822933104" at="12,79,13,47" concept="12" />
+      <node id="5419338062822933104" at="13,47,14,25" concept="2" />
+      <node id="5419338062822933104" at="14,25,15,20" concept="2" />
+      <node id="5419338062822933104" at="15,20,16,29" concept="2" />
+      <node id="5419338062822933162" at="16,29,17,58" concept="2" />
+      <node id="5419338062822933175" at="17,58,18,128" concept="2" />
+      <node id="5419338062822933167" at="18,128,19,58" concept="2" />
+      <node id="5419338062822933104" at="12,0,21,0" concept="1" trace="ConceptDiagramActions_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="5419338062822933104" at="12,79,19,58" />
+      <scope id="5419338062822933104" at="12,0,21,0">
+        <var name="plugin" id="5419338062822933104" />
+      </scope>
+      <unit id="5419338062822933104" at="9,0,22,0" name="com.mbeddr.mpsutil.conceptdiagram.plugin.ConceptDiagramActions_ActionGroup" />
+    </file>
+    <file name="Conceptdiagram_ApplicationPlugin.java">
+      <node id="5419338062822933104" at="23,13,24,58" concept="2" />
+      <node id="5419338062822933180" at="26,37,27,131" concept="2" />
+    </file>
+  </root>
+</debug-info>
+

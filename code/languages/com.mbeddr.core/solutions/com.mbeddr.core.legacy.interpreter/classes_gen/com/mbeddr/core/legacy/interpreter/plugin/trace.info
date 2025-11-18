@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="com.mbeddr.core.legacy.interpreter.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:fad32ca9-c48a-4c42-b250-eff149def67e(com.mbeddr.core.legacy.interpreter.plugin)/4535693827938081848">
+    <file name="CLegacyInterpreter_extension.java">
+      <node id="4535693827938081848" at="10,41,11,70" concept="7" />
+      <node id="4535693827938081848" at="14,26,15,55" concept="2" />
+      <node id="4535693827938081848" at="17,28,18,55" concept="2" />
+      <node id="4535693827938081848" at="21,29,22,47" concept="5" />
+      <node id="4535693827938081848" at="10,0,13,0" concept="1" trace="CLegacyInterpreter_extension#()V" />
+      <node id="4535693827938081848" at="14,0,17,0" concept="0" trace="activate#()V" />
+      <node id="4535693827938081848" at="17,0,20,0" concept="0" trace="deactivate#()V" />
+      <node id="4535693827938081848" at="21,0,24,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;" />
+      <scope id="4535693827938081848" at="10,41,11,70" />
+      <scope id="4535693827938081848" at="14,26,15,55" />
+      <scope id="4535693827938081848" at="17,28,18,55" />
+      <scope id="4535693827938081848" at="21,29,22,47" />
+      <scope id="4535693827938081848" at="10,0,13,0" />
+      <scope id="4535693827938081848" at="14,0,17,0" />
+      <scope id="4535693827938081848" at="17,0,20,0" />
+      <scope id="4535693827938081848" at="21,0,24,0" />
+      <unit id="4535693827938081848" at="9,0,25,0" name="com.mbeddr.core.legacy.interpreter.plugin.CLegacyInterpreter_extension" />
+    </file>
+    <file name="InterpreterCLegacyInterpreter.java">
+      <node id="4535693827938081848" at="29,42,30,11" concept="2" />
+      <node id="4535693827938081848" at="34,31,35,26" concept="5" />
+      <node id="4535693827938081852" at="41,13,42,42" concept="2" />
+      <node id="4535693827938081852" at="42,42,43,48" concept="2" />
+      <node id="4535693827938081852" at="44,65,45,70" concept="2" />
+      <node id="4535693827938081852" at="46,11,47,171" concept="5" />
+      <node id="4535693827938081852" at="48,49,49,19" concept="8" />
+      <node id="4535693827938081852" at="50,39,51,89" concept="8" />
+      <node id="4535693827938081852" at="54,64,55,143" concept="5" />
+      <node id="4535693827938081852" at="59,32,60,36" concept="5" />
+      <node id="4535693827938081852" at="62,38,63,266" concept="5" />
+      <node id="4535693827938081852" at="67,42,68,21" concept="5" />
+      <node id="4535693827938081857" at="74,13,75,42" concept="2" />
+      <node id="4535693827938081857" at="75,42,76,48" concept="2" />
+      <node id="4535693827938081857" at="77,65,78,70" concept="2" />
+      <node id="4535693827938081857" at="79,11,80,20" concept="5" />
+      <node id="4535693827938081857" at="81,49,82,19" concept="8" />
+      <node id="4535693827938081857" at="83,39,84,89" concept="8" />
+      <node id="4535693827938081857" at="87,64,88,20" concept="5" />
+      <node id="4535693827938081857" at="92,32,93,36" concept="5" />
+      <node id="4535693827938081857" at="95,38,96,266" concept="5" />
+      <node id="4535693827938081857" at="100,42,101,21" concept="5" />
+      <node id="4535693827938081851" at="113,85,114,272" concept="2" />
+      <node id="4535693827938081848" at="118,0,119,0" concept="6" trace="expr$FolQ" />
+      <node id="4535693827938081848" at="122,0,123,0" concept="6" trace="OpaqueExprWithType$vD" />
+      <node id="4535693827938081848" at="123,0,124,0" concept="6" trace="OpaqueTextWithType$KR" />
+      <node id="4535693827938081848" at="108,0,110,0" concept="4" trace="populateTypeMappers#(Ljava/util/List;)V" />
+      <node id="4535693827938081848" at="29,0,32,0" concept="1" trace="InterpreterCLegacyInterpreter#()V" />
+      <node id="4535693827938081852" at="43,48,46,11" concept="3" />
+      <node id="4535693827938081852" at="54,0,57,0" concept="4" trace="isEvaluable#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;)Z" />
+      <node id="4535693827938081852" at="62,0,65,0" concept="4" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="4535693827938081857" at="76,48,79,11" concept="3" />
+      <node id="4535693827938081857" at="87,0,90,0" concept="4" trace="isEvaluable#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;)Z" />
+      <node id="4535693827938081857" at="95,0,98,0" concept="4" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="4535693827938081848" at="113,0,116,0" concept="4" trace="populateRelationships#(Ljava/util/List;)V" />
+      <node id="4535693827938081848" at="33,0,37,0" concept="4" trace="getCategory#()Ljava/lang/String;" />
+      <node id="4535693827938081852" at="58,0,62,0" concept="4" trace="toString#()Ljava/lang/String;" />
+      <node id="4535693827938081852" at="66,0,70,0" concept="4" trace="canLookupBeCached#()Z" />
+      <node id="4535693827938081857" at="91,0,95,0" concept="4" trace="toString#()Ljava/lang/String;" />
+      <node id="4535693827938081857" at="99,0,103,0" concept="4" trace="canLookupBeCached#()Z" />
+      <node id="4535693827938081852" at="40,121,52,9" concept="9" />
+      <node id="4535693827938081857" at="73,121,85,9" concept="9" />
+      <node id="4535693827938081852" at="40,0,54,0" concept="4" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="4535693827938081857" at="73,0,87,0" concept="4" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="4535693827938081852" at="38,76,71,7" concept="2" />
+      <node id="4535693827938081857" at="71,7,104,7" concept="2" />
+      <node id="4535693827938081848" at="38,0,106,0" concept="4" trace="populateEvaluators#(Ljava/util/List;)V" />
+      <scope id="4535693827938081848" at="108,79,108,79" />
+      <scope id="4535693827938081848" at="29,42,30,11" />
+      <scope id="4535693827938081848" at="34,31,35,26" />
+      <scope id="4535693827938081852" at="44,65,45,70" />
+      <scope id="4535693827938081852" at="48,49,49,19" />
+      <scope id="4535693827938081852" at="50,39,51,89" />
+      <scope id="4535693827938081852" at="54,64,55,143" />
+      <scope id="4535693827938081852" at="59,32,60,36" />
+      <scope id="4535693827938081852" at="62,38,63,266" />
+      <scope id="4535693827938081852" at="67,42,68,21" />
+      <scope id="4535693827938081857" at="77,65,78,70" />
+      <scope id="4535693827938081857" at="81,49,82,19" />
+      <scope id="4535693827938081857" at="83,39,84,89" />
+      <scope id="4535693827938081857" at="87,64,88,20" />
+      <scope id="4535693827938081857" at="92,32,93,36" />
+      <scope id="4535693827938081857" at="95,38,96,266" />
+      <scope id="4535693827938081857" at="100,42,101,21" />
+      <scope id="4535693827938081848" at="113,85,114,272" />
+      <scope id="4535693827938081852" at="48,9,50,9">
+        <var name="ex" id="4535693827938081852" />
+      </scope>
+      <scope id="4535693827938081852" at="50,9,52,9">
+        <var name="ex" id="4535693827938081852" />
+      </scope>
+      <scope id="4535693827938081857" at="81,9,83,9">
+        <var name="ex" id="4535693827938081857" />
+      </scope>
+      <scope id="4535693827938081857" at="83,9,85,9">
+        <var name="ex" id="4535693827938081857" />
+      </scope>
+      <scope id="4535693827938081848" at="108,0,110,0">
+        <var name="typeMappers" id="4535693827938081848" />
+      </scope>
+      <scope id="4535693827938081848" at="29,0,32,0" />
+      <scope id="4535693827938081852" at="54,0,57,0">
+        <var name="context" id="4535693827938081852" />
+        <var name="node" id="4535693827938081852" />
+      </scope>
+      <scope id="4535693827938081852" at="62,0,65,0" />
+      <scope id="4535693827938081857" at="87,0,90,0">
+        <var name="context" id="4535693827938081857" />
+        <var name="node" id="4535693827938081857" />
+      </scope>
+      <scope id="4535693827938081857" at="95,0,98,0" />
+      <scope id="4535693827938081848" at="113,0,116,0">
+        <var name="relationships" id="4535693827938081848" />
+      </scope>
+      <scope id="4535693827938081848" at="33,0,37,0" />
+      <scope id="4535693827938081852" at="58,0,62,0" />
+      <scope id="4535693827938081852" at="66,0,70,0" />
+      <scope id="4535693827938081857" at="91,0,95,0" />
+      <scope id="4535693827938081857" at="99,0,103,0" />
+      <scope id="4535693827938081852" at="41,13,47,171" />
+      <scope id="4535693827938081857" at="74,13,80,20" />
+      <scope id="4535693827938081852" at="40,121,52,9" />
+      <scope id="4535693827938081857" at="73,121,85,9" />
+      <scope id="4535693827938081852" at="40,0,54,0">
+        <var name="context" id="4535693827938081852" />
+        <var name="coverage" id="4535693827938081852" />
+        <var name="node" id="4535693827938081852" />
+        <var name="trace" id="4535693827938081852" />
+      </scope>
+      <scope id="4535693827938081857" at="73,0,87,0">
+        <var name="context" id="4535693827938081857" />
+        <var name="coverage" id="4535693827938081857" />
+        <var name="node" id="4535693827938081857" />
+        <var name="trace" id="4535693827938081857" />
+      </scope>
+      <scope id="4535693827938081848" at="38,76,104,7" />
+      <scope id="4535693827938081848" at="38,0,106,0">
+        <var name="evaluators" id="4535693827938081848" />
+      </scope>
+      <unit id="4535693827938081848" at="117,0,120,0" name="com.mbeddr.core.legacy.interpreter.plugin.InterpreterCLegacyInterpreter$LINKS" />
+      <unit id="4535693827938081848" at="121,0,125,0" name="com.mbeddr.core.legacy.interpreter.plugin.InterpreterCLegacyInterpreter$CONCEPTS" />
+      <unit id="4535693827938081852" at="39,85,71,5" name="com.mbeddr.core.legacy.interpreter.plugin.InterpreterCLegacyInterpreter$1" />
+      <unit id="4535693827938081857" at="72,85,104,5" name="com.mbeddr.core.legacy.interpreter.plugin.InterpreterCLegacyInterpreter$2" />
+      <unit id="4535693827938081848" at="28,0,126,0" name="com.mbeddr.core.legacy.interpreter.plugin.InterpreterCLegacyInterpreter" />
+    </file>
+  </root>
+</debug-info>
+

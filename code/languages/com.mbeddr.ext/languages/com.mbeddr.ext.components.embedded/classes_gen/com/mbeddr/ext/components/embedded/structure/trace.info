@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,80,0" name="com.mbeddr.ext.components.embedded.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,40,0" name="com.mbeddr.ext.components.embedded.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,144,0" name="com.mbeddr.ext.components.embedded.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/1265662339477386461">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1265662339477386461" at="17,0,18,0" concept="1" trace="props_InterruptRunnableReturnValue" />
+      <node id="1265662339477386461" at="63,57,64,76" concept="3" />
+      <node id="1265662339477386461" at="64,76,65,40" concept="0" />
+      <node id="1265662339477386461" at="65,40,66,60" concept="0" />
+      <node id="1265662339477386461" at="67,9,68,50" concept="4" />
+      <node id="1265662339477386461" at="62,62,67,9" concept="2" />
+      <scope id="1265662339477386461" at="63,57,66,60">
+        <var name="cpb" id="1265662339477386461" />
+      </scope>
+      <scope id="1265662339477386461" at="62,62,68,50" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1265662339477386461" at="17,0,18,0" concept="6" trace="InterruptRunnableReturnValue" />
+      <node id="1265662339477386461" at="26,69,27,67" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1265662339477386461" at="20,0,21,0" concept="1" trace="myConceptInterruptRunnableReturnValue" />
+      <node id="1265662339477386461" at="57,62,58,53" concept="4" />
+      <node id="1265662339477386461" at="122,86,123,196" concept="3" />
+      <node id="1265662339477386461" at="123,196,124,34" concept="0" />
+      <node id="1265662339477386461" at="124,34,125,64" concept="5" />
+      <node id="1265662339477386461" at="125,64,126,76" concept="0" />
+      <node id="1265662339477386461" at="126,76,127,121" concept="0" />
+      <node id="1265662339477386461" at="127,121,128,17" concept="0" />
+      <node id="1265662339477386461" at="128,17,129,22" concept="0" />
+      <node id="1265662339477386461" at="129,22,130,22" concept="4" />
+      <node id="1265662339477386461" at="122,0,132,0" concept="7" trace="createDescriptorForInterruptRunnableReturnValue#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1265662339477386461" at="57,62,58,53" />
+      <scope id="1265662339477386461" at="122,86,130,22">
+        <var name="b" id="1265662339477386461" />
+      </scope>
+      <scope id="1265662339477386461" at="122,0,132,0" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/1265662339477539521">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1265662339477539521" at="13,0,14,0" concept="1" trace="props_InterruptExitHandler" />
+      <node id="1265662339477539521" at="34,49,35,76" concept="3" />
+      <node id="1265662339477539521" at="35,76,36,54" concept="0" />
+      <node id="1265662339477539521" at="36,54,37,52" concept="0" />
+      <node id="1265662339477539521" at="38,9,39,42" concept="4" />
+      <node id="1265662339477539521" at="33,54,38,9" concept="2" />
+      <scope id="1265662339477539521" at="34,49,37,52">
+        <var name="cpb" id="1265662339477539521" />
+      </scope>
+      <scope id="1265662339477539521" at="33,54,39,42" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1265662339477539521" at="13,0,14,0" concept="6" trace="InterruptExitHandler" />
+      <node id="1265662339477539521" at="22,74,23,59" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1265662339477539521" at="16,0,17,0" concept="1" trace="myConceptInterruptExitHandler" />
+      <node id="1265662339477539521" at="49,54,50,45" concept="4" />
+      <node id="1265662339477539521" at="80,78,81,188" concept="3" />
+      <node id="1265662339477539521" at="81,188,82,34" concept="0" />
+      <node id="1265662339477539521" at="82,34,83,63" concept="5" />
+      <node id="1265662339477539521" at="83,63,84,76" concept="0" />
+      <node id="1265662339477539521" at="84,76,85,121" concept="0" />
+      <node id="1265662339477539521" at="85,121,86,17" concept="0" />
+      <node id="1265662339477539528" at="86,17,87,198" concept="0" />
+      <node id="1265662339477539521" at="87,198,88,22" concept="4" />
+      <node id="1265662339477539521" at="80,0,90,0" concept="7" trace="createDescriptorForInterruptExitHandler#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1265662339477539521" at="49,54,50,45" />
+      <scope id="1265662339477539521" at="80,78,88,22">
+        <var name="b" id="1265662339477539521" />
+      </scope>
+      <scope id="1265662339477539521" at="80,0,90,0" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/4236008918584585821">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4236008918584585821" at="14,0,15,0" concept="1" trace="props_InterruptProcessed" />
+      <node id="4236008918584585821" at="41,47,42,76" concept="3" />
+      <node id="4236008918584585821" at="42,76,43,52" concept="0" />
+      <node id="4236008918584585821" at="43,52,44,50" concept="0" />
+      <node id="4236008918584585821" at="45,9,46,40" concept="4" />
+      <node id="4236008918584585821" at="40,52,45,9" concept="2" />
+      <scope id="4236008918584585821" at="41,47,44,50">
+        <var name="cpb" id="4236008918584585821" />
+      </scope>
+      <scope id="4236008918584585821" at="40,52,46,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4236008918584585821" at="14,0,15,0" concept="6" trace="InterruptProcessed" />
+      <node id="4236008918584585821" at="23,59,24,57" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4236008918584585821" at="17,0,18,0" concept="1" trace="myConceptInterruptProcessed" />
+      <node id="4236008918584585821" at="51,52,52,43" concept="4" />
+      <node id="4236008918584585821" at="90,76,91,186" concept="3" />
+      <node id="4236008918584585821" at="91,186,92,34" concept="0" />
+      <node id="4236008918584585821" at="92,34,93,63" concept="5" />
+      <node id="4236008918584585821" at="93,63,94,76" concept="0" />
+      <node id="4236008918584585821" at="94,76,95,121" concept="0" />
+      <node id="4236008918584585821" at="95,121,96,17" concept="0" />
+      <node id="4236008918584585821" at="96,17,97,22" concept="4" />
+      <node id="4236008918584585821" at="90,0,99,0" concept="7" trace="createDescriptorForInterruptProcessed#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4236008918584585821" at="51,52,52,43" />
+      <scope id="4236008918584585821" at="90,76,97,22">
+        <var name="b" id="4236008918584585821" />
+      </scope>
+      <scope id="4236008918584585821" at="90,0,99,0" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/4236008918584585847">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4236008918584585847" at="16,0,17,0" concept="1" trace="props_InterruptRunnableMappingActive" />
+      <node id="4236008918584585847" at="56,59,57,76" concept="3" />
+      <node id="4236008918584585847" at="57,76,58,64" concept="0" />
+      <node id="4236008918584585847" at="58,64,59,62" concept="0" />
+      <node id="4236008918584585847" at="60,9,61,52" concept="4" />
+      <node id="4236008918584585847" at="55,64,60,9" concept="2" />
+      <scope id="4236008918584585847" at="56,59,59,62">
+        <var name="cpb" id="4236008918584585847" />
+      </scope>
+      <scope id="4236008918584585847" at="55,64,61,52" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4236008918584585847" at="16,0,17,0" concept="6" trace="InterruptRunnableMappingActive" />
+      <node id="4236008918584585847" at="25,63,26,69" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4236008918584585847" at="19,0,20,0" concept="1" trace="myConceptInterruptRunnableMappingActive" />
+      <node id="4236008918584585847" at="55,64,56,55" concept="4" />
+      <node id="4236008918584585847" at="113,88,114,198" concept="3" />
+      <node id="4236008918584585847" at="114,198,115,34" concept="0" />
+      <node id="4236008918584585847" at="115,34,116,63" concept="5" />
+      <node id="4236008918584585847" at="116,63,117,76" concept="0" />
+      <node id="4236008918584585847" at="117,76,118,121" concept="0" />
+      <node id="4236008918584585847" at="118,121,119,17" concept="0" />
+      <node id="4236008918584585847" at="119,17,120,22" concept="4" />
+      <node id="4236008918584585847" at="113,0,122,0" concept="7" trace="createDescriptorForInterruptRunnableMappingActive#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4236008918584585847" at="55,64,56,55" />
+      <scope id="4236008918584585847" at="113,88,120,22">
+        <var name="b" id="4236008918584585847" />
+      </scope>
+      <scope id="4236008918584585847" at="113,0,122,0" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/9172009453270375539">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9172009453270375539" at="15,0,16,0" concept="1" trace="props_InterruptRunnableMapping" />
+      <node id="9172009453270375539" at="48,53,49,76" concept="3" />
+      <node id="9172009453270375539" at="49,76,50,59" concept="0" />
+      <node id="9172009453270375539" at="50,59,51,38" concept="0" />
+      <node id="9172009453270375539" at="51,38,52,56" concept="0" />
+      <node id="9172009453270375539" at="53,9,54,46" concept="4" />
+      <node id="9172009453270375539" at="47,58,53,9" concept="2" />
+      <scope id="9172009453270375539" at="48,53,52,56">
+        <var name="cpb" id="9172009453270375539" />
+      </scope>
+      <scope id="9172009453270375539" at="47,58,54,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9172009453270375539" at="15,0,16,0" concept="6" trace="InterruptRunnableMapping" />
+      <node id="9172009453270375539" at="24,57,25,63" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9172009453270375539" at="18,0,19,0" concept="1" trace="myConceptInterruptRunnableMapping" />
+      <node id="9172009453270375539" at="53,58,54,49" concept="4" />
+      <node id="9172009453270375539" at="99,82,100,192" concept="3" />
+      <node id="9172009453270375539" at="100,192,101,34" concept="0" />
+      <node id="9172009453270375539" at="101,34,102,76" concept="0" />
+      <node id="9172009453270375539" at="102,76,103,76" concept="0" />
+      <node id="9172009453270375539" at="103,76,104,76" concept="0" />
+      <node id="9172009453270375539" at="104,76,105,121" concept="0" />
+      <node id="9172009453270375539" at="105,121,106,17" concept="0" />
+      <node id="9172009453270375540" at="106,17,107,172" concept="0" />
+      <node id="9172009453270375541" at="107,172,108,172" concept="0" />
+      <node id="9172009453270375542" at="108,172,109,172" concept="0" />
+      <node id="9172009453270375539" at="109,172,110,20" concept="0" />
+      <node id="9172009453270375539" at="110,20,111,22" concept="4" />
+      <node id="9172009453270375539" at="99,0,113,0" concept="7" trace="createDescriptorForInterruptRunnableMapping#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9172009453270375539" at="53,58,54,49" />
+      <scope id="9172009453270375539" at="99,82,111,22">
+        <var name="b" id="9172009453270375539" />
+      </scope>
+      <scope id="9172009453270375539" at="99,0,113,0" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/9172009453270379331">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9172009453270379331" at="18,0,19,0" concept="1" trace="props_InterruptTrigger" />
+      <node id="9172009453270379331" at="70,45,71,76" concept="3" />
+      <node id="9172009453270379331" at="71,76,72,43" concept="0" />
+      <node id="9172009453270379331" at="72,43,73,48" concept="0" />
+      <node id="9172009453270379331" at="74,9,75,38" concept="4" />
+      <node id="9172009453270379331" at="69,50,74,9" concept="2" />
+      <scope id="9172009453270379331" at="70,45,73,48">
+        <var name="cpb" id="9172009453270379331" />
+      </scope>
+      <scope id="9172009453270379331" at="69,50,75,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9172009453270379331" at="18,0,19,0" concept="6" trace="InterruptTrigger" />
+      <node id="9172009453270379331" at="27,67,28,55" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9172009453270379331" at="21,0,22,0" concept="1" trace="myConceptInterruptTrigger" />
+      <node id="9172009453270379331" at="59,50,60,41" concept="4" />
+      <node id="9172009453270379331" at="132,74,133,184" concept="3" />
+      <node id="9172009453270379331" at="133,184,134,34" concept="0" />
+      <node id="9172009453270379331" at="134,34,135,67" concept="5" />
+      <node id="9172009453270379331" at="135,67,136,76" concept="0" />
+      <node id="9172009453270379331" at="136,76,137,76" concept="0" />
+      <node id="9172009453270379331" at="137,76,138,121" concept="0" />
+      <node id="9172009453270379331" at="138,121,139,17" concept="0" />
+      <node id="9172009453270379331" at="139,17,140,25" concept="0" />
+      <node id="9172009453270379331" at="140,25,141,22" concept="4" />
+      <node id="9172009453270379331" at="132,0,143,0" concept="7" trace="createDescriptorForInterruptTrigger#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9172009453270379331" at="59,50,60,41" />
+      <scope id="9172009453270379331" at="132,74,141,22">
+        <var name="b" id="9172009453270379331" />
+      </scope>
+      <scope id="9172009453270379331" at="132,0,143,0" />
+    </file>
+  </root>
+  <root nodeRef="r:debf6d1c-29a7-46eb-9b12-65f41e7c7416(com.mbeddr.ext.components.embedded.structure)/9172009453270757747">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9172009453270757747" at="12,0,13,0" concept="1" trace="props_InterruptComponentTriggerConfigItem" />
+      <node id="9172009453270757747" at="26,64,27,76" concept="3" />
+      <node id="9172009453270757747" at="27,76,28,75" concept="0" />
+      <node id="9172009453270757747" at="28,75,29,64" concept="0" />
+      <node id="9172009453270757747" at="29,64,30,67" concept="0" />
+      <node id="9172009453270757747" at="31,9,32,57" concept="4" />
+      <node id="9172009453270757747" at="25,69,31,9" concept="2" />
+      <scope id="9172009453270757747" at="26,64,30,67">
+        <var name="cpb" id="9172009453270757747" />
+      </scope>
+      <scope id="9172009453270757747" at="25,69,32,57" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9172009453270757747" at="12,0,13,0" concept="6" trace="InterruptComponentTriggerConfigItem" />
+      <node id="9172009453270757747" at="21,115,22,74" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9172009453270757747" at="15,0,16,0" concept="1" trace="myConceptInterruptComponentTriggerConfigItem" />
+      <node id="9172009453270757747" at="47,69,48,60" concept="4" />
+      <node id="9172009453270757747" at="71,93,72,203" concept="3" />
+      <node id="9172009453270757747" at="72,203,73,34" concept="0" />
+      <node id="9172009453270757747" at="73,34,74,76" concept="0" />
+      <node id="9172009453270757747" at="74,76,75,121" concept="0" />
+      <node id="9172009453270757747" at="75,121,76,17" concept="0" />
+      <node id="9172009453270757747" at="76,17,77,46" concept="0" />
+      <node id="9172009453270757747" at="77,46,78,22" concept="4" />
+      <node id="9172009453270757747" at="71,0,80,0" concept="7" trace="createDescriptorForInterruptComponentTriggerConfigItem#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9172009453270757747" at="47,69,48,60" />
+      <scope id="9172009453270757747" at="71,93,78,22">
+        <var name="b" id="9172009453270757747" />
+      </scope>
+      <scope id="9172009453270757747" at="71,0,80,0" />
+    </file>
+  </root>
+</debug-info>
+

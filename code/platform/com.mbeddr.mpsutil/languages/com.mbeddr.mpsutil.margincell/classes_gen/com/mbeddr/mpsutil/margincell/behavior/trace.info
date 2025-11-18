@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="14,0,32,0" name="com.mbeddr.mpsutil.margincell.behavior.BehaviorAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="92f195b6-a209-4804-ad65-f5248ecd5873/r:85baf47a-63af-4ebf-b016-244deeb604e7(com.mbeddr.mpsutil.margincell/com.mbeddr.mpsutil.margincell.behavior)/1159656764131928899">
+    <file name="IMarginCellContent__BehaviorDescriptor.java">
+      <node id="1159656764131928899" at="28,0,29,0" concept="8" trace="CONCEPT" />
+      <node id="1159656764131928899" at="30,0,31,0" concept="8" trace="isConnectionAllowed_id10nVqVftAKg" />
+      <node id="1159656764131928899" at="31,0,32,0" concept="8" trace="getPredecessor_id10nVqVftAKE" />
+      <node id="1159656764131928899" at="32,0,33,0" concept="8" trace="isCollapseAllowed_id10nVqVftALs" />
+      <node id="1159656764131928899" at="33,0,34,0" concept="8" trace="compareTo_id10nVqVg5kqc" />
+      <node id="1159656764131928899" at="34,0,35,0" concept="8" trace="callbackLayout_id10nVqVgfXA7" />
+      <node id="1159656764131928899" at="36,0,37,0" concept="8" trace="BH_METHODS" />
+      <node id="1159656764133537571" at="41,93,42,17" concept="6" />
+      <node id="1159656764133537601" at="44,86,45,16" concept="6" />
+      <node id="1159656764133537631" at="47,91,48,16" concept="6" />
+      <node id="4477732335315237974" at="51,46,52,15" concept="6" />
+      <node id="2296782705712255625" at="54,116,55,115" concept="5" />
+      <node id="2296782705712255633" at="56,47,57,17" concept="6" />
+      <node id="2296782705712255640" at="58,14,59,120" concept="6" />
+      <node id="2296782705712255651" at="61,114,62,120" concept="6" />
+      <node id="2296782705712255663" at="63,12,64,207" concept="5" />
+      <node id="2296782705712255677" at="64,207,65,193" concept="5" />
+      <node id="2296782705712255693" at="66,43,67,34" concept="5" />
+      <node id="2296782705712255699" at="67,34,68,34" concept="5" />
+      <node id="2296782705712255705" at="68,34,69,0" concept="7" />
+      <node id="2296782705712255706" at="69,0,70,38" concept="5" />
+      <node id="2296782705712255721" at="70,38,71,0" concept="7" />
+      <node id="2296782705712255724" at="72,26,73,24" concept="6" />
+      <node id="2296782705712255778" at="75,7,76,0" concept="7" />
+      <node id="2296782705712255779" at="76,0,77,15" concept="6" />
+      <node id="1159656764131928899" at="87,114,88,21" concept="2" />
+      <node id="1159656764131928899" at="92,114,93,49" concept="5" />
+      <node id="1159656764131928899" at="94,26,95,56" concept="11" />
+      <node id="1159656764131928899" at="98,13,99,71" concept="6" />
+      <node id="1159656764131928899" at="100,13,101,64" concept="6" />
+      <node id="1159656764131928899" at="102,13,103,69" concept="6" />
+      <node id="1159656764131928899" at="104,13,105,115" concept="6" />
+      <node id="1159656764131928899" at="106,13,107,71" concept="2" />
+      <node id="1159656764131928899" at="107,71,108,20" concept="6" />
+      <node id="1159656764131928899" at="109,14,110,58" concept="11" />
+      <node id="1159656764131928899" at="115,128,116,49" concept="5" />
+      <node id="1159656764131928899" at="117,26,118,56" concept="11" />
+      <node id="1159656764131928899" at="121,14,122,58" concept="11" />
+      <node id="1159656764131928899" at="128,48,129,22" concept="6" />
+      <node id="1159656764131928899" at="134,40,135,19" concept="6" />
+      <node id="1159656764131928899" at="139,0,140,0" concept="8" trace="attachedNode$Bgt0" />
+      <node id="1159656764131928899" at="143,0,144,0" concept="8" trace="attachedCellId$G9fZ" />
+      <node id="1159656764131928899" at="38,0,40,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2296782705712255638" at="58,12,60,7" concept="0" />
+      <node id="1159656764131928899" at="80,0,82,0" concept="9" trace="callbackLayout_id10nVqVgfXA7#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
+      <node id="1159656764131928899" at="83,0,85,0" concept="1" trace="IMarginCellContent__BehaviorDescriptor#()V" />
+      <node id="1159656764131928899" at="41,0,44,0" concept="9" trace="isConnectionAllowed_id10nVqVftAKg#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1159656764131928899" at="44,0,47,0" concept="9" trace="getPredecessor_id10nVqVftAKE#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1159656764131928899" at="47,0,50,0" concept="9" trace="isCollapseAllowed_id10nVqVftALs#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4477732335315211799" at="50,115,53,5" concept="3" />
+      <node id="2296782705712255722" at="71,0,74,9" concept="3" />
+      <node id="1159656764131928899" at="93,49,96,5" concept="3" />
+      <node id="1159656764131928899" at="116,49,119,5" concept="3" />
+      <node id="1159656764131928899" at="86,0,90,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="1159656764131928899" at="119,5,123,5" concept="10" />
+      <node id="2296782705712255631" at="55,115,60,7" concept="3" />
+      <node id="1159656764131928899" at="126,0,131,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="1159656764131928899" at="132,0,137,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2296782705712255691" at="65,193,75,7" concept="3" />
+      <node id="1159656764131928899" at="114,0,125,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="2296782705712255661" at="63,10,78,5" concept="0" />
+      <node id="1159656764131928899" at="96,5,111,5" concept="10" />
+      <node id="1159656764131928899" at="91,0,113,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="2296782705712255616" at="53,5,78,5" concept="3" />
+      <node id="1159656764131928899" at="50,0,80,0" concept="9" trace="compareTo_id10nVqVg5kqc#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)I" />
+      <scope id="1159656764131928899" at="38,63,38,63" />
+      <scope id="1159656764145129866" at="80,109,80,109" />
+      <scope id="1159656764131928899" at="83,56,83,56" />
+      <scope id="1159656764131929107" at="41,93,42,17" />
+      <scope id="1159656764131929133" at="44,86,45,16" />
+      <scope id="1159656764131929183" at="47,91,48,16" />
+      <scope id="4477732335315211802" at="51,46,52,15" />
+      <scope id="2296782705712255632" at="56,47,57,17" />
+      <scope id="2296782705712255639" at="58,14,59,120" />
+      <scope id="2296782705712255650" at="61,114,62,120" />
+      <scope id="2296782705712255723" at="72,26,73,24" />
+      <scope id="1159656764131928899" at="87,114,88,21" />
+      <scope id="1159656764131928899" at="94,26,95,56" />
+      <scope id="1159656764131928899" at="98,13,99,71" />
+      <scope id="1159656764131928899" at="100,13,101,64" />
+      <scope id="1159656764131928899" at="102,13,103,69" />
+      <scope id="1159656764131928899" at="104,13,105,115" />
+      <scope id="1159656764131928899" at="109,14,110,58" />
+      <scope id="1159656764131928899" at="117,26,118,56" />
+      <scope id="1159656764131928899" at="121,14,122,58" />
+      <scope id="1159656764131928899" at="128,48,129,22" />
+      <scope id="1159656764131928899" at="134,40,135,19" />
+      <scope id="1159656764131928899" at="38,0,40,0">
+        <var name="__thisNode__" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="80,0,82,0">
+        <var name="__thisNode__" id="1159656764131928899" />
+        <var name="contentCell" id="1159656764145100751" />
+      </scope>
+      <scope id="1159656764131928899" at="83,0,85,0" />
+      <scope id="1159656764131928899" at="106,13,108,20" />
+      <scope id="1159656764131928899" at="41,0,44,0">
+        <var name="__thisNode__" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="44,0,47,0">
+        <var name="__thisNode__" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="47,0,50,0">
+        <var name="__thisNode__" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="86,0,90,0">
+        <var name="constructor" id="1159656764131928899" />
+        <var name="node" id="1159656764131928899" />
+        <var name="parameters" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="126,0,131,0" />
+      <scope id="1159656764131928899" at="132,0,137,0" />
+      <scope id="2296782705712255617" at="54,116,60,7">
+        <var name="predecessor" id="2296782705712255626" />
+      </scope>
+      <scope id="2296782705712255692" at="66,43,74,9">
+        <var name="aY" id="2296782705712255694" />
+        <var name="bY" id="2296782705712255700" />
+        <var name="result" id="2296782705712255707" />
+      </scope>
+      <scope id="1159656764131928899" at="115,128,123,5">
+        <var name="methodIndex" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="114,0,125,0">
+        <var name="concept" id="1159656764131928899" />
+        <var name="method" id="1159656764131928899" />
+        <var name="parameters" id="1159656764131928899" />
+      </scope>
+      <scope id="2296782705712255662" at="63,12,77,15">
+        <var name="aCell" id="2296782705712255664" />
+        <var name="bCell" id="2296782705712255678" />
+      </scope>
+      <scope id="1159656764131928899" at="92,114,111,5">
+        <var name="methodIndex" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764131928899" at="91,0,113,0">
+        <var name="method" id="1159656764131928899" />
+        <var name="node" id="1159656764131928899" />
+        <var name="parameters" id="1159656764131928899" />
+      </scope>
+      <scope id="1159656764142339727" at="50,115,78,5" />
+      <scope id="1159656764131928899" at="50,0,80,0">
+        <var name="__thisNode__" id="1159656764131928899" />
+        <var name="context" id="2296782705712255788" />
+        <var name="other" id="1159656764142339760" />
+      </scope>
+      <unit id="1159656764131928899" at="138,0,141,0" name="com.mbeddr.mpsutil.margincell.behavior.IMarginCellContent__BehaviorDescriptor$LINKS" />
+      <unit id="1159656764131928899" at="142,0,145,0" name="com.mbeddr.mpsutil.margincell.behavior.IMarginCellContent__BehaviorDescriptor$PROPS" />
+      <unit id="1159656764131928899" at="27,0,146,0" name="com.mbeddr.mpsutil.margincell.behavior.IMarginCellContent__BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

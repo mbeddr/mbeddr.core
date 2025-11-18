@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="dlurgahh6fa0osvsmqxomq1owx8tgkg">
+  <files names="FindUsagesDescriptor.java:findCallers_Finder.java:findImplementors_Finder.java:findInstances_Finder.java:findProviders_Finder.java:findReadAccessToFields_Finder.java:findUsers_Finder.java:findWriteAccessToFields_Finder.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="89s5yikkfcuy7agq625s4cyr9gslvd3">
+  <files names="BasicEmbeddedDevModel.java:HelloWorldTemplate.java:IModelTemplate.java:NewProjectWizardHelper.java:NewSolutionWizardHelper.java:PluginSolution_ApplicationPlugin.java:ProjectType.java:Step_chooseProjectName.java:Step_chooseProjectNameAndLocation.java:Step_chooseSolutionName.java:Step_chooseSolutionName2.java:Step_chooseType.java:Step_selectDevkits.java:Step_selectDevkits2.java:Step_selectTemplate.java:Step_selectTemplate2.java:TemplateItem.java:WizardHelper.java:createMbeddrProject_Wizard.java:createMbeddrSolution_Wizard.java:createNewMbeddrProject_Action.java:createNewMbeddrSolution_Action.java:createNewMbeddrSolution_Wizard.java:createNewProjectWizard_Wizard.java:makeHelloWorld_Action.java:makeMinimalProgram_Action.java:mbeddrNewWizards_ActionGroup.java:mbeddrWizards_ActionGroup.java" />
+</product>
+

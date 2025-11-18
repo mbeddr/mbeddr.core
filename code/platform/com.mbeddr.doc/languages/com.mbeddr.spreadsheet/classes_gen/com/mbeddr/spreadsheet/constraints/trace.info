@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,33,0" name="com.mbeddr.spreadsheet.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:75bb348e-bcfc-40b4-86b4-e3809253db4d(com.mbeddr.spreadsheet.constraints)/2042272859107053545">
+    <file name="ICell_Constraints.java">
+      <node id="2042272859107053545" at="26,30,27,29" concept="9" />
+      <node id="2042272859107053546" at="38,63,39,137" concept="6" />
+      <node id="6491070606984439488" at="42,80,43,208" concept="6" />
+      <node id="2042272859107053545" at="47,6,48,131" concept="5" />
+      <node id="2042272859107053546" at="48,131,49,42" concept="2" />
+      <node id="2042272859107053545" at="49,42,50,22" concept="6" />
+      <node id="2042272859107053545" at="54,0,55,0" concept="7" trace="ICell$a3" />
+      <node id="2042272859107053545" at="55,0,56,0" concept="7" trace="Workbook$uR" />
+      <node id="2042272859107053545" at="59,0,60,0" concept="7" trace="style$R99W" />
+      <node id="2042272859107053545" at="26,0,29,0" concept="1" trace="ICell_Constraints#()V" />
+      <node id="2042272859107053546" at="37,0,41,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2042272859107053546" at="41,0,45,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="2042272859107053546" at="35,56,45,10" concept="6" />
+      <node id="2042272859107053546" at="33,0,47,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2042272859107053546" at="31,90,47,6" concept="5" />
+      <node id="2042272859107053545" at="30,0,52,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="2042272859107053545" at="26,30,27,29" />
+      <scope id="2042272859107053546" at="38,63,39,137" />
+      <scope id="2042272859107053546" at="42,80,43,208" />
+      <scope id="2042272859107053545" at="26,0,29,0" />
+      <scope id="2042272859107053546" at="37,0,41,0" />
+      <scope id="2042272859107053546" at="41,0,45,0">
+        <var name="_context" id="2042272859107053546" />
+      </scope>
+      <scope id="2042272859107053546" at="35,56,45,10" />
+      <scope id="2042272859107053546" at="33,0,47,0" />
+      <scope id="2042272859107053545" at="31,90,50,22">
+        <var name="d0" id="2042272859107053546" />
+        <var name="references" id="2042272859107053545" />
+      </scope>
+      <scope id="2042272859107053545" at="30,0,52,0" />
+      <unit id="2042272859107053545" at="58,0,61,0" name="com.mbeddr.spreadsheet.constraints.ICell_Constraints$LINKS" />
+      <unit id="2042272859107053545" at="53,0,57,0" name="com.mbeddr.spreadsheet.constraints.ICell_Constraints$CONCEPTS" />
+      <unit id="2042272859107053546" at="36,19,45,9" name="com.mbeddr.spreadsheet.constraints.ICell_Constraints$1$1" />
+      <unit id="2042272859107053546" at="32,48,47,5" name="com.mbeddr.spreadsheet.constraints.ICell_Constraints$1" />
+      <unit id="2042272859107053545" at="25,0,62,0" name="com.mbeddr.spreadsheet.constraints.ICell_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:75bb348e-bcfc-40b4-86b4-e3809253db4d(com.mbeddr.spreadsheet.constraints)/2042272859110130827">
+    <file name="Color_Constraints.java">
+      <node id="2042272859110130827" at="10,30,11,29" concept="9" />
+      <node id="2042272859110130827" at="15,0,16,0" concept="7" trace="Color$9S" />
+      <node id="2042272859110130827" at="10,0,13,0" concept="1" trace="Color_Constraints#()V" />
+      <scope id="2042272859110130827" at="10,30,11,29" />
+      <scope id="2042272859110130827" at="10,0,13,0" />
+      <unit id="2042272859110130827" at="14,0,17,0" name="com.mbeddr.spreadsheet.constraints.Color_Constraints$CONCEPTS" />
+      <unit id="2042272859110130827" at="9,0,18,0" name="com.mbeddr.spreadsheet.constraints.Color_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:75bb348e-bcfc-40b4-86b4-e3809253db4d(com.mbeddr.spreadsheet.constraints)/2042272859111099260">
+    <file name="ColorStyleProperty_Constraints.java">
+      <node id="2042272859111099260" at="18,43,19,42" concept="9" />
+      <node id="2042272859110130828" at="23,56,24,57" concept="9" />
+      <node id="2042272859110130828" at="27,68,28,83" concept="2" />
+      <node id="2042272859110130860" at="31,32,32,60" concept="2" />
+      <node id="2042272859110130942" at="33,37,34,58" concept="2" />
+      <node id="2042272859110130951" at="35,14,36,70" concept="2" />
+      <node id="2042272859110131003" at="41,56,42,57" concept="9" />
+      <node id="2042272859110131003" at="45,68,46,83" concept="2" />
+      <node id="2042272859110131011" at="49,32,50,60" concept="2" />
+      <node id="2042272859110131019" at="51,37,52,58" concept="2" />
+      <node id="2042272859110131030" at="53,14,54,70" concept="2" />
+      <node id="2042272859110131036" at="59,56,60,57" concept="9" />
+      <node id="2042272859110131036" at="63,68,64,83" concept="2" />
+      <node id="2042272859110131044" at="67,32,68,60" concept="2" />
+      <node id="2042272859110131052" at="69,37,70,58" concept="2" />
+      <node id="2042272859110131063" at="71,14,72,70" concept="2" />
+      <node id="2042272859111099260" at="77,84,78,119" concept="5" />
+      <node id="2042272859110130828" at="78,119,79,55" concept="2" />
+      <node id="2042272859110131003" at="79,55,80,55" concept="2" />
+      <node id="2042272859110131036" at="80,55,81,55" concept="2" />
+      <node id="2042272859111099260" at="81,55,82,22" concept="6" />
+      <node id="2042272859111099260" at="86,0,87,0" concept="7" trace="ColorStyleProperty$Xt" />
+      <node id="2042272859111099260" at="90,0,91,0" concept="7" trace="r$ykvB" />
+      <node id="2042272859111099260" at="91,0,92,0" concept="7" trace="g$ykIC" />
+      <node id="2042272859111099260" at="92,0,93,0" concept="7" trace="b$ypSY" />
+      <node id="2042272859110130949" at="35,12,37,7" concept="0" />
+      <node id="2042272859110131028" at="53,12,55,7" concept="0" />
+      <node id="2042272859110131061" at="71,12,73,7" concept="0" />
+      <node id="2042272859111099260" at="18,0,21,0" concept="1" trace="ColorStyleProperty_Constraints#()V" />
+      <node id="2042272859110130828" at="23,0,26,0" concept="1" trace="R_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2042272859110131003" at="41,0,44,0" concept="1" trace="G_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2042272859110131036" at="59,0,62,0" concept="1" trace="B_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2042272859110130828" at="26,0,30,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="2042272859110131003" at="44,0,48,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="2042272859110131036" at="62,0,66,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="2042272859110130831" at="30,79,37,7" concept="3" />
+      <node id="2042272859110131006" at="48,79,55,7" concept="3" />
+      <node id="2042272859110131039" at="66,79,73,7" concept="3" />
+      <node id="2042272859111099260" at="76,0,84,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="2042272859110130828" at="30,0,39,0" concept="8" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
+      <node id="2042272859110131003" at="48,0,57,0" concept="8" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
+      <node id="2042272859110131036" at="66,0,75,0" concept="8" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
+      <scope id="2042272859111099260" at="18,43,19,42" />
+      <scope id="2042272859110130828" at="23,56,24,57" />
+      <scope id="2042272859110130828" at="27,68,28,83" />
+      <scope id="2042272859110130833" at="31,32,32,60" />
+      <scope id="2042272859110130916" at="33,37,34,58" />
+      <scope id="2042272859110130950" at="35,14,36,70" />
+      <scope id="2042272859110131003" at="41,56,42,57" />
+      <scope id="2042272859110131003" at="45,68,46,83" />
+      <scope id="2042272859110131010" at="49,32,50,60" />
+      <scope id="2042272859110131018" at="51,37,52,58" />
+      <scope id="2042272859110131029" at="53,14,54,70" />
+      <scope id="2042272859110131036" at="59,56,60,57" />
+      <scope id="2042272859110131036" at="63,68,64,83" />
+      <scope id="2042272859110131043" at="67,32,68,60" />
+      <scope id="2042272859110131051" at="69,37,70,58" />
+      <scope id="2042272859110131062" at="71,14,72,70" />
+      <scope id="2042272859111099260" at="18,0,21,0" />
+      <scope id="2042272859110130828" at="23,0,26,0">
+        <var name="container" id="2042272859110130828" />
+      </scope>
+      <scope id="2042272859110131003" at="41,0,44,0">
+        <var name="container" id="2042272859110131003" />
+      </scope>
+      <scope id="2042272859110131036" at="59,0,62,0">
+        <var name="container" id="2042272859110131036" />
+      </scope>
+      <scope id="2042272859110130828" at="26,0,30,0">
+        <var name="node" id="2042272859110130828" />
+        <var name="propertyValue" id="2042272859110130828" />
+      </scope>
+      <scope id="2042272859110131003" at="44,0,48,0">
+        <var name="node" id="2042272859110131003" />
+        <var name="propertyValue" id="2042272859110131003" />
+      </scope>
+      <scope id="2042272859110131036" at="62,0,66,0">
+        <var name="node" id="2042272859110131036" />
+        <var name="propertyValue" id="2042272859110131036" />
+      </scope>
+      <scope id="2042272859111099260" at="77,84,82,22">
+        <var name="properties" id="2042272859111099260" />
+      </scope>
+      <scope id="2042272859110130830" at="30,79,37,7" />
+      <scope id="2042272859110131005" at="48,79,55,7" />
+      <scope id="2042272859110131038" at="66,79,73,7" />
+      <scope id="2042272859111099260" at="76,0,84,0" />
+      <scope id="2042272859110130828" at="30,0,39,0">
+        <var name="node" id="2042272859110130828" />
+        <var name="propertyValue" id="2042272859110130828" />
+      </scope>
+      <scope id="2042272859110131003" at="48,0,57,0">
+        <var name="node" id="2042272859110131003" />
+        <var name="propertyValue" id="2042272859110131003" />
+      </scope>
+      <scope id="2042272859110131036" at="66,0,75,0">
+        <var name="node" id="2042272859110131036" />
+        <var name="propertyValue" id="2042272859110131036" />
+      </scope>
+      <unit id="2042272859111099260" at="85,0,88,0" name="com.mbeddr.spreadsheet.constraints.ColorStyleProperty_Constraints$CONCEPTS" />
+      <unit id="2042272859111099260" at="89,0,94,0" name="com.mbeddr.spreadsheet.constraints.ColorStyleProperty_Constraints$PROPS" />
+      <unit id="2042272859110130828" at="22,0,40,0" name="com.mbeddr.spreadsheet.constraints.ColorStyleProperty_Constraints$R_Property" />
+      <unit id="2042272859110131003" at="40,0,58,0" name="com.mbeddr.spreadsheet.constraints.ColorStyleProperty_Constraints$G_Property" />
+      <unit id="2042272859110131036" at="58,0,76,0" name="com.mbeddr.spreadsheet.constraints.ColorStyleProperty_Constraints$B_Property" />
+      <unit id="2042272859111099260" at="17,0,95,0" name="com.mbeddr.spreadsheet.constraints.ColorStyleProperty_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

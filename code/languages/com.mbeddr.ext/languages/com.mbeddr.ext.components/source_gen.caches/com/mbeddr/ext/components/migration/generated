@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="95ufxul2bd4w1sy4wm3dvpg6az22odq">
+  <files names="MigrationDescriptor.java:migrateDataElementRefExpr.java:migrateInterface.java" />
+</product>
+

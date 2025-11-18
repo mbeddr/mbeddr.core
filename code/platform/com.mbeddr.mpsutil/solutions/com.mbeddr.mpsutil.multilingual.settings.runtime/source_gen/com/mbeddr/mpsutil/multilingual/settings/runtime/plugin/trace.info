@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="Runtime_ProjectPlugin.java">
+      <unit at="9,0,16,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:1c327561-f4e5-4a84-aca2-0b44bd8b1559(com.mbeddr.mpsutil.multilingual.settings.runtime.plugin)/8201243288561188945">
+    <file name="MultilingualSettings_Configurable.java">
+      <node id="8201243288561188945" at="42,121,43,44" concept="15" />
+      <node id="8201243288561188945" at="47,81,48,92" concept="10" />
+      <node id="8201243288561188945" at="52,77,53,88" concept="10" />
+      <node id="8201243288561188945" at="57,34,58,35" concept="10" />
+      <node id="8201243288561188945" at="61,25,62,21" concept="10" />
+      <node id="1934708319409044073" at="67,150,68,18" concept="10" />
+      <node id="8201243288561189975" at="70,150,71,18" concept="10" />
+      <node id="8201243288562376365" at="73,157,74,18" concept="10" />
+      <node id="8201243288561188945" at="75,5,76,0" concept="12" />
+      <node id="8201243288561188945" at="76,0,77,17" concept="10" />
+      <node id="1934708319409044073" at="79,214,80,67" concept="10" />
+      <node id="8201243288561189975" at="82,214,83,83" concept="10" />
+      <node id="8201243288562376365" at="85,221,86,110" concept="10" />
+      <node id="1934708319409044073" at="90,53,91,139" concept="3" />
+      <node id="8201243288561189975" at="91,139,92,139" concept="3" />
+      <node id="8201243288562376365" at="92,139,93,146" concept="3" />
+      <node id="8201243288561188945" at="93,146,94,0" concept="12" />
+      <node id="8201243288561188945" at="94,0,95,45" concept="3" />
+      <node id="1934708319409044073" at="98,5,99,45" concept="9" />
+      <node id="1934708319409044073" at="99,45,100,45" concept="3" />
+      <node id="8201243288561189975" at="104,5,105,45" concept="9" />
+      <node id="8201243288561189975" at="105,45,106,61" concept="3" />
+      <node id="8201243288562376365" at="110,5,111,79" concept="9" />
+      <node id="8201243288562376365" at="111,79,112,40" concept="3" />
+      <node id="1934708319409044073" at="117,23,118,139" concept="3" />
+      <node id="8201243288561189975" at="118,139,119,139" concept="3" />
+      <node id="8201243288562376365" at="119,139,120,146" concept="3" />
+      <node id="1934708319409044073" at="122,206,123,66" concept="3" />
+      <node id="8201243288561189975" at="125,206,126,82" concept="3" />
+      <node id="8201243288562376365" at="129,5,130,45" concept="9" />
+      <node id="8201243288562376365" at="130,45,131,28" concept="9" />
+      <node id="8201243288562376365" at="131,28,132,64" concept="9" />
+      <node id="8201243288562376365" at="133,43,134,82" concept="9" />
+      <node id="8201243288562376365" at="135,53,136,28" concept="3" />
+      <node id="8201243288562376365" at="136,28,137,16" concept="1" />
+      <node id="8201243288562376365" at="139,7,140,46" concept="3" />
+      <node id="1934708319409044073" at="145,25,146,82" concept="3" />
+      <node id="8201243288561189975" at="146,82,147,82" concept="3" />
+      <node id="8201243288562376365" at="147,82,148,89" concept="3" />
+      <node id="1934708319409044073" at="151,5,152,280" concept="9" />
+      <node id="1934708319409044073" at="152,280,153,119" concept="3" />
+      <node id="1934708319409044073" at="153,119,154,34" concept="9" />
+      <node id="1934708319409044073" at="154,34,155,33" concept="3" />
+      <node id="1934708319409044073" at="155,33,156,33" concept="3" />
+      <node id="1934708319409044073" at="156,33,157,31" concept="3" />
+      <node id="8201243288561189975" at="161,5,162,299" concept="9" />
+      <node id="8201243288561189975" at="162,299,163,119" concept="3" />
+      <node id="8201243288561189975" at="163,119,164,34" concept="9" />
+      <node id="8201243288561189975" at="164,34,165,33" concept="3" />
+      <node id="8201243288561189975" at="165,33,166,33" concept="3" />
+      <node id="8201243288561189975" at="166,33,167,31" concept="3" />
+      <node id="8201243288562376365" at="171,48,172,253" concept="9" />
+      <node id="4715473140019643411" at="173,180,174,0" concept="12" />
+      <node id="835620232370450299" at="174,0,175,168" concept="9" />
+      <node id="4715473140019645048" at="176,53,177,136" concept="9" />
+      <node id="835620232370473236" at="177,136,178,508" concept="10" />
+      <node id="835620232370477923" at="179,9,180,309" concept="10" />
+      <node id="8201243288562376365" at="181,19,182,60" concept="9" />
+      <node id="8201243288562376365" at="182,60,183,119" concept="3" />
+      <node id="8201243288562376365" at="183,119,184,33" concept="3" />
+      <node id="8201243288562376365" at="184,33,185,31" concept="3" />
+      <node id="8201243288562376365" at="185,31,186,33" concept="3" />
+      <node id="8201243288561188945" at="191,32,192,35" concept="10" />
+      <node id="8201243288561188945" at="198,25,199,33" concept="10" />
+      <node id="8201243288561188945" at="203,0,204,0" concept="13" trace="languages$oFFz" />
+      <node id="8201243288561188945" at="207,0,208,0" concept="13" trace="countryCode$oEyT" />
+      <node id="8201243288561188945" at="208,0,209,0" concept="13" trace="languageCode$o_oz" />
+      <node id="8201243288561188945" at="209,0,210,0" concept="13" trace="name$MnvL" />
+      <node id="8201243288561188945" at="42,0,45,0" concept="2" trace="MultilingualSettings_Configurable#(Lcom/intellij/openapi/project/Project;Lcom/mbeddr/mpsutil/preferenceform/runtime/PreferenceFormProjectComponentBase;)V" />
+      <node id="8201243288561188945" at="61,0,64,0" concept="8" trace="getIcon#()Ljavax/swing/Icon;" />
+      <node id="1934708319409044073" at="66,31,69,5" concept="7" />
+      <node id="8201243288561189975" at="69,5,72,5" concept="7" />
+      <node id="8201243288562376365" at="72,5,75,5" concept="7" />
+      <node id="1934708319409044073" at="79,0,82,0" concept="8" trace="isModified_CheckBoxPreferenceFormProperty1934708319409044073#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JCheckBox;)Z" />
+      <node id="8201243288561189975" at="82,0,85,0" concept="8" trace="isModified_CheckBoxPreferenceFormProperty8201243288561189975#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JCheckBox;)Z" />
+      <node id="8201243288562376365" at="85,0,88,0" concept="8" trace="isModified_DynamicComboBoxPreferenceFormProperty8201243288562376365#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JComboBox;)Z" />
+      <node id="1934708319409044073" at="122,0,125,0" concept="8" trace="reset_CheckBoxPreferenceFormProperty1934708319409044073#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JCheckBox;)V" />
+      <node id="8201243288561189975" at="125,0,128,0" concept="8" trace="reset_CheckBoxPreferenceFormProperty8201243288561189975#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JCheckBox;)V" />
+      <node id="8201243288561188945" at="46,0,50,0" concept="8" trace="getPreferenceFormComponent#()Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent;" />
+      <node id="8201243288561188945" at="51,0,55,0" concept="8" trace="getStateObject#()Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;" />
+      <node id="8201243288561188945" at="56,0,60,0" concept="8" trace="getDisplayName#()Ljava/lang/String;" />
+      <node id="1934708319409044073" at="97,206,101,5" concept="0" />
+      <node id="8201243288561189975" at="103,206,107,5" concept="0" />
+      <node id="8201243288562376365" at="109,213,113,5" concept="0" />
+      <node id="8201243288562376365" at="134,82,138,9" concept="7" />
+      <node id="835620232370458880" at="175,168,179,9" concept="7" />
+      <node id="8201243288561188945" at="190,0,194,0" concept="8" trace="getHelpTopic#()Ljava/lang/String;" />
+      <node id="1934708319409044073" at="97,0,103,0" concept="8" trace="apply_CheckBoxPreferenceFormProperty1934708319409044073#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JCheckBox;)V" />
+      <node id="8201243288561189975" at="103,0,109,0" concept="8" trace="apply_CheckBoxPreferenceFormProperty8201243288561189975#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JCheckBox;)V" />
+      <node id="8201243288562376365" at="109,0,115,0" concept="8" trace="apply_DynamicComboBoxPreferenceFormProperty8201243288562376365#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JComboBox;)V" />
+      <node id="8201243288561188945" at="116,0,122,0" concept="8" trace="reset#()V" />
+      <node id="8201243288561188945" at="144,0,150,0" concept="8" trace="init#()V" />
+      <node id="8201243288561188945" at="195,0,201,0" concept="8" trace="getId#()Ljava/lang/String;" />
+      <node id="8201243288562376365" at="132,64,139,7" concept="5" />
+      <node id="8201243288561188945" at="89,0,97,0" concept="8" trace="apply#()V" />
+      <node id="1934708319409044073" at="150,145,158,5" concept="0" />
+      <node id="8201243288561189975" at="160,145,168,5" concept="0" />
+      <node id="8201243288562376365" at="172,253,181,19" concept="9" />
+      <node id="1934708319409044073" at="150,0,160,0" concept="8" trace="init_CheckBoxPreferenceFormProperty1934708319409044073#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Ljavax/swing/JPanel;)V" />
+      <node id="8201243288561189975" at="160,0,170,0" concept="8" trace="init_CheckBoxPreferenceFormProperty8201243288561189975#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Ljavax/swing/JPanel;)V" />
+      <node id="8201243288562376365" at="128,213,141,5" concept="0" />
+      <node id="8201243288561188945" at="65,0,79,0" concept="8" trace="isModified#()Z" />
+      <node id="8201243288562376365" at="128,0,143,0" concept="8" trace="reset_DynamicComboBoxPreferenceFormProperty8201243288562376365#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;Ljavax/swing/JComboBox;)V" />
+      <node id="8201243288562376365" at="170,158,187,7" concept="3" />
+      <node id="8201243288562376365" at="170,0,189,0" concept="8" trace="init_DynamicComboBoxPreferenceFormProperty8201243288562376365#(Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_Configurable;Ljavax/swing/JPanel;)V" />
+      <scope id="8201243288561188945" at="42,121,43,44" />
+      <scope id="8201243288561188945" at="47,81,48,92" />
+      <scope id="8201243288561188945" at="52,77,53,88" />
+      <scope id="8201243288561188945" at="57,34,58,35" />
+      <scope id="8201243288561188945" at="61,25,62,21" />
+      <scope id="1934708319409044073" at="67,150,68,18" />
+      <scope id="8201243288561189975" at="70,150,71,18" />
+      <scope id="8201243288562376365" at="73,157,74,18" />
+      <scope id="1934708319409044073" at="79,214,80,67" />
+      <scope id="8201243288561189975" at="82,214,83,83" />
+      <scope id="8201243288562376365" at="85,221,86,110" />
+      <scope id="1934708319409044073" at="122,206,123,66" />
+      <scope id="8201243288561189975" at="125,206,126,82" />
+      <scope id="8201243288561188945" at="191,32,192,35" />
+      <scope id="8201243288561188945" at="198,25,199,33" />
+      <scope id="1934708319409044073" at="98,5,100,45">
+        <var name="checked" id="1934708319409044073" />
+      </scope>
+      <scope id="8201243288561189975" at="104,5,106,61">
+        <var name="checked" id="8201243288561189975" />
+      </scope>
+      <scope id="8201243288562376365" at="110,5,112,40">
+        <var name="key" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288562376365" at="135,53,137,16" />
+      <scope id="835620232370458883" at="176,53,178,508">
+        <var name="moduleRepository" id="4715473140019311702" />
+      </scope>
+      <scope id="8201243288561188945" at="42,0,45,0">
+        <var name="preferenceFormComponent" id="8201243288561188945" />
+        <var name="project" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288561188945" at="61,0,64,0" />
+      <scope id="1934708319409044073" at="79,0,82,0">
+        <var name="control" id="1934708319409044073" />
+        <var name="preferenceForm" id="1934708319409044073" />
+        <var name="stateObject" id="1934708319409044073" />
+      </scope>
+      <scope id="8201243288561189975" at="82,0,85,0">
+        <var name="control" id="8201243288561189975" />
+        <var name="preferenceForm" id="8201243288561189975" />
+        <var name="stateObject" id="8201243288561189975" />
+      </scope>
+      <scope id="8201243288562376365" at="85,0,88,0">
+        <var name="control" id="8201243288562376365" />
+        <var name="preferenceForm" id="8201243288562376365" />
+        <var name="stateObject" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288561188945" at="117,23,120,146" />
+      <scope id="1934708319409044073" at="122,0,125,0">
+        <var name="control" id="1934708319409044073" />
+        <var name="preferenceForm" id="1934708319409044073" />
+        <var name="stateObject" id="1934708319409044073" />
+      </scope>
+      <scope id="8201243288561189975" at="125,0,128,0">
+        <var name="control" id="8201243288561189975" />
+        <var name="preferenceForm" id="8201243288561189975" />
+        <var name="stateObject" id="8201243288561189975" />
+      </scope>
+      <scope id="8201243288561188945" at="145,25,148,89" />
+      <scope id="8201243288561188945" at="46,0,50,0" />
+      <scope id="8201243288561188945" at="51,0,55,0" />
+      <scope id="8201243288561188945" at="56,0,60,0" />
+      <scope id="1934708319409044073" at="97,206,101,5" />
+      <scope id="8201243288561189975" at="103,206,107,5" />
+      <scope id="8201243288562376365" at="109,213,113,5" />
+      <scope id="8201243288561188945" at="190,0,194,0" />
+      <scope id="8201243288561188945" at="90,53,95,45" />
+      <scope id="8201243288562376365" at="133,43,138,9">
+        <var name="item" id="8201243288562376365" />
+      </scope>
+      <scope id="1934708319409044073" at="97,0,103,0">
+        <var name="control" id="1934708319409044073" />
+        <var name="preferenceForm" id="1934708319409044073" />
+        <var name="stateObject" id="1934708319409044073" />
+      </scope>
+      <scope id="8201243288561189975" at="103,0,109,0">
+        <var name="control" id="8201243288561189975" />
+        <var name="preferenceForm" id="8201243288561189975" />
+        <var name="stateObject" id="8201243288561189975" />
+      </scope>
+      <scope id="8201243288562376365" at="109,0,115,0">
+        <var name="control" id="8201243288562376365" />
+        <var name="preferenceForm" id="8201243288562376365" />
+        <var name="stateObject" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288561188945" at="116,0,122,0" />
+      <scope id="8201243288561188945" at="144,0,150,0" />
+      <scope id="1934708319409044073" at="151,5,157,31">
+        <var name="control" id="1934708319409044073" />
+        <var name="label" id="1934708319409044073" />
+      </scope>
+      <scope id="8201243288561189975" at="161,5,167,31">
+        <var name="control" id="8201243288561189975" />
+        <var name="label" id="8201243288561189975" />
+      </scope>
+      <scope id="8201243288561188945" at="195,0,201,0" />
+      <scope id="8201243288562376365" at="132,64,139,7">
+        <var name="i" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288562376365" at="173,180,180,309">
+        <var name="langs" id="835620232370450300" />
+      </scope>
+      <scope id="8201243288561188945" at="89,0,97,0" />
+      <scope id="1934708319409044073" at="150,145,158,5" />
+      <scope id="8201243288561189975" at="160,145,168,5" />
+      <scope id="1934708319409044073" at="150,0,160,0">
+        <var name="formComponent" id="1934708319409044073" />
+        <var name="preferenceForm" id="1934708319409044073" />
+      </scope>
+      <scope id="8201243288561189975" at="160,0,170,0">
+        <var name="formComponent" id="8201243288561189975" />
+        <var name="preferenceForm" id="8201243288561189975" />
+      </scope>
+      <scope id="8201243288561188945" at="66,31,77,17" />
+      <scope id="8201243288562376365" at="129,5,140,46">
+        <var name="itemCount" id="8201243288562376365" />
+        <var name="resetId" id="8201243288562376365" />
+        <var name="selectedIndex" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288562376365" at="128,213,141,5" />
+      <scope id="8201243288561188945" at="65,0,79,0" />
+      <scope id="8201243288562376365" at="128,0,143,0">
+        <var name="control" id="8201243288562376365" />
+        <var name="preferenceForm" id="8201243288562376365" />
+        <var name="stateObject" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288562376365" at="171,48,186,33">
+        <var name="control" id="8201243288562376365" />
+        <var name="label" id="8201243288562376365" />
+        <var name="values" id="8201243288562376365" />
+      </scope>
+      <scope id="8201243288562376365" at="170,158,187,7" />
+      <scope id="8201243288562376365" at="170,0,189,0">
+        <var name="formComponent" id="8201243288562376365" />
+        <var name="preferenceForm" id="8201243288562376365" />
+      </scope>
+      <unit id="8201243288561188945" at="202,0,205,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_Configurable$LINKS" />
+      <unit id="8201243288561188945" at="206,0,211,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_Configurable$PROPS" />
+      <unit id="8201243288561188945" at="40,0,212,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_Configurable" />
+    </file>
+    <file name="MultilingualSettings_Plugin_ProjectPluginPart.java">
+      <node id="8201243288561188945" at="12,0,13,0" concept="13" trace="LOG" />
+      <node id="8201243288561188945" at="13,0,14,0" concept="4" trace="component" />
+      <node id="8201243288561188945" at="18,29,19,32" concept="3" />
+      <node id="8201243288561188945" at="20,5,21,63" concept="9" />
+      <node id="8201243288561188945" at="21,63,22,126" concept="3" />
+      <node id="8201243288561188945" at="22,126,23,72" concept="3" />
+      <node id="8201243288561188945" at="23,72,24,147" concept="3" />
+      <node id="8201243288561188945" at="28,29,29,35" concept="3" />
+      <node id="8201243288561188945" at="30,5,31,75" concept="3" />
+      <node id="8201243288561188945" at="31,75,32,72" concept="3" />
+      <node id="8201243288561188945" at="32,72,33,63" concept="9" />
+      <node id="8201243288561188945" at="33,63,34,91" concept="3" />
+      <node id="8201243288561188945" at="14,0,16,0" concept="2" trace="MultilingualSettings_Plugin_ProjectPluginPart#()V" />
+      <node id="8201243288561188945" at="17,40,20,5" concept="7" />
+      <node id="8201243288561188945" at="27,43,30,5" concept="7" />
+      <node id="8201243288561188945" at="16,0,26,0" concept="8" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="8201243288561188945" at="26,0,36,0" concept="8" trace="dispose#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="8201243288561188945" at="14,58,14,58" />
+      <scope id="8201243288561188945" at="18,29,19,32" />
+      <scope id="8201243288561188945" at="28,29,29,35" />
+      <scope id="8201243288561188945" at="14,0,16,0" />
+      <scope id="8201243288561188945" at="17,40,24,147">
+        <var name="ideaProject" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288561188945" at="27,43,34,91">
+        <var name="ideaProject" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288561188945" at="16,0,26,0">
+        <var name="project" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288561188945" at="26,0,36,0">
+        <var name="project" id="8201243288561188945" />
+      </scope>
+      <unit id="8201243288561188945" at="11,0,37,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_Plugin_ProjectPluginPart" />
+    </file>
+    <file name="MultilingualSettings_PreferencesComponent.java">
+      <node id="8201243288561188945" at="29,0,30,0" concept="13" trace="LOG" />
+      <node id="8201243288561188945" at="30,0,31,0" concept="13" trace="PREF_COMP_KEY" />
+      <node id="8201243288561188945" at="32,0,33,0" concept="13" trace="instance" />
+      <node id="8201243288561188945" at="34,0,35,0" concept="4" trace="myState" />
+      <node id="8201243288561188945" at="36,69,37,19" concept="15" />
+      <node id="8201243288561188945" at="37,19,38,20" concept="3" />
+      <node id="8201243288561188945" at="41,73,42,20" concept="10" />
+      <node id="8201243288561188945" at="46,27,47,96" concept="9" />
+      <node id="8201243288561188945" at="48,29,49,73" concept="3" />
+      <node id="8201243288561188945" at="50,5,51,0" concept="12" />
+      <node id="8201243288561188945" at="51,0,52,41" concept="3" />
+      <node id="8201243288561188945" at="53,92,54,19" concept="3" />
+      <node id="8201243288561188945" at="59,27,60,43" concept="3" />
+      <node id="8201243288561188945" at="60,43,61,91" concept="9" />
+      <node id="8201243288561188945" at="62,29,63,73" concept="3" />
+      <node id="1934708319409086081" at="67,45,68,104" concept="9" />
+      <node id="8201243288565905079" at="68,104,69,128" concept="3" />
+      <node id="1934708319409087502" at="69,128,70,160" concept="3" />
+      <node id="9087294576172830347" at="70,160,71,0" concept="12" />
+      <node id="8201243288565916585" at="71,0,72,98" concept="9" />
+      <node id="6737333878606729612" at="72,98,73,75" concept="11" />
+      <node id="6737333878606582711" at="73,75,74,93" concept="9" />
+      <node id="4182963252784423525" at="75,29,76,288" concept="3" />
+      <node id="1934708319409078029" at="80,47,81,104" concept="9" />
+      <node id="8201243288565893924" at="81,104,82,128" concept="3" />
+      <node id="1934708319409082094" at="82,128,83,160" concept="3" />
+      <node id="9087294576172562202" at="83,160,84,0" concept="12" />
+      <node id="8201243288565876904" at="85,107,86,13" concept="10" />
+      <node id="8201243288565887176" at="87,5,88,0" concept="12" />
+      <node id="8201243288565842274" at="88,0,89,120" concept="9" />
+      <node id="8201243288565887159" at="90,44,91,13" concept="10" />
+      <node id="4715473140019493434" at="92,5,93,0" concept="12" />
+      <node id="4715473140019491641" at="93,0,94,59" concept="9" />
+      <node id="4715473140019350857" at="94,59,95,147" concept="3" />
+      <node id="8201243288561188945" at="98,35,99,24" concept="10" />
+      <node id="8201243288561188945" at="102,65,103,153" concept="10" />
+      <node id="1934708319409044073" at="116,39,117,30" concept="10" />
+      <node id="8201243288561189975" at="119,55,120,46" concept="10" />
+      <node id="8201243288562877905" at="124,73,125,98" concept="9" />
+      <node id="8201243288562871488" at="125,98,126,168" concept="10" />
+      <node id="8201243288562376365" at="128,7,129,29" concept="10" />
+      <node id="6737333878606582713" at="133,36,134,47" concept="10" />
+      <node id="6737333878606582713" at="135,5,136,16" concept="10" />
+      <node id="6737333878606582715" at="139,36,140,57" concept="10" />
+      <node id="6737333878606582715" at="141,5,142,16" concept="10" />
+      <node id="8201243288565876644" at="144,52,145,40" concept="10" />
+      <node id="8201243288561188945" at="149,0,150,0" concept="13" trace="countryCode$oEyT" />
+      <node id="8201243288561188945" at="150,0,151,0" concept="13" trace="languageCode$o_oz" />
+      <node id="1934708319409044073" at="107,0,109,0" concept="4" trace="showTranslations" />
+      <node id="8201243288561189975" at="109,0,111,0" concept="4" trace="showTranslationsIntentionEnabled" />
+      <node id="8201243288562376365" at="111,0,113,0" concept="4" trace="currentLanguage" />
+      <node id="8201243288561188945" at="113,0,115,0" concept="2" trace="MyState#()V" />
+      <node id="8201243288561188945" at="41,0,44,0" concept="14" trace="getInstance#()Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent;" />
+      <node id="8201243288561188945" at="47,96,50,5" concept="7" />
+      <node id="8201243288561188945" at="52,41,55,5" concept="6" />
+      <node id="8201243288561188945" at="61,91,64,5" concept="7" />
+      <node id="6737333878606587626" at="74,93,77,5" concept="7" />
+      <node id="8201243288565853106" at="84,0,87,5" concept="7" />
+      <node id="8201243288565877612" at="89,120,92,5" concept="7" />
+      <node id="8201243288561188945" at="98,0,101,0" concept="8" trace="getStateObject#()Lcom/mbeddr/mpsutil/multilingual/settings/runtime/plugin/MultilingualSettings_PreferencesComponent/MyState;" />
+      <node id="8201243288561188945" at="102,0,105,0" concept="8" trace="createPages#()Ljava/util/List;" />
+      <node id="1934708319409044073" at="116,0,119,0" concept="8" trace="showTranslations#()Z" />
+      <node id="8201243288561189975" at="119,0,122,0" concept="8" trace="showTranslationsIntentionEnabled#()Z" />
+      <node id="6737333878606582713" at="132,75,135,5" concept="7" />
+      <node id="6737333878606582715" at="138,71,141,5" concept="7" />
+      <node id="8201243288565876644" at="144,0,147,0" concept="14" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8201243288561188945" at="36,0,40,0" concept="2" trace="MultilingualSettings_PreferencesComponent#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="8201243288562376365" at="123,71,127,20" concept="3" />
+      <node id="8201243288562376365" at="122,37,128,7" concept="7" />
+      <node id="6737333878606582713" at="132,0,138,0" concept="14" trace="check_6elzdk_a0g0o#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/module/SRepository;" />
+      <node id="6737333878606582715" at="138,0,144,0" concept="14" trace="check_6elzdk_a0a0g0o#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <node id="8201243288561188945" at="58,0,66,0" concept="8" trace="saveState#()V" />
+      <node id="8201243288562376365" at="122,0,131,0" concept="8" trace="currentLanguage#()Ljava/lang/String;" />
+      <node id="8201243288561188945" at="45,0,57,0" concept="8" trace="loadState#()V" />
+      <node id="8201243288561188945" at="67,0,79,0" concept="8" trace="afterRead#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="8201243288561188945" at="80,0,97,0" concept="8" trace="beforeWrite#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="8201243288561188945" at="113,22,113,22" />
+      <scope id="8201243288561188945" at="41,73,42,20" />
+      <scope id="8201243288561188945" at="48,29,49,73" />
+      <scope id="8201243288561188945" at="53,92,54,19" />
+      <scope id="8201243288561188945" at="62,29,63,73" />
+      <scope id="6737333878606587628" at="75,29,76,288" />
+      <scope id="8201243288565853109" at="85,107,86,13" />
+      <scope id="8201243288565877615" at="90,44,91,13" />
+      <scope id="8201243288561188945" at="98,35,99,24" />
+      <scope id="8201243288561188945" at="102,65,103,153" />
+      <scope id="1934708319409044073" at="116,39,117,30" />
+      <scope id="8201243288561189975" at="119,55,120,46" />
+      <scope id="6737333878606582713" at="133,36,134,47" />
+      <scope id="6737333878606582715" at="139,36,140,57" />
+      <scope id="8201243288565876644" at="144,52,145,40" />
+      <scope id="8201243288561188945" at="36,69,38,20" />
+      <scope id="8201243288561188945" at="113,0,115,0" />
+      <scope id="8201243288562505868" at="124,73,126,168">
+        <var name="currentLanguage" id="8201243288562877906" />
+      </scope>
+      <scope id="8201243288561188945" at="41,0,44,0" />
+      <scope id="8201243288561188945" at="52,41,55,5">
+        <var name="page" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288561188945" at="98,0,101,0" />
+      <scope id="8201243288561188945" at="102,0,105,0" />
+      <scope id="1934708319409044073" at="116,0,119,0" />
+      <scope id="8201243288561189975" at="119,0,122,0" />
+      <scope id="8201243288565876644" at="144,0,147,0">
+        <var name="str" id="8201243288565876644" />
+      </scope>
+      <scope id="8201243288561188945" at="36,0,40,0">
+        <var name="project" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288562376365" at="123,71,127,20" />
+      <scope id="6737333878606582713" at="132,75,136,16" />
+      <scope id="6737333878606582715" at="138,71,142,16" />
+      <scope id="8201243288561188945" at="59,27,64,5">
+        <var name="saveFields" id="8201243288561188945" />
+      </scope>
+      <scope id="6737333878606582713" at="132,0,138,0">
+        <var name="checkedDotOperand" id="6737333878606582713" />
+      </scope>
+      <scope id="6737333878606582715" at="138,0,144,0">
+        <var name="checkedDotOperand" id="6737333878606582715" />
+      </scope>
+      <scope id="8201243288562376365" at="122,37,129,29" />
+      <scope id="8201243288561188945" at="58,0,66,0" />
+      <scope id="8201243288561188945" at="46,27,55,5">
+        <var name="loadFields" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288562376365" at="122,0,131,0" />
+      <scope id="8201243288565904391" at="67,45,77,5">
+        <var name="currentLanguage" id="8201243288565916586" />
+        <var name="repository" id="6737333878606582712" />
+        <var name="translationProvider" id="1934708319409086082" />
+      </scope>
+      <scope id="8201243288561188945" at="45,0,57,0" />
+      <scope id="8201243288561188945" at="67,0,79,0">
+        <var name="project" id="8201243288561188945" />
+      </scope>
+      <scope id="8201243288565780807" at="80,47,95,147">
+        <var name="parts" id="8201243288565842275" />
+        <var name="repository" id="4715473140019491642" />
+        <var name="translationProvider" id="1934708319409078030" />
+      </scope>
+      <scope id="8201243288561188945" at="80,0,97,0">
+        <var name="project" id="8201243288561188945" />
+      </scope>
+      <unit id="8201243288561188945" at="148,0,152,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_PreferencesComponent$PROPS" />
+      <unit id="8201243288561188945" at="106,0,132,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_PreferencesComponent$MyState" />
+      <unit id="8201243288561188945" at="28,0,153,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.MultilingualSettings_PreferencesComponent" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="8201243288561188945" at="12,62,13,67" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:1c327561-f4e5-4a84-aca2-0b44bd8b1559(com.mbeddr.mpsutil.multilingual.settings.runtime.plugin)/8884256830697788830">
+    <file name="ShowTranslationsResourceBundleBundleClass.java">
+      <node id="8884256830697788830" at="10,54,11,71" concept="15" />
+      <node id="8884256830697788830" at="13,58,14,45" concept="10" />
+      <node id="8884256830697788830" at="10,0,13,0" concept="2" trace="ShowTranslationsResourceBundleBundleClass#()V" />
+      <node id="8884256830697788830" at="13,0,16,0" concept="8" trace="getResourceBundle#(Ljava/util/Locale;)Ljava/util/ResourceBundle;" />
+      <scope id="8884256830697788830" at="10,54,11,71" />
+      <scope id="8884256830697788830" at="13,58,14,45" />
+      <scope id="8884256830697788830" at="10,0,13,0" />
+      <scope id="8884256830697788830" at="13,0,16,0">
+        <var name="locale" id="8884256830697788830" />
+      </scope>
+      <unit id="8884256830697788830" at="9,0,17,0" name="com.mbeddr.mpsutil.multilingual.settings.runtime.plugin.ShowTranslationsResourceBundleBundleClass" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-3p319iulorpnj8zy5gnfnv4oqu6v9qe">
+  <files names="BeforeTasksInitializer_ProjectPluginPart.java:BuildBinaryUtil.java:BuildConfigHelper.java:CFilesHighlightingStrategy.java:CHighlightingInitializer_AppPluginPart.java:CMDExecutor.java:CProgramExecutorCommand_Command.java:DebugValidator.java:ErrorReporter.java:GenerateModelsUtil.java:IconContainer.java:Make.java:MakeExecutor.java:MakeUtils.java:Make_BeforeTask.java:MakefilesHighlightingStrategy.java:MbeddrExecutableConfiguration_Configuration.java:MbeddrExecutableConfiguration_Configuration_Editor.java:MbeddrExecutableConfiguration_Configuration_RunProfileState.java:MbeddrExecutableConfiguration_Producer.java:MbeddrSettings.java:MbeddrSettingsEditor.java:MbeddrStackTraceFilter.java:ModulesCollector.java:PlatformUtil.java:PluginSolution_ApplicationPlugin.java:PluginSolution_ProjectPlugin.java:RebuildMainModel_BeforeTask.java:RunConfigurationsInitializer_AppPluginPart.java:RunconfigurationChecker.java:RunconfigurationHelper.java:StreamClearer.java:TestResultUtil.java:TimeoutTextField.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-9p78htoz96wqcar12lds640dvwgcw4c">
+  <files names="FixPhaseTrigger_QuickFix.java:TypesystemDescriptor.java:check_AssertMockComponent_NonTypesystemRule.java:check_ExpectNoCall_NonTypesystemRule.java:check_MockComponent_NonTypesystemRule.java:check_PhaseChangeTrigger_NonTypesystemRule.java:check_SequenceExpectation_NonTypesystemRule.java:typeof_ParamRefExpression_InferenceRule.java:typeof_ParamterAssertion_InferenceRule.java:typeof_PhaseExpression_InferenceRule.java:typeof_PhaseRefExpression_InferenceRule.java:typeof_Step_InferenceRule.java:typeof_StubCounterExpr_InferenceRule.java:typeof_StubPhase_InferenceRule.java" />
+</product>
+

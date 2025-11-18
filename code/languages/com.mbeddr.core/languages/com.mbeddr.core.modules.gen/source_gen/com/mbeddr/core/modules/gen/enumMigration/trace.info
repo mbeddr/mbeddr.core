@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:cef1fccc-0663-4a54-a820-5be29420ad15(com.mbeddr.core.modules.gen.enumMigration)/6952945697661444517">
+    <file name="NameManglingStrategy_MigrationUtils.java">
+      <node id="6952945697661444524" at="13,13,14,19" concept="0" />
+      <node id="6952945697661444527" at="15,13,16,19" concept="0" />
+      <node id="6952945697661444534" at="17,14,18,20" concept="0" />
+      <node id="6952945697661444546" at="23,15,24,228" concept="0" />
+      <node id="6952945697661444553" at="25,15,26,228" concept="0" />
+      <node id="6952945697661444562" at="27,14,28,20" concept="0" />
+      <node id="6952945697661444517" at="31,0,32,0" concept="1" trace="enumSwitchIndex" />
+      <node id="6952945697661444534" at="11,61,19,5" concept="3" />
+      <node id="6952945697661444559" at="21,59,29,5" concept="3" />
+      <node id="6952945697661444528" at="11,0,21,0" concept="2" trace="name#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <node id="6952945697661444538" at="21,0,31,0" concept="2" trace="fromName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="6952945697661444524" at="13,13,14,19" />
+      <scope id="6952945697661444527" at="15,13,16,19" />
+      <scope id="6952945697661444534" at="17,14,18,20" />
+      <scope id="6952945697661444545" at="23,15,24,228" />
+      <scope id="6952945697661444552" at="25,15,26,228" />
+      <scope id="6952945697661444561" at="27,14,28,20" />
+      <scope id="6952945697661444532" at="11,61,19,5" />
+      <scope id="6952945697661444558" at="21,59,29,5" />
+      <scope id="6952945697661444528" at="11,0,21,0">
+        <var name="enummember" id="6952945697661444529" />
+      </scope>
+      <scope id="6952945697661444538" at="21,0,31,0">
+        <var name="name" id="6952945697661444539" />
+      </scope>
+      <unit id="6952945697661444517" at="10,0,33,0" name="com.mbeddr.core.modules.gen.enumMigration.NameManglingStrategy_MigrationUtils" />
+    </file>
+  </root>
+</debug-info>
+

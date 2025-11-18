@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="b0s8uhrvb9y434ayscmotvkxpm53ewp">
+  <files names="BehaviorAspectDescriptor.java:CallExpectation__BehaviorDescriptor.java:ExpectNoCall__BehaviorDescriptor.java:ExpectTotalNoOfCalls__BehaviorDescriptor.java:IconContainer.java:MockComponent__BehaviorDescriptor.java:MockIconHelper.java:ParamRefExpression__BehaviorDescriptor.java:ParamterAssertion__BehaviorDescriptor.java:PhaseChangeStatement__BehaviorDescriptor.java:PhaseChangeTrigger__BehaviorDescriptor.java:PhaseRefExpression__BehaviorDescriptor.java:PhaseType__BehaviorDescriptor.java:SequenceExpectation__BehaviorDescriptor.java:StepAssertion__BehaviorDescriptor.java:Step__BehaviorDescriptor.java:StubComponent__BehaviorDescriptor.java:ValidateMock__BehaviorDescriptor.java" />
+</product>
+

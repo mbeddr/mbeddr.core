@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/1101080154067675210">
+    <file name="PreferenceFormProjectComponentBase.java">
+      <node id="1101080154067681170" at="9,0,10,0" concept="2" trace="project" />
+      <node id="1101080154067681174" at="11,65,12,27" concept="1" />
+      <node id="1101080154067706527" at="15,31,16,24" concept="6" />
+      <node id="1101080154068094678" at="19,37,20,60" concept="6" />
+      <node id="1101080154067675283" at="11,0,14,0" concept="0" trace="PreferenceFormProjectComponentBase#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="1101080154067706355" at="15,0,18,0" concept="5" trace="getProject#()Lcom/intellij/openapi/project/Project;" />
+      <node id="1101080154068094172" at="19,0,22,0" concept="5" trace="getMPSProject#()Ljetbrains/mps/project/MPSProject;" />
+      <scope id="1101080154067675287" at="11,65,12,27" />
+      <scope id="1101080154067706358" at="15,31,16,24" />
+      <scope id="1101080154068094175" at="19,37,20,60" />
+      <scope id="1101080154067675283" at="11,0,14,0">
+        <var name="project" id="1101080154067510615" />
+      </scope>
+      <scope id="1101080154067706355" at="15,0,18,0" />
+      <scope id="1101080154068094172" at="19,0,22,0" />
+      <unit id="1101080154067675210" at="8,0,23,0" name="com.mbeddr.mpsutil.preferenceform.runtime.PreferenceFormProjectComponentBase" />
+    </file>
+  </root>
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/1101080154068124068">
+    <file name="PreferenceFormProjectConfigurableBase.java">
+      <node id="1101080154068124667" at="11,0,12,0" concept="2" trace="project" />
+      <node id="874793963486639732" at="12,0,13,0" concept="2" trace="disposable" />
+      <node id="1101080154068124585" at="14,128,15,35" concept="10" />
+      <node id="1101080154068124671" at="15,35,16,27" concept="1" />
+      <node id="1101080154068127296" at="20,31,21,24" concept="6" />
+      <node id="874793963486651700" at="25,26,26,67" concept="1" />
+      <node id="1101080154068219777" at="26,67,27,97" concept="1" />
+      <node id="874793963486677572" at="32,29,33,35" concept="1" />
+      <node id="874793963486688969" at="31,28,34,5" concept="4" />
+      <node id="1101080154068124134" at="14,0,18,0" concept="0" trace="PreferenceFormProjectConfigurableBase#(Lcom/intellij/openapi/project/Project;Lcom/mbeddr/mpsutil/preferenceform/runtime/PreferenceFormProjectComponentBase;)V" />
+      <node id="1101080154068126959" at="19,0,23,0" concept="5" trace="getProject#()Lcom/intellij/openapi/project/Project;" />
+      <node id="1101080154068130385" at="24,0,29,0" concept="5" trace="register#()V" />
+      <node id="1101080154068130390" at="30,0,36,0" concept="5" trace="unregister#()V" />
+      <scope id="1101080154068126962" at="20,31,21,24" />
+      <scope id="874793963486688971" at="32,29,33,35" />
+      <scope id="1101080154068124138" at="14,128,16,27" />
+      <scope id="1101080154068130389" at="25,26,27,97" />
+      <scope id="1101080154068130394" at="31,28,34,5" />
+      <scope id="1101080154068124134" at="14,0,18,0">
+        <var name="preferenceFormComponent" id="1101080154068124165" />
+        <var name="project" id="1101080154068124147" />
+      </scope>
+      <scope id="1101080154068126959" at="19,0,23,0" />
+      <scope id="1101080154068130385" at="24,0,29,0" />
+      <scope id="1101080154068130390" at="30,0,36,0" />
+      <unit id="1101080154068124068" at="10,0,37,0" name="com.mbeddr.mpsutil.preferenceform.runtime.PreferenceFormProjectConfigurableBase" />
+    </file>
+  </root>
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/1101080154068235160">
+    <file name="PreferenceFormApplicationComponentBase.java">
+      <node id="1101080154068235231" at="7,54,8,12" concept="10" />
+      <node id="1101080154068235207" at="7,0,10,0" concept="0" trace="PreferenceFormApplicationComponentBase#()V" />
+      <scope id="1101080154068235211" at="7,54,8,12" />
+      <scope id="1101080154068235207" at="7,0,10,0" />
+      <unit id="1101080154068235160" at="6,0,11,0" name="com.mbeddr.mpsutil.preferenceform.runtime.PreferenceFormApplicationComponentBase" />
+    </file>
+  </root>
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/1101080154068239192">
+    <file name="PreferenceFormApplicationConfigurableBase.java">
+      <node id="1101080154068239260" at="9,116,10,35" concept="10" />
+      <node id="1101080154068240672" at="14,26,15,110" concept="1" />
+      <node id="479934811442719167" at="15,110,16,89" concept="1" />
+      <node id="479934811442717400" at="16,89,17,0" concept="8" />
+      <node id="479934811442209422" at="17,0,18,0" concept="8" />
+      <node id="1101080154068254384" at="22,28,23,112" concept="1" />
+      <node id="1101080154068239235" at="9,0,12,0" concept="0" trace="PreferenceFormApplicationConfigurableBase#(Lcom/mbeddr/mpsutil/preferenceform/runtime/PreferenceFormApplicationComponentBase;)V" />
+      <node id="1101080154068240152" at="21,0,25,0" concept="5" trace="unregister#()V" />
+      <node id="1101080154068240147" at="13,0,20,0" concept="5" trace="register#()V" />
+      <scope id="1101080154068239239" at="9,116,10,35" />
+      <scope id="1101080154068240156" at="22,28,23,112" />
+      <scope id="1101080154068239235" at="9,0,12,0">
+        <var name="preferenceFormComponent" id="1101080154068239671" />
+      </scope>
+      <scope id="1101080154068240151" at="14,26,18,0" />
+      <scope id="1101080154068240152" at="21,0,25,0" />
+      <scope id="1101080154068240147" at="13,0,20,0" />
+      <unit id="1101080154068239192" at="8,0,26,0" name="com.mbeddr.mpsutil.preferenceform.runtime.PreferenceFormApplicationConfigurableBase" />
+    </file>
+  </root>
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/8201243288565029854">
+    <file name="DynamicComboBoxEntry.java">
+      <node id="8201243288565034048" at="7,0,8,0" concept="2" trace="key" />
+      <node id="8201243288565034112" at="8,0,9,0" concept="2" trace="name" />
+      <node id="8201243288565034217" at="10,56,11,19" concept="1" />
+      <node id="8201243288565035382" at="11,19,12,21" concept="1" />
+      <node id="8201243288565037012" at="15,26,16,15" concept="6" />
+      <node id="8201243288565037018" at="19,27,20,16" concept="6" />
+      <node id="8201243288565039174" at="25,28,26,21" concept="6" />
+      <node id="8201243288565037008" at="15,0,18,0" concept="5" trace="getKey#()Ljava/lang/String;" />
+      <node id="8201243288565037014" at="19,0,22,0" concept="5" trace="getName#()Ljava/lang/String;" />
+      <node id="8201243288565033996" at="10,0,14,0" concept="0" trace="DynamicComboBoxEntry#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="8201243288565038380" at="24,0,28,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="8201243288565037011" at="15,26,16,15" />
+      <scope id="8201243288565037017" at="19,27,20,16" />
+      <scope id="8201243288565038384" at="25,28,26,21" />
+      <scope id="8201243288565034000" at="10,56,12,21" />
+      <scope id="8201243288565037008" at="15,0,18,0" />
+      <scope id="8201243288565037014" at="19,0,22,0" />
+      <scope id="8201243288565033996" at="10,0,14,0">
+        <var name="key" id="8201243288565034168" />
+        <var name="name" id="8201243288565034178" />
+      </scope>
+      <scope id="8201243288565038380" at="24,0,28,0" />
+      <unit id="8201243288565029854" at="6,0,29,0" name="com.mbeddr.mpsutil.preferenceform.runtime.DynamicComboBoxEntry" />
+    </file>
+  </root>
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/~BasePrefsPage">
+    <file name="AbstractPreferenceFormConfigurable.java">
+      <node id="5176801476817398339" at="18,0,19,0" concept="9" trace="OWN_CLIENT_PROPERTY_KEY" />
+      <node id="5176801476817398347" at="19,0,20,0" concept="9" trace="CONTROL_CLIENT_PROPERTY_KEY" />
+      <node id="~BasePrefsPage.myPrefsComponent" at="21,0,22,0" concept="2" trace="preferenceFormComponent" />
+      <node id="1217679680526" at="22,0,23,0" concept="2" trace="icon" />
+      <node id="5176801476817508864" at="24,0,25,0" concept="2" trace="jComponent" />
+      <node id="5176801476817398358" at="25,0,26,0" concept="2" trace="outerJComponent" />
+      <node id="1101080154067622207" at="27,105,28,59" concept="1" />
+      <node id="4321889910256542603" at="28,59,29,55" concept="7" />
+      <node id="2810906020645442117" at="29,55,30,51" concept="1" />
+      <node id="1101080154067635667" at="34,44,35,16" concept="6" />
+      <node id="479934811442739294" at="38,42,39,16" concept="6" />
+      <node id="1101080154067627261" at="42,71,43,40" concept="6" />
+      <node id="5176801476821492016" at="46,75,47,57" concept="6" />
+      <node id="1101080154067637037" at="52,32,53,16" concept="6" />
+      <node id="5176801476817417171" at="57,39,58,58" concept="1" />
+      <node id="5176801476817417188" at="58,58,59,74" concept="1" />
+      <node id="5176801476817417197" at="59,74,60,55" concept="1" />
+      <node id="5176801476817417209" at="60,55,61,11" concept="1" />
+      <node id="5176801476817417211" at="61,11,62,0" concept="8" />
+      <node id="5176801476817417212" at="62,0,63,66" concept="1" />
+      <node id="3031580750198414172" at="63,66,64,0" concept="8" />
+      <node id="3031580750198415590" at="64,0,65,32" concept="6" />
+      <node id="1217679692064" at="68,36,69,27" concept="1" />
+      <node id="5176801476817965253" at="69,27,70,32" concept="1" />
+      <node id="5176801476817431222" at="75,126,76,38" concept="6" />
+      <node id="5176801476817431240" at="78,5,79,0" concept="8" />
+      <node id="6487537012177193039" at="79,0,80,83" concept="11" />
+      <node id="~BasePrefsPage.register():void" at="83,0,84,0" concept="5" trace="register#()V" />
+      <node id="~BasePrefsPage.unregister():void" at="84,0,85,0" concept="5" trace="unregister#()V" />
+      <node id="5176801476817431205" at="86,0,87,0" concept="5" trace="init#()V" />
+      <node id="7456984024670691580" at="89,41,90,27" concept="6" />
+      <node id="~BasePrefsPage.getPrefsComponent():jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent" at="42,0,45,0" concept="5" trace="getPreferenceFormComponent#()Lcom/mbeddr/mpsutil/preferenceform/runtime/AbstractPreferenceFormComponent;" />
+      <node id="5176801476821488902" at="46,0,49,0" concept="5" trace="getStateObject#()Lcom/mbeddr/mpsutil/preferenceform/runtime/AbstractPreferenceFormComponent/AbstractMyState;" />
+      <node id="5176801476817431220" at="74,63,77,7" concept="4" />
+      <node id="~BasePrefsPage.createConfigurable():com.intellij.openapi.options.Configurable" at="33,0,37,0" concept="5" trace="createConfigurable#()Lcom/intellij/openapi/options/Configurable;" />
+      <node id="479934811442735600" at="37,0,41,0" concept="5" trace="canCreateConfigurable#()Z" />
+      <node id="1217679692060" at="68,0,72,0" concept="5" trace="disposeUIResources#()V" />
+      <node id="~BasePrefsPage.&lt;init&gt;(com.intellij.openapi.project.Project,jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent)" at="27,0,32,0" concept="0" trace="AbstractPreferenceFormConfigurable#(Lcom/mbeddr/mpsutil/preferenceform/runtime/AbstractPreferenceFormComponent;)V" />
+      <node id="~BasePrefsPage.getHelpTopic():java.lang.String" at="50,0,55,0" concept="5" trace="getHelpTopic#()Ljava/lang/String;" />
+      <node id="5176801476817431212" at="73,44,78,5" concept="3" />
+      <node id="7456984024670686462" at="87,0,92,0" concept="5" trace="getConfigurableType#()Ljava/lang/Class;" />
+      <node id="5176801476817431210" at="73,0,82,0" concept="5" trace="findControl#(Ljava/lang/String;)Ljavax/swing/JComponent;" />
+      <node id="5176801476817522534" at="56,0,67,0" concept="5" trace="createComponent#()Ljavax/swing/JComponent;" />
+      <scope id="1101080154067630659" at="34,44,35,16" />
+      <scope id="479934811442735604" at="38,42,39,16" />
+      <scope id="1101080154067626937" at="42,71,43,40" />
+      <scope id="5176801476821488905" at="46,75,47,57" />
+      <scope id="1101080154067629194" at="52,32,53,16" />
+      <scope id="5176801476817431221" at="75,126,76,38" />
+      <scope id="~BasePrefsPage.register():void" at="83,0,84,0" />
+      <scope id="~BasePrefsPage.unregister():void" at="84,0,85,0" />
+      <scope id="5176801476817431205" at="86,0,87,0" />
+      <scope id="7456984024670686468" at="89,41,90,27" />
+      <scope id="1217679692063" at="68,36,70,32" />
+      <scope id="1101080154067622017" at="27,105,30,51" />
+      <scope id="~BasePrefsPage.getPrefsComponent():jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent" at="42,0,45,0" />
+      <scope id="5176801476821488902" at="46,0,49,0" />
+      <scope id="5176801476817431219" at="74,63,77,7" />
+      <scope id="~BasePrefsPage.createConfigurable():com.intellij.openapi.options.Configurable" at="33,0,37,0" />
+      <scope id="479934811442735600" at="37,0,41,0" />
+      <scope id="1217679692060" at="68,0,72,0" />
+      <scope id="~BasePrefsPage.&lt;init&gt;(com.intellij.openapi.project.Project,jetbrains.mps.plugins.prefs.BaseProjectPrefsComponent)" at="27,0,32,0">
+        <var name="preferenceFormComponent" id="1101080154067510569" />
+      </scope>
+      <scope id="~BasePrefsPage.getHelpTopic():java.lang.String" at="50,0,55,0" />
+      <scope id="5176801476817431212" at="73,44,78,5">
+        <var name="control" id="5176801476817431213" />
+      </scope>
+      <scope id="7456984024670686462" at="87,0,92,0" />
+      <scope id="5176801476817431211" at="73,44,80,83" />
+      <scope id="5176801476817522543" at="57,39,65,32" />
+      <scope id="5176801476817431210" at="73,0,82,0">
+        <var name="id" id="5176801476817431245" />
+      </scope>
+      <scope id="5176801476817522534" at="56,0,67,0" />
+      <unit id="~BasePrefsPage" at="17,0,93,0" name="com.mbeddr.mpsutil.preferenceform.runtime.AbstractPreferenceFormConfigurable" />
+    </file>
+  </root>
+  <root nodeRef="32addf6f-1f14-40cb-991d-e0fddb7506c1/r:7c73bcc0-050a-46cb-bba5-d10598f1b9f2(com.mbeddr.mpsutil.preferenceform.runtime/com.mbeddr.mpsutil.preferenceform.runtime)/~BaseProjectPrefsComponent">
+    <file name="AbstractPreferenceFormComponent.java">
+      <node id="~BaseProjectPrefsComponent.myPages" at="10,0,11,0" concept="2" trace="pages" />
+      <node id="1101080154067631335" at="15,62,16,22" concept="6" />
+      <node id="479934811442251170" at="19,22,20,0" concept="8" />
+      <node id="6499624099293866397" at="20,0,21,21" concept="1" />
+      <node id="1101080154067643943" at="21,21,22,31" concept="1" />
+      <node id="1101080154067648872" at="22,31,23,70" concept="1" />
+      <node id="479934811442259477" at="26,25,27,0" concept="8" />
+      <node id="1101080154067659951" at="27,0,28,72" concept="1" />
+      <node id="1101080154067668916" at="28,72,29,46" concept="1" />
+      <node id="5176801476819611752" at="33,0,34,0" concept="2" trace="property" />
+      <node id="397337790418246386" at="34,33,35,18" concept="6" />
+      <node id="1101080154068946880" at="39,0,40,0" concept="5" trace="getStateObject#()Lcom/mbeddr/mpsutil/preferenceform/runtime/AbstractPreferenceFormComponent/AbstractMyState;" />
+      <node id="6499624099293855342" at="40,0,41,0" concept="5" trace="loadState#()V" />
+      <node id="6499624099293862709" at="41,0,42,0" concept="5" trace="saveState#()V" />
+      <node id="~BaseProjectPrefsComponent.createPages():java.util.List" at="43,0,44,0" concept="5" trace="createPages#()Ljava/util/List;" />
+      <node id="~BaseProjectPrefsComponent.&lt;init&gt;(com.intellij.openapi.project.Project)" at="12,0,14,0" concept="0" trace="AbstractPreferenceFormComponent#()V" />
+      <node id="~BaseProjectPrefsComponent.getPages():java.util.List" at="15,0,18,0" concept="5" trace="getPages#()Ljava/util/List;" />
+      <node id="397337790418245498" at="34,0,37,0" concept="5" trace="getProperty#()Ljava/lang/Object;" />
+      <node id="~BaseProjectPrefsComponent.dispose():void" at="26,0,31,0" concept="5" trace="dispose#()V" />
+      <node id="~BaseProjectPrefsComponent.init():void" at="19,0,25,0" concept="5" trace="init#()V" />
+      <scope id="1101080154067631309" at="12,47,12,47" />
+      <scope id="1101080154067631326" at="15,62,16,22" />
+      <scope id="397337790418245501" at="34,33,35,18" />
+      <scope id="1101080154068946880" at="39,0,40,0" />
+      <scope id="6499624099293855342" at="40,0,41,0" />
+      <scope id="6499624099293862709" at="41,0,42,0" />
+      <scope id="~BaseProjectPrefsComponent.createPages():java.util.List" at="43,0,44,0" />
+      <scope id="~BaseProjectPrefsComponent.&lt;init&gt;(com.intellij.openapi.project.Project)" at="12,0,14,0" />
+      <scope id="~BaseProjectPrefsComponent.getPages():java.util.List" at="15,0,18,0" />
+      <scope id="1101080154067634214" at="26,25,29,46" />
+      <scope id="397337790418245498" at="34,0,37,0" />
+      <scope id="1101080154067633595" at="19,22,23,70" />
+      <scope id="~BaseProjectPrefsComponent.dispose():void" at="26,0,31,0" />
+      <scope id="~BaseProjectPrefsComponent.init():void" at="19,0,25,0" />
+      <unit id="5176801476821357662" at="32,0,38,0" name="com.mbeddr.mpsutil.preferenceform.runtime.AbstractPreferenceFormComponent$AbstractMyState" />
+      <unit id="~BaseProjectPrefsComponent" at="9,0,45,0" name="com.mbeddr.mpsutil.preferenceform.runtime.AbstractPreferenceFormComponent" />
+    </file>
+  </root>
+</debug-info>
+

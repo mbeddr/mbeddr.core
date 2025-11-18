@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IconContainer.java">
+      <unit at="8,0,14,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.IconContainer" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/3040426542818138996">
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="3040426542818138996" at="11,0,12,0" concept="3" trace="myId" />
+      <node id="3040426542818138996" at="17,27,18,16" concept="8" />
+      <node id="3040426542818138996" at="21,30,22,29" concept="9" />
+      <node id="3040426542818138996" at="25,51,26,13" concept="9" />
+      <node id="3040426542818138996" at="13,0,15,0" concept="1" trace="Ui_ApplicationPlugin#()V" />
+      <node id="3040426542818138996" at="29,0,32,0" concept="6" trace="adjustRegularGroups#()V" />
+      <node id="3040426542818138996" at="16,0,20,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3040426542818138996" at="21,0,29,0" concept="6" trace="createGroups#()V" />
+      <scope id="3040426542818138996" at="13,33,13,33" />
+      <scope id="3040426542818138996" at="17,27,18,16" />
+      <scope id="3040426542818138996" at="29,37,30,136" />
+      <scope id="3040426542818138996" at="13,0,15,0" />
+      <scope id="3040426542818138996" at="29,0,32,0" />
+      <scope id="3040426542818138996" at="16,0,20,0" />
+      <scope id="3040426542818138996" at="21,30,27,53" />
+      <scope id="3040426542818138996" at="21,0,29,0" />
+      <unit id="3040426542818138996" at="10,0,33,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.Ui_ApplicationPlugin" />
+    </file>
+    <file name="Ui_ProjectPlugin.java">
+      <node id="3040426542818138996" at="15,56,16,76" concept="7" />
+      <node id="3040426542818138996" at="19,76,20,17" concept="8" />
+      <node id="3040426542818138996" at="13,0,15,0" concept="1" trace="Ui_ProjectPlugin#()V" />
+      <node id="3040426542818138996" at="15,0,22,0" concept="6" trace="initAllTools1#(Lcom/intellij/openapi/project/Project;)Ljava/util/List;" />
+      <scope id="3040426542818138996" at="13,29,13,29" />
+      <scope id="3040426542818138996" at="13,0,15,0" />
+      <scope id="3040426542818138996" at="15,56,20,17">
+        <var name="tools" id="3040426542818138996" />
+      </scope>
+      <scope id="3040426542818138996" at="15,0,22,0">
+        <var name="project" id="3040426542818138996" />
+      </scope>
+      <unit id="3040426542818138996" at="12,0,23,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.Ui_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/3040426542818139238">
+    <file name="ExportModelViewer_Tool.java">
+      <node id="3040426542818139238" at="13,0,14,0" concept="11" trace="ICON" />
+      <node id="3040426542818139238" at="14,50,15,79" concept="13" />
+      <node id="5898180265947788158" at="17,36,18,50" concept="7" />
+      <node id="5898180265947873300" at="18,50,19,48" concept="2" />
+      <node id="5898180265947892385" at="19,48,20,23" concept="8" />
+      <node id="3040426542818139238" at="14,0,17,0" concept="1" trace="ExportModelViewer_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="3040426542818139238" at="17,0,22,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <scope id="3040426542818139238" at="14,50,15,79" />
+      <scope id="3040426542818139238" at="14,0,17,0">
+        <var name="project" id="3040426542818139238" />
+      </scope>
+      <scope id="3040426542818139240" at="17,36,20,23">
+        <var name="filechooser" id="5898180265947788159" />
+      </scope>
+      <scope id="3040426542818139238" at="17,0,22,0" />
+      <unit id="3040426542818139238" at="12,0,23,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.ExportModelViewer_Tool" />
+    </file>
+    <file name="Ui_ProjectPlugin.java">
+      <node id="3040426542818139238" at="16,76,17,81" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/3040426542818214336">
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="3040426542818214336" at="22,29,23,51" concept="2" />
+    </file>
+    <file name="exportEcoreModelAction_Action.java">
+      <node id="3040426542818214336" at="15,0,16,0" concept="11" trace="ICON" />
+      <node id="3040426542818214336" at="17,42,18,66" concept="13" />
+      <node id="3040426542818214336" at="18,66,19,35" concept="2" />
+      <node id="3040426542818214336" at="19,35,20,40" concept="2" />
+      <node id="3040426542818214336" at="20,40,21,36" concept="2" />
+      <node id="3040426542818214336" at="21,36,22,29" concept="2" />
+      <node id="3040426542818214336" at="25,32,26,16" concept="8" />
+      <node id="3040426542818214336" at="30,53,31,19" concept="8" />
+      <node id="1091774199223708078" at="33,5,34,68" concept="7" />
+      <node id="1091774199223708080" at="35,26,36,21" concept="8" />
+      <node id="8404645832791803599" at="39,5,40,66" concept="7" />
+      <node id="8404645832791803600" at="41,22,42,21" concept="8" />
+      <node id="3040426542818214336" at="44,5,45,16" concept="8" />
+      <node id="5900749719726171092" at="48,96,49,131" concept="2" />
+      <node id="3040426542818214336" at="29,95,32,5" concept="5" />
+      <node id="1091774199223708080" at="34,68,37,7" concept="5" />
+      <node id="8404645832791803600" at="40,66,43,7" concept="5" />
+      <node id="3040426542818214336" at="24,0,28,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="3040426542818214336" at="47,0,51,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="1091774199223708078" at="32,5,38,5" concept="0" />
+      <node id="8404645832791803599" at="38,5,44,5" concept="0" />
+      <node id="3040426542818214336" at="17,0,24,0" concept="1" trace="exportEcoreModelAction_Action#()V" />
+      <node id="3040426542818214336" at="28,0,47,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="3040426542818214336" at="25,32,26,16" />
+      <scope id="3040426542818214336" at="30,53,31,19" />
+      <scope id="1091774199223708080" at="35,26,36,21" />
+      <scope id="8404645832791803600" at="41,22,42,21" />
+      <scope id="3040426542818214336" at="48,96,49,131" />
+      <scope id="3040426542818214336" at="24,0,28,0" />
+      <scope id="1091774199223708078" at="33,5,37,7">
+        <var name="model" id="1091774199223708078" />
+      </scope>
+      <scope id="8404645832791803599" at="39,5,43,7">
+        <var name="p" id="8404645832791803599" />
+      </scope>
+      <scope id="3040426542818214336" at="47,0,51,0">
+        <var name="_params" id="3040426542818214336" />
+        <var name="event" id="3040426542818214336" />
+      </scope>
+      <scope id="3040426542818214336" at="17,42,22,29" />
+      <scope id="3040426542818214336" at="17,0,24,0" />
+      <scope id="3040426542818214336" at="29,95,45,16" />
+      <scope id="3040426542818214336" at="28,0,47,0">
+        <var name="_params" id="3040426542818214336" />
+        <var name="event" id="3040426542818214336" />
+      </scope>
+      <unit id="3040426542818214336" at="14,0,52,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.exportEcoreModelAction_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/4104638715336151514">
+    <file name="EcoreModelExporterUI.java">
+      <node id="1333482661984095123" at="24,57,25,50" concept="7" />
+      <node id="1333482661984095128" at="25,50,26,95" concept="7" />
+      <node id="1333482661984095135" at="26,95,27,42" concept="2" />
+      <node id="1333482661984095140" at="27,42,28,50" concept="7" />
+      <node id="1333482661984095149" at="29,48,30,77" concept="7" />
+      <node id="2447333219255554494" at="30,77,31,42" concept="7" />
+      <node id="2447333219255689343" at="31,42,32,64" concept="7" />
+      <node id="2447333219255799316" at="32,64,33,115" concept="7" />
+      <node id="2447333219255845400" at="33,115,34,0" concept="10" />
+      <node id="5900749719726633750" at="34,0,35,139" concept="7" />
+      <node id="5900749719726740694" at="35,139,36,34" concept="2" />
+      <node id="1333482661984095147" at="28,50,37,5" concept="5" />
+      <node id="1333482661984095118" at="23,0,39,0" concept="12" trace="exportEcoreModel#(Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1333482661984095148" at="29,48,36,34">
+        <var name="ecoreFilename" id="1333482661984095150" />
+        <var name="exporter" id="5900749719726633751" />
+        <var name="file" id="2447333219255554495" />
+        <var name="pathToInstance" id="2447333219255799319" />
+        <var name="pathToStore" id="2447333219255689346" />
+      </scope>
+      <scope id="1333482661984095122" at="24,57,37,5">
+        <var name="fileChooser" id="1333482661984095124" />
+        <var name="fileFilter" id="1333482661984095129" />
+        <var name="result" id="1333482661984095141" />
+      </scope>
+      <scope id="1333482661984095118" at="23,0,39,0">
+        <var name="currModel" id="1333482661984095120" />
+      </scope>
+      <unit id="4104638715336151514" at="17,0,41,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.EcoreModelExporterUI" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222159429">
+    <file name="ImportViewer_Tool.java">
+      <node id="7949622198222159429" at="13,0,14,0" concept="11" trace="ICON" />
+      <node id="7949622198222159429" at="14,45,15,79" concept="13" />
+      <node id="7949622198222159432" at="17,36,18,50" concept="7" />
+      <node id="7949622198222159437" at="18,50,19,42" concept="2" />
+      <node id="7949622198222159442" at="19,42,20,23" concept="8" />
+      <node id="7949622198222159429" at="14,0,17,0" concept="1" trace="ImportViewer_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="7949622198222159429" at="17,0,22,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <scope id="7949622198222159429" at="14,45,15,79" />
+      <scope id="7949622198222159429" at="14,0,17,0">
+        <var name="project" id="7949622198222159429" />
+      </scope>
+      <scope id="7949622198222159431" at="17,36,20,23">
+        <var name="filechooser" id="7949622198222159433" />
+      </scope>
+      <scope id="7949622198222159429" at="17,0,22,0" />
+      <unit id="7949622198222159429" at="12,0,23,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.ImportViewer_Tool" />
+    </file>
+    <file name="Ui_ProjectPlugin.java">
+      <node id="7949622198222159429" at="18,81,19,76" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222159444">
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="7949622198222159444" at="26,13,27,53" concept="2" />
+      <node id="7949622198222159447" at="29,37,30,136" concept="2" />
+    </file>
+    <file name="ecoreActionGroup_ActionGroup.java">
+      <node id="7949622198222159444" at="10,0,11,0" concept="11" trace="ID" />
+      <node id="7949622198222159444" at="12,74,13,52" concept="13" />
+      <node id="7949622198222159444" at="13,52,14,25" concept="2" />
+      <node id="7949622198222159444" at="14,25,15,19" concept="2" />
+      <node id="7949622198222159444" at="15,19,16,29" concept="2" />
+      <node id="7949622198222159446" at="16,29,17,120" concept="2" />
+      <node id="8947109267906625641" at="17,120,18,116" concept="2" />
+      <node id="8947109267906625649" at="18,116,19,116" concept="2" />
+      <node id="7949622198222159444" at="12,0,21,0" concept="1" trace="ecoreActionGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="7949622198222159444" at="12,74,19,116" />
+      <scope id="7949622198222159444" at="12,0,21,0">
+        <var name="plugin" id="7949622198222159444" />
+      </scope>
+      <unit id="7949622198222159444" at="9,0,22,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.ecoreActionGroup_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222159448">
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="7949622198222159448" at="23,51,24,55" concept="2" />
+    </file>
+    <file name="importEcoreMetamodelAction_Action.java">
+      <node id="7949622198222159448" at="16,0,17,0" concept="11" trace="ICON" />
+      <node id="7949622198222159448" at="18,46,19,85" concept="13" />
+      <node id="7949622198222159448" at="19,85,20,35" concept="2" />
+      <node id="7949622198222159448" at="20,35,21,40" concept="2" />
+      <node id="7949622198222159448" at="21,40,22,36" concept="2" />
+      <node id="7949622198222159448" at="22,36,23,29" concept="2" />
+      <node id="7949622198222159448" at="26,32,27,16" concept="8" />
+      <node id="8078979223361237361" at="30,87,31,87" concept="8" />
+      <node id="7949622198222159448" at="34,89,35,85" concept="2" />
+      <node id="7949622198222159448" at="39,53,40,19" concept="8" />
+      <node id="7949622198222159451" at="42,5,43,68" concept="7" />
+      <node id="7949622198222159453" at="44,26,45,21" concept="8" />
+      <node id="8404645832791767869" at="48,5,49,66" concept="7" />
+      <node id="8404645832791767870" at="50,22,51,21" concept="8" />
+      <node id="7949622198222159448" at="53,5,54,16" concept="8" />
+      <node id="1333482661984098247" at="57,96,58,130" concept="2" />
+      <node id="7949622198222159448" at="38,95,41,5" concept="5" />
+      <node id="7949622198222159453" at="43,68,46,7" concept="5" />
+      <node id="8404645832791767870" at="49,66,52,7" concept="5" />
+      <node id="7949622198222159448" at="25,0,29,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="7949622198222159448" at="29,0,33,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="7949622198222159448" at="33,0,37,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="7949622198222159448" at="56,0,60,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="7949622198222159451" at="41,5,47,5" concept="0" />
+      <node id="8404645832791767869" at="47,5,53,5" concept="0" />
+      <node id="7949622198222159448" at="18,0,25,0" concept="1" trace="importEcoreMetamodelAction_Action#()V" />
+      <node id="7949622198222159448" at="37,0,56,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="7949622198222159448" at="26,32,27,16" />
+      <scope id="8078979223361236678" at="30,87,31,87" />
+      <scope id="7949622198222159448" at="34,89,35,85" />
+      <scope id="7949622198222159448" at="39,53,40,19" />
+      <scope id="7949622198222159453" at="44,26,45,21" />
+      <scope id="8404645832791767870" at="50,22,51,21" />
+      <scope id="7949622198222159448" at="57,96,58,130" />
+      <scope id="7949622198222159448" at="25,0,29,0" />
+      <scope id="7949622198222159448" at="29,0,33,0">
+        <var name="_params" id="7949622198222159448" />
+        <var name="event" id="7949622198222159448" />
+      </scope>
+      <scope id="7949622198222159448" at="33,0,37,0">
+        <var name="_params" id="7949622198222159448" />
+        <var name="event" id="7949622198222159448" />
+      </scope>
+      <scope id="7949622198222159451" at="42,5,46,7">
+        <var name="model" id="7949622198222159451" />
+      </scope>
+      <scope id="8404645832791767869" at="48,5,52,7">
+        <var name="p" id="8404645832791767869" />
+      </scope>
+      <scope id="7949622198222159448" at="56,0,60,0">
+        <var name="_params" id="7949622198222159448" />
+        <var name="event" id="7949622198222159448" />
+      </scope>
+      <scope id="7949622198222159448" at="18,46,23,29" />
+      <scope id="7949622198222159448" at="18,0,25,0" />
+      <scope id="7949622198222159448" at="38,95,54,16" />
+      <scope id="7949622198222159448" at="37,0,56,0">
+        <var name="_params" id="7949622198222159448" />
+        <var name="event" id="7949622198222159448" />
+      </scope>
+      <unit id="7949622198222159448" at="15,0,61,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.importEcoreMetamodelAction_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222160305">
+    <file name="EcoreFileImporterUI.java">
+      <node id="7949622198222160308" at="22,56,23,50" concept="7" />
+      <node id="7949622198222160313" at="23,50,24,95" concept="7" />
+      <node id="7949622198222160321" at="24,95,25,42" concept="2" />
+      <node id="7949622198222160326" at="25,42,26,50" concept="7" />
+      <node id="7949622198222160335" at="27,48,28,77" concept="7" />
+      <node id="6921347774807423250" at="28,77,29,87" concept="7" />
+      <node id="6921347774807426481" at="29,87,30,42" concept="2" />
+      <node id="7949622198222160333" at="26,50,31,5" concept="5" />
+      <node id="7949622198222160306" at="21,0,33,0" concept="12" trace="importEcoreFile#(Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="7949622198222160334" at="27,48,30,42">
+        <var name="ecoreFilename" id="7949622198222160336" />
+        <var name="fileImporter" id="6921347774807423251" />
+      </scope>
+      <scope id="7949622198222160307" at="22,56,31,5">
+        <var name="fileChooser" id="7949622198222160309" />
+        <var name="fileFilter" id="7949622198222160314" />
+        <var name="result" id="7949622198222160327" />
+      </scope>
+      <scope id="7949622198222160306" at="21,0,33,0">
+        <var name="currModel" id="7949622198222160347" />
+      </scope>
+      <unit id="7949622198222160305" at="15,0,35,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.EcoreFileImporterUI" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222161023">
+    <file name="ImportModelViewer_Tool.java">
+      <node id="7949622198222161023" at="13,0,14,0" concept="11" trace="ICON" />
+      <node id="7949622198222161023" at="14,50,15,79" concept="13" />
+      <node id="7949622198222161026" at="17,36,18,50" concept="7" />
+      <node id="7949622198222161031" at="18,50,19,48" concept="2" />
+      <node id="7949622198222161036" at="19,48,20,23" concept="8" />
+      <node id="7949622198222161023" at="14,0,17,0" concept="1" trace="ImportModelViewer_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="7949622198222161023" at="17,0,22,0" concept="6" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <scope id="7949622198222161023" at="14,50,15,79" />
+      <scope id="7949622198222161023" at="14,0,17,0">
+        <var name="project" id="7949622198222161023" />
+      </scope>
+      <scope id="7949622198222161025" at="17,36,20,23">
+        <var name="filechooser" id="7949622198222161027" />
+      </scope>
+      <scope id="7949622198222161023" at="17,0,22,0" />
+      <unit id="7949622198222161023" at="12,0,23,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.ImportModelViewer_Tool" />
+    </file>
+    <file name="Ui_ProjectPlugin.java">
+      <node id="7949622198222161023" at="17,81,18,81" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222161038">
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="7949622198222161038" at="24,55,25,51" concept="2" />
+    </file>
+    <file name="importEcoreModelAction_Action.java">
+      <node id="7949622198222161038" at="15,0,16,0" concept="11" trace="ICON" />
+      <node id="7949622198222161038" at="17,42,18,71" concept="13" />
+      <node id="7949622198222161038" at="18,71,19,35" concept="2" />
+      <node id="7949622198222161038" at="19,35,20,40" concept="2" />
+      <node id="7949622198222161038" at="20,40,21,36" concept="2" />
+      <node id="7949622198222161038" at="21,36,22,29" concept="2" />
+      <node id="7949622198222161038" at="25,32,26,16" concept="8" />
+      <node id="7949622198222161038" at="30,53,31,19" concept="8" />
+      <node id="6308040072501299055" at="33,5,34,66" concept="7" />
+      <node id="6308040072501299056" at="35,22,36,21" concept="8" />
+      <node id="3387859777609706248" at="39,5,40,68" concept="7" />
+      <node id="3387859777609706250" at="41,26,42,21" concept="8" />
+      <node id="7949622198222161038" at="44,5,45,16" concept="8" />
+      <node id="1981827513866899918" at="48,96,49,131" concept="2" />
+      <node id="7949622198222161038" at="29,95,32,5" concept="5" />
+      <node id="6308040072501299056" at="34,66,37,7" concept="5" />
+      <node id="3387859777609706250" at="40,68,43,7" concept="5" />
+      <node id="7949622198222161038" at="24,0,28,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="7949622198222161038" at="47,0,51,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="6308040072501299055" at="32,5,38,5" concept="0" />
+      <node id="3387859777609706248" at="38,5,44,5" concept="0" />
+      <node id="7949622198222161038" at="17,0,24,0" concept="1" trace="importEcoreModelAction_Action#()V" />
+      <node id="7949622198222161038" at="28,0,47,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="7949622198222161038" at="25,32,26,16" />
+      <scope id="7949622198222161038" at="30,53,31,19" />
+      <scope id="6308040072501299056" at="35,22,36,21" />
+      <scope id="3387859777609706250" at="41,26,42,21" />
+      <scope id="7949622198222161038" at="48,96,49,131" />
+      <scope id="7949622198222161038" at="24,0,28,0" />
+      <scope id="6308040072501299055" at="33,5,37,7">
+        <var name="p" id="6308040072501299055" />
+      </scope>
+      <scope id="3387859777609706248" at="39,5,43,7">
+        <var name="model" id="3387859777609706248" />
+      </scope>
+      <scope id="7949622198222161038" at="47,0,51,0">
+        <var name="_params" id="7949622198222161038" />
+        <var name="event" id="7949622198222161038" />
+      </scope>
+      <scope id="7949622198222161038" at="17,42,22,29" />
+      <scope id="7949622198222161038" at="17,0,24,0" />
+      <scope id="7949622198222161038" at="29,95,45,16" />
+      <scope id="7949622198222161038" at="28,0,47,0">
+        <var name="_params" id="7949622198222161038" />
+        <var name="event" id="7949622198222161038" />
+      </scope>
+      <unit id="7949622198222161038" at="14,0,52,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.importEcoreModelAction_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:7006d523-6713-4a08-9415-556af9bf043b(com.mbeddr.mpsutil.ecore.ui.plugin)/7949622198222204407">
+    <file name="EcoreImporterUI.java">
+      <node id="6062668769034852916" at="30,97,31,127" concept="7" />
+      <node id="9038295080427967282" at="32,22,33,13" concept="8" />
+      <node id="3387859777609864910" at="34,5,35,79" concept="7" />
+      <node id="3387859777609866867" at="35,79,36,111" concept="2" />
+      <node id="7949622198222204435" at="36,111,37,73" concept="7" />
+      <node id="8506368169788799662" at="38,64,39,63" concept="7" />
+      <node id="1281211333187613768" at="40,62,41,38" concept="9" />
+      <node id="1981827513866872381" at="41,38,42,168" concept="7" />
+      <node id="1981827513866896893" at="42,168,43,59" concept="2" />
+      <node id="8404645832792072651" at="48,83,49,79" concept="7" />
+      <node id="8404645832792072641" at="50,64,51,42" concept="7" />
+      <node id="8404645832792072585" at="51,42,52,70" concept="7" />
+      <node id="8404645832792072595" at="53,69,54,117" concept="7" />
+      <node id="8404645832792072571" at="54,117,55,141" concept="7" />
+      <node id="8404645832792072631" at="55,141,56,36" concept="2" />
+      <node id="8404645832790318054" at="61,82,62,79" concept="7" />
+      <node id="8404645832790318092" at="64,69,65,89" concept="7" />
+      <node id="8404645832790318048" at="65,89,66,44" concept="2" />
+      <node id="3387859777611043241" at="71,100,72,110" concept="7" />
+      <node id="3387859777611084731" at="72,110,73,146" concept="8" />
+      <node id="8062721418365770533" at="76,95,77,90" concept="7" />
+      <node id="381853139971788330" at="79,107,80,56" concept="2" />
+      <node id="8062721418365770586" at="82,7,83,85" concept="8" />
+      <node id="8404645832791823249" at="86,91,87,50" concept="7" />
+      <node id="8404645832791855213" at="87,50,88,83" concept="2" />
+      <node id="8404645832791830665" at="89,74,90,61" concept="8" />
+      <node id="8404645832791839736" at="91,5,92,14" concept="8" />
+      <node id="9038295080427957521" at="31,127,34,5" concept="5" />
+      <node id="381853139971636852" at="78,55,81,7" concept="4" />
+      <node id="8404645832791823256" at="88,83,91,5" concept="5" />
+      <node id="8404645832790318076" at="63,64,67,9" concept="2" />
+      <node id="3387859777611040202" at="71,0,75,0" concept="12" trace="findLanguageByReference#(Lorg/jetbrains/mps/openapi/module/SModuleReference;Ljetbrains/mps/project/MPSProject;)Lorg/jetbrains/mps/openapi/language/SLanguage;" />
+      <node id="8506368169788787154" at="39,63,44,7" concept="5" />
+      <node id="8404645832791681384" at="52,70,57,9" concept="2" />
+      <node id="8062721418365770540" at="77,90,82,7" concept="2" />
+      <node id="8404645832790318050" at="62,79,68,5" concept="5" />
+      <node id="7949622198222204433" at="37,73,45,5" concept="5" />
+      <node id="8404645832791819884" at="86,0,94,0" concept="12" trace="pathOf#(Ljava/lang/String;null)Ljava/lang/String;" />
+      <node id="8404645832792072659" at="49,79,58,5" concept="5" />
+      <node id="8404645832790318004" at="61,0,70,0" concept="12" trace="importEcoreFile#(Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="8062721418365770528" at="76,0,85,0" concept="12" trace="collectLanguageModules#(Ljetbrains/mps/project/MPSProject;)Ljava/util/List;" />
+      <node id="8404645832792072615" at="48,0,60,0" concept="12" trace="exportEcoreModel#(Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="7949622198222204408" at="30,0,47,0" concept="12" trace="importEcoreModel#(Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="9038295080427957523" at="32,22,33,13" />
+      <scope id="381853139971636854" at="79,107,80,56" />
+      <scope id="8404645832791823257" at="89,74,90,61" />
+      <scope id="8404645832790318082" at="64,69,66,44">
+        <var name="fileImporter" id="8404645832790318094" />
+      </scope>
+      <scope id="3387859777611040205" at="71,100,73,146">
+        <var name="languages" id="3387859777611043244" />
+      </scope>
+      <scope id="8506368169788787156" at="40,62,43,59">
+        <var name="importer" id="1981827513866872382" />
+      </scope>
+      <scope id="8404645832791681388" at="53,69,56,36">
+        <var name="exporter" id="8404645832792072573" />
+        <var name="pathToInstance" id="8404645832792072593" />
+      </scope>
+      <scope id="381853139971636852" at="78,55,81,7">
+        <var name="lang" id="381853139971636855" />
+      </scope>
+      <scope id="8062721418365770547" at="78,55,81,7" />
+      <scope id="8404645832790318052" at="63,64,67,9" />
+      <scope id="3387859777611040202" at="71,0,75,0">
+        <var name="project" id="3387859777611045871" />
+        <var name="ref" id="3387859777611041073" />
+      </scope>
+      <scope id="7949622198222204434" at="38,64,44,7">
+        <var name="xmlFileName" id="8506368169788799665" />
+      </scope>
+      <scope id="8404645832791819887" at="86,91,92,14">
+        <var name="fileChooser" id="8404645832791823250" />
+      </scope>
+      <scope id="8404645832792072655" at="50,64,57,9">
+        <var name="file" id="8404645832792072637" />
+        <var name="pathToStore" id="8404645832792072619" />
+      </scope>
+      <scope id="8404645832790318008" at="61,82,68,5">
+        <var name="ecoreFilename" id="8404645832790318056" />
+      </scope>
+      <scope id="8062721418365770532" at="76,95,83,85">
+        <var name="moduleRefs" id="8062721418365770534" />
+      </scope>
+      <scope id="8404645832791819884" at="86,0,94,0">
+        <var name="description" id="8404645832791969327" />
+        <var name="extension" id="8404645832791969330" />
+      </scope>
+      <scope id="8404645832790318004" at="61,0,70,0">
+        <var name="currModel" id="8404645832790318080" />
+        <var name="project" id="8404645832791768474" />
+      </scope>
+      <scope id="8062721418365770528" at="76,0,85,0">
+        <var name="myMpsProject" id="8062721418365770593" />
+      </scope>
+      <scope id="8404645832792072607" at="48,83,58,5">
+        <var name="ecoreFilename" id="8404645832792072649" />
+      </scope>
+      <scope id="8404645832792072615" at="48,0,60,0">
+        <var name="currModel" id="8404645832792072613" />
+        <var name="project" id="8404645832791788604" />
+      </scope>
+      <scope id="7949622198222204409" at="30,97,45,5">
+        <var name="chosenLanguage" id="3387859777609864911" />
+        <var name="ecoreFilename" id="7949622198222204436" />
+        <var name="ref" id="6062668769034852917" />
+      </scope>
+      <scope id="7949622198222204408" at="30,0,47,0">
+        <var name="modelToImportInto" id="7949622198222204447" />
+        <var name="project" id="8078979223361471784" />
+      </scope>
+      <unit id="7949622198222204407" at="28,0,95,0" name="com.mbeddr.mpsutil.ecore.ui.plugin.EcoreImporterUI" />
+    </file>
+  </root>
+</debug-info>
+

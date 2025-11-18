@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:ecf59262-553a-4c03-b837-235e9557ae4a(com.mbeddr.core.tests.performance.build.build)/8334796989975357052">
+    <file name="com.mbeddr.core.performance-test.build.xml">
+      <unit id="8334796989975357052" at="1,0,495,10" name="com.mbeddr.core.tests.performance.build.build.com$mbeddr$core$performance-test$build" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,30,0" name="com.mbeddr.mpsutil.parameterizedMenu.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:e211adb8-cf89-48f9-909c-1184cf4eca44(com.mbeddr.mpsutil.parameterizedMenu.actions)/6447535233485394714">
+    <file name="Easy_replacement_to_parameterizable.java">
+      <node id="9025622912060524041" at="19,7,20,46" concept="4" />
+      <node id="6447535233485490342" at="21,101,22,229" concept="1" />
+      <node id="6447535233485658439" at="22,229,23,162" concept="1" />
+      <node id="381440203927260518" at="23,162,24,17" concept="5" />
+      <node id="381440203926784479" at="27,7,28,55" concept="4" />
+      <node id="381440203926784482" at="29,116,30,192" concept="1" />
+      <node id="381440203927258112" at="30,192,31,17" concept="5" />
+      <node id="381440203927267881" at="34,7,35,42" concept="4" />
+      <node id="381440203927643655" at="36,89,37,52" concept="6" />
+      <node id="381440203927267884" at="38,69,39,137" concept="1" />
+      <node id="9025622912060651662" at="47,7,48,46" concept="4" />
+      <node id="9025622912060663743" at="49,101,50,76" concept="1" />
+      <node id="9025622912060903302" at="50,76,51,165" concept="1" />
+      <node id="381440203926699539" at="54,7,55,55" concept="4" />
+      <node id="381440203926699542" at="56,116,57,155" concept="1" />
+      <node id="381440203926741598" at="57,155,58,173" concept="1" />
+      <node id="381440203927179319" at="61,7,62,42" concept="4" />
+      <node id="381440203927645270" at="63,89,64,52" concept="6" />
+      <node id="381440203927179322" at="65,69,66,100" concept="1" />
+      <node id="6447535233485394714" at="74,0,75,0" concept="7" trace="TransformationMenuPart_SubMenu$Br" />
+      <node id="6447535233485394714" at="75,0,76,0" concept="7" trace="TransformationMenuPart_Parameterized$sQ" />
+      <node id="6447535233485394714" at="76,0,77,0" concept="7" trace="TransformationMenuPart$N$" />
+      <node id="6447535233485394714" at="77,0,78,0" concept="7" trace="TransformationMenuPart_ParameterizableSubMenu$Ly" />
+      <node id="6447535233485394714" at="81,0,82,0" concept="7" trace="items$zIaz" />
+      <node id="6447535233485394714" at="82,0,83,0" concept="7" trace="textFunction$dAEa" />
+      <node id="6447535233485394714" at="83,0,84,0" concept="7" trace="part$CUN7" />
+      <node id="6447535233485394714" at="84,0,85,0" concept="7" trace="parameterType$1Z77" />
+      <node id="381440203927592470" at="37,52,40,11" concept="2" />
+      <node id="381440203927645272" at="64,52,67,11" concept="2" />
+      <node id="381440203926784479" at="28,55,32,9" concept="2" />
+      <node id="9025622912060651662" at="48,46,52,9" concept="2" />
+      <node id="381440203926699539" at="55,55,59,9" concept="2" />
+      <node id="9025622912060524041" at="20,46,25,9" concept="2" />
+      <node id="381440203927267881" at="35,42,41,9" concept="2" />
+      <node id="381440203927179319" at="62,42,68,9" concept="2" />
+      <node id="381440203926784479" at="26,7,33,7" concept="0" />
+      <node id="9025622912060651662" at="46,102,53,7" concept="0" />
+      <node id="381440203926699539" at="53,7,60,7" concept="0" />
+      <node id="9025622912060524041" at="18,102,26,7" concept="0" />
+      <node id="381440203927267881" at="33,7,42,7" concept="0" />
+      <node id="381440203927179319" at="60,7,69,7" concept="0" />
+      <node id="9025622912060651659" at="46,0,71,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="6447535233485394715" at="18,0,44,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="381440203927592472" at="38,69,39,137" />
+      <scope id="381440203927645273" at="65,69,66,100" />
+      <scope id="381440203926784481" at="29,116,31,17" />
+      <scope id="9025622912060651664" at="49,101,51,165" />
+      <scope id="381440203926699541" at="56,116,58,173" />
+      <scope id="9025622912060524045" at="21,101,24,17" />
+      <scope id="381440203927267883" at="36,89,40,11" />
+      <scope id="381440203927179321" at="63,89,67,11" />
+      <scope id="381440203926784479" at="27,7,32,9">
+        <var name="originalParameterized" id="381440203926784479" />
+      </scope>
+      <scope id="9025622912060651662" at="47,7,52,9">
+        <var name="originalMenu" id="9025622912060651662" />
+      </scope>
+      <scope id="381440203926699539" at="54,7,59,9">
+        <var name="originalParameterized" id="381440203926699539" />
+      </scope>
+      <scope id="9025622912060524041" at="19,7,25,9">
+        <var name="originalMenu" id="9025622912060524041" />
+      </scope>
+      <scope id="381440203927267881" at="34,7,41,9">
+        <var name="original" id="381440203927267881" />
+      </scope>
+      <scope id="381440203927179319" at="61,7,68,9">
+        <var name="original" id="381440203927179319" />
+      </scope>
+      <scope id="9025622912060651659" at="46,102,69,7" />
+      <scope id="6447535233485394715" at="18,102,42,7" />
+      <scope id="9025622912060651659" at="46,0,71,0">
+        <var name="enclosingNode" id="9025622912060651659" />
+        <var name="index" id="9025622912060651659" />
+        <var name="model" id="9025622912060651659" />
+        <var name="newNode" id="9025622912060651659" />
+        <var name="sampleNode" id="9025622912060651659" />
+      </scope>
+      <scope id="6447535233485394715" at="18,0,44,0">
+        <var name="enclosingNode" id="6447535233485394715" />
+        <var name="index" id="6447535233485394715" />
+        <var name="model" id="6447535233485394715" />
+        <var name="newNode" id="6447535233485394715" />
+        <var name="sampleNode" id="6447535233485394715" />
+      </scope>
+      <unit id="6447535233485394714" at="73,0,79,0" name="com.mbeddr.mpsutil.parameterizedMenu.actions.Easy_replacement_to_parameterizable$CONCEPTS" />
+      <unit id="6447535233485394714" at="80,0,86,0" name="com.mbeddr.mpsutil.parameterizedMenu.actions.Easy_replacement_to_parameterizable$LINKS" />
+      <unit id="9025622912060651659" at="45,0,72,0" name="com.mbeddr.mpsutil.parameterizedMenu.actions.Easy_replacement_to_parameterizable$NodeFactory_9025622912060651659" />
+      <unit id="6447535233485394715" at="17,0,45,0" name="com.mbeddr.mpsutil.parameterizedMenu.actions.Easy_replacement_to_parameterizable$NodeFactory_6447535233485394715" />
+      <unit id="6447535233485394714" at="16,0,87,0" name="com.mbeddr.mpsutil.parameterizedMenu.actions.Easy_replacement_to_parameterizable" />
+    </file>
+  </root>
+</debug-info>
+
