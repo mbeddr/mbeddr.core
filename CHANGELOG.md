@@ -7,6 +7,16 @@ Semantic Versioning and the changes are simply documented in reverse chronologic
 
 # November 2025
 
+## com.mbeddr.mpsutil.contextactions
+
+- proper fix for updating the content when the tool is opened
+
+  The content is usually updated when the selection in the editor changes. If the tool is closed, the updating is suspended.
+  When the tool is then opened, it shows outdated content until the selection changes again.
+  #2311 introduced the method setRefreshOnlyWhenVisible to fix that, but if the menu is never used the content is updated for no reason.
+  Some action providers are expensive to evaluate and block write action from the editor, resulting in a noticeable lag.
+  The better solution is to register a listener and trigger an update when the tool is opened.
+
 ## com.mbeddr.spreadsheet
 
 ### Fixed
