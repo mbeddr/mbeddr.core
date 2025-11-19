@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.ext.components.gen_nomw.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:dd4bebb3-2192-4196-bc4f-c98fd296dec1(com.mbeddr.ext.components.gen_nomw.constraints)/1553713790141605133">
+    <file name="NoMwComponentsGenStrategy_Constraints.java">
+      <node id="1553713790141605133" at="34,99,35,62" concept="9" />
+      <node id="8009804792183368308" at="35,62,36,40" concept="1" />
+      <node id="1553713790141605134" at="36,40,37,26" concept="1" />
+      <node id="8009804792183368308" at="41,63,42,70" concept="9" />
+      <node id="8009804792183368308" at="45,68,46,83" concept="1" />
+      <node id="8009804792183368376" at="49,29,50,73" concept="1" />
+      <node id="8009804792183368322" at="51,7,52,81" concept="1" />
+      <node id="1553713790141605134" at="56,54,57,63" concept="9" />
+      <node id="1553713790141605134" at="64,61,65,147" concept="6" />
+      <node id="6491070606984441679" at="68,78,69,51" concept="5" />
+      <node id="6491070606984441688" at="70,178,71,284" concept="1" />
+      <node id="6491070606984441702" at="72,11,73,54" concept="6" />
+      <node id="1553713790141605133" at="80,0,81,0" concept="7" trace="NoMwComponentsGenStrategy$VR" />
+      <node id="1553713790141605133" at="81,0,82,0" concept="7" trace="InstanceConfiguration$MO" />
+      <node id="1553713790141605133" at="82,0,83,0" concept="7" trace="ImplementationModule$Gy" />
+      <node id="1553713790141605133" at="86,0,87,0" concept="7" trace="wireStatically$6J$b" />
+      <node id="1553713790141605133" at="90,0,91,0" concept="7" trace="instanceConfig$6K2d" />
+      <node id="8009804792183368308" at="41,0,44,0" concept="0" trace="WireStatically_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8009804792183368314" at="48,83,51,7" concept="3" />
+      <node id="1553713790141605134" at="56,0,59,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6491070606984441685" at="69,51,72,11" concept="2" />
+      <node id="8009804792183368308" at="44,0,48,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="1553713790141605134" at="63,0,67,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1553713790141605133" at="34,0,39,0" concept="0" trace="NoMwComponentsGenStrategy_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8009804792183368308" at="48,0,54,0" concept="8" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
+      <node id="1553713790141605134" at="67,0,75,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="1553713790141605134" at="61,54,75,8" concept="6" />
+      <node id="1553713790141605134" at="59,0,77,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="8009804792183368308" at="41,63,42,70" />
+      <scope id="8009804792183368308" at="45,68,46,83" />
+      <scope id="8009804792183368316" at="49,29,50,73" />
+      <scope id="1553713790141605134" at="56,54,57,63" />
+      <scope id="1553713790141605134" at="64,61,65,147" />
+      <scope id="6491070606984441687" at="70,178,71,284" />
+      <scope id="1553713790141605133" at="34,99,37,26" />
+      <scope id="8009804792183368308" at="41,0,44,0">
+        <var name="container" id="8009804792183368308" />
+      </scope>
+      <scope id="1553713790141605134" at="56,0,59,0">
+        <var name="container" id="1553713790141605134" />
+      </scope>
+      <scope id="6491070606984441685" at="69,51,72,11">
+        <var name="im" id="6491070606984441686" />
+      </scope>
+      <scope id="8009804792183368308" at="44,0,48,0">
+        <var name="node" id="8009804792183368308" />
+        <var name="propertyValue" id="8009804792183368308" />
+      </scope>
+      <scope id="8009804792183368310" at="48,83,52,81" />
+      <scope id="1553713790141605134" at="63,0,67,0" />
+      <scope id="1553713790141605133" at="34,0,39,0">
+        <var name="initContext" id="1553713790141605133" />
+      </scope>
+      <scope id="1553713790141605134" at="68,78,73,54">
+        <var name="res" id="6491070606984441680" />
+      </scope>
+      <scope id="8009804792183368308" at="48,0,54,0">
+        <var name="node" id="8009804792183368308" />
+        <var name="propertyValue" id="8009804792183368308" />
+      </scope>
+      <scope id="1553713790141605134" at="67,0,75,0">
+        <var name="_context" id="1553713790141605134" />
+      </scope>
+      <scope id="1553713790141605134" at="61,54,75,8" />
+      <scope id="1553713790141605134" at="59,0,77,0" />
+      <unit id="1553713790141605133" at="85,0,88,0" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints$PROPS" />
+      <unit id="1553713790141605133" at="89,0,92,0" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints$LINKS" />
+      <unit id="1553713790141605133" at="79,0,84,0" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints$CONCEPTS" />
+      <unit id="1553713790141605134" at="62,17,75,7" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints$RD1$1" />
+      <unit id="8009804792183368308" at="40,0,55,0" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints$WireStatically_PD" />
+      <unit id="1553713790141605134" at="55,0,78,0" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints$RD1" />
+      <unit id="1553713790141605133" at="33,0,93,0" name="com.mbeddr.ext.components.gen_nomw.constraints.NoMwComponentsGenStrategy_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

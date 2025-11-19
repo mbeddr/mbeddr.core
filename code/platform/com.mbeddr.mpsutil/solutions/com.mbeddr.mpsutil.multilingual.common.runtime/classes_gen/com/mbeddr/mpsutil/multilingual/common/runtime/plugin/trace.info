@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/2510545900187751325">
+    <file name="MultilingualLanguageProvider.java">
+      <node id="4802078767697884939" at="23,0,24,0" concept="10" trace="instance" />
+      <node id="2510545900187751330" at="25,0,26,0" concept="3" trace="currentLanguage" />
+      <node id="4802078767697886274" at="31,27,32,52" concept="2" />
+      <node id="4802078767697888474" at="33,5,34,0" concept="9" />
+      <node id="4802078767697888718" at="34,0,35,20" concept="7" />
+      <node id="2510545900187751366" at="38,37,39,27" concept="7" />
+      <node id="1258280388951767754" at="42,44,43,65" concept="6" />
+      <node id="1258280388951763204" at="43,65,44,201" concept="2" />
+      <node id="1258280388951769079" at="44,201,45,24" concept="7" />
+      <node id="2510545900187751372" at="48,57,49,43" concept="2" />
+      <node id="8201243288565932840" at="49,43,50,202" concept="2" />
+      <node id="8201243288565808106" at="53,73,54,83" concept="2" />
+      <node id="8201243288565813158" at="57,99,58,94" concept="2" />
+      <node id="8201243288566026739" at="61,114,62,24" concept="6" />
+      <node id="9087294576173441333" at="62,24,63,262" concept="6" />
+      <node id="9087294576173440908" at="64,30,65,232" concept="2" />
+      <node id="8201243288566028033" at="67,27,68,246" concept="2" />
+      <node id="3114159206254341686" at="70,27,71,156" concept="2" />
+      <node id="8201243288566008027" at="72,5,73,18" concept="7" />
+      <node id="3114159206254851158" at="75,52,76,40" concept="7" />
+      <node id="2510545900187751325" at="80,0,81,0" concept="10" trace="languageCode$o_oz" />
+      <node id="2510545900187751325" at="81,0,82,0" concept="10" trace="countryCode$oEyT" />
+      <node id="2510545900187751325" at="85,0,86,0" concept="10" trace="languages$oFFz" />
+      <node id="2510545900187751337" at="27,0,29,0" concept="1" trace="MultilingualLanguageProvider#()V" />
+      <node id="4802078767697885942" at="30,60,33,5" concept="4" />
+      <node id="2510545900187751362" at="38,0,41,0" concept="5" trace="getCurrentLanguage#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8201243288565793475" at="53,0,56,0" concept="5" trace="setCurrentLanguage#(Lorg/jetbrains/mps/openapi/module/SRepository;Ljava/util/Locale;)V" />
+      <node id="8201243288565796546" at="57,0,60,0" concept="5" trace="setCurrentLanguage#(Lorg/jetbrains/mps/openapi/module/SRepository;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="3114159206254746192" at="63,262,66,5" concept="4" />
+      <node id="9087294576173438409" at="66,5,69,5" concept="4" />
+      <node id="3114159206254339292" at="69,5,72,5" concept="4" />
+      <node id="3114159206254851158" at="75,0,78,0" concept="11" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="2510545900187751368" at="48,0,52,0" concept="5" trace="setCurrentLanguage#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1258280388951761828" at="42,0,47,0" concept="5" trace="getCurrentLanguageLocale#()Ljava/util/Locale;" />
+      <node id="2510545900187751342" at="30,0,37,0" concept="11" trace="getInstance#()Lcom/mbeddr/mpsutil/multilingual/common/runtime/plugin/MultilingualLanguageProvider;" />
+      <node id="8201243288565803118" at="61,0,75,0" concept="5" trace="findLanguageForCodes#(Lorg/jetbrains/mps/openapi/module/SRepository;Ljava/lang/String;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2510545900187751340" at="27,42,27,42" />
+      <scope id="4802078767697885943" at="31,27,32,52" />
+      <scope id="2510545900187751365" at="38,37,39,27" />
+      <scope id="8201243288565793478" at="53,73,54,83" />
+      <scope id="8201243288565796549" at="57,99,58,94" />
+      <scope id="3114159206254746195" at="64,30,65,232" />
+      <scope id="9087294576173438412" at="67,27,68,246" />
+      <scope id="3114159206254339295" at="70,27,71,156" />
+      <scope id="3114159206254851158" at="75,52,76,40" />
+      <scope id="2510545900187751337" at="27,0,29,0" />
+      <scope id="2510545900187751371" at="48,57,50,202" />
+      <scope id="2510545900187751362" at="38,0,41,0" />
+      <scope id="1258280388951761831" at="42,44,45,24">
+        <var name="result" id="1258280388951767755" />
+      </scope>
+      <scope id="8201243288565793475" at="53,0,56,0">
+        <var name="locale" id="8201243288565794347" />
+        <var name="repository" id="4715473140019435699" />
+      </scope>
+      <scope id="8201243288565796546" at="57,0,60,0">
+        <var name="countryCode" id="8201243288565803649" />
+        <var name="languageCode" id="8201243288565803651" />
+        <var name="repository" id="4715473140019414979" />
+      </scope>
+      <scope id="3114159206254851158" at="75,0,78,0">
+        <var name="str" id="3114159206254851158" />
+      </scope>
+      <scope id="2510545900187751368" at="48,0,52,0">
+        <var name="currentLanguage" id="2510545900187751376" />
+      </scope>
+      <scope id="2510545900187751343" at="30,60,35,20" />
+      <scope id="1258280388951761828" at="42,0,47,0" />
+      <scope id="2510545900187751342" at="30,0,37,0" />
+      <scope id="8201243288565803121" at="61,114,73,18">
+        <var name="languages" id="9087294576173441334" />
+        <var name="result" id="8201243288566026740" />
+      </scope>
+      <scope id="8201243288565803118" at="61,0,75,0">
+        <var name="countryCode" id="8201243288565798635" />
+        <var name="languageCode" id="8201243288565797247" />
+        <var name="repository" id="4715473140019406686" />
+      </scope>
+      <unit id="2510545900187751325" at="84,0,87,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualLanguageProvider$LINKS" />
+      <unit id="2510545900187751325" at="79,0,83,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualLanguageProvider$PROPS" />
+      <unit id="2510545900187751325" at="22,0,88,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualLanguageProvider" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/2510545900187751394">
+    <file name="MultilingualApplicationPlugin_AppPluginPart.java">
+      <node id="4715473140019311701" at="13,22,14,136" concept="6" />
+      <node id="4715473140019332875" at="14,136,15,203" concept="2" />
+      <node id="2510545900187751394" at="10,0,12,0" concept="1" trace="MultilingualApplicationPlugin_AppPluginPart#()V" />
+      <node id="2510545900187751394" at="17,0,20,0" concept="5" trace="dispose#()V" />
+      <node id="2510545900187751394" at="12,0,17,0" concept="5" trace="init#()V" />
+      <scope id="2510545900187751394" at="10,56,10,56" />
+      <scope id="2510545900187751407" at="18,25,18,25" />
+      <scope id="2510545900187751394" at="10,0,12,0" />
+      <scope id="2510545900187751400" at="13,22,15,203">
+        <var name="moduleRepository" id="4715473140019311702" />
+      </scope>
+      <scope id="2510545900187751394" at="17,0,20,0" />
+      <scope id="2510545900187751394" at="12,0,17,0" />
+      <unit id="2510545900187751394" at="9,0,21,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualApplicationPlugin_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="2510545900187751394" at="23,66,24,65" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/2510545900187751408">
+    <file name="MultilingualCommonUtil.java">
+      <node id="2510545900187751590" at="30,69,31,126" concept="7" />
+      <node id="2541463587345582135" at="34,46,35,205" concept="6" />
+      <node id="2541463587345582143" at="36,46,37,167" concept="2" />
+      <node id="2541463587345607755" at="37,167,38,0" concept="9" />
+      <node id="2541463587345582156" at="39,64,40,136" concept="2" />
+      <node id="2541463587345608570" at="41,7,42,0" concept="9" />
+      <node id="2541463587345582170" at="43,98,44,66" concept="2" />
+      <node id="2541463587345582188" at="46,12,47,61" concept="2" />
+      <node id="2541463587345582194" at="48,5,49,0" concept="9" />
+      <node id="2541463587345582195" at="49,0,50,15" concept="7" />
+      <node id="2541463587345583836" at="53,75,54,68" concept="6" />
+      <node id="2541463587345583841" at="54,68,55,93" concept="6" />
+      <node id="2541463587345583846" at="55,93,56,0" concept="9" />
+      <node id="2541463587345583847" at="56,0,57,264" concept="6" />
+      <node id="2541463587345583875" at="57,264,58,0" concept="9" />
+      <node id="2541463587345583878" at="59,32,60,25" concept="7" />
+      <node id="2541463587345583885" at="61,12,62,117" concept="2" />
+      <node id="2541463587345583892" at="62,117,63,24" concept="7" />
+      <node id="568377005202726882" at="67,54,68,201" concept="6" />
+      <node id="2541463587345606885" at="68,201,69,0" concept="9" />
+      <node id="568377005202726905" at="70,58,71,44" concept="7" />
+      <node id="568377005202726914" at="72,12,73,20" concept="7" />
+      <node id="2510545900187751603" at="77,61,78,73" concept="7" />
+      <node id="3114159206252893377" at="82,48,83,26" concept="7" />
+      <node id="8201243288566601390" at="85,9,86,43" concept="7" />
+      <node id="8201243288566601399" at="87,42,88,26" concept="7" />
+      <node id="3114159206252894749" at="93,48,94,62" concept="7" />
+      <node id="8201243288566616983" at="96,9,97,70" concept="7" />
+      <node id="8201243288566616992" at="98,42,99,62" concept="7" />
+      <node id="8201243288566924220" at="103,62,104,92" concept="6" />
+      <node id="8201243288567874344" at="105,37,106,154" concept="6" />
+      <node id="8201243288566951615" at="107,29,108,192" concept="6" />
+      <node id="8201243288566627797" at="108,192,109,185" concept="7" />
+      <node id="8201243288567024513" at="111,5,112,0" concept="9" />
+      <node id="8201243288566940331" at="112,0,113,73" concept="7" />
+      <node id="8201243288566963740" at="116,93,117,92" concept="6" />
+      <node id="6737939145717675604" at="118,37,119,154" concept="6" />
+      <node id="8201243288566963747" at="120,29,121,192" concept="6" />
+      <node id="8201243288566782043" at="121,192,122,206" concept="7" />
+      <node id="8201243288567017468" at="124,5,125,0" concept="9" />
+      <node id="8201243288566782064" at="125,0,126,100" concept="7" />
+      <node id="9000125482641692381" at="129,88,130,291" concept="6" />
+      <node id="9000125482641769396" at="130,291,131,0" concept="9" />
+      <node id="9000125482641764855" at="131,0,132,40" concept="8" />
+      <node id="9000125482641772720" at="132,40,133,190" concept="6" />
+      <node id="9000125482641789581" at="133,190,134,0" concept="9" />
+      <node id="9000125482641768335" at="135,45,136,102" concept="8" />
+      <node id="9000125482641687831" at="136,102,137,70" concept="2" />
+      <node id="9000125482641790563" at="138,5,139,0" concept="9" />
+      <node id="9000125482641689443" at="139,0,140,15" concept="7" />
+      <node id="5653647108675312645" at="142,52,143,40" concept="7" />
+      <node id="2510545900187751408" at="147,0,148,0" concept="10" trace="ResourceBundle$PN" />
+      <node id="2510545900187751408" at="151,0,152,0" concept="10" trace="name$MnvL" />
+      <node id="2510545900187751408" at="152,0,153,0" concept="10" trace="default$p9e4" />
+      <node id="2510545900187751408" at="156,0,157,0" concept="10" trace="keys$pac4" />
+      <node id="2541463587345582186" at="46,10,48,5" concept="0" />
+      <node id="568377005202726912" at="72,10,74,5" concept="0" />
+      <node id="2510545900187751588" at="30,0,33,0" concept="11" trace="findResourceBundleNode#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2541463587345582154" at="38,0,41,7" concept="4" />
+      <node id="2541463587345582168" at="42,0,45,7" concept="4" />
+      <node id="2541463587345583883" at="61,10,64,5" concept="0" />
+      <node id="2510545900187751601" at="77,0,80,0" concept="11" trace="startsWithUpperCase#(Ljava/lang/String;)Z" />
+      <node id="3114159206252890395" at="81,108,84,5" concept="4" />
+      <node id="3114159206252894747" at="92,148,95,5" concept="4" />
+      <node id="5653647108675312645" at="142,0,145,0" concept="11" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8201243288567877294" at="106,154,110,7" concept="4" />
+      <node id="8201243288567854189" at="119,154,123,7" concept="4" />
+      <node id="9000125482641683620" at="134,0,138,5" concept="4" />
+      <node id="568377005202726903" at="69,0,74,5" concept="4" />
+      <node id="8201243288566601388" at="84,5,89,5" concept="12" />
+      <node id="8201243288566616981" at="95,5,100,5" concept="12" />
+      <node id="2541463587345583876" at="58,0,64,5" concept="4" />
+      <node id="8201243288567019521" at="104,92,111,5" concept="4" />
+      <node id="8201243288567004035" at="117,92,124,5" concept="4" />
+      <node id="2541463587345602302" at="67,0,76,0" concept="11" trace="deductDefaultText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="8201243288566601386" at="81,0,91,0" concept="11" trace="retrieveTranslation#(Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/String;" />
+      <node id="8201243288566614838" at="92,0,102,0" concept="11" trace="retrieveFormattedTranslation#(Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;null)Ljava/lang/String;" />
+      <node id="8201243288566626474" at="103,0,115,0" concept="11" trace="retrieveTranslation#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8201243288566782039" at="116,0,128,0" concept="11" trace="retrieveFormattedTranslation#(Lorg/jetbrains/mps/openapi/model/SNode;null)Ljava/lang/String;" />
+      <node id="2541463587345582141" at="35,205,48,5" concept="4" />
+      <node id="2541463587345583834" at="53,0,66,0" concept="11" trace="findOrCreateKey#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6737939145717631736" at="129,0,142,0" concept="11" trace="findLocale#(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Locale;" />
+      <node id="2541463587345582133" at="34,0,52,0" concept="11" trace="createKey#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2510545900187751589" at="30,69,31,126" />
+      <scope id="2541463587345582155" at="39,64,40,136" />
+      <scope id="2541463587345582169" at="43,98,44,66" />
+      <scope id="2541463587345582187" at="46,12,47,61" />
+      <scope id="2541463587345583877" at="59,32,60,25" />
+      <scope id="568377005202726904" at="70,58,71,44" />
+      <scope id="568377005202726913" at="72,12,73,20" />
+      <scope id="2510545900187751602" at="77,61,78,73" />
+      <scope id="3114159206252890398" at="82,48,83,26" />
+      <scope id="8201243288566601389" at="85,9,86,43" />
+      <scope id="8201243288566601398" at="87,42,88,26" />
+      <scope id="3114159206252894748" at="93,48,94,62" />
+      <scope id="8201243288566616982" at="96,9,97,70" />
+      <scope id="8201243288566616991" at="98,42,99,62" />
+      <scope id="5653647108675312645" at="142,52,143,40" />
+      <scope id="2541463587345583884" at="61,12,63,24" />
+      <scope id="8201243288566601395" at="87,5,89,5">
+        <var name="e" id="8201243288566601396" />
+      </scope>
+      <scope id="8201243288566616988" at="98,5,100,5">
+        <var name="e" id="8201243288566616989" />
+      </scope>
+      <scope id="8201243288567877297" at="107,29,109,185">
+        <var name="resourceBundle" id="8201243288566951616" />
+      </scope>
+      <scope id="8201243288567854192" at="120,29,122,206">
+        <var name="resourceBundle" id="8201243288566963748" />
+      </scope>
+      <scope id="9000125482641683623" at="135,45,137,70" />
+      <scope id="2510545900187751588" at="30,0,33,0">
+        <var name="referenceModel" id="2510545900187751598" />
+      </scope>
+      <scope id="2510545900187751601" at="77,0,80,0">
+        <var name="text" id="2510545900187751611" />
+      </scope>
+      <scope id="5653647108675312645" at="142,0,145,0">
+        <var name="str" id="5653647108675312645" />
+      </scope>
+      <scope id="8201243288567019524" at="105,37,110,7">
+        <var name="provider" id="8201243288567874345" />
+      </scope>
+      <scope id="8201243288567004038" at="118,37,123,7">
+        <var name="provider" id="6737939145717675605" />
+      </scope>
+      <scope id="2541463587345602305" at="67,54,74,5">
+        <var name="result" id="568377005202726883" />
+      </scope>
+      <scope id="8201243288566601387" at="81,108,89,5" />
+      <scope id="8201243288566614841" at="92,148,100,5" />
+      <scope id="2541463587345582142" at="36,46,45,7" />
+      <scope id="2541463587345602302" at="67,0,76,0">
+        <var name="key" id="2541463587345602837" />
+      </scope>
+      <scope id="8201243288566601386" at="81,0,91,0">
+        <var name="defaultValue" id="8201243288566601405" />
+        <var name="key" id="8201243288566601403" />
+        <var name="resourceBundle" id="8201243288566601407" />
+      </scope>
+      <scope id="8201243288566614838" at="92,0,102,0">
+        <var name="formattedDefaultValue" id="8201243288566615789" />
+        <var name="key" id="8201243288566615767" />
+        <var name="parameters" id="8201243288566616469" />
+        <var name="resourceBundle" id="8201243288566616040" />
+      </scope>
+      <scope id="8201243288566626477" at="103,62,113,73">
+        <var name="resourceBundleNode" id="8201243288566924221" />
+      </scope>
+      <scope id="8201243288566782040" at="116,93,126,100">
+        <var name="resourceBundleNode" id="8201243288566963741" />
+      </scope>
+      <scope id="2541463587345583835" at="53,75,64,5">
+        <var name="createdKey" id="2541463587345583837" />
+        <var name="existingKey" id="2541463587345583848" />
+        <var name="resourceBundleNode" id="2541463587345583842" />
+      </scope>
+      <scope id="6737939145717631739" at="129,88,140,15">
+        <var name="availableLocalesInLanguage" id="9000125482641692382" />
+        <var name="ret" id="9000125482641772721" />
+      </scope>
+      <scope id="8201243288566626474" at="103,0,115,0">
+        <var name="messageKey" id="8201243288566627565" />
+      </scope>
+      <scope id="8201243288566782039" at="116,0,128,0">
+        <var name="messageKey" id="8201243288566782088" />
+        <var name="parameters" id="8201243288566792348" />
+      </scope>
+      <scope id="2541463587345583834" at="53,0,66,0">
+        <var name="referenceModel" id="2541463587345583898" />
+        <var name="text" id="2541463587345583896" />
+      </scope>
+      <scope id="6737939145717631736" at="129,0,142,0">
+        <var name="countryCode" id="6737939145717633514" />
+        <var name="languageCode" id="6737939145717633494" />
+      </scope>
+      <scope id="2541463587345582134" at="34,46,50,15">
+        <var name="key" id="2541463587345582136" />
+      </scope>
+      <scope id="2541463587345582133" at="34,0,52,0">
+        <var name="text" id="2541463587345582199" />
+      </scope>
+      <unit id="2510545900187751408" at="146,0,149,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonUtil$CONCEPTS" />
+      <unit id="2510545900187751408" at="155,0,158,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonUtil$LINKS" />
+      <unit id="2510545900187751408" at="150,0,154,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonUtil$PROPS" />
+      <unit id="2510545900187751408" at="29,0,159,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/2510545900187751638">
+    <file name="MultilingualCommonPluginHelper.java">
+      <node id="2510545900187751638" at="17,0,18,0" concept="10" trace="LOG" />
+      <node id="2510545900187751641" at="18,79,19,47" concept="6" />
+      <node id="4912572611768491596" at="19,47,20,0" concept="9" />
+      <node id="2510545900187751645" at="20,0,21,150" concept="6" />
+      <node id="4912572611768492740" at="21,150,22,0" concept="9" />
+      <node id="2510545900187751677" at="23,23,24,278" concept="2" />
+      <node id="4664575152640326918" at="25,33,26,101" concept="2" />
+      <node id="4912572611768493885" at="28,5,29,0" concept="9" />
+      <node id="2510545900187751688" at="29,0,30,16" concept="7" />
+      <node id="2510545900187751638" at="34,0,35,0" concept="10" trace="languages$oFFz" />
+      <node id="4664575152640326918" at="24,278,27,7" concept="4" />
+      <node id="2510545900187751673" at="22,0,28,5" concept="4" />
+      <node id="2510545900187751639" at="18,0,32,0" concept="11" trace="deductCurrentLanguageFromLocale#(Lorg/jetbrains/mps/openapi/module/SRepository;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="4664575152640326918" at="25,33,26,101" />
+      <scope id="2510545900187751674" at="23,23,27,7" />
+      <scope id="2510545900187751640" at="18,79,30,16">
+        <var name="currentLocale" id="2510545900187751642" />
+        <var name="node" id="2510545900187751646" />
+      </scope>
+      <scope id="2510545900187751639" at="18,0,32,0">
+        <var name="repository" id="4715473140019370547" />
+      </scope>
+      <unit id="2510545900187751638" at="33,0,36,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonPluginHelper$LINKS" />
+      <unit id="2510545900187751638" at="16,0,37,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualCommonPluginHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/3684918088732002777">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="3684918088732002777" at="12,0,13,0" concept="3" trace="myId" />
+      <node id="3684918088732002777" at="18,27,19,16" concept="7" />
+      <node id="3684918088732002777" at="14,0,16,0" concept="1" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="3684918088732002777" at="17,0,21,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3684918088732002777" at="22,0,26,0" concept="5" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3684918088732002777" at="14,38,14,38" />
+      <scope id="3684918088732002777" at="18,27,19,16" />
+      <scope id="3684918088732002777" at="23,66,24,65" />
+      <scope id="3684918088732002777" at="14,0,16,0" />
+      <scope id="3684918088732002777" at="17,0,21,0" />
+      <scope id="3684918088732002777" at="22,0,26,0">
+        <var name="parts" id="3684918088732002777" />
+      </scope>
+      <unit id="3684918088732002777" at="11,0,27,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/6737939145712398614">
+    <file name="MultilingualResourceBundleProvider.java">
+      <node id="6737939145712400743" at="13,0,14,0" concept="3" trace="baseName" />
+      <node id="6737939145712401374" at="15,65,16,29" concept="2" />
+      <node id="6737939145717500860" at="19,34,20,25" concept="7" />
+      <node id="6737939145717497262" at="23,0,24,0" concept="5" trace="getResourceBundle#(Ljava/util/Locale;)Ljava/util/ResourceBundle;" />
+      <node id="422123332587847919" at="25,69,26,63" concept="6" />
+      <node id="422123332588228207" at="26,63,27,88" concept="6" />
+      <node id="422123332588286461" at="27,88,28,36" concept="6" />
+      <node id="422123332588277700" at="29,9,30,33" concept="2" />
+      <node id="422123332587434076" at="30,33,31,79" concept="7" />
+      <node id="3114159206252366530" at="32,42,33,18" concept="7" />
+      <node id="422123332588300365" at="34,15,35,29" concept="2" />
+      <node id="6737939145712399868" at="15,0,18,0" concept="1" trace="MultilingualResourceBundleProvider#(Ljava/lang/String;)V" />
+      <node id="6737939145717500202" at="19,0,22,0" concept="5" trace="getBaseName#()Ljava/lang/String;" />
+      <node id="422123332588295592" at="28,36,36,5" concept="12" />
+      <node id="422123332587388084" at="25,0,38,0" concept="5" trace="getResourceBundleInternal#(Ljava/util/Locale;)Ljava/util/ResourceBundle;" />
+      <scope id="6737939145712399873" at="15,65,16,29" />
+      <scope id="6737939145717500205" at="19,34,20,25" />
+      <scope id="6737939145717497262" at="23,0,24,0">
+        <var name="locale" id="6737939145717497908" />
+      </scope>
+      <scope id="3114159206252345027" at="32,42,33,18" />
+      <scope id="422123332588295595" at="34,15,35,29" />
+      <scope id="422123332588295594" at="29,9,31,79" />
+      <scope id="3114159206252320330" at="32,5,34,5">
+        <var name="e" id="3114159206252345025" />
+      </scope>
+      <scope id="6737939145712399868" at="15,0,18,0">
+        <var name="baseName" id="6737939145712401160" />
+      </scope>
+      <scope id="6737939145717500202" at="19,0,22,0" />
+      <scope id="422123332587388087" at="25,69,36,5">
+        <var name="classLoader" id="422123332587847920" />
+        <var name="log" id="422123332588228208" />
+        <var name="oldLevel" id="422123332588286462" />
+      </scope>
+      <scope id="422123332587388084" at="25,0,38,0">
+        <var name="locale" id="422123332587388802" />
+      </scope>
+      <unit id="6737939145712398614" at="12,0,39,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.MultilingualResourceBundleProvider" />
+    </file>
+  </root>
+  <root nodeRef="r:8b7f5d78-d861-478c-8c7a-0d6933b68722(com.mbeddr.mpsutil.multilingual.common.runtime.plugin)/835620232370212035">
+    <file name="ILanguageProvider.java">
+      <node id="835620232370222008" at="8,0,9,0" concept="5" trace="getLanguages#()Ljava/lang/Iterable;" />
+      <scope id="835620232370222008" at="8,0,9,0" />
+      <unit id="835620232370212035" at="7,0,10,0" name="com.mbeddr.mpsutil.multilingual.common.runtime.plugin.ILanguageProvider" />
+    </file>
+  </root>
+</debug-info>
+

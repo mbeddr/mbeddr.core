@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-39dljb2omcozgqx8kepe4505xp5khe4">
+  <files names="CodeReviewToolOpenerAction_Action.java:CodeReviewTool_Tool.java:CodeReviewUI.java:CodeViewer.java:DefaultHighlightingStrategiesRegister_AppPluginPart.java:GeneratedArtifactsReviewGroup_ActionGroup.java:GeneratedArtifactsReviewGroup_Model_Level_ActionGroup.java:GeneratedArtifactsReview_KeymapChanges.java:GenericSearchPanel.java:Genreview_ApplicationPlugin.java:Genreview_ProjectPlugin.java:HighlightCodeForNodeAction_Action.java:HighlightCodeForNodeHelper.java:IconContainer.java:SetPathToGeneratedArtifactsToReviewAction_Action.java:TextIconNewUI_1.png:TextIcon_1.png:TextLineNumber.java" />
+</product>
+

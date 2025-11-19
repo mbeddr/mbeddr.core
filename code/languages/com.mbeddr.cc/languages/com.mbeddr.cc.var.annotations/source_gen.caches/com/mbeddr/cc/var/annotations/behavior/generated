@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-bxffi8lunghg3rxtlamck8uwi7tsf7o">
+  <files names="BehaviorAspectDescriptor.java:ConditionalAlternative__BehaviorDescriptor.java:ConditionalReplacement__BehaviorDescriptor.java:ConditionalSwitchCase__BehaviorDescriptor.java:ConfigurationMapping__BehaviorDescriptor.java:DerivedFeatureReference__BehaviorDescriptor.java:FeatureAttributeRef__BehaviorDescriptor.java:FeatureConditionEvalHelper.java:FeatureCondition__BehaviorDescriptor.java:FeatureModelConfiguration__BehaviorDescriptor.java:FeatureModelMapping__BehaviorDescriptor.java:IMayNotBeConditionallyReplaced__BehaviorDescriptor.java:NoValueExpression__BehaviorDescriptor.java:PresenceCondition__BehaviorDescriptor.java:VarEditorModeHelper.java:VariabilityConfigItem__BehaviorDescriptor.java" />
+</product>
+

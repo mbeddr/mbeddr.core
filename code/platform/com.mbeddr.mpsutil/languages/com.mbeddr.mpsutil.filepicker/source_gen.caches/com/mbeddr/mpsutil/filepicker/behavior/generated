@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bazolkjowh1hxfyiq8gpbn1vdiltpd4">
+  <files names="AbstractFilePicker__BehaviorDescriptor.java:AbstractFolderPicker__BehaviorDescriptor.java:AbstractPicker__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:FileSystemDirPicker__BehaviorDescriptor.java:FileSystemFilePicker__BehaviorDescriptor.java:IOutputLocationProvider__BehaviorDescriptor.java:IPathVariableProvider__BehaviorDescriptor.java:MacroFilePicker__BehaviorDescriptor.java:MacroFolderPicker__BehaviorDescriptor.java:SolutionRelativeDirPicker__BehaviorDescriptor.java:SolutionRelativeFilePicker__BehaviorDescriptor.java:SolutionUtil.java:SourceModelInfo__BehaviorDescriptor.java" />
+</product>
+

@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="12,0,83,0" name="com.mbeddr.core.statements.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/1494329074535308108">
+    <file name="ElsePart_TextGen.java">
+      <node id="1494329074535308108" at="14,54,15,55" concept="5" />
+      <node id="1494329074535331476" at="15,55,16,23" concept="1" />
+      <node id="1494329074535414379" at="16,23,17,18" concept="1" />
+      <node id="1494329074535421636" at="17,18,18,17" concept="1" />
+      <node id="1494329074535331542" at="18,17,19,86" concept="1" />
+      <node id="1494329074535308108" at="23,0,24,0" concept="9" trace="body$b0fg" />
+      <node id="1494329074535308108" at="13,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1494329074535308108" at="14,54,19,86">
+        <var name="tgs" id="1494329074535308108" />
+      </scope>
+      <scope id="1494329074535308108" at="13,0,21,0">
+        <var name="ctx" id="1494329074535308108" />
+      </scope>
+      <unit id="1494329074535308108" at="22,0,25,0" name="com.mbeddr.core.statements.textGen.ElsePart_TextGen$LINKS" />
+      <unit id="1494329074535308108" at="12,0,26,0" name="com.mbeddr.core.statements.textGen.ElsePart_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1494329074535308108" at="44,42,45,38" concept="6" />
+      <scope id="1494329074535308108" at="44,42,45,38" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/159275153972948899">
+    <file name="Prefix_TextGen.java">
+      <node id="159275153972948899" at="11,54,12,55" concept="5" />
+      <node id="159275153972989708" at="12,55,13,45" concept="7" />
+      <node id="159275153972948899" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="159275153972948899" at="11,54,13,45">
+        <var name="tgs" id="159275153972948899" />
+      </scope>
+      <scope id="159275153972948899" at="10,0,15,0">
+        <var name="ctx" id="159275153972948899" />
+      </scope>
+      <unit id="159275153972948899" at="9,0,16,0" name="com.mbeddr.core.statements.textGen.Prefix_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="159275153972948899" at="64,40,65,36" concept="6" />
+      <scope id="159275153972948899" at="64,40,65,36" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/1679452829930463083">
+    <file name="CommentStatement_TextGen.java">
+      <node id="1679452829930463083" at="19,54,20,55" concept="5" />
+      <node id="1679452829930463083" at="20,55,21,29" concept="1" />
+      <node id="9099561747015120056" at="22,111,23,24" concept="1" />
+      <node id="48086211719750442" at="23,24,24,20" concept="1" />
+      <node id="9099561747015178711" at="24,20,25,210" concept="5" />
+      <node id="48086211719433611" at="26,41,27,21" concept="1" />
+      <node id="48086211719535084" at="27,21,28,26" concept="1" />
+      <node id="9099561747015196212" at="28,26,29,29" concept="1" />
+      <node id="48086211719535168" at="29,29,30,22" concept="1" />
+      <node id="48086211719749153" at="31,7,32,19" concept="1" />
+      <node id="9099561747015200392" at="32,19,33,24" concept="1" />
+      <node id="1679452829930463083" at="35,30,36,181" concept="1" />
+      <node id="1679452829930463083" at="41,0,42,0" concept="9" trace="textblock$x$xF" />
+      <node id="1679452829930463083" at="42,0,43,0" concept="9" trace="text$ls7a" />
+      <node id="1679452829930463083" at="46,0,47,0" concept="9" trace="TraceableConcept$L" />
+      <node id="1679452829930463083" at="34,5,37,5" concept="3" />
+      <node id="9099561747015180759" at="25,210,31,7" concept="2" />
+      <node id="48086211719854621" at="21,29,34,5" concept="3" />
+      <node id="1679452829930463083" at="18,0,39,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1679452829930463083" at="35,30,36,181" />
+      <scope id="9099561747015180765" at="26,41,30,22" />
+      <scope id="9099561747015180759" at="25,210,31,7">
+        <var name="textLine" id="9099561747015180761" />
+      </scope>
+      <scope id="48086211719854624" at="22,111,33,24">
+        <var name="textLines" id="9099561747015178712" />
+      </scope>
+      <scope id="1679452829930463083" at="19,54,37,5">
+        <var name="tgs" id="1679452829930463083" />
+      </scope>
+      <scope id="1679452829930463083" at="18,0,39,0">
+        <var name="ctx" id="1679452829930463083" />
+      </scope>
+      <unit id="1679452829930463083" at="45,0,48,0" name="com.mbeddr.core.statements.textGen.CommentStatement_TextGen$CONCEPTS" />
+      <unit id="1679452829930463083" at="40,0,44,0" name="com.mbeddr.core.statements.textGen.CommentStatement_TextGen$LINKS" />
+      <unit id="1679452829930463083" at="17,0,49,0" name="com.mbeddr.core.statements.textGen.CommentStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1679452829930463083" at="34,50,35,46" concept="6" />
+      <scope id="1679452829930463083" at="34,50,35,46" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/1732804289248111164">
+    <file name="DesignatedInitializer_TextGen.java">
+      <node id="1732804289248111164" at="17,54,18,55" concept="5" />
+      <node id="1732804289248111164" at="18,55,19,29" concept="1" />
+      <node id="1732804289248111171" at="19,29,20,20" concept="1" />
+      <node id="1732804289248111615" at="20,20,21,87" concept="1" />
+      <node id="1732804289248113121" at="21,87,22,23" concept="1" />
+      <node id="1732804289248113143" at="22,23,23,87" concept="1" />
+      <node id="1732804289248111164" at="24,30,25,181" concept="1" />
+      <node id="1732804289248111164" at="30,0,31,0" concept="9" trace="index$57Mw" />
+      <node id="1732804289248111164" at="31,0,32,0" concept="9" trace="value$5dbR" />
+      <node id="1732804289248111164" at="35,0,36,0" concept="9" trace="TraceableConcept$L" />
+      <node id="1732804289248111164" at="23,87,26,5" concept="3" />
+      <node id="1732804289248111164" at="16,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1732804289248111164" at="24,30,25,181" />
+      <scope id="1732804289248111164" at="17,54,26,5">
+        <var name="tgs" id="1732804289248111164" />
+      </scope>
+      <scope id="1732804289248111164" at="16,0,28,0">
+        <var name="ctx" id="1732804289248111164" />
+      </scope>
+      <unit id="1732804289248111164" at="34,0,37,0" name="com.mbeddr.core.statements.textGen.DesignatedInitializer_TextGen$CONCEPTS" />
+      <unit id="1732804289248111164" at="29,0,33,0" name="com.mbeddr.core.statements.textGen.DesignatedInitializer_TextGen$LINKS" />
+      <unit id="1732804289248111164" at="15,0,38,0" name="com.mbeddr.core.statements.textGen.DesignatedInitializer_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1732804289248111164" at="38,55,39,51" concept="6" />
+      <scope id="1732804289248111164" at="38,55,39,51" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/2093108837558498915">
+    <file name="StatementList_TextGen.java">
+      <node id="2093108837558498915" at="23,54,24,55" concept="5" />
+      <node id="2093108837558498915" at="24,55,25,29" concept="1" />
+      <node id="8992518700503827625" at="26,91,27,22" concept="1" />
+      <node id="8992518700503827626" at="27,22,28,20" concept="1" />
+      <node id="8992518700503828837" at="29,5,30,0" concept="8" />
+      <node id="8992518700503931791" at="32,128,33,232" concept="5" />
+      <node id="8992518700503847882" at="34,40,35,23" concept="1" />
+      <node id="8992518700503847884" at="36,9,37,34" concept="1" />
+      <node id="8992518700504473574" at="38,197,39,84" concept="7" />
+      <node id="8992518700503847887" at="39,84,40,24" concept="1" />
+      <node id="8992518700503849710" at="43,6,44,0" concept="8" />
+      <node id="8992518700504478636" at="45,91,46,52" concept="7" />
+      <node id="8992518700503852267" at="46,52,47,46" concept="1" />
+      <node id="8992518700503857365" at="47,46,48,20" concept="1" />
+      <node id="8992518700503852267" at="48,20,49,46" concept="1" />
+      <node id="8992518700503857762" at="50,12,51,20" concept="1" />
+      <node id="8992518700503830181" at="52,5,53,0" concept="8" />
+      <node id="8992518700503888589" at="54,91,55,19" concept="1" />
+      <node id="8992518700503827680" at="55,19,56,22" concept="1" />
+      <node id="8992518700503827681" at="56,22,57,20" concept="1" />
+      <node id="2093108837558498915" at="59,30,60,181" concept="1" />
+      <node id="2093108837558498915" at="65,0,66,0" concept="9" trace="isInvisible$H923" />
+      <node id="2093108837558498915" at="69,0,70,0" concept="9" trace="StatementList$y1" />
+      <node id="2093108837558498915" at="70,0,71,0" concept="9" trace="SwitchStatement$s2" />
+      <node id="2093108837558498915" at="71,0,72,0" concept="9" trace="IStatmentListContainer$Vp" />
+      <node id="2093108837558498915" at="72,0,73,0" concept="9" trace="TraceableConcept$L" />
+      <node id="2093108837558498915" at="76,0,77,0" concept="9" trace="statements$euTV" />
+      <node id="8992518700503857501" at="50,10,52,5" concept="0" />
+      <node id="8992518700503935913" at="33,232,36,9" concept="3" />
+      <node id="2093108837558498915" at="58,5,61,5" concept="3" />
+      <node id="8992518700503822749" at="25,29,29,5" concept="3" />
+      <node id="8992518700503908980" at="37,34,41,9" concept="3" />
+      <node id="8992518700503827677" at="53,0,58,5" concept="3" />
+      <node id="8992518700503852265" at="44,0,52,5" concept="3" />
+      <node id="8992518700503847876" at="31,45,42,7" concept="2" />
+      <node id="8992518700503847872" at="30,0,43,6" concept="5" />
+      <node id="2093108837558498915" at="22,0,63,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8992518700503935915" at="34,40,35,23" />
+      <scope id="8992518700503857502" at="50,12,51,20" />
+      <scope id="2093108837558498915" at="59,30,60,181" />
+      <scope id="8992518700503822751" at="26,91,28,20" />
+      <scope id="8992518700503908982" at="38,197,40,24" />
+      <scope id="8992518700503827678" at="54,91,57,20" />
+      <scope id="8992518700503852267" at="45,91,49,46" />
+      <scope id="8992518700503847881" at="32,128,41,9">
+        <var name="notInvisibleStatementList" id="8992518700503931792" />
+      </scope>
+      <scope id="8992518700503847875" at="31,45,42,7" />
+      <scope id="8992518700503847876" at="31,45,42,7">
+        <var name="statement" id="8992518700503847877" />
+      </scope>
+      <scope id="2093108837558498915" at="23,54,61,5">
+        <var name="func" id="8992518700503847873" />
+        <var name="tgs" id="2093108837558498915" />
+      </scope>
+      <scope id="2093108837558498915" at="22,0,63,0">
+        <var name="ctx" id="2093108837558498915" />
+      </scope>
+      <unit id="2093108837558498915" at="64,0,67,0" name="com.mbeddr.core.statements.textGen.StatementList_TextGen$PROPS" />
+      <unit id="2093108837558498915" at="75,0,78,0" name="com.mbeddr.core.statements.textGen.StatementList_TextGen$LINKS" />
+      <unit id="2093108837558498915" at="68,0,74,0" name="com.mbeddr.core.statements.textGen.StatementList_TextGen$CONCEPTS" />
+      <unit id="2093108837558498915" at="21,0,79,0" name="com.mbeddr.core.statements.textGen.StatementList_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="2093108837558498915" at="68,47,69,43" concept="6" />
+      <scope id="2093108837558498915" at="68,47,69,43" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/2093108837558498955">
+    <file name="LocalVariableDeclaration_TextGen.java">
+      <node id="2093108837558498955" at="25,54,26,55" concept="5" />
+      <node id="2093108837558498955" at="26,55,27,29" concept="1" />
+      <node id="159275153969975737" at="28,135,29,79" concept="1" />
+      <node id="159275153969975741" at="29,79,30,20" concept="1" />
+      <node id="7358408651055199473" at="32,137,33,19" concept="1" />
+      <node id="7358408651054034892" at="34,5,35,0" concept="8" />
+      <node id="4129593283361629737" at="36,83,37,28" concept="1" />
+      <node id="7358408651053162169" at="38,5,39,0" concept="8" />
+      <node id="8101855294820909076" at="40,83,41,28" concept="1" />
+      <node id="7358408651053159129" at="42,5,43,0" concept="8" />
+      <node id="7358408651049033935" at="44,138,45,79" concept="1" />
+      <node id="7358408651049033939" at="45,79,46,22" concept="1" />
+      <node id="7358408651053160159" at="47,5,48,0" concept="8" />
+      <node id="5806551411807021377" at="49,92,50,30" concept="1" />
+      <node id="2479209227960571478" at="51,5,52,0" concept="8" />
+      <node id="2479209227960578704" at="52,0,53,279" concept="1" />
+      <node id="2479209227960591011" at="53,279,54,0" concept="8" />
+      <node id="2093108837558504410" at="55,84,56,24" concept="1" />
+      <node id="2093108837558504414" at="56,24,57,88" concept="1" />
+      <node id="2093108837558504512" at="58,5,59,20" concept="1" />
+      <node id="7358408651053423368" at="59,20,60,0" concept="8" />
+      <node id="7358408651053781811" at="61,142,62,20" concept="1" />
+      <node id="6583601019636560018" at="64,140,65,19" concept="1" />
+      <node id="159275153969977867" at="65,19,66,78" concept="1" />
+      <node id="2093108837558498955" at="68,30,69,181" concept="1" />
+      <node id="2093108837558498955" at="74,0,75,0" concept="9" trace="static$q6vB" />
+      <node id="2093108837558498955" at="75,0,76,0" concept="9" trace="extern$VxpV" />
+      <node id="2093108837558498955" at="76,0,77,0" concept="9" trace="storeInRegister$k44L" />
+      <node id="2093108837558498955" at="77,0,78,0" concept="9" trace="name$MnvL" />
+      <node id="2093108837558498955" at="81,0,82,0" concept="9" trace="type$sXU3" />
+      <node id="2093108837558498955" at="82,0,83,0" concept="9" trace="init$$i$n" />
+      <node id="2093108837558498955" at="86,0,87,0" concept="9" trace="TraceableConcept$L" />
+      <node id="7358408651055199469" at="31,5,34,5" concept="3" />
+      <node id="4129593283361629725" at="35,0,38,5" concept="3" />
+      <node id="8101855294820909073" at="39,0,42,5" concept="3" />
+      <node id="5806551411807021343" at="48,0,51,5" concept="3" />
+      <node id="7358408651053775880" at="60,0,63,5" concept="3" />
+      <node id="2093108837558498955" at="67,5,70,5" concept="3" />
+      <node id="159275153969975730" at="27,29,31,5" concept="2" />
+      <node id="7358408651049033928" at="43,0,47,5" concept="2" />
+      <node id="2093108837558504394" at="54,0,58,5" concept="3" />
+      <node id="159275153969977860" at="63,5,67,5" concept="2" />
+      <node id="2093108837558498955" at="24,0,72,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7358408651055199470" at="32,137,33,19" />
+      <scope id="4129593283361629726" at="36,83,37,28" />
+      <scope id="8101855294820909074" at="40,83,41,28" />
+      <scope id="5806551411807021344" at="49,92,50,30" />
+      <scope id="7358408651053775882" at="61,142,62,20" />
+      <scope id="2093108837558498955" at="68,30,69,181" />
+      <scope id="159275153969975735" at="28,135,30,20" />
+      <scope id="7358408651049033933" at="44,138,46,22" />
+      <scope id="2093108837558504395" at="55,84,57,88" />
+      <scope id="159275153969977865" at="64,140,66,78" />
+      <scope id="159275153969975730" at="27,29,31,5">
+        <var name="p" id="159275153969975731" />
+      </scope>
+      <scope id="7358408651049033928" at="43,0,47,5">
+        <var name="p" id="7358408651049033929" />
+      </scope>
+      <scope id="159275153969977860" at="63,5,67,5">
+        <var name="p" id="159275153969977861" />
+      </scope>
+      <scope id="2093108837558498955" at="25,54,70,5">
+        <var name="tgs" id="2093108837558498955" />
+      </scope>
+      <scope id="2093108837558498955" at="24,0,72,0">
+        <var name="ctx" id="2093108837558498955" />
+      </scope>
+      <unit id="2093108837558498955" at="85,0,88,0" name="com.mbeddr.core.statements.textGen.LocalVariableDeclaration_TextGen$CONCEPTS" />
+      <unit id="2093108837558498955" at="80,0,84,0" name="com.mbeddr.core.statements.textGen.LocalVariableDeclaration_TextGen$LINKS" />
+      <unit id="2093108837558498955" at="73,0,79,0" name="com.mbeddr.core.statements.textGen.LocalVariableDeclaration_TextGen$PROPS" />
+      <unit id="2093108837558498955" at="23,0,89,0" name="com.mbeddr.core.statements.textGen.LocalVariableDeclaration_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="2093108837558498955" at="60,58,61,54" concept="6" />
+      <scope id="2093108837558498955" at="60,58,61,54" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/2093108837558498983">
+    <file name="LocalVarRef_TextGen.java">
+      <node id="2093108837558498983" at="20,54,21,55" concept="5" />
+      <node id="2093108837558498983" at="21,55,22,29" concept="1" />
+      <node id="2093108837558498988" at="22,29,23,275" concept="1" />
+      <node id="2093108837558498983" at="24,30,25,181" concept="1" />
+      <node id="2093108837558498983" at="30,0,31,0" concept="9" trace="var$YUyC" />
+      <node id="2093108837558498983" at="34,0,35,0" concept="9" trace="name$MnvL" />
+      <node id="2093108837558498983" at="38,0,39,0" concept="9" trace="TraceableConcept$L" />
+      <node id="2093108837558498983" at="23,275,26,5" concept="3" />
+      <node id="2093108837558498983" at="19,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2093108837558498983" at="24,30,25,181" />
+      <scope id="2093108837558498983" at="20,54,26,5">
+        <var name="tgs" id="2093108837558498983" />
+      </scope>
+      <scope id="2093108837558498983" at="19,0,28,0">
+        <var name="ctx" id="2093108837558498983" />
+      </scope>
+      <unit id="2093108837558498983" at="29,0,32,0" name="com.mbeddr.core.statements.textGen.LocalVarRef_TextGen$LINKS" />
+      <unit id="2093108837558498983" at="33,0,36,0" name="com.mbeddr.core.statements.textGen.LocalVarRef_TextGen$PROPS" />
+      <unit id="2093108837558498983" at="37,0,40,0" name="com.mbeddr.core.statements.textGen.LocalVarRef_TextGen$CONCEPTS" />
+      <unit id="2093108837558498983" at="18,0,41,0" name="com.mbeddr.core.statements.textGen.LocalVarRef_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="2093108837558498983" at="58,45,59,41" concept="6" />
+      <scope id="2093108837558498983" at="58,45,59,41" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3108382027640002217">
+    <file name="ArbitraryFunctionCall_TextGen.java">
+      <node id="3108382027640002217" at="21,54,22,55" concept="5" />
+      <node id="3108382027640002217" at="22,55,23,29" concept="1" />
+      <node id="3108382027640005943" at="23,29,24,100" concept="1" />
+      <node id="3108382027640009866" at="24,100,25,20" concept="1" />
+      <node id="3108382027640003220" at="26,5,27,108" concept="5" />
+      <node id="3108382027640003220" at="27,108,28,70" concept="5" />
+      <node id="3108382027640003220" at="29,37,30,29" concept="1" />
+      <node id="3108382027640003220" at="31,31,32,26" concept="1" />
+      <node id="3108382027640009883" at="35,5,36,20" concept="1" />
+      <node id="3108382027640002217" at="37,30,38,181" concept="1" />
+      <node id="3108382027640002217" at="43,0,44,0" concept="9" trace="calledFunctionName$Hjm8" />
+      <node id="3108382027640002217" at="47,0,48,0" concept="9" trace="arguments$HbAB" />
+      <node id="3108382027640002217" at="51,0,52,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3108382027640003220" at="30,29,33,9" concept="3" />
+      <node id="3108382027640002217" at="36,20,39,5" concept="3" />
+      <node id="3108382027640003220" at="28,70,34,7" concept="2" />
+      <node id="3108382027640003220" at="25,20,35,5" concept="0" />
+      <node id="3108382027640002217" at="20,0,41,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3108382027640003220" at="31,31,32,26" />
+      <scope id="3108382027640002217" at="37,30,38,181" />
+      <scope id="3108382027640003220" at="29,37,33,9" />
+      <scope id="3108382027640003220" at="28,70,34,7">
+        <var name="item" id="3108382027640003220" />
+      </scope>
+      <scope id="3108382027640003220" at="26,5,34,7">
+        <var name="collection" id="3108382027640003220" />
+        <var name="lastItem" id="3108382027640003220" />
+      </scope>
+      <scope id="3108382027640002217" at="21,54,39,5">
+        <var name="tgs" id="3108382027640002217" />
+      </scope>
+      <scope id="3108382027640002217" at="20,0,41,0">
+        <var name="ctx" id="3108382027640002217" />
+      </scope>
+      <unit id="3108382027640002217" at="42,0,45,0" name="com.mbeddr.core.statements.textGen.ArbitraryFunctionCall_TextGen$PROPS" />
+      <unit id="3108382027640002217" at="46,0,49,0" name="com.mbeddr.core.statements.textGen.ArbitraryFunctionCall_TextGen$LINKS" />
+      <unit id="3108382027640002217" at="50,0,53,0" name="com.mbeddr.core.statements.textGen.ArbitraryFunctionCall_TextGen$CONCEPTS" />
+      <unit id="3108382027640002217" at="19,0,54,0" name="com.mbeddr.core.statements.textGen.ArbitraryFunctionCall_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3108382027640002217" at="24,55,25,51" concept="6" />
+      <scope id="3108382027640002217" at="24,55,25,51" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3134547887598554187">
+    <file name="ElseIfPart_TextGen.java">
+      <node id="3134547887598554187" at="14,54,15,55" concept="5" />
+      <node id="3134547887598554192" at="15,55,16,28" concept="1" />
+      <node id="3431613015799030493" at="16,28,17,91" concept="1" />
+      <node id="3431613015799080876" at="17,91,18,21" concept="1" />
+      <node id="3134547887598554198" at="18,21,19,86" concept="1" />
+      <node id="3134547887598554187" at="23,0,24,0" concept="9" trace="condition$5ORz" />
+      <node id="3134547887598554187" at="24,0,25,0" concept="9" trace="body$5MZr" />
+      <node id="3134547887598554187" at="13,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3134547887598554187" at="14,54,19,86">
+        <var name="tgs" id="3134547887598554187" />
+      </scope>
+      <scope id="3134547887598554187" at="13,0,21,0">
+        <var name="ctx" id="3134547887598554187" />
+      </scope>
+      <unit id="3134547887598554187" at="22,0,26,0" name="com.mbeddr.core.statements.textGen.ElseIfPart_TextGen$LINKS" />
+      <unit id="3134547887598554187" at="12,0,27,0" name="com.mbeddr.core.statements.textGen.ElseIfPart_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3134547887598554187" at="42,44,43,40" concept="6" />
+      <scope id="3134547887598554187" at="42,44,43,40" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3134547887598555714">
+    <file name="SwitchStatement_TextGen.java">
+      <node id="3134547887598555714" at="19,54,20,55" concept="5" />
+      <node id="3134547887598555714" at="20,55,21,29" concept="1" />
+      <node id="3134547887598555719" at="21,29,22,27" concept="1" />
+      <node id="3134547887598555721" at="22,27,23,92" concept="1" />
+      <node id="3134547887598555730" at="23,92,24,20" concept="1" />
+      <node id="3134547887598555734" at="24,20,25,18" concept="1" />
+      <node id="8471538423048349068" at="25,18,26,17" concept="1" />
+      <node id="8471538423048292715" at="26,17,27,20" concept="1" />
+      <node id="8471538423048349070" at="27,20,28,18" concept="1" />
+      <node id="3134547887598555714" at="28,18,29,44" concept="1" />
+      <node id="3134547887598555755" at="30,113,31,19" concept="1" />
+      <node id="3134547887598555759" at="31,19,32,24" concept="1" />
+      <node id="3134547887598555714" at="33,5,34,44" concept="1" />
+      <node id="3134547887598556810" at="34,44,35,17" concept="1" />
+      <node id="3134547887598555741" at="35,17,36,20" concept="1" />
+      <node id="3134547887598555743" at="36,20,37,18" concept="1" />
+      <node id="3134547887598555714" at="38,30,39,181" concept="1" />
+      <node id="3134547887598555714" at="44,0,45,0" concept="9" trace="expression$QVUr" />
+      <node id="3134547887598555714" at="45,0,46,0" concept="9" trace="cases$RiEW" />
+      <node id="3134547887598555714" at="49,0,50,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3134547887598555714" at="37,18,40,5" concept="3" />
+      <node id="3134547887598555745" at="29,44,33,5" concept="2" />
+      <node id="3134547887598555714" at="18,0,42,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3134547887598555714" at="38,30,39,181" />
+      <scope id="3134547887598555748" at="30,113,32,24" />
+      <scope id="3134547887598555745" at="29,44,33,5">
+        <var name="c" id="3134547887598555746" />
+      </scope>
+      <scope id="3134547887598555714" at="19,54,40,5">
+        <var name="tgs" id="3134547887598555714" />
+      </scope>
+      <scope id="3134547887598555714" at="18,0,42,0">
+        <var name="ctx" id="3134547887598555714" />
+      </scope>
+      <unit id="3134547887598555714" at="48,0,51,0" name="com.mbeddr.core.statements.textGen.SwitchStatement_TextGen$CONCEPTS" />
+      <unit id="3134547887598555714" at="43,0,47,0" name="com.mbeddr.core.statements.textGen.SwitchStatement_TextGen$LINKS" />
+      <unit id="3134547887598555714" at="17,0,52,0" name="com.mbeddr.core.statements.textGen.SwitchStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3134547887598555714" at="74,49,75,45" concept="6" />
+      <scope id="3134547887598555714" at="74,49,75,45" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3134547887598555762">
+    <file name="SwitchCase_TextGen.java">
+      <node id="3134547887598555762" at="14,54,15,55" concept="5" />
+      <node id="3134547887598555767" at="15,55,16,24" concept="1" />
+      <node id="3134547887598555769" at="16,24,17,92" concept="1" />
+      <node id="3134547887598555778" at="17,92,18,20" concept="1" />
+      <node id="1450947696219613121" at="18,20,19,18" concept="1" />
+      <node id="1450947696220838635" at="20,86,21,19" concept="1" />
+      <node id="1450947696220840695" at="21,19,22,88" concept="1" />
+      <node id="3134547887598555762" at="27,0,28,0" concept="9" trace="expression$QWSr" />
+      <node id="3134547887598555762" at="28,0,29,0" concept="9" trace="body$R2hM" />
+      <node id="1450947696240598409" at="19,18,23,5" concept="3" />
+      <node id="3134547887598555762" at="13,0,25,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1450947696240598411" at="20,86,22,88" />
+      <scope id="3134547887598555762" at="14,54,23,5">
+        <var name="tgs" id="3134547887598555762" />
+      </scope>
+      <scope id="3134547887598555762" at="13,0,25,0">
+        <var name="ctx" id="3134547887598555762" />
+      </scope>
+      <unit id="3134547887598555762" at="26,0,30,0" name="com.mbeddr.core.statements.textGen.SwitchCase_TextGen$LINKS" />
+      <unit id="3134547887598555762" at="12,0,31,0" name="com.mbeddr.core.statements.textGen.SwitchCase_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3134547887598555762" at="70,44,71,40" concept="6" />
+      <scope id="3134547887598555762" at="70,44,71,40" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3134547887598555820">
+    <file name="SwitchDefault_TextGen.java">
+      <node id="3134547887598555820" at="16,54,17,55" concept="5" />
+      <node id="3134547887598555824" at="17,55,18,29" concept="1" />
+      <node id="3134547887598556404" at="18,29,19,18" concept="1" />
+      <node id="3134547887598555820" at="19,18,20,44" concept="1" />
+      <node id="3134547887598555833" at="21,162,22,19" concept="1" />
+      <node id="3134547887598555835" at="22,19,23,24" concept="1" />
+      <node id="3134547887598556406" at="23,24,24,20" concept="1" />
+      <node id="3134547887598555820" at="25,5,26,44" concept="1" />
+      <node id="3134547887598558160" at="26,44,27,17" concept="1" />
+      <node id="9092224152891271825" at="27,17,28,20" concept="1" />
+      <node id="9092224152891271826" at="28,20,29,18" concept="1" />
+      <node id="3134547887598555820" at="33,0,34,0" concept="9" trace="body$R2FW" />
+      <node id="3134547887598555820" at="34,0,35,0" concept="9" trace="statements$euTV" />
+      <node id="3134547887598555830" at="20,44,25,5" concept="2" />
+      <node id="3134547887598555820" at="15,0,31,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3134547887598555832" at="21,162,24,20" />
+      <scope id="3134547887598555830" at="20,44,25,5">
+        <var name="s" id="3134547887598555831" />
+      </scope>
+      <scope id="3134547887598555820" at="16,54,29,18">
+        <var name="tgs" id="3134547887598555820" />
+      </scope>
+      <scope id="3134547887598555820" at="15,0,31,0">
+        <var name="ctx" id="3134547887598555820" />
+      </scope>
+      <unit id="3134547887598555820" at="32,0,36,0" name="com.mbeddr.core.statements.textGen.SwitchDefault_TextGen$LINKS" />
+      <unit id="3134547887598555820" at="14,0,37,0" name="com.mbeddr.core.statements.textGen.SwitchDefault_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3134547887598555820" at="72,47,73,43" concept="6" />
+      <scope id="3134547887598555820" at="72,47,73,43" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3529929552243726947">
+    <file name="ArbitraryTextType_TextGen.java">
+      <node id="3529929552243726947" at="17,54,18,55" concept="5" />
+      <node id="3529929552243727483" at="19,93,20,27" concept="1" />
+      <node id="2941277002449781646" at="22,85,23,31" concept="1" />
+      <node id="2941277002447374791" at="25,82,26,28" concept="1" />
+      <node id="4089134708935226127" at="27,5,28,0" concept="8" />
+      <node id="3529929552243726947" at="32,0,33,0" concept="9" trace="items$V0fs" />
+      <node id="3529929552243726947" at="36,0,37,0" concept="9" trace="volatile$hJNe" />
+      <node id="3529929552243726947" at="37,0,38,0" concept="9" trace="const$VWr7" />
+      <node id="3529929552243727483" at="18,55,21,5" concept="2" />
+      <node id="2941277002449781643" at="21,5,24,5" concept="3" />
+      <node id="2941277002447374775" at="24,5,27,5" concept="3" />
+      <node id="3529929552243726947" at="16,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3529929552243727483" at="19,93,20,27" />
+      <scope id="2941277002449781644" at="22,85,23,31" />
+      <scope id="2941277002447374776" at="25,82,26,28" />
+      <scope id="3529929552243727483" at="18,55,21,5">
+        <var name="item" id="3529929552243727483" />
+      </scope>
+      <scope id="3529929552243726947" at="17,54,28,0">
+        <var name="tgs" id="3529929552243726947" />
+      </scope>
+      <scope id="3529929552243726947" at="16,0,30,0">
+        <var name="ctx" id="3529929552243726947" />
+      </scope>
+      <unit id="3529929552243726947" at="31,0,34,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextType_TextGen$LINKS" />
+      <unit id="3529929552243726947" at="35,0,39,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextType_TextGen$PROPS" />
+      <unit id="3529929552243726947" at="15,0,40,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextType_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3529929552243726947" at="30,51,31,47" concept="6" />
+      <scope id="3529929552243726947" at="30,51,31,47" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3779779187805957337">
+    <file name="ForVarRef_TextGen.java">
+      <node id="3779779187805957337" at="14,54,15,55" concept="5" />
+      <node id="3779779187805957342" at="15,55,16,85" concept="1" />
+      <node id="3779779187805957355" at="16,85,17,22" concept="1" />
+      <node id="3779779187805957357" at="17,22,18,86" concept="1" />
+      <node id="3779779187805957337" at="22,0,23,0" concept="9" trace="var$UJ5R" />
+      <node id="3779779187805957337" at="23,0,24,0" concept="9" trace="init$PAJi" />
+      <node id="3779779187805957337" at="13,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3779779187805957337" at="14,54,18,86">
+        <var name="tgs" id="3779779187805957337" />
+      </scope>
+      <scope id="3779779187805957337" at="13,0,20,0">
+        <var name="ctx" id="3779779187805957337" />
+      </scope>
+      <unit id="3779779187805957337" at="21,0,25,0" name="com.mbeddr.core.statements.textGen.ForVarRef_TextGen$LINKS" />
+      <unit id="3779779187805957337" at="12,0,26,0" name="com.mbeddr.core.statements.textGen.ForVarRef_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3779779187805957337" at="52,43,53,39" concept="6" />
+      <scope id="3779779187805957337" at="52,43,53,39" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3830958861296583129">
+    <file name="IfStatement_TextGen.java">
+      <node id="3830958861296583129" at="19,54,20,55" concept="5" />
+      <node id="3830958861296583129" at="20,55,21,29" concept="1" />
+      <node id="3830958861296588126" at="21,29,22,23" concept="1" />
+      <node id="3830958861296588128" at="22,23,23,91" concept="1" />
+      <node id="3830958861296620258" at="23,91,24,21" concept="1" />
+      <node id="8471538423047954073" at="24,21,25,18" concept="1" />
+      <node id="8471538423048010266" at="25,18,26,17" concept="1" />
+      <node id="3830958861296620264" at="26,17,27,90" concept="1" />
+      <node id="1559434277899928748" at="28,117,29,19" concept="1" />
+      <node id="3134547887598554184" at="29,19,30,26" concept="1" />
+      <node id="1559434277899932396" at="32,90,33,19" concept="1" />
+      <node id="2741902595542627318" at="33,19,34,92" concept="1" />
+      <node id="3830958861296583129" at="36,30,37,181" concept="1" />
+      <node id="3830958861296583129" at="42,0,43,0" concept="9" trace="condition$f_er" />
+      <node id="3830958861296583129" at="43,0,44,0" concept="9" trace="thenPart$f_ts" />
+      <node id="3830958861296583129" at="44,0,45,0" concept="9" trace="elseIfs$$74z" />
+      <node id="3830958861296583129" at="45,0,46,0" concept="9" trace="elsePart$9DfV" />
+      <node id="3830958861296583129" at="49,0,50,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3830958861296583129" at="35,5,38,5" concept="3" />
+      <node id="3134547887598554172" at="27,90,31,5" concept="2" />
+      <node id="2741902595542572703" at="31,5,35,5" concept="3" />
+      <node id="3830958861296583129" at="18,0,40,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3830958861296583129" at="36,30,37,181" />
+      <scope id="3134547887598554175" at="28,117,30,26" />
+      <scope id="2741902595542572705" at="32,90,34,92" />
+      <scope id="3134547887598554172" at="27,90,31,5">
+        <var name="eip" id="3134547887598554173" />
+      </scope>
+      <scope id="3830958861296583129" at="19,54,38,5">
+        <var name="tgs" id="3830958861296583129" />
+      </scope>
+      <scope id="3830958861296583129" at="18,0,40,0">
+        <var name="ctx" id="3830958861296583129" />
+      </scope>
+      <unit id="3830958861296583129" at="48,0,51,0" name="com.mbeddr.core.statements.textGen.IfStatement_TextGen$CONCEPTS" />
+      <unit id="3830958861296583129" at="41,0,47,0" name="com.mbeddr.core.statements.textGen.IfStatement_TextGen$LINKS" />
+      <unit id="3830958861296583129" at="17,0,52,0" name="com.mbeddr.core.statements.textGen.IfStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3830958861296583129" at="54,45,55,41" concept="6" />
+      <scope id="3830958861296583129" at="54,45,55,41" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3830958861296871092">
+    <file name="ArbitraryTextExpression_TextGen.java">
+      <node id="3830958861296871092" at="18,54,19,55" concept="5" />
+      <node id="3830958861296871092" at="19,55,20,29" concept="1" />
+      <node id="3830958861296879119" at="21,93,22,27" concept="1" />
+      <node id="3830958861296871092" at="24,30,25,181" concept="1" />
+      <node id="3830958861296871092" at="30,0,31,0" concept="9" trace="items$Ag9Q" />
+      <node id="3830958861296871092" at="34,0,35,0" concept="9" trace="TraceableConcept$L" />
+      <node id="3830958861296879119" at="20,29,23,5" concept="2" />
+      <node id="3830958861296871092" at="23,5,26,5" concept="3" />
+      <node id="3830958861296871092" at="17,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3830958861296879119" at="21,93,22,27" />
+      <scope id="3830958861296871092" at="24,30,25,181" />
+      <scope id="3830958861296879119" at="20,29,23,5">
+        <var name="item" id="3830958861296879119" />
+      </scope>
+      <scope id="3830958861296871092" at="18,54,26,5">
+        <var name="tgs" id="3830958861296871092" />
+      </scope>
+      <scope id="3830958861296871092" at="17,0,28,0">
+        <var name="ctx" id="3830958861296871092" />
+      </scope>
+      <unit id="3830958861296871092" at="29,0,32,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextExpression_TextGen$LINKS" />
+      <unit id="3830958861296871092" at="33,0,36,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextExpression_TextGen$CONCEPTS" />
+      <unit id="3830958861296871092" at="16,0,37,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextExpression_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3830958861296871092" at="26,57,27,53" concept="6" />
+      <scope id="3830958861296871092" at="26,57,27,53" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/3830958861296879127">
+    <file name="ArbitraryTextItem_TextGen.java">
+      <node id="3830958861296879127" at="14,54,15,55" concept="5" />
+      <node id="3830958861296879132" at="15,55,16,86" concept="1" />
+      <node id="3830958861296879127" at="20,0,21,0" concept="9" trace="text$2xvV" />
+      <node id="3830958861296879127" at="13,0,18,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3830958861296879127" at="14,54,16,86">
+        <var name="tgs" id="3830958861296879127" />
+      </scope>
+      <scope id="3830958861296879127" at="13,0,18,0">
+        <var name="ctx" id="3830958861296879127" />
+      </scope>
+      <unit id="3830958861296879127" at="19,0,22,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextItem_TextGen$PROPS" />
+      <unit id="3830958861296879127" at="12,0,23,0" name="com.mbeddr.core.statements.textGen.ArbitraryTextItem_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="3830958861296879127" at="28,51,29,47" concept="6" />
+      <scope id="3830958861296879127" at="28,51,29,47" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/5686538669182223076">
+    <file name="AnyNodeItem_TextGen.java">
+      <node id="5686538669182223076" at="14,54,15,55" concept="5" />
+      <node id="5686538669182228073" at="15,55,16,89" concept="1" />
+      <node id="5686538669182223076" at="20,0,21,0" concept="9" trace="theNode$V4Ur" />
+      <node id="5686538669182223076" at="13,0,18,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5686538669182223076" at="14,54,16,89">
+        <var name="tgs" id="5686538669182223076" />
+      </scope>
+      <scope id="5686538669182223076" at="13,0,18,0">
+        <var name="ctx" id="5686538669182223076" />
+      </scope>
+      <unit id="5686538669182223076" at="19,0,22,0" name="com.mbeddr.core.statements.textGen.AnyNodeItem_TextGen$LINKS" />
+      <unit id="5686538669182223076" at="12,0,23,0" name="com.mbeddr.core.statements.textGen.AnyNodeItem_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5686538669182223076" at="22,45,23,41" concept="6" />
+      <scope id="5686538669182223076" at="22,45,23,41" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/5924821888888636734">
+    <file name="ForVarDecl_TextGen.java">
+      <node id="5924821888888636734" at="20,54,21,55" concept="5" />
+      <node id="5924821888888636734" at="21,55,22,29" concept="1" />
+      <node id="5924821888888645983" at="23,83,24,28" concept="1" />
+      <node id="5924821888888645990" at="26,92,27,30" concept="1" />
+      <node id="2479209227961181974" at="29,78,30,178" concept="1" />
+      <node id="5924821888888667990" at="31,12,32,88" concept="1" />
+      <node id="5924821888888646066" at="34,84,35,24" concept="1" />
+      <node id="5924821888888646068" at="35,24,36,88" concept="1" />
+      <node id="5924821888888636734" at="38,30,39,181" concept="1" />
+      <node id="5924821888888636734" at="44,0,45,0" concept="9" trace="static$q6vB" />
+      <node id="5924821888888636734" at="45,0,46,0" concept="9" trace="storeInRegister$k44L" />
+      <node id="5924821888888636734" at="46,0,47,0" concept="9" trace="name$MnvL" />
+      <node id="5924821888888636734" at="50,0,51,0" concept="9" trace="type$sXU3" />
+      <node id="5924821888888636734" at="51,0,52,0" concept="9" trace="iterator$JLmf" />
+      <node id="5924821888888636734" at="52,0,53,0" concept="9" trace="init$$i$n" />
+      <node id="5924821888888636734" at="56,0,57,0" concept="9" trace="TraceableConcept$L" />
+      <node id="5924821888888666900" at="31,10,33,5" concept="0" />
+      <node id="5924821888888645980" at="22,29,25,5" concept="3" />
+      <node id="5924821888888645987" at="25,5,28,5" concept="3" />
+      <node id="5924821888888636734" at="37,5,40,5" concept="3" />
+      <node id="5924821888888646063" at="33,5,37,5" concept="3" />
+      <node id="5924821888888651196" at="28,5,33,5" concept="3" />
+      <node id="5924821888888636734" at="19,0,42,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5924821888888645981" at="23,83,24,28" />
+      <scope id="5924821888888645988" at="26,92,27,30" />
+      <scope id="5924821888888651198" at="29,78,30,178" />
+      <scope id="5924821888888666901" at="31,12,32,88" />
+      <scope id="5924821888888636734" at="38,30,39,181" />
+      <scope id="5924821888888646064" at="34,84,36,88" />
+      <scope id="5924821888888636734" at="20,54,40,5">
+        <var name="tgs" id="5924821888888636734" />
+      </scope>
+      <scope id="5924821888888636734" at="19,0,42,0">
+        <var name="ctx" id="5924821888888636734" />
+      </scope>
+      <unit id="5924821888888636734" at="55,0,58,0" name="com.mbeddr.core.statements.textGen.ForVarDecl_TextGen$CONCEPTS" />
+      <unit id="5924821888888636734" at="43,0,48,0" name="com.mbeddr.core.statements.textGen.ForVarDecl_TextGen$PROPS" />
+      <unit id="5924821888888636734" at="49,0,54,0" name="com.mbeddr.core.statements.textGen.ForVarDecl_TextGen$LINKS" />
+      <unit id="5924821888888636734" at="18,0,59,0" name="com.mbeddr.core.statements.textGen.ForVarDecl_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5924821888888636734" at="50,44,51,40" concept="6" />
+      <scope id="5924821888888636734" at="50,44,51,40" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/5962675648026377565">
+    <file name="InitExpression_TextGen.java">
+      <node id="5962675648026377565" at="19,54,20,55" concept="5" />
+      <node id="5962675648026377565" at="20,55,21,29" concept="1" />
+      <node id="8109683624482914426" at="22,182,23,20" concept="1" />
+      <node id="7699669108365017494" at="23,20,24,19" concept="1" />
+      <node id="8109683624481845829" at="25,5,26,20" concept="1" />
+      <node id="7699669108365014734" at="26,20,27,0" concept="8" />
+      <node id="5962675648026377565" at="27,0,28,44" concept="1" />
+      <node id="8109683624482799096" at="29,182,30,20" concept="1" />
+      <node id="6393824609547375320" at="31,12,32,22" concept="1" />
+      <node id="8109683624484526584" at="33,5,34,0" concept="8" />
+      <node id="1657160474873283992" at="34,0,35,16" concept="5" />
+      <node id="8109683624484098444" at="37,184,38,21" concept="1" />
+      <node id="8109683624484578040" at="39,7,40,0" concept="8" />
+      <node id="4729804273083947924" at="40,0,41,37" concept="1" />
+      <node id="4729804273084240384" at="42,170,43,25" concept="1" />
+      <node id="8109683624483142432" at="44,7,45,0" concept="8" />
+      <node id="8109683624483140105" at="46,184,47,22" concept="1" />
+      <node id="4729804273084222393" at="49,24,50,24" concept="1" />
+      <node id="1657160474873290955" at="50,24,51,18" concept="1" />
+      <node id="1657160474873284517" at="52,16,53,16" concept="1" />
+      <node id="5962675648026377565" at="56,5,57,44" concept="1" />
+      <node id="7699669108365013820" at="57,44,58,0" concept="8" />
+      <node id="6393824609547627455" at="59,182,60,19" concept="1" />
+      <node id="6393824609547881420" at="61,12,62,22" concept="1" />
+      <node id="3059865549680550000" at="63,5,64,20" concept="1" />
+      <node id="5962675648026377565" at="65,30,66,181" concept="1" />
+      <node id="5962675648026377565" at="71,0,72,0" concept="9" trace="elements$QhaV" />
+      <node id="5962675648026377565" at="75,0,76,0" concept="9" trace="IStructuredInitExpression$xm" />
+      <node id="5962675648026377565" at="76,0,77,0" concept="9" trace="TraceableConcept$L" />
+      <node id="6393824609547374747" at="31,10,33,5" concept="0" />
+      <node id="8109683624483151336" at="52,14,54,9" concept="0" />
+      <node id="6393824609547881264" at="61,10,63,5" concept="0" />
+      <node id="8109683624484447679" at="36,129,39,7" concept="3" />
+      <node id="8109683624483061931" at="41,37,44,7" concept="3" />
+      <node id="5962675648026377565" at="64,20,67,5" concept="3" />
+      <node id="8109683624482914423" at="21,29,25,5" concept="3" />
+      <node id="8109683624482174414" at="28,44,33,5" concept="3" />
+      <node id="6393824609547627451" at="58,0,63,5" concept="3" />
+      <node id="1657160474873289245" at="48,14,54,9" concept="3" />
+      <node id="8109683624483154051" at="48,12,55,7" concept="0" />
+      <node id="8109683624483140102" at="45,0,55,7" concept="3" />
+      <node id="4729804273084185126" at="35,16,56,5" concept="2" />
+      <node id="5962675648026377565" at="18,0,69,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8109683624482174416" at="29,182,30,20" />
+      <scope id="6393824609547374748" at="31,12,32,22" />
+      <scope id="8109683624484447680" at="37,184,38,21" />
+      <scope id="8109683624483061933" at="42,170,43,25" />
+      <scope id="8109683624483140103" at="46,184,47,22" />
+      <scope id="8109683624483151337" at="52,16,53,16" />
+      <scope id="6393824609547627452" at="59,182,60,19" />
+      <scope id="6393824609547881265" at="61,12,62,22" />
+      <scope id="5962675648026377565" at="65,30,66,181" />
+      <scope id="8109683624482914424" at="22,182,24,19" />
+      <scope id="1657160474873289247" at="49,24,51,18" />
+      <scope id="8109683624483154052" at="48,14,54,9" />
+      <scope id="4729804273084185132" at="36,129,55,7" />
+      <scope id="4729804273084185126" at="35,16,56,5">
+        <var name="currentElement" id="4729804273084185128" />
+      </scope>
+      <scope id="5962675648026377565" at="19,54,67,5">
+        <var name="col" id="1657160474873283995" />
+        <var name="tgs" id="5962675648026377565" />
+      </scope>
+      <scope id="5962675648026377565" at="18,0,69,0">
+        <var name="ctx" id="5962675648026377565" />
+      </scope>
+      <unit id="5962675648026377565" at="70,0,73,0" name="com.mbeddr.core.statements.textGen.InitExpression_TextGen$LINKS" />
+      <unit id="5962675648026377565" at="74,0,78,0" name="com.mbeddr.core.statements.textGen.InitExpression_TextGen$CONCEPTS" />
+      <unit id="5962675648026377565" at="17,0,79,0" name="com.mbeddr.core.statements.textGen.InitExpression_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5962675648026377565" at="56,48,57,44" concept="6" />
+      <scope id="5962675648026377565" at="56,48,57,44" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/7062990249306952650">
+    <file name="Statement_TextGen.java">
+      <node id="7062990249306952650" at="15,54,16,55" concept="5" />
+      <node id="7062990249306952650" at="16,55,17,29" concept="1" />
+      <node id="7062990249306952650" at="18,30,19,181" concept="1" />
+      <node id="7062990249306952650" at="24,0,25,0" concept="9" trace="TraceableConcept$L" />
+      <node id="7062990249306952650" at="17,29,20,5" concept="3" />
+      <node id="7062990249306952650" at="14,0,22,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7062990249306952650" at="18,30,19,181" />
+      <scope id="7062990249306952650" at="15,54,20,5">
+        <var name="tgs" id="7062990249306952650" />
+      </scope>
+      <scope id="7062990249306952650" at="14,0,22,0">
+        <var name="ctx" id="7062990249306952650" />
+      </scope>
+      <unit id="7062990249306952650" at="23,0,26,0" name="com.mbeddr.core.statements.textGen.Statement_TextGen$CONCEPTS" />
+      <unit id="7062990249306952650" at="13,0,27,0" name="com.mbeddr.core.statements.textGen.Statement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="7062990249306952650" at="66,43,67,39" concept="6" />
+      <scope id="7062990249306952650" at="66,43,67,39" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/8132151755547103902">
+    <file name="ContinueStatement_TextGen.java">
+      <node id="8132151755547103902" at="15,54,16,55" concept="5" />
+      <node id="8132151755547103902" at="16,55,17,29" concept="1" />
+      <node id="8132151755547103907" at="17,29,18,28" concept="1" />
+      <node id="8132151755547103902" at="19,30,20,181" concept="1" />
+      <node id="8132151755547103902" at="25,0,26,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8132151755547103902" at="18,28,21,5" concept="3" />
+      <node id="8132151755547103902" at="14,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8132151755547103902" at="19,30,20,181" />
+      <scope id="8132151755547103902" at="15,54,21,5">
+        <var name="tgs" id="8132151755547103902" />
+      </scope>
+      <scope id="8132151755547103902" at="14,0,23,0">
+        <var name="ctx" id="8132151755547103902" />
+      </scope>
+      <unit id="8132151755547103902" at="24,0,27,0" name="com.mbeddr.core.statements.textGen.ContinueStatement_TextGen$CONCEPTS" />
+      <unit id="8132151755547103902" at="13,0,28,0" name="com.mbeddr.core.statements.textGen.ContinueStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8132151755547103902" at="36,51,37,47" concept="6" />
+      <scope id="8132151755547103902" at="36,51,37,47" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/836404361042821566">
+    <file name="PragmaStatement_TextGen.java">
+      <node id="836404361042821566" at="17,54,18,55" concept="5" />
+      <node id="836404361042821566" at="18,55,19,29" concept="1" />
+      <node id="836404361042826529" at="19,29,20,26" concept="1" />
+      <node id="836404361042826532" at="20,26,21,20" concept="1" />
+      <node id="836404361042826534" at="21,20,22,94" concept="1" />
+      <node id="608856975974651920" at="22,94,23,18" concept="1" />
+      <node id="836404361042821566" at="24,30,25,181" concept="1" />
+      <node id="836404361042821566" at="30,0,31,0" concept="9" trace="pragmaString$5p7W" />
+      <node id="836404361042821566" at="34,0,35,0" concept="9" trace="TraceableConcept$L" />
+      <node id="836404361042821566" at="23,18,26,5" concept="3" />
+      <node id="836404361042821566" at="16,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="836404361042821566" at="24,30,25,181" />
+      <scope id="836404361042821566" at="17,54,26,5">
+        <var name="tgs" id="836404361042821566" />
+      </scope>
+      <scope id="836404361042821566" at="16,0,28,0">
+        <var name="ctx" id="836404361042821566" />
+      </scope>
+      <unit id="836404361042821566" at="29,0,32,0" name="com.mbeddr.core.statements.textGen.PragmaStatement_TextGen$PROPS" />
+      <unit id="836404361042821566" at="33,0,36,0" name="com.mbeddr.core.statements.textGen.PragmaStatement_TextGen$CONCEPTS" />
+      <unit id="836404361042821566" at="15,0,37,0" name="com.mbeddr.core.statements.textGen.PragmaStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="836404361042821566" at="62,49,63,45" concept="6" />
+      <scope id="836404361042821566" at="62,49,63,45" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/8441331188640910106">
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8441331188640910106" at="76,48,77,44" concept="6" />
+      <scope id="8441331188640910106" at="76,48,77,44" />
+    </file>
+    <file name="WhileStatement_TextGen.java">
+      <node id="8441331188640910106" at="17,54,18,55" concept="5" />
+      <node id="8441331188640910106" at="18,55,19,29" concept="1" />
+      <node id="8441331188640910111" at="19,29,20,26" concept="1" />
+      <node id="8441331188640910115" at="20,26,21,91" concept="1" />
+      <node id="8441331188640910113" at="21,91,22,20" concept="1" />
+      <node id="8471538423048180659" at="22,20,23,18" concept="1" />
+      <node id="8441331188640910137" at="23,18,24,17" concept="1" />
+      <node id="8441331188640910128" at="24,17,25,86" concept="1" />
+      <node id="8441331188640910106" at="26,30,27,181" concept="1" />
+      <node id="8441331188640910106" at="32,0,33,0" concept="9" trace="condition$BH_r" />
+      <node id="8441331188640910106" at="33,0,34,0" concept="9" trace="body$BHOs" />
+      <node id="8441331188640910106" at="37,0,38,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8441331188640910106" at="25,86,28,5" concept="3" />
+      <node id="8441331188640910106" at="16,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8441331188640910106" at="26,30,27,181" />
+      <scope id="8441331188640910106" at="17,54,28,5">
+        <var name="tgs" id="8441331188640910106" />
+      </scope>
+      <scope id="8441331188640910106" at="16,0,30,0">
+        <var name="ctx" id="8441331188640910106" />
+      </scope>
+      <unit id="8441331188640910106" at="36,0,39,0" name="com.mbeddr.core.statements.textGen.WhileStatement_TextGen$CONCEPTS" />
+      <unit id="8441331188640910106" at="31,0,35,0" name="com.mbeddr.core.statements.textGen.WhileStatement_TextGen$LINKS" />
+      <unit id="8441331188640910106" at="15,0,40,0" name="com.mbeddr.core.statements.textGen.WhileStatement_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/8441331188640910138">
+    <file name="BreakStatement_TextGen.java">
+      <node id="8441331188640910138" at="15,54,16,55" concept="5" />
+      <node id="8441331188640910138" at="16,55,17,29" concept="1" />
+      <node id="8441331188640910143" at="17,29,18,25" concept="1" />
+      <node id="8441331188640910138" at="19,30,20,181" concept="1" />
+      <node id="8441331188640910138" at="25,0,26,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8441331188640910138" at="18,25,21,5" concept="3" />
+      <node id="8441331188640910138" at="14,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8441331188640910138" at="19,30,20,181" />
+      <scope id="8441331188640910138" at="15,54,21,5">
+        <var name="tgs" id="8441331188640910138" />
+      </scope>
+      <scope id="8441331188640910138" at="14,0,23,0">
+        <var name="ctx" id="8441331188640910138" />
+      </scope>
+      <unit id="8441331188640910138" at="24,0,27,0" name="com.mbeddr.core.statements.textGen.BreakStatement_TextGen$CONCEPTS" />
+      <unit id="8441331188640910138" at="13,0,28,0" name="com.mbeddr.core.statements.textGen.BreakStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8441331188640910138" at="32,48,33,44" concept="6" />
+      <scope id="8441331188640910138" at="32,48,33,44" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/8441331188640910144">
+    <file name="DoWhileStatement_TextGen.java">
+      <node id="8441331188640910144" at="17,54,18,55" concept="5" />
+      <node id="8441331188640910144" at="18,55,19,29" concept="1" />
+      <node id="8441331188640910149" at="19,29,20,22" concept="1" />
+      <node id="8441331188640910156" at="20,22,21,86" concept="1" />
+      <node id="7518865537211356782" at="21,86,22,17" concept="1" />
+      <node id="8441331188640910167" at="22,17,23,26" concept="1" />
+      <node id="8441331188640910171" at="23,26,24,91" concept="1" />
+      <node id="8441331188640910169" at="24,91,25,21" concept="1" />
+      <node id="8441331188640910150" at="25,21,26,0" concept="8" />
+      <node id="8441331188640910144" at="27,30,28,181" concept="1" />
+      <node id="8441331188640910144" at="33,0,34,0" concept="9" trace="body$E8_L" />
+      <node id="8441331188640910144" at="34,0,35,0" concept="9" trace="condition$E3rr" />
+      <node id="8441331188640910144" at="38,0,39,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8441331188640910144" at="26,0,29,5" concept="3" />
+      <node id="8441331188640910144" at="16,0,31,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8441331188640910144" at="27,30,28,181" />
+      <scope id="8441331188640910144" at="17,54,29,5">
+        <var name="tgs" id="8441331188640910144" />
+      </scope>
+      <scope id="8441331188640910144" at="16,0,31,0">
+        <var name="ctx" id="8441331188640910144" />
+      </scope>
+      <unit id="8441331188640910144" at="37,0,40,0" name="com.mbeddr.core.statements.textGen.DoWhileStatement_TextGen$CONCEPTS" />
+      <unit id="8441331188640910144" at="32,0,36,0" name="com.mbeddr.core.statements.textGen.DoWhileStatement_TextGen$LINKS" />
+      <unit id="8441331188640910144" at="15,0,41,0" name="com.mbeddr.core.statements.textGen.DoWhileStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8441331188640910144" at="40,50,41,46" concept="6" />
+      <scope id="8441331188640910144" at="40,50,41,46" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/8967919205527137087">
+    <file name="ForStatement_TextGen.java">
+      <node id="8967919205527137087" at="20,54,21,55" concept="5" />
+      <node id="8967919205527137087" at="21,55,22,29" concept="1" />
+      <node id="8967919205527137092" at="22,29,23,25" concept="1" />
+      <node id="1331301540590410485" at="24,88,25,92" concept="1" />
+      <node id="1331301540590410489" at="25,92,26,22" concept="1" />
+      <node id="5924821888886958128" at="27,131,28,25" concept="1" />
+      <node id="5924821888886927357" at="30,7,31,120" concept="5" />
+      <node id="5924821888886927357" at="31,120,32,72" concept="5" />
+      <node id="5924821888886927357" at="33,39,34,31" concept="1" />
+      <node id="5924821888886927357" at="35,33,36,29" concept="1" />
+      <node id="1331301540590425184" at="40,5,41,21" concept="1" />
+      <node id="5924821888886918767" at="41,21,42,0" concept="8" />
+      <node id="1331301540590469000" at="43,89,44,93" concept="1" />
+      <node id="1331301540590468969" at="44,93,45,0" concept="8" />
+      <node id="1331301540590410457" at="46,5,47,21" concept="1" />
+      <node id="5924821888886967157" at="49,7,50,105" concept="5" />
+      <node id="5924821888886967157" at="50,105,51,72" concept="5" />
+      <node id="5924821888886967157" at="52,39,53,31" concept="1" />
+      <node id="5924821888886967157" at="54,33,55,29" concept="1" />
+      <node id="1331301540590410480" at="59,5,60,21" concept="1" />
+      <node id="1331301540590410481" at="60,21,61,18" concept="1" />
+      <node id="8967919205527142565" at="61,18,62,17" concept="1" />
+      <node id="8967919205527137130" at="62,17,63,86" concept="1" />
+      <node id="8967919205527137087" at="64,30,65,181" concept="1" />
+      <node id="8967919205527137087" at="70,0,71,0" concept="9" trace="iterator$JLmf" />
+      <node id="8967919205527137087" at="71,0,72,0" concept="9" trace="additionalIterators$YBJx" />
+      <node id="8967919205527137087" at="72,0,73,0" concept="9" trace="condition$JM3i" />
+      <node id="8967919205527137087" at="73,0,74,0" concept="9" trace="incr$JRFE" />
+      <node id="8967919205527137087" at="74,0,75,0" concept="9" trace="body$JDnH" />
+      <node id="8967919205527137087" at="78,0,79,0" concept="9" trace="TraceableConcept$L" />
+      <node id="5924821888886938136" at="26,22,29,7" concept="3" />
+      <node id="5924821888886927357" at="34,31,37,11" concept="3" />
+      <node id="5924821888886967157" at="53,31,56,11" concept="3" />
+      <node id="8967919205527137087" at="63,86,66,5" concept="3" />
+      <node id="1331301540590468967" at="42,0,46,5" concept="3" />
+      <node id="5924821888886927357" at="32,72,38,9" concept="2" />
+      <node id="5924821888886967157" at="51,72,57,9" concept="2" />
+      <node id="5924821888886927357" at="29,7,39,7" concept="0" />
+      <node id="5924821888886967157" at="48,86,58,7" concept="0" />
+      <node id="1331301540590439822" at="47,21,59,5" concept="3" />
+      <node id="1331301540590425124" at="23,25,40,5" concept="3" />
+      <node id="8967919205527137087" at="19,0,68,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5924821888886938138" at="27,131,28,25" />
+      <scope id="5924821888886927357" at="35,33,36,29" />
+      <scope id="5924821888886967157" at="54,33,55,29" />
+      <scope id="8967919205527137087" at="64,30,65,181" />
+      <scope id="1331301540590468968" at="43,89,45,0" />
+      <scope id="5924821888886927357" at="33,39,37,11" />
+      <scope id="5924821888886967157" at="52,39,56,11" />
+      <scope id="5924821888886927357" at="32,72,38,9">
+        <var name="item" id="5924821888886927357" />
+      </scope>
+      <scope id="5924821888886967157" at="51,72,57,9">
+        <var name="item" id="5924821888886967157" />
+      </scope>
+      <scope id="5924821888886927357" at="30,7,38,9">
+        <var name="collection" id="5924821888886927357" />
+        <var name="lastItem" id="5924821888886927357" />
+      </scope>
+      <scope id="5924821888886967157" at="49,7,57,9">
+        <var name="collection" id="5924821888886967157" />
+        <var name="lastItem" id="5924821888886967157" />
+      </scope>
+      <scope id="1331301540590439823" at="48,86,58,7" />
+      <scope id="1331301540590425125" at="24,88,39,7" />
+      <scope id="8967919205527137087" at="20,54,66,5">
+        <var name="tgs" id="8967919205527137087" />
+      </scope>
+      <scope id="8967919205527137087" at="19,0,68,0">
+        <var name="ctx" id="8967919205527137087" />
+      </scope>
+      <unit id="8967919205527137087" at="77,0,80,0" name="com.mbeddr.core.statements.textGen.ForStatement_TextGen$CONCEPTS" />
+      <unit id="8967919205527137087" at="69,0,76,0" name="com.mbeddr.core.statements.textGen.ForStatement_TextGen$LINKS" />
+      <unit id="8967919205527137087" at="18,0,81,0" name="com.mbeddr.core.statements.textGen.ForStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8967919205527137087" at="48,46,49,42" concept="6" />
+      <scope id="8967919205527137087" at="48,46,49,42" />
+    </file>
+  </root>
+  <root nodeRef="r:7a3b06b4-e496-46c1-a58f-c1aedae1c5fc(com.mbeddr.core.statements.textGen)/8967919205527137393">
+    <file name="ExpressionStatement_TextGen.java">
+      <node id="8967919205527137393" at="17,54,18,55" concept="5" />
+      <node id="8967919205527137393" at="18,55,19,29" concept="1" />
+      <node id="8967919205527142390" at="19,29,20,86" concept="1" />
+      <node id="8967919205527142399" at="20,86,21,20" concept="1" />
+      <node id="8967919205527137393" at="22,30,23,181" concept="1" />
+      <node id="8967919205527137393" at="28,0,29,0" concept="9" trace="expr$vamr" />
+      <node id="8967919205527137393" at="32,0,33,0" concept="9" trace="TraceableConcept$L" />
+      <node id="8967919205527137393" at="21,20,24,5" concept="3" />
+      <node id="8967919205527137393" at="16,0,26,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8967919205527137393" at="22,30,23,181" />
+      <scope id="8967919205527137393" at="17,54,24,5">
+        <var name="tgs" id="8967919205527137393" />
+      </scope>
+      <scope id="8967919205527137393" at="16,0,26,0">
+        <var name="ctx" id="8967919205527137393" />
+      </scope>
+      <unit id="8967919205527137393" at="27,0,30,0" name="com.mbeddr.core.statements.textGen.ExpressionStatement_TextGen$LINKS" />
+      <unit id="8967919205527137393" at="31,0,34,0" name="com.mbeddr.core.statements.textGen.ExpressionStatement_TextGen$CONCEPTS" />
+      <unit id="8967919205527137393" at="15,0,35,0" name="com.mbeddr.core.statements.textGen.ExpressionStatement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8967919205527137393" at="46,53,47,49" concept="6" />
+      <scope id="8967919205527137393" at="46,53,47,49" />
+    </file>
+  </root>
+</debug-info>
+

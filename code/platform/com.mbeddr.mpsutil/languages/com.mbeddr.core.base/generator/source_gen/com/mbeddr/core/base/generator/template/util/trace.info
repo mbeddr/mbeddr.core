@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:b7e352ad-6f6c-4341-a5ff-0884bd10e135(com.mbeddr.core.base.generator.template.util)/163458734822117432">
+    <file name="Util.java">
+      <node id="163458734822147916" at="13,286,14,85" concept="2" />
+      <node id="163458734822170156" at="15,213,16,94" concept="0" />
+      <node id="163458734822176041" at="18,110,19,148" concept="0" />
+      <node id="163458734822371918" at="22,286,23,347" concept="2" />
+      <node id="163458734822376849" at="24,50,25,155" concept="0" />
+      <node id="163458734822166961" at="14,85,17,7" concept="1" />
+      <node id="163458734822261233" at="17,7,20,7" concept="1" />
+      <node id="163458734822389832" at="23,347,26,7" concept="1" />
+      <node id="163458734822326172" at="21,5,27,5" concept="1" />
+      <node id="163458734822117592" at="12,53,21,5" concept="1" />
+      <node id="163458734822117495" at="12,0,29,0" concept="3" trace="handleImports#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="163458734822166964" at="15,213,16,94" />
+      <scope id="163458734822261239" at="18,110,19,148" />
+      <scope id="163458734822389835" at="24,50,25,155" />
+      <scope id="163458734822166961" at="14,85,17,7">
+        <var name="reexp" id="163458734822166962" />
+      </scope>
+      <scope id="163458734822261233" at="17,7,20,7">
+        <var name="cd" id="163458734822261235" />
+      </scope>
+      <scope id="163458734822389832" at="23,347,26,7">
+        <var name="s" id="163458734822389833" />
+      </scope>
+      <scope id="163458734822326175" at="22,286,26,7">
+        <var name="seq" id="163458734822371919" />
+      </scope>
+      <scope id="163458734822326172" at="21,5,27,5">
+        <var name="dep" id="163458734822326173" />
+      </scope>
+      <scope id="163458734822117595" at="13,286,20,7">
+        <var name="c" id="163458734822147917" />
+      </scope>
+      <scope id="163458734822117592" at="12,53,21,5">
+        <var name="dep" id="163458734822117593" />
+      </scope>
+      <scope id="163458734822117466" at="12,53,27,5" />
+      <scope id="163458734822117495" at="12,0,29,0">
+        <var name="implChunk" id="163458734822117512" />
+      </scope>
+      <unit id="163458734822117432" at="10,0,31,0" name="com.mbeddr.core.base.generator.template.util.Util" />
+    </file>
+  </root>
+</debug-info>
+

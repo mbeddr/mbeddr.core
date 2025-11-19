@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,24,0" name="com.mbeddr.core.checks.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:0bfce9a3-10ca-444a-937a-739ad39cd78b(com.mbeddr.core.checks.typesystem)/1525530766001140410">
+    <file name="TypesystemDescriptor.java">
+      <node id="1525530766001140410" at="14,5,15,116" concept="6" />
+      <node id="1525530766001140410" at="15,116,16,55" concept="2" />
+      <node id="1525530766001140410" at="13,5,17,5" concept="0" />
+      <scope id="1525530766001140410" at="14,5,16,55">
+        <var name="nonTypesystemRule" id="1525530766001140410" />
+      </scope>
+    </file>
+    <file name="check_BitwiseDirectAssignmentExpression_NonTypesystemRule.java">
+      <node id="8998767845489230082" at="27,7,28,66" concept="6" />
+      <node id="8998767845489230082" at="28,66,29,283" concept="6" />
+      <node id="8998767845489229929" at="30,7,31,0" concept="9" />
+      <node id="1525530766001140410" at="34,50,35,57" concept="7" />
+      <node id="1525530766001140410" at="37,68,38,102" concept="7" />
+      <node id="1525530766001140410" at="40,30,41,17" concept="7" />
+      <node id="1525530766001140410" at="45,0,46,0" concept="10" trace="right$Slc$" />
+      <node id="1525530766001140410" at="46,0,47,0" concept="10" trace="left$SkXz" />
+      <node id="1525530766001140410" at="50,0,51,0" concept="10" trace="ISigned$EC" />
+      <node id="1525530766001140410" at="51,0,52,0" concept="10" trace="BitwiseDirectAssignmentExpression$Er" />
+      <node id="1525530766001140410" at="23,0,25,0" concept="1" trace="check_BitwiseDirectAssignmentExpression_NonTypesystemRule#()V" />
+      <node id="1525530766001140410" at="34,0,37,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1525530766001140410" at="37,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1525530766001140410" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="8998767845489230082" at="26,306,30,7" concept="0" />
+      <node id="1525530766001146486" at="25,116,32,5" concept="4" />
+      <node id="1525530766001140410" at="25,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1525530766001140410" at="23,70,23,70" />
+      <scope id="1525530766001140410" at="34,50,35,57" />
+      <scope id="1525530766001140410" at="37,68,38,102" />
+      <scope id="1525530766001140410" at="40,30,41,17" />
+      <scope id="1525530766001140410" at="23,0,25,0" />
+      <scope id="8998767845489230082" at="27,7,29,283">
+        <var name="_reporter_2309309498" id="8998767845489230082" />
+        <var name="errorTarget" id="8998767845489230082" />
+      </scope>
+      <scope id="1525530766001140410" at="34,0,37,0" />
+      <scope id="1525530766001140410" at="37,0,40,0">
+        <var name="argument" id="1525530766001140410" />
+      </scope>
+      <scope id="1525530766001140410" at="40,0,43,0" />
+      <scope id="1525530766001146487" at="26,306,31,0" />
+      <scope id="1525530766001140411" at="25,116,32,5" />
+      <scope id="1525530766001140410" at="25,0,34,0">
+        <var name="dae" id="1525530766001140410" />
+        <var name="status" id="1525530766001140410" />
+        <var name="typeCheckingContext" id="1525530766001140410" />
+      </scope>
+      <unit id="1525530766001140410" at="44,0,48,0" name="com.mbeddr.core.checks.typesystem.check_BitwiseDirectAssignmentExpression_NonTypesystemRule$LINKS" />
+      <unit id="1525530766001140410" at="49,0,53,0" name="com.mbeddr.core.checks.typesystem.check_BitwiseDirectAssignmentExpression_NonTypesystemRule$CONCEPTS" />
+      <unit id="1525530766001140410" at="22,0,54,0" name="com.mbeddr.core.checks.typesystem.check_BitwiseDirectAssignmentExpression_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:0bfce9a3-10ca-444a-937a-739ad39cd78b(com.mbeddr.core.checks.typesystem)/1525530766001206141">
+    <file name="TypesystemDescriptor.java">
+      <node id="1525530766001206141" at="10,5,11,117" concept="6" />
+      <node id="1525530766001206141" at="11,117,12,55" concept="2" />
+      <node id="1525530766001206141" at="9,33,13,5" concept="0" />
+      <scope id="1525530766001206141" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="1525530766001206141" />
+      </scope>
+    </file>
+    <file name="check_BitwiseBinaryArithmaticsExpression_NonTypesystemRule.java">
+      <node id="8998767845489224806" at="27,7,28,66" concept="6" />
+      <node id="8998767845489224806" at="28,66,29,283" concept="6" />
+      <node id="1525530766001206141" at="33,50,34,58" concept="7" />
+      <node id="1525530766001206141" at="36,68,37,102" concept="7" />
+      <node id="1525530766001206141" at="39,30,40,17" concept="7" />
+      <node id="1525530766001206141" at="44,0,45,0" concept="10" trace="right$Slc$" />
+      <node id="1525530766001206141" at="45,0,46,0" concept="10" trace="left$SkXz" />
+      <node id="1525530766001206141" at="49,0,50,0" concept="10" trace="ISigned$EC" />
+      <node id="1525530766001206141" at="50,0,51,0" concept="10" trace="BitwiseBinaryArithmaticsExpression$ws" />
+      <node id="1525530766001206141" at="23,0,25,0" concept="1" trace="check_BitwiseBinaryArithmaticsExpression_NonTypesystemRule#()V" />
+      <node id="1525530766001206141" at="33,0,36,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1525530766001206141" at="36,0,39,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1525530766001206141" at="39,0,42,0" concept="5" trace="overrides#()Z" />
+      <node id="8998767845489224806" at="26,306,30,7" concept="0" />
+      <node id="1525530766001206229" at="25,116,31,5" concept="4" />
+      <node id="1525530766001206141" at="25,0,33,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1525530766001206141" at="23,71,23,71" />
+      <scope id="1525530766001206141" at="33,50,34,58" />
+      <scope id="1525530766001206141" at="36,68,37,102" />
+      <scope id="1525530766001206141" at="39,30,40,17" />
+      <scope id="1525530766001206141" at="23,0,25,0" />
+      <scope id="8998767845489224806" at="27,7,29,283">
+        <var name="_reporter_2309309498" id="8998767845489224806" />
+        <var name="errorTarget" id="8998767845489224806" />
+      </scope>
+      <scope id="1525530766001206141" at="33,0,36,0" />
+      <scope id="1525530766001206141" at="36,0,39,0">
+        <var name="argument" id="1525530766001206141" />
+      </scope>
+      <scope id="1525530766001206141" at="39,0,42,0" />
+      <scope id="1525530766001206230" at="26,306,30,7" />
+      <scope id="1525530766001206142" at="25,116,31,5" />
+      <scope id="1525530766001206141" at="25,0,33,0">
+        <var name="bae" id="1525530766001206141" />
+        <var name="status" id="1525530766001206141" />
+        <var name="typeCheckingContext" id="1525530766001206141" />
+      </scope>
+      <unit id="1525530766001206141" at="43,0,47,0" name="com.mbeddr.core.checks.typesystem.check_BitwiseBinaryArithmaticsExpression_NonTypesystemRule$LINKS" />
+      <unit id="1525530766001206141" at="48,0,52,0" name="com.mbeddr.core.checks.typesystem.check_BitwiseBinaryArithmaticsExpression_NonTypesystemRule$CONCEPTS" />
+      <unit id="1525530766001206141" at="22,0,53,0" name="com.mbeddr.core.checks.typesystem.check_BitwiseBinaryArithmaticsExpression_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:0bfce9a3-10ca-444a-937a-739ad39cd78b(com.mbeddr.core.checks.typesystem)/2825922516893133054">
+    <file name="TypesystemDescriptor.java">
+      <node id="2825922516893133054" at="18,5,19,96" concept="6" />
+      <node id="2825922516893133054" at="19,96,20,55" concept="2" />
+      <node id="2825922516893133054" at="17,5,21,5" concept="0" />
+      <scope id="2825922516893133054" at="18,5,20,55">
+        <var name="nonTypesystemRule" id="2825922516893133054" />
+      </scope>
+    </file>
+    <file name="check_StatementList_NonTypesystemRule.java">
+      <node id="3105925081590669455" at="19,123,20,59" concept="8" />
+      <node id="2825922516893150498" at="21,119,22,65" concept="2" />
+      <node id="2825922516893133054" at="25,50,26,37" concept="7" />
+      <node id="2825922516893133054" at="28,68,29,102" concept="7" />
+      <node id="2825922516893133054" at="31,30,32,17" concept="7" />
+      <node id="2825922516893133054" at="36,0,37,0" concept="10" trace="IDataFlowAnalyzerEntryPoint$qk" />
+      <node id="2825922516893133054" at="37,0,38,0" concept="10" trace="StatementList$y1" />
+      <node id="2825922516893133054" at="17,0,19,0" concept="1" trace="check_StatementList_NonTypesystemRule#()V" />
+      <node id="7982313751239451265" at="20,59,23,5" concept="4" />
+      <node id="2825922516893133054" at="25,0,28,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2825922516893133054" at="28,0,31,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2825922516893133054" at="31,0,34,0" concept="5" trace="overrides#()Z" />
+      <node id="2825922516893133054" at="19,0,25,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="2825922516893133054" at="17,50,17,50" />
+      <scope id="7982313751239451268" at="21,119,22,65" />
+      <scope id="2825922516893133054" at="25,50,26,37" />
+      <scope id="2825922516893133054" at="28,68,29,102" />
+      <scope id="2825922516893133054" at="31,30,32,17" />
+      <scope id="2825922516893133054" at="17,0,19,0" />
+      <scope id="2825922516893133054" at="25,0,28,0" />
+      <scope id="2825922516893133054" at="28,0,31,0">
+        <var name="argument" id="2825922516893133054" />
+      </scope>
+      <scope id="2825922516893133054" at="31,0,34,0" />
+      <scope id="2825922516893133055" at="19,123,23,5" />
+      <scope id="2825922516893133054" at="19,0,25,0">
+        <var name="statements" id="2825922516893133054" />
+        <var name="status" id="2825922516893133054" />
+        <var name="typeCheckingContext" id="2825922516893133054" />
+      </scope>
+      <unit id="2825922516893133054" at="35,0,39,0" name="com.mbeddr.core.checks.typesystem.check_StatementList_NonTypesystemRule$CONCEPTS" />
+      <unit id="2825922516893133054" at="16,0,40,0" name="com.mbeddr.core.checks.typesystem.check_StatementList_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:0bfce9a3-10ca-444a-937a-739ad39cd78b(com.mbeddr.core.checks.typesystem)/6876369064206287627">
+    <file name="ValueAnalysisMain.java">
+      <node id="6876369064206860815" at="38,95,39,65" concept="6" />
+      <node id="8998767845487871824" at="39,65,40,81" concept="2" />
+      <node id="6876369064210311778" at="40,81,41,75" concept="6" />
+      <node id="2825922516894080590" at="41,75,42,49" concept="6" />
+      <node id="2825922516893852415" at="43,175,44,65" concept="2" />
+      <node id="2825922516893863530" at="50,177,51,72" concept="6" />
+      <node id="2825922516894244490" at="51,72,52,71" concept="6" />
+      <node id="2825922516893854410" at="53,5,54,35" concept="6" />
+      <node id="2825922516896001000" at="55,86,56,84" concept="2" />
+      <node id="2825922516896019642" at="59,5,60,35" concept="6" />
+      <node id="2825922516896019647" at="61,87,62,84" concept="2" />
+      <node id="2825922516895994767" at="68,203,69,94" concept="6" />
+      <node id="2825922516895994775" at="69,94,70,149" concept="6" />
+      <node id="8645699863059972973" at="71,85,72,13" concept="7" />
+      <node id="2825922516895994783" at="73,5,74,159" concept="6" />
+      <node id="2825922516895994795" at="75,38,76,45" concept="6" />
+      <node id="3451033204592343684" at="78,9,79,68" concept="6" />
+      <node id="3451033204592343684" at="79,68,80,419" concept="6" />
+      <node id="2825922516893871188" at="86,134,87,70" concept="6" />
+      <node id="2825922516895260566" at="87,70,88,0" concept="9" />
+      <node id="2825922516893874620" at="89,5,90,25" concept="6" />
+      <node id="2825922516893875378" at="91,72,92,122" concept="2" />
+      <node id="2825922516895345963" at="95,5,96,26" concept="6" />
+      <node id="2825922516895345968" at="98,105,99,125" concept="2" />
+      <node id="2825922516893913893" at="103,5,104,25" concept="6" />
+      <node id="2825922516893949275" at="105,77,106,78" concept="6" />
+      <node id="2825922516893951844" at="106,78,107,68" concept="6" />
+      <node id="2825922516893950278" at="107,68,108,170" concept="2" />
+      <node id="2825922516893873910" at="110,5,111,15" concept="7" />
+      <node id="6876369064206287627" at="115,0,116,0" concept="10" trace="BitwiseBinaryArithmaticsExpression$ws" />
+      <node id="6876369064206287627" at="116,0,117,0" concept="10" trace="BitwiseLeftShiftExpression$Kh" />
+      <node id="6876369064206287627" at="117,0,118,0" concept="10" trace="BitwiseRightShiftExpression$hf" />
+      <node id="6876369064206287627" at="118,0,119,0" concept="10" trace="IType$a9" />
+      <node id="6876369064206287627" at="119,0,120,0" concept="10" trace="PrimitiveC99IntegralType$E_" />
+      <node id="6876369064206287627" at="120,0,121,0" concept="10" trace="NumberLiteral$jK" />
+      <node id="6876369064206287627" at="121,0,122,0" concept="10" trace="UnaryMinusExpression$pM" />
+      <node id="6876369064206287627" at="122,0,123,0" concept="10" trace="IVariableReference$WR" />
+      <node id="6876369064206287627" at="126,0,127,0" concept="10" trace="right$Slc$" />
+      <node id="6876369064206287627" at="127,0,128,0" concept="10" trace="left$SkXz" />
+      <node id="8998767845487864793" at="42,49,45,5" concept="3" />
+      <node id="2825922516893854410" at="54,35,57,7" concept="4" />
+      <node id="2825922516896019642" at="60,35,63,7" concept="4" />
+      <node id="8645699863059965228" at="70,149,73,5" concept="4" />
+      <node id="2825922516893874620" at="90,25,93,7" concept="4" />
+      <node id="5166918254050914848" at="97,80,100,9" concept="4" />
+      <node id="3451033204592343684" at="77,46,81,9" concept="0" />
+      <node id="2825922516895345963" at="96,26,101,7" concept="4" />
+      <node id="2825922516893913893" at="104,25,109,7" concept="4" />
+      <node id="2825922516893854410" at="52,71,58,5" concept="0" />
+      <node id="2825922516896019642" at="58,5,64,5" concept="0" />
+      <node id="2825922516895994804" at="76,45,82,7" concept="4" />
+      <node id="2825922516893874620" at="88,0,94,5" concept="0" />
+      <node id="2825922516895345963" at="94,5,102,5" concept="0" />
+      <node id="2825922516893913893" at="102,5,110,5" concept="0" />
+      <node id="2825922516895994792" at="74,159,83,5" concept="3" />
+      <node id="6876369064206382625" at="37,0,47,0" concept="11" trace="doCheck#(Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2825922516893854400" at="49,0,66,0" concept="11" trace="checkBitwiseOperator#(Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/lang/dataFlow/framework/Program;Ljetbrains/mps/lang/dataFlow/framework/AnalysisResult;)V" />
+      <node id="2825922516895994739" at="67,0,85,0" concept="11" trace="doCheckBitwiseOperator#(Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/lang/dataFlow/framework/Program;Ljetbrains/mps/lang/dataFlow/framework/AnalysisResult;)V" />
+      <node id="2825922516894017395" at="86,0,113,0" concept="11" trace="computePossibleValues#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/lang/dataFlow/framework/Program;Ljetbrains/mps/lang/dataFlow/framework/AnalysisResult;)Ljava/util/List;" />
+      <scope id="8998767845487864797" at="43,175,44,65" />
+      <scope id="2825922516893854416" at="55,86,56,84" />
+      <scope id="2825922516896019646" at="61,87,62,84" />
+      <scope id="8645699863059965230" at="71,85,72,13" />
+      <scope id="2825922516893874627" at="91,72,92,122" />
+      <scope id="5166918254050914850" at="98,105,99,125" />
+      <scope id="3451033204592343684" at="78,9,80,419">
+        <var name="_reporter_2309309498" id="3451033204592343684" />
+        <var name="errorTarget" id="3451033204592343684" />
+      </scope>
+      <scope id="8998767845487864793" at="42,49,45,5">
+        <var name="bbae" id="8998767845487864795" />
+      </scope>
+      <scope id="2825922516895345967" at="97,80,100,9" />
+      <scope id="2825922516893913900" at="105,77,108,170">
+        <var name="instruction" id="2825922516893949276" />
+        <var name="vvm" id="2825922516893951845" />
+      </scope>
+      <scope id="2825922516893854410" at="53,5,57,7">
+        <var name="bie" id="2825922516893854410" />
+      </scope>
+      <scope id="2825922516896019642" at="59,5,63,7">
+        <var name="bie" id="2825922516896019642" />
+      </scope>
+      <scope id="2825922516895994805" at="77,46,81,9" />
+      <scope id="2825922516893874620" at="89,5,93,7">
+        <var name="nl" id="2825922516893874620" />
+      </scope>
+      <scope id="2825922516895345963" at="95,5,101,7">
+        <var name="ume" id="2825922516895345963" />
+      </scope>
+      <scope id="2825922516893913893" at="103,5,109,7">
+        <var name="vr" id="2825922516893913893" />
+      </scope>
+      <scope id="6876369064206382628" at="38,95,45,5">
+        <var name="constantAnalyzer" id="6876369064210311775" />
+        <var name="prog" id="2825922516894080591" />
+        <var name="res" id="6876369064210311779" />
+      </scope>
+      <scope id="2825922516895994794" at="75,38,82,7">
+        <var name="val" id="2825922516895994796" />
+      </scope>
+      <scope id="2825922516895994792" at="74,159,83,5">
+        <var name="pv" id="2825922516895994793" />
+      </scope>
+      <scope id="6876369064206382625" at="37,0,47,0">
+        <var name="statements" id="6876369064206388272" />
+        <var name="typeCheckingContext" id="6876369064206382625" />
+      </scope>
+      <scope id="2825922516893854409" at="50,177,64,5">
+        <var name="lhs" id="2825922516894244491" />
+        <var name="rhs" id="2825922516893863531" />
+      </scope>
+      <scope id="2825922516895994749" at="68,203,83,5">
+        <var name="possibleValues" id="2825922516895994768" />
+        <var name="tpe" id="2825922516895994776" />
+        <var name="typeSizeInBits" id="2825922516895994784" />
+      </scope>
+      <scope id="2825922516893854400" at="49,0,66,0">
+        <var name="analysisResult" id="2825922516894034094" />
+        <var name="bitwiseExp" id="2825922516893854403" />
+        <var name="prog" id="2825922516894034092" />
+        <var name="typeCheckingContext" id="2825922516893854400" />
+      </scope>
+      <scope id="2825922516895994739" at="67,0,85,0">
+        <var name="analysisResult" id="2825922516895994746" />
+        <var name="positionsCount" id="2825922516896007225" />
+        <var name="prog" id="2825922516895994744" />
+        <var name="shiftedValue" id="2825922516895994742" />
+        <var name="typeCheckingContext" id="2825922516895994739" />
+      </scope>
+      <scope id="2825922516893869160" at="86,134,111,15">
+        <var name="res" id="2825922516893871191" />
+      </scope>
+      <scope id="2825922516894017395" at="86,0,113,0">
+        <var name="analysisResult" id="2825922516893944195" />
+        <var name="n" id="2825922516893870190" />
+        <var name="prog" id="2825922516893942976" />
+      </scope>
+      <unit id="6876369064206287627" at="125,0,129,0" name="com.mbeddr.core.checks.typesystem.ValueAnalysisMain$LINKS" />
+      <unit id="6876369064206287627" at="114,0,124,0" name="com.mbeddr.core.checks.typesystem.ValueAnalysisMain$CONCEPTS" />
+      <unit id="6876369064206287627" at="35,0,130,0" name="com.mbeddr.core.checks.typesystem.ValueAnalysisMain" />
+    </file>
+  </root>
+</debug-info>
+

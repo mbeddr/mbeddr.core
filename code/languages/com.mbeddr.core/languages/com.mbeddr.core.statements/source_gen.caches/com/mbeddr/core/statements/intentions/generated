@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-bv9oeqtowb1oaphn7nvbf1vj2cugijz">
+  <files names="IntentionsDescriptor.java:addElseIfPart_Intention.java:addElseIntention_Intention.java:addPrefix_Intention.java:createDesignatedInitializer_Intention.java:makeStatic_Intention.java:surroundWithDoWhile_Intention.java:surroundWithFor_Intention.java:surroundWithIf_Intention.java:surroundWithWhile_Intention.java:toggleInvisible_Intention.java:toggleStoreInRegister_Intention.java:wrapWithIWrapperExpression_Intention.java" />
+</product>
+

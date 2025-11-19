@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,203,0" name="com.mbeddr.mpsutil.preferenceform.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,72,0" name="com.mbeddr.mpsutil.preferenceform.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="20,0,372,0" name="com.mbeddr.mpsutil.preferenceform.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/1210676672555">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1210676672555" at="27,0,28,0" concept="2" trace="props_OnBeforeWriteBlockApplication" />
+      <node id="1210676672555" at="143,58,144,76" concept="5" />
+      <node id="1210676672555" at="144,76,145,46" concept="1" />
+      <node id="1210676672555" at="145,46,146,61" concept="1" />
+      <node id="1210676672555" at="147,9,148,51" concept="6" />
+      <node id="1210676672555" at="142,63,147,9" concept="3" />
+      <scope id="1210676672555" at="143,58,146,61">
+        <var name="cpb" id="1210676672555" />
+      </scope>
+      <scope id="1210676672555" at="142,63,148,51" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1210676672555" at="27,0,28,0" concept="8" trace="OnBeforeWriteBlockApplication" />
+      <node id="1210676672555" at="52,61,53,63" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1210676672555" at="36,0,37,0" concept="2" trace="myConceptOnBeforeWriteBlockApplication" />
+      <node id="1210676672555" at="101,63,102,54" concept="6" />
+      <node id="1210676672555" at="281,87,282,192" concept="5" />
+      <node id="1210676672555" at="282,192,283,34" concept="1" />
+      <node id="1210676672555" at="283,34,284,68" concept="7" />
+      <node id="1210676672555" at="284,68,285,71" concept="1" />
+      <node id="1210676672555" at="285,71,286,185" concept="1" />
+      <node id="1210676672555" at="286,185,287,17" concept="1" />
+      <node id="1210676672555" at="287,17,288,52" concept="1" />
+      <node id="1210676672555" at="288,52,289,28" concept="1" />
+      <node id="1210676672555" at="289,28,290,22" concept="6" />
+      <node id="1210676672555" at="281,0,292,0" concept="9" trace="createDescriptorForOnBeforeWriteBlockApplication#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1210676672555" at="101,63,102,54" />
+      <scope id="1210676672555" at="281,87,290,22">
+        <var name="b" id="1210676672555" />
+      </scope>
+      <scope id="1210676672555" at="281,0,292,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/1210676879526">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1210676879526" at="26,0,27,0" concept="2" trace="props_OnAfterReadBlockApplication" />
+      <node id="1210676879526" at="136,56,137,76" concept="5" />
+      <node id="1210676879526" at="137,76,138,44" concept="1" />
+      <node id="1210676879526" at="138,44,139,59" concept="1" />
+      <node id="1210676879526" at="140,9,141,49" concept="6" />
+      <node id="1210676879526" at="135,61,140,9" concept="3" />
+      <scope id="1210676879526" at="136,56,139,59">
+        <var name="cpb" id="1210676879526" />
+      </scope>
+      <scope id="1210676879526" at="135,61,141,49" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1210676879526" at="26,0,27,0" concept="8" trace="OnAfterReadBlockApplication" />
+      <node id="1210676879526" at="51,58,52,61" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1210676879526" at="35,0,36,0" concept="2" trace="myConceptOnAfterReadBlockApplication" />
+      <node id="1210676879526" at="99,61,100,52" concept="6" />
+      <node id="1210676879526" at="270,85,271,190" concept="5" />
+      <node id="1210676879526" at="271,190,272,34" concept="1" />
+      <node id="1210676879526" at="272,34,273,68" concept="7" />
+      <node id="1210676879526" at="273,68,274,71" concept="1" />
+      <node id="1210676879526" at="274,71,275,185" concept="1" />
+      <node id="1210676879526" at="275,185,276,17" concept="1" />
+      <node id="1210676879526" at="276,17,277,52" concept="1" />
+      <node id="1210676879526" at="277,52,278,26" concept="1" />
+      <node id="1210676879526" at="278,26,279,22" concept="6" />
+      <node id="1210676879526" at="270,0,281,0" concept="9" trace="createDescriptorForOnAfterReadBlockApplication#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1210676879526" at="99,61,100,52" />
+      <scope id="1210676879526" at="270,85,279,22">
+        <var name="b" id="1210676879526" />
+      </scope>
+      <scope id="1210676879526" at="270,0,281,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/1286599818956595587">
+    <file name="EnumerationDescriptor_PreferenceFormScope.java">
+      <node id="1286599818956595587" at="14,54,15,273" concept="10" />
+      <node id="1286599818956595589" at="18,0,19,0" concept="2" trace="myMember_project_0" />
+      <node id="1286599818956595590" at="19,0,20,0" concept="2" trace="myMember_application_0" />
+      <node id="1286599818956595587" at="21,0,22,0" concept="2" trace="myIndex" />
+      <node id="1286599818956595587" at="22,0,23,0" concept="2" trace="myMembers" />
+      <node id="1286599818956595587" at="26,62,27,30" concept="6" />
+      <node id="1286599818956595587" at="32,68,33,21" concept="6" />
+      <node id="1286599818956595587" at="39,29,40,18" concept="6" />
+      <node id="1286599818956595589" at="43,21,44,34" concept="6" />
+      <node id="1286599818956595590" at="45,25,46,38" concept="6" />
+      <node id="1286599818956595587" at="47,5,48,16" concept="6" />
+      <node id="1286599818956595587" at="53,73,54,39" concept="5" />
+      <node id="1286599818956595587" at="55,22,56,18" concept="6" />
+      <node id="1286599818956595587" at="57,5,58,32" concept="6" />
+      <node id="1286599818956595587" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_PreferenceFormScope#()V" />
+      <node id="1286599818956595587" at="38,88,41,5" concept="3" />
+      <node id="1286599818956595587" at="54,39,57,5" concept="3" />
+      <node id="1286599818956595587" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1286599818956595587" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="1286599818956595587" at="41,5,47,5" concept="11" />
+      <node id="1286599818956595587" at="51,0,60,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1286599818956595587" at="36,0,50,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="1286599818956595587" at="14,54,15,273" />
+      <scope id="1286599818956595587" at="26,62,27,30" />
+      <scope id="1286599818956595587" at="32,68,33,21" />
+      <scope id="1286599818956595587" at="39,29,40,18" />
+      <scope id="1286599818956595589" at="43,21,44,34" />
+      <scope id="1286599818956595590" at="45,25,46,38" />
+      <scope id="1286599818956595587" at="55,22,56,18" />
+      <scope id="1286599818956595587" at="14,0,17,0" />
+      <scope id="1286599818956595587" at="24,0,29,0" />
+      <scope id="1286599818956595587" at="30,0,35,0" />
+      <scope id="1286599818956595587" at="53,73,58,32">
+        <var name="index" id="1286599818956595587" />
+      </scope>
+      <scope id="1286599818956595587" at="51,0,60,0">
+        <var name="idValue" id="1286599818956595587" />
+      </scope>
+      <scope id="1286599818956595587" at="38,88,48,16" />
+      <scope id="1286599818956595587" at="36,0,50,0">
+        <var name="memberName" id="1286599818956595587" />
+      </scope>
+      <unit id="1286599818956595587" at="12,0,61,0" name="com.mbeddr.mpsutil.preferenceform.structure.EnumerationDescriptor_PreferenceFormScope" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1286599818956595587" at="44,0,45,0" concept="2" trace="myEnumerationPreferenceFormScope" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936283289547">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936283289547" at="31,0,32,0" concept="2" trace="props_PreferenceForm" />
+      <node id="145956936283289547" at="171,43,172,76" concept="5" />
+      <node id="145956936283289547" at="172,76,173,35" concept="1" />
+      <node id="145956936283289547" at="173,35,174,46" concept="1" />
+      <node id="145956936283289547" at="175,9,176,36" concept="6" />
+      <node id="145956936283289547" at="170,48,175,9" concept="3" />
+      <scope id="145956936283289547" at="171,43,174,46">
+        <var name="cpb" id="145956936283289547" />
+      </scope>
+      <scope id="145956936283289547" at="170,48,176,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936283289547" at="31,0,32,0" concept="8" trace="PreferenceForm" />
+      <node id="145956936283289547" at="56,79,57,52" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936283289547" at="40,0,41,0" concept="2" trace="myConceptPreferenceForm" />
+      <node id="145956936283289547" at="109,48,110,39" concept="6" />
+      <node id="145956936283289547" at="323,72,324,181" concept="5" />
+      <node id="145956936283289547" at="324,181,325,33" concept="1" />
+      <node id="145956936283289547" at="325,33,326,71" concept="1" />
+      <node id="145956936283289547" at="326,71,327,190" concept="1" />
+      <node id="145956936283289547" at="327,190,328,17" concept="1" />
+      <node id="1286599818956595796" at="328,17,329,174" concept="1" />
+      <node id="1101080154069554489" at="329,174,330,109" concept="1" />
+      <node id="1557260317236259345" at="330,109,331,115" concept="1" />
+      <node id="145956936283569518" at="331,115,332,199" concept="1" />
+      <node id="1210676907584" at="332,199,333,198" concept="1" />
+      <node id="1210676918600" at="333,198,334,200" concept="1" />
+      <node id="1101080154069038230" at="334,200,335,212" concept="1" />
+      <node id="1101080154069038442" at="335,212,336,214" concept="1" />
+      <node id="145956936283289547" at="336,214,337,31" concept="1" />
+      <node id="145956936283289547" at="337,31,338,22" concept="6" />
+      <node id="145956936283289547" at="323,0,340,0" concept="9" trace="createDescriptorForPreferenceForm#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936283289547" at="109,48,110,39" />
+      <scope id="145956936283289547" at="323,72,338,22">
+        <var name="b" id="145956936283289547" />
+      </scope>
+      <scope id="145956936283289547" at="323,0,340,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936283569529">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936283569529" at="23,0,24,0" concept="2" trace="props_IPreferenceFormProperty" />
+      <node id="145956936283569529" at="116,52,117,76" concept="5" />
+      <node id="145956936283569529" at="117,76,118,55" concept="1" />
+      <node id="145956936283569529" at="119,9,120,45" concept="6" />
+      <node id="145956936283569529" at="115,57,119,9" concept="3" />
+      <scope id="145956936283569529" at="116,52,118,55">
+        <var name="cpb" id="145956936283569529" />
+      </scope>
+      <scope id="145956936283569529" at="115,57,120,45" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936283569529" at="23,0,24,0" concept="8" trace="IPreferenceFormProperty" />
+      <node id="145956936283569529" at="48,64,49,61" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936283569529" at="32,0,33,0" concept="2" trace="myConceptIPreferenceFormProperty" />
+      <node id="145956936283569529" at="93,57,94,48" concept="6" />
+      <node id="145956936283569529" at="144,70,145,75" concept="1" />
+      <node id="145956936283569529" at="241,81,242,190" concept="5" />
+      <node id="145956936283569529" at="242,190,243,19" concept="1" />
+      <node id="145956936283569529" at="243,19,244,71" concept="1" />
+      <node id="145956936283569529" at="244,71,245,190" concept="1" />
+      <node id="145956936283569529" at="245,190,246,17" concept="1" />
+      <node id="145956936283569529" at="246,17,247,22" concept="6" />
+      <node id="145956936283569529" at="241,0,249,0" concept="9" trace="createDescriptorForIPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936283569529" at="93,57,94,48" />
+      <scope id="145956936283569529" at="241,81,247,22">
+        <var name="b" id="145956936283569529" />
+      </scope>
+      <scope id="145956936283569529" at="241,0,249,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936284064811">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936284064811" at="13,0,14,0" concept="2" trace="props_AbstractPreferenceFormProperty" />
+      <node id="145956936284064811" at="48,59,49,76" concept="5" />
+      <node id="145956936284064811" at="49,76,50,62" concept="1" />
+      <node id="145956936284064811" at="51,9,52,52" concept="6" />
+      <node id="145956936284064811" at="47,64,51,9" concept="3" />
+      <scope id="145956936284064811" at="48,59,50,62">
+        <var name="cpb" id="145956936284064811" />
+      </scope>
+      <scope id="145956936284064811" at="47,64,52,52" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936284064811" at="13,0,14,0" concept="8" trace="AbstractPreferenceFormProperty" />
+      <node id="145956936284064811" at="38,77,39,68" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936284064811" at="22,0,23,0" concept="2" trace="myConceptAbstractPreferenceFormProperty" />
+      <node id="145956936284064811" at="73,64,74,55" concept="6" />
+      <node id="145956936284064811" at="140,88,141,197" concept="5" />
+      <node id="145956936284064811" at="141,197,142,33" concept="1" />
+      <node id="145956936284064811" at="142,33,143,72" concept="7" />
+      <node id="145956936284064811" at="143,72,144,70" concept="1" />
+      <node id="145956936284064811" at="145,75,146,190" concept="1" />
+      <node id="145956936284064811" at="146,190,147,17" concept="1" />
+      <node id="8884256830696181817" at="147,17,148,199" concept="1" />
+      <node id="145956936284064811" at="148,199,149,22" concept="6" />
+      <node id="145956936284064811" at="140,0,151,0" concept="9" trace="createDescriptorForAbstractPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936284064811" at="73,64,74,55" />
+      <scope id="145956936284064811" at="140,88,149,22">
+        <var name="b" id="145956936284064811" />
+      </scope>
+      <scope id="145956936284064811" at="140,0,151,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936284064820">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936284064820" at="34,0,35,0" concept="2" trace="props_TextFieldPreferenceFormProperty" />
+      <node id="145956936284064820" at="193,60,194,76" concept="5" />
+      <node id="145956936284064820" at="194,76,195,35" concept="1" />
+      <node id="145956936284064820" at="195,35,196,63" concept="1" />
+      <node id="145956936284064820" at="197,9,198,53" concept="6" />
+      <node id="145956936284064820" at="192,65,197,9" concept="3" />
+      <scope id="145956936284064820" at="193,60,196,63">
+        <var name="cpb" id="145956936284064820" />
+      </scope>
+      <scope id="145956936284064820" at="192,65,198,53" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936284064820" at="34,0,35,0" concept="8" trace="TextFieldPreferenceFormProperty" />
+      <node id="145956936284064820" at="59,56,60,69" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936284064820" at="43,0,44,0" concept="2" trace="myConceptTextFieldPreferenceFormProperty" />
+      <node id="145956936284064820" at="115,65,116,56" concept="6" />
+      <node id="145956936284064820" at="360,89,361,198" concept="5" />
+      <node id="145956936284064820" at="361,198,362,34" concept="1" />
+      <node id="145956936284064820" at="362,34,363,90" concept="7" />
+      <node id="145956936284064820" at="363,90,364,75" concept="1" />
+      <node id="145956936284064820" at="364,75,365,190" concept="1" />
+      <node id="145956936284064820" at="365,190,366,17" concept="1" />
+      <node id="145956936284064821" at="366,17,367,116" concept="1" />
+      <node id="145956936284064820" at="367,116,368,26" concept="1" />
+      <node id="145956936284064820" at="368,26,369,22" concept="6" />
+      <node id="145956936284064820" at="360,0,371,0" concept="9" trace="createDescriptorForTextFieldPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936284064820" at="115,65,116,56" />
+      <scope id="145956936284064820" at="360,89,369,22">
+        <var name="b" id="145956936284064820" />
+      </scope>
+      <scope id="145956936284064820" at="360,0,371,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936284219644">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936284219644" at="14,0,15,0" concept="2" trace="props_CheckBoxPreferenceFormProperty" />
+      <node id="145956936284219644" at="54,59,55,76" concept="5" />
+      <node id="145956936284219644" at="55,76,56,35" concept="1" />
+      <node id="145956936284219644" at="56,35,57,62" concept="1" />
+      <node id="145956936284219644" at="58,9,59,52" concept="6" />
+      <node id="145956936284219644" at="53,64,58,9" concept="3" />
+      <scope id="145956936284219644" at="54,59,57,62">
+        <var name="cpb" id="145956936284219644" />
+      </scope>
+      <scope id="145956936284219644" at="53,64,59,52" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936284219644" at="14,0,15,0" concept="8" trace="CheckBoxPreferenceFormProperty" />
+      <node id="145956936284219644" at="39,68,40,68" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936284219644" at="23,0,24,0" concept="2" trace="myConceptCheckBoxPreferenceFormProperty" />
+      <node id="145956936284219644" at="75,64,76,55" concept="6" />
+      <node id="145956936284219644" at="151,88,152,197" concept="5" />
+      <node id="145956936284219644" at="152,197,153,34" concept="1" />
+      <node id="145956936284219644" at="153,34,154,90" concept="7" />
+      <node id="145956936284219644" at="154,90,155,75" concept="1" />
+      <node id="145956936284219644" at="155,75,156,190" concept="1" />
+      <node id="145956936284219644" at="156,190,157,17" concept="1" />
+      <node id="145956936284219645" at="157,17,158,117" concept="1" />
+      <node id="145956936284219644" at="158,117,159,24" concept="1" />
+      <node id="145956936284219644" at="159,24,160,22" concept="6" />
+      <node id="145956936284219644" at="151,0,162,0" concept="9" trace="createDescriptorForCheckBoxPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936284219644" at="75,64,76,55" />
+      <scope id="145956936284219644" at="151,88,160,22">
+        <var name="b" id="145956936284219644" />
+      </scope>
+      <scope id="145956936284219644" at="151,0,162,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936287600982">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936287600982" at="21,0,22,0" concept="2" trace="props_GetPreferenceFormInProjectOperation" />
+      <node id="145956936287600982" at="103,64,104,76" concept="5" />
+      <node id="145956936287600982" at="104,76,105,164" concept="1" />
+      <node id="145956936287600982" at="105,164,106,67" concept="1" />
+      <node id="145956936287600982" at="107,9,108,57" concept="6" />
+      <node id="145956936287600982" at="102,69,107,9" concept="3" />
+      <scope id="145956936287600982" at="103,64,106,67">
+        <var name="cpb" id="145956936287600982" />
+      </scope>
+      <scope id="145956936287600982" at="102,69,108,57" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936287600982" at="21,0,22,0" concept="8" trace="GetPreferenceFormInProjectOperation" />
+      <node id="145956936287600982" at="46,79,47,73" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936287600982" at="30,0,31,0" concept="2" trace="myConceptGetPreferenceFormInProjectOperation" />
+      <node id="145956936287600982" at="89,69,90,60" concept="6" />
+      <node id="145956936287600982" at="223,93,224,202" concept="5" />
+      <node id="145956936287600982" at="224,202,225,34" concept="1" />
+      <node id="145956936287600982" at="225,34,226,72" concept="7" />
+      <node id="145956936287600982" at="226,72,227,76" concept="1" />
+      <node id="145956936287600982" at="228,76,229,190" concept="1" />
+      <node id="145956936287600982" at="229,190,230,17" concept="1" />
+      <node id="145956936287600982" at="230,17,231,22" concept="6" />
+      <node id="145956936287600982" at="223,0,233,0" concept="9" trace="createDescriptorForGetPreferenceFormInProjectOperation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936287600982" at="89,69,90,60" />
+      <scope id="145956936287600982" at="223,93,231,22">
+        <var name="b" id="145956936287600982" />
+      </scope>
+      <scope id="145956936287600982" at="223,0,233,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936287670670">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936287670670" at="33,0,34,0" concept="2" trace="props_PreferenceFormType" />
+      <node id="145956936287670670" at="186,47,187,76" concept="5" />
+      <node id="145956936287670670" at="187,76,188,162" concept="1" />
+      <node id="145956936287670670" at="188,162,189,50" concept="1" />
+      <node id="145956936287670670" at="190,9,191,40" concept="6" />
+      <node id="145956936287670670" at="185,52,190,9" concept="3" />
+      <scope id="145956936287670670" at="186,47,189,50">
+        <var name="cpb" id="145956936287670670" />
+      </scope>
+      <scope id="145956936287670670" at="185,52,191,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936287670670" at="33,0,34,0" concept="8" trace="PreferenceFormType" />
+      <node id="145956936287670670" at="58,69,59,56" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936287670670" at="42,0,43,0" concept="2" trace="myConceptPreferenceFormType" />
+      <node id="145956936287670670" at="113,52,114,43" concept="6" />
+      <node id="145956936287670670" at="349,76,350,185" concept="5" />
+      <node id="145956936287670670" at="350,185,351,34" concept="1" />
+      <node id="145956936287670670" at="351,34,352,83" concept="7" />
+      <node id="145956936287670670" at="352,83,353,71" concept="1" />
+      <node id="145956936287670670" at="353,71,354,190" concept="1" />
+      <node id="145956936287670670" at="354,190,355,17" concept="1" />
+      <node id="145956936287674577" at="355,17,356,175" concept="1" />
+      <node id="145956936287670670" at="356,175,357,54" concept="1" />
+      <node id="145956936287670670" at="357,54,358,22" concept="6" />
+      <node id="145956936287670670" at="349,0,360,0" concept="9" trace="createDescriptorForPreferenceFormType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936287670670" at="113,52,114,43" />
+      <scope id="145956936287670670" at="349,76,358,22">
+        <var name="b" id="145956936287670670" />
+      </scope>
+      <scope id="145956936287670670" at="349,0,360,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/145956936288329552">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="145956936288329552" at="32,0,33,0" concept="2" trace="props_PreferenceFormPropertyReference" />
+      <node id="145956936288329552" at="178,60,179,76" concept="5" />
+      <node id="145956936288329552" at="179,76,180,69" concept="1" />
+      <node id="145956936288329552" at="180,69,181,130" concept="1" />
+      <node id="145956936288329552" at="181,130,182,63" concept="1" />
+      <node id="145956936288329552" at="183,9,184,53" concept="6" />
+      <node id="145956936288329552" at="177,65,183,9" concept="3" />
+      <scope id="145956936288329552" at="178,60,182,63">
+        <var name="cpb" id="145956936288329552" />
+      </scope>
+      <scope id="145956936288329552" at="177,65,184,53" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="145956936288329552" at="32,0,33,0" concept="8" trace="PreferenceFormPropertyReference" />
+      <node id="145956936288329552" at="57,52,58,69" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="145956936288329552" at="41,0,42,0" concept="2" trace="myConceptPreferenceFormPropertyReference" />
+      <node id="145956936288329552" at="111,65,112,56" concept="6" />
+      <node id="145956936288329552" at="340,89,341,198" concept="5" />
+      <node id="145956936288329552" at="341,198,342,34" concept="1" />
+      <node id="145956936288329552" at="342,34,343,71" concept="1" />
+      <node id="145956936288329552" at="343,71,344,190" concept="1" />
+      <node id="145956936288329552" at="344,190,345,17" concept="1" />
+      <node id="145956936288329555" at="345,17,346,258" concept="1" />
+      <node id="145956936288329552" at="346,258,347,22" concept="6" />
+      <node id="145956936288329552" at="340,0,349,0" concept="9" trace="createDescriptorForPreferenceFormPropertyReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="145956936288329552" at="111,65,112,56" />
+      <scope id="145956936288329552" at="340,89,347,22">
+        <var name="b" id="145956936288329552" />
+      </scope>
+      <scope id="145956936288329552" at="340,0,349,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/1869287722499775673">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1869287722499775673" at="25,0,26,0" concept="2" trace="props_MemoryDataParameter" />
+      <node id="1869287722499775673" at="129,48,130,76" concept="5" />
+      <node id="1869287722499775673" at="130,76,131,44" concept="1" />
+      <node id="1869287722499775673" at="131,44,132,51" concept="1" />
+      <node id="1869287722499775673" at="133,9,134,41" concept="6" />
+      <node id="1869287722499775673" at="128,53,133,9" concept="3" />
+      <scope id="1869287722499775673" at="129,48,132,51">
+        <var name="cpb" id="1869287722499775673" />
+      </scope>
+      <scope id="1869287722499775673" at="128,53,134,41" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1869287722499775673" at="25,0,26,0" concept="8" trace="MemoryDataParameter" />
+      <node id="1869287722499775673" at="50,73,51,58" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1869287722499775673" at="34,0,35,0" concept="2" trace="myConceptMemoryDataParameter" />
+      <node id="1869287722499775673" at="97,53,98,44" concept="6" />
+      <node id="1869287722499775673" at="260,77,261,187" concept="5" />
+      <node id="1869287722499775673" at="261,187,262,34" concept="1" />
+      <node id="1869287722499775673" at="262,34,263,77" concept="7" />
+      <node id="1869287722499775673" at="263,77,264,71" concept="1" />
+      <node id="1869287722499775673" at="264,71,265,191" concept="1" />
+      <node id="1869287722499775673" at="265,191,266,17" concept="1" />
+      <node id="1869287722499775673" at="266,17,267,26" concept="1" />
+      <node id="1869287722499775673" at="267,26,268,22" concept="6" />
+      <node id="1869287722499775673" at="260,0,270,0" concept="9" trace="createDescriptorForMemoryDataParameter#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1869287722499775673" at="97,53,98,44" />
+      <scope id="1869287722499775673" at="260,77,268,22">
+        <var name="b" id="1869287722499775673" />
+      </scope>
+      <scope id="1869287722499775673" at="260,0,270,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/1869287722499775694">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1869287722499775694" at="15,0,16,0" concept="2" trace="props_DataFromDiskParameter" />
+      <node id="1869287722499775694" at="61,50,62,76" concept="5" />
+      <node id="1869287722499775694" at="62,76,63,42" concept="1" />
+      <node id="1869287722499775694" at="63,42,64,53" concept="1" />
+      <node id="1869287722499775694" at="65,9,66,43" concept="6" />
+      <node id="1869287722499775694" at="60,55,65,9" concept="3" />
+      <scope id="1869287722499775694" at="61,50,64,53">
+        <var name="cpb" id="1869287722499775694" />
+      </scope>
+      <scope id="1869287722499775694" at="60,55,66,43" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1869287722499775694" at="15,0,16,0" concept="8" trace="DataFromDiskParameter" />
+      <node id="1869287722499775694" at="40,68,41,60" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1869287722499775694" at="24,0,25,0" concept="2" trace="myConceptDataFromDiskParameter" />
+      <node id="1869287722499775694" at="77,55,78,46" concept="6" />
+      <node id="1869287722499775694" at="162,79,163,189" concept="5" />
+      <node id="1869287722499775694" at="163,189,164,34" concept="1" />
+      <node id="1869287722499775694" at="164,34,165,77" concept="7" />
+      <node id="1869287722499775694" at="165,77,166,71" concept="1" />
+      <node id="1869287722499775694" at="166,71,167,191" concept="1" />
+      <node id="1869287722499775694" at="167,191,168,17" concept="1" />
+      <node id="1869287722499775694" at="168,17,169,24" concept="1" />
+      <node id="1869287722499775694" at="169,24,170,22" concept="6" />
+      <node id="1869287722499775694" at="162,0,172,0" concept="9" trace="createDescriptorForDataFromDiskParameter#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1869287722499775694" at="77,55,78,46" />
+      <scope id="1869287722499775694" at="162,79,170,22">
+        <var name="b" id="1869287722499775694" />
+      </scope>
+      <scope id="1869287722499775694" at="162,0,172,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/3057648661793083867">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3057648661793083867" at="22,0,23,0" concept="2" trace="props_IPreferenceFormExpression" />
+      <node id="3057648661793083867" at="110,54,111,76" concept="5" />
+      <node id="3057648661793083867" at="111,76,112,57" concept="1" />
+      <node id="3057648661793083867" at="113,9,114,47" concept="6" />
+      <node id="3057648661793083867" at="109,59,113,9" concept="3" />
+      <scope id="3057648661793083867" at="110,54,112,57">
+        <var name="cpb" id="3057648661793083867" />
+      </scope>
+      <scope id="3057648661793083867" at="109,59,114,47" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3057648661793083867" at="22,0,23,0" concept="8" trace="IPreferenceFormExpression" />
+      <node id="3057648661793083867" at="47,73,48,64" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3057648661793083867" at="31,0,32,0" concept="2" trace="myConceptIPreferenceFormExpression" />
+      <node id="3057648661793083867" at="91,59,92,50" concept="6" />
+      <node id="3057648661793083867" at="217,70,218,76" concept="1" />
+      <node id="3057648661793083867" at="227,76,228,76" concept="1" />
+      <node id="3057648661793083867" at="233,83,234,193" concept="5" />
+      <node id="3057648661793083867" at="234,193,235,19" concept="1" />
+      <node id="3057648661793083867" at="235,19,236,191" concept="1" />
+      <node id="3057648661793083867" at="236,191,237,17" concept="1" />
+      <node id="145956936287604889" at="237,17,238,176" concept="1" />
+      <node id="3057648661793083867" at="238,176,239,22" concept="6" />
+      <node id="3057648661793083867" at="233,0,241,0" concept="9" trace="createDescriptorForIPreferenceFormExpression#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3057648661793083867" at="91,59,92,50" />
+      <scope id="3057648661793083867" at="233,83,239,22">
+        <var name="b" id="3057648661793083867" />
+      </scope>
+      <scope id="3057648661793083867" at="233,0,241,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/4412484936303814">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4412484936303814" at="28,0,29,0" concept="2" trace="props_PassWordFieldPreferenceFormProperty" />
+      <node id="4412484936303814" at="150,64,151,76" concept="5" />
+      <node id="4412484936303814" at="151,76,152,35" concept="1" />
+      <node id="4412484936303814" at="152,35,153,67" concept="1" />
+      <node id="4412484936303814" at="154,9,155,57" concept="6" />
+      <node id="4412484936303814" at="149,69,154,9" concept="3" />
+      <scope id="4412484936303814" at="150,64,153,67">
+        <var name="cpb" id="4412484936303814" />
+      </scope>
+      <scope id="4412484936303814" at="149,69,155,57" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4412484936303814" at="28,0,29,0" concept="8" trace="PassWordFieldPreferenceFormProperty" />
+      <node id="4412484936303814" at="53,63,54,71" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4412484936303814" at="37,0,38,0" concept="2" trace="myConceptPassWordFieldPreferenceFormProperty" />
+      <node id="4412484936303814" at="103,69,104,60" concept="6" />
+      <node id="4412484936303814" at="292,93,293,200" concept="5" />
+      <node id="4412484936303814" at="293,200,294,34" concept="1" />
+      <node id="4412484936303814" at="294,34,295,90" concept="7" />
+      <node id="4412484936303814" at="295,90,296,75" concept="1" />
+      <node id="4412484936303814" at="296,75,297,188" concept="1" />
+      <node id="4412484936303814" at="297,188,298,17" concept="1" />
+      <node id="4412484936303815" at="298,17,299,112" concept="1" />
+      <node id="4412484936303814" at="299,112,300,30" concept="1" />
+      <node id="4412484936303814" at="300,30,301,22" concept="6" />
+      <node id="4412484936303814" at="292,0,303,0" concept="9" trace="createDescriptorForPassWordFieldPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4412484936303814" at="103,69,104,60" />
+      <scope id="4412484936303814" at="292,93,301,22">
+        <var name="b" id="4412484936303814" />
+      </scope>
+      <scope id="4412484936303814" at="292,0,303,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/4728279602824475247">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="4728279602824475247" at="24,0,25,0" concept="2" trace="props_IntegerFieldPreferenceFormProperty" />
+      <node id="4728279602824475247" at="122,63,123,76" concept="5" />
+      <node id="4728279602824475247" at="123,76,124,35" concept="1" />
+      <node id="4728279602824475247" at="124,35,125,66" concept="1" />
+      <node id="4728279602824475247" at="126,9,127,56" concept="6" />
+      <node id="4728279602824475247" at="121,68,126,9" concept="3" />
+      <scope id="4728279602824475247" at="122,63,125,66">
+        <var name="cpb" id="4728279602824475247" />
+      </scope>
+      <scope id="4728279602824475247" at="121,68,127,56" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="4728279602824475247" at="24,0,25,0" concept="8" trace="IntegerFieldPreferenceFormProperty" />
+      <node id="4728279602824475247" at="49,61,50,73" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="4728279602824475247" at="33,0,34,0" concept="2" trace="myConceptIntegerFieldPreferenceFormProperty" />
+      <node id="4728279602824475247" at="95,68,96,59" concept="6" />
+      <node id="4728279602824475247" at="249,92,250,202" concept="5" />
+      <node id="4728279602824475247" at="250,202,251,34" concept="1" />
+      <node id="4728279602824475247" at="251,34,252,90" concept="7" />
+      <node id="4728279602824475247" at="252,90,253,75" concept="1" />
+      <node id="4728279602824475247" at="253,75,254,191" concept="1" />
+      <node id="4728279602824475247" at="254,191,255,17" concept="1" />
+      <node id="4728279602824496322" at="255,17,256,119" concept="1" />
+      <node id="4728279602824475247" at="256,119,257,29" concept="1" />
+      <node id="4728279602824475247" at="257,29,258,22" concept="6" />
+      <node id="4728279602824475247" at="249,0,260,0" concept="9" trace="createDescriptorForIntegerFieldPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4728279602824475247" at="95,68,96,59" />
+      <scope id="4728279602824475247" at="249,92,258,22">
+        <var name="b" id="4728279602824475247" />
+      </scope>
+      <scope id="4728279602824475247" at="249,0,260,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/6899278682012146628">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6899278682012146628" at="20,0,21,0" concept="2" trace="props_GetPreferenceFormInApplicationExpression" />
+      <node id="6899278682012146628" at="96,69,97,76" concept="5" />
+      <node id="6899278682012146628" at="97,76,98,164" concept="1" />
+      <node id="6899278682012146628" at="98,164,99,72" concept="1" />
+      <node id="6899278682012146628" at="100,9,101,62" concept="6" />
+      <node id="6899278682012146628" at="95,74,100,9" concept="3" />
+      <scope id="6899278682012146628" at="96,69,99,72">
+        <var name="cpb" id="6899278682012146628" />
+      </scope>
+      <scope id="6899278682012146628" at="95,74,101,62" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6899278682012146628" at="20,0,21,0" concept="8" trace="GetPreferenceFormInApplicationExpression" />
+      <node id="6899278682012146628" at="45,76,46,79" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6899278682012146628" at="29,0,30,0" concept="2" trace="myConceptGetPreferenceFormInApplicationExpression" />
+      <node id="6899278682012146628" at="87,74,88,65" concept="6" />
+      <node id="6899278682012146628" at="213,98,214,208" concept="5" />
+      <node id="6899278682012146628" at="214,208,215,34" concept="1" />
+      <node id="6899278682012146628" at="215,34,216,63" concept="7" />
+      <node id="6899278682012146628" at="216,63,217,70" concept="1" />
+      <node id="6899278682012146628" at="218,76,219,191" concept="1" />
+      <node id="6899278682012146628" at="219,191,220,17" concept="1" />
+      <node id="6899278682012146628" at="220,17,221,22" concept="6" />
+      <node id="6899278682012146628" at="213,0,223,0" concept="9" trace="createDescriptorForGetPreferenceFormInApplicationExpression#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6899278682012146628" at="87,74,88,65" />
+      <scope id="6899278682012146628" at="213,98,221,22">
+        <var name="b" id="6899278682012146628" />
+      </scope>
+      <scope id="6899278682012146628" at="213,0,223,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561432125">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561432125" at="12,0,13,0" concept="2" trace="props_AbstractComboBoxPreferenceFormProperty" />
+      <node id="8201243288561432125" at="42,67,43,76" concept="5" />
+      <node id="8201243288561432125" at="43,76,44,70" concept="1" />
+      <node id="8201243288561432125" at="45,9,46,60" concept="6" />
+      <node id="8201243288561432125" at="41,72,45,9" concept="3" />
+      <scope id="8201243288561432125" at="42,67,44,70">
+        <var name="cpb" id="8201243288561432125" />
+      </scope>
+      <scope id="8201243288561432125" at="41,72,46,60" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561432125" at="12,0,13,0" concept="8" trace="AbstractComboBoxPreferenceFormProperty" />
+      <node id="8201243288561432125" at="37,116,38,77" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561432125" at="21,0,22,0" concept="2" trace="myConceptAbstractComboBoxPreferenceFormProperty" />
+      <node id="8201243288561432125" at="71,72,72,63" concept="6" />
+      <node id="8201243288561432125" at="131,96,132,206" concept="5" />
+      <node id="8201243288561432125" at="132,206,133,33" concept="1" />
+      <node id="8201243288561432125" at="133,33,134,90" concept="7" />
+      <node id="8201243288561432125" at="134,90,135,75" concept="1" />
+      <node id="8201243288561432125" at="135,75,136,191" concept="1" />
+      <node id="8201243288561432125" at="136,191,137,17" concept="1" />
+      <node id="8201243288561432125" at="137,17,138,22" concept="6" />
+      <node id="8201243288561432125" at="131,0,140,0" concept="9" trace="createDescriptorForAbstractComboBoxPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561432125" at="71,72,72,63" />
+      <scope id="8201243288561432125" at="131,96,138,22">
+        <var name="b" id="8201243288561432125" />
+      </scope>
+      <scope id="8201243288561432125" at="131,0,140,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561455947">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561455947" at="30,0,31,0" concept="2" trace="props_PredefinedComboBoxPreferenceFormProperty" />
+      <node id="8201243288561455947" at="164,69,165,76" concept="5" />
+      <node id="8201243288561455947" at="165,76,166,35" concept="1" />
+      <node id="8201243288561455947" at="166,35,167,72" concept="1" />
+      <node id="8201243288561455947" at="168,9,169,62" concept="6" />
+      <node id="8201243288561455947" at="163,74,168,9" concept="3" />
+      <scope id="8201243288561455947" at="164,69,167,72">
+        <var name="cpb" id="8201243288561455947" />
+      </scope>
+      <scope id="8201243288561455947" at="163,74,169,62" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561455947" at="30,0,31,0" concept="8" trace="PredefinedComboBoxPreferenceFormProperty" />
+      <node id="8201243288561455947" at="55,62,56,79" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561455947" at="39,0,40,0" concept="2" trace="myConceptPredefinedComboBoxPreferenceFormProperty" />
+      <node id="8201243288561455947" at="107,74,108,65" concept="6" />
+      <node id="8201243288561455947" at="312,98,313,208" concept="5" />
+      <node id="8201243288561455947" at="313,208,314,34" concept="1" />
+      <node id="8201243288561455947" at="314,34,315,98" concept="7" />
+      <node id="8201243288561455947" at="315,98,316,76" concept="1" />
+      <node id="8201243288561455947" at="316,76,317,191" concept="1" />
+      <node id="8201243288561455947" at="317,191,318,17" concept="1" />
+      <node id="8201243288561455948" at="318,17,319,199" concept="1" />
+      <node id="8201243288561455947" at="319,199,320,35" concept="1" />
+      <node id="8201243288561455947" at="320,35,321,22" concept="6" />
+      <node id="8201243288561455947" at="312,0,323,0" concept="9" trace="createDescriptorForPredefinedComboBoxPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561455947" at="107,74,108,65" />
+      <scope id="8201243288561455947" at="312,98,321,22">
+        <var name="b" id="8201243288561455947" />
+      </scope>
+      <scope id="8201243288561455947" at="312,0,323,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561455979">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561455979" at="29,0,30,0" concept="2" trace="props_PredefinedComboBoxEntry" />
+      <node id="8201243288561455979" at="157,52,158,76" concept="5" />
+      <node id="8201243288561455979" at="158,76,159,35" concept="1" />
+      <node id="8201243288561455979" at="159,35,160,55" concept="1" />
+      <node id="8201243288561455979" at="161,9,162,45" concept="6" />
+      <node id="8201243288561455979" at="156,57,161,9" concept="3" />
+      <scope id="8201243288561455979" at="157,52,160,55">
+        <var name="cpb" id="8201243288561455979" />
+      </scope>
+      <scope id="8201243288561455979" at="156,57,162,45" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561455979" at="29,0,30,0" concept="8" trace="PredefinedComboBoxEntry" />
+      <node id="8201243288561455979" at="54,71,55,62" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561455979" at="38,0,39,0" concept="2" trace="myConceptPredefinedComboBoxEntry" />
+      <node id="8201243288561455979" at="105,57,106,48" concept="6" />
+      <node id="8201243288561455979" at="303,81,304,191" concept="5" />
+      <node id="8201243288561455979" at="304,191,305,34" concept="1" />
+      <node id="8201243288561455979" at="305,34,306,71" concept="1" />
+      <node id="8201243288561455979" at="306,71,307,191" concept="1" />
+      <node id="8201243288561455979" at="307,191,308,17" concept="1" />
+      <node id="8201243288561456781" at="308,17,309,109" concept="1" />
+      <node id="8201243288561455979" at="309,109,310,22" concept="6" />
+      <node id="8201243288561455979" at="303,0,312,0" concept="9" trace="createDescriptorForPredefinedComboBoxEntry#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561455979" at="105,57,106,48" />
+      <scope id="8201243288561455979" at="303,81,310,22">
+        <var name="b" id="8201243288561455979" />
+      </scope>
+      <scope id="8201243288561455979" at="303,0,312,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561530716">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561530716" at="19,0,20,0" concept="2" trace="props_DynamicComboBoxPreferenceFormProperty" />
+      <node id="8201243288561530716" at="89,66,90,76" concept="5" />
+      <node id="8201243288561530716" at="90,76,91,35" concept="1" />
+      <node id="8201243288561530716" at="91,35,92,69" concept="1" />
+      <node id="8201243288561530716" at="93,9,94,59" concept="6" />
+      <node id="8201243288561530716" at="88,71,93,9" concept="3" />
+      <scope id="8201243288561530716" at="89,66,92,69">
+        <var name="cpb" id="8201243288561530716" />
+      </scope>
+      <scope id="8201243288561530716" at="88,71,94,59" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561530716" at="19,0,20,0" concept="8" trace="DynamicComboBoxPreferenceFormProperty" />
+      <node id="8201243288561530716" at="44,69,45,76" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561530716" at="28,0,29,0" concept="2" trace="myConceptDynamicComboBoxPreferenceFormProperty" />
+      <node id="8201243288561530716" at="85,71,86,62" concept="6" />
+      <node id="8201243288561530716" at="201,95,202,205" concept="5" />
+      <node id="8201243288561530716" at="202,205,203,34" concept="1" />
+      <node id="8201243288561530716" at="203,34,204,98" concept="7" />
+      <node id="8201243288561530716" at="204,98,205,76" concept="1" />
+      <node id="8201243288561530716" at="205,76,206,191" concept="1" />
+      <node id="8201243288561530716" at="206,191,207,17" concept="1" />
+      <node id="8201243288561544766" at="207,17,208,212" concept="1" />
+      <node id="8201243288561545816" at="208,212,209,213" concept="1" />
+      <node id="8201243288561530716" at="209,213,210,32" concept="1" />
+      <node id="8201243288561530716" at="210,32,211,22" concept="6" />
+      <node id="8201243288561530716" at="201,0,213,0" concept="9" trace="createDescriptorForDynamicComboBoxPreferenceFormProperty#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561530716" at="85,71,86,62" />
+      <scope id="8201243288561530716" at="201,95,211,22">
+        <var name="b" id="8201243288561530716" />
+      </scope>
+      <scope id="8201243288561530716" at="201,0,213,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561530773">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561530773" at="18,0,19,0" concept="2" trace="props_DynamicComboBoxEntriesFunction" />
+      <node id="8201243288561530773" at="82,59,83,76" concept="5" />
+      <node id="8201243288561530773" at="83,76,84,64" concept="1" />
+      <node id="8201243288561530773" at="84,64,85,62" concept="1" />
+      <node id="8201243288561530773" at="86,9,87,52" concept="6" />
+      <node id="8201243288561530773" at="81,64,86,9" concept="3" />
+      <scope id="8201243288561530773" at="82,59,85,62">
+        <var name="cpb" id="8201243288561530773" />
+      </scope>
+      <scope id="8201243288561530773" at="81,64,87,52" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561530773" at="18,0,19,0" concept="8" trace="DynamicComboBoxEntriesFunction" />
+      <node id="8201243288561530773" at="43,83,44,69" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561530773" at="27,0,28,0" concept="2" trace="myConceptDynamicComboBoxEntriesFunction" />
+      <node id="8201243288561530773" at="83,64,84,55" concept="6" />
+      <node id="8201243288561530773" at="191,88,192,198" concept="5" />
+      <node id="8201243288561530773" at="192,198,193,34" concept="1" />
+      <node id="8201243288561530773" at="193,34,194,68" concept="7" />
+      <node id="8201243288561530773" at="194,68,195,71" concept="1" />
+      <node id="8201243288561530773" at="195,71,196,191" concept="1" />
+      <node id="8201243288561530773" at="196,191,197,17" concept="1" />
+      <node id="8201243288561530773" at="197,17,198,54" concept="1" />
+      <node id="8201243288561530773" at="198,54,199,22" concept="6" />
+      <node id="8201243288561530773" at="191,0,201,0" concept="9" trace="createDescriptorForDynamicComboBoxEntriesFunction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561530773" at="83,64,84,55" />
+      <scope id="8201243288561530773" at="191,88,199,22">
+        <var name="b" id="8201243288561530773" />
+      </scope>
+      <scope id="8201243288561530773" at="191,0,201,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561544883">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561544883" at="16,0,17,0" concept="2" trace="props_DynamicComboBoxDefaultEntryFunction" />
+      <node id="8201243288561544883" at="68,64,69,76" concept="5" />
+      <node id="8201243288561544883" at="69,76,70,69" concept="1" />
+      <node id="8201243288561544883" at="70,69,71,67" concept="1" />
+      <node id="8201243288561544883" at="72,9,73,57" concept="6" />
+      <node id="8201243288561544883" at="67,69,72,9" concept="3" />
+      <scope id="8201243288561544883" at="68,64,71,67">
+        <var name="cpb" id="8201243288561544883" />
+      </scope>
+      <scope id="8201243288561544883" at="67,69,73,57" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561544883" at="16,0,17,0" concept="8" trace="DynamicComboBoxDefaultEntryFunction" />
+      <node id="8201243288561544883" at="41,60,42,74" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561544883" at="25,0,26,0" concept="2" trace="myConceptDynamicComboBoxDefaultEntryFunction" />
+      <node id="8201243288561544883" at="79,69,80,60" concept="6" />
+      <node id="8201243288561544883" at="172,93,173,203" concept="5" />
+      <node id="8201243288561544883" at="173,203,174,34" concept="1" />
+      <node id="8201243288561544883" at="174,34,175,68" concept="7" />
+      <node id="8201243288561544883" at="175,68,176,71" concept="1" />
+      <node id="8201243288561544883" at="176,71,177,191" concept="1" />
+      <node id="8201243288561544883" at="177,191,178,17" concept="1" />
+      <node id="8201243288561544883" at="178,17,179,54" concept="1" />
+      <node id="8201243288561544883" at="179,54,180,22" concept="6" />
+      <node id="8201243288561544883" at="172,0,182,0" concept="9" trace="createDescriptorForDynamicComboBoxDefaultEntryFunction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561544883" at="79,69,80,60" />
+      <scope id="8201243288561544883" at="172,93,180,22">
+        <var name="b" id="8201243288561544883" />
+      </scope>
+      <scope id="8201243288561544883" at="172,0,182,0" />
+    </file>
+  </root>
+  <root nodeRef="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265/r:8404cc10-c4dd-42b8-90e7-bdc433135319(com.mbeddr.mpsutil.preferenceform/com.mbeddr.mpsutil.preferenceform.structure)/8201243288561546439">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="8201243288561546439" at="17,0,18,0" concept="2" trace="props_DynamicComboBoxDefaultEntryFunctionParameter" />
+      <node id="8201243288561546439" at="75,73,76,76" concept="5" />
+      <node id="8201243288561546439" at="76,76,77,78" concept="1" />
+      <node id="8201243288561546439" at="77,78,78,76" concept="1" />
+      <node id="8201243288561546439" at="79,9,80,66" concept="6" />
+      <node id="8201243288561546439" at="74,78,79,9" concept="3" />
+      <scope id="8201243288561546439" at="75,73,78,76">
+        <var name="cpb" id="8201243288561546439" />
+      </scope>
+      <scope id="8201243288561546439" at="74,78,80,66" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="8201243288561546439" at="17,0,18,0" concept="8" trace="DynamicComboBoxDefaultEntryFunctionParameter" />
+      <node id="8201243288561546439" at="42,74,43,83" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="8201243288561546439" at="26,0,27,0" concept="2" trace="myConceptDynamicComboBoxDefaultEntryFunctionParameter" />
+      <node id="8201243288561546439" at="81,78,82,69" concept="6" />
+      <node id="8201243288561546439" at="182,102,183,212" concept="5" />
+      <node id="8201243288561546439" at="183,212,184,34" concept="1" />
+      <node id="8201243288561546439" at="184,34,185,77" concept="7" />
+      <node id="8201243288561546439" at="185,77,186,71" concept="1" />
+      <node id="8201243288561546439" at="186,71,187,191" concept="1" />
+      <node id="8201243288561546439" at="187,191,188,17" concept="1" />
+      <node id="8201243288561546439" at="188,17,189,22" concept="6" />
+      <node id="8201243288561546439" at="182,0,191,0" concept="9" trace="createDescriptorForDynamicComboBoxDefaultEntryFunctionParameter#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="8201243288561546439" at="81,78,82,69" />
+      <scope id="8201243288561546439" at="182,102,189,22">
+        <var name="b" id="8201243288561546439" />
+      </scope>
+      <scope id="8201243288561546439" at="182,0,191,0" />
+    </file>
+  </root>
+</debug-info>
+

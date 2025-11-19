@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-5ik10f3t0oryvfthoueamte1aiyn465">
+  <files names="IntentionsDescriptor.java:addAttributeValue_Intention.java:addAttributes_Intention.java:addChildren_Intention.java:addConflictsConstraint_Intention.java:addRequiressConstraint_Intention.java:extractDerivedFeature_Intention.java:makeRoot_Intention.java:wrapInFeature_Intention.java" />
+</product>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="RefactoringAspectDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.cc.requirements.refactorings.RefactoringAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3424d837-c178-4d7b-8543-e9f3af3f6072(com.mbeddr.cc.requirements.refactorings)/2194195324959211722">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="2194195324959211722" at="16,41,17,58" concept="1" />
+    </file>
+    <file name="addTraceToCopiedRequirement.java">
+      <node id="2194195324959211722" at="23,52,24,52" concept="6" />
+      <node id="2194195324959211722" at="26,39,27,41" concept="6" />
+      <node id="2194195324959313489" at="29,69,30,83" concept="5" />
+      <node id="2194195324959212610" at="31,82,32,195" concept="5" />
+      <node id="2194195324959212618" at="32,195,33,88" concept="1" />
+      <node id="2194195324959212632" at="33,88,34,241" concept="1" />
+      <node id="2194195324959212655" at="34,241,35,199" concept="5" />
+      <node id="2194195324959212670" at="35,199,36,61" concept="1" />
+      <node id="2194195324959212647" at="36,61,37,97" concept="1" />
+      <node id="2194195324959211722" at="42,0,43,0" concept="7" trace="TraceAnnotation$ho" />
+      <node id="2194195324959211722" at="46,0,47,0" concept="7" trace="tracekind$KgW9" />
+      <node id="2194195324959211722" at="47,0,48,0" concept="7" trace="target$hiva" />
+      <node id="2194195324959211722" at="48,0,49,0" concept="7" trace="refs$Khba" />
+      <node id="2194195324959211722" at="21,0,23,0" concept="0" trace="addTraceToCopiedRequirement#()V" />
+      <node id="2194195324959211722" at="23,0,26,0" concept="4" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="2194195324959211722" at="26,0,29,0" concept="4" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="2194195324959211736" at="30,83,38,5" concept="2" />
+      <node id="2194195324959211722" at="29,0,40,0" concept="4" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="2194195324959211722" at="21,40,21,40" />
+      <scope id="2194195324959211722" at="23,52,24,52" />
+      <scope id="2194195324959211722" at="26,39,27,41" />
+      <scope id="2194195324959211722" at="21,0,23,0" />
+      <scope id="2194195324959211722" at="23,0,26,0" />
+      <scope id="2194195324959211722" at="26,0,29,0" />
+      <scope id="2194195324959211739" at="31,82,37,97">
+        <var name="ref" id="2194195324959212656" />
+        <var name="trace" id="2194195324959212611" />
+      </scope>
+      <scope id="2194195324959211736" at="30,83,38,5">
+        <var name="n" id="2194195324959211737" />
+      </scope>
+      <scope id="2194195324959211725" at="29,69,38,5">
+        <var name="req" id="2194195324959313490" />
+      </scope>
+      <scope id="2194195324959211722" at="29,0,40,0">
+        <var name="refactoringContext" id="2194195324959211722" />
+      </scope>
+      <unit id="2194195324959211722" at="41,0,44,0" name="com.mbeddr.cc.requirements.refactorings.addTraceToCopiedRequirement$CONCEPTS" />
+      <unit id="2194195324959211722" at="45,0,50,0" name="com.mbeddr.cc.requirements.refactorings.addTraceToCopiedRequirement$LINKS" />
+      <unit id="2194195324959211722" at="20,0,51,0" name="com.mbeddr.cc.requirements.refactorings.addTraceToCopiedRequirement" />
+    </file>
+    <file name="addTraceToCopiedRequirement_Target.java">
+      <node id="2194195324959211726" at="12,52,13,46" concept="6" />
+      <node id="2194195324959211726" at="15,41,16,16" concept="6" />
+      <node id="2194195324959211726" at="18,58,19,16" concept="6" />
+      <node id="2194195324959211726" at="22,51,23,19" concept="6" />
+      <node id="2194195324959211729" at="24,5,25,101" concept="6" />
+      <node id="2194195324959211726" at="10,0,12,0" concept="0" trace="addTraceToCopiedRequirement_Target#()V" />
+      <node id="2194195324959211726" at="12,0,15,0" concept="4" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="2194195324959211726" at="15,0,18,0" concept="4" trace="allowMultipleTargets#()Z" />
+      <node id="2194195324959211726" at="18,0,21,0" concept="4" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="2194195324959211726" at="21,52,24,5" concept="3" />
+      <node id="2194195324959211726" at="21,0,27,0" concept="4" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="2194195324959211726" at="10,47,10,47" />
+      <scope id="2194195324959211726" at="12,52,13,46" />
+      <scope id="2194195324959211726" at="15,41,16,16" />
+      <scope id="2194195324959211726" at="18,58,19,16" />
+      <scope id="2194195324959211726" at="22,51,23,19" />
+      <scope id="2194195324959211726" at="10,0,12,0" />
+      <scope id="2194195324959211726" at="12,0,15,0" />
+      <scope id="2194195324959211726" at="15,0,18,0" />
+      <scope id="2194195324959211726" at="18,0,21,0">
+        <var name="entity" id="2194195324959211726" />
+      </scope>
+      <scope id="2194195324959211726" at="21,52,25,101" />
+      <scope id="2194195324959211726" at="21,0,27,0">
+        <var name="entity" id="2194195324959211726" />
+      </scope>
+      <unit id="2194195324959211726" at="9,0,28,0" name="com.mbeddr.cc.requirements.refactorings.addTraceToCopiedRequirement_Target" />
+    </file>
+  </root>
+</debug-info>
+

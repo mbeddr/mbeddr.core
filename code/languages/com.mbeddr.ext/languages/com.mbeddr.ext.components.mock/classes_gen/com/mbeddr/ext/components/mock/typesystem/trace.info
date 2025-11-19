@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,61,0" name="com.mbeddr.ext.components.mock.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/1854993706183439708">
+    <file name="TypesystemDescriptor.java">
+      <node id="1854993706183439708" at="39,5,40,102" concept="7" />
+      <node id="1854993706183439708" at="40,102,41,55" concept="3" />
+      <node id="1854993706183439708" at="38,5,42,5" concept="0" />
+      <scope id="1854993706183439708" at="39,5,41,55">
+        <var name="nonTypesystemRule" id="1854993706183439708" />
+      </scope>
+    </file>
+    <file name="check_AssertMockComponent_NonTypesystemRule.java">
+      <node id="1854993706183439741" at="25,116,26,118" concept="7" />
+      <node id="1854993706183439734" at="28,7,29,90" concept="7" />
+      <node id="1854993706183439734" at="29,90,30,326" concept="7" />
+      <node id="1854993706183439708" at="34,50,35,36" concept="8" />
+      <node id="1854993706183439708" at="37,68,38,102" concept="8" />
+      <node id="1854993706183439708" at="40,30,41,17" concept="8" />
+      <node id="1854993706183439708" at="45,0,46,0" concept="10" trace="instance$tSe9" />
+      <node id="1854993706183439708" at="46,0,47,0" concept="10" trace="component$ikVC" />
+      <node id="1854993706183439708" at="50,0,51,0" concept="10" trace="MockComponent$E0" />
+      <node id="1854993706183439708" at="51,0,52,0" concept="10" trace="ValidateMock$iv" />
+      <node id="1854993706183439708" at="55,0,56,0" concept="10" trace="name$MnvL" />
+      <node id="1854993706183439708" at="23,0,25,0" concept="1" trace="check_AssertMockComponent_NonTypesystemRule#()V" />
+      <node id="1854993706183439708" at="34,0,37,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1854993706183439708" at="37,0,40,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1854993706183439708" at="40,0,43,0" concept="6" trace="overrides#()Z" />
+      <node id="1854993706183439734" at="27,75,31,7" concept="0" />
+      <node id="1854993706183439711" at="26,118,32,5" concept="5" />
+      <node id="1854993706183439708" at="25,0,34,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1854993706183439708" at="23,56,23,56" />
+      <scope id="1854993706183439708" at="34,50,35,36" />
+      <scope id="1854993706183439708" at="37,68,38,102" />
+      <scope id="1854993706183439708" at="40,30,41,17" />
+      <scope id="1854993706183439708" at="23,0,25,0" />
+      <scope id="1854993706183439734" at="28,7,30,326">
+        <var name="_reporter_2309309498" id="1854993706183439734" />
+        <var name="errorTarget" id="1854993706183439734" />
+      </scope>
+      <scope id="1854993706183439708" at="34,0,37,0" />
+      <scope id="1854993706183439708" at="37,0,40,0">
+        <var name="argument" id="1854993706183439708" />
+      </scope>
+      <scope id="1854993706183439708" at="40,0,43,0" />
+      <scope id="1854993706183439713" at="27,75,31,7" />
+      <scope id="1854993706183439709" at="25,116,32,5">
+        <var name="comp" id="1854993706183439742" />
+      </scope>
+      <scope id="1854993706183439708" at="25,0,34,0">
+        <var name="amc" id="1854993706183439708" />
+        <var name="status" id="1854993706183439708" />
+        <var name="typeCheckingContext" id="1854993706183439708" />
+      </scope>
+      <unit id="1854993706183439708" at="54,0,57,0" name="com.mbeddr.ext.components.mock.typesystem.check_AssertMockComponent_NonTypesystemRule$PROPS" />
+      <unit id="1854993706183439708" at="44,0,48,0" name="com.mbeddr.ext.components.mock.typesystem.check_AssertMockComponent_NonTypesystemRule$LINKS" />
+      <unit id="1854993706183439708" at="49,0,53,0" name="com.mbeddr.ext.components.mock.typesystem.check_AssertMockComponent_NonTypesystemRule$CONCEPTS" />
+      <unit id="1854993706183439708" at="22,0,58,0" name="com.mbeddr.ext.components.mock.typesystem.check_AssertMockComponent_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/2319970887606630687">
+    <file name="TypesystemDescriptor.java">
+      <node id="2319970887606630687" at="19,5,20,87" concept="7" />
+      <node id="2319970887606630687" at="20,87,21,47" concept="3" />
+      <node id="2319970887606630687" at="18,5,22,5" concept="0" />
+      <scope id="2319970887606630687" at="19,5,21,47">
+        <var name="inferenceRule" id="2319970887606630687" />
+      </scope>
+    </file>
+    <file name="typeof_PhaseExpression_InferenceRule.java">
+      <node id="2319970887606630694" at="20,5,21,44" concept="7" />
+      <node id="2319970887606630694" at="21,44,22,207" concept="7" />
+      <node id="2319970887606630694" at="22,207,23,284" concept="3" />
+      <node id="2319970887606630687" at="26,50,27,39" concept="8" />
+      <node id="2319970887606630687" at="29,68,30,102" concept="8" />
+      <node id="2319970887606630687" at="32,30,33,17" concept="8" />
+      <node id="2319970887606630699" at="35,61,36,30" concept="7" />
+      <node id="2319970887606630699" at="36,30,37,228" concept="7" />
+      <node id="2319970887606630699" at="37,228,38,34" concept="3" />
+      <node id="2319970887606630699" at="38,34,39,24" concept="8" />
+      <node id="2319970887606630687" at="43,0,44,0" concept="10" trace="PhaseExpression$oz" />
+      <node id="2319970887606630687" at="17,0,19,0" concept="1" trace="typeof_PhaseExpression_InferenceRule#()V" />
+      <node id="2319970887606630687" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="2319970887606630687" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="2319970887606630687" at="32,0,35,0" concept="6" trace="overrides#()Z" />
+      <node id="2319970887606630694" at="19,115,24,5" concept="0" />
+      <node id="2319970887606630699" at="35,0,41,0" concept="11" trace="_quotation_createNode_qukl6l_a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2319970887606630687" at="19,0,26,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="2319970887606630687" at="17,49,17,49" />
+      <scope id="2319970887606630687" at="26,50,27,39" />
+      <scope id="2319970887606630687" at="29,68,30,102" />
+      <scope id="2319970887606630687" at="32,30,33,17" />
+      <scope id="2319970887606630687" at="17,0,19,0" />
+      <scope id="2319970887606630694" at="20,5,23,284">
+        <var name="_info_12389875345" id="2319970887606630694" />
+        <var name="_nodeToCheck_1029348928467" id="2319970887606630694" />
+      </scope>
+      <scope id="2319970887606630687" at="26,0,29,0" />
+      <scope id="2319970887606630687" at="29,0,32,0">
+        <var name="argument" id="2319970887606630687" />
+      </scope>
+      <scope id="2319970887606630687" at="32,0,35,0" />
+      <scope id="2319970887606630699" at="35,61,39,24">
+        <var name="nb" id="2319970887606630699" />
+        <var name="quotedNode_1" id="2319970887606630699" />
+      </scope>
+      <scope id="2319970887606630688" at="19,115,24,5" />
+      <scope id="2319970887606630699" at="35,0,41,0" />
+      <scope id="2319970887606630687" at="19,0,26,0">
+        <var name="pe" id="2319970887606630687" />
+        <var name="status" id="2319970887606630687" />
+        <var name="typeCheckingContext" id="2319970887606630687" />
+      </scope>
+      <unit id="2319970887606630687" at="42,0,45,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_PhaseExpression_InferenceRule$CONCEPTS" />
+      <unit id="2319970887606630687" at="16,0,46,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_PhaseExpression_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/4331139697889503948">
+    <file name="TypesystemDescriptor.java">
+      <node id="4331139697889503948" at="11,5,12,90" concept="7" />
+      <node id="4331139697889503948" at="12,90,13,47" concept="3" />
+      <node id="4331139697889503948" at="10,33,14,5" concept="0" />
+      <scope id="4331139697889503948" at="11,5,13,47">
+        <var name="inferenceRule" id="4331139697889503948" />
+      </scope>
+    </file>
+    <file name="typeof_ParamRefExpression_InferenceRule.java">
+      <node id="4331139697889503955" at="21,5,22,45" concept="7" />
+      <node id="4331139697889503955" at="22,45,23,207" concept="7" />
+      <node id="4331139697889503955" at="23,207,24,438" concept="3" />
+      <node id="4331139697889503948" at="27,50,28,42" concept="8" />
+      <node id="4331139697889503948" at="30,68,31,102" concept="8" />
+      <node id="4331139697889503948" at="33,30,34,17" concept="8" />
+      <node id="4331139697889503948" at="38,0,39,0" concept="10" trace="param$oF7D" />
+      <node id="4331139697889503948" at="42,0,43,0" concept="10" trace="ParamRefExpression$kc" />
+      <node id="4331139697889503948" at="18,0,20,0" concept="1" trace="typeof_ParamRefExpression_InferenceRule#()V" />
+      <node id="4331139697889503948" at="27,0,30,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4331139697889503948" at="30,0,33,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4331139697889503948" at="33,0,36,0" concept="6" trace="overrides#()Z" />
+      <node id="4331139697889503955" at="20,116,25,5" concept="0" />
+      <node id="4331139697889503948" at="20,0,27,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4331139697889503948" at="18,52,18,52" />
+      <scope id="4331139697889503948" at="27,50,28,42" />
+      <scope id="4331139697889503948" at="30,68,31,102" />
+      <scope id="4331139697889503948" at="33,30,34,17" />
+      <scope id="4331139697889503948" at="18,0,20,0" />
+      <scope id="4331139697889503955" at="21,5,24,438">
+        <var name="_info_12389875345" id="4331139697889503955" />
+        <var name="_nodeToCheck_1029348928467" id="4331139697889503955" />
+      </scope>
+      <scope id="4331139697889503948" at="27,0,30,0" />
+      <scope id="4331139697889503948" at="30,0,33,0">
+        <var name="argument" id="4331139697889503948" />
+      </scope>
+      <scope id="4331139697889503948" at="33,0,36,0" />
+      <scope id="4331139697889503949" at="20,116,25,5" />
+      <scope id="4331139697889503948" at="20,0,27,0">
+        <var name="pre" id="4331139697889503948" />
+        <var name="status" id="4331139697889503948" />
+        <var name="typeCheckingContext" id="4331139697889503948" />
+      </scope>
+      <unit id="4331139697889503948" at="37,0,40,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_ParamRefExpression_InferenceRule$LINKS" />
+      <unit id="4331139697889503948" at="41,0,44,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_ParamRefExpression_InferenceRule$CONCEPTS" />
+      <unit id="4331139697889503948" at="17,0,45,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_ParamRefExpression_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/4331139697889517735">
+    <file name="TypesystemDescriptor.java">
+      <node id="4331139697889517735" at="15,5,16,89" concept="7" />
+      <node id="4331139697889517735" at="16,89,17,47" concept="3" />
+      <node id="4331139697889517735" at="14,5,18,5" concept="0" />
+      <scope id="4331139697889517735" at="15,5,17,47">
+        <var name="inferenceRule" id="4331139697889517735" />
+      </scope>
+    </file>
+    <file name="typeof_ParamterAssertion_InferenceRule.java">
+      <node id="5105303971775411596" at="23,7,24,90" concept="7" />
+      <node id="5105303971775411596" at="24,90,25,209" concept="7" />
+      <node id="5105303971775411596" at="25,209,26,308" concept="3" />
+      <node id="4331139697889517735" at="30,50,31,41" concept="8" />
+      <node id="4331139697889517735" at="33,68,34,102" concept="8" />
+      <node id="4331139697889517735" at="36,30,37,17" concept="8" />
+      <node id="5105303971775411599" at="39,61,40,30" concept="7" />
+      <node id="5105303971775411599" at="40,30,41,228" concept="7" />
+      <node id="5105303971775411599" at="41,228,42,34" concept="3" />
+      <node id="5105303971775411599" at="42,34,43,24" concept="8" />
+      <node id="4331139697889517735" at="47,0,48,0" concept="10" trace="expr$Pf13" />
+      <node id="4331139697889517735" at="51,0,52,0" concept="10" trace="ParamterAssertion$1i" />
+      <node id="4331139697889517735" at="19,0,21,0" concept="1" trace="typeof_ParamterAssertion_InferenceRule#()V" />
+      <node id="4331139697889517735" at="30,0,33,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4331139697889517735" at="33,0,36,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4331139697889517735" at="36,0,39,0" concept="6" trace="overrides#()Z" />
+      <node id="5105303971775411596" at="22,59,27,7" concept="0" />
+      <node id="5105303971775411599" at="39,0,45,0" concept="11" trace="_quotation_createNode_rz3ixn_a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5105303971775411596" at="21,115,28,5" concept="5" />
+      <node id="4331139697889517735" at="21,0,30,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4331139697889517735" at="19,51,19,51" />
+      <scope id="4331139697889517735" at="30,50,31,41" />
+      <scope id="4331139697889517735" at="33,68,34,102" />
+      <scope id="4331139697889517735" at="36,30,37,17" />
+      <scope id="4331139697889517735" at="19,0,21,0" />
+      <scope id="5105303971775411596" at="23,7,26,308">
+        <var name="_info_12389875345" id="5105303971775411596" />
+        <var name="_nodeToCheck_1029348928467" id="5105303971775411596" />
+      </scope>
+      <scope id="4331139697889517735" at="30,0,33,0" />
+      <scope id="4331139697889517735" at="33,0,36,0">
+        <var name="argument" id="4331139697889517735" />
+      </scope>
+      <scope id="4331139697889517735" at="36,0,39,0" />
+      <scope id="5105303971775411599" at="39,61,43,24">
+        <var name="nb" id="5105303971775411599" />
+        <var name="quotedNode_1" id="5105303971775411599" />
+      </scope>
+      <scope id="5105303971775411596" at="22,59,27,7" />
+      <scope id="5105303971775411599" at="39,0,45,0" />
+      <scope id="4331139697889517736" at="21,115,28,5" />
+      <scope id="4331139697889517735" at="21,0,30,0">
+        <var name="pa" id="4331139697889517735" />
+        <var name="status" id="4331139697889517735" />
+        <var name="typeCheckingContext" id="4331139697889517735" />
+      </scope>
+      <unit id="4331139697889517735" at="46,0,49,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_ParamterAssertion_InferenceRule$LINKS" />
+      <unit id="4331139697889517735" at="50,0,53,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_ParamterAssertion_InferenceRule$CONCEPTS" />
+      <unit id="4331139697889517735" at="18,0,54,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_ParamterAssertion_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/4331139697889888867">
+    <file name="TypesystemDescriptor.java">
+      <node id="4331139697889888867" at="27,5,28,76" concept="7" />
+      <node id="4331139697889888867" at="28,76,29,47" concept="3" />
+      <node id="4331139697889888867" at="26,5,30,5" concept="0" />
+      <scope id="4331139697889888867" at="27,5,29,47">
+        <var name="inferenceRule" id="4331139697889888867" />
+      </scope>
+    </file>
+    <file name="typeof_Step_InferenceRule.java">
+      <node id="5160057464294730951" at="24,9,25,101" concept="7" />
+      <node id="5160057464294730951" at="25,101,26,211" concept="7" />
+      <node id="5160057464294730951" at="26,211,27,535" concept="3" />
+      <node id="4331139697889888867" at="32,50,33,28" concept="8" />
+      <node id="4331139697889888867" at="35,68,36,102" concept="8" />
+      <node id="4331139697889888867" at="38,30,39,17" concept="8" />
+      <node id="4331139697889888867" at="43,0,44,0" concept="10" trace="returnValue$hqUi" />
+      <node id="4331139697889888867" at="44,0,45,0" concept="10" trace="op$VaYP" />
+      <node id="4331139697889888867" at="45,0,46,0" concept="10" trace="type$sXU3" />
+      <node id="4331139697889888867" at="49,0,50,0" concept="10" trace="Step$6I" />
+      <node id="4331139697889888867" at="19,0,21,0" concept="1" trace="typeof_Step_InferenceRule#()V" />
+      <node id="4331139697889888867" at="32,0,35,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4331139697889888867" at="35,0,38,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4331139697889888867" at="38,0,41,0" concept="6" trace="overrides#()Z" />
+      <node id="5160057464294730951" at="23,61,28,9" concept="0" />
+      <node id="5160057464294730951" at="22,74,29,7" concept="5" />
+      <node id="4331139697889888870" at="21,117,30,5" concept="5" />
+      <node id="4331139697889888867" at="21,0,32,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4331139697889888867" at="19,38,19,38" />
+      <scope id="4331139697889888867" at="32,50,33,28" />
+      <scope id="4331139697889888867" at="35,68,36,102" />
+      <scope id="4331139697889888867" at="38,30,39,17" />
+      <scope id="4331139697889888867" at="19,0,21,0" />
+      <scope id="5160057464294730951" at="24,9,27,535">
+        <var name="_info_12389875345" id="5160057464294730951" />
+        <var name="_nodeToCheck_1029348928467" id="5160057464294730951" />
+      </scope>
+      <scope id="4331139697889888867" at="32,0,35,0" />
+      <scope id="4331139697889888867" at="35,0,38,0">
+        <var name="argument" id="4331139697889888867" />
+      </scope>
+      <scope id="4331139697889888867" at="38,0,41,0" />
+      <scope id="5160057464294730951" at="23,61,28,9" />
+      <scope id="4331139697889888872" at="22,74,29,7" />
+      <scope id="4331139697889888868" at="21,117,30,5" />
+      <scope id="4331139697889888867" at="21,0,32,0">
+        <var name="status" id="4331139697889888867" />
+        <var name="step" id="4331139697889888867" />
+        <var name="typeCheckingContext" id="4331139697889888867" />
+      </scope>
+      <unit id="4331139697889888867" at="48,0,51,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_Step_InferenceRule$CONCEPTS" />
+      <unit id="4331139697889888867" at="42,0,47,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_Step_InferenceRule$LINKS" />
+      <unit id="4331139697889888867" at="18,0,52,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_Step_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/4957503999940792880">
+    <file name="TypesystemDescriptor.java">
+      <node id="4957503999940792880" at="55,5,56,102" concept="7" />
+      <node id="4957503999940792880" at="56,102,57,55" concept="3" />
+      <node id="4957503999940792880" at="54,5,58,5" concept="0" />
+      <scope id="4957503999940792880" at="55,5,57,55">
+        <var name="nonTypesystemRule" id="4957503999940792880" />
+      </scope>
+    </file>
+    <file name="check_SequenceExpectation_NonTypesystemRule.java">
+      <node id="4957503999940792929" at="28,116,29,104" concept="7" />
+      <node id="4957503999940792924" at="31,7,32,85" concept="7" />
+      <node id="4957503999940792924" at="32,85,33,278" concept="7" />
+      <node id="1049346859914427823" at="37,7,38,66" concept="7" />
+      <node id="1049346859914427823" at="38,66,39,283" concept="7" />
+      <node id="4957503999940792880" at="43,50,44,43" concept="8" />
+      <node id="4957503999940792880" at="46,68,47,102" concept="8" />
+      <node id="4957503999940792880" at="49,30,50,17" concept="8" />
+      <node id="4957503999940792880" at="54,0,55,0" concept="10" trace="MockComponent$E0" />
+      <node id="4957503999940792880" at="55,0,56,0" concept="10" trace="SequenceExpectation$V_" />
+      <node id="4957503999940792880" at="59,0,60,0" concept="10" trace="name$MnvL" />
+      <node id="4957503999940792880" at="63,0,64,0" concept="10" trace="steps$gYVc" />
+      <node id="4957503999940792880" at="26,0,28,0" concept="1" trace="check_SequenceExpectation_NonTypesystemRule#()V" />
+      <node id="4957503999940792880" at="43,0,46,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4957503999940792880" at="46,0,49,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4957503999940792880" at="49,0,52,0" concept="6" trace="overrides#()Z" />
+      <node id="4957503999940792924" at="30,209,34,7" concept="0" />
+      <node id="1049346859914427823" at="36,94,40,7" concept="0" />
+      <node id="4957503999940792920" at="29,104,35,5" concept="5" />
+      <node id="1049346859914427763" at="35,5,41,5" concept="5" />
+      <node id="4957503999940792880" at="28,0,43,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4957503999940792880" at="26,56,26,56" />
+      <scope id="4957503999940792880" at="43,50,44,43" />
+      <scope id="4957503999940792880" at="46,68,47,102" />
+      <scope id="4957503999940792880" at="49,30,50,17" />
+      <scope id="4957503999940792880" at="26,0,28,0" />
+      <scope id="4957503999940792924" at="31,7,33,278">
+        <var name="_reporter_2309309498" id="4957503999940792924" />
+        <var name="errorTarget" id="4957503999940792924" />
+      </scope>
+      <scope id="1049346859914427823" at="37,7,39,283">
+        <var name="_reporter_2309309498" id="1049346859914427823" />
+        <var name="errorTarget" id="1049346859914427823" />
+      </scope>
+      <scope id="4957503999940792880" at="43,0,46,0" />
+      <scope id="4957503999940792880" at="46,0,49,0">
+        <var name="argument" id="4957503999940792880" />
+      </scope>
+      <scope id="4957503999940792880" at="49,0,52,0" />
+      <scope id="4957503999940792921" at="30,209,34,7" />
+      <scope id="1049346859914427764" at="36,94,40,7" />
+      <scope id="4957503999940792881" at="28,116,41,5">
+        <var name="mockComponent" id="4957503999940792930" />
+      </scope>
+      <scope id="4957503999940792880" at="28,0,43,0">
+        <var name="seq" id="4957503999940792880" />
+        <var name="status" id="4957503999940792880" />
+        <var name="typeCheckingContext" id="4957503999940792880" />
+      </scope>
+      <unit id="4957503999940792880" at="58,0,61,0" name="com.mbeddr.ext.components.mock.typesystem.check_SequenceExpectation_NonTypesystemRule$PROPS" />
+      <unit id="4957503999940792880" at="62,0,65,0" name="com.mbeddr.ext.components.mock.typesystem.check_SequenceExpectation_NonTypesystemRule$LINKS" />
+      <unit id="4957503999940792880" at="53,0,57,0" name="com.mbeddr.ext.components.mock.typesystem.check_SequenceExpectation_NonTypesystemRule$CONCEPTS" />
+      <unit id="4957503999940792880" at="25,0,66,0" name="com.mbeddr.ext.components.mock.typesystem.check_SequenceExpectation_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/6307143892175830910">
+    <file name="TypesystemDescriptor.java">
+      <node id="6307143892175830910" at="31,5,32,87" concept="7" />
+      <node id="6307143892175830910" at="32,87,33,47" concept="3" />
+      <node id="6307143892175830910" at="30,5,34,5" concept="0" />
+      <scope id="6307143892175830910" at="31,5,33,47">
+        <var name="inferenceRule" id="6307143892175830910" />
+      </scope>
+    </file>
+    <file name="typeof_StubCounterExpr_InferenceRule.java">
+      <node id="6307143892175830917" at="21,7,22,47" concept="7" />
+      <node id="6307143892175830917" at="22,47,23,209" concept="7" />
+      <node id="6307143892175830917" at="23,209,24,292" concept="3" />
+      <node id="6307143892175830910" at="28,50,29,39" concept="8" />
+      <node id="6307143892175830910" at="31,68,32,102" concept="8" />
+      <node id="6307143892175830910" at="34,30,35,17" concept="8" />
+      <node id="6307143892175830922" at="37,61,38,30" concept="7" />
+      <node id="6307143892175830922" at="38,30,39,227" concept="7" />
+      <node id="6307143892175830922" at="39,227,40,34" concept="3" />
+      <node id="6307143892175830922" at="40,34,41,24" concept="8" />
+      <node id="6307143892175830910" at="45,0,46,0" concept="10" trace="StubCounterExpr$YB" />
+      <node id="6307143892175830910" at="17,0,19,0" concept="1" trace="typeof_StubCounterExpr_InferenceRule#()V" />
+      <node id="6307143892175830910" at="28,0,31,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6307143892175830910" at="31,0,34,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6307143892175830910" at="34,0,37,0" concept="6" trace="overrides#()Z" />
+      <node id="6307143892175830917" at="20,59,25,7" concept="0" />
+      <node id="6307143892175830922" at="37,0,43,0" concept="11" trace="_quotation_createNode_q66tl1_a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6307143892175830917" at="19,116,26,5" concept="5" />
+      <node id="6307143892175830910" at="19,0,28,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6307143892175830910" at="17,49,17,49" />
+      <scope id="6307143892175830910" at="28,50,29,39" />
+      <scope id="6307143892175830910" at="31,68,32,102" />
+      <scope id="6307143892175830910" at="34,30,35,17" />
+      <scope id="6307143892175830910" at="17,0,19,0" />
+      <scope id="6307143892175830917" at="21,7,24,292">
+        <var name="_info_12389875345" id="6307143892175830917" />
+        <var name="_nodeToCheck_1029348928467" id="6307143892175830917" />
+      </scope>
+      <scope id="6307143892175830910" at="28,0,31,0" />
+      <scope id="6307143892175830910" at="31,0,34,0">
+        <var name="argument" id="6307143892175830910" />
+      </scope>
+      <scope id="6307143892175830910" at="34,0,37,0" />
+      <scope id="6307143892175830922" at="37,61,41,24">
+        <var name="nb" id="6307143892175830922" />
+        <var name="quotedNode_1" id="6307143892175830922" />
+      </scope>
+      <scope id="6307143892175830917" at="20,59,25,7" />
+      <scope id="6307143892175830922" at="37,0,43,0" />
+      <scope id="6307143892175830911" at="19,116,26,5" />
+      <scope id="6307143892175830910" at="19,0,28,0">
+        <var name="sce" id="6307143892175830910" />
+        <var name="status" id="6307143892175830910" />
+        <var name="typeCheckingContext" id="6307143892175830910" />
+      </scope>
+      <unit id="6307143892175830910" at="44,0,47,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_StubCounterExpr_InferenceRule$CONCEPTS" />
+      <unit id="6307143892175830910" at="16,0,48,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_StubCounterExpr_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/6329057548770953996">
+    <file name="TypesystemDescriptor.java">
+      <node id="6329057548770953996" at="35,5,36,81" concept="7" />
+      <node id="6329057548770953996" at="36,81,37,47" concept="3" />
+      <node id="6329057548770953996" at="34,5,38,5" concept="0" />
+      <scope id="6329057548770953996" at="35,5,37,47">
+        <var name="inferenceRule" id="6329057548770953996" />
+      </scope>
+    </file>
+    <file name="typeof_StubPhase_InferenceRule.java">
+      <node id="6329057548770954023" at="20,5,21,44" concept="7" />
+      <node id="6329057548770954023" at="21,44,22,207" concept="7" />
+      <node id="6329057548770954023" at="22,207,23,428" concept="3" />
+      <node id="6329057548770953996" at="26,50,27,33" concept="8" />
+      <node id="6329057548770953996" at="29,68,30,102" concept="8" />
+      <node id="6329057548770953996" at="32,30,33,17" concept="8" />
+      <node id="6329057548770953996" at="37,0,38,0" concept="10" trace="StubPhase$sv" />
+      <node id="6329057548770953996" at="17,0,19,0" concept="1" trace="typeof_StubPhase_InferenceRule#()V" />
+      <node id="6329057548770953996" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6329057548770953996" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6329057548770953996" at="32,0,35,0" concept="6" trace="overrides#()Z" />
+      <node id="6329057548770954023" at="19,115,24,5" concept="0" />
+      <node id="6329057548770953996" at="19,0,26,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6329057548770953996" at="17,43,17,43" />
+      <scope id="6329057548770953996" at="26,50,27,33" />
+      <scope id="6329057548770953996" at="29,68,30,102" />
+      <scope id="6329057548770953996" at="32,30,33,17" />
+      <scope id="6329057548770953996" at="17,0,19,0" />
+      <scope id="6329057548770954023" at="20,5,23,428">
+        <var name="_info_12389875345" id="6329057548770954023" />
+        <var name="_nodeToCheck_1029348928467" id="6329057548770954023" />
+      </scope>
+      <scope id="6329057548770953996" at="26,0,29,0" />
+      <scope id="6329057548770953996" at="29,0,32,0">
+        <var name="argument" id="6329057548770953996" />
+      </scope>
+      <scope id="6329057548770953996" at="32,0,35,0" />
+      <scope id="6329057548770953997" at="19,115,24,5" />
+      <scope id="6329057548770953996" at="19,0,26,0">
+        <var name="sp" id="6329057548770953996" />
+        <var name="status" id="6329057548770953996" />
+        <var name="typeCheckingContext" id="6329057548770953996" />
+      </scope>
+      <unit id="6329057548770953996" at="36,0,39,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_StubPhase_InferenceRule$CONCEPTS" />
+      <unit id="6329057548770953996" at="16,0,40,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_StubPhase_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/6329057548770962151">
+    <file name="TypesystemDescriptor.java">
+      <node id="6329057548770962151" at="51,5,52,101" concept="7" />
+      <node id="6329057548770962151" at="52,101,53,55" concept="3" />
+      <node id="6329057548770962151" at="50,5,54,5" concept="0" />
+      <scope id="6329057548770962151" at="51,5,53,55">
+        <var name="nonTypesystemRule" id="6329057548770962151" />
+      </scope>
+    </file>
+    <file name="check_PhaseChangeTrigger_NonTypesystemRule.java">
+      <node id="6329057548770962187" at="29,116,30,94" concept="7" />
+      <node id="6329057548770962261" at="32,7,33,85" concept="7" />
+      <node id="6329057548770962261" at="33,85,34,268" concept="7" />
+      <node id="6329057548770967858" at="35,9,36,176" concept="7" />
+      <node id="6329057548770967859" at="36,176,37,62" concept="3" />
+      <node id="6329057548770967858" at="37,62,38,71" concept="3" />
+      <node id="6329057548770962488" at="43,9,44,87" concept="7" />
+      <node id="6329057548770962488" at="44,87,45,270" concept="7" />
+      <node id="6329057548770967867" at="46,11,47,178" concept="7" />
+      <node id="6329057548770967868" at="47,178,48,64" concept="3" />
+      <node id="6329057548770967867" at="48,64,49,73" concept="3" />
+      <node id="6329057548771092228" at="53,5,54,0" concept="9" />
+      <node id="6329057548771092234" at="56,7,57,66" concept="7" />
+      <node id="6329057548771092234" at="57,66,58,256" concept="7" />
+      <node id="6329057548770962151" at="62,50,63,42" concept="8" />
+      <node id="6329057548770962151" at="65,68,66,102" concept="8" />
+      <node id="6329057548770962151" at="68,30,69,17" concept="8" />
+      <node id="6329057548770962151" at="73,0,74,0" concept="10" trace="Runnable$OJ" />
+      <node id="6329057548770962151" at="74,0,75,0" concept="10" trace="PhaseType$IP" />
+      <node id="6329057548770962151" at="75,0,76,0" concept="10" trace="Component$va" />
+      <node id="6329057548770962151" at="76,0,77,0" concept="10" trace="PhaseChangeTrigger$yf" />
+      <node id="6329057548770962151" at="80,0,81,0" concept="10" trace="name$MnvL" />
+      <node id="6329057548770962151" at="84,0,85,0" concept="10" trace="arguments$6da0" />
+      <node id="6329057548770962151" at="85,0,86,0" concept="10" trace="type$sXU3" />
+      <node id="6329057548770962151" at="86,0,87,0" concept="10" trace="trigger$4EcB" />
+      <node id="6329057548770962151" at="27,0,29,0" concept="1" trace="check_PhaseChangeTrigger_NonTypesystemRule#()V" />
+      <node id="6329057548770962151" at="62,0,65,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6329057548770962151" at="65,0,68,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6329057548770962151" at="68,0,71,0" concept="6" trace="overrides#()Z" />
+      <node id="6329057548771092234" at="55,308,59,7" concept="0" />
+      <node id="6329057548770967858" at="34,268,39,9" concept="0" />
+      <node id="6329057548770967867" at="45,270,50,11" concept="0" />
+      <node id="6329057548771092230" at="54,0,60,5" concept="5" />
+      <node id="6329057548770962261" at="31,106,40,7" concept="0" />
+      <node id="6329057548770962488" at="42,211,51,9" concept="0" />
+      <node id="6329057548770962291" at="41,12,52,7" concept="5" />
+      <node id="6329057548770962289" at="41,10,53,5" concept="0" />
+      <node id="6329057548770962197" at="30,94,53,5" concept="5" />
+      <node id="6329057548770962151" at="29,0,62,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6329057548770962151" at="27,55,27,55" />
+      <scope id="6329057548770962151" at="62,50,63,42" />
+      <scope id="6329057548770962151" at="65,68,66,102" />
+      <scope id="6329057548770962151" at="68,30,69,17" />
+      <scope id="6329057548770962151" at="27,0,29,0" />
+      <scope id="6329057548771092234" at="56,7,58,256">
+        <var name="_reporter_2309309498" id="6329057548771092234" />
+        <var name="errorTarget" id="6329057548771092234" />
+      </scope>
+      <scope id="6329057548770967858" at="35,9,38,71">
+        <var name="intentionProvider" id="6329057548770967858" />
+      </scope>
+      <scope id="6329057548770967867" at="46,11,49,73">
+        <var name="intentionProvider" id="6329057548770967867" />
+      </scope>
+      <scope id="6329057548770962151" at="62,0,65,0" />
+      <scope id="6329057548770962151" at="65,0,68,0">
+        <var name="argument" id="6329057548770962151" />
+      </scope>
+      <scope id="6329057548770962151" at="68,0,71,0" />
+      <scope id="6329057548771092231" at="55,308,59,7" />
+      <scope id="6329057548770962261" at="32,7,39,9">
+        <var name="_reporter_2309309498" id="6329057548770962261" />
+        <var name="errorTarget" id="6329057548770962261" />
+      </scope>
+      <scope id="6329057548770962488" at="43,9,50,11">
+        <var name="_reporter_2309309498" id="6329057548770962488" />
+        <var name="errorTarget" id="6329057548770962488" />
+      </scope>
+      <scope id="6329057548770962198" at="31,106,40,7" />
+      <scope id="6329057548770962293" at="42,211,51,9" />
+      <scope id="6329057548770962290" at="41,12,52,7" />
+      <scope id="6329057548770962152" at="29,116,60,5">
+        <var name="runnable" id="6329057548770962188" />
+      </scope>
+      <scope id="6329057548770962151" at="29,0,62,0">
+        <var name="pct" id="6329057548770962151" />
+        <var name="status" id="6329057548770962151" />
+        <var name="typeCheckingContext" id="6329057548770962151" />
+      </scope>
+      <unit id="6329057548770962151" at="79,0,82,0" name="com.mbeddr.ext.components.mock.typesystem.check_PhaseChangeTrigger_NonTypesystemRule$PROPS" />
+      <unit id="6329057548770962151" at="83,0,88,0" name="com.mbeddr.ext.components.mock.typesystem.check_PhaseChangeTrigger_NonTypesystemRule$LINKS" />
+      <unit id="6329057548770962151" at="72,0,78,0" name="com.mbeddr.ext.components.mock.typesystem.check_PhaseChangeTrigger_NonTypesystemRule$CONCEPTS" />
+      <unit id="6329057548770962151" at="26,0,89,0" name="com.mbeddr.ext.components.mock.typesystem.check_PhaseChangeTrigger_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/6329057548770962493">
+    <file name="FixPhaseTrigger_QuickFix.java">
+      <node id="6329057548770962493" at="18,37,19,136" concept="12" />
+      <node id="6329057548770967864" at="21,44,22,36" concept="8" />
+      <node id="6329057548770967416" at="24,35,25,150" concept="3" />
+      <node id="6329057548770967846" at="25,150,26,156" concept="7" />
+      <node id="6329057548770967513" at="26,156,27,68" concept="3" />
+      <node id="6329057548770967556" at="27,68,28,237" concept="3" />
+      <node id="6329057548770967711" at="28,237,29,156" concept="7" />
+      <node id="6329057548770967651" at="29,156,30,68" concept="3" />
+      <node id="6329057548770967752" at="30,68,31,237" concept="3" />
+      <node id="6329057548770962493" at="35,0,36,0" concept="10" trace="arguments$6da0" />
+      <node id="6329057548770962493" at="36,0,37,0" concept="10" trace="type$sXU3" />
+      <node id="6329057548770962493" at="40,0,41,0" concept="10" trace="Argument$9m" />
+      <node id="6329057548770962493" at="44,0,45,0" concept="10" trace="name$MnvL" />
+      <node id="6329057548770962493" at="18,0,21,0" concept="1" trace="FixPhaseTrigger_QuickFix#()V" />
+      <node id="6329057548770962493" at="21,0,24,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="6329057548770962493" at="24,0,33,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6329057548770962493" at="18,37,19,136" />
+      <scope id="6329057548770967863" at="21,44,22,36" />
+      <scope id="6329057548770962493" at="18,0,21,0" />
+      <scope id="6329057548770962493" at="21,0,24,0">
+        <var name="node" id="6329057548770962493" />
+      </scope>
+      <scope id="6329057548770962495" at="24,35,31,237">
+        <var name="newArg" id="6329057548770967712" />
+        <var name="oldArg" id="6329057548770967847" />
+      </scope>
+      <scope id="6329057548770962493" at="24,0,33,0">
+        <var name="node" id="6329057548770962493" />
+      </scope>
+      <unit id="6329057548770962493" at="39,0,42,0" name="com.mbeddr.ext.components.mock.typesystem.FixPhaseTrigger_QuickFix$CONCEPTS" />
+      <unit id="6329057548770962493" at="43,0,46,0" name="com.mbeddr.ext.components.mock.typesystem.FixPhaseTrigger_QuickFix$PROPS" />
+      <unit id="6329057548770962493" at="34,0,38,0" name="com.mbeddr.ext.components.mock.typesystem.FixPhaseTrigger_QuickFix$LINKS" />
+      <unit id="6329057548770962493" at="17,0,47,0" name="com.mbeddr.ext.components.mock.typesystem.FixPhaseTrigger_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/6329057548771044770">
+    <file name="TypesystemDescriptor.java">
+      <node id="6329057548771044770" at="23,5,24,90" concept="7" />
+      <node id="6329057548771044770" at="24,90,25,47" concept="3" />
+      <node id="6329057548771044770" at="22,5,26,5" concept="0" />
+      <scope id="6329057548771044770" at="23,5,25,47">
+        <var name="inferenceRule" id="6329057548771044770" />
+      </scope>
+    </file>
+    <file name="typeof_PhaseRefExpression_InferenceRule.java">
+      <node id="6329057548771044797" at="21,5,22,45" concept="7" />
+      <node id="6329057548771044797" at="22,45,23,207" concept="7" />
+      <node id="6329057548771044797" at="23,207,24,438" concept="3" />
+      <node id="6329057548771044770" at="27,50,28,42" concept="8" />
+      <node id="6329057548771044770" at="30,68,31,102" concept="8" />
+      <node id="6329057548771044770" at="33,30,34,17" concept="8" />
+      <node id="6329057548771044770" at="38,0,39,0" concept="10" trace="phase$raSP" />
+      <node id="6329057548771044770" at="42,0,43,0" concept="10" trace="PhaseRefExpression$uj" />
+      <node id="6329057548771044770" at="18,0,20,0" concept="1" trace="typeof_PhaseRefExpression_InferenceRule#()V" />
+      <node id="6329057548771044770" at="27,0,30,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6329057548771044770" at="30,0,33,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6329057548771044770" at="33,0,36,0" concept="6" trace="overrides#()Z" />
+      <node id="6329057548771044797" at="20,116,25,5" concept="0" />
+      <node id="6329057548771044770" at="20,0,27,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6329057548771044770" at="18,52,18,52" />
+      <scope id="6329057548771044770" at="27,50,28,42" />
+      <scope id="6329057548771044770" at="30,68,31,102" />
+      <scope id="6329057548771044770" at="33,30,34,17" />
+      <scope id="6329057548771044770" at="18,0,20,0" />
+      <scope id="6329057548771044797" at="21,5,24,438">
+        <var name="_info_12389875345" id="6329057548771044797" />
+        <var name="_nodeToCheck_1029348928467" id="6329057548771044797" />
+      </scope>
+      <scope id="6329057548771044770" at="27,0,30,0" />
+      <scope id="6329057548771044770" at="30,0,33,0">
+        <var name="argument" id="6329057548771044770" />
+      </scope>
+      <scope id="6329057548771044770" at="33,0,36,0" />
+      <scope id="6329057548771044771" at="20,116,25,5" />
+      <scope id="6329057548771044770" at="20,0,27,0">
+        <var name="pre" id="6329057548771044770" />
+        <var name="status" id="6329057548771044770" />
+        <var name="typeCheckingContext" id="6329057548771044770" />
+      </scope>
+      <unit id="6329057548771044770" at="37,0,40,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_PhaseRefExpression_InferenceRule$LINKS" />
+      <unit id="6329057548771044770" at="41,0,44,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_PhaseRefExpression_InferenceRule$CONCEPTS" />
+      <unit id="6329057548771044770" at="17,0,45,0" name="com.mbeddr.ext.components.mock.typesystem.typeof_PhaseRefExpression_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/9020401522750521823">
+    <file name="TypesystemDescriptor.java">
+      <node id="9020401522750521823" at="47,5,48,96" concept="7" />
+      <node id="9020401522750521823" at="48,96,49,55" concept="3" />
+      <node id="9020401522750521823" at="46,5,50,5" concept="0" />
+      <scope id="9020401522750521823" at="47,5,49,55">
+        <var name="nonTypesystemRule" id="9020401522750521823" />
+      </scope>
+    </file>
+    <file name="check_MockComponent_NonTypesystemRule.java">
+      <node id="2707197998271156362" at="26,219,27,17" concept="2" />
+      <node id="9020401522750522042" at="29,7,30,66" concept="7" />
+      <node id="9020401522750522042" at="30,66,31,302" concept="7" />
+      <node id="9020401522750521823" at="35,50,36,37" concept="8" />
+      <node id="9020401522750521823" at="38,68,39,102" concept="8" />
+      <node id="9020401522750521823" at="41,30,42,17" concept="8" />
+      <node id="9020401522750521823" at="46,0,47,0" concept="10" trace="Runnable$OJ" />
+      <node id="9020401522750521823" at="47,0,48,0" concept="10" trace="OnInitTrigger$5e" />
+      <node id="9020401522750521823" at="48,0,49,0" concept="10" trace="Field$Au" />
+      <node id="9020401522750521823" at="49,0,50,0" concept="10" trace="Port$R5" />
+      <node id="9020401522750521823" at="50,0,51,0" concept="10" trace="Expectation$50" />
+      <node id="9020401522750521823" at="51,0,52,0" concept="10" trace="MockComponent$E0" />
+      <node id="9020401522750521823" at="55,0,56,0" concept="10" trace="trigger$4EcB" />
+      <node id="9020401522750521823" at="56,0,57,0" concept="10" trace="contents$Hh35" />
+      <node id="9020401522750521823" at="22,0,24,0" concept="1" trace="check_MockComponent_NonTypesystemRule#()V" />
+      <node id="2707197998271071531" at="25,288,28,7" concept="5" />
+      <node id="9020401522750521823" at="35,0,38,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9020401522750521823" at="38,0,41,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9020401522750521823" at="41,0,44,0" concept="6" trace="overrides#()Z" />
+      <node id="9020401522750522042" at="28,7,32,7" concept="0" />
+      <node id="9020401522750522047" at="24,115,33,5" concept="4" />
+      <node id="9020401522750521823" at="24,0,35,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9020401522750521823" at="22,50,22,50" />
+      <scope id="2707197998271071534" at="26,219,27,17" />
+      <scope id="9020401522750521823" at="35,50,36,37" />
+      <scope id="9020401522750521823" at="38,68,39,102" />
+      <scope id="9020401522750521823" at="41,30,42,17" />
+      <scope id="9020401522750521823" at="22,0,24,0" />
+      <scope id="9020401522750522042" at="29,7,31,302">
+        <var name="_reporter_2309309498" id="9020401522750522042" />
+        <var name="errorTarget" id="9020401522750522042" />
+      </scope>
+      <scope id="9020401522750521823" at="35,0,38,0" />
+      <scope id="9020401522750521823" at="38,0,41,0">
+        <var name="argument" id="9020401522750521823" />
+      </scope>
+      <scope id="9020401522750521823" at="41,0,44,0" />
+      <scope id="9020401522750522050" at="25,288,32,7" />
+      <scope id="9020401522750521824" at="24,115,33,5" />
+      <scope id="9020401522750522047" at="24,115,33,5">
+        <var name="c" id="9020401522750522048" />
+      </scope>
+      <scope id="9020401522750521823" at="24,0,35,0">
+        <var name="mc" id="9020401522750521823" />
+        <var name="status" id="9020401522750521823" />
+        <var name="typeCheckingContext" id="9020401522750521823" />
+      </scope>
+      <unit id="9020401522750521823" at="54,0,58,0" name="com.mbeddr.ext.components.mock.typesystem.check_MockComponent_NonTypesystemRule$LINKS" />
+      <unit id="9020401522750521823" at="45,0,53,0" name="com.mbeddr.ext.components.mock.typesystem.check_MockComponent_NonTypesystemRule$CONCEPTS" />
+      <unit id="9020401522750521823" at="21,0,59,0" name="com.mbeddr.ext.components.mock.typesystem.check_MockComponent_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:5190661b-85fb-4b6a-a4bc-03847ee8258c(com.mbeddr.ext.components.mock.typesystem)/9020401522750545966">
+    <file name="TypesystemDescriptor.java">
+      <node id="9020401522750545966" at="43,5,44,95" concept="7" />
+      <node id="9020401522750545966" at="44,95,45,55" concept="3" />
+      <node id="9020401522750545966" at="42,5,46,5" concept="0" />
+      <scope id="9020401522750545966" at="43,5,45,55">
+        <var name="nonTypesystemRule" id="9020401522750545966" />
+      </scope>
+    </file>
+    <file name="check_ExpectNoCall_NonTypesystemRule.java">
+      <node id="9020401522750546002" at="24,116,25,92" concept="7" />
+      <node id="9020401522750546111" at="27,7,28,66" concept="7" />
+      <node id="9020401522750546111" at="28,66,29,267" concept="7" />
+      <node id="9020401522750545966" at="33,50,34,36" concept="8" />
+      <node id="9020401522750545966" at="36,68,37,102" concept="8" />
+      <node id="9020401522750545966" at="39,30,40,17" concept="8" />
+      <node id="9020401522750545966" at="44,0,45,0" concept="10" trace="MockComponent$E0" />
+      <node id="9020401522750545966" at="45,0,46,0" concept="10" trace="ExpectTotalNoOfCalls$8k" />
+      <node id="9020401522750545966" at="46,0,47,0" concept="10" trace="ExpectNoCall$6W" />
+      <node id="9020401522750545966" at="50,0,51,0" concept="10" trace="contents$Hh35" />
+      <node id="9020401522750545966" at="22,0,24,0" concept="1" trace="check_ExpectNoCall_NonTypesystemRule#()V" />
+      <node id="9020401522750545966" at="33,0,36,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9020401522750545966" at="36,0,39,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9020401522750545966" at="39,0,42,0" concept="6" trace="overrides#()Z" />
+      <node id="9020401522750546111" at="26,165,30,7" concept="0" />
+      <node id="9020401522750546012" at="25,92,31,5" concept="5" />
+      <node id="9020401522750545966" at="24,0,33,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9020401522750545966" at="22,49,22,49" />
+      <scope id="9020401522750545966" at="33,50,34,36" />
+      <scope id="9020401522750545966" at="36,68,37,102" />
+      <scope id="9020401522750545966" at="39,30,40,17" />
+      <scope id="9020401522750545966" at="22,0,24,0" />
+      <scope id="9020401522750546111" at="27,7,29,267">
+        <var name="_reporter_2309309498" id="9020401522750546111" />
+        <var name="errorTarget" id="9020401522750546111" />
+      </scope>
+      <scope id="9020401522750545966" at="33,0,36,0" />
+      <scope id="9020401522750545966" at="36,0,39,0">
+        <var name="argument" id="9020401522750545966" />
+      </scope>
+      <scope id="9020401522750545966" at="39,0,42,0" />
+      <scope id="9020401522750546013" at="26,165,30,7" />
+      <scope id="9020401522750545967" at="24,116,31,5">
+        <var name="m" id="9020401522750546003" />
+      </scope>
+      <scope id="9020401522750545966" at="24,0,33,0">
+        <var name="enc" id="9020401522750545966" />
+        <var name="status" id="9020401522750545966" />
+        <var name="typeCheckingContext" id="9020401522750545966" />
+      </scope>
+      <unit id="9020401522750545966" at="49,0,52,0" name="com.mbeddr.ext.components.mock.typesystem.check_ExpectNoCall_NonTypesystemRule$LINKS" />
+      <unit id="9020401522750545966" at="43,0,48,0" name="com.mbeddr.ext.components.mock.typesystem.check_ExpectNoCall_NonTypesystemRule$CONCEPTS" />
+      <unit id="9020401522750545966" at="21,0,53,0" name="com.mbeddr.ext.components.mock.typesystem.check_ExpectNoCall_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

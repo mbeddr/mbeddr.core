@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/4160126263863194133">
+    <file name="com.mbeddr.platform.xml">
+      <unit id="4160126263863194133" at="1,0,31000,10" name="com.mbeddr.mpsutil.dev.build.com$mbeddr$platform" />
+    </file>
+  </root>
+  <root nodeRef="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/5634794703879484623">
+    <file name="com.mbeddr.mpsutil.actionsfilter.xml">
+      <unit id="5634794703879484623" at="1,0,715,10" name="com.mbeddr.mpsutil.dev.build.com$mbeddr$mpsutil$actionsfilter" />
+    </file>
+  </root>
+  <root nodeRef="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/7461614749595254338">
+    <file name="com.mbeddr.platform.distribution.xml">
+      <unit id="7461614749595254338" at="1,0,69,10" name="com.mbeddr.mpsutil.dev.build.com$mbeddr$platform$distribution" />
+    </file>
+  </root>
+</debug-info>
+

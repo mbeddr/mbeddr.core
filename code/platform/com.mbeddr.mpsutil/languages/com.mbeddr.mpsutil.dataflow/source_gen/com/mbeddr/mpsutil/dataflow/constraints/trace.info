@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,36,0" name="com.mbeddr.mpsutil.dataflow.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e66c3e4c-0248-4bff-b6a9-a7b41fdcf4ea(com.mbeddr.mpsutil.dataflow.constraints)/2538651910168544300">
+    <file name="IInterProceduralEmitStatement_Constraints.java">
+      <node id="2538651910168544300" at="24,103,25,66" concept="9" />
+      <node id="2538651910168544300" at="28,127,29,128" concept="4" />
+      <node id="2538651910168544300" at="29,128,30,0" concept="6" />
+      <node id="2538651910168544300" at="31,55,32,71" concept="1" />
+      <node id="2538651910168544300" at="33,9,34,0" concept="6" />
+      <node id="2538651910168544300" at="34,0,35,22" concept="5" />
+      <node id="6768392667014077662" at="40,128,41,266" concept="5" />
+      <node id="2538651910168544300" at="43,0,44,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="2538651910168544300" at="46,0,47,0" concept="7" trace="IInterProceduralEmitStatement$yV" />
+      <node id="2538651910168544300" at="47,0,48,0" concept="7" trace="DataFlowBuilderDeclaration$NP" />
+      <node id="2538651910168544300" at="48,0,49,0" concept="7" trace="InterProcedural_BuilderMode$qy" />
+      <node id="2538651910168544300" at="52,0,53,0" concept="7" trace="modes$Mjcf" />
+      <node id="2538651910168544300" at="30,0,33,9" concept="2" />
+      <node id="2538651910168544300" at="40,0,43,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="2538651910168544300" at="27,0,37,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2538651910168544300" at="25,66,37,7" concept="1" />
+      <node id="2538651910168544300" at="24,0,39,0" concept="0" trace="IInterProceduralEmitStatement_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2538651910168544300" at="31,55,32,71" />
+      <scope id="6768392667014077661" at="40,128,41,266" />
+      <scope id="2538651910168544300" at="40,0,43,0">
+        <var name="childConcept" id="2538651910168544300" />
+        <var name="link" id="2538651910168544300" />
+        <var name="node" id="2538651910168544300" />
+        <var name="parentNode" id="2538651910168544300" />
+      </scope>
+      <scope id="2538651910168544300" at="28,127,35,22">
+        <var name="result" id="2538651910168544300" />
+      </scope>
+      <scope id="2538651910168544300" at="27,0,37,0">
+        <var name="checkingNodeContext" id="2538651910168544300" />
+        <var name="context" id="2538651910168544300" />
+      </scope>
+      <scope id="2538651910168544300" at="24,103,37,7" />
+      <scope id="2538651910168544300" at="24,0,39,0">
+        <var name="initContext" id="2538651910168544300" />
+      </scope>
+      <unit id="2538651910168544300" at="51,0,54,0" name="com.mbeddr.mpsutil.dataflow.constraints.IInterProceduralEmitStatement_Constraints$LINKS" />
+      <unit id="2538651910168544300" at="45,0,50,0" name="com.mbeddr.mpsutil.dataflow.constraints.IInterProceduralEmitStatement_Constraints$CONCEPTS" />
+      <unit id="2538651910168544300" at="26,32,37,5" name="com.mbeddr.mpsutil.dataflow.constraints.IInterProceduralEmitStatement_Constraints$1" />
+      <unit id="2538651910168544300" at="23,0,55,0" name="com.mbeddr.mpsutil.dataflow.constraints.IInterProceduralEmitStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:e66c3e4c-0248-4bff-b6a9-a7b41fdcf4ea(com.mbeddr.mpsutil.dataflow.constraints)/2723386792962760405">
+    <file name="WithInterProceduralSupport_Constraints.java">
+      <node id="2723386792962760405" at="19,100,20,63" concept="9" />
+      <node id="2723386792962760405" at="23,126,24,62" concept="4" />
+      <node id="2723386792962760405" at="24,62,25,0" concept="6" />
+      <node id="2723386792962760405" at="26,55,27,70" concept="1" />
+      <node id="2723386792962760405" at="28,9,29,0" concept="6" />
+      <node id="2723386792962760405" at="29,0,30,22" concept="5" />
+      <node id="5190321398696162911" at="35,57,36,46" concept="5" />
+      <node id="2723386792962760405" at="38,0,39,0" concept="7" trace="canBeRootBreakingPoint" />
+      <node id="2723386792962760405" at="41,0,42,0" concept="7" trace="WithInterProceduralSupport$cj" />
+      <node id="2723386792962760405" at="25,0,28,9" concept="2" />
+      <node id="2723386792962760405" at="35,0,38,0" concept="8" trace="staticCanBeARoot#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="2723386792962760405" at="22,0,32,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeRoot;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="2723386792962760405" at="20,63,32,7" concept="1" />
+      <node id="2723386792962760405" at="19,0,34,0" concept="0" trace="WithInterProceduralSupport_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="2723386792962760405" at="26,55,27,70" />
+      <scope id="2723386792962760407" at="35,57,36,46" />
+      <scope id="2723386792962760405" at="35,0,38,0">
+        <var name="model" id="2723386792962760405" />
+      </scope>
+      <scope id="2723386792962760405" at="23,126,30,22">
+        <var name="result" id="2723386792962760405" />
+      </scope>
+      <scope id="2723386792962760405" at="22,0,32,0">
+        <var name="checkingNodeContext" id="2723386792962760405" />
+        <var name="context" id="2723386792962760405" />
+      </scope>
+      <scope id="2723386792962760405" at="19,100,32,7" />
+      <scope id="2723386792962760405" at="19,0,34,0">
+        <var name="initContext" id="2723386792962760405" />
+      </scope>
+      <unit id="2723386792962760405" at="40,0,43,0" name="com.mbeddr.mpsutil.dataflow.constraints.WithInterProceduralSupport_Constraints$CONCEPTS" />
+      <unit id="2723386792962760405" at="21,21,32,5" name="com.mbeddr.mpsutil.dataflow.constraints.WithInterProceduralSupport_Constraints$1" />
+      <unit id="2723386792962760405" at="18,0,44,0" name="com.mbeddr.mpsutil.dataflow.constraints.WithInterProceduralSupport_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:e66c3e4c-0248-4bff-b6a9-a7b41fdcf4ea(com.mbeddr.mpsutil.dataflow.constraints)/4001581004620316265">
+    <file name="InterProceduralEmitStatement_Constraints.java">
+      <node id="4001581004620316265" at="23,102,24,65" concept="9" />
+      <node id="4001581004620316265" at="27,127,28,128" concept="4" />
+      <node id="4001581004620316265" at="28,128,29,0" concept="6" />
+      <node id="4001581004620316265" at="30,55,31,71" concept="1" />
+      <node id="4001581004620316265" at="32,9,33,0" concept="6" />
+      <node id="4001581004620316265" at="33,0,34,22" concept="5" />
+      <node id="6768392667014077683" at="39,128,40,266" concept="5" />
+      <node id="4001581004620316265" at="42,0,43,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="4001581004620316265" at="45,0,46,0" concept="7" trace="InterProceduralEmitStatement$Ah" />
+      <node id="4001581004620316265" at="46,0,47,0" concept="7" trace="DataFlowBuilderDeclaration$NP" />
+      <node id="4001581004620316265" at="47,0,48,0" concept="7" trace="InterProcedural_BuilderMode$qy" />
+      <node id="4001581004620316265" at="51,0,52,0" concept="7" trace="modes$Mjcf" />
+      <node id="4001581004620316265" at="29,0,32,9" concept="2" />
+      <node id="4001581004620316265" at="39,0,42,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="4001581004620316265" at="26,0,36,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="4001581004620316265" at="24,65,36,7" concept="1" />
+      <node id="4001581004620316265" at="23,0,38,0" concept="0" trace="InterProceduralEmitStatement_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="4001581004620316265" at="30,55,31,71" />
+      <scope id="6768392667014077682" at="39,128,40,266" />
+      <scope id="4001581004620316265" at="39,0,42,0">
+        <var name="childConcept" id="4001581004620316265" />
+        <var name="link" id="4001581004620316265" />
+        <var name="node" id="4001581004620316265" />
+        <var name="parentNode" id="4001581004620316265" />
+      </scope>
+      <scope id="4001581004620316265" at="27,127,34,22">
+        <var name="result" id="4001581004620316265" />
+      </scope>
+      <scope id="4001581004620316265" at="26,0,36,0">
+        <var name="checkingNodeContext" id="4001581004620316265" />
+        <var name="context" id="4001581004620316265" />
+      </scope>
+      <scope id="4001581004620316265" at="23,102,36,7" />
+      <scope id="4001581004620316265" at="23,0,38,0">
+        <var name="initContext" id="4001581004620316265" />
+      </scope>
+      <unit id="4001581004620316265" at="50,0,53,0" name="com.mbeddr.mpsutil.dataflow.constraints.InterProceduralEmitStatement_Constraints$LINKS" />
+      <unit id="4001581004620316265" at="44,0,49,0" name="com.mbeddr.mpsutil.dataflow.constraints.InterProceduralEmitStatement_Constraints$CONCEPTS" />
+      <unit id="4001581004620316265" at="25,32,36,5" name="com.mbeddr.mpsutil.dataflow.constraints.InterProceduralEmitStatement_Constraints$1" />
+      <unit id="4001581004620316265" at="22,0,54,0" name="com.mbeddr.mpsutil.dataflow.constraints.InterProceduralEmitStatement_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

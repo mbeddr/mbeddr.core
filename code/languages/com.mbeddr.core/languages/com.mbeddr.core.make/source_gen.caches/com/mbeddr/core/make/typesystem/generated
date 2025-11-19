@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="7obnamsounu9ejngt83eo0s9fed94mq">
+  <files names="StringUtils.java:TypesystemDescriptor.java:check_Command_NonTypesystemRule.java:check_PlainTextFragment_NonTypesystemRule.java:check_Prerequisite_NonTypesystemRule.java:check_Target_NonTypesystemRule.java:check_VariableValue_NonTypesystemRule.java:check_Variable_NonTypesystemRule.java:fix_convertPlainTextToDirective_QuickFix.java:fix_convertPlainTextToEmptyLineBefore_QuickFix.java:fix_convertPlainTextToExportedVariable_QuickFix.java:fix_convertPlainTextToRule_QuickFix.java:fix_convertPlainTextToVariable_QuickFix.java:fix_emptyCommand_QuickFix.java:fix_emptyPrerequisite_QuickFix.java:fix_emptyTarget_QuickFix.java:fix_emptyVariableValue_QuickFix.java:fix_extractMacroFromPlainText_QuickFix.java:fix_extractRuleRefFromPlainText_QuickFix.java:fix_extractVariableRefFromPlainText_QuickFix.java:fix_lowerCaseVariable_QuickFix.java" />
+</product>
+

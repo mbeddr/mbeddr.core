@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-99yjzlf9ptdbr3lh7y0ctnfy6umhzdj">
+  <files names="IntentionsDescriptor.java:addUseResource_Intention.java:addVariable_Intention.java:markAsShared_Intention.java:toggleShared_Intention.java:wrapInAtomic_Intention.java" />
+</product>
+

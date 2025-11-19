@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:20cc3614-e1f0-4fc3-af3e-96bf2ce35dfb(com.mbeddr.spreadsheet.enumMigration)/7781501729853392595">
+    <file name="Alignment_MigrationUtils.java">
+      <node id="7781501729853392604" at="13,13,14,19" concept="0" />
+      <node id="7781501729853392607" at="15,13,16,19" concept="0" />
+      <node id="7781501729853392610" at="17,13,18,19" concept="0" />
+      <node id="7781501729853392613" at="19,13,20,19" concept="0" />
+      <node id="7781501729853392620" at="21,14,22,20" concept="0" />
+      <node id="7781501729853392632" at="27,15,28,212" concept="0" />
+      <node id="7781501729853392639" at="29,15,30,212" concept="0" />
+      <node id="7781501729853392646" at="31,15,32,212" concept="0" />
+      <node id="7781501729853392653" at="33,15,34,212" concept="0" />
+      <node id="7781501729853392662" at="35,14,36,20" concept="0" />
+      <node id="7781501729853392595" at="39,0,40,0" concept="1" trace="enumSwitchIndex" />
+      <node id="7781501729853392620" at="11,61,23,5" concept="3" />
+      <node id="7781501729853392659" at="25,59,37,5" concept="3" />
+      <node id="7781501729853392614" at="11,0,25,0" concept="2" trace="name#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <node id="7781501729853392624" at="25,0,39,0" concept="2" trace="fromName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="7781501729853392604" at="13,13,14,19" />
+      <scope id="7781501729853392607" at="15,13,16,19" />
+      <scope id="7781501729853392610" at="17,13,18,19" />
+      <scope id="7781501729853392613" at="19,13,20,19" />
+      <scope id="7781501729853392620" at="21,14,22,20" />
+      <scope id="7781501729853392631" at="27,15,28,212" />
+      <scope id="7781501729853392638" at="29,15,30,212" />
+      <scope id="7781501729853392645" at="31,15,32,212" />
+      <scope id="7781501729853392652" at="33,15,34,212" />
+      <scope id="7781501729853392661" at="35,14,36,20" />
+      <scope id="7781501729853392618" at="11,61,23,5" />
+      <scope id="7781501729853392658" at="25,59,37,5" />
+      <scope id="7781501729853392614" at="11,0,25,0">
+        <var name="enummember" id="7781501729853392615" />
+      </scope>
+      <scope id="7781501729853392624" at="25,0,39,0">
+        <var name="name" id="7781501729853392625" />
+      </scope>
+      <unit id="7781501729853392595" at="10,0,41,0" name="com.mbeddr.spreadsheet.enumMigration.Alignment_MigrationUtils" />
+    </file>
+  </root>
+</debug-info>
+

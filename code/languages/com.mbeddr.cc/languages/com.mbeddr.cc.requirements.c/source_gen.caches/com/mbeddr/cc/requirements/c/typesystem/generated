@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="4t6b9gmp4knwpfssq1y5n8sf2difb5o">
+  <files names="TypesystemDescriptor.java:check_RConstant_NonTypesystemRule.java:check_executeTestCase_NonTypesystemRule.java:typeof_DoubleSumExpr_InferenceRule.java:typeof_DoubleSumIterator_InferenceRule.java:typeof_PEqWord_InferenceRule.java:typeof_RCaclulationCall_InferenceRule.java:typeof_RConstantRef_InferenceRule.java:typeof_RConstant_InferenceRule.java:typeof_RParamRef_InferenceRule.java:typeof_RTestCase_InferenceRule.java:typeof_SumExpr_InferenceRule.java:typeof_SumIterator_InferenceRule.java:typeof_VarRef_InferenceRule.java" />
+</product>
+

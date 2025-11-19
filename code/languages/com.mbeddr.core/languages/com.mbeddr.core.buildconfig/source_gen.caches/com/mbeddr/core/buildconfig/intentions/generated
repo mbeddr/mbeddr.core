@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-demdevobe6ms5d418bb1iaj2bkk785x">
+  <files names="IntentionsDescriptor.java:addAllModulesFromModel_Intention.java:addExternalBuild_Intention.java:addExternalInclude_Intention.java:addExternalLibPath_Intention.java:addExternalLibrairies_Intention.java:addExternalSources_Intention.java:addLib_Intention.java:addPostProcessor_Intention.java:duplicateModelContent_Intention.java:duplicateRootContent_Intention.java:markAsNeverGenerate_Intention.java" />
+</product>
+

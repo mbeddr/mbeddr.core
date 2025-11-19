@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="com.mbeddr.mpsutil.spreferences.context.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="5e845763-f4ca-40bf-b31f-74e236ffed75/r:74e5c3ae-5486-4e56-a823-be4f6e17412b(com.mbeddr.mpsutil.spreferences.context/com.mbeddr.mpsutil.spreferences.context.actions)/877857976372390714">
+    <file name="SPreferencesFactory.java">
+      <node id="877857976372405956" at="17,102,18,93" concept="2" />
+      <node id="610216715200567716" at="18,93,19,191" concept="0" />
+      <node id="877857976372390714" at="24,0,25,0" concept="3" trace="redirectToModel$qBd0" />
+      <node id="877857976372390714" at="25,0,26,0" concept="3" trace="modelRef$l8tE" />
+      <node id="877857976372390714" at="29,0,30,0" concept="3" trace="ModelPointer$6N" />
+      <node id="877857976372390715" at="17,0,21,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="877857976372390715" at="17,102,19,191">
+        <var name="refExpr" id="877857976372405957" />
+      </scope>
+      <scope id="877857976372390715" at="17,0,21,0">
+        <var name="enclosingNode" id="877857976372390715" />
+        <var name="index" id="877857976372390715" />
+        <var name="model" id="877857976372390715" />
+        <var name="newNode" id="877857976372390715" />
+        <var name="sampleNode" id="877857976372390715" />
+      </scope>
+      <unit id="877857976372390714" at="28,0,31,0" name="com.mbeddr.mpsutil.spreferences.context.actions.SPreferencesFactory$CONCEPTS" />
+      <unit id="877857976372390714" at="23,0,27,0" name="com.mbeddr.mpsutil.spreferences.context.actions.SPreferencesFactory$LINKS" />
+      <unit id="877857976372390715" at="16,0,22,0" name="com.mbeddr.mpsutil.spreferences.context.actions.SPreferencesFactory$NodeFactory_877857976372390715" />
+      <unit id="877857976372390714" at="15,0,32,0" name="com.mbeddr.mpsutil.spreferences.context.actions.SPreferencesFactory" />
+    </file>
+  </root>
+</debug-info>
+

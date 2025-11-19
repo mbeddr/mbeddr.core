@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:c93f2be3-1de1-4106-85fd-653ed63baac3(com.mbeddr.core.base.enumMigration)/1214029888595741651">
+    <file name="CodeState_MigrationUtils.java">
+      <node id="1214029888595741659" at="13,13,14,20" concept="1" />
+      <node id="1214029888595741662" at="15,13,16,20" concept="1" />
+      <node id="1214029888595741665" at="17,13,18,20" concept="1" />
+      <node id="1214029888595741672" at="19,14,20,20" concept="1" />
+      <node id="1214029888595741702" at="24,24,25,214" concept="1" />
+      <node id="1214029888595741713" at="28,14,29,20" concept="1" />
+      <node id="1214029888595741651" at="32,0,33,0" concept="2" trace="enumSwitchIndex" />
+      <node id="1214029888595741700" at="23,61,26,5" concept="0" />
+      <node id="1214029888595741710" at="26,5,30,5" concept="4" />
+      <node id="1214029888595741675" at="23,0,32,0" concept="3" trace="fromValue#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <node id="1214029888595741672" at="11,62,21,5" concept="4" />
+      <node id="1214029888595741666" at="11,0,23,0" concept="3" trace="value#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <scope id="1214029888595741659" at="13,13,14,20" />
+      <scope id="1214029888595741662" at="15,13,16,20" />
+      <scope id="1214029888595741665" at="17,13,18,20" />
+      <scope id="1214029888595741672" at="19,14,20,20" />
+      <scope id="1214029888595741701" at="24,24,25,214" />
+      <scope id="1214029888595741712" at="28,14,29,20" />
+      <scope id="1214029888595741709" at="23,61,30,5" />
+      <scope id="1214029888595741675" at="23,0,32,0">
+        <var name="value" id="1214029888595741676" />
+      </scope>
+      <scope id="1214029888595741670" at="11,62,21,5" />
+      <scope id="1214029888595741666" at="11,0,23,0">
+        <var name="enummember" id="1214029888595741667" />
+      </scope>
+      <unit id="1214029888595741651" at="10,0,34,0" name="com.mbeddr.core.base.enumMigration.CodeState_MigrationUtils" />
+    </file>
+  </root>
+</debug-info>
+

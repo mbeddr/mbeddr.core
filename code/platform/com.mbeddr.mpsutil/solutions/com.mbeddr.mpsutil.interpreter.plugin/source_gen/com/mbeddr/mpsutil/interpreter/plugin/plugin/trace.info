@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:3b87c7c0-982f-4d66-aeaf-2a82d4bcd97a(com.mbeddr.mpsutil.interpreter.plugin.plugin)/1109306536041740232">
+    <file name="CacheInterpreter.java">
+      <node id="1109306536042149510" at="13,29,14,38" concept="9" />
+      <node id="1109306536041779845" at="18,50,19,58" concept="5" />
+      <node id="1109306536041771560" at="22,59,23,53" concept="1" />
+      <node id="1109306536041771484" at="23,53,24,0" concept="7" />
+      <node id="3263263473321253027" at="30,53,31,34" concept="5" />
+      <node id="1109306536042148875" at="13,0,16,0" concept="0" trace="CacheInterpreter#()V" />
+      <node id="1109306536041740332" at="17,0,21,0" concept="3" trace="isSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Z" />
+      <node id="1109306536041740342" at="21,0,26,0" concept="3" trace="setSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Z)V" />
+      <node id="3263263473321246581" at="28,0,33,0" concept="3" trace="getActionUpdateThread#()Lcom/intellij/openapi/actionSystem/ActionUpdateThread;" />
+      <scope id="1109306536042148878" at="13,29,14,38" />
+      <scope id="1109306536041740338" at="18,50,19,58" />
+      <scope id="3263263473321246588" at="30,53,31,34" />
+      <scope id="1109306536041740350" at="22,59,24,0" />
+      <scope id="1109306536042148875" at="13,0,16,0" />
+      <scope id="1109306536041740332" at="17,0,21,0">
+        <var name="event" id="1109306536041740336" />
+      </scope>
+      <scope id="1109306536041740342" at="21,0,26,0">
+        <var name="b" id="1109306536041740348" />
+        <var name="event" id="1109306536041740346" />
+      </scope>
+      <scope id="3263263473321246581" at="28,0,33,0" />
+      <unit id="1109306536041740232" at="11,0,34,0" name="com.mbeddr.mpsutil.interpreter.plugin.plugin.CacheInterpreter" />
+    </file>
+  </root>
+  <root nodeRef="r:3b87c7c0-982f-4d66-aeaf-2a82d4bcd97a(com.mbeddr.mpsutil.interpreter.plugin.plugin)/1236617601481911703">
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="1236617601481911703" at="13,0,14,0" concept="2" trace="myId" />
+      <node id="1236617601481911703" at="19,27,20,16" concept="5" />
+      <node id="1236617601481911703" at="23,30,24,29" concept="6" />
+      <node id="1236617601481911703" at="24,29,25,13" concept="6" />
+      <node id="1236617601481911703" at="15,0,17,0" concept="0" trace="Plugin_ApplicationPlugin#()V" />
+      <node id="1236617601481911703" at="28,0,31,0" concept="3" trace="adjustRegularGroups#()V" />
+      <node id="1236617601481911703" at="18,0,22,0" concept="3" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="1236617601481911703" at="31,0,35,0" concept="3" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <node id="1236617601481911703" at="23,0,28,0" concept="3" trace="createGroups#()V" />
+      <scope id="1236617601481911703" at="15,37,15,37" />
+      <scope id="1236617601481911703" at="19,27,20,16" />
+      <scope id="1236617601481911703" at="28,37,29,111" />
+      <scope id="1236617601481911703" at="32,66,33,58" />
+      <scope id="1236617601481911703" at="15,0,17,0" />
+      <scope id="1236617601481911703" at="23,30,26,42" />
+      <scope id="1236617601481911703" at="28,0,31,0" />
+      <scope id="1236617601481911703" at="18,0,22,0" />
+      <scope id="1236617601481911703" at="31,0,35,0">
+        <var name="parts" id="1236617601481911703" />
+      </scope>
+      <scope id="1236617601481911703" at="23,0,28,0" />
+      <unit id="1236617601481911703" at="12,0,36,0" name="com.mbeddr.mpsutil.interpreter.plugin.plugin.Plugin_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:3b87c7c0-982f-4d66-aeaf-2a82d4bcd97a(com.mbeddr.mpsutil.interpreter.plugin.plugin)/1236617601482855911">
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="1236617601482855911" at="25,13,26,42" concept="1" />
+      <node id="1236617601482855913" at="28,37,29,111" concept="1" />
+    </file>
+    <file name="debug_ActionGroup.java">
+      <node id="1236617601482855911" at="10,0,11,0" concept="8" trace="ID" />
+      <node id="1236617601482855911" at="12,63,13,31" concept="9" />
+      <node id="1236617601482855911" at="13,31,14,25" concept="1" />
+      <node id="1236617601482855911" at="14,25,15,20" concept="1" />
+      <node id="1236617601482855911" at="15,20,16,29" concept="1" />
+      <node id="5332171957773708994" at="16,29,17,55" concept="1" />
+      <node id="1236617601482855911" at="12,0,19,0" concept="0" trace="debug_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="1236617601482855911" at="12,63,17,55" />
+      <scope id="1236617601482855911" at="12,0,19,0">
+        <var name="plugin" id="1236617601482855911" />
+      </scope>
+      <unit id="1236617601482855911" at="9,0,20,0" name="com.mbeddr.mpsutil.interpreter.plugin.plugin.debug_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:3b87c7c0-982f-4d66-aeaf-2a82d4bcd97a(com.mbeddr.mpsutil.interpreter.plugin.plugin)/2629315167694966812">
+    <file name="InterpreterCachePlugin_AppPluginPart.java">
+      <node id="2629315167695156892" at="17,83,18,58" concept="1" />
+      <node id="2629315167694985313" at="26,22,27,116" concept="4" />
+      <node id="2629315167694971599" at="27,116,28,116" concept="1" />
+      <node id="2629315167695016306" at="31,25,32,116" concept="4" />
+      <node id="2629315167695016313" at="32,116,33,119" concept="1" />
+      <node id="2629315167695011196" at="20,0,22,0" concept="3" trace="onLoaded#(Ljava/util/Set;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <node id="2629315167694966812" at="23,0,25,0" concept="0" trace="InterpreterCachePlugin_AppPluginPart#()V" />
+      <node id="2629315167695011184" at="17,0,20,0" concept="3" trace="onUnloaded#(Ljava/util/Set;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <node id="2629315167694966812" at="25,0,30,0" concept="3" trace="init#()V" />
+      <node id="2629315167694966812" at="30,0,35,0" concept="3" trace="dispose#()V" />
+      <node id="2629315167694992301" at="16,0,23,0" concept="2" trace="deployListener" />
+      <scope id="2629315167695011206" at="20,81,20,81" />
+      <scope id="2629315167694966812" at="23,49,23,49" />
+      <scope id="2629315167695011194" at="17,83,18,58" />
+      <scope id="2629315167695011196" at="20,0,22,0">
+        <var name="p0" id="2629315167695011200" />
+        <var name="p1" id="2629315167695011203" />
+      </scope>
+      <scope id="2629315167694966812" at="23,0,25,0" />
+      <scope id="2629315167694968159" at="26,22,28,116">
+        <var name="mpsCoreComponents" id="2629315167694985314" />
+      </scope>
+      <scope id="2629315167695015963" at="31,25,33,119">
+        <var name="mpsCoreComponents" id="2629315167695016307" />
+      </scope>
+      <scope id="2629315167695011184" at="17,0,20,0">
+        <var name="p0" id="2629315167695011188" />
+        <var name="p1" id="2629315167695011191" />
+      </scope>
+      <scope id="2629315167694966812" at="25,0,30,0" />
+      <scope id="2629315167694966812" at="30,0,35,0" />
+      <unit id="2629315167695011182" at="16,46,22,3" name="com.mbeddr.mpsutil.interpreter.plugin.plugin.InterpreterCachePlugin_AppPluginPart$1" />
+      <unit id="2629315167694966812" at="15,0,36,0" name="com.mbeddr.mpsutil.interpreter.plugin.plugin.InterpreterCachePlugin_AppPluginPart" />
+    </file>
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2629315167694966812" at="32,66,33,58" concept="1" />
+    </file>
+  </root>
+</debug-info>
+

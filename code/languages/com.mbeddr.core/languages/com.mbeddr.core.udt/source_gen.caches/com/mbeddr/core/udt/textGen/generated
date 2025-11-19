@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="aradq1gwd61hvv05r0wlr0sxai6vdz">
+  <files names="AnonymousStructDeclaration_TextGen.java:AnonymousUnionDeclaration_TextGen.java:ArbitraryMemberRef_TextGen.java:Enum2Int_TextGen.java:EnumDeclaration_TextGen.java:EnumLiteralRef_TextGen.java:EnumLiteral_TextGen.java:EnumType_TextGen.java:GenericMemberRef_TextGen.java:Int2Enum_TextGen.java:MemberInitExpression_TextGen.java:Member_TextGen.java:OpaqueTypeDecl_TextGen.java:OpaqueType_TextGen.java:PragmaSUContent_TextGen.java:SUContent_TextGen.java:SUDeclaration_TextGen.java:StructType_TextGen.java:TextGenAspectDescriptor.java:TypeDefType_TextGen.java:TypeDef_TextGen.java:UnionType_TextGen.java" />
+</product>
+

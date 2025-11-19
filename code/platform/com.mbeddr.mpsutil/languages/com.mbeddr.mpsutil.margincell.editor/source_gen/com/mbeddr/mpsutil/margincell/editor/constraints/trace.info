@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.mpsutil.margincell.editor.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:30f47081-3e90-4443-97b3-5c98d574a80d(com.mbeddr.mpsutil.margincell.editor.constraints)/97401520565568870">
+    <file name="MarginCell_Constraints.java">
+      <node id="97401520565568870" at="17,84,18,47" concept="5" />
+      <node id="97401520565568871" at="18,47,19,26" concept="1" />
+      <node id="97401520565568871" at="23,54,24,63" concept="5" />
+      <node id="97401520565568871" at="28,54,29,210" concept="3" />
+      <node id="97401520565568870" at="34,0,35,0" concept="4" trace="MarginCell$r7" />
+      <node id="97401520565568870" at="35,0,36,0" concept="4" trace="LinkDeclaration$1p" />
+      <node id="97401520565568870" at="39,0,40,0" concept="4" trace="marginContents$oCA1" />
+      <node id="97401520565568871" at="23,0,26,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="97401520565568870" at="17,0,21,0" concept="0" trace="MarginCell_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="97401520565568871" at="26,0,31,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="97401520565568871" at="23,54,24,63" />
+      <scope id="97401520565568871" at="28,54,29,210" />
+      <scope id="97401520565568870" at="17,84,19,26" />
+      <scope id="97401520565568871" at="23,0,26,0">
+        <var name="container" id="97401520565568871" />
+      </scope>
+      <scope id="97401520565568870" at="17,0,21,0">
+        <var name="initContext" id="97401520565568870" />
+      </scope>
+      <scope id="97401520565568871" at="26,0,31,0" />
+      <unit id="97401520565568870" at="38,0,41,0" name="com.mbeddr.mpsutil.margincell.editor.constraints.MarginCell_Constraints$LINKS" />
+      <unit id="97401520565568870" at="33,0,37,0" name="com.mbeddr.mpsutil.margincell.editor.constraints.MarginCell_Constraints$CONCEPTS" />
+      <unit id="97401520565568871" at="22,0,32,0" name="com.mbeddr.mpsutil.margincell.editor.constraints.MarginCell_Constraints$RD1" />
+      <unit id="97401520565568870" at="16,0,42,0" name="com.mbeddr.mpsutil.margincell.editor.constraints.MarginCell_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

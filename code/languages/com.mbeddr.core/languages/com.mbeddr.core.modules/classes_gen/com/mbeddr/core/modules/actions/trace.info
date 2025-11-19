@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="14,0,26,0" name="com.mbeddr.core.modules.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:746ccec0-401c-4115-9221-521ce4c1a69f(com.mbeddr.core.modules.actions)/5485104033530071204">
+    <file name="pasteLocalVarAsGlobalVar_PasteWrapper_0.java">
+      <node id="5485104033530071205" at="19,46,20,49" concept="3" />
+      <node id="5485104033530071205" at="23,46,24,33" concept="3" />
+      <node id="5485104033530071208" at="27,39,28,208" concept="2" />
+      <node id="5485104033530071216" at="28,208,29,113" concept="0" />
+      <node id="5485104033530071297" at="29,113,30,108" concept="0" />
+      <node id="5485104033530071436" at="30,108,31,108" concept="0" />
+      <node id="5485104033530124101" at="31,108,32,192" concept="0" />
+      <node id="5485104033530071518" at="32,192,33,15" concept="3" />
+      <node id="5485104033530071205" at="37,0,38,0" concept="4" trace="GlobalVariableDeclaration$TW" />
+      <node id="5485104033530071205" at="38,0,39,0" concept="4" trace="Statement$zV" />
+      <node id="5485104033530071205" at="42,0,43,0" concept="4" trace="name$MnvL" />
+      <node id="5485104033530071205" at="46,0,47,0" concept="4" trace="type$sXU3" />
+      <node id="5485104033530071205" at="47,0,48,0" concept="4" trace="init$$i$n" />
+      <node id="5485104033530071205" at="48,0,49,0" concept="4" trace="init$BXpk" />
+      <node id="5485104033530071205" at="49,0,50,0" concept="4" trace="smodelAttribute$KJ43" />
+      <node id="5485104033530071205" at="18,0,22,0" concept="1" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5485104033530071205" at="22,0,26,0" concept="1" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5485104033530071205" at="26,0,35,0" concept="1" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="5485104033530071205" at="19,46,20,49" />
+      <scope id="5485104033530071205" at="23,46,24,33" />
+      <scope id="5485104033530071205" at="18,0,22,0" />
+      <scope id="5485104033530071205" at="22,0,26,0" />
+      <scope id="5485104033530071207" at="27,39,33,15">
+        <var name="lvd" id="5485104033530071209" />
+      </scope>
+      <scope id="5485104033530071205" at="26,0,35,0">
+        <var name="sourceNode" id="5485104033530071205" />
+      </scope>
+      <unit id="5485104033530071205" at="41,0,44,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_0$PROPS" />
+      <unit id="5485104033530071205" at="36,0,40,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_0$CONCEPTS" />
+      <unit id="5485104033530071205" at="45,0,51,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_0$LINKS" />
+      <unit id="5485104033530071205" at="17,0,52,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_0" />
+    </file>
+    <file name="pasteLocalVarAsGlobalVar_PasteWrapper_1.java">
+      <node id="5485104033530071520" at="20,46,21,48" concept="3" />
+      <node id="5485104033530071520" at="24,46,25,38" concept="3" />
+      <node id="5485104033530071523" at="28,39,29,206" concept="2" />
+      <node id="5485104033530071529" at="29,206,30,113" concept="0" />
+      <node id="5485104033530071537" at="30,113,31,108" concept="0" />
+      <node id="5485104033530071545" at="31,108,32,108" concept="0" />
+      <node id="5485104033530124188" at="32,108,33,192" concept="0" />
+      <node id="5485104033530071553" at="33,192,34,15" concept="3" />
+      <node id="5485104033530071520" at="38,0,39,0" concept="4" trace="LocalVariableDeclaration$ft" />
+      <node id="5485104033530071520" at="39,0,40,0" concept="4" trace="IModuleContent$H1" />
+      <node id="5485104033530071520" at="43,0,44,0" concept="4" trace="name$MnvL" />
+      <node id="5485104033530071520" at="47,0,48,0" concept="4" trace="type$sXU3" />
+      <node id="5485104033530071520" at="48,0,49,0" concept="4" trace="init$BXpk" />
+      <node id="5485104033530071520" at="49,0,50,0" concept="4" trace="init$$i$n" />
+      <node id="5485104033530071520" at="50,0,51,0" concept="4" trace="smodelAttribute$KJ43" />
+      <node id="5485104033530071520" at="19,0,23,0" concept="1" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5485104033530071520" at="23,0,27,0" concept="1" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5485104033530071520" at="27,0,36,0" concept="1" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="5485104033530071520" at="20,46,21,48" />
+      <scope id="5485104033530071520" at="24,46,25,38" />
+      <scope id="5485104033530071520" at="19,0,23,0" />
+      <scope id="5485104033530071520" at="23,0,27,0" />
+      <scope id="5485104033530071522" at="28,39,34,15">
+        <var name="gvd" id="5485104033530071524" />
+      </scope>
+      <scope id="5485104033530071520" at="27,0,36,0">
+        <var name="sourceNode" id="5485104033530071520" />
+      </scope>
+      <unit id="5485104033530071520" at="42,0,45,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_1$PROPS" />
+      <unit id="5485104033530071520" at="37,0,41,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_1$CONCEPTS" />
+      <unit id="5485104033530071520" at="46,0,52,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_1$LINKS" />
+      <unit id="5485104033530071520" at="18,0,53,0" name="com.mbeddr.core.modules.actions.pasteLocalVarAsGlobalVar_PasteWrapper_1" />
+    </file>
+  </root>
+</debug-info>
+

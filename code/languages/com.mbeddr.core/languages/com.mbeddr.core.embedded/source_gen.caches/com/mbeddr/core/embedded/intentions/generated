@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="9q4upmoq3lblx8c35n0w2g0487ep5k6">
+  <files names="IntentionsDescriptor.java:addAction_Intention.java:addElements_Intention.java:addSetter_Intention.java:addSize_Intention.java:toggleConstRegister_Intention.java:toggleDirectAccess_Intention.java:toggleEnableLowHighAccess_Intention.java:toggleSignedRegister_Intention.java" />
+</product>
+

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,46,0" name="com.mbeddr.core.expressions.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/2047364827736713476">
+    <file name="UnaryPrePosModificationExpression_DataFlow.java">
+      <node id="1503494305073292436" at="18,141,19,112" concept="1" />
+      <node id="1503494305073292440" at="19,112,20,335" concept="1" />
+      <node id="1582899961125078705" at="21,185,22,114" concept="1" />
+      <node id="1503494305073292455" at="24,12,25,112" concept="1" />
+      <node id="3105925081592376727" at="26,5,27,0" concept="5" />
+      <node id="2047364827736713476" at="31,0,32,0" concept="6" trace="expression$PfNq" />
+      <node id="2047364827736713476" at="35,0,36,0" concept="6" trace="IVariableReference$WR" />
+      <node id="2047364827736713476" at="36,0,37,0" concept="6" trace="PreIncrementExpression$3u" />
+      <node id="2047364827736713476" at="37,0,38,0" concept="6" trace="PreDecrementExpression$G1" />
+      <node id="1503494305073292453" at="24,10,26,5" concept="0" />
+      <node id="1582899961125072382" at="20,335,23,7" concept="2" />
+      <node id="1503494305073292434" at="17,60,26,5" concept="2" />
+      <node id="2047364827736713476" at="17,0,29,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1582899961125072384" at="21,185,22,114" />
+      <scope id="1503494305073292454" at="24,12,25,112" />
+      <scope id="1503494305073292435" at="18,141,23,7" />
+      <scope id="2047364827736713478" at="17,60,27,0" />
+      <scope id="2047364827736713476" at="17,0,29,0">
+        <var name="_context" id="2047364827736713476" />
+      </scope>
+      <unit id="2047364827736713476" at="30,0,33,0" name="com.mbeddr.core.expressions.dataFlow.UnaryPrePosModificationExpression_DataFlow$LINKS" />
+      <unit id="2047364827736713476" at="34,0,39,0" name="com.mbeddr.core.expressions.dataFlow.UnaryPrePosModificationExpression_DataFlow$CONCEPTS" />
+      <unit id="2047364827736713476" at="16,0,40,0" name="com.mbeddr.core.expressions.dataFlow.UnaryPrePosModificationExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/2553036183967543499">
+    <file name="AssignmentExpr_DataFlow.java">
+      <node id="2047364827735823443" at="21,60,22,105" concept="1" />
+      <node id="1700280171438307837" at="22,105,23,0" concept="5" />
+      <node id="8831928550021369618" at="24,151,25,176" concept="1" />
+      <node id="8831928550021354367" at="26,5,27,0" concept="5" />
+      <node id="2047364827735540475" at="28,135,29,394" concept="1" />
+      <node id="1700280171438318722" at="30,12,31,152" concept="4" />
+      <node id="3770545651032406326" at="32,27,33,132" concept="4" />
+      <node id="2047364827740519886" at="34,61,35,310" concept="1" />
+      <node id="1700280171438322578" at="37,14,38,269" concept="1" />
+      <node id="2553036183967543499" at="44,0,45,0" concept="6" trace="right$Slc$" />
+      <node id="2553036183967543499" at="45,0,46,0" concept="6" trace="left$SkXz" />
+      <node id="2553036183967543499" at="49,0,50,0" concept="6" trace="IVariableReference$WR" />
+      <node id="2553036183967543499" at="50,0,51,0" concept="6" trace="IReference$Yo" />
+      <node id="1700280171438322305" at="37,12,39,7" concept="0" />
+      <node id="8831928550021354597" at="23,0,26,5" concept="2" />
+      <node id="3770545651032407082" at="33,132,36,9" concept="2" />
+      <node id="1700280171438319784" at="31,152,39,7" concept="2" />
+      <node id="491889358701558146" at="30,10,40,5" concept="0" />
+      <node id="2047364827740477623" at="27,0,40,5" concept="2" />
+      <node id="2553036183967543499" at="21,0,42,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8831928550021354599" at="24,151,25,176" />
+      <scope id="2047364827740477626" at="28,135,29,394" />
+      <scope id="3770545651032407084" at="34,61,35,310" />
+      <scope id="1700280171438322306" at="37,14,38,269" />
+      <scope id="1700280171438319786" at="32,27,36,9">
+        <var name="references" id="3770545651032406327" />
+      </scope>
+      <scope id="491889358701558147" at="30,12,39,7">
+        <var name="target" id="1700280171438318723" />
+      </scope>
+      <scope id="2553036183967543501" at="21,60,40,5" />
+      <scope id="2553036183967543499" at="21,0,42,0">
+        <var name="_context" id="2553036183967543499" />
+      </scope>
+      <unit id="2553036183967543499" at="43,0,47,0" name="com.mbeddr.core.expressions.dataFlow.AssignmentExpr_DataFlow$LINKS" />
+      <unit id="2553036183967543499" at="48,0,52,0" name="com.mbeddr.core.expressions.dataFlow.AssignmentExpr_DataFlow$CONCEPTS" />
+      <unit id="2553036183967543499" at="20,0,53,0" name="com.mbeddr.core.expressions.dataFlow.AssignmentExpr_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/5046009066437089008">
+    <file name="DirectAssignmentExpression_DataFlow.java">
+      <node id="1215696303815" at="16,159,17,346" concept="1" />
+      <node id="1215696303822" at="17,346,18,130" concept="1" />
+      <node id="1215696303826" at="18,130,19,347" concept="1" />
+      <node id="9026942911488367252" at="20,12,21,130" concept="1" />
+      <node id="1215696303841" at="21,130,22,130" concept="1" />
+      <node id="5046009066437089008" at="27,0,28,0" concept="6" trace="IVariableReference$WR" />
+      <node id="1215696303839" at="20,10,23,5" concept="0" />
+      <node id="1215696303813" at="15,60,23,5" concept="2" />
+      <node id="5046009066437089008" at="15,0,25,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="1215696303840" at="20,12,22,130" />
+      <scope id="1215696303814" at="16,159,19,347" />
+      <scope id="5046009066437089010" at="15,60,23,5" />
+      <scope id="5046009066437089008" at="15,0,25,0">
+        <var name="_context" id="5046009066437089008" />
+      </scope>
+      <unit id="5046009066437089008" at="26,0,29,0" name="com.mbeddr.core.expressions.dataFlow.DirectAssignmentExpression_DataFlow$CONCEPTS" />
+      <unit id="5046009066437089008" at="14,0,30,0" name="com.mbeddr.core.expressions.dataFlow.DirectAssignmentExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/6072660817912695639">
+    <file name="CastExpression_DataFlow.java">
+      <node id="3562155621519298872" at="13,60,14,104" concept="1" />
+      <node id="6072660817912695639" at="18,0,19,0" concept="6" trace="expr$3lz4" />
+      <node id="6072660817912695639" at="13,0,16,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="6072660817912695641" at="13,60,14,104" />
+      <scope id="6072660817912695639" at="13,0,16,0">
+        <var name="_context" id="6072660817912695639" />
+      </scope>
+      <unit id="6072660817912695639" at="17,0,20,0" name="com.mbeddr.core.expressions.dataFlow.CastExpression_DataFlow$LINKS" />
+      <unit id="6072660817912695639" at="12,0,21,0" name="com.mbeddr.core.expressions.dataFlow.CastExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/7034214596259637134">
+    <file name="GenericDotExpression_DataFlow.java">
+      <node id="7034214596259639884" at="13,60,14,110" concept="1" />
+      <node id="2047364827738565779" at="14,110,15,106" concept="1" />
+      <node id="7034214596259637134" at="19,0,20,0" concept="6" trace="expression$PfNq" />
+      <node id="7034214596259637134" at="20,0,21,0" concept="6" trace="target$CEPF" />
+      <node id="7034214596259637134" at="13,0,17,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7034214596259637136" at="13,60,15,106" />
+      <scope id="7034214596259637134" at="13,0,17,0">
+        <var name="_context" id="7034214596259637134" />
+      </scope>
+      <unit id="7034214596259637134" at="18,0,22,0" name="com.mbeddr.core.expressions.dataFlow.GenericDotExpression_DataFlow$LINKS" />
+      <unit id="7034214596259637134" at="12,0,23,0" name="com.mbeddr.core.expressions.dataFlow.GenericDotExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/7178842692850421924">
+    <file name="UnaryExpression_DataFlow.java">
+      <node id="7178842692850421928" at="13,60,14,110" concept="1" />
+      <node id="7178842692850421959" at="14,110,15,134" concept="1" />
+      <node id="7178842692850421924" at="19,0,20,0" concept="6" trace="expression$PfNq" />
+      <node id="7178842692850421924" at="13,0,17,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7178842692850421926" at="13,60,15,134" />
+      <scope id="7178842692850421924" at="13,0,17,0">
+        <var name="_context" id="7178842692850421924" />
+      </scope>
+      <unit id="7178842692850421924" at="18,0,21,0" name="com.mbeddr.core.expressions.dataFlow.UnaryExpression_DataFlow$LINKS" />
+      <unit id="7178842692850421924" at="12,0,22,0" name="com.mbeddr.core.expressions.dataFlow.UnaryExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/8323085870815614821">
+    <file name="BinaryExpression_DataFlow.java">
+      <node id="8323085870815614831" at="13,60,14,104" concept="1" />
+      <node id="8323085870815614862" at="14,104,15,105" concept="1" />
+      <node id="8323085870815614821" at="19,0,20,0" concept="6" trace="left$SkXz" />
+      <node id="8323085870815614821" at="20,0,21,0" concept="6" trace="right$Slc$" />
+      <node id="8323085870815614821" at="13,0,17,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8323085870815614823" at="13,60,15,105" />
+      <scope id="8323085870815614821" at="13,0,17,0">
+        <var name="_context" id="8323085870815614821" />
+      </scope>
+      <unit id="8323085870815614821" at="18,0,22,0" name="com.mbeddr.core.expressions.dataFlow.BinaryExpression_DataFlow$LINKS" />
+      <unit id="8323085870815614821" at="12,0,23,0" name="com.mbeddr.core.expressions.dataFlow.BinaryExpression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/8323085870815661622">
+    <file name="Expression_DataFlow.java">
+      <node id="8323085870815661625" at="9,60,10,134" concept="1" />
+      <node id="8323085870815661622" at="9,0,12,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8323085870815661624" at="9,60,10,134" />
+      <scope id="8323085870815661622" at="9,0,12,0">
+        <var name="_context" id="8323085870815661622" />
+      </scope>
+      <unit id="8323085870815661622" at="8,0,13,0" name="com.mbeddr.core.expressions.dataFlow.Expression_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:853e47da-9d90-42d3-98a2-73e5663fc94c(com.mbeddr.core.expressions.dataFlow)/8886917924485809561">
+    <file name="TernaryExpression_DataFlow.java">
+      <node id="8886917924485809564" at="13,60,14,109" concept="1" />
+      <node id="2047364827736722353" at="14,109,15,0" concept="5" />
+      <node id="8886917924485957868" at="15,0,16,235" concept="1" />
+      <node id="8886917924485817243" at="16,235,17,108" concept="1" />
+      <node id="2047364827736723120" at="17,108,18,0" concept="5" />
+      <node id="4910548262395809862" at="18,0,19,0" concept="5" />
+      <node id="8886917924485865478" at="19,0,20,184" concept="1" />
+      <node id="8886917924485817274" at="20,184,21,108" concept="1" />
+      <node id="8886917924485809561" at="25,0,26,0" concept="6" trace="condition$eFP3" />
+      <node id="8886917924485809561" at="26,0,27,0" concept="6" trace="elseExpr$eGj5" />
+      <node id="8886917924485809561" at="27,0,28,0" concept="6" trace="thenExpr$eG44" />
+      <node id="8886917924485809561" at="13,0,23,0" concept="3" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="8886917924485809563" at="13,60,21,108" />
+      <scope id="8886917924485809561" at="13,0,23,0">
+        <var name="_context" id="8886917924485809561" />
+      </scope>
+      <unit id="8886917924485809561" at="24,0,29,0" name="com.mbeddr.core.expressions.dataFlow.TernaryExpression_DataFlow$LINKS" />
+      <unit id="8886917924485809561" at="12,0,30,0" name="com.mbeddr.core.expressions.dataFlow.TernaryExpression_DataFlow" />
+    </file>
+  </root>
+</debug-info>
+

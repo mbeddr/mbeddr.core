@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="125,0,128,0" name="com.mbeddr.mpsutil.collections.generator.templates.QueriesGenerated$CONCEPTS" />
+      <unit at="120,0,124,0" name="com.mbeddr.mpsutil.collections.generator.templates.QueriesGenerated$LINKS" />
+      <unit at="52,0,67,0" name="com.mbeddr.mpsutil.collections.generator.templates.QueriesGenerated$RRC" />
+      <unit at="78,0,93,0" name="com.mbeddr.mpsutil.collections.generator.templates.QueriesGenerated$SNQ" />
+      <unit at="104,0,119,0" name="com.mbeddr.mpsutil.collections.generator.templates.QueriesGenerated$IfMC" />
+      <unit at="27,0,129,0" name="com.mbeddr.mpsutil.collections.generator.templates.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:fe83d388-8fd7-46fd-b1ae-3b9bf9de62b8(com.mbeddr.mpsutil.collections.generator.templates@generator)/942304653331834795">
+    <file name="QueriesGenerated.java">
+      <node id="1180637093656" at="32,83,33,136" concept="1" />
+      <node id="5464682487437092847" at="35,78,36,186" concept="1" />
+      <node id="5464682487437092116" at="38,92,39,176" concept="1" />
+      <node id="1168911269192" at="43,14,44,50" concept="0" />
+      <node id="1168911269192" at="60,15,61,58" concept="1" />
+      <node id="5464682487437092113" at="69,14,70,56" concept="0" />
+      <node id="5464682487437092113" at="86,15,87,59" concept="1" />
+      <node id="5464682487437092434" at="95,14,96,57" concept="0" />
+      <node id="5464682487437092434" at="112,15,113,61" concept="1" />
+      <node id="1168911272662" at="32,0,35,0" concept="2" trace="rule_Condition_0_0#(Ljetbrains/mps/generator/template/BaseMappingRuleContext;)Z" />
+      <node id="5464682487437092435" at="35,0,38,0" concept="2" trace="ifMacro_Condition_0_0#(Ljetbrains/mps/generator/template/IfMacroContext;)Z" />
+      <node id="5464682487437092113" at="38,0,41,0" concept="2" trace="sourceNodeQuery_0_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodeContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="1168911272663" at="32,83,33,136" />
+      <scope id="5464682487437092436" at="35,78,36,186" />
+      <scope id="5464682487437092114" at="38,92,39,176" />
+      <scope id="1168911269192" at="60,15,61,58" />
+      <scope id="5464682487437092113" at="86,15,87,59" />
+      <scope id="5464682487437092434" at="112,15,113,61" />
+      <scope id="1168911272662" at="32,0,35,0">
+        <var name="_context" id="1168911272662" />
+      </scope>
+      <scope id="5464682487437092435" at="35,0,38,0">
+        <var name="_context" id="5464682487437092435" />
+      </scope>
+      <scope id="5464682487437092113" at="38,0,41,0">
+        <var name="_context" id="5464682487437092113" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-6ava9hmejx0j68brlmqaqhsaccjf7ry">
+  <files names="BehaviorAspectDescriptor.java:DirectRegisterAccess__BehaviorDescriptor.java:HalfRegisterRefExpr__BehaviorDescriptor.java:HigherHalfRegisterRefExpr__BehaviorDescriptor.java:IRegisterAccess__BehaviorDescriptor.java:ISRCallExpression__BehaviorDescriptor.java:ISR__BehaviorDescriptor.java:InterruptDeclaration__BehaviorDescriptor.java:LowerHalfRegisterRefExpr__BehaviorDescriptor.java:Register16__BehaviorDescriptor.java:Register32__BehaviorDescriptor.java:Register8__BehaviorDescriptor.java:RegisterElementRef__BehaviorDescriptor.java:RegisterElement__BehaviorDescriptor.java:RegisterRefExpr__BehaviorDescriptor.java:Register__BehaviorDescriptor.java:StructuredRegister__BehaviorDescriptor.java" />
+</product>
+

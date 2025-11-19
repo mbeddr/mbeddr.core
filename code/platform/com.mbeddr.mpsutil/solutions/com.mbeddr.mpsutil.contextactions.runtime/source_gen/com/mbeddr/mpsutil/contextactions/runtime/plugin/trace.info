@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:7db2f202-2a6e-4f79-9d01-79eb67397dc9(com.mbeddr.mpsutil.contextactions.runtime.plugin)/6155355352095626713">
+    <file name="ApplicationPlugin_AppPluginPart.java">
+      <node id="6155355352096186589" at="12,22,13,46" concept="1" />
+      <node id="6155355352096186959" at="16,25,17,49" concept="1" />
+      <node id="6155355352095626713" at="9,0,11,0" concept="0" trace="ApplicationPlugin_AppPluginPart#()V" />
+      <node id="6155355352095626713" at="11,0,15,0" concept="5" trace="init#()V" />
+      <node id="6155355352095626713" at="15,0,19,0" concept="5" trace="dispose#()V" />
+      <scope id="6155355352095626713" at="9,44,9,44" />
+      <scope id="6155355352096186191" at="12,22,13,46" />
+      <scope id="6155355352096186945" at="16,25,17,49" />
+      <scope id="6155355352095626713" at="9,0,11,0" />
+      <scope id="6155355352095626713" at="11,0,15,0" />
+      <scope id="6155355352095626713" at="15,0,19,0" />
+      <unit id="6155355352095626713" at="8,0,20,0" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.ApplicationPlugin_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="6155355352095626713" at="23,66,24,53" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:7db2f202-2a6e-4f79-9d01-79eb67397dc9(com.mbeddr.mpsutil.contextactions.runtime.plugin)/6294660000051114314">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="6294660000051114314" at="12,0,13,0" concept="2" trace="myId" />
+      <node id="6294660000051114314" at="18,27,19,16" concept="7" />
+      <node id="6294660000051114314" at="14,0,16,0" concept="0" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="6294660000051114314" at="17,0,21,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="6294660000051114314" at="22,0,26,0" concept="5" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="6294660000051114314" at="14,38,14,38" />
+      <scope id="6294660000051114314" at="18,27,19,16" />
+      <scope id="6294660000051114314" at="23,66,24,53" />
+      <scope id="6294660000051114314" at="14,0,16,0" />
+      <scope id="6294660000051114314" at="17,0,21,0" />
+      <scope id="6294660000051114314" at="22,0,26,0">
+        <var name="parts" id="6294660000051114314" />
+      </scope>
+      <unit id="6294660000051114314" at="11,0,27,0" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="6294660000051114314" at="16,56,17,76" concept="6" />
+      <node id="6294660000051114314" at="18,82,19,17" concept="7" />
+      <node id="6294660000051114314" at="14,0,16,0" concept="0" trace="Runtime_ProjectPlugin#()V" />
+      <node id="6294660000051114314" at="21,0,24,0" concept="5" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <node id="6294660000051114314" at="16,0,21,0" concept="5" trace="initAllTools1#(Lcom/intellij/openapi/project/Project;)Ljava/util/List;" />
+      <scope id="6294660000051114314" at="14,34,14,34" />
+      <scope id="6294660000051114314" at="21,62,22,53" />
+      <scope id="6294660000051114314" at="14,0,16,0" />
+      <scope id="6294660000051114314" at="16,56,19,17">
+        <var name="tools" id="6294660000051114314" />
+      </scope>
+      <scope id="6294660000051114314" at="21,0,24,0">
+        <var name="parts" id="6294660000051114314" />
+      </scope>
+      <scope id="6294660000051114314" at="16,0,21,0">
+        <var name="project" id="6294660000051114314" />
+      </scope>
+      <unit id="6294660000051114314" at="13,0,25,0" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:7db2f202-2a6e-4f79-9d01-79eb67397dc9(com.mbeddr.mpsutil.contextactions.runtime.plugin)/6294660000051114329">
+    <file name="ProjectPlugin_ProjectPluginPart.java">
+      <node id="6294660000051116630" at="16,0,17,0" concept="2" trace="mySelectionListener" />
+      <node id="6294660000051185543" at="20,40,21,69" concept="6" />
+      <node id="6155355352095807448" at="26,37,27,81" concept="6" />
+      <node id="6155355352095794733" at="28,40,29,77" concept="1" />
+      <node id="6294660000051129586" at="35,6,36,69" concept="1" />
+      <node id="6294660000051132134" at="39,43,40,68" concept="1" />
+      <node id="6294660000051114329" at="17,0,19,0" concept="0" trace="ProjectPlugin_ProjectPluginPart#()V" />
+      <node id="29784347039659710" at="27,81,30,13" concept="4" />
+      <node id="6294660000051114329" at="38,0,42,0" concept="5" trace="dispose#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="5391750706810070377" at="25,13,31,11" concept="4" />
+      <node id="29784347039669134" at="24,111,33,9" concept="11" />
+      <node id="6294660000051128902" at="23,0,35,0" concept="5" trace="selectionChanged#(Ljetbrains/mps/openapi/editor/EditorComponent;Ljetbrains/mps/openapi/editor/selection/Selection;Ljetbrains/mps/openapi/editor/selection/Selection;)V" />
+      <node id="6294660000051135817" at="21,69,35,6" concept="1" />
+      <node id="6294660000051114329" at="19,0,38,0" concept="5" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="6294660000051114329" at="17,44,17,44" />
+      <scope id="29784347039669139" at="32,32,32,32" />
+      <scope id="29784347039659712" at="28,40,29,77" />
+      <scope id="29784347039669137" at="32,9,33,9">
+        <var name="ex" id="29784347039669141" />
+      </scope>
+      <scope id="6294660000051131618" at="39,43,40,68" />
+      <scope id="6294660000051114329" at="17,0,19,0" />
+      <scope id="5391750706810070379" at="26,37,30,13">
+        <var name="toolComponent" id="6155355352095807449" />
+      </scope>
+      <scope id="6294660000051114329" at="38,0,42,0">
+        <var name="project" id="6294660000051114329" />
+      </scope>
+      <scope id="29784347039669136" at="25,13,31,11" />
+      <scope id="6294660000051128912" at="24,111,33,9" />
+      <scope id="6294660000051128902" at="23,0,35,0">
+        <var name="component" id="6294660000051128906" />
+        <var name="newSelection" id="6294660000051128910" />
+        <var name="oldSelection" id="6294660000051128908" />
+      </scope>
+      <scope id="6294660000051129098" at="20,40,36,69">
+        <var name="ideaProject" id="6294660000051185544" />
+      </scope>
+      <scope id="6294660000051114329" at="19,0,38,0">
+        <var name="project" id="6294660000051114329" />
+      </scope>
+      <unit id="6294660000051128900" at="22,67,35,5" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.ProjectPlugin_ProjectPluginPart$1" />
+      <unit id="6294660000051114329" at="15,0,43,0" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.ProjectPlugin_ProjectPluginPart" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="6294660000051114329" at="21,62,22,53" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:7db2f202-2a6e-4f79-9d01-79eb67397dc9(com.mbeddr.mpsutil.contextactions.runtime.plugin)/6294660000051114344">
+    <file name="ContextActionsTool_Tool.java">
+      <node id="6294660000051114344" at="25,0,26,0" concept="9" trace="ICON" />
+      <node id="4436333123433027715" at="26,0,27,0" concept="2" trace="tool" />
+      <node id="6294660000051138132" at="27,0,28,0" concept="2" trace="myComponent" />
+      <node id="8645458101904162233" at="28,0,29,0" concept="2" trace="myGearActionGroup" />
+      <node id="4436333123432410534" at="30,0,31,0" concept="2" trace="LOG" />
+      <node id="958962162498346278" at="34,92,35,65" concept="1" />
+      <node id="4436333123432442306" at="37,30,38,22" concept="1" />
+      <node id="6294660000051114344" at="42,51,43,83" concept="10" />
+      <node id="6294660000051114344" at="45,37,46,24" concept="1" />
+      <node id="6294660000051139892" at="46,24,47,109" concept="1" />
+      <node id="8645458101904182178" at="47,109,48,0" concept="8" />
+      <node id="8645458101904166443" at="48,0,49,78" concept="1" />
+      <node id="8645458101904189599" at="50,45,51,127" concept="1" />
+      <node id="4385741140013258644" at="52,5,53,185" concept="1" />
+      <node id="958962162498978274" at="53,185,54,0" concept="8" />
+      <node id="958962162498716929" at="54,0,55,170" concept="1" />
+      <node id="958962162498976479" at="57,25,58,63" concept="1" />
+      <node id="6294660000051114344" at="58,63,59,20" concept="1" />
+      <node id="6294660000051114344" at="62,44,63,16" concept="7" />
+      <node id="5458251120638357760" at="65,47,66,61" concept="1" />
+      <node id="6294660000051167774" at="68,36,69,52" concept="7" />
+      <node id="958962162498987270" at="33,11,36,9" concept="4" />
+      <node id="6294660000051114344" at="42,0,45,0" concept="0" trace="ContextActionsTool_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="8645458101904417941" at="49,78,52,5" concept="3" />
+      <node id="5458251120638355524" at="65,0,68,0" concept="5" trace="changeContext#(Lcom/mbeddr/mpsutil/contextactions/runtime/IContext;)V" />
+      <node id="6294660000051114344" at="68,0,71,0" concept="5" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="6294660000051114344" at="57,0,61,0" concept="5" trace="dispose#()V" />
+      <node id="6294660000051114344" at="61,0,65,0" concept="5" trace="isInitiallyAvailable#()Z" />
+      <node id="4436333123432379683" at="32,65,39,7" concept="11" />
+      <node id="958962162498269966" at="31,0,41,0" concept="5" trace="toolWindowShown#(Lcom/intellij/openapi/wm/ToolWindow;)V" />
+      <node id="6294660000051114344" at="45,0,57,0" concept="5" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="958962162498237250" at="29,0,42,0" concept="2" trace="toolWindowListener" />
+      <scope id="958962162498987272" at="34,92,35,65" />
+      <scope id="4436333123432384549" at="37,30,38,22" />
+      <scope id="6294660000051114344" at="42,51,43,83" />
+      <scope id="8645458101904417945" at="50,45,51,127" />
+      <scope id="6294660000051114344" at="62,44,63,16" />
+      <scope id="5458251120638355526" at="65,47,66,61" />
+      <scope id="6294660000051114346" at="68,36,69,52" />
+      <scope id="4436333123432384546" at="37,7,39,7">
+        <var name="ex" id="4436333123432384547" />
+      </scope>
+      <scope id="6294660000051114344" at="57,25,59,20" />
+      <scope id="4436333123432379685" at="33,11,36,9" />
+      <scope id="6294660000051114344" at="42,0,45,0">
+        <var name="project" id="6294660000051114344" />
+      </scope>
+      <scope id="8645458101904417941" at="49,78,52,5">
+        <var name="type" id="8645458101904417943" />
+      </scope>
+      <scope id="5458251120638355524" at="65,0,68,0">
+        <var name="context" id="5458251120638357143" />
+      </scope>
+      <scope id="6294660000051114344" at="68,0,71,0" />
+      <scope id="6294660000051114344" at="57,0,61,0" />
+      <scope id="6294660000051114344" at="61,0,65,0" />
+      <scope id="958962162498269975" at="32,65,39,7" />
+      <scope id="958962162498269966" at="31,0,41,0">
+        <var name="toolWindow" id="958962162498269971" />
+      </scope>
+      <scope id="6294660000051114344" at="45,37,55,170" />
+      <scope id="6294660000051114344" at="45,0,57,0">
+        <var name="project" id="6294660000051114344" />
+      </scope>
+      <unit id="958962162498269712" at="29,61,41,3" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.ContextActionsTool_Tool$1" />
+      <unit id="6294660000051114344" at="24,0,72,0" name="com.mbeddr.mpsutil.contextactions.runtime.plugin.ContextActionsTool_Tool" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="6294660000051114344" at="17,76,18,82" concept="1" />
+    </file>
+  </root>
+</debug-info>
+

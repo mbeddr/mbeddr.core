@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-34urc5w0p5doj0ho7v68advjuxqtun1">
+  <files names="EditorAspectDescriptorImpl.java:InterruptExitHandler_Editor.java:InterruptExitHandler_EditorBuilder_a.java:InterruptProcessed_Editor.java:InterruptProcessed_EditorBuilder_a.java:InterruptRunnableMappingActive_Editor.java:InterruptRunnableMappingActive_EditorBuilder_a.java:InterruptRunnableMapping_Editor.java:InterruptRunnableMapping_EditorBuilder_a.java:InterruptRunnableReturnValue_Editor.java:InterruptRunnableReturnValue_EditorBuilder_a.java:InterruptRunnableReturnValue_InspectorBuilder_a.java:InterruptTrigger_Editor.java:InterruptTrigger_EditorBuilder_a.java:deleteInterruptRunnableExitHandler.java" />
+</product>
+

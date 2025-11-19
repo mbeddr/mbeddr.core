@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1170075670744:jetbrains.mps.baseLanguage.structure.SynchronizedStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/3656563686722127752">
+    <file name="AsyncCellProvider.java">
+      <node id="3656563686722127753" at="17,0,18,0" concept="4" trace="_valueCallable" />
+      <node id="8209566874278408367" at="19,80,20,16" concept="14" />
+      <node id="3656563686722127764" at="20,16,21,35" concept="3" />
+      <node id="3656563686722294084" at="25,67,26,97" concept="8" />
+      <node id="3656563686722299719" at="26,97,27,64" concept="3" />
+      <node id="3656563686722127833" at="27,64,28,21" concept="9" />
+      <node id="3656563686722127760" at="19,0,23,0" concept="2" trace="AsyncCellProvider#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/concurrent/Callable;)V" />
+      <node id="3656563686722253697" at="24,0,30,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="3656563686722127763" at="19,80,21,35" />
+      <scope id="3656563686722253703" at="25,67,28,21">
+        <var name="asyncCell" id="3656563686722294085" />
+      </scope>
+      <scope id="3656563686722127760" at="19,0,23,0">
+        <var name="node" id="3656563686722127772" />
+        <var name="valueCallable" id="3656563686722127774" />
+      </scope>
+      <scope id="3656563686722253697" at="24,0,30,0">
+        <var name="editorContext" id="3656563686722253701" />
+      </scope>
+      <unit id="3656563686722127752" at="16,0,31,0" name="com.mbeddr.mpsutil.asynccell.plugin.AsyncCellProvider" />
+    </file>
+  </root>
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/3656563686722188801">
+    <file name="AsyncCellManager.java">
+      <node id="5445759082313870104" at="20,0,21,0" concept="4" trace="SPINNING_INTERVAL" />
+      <node id="3656563686722360665" at="24,0,25,0" concept="4" trace="_pendingCells" />
+      <node id="2856439119653421003" at="29,0,30,0" concept="4" trace="_updater" />
+      <node id="5445759082313359176" at="33,93,34,0" concept="11" />
+      <node id="3645598487158146853" at="36,76,37,33" concept="3" />
+      <node id="3656563686722191787" at="42,0,43,0" concept="12" trace="_instance" />
+      <node id="3656563686722202269" at="44,28,45,41" concept="3" />
+      <node id="3656563686722196995" at="46,5,47,21" concept="9" />
+      <node id="6590237796017101767" at="51,28,52,26" concept="3" />
+      <node id="4981550369801061742" at="52,26,53,23" concept="3" />
+      <node id="5445759082313164179" at="61,63,62,14" concept="3" />
+      <node id="3656563686722364023" at="67,25,68,63" concept="3" />
+      <node id="5445759082313360804" at="69,36,70,16" concept="3" />
+      <node id="6590237796017820419" at="76,25,77,66" concept="3" />
+      <node id="5445759082313361580" at="78,57,79,15" concept="3" />
+      <node id="5445759082312846176" at="84,41,85,20" concept="9" />
+      <node id="5445759082313406276" at="88,30,89,26" concept="9" />
+      <node id="6590237796017725242" at="92,53,93,99" concept="8" />
+      <node id="6590237796017736464" at="94,25,95,89" concept="3" />
+      <node id="6590237796017757171" at="96,5,97,23" concept="9" />
+      <node id="5445759082313128441" at="100,24,101,21" concept="3" />
+      <node id="5445759082313130633" at="101,21,102,27" concept="3" />
+      <node id="5445759082313158550" at="105,23,106,20" concept="3" />
+      <node id="5445759082313160825" at="106,20,107,26" concept="3" />
+      <node id="5445759082313362412" at="111,25,112,13" concept="3" />
+      <node id="3645598487158146850" at="35,59,38,7" concept="5" />
+      <node id="3656563686722198303" at="43,48,46,5" concept="6" />
+      <node id="5445759082313045121" at="60,29,63,5" concept="6" />
+      <node id="5445759082312699853" at="68,63,71,7" concept="6" />
+      <node id="5445759082312686294" at="77,66,80,7" concept="6" />
+      <node id="5445759082312838421" at="84,0,87,0" concept="7" trace="_getUpdater#()Lcom/mbeddr/mpsutil/asynccell/plugin/AsyncCellUpdater;" />
+      <node id="5445759082313400109" at="88,0,91,0" concept="7" trace="_getSpinner#()Ljavax/swing/Timer;" />
+      <node id="6590237796017362764" at="93,99,96,5" concept="15" />
+      <node id="6590237796017292757" at="110,26,113,5" concept="15" />
+      <node id="6590237796017100893" at="50,40,54,5" concept="6" />
+      <node id="5445759082313119447" at="100,0,104,0" concept="7" trace="start#()V" />
+      <node id="5445759082313150233" at="105,0,109,0" concept="7" trace="stop#()V" />
+      <node id="3645598487158952769" at="34,0,39,7" concept="3" />
+      <node id="3656563686722209019" at="60,0,65,0" concept="2" trace="AsyncCellManager#()V" />
+      <node id="6590237796017105983" at="110,0,115,0" concept="7" trace="dispose#()V" />
+      <node id="3656563686722189959" at="43,0,49,0" concept="13" trace="getInstance#()Lcom/mbeddr/mpsutil/asynccell/plugin/AsyncCellManager;" />
+      <node id="6590237796017099183" at="50,0,56,0" concept="13" trace="disposeInstance#()V" />
+      <node id="3656563686722396035" at="66,61,72,5" concept="15" />
+      <node id="6590237796017807227" at="75,59,81,5" concept="15" />
+      <node id="6590237796017362760" at="92,0,99,0" concept="7" trace="getAsyncCells#()Ljava/lang/Iterable;" />
+      <node id="3645598487158146795" at="33,0,41,0" concept="4" trace="_spinningTimer" />
+      <node id="3656563686722219815" at="66,0,74,0" concept="7" trace="registerAsyncCell#(Lcom/mbeddr/mpsutil/asynccell/plugin/EditorCell_Async;)V" />
+      <node id="6590237796017807223" at="75,0,83,0" concept="7" trace="removeAsyncCell#(Lcom/mbeddr/mpsutil/asynccell/plugin/EditorCell_Async;)V" />
+      <scope id="3645598487158146852" at="36,76,37,33" />
+      <scope id="3656563686722198305" at="44,28,45,41" />
+      <scope id="5445759082313045123" at="61,63,62,14" />
+      <scope id="5445759082312699854" at="69,36,70,16" />
+      <scope id="5445759082312686296" at="78,57,79,15" />
+      <scope id="5445759082312838424" at="84,41,85,20" />
+      <scope id="5445759082313400112" at="88,30,89,26" />
+      <scope id="6590237796017362766" at="94,25,95,89" />
+      <scope id="6590237796017292761" at="111,25,112,13" />
+      <scope id="6590237796017100895" at="51,28,53,23" />
+      <scope id="5445759082313119450" at="100,24,102,27" />
+      <scope id="5445759082313150236" at="105,23,107,26" />
+      <scope id="3645598487158146849" at="35,59,38,7" />
+      <scope id="3645598487158146850" at="35,59,38,7">
+        <var name="cell" id="3645598487158146851" />
+      </scope>
+      <scope id="3656563686722209023" at="60,29,63,5" />
+      <scope id="5445759082312838421" at="84,0,87,0" />
+      <scope id="5445759082313400109" at="88,0,91,0" />
+      <scope id="6590237796017105986" at="110,26,113,5" />
+      <scope id="3656563686722189962" at="43,48,47,21" />
+      <scope id="6590237796017099186" at="50,40,54,5" />
+      <scope id="3656563686722396039" at="67,25,71,7" />
+      <scope id="6590237796017807229" at="76,25,80,7" />
+      <scope id="5445759082313119447" at="100,0,104,0" />
+      <scope id="5445759082313150233" at="105,0,109,0" />
+      <scope id="3656563686722209019" at="60,0,65,0" />
+      <scope id="6590237796017362763" at="92,53,97,23">
+        <var name="editorCells" id="6590237796017725245" />
+      </scope>
+      <scope id="6590237796017105983" at="110,0,115,0" />
+      <scope id="3645598487158952144" at="33,93,39,7" />
+      <scope id="3656563686722189959" at="43,0,49,0" />
+      <scope id="6590237796017099183" at="50,0,56,0" />
+      <scope id="3656563686722219818" at="66,61,72,5" />
+      <scope id="6590237796017807226" at="75,59,81,5" />
+      <scope id="6590237796017362760" at="92,0,99,0" />
+      <scope id="3656563686722219815" at="66,0,74,0">
+        <var name="asyncCell" id="3656563686722303657" />
+      </scope>
+      <scope id="6590237796017807223" at="75,0,83,0">
+        <var name="asyncCell" id="6590237796017807224" />
+      </scope>
+      <unit id="3656563686722188801" at="19,0,117,0" name="com.mbeddr.mpsutil.asynccell.plugin.AsyncCellManager" />
+    </file>
+  </root>
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/3656563686722264591">
+    <file name="EditorCell_Async.java">
+      <node id="6590237796017516018" at="18,0,19,0" concept="12" trace="COMPUTING_TEXT" />
+      <node id="6590237796018301403" at="19,55,20,113" concept="9" />
+      <node id="3656563686722327231" at="23,0,24,0" concept="4" trace="_valueCallable" />
+      <node id="6590237796017321914" at="25,0,26,0" concept="4" trace="_value" />
+      <node id="6590237796017585883" at="26,0,27,0" concept="4" trace="_computingTextCtr" />
+      <node id="3656563686722272170" at="28,108,29,56" concept="14" />
+      <node id="3656563686722349744" at="29,56,30,35" concept="3" />
+      <node id="6590237796017323555" at="33,47,34,26" concept="9" />
+      <node id="3656563686722337438" at="37,59,38,26" concept="9" />
+      <node id="6590237796019307857" at="41,51,42,50" concept="0" />
+      <node id="6590237796019343017" at="42,50,43,0" concept="11" />
+      <node id="6590237796017326986" at="43,0,44,19" concept="3" />
+      <node id="6590237796021216165" at="45,25,46,34" concept="3" />
+      <node id="6590237796021365019" at="47,12,48,33" concept="8" />
+      <node id="6590237796021373735" at="49,22,50,29" concept="3" />
+      <node id="6590237796019338836" at="51,7,52,41" concept="3" />
+      <node id="6590237796021612009" at="53,5,54,22" concept="3" />
+      <node id="6590237796017444071" at="60,35,61,50" concept="0" />
+      <node id="6590237796019341849" at="61,50,62,0" concept="11" />
+      <node id="6590237796017590175" at="63,25,64,67" concept="3" />
+      <node id="6590237796019698489" at="68,48,69,19" concept="3" />
+      <node id="6590237796019469082" at="69,19,70,42" concept="8" />
+      <node id="6590237796019583657" at="71,43,72,23" concept="3" />
+      <node id="6590237796018301400" at="19,0,22,0" concept="13" trace="getNextComputingText#(I)Ljava/lang/String;" />
+      <node id="6590237796017310242" at="33,0,36,0" concept="7" trace="isAsyncValueUpdateRequired#()Z" />
+      <node id="3656563686722334511" at="37,0,40,0" concept="7" trace="getAsyncValueCallable#()Ljava/util/concurrent/Callable;" />
+      <node id="6590237796021359520" at="48,33,51,7" concept="6" />
+      <node id="6590237796017498055" at="62,0,65,5" concept="6" />
+      <node id="6590237796019419481" at="70,42,73,5" concept="6" />
+      <node id="3656563686722266692" at="28,0,32,0" concept="2" trace="EditorCell_Async#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/concurrent/Callable;)V" />
+      <node id="6590237796021218706" at="47,10,53,5" concept="1" />
+      <node id="6590237796017439537" at="60,0,67,0" concept="7" trace="turnSpinningWheel#()V" />
+      <node id="6590237796019675017" at="68,0,75,0" concept="7" trace="setTextAndRepaint#(Ljava/lang/String;)V" />
+      <node id="6590237796021209025" at="44,19,53,5" concept="6" />
+      <node id="6590237796017316623" at="41,0,56,0" concept="7" trace="setAsyncValue#(Lcom/mbeddr/mpsutil/asynccell/plugin/AsyncCellValue;)V" />
+      <scope id="6590237796018301402" at="19,55,20,113" />
+      <scope id="6590237796017310245" at="33,47,34,26" />
+      <scope id="3656563686722334514" at="37,59,38,26" />
+      <scope id="6590237796021209027" at="45,25,46,34" />
+      <scope id="6590237796021359522" at="49,22,50,29" />
+      <scope id="6590237796017498057" at="63,25,64,67" />
+      <scope id="6590237796019419483" at="71,43,72,23" />
+      <scope id="3656563686722266696" at="28,108,30,35" />
+      <scope id="6590237796018301400" at="19,0,22,0">
+        <var name="idx" id="6590237796018307972" />
+      </scope>
+      <scope id="6590237796017310242" at="33,0,36,0" />
+      <scope id="3656563686722334511" at="37,0,40,0" />
+      <scope id="3656563686722266692" at="28,0,32,0">
+        <var name="editorContext" id="3656563686722274230" />
+        <var name="node" id="3656563686722274454" />
+        <var name="valueCallable" id="3656563686722318197" />
+      </scope>
+      <scope id="6590237796021218707" at="47,12,52,41">
+        <var name="s" id="6590237796021365020" />
+      </scope>
+      <scope id="6590237796017439540" at="60,35,65,5" />
+      <scope id="6590237796019675020" at="68,48,73,5">
+        <var name="ec" id="6590237796019469083" />
+      </scope>
+      <scope id="6590237796017439537" at="60,0,67,0" />
+      <scope id="6590237796019675017" at="68,0,75,0">
+        <var name="value" id="6590237796019678024" />
+      </scope>
+      <scope id="6590237796017316626" at="41,51,54,22" />
+      <scope id="6590237796017316623" at="41,0,56,0">
+        <var name="value" id="6590237796017317217" />
+      </scope>
+      <unit id="3656563686722264591" at="16,0,77,0" name="com.mbeddr.mpsutil.asynccell.plugin.EditorCell_Async" />
+    </file>
+  </root>
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/6590237796017096742">
+    <file name="AsyncEditorCellPlugin_ProjectPluginPart.java">
+      <node id="657149510964813680" at="12,40,13,0" concept="11" />
+      <node id="657149510964813685" at="13,0,14,0" concept="11" />
+      <node id="6590237796017110918" at="17,43,18,39" concept="3" />
+      <node id="6590237796017096742" at="9,0,11,0" concept="2" trace="AsyncEditorCellPlugin_ProjectPluginPart#()V" />
+      <node id="6590237796017096742" at="16,0,20,0" concept="7" trace="dispose#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="6590237796017096742" at="11,0,16,0" concept="7" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="6590237796017096742" at="9,52,9,52" />
+      <scope id="6590237796017096774" at="17,43,18,39" />
+      <scope id="6590237796017096742" at="9,0,11,0" />
+      <scope id="6590237796017183958" at="12,40,14,0" />
+      <scope id="6590237796017096742" at="16,0,20,0">
+        <var name="project" id="6590237796017096742" />
+      </scope>
+      <scope id="6590237796017096742" at="11,0,16,0">
+        <var name="project" id="6590237796017096742" />
+      </scope>
+      <unit id="6590237796017096742" at="8,0,21,0" name="com.mbeddr.mpsutil.asynccell.plugin.AsyncEditorCellPlugin_ProjectPluginPart" />
+    </file>
+    <file name="Asynccell_ProjectPlugin.java">
+      <node id="6590237796017096742" at="12,62,13,61" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/6590237796017291275">
+    <file name="AsyncCellUpdater.java">
+      <node id="6590237796017291275" at="21,0,22,0" concept="12" trace="LOG" />
+      <node id="5445759082313735717" at="22,0,23,0" concept="4" trace="CHECK_INTERVAL" />
+      <node id="3645598487158659701" at="23,0,24,0" concept="4" trace="_currentUpdate" />
+      <node id="6590237796017298069" at="24,0,25,0" concept="4" trace="_cellManager" />
+      <node id="3645598487158596875" at="25,0,26,0" concept="4" trace="_timer" />
+      <node id="3645598487158612141" at="30,23,31,19" concept="3" />
+      <node id="5445759082312746716" at="34,30,35,30" concept="9" />
+      <node id="3645598487158620739" at="41,22,42,18" concept="3" />
+      <node id="3645598487158896009" at="42,18,43,38" concept="3" />
+      <node id="3645598487159025292" at="50,60,51,13" concept="9" />
+      <node id="3645598487159016775" at="52,5,53,25" concept="3" />
+      <node id="3645598487158733174" at="56,57,57,31" concept="3" />
+      <node id="3645598487158746242" at="63,43,64,49" concept="10" />
+      <node id="3645598487158744931" at="65,63,66,28" concept="9" />
+      <node id="3645598487158746497" at="67,5,68,0" concept="11" />
+      <node id="3645598487158747877" at="68,0,69,22" concept="10" />
+      <node id="3645598487158659711" at="69,22,70,109" concept="3" />
+      <node id="3645598487159145202" at="70,109,71,0" concept="11" />
+      <node id="3645598487159147926" at="71,0,72,26" concept="9" />
+      <node id="5445759082308704752" at="78,31,79,126" concept="3" />
+      <node id="5445759082309110570" at="80,7,81,0" concept="11" />
+      <node id="3645598487158554641" at="83,77,84,91" concept="8" />
+      <node id="3645598487158554659" at="86,17,87,65" concept="3" />
+      <node id="1822804962007437254" at="88,35,89,32" concept="10" />
+      <node id="3645598487158554669" at="89,32,90,34" concept="3" />
+      <node id="1822804962007438075" at="90,34,91,37" concept="10" />
+      <node id="1822804962007442808" at="91,37,92,47" concept="8" />
+      <node id="1822804962007447794" at="92,47,93,71" concept="3" />
+      <node id="1822804962007452378" at="93,71,94,78" concept="10" />
+      <node id="1822804962007453979" at="94,78,95,49" concept="3" />
+      <node id="5445759082313717360" at="98,37,99,39" concept="10" />
+      <node id="5445759082313720596" at="100,46,101,32" concept="10" />
+      <node id="3645598487158982143" at="101,32,102,47" concept="3" />
+      <node id="5445759082313723999" at="102,47,103,36" concept="10" />
+      <node id="3645598487158982148" at="103,36,104,49" concept="3" />
+      <node id="5445759082312985936" at="112,36,113,44" concept="9" />
+      <node id="5445759082312985936" at="114,5,115,17" concept="9" />
+      <node id="3645598487158610259" at="30,0,33,0" concept="7" trace="start#()V" />
+      <node id="5445759082312743692" at="34,0,37,0" concept="7" trace="isRunning#()Z" />
+      <node id="3645598487159024171" at="49,87,52,5" concept="6" />
+      <node id="6590237796017296590" at="56,0,59,0" concept="2" trace="AsyncCellUpdater#(Lcom/mbeddr/mpsutil/asynccell/plugin/AsyncCellManager;)V" />
+      <node id="3645598487158669425" at="64,49,67,5" concept="6" />
+      <node id="5445759082308704752" at="77,23,80,7" concept="6" />
+      <node id="5445759082312985936" at="111,73,114,5" concept="6" />
+      <node id="3645598487158618780" at="41,0,45,0" concept="7" trace="stop#()V" />
+      <node id="3645598487159014426" at="49,0,55,0" concept="7" trace="waitForUpdateToFinish#()V" />
+      <node id="3645598487160316613" at="99,39,105,15" concept="3" />
+      <node id="5445759082312985936" at="111,0,117,0" concept="13" trace="check_wdjy4l_a1a9#(Ljava/util/concurrent/Future;)Z" />
+      <node id="3645598487158554675" at="97,13,106,11" concept="6" />
+      <node id="3645598487158603517" at="63,0,74,0" concept="7" trace="scheduleReevaluation#()Ljava/util/concurrent/Future;" />
+      <node id="3645598487158554657" at="85,82,96,13" concept="16" />
+      <node id="3645598487158554645" at="84,91,97,13" concept="3" />
+      <node id="3645598487158554630" at="82,95,107,9" concept="6" />
+      <node id="3645598487158554627" at="81,0,108,7" concept="5" />
+      <node id="6590237796017291339" at="76,0,110,0" concept="7" trace="run#()V" />
+      <scope id="3645598487158610262" at="30,23,31,19" />
+      <scope id="5445759082312743695" at="34,30,35,30" />
+      <scope id="3645598487159024173" at="50,60,51,13" />
+      <scope id="6590237796017296594" at="56,57,57,31" />
+      <scope id="3645598487158669427" at="65,63,66,28" />
+      <scope id="5445759082308704752" at="78,31,79,126" />
+      <scope id="3645598487158554658" at="86,17,87,65" />
+      <scope id="5445759082312985936" at="112,36,113,44" />
+      <scope id="3645598487158618783" at="41,22,43,38" />
+      <scope id="3645598487158610259" at="30,0,33,0" />
+      <scope id="5445759082312743692" at="34,0,37,0" />
+      <scope id="6590237796017296590" at="56,0,59,0">
+        <var name="cellManager" id="6590237796017298303" />
+      </scope>
+      <scope id="3645598487158618780" at="41,0,45,0" />
+      <scope id="3645598487159014429" at="49,87,53,25" />
+      <scope id="3645598487158982142" at="100,46,104,49" />
+      <scope id="5445759082312985936" at="111,73,115,17" />
+      <scope id="3645598487159014426" at="49,0,55,0" />
+      <scope id="5445759082312985936" at="111,0,117,0">
+        <var name="checkedDotOperand" id="5445759082312985936" />
+      </scope>
+      <scope id="3645598487158554668" at="88,35,95,49">
+        <var name="impl" id="1822804962007442809" />
+      </scope>
+      <scope id="3645598487158554676" at="98,37,105,15" />
+      <scope id="3645598487158554667" at="88,13,96,13">
+        <var name="e" id="3645598487158554673" />
+      </scope>
+      <scope id="3645598487158603523" at="63,43,72,26" />
+      <scope id="3645598487158603517" at="63,0,74,0" />
+      <scope id="3645598487158554656" at="85,82,96,13" />
+      <scope id="3645598487158554640" at="83,77,106,11">
+        <var name="result" id="3645598487158554642" />
+      </scope>
+      <scope id="3645598487158554629" at="82,95,107,9" />
+      <scope id="3645598487158554627" at="81,0,108,7">
+        <var name="cell" id="3645598487158554628" />
+      </scope>
+      <scope id="6590237796017291343" at="77,23,108,7" />
+      <scope id="6590237796017291339" at="76,0,110,0" />
+      <unit id="3645598487158635575" at="75,0,111,0" name="com.mbeddr.mpsutil.asynccell.plugin.AsyncCellUpdater$AsyncCellUpdaterThread" />
+      <unit id="6590237796017291275" at="20,0,118,0" name="com.mbeddr.mpsutil.asynccell.plugin.AsyncCellUpdater" />
+    </file>
+  </root>
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/6590237796018898231">
+    <file name="Asynccell_ProjectPlugin.java">
+      <node id="6590237796018898231" at="10,0,12,0" concept="2" trace="Asynccell_ProjectPlugin#()V" />
+      <node id="6590237796018898231" at="12,0,15,0" concept="7" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="6590237796018898231" at="10,36,10,36" />
+      <scope id="6590237796018898231" at="12,62,13,61" />
+      <scope id="6590237796018898231" at="10,0,12,0" />
+      <scope id="6590237796018898231" at="12,0,15,0">
+        <var name="parts" id="6590237796018898231" />
+      </scope>
+      <unit id="6590237796018898231" at="9,0,16,0" name="com.mbeddr.mpsutil.asynccell.plugin.Asynccell_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:73b20a73-cf2c-4df5-ab15-88626acb1e3d(com.mbeddr.mpsutil.asynccell.plugin)/6590237796021147346">
+    <file name="AsyncCellValue.java">
+      <node id="6590237796021149660" at="14,0,15,0" concept="4" trace="_text" />
+      <node id="6590237796021149682" at="15,0,16,0" concept="4" trace="_style" />
+      <node id="6590237796021151100" at="17,51,18,17" concept="3" />
+      <node id="6590237796021155214" at="18,17,19,19" concept="3" />
+      <node id="6590237796021161340" at="22,27,23,17" concept="9" />
+      <node id="6590237796021159434" at="26,27,27,18" concept="9" />
+      <node id="6590237796021157185" at="22,0,25,0" concept="7" trace="getText#()Ljava/lang/String;" />
+      <node id="6590237796021158573" at="26,0,29,0" concept="7" trace="getStyle#()Ljetbrains/mps/openapi/editor/style/Style;" />
+      <node id="6590237796021147656" at="17,0,21,0" concept="2" trace="AsyncCellValue#(Ljava/lang/String;Ljetbrains/mps/openapi/editor/style/Style;)V" />
+      <scope id="6590237796021157188" at="22,27,23,17" />
+      <scope id="6590237796021158576" at="26,27,27,18" />
+      <scope id="6590237796021147660" at="17,51,19,19" />
+      <scope id="6590237796021157185" at="22,0,25,0" />
+      <scope id="6590237796021158573" at="26,0,29,0" />
+      <scope id="6590237796021147656" at="17,0,21,0">
+        <var name="style" id="6590237796021147981" />
+        <var name="text" id="6590237796021147944" />
+      </scope>
+      <unit id="6590237796021147346" at="12,0,31,0" name="com.mbeddr.mpsutil.asynccell.plugin.AsyncCellValue" />
+    </file>
+  </root>
+</debug-info>
+

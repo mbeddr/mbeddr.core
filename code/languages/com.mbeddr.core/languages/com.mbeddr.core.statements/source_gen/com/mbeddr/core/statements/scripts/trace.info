@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ScriptsDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.core.statements.scripts.ScriptsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e4ae3275-ee21-4789-baa8-4e9a45c2d0c7(com.mbeddr.core.statements.scripts)/154287305788322836">
+    <file name="ScriptsDescriptor.java">
+      <node id="154287305788322836" at="15,52,16,80" concept="1" />
+    </file>
+    <file name="migrateSwitchCaseStatemetns_MigrationScript.java">
+      <node id="154287305788322836" at="21,56,22,63" concept="8" />
+      <node id="154287305788322837" at="25,31,26,35" concept="5" />
+      <node id="154287305788322837" at="29,41,30,35" concept="5" />
+      <node id="154287305788322837" at="33,54,34,38" concept="5" />
+      <node id="154287305788322837" at="37,59,38,20" concept="5" />
+      <node id="2346272279407101811" at="42,71,43,67" concept="1" />
+      <node id="154287305788994547" at="44,9,45,148" concept="4" />
+      <node id="154287305788994715" at="46,426,47,169" concept="1" />
+      <node id="154287305788994559" at="48,9,49,0" concept="6" />
+      <node id="154287305788322840" at="50,206,51,328" concept="1" />
+      <node id="154287305788994397" at="52,9,53,0" concept="6" />
+      <node id="154287305788322837" at="56,42,57,20" concept="5" />
+      <node id="154287305788322836" at="64,41,65,160" concept="5" />
+      <node id="154287305788322836" at="69,0,70,0" concept="7" trace="SwitchCase$tY" />
+      <node id="154287305788322836" at="70,0,71,0" concept="7" trace="BreakStatement$gw" />
+      <node id="154287305788322836" at="74,0,75,0" concept="7" trace="body$R2hM" />
+      <node id="154287305788322836" at="75,0,76,0" concept="7" trace="statements$euTV" />
+      <node id="2346272279407089032" at="41,52,44,9" concept="2" />
+      <node id="154287305788994560" at="45,148,48,9" concept="2" />
+      <node id="154287305788994398" at="49,0,52,9" concept="2" />
+      <node id="154287305788322837" at="24,0,28,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="154287305788322837" at="28,0,32,0" concept="3" trace="getAdditionalInfo#()Ljava/lang/String;" />
+      <node id="154287305788322837" at="32,0,36,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="154287305788322837" at="36,0,40,0" concept="3" trace="isApplicableInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="154287305788322837" at="55,0,59,0" concept="3" trace="isShowAsIntention#()Z" />
+      <node id="154287305788322836" at="62,0,67,0" concept="3" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="154287305788322837" at="40,0,55,0" concept="3" trace="doUpdateInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="154287305788322837" at="22,63,59,7" concept="1" />
+      <node id="154287305788322836" at="21,0,61,0" concept="0" trace="migrateSwitchCaseStatemetns_MigrationScript#()V" />
+      <scope id="154287305788322837" at="25,31,26,35" />
+      <scope id="154287305788322837" at="29,41,30,35" />
+      <scope id="154287305788322837" at="33,54,34,38" />
+      <scope id="154287305788322837" at="37,59,38,20" />
+      <scope id="2346272279407089034" at="42,71,43,67" />
+      <scope id="154287305788994561" at="46,426,47,169" />
+      <scope id="154287305788994399" at="50,206,51,328" />
+      <scope id="154287305788322837" at="56,42,57,20" />
+      <scope id="154287305788322836" at="64,41,65,160" />
+      <scope id="154287305788322837" at="24,0,28,0" />
+      <scope id="154287305788322837" at="28,0,32,0" />
+      <scope id="154287305788322837" at="32,0,36,0" />
+      <scope id="154287305788322837" at="36,0,40,0">
+        <var name="node" id="154287305788322837" />
+      </scope>
+      <scope id="154287305788322837" at="55,0,59,0" />
+      <scope id="154287305788322836" at="62,0,67,0" />
+      <scope id="154287305788322839" at="41,52,53,0">
+        <var name="s" id="154287305788994548" />
+      </scope>
+      <scope id="154287305788322837" at="40,0,55,0">
+        <var name="node" id="154287305788322837" />
+      </scope>
+      <scope id="154287305788322836" at="21,56,59,7" />
+      <scope id="154287305788322836" at="21,0,61,0" />
+      <unit id="154287305788322836" at="68,0,72,0" name="com.mbeddr.core.statements.scripts.migrateSwitchCaseStatemetns_MigrationScript$CONCEPTS" />
+      <unit id="154287305788322836" at="73,0,77,0" name="com.mbeddr.core.statements.scripts.migrateSwitchCaseStatemetns_MigrationScript$LINKS" />
+      <unit id="154287305788322837" at="23,28,59,5" name="com.mbeddr.core.statements.scripts.migrateSwitchCaseStatemetns_MigrationScript$1" />
+      <unit id="154287305788322836" at="20,0,78,0" name="com.mbeddr.core.statements.scripts.migrateSwitchCaseStatemetns_MigrationScript" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.ext.statemachines.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d0ba0820-8622-40ff-8285-95b3d6234c87(com.mbeddr.ext.statemachines.migration)/1320626622351242821">
+    <file name="SmXxxStateTarget_state.java">
+      <node id="1320626622351242821" at="20,0,21,0" concept="1" trace="description" />
+      <node id="1320626622351242821" at="21,30,22,23" concept="5" />
+      <node id="1320626622351242821" at="25,33,26,17" concept="5" />
+      <node id="1320626622351242821" at="28,41,29,17" concept="0" />
+      <node id="1320626622351242821" at="29,17,30,16" concept="5" />
+      <node id="1320626622351278351" at="34,107,35,145" concept="0" />
+      <node id="1320626622351315544" at="35,145,36,66" concept="0" />
+      <node id="1320626622351980331" at="38,108,39,145" concept="0" />
+      <node id="1320626622351980343" at="39,145,40,66" concept="0" />
+      <node id="1320626622351242821" at="44,50,45,149" concept="5" />
+      <node id="1320626622351297942" at="48,69,49,68" concept="4" />
+      <node id="1320626622351297942" at="49,68,50,48" concept="0" />
+      <node id="1320626622351297942" at="50,48,51,26" concept="5" />
+      <node id="1320626622351980336" at="53,69,54,68" concept="4" />
+      <node id="1320626622351980336" at="54,68,55,48" concept="0" />
+      <node id="1320626622351980336" at="55,48,56,26" concept="5" />
+      <node id="1320626622351242821" at="60,0,61,0" concept="6" trace="SmSetStateTarget$DJ" />
+      <node id="1320626622351242821" at="61,0,62,0" concept="6" trace="SmIsInStateTarget$B0" />
+      <node id="1320626622351242821" at="62,0,63,0" concept="6" trace="StateRef$nC" />
+      <node id="1320626622351242821" at="66,0,67,0" concept="6" trace="state$e6ks" />
+      <node id="1320626622351242821" at="67,0,68,0" concept="6" trace="state_old$W7Wo" />
+      <node id="1320626622351242821" at="68,0,69,0" concept="6" trace="state$nL89" />
+      <node id="1320626622351242821" at="69,0,70,0" concept="6" trace="state_old$WXFG" />
+      <node id="1320626622351242821" at="70,0,71,0" concept="6" trace="state$gium" />
+      <node id="1320626622351242821" at="21,0,24,0" concept="3" trace="getCaption#()Ljava/lang/String;" />
+      <node id="1320626622351242821" at="44,0,47,0" concept="3" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="1320626622351242821" at="24,0,28,0" concept="3" trace="isRerunnable#()Z" />
+      <node id="1320626622351242821" at="28,0,32,0" concept="3" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8780521317128335747" at="33,40,37,9" concept="0" />
+      <node id="1320626622351980322" at="37,9,41,9" concept="0" />
+      <node id="1320626622351297942" at="48,0,53,0" concept="7" trace="createStateRef_zhvfij_a0a0a0a0a0a6#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1320626622351980336" at="53,0,58,0" concept="7" trace="createStateRef_zhvfij_a0a0a0a1a0a6#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8780521317128331296" at="32,42,42,5" concept="2" />
+      <node id="1320626622351242821" at="32,0,44,0" concept="3" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="1320626622351242821" at="21,30,22,23" />
+      <scope id="1320626622351242821" at="25,33,26,17" />
+      <scope id="1320626622351242821" at="44,50,45,149" />
+      <scope id="1320626622351242821" at="28,41,30,16" />
+      <scope id="1320626622351277491" at="34,107,36,66" />
+      <scope id="1320626622351980330" at="38,108,40,66" />
+      <scope id="1320626622351242821" at="21,0,24,0" />
+      <scope id="1320626622351242821" at="44,0,47,0" />
+      <scope id="1320626622351297942" at="48,69,51,26">
+        <var name="n0" id="1320626622351297942" />
+      </scope>
+      <scope id="1320626622351980336" at="53,69,56,26">
+        <var name="n0" id="1320626622351980336" />
+      </scope>
+      <scope id="1320626622351242821" at="24,0,28,0" />
+      <scope id="1320626622351242821" at="28,0,32,0">
+        <var name="m" id="1320626622351242821" />
+      </scope>
+      <scope id="1320626622351297942" at="48,0,53,0">
+        <var name="p0" id="1320626622351297942" />
+      </scope>
+      <scope id="1320626622351980336" at="53,0,58,0">
+        <var name="p0" id="1320626622351980336" />
+      </scope>
+      <scope id="8780521317128331300" at="33,40,41,9" />
+      <scope id="1320626622351242821" at="32,42,42,5" />
+      <scope id="8780521317128331296" at="32,42,42,5">
+        <var name="model" id="8780521317128331301" />
+      </scope>
+      <scope id="1320626622351242821" at="32,0,44,0">
+        <var name="m" id="1320626622351242821" />
+      </scope>
+      <unit id="1320626622351242821" at="59,0,64,0" name="com.mbeddr.ext.statemachines.migration.SmXxxStateTarget_state$CONCEPTS" />
+      <unit id="1320626622351242821" at="65,0,72,0" name="com.mbeddr.ext.statemachines.migration.SmXxxStateTarget_state$LINKS" />
+      <unit id="1320626622351242821" at="19,0,73,0" name="com.mbeddr.ext.statemachines.migration.SmXxxStateTarget_state" />
+    </file>
+  </root>
+</debug-info>
+

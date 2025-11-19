@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,38,0" name="com.mbeddr.ext.concurrency.plainC.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:acb2f095-fa40-463e-abaa-11c4f0c8050f(com.mbeddr.ext.concurrency.plainC.constraints)/4655396304301807125">
+    <file name="GotoSectionAfterStatement_Constraints.java">
+      <node id="4655396304301807125" at="14,99,15,62" concept="5" />
+      <node id="4655396304301807712" at="15,62,16,26" concept="1" />
+      <node id="4655396304301807712" at="20,54,21,57" concept="5" />
+      <node id="4655396304301807125" at="26,0,27,0" concept="4" trace="GotoSectionAfterStatement$uV" />
+      <node id="4655396304301807125" at="30,0,31,0" concept="4" trace="section$wZ_p" />
+      <node id="4655396304301807712" at="20,0,23,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4655396304301807125" at="14,0,18,0" concept="0" trace="GotoSectionAfterStatement_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="4655396304301807712" at="20,54,21,57" />
+      <scope id="4655396304301807125" at="14,99,16,26" />
+      <scope id="4655396304301807712" at="20,0,23,0">
+        <var name="container" id="4655396304301807712" />
+      </scope>
+      <scope id="4655396304301807125" at="14,0,18,0">
+        <var name="initContext" id="4655396304301807125" />
+      </scope>
+      <unit id="4655396304301807125" at="25,0,28,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionAfterStatement_Constraints$CONCEPTS" />
+      <unit id="4655396304301807125" at="29,0,32,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionAfterStatement_Constraints$LINKS" />
+      <unit id="4655396304301807712" at="19,0,24,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionAfterStatement_Constraints$RD1" />
+      <unit id="4655396304301807125" at="13,0,33,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionAfterStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:acb2f095-fa40-463e-abaa-11c4f0c8050f(com.mbeddr.ext.concurrency.plainC.constraints)/6070390538386197002">
+    <file name="GotoSectionStatement_Constraints.java">
+      <node id="6070390538386197002" at="14,94,15,57" concept="5" />
+      <node id="6070390538386197003" at="15,57,16,26" concept="1" />
+      <node id="6070390538386197003" at="20,54,21,57" concept="5" />
+      <node id="6070390538386197002" at="26,0,27,0" concept="4" trace="GotoSectionStatement$xD" />
+      <node id="6070390538386197002" at="30,0,31,0" concept="4" trace="section$HQUR" />
+      <node id="6070390538386197003" at="20,0,23,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6070390538386197002" at="14,0,18,0" concept="0" trace="GotoSectionStatement_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="6070390538386197003" at="20,54,21,57" />
+      <scope id="6070390538386197002" at="14,94,16,26" />
+      <scope id="6070390538386197003" at="20,0,23,0">
+        <var name="container" id="6070390538386197003" />
+      </scope>
+      <scope id="6070390538386197002" at="14,0,18,0">
+        <var name="initContext" id="6070390538386197002" />
+      </scope>
+      <unit id="6070390538386197002" at="25,0,28,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionStatement_Constraints$CONCEPTS" />
+      <unit id="6070390538386197002" at="29,0,32,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionStatement_Constraints$LINKS" />
+      <unit id="6070390538386197003" at="19,0,24,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionStatement_Constraints$RD1" />
+      <unit id="6070390538386197002" at="13,0,33,0" name="com.mbeddr.ext.concurrency.plainC.constraints.GotoSectionStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:acb2f095-fa40-463e-abaa-11c4f0c8050f(com.mbeddr.ext.concurrency.plainC.constraints)/6070390538386208801">
+    <file name="TaskSection_Constraints.java">
+      <node id="6070390538386208801" at="16,85,17,48" concept="5" />
+      <node id="2184369924319224804" at="17,48,18,37" concept="1" />
+      <node id="2184369924319224804" at="22,60,23,67" concept="5" />
+      <node id="2184369924319225132" at="26,40,27,64" concept="3" />
+      <node id="6070390538386208801" at="32,0,33,0" concept="4" trace="TaskSection$2E" />
+      <node id="6070390538386208801" at="36,0,37,0" concept="4" trace="resolveInfo$lW9a" />
+      <node id="6070390538386208801" at="37,0,38,0" concept="4" trace="id$ODVb" />
+      <node id="2184369924319224804" at="22,0,25,0" concept="0" trace="ResolveInfo_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6070390538386208801" at="16,0,20,0" concept="0" trace="TaskSection_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="2184369924319224804" at="25,0,29,0" concept="2" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="2184369924319224804" at="22,60,23,67" />
+      <scope id="2184369924319224809" at="26,40,27,64" />
+      <scope id="6070390538386208801" at="16,85,18,37" />
+      <scope id="2184369924319224804" at="22,0,25,0">
+        <var name="container" id="2184369924319224804" />
+      </scope>
+      <scope id="6070390538386208801" at="16,0,20,0">
+        <var name="initContext" id="6070390538386208801" />
+      </scope>
+      <scope id="2184369924319224804" at="25,0,29,0">
+        <var name="node" id="2184369924319224804" />
+      </scope>
+      <unit id="6070390538386208801" at="31,0,34,0" name="com.mbeddr.ext.concurrency.plainC.constraints.TaskSection_Constraints$CONCEPTS" />
+      <unit id="6070390538386208801" at="35,0,39,0" name="com.mbeddr.ext.concurrency.plainC.constraints.TaskSection_Constraints$PROPS" />
+      <unit id="2184369924319224804" at="21,0,30,0" name="com.mbeddr.ext.concurrency.plainC.constraints.TaskSection_Constraints$ResolveInfo_PD" />
+      <unit id="6070390538386208801" at="15,0,40,0" name="com.mbeddr.ext.concurrency.plainC.constraints.TaskSection_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:acb2f095-fa40-463e-abaa-11c4f0c8050f(com.mbeddr.ext.concurrency.plainC.constraints)/8610007178382437289">
+    <file name="PlainCStrategy_Constraints.java">
+      <node id="8610007178382437289" at="27,88,28,51" concept="5" />
+      <node id="8610007178382437314" at="28,51,29,26" concept="1" />
+      <node id="8610007178382437314" at="33,54,34,59" concept="5" />
+      <node id="8610007178382437314" at="41,61,42,146" concept="3" />
+      <node id="6491070606984458102" at="45,78,46,479" concept="3" />
+      <node id="8610007178382437289" at="53,0,54,0" concept="4" trace="PlainCStrategy$Ag" />
+      <node id="8610007178382437289" at="54,0,55,0" concept="4" trace="BuildConfiguration$kH" />
+      <node id="8610007178382437289" at="55,0,56,0" concept="4" trace="Function$K8" />
+      <node id="8610007178382437289" at="59,0,60,0" concept="4" trace="timeSource$ql2o" />
+      <node id="8610007178382437289" at="60,0,61,0" concept="4" trace="binaries$R6lf" />
+      <node id="8610007178382437289" at="61,0,62,0" concept="4" trace="referencedModules$Su7l" />
+      <node id="8610007178382437289" at="62,0,63,0" concept="4" trace="module$6_LN" />
+      <node id="8610007178382437314" at="33,0,36,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8610007178382437289" at="27,0,31,0" concept="0" trace="PlainCStrategy_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8610007178382437314" at="40,0,44,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8610007178382437314" at="44,0,48,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8610007178382437314" at="38,54,48,8" concept="3" />
+      <node id="8610007178382437314" at="36,0,50,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="8610007178382437314" at="33,54,34,59" />
+      <scope id="8610007178382437314" at="41,61,42,146" />
+      <scope id="8610007178382437314" at="45,78,46,479" />
+      <scope id="8610007178382437289" at="27,88,29,26" />
+      <scope id="8610007178382437314" at="33,0,36,0">
+        <var name="container" id="8610007178382437314" />
+      </scope>
+      <scope id="8610007178382437289" at="27,0,31,0">
+        <var name="initContext" id="8610007178382437289" />
+      </scope>
+      <scope id="8610007178382437314" at="40,0,44,0" />
+      <scope id="8610007178382437314" at="44,0,48,0">
+        <var name="_context" id="8610007178382437314" />
+      </scope>
+      <scope id="8610007178382437314" at="38,54,48,8" />
+      <scope id="8610007178382437314" at="36,0,50,0" />
+      <unit id="8610007178382437289" at="52,0,57,0" name="com.mbeddr.ext.concurrency.plainC.constraints.PlainCStrategy_Constraints$CONCEPTS" />
+      <unit id="8610007178382437289" at="58,0,64,0" name="com.mbeddr.ext.concurrency.plainC.constraints.PlainCStrategy_Constraints$LINKS" />
+      <unit id="8610007178382437314" at="39,17,48,7" name="com.mbeddr.ext.concurrency.plainC.constraints.PlainCStrategy_Constraints$RD1$1" />
+      <unit id="8610007178382437314" at="32,0,51,0" name="com.mbeddr.ext.concurrency.plainC.constraints.PlainCStrategy_Constraints$RD1" />
+      <unit id="8610007178382437289" at="26,0,65,0" name="com.mbeddr.ext.concurrency.plainC.constraints.PlainCStrategy_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

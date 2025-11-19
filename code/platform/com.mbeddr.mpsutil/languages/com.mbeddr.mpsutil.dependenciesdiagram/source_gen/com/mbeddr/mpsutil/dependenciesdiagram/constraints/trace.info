@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.mpsutil.dependenciesdiagram.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5a38bed9-0cb2-40da-9697-f975ec9b4a2b(com.mbeddr.mpsutil.dependenciesdiagram.constraints)/7713532355154845734">
+    <file name="DependenciesDiagram_Constraints.java">
+      <node id="7713532355154845734" at="11,93,12,56" concept="2" />
+      <node id="7713532355154845734" at="16,0,17,0" concept="1" trace="DependenciesDiagram$su" />
+      <node id="7713532355154845734" at="11,0,14,0" concept="0" trace="DependenciesDiagram_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="7713532355154845734" at="11,93,12,56" />
+      <scope id="7713532355154845734" at="11,0,14,0">
+        <var name="initContext" id="7713532355154845734" />
+      </scope>
+      <unit id="7713532355154845734" at="15,0,18,0" name="com.mbeddr.mpsutil.dependenciesdiagram.constraints.DependenciesDiagram_Constraints$CONCEPTS" />
+      <unit id="7713532355154845734" at="10,0,19,0" name="com.mbeddr.mpsutil.dependenciesdiagram.constraints.DependenciesDiagram_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

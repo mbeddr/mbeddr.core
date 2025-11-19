@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/1769900912208191137">
+    <file name="CheckinHandler_ApplicationPlugin.java">
+      <node id="1769900912208191137" at="12,0,13,0" concept="4" trace="myId" />
+      <node id="1769900912208191137" at="18,27,19,16" concept="9" />
+      <node id="1769900912208191137" at="14,0,16,0" concept="1" trace="CheckinHandler_ApplicationPlugin#()V" />
+      <node id="1769900912208191137" at="17,0,21,0" concept="7" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="1769900912208191137" at="22,0,26,0" concept="7" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="1769900912208191137" at="14,45,14,45" />
+      <scope id="1769900912208191137" at="18,27,19,16" />
+      <scope id="1769900912208191137" at="23,66,24,49" />
+      <scope id="1769900912208191137" at="14,0,16,0" />
+      <scope id="1769900912208191137" at="17,0,21,0" />
+      <scope id="1769900912208191137" at="22,0,26,0">
+        <var name="parts" id="1769900912208191137" />
+      </scope>
+      <unit id="1769900912208191137" at="11,0,27,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.CheckinHandler_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/1769900912208228636">
+    <file name="CheckinHandler_ApplicationPlugin.java">
+      <node id="1769900912208228636" at="23,66,24,49" concept="3" />
+    </file>
+    <file name="CheckinPlugin_AppPluginPart.java">
+      <node id="2626561844791236642" at="15,0,16,0" concept="4" trace="disposable" />
+      <node id="4531194710189873674" at="16,0,17,0" concept="4" trace="factories" />
+      <node id="1769900912208314617" at="20,22,21,100" concept="8" />
+      <node id="3230313041483311475" at="21,100,22,279" concept="8" />
+      <node id="3230313041483365581" at="23,55,24,62" concept="8" />
+      <node id="4531194710189791744" at="24,62,25,93" concept="3" />
+      <node id="3230313041483340254" at="25,93,26,92" concept="3" />
+      <node id="1769900912208319042" at="30,25,31,100" concept="8" />
+      <node id="6684867171406601518" at="31,100,32,66" concept="3" />
+      <node id="3230313041483378857" at="32,66,33,0" concept="11" />
+      <node id="3230313041483386761" at="34,109,35,61" concept="3" />
+      <node id="1769900912208228636" at="17,0,19,0" concept="1" trace="CheckinPlugin_AppPluginPart#()V" />
+      <node id="3230313041483381486" at="33,0,36,5" concept="5" />
+      <node id="3230313041483329839" at="22,279,27,5" concept="5" />
+      <node id="1769900912208228636" at="29,0,38,0" concept="7" trace="dispose#()V" />
+      <node id="1769900912208228636" at="19,0,29,0" concept="7" trace="init#()V" />
+      <scope id="1769900912208228636" at="17,40,17,40" />
+      <scope id="3230313041483381492" at="34,109,35,61" />
+      <scope id="1769900912208228636" at="17,0,19,0" />
+      <scope id="3230313041483329845" at="23,55,26,92">
+        <var name="factory" id="3230313041483365582" />
+      </scope>
+      <scope id="3230313041483381486" at="33,0,36,5">
+        <var name="factory" id="3230313041483381488" />
+      </scope>
+      <scope id="3230313041483329839" at="22,279,27,5">
+        <var name="handler" id="3230313041483329841" />
+      </scope>
+      <scope id="1769900912208228658" at="30,25,36,5">
+        <var name="extensionPoint" id="1769900912208319043" />
+      </scope>
+      <scope id="1769900912208228638" at="20,22,27,5">
+        <var name="extensionPoint" id="1769900912208314618" />
+        <var name="handlers" id="3230313041483311476" />
+      </scope>
+      <scope id="1769900912208228636" at="29,0,38,0" />
+      <scope id="1769900912208228636" at="19,0,29,0" />
+      <unit id="1769900912208228636" at="14,0,39,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.CheckinPlugin_AppPluginPart" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/3230313041481790481">
+    <file name="CollectingCheckinHandler.java">
+      <node id="4531194710189214120" at="23,0,24,0" concept="4" trace="panel" />
+      <node id="7380109632197172478" at="24,0,25,0" concept="4" trace="handlers" />
+      <node id="5158300474440665368" at="25,0,26,0" concept="4" trace="refreshableOnComponents" />
+      <node id="4672461442407738039" at="26,0,27,0" concept="4" trace="jpanel" />
+      <node id="3230313041482009460" at="28,0,29,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="4531194710189214172" at="30,96,31,23" concept="3" />
+      <node id="7380109632197262822" at="31,23,32,101" concept="3" />
+      <node id="7380109632197292465" at="33,55,34,41" concept="3" />
+      <node id="5158300474440975205" at="34,41,35,110" concept="3" />
+      <node id="1336995672331101132" at="36,5,37,55" concept="8" />
+      <node id="1336995672331286940" at="38,20,39,15" concept="3" />
+      <node id="4672461442407756819" at="40,5,41,49" concept="3" />
+      <node id="4672461442407749422" at="41,49,42,145" concept="3" />
+      <node id="4531194710189704695" at="42,145,43,16" concept="9" />
+      <node id="4531194710189440804" at="51,31,52,134" concept="3" />
+      <node id="4531194710189477000" at="56,34,57,137" concept="3" />
+      <node id="3825474529095362803" at="61,40,62,22" concept="9" />
+      <node id="3230313041483015533" at="71,111,72,35" concept="3" />
+      <node id="3230313041483048036" at="72,35,73,45" concept="9" />
+      <node id="612826695875555503" at="78,38,79,86" concept="9" />
+      <node id="1336995672331263156" at="37,55,40,5" concept="6" />
+      <node id="612826695875533012" at="78,0,81,0" concept="7" trace="getActiveHandlers#()Ljava/util/List;" />
+      <node id="7380109632197275161" at="32,101,36,5" concept="5" />
+      <node id="4531194710189432574" at="50,0,54,0" concept="7" trace="saveState#()V" />
+      <node id="4531194710189432582" at="55,0,59,0" concept="7" trace="restoreState#()V" />
+      <node id="4531194710189432590" at="60,0,64,0" concept="7" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="3230313041482988353" at="69,0,75,0" concept="7" trace="createHandler#(Lcom/intellij/openapi/vcs/CheckinProjectPanel;Lcom/intellij/openapi/vcs/changes/CommitContext;)Lcom/intellij/openapi/vcs/checkin/CheckinHandler;" />
+      <node id="3230313041482980968" at="67,48,75,6" concept="9" />
+      <node id="3230313041482744628" at="67,0,77,0" concept="7" trace="createFactory#()Lcom/intellij/openapi/vcs/checkin/CheckinHandlerFactory;" />
+      <node id="4531194710189214168" at="30,0,45,0" concept="7" trace="initialize#(Lcom/intellij/openapi/vcs/CheckinProjectPanel;Lcom/intellij/openapi/vcs/changes/CommitContext;)Lcom/mbeddr/mpsutil/checkinHandler/plugin/CollectingCheckinHandler;" />
+      <node id="4531194710189354638" at="48,70,64,6" concept="9" />
+      <node id="4531194710189214191" at="46,0,66,0" concept="7" trace="getBeforeCheckinConfigurationPanel#()Lcom/intellij/openapi/vcs/ui/RefreshableOnComponent;" />
+      <scope id="3230313041482009460" at="28,0,29,0" />
+      <scope id="1336995672331263158" at="38,20,39,15" />
+      <scope id="4531194710189432578" at="51,31,52,134" />
+      <scope id="4531194710189432586" at="56,34,57,137" />
+      <scope id="4531194710189432594" at="61,40,62,22" />
+      <scope id="612826695875533015" at="78,38,79,86" />
+      <scope id="7380109632197275167" at="33,55,35,110" />
+      <scope id="3230313041482988364" at="71,111,73,45" />
+      <scope id="612826695875533012" at="78,0,81,0" />
+      <scope id="7380109632197275161" at="32,101,36,5">
+        <var name="handler" id="7380109632197275163" />
+      </scope>
+      <scope id="4531194710189432574" at="50,0,54,0" />
+      <scope id="4531194710189432582" at="55,0,59,0" />
+      <scope id="4531194710189432590" at="60,0,64,0" />
+      <scope id="3230313041482988353" at="69,0,75,0">
+        <var name="context" id="3230313041482988361" />
+        <var name="panel" id="3230313041482988358" />
+      </scope>
+      <scope id="3230313041482744631" at="67,48,75,6" />
+      <scope id="3230313041482744628" at="67,0,77,0" />
+      <scope id="4531194710189214171" at="30,96,43,16">
+        <var name="rows" id="1336995672331101133" />
+      </scope>
+      <scope id="4531194710189214168" at="30,0,45,0">
+        <var name="context" id="3230313041483192724" />
+        <var name="panel" id="4531194710189214169" />
+      </scope>
+      <scope id="4531194710189214195" at="48,70,64,6" />
+      <scope id="4531194710189214191" at="46,0,66,0" />
+      <unit id="3230313041482988338" at="68,15,75,5" name="com.mbeddr.mpsutil.checkinHandler.plugin.CollectingCheckinHandler$2" />
+      <unit id="4531194710189432559" at="49,15,64,5" name="com.mbeddr.mpsutil.checkinHandler.plugin.CollectingCheckinHandler$1" />
+      <unit id="3230313041481790481" at="22,0,82,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.CollectingCheckinHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/3230313041482209047">
+    <file name="EarlyBackgroundCollectingHandler.java">
+      <node id="3230313041482499623" at="14,57,15,79" concept="9" />
+      <node id="3230313041482519453" at="19,57,20,179" concept="9" />
+      <node id="3230313041482209105" at="18,0,22,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="3230313041482467831" at="12,0,17,0" concept="7" trace="getExecutionOrder#()Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;" />
+      <scope id="3230313041482467837" at="14,57,15,79" />
+      <scope id="3230313041482209109" at="19,57,20,179" />
+      <scope id="3230313041482209105" at="18,0,22,0" />
+      <scope id="3230313041482467831" at="12,0,17,0" />
+      <unit id="3230313041482209047" at="10,0,23,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.EarlyBackgroundCollectingHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/3230313041482484669">
+    <file name="AbstractBackgroundCollectingHandler.java">
+      <node id="3230313041482484699" at="23,117,24,66" concept="8" />
+      <node id="3230313041482484709" at="25,27,26,22" concept="9" />
+      <node id="3230313041482484714" at="28,5,29,16" concept="9" />
+      <node id="5378037716952612127" at="34,30,35,63" concept="9" />
+      <node id="3230313041482484745" at="39,57,40,156" concept="9" />
+      <node id="3230313041482484707" at="24,66,27,7" concept="6" />
+      <node id="3230313041482484740" at="38,0,42,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="3230313041482484728" at="32,0,37,0" concept="7" trace="isEnabled#()Z" />
+      <node id="3230313041482484685" at="22,111,28,5" concept="5" />
+      <node id="3230313041482484671" at="19,0,31,0" concept="7" trace="runCheck#(Lcom/intellij/openapi/vcs/checkin/CommitInfo;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" />
+      <scope id="3230313041482484708" at="25,27,26,22" />
+      <scope id="3230313041482484732" at="34,30,35,63" />
+      <scope id="3230313041482484744" at="39,57,40,156" />
+      <scope id="3230313041482484698" at="23,117,27,7">
+        <var name="result" id="3230313041482484700" />
+      </scope>
+      <scope id="3230313041482484740" at="38,0,42,0" />
+      <scope id="3230313041482484728" at="32,0,37,0" />
+      <scope id="3230313041482484685" at="22,111,28,5">
+        <var name="checkinHandler" id="3230313041482484686" />
+      </scope>
+      <scope id="3230313041482484684" at="22,111,29,16" />
+      <scope id="3230313041482484671" at="19,0,31,0">
+        <var name="continuation" id="3230313041482484679" />
+        <var name="info" id="3230313041482484676" />
+      </scope>
+      <unit id="3230313041482484669" at="17,0,43,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.AbstractBackgroundCollectingHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/3230313041482573631">
+    <file name="LateBackgroundCollectingHandler.java">
+      <node id="3230313041482573638" at="14,57,15,78" concept="9" />
+      <node id="3230313041482573650" at="19,57,20,178" concept="9" />
+      <node id="3230313041482573645" at="18,0,22,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="3230313041482573633" at="12,0,17,0" concept="7" trace="getExecutionOrder#()Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;" />
+      <scope id="3230313041482573637" at="14,57,15,78" />
+      <scope id="3230313041482573649" at="19,57,20,178" />
+      <scope id="3230313041482573645" at="18,0,22,0" />
+      <scope id="3230313041482573633" at="12,0,17,0" />
+      <unit id="3230313041482573631" at="10,0,23,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.LateBackgroundCollectingHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/3230313041482577665">
+    <file name="ModificationBackgroundCollectingHandler.java">
+      <node id="3230313041482577672" at="14,57,15,86" concept="9" />
+      <node id="3230313041482577684" at="19,57,20,186" concept="9" />
+      <node id="3230313041482577679" at="18,0,22,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="3230313041482577667" at="12,0,17,0" concept="7" trace="getExecutionOrder#()Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;" />
+      <scope id="3230313041482577671" at="14,57,15,86" />
+      <scope id="3230313041482577683" at="19,57,20,186" />
+      <scope id="3230313041482577679" at="18,0,22,0" />
+      <scope id="3230313041482577667" at="12,0,17,0" />
+      <unit id="3230313041482577665" at="10,0,23,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.ModificationBackgroundCollectingHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/3230313041482582195">
+    <file name="PostCommitBackgroundCollectingHandler.java">
+      <node id="3230313041482582202" at="14,57,15,85" concept="9" />
+      <node id="3230313041482582214" at="19,57,20,185" concept="9" />
+      <node id="3230313041482582209" at="18,0,22,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="3230313041482582197" at="12,0,17,0" concept="7" trace="getExecutionOrder#()Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;" />
+      <scope id="3230313041482582201" at="14,57,15,85" />
+      <scope id="3230313041482582213" at="19,57,20,185" />
+      <scope id="3230313041482582209" at="18,0,22,0" />
+      <scope id="3230313041482582197" at="12,0,17,0" />
+      <unit id="3230313041482582195" at="10,0,23,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.PostCommitBackgroundCollectingHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/338949497981488879">
+    <file name="BackgroundCheckinHandler.java">
+      <node id="3276632609324368337" at="15,0,16,0" concept="4" trace="executionOrder" />
+      <node id="338949497981504417" at="17,169,18,50" concept="12" />
+      <node id="3276632609324371145" at="18,50,19,41" concept="3" />
+      <node id="338949497981535823" at="22,0,23,0" concept="7" trace="check#(Lcom/intellij/openapi/vcs/checkin/CommitInfo;)Lcom/intellij/openapi/vcs/checkin/CommitProblem;" />
+      <node id="3276632609324391180" at="26,57,27,32" concept="9" />
+      <node id="3230313041481494377" at="27,32,28,0" concept="11" />
+      <node id="3276632609324346134" at="33,30,34,30" concept="9" />
+      <node id="1105985424406963275" at="40,111,41,40" concept="8" />
+      <node id="338949497981788301" at="41,40,42,19" concept="9" />
+      <node id="338949497981503829" at="17,0,21,0" concept="1" trace="BackgroundCheckinHandler#(Ljava/lang/String;ZLjava/lang/String;Lcom/mbeddr/mpsutil/checkinHandler/plugin/ExecutionOrder;)V" />
+      <node id="338949497981548809" at="31,0,36,0" concept="7" trace="isEnabled#()Z" />
+      <node id="3276632609324381543" at="24,0,30,0" concept="7" trace="getExecutionOrder#()Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;" />
+      <node id="1105985424407114641" at="37,0,44,0" concept="7" trace="runCheck#(Lcom/intellij/openapi/vcs/checkin/CommitInfo;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" />
+      <scope id="338949497981535823" at="22,0,23,0">
+        <var name="commitInfo" id="338949497981536423" />
+      </scope>
+      <scope id="338949497981548815" at="33,30,34,30" />
+      <scope id="338949497981503831" at="17,169,19,41" />
+      <scope id="3276632609324381549" at="26,57,28,0" />
+      <scope id="1105985424407114656" at="40,111,42,19">
+        <var name="problem" id="1105985424406963276" />
+      </scope>
+      <scope id="338949497981503829" at="17,0,21,0">
+        <var name="executionOrder" id="338949497981514701" />
+        <var name="label" id="338949497981503855" />
+        <var name="perProjectSettings" id="338949497981503853" />
+        <var name="settingsKey" id="338949497981503851" />
+      </scope>
+      <scope id="338949497981548809" at="31,0,36,0" />
+      <scope id="3276632609324381543" at="24,0,30,0" />
+      <scope id="1105985424407114641" at="37,0,44,0">
+        <var name="continuation" id="1105985424407114650" />
+        <var name="info" id="1105985424407114647" />
+      </scope>
+      <unit id="338949497981488879" at="13,0,45,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.BackgroundCheckinHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/4531194710189190776">
+    <file name="ForegroundCollectingHandler.java">
+      <node id="9094827901929228816" at="16,117,17,79" concept="8" />
+      <node id="9094827901929294673" at="18,139,19,22" concept="9" />
+      <node id="9094827901929307284" at="21,5,22,46" concept="9" />
+      <node id="3230313041482093336" at="26,57,27,156" concept="9" />
+      <node id="9094827901929233572" at="17,79,20,7" concept="6" />
+      <node id="3230313041482273395" at="25,0,29,0" concept="7" trace="queryHandlers#()Ljava/util/List;" />
+      <node id="9094827901929138765" at="15,54,21,5" concept="5" />
+      <node id="9094827901929096559" at="14,0,24,0" concept="7" trace="beforeCheckin#()Lcom/intellij/openapi/vcs/checkin/CheckinHandler/ReturnResult;" />
+      <scope id="9094827901929233574" at="18,139,19,22" />
+      <scope id="3230313041482273401" at="26,57,27,156" />
+      <scope id="9094827901929138771" at="16,117,20,7">
+        <var name="result" id="9094827901929228817" />
+      </scope>
+      <scope id="3230313041482273395" at="25,0,29,0" />
+      <scope id="9094827901929138765" at="15,54,21,5">
+        <var name="checkinHandler" id="9094827901929138767" />
+      </scope>
+      <scope id="9094827901929096562" at="15,54,22,46" />
+      <scope id="9094827901929096559" at="14,0,24,0" />
+      <unit id="4531194710189190776" at="12,0,30,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.ForegroundCollectingHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/579025794898214876">
+    <file name="BaseCheckinHandler.java">
+      <node id="8627813190382878732" at="28,0,29,0" concept="4" trace="panel" />
+      <node id="8627813190382862207" at="29,0,30,0" concept="4" trace="ideaProject" />
+      <node id="1769900912208503506" at="30,0,31,0" concept="4" trace="settingsKey" />
+      <node id="1769900912208511541" at="31,0,32,0" concept="4" trace="perProjectSettings" />
+      <node id="1769900912208887173" at="32,0,33,0" concept="4" trace="label" />
+      <node id="4672461442407573147" at="33,0,34,0" concept="4" trace="component" />
+      <node id="3230313041482878152" at="34,0,35,0" concept="4" trace="context" />
+      <node id="1769900912208505312" at="36,103,37,35" concept="3" />
+      <node id="1769900912208512070" at="37,35,38,49" concept="3" />
+      <node id="1769900912208891546" at="38,49,39,23" concept="3" />
+      <node id="1769900912208514827" at="39,23,40,52" concept="8" />
+      <node id="1769900912208540860" at="43,40,44,56" concept="8" />
+      <node id="1769900912208565899" at="44,56,45,28" concept="3" />
+      <node id="1769900912208579589" at="45,28,46,21" concept="9" />
+      <node id="1769900912208664693" at="55,33,56,100" concept="3" />
+      <node id="1769900912208693205" at="57,16,58,89" concept="3" />
+      <node id="1769900912208584445" at="63,34,64,44" concept="3" />
+      <node id="8627813190382884673" at="69,90,70,23" concept="3" />
+      <node id="8627813190382880496" at="70,23,71,42" concept="3" />
+      <node id="3230313041482953060" at="71,42,72,27" concept="3" />
+      <node id="4672461442407601973" at="72,27,73,16" concept="9" />
+      <node id="739213732640971246" at="76,28,77,13" concept="9" />
+      <node id="4672461442407638738" at="82,70,83,26" concept="9" />
+      <node id="48570955536808063" at="87,29,88,82" concept="9" />
+      <node id="48570955536825106" at="89,12,90,71" concept="9" />
+      <node id="1769900912208762730" at="94,40,95,54" concept="9" />
+      <node id="1769900912208796690" at="98,46,99,44" concept="8" />
+      <node id="1769900912208790386" at="99,44,100,0" concept="11" />
+      <node id="8627813190382927818" at="100,0,101,62" concept="8" />
+      <node id="8487846402893645947" at="101,62,102,83" concept="8" />
+      <node id="8487846402893663202" at="102,83,103,68" concept="8" />
+      <node id="8487846402893663237" at="103,68,104,73" concept="10" />
+      <node id="8487846402893663207" at="104,73,105,87" concept="8" />
+      <node id="8487846402893663216" at="106,44,107,98" concept="8" />
+      <node id="8487846402893663229" at="108,26,109,17" concept="2" />
+      <node id="8487846402893663230" at="110,7,111,62" concept="3" />
+      <node id="1769900912208818099" at="112,5,113,0" concept="11" />
+      <node id="1769900912208824415" at="113,0,114,26" concept="9" />
+      <node id="3506243892744635058" at="117,56,118,35" concept="9" />
+      <node id="612826695875255572" at="121,34,122,36" concept="9" />
+      <node id="1769900912208661840" at="57,14,59,9" concept="0" />
+      <node id="48570955536800212" at="89,10,91,5" concept="0" />
+      <node id="1769900912208532816" at="49,0,52,0" concept="7" trace="refresh#()V" />
+      <node id="739213732640967505" at="76,0,79,0" concept="7" trace="getPriority#()I" />
+      <node id="1769900912208758134" at="94,0,97,0" concept="7" trace="getMPSProject#()Ljetbrains/mps/project/MPSProject;" />
+      <node id="8487846402893663223" at="107,98,110,7" concept="6" />
+      <node id="3506243892744618440" at="117,0,120,0" concept="7" trace="getAffectedFiles#()Ljava/util/Collection;" />
+      <node id="612826695875250621" at="121,0,124,0" concept="7" trace="isDisposed#()Z" />
+      <node id="1769900912208532832" at="62,0,66,0" concept="7" trace="restoreState#()V" />
+      <node id="1769900912208658559" at="54,31,59,9" concept="6" />
+      <node id="1769900912208508143" at="80,0,85,0" concept="7" trace="getBeforeCheckinConfigurationPanel#()Lcom/intellij/openapi/vcs/ui/RefreshableOnComponent;" />
+      <node id="48570955536800201" at="86,32,91,5" concept="6" />
+      <node id="1769900912208532840" at="42,0,48,0" concept="7" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="1769900912208281051" at="69,0,75,0" concept="7" trace="initialize#(Lcom/intellij/openapi/vcs/CheckinProjectPanel;Lcom/intellij/openapi/vcs/changes/CommitContext;)Lcom/mbeddr/mpsutil/checkinHandler/plugin/BaseCheckinHandler;" />
+      <node id="48570955536797277" at="86,0,93,0" concept="7" trace="getKeyValue#()Z" />
+      <node id="8487846402893663212" at="105,87,112,5" concept="5" />
+      <node id="1769900912208532824" at="53,0,61,0" concept="7" trace="saveState#()V" />
+      <node id="1769900912208749423" at="98,0,116,0" concept="7" trace="getCommitedModels#()Ljava/util/List;" />
+      <node id="4672461442407606859" at="40,52,66,6" concept="3" />
+      <node id="1769900912208504709" at="36,0,68,0" concept="1" trace="BaseCheckinHandler#(Ljava/lang/String;ZLjava/lang/String;)V" />
+      <scope id="1769900912208532820" at="50,29,50,29" />
+      <scope id="1769900912208658561" at="55,33,56,100" />
+      <scope id="1769900912208661841" at="57,16,58,89" />
+      <scope id="1769900912208532836" at="63,34,64,44" />
+      <scope id="739213732640967508" at="76,28,77,13" />
+      <scope id="1769900912208508148" at="82,70,83,26" />
+      <scope id="48570955536800202" at="87,29,88,82" />
+      <scope id="48570955536800213" at="89,12,90,71" />
+      <scope id="1769900912208758137" at="94,40,95,54" />
+      <scope id="8487846402893663228" at="108,26,109,17" />
+      <scope id="3506243892744618443" at="117,56,118,35" />
+      <scope id="612826695875250624" at="121,34,122,36" />
+      <scope id="1769900912208532844" at="43,40,46,21">
+        <var name="panel" id="1769900912208540861" />
+      </scope>
+      <scope id="1769900912208532816" at="49,0,52,0" />
+      <scope id="739213732640967505" at="76,0,79,0" />
+      <scope id="1769900912208758134" at="94,0,97,0" />
+      <scope id="3506243892744618440" at="117,0,120,0" />
+      <scope id="612826695875250621" at="121,0,124,0" />
+      <scope id="1769900912208532832" at="62,0,66,0" />
+      <scope id="1769900912208281054" at="69,90,73,16" />
+      <scope id="1769900912208532828" at="54,31,59,9" />
+      <scope id="1769900912208508143" at="80,0,85,0" />
+      <scope id="48570955536797280" at="86,32,91,5" />
+      <scope id="8487846402893663214" at="106,44,111,62">
+        <var name="model" id="8487846402893663215" />
+      </scope>
+      <scope id="1769900912208532840" at="42,0,48,0" />
+      <scope id="1769900912208281051" at="69,0,75,0">
+        <var name="context" id="3230313041482938244" />
+        <var name="panel" id="1769900912208281305" />
+      </scope>
+      <scope id="48570955536797277" at="86,0,93,0" />
+      <scope id="8487846402893663212" at="105,87,112,5">
+        <var name="file" id="8487846402893663233" />
+      </scope>
+      <scope id="1769900912208532824" at="53,0,61,0" />
+      <scope id="1769900912208749426" at="98,46,114,26">
+        <var name="affectedFiles" id="8487846402893663201" />
+        <var name="affectedModels" id="8487846402893663206" />
+        <var name="modelFileTracker" id="8487846402893645948" />
+        <var name="mpsProject" id="1769900912208796691" />
+        <var name="repository" id="8627813190382927819" />
+      </scope>
+      <scope id="1769900912208749423" at="98,0,116,0" />
+      <scope id="1769900912208504712" at="36,103,66,6">
+        <var name="checkbox" id="1769900912208514825" />
+      </scope>
+      <scope id="1769900912208504709" at="36,0,68,0">
+        <var name="label" id="1769900912208879348" />
+        <var name="perProjectSettings" id="1769900912208510077" />
+        <var name="settingsKey" id="1769900912208505029" />
+      </scope>
+      <unit id="1769900912208532810" at="41,20,66,5" name="com.mbeddr.mpsutil.checkinHandler.plugin.BaseCheckinHandler$1" />
+      <unit id="579025794898214876" at="27,0,125,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.BaseCheckinHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/579025794898407274">
+    <file name="ExecutionOrder.java">
+      <node id="8645458101904243598" at="13,0,14,0" concept="4" trace="executionOrderInternal" />
+      <node id="8645458101904252157" at="14,69,15,44" concept="3" />
+      <node id="579025794905525899" at="17,43,18,34" concept="9" />
+      <node id="8645458101904250948" at="14,0,17,0" concept="1" trace="ExecutionOrder#(Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;)V" />
+      <node id="579025794905523313" at="17,0,20,0" concept="7" trace="get#()Lcom/intellij/openapi/vcs/checkin/CommitCheck/ExecutionOrder;" />
+      <scope id="8645458101904250952" at="14,69,15,44" />
+      <scope id="579025794905523316" at="17,43,18,34" />
+      <scope id="8645458101904250948" at="14,0,17,0">
+        <var name="executionOrder" id="8645458101904251691" />
+      </scope>
+      <scope id="579025794905523313" at="17,0,20,0" />
+      <unit id="579025794898407274" at="7,0,21,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.ExecutionOrder" />
+    </file>
+  </root>
+  <root nodeRef="r:ecd3c807-fa84-48be-b99b-f9c5f7f6cc51(com.mbeddr.mpsutil.checkinHandler.plugin)/8627813190382744534">
+    <file name="ForegroundCheckinHandler.java">
+      <node id="579025794898294206" at="9,97,10,50" concept="12" />
+      <node id="1769900912208836901" at="13,0,14,0" concept="7" trace="actionBeforeCommit#()Lcom/intellij/openapi/vcs/checkin/CheckinHandler/ReturnResult;" />
+      <node id="48570955536862793" at="17,24,18,34" concept="9" />
+      <node id="48570955536872037" at="19,5,20,33" concept="9" />
+      <node id="579025794898294177" at="9,0,12,0" concept="1" trace="ForegroundCheckinHandler#(Ljava/lang/String;ZLjava/lang/String;)V" />
+      <node id="48570955536853042" at="16,54,19,5" concept="6" />
+      <node id="1769900912208847508" at="15,0,22,0" concept="7" trace="beforeCheckin#()Lcom/intellij/openapi/vcs/checkin/CheckinHandler/ReturnResult;" />
+      <scope id="579025794898294205" at="9,97,10,50" />
+      <scope id="1769900912208836901" at="13,0,14,0" />
+      <scope id="48570955536853044" at="17,24,18,34" />
+      <scope id="579025794898294177" at="9,0,12,0">
+        <var name="label" id="579025794898294203" />
+        <var name="perProjectSettings" id="579025794898294201" />
+        <var name="settingsKey" id="579025794898294199" />
+      </scope>
+      <scope id="1769900912208847512" at="16,54,20,33" />
+      <scope id="1769900912208847508" at="15,0,22,0" />
+      <unit id="8627813190382744534" at="7,0,23,0" name="com.mbeddr.mpsutil.checkinHandler.plugin.ForegroundCheckinHandler" />
+    </file>
+  </root>
+</debug-info>
+

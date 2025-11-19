@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-1qtpu3xjim25rkbilvul1cdy90zrhl6">
+  <files names="AddDependencyOperation_Editor.java:AddDependencyOperation_EditorBuilder_a.java:AddDevKitOperation_Editor.java:AddDevKitOperation_EditorBuilder_a.java:AddLanguageOperation_Editor.java:AddLanguageOperation_EditorBuilder_a.java:AddModelOperation_Editor.java:AddModelOperation_EditorBuilder_a.java:AddModelOperation_InspectorBuilder_a.java:AddSolutionOperation_Editor.java:AddSolutionOperation_EditorBuilder_a.java:BaseSModuleOperation_Editor.java:BaseSModuleOperation_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:StorageType_Editor.java:StorageType_EditorBuilder_a.java:addModelActions.java:addSolutionActions.java" />
+</product>
+

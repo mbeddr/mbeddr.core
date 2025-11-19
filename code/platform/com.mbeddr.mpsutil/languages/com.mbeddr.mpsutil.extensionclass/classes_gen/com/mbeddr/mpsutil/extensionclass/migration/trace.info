@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.mpsutil.extensionclass.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:47121d09-ef04-4a7d-bfbc-a6d8c8a28509(com.mbeddr.mpsutil.extensionclass.migration)/963246645668926119">
+    <file name="removeParamRef.java">
+      <node id="963246645668926119" at="18,0,19,0" concept="1" trace="description" />
+      <node id="963246645668926119" at="19,30,20,23" concept="3" />
+      <node id="963246645668926119" at="23,33,24,17" concept="3" />
+      <node id="963246645668926119" at="26,41,27,17" concept="0" />
+      <node id="963246645668926119" at="27,17,28,16" concept="3" />
+      <node id="963246645668937389" at="30,42,31,270" concept="0" />
+      <node id="963246645668926119" at="33,50,34,154" concept="3" />
+      <node id="963246645668926119" at="38,0,39,0" concept="4" trace="ExtensionClassMethodParameterAnnotation$oS" />
+      <node id="963246645668926119" at="42,0,43,0" concept="4" trace="parameter$rbkF" />
+      <node id="963246645668926119" at="19,0,22,0" concept="2" trace="getCaption#()Ljava/lang/String;" />
+      <node id="963246645668926119" at="30,0,33,0" concept="2" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="963246645668926119" at="33,0,36,0" concept="2" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="963246645668926119" at="22,0,26,0" concept="2" trace="isRerunnable#()Z" />
+      <node id="963246645668926119" at="26,0,30,0" concept="2" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="963246645668926119" at="19,30,20,23" />
+      <scope id="963246645668926119" at="23,33,24,17" />
+      <scope id="963246645668926119" at="30,42,31,270" />
+      <scope id="963246645668926119" at="33,50,34,154" />
+      <scope id="963246645668926119" at="26,41,28,16" />
+      <scope id="963246645668926119" at="19,0,22,0" />
+      <scope id="963246645668926119" at="30,0,33,0">
+        <var name="m" id="963246645668926119" />
+      </scope>
+      <scope id="963246645668926119" at="33,0,36,0" />
+      <scope id="963246645668926119" at="22,0,26,0" />
+      <scope id="963246645668926119" at="26,0,30,0">
+        <var name="m" id="963246645668926119" />
+      </scope>
+      <unit id="963246645668926119" at="37,0,40,0" name="com.mbeddr.mpsutil.extensionclass.migration.removeParamRef$CONCEPTS" />
+      <unit id="963246645668926119" at="41,0,44,0" name="com.mbeddr.mpsutil.extensionclass.migration.removeParamRef$LINKS" />
+      <unit id="963246645668926119" at="17,0,45,0" name="com.mbeddr.mpsutil.extensionclass.migration.removeParamRef" />
+    </file>
+  </root>
+</debug-info>
+

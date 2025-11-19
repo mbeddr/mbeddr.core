@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.propertydefault.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:da19e2e5-db28-44bc-aaee-a9ea353fdb38(com.mbeddr.mpsutil.propertydefault.typesystem)/1550432487216069123">
+    <file name="TypesystemDescriptor.java">
+      <node id="1550432487216069123" at="10,5,11,93" concept="5" />
+      <node id="1550432487216069123" at="11,93,12,47" concept="2" />
+      <node id="1550432487216069123" at="9,33,13,5" concept="0" />
+      <scope id="1550432487216069123" at="10,5,12,47">
+        <var name="inferenceRule" id="1550432487216069123" />
+      </scope>
+    </file>
+    <file name="typeof_IPropertyDefaultValue_InferenceRule.java">
+      <node id="1550432487216424041" at="24,134,25,125" concept="5" />
+      <node id="1182474168212" at="25,125,26,136" concept="5" />
+      <node id="1550432487216399905" at="28,7,29,117" concept="5" />
+      <node id="1550432487216399905" at="29,117,30,213" concept="5" />
+      <node id="1550432487216399905" at="30,213,31,339" concept="2" />
+      <node id="1550432487216382312" at="33,5,34,0" concept="7" />
+      <node id="1550432487216674759" at="35,5,36,63" concept="5" />
+      <node id="1550432487216674759" at="36,63,37,211" concept="5" />
+      <node id="1550432487216674759" at="37,211,38,471" concept="2" />
+      <node id="1550432487216069123" at="41,50,42,45" concept="6" />
+      <node id="1550432487216069123" at="44,68,45,102" concept="6" />
+      <node id="1550432487216069123" at="47,30,48,16" concept="6" />
+      <node id="1550432487216069123" at="52,0,53,0" concept="8" trace="NodePropertyConstraint$vW" />
+      <node id="1550432487216069123" at="53,0,54,0" concept="8" trace="IPropertyDefaultValue$v0" />
+      <node id="1550432487216069123" at="57,0,58,0" concept="8" trace="applicableProperty$DrDe" />
+      <node id="1550432487216069123" at="58,0,59,0" concept="8" trace="dataType$5j5Y" />
+      <node id="1550432487216069123" at="59,0,60,0" concept="8" trace="defaultValue$3WBY" />
+      <node id="1550432487216069123" at="22,0,24,0" concept="1" trace="typeof_IPropertyDefaultValue_InferenceRule#()V" />
+      <node id="1550432487216069123" at="41,0,44,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1550432487216069123" at="44,0,47,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1550432487216069123" at="47,0,50,0" concept="4" trace="overrides#()Z" />
+      <node id="1550432487216399905" at="27,27,32,7" concept="0" />
+      <node id="1550432487216674759" at="34,0,39,5" concept="0" />
+      <node id="1182474172419" at="26,136,33,5" concept="3" />
+      <node id="1550432487216069123" at="24,0,41,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1550432487216069123" at="22,55,22,55" />
+      <scope id="1550432487216069123" at="41,50,42,45" />
+      <scope id="1550432487216069123" at="44,68,45,102" />
+      <scope id="1550432487216069123" at="47,30,48,16" />
+      <scope id="1550432487216069123" at="22,0,24,0" />
+      <scope id="1550432487216399905" at="28,7,31,339">
+        <var name="_info_12389875345" id="1550432487216399905" />
+        <var name="_nodeToCheck_1029348928467" id="1550432487216399905" />
+      </scope>
+      <scope id="1550432487216674759" at="35,5,38,471">
+        <var name="_info_12389875345" id="1550432487216674759" />
+        <var name="_nodeToCheck_1029348928467" id="1550432487216674759" />
+      </scope>
+      <scope id="1550432487216069123" at="41,0,44,0" />
+      <scope id="1550432487216069123" at="44,0,47,0">
+        <var name="argument" id="1550432487216069123" />
+      </scope>
+      <scope id="1550432487216069123" at="47,0,50,0" />
+      <scope id="1182474172420" at="27,27,32,7" />
+      <scope id="1550432487216069475" at="24,134,39,5">
+        <var name="ancestor" id="1550432487216424042" />
+        <var name="dataType" id="1182474168213" />
+      </scope>
+      <scope id="1550432487216069123" at="24,0,41,0">
+        <var name="iPropertyDefaultValue" id="1550432487216069123" />
+        <var name="status" id="1550432487216069123" />
+        <var name="typeCheckingContext" id="1550432487216069123" />
+      </scope>
+      <unit id="1550432487216069123" at="51,0,55,0" name="com.mbeddr.mpsutil.propertydefault.typesystem.typeof_IPropertyDefaultValue_InferenceRule$CONCEPTS" />
+      <unit id="1550432487216069123" at="56,0,61,0" name="com.mbeddr.mpsutil.propertydefault.typesystem.typeof_IPropertyDefaultValue_InferenceRule$LINKS" />
+      <unit id="1550432487216069123" at="21,0,62,0" name="com.mbeddr.mpsutil.propertydefault.typesystem.typeof_IPropertyDefaultValue_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+

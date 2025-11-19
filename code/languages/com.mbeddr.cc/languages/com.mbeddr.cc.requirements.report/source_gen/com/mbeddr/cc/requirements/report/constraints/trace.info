@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.cc.requirements.report.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c98275d7-79fa-463b-9a00-25b3a3d9ddf4(com.mbeddr.cc.requirements.report.constraints)/5785245534400474253">
+    <file name="RequirementsParagraph_Constraints.java">
+      <node id="5785245534400474253" at="28,95,29,58" concept="7" />
+      <node id="5785245534400474254" at="29,58,30,30" concept="1" />
+      <node id="5785245534400475156" at="30,30,31,26" concept="1" />
+      <node id="5785245534400474254" at="35,53,36,60" concept="7" />
+      <node id="5785245534400474257" at="39,40,40,115" concept="4" />
+      <node id="5785245534400474328" at="43,38,44,43" concept="4" />
+      <node id="5785245534400474328" at="45,7,46,18" concept="4" />
+      <node id="5785245534400475156" at="50,54,51,55" concept="7" />
+      <node id="5785245534400475156" at="58,61,59,146" concept="4" />
+      <node id="6491070606984394480" at="62,78,63,175" concept="4" />
+      <node id="5785245534400474253" at="70,0,71,0" concept="5" trace="RequirementsParagraph$J0" />
+      <node id="5785245534400474253" at="71,0,72,0" concept="5" trace="RequirementsModule$Vm" />
+      <node id="5785245534400474253" at="75,0,76,0" concept="5" trace="name$MnvL" />
+      <node id="5785245534400474253" at="79,0,80,0" concept="5" trace="module$yXbJ" />
+      <node id="5785245534400474254" at="35,0,38,0" concept="0" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5785245534400474328" at="42,84,45,7" concept="2" />
+      <node id="5785245534400475156" at="50,0,53,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5785245534400474254" at="38,0,42,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="5785245534400475156" at="57,0,61,0" concept="3" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="5785245534400475156" at="61,0,65,0" concept="3" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="5785245534400474253" at="28,0,33,0" concept="0" trace="RequirementsParagraph_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="5785245534400474328" at="42,0,48,0" concept="6" trace="check_xpk456_a0a0a1c#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Ljava/lang/String;" />
+      <node id="5785245534400475156" at="55,54,65,8" concept="4" />
+      <node id="5785245534400475156" at="53,0,67,0" concept="3" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="5785245534400474254" at="35,53,36,60" />
+      <scope id="5785245534400474256" at="39,40,40,115" />
+      <scope id="5785245534400474328" at="43,38,44,43" />
+      <scope id="5785245534400475156" at="50,54,51,55" />
+      <scope id="5785245534400475156" at="58,61,59,146" />
+      <scope id="5785245534400475156" at="62,78,63,175" />
+      <scope id="5785245534400474253" at="28,95,31,26" />
+      <scope id="5785245534400474254" at="35,0,38,0">
+        <var name="container" id="5785245534400474254" />
+      </scope>
+      <scope id="5785245534400475156" at="50,0,53,0">
+        <var name="container" id="5785245534400475156" />
+      </scope>
+      <scope id="5785245534400474254" at="38,0,42,0">
+        <var name="node" id="5785245534400474254" />
+      </scope>
+      <scope id="5785245534400474328" at="42,84,46,18" />
+      <scope id="5785245534400475156" at="57,0,61,0" />
+      <scope id="5785245534400475156" at="61,0,65,0">
+        <var name="_context" id="5785245534400475156" />
+      </scope>
+      <scope id="5785245534400474253" at="28,0,33,0">
+        <var name="initContext" id="5785245534400474253" />
+      </scope>
+      <scope id="5785245534400474328" at="42,0,48,0">
+        <var name="checkedDotOperand" id="5785245534400474328" />
+      </scope>
+      <scope id="5785245534400475156" at="55,54,65,8" />
+      <scope id="5785245534400475156" at="53,0,67,0" />
+      <unit id="5785245534400474253" at="74,0,77,0" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints$PROPS" />
+      <unit id="5785245534400474253" at="78,0,81,0" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints$LINKS" />
+      <unit id="5785245534400474253" at="69,0,73,0" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints$CONCEPTS" />
+      <unit id="5785245534400475156" at="56,17,65,7" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints$RD1$1" />
+      <unit id="5785245534400474254" at="34,0,49,0" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints$Name_PD" />
+      <unit id="5785245534400475156" at="49,0,68,0" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints$RD1" />
+      <unit id="5785245534400474253" at="27,0,82,0" name="com.mbeddr.cc.requirements.report.constraints.RequirementsParagraph_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

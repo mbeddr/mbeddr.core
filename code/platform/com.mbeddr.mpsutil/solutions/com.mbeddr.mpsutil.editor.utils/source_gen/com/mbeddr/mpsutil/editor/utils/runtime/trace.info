@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="371850a9-2c5b-4e1d-a811-70d97e847917/r:f4ae6487-fb1d-418f-8dd3-759f9604156f(com.mbeddr.mpsutil.editor.utils/com.mbeddr.mpsutil.editor.utils.runtime)/4912572611769853192">
+    <file name="EditorRuntimeUtil.java">
+      <node id="6792438226359751252" at="16,66,17,39" concept="0" />
+      <node id="4912572611769853195" at="17,39,18,62" concept="2" />
+      <node id="4912572611769853201" at="18,62,19,0" concept="4" />
+      <node id="4912572611769853208" at="20,54,21,18" concept="3" />
+      <node id="4912572611769853210" at="22,5,23,0" concept="4" />
+      <node id="4912572611769853211" at="23,0,24,68" concept="2" />
+      <node id="4912572611769853218" at="24,68,25,0" concept="4" />
+      <node id="4912572611769853225" at="26,39,27,18" concept="3" />
+      <node id="4912572611769853227" at="28,5,29,0" concept="4" />
+      <node id="4912572611769853228" at="29,0,30,40" concept="3" />
+      <node id="6792438226359737812" at="33,77,34,85" concept="2" />
+      <node id="6792438226359744078" at="34,85,35,151" concept="2" />
+      <node id="6792438226359754961" at="35,151,36,0" concept="4" />
+      <node id="6792438226359755270" at="36,0,37,77" concept="3" />
+      <node id="6792438226359764794" at="40,95,41,116" concept="3" />
+      <node id="4912572611769853202" at="19,0,22,5" concept="1" />
+      <node id="4912572611769853219" at="25,0,28,5" concept="1" />
+      <node id="6792438226359764569" at="40,0,43,0" concept="5" trace="collectAllOpenEditorComponents#(Lcom/intellij/openapi/project/Project;)Ljava/lang/Iterable;" />
+      <node id="6792438226359736663" at="33,0,39,0" concept="5" trace="collectAllOpenEditors#(Lcom/intellij/openapi/project/Project;)Ljava/lang/Iterable;" />
+      <node id="4912572611769853193" at="16,0,32,0" concept="5" trace="getErrorText#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <scope id="4912572611769853207" at="20,54,21,18" />
+      <scope id="4912572611769853224" at="26,39,27,18" />
+      <scope id="6792438226359764572" at="40,95,41,116" />
+      <scope id="6792438226359764569" at="40,0,43,0">
+        <var name="ideaProject" id="6792438226359764768" />
+      </scope>
+      <scope id="6792438226359736666" at="33,77,37,77">
+        <var name="editors" id="6792438226359744079" />
+        <var name="fileEditorManager" id="6792438226359737813" />
+      </scope>
+      <scope id="6792438226359736663" at="33,0,39,0">
+        <var name="ideaProject" id="6792438226359736824" />
+      </scope>
+      <scope id="4912572611769853194" at="16,66,30,40">
+        <var name="editorCell" id="4912572611769853212" />
+        <var name="selectedCell" id="4912572611769853196" />
+      </scope>
+      <scope id="4912572611769853193" at="16,0,32,0">
+        <var name="editorContext" id="4912572611769853234" />
+      </scope>
+      <unit id="4912572611769853192" at="15,0,44,0" name="com.mbeddr.mpsutil.editor.utils.runtime.EditorRuntimeUtil" />
+    </file>
+  </root>
+</debug-info>
+
