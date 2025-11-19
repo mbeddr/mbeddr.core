@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:ea43355c-7b67-44a5-b887-109a2cac944c(com.mbeddr.mpsutil.incrementalcomputation.runtime.plugin)/5001676902626171578">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="5001676902626171578" at="12,0,13,0" concept="2" trace="myId" />
+      <node id="5001676902626171578" at="18,27,19,16" concept="5" />
+      <node id="5001676902626171578" at="14,0,16,0" concept="0" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="5001676902626171578" at="17,0,21,0" concept="3" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="5001676902626171578" at="22,0,26,0" concept="3" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="5001676902626171578" at="14,38,14,38" />
+      <scope id="5001676902626171578" at="18,27,19,16" />
+      <scope id="5001676902626171578" at="23,66,24,64" />
+      <scope id="5001676902626171578" at="14,0,16,0" />
+      <scope id="5001676902626171578" at="17,0,21,0" />
+      <scope id="5001676902626171578" at="22,0,26,0">
+        <var name="parts" id="5001676902626171578" />
+      </scope>
+      <unit id="5001676902626171578" at="11,0,27,0" name="com.mbeddr.mpsutil.incrementalcomputation.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:ea43355c-7b67-44a5-b887-109a2cac944c(com.mbeddr.mpsutil.incrementalcomputation.runtime.plugin)/8799028333844144386">
+    <file name="IncrementalComputationPlugin_AppPluginPart.java">
+      <node id="873195522666449861" at="17,83,18,47" concept="1" />
+      <node id="2629315167694985313" at="26,22,27,116" concept="4" />
+      <node id="2629315167694971599" at="27,116,28,122" concept="1" />
+      <node id="2629315167695016306" at="31,25,32,116" concept="4" />
+      <node id="2629315167695016313" at="32,116,33,125" concept="1" />
+      <node id="2629315167695011196" at="20,0,22,0" concept="3" trace="onLoaded#(Ljava/util/Set;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <node id="8799028333844144386" at="23,0,25,0" concept="0" trace="IncrementalComputationPlugin_AppPluginPart#()V" />
+      <node id="2629315167695011184" at="17,0,20,0" concept="3" trace="onUnloaded#(Ljava/util/Set;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <node id="8799028333844144386" at="25,0,30,0" concept="3" trace="init#()V" />
+      <node id="8799028333844144386" at="30,0,35,0" concept="3" trace="dispose#()V" />
+      <node id="2629315167694992301" at="16,0,23,0" concept="2" trace="deployListener" />
+      <scope id="2629315167695011206" at="20,81,20,81" />
+      <scope id="8799028333844144386" at="23,55,23,55" />
+      <scope id="2629315167695011194" at="17,83,18,47" />
+      <scope id="2629315167695011196" at="20,0,22,0">
+        <var name="p0" id="2629315167695011200" />
+        <var name="p1" id="2629315167695011203" />
+      </scope>
+      <scope id="8799028333844144386" at="23,0,25,0" />
+      <scope id="8799028333844144388" at="26,22,28,122">
+        <var name="mpsCoreComponents" id="2629315167694985314" />
+      </scope>
+      <scope id="8799028333844152042" at="31,25,33,125">
+        <var name="mpsCoreComponents" id="2629315167695016307" />
+      </scope>
+      <scope id="2629315167695011184" at="17,0,20,0">
+        <var name="p0" id="2629315167695011188" />
+        <var name="p1" id="2629315167695011191" />
+      </scope>
+      <scope id="8799028333844144386" at="25,0,30,0" />
+      <scope id="8799028333844144386" at="30,0,35,0" />
+      <unit id="2629315167695011182" at="16,46,22,3" name="com.mbeddr.mpsutil.incrementalcomputation.runtime.plugin.IncrementalComputationPlugin_AppPluginPart$1" />
+      <unit id="8799028333844144386" at="15,0,36,0" name="com.mbeddr.mpsutil.incrementalcomputation.runtime.plugin.IncrementalComputationPlugin_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="8799028333844144386" at="23,66,24,64" concept="1" />
+    </file>
+  </root>
+</debug-info>
+

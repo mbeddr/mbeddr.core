@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-9l7iac773ymiv5ocgpni8p4j3fm2q5b">
+  <files names="IntentionsDescriptor.java:addFeatureAttributeRef_Intention.java:addFeatureModelConfiguration_Intention.java:discoverFeatureModels_Intention.java:removeConditionalReplacement_Intention.java:removeFeatureModelConfig_Intention.java:toggleAlternativeOriginal_Intention.java:toggleConditionalAlternative_Intention.java:toggleConditionalReplacement_Intention.java:toggleConditionalSwitch_Intention.java:togglePresenceCondition_Intention.java" />
+</product>
+

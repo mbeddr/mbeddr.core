@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="ek3504prqqc88uoi4rfv0a8sw0v51tq">
+  <files names="ConstraintsAspectDescriptor.java:Expectation_Constraints.java:ParamRefExpression_Constraints.java:ParamterAssertion_Constraints.java:PhaseChangeStatement_Constraints.java:PhaseChangeTrigger_Constraints.java:PhaseExpression_Constraints.java:PhaseRefExpression_Constraints.java:Step_Constraints.java:StubCounterExpr_Constraints.java:ValidateMock_Constraints.java" />
+</product>
+

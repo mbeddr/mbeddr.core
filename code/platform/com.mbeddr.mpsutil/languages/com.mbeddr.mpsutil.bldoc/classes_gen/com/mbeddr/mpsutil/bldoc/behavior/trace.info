@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="14,0,32,0" name="com.mbeddr.mpsutil.bldoc.behavior.BehaviorAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:970cb4b5-e893-4e39-a775-1e55071d9087(com.mbeddr.mpsutil.bldoc.behavior)/4437216639172018950">
+    <file name="BLDoc__BehaviorDescriptor.java">
+      <node id="4437216639172018950" at="20,0,21,0" concept="6" trace="CONCEPT" />
+      <node id="4437216639172018950" at="23,0,24,0" concept="6" trace="BH_METHODS" />
+      <node id="4437216639172019105" at="25,63,26,69" concept="1" />
+      <node id="4437216639172018950" at="34,114,35,21" concept="1" />
+      <node id="4437216639172018950" at="39,114,40,49" concept="4" />
+      <node id="4437216639172018950" at="41,26,42,56" concept="9" />
+      <node id="4437216639172018950" at="45,14,46,58" concept="9" />
+      <node id="4437216639172018950" at="51,128,52,49" concept="4" />
+      <node id="4437216639172018950" at="53,26,54,56" concept="9" />
+      <node id="4437216639172018950" at="57,14,58,58" concept="9" />
+      <node id="4437216639172018950" at="64,48,65,22" concept="5" />
+      <node id="4437216639172018950" at="70,40,71,19" concept="5" />
+      <node id="4437216639172018950" at="75,0,76,0" concept="6" trace="text$FLAK" />
+      <node id="4437216639172018950" at="30,0,32,0" concept="0" trace="BLDoc__BehaviorDescriptor#()V" />
+      <node id="4437216639172018950" at="25,0,28,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4437216639172018950" at="40,49,43,5" concept="2" />
+      <node id="4437216639172018950" at="52,49,55,5" concept="2" />
+      <node id="4437216639172018950" at="33,0,37,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="4437216639172018950" at="43,5,47,5" concept="8" />
+      <node id="4437216639172018950" at="55,5,59,5" concept="8" />
+      <node id="4437216639172018950" at="62,0,67,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="4437216639172018950" at="68,0,73,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4437216639172018950" at="38,0,49,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="4437216639172018950" at="50,0,61,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="4437216639172018950" at="30,43,30,43" />
+      <scope id="4437216639172018950" at="25,63,26,69" />
+      <scope id="4437216639172018950" at="34,114,35,21" />
+      <scope id="4437216639172018950" at="41,26,42,56" />
+      <scope id="4437216639172018950" at="45,14,46,58" />
+      <scope id="4437216639172018950" at="53,26,54,56" />
+      <scope id="4437216639172018950" at="57,14,58,58" />
+      <scope id="4437216639172018950" at="64,48,65,22" />
+      <scope id="4437216639172018950" at="70,40,71,19" />
+      <scope id="4437216639172018950" at="30,0,32,0" />
+      <scope id="4437216639172018950" at="25,0,28,0">
+        <var name="__thisNode__" id="4437216639172018950" />
+      </scope>
+      <scope id="4437216639172018950" at="33,0,37,0">
+        <var name="constructor" id="4437216639172018950" />
+        <var name="node" id="4437216639172018950" />
+        <var name="parameters" id="4437216639172018950" />
+      </scope>
+      <scope id="4437216639172018950" at="62,0,67,0" />
+      <scope id="4437216639172018950" at="68,0,73,0" />
+      <scope id="4437216639172018950" at="39,114,47,5">
+        <var name="methodIndex" id="4437216639172018950" />
+      </scope>
+      <scope id="4437216639172018950" at="51,128,59,5">
+        <var name="methodIndex" id="4437216639172018950" />
+      </scope>
+      <scope id="4437216639172018950" at="38,0,49,0">
+        <var name="method" id="4437216639172018950" />
+        <var name="node" id="4437216639172018950" />
+        <var name="parameters" id="4437216639172018950" />
+      </scope>
+      <scope id="4437216639172018950" at="50,0,61,0">
+        <var name="concept" id="4437216639172018950" />
+        <var name="method" id="4437216639172018950" />
+        <var name="parameters" id="4437216639172018950" />
+      </scope>
+      <unit id="4437216639172018950" at="74,0,77,0" name="com.mbeddr.mpsutil.bldoc.behavior.BLDoc__BehaviorDescriptor$LINKS" />
+      <unit id="4437216639172018950" at="19,0,78,0" name="com.mbeddr.mpsutil.bldoc.behavior.BLDoc__BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

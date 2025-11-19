@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,30,0" name="com.mbeddr.mpsutil.margincell.editor.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,28,0" name="com.mbeddr.mpsutil.margincell.editor.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,64,0" name="com.mbeddr.mpsutil.margincell.editor.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6c3f3e9e-b095-4787-b6dd-ae5e3c8d2756(com.mbeddr.mpsutil.margincell.editor.structure)/97401520565568823">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="97401520565568823" at="12,0,13,0" concept="1" trace="props_MarginCell" />
+      <node id="97401520565568823" at="20,39,21,76" concept="3" />
+      <node id="97401520565568823" at="21,76,22,44" concept="0" />
+      <node id="97401520565568823" at="22,44,23,42" concept="0" />
+      <node id="97401520565568823" at="24,9,25,32" concept="4" />
+      <node id="97401520565568823" at="19,44,24,9" concept="2" />
+      <scope id="97401520565568823" at="20,39,23,42">
+        <var name="cpb" id="97401520565568823" />
+      </scope>
+      <scope id="97401520565568823" at="19,44,25,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="97401520565568823" at="12,0,13,0" concept="6" trace="MarginCell" />
+      <node id="97401520565568823" at="15,116,16,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="97401520565568823" at="15,0,16,0" concept="1" trace="myConceptMarginCell" />
+      <node id="97401520565568823" at="38,44,39,35" concept="4" />
+      <node id="97401520565568823" at="50,68,51,180" concept="3" />
+      <node id="97401520565568823" at="51,180,52,34" concept="0" />
+      <node id="97401520565568823" at="52,34,53,67" concept="5" />
+      <node id="97401520565568823" at="53,67,54,70" concept="0" />
+      <node id="97401520565568823" at="54,70,55,121" concept="0" />
+      <node id="97401520565568823" at="55,121,56,17" concept="0" />
+      <node id="97401520565568825" at="56,17,57,169" concept="0" />
+      <node id="97401520565568826" at="57,169,58,165" concept="0" />
+      <node id="97401520565568824" at="58,165,59,192" concept="0" />
+      <node id="97401520565568823" at="59,192,60,26" concept="0" />
+      <node id="97401520565568823" at="60,26,61,22" concept="4" />
+      <node id="97401520565568823" at="50,0,63,0" concept="7" trace="createDescriptorForMarginCell#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="97401520565568823" at="38,44,39,35" />
+      <scope id="97401520565568823" at="50,68,61,22">
+        <var name="b" id="97401520565568823" />
+      </scope>
+      <scope id="97401520565568823" at="50,0,63,0" />
+    </file>
+  </root>
+</debug-info>
+

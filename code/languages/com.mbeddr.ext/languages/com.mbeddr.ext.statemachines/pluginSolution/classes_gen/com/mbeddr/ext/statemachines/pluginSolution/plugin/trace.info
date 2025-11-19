@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:4c8e3b65-629f-4de3-b971-458f87712194(com.mbeddr.ext.statemachines.pluginSolution.plugin)/3897771026690227816">
+    <file name="Group_statemachineTables_ActionGroup.java">
+      <node id="3897771026690227816" at="11,0,12,0" concept="10" trace="ID" />
+      <node id="3897771026690227816" at="13,82,14,50" concept="11" />
+      <node id="3897771026690227816" at="14,50,15,25" concept="2" />
+      <node id="3897771026690227816" at="15,25,16,20" concept="2" />
+      <node id="3897771026690227816" at="16,20,17,29" concept="2" />
+      <node id="3897771026690227816" at="17,29,18,89" concept="2" />
+      <node id="3897771026690227817" at="18,89,19,118" concept="2" />
+      <node id="4118345400815558249" at="19,118,20,120" concept="2" />
+      <node id="3897771026690227816" at="20,120,21,0" concept="9" />
+      <node id="3897771026690227816" at="21,0,22,75" concept="2" />
+      <node id="3897771026690227816" at="22,75,23,75" concept="2" />
+      <node id="3897771026690227816" at="13,0,25,0" concept="1" trace="Group_statemachineTables_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="3897771026690227816" at="13,82,23,75" />
+      <scope id="3897771026690227816" at="13,0,25,0">
+        <var name="plugin" id="3897771026690227816" />
+      </scope>
+      <unit id="3897771026690227816" at="10,0,26,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.Group_statemachineTables_ActionGroup" />
+    </file>
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="3897771026690227816" at="28,13,29,61" concept="2" />
+      <node id="3897771026690269634" at="32,37,33,204" concept="2" />
+    </file>
+    <file name="TogglestatemachineTables.java">
+      <node id="3897771026690227816" at="15,21,16,169" concept="11" />
+      <node id="3897771026690227816" at="21,53,22,38" concept="7" />
+      <node id="3897771026690227817" at="28,50,29,106" concept="11" />
+      <node id="3897771026690227817" at="32,34,33,75" concept="7" />
+      <node id="3897771026690227817" at="35,53,36,38" concept="7" />
+      <node id="3897771026690227817" at="39,68,40,41" concept="2" />
+      <node id="3897771026690227817" at="40,41,41,30" concept="6" />
+      <node id="4118345400815558249" at="46,52,47,104" concept="11" />
+      <node id="4118345400815558249" at="50,34,51,79" concept="7" />
+      <node id="4118345400815558249" at="53,53,54,38" concept="7" />
+      <node id="4118345400815558249" at="57,68,58,41" concept="2" />
+      <node id="4118345400815558249" at="58,41,59,34" concept="6" />
+      <node id="3897771026690227816" at="64,0,65,0" concept="10" trace="Statemachine$h1" />
+      <node id="3897771026690227816" at="15,0,18,0" concept="1" trace="NoHint#()V" />
+      <node id="3897771026690227816" at="21,0,24,0" concept="5" trace="getRequiredConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3897771026690227817" at="28,0,31,0" concept="1" trace="ToggleOptionStatemachines_as_Tables#()V" />
+      <node id="3897771026690227817" at="32,0,35,0" concept="5" trace="getHintID#()Ljava/lang/String;" />
+      <node id="3897771026690227817" at="35,0,38,0" concept="5" trace="getRequiredConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4118345400815558249" at="46,0,49,0" concept="1" trace="ToggleOptionStatemachines_graphically#()V" />
+      <node id="4118345400815558249" at="50,0,53,0" concept="5" trace="getHintID#()Ljava/lang/String;" />
+      <node id="4118345400815558249" at="53,0,56,0" concept="5" trace="getRequiredConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3897771026690227817" at="38,0,43,0" concept="5" trace="setSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Z)V" />
+      <node id="4118345400815558249" at="56,0,61,0" concept="5" trace="setSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Z)V" />
+      <scope id="3897771026690227816" at="15,21,16,169" />
+      <scope id="3897771026690227816" at="21,53,22,38" />
+      <scope id="3897771026690227817" at="28,50,29,106" />
+      <scope id="3897771026690227817" at="32,34,33,75" />
+      <scope id="3897771026690227817" at="35,53,36,38" />
+      <scope id="4118345400815558249" at="46,52,47,104" />
+      <scope id="4118345400815558249" at="50,34,51,79" />
+      <scope id="4118345400815558249" at="53,53,54,38" />
+      <scope id="3897771026690227817" at="39,68,41,30">
+        <var name="hintId" id="3897771026690227817" />
+      </scope>
+      <scope id="4118345400815558249" at="57,68,59,34">
+        <var name="hintId" id="4118345400815558249" />
+      </scope>
+      <scope id="3897771026690227816" at="15,0,18,0" />
+      <scope id="3897771026690227816" at="21,0,24,0" />
+      <scope id="3897771026690227817" at="28,0,31,0" />
+      <scope id="3897771026690227817" at="32,0,35,0" />
+      <scope id="3897771026690227817" at="35,0,38,0" />
+      <scope id="4118345400815558249" at="46,0,49,0" />
+      <scope id="4118345400815558249" at="50,0,53,0" />
+      <scope id="4118345400815558249" at="53,0,56,0" />
+      <scope id="3897771026690227817" at="38,0,43,0">
+        <var name="event" id="3897771026690227817" />
+        <var name="pushHint" id="3897771026690227817" />
+      </scope>
+      <scope id="4118345400815558249" at="56,0,61,0">
+        <var name="event" id="4118345400815558249" />
+        <var name="pushHint" id="4118345400815558249" />
+      </scope>
+      <unit id="3897771026690227816" at="63,0,66,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.TogglestatemachineTables$CONCEPTS" />
+      <unit id="3897771026690227816" at="14,0,25,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.TogglestatemachineTables$NoHint" />
+      <unit id="3897771026690227817" at="26,0,44,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.TogglestatemachineTables$ToggleOptionStatemachines_as_Tables" />
+      <unit id="4118345400815558249" at="44,0,62,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.TogglestatemachineTables$ToggleOptionStatemachines_graphically" />
+      <unit id="3897771026690227816" at="12,0,67,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.TogglestatemachineTables" />
+    </file>
+  </root>
+  <root nodeRef="r:4c8e3b65-629f-4de3-b971-458f87712194(com.mbeddr.ext.statemachines.pluginSolution.plugin)/5338908363446178316">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="5338908363446178316" at="15,0,16,0" concept="3" trace="myId" />
+      <node id="5338908363446178316" at="21,27,22,16" concept="7" />
+      <node id="5338908363446178316" at="25,30,26,29" concept="8" />
+      <node id="5338908363446178316" at="27,47,28,13" concept="8" />
+      <node id="5338908363446178316" at="36,48,37,92" concept="6" />
+      <node id="5338908363446178316" at="38,91,39,15" concept="7" />
+      <node id="5338908363446178316" at="17,0,19,0" concept="1" trace="PluginSolution_ApplicationPlugin#()V" />
+      <node id="5338908363446178316" at="20,0,24,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="5338908363446178316" at="32,0,36,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="5338908363446178316" at="36,0,41,0" concept="5" trace="initKeymaps#()Ljava/util/List;" />
+      <node id="5338908363446178316" at="25,0,32,0" concept="5" trace="createGroups#()V" />
+      <scope id="5338908363446178316" at="17,45,17,45" />
+      <scope id="5338908363446178316" at="21,27,22,16" />
+      <scope id="5338908363446178316" at="17,0,19,0" />
+      <scope id="5338908363446178316" at="32,37,34,139" />
+      <scope id="5338908363446178316" at="36,48,39,15">
+        <var name="res" id="5338908363446178316" />
+      </scope>
+      <scope id="5338908363446178316" at="20,0,24,0" />
+      <scope id="5338908363446178316" at="32,0,36,0" />
+      <scope id="5338908363446178316" at="25,30,30,60" />
+      <scope id="5338908363446178316" at="36,0,41,0" />
+      <scope id="5338908363446178316" at="25,0,32,0" />
+      <unit id="5338908363446178316" at="14,0,42,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.PluginSolution_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:4c8e3b65-629f-4de3-b971-458f87712194(com.mbeddr.ext.statemachines.pluginSolution.plugin)/5338908363446178384">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="5338908363446178384" at="26,29,27,47" concept="2" />
+      <node id="5338908363446178384" at="29,61,30,60" concept="2" />
+      <node id="5338908363446178384" at="33,204,34,139" concept="2" />
+      <node id="5338908363446178384" at="37,92,38,91" concept="2" />
+    </file>
+    <file name="extractMacroActionGroup_ActionGroup.java">
+      <node id="5338908363446178384" at="10,0,11,0" concept="10" trace="ID" />
+      <node id="5338908363446178384" at="12,81,13,49" concept="11" />
+      <node id="5338908363446178384" at="13,49,14,25" concept="2" />
+      <node id="5338908363446178384" at="14,25,15,20" concept="2" />
+      <node id="5338908363446178384" at="15,20,16,29" concept="2" />
+      <node id="5338908363446178384" at="16,29,17,135" concept="2" />
+      <node id="5338908363446178384" at="12,0,19,0" concept="1" trace="extractMacroActionGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="5338908363446178384" at="12,81,17,135" />
+      <scope id="5338908363446178384" at="12,0,19,0">
+        <var name="plugin" id="5338908363446178384" />
+      </scope>
+      <unit id="5338908363446178384" at="9,0,20,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.extractMacroActionGroup_ActionGroup" />
+    </file>
+    <file name="extractMacroAction_Action.java">
+      <node id="5338908363446178384" at="25,0,26,0" concept="10" trace="ICON" />
+      <node id="5338908363446178384" at="27,38,28,37" concept="11" />
+      <node id="5338908363446178384" at="28,37,29,35" concept="2" />
+      <node id="5338908363446178384" at="29,35,30,40" concept="2" />
+      <node id="5338908363446178384" at="30,40,31,29" concept="2" />
+      <node id="5338908363446178384" at="34,32,35,16" concept="7" />
+      <node id="5338908363446178384" at="38,87,39,197" concept="7" />
+      <node id="5338908363446178384" at="42,89,43,85" concept="2" />
+      <node id="5338908363446178384" at="47,53,48,19" concept="7" />
+      <node id="5338908363446178384" at="50,5,51,57" concept="6" />
+      <node id="5338908363446178384" at="52,90,53,20" concept="2" />
+      <node id="5338908363446178384" at="55,25,56,21" concept="7" />
+      <node id="5338908363446178384" at="59,5,60,66" concept="6" />
+      <node id="5338908363446178384" at="61,22,62,21" concept="7" />
+      <node id="5338908363446178384" at="64,5,65,16" concept="7" />
+      <node id="5338908363446230052" at="68,96,69,27" concept="6" />
+      <node id="5338908363446178384" at="69,27,70,75" concept="2" />
+      <node id="5338908363446178384" at="71,28,72,13" concept="7" />
+      <node id="5338908363446178384" at="73,5,74,0" concept="9" />
+      <node id="5338908363446178384" at="76,25,77,363" concept="2" />
+      <node id="5338908363446230052" at="81,66,82,146" concept="7" />
+      <node id="5338908363446178384" at="85,5,86,50" concept="6" />
+      <node id="5338908363446178384" at="86,50,87,86" concept="2" />
+      <node id="5338908363446178384" at="87,86,88,20" concept="7" />
+      <node id="5338908363446178384" at="93,0,94,0" concept="10" trace="Expression$bT" />
+      <node id="5338908363446178384" at="46,95,49,5" concept="4" />
+      <node id="5338908363446178384" at="51,57,54,7" concept="4" />
+      <node id="5338908363446178384" at="54,7,57,7" concept="4" />
+      <node id="5338908363446178384" at="60,66,63,7" concept="4" />
+      <node id="5338908363446178384" at="70,75,73,5" concept="4" />
+      <node id="5338908363446178384" at="76,0,79,0" concept="5" trace="run#()V" />
+      <node id="5338908363446230052" at="81,0,84,0" concept="5" trace="getInputFormacroName#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Ljava/lang/String;" />
+      <node id="5338908363446178384" at="33,0,37,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="5338908363446178384" at="37,0,41,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="5338908363446178384" at="41,0,45,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="5338908363446178384" at="74,0,79,7" concept="2" />
+      <node id="5338908363446178384" at="84,65,89,5" concept="0" />
+      <node id="5338908363446178384" at="27,0,33,0" concept="1" trace="extractMacroAction_Action#()V" />
+      <node id="5338908363446178384" at="58,5,64,5" concept="0" />
+      <node id="5338908363446178384" at="84,0,91,0" concept="5" trace="getInputAsList#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Ljava/util/List;" />
+      <node id="5338908363446178384" at="49,5,58,5" concept="0" />
+      <node id="5338908363446178384" at="67,0,81,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="5338908363446178384" at="45,0,67,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="5338908363446178384" at="34,32,35,16" />
+      <scope id="5338908363446178384" at="38,87,39,197" />
+      <scope id="5338908363446178384" at="42,89,43,85" />
+      <scope id="5338908363446178384" at="47,53,48,19" />
+      <scope id="5338908363446178384" at="52,90,53,20" />
+      <scope id="5338908363446178384" at="55,25,56,21" />
+      <scope id="5338908363446178384" at="61,22,62,21" />
+      <scope id="5338908363446178384" at="71,28,72,13" />
+      <scope id="5338908363446178384" at="76,25,77,363" />
+      <scope id="5338908363446230052" at="81,66,82,146" />
+      <scope id="5338908363446178384" at="76,0,79,0" />
+      <scope id="5338908363446230052" at="81,0,84,0">
+        <var name="event" id="5338908363446230052" />
+      </scope>
+      <scope id="5338908363446178384" at="85,5,88,20">
+        <var name="result" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="27,38,31,29" />
+      <scope id="5338908363446178384" at="33,0,37,0" />
+      <scope id="5338908363446178384" at="37,0,41,0">
+        <var name="_params" id="5338908363446178384" />
+        <var name="event" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="41,0,45,0">
+        <var name="_params" id="5338908363446178384" />
+        <var name="event" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="59,5,63,7">
+        <var name="p" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="84,65,89,5" />
+      <scope id="5338908363446178384" at="27,0,33,0" />
+      <scope id="5338908363446178384" at="50,5,57,7">
+        <var name="node" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="84,0,91,0">
+        <var name="event" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="68,96,79,7">
+        <var name="macroName" id="5338908363446230052" />
+      </scope>
+      <scope id="5338908363446178384" at="67,0,81,0">
+        <var name="_params" id="5338908363446178384" />
+        <var name="event" id="5338908363446178384" />
+      </scope>
+      <scope id="5338908363446178384" at="46,95,65,16" />
+      <scope id="5338908363446178384" at="45,0,67,0">
+        <var name="_params" id="5338908363446178384" />
+        <var name="event" id="5338908363446178384" />
+      </scope>
+      <unit id="5338908363446178384" at="92,0,95,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.extractMacroAction_Action$CONCEPTS" />
+      <unit id="5338908363446178384" at="75,99,79,5" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.extractMacroAction_Action$1" />
+      <unit id="5338908363446178384" at="24,0,96,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.extractMacroAction_Action" />
+    </file>
+    <file name="extractMacroShortcutBinding_KeymapChanges.java">
+      <node id="5338908363446178439" at="8,54,9,102" concept="2" />
+      <node id="5338908363446178384" at="12,29,13,22" concept="7" />
+      <node id="5338908363446178384" at="8,0,11,0" concept="1" trace="extractMacroShortcutBinding_KeymapChanges#()V" />
+      <node id="5338908363446178384" at="11,0,15,0" concept="5" trace="getScheme#()Ljava/lang/String;" />
+      <scope id="5338908363446178384" at="8,54,9,102" />
+      <scope id="5338908363446178384" at="12,29,13,22" />
+      <scope id="5338908363446178384" at="8,0,11,0" />
+      <scope id="5338908363446178384" at="11,0,15,0" />
+      <unit id="5338908363446178384" at="7,0,17,0" name="com.mbeddr.ext.statemachines.pluginSolution.plugin.extractMacroShortcutBinding_KeymapChanges" />
+    </file>
+  </root>
+</debug-info>
+

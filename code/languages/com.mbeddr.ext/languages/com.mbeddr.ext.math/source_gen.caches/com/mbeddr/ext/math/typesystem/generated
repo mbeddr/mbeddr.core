@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="786rh1vdzk3q5ze20f4kf5sasg1sed8">
+  <files names="TypesystemDescriptor.java:typeof_AbsExpression_InferenceRule.java:typeof_FractionExpression_InferenceRule.java:typeof_Implies_InferenceRule.java:typeof_LogarithmExpression_InferenceRule.java:typeof_MathLoopExpression_InferenceRule.java:typeof_PowerExpression_InferenceRule.java:typeof_SqrtExpression_InferenceRule.java:typeof_SumVariableReference_InferenceRule.java" />
+</product>
+

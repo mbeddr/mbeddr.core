@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-c9lqr2j8s9wmpbunbrqbacrv5688fx9">
+  <files names="BreakStatement_Constraints.java:ConstraintsAspectDescriptor.java:ContinueStatement_Constraints.java:DesignatedInitializer_Constraints.java:ForStatement_Constraints.java:ForVarDecl_Constraints.java:ForVarRef_Constraints.java:InitExpression_Constraints.java:LocalVarRef_Constraints.java:LocalVariableDeclaration_Constraints.java" />
+</product>
+

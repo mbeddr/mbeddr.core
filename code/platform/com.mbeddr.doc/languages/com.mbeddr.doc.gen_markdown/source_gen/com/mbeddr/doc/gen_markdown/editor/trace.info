@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="EditorAspectDescriptorImpl.java">
+      <unit at="15,0,31,0" name="com.mbeddr.doc.gen_markdown.editor.EditorAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:894d9c88-859b-4c30-9c01-509bb917c537(com.mbeddr.doc.gen_markdown.editor)/2378676830001299747">
+    <file name="MarkdownRenderer_Editor.java">
+      <node id="2378676830001299747" at="11,79,12,82" concept="5" />
+      <node id="2378676830001299747" at="11,0,14,0" concept="3" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="2378676830001299747" at="11,79,12,82" />
+      <scope id="2378676830001299747" at="11,0,14,0">
+        <var name="editorContext" id="2378676830001299747" />
+        <var name="node" id="2378676830001299747" />
+      </scope>
+      <unit id="2378676830001299747" at="10,0,15,0" name="com.mbeddr.doc.gen_markdown.editor.MarkdownRenderer_Editor" />
+    </file>
+    <file name="MarkdownRenderer_EditorBuilder_a.java">
+      <node id="2378676830001299747" at="17,96,18,19" concept="6" />
+      <node id="2378676830001299747" at="18,19,19,18" concept="1" />
+      <node id="2378676830001299747" at="24,26,25,18" concept="5" />
+      <node id="2378676830001299747" at="28,39,29,32" concept="5" />
+      <node id="2378676830001299747" at="32,43,33,118" concept="4" />
+      <node id="2378676830001299747" at="33,118,34,48" concept="1" />
+      <node id="2378676830001299747" at="34,48,35,28" concept="1" />
+      <node id="2378676830001299747" at="35,28,36,31" concept="1" />
+      <node id="1949379040392844585" at="36,31,37,50" concept="1" />
+      <node id="2378676830001299747" at="37,50,38,22" concept="5" />
+      <node id="1949379040392844585" at="40,42,41,119" concept="4" />
+      <node id="1949379040392844585" at="41,119,42,22" concept="5" />
+      <node id="2378676830001299747" at="14,0,16,0" concept="2" trace="myNode" />
+      <node id="2378676830001299747" at="28,0,31,0" concept="3" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2378676830001299747" at="17,0,21,0" concept="0" trace="MarkdownRenderer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1949379040392844585" at="40,0,44,0" concept="3" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2378676830001299747" at="22,0,27,0" concept="3" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2378676830001299747" at="32,0,40,0" concept="3" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="2378676830001299747" at="24,26,25,18" />
+      <scope id="2378676830001299747" at="28,39,29,32" />
+      <scope id="2378676830001299747" at="17,96,19,18" />
+      <scope id="1949379040392844585" at="40,42,42,22">
+        <var name="editorCell" id="1949379040392844585" />
+      </scope>
+      <scope id="2378676830001299747" at="28,0,31,0" />
+      <scope id="2378676830001299747" at="17,0,21,0">
+        <var name="context" id="2378676830001299747" />
+        <var name="node" id="2378676830001299747" />
+      </scope>
+      <scope id="1949379040392844585" at="40,0,44,0" />
+      <scope id="2378676830001299747" at="22,0,27,0" />
+      <scope id="2378676830001299747" at="32,43,38,22">
+        <var name="editorCell" id="2378676830001299747" />
+      </scope>
+      <scope id="2378676830001299747" at="32,0,40,0" />
+      <unit id="2378676830001299747" at="13,0,45,0" name="com.mbeddr.doc.gen_markdown.editor.MarkdownRenderer_EditorBuilder_a" />
+    </file>
+  </root>
+</debug-info>
+

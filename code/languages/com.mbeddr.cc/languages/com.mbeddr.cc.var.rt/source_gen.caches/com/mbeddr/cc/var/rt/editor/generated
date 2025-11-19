@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="3fest4vt6f1gj2n6pzjwh63ns6dnrgy">
+  <files names="EditorAspectDescriptorImpl.java:FeatureAttrRefExpr_Editor.java:FeatureAttrRefExpr_EditorBuilder_a.java:FeatureAttrRefExpr_InspectorBuilder_a.java:FeatureAttrRefExpr_SubstituteMenu.java:FeatureRef_Editor.java:FeatureRef_EditorBuilder_a.java:FeatureRef_InspectorBuilder_a.java:FeatureRef_SubstituteMenu.java:FeatureRef_TransformationMenu.java:RtFeatureModelType_Editor.java:RtFeatureModelType_EditorBuilder_a.java:RtFeatureModel_Editor.java:RtFeatureModel_EditorBuilder_a.java:StoreRtConfigStatement_Editor.java:StoreRtConfigStatement_EditorBuilder_a.java:VarRTConfigItem_Editor.java:VarRTConfigItem_EditorBuilder_a.java:VariantCase_Editor.java:VariantCase_EditorBuilder_a.java:VariantDefault_Editor.java:VariantDefault_EditorBuilder_a.java:VariantSwitch_Editor.java:VariantSwitch_EditorBuilder_a.java:var_StyleSheet.java" />
+</product>
+

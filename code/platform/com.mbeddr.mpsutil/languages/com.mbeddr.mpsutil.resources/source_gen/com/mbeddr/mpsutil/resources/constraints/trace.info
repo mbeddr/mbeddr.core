@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.mpsutil.resources.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3a8eec8f-ad1a-4c8e-8353-55e05c14c626(com.mbeddr.mpsutil.resources.constraints)/4592973744164967635">
+    <file name="TextCustomizable_Constraints.java">
+      <node id="4592973744164967635" at="18,90,19,53" concept="8" />
+      <node id="4592973744164967639" at="19,53,20,30" concept="1" />
+      <node id="3868638805865823974" at="20,30,21,33" concept="1" />
+      <node id="3868638805865850073" at="21,33,22,33" concept="1" />
+      <node id="4592973744164967639" at="26,53,27,60" concept="8" />
+      <node id="4592973744164967639" at="30,109,31,99" concept="4" />
+      <node id="4592973744164967639" at="32,53,33,169" concept="1" />
+      <node id="4592973744164967639" at="34,7,35,20" concept="5" />
+      <node id="4592973744164973797" at="37,85,38,18" concept="5" />
+      <node id="3868638805865823974" at="42,56,43,63" concept="8" />
+      <node id="3868638805865823974" at="46,109,47,99" concept="4" />
+      <node id="3868638805865823974" at="48,53,49,169" concept="1" />
+      <node id="3868638805865823974" at="50,7,51,20" concept="5" />
+      <node id="6351923667965576557" at="54,11,55,40" concept="1" />
+      <node id="6351923667965581477" at="55,40,56,20" concept="5" />
+      <node id="6351923667965579784" at="57,29,58,21" concept="5" />
+      <node id="3868638805865850073" at="63,56,64,63" concept="8" />
+      <node id="3868638805865850073" at="67,109,68,99" concept="4" />
+      <node id="3868638805865850073" at="69,53,70,169" concept="1" />
+      <node id="3868638805865850073" at="71,7,72,20" concept="5" />
+      <node id="6351923667965583810" at="75,11,76,40" concept="1" />
+      <node id="6351923667965583813" at="76,40,77,20" concept="5" />
+      <node id="6351923667965583819" at="78,29,79,21" concept="5" />
+      <node id="4592973744164967635" at="85,0,86,0" concept="6" trace="TextCustomizable$iV" />
+      <node id="4592973744164967635" at="89,0,90,0" concept="6" trace="text$pUhb" />
+      <node id="4592973744164967635" at="90,0,91,0" concept="6" trace="xOffset$djrx" />
+      <node id="4592973744164967635" at="91,0,92,0" concept="6" trace="yOffset$dkAA" />
+      <node id="4592973744164967639" at="26,0,29,0" concept="0" trace="Text_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4592973744164967639" at="31,99,34,7" concept="2" />
+      <node id="4592973744164967639" at="37,0,40,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3868638805865823974" at="42,0,45,0" concept="0" trace="XOffset_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3868638805865823974" at="47,99,50,7" concept="2" />
+      <node id="3868638805865850073" at="63,0,66,0" concept="0" trace="YOffset_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="3868638805865850073" at="68,99,71,7" concept="2" />
+      <node id="4592973744164967635" at="18,0,24,0" concept="0" trace="TextCustomizable_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="3868638805865828439" at="53,85,59,7" concept="9" />
+      <node id="6351923667965583808" at="74,85,80,7" concept="9" />
+      <node id="4592973744164967639" at="29,0,37,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="3868638805865823974" at="45,0,53,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="3868638805865823974" at="53,0,61,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3868638805865850073" at="66,0,74,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="3868638805865850073" at="74,0,82,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <scope id="4592973744164967639" at="26,53,27,60" />
+      <scope id="4592973744164967639" at="32,53,33,169" />
+      <scope id="4592973744164967642" at="37,85,38,18" />
+      <scope id="3868638805865823974" at="42,56,43,63" />
+      <scope id="3868638805865823974" at="48,53,49,169" />
+      <scope id="3868638805865828448" at="57,29,58,21" />
+      <scope id="3868638805865850073" at="63,56,64,63" />
+      <scope id="3868638805865850073" at="69,53,70,169" />
+      <scope id="6351923667965583818" at="78,29,79,21" />
+      <scope id="3868638805865828441" at="54,11,56,20" />
+      <scope id="3868638805865828442" at="57,7,59,7">
+        <var name="t" id="3868638805865828444" />
+      </scope>
+      <scope id="6351923667965583809" at="75,11,77,20" />
+      <scope id="6351923667965583815" at="78,7,80,7">
+        <var name="t" id="6351923667965583816" />
+      </scope>
+      <scope id="4592973744164967639" at="26,0,29,0">
+        <var name="container" id="4592973744164967639" />
+      </scope>
+      <scope id="4592973744164967639" at="37,0,40,0">
+        <var name="node" id="4592973744164967639" />
+        <var name="propertyValue" id="4592973744164967639" />
+      </scope>
+      <scope id="3868638805865823974" at="42,0,45,0">
+        <var name="container" id="3868638805865823974" />
+      </scope>
+      <scope id="3868638805865850073" at="63,0,66,0">
+        <var name="container" id="3868638805865850073" />
+      </scope>
+      <scope id="4592973744164967635" at="18,90,22,33" />
+      <scope id="4592973744164967639" at="30,109,35,20">
+        <var name="result" id="4592973744164967639" />
+      </scope>
+      <scope id="3868638805865823974" at="46,109,51,20">
+        <var name="result" id="3868638805865823974" />
+      </scope>
+      <scope id="3868638805865850073" at="67,109,72,20">
+        <var name="result" id="3868638805865850073" />
+      </scope>
+      <scope id="4592973744164967635" at="18,0,24,0">
+        <var name="initContext" id="4592973744164967635" />
+      </scope>
+      <scope id="3868638805865824445" at="53,85,59,7" />
+      <scope id="3868638805865850218" at="74,85,80,7" />
+      <scope id="4592973744164967639" at="29,0,37,0">
+        <var name="checkingNodeContext" id="4592973744164967639" />
+        <var name="node" id="4592973744164967639" />
+        <var name="propertyValue" id="4592973744164967639" />
+      </scope>
+      <scope id="3868638805865823974" at="45,0,53,0">
+        <var name="checkingNodeContext" id="3868638805865823974" />
+        <var name="node" id="3868638805865823974" />
+        <var name="propertyValue" id="3868638805865823974" />
+      </scope>
+      <scope id="3868638805865823974" at="53,0,61,0">
+        <var name="node" id="3868638805865823974" />
+        <var name="propertyValue" id="3868638805865823974" />
+      </scope>
+      <scope id="3868638805865850073" at="66,0,74,0">
+        <var name="checkingNodeContext" id="3868638805865850073" />
+        <var name="node" id="3868638805865850073" />
+        <var name="propertyValue" id="3868638805865850073" />
+      </scope>
+      <scope id="3868638805865850073" at="74,0,82,0">
+        <var name="node" id="3868638805865850073" />
+        <var name="propertyValue" id="3868638805865850073" />
+      </scope>
+      <unit id="4592973744164967635" at="84,0,87,0" name="com.mbeddr.mpsutil.resources.constraints.TextCustomizable_Constraints$CONCEPTS" />
+      <unit id="4592973744164967635" at="88,0,93,0" name="com.mbeddr.mpsutil.resources.constraints.TextCustomizable_Constraints$PROPS" />
+      <unit id="4592973744164967639" at="25,0,41,0" name="com.mbeddr.mpsutil.resources.constraints.TextCustomizable_Constraints$Text_PD" />
+      <unit id="3868638805865823974" at="41,0,62,0" name="com.mbeddr.mpsutil.resources.constraints.TextCustomizable_Constraints$XOffset_PD" />
+      <unit id="3868638805865850073" at="62,0,83,0" name="com.mbeddr.mpsutil.resources.constraints.TextCustomizable_Constraints$YOffset_PD" />
+      <unit id="4592973744164967635" at="17,0,94,0" name="com.mbeddr.mpsutil.resources.constraints.TextCustomizable_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

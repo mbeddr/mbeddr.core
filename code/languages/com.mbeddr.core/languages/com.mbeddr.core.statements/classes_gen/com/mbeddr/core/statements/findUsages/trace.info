@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="FindUsagesDescriptor.java">
+      <unit at="37,0,40,0" name="com.mbeddr.core.statements.findUsages.FindUsagesDescriptor$CONCEPTS" />
+      <unit at="13,0,41,0" name="com.mbeddr.core.statements.findUsages.FindUsagesDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1d4a770e-7d6d-4857-b34a-95ec9055cd4e(com.mbeddr.core.statements.findUsages)/1973141914968283336">
+    <file name="FindUsagesDescriptor.java">
+      <node id="1973141914968283336" at="24,13,25,49" concept="6" />
+      <node id="1973141914968283336" at="33,76,34,77" concept="1" />
+      <scope id="1973141914968283336" at="24,13,25,49" />
+    </file>
+    <file name="findWriteAccessToLVD_Finder.java">
+      <node id="1973141914968283336" at="26,34,27,40" concept="6" />
+      <node id="1973141914968283336" at="30,38,31,14" concept="6" />
+      <node id="1973141914968283336" at="34,41,35,48" concept="6" />
+      <node id="1973141914968283336" at="39,122,40,39" concept="1" />
+      <node id="1973141914968283344" at="41,9,42,144" concept="5" />
+      <node id="1973141914968283416" at="44,107,45,55" concept="1" />
+      <node id="1973141914968283336" at="48,15,49,21" concept="1" />
+      <node id="1973141914968283421" at="54,45,55,26" concept="6" />
+      <node id="1973141914968283336" at="60,46,61,89" concept="6" />
+      <node id="1973141914968283336" at="65,0,66,0" concept="7" trace="LocalVariableDeclaration$ft" />
+      <node id="1973141914968283336" at="66,0,67,0" concept="7" trace="LocalVarRef$VQ" />
+      <node id="1973141914968283336" at="23,0,25,0" concept="0" trace="findWriteAccessToLVD_Finder#()V" />
+      <node id="1973141914968283357" at="43,52,46,9" concept="3" />
+      <node id="1973141914968283336" at="25,0,29,0" concept="4" trace="getDescription#()Ljava/lang/String;" />
+      <node id="1973141914968283336" at="29,0,33,0" concept="4" trace="getLongDescription#()Ljava/lang/String;" />
+      <node id="1973141914968283336" at="33,0,37,0" concept="4" trace="getSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1973141914968283336" at="53,0,57,0" concept="4" trace="getNodeCategory#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1973141914968283352" at="42,144,47,7" concept="2" />
+      <node id="1973141914968283336" at="58,0,63,0" concept="4" trace="getDeclarationNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1973141914968283336" at="40,39,50,5" concept="8" />
+      <node id="1973141914968283336" at="38,0,52,0" concept="4" trace="doFind0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/module/SearchScope;Ljetbrains/mps/ide/findusages/findalgorithm/finders/IFinder/FindCallback;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <scope id="1973141914968283336" at="23,40,23,40" />
+      <scope id="1973141914968283336" at="26,34,27,40" />
+      <scope id="1973141914968283336" at="30,38,31,14" />
+      <scope id="1973141914968283336" at="34,41,35,48" />
+      <scope id="1973141914968283359" at="44,107,45,55" />
+      <scope id="1973141914968283336" at="48,15,49,21" />
+      <scope id="1973141914968283420" at="54,45,55,26" />
+      <scope id="1973141914968283336" at="60,46,61,89" />
+      <scope id="1973141914968283336" at="23,0,25,0" />
+      <scope id="1973141914968283355" at="43,52,46,9" />
+      <scope id="1973141914968283336" at="25,0,29,0" />
+      <scope id="1973141914968283336" at="29,0,33,0" />
+      <scope id="1973141914968283336" at="33,0,37,0" />
+      <scope id="1973141914968283336" at="53,0,57,0">
+        <var name="node" id="1973141914968283336" />
+      </scope>
+      <scope id="1973141914968283352" at="42,144,47,7">
+        <var name="n" id="1973141914968283353" />
+      </scope>
+      <scope id="1973141914968283336" at="58,0,63,0" />
+      <scope id="1973141914968283338" at="41,9,47,7">
+        <var name="nodes" id="1973141914968283345" />
+      </scope>
+      <scope id="1973141914968283336" at="39,122,50,5" />
+      <scope id="1973141914968283336" at="38,0,52,0">
+        <var name="callback" id="1973141914968283336" />
+        <var name="monitor" id="1973141914968283336" />
+        <var name="node" id="1973141914968283336" />
+        <var name="scope" id="1973141914968283336" />
+      </scope>
+      <unit id="1973141914968283336" at="64,0,68,0" name="com.mbeddr.core.statements.findUsages.findWriteAccessToLVD_Finder$CONCEPTS" />
+      <unit id="1973141914968283336" at="22,0,69,0" name="com.mbeddr.core.statements.findUsages.findWriteAccessToLVD_Finder" />
+    </file>
+  </root>
+  <root nodeRef="r:1d4a770e-7d6d-4857-b34a-95ec9055cd4e(com.mbeddr.core.statements.findUsages)/1973141914968283423">
+    <file name="FindUsagesDescriptor.java">
+      <node id="1973141914968283423" at="22,13,23,48" concept="6" />
+      <node id="1973141914968283423" at="32,40,33,76" concept="1" />
+      <scope id="1973141914968283423" at="22,13,23,48" />
+    </file>
+    <file name="findReadAccessToLVD_Finder.java">
+      <node id="1973141914968283423" at="26,34,27,39" concept="6" />
+      <node id="1973141914968283423" at="30,38,31,14" concept="6" />
+      <node id="1973141914968283423" at="34,41,35,48" concept="6" />
+      <node id="1973141914968283423" at="39,122,40,39" concept="1" />
+      <node id="1973141914968283426" at="41,9,42,144" concept="5" />
+      <node id="1973141914968283445" at="44,110,45,55" concept="1" />
+      <node id="1973141914968283423" at="48,15,49,21" concept="1" />
+      <node id="1973141914968283449" at="54,45,55,25" concept="6" />
+      <node id="1973141914968283423" at="60,46,61,89" concept="6" />
+      <node id="1973141914968283423" at="65,0,66,0" concept="7" trace="LocalVariableDeclaration$ft" />
+      <node id="1973141914968283423" at="66,0,67,0" concept="7" trace="LocalVarRef$VQ" />
+      <node id="1973141914968283423" at="23,0,25,0" concept="0" trace="findReadAccessToLVD_Finder#()V" />
+      <node id="1973141914968283436" at="43,52,46,9" concept="3" />
+      <node id="1973141914968283423" at="25,0,29,0" concept="4" trace="getDescription#()Ljava/lang/String;" />
+      <node id="1973141914968283423" at="29,0,33,0" concept="4" trace="getLongDescription#()Ljava/lang/String;" />
+      <node id="1973141914968283423" at="33,0,37,0" concept="4" trace="getSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1973141914968283423" at="53,0,57,0" concept="4" trace="getNodeCategory#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1973141914968283432" at="42,144,47,7" concept="2" />
+      <node id="1973141914968283423" at="58,0,63,0" concept="4" trace="getDeclarationNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1973141914968283423" at="40,39,50,5" concept="8" />
+      <node id="1973141914968283423" at="38,0,52,0" concept="4" trace="doFind0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/module/SearchScope;Ljetbrains/mps/ide/findusages/findalgorithm/finders/IFinder/FindCallback;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <scope id="1973141914968283423" at="23,39,23,39" />
+      <scope id="1973141914968283423" at="26,34,27,39" />
+      <scope id="1973141914968283423" at="30,38,31,14" />
+      <scope id="1973141914968283423" at="34,41,35,48" />
+      <scope id="1973141914968283444" at="44,110,45,55" />
+      <scope id="1973141914968283423" at="48,15,49,21" />
+      <scope id="1973141914968283448" at="54,45,55,25" />
+      <scope id="1973141914968283423" at="60,46,61,89" />
+      <scope id="1973141914968283423" at="23,0,25,0" />
+      <scope id="1973141914968283435" at="43,52,46,9" />
+      <scope id="1973141914968283423" at="25,0,29,0" />
+      <scope id="1973141914968283423" at="29,0,33,0" />
+      <scope id="1973141914968283423" at="33,0,37,0" />
+      <scope id="1973141914968283423" at="53,0,57,0">
+        <var name="node" id="1973141914968283423" />
+      </scope>
+      <scope id="1973141914968283432" at="42,144,47,7">
+        <var name="n" id="1973141914968283433" />
+      </scope>
+      <scope id="1973141914968283423" at="58,0,63,0" />
+      <scope id="1973141914968283425" at="41,9,47,7">
+        <var name="nodes" id="1973141914968283427" />
+      </scope>
+      <scope id="1973141914968283423" at="39,122,50,5" />
+      <scope id="1973141914968283423" at="38,0,52,0">
+        <var name="callback" id="1973141914968283423" />
+        <var name="monitor" id="1973141914968283423" />
+        <var name="node" id="1973141914968283423" />
+        <var name="scope" id="1973141914968283423" />
+      </scope>
+      <unit id="1973141914968283423" at="64,0,68,0" name="com.mbeddr.core.statements.findUsages.findReadAccessToLVD_Finder$CONCEPTS" />
+      <unit id="1973141914968283423" at="22,0,69,0" name="com.mbeddr.core.statements.findUsages.findReadAccessToLVD_Finder" />
+    </file>
+  </root>
+</debug-info>
+

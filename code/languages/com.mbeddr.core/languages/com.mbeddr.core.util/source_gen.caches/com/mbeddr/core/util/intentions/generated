@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="1r202ztoe007oashob3pu9gmquzztyw">
+  <files names="AddGenStructHashPrintFunction_Intention.java:AddGenStructPrintFunction_Intention.java:IntentionsDescriptor.java:activateAll_Intention.java:activateErrorsAndWarn_Intention.java:activateErrorsOnly_Intention.java:activateNone_Intention.java:activeInactiveForReportStatement_Intention.java:activeInactive_Intention.java:addMissingErrorHandlers_Intention.java:addOtherwise_Intention.java:deleteUsesOfDataLogger_Intention.java:logThisExpressionAsExistingItem_Intention.java:logThisExpressionAsNewItemWithNewLogger_Intention.java:logThisExpressionAsNewItem_Intention.java:specifyErrors_Intention.java:surroundWithTry_Intention.java:synchronizeAllMembers_Intention.java:toggleCount_Intention.java:toggleEnableLogger_Intention.java:toggleLeftExclude_Intention.java:toggleRightExclude_Intention.java" />
+</product>
+

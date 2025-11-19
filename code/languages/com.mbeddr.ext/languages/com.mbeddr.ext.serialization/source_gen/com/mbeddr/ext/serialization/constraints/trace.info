@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,44,0" name="com.mbeddr.ext.serialization.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/5337910645951974005">
+    <file name="BufferRef_Constraints.java">
+      <node id="5337910645951974005" at="21,83,22,46" concept="10" />
+      <node id="5337910645951974005" at="25,127,26,128" concept="5" />
+      <node id="5337910645951974005" at="26,128,27,0" concept="7" />
+      <node id="5337910645951974005" at="28,55,29,71" concept="2" />
+      <node id="5337910645951974005" at="30,9,31,0" concept="7" />
+      <node id="5337910645951974005" at="31,0,32,22" concept="6" />
+      <node id="8237807170236493502" at="37,128,38,113" concept="6" />
+      <node id="5337910645951974005" at="40,0,41,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="5337910645951974005" at="43,0,44,0" concept="8" trace="BufferRef$Q4" />
+      <node id="5337910645951974005" at="44,0,45,0" concept="8" trace="SerializationHandler$Kg" />
+      <node id="5337910645951974005" at="27,0,30,9" concept="3" />
+      <node id="5337910645951974005" at="37,0,40,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="5337910645951974005" at="24,0,34,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="5337910645951974005" at="22,46,34,7" concept="2" />
+      <node id="5337910645951974005" at="21,0,36,0" concept="1" trace="BufferRef_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5337910645951974005" at="28,55,29,71" />
+      <scope id="8237807170236493501" at="37,128,38,113" />
+      <scope id="5337910645951974005" at="37,0,40,0">
+        <var name="childConcept" id="5337910645951974005" />
+        <var name="link" id="5337910645951974005" />
+        <var name="node" id="5337910645951974005" />
+        <var name="parentNode" id="5337910645951974005" />
+      </scope>
+      <scope id="5337910645951974005" at="25,127,32,22">
+        <var name="result" id="5337910645951974005" />
+      </scope>
+      <scope id="5337910645951974005" at="24,0,34,0">
+        <var name="checkingNodeContext" id="5337910645951974005" />
+        <var name="context" id="5337910645951974005" />
+      </scope>
+      <scope id="5337910645951974005" at="21,83,34,7" />
+      <scope id="5337910645951974005" at="21,0,36,0">
+        <var name="initContext" id="5337910645951974005" />
+      </scope>
+      <unit id="5337910645951974005" at="42,0,46,0" name="com.mbeddr.ext.serialization.constraints.BufferRef_Constraints$CONCEPTS" />
+      <unit id="5337910645951974005" at="23,32,34,5" name="com.mbeddr.ext.serialization.constraints.BufferRef_Constraints$1" />
+      <unit id="5337910645951974005" at="20,0,47,0" name="com.mbeddr.ext.serialization.constraints.BufferRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/7384997130812203888">
+    <file name="StatementLevelSerialDotTargets_Constraints.java">
+      <node id="7384997130812203888" at="24,104,25,67" concept="10" />
+      <node id="7384997130812203888" at="28,127,29,128" concept="5" />
+      <node id="7384997130812203888" at="29,128,30,0" concept="7" />
+      <node id="7384997130812203888" at="31,55,32,71" concept="2" />
+      <node id="7384997130812203888" at="33,9,34,0" concept="7" />
+      <node id="7384997130812203888" at="34,0,35,22" concept="6" />
+      <node id="8237807170236493514" at="41,114,42,19" concept="6" />
+      <node id="8237807170236493523" at="43,5,44,0" concept="7" />
+      <node id="8237807170236493524" at="44,0,45,181" concept="5" />
+      <node id="8237807170236493535" at="46,259,47,18" concept="6" />
+      <node id="8237807170236493542" at="49,5,50,28" concept="5" />
+      <node id="8237807170236493547" at="51,70,52,310" concept="6" />
+      <node id="8237807170236493555" at="54,5,55,17" concept="6" />
+      <node id="7384997130812203888" at="57,0,58,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="7384997130812203888" at="60,0,61,0" concept="8" trace="StatementLevelSerialDotTargets$5W" />
+      <node id="7384997130812203888" at="61,0,62,0" concept="8" trace="ExpressionStatement$SU" />
+      <node id="7384997130812203888" at="62,0,63,0" concept="8" trace="GenericDotExpression$uQ" />
+      <node id="7384997130812203888" at="63,0,64,0" concept="8" trace="PointerType$HX" />
+      <node id="7384997130812203888" at="67,0,68,0" concept="8" trace="expression$PfNq" />
+      <node id="7384997130812203888" at="68,0,69,0" concept="8" trace="baseType$zMGV" />
+      <node id="7384997130812203888" at="30,0,33,9" concept="3" />
+      <node id="8237807170236493512" at="40,128,43,5" concept="3" />
+      <node id="8237807170236493533" at="45,181,48,5" concept="3" />
+      <node id="8237807170236493542" at="50,28,53,7" concept="3" />
+      <node id="8237807170236493542" at="48,5,54,5" concept="0" />
+      <node id="7384997130812203888" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7384997130812203888" at="25,67,37,7" concept="2" />
+      <node id="7384997130812203888" at="24,0,39,0" concept="1" trace="StatementLevelSerialDotTargets_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="7384997130812203888" at="40,0,57,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <scope id="7384997130812203888" at="31,55,32,71" />
+      <scope id="8237807170236493513" at="41,114,42,19" />
+      <scope id="8237807170236493534" at="46,259,47,18" />
+      <scope id="8237807170236493546" at="51,70,52,310" />
+      <scope id="8237807170236493542" at="49,5,53,7">
+        <var name="pt" id="8237807170236493542" />
+      </scope>
+      <scope id="7384997130812203888" at="28,127,35,22">
+        <var name="result" id="7384997130812203888" />
+      </scope>
+      <scope id="7384997130812203888" at="27,0,37,0">
+        <var name="checkingNodeContext" id="7384997130812203888" />
+        <var name="context" id="7384997130812203888" />
+      </scope>
+      <scope id="7384997130812203888" at="24,104,37,7" />
+      <scope id="7384997130812203888" at="24,0,39,0">
+        <var name="initContext" id="7384997130812203888" />
+      </scope>
+      <scope id="8237807170236493511" at="40,128,55,17">
+        <var name="type" id="8237807170236493525" />
+      </scope>
+      <scope id="7384997130812203888" at="40,0,57,0">
+        <var name="childConcept" id="7384997130812203888" />
+        <var name="link" id="7384997130812203888" />
+        <var name="node" id="7384997130812203888" />
+        <var name="parentNode" id="7384997130812203888" />
+      </scope>
+      <unit id="7384997130812203888" at="66,0,70,0" name="com.mbeddr.ext.serialization.constraints.StatementLevelSerialDotTargets_Constraints$LINKS" />
+      <unit id="7384997130812203888" at="59,0,65,0" name="com.mbeddr.ext.serialization.constraints.StatementLevelSerialDotTargets_Constraints$CONCEPTS" />
+      <unit id="7384997130812203888" at="26,32,37,5" name="com.mbeddr.ext.serialization.constraints.StatementLevelSerialDotTargets_Constraints$1" />
+      <unit id="7384997130812203888" at="23,0,71,0" name="com.mbeddr.ext.serialization.constraints.StatementLevelSerialDotTargets_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/8509854365002617648">
+    <file name="HandlerFunction_Constraints.java">
+      <node id="8509854365002617648" at="16,89,17,52" concept="10" />
+      <node id="8509854365002617670" at="17,52,18,30" concept="2" />
+      <node id="8509854365002617670" at="22,53,23,60" concept="10" />
+      <node id="8509854365002619440" at="26,40,27,90" concept="6" />
+      <node id="8509854365002617648" at="32,0,33,0" concept="8" trace="HandlerFunction$6g" />
+      <node id="8509854365002617648" at="36,0,37,0" concept="8" trace="name$MnvL" />
+      <node id="8509854365002617670" at="22,0,25,0" concept="1" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8509854365002617648" at="16,0,20,0" concept="1" trace="HandlerFunction_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8509854365002617670" at="25,0,29,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="8509854365002617670" at="22,53,23,60" />
+      <scope id="8509854365002617694" at="26,40,27,90" />
+      <scope id="8509854365002617648" at="16,89,18,30" />
+      <scope id="8509854365002617670" at="22,0,25,0">
+        <var name="container" id="8509854365002617670" />
+      </scope>
+      <scope id="8509854365002617648" at="16,0,20,0">
+        <var name="initContext" id="8509854365002617648" />
+      </scope>
+      <scope id="8509854365002617670" at="25,0,29,0">
+        <var name="node" id="8509854365002617670" />
+      </scope>
+      <unit id="8509854365002617648" at="31,0,34,0" name="com.mbeddr.ext.serialization.constraints.HandlerFunction_Constraints$CONCEPTS" />
+      <unit id="8509854365002617648" at="35,0,38,0" name="com.mbeddr.ext.serialization.constraints.HandlerFunction_Constraints$PROPS" />
+      <unit id="8509854365002617670" at="21,0,30,0" name="com.mbeddr.ext.serialization.constraints.HandlerFunction_Constraints$Name_PD" />
+      <unit id="8509854365002617648" at="15,0,39,0" name="com.mbeddr.ext.serialization.constraints.HandlerFunction_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/8509854365004208640">
+    <file name="SerialContextType_Constraints.java">
+      <node id="8509854365004208640" at="25,91,26,54" concept="10" />
+      <node id="8509854365004208653" at="26,54,27,26" concept="2" />
+      <node id="8509854365004208653" at="31,54,32,56" concept="10" />
+      <node id="8509854365004208653" at="39,61,40,141" concept="6" />
+      <node id="6491070606984463541" at="43,78,44,364" concept="6" />
+      <node id="8509854365004208640" at="51,0,52,0" concept="8" trace="SerialContextType$c5" />
+      <node id="8509854365004208640" at="52,0,53,0" concept="8" trace="IVisibleElementProvider$$O" />
+      <node id="8509854365004208640" at="53,0,54,0" concept="8" trace="SerializationHandler$Kg" />
+      <node id="8509854365004208640" at="57,0,58,0" concept="8" trace="handler$9fMa" />
+      <node id="8509854365004208653" at="31,0,34,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8509854365004208640" at="25,0,29,0" concept="1" trace="SerialContextType_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="8509854365004208653" at="38,0,42,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8509854365004208653" at="42,0,46,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="8509854365004208653" at="36,54,46,8" concept="6" />
+      <node id="8509854365004208653" at="34,0,48,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="8509854365004208653" at="31,54,32,56" />
+      <scope id="8509854365004208653" at="39,61,40,141" />
+      <scope id="8509854365004208653" at="43,78,44,364" />
+      <scope id="8509854365004208640" at="25,91,27,26" />
+      <scope id="8509854365004208653" at="31,0,34,0">
+        <var name="container" id="8509854365004208653" />
+      </scope>
+      <scope id="8509854365004208640" at="25,0,29,0">
+        <var name="initContext" id="8509854365004208640" />
+      </scope>
+      <scope id="8509854365004208653" at="38,0,42,0" />
+      <scope id="8509854365004208653" at="42,0,46,0">
+        <var name="_context" id="8509854365004208653" />
+      </scope>
+      <scope id="8509854365004208653" at="36,54,46,8" />
+      <scope id="8509854365004208653" at="34,0,48,0" />
+      <unit id="8509854365004208640" at="56,0,59,0" name="com.mbeddr.ext.serialization.constraints.SerialContextType_Constraints$LINKS" />
+      <unit id="8509854365004208640" at="50,0,55,0" name="com.mbeddr.ext.serialization.constraints.SerialContextType_Constraints$CONCEPTS" />
+      <unit id="8509854365004208653" at="37,17,46,7" name="com.mbeddr.ext.serialization.constraints.SerialContextType_Constraints$RD1$1" />
+      <unit id="8509854365004208653" at="30,0,49,0" name="com.mbeddr.ext.serialization.constraints.SerialContextType_Constraints$RD1" />
+      <unit id="8509854365004208640" at="24,0,60,0" name="com.mbeddr.ext.serialization.constraints.SerialContextType_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/8509854365005068736">
+    <file name="SerialDotTarget_Constraints.java">
+      <node id="8509854365005068736" at="24,89,25,52" concept="10" />
+      <node id="8509854365005068736" at="28,127,29,128" concept="5" />
+      <node id="8509854365005068736" at="29,128,30,0" concept="7" />
+      <node id="8509854365005068736" at="31,55,32,71" concept="2" />
+      <node id="8509854365005068736" at="33,9,34,0" concept="7" />
+      <node id="8509854365005068736" at="34,0,35,22" concept="6" />
+      <node id="8237807170236493559" at="40,128,41,181" concept="5" />
+      <node id="8237807170236493570" at="42,259,43,18" concept="6" />
+      <node id="8237807170236493577" at="45,5,46,28" concept="5" />
+      <node id="8237807170236493582" at="47,70,48,310" concept="6" />
+      <node id="8237807170236493590" at="50,5,51,17" concept="6" />
+      <node id="8509854365005068736" at="53,0,54,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="8509854365005068736" at="56,0,57,0" concept="8" trace="SerialDotTarget$PK" />
+      <node id="8509854365005068736" at="57,0,58,0" concept="8" trace="GenericDotExpression$uQ" />
+      <node id="8509854365005068736" at="58,0,59,0" concept="8" trace="PointerType$HX" />
+      <node id="8509854365005068736" at="62,0,63,0" concept="8" trace="expression$PfNq" />
+      <node id="8509854365005068736" at="63,0,64,0" concept="8" trace="baseType$zMGV" />
+      <node id="8509854365005068736" at="30,0,33,9" concept="3" />
+      <node id="8237807170236493568" at="41,181,44,5" concept="3" />
+      <node id="8237807170236493577" at="46,28,49,7" concept="3" />
+      <node id="8237807170236493577" at="44,5,50,5" concept="0" />
+      <node id="8509854365005068736" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="8509854365005068736" at="25,52,37,7" concept="2" />
+      <node id="8509854365005068736" at="40,0,53,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="8509854365005068736" at="24,0,39,0" concept="1" trace="SerialDotTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="8509854365005068736" at="31,55,32,71" />
+      <scope id="8237807170236493569" at="42,259,43,18" />
+      <scope id="8237807170236493581" at="47,70,48,310" />
+      <scope id="8237807170236493577" at="45,5,49,7">
+        <var name="pt" id="8237807170236493577" />
+      </scope>
+      <scope id="8509854365005068736" at="28,127,35,22">
+        <var name="result" id="8509854365005068736" />
+      </scope>
+      <scope id="8509854365005068736" at="27,0,37,0">
+        <var name="checkingNodeContext" id="8509854365005068736" />
+        <var name="context" id="8509854365005068736" />
+      </scope>
+      <scope id="8237807170236493558" at="40,128,51,17">
+        <var name="type" id="8237807170236493560" />
+      </scope>
+      <scope id="8509854365005068736" at="24,89,37,7" />
+      <scope id="8509854365005068736" at="40,0,53,0">
+        <var name="childConcept" id="8509854365005068736" />
+        <var name="link" id="8509854365005068736" />
+        <var name="node" id="8509854365005068736" />
+        <var name="parentNode" id="8509854365005068736" />
+      </scope>
+      <scope id="8509854365005068736" at="24,0,39,0">
+        <var name="initContext" id="8509854365005068736" />
+      </scope>
+      <unit id="8509854365005068736" at="61,0,65,0" name="com.mbeddr.ext.serialization.constraints.SerialDotTarget_Constraints$LINKS" />
+      <unit id="8509854365005068736" at="55,0,60,0" name="com.mbeddr.ext.serialization.constraints.SerialDotTarget_Constraints$CONCEPTS" />
+      <unit id="8509854365005068736" at="26,32,37,5" name="com.mbeddr.ext.serialization.constraints.SerialDotTarget_Constraints$1" />
+      <unit id="8509854365005068736" at="23,0,66,0" name="com.mbeddr.ext.serialization.constraints.SerialDotTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/9032432967254091561">
+    <file name="HandlerVarRef_Constraints.java">
+      <node id="9032432967254091561" at="31,87,32,50" concept="10" />
+      <node id="9032432967254091683" at="32,50,33,26" concept="2" />
+      <node id="9032432967254091561" at="36,127,37,128" concept="5" />
+      <node id="9032432967254091561" at="37,128,38,0" concept="7" />
+      <node id="9032432967254091561" at="39,55,40,71" concept="2" />
+      <node id="9032432967254091561" at="41,9,42,0" concept="7" />
+      <node id="9032432967254091561" at="42,0,43,22" concept="6" />
+      <node id="9032432967254091683" at="49,54,50,52" concept="10" />
+      <node id="9032432967254091683" at="57,61,58,141" concept="6" />
+      <node id="6491070606984463486" at="61,78,62,218" concept="6" />
+      <node id="8237807170236493492" at="67,128,68,108" concept="6" />
+      <node id="9032432967254091561" at="70,0,71,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="9032432967254091561" at="73,0,74,0" concept="8" trace="HandlerVarRef$p4" />
+      <node id="9032432967254091561" at="74,0,75,0" concept="8" trace="SerializationHandler$Kg" />
+      <node id="9032432967254091561" at="75,0,76,0" concept="8" trace="HandlerFunction$6g" />
+      <node id="9032432967254091561" at="79,0,80,0" concept="8" trace="var$jBWs" />
+      <node id="9032432967254091561" at="80,0,81,0" concept="8" trace="additionalVariables$jkZC" />
+      <node id="9032432967254091561" at="38,0,41,9" concept="3" />
+      <node id="9032432967254091683" at="49,0,52,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="9032432967254091561" at="67,0,70,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="9032432967254091683" at="56,0,60,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="9032432967254091683" at="60,0,64,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="9032432967254091561" at="35,0,45,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="9032432967254091683" at="54,54,64,8" concept="6" />
+      <node id="9032432967254091561" at="33,26,45,7" concept="2" />
+      <node id="9032432967254091683" at="52,0,66,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="9032432967254091561" at="31,0,47,0" concept="1" trace="HandlerVarRef_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="9032432967254091561" at="39,55,40,71" />
+      <scope id="9032432967254091683" at="49,54,50,52" />
+      <scope id="9032432967254091683" at="57,61,58,141" />
+      <scope id="9032432967254091683" at="61,78,62,218" />
+      <scope id="8237807170236493491" at="67,128,68,108" />
+      <scope id="9032432967254091683" at="49,0,52,0">
+        <var name="container" id="9032432967254091683" />
+      </scope>
+      <scope id="9032432967254091561" at="67,0,70,0">
+        <var name="childConcept" id="9032432967254091561" />
+        <var name="link" id="9032432967254091561" />
+        <var name="node" id="9032432967254091561" />
+        <var name="parentNode" id="9032432967254091561" />
+      </scope>
+      <scope id="9032432967254091683" at="56,0,60,0" />
+      <scope id="9032432967254091683" at="60,0,64,0">
+        <var name="_context" id="9032432967254091683" />
+      </scope>
+      <scope id="9032432967254091561" at="36,127,43,22">
+        <var name="result" id="9032432967254091561" />
+      </scope>
+      <scope id="9032432967254091561" at="35,0,45,0">
+        <var name="checkingNodeContext" id="9032432967254091561" />
+        <var name="context" id="9032432967254091561" />
+      </scope>
+      <scope id="9032432967254091683" at="54,54,64,8" />
+      <scope id="9032432967254091561" at="31,87,45,7" />
+      <scope id="9032432967254091683" at="52,0,66,0" />
+      <scope id="9032432967254091561" at="31,0,47,0">
+        <var name="initContext" id="9032432967254091561" />
+      </scope>
+      <unit id="9032432967254091561" at="78,0,82,0" name="com.mbeddr.ext.serialization.constraints.HandlerVarRef_Constraints$LINKS" />
+      <unit id="9032432967254091561" at="72,0,77,0" name="com.mbeddr.ext.serialization.constraints.HandlerVarRef_Constraints$CONCEPTS" />
+      <unit id="9032432967254091683" at="55,17,64,7" name="com.mbeddr.ext.serialization.constraints.HandlerVarRef_Constraints$RD1$1" />
+      <unit id="9032432967254091561" at="34,32,45,5" name="com.mbeddr.ext.serialization.constraints.HandlerVarRef_Constraints$1" />
+      <unit id="9032432967254091683" at="48,0,67,0" name="com.mbeddr.ext.serialization.constraints.HandlerVarRef_Constraints$RD1" />
+      <unit id="9032432967254091561" at="30,0,83,0" name="com.mbeddr.ext.serialization.constraints.HandlerVarRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:267486ac-6ad9-4b80-8232-a0d05b2d3572(com.mbeddr.ext.serialization.constraints)/9032432967256352689">
+    <file name="AdditionalVarTarget_Constraints.java">
+      <node id="9032432967256352689" at="28,93,29,56" concept="10" />
+      <node id="9032432967256352690" at="29,56,30,26" concept="2" />
+      <node id="9032432967256352690" at="34,54,35,52" concept="10" />
+      <node id="9032432967256352690" at="42,61,43,141" concept="6" />
+      <node id="6491070606984463349" at="46,78,47,303" concept="5" />
+      <node id="6491070606984463359" at="47,303,48,27" concept="5" />
+      <node id="6491070606984463365" at="49,82,50,76" concept="2" />
+      <node id="6491070606984463377" at="52,13,53,134" concept="5" />
+      <node id="6491070606984463381" at="54,87,55,28" concept="2" />
+      <node id="6491070606984463396" at="59,30,60,164" concept="6" />
+      <node id="6491070606984463405" at="61,11,62,34" concept="6" />
+      <node id="9032432967256352689" at="69,0,70,0" concept="8" trace="AdditionalVarTarget$CF" />
+      <node id="9032432967256352689" at="70,0,71,0" concept="8" trace="GenericDotExpression$uQ" />
+      <node id="9032432967256352689" at="71,0,72,0" concept="8" trace="SerialContextType$c5" />
+      <node id="9032432967256352689" at="72,0,73,0" concept="8" trace="PointerType$HX" />
+      <node id="9032432967256352689" at="76,0,77,0" concept="8" trace="var$jVaE" />
+      <node id="9032432967256352689" at="77,0,78,0" concept="8" trace="expression$PfNq" />
+      <node id="9032432967256352689" at="78,0,79,0" concept="8" trace="baseType$zMGV" />
+      <node id="9032432967256352689" at="79,0,80,0" concept="8" trace="handler$9fMa" />
+      <node id="9032432967256352689" at="80,0,81,0" concept="8" trace="additionalVariables$jkZC" />
+      <node id="9032432967256352690" at="34,0,37,0" concept="1" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6491070606984463377" at="53,134,56,15" concept="3" />
+      <node id="6491070606984463394" at="58,11,61,11" concept="3" />
+      <node id="9032432967256352689" at="28,0,32,0" concept="1" trace="AdditionalVarTarget_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="9032432967256352690" at="41,0,45,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="6491070606984463377" at="51,83,57,13" concept="0" />
+      <node id="6491070606984463363" at="48,27,58,11" concept="3" />
+      <node id="9032432967256352690" at="45,0,64,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="9032432967256352690" at="39,54,64,8" concept="6" />
+      <node id="9032432967256352690" at="37,0,66,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="9032432967256352690" at="34,54,35,52" />
+      <scope id="9032432967256352690" at="42,61,43,141" />
+      <scope id="6491070606984463364" at="49,82,50,76" />
+      <scope id="6491070606984463380" at="54,87,55,28" />
+      <scope id="6491070606984463395" at="59,30,60,164" />
+      <scope id="9032432967256352689" at="28,93,30,26" />
+      <scope id="9032432967256352690" at="34,0,37,0">
+        <var name="container" id="9032432967256352690" />
+      </scope>
+      <scope id="9032432967256352689" at="28,0,32,0">
+        <var name="initContext" id="9032432967256352689" />
+      </scope>
+      <scope id="9032432967256352690" at="41,0,45,0" />
+      <scope id="6491070606984463377" at="52,13,56,15">
+        <var name="inner" id="6491070606984463377" />
+      </scope>
+      <scope id="6491070606984463376" at="51,83,57,13" />
+      <scope id="9032432967256352690" at="46,78,62,34">
+        <var name="sct" id="6491070606984463360" />
+        <var name="type" id="6491070606984463350" />
+      </scope>
+      <scope id="9032432967256352690" at="45,0,64,0">
+        <var name="_context" id="9032432967256352690" />
+      </scope>
+      <scope id="9032432967256352690" at="39,54,64,8" />
+      <scope id="9032432967256352690" at="37,0,66,0" />
+      <unit id="9032432967256352689" at="68,0,74,0" name="com.mbeddr.ext.serialization.constraints.AdditionalVarTarget_Constraints$CONCEPTS" />
+      <unit id="9032432967256352689" at="75,0,82,0" name="com.mbeddr.ext.serialization.constraints.AdditionalVarTarget_Constraints$LINKS" />
+      <unit id="9032432967256352690" at="40,17,64,7" name="com.mbeddr.ext.serialization.constraints.AdditionalVarTarget_Constraints$RD1$1" />
+      <unit id="9032432967256352690" at="33,0,67,0" name="com.mbeddr.ext.serialization.constraints.AdditionalVarTarget_Constraints$RD1" />
+      <unit id="9032432967256352689" at="27,0,83,0" name="com.mbeddr.ext.serialization.constraints.AdditionalVarTarget_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

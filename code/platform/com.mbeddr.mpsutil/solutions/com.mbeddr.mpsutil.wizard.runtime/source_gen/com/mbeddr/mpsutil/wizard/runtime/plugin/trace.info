@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/254316357638209416">
+    <file name="IWizardExtension.java">
+      <node id="254316357638241398" at="9,0,10,0" concept="5" trace="forWizard#()Ljava/lang/String;" />
+      <node id="254316357638210343" at="10,0,11,0" concept="5" trace="apply#(Ljava/util/List;)Ljava/util/List;" />
+      <scope id="254316357638241398" at="9,0,10,0" />
+      <scope id="254316357638210343" at="10,0,11,0">
+        <var name="steps" id="254316357638210547" />
+      </scope>
+      <unit id="254316357638209416" at="8,0,12,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.IWizardExtension" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/254316357638613782">
+    <file name="BeforeExtension.java">
+      <node id="254316357639447805" at="10,95,11,38" concept="10" />
+      <node id="254316357638653145" at="15,77,16,131" concept="6" />
+      <node id="254316357638673891" at="17,23,18,57" concept="6" />
+      <node id="254316357638835253" at="19,72,20,57" concept="1" />
+      <node id="9203190683598356281" at="20,57,21,12" concept="1" />
+      <node id="254316357638732647" at="23,5,24,17" concept="7" />
+      <node id="254316357639446663" at="10,0,13,0" concept="0" trace="BeforeExtension#(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V" />
+      <node id="9203190683598352926" at="18,57,22,7" concept="3" />
+      <node id="254316357638655320" at="16,131,23,5" concept="4" />
+      <node id="254316357638614353" at="14,0,26,0" concept="5" trace="apply#(Ljava/util/List;)Ljava/util/List;" />
+      <scope id="254316357639446667" at="10,95,11,38" />
+      <scope id="9203190683598352930" at="19,72,21,12" />
+      <scope id="254316357639446663" at="10,0,13,0">
+        <var name="newSteps" id="254316357639448636" />
+        <var name="stepId" id="254316357639448264" />
+        <var name="wizardId" id="254316357639448103" />
+      </scope>
+      <scope id="9203190683598352926" at="18,57,22,7">
+        <var name="s" id="9203190683598352928" />
+      </scope>
+      <scope id="254316357638655322" at="17,23,22,7">
+        <var name="i" id="254316357638673892" />
+      </scope>
+      <scope id="254316357638614362" at="15,77,24,17">
+        <var name="step" id="254316357638653146" />
+      </scope>
+      <scope id="254316357638614353" at="14,0,26,0">
+        <var name="steps" id="254316357638614356" />
+      </scope>
+      <unit id="254316357638613782" at="9,0,27,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.BeforeExtension" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/254316357639439741">
+    <file name="BaseWizardExtension.java">
+      <node id="254316357638617059" at="9,0,10,0" concept="2" trace="wizardId" />
+      <node id="254316357638624645" at="10,0,11,0" concept="2" trace="stepId" />
+      <node id="254316357638727041" at="11,0,12,0" concept="2" trace="steps" />
+      <node id="254316357638617951" at="12,98,13,29" concept="1" />
+      <node id="254316357638625564" at="13,29,14,25" concept="1" />
+      <node id="254316357638728200" at="14,25,15,25" concept="1" />
+      <node id="254316357638621673" at="18,29,19,20" concept="7" />
+      <node id="254316357638614348" at="18,0,21,0" concept="5" trace="forWizard#()Ljava/lang/String;" />
+      <node id="254316357638616675" at="12,0,17,0" concept="0" trace="BaseWizardExtension#(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V" />
+      <scope id="254316357638614352" at="18,29,19,20" />
+      <scope id="254316357638616679" at="12,98,15,25" />
+      <scope id="254316357638614348" at="18,0,21,0" />
+      <scope id="254316357638616675" at="12,0,17,0">
+        <var name="newStep" id="254316357638674733" />
+        <var name="stepId" id="254316357638624911" />
+        <var name="wizardId" id="254316357638617462" />
+      </scope>
+      <unit id="254316357639439741" at="8,0,23,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.BaseWizardExtension" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/254316357639451375">
+    <file name="AfterExtension.java">
+      <node id="254316357639453017" at="10,91,11,35" concept="10" />
+      <node id="254316357639454620" at="14,77,15,130" concept="6" />
+      <node id="254316357639454665" at="16,23,17,61" concept="6" />
+      <node id="254316357639454672" at="18,72,19,57" concept="1" />
+      <node id="9203190683598366859" at="19,57,20,12" concept="1" />
+      <node id="254316357639454707" at="22,5,23,17" concept="7" />
+      <node id="254316357639451779" at="10,0,13,0" concept="0" trace="AfterExtension#(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V" />
+      <node id="9203190683598360510" at="17,61,21,7" concept="3" />
+      <node id="254316357639454663" at="15,130,22,5" concept="4" />
+      <node id="254316357639453614" at="14,0,25,0" concept="5" trace="apply#(Ljava/util/List;)Ljava/util/List;" />
+      <scope id="254316357639451783" at="10,91,11,35" />
+      <scope id="9203190683598360512" at="18,72,20,12" />
+      <scope id="254316357639451779" at="10,0,13,0">
+        <var name="newSteps" id="254316357639452197" />
+        <var name="stepId" id="254316357639451991" />
+        <var name="wizId" id="254316357639451979" />
+      </scope>
+      <scope id="9203190683598360510" at="17,61,21,7">
+        <var name="s" id="9203190683598360511" />
+      </scope>
+      <scope id="254316357639454664" at="16,23,21,7">
+        <var name="i" id="254316357639454666" />
+      </scope>
+      <scope id="254316357639453623" at="14,77,23,17">
+        <var name="step" id="254316357639454621" />
+      </scope>
+      <scope id="254316357639453614" at="14,0,25,0">
+        <var name="steps" id="254316357639453617" />
+      </scope>
+      <unit id="254316357639451375" at="9,0,26,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.AfterExtension" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/4691399189033334668">
+    <file name="ExtensionProvider.java">
+      <node id="4691399189033337301" at="9,0,10,0" concept="2" trace="extensions" />
+      <node id="4691399189033338592" at="10,72,11,33" concept="1" />
+      <node id="4691399189033342124" at="14,49,15,22" concept="7" />
+      <node id="4691399189033337733" at="10,0,13,0" concept="0" trace="ExtensionProvider#(Ljava/util/List;)V" />
+      <node id="4691399189033336290" at="13,0,17,0" concept="5" trace="getExtensions#()Ljava/util/List;" />
+      <scope id="4691399189033337737" at="10,72,11,33" />
+      <scope id="4691399189033336293" at="14,49,15,22" />
+      <scope id="4691399189033337733" at="10,0,13,0">
+        <var name="extensions" id="4691399189033337956" />
+      </scope>
+      <scope id="4691399189033336290" at="13,0,17,0" />
+      <unit id="4691399189033334668" at="8,0,18,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.ExtensionProvider" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/6632769160447493312">
+    <file name="BaseProcessStep.java">
+      <node id="6632769160447827142" at="15,0,16,0" concept="2" trace="mID" />
+      <node id="6632769160448001750" at="16,0,17,0" concept="2" trace="mComponent" />
+      <node id="4671234082065530810" at="17,0,18,0" concept="2" trace="wizard" />
+      <node id="498531228375445221" at="18,0,19,0" concept="2" trace="foo" />
+      <node id="6632769160447816597" at="19,51,20,17" concept="10" />
+      <node id="6632769160447827203" at="20,17,21,13" concept="1" />
+      <node id="8081644025966576833" at="24,53,25,25" concept="1" />
+      <node id="6632769160447959649" at="29,29,30,15" concept="7" />
+      <node id="6632769160447986701" at="34,52,35,16" concept="7" />
+      <node id="4671234082064980352" at="37,31,38,16" concept="7" />
+      <node id="8930847929348864079" at="40,33,41,16" concept="7" />
+      <node id="2010190855809582408" at="44,33,45,65" concept="6" />
+      <node id="2010190855809585270" at="46,27,47,26" concept="7" />
+      <node id="2010190855809584028" at="48,5,49,16" concept="7" />
+      <node id="2010190855809585518" at="52,37,53,65" concept="6" />
+      <node id="2010190855809586885" at="54,27,55,26" concept="7" />
+      <node id="2010190855809587738" at="56,5,57,16" concept="7" />
+      <node id="2010190855809744022" at="59,57,60,30" concept="7" />
+      <node id="6632769160448015158" at="64,47,65,50" concept="1" />
+      <node id="6632769160448095446" at="65,50,66,61" concept="1" />
+      <node id="6632769160448147200" at="66,61,67,34" concept="1" />
+      <node id="6632769160448016252" at="68,5,69,22" concept="7" />
+      <node id="2010190855811464659" at="71,38,72,22" concept="1" />
+      <node id="6632769160448000776" at="74,0,75,0" concept="5" trace="createComponent#(Ljavax/swing/JComponent;)V" />
+      <node id="5762295931424870579" at="77,80,78,16" concept="7" />
+      <node id="498531228376106837" at="75,0,77,0" concept="5" trace="updateUI#()V" />
+      <node id="8081644025966574483" at="24,0,27,0" concept="5" trace="setWizard#(Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseWizard;)V" />
+      <node id="4671234082064979725" at="37,0,40,0" concept="5" trace="isComplete#()Z" />
+      <node id="8930847929348863429" at="40,0,43,0" concept="5" trace="isApplicable#()Z" />
+      <node id="2010190855809583018" at="45,65,48,5" concept="4" />
+      <node id="2010190855809586025" at="53,65,56,5" concept="4" />
+      <node id="2010190855809743291" at="59,0,62,0" concept="5" trace="getStep#(Ljava/lang/String;)Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseProcessStep;" />
+      <node id="2010190855811463701" at="71,0,74,0" concept="5" trace="triggerValidation#()V" />
+      <node id="254316357637602667" at="77,0,80,0" concept="5" trace="execute#(nullLorg/jetbrains/mps/openapi/util/ProgressMonitor;)null" />
+      <node id="6632769160447809552" at="19,0,23,0" concept="0" trace="BaseProcessStep#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="6632769160447957824" at="28,0,32,0" concept="5" trace="getStepId#()Ljava/lang/Object;" />
+      <node id="6632769160447960005" at="33,0,37,0" concept="5" trace="getPreferredFocusedComponent#()Ljavax/swing/JComponent;" />
+      <node id="6632769160448002327" at="63,36,68,5" concept="4" />
+      <node id="4671234082064851704" at="43,0,51,0" concept="5" trace="getNextStepId#()Ljava/lang/Object;" />
+      <node id="4671234082064851713" at="51,0,59,0" concept="5" trace="getPreviousStepId#()Ljava/lang/Object;" />
+      <node id="6632769160448002062" at="63,0,71,0" concept="5" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <scope id="498531228376106840" at="75,26,75,26" />
+      <scope id="8081644025966574486" at="24,53,25,25" />
+      <scope id="6632769160447957829" at="29,29,30,15" />
+      <scope id="6632769160447960010" at="34,52,35,16" />
+      <scope id="4671234082064979729" at="37,31,38,16" />
+      <scope id="8930847929348863432" at="40,33,41,16" />
+      <scope id="2010190855809583020" at="46,27,47,26" />
+      <scope id="2010190855809586027" at="54,27,55,26" />
+      <scope id="2010190855809743294" at="59,57,60,30" />
+      <scope id="2010190855811463704" at="71,38,72,22" />
+      <scope id="6632769160448000776" at="74,0,75,0">
+        <var name="mainpanel" id="6632769160448017310" />
+      </scope>
+      <scope id="254316357637602670" at="77,80,78,16" />
+      <scope id="6632769160447809556" at="19,51,21,13" />
+      <scope id="498531228376106837" at="75,0,77,0" />
+      <scope id="8081644025966574483" at="24,0,27,0">
+        <var name="wizard" id="8081644025966576425" />
+      </scope>
+      <scope id="4671234082064979725" at="37,0,40,0" />
+      <scope id="8930847929348863429" at="40,0,43,0" />
+      <scope id="2010190855809743291" at="59,0,62,0">
+        <var name="id" id="2010190855809743947" />
+      </scope>
+      <scope id="6632769160448002329" at="64,47,67,34" />
+      <scope id="2010190855811463701" at="71,0,74,0" />
+      <scope id="254316357637602667" at="77,0,80,0">
+        <var name="output" id="254316357637610767" />
+        <var name="progress" id="1352395058067830381" />
+      </scope>
+      <scope id="6632769160447809552" at="19,0,23,0">
+        <var name="id" id="6632769160447813459" />
+        <var name="titel" id="6632769160447813451" />
+      </scope>
+      <scope id="6632769160447957824" at="28,0,32,0" />
+      <scope id="6632769160447960005" at="33,0,37,0" />
+      <scope id="4671234082064851710" at="44,33,49,16">
+        <var name="nextStep" id="2010190855809582409" />
+      </scope>
+      <scope id="4671234082064851719" at="52,37,57,16">
+        <var name="prevStep" id="2010190855809585519" />
+      </scope>
+      <scope id="6632769160448002069" at="63,36,69,22" />
+      <scope id="4671234082064851704" at="43,0,51,0" />
+      <scope id="4671234082064851713" at="51,0,59,0" />
+      <scope id="6632769160448002062" at="63,0,71,0" />
+      <unit id="6632769160447493312" at="14,0,81,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.BaseProcessStep" />
+    </file>
+  </root>
+  <root nodeRef="r:e803c947-d318-4d4f-9c7f-255399e27699(com.mbeddr.mpsutil.wizard.runtime.plugin)/6632769160448147959">
+    <file name="BaseWizard.java">
+      <node id="6632769160448176798" at="20,0,21,0" concept="2" trace="mSteps" />
+      <node id="254316357637765420" at="21,0,22,0" concept="2" trace="result_data" />
+      <node id="4815130854729407903" at="22,0,23,0" concept="2" trace="async_result" />
+      <node id="254316357638373497" at="23,0,24,0" concept="2" trace="myId" />
+      <node id="8731433567622687031" at="24,0,25,0" concept="2" trace="isInputReady" />
+      <node id="6632769160448157955" at="25,100,26,50" concept="10" />
+      <node id="254316357638045079" at="26,50,27,30" concept="1" />
+      <node id="254316357638380904" at="27,30,28,19" concept="1" />
+      <node id="4815130854729414379" at="28,19,29,46" concept="1" />
+      <node id="254316357638292232" at="32,141,33,130" concept="6" />
+      <node id="254316357639402290" at="33,130,34,0" concept="8" />
+      <node id="254316357638287360" at="34,0,35,255" concept="6" />
+      <node id="254316357639403175" at="35,255,36,0" concept="8" />
+      <node id="254316357638293189" at="37,70,38,33" concept="1" />
+      <node id="254316357638300674" at="39,5,40,18" concept="7" />
+      <node id="8731433567622751416" at="43,54,44,37" concept="1" />
+      <node id="8081644025968232377" at="48,25,49,46" concept="6" />
+      <node id="8081644025968217575" at="49,46,50,98" concept="1" />
+      <node id="8081644025968301574" at="50,98,51,82" concept="1" />
+      <node id="8081644025968183728" at="51,82,52,17" concept="1" />
+      <node id="6632769160448186647" at="55,60,56,86" concept="7" />
+      <node id="498531228376092640" at="60,23,61,25" concept="1" />
+      <node id="498531228376102174" at="61,25,62,104" concept="6" />
+      <node id="498531228376096853" at="62,104,63,29" concept="1" />
+      <node id="8930847929348822431" at="66,81,67,59" concept="6" />
+      <node id="8930847929348823206" at="67,59,68,0" concept="8" />
+      <node id="8930847929348828163" at="69,18,70,18" concept="7" />
+      <node id="8930847929348829161" at="71,5,72,0" concept="8" />
+      <node id="8081644025968399947" at="72,0,73,114" concept="6" />
+      <node id="8930847929348867452" at="73,114,74,15" concept="7" />
+      <node id="8930847929348885834" at="76,81,77,59" concept="6" />
+      <node id="8930847929348885841" at="77,59,78,0" concept="8" />
+      <node id="8930847929348885844" at="79,18,80,18" concept="7" />
+      <node id="8930847929348885849" at="81,5,82,0" concept="8" />
+      <node id="8081644025968415624" at="82,0,83,137" concept="6" />
+      <node id="8081644025968424136" at="83,137,84,0" concept="8" />
+      <node id="8930847929348919129" at="84,0,85,15" concept="7" />
+      <node id="2070099012821147280" at="87,26,88,25" concept="1" />
+      <node id="3234506072438477054" at="91,20,92,38" concept="1" />
+      <node id="3234506072438480758" at="92,38,93,13" concept="7" />
+      <node id="4815130854731007936" at="96,25,97,84" concept="6" />
+      <node id="4815130854731007942" at="97,84,98,72" concept="6" />
+      <node id="4815130854731007948" at="98,72,99,89" concept="1" />
+      <node id="4815130854731007961" at="100,93,101,55" concept="6" />
+      <node id="8256805695883999353" at="101,55,102,63" concept="6" />
+      <node id="8256805695884481430" at="103,30,104,23" concept="1" />
+      <node id="4815130854731007968" at="105,11,106,34" concept="1" />
+      <node id="4815130854731007976" at="106,34,107,85" concept="6" />
+      <node id="4815130854731007988" at="108,38,109,56" concept="1" />
+      <node id="4815130854731007997" at="110,11,111,29" concept="1" />
+      <node id="4815130854731008005" at="112,9,113,23" concept="1" />
+      <node id="4815130854731008009" at="113,23,114,74" concept="1" />
+      <node id="7775334123752238761" at="118,43,119,29" concept="7" />
+      <node id="3234506072438370341" at="122,32,123,27" concept="1" />
+      <node id="3234506072438407411" at="123,27,124,36" concept="1" />
+      <node id="4691399189032625080" at="126,39,127,13" concept="1" />
+      <node id="4691399189032625618" at="127,13,128,39" concept="7" />
+      <node id="7775334123756317026" at="131,43,132,38" concept="6" />
+      <node id="7775334123752361788" at="133,21,134,15" concept="1" />
+      <node id="7775334123752362331" at="134,15,135,41" concept="7" />
+      <node id="7775334123752738731" at="136,5,137,16" concept="7" />
+      <node id="254316357639874906" at="139,25,140,16" concept="7" />
+      <node id="254316357638291433" at="36,0,39,5" concept="3" />
+      <node id="8731433567622737432" at="43,0,46,0" concept="5" trace="setInputReady#(Z)V" />
+      <node id="6632769160448183652" at="55,0,58,0" concept="5" trace="getStep#(Ljava/lang/String;)Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseProcessStep;" />
+      <node id="8930847929348824028" at="68,0,71,5" concept="4" />
+      <node id="8930847929348885842" at="78,0,81,5" concept="4" />
+      <node id="2070099012821130380" at="87,0,90,0" concept="5" trace="validate#()V" />
+      <node id="8256805695884398181" at="102,63,105,11" concept="4" />
+      <node id="4815130854731007986" at="107,85,110,11" concept="4" />
+      <node id="7775334123752160885" at="118,0,121,0" concept="5" trace="getResult#()Lcom/intellij/openapi/util/AsyncResult;" />
+      <node id="254316357638220306" at="139,0,142,0" concept="5" trace="getId#()Ljava/lang/String;" />
+      <node id="3234506072438474919" at="90,24,94,5" concept="4" />
+      <node id="4691399189032431650" at="126,0,130,0" concept="5" trace="finishAndGetResult#()null" />
+      <node id="7775334123752726621" at="132,38,136,5" concept="4" />
+      <node id="8731433567622778840" at="59,31,64,5" concept="4" />
+      <node id="3234506072438370331" at="121,0,126,0" concept="5" trace="doCancelAction#()V" />
+      <node id="6632769160448148068" at="25,0,31,0" concept="0" trace="BaseWizard#(Ljava/lang/String;Ljava/lang/String;nullLjava/util/List;)V" />
+      <node id="8081644025968183719" at="47,0,54,0" concept="5" trace="init#()V" />
+      <node id="498531228376092633" at="58,0,66,0" concept="5" trace="updateStep#()V" />
+      <node id="7775334123752296448" at="131,0,139,0" concept="5" trace="ShowFinishAndGetResult#()null" />
+      <node id="254316357638263705" at="32,0,42,0" concept="9" trace="applyExtension#(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;" />
+      <node id="8930847929348810812" at="66,0,76,0" concept="5" trace="getNextStep#(Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseProcessStep;)Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseProcessStep;" />
+      <node id="8930847929348871896" at="76,0,87,0" concept="5" trace="getPrevStep#(Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseProcessStep;)Lcom/mbeddr/mpsutil/wizard/runtime/plugin/BaseProcessStep;" />
+      <node id="4815130854731007958" at="99,89,112,9" concept="3" />
+      <node id="4815130854731007932" at="96,0,116,0" concept="5" trace="run#()V" />
+      <node id="4815130854730990405" at="94,5,116,37" concept="1" />
+      <node id="254316357637719514" at="90,0,118,0" concept="5" trace="finish#()V" />
+      <scope id="254316357638291435" at="37,70,38,33" />
+      <scope id="8731433567622737435" at="43,54,44,37" />
+      <scope id="6632769160448183655" at="55,60,56,86" />
+      <scope id="8930847929348824030" at="69,18,70,18" />
+      <scope id="8930847929348885843" at="79,18,80,18" />
+      <scope id="2070099012821130381" at="87,26,88,25" />
+      <scope id="8256805695884398183" at="103,30,104,23" />
+      <scope id="4815130854731007987" at="108,38,109,56" />
+      <scope id="7775334123752160888" at="118,43,119,29" />
+      <scope id="254316357638220309" at="139,25,140,16" />
+      <scope id="3234506072438474921" at="91,20,93,13" />
+      <scope id="3234506072438370338" at="122,32,124,36" />
+      <scope id="4691399189032431653" at="126,39,128,39" />
+      <scope id="7775334123752726625" at="133,21,135,41" />
+      <scope id="254316357638291433" at="36,0,39,5">
+        <var name="ext" id="254316357638291434" />
+      </scope>
+      <scope id="8731433567622737432" at="43,0,46,0">
+        <var name="isInputReady" id="8731433567622746196" />
+      </scope>
+      <scope id="6632769160448183652" at="55,0,58,0">
+        <var name="id" id="6632769160448183883" />
+      </scope>
+      <scope id="8731433567622778842" at="60,23,63,29">
+        <var name="currentStep" id="498531228376102175" />
+      </scope>
+      <scope id="2070099012821130380" at="87,0,90,0" />
+      <scope id="7775334123752160885" at="118,0,121,0" />
+      <scope id="254316357638220306" at="139,0,142,0" />
+      <scope id="6632769160448148072" at="25,100,29,46" />
+      <scope id="8081644025968183725" at="48,25,52,17">
+        <var name="list" id="8081644025968232378" />
+      </scope>
+      <scope id="4691399189032431650" at="126,0,130,0" />
+      <scope id="498531228376092637" at="59,31,64,5" />
+      <scope id="3234506072438370331" at="121,0,126,0" />
+      <scope id="6632769160448148068" at="25,0,31,0">
+        <var name="id" id="254316357638377921" />
+        <var name="result" id="254316357638043993" />
+        <var name="steps" id="6632769160448175070" />
+        <var name="titel" id="6632769160448148079" />
+      </scope>
+      <scope id="7775334123752296451" at="131,43,137,16">
+        <var name="showAndGet" id="7775334123756317027" />
+      </scope>
+      <scope id="8081644025968183719" at="47,0,54,0" />
+      <scope id="254316357638263708" at="32,141,40,18">
+        <var name="myExtensions" id="254316357638287361" />
+        <var name="result" id="254316357638292235" />
+      </scope>
+      <scope id="498531228376092633" at="58,0,66,0" />
+      <scope id="8930847929348810815" at="66,81,74,15">
+        <var name="i" id="8930847929348822432" />
+        <var name="val" id="8081644025968399948" />
+      </scope>
+      <scope id="7775334123752296448" at="131,0,139,0" />
+      <scope id="8930847929348871899" at="76,81,85,15">
+        <var name="i" id="8930847929348885835" />
+        <var name="val" id="8081644025968415625" />
+      </scope>
+      <scope id="254316357638263705" at="32,0,42,0">
+        <var name="myId" id="254316357638267643" />
+        <var name="originalSteps" id="254316357638267811" />
+      </scope>
+      <scope id="8930847929348810812" at="66,0,76,0">
+        <var name="current" id="8930847929348811442" />
+      </scope>
+      <scope id="8930847929348871896" at="76,0,87,0">
+        <var name="current" id="8930847929348872790" />
+      </scope>
+      <scope id="4815130854731007960" at="100,93,111,29">
+        <var name="executeResult" id="4815130854731007977" />
+        <var name="subTask" id="4815130854731007962" />
+        <var name="title" id="8256805695883999356" />
+      </scope>
+      <scope id="4815130854731007958" at="99,89,112,9">
+        <var name="step" id="4815130854731007959" />
+      </scope>
+      <scope id="4815130854731007935" at="96,25,114,74">
+        <var name="adapter" id="4815130854731007943" />
+        <var name="pi" id="4815130854731007937" />
+      </scope>
+      <scope id="4815130854731007932" at="96,0,116,0" />
+      <scope id="254316357637719517" at="90,24,116,37" />
+      <scope id="254316357637719514" at="90,0,118,0" />
+      <unit id="4815130854731007930" at="95,88,116,5" name="com.mbeddr.mpsutil.wizard.runtime.plugin.BaseWizard$1" />
+      <unit id="6632769160448147959" at="19,0,143,0" name="com.mbeddr.mpsutil.wizard.runtime.plugin.BaseWizard" />
+    </file>
+  </root>
+</debug-info>
+

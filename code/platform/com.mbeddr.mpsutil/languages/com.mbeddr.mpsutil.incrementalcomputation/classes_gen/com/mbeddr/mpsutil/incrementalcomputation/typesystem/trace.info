@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.incrementalcomputation.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b06ab24e-f77a-45c1-9fed-8a804a08a889(com.mbeddr.mpsutil.incrementalcomputation.typesystem)/6894699596188522033">
+    <file name="TypesystemDescriptor.java">
+      <node id="6894699596188522033" at="10,5,11,104" concept="4" />
+      <node id="6894699596188522033" at="11,104,12,55" concept="2" />
+      <node id="6894699596188522033" at="9,33,13,5" concept="0" />
+      <scope id="6894699596188522033" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="6894699596188522033" />
+      </scope>
+    </file>
+    <file name="check_IncrementallyComputed_NonTypesystemRule.java">
+      <node id="7897333456075460267" at="23,117,24,138" concept="6" />
+      <node id="7897333456075424395" at="26,7,27,66" concept="4" />
+      <node id="7897333456075424395" at="27,66,28,314" concept="4" />
+      <node id="6894699596188522033" at="32,50,33,56" concept="5" />
+      <node id="6894699596188522033" at="35,68,36,102" concept="5" />
+      <node id="6894699596188522033" at="38,30,39,17" concept="5" />
+      <node id="6894699596188522033" at="43,0,44,0" concept="7" trace="IncrementallyComputedValueHolder$Iz" />
+      <node id="6894699596188522033" at="21,0,23,0" concept="1" trace="check_IncrementallyComputed_NonTypesystemRule#()V" />
+      <node id="6894699596188522033" at="32,0,35,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6894699596188522033" at="35,0,38,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="6894699596188522033" at="38,0,41,0" concept="3" trace="overrides#()Z" />
+      <node id="7897333456075424395" at="25,138,29,7" concept="0" />
+      <node id="7897333456075413632" at="24,138,30,7" concept="2" />
+      <node id="6894699596188522033" at="23,0,32,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="6894699596188522033" at="21,58,21,58" />
+      <scope id="6894699596188522033" at="32,50,33,56" />
+      <scope id="6894699596188522033" at="35,68,36,102" />
+      <scope id="6894699596188522033" at="38,30,39,17" />
+      <scope id="6894699596188522033" at="21,0,23,0" />
+      <scope id="7897333456075424395" at="26,7,28,314">
+        <var name="_reporter_2309309498" id="7897333456075424395" />
+        <var name="errorTarget" id="7897333456075424395" />
+      </scope>
+      <scope id="6894699596188522033" at="32,0,35,0" />
+      <scope id="6894699596188522033" at="35,0,38,0">
+        <var name="argument" id="6894699596188522033" />
+      </scope>
+      <scope id="6894699596188522033" at="38,0,41,0" />
+      <scope id="7897333456075423855" at="25,138,29,7" />
+      <scope id="6894699596188522034" at="23,117,30,7" />
+      <scope id="6894699596188522033" at="23,0,32,0">
+        <var name="icvh" id="6894699596188522033" />
+        <var name="status" id="6894699596188522033" />
+        <var name="typeCheckingContext" id="6894699596188522033" />
+      </scope>
+      <unit id="6894699596188522033" at="42,0,45,0" name="com.mbeddr.mpsutil.incrementalcomputation.typesystem.check_IncrementallyComputed_NonTypesystemRule$CONCEPTS" />
+      <unit id="6894699596188522033" at="20,0,46,0" name="com.mbeddr.mpsutil.incrementalcomputation.typesystem.check_IncrementallyComputed_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:645a48be-64a0-468c-bb13-3887d6573603(com.mbeddr.mpsutil.spreferences.runtime.plugin)/6257419845709837483">
+    <file name="Dummy_AppPluginPart.java">
+      <node id="6257419845709837483" at="8,0,10,0" concept="0" trace="Dummy_AppPluginPart#()V" />
+      <scope id="6257419845709837483" at="8,32,8,32" />
+      <scope id="6257419845709837483" at="8,0,10,0" />
+      <unit id="6257419845709837483" at="7,0,11,0" name="com.mbeddr.mpsutil.spreferences.runtime.plugin.Dummy_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="6257419845709837483" at="23,66,24,41" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:645a48be-64a0-468c-bb13-3887d6573603(com.mbeddr.mpsutil.spreferences.runtime.plugin)/9021897540359052926">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="9021897540359052926" at="12,0,13,0" concept="2" trace="myId" />
+      <node id="9021897540359052926" at="18,27,19,16" concept="6" />
+      <node id="9021897540359052926" at="14,0,16,0" concept="0" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="9021897540359052926" at="17,0,21,0" concept="4" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="9021897540359052926" at="22,0,26,0" concept="4" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="9021897540359052926" at="14,38,14,38" />
+      <scope id="9021897540359052926" at="18,27,19,16" />
+      <scope id="9021897540359052926" at="23,66,24,41" />
+      <scope id="9021897540359052926" at="14,0,16,0" />
+      <scope id="9021897540359052926" at="17,0,21,0" />
+      <scope id="9021897540359052926" at="22,0,26,0">
+        <var name="parts" id="9021897540359052926" />
+      </scope>
+      <unit id="9021897540359052926" at="11,0,27,0" name="com.mbeddr.mpsutil.spreferences.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:645a48be-64a0-468c-bb13-3887d6573603(com.mbeddr.mpsutil.spreferences.runtime.plugin)/93055092065209528">
+    <file name="SPreferencesPage.java">
+      <node id="93055092065236259" at="29,0,30,0" concept="2" trace="panel" />
+      <node id="93055092065436209" at="30,0,31,0" concept="2" trace="myPrefsComponent" />
+      <node id="93055092065509416" at="32,0,33,0" concept="2" trace="mySModel" />
+      <node id="7752574857331452687" at="33,0,34,0" concept="2" trace="mySModule" />
+      <node id="6547806146468602353" at="34,0,35,0" concept="2" trace="myTitle" />
+      <node id="5053883086740925228" at="35,0,36,0" concept="2" trace="myIsRegistered" />
+      <node id="4282139912386522798" at="36,0,37,0" concept="2" trace="repo" />
+      <node id="93055092065223416" at="39,154,40,33" concept="9" />
+      <node id="2664452485890137119" at="40,33,41,17" concept="1" />
+      <node id="93055092065440455" at="41,17,42,38" concept="1" />
+      <node id="6547806146468615545" at="42,38,43,20" concept="1" />
+      <node id="8616694793976856002" at="43,20,44,78" concept="5" />
+      <node id="6741328374167456374" at="45,126,46,51" concept="1" />
+      <node id="6741328374167485022" at="46,51,47,39" concept="1" />
+      <node id="4282139912386502113" at="48,8,49,38" concept="1" />
+      <node id="3346254541067027438" at="49,38,50,52" concept="1" />
+      <node id="2810906020645428032" at="50,52,51,51" concept="1" />
+      <node id="2810906020645442117" at="51,51,52,51" concept="1" />
+      <node id="2810906020645520449" at="52,51,53,0" concept="8" />
+      <node id="6547806146468606216" at="60,34,61,19" concept="6" />
+      <node id="93055092065259547" at="65,39,66,17" concept="6" />
+      <node id="6741328374167769933" at="72,31,73,17" concept="6" />
+      <node id="3321855464310611153" at="78,41,79,27" concept="6" />
+      <node id="8251165629770500982" at="81,23,82,70" concept="5" />
+      <node id="8251165629770503112" at="82,70,83,0" concept="8" />
+      <node id="6330588235954472292" at="83,0,84,105" concept="1" />
+      <node id="3346254541067172988" at="84,105,85,71" concept="1" />
+      <node id="5053883086741173896" at="89,25,90,19" concept="1" />
+      <node id="5880725147257638386" at="91,5,92,20" concept="1" />
+      <node id="5053883086740934354" at="97,26,98,26" concept="1" />
+      <node id="5053883086740929250" at="98,26,99,21" concept="1" />
+      <node id="3258093208622897001" at="99,21,100,151" concept="7" />
+      <node id="3258093208622916943" at="100,151,101,173" concept="7" />
+      <node id="3258093208622929090" at="101,173,102,170" concept="7" />
+      <node id="3258093208622933538" at="102,170,103,123" concept="7" />
+      <node id="3258093208622944358" at="103,123,104,161" concept="7" />
+      <node id="3258093208622807718" at="104,161,105,176" concept="5" />
+      <node id="2047657455951946743" at="105,176,106,62" concept="7" />
+      <node id="2047657455951768686" at="106,62,107,38" concept="1" />
+      <node id="3258093208622509716" at="107,38,108,47" concept="1" />
+      <node id="5053883086740930748" at="111,28,112,23" concept="1" />
+      <node id="5053883086740938939" at="112,23,113,27" concept="1" />
+      <node id="5053883086740944362" at="116,33,117,26" concept="6" />
+      <node id="93055092065209702" at="56,0,58,0" concept="4" trace="apply#()V" />
+      <node id="93055092065209732" at="69,0,71,0" concept="4" trace="disposeUIResources#()V" />
+      <node id="93055092065209745" at="72,0,75,0" concept="4" trace="isModified#()Z" />
+      <node id="5053883086741170280" at="88,25,91,5" concept="3" />
+      <node id="5053883086740919184" at="116,0,119,0" concept="4" trace="isRegistered#()Z" />
+      <node id="8252487771937487976" at="44,78,48,8" concept="1" />
+      <node id="93055092065209716" at="64,0,68,0" concept="4" trace="createComponent#()Ljavax/swing/JComponent;" />
+      <node id="6330588235952975000" at="58,0,63,0" concept="4" trace="getDisplayName#()Ljava/lang/String;" />
+      <node id="3321855464310588166" at="76,0,81,0" concept="4" trace="getConfigurableType#()Ljava/lang/Class;" />
+      <node id="5053883086740930741" at="110,0,115,0" concept="4" trace="unregister#()V" />
+      <node id="93055092065209760" at="81,0,87,0" concept="4" trace="reset#()V" />
+      <node id="5880725147257633332" at="88,0,94,0" concept="4" trace="dispose#()V" />
+      <node id="5053883086740929243" at="96,0,110,0" concept="4" trace="register#()V" />
+      <node id="93055092065222051" at="39,0,55,0" concept="0" trace="SPreferencesPage#(Lcom/intellij/openapi/project/Project;Lcom/mbeddr/mpsutil/spreferences/runtime/SPrefererencesComponent;Ljava/lang/String;Ljava/lang/String;Lcom/mbeddr/mpsutil/spreferences/runtime/SPreferencesModelFactory;)V" />
+      <scope id="93055092065209715" at="56,53,56,53" />
+      <scope id="93055092065209744" at="69,36,69,36" />
+      <scope id="6330588235952975008" at="60,34,61,19" />
+      <scope id="93055092065209729" at="65,39,66,17" />
+      <scope id="93055092065209757" at="72,31,73,17" />
+      <scope id="3321855464310588175" at="78,41,79,27" />
+      <scope id="5053883086741170282" at="89,25,90,19" />
+      <scope id="5053883086740919188" at="116,33,117,26" />
+      <scope id="8252487771937848539" at="45,126,47,39" />
+      <scope id="93055092065209702" at="56,0,58,0" />
+      <scope id="93055092065209732" at="69,0,71,0" />
+      <scope id="5053883086740930745" at="111,28,113,27" />
+      <scope id="93055092065209745" at="72,0,75,0" />
+      <scope id="5053883086740919184" at="116,0,119,0" />
+      <scope id="93055092065209716" at="64,0,68,0" />
+      <scope id="93055092065209772" at="81,23,85,71">
+        <var name="firstRoot" id="8251165629770500985" />
+      </scope>
+      <scope id="5880725147257633336" at="88,25,92,20" />
+      <scope id="6330588235952975000" at="58,0,63,0" />
+      <scope id="3321855464310588166" at="76,0,81,0" />
+      <scope id="5053883086740930741" at="110,0,115,0" />
+      <scope id="93055092065209760" at="81,0,87,0" />
+      <scope id="5880725147257633332" at="88,0,94,0" />
+      <scope id="5053883086740929247" at="97,26,108,47">
+        <var name="customPluginDesc" id="3258093208622807719" />
+      </scope>
+      <scope id="93055092065222055" at="39,154,53,0">
+        <var name="mpsProject" id="8616694793976856003" />
+      </scope>
+      <scope id="5053883086740929243" at="96,0,110,0" />
+      <scope id="93055092065222051" at="39,0,55,0">
+        <var name="id" id="2664452485890081438" />
+        <var name="modelFactory" id="1551477140198014443" />
+        <var name="prefsComponent" id="93055092065225331" />
+        <var name="project" id="93055092065224075" />
+        <var name="title" id="6547806146468610996" />
+      </scope>
+      <unit id="93055092065209528" at="27,0,120,0" name="com.mbeddr.mpsutil.spreferences.runtime.plugin.SPreferencesPage" />
+    </file>
+  </root>
+</debug-info>
+

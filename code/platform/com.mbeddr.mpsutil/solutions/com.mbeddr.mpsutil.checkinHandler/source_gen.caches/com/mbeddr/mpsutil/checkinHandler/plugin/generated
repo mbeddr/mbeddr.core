@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-2m9yolx4oay2mqk0eu0spnadf3eqska">
+  <files names="AbstractBackgroundCollectingHandler.java:BackgroundCheckinHandler.java:BaseCheckinHandler.java:CheckinHandler_ApplicationPlugin.java:CheckinPlugin_AppPluginPart.java:CollectingCheckinHandler.java:EarlyBackgroundCollectingHandler.java:ExecutionOrder.java:ExtensionDescriptor.java:ForegroundCheckinHandler.java:ForegroundCollectingHandler.java:LateBackgroundCollectingHandler.java:ModificationBackgroundCollectingHandler.java:PostCommitBackgroundCollectingHandler.java" />
+</product>
+

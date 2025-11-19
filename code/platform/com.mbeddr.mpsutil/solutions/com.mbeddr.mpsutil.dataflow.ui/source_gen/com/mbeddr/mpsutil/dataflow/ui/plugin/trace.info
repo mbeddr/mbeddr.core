@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390189535">
+    <file name="InterProcVisualization.java">
+      <node id="1622311552390190491" at="19,119,20,33" concept="11" />
+      <node id="2418254290403687572" at="24,62,25,82" concept="2" />
+      <node id="2418254290404142285" at="29,66,30,86" concept="2" />
+      <node id="2418254290403611758" at="35,0,36,0" concept="3" trace="source" />
+      <node id="2418254290403611946" at="36,0,37,0" concept="3" trace="target" />
+      <node id="2418254290403612652" at="38,63,39,57" concept="2" />
+      <node id="2418254290403615573" at="39,57,40,57" concept="2" />
+      <node id="2418254290404192363" at="44,87,45,62" concept="6" />
+      <node id="8097431677977035421" at="45,62,46,62" concept="6" />
+      <node id="8097431677977036459" at="46,62,47,0" concept="9" />
+      <node id="2418254290403684955" at="48,178,49,101" concept="7" />
+      <node id="2418254290403970799" at="50,14,51,57" concept="7" />
+      <node id="2418254290403969628" at="50,12,52,7" concept="0" />
+      <node id="1622311552390190477" at="19,0,22,0" concept="1" trace="InterProcVisualization#(Ljetbrains/mps/ide/dataFlow/presentation/IProgram;Ljetbrains/mps/ide/dataFlow/presentation/IGraphCreator;)V" />
+      <node id="1622311552390385439" at="23,0,27,0" concept="5" trace="addSimpleLine#(Ljetbrains/mps/ide/dataFlow/presentation/IBlock;Ljetbrains/mps/ide/dataFlow/presentation/IBlock;)V" />
+      <node id="2418254290404140646" at="28,0,32,0" concept="5" trace="addAdditionalLine#(Ljetbrains/mps/ide/dataFlow/presentation/IBlock;Ljetbrains/mps/ide/dataFlow/presentation/IBlock;)V" />
+      <node id="2418254290403602867" at="38,0,42,0" concept="1" trace="InterProcLineCreator#(Ljetbrains/mps/ide/dataFlow/presentation/IBlock;Ljetbrains/mps/ide/dataFlow/presentation/IBlock;)V" />
+      <node id="2418254290403966428" at="47,0,52,7" concept="4" />
+      <node id="3693511592787228617" at="43,0,54,0" concept="5" trace="createLine#(IIILjetbrains/mps/ide/dataFlow/presentation/LineDirection;)Ljetbrains/mps/ide/dataFlow/presentation/Line;" />
+      <scope id="1622311552390190488" at="19,119,20,33" />
+      <scope id="1622311552390385447" at="24,62,25,82" />
+      <scope id="2418254290404140654" at="29,66,30,86" />
+      <scope id="2418254290403966430" at="48,178,49,101" />
+      <scope id="2418254290403969629" at="50,14,51,57" />
+      <scope id="2418254290403602870" at="38,63,40,57" />
+      <scope id="1622311552390190477" at="19,0,22,0">
+        <var name="graphCreator" id="1622311552390190482" />
+        <var name="program" id="1622311552390190479" />
+      </scope>
+      <scope id="1622311552390385439" at="23,0,27,0">
+        <var name="source" id="1622311552390385442" />
+        <var name="target" id="1622311552390385444" />
+      </scope>
+      <scope id="2418254290404140646" at="28,0,32,0">
+        <var name="source" id="2418254290404140647" />
+        <var name="target" id="2418254290404140649" />
+      </scope>
+      <scope id="2418254290403602867" at="38,0,42,0">
+        <var name="source" id="2418254290403602896" />
+        <var name="target" id="2418254290403609980" />
+      </scope>
+      <scope id="3693511592787228629" at="44,87,52,7">
+        <var name="sourceInstruction" id="2418254290404192364" />
+        <var name="targetInstruction" id="8097431677977035422" />
+      </scope>
+      <scope id="3693511592787228617" at="43,0,54,0">
+        <var name="direction" id="3693511592787228627" />
+        <var name="first" id="3693511592787228621" />
+        <var name="level" id="3693511592787228625" />
+        <var name="second" id="3693511592787228623" />
+      </scope>
+      <unit id="3693511592787226869" at="33,0,56,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcVisualization$InterProcLineCreator" />
+      <unit id="1622311552390189535" at="17,0,58,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcVisualization" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390265187">
+    <file name="InterProcVisualizationNodeCreator.java">
+      <node id="1622311552390285132" at="21,94,22,55" concept="6" />
+      <node id="1622311552390285136" at="22,55,23,27" concept="6" />
+      <node id="1622311552390285144" at="24,51,25,68" concept="2" />
+      <node id="1622311552390285154" at="26,12,27,21" concept="2" />
+      <node id="1622311552390285159" at="28,5,29,44" concept="6" />
+      <node id="1622311552390285163" at="29,44,30,49" concept="6" />
+      <node id="1622311552390285172" at="31,51,32,93" concept="7" />
+      <node id="1622311552390285187" at="33,56,34,94" concept="7" />
+      <node id="1622311552390303184" at="35,57,36,95" concept="7" />
+      <node id="1622311552390285217" at="37,56,38,94" concept="7" />
+      <node id="1622311552390312373" at="39,55,40,96" concept="7" />
+      <node id="1622311552390285241" at="41,12,42,96" concept="7" />
+      <node id="1622311552390285152" at="26,10,28,5" concept="0" />
+      <node id="1622311552390315602" at="41,10,43,5" concept="0" />
+      <node id="1622311552390285138" at="23,27,28,5" concept="4" />
+      <node id="1622311552390285166" at="30,49,43,5" concept="4" />
+      <node id="1622311552390265739" at="20,0,45,0" concept="5" trace="createBlock#(Ljetbrains/mps/ide/dataFlow/presentation/InstructionWrapper;IIII)Ljetbrains/mps/ide/dataFlow/presentation/IBlock;" />
+      <scope id="1622311552390285143" at="24,51,25,68" />
+      <scope id="1622311552390285153" at="26,12,27,21" />
+      <scope id="1622311552390285171" at="31,51,32,93" />
+      <scope id="1622311552390297389" at="33,56,34,94" />
+      <scope id="1622311552390301673" at="35,57,36,95" />
+      <scope id="1622311552390306451" at="37,56,38,94" />
+      <scope id="1622311552390311505" at="39,55,40,96" />
+      <scope id="1622311552390315603" at="41,12,42,96" />
+      <scope id="1622311552390265754" at="21,94,43,5">
+        <var name="caption" id="1622311552390285158" />
+        <var name="instruction" id="1622311552390285131" />
+        <var name="pointer" id="1622311552390285135" />
+        <var name="rule" id="1622311552390285162" />
+      </scope>
+      <scope id="1622311552390265739" at="20,0,45,0">
+        <var name="height" id="1622311552390265750" />
+        <var name="width" id="1622311552390265748" />
+        <var name="wrapper" id="1622311552390265742" />
+        <var name="x" id="1622311552390265744" />
+        <var name="y" id="1622311552390265746" />
+      </scope>
+      <unit id="1622311552390265187" at="18,0,47,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcVisualizationNodeCreator" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390266389">
+    <file name="InterProcReadBlock.java">
+      <node id="1622311552390269432" at="11,0,12,0" concept="3" trace="instruction" />
+      <node id="1622311552390266509" at="13,156,14,67" concept="11" />
+      <node id="1622311552390269890" at="14,67,15,35" concept="2" />
+      <node id="1622311552390272565" at="19,39,20,23" concept="7" />
+      <node id="1622311552390266484" at="13,0,17,0" concept="1" trace="InterProcReadBlock#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIIILorg/jetbrains/mps/openapi/model/SNodeReference;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1622311552390271867" at="18,0,22,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390271872" at="19,39,20,23" />
+      <scope id="1622311552390266501" at="13,156,15,35" />
+      <scope id="1622311552390266484" at="13,0,17,0">
+        <var name="caption" id="1622311552390266496" />
+        <var name="height" id="1622311552390266492" />
+        <var name="instruction" id="1622311552390267207" />
+        <var name="ruleNodeReference" id="1622311552390266498" />
+        <var name="source" id="1622311552390266494" />
+        <var name="width" id="1622311552390266490" />
+        <var name="x" id="1622311552390266486" />
+        <var name="y" id="1622311552390266488" />
+      </scope>
+      <scope id="1622311552390271867" at="18,0,22,0" />
+      <unit id="1622311552390266389" at="9,0,24,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcReadBlock" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390267818">
+    <file name="IInterProcVisualizationNode.java">
+      <node id="1622311552390271659" at="10,0,11,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390271659" at="10,0,11,0" />
+      <unit id="1622311552390267818" at="8,0,13,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.IInterProcVisualizationNode" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390273198">
+    <file name="InterProcReturnBlock.java">
+      <node id="1622311552390274580" at="11,0,12,0" concept="3" trace="instruction" />
+      <node id="1622311552390273379" at="13,158,14,67" concept="11" />
+      <node id="1622311552390275810" at="14,67,15,35" concept="2" />
+      <node id="1622311552390277838" at="19,39,20,23" concept="7" />
+      <node id="1622311552390273354" at="13,0,17,0" concept="1" trace="InterProcReturnBlock#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIIILorg/jetbrains/mps/openapi/model/SNodeReference;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1622311552390273493" at="18,0,22,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390273498" at="19,39,20,23" />
+      <scope id="1622311552390273371" at="13,158,15,35" />
+      <scope id="1622311552390273354" at="13,0,17,0">
+        <var name="caption" id="1622311552390273366" />
+        <var name="height" id="1622311552390273362" />
+        <var name="instruction" id="1622311552390278219" />
+        <var name="ruleNodeReference" id="1622311552390273368" />
+        <var name="source" id="1622311552390273364" />
+        <var name="width" id="1622311552390273360" />
+        <var name="x" id="1622311552390273356" />
+        <var name="y" id="1622311552390273358" />
+      </scope>
+      <scope id="1622311552390273493" at="18,0,22,0" />
+      <unit id="1622311552390273198" at="9,0,24,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcReturnBlock" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390279194">
+    <file name="InterProcAltBlock.java">
+      <node id="1622311552390279196" at="11,0,12,0" concept="3" trace="instruction" />
+      <node id="1622311552390279219" at="13,155,14,67" concept="11" />
+      <node id="1622311552390279227" at="14,67,15,35" concept="2" />
+      <node id="1622311552390279238" at="19,39,20,23" concept="7" />
+      <node id="1622311552390279200" at="13,0,17,0" concept="1" trace="InterProcAltBlock#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIIILorg/jetbrains/mps/openapi/model/SNodeReference;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1622311552390279234" at="18,0,22,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390279237" at="19,39,20,23" />
+      <scope id="1622311552390279218" at="13,155,15,35" />
+      <scope id="1622311552390279200" at="13,0,17,0">
+        <var name="caption" id="1622311552390279214" />
+        <var name="height" id="1622311552390279210" />
+        <var name="instruction" id="1622311552390279202" />
+        <var name="ruleNodeReference" id="1622311552390279216" />
+        <var name="source" id="1622311552390279212" />
+        <var name="width" id="1622311552390279208" />
+        <var name="x" id="1622311552390279204" />
+        <var name="y" id="1622311552390279206" />
+      </scope>
+      <scope id="1622311552390279234" at="18,0,22,0" />
+      <unit id="1622311552390279194" at="9,0,24,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcAltBlock" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390279406">
+    <file name="InterProcWriteBlock.java">
+      <node id="1622311552390279408" at="11,0,12,0" concept="3" trace="instruction" />
+      <node id="1622311552390279431" at="13,157,14,67" concept="11" />
+      <node id="1622311552390279439" at="14,67,15,35" concept="2" />
+      <node id="1622311552390279450" at="19,39,20,23" concept="7" />
+      <node id="1622311552390279412" at="13,0,17,0" concept="1" trace="InterProcWriteBlock#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIIILorg/jetbrains/mps/openapi/model/SNodeReference;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1622311552390279446" at="18,0,22,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390279449" at="19,39,20,23" />
+      <scope id="1622311552390279430" at="13,157,15,35" />
+      <scope id="1622311552390279412" at="13,0,17,0">
+        <var name="caption" id="1622311552390279426" />
+        <var name="height" id="1622311552390279422" />
+        <var name="instruction" id="1622311552390279414" />
+        <var name="ruleNodeReference" id="1622311552390279428" />
+        <var name="source" id="1622311552390279424" />
+        <var name="width" id="1622311552390279420" />
+        <var name="x" id="1622311552390279416" />
+        <var name="y" id="1622311552390279418" />
+      </scope>
+      <scope id="1622311552390279446" at="18,0,22,0" />
+      <unit id="1622311552390279406" at="9,0,24,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcWriteBlock" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390279618">
+    <file name="InterProcSimpleBlock.java">
+      <node id="1622311552390279620" at="11,0,12,0" concept="3" trace="instruction" />
+      <node id="1622311552390279643" at="13,158,14,67" concept="11" />
+      <node id="1622311552390279651" at="14,67,15,35" concept="2" />
+      <node id="1622311552390279662" at="19,39,20,23" concept="7" />
+      <node id="1622311552390279624" at="13,0,17,0" concept="1" trace="InterProcSimpleBlock#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIIILorg/jetbrains/mps/openapi/model/SNodeReference;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1622311552390279658" at="18,0,22,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390279661" at="19,39,20,23" />
+      <scope id="1622311552390279642" at="13,158,15,35" />
+      <scope id="1622311552390279624" at="13,0,17,0">
+        <var name="caption" id="1622311552390279638" />
+        <var name="height" id="1622311552390279634" />
+        <var name="instruction" id="1622311552390279626" />
+        <var name="ruleNodeReference" id="1622311552390279640" />
+        <var name="source" id="1622311552390279636" />
+        <var name="width" id="1622311552390279632" />
+        <var name="x" id="1622311552390279628" />
+        <var name="y" id="1622311552390279630" />
+      </scope>
+      <scope id="1622311552390279658" at="18,0,22,0" />
+      <unit id="1622311552390279618" at="9,0,24,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcSimpleBlock" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/1622311552390279830">
+    <file name="InterProcJumpBlock.java">
+      <node id="1622311552390279832" at="11,0,12,0" concept="3" trace="instruction" />
+      <node id="1622311552390279855" at="13,156,14,67" concept="11" />
+      <node id="1622311552390279863" at="14,67,15,35" concept="2" />
+      <node id="1622311552390279874" at="19,39,20,23" concept="7" />
+      <node id="1622311552390279836" at="13,0,17,0" concept="1" trace="InterProcJumpBlock#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIIILorg/jetbrains/mps/openapi/model/SNodeReference;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1622311552390279870" at="18,0,22,0" concept="5" trace="getInstruction#()Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;" />
+      <scope id="1622311552390279873" at="19,39,20,23" />
+      <scope id="1622311552390279854" at="13,156,15,35" />
+      <scope id="1622311552390279836" at="13,0,17,0">
+        <var name="caption" id="1622311552390279850" />
+        <var name="height" id="1622311552390279846" />
+        <var name="instruction" id="1622311552390279838" />
+        <var name="ruleNodeReference" id="1622311552390279852" />
+        <var name="source" id="1622311552390279848" />
+        <var name="width" id="1622311552390279844" />
+        <var name="x" id="1622311552390279840" />
+        <var name="y" id="1622311552390279842" />
+      </scope>
+      <scope id="1622311552390279870" at="18,0,22,0" />
+      <unit id="1622311552390279830" at="9,0,24,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcJumpBlock" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/2418254290403919669">
+    <file name="DashedLine.java">
+      <node id="8097431677976738424" at="23,0,24,0" concept="3" trace="source" />
+      <node id="8097431677977028466" at="24,0,25,0" concept="3" trace="target" />
+      <node id="2418254290403920532" at="26,120,27,43" concept="11" />
+      <node id="8097431677976740851" at="27,43,28,25" concept="2" />
+      <node id="8097431677977029579" at="28,25,29,25" concept="2" />
+      <node id="2418254290403924295" at="33,71,34,41" concept="6" />
+      <node id="2418254290404066631" at="34,41,35,44" concept="6" />
+      <node id="8097431677976999331" at="35,44,36,38" concept="6" />
+      <node id="8097431677977002776" at="36,38,37,0" concept="9" />
+      <node id="2418254290404181049" at="37,0,38,34" concept="2" />
+      <node id="2418254290403921828" at="38,34,39,124" concept="2" />
+      <node id="2418254290403926117" at="39,124,40,38" concept="2" />
+      <node id="8097431677976985430" at="41,48,42,59" concept="2" />
+      <node id="8097431677976848327" at="42,59,43,24" concept="6" />
+      <node id="8097431677976849504" at="44,100,45,72" concept="2" />
+      <node id="8097431677977046911" at="46,61,47,86" concept="2" />
+      <node id="8097431677976832033" at="48,7,49,63" concept="6" />
+      <node id="8097431677976832037" at="50,31,51,108" concept="2" />
+      <node id="8097431677976743415" at="52,7,53,85" concept="2" />
+      <node id="8097431677977003591" at="54,5,55,0" concept="9" />
+      <node id="2418254290404067872" at="55,0,56,34" concept="2" />
+      <node id="8097431677977005810" at="56,34,57,30" concept="2" />
+      <node id="2418254290404182297" at="57,30,58,35" concept="2" />
+      <node id="8097431677976921215" at="49,63,52,7" concept="4" />
+      <node id="2418254290403920516" at="26,0,31,0" concept="1" trace="DashedLine#(Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;Ljetbrains/mps/lang/dataFlow/framework/instructions/Instruction;IIILjetbrains/mps/ide/dataFlow/presentation/LineDirection;)V" />
+      <node id="8097431677976844513" at="43,24,48,7" concept="4" />
+      <node id="8097431677976770291" at="40,38,54,5" concept="4" />
+      <node id="2418254290403921282" at="32,0,60,0" concept="5" trace="drawLine#(Ljava/awt/Graphics;IIII)V" />
+      <scope id="8097431677976844515" at="44,100,45,72" />
+      <scope id="8097431677977039744" at="46,61,47,86" />
+      <scope id="8097431677976921217" at="50,31,51,108" />
+      <scope id="2418254290403920527" at="26,120,29,25" />
+      <scope id="2418254290403920516" at="26,0,31,0">
+        <var name="direction" id="2418254290403920524" />
+        <var name="first" id="2418254290403920518" />
+        <var name="level" id="2418254290403920522" />
+        <var name="second" id="2418254290403920520" />
+        <var name="source" id="8097431677976739550" />
+        <var name="target" id="8097431677977026290" />
+      </scope>
+      <scope id="8097431677976770293" at="41,48,53,85">
+        <var name="attribute" id="8097431677976832032" />
+        <var name="label" id="8097431677976848330" />
+      </scope>
+      <scope id="2418254290403921296" at="33,71,58,35">
+        <var name="graphics" id="2418254290403924296" />
+        <var name="oldFont" id="8097431677976999332" />
+        <var name="oldStroke" id="2418254290404066632" />
+      </scope>
+      <scope id="2418254290403921282" at="32,0,60,0">
+        <var name="g" id="2418254290403921285" />
+        <var name="x1" id="2418254290403921287" />
+        <var name="x2" id="2418254290403921291" />
+        <var name="y1" id="2418254290403921289" />
+        <var name="y2" id="2418254290403921293" />
+      </scope>
+      <unit id="2418254290403919669" at="21,0,61,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.DashedLine" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/4407222292976992344">
+    <file name="DataFlowGroup_ActionGroup.java">
+      <node id="4407222292976992344" at="10,0,11,0" concept="10" trace="ID" />
+      <node id="4407222292976992344" at="12,71,13,39" concept="11" />
+      <node id="4407222292976992344" at="13,39,14,25" concept="2" />
+      <node id="4407222292976992344" at="14,25,15,20" concept="2" />
+      <node id="4407222292976992344" at="15,20,16,29" concept="2" />
+      <node id="2090780709296800052" at="16,29,17,126" concept="2" />
+      <node id="5490353204955714564" at="17,126,18,135" concept="2" />
+      <node id="4407222292976992344" at="12,0,20,0" concept="1" trace="DataFlowGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="4407222292976992344" at="12,71,18,135" />
+      <scope id="4407222292976992344" at="12,0,20,0">
+        <var name="plugin" id="4407222292976992344" />
+      </scope>
+      <unit id="4407222292976992344" at="9,0,21,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.DataFlowGroup_ActionGroup" />
+    </file>
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="4407222292976992344" at="25,13,26,50" concept="2" />
+      <node id="5487985028841896570" at="28,37,29,130" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/5487985028841896573">
+    <file name="ShowInterProceduralDataFlowGraph_Action.java">
+      <node id="5487985028841896573" at="27,0,28,0" concept="10" trace="ICON" />
+      <node id="5487985028841896573" at="29,52,30,61" concept="11" />
+      <node id="5487985028841896573" at="30,61,31,35" concept="2" />
+      <node id="5487985028841896573" at="31,35,32,40" concept="2" />
+      <node id="5487985028841896573" at="32,40,33,29" concept="2" />
+      <node id="5487985028841896573" at="36,32,37,16" concept="7" />
+      <node id="5487985028841896573" at="41,53,42,19" concept="7" />
+      <node id="5487985028841896597" at="44,5,45,57" concept="6" />
+      <node id="5487985028841896600" at="46,25,47,21" concept="7" />
+      <node id="4197537290463472239" at="50,5,51,66" concept="6" />
+      <node id="4197537290463472240" at="52,22,53,21" concept="7" />
+      <node id="5487985028841896573" at="55,5,56,16" concept="7" />
+      <node id="5487985028841896576" at="59,96,60,110" concept="6" />
+      <node id="1410818700511161410" at="60,110,61,96" concept="6" />
+      <node id="173558540240734871" at="61,96,62,0" concept="9" />
+      <node id="2941214567227590991" at="63,87,64,66" concept="6" />
+      <node id="2941214567227599492" at="64,66,65,103" concept="2" />
+      <node id="2941214567227585589" at="65,103,66,89" concept="6" />
+      <node id="4898350103434098684" at="66,89,67,137" concept="2" />
+      <node id="2034046503361590356" at="67,137,68,123" concept="2" />
+      <node id="173558540240738373" at="68,123,69,34" concept="2" />
+      <node id="173558540240735298" at="70,7,71,0" concept="9" />
+      <node id="8780658227208107785" at="71,0,72,133" concept="2" />
+      <node id="5487985028841896573" at="76,0,77,0" concept="10" trace="InterProcedural_BuilderMode$qy" />
+      <node id="5487985028841896573" at="40,95,43,5" concept="4" />
+      <node id="5487985028841896600" at="45,57,48,7" concept="4" />
+      <node id="4197537290463472240" at="51,66,54,7" concept="4" />
+      <node id="5487985028841896573" at="35,0,39,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="5487985028841896573" at="29,0,35,0" concept="1" trace="ShowInterProceduralDataFlowGraph_Action#()V" />
+      <node id="5487985028841896597" at="43,5,49,5" concept="0" />
+      <node id="4197537290463472239" at="49,5,55,5" concept="0" />
+      <node id="2034046503361590341" at="62,0,70,7" concept="2" />
+      <node id="5487985028841896573" at="58,0,74,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="5487985028841896573" at="39,0,58,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="5487985028841896573" at="36,32,37,16" />
+      <scope id="5487985028841896573" at="41,53,42,19" />
+      <scope id="5487985028841896600" at="46,25,47,21" />
+      <scope id="4197537290463472240" at="52,22,53,21" />
+      <scope id="5487985028841896573" at="29,52,33,29" />
+      <scope id="5487985028841896573" at="35,0,39,0" />
+      <scope id="5487985028841896597" at="44,5,48,7">
+        <var name="node" id="5487985028841896597" />
+      </scope>
+      <scope id="4197537290463472239" at="50,5,54,7">
+        <var name="p" id="4197537290463472239" />
+      </scope>
+      <scope id="5487985028841896573" at="29,0,35,0" />
+      <scope id="2034046503361590346" at="63,87,69,34">
+        <var name="modes" id="2941214567227590997" />
+        <var name="programBuilderContext" id="2941214567227585590" />
+      </scope>
+      <scope id="5487985028841896573" at="59,96,72,133">
+        <var name="graph" id="1410818700511161411" />
+        <var name="program" id="5487985028841896577" />
+      </scope>
+      <scope id="5487985028841896573" at="40,95,56,16" />
+      <scope id="5487985028841896573" at="58,0,74,0">
+        <var name="_params" id="5487985028841896573" />
+        <var name="event" id="5487985028841896573" />
+      </scope>
+      <scope id="5487985028841896573" at="39,0,58,0">
+        <var name="_params" id="5487985028841896573" />
+        <var name="event" id="5487985028841896573" />
+      </scope>
+      <unit id="5487985028841896573" at="75,0,78,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowInterProceduralDataFlowGraph_Action$CONCEPTS" />
+      <unit id="5487985028841896573" at="26,0,79,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowInterProceduralDataFlowGraph_Action" />
+    </file>
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="5487985028841896573" at="23,70,24,61" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/5490353204955293491">
+    <file name="ShowAugmentedInterProceduralDataFlowGraph_Action.java">
+      <node id="5490353204955293491" at="46,0,47,0" concept="10" trace="ICON" />
+      <node id="5490353204955293491" at="48,61,49,71" concept="11" />
+      <node id="5490353204955293491" at="49,71,50,35" concept="2" />
+      <node id="5490353204955293491" at="50,35,51,40" concept="2" />
+      <node id="5490353204955293491" at="51,40,52,29" concept="2" />
+      <node id="5490353204955293491" at="55,32,56,16" concept="7" />
+      <node id="5490353204955293491" at="60,53,61,19" concept="7" />
+      <node id="5490353204955293574" at="63,5,64,57" concept="6" />
+      <node id="5490353204955293577" at="65,25,66,21" concept="7" />
+      <node id="5490353204955293578" at="69,5,70,66" concept="6" />
+      <node id="5490353204955293579" at="71,22,72,21" concept="7" />
+      <node id="5490353204955293491" at="74,5,75,16" concept="7" />
+      <node id="5490353204955804450" at="78,96,79,96" concept="6" />
+      <node id="4892155106924519882" at="79,96,80,125" concept="6" />
+      <node id="4892155106924568826" at="80,125,81,31" concept="2" />
+      <node id="4892155106924594899" at="81,31,82,140" concept="6" />
+      <node id="4892155106924580605" at="82,140,83,137" concept="6" />
+      <node id="4892155106924587633" at="83,137,84,110" concept="6" />
+      <node id="4892155106924709592" at="84,110,85,205" concept="2" />
+      <node id="5490353204955440712" at="85,205,86,193" concept="6" />
+      <node id="5490353204955624612" at="86,193,87,0" concept="9" />
+      <node id="5490353204955624551" at="91,29,92,0" concept="9" />
+      <node id="4892155106924778345" at="97,77,98,17" concept="7" />
+      <node id="4892155106924782670" at="99,9,100,115" concept="6" />
+      <node id="5490353204955293494" at="100,115,101,118" concept="6" />
+      <node id="5490353204955293497" at="101,118,102,104" concept="6" />
+      <node id="5490353204955783828" at="102,104,103,0" concept="9" />
+      <node id="5490353204955782656" at="104,91,105,117" concept="6" />
+      <node id="5490353204955881953" at="105,117,106,0" concept="9" />
+      <node id="5490353204955293511" at="107,33,108,72" concept="6" />
+      <node id="5490353204955293518" at="108,72,109,109" concept="2" />
+      <node id="5490353204955293527" at="109,109,110,95" concept="6" />
+      <node id="5490353204955293533" at="110,95,111,143" concept="2" />
+      <node id="5490353204955407349" at="111,143,112,0" concept="9" />
+      <node id="5490353204955895857" at="112,0,113,27" concept="8" />
+      <node id="5490353204955412347" at="113,27,114,93" concept="6" />
+      <node id="5490353204955413728" at="114,93,115,182" concept="2" />
+      <node id="5490353204955407729" at="115,182,116,0" concept="9" />
+      <node id="5490353204955293544" at="116,0,117,129" concept="2" />
+      <node id="5490353204955293558" at="117,129,118,40" concept="2" />
+      <node id="5490353204955747177" at="120,11,121,0" concept="9" />
+      <node id="5490353204955293564" at="122,34,123,149" concept="2" />
+      <node id="5490353204955293491" at="130,0,131,0" concept="10" trace="Analyzer$GL" />
+      <node id="5490353204955293491" at="131,0,132,0" concept="10" trace="InterProcedural_BuilderMode$qy" />
+      <node id="5490353204955293491" at="59,95,62,5" concept="4" />
+      <node id="5490353204955293577" at="64,57,67,7" concept="4" />
+      <node id="5490353204955293579" at="70,66,73,7" concept="4" />
+      <node id="4892155106924766479" at="96,51,99,9" concept="4" />
+      <node id="5490353204955902735" at="121,0,124,9" concept="4" />
+      <node id="5490353204955293491" at="54,0,58,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="5490353204955616004" at="90,0,94,0" concept="5" trace="onClose#()V" />
+      <node id="5490353204955293491" at="48,0,54,0" concept="1" trace="ShowAugmentedInterProceduralDataFlowGraph_Action#()V" />
+      <node id="5490353204955293574" at="62,5,68,5" concept="0" />
+      <node id="5490353204955293578" at="68,5,74,5" concept="0" />
+      <node id="5490353204955884778" at="106,0,119,11" concept="4" />
+      <node id="5490353204955293501" at="103,0,120,11" concept="2" />
+      <node id="5490353204955293491" at="58,0,77,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="5490353204955616016" at="95,0,126,0" concept="5" trace="elementChosen#(Ljava/lang/Object;)V" />
+      <node id="5490353204955615999" at="87,0,126,38" concept="2" />
+      <node id="5490353204955293491" at="77,0,128,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <scope id="5490353204955293491" at="55,32,56,16" />
+      <scope id="5490353204955293491" at="60,53,61,19" />
+      <scope id="5490353204955293577" at="65,25,66,21" />
+      <scope id="5490353204955293579" at="71,22,72,21" />
+      <scope id="5490353204955616006" at="91,29,92,0" />
+      <scope id="4892155106924766481" at="97,77,98,17" />
+      <scope id="5490353204955902737" at="122,34,123,149" />
+      <scope id="5490353204955293491" at="48,61,52,29" />
+      <scope id="5490353204955293491" at="54,0,58,0" />
+      <scope id="5490353204955293574" at="63,5,67,7">
+        <var name="node" id="5490353204955293574" />
+      </scope>
+      <scope id="5490353204955293578" at="69,5,73,7">
+        <var name="p" id="5490353204955293578" />
+      </scope>
+      <scope id="5490353204955616004" at="90,0,94,0" />
+      <scope id="5490353204955293491" at="48,0,54,0" />
+      <scope id="5490353204955884780" at="107,33,118,40">
+        <var name="factory" id="5490353204955412348" />
+        <var name="modes" id="5490353204955293512" />
+        <var name="programBuilderContext" id="5490353204955293528" />
+      </scope>
+      <scope id="5490353204955293510" at="104,91,119,11">
+        <var name="analyzer" id="5490353204955782659" />
+      </scope>
+      <scope id="5490353204955293491" at="59,95,75,16" />
+      <scope id="5490353204955293491" at="58,0,77,0">
+        <var name="_params" id="5490353204955293491" />
+        <var name="event" id="5490353204955293491" />
+      </scope>
+      <scope id="5490353204955616020" at="96,51,124,9">
+        <var name="graph" id="5490353204955293498" />
+        <var name="program" id="5490353204955293495" />
+        <var name="selected" id="4892155106924782668" />
+      </scope>
+      <scope id="5490353204955616016" at="95,0,126,0">
+        <var name="selection" id="5490353204955616018" />
+      </scope>
+      <scope id="5490353204955293491" at="78,96,126,38">
+        <var name="data" id="4892155106924519883" />
+        <var name="finder" id="5490353204955440711" />
+        <var name="globalScope" id="4892155106924587634" />
+        <var name="localScope" id="4892155106924580606" />
+        <var name="modelWithAnalyzer" id="4892155106924594900" />
+        <var name="repository" id="5490353204955804448" />
+      </scope>
+      <scope id="5490353204955293491" at="77,0,128,0">
+        <var name="_params" id="5490353204955293491" />
+        <var name="event" id="5490353204955293491" />
+      </scope>
+      <unit id="5490353204955293491" at="129,0,133,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowAugmentedInterProceduralDataFlowGraph_Action$CONCEPTS" />
+      <unit id="5490353204955616003" at="88,22,126,5" name="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowAugmentedInterProceduralDataFlowGraph_Action$1" />
+      <unit id="5490353204955293491" at="45,0,134,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.ShowAugmentedInterProceduralDataFlowGraph_Action" />
+    </file>
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="5490353204955293491" at="22,29,23,70" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/7162597690967657576">
+    <file name="Ui_ApplicationPlugin.java">
+      <node id="7162597690967657576" at="11,0,12,0" concept="3" trace="myId" />
+      <node id="7162597690967657576" at="17,27,18,16" concept="7" />
+      <node id="7162597690967657576" at="21,30,22,29" concept="8" />
+      <node id="7162597690967657576" at="24,61,25,13" concept="8" />
+      <node id="7162597690967657576" at="13,0,15,0" concept="1" trace="Ui_ApplicationPlugin#()V" />
+      <node id="7162597690967657576" at="28,0,31,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="7162597690967657576" at="16,0,20,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="7162597690967657576" at="21,0,28,0" concept="5" trace="createGroups#()V" />
+      <scope id="7162597690967657576" at="13,33,13,33" />
+      <scope id="7162597690967657576" at="17,27,18,16" />
+      <scope id="7162597690967657576" at="28,37,29,130" />
+      <scope id="7162597690967657576" at="13,0,15,0" />
+      <scope id="7162597690967657576" at="28,0,31,0" />
+      <scope id="7162597690967657576" at="16,0,20,0" />
+      <scope id="7162597690967657576" at="21,30,26,50" />
+      <scope id="7162597690967657576" at="21,0,28,0" />
+      <unit id="7162597690967657576" at="10,0,32,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.Ui_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:9689db4c-f3e1-4db0-9144-e28e658d14c2(com.mbeddr.mpsutil.dataflow.ui.plugin)/8780658227208031765">
+    <file name="InterProcShowCFGDialog.java">
+      <node id="8780658227208090508" at="14,138,15,33" concept="11" />
+      <node id="8780658227208104904" at="19,32,20,23" concept="7" />
+      <node id="4282822416100099537" at="14,0,17,0" concept="1" trace="InterProcShowCFGDialog#(Ljetbrains/mps/ide/dataFlow/presentation/ControlFlowGraph;Ljetbrains/mps/project/MPSProject;Ljava/lang/String;)V" />
+      <node id="8780658227208104486" at="18,0,22,0" concept="5" trace="getBackground#()Ljava/awt/Color;" />
+      <scope id="8780658227208090079" at="14,138,15,33" />
+      <scope id="8780658227208104490" at="19,32,20,23" />
+      <scope id="4282822416100099537" at="14,0,17,0">
+        <var name="graph" id="4282822416100099539" />
+        <var name="project" id="4282822416100099543" />
+        <var name="title" id="5130572135177357897" />
+      </scope>
+      <scope id="8780658227208104486" at="18,0,22,0" />
+      <unit id="8780658227208031765" at="12,0,23,0" name="com.mbeddr.mpsutil.dataflow.ui.plugin.InterProcShowCFGDialog" />
+    </file>
+  </root>
+</debug-info>
+

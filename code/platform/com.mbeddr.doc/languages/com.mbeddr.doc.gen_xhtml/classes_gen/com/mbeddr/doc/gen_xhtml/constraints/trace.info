@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.doc.gen_xhtml.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:018883b3-a025-4541-bf87-9347bd073b49(com.mbeddr.doc.gen_xhtml.constraints)/5049963863857445828">
+    <file name="XHTMLFile_Constraints.java">
+      <node id="5049963863857445828" at="20,83,21,46" concept="9" />
+      <node id="5049963863857445828" at="24,126,25,62" concept="4" />
+      <node id="5049963863857445828" at="25,62,26,0" concept="6" />
+      <node id="5049963863857445828" at="27,55,28,70" concept="1" />
+      <node id="5049963863857445828" at="29,9,30,0" concept="6" />
+      <node id="5049963863857445828" at="30,0,31,22" concept="5" />
+      <node id="5049963863857365067" at="36,57,37,106" concept="5" />
+      <node id="5049963863857445828" at="39,0,40,0" concept="7" trace="canBeRootBreakingPoint" />
+      <node id="5049963863857445828" at="42,0,43,0" concept="7" trace="XHTMLFile$D0" />
+      <node id="5049963863857445828" at="26,0,29,9" concept="2" />
+      <node id="5049963863857445828" at="36,0,39,0" concept="8" trace="staticCanBeARoot#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="5049963863857445828" at="23,0,33,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeRoot;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="5049963863857445828" at="21,46,33,7" concept="1" />
+      <node id="5049963863857445828" at="20,0,35,0" concept="0" trace="XHTMLFile_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="5049963863857445828" at="27,55,28,70" />
+      <scope id="5049963863857445830" at="36,57,37,106" />
+      <scope id="5049963863857445828" at="36,0,39,0">
+        <var name="model" id="5049963863857445828" />
+      </scope>
+      <scope id="5049963863857445828" at="24,126,31,22">
+        <var name="result" id="5049963863857445828" />
+      </scope>
+      <scope id="5049963863857445828" at="23,0,33,0">
+        <var name="checkingNodeContext" id="5049963863857445828" />
+        <var name="context" id="5049963863857445828" />
+      </scope>
+      <scope id="5049963863857445828" at="20,83,33,7" />
+      <scope id="5049963863857445828" at="20,0,35,0">
+        <var name="initContext" id="5049963863857445828" />
+      </scope>
+      <unit id="5049963863857445828" at="41,0,44,0" name="com.mbeddr.doc.gen_xhtml.constraints.XHTMLFile_Constraints$CONCEPTS" />
+      <unit id="5049963863857445828" at="22,21,33,5" name="com.mbeddr.doc.gen_xhtml.constraints.XHTMLFile_Constraints$1" />
+      <unit id="5049963863857445828" at="19,0,45,0" name="com.mbeddr.doc.gen_xhtml.constraints.XHTMLFile_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

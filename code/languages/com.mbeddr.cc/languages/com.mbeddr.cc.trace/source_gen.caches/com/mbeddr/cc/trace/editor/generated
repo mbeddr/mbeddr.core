@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="1ngh73p4lhvnzc3yi3wznac7ifvh0hv">
+  <files names="EditorAspectDescriptorImpl.java:TraceAnnotation_Editor.java:TraceAnnotation_EditorBuilder_a.java:TraceAnnotation_detailedTraces_Editor.java:TraceAnnotation_detailedTraces_EditorBuilder_a.java:TraceAnnotation_shortTraces_Editor.java:TraceAnnotation_shortTraces_EditorBuilder_a.java:TraceAnnotation_shortTraces_InspectorBuilder_a.java:TraceAnnotation_tooltipHint_uraie_b0_Editor.java:TraceAnnotation_tooltipHint_uraie_b0_EditorBuilder_a.java:TraceKind_Editor.java:TraceKind_EditorBuilder_a.java:TraceTargetProviderRef_Editor.java:TraceTargetProviderRef_EditorBuilder_a.java:TraceTargetProviderRef_SubstituteMenu.java:TraceWord_Editor.java:TraceWord_EditorBuilder_a.java:TracingConfigItem_Editor.java:TracingConfigItem_EditorBuilder_a.java:deleteTrace.java:requirementStyles_StyleSheet.java" />
+</product>
+

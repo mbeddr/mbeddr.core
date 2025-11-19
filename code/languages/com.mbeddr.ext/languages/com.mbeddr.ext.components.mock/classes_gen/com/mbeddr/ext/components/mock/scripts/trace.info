@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ScriptsDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.ext.components.mock.scripts.ScriptsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3537533e-a8e3-4de2-868f-7e01bf731d68(com.mbeddr.ext.components.mock.scripts)/6041318036222174978">
+    <file name="ScriptsDescriptor.java">
+      <node id="6041318036222174978" at="15,52,16,65" concept="1" />
+    </file>
+    <file name="migrateMocks_MigrationScript.java">
+      <node id="6041318036222174978" at="20,41,21,27" concept="6" />
+      <node id="6041318036222174979" at="24,31,25,36" concept="4" />
+      <node id="6041318036222174979" at="28,41,29,36" concept="4" />
+      <node id="6041318036222174979" at="32,54,33,39" concept="4" />
+      <node id="6041318036222174979" at="36,59,37,20" concept="4" />
+      <node id="6041318036222175015" at="40,52,41,100" concept="3" />
+      <node id="6041318036222175025" at="41,100,42,103" concept="1" />
+      <node id="6041318036222174979" at="45,42,46,21" concept="4" />
+      <node id="6041318036222174978" at="53,41,54,165" concept="4" />
+      <node id="6041318036222174978" at="58,0,59,0" concept="5" trace="Expectation$50" />
+      <node id="6041318036222174978" at="59,0,60,0" concept="5" trace="MockComponent$E0" />
+      <node id="6041318036222174978" at="63,0,64,0" concept="5" trace="contents$Hh35" />
+      <node id="6041318036222174979" at="23,0,27,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="6041318036222174979" at="27,0,31,0" concept="2" trace="getAdditionalInfo#()Ljava/lang/String;" />
+      <node id="6041318036222174979" at="31,0,35,0" concept="2" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6041318036222174979" at="35,0,39,0" concept="2" trace="isApplicableInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="6041318036222174979" at="44,0,48,0" concept="2" trace="isShowAsIntention#()Z" />
+      <node id="6041318036222174979" at="39,0,44,0" concept="2" trace="doUpdateInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6041318036222174978" at="51,0,56,0" concept="2" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="6041318036222174979" at="21,27,48,7" concept="1" />
+      <node id="6041318036222174978" at="20,0,50,0" concept="0" trace="migrateMocks_MigrationScript#()V" />
+      <scope id="6041318036222174979" at="24,31,25,36" />
+      <scope id="6041318036222174979" at="28,41,29,36" />
+      <scope id="6041318036222174979" at="32,54,33,39" />
+      <scope id="6041318036222174979" at="36,59,37,20" />
+      <scope id="6041318036222174979" at="45,42,46,21" />
+      <scope id="6041318036222174978" at="53,41,54,165" />
+      <scope id="6041318036222174981" at="40,52,42,103">
+        <var name="mock" id="6041318036222175016" />
+      </scope>
+      <scope id="6041318036222174979" at="23,0,27,0" />
+      <scope id="6041318036222174979" at="27,0,31,0" />
+      <scope id="6041318036222174979" at="31,0,35,0" />
+      <scope id="6041318036222174979" at="35,0,39,0">
+        <var name="node" id="6041318036222174979" />
+      </scope>
+      <scope id="6041318036222174979" at="44,0,48,0" />
+      <scope id="6041318036222174979" at="39,0,44,0">
+        <var name="node" id="6041318036222174979" />
+      </scope>
+      <scope id="6041318036222174978" at="51,0,56,0" />
+      <scope id="6041318036222174978" at="20,41,48,7" />
+      <scope id="6041318036222174978" at="20,0,50,0" />
+      <unit id="6041318036222174978" at="62,0,65,0" name="com.mbeddr.ext.components.mock.scripts.migrateMocks_MigrationScript$LINKS" />
+      <unit id="6041318036222174978" at="57,0,61,0" name="com.mbeddr.ext.components.mock.scripts.migrateMocks_MigrationScript$CONCEPTS" />
+      <unit id="6041318036222174979" at="22,28,48,5" name="com.mbeddr.ext.components.mock.scripts.migrateMocks_MigrationScript$1" />
+      <unit id="6041318036222174978" at="19,0,66,0" name="com.mbeddr.ext.components.mock.scripts.migrateMocks_MigrationScript" />
+    </file>
+  </root>
+</debug-info>
+

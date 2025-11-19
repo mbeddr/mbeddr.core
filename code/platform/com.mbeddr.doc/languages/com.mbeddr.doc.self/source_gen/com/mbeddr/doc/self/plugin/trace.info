@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:c799c7d7-91c4-46e4-aabf-037159e8fc3a(com.mbeddr.doc.self.plugin)/6867966982824956355">
+    <file name="GenerationHelper.java">
+      <node id="9031197348460548169" at="13,70,14,62" concept="1" />
+      <node id="9031197348460561060" at="14,62,15,55" concept="1" />
+      <node id="9031197348460587340" at="16,21,17,18" concept="2" />
+      <node id="9031197348460568631" at="19,37,20,56" concept="2" />
+      <node id="9031197348460568635" at="21,5,22,69" concept="1" />
+      <node id="9031197348460568639" at="22,69,23,58" concept="2" />
+      <node id="9031197348460566821" at="23,58,24,0" concept="3" />
+      <node id="3061531988676478744" at="27,56,28,76" concept="1" />
+      <node id="3061531988676478751" at="28,76,29,52" concept="1" />
+      <node id="3061531988676478757" at="29,52,30,70" concept="1" />
+      <node id="3061531988676479460" at="30,70,31,22" concept="2" />
+      <node id="9031197348460578847" at="15,55,18,5" concept="0" />
+      <node id="9031197348460568625" at="18,5,21,5" concept="0" />
+      <node id="3061531988676478106" at="27,0,33,0" concept="4" trace="getDocGenFolder#(Ljetbrains/mps/project/AbstractModule;)Ljava/io/File;" />
+      <node id="9031197348460541257" at="13,0,26,0" concept="4" trace="getGeneratorOutputPath#(Ljetbrains/mps/project/AbstractModule;)Ljava/lang/String;" />
+      <scope id="9031197348460578849" at="16,21,17,18" />
+      <scope id="9031197348460568630" at="19,37,20,56" />
+      <scope id="3061531988676478109" at="27,56,31,22">
+        <var name="docGenRoot" id="3061531988676478758" />
+        <var name="generatorOutputPath" id="3061531988676478745" />
+        <var name="outputRoot" id="3061531988676478752" />
+      </scope>
+      <scope id="3061531988676478106" at="27,0,33,0">
+        <var name="m" id="3061531988676478671" />
+      </scope>
+      <scope id="9031197348460541260" at="13,70,24,0">
+        <var name="macroHelper" id="9031197348460548170" />
+        <var name="md" id="9031197348460561061" />
+        <var name="p" id="9031197348460568634" />
+      </scope>
+      <scope id="9031197348460541257" at="13,0,26,0">
+        <var name="module" id="9031197348460545116" />
+      </scope>
+      <unit id="6867966982824956355" at="12,0,35,0" name="com.mbeddr.doc.self.plugin.GenerationHelper" />
+    </file>
+  </root>
+</debug-info>
+

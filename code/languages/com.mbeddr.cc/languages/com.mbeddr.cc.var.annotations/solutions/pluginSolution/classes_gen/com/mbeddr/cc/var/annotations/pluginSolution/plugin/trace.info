@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/3969129843280035678">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="3969129843280035678" at="30,13,31,45" concept="2" />
+      <node id="3969129843280035681" at="34,37,35,188" concept="2" />
+    </file>
+    <file name="VarGroup_ActionGroup.java">
+      <node id="3969129843280035678" at="10,0,11,0" concept="10" trace="ID" />
+      <node id="3969129843280035678" at="12,66,13,34" concept="11" />
+      <node id="3969129843280035678" at="13,34,14,25" concept="2" />
+      <node id="3969129843280035678" at="14,25,15,20" concept="2" />
+      <node id="3969129843280035678" at="15,20,16,29" concept="2" />
+      <node id="9103993088055855723" at="16,29,17,119" concept="2" />
+      <node id="9103993088055855730" at="17,119,18,120" concept="2" />
+      <node id="9103993088055855744" at="18,120,19,120" concept="2" />
+      <node id="9103993088055855755" at="19,120,20,121" concept="2" />
+      <node id="9103993088055855768" at="20,121,21,119" concept="2" />
+      <node id="9103993088055855783" at="21,119,22,121" concept="2" />
+      <node id="295213795666452527" at="22,121,23,45" concept="2" />
+      <node id="3969129843280035678" at="12,0,25,0" concept="1" trace="VarGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="3969129843280035678" at="12,66,23,45" />
+      <scope id="3969129843280035678" at="12,0,25,0">
+        <var name="plugin" id="3969129843280035678" />
+      </scope>
+      <unit id="3969129843280035678" at="9,0,26,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.VarGroup_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/7518061998923367007">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="7518061998923367007" at="11,0,12,0" concept="3" trace="myId" />
+      <node id="7518061998923367007" at="17,27,18,16" concept="7" />
+      <node id="7518061998923367007" at="21,30,22,29" concept="8" />
+      <node id="7518061998923367007" at="29,43,30,13" concept="8" />
+      <node id="7518061998923367007" at="13,0,15,0" concept="1" trace="PluginSolution_ApplicationPlugin#()V" />
+      <node id="7518061998923367007" at="16,0,20,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="7518061998923367007" at="34,0,38,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="7518061998923367007" at="21,0,34,0" concept="5" trace="createGroups#()V" />
+      <scope id="7518061998923367007" at="13,45,13,45" />
+      <scope id="7518061998923367007" at="17,27,18,16" />
+      <scope id="7518061998923367007" at="13,0,15,0" />
+      <scope id="7518061998923367007" at="34,37,36,135" />
+      <scope id="7518061998923367007" at="16,0,20,0" />
+      <scope id="7518061998923367007" at="34,0,38,0" />
+      <scope id="7518061998923367007" at="21,30,32,56" />
+      <scope id="7518061998923367007" at="21,0,34,0" />
+      <unit id="7518061998923367007" at="10,0,39,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.PluginSolution_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/7518061998923645757">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="7518061998923645757" at="28,47,29,43" concept="2" />
+      <node id="7518061998923645757" at="31,45,32,56" concept="2" />
+      <node id="7518061998923645757" at="35,188,36,135" concept="2" />
+    </file>
+    <file name="pullUpPCActionGroup_ActionGroup.java">
+      <node id="7518061998923645757" at="10,0,11,0" concept="10" trace="ID" />
+      <node id="7518061998923645757" at="12,77,13,45" concept="11" />
+      <node id="7518061998923645757" at="13,45,14,25" concept="2" />
+      <node id="7518061998923645757" at="14,25,15,20" concept="2" />
+      <node id="7518061998923645757" at="15,20,16,29" concept="2" />
+      <node id="7518061998923645757" at="16,29,17,128" concept="2" />
+      <node id="7518061998923645757" at="12,0,19,0" concept="1" trace="pullUpPCActionGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="7518061998923645757" at="12,77,17,128" />
+      <scope id="7518061998923645757" at="12,0,19,0">
+        <var name="plugin" id="7518061998923645757" />
+      </scope>
+      <unit id="7518061998923645757" at="9,0,20,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pullUpPCActionGroup_ActionGroup" />
+    </file>
+    <file name="pullUpPCAction_Action.java">
+      <node id="7518061998923645757" at="24,0,25,0" concept="10" trace="ICON" />
+      <node id="7518061998923645757" at="26,34,27,50" concept="11" />
+      <node id="7518061998923645757" at="27,50,28,35" concept="2" />
+      <node id="7518061998923645757" at="28,35,29,40" concept="2" />
+      <node id="7518061998923645757" at="29,40,30,29" concept="2" />
+      <node id="7518061998923645757" at="33,32,34,16" concept="7" />
+      <node id="7518061998923645757" at="37,87,38,194" concept="7" />
+      <node id="7518061998923645757" at="41,89,42,85" concept="2" />
+      <node id="7518061998923645757" at="46,53,47,19" concept="7" />
+      <node id="7518061998923645757" at="49,5,50,57" concept="6" />
+      <node id="7518061998923645757" at="51,91,52,20" concept="2" />
+      <node id="7518061998923645757" at="54,25,55,21" concept="7" />
+      <node id="7518061998923645757" at="58,5,59,66" concept="6" />
+      <node id="7518061998923645757" at="60,22,61,21" concept="7" />
+      <node id="7518061998923645757" at="63,5,64,16" concept="7" />
+      <node id="7518061998923645757" at="67,96,68,0" concept="9" />
+      <node id="7518061998923645757" at="70,25,71,340" concept="2" />
+      <node id="7518061998923645757" at="76,5,77,50" concept="6" />
+      <node id="7518061998923645757" at="77,50,78,86" concept="2" />
+      <node id="7518061998923645757" at="78,86,79,20" concept="7" />
+      <node id="7518061998923645757" at="84,0,85,0" concept="10" trace="BaseConcept$gP" />
+      <node id="7518061998923645757" at="45,95,48,5" concept="4" />
+      <node id="7518061998923645757" at="50,57,53,7" concept="4" />
+      <node id="7518061998923645757" at="53,7,56,7" concept="4" />
+      <node id="7518061998923645757" at="59,66,62,7" concept="4" />
+      <node id="7518061998923645757" at="70,0,73,0" concept="5" trace="run#()V" />
+      <node id="7518061998923645757" at="32,0,36,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="7518061998923645757" at="36,0,40,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="7518061998923645757" at="40,0,44,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="7518061998923645757" at="68,0,73,7" concept="2" />
+      <node id="7518061998923645757" at="75,65,80,5" concept="0" />
+      <node id="7518061998923645757" at="26,0,32,0" concept="1" trace="pullUpPCAction_Action#()V" />
+      <node id="7518061998923645757" at="57,5,63,5" concept="0" />
+      <node id="7518061998923645757" at="75,0,82,0" concept="5" trace="getInputAsList#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Ljava/util/List;" />
+      <node id="7518061998923645757" at="48,5,57,5" concept="0" />
+      <node id="7518061998923645757" at="66,0,75,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="7518061998923645757" at="44,0,66,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="7518061998923645757" at="33,32,34,16" />
+      <scope id="7518061998923645757" at="37,87,38,194" />
+      <scope id="7518061998923645757" at="41,89,42,85" />
+      <scope id="7518061998923645757" at="46,53,47,19" />
+      <scope id="7518061998923645757" at="51,91,52,20" />
+      <scope id="7518061998923645757" at="54,25,55,21" />
+      <scope id="7518061998923645757" at="60,22,61,21" />
+      <scope id="7518061998923645757" at="70,25,71,340" />
+      <scope id="7518061998923645757" at="70,0,73,0" />
+      <scope id="7518061998923645757" at="76,5,79,20">
+        <var name="result" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="26,34,30,29" />
+      <scope id="7518061998923645757" at="32,0,36,0" />
+      <scope id="7518061998923645757" at="36,0,40,0">
+        <var name="_params" id="7518061998923645757" />
+        <var name="event" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="40,0,44,0">
+        <var name="_params" id="7518061998923645757" />
+        <var name="event" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="58,5,62,7">
+        <var name="p" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="75,65,80,5" />
+      <scope id="7518061998923645757" at="26,0,32,0" />
+      <scope id="7518061998923645757" at="67,96,73,7" />
+      <scope id="7518061998923645757" at="49,5,56,7">
+        <var name="node" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="75,0,82,0">
+        <var name="event" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="66,0,75,0">
+        <var name="_params" id="7518061998923645757" />
+        <var name="event" id="7518061998923645757" />
+      </scope>
+      <scope id="7518061998923645757" at="45,95,64,16" />
+      <scope id="7518061998923645757" at="44,0,66,0">
+        <var name="_params" id="7518061998923645757" />
+        <var name="event" id="7518061998923645757" />
+      </scope>
+      <unit id="7518061998923645757" at="83,0,86,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pullUpPCAction_Action$CONCEPTS" />
+      <unit id="7518061998923645757" at="69,99,73,5" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pullUpPCAction_Action$1" />
+      <unit id="7518061998923645757" at="23,0,87,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pullUpPCAction_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/9051044440122583886">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="9051044440122583886" at="24,46,25,46" concept="2" />
+    </file>
+    <file name="pleDetailedActive_Action.java">
+      <node id="9051044440122583886" at="15,0,16,0" concept="10" trace="ICON" />
+      <node id="9051044440122583886" at="17,37,18,45" concept="11" />
+      <node id="9051044440122583886" at="18,45,19,35" concept="2" />
+      <node id="9051044440122583886" at="19,35,20,44" concept="2" />
+      <node id="9051044440122583886" at="20,44,21,29" concept="2" />
+      <node id="9051044440122583886" at="24,32,25,16" concept="7" />
+      <node id="9103993088055829493" at="28,87,29,70" concept="7" />
+      <node id="9051044440122583886" at="32,89,33,85" concept="2" />
+      <node id="9051044440122583886" at="35,0,38,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9051044440122583886" at="23,0,27,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="9051044440122583886" at="27,0,31,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="9051044440122583886" at="31,0,35,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9051044440122583886" at="17,0,23,0" concept="1" trace="pleDetailedActive_Action#()V" />
+      <scope id="9051044440122583886" at="36,96,36,96" />
+      <scope id="9051044440122583886" at="24,32,25,16" />
+      <scope id="9051044440122583909" at="28,87,29,70" />
+      <scope id="9051044440122583886" at="32,89,33,85" />
+      <scope id="9051044440122583886" at="35,0,38,0">
+        <var name="_params" id="9051044440122583886" />
+        <var name="event" id="9051044440122583886" />
+      </scope>
+      <scope id="9051044440122583886" at="17,37,21,29" />
+      <scope id="9051044440122583886" at="23,0,27,0" />
+      <scope id="9051044440122583886" at="27,0,31,0">
+        <var name="_params" id="9051044440122583886" />
+        <var name="event" id="9051044440122583886" />
+      </scope>
+      <scope id="9051044440122583886" at="31,0,35,0">
+        <var name="_params" id="9051044440122583886" />
+        <var name="event" id="9051044440122583886" />
+      </scope>
+      <scope id="9051044440122583886" at="17,0,23,0" />
+      <unit id="9051044440122583886" at="14,0,39,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleDetailedActive_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/9103993088055845437">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="9103993088055845437" at="22,29,23,45" concept="2" />
+    </file>
+    <file name="pleConciseActive_Action.java">
+      <node id="9103993088055845437" at="15,0,16,0" concept="10" trace="ICON" />
+      <node id="9103993088055845437" at="17,36,18,44" concept="11" />
+      <node id="9103993088055845437" at="18,44,19,35" concept="2" />
+      <node id="9103993088055845437" at="19,35,20,44" concept="2" />
+      <node id="9103993088055845437" at="20,44,21,29" concept="2" />
+      <node id="9103993088055845437" at="24,32,25,16" concept="7" />
+      <node id="9103993088055845458" at="28,87,29,69" concept="7" />
+      <node id="9103993088055845437" at="32,89,33,85" concept="2" />
+      <node id="9103993088055845437" at="35,0,38,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055845437" at="23,0,27,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="9103993088055845437" at="27,0,31,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="9103993088055845437" at="31,0,35,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055845437" at="17,0,23,0" concept="1" trace="pleConciseActive_Action#()V" />
+      <scope id="9103993088055845437" at="36,96,36,96" />
+      <scope id="9103993088055845437" at="24,32,25,16" />
+      <scope id="9103993088055845457" at="28,87,29,69" />
+      <scope id="9103993088055845437" at="32,89,33,85" />
+      <scope id="9103993088055845437" at="35,0,38,0">
+        <var name="_params" id="9103993088055845437" />
+        <var name="event" id="9103993088055845437" />
+      </scope>
+      <scope id="9103993088055845437" at="17,36,21,29" />
+      <scope id="9103993088055845437" at="23,0,27,0" />
+      <scope id="9103993088055845437" at="27,0,31,0">
+        <var name="_params" id="9103993088055845437" />
+        <var name="event" id="9103993088055845437" />
+      </scope>
+      <scope id="9103993088055845437" at="31,0,35,0">
+        <var name="_params" id="9103993088055845437" />
+        <var name="event" id="9103993088055845437" />
+      </scope>
+      <scope id="9103993088055845437" at="17,0,23,0" />
+      <unit id="9103993088055845437" at="14,0,39,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleConciseActive_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/9103993088055847296">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="9103993088055847296" at="26,47,27,45" concept="2" />
+    </file>
+    <file name="pleVariantActive_Action.java">
+      <node id="9103993088055847296" at="15,0,16,0" concept="10" trace="ICON" />
+      <node id="9103993088055847296" at="17,36,18,40" concept="11" />
+      <node id="9103993088055847296" at="18,40,19,35" concept="2" />
+      <node id="9103993088055847296" at="19,35,20,44" concept="2" />
+      <node id="9103993088055847296" at="20,44,21,29" concept="2" />
+      <node id="9103993088055847296" at="24,32,25,16" concept="7" />
+      <node id="9103993088055847317" at="28,87,29,69" concept="7" />
+      <node id="9103993088055847296" at="32,89,33,85" concept="2" />
+      <node id="9103993088055847296" at="35,0,38,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055847296" at="23,0,27,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="9103993088055847296" at="27,0,31,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="9103993088055847296" at="31,0,35,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055847296" at="17,0,23,0" concept="1" trace="pleVariantActive_Action#()V" />
+      <scope id="9103993088055847296" at="36,96,36,96" />
+      <scope id="9103993088055847296" at="24,32,25,16" />
+      <scope id="9103993088055847316" at="28,87,29,69" />
+      <scope id="9103993088055847296" at="32,89,33,85" />
+      <scope id="9103993088055847296" at="35,0,38,0">
+        <var name="_params" id="9103993088055847296" />
+        <var name="event" id="9103993088055847296" />
+      </scope>
+      <scope id="9103993088055847296" at="17,36,21,29" />
+      <scope id="9103993088055847296" at="23,0,27,0" />
+      <scope id="9103993088055847296" at="27,0,31,0">
+        <var name="_params" id="9103993088055847296" />
+        <var name="event" id="9103993088055847296" />
+      </scope>
+      <scope id="9103993088055847296" at="31,0,35,0">
+        <var name="_params" id="9103993088055847296" />
+        <var name="event" id="9103993088055847296" />
+      </scope>
+      <scope id="9103993088055847296" at="17,0,23,0" />
+      <unit id="9103993088055847296" at="14,0,39,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleVariantActive_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/9103993088055849214">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="9103993088055849214" at="23,45,24,46" concept="2" />
+    </file>
+    <file name="pleConciseInctive_Action.java">
+      <node id="9103993088055849214" at="16,0,17,0" concept="10" trace="ICON" />
+      <node id="9103993088055849214" at="18,37,19,44" concept="11" />
+      <node id="9103993088055849214" at="19,44,20,35" concept="2" />
+      <node id="9103993088055849214" at="20,35,21,57" concept="2" />
+      <node id="9103993088055849214" at="24,32,25,16" concept="7" />
+      <node id="9103993088055849235" at="28,87,29,69" concept="7" />
+      <node id="9103993088055849214" at="32,89,33,85" concept="2" />
+      <node id="9103993088055849214" at="37,53,38,19" concept="7" />
+      <node id="9103993088055849217" at="40,5,41,72" concept="6" />
+      <node id="9103993088055849218" at="42,22,43,21" concept="7" />
+      <node id="9103993088055849214" at="45,5,46,16" concept="7" />
+      <node id="9103993088055851443" at="49,96,50,61" concept="2" />
+      <node id="9103993088055849225" at="50,61,51,82" concept="2" />
+      <node id="9103993088055849214" at="36,95,39,5" concept="4" />
+      <node id="9103993088055849218" at="41,72,44,7" concept="4" />
+      <node id="9103993088055849214" at="23,0,27,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="9103993088055849214" at="27,0,31,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="9103993088055849214" at="31,0,35,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055849214" at="18,0,23,0" concept="1" trace="pleConciseInctive_Action#()V" />
+      <node id="9103993088055849214" at="48,0,53,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055849217" at="39,5,45,5" concept="0" />
+      <node id="9103993088055849214" at="35,0,48,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="9103993088055849214" at="24,32,25,16" />
+      <scope id="9103993088055849234" at="28,87,29,69" />
+      <scope id="9103993088055849214" at="32,89,33,85" />
+      <scope id="9103993088055849214" at="37,53,38,19" />
+      <scope id="9103993088055849218" at="42,22,43,21" />
+      <scope id="9103993088055849214" at="49,96,51,82" />
+      <scope id="9103993088055849214" at="18,37,21,57" />
+      <scope id="9103993088055849214" at="23,0,27,0" />
+      <scope id="9103993088055849214" at="27,0,31,0">
+        <var name="_params" id="9103993088055849214" />
+        <var name="event" id="9103993088055849214" />
+      </scope>
+      <scope id="9103993088055849214" at="31,0,35,0">
+        <var name="_params" id="9103993088055849214" />
+        <var name="event" id="9103993088055849214" />
+      </scope>
+      <scope id="9103993088055849217" at="40,5,44,7">
+        <var name="p" id="9103993088055849217" />
+      </scope>
+      <scope id="9103993088055849214" at="18,0,23,0" />
+      <scope id="9103993088055849214" at="48,0,53,0">
+        <var name="_params" id="9103993088055849214" />
+        <var name="event" id="9103993088055849214" />
+      </scope>
+      <scope id="9103993088055849214" at="36,95,46,16" />
+      <scope id="9103993088055849214" at="35,0,48,0">
+        <var name="_params" id="9103993088055849214" />
+        <var name="event" id="9103993088055849214" />
+      </scope>
+      <unit id="9103993088055849214" at="15,0,54,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleConciseInctive_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/9103993088055851889">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="9103993088055851889" at="25,46,26,47" concept="2" />
+    </file>
+    <file name="pleDetailedInctive_Action.java">
+      <node id="9103993088055851889" at="16,0,17,0" concept="10" trace="ICON" />
+      <node id="9103993088055851889" at="18,38,19,45" concept="11" />
+      <node id="9103993088055851889" at="19,45,20,35" concept="2" />
+      <node id="9103993088055851889" at="20,35,21,57" concept="2" />
+      <node id="9103993088055851889" at="24,32,25,16" concept="7" />
+      <node id="9103993088055851913" at="28,87,29,70" concept="7" />
+      <node id="9103993088055851889" at="32,89,33,85" concept="2" />
+      <node id="9103993088055851889" at="37,53,38,19" concept="7" />
+      <node id="9103993088055851892" at="40,5,41,72" concept="6" />
+      <node id="9103993088055851893" at="42,22,43,21" concept="7" />
+      <node id="9103993088055851889" at="45,5,46,16" concept="7" />
+      <node id="9103993088055851900" at="49,96,50,62" concept="2" />
+      <node id="9103993088055851903" at="50,62,51,82" concept="2" />
+      <node id="9103993088055851889" at="36,95,39,5" concept="4" />
+      <node id="9103993088055851893" at="41,72,44,7" concept="4" />
+      <node id="9103993088055851889" at="23,0,27,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="9103993088055851889" at="27,0,31,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="9103993088055851889" at="31,0,35,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055851889" at="18,0,23,0" concept="1" trace="pleDetailedInctive_Action#()V" />
+      <node id="9103993088055851889" at="48,0,53,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055851892" at="39,5,45,5" concept="0" />
+      <node id="9103993088055851889" at="35,0,48,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="9103993088055851889" at="24,32,25,16" />
+      <scope id="9103993088055851912" at="28,87,29,70" />
+      <scope id="9103993088055851889" at="32,89,33,85" />
+      <scope id="9103993088055851889" at="37,53,38,19" />
+      <scope id="9103993088055851893" at="42,22,43,21" />
+      <scope id="9103993088055851889" at="49,96,51,82" />
+      <scope id="9103993088055851889" at="18,38,21,57" />
+      <scope id="9103993088055851889" at="23,0,27,0" />
+      <scope id="9103993088055851889" at="27,0,31,0">
+        <var name="_params" id="9103993088055851889" />
+        <var name="event" id="9103993088055851889" />
+      </scope>
+      <scope id="9103993088055851889" at="31,0,35,0">
+        <var name="_params" id="9103993088055851889" />
+        <var name="event" id="9103993088055851889" />
+      </scope>
+      <scope id="9103993088055851892" at="40,5,44,7">
+        <var name="p" id="9103993088055851892" />
+      </scope>
+      <scope id="9103993088055851889" at="18,0,23,0" />
+      <scope id="9103993088055851889" at="48,0,53,0">
+        <var name="_params" id="9103993088055851889" />
+        <var name="event" id="9103993088055851889" />
+      </scope>
+      <scope id="9103993088055851889" at="36,95,46,16" />
+      <scope id="9103993088055851889" at="35,0,48,0">
+        <var name="_params" id="9103993088055851889" />
+        <var name="event" id="9103993088055851889" />
+      </scope>
+      <unit id="9103993088055851889" at="15,0,54,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleDetailedInctive_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:d479abf5-7af3-4c4f-9bc6-4a5c45a1162e(com.mbeddr.cc.var.annotations.pluginSolution.plugin)/9103993088055853826">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="9103993088055853826" at="27,45,28,47" concept="2" />
+    </file>
+    <file name="pleVariantInactive_Action.java">
+      <node id="9103993088055853826" at="22,0,23,0" concept="10" trace="ICON" />
+      <node id="9103993088055853826" at="24,38,25,40" concept="11" />
+      <node id="9103993088055853826" at="25,40,26,35" concept="2" />
+      <node id="9103993088055853826" at="26,35,27,57" concept="2" />
+      <node id="9103993088055853826" at="30,32,31,16" concept="7" />
+      <node id="9103993088061636508" at="34,87,35,85" concept="6" />
+      <node id="9103993088055853850" at="35,85,36,193" concept="7" />
+      <node id="9103993088055853826" at="39,89,40,85" concept="2" />
+      <node id="9103993088055853826" at="44,53,45,19" concept="7" />
+      <node id="9103993088055853829" at="47,5,48,72" concept="6" />
+      <node id="9103993088055853830" at="49,22,50,21" concept="7" />
+      <node id="9103993088055853831" at="53,5,54,57" concept="6" />
+      <node id="9103993088055853833" at="55,25,56,21" concept="7" />
+      <node id="9103993088055853826" at="58,5,59,16" concept="7" />
+      <node id="9103993088055853837" at="62,96,63,61" concept="2" />
+      <node id="9103993088055853840" at="63,61,64,82" concept="2" />
+      <node id="9103993088055853826" at="68,0,69,0" concept="10" trace="FeatureModelConfiguration$dw" />
+      <node id="9103993088055853826" at="43,95,46,5" concept="4" />
+      <node id="9103993088055853830" at="48,72,51,7" concept="4" />
+      <node id="9103993088055853833" at="54,57,57,7" concept="4" />
+      <node id="9103993088055853826" at="29,0,33,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="9103993088055853826" at="38,0,42,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055853826" at="24,0,29,0" concept="1" trace="pleVariantInactive_Action#()V" />
+      <node id="9103993088055853826" at="33,0,38,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="9103993088055853826" at="61,0,66,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="9103993088055853829" at="46,5,52,5" concept="0" />
+      <node id="9103993088055853831" at="52,5,58,5" concept="0" />
+      <node id="9103993088055853826" at="42,0,61,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="9103993088055853826" at="30,32,31,16" />
+      <scope id="9103993088055853826" at="39,89,40,85" />
+      <scope id="9103993088055853826" at="44,53,45,19" />
+      <scope id="9103993088055853830" at="49,22,50,21" />
+      <scope id="9103993088055853833" at="55,25,56,21" />
+      <scope id="9103993088055853849" at="34,87,36,193">
+        <var name="notInVariant" id="9103993088061636509" />
+      </scope>
+      <scope id="9103993088055853826" at="62,96,64,82" />
+      <scope id="9103993088055853826" at="24,38,27,57" />
+      <scope id="9103993088055853826" at="29,0,33,0" />
+      <scope id="9103993088055853826" at="38,0,42,0">
+        <var name="_params" id="9103993088055853826" />
+        <var name="event" id="9103993088055853826" />
+      </scope>
+      <scope id="9103993088055853829" at="47,5,51,7">
+        <var name="p" id="9103993088055853829" />
+      </scope>
+      <scope id="9103993088055853831" at="53,5,57,7">
+        <var name="node" id="9103993088055853831" />
+      </scope>
+      <scope id="9103993088055853826" at="24,0,29,0" />
+      <scope id="9103993088055853826" at="33,0,38,0">
+        <var name="_params" id="9103993088055853826" />
+        <var name="event" id="9103993088055853826" />
+      </scope>
+      <scope id="9103993088055853826" at="61,0,66,0">
+        <var name="_params" id="9103993088055853826" />
+        <var name="event" id="9103993088055853826" />
+      </scope>
+      <scope id="9103993088055853826" at="43,95,59,16" />
+      <scope id="9103993088055853826" at="42,0,61,0">
+        <var name="_params" id="9103993088055853826" />
+        <var name="event" id="9103993088055853826" />
+      </scope>
+      <unit id="9103993088055853826" at="67,0,70,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleVariantInactive_Action$CONCEPTS" />
+      <unit id="9103993088055853826" at="21,0,71,0" name="com.mbeddr.cc.var.annotations.pluginSolution.plugin.pleVariantInactive_Action" />
+    </file>
+  </root>
+</debug-info>
+

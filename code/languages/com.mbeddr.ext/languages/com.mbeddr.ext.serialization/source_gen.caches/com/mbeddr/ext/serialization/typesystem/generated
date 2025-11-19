@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-8w3kx7l2tkoh9k8vnnk0u03yozzjczv">
+  <files names="TypeHelper.java:TypesystemDescriptor.java:check_MessageAnnotation_NonTypesystemRule.java:check_SerialDisposeTarget_NonTypesystemRule.java:check_SerialInitTarget_NonTypesystemRule.java:check_WriteStringArray_NonTypesystemRule.java:supertypeOfMsgCtx_SubtypingRule.java:supertypeOfSerialCtxPtr_SubtypingRule.java:typeof_AdditionalVarTarget_InferenceRule.java:typeof_BufferInitTarget_InferenceRule.java:typeof_BufferRef_InferenceRule.java:typeof_HandleTarget_InferenceRule.java:typeof_HandlerVarRef_InferenceRule.java:typeof_PrimitiveReadWriteTarget_InferenceRule.java:typeof_ReadStatement_InferenceRule.java:typeof_ReadStringArray_InferenceRule.java:typeof_WriteStatement_InferenceRule.java:typeof_WriteStringArray_InferenceRule.java" />
+</product>
+

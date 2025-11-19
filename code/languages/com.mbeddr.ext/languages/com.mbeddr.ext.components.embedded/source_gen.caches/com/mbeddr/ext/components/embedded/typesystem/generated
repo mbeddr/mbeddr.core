@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-27zhd91aczz7m0tkxnsi0lvz08gvs6l">
+  <files names="TypesystemDescriptor.java:check_BuildConfiguration_NonTypesystemRule.java:check_ComponentInstance_NonTypesystemRule.java:check_ImplementationModule_NonTypesystemRule.java:check_InterruptRunnableMapping_NonTypesystemRule.java:typeof_InterruptRunnableReturnValue_InferenceRule.java" />
+</product>
+

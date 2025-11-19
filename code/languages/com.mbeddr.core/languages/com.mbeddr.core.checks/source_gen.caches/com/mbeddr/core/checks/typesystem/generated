@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-ae73ej89ojtb5tpksxm6hkb0849zqra">
+  <files names="TypesystemDescriptor.java:ValueAnalysisMain.java:check_BitwiseBinaryArithmaticsExpression_NonTypesystemRule.java:check_BitwiseDirectAssignmentExpression_NonTypesystemRule.java:check_StatementList_NonTypesystemRule.java" />
+</product>
+

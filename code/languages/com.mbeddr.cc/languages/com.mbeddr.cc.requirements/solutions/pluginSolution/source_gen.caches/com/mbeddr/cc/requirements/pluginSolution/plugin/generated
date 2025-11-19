@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bz9zd115oxw67hlxlzsopyc97x8xkq5">
+  <files names="ActivateOutline_Action.java:ActivateTraceStatus_Action.java:DeactivateOutline_Action.java:DeactivateTraceStatus_Action.java:IndentRequirement_Action.java:PluginSolution_ApplicationPlugin.java:RequirementsGroup_ActionGroup.java:UndentRequirement_Action.java:addTraceToCopiedRequirementActionGroup_ActionGroup.java:addTraceToCopiedRequirementAction_Action.java:addTraceToCopiedRequirementShortcutBinding_KeymapChanges.java:undentIndent_KeymapChanges.java" />
+</product>
+

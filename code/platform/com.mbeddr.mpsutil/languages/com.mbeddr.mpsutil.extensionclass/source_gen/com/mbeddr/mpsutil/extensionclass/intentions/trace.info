@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="com.mbeddr.mpsutil.extensionclass.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3d5fe22f-32a1-42dd-b820-687fc92a6d5a(com.mbeddr.mpsutil.extensionclass.intentions)/5712676642253655233">
+    <file name="IntentionsDescriptor.java">
+      <node id="5712676642253655233" at="37,47,38,56" concept="1" />
+      <node id="5712676642253655233" at="50,52,51,42" concept="1" />
+    </file>
+    <file name="createMethods_Intention.java">
+      <node id="5712676642253655233" at="33,0,34,0" concept="2" trace="myCachedExecutable" />
+      <node id="5712676642253655233" at="35,36,36,159" concept="9" />
+      <node id="5712676642253655233" at="40,35,41,27" concept="6" />
+      <node id="5712676642253655233" at="45,35,46,17" concept="6" />
+      <node id="5712676642253655233" at="50,37,51,105" concept="1" />
+      <node id="5712676642253655233" at="52,5,53,30" concept="6" />
+      <node id="5712676642253656157" at="60,87,61,41" concept="6" />
+      <node id="5712676642263769298" at="68,43,69,89" concept="6" />
+      <node id="5712676642264264102" at="72,250,73,246" concept="5" />
+      <node id="5712676642264248211" at="73,246,74,31" concept="6" />
+      <node id="5712676642253655233" at="80,55,81,21" concept="6" />
+      <node id="5712676642253655233" at="82,7,83,18" concept="6" />
+      <node id="5712676642263583408" at="86,93,87,73" concept="6" />
+      <node id="5712676642253655233" at="92,48,93,42" concept="6" />
+      <node id="5712676642263948190" at="97,121,98,90" concept="5" />
+      <node id="5712676642263948190" at="98,90,99,49" concept="1" />
+      <node id="5712676642263948190" at="99,49,100,109" concept="1" />
+      <node id="5712676642263948190" at="100,109,101,26" concept="6" />
+      <node id="5712676642253655233" at="105,0,106,0" concept="7" trace="annotations$N1J6" />
+      <node id="5712676642253655233" at="106,0,107,0" concept="7" trace="class$kmno" />
+      <node id="5712676642253655233" at="107,0,108,0" concept="7" trace="parameter$5xBj" />
+      <node id="5712676642253655233" at="108,0,109,0" concept="7" trace="method$9MOt" />
+      <node id="5712676642253655233" at="109,0,110,0" concept="7" trace="parameters$y0fD" />
+      <node id="5712676642253655233" at="113,0,114,0" concept="7" trace="name$MnvL" />
+      <node id="5712676642253655233" at="117,0,118,0" concept="7" trace="ExtensionClassMethodAnnotation$pi" />
+      <node id="5712676642253655233" at="118,0,119,0" concept="7" trace="ExtensionClassMethodParameterAnnotation$oS" />
+      <node id="5712676642253655233" at="56,0,58,0" concept="0" trace="IntentionImplementation#()V" />
+      <node id="5712676642253655233" at="35,0,38,0" concept="0" trace="createMethods_Intention#()V" />
+      <node id="5712676642253655233" at="49,99,52,5" concept="3" />
+      <node id="5712676642263757819" at="68,0,71,0" concept="4" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="5712676642253655233" at="79,86,82,7" concept="3" />
+      <node id="5712676642253655233" at="86,0,89,0" concept="4" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="5712676642253655233" at="39,0,43,0" concept="4" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="5712676642253655233" at="44,0,48,0" concept="4" trace="isSurroundWith#()Z" />
+      <node id="5712676642253655233" at="59,0,63,0" concept="4" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="5712676642253655233" at="91,0,95,0" concept="4" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="5712676642263662671" at="66,256,71,11" concept="6" />
+      <node id="5712676642253655233" at="49,0,55,0" concept="4" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="5712676642263948190" at="97,0,103,0" concept="8" trace="createExtensionClassMethodAnnotation_qh7jij_a0a0a0a0a0a0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5712676642253655233" at="78,0,85,0" concept="4" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="5712676642263486173" at="65,78,75,156" concept="1" />
+      <node id="5712676642253655233" at="64,0,77,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="5712676642253655233" at="56,38,56,38" />
+      <scope id="5712676642253655233" at="35,36,36,159" />
+      <scope id="5712676642253655233" at="40,35,41,27" />
+      <scope id="5712676642253655233" at="45,35,46,17" />
+      <scope id="5712676642253655233" at="50,37,51,105" />
+      <scope id="5712676642253655235" at="60,87,61,41" />
+      <scope id="5712676642263757820" at="68,43,69,89" />
+      <scope id="5712676642253655233" at="80,55,81,21" />
+      <scope id="5712676642263572343" at="86,93,87,73" />
+      <scope id="5712676642253655233" at="92,48,93,42" />
+      <scope id="5712676642253655233" at="56,0,58,0" />
+      <scope id="5712676642264189421" at="72,250,74,31">
+        <var name="paramAnnotation" id="5712676642264264103" />
+      </scope>
+      <scope id="5712676642253655233" at="35,0,38,0" />
+      <scope id="5712676642263757819" at="68,0,71,0">
+        <var name="it" id="5712676642263757819" />
+      </scope>
+      <scope id="5712676642253655233" at="86,0,89,0">
+        <var name="editorContext" id="5712676642253655233" />
+        <var name="node" id="5712676642253655233" />
+      </scope>
+      <scope id="5712676642253655233" at="39,0,43,0" />
+      <scope id="5712676642253655233" at="44,0,48,0" />
+      <scope id="5712676642253655233" at="49,99,53,30" />
+      <scope id="5712676642253655233" at="59,0,63,0">
+        <var name="editorContext" id="5712676642253655233" />
+        <var name="node" id="5712676642253655233" />
+      </scope>
+      <scope id="5712676642253655233" at="79,86,83,18" />
+      <scope id="5712676642253655233" at="91,0,95,0" />
+      <scope id="5712676642263948190" at="97,121,101,26">
+        <var name="n0" id="5712676642263948190" />
+      </scope>
+      <scope id="5712676642263649825" at="66,256,71,11" />
+      <scope id="5712676642253655233" at="49,0,55,0">
+        <var name="context" id="5712676642253655233" />
+        <var name="node" id="5712676642253655233" />
+      </scope>
+      <scope id="5712676642263948190" at="97,0,103,0">
+        <var name="p0" id="5712676642263948190" />
+        <var name="p1" id="5712676642263948190" />
+      </scope>
+      <scope id="5712676642253655233" at="78,0,85,0">
+        <var name="editorContext" id="5712676642253655233" />
+        <var name="node" id="5712676642253655233" />
+      </scope>
+      <scope id="5712676642253655237" at="65,78,75,156" />
+      <scope id="5712676642253655233" at="64,0,77,0">
+        <var name="editorContext" id="5712676642253655233" />
+        <var name="node" id="5712676642253655233" />
+      </scope>
+      <unit id="5712676642253655233" at="112,0,115,0" name="com.mbeddr.mpsutil.extensionclass.intentions.createMethods_Intention$PROPS" />
+      <unit id="5712676642263757819" at="67,192,71,9" name="com.mbeddr.mpsutil.extensionclass.intentions.createMethods_Intention$IntentionImplementation$1" />
+      <unit id="5712676642253655233" at="116,0,120,0" name="com.mbeddr.mpsutil.extensionclass.intentions.createMethods_Intention$CONCEPTS" />
+      <unit id="5712676642253655233" at="104,0,111,0" name="com.mbeddr.mpsutil.extensionclass.intentions.createMethods_Intention$LINKS" />
+      <unit id="5712676642253655233" at="55,0,97,0" name="com.mbeddr.mpsutil.extensionclass.intentions.createMethods_Intention$IntentionImplementation" />
+      <unit id="5712676642253655233" at="32,0,121,0" name="com.mbeddr.mpsutil.extensionclass.intentions.createMethods_Intention" />
+    </file>
+  </root>
+</debug-info>
+

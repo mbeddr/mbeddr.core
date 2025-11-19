@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.core.codereview.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ce37a4c5-db95-454a-b82e-b03bd02e5888(com.mbeddr.core.codereview.constraints)/293752265167408103">
+    <file name="ConceptDeclarationReference_Constraints.java">
+      <node id="293752265167408103" at="24,101,25,64" concept="5" />
+      <node id="5167603879045236803" at="25,64,26,26" concept="1" />
+      <node id="5167603879045236803" at="30,54,31,56" concept="5" />
+      <node id="5167603879045236803" at="38,61,39,139" concept="3" />
+      <node id="6491070606984407293" at="42,78,43,175" concept="3" />
+      <node id="293752265167408103" at="50,0,51,0" concept="4" trace="ConceptDeclarationReference$Qd" />
+      <node id="293752265167408103" at="51,0,52,0" concept="4" trace="ConceptDeclaration$gH" />
+      <node id="293752265167408103" at="55,0,56,0" concept="4" trace="concept$4iL5" />
+      <node id="5167603879045236803" at="30,0,33,0" concept="0" trace="RD1#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="293752265167408103" at="24,0,28,0" concept="0" trace="ConceptDeclarationReference_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="5167603879045236803" at="37,0,41,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="5167603879045236803" at="41,0,45,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="5167603879045236803" at="35,54,45,8" concept="3" />
+      <node id="5167603879045236803" at="33,0,47,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <scope id="5167603879045236803" at="30,54,31,56" />
+      <scope id="5167603879045236803" at="38,61,39,139" />
+      <scope id="5167603879045236803" at="42,78,43,175" />
+      <scope id="293752265167408103" at="24,101,26,26" />
+      <scope id="5167603879045236803" at="30,0,33,0">
+        <var name="container" id="5167603879045236803" />
+      </scope>
+      <scope id="293752265167408103" at="24,0,28,0">
+        <var name="initContext" id="293752265167408103" />
+      </scope>
+      <scope id="5167603879045236803" at="37,0,41,0" />
+      <scope id="5167603879045236803" at="41,0,45,0">
+        <var name="_context" id="5167603879045236803" />
+      </scope>
+      <scope id="5167603879045236803" at="35,54,45,8" />
+      <scope id="5167603879045236803" at="33,0,47,0" />
+      <unit id="293752265167408103" at="54,0,57,0" name="com.mbeddr.core.codereview.constraints.ConceptDeclarationReference_Constraints$LINKS" />
+      <unit id="293752265167408103" at="49,0,53,0" name="com.mbeddr.core.codereview.constraints.ConceptDeclarationReference_Constraints$CONCEPTS" />
+      <unit id="5167603879045236803" at="36,17,45,7" name="com.mbeddr.core.codereview.constraints.ConceptDeclarationReference_Constraints$RD1$1" />
+      <unit id="5167603879045236803" at="29,0,48,0" name="com.mbeddr.core.codereview.constraints.ConceptDeclarationReference_Constraints$RD1" />
+      <unit id="293752265167408103" at="23,0,58,0" name="com.mbeddr.core.codereview.constraints.ConceptDeclarationReference_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

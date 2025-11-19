@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ScriptsDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.ext.statemachines.scripts.ScriptsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e13864bd-d994-43cd-a24f-22a4b4b04dad(com.mbeddr.ext.statemachines.scripts)/6183633367245055768">
+    <file name="ScriptsDescriptor.java">
+      <node id="6183633367245055768" at="15,52,16,66" concept="1" />
+    </file>
+    <file name="statemachines_MigrationScript.java">
+      <node id="6183633367245055768" at="24,42,25,28" concept="7" />
+      <node id="6183633367245055769" at="28,31,29,31" concept="5" />
+      <node id="6183633367245055769" at="32,41,33,31" concept="5" />
+      <node id="6183633367245055769" at="36,54,37,40" concept="5" />
+      <node id="6183633367245101696" at="40,59,41,113" concept="4" />
+      <node id="6183633367245102362" at="42,54,43,56" concept="4" />
+      <node id="6183633367245101704" at="43,56,44,97" concept="4" />
+      <node id="6183633367245101711" at="44,97,45,138" concept="4" />
+      <node id="6183633367245101756" at="45,138,46,28" concept="5" />
+      <node id="6183633367245101784" at="47,9,48,21" concept="5" />
+      <node id="6183633367245055829" at="51,52,52,137" concept="4" />
+      <node id="6183633367245056032" at="52,137,53,95" concept="4" />
+      <node id="6183633367245055931" at="53,95,54,136" concept="4" />
+      <node id="6183633367245055983" at="55,25,56,207" concept="1" />
+      <node id="6183633367245102428" at="56,207,57,111" concept="1" />
+      <node id="6183633367245055769" at="61,42,62,21" concept="5" />
+      <node id="6183633367245055768" at="69,41,70,163" concept="5" />
+      <node id="6183633367245055768" at="74,0,75,0" concept="6" trace="Statemachine$h1" />
+      <node id="6183633367245055768" at="75,0,76,0" concept="6" trace="BuildConfiguration$kH" />
+      <node id="6183633367245055768" at="76,0,77,0" concept="6" trace="StatemachineConfigItem$mA" />
+      <node id="6183633367245055768" at="80,0,81,0" concept="6" trace="configurationItems$HPvE" />
+      <node id="6183633367245055769" at="27,0,31,0" concept="3" trace="getName#()Ljava/lang/String;" />
+      <node id="6183633367245055769" at="31,0,35,0" concept="3" trace="getAdditionalInfo#()Ljava/lang/String;" />
+      <node id="6183633367245055769" at="35,0,39,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="6183633367245055950" at="54,136,58,9" concept="2" />
+      <node id="6183633367245055769" at="60,0,64,0" concept="3" trace="isShowAsIntention#()Z" />
+      <node id="6183633367245055768" at="67,0,72,0" concept="3" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="6183633367245101727" at="41,113,47,9" concept="2" />
+      <node id="6183633367245055769" at="50,0,60,0" concept="3" trace="doUpdateInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6183633367245055769" at="39,0,50,0" concept="3" trace="isApplicableInstanceNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="6183633367245055769" at="25,28,64,7" concept="1" />
+      <node id="6183633367245055768" at="24,0,66,0" concept="0" trace="statemachines_MigrationScript#()V" />
+      <scope id="6183633367245055769" at="28,31,29,31" />
+      <scope id="6183633367245055769" at="32,41,33,31" />
+      <scope id="6183633367245055769" at="36,54,37,40" />
+      <scope id="6183633367245055769" at="61,42,62,21" />
+      <scope id="6183633367245055768" at="69,41,70,163" />
+      <scope id="6183633367245055951" at="55,25,57,111" />
+      <scope id="6183633367245055769" at="27,0,31,0" />
+      <scope id="6183633367245055769" at="31,0,35,0" />
+      <scope id="6183633367245055769" at="35,0,39,0" />
+      <scope id="6183633367245101728" at="42,54,46,28">
+        <var name="bc" id="6183633367245102363" />
+        <var name="ci" id="6183633367245101712" />
+        <var name="items" id="6183633367245101705" />
+      </scope>
+      <scope id="6183633367245055769" at="60,0,64,0" />
+      <scope id="6183633367245055768" at="67,0,72,0" />
+      <scope id="6183633367245055771" at="51,52,58,9">
+        <var name="bc" id="6183633367245055830" />
+        <var name="ci" id="6183633367245055932" />
+        <var name="items" id="6183633367245056033" />
+      </scope>
+      <scope id="6183633367245101695" at="40,59,48,21">
+        <var name="bcs" id="6183633367245101697" />
+      </scope>
+      <scope id="6183633367245055769" at="50,0,60,0">
+        <var name="node" id="6183633367245055769" />
+      </scope>
+      <scope id="6183633367245055769" at="39,0,50,0">
+        <var name="node" id="6183633367245055769" />
+      </scope>
+      <scope id="6183633367245055768" at="24,42,64,7" />
+      <scope id="6183633367245055768" at="24,0,66,0" />
+      <unit id="6183633367245055768" at="79,0,82,0" name="com.mbeddr.ext.statemachines.scripts.statemachines_MigrationScript$LINKS" />
+      <unit id="6183633367245055768" at="73,0,78,0" name="com.mbeddr.ext.statemachines.scripts.statemachines_MigrationScript$CONCEPTS" />
+      <unit id="6183633367245055769" at="26,28,64,5" name="com.mbeddr.ext.statemachines.scripts.statemachines_MigrationScript$1" />
+      <unit id="6183633367245055768" at="23,0,83,0" name="com.mbeddr.ext.statemachines.scripts.statemachines_MigrationScript" />
+    </file>
+  </root>
+</debug-info>
+

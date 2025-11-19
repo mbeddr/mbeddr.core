@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:eddc3924-ccea-4ced-aea2-faf864d53897(com.mbeddr.mpsutil.actionsfilter.runtime.tests)/4233128850670435015">
+    <file name="ModelTest_Test.java">
+      <node id="4233128850670435015" at="26,27,27,60" concept="7" />
+      <node id="4233128850670437044" at="31,54,32,45" concept="1" />
+      <node id="4233128850670481999" at="35,53,36,44" concept="1" />
+      <node id="4233128850670602045" at="39,47,40,38" concept="1" />
+      <node id="4233128850670979013" at="43,57,44,48" concept="1" />
+      <node id="4233128850671152553" at="47,56,48,47" concept="1" />
+      <node id="4233128850671176104" at="51,71,52,62" concept="1" />
+      <node id="4233128850671453115" at="55,69,56,60" concept="1" />
+      <node id="4233128850670435015" at="61,52,62,19" concept="7" />
+      <node id="4233128850670435015" at="66,36,67,25" concept="1" />
+      <node id="4233128850670437044" at="70,56,71,22" concept="1" />
+      <node id="4233128850670437433" at="72,30,73,34" concept="4" />
+      <node id="4233128850670437437" at="73,34,74,57" concept="4" />
+      <node id="4233128850670437441" at="74,57,75,89" concept="1" />
+      <node id="4233128850670437447" at="75,89,76,55" concept="4" />
+      <node id="4233128850670437451" at="76,55,77,37" concept="1" />
+      <node id="4233128850670439155" at="77,37,78,94" concept="1" />
+      <node id="4233128850670481999" at="81,55,82,22" concept="1" />
+      <node id="4233128850670482428" at="83,30,84,34" concept="4" />
+      <node id="4233128850670482432" at="84,34,85,50" concept="4" />
+      <node id="4233128850670482436" at="85,50,86,89" concept="1" />
+      <node id="4233128850670482441" at="86,89,87,41" concept="1" />
+      <node id="4233128850670484816" at="87,41,88,96" concept="1" />
+      <node id="4233128850670602045" at="91,49,92,22" concept="1" />
+      <node id="4233128850670603119" at="93,30,94,40" concept="4" />
+      <node id="4233128850670603122" at="94,40,95,39" concept="1" />
+      <node id="4233128850670603126" at="95,39,96,43" concept="4" />
+      <node id="4233128850670796624" at="96,43,97,43" concept="1" />
+      <node id="4233128850670797571" at="97,43,98,67" concept="1" />
+      <node id="4233128850670802172" at="98,67,99,81" concept="1" />
+      <node id="4233128850670979013" at="102,59,103,22" concept="1" />
+      <node id="4233128850670981546" at="104,30,105,54" concept="4" />
+      <node id="4233128850670981549" at="105,54,106,41" concept="1" />
+      <node id="4233128850670981553" at="106,41,107,36" concept="4" />
+      <node id="4233128850670981556" at="107,36,108,50" concept="1" />
+      <node id="4233128850670984739" at="108,50,109,42" concept="1" />
+      <node id="4233128850670986427" at="109,42,110,98" concept="1" />
+      <node id="4233128850671152553" at="113,58,114,22" concept="1" />
+      <node id="4233128850671154680" at="115,30,116,34" concept="4" />
+      <node id="4233128850671154684" at="116,34,117,54" concept="4" />
+      <node id="4233128850671154688" at="117,54,118,91" concept="1" />
+      <node id="4233128850671154693" at="118,91,119,46" concept="1" />
+      <node id="4233128850671162515" at="119,46,120,69" concept="1" />
+      <node id="4233128850671176104" at="123,73,124,22" concept="1" />
+      <node id="4233128850671179974" at="125,30,126,34" concept="4" />
+      <node id="4233128850671179978" at="126,34,127,48" concept="4" />
+      <node id="4233128850671179982" at="127,48,128,85" concept="1" />
+      <node id="4233128850671179986" at="128,85,129,40" concept="1" />
+      <node id="4233128850671179990" at="129,40,130,43" concept="4" />
+      <node id="4233128850671183448" at="130,43,131,35" concept="1" />
+      <node id="4233128850671415456" at="131,35,132,43" concept="1" />
+      <node id="4233128850671375644" at="132,43,133,48" concept="1" />
+      <node id="4233128850671378439" at="133,48,134,88" concept="1" />
+      <node id="4233128850671453115" at="137,71,138,22" concept="1" />
+      <node id="4233128850671461957" at="139,30,140,34" concept="4" />
+      <node id="4233128850671461961" at="140,34,141,48" concept="4" />
+      <node id="4233128850671461966" at="141,48,142,48" concept="4" />
+      <node id="4233128850671461970" at="142,48,143,88" concept="1" />
+      <node id="4233128850671461975" at="143,88,144,52" concept="1" />
+      <node id="4233128850671476431" at="144,52,145,94" concept="1" />
+      <node id="4233128850671507529" at="145,94,146,95" concept="1" />
+      <node id="4233128850671002298" at="150,36,151,32" concept="4" />
+      <node id="4233128850671049874" at="152,35,153,74" concept="4" />
+      <node id="4233128850671050922" at="154,37,155,67" concept="1" />
+      <node id="4233128850671125025" at="155,67,156,58" concept="1" />
+      <node id="4233128850671092214" at="156,58,157,126" concept="1" />
+      <node id="4233128850671009618" at="158,9,159,34" concept="1" />
+      <node id="4233128850671020993" at="160,7,161,115" concept="1" />
+      <node id="4233128850671018561" at="161,115,162,19" concept="5" />
+      <node id="4233128850670435015" at="23,0,25,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="4233128850670435015" at="26,0,29,0" concept="0" trace="ModelTest_Test#()V" />
+      <node id="4233128850670435015" at="61,0,64,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4233128850670437044" at="30,0,34,0" concept="3" trace="test_testAddProfile#()V" />
+      <node id="4233128850670481999" at="34,0,38,0" concept="3" trace="test_removeProfile#()V" />
+      <node id="4233128850670602045" at="38,0,42,0" concept="3" trace="test_cloning#()V" />
+      <node id="4233128850670979013" at="42,0,46,0" concept="3" trace="test_equalsAndHashCode#()V" />
+      <node id="4233128850671152553" at="46,0,50,0" concept="3" trace="test_setActiveProfile#()V" />
+      <node id="4233128850671176104" at="50,0,54,0" concept="3" trace="test_copyProfileCreatesCloneOfActive#()V" />
+      <node id="4233128850671453115" at="54,0,58,0" concept="3" trace="test_updateProfileReplacesExisting#()V" />
+      <node id="4233128850670435015" at="65,0,69,0" concept="3" trace="initTestNodes#()V" />
+      <node id="4233128850671056304" at="153,74,158,9" concept="2" />
+      <node id="4233128850670481999" at="82,22,89,9" concept="1" />
+      <node id="4233128850671152553" at="114,22,121,9" concept="1" />
+      <node id="4233128850670437044" at="71,22,79,9" concept="1" />
+      <node id="4233128850670602045" at="92,22,100,9" concept="1" />
+      <node id="4233128850670979013" at="103,22,111,9" concept="1" />
+      <node id="4233128850671453115" at="138,22,147,9" concept="1" />
+      <node id="4233128850671005637" at="151,32,160,7" concept="2" />
+      <node id="4233128850670481999" at="81,0,91,0" concept="3" trace="test_removeProfile#()V" />
+      <node id="4233128850671152553" at="113,0,123,0" concept="3" trace="test_setActiveProfile#()V" />
+      <node id="4233128850670437044" at="70,0,81,0" concept="3" trace="test_testAddProfile#()V" />
+      <node id="4233128850670602045" at="91,0,102,0" concept="3" trace="test_cloning#()V" />
+      <node id="4233128850670979013" at="102,0,113,0" concept="3" trace="test_equalsAndHashCode#()V" />
+      <node id="4233128850671176104" at="124,22,135,9" concept="1" />
+      <node id="4233128850671453115" at="137,0,149,0" concept="3" trace="test_updateProfileReplacesExisting#()V" />
+      <node id="4233128850671176104" at="123,0,137,0" concept="3" trace="test_copyProfileCreatesCloneOfActive#()V" />
+      <node id="4233128850670998390" at="150,0,164,0" concept="3" trace="createTestModel#()Lcom/mbeddr/mpsutil/actionsfilter/runtime/Model;" />
+      <scope id="4233128850670435015" at="26,27,27,60" />
+      <scope id="4233128850670437044" at="31,54,32,45" />
+      <scope id="4233128850670481999" at="35,53,36,44" />
+      <scope id="4233128850670602045" at="39,47,40,38" />
+      <scope id="4233128850670979013" at="43,57,44,48" />
+      <scope id="4233128850671152553" at="47,56,48,47" />
+      <scope id="4233128850671176104" at="51,71,52,62" />
+      <scope id="4233128850671453115" at="55,69,56,60" />
+      <scope id="4233128850670435015" at="61,52,62,19" />
+      <scope id="4233128850670435015" at="66,36,67,25" />
+      <scope id="4233128850670435015" at="26,0,29,0" />
+      <scope id="4233128850670435015" at="61,0,64,0">
+        <var name="owner" id="4233128850670435015" />
+      </scope>
+      <scope id="4233128850671056306" at="154,37,157,126" />
+      <scope id="4233128850670437044" at="30,0,34,0" />
+      <scope id="4233128850670481999" at="34,0,38,0" />
+      <scope id="4233128850670602045" at="38,0,42,0" />
+      <scope id="4233128850670979013" at="42,0,46,0" />
+      <scope id="4233128850671152553" at="46,0,50,0" />
+      <scope id="4233128850671176104" at="50,0,54,0" />
+      <scope id="4233128850671453115" at="54,0,58,0" />
+      <scope id="4233128850670435015" at="65,0,69,0" />
+      <scope id="4233128850670481999" at="83,30,88,96">
+        <var name="baseProfile" id="4233128850670482431" />
+        <var name="model" id="4233128850670482427" />
+      </scope>
+      <scope id="4233128850671152553" at="115,30,120,69">
+        <var name="model" id="4233128850671154679" />
+        <var name="targetProfile" id="4233128850671154683" />
+      </scope>
+      <scope id="4233128850671056304" at="153,74,158,9">
+        <var name="j" id="4233128850671056307" />
+      </scope>
+      <scope id="4233128850670437044" at="72,30,78,94">
+        <var name="baseProfile" id="4233128850670437436" />
+        <var name="model" id="4233128850670437432" />
+        <var name="newProfile" id="4233128850670437446" />
+      </scope>
+      <scope id="4233128850670602045" at="93,30,99,81">
+        <var name="cloned" id="4233128850670603125" />
+        <var name="model" id="4233128850670603118" />
+      </scope>
+      <scope id="4233128850670979013" at="104,30,110,98">
+        <var name="model" id="4233128850670981545" />
+        <var name="other" id="4233128850670981552" />
+      </scope>
+      <scope id="4233128850671453115" at="139,30,146,95">
+        <var name="model" id="4233128850671461956" />
+        <var name="newProfile" id="4233128850671461965" />
+        <var name="oldProfile" id="4233128850671461960" />
+      </scope>
+      <scope id="4233128850671005639" at="152,35,159,34">
+        <var name="profile" id="4233128850671049875" />
+      </scope>
+      <scope id="4233128850670481999" at="81,55,89,9" />
+      <scope id="4233128850671152553" at="113,58,121,9" />
+      <scope id="4233128850670437044" at="70,56,79,9" />
+      <scope id="4233128850670602045" at="91,49,100,9" />
+      <scope id="4233128850670979013" at="102,59,111,9" />
+      <scope id="4233128850671176104" at="125,30,134,88">
+        <var name="copy" id="4233128850671179989" />
+        <var name="model" id="4233128850671179973" />
+        <var name="profile" id="4233128850671179977" />
+      </scope>
+      <scope id="4233128850671005637" at="151,32,160,7">
+        <var name="i" id="4233128850671005640" />
+      </scope>
+      <scope id="4233128850670481999" at="81,0,91,0" />
+      <scope id="4233128850671152553" at="113,0,123,0" />
+      <scope id="4233128850671453115" at="137,71,147,9" />
+      <scope id="4233128850670437044" at="70,0,81,0" />
+      <scope id="4233128850670602045" at="91,0,102,0" />
+      <scope id="4233128850670979013" at="102,0,113,0" />
+      <scope id="4233128850671176104" at="123,73,135,9" />
+      <scope id="4233128850671453115" at="137,0,149,0" />
+      <scope id="4233128850670998390" at="150,36,162,19">
+        <var name="model" id="4233128850671002299" />
+      </scope>
+      <scope id="4233128850671176104" at="123,0,137,0" />
+      <scope id="4233128850670998390" at="150,0,164,0" />
+      <unit id="4233128850670435015" at="59,0,165,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.tests.ModelTest_Test$TestBody" />
+      <unit id="4233128850670435015" at="21,0,166,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.tests.ModelTest_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eddc3924-ccea-4ced-aea2-faf864d53897(com.mbeddr.mpsutil.actionsfilter.runtime.tests)/4233128850671522956">
+    <file name="ProfileTest_Test.java">
+      <node id="4233128850671522956" at="23,29,24,60" concept="7" />
+      <node id="4233128850671523300" at="28,64,29,55" concept="1" />
+      <node id="4233128850671530550" at="32,45,33,36" concept="1" />
+      <node id="4233128850671555584" at="36,57,37,48" concept="1" />
+      <node id="4233128850671578863" at="40,76,41,67" concept="1" />
+      <node id="4233128850671620873" at="44,70,45,61" concept="1" />
+      <node id="4233128850671522956" at="50,52,51,19" concept="7" />
+      <node id="4233128850671522956" at="55,36,56,25" concept="1" />
+      <node id="4233128850671523300" at="59,66,60,22" concept="1" />
+      <node id="4233128850671523755" at="61,30,62,53" concept="4" />
+      <node id="4233128850671524249" at="62,53,63,62" concept="1" />
+      <node id="4233128850671524974" at="63,62,64,46" concept="1" />
+      <node id="4233128850671530550" at="67,47,68,22" concept="1" />
+      <node id="4233128850671545859" at="69,30,70,61" concept="4" />
+      <node id="4233128850671545864" at="70,61,71,41" concept="4" />
+      <node id="4233128850671547943" at="71,41,72,45" concept="1" />
+      <node id="4233128850671548899" at="72,45,73,45" concept="1" />
+      <node id="4233128850671548902" at="73,45,74,85" concept="1" />
+      <node id="4233128850671552237" at="74,85,75,65" concept="1" />
+      <node id="4233128850671555584" at="78,59,79,22" concept="1" />
+      <node id="4233128850671556683" at="80,30,81,42" concept="4" />
+      <node id="4233128850671556688" at="81,42,82,42" concept="4" />
+      <node id="4233128850671556692" at="82,42,83,29" concept="1" />
+      <node id="4233128850671558327" at="83,29,84,36" concept="1" />
+      <node id="4233128850671559157" at="84,36,85,92" concept="1" />
+      <node id="4233128850671578863" at="88,78,89,22" concept="1" />
+      <node id="4233128850671580010" at="90,30,91,61" concept="4" />
+      <node id="4233128850671611238" at="91,61,92,66" concept="1" />
+      <node id="4233128850671620873" at="95,72,96,22" concept="1" />
+      <node id="4233128850671624202" at="97,30,98,53" concept="4" />
+      <node id="4233128850671625880" at="98,53,99,63" concept="1" />
+      <node id="4233128850671624210" at="99,63,100,28" concept="1" />
+      <node id="4233128850671627778" at="100,28,101,65" concept="1" />
+      <node id="4233128850671539880" at="105,40,106,84" concept="4" />
+      <node id="4233128850671539893" at="107,35,108,65" concept="1" />
+      <node id="4233128850671539902" at="108,65,109,56" concept="1" />
+      <node id="4233128850671539909" at="109,56,110,124" concept="1" />
+      <node id="4233128850671542653" at="111,7,112,21" concept="5" />
+      <node id="4233128850671522956" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="4233128850671522956" at="23,0,26,0" concept="0" trace="ProfileTest_Test#()V" />
+      <node id="4233128850671522956" at="50,0,53,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4233128850671523300" at="27,0,31,0" concept="3" trace="test_constructorSetsIdAndName#()V" />
+      <node id="4233128850671530550" at="31,0,35,0" concept="3" trace="test_clone#()V" />
+      <node id="4233128850671555584" at="35,0,39,0" concept="3" trace="test_equalsAndHashCode#()V" />
+      <node id="4233128850671578863" at="39,0,43,0" concept="3" trace="test_canBeActivatedByDefaultTrueByDefault#()V" />
+      <node id="4233128850671620873" at="43,0,47,0" concept="3" trace="test_testToStringUsesNameIfNotEmpty#()V" />
+      <node id="4233128850671522956" at="54,0,58,0" concept="3" trace="initTestNodes#()V" />
+      <node id="4233128850671578863" at="89,22,93,9" concept="1" />
+      <node id="4233128850671523300" at="60,22,65,9" concept="1" />
+      <node id="4233128850671539891" at="106,84,111,7" concept="2" />
+      <node id="4233128850671620873" at="96,22,102,9" concept="1" />
+      <node id="4233128850671555584" at="79,22,86,9" concept="1" />
+      <node id="4233128850671578863" at="88,0,95,0" concept="3" trace="test_canBeActivatedByDefaultTrueByDefault#()V" />
+      <node id="4233128850671523300" at="59,0,67,0" concept="3" trace="test_constructorSetsIdAndName#()V" />
+      <node id="4233128850671530550" at="68,22,76,9" concept="1" />
+      <node id="4233128850671620873" at="95,0,104,0" concept="3" trace="test_testToStringUsesNameIfNotEmpty#()V" />
+      <node id="4233128850671539649" at="105,0,114,0" concept="3" trace="createTestProfile#()Lcom/mbeddr/mpsutil/actionsfilter/runtime/Profile;" />
+      <node id="4233128850671555584" at="78,0,88,0" concept="3" trace="test_equalsAndHashCode#()V" />
+      <node id="4233128850671530550" at="67,0,78,0" concept="3" trace="test_clone#()V" />
+      <scope id="4233128850671522956" at="23,29,24,60" />
+      <scope id="4233128850671523300" at="28,64,29,55" />
+      <scope id="4233128850671530550" at="32,45,33,36" />
+      <scope id="4233128850671555584" at="36,57,37,48" />
+      <scope id="4233128850671578863" at="40,76,41,67" />
+      <scope id="4233128850671620873" at="44,70,45,61" />
+      <scope id="4233128850671522956" at="50,52,51,19" />
+      <scope id="4233128850671522956" at="55,36,56,25" />
+      <scope id="4233128850671578863" at="90,30,92,66">
+        <var name="original" id="4233128850671580011" />
+      </scope>
+      <scope id="4233128850671522956" at="23,0,26,0" />
+      <scope id="4233128850671522956" at="50,0,53,0">
+        <var name="owner" id="4233128850671522956" />
+      </scope>
+      <scope id="4233128850671523300" at="61,30,64,46">
+        <var name="profile" id="4233128850671523754" />
+      </scope>
+      <scope id="4233128850671539892" at="107,35,110,124" />
+      <scope id="4233128850671523300" at="27,0,31,0" />
+      <scope id="4233128850671530550" at="31,0,35,0" />
+      <scope id="4233128850671555584" at="35,0,39,0" />
+      <scope id="4233128850671578863" at="39,0,43,0" />
+      <scope id="4233128850671620873" at="43,0,47,0" />
+      <scope id="4233128850671522956" at="54,0,58,0" />
+      <scope id="4233128850671620873" at="97,30,101,65">
+        <var name="profile" id="4233128850671624201" />
+      </scope>
+      <scope id="4233128850671555584" at="80,30,85,92">
+        <var name="p1" id="4233128850671556682" />
+        <var name="p2" id="4233128850671556687" />
+      </scope>
+      <scope id="4233128850671578863" at="88,78,93,9" />
+      <scope id="4233128850671539891" at="106,84,111,7">
+        <var name="j" id="4233128850671539922" />
+      </scope>
+      <scope id="4233128850671523300" at="59,66,65,9" />
+      <scope id="4233128850671530550" at="69,30,75,65">
+        <var name="clone" id="4233128850671545863" />
+        <var name="original" id="4233128850671545858" />
+      </scope>
+      <scope id="4233128850671578863" at="88,0,95,0" />
+      <scope id="4233128850671620873" at="95,72,102,9" />
+      <scope id="4233128850671539649" at="105,40,112,21">
+        <var name="profile" id="4233128850671539881" />
+      </scope>
+      <scope id="4233128850671523300" at="59,0,67,0" />
+      <scope id="4233128850671555584" at="78,59,86,9" />
+      <scope id="4233128850671530550" at="67,47,76,9" />
+      <scope id="4233128850671620873" at="95,0,104,0" />
+      <scope id="4233128850671539649" at="105,0,114,0" />
+      <scope id="4233128850671555584" at="78,0,88,0" />
+      <scope id="4233128850671530550" at="67,0,78,0" />
+      <unit id="4233128850671522956" at="48,0,115,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.tests.ProfileTest_Test$TestBody" />
+      <unit id="4233128850671522956" at="18,0,116,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.tests.ProfileTest_Test" />
+    </file>
+  </root>
+</debug-info>
+

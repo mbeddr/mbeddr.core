@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="jw5x1tpzd12e4m89ko9mmpyhvfnnls">
+  <files names="TypesystemDescriptor.java:addArgument_QuickFix.java:addCollaborator_QuickFix.java:check_Call_NonTypesystemRule.java:check_NonSelfCall_NonTypesystemRule.java:check_ScenarioCall_NonTypesystemRule.java:typeof_IDataType_InferenceRule.java" />
+</product>
+

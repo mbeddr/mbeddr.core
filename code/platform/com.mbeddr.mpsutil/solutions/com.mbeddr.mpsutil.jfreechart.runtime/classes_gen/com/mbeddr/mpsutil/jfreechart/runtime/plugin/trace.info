@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:8d0c5c47-17fd-4c51-b185-4bf2a45d5270(com.mbeddr.mpsutil.jfreechart.runtime.plugin)/134774857083852902">
+    <file name="ChartManager.java">
+      <node id="134774857083867025" at="17,62,18,95" concept="6" />
+      <node id="731208824373500262" at="18,95,19,102" concept="6" />
+      <node id="134774857083934159" at="19,102,20,34" concept="7" />
+      <node id="134774857084154029" at="23,71,24,73" concept="7" />
+      <node id="134774857083932616" at="27,0,28,0" concept="3" trace="myTool" />
+      <node id="134774857083933313" at="29,44,30,18" concept="2" />
+      <node id="134774857083936270" at="33,42,34,27" concept="2" />
+      <node id="6817973709025646565" at="34,27,35,81" concept="2" />
+      <node id="3649115372189858303" at="39,37,40,34" concept="7" />
+      <node id="1384150945609710837" at="43,35,44,18" concept="7" />
+      <node id="134774857084151629" at="23,0,26,0" concept="10" trace="getInstance#(Ljetbrains/mps/openapi/editor/EditorContext;)Lcom/mbeddr/mpsutil/jfreechart/runtime/plugin/ChartManager;" />
+      <node id="134774857083933305" at="29,0,32,0" concept="1" trace="ChartManager#(Lcom/mbeddr/mpsutil/jfreechart/runtime/plugin/ChartTool_Tool;)V" />
+      <node id="1384150945609706860" at="43,0,46,0" concept="5" trace="getToolWindow#()Ljetbrains/mps/ide/tools/BaseTool;" />
+      <node id="134774857083934742" at="33,0,37,0" concept="5" trace="setChart#(Lorg/jfree/chart/JFreeChart;)V" />
+      <node id="3649115372189853998" at="38,0,42,0" concept="5" trace="getChartPanel#()Lorg/jfree/chart/ChartPanel;" />
+      <node id="134774857083853788" at="17,0,22,0" concept="10" trace="getInstance#(Ljetbrains/mps/project/Project;)Lcom/mbeddr/mpsutil/jfreechart/runtime/plugin/ChartManager;" />
+      <scope id="134774857084151630" at="23,71,24,73" />
+      <scope id="134774857083933309" at="29,44,30,18" />
+      <scope id="3649115372189854002" at="39,37,40,34" />
+      <scope id="1384150945609706864" at="43,35,44,18" />
+      <scope id="134774857083934746" at="33,42,35,81" />
+      <scope id="134774857083853728" at="17,62,20,34">
+        <var name="ideaProject" id="134774857083867026" />
+        <var name="tool" id="731208824373500263" />
+      </scope>
+      <scope id="134774857084151629" at="23,0,26,0">
+        <var name="editorContext" id="134774857084151642" />
+      </scope>
+      <scope id="134774857083933305" at="29,0,32,0">
+        <var name="tool" id="134774857083933312" />
+      </scope>
+      <scope id="1384150945609706860" at="43,0,46,0" />
+      <scope id="134774857083934742" at="33,0,37,0">
+        <var name="chart" id="134774857083935058" />
+      </scope>
+      <scope id="3649115372189853998" at="38,0,42,0" />
+      <scope id="134774857083853788" at="17,0,22,0">
+        <var name="mpsProject" id="134774857083853748" />
+      </scope>
+      <unit id="134774857083852902" at="15,0,47,0" name="com.mbeddr.mpsutil.jfreechart.runtime.plugin.ChartManager" />
+    </file>
+  </root>
+  <root nodeRef="r:8d0c5c47-17fd-4c51-b185-4bf2a45d5270(com.mbeddr.mpsutil.jfreechart.runtime.plugin)/2296766543766842086">
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="2296766543766842086" at="15,56,16,76" concept="6" />
+      <node id="2296766543766842086" at="17,73,18,17" concept="7" />
+      <node id="2296766543766842086" at="13,0,15,0" concept="1" trace="Runtime_ProjectPlugin#()V" />
+      <node id="2296766543766842086" at="15,0,20,0" concept="5" trace="initAllTools1#(Lcom/intellij/openapi/project/Project;)Ljava/util/List;" />
+      <scope id="2296766543766842086" at="13,34,13,34" />
+      <scope id="2296766543766842086" at="13,0,15,0" />
+      <scope id="2296766543766842086" at="15,56,18,17">
+        <var name="tools" id="2296766543766842086" />
+      </scope>
+      <scope id="2296766543766842086" at="15,0,20,0">
+        <var name="project" id="2296766543766842086" />
+      </scope>
+      <unit id="2296766543766842086" at="12,0,21,0" name="com.mbeddr.mpsutil.jfreechart.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:8d0c5c47-17fd-4c51-b185-4bf2a45d5270(com.mbeddr.mpsutil.jfreechart.runtime.plugin)/8168849627096600984">
+    <file name="ChartTool_Tool.java">
+      <node id="8168849627096600984" at="17,0,18,0" concept="9" trace="ICON" />
+      <node id="8168849627096601080" at="18,0,19,0" concept="3" trace="myComponent" />
+      <node id="134774857083869571" at="19,0,20,0" concept="3" trace="myChartPanel" />
+      <node id="134774857083889281" at="20,0,21,0" concept="3" trace="myChartManager" />
+      <node id="8168849627096600984" at="21,42,22,72" concept="11" />
+      <node id="8168849627096600984" at="24,37,25,24" concept="2" />
+      <node id="1384150945611000801" at="25,24,26,79" concept="2" />
+      <node id="1384150945612103854" at="26,79,27,68" concept="2" />
+      <node id="1384150945612104274" at="27,68,28,80" concept="2" />
+      <node id="1384150945612104283" at="28,80,29,82" concept="2" />
+      <node id="731208824373619205" at="29,82,30,0" concept="8" />
+      <node id="8168849627096600984" at="33,44,34,16" concept="7" />
+      <node id="1384150945609790636" at="37,51,38,63" concept="2" />
+      <node id="1384150945609790654" at="38,63,39,88" concept="2" />
+      <node id="1384150945609792994" at="39,88,40,42" concept="2" />
+      <node id="134774857083881588" at="41,12,42,55" concept="2" />
+      <node id="134774857083939182" at="45,41,46,46" concept="7" />
+      <node id="3649115372189856945" at="48,37,49,44" concept="7" />
+      <node id="8168849627096601939" at="51,36,52,43" concept="7" />
+      <node id="1384150945609791464" at="41,10,43,5" concept="0" />
+      <node id="8168849627096600984" at="21,0,24,0" concept="1" trace="ChartTool_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="134774857083887567" at="45,0,48,0" concept="5" trace="getChartManager#()Lcom/mbeddr/mpsutil/jfreechart/runtime/plugin/ChartManager;" />
+      <node id="3649115372189855483" at="48,0,51,0" concept="5" trace="getChartPanel#()Lorg/jfree/chart/ChartPanel;" />
+      <node id="8168849627096600984" at="51,0,54,0" concept="5" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="8168849627096600984" at="32,0,36,0" concept="5" trace="isInitiallyAvailable#()Z" />
+      <node id="1384150945609789767" at="36,42,43,5" concept="4" />
+      <node id="8168849627096600984" at="24,0,32,0" concept="5" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="134774857083840293" at="36,0,45,0" concept="5" trace="setChart#(Lorg/jfree/chart/JFreeChart;)V" />
+      <scope id="8168849627096600984" at="21,42,22,72" />
+      <scope id="8168849627096600984" at="33,44,34,16" />
+      <scope id="1384150945609791465" at="41,12,42,55" />
+      <scope id="134774857083887568" at="45,41,46,46" />
+      <scope id="3649115372189855484" at="48,37,49,44" />
+      <scope id="8168849627096600986" at="51,36,52,43" />
+      <scope id="8168849627096600984" at="21,0,24,0">
+        <var name="project" id="8168849627096600984" />
+      </scope>
+      <scope id="1384150945609789769" at="37,51,40,42" />
+      <scope id="134774857083887567" at="45,0,48,0" />
+      <scope id="3649115372189855483" at="48,0,51,0" />
+      <scope id="8168849627096600984" at="51,0,54,0" />
+      <scope id="8168849627096600984" at="32,0,36,0" />
+      <scope id="8168849627096600984" at="24,37,30,0" />
+      <scope id="134774857083840294" at="36,42,43,5" />
+      <scope id="8168849627096600984" at="24,0,32,0">
+        <var name="project" id="8168849627096600984" />
+      </scope>
+      <scope id="134774857083840293" at="36,0,45,0">
+        <var name="chart" id="134774857083880645" />
+      </scope>
+      <unit id="8168849627096600984" at="16,0,55,0" name="com.mbeddr.mpsutil.jfreechart.runtime.plugin.ChartTool_Tool" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="8168849627096600984" at="16,76,17,73" concept="2" />
+    </file>
+  </root>
+</debug-info>
+

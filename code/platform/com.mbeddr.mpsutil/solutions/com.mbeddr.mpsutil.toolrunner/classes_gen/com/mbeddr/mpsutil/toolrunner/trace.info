@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:eb55a79e-712e-453c-8ff8-d50d0340bc94(com.mbeddr.mpsutil.toolrunner)/4775168500935975079">
+    <file name="ToolRunnerBase.java">
+      <node id="1556050521165426352" at="27,0,28,0" concept="11" trace="DEBUG" />
+      <node id="4138212153599471299" at="32,0,33,0" concept="11" trace="DEBUG_RAW_OUTPUT" />
+      <node id="2263984427998441958" at="37,0,38,0" concept="11" trace="IGNORE_TIMEOUT" />
+      <node id="2576181890317142537" at="42,0,43,0" concept="3" trace="toolBinaryName" />
+      <node id="2263984427998441926" at="47,0,48,0" concept="3" trace="timeoutInSeconds" />
+      <node id="5966571986745551288" at="52,0,53,0" concept="3" trace="progress" />
+      <node id="8047597094484535316" at="57,0,58,0" concept="3" trace="externalProcessFinished" />
+      <node id="4352146189359797942" at="63,113,64,54" concept="8" />
+      <node id="5262790553052949123" at="71,117,72,84" concept="7" />
+      <node id="7094054118387082264" at="74,34,75,80" concept="7" />
+      <node id="7094054118387140405" at="75,80,76,28" concept="2" />
+      <node id="1340502417499923086" at="76,28,77,19" concept="8" />
+      <node id="2576181890317142546" at="78,7,79,37" concept="2" />
+      <node id="8184791574689442799" at="79,37,80,0" concept="10" />
+      <node id="8989352057116382679" at="80,0,81,61" concept="7" />
+      <node id="6749794909631766443" at="81,61,82,0" concept="10" />
+      <node id="8047597094484535346" at="82,0,83,38" concept="2" />
+      <node id="1556050521165698139" at="83,38,84,74" concept="7" />
+      <node id="8128417316881407509" at="84,74,85,0" concept="10" />
+      <node id="4352146189359797858" at="85,0,86,101" concept="7" />
+      <node id="4352146189359797866" at="86,101,87,100" concept="7" />
+      <node id="1950499544423374824" at="87,100,88,90" concept="7" />
+      <node id="3609160776669295288" at="88,90,89,0" concept="10" />
+      <node id="4352146189359797875" at="89,0,90,33" concept="2" />
+      <node id="4352146189359797879" at="90,33,91,32" concept="2" />
+      <node id="5966571986745564470" at="91,32,92,34" concept="2" />
+      <node id="1556050521166817991" at="92,34,93,0" concept="10" />
+      <node id="1556050521166619165" at="93,0,94,43" concept="7" />
+      <node id="8047597094484535325" at="94,43,95,37" concept="2" />
+      <node id="6749794909631296225" at="95,37,96,0" concept="10" />
+      <node id="4352146189359797889" at="96,0,97,32" concept="2" />
+      <node id="4352146189359797893" at="97,32,98,31" concept="2" />
+      <node id="1950499544422341115" at="98,31,99,0" concept="10" />
+      <node id="8989352057116383642" at="99,0,100,69" concept="7" />
+      <node id="6613342117101444120" at="100,69,101,53" concept="2" />
+      <node id="6749794909631818430" at="101,53,102,0" concept="10" />
+      <node id="1950499544422483060" at="102,0,103,62" concept="7" />
+      <node id="1950499544422586520" at="103,62,104,60" concept="7" />
+      <node id="3609160776669153286" at="104,60,105,0" concept="10" />
+      <node id="6075335868120635893" at="106,29,107,29" concept="2" />
+      <node id="4138212153599548161" at="107,29,108,96" concept="2" />
+      <node id="1556050521165323551" at="108,96,109,79" concept="2" />
+      <node id="6298751962779017764" at="109,79,110,53" concept="2" />
+      <node id="6075335868120666396" at="110,53,111,95" concept="2" />
+      <node id="1556050521165385713" at="111,95,112,78" concept="2" />
+      <node id="6298751962779046476" at="112,78,113,53" concept="2" />
+      <node id="6075335868120619129" at="114,7,115,0" concept="10" />
+      <node id="7225856839528317369" at="115,0,116,57" concept="7" />
+      <node id="7225856839528446786" at="116,57,117,50" concept="7" />
+      <node id="4352146189359797913" at="117,50,118,111" concept="8" />
+      <node id="1950499544421819145" at="119,27,120,26" concept="2" />
+      <node id="7094054118387148893" at="120,26,121,81" concept="7" />
+      <node id="7094054118387164825" at="121,81,122,33" concept="2" />
+      <node id="7094054118387212011" at="122,33,123,27" concept="2" />
+      <node id="1950499544421942605" at="123,27,124,20" concept="8" />
+      <node id="2263984427998480703" at="131,136,132,111" concept="7" />
+      <node id="3609160776665096083" at="132,111,133,71" concept="7" />
+      <node id="3609160776666434333" at="133,71,134,0" concept="10" />
+      <node id="1556050521166343458" at="134,0,135,55" concept="7" />
+      <node id="6613342117101366545" at="135,55,136,62" concept="2" />
+      <node id="6613342117101279238" at="137,22,138,48" concept="2" />
+      <node id="3609160776667467695" at="139,5,140,0" concept="10" />
+      <node id="3609160776665655333" at="140,0,141,62" concept="7" />
+      <node id="3609160776665697962" at="141,62,142,31" concept="2" />
+      <node id="3609160776668464971" at="142,31,143,31" concept="8" />
+      <node id="5214353767560287067" at="149,110,150,0" concept="10" />
+      <node id="5262790553052655965" at="150,0,151,40" concept="7" />
+      <node id="5214353767560287232" at="152,106,153,28" concept="2" />
+      <node id="5262790553052656042" at="154,5,155,0" concept="10" />
+      <node id="5262790553052656043" at="155,0,156,76" concept="7" />
+      <node id="5262790553052656050" at="156,76,157,60" concept="2" />
+      <node id="5262790553052656061" at="159,62,160,84" concept="2" />
+      <node id="5262790553052656077" at="163,28,164,82" concept="2" />
+      <node id="5262790553052671693" at="165,5,166,0" concept="10" />
+      <node id="5262790553052672514" at="166,0,167,20" concept="8" />
+      <node id="6260333588326238109" at="173,65,174,26" concept="7" />
+      <node id="6260333588326226830" at="174,26,175,38" concept="7" />
+      <node id="6260333588326579299" at="176,21,177,52" concept="9" />
+      <node id="6260333588326238960" at="177,52,178,35" concept="2" />
+      <node id="6260333588326908857" at="179,12,180,96" concept="9" />
+      <node id="6260333588326242114" at="180,96,181,38" concept="2" />
+      <node id="6260333588326244050" at="182,114,183,49" concept="2" />
+      <node id="7965708036552883188" at="185,5,186,124" concept="7" />
+      <node id="6613342117101305829" at="186,124,187,57" concept="2" />
+      <node id="4693609752085324953" at="187,57,188,43" concept="2" />
+      <node id="3783968736109487100" at="194,73,195,38" concept="8" />
+      <node id="4660122722994962784" at="202,16,203,80" concept="2" />
+      <node id="4765878051576517371" at="215,0,216,0" concept="3" trace="inputStream" />
+      <node id="4765878051576517375" at="220,0,221,0" concept="3" trace="result" />
+      <node id="4765878051576552971" at="225,0,226,0" concept="3" trace="thrownException" />
+      <node id="4765878051576522022" at="230,47,231,23" concept="2" />
+      <node id="5198379207739560974" at="238,11,239,78" concept="7" />
+      <node id="4765878051576522046" at="239,78,240,59" concept="7" />
+      <node id="4765878051576522058" at="240,59,241,59" concept="7" />
+      <node id="4765878051576552819" at="241,59,242,20" concept="7" />
+      <node id="4765878051576552906" at="243,48,244,57" concept="2" />
+      <node id="4765878051576552942" at="245,9,246,20" concept="2" />
+      <node id="4765878051576552975" at="247,33,248,30" concept="2" />
+      <node id="4765878051576552997" at="248,30,249,30" concept="2" />
+      <node id="4765878051576561067" at="257,36,258,30" concept="14" />
+      <node id="4765878051576561071" at="259,7,260,20" concept="8" />
+      <node id="4533751096833936449" at="267,0,268,0" concept="11" trace="IGNORE_TIMEOUT_MILLISECONDS" />
+      <node id="2263984427998441970" at="277,0,278,0" concept="3" trace="elapsedMilliSeconds" />
+      <node id="2263984427998442035" at="282,0,283,0" concept="3" trace="timeoutInMilliseconds" />
+      <node id="2263984427998442119" at="287,54,288,59" concept="2" />
+      <node id="2263984427998441975" at="294,23,295,30" concept="2" />
+      <node id="5966571986745556364" at="297,88,298,28" concept="2" />
+      <node id="2263984427998441996" at="298,28,299,37" concept="2" />
+      <node id="8047597094484473586" at="301,49,302,36" concept="2" />
+      <node id="5966571986745551643" at="304,29,305,28" concept="2" />
+      <node id="2263984427998442058" at="312,31,313,114" concept="8" />
+      <node id="5340625354058148218" at="320,48,321,45" concept="2" />
+      <node id="4746692087967406413" at="327,27,328,33" concept="8" />
+      <node id="6312602702210032680" at="334,42,335,20" concept="8" />
+      <node id="5340625354058298542" at="341,55,342,29" concept="2" />
+      <node id="5262790553052656072" at="345,55,346,43" concept="8" />
+      <node id="4352146189361166418" at="136,62,139,5" concept="5" />
+      <node id="5214353767560330446" at="151,40,154,5" concept="5" />
+      <node id="5262790553052656059" at="158,27,161,7" concept="5" />
+      <node id="5262790553052656073" at="162,5,165,5" concept="4" />
+      <node id="6260333588326244035" at="181,38,184,7" concept="5" />
+      <node id="3783968736109378647" at="194,0,197,0" concept="6" trace="createStreamReaderThread#(Ljava/io/InputStream;)Lcom/mbeddr/mpsutil/toolrunner/ToolRunnerBase/StreamReaderThread;" />
+      <node id="4660122722994959688" at="201,39,204,5" concept="5" />
+      <node id="4765878051576517365" at="230,0,233,0" concept="1" trace="StreamReaderThread#(Ljava/io/InputStream;)V" />
+      <node id="4765878051576552825" at="242,20,245,9" concept="16" />
+      <node id="4765878051576561047" at="256,62,259,7" concept="5" />
+      <node id="5966571986745551589" at="287,0,290,0" concept="1" trace="CancelWatcherThread#(I)V" />
+      <node id="5966571986745556447" at="300,9,303,9" concept="5" />
+      <node id="2263984427998442041" at="312,0,315,0" concept="6" trace="timeout#()Z" />
+      <node id="5340625354058081956" at="320,0,323,0" concept="6" trace="setTimeout#(I)V" />
+      <node id="4746692087967406411" at="327,0,330,0" concept="6" trace="getTimeout#()I" />
+      <node id="6312602702210021846" at="334,0,337,0" concept="6" trace="getProgress#()Lcom/intellij/openapi/progress/ProgressIndicator;" />
+      <node id="5340625354058236455" at="341,0,344,0" concept="6" trace="setProgress#(Lcom/intellij/openapi/progress/ProgressIndicator;)V" />
+      <node id="5262790553052656072" at="345,0,348,0" concept="12" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="7255863045967900447" at="62,0,66,0" concept="6" trace="runTool#(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/Iterable;)Lcom/mbeddr/mpsutil/toolrunner/ToolRunner/ToolRunResult;" />
+      <node id="5966571986745556334" at="296,11,300,9" concept="16" />
+      <node id="1340502417499814681" at="73,9,78,7" concept="5" />
+      <node id="5262790553052656055" at="157,60,162,5" concept="4" />
+      <node id="4660122722994959547" at="201,0,206,0" concept="12" trace="debug#(Ljava/lang/String;)V" />
+      <node id="6260333588326241566" at="179,10,185,5" concept="0" />
+      <node id="4765878051576553015" at="256,0,262,0" concept="6" trace="getReadLines#()Ljava/util/List;" />
+      <node id="6075335868120627266" at="105,0,114,7" concept="5" />
+      <node id="6260333588326234377" at="175,38,185,5" concept="5" />
+      <node id="5966571986745551603" at="295,30,306,7" concept="15" />
+      <node id="4765878051576552963" at="237,23,250,7" concept="15" />
+      <node id="9198550855648152850" at="131,0,145,0" concept="6" trace="doRunToolWithArgs#(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/Iterable;Ljava/io/File;)Ljava/lang/Process;" />
+      <node id="5966571986745551600" at="294,0,308,0" concept="6" trace="run#()V" />
+      <node id="4765878051576522040" at="237,0,252,0" concept="6" trace="run#()V" />
+      <node id="4693609752085324945" at="173,0,190,0" concept="6" trace="doKillExternalProcesses#()V" />
+      <node id="5262790553052636344" at="149,0,169,0" concept="6" trace="buildCmdArray#(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/Iterable;)Ljava/util/List;" />
+      <node id="1950499544421630433" at="72,84,125,5" concept="15" />
+      <node id="4352146189359797819" at="70,0,127,0" concept="6" trace="runTool#(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/Iterable;Ljava/io/File;)Lcom/mbeddr/mpsutil/toolrunner/ToolRunner/ToolRunResult;" />
+      <scope id="7255863045967900450" at="63,113,64,54" />
+      <scope id="4352146189361166419" at="137,22,138,48" />
+      <scope id="5214353767560330448" at="152,106,153,28" />
+      <scope id="5262790553052656060" at="159,62,160,84" />
+      <scope id="5262790553052656076" at="163,28,164,82" />
+      <scope id="6260333588326244049" at="182,114,183,49" />
+      <scope id="3783968736109378651" at="194,73,195,38" />
+      <scope id="4660122722994959689" at="202,16,203,80" />
+      <scope id="4765878051576517368" at="230,47,231,23" />
+      <scope id="4765878051576552827" at="243,48,244,57" />
+      <scope id="4765878051576561049" at="257,36,258,30" />
+      <scope id="5966571986745551592" at="287,54,288,59" />
+      <scope id="5966571986745556448" at="301,49,302,36" />
+      <scope id="5966571986745551642" at="304,29,305,28" />
+      <scope id="2263984427998442044" at="312,31,313,114" />
+      <scope id="5340625354058081959" at="320,48,321,45" />
+      <scope id="4746692087967406412" at="327,27,328,33" />
+      <scope id="6312602702210021849" at="334,42,335,20" />
+      <scope id="5340625354058236458" at="341,55,342,29" />
+      <scope id="5262790553052656072" at="345,55,346,43" />
+      <scope id="6260333588326234379" at="176,21,178,35" />
+      <scope id="4765878051576552969" at="247,33,249,30" />
+      <scope id="5966571986745556336" at="297,88,299,37" />
+      <scope id="5966571986745551639" at="304,7,306,7">
+        <var name="e" id="5966571986745551640" />
+      </scope>
+      <scope id="1340502417499814684" at="74,34,77,19">
+        <var name="res" id="7094054118387082265" />
+      </scope>
+      <scope id="5262790553052656058" at="158,27,161,7" />
+      <scope id="5262790553052656073" at="162,5,165,5">
+        <var name="f" id="5262790553052656074" />
+      </scope>
+      <scope id="3783968736109378647" at="194,0,197,0">
+        <var name="is" id="3783968736109468079" />
+      </scope>
+      <scope id="4660122722994959550" at="201,39,204,5" />
+      <scope id="4765878051576517365" at="230,0,233,0">
+        <var name="is" id="4765878051576522020" />
+      </scope>
+      <scope id="4765878051576552966" at="247,7,250,7">
+        <var name="ioe" id="4765878051576552967" />
+      </scope>
+      <scope id="5966571986745551589" at="287,0,290,0">
+        <var name="timeoutInSeconds" id="2263984427998442033" />
+      </scope>
+      <scope id="2263984427998442041" at="312,0,315,0" />
+      <scope id="5340625354058081956" at="320,0,323,0">
+        <var name="timeoutInSeconds" id="5340625354058117492" />
+      </scope>
+      <scope id="4746692087967406411" at="327,0,330,0" />
+      <scope id="6312602702210021846" at="334,0,337,0" />
+      <scope id="5340625354058236455" at="341,0,344,0">
+        <var name="progress" id="5340625354058272349" />
+      </scope>
+      <scope id="5262790553052656072" at="345,0,348,0">
+        <var name="str" id="5262790553052656072" />
+      </scope>
+      <scope id="7255863045967900447" at="62,0,66,0">
+        <var name="args" id="7255863045967900476" />
+        <var name="files" id="7255863045967900460" />
+        <var name="toolBinaryName" id="7255863045967900462" />
+      </scope>
+      <scope id="4765878051576553018" at="256,62,260,20" />
+      <scope id="1950499544421630442" at="119,27,124,20">
+        <var name="result" id="7094054118387148894" />
+      </scope>
+      <scope id="5262790553052656055" at="157,60,162,5">
+        <var name="a" id="5262790553052656057" />
+      </scope>
+      <scope id="6260333588326241567" at="179,12,184,7" />
+      <scope id="4660122722994959547" at="201,0,206,0">
+        <var name="s" id="4660122722994959665" />
+      </scope>
+      <scope id="1950499544421630436" at="119,5,125,5">
+        <var name="e" id="1950499544421630438" />
+      </scope>
+      <scope id="4765878051576553015" at="256,0,262,0" />
+      <scope id="6075335868120627269" at="106,29,113,53" />
+      <scope id="5966571986745551604" at="296,11,303,9" />
+      <scope id="4765878051576552964" at="238,11,246,20">
+        <var name="bis" id="5198379207739560975" />
+        <var name="br" id="4765878051576522059" />
+        <var name="isr" id="4765878051576522047" />
+        <var name="line" id="4765878051576552820" />
+      </scope>
+      <scope id="9198550855648152853" at="131,136,143,31">
+        <var name="cmdArray" id="3609160776665096086" />
+        <var name="cmdString" id="1556050521166343461" />
+        <var name="procBuilder" id="3609160776665655334" />
+        <var name="timeoutInfo" id="2263984427998480704" />
+      </scope>
+      <scope id="5966571986745551602" at="294,23,306,7" />
+      <scope id="4765878051576522042" at="237,23,250,7" />
+      <scope id="9198550855648152850" at="131,0,145,0">
+        <var name="args" id="9198550855648152895" />
+        <var name="dir" id="4352146189359797962" />
+        <var name="files" id="9198550855648152887" />
+        <var name="toolBinaryName" id="9198550855648152889" />
+      </scope>
+      <scope id="5966571986745551600" at="294,0,308,0" />
+      <scope id="4693609752085324948" at="173,65,188,43">
+        <var name="f" id="6260333588326226831" />
+        <var name="killCommand" id="7965708036552883189" />
+        <var name="runProgramName" id="6260333588326238110" />
+      </scope>
+      <scope id="4765878051576522040" at="237,0,252,0" />
+      <scope id="4693609752085324945" at="173,0,190,0" />
+      <scope id="5262790553052636347" at="149,110,167,20">
+        <var name="cmdArray" id="5262790553052656044" />
+        <var name="programName" id="5262790553052655966" />
+      </scope>
+      <scope id="5262790553052636344" at="149,0,169,0">
+        <var name="args" id="5262790553052647164" />
+        <var name="files" id="5262790553052647159" />
+        <var name="toolBinaryName" id="5262790553052647162" />
+      </scope>
+      <scope id="1950499544421630435" at="73,9,118,111">
+        <var name="cancelWatcherThread" id="1950499544423374825" />
+        <var name="delay" id="8989352057116383643" />
+        <var name="error" id="1950499544422586521" />
+        <var name="errorReaderThread" id="4352146189359797867" />
+        <var name="exitCode" id="1556050521166619168" />
+        <var name="output" id="1950499544422483061" />
+        <var name="outputReaderThread" id="4352146189359797859" />
+        <var name="startingTimeInMillis" id="8989352057116382680" />
+        <var name="toolProcess" id="1556050521165698140" />
+        <var name="wasCanceled" id="7225856839528446787" />
+        <var name="wasTimeout" id="7225856839528317370" />
+      </scope>
+      <scope id="4352146189359797829" at="71,117,125,5">
+        <var name="ranCommand" id="5262790553052949126" />
+      </scope>
+      <scope id="4352146189359797819" at="70,0,127,0">
+        <var name="args" id="4352146189359797824" />
+        <var name="dir" id="4352146189359797935" />
+        <var name="files" id="4352146189359797820" />
+        <var name="toolName" id="4352146189359797822" />
+      </scope>
+      <unit id="5966571986745551574" at="272,0,316,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunnerBase$CancelWatcherThread" />
+      <unit id="4765878051576517363" at="210,0,263,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunnerBase$StreamReaderThread" />
+      <unit id="4775168500935975079" at="22,0,349,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunnerBase" />
+    </file>
+  </root>
+  <root nodeRef="r:eb55a79e-712e-453c-8ff8-d50d0340bc94(com.mbeddr.mpsutil.toolrunner)/5340625354062343508">
+    <file name="ToolRunner.java">
+      <node id="5340625354062672014" at="21,0,22,0" concept="6" trace="runTool#(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/Iterable;)Lcom/mbeddr/mpsutil/toolrunner/ToolRunner/ToolRunResult;" />
+      <node id="5340625354062660652" at="32,0,33,0" concept="6" trace="runTool#(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/Iterable;Ljava/io/File;)Lcom/mbeddr/mpsutil/toolrunner/ToolRunner/ToolRunResult;" />
+      <node id="5340625354063189225" at="34,0,35,0" concept="6" trace="setTimeout#(I)V" />
+      <node id="5340625354063205247" at="35,0,36,0" concept="6" trace="setProgress#(Lcom/intellij/openapi/progress/ProgressIndicator;)V" />
+      <node id="5262790553052840822" at="45,0,46,0" concept="3" trace="ranCommand" />
+      <node id="5340625354062416084" at="47,0,48,0" concept="3" trace="outputResult" />
+      <node id="5340625354062416088" at="48,0,49,0" concept="3" trace="errorResult" />
+      <node id="5340625354062416092" at="49,0,50,0" concept="3" trace="exitCode" />
+      <node id="5340625354062416095" at="50,0,51,0" concept="3" trace="delay" />
+      <node id="5340625354062416098" at="51,0,52,0" concept="3" trace="timeout" />
+      <node id="1387689101380099322" at="52,0,53,0" concept="3" trace="canceled" />
+      <node id="7094054118387019781" at="53,0,54,0" concept="3" trace="runtimeError" />
+      <node id="7094054118387195337" at="54,0,55,0" concept="3" trace="exception" />
+      <node id="5262790553052857894" at="56,147,57,35" concept="2" />
+      <node id="5340625354062416106" at="57,35,58,28" concept="2" />
+      <node id="5340625354062416110" at="58,28,59,26" concept="2" />
+      <node id="5340625354062416114" at="59,26,60,25" concept="2" />
+      <node id="5340625354062416120" at="60,25,61,29" concept="2" />
+      <node id="1387689101380099716" at="61,29,62,31" concept="2" />
+      <node id="5340625354062416126" at="62,31,63,31" concept="2" />
+      <node id="7094054118387030206" at="63,31,64,32" concept="2" />
+      <node id="5262790553052892812" at="67,45,68,35" concept="2" />
+      <node id="1340502417499482496" at="68,35,69,69" concept="2" />
+      <node id="1340502417499482500" at="69,69,70,68" concept="2" />
+      <node id="1340502417499482504" at="70,68,71,21" concept="2" />
+      <node id="1340502417499482512" at="71,21,72,27" concept="2" />
+      <node id="1340502417499482519" at="72,27,73,28" concept="2" />
+      <node id="1340502417499482526" at="73,28,74,25" concept="2" />
+      <node id="7094054118387038085" at="74,25,75,32" concept="2" />
+      <node id="5340625354062416148" at="78,37,79,49" concept="7" />
+      <node id="5340625354062416153" at="79,49,80,87" concept="2" />
+      <node id="5340625354062416169" at="80,87,81,27" concept="8" />
+      <node id="5340625354062416178" at="84,36,85,49" concept="7" />
+      <node id="5340625354062416183" at="85,49,86,86" concept="2" />
+      <node id="5340625354062416199" at="86,86,87,27" concept="8" />
+      <node id="5340625354062416209" at="90,28,91,19" concept="8" />
+      <node id="5340625354062995295" at="96,32,97,146" concept="13" />
+      <node id="516458779571042964" at="105,0,106,0" concept="6" trace="createNewToolRunner#()null" />
+      <node id="5340625354062416205" at="90,0,93,0" concept="6" trace="getDelay#()J" />
+      <node id="5340625354062994161" at="96,0,99,0" concept="1" trace="LazyToolRunResult#()V" />
+      <node id="5340625354062416145" at="78,0,83,0" concept="6" trace="getOutputString#()Ljava/lang/String;" />
+      <node id="5340625354062416175" at="84,0,89,0" concept="6" trace="getErrorString#()Ljava/lang/String;" />
+      <node id="5340625354062416102" at="56,0,66,0" concept="1" trace="ToolRunResult#(Ljava/lang/String;Ljava/util/List;Ljava/util/List;JZZI)V" />
+      <node id="1340502417499468053" at="67,0,77,0" concept="1" trace="ToolRunResult#(Ljava/lang/String;)V" />
+      <scope id="5340625354062672014" at="21,0,22,0">
+        <var name="argsList" id="5340625354062672019" />
+        <var name="files" id="5340625354062672015" />
+        <var name="toolBinaryName" id="5340625354062672017" />
+      </scope>
+      <scope id="5340625354062660652" at="32,0,33,0">
+        <var name="args" id="5340625354062666579" />
+        <var name="dir" id="5340625354062666582" />
+        <var name="files" id="5340625354062666575" />
+        <var name="toolBinaryName" id="5340625354062666577" />
+      </scope>
+      <scope id="5340625354063189225" at="34,0,35,0">
+        <var name="timeout" id="5340625354063197404" />
+      </scope>
+      <scope id="5340625354063205247" at="35,0,36,0">
+        <var name="progress" id="5340625354063213546" />
+      </scope>
+      <scope id="5340625354062416208" at="90,28,91,19" />
+      <scope id="5340625354062994164" at="96,32,97,146" />
+      <scope id="516458779571042964" at="105,0,106,0" />
+      <scope id="5340625354062416147" at="78,37,81,27">
+        <var name="sb" id="5340625354062416149" />
+      </scope>
+      <scope id="5340625354062416177" at="84,36,87,27">
+        <var name="sb" id="5340625354062416179" />
+      </scope>
+      <scope id="5340625354062416205" at="90,0,93,0" />
+      <scope id="5340625354062994161" at="96,0,99,0" />
+      <scope id="5340625354062416145" at="78,0,83,0" />
+      <scope id="5340625354062416175" at="84,0,89,0" />
+      <scope id="5340625354062416105" at="56,147,64,32" />
+      <scope id="1340502417499468057" at="67,45,75,32" />
+      <scope id="5340625354062416102" at="56,0,66,0">
+        <var name="canceled" id="1387689101380099584" />
+        <var name="delay" id="5340625354062416138" />
+        <var name="error" id="5340625354062416135" />
+        <var name="exitCode" id="5340625354062416142" />
+        <var name="output" id="5340625354062416132" />
+        <var name="ranCommand" id="5262790553052797138" />
+        <var name="timeout" id="5340625354062416140" />
+      </scope>
+      <scope id="1340502417499468053" at="67,0,77,0">
+        <var name="ranCommand" id="5262790553052888901" />
+      </scope>
+      <unit id="516458779571039156" at="104,0,107,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunner$ToolRunnerFactory" />
+      <unit id="5340625354062986306" at="95,0,100,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunner$LazyToolRunResult" />
+      <unit id="5340625354062416082" at="40,0,94,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunner$ToolRunResult" />
+      <unit id="5340625354062343508" at="11,0,108,0" name="com.mbeddr.mpsutil.toolrunner.ToolRunner" />
+    </file>
+  </root>
+  <root nodeRef="r:eb55a79e-712e-453c-8ff8-d50d0340bc94(com.mbeddr.mpsutil.toolrunner)/8869103559931921994">
+    <file name="ToolsAvailabilityChecker.java">
+      <node id="8869103559931939477" at="15,0,16,0" concept="6" trace="categoryName#()Ljava/lang/String;" />
+      <node id="8869103559931923144" at="20,0,21,0" concept="6" trace="checkAvailability#(Ljava/util/List;)Z" />
+      <scope id="8869103559931939477" at="15,0,16,0" />
+      <scope id="8869103559931923144" at="20,0,21,0">
+        <var name="messages" id="9051752573561054004" />
+      </scope>
+      <unit id="8869103559931921994" at="10,0,23,0" name="com.mbeddr.mpsutil.toolrunner.ToolsAvailabilityChecker" />
+    </file>
+  </root>
+  <root nodeRef="r:eb55a79e-712e-453c-8ff8-d50d0340bc94(com.mbeddr.mpsutil.toolrunner)/8869103559931948976">
+    <file name="ToolsInstallationSanityChecker.java">
+      <node id="5924512713690973139" at="18,79,19,179" concept="7" />
+      <node id="8869103559931957903" at="19,179,20,0" concept="10" />
+      <node id="4168855316138772436" at="20,0,21,57" concept="2" />
+      <node id="8869103559931971262" at="23,54,24,67" concept="7" />
+      <node id="8869103559931971086" at="25,36,26,23" concept="8" />
+      <node id="4168855316138782964" at="29,5,30,58" concept="2" />
+      <node id="8869103559931972591" at="30,58,31,0" concept="10" />
+      <node id="8869103559931973685" at="31,0,32,16" concept="8" />
+      <node id="8869103559931968703" at="24,67,27,9" concept="5" />
+      <node id="8869103559931958493" at="22,103,28,7" concept="5" />
+      <node id="8869103559931949210" at="21,57,29,5" concept="4" />
+      <node id="8869103559931949116" at="18,0,34,0" concept="12" trace="check#(Ljava/lang/String;Ljava/util/List;)Z" />
+      <scope id="8869103559931968704" at="25,36,26,23" />
+      <scope id="8869103559931958494" at="23,54,27,9">
+        <var name="availabilityResult" id="8869103559931971263" />
+      </scope>
+      <scope id="8869103559931949213" at="22,103,28,7" />
+      <scope id="8869103559931949210" at="21,57,29,5">
+        <var name="c" id="8869103559931949211" />
+      </scope>
+      <scope id="8869103559931949119" at="18,79,32,16">
+        <var name="toolsSanityCheckerProvider" id="5924512713690973140" />
+      </scope>
+      <scope id="8869103559931949116" at="18,0,34,0">
+        <var name="messages" id="9051752573561312097" />
+        <var name="toolCategoryName" id="8869103559931949148" />
+      </scope>
+      <unit id="8869103559931948976" at="13,0,35,0" name="com.mbeddr.mpsutil.toolrunner.ToolsInstallationSanityChecker" />
+    </file>
+  </root>
+</debug-info>
+

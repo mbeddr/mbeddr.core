@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:f99898f8-594f-4be9-a26e-b68a09c45444(com.mbeddr.mpsutil.placeholderTextList.runtime.rt)/7834514260738554780">
+    <file name="NoInsertOverride.java">
+      <node id="1481441403220708934" at="15,0,16,0" concept="2" trace="myDisableInsertOverride" />
+      <node id="5576040203486664072" at="17,124,18,52" concept="6" />
+      <node id="1481441403221111415" at="23,40,24,37" concept="1" />
+      <node id="1481441403221227542" at="24,37,25,72" concept="1" />
+      <node id="1481441403220526575" at="26,5,27,33" concept="5" />
+      <node id="1481441403221984463" at="32,34,33,38" concept="1" />
+      <node id="1481441403221424190" at="33,38,34,18" concept="5" />
+      <node id="7453862918668959884" at="35,5,36,29" concept="5" />
+      <node id="5576040203486566246" at="17,0,20,0" concept="0" trace="NoInsertOverride#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/nodeEditor/cellLayout/CellLayout;Ljetbrains/mps/nodeEditor/cellProviders/AbstractCellListHandler;)V" />
+      <node id="1481441403220606111" at="22,52,26,5" concept="3" />
+      <node id="1481441403221358689" at="31,44,35,5" concept="3" />
+      <node id="1481441403220526562" at="21,0,29,0" concept="4" trace="getAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;)Ljetbrains/mps/openapi/editor/cells/CellAction;" />
+      <node id="7834514260738579226" at="30,0,38,0" concept="4" trace="getParent#()Ljetbrains/mps/nodeEditor/cells/EditorCell_Collection;" />
+      <scope id="5576040203486566249" at="17,124,18,52" />
+      <scope id="1481441403220606114" at="23,40,25,72" />
+      <scope id="1481441403221358692" at="32,34,34,18" />
+      <scope id="5576040203486566246" at="17,0,20,0">
+        <var name="cellLayout" id="5576040203484010585" />
+        <var name="editorContext" id="5576040203484010581" />
+        <var name="handler" id="5576040203484010587" />
+        <var name="node" id="5576040203484010583" />
+      </scope>
+      <scope id="1481441403220526571" at="22,52,27,33" />
+      <scope id="7834514260738579232" at="31,44,36,29" />
+      <scope id="1481441403220526562" at="21,0,29,0">
+        <var name="type" id="1481441403220526566" />
+      </scope>
+      <scope id="7834514260738579226" at="30,0,38,0" />
+      <unit id="7834514260738554780" at="14,0,39,0" name="com.mbeddr.mpsutil.placeholderTextList.runtime.rt.NoInsertOverride" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="Generator.java">
+      <unit at="19,0,49,0" name="com.mbeddr.cc.trace.Generator" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/4063685773204583504">
+    <file name="GenPlanModelFinder.java">
+      <node id="4063685773204583506" at="17,0,18,0" concept="4" trace="myRepository" />
+      <node id="4063685773204583545" at="19,62,20,30" concept="3" />
+      <node id="4063685773204583577" at="23,49,24,89" concept="9" />
+      <node id="4063685773204583596" at="27,57,28,50" concept="8" />
+      <node id="4063685773204583620" at="28,50,29,96" concept="8" />
+      <node id="4063685773204878764" at="30,24,31,67" concept="8" />
+      <node id="4063685773204583635" at="32,33,33,50" concept="9" />
+      <node id="4063685773204583643" at="35,5,36,16" concept="9" />
+      <node id="4063685773204583675" at="40,79,41,59" concept="8" />
+      <node id="4063685773204583687" at="42,42,43,17" concept="2" />
+      <node id="4063685773204583689" at="44,7,45,102" concept="8" />
+      <node id="4063685773204583705" at="46,27,47,17" concept="2" />
+      <node id="4063685773204583710" at="48,7,49,60" concept="8" />
+      <node id="4063685773204583743" at="49,60,50,23" concept="9" />
+      <node id="4063685773204583754" at="51,5,52,16" concept="9" />
+      <node id="4063685773204583766" at="55,85,56,48" concept="8" />
+      <node id="4063685773204583776" at="57,21,58,16" concept="9" />
+      <node id="4063685773204583778" at="59,5,60,36" concept="3" />
+      <node id="4063685773204583789" at="61,21,62,16" concept="9" />
+      <node id="4063685773204640347" at="63,5,64,16" concept="9" />
+      <node id="4063685773204583539" at="19,0,22,0" concept="1" trace="GenPlanModelFinder#(Lorg/jetbrains/mps/openapi/module/SRepository;)V" />
+      <node id="4063685773204583572" at="23,0,26,0" concept="7" trace="hasPlan#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="4063685773204894907" at="31,67,34,7" concept="6" />
+      <node id="4063685773204583679" at="41,59,44,7" concept="6" />
+      <node id="4063685773204583699" at="45,102,48,7" concept="6" />
+      <node id="4063685773204583770" at="56,48,59,5" concept="6" />
+      <node id="4063685773204583783" at="60,36,63,5" concept="6" />
+      <node id="4063685773204860115" at="29,96,35,5" concept="6" />
+      <node id="4063685773204583590" at="26,0,38,0" concept="7" trace="planModelFromCustomFacet#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <node id="4063685773204583652" at="39,52,51,5" concept="5" />
+      <node id="4063685773204583758" at="54,0,66,0" concept="7" trace="getPlanModel#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <node id="4063685773204583647" at="38,0,54,0" concept="7" trace="planModelFromDevKit#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <scope id="4063685773204583544" at="19,62,20,30" />
+      <scope id="4063685773204583576" at="23,49,24,89" />
+      <scope id="4063685773204894909" at="32,33,33,50" />
+      <scope id="4063685773204583686" at="42,42,43,17" />
+      <scope id="4063685773204583704" at="46,27,47,17" />
+      <scope id="4063685773204583775" at="57,21,58,16" />
+      <scope id="4063685773204583788" at="61,21,62,16" />
+      <scope id="4063685773204583539" at="19,0,22,0">
+        <var name="repository" id="4063685773204583541" />
+      </scope>
+      <scope id="4063685773204583572" at="23,0,26,0">
+        <var name="model" id="4063685773204583573" />
+      </scope>
+      <scope id="4063685773204860117" at="30,24,34,7">
+        <var name="planModelRef" id="4063685773204878765" />
+      </scope>
+      <scope id="4063685773204583594" at="27,57,36,16">
+        <var name="facet" id="4063685773204583619" />
+        <var name="ownerModule" id="4063685773204583595" />
+      </scope>
+      <scope id="4063685773204583764" at="55,85,64,16">
+        <var name="rv" id="4063685773204583765" />
+      </scope>
+      <scope id="4063685773204583654" at="40,79,50,23">
+        <var name="dkModule" id="4063685773204583674" />
+        <var name="dkPlan" id="4063685773204583688" />
+        <var name="planModel" id="4063685773204583709" />
+      </scope>
+      <scope id="4063685773204583590" at="26,0,38,0">
+        <var name="model" id="4063685773204583592" />
+      </scope>
+      <scope id="4063685773204583652" at="39,52,51,5">
+        <var name="dkRef" id="4063685773204583745" />
+      </scope>
+      <scope id="4063685773204583758" at="54,0,66,0">
+        <var name="model" id="4063685773204583760" />
+      </scope>
+      <scope id="4063685773204583651" at="39,52,52,16" />
+      <scope id="4063685773204583647" at="38,0,54,0">
+        <var name="model" id="4063685773204583649" />
+      </scope>
+      <unit id="4063685773204583504" at="16,0,67,0" name="com.mbeddr.mpsutil.buildassistant.plugin.GenPlanModelFinder" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/4063685773265895950">
+    <file name="BuildDependencies_Module_Action.java">
+      <node id="4063685773265895950" at="19,0,20,0" concept="12" trace="ICON" />
+      <node id="4063685773265895950" at="21,44,22,46" concept="13" />
+      <node id="4063685773265895950" at="22,46,23,35" concept="3" />
+      <node id="4063685773265895950" at="23,35,24,52" concept="3" />
+      <node id="4063685773265895950" at="24,52,25,29" concept="3" />
+      <node id="4063685773265895950" at="28,32,29,16" concept="9" />
+      <node id="4063685773265895950" at="33,53,34,19" concept="9" />
+      <node id="4063685773265895966" at="36,5,37,66" concept="8" />
+      <node id="4063685773265895967" at="38,22,39,21" concept="9" />
+      <node id="4063685773265906416" at="42,5,43,65" concept="8" />
+      <node id="4063685773265906417" at="44,22,45,21" concept="9" />
+      <node id="4063685773265906417" at="47,24,48,21" concept="9" />
+      <node id="4063685773265895950" at="50,5,51,16" concept="9" />
+      <node id="4063685773265909244" at="54,96,55,100" concept="8" />
+      <node id="4063685773265911859" at="56,92,57,27" concept="3" />
+      <node id="4063685773265895953" at="58,5,59,25" concept="3" />
+      <node id="4063685773265895950" at="32,95,35,5" concept="6" />
+      <node id="4063685773265895967" at="37,66,40,7" concept="6" />
+      <node id="4063685773265906417" at="43,65,46,7" concept="6" />
+      <node id="4063685773265906417" at="46,7,49,7" concept="6" />
+      <node id="4063685773265910759" at="55,100,58,5" concept="5" />
+      <node id="4063685773265895950" at="27,0,31,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="4063685773265895950" at="21,0,27,0" concept="1" trace="BuildDependencies_Module_Action#()V" />
+      <node id="4063685773265895966" at="35,5,41,5" concept="0" />
+      <node id="4063685773265895950" at="53,0,61,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4063685773265906416" at="41,5,50,5" concept="0" />
+      <node id="4063685773265895950" at="31,0,53,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="4063685773265895950" at="28,32,29,16" />
+      <scope id="4063685773265895950" at="33,53,34,19" />
+      <scope id="4063685773265895967" at="38,22,39,21" />
+      <scope id="4063685773265906417" at="44,22,45,21" />
+      <scope id="4063685773265906417" at="47,24,48,21" />
+      <scope id="4063685773265910765" at="56,92,57,27" />
+      <scope id="4063685773265910759" at="55,100,58,5">
+        <var name="module" id="4063685773265910761" />
+      </scope>
+      <scope id="4063685773265895950" at="21,44,25,29" />
+      <scope id="4063685773265895950" at="27,0,31,0" />
+      <scope id="4063685773265895966" at="36,5,40,7">
+        <var name="p" id="4063685773265895966" />
+      </scope>
+      <scope id="4063685773265895950" at="54,96,59,25">
+        <var name="builder" id="4063685773265909245" />
+      </scope>
+      <scope id="4063685773265895950" at="21,0,27,0" />
+      <scope id="4063685773265906416" at="42,5,49,7">
+        <var name="p" id="4063685773265906416" />
+      </scope>
+      <scope id="4063685773265895950" at="53,0,61,0">
+        <var name="_params" id="4063685773265895950" />
+        <var name="event" id="4063685773265895950" />
+      </scope>
+      <scope id="4063685773265895950" at="32,95,51,16" />
+      <scope id="4063685773265895950" at="31,0,53,0">
+        <var name="_params" id="4063685773265895950" />
+        <var name="event" id="4063685773265895950" />
+      </scope>
+      <unit id="4063685773265895950" at="18,0,62,0" name="com.mbeddr.mpsutil.buildassistant.plugin.BuildDependencies_Module_Action" />
+    </file>
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="4063685773265895950" at="22,52,23,53" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/4063685773265920475">
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="4063685773265920475" at="25,54,26,55" concept="3" />
+    </file>
+    <file name="RebuildDependencies_Module_Action.java">
+      <node id="4063685773265920475" at="19,0,20,0" concept="12" trace="ICON" />
+      <node id="4063685773265920475" at="21,46,22,49" concept="13" />
+      <node id="4063685773265920475" at="22,49,23,35" concept="3" />
+      <node id="4063685773265920475" at="23,35,24,52" concept="3" />
+      <node id="4063685773265920475" at="24,52,25,29" concept="3" />
+      <node id="4063685773265920475" at="28,32,29,16" concept="9" />
+      <node id="4063685773265920475" at="33,53,34,19" concept="9" />
+      <node id="4063685773265920501" at="36,5,37,66" concept="8" />
+      <node id="4063685773265920502" at="38,22,39,21" concept="9" />
+      <node id="4063685773265920503" at="42,5,43,65" concept="8" />
+      <node id="4063685773265920504" at="44,22,45,21" concept="9" />
+      <node id="4063685773265920504" at="47,24,48,21" concept="9" />
+      <node id="4063685773265920475" at="50,5,51,16" concept="9" />
+      <node id="4063685773265920478" at="54,96,55,100" concept="8" />
+      <node id="4063685773265920492" at="56,92,57,27" concept="3" />
+      <node id="4063685773265920497" at="58,5,59,27" concept="3" />
+      <node id="4063685773265920475" at="32,95,35,5" concept="6" />
+      <node id="4063685773265920502" at="37,66,40,7" concept="6" />
+      <node id="4063685773265920504" at="43,65,46,7" concept="6" />
+      <node id="4063685773265920504" at="46,7,49,7" concept="6" />
+      <node id="4063685773265920486" at="55,100,58,5" concept="5" />
+      <node id="4063685773265920475" at="27,0,31,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="4063685773265920475" at="21,0,27,0" concept="1" trace="RebuildDependencies_Module_Action#()V" />
+      <node id="4063685773265920501" at="35,5,41,5" concept="0" />
+      <node id="4063685773265920475" at="53,0,61,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4063685773265920503" at="41,5,50,5" concept="0" />
+      <node id="4063685773265920475" at="31,0,53,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="4063685773265920475" at="28,32,29,16" />
+      <scope id="4063685773265920475" at="33,53,34,19" />
+      <scope id="4063685773265920502" at="38,22,39,21" />
+      <scope id="4063685773265920504" at="44,22,45,21" />
+      <scope id="4063685773265920504" at="47,24,48,21" />
+      <scope id="4063685773265920491" at="56,92,57,27" />
+      <scope id="4063685773265920486" at="55,100,58,5">
+        <var name="module" id="4063685773265920487" />
+      </scope>
+      <scope id="4063685773265920475" at="21,46,25,29" />
+      <scope id="4063685773265920475" at="27,0,31,0" />
+      <scope id="4063685773265920501" at="36,5,40,7">
+        <var name="p" id="4063685773265920501" />
+      </scope>
+      <scope id="4063685773265920475" at="54,96,59,27">
+        <var name="builder" id="4063685773265920479" />
+      </scope>
+      <scope id="4063685773265920475" at="21,0,27,0" />
+      <scope id="4063685773265920503" at="42,5,49,7">
+        <var name="p" id="4063685773265920503" />
+      </scope>
+      <scope id="4063685773265920475" at="53,0,61,0">
+        <var name="_params" id="4063685773265920475" />
+        <var name="event" id="4063685773265920475" />
+      </scope>
+      <scope id="4063685773265920475" at="32,95,51,16" />
+      <scope id="4063685773265920475" at="31,0,53,0">
+        <var name="_params" id="4063685773265920475" />
+        <var name="event" id="4063685773265920475" />
+      </scope>
+      <unit id="4063685773265920475" at="18,0,62,0" name="com.mbeddr.mpsutil.buildassistant.plugin.RebuildDependencies_Module_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/4063685773265924503">
+    <file name="BuildDependencies_Project_Action.java">
+      <node id="4063685773265924503" at="17,0,18,0" concept="12" trace="ICON" />
+      <node id="4063685773265924503" at="19,45,20,47" concept="13" />
+      <node id="4063685773265924503" at="20,47,21,35" concept="3" />
+      <node id="4063685773265924503" at="21,35,22,52" concept="3" />
+      <node id="4063685773265924503" at="22,52,23,29" concept="3" />
+      <node id="4063685773265924503" at="26,32,27,16" concept="9" />
+      <node id="4063685773265924503" at="31,53,32,19" concept="9" />
+      <node id="4063685773265924529" at="34,5,35,66" concept="8" />
+      <node id="4063685773265924530" at="36,22,37,21" concept="9" />
+      <node id="4063685773265924503" at="39,5,40,16" concept="9" />
+      <node id="4063685773265924506" at="43,96,44,100" concept="8" />
+      <node id="4063685773265924520" at="45,116,46,27" concept="3" />
+      <node id="4063685773265924525" at="47,5,48,25" concept="3" />
+      <node id="4063685773265924503" at="30,95,33,5" concept="6" />
+      <node id="4063685773265924530" at="35,66,38,7" concept="6" />
+      <node id="4063685773265924514" at="44,100,47,5" concept="5" />
+      <node id="4063685773265924503" at="25,0,29,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="4063685773265924503" at="19,0,25,0" concept="1" trace="BuildDependencies_Project_Action#()V" />
+      <node id="4063685773265924529" at="33,5,39,5" concept="0" />
+      <node id="4063685773265924503" at="42,0,50,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4063685773265924503" at="29,0,42,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="4063685773265924503" at="26,32,27,16" />
+      <scope id="4063685773265924503" at="31,53,32,19" />
+      <scope id="4063685773265924530" at="36,22,37,21" />
+      <scope id="4063685773265924519" at="45,116,46,27" />
+      <scope id="4063685773265924514" at="44,100,47,5">
+        <var name="module" id="4063685773265924515" />
+      </scope>
+      <scope id="4063685773265924503" at="19,45,23,29" />
+      <scope id="4063685773265924503" at="25,0,29,0" />
+      <scope id="4063685773265924529" at="34,5,38,7">
+        <var name="p" id="4063685773265924529" />
+      </scope>
+      <scope id="4063685773265924503" at="43,96,48,25">
+        <var name="builder" id="4063685773265924507" />
+      </scope>
+      <scope id="4063685773265924503" at="19,0,25,0" />
+      <scope id="4063685773265924503" at="42,0,50,0">
+        <var name="_params" id="4063685773265924503" />
+        <var name="event" id="4063685773265924503" />
+      </scope>
+      <scope id="4063685773265924503" at="30,95,40,16" />
+      <scope id="4063685773265924503" at="29,0,42,0">
+        <var name="_params" id="4063685773265924503" />
+        <var name="event" id="4063685773265924503" />
+      </scope>
+      <unit id="4063685773265924503" at="16,0,51,0" name="com.mbeddr.mpsutil.buildassistant.plugin.BuildDependencies_Project_Action" />
+    </file>
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="4063685773265924503" at="23,53,24,54" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/4063685773265946856">
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="4063685773265946856" at="26,55,27,56" concept="3" />
+    </file>
+    <file name="RebuildDependencies_Project_Action.java">
+      <node id="4063685773265946856" at="17,0,18,0" concept="12" trace="ICON" />
+      <node id="4063685773265946856" at="19,47,20,49" concept="13" />
+      <node id="4063685773265946856" at="20,49,21,35" concept="3" />
+      <node id="4063685773265946856" at="21,35,22,52" concept="3" />
+      <node id="4063685773265946856" at="22,52,23,29" concept="3" />
+      <node id="4063685773265946856" at="26,32,27,16" concept="9" />
+      <node id="4063685773265946856" at="31,53,32,19" concept="9" />
+      <node id="4063685773265946884" at="34,5,35,66" concept="8" />
+      <node id="4063685773265946885" at="36,22,37,21" concept="9" />
+      <node id="4063685773265946856" at="39,5,40,16" concept="9" />
+      <node id="4063685773265946859" at="43,96,44,100" concept="8" />
+      <node id="4063685773265946875" at="45,116,46,27" concept="3" />
+      <node id="4063685773265946880" at="47,5,48,27" concept="3" />
+      <node id="4063685773265946856" at="30,95,33,5" concept="6" />
+      <node id="4063685773265946885" at="35,66,38,7" concept="6" />
+      <node id="4063685773265946867" at="44,100,47,5" concept="5" />
+      <node id="4063685773265946856" at="25,0,29,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="4063685773265946856" at="19,0,25,0" concept="1" trace="RebuildDependencies_Project_Action#()V" />
+      <node id="4063685773265946884" at="33,5,39,5" concept="0" />
+      <node id="4063685773265946856" at="42,0,50,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="4063685773265946856" at="29,0,42,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="4063685773265946856" at="26,32,27,16" />
+      <scope id="4063685773265946856" at="31,53,32,19" />
+      <scope id="4063685773265946885" at="36,22,37,21" />
+      <scope id="4063685773265946874" at="45,116,46,27" />
+      <scope id="4063685773265946867" at="44,100,47,5">
+        <var name="module" id="4063685773265946868" />
+      </scope>
+      <scope id="4063685773265946856" at="19,47,23,29" />
+      <scope id="4063685773265946856" at="25,0,29,0" />
+      <scope id="4063685773265946884" at="34,5,38,7">
+        <var name="p" id="4063685773265946884" />
+      </scope>
+      <scope id="4063685773265946856" at="43,96,48,27">
+        <var name="builder" id="4063685773265946860" />
+      </scope>
+      <scope id="4063685773265946856" at="19,0,25,0" />
+      <scope id="4063685773265946856" at="42,0,50,0">
+        <var name="_params" id="4063685773265946856" />
+        <var name="event" id="4063685773265946856" />
+      </scope>
+      <scope id="4063685773265946856" at="30,95,40,16" />
+      <scope id="4063685773265946856" at="29,0,42,0">
+        <var name="_params" id="4063685773265946856" />
+        <var name="event" id="4063685773265946856" />
+      </scope>
+      <unit id="4063685773265946856" at="16,0,51,0" name="com.mbeddr.mpsutil.buildassistant.plugin.RebuildDependencies_Project_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/64551825206718794">
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="64551825206718794" at="10,0,11,0" concept="4" trace="myId" />
+      <node id="64551825206718794" at="16,27,17,16" concept="9" />
+      <node id="64551825206718794" at="20,30,21,29" concept="10" />
+      <node id="64551825206718794" at="27,56,28,13" concept="10" />
+      <node id="64551825206718794" at="12,0,14,0" concept="1" trace="Buildassistant_ApplicationPlugin#()V" />
+      <node id="64551825206718794" at="15,0,19,0" concept="7" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="64551825206718794" at="20,0,30,0" concept="7" trace="createGroups#()V" />
+      <scope id="64551825206718794" at="12,45,12,45" />
+      <scope id="64551825206718794" at="16,27,17,16" />
+      <scope id="64551825206718794" at="12,0,14,0" />
+      <scope id="64551825206718794" at="15,0,19,0" />
+      <scope id="64551825206718794" at="20,30,28,13" />
+      <scope id="64551825206718794" at="20,0,30,0" />
+      <unit id="64551825206718794" at="9,0,31,0" name="com.mbeddr.mpsutil.buildassistant.plugin.Buildassistant_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/64551825206718927">
+    <file name="BuildDependencies_Model_Action.java">
+      <node id="64551825206718927" at="17,0,18,0" concept="12" trace="ICON" />
+      <node id="64551825206718927" at="19,43,20,46" concept="13" />
+      <node id="64551825206718927" at="20,46,21,35" concept="3" />
+      <node id="64551825206718927" at="21,35,22,52" concept="3" />
+      <node id="64551825206718927" at="22,52,23,29" concept="3" />
+      <node id="64551825206718927" at="26,32,27,16" concept="9" />
+      <node id="64551825206718927" at="31,53,32,19" concept="9" />
+      <node id="64551825207071147" at="34,5,35,66" concept="8" />
+      <node id="64551825207071148" at="36,22,37,21" concept="9" />
+      <node id="64551825206719694" at="40,5,41,56" concept="8" />
+      <node id="64551825206719695" at="42,22,43,21" concept="9" />
+      <node id="64551825206718927" at="45,5,46,16" concept="9" />
+      <node id="4063685773265889248" at="49,96,50,130" concept="3" />
+      <node id="64551825206718927" at="30,95,33,5" concept="6" />
+      <node id="64551825207071148" at="35,66,38,7" concept="6" />
+      <node id="64551825206719695" at="41,56,44,7" concept="6" />
+      <node id="64551825206718927" at="25,0,29,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="64551825206718927" at="48,0,52,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="64551825206718927" at="19,0,25,0" concept="1" trace="BuildDependencies_Model_Action#()V" />
+      <node id="64551825207071147" at="33,5,39,5" concept="0" />
+      <node id="64551825206719694" at="39,5,45,5" concept="0" />
+      <node id="64551825206718927" at="29,0,48,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="64551825206718927" at="26,32,27,16" />
+      <scope id="64551825206718927" at="31,53,32,19" />
+      <scope id="64551825207071148" at="36,22,37,21" />
+      <scope id="64551825206719695" at="42,22,43,21" />
+      <scope id="64551825206718927" at="49,96,50,130" />
+      <scope id="64551825206718927" at="19,43,23,29" />
+      <scope id="64551825206718927" at="25,0,29,0" />
+      <scope id="64551825207071147" at="34,5,38,7">
+        <var name="p" id="64551825207071147" />
+      </scope>
+      <scope id="64551825206719694" at="40,5,44,7">
+        <var name="p" id="64551825206719694" />
+      </scope>
+      <scope id="64551825206718927" at="48,0,52,0">
+        <var name="_params" id="64551825206718927" />
+        <var name="event" id="64551825206718927" />
+      </scope>
+      <scope id="64551825206718927" at="19,0,25,0" />
+      <scope id="64551825206718927" at="30,95,46,16" />
+      <scope id="64551825206718927" at="29,0,48,0">
+        <var name="_params" id="64551825206718927" />
+        <var name="event" id="64551825206718927" />
+      </scope>
+      <unit id="64551825206718927" at="16,0,53,0" name="com.mbeddr.mpsutil.buildassistant.plugin.BuildDependencies_Model_Action" />
+    </file>
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="64551825206718927" at="21,29,22,52" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/64551825206828641">
+    <file name="DependencyBuilder.java">
+      <node id="4063685773193923744" at="36,0,37,0" concept="12" trace="LOG" />
+      <node id="3231963678784603407" at="38,0,39,0" concept="4" trace="myProject" />
+      <node id="64551825206762467" at="39,0,40,0" concept="4" trace="visitedModules" />
+      <node id="3231963678785517655" at="40,0,41,0" concept="4" trace="visitedModels" />
+      <node id="64551825206958218" at="41,0,42,0" concept="4" trace="makeOrder" />
+      <node id="4063685773265079603" at="43,45,44,24" concept="3" />
+      <node id="4063685773265412784" at="47,28,48,22" concept="3" />
+      <node id="4063685773265411255" at="51,30,52,21" concept="3" />
+      <node id="64551825206932484" at="56,61,57,60" concept="3" />
+      <node id="64551825209244001" at="58,5,59,148" concept="3" />
+      <node id="4063685773193949482" at="63,9,64,26" concept="3" />
+      <node id="4063685773193932282" at="65,28,66,86" concept="3" />
+      <node id="4063685773265647632" at="67,5,68,16" concept="9" />
+      <node id="4063685773193957454" at="72,9,73,27" concept="3" />
+      <node id="4063685773193957461" at="74,28,75,94" concept="3" />
+      <node id="4063685773265664971" at="76,5,77,16" concept="9" />
+      <node id="4063685773194082159" at="81,9,82,25" concept="3" />
+      <node id="4063685773194082166" at="83,28,84,97" concept="3" />
+      <node id="4063685773265681944" at="85,5,86,16" concept="9" />
+      <node id="4063685773194380185" at="90,9,91,41" concept="3" />
+      <node id="4063685773194380192" at="92,28,93,114" concept="3" />
+      <node id="3231963678785533746" at="98,24,99,13" concept="9" />
+      <node id="3231963678785552177" at="101,61,102,13" concept="9" />
+      <node id="3231963678785555510" at="103,5,104,57" concept="3" />
+      <node id="3231963678785524765" at="104,57,105,0" concept="11" />
+      <node id="64551825206925442" at="106,95,107,17" concept="3" />
+      <node id="3231963678785033382" at="108,5,109,0" concept="11" />
+      <node id="4063685773194270515" at="109,0,110,43" concept="3" />
+      <node id="4063685773194289942" at="113,60,114,96" concept="8" />
+      <node id="4063685773205035991" at="115,31,116,13" concept="9" />
+      <node id="4063685773205083345" at="117,5,118,153" concept="8" />
+      <node id="4063685773205097191" at="119,23,120,13" concept="9" />
+      <node id="4063685773206581499" at="121,5,122,0" concept="11" />
+      <node id="4063685773206588566" at="122,0,123,31" concept="3" />
+      <node id="4063685773206583490" at="123,31,124,0" concept="11" />
+      <node id="4063685773205127742" at="125,147,126,90" concept="3" />
+      <node id="4063685773205183068" at="128,158,129,144" concept="8" />
+      <node id="4063685773205192488" at="129,144,130,16" concept="3" />
+      <node id="4063685773205290571" at="132,316,133,53" concept="3" />
+      <node id="64551825206867503" at="137,47,138,48" concept="8" />
+      <node id="64551825206949971" at="138,48,139,21" concept="3" />
+      <node id="3231963678785477446" at="143,38,144,115" concept="3" />
+      <node id="3231963678784582116" at="146,25,147,13" concept="9" />
+      <node id="3231963678785465939" at="148,5,149,0" concept="11" />
+      <node id="64551825206779191" at="150,63,151,13" concept="9" />
+      <node id="64551825206808816" at="152,5,153,59" concept="3" />
+      <node id="64551825206808056" at="153,59,154,0" concept="11" />
+      <node id="64551825207037023" at="155,92,156,35" concept="3" />
+      <node id="64551825207048477" at="158,79,159,21" concept="3" />
+      <node id="3231963678784526205" at="160,5,161,0" concept="11" />
+      <node id="4063685773215617051" at="162,37,163,46" concept="8" />
+      <node id="3231963678784819366" at="164,117,165,72" concept="8" />
+      <node id="3231963678784630619" at="165,72,166,22" concept="3" />
+      <node id="4063685773215615937" at="167,7,168,0" concept="11" />
+      <node id="4063685773215703862" at="170,99,171,39" concept="3" />
+      <node id="4063685773215703873" at="173,86,174,25" concept="3" />
+      <node id="64551825206826426" at="177,5,178,0" concept="11" />
+      <node id="3231963678785612084" at="179,68,180,18" concept="3" />
+      <node id="3231963678785598473" at="181,5,182,0" concept="11" />
+      <node id="64551825209110868" at="182,0,183,20" concept="3" />
+      <node id="64551825209674623" at="187,30,188,13" concept="9" />
+      <node id="64551825209670865" at="189,5,190,0" concept="11" />
+      <node id="64551825209096712" at="190,0,191,56" concept="3" />
+      <node id="64551825206828641" at="195,0,196,0" concept="12" trace="Plan$X1" />
+      <node id="64551825206828641" at="196,0,197,0" concept="12" trace="LanguageId$UR" />
+      <node id="64551825206828641" at="197,0,198,0" concept="12" trace="ModuleIdentity$2y" />
+      <node id="64551825206828641" at="198,0,199,0" concept="12" trace="BaseConcept$gP" />
+      <node id="64551825206828641" at="199,0,200,0" concept="12" trace="MappingConfiguration$7j" />
+      <node id="4063685773265068325" at="43,0,46,0" concept="1" trace="DependencyBuilder#(Ljetbrains/mps/project/Project;)V" />
+      <node id="4063685773265106155" at="47,0,50,0" concept="7" trace="startBuild#()V" />
+      <node id="4063685773265156723" at="51,0,54,0" concept="7" trace="startRebuild#()V" />
+      <node id="64551825206929491" at="55,49,58,5" concept="5" />
+      <node id="3231963678785527045" at="97,45,100,5" concept="6" />
+      <node id="3231963678785536061" at="100,5,103,5" concept="6" />
+      <node id="64551825206924121" at="105,0,108,5" concept="5" />
+      <node id="4063685773205029190" at="114,96,117,5" concept="6" />
+      <node id="4063685773205089936" at="118,153,121,5" concept="6" />
+      <node id="4063685773205100323" at="124,0,127,5" concept="5" />
+      <node id="4063685773205199442" at="131,5,134,5" concept="5" />
+      <node id="3231963678785469695" at="142,47,145,5" concept="6" />
+      <node id="3231963678784576294" at="145,5,148,5" concept="6" />
+      <node id="64551825206779185" at="149,0,152,5" concept="6" />
+      <node id="64551825207032287" at="154,0,157,5" concept="5" />
+      <node id="64551825207048471" at="157,5,160,5" concept="5" />
+      <node id="4063685773215703856" at="169,95,172,9" concept="5" />
+      <node id="4063685773215703867" at="172,9,175,9" concept="5" />
+      <node id="3231963678785602354" at="178,0,181,5" concept="5" />
+      <node id="64551825209671888" at="186,39,189,5" concept="6" />
+      <node id="4063685773205131656" at="127,5,131,5" concept="5" />
+      <node id="64551825206767232" at="137,0,141,0" concept="7" trace="collectDeps_#(Lorg/jetbrains/mps/openapi/language/SLanguage;)V" />
+      <node id="3231963678784573632" at="163,46,167,7" concept="5" />
+      <node id="4063685773193870966" at="62,47,67,5" concept="14" />
+      <node id="4063685773193957452" at="71,49,76,5" concept="14" />
+      <node id="4063685773194082157" at="80,49,85,5" concept="14" />
+      <node id="4063685773194380183" at="89,64,94,5" concept="14" />
+      <node id="4063685773265214283" at="55,0,61,0" concept="7" trace="startBuild#(Z)V" />
+      <node id="4063685773194142288" at="89,0,96,0" concept="7" trace="collectDepsForCustomGenPlanSafe#(Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="64551825209086416" at="186,0,193,0" concept="7" trace="enqueue#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="4063685773193815234" at="62,0,70,0" concept="7" trace="with#(Lorg/jetbrains/mps/openapi/model/SModel;)Lcom/mbeddr/mpsutil/buildassistant/plugin/DependencyBuilder;" />
+      <node id="4063685773193957448" at="71,0,79,0" concept="7" trace="with#(Lorg/jetbrains/mps/openapi/module/SModule;)Lcom/mbeddr/mpsutil/buildassistant/plugin/DependencyBuilder;" />
+      <node id="4063685773194016347" at="80,0,88,0" concept="7" trace="with#(Lorg/jetbrains/mps/openapi/language/SLanguage;)Lcom/mbeddr/mpsutil/buildassistant/plugin/DependencyBuilder;" />
+      <node id="4063685773215625006" at="168,0,176,7" concept="5" />
+      <node id="64551825206908165" at="97,0,112,0" concept="7" trace="collectDeps_#(Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="3231963678784529125" at="161,0,177,5" concept="6" />
+      <node id="4063685773194289926" at="113,0,136,0" concept="7" trace="collectDepsForCustomGenPlan#(Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="64551825206779179" at="142,0,185,0" concept="7" trace="collectDeps_#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="4063685773265068329" at="43,45,44,24" />
+      <scope id="4063685773265106159" at="47,28,48,22" />
+      <scope id="4063685773265156727" at="51,30,52,21" />
+      <scope id="64551825206929497" at="56,61,57,60" />
+      <scope id="4063685773193870967" at="63,9,64,26" />
+      <scope id="4063685773193870971" at="65,28,66,86" />
+      <scope id="4063685773193957453" at="72,9,73,27" />
+      <scope id="4063685773193957460" at="74,28,75,94" />
+      <scope id="4063685773194082158" at="81,9,82,25" />
+      <scope id="4063685773194082165" at="83,28,84,97" />
+      <scope id="4063685773194380184" at="90,9,91,41" />
+      <scope id="4063685773194380191" at="92,28,93,114" />
+      <scope id="3231963678785527047" at="98,24,99,13" />
+      <scope id="3231963678785536063" at="101,61,102,13" />
+      <scope id="64551825206924127" at="106,95,107,17" />
+      <scope id="4063685773205029192" at="115,31,116,13" />
+      <scope id="4063685773205089938" at="119,23,120,13" />
+      <scope id="4063685773205100329" at="125,147,126,90" />
+      <scope id="4063685773205199448" at="132,316,133,53" />
+      <scope id="3231963678785469697" at="143,38,144,115" />
+      <scope id="3231963678784576296" at="146,25,147,13" />
+      <scope id="64551825206779190" at="150,63,151,13" />
+      <scope id="64551825207032293" at="155,92,156,35" />
+      <scope id="64551825207048476" at="158,79,159,21" />
+      <scope id="4063685773215703861" at="170,99,171,39" />
+      <scope id="4063685773215703872" at="173,86,174,25" />
+      <scope id="3231963678785602360" at="179,68,180,18" />
+      <scope id="64551825209671890" at="187,30,188,13" />
+      <scope id="4063685773193870968" at="65,5,67,5">
+        <var name="ex" id="4063685773193870969" />
+      </scope>
+      <scope id="4063685773193957457" at="74,5,76,5">
+        <var name="ex" id="4063685773193957458" />
+      </scope>
+      <scope id="4063685773194082162" at="83,5,85,5">
+        <var name="ex" id="4063685773194082163" />
+      </scope>
+      <scope id="4063685773194380188" at="92,5,94,5">
+        <var name="ex" id="4063685773194380189" />
+      </scope>
+      <scope id="4063685773205131662" at="128,158,130,16">
+        <var name="mod" id="4063685773205183069" />
+      </scope>
+      <scope id="64551825206767236" at="137,47,139,21">
+        <var name="langModule" id="64551825206867504" />
+      </scope>
+      <scope id="3231963678784573635" at="164,117,166,22">
+        <var name="runtime" id="3231963678784819367" />
+      </scope>
+      <scope id="4063685773265068325" at="43,0,46,0">
+        <var name="project" id="4063685773265078492" />
+      </scope>
+      <scope id="4063685773265106155" at="47,0,50,0" />
+      <scope id="4063685773265156723" at="51,0,54,0" />
+      <scope id="64551825206929491" at="55,49,58,5">
+        <var name="module" id="64551825206929493" />
+      </scope>
+      <scope id="64551825206924121" at="105,0,108,5">
+        <var name="lang" id="64551825206924123" />
+      </scope>
+      <scope id="4063685773205100323" at="124,0,127,5">
+        <var name="langId" id="4063685773205100325" />
+      </scope>
+      <scope id="4063685773205199442" at="131,5,134,5">
+        <var name="mc" id="4063685773205199444" />
+      </scope>
+      <scope id="64551825207032287" at="154,0,157,5">
+        <var name="dependency" id="64551825207032289" />
+      </scope>
+      <scope id="64551825207048471" at="157,5,160,5">
+        <var name="usedLang" id="64551825207048472" />
+      </scope>
+      <scope id="4063685773215703856" at="169,95,172,9">
+        <var name="dependency" id="4063685773215703857" />
+      </scope>
+      <scope id="4063685773215703867" at="172,9,175,9">
+        <var name="usedLang" id="4063685773215703868" />
+      </scope>
+      <scope id="3231963678785602354" at="178,0,181,5">
+        <var name="model" id="3231963678785602356" />
+      </scope>
+      <scope id="4063685773265214287" at="55,49,59,148" />
+      <scope id="4063685773205131656" at="127,5,131,5">
+        <var name="modulePointer" id="4063685773205131658" />
+      </scope>
+      <scope id="64551825206767232" at="137,0,141,0">
+        <var name="lang" id="64551825206767928" />
+      </scope>
+      <scope id="3231963678784573632" at="163,46,167,7">
+        <var name="runtimeRef" id="3231963678784573633" />
+      </scope>
+      <scope id="4063685773194142292" at="89,64,94,5" />
+      <scope id="64551825209086420" at="186,39,191,56" />
+      <scope id="4063685773265214283" at="55,0,61,0">
+        <var name="rebuild" id="4063685773265285502" />
+      </scope>
+      <scope id="4063685773193815238" at="62,47,68,16" />
+      <scope id="4063685773193957451" at="71,49,77,16" />
+      <scope id="4063685773194016352" at="80,49,86,16" />
+      <scope id="4063685773215625012" at="169,95,175,9" />
+      <scope id="4063685773194142288" at="89,0,96,0">
+        <var name="model" id="4063685773194283589" />
+      </scope>
+      <scope id="64551825209086416" at="186,0,193,0">
+        <var name="module" id="64551825209092924" />
+      </scope>
+      <scope id="4063685773193815234" at="62,0,70,0">
+        <var name="model" id="4063685773193864836" />
+      </scope>
+      <scope id="4063685773193957448" at="71,0,79,0">
+        <var name="module" id="4063685773193957470" />
+      </scope>
+      <scope id="4063685773194016347" at="80,0,88,0">
+        <var name="lang" id="4063685773194016348" />
+      </scope>
+      <scope id="4063685773215625006" at="168,0,176,7">
+        <var name="generator" id="4063685773215625008" />
+      </scope>
+      <scope id="64551825206908169" at="97,45,110,43" />
+      <scope id="3231963678784529127" at="162,37,176,7">
+        <var name="language" id="4063685773215617052" />
+      </scope>
+      <scope id="64551825206908165" at="97,0,112,0">
+        <var name="model" id="64551825206919008" />
+      </scope>
+      <scope id="4063685773194289931" at="113,60,134,5">
+        <var name="genPlanModel" id="4063685773194289943" />
+        <var name="plan" id="4063685773205083346" />
+      </scope>
+      <scope id="4063685773194289926" at="113,0,136,0">
+        <var name="model" id="4063685773194289927" />
+      </scope>
+      <scope id="64551825206779184" at="142,47,183,20" />
+      <scope id="64551825206779179" at="142,0,185,0">
+        <var name="module" id="64551825206779180" />
+      </scope>
+      <unit id="64551825206828641" at="194,0,201,0" name="com.mbeddr.mpsutil.buildassistant.plugin.DependencyBuilder$CONCEPTS" />
+      <unit id="64551825206828641" at="35,0,202,0" name="com.mbeddr.mpsutil.buildassistant.plugin.DependencyBuilder" />
+    </file>
+  </root>
+  <root nodeRef="r:8f7335ec-b571-471b-b34e-920da7a7bcfc(com.mbeddr.mpsutil.buildassistant.plugin)/64551825213885010">
+    <file name="Buildassistant_ApplicationPlugin.java">
+      <node id="64551825213885010" at="24,54,25,54" concept="3" />
+    </file>
+    <file name="RebuildDependencies_Model_Action.java">
+      <node id="64551825213885010" at="17,0,18,0" concept="12" trace="ICON" />
+      <node id="64551825213885010" at="19,45,20,49" concept="13" />
+      <node id="64551825213885010" at="20,49,21,35" concept="3" />
+      <node id="64551825213885010" at="21,35,22,52" concept="3" />
+      <node id="64551825213885010" at="22,52,23,29" concept="3" />
+      <node id="64551825213885010" at="26,32,27,16" concept="9" />
+      <node id="64551825213885010" at="31,53,32,19" concept="9" />
+      <node id="64551825213885034" at="34,5,35,66" concept="8" />
+      <node id="64551825213885035" at="36,22,37,21" concept="9" />
+      <node id="64551825213885036" at="40,5,41,56" concept="8" />
+      <node id="64551825213885037" at="42,22,43,21" concept="9" />
+      <node id="64551825213885010" at="45,5,46,16" concept="9" />
+      <node id="64551825213885022" at="49,96,50,132" concept="3" />
+      <node id="64551825213885010" at="30,95,33,5" concept="6" />
+      <node id="64551825213885035" at="35,66,38,7" concept="6" />
+      <node id="64551825213885037" at="41,56,44,7" concept="6" />
+      <node id="64551825213885010" at="25,0,29,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="64551825213885010" at="48,0,52,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="64551825213885010" at="19,0,25,0" concept="1" trace="RebuildDependencies_Model_Action#()V" />
+      <node id="64551825213885034" at="33,5,39,5" concept="0" />
+      <node id="64551825213885036" at="39,5,45,5" concept="0" />
+      <node id="64551825213885010" at="29,0,48,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="64551825213885010" at="26,32,27,16" />
+      <scope id="64551825213885010" at="31,53,32,19" />
+      <scope id="64551825213885035" at="36,22,37,21" />
+      <scope id="64551825213885037" at="42,22,43,21" />
+      <scope id="64551825213885010" at="49,96,50,132" />
+      <scope id="64551825213885010" at="19,45,23,29" />
+      <scope id="64551825213885010" at="25,0,29,0" />
+      <scope id="64551825213885034" at="34,5,38,7">
+        <var name="p" id="64551825213885034" />
+      </scope>
+      <scope id="64551825213885036" at="40,5,44,7">
+        <var name="p" id="64551825213885036" />
+      </scope>
+      <scope id="64551825213885010" at="48,0,52,0">
+        <var name="_params" id="64551825213885010" />
+        <var name="event" id="64551825213885010" />
+      </scope>
+      <scope id="64551825213885010" at="19,0,25,0" />
+      <scope id="64551825213885010" at="30,95,46,16" />
+      <scope id="64551825213885010" at="29,0,48,0">
+        <var name="_params" id="64551825213885010" />
+        <var name="event" id="64551825213885010" />
+      </scope>
+      <unit id="64551825213885010" at="16,0,53,0" name="com.mbeddr.mpsutil.buildassistant.plugin.RebuildDependencies_Model_Action" />
+    </file>
+  </root>
+</debug-info>
+

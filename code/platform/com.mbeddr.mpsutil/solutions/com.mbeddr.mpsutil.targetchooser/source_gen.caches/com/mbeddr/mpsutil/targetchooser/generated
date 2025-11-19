@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="b1i4jun8jj374zrmt93w40rodqnbrg2">
+  <files names="AbstractTargetChooserScope.java:DefaultModuleScope.java:Filter.java:FilteringModuleScope.java:InvalidSNodeCondition.java:LegacyScope.java:ModelFilter.java:ModuleScope.java:SNodeFilter.java:SNodesScope.java:SelectedTarget.java:SelectionValidator.java:TargetChooser.java:TargetChooserDialog.java:TargetChooserOptions.java:TargetChooserScope.java:TargetChooserSpeedSearch.java:TargetChooserUtil.java:TargetChooser_GeneratorTreeNode.java:TargetChooser_ProjectDevKitTreeNode.java:TargetChooser_ProjectLanguageTreeNode.java:TargetChooser_ProjectModulesPoolTreeNode.java:TargetChooser_ProjectSolutionTreeNode.java:TargetChooser_ProjectTree.java:TargetChooser_SModelTreeNode.java:TargetChooser_SModelsSubtree.java:TargetChooser_SNodeTreeNode.java" />
+</product>
+

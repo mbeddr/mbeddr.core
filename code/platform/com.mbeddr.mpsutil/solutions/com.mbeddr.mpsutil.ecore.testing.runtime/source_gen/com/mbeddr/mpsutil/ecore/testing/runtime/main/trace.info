@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)/5528787623165245033">
+    <file name="ModelImporterExporterTestingUtil.java">
+      <node id="5471237293786625662" at="35,109,36,196" concept="2" />
+      <node id="5471237293786685556" at="36,196,37,0" concept="10" />
+      <node id="5528787623165310785" at="37,0,38,59" concept="7" />
+      <node id="8027586685396282336" at="38,59,39,57" concept="7" />
+      <node id="5471237293786576856" at="39,57,40,0" concept="10" />
+      <node id="5471237293786583718" at="40,0,41,75" concept="9" />
+      <node id="3362831067791534918" at="41,75,42,18" concept="7" />
+      <node id="3362831067791591983" at="43,9,44,66" concept="2" />
+      <node id="3362831067791577650" at="45,29,46,36" concept="13" />
+      <node id="8027586685396285226" at="47,5,48,65" concept="7" />
+      <node id="8027586685395904698" at="48,65,49,102" concept="7" />
+      <node id="8027586685396130320" at="49,102,50,32" concept="2" />
+      <node id="5471237293786552495" at="50,32,51,0" concept="10" />
+      <node id="5471237293786567036" at="51,0,52,69" concept="9" />
+      <node id="5471237293786963646" at="52,69,53,75" concept="9" />
+      <node id="5471237293786974332" at="53,75,54,46" concept="9" />
+      <node id="5471237293786557230" at="54,46,55,0" concept="10" />
+      <node id="5471237293786598408" at="55,0,56,72" concept="9" />
+      <node id="5528787623165315375" at="56,72,57,108" concept="7" />
+      <node id="8027586685396146409" at="57,108,58,109" concept="7" />
+      <node id="8027586685396250129" at="58,109,59,111" concept="2" />
+      <node id="5528787623165910458" at="59,111,60,22" concept="2" />
+      <node id="5471237293786603408" at="60,22,61,0" concept="10" />
+      <node id="5471237293786881059" at="61,0,62,65" concept="9" />
+      <node id="5471237293786690984" at="62,65,63,187" concept="2" />
+      <node id="5471237293786777139" at="63,187,64,0" concept="10" />
+      <node id="5471237293786892430" at="64,0,65,85" concept="9" />
+      <node id="2262921405429436369" at="65,85,66,285" concept="7" />
+      <node id="5471237293787352975" at="66,285,67,61" concept="7" />
+      <node id="2262921405429468965" at="67,61,68,95" concept="2" />
+      <node id="5471237293788326571" at="68,95,69,121" concept="2" />
+      <node id="5471237293787278735" at="72,65,73,64" concept="9" />
+      <node id="5471237293787252794" at="73,64,74,75" concept="8" />
+      <node id="5528787623165288780" at="78,53,79,42" concept="7" />
+      <node id="5528787623165302742" at="79,42,80,70" concept="7" />
+      <node id="2830255523359849982" at="80,70,81,89" concept="2" />
+      <node id="2830255523360336331" at="82,39,83,70" concept="2" />
+      <node id="3387859777611043241" at="84,5,85,90" concept="7" />
+      <node id="2830255523360047306" at="85,90,86,126" concept="2" />
+      <node id="3387859777611084731" at="86,126,87,146" concept="8" />
+      <node id="5471237293786021133" at="91,9,92,66" concept="2" />
+      <node id="1004768212880313015" at="92,66,93,68" concept="7" />
+      <node id="1004768212880372071" at="93,68,94,18" concept="7" />
+      <node id="1004768212880452449" at="95,50,96,41" concept="2" />
+      <node id="1004768212880476946" at="97,7,98,21" concept="2" />
+      <node id="1004768212880430304" at="99,27,100,44" concept="2" />
+      <node id="2830255523360273414" at="81,89,84,5" concept="5" />
+      <node id="1004768212880380501" at="94,18,97,7" concept="15" />
+      <node id="2262921405429644589" at="72,0,76,0" concept="12" trace="propertiesToIgnore#()Ljava/lang/Iterable;" />
+      <node id="3362831067791572105" at="42,18,47,5" concept="14" />
+      <node id="5528787623165266998" at="78,0,89,0" concept="6" trace="findLanguageByModel#(Lorg/jetbrains/mps/openapi/model/SModel;)Lorg/jetbrains/mps/openapi/language/SLanguage;" />
+      <node id="1004768212880360876" at="90,33,101,5" concept="14" />
+      <node id="5471237293785969530" at="90,0,103,0" concept="6" trace="dumpFile#(Ljava/io/File;)V" />
+      <node id="5528787623165261086" at="35,0,71,0" concept="6" trace="calculateDifferences#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SModel;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="3362831067791572106" at="43,9,44,66" />
+      <scope id="3362831067791572109" at="45,29,46,36" />
+      <scope id="2830255523360273416" at="82,39,83,70" />
+      <scope id="1004768212880380503" at="95,50,96,41" />
+      <scope id="1004768212880360880" at="99,27,100,44" />
+      <scope id="3362831067791572108" at="45,5,47,5">
+        <var name="e" id="3362831067791572110" />
+      </scope>
+      <scope id="2262921405429644590" at="72,65,74,75" />
+      <scope id="1004768212880360879" at="99,5,101,5">
+        <var name="e" id="1004768212880360881" />
+      </scope>
+      <scope id="2262921405429644589" at="72,0,76,0" />
+      <scope id="1004768212880360877" at="91,9,98,21">
+        <var name="line" id="1004768212880372072" />
+        <var name="reader" id="1004768212880313016" />
+      </scope>
+      <scope id="3387859777611040205" at="78,53,87,146">
+        <var name="languages" id="3387859777611043244" />
+        <var name="ref" id="5528787623165302743" />
+        <var name="rep" id="5528787623165288781" />
+      </scope>
+      <scope id="5528787623165266998" at="78,0,89,0">
+        <var name="mdl" id="3387859777611041073" />
+      </scope>
+      <scope id="5471237293785969533" at="90,33,101,5" />
+      <scope id="5471237293785969530" at="90,0,103,0">
+        <var name="f" id="5471237293785978793" />
+      </scope>
+      <scope id="5528787623165261089" at="35,109,69,121">
+        <var name="XCoreURI" id="8027586685396282337" />
+        <var name="diffs" id="5471237293787352976" />
+        <var name="exporter" id="8027586685395904699" />
+        <var name="importedModel" id="5528787623165315376" />
+        <var name="importer" id="8027586685396146410" />
+        <var name="instanceFileURI" id="8027586685396285227" />
+        <var name="language" id="5528787623165310786" />
+        <var name="result" id="2262921405429436370" />
+        <var name="tempFile" id="3362831067791534919" />
+      </scope>
+      <scope id="5528787623165261086" at="35,0,71,0">
+        <var name="mpsMetaModel" id="5528787623165262346" />
+        <var name="mpsModelInstance" id="5528787623165263647" />
+        <var name="pathToEMFMetaModel" id="5528787623165262278" />
+      </scope>
+      <unit id="5528787623165245033" at="33,0,104,0" name="com.mbeddr.mpsutil.ecore.testing.runtime.main.ModelImporterExporterTestingUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)/6503302267173888366">
+    <file name="EcoreImporterTestingUtil.java">
+      <node id="8842914193117502321" at="28,0,29,0" concept="3" trace="nodeComparisonResults" />
+      <node id="8842914193117505723" at="29,0,30,0" concept="3" trace="undiscoveredRoots" />
+      <node id="8842914193117511818" at="31,76,32,83" concept="2" />
+      <node id="8842914193117511824" at="32,83,33,71" concept="2" />
+      <node id="6456354122957875275" at="33,71,34,68" concept="2" />
+      <node id="6456354122957973482" at="34,68,35,77" concept="2" />
+      <node id="6456354122957956745" at="35,77,36,69" concept="2" />
+      <node id="6456354122957851205" at="40,197,41,47" concept="9" />
+      <node id="6456354122957249421" at="41,47,42,341" concept="7" />
+      <node id="6456354122957249444" at="43,30,44,118" concept="2" />
+      <node id="6456354122959653321" at="45,14,46,186" concept="2" />
+      <node id="6456354122960162809" at="51,61,52,180" concept="7" />
+      <node id="6456354122960410742" at="52,180,53,111" concept="8" />
+      <node id="8842914193117526338" at="56,34,57,54" concept="2" />
+      <node id="8842914193117526348" at="58,65,59,58" concept="2" />
+      <node id="8842914193117526362" at="61,48,62,62" concept="2" />
+      <node id="494571880817354131" at="66,90,67,108" concept="7" />
+      <node id="8027586685395687979" at="67,108,68,95" concept="7" />
+      <node id="8027586685395717749" at="68,95,69,36" concept="2" />
+      <node id="494571880817354143" at="69,36,70,55" concept="2" />
+      <node id="494571880817354147" at="70,55,71,31" concept="8" />
+      <node id="494571880817026629" at="74,51,75,33" concept="8" />
+      <node id="6503302267173888366" at="79,0,80,0" concept="11" trace="ConceptDeclaration$gH" />
+      <node id="6503302267173888366" at="80,0,81,0" concept="11" trace="InterfaceConceptDeclaration$CG" />
+      <node id="6503302267173888366" at="81,0,82,0" concept="11" trace="DataTypeDeclaration$AD" />
+      <node id="6503302267173888366" at="82,0,83,0" concept="11" trace="INamedStructureElement$gD" />
+      <node id="6503302267173888366" at="86,0,87,0" concept="11" trace="name$MnvL" />
+      <node id="6503302267173888366" at="87,0,88,0" concept="11" trace="conceptId$rrGe" />
+      <node id="6503302267173888366" at="88,0,89,0" concept="11" trace="propertyId$m5HU" />
+      <node id="6503302267173888366" at="89,0,90,0" concept="11" trace="linkId$mi9g" />
+      <node id="6503302267173888366" at="90,0,91,0" concept="11" trace="datatypeId$$gBg" />
+      <node id="6456354122957249454" at="45,12,47,7" concept="0" />
+      <node id="8842914193118294963" at="57,54,60,5" concept="4" />
+      <node id="8842914193117526360" at="60,5,63,5" concept="4" />
+      <node id="8842914193117538377" at="74,0,77,0" concept="6" trace="getNodeDifference#()Ljava/util/List;" />
+      <node id="8807858324542168388" at="51,0,55,0" concept="12" trace="propertiesToIgnore#()Ljava/util/List;" />
+      <node id="6456354122957249442" at="42,341,47,7" concept="5" />
+      <node id="8842914193117511815" at="31,0,38,0" concept="6" trace="calculateDifferences#(Lorg/jetbrains/mps/openapi/model/SModel;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="8842914193117532480" at="66,0,73,0" concept="6" trace="getDifferences#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SModel;)Ljava/util/List;" />
+      <node id="6456354122957249418" at="39,92,48,5" concept="4" />
+      <node id="8842914193117526335" at="56,0,65,0" concept="6" trace="printDifferences#()V" />
+      <node id="6456354122957227358" at="39,0,50,0" concept="6" trace="check#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SModel;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="6456354122957249443" at="43,30,44,118" />
+      <scope id="6456354122957249455" at="45,14,46,186" />
+      <scope id="8842914193118294965" at="58,65,59,58" />
+      <scope id="8842914193117526361" at="61,48,62,62" />
+      <scope id="494571880817026628" at="74,51,75,33" />
+      <scope id="8807858324542168391" at="51,61,53,111">
+        <var name="ignoredProps" id="6456354122960162812" />
+      </scope>
+      <scope id="8842914193118294963" at="57,54,60,5">
+        <var name="nodeDifference" id="8842914193118294966" />
+      </scope>
+      <scope id="8842914193117526360" at="60,5,63,5">
+        <var name="className" id="8842914193117526367" />
+      </scope>
+      <scope id="8842914193117538377" at="74,0,77,0" />
+      <scope id="8807858324542168388" at="51,0,55,0" />
+      <scope id="8842914193117511817" at="31,76,36,69" />
+      <scope id="494571880817354130" at="66,90,71,31">
+        <var name="importedModel" id="494571880817354132" />
+        <var name="testImporter" id="8027586685395687980" />
+      </scope>
+      <scope id="8842914193117511815" at="31,0,38,0">
+        <var name="mdlExpected" id="8842914193117511900" />
+        <var name="mdlImported" id="8842914193117511902" />
+      </scope>
+      <scope id="6456354122957249420" at="40,197,47,7">
+        <var name="matched" id="6456354122957249422" />
+      </scope>
+      <scope id="8842914193117526337" at="56,34,63,5" />
+      <scope id="8842914193117532480" at="66,0,73,0">
+        <var name="ecoreFileName" id="494571880817354151" />
+        <var name="expectedModel" id="494571880817354153" />
+      </scope>
+      <scope id="6456354122957227361" at="39,92,48,5" />
+      <scope id="6456354122957249418" at="39,92,48,5">
+        <var name="expected" id="6456354122957249419" />
+      </scope>
+      <scope id="8842914193117526335" at="56,0,65,0" />
+      <scope id="6456354122957227358" at="39,0,50,0">
+        <var name="mdlExpected" id="6456354122957292822" />
+        <var name="mdlImported" id="6456354122957292824" />
+        <var name="rootConcept" id="6456354122957236819" />
+      </scope>
+      <unit id="6503302267173888366" at="78,0,84,0" name="com.mbeddr.mpsutil.ecore.testing.runtime.main.EcoreImporterTestingUtil$CONCEPTS" />
+      <unit id="6503302267173888366" at="85,0,92,0" name="com.mbeddr.mpsutil.ecore.testing.runtime.main.EcoreImporterTestingUtil$PROPS" />
+      <unit id="6503302267173888366" at="26,0,93,0" name="com.mbeddr.mpsutil.ecore.testing.runtime.main.EcoreImporterTestingUtil" />
+    </file>
+  </root>
+  <root nodeRef="r:62e76a73-7fd3-4d03-9b49-0da2a82f5479(com.mbeddr.mpsutil.ecore.testing.runtime.main)/8027586685395664268">
+    <file name="EcoreTestingImporter.java">
+      <node id="6921347774807412053" at="9,0,10,0" concept="3" trace="structureModel" />
+      <node id="6921347774807412720" at="10,0,11,0" concept="3" trace="fqEcoreFilePath" />
+      <node id="6921347774807410424" at="12,34,13,104" concept="7" />
+      <node id="6921347774807410432" at="13,104,14,29" concept="2" />
+      <node id="8027586685395669568" at="18,75,19,37" concept="2" />
+      <node id="8027586685395669578" at="19,37,20,34" concept="2" />
+      <node id="6921347774807410418" at="12,0,16,0" concept="6" trace="importEcoreModel#()V" />
+      <node id="8027586685395669560" at="18,0,22,0" concept="1" trace="EcoreTestingImporter#(Lorg/jetbrains/mps/openapi/model/SModel;Ljava/lang/String;)V" />
+      <scope id="6921347774807410420" at="12,34,14,29">
+        <var name="importer" id="6921347774807410425" />
+      </scope>
+      <scope id="8027586685395669564" at="18,75,20,34" />
+      <scope id="6921347774807410418" at="12,0,16,0" />
+      <scope id="8027586685395669560" at="18,0,22,0">
+        <var name="fqEcoreFilePth" id="8027586685395669567" />
+        <var name="structureMdl" id="8027586685395791694" />
+      </scope>
+      <unit id="8027586685395664268" at="8,0,23,0" name="com.mbeddr.mpsutil.ecore.testing.runtime.main.EcoreTestingImporter" />
+    </file>
+  </root>
+</debug-info>
+

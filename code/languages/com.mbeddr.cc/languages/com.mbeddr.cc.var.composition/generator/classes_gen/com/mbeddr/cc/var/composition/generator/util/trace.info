@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:a52df30f-fa28-4a31-9d28-d08dfe626a30(com.mbeddr.cc.var.composition.generator.util)/4585428266438682379">
+    <file name="Composer.java">
+      <node id="4585428266438697859" at="26,0,27,0" concept="3" trace="configItem" />
+      <node id="4585428266438697863" at="28,37,29,33" concept="2" />
+      <node id="4585428266438804004" at="32,44,33,96" concept="7" />
+      <node id="4585428266438784513" at="35,197,36,61" concept="7" />
+      <node id="4585428266438792671" at="36,61,37,203" concept="7" />
+      <node id="6477445114792147432" at="39,188,40,21" concept="1" />
+      <node id="5966716731426602789" at="41,11,42,64" concept="7" />
+      <node id="5966716731426603639" at="42,64,43,40" concept="2" />
+      <node id="6477445114789908300" at="43,40,44,49" concept="2" />
+      <node id="4585428266438807914" at="44,49,45,218" concept="2" />
+      <node id="4585428266438805919" at="48,5,49,35" concept="8" />
+      <node id="6477445114789722504" at="52,83,53,104" concept="7" />
+      <node id="6477445114789728260" at="53,104,54,82" concept="2" />
+      <node id="6477445114789723462" at="54,82,55,21" concept="8" />
+      <node id="6477445114789743089" at="58,92,59,51" concept="2" />
+      <node id="6477445114789753580" at="60,45,61,145" concept="2" />
+      <node id="6477445114789753616" at="65,70,66,47" concept="8" />
+      <node id="4585428266438682379" at="70,0,71,0" concept="9" trace="matchStrategy$YiF6" />
+      <node id="4585428266438682379" at="71,0,72,0" concept="9" trace="compositionStrategy$7ug9" />
+      <node id="4585428266438682379" at="72,0,73,0" concept="9" trace="chunk$RqGd" />
+      <node id="4585428266438682379" at="73,0,74,0" concept="9" trace="compositionChunks$YI1c" />
+      <node id="4585428266438682379" at="77,0,78,0" concept="9" trace="ComposeOnlyAnnotation$6d" />
+      <node id="4585428266438682379" at="78,0,79,0" concept="9" trace="Chunk$sT" />
+      <node id="4585428266438682379" at="79,0,80,0" concept="9" trace="MatchAnnotation$m7" />
+      <node id="4585428266438694652" at="28,0,31,0" concept="0" trace="Composer#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6477445114792132588" at="38,61,41,11" concept="5" />
+      <node id="6477445114789750796" at="59,51,62,5" concept="5" />
+      <node id="6477445114789753616" at="65,0,68,0" concept="10" trace="as_v3dsww_a0a0a0a1a9#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="6477445114789694360" at="52,0,57,0" concept="6" trace="flattenResults#(Ljava/util/List;)Ljava/util/List;" />
+      <node id="6477445114789724819" at="58,0,64,0" concept="6" trace="flattenHelper#(Lcom/mbeddr/cc/var/composition/behavior/CompositionResult;Ljava/util/List;)V" />
+      <node id="4585428266438793455" at="37,203,46,9" concept="4" />
+      <node id="4585428266438782244" at="34,115,47,7" concept="4" />
+      <node id="4585428266438759630" at="33,96,48,5" concept="4" />
+      <node id="4585428266438698998" at="32,0,51,0" concept="6" trace="run#()Ljava/lang/Iterable;" />
+      <scope id="4585428266438694656" at="28,37,29,33" />
+      <scope id="6477445114792132591" at="39,188,40,21" />
+      <scope id="6477445114789750799" at="60,45,61,145" />
+      <scope id="6477445114789753616" at="65,70,66,47" />
+      <scope id="4585428266438694652" at="28,0,31,0">
+        <var name="configItem" id="4585428266438694666" />
+      </scope>
+      <scope id="6477445114789694364" at="52,83,55,21">
+        <var name="flattened" id="6477445114789722507" />
+      </scope>
+      <scope id="6477445114789753616" at="65,0,68,0">
+        <var name="o" id="6477445114789753616" />
+        <var name="type" id="6477445114789753616" />
+      </scope>
+      <scope id="6477445114789724823" at="58,92,62,5" />
+      <scope id="6477445114789694360" at="52,0,57,0">
+        <var name="results" id="6477445114789697055" />
+      </scope>
+      <scope id="6477445114789724819" at="58,0,64,0">
+        <var name="flattened" id="6477445114789738067" />
+        <var name="r" id="6477445114789737204" />
+      </scope>
+      <scope id="4585428266438793461" at="38,61,45,218">
+        <var name="context" id="5966716731426602790" />
+      </scope>
+      <scope id="4585428266438793455" at="37,203,46,9">
+        <var name="target" id="4585428266438793457" />
+      </scope>
+      <scope id="4585428266438782250" at="35,197,46,9">
+        <var name="matchNode" id="4585428266438784514" />
+        <var name="targets" id="4585428266438792672" />
+      </scope>
+      <scope id="4585428266438759639" at="34,115,47,7" />
+      <scope id="4585428266438782244" at="34,115,47,7">
+        <var name="matcher" id="4585428266438782246" />
+      </scope>
+      <scope id="4585428266438759630" at="33,96,48,5">
+        <var name="cc" id="4585428266438759633" />
+      </scope>
+      <scope id="4585428266438699002" at="32,44,49,35">
+        <var name="results" id="4585428266438804007" />
+      </scope>
+      <scope id="4585428266438698998" at="32,0,51,0" />
+      <unit id="4585428266438682379" at="76,0,81,0" name="com.mbeddr.cc.var.composition.generator.util.Composer$CONCEPTS" />
+      <unit id="4585428266438682379" at="69,0,75,0" name="com.mbeddr.cc.var.composition.generator.util.Composer$LINKS" />
+      <unit id="4585428266438682379" at="24,0,82,0" name="com.mbeddr.cc.var.composition.generator.util.Composer" />
+    </file>
+  </root>
+</debug-info>
+

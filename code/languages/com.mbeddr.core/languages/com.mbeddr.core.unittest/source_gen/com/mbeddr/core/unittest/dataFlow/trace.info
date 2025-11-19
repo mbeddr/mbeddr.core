@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="DataFlowAspectDescriptorImpl.java">
+      <unit at="15,0,34,0" name="com.mbeddr.core.unittest.dataFlow.DataFlowAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:143b4f92-2b5a-452b-a7e8-2b07e7558eea(com.mbeddr.core.unittest.dataFlow)/2416710259287026957">
+    <file name="TestCase_DataFlow.java">
+      <node id="2416710259287026962" at="13,60,14,104" concept="0" />
+      <node id="2416710259287026957" at="18,0,19,0" concept="2" trace="body$$xPO" />
+      <node id="2416710259287026957" at="13,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="2416710259287026959" at="13,60,14,104" />
+      <scope id="2416710259287026957" at="13,0,16,0">
+        <var name="_context" id="2416710259287026957" />
+      </scope>
+      <unit id="2416710259287026957" at="17,0,20,0" name="com.mbeddr.core.unittest.dataFlow.TestCase_DataFlow$LINKS" />
+      <unit id="2416710259287026957" at="12,0,21,0" name="com.mbeddr.core.unittest.dataFlow.TestCase_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:143b4f92-2b5a-452b-a7e8-2b07e7558eea(com.mbeddr.core.unittest.dataFlow)/2416710259287150040">
+    <file name="AssertStatement_DataFlow.java">
+      <node id="2416710259287150043" at="13,60,14,104" concept="0" />
+      <node id="2416710259287150040" at="18,0,19,0" concept="2" trace="expr$b4pN" />
+      <node id="2416710259287150040" at="13,0,16,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="2416710259287150042" at="13,60,14,104" />
+      <scope id="2416710259287150040" at="13,0,16,0">
+        <var name="_context" id="2416710259287150040" />
+      </scope>
+      <unit id="2416710259287150040" at="17,0,20,0" name="com.mbeddr.core.unittest.dataFlow.AssertStatement_DataFlow$LINKS" />
+      <unit id="2416710259287150040" at="12,0,21,0" name="com.mbeddr.core.unittest.dataFlow.AssertStatement_DataFlow" />
+    </file>
+  </root>
+  <root nodeRef="r:143b4f92-2b5a-452b-a7e8-2b07e7558eea(com.mbeddr.core.unittest.dataFlow)/7755897872837279215">
+    <file name="StructuredBinOpAssertStatement_DataFlow.java">
+      <node id="7755897872837279218" at="13,60,14,108" concept="0" />
+      <node id="7755897872837279248" at="14,108,15,106" concept="0" />
+      <node id="7755897872837279215" at="19,0,20,0" concept="2" trace="expected$hNJk" />
+      <node id="7755897872837279215" at="20,0,21,0" concept="2" trace="actual$hNYl" />
+      <node id="7755897872837279215" at="13,0,17,0" concept="1" trace="build#(Ljetbrains/mps/lang/dataFlow/DataFlowBuilderContext;)V" />
+      <scope id="7755897872837279217" at="13,60,15,106" />
+      <scope id="7755897872837279215" at="13,0,17,0">
+        <var name="_context" id="7755897872837279215" />
+      </scope>
+      <unit id="7755897872837279215" at="18,0,22,0" name="com.mbeddr.core.unittest.dataFlow.StructuredBinOpAssertStatement_DataFlow$LINKS" />
+      <unit id="7755897872837279215" at="12,0,23,0" name="com.mbeddr.core.unittest.dataFlow.StructuredBinOpAssertStatement_DataFlow" />
+    </file>
+  </root>
+</debug-info>
+

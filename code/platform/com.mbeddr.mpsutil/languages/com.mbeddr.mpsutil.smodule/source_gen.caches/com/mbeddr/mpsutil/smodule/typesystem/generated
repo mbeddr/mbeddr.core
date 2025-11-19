@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="90ss5pjhvrmigdtuh0xr3rln5oan0o8">
+  <files names="TypesystemDescriptor.java:check_AddModelOperation_NonTypesystemRule.java:subtype_solutionType_SubtypingRule.java:typeof_AddDependencyOperation_InferenceRule.java:typeof_AddDevKitOperation_InferenceRule.java:typeof_AddModelOperation_InferenceRule.java:typeof_AddSolutionOperation_InferenceRule.java:typeof_AsMPSProjctOperation_InferenceRule.java:typeof_GetLanguagesOperation_InferenceRule.java" />
+</product>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="com.mbeddr.mpsutil.javainterpreter.richstring.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:03bbcf36-413f-4341-afc9-3cec79d29b3f(com.mbeddr.mpsutil.javainterpreter.richstring.plugin)/902624672044181028">
+    <file name="RichstringEvaluator_extension.java">
+      <node id="902624672044181028" at="9,42,10,63" concept="10" />
+      <node id="902624672044216281" at="13,0,14,0" concept="3" trace="evaluator" />
+      <node id="902624672044217501" at="15,26,16,46" concept="2" />
+      <node id="902624672044218950" at="18,28,19,21" concept="2" />
+      <node id="902624672044219414" at="22,37,23,21" concept="7" />
+      <node id="902624672044181028" at="9,0,12,0" concept="1" trace="RichstringEvaluator_extension#()V" />
+      <node id="902624672044216886" at="15,0,18,0" concept="0" trace="activate#()V" />
+      <node id="902624672044218331" at="18,0,21,0" concept="0" trace="deactivate#()V" />
+      <node id="8020868890190188599" at="22,0,25,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/richstring/plugin/IRichstringEvaluator;" />
+      <scope id="902624672044181028" at="9,42,10,63" />
+      <scope id="8020868890190188588" at="15,26,16,46" />
+      <scope id="8020868890190188592" at="18,28,19,21" />
+      <scope id="8020868890190188601" at="22,37,23,21" />
+      <scope id="902624672044181028" at="9,0,12,0" />
+      <scope id="902624672044216886" at="15,0,18,0" />
+      <scope id="902624672044218331" at="18,0,21,0" />
+      <scope id="8020868890190188599" at="22,0,25,0" />
+      <unit id="902624672044181028" at="8,0,26,0" name="com.mbeddr.mpsutil.javainterpreter.richstring.plugin.RichstringEvaluator_extension" />
+    </file>
+  </root>
+  <root nodeRef="r:03bbcf36-413f-4341-afc9-3cec79d29b3f(com.mbeddr.mpsutil.javainterpreter.richstring.plugin)/902624672044182230">
+    <file name="RichstringJavaEvaluator.java">
+      <node id="902624672044183786" at="18,0,19,0" concept="3" trace="interpreter" />
+      <node id="902624672044185345" at="24,30,25,939" concept="2" />
+      <node id="5218630775253414880" at="26,5,27,23" concept="7" />
+      <node id="902624672044197715" at="31,73,32,96" concept="11" />
+      <node id="902624672044201304" at="33,5,34,0" concept="8" />
+      <node id="902624672044202249" at="34,0,35,61" concept="6" />
+      <node id="2730254758015928913" at="35,61,36,63" concept="6" />
+      <node id="902624672044214160" at="37,9,38,82" concept="7" />
+      <node id="6267356447274078994" at="39,34,40,49" concept="11" />
+      <node id="902624672044182230" at="45,0,46,0" concept="9" trace="Expression$mB" />
+      <node id="902624672044185013" at="20,0,22,0" concept="1" trace="RichstringJavaEvaluator#()V" />
+      <node id="5218630775253412576" at="23,45,26,5" concept="4" />
+      <node id="902624672044196088" at="30,72,33,5" concept="4" />
+      <node id="6267356447274076560" at="36,63,41,5" concept="12" />
+      <node id="5218630775253410916" at="23,0,29,0" concept="5" trace="getInterpreterLazy#()Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;" />
+      <node id="902624672044182304" at="30,0,43,0" concept="5" trace="eval#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="902624672044185017" at="20,36,20,36" />
+      <scope id="5218630775253412578" at="24,30,25,939" />
+      <scope id="902624672044196091" at="31,73,32,96" />
+      <scope id="6267356447274076561" at="37,9,38,82" />
+      <scope id="6267356447274076570" at="39,34,40,49" />
+      <scope id="902624672044185013" at="20,0,22,0" />
+      <scope id="6267356447274076567" at="39,5,41,5">
+        <var name="e" id="6267356447274076571" />
+      </scope>
+      <scope id="5218630775253410919" at="23,45,27,23" />
+      <scope id="5218630775253410916" at="23,0,29,0" />
+      <scope id="902624672044182311" at="30,72,41,5">
+        <var name="context" id="902624672044202250" />
+        <var name="coverage" id="2730254758015928914" />
+      </scope>
+      <scope id="902624672044182304" at="30,0,43,0">
+        <var name="input" id="902624672044182308" />
+      </scope>
+      <unit id="902624672044182230" at="44,0,47,0" name="com.mbeddr.mpsutil.javainterpreter.richstring.plugin.RichstringJavaEvaluator$CONCEPTS" />
+      <unit id="902624672044182230" at="17,0,48,0" name="com.mbeddr.mpsutil.javainterpreter.richstring.plugin.RichstringJavaEvaluator" />
+    </file>
+  </root>
+</debug-info>
+

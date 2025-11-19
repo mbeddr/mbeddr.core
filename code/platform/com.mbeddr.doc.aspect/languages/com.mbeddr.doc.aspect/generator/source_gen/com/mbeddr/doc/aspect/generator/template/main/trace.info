@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="167,0,172,0" name="com.mbeddr.doc.aspect.generator.template.main.QueriesGenerated$PROPS" />
+      <unit at="69,0,84,0" name="com.mbeddr.doc.aspect.generator.template.main.QueriesGenerated$RRC" />
+      <unit at="95,0,110,0" name="com.mbeddr.doc.aspect.generator.template.main.QueriesGenerated$CRC" />
+      <unit at="150,0,166,0" name="com.mbeddr.doc.aspect.generator.template.main.QueriesGenerated$RTQ" />
+      <unit at="122,0,140,0" name="com.mbeddr.doc.aspect.generator.template.main.QueriesGenerated$PVQ" />
+      <unit at="30,0,173,0" name="com.mbeddr.doc.aspect.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:b81edd50-479e-41f8-ac65-3560fe31e5b3(com.mbeddr.doc.aspect.generator.template.main@generator)/533596600668924207">
+    <file name="QueriesGenerated.java">
+      <node id="7228083082547972382" at="39,83,40,20" concept="5" />
+      <node id="7316213595832872474" at="40,20,41,97" concept="4" />
+      <node id="6479337755439612410" at="49,93,50,138" concept="3" />
+      <node id="6479337755439621206" at="51,34,52,29" concept="4" />
+      <node id="6479337755439637120" at="53,12,54,45" concept="5" />
+      <node id="474630103888407925" at="54,45,55,118" concept="4" />
+      <node id="8036157942908732027" at="60,14,61,56" concept="1" />
+      <node id="8036157942908732027" at="77,15,78,58" concept="4" />
+      <node id="7316213595832931486" at="141,3,142,81" concept="1" />
+      <node id="7316213595832931486" at="159,15,160,70" concept="4" />
+      <node id="474630103888330402" at="53,10,56,5" concept="0" />
+      <node id="8036157942908734345" at="39,0,43,0" concept="6" trace="rule_Condition_1_0#(Ljetbrains/mps/generator/template/BaseMappingRuleContext;)Z" />
+      <node id="6479337755439618483" at="50,138,56,5" concept="2" />
+      <node id="7316213595832931487" at="49,0,58,0" concept="6" trace="referenceMacro_GetReferent_1_0#(Ljetbrains/mps/generator/template/ReferenceMacroContext;)Ljava/lang/Object;" />
+      <scope id="6479337755439618485" at="51,34,52,29" />
+      <scope id="8036157942908732027" at="77,15,78,58" />
+      <scope id="7316213595832931486" at="159,15,160,70" />
+      <scope id="8036157942908734346" at="39,83,41,97" />
+      <scope id="474630103888330403" at="53,12,55,118" />
+      <scope id="8036157942908734345" at="39,0,43,0">
+        <var name="_context" id="8036157942908734345" />
+      </scope>
+      <scope id="7316213595832931488" at="49,93,56,5">
+        <var name="descriptorClass" id="6479337755439612411" />
+      </scope>
+      <scope id="7316213595832931487" at="49,0,58,0">
+        <var name="_context" id="7316213595832931487" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:b81edd50-479e-41f8-ac65-3560fe31e5b3(com.mbeddr.doc.aspect.generator.template.main@generator)/533596600668924299">
+    <file name="QueriesGenerated.java">
+      <node id="8285736034625734038" at="43,88,44,124" concept="4" />
+      <node id="8285736034625734872" at="46,88,47,123" concept="4" />
+      <node id="8285736034625733732" at="112,14,113,210" concept="1" />
+      <node id="8285736034625734827" at="113,210,114,223" concept="1" />
+      <node id="8285736034625733732" at="131,15,132,66" concept="4" />
+      <node id="8285736034625734827" at="133,15,134,66" concept="4" />
+      <node id="8285736034625733733" at="43,0,46,0" concept="6" trace="propertyMacro_GetValue_2_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="8285736034625734828" at="46,0,49,0" concept="6" trace="propertyMacro_GetValue_2_1#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <scope id="8285736034625733734" at="43,88,44,124" />
+      <scope id="8285736034625734829" at="46,88,47,123" />
+      <scope id="8285736034625733732" at="131,15,132,66" />
+      <scope id="8285736034625734827" at="133,15,134,66" />
+      <scope id="8285736034625733733" at="43,0,46,0">
+        <var name="_context" id="8285736034625733733" />
+      </scope>
+      <scope id="8285736034625734828" at="46,0,49,0">
+        <var name="_context" id="8285736034625734828" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:b81edd50-479e-41f8-ac65-3560fe31e5b3(com.mbeddr.doc.aspect.generator.template.main@generator)/8077410651477853287">
+    <file name="QueriesGenerated.java">
+      <node id="7228083082548050117" at="35,92,36,20" concept="5" />
+      <node id="4623703450343172356" at="36,20,37,89" concept="4" />
+      <node id="533596600668924112" at="86,14,87,55" concept="1" />
+      <node id="533596600668924112" at="103,15,104,68" concept="4" />
+      <node id="7316213595832938850" at="35,0,39,0" concept="6" trace="createRootRule_Condition_0_0#(Ljetbrains/mps/generator/template/CreateRootRuleContext;)Z" />
+      <scope id="533596600668924112" at="103,15,104,68" />
+      <scope id="7316213595832938851" at="35,92,37,89" />
+      <scope id="7316213595832938850" at="35,0,39,0">
+        <var name="_context" id="7316213595832938850" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

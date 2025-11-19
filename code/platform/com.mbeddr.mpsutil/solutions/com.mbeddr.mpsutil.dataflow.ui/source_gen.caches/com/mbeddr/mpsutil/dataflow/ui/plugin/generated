@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-50t1eozqzgu604852rxesk3zpu4h4lw">
+  <files names="DashedLine.java:DataFlowGroup_ActionGroup.java:IInterProcVisualizationNode.java:InterProcAltBlock.java:InterProcJumpBlock.java:InterProcReadBlock.java:InterProcReturnBlock.java:InterProcShowCFGDialog.java:InterProcSimpleBlock.java:InterProcVisualization.java:InterProcVisualizationNodeCreator.java:InterProcWriteBlock.java:ShowAugmentedInterProceduralDataFlowGraph_Action.java:ShowInterProceduralDataFlowGraph_Action.java:Ui_ApplicationPlugin.java" />
+</product>
+

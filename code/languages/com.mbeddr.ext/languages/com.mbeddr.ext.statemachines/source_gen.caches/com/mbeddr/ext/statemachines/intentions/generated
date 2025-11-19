@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-4k3oj721mrf33qgwy32jqqxeyn0g76e">
+  <files names="IntentionsDescriptor.java:addHandlerFunction_Intention.java:addTransitionAction_Intention.java:createEventFromErrorCell_Intention.java:createSMVarFromErrorCell_Intention.java:createStateFromErrorCell_Intention.java:makeCompositeState_Intention.java:makeTriggered_Intention.java:makeVariableInvisible_Intention.java:makeVariableReadable_Intention.java:makeVariableWritable_Intention.java:surroundWithCompositeState_Intention.java:toggleStrict_Intention.java:wrapWithIntToState_Intention.java:wrapWithStateToInt_Intention.java" />
+</product>
+

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:0d50476e-dbdf-49c3-8f0d-2b0350a5f1c6(com.mbeddr.ext.components.pluginSolution.plugin)/1180267467524284332">
+    <file name="Group_graphicalComponents_ActionGroup.java">
+      <node id="1180267467524284332" at="11,0,12,0" concept="11" trace="ID" />
+      <node id="1180267467524284332" at="13,83,14,51" concept="13" />
+      <node id="1180267467524284332" at="14,51,15,25" concept="3" />
+      <node id="1180267467524284332" at="15,25,16,20" concept="3" />
+      <node id="1180267467524284332" at="16,20,17,29" concept="3" />
+      <node id="1180267467524284332" at="17,29,18,84" concept="3" />
+      <node id="1180267467524284332" at="18,84,19,76" concept="3" />
+      <node id="1180267467524284332" at="13,0,21,0" concept="2" trace="Group_graphicalComponents_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="1180267467524284332" at="13,83,19,76" />
+      <scope id="1180267467524284332" at="13,0,21,0">
+        <var name="plugin" id="1180267467524284332" />
+      </scope>
+      <unit id="1180267467524284332" at="10,0,22,0" name="com.mbeddr.ext.components.pluginSolution.plugin.Group_graphicalComponents_ActionGroup" />
+    </file>
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="1180267467524284332" at="28,13,29,62" concept="3" />
+      <node id="3897771026690269634" at="31,37,32,205" concept="3" />
+    </file>
+    <file name="TogglegraphicalComponents.java">
+      <node id="1180267467524284332" at="15,38,16,41" concept="13" />
+      <node id="1180267467524284332" at="19,32,20,78" concept="8" />
+      <node id="1180267467524284332" at="23,51,24,53" concept="8" />
+      <node id="1180267467524284332" at="28,66,29,39" concept="3" />
+      <node id="1180267467524284332" at="29,39,30,38" concept="7" />
+      <node id="1180267467524284332" at="35,53,36,34" concept="8" />
+      <node id="1180267467524284332" at="40,0,41,0" concept="11" trace="AbstractInstanceConfiguration$QD" />
+      <node id="1180267467524284332" at="15,0,18,0" concept="2" trace="TogglegraphicalComponents#()V" />
+      <node id="1180267467524284332" at="19,0,22,0" concept="6" trace="getHintID#()Ljava/lang/String;" />
+      <node id="1180267467524284332" at="22,0,26,0" concept="6" trace="getRequiredConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1180267467524284332" at="27,0,32,0" concept="6" trace="setSelected#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Z)V" />
+      <node id="1180267467524284332" at="33,0,38,0" concept="6" trace="getActionUpdateThread#()Lcom/intellij/openapi/actionSystem/ActionUpdateThread;" />
+      <scope id="1180267467524284332" at="15,38,16,41" />
+      <scope id="1180267467524284332" at="19,32,20,78" />
+      <scope id="1180267467524284332" at="23,51,24,53" />
+      <scope id="1180267467524284332" at="35,53,36,34" />
+      <scope id="1180267467524284332" at="28,66,30,38">
+        <var name="hintId" id="1180267467524284332" />
+      </scope>
+      <scope id="1180267467524284332" at="15,0,18,0" />
+      <scope id="1180267467524284332" at="19,0,22,0" />
+      <scope id="1180267467524284332" at="22,0,26,0" />
+      <scope id="1180267467524284332" at="27,0,32,0">
+        <var name="event" id="1180267467524284332" />
+        <var name="pushHint" id="1180267467524284332" />
+      </scope>
+      <scope id="1180267467524284332" at="33,0,38,0" />
+      <unit id="1180267467524284332" at="39,0,42,0" name="com.mbeddr.ext.components.pluginSolution.plugin.TogglegraphicalComponents$CONCEPTS" />
+      <unit id="1180267467524284332" at="13,0,43,0" name="com.mbeddr.ext.components.pluginSolution.plugin.TogglegraphicalComponents" />
+    </file>
+  </root>
+  <root nodeRef="r:0d50476e-dbdf-49c3-8f0d-2b0350a5f1c6(com.mbeddr.ext.components.pluginSolution.plugin)/1611636138415080827">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="1611636138415080827" at="15,0,16,0" concept="4" trace="myId" />
+      <node id="1611636138415080827" at="21,27,22,16" concept="8" />
+      <node id="1611636138415080827" at="25,30,26,29" concept="9" />
+      <node id="1611636138415080827" at="27,47,28,13" concept="9" />
+      <node id="1611636138415080827" at="34,48,35,92" concept="7" />
+      <node id="1611636138415080827" at="36,71,37,15" concept="8" />
+      <node id="1611636138415080827" at="17,0,19,0" concept="2" trace="PluginSolution_ApplicationPlugin#()V" />
+      <node id="1611636138415080827" at="31,0,34,0" concept="6" trace="adjustRegularGroups#()V" />
+      <node id="1611636138415080827" at="20,0,24,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="1611636138415080827" at="34,0,39,0" concept="6" trace="initKeymaps#()Ljava/util/List;" />
+      <node id="1611636138415080827" at="25,0,31,0" concept="6" trace="createGroups#()V" />
+      <scope id="1611636138415080827" at="17,45,17,45" />
+      <scope id="1611636138415080827" at="21,27,22,16" />
+      <scope id="1611636138415080827" at="31,37,32,205" />
+      <scope id="1611636138415080827" at="17,0,19,0" />
+      <scope id="1611636138415080827" at="31,0,34,0" />
+      <scope id="1611636138415080827" at="34,48,37,15">
+        <var name="res" id="1611636138415080827" />
+      </scope>
+      <scope id="1611636138415080827" at="20,0,24,0" />
+      <scope id="1611636138415080827" at="25,30,29,62" />
+      <scope id="1611636138415080827" at="34,0,39,0" />
+      <scope id="1611636138415080827" at="25,0,31,0" />
+      <unit id="1611636138415080827" at="14,0,40,0" name="com.mbeddr.ext.components.pluginSolution.plugin.PluginSolution_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:0d50476e-dbdf-49c3-8f0d-2b0350a5f1c6(com.mbeddr.ext.components.pluginSolution.plugin)/1908346841500100473">
+    <file name="GoToHelper_Custom.java">
+      <node id="3508485803330785006" at="32,144,33,69" concept="7" />
+      <node id="1616056205645235507" at="33,69,34,92" concept="7" />
+      <node id="1423104411235833755" at="34,92,35,0" concept="10" />
+      <node id="2034046503361624962" at="36,69,37,91" concept="3" />
+      <node id="2034046503361624970" at="37,91,38,82" concept="0" />
+      <node id="2808756344206270592" at="39,7,40,0" concept="10" />
+      <node id="3508485803330785009" at="40,0,41,89" concept="7" />
+      <node id="7134255009509604234" at="45,73,46,105" concept="9" />
+      <node id="7134255009509555921" at="46,105,47,74" concept="7" />
+      <node id="2034046503361622266" at="47,74,48,127" concept="7" />
+      <node id="2034046503361622280" at="48,127,49,115" concept="3" />
+      <node id="2808756344206270692" at="52,7,53,0" concept="10" />
+      <node id="1616056205645235484" at="53,0,54,95" concept="7" />
+      <node id="1616056205645235492" at="54,95,55,161" concept="3" />
+      <node id="1908346841500100473" at="59,0,60,0" concept="11" trace="name$MnvL" />
+      <node id="1616056205645497135" at="35,0,39,7" concept="3" />
+      <node id="1616056205645501052" at="44,59,50,11" concept="3" />
+      <node id="3508485803330785023" at="43,0,52,0" concept="6" trace="run#(Lcom/intellij/openapi/progress/ProgressIndicator;)V" />
+      <node id="3508485803330785016" at="41,89,52,7" concept="3" />
+      <node id="2808756344206463602" at="32,0,57,0" concept="12" trace="executeFinders#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/intellij/openapi/project/Project;Ljava/lang/String;Lcom/intellij/ui/awt/RelativePoint;)V" />
+      <scope id="1616056205645497139" at="36,69,38,82" />
+      <scope id="1616056205645501056" at="45,73,49,115">
+        <var name="list" id="2034046503361622268" />
+        <var name="scope" id="7134255009509555922" />
+      </scope>
+      <scope id="3508485803330785024" at="44,59,50,11" />
+      <scope id="3508485803330785023" at="43,0,52,0">
+        <var name="p" id="3508485803330785026" />
+      </scope>
+      <scope id="2808756344206463605" at="32,144,55,161">
+        <var name="methodName" id="3508485803330785007" />
+        <var name="mpsProject" id="1616056205645235505" />
+        <var name="nodes" id="3508485803330785010" />
+        <var name="title" id="1616056205645235485" />
+      </scope>
+      <scope id="2808756344206463602" at="32,0,57,0">
+        <var name="finderClassName" id="3508485803330769214" />
+        <var name="project" id="2808756344206463722" />
+        <var name="referencedElement" id="3508485803330769211" />
+        <var name="relativePoint" id="3508485803330769216" />
+      </scope>
+      <unit id="1908346841500100473" at="58,0,61,0" name="com.mbeddr.ext.components.pluginSolution.plugin.GoToHelper_Custom$PROPS" />
+      <unit id="3508485803330785021" at="42,42,52,5" name="com.mbeddr.ext.components.pluginSolution.plugin.GoToHelper_Custom$1" />
+      <unit id="1908346841500100473" at="31,0,62,0" name="com.mbeddr.ext.components.pluginSolution.plugin.GoToHelper_Custom" />
+    </file>
+  </root>
+  <root nodeRef="r:0d50476e-dbdf-49c3-8f0d-2b0350a5f1c6(com.mbeddr.ext.components.pluginSolution.plugin)/1908346841500101201">
+    <file name="Default_KeymapChanges.java">
+      <node id="1908346841500101203" at="8,34,9,99" concept="3" />
+      <node id="1908346841500101201" at="12,29,13,22" concept="8" />
+      <node id="1908346841500101201" at="8,0,11,0" concept="2" trace="Default_KeymapChanges#()V" />
+      <node id="1908346841500101201" at="11,0,15,0" concept="6" trace="getScheme#()Ljava/lang/String;" />
+      <scope id="1908346841500101201" at="8,34,9,99" />
+      <scope id="1908346841500101201" at="12,29,13,22" />
+      <scope id="1908346841500101201" at="8,0,11,0" />
+      <scope id="1908346841500101201" at="11,0,15,0" />
+      <unit id="1908346841500101201" at="7,0,17,0" name="com.mbeddr.ext.components.pluginSolution.plugin.Default_KeymapChanges" />
+    </file>
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="1908346841500101201" at="35,92,36,71" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:0d50476e-dbdf-49c3-8f0d-2b0350a5f1c6(com.mbeddr.ext.components.pluginSolution.plugin)/2808756344206465415">
+    <file name="GoToImplementation_Action.java">
+      <node id="2808756344206465415" at="23,0,24,0" concept="11" trace="ICON" />
+      <node id="2808756344206465415" at="25,38,26,44" concept="13" />
+      <node id="2808756344206465415" at="26,44,27,35" concept="3" />
+      <node id="2808756344206465415" at="27,35,28,40" concept="3" />
+      <node id="2808756344206465415" at="31,32,32,16" concept="8" />
+      <node id="370748725221275382" at="35,87,36,136" concept="8" />
+      <node id="3578942323567754630" at="36,136,37,102" concept="9" />
+      <node id="2808756344206465415" at="40,89,41,85" concept="3" />
+      <node id="2808756344206465415" at="45,53,46,19" concept="8" />
+      <node id="2808756344206270522" at="48,5,49,57" concept="7" />
+      <node id="2808756344206270522" at="50,89,51,20" concept="3" />
+      <node id="2808756344206270523" at="53,25,54,21" concept="8" />
+      <node id="1908346841500093031" at="57,5,58,66" concept="7" />
+      <node id="1908346841500093032" at="59,22,60,21" concept="8" />
+      <node id="1908346841500093033" at="63,5,64,56" concept="7" />
+      <node id="1908346841500093034" at="65,22,66,21" concept="8" />
+      <node id="2808756344206465415" at="68,5,69,16" concept="8" />
+      <node id="2808756344206465499" at="72,96,73,277" concept="3" />
+      <node id="2808756344206465465" at="75,59,76,74" concept="8" />
+      <node id="2808756344206465415" at="80,0,81,0" concept="11" trace="Operation$E0" />
+      <node id="2808756344206465415" at="44,95,47,5" concept="5" />
+      <node id="2808756344206270522" at="49,57,52,7" concept="5" />
+      <node id="2808756344206270523" at="52,7,55,7" concept="5" />
+      <node id="1908346841500093032" at="58,66,61,7" concept="5" />
+      <node id="1908346841500093034" at="64,56,67,7" concept="5" />
+      <node id="2808756344206465447" at="75,0,78,0" concept="6" trace="getFinderName#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Ljava/lang/String;" />
+      <node id="2808756344206465415" at="30,0,34,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="2808756344206465415" at="39,0,43,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2808756344206465415" at="71,0,75,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2808756344206465415" at="25,0,30,0" concept="2" trace="GoToImplementation_Action#()V" />
+      <node id="2808756344206465415" at="34,0,39,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="1908346841500093031" at="56,5,62,5" concept="1" />
+      <node id="1908346841500093033" at="62,5,68,5" concept="1" />
+      <node id="2808756344206270522" at="47,5,56,5" concept="1" />
+      <node id="2808756344206465415" at="43,0,71,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="2808756344206465415" at="31,32,32,16" />
+      <scope id="2808756344206465415" at="40,89,41,85" />
+      <scope id="2808756344206465415" at="45,53,46,19" />
+      <scope id="2808756344206270522" at="50,89,51,20" />
+      <scope id="2808756344206270523" at="53,25,54,21" />
+      <scope id="1908346841500093032" at="59,22,60,21" />
+      <scope id="1908346841500093034" at="65,22,66,21" />
+      <scope id="2808756344206465415" at="72,96,73,277" />
+      <scope id="2808756344206465449" at="75,59,76,74" />
+      <scope id="2808756344206465439" at="35,87,37,102" />
+      <scope id="2808756344206465415" at="25,38,28,40" />
+      <scope id="2808756344206465447" at="75,0,78,0">
+        <var name="event" id="2808756344206465447" />
+      </scope>
+      <scope id="2808756344206465415" at="30,0,34,0" />
+      <scope id="2808756344206465415" at="39,0,43,0">
+        <var name="_params" id="2808756344206465415" />
+        <var name="event" id="2808756344206465415" />
+      </scope>
+      <scope id="1908346841500093031" at="57,5,61,7">
+        <var name="p" id="1908346841500093031" />
+      </scope>
+      <scope id="1908346841500093033" at="63,5,67,7">
+        <var name="p" id="1908346841500093033" />
+      </scope>
+      <scope id="2808756344206465415" at="71,0,75,0">
+        <var name="_params" id="2808756344206465415" />
+        <var name="event" id="2808756344206465415" />
+      </scope>
+      <scope id="2808756344206465415" at="25,0,30,0" />
+      <scope id="2808756344206465415" at="34,0,39,0">
+        <var name="_params" id="2808756344206465415" />
+        <var name="event" id="2808756344206465415" />
+      </scope>
+      <scope id="2808756344206270522" at="48,5,55,7">
+        <var name="node" id="2808756344206270522" />
+      </scope>
+      <scope id="2808756344206465415" at="44,95,69,16" />
+      <scope id="2808756344206465415" at="43,0,71,0">
+        <var name="_params" id="2808756344206465415" />
+        <var name="event" id="2808756344206465415" />
+      </scope>
+      <unit id="2808756344206465415" at="79,0,82,0" name="com.mbeddr.ext.components.pluginSolution.plugin.GoToImplementation_Action$CONCEPTS" />
+      <unit id="2808756344206465415" at="22,0,83,0" name="com.mbeddr.ext.components.pluginSolution.plugin.GoToImplementation_Action" />
+    </file>
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="2808756344206465415" at="26,29,27,47" concept="3" />
+    </file>
+  </root>
+</debug-info>
+

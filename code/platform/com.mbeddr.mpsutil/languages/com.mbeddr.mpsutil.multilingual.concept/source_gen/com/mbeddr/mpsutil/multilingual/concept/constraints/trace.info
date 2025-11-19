@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,34,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:39b02af8-9b11-4446-bc48-2c375df3e675(com.mbeddr.mpsutil.multilingual.concept.constraints)/2510545900187060958">
+    <file name="IMultilingualNamedConcept_Constraints.java">
+      <node id="2510545900187060958" at="18,99,19,62" concept="10" />
+      <node id="2510545900187060959" at="19,62,20,30" concept="1" />
+      <node id="2510545900187060959" at="24,53,25,59" concept="10" />
+      <node id="2510545900187060962" at="28,40,29,116" concept="6" />
+      <node id="2510545900187060959" at="32,68,33,82" concept="1" />
+      <node id="2510545900187060970" at="35,82,36,121" concept="1" />
+      <node id="2510545900187060958" at="41,0,42,0" concept="8" trace="IMultilingualNamedConcept$Qo" />
+      <node id="2510545900187060958" at="45,0,46,0" concept="8" trace="name$MnvL" />
+      <node id="2510545900187060958" at="46,0,47,0" concept="8" trace="value$ECpf" />
+      <node id="2510545900187060958" at="50,0,51,0" concept="8" trace="multiName$EpRI" />
+      <node id="2510545900187060959" at="24,0,27,0" concept="0" trace="Name_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2510545900187060959" at="35,0,38,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="2510545900187060958" at="18,0,22,0" concept="0" trace="IMultilingualNamedConcept_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="2510545900187060959" at="27,0,31,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="2510545900187060959" at="31,0,35,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <scope id="2510545900187060959" at="24,53,25,59" />
+      <scope id="2510545900187060961" at="28,40,29,116" />
+      <scope id="2510545900187060959" at="32,68,33,82" />
+      <scope id="2510545900187060969" at="35,82,36,121" />
+      <scope id="2510545900187060958" at="18,99,20,30" />
+      <scope id="2510545900187060959" at="24,0,27,0">
+        <var name="container" id="2510545900187060959" />
+      </scope>
+      <scope id="2510545900187060959" at="35,0,38,0">
+        <var name="node" id="2510545900187060959" />
+        <var name="propertyValue" id="2510545900187060959" />
+      </scope>
+      <scope id="2510545900187060958" at="18,0,22,0">
+        <var name="initContext" id="2510545900187060958" />
+      </scope>
+      <scope id="2510545900187060959" at="27,0,31,0">
+        <var name="node" id="2510545900187060959" />
+      </scope>
+      <scope id="2510545900187060959" at="31,0,35,0">
+        <var name="node" id="2510545900187060959" />
+        <var name="propertyValue" id="2510545900187060959" />
+      </scope>
+      <unit id="2510545900187060958" at="40,0,43,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.IMultilingualNamedConcept_Constraints$CONCEPTS" />
+      <unit id="2510545900187060958" at="49,0,52,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.IMultilingualNamedConcept_Constraints$LINKS" />
+      <unit id="2510545900187060958" at="44,0,48,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.IMultilingualNamedConcept_Constraints$PROPS" />
+      <unit id="2510545900187060959" at="23,0,39,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.IMultilingualNamedConcept_Constraints$Name_PD" />
+      <unit id="2510545900187060958" at="17,0,53,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.IMultilingualNamedConcept_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:39b02af8-9b11-4446-bc48-2c375df3e675(com.mbeddr.mpsutil.multilingual.concept.constraints)/2510545900187060978">
+    <file name="MultilingualString_Constraints.java">
+      <node id="2510545900187060978" at="22,92,23,55" concept="10" />
+      <node id="2510545900187060979" at="23,55,24,31" concept="1" />
+      <node id="2510545900187060979" at="28,54,29,60" concept="10" />
+      <node id="2510545900187060982" at="32,40,33,90" concept="6" />
+      <node id="2510545900187060979" at="36,68,37,82" concept="1" />
+      <node id="2510545900187060988" at="39,82,40,86" concept="5" />
+      <node id="2510545900187061011" at="42,79,43,77" concept="1" />
+      <node id="2510545900187061017" at="43,77,44,17" concept="6" />
+      <node id="2510545900187061023" at="46,7,47,39" concept="7" />
+      <node id="2510545900187061025" at="47,39,48,82" concept="5" />
+      <node id="2510545900187061033" at="48,82,49,72" concept="1" />
+      <node id="2510545900187061039" at="49,72,50,76" concept="1" />
+      <node id="2510545900187060978" at="55,0,56,0" concept="8" trace="MultilingualString$iX" />
+      <node id="2510545900187060978" at="59,0,60,0" concept="8" trace="value$ECpf" />
+      <node id="2510545900187060978" at="60,0,61,0" concept="8" trace="value$Ej5f" />
+      <node id="2510545900187060978" at="64,0,65,0" concept="8" trace="language$5Wwz" />
+      <node id="2510545900187060978" at="65,0,66,0" concept="8" trace="values$H$ha" />
+      <node id="2510545900187060979" at="28,0,31,0" concept="0" trace="Value_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2510545900187060978" at="22,0,26,0" concept="0" trace="MultilingualString_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="2510545900187060979" at="31,0,35,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="2510545900187060979" at="35,0,39,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="2510545900187061009" at="41,103,45,9" concept="3" />
+      <node id="2510545900187061003" at="40,86,46,7" concept="2" />
+      <node id="2510545900187060979" at="39,0,52,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <scope id="2510545900187060979" at="28,54,29,60" />
+      <scope id="2510545900187060981" at="32,40,33,90" />
+      <scope id="2510545900187060979" at="36,68,37,82" />
+      <scope id="2510545900187060978" at="22,92,24,31" />
+      <scope id="2510545900187061010" at="42,79,44,17" />
+      <scope id="2510545900187060979" at="28,0,31,0">
+        <var name="container" id="2510545900187060979" />
+      </scope>
+      <scope id="2510545900187060978" at="22,0,26,0">
+        <var name="initContext" id="2510545900187060978" />
+      </scope>
+      <scope id="2510545900187060979" at="31,0,35,0">
+        <var name="node" id="2510545900187060979" />
+      </scope>
+      <scope id="2510545900187060979" at="35,0,39,0">
+        <var name="node" id="2510545900187060979" />
+        <var name="propertyValue" id="2510545900187060979" />
+      </scope>
+      <scope id="2510545900187061008" at="41,103,45,9" />
+      <scope id="2510545900187061003" at="40,86,46,7">
+        <var name="value" id="2510545900187061004" />
+      </scope>
+      <scope id="2510545900187060987" at="39,82,50,76">
+        <var name="current" id="2510545900187060989" />
+        <var name="newValue" id="2510545900187061026" />
+      </scope>
+      <scope id="2510545900187060979" at="39,0,52,0">
+        <var name="node" id="2510545900187060979" />
+        <var name="propertyValue" id="2510545900187060979" />
+      </scope>
+      <unit id="2510545900187060978" at="54,0,57,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.MultilingualString_Constraints$CONCEPTS" />
+      <unit id="2510545900187060978" at="58,0,62,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.MultilingualString_Constraints$PROPS" />
+      <unit id="2510545900187060978" at="63,0,67,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.MultilingualString_Constraints$LINKS" />
+      <unit id="2510545900187060979" at="27,0,53,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.MultilingualString_Constraints$Value_PD" />
+      <unit id="2510545900187060978" at="21,0,68,0" name="com.mbeddr.mpsutil.multilingual.concept.constraints.MultilingualString_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

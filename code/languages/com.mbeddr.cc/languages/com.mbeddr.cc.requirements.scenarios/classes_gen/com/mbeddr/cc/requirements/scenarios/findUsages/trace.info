@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="FindUsagesDescriptor.java">
+      <unit at="34,0,37,0" name="com.mbeddr.cc.requirements.scenarios.findUsages.FindUsagesDescriptor$CONCEPTS" />
+      <unit at="13,0,38,0" name="com.mbeddr.cc.requirements.scenarios.findUsages.FindUsagesDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e70c3e64-73c6-4143-8a00-15b7f3de4850(com.mbeddr.cc.requirements.scenarios.findUsages)/8119642625901820565">
+    <file name="FindUsagesDescriptor.java">
+      <node id="8119642625901820565" at="22,13,23,47" concept="6" />
+      <node id="8119642625901820565" at="30,40,31,64" concept="1" />
+      <scope id="8119642625901820565" at="22,13,23,47" />
+    </file>
+    <file name="findCollaborations_Finder.java">
+      <node id="8119642625901820565" at="29,34,30,29" concept="6" />
+      <node id="8119642625901820565" at="33,38,34,29" concept="6" />
+      <node id="8119642625901820565" at="37,41,38,37" concept="6" />
+      <node id="8119642625901820565" at="42,122,43,39" concept="1" />
+      <node id="8119642625901825582" at="44,9,45,94" concept="5" />
+      <node id="8119642625901825533" at="45,94,46,193" concept="5" />
+      <node id="8119642625901894707" at="47,54,48,92" concept="5" />
+      <node id="8119642625901896354" at="48,92,49,56" concept="5" />
+      <node id="8119642625901894770" at="49,56,50,86" concept="5" />
+      <node id="8119642625901896043" at="50,86,51,198" concept="5" />
+      <node id="8119642625901825674" at="52,58,53,60" concept="1" />
+      <node id="8119642625901820565" at="56,15,57,21" concept="1" />
+      <node id="8119642625901825786" at="62,45,63,36" concept="6" />
+      <node id="8119642625901820565" at="68,46,69,89" concept="6" />
+      <node id="8119642625901820565" at="73,0,74,0" concept="7" trace="Collaboration$8h" />
+      <node id="8119642625901820565" at="74,0,75,0" concept="7" trace="Component$GQ" />
+      <node id="8119642625901820565" at="75,0,76,0" concept="7" trace="ParticipantRef$i4" />
+      <node id="8119642625901820565" at="76,0,77,0" concept="7" trace="Call$eV" />
+      <node id="8119642625901820565" at="77,0,78,0" concept="7" trace="ICallContext$Wj" />
+      <node id="8119642625901820565" at="81,0,82,0" concept="7" trace="participant$tAkS" />
+      <node id="8119642625901820565" at="26,0,28,0" concept="0" trace="findCollaborations_Finder#()V" />
+      <node id="8119642625901825545" at="51,198,54,9" concept="3" />
+      <node id="8119642625901820565" at="28,0,32,0" concept="4" trace="getDescription#()Ljava/lang/String;" />
+      <node id="8119642625901820565" at="32,0,36,0" concept="4" trace="getLongDescription#()Ljava/lang/String;" />
+      <node id="8119642625901820565" at="36,0,40,0" concept="4" trace="getSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8119642625901820565" at="61,0,65,0" concept="4" trace="getNodeCategory#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8119642625901820565" at="66,0,71,0" concept="4" trace="getDeclarationNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8119642625901825540" at="46,193,55,7" concept="2" />
+      <node id="8119642625901820565" at="43,39,58,5" concept="8" />
+      <node id="8119642625901820565" at="41,0,60,0" concept="4" trace="doFind0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/module/SearchScope;Ljetbrains/mps/ide/findusages/findalgorithm/finders/IFinder/FindCallback;Lorg/jetbrains/mps/openapi/util/ProgressMonitor;)V" />
+      <scope id="8119642625901820565" at="26,38,26,38" />
+      <scope id="8119642625901820565" at="29,34,30,29" />
+      <scope id="8119642625901820565" at="33,38,34,29" />
+      <scope id="8119642625901820565" at="37,41,38,37" />
+      <scope id="8119642625901825547" at="52,58,53,60" />
+      <scope id="8119642625901820565" at="56,15,57,21" />
+      <scope id="8119642625901825785" at="62,45,63,36" />
+      <scope id="8119642625901820565" at="68,46,69,89" />
+      <scope id="8119642625901820565" at="26,0,28,0" />
+      <scope id="8119642625901820565" at="28,0,32,0" />
+      <scope id="8119642625901820565" at="32,0,36,0" />
+      <scope id="8119642625901820565" at="36,0,40,0" />
+      <scope id="8119642625901820565" at="61,0,65,0">
+        <var name="node" id="8119642625901820565" />
+      </scope>
+      <scope id="8119642625901820565" at="66,0,71,0" />
+      <scope id="8119642625901825543" at="47,54,54,9">
+        <var name="correctContext" id="8119642625901896044" />
+        <var name="isPartRef" id="8119642625901894708" />
+        <var name="parent" id="8119642625901896355" />
+        <var name="parentIsCall" id="8119642625901894771" />
+      </scope>
+      <scope id="8119642625901825540" at="46,193,55,7">
+        <var name="usage" id="8119642625901825541" />
+      </scope>
+      <scope id="8119642625901820567" at="44,9,55,7">
+        <var name="all" id="8119642625901825534" />
+        <var name="comp" id="8119642625901825583" />
+      </scope>
+      <scope id="8119642625901820565" at="42,122,58,5" />
+      <scope id="8119642625901820565" at="41,0,60,0">
+        <var name="callback" id="8119642625901820565" />
+        <var name="monitor" id="8119642625901820565" />
+        <var name="node" id="8119642625901820565" />
+        <var name="scope" id="8119642625901820565" />
+      </scope>
+      <unit id="8119642625901820565" at="80,0,83,0" name="com.mbeddr.cc.requirements.scenarios.findUsages.findCollaborations_Finder$LINKS" />
+      <unit id="8119642625901820565" at="72,0,79,0" name="com.mbeddr.cc.requirements.scenarios.findUsages.findCollaborations_Finder$CONCEPTS" />
+      <unit id="8119642625901820565" at="25,0,84,0" name="com.mbeddr.cc.requirements.scenarios.findUsages.findCollaborations_Finder" />
+    </file>
+  </root>
+</debug-info>
+

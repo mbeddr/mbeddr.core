@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="d74f63a2-18ad-4eb9-848b-ff6178cddeb3/r:a494cdc3-a99a-4464-9f08-041d6ce63f77(com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.plugin)/1909423045450887346">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="1909423045450887346" at="21,29,22,46" concept="2" />
+    </file>
+    <file name="PrintEditorAction_Action.java">
+      <node id="1909423045450887346" at="25,0,26,0" concept="10" trace="ICON" />
+      <node id="1909423045450887346" at="27,37,28,36" concept="11" />
+      <node id="1909423045450887346" at="28,36,29,35" concept="2" />
+      <node id="1909423045450887346" at="29,35,30,57" concept="2" />
+      <node id="1909423045450887346" at="33,32,34,16" concept="7" />
+      <node id="1909423045450892071" at="37,87,38,16" concept="7" />
+      <node id="1909423045450887346" at="41,89,42,85" concept="2" />
+      <node id="1909423045450887346" at="46,53,47,19" concept="7" />
+      <node id="1909423045451257645" at="49,5,50,90" concept="6" />
+      <node id="1909423045451257645" at="51,67,52,31" concept="2" />
+      <node id="1909423045451257646" at="54,36,55,21" concept="7" />
+      <node id="1909423045450887346" at="57,5,58,16" concept="7" />
+      <node id="1909423045451278730" at="61,96,62,96" concept="6" />
+      <node id="1909423045451288288" at="62,96,63,0" concept="9" />
+      <node id="1909423045451292351" at="63,0,64,54" concept="6" />
+      <node id="1909423045451310397" at="66,90,67,48" concept="6" />
+      <node id="3294927180758474" at="67,48,68,0" concept="9" />
+      <node id="3690986174802784838" at="68,0,69,122" concept="6" />
+      <node id="3690986174802767197" at="69,122,70,58" concept="6" />
+      <node id="3294927181471069" at="70,58,71,68" concept="6" />
+      <node id="3690986174802776843" at="71,68,72,0" concept="9" />
+      <node id="1909423045451299737" at="73,63,74,40" concept="7" />
+      <node id="3294927181487803" at="75,9,76,0" concept="9" />
+      <node id="3690986174802713938" at="76,0,77,68" concept="2" />
+      <node id="3690986174802906324" at="78,28,79,45" concept="2" />
+      <node id="3690986174802731605" at="80,9,81,30" concept="2" />
+      <node id="3294927181696089" at="81,30,82,67" concept="2" />
+      <node id="1909423045451300657" at="82,67,83,0" concept="9" />
+      <node id="3294927181028731" at="83,0,84,20" concept="2" />
+      <node id="1909423045451301208" at="84,20,85,37" concept="7" />
+      <node id="1909423045451292192" at="87,7,88,0" concept="9" />
+      <node id="1909423045451427399" at="90,11,91,39" concept="6" />
+      <node id="1909423045451307124" at="92,17,93,22" concept="2" />
+      <node id="3690986174802642428" at="95,37,96,101" concept="2" />
+      <node id="1909423045450887346" at="45,95,48,5" concept="4" />
+      <node id="1909423045451257645" at="50,90,53,7" concept="4" />
+      <node id="1909423045451257646" at="53,7,56,7" concept="4" />
+      <node id="1909423045451296934" at="72,0,75,9" concept="4" />
+      <node id="3294927180915427" at="77,68,80,9" concept="4" />
+      <node id="1909423045451429110" at="91,39,94,9" concept="4" />
+      <node id="1909423045450887346" at="32,0,36,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="1909423045450887346" at="36,0,40,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="1909423045450887346" at="40,0,44,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="1909423045450887346" at="27,0,32,0" concept="1" trace="PrintEditorAction_Action#()V" />
+      <node id="3690986174802638778" at="89,38,97,7" concept="12" />
+      <node id="1909423045451257645" at="48,5,57,5" concept="0" />
+      <node id="3690986174802514839" at="88,0,98,7" concept="2" />
+      <node id="1909423045450887346" at="44,0,60,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="1909423045451294441" at="66,0,87,0" concept="5" trace="print#(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I" />
+      <node id="1909423045451289257" at="64,54,87,7" concept="2" />
+      <node id="1909423045450887346" at="60,0,100,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <scope id="1909423045450887346" at="33,32,34,16" />
+      <scope id="1909423045450891144" at="37,87,38,16" />
+      <scope id="1909423045450887346" at="41,89,42,85" />
+      <scope id="1909423045450887346" at="46,53,47,19" />
+      <scope id="1909423045451257645" at="51,67,52,31" />
+      <scope id="1909423045451257646" at="54,36,55,21" />
+      <scope id="1909423045451296935" at="73,63,74,40" />
+      <scope id="3294927180915430" at="78,28,79,45" />
+      <scope id="1909423045451429113" at="92,17,93,22" />
+      <scope id="3690986174802638787" at="95,37,96,101" />
+      <scope id="3690986174802638781" at="95,7,97,7">
+        <var name="ex" id="3690986174802638783" />
+      </scope>
+      <scope id="1909423045450887346" at="27,37,30,57" />
+      <scope id="1909423045450887346" at="32,0,36,0" />
+      <scope id="1909423045450887346" at="36,0,40,0">
+        <var name="_params" id="1909423045450887346" />
+        <var name="event" id="1909423045450887346" />
+      </scope>
+      <scope id="1909423045450887346" at="40,0,44,0">
+        <var name="_params" id="1909423045450887346" />
+        <var name="event" id="1909423045450887346" />
+      </scope>
+      <scope id="3690986174802638780" at="90,11,94,9">
+        <var name="ok" id="1909423045451427400" />
+      </scope>
+      <scope id="1909423045450887346" at="27,0,32,0" />
+      <scope id="1909423045451257645" at="49,5,56,7">
+        <var name="editorComponent" id="1909423045451257645" />
+      </scope>
+      <scope id="3690986174802517783" at="89,38,97,7" />
+      <scope id="1909423045450887346" at="45,95,58,16" />
+      <scope id="1909423045450887346" at="44,0,60,0">
+        <var name="_params" id="1909423045450887346" />
+        <var name="event" id="1909423045450887346" />
+      </scope>
+      <scope id="1909423045451294452" at="66,90,85,37">
+        <var name="g" id="1909423045451310398" />
+        <var name="offsetY" id="3294927181471072" />
+        <var name="scale" id="3690986174802767198" />
+        <var name="width" id="3690986174802784841" />
+      </scope>
+      <scope id="1909423045451294441" at="66,0,87,0">
+        <var name="format" id="1909423045451294447" />
+        <var name="g_" id="1909423045451294445" />
+        <var name="page" id="1909423045451294449" />
+      </scope>
+      <scope id="1909423045450887346" at="61,96,98,7">
+        <var name="job" id="1909423045451292352" />
+        <var name="rootCell" id="1909423045451278731" />
+      </scope>
+      <scope id="1909423045450887346" at="60,0,100,0">
+        <var name="_params" id="1909423045450887346" />
+        <var name="event" id="1909423045450887346" />
+      </scope>
+      <unit id="1909423045451294439" at="65,25,87,5" name="com.mbeddr.mpsutil.print.pluginSolution.plugin.PrintEditorAction_Action$1" />
+      <unit id="1909423045450887346" at="24,0,101,0" name="com.mbeddr.mpsutil.print.pluginSolution.plugin.PrintEditorAction_Action" />
+    </file>
+  </root>
+  <root nodeRef="d74f63a2-18ad-4eb9-848b-ff6178cddeb3/r:a494cdc3-a99a-4464-9f08-041d6ce63f77(com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.plugin)/1909423045451466188">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="1909423045451466188" at="10,0,11,0" concept="3" trace="myId" />
+      <node id="1909423045451466188" at="16,27,17,16" concept="7" />
+      <node id="1909423045451466188" at="20,30,21,29" concept="8" />
+      <node id="1909423045451466188" at="22,46,23,13" concept="8" />
+      <node id="1909423045451466188" at="12,0,14,0" concept="1" trace="PluginSolution_ApplicationPlugin#()V" />
+      <node id="1909423045451466188" at="26,0,29,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="1909423045451466188" at="15,0,19,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="1909423045451466188" at="20,0,26,0" concept="5" trace="createGroups#()V" />
+      <scope id="1909423045451466188" at="12,45,12,45" />
+      <scope id="1909423045451466188" at="16,27,17,16" />
+      <scope id="1909423045451466188" at="26,37,27,72" />
+      <scope id="1909423045451466188" at="12,0,14,0" />
+      <scope id="1909423045451466188" at="26,0,29,0" />
+      <scope id="1909423045451466188" at="15,0,19,0" />
+      <scope id="1909423045451466188" at="20,30,24,47" />
+      <scope id="1909423045451466188" at="20,0,26,0" />
+      <unit id="1909423045451466188" at="9,0,30,0" name="com.mbeddr.mpsutil.print.pluginSolution.plugin.PluginSolution_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="d74f63a2-18ad-4eb9-848b-ff6178cddeb3/r:a494cdc3-a99a-4464-9f08-041d6ce63f77(com.mbeddr.mpsutil.print.pluginSolution/com.mbeddr.mpsutil.print.pluginSolution.plugin)/8750715244316967862">
+    <file name="PluginSolution_ApplicationPlugin.java">
+      <node id="8750715244316967862" at="23,13,24,47" concept="2" />
+      <node id="8750715244316968138" at="26,37,27,72" concept="2" />
+    </file>
+    <file name="PrintGroup_ActionGroup.java">
+      <node id="8750715244316967862" at="10,0,11,0" concept="10" trace="ID" />
+      <node id="8750715244316967862" at="12,68,13,36" concept="11" />
+      <node id="8750715244316967862" at="13,36,14,25" concept="2" />
+      <node id="8750715244316967862" at="14,25,15,20" concept="2" />
+      <node id="8750715244316967862" at="15,20,16,29" concept="2" />
+      <node id="2243729209640622386" at="16,29,17,47" concept="2" />
+      <node id="8750715244316968134" at="17,47,18,117" concept="2" />
+      <node id="8750715244316967862" at="12,0,20,0" concept="1" trace="PrintGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="8750715244316967862" at="12,68,18,117" />
+      <scope id="8750715244316967862" at="12,0,20,0">
+        <var name="plugin" id="8750715244316967862" />
+      </scope>
+      <unit id="8750715244316967862" at="9,0,21,0" name="com.mbeddr.mpsutil.print.pluginSolution.plugin.PrintGroup_ActionGroup" />
+    </file>
+  </root>
+</debug-info>
+

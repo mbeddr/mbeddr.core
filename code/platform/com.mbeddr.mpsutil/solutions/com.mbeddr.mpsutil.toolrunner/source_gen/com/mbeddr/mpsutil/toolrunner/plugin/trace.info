@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.toolrunner.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

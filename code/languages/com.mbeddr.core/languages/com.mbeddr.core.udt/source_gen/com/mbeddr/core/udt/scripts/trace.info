@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ScriptsDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.core.udt.scripts.ScriptsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:670a3956-c5f8-423a-8196-29bd1821c45a(com.mbeddr.core.udt.scripts)/3669865008872582150">
+    <file name="ScriptsDescriptor.java">
+      <node id="3669865008872582150" at="15,52,16,68" concept="1" />
+    </file>
+    <file name="scriptMigration_MigrationScript.java">
+      <node id="3669865008872582150" at="11,44,12,46" concept="4" />
+      <node id="3669865008872582150" at="17,41,18,154" concept="3" />
+      <node id="3669865008872582150" at="11,0,14,0" concept="0" trace="scriptMigration_MigrationScript#()V" />
+      <node id="3669865008872582150" at="15,0,20,0" concept="2" trace="getScriptNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <scope id="3669865008872582150" at="11,44,12,46" />
+      <scope id="3669865008872582150" at="17,41,18,154" />
+      <scope id="3669865008872582150" at="11,0,14,0" />
+      <scope id="3669865008872582150" at="15,0,20,0" />
+      <unit id="3669865008872582150" at="10,0,21,0" name="com.mbeddr.core.udt.scripts.scriptMigration_MigrationScript" />
+    </file>
+  </root>
+</debug-info>
+

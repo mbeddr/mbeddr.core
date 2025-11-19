@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:865b70e5-210a-4664-9109-21e46b2e9d4b(com.mbeddr.mpsutil.suppresswarning.gen.typesystem)/8237250467076285154">
+    <file name="TypesystemDescriptor.java">
+      <node id="8237250467076285154" at="10,5,11,106" concept="5" />
+      <node id="8237250467076285154" at="11,106,12,55" concept="2" />
+      <node id="8237250467076285154" at="9,33,13,5" concept="0" />
+      <scope id="8237250467076285154" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="8237250467076285154" />
+      </scope>
+    </file>
+    <file name="check_CheckCategoryAnnotation_NonTypesystemRule.java">
+      <node id="8237250467076313277" at="25,7,26,66" concept="5" />
+      <node id="8237250467076313277" at="26,66,27,238" concept="5" />
+      <node id="8237250467076316341" at="28,9,29,198" concept="5" />
+      <node id="8237250467076316417" at="29,198,30,66" concept="2" />
+      <node id="8237250467076316341" at="30,66,31,71" concept="2" />
+      <node id="8237250467076285154" at="36,50,37,47" concept="6" />
+      <node id="8237250467076285154" at="39,68,40,102" concept="6" />
+      <node id="8237250467076285154" at="42,30,43,17" concept="6" />
+      <node id="8237250467076285154" at="47,0,48,0" concept="7" trace="kind$oBYs" />
+      <node id="8237250467076285154" at="51,0,52,0" concept="7" trace="CheckCategoryAnnotation$z_" />
+      <node id="8237250467076285154" at="21,0,23,0" concept="1" trace="check_CheckCategoryAnnotation_NonTypesystemRule#()V" />
+      <node id="8237250467076285154" at="36,0,39,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8237250467076285154" at="39,0,42,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8237250467076285154" at="42,0,45,0" concept="4" trace="overrides#()Z" />
+      <node id="8237250467076316341" at="27,238,32,9" concept="0" />
+      <node id="8237250467076313277" at="24,73,33,7" concept="0" />
+      <node id="8237250467076285173" at="23,123,34,5" concept="3" />
+      <node id="8237250467076285154" at="23,0,36,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8237250467076285154" at="21,60,21,60" />
+      <scope id="8237250467076285154" at="36,50,37,47" />
+      <scope id="8237250467076285154" at="39,68,40,102" />
+      <scope id="8237250467076285154" at="42,30,43,17" />
+      <scope id="8237250467076285154" at="21,0,23,0" />
+      <scope id="8237250467076316341" at="28,9,31,71">
+        <var name="intentionProvider" id="8237250467076316341" />
+      </scope>
+      <scope id="8237250467076285154" at="36,0,39,0" />
+      <scope id="8237250467076285154" at="39,0,42,0">
+        <var name="argument" id="8237250467076285154" />
+      </scope>
+      <scope id="8237250467076285154" at="42,0,45,0" />
+      <scope id="8237250467076313277" at="25,7,32,9">
+        <var name="_reporter_2309309498" id="8237250467076313277" />
+        <var name="errorTarget" id="8237250467076313277" />
+      </scope>
+      <scope id="8237250467076285174" at="24,73,33,7" />
+      <scope id="8237250467076285155" at="23,123,34,5" />
+      <scope id="8237250467076285154" at="23,0,36,0">
+        <var name="annotation" id="8237250467076285154" />
+        <var name="status" id="8237250467076285154" />
+        <var name="typeCheckingContext" id="8237250467076285154" />
+      </scope>
+      <unit id="8237250467076285154" at="46,0,49,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.check_CheckCategoryAnnotation_NonTypesystemRule$LINKS" />
+      <unit id="8237250467076285154" at="50,0,53,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.check_CheckCategoryAnnotation_NonTypesystemRule$CONCEPTS" />
+      <unit id="8237250467076285154" at="20,0,54,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.check_CheckCategoryAnnotation_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:865b70e5-210a-4664-9109-21e46b2e9d4b(com.mbeddr.mpsutil.suppresswarning.gen.typesystem)/8237250467076313491">
+    <file name="CheckCategoryAnnotation_AddAll_QuickFix.java">
+      <node id="8237250467076313491" at="17,52,18,144" concept="9" />
+      <node id="5702222888034454728" at="20,35,21,299" concept="2" />
+      <node id="5702222888034456355" at="23,67,24,73" concept="5" />
+      <node id="5702222888034456355" at="24,73,25,47" concept="2" />
+      <node id="5702222888034456355" at="25,47,26,26" concept="6" />
+      <node id="8237250467076313491" at="30,0,31,0" concept="7" trace="kind$oBYs" />
+      <node id="8237250467076313491" at="31,0,32,0" concept="7" trace="kind$QoeL" />
+      <node id="8237250467076313491" at="35,0,36,0" concept="7" trace="KindReference$8K" />
+      <node id="8237250467076313491" at="17,0,20,0" concept="1" trace="CheckCategoryAnnotation_AddAll_QuickFix#()V" />
+      <node id="8237250467076313491" at="20,0,23,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5702222888034456355" at="23,0,28,0" concept="8" trace="createKindReference_6kmdzi_a0a0b#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="8237250467076313491" at="17,52,18,144" />
+      <scope id="8237250467076313493" at="20,35,21,299" />
+      <scope id="8237250467076313491" at="17,0,20,0" />
+      <scope id="8237250467076313491" at="20,0,23,0">
+        <var name="node" id="8237250467076313491" />
+      </scope>
+      <scope id="5702222888034456355" at="23,67,26,26">
+        <var name="n0" id="5702222888034456355" />
+      </scope>
+      <scope id="5702222888034456355" at="23,0,28,0">
+        <var name="p0" id="5702222888034456355" />
+      </scope>
+      <unit id="8237250467076313491" at="34,0,37,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.CheckCategoryAnnotation_AddAll_QuickFix$CONCEPTS" />
+      <unit id="8237250467076313491" at="29,0,33,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.CheckCategoryAnnotation_AddAll_QuickFix$LINKS" />
+      <unit id="8237250467076313491" at="16,0,38,0" name="com.mbeddr.mpsutil.suppresswarning.gen.typesystem.CheckCategoryAnnotation_AddAll_QuickFix" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.mpsutil.rcp.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7b33dbaa-8598-4a67-b5a4-39fc607b565e(com.mbeddr.mpsutil.rcp.constraints)/8503127430094869022">
+    <file name="NewModelDialogConfig_Constraints.java">
+      <node id="8503127430094869022" at="11,94,12,57" concept="2" />
+      <node id="8503127430094869022" at="16,0,17,0" concept="1" trace="NewModelDialogConfig$ux" />
+      <node id="8503127430094869022" at="11,0,14,0" concept="0" trace="NewModelDialogConfig_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="8503127430094869022" at="11,94,12,57" />
+      <scope id="8503127430094869022" at="11,0,14,0">
+        <var name="initContext" id="8503127430094869022" />
+      </scope>
+      <unit id="8503127430094869022" at="15,0,18,0" name="com.mbeddr.mpsutil.rcp.constraints.NewModelDialogConfig_Constraints$CONCEPTS" />
+      <unit id="8503127430094869022" at="10,0,19,0" name="com.mbeddr.mpsutil.rcp.constraints.NewModelDialogConfig_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

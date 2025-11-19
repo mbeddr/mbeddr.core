@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="RefactoringAspectDescriptor.java">
+      <unit at="11,0,25,0" name="com.mbeddr.cc.var.annotations.refactorings.RefactoringAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1cfc18e7-b8ca-46af-a427-36da8023383f(com.mbeddr.cc.var.annotations.refactorings)/439567521322689990">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="439567521322689990" at="16,41,17,39" concept="1" />
+    </file>
+    <file name="pullUpPC.java">
+      <node id="439567521322689990" at="18,52,19,33" concept="5" />
+      <node id="439567521322689990" at="21,39,22,40" concept="5" />
+      <node id="439567521322859361" at="24,69,25,162" concept="4" />
+      <node id="439567521322866894" at="25,162,26,161" concept="4" />
+      <node id="439567521322748276" at="27,25,28,198" concept="1" />
+      <node id="439567521322689990" at="33,0,34,0" concept="6" trace="PresenceCondition$1o" />
+      <node id="439567521322689990" at="34,0,35,0" concept="6" trace="VisibilityControllingAttribute$UF" />
+      <node id="439567521322689990" at="16,0,18,0" concept="0" trace="pullUpPC#()V" />
+      <node id="439567521322689990" at="18,0,21,0" concept="3" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="439567521322689990" at="21,0,24,0" concept="3" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="439567521322866901" at="26,161,29,5" concept="2" />
+      <node id="439567521322689990" at="24,0,31,0" concept="3" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="439567521322689990" at="16,21,16,21" />
+      <scope id="439567521322689990" at="18,52,19,33" />
+      <scope id="439567521322689990" at="21,39,22,40" />
+      <scope id="439567521322866902" at="27,25,28,198" />
+      <scope id="439567521322689990" at="16,0,18,0" />
+      <scope id="439567521322689990" at="18,0,21,0" />
+      <scope id="439567521322689990" at="21,0,24,0" />
+      <scope id="439567521322689993" at="24,69,29,5">
+        <var name="current" id="439567521322859362" />
+        <var name="target" id="439567521322866895" />
+      </scope>
+      <scope id="439567521322689990" at="24,0,31,0">
+        <var name="refactoringContext" id="439567521322689990" />
+      </scope>
+      <unit id="439567521322689990" at="32,0,36,0" name="com.mbeddr.cc.var.annotations.refactorings.pullUpPC$CONCEPTS" />
+      <unit id="439567521322689990" at="15,0,37,0" name="com.mbeddr.cc.var.annotations.refactorings.pullUpPC" />
+    </file>
+    <file name="pullUpPC_Target.java">
+      <node id="439567521322689994" at="14,52,15,46" concept="5" />
+      <node id="439567521322689994" at="17,41,18,17" concept="5" />
+      <node id="439567521322689994" at="20,58,21,16" concept="5" />
+      <node id="439567521322689994" at="24,51,25,19" concept="5" />
+      <node id="439567521322859499" at="26,5,27,276" concept="5" />
+      <node id="439567521322689994" at="31,0,32,0" concept="6" trace="PresenceCondition$1o" />
+      <node id="439567521322689994" at="12,0,14,0" concept="0" trace="pullUpPC_Target#()V" />
+      <node id="439567521322689994" at="14,0,17,0" concept="3" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="439567521322689994" at="17,0,20,0" concept="3" trace="allowMultipleTargets#()Z" />
+      <node id="439567521322689994" at="20,0,23,0" concept="3" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="439567521322689994" at="23,52,26,5" concept="2" />
+      <node id="439567521322689994" at="23,0,29,0" concept="3" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="439567521322689994" at="12,28,12,28" />
+      <scope id="439567521322689994" at="14,52,15,46" />
+      <scope id="439567521322689994" at="17,41,18,17" />
+      <scope id="439567521322689994" at="20,58,21,16" />
+      <scope id="439567521322689994" at="24,51,25,19" />
+      <scope id="439567521322689994" at="12,0,14,0" />
+      <scope id="439567521322689994" at="14,0,17,0" />
+      <scope id="439567521322689994" at="17,0,20,0" />
+      <scope id="439567521322689994" at="20,0,23,0">
+        <var name="entity" id="439567521322689994" />
+      </scope>
+      <scope id="439567521322689994" at="23,52,27,276" />
+      <scope id="439567521322689994" at="23,0,29,0">
+        <var name="entity" id="439567521322689994" />
+      </scope>
+      <unit id="439567521322689994" at="30,0,33,0" name="com.mbeddr.cc.var.annotations.refactorings.pullUpPC_Target$CONCEPTS" />
+      <unit id="439567521322689994" at="11,0,34,0" name="com.mbeddr.cc.var.annotations.refactorings.pullUpPC_Target" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="74,0,77,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="78,0,81,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="19,0,82,0" name="com.mbeddr.mpsutil.json.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161101671">
+    <file name="JsonFile_TextGen.java">
+      <node id="4342692121161101671" at="12,54,13,55" concept="4" />
+      <node id="3164180844141159572" at="13,55,14,63" concept="1" />
+      <node id="4342692121161101671" at="11,0,16,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161101671" at="12,54,14,63">
+        <var name="tgs" id="4342692121161101671" />
+      </scope>
+      <scope id="4342692121161101671" at="11,0,16,0">
+        <var name="ctx" id="4342692121161101671" />
+      </scope>
+      <unit id="4342692121161101671" at="10,0,17,0" name="com.mbeddr.mpsutil.json.textGen.JsonFile_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161101671" at="35,42,36,38" concept="5" />
+      <node id="4342692121161101671" at="52,59,53,50" concept="4" />
+      <node id="4342692121161101671" at="53,50,54,53" concept="4" />
+      <node id="4342692121161101671" at="54,53,55,108" concept="1" />
+      <node id="4342692121161101671" at="55,108,56,17" concept="0" />
+      <node id="4342692121161101671" at="60,58,61,26" concept="5" />
+      <node id="4342692121161101751" at="63,63,64,18" concept="5" />
+      <node id="3540975504067149445" at="66,54,67,214" concept="5" />
+      <node id="3540975504067148337" at="67,214,68,0" concept="6" />
+      <node id="3540975504067157438" at="70,52,71,40" concept="5" />
+      <node id="4342692121161101671" at="60,0,63,0" concept="8" trace="getFileName_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4342692121161101671" at="63,0,66,0" concept="8" trace="getFileExtension_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3540975504067157438" at="70,0,73,0" concept="8" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4342692121161101671" at="66,0,70,0" concept="8" trace="getPath_JsonFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4342692121161101671" at="51,58,57,7" concept="2" />
+      <scope id="4342692121161101671" at="35,42,36,38" />
+      <scope id="4342692121161101671" at="60,58,61,26" />
+      <scope id="4342692121161101671" at="63,63,64,18" />
+      <scope id="3540975504067157438" at="70,52,71,40" />
+      <scope id="4342692121161101671" at="66,54,68,0" />
+      <scope id="4342692121161101671" at="60,0,63,0">
+        <var name="node" id="4342692121161101671" />
+      </scope>
+      <scope id="4342692121161101671" at="63,0,66,0">
+        <var name="node" id="4342692121161101671" />
+      </scope>
+      <scope id="3540975504067157438" at="70,0,73,0">
+        <var name="str" id="3540975504067157438" />
+      </scope>
+      <scope id="4342692121161101671" at="52,59,56,17">
+        <var name="ext" id="4342692121161101671" />
+        <var name="fname" id="4342692121161101671" />
+      </scope>
+      <scope id="4342692121161101671" at="66,0,70,0">
+        <var name="node" id="4342692121161101671" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161107140">
+    <file name="JSONObject_TextGen.java">
+      <node id="4342692121161107140" at="12,54,13,55" concept="4" />
+      <node id="3164180844141160130" at="13,55,14,64" concept="1" />
+      <node id="4342692121161107140" at="11,0,16,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161107140" at="12,54,14,64">
+        <var name="tgs" id="4342692121161107140" />
+      </scope>
+      <scope id="4342692121161107140" at="11,0,16,0">
+        <var name="ctx" id="4342692121161107140" />
+      </scope>
+      <unit id="4342692121161107140" at="10,0,17,0" name="com.mbeddr.mpsutil.json.textGen.JSONObject_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161107140" at="33,44,34,40" concept="5" />
+      <scope id="4342692121161107140" at="33,44,34,40" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161107823">
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161107823" at="43,42,44,38" concept="5" />
+      <scope id="4342692121161107823" at="43,42,44,38" />
+    </file>
+    <file name="Variable_TextGen.java">
+      <node id="4342692121161107823" at="17,54,18,55" concept="4" />
+      <node id="4342692121161109350" at="18,55,19,21" concept="1" />
+      <node id="4342692121161107855" at="19,21,20,86" concept="1" />
+      <node id="4342692121161109209" at="20,86,21,21" concept="1" />
+      <node id="4342692121161109456" at="21,21,22,21" concept="1" />
+      <node id="3164180844137283067" at="22,21,23,109" concept="1" />
+      <node id="4342692121161107823" at="27,0,28,0" concept="7" trace="name$MnvL" />
+      <node id="4342692121161107823" at="31,0,32,0" concept="7" trace="value$CK9Q" />
+      <node id="4342692121161107823" at="16,0,25,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161107823" at="17,54,23,109">
+        <var name="tgs" id="4342692121161107823" />
+      </scope>
+      <scope id="4342692121161107823" at="16,0,25,0">
+        <var name="ctx" id="4342692121161107823" />
+      </scope>
+      <unit id="4342692121161107823" at="26,0,29,0" name="com.mbeddr.mpsutil.json.textGen.Variable_TextGen$PROPS" />
+      <unit id="4342692121161107823" at="30,0,33,0" name="com.mbeddr.mpsutil.json.textGen.Variable_TextGen$LINKS" />
+      <unit id="4342692121161107823" at="15,0,34,0" name="com.mbeddr.mpsutil.json.textGen.Variable_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161110402">
+    <file name="Array_TextGen.java">
+      <node id="4342692121161110402" at="12,54,13,55" concept="4" />
+      <node id="3164180844141156637" at="13,55,14,64" concept="1" />
+      <node id="4342692121161110402" at="11,0,16,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161110402" at="12,54,14,64">
+        <var name="tgs" id="4342692121161110402" />
+      </scope>
+      <scope id="4342692121161110402" at="11,0,16,0">
+        <var name="ctx" id="4342692121161110402" />
+      </scope>
+      <unit id="4342692121161110402" at="10,0,17,0" name="com.mbeddr.mpsutil.json.textGen.Array_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161110402" at="29,39,30,35" concept="5" />
+      <scope id="4342692121161110402" at="29,39,30,35" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161127981">
+    <file name="Number_TextGen.java">
+      <node id="4342692121161127981" at="15,54,16,55" concept="4" />
+      <node id="3164180844141160587" at="17,99,18,66" concept="1" />
+      <node id="1136558704223478028" at="21,55,22,43" concept="5" />
+      <node id="4342692121161127981" at="26,0,27,0" concept="7" trace="value$Gd4J" />
+      <node id="1136558704223469454" at="16,55,19,5" concept="2" />
+      <node id="1136558704223478028" at="21,0,24,0" concept="8" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4342692121161127981" at="14,0,21,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1136558704223469456" at="17,99,18,66" />
+      <scope id="1136558704223478028" at="21,55,22,43" />
+      <scope id="1136558704223478028" at="21,0,24,0">
+        <var name="str" id="1136558704223478028" />
+      </scope>
+      <scope id="4342692121161127981" at="15,54,19,5">
+        <var name="tgs" id="4342692121161127981" />
+      </scope>
+      <scope id="4342692121161127981" at="14,0,21,0">
+        <var name="ctx" id="4342692121161127981" />
+      </scope>
+      <unit id="4342692121161127981" at="25,0,28,0" name="com.mbeddr.mpsutil.json.textGen.Number_TextGen$PROPS" />
+      <unit id="4342692121161127981" at="13,0,29,0" name="com.mbeddr.mpsutil.json.textGen.Number_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161127981" at="39,40,40,36" concept="5" />
+      <scope id="4342692121161127981" at="39,40,40,36" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161130696">
+    <file name="Null_TextGen.java">
+      <node id="4342692121161130696" at="12,54,13,55" concept="4" />
+      <node id="3164180844141160317" at="13,55,14,64" concept="1" />
+      <node id="4342692121161130696" at="11,0,16,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161130696" at="12,54,14,64">
+        <var name="tgs" id="4342692121161130696" />
+      </scope>
+      <scope id="4342692121161130696" at="11,0,16,0">
+        <var name="ctx" id="4342692121161130696" />
+      </scope>
+      <unit id="4342692121161130696" at="10,0,17,0" name="com.mbeddr.mpsutil.json.textGen.Null_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161130696" at="37,38,38,34" concept="5" />
+      <scope id="4342692121161130696" at="37,38,38,34" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161130766">
+    <file name="String_TextGen.java">
+      <node id="4342692121161130766" at="12,54,13,55" concept="4" />
+      <node id="3164180844141160857" at="13,55,14,64" concept="1" />
+      <node id="4342692121161130766" at="11,0,16,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161130766" at="12,54,14,64">
+        <var name="tgs" id="4342692121161130766" />
+      </scope>
+      <scope id="4342692121161130766" at="11,0,16,0">
+        <var name="ctx" id="4342692121161130766" />
+      </scope>
+      <unit id="4342692121161130766" at="10,0,17,0" name="com.mbeddr.mpsutil.json.textGen.String_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161130766" at="41,40,42,36" concept="5" />
+      <scope id="4342692121161130766" at="41,40,42,36" />
+    </file>
+  </root>
+  <root nodeRef="r:1e09a3c7-cdde-4c14-9dd4-a2f37f88cbb0(com.mbeddr.mpsutil.json.textGen)/4342692121161131466">
+    <file name="Boolean_TextGen.java">
+      <node id="4342692121161131466" at="12,54,13,55" concept="4" />
+      <node id="3164180844141156826" at="13,55,14,64" concept="1" />
+      <node id="4342692121161131466" at="11,0,16,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4342692121161131466" at="12,54,14,64">
+        <var name="tgs" id="4342692121161131466" />
+      </scope>
+      <scope id="4342692121161131466" at="11,0,16,0">
+        <var name="ctx" id="4342692121161131466" />
+      </scope>
+      <unit id="4342692121161131466" at="10,0,17,0" name="com.mbeddr.mpsutil.json.textGen.Boolean_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4342692121161131466" at="31,41,32,37" concept="5" />
+      <scope id="4342692121161131466" at="31,41,32,37" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.core.unittest.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c4872e01-c9c6-4375-9e02-9c9b86cc86f4(com.mbeddr.core.unittest.migration)/223491922182293830">
+    <file name="migrateTestCollection.java">
+      <node id="223491922182293830" at="35,0,36,0" concept="2" trace="description" />
+      <node id="223491922182293830" at="36,30,37,23" concept="7" />
+      <node id="223491922182293830" at="40,33,41,17" concept="7" />
+      <node id="223491922182293830" at="43,41,44,17" concept="1" />
+      <node id="223491922182293830" at="44,17,45,16" concept="7" />
+      <node id="223491922182758696" at="47,42,48,97" concept="6" />
+      <node id="223491922182298484" at="49,38,50,163" concept="1" />
+      <node id="223491922182434003" at="50,163,51,273" concept="6" />
+      <node id="223491922182539959" at="52,67,53,364" concept="1" />
+      <node id="223491922182472162" at="53,364,54,272" concept="6" />
+      <node id="223491922182516954" at="54,272,55,614" concept="6" />
+      <node id="223491922182763778" at="55,614,56,61" concept="1" />
+      <node id="223491922182769815" at="56,61,57,57" concept="1" />
+      <node id="223491922183025915" at="60,38,61,383" concept="6" />
+      <node id="223491922183027310" at="62,67,63,315" concept="1" />
+      <node id="223491922184658218" at="63,315,64,75" concept="1" />
+      <node id="223491922184367919" at="66,5,67,122" concept="1" />
+      <node id="223491922182778248" at="67,122,68,0" concept="8" />
+      <node id="223491922184754877" at="71,45,72,77" concept="6" />
+      <node id="223491922184765628" at="75,36,76,43" concept="7" />
+      <node id="223491922184778109" at="79,37,80,34" concept="7" />
+      <node id="223491922184780389" at="83,5,84,20" concept="7" />
+      <node id="223491922182293830" at="86,50,87,144" concept="7" />
+      <node id="223491922184653601" at="90,0,91,0" concept="2" trace="functionsToManuallyMigrate" />
+      <node id="223491922182516956" at="92,133,93,74" concept="6" />
+      <node id="223491922182516956" at="93,74,94,40" concept="1" />
+      <node id="223491922182516956" at="94,40,95,53" concept="1" />
+      <node id="223491922182516956" at="95,53,96,56" concept="1" />
+      <node id="223491922182516956" at="96,56,97,85" concept="1" />
+      <node id="223491922182516956" at="98,5,99,89" concept="6" />
+      <node id="223491922182516956" at="99,89,100,81" concept="1" />
+      <node id="223491922182516956" at="101,5,102,26" concept="7" />
+      <node id="223491922183032945" at="104,78,105,80" concept="6" />
+      <node id="223491922183032945" at="106,5,107,81" concept="6" />
+      <node id="223491922183032945" at="107,81,108,72" concept="1" />
+      <node id="223491922183032945" at="109,5,110,26" concept="7" />
+      <node id="223491922182293830" at="114,0,115,0" concept="9" trace="TestCollection$pU" />
+      <node id="223491922182293830" at="115,0,116,0" concept="9" trace="Function$K8" />
+      <node id="223491922182293830" at="116,0,117,0" concept="9" trace="ExecuteTestExpression$FP" />
+      <node id="223491922182293830" at="117,0,118,0" concept="9" trace="TestCaseRef$6w" />
+      <node id="223491922182293830" at="118,0,119,0" concept="9" trace="Statement$zV" />
+      <node id="223491922182293830" at="119,0,120,0" concept="9" trace="FunctionCall$4q" />
+      <node id="223491922182293830" at="120,0,121,0" concept="9" trace="ElementDocumentation$BO" />
+      <node id="223491922182293830" at="121,0,122,0" concept="9" trace="ICanBeExecutedAsTest$$2" />
+      <node id="223491922182293830" at="122,0,123,0" concept="9" trace="StatementList$y1" />
+      <node id="223491922182293830" at="123,0,124,0" concept="9" trace="TextBlock$N8" />
+      <node id="223491922182293830" at="124,0,125,0" concept="9" trace="Text$bD" />
+      <node id="223491922182293830" at="128,0,129,0" concept="9" trace="entrypoint$RdMb" />
+      <node id="223491922182293830" at="129,0,130,0" concept="9" trace="exported$V4am" />
+      <node id="223491922182293830" at="130,0,131,0" concept="9" trace="name$MnvL" />
+      <node id="223491922182293830" at="134,0,135,0" concept="9" trace="testcase$9iCj" />
+      <node id="223491922182293830" at="135,0,136,0" concept="9" trace="function$oBh5" />
+      <node id="223491922182293830" at="136,0,137,0" concept="9" trace="tests$GWNl" />
+      <node id="223491922182293830" at="137,0,138,0" concept="9" trace="testinit$TPnj" />
+      <node id="223491922182293830" at="138,0,139,0" concept="9" trace="statements$euTV" />
+      <node id="223491922182293830" at="139,0,140,0" concept="9" trace="text$RYxn" />
+      <node id="223491922182293830" at="140,0,141,0" concept="9" trace="text$ls7a" />
+      <node id="223491922182293830" at="36,0,39,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="223491922184613692" at="75,0,78,0" concept="5" trace="getMessage#()Ljava/lang/String;" />
+      <node id="223491922184613698" at="79,0,82,0" concept="5" trace="getCategory#()Ljava/lang/String;" />
+      <node id="223491922182293830" at="86,0,89,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="223491922182293830" at="39,0,43,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="223491922182293830" at="43,0,47,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="223491922183026474" at="61,383,65,7" concept="3" />
+      <node id="223491922182516956" at="97,85,101,5" concept="0" />
+      <node id="223491922183032945" at="105,80,109,5" concept="0" />
+      <node id="223491922182434442" at="51,273,58,7" concept="3" />
+      <node id="223491922182778695" at="59,5,66,5" concept="3" />
+      <node id="223491922183032945" at="104,0,112,0" concept="10" trace="createElementDocumentation_2mrnhp_a0a0b0c0h#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="223491922184758767" at="73,74,82,9" concept="1" />
+      <node id="223491922182295562" at="48,97,59,5" concept="3" />
+      <node id="223491922184748046" at="72,77,83,5" concept="3" />
+      <node id="223491922182516956" at="92,0,104,0" concept="10" trace="createTestCollection_2mrnhp_a0c0c0b0h#(Ljava/lang/String;Ljava/lang/Iterable;Ljava/lang/Iterable;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="223491922182293830" at="70,0,86,0" concept="5" trace="check#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/lang/Iterable;" />
+      <node id="223491922182293830" at="47,0,70,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="223491922182293830" at="36,30,37,23" />
+      <scope id="223491922182293830" at="40,33,41,17" />
+      <scope id="223491922184613696" at="75,36,76,43" />
+      <scope id="223491922184613702" at="79,37,80,34" />
+      <scope id="223491922182293830" at="86,50,87,144" />
+      <scope id="223491922182293830" at="43,41,45,16" />
+      <scope id="223491922183026476" at="62,67,64,75" />
+      <scope id="223491922182516956" at="98,5,100,81">
+        <var name="n1" id="223491922182516956" />
+      </scope>
+      <scope id="223491922183032945" at="106,5,108,72">
+        <var name="n1" id="223491922183032945" />
+      </scope>
+      <scope id="223491922182293830" at="36,0,39,0" />
+      <scope id="223491922184613692" at="75,0,78,0" />
+      <scope id="223491922184613698" at="79,0,82,0" />
+      <scope id="223491922182293830" at="86,0,89,0" />
+      <scope id="223491922182293830" at="39,0,43,0" />
+      <scope id="223491922182293830" at="43,0,47,0">
+        <var name="m" id="223491922182293830" />
+      </scope>
+      <scope id="223491922183026474" at="61,383,65,7">
+        <var name="func" id="223491922183026475" />
+      </scope>
+      <scope id="223491922182434444" at="52,67,57,57">
+        <var name="lastExecTestExpr" id="223491922182472163" />
+        <var name="tc" id="223491922182516955" />
+      </scope>
+      <scope id="223491922182778698" at="60,38,65,7">
+        <var name="relevantFunctions" id="223491922183025916" />
+      </scope>
+      <scope id="223491922183032945" at="104,78,110,26">
+        <var name="n0" id="223491922183032945" />
+      </scope>
+      <scope id="223491922182434442" at="51,273,58,7">
+        <var name="func" id="223491922182434443" />
+      </scope>
+      <scope id="223491922182778695" at="59,5,66,5">
+        <var name="mdl" id="223491922182778696" />
+      </scope>
+      <scope id="223491922183032945" at="104,0,112,0">
+        <var name="p0" id="223491922183032945" />
+      </scope>
+      <scope id="223491922182295564" at="49,38,58,7">
+        <var name="relevantFunctions" id="223491922182434004" />
+      </scope>
+      <scope id="223491922184748048" at="73,74,82,9" />
+      <scope id="223491922182516956" at="92,133,102,26">
+        <var name="n0" id="223491922182516956" />
+      </scope>
+      <scope id="223491922182295562" at="48,97,59,5">
+        <var name="mdl" id="223491922182295563" />
+      </scope>
+      <scope id="223491922184748046" at="72,77,83,5">
+        <var name="func" id="223491922184748047" />
+      </scope>
+      <scope id="223491922182516956" at="92,0,104,0">
+        <var name="p0" id="223491922182516956" />
+        <var name="p1" id="223491922182516956" />
+        <var name="p2" id="223491922182516956" />
+      </scope>
+      <scope id="223491922182293830" at="71,45,84,20">
+        <var name="problems" id="223491922184754880" />
+      </scope>
+      <scope id="223491922182293830" at="70,0,86,0">
+        <var name="m" id="223491922182293830" />
+      </scope>
+      <scope id="223491922182293830" at="47,42,68,0">
+        <var name="migratedFuntionts" id="223491922182758699" />
+      </scope>
+      <scope id="223491922182293830" at="47,0,70,0">
+        <var name="m" id="223491922182293830" />
+      </scope>
+      <unit id="223491922182293830" at="127,0,132,0" name="com.mbeddr.core.unittest.migration.migrateTestCollection$PROPS" />
+      <unit id="223491922184613690" at="74,53,82,7" name="com.mbeddr.core.unittest.migration.migrateTestCollection$1" />
+      <unit id="223491922182293830" at="133,0,142,0" name="com.mbeddr.core.unittest.migration.migrateTestCollection$LINKS" />
+      <unit id="223491922182293830" at="113,0,126,0" name="com.mbeddr.core.unittest.migration.migrateTestCollection$CONCEPTS" />
+      <unit id="223491922182293830" at="34,0,143,0" name="com.mbeddr.core.unittest.migration.migrateTestCollection" />
+    </file>
+  </root>
+  <root nodeRef="r:c4872e01-c9c6-4375-9e02-9c9b86cc86f4(com.mbeddr.core.unittest.migration)/7955188678847525837">
+    <file name="migrateExecuteTestExpression.java">
+      <node id="7955188678847525837" at="26,0,27,0" concept="2" trace="description" />
+      <node id="7955188678847525837" at="27,30,28,23" concept="7" />
+      <node id="7955188678847525837" at="31,33,32,17" concept="7" />
+      <node id="7955188678847525837" at="34,41,35,17" concept="1" />
+      <node id="7955188678847525837" at="35,17,36,16" concept="7" />
+      <node id="7955188678847529839" at="38,42,39,44" concept="6" />
+      <node id="7497894751394900168" at="40,56,41,365" concept="6" />
+      <node id="7497894751394901958" at="41,365,42,0" concept="8" />
+      <node id="7497894751394954023" at="43,59,44,309" concept="6" />
+      <node id="7497894751394954891" at="44,309,45,95" concept="1" />
+      <node id="7955188678847525837" at="49,50,50,144" concept="7" />
+      <node id="7497894751394961254" at="53,93,54,74" concept="6" />
+      <node id="7497894751394961254" at="54,74,55,44" concept="1" />
+      <node id="7497894751394961254" at="55,44,56,85" concept="1" />
+      <node id="7497894751394961254" at="56,85,57,26" concept="7" />
+      <node id="7955188678847525837" at="61,0,62,0" concept="9" trace="Function$K8" />
+      <node id="7955188678847525837" at="62,0,63,0" concept="9" trace="ExecuteTestExpression$FP" />
+      <node id="7955188678847525837" at="63,0,64,0" concept="9" trace="TestCollection$pU" />
+      <node id="7955188678847525837" at="64,0,65,0" concept="9" trace="ICanBeExecutedAsTest$$2" />
+      <node id="7955188678847525837" at="68,0,69,0" concept="9" trace="tests$XDB_" />
+      <node id="7955188678847525837" at="69,0,70,0" concept="9" trace="tests$GWNl" />
+      <node id="7955188678847525837" at="73,0,74,0" concept="9" trace="name$MnvL" />
+      <node id="7955188678847525837" at="27,0,30,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="7955188678847525837" at="49,0,52,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="7955188678847525837" at="30,0,34,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="7955188678847525837" at="34,0,38,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7497894751394902379" at="42,0,46,7" concept="3" />
+      <node id="7497894751394961254" at="53,0,59,0" concept="10" trace="createTestCollection_nyr7mi_a0a1a2a1a6#(Ljava/lang/Iterable;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7955188678847532365" at="39,44,47,5" concept="3" />
+      <node id="7955188678847525837" at="38,0,49,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="7955188678847525837" at="27,30,28,23" />
+      <scope id="7955188678847525837" at="31,33,32,17" />
+      <scope id="7955188678847525837" at="49,50,50,144" />
+      <scope id="7955188678847525837" at="34,41,36,16" />
+      <scope id="7497894751394902381" at="43,59,45,95">
+        <var name="list" id="7497894751394954024" />
+      </scope>
+      <scope id="7955188678847525837" at="27,0,30,0" />
+      <scope id="7955188678847525837" at="49,0,52,0" />
+      <scope id="7955188678847525837" at="30,0,34,0" />
+      <scope id="7955188678847525837" at="34,0,38,0">
+        <var name="m" id="7955188678847525837" />
+      </scope>
+      <scope id="7497894751394902379" at="42,0,46,7">
+        <var name="func" id="7497894751394902380" />
+      </scope>
+      <scope id="7497894751394961254" at="53,93,57,26">
+        <var name="n0" id="7497894751394961254" />
+      </scope>
+      <scope id="7955188678847532369" at="40,56,46,7">
+        <var name="mainFuncs" id="7497894751394900169" />
+      </scope>
+      <scope id="7497894751394961254" at="53,0,59,0">
+        <var name="p0" id="7497894751394961254" />
+      </scope>
+      <scope id="7955188678847532365" at="39,44,47,5">
+        <var name="model" id="7955188678847532367" />
+      </scope>
+      <scope id="7955188678847525837" at="38,42,47,5">
+        <var name="models" id="7955188678847529840" />
+      </scope>
+      <scope id="7955188678847525837" at="38,0,49,0">
+        <var name="m" id="7955188678847525837" />
+      </scope>
+      <unit id="7955188678847525837" at="72,0,75,0" name="com.mbeddr.core.unittest.migration.migrateExecuteTestExpression$PROPS" />
+      <unit id="7955188678847525837" at="67,0,71,0" name="com.mbeddr.core.unittest.migration.migrateExecuteTestExpression$LINKS" />
+      <unit id="7955188678847525837" at="60,0,66,0" name="com.mbeddr.core.unittest.migration.migrateExecuteTestExpression$CONCEPTS" />
+      <unit id="7955188678847525837" at="25,0,76,0" name="com.mbeddr.core.unittest.migration.migrateExecuteTestExpression" />
+    </file>
+  </root>
+  <root nodeRef="r:c4872e01-c9c6-4375-9e02-9c9b86cc86f4(com.mbeddr.core.unittest.migration)/842732463504404446">
+    <file name="addConfigItemToBuildConfig.java">
+      <node id="842732463504404446" at="25,0,26,0" concept="2" trace="description" />
+      <node id="842732463504404446" at="26,30,27,23" concept="7" />
+      <node id="842732463504404446" at="30,33,31,17" concept="7" />
+      <node id="842732463504404446" at="33,41,34,17" concept="1" />
+      <node id="842732463504404446" at="34,17,35,16" concept="7" />
+      <node id="842732463504405283" at="37,42,38,44" concept="6" />
+      <node id="842732463504412824" at="40,109,41,0" concept="8" />
+      <node id="6468898434747850025" at="41,0,42,0" concept="8" />
+      <node id="842732463504540632" at="44,140,45,0" concept="8" />
+      <node id="842732463504540641" at="46,136,47,0" concept="8" />
+      <node id="8450147428194668000" at="48,177,49,352" concept="7" />
+      <node id="8450147428194689742" at="49,352,50,0" concept="8" />
+      <node id="842732463504542259" at="54,43,55,114" concept="1" />
+      <node id="842732463504412839" at="57,9,58,0" concept="8" />
+      <node id="842732463504404446" at="62,50,63,144" concept="7" />
+      <node id="842732463504404446" at="67,0,68,0" concept="9" trace="binaries$R6lf" />
+      <node id="842732463504404446" at="68,0,69,0" concept="9" trace="configurationItems$HPvE" />
+      <node id="842732463504404446" at="72,0,73,0" concept="9" trace="IRequiresConfigItem$Ys" />
+      <node id="842732463504404446" at="73,0,74,0" concept="9" trace="UnitTestConfigItem$uM" />
+      <node id="842732463504404446" at="74,0,75,0" concept="9" trace="BuildConfiguration$kH" />
+      <node id="842732463504404446" at="26,0,29,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="842732463504412793" at="53,13,56,11" concept="4" />
+      <node id="842732463504404446" at="62,0,65,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="842732463504404446" at="29,0,33,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="842732463504404446" at="33,0,37,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="842732463504540642" at="47,0,51,17" concept="7" />
+      <node id="842732463504540633" at="45,0,52,15" concept="7" />
+      <node id="842732463504540623" at="43,169,53,13" concept="6" />
+      <node id="6468898434747850374" at="42,0,57,9" concept="4" />
+      <node id="842732463504407466" at="39,56,59,7" concept="3" />
+      <node id="842732463504405863" at="38,44,60,5" concept="3" />
+      <node id="842732463504404446" at="37,0,62,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="842732463504404446" at="26,30,27,23" />
+      <scope id="842732463504404446" at="30,33,31,17" />
+      <scope id="842732463504412795" at="54,43,55,114" />
+      <scope id="842732463504404446" at="62,50,63,144" />
+      <scope id="842732463504404446" at="33,41,35,16" />
+      <scope id="842732463504540651" at="48,177,50,0" />
+      <scope id="842732463504404446" at="26,0,29,0" />
+      <scope id="842732463504404446" at="62,0,65,0" />
+      <scope id="842732463504404446" at="29,0,33,0" />
+      <scope id="842732463504404446" at="33,0,37,0">
+        <var name="m" id="842732463504404446" />
+      </scope>
+      <scope id="842732463504540640" at="46,136,51,17" />
+      <scope id="842732463504540631" at="44,140,52,15" />
+      <scope id="6468898434747850376" at="43,169,56,11">
+        <var name="requiresTestCaseConfigItem" id="842732463504540624" />
+      </scope>
+      <scope id="842732463504407470" at="40,109,58,0" />
+      <scope id="842732463504405867" at="39,56,59,7" />
+      <scope id="842732463504407466" at="39,56,59,7">
+        <var name="bc" id="842732463504407468" />
+      </scope>
+      <scope id="842732463504405863" at="38,44,60,5">
+        <var name="model" id="842732463504405865" />
+      </scope>
+      <scope id="842732463504404446" at="37,42,60,5">
+        <var name="models" id="842732463504405284" />
+      </scope>
+      <scope id="842732463504404446" at="37,0,62,0">
+        <var name="m" id="842732463504404446" />
+      </scope>
+      <unit id="842732463504404446" at="66,0,70,0" name="com.mbeddr.core.unittest.migration.addConfigItemToBuildConfig$LINKS" />
+      <unit id="842732463504404446" at="71,0,76,0" name="com.mbeddr.core.unittest.migration.addConfigItemToBuildConfig$CONCEPTS" />
+      <unit id="842732463504404446" at="24,0,77,0" name="com.mbeddr.core.unittest.migration.addConfigItemToBuildConfig" />
+    </file>
+  </root>
+  <root nodeRef="r:c4872e01-c9c6-4375-9e02-9c9b86cc86f4(com.mbeddr.core.unittest.migration)/8780521317128316070">
+    <file name="removeTestStrategy.java">
+      <node id="8780521317128316070" at="19,0,20,0" concept="2" trace="description" />
+      <node id="8780521317128316070" at="20,30,21,23" concept="7" />
+      <node id="8780521317128316070" at="24,33,25,17" concept="7" />
+      <node id="8780521317128316070" at="27,41,28,17" concept="1" />
+      <node id="8780521317128316070" at="28,17,29,16" concept="7" />
+      <node id="8780521317128335747" at="32,40,33,311" concept="1" />
+      <node id="8780521317128316070" at="36,50,37,144" concept="7" />
+      <node id="8780521317128316070" at="41,0,42,0" concept="9" trace="BuildConfiguration$kH" />
+      <node id="8780521317128316070" at="42,0,43,0" concept="9" trace="UnitTestConfigItem$uM" />
+      <node id="8780521317128316070" at="46,0,47,0" concept="9" trace="configurationItems$HPvE" />
+      <node id="8780521317128316070" at="47,0,48,0" concept="9" trace="testStrategy$_2FH" />
+      <node id="8780521317128316070" at="20,0,23,0" concept="5" trace="getCaption#()Ljava/lang/String;" />
+      <node id="8780521317128331296" at="31,42,34,5" concept="3" />
+      <node id="8780521317128316070" at="36,0,39,0" concept="5" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="8780521317128316070" at="23,0,27,0" concept="5" trace="isRerunnable#()Z" />
+      <node id="8780521317128316070" at="27,0,31,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8780521317128316070" at="31,0,36,0" concept="5" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="8780521317128316070" at="20,30,21,23" />
+      <scope id="8780521317128316070" at="24,33,25,17" />
+      <scope id="8780521317128331300" at="32,40,33,311" />
+      <scope id="8780521317128316070" at="36,50,37,144" />
+      <scope id="8780521317128316070" at="27,41,29,16" />
+      <scope id="8780521317128316070" at="20,0,23,0" />
+      <scope id="8780521317128316070" at="31,42,34,5" />
+      <scope id="8780521317128331296" at="31,42,34,5">
+        <var name="model" id="8780521317128331301" />
+      </scope>
+      <scope id="8780521317128316070" at="36,0,39,0" />
+      <scope id="8780521317128316070" at="23,0,27,0" />
+      <scope id="8780521317128316070" at="27,0,31,0">
+        <var name="m" id="8780521317128316070" />
+      </scope>
+      <scope id="8780521317128316070" at="31,0,36,0">
+        <var name="m" id="8780521317128316070" />
+      </scope>
+      <unit id="8780521317128316070" at="40,0,44,0" name="com.mbeddr.core.unittest.migration.removeTestStrategy$CONCEPTS" />
+      <unit id="8780521317128316070" at="45,0,49,0" name="com.mbeddr.core.unittest.migration.removeTestStrategy$LINKS" />
+      <unit id="8780521317128316070" at="18,0,50,0" name="com.mbeddr.core.unittest.migration.removeTestStrategy" />
+    </file>
+  </root>
+</debug-info>
+

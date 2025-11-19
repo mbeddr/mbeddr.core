@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="ea20ve8aoyw2hmc6u8kk6s9s0njnb90">
+  <files names="AppendOp_Editor.java:AppendOp_EditorBuilder_a.java:ContextTargetNodeName_Editor.java:ContextTargetNodeName_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:FunctionCallsMatcher_Editor.java:FunctionCallsMatcher_EditorBuilder_a.java:FunctionMatcher_Editor.java:FunctionMatcher_EditorBuilder_a.java:FunctionMatcher_InspectorBuilder_a.java:FunctionStatementMerger_Editor.java:FunctionStatementMerger_EditorBuilder_a.java:PrependOp_Editor.java:PrependOp_EditorBuilder_a.java:ReplaceCall_Editor.java:ReplaceCall_EditorBuilder_a.java:ReplaceHookOp_Editor.java:ReplaceHookOp_EditorBuilder_a.java:ReplaceOp_Editor.java:ReplaceOp_EditorBuilder_a.java" />
+</product>
+

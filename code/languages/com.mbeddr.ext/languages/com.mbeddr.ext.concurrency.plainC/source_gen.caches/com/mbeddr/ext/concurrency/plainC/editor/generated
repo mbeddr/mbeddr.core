@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="8lyyo5f1y28cmfi4ojwvv87xnzanqve">
+  <files names="AcquireLockStatement_Editor.java:AcquireLockStatement_EditorBuilder_a.java:CurrentTimeExpression_Editor.java:CurrentTimeExpression_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:ExitTaskStatement_Editor.java:ExitTaskStatement_EditorBuilder_a.java:GotoNextSectionStatement_Editor.java:GotoNextSectionStatement_EditorBuilder_a.java:GotoSectionAfterStatement_Editor.java:GotoSectionAfterStatement_EditorBuilder_a.java:GotoSectionStatement_Editor.java:GotoSectionStatement_EditorBuilder_a.java:LockDeclaration_Editor.java:LockDeclaration_EditorBuilder_a.java:PlainCStrategy_Editor.java:PlainCStrategy_EditorBuilder_a.java:PresentationProviders.java:ReleaseLockStatement_Editor.java:ReleaseLockStatement_EditorBuilder_a.java:RemoveGeneratorOnlyConcepts_Contribution.java:TaskSection_Editor.java:TaskSection_EditorBuilder_a.java" />
+</product>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:5524d5d3-b0a6-45d1-8003-a1549b3f7cc3(com.mbeddr.build.templates.build)/4938592026144194254">
+    <file name="platform-extension.template.xml">
+      <unit id="4938592026144194254" at="1,0,93,10" name="com.mbeddr.build.templates.build.platform-extension$template" />
+    </file>
+  </root>
+  <root nodeRef="r:5524d5d3-b0a6-45d1-8003-a1549b3f7cc3(com.mbeddr.build.templates.build)/6015510775739874575">
+    <file name="mbeddr-extension.template.xml">
+      <unit id="6015510775739874575" at="1,0,99,10" name="com.mbeddr.build.templates.build.mbeddr-extension$template" />
+    </file>
+  </root>
+</debug-info>
+

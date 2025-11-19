@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)/1916664740001813161">
+    <file name="EnableUpdates_ProjectPluginPart.java">
+      <node id="1641394235049751659" at="18,25,19,59" concept="1" />
+      <node id="1641394235049758406" at="19,59,20,54" concept="1" />
+      <node id="1916664740001813161" at="12,0,14,0" concept="0" trace="EnableUpdates_ProjectPluginPart#()V" />
+      <node id="1916664740001820981" at="17,0,22,0" concept="4" trace="run#()V" />
+      <node id="1916664740001809578" at="15,40,22,7" concept="1" />
+      <node id="1916664740001813161" at="14,0,24,0" concept="4" trace="init#(Ljetbrains/mps/project/MPSProject;)V" />
+      <scope id="1916664740001813161" at="12,44,12,44" />
+      <scope id="1916664740001813161" at="12,0,14,0" />
+      <scope id="1916664740001820985" at="18,25,20,54" />
+      <scope id="1916664740001820981" at="17,0,22,0" />
+      <scope id="1916664740001813576" at="15,40,22,7" />
+      <scope id="1916664740001813161" at="14,0,24,0">
+        <var name="project" id="1916664740001813161" />
+      </scope>
+      <unit id="1916664740001820964" at="16,101,22,5" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.EnableUpdates_ProjectPluginPart$1" />
+      <unit id="1916664740001813161" at="11,0,25,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.EnableUpdates_ProjectPluginPart" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="1916664740001813161" at="12,62,13,53" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)/3749906162948788086">
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="3749906162948788086" at="12,0,13,0" concept="2" trace="myId" />
+      <node id="3749906162948788086" at="18,27,19,16" concept="6" />
+      <node id="3749906162948788086" at="14,0,16,0" concept="0" trace="Runtime_ApplicationPlugin#()V" />
+      <node id="3749906162948788086" at="17,0,21,0" concept="4" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="3749906162948788086" at="22,0,26,0" concept="4" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3749906162948788086" at="14,38,14,38" />
+      <scope id="3749906162948788086" at="18,27,19,16" />
+      <scope id="3749906162948788086" at="23,66,24,49" />
+      <scope id="3749906162948788086" at="14,0,16,0" />
+      <scope id="3749906162948788086" at="17,0,21,0" />
+      <scope id="3749906162948788086" at="22,0,26,0">
+        <var name="parts" id="3749906162948788086" />
+      </scope>
+      <unit id="3749906162948788086" at="11,0,27,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.Runtime_ApplicationPlugin" />
+    </file>
+    <file name="Runtime_ProjectPlugin.java">
+      <node id="3749906162948788086" at="10,0,12,0" concept="0" trace="Runtime_ProjectPlugin#()V" />
+      <node id="3749906162948788086" at="12,0,15,0" concept="4" trace="fillCustomParts#(Ljava/util/List;)V" />
+      <scope id="3749906162948788086" at="10,34,10,34" />
+      <scope id="3749906162948788086" at="12,62,13,53" />
+      <scope id="3749906162948788086" at="10,0,12,0" />
+      <scope id="3749906162948788086" at="12,0,15,0">
+        <var name="parts" id="3749906162948788086" />
+      </scope>
+      <unit id="3749906162948788086" at="9,0,16,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.Runtime_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)/3749906162948789413">
+    <file name="ActionsFilter_AppPluginPart.java">
+      <node id="3749906162948811511" at="11,0,12,0" concept="2" trace="configurable" />
+      <node id="7516316505502721943" at="15,22,16,29" concept="1" />
+      <node id="3749906162948791719" at="16,29,17,144" concept="1" />
+      <node id="3749906162948828840" at="20,25,21,100" concept="1" />
+      <node id="3749906162948789413" at="12,0,14,0" concept="0" trace="ActionsFilter_AppPluginPart#()V" />
+      <node id="3749906162948789413" at="19,0,23,0" concept="4" trace="dispose#()V" />
+      <node id="3749906162948789413" at="14,0,19,0" concept="4" trace="init#()V" />
+      <scope id="3749906162948789413" at="12,40,12,40" />
+      <scope id="3749906162948823839" at="20,25,21,100" />
+      <scope id="3749906162948789413" at="12,0,14,0" />
+      <scope id="3749906162948790741" at="15,22,17,144" />
+      <scope id="3749906162948789413" at="19,0,23,0" />
+      <scope id="3749906162948789413" at="14,0,19,0" />
+      <unit id="3749906162948789413" at="10,0,24,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.ActionsFilter_AppPluginPart" />
+    </file>
+    <file name="Runtime_ApplicationPlugin.java">
+      <node id="3749906162948789413" at="23,66,24,49" concept="1" />
+    </file>
+  </root>
+  <root nodeRef="r:7455aabd-f467-419c-8384-7f9bd5f17d03(com.mbeddr.mpsutil.actionsfilter.runtime.plugin)/6338510492946113264">
+    <file name="ActionsService.java">
+      <node id="5255147696856714315" at="29,0,30,0" concept="7" trace="FILENAME" />
+      <node id="587215513825803517" at="36,0,37,0" concept="2" trace="updatesEnabled" />
+      <node id="7689955040944188552" at="38,0,39,0" concept="2" trace="state" />
+      <node id="4445293981435721323" at="40,46,41,80" concept="6" />
+      <node id="5032082488151732793" at="48,32,49,126" concept="5" />
+      <node id="578168698353892646" at="49,126,50,50" concept="5" />
+      <node id="4595387212265044310" at="50,50,51,30" concept="1" />
+      <node id="5032082488151710183" at="51,30,52,101" concept="1" />
+      <node id="5261033446063599782" at="56,9,57,63" concept="5" />
+      <node id="5261033446063599787" at="57,63,58,69" concept="5" />
+      <node id="5261033446063599802" at="58,69,59,53" concept="5" />
+      <node id="5261033446063599807" at="59,53,60,53" concept="5" />
+      <node id="84365481205260639" at="60,53,61,63" concept="6" />
+      <node id="84365481205283486" at="63,11,64,27" concept="6" />
+      <node id="84365481205326324" at="67,5,68,16" concept="6" />
+      <node id="4935541884697434420" at="71,22,72,97" concept="5" />
+      <node id="4935541884697462661" at="72,97,73,30" concept="1" />
+      <node id="7689955040944190779" at="76,27,77,17" concept="6" />
+      <node id="5465021085855365499" at="81,31,82,27" concept="1" />
+      <node id="7689955040944204860" at="85,38,86,18" concept="1" />
+      <node id="2004126182045079181" at="86,18,87,21" concept="1" />
+      <node id="1382626011956144547" at="91,25,92,20" concept="1" />
+      <node id="1382626011956153785" at="92,20,93,21" concept="1" />
+      <node id="6338510492946171461" at="97,29,98,54" concept="1" />
+      <node id="3045660076183670941" at="101,30,102,62" concept="1" />
+      <node id="5032082488151732795" at="104,66,105,47" concept="6" />
+      <node id="6338510492946113272" at="40,0,43,0" concept="8" trace="getInstance#()Lcom/mbeddr/mpsutil/actionsfilter/runtime/plugin/ActionsService;" />
+      <node id="6338510492946113406" at="76,0,79,0" concept="4" trace="getState#()Lcom/mbeddr/mpsutil/actionsfilter/runtime/Model;" />
+      <node id="6338510492946171457" at="97,0,100,0" concept="4" trace="applyFilter#()V" />
+      <node id="4787956801827920978" at="101,0,104,0" concept="4" trace="applyToolbar#()V" />
+      <node id="5032082488151732795" at="104,0,107,0" concept="8" trace="as_a5fjik_a0a0a9#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="84365481205290653" at="62,27,66,7" concept="9" />
+      <node id="5299720609272546574" at="71,0,75,0" concept="4" trace="save#()V" />
+      <node id="2659655768030390153" at="80,0,84,0" concept="4" trace="noStateLoaded#()V" />
+      <node id="6338510492946113416" at="85,0,89,0" concept="4" trace="loadState#(Lcom/mbeddr/mpsutil/actionsfilter/runtime/Model;)V" />
+      <node id="1916664740001798276" at="90,32,94,5" concept="3" />
+      <node id="5032082488151704835" at="48,0,54,0" concept="8" trace="replace#()V" />
+      <node id="1382626011956129991" at="90,0,96,0" concept="4" trace="applyIfEnabled#()V" />
+      <node id="5261033446063599824" at="55,30,67,5" concept="9" />
+      <node id="5261033446063599771" at="55,0,70,0" concept="8" trace="read#()Lcom/mbeddr/mpsutil/actionsfilter/runtime/Model;" />
+      <scope id="84365481205295393" at="65,30,65,30" />
+      <scope id="6338510492946113273" at="40,46,41,80" />
+      <scope id="84365481205290655" at="63,11,64,27" />
+      <scope id="84365481205295390" at="65,7,66,7">
+        <var name="ex" id="84365481205295391" />
+      </scope>
+      <scope id="6338510492946113410" at="76,27,77,17" />
+      <scope id="2659655768030390158" at="81,31,82,27" />
+      <scope id="6338510492946171460" at="97,29,98,54" />
+      <scope id="4787956801827920981" at="101,30,102,62" />
+      <scope id="5032082488151732795" at="104,66,105,47" />
+      <scope id="5299720609272546577" at="71,22,73,30">
+        <var name="store" id="4935541884697434421" />
+      </scope>
+      <scope id="6338510492946113421" at="85,38,87,21" />
+      <scope id="1916664740001798278" at="91,25,93,21" />
+      <scope id="6338510492946113272" at="40,0,43,0" />
+      <scope id="6338510492946113406" at="76,0,79,0" />
+      <scope id="6338510492946171457" at="97,0,100,0" />
+      <scope id="4787956801827920978" at="101,0,104,0" />
+      <scope id="5032082488151732795" at="104,0,107,0">
+        <var name="o" id="5032082488151732795" />
+        <var name="type" id="5032082488151732795" />
+      </scope>
+      <scope id="5032082488151704838" at="48,32,52,101">
+        <var name="componentManager" id="5032082488151732794" />
+        <var name="service" id="578168698353892647" />
+      </scope>
+      <scope id="5261033446063599819" at="62,27,66,7" />
+      <scope id="5299720609272546574" at="71,0,75,0" />
+      <scope id="2659655768030390153" at="80,0,84,0" />
+      <scope id="6338510492946113416" at="85,0,89,0">
+        <var name="model" id="6338510492946113419" />
+      </scope>
+      <scope id="1382626011956129994" at="90,32,94,5" />
+      <scope id="5261033446063599780" at="56,9,61,63">
+        <var name="component" id="5261033446063599806" />
+        <var name="configPath" id="5261033446063599781" />
+        <var name="root" id="5261033446063599801" />
+        <var name="xmlFile" id="5261033446063599786" />
+      </scope>
+      <scope id="5261033446063599825" at="62,5,67,5">
+        <var name="e" id="5261033446063599815" />
+      </scope>
+      <scope id="5032082488151704835" at="48,0,54,0" />
+      <scope id="1382626011956129991" at="90,0,96,0" />
+      <scope id="5261033446063599778" at="55,30,68,16" />
+      <scope id="5261033446063599771" at="55,0,70,0" />
+      <unit id="6338510492946113264" at="24,0,108,0" name="com.mbeddr.mpsutil.actionsfilter.runtime.plugin.ActionsService" />
+    </file>
+  </root>
+</debug-info>
+

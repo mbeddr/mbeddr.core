@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)/4938592026144194254">
+    <file name="mbeddr.xml">
+      <unit id="4938592026144194254" at="1,0,23892,10" name="com.mbeddr.build.build.mbeddr" />
+    </file>
+  </root>
+  <root nodeRef="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)/6496850514092230245">
+    <file name="colorSchemes.xml">
+      <unit id="6496850514092230245" at="1,0,63,10" name="com.mbeddr.build.build.colorSchemes" />
+    </file>
+  </root>
+</debug-info>
+

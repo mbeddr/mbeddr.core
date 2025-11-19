@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="04e1f940-330e-483b-9a6a-1648b396a81c/r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.runtime)/6459847791820108173">
+    <file name="HyperlinkHandler.java">
+      <node id="6459847791820108190" at="7,0,8,0" concept="3" trace="open#(Lcom/mbeddr/mpsutil/hyperlink/runtime/HyperlinkUtil;)V" />
+      <scope id="6459847791820108190" at="7,0,8,0">
+        <var name="util" id="6459847791820108266" />
+      </scope>
+      <unit id="6459847791820108173" at="6,0,9,0" name="com.mbeddr.mpsutil.hyperlink.runtime.HyperlinkHandler" />
+    </file>
+  </root>
+  <root nodeRef="04e1f940-330e-483b-9a6a-1648b396a81c/r:4f3facd2-2d6c-40e4-a229-cdeb0a5137d8(com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.runtime)/6459847791820108243">
+    <file name="HyperlinkUtil.java">
+      <node id="6459847791820108243" at="10,0,11,0" concept="6" trace="LOG" />
+      <node id="6459847791820135167" at="11,0,12,0" concept="6" trace="INSTANCE" />
+      <node id="4208238404723707617" at="23,9,24,79" concept="4" />
+      <node id="5918211902454713289" at="26,40,27,33" concept="1" />
+      <node id="5918211902454714620" at="27,33,28,17" concept="5" />
+      <node id="5779127112631435894" at="30,76,31,32" concept="1" />
+      <node id="4208238404723707626" at="32,9,33,31" concept="1" />
+      <node id="6533890598475089692" at="36,31,37,52" concept="1" />
+      <node id="6459847791820141965" at="13,0,15,0" concept="0" trace="HyperlinkUtil#()V" />
+      <node id="5779127112631435859" at="29,9,32,9" concept="2" />
+      <node id="6533890598475089692" at="35,28,38,7" concept="2" />
+      <node id="5918211902454699497" at="25,59,29,9" concept="2" />
+      <node id="4208238404723707624" at="24,79,34,7" concept="2" />
+      <node id="4208238404723707615" at="22,41,39,5" concept="7" />
+      <node id="6459847791820152875" at="22,0,41,0" concept="3" trace="openInBrowser#(Ljava/lang/String;)V" />
+      <scope id="6459847791820141969" at="13,27,13,27" />
+      <scope id="5779127112631435860" at="30,76,31,32" />
+      <scope id="6533890598475089692" at="36,31,37,52" />
+      <scope id="6459847791820141965" at="13,0,15,0" />
+      <scope id="5918211902454699500" at="26,40,28,17" />
+      <scope id="4208238404723707636" at="35,28,38,7" />
+      <scope id="4208238404723707633" at="35,5,39,5">
+        <var name="ex" id="4208238404723707634" />
+      </scope>
+      <scope id="4208238404723707625" at="25,59,33,31" />
+      <scope id="4208238404723707616" at="23,9,34,7">
+        <var name="d" id="4208238404723707618" />
+      </scope>
+      <scope id="6459847791820152879" at="22,41,39,5" />
+      <scope id="6459847791820152875" at="22,0,41,0">
+        <var name="url" id="6459847791820153001" />
+      </scope>
+      <unit id="6459847791820108243" at="9,0,42,0" name="com.mbeddr.mpsutil.hyperlink.runtime.HyperlinkUtil" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,32,0" name="com.mbeddr.mpsutil.json.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:227321f2-02c9-4a44-b09d-5fd13f71b5a6(com.mbeddr.mpsutil.json.constraints)/7647226635869210761">
+    <file name="Number_Constraints.java">
+      <node id="7647226635869210761" at="18,80,19,43" concept="8" />
+      <node id="7647226635869210762" at="19,43,20,31" concept="1" />
+      <node id="7647226635869210762" at="24,54,25,61" concept="8" />
+      <node id="7647226635869210762" at="28,109,29,99" concept="4" />
+      <node id="7647226635869210762" at="30,53,31,164" concept="1" />
+      <node id="7647226635869210762" at="32,7,33,20" concept="5" />
+      <node id="7351336083428329863" at="35,85,36,79" concept="5" />
+      <node id="7647226635869210761" at="41,0,42,0" concept="6" trace="Number$Fg" />
+      <node id="7647226635869210761" at="45,0,46,0" concept="6" trace="value$Gd4J" />
+      <node id="7647226635869210762" at="24,0,27,0" concept="0" trace="Value_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7647226635869210762" at="29,99,32,7" concept="2" />
+      <node id="7647226635869210762" at="35,0,38,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="7647226635869210761" at="18,0,22,0" concept="0" trace="Number_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="7647226635869210762" at="27,0,35,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7647226635869210762" at="24,54,25,61" />
+      <scope id="7647226635869210762" at="30,53,31,164" />
+      <scope id="7647226635869210766" at="35,85,36,79" />
+      <scope id="7647226635869210761" at="18,80,20,31" />
+      <scope id="7647226635869210762" at="24,0,27,0">
+        <var name="container" id="7647226635869210762" />
+      </scope>
+      <scope id="7647226635869210762" at="35,0,38,0">
+        <var name="node" id="7647226635869210762" />
+        <var name="propertyValue" id="7647226635869210762" />
+      </scope>
+      <scope id="7647226635869210761" at="18,0,22,0">
+        <var name="initContext" id="7647226635869210761" />
+      </scope>
+      <scope id="7647226635869210762" at="28,109,33,20">
+        <var name="result" id="7647226635869210762" />
+      </scope>
+      <scope id="7647226635869210762" at="27,0,35,0">
+        <var name="checkingNodeContext" id="7647226635869210762" />
+        <var name="node" id="7647226635869210762" />
+        <var name="propertyValue" id="7647226635869210762" />
+      </scope>
+      <unit id="7647226635869210761" at="40,0,43,0" name="com.mbeddr.mpsutil.json.constraints.Number_Constraints$CONCEPTS" />
+      <unit id="7647226635869210761" at="44,0,47,0" name="com.mbeddr.mpsutil.json.constraints.Number_Constraints$PROPS" />
+      <unit id="7647226635869210762" at="23,0,39,0" name="com.mbeddr.mpsutil.json.constraints.Number_Constraints$Value_PD" />
+      <unit id="7647226635869210761" at="17,0,48,0" name="com.mbeddr.mpsutil.json.constraints.Number_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

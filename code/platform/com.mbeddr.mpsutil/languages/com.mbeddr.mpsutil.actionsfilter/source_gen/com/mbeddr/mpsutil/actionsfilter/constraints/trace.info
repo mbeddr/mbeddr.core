@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,36,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6d382836-e745-4342-82e0-96a1ffc743ed(com.mbeddr.mpsutil.actionsfilter.constraints)/3498395731473337497">
+    <file name="AllowAction_Constraints.java">
+      <node id="3498395731473337497" at="22,85,23,48" concept="9" />
+      <node id="3498395731473337497" at="26,127,27,128" concept="4" />
+      <node id="3498395731473337497" at="27,128,28,0" concept="6" />
+      <node id="3498395731473337497" at="29,55,30,71" concept="1" />
+      <node id="3498395731473337497" at="31,9,32,0" concept="6" />
+      <node id="3498395731473337497" at="32,0,33,22" concept="5" />
+      <node id="6768392667014032977" at="38,128,39,151" concept="5" />
+      <node id="3498395731473337497" at="41,0,42,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="3498395731473337497" at="44,0,45,0" concept="7" trace="AllowAction$9c" />
+      <node id="3498395731473337497" at="45,0,46,0" concept="7" trace="ActionsProfile$il" />
+      <node id="3498395731473337497" at="28,0,31,9" concept="2" />
+      <node id="3498395731473337497" at="38,0,41,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3498395731473337497" at="25,0,35,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3498395731473337497" at="23,48,35,7" concept="1" />
+      <node id="3498395731473337497" at="22,0,37,0" concept="0" trace="AllowAction_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3498395731473337497" at="29,55,30,71" />
+      <scope id="6768392667014032976" at="38,128,39,151" />
+      <scope id="3498395731473337497" at="38,0,41,0">
+        <var name="childConcept" id="3498395731473337497" />
+        <var name="link" id="3498395731473337497" />
+        <var name="node" id="3498395731473337497" />
+        <var name="parentNode" id="3498395731473337497" />
+      </scope>
+      <scope id="3498395731473337497" at="26,127,33,22">
+        <var name="result" id="3498395731473337497" />
+      </scope>
+      <scope id="3498395731473337497" at="25,0,35,0">
+        <var name="checkingNodeContext" id="3498395731473337497" />
+        <var name="context" id="3498395731473337497" />
+      </scope>
+      <scope id="3498395731473337497" at="22,85,35,7" />
+      <scope id="3498395731473337497" at="22,0,37,0">
+        <var name="initContext" id="3498395731473337497" />
+      </scope>
+      <unit id="3498395731473337497" at="43,0,47,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.AllowAction_Constraints$CONCEPTS" />
+      <unit id="3498395731473337497" at="24,32,35,5" name="com.mbeddr.mpsutil.actionsfilter.constraints.AllowAction_Constraints$1" />
+      <unit id="3498395731473337497" at="21,0,48,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.AllowAction_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6d382836-e745-4342-82e0-96a1ffc743ed(com.mbeddr.mpsutil.actionsfilter.constraints)/3498395731473352908">
+    <file name="RemoveAction_Constraints.java">
+      <node id="3498395731473352908" at="22,86,23,49" concept="9" />
+      <node id="3498395731473352908" at="26,127,27,128" concept="4" />
+      <node id="3498395731473352908" at="27,128,28,0" concept="6" />
+      <node id="3498395731473352908" at="29,55,30,71" concept="1" />
+      <node id="3498395731473352908" at="31,9,32,0" concept="6" />
+      <node id="3498395731473352908" at="32,0,33,22" concept="5" />
+      <node id="6768392667014032984" at="38,128,39,152" concept="5" />
+      <node id="3498395731473352908" at="41,0,42,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="3498395731473352908" at="44,0,45,0" concept="7" trace="RemoveAction$ss" />
+      <node id="3498395731473352908" at="45,0,46,0" concept="7" trace="ActionsProfile$il" />
+      <node id="3498395731473352908" at="28,0,31,9" concept="2" />
+      <node id="3498395731473352908" at="38,0,41,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="3498395731473352908" at="25,0,35,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="3498395731473352908" at="23,49,35,7" concept="1" />
+      <node id="3498395731473352908" at="22,0,37,0" concept="0" trace="RemoveAction_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3498395731473352908" at="29,55,30,71" />
+      <scope id="6768392667014032983" at="38,128,39,152" />
+      <scope id="3498395731473352908" at="38,0,41,0">
+        <var name="childConcept" id="3498395731473352908" />
+        <var name="link" id="3498395731473352908" />
+        <var name="node" id="3498395731473352908" />
+        <var name="parentNode" id="3498395731473352908" />
+      </scope>
+      <scope id="3498395731473352908" at="26,127,33,22">
+        <var name="result" id="3498395731473352908" />
+      </scope>
+      <scope id="3498395731473352908" at="25,0,35,0">
+        <var name="checkingNodeContext" id="3498395731473352908" />
+        <var name="context" id="3498395731473352908" />
+      </scope>
+      <scope id="3498395731473352908" at="22,86,35,7" />
+      <scope id="3498395731473352908" at="22,0,37,0">
+        <var name="initContext" id="3498395731473352908" />
+      </scope>
+      <unit id="3498395731473352908" at="43,0,47,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.RemoveAction_Constraints$CONCEPTS" />
+      <unit id="3498395731473352908" at="24,32,35,5" name="com.mbeddr.mpsutil.actionsfilter.constraints.RemoveAction_Constraints$1" />
+      <unit id="3498395731473352908" at="21,0,48,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.RemoveAction_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6d382836-e745-4342-82e0-96a1ffc743ed(com.mbeddr.mpsutil.actionsfilter.constraints)/7339591575770064402">
+    <file name="ToolBarEntry_Constraints.java">
+      <node id="7339591575770064402" at="21,86,22,49" concept="9" />
+      <node id="7339591575770064402" at="25,127,26,128" concept="4" />
+      <node id="7339591575770064402" at="26,128,27,0" concept="6" />
+      <node id="7339591575770064402" at="28,55,29,71" concept="1" />
+      <node id="7339591575770064402" at="30,9,31,0" concept="6" />
+      <node id="7339591575770064402" at="31,0,32,22" concept="5" />
+      <node id="7339591575770064861" at="37,128,38,73" concept="5" />
+      <node id="7339591575770064402" at="40,0,41,0" concept="7" trace="canBeChildBreakingPoint" />
+      <node id="7339591575770064402" at="43,0,44,0" concept="7" trace="ToolBarEntry$Ks" />
+      <node id="7339591575770064402" at="44,0,45,0" concept="7" trace="ToolBar$y1" />
+      <node id="7339591575770064402" at="27,0,30,9" concept="2" />
+      <node id="7339591575770064402" at="37,0,40,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7339591575770064402" at="24,0,34,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7339591575770064402" at="22,49,34,7" concept="1" />
+      <node id="7339591575770064402" at="21,0,36,0" concept="0" trace="ToolBarEntry_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="7339591575770064402" at="28,55,29,71" />
+      <scope id="7339591575770064404" at="37,128,38,73" />
+      <scope id="7339591575770064402" at="37,0,40,0">
+        <var name="childConcept" id="7339591575770064402" />
+        <var name="link" id="7339591575770064402" />
+        <var name="node" id="7339591575770064402" />
+        <var name="parentNode" id="7339591575770064402" />
+      </scope>
+      <scope id="7339591575770064402" at="25,127,32,22">
+        <var name="result" id="7339591575770064402" />
+      </scope>
+      <scope id="7339591575770064402" at="24,0,34,0">
+        <var name="checkingNodeContext" id="7339591575770064402" />
+        <var name="context" id="7339591575770064402" />
+      </scope>
+      <scope id="7339591575770064402" at="21,86,34,7" />
+      <scope id="7339591575770064402" at="21,0,36,0">
+        <var name="initContext" id="7339591575770064402" />
+      </scope>
+      <unit id="7339591575770064402" at="42,0,46,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.ToolBarEntry_Constraints$CONCEPTS" />
+      <unit id="7339591575770064402" at="23,32,34,5" name="com.mbeddr.mpsutil.actionsfilter.constraints.ToolBarEntry_Constraints$1" />
+      <unit id="7339591575770064402" at="20,0,47,0" name="com.mbeddr.mpsutil.actionsfilter.constraints.ToolBarEntry_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

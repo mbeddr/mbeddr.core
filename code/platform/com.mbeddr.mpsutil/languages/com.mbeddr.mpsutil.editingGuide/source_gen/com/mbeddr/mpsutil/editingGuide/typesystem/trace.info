@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="com.mbeddr.mpsutil.editingGuide.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:279d7db7-e1a6-4021-b62b-41a039aefc7f(com.mbeddr.mpsutil.editingGuide.typesystem)/8559642785977286287">
+    <file name="TypesystemDescriptor.java">
+      <node id="8559642785977286287" at="10,5,11,92" concept="5" />
+      <node id="8559642785977286287" at="11,92,12,55" concept="2" />
+      <node id="8559642785977286287" at="9,33,13,5" concept="0" />
+      <scope id="8559642785977286287" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="8559642785977286287" />
+      </scope>
+    </file>
+    <file name="check_ImageWord_NonTypesystemRule.java">
+      <node id="8559642785977325065" at="23,292,24,113" concept="7" />
+      <node id="8559642785977328403" at="24,113,25,97" concept="7" />
+      <node id="8559642785977300606" at="26,7,27,66" concept="5" />
+      <node id="8559642785977300606" at="27,66,28,287" concept="5" />
+      <node id="8559642785977333372" at="29,9,30,184" concept="5" />
+      <node id="8559642785977333372" at="30,184,31,71" concept="2" />
+      <node id="8559642785977286287" at="36,50,37,33" concept="6" />
+      <node id="8559642785977286287" at="39,68,40,102" concept="6" />
+      <node id="8559642785977286287" at="42,30,43,17" concept="6" />
+      <node id="8559642785977286287" at="47,0,48,0" concept="8" trace="ImageWord$Vf" />
+      <node id="8559642785977286287" at="20,0,22,0" concept="1" trace="check_ImageWord_NonTypesystemRule#()V" />
+      <node id="8559642785977286287" at="36,0,39,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8559642785977286287" at="39,0,42,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8559642785977286287" at="42,0,45,0" concept="4" trace="overrides#()Z" />
+      <node id="8559642785977333372" at="28,287,32,9" concept="0" />
+      <node id="8559642785977300606" at="25,97,33,7" concept="0" />
+      <node id="860055413510559714" at="22,122,34,5" concept="3" />
+      <node id="8559642785977286287" at="22,0,36,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8559642785977286287" at="20,46,20,46" />
+      <scope id="8559642785977286287" at="36,50,37,33" />
+      <scope id="8559642785977286287" at="39,68,40,102" />
+      <scope id="8559642785977286287" at="42,30,43,17" />
+      <scope id="8559642785977286287" at="20,0,22,0" />
+      <scope id="8559642785977333372" at="29,9,31,71">
+        <var name="intentionProvider" id="8559642785977333372" />
+      </scope>
+      <scope id="8559642785977286287" at="36,0,39,0" />
+      <scope id="8559642785977286287" at="39,0,42,0">
+        <var name="argument" id="8559642785977286287" />
+      </scope>
+      <scope id="8559642785977286287" at="42,0,45,0" />
+      <scope id="8559642785977300606" at="26,7,32,9">
+        <var name="_reporter_2309309498" id="8559642785977300606" />
+        <var name="errorTarget" id="8559642785977300606" />
+      </scope>
+      <scope id="860055413510559716" at="23,292,33,7" />
+      <scope id="8559642785977286288" at="22,122,34,5" />
+      <scope id="8559642785977286287" at="22,0,36,0">
+        <var name="imageWord" id="8559642785977286287" />
+        <var name="status" id="8559642785977286287" />
+        <var name="typeCheckingContext" id="8559642785977286287" />
+      </scope>
+      <unit id="8559642785977286287" at="46,0,49,0" name="com.mbeddr.mpsutil.editingGuide.typesystem.check_ImageWord_NonTypesystemRule$CONCEPTS" />
+      <unit id="8559642785977286287" at="19,0,50,0" name="com.mbeddr.mpsutil.editingGuide.typesystem.check_ImageWord_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:279d7db7-e1a6-4021-b62b-41a039aefc7f(com.mbeddr.mpsutil.editingGuide.typesystem)/8559642785977333336">
+    <file name="fix_ImageWordNoModuleId_QuickFix.java">
+      <node id="8559642785977333336" at="14,45,15,137" concept="9" />
+      <node id="8559642785977342611" at="17,44,18,27" concept="6" />
+      <node id="8559642785977381893" at="20,35,21,171" concept="2" />
+      <node id="8559642785977333336" at="25,0,26,0" concept="8" trace="moduleId$IuRY" />
+      <node id="8559642785977333336" at="14,0,17,0" concept="1" trace="fix_ImageWordNoModuleId_QuickFix#()V" />
+      <node id="8559642785977333336" at="17,0,20,0" concept="4" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8559642785977333336" at="20,0,23,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8559642785977333336" at="14,45,15,137" />
+      <scope id="8559642785977333818" at="17,44,18,27" />
+      <scope id="8559642785977333338" at="20,35,21,171" />
+      <scope id="8559642785977333336" at="14,0,17,0" />
+      <scope id="8559642785977333336" at="17,0,20,0">
+        <var name="node" id="8559642785977333336" />
+      </scope>
+      <scope id="8559642785977333336" at="20,0,23,0">
+        <var name="node" id="8559642785977333336" />
+      </scope>
+      <unit id="8559642785977333336" at="24,0,27,0" name="com.mbeddr.mpsutil.editingGuide.typesystem.fix_ImageWordNoModuleId_QuickFix$PROPS" />
+      <unit id="8559642785977333336" at="13,0,28,0" name="com.mbeddr.mpsutil.editingGuide.typesystem.fix_ImageWordNoModuleId_QuickFix" />
+    </file>
+  </root>
+</debug-info>
+

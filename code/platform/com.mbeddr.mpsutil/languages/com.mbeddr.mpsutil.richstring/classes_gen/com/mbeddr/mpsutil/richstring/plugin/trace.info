@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.richstring.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b71bf399-7fda-4c70-b141-468408de8cc3(com.mbeddr.mpsutil.richstring.plugin)/902624672039903063">
+    <file name="IRichstringEvaluator.java">
+      <node id="902624672039903302" at="8,0,9,0" concept="0" trace="eval#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="902624672039903302" at="8,0,9,0">
+        <var name="input" id="902624672039919495" />
+      </scope>
+      <unit id="902624672039903063" at="7,0,10,0" name="com.mbeddr.mpsutil.richstring.plugin.IRichstringEvaluator" />
+    </file>
+  </root>
+</debug-info>
+

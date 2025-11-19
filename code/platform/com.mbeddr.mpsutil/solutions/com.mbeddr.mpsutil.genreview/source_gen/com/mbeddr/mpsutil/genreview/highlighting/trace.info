@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:aff1ad0d-17a1-4e56-b10e-af8f09549165(com.mbeddr.mpsutil.genreview.highlighting)/3348002703003486799">
+    <file name="HighlightingStrategyBase.java">
+      <node id="3598115708895373233" at="14,0,15,0" concept="5" trace="NORMAL_STYLE" />
+      <node id="3598115708895375180" at="15,0,16,0" concept="5" trace="BOLD_STYLE" />
+      <node id="3598115708895376516" at="16,0,17,0" concept="5" trace="ITALIC_STYLE" />
+      <node id="3598115708898208787" at="18,0,19,0" concept="2" trace="getAttributes2KeywordsMap#()Ljava/util/Map;" />
+      <node id="3598115708897856565" at="20,94,21,54" concept="3" />
+      <node id="3598115708897856570" at="21,54,22,54" concept="1" />
+      <node id="3598115708897856583" at="24,22,25,42" concept="1" />
+      <node id="8436812649263154264" at="25,42,26,14" concept="0" />
+      <node id="3598115708897856590" at="27,24,28,44" concept="1" />
+      <node id="3598115708897856594" at="30,5,31,15" concept="4" />
+      <node id="3598115708897856576" at="22,54,30,5" concept="7" />
+      <node id="3598115708897856563" at="20,0,33,0" concept="6" trace="toSwingTextAttribute#(Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;)Ljavax/swing/text/SimpleAttributeSet;" />
+      <scope id="3598115708898312041" at="29,14,29,14" />
+      <scope id="3598115708898208787" at="18,0,19,0" />
+      <scope id="3598115708897856589" at="27,24,28,44" />
+      <scope id="3598115708897856582" at="24,22,26,14" />
+      <scope id="3598115708897856564" at="20,94,31,15">
+        <var name="sas" id="3598115708897856566" />
+      </scope>
+      <scope id="3598115708897856563" at="20,0,33,0">
+        <var name="attribute" id="3598115708897856598" />
+      </scope>
+      <unit id="3348002703003486799" at="12,0,34,0" name="com.mbeddr.mpsutil.genreview.highlighting.HighlightingStrategyBase" />
+    </file>
+  </root>
+  <root nodeRef="r:aff1ad0d-17a1-4e56-b10e-af8f09549165(com.mbeddr.mpsutil.genreview.highlighting)/3598115708897662004">
+    <file name="HighlightingStrategyManager.java">
+      <node id="5052477039084165544" at="12,109,13,86" concept="1" />
+      <node id="5052477039084158266" at="16,0,17,0" concept="5" trace="extension2HighlightingStrategy" />
+      <node id="9182755363723046511" at="18,92,19,140" concept="3" />
+      <node id="3598115708898280212" at="19,140,20,73" concept="4" />
+      <node id="5052477039084157596" at="12,0,15,0" concept="6" trace="registerHighlightingStrategy#(Ljava/lang/String;Lcom/mbeddr/mpsutil/genreview/highlighting/HighlightingStrategyBase;)V" />
+      <node id="3598115708898179224" at="18,0,22,0" concept="6" trace="getHighlightingStrategyFor#(Ljava/lang/String;)Lcom/mbeddr/mpsutil/genreview/highlighting/HighlightingStrategyBase;" />
+      <scope id="5052477039084157599" at="12,109,13,86" />
+      <scope id="3598115708898145803" at="18,92,20,73">
+        <var name="patt" id="9182755363723046512" />
+      </scope>
+      <scope id="5052477039084157596" at="12,0,15,0">
+        <var name="fileNameRegexPattern" id="5052477039084157693" />
+        <var name="hs" id="5052477039084157714" />
+      </scope>
+      <scope id="3598115708898179224" at="18,0,22,0">
+        <var name="fileName" id="3598115708898146171" />
+      </scope>
+      <unit id="3598115708897662004" at="10,0,23,0" name="com.mbeddr.mpsutil.genreview.highlighting.HighlightingStrategyManager" />
+    </file>
+  </root>
+  <root nodeRef="r:aff1ad0d-17a1-4e56-b10e-af8f09549165(com.mbeddr.mpsutil.genreview.highlighting)/3598115708898242646">
+    <file name="JavaHighlightStrategy.java">
+      <node id="5052477039084172542" at="17,33,18,103" concept="1" />
+      <node id="3598115708898254413" at="21,0,22,0" concept="5" trace="color2keywords" />
+      <node id="3598115708898254431" at="23,10,24,154" concept="3" />
+      <node id="3598115708898254440" at="24,154,25,226" concept="3" />
+      <node id="8436812649263772197" at="25,226,26,98" concept="3" />
+      <node id="3598115708898254449" at="26,98,27,121" concept="1" />
+      <node id="3598115708898254455" at="27,121,28,113" concept="1" />
+      <node id="8436812649263782741" at="28,113,29,117" concept="1" />
+      <node id="3598115708898255638" at="33,83,34,26" concept="4" />
+      <node id="802492259511811152" at="17,0,20,0" concept="6" trace="register#()V" />
+      <node id="3598115708898253434" at="32,0,36,0" concept="2" trace="getAttributes2KeywordsMap#()Ljava/util/Map;" />
+      <scope id="802492259511811155" at="17,33,18,103" />
+      <scope id="3598115708898253443" at="33,83,34,26" />
+      <scope id="802492259511811152" at="17,0,20,0" />
+      <scope id="3598115708898253434" at="32,0,36,0" />
+      <scope id="3598115708898254430" at="23,10,29,117">
+        <var name="blueWords" id="3598115708898254441" />
+        <var name="magentaBoldWords" id="3598115708898254432" />
+        <var name="orangewords" id="8436812649263772200" />
+      </scope>
+      <unit id="3598115708898242646" at="15,0,37,0" name="com.mbeddr.mpsutil.genreview.highlighting.JavaHighlightStrategy" />
+    </file>
+  </root>
+</debug-info>
+

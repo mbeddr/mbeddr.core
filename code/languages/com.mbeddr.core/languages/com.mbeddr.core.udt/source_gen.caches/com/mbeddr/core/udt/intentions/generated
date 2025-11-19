@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="a2ahitpk2l3i9af5owm0pjeaapz3o9c">
+  <files names="IntentionsDescriptor.java:MakeStructFromUnion_Intention.java:MakeUnionFroMStruct_Intention.java:addSwitchCasesForAllEnumLiterals_Intention.java:convertToGlobalConstants_Intention.java:extractFunctionType_Intention.java:toggleTransparent_Intention.java:wrapWithEnumToInt_Intention.java:wrapWithIntToEnum_Intention.java" />
+</product>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="12,0,29,0" name="com.mbeddr.mpsutil.preferenceform.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1bf1ac25-6ce6-4a6d-acbc-2bd0b7275645(com.mbeddr.mpsutil.preferenceform.textGen)/1869287722500987264">
+    <file name="PreferenceFormPropertyReference_TextGen.java">
+      <node id="1869287722500987264" at="16,54,17,55" concept="2" />
+      <node id="1869287722500991886" at="17,55,18,132" concept="0" />
+      <node id="1869287722500987264" at="22,0,23,0" concept="4" trace="member$oLt6" />
+      <node id="1869287722500987264" at="26,0,27,0" concept="4" trace="name$MnvL" />
+      <node id="1869287722500987264" at="15,0,20,0" concept="1" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1869287722500987264" at="16,54,18,132">
+        <var name="tgs" id="1869287722500987264" />
+      </scope>
+      <scope id="1869287722500987264" at="15,0,20,0">
+        <var name="ctx" id="1869287722500987264" />
+      </scope>
+      <unit id="1869287722500987264" at="21,0,24,0" name="com.mbeddr.mpsutil.preferenceform.textGen.PreferenceFormPropertyReference_TextGen$LINKS" />
+      <unit id="1869287722500987264" at="25,0,28,0" name="com.mbeddr.mpsutil.preferenceform.textGen.PreferenceFormPropertyReference_TextGen$PROPS" />
+      <unit id="1869287722500987264" at="14,0,29,0" name="com.mbeddr.mpsutil.preferenceform.textGen.PreferenceFormPropertyReference_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1869287722500987264" at="22,65,23,61" concept="3" />
+      <scope id="1869287722500987264" at="22,65,23,61" />
+    </file>
+  </root>
+</debug-info>
+

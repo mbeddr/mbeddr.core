@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="7,0,11,0" name="com.mbeddr.doc.self.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

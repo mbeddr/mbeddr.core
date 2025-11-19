@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="RefactoringAspectDescriptor.java">
+      <unit at="11,0,30,0" name="com.mbeddr.core.modules.refactorings.RefactoringAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/1582169519237927131">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="1582169519237927131" at="21,66,22,46" concept="2" />
+    </file>
+    <file name="extractConstant.java">
+      <node id="1582169519237927155" at="21,28,22,42" concept="2" />
+      <node id="1582169519237927131" at="24,52,25,40" concept="8" />
+      <node id="1582169519237927131" at="27,39,28,30" concept="8" />
+      <node id="881042019526388753" at="30,69,31,54" concept="7" />
+      <node id="2531151654385119873" at="31,54,32,91" concept="7" />
+      <node id="881042019526388767" at="32,91,33,0" concept="9" />
+      <node id="881042019526388768" at="33,0,34,75" concept="7" />
+      <node id="881042019526388773" at="34,75,35,54" concept="2" />
+      <node id="5054343604400679686" at="35,54,36,0" concept="9" />
+      <node id="3769661359949397501" at="36,0,37,206" concept="7" />
+      <node id="3769661359949397510" at="37,206,38,108" concept="2" />
+      <node id="3769661359949397555" at="38,108,39,85" concept="2" />
+      <node id="881042019526388852" at="39,85,40,0" concept="9" />
+      <node id="881042019526388990" at="40,0,41,199" concept="7" />
+      <node id="881042019526389040" at="42,34,43,67" concept="2" />
+      <node id="881042019526389073" at="44,12,45,108" concept="2" />
+      <node id="881042019526389009" at="46,5,47,0" concept="9" />
+      <node id="881042019526388782" at="47,0,48,198" concept="7" />
+      <node id="881042019526388788" at="48,198,49,61" concept="2" />
+      <node id="881042019526388794" at="49,61,50,44" concept="2" />
+      <node id="881042019526388781" at="50,44,51,0" concept="9" />
+      <node id="5054343604400679675" at="51,0,52,0" concept="9" />
+      <node id="1582169519237927131" at="56,0,57,0" concept="10" trace="Module$fX" />
+      <node id="1582169519237927131" at="57,0,58,0" concept="10" trace="GlobalConstantDeclaration$dg" />
+      <node id="1582169519237927131" at="61,0,62,0" concept="10" trace="name$MnvL" />
+      <node id="1582169519237927131" at="65,0,66,0" concept="10" trace="value$RmDl" />
+      <node id="1582169519237927131" at="66,0,67,0" concept="10" trace="contents$3Vmy" />
+      <node id="1582169519237927131" at="67,0,68,0" concept="10" trace="constant$aCs7" />
+      <node id="881042019526389071" at="44,10,46,5" concept="0" />
+      <node id="1582169519237927131" at="21,0,24,0" concept="1" trace="extractConstant#()V" />
+      <node id="1582169519237927131" at="24,0,27,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="1582169519237927131" at="27,0,30,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="881042019526389011" at="41,199,46,5" concept="5" />
+      <node id="1582169519237927131" at="30,0,54,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="1582169519237927131" at="21,28,22,42" />
+      <scope id="1582169519237927131" at="24,52,25,40" />
+      <scope id="1582169519237927131" at="27,39,28,30" />
+      <scope id="881042019526389012" at="42,34,43,67" />
+      <scope id="881042019526389072" at="44,12,45,108" />
+      <scope id="1582169519237927131" at="21,0,24,0" />
+      <scope id="1582169519237927131" at="24,0,27,0" />
+      <scope id="1582169519237927131" at="27,0,30,0" />
+      <scope id="1582169519237927134" at="30,69,52,0">
+        <var name="anotherConstant" id="881042019526388991" />
+        <var name="expr" id="881042019526388754" />
+        <var name="gcd" id="3769661359949397502" />
+        <var name="module" id="2531151654385119874" />
+        <var name="ref" id="881042019526388783" />
+        <var name="replacer" id="881042019526388769" />
+      </scope>
+      <scope id="1582169519237927131" at="30,0,54,0">
+        <var name="refactoringContext" id="1582169519237927131" />
+      </scope>
+      <unit id="1582169519237927131" at="60,0,63,0" name="com.mbeddr.core.modules.refactorings.extractConstant$PROPS" />
+      <unit id="1582169519237927131" at="55,0,59,0" name="com.mbeddr.core.modules.refactorings.extractConstant$CONCEPTS" />
+      <unit id="1582169519237927131" at="64,0,69,0" name="com.mbeddr.core.modules.refactorings.extractConstant$LINKS" />
+      <unit id="1582169519237927131" at="20,0,70,0" name="com.mbeddr.core.modules.refactorings.extractConstant" />
+    </file>
+    <file name="extractConstant_Target.java">
+      <node id="1582169519237927135" at="15,52,16,46" concept="8" />
+      <node id="1582169519237927135" at="18,41,19,17" concept="8" />
+      <node id="1582169519237927135" at="21,64,22,82" concept="8" />
+      <node id="1582169519237927135" at="25,51,26,19" concept="8" />
+      <node id="1582169519237927138" at="27,5,28,115" concept="8" />
+      <node id="1582169519237927135" at="32,0,33,0" concept="10" trace="Expression$bT" />
+      <node id="1582169519237927135" at="13,0,15,0" concept="1" trace="extractConstant_Target#()V" />
+      <node id="1582169519237927135" at="15,0,18,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="1582169519237927135" at="18,0,21,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="1582169519237927135" at="21,0,24,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="1582169519237927135" at="24,52,27,5" concept="5" />
+      <node id="1582169519237927135" at="24,0,30,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="1582169519237927135" at="13,35,13,35" />
+      <scope id="1582169519237927135" at="15,52,16,46" />
+      <scope id="1582169519237927135" at="18,41,19,17" />
+      <scope id="1582169519237927135" at="21,64,22,82" />
+      <scope id="1582169519237927135" at="25,51,26,19" />
+      <scope id="1582169519237927135" at="13,0,15,0" />
+      <scope id="1582169519237927135" at="15,0,18,0" />
+      <scope id="1582169519237927135" at="18,0,21,0" />
+      <scope id="1582169519237927135" at="21,0,24,0">
+        <var name="entity" id="1582169519237927135" />
+      </scope>
+      <scope id="1582169519237927135" at="24,52,28,115" />
+      <scope id="1582169519237927135" at="24,0,30,0">
+        <var name="entity" id="1582169519237927135" />
+      </scope>
+      <unit id="1582169519237927135" at="31,0,34,0" name="com.mbeddr.core.modules.refactorings.extractConstant_Target$CONCEPTS" />
+      <unit id="1582169519237927135" at="12,0,35,0" name="com.mbeddr.core.modules.refactorings.extractConstant_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/2400440333612944625">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="2400440333612944625" at="20,49,21,66" concept="2" />
+    </file>
+    <file name="convertExternalModuleIntoImplModule.java">
+      <node id="2400440333612944625" at="22,52,23,60" concept="8" />
+      <node id="2400440333612944625" at="25,39,26,48" concept="8" />
+      <node id="2400440333612944637" at="28,69,29,207" concept="7" />
+      <node id="2400440333612944729" at="29,207,30,145" concept="2" />
+      <node id="2400440333612944632" at="30,145,31,210" concept="2" />
+      <node id="2400440333613028808" at="31,210,32,163" concept="2" />
+      <node id="2400440333612944810" at="32,163,33,208" concept="2" />
+      <node id="2400440333612944898" at="33,208,34,165" concept="2" />
+      <node id="2400440333612944980" at="34,165,35,108" concept="2" />
+      <node id="2400440333612945040" at="35,108,36,69" concept="2" />
+      <node id="2400440333612944625" at="40,0,41,0" concept="10" trace="name$MnvL" />
+      <node id="2400440333612944625" at="41,0,42,0" concept="10" trace="exported$V4am" />
+      <node id="2400440333612944625" at="42,0,43,0" concept="10" trace="virtualPackage$EkXl" />
+      <node id="2400440333612944625" at="46,0,47,0" concept="10" trace="contents$3Vmy" />
+      <node id="2400440333612944625" at="47,0,48,0" concept="10" trace="imports$R87F" />
+      <node id="2400440333612944625" at="20,0,22,0" concept="1" trace="convertExternalModuleIntoImplModule#()V" />
+      <node id="2400440333612944625" at="22,0,25,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="2400440333612944625" at="25,0,28,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="2400440333612944625" at="28,0,38,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="2400440333612944625" at="20,48,20,48" />
+      <scope id="2400440333612944625" at="22,52,23,60" />
+      <scope id="2400440333612944625" at="25,39,26,48" />
+      <scope id="2400440333612944625" at="20,0,22,0" />
+      <scope id="2400440333612944625" at="22,0,25,0" />
+      <scope id="2400440333612944625" at="25,0,28,0" />
+      <scope id="2400440333612944628" at="28,69,36,69">
+        <var name="impModule" id="2400440333612944638" />
+      </scope>
+      <scope id="2400440333612944625" at="28,0,38,0">
+        <var name="refactoringContext" id="2400440333612944625" />
+      </scope>
+      <unit id="2400440333612944625" at="45,0,49,0" name="com.mbeddr.core.modules.refactorings.convertExternalModuleIntoImplModule$LINKS" />
+      <unit id="2400440333612944625" at="39,0,44,0" name="com.mbeddr.core.modules.refactorings.convertExternalModuleIntoImplModule$PROPS" />
+      <unit id="2400440333612944625" at="19,0,50,0" name="com.mbeddr.core.modules.refactorings.convertExternalModuleIntoImplModule" />
+    </file>
+    <file name="convertExternalModuleIntoImplModule_Target.java">
+      <node id="2400440333612945102" at="14,52,15,46" concept="8" />
+      <node id="2400440333612945102" at="17,41,18,17" concept="8" />
+      <node id="2400440333612945102" at="20,64,21,86" concept="8" />
+      <node id="2400440333612945102" at="24,51,25,19" concept="8" />
+      <node id="2400440333612945102" at="26,5,27,16" concept="8" />
+      <node id="2400440333612945102" at="31,0,32,0" concept="10" trace="ExternalModule$xK" />
+      <node id="2400440333612945102" at="12,0,14,0" concept="1" trace="convertExternalModuleIntoImplModule_Target#()V" />
+      <node id="2400440333612945102" at="14,0,17,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="2400440333612945102" at="17,0,20,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="2400440333612945102" at="20,0,23,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="2400440333612945102" at="23,52,26,5" concept="5" />
+      <node id="2400440333612945102" at="23,0,29,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="2400440333612945102" at="12,55,12,55" />
+      <scope id="2400440333612945102" at="14,52,15,46" />
+      <scope id="2400440333612945102" at="17,41,18,17" />
+      <scope id="2400440333612945102" at="20,64,21,86" />
+      <scope id="2400440333612945102" at="24,51,25,19" />
+      <scope id="2400440333612945102" at="12,0,14,0" />
+      <scope id="2400440333612945102" at="14,0,17,0" />
+      <scope id="2400440333612945102" at="17,0,20,0" />
+      <scope id="2400440333612945102" at="20,0,23,0">
+        <var name="entity" id="2400440333612945102" />
+      </scope>
+      <scope id="2400440333612945102" at="23,52,27,16" />
+      <scope id="2400440333612945102" at="23,0,29,0">
+        <var name="entity" id="2400440333612945102" />
+      </scope>
+      <unit id="2400440333612945102" at="30,0,33,0" name="com.mbeddr.core.modules.refactorings.convertExternalModuleIntoImplModule_Target$CONCEPTS" />
+      <unit id="2400440333612945102" at="11,0,34,0" name="com.mbeddr.core.modules.refactorings.convertExternalModuleIntoImplModule_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/3769661359949250512">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="3769661359949250512" at="16,41,17,51" concept="2" />
+    </file>
+    <file name="extractIntoNewModule.java">
+      <node id="3769661359949255589" at="25,33,26,48" concept="2" />
+      <node id="3769661359949250512" at="28,52,29,45" concept="8" />
+      <node id="3769661359949250512" at="31,39,32,37" concept="8" />
+      <node id="3769661359949255595" at="34,69,35,116" concept="7" />
+      <node id="3769661359949265707" at="35,116,36,182" concept="7" />
+      <node id="3769661359949283587" at="36,182,37,0" concept="9" />
+      <node id="3769661359949255607" at="37,0,38,207" concept="7" />
+      <node id="3769661359949255615" at="38,207,39,120" concept="2" />
+      <node id="3769661359949255627" at="39,120,40,161" concept="2" />
+      <node id="3769661359949265690" at="40,161,41,47" concept="2" />
+      <node id="3769661359949283588" at="41,47,42,0" concept="9" />
+      <node id="3769661359949265752" at="42,0,43,206" concept="7" />
+      <node id="3769661359949265761" at="43,206,44,64" concept="2" />
+      <node id="3769661359949265739" at="44,64,45,106" concept="2" />
+      <node id="3769661359949283589" at="45,106,46,0" concept="9" />
+      <node id="3769661359949283575" at="48,155,49,67" concept="2" />
+      <node id="3769661359949265704" at="51,5,52,0" concept="9" />
+      <node id="3769661359949250512" at="56,0,57,0" concept="10" trace="ImplementationModule$Gy" />
+      <node id="3769661359949250512" at="60,0,61,0" concept="10" trace="name$MnvL" />
+      <node id="3769661359949250512" at="61,0,62,0" concept="10" trace="exported$V4am" />
+      <node id="3769661359949250512" at="65,0,66,0" concept="10" trace="contents$3Vmy" />
+      <node id="3769661359949250512" at="66,0,67,0" concept="10" trace="chunk$2d8c" />
+      <node id="3769661359949250512" at="67,0,68,0" concept="10" trace="imports$R87F" />
+      <node id="3769661359949250512" at="25,0,28,0" concept="1" trace="extractIntoNewModule#()V" />
+      <node id="3769661359949250512" at="28,0,31,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="3769661359949250512" at="31,0,34,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="3769661359949356689" at="47,84,50,7" concept="5" />
+      <node id="3769661359949283565" at="46,0,51,5" concept="4" />
+      <node id="3769661359949250512" at="34,0,54,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="3769661359949250512" at="25,33,26,48" />
+      <scope id="3769661359949250512" at="28,52,29,45" />
+      <scope id="3769661359949250512" at="31,39,32,37" />
+      <scope id="3769661359949356690" at="48,155,49,67" />
+      <scope id="3769661359949250512" at="25,0,28,0" />
+      <scope id="3769661359949250512" at="28,0,31,0" />
+      <scope id="3769661359949250512" at="31,0,34,0" />
+      <scope id="3769661359949283568" at="47,84,50,7" />
+      <scope id="3769661359949283565" at="46,0,51,5">
+        <var name="imc" id="3769661359949283566" />
+      </scope>
+      <scope id="3769661359949250515" at="34,69,52,0">
+        <var name="currentModule" id="3769661359949265708" />
+        <var name="imp" id="3769661359949265753" />
+        <var name="m" id="3769661359949255596" />
+        <var name="newModule" id="3769661359949255608" />
+      </scope>
+      <scope id="3769661359949250512" at="34,0,54,0">
+        <var name="refactoringContext" id="3769661359949250512" />
+      </scope>
+      <unit id="3769661359949250512" at="55,0,58,0" name="com.mbeddr.core.modules.refactorings.extractIntoNewModule$CONCEPTS" />
+      <unit id="3769661359949250512" at="59,0,63,0" name="com.mbeddr.core.modules.refactorings.extractIntoNewModule$PROPS" />
+      <unit id="3769661359949250512" at="64,0,69,0" name="com.mbeddr.core.modules.refactorings.extractIntoNewModule$LINKS" />
+      <unit id="3769661359949250512" at="24,0,70,0" name="com.mbeddr.core.modules.refactorings.extractIntoNewModule" />
+    </file>
+    <file name="extractIntoNewModule_Target.java">
+      <node id="3769661359949250518" at="14,52,15,46" concept="8" />
+      <node id="3769661359949250518" at="17,41,18,16" concept="8" />
+      <node id="3769661359949250518" at="20,64,21,86" concept="8" />
+      <node id="3769661359949250518" at="24,51,25,19" concept="8" />
+      <node id="3769661359949250518" at="26,5,27,16" concept="8" />
+      <node id="3769661359949250518" at="31,0,32,0" concept="10" trace="IModuleContent$H1" />
+      <node id="3769661359949250518" at="12,0,14,0" concept="1" trace="extractIntoNewModule_Target#()V" />
+      <node id="3769661359949250518" at="14,0,17,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="3769661359949250518" at="17,0,20,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="3769661359949250518" at="20,0,23,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="3769661359949250518" at="23,52,26,5" concept="5" />
+      <node id="3769661359949250518" at="23,0,29,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="3769661359949250518" at="12,40,12,40" />
+      <scope id="3769661359949250518" at="14,52,15,46" />
+      <scope id="3769661359949250518" at="17,41,18,16" />
+      <scope id="3769661359949250518" at="20,64,21,86" />
+      <scope id="3769661359949250518" at="24,51,25,19" />
+      <scope id="3769661359949250518" at="12,0,14,0" />
+      <scope id="3769661359949250518" at="14,0,17,0" />
+      <scope id="3769661359949250518" at="17,0,20,0" />
+      <scope id="3769661359949250518" at="20,0,23,0">
+        <var name="entity" id="3769661359949250518" />
+      </scope>
+      <scope id="3769661359949250518" at="23,52,27,16" />
+      <scope id="3769661359949250518" at="23,0,29,0">
+        <var name="entity" id="3769661359949250518" />
+      </scope>
+      <unit id="3769661359949250518" at="30,0,33,0" name="com.mbeddr.core.modules.refactorings.extractIntoNewModule_Target$CONCEPTS" />
+      <unit id="3769661359949250518" at="11,0,34,0" name="com.mbeddr.core.modules.refactorings.extractIntoNewModule_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/3769661359949283788">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="3769661359949283788" at="17,51,18,51" concept="2" />
+    </file>
+    <file name="moveToImportedModule.java">
+      <node id="3769661359949283789" at="21,33,22,47" concept="2" />
+      <node id="3769661359949283788" at="24,52,25,45" concept="8" />
+      <node id="3769661359949283788" at="27,39,28,37" concept="8" />
+      <node id="3769661359949356721" at="30,69,31,182" concept="7" />
+      <node id="3769661359949285955" at="31,182,32,265" concept="2" />
+      <node id="3769661359949356707" at="34,154,35,66" concept="2" />
+      <node id="3769661359949283788" at="41,0,42,0" concept="10" trace="ImplementationModule$Gy" />
+      <node id="3769661359949283788" at="45,0,46,0" concept="10" trace="contents$3Vmy" />
+      <node id="3769661359949283788" at="49,0,50,0" concept="10" trace="exported$V4am" />
+      <node id="3769661359949283788" at="21,0,24,0" concept="1" trace="moveToImportedModule#()V" />
+      <node id="3769661359949283788" at="24,0,27,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="3769661359949283788" at="27,0,30,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="3769661359949356705" at="33,83,36,7" concept="5" />
+      <node id="3769661359949285981" at="32,265,37,5" concept="4" />
+      <node id="3769661359949283788" at="30,0,39,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="3769661359949283788" at="21,33,22,47" />
+      <scope id="3769661359949283788" at="24,52,25,45" />
+      <scope id="3769661359949283788" at="27,39,28,37" />
+      <scope id="3769661359949356706" at="34,154,35,66" />
+      <scope id="3769661359949283788" at="21,0,24,0" />
+      <scope id="3769661359949283788" at="24,0,27,0" />
+      <scope id="3769661359949283788" at="27,0,30,0" />
+      <scope id="3769661359949285984" at="33,83,36,7" />
+      <scope id="3769661359949285981" at="32,265,37,5">
+        <var name="mc" id="3769661359949285982" />
+      </scope>
+      <scope id="3769661359949283794" at="30,69,37,5">
+        <var name="currentModule" id="3769661359949356722" />
+      </scope>
+      <scope id="3769661359949283788" at="30,0,39,0">
+        <var name="refactoringContext" id="3769661359949283788" />
+      </scope>
+      <unit id="3769661359949283788" at="40,0,43,0" name="com.mbeddr.core.modules.refactorings.moveToImportedModule$CONCEPTS" />
+      <unit id="3769661359949283788" at="44,0,47,0" name="com.mbeddr.core.modules.refactorings.moveToImportedModule$LINKS" />
+      <unit id="3769661359949283788" at="48,0,51,0" name="com.mbeddr.core.modules.refactorings.moveToImportedModule$PROPS" />
+      <unit id="3769661359949283788" at="20,0,52,0" name="com.mbeddr.core.modules.refactorings.moveToImportedModule" />
+    </file>
+    <file name="moveToImportedModule_Target.java">
+      <node id="3769661359949283792" at="14,52,15,46" concept="8" />
+      <node id="3769661359949283792" at="17,41,18,16" concept="8" />
+      <node id="3769661359949283792" at="20,64,21,86" concept="8" />
+      <node id="3769661359949283792" at="24,51,25,19" concept="8" />
+      <node id="3769661359949283792" at="26,5,27,16" concept="8" />
+      <node id="3769661359949283792" at="31,0,32,0" concept="10" trace="IModuleContent$H1" />
+      <node id="3769661359949283792" at="12,0,14,0" concept="1" trace="moveToImportedModule_Target#()V" />
+      <node id="3769661359949283792" at="14,0,17,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="3769661359949283792" at="17,0,20,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="3769661359949283792" at="20,0,23,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="3769661359949283792" at="23,52,26,5" concept="5" />
+      <node id="3769661359949283792" at="23,0,29,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="3769661359949283792" at="12,40,12,40" />
+      <scope id="3769661359949283792" at="14,52,15,46" />
+      <scope id="3769661359949283792" at="17,41,18,16" />
+      <scope id="3769661359949283792" at="20,64,21,86" />
+      <scope id="3769661359949283792" at="24,51,25,19" />
+      <scope id="3769661359949283792" at="12,0,14,0" />
+      <scope id="3769661359949283792" at="14,0,17,0" />
+      <scope id="3769661359949283792" at="17,0,20,0" />
+      <scope id="3769661359949283792" at="20,0,23,0">
+        <var name="entity" id="3769661359949283792" />
+      </scope>
+      <scope id="3769661359949283792" at="23,52,27,16" />
+      <scope id="3769661359949283792" at="23,0,29,0">
+        <var name="entity" id="3769661359949283792" />
+      </scope>
+      <unit id="3769661359949283792" at="30,0,33,0" name="com.mbeddr.core.modules.refactorings.moveToImportedModule_Target$CONCEPTS" />
+      <unit id="3769661359949283792" at="11,0,34,0" name="com.mbeddr.core.modules.refactorings.moveToImportedModule_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/5947739078127898585">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="5947739078127898585" at="19,46,20,49" concept="2" />
+    </file>
+    <file name="moveIntoNewSection.java">
+      <node id="5947739078127898586" at="19,31,20,49" concept="2" />
+      <node id="5947739078127898585" at="22,52,23,43" concept="8" />
+      <node id="5947739078127898585" at="25,39,26,35" concept="8" />
+      <node id="5947739078127899551" at="28,69,29,67" concept="7" />
+      <node id="5947739078127898716" at="29,67,30,192" concept="7" />
+      <node id="5947739078127898758" at="30,192,31,119" concept="2" />
+      <node id="5947739078127899561" at="31,119,32,67" concept="2" />
+      <node id="5947739078127898725" at="32,67,33,115" concept="2" />
+      <node id="5947739078127898585" at="37,0,38,0" concept="10" trace="name$MnvL" />
+      <node id="5947739078127898585" at="41,0,42,0" concept="10" trace="contents$qstA" />
+      <node id="5947739078127898585" at="19,0,22,0" concept="1" trace="moveIntoNewSection#()V" />
+      <node id="5947739078127898585" at="22,0,25,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="5947739078127898585" at="25,0,28,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="5947739078127898585" at="28,0,35,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="5947739078127898585" at="19,31,20,49" />
+      <scope id="5947739078127898585" at="22,52,23,43" />
+      <scope id="5947739078127898585" at="25,39,26,35" />
+      <scope id="5947739078127898585" at="19,0,22,0" />
+      <scope id="5947739078127898585" at="22,0,25,0" />
+      <scope id="5947739078127898585" at="25,0,28,0" />
+      <scope id="5947739078127898591" at="28,69,33,115">
+        <var name="firstSelectedNode" id="5947739078127899552" />
+        <var name="section" id="5947739078127898717" />
+      </scope>
+      <scope id="5947739078127898585" at="28,0,35,0">
+        <var name="refactoringContext" id="5947739078127898585" />
+      </scope>
+      <unit id="5947739078127898585" at="36,0,39,0" name="com.mbeddr.core.modules.refactorings.moveIntoNewSection$PROPS" />
+      <unit id="5947739078127898585" at="40,0,43,0" name="com.mbeddr.core.modules.refactorings.moveIntoNewSection$LINKS" />
+      <unit id="5947739078127898585" at="18,0,44,0" name="com.mbeddr.core.modules.refactorings.moveIntoNewSection" />
+    </file>
+    <file name="moveIntoNewSection_Target.java">
+      <node id="5947739078127898589" at="14,52,15,46" concept="8" />
+      <node id="5947739078127898589" at="17,41,18,17" concept="8" />
+      <node id="5947739078127898589" at="20,64,21,86" concept="8" />
+      <node id="5947739078127898589" at="24,51,25,19" concept="8" />
+      <node id="5947739078127898589" at="26,5,27,16" concept="8" />
+      <node id="5947739078127898589" at="31,0,32,0" concept="10" trace="IModuleContent$H1" />
+      <node id="5947739078127898589" at="12,0,14,0" concept="1" trace="moveIntoNewSection_Target#()V" />
+      <node id="5947739078127898589" at="14,0,17,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="5947739078127898589" at="17,0,20,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="5947739078127898589" at="20,0,23,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="5947739078127898589" at="23,52,26,5" concept="5" />
+      <node id="5947739078127898589" at="23,0,29,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="5947739078127898589" at="12,38,12,38" />
+      <scope id="5947739078127898589" at="14,52,15,46" />
+      <scope id="5947739078127898589" at="17,41,18,17" />
+      <scope id="5947739078127898589" at="20,64,21,86" />
+      <scope id="5947739078127898589" at="24,51,25,19" />
+      <scope id="5947739078127898589" at="12,0,14,0" />
+      <scope id="5947739078127898589" at="14,0,17,0" />
+      <scope id="5947739078127898589" at="17,0,20,0" />
+      <scope id="5947739078127898589" at="20,0,23,0">
+        <var name="entity" id="5947739078127898589" />
+      </scope>
+      <scope id="5947739078127898589" at="23,52,27,16" />
+      <scope id="5947739078127898589" at="23,0,29,0">
+        <var name="entity" id="5947739078127898589" />
+      </scope>
+      <unit id="5947739078127898589" at="30,0,33,0" name="com.mbeddr.core.modules.refactorings.moveIntoNewSection_Target$CONCEPTS" />
+      <unit id="5947739078127898589" at="11,0,34,0" name="com.mbeddr.core.modules.refactorings.moveIntoNewSection_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/5947739078127914184">
+    <file name="RefactoringAspectDescriptor.java">
+      <node id="5947739078127914184" at="18,51,19,46" concept="2" />
+    </file>
+    <file name="moveIntoSection.java">
+      <node id="5947739078127914232" at="17,28,18,48" concept="2" />
+      <node id="5947739078127914184" at="20,52,21,40" concept="8" />
+      <node id="5947739078127914184" at="23,39,24,40" concept="8" />
+      <node id="5947739078127914284" at="26,69,27,253" concept="2" />
+      <node id="5947739078127914184" at="31,0,32,0" concept="10" trace="Section$Il" />
+      <node id="5947739078127914184" at="35,0,36,0" concept="10" trace="contents$qstA" />
+      <node id="5947739078127914184" at="17,0,20,0" concept="1" trace="moveIntoSection#()V" />
+      <node id="5947739078127914184" at="20,0,23,0" concept="6" trace="getRefactoringTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget;" />
+      <node id="5947739078127914184" at="23,0,26,0" concept="6" trace="getUserFriendlyName#()Ljava/lang/String;" />
+      <node id="5947739078127914184" at="26,0,29,0" concept="6" trace="refactor#(Ljetbrains/mps/refactoring/framework/RefactoringContext;)V" />
+      <scope id="5947739078127914184" at="17,28,18,48" />
+      <scope id="5947739078127914184" at="20,52,21,40" />
+      <scope id="5947739078127914184" at="23,39,24,40" />
+      <scope id="5947739078127914190" at="26,69,27,253" />
+      <scope id="5947739078127914184" at="17,0,20,0" />
+      <scope id="5947739078127914184" at="20,0,23,0" />
+      <scope id="5947739078127914184" at="23,0,26,0" />
+      <scope id="5947739078127914184" at="26,0,29,0">
+        <var name="refactoringContext" id="5947739078127914184" />
+      </scope>
+      <unit id="5947739078127914184" at="30,0,33,0" name="com.mbeddr.core.modules.refactorings.moveIntoSection$CONCEPTS" />
+      <unit id="5947739078127914184" at="34,0,37,0" name="com.mbeddr.core.modules.refactorings.moveIntoSection$LINKS" />
+      <unit id="5947739078127914184" at="16,0,38,0" name="com.mbeddr.core.modules.refactorings.moveIntoSection" />
+    </file>
+    <file name="moveIntoSection_Target.java">
+      <node id="5947739078127914188" at="14,52,15,46" concept="8" />
+      <node id="5947739078127914188" at="17,41,18,16" concept="8" />
+      <node id="5947739078127914188" at="20,64,21,86" concept="8" />
+      <node id="5947739078127914188" at="24,51,25,19" concept="8" />
+      <node id="5947739078127914188" at="26,5,27,16" concept="8" />
+      <node id="5947739078127914188" at="31,0,32,0" concept="10" trace="IModuleContent$H1" />
+      <node id="5947739078127914188" at="12,0,14,0" concept="1" trace="moveIntoSection_Target#()V" />
+      <node id="5947739078127914188" at="14,0,17,0" concept="6" trace="getTarget#()Ljetbrains/mps/refactoring/framework/IRefactoringTarget/TargetType;" />
+      <node id="5947739078127914188" at="17,0,20,0" concept="6" trace="allowMultipleTargets#()Z" />
+      <node id="5947739078127914188" at="20,0,23,0" concept="6" trace="isApplicableToEntityType#(Ljava/lang/Object;)Z" />
+      <node id="5947739078127914188" at="23,52,26,5" concept="5" />
+      <node id="5947739078127914188" at="23,0,29,0" concept="6" trace="isApplicable#(Ljava/lang/Object;)Z" />
+      <scope id="5947739078127914188" at="12,35,12,35" />
+      <scope id="5947739078127914188" at="14,52,15,46" />
+      <scope id="5947739078127914188" at="17,41,18,16" />
+      <scope id="5947739078127914188" at="20,64,21,86" />
+      <scope id="5947739078127914188" at="24,51,25,19" />
+      <scope id="5947739078127914188" at="12,0,14,0" />
+      <scope id="5947739078127914188" at="14,0,17,0" />
+      <scope id="5947739078127914188" at="17,0,20,0" />
+      <scope id="5947739078127914188" at="20,0,23,0">
+        <var name="entity" id="5947739078127914188" />
+      </scope>
+      <scope id="5947739078127914188" at="23,52,27,16" />
+      <scope id="5947739078127914188" at="23,0,29,0">
+        <var name="entity" id="5947739078127914188" />
+      </scope>
+      <unit id="5947739078127914188" at="30,0,33,0" name="com.mbeddr.core.modules.refactorings.moveIntoSection_Target$CONCEPTS" />
+      <unit id="5947739078127914188" at="11,0,34,0" name="com.mbeddr.core.modules.refactorings.moveIntoSection_Target" />
+    </file>
+  </root>
+  <root nodeRef="r:4a2bfa22-28af-4fc8-8439-eb79cb594966(com.mbeddr.core.modules.refactorings)/7350547698080957839">
+    <file name="ExpressionReplacerInModule.java">
+      <node id="7350547698080957841" at="16,0,17,0" concept="3" trace="matchedExpressions" />
+      <node id="7350547698080957865" at="21,49,22,65" concept="2" />
+      <node id="7350547698080957885" at="27,63,28,85" concept="2" />
+      <node id="7350547698080957839" at="33,0,34,0" concept="10" trace="Expression$bT" />
+      <node id="7350547698080957847" at="17,0,19,0" concept="1" trace="ExpressionReplacerInModule#()V" />
+      <node id="7350547698080957863" at="20,145,23,7" concept="5" />
+      <node id="7350547698080957881" at="26,62,29,5" concept="4" />
+      <node id="7350547698080957855" at="19,71,24,5" concept="4" />
+      <node id="7350547698080957877" at="26,0,31,0" concept="6" trace="replaceMatchedExpressions#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7350547698080957851" at="19,0,26,0" concept="6" trace="collectMatchingExpressions#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7350547698080957850" at="17,39,17,39" />
+      <scope id="7350547698080957864" at="21,49,22,65" />
+      <scope id="7350547698080957884" at="27,63,28,85" />
+      <scope id="7350547698080957847" at="17,0,19,0" />
+      <scope id="7350547698080957862" at="20,145,23,7" />
+      <scope id="7350547698080957880" at="26,62,29,5" />
+      <scope id="7350547698080957881" at="26,62,29,5">
+        <var name="e" id="7350547698080957882" />
+      </scope>
+      <scope id="7350547698080957854" at="19,71,24,5" />
+      <scope id="7350547698080957855" at="19,71,24,5">
+        <var name="ex" id="7350547698080957856" />
+      </scope>
+      <scope id="7350547698080957877" at="26,0,31,0">
+        <var name="newExpression" id="7350547698080957892" />
+      </scope>
+      <scope id="7350547698080957851" at="19,0,26,0">
+        <var name="module" id="7350547698080957875" />
+        <var name="selExpr" id="7350547698080957873" />
+      </scope>
+      <unit id="7350547698080957839" at="32,0,35,0" name="com.mbeddr.core.modules.refactorings.ExpressionReplacerInModule$CONCEPTS" />
+      <unit id="7350547698080957839" at="15,0,36,0" name="com.mbeddr.core.modules.refactorings.ExpressionReplacerInModule" />
+    </file>
+  </root>
+</debug-info>
+

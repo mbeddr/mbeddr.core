@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="em3qkldp99o01fh6o9pswtu30uirbwt">
+  <files names="TypesystemDescriptor.java:typeof_CreateTempNodeExpression_InferenceRule.java:typeof_GetIntExpression_InferenceRule.java:typeof_GetRefExpression_InferenceRule.java:typeof_SetIntStatement_InferenceRule.java:typeof_SetRefStatement_InferenceRule.java:typeof_TempNodeAssign_InferenceRule.java" />
+</product>
+

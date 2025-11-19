@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="EditorAspectDescriptorImpl.java">
+      <unit at="16,0,48,0" name="com.mbeddr.doc.qa.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="SpecificationAssessmentResult_SubstituteMenu.java">
+      <unit at="61,0,64,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_SubstituteMenu$CONCEPTS" />
+      <unit at="65,0,68,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_SubstituteMenu$LINKS" />
+      <unit at="38,0,45,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_SubstituteMenu$SMP_ReferenceScope_383tcb_a" />
+      <unit at="45,0,60,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_SubstituteMenu$SMP_Subconcepts_383tcb_b" />
+      <unit at="25,0,69,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)/97836352114791971">
+    <file name="ConceptsDocumentationAssessment_Editor.java">
+      <node id="97836352114791971" at="11,79,12,97" concept="6" />
+      <node id="97836352114791971" at="14,82,15,100" concept="6" />
+      <node id="97836352114791971" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114791971" at="11,79,12,97" />
+      <scope id="97836352114791971" at="14,82,15,100" />
+      <scope id="97836352114791971" at="11,0,14,0">
+        <var name="editorContext" id="97836352114791971" />
+        <var name="node" id="97836352114791971" />
+      </scope>
+      <scope id="97836352114791971" at="14,0,17,0">
+        <var name="editorContext" id="97836352114791971" />
+        <var name="node" id="97836352114791971" />
+      </scope>
+      <unit id="97836352114791971" at="10,0,18,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_Editor" />
+    </file>
+    <file name="ConceptsDocumentationAssessment_EditorBuilder_a.java">
+      <node id="97836352114791971" at="23,111,24,19" concept="9" />
+      <node id="97836352114791971" at="24,19,25,18" concept="1" />
+      <node id="97836352114791971" at="30,26,31,18" concept="6" />
+      <node id="97836352114791971" at="34,39,35,32" concept="6" />
+      <node id="97836352114791971" at="38,43,39,120" concept="5" />
+      <node id="97836352114791971" at="39,120,40,48" concept="1" />
+      <node id="97836352114791971" at="40,48,41,28" concept="1" />
+      <node id="97836352114791971" at="41,28,42,31" concept="1" />
+      <node id="97836352114772420" at="42,31,43,49" concept="1" />
+      <node id="97836352114772421" at="43,49,44,51" concept="1" />
+      <node id="97836352114791971" at="44,51,45,22" concept="6" />
+      <node id="97836352114772420" at="47,41,48,143" concept="5" />
+      <node id="97836352114772420" at="48,143,49,47" concept="1" />
+      <node id="97836352114772420" at="49,47,50,34" concept="1" />
+      <node id="97836352114772420" at="50,34,51,22" concept="6" />
+      <node id="97836352114791971" at="53,43,54,118" concept="5" />
+      <node id="97836352114791971" at="54,118,55,49" concept="1" />
+      <node id="97836352114791971" at="55,49,56,34" concept="5" />
+      <node id="97836352114772422" at="56,34,57,49" concept="1" />
+      <node id="97836352114791971" at="57,49,58,40" concept="1" />
+      <node id="97836352114772423" at="58,40,59,51" concept="1" />
+      <node id="97836352114772424" at="59,51,60,50" concept="1" />
+      <node id="97836352114791971" at="60,50,61,22" concept="6" />
+      <node id="97836352114772423" at="63,43,64,85" concept="5" />
+      <node id="97836352114772423" at="64,85,65,22" concept="6" />
+      <node id="97836352114772424" at="67,42,68,124" concept="5" />
+      <node id="97836352114772424" at="68,124,69,22" concept="6" />
+      <node id="97836352114791971" at="20,0,22,0" concept="2" trace="myNode" />
+      <node id="97836352114791971" at="34,0,37,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="23,0,27,0" concept="0" trace="ConceptsDocumentationAssessment_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114772423" at="63,0,67,0" concept="4" trace="createIndentCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114772424" at="67,0,71,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="28,0,33,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="97836352114772420" at="47,0,53,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="38,0,47,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="53,0,63,0" concept="4" trace="createCollection_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114791971" at="30,26,31,18" />
+      <scope id="97836352114791971" at="34,39,35,32" />
+      <scope id="97836352114791971" at="23,111,25,18" />
+      <scope id="97836352114772423" at="63,43,65,22">
+        <var name="editorCell" id="97836352114772423" />
+      </scope>
+      <scope id="97836352114772424" at="67,42,69,22">
+        <var name="editorCell" id="97836352114772424" />
+      </scope>
+      <scope id="97836352114791971" at="34,0,37,0" />
+      <scope id="97836352114791971" at="23,0,27,0">
+        <var name="context" id="97836352114791971" />
+        <var name="node" id="97836352114791971" />
+      </scope>
+      <scope id="97836352114772420" at="47,41,51,22">
+        <var name="editorCell" id="97836352114772420" />
+      </scope>
+      <scope id="97836352114772423" at="63,0,67,0" />
+      <scope id="97836352114772424" at="67,0,71,0" />
+      <scope id="97836352114791971" at="28,0,33,0" />
+      <scope id="97836352114772420" at="47,0,53,0" />
+      <scope id="97836352114791971" at="38,43,45,22">
+        <var name="editorCell" id="97836352114791971" />
+      </scope>
+      <scope id="97836352114791971" at="53,43,61,22">
+        <var name="editorCell" id="97836352114791971" />
+        <var name="style" id="97836352114791971" />
+      </scope>
+      <scope id="97836352114791971" at="38,0,47,0" />
+      <scope id="97836352114791971" at="53,0,63,0" />
+      <unit id="97836352114791971" at="19,0,72,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_EditorBuilder_a" />
+    </file>
+    <file name="ConceptsDocumentationAssessment_InspectorBuilder_a.java">
+      <node id="97836352114791971" at="18,114,19,19" concept="9" />
+      <node id="97836352114791971" at="19,19,20,18" concept="1" />
+      <node id="97836352114791971" at="25,26,26,18" concept="6" />
+      <node id="97836352114791971" at="29,39,30,32" concept="6" />
+      <node id="97836352114791971" at="33,43,34,120" concept="5" />
+      <node id="97836352114791971" at="34,120,35,48" concept="1" />
+      <node id="97836352114791971" at="35,48,36,28" concept="1" />
+      <node id="97836352114791971" at="36,28,37,31" concept="1" />
+      <node id="97836352114772471" at="37,31,38,49" concept="1" />
+      <node id="97836352114772472" at="38,49,39,49" concept="1" />
+      <node id="97836352114791971" at="39,49,40,22" concept="6" />
+      <node id="97836352114772471" at="42,41,43,168" concept="5" />
+      <node id="97836352114772471" at="43,168,44,46" concept="1" />
+      <node id="97836352114772471" at="44,46,45,34" concept="1" />
+      <node id="97836352114772471" at="45,34,46,22" concept="6" />
+      <node id="97836352114772472" at="48,41,49,110" concept="5" />
+      <node id="97836352114772472" at="49,110,50,46" concept="1" />
+      <node id="97836352114772472" at="50,46,51,34" concept="1" />
+      <node id="97836352114772472" at="51,34,52,22" concept="6" />
+      <node id="97836352114791971" at="15,0,17,0" concept="2" trace="myNode" />
+      <node id="97836352114791971" at="29,0,32,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="18,0,22,0" concept="0" trace="ConceptsDocumentationAssessment_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114791971" at="23,0,28,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="97836352114772471" at="42,0,48,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114772472" at="48,0,54,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114791971" at="33,0,42,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114791971" at="25,26,26,18" />
+      <scope id="97836352114791971" at="29,39,30,32" />
+      <scope id="97836352114791971" at="18,114,20,18" />
+      <scope id="97836352114791971" at="29,0,32,0" />
+      <scope id="97836352114791971" at="18,0,22,0">
+        <var name="context" id="97836352114791971" />
+        <var name="node" id="97836352114791971" />
+      </scope>
+      <scope id="97836352114772471" at="42,41,46,22">
+        <var name="editorCell" id="97836352114772471" />
+      </scope>
+      <scope id="97836352114772472" at="48,41,52,22">
+        <var name="editorCell" id="97836352114772472" />
+      </scope>
+      <scope id="97836352114791971" at="23,0,28,0" />
+      <scope id="97836352114772471" at="42,0,48,0" />
+      <scope id="97836352114772472" at="48,0,54,0" />
+      <scope id="97836352114791971" at="33,43,40,22">
+        <var name="editorCell" id="97836352114791971" />
+      </scope>
+      <scope id="97836352114791971" at="33,0,42,0" />
+      <unit id="97836352114791971" at="14,0,55,0" name="com.mbeddr.doc.qa.editor.ConceptsDocumentationAssessment_InspectorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)/97836352114963133">
+    <file name="SpecificationAssessmentResult_Editor.java">
+      <node id="97836352114963133" at="11,79,12,95" concept="6" />
+      <node id="97836352114963133" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114963133" at="11,79,12,95" />
+      <scope id="97836352114963133" at="11,0,14,0">
+        <var name="editorContext" id="97836352114963133" />
+        <var name="node" id="97836352114963133" />
+      </scope>
+      <unit id="97836352114963133" at="10,0,15,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_Editor" />
+    </file>
+    <file name="SpecificationAssessmentResult_EditorBuilder_a.java">
+      <node id="97836352114963133" at="43,109,44,19" concept="9" />
+      <node id="97836352114963133" at="44,19,45,18" concept="1" />
+      <node id="97836352114963133" at="50,26,51,18" concept="6" />
+      <node id="97836352114963133" at="54,39,55,32" concept="6" />
+      <node id="97836352114963133" at="58,43,59,118" concept="5" />
+      <node id="97836352114963133" at="59,118,60,48" concept="1" />
+      <node id="97836352114963133" at="60,48,61,28" concept="1" />
+      <node id="97836352114963133" at="61,28,62,31" concept="1" />
+      <node id="97836352114963186" at="62,31,63,48" concept="1" />
+      <node id="97836352114963133" at="63,48,64,22" concept="6" />
+      <node id="97836352114963133" at="66,40,67,57" concept="5" />
+      <node id="97836352114963133" at="69,72,70,182" concept="5" />
+      <node id="97836352114963133" at="70,182,71,60" concept="1" />
+      <node id="97836352114963133" at="71,60,72,48" concept="1" />
+      <node id="97836352114963133" at="72,48,73,58" concept="1" />
+      <node id="97836352114963133" at="73,58,74,20" concept="6" />
+      <node id="97836352114963133" at="77,58,78,97" concept="5" />
+      <node id="97836352114963133" at="78,97,79,131" concept="1" />
+      <node id="97836352114963133" at="79,131,80,135" concept="1" />
+      <node id="97836352114963133" at="80,135,81,20" concept="6" />
+      <node id="97836352114963133" at="83,6,84,0" concept="7" />
+      <node id="97836352114963133" at="84,0,85,42" concept="1" />
+      <node id="97836352114963133" at="85,42,86,50" concept="5" />
+      <node id="97836352114963133" at="86,50,87,0" concept="7" />
+      <node id="97836352114963133" at="88,40,89,40" concept="1" />
+      <node id="97836352114963133" at="89,40,90,43" concept="1" />
+      <node id="97836352114963133" at="91,5,92,143" concept="1" />
+      <node id="97836352114963133" at="92,143,93,150" concept="5" />
+      <node id="97836352114963133" at="93,150,94,205" concept="5" />
+      <node id="97836352114963133" at="95,73,96,87" concept="5" />
+      <node id="97836352114963133" at="96,87,97,145" concept="6" />
+      <node id="97836352114963133" at="98,10,99,22" concept="6" />
+      <node id="97836352114963187" at="104,0,105,0" concept="2" trace="myReferencingNode" />
+      <node id="97836352114963187" at="106,109,107,21" concept="9" />
+      <node id="97836352114963187" at="107,21,108,42" concept="1" />
+      <node id="97836352114963187" at="108,42,109,20" concept="1" />
+      <node id="97836352114963187" at="112,41,113,32" concept="6" />
+      <node id="97836352114963187" at="118,28,119,20" concept="6" />
+      <node id="97836352114963201" at="122,43,123,41" concept="1" />
+      <node id="97836352114963201" at="124,11,125,51" concept="5" />
+      <node id="97836352114963201" at="125,51,126,78" concept="1" />
+      <node id="97836352114963201" at="126,78,127,150" concept="5" />
+      <node id="97836352114963201" at="127,150,128,47" concept="1" />
+      <node id="97836352114963201" at="128,47,129,46" concept="1" />
+      <node id="97836352114963201" at="129,46,130,38" concept="5" />
+      <node id="97836352114963201" at="130,38,131,56" concept="1" />
+      <node id="97836352114963201" at="131,56,132,44" concept="1" />
+      <node id="97836352114963201" at="132,44,133,88" concept="1" />
+      <node id="97836352114963201" at="133,88,134,35" concept="1" />
+      <node id="97836352114963201" at="134,35,135,157" concept="5" />
+      <node id="97836352114963201" at="135,157,136,210" concept="5" />
+      <node id="97836352114963201" at="137,76,138,91" concept="5" />
+      <node id="97836352114963201" at="138,91,139,147" concept="6" />
+      <node id="97836352114963201" at="140,14,141,26" concept="6" />
+      <node id="97836352114963201" at="142,17,143,42" concept="1" />
+      <node id="97836352114963133" at="149,0,150,0" concept="8" trace="elem$PVik" />
+      <node id="97836352114963133" at="153,0,154,0" concept="8" trace="LinkAttribute$v_" />
+      <node id="97836352114963133" at="154,0,155,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="97836352114963133" at="158,0,159,0" concept="8" trace="name$MnvL" />
+      <node id="97836352114963133" at="40,0,42,0" concept="2" trace="myNode" />
+      <node id="97836352114963187" at="102,0,104,0" concept="2" trace="myNode" />
+      <node id="97836352114963133" at="54,0,57,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114963187" at="112,0,115,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114963133" at="43,0,47,0" concept="0" trace="SpecificationAssessmentResult_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114963133" at="87,0,91,5" concept="3" />
+      <node id="97836352114963133" at="48,0,53,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="97836352114963133" at="94,205,99,22" concept="3" />
+      <node id="97836352114963187" at="106,0,111,0" concept="0" trace="Inline_Builder0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114963187" at="116,0,121,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="97836352114963201" at="136,210,141,26" concept="3" />
+      <node id="97836352114963133" at="69,0,76,0" concept="4" trace="createReferenceCell#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114963133" at="76,0,83,0" concept="4" trace="createErrorCell#(Ljava/lang/String;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114963133" at="58,0,66,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114963133" at="67,57,83,6" concept="5" />
+      <node id="97836352114963201" at="123,41,144,7" concept="10" />
+      <node id="97836352114963201" at="122,0,146,0" concept="4" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114963133" at="66,0,101,0" concept="4" trace="createRefCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114963133" at="50,26,51,18" />
+      <scope id="97836352114963133" at="54,39,55,32" />
+      <scope id="97836352114963187" at="112,41,113,32" />
+      <scope id="97836352114963187" at="118,28,119,20" />
+      <scope id="97836352114963201" at="142,17,143,42" />
+      <scope id="97836352114963133" at="43,109,45,18" />
+      <scope id="97836352114963133" at="88,40,90,43" />
+      <scope id="97836352114963133" at="95,73,97,145">
+        <var name="manager" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963201" at="137,76,139,147">
+        <var name="manager" id="97836352114963201" />
+      </scope>
+      <scope id="97836352114963133" at="54,0,57,0" />
+      <scope id="97836352114963187" at="106,109,109,20" />
+      <scope id="97836352114963187" at="112,0,115,0" />
+      <scope id="97836352114963133" at="43,0,47,0">
+        <var name="context" id="97836352114963133" />
+        <var name="node" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963133" at="77,58,81,20">
+        <var name="cell" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963133" at="48,0,53,0" />
+      <scope id="97836352114963133" at="69,72,74,20">
+        <var name="cell" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963187" at="106,0,111,0">
+        <var name="context" id="97836352114963187" />
+        <var name="node" id="97836352114963187" />
+        <var name="referencingNode" id="97836352114963187" />
+      </scope>
+      <scope id="97836352114963187" at="116,0,121,0" />
+      <scope id="97836352114963133" at="58,43,64,22">
+        <var name="editorCell" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963133" at="69,0,76,0">
+        <var name="targetNode" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963133" at="76,0,83,0">
+        <var name="error" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963133" at="58,0,66,0" />
+      <scope id="97836352114963201" at="124,11,141,26">
+        <var name="currentPropertyAttributes" id="97836352114963201" />
+        <var name="editorCell" id="97836352114963201" />
+        <var name="property" id="97836352114963201" />
+        <var name="propertyAttributes" id="97836352114963201" />
+        <var name="style" id="97836352114963201" />
+      </scope>
+      <scope id="97836352114963201" at="122,43,144,7" />
+      <scope id="97836352114963201" at="122,0,146,0" />
+      <scope id="97836352114963133" at="66,40,99,22">
+        <var name="currentReferenceAttributes" id="97836352114963133" />
+        <var name="editorCell" id="97836352114963133" />
+        <var name="provider" id="97836352114963133" />
+        <var name="referenceAttributes" id="97836352114963133" />
+        <var name="referenceLink" id="97836352114963133" />
+      </scope>
+      <scope id="97836352114963133" at="66,0,101,0" />
+      <unit id="97836352114963133" at="148,0,151,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$LINKS" />
+      <unit id="97836352114963133" at="157,0,160,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$PROPS" />
+      <unit id="97836352114963133" at="152,0,156,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$CONCEPTS" />
+      <unit id="97836352114963133" at="68,42,83,5" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$1" />
+      <unit id="97836352114963187" at="101,0,147,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a$Inline_Builder0" />
+      <unit id="97836352114963133" at="39,0,161,0" name="com.mbeddr.doc.qa.editor.SpecificationAssessmentResult_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:d3fef858-9f37-478e-8bd0-8d5e9e74ef8a(com.mbeddr.doc.qa.editor)/97836352114994068">
+    <file name="RulesDocumentationAssessment_Editor.java">
+      <node id="97836352114994068" at="11,79,12,94" concept="6" />
+      <node id="97836352114994068" at="14,82,15,97" concept="6" />
+      <node id="97836352114994068" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114994068" at="11,79,12,94" />
+      <scope id="97836352114994068" at="14,82,15,97" />
+      <scope id="97836352114994068" at="11,0,14,0">
+        <var name="editorContext" id="97836352114994068" />
+        <var name="node" id="97836352114994068" />
+      </scope>
+      <scope id="97836352114994068" at="14,0,17,0">
+        <var name="editorContext" id="97836352114994068" />
+        <var name="node" id="97836352114994068" />
+      </scope>
+      <unit id="97836352114994068" at="10,0,18,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_Editor" />
+    </file>
+    <file name="RulesDocumentationAssessment_EditorBuilder_a.java">
+      <node id="97836352114994068" at="23,108,24,19" concept="9" />
+      <node id="97836352114994068" at="24,19,25,18" concept="1" />
+      <node id="97836352114994068" at="30,26,31,18" concept="6" />
+      <node id="97836352114994068" at="34,39,35,32" concept="6" />
+      <node id="97836352114994068" at="38,43,39,120" concept="5" />
+      <node id="97836352114994068" at="39,120,40,48" concept="1" />
+      <node id="97836352114994068" at="40,48,41,28" concept="1" />
+      <node id="97836352114994068" at="41,28,42,31" concept="1" />
+      <node id="97836352114994161" at="42,31,43,49" concept="1" />
+      <node id="97836352114994162" at="43,49,44,51" concept="1" />
+      <node id="97836352114994068" at="44,51,45,22" concept="6" />
+      <node id="97836352114994161" at="47,41,48,140" concept="5" />
+      <node id="97836352114994161" at="48,140,49,47" concept="1" />
+      <node id="97836352114994161" at="49,47,50,34" concept="1" />
+      <node id="97836352114994161" at="50,34,51,22" concept="6" />
+      <node id="97836352114994068" at="53,43,54,118" concept="5" />
+      <node id="97836352114994068" at="54,118,55,49" concept="1" />
+      <node id="97836352114994068" at="55,49,56,34" concept="5" />
+      <node id="97836352114994163" at="56,34,57,49" concept="1" />
+      <node id="97836352114994068" at="57,49,58,40" concept="1" />
+      <node id="97836352114994164" at="58,40,59,51" concept="1" />
+      <node id="97836352114994165" at="59,51,60,50" concept="1" />
+      <node id="97836352114994068" at="60,50,61,22" concept="6" />
+      <node id="97836352114994164" at="63,43,64,85" concept="5" />
+      <node id="97836352114994164" at="64,85,65,22" concept="6" />
+      <node id="97836352114994165" at="67,42,68,124" concept="5" />
+      <node id="97836352114994165" at="68,124,69,22" concept="6" />
+      <node id="97836352114994068" at="20,0,22,0" concept="2" trace="myNode" />
+      <node id="97836352114994068" at="34,0,37,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="23,0,27,0" concept="0" trace="RulesDocumentationAssessment_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114994164" at="63,0,67,0" concept="4" trace="createIndentCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994165" at="67,0,71,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="28,0,33,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="97836352114994161" at="47,0,53,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="38,0,47,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="53,0,63,0" concept="4" trace="createCollection_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114994068" at="30,26,31,18" />
+      <scope id="97836352114994068" at="34,39,35,32" />
+      <scope id="97836352114994068" at="23,108,25,18" />
+      <scope id="97836352114994164" at="63,43,65,22">
+        <var name="editorCell" id="97836352114994164" />
+      </scope>
+      <scope id="97836352114994165" at="67,42,69,22">
+        <var name="editorCell" id="97836352114994165" />
+      </scope>
+      <scope id="97836352114994068" at="34,0,37,0" />
+      <scope id="97836352114994068" at="23,0,27,0">
+        <var name="context" id="97836352114994068" />
+        <var name="node" id="97836352114994068" />
+      </scope>
+      <scope id="97836352114994161" at="47,41,51,22">
+        <var name="editorCell" id="97836352114994161" />
+      </scope>
+      <scope id="97836352114994164" at="63,0,67,0" />
+      <scope id="97836352114994165" at="67,0,71,0" />
+      <scope id="97836352114994068" at="28,0,33,0" />
+      <scope id="97836352114994161" at="47,0,53,0" />
+      <scope id="97836352114994068" at="38,43,45,22">
+        <var name="editorCell" id="97836352114994068" />
+      </scope>
+      <scope id="97836352114994068" at="53,43,61,22">
+        <var name="editorCell" id="97836352114994068" />
+        <var name="style" id="97836352114994068" />
+      </scope>
+      <scope id="97836352114994068" at="38,0,47,0" />
+      <scope id="97836352114994068" at="53,0,63,0" />
+      <unit id="97836352114994068" at="19,0,72,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_EditorBuilder_a" />
+    </file>
+    <file name="RulesDocumentationAssessment_InspectorBuilder_a.java">
+      <node id="97836352114994068" at="18,111,19,19" concept="9" />
+      <node id="97836352114994068" at="19,19,20,18" concept="1" />
+      <node id="97836352114994068" at="25,26,26,18" concept="6" />
+      <node id="97836352114994068" at="29,39,30,32" concept="6" />
+      <node id="97836352114994068" at="33,43,34,120" concept="5" />
+      <node id="97836352114994068" at="34,120,35,48" concept="1" />
+      <node id="97836352114994068" at="35,48,36,28" concept="1" />
+      <node id="97836352114994068" at="36,28,37,31" concept="1" />
+      <node id="97836352114994221" at="37,31,38,49" concept="1" />
+      <node id="97836352114994222" at="38,49,39,49" concept="1" />
+      <node id="97836352114994068" at="39,49,40,22" concept="6" />
+      <node id="97836352114994221" at="42,41,43,194" concept="5" />
+      <node id="97836352114994221" at="43,194,44,46" concept="1" />
+      <node id="97836352114994221" at="44,46,45,34" concept="1" />
+      <node id="97836352114994221" at="45,34,46,22" concept="6" />
+      <node id="97836352114994222" at="48,41,49,110" concept="5" />
+      <node id="97836352114994222" at="49,110,50,46" concept="1" />
+      <node id="97836352114994222" at="50,46,51,34" concept="1" />
+      <node id="97836352114994222" at="51,34,52,22" concept="6" />
+      <node id="97836352114994068" at="15,0,17,0" concept="2" trace="myNode" />
+      <node id="97836352114994068" at="29,0,32,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="18,0,22,0" concept="0" trace="RulesDocumentationAssessment_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="97836352114994068" at="23,0,28,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="97836352114994221" at="42,0,48,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994222" at="48,0,54,0" concept="4" trace="createConstant_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="97836352114994068" at="33,0,42,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="97836352114994068" at="25,26,26,18" />
+      <scope id="97836352114994068" at="29,39,30,32" />
+      <scope id="97836352114994068" at="18,111,20,18" />
+      <scope id="97836352114994068" at="29,0,32,0" />
+      <scope id="97836352114994068" at="18,0,22,0">
+        <var name="context" id="97836352114994068" />
+        <var name="node" id="97836352114994068" />
+      </scope>
+      <scope id="97836352114994221" at="42,41,46,22">
+        <var name="editorCell" id="97836352114994221" />
+      </scope>
+      <scope id="97836352114994222" at="48,41,52,22">
+        <var name="editorCell" id="97836352114994222" />
+      </scope>
+      <scope id="97836352114994068" at="23,0,28,0" />
+      <scope id="97836352114994221" at="42,0,48,0" />
+      <scope id="97836352114994222" at="48,0,54,0" />
+      <scope id="97836352114994068" at="33,43,40,22">
+        <var name="editorCell" id="97836352114994068" />
+      </scope>
+      <scope id="97836352114994068" at="33,0,42,0" />
+      <unit id="97836352114994068" at="14,0,55,0" name="com.mbeddr.doc.qa.editor.RulesDocumentationAssessment_InspectorBuilder_a" />
+    </file>
+  </root>
+</debug-info>
+

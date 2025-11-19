@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="15,0,38,0" name="com.mbeddr.mpsutil.richstring.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6ef50914-0bcf-46ea-a3ac-ac2975ea0cb5(com.mbeddr.mpsutil.richstring.constraints)/3354025285337289149">
+    <file name="IRichStringContent_Constraints.java">
+      <node id="3354025285337289149" at="11,92,12,55" concept="8" />
+      <node id="3354025285337289149" at="16,0,17,0" concept="6" trace="IRichStringContent$Sz" />
+      <node id="3354025285337289149" at="11,0,14,0" concept="0" trace="IRichStringContent_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="3354025285337289149" at="11,92,12,55" />
+      <scope id="3354025285337289149" at="11,0,14,0">
+        <var name="initContext" id="3354025285337289149" />
+      </scope>
+      <unit id="3354025285337289149" at="15,0,18,0" name="com.mbeddr.mpsutil.richstring.constraints.IRichStringContent_Constraints$CONCEPTS" />
+      <unit id="3354025285337289149" at="10,0,19,0" name="com.mbeddr.mpsutil.richstring.constraints.IRichStringContent_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6ef50914-0bcf-46ea-a3ac-ac2975ea0cb5(com.mbeddr.mpsutil.richstring.constraints)/7716961532366084885">
+    <file name="ConversionWidthInteger_Constraints.java">
+      <node id="7716961532366084885" at="18,96,19,59" concept="8" />
+      <node id="7716961532366084988" at="19,59,20,31" concept="1" />
+      <node id="7716961532366084988" at="24,54,25,61" concept="8" />
+      <node id="7716961532366084988" at="28,109,29,100" concept="4" />
+      <node id="7716961532366084988" at="30,53,31,170" concept="1" />
+      <node id="7716961532366084988" at="32,7,33,20" concept="5" />
+      <node id="7716961532366086958" at="35,82,36,31" concept="5" />
+      <node id="7716961532366084885" at="41,0,42,0" concept="6" trace="ConversionWidthInteger$NT" />
+      <node id="7716961532366084885" at="45,0,46,0" concept="6" trace="width$EMLz" />
+      <node id="7716961532366084988" at="24,0,27,0" concept="0" trace="Width_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7716961532366084988" at="29,100,32,7" concept="2" />
+      <node id="7716961532366084988" at="35,0,38,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="7716961532366084885" at="18,0,22,0" concept="0" trace="ConversionWidthInteger_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="7716961532366084988" at="27,0,35,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7716961532366084988" at="24,54,25,61" />
+      <scope id="7716961532366084988" at="30,53,31,170" />
+      <scope id="7716961532366084991" at="35,82,36,31" />
+      <scope id="7716961532366084885" at="18,96,20,31" />
+      <scope id="7716961532366084988" at="24,0,27,0">
+        <var name="container" id="7716961532366084988" />
+      </scope>
+      <scope id="7716961532366084988" at="35,0,38,0">
+        <var name="node" id="7716961532366084988" />
+        <var name="propertyValue" id="7716961532366084988" />
+      </scope>
+      <scope id="7716961532366084885" at="18,0,22,0">
+        <var name="initContext" id="7716961532366084885" />
+      </scope>
+      <scope id="7716961532366084988" at="28,109,33,20">
+        <var name="result" id="7716961532366084988" />
+      </scope>
+      <scope id="7716961532366084988" at="27,0,35,0">
+        <var name="checkingNodeContext" id="7716961532366084988" />
+        <var name="node" id="7716961532366084988" />
+        <var name="propertyValue" id="7716961532366084988" />
+      </scope>
+      <unit id="7716961532366084885" at="40,0,43,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionWidthInteger_Constraints$CONCEPTS" />
+      <unit id="7716961532366084885" at="44,0,47,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionWidthInteger_Constraints$PROPS" />
+      <unit id="7716961532366084988" at="23,0,39,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionWidthInteger_Constraints$Width_PD" />
+      <unit id="7716961532366084885" at="17,0,48,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionWidthInteger_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6ef50914-0bcf-46ea-a3ac-ac2975ea0cb5(com.mbeddr.mpsutil.richstring.constraints)/7716961532366109235">
+    <file name="ConversionPrecisionInteger_Constraints.java">
+      <node id="7716961532366109235" at="18,100,19,63" concept="8" />
+      <node id="7716961532366109287" at="19,63,20,35" concept="1" />
+      <node id="7716961532366109287" at="24,58,25,65" concept="8" />
+      <node id="7716961532366109287" at="28,109,29,100" concept="4" />
+      <node id="7716961532366109287" at="30,53,31,170" concept="1" />
+      <node id="7716961532366109287" at="32,7,33,20" concept="5" />
+      <node id="7716961532366109940" at="35,82,36,31" concept="5" />
+      <node id="7716961532366109235" at="41,0,42,0" concept="6" trace="ConversionPrecisionInteger$tw" />
+      <node id="7716961532366109235" at="45,0,46,0" concept="6" trace="precision$BB_3" />
+      <node id="7716961532366109287" at="24,0,27,0" concept="0" trace="Precision_PD#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7716961532366109287" at="29,100,32,7" concept="2" />
+      <node id="7716961532366109287" at="35,0,38,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="7716961532366109235" at="18,0,22,0" concept="0" trace="ConversionPrecisionInteger_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <node id="7716961532366109287" at="27,0,35,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7716961532366109287" at="24,58,25,65" />
+      <scope id="7716961532366109287" at="30,53,31,170" />
+      <scope id="7716961532366109290" at="35,82,36,31" />
+      <scope id="7716961532366109235" at="18,100,20,35" />
+      <scope id="7716961532366109287" at="24,0,27,0">
+        <var name="container" id="7716961532366109287" />
+      </scope>
+      <scope id="7716961532366109287" at="35,0,38,0">
+        <var name="node" id="7716961532366109287" />
+        <var name="propertyValue" id="7716961532366109287" />
+      </scope>
+      <scope id="7716961532366109235" at="18,0,22,0">
+        <var name="initContext" id="7716961532366109235" />
+      </scope>
+      <scope id="7716961532366109287" at="28,109,33,20">
+        <var name="result" id="7716961532366109287" />
+      </scope>
+      <scope id="7716961532366109287" at="27,0,35,0">
+        <var name="checkingNodeContext" id="7716961532366109287" />
+        <var name="node" id="7716961532366109287" />
+        <var name="propertyValue" id="7716961532366109287" />
+      </scope>
+      <unit id="7716961532366109235" at="40,0,43,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionPrecisionInteger_Constraints$CONCEPTS" />
+      <unit id="7716961532366109235" at="44,0,47,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionPrecisionInteger_Constraints$PROPS" />
+      <unit id="7716961532366109287" at="23,0,39,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionPrecisionInteger_Constraints$Precision_PD" />
+      <unit id="7716961532366109235" at="17,0,48,0" name="com.mbeddr.mpsutil.richstring.constraints.ConversionPrecisionInteger_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:6ef50914-0bcf-46ea-a3ac-ac2975ea0cb5(com.mbeddr.mpsutil.richstring.constraints)/7716961532368764952">
+    <file name="InlineFormat_Constraints.java">
+      <node id="7716961532368764952" at="11,86,12,49" concept="8" />
+      <node id="7716961532368764952" at="16,0,17,0" concept="6" trace="InlineFormat$AE" />
+      <node id="7716961532368764952" at="11,0,14,0" concept="0" trace="InlineFormat_Constraints#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptorInitContext;)V" />
+      <scope id="7716961532368764952" at="11,86,12,49" />
+      <scope id="7716961532368764952" at="11,0,14,0">
+        <var name="initContext" id="7716961532368764952" />
+      </scope>
+      <unit id="7716961532368764952" at="15,0,18,0" name="com.mbeddr.mpsutil.richstring.constraints.InlineFormat_Constraints$CONCEPTS" />
+      <unit id="7716961532368764952" at="10,0,19,0" name="com.mbeddr.mpsutil.richstring.constraints.InlineFormat_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

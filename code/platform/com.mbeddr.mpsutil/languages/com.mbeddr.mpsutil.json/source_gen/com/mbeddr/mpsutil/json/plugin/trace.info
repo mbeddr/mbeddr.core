@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="9,0,14,0" name="com.mbeddr.mpsutil.json.plugin.ExtensionDescriptor" />
+    </file>
+    <file name="IconContainer.java">
+      <unit at="8,0,11,0" name="com.mbeddr.mpsutil.json.plugin.IconContainer" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/3281846772294579857">
+    <file name="JsonConfig.java">
+      <node id="4278620861693395944" at="11,33,12,13" concept="9" />
+      <node id="3164180844150375361" at="15,35,16,29" concept="9" />
+      <node id="4419938104120365141" at="19,54,20,51" concept="9" />
+      <node id="3164180844149394336" at="23,0,24,0" concept="7" trace="exportNumbersAsText#()Z" />
+      <node id="3281846772294618994" at="11,0,14,0" concept="7" trace="getPriorityLevel#()I" />
+      <node id="3164180844149263341" at="15,0,18,0" concept="7" trace="getFactory#()Lcom/fasterxml/jackson/core/JsonFactory;" />
+      <node id="4419938104120284112" at="19,0,22,0" concept="7" trace="getWriter#(Lcom/fasterxml/jackson/databind/ObjectMapper;)Lcom/fasterxml/jackson/databind/ObjectWriter;" />
+      <scope id="3281846772294618998" at="11,33,12,13" />
+      <scope id="3164180844149263344" at="15,35,16,29" />
+      <scope id="4419938104120284113" at="19,54,20,51" />
+      <scope id="3164180844149394336" at="23,0,24,0" />
+      <scope id="3281846772294618994" at="11,0,14,0" />
+      <scope id="3164180844149263341" at="15,0,18,0" />
+      <scope id="4419938104120284112" at="19,0,22,0">
+        <var name="mapper" id="4419938104120352372" />
+      </scope>
+      <unit id="3281846772294579857" at="9,0,25,0" name="com.mbeddr.mpsutil.json.plugin.JsonConfig" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/5088826354701256938">
+    <file name="JsonConfigHelper.java">
+      <node id="812622131364425166" at="9,40,10,99" concept="8" />
+      <node id="812622131364425170" at="10,99,11,165" concept="8" />
+      <node id="812622131364426177" at="11,165,12,56" concept="9" />
+      <node id="5088826354701269204" at="9,0,14,0" concept="13" trace="getConfig#()Lcom/mbeddr/mpsutil/json/plugin/JsonConfig;" />
+      <scope id="5088826354701269207" at="9,40,12,56">
+        <var name="ep" id="812622131364425167" />
+        <var name="sortedMappers" id="812622131364425171" />
+      </scope>
+      <scope id="5088826354701269204" at="9,0,14,0" />
+      <unit id="5088826354701256938" at="8,0,15,0" name="com.mbeddr.mpsutil.json.plugin.JsonConfigHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/5524881290247285072">
+    <file name="Json_ApplicationPlugin.java">
+      <node id="5524881290247285072" at="26,56,27,51" concept="3" />
+      <node id="5524881290247285100" at="29,37,30,98" concept="3" />
+    </file>
+    <file name="pasteJsonGroup_ActionGroup.java">
+      <node id="5524881290247285072" at="10,0,11,0" concept="12" trace="ID" />
+      <node id="5524881290247285072" at="12,72,13,40" concept="14" />
+      <node id="5524881290247285072" at="13,40,14,25" concept="3" />
+      <node id="5524881290247285072" at="14,25,15,20" concept="3" />
+      <node id="5524881290247285072" at="15,20,16,29" concept="3" />
+      <node id="5524881290247438697" at="16,29,17,51" concept="3" />
+      <node id="5524881290247285098" at="17,51,18,103" concept="3" />
+      <node id="5524881290247438710" at="18,103,19,51" concept="3" />
+      <node id="5524881290247285072" at="12,0,21,0" concept="2" trace="pasteJsonGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="5524881290247285072" at="12,72,19,51" />
+      <scope id="5524881290247285072" at="12,0,21,0">
+        <var name="plugin" id="5524881290247285072" />
+      </scope>
+      <unit id="5524881290247285072" at="9,0,22,0" name="com.mbeddr.mpsutil.json.plugin.pasteJsonGroup_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/5524881290247285077">
+    <file name="Json_ApplicationPlugin.java">
+      <node id="5524881290247285077" at="23,43,24,44" concept="3" />
+    </file>
+    <file name="pasteJsonObject_Action.java">
+      <node id="5524881290247285077" at="28,0,29,0" concept="12" trace="LOG" />
+      <node id="5524881290247285077" at="29,0,30,0" concept="12" trace="ICON" />
+      <node id="5524881290247285077" at="31,35,32,77" concept="14" />
+      <node id="5524881290247285077" at="32,77,33,35" concept="3" />
+      <node id="5524881290247285077" at="33,35,34,52" concept="3" />
+      <node id="5524881290247285077" at="34,52,35,36" concept="3" />
+      <node id="5524881290247285077" at="35,36,36,29" concept="3" />
+      <node id="5524881290247285077" at="39,32,40,16" concept="9" />
+      <node id="5019896697272475525" at="43,87,44,268" concept="8" />
+      <node id="7981815086180147535" at="44,268,45,105" concept="9" />
+      <node id="5524881290247285077" at="48,89,49,85" concept="3" />
+      <node id="5524881290247285077" at="53,53,54,19" concept="9" />
+      <node id="5524881290247448114" at="56,5,57,57" concept="8" />
+      <node id="5524881290247448116" at="58,25,59,21" concept="9" />
+      <node id="5524881290247285077" at="61,5,62,16" concept="9" />
+      <node id="7981815086180339671" at="65,96,66,124" concept="8" />
+      <node id="7981815086180343523" at="67,24,68,258" concept="3" />
+      <node id="7981815086180502068" at="69,12,70,125" concept="8" />
+      <node id="7981815086180543584" at="71,27,72,147" concept="3" />
+      <node id="7981815086180112072" at="76,67,77,33" concept="8" />
+      <node id="7981815086180112093" at="79,78,80,23" concept="3" />
+      <node id="7981815086180112097" at="81,7,82,12" concept="1" />
+      <node id="7981815086180112100" at="84,27,85,18" concept="9" />
+      <node id="7981815086180112124" at="88,11,89,72" concept="8" />
+      <node id="7981815086180112136" at="90,37,91,31" concept="9" />
+      <node id="7981815086180112113" at="93,47,94,20" concept="9" />
+      <node id="7981815086180112120" at="96,33,97,59" concept="3" />
+      <node id="7981815086180112144" at="100,5,101,16" concept="9" />
+      <node id="7981815086180139665" at="103,55,104,43" concept="9" />
+      <node id="5524881290247285077" at="108,0,109,0" concept="12" trace="JSONObject$dl" />
+      <node id="5524881290247285077" at="109,0,110,0" concept="12" trace="JsonFile$j8" />
+      <node id="5524881290247285077" at="113,0,114,0" concept="12" trace="variables$MwtW" />
+      <node id="5524881290247285077" at="114,0,115,0" concept="12" trace="object$9ZCo" />
+      <node id="5524881290247285077" at="52,95,55,5" concept="6" />
+      <node id="5524881290247448116" at="57,57,60,7" concept="6" />
+      <node id="7981815086180484314" at="70,125,73,7" concept="6" />
+      <node id="7981815086180112083" at="78,82,81,7" concept="6" />
+      <node id="7981815086180112098" at="83,5,86,5" concept="6" />
+      <node id="7981815086180112131" at="89,72,92,9" concept="6" />
+      <node id="7981815086180112120" at="95,32,98,9" concept="6" />
+      <node id="7981815086180139665" at="103,0,106,0" concept="13" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5524881290247285077" at="38,0,42,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="5524881290247285077" at="47,0,51,0" concept="7" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="5524881290247285077" at="42,0,47,0" concept="7" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="7981815086180693002" at="69,10,74,5" concept="0" />
+      <node id="5524881290247448114" at="55,5,61,5" concept="0" />
+      <node id="7981815086180112076" at="77,33,83,5" concept="5" />
+      <node id="5524881290247285077" at="31,0,38,0" concept="2" trace="pasteJsonObject_Action#()V" />
+      <node id="7981815086180340334" at="66,124,74,5" concept="6" />
+      <node id="5524881290247285077" at="64,0,76,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="7981815086180112107" at="87,66,99,7" concept="15" />
+      <node id="5524881290247285077" at="51,0,64,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="7981815086180112105" at="86,5,100,5" concept="6" />
+      <node id="7981815086180112148" at="76,0,103,0" concept="7" trace="getStringFromClipboard#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Ljava/lang/String;" />
+      <scope id="5524881290247285077" at="39,32,40,16" />
+      <scope id="5524881290247285077" at="48,89,49,85" />
+      <scope id="5524881290247285077" at="53,53,54,19" />
+      <scope id="5524881290247448116" at="58,25,59,21" />
+      <scope id="7981815086180340336" at="67,24,68,258" />
+      <scope id="7981815086180484316" at="71,27,72,147" />
+      <scope id="7981815086180112092" at="79,78,80,23" />
+      <scope id="7981815086180112099" at="84,27,85,18" />
+      <scope id="7981815086180112135" at="90,37,91,31" />
+      <scope id="7981815086180112112" at="93,47,94,20" />
+      <scope id="7981815086180112120" at="96,33,97,59" />
+      <scope id="7981815086180139665" at="103,55,104,43" />
+      <scope id="5524881290247448153" at="43,87,45,105">
+        <var name="correctContext" id="5019896697272475526" />
+      </scope>
+      <scope id="7981815086180112108" at="93,7,95,7">
+        <var name="ex" id="7981815086180112109" />
+      </scope>
+      <scope id="7981815086180112119" at="95,32,98,9" />
+      <scope id="7981815086180139665" at="103,0,106,0">
+        <var name="str" id="7981815086180139665" />
+      </scope>
+      <scope id="5524881290247285077" at="38,0,42,0" />
+      <scope id="5524881290247285077" at="47,0,51,0">
+        <var name="_params" id="5524881290247285077" />
+        <var name="event" id="5524881290247285077" />
+      </scope>
+      <scope id="5524881290247448114" at="56,5,60,7">
+        <var name="node" id="5524881290247448114" />
+      </scope>
+      <scope id="7981815086180693003" at="69,12,73,7">
+        <var name="file" id="7981815086180502069" />
+      </scope>
+      <scope id="7981815086180112082" at="78,82,82,12" />
+      <scope id="7981815086180112123" at="88,11,92,9">
+        <var name="data" id="7981815086180112125" />
+      </scope>
+      <scope id="7981815086180112115" at="95,7,99,7">
+        <var name="ex" id="7981815086180112116" />
+      </scope>
+      <scope id="5524881290247285077" at="31,35,36,29" />
+      <scope id="5524881290247285077" at="42,0,47,0">
+        <var name="_params" id="5524881290247285077" />
+        <var name="event" id="5524881290247285077" />
+      </scope>
+      <scope id="7981815086180112076" at="77,33,83,5">
+        <var name="trf" id="7981815086180112080" />
+      </scope>
+      <scope id="5524881290247285077" at="31,0,38,0" />
+      <scope id="5524881290247285077" at="65,96,74,5">
+        <var name="obj" id="7981815086180339672" />
+      </scope>
+      <scope id="5524881290247285077" at="52,95,62,16" />
+      <scope id="5524881290247285077" at="64,0,76,0">
+        <var name="_params" id="5524881290247285077" />
+        <var name="event" id="5524881290247285077" />
+      </scope>
+      <scope id="7981815086180112106" at="87,66,99,7" />
+      <scope id="5524881290247285077" at="51,0,64,0">
+        <var name="_params" id="5524881290247285077" />
+        <var name="event" id="5524881290247285077" />
+      </scope>
+      <scope id="7981815086180112149" at="76,67,101,16">
+        <var name="contents" id="7981815086180112073" />
+      </scope>
+      <scope id="7981815086180112148" at="76,0,103,0">
+        <var name="event" id="7981815086180112148" />
+      </scope>
+      <unit id="5524881290247285077" at="107,0,111,0" name="com.mbeddr.mpsutil.json.plugin.pasteJsonObject_Action$CONCEPTS" />
+      <unit id="5524881290247285077" at="112,0,116,0" name="com.mbeddr.mpsutil.json.plugin.pasteJsonObject_Action$LINKS" />
+      <unit id="5524881290247285077" at="27,0,117,0" name="com.mbeddr.mpsutil.json.plugin.pasteJsonObject_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/7931153496512862609">
+    <file name="Json_ApplicationPlugin.java">
+      <node id="7931153496512862609" at="22,29,23,43" concept="3" />
+    </file>
+    <file name="importJsonFile_Action.java">
+      <node id="7931153496512862609" at="30,0,31,0" concept="12" trace="ICON" />
+      <node id="7931153496512862609" at="32,34,33,43" concept="14" />
+      <node id="7931153496512862609" at="33,43,34,35" concept="3" />
+      <node id="7931153496512862609" at="34,35,35,44" concept="3" />
+      <node id="7931153496512862609" at="35,44,36,36" concept="3" />
+      <node id="7931153496512862609" at="36,36,37,29" concept="3" />
+      <node id="7931153496512862609" at="40,32,41,16" concept="9" />
+      <node id="7931153496512889140" at="44,87,45,271" concept="9" />
+      <node id="7931153496512862609" at="48,89,49,85" concept="3" />
+      <node id="7931153496512862609" at="53,53,54,19" concept="9" />
+      <node id="7981815086181433153" at="56,5,57,56" concept="8" />
+      <node id="7981815086181433154" at="58,22,59,21" concept="9" />
+      <node id="7931153496512886034" at="62,5,63,68" concept="8" />
+      <node id="7931153496512886036" at="64,26,65,21" concept="9" />
+      <node id="7931153496512862609" at="67,5,68,16" concept="9" />
+      <node id="7981815086181701769" at="71,96,72,161" concept="8" />
+      <node id="1143901226672690578" at="72,161,73,116" concept="8" />
+      <node id="1027238693496263579" at="73,116,74,110" concept="8" />
+      <node id="7981815086181392370" at="74,110,75,0" concept="11" />
+      <node id="1164790389995674466" at="79,35,80,38" concept="3" />
+      <node id="409871126019164290" at="80,38,81,167" concept="3" />
+      <node id="3591152993536846760" at="83,47,84,41" concept="3" />
+      <node id="8168031818838567372" at="84,41,85,120" concept="3" />
+      <node id="5924925381073553929" at="94,46,95,68" concept="9" />
+      <node id="1143901226672938729" at="97,6,98,24" concept="9" />
+      <node id="7931153496512862609" at="52,95,55,5" concept="6" />
+      <node id="7981815086181433154" at="57,56,60,7" concept="6" />
+      <node id="7931153496512886036" at="63,68,66,7" concept="6" />
+      <node id="3544276528551670535" at="94,0,97,0" concept="7" trace="value#(Lcom/intellij/openapi/vfs/VirtualFile;)Z" />
+      <node id="7931153496512862609" at="39,0,43,0" concept="7" trace="isDumbAware#()Z" />
+      <node id="7931153496512862609" at="43,0,47,0" concept="7" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="7931153496512862609" at="47,0,51,0" concept="7" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="1164790389996286546" at="82,18,86,13" concept="6" />
+      <node id="1164790389995681975" at="82,16,87,11" concept="0" />
+      <node id="1143901226672929095" at="92,73,97,6" concept="8" />
+      <node id="7981815086181433153" at="55,5,61,5" concept="0" />
+      <node id="7931153496512886034" at="61,5,67,5" concept="0" />
+      <node id="7931153496512862609" at="32,0,39,0" concept="2" trace="importJsonFile_Action#()V" />
+      <node id="1143901226672841078" at="92,0,100,0" concept="7" trace="isJsonOrDir#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)Lcom/intellij/openapi/util/Condition;" />
+      <node id="1164790389995667957" at="78,42,87,11" concept="6" />
+      <node id="8168031818838567369" at="77,119,88,9" concept="5" />
+      <node id="8168031818838567000" at="76,48,89,9" concept="3" />
+      <node id="7981815086181442666" at="75,0,90,5" concept="6" />
+      <node id="7931153496512862609" at="51,0,70,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="7931153496512862609" at="70,0,92,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <scope id="7931153496512862609" at="40,32,41,16" />
+      <scope id="7931153496512886048" at="44,87,45,271" />
+      <scope id="7931153496512862609" at="48,89,49,85" />
+      <scope id="7931153496512862609" at="53,53,54,19" />
+      <scope id="7981815086181433154" at="58,22,59,21" />
+      <scope id="7931153496512886036" at="64,26,65,21" />
+      <scope id="3544276528551670540" at="94,46,95,68" />
+      <scope id="1164790389995667959" at="79,35,81,167" />
+      <scope id="1164790389996286548" at="83,47,85,120" />
+      <scope id="3544276528551670535" at="94,0,97,0">
+        <var name="file" id="3544276528551670538" />
+      </scope>
+      <scope id="7931153496512862609" at="39,0,43,0" />
+      <scope id="7931153496512862609" at="43,0,47,0">
+        <var name="_params" id="7931153496512862609" />
+        <var name="event" id="7931153496512862609" />
+      </scope>
+      <scope id="7931153496512862609" at="47,0,51,0">
+        <var name="_params" id="7931153496512862609" />
+        <var name="event" id="7931153496512862609" />
+      </scope>
+      <scope id="7981815086181433153" at="56,5,60,7">
+        <var name="p" id="7981815086181433153" />
+      </scope>
+      <scope id="7931153496512886034" at="62,5,66,7">
+        <var name="model" id="7931153496512886034" />
+      </scope>
+      <scope id="1164790389995681976" at="82,18,86,13" />
+      <scope id="7931153496512862609" at="32,34,37,29" />
+      <scope id="1143901226672841080" at="92,73,98,24">
+        <var name="isModuleFile" id="3544276528551670530" />
+      </scope>
+      <scope id="7931153496512862609" at="32,0,39,0" />
+      <scope id="1143901226672841078" at="92,0,100,0">
+        <var name="event" id="1143901226672841078" />
+      </scope>
+      <scope id="8168031818838567371" at="78,42,87,11" />
+      <scope id="8168031818838567004" at="77,119,88,9" />
+      <scope id="8168031818838567369" at="77,119,88,9">
+        <var name="file" id="8168031818838567370" />
+      </scope>
+      <scope id="7981815086181442668" at="76,48,89,9" />
+      <scope id="7931153496512862609" at="52,95,68,16" />
+      <scope id="7931153496512862609" at="51,0,70,0">
+        <var name="_params" id="7931153496512862609" />
+        <var name="event" id="7931153496512862609" />
+      </scope>
+      <scope id="7931153496512862609" at="71,96,90,5">
+        <var name="base" id="1143901226672690579" />
+        <var name="choosen" id="1027238693496263580" />
+        <var name="descr" id="1027238693496095463" />
+      </scope>
+      <scope id="7931153496512862609" at="70,0,92,0">
+        <var name="_params" id="7931153496512862609" />
+        <var name="event" id="7931153496512862609" />
+      </scope>
+      <unit id="3544276528551670533" at="93,52,97,5" name="com.mbeddr.mpsutil.json.plugin.importJsonFile_Action$1" />
+      <unit id="7931153496512862609" at="29,0,101,0" name="com.mbeddr.mpsutil.json.plugin.importJsonFile_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/7931153496513055900">
+    <file name="Json_ApplicationPlugin.java">
+      <node id="7931153496513055900" at="25,13,26,56" concept="3" />
+      <node id="7931153496513055907" at="30,98,31,133" concept="3" />
+    </file>
+    <file name="importJsonFileGroup_ActionGroup.java">
+      <node id="7931153496513055900" at="10,0,11,0" concept="12" trace="ID" />
+      <node id="7931153496513055900" at="12,77,13,45" concept="14" />
+      <node id="7931153496513055900" at="13,45,14,25" concept="3" />
+      <node id="7931153496513055900" at="14,25,15,20" concept="3" />
+      <node id="7931153496513055900" at="15,20,16,29" concept="3" />
+      <node id="7931153496513055905" at="16,29,17,107" concept="3" />
+      <node id="7931153496513055900" at="12,0,19,0" concept="2" trace="importJsonFileGroup_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="7931153496513055900" at="12,77,17,107" />
+      <scope id="7931153496513055900" at="12,0,19,0">
+        <var name="plugin" id="7931153496513055900" />
+      </scope>
+      <unit id="7931153496513055900" at="9,0,20,0" name="com.mbeddr.mpsutil.json.plugin.importJsonFileGroup_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:6492a138-3e52-4756-96b0-7e3c330fe78e(com.mbeddr.mpsutil.json.plugin)/7931153496513257645">
+    <file name="Json_ApplicationPlugin.java">
+      <node id="7931153496513257645" at="11,0,12,0" concept="4" trace="myId" />
+      <node id="7931153496513257645" at="17,27,18,16" concept="9" />
+      <node id="7931153496513257645" at="21,30,22,29" concept="10" />
+      <node id="7931153496513257645" at="24,44,25,13" concept="10" />
+      <node id="7931153496513257645" at="13,0,15,0" concept="2" trace="Json_ApplicationPlugin#()V" />
+      <node id="7931153496513257645" at="16,0,20,0" concept="7" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="7931153496513257645" at="29,0,33,0" concept="7" trace="adjustRegularGroups#()V" />
+      <node id="7931153496513257645" at="21,0,29,0" concept="7" trace="createGroups#()V" />
+      <scope id="7931153496513257645" at="13,35,13,35" />
+      <scope id="7931153496513257645" at="17,27,18,16" />
+      <scope id="7931153496513257645" at="13,0,15,0" />
+      <scope id="7931153496513257645" at="29,37,31,133" />
+      <scope id="7931153496513257645" at="16,0,20,0" />
+      <scope id="7931153496513257645" at="29,0,33,0" />
+      <scope id="7931153496513257645" at="21,30,27,51" />
+      <scope id="7931153496513257645" at="21,0,29,0" />
+      <unit id="7931153496513257645" at="10,0,34,0" name="com.mbeddr.mpsutil.json.plugin.Json_ApplicationPlugin" />
+    </file>
+  </root>
+</debug-info>
+

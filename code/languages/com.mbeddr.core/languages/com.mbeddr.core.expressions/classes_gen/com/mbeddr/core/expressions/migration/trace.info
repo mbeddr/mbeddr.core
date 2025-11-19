@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="MigrationDescriptor.java">
+      <unit at="11,0,17,0" name="com.mbeddr.core.expressions.migration.MigrationDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:739a47f6-3bec-445c-bf3f-1f75cde54d54(com.mbeddr.core.expressions.migration)/3390250080489777909">
+    <file name="TypeSizeSpecification_char.java">
+      <node id="3390250080489777909" at="20,0,21,0" concept="1" trace="description" />
+      <node id="3390250080489777909" at="21,30,22,23" concept="6" />
+      <node id="3390250080489777909" at="25,33,26,17" concept="6" />
+      <node id="3390250080489777909" at="28,41,29,17" concept="0" />
+      <node id="3390250080489777909" at="29,17,30,16" concept="6" />
+      <node id="3390250080489791703" at="35,120,36,129" concept="0" />
+      <node id="3390250080489777909" at="41,50,42,148" concept="6" />
+      <node id="3390250080489777909" at="46,0,47,0" concept="8" trace="basicType$_$2i" />
+      <node id="3390250080489777909" at="50,0,51,0" concept="8" trace="SignedCharType$k2" />
+      <node id="3390250080489777909" at="51,0,52,0" concept="8" trace="CharType$me" />
+      <node id="3390250080489777909" at="52,0,53,0" concept="8" trace="TypeSizeSpecification$Pk" />
+      <node id="3390250080489777909" at="21,0,24,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3390250080489778226" at="34,125,37,9" concept="3" />
+      <node id="3390250080489777909" at="41,0,44,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3390250080489777909" at="24,0,28,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="3390250080489777909" at="28,0,32,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3390250080489778223" at="33,63,38,7" concept="2" />
+      <node id="3390250080489778220" at="32,42,39,5" concept="2" />
+      <node id="3390250080489777909" at="32,0,41,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="3390250080489777909" at="21,30,22,23" />
+      <scope id="3390250080489777909" at="25,33,26,17" />
+      <scope id="3390250080489778227" at="35,120,36,129" />
+      <scope id="3390250080489777909" at="41,50,42,148" />
+      <scope id="3390250080489777909" at="28,41,30,16" />
+      <scope id="3390250080489777909" at="21,0,24,0" />
+      <scope id="3390250080489778225" at="34,125,37,9" />
+      <scope id="3390250080489777909" at="41,0,44,0" />
+      <scope id="3390250080489777909" at="24,0,28,0" />
+      <scope id="3390250080489777909" at="28,0,32,0">
+        <var name="m" id="3390250080489777909" />
+      </scope>
+      <scope id="3390250080489778222" at="33,63,38,7" />
+      <scope id="3390250080489778223" at="33,63,38,7">
+        <var name="spec" id="3390250080489778224" />
+      </scope>
+      <scope id="3390250080489777909" at="32,42,39,5" />
+      <scope id="3390250080489778220" at="32,42,39,5">
+        <var name="model" id="3390250080489778221" />
+      </scope>
+      <scope id="3390250080489777909" at="32,0,41,0">
+        <var name="m" id="3390250080489777909" />
+      </scope>
+      <unit id="3390250080489777909" at="45,0,48,0" name="com.mbeddr.core.expressions.migration.TypeSizeSpecification_char$LINKS" />
+      <unit id="3390250080489777909" at="49,0,54,0" name="com.mbeddr.core.expressions.migration.TypeSizeSpecification_char$CONCEPTS" />
+      <unit id="3390250080489777909" at="19,0,55,0" name="com.mbeddr.core.expressions.migration.TypeSizeSpecification_char" />
+    </file>
+  </root>
+  <root nodeRef="r:739a47f6-3bec-445c-bf3f-1f75cde54d54(com.mbeddr.core.expressions.migration)/3869525881269670873">
+    <file name="TypeSizeConfiguration_Migration_ssize_t.java">
+      <node id="3869525881269670873" at="19,0,20,0" concept="1" trace="description" />
+      <node id="3869525881269670873" at="20,30,21,23" concept="6" />
+      <node id="3869525881269670873" at="24,33,25,16" concept="6" />
+      <node id="3869525881269670873" at="27,41,28,17" concept="0" />
+      <node id="3869525881269670873" at="28,17,29,16" concept="6" />
+      <node id="3869525881269676151" at="34,79,35,93" concept="0" />
+      <node id="3869525881269670873" at="40,50,41,148" concept="6" />
+      <node id="3869525881269670873" at="45,0,46,0" concept="8" trace="ssizeTType$hOmv" />
+      <node id="3869525881269670873" at="49,0,50,0" concept="8" trace="Int32tType$Sy" />
+      <node id="3869525881269670873" at="50,0,51,0" concept="8" trace="TypeSizeConfiguration$OP" />
+      <node id="3869525881269670873" at="20,0,23,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3869525881269676149" at="33,127,36,9" concept="3" />
+      <node id="3869525881269670873" at="40,0,43,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3869525881269670873" at="23,0,27,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="3869525881269670873" at="27,0,31,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3869525881269676146" at="32,63,37,7" concept="2" />
+      <node id="3869525881269676143" at="31,42,38,5" concept="2" />
+      <node id="3869525881269670873" at="31,0,40,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="3869525881269670873" at="20,30,21,23" />
+      <scope id="3869525881269670873" at="24,33,25,16" />
+      <scope id="3869525881269676150" at="34,79,35,93" />
+      <scope id="3869525881269670873" at="40,50,41,148" />
+      <scope id="3869525881269670873" at="27,41,29,16" />
+      <scope id="3869525881269670873" at="20,0,23,0" />
+      <scope id="3869525881269676148" at="33,127,36,9" />
+      <scope id="3869525881269670873" at="40,0,43,0" />
+      <scope id="3869525881269670873" at="23,0,27,0" />
+      <scope id="3869525881269670873" at="27,0,31,0">
+        <var name="m" id="3869525881269670873" />
+      </scope>
+      <scope id="3869525881269676145" at="32,63,37,7" />
+      <scope id="3869525881269676146" at="32,63,37,7">
+        <var name="config" id="3869525881269676147" />
+      </scope>
+      <scope id="3869525881269670873" at="31,42,38,5" />
+      <scope id="3869525881269676143" at="31,42,38,5">
+        <var name="model" id="3869525881269676144" />
+      </scope>
+      <scope id="3869525881269670873" at="31,0,40,0">
+        <var name="m" id="3869525881269670873" />
+      </scope>
+      <unit id="3869525881269670873" at="44,0,47,0" name="com.mbeddr.core.expressions.migration.TypeSizeConfiguration_Migration_ssize_t$LINKS" />
+      <unit id="3869525881269670873" at="48,0,52,0" name="com.mbeddr.core.expressions.migration.TypeSizeConfiguration_Migration_ssize_t$CONCEPTS" />
+      <unit id="3869525881269670873" at="18,0,53,0" name="com.mbeddr.core.expressions.migration.TypeSizeConfiguration_Migration_ssize_t" />
+    </file>
+  </root>
+  <root nodeRef="r:739a47f6-3bec-445c-bf3f-1f75cde54d54(com.mbeddr.core.expressions.migration)/5554877561120410002">
+    <file name="Int2BoolAndBool2Int.java">
+      <node id="5554877561120410002" at="12,0,13,0" concept="1" trace="description" />
+      <node id="5554877561120410002" at="13,30,14,23" concept="6" />
+      <node id="5554877561120410002" at="17,33,18,17" concept="6" />
+      <node id="5554877561120410002" at="20,41,21,17" concept="0" />
+      <node id="5554877561120410002" at="21,17,22,16" concept="6" />
+      <node id="5444656016581988119" at="24,42,25,82" concept="7" />
+      <node id="5554877561120410002" at="27,50,28,148" concept="6" />
+      <node id="5554877561120410002" at="13,0,16,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="5554877561120410002" at="24,0,27,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="5554877561120410002" at="27,0,30,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="5554877561120410002" at="16,0,20,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="5554877561120410002" at="20,0,24,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="5554877561120410002" at="13,30,14,23" />
+      <scope id="5554877561120410002" at="17,33,18,17" />
+      <scope id="5554877561120410002" at="24,42,25,82" />
+      <scope id="5554877561120410002" at="27,50,28,148" />
+      <scope id="5554877561120410002" at="20,41,22,16" />
+      <scope id="5554877561120410002" at="13,0,16,0" />
+      <scope id="5554877561120410002" at="24,0,27,0">
+        <var name="m" id="5554877561120410002" />
+      </scope>
+      <scope id="5554877561120410002" at="27,0,30,0" />
+      <scope id="5554877561120410002" at="16,0,20,0" />
+      <scope id="5554877561120410002" at="20,0,24,0">
+        <var name="m" id="5554877561120410002" />
+      </scope>
+      <unit id="5554877561120410002" at="11,0,32,0" name="com.mbeddr.core.expressions.migration.Int2BoolAndBool2Int" />
+    </file>
+  </root>
+  <root nodeRef="r:739a47f6-3bec-445c-bf3f-1f75cde54d54(com.mbeddr.core.expressions.migration)/618019800389267008">
+    <file name="NotExpression.java">
+      <node id="618019800389267008" at="22,0,23,0" concept="1" trace="description" />
+      <node id="618019800389267008" at="23,30,24,23" concept="6" />
+      <node id="618019800389267008" at="27,33,28,17" concept="6" />
+      <node id="618019800389267008" at="30,41,31,17" concept="0" />
+      <node id="618019800389267008" at="31,17,32,16" concept="6" />
+      <node id="618019800389296078" at="35,38,36,424" concept="5" />
+      <node id="618019800389297336" at="37,57,38,160" concept="0" />
+      <node id="618019800389267008" at="42,50,43,148" concept="6" />
+      <node id="618019800389299980" at="46,74,47,76" concept="5" />
+      <node id="618019800389299980" at="47,76,48,82" concept="0" />
+      <node id="618019800389299980" at="48,82,49,26" concept="6" />
+      <node id="618019800389267008" at="53,0,54,0" concept="8" trace="NotExpression$pF" />
+      <node id="618019800389267008" at="54,0,55,0" concept="8" trace="UnaryExpression$lH" />
+      <node id="618019800389267008" at="55,0,56,0" concept="8" trace="Expression$bT" />
+      <node id="618019800389267008" at="56,0,57,0" concept="8" trace="ParensExpression$Ng" />
+      <node id="618019800389267008" at="60,0,61,0" concept="8" trace="expression$PfNq" />
+      <node id="618019800389267008" at="23,0,26,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="618019800389296839" at="36,424,39,7" concept="2" />
+      <node id="618019800389267008" at="42,0,45,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="618019800389267008" at="26,0,30,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="618019800389267008" at="30,0,34,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="618019800389299980" at="46,0,51,0" concept="9" trace="createParensExpression_ii57f9_a0a0b0a0g#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="618019800389269312" at="34,42,40,5" concept="2" />
+      <node id="618019800389267008" at="34,0,42,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="618019800389267008" at="23,30,24,23" />
+      <scope id="618019800389267008" at="27,33,28,17" />
+      <scope id="618019800389296841" at="37,57,38,160" />
+      <scope id="618019800389267008" at="42,50,43,148" />
+      <scope id="618019800389267008" at="30,41,32,16" />
+      <scope id="618019800389267008" at="23,0,26,0" />
+      <scope id="618019800389296839" at="36,424,39,7">
+        <var name="expr" id="618019800389296840" />
+      </scope>
+      <scope id="618019800389267008" at="42,0,45,0" />
+      <scope id="618019800389299980" at="46,74,49,26">
+        <var name="n0" id="618019800389299980" />
+      </scope>
+      <scope id="618019800389267008" at="26,0,30,0" />
+      <scope id="618019800389267008" at="30,0,34,0">
+        <var name="m" id="618019800389267008" />
+      </scope>
+      <scope id="618019800389269314" at="35,38,39,7">
+        <var name="targets" id="618019800389296079" />
+      </scope>
+      <scope id="618019800389299980" at="46,0,51,0">
+        <var name="p0" id="618019800389299980" />
+      </scope>
+      <scope id="618019800389267008" at="34,42,40,5" />
+      <scope id="618019800389269312" at="34,42,40,5">
+        <var name="mdl" id="618019800389269313" />
+      </scope>
+      <scope id="618019800389267008" at="34,0,42,0">
+        <var name="m" id="618019800389267008" />
+      </scope>
+      <unit id="618019800389267008" at="59,0,62,0" name="com.mbeddr.core.expressions.migration.NotExpression$LINKS" />
+      <unit id="618019800389267008" at="52,0,58,0" name="com.mbeddr.core.expressions.migration.NotExpression$CONCEPTS" />
+      <unit id="618019800389267008" at="21,0,63,0" name="com.mbeddr.core.expressions.migration.NotExpression" />
+    </file>
+  </root>
+  <root nodeRef="r:739a47f6-3bec-445c-bf3f-1f75cde54d54(com.mbeddr.core.expressions.migration)/7808382574384118289">
+    <file name="TypeSizeConfiguration_Migration.java">
+      <node id="7808382574384118289" at="19,0,20,0" concept="1" trace="description" />
+      <node id="7808382574384118289" at="20,30,21,23" concept="6" />
+      <node id="7808382574384118289" at="24,33,25,17" concept="6" />
+      <node id="7808382574384118289" at="27,41,28,17" concept="0" />
+      <node id="7808382574384118289" at="28,17,29,16" concept="6" />
+      <node id="7808382574384125743" at="34,79,35,91" concept="0" />
+      <node id="7808382574384134684" at="37,80,38,100" concept="0" />
+      <node id="7808382574384118289" at="43,50,44,148" concept="6" />
+      <node id="7808382574384118289" at="48,0,49,0" concept="8" trace="intPtrType$DnfZ" />
+      <node id="7808382574384118289" at="49,0,50,0" concept="8" trace="uintPtrType$PVwl" />
+      <node id="7808382574384118289" at="53,0,54,0" concept="8" trace="LongType$qD" />
+      <node id="7808382574384118289" at="54,0,55,0" concept="8" trace="UnsignedLongType$$P" />
+      <node id="7808382574384118289" at="55,0,56,0" concept="8" trace="TypeSizeConfiguration$OP" />
+      <node id="7808382574384118289" at="20,0,23,0" concept="4" trace="getCaption#()Ljava/lang/String;" />
+      <node id="7808382574384123255" at="33,127,36,9" concept="3" />
+      <node id="7808382574384131648" at="36,9,39,9" concept="3" />
+      <node id="7808382574384118289" at="43,0,46,0" concept="4" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="7808382574384118289" at="23,0,27,0" concept="4" trace="isRerunnable#()Z" />
+      <node id="7808382574384118289" at="27,0,31,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7808382574384120876" at="32,63,40,7" concept="2" />
+      <node id="7808382574384119582" at="31,42,41,5" concept="2" />
+      <node id="7808382574384118289" at="31,0,43,0" concept="4" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <scope id="7808382574384118289" at="20,30,21,23" />
+      <scope id="7808382574384118289" at="24,33,25,17" />
+      <scope id="7808382574384123256" at="34,79,35,91" />
+      <scope id="7808382574384131650" at="37,80,38,100" />
+      <scope id="7808382574384118289" at="43,50,44,148" />
+      <scope id="7808382574384118289" at="27,41,29,16" />
+      <scope id="7808382574384118289" at="20,0,23,0" />
+      <scope id="7808382574384118289" at="43,0,46,0" />
+      <scope id="7808382574384118289" at="23,0,27,0" />
+      <scope id="7808382574384118289" at="27,0,31,0">
+        <var name="m" id="7808382574384118289" />
+      </scope>
+      <scope id="7808382574384120880" at="33,127,39,9" />
+      <scope id="7808382574384119586" at="32,63,40,7" />
+      <scope id="7808382574384120876" at="32,63,40,7">
+        <var name="config" id="7808382574384120878" />
+      </scope>
+      <scope id="7808382574384118289" at="31,42,41,5" />
+      <scope id="7808382574384119582" at="31,42,41,5">
+        <var name="model" id="7808382574384119584" />
+      </scope>
+      <scope id="7808382574384118289" at="31,0,43,0">
+        <var name="m" id="7808382574384118289" />
+      </scope>
+      <unit id="7808382574384118289" at="47,0,51,0" name="com.mbeddr.core.expressions.migration.TypeSizeConfiguration_Migration$LINKS" />
+      <unit id="7808382574384118289" at="52,0,57,0" name="com.mbeddr.core.expressions.migration.TypeSizeConfiguration_Migration$CONCEPTS" />
+      <unit id="7808382574384118289" at="18,0,58,0" name="com.mbeddr.core.expressions.migration.TypeSizeConfiguration_Migration" />
+    </file>
+  </root>
+</debug-info>
+

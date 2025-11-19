@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:b41f9f7b-bab8-4543-a73e-a678e8a2beb5(com.mbeddr.mpsutil.nodediff.plugin)/2796951183759760772">
+    <file name="NodeDiffHelper.java">
+      <node id="2796951183759773818" at="22,0,23,0" concept="9" trace="first" />
+      <node id="2796951183759777644" at="23,0,24,0" concept="9" trace="second" />
+      <node id="2796951183759775929" at="25,45,26,32" concept="2" />
+      <node id="2796951183759777739" at="29,46,30,33" concept="2" />
+      <node id="2796951183759920731" at="33,36,34,25" concept="7" />
+      <node id="3338297468634254071" at="38,77,39,19" concept="7" />
+      <node id="3338297468634267732" at="40,5,41,82" concept="6" />
+      <node id="3338297468634272411" at="42,23,43,19" concept="7" />
+      <node id="6591046381785507375" at="44,5,45,62" concept="6" />
+      <node id="6591046381785405592" at="47,11,48,39" concept="6" />
+      <node id="6591046381785406157" at="48,39,49,30" concept="6" />
+      <node id="6591046381785594103" at="50,39,51,28" concept="2" />
+      <node id="6591046381785509196" at="53,25,54,30" concept="2" />
+      <node id="6591046381785511224" at="57,104,58,32" concept="2" />
+      <node id="6591046381785512575" at="60,104,61,32" concept="2" />
+      <node id="6591046381785612267" at="65,30,66,29" concept="2" />
+      <node id="6591046381785514371" at="68,7,69,21" concept="7" />
+      <node id="3338297468634240415" at="77,38,78,43" concept="2" />
+      <node id="3338297468634229534" at="81,50,82,50" concept="6" />
+      <node id="6591046381785423316" at="82,50,83,35" concept="6" />
+      <node id="6591046381785423819" at="83,35,84,36" concept="6" />
+      <node id="6591046381785426222" at="84,36,85,57" concept="6" />
+      <node id="6591046381785432549" at="86,70,87,120" concept="2" />
+      <node id="6591046381785436564" at="88,5,89,57" concept="6" />
+      <node id="6591046381785436550" at="90,70,91,120" concept="2" />
+      <node id="2796951183759779609" at="92,5,93,87" concept="2" />
+      <node id="1330157825511093591" at="93,87,94,17" concept="2" />
+      <node id="1330157825511095886" at="94,17,95,18" concept="2" />
+      <node id="2796951183759760772" at="100,0,101,0" concept="9" trace="INamedConcept$Kd" />
+      <node id="2796951183759760772" at="104,0,105,0" concept="9" trace="name$MnvL" />
+      <node id="2796951183759774911" at="25,0,28,0" concept="10" trace="markFirstNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2796951183759777737" at="29,0,32,0" concept="10" trace="markSecondNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2796951183759920214" at="33,0,36,0" concept="10" trace="hasFirst#()Z" />
+      <node id="3338297468634251309" at="37,57,40,5" concept="4" />
+      <node id="3338297468634270201" at="41,82,44,5" concept="4" />
+      <node id="6591046381785501803" at="52,16,55,11" concept="4" />
+      <node id="6591046381785408480" at="56,95,59,13" concept="4" />
+      <node id="6591046381785419439" at="59,13,62,13" concept="4" />
+      <node id="6591046381785429070" at="85,57,88,5" concept="4" />
+      <node id="6591046381785436548" at="89,57,92,5" concept="4" />
+      <node id="2796951183759778694" at="76,0,80,0" concept="10" trace="diff#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="6591046381785620681" at="55,11,63,11" concept="4" />
+      <node id="6591046381785594939" at="52,14,64,9" concept="0" />
+      <node id="6591046381785591694" at="49,30,64,9" concept="4" />
+      <node id="3338297468634238618" at="81,0,97,0" concept="10" trace="diff#(Ljetbrains/mps/project/MPSProject;)V" />
+      <node id="6591046381785607888" at="46,47,67,7" concept="12" />
+      <node id="6591046381785506271" at="45,62,68,7" concept="2" />
+      <node id="6591046381785404000" at="37,0,71,0" concept="10" trace="isValid#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <scope id="2796951183759774914" at="25,45,26,32" />
+      <scope id="2796951183759777738" at="29,46,30,33" />
+      <scope id="2796951183759918436" at="33,36,34,25" />
+      <scope id="3338297468634251311" at="38,77,39,19" />
+      <scope id="3338297468634270203" at="42,23,43,19" />
+      <scope id="6591046381785591696" at="50,39,51,28" />
+      <scope id="6591046381785501805" at="53,25,54,30" />
+      <scope id="6591046381785408482" at="57,104,58,32" />
+      <scope id="6591046381785419440" at="60,104,61,32" />
+      <scope id="6591046381785607893" at="65,30,66,29" />
+      <scope id="2796951183759778697" at="77,38,78,43" />
+      <scope id="6591046381785429072" at="86,70,87,120" />
+      <scope id="6591046381785436549" at="90,70,91,120" />
+      <scope id="6591046381785607891" at="65,7,67,7">
+        <var name="tp" id="6591046381785607895" />
+      </scope>
+      <scope id="2796951183759774911" at="25,0,28,0">
+        <var name="n" id="2796951183759775704" />
+      </scope>
+      <scope id="2796951183759777737" at="29,0,32,0">
+        <var name="n" id="2796951183759777747" />
+      </scope>
+      <scope id="2796951183759920214" at="33,0,36,0" />
+      <scope id="2796951183759778694" at="76,0,80,0">
+        <var name="p" id="2796951183759852202" />
+      </scope>
+      <scope id="6591046381785620683" at="56,95,62,13" />
+      <scope id="6591046381785594940" at="52,16,63,11" />
+      <scope id="3338297468634218784" at="81,50,95,18">
+        <var name="n1" id="6591046381785423317" />
+        <var name="n2" id="6591046381785423820" />
+        <var name="repo" id="3338297468634229535" />
+        <var name="s1" id="6591046381785426225" />
+        <var name="s2" id="6591046381785436565" />
+      </scope>
+      <scope id="3338297468634238618" at="81,0,97,0">
+        <var name="mpsProject" id="3338297468634222847" />
+      </scope>
+      <scope id="6591046381785607890" at="47,11,64,9">
+        <var name="n1" id="6591046381785405593" />
+        <var name="n2" id="6591046381785406158" />
+      </scope>
+      <scope id="6591046381785506275" at="46,47,67,7" />
+      <scope id="6591046381785404004" at="37,57,69,21">
+        <var name="repo" id="3338297468634267733" />
+        <var name="res" id="6591046381785507378" />
+      </scope>
+      <scope id="6591046381785404000" at="37,0,71,0">
+        <var name="secondNode" id="1330157825511088929" />
+      </scope>
+      <unit id="2796951183759760772" at="99,0,102,0" name="com.mbeddr.mpsutil.nodediff.plugin.NodeDiffHelper$CONCEPTS" />
+      <unit id="2796951183759760772" at="103,0,106,0" name="com.mbeddr.mpsutil.nodediff.plugin.NodeDiffHelper$PROPS" />
+      <unit id="2796951183759760772" at="20,0,107,0" name="com.mbeddr.mpsutil.nodediff.plugin.NodeDiffHelper" />
+    </file>
+  </root>
+  <root nodeRef="r:b41f9f7b-bab8-4543-a73e-a678e8a2beb5(com.mbeddr.mpsutil.nodediff.plugin)/2796951183759921139">
+    <file name="Nodediff_ApplicationPlugin.java">
+      <node id="2796951183759921139" at="21,29,22,42" concept="2" />
+    </file>
+    <file name="markFirstNode_Action.java">
+      <node id="2796951183759921139" at="16,0,17,0" concept="9" trace="ICON" />
+      <node id="2796951183759921139" at="18,33,19,49" concept="11" />
+      <node id="2796951183759921139" at="19,49,20,35" concept="2" />
+      <node id="2796951183759921139" at="20,35,21,52" concept="2" />
+      <node id="2796951183759921139" at="21,52,22,29" concept="2" />
+      <node id="2796951183759921139" at="25,32,26,16" concept="7" />
+      <node id="2796951183759921139" at="30,53,31,19" concept="7" />
+      <node id="2796951183759927437" at="33,5,34,57" concept="6" />
+      <node id="2796951183759927439" at="35,25,36,21" concept="7" />
+      <node id="2796951183759921139" at="38,5,39,16" concept="7" />
+      <node id="2796951183759927871" at="42,96,43,72" concept="2" />
+      <node id="2796951183759921139" at="29,95,32,5" concept="4" />
+      <node id="2796951183759927439" at="34,57,37,7" concept="4" />
+      <node id="2796951183759921139" at="24,0,28,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="2796951183759921139" at="41,0,45,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2796951183759921139" at="18,0,24,0" concept="1" trace="markFirstNode_Action#()V" />
+      <node id="2796951183759927437" at="32,5,38,5" concept="0" />
+      <node id="2796951183759921139" at="28,0,41,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="2796951183759921139" at="25,32,26,16" />
+      <scope id="2796951183759921139" at="30,53,31,19" />
+      <scope id="2796951183759927439" at="35,25,36,21" />
+      <scope id="2796951183759921139" at="42,96,43,72" />
+      <scope id="2796951183759921139" at="18,33,22,29" />
+      <scope id="2796951183759921139" at="24,0,28,0" />
+      <scope id="2796951183759927437" at="33,5,37,7">
+        <var name="node" id="2796951183759927437" />
+      </scope>
+      <scope id="2796951183759921139" at="41,0,45,0">
+        <var name="_params" id="2796951183759921139" />
+        <var name="event" id="2796951183759921139" />
+      </scope>
+      <scope id="2796951183759921139" at="18,0,24,0" />
+      <scope id="2796951183759921139" at="29,95,39,16" />
+      <scope id="2796951183759921139" at="28,0,41,0">
+        <var name="_params" id="2796951183759921139" />
+        <var name="event" id="2796951183759921139" />
+      </scope>
+      <unit id="2796951183759921139" at="15,0,46,0" name="com.mbeddr.mpsutil.nodediff.plugin.markFirstNode_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:b41f9f7b-bab8-4543-a73e-a678e8a2beb5(com.mbeddr.mpsutil.nodediff.plugin)/2796951183759928277">
+    <file name="Nodediff_ApplicationPlugin.java">
+      <node id="2796951183759928277" at="22,42,23,46" concept="2" />
+    </file>
+    <file name="markSecondAndDiff_Action.java">
+      <node id="2796951183759928277" at="17,0,18,0" concept="9" trace="ICON" />
+      <node id="2796951183759928277" at="19,37,20,49" concept="11" />
+      <node id="2796951183759928277" at="20,49,21,35" concept="2" />
+      <node id="2796951183759928277" at="21,35,22,52" concept="2" />
+      <node id="2796951183759928277" at="22,52,23,29" concept="2" />
+      <node id="2796951183759928277" at="26,32,27,16" concept="7" />
+      <node id="2796951183759934842" at="30,87,31,102" concept="7" />
+      <node id="2796951183759928277" at="34,89,35,85" concept="2" />
+      <node id="2796951183759928277" at="39,53,40,19" concept="7" />
+      <node id="2796951183759928285" at="42,5,43,57" concept="6" />
+      <node id="2796951183759928287" at="44,25,45,21" concept="7" />
+      <node id="3225038607914522698" at="48,5,49,66" concept="6" />
+      <node id="3225038607914522699" at="50,22,51,21" concept="7" />
+      <node id="2796951183759928277" at="53,5,54,16" concept="7" />
+      <node id="2796951183759928280" at="57,96,58,73" concept="2" />
+      <node id="2796951183759929069" at="58,73,59,70" concept="2" />
+      <node id="2796951183759928277" at="38,95,41,5" concept="4" />
+      <node id="2796951183759928287" at="43,57,46,7" concept="4" />
+      <node id="3225038607914522699" at="49,66,52,7" concept="4" />
+      <node id="2796951183759928277" at="25,0,29,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="2796951183759928277" at="29,0,33,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="2796951183759928277" at="33,0,37,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2796951183759928277" at="56,0,61,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2796951183759928277" at="19,0,25,0" concept="1" trace="markSecondAndDiff_Action#()V" />
+      <node id="2796951183759928285" at="41,5,47,5" concept="0" />
+      <node id="3225038607914522698" at="47,5,53,5" concept="0" />
+      <node id="2796951183759928277" at="37,0,56,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="2796951183759928277" at="26,32,27,16" />
+      <scope id="2796951183759934306" at="30,87,31,102" />
+      <scope id="2796951183759928277" at="34,89,35,85" />
+      <scope id="2796951183759928277" at="39,53,40,19" />
+      <scope id="2796951183759928287" at="44,25,45,21" />
+      <scope id="3225038607914522699" at="50,22,51,21" />
+      <scope id="2796951183759928277" at="57,96,59,70" />
+      <scope id="2796951183759928277" at="19,37,23,29" />
+      <scope id="2796951183759928277" at="25,0,29,0" />
+      <scope id="2796951183759928277" at="29,0,33,0">
+        <var name="_params" id="2796951183759928277" />
+        <var name="event" id="2796951183759928277" />
+      </scope>
+      <scope id="2796951183759928277" at="33,0,37,0">
+        <var name="_params" id="2796951183759928277" />
+        <var name="event" id="2796951183759928277" />
+      </scope>
+      <scope id="2796951183759928285" at="42,5,46,7">
+        <var name="node" id="2796951183759928285" />
+      </scope>
+      <scope id="3225038607914522698" at="48,5,52,7">
+        <var name="p" id="3225038607914522698" />
+      </scope>
+      <scope id="2796951183759928277" at="56,0,61,0">
+        <var name="_params" id="2796951183759928277" />
+        <var name="event" id="2796951183759928277" />
+      </scope>
+      <scope id="2796951183759928277" at="19,0,25,0" />
+      <scope id="2796951183759928277" at="38,95,54,16" />
+      <scope id="2796951183759928277" at="37,0,56,0">
+        <var name="_params" id="2796951183759928277" />
+        <var name="event" id="2796951183759928277" />
+      </scope>
+      <unit id="2796951183759928277" at="16,0,62,0" name="com.mbeddr.mpsutil.nodediff.plugin.markSecondAndDiff_Action" />
+    </file>
+  </root>
+  <root nodeRef="r:b41f9f7b-bab8-4543-a73e-a678e8a2beb5(com.mbeddr.mpsutil.nodediff.plugin)/2796951183759934247">
+    <file name="Nodediff_ApplicationPlugin.java">
+      <node id="2796951183759934247" at="24,13,25,46" concept="2" />
+      <node id="2796951183759935176" at="27,37,28,119" concept="2" />
+    </file>
+    <file name="diffStuff_ActionGroup.java">
+      <node id="2796951183759934247" at="10,0,11,0" concept="9" trace="ID" />
+      <node id="2796951183759934247" at="12,67,13,35" concept="11" />
+      <node id="2796951183759934247" at="13,35,14,25" concept="2" />
+      <node id="2796951183759934247" at="14,25,15,20" concept="2" />
+      <node id="2796951183759934247" at="15,20,16,29" concept="2" />
+      <node id="2796951183759935182" at="16,29,17,46" concept="2" />
+      <node id="2796951183759934252" at="17,46,18,100" concept="2" />
+      <node id="2796951183759934257" at="18,100,19,104" concept="2" />
+      <node id="2796951183759935187" at="19,104,20,46" concept="2" />
+      <node id="2796951183759934247" at="12,0,22,0" concept="1" trace="diffStuff_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="2796951183759934247" at="12,67,20,46" />
+      <scope id="2796951183759934247" at="12,0,22,0">
+        <var name="plugin" id="2796951183759934247" />
+      </scope>
+      <unit id="2796951183759934247" at="9,0,23,0" name="com.mbeddr.mpsutil.nodediff.plugin.diffStuff_ActionGroup" />
+    </file>
+  </root>
+  <root nodeRef="r:b41f9f7b-bab8-4543-a73e-a678e8a2beb5(com.mbeddr.mpsutil.nodediff.plugin)/2796951183759964841">
+    <file name="Nodediff_ApplicationPlugin.java">
+      <node id="2796951183759964841" at="10,0,11,0" concept="3" trace="myId" />
+      <node id="2796951183759964841" at="16,27,17,16" concept="7" />
+      <node id="2796951183759964841" at="20,30,21,29" concept="8" />
+      <node id="2796951183759964841" at="23,46,24,13" concept="8" />
+      <node id="2796951183759964841" at="12,0,14,0" concept="1" trace="Nodediff_ApplicationPlugin#()V" />
+      <node id="2796951183759964841" at="27,0,30,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="2796951183759964841" at="15,0,19,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="2796951183759964841" at="20,0,27,0" concept="5" trace="createGroups#()V" />
+      <scope id="2796951183759964841" at="12,39,12,39" />
+      <scope id="2796951183759964841" at="16,27,17,16" />
+      <scope id="2796951183759964841" at="27,37,28,119" />
+      <scope id="2796951183759964841" at="12,0,14,0" />
+      <scope id="2796951183759964841" at="27,0,30,0" />
+      <scope id="2796951183759964841" at="15,0,19,0" />
+      <scope id="2796951183759964841" at="20,30,25,46" />
+      <scope id="2796951183759964841" at="20,0,27,0" />
+      <unit id="2796951183759964841" at="9,0,31,0" name="com.mbeddr.mpsutil.nodediff.plugin.Nodediff_ApplicationPlugin" />
+    </file>
+  </root>
+</debug-info>
+

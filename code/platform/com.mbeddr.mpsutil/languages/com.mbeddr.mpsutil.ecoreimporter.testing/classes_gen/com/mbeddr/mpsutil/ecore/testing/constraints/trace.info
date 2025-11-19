@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="12,0,23,0" name="com.mbeddr.mpsutil.ecore.testing.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

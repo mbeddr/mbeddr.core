@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="r:9295c19c-56f9-4395-bf08-9ffc2ff588e1(com.mbeddr.core.interpreterdebugger.rt.runtime)/4119021803751430084">
+    <file name="InterpreterValueSourcePresentation.java">
+      <node id="4119021803751451387" at="22,0,23,0" concept="3" trace="showDebugger" />
+      <node id="4119021803751514391" at="23,0,24,0" concept="3" trace="dependentNodes" />
+      <node id="4119021803751488608" at="25,55,26,89" concept="7" />
+      <node id="4119021803751484556" at="26,89,27,45" concept="8" />
+      <node id="4119021803751491375" at="30,63,31,83" concept="2" />
+      <node id="4119021803751498700" at="33,76,34,178" concept="2" />
+      <node id="4119021803751548052" at="37,77,38,67" concept="7" />
+      <node id="4119021803751515183" at="38,67,39,86" concept="8" />
+      <node id="4119021803751562916" at="41,73,42,66" concept="7" />
+      <node id="4119021803751571584" at="42,66,43,0" concept="9" />
+      <node id="4119021803751563505" at="44,85,45,126" concept="2" />
+      <node id="4119021803751571288" at="46,5,47,0" concept="9" />
+      <node id="4119021803751572218" at="47,0,48,130" concept="2" />
+      <node id="4119021803751597100" at="50,53,51,85" concept="2" />
+      <node id="4119021803751430084" at="55,0,56,0" concept="10" trace="IValueDebuggable$Pw" />
+      <node id="4119021803751490702" at="30,0,33,0" concept="6" trace="setShowDebugger#(Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
+      <node id="4119021803751497506" at="33,0,36,0" concept="6" trace="setShowDebuggerRecursive#(Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
+      <node id="4119021803751554951" at="43,0,46,5" concept="5" />
+      <node id="4119021803751593185" at="50,0,53,0" concept="6" trace="clearDependentNodes#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4119021803751449321" at="25,0,29,0" concept="6" trace="shouldShowDebugger#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4119021803751449313" at="37,0,41,0" concept="6" trace="listDependentNodePointers#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="4119021803751551833" at="41,0,50,0" concept="6" trace="registerDependentNode#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4119021803751490705" at="30,63,31,83" />
+      <scope id="4119021803751497509" at="33,76,34,178" />
+      <scope id="4119021803751554952" at="44,85,45,126" />
+      <scope id="4119021803751593188" at="50,53,51,85" />
+      <scope id="4119021803751449327" at="25,55,27,45">
+        <var name="result" id="4119021803751488609" />
+      </scope>
+      <scope id="4119021803751449320" at="37,77,39,86">
+        <var name="repository" id="4119021803751548053" />
+      </scope>
+      <scope id="4119021803751490702" at="30,0,33,0">
+        <var name="debuggable" id="4119021803751490995" />
+        <var name="show" id="4119021803751495399" />
+      </scope>
+      <scope id="4119021803751497506" at="33,0,36,0">
+        <var name="rootNode" id="4119021803751497890" />
+        <var name="show" id="4119021803751498337" />
+      </scope>
+      <scope id="4119021803751593185" at="50,0,53,0">
+        <var name="debuggable" id="4119021803751594699" />
+      </scope>
+      <scope id="4119021803751449321" at="25,0,29,0">
+        <var name="debuggable" id="4119021803751449322" />
+      </scope>
+      <scope id="4119021803751449313" at="37,0,41,0">
+        <var name="debuggable" id="4119021803751449314" />
+      </scope>
+      <scope id="4119021803751551836" at="41,73,48,130">
+        <var name="debuggablePointer" id="4119021803751562917" />
+      </scope>
+      <scope id="4119021803751551833" at="41,0,50,0">
+        <var name="debuggable" id="4119021803751552829" />
+        <var name="dependency" id="4119021803751553615" />
+      </scope>
+      <unit id="4119021803751430084" at="54,0,57,0" name="com.mbeddr.core.interpreterdebugger.rt.runtime.InterpreterValueSourcePresentation$CONCEPTS" />
+      <unit id="4119021803751430084" at="21,0,58,0" name="com.mbeddr.core.interpreterdebugger.rt.runtime.InterpreterValueSourcePresentation" />
+    </file>
+  </root>
+  <root nodeRef="r:9295c19c-56f9-4395-bf08-9ffc2ff588e1(com.mbeddr.core.interpreterdebugger.rt.runtime)/773573539281790433">
+    <file name="InterpreterValueSource.java">
+      <node id="773573539281790434" at="30,0,31,0" concept="3" trace="interpreter" />
+      <node id="773573539281790437" at="31,0,32,0" concept="3" trace="context" />
+      <node id="773573539281790445" at="33,87,34,62" concept="2" />
+      <node id="773573539281790451" at="34,62,35,27" concept="2" />
+      <node id="773573539282408873" at="35,27,36,0" concept="9" />
+      <node id="773573539282350000" at="36,0,37,49" concept="2" />
+      <node id="4770094454120801328" at="40,44,41,61" concept="7" />
+      <node id="773573539324205672" at="41,61,42,43" concept="7" />
+      <node id="773573539294620337" at="43,37,44,35" concept="8" />
+      <node id="5532084315691134438" at="45,12,46,68" concept="7" />
+      <node id="5532084315691233536" at="47,75,48,52" concept="8" />
+      <node id="5532084315684868297" at="50,5,51,0" concept="9" />
+      <node id="773573539281790470" at="51,0,52,104" concept="8" />
+      <node id="773573539282506208" at="55,44,56,77" concept="8" />
+      <node id="5532084315651715911" at="59,62,60,61" concept="7" />
+      <node id="5532084315653825529" at="61,22,62,37" concept="8" />
+      <node id="5532084315652090285" at="63,5,64,202" concept="7" />
+      <node id="5532084315652098369" at="64,202,65,0" concept="9" />
+      <node id="5532084315692849883" at="65,0,66,16" concept="8" />
+      <node id="773573539324138994" at="69,51,70,173" concept="2" />
+      <node id="3011556196714012772" at="73,41,74,119" concept="8" />
+      <node id="3011556196714145348" at="78,24,79,18" concept="8" />
+      <node id="5532084315671598960" at="80,5,81,189" concept="7" />
+      <node id="5532084315671657504" at="81,189,82,75" concept="2" />
+      <node id="5532084315671742265" at="82,75,83,18" concept="8" />
+      <node id="5532084315686657291" at="86,70,87,57" concept="7" />
+      <node id="5532084315690630862" at="88,95,89,115" concept="7" />
+      <node id="5532084315686657299" at="90,27,91,22" concept="8" />
+      <node id="5532084315690847883" at="92,14,93,49" concept="8" />
+      <node id="5532084315686657314" at="95,5,96,0" concept="9" />
+      <node id="5532084315686657315" at="96,0,97,41" concept="8" />
+      <node id="4770094454123591541" at="100,114,101,0" concept="9" />
+      <node id="1357587189303040325" at="102,112,103,161" concept="7" />
+      <node id="5532084315690014919" at="103,161,104,0" concept="9" />
+      <node id="1357587189302542458" at="105,67,106,25" concept="8" />
+      <node id="773573539323821848" at="107,7,108,89" concept="7" />
+      <node id="773573539323842332" at="109,27,110,22" concept="8" />
+      <node id="773573539323860039" at="112,5,113,0" concept="9" />
+      <node id="773573539323870081" at="113,0,114,16" concept="8" />
+      <node id="773573539281790479" at="118,41,119,23" concept="8" />
+      <node id="773573539281790486" at="122,43,123,19" concept="8" />
+      <node id="773573539281790433" at="127,0,128,0" concept="10" trace="value$TL6G" />
+      <node id="773573539281790433" at="131,0,132,0" concept="10" trace="IValueDebuggable$Pw" />
+      <node id="5532084315690822376" at="92,12,94,7" concept="0" />
+      <node id="5532084315691153748" at="46,68,49,7" concept="5" />
+      <node id="773573539282322328" at="55,0,58,0" concept="6" trace="hasKeys#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5532084315653768965" at="60,61,63,5" concept="5" />
+      <node id="773573539322700650" at="69,0,72,0" concept="6" trace="setKey#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3011556196714008232" at="73,0,76,0" concept="6" trace="getKey#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3011556196714141829" at="77,56,80,5" concept="5" />
+      <node id="773573539323668181" at="104,0,107,7" concept="5" />
+      <node id="773573539323831853" at="108,89,111,7" concept="5" />
+      <node id="773573539281790477" at="118,0,121,0" concept="6" trace="getInterpreter#()Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;" />
+      <node id="773573539281790484" at="122,0,125,0" concept="6" trace="getContext#()Lcom/mbeddr/mpsutil/interpreter/rt/IPersistentContext;" />
+      <node id="5532084315691086471" at="45,10,50,5" concept="0" />
+      <node id="5532084315690708711" at="89,115,94,7" concept="5" />
+      <node id="773573539281790441" at="33,0,39,0" concept="1" trace="InterpreterValueSource#(Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;Lcom/mbeddr/mpsutil/interpreter/rt/IPersistentContext;)V" />
+      <node id="773573539294601121" at="42,43,50,5" concept="5" />
+      <node id="3011556196714026788" at="77,0,85,0" concept="6" trace="createDebugKey#(Lcom/mbeddr/mpsutil/interpreter/rt/IEnvironmentId;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5532084315686657297" at="87,57,95,5" concept="5" />
+      <node id="773573539282322337" at="59,0,68,0" concept="6" trace="listAvailableKeys#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="773573539323668175" at="101,0,112,5" concept="4" />
+      <node id="773573539324268465" at="86,0,99,0" concept="6" trace="findEnvironment#(Lorg/jetbrains/mps/openapi/model/SNode;)Lcom/mbeddr/mpsutil/interpreter/rt/IPersistentEnvironment;" />
+      <node id="773573539281790464" at="40,0,54,0" concept="6" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="773573539323643584" at="100,0,116,0" concept="6" trace="findEnvironmentByCurrentKey#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IPersistentEnvironment;)Lcom/mbeddr/mpsutil/interpreter/rt/IPersistentEnvironment;" />
+      <scope id="773573539294601124" at="43,37,44,35" />
+      <scope id="5532084315691153751" at="47,75,48,52" />
+      <scope id="773573539282322334" at="55,44,56,77" />
+      <scope id="5532084315653768968" at="61,22,62,37" />
+      <scope id="773573539322700658" at="69,51,70,173" />
+      <scope id="3011556196714008238" at="73,41,74,119" />
+      <scope id="3011556196714141832" at="78,24,79,18" />
+      <scope id="5532084315690708714" at="90,27,91,22" />
+      <scope id="5532084315690822377" at="92,14,93,49" />
+      <scope id="773573539323668182" at="105,67,106,25" />
+      <scope id="773573539323831856" at="109,27,110,22" />
+      <scope id="773573539281790478" at="118,41,119,23" />
+      <scope id="773573539281790485" at="122,43,123,19" />
+      <scope id="773573539282322328" at="55,0,58,0">
+        <var name="debuggable" id="773573539282322332" />
+      </scope>
+      <scope id="773573539322700650" at="69,0,72,0">
+        <var name="debuggable" id="773573539322700654" />
+        <var name="key" id="773573539322700656" />
+      </scope>
+      <scope id="3011556196714008232" at="73,0,76,0">
+        <var name="debuggable" id="3011556196714008236" />
+      </scope>
+      <scope id="773573539281790477" at="118,0,121,0" />
+      <scope id="773573539281790484" at="122,0,125,0" />
+      <scope id="773573539281790444" at="33,87,37,49" />
+      <scope id="5532084315691086472" at="45,12,49,7">
+        <var name="parentEnv" id="5532084315691134439" />
+      </scope>
+      <scope id="773573539281790441" at="33,0,39,0">
+        <var name="context" id="773573539282345122" />
+        <var name="interpreter" id="773573539281790457" />
+      </scope>
+      <scope id="3011556196714026791" at="77,56,83,18">
+        <var name="result" id="5532084315671598963" />
+      </scope>
+      <scope id="5532084315686657298" at="88,95,94,7">
+        <var name="result" id="5532084315690630863" />
+      </scope>
+      <scope id="773573539282322344" at="59,62,66,16">
+        <var name="env" id="5532084315651715912" />
+        <var name="keys" id="5532084315652090286" />
+      </scope>
+      <scope id="3011556196714026788" at="77,0,85,0">
+        <var name="envId" id="3011556196714031406" />
+      </scope>
+      <scope id="773573539282322337" at="59,0,68,0">
+        <var name="debuggable" id="773573539282322342" />
+      </scope>
+      <scope id="773573539323668180" at="102,112,111,7">
+        <var name="pushedEnv" id="1357587189303040326" />
+        <var name="result" id="773573539323821849" />
+      </scope>
+      <scope id="773573539324268468" at="86,70,97,41">
+        <var name="parent" id="5532084315686657292" />
+      </scope>
+      <scope id="773573539323668175" at="101,0,112,5">
+        <var name="currentKey" id="773573539323668176" />
+      </scope>
+      <scope id="773573539281790469" at="40,44,52,104">
+        <var name="cache" id="773573539324205673" />
+        <var name="env" id="4770094454120801329" />
+      </scope>
+      <scope id="773573539324268465" at="86,0,99,0">
+        <var name="debuggable" id="773573539324274697" />
+      </scope>
+      <scope id="773573539281790464" at="40,0,54,0">
+        <var name="debuggable" id="773573539281790467" />
+      </scope>
+      <scope id="773573539323643587" at="100,114,114,16" />
+      <scope id="773573539323643584" at="100,0,116,0">
+        <var name="baseEnv" id="773573539323653287" />
+        <var name="debuggable" id="773573539323648518" />
+      </scope>
+      <unit id="773573539281790433" at="126,0,129,0" name="com.mbeddr.core.interpreterdebugger.rt.runtime.InterpreterValueSource$PROPS" />
+      <unit id="773573539281790433" at="130,0,133,0" name="com.mbeddr.core.interpreterdebugger.rt.runtime.InterpreterValueSource$CONCEPTS" />
+      <unit id="773573539281790433" at="29,0,134,0" name="com.mbeddr.core.interpreterdebugger.rt.runtime.InterpreterValueSource" />
+    </file>
+  </root>
+</debug-info>
+
