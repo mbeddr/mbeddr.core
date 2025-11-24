@@ -60,7 +60,7 @@ public class InterpreterCLegacyInterpreter extends ConditionalInterpreterBase {
         return "OpaqueExprWithType";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("OpaqueExprWithType", "http://127.0.0.1:63320/node?ref=7ed9b9f6-0ea3-4232-9ed3-ba98b3e598a4%2Fi%3A10000001%28com.mbeddr.core.legacy.interpreter%40transient54%2Fcom.mbeddr.core.legacy.interpreter.plugin%400%29%2F4535693827938081852");
+        return new EvaluatorInfo("OpaqueExprWithType", "http://127.0.0.1:63320/node?ref=64b9e153-7147-4ebe-a682-4054ee9bbfc1%2Fi%3A10000001%28com.mbeddr.core.legacy.interpreter%40transient58%2Fcom.mbeddr.core.legacy.interpreter.plugin%400%29%2F4535693827938081852");
       }
 
       @Override
@@ -93,7 +93,7 @@ public class InterpreterCLegacyInterpreter extends ConditionalInterpreterBase {
         return "OpaqueTextWithType";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("OpaqueTextWithType", "http://127.0.0.1:63320/node?ref=7ed9b9f6-0ea3-4232-9ed3-ba98b3e598a4%2Fi%3A10000001%28com.mbeddr.core.legacy.interpreter%40transient54%2Fcom.mbeddr.core.legacy.interpreter.plugin%400%29%2F4535693827938081857");
+        return new EvaluatorInfo("OpaqueTextWithType", "http://127.0.0.1:63320/node?ref=64b9e153-7147-4ebe-a682-4054ee9bbfc1%2Fi%3A10000001%28com.mbeddr.core.legacy.interpreter%40transient58%2Fcom.mbeddr.core.legacy.interpreter.plugin%400%29%2F4535693827938081857");
       }
 
       @Override

@@ -63,7 +63,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "FractionExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FractionExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697401336");
+        return new EvaluatorInfo("FractionExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697401336");
       }
 
       @Override
@@ -93,7 +93,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "FractionExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FractionExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697407746");
+        return new EvaluatorInfo("FractionExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697407746");
       }
 
       @Override
@@ -123,7 +123,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "FractionExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("FractionExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7796191070109058246");
+        return new EvaluatorInfo("FractionExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7796191070109058246");
       }
 
       @Override
@@ -164,7 +164,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "SumExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("SumExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697419999");
+        return new EvaluatorInfo("SumExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697419999");
       }
 
       @Override
@@ -204,7 +204,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "SumExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("SumExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697423766");
+        return new EvaluatorInfo("SumExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F6804131091697423766");
       }
 
       @Override
@@ -245,7 +245,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "SumExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("SumExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7115833094751705085");
+        return new EvaluatorInfo("SumExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7115833094751705085");
       }
 
       @Override
@@ -276,7 +276,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "LoopVariableReference";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LoopVariableReference", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7115833094751719526");
+        return new EvaluatorInfo("LoopVariableReference", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7115833094751719526");
       }
 
       @Override
@@ -306,7 +306,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "SqrtExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("SqrtExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7115833094751724727");
+        return new EvaluatorInfo("SqrtExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F7115833094751724727");
       }
 
       @Override
@@ -336,7 +336,7 @@ public class InterpreterCMathInterpreter extends ConditionalInterpreterBase {
         return "LogarithmExpression";
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LogarithmExpression", "http://127.0.0.1:63320/node?ref=15837f76-2343-4f5d-a50e-8b076483c91c%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient15%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F1925368854721744205");
+        return new EvaluatorInfo("LogarithmExpression", "http://127.0.0.1:63320/node?ref=6d1f0f49-ddd1-461a-a7e6-176ae4461793%2Fi%3A10000001%28com.mbeddr.ext.math.interpreter%40transient14%2Fcom.mbeddr.ext.math.interpreter.plugin%400%29%2F1925368854721744205");
       }
 
       @Override
