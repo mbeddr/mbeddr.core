@@ -3,6 +3,7 @@ import de.itemis.mps.gradle.GitBasedVersioning
 
 plugins {
     id 'de.itemis.mps.gradle.common' version '1.29.+'
+    id 'de.itemis.mps.gradle.launcher' version '2.8.0.+'
 }
 
 //MPS version
