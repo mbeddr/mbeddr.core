@@ -304,14 +304,26 @@ publishing {
                     configurationsWithProvidedDependencies.add(project(':com.mbeddr').configurations.mps)
                 }
 
-                configurationsWithProvidedDependencies.each { Configuration cfg ->
-                    cfg.resolvedConfiguration.firstLevelModuleDependencies.each {
-                        def dependencyNode = dependenciesNode.appendNode('dependency')
-                        dependencyNode.appendNode('groupId', it.moduleGroup)
-                        dependencyNode.appendNode('artifactId', it.moduleName)
-                        dependencyNode.appendNode('version', it.moduleVersion)
-                        dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
-                        dependencyNode.appendNode('scope', 'provided')
+                def seen = new HashSet<ResolvedDependency>()
+                def queue = new ArrayDeque<ResolvedDependency>()
+
+                // Visit each dependency including its transitive dependencies if they are included, so that the exact set
+                // of used JARs ends up in the POM as provided dependencies.
+                for (config in configurationsWithProvidedDependencies) {
+                    queue.addAll(config.resolvedConfiguration.firstLevelModuleDependencies)
+
+                    while (!queue.isEmpty()) {
+                        def dep = queue.removeFirst()
+                        if (seen.add(dep)) {
+                            def dependencyNode = dependenciesNode.appendNode('dependency')
+                            dependencyNode.appendNode('groupId', dep.moduleGroup)
+                            dependencyNode.appendNode('artifactId', dep.moduleName)
+                            dependencyNode.appendNode('version', dep.moduleVersion)
+                            dependencyNode.appendNode('type', dep.moduleArtifacts[0].type)
+                            dependencyNode.appendNode('scope', 'provided')
+
+                            queue.addAll(dep.children)
+                        }
                     }
                 }
 
